@@ -225,7 +225,7 @@ export default function HowItWorksPage() {
       </div>
 
       {/* ================= HOW IT WORKS HERO ================= */}
-      <main className="pt-32 pb-12 md:pb-24 px-4 sm:px-6 md:px-16 max-w-8xl mx-auto overflow-hidden relative">
+      <main className="pt-15 pb-12 md:pb-24 px-4 sm:px-6 md:px-16 max-w-8xl mx-auto overflow-hidden relative">
         
         {/* Ambient Lights */}
         <div className="absolute top-0 right-0 w-[500px] h-[500px] red-radial-glow -z-10 pointer-events-none rounded-full blur-[100px] opacity-40" />
