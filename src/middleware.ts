@@ -16,6 +16,7 @@ export default withAuth(
     pages: {
       signIn: "/nullify",
     },
+    secret: process.env.NEXTAUTH_SECRET || "tumsabkimaachod_dijaygibehenkelundo",
   }
 );
 

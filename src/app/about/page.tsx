@@ -147,7 +147,7 @@ export default function AboutPage() {
               />
             </div>
 
-            {/* 4 pillars — 2 col on mobile, 4 col on desktop */}
+            {/* 4 pillars - 2 col on mobile, 4 col on desktop */}
             <div className="grid grid-cols-2 lg:grid-cols-4 gap-x-4 gap-y-7 sm:gap-x-6 sm:gap-y-8 lg:gap-x-6">
               {pillars.map((p, i) => (
                 <div key={i} className="flex flex-col items-start">
@@ -158,20 +158,20 @@ export default function AboutPage() {
               ))}
             </div>
 
-            {/* CTA — visible on mobile below pillars */}
+            {/* CTA - visible on mobile below pillars */}
             <div className="flex flex-col sm:flex-row gap-3 mt-8 sm:mt-10 lg:hidden">
               <a href="/contact"
                 className="flex items-center justify-center gap-2 px-5 py-3 bg-[#DC2626] text-white text-[13px] font-bold rounded-xl shadow-[0_4px_16px_rgba(220,38,38,0.25)] hover:bg-[#B91C1C] transition-all">
                 Start Your Recovery <ArrowRight className="w-4 h-4" />
               </a>
-              <a href="/how-it-works"
+              <a href="/contact"
                 className="flex items-center justify-center gap-2 px-5 py-3 border border-[#D1D5DB] text-[#111827] text-[13px] font-bold rounded-xl hover:border-[#DC2626] hover:text-[#DC2626] transition-all">
                 How It Works
               </a>
             </div>
           </div>
 
-          {/* ── RIGHT: Team photo — cropped to upper body ── */}
+          {/* ── RIGHT: Team photo - cropped to upper body ── */}
           <div className="hidden lg:flex lg:flex-1 items-end overflow-hidden lg:mt-0 mx-5 sm:mx-8 lg:mx-0">
             {/* Height: short on mobile, taller on desktop */}
             <div className="relative w-full
@@ -239,7 +239,7 @@ export default function AboutPage() {
               <span className="text-[#DC2626]">Why Legal Recovery Was Born</span>
             </h2>
             <p className="mt-4 text-[13px] sm:text-[15px] text-[#4B5563] max-w-[720px] mx-auto leading-relaxed">
-              Every day, thousands of honest people find themselves trapped in financial distress—not because they made a mistake, but because they chose to trust. Here is the story of why we built India&apos;s first dedicated legaltech recovery platform.
+              Every day, thousands of honest people find themselves trapped in financial distress - not because they made a mistake, but because they chose to trust. Here is the story of why we built India&apos;s first dedicated legaltech recovery platform.
             </p>
           </div>
 
@@ -258,10 +258,10 @@ export default function AboutPage() {
                     It always starts the same way. A close friend is in a medical emergency, a family member needs a quick bridge loan, or a vendor requests an advance to buy materials. Out of sheer goodwill and trust, you transfer your hard-earned savings. No formal contract is signed, only a verbal promise or WhatsApp chat.
                   </p>
                   <p>
-                    Months pass, and the promise fades. Polite reminders are met with excuses—medical emergencies, bank issues, sudden business losses. Soon, messages go unread. Calls get declined or blocked. The sudden realization hits: <strong>you have been fooled by someone you trusted.</strong>
+                    Months pass, and the promise fades. Polite reminders are met with excuses - medical emergencies, bank issues, sudden business losses. Soon, messages go unread. Calls get declined or blocked. The sudden realization hits: <strong>you have been fooled by someone you trusted.</strong>
                   </p>
                   <p>
-                    When you turn to the traditional legal system, you find a daunting nightmare. High lawyer retainer fees, complex jargon, endless physical visits, and a system built for large corporations—not everyday individuals. Most people simply give up, losing their hard-earned money and their peace of mind.
+                    When you turn to the traditional legal system, you find a daunting nightmare. High lawyer retainer fees, complex jargon, endless physical visits, and a system built for large corporations - not everyday individuals. Most people simply give up, losing their hard-earned money and their peace of mind.
                   </p>
                 </div>
               </div>
@@ -331,7 +331,7 @@ export default function AboutPage() {
                 Where Do Honest People Get Fooled?
               </h3>
               <p className="mt-2 text-[12.5px] sm:text-[13.5px] text-[#6B7280] max-w-[500px] mx-auto leading-relaxed">
-                These are the daily problems we see. If you find yourself in one of these situations, you are not alone—and we are here to help.
+                These are the daily problems we see. If you find yourself in one of these situations, you are not alone - and we are here to help.
               </p>
             </div>
 
@@ -485,7 +485,7 @@ export default function AboutPage() {
               </a>
             </div>
 
-            {/* Right feature grid — 1-col on mobile, 2-col on sm+ */}
+            {/* Right feature grid - 1-col on mobile, 2-col on sm+ */}
             <div className="lg:flex-1 grid grid-cols-1 sm:grid-cols-2 gap-3 sm:gap-4">
               {[
                 { icon: <Clock       className="w-4 h-4 text-[#DC2626]" />, title: "18-Day Avg Resolution", desc: "Dramatically faster than the 6–18 month court timeline." },

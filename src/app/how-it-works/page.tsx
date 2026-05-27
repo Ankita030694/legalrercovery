@@ -1,6 +1,7 @@
 "use client";
 
 import React, { useState, useMemo } from "react";
+import Link from "next/link";
 import {
   Menu,
   X,
@@ -343,9 +344,11 @@ export default function HowItWorksPage() {
 
             {/* Right Button */}
             <div className="w-full md:w-auto shrink-0 select-none">
-              <button className="w-full md:w-auto px-8 py-3.5 text-xs sm:text-[13.5px] font-black text-white bg-[#DC2626] hover:bg-[#B91C1C] rounded-xl transition-all duration-200 hover:-translate-y-0.5 shadow-md shadow-red-950/30 cursor-pointer text-center whitespace-nowrap">
-                Talk to Expert
-              </button>
+              <Link href="/contact" className="w-full md:w-auto inline-block">
+                <span className="block w-full md:w-auto px-8 py-3.5 text-xs sm:text-[13.5px] font-black text-white bg-[#DC2626] hover:bg-[#B91C1C] rounded-xl transition-all duration-200 hover:-translate-y-0.5 shadow-md shadow-red-950/30 cursor-pointer text-center whitespace-nowrap">
+                  Talk to Expert
+                </span>
+              </Link>
             </div>
 
           </div>

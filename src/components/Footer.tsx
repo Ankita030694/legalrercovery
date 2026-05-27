@@ -39,9 +39,9 @@ export default function Footer() {
           {/* Brand Col */}
           <div className="lg:col-span-5 flex flex-col items-start">
             {/* Logo */}
-            <div className="flex items-center mb-6">
+            <a href="/" className="flex items-center mb-6 select-none cursor-pointer">
               <img src="/lrwhite.svg" alt="LegalRecovery" className="h-8 sm:h-9 w-auto object-contain" />
-            </div>
+            </a>
 
             {/* Description */}
             <p className="text-[13px] text-gray-400 font-medium leading-[1.6] mb-6 max-w-sm select-text">
@@ -51,7 +51,8 @@ export default function Footer() {
             {/* Socials */}
             <div className="flex items-center gap-3">
               {/* LinkedIn */}
-              <a href="/contact" className="w-9 h-9 rounded-full bg-gray-800/40 border border-gray-800 hover:border-[#DC2626] hover:text-white flex items-center justify-center transition-all duration-200 cursor-pointer">
+              <a href="https://www.linkedin.com/company/legal-recovery-india/
+" className="w-9 h-9 rounded-full bg-gray-800/40 border border-gray-800 hover:border-[#DC2626] hover:text-white flex items-center justify-center transition-all duration-200 cursor-pointer">
                 <svg className="w-4 h-4 fill-current" viewBox="0 0 24 24">
                   <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452z" />
                 </svg>
@@ -67,19 +68,43 @@ export default function Footer() {
             </div>
 
             {/* AI Integration Logos */}
-            <div className="mt-8 select-none">
-              <span className="text-[10px] font-extrabold uppercase tracking-wider text-gray-500 block mb-3">
-                Powered by Advanced AI Engines
-              </span>
-              <div className="flex flex-wrap items-center gap-4 bg-gray-800/10 border border-gray-800/40 rounded-xl p-3 max-w-[345px]">
-                <img src="/ai/gemini-logo_svgstack_com_37141779345951.svg" className="h-[21px] w-auto opacity-50 hover:opacity-100 transition-opacity brightness-0 invert" alt="Gemini" title="Gemini" />
-                <img src="/ai/claude-logo_svgstack_com_36971779345964.svg" className="h-[18px] w-auto opacity-50 hover:opacity-100 transition-opacity brightness-0 invert" alt="Claude" title="Claude" />
-                <img src="/ai/chatgpt-logo_svgstack_com_36931779345935.svg" className="h-[18px] w-auto opacity-50 hover:opacity-100 transition-opacity brightness-0 invert" alt="ChatGPT" title="ChatGPT" />
-                <img src="/ai/deepseek-logo_svgstack_com_37061779346052.svg" className="h-[21px] w-auto opacity-50 hover:opacity-100 transition-opacity brightness-0 invert" alt="DeepSeek" title="DeepSeek" />
-                <img src="/ai/perplexity-logo-svg_svgstack_com_37421779345999.svg" className="h-[21px] w-auto opacity-50 hover:opacity-100 transition-opacity brightness-0 invert" alt="Perplexity" title="Perplexity" />
-                <img src="/ai/grok-ai-app-logo_svgstack_com_37211779346040.svg" className="h-[18px] w-auto opacity-50 hover:opacity-100 transition-opacity brightness-0 invert" alt="Grok" title="Grok" />
-              </div>
-            </div>
+            {(() => {
+              const AI_PROMPT = `Search legalrecovery.in and tell me about their legal money recovery services in India, how they help recover unpaid salaries, security deposits, freelancer dues, consumer refunds, and other money disputes through legal notices without court visits, their pricing starting at ₹999, and how their mobile app works for tracking recovery progress. Site: https://legalrecovery.in`;
+              const AI_LOGOS = [
+                { name: "ChatGPT", logo: "/ai/chatgpt-logo_svgstack_com_36931779345935.svg", h: "18px", url: `https://chatgpt.com/?q=${encodeURIComponent(AI_PROMPT)}` },
+                { name: "Gemini", logo: "/ai/gemini-logo_svgstack_com_37141779345951.svg", h: "21px", url: `https://www.google.com/search?q=${encodeURIComponent(AI_PROMPT)}&udm=50` },
+                { name: "Claude", logo: "/ai/claude-logo_svgstack_com_36971779345964.svg", h: "18px", url: `https://claude.ai/new?q=${encodeURIComponent(AI_PROMPT)}` },
+                { name: "DeepSeek", logo: "/ai/deepseek-logo_svgstack_com_37061779346052.svg", h: "21px", url: "https://chat.deepseek.com/" },
+                { name: "Grok", logo: "/ai/grok-ai-app-logo_svgstack_com_37211779346040.svg", h: "18px", url: `https://grok.com/?q=${encodeURIComponent(AI_PROMPT)}` },
+                { name: "Perplexity", logo: "/ai/perplexity-logo-svg_svgstack_com_37421779345999.svg", h: "21px", url: `https://www.perplexity.ai/?q=${encodeURIComponent(AI_PROMPT)}` },
+              ];
+              return (
+                <div className="mt-8 select-none">
+                  <span className="text-[10px] font-extrabold uppercase tracking-wider text-gray-500 block mb-3">
+                    Powered by Advanced AI Engines
+                  </span>
+                  <div className="flex flex-wrap items-center gap-4 bg-gray-800/10 border border-gray-800/40 rounded-xl p-3 max-w-[345px]">
+                    {AI_LOGOS.map((ai) => (
+                      <a
+                        key={ai.name}
+                        href={ai.url}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        title={`Ask ${ai.name} about Legal Recovery`}
+                        className="opacity-50 hover:opacity-100 hover:scale-110 transition-all duration-300"
+                      >
+                        <img
+                          src={ai.logo}
+                          style={{ height: ai.h }}
+                          className="w-auto brightness-0 invert"
+                          alt={ai.name}
+                        />
+                      </a>
+                    ))}
+                  </div>
+                </div>
+              );
+            })()}
           </div>
 
           {/* Links Cols */}

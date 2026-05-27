@@ -105,18 +105,10 @@ export default function Home() {
           </a>
         </nav>
 
-        {/* Right Side Buttons (Track Recovery & Start Recovery with left chevron) */}
+        {/* Right Side Button: Recover My Money with dropdown */}
         <div className="hidden xl:flex items-center gap-6 relative">
 
-          {/* Track Recovery Text Link */}
-          <a
-            href="/contact"
-            className="text-[13.5px] font-bold text-[#4B5563] hover:text-[#111827] transition-colors"
-          >
-            Track Recovery
-          </a>
-
-          {/* Start Recovery Red Rounded Button with inner Chevron Down on Left */}
+          {/* Recover My Money Red Rounded Button with inner Chevron Down on Left */}
           <div className="relative">
             <button
               onClick={() => setStartRecoveryDropdownOpen(!startRecoveryDropdownOpen)}
@@ -133,7 +125,7 @@ export default function Home() {
               >
                 <polyline points="6 9 12 15 18 9" />
               </svg>
-              Start Recovery
+              Recover My Money
             </button>
 
             {/* Interactive Dropdown Menu */}
@@ -185,72 +177,66 @@ export default function Home() {
       </header>
 
       {/* Mobile Glass Menu Dropdown */}
-      <div
-        className={`fixed inset-x-0 top-20 z-40 xl:hidden bg-white/95 backdrop-blur-md border-b border-[#E5E7EB]/60 p-6 shadow-[0_20px_80px_rgba(0,0,0,0.12)] transition-all duration-300 transform origin-top ${mobileMenuOpen ? "scale-y-100 opacity-100" : "scale-y-0 opacity-0 pointer-events-none"
-          }`}
-      >
-        <nav className="flex flex-col gap-4">
-          <a
-            href="/"
-            onClick={() => setMobileMenuOpen(false)}
-            className="text-base font-semibold text-[#111827] hover:text-[#DC2626] transition-colors"
-          >
-            Home
-          </a>
-          <a
-            href="/about"
-            onClick={() => setMobileMenuOpen(false)}
-            className="text-base font-semibold text-[#4B5563] hover:text-[#DC2626] transition-colors"
-          >
-            About Us
-          </a>
-          <a
-            href="/services"
-            onClick={() => setMobileMenuOpen(false)}
-            className="text-base font-semibold text-[#4B5563] hover:text-[#DC2626] transition-colors"
-          >
-            Services
-          </a>
-          <a
-            href="/how-it-works"
-            onClick={() => setMobileMenuOpen(false)}
-            className="text-base font-semibold text-[#4B5563] hover:text-[#DC2626] transition-colors"
-          >
-            How It Works
-          </a>
-          <a
-            href="/blog"
-            onClick={() => setMobileMenuOpen(false)}
-            className="text-base font-semibold text-[#4B5563] hover:text-[#DC2626] transition-colors"
-          >
-            Blog
-          </a>
-          <a
-            href="/contact"
-            onClick={() => setMobileMenuOpen(false)}
-            className="text-base font-semibold text-[#4B5563] hover:text-[#DC2626] transition-colors"
-          >
-            Contact
-          </a>
-          <div className="h-px bg-[#E5E7EB] my-2"></div>
-          <div className="flex flex-col gap-3">
+      {mobileMenuOpen && (
+        <div
+          className="fixed inset-x-0 top-20 z-40 xl:hidden bg-white/95 backdrop-blur-md border-b border-[#E5E7EB]/60 p-6 shadow-[0_20px_80px_rgba(0,0,0,0.12)] transition-all duration-300 transform origin-top scale-y-100 opacity-100"
+        >
+          <nav className="flex flex-col gap-4">
             <a
-              href="/contact"
+              href="/"
               onClick={() => setMobileMenuOpen(false)}
-              className="w-full text-center py-2.5 text-sm font-semibold text-[#4B5563] border border-[#E5E7EB] rounded-xl bg-white"
+              className="text-base font-semibold text-[#111827] hover:text-[#DC2626] transition-colors"
             >
-              Track Recovery
+              Home
+            </a>
+            <a
+              href="/about"
+              onClick={() => setMobileMenuOpen(false)}
+              className="text-base font-semibold text-[#4B5563] hover:text-[#DC2626] transition-colors"
+            >
+              About Us
+            </a>
+            <a
+              href="/services"
+              onClick={() => setMobileMenuOpen(false)}
+              className="text-base font-semibold text-[#4B5563] hover:text-[#DC2626] transition-colors"
+            >
+              Services
+            </a>
+            <a
+              href="/how-it-works"
+              onClick={() => setMobileMenuOpen(false)}
+              className="text-base font-semibold text-[#4B5563] hover:text-[#DC2626] transition-colors"
+            >
+              How It Works
+            </a>
+            <a
+              href="/blog"
+              onClick={() => setMobileMenuOpen(false)}
+              className="text-base font-semibold text-[#4B5563] hover:text-[#DC2626] transition-colors"
+            >
+              Blog
             </a>
             <a
               href="/contact"
               onClick={() => setMobileMenuOpen(false)}
-              className="w-full text-center py-2.5 text-sm font-semibold text-white bg-[#DC2626] rounded-xl shadow-[0_4px_12px_rgba(220,38,38,0.15)]"
+              className="text-base font-semibold text-[#4B5563] hover:text-[#DC2626] transition-colors"
             >
-              Start Recovery
+              Contact
             </a>
-          </div>
-        </nav>
-      </div>
+            <div className="h-px bg-[#E5E7EB] my-2"></div>
+            <div className="flex flex-col gap-3">
+              <a
+                href="/contact"
+                onClick={() => setMobileMenuOpen(false)}
+                className="w-full text-center py-2.5 text-sm font-semibold text-white bg-[#DC2626] rounded-xl shadow-[0_4px_12px_rgba(220,38,38,0.15)]"
+              >
+                Recover My Money
+              </a>
+            </div>
+          </nav>
+        </div>
+      )}
 
       {/* ================= HERO SECTION (Visual Matched to Screenshot) ================= */}
       <main className="pt-32 pb-12 md:pb-24 px-4 sm:px-6 md:px-16 max-w-8xl mx-auto overflow-hidden relative">
@@ -290,27 +276,51 @@ export default function Home() {
             </div>
 
             {/* AI Engines Banner */}
-            <div className="flex flex-col gap-2.5 mb-6 select-none">
-              <span className="text-[10.5px] font-black uppercase tracking-wider text-[#6B7280] flex items-center gap-1.5">
-                ⚡ Powered by India's Top Legal AI Pipeline
-              </span>
-              <div className="flex w-fit flex-wrap items-center gap-5 bg-white/65 backdrop-blur-sm border border-[#E5E7EB]/85 rounded-2xl px-5 py-3 shadow-[0_4px_20px_rgba(0,0,0,0.015)]">
-                <img src="/ai/gemini-logo_svgstack_com_37141779345951.svg" className="h-[27px] w-auto opacity-80 hover:opacity-100 transition-all duration-300 cursor-pointer" alt="Gemini" title="Gemini" />
-                <img src="/ai/claude-logo_svgstack_com_36971779345964.svg" className="h-[23px] w-auto opacity-80 hover:opacity-100 transition-all duration-300 cursor-pointer" alt="Claude" title="Claude" />
-                <img src="/ai/chatgpt-logo_svgstack_com_36931779345935.svg" className="h-[23px] w-auto opacity-80 hover:opacity-100 transition-all duration-300 cursor-pointer" alt="ChatGPT" title="ChatGPT" />
-                <img src="/ai/deepseek-logo_svgstack_com_37061779346052.svg" className="h-[27px] w-auto opacity-80 hover:opacity-100 transition-all duration-300 cursor-pointer" alt="DeepSeek" title="DeepSeek" />
-                <img src="/ai/perplexity-logo-svg_svgstack_com_37421779345999.svg" className="h-[27px] w-auto opacity-80 hover:opacity-100 transition-all duration-300 cursor-pointer" alt="Perplexity" title="Perplexity" />
-                <img src="/ai/grok-ai-app-logo_svgstack_com_37211779346040.svg" className="h-[23px] w-auto opacity-80 hover:opacity-100 transition-all duration-300 cursor-pointer" alt="Grok" title="Grok" />
-              </div>
-            </div>
+            {(() => {
+              const AI_PROMPT = `Search legalrecovery.in and tell me about their legal money recovery services in India, how they help recover unpaid salaries, security deposits, freelancer dues, consumer refunds, and other money disputes through legal notices without court visits, their pricing starting at ₹999, and how their mobile app works for tracking recovery progress. Site: https://legalrecovery.in`;
+              const AI_LOGOS = [
+                { name: "ChatGPT", logo: "/ai/chatgpt-logo_svgstack_com_36931779345935.svg", h: "23px", url: `https://chatgpt.com/?q=${encodeURIComponent(AI_PROMPT)}` },
+                { name: "Gemini", logo: "/ai/gemini-logo_svgstack_com_37141779345951.svg", h: "27px", url: `https://www.google.com/search?q=${encodeURIComponent(AI_PROMPT)}&udm=50` },
+                { name: "Claude", logo: "/ai/claude-logo_svgstack_com_36971779345964.svg", h: "23px", url: `https://claude.ai/new?q=${encodeURIComponent(AI_PROMPT)}` },
+                { name: "DeepSeek", logo: "/ai/deepseek-logo_svgstack_com_37061779346052.svg", h: "27px", url: "https://chat.deepseek.com/" },
+                { name: "Grok", logo: "/ai/grok-ai-app-logo_svgstack_com_37211779346040.svg", h: "23px", url: `https://grok.com/?q=${encodeURIComponent(AI_PROMPT)}` },
+                { name: "Perplexity", logo: "/ai/perplexity-logo-svg_svgstack_com_37421779345999.svg", h: "27px", url: `https://www.perplexity.ai/?q=${encodeURIComponent(AI_PROMPT)}` },
+              ];
+              return (
+                <div className="flex flex-col gap-2.5 mb-6 select-none">
+                  <span className="text-[10.5px] font-black uppercase tracking-wider text-[#6B7280] flex items-center gap-1.5">
+                    ⚡ Powered by India&apos;s Top Legal AI Pipeline
+                  </span>
+                  <div className="flex w-fit flex-wrap items-center gap-5 bg-white/65 backdrop-blur-sm border border-[#E5E7EB]/85 rounded-2xl px-5 py-3 shadow-[0_4px_20px_rgba(0,0,0,0.015)]">
+                    {AI_LOGOS.map((ai) => (
+                      <a
+                        key={ai.name}
+                        href={ai.url}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        title={`Ask ${ai.name} about Legal Recovery`}
+                        className="opacity-80 hover:opacity-100 hover:scale-110 transition-all duration-300"
+                      >
+                        <img
+                          src={ai.logo}
+                          style={{ height: ai.h }}
+                          className="w-auto"
+                          alt={ai.name}
+                        />
+                      </a>
+                    ))}
+                  </div>
+                </div>
+              );
+            })()}
 
             {/* CTA Buttons Row */}
-            <div className="w-full sm:w-auto mb-10 select-none">
-              <button
-                className="w-full sm:w-auto px-6 sm:px-8 py-3.5 text-[13.5px] sm:text-[15px] font-bold text-white bg-[#DC2626] hover:bg-[#B91C1C] rounded-[10px] shadow-[0_4px_16px_rgba(220,38,38,0.15)] transition-all duration-200 hover:-translate-y-0.5 active:translate-y-0 cursor-pointer text-center"
-              >
-                Recover My Money
-              </button>
+            <div className="w-full sm:w-auto mb-10">
+              <Link href="/contact" className="block w-full sm:w-auto">
+                <span className="block w-full px-6 sm:px-8 py-3.5 text-[13.5px] sm:text-[15px] font-bold text-white bg-[#DC2626] hover:bg-[#B91C1C] rounded-[10px] shadow-[0_4px_16px_rgba(220,38,38,0.15)] transition-all duration-200 hover:-translate-y-0.5 active:translate-y-0 cursor-pointer text-center">
+                  Recover My Money
+                </span>
+              </Link>
             </div>
 
             {/* Trust Row badging underneath */}
@@ -556,7 +566,7 @@ export default function Home() {
               </h2>
               
               <p className="text-[13px] sm:text-[14.5px] text-[#4B5563] leading-relaxed mb-6 font-medium max-w-2xl mx-auto lg:mx-0">
-                To guarantee absolute validity and the highest resolution rates, Legal Recovery's cutting-edge legaltech platform is backed and legally powered by **AMA Legal Solutions**—a leading full-service legal firm. This powerful synergy combines digital convenience and advanced automation with institutional legal authority.
+                To guarantee absolute validity and the highest resolution rates, Legal Recovery's cutting-edge legaltech platform is backed and legally powered by **AMA Legal Solutions** - a leading full-service legal firm. This powerful synergy combines digital convenience and advanced automation with institutional legal authority.
               </p>
 
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 max-w-xl mx-auto lg:mx-0">
@@ -1238,9 +1248,12 @@ function PricingSection() {
             </div>
 
             <div className="flex flex-col sm:flex-row items-center gap-6 pt-6 border-t border-[#E5E7EB]/85">
-              <button className="w-full sm:w-auto px-8 py-3.5 text-[14px] font-black text-white bg-[#DC2626] hover:bg-[#B91C1C] rounded-xl shadow-[0_4px_16px_rgba(220,38,38,0.15)] transition-all duration-200 hover:-translate-y-0.5 active:translate-y-0 cursor-pointer">
+              <Link
+                href="/contact"
+                className="w-full sm:w-auto px-8 py-3.5 text-[14px] font-black text-white bg-[#DC2626] hover:bg-[#B91C1C] rounded-xl shadow-[0_4px_16px_rgba(220,38,38,0.15)] transition-all duration-200 hover:-translate-y-0.5 active:translate-y-0 cursor-pointer text-center"
+              >
                 Get Started Now
-              </button>
+              </Link>
               <div className="flex items-center gap-2.5 text-left">
                 <Shield className="w-5 h-5 text-[#2563EB] shrink-0" />
                 <span className="text-[12px] text-[#6B7280] font-bold leading-tight">
@@ -1299,12 +1312,16 @@ function CTASection() {
 
         {/* CTA Buttons Row - compact & horizontal on mobile */}
         <div className="flex flex-row items-center justify-center gap-3 w-full sm:w-auto mb-10 sm:mb-12 select-none">
-          <button className="flex-1 sm:flex-none px-3 sm:px-8 py-3 sm:py-4 text-[12px] sm:text-[14.5px] font-black text-white bg-[#DC2626] hover:bg-[#B91C1C] rounded-xl transition-all duration-200 hover:-translate-y-0.5 shadow-md shadow-red-950/30 cursor-pointer text-center whitespace-nowrap">
+          <Link href="/contact" className="flex-1 sm:flex-none">
+            <span className="block px-3 sm:px-8 py-3 sm:py-4 text-[12px] sm:text-[14.5px] font-black text-white bg-[#DC2626] hover:bg-[#B91C1C] rounded-xl transition-all duration-200 hover:-translate-y-0.5 shadow-md shadow-red-950/30 cursor-pointer text-center whitespace-nowrap">
             Start Recovery
-          </button>
-          <button className="flex-1 sm:flex-none px-3 sm:px-8 py-3 sm:py-4 text-[12px] sm:text-[14.5px] font-black text-white bg-[#1E293B]/40 hover:bg-[#1E293B]/80 border border-gray-700 rounded-xl transition-all duration-200 hover:-translate-y-0.5 cursor-pointer text-center whitespace-nowrap">
+            </span>
+          </Link>
+          <Link href="/contact" className="flex-1 sm:flex-none">
+            <span className="block px-3 sm:px-8 py-3 sm:py-4 text-[12px] sm:text-[14.5px] font-black text-white bg-[#1E293B]/40 hover:bg-[#1E293B]/80 border border-gray-700 rounded-xl transition-all duration-200 hover:-translate-y-0.5 cursor-pointer text-center whitespace-nowrap">
             Talk to Expert
-          </button>
+            </span>
+          </Link>
         </div>
 
         {/* Bottom Trust Indicators */}
