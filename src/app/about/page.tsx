@@ -164,7 +164,7 @@ export default function AboutPage() {
                 className="flex items-center justify-center gap-2 px-5 py-3 bg-[#DC2626] text-white text-[13px] font-bold rounded-xl shadow-[0_4px_16px_rgba(220,38,38,0.25)] hover:bg-[#B91C1C] transition-all">
                 Start Your Recovery <ArrowRight className="w-4 h-4" />
               </a>
-              <a href="/contact"
+              <a href="/how-it-works"
                 className="flex items-center justify-center gap-2 px-5 py-3 border border-[#D1D5DB] text-[#111827] text-[13px] font-bold rounded-xl hover:border-[#DC2626] hover:text-[#DC2626] transition-all">
                 How It Works
               </a>
