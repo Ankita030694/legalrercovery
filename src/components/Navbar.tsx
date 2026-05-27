@@ -56,9 +56,7 @@ export default function Navbar() {
 
         {/* ── Desktop Right Buttons ── */}
         <div className="hidden xl:flex items-center gap-6 relative">
-          <a href="/contact" className="text-[13.5px] font-bold text-[#4B5563] hover:text-[#111827] transition-colors">
-            Track Recovery
-          </a>
+       
           <div className="relative">
             <button
               onClick={() => setDropdownOpen(!dropdownOpen)}
