@@ -17,8 +17,11 @@ export async function POST(req: NextRequest) {
     );
   }
 
+  let prompt: string | undefined;
+
   try {
-    const { prompt } = await req.json();
+    const body = await req.json();
+    prompt = typeof body.prompt === "string" ? body.prompt : undefined;
     if (!prompt) {
       return NextResponse.json({ error: "Missing image prompt string parameter." }, { status: 400 });
     }
@@ -85,6 +88,7 @@ export async function POST(req: NextRequest) {
     console.error("Critical Image API Route Error:", error);
     // Dynamic prompt-based generation as absolute robust fallback
     try {
+      if (!prompt) throw new Error("No prompt available for fallback generation.");
       const encodedPrompt = encodeURIComponent(prompt);
       const dynamicFallbackUrl = `https://image.pollinations.ai/prompt/${encodedPrompt}?width=1920&height=1080&nologo=true&seed=${Math.floor(Math.random() * 1000000)}`;
       return NextResponse.json({ 
