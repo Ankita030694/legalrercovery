@@ -545,6 +545,18 @@ export default function Home() {
           </div>
         </div>
 
+        {/* ================= HIGH FIDELITY SERVICES GRID SECTION ================= */}
+        <ServicesSection />
+
+        {/* ================= WHY CHOOSE US SECTION ================= */}
+        <WhyChooseUsSection />
+
+        {/* ================= HOW IT WORKS SECTION ================= */}
+        <HowItWorksSection />
+
+        {/* ================= PRICING SECTION ================= */}
+        <PricingSection />
+
         {/* ================= JOINT BRANDING: POWERED BY AMA LEGAL SOLUTIONS ================= */}
         <section className="mt-12 md:mt-24 max-w-7xl mx-auto px-4 md:px-0">
           <div className="bg-[#FFFFFF] border border-[#E5E7EB] rounded-[32px] p-6 sm:p-10 md:p-14 shadow-[0_12px_50px_rgba(0,0,0,0.025)] relative overflow-hidden flex flex-col lg:flex-row items-center gap-10 lg:gap-16">
@@ -653,18 +665,6 @@ export default function Home() {
 
           </div>
         </section>
-
-        {/* ================= HIGH FIDELITY SERVICES GRID SECTION ================= */}
-        <ServicesSection />
-
-        {/* ================= WHY CHOOSE US SECTION ================= */}
-        <WhyChooseUsSection />
-
-        {/* ================= HOW IT WORKS SECTION ================= */}
-        <HowItWorksSection />
-
-        {/* ================= PRICING SECTION ================= */}
-        <PricingSection />
 
         {/* ================= CALL TO ACTION SECTION ================= */}
         <CTASection />

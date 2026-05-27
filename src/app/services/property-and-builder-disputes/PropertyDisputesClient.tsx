@@ -318,7 +318,7 @@ export default function PropertyDisputesClient() {
             {/* CTA Anchor button linking to the pricing section */}
             <div className="w-full sm:w-auto mb-6 select-none">
               <a
-                href="#service-pricing"
+                href="/contact"
                 className="inline-block w-full sm:w-auto text-center px-8 py-4 text-[14px] sm:text-[15px] font-black text-white bg-[#DC2626] hover:bg-[#B91C1C] rounded-[12px] shadow-[0_4px_16px_rgba(220,38,38,0.15)] transition-all duration-200 hover:-translate-y-0.5 active:translate-y-0 cursor-pointer"
               >
                 Start My Recovery - ₹999
