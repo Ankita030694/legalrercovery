@@ -1058,9 +1058,22 @@ function PricingSection() {
             <div className="flex flex-col sm:flex-row items-center gap-6 pt-6 border-t border-[#E5E7EB]/85">
               <button
                 onClick={() => setIsModalOpen(true)}
-                className="w-full sm:w-auto px-8 py-3.5 text-[14px] font-black text-white bg-[#DC2626] hover:bg-[#B91C1C] rounded-xl shadow-[0_4px_16px_rgba(220,38,38,0.15)] transition-all duration-200 hover:-translate-y-0.5 active:translate-y-0 cursor-pointer text-center"
+                style={{
+                  width: "150px",
+                  backgroundColor: "#c21717",
+                  textAlign: "center",
+                  fontWeight: 800,
+                  padding: "11px 0px",
+                  color: "white",
+                  fontSize: "12px",
+                  display: "inline-block",
+                  textDecoration: "none",
+                  borderRadius: "3.229px",
+                  border: "none",
+                  cursor: "pointer"
+                }}
               >
-                Pay ₹999 Now
+                Pay Now
               </button>
               <div className="flex items-center gap-2.5 text-left">
                 <Shield className="w-5 h-5 text-[#2563EB] shrink-0" />
