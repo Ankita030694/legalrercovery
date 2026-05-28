@@ -88,13 +88,11 @@ const BlogsDashboard = () => {
   const [aiContext, setAiContext] = useState("");
   const [isGenerating, setIsGenerating] = useState(false);
 
-  // Image Generation and Content Expansion state
+  // Image Generation state
   const [imagePrompt, setImagePrompt] = useState("");
   const [isGeneratingImage, setIsGeneratingImage] = useState(false);
   const [generatedImageUrl, setGeneratedImageUrl] = useState<string | null>(null);
   const [isUploadingGenerated, setIsUploadingGenerated] = useState(false);
-  const [expansionPrompt, setExpansionPrompt] = useState("");
-  const [isExpanding, setIsExpanding] = useState(false);
   const [isSubmitting, setIsSubmitting] = useState(false);
 
   // Filter blogs based on search term
@@ -480,52 +478,7 @@ const BlogsDashboard = () => {
     }
   };
 
-  const handleExpandContent = async () => {
-    if (!newBlog.description) {
-      alert("Please have some content in the editor first.");
-      return;
-    }
 
-    try {
-      setIsExpanding(true);
-      const response = await fetch("/api/expand-content", {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify({ 
-          content: newBlog.description, 
-          prompt: expansionPrompt, 
-        }),
-      });
-
-      if (!response.ok) {
-        throw new Error("Failed to expand content");
-      }
-
-      const reader = response.body?.getReader();
-      if (!reader) throw new Error("No reader");
-
-      let expandedContent = "";
-      while (true) {
-        const { done, value } = await reader.read();
-        if (done) break;
-        expandedContent += new TextDecoder().decode(value);
-      }
-
-      setNewBlog((prevState) => ({
-        ...prevState,
-        description: expandedContent,
-      }));
-      
-      alert("Content expanded successfully! (Targeting 5000 words)");
-    } catch (error) {
-      console.error("Error expanding content:", error);
-      alert("Failed to expand content.");
-    } finally {
-      setIsExpanding(false);
-    }
-  };
 
   // Handle blog form submission (Create or Update) to MongoDB APIs
   const handleSubmitBlog = async (e: React.FormEvent) => {
@@ -1040,25 +993,7 @@ const BlogsDashboard = () => {
                   onChange={handleEditorChange} 
                 />
                 
-                {/* Content Expander Tool */}
-                <div className="mt-4 p-4 bg-gray-50 border border-gray-200 rounded-2xl space-y-3">
-                  <label className="block text-[10px] font-black text-gray-500 uppercase">AI Content Enhancer Prompt</label>
-                  <input
-                    type="text"
-                    value={expansionPrompt}
-                    onChange={(e) => setExpansionPrompt(e.target.value)}
-                    placeholder="e.g. 'Add detailed statistics and cases on salary recovery'"
-                    className="text-black w-full px-3 py-2 text-xs border border-gray-200 rounded-xl focus:outline-none"
-                  />
-                  <button
-                    type="button"
-                    onClick={handleExpandContent}
-                    disabled={isExpanding || !newBlog.description}
-                    className="px-4 py-2 bg-[#111827] text-white rounded-xl text-xs font-bold disabled:bg-gray-300 cursor-pointer"
-                  >
-                    {isExpanding ? "Expanding Content..." : "Enhance/Expand Content with AI"}
-                  </button>
-                </div>
+
               </div>
 
               {/* FAQs Builder */}

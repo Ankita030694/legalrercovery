@@ -9,6 +9,24 @@ export async function GET(req: NextRequest) {
   }
 
   try {
+    // Robustly handle base64 data URLs directly
+    if (imageUrl.startsWith("data:")) {
+      const matches = imageUrl.match(/^data:([a-zA-Z0-9]+\/[a-zA-Z0-9-.+]+);base64,(.*)$/);
+      if (!matches) {
+        throw new Error("Invalid base64 data URL format");
+      }
+      const contentType = matches[1];
+      const base64Data = matches[2];
+      const buffer = Buffer.from(base64Data, "base64");
+
+      return new Response(buffer, {
+        headers: {
+          "Content-Type": contentType,
+          "Cache-Control": "no-store, max-age=0",
+        },
+      });
+    }
+
     const imageResponse = await fetch(imageUrl);
     if (!imageResponse.ok) {
       throw new Error(`External source image retrieval failed: ${imageResponse.status}`);
@@ -28,3 +46,4 @@ export async function GET(req: NextRequest) {
     return NextResponse.json({ error: error.message }, { status: 500 });
   }
 }
+
