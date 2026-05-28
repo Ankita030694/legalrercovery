@@ -34,7 +34,7 @@ export default function AdminLoginPage() {
         setError("Invalid email address or administrative password.");
         setIsLoading(false);
       } else {
-        router.push("/authority/blog");
+        window.location.href = "/authority/blog";
       }
     } catch (err: any) {
       setError("An unexpected error occurred. Please try again.");
