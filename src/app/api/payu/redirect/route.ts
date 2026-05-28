@@ -28,22 +28,30 @@ export async function POST(req: NextRequest) {
     }
 
     const { status, txnid, amount, productinfo, firstname, email, udf1, udf2, udf3, udf4, udf5, hash, key } = body;
-    const salt = process.env.PAYU_SALT_32BIT || process.env.PAYU_SALT_256BIT;
+    const salt1 = process.env.PAYU_SALT_32BIT;
+    const salt2 = process.env.PAYU_SALT_256BIT;
 
     let isVerified = false;
+    let generatedHash = "";
 
-    if (salt && hash) {
-      // Standard PayU Reverse Hash formula
-      const hashString = `${salt}|${status || ""}||||||${udf5 || ""}|${udf4 || ""}|${udf3 || ""}|${udf2 || ""}|${udf1 || ""}|${email || ""}|${firstname || ""}|${productinfo || ""}|${amount || ""}|${txnid || ""}|${key || ""}`;
-      const generatedHash = crypto.createHash('sha512').update(hashString).digest('hex');
+    if (hash) {
+      const hashData = `${status || ""}||||||${udf5 || ""}|${udf4 || ""}|${udf3 || ""}|${udf2 || ""}|${udf1 || ""}|${email || ""}|${firstname || ""}|${productinfo || ""}|${amount || ""}|${txnid || ""}|${key || ""}`;
       
-      if (generatedHash === hash) {
-        isVerified = true;
-      } else {
-        console.warn("PayU Redirect Hash Mismatch! Possible tampering.");
+      if (salt1) {
+        generatedHash = crypto.createHash('sha512').update(`${salt1}|${hashData}`).digest('hex');
+        if (generatedHash === hash) isVerified = true;
+      }
+      
+      if (!isVerified && salt2) {
+        generatedHash = crypto.createHash('sha512').update(`${salt2}|${hashData}`).digest('hex');
+        if (generatedHash === hash) isVerified = true;
+      }
+
+      if (!isVerified) {
+        console.warn(`PayU Redirect Hash Mismatch! Received: ${hash} Generated (Last Try): ${generatedHash}`);
       }
     } else {
-      console.error("Missing Salt or Hash for redirect verification.");
+      console.error("Missing Hash for redirect verification.");
     }
 
     let targetPath = "/payment-failure";

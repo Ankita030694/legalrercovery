@@ -35,20 +35,32 @@ export async function POST(req: NextRequest) {
 
     // Verify Hash
     // Standard PayU Reverse Hash formula: salt|status||||||udf5|udf4|udf3|udf2|udf1|email|firstname|productinfo|amount|txnid|key
-    const salt = process.env.PAYU_SALT_32BIT || process.env.PAYU_SALT_256BIT;
+    const salt1 = process.env.PAYU_SALT_32BIT;
+    const salt2 = process.env.PAYU_SALT_256BIT;
 
-    if (!salt) {
+    if (!salt1 && !salt2) {
       console.error("PAYU_SALT is not defined in environment variables");
       return NextResponse.json({ error: "Server Configuration Error" }, { status: 500 });
     }
 
-    if (hash) {
-      const hashString = `${salt}|${status || ""}||||||${udf5 || ""}|${udf4 || ""}|${udf3 || ""}|${udf2 || ""}|${udf1 || ""}|${email || ""}|${firstname || ""}|${productinfo || ""}|${amount || ""}|${txnid || ""}|${key || ""}`;
-      
-      const generatedHash = crypto.createHash('sha512').update(hashString).digest('hex');
+    let isVerified = false;
+    let generatedHash = "";
 
-      if (generatedHash !== hash) {
-        console.warn("PayU Webhook Hash Mismatch! Received:", hash, "Generated:", generatedHash);
+    if (hash) {
+      const hashData = `${status || ""}||||||${udf5 || ""}|${udf4 || ""}|${udf3 || ""}|${udf2 || ""}|${udf1 || ""}|${email || ""}|${firstname || ""}|${productinfo || ""}|${amount || ""}|${txnid || ""}|${key || ""}`;
+      
+      if (salt1) {
+        generatedHash = crypto.createHash('sha512').update(`${salt1}|${hashData}`).digest('hex');
+        if (generatedHash === hash) isVerified = true;
+      }
+      
+      if (!isVerified && salt2) {
+        generatedHash = crypto.createHash('sha512').update(`${salt2}|${hashData}`).digest('hex');
+        if (generatedHash === hash) isVerified = true;
+      }
+
+      if (!isVerified) {
+        console.warn(`PayU Webhook Hash Mismatch! Received: ${hash} Generated (Last Try): ${generatedHash}`);
         // Important: In a production environment, if the hash doesn't match, you should reject the webhook.
         // However, if the documentation for this specific payment link uses a different hash formula, 
         // you may need to adjust the hashString above.
