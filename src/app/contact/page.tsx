@@ -174,7 +174,7 @@ export default function ContactPage() {
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-start relative mb-12 md:mb-20">
           
           {/* Left Column: Office details & Support hubs */}
-          <div className="lg:col-span-5 flex flex-col gap-6">
+          <div className="lg:col-span-5 flex flex-col gap-6 order-2 lg:order-1">
             
             {/* Card 1: Support Hubs */}
             <div className="bg-white border border-[#E5E7EB] rounded-2xl p-6 md:p-8 shadow-[0_4px_24px_rgba(0,0,0,0.01)] flex flex-col gap-6">
@@ -244,7 +244,7 @@ export default function ContactPage() {
           </div>
 
           {/* Right Column: Premium Form Card */}
-          <div className="lg:col-span-7 bg-white border border-[#E5E7EB] rounded-3xl p-6 sm:p-8 md:p-10 shadow-[0_12px_40px_rgba(0,0,0,0.015)] relative">
+          <div className="lg:col-span-7 bg-white border border-[#E5E7EB] rounded-3xl p-6 sm:p-8 md:p-10 shadow-[0_12px_40px_rgba(0,0,0,0.015)] relative order-1 lg:order-2">
             
             {/* Ambient Background glow inside form */}
             <div className="absolute top-[10%] left-1/2 -translate-x-1/2 w-[300px] h-[300px] bg-red-50/50 rounded-full blur-3xl -z-10 pointer-events-none" />
