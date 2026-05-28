@@ -2,6 +2,7 @@ import { NextRequest, NextResponse } from "next/server";
 import crypto from "crypto";
 import { getDbAndBucket } from "@/lib/mongodb";
 import { ObjectId } from "mongodb";
+import { verifyPayUTxn } from "@/lib/payu";
 
 export async function POST(req: NextRequest) {
   try {
@@ -28,30 +29,15 @@ export async function POST(req: NextRequest) {
     }
 
     const { status, txnid, amount, productinfo, firstname, email, udf1, udf2, udf3, udf4, udf5, hash, key } = body;
-    const salt1 = process.env.PAYU_SALT_32BIT;
-    const salt2 = process.env.PAYU_SALT_256BIT;
-
+    
+    // Instead of relying on the unreliable Reverse Hash from the Button Redirect, 
+    // we make a 100% secure server-to-server API call to verify the transaction.
     let isVerified = false;
-    let generatedHash = "";
-
-    if (hash) {
-      const hashData = `${status || ""}||||||${udf5 || ""}|${udf4 || ""}|${udf3 || ""}|${udf2 || ""}|${udf1 || ""}|${email || ""}|${firstname || ""}|${productinfo || ""}|${amount || ""}|${txnid || ""}|${key || ""}`;
-      
-      if (salt1) {
-        generatedHash = crypto.createHash('sha512').update(`${salt1}|${hashData}`).digest('hex');
-        if (generatedHash === hash) isVerified = true;
-      }
-      
-      if (!isVerified && salt2) {
-        generatedHash = crypto.createHash('sha512').update(`${salt2}|${hashData}`).digest('hex');
-        if (generatedHash === hash) isVerified = true;
-      }
-
-      if (!isVerified) {
-        console.warn(`PayU Redirect Hash Mismatch! Received: ${hash} Generated (Last Try): ${generatedHash}`);
-      }
+    
+    if (txnid && key) {
+       isVerified = await verifyPayUTxn(txnid, key);
     } else {
-      console.error("Missing Hash for redirect verification.");
+       console.error("Missing txnid or key in redirect payload");
     }
 
     let targetPath = "/payment-failure";

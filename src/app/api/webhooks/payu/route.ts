@@ -2,6 +2,7 @@ import { NextRequest, NextResponse } from "next/server";
 import crypto from "crypto";
 import { getDbAndBucket } from "@/lib/mongodb";
 import { ObjectId } from "mongodb";
+import { verifyPayUTxn } from "@/lib/payu";
 
 export async function POST(req: NextRequest) {
   try {
@@ -33,44 +34,13 @@ export async function POST(req: NextRequest) {
 
     const { status, txnid, amount, productinfo, firstname, email, udf1, udf2, udf3, udf4, udf5, hash, key } = body;
 
-    // Verify Hash
-    // Standard PayU Reverse Hash formula: salt|status||||||udf5|udf4|udf3|udf2|udf1|email|firstname|productinfo|amount|txnid|key
-    const salt1 = process.env.PAYU_SALT_32BIT;
-    const salt2 = process.env.PAYU_SALT_256BIT;
-
-    if (!salt1 && !salt2) {
-      console.error("PAYU_SALT is not defined in environment variables");
-      return NextResponse.json({ error: "Server Configuration Error" }, { status: 500 });
-    }
-
+    // Verify using robust API call
     let isVerified = false;
-    let generatedHash = "";
-
-    if (hash) {
-      const hashData = `${status || ""}||||||${udf5 || ""}|${udf4 || ""}|${udf3 || ""}|${udf2 || ""}|${udf1 || ""}|${email || ""}|${firstname || ""}|${productinfo || ""}|${amount || ""}|${txnid || ""}|${key || ""}`;
-      
-      if (salt1) {
-        generatedHash = crypto.createHash('sha512').update(`${salt1}|${hashData}`).digest('hex');
-        if (generatedHash === hash) isVerified = true;
-      }
-      
-      if (!isVerified && salt2) {
-        generatedHash = crypto.createHash('sha512').update(`${salt2}|${hashData}`).digest('hex');
-        if (generatedHash === hash) isVerified = true;
-      }
-
-      if (!isVerified) {
-        console.warn(`PayU Webhook Hash Mismatch! Received: ${hash} Generated (Last Try): ${generatedHash}`);
-        // Important: In a production environment, if the hash doesn't match, you should reject the webhook.
-        // However, if the documentation for this specific payment link uses a different hash formula, 
-        // you may need to adjust the hashString above.
-        // Uncomment the line below to enforce strict hash matching after confirming the formula works.
-        // return NextResponse.json({ error: "Invalid Hash" }, { status: 400 });
-      } else {
-        console.log("PayU Webhook Hash verified successfully.");
-      }
+    
+    if (txnid && key) {
+       isVerified = await verifyPayUTxn(txnid, key);
     } else {
-      console.warn("No hash provided in the PayU webhook payload.");
+       console.error("Missing txnid or key in webhook payload");
     }
 
     console.log("PAYU WEBHOOK RAW BODY:", JSON.stringify(body, null, 2));
