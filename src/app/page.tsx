@@ -2,6 +2,7 @@
 
 import React from "react";
 import Link from "next/link";
+import { PaymentModal } from "@/components/PaymentModal";
 import {
   Wallet,
   Timer,
@@ -975,8 +976,11 @@ function HowItWorksSection() {
 }
 
 function PricingSection() {
+  const [isModalOpen, setIsModalOpen] = React.useState(false);
+
   return (
     <section className="mt-12 md:mt-24 max-w-5xl mx-auto px-4 md:px-0 select-none">
+      <PaymentModal isOpen={isModalOpen} onClose={() => setIsModalOpen(false)} />
       {/* Centered Header */}
       <div className="text-center mb-8 md:mb-12">
         <h2 className="text-2xl sm:text-3xl md:text-[34px] font-black text-[#111827] leading-none mb-3 tracking-tight">
@@ -1052,12 +1056,12 @@ function PricingSection() {
             </div>
 
             <div className="flex flex-col sm:flex-row items-center gap-6 pt-6 border-t border-[#E5E7EB]/85">
-              <Link
-                href="/contact"
+              <button
+                onClick={() => setIsModalOpen(true)}
                 className="w-full sm:w-auto px-8 py-3.5 text-[14px] font-black text-white bg-[#DC2626] hover:bg-[#B91C1C] rounded-xl shadow-[0_4px_16px_rgba(220,38,38,0.15)] transition-all duration-200 hover:-translate-y-0.5 active:translate-y-0 cursor-pointer text-center"
               >
-                Get Started Now
-              </Link>
+                Pay ₹999 Now
+              </button>
               <div className="flex items-center gap-2.5 text-left">
                 <Shield className="w-5 h-5 text-[#2563EB] shrink-0" />
                 <span className="text-[12px] text-[#6B7280] font-bold leading-tight">
