@@ -1,10 +1,8 @@
 "use client";
 
-import React, { useState, useMemo } from "react";
+import React, { useMemo } from "react";
 import Link from "next/link";
 import {
-  Menu,
-  X,
   Wallet,
   Timer,
   Shield,
@@ -46,11 +44,6 @@ import {
 } from "lucide-react";
 
 export default function HowItWorksPage() {
-  // Mobile menu visibility
-  const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
-
-  // Active status of start recovery dropdown
-  const [startRecoveryDropdownOpen, setStartRecoveryDropdownOpen] = useState(false);
 
   const steps = useMemo(() => [
     {
@@ -186,43 +179,6 @@ export default function HowItWorksPage() {
 
   return (
     <div className="min-h-screen bg-[#F8F9FB] text-[#111827] font-sans antialiased overflow-x-hidden relative">
-
-  
-
-      {/* Mobile Menu Dropdown */}
-      <div
-        className={`fixed inset-x-0 top-20 z-40 xl:hidden bg-white/95 backdrop-blur-md border-b border-[#E5E7EB]/60 p-6 shadow-[0_20px_80px_rgba(0,0,0,0.12)] transition-all duration-300 transform origin-top ${mobileMenuOpen ? "scale-y-100 opacity-100" : "scale-y-0 opacity-0 pointer-events-none"}`}
-      >
-        <nav className="flex flex-col gap-4">
-          <a href="/" onClick={() => setMobileMenuOpen(false)} className="text-base font-semibold text-[#4B5563] hover:text-[#DC2626] transition-colors">
-            Home
-          </a>
-          <a href="/about" onClick={() => setMobileMenuOpen(false)} className="text-base font-semibold text-[#4B5563] hover:text-[#DC2626] transition-colors">
-            About Us
-          </a>
-          <a href="/services" onClick={() => setMobileMenuOpen(false)} className="text-base font-semibold text-[#4B5563] hover:text-[#DC2626] transition-colors">
-            Services
-          </a>
-          <a href="/how-it-works" onClick={() => setMobileMenuOpen(false)} className="text-base font-semibold text-[#111827] hover:text-[#DC2626] transition-colors">
-            How It Works
-          </a>
-          <a href="/blog" onClick={() => setMobileMenuOpen(false)} className="text-base font-semibold text-[#4B5563] hover:text-[#DC2626] transition-colors">
-            Blog
-          </a>
-          <a href="/contact" onClick={() => setMobileMenuOpen(false)} className="text-base font-semibold text-[#4B5563] hover:text-[#DC2626] transition-colors">
-            Contact
-          </a>
-          <div className="h-px bg-[#E5E7EB] my-2"></div>
-          <div className="flex flex-col gap-3">
-            <a href="/contact" onClick={() => setMobileMenuOpen(false)} className="w-full text-center py-2.5 text-sm font-semibold text-[#4B5563] border border-[#E5E7EB] rounded-xl bg-white">
-              Track Recovery
-            </a>
-            <a href="/contact" onClick={() => setMobileMenuOpen(false)} className="w-full text-center py-2.5 text-sm font-semibold text-white bg-[#DC2626] rounded-xl shadow-[0_4px_12px_rgba(220,38,38,0.15)]">
-              Start Recovery
-            </a>
-          </div>
-        </nav>
-      </div>
 
       {/* ================= HOW IT WORKS HERO ================= */}
       <main className="pt-15 pb-12 md:pb-24 px-4 sm:px-6 md:px-16 max-w-8xl mx-auto overflow-hidden relative">

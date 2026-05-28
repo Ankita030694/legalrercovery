@@ -1,10 +1,8 @@
 "use client";
 
-import React, { useState } from "react";
+import React from "react";
 import Link from "next/link";
 import {
-  Menu,
-  X,
   Wallet,
   Timer,
   Shield,
@@ -41,209 +39,15 @@ import {
 } from "lucide-react";
 
 export default function Home() {
-  // Mobile menu visibility
-  const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
-
-  // Active status of start recovery dropdown
-  const [startRecoveryDropdownOpen, setStartRecoveryDropdownOpen] = useState(false);
-
   return (
     <div className="min-h-screen bg-[#F8F9FB] text-[#111827] font-sans antialiased overflow-x-hidden relative">
-
-      {/* ================= HIGH FIDELITY BRAND NAVBAR ================= */}
-      <header className="fixed top-0 left-0 right-0 h-20 z-50 bg-white/72 backdrop-blur-md border-b border-[#E5E7EB]/60 flex items-center justify-between px-6 xl:px-12 transition-all">
-
-        {/* Left Side: Brand Logo as seen in screenshot */}
-        <a href="/" className="flex items-center select-none">
-          <img src="/lrlogo.svg" alt="LegalRecovery" className="h-8 sm:h-9 w-auto object-contain" />
-        </a>
-
-        {/* Center Navigation Links (Matching screenshot items exactly) */}
-        <nav className="hidden xl:flex items-center gap-6">
-          {/* Active 'Home' item with red underline centered underneath */}
-          <a
-            href="/"
-            className="relative py-2 text-[13.5px] font-bold text-[#111827] hover:text-[#DC2626] transition-colors flex flex-col items-center group"
-          >
-            Home
-            <span className="absolute bottom-[-4px] w-5 h-[2.5px] bg-[#DC2626] rounded-full"></span>
-          </a>
-
-          <a
-            href="/about"
-            className="text-[13.5px] font-bold text-[#4B5563] hover:text-[#DC2626] transition-colors py-2"
-          >
-            About Us
-          </a>
-
-          <a
-            href="/services"
-            className="text-[13.5px] font-bold text-[#4B5563] hover:text-[#DC2626] transition-colors py-2"
-          >
-            Services
-          </a>
-
-          <a
-            href="/how-it-works"
-            className="text-[13.5px] font-bold text-[#4B5563] hover:text-[#DC2626] transition-colors py-2"
-          >
-            How It Works
-          </a>
-
-          <a
-            href="/blog"
-            className="text-[13.5px] font-bold text-[#4B5563] hover:text-[#DC2626] transition-colors py-2"
-          >
-            Blog
-          </a>
-
-          <a
-            href="/contact"
-            className="text-[13.5px] font-bold text-[#4B5563] hover:text-[#DC2626] transition-colors py-2"
-          >
-            Contact
-          </a>
-        </nav>
-
-        {/* Right Side Button: Recover My Money with dropdown */}
-        <div className="hidden xl:flex items-center gap-6 relative">
-
-          {/* Recover My Money Red Rounded Button with inner Chevron Down on Left */}
-          <div className="relative">
-            <button
-              onClick={() => setStartRecoveryDropdownOpen(!startRecoveryDropdownOpen)}
-              className="flex items-center gap-2 px-5 py-2.5 text-[13.5px] font-bold text-white bg-[#DC2626] hover:bg-[#B91C1C] rounded-[10px] shadow-[0_4px_12px_rgba(220,38,38,0.15)] transition-all duration-200 hover:-translate-y-0.5 active:translate-y-0 focus:outline-none select-none cursor-pointer"
-            >
-              <svg
-                className={`w-3.5 h-3.5 text-white transition-transform duration-300 ${startRecoveryDropdownOpen ? "rotate-180" : ""}`}
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="currentColor"
-                strokeWidth="3"
-                strokeLinecap="round"
-                strokeLinejoin="round"
-              >
-                <polyline points="6 9 12 15 18 9" />
-              </svg>
-              Recover My Money
-            </button>
-
-            {/* Interactive Dropdown Menu */}
-            {startRecoveryDropdownOpen && (
-              <div className="absolute right-0 mt-2 w-56 bg-white/90 backdrop-blur-md rounded-xl shadow-[0_10px_40px_rgba(0,0,0,0.08)] border border-[#E5E7EB]/80 overflow-hidden z-50">
-                <div className="py-1">
-                  <a
-                    href="/contact"
-                    onClick={() => setStartRecoveryDropdownOpen(false)}
-                    className="block px-4 py-2.5 text-xs font-semibold text-[#4B5563] hover:text-[#DC2626] hover:bg-[#F8F9FB] transition-colors"
-                  >
-                    💼 Salary Delay Recovery
-                  </a>
-                  <a
-                    href="/contact"
-                    onClick={() => setStartRecoveryDropdownOpen(false)}
-                    className="block px-4 py-2.5 text-xs font-semibold text-[#4B5563] hover:text-[#DC2626] hover:bg-[#F8F9FB] transition-colors"
-                  >
-                    🤝 Unpaid Freelancer Dues
-                  </a>
-                  <a
-                    href="/contact"
-                    onClick={() => setStartRecoveryDropdownOpen(false)}
-                    className="block px-4 py-2.5 text-xs font-semibold text-[#4B5563] hover:text-[#DC2626] hover:bg-[#F8F9FB] transition-colors"
-                  >
-                    🏢 Rental Security Deposit
-                  </a>
-                  <a
-                    href="/contact"
-                    onClick={() => setStartRecoveryDropdownOpen(false)}
-                    className="block px-4 py-2.5 text-xs font-semibold text-[#4B5563] hover:text-[#DC2626] hover:bg-[#F8F9FB] transition-colors"
-                  >
-                    🛍️ Defective Consumer Grievance
-                  </a>
-                </div>
-              </div>
-            )}
-          </div>
-        </div>
-
-        {/* Mobile Navbar Hamburger Toggle Button */}
-        <button
-          className="xl:hidden p-2 text-[#111827] focus:outline-none"
-          onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-          aria-label="Toggle navigation menu"
-        >
-          {mobileMenuOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
-        </button>
-      </header>
-
-      {/* Mobile Glass Menu Dropdown */}
-      {mobileMenuOpen && (
-        <div
-          className="fixed inset-x-0 top-20 z-40 xl:hidden bg-white/95 backdrop-blur-md border-b border-[#E5E7EB]/60 p-6 shadow-[0_20px_80px_rgba(0,0,0,0.12)] transition-all duration-300 transform origin-top scale-y-100 opacity-100"
-        >
-          <nav className="flex flex-col gap-4">
-            <a
-              href="/"
-              onClick={() => setMobileMenuOpen(false)}
-              className="text-base font-semibold text-[#111827] hover:text-[#DC2626] transition-colors"
-            >
-              Home
-            </a>
-            <a
-              href="/about"
-              onClick={() => setMobileMenuOpen(false)}
-              className="text-base font-semibold text-[#4B5563] hover:text-[#DC2626] transition-colors"
-            >
-              About Us
-            </a>
-            <a
-              href="/services"
-              onClick={() => setMobileMenuOpen(false)}
-              className="text-base font-semibold text-[#4B5563] hover:text-[#DC2626] transition-colors"
-            >
-              Services
-            </a>
-            <a
-              href="/how-it-works"
-              onClick={() => setMobileMenuOpen(false)}
-              className="text-base font-semibold text-[#4B5563] hover:text-[#DC2626] transition-colors"
-            >
-              How It Works
-            </a>
-            <a
-              href="/blog"
-              onClick={() => setMobileMenuOpen(false)}
-              className="text-base font-semibold text-[#4B5563] hover:text-[#DC2626] transition-colors"
-            >
-              Blog
-            </a>
-            <a
-              href="/contact"
-              onClick={() => setMobileMenuOpen(false)}
-              className="text-base font-semibold text-[#4B5563] hover:text-[#DC2626] transition-colors"
-            >
-              Contact
-            </a>
-            <div className="h-px bg-[#E5E7EB] my-2"></div>
-            <div className="flex flex-col gap-3">
-              <a
-                href="/contact"
-                onClick={() => setMobileMenuOpen(false)}
-                className="w-full text-center py-2.5 text-sm font-semibold text-white bg-[#DC2626] rounded-xl shadow-[0_4px_12px_rgba(220,38,38,0.15)]"
-              >
-                Recover My Money
-              </a>
-            </div>
-          </nav>
-        </div>
-      )}
 
       {/* ================= HERO SECTION (Visual Matched to Screenshot) ================= */}
       <main className="pt-32 pb-12 md:pb-24 px-4 sm:px-6 md:px-16 max-w-8xl mx-auto overflow-hidden relative">
 
         {/* Soft Radial Ambient Lights to match modern theme */}
-        <div className="absolute top-0 right-0 w-[500px] h-[500px] red-radial-glow -z-10 pointer-events-none rounded-full blur-[100px] opacity-40" />
-        <div className="absolute bottom-0 left-0 w-[400px] h-[400px] red-radial-glow -z-10 pointer-events-none rounded-full blur-[80px] opacity-25" />
+        <div className="absolute top-0 right-0 w-[500px] h-[500px] red-radial-glow -z-10 pointer-events-none rounded-full opacity-40 gpu-accelerated" />
+        <div className="absolute bottom-0 left-0 w-[400px] h-[400px] red-radial-glow -z-10 pointer-events-none rounded-full opacity-25 gpu-accelerated" />
 
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-16 items-center">
 
@@ -291,7 +95,7 @@ export default function Home() {
                   <span className="text-[10.5px] font-black uppercase tracking-wider text-[#6B7280] flex items-center gap-1.5">
                     ⚡ Powered by India&apos;s Top Legal AI Pipeline
                   </span>
-                  <div className="flex w-fit flex-wrap items-center gap-5 bg-white/65 backdrop-blur-sm border border-[#E5E7EB]/85 rounded-2xl px-5 py-3 shadow-[0_4px_20px_rgba(0,0,0,0.015)]">
+                  <div className="flex w-fit flex-wrap items-center gap-5 bg-white/65 backdrop-blur-sm border border-[#E5E7EB]/85 rounded-2xl px-5 py-3 shadow-[0_4px_20px_rgba(0,0,0,0.015)] gpu-accelerated">
                     {AI_LOGOS.map((ai) => (
                       <a
                         key={ai.name}
@@ -562,8 +366,8 @@ export default function Home() {
           <div className="bg-[#FFFFFF] border border-[#E5E7EB] rounded-[32px] p-6 sm:p-10 md:p-14 shadow-[0_12px_50px_rgba(0,0,0,0.025)] relative overflow-hidden flex flex-col lg:flex-row items-center gap-10 lg:gap-16">
             
             {/* Ambient Red/Green Glow in background */}
-            <div className="absolute top-0 right-0 w-80 h-80 bg-red-500/5 rounded-full blur-3xl pointer-events-none" />
-            <div className="absolute bottom-0 left-0 w-80 h-80 bg-emerald-500/5 rounded-full blur-3xl pointer-events-none" />
+            <div className="absolute top-0 right-0 w-80 h-80 bg-red-500/5 rounded-full blur-xl pointer-events-none gpu-accelerated" />
+            <div className="absolute bottom-0 left-0 w-80 h-80 bg-emerald-500/5 rounded-full blur-xl pointer-events-none gpu-accelerated" />
 
             {/* Left side: Content block */}
             <div className="flex-1 text-center lg:text-left z-10">
@@ -1292,8 +1096,8 @@ function CTASection() {
     <section className="w-full max-w-7xl mx-auto px-4 md:px-0 mt-12 md:mt-24 select-none">
       <div className="bg-[#152331] rounded-[32px] border border-gray-800/80 p-6 sm:p-16 relative overflow-hidden shadow-[0_20px_50px_rgba(0,0,0,0.1)] text-center">
         {/* Glowing Background Radial Accents */}
-        <div className="absolute top-1/2 -left-[10%] w-[350px] h-[350px] bg-red-950/20 -translate-y-1/2 -z-10 rounded-full blur-[80px]" />
-        <div className="absolute top-1/2 -right-[10%] w-[350px] h-[350px] bg-emerald-950/15 -translate-y-1/2 -z-10 rounded-full blur-[80px]" />
+        <div className="absolute top-1/2 -left-[10%] w-[350px] h-[350px] bg-red-950/20 -translate-y-1/2 -z-10 rounded-full blur-xl gpu-accelerated" />
+        <div className="absolute top-1/2 -right-[10%] w-[350px] h-[350px] bg-emerald-950/15 -translate-y-1/2 -z-10 rounded-full blur-xl gpu-accelerated" />
 
         {/* Tagline Pill */}
         <span className="px-3.5 py-1 text-[11px] font-extrabold text-[#DC2626] bg-red-500/10 border border-red-500/20 rounded-full uppercase tracking-wider mb-6 inline-block">

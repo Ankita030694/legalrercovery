@@ -1,6 +1,7 @@
 "use client";
 
 import React, { useState, useMemo } from "react";
+import Image from "next/image";
 import Link from "next/link";
 import {
   Wallet,
@@ -224,8 +225,8 @@ export default function ServicesPage() {
       <main className="pt-32 pb-12 md:pb-24 px-4 sm:px-6 md:px-16 max-w-8xl mx-auto overflow-hidden relative">
         
         {/* Ambient Lights */}
-        <div className="absolute top-0 right-0 w-[500px] h-[500px] red-radial-glow -z-10 pointer-events-none rounded-full blur-[100px] opacity-40" />
-        <div className="absolute bottom-0 left-0 w-[400px] h-[400px] red-radial-glow -z-10 pointer-events-none rounded-full blur-[80px] opacity-25" />
+        <div className="absolute top-0 right-0 w-[500px] h-[500px] red-radial-glow -z-10 pointer-events-none rounded-full opacity-40 gpu-accelerated" />
+        <div className="absolute bottom-0 left-0 w-[400px] h-[400px] red-radial-glow -z-10 pointer-events-none rounded-full opacity-25 gpu-accelerated" />
 
         {/* Hero Split Layout */}
         <div className="flex flex-col lg:flex-row items-center justify-between gap-8 lg:gap-16 w-full max-w-8xl mx-auto mb-8 md:mb-12">
@@ -250,12 +251,14 @@ export default function ServicesPage() {
             </div>
           </div>
 
-          {/* Right Image Column */}
-          <div className="lg:w-1/2 flex justify-end items-center w-full -mr-4 sm:-mr-6 md:-mr-16">
-            <img
+          <div className="lg:w-1/2 flex justify-end items-center w-full -mr-4 sm:-mr-6 md:-mr-16 relative h-[300px] sm:h-[380px] lg:h-[485px]">
+            <Image
               src="/hatoda1.png"
               alt="Our Recovery Services"
-              className="w-full max-w-[560px] lg:max-w-[700px] object-contain select-none pointer-events-none mix-blend-multiply"
+              fill
+              priority
+              sizes="(max-width: 1024px) 100vw, 50vw"
+              className="object-contain select-none pointer-events-none mix-blend-multiply"
             />
           </div>
         </div>
@@ -364,7 +367,7 @@ export default function ServicesPage() {
           <div className="bg-[#152331] border border-gray-800/80 rounded-2xl md:rounded-[24px] p-6 md:py-8 md:px-12 relative overflow-hidden shadow-[0_15px_40px_rgba(0,0,0,0.05)] flex flex-col md:flex-row items-start md:items-center justify-between gap-6">
             
             {/* Subtle Ambient light behind */}
-            <div className="absolute top-1/2 right-[10%] w-[300px] h-[150px] bg-red-950/20 -translate-y-1/2 -z-10 rounded-full blur-3xl" />
+            <div className="absolute top-1/2 right-[10%] w-[300px] h-[150px] bg-red-950/20 -translate-y-1/2 -z-10 rounded-full blur-xl gpu-accelerated" />
             
             {/* Left Content */}
             <div className="flex flex-col items-start text-left select-text max-w-2xl">

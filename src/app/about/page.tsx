@@ -1,6 +1,7 @@
 "use client";
 
 import React from "react";
+import Image from "next/image";
 import {
   Shield,
   Heart,
@@ -133,16 +134,16 @@ export default function AboutPage() {
               affordable and effective for every individual and business in India.
             </p>
 
-            {/* ── MOBILE ONLY: Team photo ── */}
-            <div className="w-full h-[220px] sm:h-[280px] overflow-hidden rounded-2xl mb-8 lg:hidden">
-              <img
+            <div className="relative w-full h-[220px] sm:h-[280px] overflow-hidden rounded-2xl mb-8 lg:hidden">
+              <Image
                 src="/edited.png"
                 alt="LegalRecovery expert legal team"
-                className="w-full object-cover"
+                fill
+                priority
+                sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
+                className="object-cover"
                 style={{
-                  height: "135%",
-                  objectPosition: "center 10%",
-                  display: "block"
+                  objectPosition: "center 10%"
                 }}
               />
             </div>
@@ -177,14 +178,15 @@ export default function AboutPage() {
             <div className="relative w-full
                             h-[220px] sm:h-[280px] lg:h-[420px] xl:h-[750px]
                             overflow-hidden rounded-2xl lg:rounded-none">
-              <img
+              <Image
                 src="/edited.png"
                 alt="LegalRecovery expert legal team"
-                className="w-full object-cover"
+                fill
+                priority
+                sizes="(max-width: 1024px) 100vw, 50vw"
+                className="object-cover"
                 style={{
-                  height: "135%",
-                  objectPosition: "center 10%",
-                  display: "block"
+                  objectPosition: "center 10%"
                 }}
               />
               {/* Subtle bottom fade so it bleeds into stats bar */}

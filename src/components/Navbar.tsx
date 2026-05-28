@@ -15,9 +15,9 @@ const navLinks = [
 
 const recoveryItems = [
   "💼 Salary Delay Recovery",
-  "🛠️ Freelancer Dues",
-  "🏠 Rental Deposit Recovery",
-  "📦 Consumer Grievance",
+  "🤝 Unpaid Freelancer Dues",
+  "🏢 Rental Security Deposit",
+  "🛍️ Defective Consumer Grievance",
   "⚖️ Other Legal Claim",
 ];
 
@@ -28,7 +28,7 @@ export default function Navbar() {
 
   return (
     <>
-      <header className="fixed top-0 left-0 right-0 h-16 sm:h-20 z-50 bg-white/90 backdrop-blur-md border-b border-[#E5E7EB]/60 flex items-center justify-between px-4 sm:px-6 xl:px-12">
+      <header className="fixed top-0 left-0 right-0 h-20 z-50 bg-white/72 backdrop-blur-md border-b border-[#E5E7EB]/60 flex items-center justify-between px-6 xl:px-12 transition-all gpu-accelerated">
 
         <a href="/" className="flex items-center select-none">
           <img src="/lrlogo.svg" alt="LegalRecovery" className="h-8 sm:h-9 w-auto object-contain" />
@@ -60,7 +60,7 @@ export default function Navbar() {
           <div className="relative">
             <button
               onClick={() => setDropdownOpen(!dropdownOpen)}
-              className="flex items-center gap-2 px-5 py-2.5 text-[13.5px] font-bold text-white bg-[#DC2626] hover:bg-[#B91C1C] rounded-[10px] shadow-[0_4px_12px_rgba(220,38,38,0.15)] transition-all duration-200 hover:-translate-y-0.5 focus:outline-none"
+              className="flex items-center gap-2 px-5 py-2.5 text-[13.5px] font-bold text-white bg-[#DC2626] hover:bg-[#B91C1C] rounded-[10px] shadow-[0_4px_12px_rgba(220,38,38,0.15)] transition-all duration-200 hover:-translate-y-0.5 focus:outline-none select-none cursor-pointer"
             >
               <svg
                 className={`w-3.5 h-3.5 transition-transform duration-300 ${dropdownOpen ? "rotate-180" : ""}`}
@@ -68,7 +68,7 @@ export default function Navbar() {
               >
                 <polyline points="6 9 12 15 18 9" />
               </svg>
-              Start Recovery
+              Recover My Money
             </button>
 
             {dropdownOpen && (
@@ -93,7 +93,7 @@ export default function Navbar() {
         {/* ── Mobile Hamburger ── */}
         <button
           onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-          className="xl:hidden p-2 rounded-lg hover:bg-[#F3F4F6] transition-colors text-[#111827]"
+          className="xl:hidden p-2 rounded-lg hover:bg-[#F3F4F6] transition-colors text-[#111827] focus:outline-none"
           aria-label="Toggle menu"
         >
           {mobileMenuOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
@@ -102,7 +102,7 @@ export default function Navbar() {
 
       {/* ── Mobile Drawer ── */}
       {mobileMenuOpen && (
-        <div className="fixed inset-0 top-16 sm:top-20 z-40 bg-white flex flex-col px-5 py-6 xl:hidden overflow-y-auto">
+        <div className="fixed inset-0 top-20 z-40 bg-white flex flex-col px-5 py-6 xl:hidden overflow-y-auto gpu-accelerated">
           {navLinks.map((link) => {
             const isActive = pathname === link.href;
             return (
@@ -123,7 +123,7 @@ export default function Navbar() {
               onClick={() => setMobileMenuOpen(false)}
               className="flex items-center justify-center gap-2 py-3.5 text-sm font-bold text-white bg-[#DC2626] rounded-xl shadow-md"
             >
-              Start Recovery
+              Recover My Money
             </a>
             <a
               href="/contact"
