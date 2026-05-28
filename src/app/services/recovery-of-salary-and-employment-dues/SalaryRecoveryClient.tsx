@@ -25,8 +25,7 @@ import {
   AlertTriangle,
   Receipt,
   FileText,
-  Key,
-  Coins
+  Key
 } from 'lucide-react';
 
 // FAQs Interface
@@ -245,11 +244,11 @@ export default function SalaryRecoveryClient() {
         ]
       },
       {
-        "@type": "Service",
+        "@type": "Product",
         "@id": "https://www.legalrecovery.in/services/recovery-of-salary-and-employment-dues#service",
         "name": "Salary and Employment Dues Recovery Service",
         "description": "Professional money recovery for unpaid salaries, F&F settlements, commissions, bonuses, and wrongful termination dues using top-tier legal notice pipelines and police complaint drafting.",
-        "provider": {
+        "brand": {
           "@type": "Organization",
           "name": "LegalRecovery",
           "url": "https://www.legalrecovery.in"

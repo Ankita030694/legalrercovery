@@ -27,7 +27,6 @@ import {
   AlertCircle,
   Home as HomeIcon,
   Key,
-  Coins,
   Plane,
   Receipt,
   Building2,
@@ -383,7 +382,7 @@ export default function Home() {
               </h2>
               
               <p className="text-[13px] sm:text-[14.5px] text-[#4B5563] leading-relaxed mb-6 font-medium max-w-2xl mx-auto lg:mx-0">
-                To guarantee absolute validity and the highest resolution rates, Legal Recovery's cutting-edge legaltech platform is backed and legally powered by **AMA Legal Solutions** - a leading full-service legal firm. This powerful synergy combines digital convenience and advanced automation with institutional legal authority.
+                To guarantee absolute validity and the highest resolution rates, Legal Recovery's cutting-edge legaltech platform is backed and legally powered by <b>AMA Legal Solutions</b> - a leading full-service legal firm. This powerful synergy combines digital convenience and advanced automation with institutional legal authority.
               </p>
 
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 max-w-xl mx-auto lg:mx-0">
@@ -567,7 +566,7 @@ function ServicesSection() {
         <div className="relative w-12 h-12 flex items-center justify-center">
           <Users className="w-10 h-10 text-[#111827] stroke-[2.2]" />
           <div className="absolute -bottom-1 -right-1 bg-white rounded-full p-0.5 shadow-sm border border-[#E5E7EB] flex items-center justify-center">
-            <Coins className="w-4 h-4 text-[#DC2626] stroke-[2.5]" />
+            <IndianRupee className="w-4 h-4 text-[#DC2626] stroke-[2.5]" />
           </div>
         </div>
       )
@@ -601,7 +600,7 @@ function ServicesSection() {
       ],
       icon: (
         <div className="relative w-12 h-12 flex items-center justify-center">
-          <Receipt className="w-10 h-10 text-[#111827] stroke-[2.2]" />
+          <IndianRupee className="w-10 h-10 text-[#111827] stroke-[2.2]" />
           <div className="absolute -bottom-1 -right-1 bg-white rounded-full p-0.5 shadow-sm border border-[#E5E7EB] flex items-center justify-center">
             <Timer className="w-4 h-4 text-[#DC2626] stroke-[2.5]" />
           </div>
@@ -699,7 +698,7 @@ function WhyChooseUsSection() {
     {
       title: "Affordable Pricing",
       description: "High-quality legal support without burning a hole in your pocket.",
-      icon: <Coins className="w-8 h-8 text-[#111827] stroke-[2]" />
+      icon: <IndianRupee className="w-8 h-8 text-[#111827] stroke-[2]" />
     },
     {
       title: "Trusted by Thousands",

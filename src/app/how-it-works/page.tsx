@@ -26,7 +26,6 @@ import {
   AlertCircle,
   Home as HomeIcon,
   Key,
-  Coins,
   Plane,
   Receipt,
   Building2,
@@ -99,7 +98,7 @@ export default function HowItWorksPage() {
       description: "Transparent pricing, No hidden charges",
       icon: (
         <div className="relative w-10 h-10 sm:w-12 sm:h-12 flex items-center justify-center shrink-0 bg-[#F9FAFB] rounded-xl border border-[#E5E7EB]">
-          <Coins className="w-5 h-5 sm:w-6 sm:h-6 text-[#4B5563] stroke-[1.8]" />
+          <IndianRupee className="w-5 h-5 sm:w-6 sm:h-6 text-[#4B5563] stroke-[1.8]" />
           <div className="absolute w-1.5 h-1.5 bg-[#DC2626] rounded-full top-[17px] left-[17px] sm:top-[21px] sm:left-[21px]" />
         </div>
       )

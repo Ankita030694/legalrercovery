@@ -23,7 +23,7 @@ import {
   Receipt,
   FileText,
   Key,
-  Coins,
+  IndianRupee,
   Plane,
   Calendar,
   Info,
@@ -251,11 +251,11 @@ export default function TravelRecoveryClient() {
         ]
       },
       {
-        "@type": "Service",
+        "@type": "Product",
         "@id": "https://www.legalrecovery.in/services/airline-and-travel-recoveries#service",
         "name": "Airline and Travel Dues Recovery Service",
         "description": "Professional money recovery for unpaid flight refunds, ticket cancellation dues, delayed hotel deposits, and lost baggage compensation using top-tier legal notice pipelines and AirSewa/DGCA compliance filings.",
-        "provider": {
+        "brand": {
           "@type": "Organization",
           "name": "LegalRecovery",
           "url": "https://www.legalrecovery.in"

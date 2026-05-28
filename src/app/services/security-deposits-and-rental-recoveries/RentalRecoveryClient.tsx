@@ -23,8 +23,7 @@ import {
   Handshake,
   Receipt,
   FileText,
-  Key,
-  Coins
+  Key
 } from 'lucide-react';
 
 // FAQs Interface
@@ -243,11 +242,11 @@ export default function RentalRecoveryClient() {
         ]
       },
       {
-        "@type": "Service",
+        "@type": "Product",
         "@id": "https://www.legalrecovery.in/services/security-deposits-and-rental-recoveries#service",
         "name": "Security Deposit & Rental Recovery Service",
         "description": "Professional money recovery for withheld security deposits, unpaid rent, commercial lease breaches, and property damage disputes using top-tier advocate-signed notice campaigns.",
-        "provider": {
+        "brand": {
           "@type": "Organization",
           "name": "LegalRecovery",
           "url": "https://www.legalrecovery.in"

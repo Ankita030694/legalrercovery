@@ -27,7 +27,6 @@ import {
   AlertCircle,
   Home as HomeIcon,
   Key,
-  Coins,
   Plane,
   Receipt,
   Building2,
@@ -133,7 +132,7 @@ export default function ServicesPage() {
         <div className="relative w-8 h-8 sm:w-12 sm:h-12 flex items-center justify-center">
           <Users className="w-7 h-7 sm:w-10 sm:h-10 text-[#111827] stroke-[2.2]" />
           <div className="absolute -bottom-0.5 -right-0.5 sm:-bottom-1 sm:-right-1 bg-white rounded-full p-0.5 shadow-sm border border-[#E5E7EB] flex items-center justify-center">
-            <Coins className="w-2.5 h-2.5 sm:w-4 sm:h-4 text-[#DC2626] stroke-[2.5]" />
+            <IndianRupee className="w-2.5 h-2.5 sm:w-4 sm:h-4 text-[#DC2626] stroke-[2.5]" />
           </div>
         </div>
       )
@@ -169,7 +168,7 @@ export default function ServicesPage() {
       ],
       icon: (
         <div className="relative w-8 h-8 sm:w-12 sm:h-12 flex items-center justify-center">
-          <Receipt className="w-7 h-7 sm:w-10 sm:h-10 text-[#111827] stroke-[2.2]" />
+          <IndianRupee className="w-7 h-7 sm:w-10 sm:h-10 text-[#111827] stroke-[2.2]" />
           <div className="absolute -bottom-0.5 -right-0.5 sm:-bottom-1 sm:-right-1 bg-white rounded-full p-0.5 shadow-sm border border-[#E5E7EB] flex items-center justify-center">
             <Timer className="w-2.5 h-2.5 sm:w-4 sm:h-4 text-[#DC2626] stroke-[2.5]" />
           </div>
@@ -340,7 +339,7 @@ export default function ServicesPage() {
 
               <div className="flex flex-col items-center text-center">
                 <div className="h-14 w-14 sm:h-16 sm:w-16 mb-4 sm:mb-5 flex items-center justify-center rounded-2xl bg-red-50/40 border border-[#FEE2E2]/50 transform transition-transform duration-300 hover:scale-110">
-                  <Coins className="w-8 h-8 text-[#111827] stroke-[2]" />
+                  <IndianRupee className="w-8 h-8 text-[#111827] stroke-[2]" />
                 </div>
                 <h3 className="text-[13px] sm:text-[15px] font-extrabold text-[#111827] mb-2 leading-none">Affordable Pricing</h3>
                 <p className="text-[11px] sm:text-[13px] text-[#4B5563] font-medium leading-[1.6] max-w-[210px] mx-auto">

@@ -23,8 +23,7 @@ import {
   Handshake,
   Receipt,
   FileText,
-  Key,
-  Coins
+  Key
 } from 'lucide-react';
 
 // FAQs Interface
@@ -243,11 +242,11 @@ export default function RefundsComplaintsClient() {
         ]
       },
       {
-        "@type": "Service",
+        "@type": "Product",
         "@id": "https://www.legalrecovery.in/services/refunds-and-consumer-complaints#service",
         "name": "Refunds and Consumer Complaints Recovery Service",
         "description": "Professional money recovery for e-commerce refund delays, defective consumer goods, deficient services, warranty disputes, insurance rejections, and travel overcharges using advocate-signed notices.",
-        "provider": {
+        "brand": {
           "@type": "Organization",
           "name": "LegalRecovery",
           "url": "https://www.legalrecovery.in"

@@ -23,8 +23,7 @@ import {
   Handshake,
   Receipt,
   FileText,
-  Key,
-  Coins
+  Key
 } from 'lucide-react';
 
 // FAQs Interface
@@ -243,11 +242,11 @@ export default function FreelancerRecoveryClient() {
         ]
       },
       {
-        "@type": "Service",
+        "@type": "Product",
         "@id": "https://www.legalrecovery.in/services/recovery-of-freelancer-and-client-payments#service",
         "name": "Freelancer and Client Payments Recovery Service",
         "description": "Professional money recovery for unpaid freelance invoices, milestone delays, monthly retainer defaults, and contract breaches using top-tier advocate-signed notice campaigns.",
-        "provider": {
+        "brand": {
           "@type": "Organization",
           "name": "LegalRecovery",
           "url": "https://www.legalrecovery.in"

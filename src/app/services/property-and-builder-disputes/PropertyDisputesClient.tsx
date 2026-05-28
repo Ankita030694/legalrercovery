@@ -25,8 +25,7 @@ import {
   AlertTriangle,
   Receipt,
   FileText,
-  Key,
-  Coins
+  Key
 } from 'lucide-react';
 
 // FAQs Interface
@@ -245,11 +244,11 @@ export default function PropertyDisputesClient() {
         ]
       },
       {
-        "@type": "Service",
+        "@type": "Product",
         "@id": "https://www.legalrecovery.in/services/property-and-builder-disputes#service",
         "name": "Property & Builder Disputes Recovery Service",
         "description": "Professional money recovery for stuck property booking tokens, delayed possession refunds, unapproved builder charges, and structural defects using top-tier legal notice pipelines and pre-litigation drafting.",
-        "provider": {
+        "brand": {
           "@type": "Organization",
           "name": "LegalRecovery",
           "url": "https://www.legalrecovery.in"

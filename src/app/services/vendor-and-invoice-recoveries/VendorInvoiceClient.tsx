@@ -25,8 +25,7 @@ import {
   AlertTriangle,
   Receipt,
   FileText,
-  Key,
-  Coins
+  Key
 } from 'lucide-react';
 
 // FAQs Interface
@@ -245,11 +244,11 @@ export default function VendorInvoiceClient() {
         ]
       },
       {
-        "@type": "Service",
+        "@type": "Product",
         "@id": "https://www.legalrecovery.in/services/vendor-and-invoice-recoveries#service",
         "name": "B2B Vendor & Invoice Recovery Service",
         "description": "Professional money recovery for commercial invoices, supplier debts, manufacturing raw material costs, logistics credits, and agency retainers using B2B-specific 3-stage notice escalation pipelines and NI Act Section 138 prosecution.",
-        "provider": {
+        "brand": {
           "@type": "Organization",
           "name": "LegalRecovery",
           "url": "https://www.legalrecovery.in"

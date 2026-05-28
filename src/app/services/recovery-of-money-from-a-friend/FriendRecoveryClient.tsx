@@ -24,8 +24,7 @@ import {
   AlertTriangle,
   Receipt,
   FileText,
-  Key,
-  Coins
+  Key
 } from 'lucide-react';
 
 // FAQs Interface
@@ -244,11 +243,11 @@ export default function FriendRecoveryClient() {
         ]
       },
       {
-        "@type": "Service",
+        "@type": "Product",
         "@id": "https://www.legalrecovery.in/services/recovery-of-money-from-a-friend#service",
         "name": "Friend / Personal Money Recovery Service",
         "description": "Professional money recovery for personal loans, cash advances, Splitwise balances, group expenses, and promissory notes. Utilizing 3 authoritative legal notices and 1 police complaint draft.",
-        "provider": {
+        "brand": {
           "@type": "Organization",
           "name": "LegalRecovery",
           "url": "https://www.legalrecovery.in"

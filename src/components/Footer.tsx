@@ -162,9 +162,7 @@ export default function Footer() {
         {/* Bottom Compliance bar */}
         <div className="flex flex-col md:flex-row items-center justify-between gap-6 text-[11px] text-gray-500 font-bold select-text">
           {/* Left statement */}
-          <div>
-            © 2026 Legal Recovery Systems Private Limited. All rights reserved.
-          </div>
+          
           {/* Right links */}
           <div className="flex items-center gap-4 flex-wrap justify-center">
             <a href="/contact" className="hover:text-gray-400 transition-colors cursor-pointer">Refund Policy</a>
@@ -176,7 +174,7 @@ export default function Footer() {
         </div>
 
         <p className="mt-8 text-center text-[11px] text-gray-600 font-semibold tracking-wide select-text">
-          Powered by AMA Legal Solutions
+          Powered by AMA Legal Solutions&reg;
         </p>
 
       </div>
