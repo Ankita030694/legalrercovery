@@ -34,6 +34,12 @@ export async function POST(req: NextRequest) {
 
     const { status, txnid, amount, productinfo, firstname, email, udf1, udf2, udf3, udf4, udf5, hash, key } = body;
 
+    // Filter out transactions from other projects sharing this PayU account
+    if (productinfo !== "Paid With ButtonId 111293057") {
+       console.log(`Ignoring webhook for different project. ProductInfo: ${productinfo}`);
+       return NextResponse.json({ success: true, message: "Ignored" }, { status: 200 });
+    }
+
     // Verify using robust API call
     let isVerified = false;
     
