@@ -1,5 +1,7 @@
 import { NextRequest, NextResponse } from "next/server";
 import crypto from "crypto";
+import { getDbAndBucket } from "@/lib/mongodb";
+import { ObjectId } from "mongodb";
 
 export async function POST(req: NextRequest) {
   try {
@@ -51,6 +53,23 @@ export async function POST(req: NextRequest) {
         targetPath = "/payment-cancelled";
     } else if (status === "success" && isVerified) {
         targetPath = "/payment-success";
+        
+        // MAGIC TRICK REVEALED:
+        // We set this cookie right before they left for PayU. Now that they are back 
+        // via their browser's redirect, we can read it and know exactly who they are!
+        const pendingUserId = req.cookies.get("pending_checkout_id")?.value;
+        if (pendingUserId) {
+          try {
+            const { db } = await getDbAndBucket("fs");
+            await db.collection("users").updateOne(
+              { _id: new ObjectId(pendingUserId) },
+              { $set: { isPaid: true, payuTxnId: txnid, paymentDate: new Date() } }
+            );
+            console.log("Successfully marked user as paid via Browser Redirect Cookie! ID:", pendingUserId);
+          } catch (e) {
+            console.error("Failed to update DB in redirect route:", e);
+          }
+        }
     }
 
     // Create the redirect URL based on the incoming request origin

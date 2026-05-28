@@ -61,23 +61,35 @@ export async function POST(req: NextRequest) {
       console.warn("No hash provided in the PayU webhook payload.");
     }
 
+    console.log("PAYU WEBHOOK RAW BODY:", JSON.stringify(body, null, 2));
+
     // Process Payment Success
-    if (status === "success" && udf1) {
-      // udf1 should contain the MongoDB Document ID we appended to the link
+    if (status === "success") {
+      // Since static links strip udf1, we will fallback to email or phone
+      const userIdentifier = udf1 || body.email || body.phone;
+      
+      if (!userIdentifier) {
+        console.error("Payment successful but no identifying info (udf1, email, or phone) was found in the payload.");
+        return NextResponse.json({ success: true }, { status: 200 });
+      }
+
       try {
         const { db } = await getDbAndBucket("fs");
         
-        let objectId;
-        try {
-           objectId = new ObjectId(udf1);
-        } catch (e) {
-           console.error("Invalid ObjectId format received in udf1:", udf1);
-           return NextResponse.json({ error: "Invalid ID Format" }, { status: 400 });
+        let query: any = {};
+        
+        // Check if userIdentifier is a valid MongoDB ObjectId (if udf1 miraculously worked)
+        if (udf1 && ObjectId.isValid(udf1 as string)) {
+          query = { _id: new ObjectId(udf1 as string) };
+        } else if (body.email) {
+          query = { email: body.email };
+        } else if (body.phone) {
+          query = { phone: body.phone };
         }
 
         // Update the user document to mark as paid
         const result = await db.collection("users").updateOne(
-          { _id: objectId },
+          query,
           { 
             $set: { 
               isPaid: true, 
@@ -88,9 +100,9 @@ export async function POST(req: NextRequest) {
         );
 
         if (result.matchedCount === 0) {
-          console.error("User not found for payment. udf1/ID:", udf1);
+          console.error("User not found in DB for payment. Query used:", JSON.stringify(query));
         } else {
-          console.log("Successfully marked user as paid! ID:", udf1);
+          console.log("Successfully marked user as paid! Matched via:", JSON.stringify(query));
         }
       } catch (error) {
         console.error("Database error during webhook processing:", error);

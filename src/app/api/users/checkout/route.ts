@@ -39,7 +39,19 @@ export async function POST(req: NextRequest) {
     }
 
     // Return the _id to the client so it can be appended to the PayU link
-    return NextResponse.json({ userId: user._id.toString() }, { status: 200 });
+    const response = NextResponse.json({ userId: user._id.toString() }, { status: 200 });
+    
+    // MAGIC TRICK: Set a browser cookie with the User ID. 
+    // When PayU redirects them back, their browser will send this cookie back to us!
+    response.cookies.set("pending_checkout_id", user._id.toString(), {
+      httpOnly: true,
+      secure: process.env.NODE_ENV === "production",
+      sameSite: "lax",
+      path: "/",
+      maxAge: 60 * 60, // 1 hour
+    });
+
+    return response;
 
   } catch (error) {
     console.error("Checkout User Creation Error:", error);
