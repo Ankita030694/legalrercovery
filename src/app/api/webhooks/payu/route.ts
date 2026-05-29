@@ -53,7 +53,6 @@ export async function POST(req: NextRequest) {
 
     // Process Payment Success
     if (status === "success") {
-      // Since static links strip udf1, we will fallback to email or phone
       const userIdentifier = udf1 || body.email || body.phone;
       
       if (!userIdentifier) {
@@ -64,33 +63,81 @@ export async function POST(req: NextRequest) {
       try {
         const { db } = await getDbAndBucket("fs");
         
-        let query: any = {};
+        let pendingUser = null;
+        let objectId: ObjectId | null = null;
         
-        // Check if userIdentifier is a valid MongoDB ObjectId (if udf1 miraculously worked)
+        // 1. Prioritize querying 'pending_payment' using udf1
         if (udf1 && ObjectId.isValid(udf1 as string)) {
-          query = { _id: new ObjectId(udf1 as string) };
-        } else if (body.email) {
-          query = { email: body.email };
-        } else if (body.phone) {
-          query = { phone: body.phone };
+          objectId = new ObjectId(udf1 as string);
+          pendingUser = await db.collection("pending_payment").findOne({ _id: objectId });
+        }
+        
+        // Fallback checks for phone or email within pending_payment
+        if (!pendingUser) {
+          if (body.phone) {
+            pendingUser = await db.collection("pending_payment").findOne({ phone: body.phone });
+          } else if (body.email) {
+            pendingUser = await db.collection("pending_payment").findOne({ email: body.email });
+          }
         }
 
-        // Update the user document to mark as paid
-        const result = await db.collection("users").updateOne(
-          query,
-          { 
-            $set: { 
-              isPaid: true, 
-              paymentDate: new Date(), 
-              payuTxnId: txnid 
-            } 
-          }
-        );
-
-        if (result.matchedCount === 0) {
-          console.error("User not found in DB for payment. Query used:", JSON.stringify(query));
+        // 2. If the user is found in pending_payment, migrate them to the primary users collection
+        if (pendingUser) {
+          const userPendingId = pendingUser._id;
+          
+          await db.collection("users").updateOne(
+            { phone: pendingUser.phone },
+            {
+              $set: {
+                name: pendingUser.name,
+                email: pendingUser.email,
+                phone: pendingUser.phone,
+                state: pendingUser.state,
+                isPaid: true,
+                payuTxnId: txnid,
+                paymentDate: new Date(),
+                updatedAt: new Date()
+              },
+              $setOnInsert: {
+                createdAt: new Date()
+              }
+            },
+            { upsert: true }
+          );
+          
+          // Delete from pending_payment to clean up database
+          await db.collection("pending_payment").deleteOne({ _id: userPendingId });
+          console.log("Webhook successfully migrated user from pending_payment to users! ID:", userPendingId.toString());
+          
         } else {
-          console.log("Successfully marked user as paid! Matched via:", JSON.stringify(query));
+          // 3. Fallback: If not in pending_payment, they may have already been migrated by the browser redirect.
+          // Perform a safe status update in the users collection.
+          let query: any = {};
+          if (udf1 && ObjectId.isValid(udf1 as string)) {
+            query = { _id: new ObjectId(udf1 as string) };
+          } else if (body.phone) {
+            query = { phone: body.phone };
+          } else if (body.email) {
+            query = { email: body.email };
+          }
+          
+          const updateResult = await db.collection("users").updateOne(
+            query,
+            {
+              $set: {
+                isPaid: true,
+                payuTxnId: txnid,
+                paymentDate: new Date(),
+                updatedAt: new Date()
+              }
+            }
+          );
+          
+          if (updateResult.matchedCount > 0) {
+            console.log("Webhook safely updated existing paid user in users collection. Matched via:", JSON.stringify(query));
+          } else {
+            console.warn("Webhook: No record matched in pending_payment or users. Query:", JSON.stringify(query));
+          }
         }
       } catch (error) {
         console.error("Database error during webhook processing:", error);
@@ -98,8 +145,6 @@ export async function POST(req: NextRequest) {
       }
     } else if (status !== "success") {
       console.log(`Payment failed or pending. Status: ${status}, txnid: ${txnid}`);
-    } else if (!udf1) {
-      console.error("Payment successful but no udf1 (User ID) was attached to the payload.");
     }
 
     // Always return 200 OK to PayU to acknowledge receipt

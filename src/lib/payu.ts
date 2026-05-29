@@ -1,8 +1,9 @@
 import crypto from "crypto";
 
 export async function verifyPayUTxn(txnid: string, key: string): Promise<boolean> {
-  const salt1 = process.env.PAYU_SALT_32BIT;
-  const salt2 = process.env.PAYU_SALT_256BIT;
+  const trimmedKey = key.trim();
+  const salt1 = process.env.PAYU_SALT_32BIT?.trim();
+  const salt2 = process.env.PAYU_SALT_256BIT?.trim();
   
   if (!salt1 && !salt2) {
     console.error("Missing PayU Salts in environment");
@@ -11,10 +12,10 @@ export async function verifyPayUTxn(txnid: string, key: string): Promise<boolean
 
   // Helper to make the API call
   const makeApiCall = async (salt: string) => {
-    const hash = crypto.createHash('sha512').update(`${key}|verify_payment|${txnid}|${salt}`).digest('hex');
+    const hash = crypto.createHash('sha512').update(`${trimmedKey}|verify_payment|${txnid}|${salt}`).digest('hex');
     
     const params = new URLSearchParams();
-    params.append('key', key);
+    params.append('key', trimmedKey);
     params.append('command', 'verify_payment');
     params.append('var1', txnid);
     params.append('hash', hash);
