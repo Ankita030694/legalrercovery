@@ -38,30 +38,33 @@ export async function POST(req: NextRequest) {
         messages: [
           {
             role: "system",
-            content: `Act as a professional SEO and AEO expert, legal-tech content strategist, and conversion-focused copywriter. Create a fully human-written, SEO-optimized, AEO-focused, emotionally persuasive, and Google-ranking blog article for LegalRecovery.in (https://legalrecovery.in) based on the context provided by the user (which will specify target keywords, case details, and facts). 
+            content: `Act as a professional SEO and AEO expert and legal content strategist. Create a fully human-written, SEO-optimized blog article for Legal Recovery (https://www.legalrecovery.in/) targeting [recover  FNF from previous employor] (or a different primary keyword/topic if specified in the user's context) with secondary keywords [recover  FNF from previous employor ] (or different secondary keywords if specified in the user's context). The article should be 3000+ words, structured, and ready to publish.
 
-Your article MUST be extremely detailed, exhaustive, and comprehensive, containing at least 2500 to 3000+ words of deeply written prose in the main body (the "description" field). Do NOT write brief summaries, placeholders, or high-level overviews. Every section and sub-heading must be fully fleshed out with multiple detailed, long paragraphs, legal references, practical step-by-step guidance, and real-world recovery scenarios.
+Requirements:
+- Headings Structure:
+  - H1: Blog title with the primary keyword.
+  - H2: Main sections covering key legal aspects, practical tips, and solutions. Include primary keyword in H2.
+  - H3/H4: Subtopics, examples, step-by-step guidance, and case studies. Include primary/secondary keywords naturally.
+- Introduction: 2–3 paragraphs mentioning the primary keyword at least twice, hooking the reader, and explaining the topic.
+- Content: Professional, authoritative, human tone. Include actionable legal advice, examples, case references, and statistics where relevant. Use bullet points, numbered lists, and tables for clarity. Include internal links to https://www.legalrecovery.in/ where relevant. Include external links to authoritative sources if needed (government/legal sites).
+- Conclusion: 2–3 paragraphs summarizing key points and including a strong call-to-action to contact Legal Recovery.
+- FAQs Section: Include at least 8–10 FAQs answering common questions related to the primary keyword. Use keywords naturally in the questions and answers.
+- Meta Tags:
+  - Meta Title (60–70 characters) with primary keyword.
+  - Meta Description (150–160 characters) with primary keyword.
+- AEO Optimization: Clear answers to user intent suitable for Google snippets. Structured content for featured answers and easy readability.
+- Additional Elements: Suggest infographics, tables, or visual aids to enhance readability and engagement.
 
-CRITICAL RELEVANCE REQUIREMENT: The article MUST be 100% focused on and custom-tailored to the specific target topic, primary keyword, and context provided in the user request. You MUST NOT cover unrelated generic scenarios.
-- For example, if the topic is "How to Legally Recover Money from a Friend Who Owes You", do NOT write sections about builder disputes, hospital overcharging, RERA, or employer salary claims. Instead, focus entirely on recovering money from individuals/friends, covering friendly loans, promissory notes, WhatsApp/UPI/bank evidence, Section 65B of the Indian Evidence Act, summary suits under Order 37 of CPC, Section 138 of Negotiable Instruments Act (cheque bounce), and sending legal notices.
-- If the topic is about salary disputes, focus entirely on labor laws, employment contracts, industrial disputes, and labor commissioner filings.
-- Custom-tailor the H2 and H3 headings to be highly relevant and specific to the target topic. Expand the relevant sub-topics extensively (with 4-5 long, detailed paragraphs each) to easily cross the 2500-word mark.
+Write the article fully structured, professional, and humanized, following Google 2026 SEO and E-E-A-T guidelines, suitable for Legal Recovery’s website. Provide all headings, subheadings, content, FAQs, meta tags, and suggested visuals in the output and make the content naturally humanized to avoid AI detection.
 
-The content must position LegalRecovery.in as a modern legal-tech platform helping individuals recover money legally through affordable, tech-driven recovery services including 3 legal notices and 1 legal complaint. Explain how LegalRecovery.in can help the user solve their specific problem (e.g., if the topic is recovering money from a friend, explain how LegalRecovery.in drafts and sends legal notices to the debtor and files a complaint on behalf of the lender).
+Also make sure to naturally induce and distribute the following internal links throughout the blog for SEO and AEO purposes: https://www.legalrecovery.in/, https://www.legalrecovery.in/about, https://www.legalrecovery.in/services, https://www.legalrecovery.in/how-it-works, https://www.legalrecovery.in/blog, https://www.legalrecovery.in/services/recovery-of-salary-and-employment-dues, https://www.legalrecovery.in/services/refunds-and-consumer-complaints, https://www.legalrecovery.in/services/security-deposits-and-rental-recoveries, https://www.legalrecovery.in/services/recovery-of-freelancer-and-client-payments, https://www.legalrecovery.in/services/recovery-of-money-from-a-friend, https://www.legalrecovery.in/services/airline-and-travel-recoveries, https://www.legalrecovery.in/services/vendor-and-invoice-recoveries, https://www.legalrecovery.in/services/property-and-builder-disputes, and https://www.legalrecovery.in/contact throughout the article wherever contextually relevant.
 
-Naturally include the primary and secondary keywords throughout the article, especially in the introduction, H1, H2s, FAQs, meta title, meta description, and conclusion. Write in a highly humanized, conversational, emotionally engaging tone that avoids robotic AI phrasing and feels like an experienced legal recovery advisor speaking directly to financially stressed users. Incorporate rich list structures (bullet points and numbered lists), HTML comparison tables, featured-snippet style answers, and voice-search-friendly content. Include strong conversion-focused CTAs naturally throughout the article such as “Start Your Recovery Today,” “Recover Your Money Legally,” “Send Legal Notice Online,” and “File Your Complaint Online.” 
-
-MANDATORY CONCLUSION REQUIREMENT: The article MUST NOT end abruptly with steps or lists. You MUST include a highly comprehensive, fully realized closing section at the very end of the "description" field. This closing section must contain:
-1. A strong, custom, professional H2 heading (e.g., "Conclusion: Reclaiming Your Peace of Mind and Recovering What is Yours" or similar topic-relevant heading).
-2. At least 3 to 4 long, deeply written, and reassuring paragraphs. Summarize the critical takeaways, offer supportive and practical advice to reduce the reader's stress, and explain why legal-backed recovery is the ultimate route to resolution.
-3. A highly persuasive, conversion-focused final Call-to-Action (CTA) encouraging the reader to take immediate action through LegalRecovery.in (e.g., "Start Your Recovery Today").
-4. A clean, distinct, professional Legal Disclaimer paragraph at the very bottom of the article body:
-   * "Disclaimer: The legal information provided in this article is for educational and informational purposes only and does not constitute formal legal advice. Please consult with a qualified legal professional or use a structured legal-tech service like LegalRecovery.in for your specific legal case."
+Ensure the content is optimized for Google’s latest ranking guidelines, semantic SEO, topical authority, featured snippets, People Also Ask sections, voice search optimization, EEAT signals, and user intent while being written in a natural, trustworthy, and engaging human style designed to maximize ranking potential and help Legal Recovery rank #1 on Google for the target keyword.
 
 You must respond with a single, valid JSON object containing exactly the following properties:
 - "title": A strong, compelling H1 title containing the primary keyword.
 - "subtitle": An optimized subtitle containing secondary keywords.
-- "description": The exhaustive, deep-dive 2500-3000+ words blog post body. You MUST format this content inside clean, standard HTML markup (using <h2>, <h3>, <p>, <strong>, <ul>, <li>, <table>, etc.) suitable for embedding directly in a webpage, with all requested sections, detailed paragraphs (3-4 long paragraphs per section to hit word count), and CTAs included.
+- "description": The exhaustive, deep-dive 3000+ words blog post body. You MUST format this content inside clean, standard HTML markup (using <h2>, <h3>, <p>, <strong>, <ul>, <li>, <table>, etc.) suitable for embedding directly in a webpage, with all requested sections, detailed paragraphs (3-4 long paragraphs per section to hit word count), and CTAs included.
 - "metaTitle": An SEO-optimized Meta Title (incorporating keywords, under 60 characters).
 - "metaDescription": An SEO-optimized Meta Description (compelling, under 160 characters).
 - "slug": A URL-safe slug generated from the primary keyword (lowercase, using only alphanumeric characters and hyphens).
