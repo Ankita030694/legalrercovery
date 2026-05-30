@@ -41,7 +41,7 @@ export async function POST(req: NextRequest) {
         messages: [
           {
             role: "system",
-            content: `Act as a professional SEO and AEO expert and legal content strategist. Create a fully human-written, SEO-optimized blog article for Legal Recovery (https://www.legalrecovery.in/) targeting [${targetPrimary}] with secondary keywords [${targetSecondary}]. The article should be 3000+ words, structured, and ready to publish.
+            content: `Act as a professional SEO and AEO expert and legal content strategist. Create a fully human-written, SEO-optimized blog article for Legal Recovery (https://www.legalrecovery.in/) targeting [${targetPrimary}] with secondary keywords [${targetSecondary}]. The article's main body (description field) MUST be at least 3500+ words of deeply written prose (excluding FAQs and reviews), structured, and ready to publish.
 
 Requirements:
 - Headings Structure:
@@ -51,14 +51,14 @@ Requirements:
 - Introduction: 2–3 paragraphs mentioning the primary keyword at least twice, hooking the reader, and explaining the topic.
 - Content: Professional, authoritative, human tone. Include actionable legal advice, examples, case references, and statistics where relevant. Use bullet points, numbered lists, and tables for clarity. Include internal links to https://www.legalrecovery.in/ where relevant. Include external links to authoritative sources if needed (government/legal sites).
 - Conclusion: 2–3 paragraphs summarizing key points and including a strong call-to-action to contact Legal Recovery.
-- FAQs Section: Include at least 8–10 FAQs answering common questions related to the primary keyword. Use keywords naturally in the questions and answers.
+- FAQs Section: Generate at least 8–10 FAQs answering common questions related to the primary keyword. Use keywords naturally in the questions and answers. IMPORTANT: Do NOT include this FAQs section or any FAQ text in the "description" field. You must ONLY place them in the separate "faqs" JSON array property below.
 - Meta Tags:
   - Meta Title (60–70 characters) with primary keyword.
   - Meta Description (150–160 characters) with primary keyword.
 - AEO Optimization: Clear answers to user intent suitable for Google snippets. Structured content for featured answers and easy readability.
 - Additional Elements: Suggest infographics, tables, or visual aids to enhance readability and engagement.
 
-Write the article fully structured, professional, and humanized, following Google 2026 SEO and E-E-A-T guidelines, suitable for Legal Recovery’s website. Provide all headings, subheadings, content, FAQs, meta tags, and suggested visuals in the output and make the content naturally humanized to avoid AI detection.
+Write the article fully structured, professional, and humanized, following Google 2026 SEO and E-E-A-T guidelines, suitable for Legal Recovery’s website. Provide all headings, subheadings, content, FAQs, meta tags, and suggested visuals in their respective JSON fields in the output, keeping the FAQs strictly separate from the main description field, and make the content naturally humanized to avoid AI detection.
 
 Also make sure to naturally induce and distribute the following internal links throughout the blog for SEO and AEO purposes: https://www.legalrecovery.in/, https://www.legalrecovery.in/about, https://www.legalrecovery.in/services, https://www.legalrecovery.in/how-it-works, https://www.legalrecovery.in/blog, https://www.legalrecovery.in/services/recovery-of-salary-and-employment-dues, https://www.legalrecovery.in/services/refunds-and-consumer-complaints, https://www.legalrecovery.in/services/security-deposits-and-rental-recoveries, https://www.legalrecovery.in/services/recovery-of-freelancer-and-client-payments, https://www.legalrecovery.in/services/recovery-of-money-from-a-friend, https://www.legalrecovery.in/services/airline-and-travel-recoveries, https://www.legalrecovery.in/services/vendor-and-invoice-recoveries, https://www.legalrecovery.in/services/property-and-builder-disputes, and https://www.legalrecovery.in/contact throughout the article wherever contextually relevant.
 
@@ -67,7 +67,7 @@ Ensure the content is optimized for Google’s latest ranking guidelines, semant
 You must respond with a single, valid JSON object containing exactly the following properties:
 - "title": A strong, compelling H1 title containing the primary keyword.
 - "subtitle": An optimized subtitle containing secondary keywords.
-- "description": The exhaustive, deep-dive 3000+ words blog post body. You MUST format this content inside clean, standard HTML markup (using <h2>, <h3>, <p>, <strong>, <ul>, <li>, <table>, etc.) suitable for embedding directly in a webpage, with all requested sections, detailed paragraphs (3-4 long paragraphs per section to hit word count), and CTAs included.
+- "description": The exhaustive, deep-dive 3500+ words blog post body. Every section, heading, and subtopic MUST be fully written out with 4-5 long, detailed, and highly comprehensive paragraphs each to easily cross the 3500-word mark. Do NOT write brief summaries, placeholders, or high-level overviews. You MUST format this content inside clean, standard HTML markup (using <h2>, <h3>, <p>, <strong>, <ul>, <li>, <table>, etc.) suitable for embedding directly in a webpage, with all requested sections, detailed paragraphs, and CTAs included. You MUST NOT include the FAQs section or any FAQ questions/answers inside this "description" field, as they are handled separately.
 - "metaTitle": An SEO-optimized Meta Title (incorporating keywords, under 60 characters).
 - "metaDescription": An SEO-optimized Meta Description (compelling, under 160 characters).
 - "slug": A URL-safe slug generated from the primary keyword (lowercase, using only alphanumeric characters and hyphens).
