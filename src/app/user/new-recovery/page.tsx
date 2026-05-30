@@ -254,87 +254,48 @@ export default function NewRecoveryForm() {
     (previewTab !== "police" || (policeStationName && policeStationEmail && policeStationAddress))
   );
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     if (!isFormValid) return;
 
     setIsSubmitting(true);
 
-    setTimeout(() => {
-      try {
-        const stored = localStorage.getItem("lr_cases");
-        let casesList = stored ? JSON.parse(stored) : [];
-
-        const today = new Date();
-        const oneWeekLater = new Date(today.getTime() + 7 * 24 * 60 * 60 * 1000);
-        const twoWeeksLater = new Date(today.getTime() + 14 * 24 * 60 * 60 * 1000);
-        const threeWeeksLater = new Date(today.getTime() + 21 * 24 * 60 * 60 * 1000);
-
-        const formatDate = (d: Date) => {
-          return d.toLocaleDateString("en-IN", { day: "numeric", month: "short", year: "numeric" });
-        };
-
-        const newCase = {
-          id: `case-${Date.now()}`,
+    try {
+      const response = await fetch("/api/cases", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({
           defaulterName,
           entityType,
-          stuckAmount: parseFloat(stuckAmount),
-          dueDate,
           phone,
           email,
           address,
+          stuckAmount,
+          dueDate,
           policeStationName,
           policeStationEmail,
           policeStationAddress,
-          status: "active",
-          currentStep: 1,
-          createdAt: today.toISOString(),
-          timeline: [
-            { 
-              step: 1, 
-              label: "First Notice", 
-              description: "Sent after 1 hour grace period", 
-              date: "Today, Grace Active", 
-              status: "active", 
-              timeRemaining: "59 mins remaining" 
-            },
-            { 
-              step: 2, 
-              label: "Second Notice", 
-              description: "Dispatched exactly 1 week after", 
-              date: formatDate(oneWeekLater), 
-              status: "locked" 
-            },
-            { 
-              step: 3, 
-              label: "Third Notice", 
-              description: "Final demand notice prior to filing", 
-              date: formatDate(twoWeeksLater), 
-              status: "locked" 
-            },
-            { 
-              step: 4, 
-              label: "SHO Criminal Complaint", 
-              description: `Drafted complaint copy shared for ${policeStationName}`, 
-              date: formatDate(threeWeeksLater), 
-              status: "locked" 
-            }
-          ]
-        };
+        }),
+      });
 
-        casesList.unshift(newCase);
-        localStorage.setItem("lr_cases", JSON.stringify(casesList));
-        
-        // Notify sidebar components to sync claims badge count
-        window.dispatchEvent(new Event("lr_cases_updated"));
+      const data = await response.json();
 
-        router.push("/user/dashboard");
-      } catch (err) {
-        console.error("Failed to save claim record:", err);
-      } finally {
-        setIsSubmitting(false);
+      if (!response.ok) {
+        throw new Error(data.error || "Failed to create case.");
       }
-    }, 1000);
+
+      // Notify sidebar components to sync claims badge count
+      window.dispatchEvent(new Event("lr_cases_updated"));
+
+      router.push("/user/dashboard");
+    } catch (err: any) {
+      console.error("Failed to save claim record:", err);
+      alert(err.message || "Failed to save claim record.");
+    } finally {
+      setIsSubmitting(false);
+    }
   };
 
   return (

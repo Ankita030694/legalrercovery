@@ -67,51 +67,48 @@ const initialCases = [
 export default function UserDashboard() {
   const router = useRouter();
   const [cases, setCases] = useState<any[]>([]);
+  const [isLoading, setIsLoading] = useState(true);
   
   // Stopping notices modal states
   const [confirmStopCaseId, setConfirmStopCaseId] = useState<string | null>(null);
   const [isStopping, setIsStopping] = useState(false);
 
-  // Initialize and load cases from localStorage
-  useEffect(() => {
-    const loadCases = () => {
-      try {
-        const stored = localStorage.getItem("lr_cases");
-        if (stored) {
-          const parsed = JSON.parse(stored);
-          setCases(parsed);
-          if (parsed.length === 0) {
-            router.replace("/user/new-recovery");
-          }
-        } else {
-          // Initialize empty cases and redirect to new recovery page
-          localStorage.setItem("lr_cases", JSON.stringify([]));
-          setCases([]);
-          router.replace("/user/new-recovery");
-          // Dispatch event to sync sidebar badge
-          window.dispatchEvent(new Event("lr_cases_updated"));
-        }
-      } catch (err) {
-        console.error("Failed to load cases from localStorage:", err);
+  const fetchCases = async () => {
+    try {
+      const response = await fetch("/api/cases");
+      if (!response.ok) {
+        throw new Error("Failed to fetch cases");
       }
-    };
+      const json = await response.json();
+      if (json.success && json.data) {
+        // Map _id to id for backwards compatibility in UI
+        const mapped = json.data.map((c: any) => ({
+          ...c,
+          id: c._id || c.id
+        }));
+        setCases(mapped);
+        if (mapped.length === 0) {
+          router.replace("/user/new-recovery");
+        }
+      }
+    } catch (error) {
+      console.error("Error loading cases from API:", error);
+    } finally {
+      setIsLoading(false);
+    }
+  };
 
-    loadCases();
+  // Initialize and load cases from MongoDB
+  useEffect(() => {
+    fetchCases();
 
     // Sync cases updates if updated on other dashboard subroutes
-    const handleStorageChange = () => {
-      const stored = localStorage.getItem("lr_cases");
-      if (stored) {
-        const parsed = JSON.parse(stored);
-        setCases(parsed);
-        if (parsed.length === 0) {
-          router.replace("/user/new-recovery");
-        }
-      }
+    const handleRefresh = () => {
+      fetchCases();
     };
 
-    window.addEventListener("lr_cases_updated", handleStorageChange);
-    return () => window.removeEventListener("lr_cases_updated", handleStorageChange);
+    window.addEventListener("lr_cases_updated", handleRefresh);
+    return () => window.removeEventListener("lr_cases_updated", handleRefresh);
   }, [router]);
 
   // Stats Computations
@@ -124,36 +121,49 @@ export default function UserDashboard() {
     setConfirmStopCaseId(caseId);
   };
 
-  const executeStopNotices = () => {
+  const executeStopNotices = async () => {
     if (!confirmStopCaseId) return;
     setIsStopping(true);
 
-    setTimeout(() => {
-      const updated = cases.map(c => {
-        if (c.id === confirmStopCaseId) {
-          return {
-            ...c,
-            status: "recovered",
-            timeline: c.timeline.map((t: any) => {
-              if (t.status === "scheduled" || t.status === "active" || t.status === "locked") {
-                return { ...t, status: "cancelled", description: "Notice stopped (Dues recovered)" };
-              }
-              return t;
-            })
-          };
-        }
-        return c;
+    try {
+      const response = await fetch("/api/cases", {
+        method: "PATCH",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({
+          id: confirmStopCaseId,
+          status: "recovered",
+        }),
       });
 
-      localStorage.setItem("lr_cases", JSON.stringify(updated));
-      setCases(updated);
-      setIsStopping(false);
-      setConfirmStopCaseId(null);
+      if (!response.ok) {
+        const errData = await response.json();
+        throw new Error(errData.error || "Failed to stop notices.");
+      }
+
+      // Re-fetch to sync
+      await fetchCases();
       
       // Notify sidebar navigation to refresh the active count badge
       window.dispatchEvent(new Event("lr_cases_updated"));
-    }, 800);
+    } catch (err: any) {
+      console.error("Error stopping notices:", err);
+      alert(err.message || "Failed to stop notices.");
+    } finally {
+      setIsStopping(false);
+      setConfirmStopCaseId(null);
+    }
   };
+
+  if (isLoading) {
+    return (
+      <div className="flex flex-col items-center justify-center min-h-[400px] gap-3">
+        <Loader2 className="w-10 h-10 animate-spin text-[#DC2626]" />
+        <p className="text-sm font-semibold text-slate-500">Loading cases securely...</p>
+      </div>
+    );
+  }
 
   return (
     <div className="flex flex-col gap-8 animate-in fade-in duration-300">

@@ -31,12 +31,6 @@ const navigationItems = [
     mobileLabel: "New"
   },
   {
-    label: "Legal Vault",
-    href: "/user/vault",
-    icon: FileText,
-    mobileLabel: "Vault"
-  },
-  {
     label: "Notifications",
     href: "/user/notifications",
     icon: Bell,
@@ -60,30 +54,28 @@ export default function UserPortalLayout({
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const [activeCount, setActiveCount] = useState(0);
 
-  // Sync active count from localStorage to display in sidebar/bottombar
+  // Sync active count from database API to display in sidebar/bottombar
   useEffect(() => {
-    const updateActiveCount = () => {
+    const updateActiveCount = async () => {
       try {
-        const stored = localStorage.getItem("lr_cases");
-        if (stored) {
-          const parsed = JSON.parse(stored);
-          const active = parsed.filter((c: any) => c.status === "active").length;
-          setActiveCount(active);
-        } else {
-          setActiveCount(0);
+        const response = await fetch("/api/cases");
+        if (response.ok) {
+          const resData = await response.json();
+          if (resData.success && Array.isArray(resData.data)) {
+            const active = resData.data.filter((c: any) => c.status === "active").length;
+            setActiveCount(active);
+          }
         }
       } catch (err) {
-        console.error("Failed to parse cases for count indicator:", err);
+        console.error("Failed to fetch cases for count indicator:", err);
       }
     };
 
     updateActiveCount();
-    // Listen for custom storage events to keep counts perfectly in sync across pages
-    window.addEventListener("storage", updateActiveCount);
+    // Listen for custom events to keep counts perfectly in sync across pages
     window.addEventListener("lr_cases_updated", updateActiveCount);
 
     return () => {
-      window.removeEventListener("storage", updateActiveCount);
       window.removeEventListener("lr_cases_updated", updateActiveCount);
     };
   }, [pathname]);

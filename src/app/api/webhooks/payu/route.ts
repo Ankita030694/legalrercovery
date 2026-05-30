@@ -145,11 +145,30 @@ export async function POST(req: NextRequest) {
           await db.collection("pending_payment").deleteOne({ _id: userPendingId });
           console.log("Webhook successfully migrated user from pending_payment to users! ID:", userPendingId.toString());
 
+          // Retrieve the migrated user document to get their true database _id and record in the transactions collection (deduplicated)
+          const migratedUser = await db.collection("users").findOne({ phone: pendingUser.phone });
+          if (migratedUser) {
+            const existingTxn = await db.collection("transactions").findOne({ payuTxnId: txnid });
+            if (!existingTxn) {
+              await db.collection("transactions").insertOne({
+                userId: migratedUser._id,
+                phone: migratedUser.phone,
+                email: migratedUser.email,
+                payuTxnId: txnid,
+                amount: amtPaid,
+                status: "success",
+                oppositionCount: oppCount,
+                paymentDate: new Date(),
+                createdAt: new Date()
+              });
+            }
+          }
+
           try {
             await db.collection("payment_debug_logs").insertOne({
               step: "webhook_migration_success",
               timestamp: new Date(),
-              data: { phone: pendingUser.phone, amtPaid, caseMigratedId: userPendingId.toString() }
+              data: { phone: pendingUser.phone, amtPaid, caseMigratedId: userPendingId.toString(), transactionLogged: !!migratedUser }
             });
           } catch {}
 
@@ -194,6 +213,23 @@ export async function POST(req: NextRequest) {
             if (user) {
               const oppCount = user.oppositionCount || 1;
               const amtPaid = user.amountPaid || (oppCount * 1);
+
+              // Ensure transaction is logged in the transactions collection if not already there (deduplicated)
+              const existingTxn = await db.collection("transactions").findOne({ payuTxnId: txnid });
+              if (!existingTxn) {
+                await db.collection("transactions").insertOne({
+                  userId: user._id,
+                  phone: user.phone,
+                  email: user.email,
+                  payuTxnId: txnid,
+                  amount: amtPaid,
+                  status: "success",
+                  oppositionCount: oppCount,
+                  paymentDate: new Date(),
+                  createdAt: new Date()
+                });
+              }
+
               await processPaymentSuccessNotifications(
                 db,
                 user.phone,

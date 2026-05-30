@@ -127,11 +127,27 @@ export async function POST(req: NextRequest) {
             await db.collection("pending_payment").deleteOne({ _id: pendingPaymentUser._id });
             console.log("Successfully verified payment, migrated user from 'pending_payment' to 'users', and cleaned up pending_payment. ID:", pendingPaymentUser._id.toString());
 
+            // Retrieve the migrated user document to get their true database _id and record in the transactions collection
+            const migratedUser = await db.collection("users").findOne({ phone: pendingPaymentUser.phone });
+            if (migratedUser) {
+              await db.collection("transactions").insertOne({
+                userId: migratedUser._id,
+                phone: migratedUser.phone,
+                email: migratedUser.email,
+                payuTxnId: txnid,
+                amount: amtPaid,
+                status: "success",
+                oppositionCount: oppCount,
+                paymentDate: new Date(),
+                createdAt: new Date()
+              });
+            }
+
             try {
               await db.collection("payment_debug_logs").insertOne({
                 step: "redirect_migration_success",
                 timestamp: new Date(),
-                data: { phone: pendingPaymentUser.phone, amtPaid, caseMigratedId: pendingPaymentUser._id.toString() }
+                data: { phone: pendingPaymentUser.phone, amtPaid, caseMigratedId: pendingPaymentUser._id.toString(), transactionLogged: !!migratedUser }
               });
             } catch (logErr) {}
 
