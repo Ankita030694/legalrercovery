@@ -39,11 +39,12 @@ export async function POST(req: NextRequest) {
     }
 
     // Securely calculate the amount on server side to prevent any manipulation
+    const PRICE_PER_OPPOSITION = 1; // TO CHANGE TO PRODUCTION PRICE: Change 1 to 999
     const oppositionCount = pendingPaymentRecord.oppositionCount || 1;
-    const totalAmount = oppositionCount * 1; // Modified to 1 for testing purposes
+    const totalAmount = oppositionCount * PRICE_PER_OPPOSITION;
     const amount = `${totalAmount}.00`;
 
-    console.log(`[PayU Initiate Debug] Calculated amount for oppositionCount ${oppositionCount}: ₹${amount} (₹1 per party for testing)`);
+    console.log(`[PayU Initiate Debug] Calculated amount for oppositionCount ${oppositionCount}: ₹${amount} (₹${PRICE_PER_OPPOSITION} per party)`);
 
 
     // Update pending record with the generated transaction ID

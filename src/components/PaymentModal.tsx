@@ -9,6 +9,7 @@ interface PaymentModalProps {
 }
 
 export const PaymentModal = ({ isOpen, onClose }: PaymentModalProps) => {
+  const PRICE_PER_OPPOSITION = 1; // TO CHANGE TO PRODUCTION PRICE: Change 1 to 999
   const [step, setStep] = useState(1); // 1 = Details, 2 = OTP Verification
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
@@ -354,11 +355,11 @@ export const PaymentModal = ({ isOpen, onClose }: PaymentModalProps) => {
                     onChange={(e) => setOppositionCount(Number(e.target.value))}
                     className="w-full bg-[#F9FAFB] border border-[#E5E7EB] focus:ring-[#DC2626]/10 rounded-xl px-4 py-3 text-sm text-[#111827] focus:outline-none focus:ring-4 transition-all font-semibold appearance-none cursor-pointer"
                   >
-                    <option value={1}>1 Party (₹1)</option>
-                    <option value={2}>2 Parties (₹2)</option>
-                    <option value={3}>3 Parties (₹3)</option>
-                    <option value={4}>4 Parties (₹4)</option>
-                    <option value={5}>5 Parties (₹5)</option>
+                    <option value={1}>1 Party (₹{1 * PRICE_PER_OPPOSITION})</option>
+                    <option value={2}>2 Parties (₹{2 * PRICE_PER_OPPOSITION})</option>
+                    <option value={3}>3 Parties (₹{3 * PRICE_PER_OPPOSITION})</option>
+                    <option value={4}>4 Parties (₹{4 * PRICE_PER_OPPOSITION})</option>
+                    <option value={5}>5 Parties (₹{5 * PRICE_PER_OPPOSITION})</option>
                   </select>
                   <div className="absolute right-4 top-1/2 -translate-y-1/2 pointer-events-none text-gray-500">
                     <svg className="w-4 h-4" fill="none" stroke="currentColor" strokeWidth="2.5" viewBox="0 0 24 24">
@@ -382,7 +383,7 @@ export const PaymentModal = ({ isOpen, onClose }: PaymentModalProps) => {
                   ) : (
                     <>
                       <Shield className="w-4 h-4" />
-                      Verify Email & Pay ₹{oppositionCount * 1}
+                      Verify Email & Pay ₹{oppositionCount * PRICE_PER_OPPOSITION}
                     </>
                   )}
                 </button>
@@ -431,7 +432,7 @@ export const PaymentModal = ({ isOpen, onClose }: PaymentModalProps) => {
                   ) : (
                     <>
                       <CheckCircle className="w-4 h-4" />
-                      Verify OTP & Pay ₹{oppositionCount * 1}
+                      Verify OTP & Pay ₹{oppositionCount * PRICE_PER_OPPOSITION}
                     </>
                   )}
                 </button>

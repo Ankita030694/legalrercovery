@@ -116,8 +116,9 @@ export async function POST(req: NextRequest) {
         // 3. If the user is found in pending_payment, migrate them to the primary users collection
         if (pendingUser) {
           const userPendingId = pendingUser._id;
+          const PRICE_PER_OPPOSITION = 1; // TO CHANGE TO PRODUCTION PRICE: Change 1 to 999
           const oppCount = pendingUser.oppositionCount || 1;
-          const amtPaid = oppCount * 1; // Modified to 1 for testing purposes
+          const amtPaid = oppCount * PRICE_PER_OPPOSITION;
           
           await db.collection("users").updateOne(
             { phone: pendingUser.phone },
@@ -211,8 +212,9 @@ export async function POST(req: NextRequest) {
             // Trigger notifications if not already sent (safely deduplicated inside processPaymentSuccessNotifications)
             const user = await db.collection("users").findOne(query);
             if (user) {
+              const PRICE_PER_OPPOSITION = 1; // TO CHANGE TO PRODUCTION PRICE: Change 1 to 999
               const oppCount = user.oppositionCount || 1;
-              const amtPaid = user.amountPaid || (oppCount * 1);
+              const amtPaid = user.amountPaid || (oppCount * PRICE_PER_OPPOSITION);
 
               // Ensure transaction is logged in the transactions collection if not already there (deduplicated)
               const existingTxn = await db.collection("transactions").findOne({ payuTxnId: txnid });

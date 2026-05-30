@@ -97,8 +97,9 @@ export async function POST(req: NextRequest) {
           } catch (logErr) {}
           
           if (pendingPaymentUser) {
+            const PRICE_PER_OPPOSITION = 1; // TO CHANGE TO PRODUCTION PRICE: Change 1 to 999
             const oppCount = pendingPaymentUser.oppositionCount || 1;
-            const amtPaid = oppCount * 1; // Modified to 1 for testing purposes
+            const amtPaid = oppCount * PRICE_PER_OPPOSITION;
 
             // Upsert details into the main users collection
             await db.collection("users").updateOne(

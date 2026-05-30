@@ -87,13 +87,20 @@ export async function POST(req: NextRequest) {
       return NextResponse.json({ error: "Access denied. Active payment session not found. Please subscribe." }, { status: 403 });
     }
 
-    // Enforce case creation credits/limits
-    const allowedLimit = user.oppositionCount || 1;
+    // Enforce case creation credits/limits based on the amount the user has paid.
+    // Production amount is ₹999 per opposition. Testing is ₹1 per opposition.
+    const PRICE_PER_OPPOSITION = 1; // TO CHANGE TO PRODUCTION PRICE: Change 1 to 999
+    const amountPaid = user.amountPaid || 0;
+    const limitFromAmountPaid = Math.floor(amountPaid / PRICE_PER_OPPOSITION);
+
+    // Determine the allowed limit, using direct oppositionCount as a fallback
+    const allowedLimit = Math.max(limitFromAmountPaid, user.oppositionCount || 1);
+
     const currentCreatedCount = await db.collection("cases").countDocuments({ userId });
 
     if (currentCreatedCount >= allowedLimit) {
       return NextResponse.json(
-        { error: `Case registration limit reached. Your active plan allows up to ${allowedLimit} opposing parties. Please contact support or purchase additional slots.` },
+        { error: `Case registration limit reached. Your active plan allows up to ${allowedLimit} opposing parties (calculated at ₹${PRICE_PER_OPPOSITION} per opposition based on ₹${amountPaid} paid). Please contact support or purchase additional slots.` },
         { status: 403 }
       );
     }
