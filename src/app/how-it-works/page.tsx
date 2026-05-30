@@ -41,6 +41,7 @@ import {
   MessagesSquare,
   FileCheck
 } from "lucide-react";
+import FAQSection, { FAQItem } from "@/components/FAQSection";
 
 export default function HowItWorksPage() {
 
@@ -175,6 +176,29 @@ export default function HowItWorksPage() {
       stars: 5
     }
   ], []);
+
+  const howItWorksFaqs: FAQItem[] = [
+    {
+      question: "What documents do I need to submit my case?",
+      answer: "You need to provide basic details about the dispute, including any agreements, invoices, payment receipts, bank transfer screenshots, WhatsApp or email conversations, and the contact details of the respondent. The more evidence you provide, the stronger your legal notice will be."
+    },
+    {
+      question: "What happens after the legal notice is sent?",
+      answer: "Once the legal notice is dispatched via registered post, we track its delivery and wait for the respondent's reply. If the respondent does not respond or comply within the stipulated period (usually 15–30 days), we escalate with follow-up notices and, if necessary, guide you on filing a formal legal complaint."
+    },
+    {
+      question: "How many legal notices are sent in the recovery process?",
+      answer: "Our standard recovery plan includes up to 3 legal notices sent in a systematic, escalating manner — Week 1, Week 2, and Week 3 — each increasing in urgency and legal consequence. This multi-stage approach maximizes pressure on the defaulter to settle."
+    },
+    {
+      question: "What if the respondent ignores all notices?",
+      answer: "If the respondent fails to respond to all notices, we assist you with the next legal steps, which may include filing a consumer complaint, approaching the labour commissioner, initiating a civil suit, or filing a cheque bounce case under Section 138 of the Negotiable Instruments Act, depending on the nature of the dispute."
+    },
+    {
+      question: "Can I use LegalRecovery for disputes below ₹10,000?",
+      answer: "Yes, LegalRecovery handles disputes of all sizes. Whether the amount is ₹5,000 or ₹50 Lakhs, our affordable flat-fee plans ensure that everyone has access to professional legal recovery without prohibitive costs. No claim is too small for legal justice."
+    }
+  ];
 
   return (
     <div className="min-h-screen bg-[#F8F9FB] text-[#111827] font-sans antialiased overflow-x-hidden relative">
@@ -377,7 +401,7 @@ export default function HowItWorksPage() {
 
       </main>
 
-  
+      <FAQSection faqs={howItWorksFaqs} heading="How It Works — FAQs" subheading="Everything you need to know about the legal recovery process." />
 
     </div>
   );

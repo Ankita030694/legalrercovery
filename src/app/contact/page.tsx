@@ -15,6 +15,7 @@ import {
   Send,
   Loader2
 } from "lucide-react";
+import FAQSection, { FAQItem } from "@/components/FAQSection";
 
 export default function ContactPage() {
   const router = useRouter();
@@ -148,6 +149,29 @@ export default function ContactPage() {
       setSubmitError("Network error. Please try again.");
     }
   };
+
+  const contactFaqs: FAQItem[] = [
+    {
+      question: "How quickly will LegalRecovery respond to my inquiry?",
+      answer: "Our legal team typically responds within 24 hours of receiving your inquiry. For urgent cases, you can call our toll-free helpline at 1800-309-8480 during business hours (Monday to Saturday, 9 AM – 7 PM IST) for immediate assistance."
+    },
+    {
+      question: "What information should I include in my case submission?",
+      answer: "Please provide as much detail as possible including the amount owed, the name of the person or entity who owes you, any supporting documents such as agreements, invoices, chat screenshots, bank transfer receipts, and the duration of the outstanding dues."
+    },
+    {
+      question: "Can I track the status of my case after submitting?",
+      answer: "Yes. Once your case is initiated, you will receive access to a live case tracking dashboard where you can monitor every stage — from notice drafting and dispatch to delivery confirmation and respondent follow-up — in real time."
+    },
+    {
+      question: "Is the initial case consultation free?",
+      answer: "Yes, the initial case analysis is completely free. Submit your details through our contact form and our legal experts will evaluate your situation, assess the merits of your case, and recommend the best course of action at no cost."
+    },
+    {
+      question: "What are your office hours and support channels?",
+      answer: "Our support team is available Monday to Saturday, 9:00 AM to 7:00 PM IST. You can reach us via our toll-free number 1800-309-8480, email at support@legalrecovery.in, or by submitting the contact form on this page. We also offer WhatsApp support for quick queries."
+    }
+  ];
 
   return (
     <div className="min-h-screen bg-[#F8F9FB] text-[#111827] font-sans antialiased overflow-x-hidden relative">
@@ -486,7 +510,7 @@ export default function ContactPage() {
 
       </main>
 
-     
+      <FAQSection faqs={contactFaqs} heading="Contact & Support FAQs" subheading="Find answers to common questions about reaching us and getting help." />
 
     </div>
   );

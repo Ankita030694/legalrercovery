@@ -3,6 +3,7 @@
 import React from "react";
 import Link from "next/link";
 import { PaymentModal } from "@/components/PaymentModal";
+import FAQSection, { FAQItem } from "@/components/FAQSection";
 import {
   Wallet,
   Timer,
@@ -39,6 +40,33 @@ import {
 } from "lucide-react";
 
 export default function Home() {
+  const homeFaqs: FAQItem[] = [
+    {
+      question: "What is LegalRecovery and how does it work?",
+      answer: "LegalRecovery is India's first dedicated legal-tech recovery platform. We help individuals and businesses recover unpaid money — including salary dues, freelancer payments, security deposits, consumer refunds, and more — through a streamlined, technology-driven legal process involving professionally drafted legal notices and escalation."
+    },
+    {
+      question: "How much does it cost to recover money through LegalRecovery?",
+      answer: "We offer transparent, flat-fee pricing with no hidden charges. Our recovery plans start from just ₹1,499 and include attorney-drafted legal notices, dispatch via registered post, delivery tracking, and multi-stage escalation. There are no retainer fees or hourly billing."
+    },
+    {
+      question: "How long does the legal recovery process take?",
+      answer: "Most cases see a resolution within 15 to 30 days. Our first legal notice is drafted and dispatched within 24 hours of case submission. The exact timeline depends on the respondent's cooperation and the complexity of the dispute."
+    },
+    {
+      question: "Is LegalRecovery available across all states in India?",
+      answer: "Yes, LegalRecovery operates pan-India. Our legal notices are valid under the Indian legal system and can be sent to respondents in any state or union territory. The entire process is 100% online, so you can initiate a case from anywhere."
+    },
+    {
+      question: "What types of money recovery cases does LegalRecovery handle?",
+      answer: "We handle a wide range of recovery cases including unpaid salary and employment dues, freelancer and client payment disputes, rental security deposit recovery, consumer complaint refunds, vendor and invoice recoveries, property and builder disputes, airline and travel refund claims, and recovery of personal loans from friends or acquaintances."
+    },
+    {
+      question: "Do I need to visit a court or lawyer's office?",
+      answer: "No. LegalRecovery is a 100% digital platform. You submit your case online, our qualified advocates draft and dispatch legal notices, and you track everything from your dashboard. No physical visits are required at any stage."
+    }
+  ];
+
   return (
     <div className="min-h-screen bg-[#F8F9FB] text-[#111827] font-sans antialiased overflow-x-hidden relative">
 
@@ -469,6 +497,9 @@ export default function Home() {
 
           </div>
         </section>
+
+        {/* ================= FAQ SECTION ================= */}
+        <FAQSection faqs={homeFaqs} subheading="Get answers to the most common questions about our legal recovery services." />
 
         {/* ================= CALL TO ACTION SECTION ================= */}
         <CTASection />

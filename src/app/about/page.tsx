@@ -1,6 +1,7 @@
 "use client";
 
 import React from "react";
+import FAQSection, { FAQItem } from "@/components/FAQSection";
 import Image from "next/image";
 import {
   Shield,
@@ -93,7 +94,28 @@ export default function AboutPage() {
     { name: "Adv. Arjun Kapoor",  role: "Legal Tech Lead",            specialisation: "Digital Dispute Resolution", exp: "9 years", icon: <Shield  className="w-6 h-6 text-[#DC2626]" /> }
   ];
 
-
+  const aboutFaqs: FAQItem[] = [
+    {
+      question: "Who founded LegalRecovery and why?",
+      answer: "LegalRecovery was founded by a team of legal and technology professionals who witnessed firsthand how everyday Indians lose hard-earned money due to inaccessible legal systems. Our mission is to democratize legal recovery by combining expert advocacy with modern technology."
+    },
+    {
+      question: "Is LegalRecovery a law firm?",
+      answer: "No, LegalRecovery is a legal-tech platform — not a traditional law firm. We use technology to automate and streamline the legal recovery process while working with qualified, registered advocates who handle all legal aspects of your case."
+    },
+    {
+      question: "How is LegalRecovery different from hiring a traditional lawyer?",
+      answer: "Traditional lawyers charge expensive retainers, require physical visits, and offer opaque progress updates. LegalRecovery provides transparent flat fees, 24-hour notice generation, a live case tracking dashboard, and a 100% online process — making legal recovery faster, affordable, and hassle-free."
+    },
+    {
+      question: "What is the success rate of LegalRecovery?",
+      answer: "We have a 91% successful resolution rate across all case categories. Our multi-stage escalation process — involving legal notices, follow-ups, and formal complaints — ensures maximum pressure on defaulters to settle outstanding dues."
+    },
+    {
+      question: "Is my personal and case data safe with LegalRecovery?",
+      answer: "Absolutely. We use bank-grade encryption and strict data privacy protocols to protect all client information. Your case details, documents, and personal data are stored securely and are accessible only to the assigned legal team handling your case."
+    }
+  ];
 
   return (
     <div className="min-h-screen bg-[#F8F9FB] text-[#111827] font-sans antialiased overflow-x-hidden">
@@ -513,6 +535,11 @@ export default function AboutPage() {
           </div>
         </div>
       </section>
+
+      {/* ═══════════════════════════════════════
+          FAQ SECTION
+      ═══════════════════════════════════════ */}
+      <FAQSection faqs={aboutFaqs} heading="About LegalRecovery — FAQs" subheading="Common questions about our platform, team, and approach." />
 
       {/* ═══════════════════════════════════════
           CTA STRIP

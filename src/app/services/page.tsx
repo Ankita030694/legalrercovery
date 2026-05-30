@@ -3,6 +3,7 @@
 import React, { useState, useMemo } from "react";
 import Image from "next/image";
 import Link from "next/link";
+import FAQSection, { FAQItem } from "@/components/FAQSection";
 import {
   Wallet,
   Timer,
@@ -40,6 +41,29 @@ import {
 } from "lucide-react";
 
 export default function ServicesPage() {
+
+  const servicesFaqs: FAQItem[] = [
+    {
+      question: "What types of recovery services does LegalRecovery offer?",
+      answer: "We offer 8 specialized recovery services: salary and employment dues recovery, freelancer and client payment recovery, rental security deposit recovery, consumer complaint refunds, vendor and invoice recoveries, property and builder dispute resolution, airline and travel refund claims, and recovery of personal loans from friends or family members."
+    },
+    {
+      question: "How do I know which service is right for my case?",
+      answer: "Each service page describes the specific scenarios it covers. If you're unsure, simply submit your case details through our contact form and our legal experts will analyze your situation and recommend the most appropriate recovery service for free."
+    },
+    {
+      question: "Are the legal notices customized for each type of case?",
+      answer: "Yes, every legal notice is custom-drafted by our qualified advocates based on the specific laws and provisions applicable to your case type. For example, salary recovery notices reference the Payment of Wages Act and employment contract clauses, while rental deposit notices cite the Rent Control Act and relevant state tenancy laws."
+    },
+    {
+      question: "Can LegalRecovery handle cases involving large amounts?",
+      answer: "Absolutely. We handle recovery cases ranging from ₹5,000 to ₹50 Lakhs and above. For high-value disputes, our senior advocates provide personalized legal strategy and escalation plans to maximize the chances of successful recovery."
+    },
+    {
+      question: "What if my case doesn't fit into any listed service category?",
+      answer: "If your dispute doesn't clearly fit into one of our listed categories, don't worry. Contact our team with the details and we'll evaluate whether we can assist. We regularly handle unique and complex recovery scenarios that require customized legal approaches."
+    }
+  ];
 
   const services = useMemo(() => [
     {
@@ -360,6 +384,9 @@ export default function ServicesPage() {
             </div>
           </div>
         </section>
+
+        {/* ================= FAQ SECTION ================= */}
+        <FAQSection faqs={servicesFaqs} heading="Legal Recovery Services — FAQs" subheading="Common questions about our specialized recovery services." />
 
         {/* ================= CALL TO ACTION STRIP ================= */}
         <section className="w-full max-w-8xl mx-auto px-0 mt-12 md:mt-24 select-none">
