@@ -359,7 +359,8 @@ const BlogsDashboard = () => {
         body: JSON.stringify({ 
           context: aiContext,
           primaryKeyword: aiPrimaryKeyword,
-          secondaryKeywords: aiSecondaryKeywords
+          secondaryKeywords: aiSecondaryKeywords,
+          timestamp: Date.now(),
         }),
       });
 
