@@ -2,6 +2,7 @@ import { Metadata } from "next";
 import { notFound, redirect } from "next/navigation";
 import { ObjectId } from "mongodb";
 import { getDbAndBucket } from "@/lib/mongodb";
+import { SITE_URL } from "@/lib/site";
 import BlogDetailClient, { Blog, FAQ, Review } from "./BlogDetailClient";
 
 function mapDatabaseBlog(item: any): Blog {
@@ -84,6 +85,14 @@ export async function generateMetadata(
   const metaTitle = blog.metaTitle || blog.title || "Legal Article";
   const metaDescription = blog.metaDescription || blog.subtitle || blog.subtitleKeywords || "";
 
+  let imageUrl = "/blog_money_recovery.png";
+  if (blog.image) {
+    imageUrl = blog.image;
+  } else if (blog.coverImage?.gridFsId) {
+    imageUrl = `/api/blog/image/${blog.coverImage.gridFsId}`;
+  }
+  const absoluteImageUrl = imageUrl.startsWith("http") ? imageUrl : `${SITE_URL}${imageUrl}`;
+
   return {
     title: `${metaTitle} | LegalRecovery`,
     description: metaDescription,
@@ -93,7 +102,7 @@ export async function generateMetadata(
       type: "article",
       images: [
         {
-          url: blog.image || (blog.coverImage?.gridFsId ? `/api/blog/image/${blog.coverImage.gridFsId}` : "/logo.png")
+          url: absoluteImageUrl
         }
       ]
     }
@@ -133,12 +142,93 @@ export default async function BlogDetailPage(
 
   const relatedBlogs = relatedDocs.map(mapDatabaseBlog);
 
+  const postUrl = `${SITE_URL}/blog/${blog.slug}`;
+  const absoluteImageUrl = blog.image
+    ? (blog.image.startsWith("http") ? blog.image : `${SITE_URL}${blog.image}`)
+    : `${SITE_URL}/blog_money_recovery.png`;
+
+  const ratingSum = reviews.reduce((sum, r) => sum + r.rating, 0);
+  const avgRating = reviews.length > 0 ? Number((ratingSum / reviews.length).toFixed(1)) : 5;
+
+  const articleSchema = {
+    "@context": "https://schema.org",
+    "@type": "BlogPosting",
+    "mainEntityOfPage": {
+      "@type": "WebPage",
+      "@id": postUrl,
+    },
+    "headline": blog.title,
+    "description": blog.metaDescription || blog.subtitle || "",
+    "image": absoluteImageUrl,
+    "datePublished": blogDoc.publishedAt || blogDoc.createdAt || new Date().toISOString(),
+    "dateModified": blogDoc.updatedAt || blogDoc.publishedAt || blogDoc.createdAt || new Date().toISOString(),
+    "author": {
+      "@type": "Organization",
+      "name": blog.author || "Team LegalRecovery",
+      "url": `${SITE_URL}/about`,
+    },
+    "publisher": {
+      "@type": "Organization",
+      "name": "LegalRecovery",
+      "logo": {
+        "@type": "ImageObject",
+        "url": `${SITE_URL}/lrlogo.svg`,
+      },
+    },
+    ...(reviews.length > 0 ? {
+      "review": reviews.map((r) => ({
+        "@type": "Review",
+        "reviewRating": {
+          "@type": "Rating",
+          "ratingValue": r.rating,
+          "bestRating": "5",
+        },
+        "author": {
+          "@type": "Person",
+          "name": r.name,
+        },
+        "reviewBody": r.review,
+      })),
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": avgRating,
+        "reviewCount": reviews.length,
+        "bestRating": "5",
+      }
+    } : {})
+  };
+
+  const faqSchema = faqs.length > 0 ? {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": faqs.map((faq) => ({
+      "@type": "Question",
+      "name": faq.question,
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": faq.answer,
+      },
+    })),
+  } : null;
+
   return (
-    <BlogDetailClient
-      blog={blog}
-      faqs={faqs}
-      reviews={reviews}
-      relatedBlogs={relatedBlogs}
-    />
+    <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }}
+      />
+      {faqSchema && (
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
+        />
+      )}
+      <BlogDetailClient
+        blog={blog}
+        faqs={faqs}
+        reviews={reviews}
+        relatedBlogs={relatedBlogs}
+      />
+    </>
   );
 }
