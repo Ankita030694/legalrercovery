@@ -135,14 +135,18 @@ export async function POST(req: NextRequest) {
               });
             } catch (logErr) {}
 
-            // Trigger payment success email and WATI WhatsApp notifications in the background
-            processPaymentSuccessNotifications(
-              db,
-              pendingPaymentUser.phone,
-              pendingPaymentUser.email,
-              pendingPaymentUser.name,
-              amtPaid
-            ).catch((err) => console.error("Error triggering success notifications in redirect route:", err));
+            // Trigger payment success email and WATI WhatsApp notifications and await their completion to prevent serverless function termination
+            try {
+              await processPaymentSuccessNotifications(
+                db,
+                pendingPaymentUser.phone,
+                pendingPaymentUser.email,
+                pendingPaymentUser.name,
+                amtPaid
+              );
+            } catch (notiErr) {
+              console.error("Error triggering success notifications in redirect route:", notiErr);
+            }
           } else {
             console.warn("No matching record in pending_payment for txnid:", txnid);
           }
