@@ -196,7 +196,7 @@ export default function LoginPage() {
           </h2>
           <p className="text-xs sm:text-sm text-slate-500 font-semibold leading-relaxed">
             {loginMode === "otp"
-              ? "Access your dashboard securely via dynamic email OTP."
+              ? "Access your dashboard securely via dynamic WhatsApp and email OTP."
               : "Login using your administrator credentials."
             }
           </p>
@@ -262,7 +262,7 @@ export default function LoginPage() {
             /* STEP 2: ENTER OTP */
             <form onSubmit={handleVerifyOtp} className="flex flex-col gap-5 text-center">
               <p className="text-xs text-slate-500 font-semibold leading-relaxed mb-1">
-                We have successfully generated a login OTP code. Please enter the 6-digit number sent to your verified email:<br />
+                We have successfully generated a login OTP code. Please enter the 6-digit number sent to your WhatsApp at <span className="text-[#111827] font-extrabold">{phone}</span> and email at:<br />
                 <span className="text-[#111827] font-extrabold">{maskedEmail}</span>
               </p>
 

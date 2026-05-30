@@ -3,6 +3,7 @@ import crypto from "crypto";
 import { getDbAndBucket } from "@/lib/mongodb";
 import { ObjectId } from "mongodb";
 import { verifyPayUTxn } from "@/lib/payu";
+import { processPaymentSuccessNotifications } from "@/lib/notifications";
 
 export async function POST(req: NextRequest) {
   try {
@@ -51,18 +52,36 @@ export async function POST(req: NextRequest) {
 
     console.log("PAYU WEBHOOK RAW BODY:", JSON.stringify(body, null, 2));
 
+    const { db } = await getDbAndBucket("fs");
+
+    // Server-side database logging of the webhook hit
+    try {
+      await db.collection("payment_debug_logs").insertOne({
+        step: "webhook_received",
+        timestamp: new Date(),
+        data: { status, txnid, amount, firstname, email, udf1, productinfo, isVerified }
+      });
+    } catch (logErr) {
+      console.error("Failed to write webhook initial log to DB:", logErr);
+    }
+
     // Process Payment Success
     if (status === "success") {
       const userIdentifier = udf1 || body.email || body.phone;
       
       if (!userIdentifier) {
         console.error("Payment successful but no identifying info (udf1, email, or phone) was found in the payload.");
+        try {
+          await db.collection("payment_debug_logs").insertOne({
+            step: "webhook_missing_identifier",
+            timestamp: new Date(),
+            data: { txnid }
+          });
+        } catch {}
         return NextResponse.json({ success: true }, { status: 200 });
       }
 
       try {
-        const { db } = await getDbAndBucket("fs");
-        
         let pendingUser = null;
         let objectId: ObjectId | null = null;
         
@@ -86,11 +105,19 @@ export async function POST(req: NextRequest) {
           }
         }
 
+        try {
+          await db.collection("payment_debug_logs").insertOne({
+            step: "webhook_pending_user_fetch",
+            timestamp: new Date(),
+            data: { found: !!pendingUser, userId: pendingUser?._id?.toString(), phone: pendingUser?.phone }
+          });
+        } catch {}
+        
         // 3. If the user is found in pending_payment, migrate them to the primary users collection
         if (pendingUser) {
           const userPendingId = pendingUser._id;
           const oppCount = pendingUser.oppositionCount || 1;
-          const amtPaid = oppCount * 999;
+          const amtPaid = oppCount * 1; // Modified to 1 for testing purposes
           
           await db.collection("users").updateOne(
             { phone: pendingUser.phone },
@@ -117,6 +144,23 @@ export async function POST(req: NextRequest) {
           // Delete from pending_payment to clean up database
           await db.collection("pending_payment").deleteOne({ _id: userPendingId });
           console.log("Webhook successfully migrated user from pending_payment to users! ID:", userPendingId.toString());
+
+          try {
+            await db.collection("payment_debug_logs").insertOne({
+              step: "webhook_migration_success",
+              timestamp: new Date(),
+              data: { phone: pendingUser.phone, amtPaid, caseMigratedId: userPendingId.toString() }
+            });
+          } catch {}
+
+          // Trigger Zoho Email and WATI WhatsApp notifications
+          await processPaymentSuccessNotifications(
+            db,
+            pendingUser.phone,
+            pendingUser.email,
+            pendingUser.name,
+            amtPaid
+          );
           
         } else {
           // 3. Fallback: If not in pending_payment, they may have already been migrated by the browser redirect.
@@ -144,6 +188,20 @@ export async function POST(req: NextRequest) {
           
           if (updateResult.matchedCount > 0) {
             console.log("Webhook safely updated existing paid user in users collection. Matched via:", JSON.stringify(query));
+            
+            // Trigger notifications if not already sent (safely deduplicated inside processPaymentSuccessNotifications)
+            const user = await db.collection("users").findOne(query);
+            if (user) {
+              const oppCount = user.oppositionCount || 1;
+              const amtPaid = user.amountPaid || (oppCount * 1);
+              await processPaymentSuccessNotifications(
+                db,
+                user.phone,
+                user.email,
+                user.name,
+                amtPaid
+              );
+            }
           } else {
             console.warn("Webhook: No record matched in pending_payment or users. Query:", JSON.stringify(query));
           }

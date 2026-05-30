@@ -3,6 +3,7 @@ import crypto from "crypto";
 import { getDbAndBucket } from "@/lib/mongodb";
 import { ObjectId } from "mongodb";
 import { verifyPayUTxn } from "@/lib/payu";
+import { processPaymentSuccessNotifications } from "@/lib/notifications";
 
 export async function POST(req: NextRequest) {
   try {
@@ -30,6 +31,19 @@ export async function POST(req: NextRequest) {
 
     const { status, txnid, amount, productinfo, firstname, email, udf1, udf2, udf3, udf4, udf5, hash, key } = body;
     
+    const { db } = await getDbAndBucket("fs");
+
+    // Server-side database logging of the redirect hit
+    try {
+      await db.collection("payment_debug_logs").insertOne({
+        step: "redirect_post_received",
+        timestamp: new Date(),
+        data: { status, txnid, amount, firstname, email, udf1, keyPresent: !!key }
+      });
+    } catch (logErr) {
+      console.error("Failed to write redirect initial log to DB:", logErr);
+    }
+    
     // Instead of relying on the unreliable Reverse Hash from the Button Redirect, 
     // we make a 100% secure server-to-server API call to verify the transaction.
     let isVerified = false;
@@ -38,6 +52,16 @@ export async function POST(req: NextRequest) {
        isVerified = await verifyPayUTxn(txnid, key);
     } else {
        console.error("Missing txnid or key in redirect payload");
+    }
+
+    try {
+      await db.collection("payment_debug_logs").insertOne({
+        step: "redirect_verification_status",
+        timestamp: new Date(),
+        data: { txnid, status, isVerified }
+      });
+    } catch (logErr) {
+      console.error("Failed to write verification status log to DB:", logErr);
     }
 
     let targetPath = "/payment-failure";
@@ -49,7 +73,6 @@ export async function POST(req: NextRequest) {
         targetPath = "/payment-success";
         
         try {
-          const { db } = await getDbAndBucket("fs");
           let pendingPaymentUser = null;
           
           // 1. Prioritize querying using the unique transaction ID (guarantees domain/cookie independence)
@@ -64,10 +87,18 @@ export async function POST(req: NextRequest) {
               pendingPaymentUser = await db.collection("pending_payment").findOne({ _id: new ObjectId(pendingUserId) });
             }
           }
+
+          try {
+            await db.collection("payment_debug_logs").insertOne({
+              step: "redirect_pending_user_fetch",
+              timestamp: new Date(),
+              data: { found: !!pendingPaymentUser, userId: pendingPaymentUser?._id?.toString(), phone: pendingPaymentUser?.phone }
+            });
+          } catch (logErr) {}
           
           if (pendingPaymentUser) {
             const oppCount = pendingPaymentUser.oppositionCount || 1;
-            const amtPaid = oppCount * 999;
+            const amtPaid = oppCount * 1; // Modified to 1 for testing purposes
 
             // Upsert details into the main users collection
             await db.collection("users").updateOne(
@@ -95,6 +126,23 @@ export async function POST(req: NextRequest) {
             // Remove the record from pending_payment collection using its database _id
             await db.collection("pending_payment").deleteOne({ _id: pendingPaymentUser._id });
             console.log("Successfully verified payment, migrated user from 'pending_payment' to 'users', and cleaned up pending_payment. ID:", pendingPaymentUser._id.toString());
+
+            try {
+              await db.collection("payment_debug_logs").insertOne({
+                step: "redirect_migration_success",
+                timestamp: new Date(),
+                data: { phone: pendingPaymentUser.phone, amtPaid, caseMigratedId: pendingPaymentUser._id.toString() }
+              });
+            } catch (logErr) {}
+
+            // Trigger payment success email and WATI WhatsApp notifications in the background
+            processPaymentSuccessNotifications(
+              db,
+              pendingPaymentUser.phone,
+              pendingPaymentUser.email,
+              pendingPaymentUser.name,
+              amtPaid
+            ).catch((err) => console.error("Error triggering success notifications in redirect route:", err));
           } else {
             console.warn("No matching record in pending_payment for txnid:", txnid);
           }

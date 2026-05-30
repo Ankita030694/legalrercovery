@@ -1,6 +1,7 @@
 import { NextRequest, NextResponse } from "next/server";
 import { getDbAndBucket } from "@/lib/mongodb";
 import { sendOtpEmail } from "@/lib/email";
+import { sendWatiOtp } from "@/lib/wati";
 
 export async function POST(req: NextRequest) {
   try {
@@ -54,12 +55,15 @@ export async function POST(req: NextRequest) {
 
     const pendingId = record._id.toString();
 
-    // Send the OTP via Zoho Mail
-    const emailSent = await sendOtpEmail(email, otp, name, oppositionCount ? Number(oppositionCount) : 1);
+    // Send the OTP via Zoho Mail and WATI WhatsApp in parallel
+    const [emailSent, watiSent] = await Promise.all([
+      sendOtpEmail(email, otp, name, oppositionCount ? Number(oppositionCount) : 1),
+      sendWatiOtp(phone, otp)
+    ]);
 
-    if (!emailSent) {
+    if (!emailSent && !watiSent) {
       return NextResponse.json(
-        { error: "Failed to send verification email. Please check your email address." },
+        { error: "Failed to send verification OTP. Please check your credentials and try again." },
         { status: 500 }
       );
     }

@@ -34,13 +34,17 @@ export async function POST(req: NextRequest) {
     // Retrieve the secure pending_payment record from the database to calculate amount securely on the server-side
     const pendingPaymentRecord = await db.collection("pending_payment").findOne({ _id: objectId });
     if (!pendingPaymentRecord) {
+      console.error("[PayU Initiate Debug] Pending payment record not found for ID:", paymentPendingId);
       return NextResponse.json({ error: "Matching registration session not found" }, { status: 404 });
     }
 
     // Securely calculate the amount on server side to prevent any manipulation
     const oppositionCount = pendingPaymentRecord.oppositionCount || 1;
-    const totalAmount = oppositionCount * 999;
+    const totalAmount = oppositionCount * 1; // Modified to 1 for testing purposes
     const amount = `${totalAmount}.00`;
+
+    console.log(`[PayU Initiate Debug] Calculated amount for oppositionCount ${oppositionCount}: ₹${amount} (₹1 per party for testing)`);
+
 
     // Update pending record with the generated transaction ID
     await db.collection("pending_payment").updateOne(

@@ -133,3 +133,15 @@ export const authOptions: NextAuthOptions = {
   },
   secret: process.env.NEXTAUTH_SECRET || "tumsabkimaachod_dijaygibehenkelundo",
 };
+
+import { getServerSession } from "next-auth/next";
+import { NextResponse } from "next/server";
+
+export async function verifyAuth(request: any) {
+  const session = await getServerSession(authOptions);
+  if (!session) {
+    return { error: NextResponse.json({ error: "Unauthorized" }, { status: 401 }) };
+  }
+  return { session };
+}
+

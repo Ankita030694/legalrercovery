@@ -204,25 +204,50 @@ export default function DocumentVault() {
             </div>
 
             {/* Scrollable Letterhead Page Draft Pane */}
-            <div className="flex-1 overflow-y-auto p-8 sm:p-12 font-serif text-left select-text bg-[#FAFAFA]">
-              <div className="bg-white shadow-[0_4px_20px_rgba(0,0,0,0.02)] border border-[#E5E7EB]/80 p-8 sm:p-10 flex flex-col gap-6 relative overflow-hidden min-h-[750px]">
-                
+            <div className="flex-1 overflow-y-auto p-8 sm:p-12 text-left select-text bg-[#FAFAFA]">
+              <div 
+                className="bg-white shadow-[0_4px_20px_rgba(0,0,0,0.02)] border border-[#E5E7EB]/80 p-8 sm:p-10 flex flex-col gap-5 relative overflow-hidden min-h-[750px]"
+                style={{ fontFamily: "'Times New Roman', Times, serif" }}
+              >
                 {/* Letterhead header */}
-                <div className="flex flex-col items-center border-b-2 border-black pb-3 text-center">
-                  <img src="/ama4.png" alt="AMA Legal Solutions" className="h-16 sm:h-20 w-auto object-contain mb-1.5" />
-                  <span className="text-[10.5px] text-slate-500 uppercase tracking-wider font-bold font-sans">AMA LEGAL SOLUTIONS</span>
-                  <span className="text-[8px] text-slate-400 font-semibold font-sans mt-0.5">E: legal@amalegalsolutions.com | T: +91 87003 43611</span>
-                  <span className="text-[7px] text-slate-400 font-medium font-sans mt-0.5">Reg. Office: H-4, Barakhamba Road, Connaught Place, New Delhi 110001</span>
-                </div>
-
-                {/* References */}
-                <div className="flex justify-between text-[10px] text-slate-500 font-medium font-sans">
-                  <span>Ref: AMA/LRN/{previewNotice.id.slice(-5).toUpperCase()}</span>
-                  <span>Date: {previewNotice.dispatchedDate === "Today" ? new Date().toLocaleDateString("en-IN") : previewNotice.dispatchedDate}</span>
+                <div className="flex flex-col text-center pb-2">
+                  <img src="/notices/header logo AMA .png" alt="AMA Logo" className="w-[240px] sm:w-[280px] h-auto block mx-auto mb-1.5" />
+                  <div className="text-center text-[9.5px] sm:text-[11px] leading-normal text-black font-semibold">
+                    <div className="font-bold text-[10.5px] sm:text-[12px] mb-0.5">Advocate & Solicitors</div>
+                    <div>2493AP, Ground floor, Sector 57, Gurugram-122003 (Haryana)</div>
+                    <div className="font-bold text-[8.5px] sm:text-[10px] mt-1">
+                      E: <span className="text-[#0066cc] underline">notice@amalegalsolutions.com</span>
+                    </div>
+                  </div>
+                  <table className="w-full border-collapse border-none mt-2.5 text-[9px] sm:text-[10.5px] text-black font-bold">
+                    <tbody>
+                      <tr className="align-middle">
+                        <td className="text-left p-0 pb-0.5 border-none">Advocate Anuj Anand Malik</td>
+                        <td className="text-right p-0 pb-0.5 font-bold border-none text-[7.5px] sm:text-[8.5px]">MEMBER - BAR COUNCIL OF DELHI</td>
+                      </tr>
+                      <tr className="align-middle">
+                        <td className="text-left p-0 pb-0.5 border-none">Advocate Shrey Arora</td>
+                        <td className="text-right p-0 pb-0.5 font-bold border-none text-[7.5px] sm:text-[8.5px]">MEMBER - MCIA (MUMBAI)</td>
+                      </tr>
+                      <tr className="align-middle">
+                        <td className="text-left p-0 border-none"></td>
+                        <td className="text-right p-0 font-bold border-none text-[7.5px] sm:text-[8.5px]">ASSOCIATION MEMBER - IACC</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                  <table className="w-full border-collapse border-none mt-2 text-[9.5px] sm:text-[10px] text-slate-500 font-bold">
+                    <tbody>
+                      <tr className="align-middle">
+                        <td className="text-left p-0 border-none">Ref: AMA/LRN-WEEK{previewNotice.stepNumber}</td>
+                        <td className="text-right p-0 border-none">Date: {previewNotice.dispatchedDate === "Today" ? new Date().toLocaleDateString("en-IN") : previewNotice.dispatchedDate}</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                  <div className="border-b-2 border-black mt-2"></div>
                 </div>
 
                 {/* Address details - Customizes shooter layout depending on Police vs Defaulter templates */}
-                <div className="text-[11px] leading-relaxed text-slate-700 flex flex-col gap-3 font-sans">
+                <div className="text-[11px] leading-relaxed text-slate-700 flex flex-col gap-3">
                   {previewNotice.stepNumber === 4 ? (
                     <div className="flex flex-col">
                       <span className="text-[9px] text-slate-450 font-bold uppercase tracking-wider mb-1">BY PHYSICAL SUBMISSION & EMAIL</span>
@@ -236,7 +261,9 @@ export default function DocumentVault() {
                     </div>
                   ) : (
                     <div className="flex flex-col">
-                      <span className="text-[9px] text-slate-455 font-bold uppercase tracking-wider mb-1">BY REGISTERED SPEED POST & EMAIL</span>
+                      <span className="text-[9px] text-slate-455 font-bold uppercase tracking-wider mb-1">
+                        {(previewNotice.stepNumber === 1 || previewNotice.stepNumber === 2) ? "BY EMAIL & WHATSAPP" : "BY REGISTERED SPEED POST & EMAIL"}
+                      </span>
                       <span className="font-extrabold text-slate-800">TO,</span>
                       <span className="font-extrabold text-slate-800">{previewNotice.caseName}</span>
                       <span className="font-bold text-slate-650">Constitution: {previewNotice.entityType}</span>
@@ -250,20 +277,20 @@ export default function DocumentVault() {
                 </div>
 
                 {/* Document Subject line */}
-                <div className="text-xs font-bold text-center text-slate-900 border-y border-slate-200 py-2.5 font-sans uppercase">
+                <div className="text-xs font-bold text-center text-slate-900 border-y border-slate-200 py-2.5 uppercase">
                   {previewNotice.stepNumber === 4 ? (
                     `SUB: COMPLAINT UNDER SECTIONS 316, 318 AND 61 OF THE BHARATIYA NYAYA SANHITA, 2023 (BNS) FOR CRIMINAL BREACH OF TRUST, CHEATING, AND CRIMINAL CONSPIRACY IN RESPECT OF INR ${previewNotice.stuckAmount.toLocaleString("en-IN")} AGAINST THE ACCUSED DEFAULTER ${previewNotice.caseName}`
                   ) : previewNotice.stepNumber === 3 ? (
-                    `SUBJECT: FINAL LEGAL NOTICE - DEMARKATION OF IMMEDIATE CIVIL LITIGATION & PUBLIC CRIMINAL PROSECUTION UNDER THE BNS PRIOR TO INTENSE FORFEITURE PROCEEDINGS`
+                    `SUBJECT: Final Pre-Litigation and Police Complaint Notice for Recovery of ₹${previewNotice.stuckAmount.toLocaleString("en-IN")} Under Applicable Provisions of Bharatiya Nyaya Sanhita (BNS)`
                   ) : previewNotice.stepNumber === 2 ? (
                     `SUBJECT: SECOND LEGAL DEMAND NOTICE - FORMAL STRATIFIED WARNING AND INTENSE DEBT RECOVERY PIPELINE ACTIVATION IN REGARD TO THE EVASION OF MATURED DUES`
                   ) : (
-                    `SUBJECT: Notice for Resolution of Outstanding Payment / Pending Claim`
+                    `SUBJECT: Demand Notice for Immediate Clearance of Outstanding Liability of ₹${previewNotice.stuckAmount.toLocaleString("en-IN")} Towards Tech AMA`
                   )}
                 </div>
 
                 {/* Content body paragraph list */}
-                <div className="text-[11px] sm:text-[12px] text-slate-700 leading-relaxed flex flex-col gap-3 font-serif select-text">
+                <div className="text-[11px] sm:text-[12px] text-slate-700 leading-relaxed flex flex-col gap-3 select-text">
                   
                   {previewNotice.stepNumber !== 4 && <p>Dear Sir/Madam,</p>}
 
@@ -295,7 +322,7 @@ export default function DocumentVault() {
                       <p>
                         A copy of this Notice has been preserved in our office for record and future course of action. You are hereby advised to preserve a copy of this notice, as the same may be required to be produced before the appropriate Court of Law and/or competent authority as and when required.
                       </p>
-                      <div className="mt-2.5 flex flex-col gap-0.5 text-left font-sans text-[9px] font-bold text-slate-500">
+                      <div className="mt-2.5 flex flex-col gap-0.5 text-left text-[9px] font-bold text-slate-500">
                         <span>For and on behalf of Tech AMA</span>
                         <span className="text-slate-900 font-extrabold uppercase mt-1">Kindly treat this matter as urgent.</span>
                       </div>
@@ -305,16 +332,38 @@ export default function DocumentVault() {
                   {previewNotice.stepNumber === 2 && (
                     <>
                       <p>
-                        <strong>SUBSEQUENT SECOND DEMAND NOTICE:</strong> This notice constitutes a formal second warning follow-up demand. A primary legal demand notice was served to your registered office and email addresses previously, which you have chosen to ignore.
+                        Under instructions and authority from our client <strong>Tech AMA</strong>, residing/having office at <strong>Delhi, India</strong>, we hereby issue the present Second and Final Legal Notice calling upon you to immediately clear the outstanding dues/claim amounting to <strong>₹{previewNotice.stuckAmount.toLocaleString("en-IN")}</strong> payable towards our client arising out of transactions, services, agreements, commitments, business dealings, or financial obligations undertaken by you.
                       </p>
                       <p>
-                        Our Client reports that you have continuously failed and neglected to honor your outstanding liability of <strong>INR {previewNotice.stuckAmount.toLocaleString("en-IN")}</strong> originally due since <strong>{previewNotice.dueDate ? new Date(previewNotice.dueDate).toLocaleDateString("en-IN") : "due date"}</strong>. This persistent non-payment and absolute lack of response indicates a calculated, dishonest intention to fraudulently misappropriate and retain our Client's hard-earned money, whether relating to pending employee salary, freelancer payouts, commercial rents, security deposits, or defective service compensation.
+                        Despite repeated reminders, communications, and an earlier legal notice served upon you, you have failed to regularize the matter or provide any satisfactory response. Your conduct clearly reflects deliberate negligence, avoidance, and non-compliance towards lawful obligations owed to our client.
                       </p>
                       <p>
-                        Be informed that our Client has already initiated comprehensive tracking of your corporate assets, property holdings, and business bank accounts. Additionally, steps are underway to report your non-compliance to regional registries, professional networks, credit rating agencies, and business circles.
+                        It is pertinent to mention that if any person dishonestly retains money, intentionally avoids payment despite liability, induces another party under false assurances, or causes wrongful financial loss, such actions may attract legal consequences under applicable provisions of the <strong>Bharatiya Nyaya Sanhita, 2023</strong>, including but not limited to provisions relating to:
+                      </p>
+                      <div className="flex flex-col gap-1 pl-4">
+                        <span>1. Cheating and dishonest inducement;</span>
+                        <span>2. Criminal breach of trust;</span>
+                        <span>3. Fraudulent or dishonest conduct causing wrongful loss.</span>
+                      </div>
+                      <p>
+                        Our client still wishes to provide you with a final opportunity to amicably resolve the matter without initiating formal legal proceedings.
+                      </p>
+                      <p>You are therefore finally called upon to:</p>
+                      <div className="flex flex-col gap-1 pl-4">
+                        <span>1. Make payment of the outstanding amount of <strong>₹{previewNotice.stuckAmount.toLocaleString("en-IN")}</strong> within 7 (Seven) days from receipt of this notice; OR</span>
+                        <span>2. Provide a written explanation along with documentary proof disputing the claim within the aforesaid period.</span>
+                      </div>
+                      <p>
+                        Kindly take notice that upon failure to comply, our client shall be constrained to initiate appropriate civil and/or criminal proceedings before the competent authorities/courts/forum, including filing complaints before the appropriate police authorities and legal forums, entirely at your own risk as to costs, liabilities, and consequences.
                       </p>
                       <p>
-                        Please be warned that unless you clear the entire outstanding balance along with penalty interest immediately, our Client will assign this debt to authorized recovery tribunals and corporate compliance channels. This will lead to extensive reputational damage and the immediate initiation of public corporate winding-up petitions.
+                        Please further note that any continued avoidance, non-response, or intentional withholding of payment may be relied upon as adverse conduct in future legal proceedings.
+                      </p>
+                      <p>
+                        This notice is issued without prejudice to all legal rights and remedies available to our client under applicable law.
+                      </p>
+                      <p>
+                        A copy of this Notice has been preserved in our office for record and future course of action. You are hereby advised to preserve a copy of this notice, as the same may be required to be produced before the appropriate Court of Law and/or competent authority as and when required.
                       </p>
                     </>
                   )}
@@ -322,46 +371,114 @@ export default function DocumentVault() {
                   {previewNotice.stepNumber === 3 && (
                     <>
                       <p>
-                        This is the <strong>Final Notice</strong> served upon you. You have actively ignored two formal demand notices served previously. Your continuous evasion and dishonest retention of <strong>INR {previewNotice.stuckAmount.toLocaleString("en-IN")}</strong> originally due since <strong>{previewNotice.dueDate ? new Date(previewNotice.dueDate).toLocaleDateString("en-IN") : "due date"}</strong> is now recognized as a deliberate criminal offense.
+                        Under instructions from and on behalf of my client <strong>Tech AMA</strong>, I hereby issue the present Final Legal Notice against you with respect to the outstanding amount/claim of <strong>INR {previewNotice.stuckAmount.toLocaleString("en-IN")}/-</strong> arising out of dealings, transactions, services, agreements, commitments, or obligations between you and our client.
                       </p>
                       <p>
-                        We have completed drafting the comprehensive civil recovery lawsuit under Order XXXVII of the Code of Civil Procedure (CPC) and a formal criminal complaint to be filed before the jurisdictional police and Judicial Magistrate under the <strong>Bharatiya Nyaya Sanhita, 2023 (BNS)</strong>.
+                        It is pertinent to note that despite repeated reminders, follow-ups, and opportunities extended to you for amicable resolution, you have deliberately failed and neglected to clear the outstanding liability and/or honour your commitments. Your conduct has caused substantial financial loss, harassment, mental agony, and inconvenience to my client.
+                      </p>
+                      <p>Your actions prima facie disclose elements of:</p>
+                      <div className="flex flex-col gap-0.5 pl-3 font-semibold text-slate-700">
+                        <span>- dishonest intention,</span>
+                        <span>- wrongful withholding of money/property,</span>
+                        <span>- misrepresentation,</span>
+                        <span>- criminal breach of trust,</span>
+                        <span>- cheating, and</span>
+                        <span>- intentional non-compliance despite repeated demands.</span>
+                      </div>
+                      <p>
+                        Accordingly, your acts may attract penal consequences under the relevant provisions of the <strong>Bharatiya Nyaya Sanhita, 2023</strong> including but not limited to:
+                      </p>
+                      <div className="flex flex-col gap-0.5 pl-3 font-semibold text-slate-700">
+                        <span>- <strong>Section 316 BNS</strong> – Criminal Breach of Trust</span>
+                        <span>- <strong>Section 318 BNS</strong> – Cheating</span>
+                        <span>- <strong>Section 351 BNS</strong> – Criminal Intimidation (where applicable)</span>
+                        <span>- Any other applicable civil and criminal provisions based upon the facts and documents available on record.</span>
+                      </div>
+                      <p>You are therefore called upon for the <strong>FINAL</strong> time to:</p>
+                      <div className="flex flex-col gap-0.5 pl-3 font-semibold text-slate-700">
+                        <span>1. Clear/pay the outstanding amount of <strong>INR {previewNotice.stuckAmount.toLocaleString("en-IN")}/-</strong>;</span>
+                        <span>2. Provide written confirmation of settlement; and</span>
+                        <span>3. Resolve the matter within <strong>72 HOURS</strong> from receipt of this notice.</span>
+                      </div>
+                      <p>
+                        Please take notice that in the event of your failure to comply within the aforesaid period, my client shall be constrained to initiate appropriate legal proceedings against you, including but not limited to:
+                      </p>
+                      <div className="flex flex-col gap-0.5 pl-3 font-semibold text-slate-700">
+                        <span>- filing of Police Complaint/FIR before the competent Police Authorities;</span>
+                        <span>- initiation of criminal proceedings under applicable provisions of BNS;</span>
+                        <span>- civil recovery proceedings before appropriate courts/forums;</span>
+                        <span>- recovery of interest, damages, litigation costs, and legal expenses.</span>
+                      </div>
+                      <p>
+                        Kindly note that the entire risk as to costs and legal consequences arising therefrom shall solely be attributable to you.
                       </p>
                       <p>
-                        Particularly, your conduct directly warrants prosecution under the following strict sections:
-                        <br />
-                        1. <strong>Section 316 of BNS (Criminal Breach of Trust)</strong>: For dishonestly misappropriating and converting our Client's services, labor, rental security deposit, or payments.
-                        <br />
-                        2. <strong>Section 318 of BNS (Cheating & Dishonestly Inducing Delivery of Property)</strong>: For fraudulently inducing our Client to deliver services/goods under false representations of timely payment.
-                        <br />
-                        3. <strong>Section 61 of BNS (Criminal Conspiracy)</strong>: For conniving to cause wrongful loss to our Client.
+                        This notice is issued without prejudice to all other legal rights and remedies available to my client under applicable law.
                       </p>
                       <p>
-                        Unless the entire amount of <strong>INR {previewNotice.stuckAmount.toLocaleString("en-IN")}</strong> along with 24% interest compounded monthly is paid in full within 48 hours of this notice, these files will be formally registered. No further grace, notifications, or settlement negotiations will be offered.
+                        A copy of this Notice has been preserved in our office for record and future course of action. You are hereby advised to preserve a copy of this notice, as the same may be required to be produced before the appropriate Court of Law and/or competent authority as and when required.
                       </p>
                     </>
                   )}
 
                   {previewNotice.stepNumber === 4 && (
                     <>
-                      <p>Dear Sir,</p>
+                      <div className="text-[10px] font-black uppercase text-slate-800 border-b border-[#E5E7EB] pb-0.5 mt-2">COMPLAINANT DETAILS</div>
+                      <div className="grid grid-cols-3 text-[10px] font-semibold text-slate-700 gap-y-0.5 pl-1 my-1">
+                        <span className="font-bold text-slate-500">Name:</span><span className="col-span-2 text-slate-950">Tech AMA</span>
+                        <span className="font-bold text-slate-500">Phone Number:</span><span className="col-span-2">+91-8700343611</span>
+                        <span className="font-bold text-slate-500">Email ID:</span><span className="col-span-2">notice@amalegalsolutions.com</span>
+                        <span className="font-bold text-slate-500">Address:</span><span className="col-span-2">2493AP, Ground floor, Sector 57, Gurugram-122003 (Haryana)</span>
+                      </div>
+
+                      <div className="text-[10px] font-black uppercase text-slate-800 border-b border-[#E5E7EB] pb-0.5 mt-3">ACCUSED DETAILS</div>
+                      <div className="grid grid-cols-3 text-[10px] font-semibold text-slate-700 gap-y-0.5 pl-1 my-1">
+                        <span className="font-bold text-slate-500">Name:</span><span className="col-span-2 text-slate-950 font-black">{previewNotice.caseName}</span>
+                        <span className="font-bold text-slate-500">Phone Number:</span><span className="col-span-2">{previewNotice.phone || "[Phone Number]"}</span>
+                        <span className="font-bold text-slate-500">Email ID:</span><span className="col-span-2">{previewNotice.email || "[Email ID]"}</span>
+                        <span className="font-bold text-slate-500">Address:</span><span className="col-span-2">{previewNotice.address}</span>
+                      </div>
+
+                      <p className="font-semibold text-slate-955 mt-3">Respected Sir/Madam,</p>
+
                       <p>
-                        We submit this formal complaint against the accused <strong>{previewNotice.caseName}</strong> located at <strong>{previewNotice.address}</strong> for registering a First Information Report (FIR) and initiating immediate prosecution under the provisions of the <strong>Bharatiya Nyaya Sanhita, 2023 (BNS)</strong>.
+                        Under instructions from and on behalf of our client, namely <strong>Tech AMA</strong>, we, AMA Legal Solutions, through our authorized legal representatives, hereby submit the present complaint against the above-mentioned accused for acts involving deliberate non-payment of legitimate dues, cheating, dishonest inducement, criminal breach of trust, and wrongful financial loss caused to our client.
                       </p>
+
                       <p>
-                        The accused fraudulently induced our Client to deliver services, labor, property, or lease values (including freelance services, labor, security deposits, or product payments) worth <strong>INR {previewNotice.stuckAmount.toLocaleString("en-IN")}</strong> under the absolute representation of clearing the payment on <strong>{previewNotice.dueDate ? new Date(previewNotice.dueDate).toLocaleDateString("en-IN") : "due date"}</strong>. 
+                        That the accused had entered into a transaction/understanding with our client, pursuant to which an amount of <strong>INR {previewNotice.stuckAmount.toLocaleString("en-IN")}/-</strong> became legally due and payable to our client.
                       </p>
+
                       <p>
-                        The accused had a dishonest intention from the very inception of the transaction, and has since fraudulently misappropriated the values for their own unlawful gain, in direct violation of:
-                        <br />
-                        - <strong>Section 316 of BNS (Criminal Breach of Trust)</strong>: By dishonestly misappropriating the entrusted value.
-                        <br />
-                        - <strong>Section 318 of BNS (Cheating)</strong>: By inducing delivery of services under fraudulent claims.
-                        <br />
-                        - <strong>Section 61 of BNS (Criminal Conspiracy)</strong>: By coordinating actions to defraud.
+                        Despite repeated follow-ups, calls, messages, reminders, and legal notices issued on behalf of our client, the accused has intentionally failed and neglected to clear the outstanding dues. The conduct of the accused clearly demonstrates dishonest intention from the very inception of the transaction and reflects wilful default and deliberate evasion of liability.
                       </p>
+
                       <p>
-                        Despite multiple legal demand notices, the accused has actively ignored all correspondence, indicating wilful evasion. We request your office to register a formal FIR, investigate this matter, and summon the accused immediately.
+                        It is pertinent to mention that the accused has continuously avoided communication and has failed to provide any lawful justification for withholding the legitimate dues of our client. Such conduct has caused severe financial loss, mental harassment, business disruption, and unnecessary hardship to our client.
+                      </p>
+
+                      <p>
+                        The actions of the accused prima facie attract offences punishable under the applicable provisions of the <strong>Bharatiya Nyaya Sanhita (BNS)</strong>, including but not limited to offences relating to:
+                      </p>
+                      <div className="flex flex-col gap-0.5 pl-3 font-semibold text-slate-700 mb-2">
+                        <span>1. Cheating;</span>
+                        <span>2. Criminal Breach of Trust;</span>
+                        <span>3. Dishonest Misappropriation;</span>
+                        <span>4. Fraudulent and dishonest inducement; and</span>
+                        <span>5. Other allied offences as may be made out during investigation.</span>
+                      </div>
+
+                      <p>In view of the foregoing, we respectfully request your good office to:</p>
+                      <div className="flex flex-col gap-0.5 pl-3 font-semibold text-slate-700 mb-2">
+                        <span>1. Take cognizance of the present complaint;</span>
+                        <span>2. Initiate appropriate inquiry/investigation against the accused;</span>
+                        <span>3. Summon/call the accused for questioning;</span>
+                        <span>4. Take necessary legal action in accordance with law; and</span>
+                        <span>5. Protect the rights and interests of our client.</span>
+                      </div>
+
+                      <p className="font-bold text-slate-900 mt-2">
+                        Kindly treat this matter as urgent and take appropriate action at the earliest.
                       </p>
                     </>
                   )}
@@ -371,11 +488,25 @@ export default function DocumentVault() {
                   </p>
                 </div>
 
-                {/* Signature bar */}
-                <div className="mt-auto pt-6 flex flex-col gap-1 border-t border-slate-200 text-left text-[10px] text-slate-500 font-medium font-sans">
-                  <span className="font-extrabold text-slate-800">For AMA Legal Solutions</span>
-                  <span>Advocate In-Charge</span>
-                  <span>New Delhi High Court Bench</span>
+                {/* Signature & High Fidelity Repeating Footer */}
+                <div className="mt-auto pt-4 flex flex-col gap-3">
+                  <div className="text-left px-1">
+                    <div style={{ marginBottom: "4px", whiteSpace: "nowrap", width: "fit-content", textAlign: "left" }}>
+                      <img src="/notices/Signature.png" alt="Signature" className="h-[35px] sm:h-[45px] w-auto inline-block" style={{ verticalAlign: "bottom", marginRight: "12px" }} />
+                      <img src="/notices/AMA stamp logo.png" alt="Stamp" className="h-[45px] sm:h-[55px] w-auto object-contain opacity-90 inline-block" style={{ verticalAlign: "bottom" }} />
+                    </div>
+                    <span className="font-bold text-slate-800 text-[10.5px] sm:text-[11.5px] block">For AMA Legal Solutions<sup>®</sup></span>
+                    <span className="text-slate-500 text-[9.5px] block mt-0.5">Through Authorized Signatory</span>
+                  </div>
+                  <div className="border-t border-b border-black py-1.5 flex items-center justify-between text-[7px] sm:text-[8px] font-bold text-black uppercase px-1">
+                    <div className="w-[30px]"></div>
+                    <div className="text-center tracking-wide whitespace-nowrap flex-1">
+                      GURUGRAM - DELHI - NOIDA - BENGALURU - MUMBAI
+                    </div>
+                    <div className="w-[30px] flex justify-end">
+                      <img src="/notices/AMA stamp logo.png" alt="Stamp" className="h-[20px] sm:h-[26px] w-auto object-contain opacity-90 block" />
+                    </div>
+                  </div>
                 </div>
 
               </div>

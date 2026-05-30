@@ -248,12 +248,12 @@ export const PaymentModal = ({ isOpen, onClose }: PaymentModalProps) => {
         <div className="p-6 sm:p-8 relative">
           <div className="text-center mb-6">
             <h2 className="text-xl sm:text-2xl font-black text-[#111827] mb-2 tracking-tight">
-              {step === 1 ? "Complete Details" : "Verify Email"}
+              {step === 1 ? "Complete Details" : "Verify Identity"}
             </h2>
             <p className="text-xs sm:text-sm text-slate-500 font-semibold">
               {step === 1 
                 ? "Enter your details to initiate secure legal recovery setup." 
-                : "Enter the OTP sent to your email to verify your identity."
+                : "Enter the OTP sent to your WhatsApp and email to verify your identity."
               }
             </p>
           </div>
@@ -354,11 +354,11 @@ export const PaymentModal = ({ isOpen, onClose }: PaymentModalProps) => {
                     onChange={(e) => setOppositionCount(Number(e.target.value))}
                     className="w-full bg-[#F9FAFB] border border-[#E5E7EB] focus:ring-[#DC2626]/10 rounded-xl px-4 py-3 text-sm text-[#111827] focus:outline-none focus:ring-4 transition-all font-semibold appearance-none cursor-pointer"
                   >
-                    <option value={1}>1 Party (₹999)</option>
-                    <option value={2}>2 Parties (₹1,998)</option>
-                    <option value={3}>3 Parties (₹2,997)</option>
-                    <option value={4}>4 Parties (₹3,996)</option>
-                    <option value={5}>5 Parties (₹4,995)</option>
+                    <option value={1}>1 Party (₹1)</option>
+                    <option value={2}>2 Parties (₹2)</option>
+                    <option value={3}>3 Parties (₹3)</option>
+                    <option value={4}>4 Parties (₹4)</option>
+                    <option value={5}>5 Parties (₹5)</option>
                   </select>
                   <div className="absolute right-4 top-1/2 -translate-y-1/2 pointer-events-none text-gray-500">
                     <svg className="w-4 h-4" fill="none" stroke="currentColor" strokeWidth="2.5" viewBox="0 0 24 24">
@@ -382,7 +382,7 @@ export const PaymentModal = ({ isOpen, onClose }: PaymentModalProps) => {
                   ) : (
                     <>
                       <Shield className="w-4 h-4" />
-                      Verify Email & Pay ₹{oppositionCount * 999}
+                      Verify Email & Pay ₹{oppositionCount * 1}
                     </>
                   )}
                 </button>
@@ -398,8 +398,7 @@ export const PaymentModal = ({ isOpen, onClose }: PaymentModalProps) => {
                 <Lock className="w-5 h-5" />
               </div>
               <p className="text-xs sm:text-sm text-slate-500 font-semibold leading-relaxed">
-                We have sent a 6-digit verification code to<br />
-                <span className="text-[#111827] font-extrabold">{email}</span>.
+                We have sent a 6-digit verification code to your WhatsApp at <span className="text-[#111827] font-extrabold">{phone}</span> and email at <span className="text-[#111827] font-extrabold">{email}</span>.
               </p>
 
               <div className="flex flex-col text-left mt-2">
@@ -432,7 +431,7 @@ export const PaymentModal = ({ isOpen, onClose }: PaymentModalProps) => {
                   ) : (
                     <>
                       <CheckCircle className="w-4 h-4" />
-                      Verify OTP & Pay ₹{oppositionCount * 999}
+                      Verify OTP & Pay ₹{oppositionCount * 1}
                     </>
                   )}
                 </button>
