@@ -86,6 +86,8 @@ const BlogsDashboard = () => {
 
   // AI Generation state
   const [aiContext, setAiContext] = useState("");
+  const [aiPrimaryKeyword, setAiPrimaryKeyword] = useState("");
+  const [aiSecondaryKeywords, setAiSecondaryKeywords] = useState("");
   const [isGenerating, setIsGenerating] = useState(false);
 
   // Image Generation state
@@ -354,7 +356,11 @@ const BlogsDashboard = () => {
         headers: {
           "Content-Type": "application/json",
         },
-        body: JSON.stringify({ context: aiContext }),
+        body: JSON.stringify({ 
+          context: aiContext,
+          primaryKeyword: aiPrimaryKeyword,
+          secondaryKeywords: aiSecondaryKeywords
+        }),
       });
 
       if (!response.ok) {
@@ -438,15 +444,33 @@ const BlogsDashboard = () => {
     }
   };
 
+  // Helper to convert base64 or fetch URL to blob safely
+  const getImageBlob = async (url: string): Promise<Blob> => {
+    if (url.startsWith("data:")) {
+      const arr = url.split(',');
+      const mime = arr[0].match(/:(.*?);/)?.[1] || 'image/png';
+      const bstr = atob(arr[1]);
+      let n = bstr.length;
+      const u8arr = new Uint8Array(n);
+      while (n--) {
+        u8arr[n] = bstr.charCodeAt(n);
+      }
+      return new Blob([u8arr], { type: mime });
+    }
+    const response = await fetch(`/api/proxy-image?url=${encodeURIComponent(url)}`);
+    if (!response.ok) {
+      throw new Error(`Failed to fetch image via proxy: ${response.statusText}`);
+    }
+    return await response.blob();
+  };
+
   const handleUploadGeneratedImage = async () => {
     if (!generatedImageUrl) return;
 
     try {
       setIsUploadingGenerated(true);
       
-      // Fetch the image from the URL via proxy to avoid CORS issues
-      const response = await fetch(`/api/proxy-image?url=${encodeURIComponent(generatedImageUrl)}`);
-      const blob = await response.blob();
+      const blob = await getImageBlob(generatedImageUrl);
       const file = new File([blob], `generated_${Date.now()}.png`, { type: "image/png" });
 
       const formData = new FormData();
@@ -497,8 +521,7 @@ const BlogsDashboard = () => {
       setIsSubmitting(true);
       try {
         console.log("[Auto-Uploader] Auto-uploading external image to GridFS before saving...");
-        const response = await fetch(`/api/proxy-image?url=${encodeURIComponent(imageToUpload)}`);
-        const blob = await response.blob();
+        const blob = await getImageBlob(imageToUpload);
         const file = new File([blob], `generated_${Date.now()}.png`, { type: "image/png" });
 
         const formData = new FormData();
@@ -766,6 +789,30 @@ const BlogsDashboard = () => {
                   <FontAwesomeIcon icon={faMagic} className="mr-2" />
                   AI Article Writer
                 </h3>
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                  <div className="space-y-1.5">
+                    <label className="block text-[10px] font-black text-gray-500 uppercase">Primary Keyword</label>
+                    <input
+                      type="text"
+                      value={aiPrimaryKeyword}
+                      onChange={(e) => setAiPrimaryKeyword(e.target.value)}
+                      placeholder="e.g., recover FNF from previous employor"
+                      className="text-black w-full px-4 py-3 border border-gray-200 rounded-xl text-xs font-semibold focus:outline-none focus:border-[#DC2626]"
+                      disabled={isGenerating}
+                    />
+                  </div>
+                  <div className="space-y-1.5">
+                    <label className="block text-[10px] font-black text-gray-500 uppercase">Secondary Keywords</label>
+                    <input
+                      type="text"
+                      value={aiSecondaryKeywords}
+                      onChange={(e) => setAiSecondaryKeywords(e.target.value)}
+                      placeholder="e.g., recover FNF from previous employor"
+                      className="text-black w-full px-4 py-3 border border-gray-200 rounded-xl text-xs font-semibold focus:outline-none focus:border-[#DC2626]"
+                      disabled={isGenerating}
+                    />
+                  </div>
+                </div>
                 <div className="space-y-1.5">
                   <label className="block text-[10px] font-black text-gray-500 uppercase">Article Context, Facts, & Case Guidance Dump</label>
                   <textarea

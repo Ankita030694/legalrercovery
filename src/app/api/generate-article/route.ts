@@ -18,12 +18,15 @@ export async function POST(req: NextRequest) {
   }
 
   try {
-    const { context } = await req.json();
+    const { context, primaryKeyword, secondaryKeywords } = await req.json();
     if (!context) {
       return NextResponse.json({ error: "Missing article generation context string." }, { status: 400 });
     }
 
-    console.log(`[AI Generator] Triggering 3500-word article generation with gpt-4o...`);
+    const targetPrimary = primaryKeyword?.trim() || "recover  FNF from previous employor";
+    const targetSecondary = secondaryKeywords?.trim() || "recover  FNF from previous employor ";
+
+    console.log(`[AI Generator] Triggering 3500-word article generation with gpt-4o for keywords: Primary [${targetPrimary}], Secondary [${targetSecondary}]...`);
 
     // Call OpenAI Chat Completion API with JSON response format
     const openAiResponse = await fetch("https://api.openai.com/v1/chat/completions", {
@@ -38,7 +41,7 @@ export async function POST(req: NextRequest) {
         messages: [
           {
             role: "system",
-            content: `Act as a professional SEO and AEO expert and legal content strategist. Create a fully human-written, SEO-optimized blog article for Legal Recovery (https://www.legalrecovery.in/) targeting [recover  FNF from previous employor] (or a different primary keyword/topic if specified in the user's context) with secondary keywords [recover  FNF from previous employor ] (or different secondary keywords if specified in the user's context). The article should be 3000+ words, structured, and ready to publish.
+            content: `Act as a professional SEO and AEO expert and legal content strategist. Create a fully human-written, SEO-optimized blog article for Legal Recovery (https://www.legalrecovery.in/) targeting [${targetPrimary}] with secondary keywords [${targetSecondary}]. The article should be 3000+ words, structured, and ready to publish.
 
 Requirements:
 - Headings Structure:
