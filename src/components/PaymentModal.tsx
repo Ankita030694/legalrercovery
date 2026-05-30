@@ -17,6 +17,7 @@ export const PaymentModal = ({ isOpen, onClose }: PaymentModalProps) => {
   const [otp, setOtp] = useState("");
   const [pendingId, setPendingId] = useState("");
   const [resendCooldown, setResendCooldown] = useState(0);
+  const [oppositionCount, setOppositionCount] = useState<number>(1);
   
   const [formTouched, setFormTouched] = useState(false);
   const [isSubmitting, setIsSubmitting] = useState(false);
@@ -44,6 +45,7 @@ export const PaymentModal = ({ isOpen, onClose }: PaymentModalProps) => {
       setFormTouched(false);
       setIsSubmitting(false);
       setSubmitError(null);
+      setOppositionCount(1);
     }
   }, [isOpen]);
 
@@ -93,7 +95,7 @@ export const PaymentModal = ({ isOpen, onClose }: PaymentModalProps) => {
       const res = await fetch("/api/users/send-otp", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ name, email, phone, state }),
+        body: JSON.stringify({ name, email, phone, state, oppositionCount }),
       });
 
       const data = await res.json().catch(() => ({}));
@@ -153,7 +155,8 @@ export const PaymentModal = ({ isOpen, onClose }: PaymentModalProps) => {
             email, 
             phone, 
             state, 
-            paymentPendingId: data.paymentPendingId 
+            paymentPendingId: data.paymentPendingId,
+            oppositionCount
           }),
         });
 
@@ -206,7 +209,7 @@ export const PaymentModal = ({ isOpen, onClose }: PaymentModalProps) => {
       const res = await fetch("/api/users/send-otp", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ name, email, phone, state }),
+        body: JSON.stringify({ name, email, phone, state, oppositionCount }),
       });
 
       const data = await res.json().catch(() => ({}));
@@ -339,6 +342,32 @@ export const PaymentModal = ({ isOpen, onClose }: PaymentModalProps) => {
                 </div>
               </div>
 
+              {/* Opposition Count Dropdown */}
+              <div className="flex flex-col text-left">
+                <label className="text-xs font-black text-[#111827] mb-1.5 flex items-center gap-1.5">
+                  <Shield className="w-3.5 h-3.5 text-[#DC2626]" /> Number of Opposing Parties <span className="text-[#DC2626]">*</span>
+                </label>
+                <div className="relative">
+                  <select
+                    required
+                    value={oppositionCount}
+                    onChange={(e) => setOppositionCount(Number(e.target.value))}
+                    className="w-full bg-[#F9FAFB] border border-[#E5E7EB] focus:ring-[#DC2626]/10 rounded-xl px-4 py-3 text-sm text-[#111827] focus:outline-none focus:ring-4 transition-all font-semibold appearance-none cursor-pointer"
+                  >
+                    <option value={1}>1 Party (₹999)</option>
+                    <option value={2}>2 Parties (₹1,998)</option>
+                    <option value={3}>3 Parties (₹2,997)</option>
+                    <option value={4}>4 Parties (₹3,996)</option>
+                    <option value={5}>5 Parties (₹4,995)</option>
+                  </select>
+                  <div className="absolute right-4 top-1/2 -translate-y-1/2 pointer-events-none text-gray-500">
+                    <svg className="w-4 h-4" fill="none" stroke="currentColor" strokeWidth="2.5" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" d="M19 9l-7 7-7-7" />
+                    </svg>
+                  </div>
+                </div>
+              </div>
+
               <div className="mt-2">
                 <button
                   type="submit"
@@ -353,7 +382,7 @@ export const PaymentModal = ({ isOpen, onClose }: PaymentModalProps) => {
                   ) : (
                     <>
                       <Shield className="w-4 h-4" />
-                      Verify Email & Pay ₹999
+                      Verify Email & Pay ₹{oppositionCount * 999}
                     </>
                   )}
                 </button>
@@ -403,7 +432,7 @@ export const PaymentModal = ({ isOpen, onClose }: PaymentModalProps) => {
                   ) : (
                     <>
                       <CheckCircle className="w-4 h-4" />
-                      Verify OTP & Pay ₹999
+                      Verify OTP & Pay ₹{oppositionCount * 999}
                     </>
                   )}
                 </button>

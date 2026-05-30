@@ -1,4 +1,7 @@
+"use client";
+
 import React from "react";
+import { usePathname } from "next/navigation";
 
 const serviceLinks = [
   { label: "Salary Delay Recovery", href: "/services/recovery-of-salary-and-employment-dues" },
@@ -26,6 +29,12 @@ const legalLinks = [
 ];
 
 export default function Footer() {
+  const pathname = usePathname();
+
+  if (pathname?.startsWith("/user")) {
+    return null;
+  }
+
   return (
     <footer className="bg-[#152331] text-[#9CA3AF] border-t border-gray-800/60 pt-12 pb-8 md:pt-24 md:pb-12 px-4 sm:px-6 md:px-16 relative overflow-hidden select-none">
       {/* Background Glows */}

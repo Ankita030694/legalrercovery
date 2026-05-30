@@ -31,18 +31,22 @@ export async function POST(req: NextRequest) {
       return NextResponse.json({ error: "Invalid registration session ID" }, { status: 400 });
     }
 
-    // Update pending record with the generated transaction ID
-    const updateResult = await db.collection("pending_payment").updateOne(
-      { _id: objectId },
-      { $set: { txnid, updatedAt: new Date() } }
-    );
-
-    if (updateResult.matchedCount === 0) {
+    // Retrieve the secure pending_payment record from the database to calculate amount securely on the server-side
+    const pendingPaymentRecord = await db.collection("pending_payment").findOne({ _id: objectId });
+    if (!pendingPaymentRecord) {
       return NextResponse.json({ error: "Matching registration session not found" }, { status: 404 });
     }
 
-    // Standardize and sanitize values strictly to avoid spaces/special characters hash discrepancies
-    const amount = "999.00"; 
+    // Securely calculate the amount on server side to prevent any manipulation
+    const oppositionCount = pendingPaymentRecord.oppositionCount || 1;
+    const totalAmount = oppositionCount * 999;
+    const amount = `${totalAmount}.00`;
+
+    // Update pending record with the generated transaction ID
+    await db.collection("pending_payment").updateOne(
+      { _id: objectId },
+      { $set: { txnid, updatedAt: new Date() } }
+    );
     const productinfo = "Paid With ButtonId 111293057";
     const firstname = name.trim().replace(/[^a-zA-Z0-9\s]/g, ""); // Alpha-numeric + spaces only
     const sanitizedEmail = email.trim().toLowerCase();

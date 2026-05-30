@@ -4,7 +4,7 @@ import { sendOtpEmail } from "@/lib/email";
 
 export async function POST(req: NextRequest) {
   try {
-    const { name, email, phone, state } = await req.json();
+    const { name, email, phone, state, oppositionCount } = await req.json();
 
     if (!name || !email || !phone || !state) {
       return NextResponse.json({ error: "All fields are required" }, { status: 400 });
@@ -34,6 +34,7 @@ export async function POST(req: NextRequest) {
       phone,
       state,
       otp,
+      oppositionCount: oppositionCount ? Number(oppositionCount) : 1,
       verified: false,
       createdAt: new Date(),
     };
@@ -54,7 +55,7 @@ export async function POST(req: NextRequest) {
     const pendingId = record._id.toString();
 
     // Send the OTP via Zoho Mail
-    const emailSent = await sendOtpEmail(email, otp, name);
+    const emailSent = await sendOtpEmail(email, otp, name, oppositionCount ? Number(oppositionCount) : 1);
 
     if (!emailSent) {
       return NextResponse.json(

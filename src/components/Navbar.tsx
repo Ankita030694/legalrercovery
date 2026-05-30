@@ -3,6 +3,7 @@
 import React, { useState } from "react";
 import { Menu, X } from "lucide-react";
 import { usePathname } from "next/navigation";
+import { PaymentModal } from "@/components/PaymentModal";
 
 const navLinks = [
   { label: "Home",         href: "/" },
@@ -13,18 +14,16 @@ const navLinks = [
   { label: "Contact",      href: "/contact" },
 ];
 
-const recoveryItems = [
-  "💼 Salary Delay Recovery",
-  "🤝 Unpaid Freelancer Dues",
-  "🏢 Rental Security Deposit",
-  "🛍️ Defective Consumer Grievance",
-  "⚖️ Other Legal Claim",
-];
+
 
 export default function Navbar() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
-  const [dropdownOpen, setDropdownOpen] = useState(false);
+  const [isPaymentModalOpen, setIsPaymentModalOpen] = useState(false);
   const pathname = usePathname();
+
+  if (pathname?.startsWith("/user")) {
+    return null;
+  }
 
   return (
     <>
@@ -55,39 +54,19 @@ export default function Navbar() {
         </nav>
 
         {/* ── Desktop Right Buttons ── */}
-        <div className="hidden xl:flex items-center gap-6 relative">
-       
-          <div className="relative">
-            <button
-              onClick={() => setDropdownOpen(!dropdownOpen)}
-              className="flex items-center gap-2 px-5 py-2.5 text-[13.5px] font-bold text-white bg-[#DC2626] hover:bg-[#B91C1C] rounded-[10px] shadow-[0_4px_12px_rgba(220,38,38,0.15)] transition-all duration-200 hover:-translate-y-0.5 focus:outline-none select-none cursor-pointer"
-            >
-              <svg
-                className={`w-3.5 h-3.5 transition-transform duration-300 ${dropdownOpen ? "rotate-180" : ""}`}
-                viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round"
-              >
-                <polyline points="6 9 12 15 18 9" />
-              </svg>
-              Recover My Money
-            </button>
-
-            {dropdownOpen && (
-              <div className="absolute right-0 mt-2 w-56 bg-white/90 backdrop-blur-md rounded-xl shadow-[0_10px_40px_rgba(0,0,0,0.08)] border border-[#E5E7EB]/80 overflow-hidden z-50">
-                <div className="py-1">
-                  {recoveryItems.map((item) => (
-                    <a
-                      key={item}
-                      href="/contact"
-                      onClick={() => setDropdownOpen(false)}
-                      className="block px-4 py-2.5 text-xs font-semibold text-[#4B5563] hover:text-[#DC2626] hover:bg-[#F8F9FB] transition-colors"
-                    >
-                      {item}
-                    </a>
-                  ))}
-                </div>
-              </div>
-            )}
-          </div>
+        <div className="hidden xl:flex items-center gap-4 relative">
+          <a
+            href="/login"
+            className="px-5 py-2.5 text-[13.5px] font-bold text-[#4B5563] hover:text-[#DC2626] border border-[#E5E7EB] hover:border-[#DC2626]/30 rounded-[10px] transition-all duration-200 select-none text-center"
+          >
+            Login
+          </a>
+          <button
+            onClick={() => setIsPaymentModalOpen(true)}
+            className="px-5 py-2.5 text-[13.5px] font-bold text-white bg-[#DC2626] hover:bg-[#B91C1C] rounded-[10px] shadow-[0_4px_12px_rgba(220,38,38,0.15)] transition-all duration-200 hover:-translate-y-0.5 focus:outline-none select-none cursor-pointer"
+          >
+            Recover My Money
+          </button>
         </div>
 
         {/* ── Mobile Hamburger ── */}
@@ -118,12 +97,21 @@ export default function Navbar() {
             );
           })}
           <div className="mt-6 flex flex-col gap-3">
-            <a
-              href="/contact"
-              onClick={() => setMobileMenuOpen(false)}
-              className="flex items-center justify-center gap-2 py-3.5 text-sm font-bold text-white bg-[#DC2626] rounded-xl shadow-md"
+            <button
+              onClick={() => {
+                setMobileMenuOpen(false);
+                setIsPaymentModalOpen(true);
+              }}
+              className="flex items-center justify-center gap-2 py-3.5 text-sm font-bold text-white bg-[#DC2626] rounded-xl shadow-md cursor-pointer focus:outline-none"
             >
               Recover My Money
+            </button>
+            <a
+              href="/login"
+              onClick={() => setMobileMenuOpen(false)}
+              className="flex items-center justify-center gap-2 py-3.5 text-sm font-bold text-[#4B5563] border border-[#E5E7EB] rounded-xl text-center"
+            >
+              Login
             </a>
             <a
               href="/contact"
@@ -135,6 +123,7 @@ export default function Navbar() {
           </div>
         </div>
       )}
+      <PaymentModal isOpen={isPaymentModalOpen} onClose={() => setIsPaymentModalOpen(false)} />
     </>
   );
 }

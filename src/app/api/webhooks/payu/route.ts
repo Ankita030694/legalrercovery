@@ -66,8 +66,13 @@ export async function POST(req: NextRequest) {
         let pendingUser = null;
         let objectId: ObjectId | null = null;
         
-        // 1. Prioritize querying 'pending_payment' using udf1
-        if (udf1 && ObjectId.isValid(udf1 as string)) {
+        // 1. Prioritize querying 'pending_payment' using unique transaction ID
+        if (txnid) {
+          pendingUser = await db.collection("pending_payment").findOne({ txnid });
+        }
+
+        // 2. Fallback to udf1
+        if (!pendingUser && udf1 && ObjectId.isValid(udf1 as string)) {
           objectId = new ObjectId(udf1 as string);
           pendingUser = await db.collection("pending_payment").findOne({ _id: objectId });
         }
@@ -81,9 +86,11 @@ export async function POST(req: NextRequest) {
           }
         }
 
-        // 2. If the user is found in pending_payment, migrate them to the primary users collection
+        // 3. If the user is found in pending_payment, migrate them to the primary users collection
         if (pendingUser) {
           const userPendingId = pendingUser._id;
+          const oppCount = pendingUser.oppositionCount || 1;
+          const amtPaid = oppCount * 999;
           
           await db.collection("users").updateOne(
             { phone: pendingUser.phone },
@@ -93,6 +100,8 @@ export async function POST(req: NextRequest) {
                 email: pendingUser.email,
                 phone: pendingUser.phone,
                 state: pendingUser.state,
+                oppositionCount: oppCount,
+                amountPaid: amtPaid,
                 isPaid: true,
                 payuTxnId: txnid,
                 paymentDate: new Date(),

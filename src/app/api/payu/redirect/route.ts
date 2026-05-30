@@ -48,47 +48,58 @@ export async function POST(req: NextRequest) {
     } else if (status === "success" && isVerified) {
         targetPath = "/payment-success";
         
-        // Retrieve the pending payment checkout ID from PayU post body (udf1) or fallback to cookies
-        const pendingUserId = udf1 || req.cookies.get("pending_checkout_id")?.value;
-        if (pendingUserId) {
-          try {
-            const { db } = await getDbAndBucket("fs");
-            const objectId = new ObjectId(pendingUserId);
-            
-            // Retrieve the verified record from pending_payment
-            const pendingPaymentUser = await db.collection("pending_payment").findOne({ _id: objectId });
-            
-            if (pendingPaymentUser) {
-              // Upsert details into the main users collection
-              await db.collection("users").updateOne(
-                { phone: pendingPaymentUser.phone },
-                {
-                  $set: {
-                    name: pendingPaymentUser.name,
-                    email: pendingPaymentUser.email,
-                    phone: pendingPaymentUser.phone,
-                    state: pendingPaymentUser.state,
-                    isPaid: true,
-                    payuTxnId: txnid,
-                    paymentDate: new Date(),
-                    updatedAt: new Date()
-                  },
-                  $setOnInsert: {
-                    createdAt: new Date()
-                  }
-                },
-                { upsert: true }
-              );
-              
-              // Remove the record from pending_payment collection
-              await db.collection("pending_payment").deleteOne({ _id: objectId });
-              console.log("Successfully verified payment, migrated user from 'pending_payment' to 'users', and cleaned up pending_payment. ID:", pendingUserId);
-            } else {
-              console.warn("No matching record in pending_payment for ID:", pendingUserId);
-            }
-          } catch (e) {
-            console.error("Failed to migrate user on successful payment in redirect route:", e);
+        try {
+          const { db } = await getDbAndBucket("fs");
+          let pendingPaymentUser = null;
+          
+          // 1. Prioritize querying using the unique transaction ID (guarantees domain/cookie independence)
+          if (txnid) {
+            pendingPaymentUser = await db.collection("pending_payment").findOne({ txnid });
           }
+          
+          // 2. Fallback to udf1 / cookie ID
+          if (!pendingPaymentUser) {
+            const pendingUserId = udf1 || req.cookies.get("pending_checkout_id")?.value;
+            if (pendingUserId && ObjectId.isValid(pendingUserId)) {
+              pendingPaymentUser = await db.collection("pending_payment").findOne({ _id: new ObjectId(pendingUserId) });
+            }
+          }
+          
+          if (pendingPaymentUser) {
+            const oppCount = pendingPaymentUser.oppositionCount || 1;
+            const amtPaid = oppCount * 999;
+
+            // Upsert details into the main users collection
+            await db.collection("users").updateOne(
+              { phone: pendingPaymentUser.phone },
+              {
+                $set: {
+                  name: pendingPaymentUser.name,
+                  email: pendingPaymentUser.email,
+                  phone: pendingPaymentUser.phone,
+                  state: pendingPaymentUser.state,
+                  oppositionCount: oppCount,
+                  amountPaid: amtPaid,
+                  isPaid: true,
+                  payuTxnId: txnid,
+                  paymentDate: new Date(),
+                  updatedAt: new Date()
+                },
+                $setOnInsert: {
+                  createdAt: new Date()
+                }
+              },
+              { upsert: true }
+            );
+            
+            // Remove the record from pending_payment collection using its database _id
+            await db.collection("pending_payment").deleteOne({ _id: pendingPaymentUser._id });
+            console.log("Successfully verified payment, migrated user from 'pending_payment' to 'users', and cleaned up pending_payment. ID:", pendingPaymentUser._id.toString());
+          } else {
+            console.warn("No matching record in pending_payment for txnid:", txnid);
+          }
+        } catch (e) {
+          console.error("Failed to migrate user on successful payment in redirect route:", e);
         }
     }
 

@@ -36,6 +36,7 @@ export async function POST(req: NextRequest) {
       email: record.email,
       phone: record.phone,
       state: record.state,
+      oppositionCount: record.oppositionCount || 1,
       verified: true,
       verifiedAt: new Date(),
       createdAt: new Date(),
