@@ -147,9 +147,6 @@ export default async function BlogDetailPage(
     ? (blog.image.startsWith("http") ? blog.image : `${SITE_URL}${blog.image}`)
     : `${SITE_URL}/blog_money_recovery.png`;
 
-  const ratingSum = reviews.reduce((sum, r) => sum + r.rating, 0);
-  const avgRating = reviews.length > 0 ? Number((ratingSum / reviews.length).toFixed(1)) : 5;
-
   const articleSchema = {
     "@context": "https://schema.org",
     "@type": "BlogPosting",
@@ -175,27 +172,6 @@ export default async function BlogDetailPage(
         "url": `${SITE_URL}/lrlogo.svg`,
       },
     },
-    ...(reviews.length > 0 ? {
-      "review": reviews.map((r) => ({
-        "@type": "Review",
-        "reviewRating": {
-          "@type": "Rating",
-          "ratingValue": r.rating,
-          "bestRating": "5",
-        },
-        "author": {
-          "@type": "Person",
-          "name": r.name,
-        },
-        "reviewBody": r.review,
-      })),
-      "aggregateRating": {
-        "@type": "AggregateRating",
-        "ratingValue": avgRating,
-        "reviewCount": reviews.length,
-        "bestRating": "5",
-      }
-    } : {})
   };
 
   const faqSchema = faqs.length > 0 ? {
@@ -211,6 +187,45 @@ export default async function BlogDetailPage(
     })),
   } : null;
 
+  // Reviews must live on a Google-supported type (LegalService / LocalBusiness),
+  // NOT on BlogPosting, otherwise the validator rejects them.
+  const ratingSum = reviews.reduce((sum, r) => sum + r.rating, 0);
+  const avgRating = reviews.length > 0 ? Number((ratingSum / reviews.length).toFixed(1)) : 5;
+
+  const reviewSchema = reviews.length > 0 ? {
+    "@context": "https://schema.org",
+    "@type": "LegalService",
+    "name": "LegalRecovery",
+    "image": `${SITE_URL}/lrlogo.svg`,
+    "url": SITE_URL,
+    "telephone": "+91-8700343611",
+    "address": {
+      "@type": "PostalAddress",
+      "addressCountry": "IN",
+    },
+    "aggregateRating": {
+      "@type": "AggregateRating",
+      "ratingValue": avgRating,
+      "reviewCount": reviews.length,
+      "bestRating": "5",
+      "worstRating": "1",
+    },
+    "review": reviews.map((r) => ({
+      "@type": "Review",
+      "reviewRating": {
+        "@type": "Rating",
+        "ratingValue": r.rating,
+        "bestRating": "5",
+        "worstRating": "1",
+      },
+      "author": {
+        "@type": "Person",
+        "name": r.name,
+      },
+      "reviewBody": r.review,
+    })),
+  } : null;
+
   return (
     <>
       <script
@@ -223,6 +238,12 @@ export default async function BlogDetailPage(
           dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
         />
       )}
+      {reviewSchema && (
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(reviewSchema) }}
+        />
+      )}
       <BlogDetailClient
         blog={blog}
         faqs={faqs}
@@ -232,3 +253,4 @@ export default async function BlogDetailPage(
     </>
   );
 }
+
