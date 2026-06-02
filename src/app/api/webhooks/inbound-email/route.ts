@@ -28,8 +28,36 @@ function cleanEmailBody(body: string): string {
 
 export async function POST(req: NextRequest) {
   try {
-    const payload = await req.json();
-    console.log("[Inbound Email Webhook] Received payload:", JSON.stringify(payload));
+    const contentType = req.headers.get("content-type") || "";
+    let payload: any;
+
+    if (contentType.includes("application/x-www-form-urlencoded")) {
+      const text = await req.text();
+      const params = new URLSearchParams(text);
+      payload = {};
+      params.forEach((value, key) => {
+        payload[key] = value;
+      });
+      console.log("[Inbound Email Webhook] Parsed form-urlencoded payload:", JSON.stringify(payload));
+    } else {
+      try {
+        payload = await req.json();
+        console.log("[Inbound Email Webhook] Parsed JSON payload:", JSON.stringify(payload));
+      } catch (jsonErr) {
+        // Fallback: in case content-type header was missing/incorrect but data is form-urlencoded
+        const text = await req.text();
+        if (text.includes("=")) {
+          const params = new URLSearchParams(text);
+          payload = {};
+          params.forEach((value, key) => {
+            payload[key] = value;
+          });
+          console.log("[Inbound Email Webhook] Parsed fallback form-urlencoded payload:", JSON.stringify(payload));
+        } else {
+          throw jsonErr;
+        }
+      }
+    }
 
     const { from, subject, body, timestamp, messageId } = payload;
 
