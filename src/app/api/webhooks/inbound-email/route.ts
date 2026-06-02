@@ -44,8 +44,8 @@ export async function POST(req: NextRequest) {
 
     let matchedCase = null;
 
-    // Step 1: Match via unique Case Reference Number in subject (E.g. Ref: LR-0001-1626-N1)
-    const refMatch = subject.match(/LR-\d{4}-\d{6}/i);
+    // Step 1: Match via unique Case Reference Number in subject (E.g. Ref: LR-T001-020626 or Ref: LR-0001-1626)
+    const refMatch = subject.match(/LR-[A-Z0-9]{4}-\d{4,6}/i);
     if (refMatch) {
       const extractedCaseId = refMatch[0].toUpperCase();
       console.log(`[Inbound Email Webhook] Extracted Case ID: ${extractedCaseId} from subject: "${subject}"`);
