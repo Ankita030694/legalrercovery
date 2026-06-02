@@ -17,8 +17,22 @@ export async function GET(req: NextRequest) {
   }
 
   try {
-    const userId = new ObjectId((session.user as any).id);
     const { db } = await getDbAndBucket("fs");
+
+    // Check if client is requesting the next generated Case ID placeholder
+    const nextIdParam = req.nextUrl.searchParams.get("nextId");
+    if (nextIdParam === "true") {
+      const count = await db.collection("cases").countDocuments();
+      const nextNum = String(count + 1).padStart(4, '0');
+      const today = new Date();
+      const day = today.getDate();
+      const month = today.getMonth() + 1;
+      const yearSuffix = today.getFullYear().toString().slice(-2);
+      const caseId = `LR-${nextNum}-${day}${month}${yearSuffix}`;
+      return NextResponse.json({ success: true, caseId });
+    }
+
+    const userId = new ObjectId((session.user as any).id);
 
     // Retrieve cases securely filtered by userId
     const cases = await db

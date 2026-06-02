@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { useRouter } from "next/navigation";
 import { 
   ArrowLeft, 
@@ -37,211 +37,77 @@ export default function NewRecoveryForm() {
   const [policeStationEmail, setPoliceStationEmail] = useState("");
   const [policeStationAddress, setPoliceStationAddress] = useState("");
   const [isSubmitting, setIsSubmitting] = useState(false);
-  const [isGeneratingPDF, setIsGeneratingPDF] = useState(false);
-  const [isGeneratingPDF2, setIsGeneratingPDF2] = useState(false);
-  const [isGeneratingPDF3, setIsGeneratingPDF3] = useState(false);
-  const [isGeneratingPolice, setIsGeneratingPolice] = useState(false);
   const [showPreviewModal, setShowPreviewModal] = useState(false);
   const [isValidating, setIsValidating] = useState(false);
   const [validationError, setValidationError] = useState<string | null>(null);
+  const [emailError, setEmailError] = useState(false);
+  const [generatedCaseId, setGeneratedCaseId] = useState("LR-0000-000000");
 
-  const handleGeneratePDF = async () => {
-    if (!defaulterName || !phone || !stuckAmount) {
-      alert("Please fill in Defaulter Legal Name, Mobile Number, and Stuck Dues Amount first.");
+  useEffect(() => {
+    const fetchNextCaseId = async () => {
+      try {
+        const res = await fetch("/api/cases?nextId=true");
+        if (res.ok) {
+          const data = await res.json();
+          if (data.success && data.caseId) {
+            setGeneratedCaseId(data.caseId);
+          }
+        }
+      } catch (err) {
+        console.error("Failed to fetch next case ID:", err);
+      }
+    };
+    fetchNextCaseId();
+  }, []);
+
+  // ── ON CHANGE VALIDATION AND FORMATTING HANDLERS ──
+  const handleNameChange = (val: string) => {
+    // Only alphabets and whitespaces allowed, no numerics or special characters
+    const cleaned = val.replace(/[^A-Za-z\s]/g, "");
+    setDefaulterName(cleaned);
+  };
+
+  const handlePhoneChange = (val: string) => {
+    // Only numerics allowed, strictly limited to 10 digits
+    const cleaned = val.replace(/\D/g, "").slice(0, 10);
+    setPhone(cleaned);
+  };
+
+  const handleEmailChange = (val: string) => {
+    setEmail(val);
+    if (!val) {
+      setEmailError(false);
       return;
     }
-    setIsGeneratingPDF(true);
-    try {
-      const response = await fetch("/api/recovery-notice-week1-pdf", {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify({
-          clientName: defaulterName,
-          clientPhone: phone,
-          clientAddress: address || "Address on file",
-          clientEmail: email || "",
-          startDate: dueDate || new Date().toISOString(),
-          amountPending: stuckAmount,
-          noticeDate: new Date().toISOString(),
-        }),
-      });
+    // Standard robust email validation regex
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    setEmailError(!emailRegex.test(val));
+  };
 
-      if (!response.ok) {
-        let errMsg = "Failed to generate PDF";
-        try {
-          const errData = await response.json();
-          errMsg = errData.error || errMsg;
-        } catch (_) {}
-        throw new Error(errMsg);
-      }
+  const handleStuckAmountChange = (val: string) => {
+    // Strip all non-numeric characters first
+    const clean = val.replace(/\D/g, "");
+    if (!clean) {
+      setStuckAmount("");
+      return;
+    }
+    const num = parseInt(clean, 10);
+    // Format with Indian standard numbering system (Intl en-IN)
+    const formatted = new Intl.NumberFormat("en-IN").format(num);
+    setStuckAmount(formatted);
+  };
 
-      const blob = await response.blob();
-      const url = window.URL.createObjectURL(blob);
-      const a = document.createElement("a");
-      a.href = url;
-      a.download = `${defaulterName.replace(/[^a-z0-9]/gi, "_")}_week1_recovery_notice.pdf`;
-      document.body.appendChild(a);
-      a.click();
-      window.URL.revokeObjectURL(url);
-      a.remove();
-    } catch (err: any) {
-      console.error(err);
-      alert(`PDF Generation Error: ${err.message}`);
-    } finally {
-      setIsGeneratingPDF(false);
+  const handleDueDateChange = (val: string) => {
+    const today = new Date().toISOString().split("T")[0];
+    if (val > today) {
+      alert("Original payment due date cannot be a future date.");
+      setDueDate(today);
+    } else {
+      setDueDate(val);
     }
   };
 
-  const handleGeneratePDF2 = async () => {
-    if (!defaulterName || !phone || !stuckAmount) {
-      alert("Please fill in Defaulter Legal Name, Mobile Number, and Stuck Dues Amount first.");
-      return;
-    }
-    setIsGeneratingPDF2(true);
-    try {
-      const response = await fetch("/api/recovery-notice-week2-pdf", {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify({
-          clientName: defaulterName,
-          clientPhone: phone,
-          clientAddress: address || "Address on file",
-          clientEmail: email || "",
-          startDate: dueDate || new Date().toISOString(),
-          amountPending: stuckAmount,
-          noticeDate: new Date().toISOString(),
-        }),
-      });
 
-      if (!response.ok) {
-        let errMsg = "Failed to generate PDF";
-        try {
-          const errData = await response.json();
-          errMsg = errData.error || errMsg;
-        } catch (_) {}
-        throw new Error(errMsg);
-      }
-
-      const blob = await response.blob();
-      const url = window.URL.createObjectURL(blob);
-      const a = document.createElement("a");
-      a.href = url;
-      a.download = `${defaulterName.replace(/[^a-z0-9]/gi, "_")}_week2_recovery_notice.pdf`;
-      document.body.appendChild(a);
-      a.click();
-      window.URL.revokeObjectURL(url);
-      a.remove();
-    } catch (err: any) {
-      console.error(err);
-      alert(`PDF Generation Error: ${err.message}`);
-    } finally {
-      setIsGeneratingPDF2(false);
-    }
-  };
-
-  const handleGeneratePDF3 = async () => {
-    if (!defaulterName || !phone || !stuckAmount) {
-      alert("Please fill in Defaulter Legal Name, Mobile Number, and Stuck Dues Amount first.");
-      return;
-    }
-    setIsGeneratingPDF3(true);
-    try {
-      const response = await fetch("/api/recovery-notice-week3-pdf", {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify({
-          clientName: defaulterName,
-          clientPhone: phone,
-          clientAddress: address || "Address on file",
-          clientEmail: email || "",
-          startDate: dueDate || new Date().toISOString(),
-          amountPending: stuckAmount,
-          noticeDate: new Date().toISOString(),
-        }),
-      });
-
-      if (!response.ok) {
-        let errMsg = "Failed to generate PDF";
-        try {
-          const errData = await response.json();
-          errMsg = errData.error || errMsg;
-        } catch (_) {}
-        throw new Error(errMsg);
-      }
-
-      const blob = await response.blob();
-      const url = window.URL.createObjectURL(blob);
-      const a = document.createElement("a");
-      a.href = url;
-      a.download = `${defaulterName.replace(/[^a-z0-9]/gi, "_")}_week3_recovery_notice.pdf`;
-      document.body.appendChild(a);
-      a.click();
-      window.URL.revokeObjectURL(url);
-      a.remove();
-    } catch (err: any) {
-      console.error(err);
-      alert(`PDF Generation Error: ${err.message}`);
-    } finally {
-      setIsGeneratingPDF3(false);
-    }
-  };
-
-  const handleGeneratePolice = async () => {
-    if (!defaulterName || !stuckAmount || !policeStationName || !policeStationAddress) {
-      alert("Please fill in Defaulter Name, Stuck Dues, Police Station Name, and Police Station Address first.");
-      return;
-    }
-    setIsGeneratingPolice(true);
-    try {
-      const response = await fetch("/api/police-complaint-pdf", {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify({
-          clientName: defaulterName,
-          clientPhone: phone,
-          clientAddress: address || "Address on file",
-          clientEmail: email || "",
-          amountPending: stuckAmount,
-          noticeDate: new Date().toISOString(),
-          policeStationName,
-          policeStationAddress,
-          policeStationEmail: policeStationEmail || "",
-        }),
-      });
-
-      if (!response.ok) {
-        let errMsg = "Failed to generate PDF";
-        try {
-          const errData = await response.json();
-          errMsg = errData.error || errMsg;
-        } catch (_) {}
-        throw new Error(errMsg);
-      }
-
-      const blob = await response.blob();
-      const url = window.URL.createObjectURL(blob);
-      const a = document.createElement("a");
-      a.href = url;
-      a.download = `${defaulterName.replace(/[^a-z0-9]/gi, "_")}_police_complaint.pdf`;
-      document.body.appendChild(a);
-      a.click();
-      window.URL.revokeObjectURL(url);
-      a.remove();
-    } catch (err: any) {
-      console.error(err);
-      alert(`PDF Generation Error: ${err.message}`);
-    } finally {
-      setIsGeneratingPolice(false);
-    }
-  };
 
   // Live Preview selector: "notice1" | "notice2" | "notice3" | "police"
   const [previewTab, setPreviewTab] = useState<"notice1" | "notice2" | "notice3" | "police">("notice1");
@@ -250,7 +116,9 @@ export default function NewRecoveryForm() {
   const isFormValid = !!(
     defaulterName &&
     phone &&
+    phone.length === 10 &&
     email &&
+    !emailError &&
     address &&
     stuckAmount &&
     dueDate &&
@@ -275,6 +143,10 @@ export default function NewRecoveryForm() {
           body: JSON.stringify({
             defaulterName,
             address,
+            phone,
+            email,
+            stuckAmount: stuckAmount.replace(/,/g, ""),
+            dueDate,
             policeStationName,
             policeStationAddress
           }),
@@ -317,7 +189,7 @@ export default function NewRecoveryForm() {
           phone,
           email,
           address,
-          stuckAmount,
+          stuckAmount: stuckAmount.replace(/,/g, ""),
           dueDate,
           policeStationName,
           policeStationEmail,
@@ -388,7 +260,7 @@ export default function NewRecoveryForm() {
                 required
                 placeholder="e.g. Apex Digital Solutions"
                 value={defaulterName}
-                onChange={(e) => setDefaulterName(e.target.value)}
+                onChange={(e) => handleNameChange(e.target.value)}
                 className="bg-slate-50 hover:bg-slate-100/50 border border-[#E5E7EB] focus:border-[#DC2626] rounded-xl px-4 py-3 text-sm font-semibold outline-none transition-colors"
               />
             </div>
@@ -422,11 +294,11 @@ export default function NewRecoveryForm() {
                   <IndianRupee className="w-3.5 h-3.5 text-slate-400" /> Stuck Dues Amount (INR)
                 </label>
                 <input 
-                  type="number" 
+                  type="text" 
                   required
-                  placeholder="e.g. 45000"
+                  placeholder="e.g. 45,000"
                   value={stuckAmount}
-                  onChange={(e) => setStuckAmount(e.target.value)}
+                  onChange={(e) => handleStuckAmountChange(e.target.value)}
                   className="bg-slate-50 hover:bg-slate-100/50 border border-[#E5E7EB] focus:border-[#DC2626] rounded-xl px-4 py-3 text-sm font-semibold outline-none transition-colors"
                 />
               </div>
@@ -437,8 +309,9 @@ export default function NewRecoveryForm() {
                 <input 
                   type="date" 
                   required
+                  max={new Date().toISOString().split("T")[0]}
                   value={dueDate}
-                  onChange={(e) => setDueDate(e.target.value)}
+                  onChange={(e) => handleDueDateChange(e.target.value)}
                   className="bg-slate-50 hover:bg-slate-100/50 border border-[#E5E7EB] focus:border-[#DC2626] rounded-xl px-4 py-3 text-sm font-semibold outline-none transition-colors"
                 />
               </div>
@@ -452,9 +325,9 @@ export default function NewRecoveryForm() {
               <input 
                 type="tel" 
                 required
-                placeholder="e.g. +91 98765 43210"
+                placeholder="e.g. 9876543210"
                 value={phone}
-                onChange={(e) => setPhone(e.target.value)}
+                onChange={(e) => handlePhoneChange(e.target.value)}
                 className="bg-slate-50 hover:bg-slate-100/50 border border-[#E5E7EB] focus:border-[#DC2626] rounded-xl px-4 py-3 text-sm font-semibold outline-none transition-colors"
               />
             </div>
@@ -469,9 +342,14 @@ export default function NewRecoveryForm() {
                 required
                 placeholder="e.g. billing@company.in"
                 value={email}
-                onChange={(e) => setEmail(e.target.value)}
+                onChange={(e) => handleEmailChange(e.target.value)}
                 className="bg-slate-50 hover:bg-slate-100/50 border border-[#E5E7EB] focus:border-[#DC2626] rounded-xl px-4 py-3 text-sm font-semibold outline-none transition-colors"
               />
+              {emailError && (
+                <span className="text-[11px] text-red-500 font-semibold mt-1">
+                  Please enter a valid email address.
+                </span>
+              )}
             </div>
 
             {/* Defaulter Physical Address */}
@@ -608,48 +486,6 @@ export default function NewRecoveryForm() {
               {previewTab === "notice3" && "🗓️ Queued for automated dispatch (Notice 2 + 1 Week)"}
               {previewTab === "police" && "👮 Queued for automatic Sho complaint draft (Notice 3 + 1 Week)"}
             </span>
-
-            {/* Generate & Download PDF Button */}
-            {previewTab === "notice1" && (
-              <button
-                type="button"
-                onClick={handleGeneratePDF}
-                disabled={isGeneratingPDF}
-                className="mt-1 w-full px-4 py-2.5 text-xs font-black text-white bg-[#DC2626] hover:bg-[#B91C1C] disabled:opacity-50 disabled:cursor-not-allowed rounded-xl transition-all flex items-center justify-center gap-1.5 cursor-pointer focus:outline-none shadow-md shadow-red-950/15"
-              >
-                {isGeneratingPDF ? "Generating PDF..." : "Generate & Download Notice 1"}
-              </button>
-            )}
-            {previewTab === "notice2" && (
-              <button
-                type="button"
-                onClick={handleGeneratePDF2}
-                disabled={isGeneratingPDF2}
-                className="mt-1 w-full px-4 py-2.5 text-xs font-black text-white bg-[#DC2626] hover:bg-[#B91C1C] disabled:opacity-50 disabled:cursor-not-allowed rounded-xl transition-all flex items-center justify-center gap-1.5 cursor-pointer focus:outline-none shadow-md shadow-red-950/15"
-              >
-                {isGeneratingPDF2 ? "Generating PDF..." : "Generate & Download Notice 2"}
-              </button>
-            )}
-            {previewTab === "notice3" && (
-              <button
-                type="button"
-                onClick={handleGeneratePDF3}
-                disabled={isGeneratingPDF3}
-                className="mt-1 w-full px-4 py-2.5 text-xs font-black text-white bg-[#DC2626] hover:bg-[#B91C1C] disabled:opacity-50 disabled:cursor-not-allowed rounded-xl transition-all flex items-center justify-center gap-1.5 cursor-pointer focus:outline-none shadow-md shadow-red-950/15"
-              >
-                {isGeneratingPDF3 ? "Generating PDF..." : "Generate & Download Notice 3"}
-              </button>
-            )}
-            {previewTab === "police" && (
-              <button
-                type="button"
-                onClick={handleGeneratePolice}
-                disabled={isGeneratingPolice}
-                className="mt-1 w-full px-4 py-2.5 text-xs font-black text-white bg-[#DC2626] hover:bg-[#B91C1C] disabled:opacity-50 disabled:cursor-not-allowed rounded-xl transition-all flex items-center justify-center gap-1.5 cursor-pointer focus:outline-none shadow-md shadow-red-950/15"
-              >
-                {isGeneratingPolice ? "Generating PDF..." : "Generate & Download Police SHO Complaint"}
-              </button>
-            )}
           </div>
 
           {/* Letterhead Mock Paper */}
@@ -687,7 +523,7 @@ export default function NewRecoveryForm() {
                 <tbody>
                   <tr className="align-middle">
                     <td className="text-left p-0 border-none">
-                      Ref: {previewTab === "notice2" ? "AMA/LRN-WEEK2" : previewTab === "notice3" ? "AMA/LRN-WEEK3" : previewTab === "police" ? "AMA/COMP-POLICE" : "AMA/LRN-WEEK1"}
+                      Ref: {previewTab === "notice2" ? `${generatedCaseId}-N2` : previewTab === "notice3" ? `${generatedCaseId}-N3` : previewTab === "police" ? `${generatedCaseId}-POLICE` : `${generatedCaseId}-N1`}
                     </td>
                     <td className="text-right p-0 border-none">Date: {new Date().toLocaleDateString("en-IN")}</td>
                   </tr>
@@ -721,7 +557,7 @@ export default function NewRecoveryForm() {
                   </div>
 
                   <div className="text-xs font-bold text-slate-900 border-b border-[#E5E7EB] pb-1 uppercase leading-tight">
-                    Subject: Demand Notice for Immediate Clearance of Outstanding Liability of ₹{stuckAmount ? parseFloat(stuckAmount).toLocaleString("en-IN") : "[Amount]"} Towards Tech AMA
+                    Subject: Demand Notice for Immediate Clearance of Outstanding Liability of ₹{stuckAmount || "[Amount]"} Towards Tech AMA
                   </div>
 
                   <p>Dear Sir/Madam,</p>
@@ -731,7 +567,7 @@ export default function NewRecoveryForm() {
                   </p>
                   
                   <p>
-                    It has been informed to us that despite repeated requests, reminders, and communications made by our client, the matter remains unresolved and an amount of <strong className="bg-yellow-50 px-0.5">₹{stuckAmount ? parseFloat(stuckAmount).toLocaleString("en-IN") : "[Amount]"}</strong> is still due/pending towards our client.
+                    It has been informed to us that despite repeated requests, reminders, and communications made by our client, the matter remains unresolved and an amount of <strong className="bg-yellow-50 px-0.5">₹{stuckAmount || "[Amount]"}</strong> is still due/pending towards our client.
                   </p>
                   
                   <p>
@@ -740,7 +576,7 @@ export default function NewRecoveryForm() {
                   
                   <div className="flex flex-col gap-1">
                     <span>You are therefore hereby requested to:</span>
-                    <span>1. Clear/pay the outstanding amount of <strong className="bg-yellow-50 px-0.5">₹{stuckAmount ? parseFloat(stuckAmount).toLocaleString("en-IN") : "[Amount]"}</strong>; and/or</span>
+                    <span>1. Clear/pay the outstanding amount of <strong className="bg-yellow-50 px-0.5">₹{stuckAmount || "[Amount]"}</strong>; and/or</span>
                     <span>2. Resolve the matter amicably within 7 (Seven) days from the receipt of this notice.</span>
                   </div>
                   
@@ -785,13 +621,13 @@ export default function NewRecoveryForm() {
                 </div>
 
                 <div className="text-xs font-bold text-center text-slate-900 border-y border-[#E5E7EB] py-1.5 uppercase leading-tight">
-                  Subject: Demand Notice for Immediate Clearance of Outstanding Liability of ₹{stuckAmount ? parseFloat(stuckAmount).toLocaleString("en-IN") : "[Amount]"} Towards Tech AMA
+                  Subject: Demand Notice for Immediate Clearance of Outstanding Liability of ₹{stuckAmount || "[Amount]"} Towards Tech AMA
                 </div>
 
                 <div className="text-[9.5px] leading-relaxed text-slate-700 flex flex-col gap-3 select-text">
                   <p>Dear Sir/Madam,</p>
                   <p>
-                    Under instructions and authority from our client <strong>Tech AMA</strong>, residing/having office at <strong>Delhi, India</strong>, we hereby issue the present Second and Final Legal Notice calling upon you to immediately clear the outstanding dues/claim amounting to <strong className="bg-yellow-50 px-0.5">₹{stuckAmount ? parseFloat(stuckAmount).toLocaleString("en-IN") : "[Amount]"}</strong> payable towards our client arising out of transactions, services, agreements, commitments, business dealings, or financial obligations undertaken by you.
+                    Under instructions and authority from our client <strong>Tech AMA</strong>, residing/having office at <strong>Delhi, India</strong>, we hereby issue the present Second and Final Legal Notice calling upon you to immediately clear the outstanding dues/claim amounting to <strong className="bg-yellow-50 px-0.5">₹{stuckAmount || "[Amount]"}</strong> payable towards our client arising out of transactions, services, agreements, commitments, business dealings, or financial obligations undertaken by you.
                   </p>
                   <p>
                     Despite repeated reminders, communications, and an earlier legal notice served upon you, you have failed to regularize the matter or provide any satisfactory response. Your conduct clearly reflects deliberate negligence, avoidance, and non-compliance towards lawful obligations owed to our client.
@@ -809,7 +645,7 @@ export default function NewRecoveryForm() {
                   </p>
                   <p>You are therefore finally called upon to:</p>
                   <div className="flex flex-col gap-1 pl-4">
-                    <span>1. Make payment of the outstanding amount of <strong className="bg-yellow-50 px-0.5">₹{stuckAmount ? parseFloat(stuckAmount).toLocaleString("en-IN") : "[Amount]"}</strong> within 7 (Seven) days from receipt of this notice; OR</span>
+                    <span>1. Make payment of the outstanding amount of <strong className="bg-yellow-50 px-0.5">₹{stuckAmount || "[Amount]"}</strong> within 7 (Seven) days from receipt of this notice; OR</span>
                     <span>2. Provide a written explanation along with documentary proof disputing the claim within the aforesaid period.</span>
                   </div>
                   <p>
@@ -845,13 +681,13 @@ export default function NewRecoveryForm() {
                 </div>
 
                 <div className="text-xs font-bold text-center text-slate-900 border-y border-[#E5E7EB] py-1.5 uppercase leading-tight">
-                  Subject: Final Pre-Litigation and Police Complaint Notice for Recovery of ₹{stuckAmount ? parseFloat(stuckAmount).toLocaleString("en-IN") : "[Amount]"} Under Applicable Provisions of Bharatiya Nyaya Sanhita (BNS)
+                  Subject: Final Pre-Litigation and Police Complaint Notice for Recovery of ₹{stuckAmount || "[Amount]"} Under Applicable Provisions of Bharatiya Nyaya Sanhita (BNS)
                 </div>
 
                 <div className="text-[9.5px] leading-relaxed text-slate-700 flex flex-col gap-3 select-text">
                   <p>Dear Sir/Madam,</p>
                   <p>
-                    Under instructions from and on behalf of my client <strong>Tech AMA</strong>, I hereby issue the present Final Legal Notice against you with respect to the outstanding amount/claim of <strong className="bg-yellow-50 px-0.5">INR {stuckAmount ? parseFloat(stuckAmount).toLocaleString("en-IN") : "[Amount]"}/-</strong> arising out of dealings, transactions, services, agreements, commitments, or obligations between you and our client.
+                    Under instructions from and on behalf of my client <strong>Tech AMA</strong>, I hereby issue the present Final Legal Notice against you with respect to the outstanding amount/claim of <strong className="bg-yellow-50 px-0.5">INR {stuckAmount || "[Amount]"}/-</strong> arising out of dealings, transactions, services, agreements, commitments, or obligations between you and our client.
                   </p>
                   <p>
                     It is pertinent to note that despite repeated reminders, follow-ups, and opportunities extended to you for amicable resolution, you have deliberately failed and neglected to clear the outstanding liability and/or honour your commitments. Your conduct has caused substantial financial loss, harassment, mental agony, and inconvenience to my client.
@@ -876,7 +712,7 @@ export default function NewRecoveryForm() {
                   </div>
                   <p>You are therefore called upon for the <strong>FINAL</strong> time to:</p>
                   <div className="flex flex-col gap-0.5 pl-3 text-slate-700 font-semibold">
-                    <span>1. Clear/pay the outstanding amount of <strong className="bg-yellow-50 px-0.5">INR {stuckAmount ? parseFloat(stuckAmount).toLocaleString("en-IN") : "[Amount]"}/-</strong>;</span>
+                    <span>1. Clear/pay the outstanding amount of <strong className="bg-yellow-50 px-0.5">INR {stuckAmount || "[Amount]"}/-</strong>;</span>
                     <span>2. Provide written confirmation of settlement; and</span>
                     <span>3. Resolve the matter within <strong>72 HOURS</strong> from receipt of this notice.</span>
                   </div>
@@ -945,7 +781,7 @@ export default function NewRecoveryForm() {
                   </p>
 
                   <p>
-                    That the accused had entered into a transaction/understanding with our client, pursuant to which an amount of <strong className="bg-yellow-50 px-1">INR {stuckAmount ? parseFloat(stuckAmount).toLocaleString("en-IN") : "[Amount]"}/-</strong> became legally due and payable to our client.
+                    That the accused had entered into a transaction/understanding with our client, pursuant to which an amount of <strong className="bg-yellow-50 px-1">INR {stuckAmount || "[Amount]"}/-</strong> became legally due and payable to our client.
                   </p>
 
                   <p>
@@ -1038,7 +874,7 @@ export default function NewRecoveryForm() {
               <span className="font-bold text-slate-500">Physical Address:</span>
               <span className="col-span-2 text-slate-700 font-semibold">{address}</span>
               <span className="font-bold text-slate-500">Stuck Amount:</span>
-              <span className="col-span-2 text-indigo-700 font-extrabold">₹{stuckAmount ? parseFloat(stuckAmount).toLocaleString("en-IN") : ""}</span>
+              <span className="col-span-2 text-indigo-700 font-extrabold">₹{stuckAmount || ""}</span>
               <span className="font-bold text-slate-500">Due Date:</span>
               <span className="col-span-2 text-slate-700 font-semibold">{dueDate}</span>
             </div>

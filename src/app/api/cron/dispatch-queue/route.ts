@@ -42,6 +42,8 @@ Our client has made multiple attempts to settle this amicably. You are hereby re
 
 Failure to resolve this at this stage will result in progression to formal pre-litigation notices and associated legal costs.
 
+Note: If you have already made any full or partial payment towards the outstanding liability prior to the receipt of this notice or during its transit, kindly treat this demand as adjusted to the extent of such payment, and email the transaction receipt to notice@amalegalsolutions.com for immediate reconciliation.
+
 Regards,
 Legal Dispatch Desk
 AMA Legal Solutions`;
@@ -57,6 +59,8 @@ Please find the formal Legal Demand Notice 2 attached. You are required to settl
 
 Your failure to respond to this notice will be used as evidence of bad faith and wilful default in court.
 
+Note: If you have already made any full or partial payment towards the outstanding liability prior to the receipt of this notice or during its transit, kindly treat this demand as adjusted to the extent of such payment, and email the transaction receipt to notice@amalegalsolutions.com for immediate reconciliation.
+
 Regards,
 Legal Dispatch Desk
 AMA Legal Solutions`;
@@ -71,6 +75,8 @@ Your persistent evasion and refusal to clear your dues have forced our client to
 Find the attached Notice 3. If full payment is not received in our bank account within 48 hours, the drafted Criminal Complaint will be immediately submitted to the Station House Officer (SHO) of the competent Police Station and civil recovery suits will be filed at your sole risk, costs, and severe legal consequences.
 
 Consider this your absolute final chance to avoid public police intervention and criminal prosecution.
+
+Note: If you have already made any full or partial payment towards the outstanding liability prior to the receipt of this notice or during its transit, kindly treat this demand as adjusted to the extent of such payment, and email the transaction receipt to notice@amalegalsolutions.com for immediate reconciliation.
 
 Regards,
 Legal Dispatch Desk
