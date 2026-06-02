@@ -75,7 +75,7 @@ export default function UserDashboard() {
 
   const fetchCases = async () => {
     try {
-      const response = await fetch("/api/cases");
+      const response = await fetch(`/api/cases?_t=${Date.now()}`);
       if (!response.ok) {
         throw new Error("Failed to fetch cases");
       }
@@ -155,6 +155,36 @@ export default function UserDashboard() {
       setConfirmStopCaseId(null);
     }
   };
+
+  // Start notice dispatch state
+  const [isStarting, setIsStarting] = useState<Record<string, boolean>>({});
+
+  const handleStartDispatch = async (caseId: string) => {
+    setIsStarting((prev) => ({ ...prev, [caseId]: true }));
+    try {
+      const response = await fetch("/api/cases/start-dispatch", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({ id: caseId }),
+      });
+
+      if (!response.ok) {
+        const errData = await response.json();
+        throw new Error(errData.error || "Failed to start notice dispatch.");
+      }
+
+      await fetchCases();
+      window.dispatchEvent(new Event("lr_cases_updated"));
+    } catch (err: any) {
+      console.error("Error starting dispatch:", err);
+      alert(err.message || "Failed to start notice dispatch.");
+    } finally {
+      setIsStarting((prev) => ({ ...prev, [caseId]: false }));
+    }
+  };
+
 
   if (isLoading) {
     return (
@@ -281,14 +311,33 @@ export default function UserDashboard() {
                     <p className="text-lg font-black text-[#111827] leading-none mt-1">₹{c.stuckAmount.toLocaleString("en-IN")}</p>
                   </div>
 
-                  {c.status === "active" && (
-                    <button
-                      onClick={() => handleStopNotices(c.id)}
-                      className="px-4 py-2 text-xs font-black text-[#991B1B] bg-[#FEF2F2] border border-[#FCA5A5] hover:bg-[#FEE2E2] hover:border-[#F87171] rounded-xl transition-all cursor-pointer focus:outline-none"
-                    >
-                      Stop Notices
-                    </button>
-                  )}
+                  <div className="flex flex-col sm:flex-row gap-2">
+                    {c.status === "active" && c.timeline && c.timeline[0] && c.timeline[0].status === "pending" && (
+                      <button
+                        onClick={() => handleStartDispatch(c.id)}
+                        disabled={isStarting[c.id]}
+                        className="px-4 py-2 text-xs font-black text-white bg-[#DC2626] hover:bg-[#B91C1C] disabled:bg-slate-300 disabled:cursor-not-allowed rounded-xl transition-all cursor-pointer focus:outline-none flex items-center justify-center gap-1.5 shadow-sm shadow-red-900/10 hover:-translate-y-0.5 disabled:translate-y-0"
+                      >
+                        {isStarting[c.id] ? (
+                          <>
+                            <Loader2 className="w-3.5 h-3.5 animate-spin" />
+                            Starting...
+                          </>
+                        ) : (
+                          "Start Dispatching"
+                        )}
+                      </button>
+                    )}
+
+                    {c.status === "active" && (
+                      <button
+                        onClick={() => handleStopNotices(c.id)}
+                        className="px-4 py-2 text-xs font-black text-[#991B1B] bg-[#FEF2F2] border border-[#FCA5A5] hover:bg-[#FEE2E2] hover:border-[#F87171] rounded-xl transition-all cursor-pointer focus:outline-none"
+                      >
+                        Stop Notices
+                      </button>
+                    )}
+                  </div>
                 </div>
               </div>
 
@@ -302,10 +351,13 @@ export default function UserDashboard() {
                 {/* Horizontal Progress Timeline Track Row */}
                 <div className="flex items-stretch justify-between w-full relative mt-3 pb-3 overflow-x-auto gap-3 min-h-[110px] scrollbar-none">
                   {c.timeline.map((t: any, idx: number) => {
-                    const isActive = t.status === "active";
+                    const isActive = t.status === "active" || t.status === "processing";
                     const isCompleted = t.status === "completed";
                     const isScheduled = t.status === "scheduled";
                     const isCancelled = t.status === "cancelled";
+                    const isPending = t.status === "pending";
+                    const isPartiallyDelivered = t.status === "partially_delivered";
+                    const isFailed = t.status === "failed";
                     
                     return (
                       <div key={idx} className="flex-1 flex flex-col items-center relative text-center select-none min-w-[95px]">
@@ -313,7 +365,7 @@ export default function UserDashboard() {
                         {/* Horizontal connector line segment centered behind the circle */}
                         {idx < 3 && (
                           <div className={`absolute top-[14.5px] left-1/2 w-full h-[3.5px] z-0 transition-all duration-300
-                            ${isCompleted && (c.timeline[idx + 1].status === "completed" || c.timeline[idx + 1].status === "active") 
+                            ${isCompleted && (c.timeline[idx + 1].status === "completed" || c.timeline[idx + 1].status === "active" || c.timeline[idx + 1].status === "processing") 
                               ? "bg-[#10B981]" 
                               : isCompleted && c.timeline[idx + 1].status === "scheduled"
                               ? "bg-gradient-to-r from-[#10B981] to-slate-200"
@@ -326,11 +378,20 @@ export default function UserDashboard() {
                           ${isCompleted 
                             ? "bg-[#10B981] text-white shadow-sm shadow-green-200/50" 
                             : isActive
-                            ? "border-2 border-slate-400 bg-white shadow-sm shadow-slate-100"
+                            ? "border-2 border-[#DC2626] bg-white shadow-sm shadow-red-100"
+                            : isFailed
+                            ? "border-2 border-red-500 bg-red-50 text-red-650"
+                            : isPartiallyDelivered
+                            ? "border-2 border-orange-400 bg-orange-50 text-orange-650"
+                            : isPending
+                            ? "border-2 border-slate-350 bg-slate-50 text-slate-400"
                             : "border-2 border-slate-200 bg-white"}`}
                         >
                           {isCompleted && <Check className="w-4 h-4 stroke-[3]" />}
-                          {isActive && <div className="w-2.5 h-2.5 bg-slate-550 rounded-full animate-pulse" />}
+                          {isActive && <div className="w-2.5 h-2.5 bg-[#DC2626] rounded-full animate-pulse" />}
+                          {isFailed && <AlertTriangle className="w-4 h-4 text-red-500" />}
+                          {isPartiallyDelivered && <AlertTriangle className="w-4 h-4 text-orange-550" />}
+                          {isPending && <FileText className="w-4 h-4 text-slate-450" />}
                           {(isScheduled || t.status === "locked") && <div className="w-2 h-2 bg-slate-200 rounded-full" />}
                           {isCancelled && <X className="w-3.5 h-3.5 text-slate-450" />}
                         </div>
@@ -338,25 +399,59 @@ export default function UserDashboard() {
                         {/* Text labels below circle */}
                         <div className="mt-3 flex flex-col items-center text-center">
                           <span className={`text-[10px] sm:text-xs font-black tracking-tight leading-tight transition-colors duration-200
-                            ${isCompleted ? "text-[#10B981]" : isActive ? "text-slate-800" : "text-slate-400"}`}
+                            ${isCompleted 
+                              ? "text-[#10B981]" 
+                              : isActive 
+                              ? "text-[#DC2626]" 
+                              : isFailed
+                              ? "text-red-650"
+                              : isPartiallyDelivered
+                              ? "text-orange-650"
+                              : isPending
+                              ? "text-slate-500"
+                              : "text-slate-400"}`}
                           >
                             {t.label}
                           </span>
                           
                           <span className="text-[8px] sm:text-[9.5px] text-slate-400 font-bold mt-0.5 leading-none font-sans">
-                            {t.date === "Today, Grace Active" || t.date.includes("Grace") ? "Today" : t.date}
+                            {t.date === "Today, Grace Active" || t.date === "Awaiting dispatch" || t.date.includes("Grace") ? "Today" : t.date}
                           </span>
 
-                          {/* Dynamic Active details (Warning status label matching your mockup image) */}
+                          {/* Dynamic Active details */}
                           {isActive && (
                             <span className="text-[7.5px] sm:text-[8.5px] font-extrabold text-red-650 uppercase tracking-wider mt-1 animate-pulse leading-none">
                               IN PROGRESS
                             </span>
                           )}
 
-                          {t.timeRemaining && isActive && (
+                          {isPending && (
+                            <span className="text-[7.5px] sm:text-[8.5px] font-extrabold text-slate-450 uppercase tracking-wider mt-1 leading-none">
+                              QUEUED
+                            </span>
+                          )}
+
+                          {isFailed && (
+                            <span className="text-[7.5px] sm:text-[8.5px] font-extrabold text-red-600 uppercase tracking-wider mt-1 leading-none">
+                              FAILED
+                            </span>
+                          )}
+
+                          {isPartiallyDelivered && (
+                            <span className="text-[7.5px] sm:text-[8.5px] font-extrabold text-orange-550 uppercase tracking-wider mt-1 leading-none">
+                              PARTIAL
+                            </span>
+                          )}
+
+                          {t.timeRemaining && isScheduled && (
                             <span className="text-[7px] font-bold text-slate-400 leading-none mt-0.5">
                               ({t.timeRemaining.split(" ")[0]}m left)
+                            </span>
+                          )}
+
+                          {t.error && (isFailed || isPartiallyDelivered) && (
+                            <span className="text-[6.5px] text-red-500 font-semibold leading-tight mt-0.5 max-w-[85px] line-clamp-2" title={t.error}>
+                              {t.error}
                             </span>
                           )}
 

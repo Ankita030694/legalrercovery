@@ -50,9 +50,13 @@ export async function processPaymentSuccessNotifications(
     // 2. Generate caseId if not already present
     let caseId = user.caseId;
     if (!caseId) {
-      const year = new Date().getFullYear();
-      const randDigits = Math.floor(10000 + Math.random() * 90000);
-      caseId = `LR-${year}-${randDigits}`;
+      const count = await db.collection("cases").countDocuments();
+      const nextNum = String(count + 1).padStart(4, '0');
+      const d = new Date();
+      const day = d.getDate();
+      const month = d.getMonth() + 1;
+      const yearSuffix = d.getFullYear().toString().slice(-2);
+      caseId = `LR-${nextNum}-${day}${month}${yearSuffix}`;
     }
 
     // 3. Persist the caseId, amountPaid, and dispatch lock flag in the database immediately

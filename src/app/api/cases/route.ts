@@ -4,6 +4,8 @@ import { getServerSession } from "next-auth/next";
 import { authOptions } from "@/lib/auth";
 import { ObjectId } from "mongodb";
 
+export const dynamic = 'force-dynamic';
+
 /**
  * GET /api/cases - Retrieves claims registered strictly for the authenticated user.
  * Prevents cross-user data leakage by enforcing user ID matching.
@@ -115,9 +117,16 @@ export async function POST(req: NextRequest) {
       return d.toLocaleDateString("en-IN", { day: "numeric", month: "short", year: "numeric" });
     };
 
+    const count = await db.collection("cases").countDocuments();
+    const nextNum = String(count + 1).padStart(4, '0');
+    const day = today.getDate();
+    const month = today.getMonth() + 1;
+    const yearSuffix = today.getFullYear().toString().slice(-2);
+    const caseId = `LR-${nextNum}-${day}${month}${yearSuffix}`;
+
     const caseDoc = {
       userId, // Strictly link case to the authenticated client ObjectId
-      caseId: `LR-${today.getFullYear()}-${Math.floor(10000 + Math.random() * 90000)}`,
+      caseId,
       defaulterName,
       entityType,
       phone,
@@ -136,10 +145,9 @@ export async function POST(req: NextRequest) {
         { 
           step: 1, 
           label: "First Notice", 
-          description: "Sent after 1 hour grace period", 
-          date: "Today, Grace Active", 
-          status: "active", 
-          timeRemaining: "59 mins remaining" 
+          description: "Notice drafted. Ready to dispatch.", 
+          date: "Awaiting dispatch", 
+          status: "pending" 
         },
         { 
           step: 2, 

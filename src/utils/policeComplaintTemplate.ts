@@ -11,6 +11,12 @@ export interface PoliceComplaintData {
   headerLogoBase64?: string
   stampLogoBase64?: string
   signatureBase64?: string
+  // Dynamic Complainant Details
+  complainantName?: string
+  complainantPhone?: string
+  complainantEmail?: string
+  complainantAddress?: string
+  noticeRef?: string
 }
 
 export function fillPoliceComplaintTemplate(data: PoliceComplaintData): string {
@@ -27,6 +33,11 @@ export function fillPoliceComplaintTemplate(data: PoliceComplaintData): string {
     headerLogoBase64,
     stampLogoBase64,
     signatureBase64,
+    complainantName = "Tech AMA",
+    complainantPhone = "+91-8700343611",
+    complainantEmail = "notice@amalegalsolutions.com",
+    complainantAddress = "2493AP, Ground floor, Sector 57, Gurugram-122003 (Haryana)",
+    noticeRef
   } = data
 
   // Convert amount to words helper
@@ -259,7 +270,7 @@ export function fillPoliceComplaintTemplate(data: PoliceComplaintData): string {
             </table>
             <table style="width: 100%; border-collapse: collapse; border: none; font-size: 10.5pt; margin-top: 12px; margin-bottom: 5px; font-weight: bold; color: #333;">
               <tr>
-                <td style="text-align: left; border: none; padding: 2px 0;">Ref: AMA/COMP-POLICE</td>
+                <td style="text-align: left; border: none; padding: 2px 0;">Ref: ${noticeRef || "AMA/COMP-POLICE"}</td>
                 <td style="text-align: right; border: none; padding: 2px 0;">Date: ${noticeDate}</td>
               </tr>
             </table>
@@ -316,19 +327,19 @@ export function fillPoliceComplaintTemplate(data: PoliceComplaintData): string {
   <table class="details-table">
     <tr>
       <td style="width: 140px; font-weight: bold;">Name:</td>
-      <td>Tech AMA</td>
+      <td>${complainantName}</td>
     </tr>
     <tr>
       <td style="font-weight: bold;">Phone Number:</td>
-      <td>+91-8700343611</td>
+      <td>${complainantPhone}</td>
     </tr>
     <tr>
       <td style="font-weight: bold;">Email ID:</td>
-      <td>notice@amalegalsolutions.com</td>
+      <td>${complainantEmail}</td>
     </tr>
     <tr>
       <td style="font-weight: bold;">Address:</td>
-      <td>2493AP, Ground floor, Sector 57, Gurugram-122003 (Haryana)</td>
+      <td>${complainantAddress}</td>
     </tr>
   </table>
 
@@ -353,7 +364,7 @@ export function fillPoliceComplaintTemplate(data: PoliceComplaintData): string {
   <!-- Body -->
   <div class="notice-body">
 
-    <p>Under instructions from and on behalf of our client, namely <strong>Tech AMA</strong>, we, AMA Legal Solutions, through our authorized legal representatives, hereby submit the present complaint against the above-mentioned accused for acts involving deliberate non-payment of legitimate dues, cheating, dishonest inducement, criminal breach of trust, and wrongful financial loss caused to our client.</p>
+    <p>Under instructions from and on behalf of our client, namely <strong>${complainantName}</strong>, we, AMA Legal Solutions, through our authorized legal representatives, hereby submit the present complaint against the above-mentioned accused for acts involving deliberate non-payment of legitimate dues, cheating, dishonest inducement, criminal breach of trust, and wrongful financial loss caused to our client.</p>
 
     <p>That the accused had entered into a transaction/understanding with our client, pursuant to which an amount of <strong>INR ${amountPending}/- (Rupees ${pendingWords} Only)</strong> became legally due and payable to our client.</p>
 

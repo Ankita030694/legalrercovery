@@ -1,5 +1,6 @@
 // Zoho Email notifications dispatcher utility
 import nodemailer from "nodemailer";
+import { sendEmailViaZohoAPI } from "./zoho-mail";
 
 const emailUser = process.env.NOTIFY_EMAIL;
 const emailPassword = process.env.NOTIFY_EMAIL_PASSWORD;
@@ -194,4 +195,143 @@ export async function sendPaymentSuccessEmail(toEmail: string, userName: string,
     }
   }
 }
+
+export async function sendNoticeEmail(
+  toEmail: string,
+  subject: string,
+  bodyText: string,
+  pdfBuffer: Buffer,
+  pdfFilename: string,
+  ccEmail?: string
+): Promise<boolean> {
+  console.log(`[Email Dispatcher] Attempting to send Notice Email to ${toEmail} via Zoho Mail REST API...`);
+  
+  // Try sending via the new Zoho Mail REST API first
+  const restSuccess = await sendEmailViaZohoAPI(toEmail, subject, bodyText, pdfBuffer, pdfFilename, ccEmail);
+  if (restSuccess) {
+    console.log(`[Email Dispatcher] Notice Email successfully sent to ${toEmail} via REST API.`);
+    return true;
+  }
+
+  // If REST API fails, automatically fallback to Nodemailer SMTP for maximum reliability
+  console.warn(`[Email Dispatcher] Zoho Mail REST API failed. Falling back to SMTP for ${toEmail}...`);
+
+  const noticeEmailUser = process.env.NOTICE_EMAIL || process.env.NOTIFY_EMAIL;
+  const noticeEmailPassword = process.env.NOTICE_EMAIL_PASSWORD || process.env.NOTIFY_EMAIL_PASSWORD;
+
+  if (!noticeEmailUser || !noticeEmailPassword) {
+    console.error("NOTICE_EMAIL or NOTICE_EMAIL_PASSWORD env variables are missing for SMTP fallback.");
+    return false;
+  }
+
+  const noticeTransporter = nodemailer.createTransport({
+    host: "smtp.zoho.in",
+    port: 465,
+    secure: true,
+    auth: {
+      user: noticeEmailUser,
+      pass: noticeEmailPassword,
+    },
+  });
+
+  const mailOptions: any = {
+    from: `"AMA Legal Solutions - Legal Notice" <${noticeEmailUser}>`,
+    to: toEmail,
+    subject: subject,
+    text: bodyText,
+    attachments: [
+      {
+        filename: pdfFilename,
+        content: pdfBuffer,
+        contentType: "application/pdf",
+      },
+    ],
+  };
+
+  if (ccEmail) {
+    mailOptions.cc = ccEmail;
+  }
+
+  try {
+    console.log(`Sending notice email to ${toEmail} using smtp.zoho.in fallback...`);
+    const info = await noticeTransporter.sendMail(mailOptions);
+    console.log("Notice Email successfully sent via SMTP to", toEmail, "MessageId:", info.messageId);
+    return true;
+  } catch (error) {
+    console.error("Error sending notice email through Zoho smtp.zoho.in SMTP fallback:", error);
+    try {
+      console.log("Attempting fallback to smtp.zoho.com for notice email...");
+      const fallbackTransporter = nodemailer.createTransport({
+        host: "smtp.zoho.com",
+        port: 465,
+        secure: true,
+        auth: {
+          user: noticeEmailUser,
+          pass: noticeEmailPassword,
+        },
+      });
+      const info = await fallbackTransporter.sendMail(mailOptions);
+      console.log("Notice Email successfully sent via fallback SMTP to", toEmail, "MessageId:", info.messageId);
+      return true;
+    } catch (fallbackError) {
+      console.error("Error sending notice email through Zoho smtp.zoho.com SMTP fallback:", fallbackError);
+      return false;
+    }
+  }
+}
+
+export async function sendClientNotificationEmail(
+  toEmail: string,
+  subject: string,
+  bodyText: string
+): Promise<boolean> {
+  console.log(`[Email Dispatcher] Attempting to send Client Notification to ${toEmail} via Zoho Mail REST API...`);
+
+  // Try sending via the new Zoho Mail REST API first
+  const restSuccess = await sendEmailViaZohoAPI(toEmail, subject, bodyText);
+  if (restSuccess) {
+    console.log(`[Email Dispatcher] Client Notification successfully sent to ${toEmail} via REST API.`);
+    return true;
+  }
+
+  // If REST API fails, automatically fallback to Nodemailer SMTP for maximum reliability
+  console.warn(`[Email Dispatcher] Zoho Mail REST API failed. Falling back to SMTP for client notification ${toEmail}...`);
+
+  const noticeEmailUser = process.env.NOTICE_EMAIL || process.env.NOTIFY_EMAIL;
+  const noticeEmailPassword = process.env.NOTICE_EMAIL_PASSWORD || process.env.NOTIFY_EMAIL_PASSWORD;
+
+  if (!noticeEmailUser || !noticeEmailPassword) {
+    console.error("NOTICE_EMAIL or NOTICE_EMAIL_PASSWORD env variables are missing for SMTP fallback.");
+    return false;
+  }
+
+  const noticeTransporter = nodemailer.createTransport({
+    host: "smtp.zoho.in",
+    port: 465,
+    secure: true,
+    auth: {
+      user: noticeEmailUser,
+      pass: noticeEmailPassword,
+    },
+  });
+
+  const mailOptions = {
+    from: `"AMA Legal Solutions" <${noticeEmailUser}>`,
+    to: toEmail,
+    subject: subject,
+    text: bodyText,
+  };
+
+  try {
+    console.log(`Sending client notification email to ${toEmail} via SMTP fallback...`);
+    const info = await noticeTransporter.sendMail(mailOptions);
+    console.log("Client Notification Email sent via SMTP to", toEmail, "MessageId:", info.messageId);
+    return true;
+  } catch (error) {
+    console.error("Error sending client notification email via SMTP fallback:", error);
+    return false;
+  }
+}
+
+
 

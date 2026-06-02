@@ -9,6 +9,7 @@ export interface RecoveryNoticeWeek2Data {
   headerLogoBase64?: string
   stampLogoBase64?: string
   signatureBase64?: string
+  noticeRef?: string
 }
 
 export function fillWeek2NoticeTemplate(data: RecoveryNoticeWeek2Data): string {
@@ -22,6 +23,7 @@ export function fillWeek2NoticeTemplate(data: RecoveryNoticeWeek2Data): string {
     headerLogoBase64,
     stampLogoBase64,
     signatureBase64,
+    noticeRef,
   } = data
 
   // Convert amount to words helper
@@ -242,7 +244,7 @@ export function fillWeek2NoticeTemplate(data: RecoveryNoticeWeek2Data): string {
             </table>
             <table style="width: 100%; border-collapse: collapse; border: none; font-size: 10.5pt; margin-top: 12px; margin-bottom: 5px; font-weight: bold; color: #333;">
               <tr>
-                <td style="text-align: left; border: none; padding: 2px 0;">Ref: AMA/LRN-WEEK2</td>
+                <td style="text-align: left; border: none; padding: 2px 0;">Ref: ${noticeRef || "AMA/LRN-WEEK2"}</td>
                 <td style="text-align: right; border: none; padding: 2px 0;">Date: ${noticeDate}</td>
               </tr>
             </table>

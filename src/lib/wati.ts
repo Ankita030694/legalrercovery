@@ -150,3 +150,153 @@ export async function sendWatiPaymentSuccess(
   }
 }
 
+export async function sendNoticeWati(
+  phone: string,
+  accusedName: string,
+  claimAmount: number,
+  clientName: string
+): Promise<boolean> {
+  const apiKey = process.env.NOTICE_WATI_API_KEY || process.env.WATI_API_KEY;
+  const baseUrl = process.env.NOTICE_WATI_BASE_URL || process.env.WATI_API_ENDPOINT;
+  const tenantId = process.env.NOTICE_WATI_TENANT_ID;
+
+  if (!apiKey || !baseUrl) {
+    console.error("WATI Notice Error: WATI API key or Base URL is not configured in environment variables.");
+    return false;
+  }
+
+  // Format phone number to international format (Indian code 91)
+  let formattedPhone = phone.trim().replace(/\D/g, "");
+  if (formattedPhone.length === 10) {
+    formattedPhone = `91${formattedPhone}`;
+  }
+
+  let cleanBaseUrl = baseUrl.replace(/\/$/, "");
+  if (tenantId && !cleanBaseUrl.endsWith(tenantId)) {
+    cleanBaseUrl = `${cleanBaseUrl}/${tenantId}`;
+  }
+  const url = `${cleanBaseUrl}/api/v2/sendTemplateMessage?whatsappNumber=${formattedPhone}`;
+  const authHeader = apiKey.startsWith("Bearer ") ? apiKey : `Bearer ${apiKey}`;
+
+  // Build headers with Tenant-Id if configured
+  const headers: Record<string, string> = {
+    "Authorization": authHeader,
+    "Content-Type": "application/json",
+  };
+
+  if (tenantId) {
+    headers["tenantId"] = tenantId;
+    headers["Tenant-Id"] = tenantId;
+  }
+
+  // Payload aligning with legal_recovery_notice requirements
+  const payload = {
+    template_name: "legal_recovery_notice",
+    broadcast_name: "legal_recovery_notice",
+    parameters: [
+      { name: "accused_name", value: accusedName },
+      { name: "claim_amount", value: claimAmount.toString() },
+      { name: "client_name", value: clientName },
+      { name: "1", value: accusedName },
+      { name: "2", value: claimAmount.toString() },
+      { name: "3", value: clientName }
+    ],
+  };
+
+  try {
+    console.log(`WATI Dispatching Notice to ${formattedPhone} via URL: ${url}`);
+    
+    const response = await fetch(url, {
+      method: "POST",
+      headers,
+      body: JSON.stringify(payload),
+    });
+
+    const responseText = await response.text();
+    console.log(`WATI Notice Response Status: ${response.status} ${response.statusText}`);
+    console.log(`WATI Notice Response Body: ${responseText}`);
+
+    if (!response.ok) {
+      console.error(`WATI Notice API Error: Received status code ${response.status}`);
+      return false;
+    }
+
+    try {
+      const data = JSON.parse(responseText);
+      if (data.result === false || data.status === "error") {
+        console.error("WATI Notice API returned a failed result:", data);
+        return false;
+      }
+    } catch {
+      // Ignored
+    }
+
+    return true;
+  } catch (error) {
+    console.error("Error communicating with WATI API for Notice Dispatch:", error);
+    return false;
+  }
+}
+
+export async function sendWatiClientNoticeNotification(
+  phone: string,
+  clientName: string,
+  accusedName: string,
+  noticeStep: number,
+  caseId: string
+): Promise<boolean> {
+  const apiKey = process.env.WATI_API_KEY;
+  const endpoint = process.env.WATI_API_ENDPOINT;
+
+  if (!apiKey || !endpoint) {
+    console.error("WATI Error: WATI_API_KEY or WATI_API_ENDPOINT is not configured.");
+    return false;
+  }
+
+  let formattedPhone = phone.trim().replace(/\D/g, "");
+  if (formattedPhone.length === 10) {
+    formattedPhone = `91${formattedPhone}`;
+  }
+
+  const url = `${endpoint.replace(/\/$/, "")}/api/v2/sendTemplateMessage?whatsappNumber=${formattedPhone}`;
+  const authHeader = apiKey.startsWith("Bearer ") ? apiKey : `Bearer ${apiKey}`;
+
+  const payload = {
+    template_name: "client_notice_dispatched",
+    broadcast_name: "client_notice_dispatched",
+    parameters: [
+      { name: "client_name", value: clientName },
+      { name: "accused_name", value: accusedName },
+      { name: "notice_step", value: noticeStep.toString() },
+      { name: "case_id", value: caseId },
+      { name: "1", value: clientName },
+      { name: "2", value: accusedName },
+      { name: "3", value: noticeStep.toString() },
+      { name: "4", value: caseId }
+    ],
+  };
+
+  try {
+    console.log(`WATI Dispatching Client Notification to ${formattedPhone} via URL: ${url}`);
+    const response = await fetch(url, {
+      method: "POST",
+      headers: {
+        "Authorization": authHeader,
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify(payload),
+    });
+
+    const responseText = await response.text();
+    console.log(`WATI Client Notification Response Status: ${response.status} ${response.statusText}`);
+    console.log(`WATI Client Notification Response Body: ${responseText}`);
+
+    return response.ok;
+  } catch (error) {
+    console.error("Error communicating with WATI API for Client Notice Notification:", error);
+    return false;
+  }
+}
+
+
+

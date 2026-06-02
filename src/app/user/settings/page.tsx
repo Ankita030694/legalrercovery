@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { 
   User, 
   Mail, 
@@ -10,15 +10,37 @@ import {
   ShieldCheck, 
   MessageSquare,
   Globe,
-  Settings
+  Settings,
+  Loader2
 } from "lucide-react";
 
 export default function AccountSettings() {
+  // Profile state loaded dynamically from DB
+  const [profile, setProfile] = useState<{ name: string; email: string; phone: string; state: string } | null>(null);
+  const [isLoading, setIsLoading] = useState(true);
+
   // Portal Preferences
   const [whatsappEnabled, setWhatsappEnabled] = useState(true);
   const [emailCopiesEnabled, setEmailCopiesEnabled] = useState(true);
   const [autoPoliceEnabled, setAutoPoliceEnabled] = useState(false);
   const [isSaving, setIsSaving] = useState(false);
+
+  useEffect(() => {
+    async function loadProfile() {
+      try {
+        const res = await fetch("/api/users/profile");
+        const data = await res.json();
+        if (data.success && data.profile) {
+          setProfile(data.profile);
+        }
+      } catch (err) {
+        console.error("Failed to load user profile:", err);
+      } finally {
+        setIsLoading(false);
+      }
+    }
+    loadProfile();
+  }, []);
 
   const handleSavePreferences = () => {
     setIsSaving(true);
@@ -55,7 +77,7 @@ export default function AccountSettings() {
               <input 
                 type="text" 
                 readOnly 
-                value="Tech AMA" 
+                value={isLoading ? "Loading..." : (profile?.name || "Tech AMA")} 
                 className="bg-slate-50 border border-[#E5E7EB] rounded-xl px-4 py-3 text-sm font-bold text-slate-500 outline-none select-text cursor-not-allowed" 
               />
             </div>
@@ -67,7 +89,7 @@ export default function AccountSettings() {
               <input 
                 type="email" 
                 readOnly 
-                value="tech.ama123@gmail.com" 
+                value={isLoading ? "Loading..." : (profile?.email || "tech.ama123@gmail.com")} 
                 className="bg-slate-50 border border-[#E5E7EB] rounded-xl px-4 py-3 text-sm font-bold text-slate-500 outline-none select-text cursor-not-allowed" 
               />
             </div>
@@ -79,7 +101,7 @@ export default function AccountSettings() {
               <input 
                 type="text" 
                 readOnly 
-                value="+91 87003 43611" 
+                value={isLoading ? "Loading..." : (profile?.phone ? `+91 ${profile.phone}` : "+91 87003 43611")} 
                 className="bg-slate-50 border border-[#E5E7EB] rounded-xl px-4 py-3 text-sm font-bold text-slate-500 outline-none select-text cursor-not-allowed" 
               />
             </div>
@@ -91,7 +113,7 @@ export default function AccountSettings() {
               <input 
                 type="text" 
                 readOnly 
-                value="Delhi, India" 
+                value={isLoading ? "Loading..." : `${profile?.state || "Delhi"}, India`} 
                 className="bg-slate-50 border border-[#E5E7EB] rounded-xl px-4 py-3 text-sm font-bold text-slate-500 outline-none select-text cursor-not-allowed" 
               />
             </div>
