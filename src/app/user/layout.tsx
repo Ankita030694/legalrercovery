@@ -54,6 +54,10 @@ export default function UserPortalLayout({
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const [activeCount, setActiveCount] = useState(0);
 
+  // Dynamic user details
+  const [userName, setUserName] = useState("Tech AMA");
+  const [userEmail, setUserEmail] = useState("tech.ama123@gmail.com");
+
   // Sync active count from database API to display in sidebar/bottombar
   useEffect(() => {
     const updateActiveCount = async () => {
@@ -79,6 +83,48 @@ export default function UserPortalLayout({
       window.removeEventListener("lr_cases_updated", updateActiveCount);
     };
   }, [pathname]);
+
+  // Sync user profile state and listen to events
+  useEffect(() => {
+    const fetchProfile = async () => {
+      try {
+        const response = await fetch("/api/users/profile");
+        if (response.ok) {
+          const resData = await response.json();
+          if (resData.success && resData.profile) {
+            setUserName(resData.profile.name || "Tech AMA");
+            setUserEmail(resData.profile.email || "tech.ama123@gmail.com");
+          }
+        }
+      } catch (err) {
+        console.error("Failed to fetch user profile in layout:", err);
+      }
+    };
+
+    fetchProfile();
+
+    const handleProfileUpdate = (e: Event) => {
+      const customEvent = e as CustomEvent;
+      if (customEvent.detail) {
+        if (customEvent.detail.name) setUserName(customEvent.detail.name);
+        if (customEvent.detail.email) setUserEmail(customEvent.detail.email);
+      }
+    };
+
+    window.addEventListener("lr_profile_updated", handleProfileUpdate);
+    return () => {
+      window.removeEventListener("lr_profile_updated", handleProfileUpdate);
+    };
+  }, []);
+
+  const getInitials = (n: string) => {
+    return n
+      .split(" ")
+      .map((part) => part[0])
+      .join("")
+      .toUpperCase()
+      .slice(0, 2);
+  };
 
   const handleSignOut = async (e: React.MouseEvent) => {
     e.preventDefault();
@@ -162,11 +208,11 @@ export default function UserPortalLayout({
         <div className="p-4 border-t border-gray-800/40">
           <div className="flex items-center gap-3 px-3 py-2.5 mb-4 bg-white/5 border border-white/10 rounded-xl">
             <div className="w-9 h-9 bg-[#DC2626]/10 rounded-full flex items-center justify-center font-bold text-[#DC2626] text-xs">
-              TA
+              {getInitials(userName)}
             </div>
             <div className="flex flex-col text-left overflow-hidden">
-              <span className="text-[12px] font-black text-white leading-tight truncate">Tech AMA</span>
-              <span className="text-[10px] text-slate-400 font-semibold leading-none mt-0.5 truncate">tech.ama123@gmail.com</span>
+              <span className="text-[12px] font-black text-white leading-tight truncate">{userName}</span>
+              <span className="text-[10px] text-slate-400 font-semibold leading-none mt-0.5 truncate">{userEmail}</span>
             </div>
           </div>
 
@@ -234,11 +280,11 @@ export default function UserPortalLayout({
         <div className="p-4 border-t border-gray-800/40 bg-slate-900/10">
           <div className="flex items-center gap-3 px-3 py-3 mb-4 bg-white/5 border border-white/10 rounded-2xl shadow-sm">
             <div className="w-9 h-9 bg-[#DC2626]/10 rounded-full flex items-center justify-center font-extrabold text-[#DC2626] text-xs shrink-0">
-              TA
+              {getInitials(userName)}
             </div>
             <div className="flex flex-col text-left overflow-hidden">
-              <span className="text-[12.5px] font-black text-white leading-tight truncate">Tech AMA</span>
-              <span className="text-[10px] text-slate-400 font-bold leading-none mt-1 truncate">tech.ama123@gmail.com</span>
+              <span className="text-[12.5px] font-black text-white leading-tight truncate">{userName}</span>
+              <span className="text-[10px] text-slate-400 font-bold leading-none mt-1 truncate">{userEmail}</span>
             </div>
           </div>
 

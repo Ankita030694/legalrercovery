@@ -348,8 +348,8 @@ export default function UserDashboard() {
                   <span className="text-[10px] sm:text-[11px] font-black uppercase text-slate-400 tracking-wider">Automated Dispatch Progression</span>
                 </div>
 
-                {/* Horizontal Progress Timeline Track Row */}
-                <div className="flex items-stretch justify-between w-full relative mt-3 pb-3 overflow-x-auto gap-3 min-h-[110px] scrollbar-none">
+                {/* Responsive Progress Timeline Track (Vertical on mobile, Horizontal on desktop) */}
+                <div className="flex flex-col md:flex-row md:items-stretch justify-between w-full relative mt-3 pb-3 gap-6 md:gap-3 md:min-h-[110px]">
                   {c.timeline.map((t: any, idx: number) => {
                     const isActive = t.status === "active" || t.status === "processing";
                     const isCompleted = t.status === "completed";
@@ -360,11 +360,11 @@ export default function UserDashboard() {
                     const isFailed = t.status === "failed";
                     
                     return (
-                      <div key={idx} className="flex-1 flex flex-col items-center relative text-center select-none min-w-[95px]">
+                      <div key={idx} className="flex-1 flex flex-row md:flex-col items-start md:items-center relative text-left md:text-center select-none w-full min-w-full md:min-w-[95px]">
                         
-                        {/* Horizontal connector line segment centered behind the circle */}
+                        {/* Adaptive connector line segment centered behind the circle */}
                         {idx < 3 && (
-                          <div className={`absolute top-[14.5px] left-1/2 w-full h-[3.5px] z-0 transition-all duration-300
+                          <div className={`absolute top-[16px] left-[15px] md:top-[14.5px] md:left-1/2 w-[3px] md:w-full h-[calc(100%+24px)] md:h-[3.5px] z-0 transition-all duration-300
                             ${isCompleted && (c.timeline[idx + 1].status === "completed" || c.timeline[idx + 1].status === "active" || c.timeline[idx + 1].status === "processing") 
                               ? "bg-[#10B981]" 
                               : isCompleted && c.timeline[idx + 1].status === "scheduled"
@@ -396,8 +396,8 @@ export default function UserDashboard() {
                           {isCancelled && <X className="w-3.5 h-3.5 text-slate-450" />}
                         </div>
 
-                        {/* Text labels below circle */}
-                        <div className="mt-3 flex flex-col items-center text-center">
+                        {/* Text labels beside (mobile) or below (desktop) circle */}
+                        <div className="mt-0.5 md:mt-3 ml-4 md:ml-0 flex flex-col items-start md:items-center text-left md:text-center">
                           <span className={`text-[10px] sm:text-xs font-black tracking-tight leading-tight transition-colors duration-200
                             ${isCompleted 
                               ? "text-[#10B981]" 

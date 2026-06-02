@@ -42,6 +42,7 @@ export default function NewRecoveryForm() {
   const [validationError, setValidationError] = useState<string | null>(null);
   const [emailError, setEmailError] = useState(false);
   const [generatedCaseId, setGeneratedCaseId] = useState("LR-0000-000000");
+  const [mobileTab, setMobileTab] = useState<"form" | "preview">("form");
 
   useEffect(() => {
     const fetchNextCaseId = async () => {
@@ -238,11 +239,35 @@ export default function NewRecoveryForm() {
       </div>
 
       {/* Form and Preview Layout Grid */}
-      <form onSubmit={handleSubmit} className="w-full">
+      <form onSubmit={handleSubmit} className="w-full flex flex-col gap-6">
+        {/* Mobile Tab Switcher */}
+        <div className="flex lg:hidden bg-slate-100 border border-slate-200 rounded-2xl p-1 gap-1 select-none">
+          <button
+            type="button"
+            onClick={() => setMobileTab("form")}
+            className={`flex-1 py-3 text-xs font-black rounded-xl transition-all focus:outline-none cursor-pointer flex items-center justify-center gap-1.5
+              ${mobileTab === "form" 
+                ? "bg-white text-[#DC2626] shadow-[0_2px_8px_rgba(0,0,0,0.05)] border border-slate-200/30" 
+                : "text-slate-500 hover:text-slate-700"}`}
+          >
+            📋 1. Configure Claim
+          </button>
+          <button
+            type="button"
+            onClick={() => setMobileTab("preview")}
+            className={`flex-1 py-3 text-xs font-black rounded-xl transition-all focus:outline-none cursor-pointer flex items-center justify-center gap-1.5
+              ${mobileTab === "preview" 
+                ? "bg-white text-[#DC2626] shadow-[0_2px_8px_rgba(0,0,0,0.05)] border border-slate-200/30" 
+                : "text-slate-500 hover:text-slate-700"}`}
+          >
+            👁️ 2. Live Preview
+          </button>
+        </div>
+
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start animate-in fade-in duration-300">
           
           {/* LEFT COLUMN: Defaulter details details */}
-          <div className="flex flex-col gap-6 lg:col-span-5">
+          <div className={`flex flex-col gap-6 lg:col-span-5 ${mobileTab === 'form' ? 'flex' : 'hidden lg:flex'}`}>
           
           {/* SECTION 1: DEFAULTER & CLAIM DETAILS */}
           <div className="bg-white border border-[#E5E7EB]/70 rounded-3xl p-6 sm:p-8 flex flex-col gap-5 shadow-sm">
@@ -453,7 +478,7 @@ export default function NewRecoveryForm() {
         </div>
 
         {/* RIGHT COLUMN: Interactive live notice switcher & dynamic draft letter letterhead */}
-        <div className="flex flex-col gap-4 lg:sticky lg:top-6 lg:col-span-7">
+        <div className={`flex flex-col gap-4 lg:sticky lg:top-6 lg:col-span-7 ${mobileTab === 'preview' ? 'flex' : 'hidden lg:flex'}`}>
           
           {/* Tab selector */}
           <div className="flex flex-col gap-2">
