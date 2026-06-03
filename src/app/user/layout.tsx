@@ -419,11 +419,15 @@ export default function UserPortalLayout({
         - Mobile: pt-16 (for top header) + pb-16 (for bottom navigation bar)
         - Desktop (lg): pt-0, pb-0, and pl-[275px] (for left-aligned sidebar)
       */}
-      <main className="flex-1 lg:pl-[275px] pt-16 pb-16 lg:pt-0 lg:pb-0 min-h-screen flex flex-col overflow-y-auto">
-        <div className="flex-1 px-4 sm:px-6 lg:px-12 py-8 lg:py-10 max-w-7xl w-full mx-auto">
-          {children}
-        </div>
-      </main>
+      {pathname === "/user/new-recovery" ? (
+        children
+      ) : (
+        <main className="flex-1 lg:pl-[275px] pt-16 pb-16 lg:pt-0 lg:pb-0 min-h-screen flex flex-col overflow-y-auto">
+          <div className="flex-1 px-4 sm:px-6 lg:px-12 py-8 lg:py-10 max-w-7xl w-full mx-auto">
+            {children}
+          </div>
+        </main>
+      )}
 
     </div>
   );

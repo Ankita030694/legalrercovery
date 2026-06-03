@@ -3,7 +3,7 @@ import { getDbAndBucket } from "@/lib/mongodb";
 import { ObjectId } from "mongodb";
 import { generateNoticePDFBuffer } from "@/lib/pdf-generator";
 import { sendNoticeEmail } from "@/lib/email";
-import { sendNoticeWati } from "@/lib/wati";
+import { sendNoticeWati, sendPoliceComplaintWati } from "@/lib/wati";
 import { sendAndLogClientNotification, logPoliceComplaintClientNotification } from "@/lib/notifications";
 
 export const maxDuration = 300; // Vercel max timeout
@@ -128,7 +128,7 @@ AMA Legal Solutions`;
     promises.push(Promise.resolve(true));
   }
 
-  // 2. WhatsApp Channel (Steps 1-3 only)
+  // 2. WhatsApp Channel (Steps 1-3 use sendNoticeWati, Step 4 uses sendPoliceComplaintWati to Accused)
   if (step <= 3) {
     const watiSends = [
       sendNoticeWati(caseDoc.phone, caseDoc.defaulterName, caseDoc.stuckAmount, clientDisplayName)
@@ -136,6 +136,34 @@ AMA Legal Solutions`;
     if (caseDoc.phone2) {
       watiSends.push(
         sendNoticeWati(caseDoc.phone2, caseDoc.defaulterName, caseDoc.stuckAmount, clientDisplayName)
+      );
+    }
+    promises.push(
+      Promise.all(watiSends).then(results => results.every(res => res === true))
+    );
+  } else if (step === 4) {
+    const watiSends = [
+      sendPoliceComplaintWati(
+        caseDoc.phone,
+        caseDoc.defaulterName,
+        caseDoc.policeStationName,
+        caseDoc.stuckAmount,
+        caseDoc.dueDate,
+        clientDisplayName,
+        caseDoc.email
+      )
+    ];
+    if (caseDoc.phone2) {
+      watiSends.push(
+        sendPoliceComplaintWati(
+          caseDoc.phone2,
+          caseDoc.defaulterName,
+          caseDoc.policeStationName,
+          caseDoc.stuckAmount,
+          caseDoc.dueDate,
+          clientDisplayName,
+          caseDoc.email
+        )
       );
     }
     promises.push(
@@ -368,7 +396,7 @@ async function handleDispatch(req: NextRequest) {
             [`timeline.${stepIndex}.status`]: "completed",
             [`timeline.${stepIndex}.completedAt`]: now.toISOString(),
             [`timeline.${stepIndex}.date`]: formatTimelineDate(now),
-            [`timeline.${stepIndex}.description`]: "Dispatched via Zoho Email & WATI WhatsApp",
+            [`timeline.${stepIndex}.description`]: "Dispatched via Email & WhatsApp",
           };
 
           // If there is a next step, unlock and schedule it
@@ -463,6 +491,7 @@ async function handleDispatch(req: NextRequest) {
         const pdfFilename = `${cleanDefaulterName}_Police_Complaint_${formatDateString(now)}.pdf`;
 
         let emailSent = false;
+        let whatsappSent = false;
         try {
           const dispatchRes = await sendAccusedDispatch(
             caseDoc,
@@ -475,6 +504,7 @@ async function handleDispatch(req: NextRequest) {
             noticeRef
           );
           emailSent = dispatchRes.emailSent;
+          whatsappSent = dispatchRes.whatsappSent;
         } catch (dispatchErr) {
           console.error(`[Queue Processor] Step 4 Dispatch error for Case ${caseDoc.caseId}:`, dispatchErr);
         }
@@ -497,12 +527,16 @@ async function handleDispatch(req: NextRequest) {
             email: {
               status: emailSent ? "success" : "failed",
               error: emailSent ? null : `Direct SHO/Accused send failed`
+            },
+            whatsapp: {
+              status: whatsappSent ? "success" : "failed",
+              error: whatsappSent ? null : "WATI complaint broadcast failed"
             }
           }
         };
         await db.collection("dispatch_logs").insertOne(ledgerEntry);
 
-        if (emailSent) {
+        if (emailSent && whatsappSent) {
           try {
             await logPoliceComplaintClientNotification(
               db,
@@ -524,7 +558,7 @@ async function handleDispatch(req: NextRequest) {
                 "timeline.3.status": "completed",
                 "timeline.3.completedAt": now.toISOString(),
                 "timeline.3.date": formatDateString(now),
-                "timeline.3.description": `Complaint sent directly to SHO (${caseDoc.policeStationEmail || 'No Email'}) & accused (${caseDoc.email}${caseDoc.email2 ? `, ${caseDoc.email2}` : ''}) with client in CC.`
+                "timeline.3.description": `Complaint sent directly to SHO (${caseDoc.policeStationEmail || 'No Email'}) & accused (${caseDoc.email}${caseDoc.email2 ? `, ${caseDoc.email2}` : ''}) with client in CC. WhatsApp notice sent to accused.`
               }
             }
           );
@@ -538,10 +572,10 @@ async function handleDispatch(req: NextRequest) {
             { _id: caseDoc._id },
             {
               $set: {
-                "timeline.3.status": isPermanentFailure ? "failed_permanent" : "failed",
+                "timeline.3.status": isPermanentFailure ? "failed_permanent" : (whatsappSent ? "partially_delivered" : "failed"),
                 "timeline.3.retryCount": attemptCount,
                 "timeline.3.scheduledAt": isPermanentFailure ? null : retryTime.toISOString(),
-                "timeline.3.error": `SHO/Accused dispatch failed. Attempt: ${attemptCount}`,
+                "timeline.3.error": `SHO/Accused dispatch failed. Email Sent: ${emailSent}, WhatsApp Sent: ${whatsappSent}. Attempt: ${attemptCount}`,
                 updatedAt: now.toISOString()
               }
             }

@@ -173,7 +173,7 @@ AMA Legal Solutions`;
         "timeline.0.status": "completed",
         "timeline.0.completedAt": today.toISOString(),
         "timeline.0.date": formatTimelineDate(today),
-        "timeline.0.description": "Dispatched via Zoho Email & WATI WhatsApp",
+        "timeline.0.description": "Dispatched via Email & WhatsApp",
         "timeline.1.status": "scheduled",
         "timeline.1.scheduledAt": fiveMinutesLater.toISOString(),
         "timeline.1.date": formatTimelineDate(fiveMinutesLater),
@@ -238,7 +238,7 @@ AMA Legal Solutions`;
       } else {
         return NextResponse.json({
           success: false,
-          error: "Notice dispatch completely failed. Both Zoho Email and WATI WhatsApp channels rejected the request."
+          error: "Notice dispatch completely failed. Both Email and WhatsApp channels rejected the request."
         }, { status: 500 });
       }
     }

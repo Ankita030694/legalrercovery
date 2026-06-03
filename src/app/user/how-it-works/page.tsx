@@ -112,6 +112,9 @@ function StepContent({ stepNum }: { stepNum: number }) {
               <MapPin className="w-3 h-3 text-slate-400 shrink-0" /> Station Physical Address
             </span>
           </div>
+          <div className="mt-2 text-[9.5px] sm:text-[10px] text-slate-400 leading-normal border-t border-slate-200/50 pt-2 font-semibold">
+            💡 <strong>Smart Auto-Fill:</strong> Selecting the defaulter&apos;s state will automatically fill in the official State Police Headquarters (DGP) details. If you know the specific local police station (thana) details for the accused&apos;s jurisdiction, you can manually type and override these fields.
+          </div>
         </div>
       </div>
     );

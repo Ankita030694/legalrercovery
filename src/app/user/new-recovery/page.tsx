@@ -17,9 +17,12 @@ import {
   ShieldCheck,
   Building2,
   Lock,
-  Plus
+  Plus,
+  Search,
+  ChevronDown
 } from "lucide-react";
 import Link from "next/link";
+import { INDIAN_STATES, getPoliceHQByState } from "@/data/policeStationData";
 
 export default function NewRecoveryForm() {
   const router = useRouter();
@@ -34,6 +37,8 @@ export default function NewRecoveryForm() {
   const [email2, setEmail2] = useState("");
   const [showEmail2, setShowEmail2] = useState(false);
   const [address, setAddress] = useState("");
+  const [defaulterState, setDefaulterState] = useState("");
+  const [defaulterPincode, setDefaulterPincode] = useState("");
   const [stuckAmount, setStuckAmount] = useState("");
   const [dueDate, setDueDate] = useState("");
 
@@ -41,6 +46,7 @@ export default function NewRecoveryForm() {
   const [policeStationName, setPoliceStationName] = useState("");
   const [policeStationEmail, setPoliceStationEmail] = useState("");
   const [policeStationAddress, setPoliceStationAddress] = useState("");
+  const [policeAutoFilled, setPoliceAutoFilled] = useState(false);
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [showPreviewModal, setShowPreviewModal] = useState(false);
   const [isValidating, setIsValidating] = useState(false);
@@ -167,6 +173,29 @@ export default function NewRecoveryForm() {
     }
   };
 
+  const handleStateChange = (state: string) => {
+    setDefaulterState(state);
+    if (state) {
+      const hq = getPoliceHQByState(state);
+      if (hq) {
+        setPoliceStationName(hq.hqName);
+        setPoliceStationEmail(hq.emails[0] || "");
+        setPoliceStationAddress(hq.hqAddress);
+        setPoliceAutoFilled(true);
+      }
+    } else {
+      setPoliceStationName("");
+      setPoliceStationEmail("");
+      setPoliceStationAddress("");
+      setPoliceAutoFilled(false);
+    }
+  };
+
+  const handlePincodeChange = (val: string) => {
+    const cleaned = val.replace(/\D/g, "").slice(0, 6);
+    setDefaulterPincode(cleaned);
+  };
+
 
 
   // Live Preview selector: "notice1" | "notice2" | "notice3" | "police"
@@ -182,6 +211,9 @@ export default function NewRecoveryForm() {
     !emailError &&
     (!showEmail2 || (email2 && !email2Error && email2.toLowerCase().trim() !== email.toLowerCase().trim())) &&
     address &&
+    defaulterState &&
+    defaulterPincode &&
+    defaulterPincode.length === 6 &&
     stuckAmount &&
     dueDate &&
     (previewTab !== "police" || (policeStationName && policeStationEmail && policeStationAddress))
@@ -288,7 +320,9 @@ export default function NewRecoveryForm() {
   };
 
   return (
-    <div className={`relative flex flex-col gap-6 mx-auto text-left animate-in fade-in duration-355 ${previewTab === "police" ? "max-w-7xl" : "max-w-5xl"}`}>
+    <main className="flex-1 lg:pl-[275px] pt-16 pb-16 lg:pt-0 lg:pb-0 min-h-screen flex flex-col overflow-y-auto">
+      <div className="flex-1 px-4 sm:px-6 lg:px-8 py-8 w-full max-w-8xl mx-auto">
+        <div className={`relative flex flex-col gap-6 text-left animate-in fade-in duration-355`}>
       
       {/* Back button */}
       <div>
@@ -541,6 +575,49 @@ export default function NewRecoveryForm() {
               )}
             </div>
 
+            {/* Defaulter State & Pincode */}
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+              <div className="flex flex-col">
+                <label className="text-xs font-bold text-slate-600 mb-1.5 flex items-center gap-1.5">
+                  <MapPin className="w-3.5 h-3.5 text-slate-400" /> Defaulter State / UT <span className="text-red-500">*</span>
+                </label>
+                <div className="relative">
+                  <select 
+                    required
+                    value={defaulterState}
+                    onChange={(e) => handleStateChange(e.target.value)}
+                    className="appearance-none w-full bg-slate-50 hover:bg-slate-100/50 border border-[#E5E7EB] focus:border-[#DC2626] rounded-xl px-4 py-3 text-sm font-semibold outline-none transition-colors pr-10 cursor-pointer"
+                  >
+                    <option value="">Select State / UT</option>
+                    {INDIAN_STATES.map((s) => (
+                      <option key={s} value={s}>{s}</option>
+                    ))}
+                  </select>
+                  <ChevronDown className="absolute right-3 top-1/2 -translate-y-1/2 w-4 h-4 text-slate-400 pointer-events-none" />
+                </div>
+              </div>
+              <div className="flex flex-col">
+                <label className="text-xs font-bold text-slate-600 mb-1.5 flex items-center gap-1.5">
+                  <Search className="w-3.5 h-3.5 text-slate-400" /> Defaulter Area Pincode <span className="text-red-500">*</span>
+                </label>
+                <input 
+                  type="text" 
+                  required
+                  inputMode="numeric"
+                  placeholder="e.g. 201301"
+                  value={defaulterPincode}
+                  onChange={(e) => handlePincodeChange(e.target.value)}
+                  className={`bg-slate-50 hover:bg-slate-100/50 border rounded-xl px-4 py-3 text-sm font-semibold outline-none transition-colors
+                    ${defaulterPincode && defaulterPincode.length !== 6 ? "border-red-300 focus:border-red-500" : "border-[#E5E7EB] focus:border-[#DC2626]"}`}
+                />
+                {defaulterPincode && defaulterPincode.length !== 6 && (
+                  <span className="text-[11px] text-red-500 font-semibold mt-1">
+                    Pincode must be exactly 6 digits.
+                  </span>
+                )}
+              </div>
+            </div>
+
             {/* Defaulter Physical Address */}
             <div className="flex flex-col">
               <label className="text-xs font-bold text-slate-600 mb-1.5 flex items-center gap-1.5">
@@ -569,6 +646,25 @@ export default function NewRecoveryForm() {
               </span>
             </div>
 
+            {/* Auto-fill indicator */}
+            {policeAutoFilled && (
+              <div className="flex items-center gap-2 bg-emerald-50 border border-emerald-200/60 rounded-xl px-4 py-2.5 animate-in fade-in slide-in-from-top-2 duration-300">
+                <Check className="w-3.5 h-3.5 text-emerald-600 shrink-0" />
+                <span className="text-[11px] font-bold text-emerald-700">
+                  Auto-filled from <strong>{defaulterState}</strong> state police directory. You may override with local station details if known.
+                </span>
+              </div>
+            )}
+
+            {!defaulterState && (
+              <div className="flex items-center gap-2 bg-amber-50 border border-amber-200/60 rounded-xl px-4 py-2.5">
+                <Info className="w-3.5 h-3.5 text-amber-600 shrink-0" />
+                <span className="text-[11px] font-bold text-amber-700">
+                  Select the defaulter&apos;s state above to auto-fill police station details.
+                </span>
+              </div>
+            )}
+
             {/* Jurisdictional Police Station Name */}
             <div className="flex flex-col">
               <label className="text-xs font-bold text-slate-600 mb-1.5 flex items-center gap-1.5">
@@ -579,8 +675,9 @@ export default function NewRecoveryForm() {
                 required
                 placeholder="e.g. Sector 58 Police Station, Noida"
                 value={policeStationName}
-                onChange={(e) => setPoliceStationName(e.target.value)}
-                className="bg-slate-50 hover:bg-slate-100/50 border border-[#E5E7EB] focus:border-[#DC2626] rounded-xl px-4 py-3 text-sm font-semibold outline-none transition-colors"
+                onChange={(e) => { setPoliceStationName(e.target.value); setPoliceAutoFilled(false); }}
+                className={`bg-slate-50 hover:bg-slate-100/50 border rounded-xl px-4 py-3 text-sm font-semibold outline-none transition-colors
+                  ${policeAutoFilled ? "border-emerald-300 focus:border-[#DC2626]" : "border-[#E5E7EB] focus:border-[#DC2626]"}`}
               />
             </div>
 
@@ -594,8 +691,9 @@ export default function NewRecoveryForm() {
                 required
                 placeholder="e.g. sho.sec58.noida@uppolice.gov.in"
                 value={policeStationEmail}
-                onChange={(e) => setPoliceStationEmail(e.target.value)}
-                className="bg-slate-50 hover:bg-slate-100/50 border border-[#E5E7EB] focus:border-[#DC2626] rounded-xl px-4 py-3 text-sm font-semibold outline-none transition-colors"
+                onChange={(e) => { setPoliceStationEmail(e.target.value); setPoliceAutoFilled(false); }}
+                className={`bg-slate-50 hover:bg-slate-100/50 border rounded-xl px-4 py-3 text-sm font-semibold outline-none transition-colors
+                  ${policeAutoFilled ? "border-emerald-300 focus:border-[#DC2626]" : "border-[#E5E7EB] focus:border-[#DC2626]"}`}
               />
             </div>
 
@@ -609,8 +707,9 @@ export default function NewRecoveryForm() {
                 rows={2}
                 placeholder="e.g. Sector 58 Police Station House, Noida, G.B. Nagar, UP 201301"
                 value={policeStationAddress}
-                onChange={(e) => setPoliceStationAddress(e.target.value)}
-                className="bg-slate-50 hover:bg-slate-100/50 border border-[#E5E7EB] focus:border-[#DC2626] rounded-xl px-4 py-3 text-sm font-semibold outline-none resize-none transition-colors"
+                onChange={(e) => { setPoliceStationAddress(e.target.value); setPoliceAutoFilled(false); }}
+                className={`bg-slate-50 hover:bg-slate-100/50 border rounded-xl px-4 py-3 text-sm font-semibold outline-none resize-none transition-colors
+                  ${policeAutoFilled ? "border-emerald-300 focus:border-[#DC2626]" : "border-[#E5E7EB] focus:border-[#DC2626]"}`}
               />
             </div>
           </div>
@@ -1182,6 +1281,8 @@ export default function NewRecoveryForm() {
         </div>
       )}
 
-  </div>
+        </div>
+      </div>
+    </main>
   );
 }

@@ -125,7 +125,7 @@ export async function sendAndLogClientNotification(
   const emailSubject = `Notice ${step} Dispatched - Case Ref: ${noticeRef}`;
   const emailBody = `Dear ${clientDisplayName},
 
-This is to inform you that Legal Demand Notice ${step} has been successfully dispatched to the accused, ${caseDoc.defaulterName}, via Zoho Email and WATI WhatsApp.
+This is to inform you that Legal Demand Notice ${step} has been successfully dispatched to the accused, ${caseDoc.defaulterName}, via Email and WhatsApp.
 
 You can track the live status and timeline of this case directly from your Legal Recovery dashboard.
 
@@ -200,7 +200,7 @@ export async function logPoliceComplaintClientNotification(
   const emailSubject = `Formal Criminal Police Complaint - Cheating, Criminal Breach of Trust & Dishonest Non-Payment - Ref: ${noticeRef}`;
   const nowStr = new Date().toISOString();
   
-  const description = `Subject: ${emailSubject}\n\nTo: The Station House Officer, ${caseDoc.policeStationName}\n\nYour Police Complaint draft has been successfully dispatched to the SHO and the accused (${caseDoc.defaulterName}). A copy has been CC'd to your email: ${clientEmail}.`;
+  const description = `Subject: ${emailSubject}\n\nTo: The Station House Officer, ${caseDoc.policeStationName}\n\nYour Police Complaint draft has been successfully dispatched to the SHO and the accused (${caseDoc.defaulterName}) via Email. A copy has been CC'd to your email: ${clientEmail}.`;
 
   try {
     await db.collection("notifications").insertOne({
@@ -217,6 +217,24 @@ export async function logPoliceComplaintClientNotification(
     console.log(`[Notification System] Logged police complaint email notification for Case: ${caseDoc.caseId}`);
   } catch (logErr) {
     console.error("[Notification System] Error logging police complaint notification:", logErr);
+  }
+
+  try {
+    const watiDescription = `Dear ${clientDisplayName},\n\nA formal WhatsApp notification (template: police_complaint_accused) has been successfully dispatched to the accused, ${caseDoc.defaulterName}, regarding the filed police complaint.\n\nCase Ref: ${noticeRef}`;
+    await db.collection("notifications").insertOne({
+      userId: caseDoc.userId.toString(),
+      caseId: caseDoc.caseId,
+      caseName: caseDoc.defaulterName,
+      type: "whatsapp_status",
+      title: `Police Complaint Notification WhatsApp`,
+      description: watiDescription,
+      status: "success",
+      date: nowStr,
+      isRead: false
+    });
+    console.log(`[Notification System] Logged police complaint whatsapp notification for Case: ${caseDoc.caseId}`);
+  } catch (logErr) {
+    console.error("[Notification System] Error logging police complaint whatsapp notification:", logErr);
   }
 }
 

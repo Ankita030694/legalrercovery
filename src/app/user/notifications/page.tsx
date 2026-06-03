@@ -177,7 +177,7 @@ export default function NotificationsLog() {
             </div>
             <h4 className="text-sm font-black text-slate-700">No New Notifications</h4>
             <p className="text-xs text-slate-400 font-semibold mt-1">
-              Your live dispatch tracking reports, WATI WhatsApp replies, and Zoho email responses will appear in this feed.
+              Your live dispatch tracking reports, WhatsApp replies, and email responses will appear in this feed.
             </p>
           </div>
         ) : (
