@@ -3,6 +3,7 @@ import { NextRequest, NextResponse } from "next/server";
 import { getDbAndBucket } from "@/lib/mongodb";
 import { sendLoginOtpEmail } from "@/lib/email";
 import { sendWatiOtp } from "@/lib/wati";
+import crypto from "crypto";
 
 export async function POST(req: NextRequest) {
   try {
@@ -28,17 +29,32 @@ export async function POST(req: NextRequest) {
       );
     }
 
+    // Rate-limiting check: block requests if last login OTP was sent less than 60 seconds ago
+    if (user.loginOtpCreatedAt) {
+      const timeElapsed = Date.now() - new Date(user.loginOtpCreatedAt).getTime();
+      const COOLDOWN_MS = 60 * 1000; // 60 seconds cooldown
+      
+      if (timeElapsed < COOLDOWN_MS) {
+        const secondsRemaining = Math.ceil((COOLDOWN_MS - timeElapsed) / 1000);
+        return NextResponse.json(
+          { error: `Please wait ${secondsRemaining} seconds before requesting another verification code.` },
+          { status: 429 }
+        );
+      }
+    }
+
     // Generate a secure 6-digit OTP
-    const otp = Math.floor(100000 + Math.random() * 900000).toString();
+    const otp = crypto.randomInt(100000, 1000000).toString();
     const expiry = new Date(Date.now() + 10 * 60 * 1000); // 10 minutes validation window
 
-    // Save the OTP and expiry in the user's document
+    // Save the OTP, expiry, and creation timestamp in the user's document
     await db.collection("users").updateOne(
       { _id: user._id },
       {
         $set: {
           loginOtp: otp,
           loginOtpExpires: expiry,
+          loginOtpCreatedAt: new Date(),
           updatedAt: new Date()
         }
       }

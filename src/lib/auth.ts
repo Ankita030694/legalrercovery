@@ -28,8 +28,13 @@ export const authOptions: NextAuthOptions = {
             const user = await db.collection("users").findOne({ phone: inputPhone });
 
             if (user) {
+              const otpMatch = user.loginOtp && inputOtp.length === 6 && user.loginOtp.length === 6 && crypto.timingSafeEqual(
+                Buffer.from(user.loginOtp),
+                Buffer.from(inputOtp)
+              );
+
               if (
-                user.loginOtp === inputOtp &&
+                otpMatch &&
                 user.loginOtpExpires &&
                 new Date() < new Date(user.loginOtpExpires)
               ) {
@@ -68,13 +73,17 @@ export const authOptions: NextAuthOptions = {
         const envEmail = process.env.ADMIN_EMAIL ? process.env.ADMIN_EMAIL.toLowerCase().trim() : null;
         const envPassword = process.env.ADMIN_PASSWORD;
 
-        if (envEmail && envPassword && inputEmail === envEmail && inputPassword === envPassword) {
-          return {
-            id: "admin-env-root",
-            email: envEmail,
-            name: "Super Administrator",
-            role: "admin",
-          };
+        if (envEmail && envPassword && inputEmail === envEmail) {
+          const hash1 = crypto.createHash("sha256").update(inputPassword).digest("hex");
+          const hash2 = crypto.createHash("sha256").update(envPassword).digest("hex");
+          if (crypto.timingSafeEqual(Buffer.from(hash1, "hex"), Buffer.from(hash2, "hex"))) {
+            return {
+              id: "admin-env-root",
+              email: envEmail,
+              name: "Super Administrator",
+              role: "admin",
+            };
+          }
         }
 
         // 2. Fallback to verification against the MongoDB 'admins' collection
@@ -89,7 +98,12 @@ export const authOptions: NextAuthOptions = {
               .update(inputPassword)
               .digest("hex");
 
-            if (admin.passwordHash === hashedInput) {
+            const hashMatch = admin.passwordHash && hashedInput.length === 64 && admin.passwordHash.length === 64 && crypto.timingSafeEqual(
+              Buffer.from(admin.passwordHash),
+              Buffer.from(hashedInput)
+            );
+
+            if (hashMatch) {
               return {
                 id: admin._id.toString(),
                 email: admin.email,
@@ -111,7 +125,7 @@ export const authOptions: NextAuthOptions = {
     async jwt({ token, user }) {
       if (user) {
         token.id = user.id;
-        token.role = (user as any).role || "admin";
+        token.role = (user as any).role || "user";
       }
       return token;
     },
@@ -131,7 +145,7 @@ export const authOptions: NextAuthOptions = {
     strategy: "jwt",
     maxAge: 7 * 24 * 60 * 60, // 1 week (7 days) session active
   },
-  secret: process.env.NEXTAUTH_SECRET || "tumsabkimaachod_dijaygibehenkelundo",
+  secret: process.env.NEXTAUTH_SECRET,
 };
 
 import { getServerSession } from "next-auth/next";

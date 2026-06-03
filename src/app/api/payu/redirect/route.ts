@@ -97,7 +97,7 @@ export async function POST(req: NextRequest) {
           } catch (logErr) {}
           
           if (pendingPaymentUser) {
-            const PRICE_PER_OPPOSITION = 1; // TO CHANGE TO PRODUCTION PRICE: Change 1 to 999
+            const PRICE_PER_OPPOSITION = 999; // TO CHANGE TO PRODUCTION PRICE: Change 1 to 999
             const oppCount = pendingPaymentUser.oppositionCount || 1;
             const amtPaid = oppCount * PRICE_PER_OPPOSITION;
 

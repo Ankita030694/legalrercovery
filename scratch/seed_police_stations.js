@@ -1,18 +1,30 @@
-// ──────────────────────────────────────────────────────────────
-// State-wise Police Headquarters Data for India (35 States/UTs)
-// Source: Official State Police Directory (policestationdata.txt)
-// ──────────────────────────────────────────────────────────────
+const fs = require('fs');
+const path = require('path');
+const { MongoClient } = require('mongodb');
 
-export interface PoliceHQEntry {
-  state: string;
-  hqName: string;
-  hqAddress: string;
-  emails: string[];
-  phone: string;
-  website: string;
+// Load environment variables from .env.local
+const envPath = path.join(__dirname, '../.env.local');
+if (fs.existsSync(envPath)) {
+  const dotenvContent = fs.readFileSync(envPath, 'utf-8');
+  dotenvContent.split('\n').forEach(line => {
+    const match = line.match(/^\s*([\w.-]+)\s*=\s*(.*)?\s*$/);
+    if (match) {
+      const key = match[1];
+      let value = match[2] || '';
+      if (value.startsWith('"') && value.endsWith('"')) value = value.slice(1, -1);
+      if (value.startsWith("'") && value.endsWith("'")) value = value.slice(1, -1);
+      process.env[key] = value;
+    }
+  });
 }
 
-export const POLICE_HQ_DATA: PoliceHQEntry[] = [
+const mongoUri = process.env.MONGODB_URI;
+if (!mongoUri) {
+  console.error("MONGODB_URI is not defined");
+  process.exit(1);
+}
+
+const POLICE_HQ_DATA = [
   {
     state: "Andhra Pradesh",
     hqName: "Director General of Police, Andhra Pradesh",
@@ -304,12 +316,27 @@ export const POLICE_HQ_DATA: PoliceHQEntry[] = [
   },
 ];
 
-/** All state names sorted alphabetically for dropdown */
-export const INDIAN_STATES = POLICE_HQ_DATA.map((d) => d.state).sort();
-
-/** Lookup police HQ entry by state name */
-export function getPoliceHQByState(state: string): PoliceHQEntry | undefined {
-  return POLICE_HQ_DATA.find(
-    (d) => d.state.toLowerCase() === state.toLowerCase()
-  );
+async function run() {
+  console.log("Connecting to MongoDB...");
+  const client = new MongoClient(mongoUri);
+  await client.connect();
+  const db = client.db();
+  
+  console.log(`Connected to database: ${db.databaseName}`);
+  const collection = db.collection("police_stations");
+  
+  console.log("Clearing existing police_stations collection...");
+  await collection.deleteMany({});
+  
+  console.log(`Inserting ${POLICE_HQ_DATA.length} police headquarters entries...`);
+  const result = await collection.insertMany(POLICE_HQ_DATA);
+  console.log(`Seeding successful! Inserted count: ${result.insertedCount}`);
+  
+  await client.close();
+  console.log("Database connection closed.");
 }
+
+run().catch(err => {
+  console.error("Seeding failed:", err);
+  process.exit(1);
+});

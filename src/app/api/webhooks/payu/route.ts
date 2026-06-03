@@ -65,8 +65,20 @@ export async function POST(req: NextRequest) {
       console.error("Failed to write webhook initial log to DB:", logErr);
     }
 
-    // Process Payment Success
+    // Process Payment Success (Strictly requiring server-to-server transaction verification)
     if (status === "success") {
+      if (!isVerified) {
+        console.error(`[PayU Webhook] Webhook status was success, but transaction verification failed for Txn ID: ${txnid}`);
+        try {
+          await db.collection("payment_debug_logs").insertOne({
+            step: "webhook_verification_failed",
+            timestamp: new Date(),
+            data: { txnid, status }
+          });
+        } catch {}
+        return NextResponse.json({ success: true, message: "Verification failed but acknowledged" }, { status: 200 });
+      }
+
       const userIdentifier = udf1 || body.email || body.phone;
       
       if (!userIdentifier) {
@@ -116,7 +128,7 @@ export async function POST(req: NextRequest) {
         // 3. If the user is found in pending_payment, migrate them to the primary users collection
         if (pendingUser) {
           const userPendingId = pendingUser._id;
-          const PRICE_PER_OPPOSITION = 1; // TO CHANGE TO PRODUCTION PRICE: Change 1 to 999
+          const PRICE_PER_OPPOSITION = 999; // TO CHANGE TO PRODUCTION PRICE: Change 1 to 999
           const oppCount = pendingUser.oppositionCount || 1;
           const amtPaid = oppCount * PRICE_PER_OPPOSITION;
           
@@ -212,7 +224,7 @@ export async function POST(req: NextRequest) {
             // Trigger notifications if not already sent (safely deduplicated inside processPaymentSuccessNotifications)
             const user = await db.collection("users").findOne(query);
             if (user) {
-              const PRICE_PER_OPPOSITION = 1; // TO CHANGE TO PRODUCTION PRICE: Change 1 to 999
+              const PRICE_PER_OPPOSITION = 999; // TO CHANGE TO PRODUCTION PRICE: Change 1 to 999
               const oppCount = user.oppositionCount || 1;
               const amtPaid = user.amountPaid || (oppCount * PRICE_PER_OPPOSITION);
 

@@ -29,7 +29,7 @@ export async function GET(req: NextRequest) {
     return NextResponse.json({ success: true, count: blogs.length, data: blogs });
   } catch (error: any) {
     console.error("Fetch Blogs API Error:", error);
-    return NextResponse.json({ error: error.message }, { status: 500 });
+    return NextResponse.json({ error: "Internal server error" }, { status: 500 });
   }
 }
 
@@ -119,6 +119,6 @@ export async function POST(req: NextRequest) {
     });
   } catch (error: any) {
     console.error("Create Blog API Error:", error);
-    return NextResponse.json({ error: error.message }, { status: 500 });
+    return NextResponse.json({ error: "Internal server error" }, { status: 500 });
   }
 }

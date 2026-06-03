@@ -196,7 +196,7 @@ async function handleDispatch(req: NextRequest) {
   if (process.env.NODE_ENV === "production") {
     const authHeader = req.headers.get("Authorization");
     const cronSecret = process.env.CRON_SECRET;
-    if (cronSecret && authHeader !== `Bearer ${cronSecret}`) {
+    if (!cronSecret || authHeader !== `Bearer ${cronSecret}`) {
       return NextResponse.json({ error: "Unauthorized cron request." }, { status: 401 });
     }
   }
@@ -388,7 +388,7 @@ async function handleDispatch(req: NextRequest) {
           }
 
           const nextStep = caseDoc.currentStep + 1;
-          const nextScheduledTime = new Date(now.getTime() + 5 * 60 * 1000); // 5 minutes testing interval
+          const nextScheduledTime = new Date(now.getTime() + 7 * 24 * 60 * 60 * 1000); // 7 days production interval
 
           const updateDoc: any = {
             currentStep: nextStep,
@@ -404,12 +404,12 @@ async function handleDispatch(req: NextRequest) {
             updateDoc[`timeline.${stepIndex + 1}.status`] = "scheduled";
             updateDoc[`timeline.${stepIndex + 1}.scheduledAt`] = nextScheduledTime.toISOString();
             updateDoc[`timeline.${stepIndex + 1}.date`] = formatTimelineDate(nextScheduledTime);
-            updateDoc[`timeline.${stepIndex + 1}.timeRemaining`] = "5 mins remaining";
+            updateDoc[`timeline.${stepIndex + 1}.timeRemaining`] = "7 days remaining";
             
             if (nextStep === 4) {
               updateDoc[`timeline.${stepIndex + 1}.description`] = `Draft complaint copy shared for client`;
             } else {
-              updateDoc[`timeline.${stepIndex + 1}.description`] = `Dispatched exactly 5 minutes after Notice ${nextStep - 1}`;
+              updateDoc[`timeline.${stepIndex + 1}.description`] = `Dispatched exactly 1 week after Notice ${nextStep - 1}`;
             }
           }
 

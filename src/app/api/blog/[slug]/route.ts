@@ -28,7 +28,7 @@ export async function GET(
     return NextResponse.json({ success: true, data: blog });
   } catch (error: any) {
     console.error("Fetch Single Blog API Error:", error);
-    return NextResponse.json({ error: error.message }, { status: 500 });
+    return NextResponse.json({ error: "Internal server error" }, { status: 500 });
   }
 }
 
@@ -135,7 +135,7 @@ export async function PUT(
     });
   } catch (error: any) {
     console.error("Update Blog API Error:", error);
-    return NextResponse.json({ error: error.message }, { status: 500 });
+    return NextResponse.json({ error: "Internal server error" }, { status: 500 });
   }
 }
 
@@ -180,6 +180,6 @@ export async function DELETE(
     });
   } catch (error: any) {
     console.error("Delete Blog API Error:", error);
-    return NextResponse.json({ error: error.message }, { status: 500 });
+    return NextResponse.json({ error: "Internal server error" }, { status: 500 });
   }
 }

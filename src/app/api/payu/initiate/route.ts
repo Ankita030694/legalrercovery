@@ -39,7 +39,7 @@ export async function POST(req: NextRequest) {
     }
 
     // Securely calculate the amount on server side to prevent any manipulation
-    const PRICE_PER_OPPOSITION = 1; // TO CHANGE TO PRODUCTION PRICE: Change 1 to 999
+    const PRICE_PER_OPPOSITION = 999; // TO CHANGE TO PRODUCTION PRICE: Change 1 to 999
     const oppositionCount = pendingPaymentRecord.oppositionCount || 1;
     const totalAmount = oppositionCount * PRICE_PER_OPPOSITION;
     const amount = `${totalAmount}.00`;

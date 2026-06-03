@@ -1,6 +1,7 @@
 import { NextRequest, NextResponse } from "next/server";
 import { getDbAndBucket } from "@/lib/mongodb";
 import { ObjectId } from "mongodb";
+import crypto from "crypto";
 
 export async function POST(req: NextRequest) {
   try {
@@ -25,9 +26,38 @@ export async function POST(req: NextRequest) {
       return NextResponse.json({ error: "Verification session not found" }, { status: 404 });
     }
 
-    // Verify OTP code match
-    if (record.otp !== otp.trim()) {
-      return NextResponse.json({ error: "Invalid OTP code. Please try again." }, { status: 400 });
+    // Check if signup OTP has expired
+    if (record.otpExpires && new Date() > new Date(record.otpExpires)) {
+      // Delete expired session immediately
+      await db.collection("pending_verification").deleteOne({ _id: objectId });
+      return NextResponse.json({ error: "OTP has expired. Please request a new OTP." }, { status: 400 });
+    }
+
+    // Verify OTP code match (with max 5 failed attempts limit to prevent brute force) using timing-safe comparison
+    const inputOtpClean = otp.trim();
+    const isOtpValid = record.otp && inputOtpClean.length === 6 && record.otp.length === 6 && crypto.timingSafeEqual(
+      Buffer.from(record.otp),
+      Buffer.from(inputOtpClean)
+    );
+
+    if (!isOtpValid) {
+      const attempts = (record.failedAttempts || 0) + 1;
+      
+      if (attempts >= 5) {
+        // Exceeded maximum attempts: delete session immediately
+        await db.collection("pending_verification").deleteOne({ _id: objectId });
+        return NextResponse.json({ error: "Too many failed verification attempts. Please request a new OTP." }, { status: 400 });
+      }
+
+      // Increment failed attempts count
+      await db.collection("pending_verification").updateOne(
+        { _id: objectId },
+        { $set: { failedAttempts: attempts } }
+      );
+
+      return NextResponse.json({ 
+        error: `Invalid OTP code. Please try again. (${5 - attempts} attempts remaining)` 
+      }, { status: 400 });
     }
 
     // OTP is verified. Move data to 'pending_payment' collection

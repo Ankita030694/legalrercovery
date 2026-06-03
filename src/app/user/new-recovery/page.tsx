@@ -22,7 +22,6 @@ import {
   ChevronDown
 } from "lucide-react";
 import Link from "next/link";
-import { INDIAN_STATES, getPoliceHQByState } from "@/data/policeStationData";
 
 export default function NewRecoveryForm() {
   const router = useRouter();
@@ -55,6 +54,11 @@ export default function NewRecoveryForm() {
   const [email2Error, setEmail2Error] = useState(false);
   const [generatedCaseId, setGeneratedCaseId] = useState("LR-0000-000000");
   const [mobileTab, setMobileTab] = useState<"form" | "preview">("form");
+  const [policeStations, setPoliceStations] = useState<any[]>([]);
+
+  const indianStates = React.useMemo(() => {
+    return policeStations.map((d) => d.state).sort();
+  }, [policeStations]);
 
   // Client profile state for notice previews
   const [clientProfile, setClientProfile] = useState<{
@@ -98,8 +102,23 @@ export default function NewRecoveryForm() {
       }
     };
 
+    const fetchPoliceStations = async () => {
+      try {
+        const res = await fetch("/api/police-stations");
+        if (res.ok) {
+          const data = await res.json();
+          if (data.success && data.data) {
+            setPoliceStations(data.data);
+          }
+        }
+      } catch (err) {
+        console.error("Failed to fetch police stations:", err);
+      }
+    };
+
     fetchNextCaseId();
     fetchProfile();
+    fetchPoliceStations();
 
     // Initialize onboarding
     const tour = localStorage.getItem("lr_onboarding_state");
@@ -176,7 +195,9 @@ export default function NewRecoveryForm() {
   const handleStateChange = (state: string) => {
     setDefaulterState(state);
     if (state) {
-      const hq = getPoliceHQByState(state);
+      const hq = policeStations.find(
+        (d) => d.state.toLowerCase() === state.toLowerCase()
+      );
       if (hq) {
         setPoliceStationName(hq.hqName);
         setPoliceStationEmail(hq.emails[0] || "");
@@ -589,7 +610,7 @@ export default function NewRecoveryForm() {
                     className="appearance-none w-full bg-slate-50 hover:bg-slate-100/50 border border-[#E5E7EB] focus:border-[#DC2626] rounded-xl px-4 py-3 text-sm font-semibold outline-none transition-colors pr-10 cursor-pointer"
                   >
                     <option value="">Select State / UT</option>
-                    {INDIAN_STATES.map((s) => (
+                    {indianStates.map((s) => (
                       <option key={s} value={s}>{s}</option>
                     ))}
                   </select>

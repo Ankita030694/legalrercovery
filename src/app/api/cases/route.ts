@@ -131,7 +131,7 @@ export async function POST(req: NextRequest) {
 
     // Enforce case creation credits/limits based on the amount the user has paid.
     // Production amount is ₹999 per opposition. Testing is ₹1 per opposition.
-    const PRICE_PER_OPPOSITION = 1; // TO CHANGE TO PRODUCTION PRICE: Change 1 to 999
+    const PRICE_PER_OPPOSITION = 999; // TO CHANGE TO PRODUCTION PRICE: Change 1 to 999
     const amountPaid = user.amountPaid || 0;
     const limitFromAmountPaid = Math.floor(amountPaid / PRICE_PER_OPPOSITION);
 

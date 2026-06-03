@@ -9,7 +9,7 @@ interface PaymentModalProps {
 }
 
 export const PaymentModal = ({ isOpen, onClose }: PaymentModalProps) => {
-  const PRICE_PER_OPPOSITION = 1; // TO CHANGE TO PRODUCTION PRICE: Change 1 to 999
+  const PRICE_PER_OPPOSITION = 999; // TO CHANGE TO PRODUCTION PRICE: Change 1 to 999
   const [step, setStep] = useState(1); // 1 = Details, 2 = OTP Verification
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");

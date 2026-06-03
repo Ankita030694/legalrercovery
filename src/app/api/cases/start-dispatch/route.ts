@@ -156,8 +156,8 @@ AMA Legal Solutions`;
 
     // 3. Handle state transitions based on success/failure
     const today = new Date();
-    // Schedule next notice (Step 2) in exactly 5 minutes (for testing mode)
-    const fiveMinutesLater = new Date(today.getTime() + 5 * 60 * 1000);
+    // Schedule next notice (Step 2) in exactly 7 days (production interval)
+    const oneWeekLater = new Date(today.getTime() + 7 * 24 * 60 * 60 * 1000);
 
     const formatTimelineDate = (d: Date) => {
       return d.toLocaleDateString("en-IN", { day: "numeric", month: "short", year: "numeric", hour: "2-digit", minute: "2-digit" });
@@ -175,10 +175,10 @@ AMA Legal Solutions`;
         "timeline.0.date": formatTimelineDate(today),
         "timeline.0.description": "Dispatched via Email & WhatsApp",
         "timeline.1.status": "scheduled",
-        "timeline.1.scheduledAt": fiveMinutesLater.toISOString(),
-        "timeline.1.date": formatTimelineDate(fiveMinutesLater),
-        "timeline.1.description": "Dispatched exactly 5 minutes after first notice",
-        "timeline.1.timeRemaining": "5 mins remaining"
+        "timeline.1.scheduledAt": oneWeekLater.toISOString(),
+        "timeline.1.date": formatTimelineDate(oneWeekLater),
+        "timeline.1.description": "Dispatched exactly 1 week after first notice",
+        "timeline.1.timeRemaining": "7 days remaining"
       };
 
       // Dispatch client notification immediately inline

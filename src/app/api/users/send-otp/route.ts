@@ -2,6 +2,7 @@ import { NextRequest, NextResponse } from "next/server";
 import { getDbAndBucket } from "@/lib/mongodb";
 import { sendOtpEmail } from "@/lib/email";
 import { sendWatiOtp } from "@/lib/wati";
+import crypto from "crypto";
 
 export async function POST(req: NextRequest) {
   try {
@@ -23,18 +24,34 @@ export async function POST(req: NextRequest) {
       return NextResponse.json({ error: "Phone number must be exactly 10 digits" }, { status: 400 });
     }
 
-    // Generate a secure 6-digit OTP
-    const otp = Math.floor(100000 + Math.random() * 900000).toString();
-
     const { db } = await getDbAndBucket("fs");
 
-    // Save details and OTP in the 'pending_verification' collection
+    // Rate-limiting check: block requests if last OTP was sent less than 60 seconds ago
+    const existingRecord = await db.collection("pending_verification").findOne({ phone });
+    if (existingRecord && existingRecord.createdAt) {
+      const timeElapsed = Date.now() - new Date(existingRecord.createdAt).getTime();
+      const COOLDOWN_MS = 60 * 1000; // 60 seconds cooldown
+      
+      if (timeElapsed < COOLDOWN_MS) {
+        const secondsRemaining = Math.ceil((COOLDOWN_MS - timeElapsed) / 1000);
+        return NextResponse.json(
+          { error: `Please wait ${secondsRemaining} seconds before requesting another verification code.` },
+          { status: 429 }
+        );
+      }
+    }
+
+    // Generate a secure 6-digit OTP
+    const otp = crypto.randomInt(100000, 1000000).toString();
+
+    // Save details and OTP in the 'pending_verification' collection (with 10-minute expiry)
     const pendingUser = {
       name,
       email,
       phone,
       state,
       otp,
+      otpExpires: new Date(Date.now() + 10 * 60 * 1000), // 10 minutes validation window
       oppositionCount: oppositionCount ? Number(oppositionCount) : 1,
       verified: false,
       createdAt: new Date(),

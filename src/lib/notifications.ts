@@ -220,7 +220,7 @@ export async function logPoliceComplaintClientNotification(
   }
 
   try {
-    const watiDescription = `Dear ${clientDisplayName},\n\nA formal WhatsApp notification (template: police_complaint_accused) has been successfully dispatched to the accused, ${caseDoc.defaulterName}, regarding the filed police complaint.\n\nCase Ref: ${noticeRef}`;
+    const watiDescription = `Dear ${clientDisplayName},\n\nA formal WhatsApp notification has been successfully dispatched to the accused, ${caseDoc.defaulterName}, regarding the filed police complaint.\n\nCase Ref: ${noticeRef}`;
     await db.collection("notifications").insertOne({
       userId: caseDoc.userId.toString(),
       caseId: caseDoc.caseId,
