@@ -37,8 +37,8 @@ const initialCases = [
     currentStep: 2, // Notice 2 Sent
     createdAt: "2026-05-15T10:00:00Z",
     timeline: [
-      { step: 1, label: "First Notice", description: "Sent after 1 hour grace period", date: "May 15, 2026", status: "completed", speedPostId: "ED123456789IN" },
-      { step: 2, label: "Second Notice", description: "Dispatched exactly 1 week after", date: "May 22, 2026", status: "completed", speedPostId: "ED987654321IN" },
+      { step: 1, label: "First Notice", description: "Sent after 1 hour grace period", date: "May 15, 2026", status: "completed" },
+      { step: 2, label: "Second Notice", description: "Dispatched exactly 1 week after", date: "May 22, 2026", status: "completed" },
       { step: 3, label: "Third Notice", description: "Final demand notice", date: "June 05, 2026", status: "scheduled", timeRemaining: "7 days remaining" },
       { step: 4, label: "Police Complaint Draft", description: "Drafted complaint copy shared", date: "June 12, 2026", status: "locked" }
     ]
@@ -72,6 +72,10 @@ export default function UserDashboard() {
   // Stopping notices modal states
   const [confirmStopCaseId, setConfirmStopCaseId] = useState<string | null>(null);
   const [isStopping, setIsStopping] = useState(false);
+  const [recoveredAmountInput, setRecoveredAmountInput] = useState<string>("");
+
+  // Onboarding Active Tour state
+  const [onboardingActive, setOnboardingActive] = useState(false);
 
   const fetchCases = async () => {
     try {
@@ -87,9 +91,6 @@ export default function UserDashboard() {
           id: c._id || c.id
         }));
         setCases(mapped);
-        if (mapped.length === 0) {
-          router.replace("/user/new-recovery");
-        }
       }
     } catch (error) {
       console.error("Error loading cases from API:", error);
@@ -108,21 +109,57 @@ export default function UserDashboard() {
     };
 
     window.addEventListener("lr_cases_updated", handleRefresh);
+    
+    // Check onboarding tour state
+    const tour = localStorage.getItem("lr_onboarding_state");
+    if (!tour) {
+      localStorage.setItem("lr_onboarding_state", "welcome");
+      setOnboardingActive(true);
+    } else if (tour === "welcome") {
+      setOnboardingActive(true);
+    }
+
     return () => window.removeEventListener("lr_cases_updated", handleRefresh);
   }, [router]);
+
+  const handleStartNewRecoveryClick = () => {
+    const tour = localStorage.getItem("lr_onboarding_state");
+    if (tour === "welcome" || !tour) {
+      localStorage.setItem("lr_onboarding_state", "dashboard_new_recovery");
+    }
+  };
 
   // Stats Computations
   const totalStuck = useMemo(() => cases.reduce((acc, c) => acc + (c.status === "active" ? c.stuckAmount : 0), 0), [cases]);
   const activeCount = useMemo(() => cases.filter(c => c.status === "active").length, [cases]);
   const recoveredCount = useMemo(() => cases.filter(c => c.status === "recovered").length, [cases]);
-  const totalRecoveredAmount = useMemo(() => cases.reduce((acc, c) => acc + (c.status === "recovered" ? c.stuckAmount : 0), 0), [cases]);
+  const totalRecoveredAmount = useMemo(() => cases.reduce((acc, c) => acc + (c.status === "recovered" ? (c.recoveredAmount !== undefined ? c.recoveredAmount : c.stuckAmount) : 0), 0), [cases]);
 
   const handleStopNotices = (caseId: string) => {
     setConfirmStopCaseId(caseId);
+    const selectedCase = cases.find(c => c.id === caseId);
+    if (selectedCase) {
+      setRecoveredAmountInput(selectedCase.stuckAmount.toString());
+    } else {
+      setRecoveredAmountInput("");
+    }
   };
 
   const executeStopNotices = async () => {
     if (!confirmStopCaseId) return;
+    const selectedCase = cases.find(c => c.id === confirmStopCaseId);
+    if (!selectedCase) return;
+
+    const amt = parseFloat(recoveredAmountInput);
+    if (isNaN(amt) || amt < 0) {
+      alert("Please enter a valid recovered amount.");
+      return;
+    }
+    if (amt > selectedCase.stuckAmount) {
+      alert(`Recovered dues cannot exceed the outstanding amount of ₹${selectedCase.stuckAmount.toLocaleString("en-IN")}.`);
+      return;
+    }
+
     setIsStopping(true);
 
     try {
@@ -134,6 +171,7 @@ export default function UserDashboard() {
         body: JSON.stringify({
           id: confirmStopCaseId,
           status: "recovered",
+          recoveredAmount: amt
         }),
       });
 
@@ -196,22 +234,73 @@ export default function UserDashboard() {
   }
 
   return (
-    <div className="flex flex-col gap-8 animate-in fade-in duration-300">
+    <div className="relative flex flex-col gap-8 animate-in fade-in duration-300">
       
+      {/* Mobile-only onboarding banner */}
+      {onboardingActive && (
+        <div className="block md:hidden bg-slate-900 text-white rounded-2xl p-4 border border-slate-700 shadow-lg text-left select-none relative animate-in fade-in duration-300 mb-2">
+          <div className="flex justify-between items-start mb-2">
+            <span className="text-[9px] font-black bg-red-950/50 text-red-400 px-2 py-0.5 rounded uppercase">Onboarding Guide</span>
+            <button 
+              onClick={() => {
+                setOnboardingActive(false);
+                localStorage.setItem("lr_onboarding_state", "completed");
+              }} 
+              className="text-slate-400 hover:text-white text-xs font-bold cursor-pointer"
+            >
+              ✕
+            </button>
+          </div>
+          <p className="text-xs font-semibold leading-relaxed text-slate-100">
+            Let's start your recovery! Tap <strong>"Start New Recovery"</strong> below to enter the details of the entity or individual who owes you money.
+          </p>
+        </div>
+      )}
+
       {/* ── Welcome and CTA Header ── */}
       <div className="flex flex-col md:flex-row md:items-center justify-between gap-4 border-b border-[#E5E7EB]/50 pb-6">
         <div className="text-left">
-          <h1 className="text-2xl sm:text-3xl font-black text-[#111827] tracking-tight">Active Recoveries</h1>
-          <p className="text-xs sm:text-sm text-slate-500 font-semibold mt-1">Track notices queue status, physical speed post courier dispatches, and recoveries.</p>
+          <h1 className="text-2xl sm:text-3xl font-black text-[#111827] tracking-tight">Recovery Dashboard</h1>
+          <p className="text-xs sm:text-sm text-slate-500 font-semibold mt-1">Monitor the status of your active recovery claims and notice dispatch queues in real time.</p>
         </div>
 
+      <div className="relative w-full md:w-auto">
         <Link
           href="/user/new-recovery"
-          className="w-full md:w-auto px-5 py-3 text-sm font-black text-white bg-[#DC2626] hover:bg-[#B91C1C] rounded-xl shadow-md shadow-red-990/10 hover:-translate-y-0.5 transition-all duration-200 flex items-center justify-center gap-2 cursor-pointer focus:outline-none"
+          onClick={handleStartNewRecoveryClick}
+          className={`w-full md:w-auto px-5 py-3 text-sm font-black text-white bg-[#DC2626] hover:bg-[#B91C1C] rounded-xl shadow-md shadow-red-990/10 hover:-translate-y-0.5 transition-all duration-200 flex items-center justify-center gap-2 cursor-pointer focus:outline-none
+            ${onboardingActive ? "ring-4 ring-red-500 ring-offset-2 animate-pulse" : ""}`}
         >
           <Plus className="w-4 h-4" />
           Start New Recovery
         </Link>
+
+        {/* Floating Tooltip next to header button on desktop */}
+        {onboardingActive && (
+          <div className="hidden md:block absolute right-[calc(100%+16px)] top-1/2 -translate-y-1/2 bg-slate-900 text-white rounded-2xl p-4 shadow-2xl border border-slate-700 w-80 text-left pointer-events-auto z-50 animate-in slide-in-from-right-4 duration-300">
+            <div className="flex justify-between items-start mb-1.5">
+              <span className="text-[10px] font-black uppercase tracking-wider text-red-400 bg-red-950/50 px-2 py-0.5 rounded select-none">Quick Guide</span>
+              <button 
+                onClick={(e) => {
+                  e.stopPropagation();
+                  e.preventDefault();
+                  setOnboardingActive(false);
+                  localStorage.setItem("lr_onboarding_state", "completed");
+                }} 
+                className="text-slate-400 hover:text-white text-xs font-bold cursor-pointer"
+              >
+                ✕
+              </button>
+            </div>
+            <p className="text-xs font-semibold leading-relaxed text-slate-100">
+              Enter the details of the entity/individual you wish to recover money from.
+            </p>
+            <div className="text-[9px] font-extrabold text-[#DC2626] uppercase mt-2 select-none tracking-wider text-center">
+              Click this button to start!
+            </div>
+          </div>
+        )}
+      </div>
       </div>
 
       {/* ── Quick Metrics Grid ── */}
@@ -222,7 +311,7 @@ export default function UserDashboard() {
             <Wallet className="w-5 h-5" />
           </div>
           <div className="flex flex-col">
-            <span className="text-[10px] sm:text-[11px] uppercase tracking-wider text-slate-400 font-bold">Total Active Stuck</span>
+            <span className="text-[10px] sm:text-[11px] uppercase tracking-wider text-slate-400 font-bold">Total Dues Outstanding</span>
             <span className="text-lg sm:text-xl font-black text-[#111827] leading-none mt-1.5">₹{totalStuck.toLocaleString("en-IN")}</span>
           </div>
           <div className="absolute right-0 bottom-0 translate-y-2 translate-x-2 text-red-500/5 select-none pointer-events-none">
@@ -236,7 +325,7 @@ export default function UserDashboard() {
             <Timer className="w-5 h-5" />
           </div>
           <div className="flex flex-col">
-            <span className="text-[10px] sm:text-[11px] uppercase tracking-wider text-slate-400 font-bold">Active Notices Queue</span>
+            <span className="text-[10px] sm:text-[11px] uppercase tracking-wider text-slate-400 font-bold">Active Recovery Claims</span>
             <span className="text-lg sm:text-xl font-black text-[#111827] leading-none mt-1.5">{activeCount} Cases</span>
           </div>
           <div className="absolute right-0 bottom-0 translate-y-2 translate-x-2 text-orange-500/5 select-none pointer-events-none">
@@ -270,12 +359,42 @@ export default function UserDashboard() {
             </div>
             <h3 className="text-sm font-black text-slate-700">No Recovery Claims Yet</h3>
             <p className="text-xs text-slate-400 font-semibold max-w-xs mt-1.5 mb-6">Create a case, secure your payment, and configure automated legal demand letters.</p>
-            <Link
-              href="/user/new-recovery"
-              className="px-5 py-3 text-xs font-black text-white bg-[#DC2626] hover:bg-[#B91C1C] rounded-xl transition-all"
-            >
-              Start Your First Claim
-            </Link>
+            <div className="relative">
+              <Link
+                href="/user/new-recovery"
+                onClick={handleStartNewRecoveryClick}
+                className={`px-5 py-3 text-xs font-black text-white bg-[#DC2626] hover:bg-[#B91C1C] rounded-xl transition-all block
+                  ${onboardingActive ? "ring-4 ring-red-500 ring-offset-2 animate-pulse" : ""}`}
+              >
+                Start Your First Claim
+              </Link>
+
+              {/* Floating Tooltip below the empty state button */}
+              {onboardingActive && (
+                <div className="absolute top-[calc(100%+16px)] left-1/2 -translate-x-1/2 bg-slate-900 text-white rounded-2xl p-4 shadow-2xl border border-slate-700 w-72 text-left pointer-events-auto z-50 animate-in slide-in-from-top-4 duration-300">
+                  <div className="flex justify-between items-start mb-1.5">
+                    <span className="text-[10px] font-black uppercase tracking-wider text-red-400 bg-red-950/50 px-2 py-0.5 rounded select-none">Quick Guide</span>
+                    <button 
+                      onClick={(e) => {
+                        e.stopPropagation();
+                        e.preventDefault();
+                        setOnboardingActive(false);
+                        localStorage.setItem("lr_onboarding_state", "completed");
+                      }} 
+                      className="text-slate-400 hover:text-white text-xs font-bold cursor-pointer"
+                    >
+                      ✕
+                    </button>
+                  </div>
+                  <p className="text-xs font-semibold leading-relaxed text-slate-100">
+                    Enter the details of the entity or individual you wish to recover money from.
+                  </p>
+                  <div className="text-[9px] font-extrabold text-[#DC2626] uppercase mt-2 select-none tracking-wider text-center">
+                    Click this button to start!
+                  </div>
+                </div>
+              )}
+            </div>
           </div>
         ) : (
           cases.map((c) => (
@@ -291,9 +410,15 @@ export default function UserDashboard() {
                     <span className={`text-[10px] font-extrabold uppercase px-2.5 py-0.5 rounded-full border
                       ${c.status === "recovered" 
                         ? "bg-green-50 border-green-200 text-[#10B981]" 
+                        : c.status === "completed"
+                        ? "bg-blue-50 border-blue-200 text-blue-600"
                         : "bg-red-50 border-red-150 text-[#DC2626]"}`}
                     >
-                      {c.status === "recovered" ? "Dues Recovered" : "Active Dispatch"}
+                      {c.status === "recovered" 
+                        ? "Dues Recovered" 
+                        : c.status === "completed"
+                        ? "Dispatches Completed"
+                        : "Active Dispatch"}
                     </span>
                   </div>
                   
@@ -307,8 +432,13 @@ export default function UserDashboard() {
                 {/* Amount Claimed & Stop Action */}
                 <div className="flex items-center md:items-end justify-between md:flex-col gap-3">
                   <div className="text-left md:text-right">
-                    <span className="text-[10px] text-slate-400 font-bold uppercase tracking-wider">Amount Claimed</span>
+                    <span className="text-[10px] text-slate-400 font-bold uppercase tracking-wider">Dispatch Complete</span>
                     <p className="text-lg font-black text-[#111827] leading-none mt-1">₹{c.stuckAmount.toLocaleString("en-IN")}</p>
+                    {c.status === "recovered" && c.recoveredAmount !== undefined && (
+                      <span className="text-[10px] text-[#10B981] font-bold block mt-1.5">
+                        Recovered: ₹{c.recoveredAmount.toLocaleString("en-IN")}
+                      </span>
+                    )}
                   </div>
 
                   <div className="flex flex-col sm:flex-row gap-2">
@@ -337,6 +467,15 @@ export default function UserDashboard() {
                         Stop Notices
                       </button>
                     )}
+
+                    {c.status === "completed" && (
+                      <button
+                        onClick={() => handleStopNotices(c.id)}
+                        className="px-4 py-2 text-xs font-black text-[#047857] bg-[#ECFDF5] border border-[#A7F3D0] hover:bg-[#D1FAE5] hover:border-[#6EE7B7] rounded-xl transition-all cursor-pointer focus:outline-none"
+                      >
+                        Record Recovery
+                      </button>
+                    )}
                   </div>
                 </div>
               </div>
@@ -345,7 +484,7 @@ export default function UserDashboard() {
               <div className="flex flex-col gap-5">
                 <div className="flex items-center gap-1.5 border-t border-[#E5E7EB]/50 pt-4">
                   <Clock className="w-3.5 h-3.5 text-slate-400" />
-                  <span className="text-[10px] sm:text-[11px] font-black uppercase text-slate-400 tracking-wider">Automated Dispatch Progression</span>
+                  <span className="text-[10px] sm:text-[11px] font-black uppercase text-slate-400 tracking-wider">Demand Notice Dispatch Timeline</span>
                 </div>
 
                 {/* Responsive Progress Timeline Track (Vertical on mobile, Horizontal on desktop) */}
@@ -455,18 +594,7 @@ export default function UserDashboard() {
                             </span>
                           )}
 
-                          {/* Speed Post tracker action */}
-                          {isCompleted && t.speedPostId && (
-                            <a 
-                              href="https://www.indiapost.gov.in/_layouts/15/dop.portal.tracking/trackconsignment.aspx"
-                              target="_blank"
-                              rel="noopener noreferrer"
-                              className="text-[7px] sm:text-[8px] font-black text-slate-500 hover:text-[#DC2626] mt-1.5 flex items-center gap-1 select-none leading-none bg-slate-50 border border-slate-200/50 px-1 py-0.5 rounded transition-all"
-                              title={`Courier tracking: ${t.speedPostId}`}
-                            >
-                              📮 {t.speedPostId.slice(0, 4)}...
-                            </a>
-                          )}
+                          {/* Speed Post tracker action removed */}
                         </div>
 
                       </div>
@@ -480,45 +608,85 @@ export default function UserDashboard() {
       </div>
 
       {/* ── STOP DUES CONFIRMATION MODAL ── */}
-      {confirmStopCaseId && (
-        <div className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-slate-900/60 backdrop-blur-sm">
-          <div className="bg-white rounded-3xl w-full max-w-[420px] shadow-2xl relative overflow-hidden animate-in fade-in zoom-in-95 duration-200 p-6 text-center select-none">
-            <div className="mx-auto w-12 h-12 rounded-full bg-red-50 flex items-center justify-center text-[#DC2626] mb-4 border border-red-100">
-              <AlertTriangle className="w-5 h-5" />
-            </div>
-            
-            <h3 className="text-lg font-black text-[#111827] tracking-tight mb-2">Stop Dues Notices?</h3>
-            <p className="text-xs sm:text-sm text-slate-500 font-semibold leading-relaxed mb-6">
-              This will permanently cancel all remaining scheduled legal notices and draft complaints for this case. This action is irreversible.
-            </p>
+      {confirmStopCaseId && (() => {
+        const selectedCase = cases.find(c => c.id === confirmStopCaseId);
+        const parsedAmtInput = parseFloat(recoveredAmountInput);
+        const isAmtInvalid = selectedCase && (isNaN(parsedAmtInput) || parsedAmtInput < 0 || parsedAmtInput > selectedCase.stuckAmount);
+        const isCompletedCase = selectedCase?.status === "completed";
 
-            <div className="flex flex-col sm:flex-row gap-3">
-              <button
-                onClick={() => setConfirmStopCaseId(null)}
-                disabled={isStopping}
-                className="w-full py-3 text-xs font-black text-slate-650 bg-slate-100 hover:bg-slate-200 rounded-xl transition-colors cursor-pointer focus:outline-none"
-              >
-                Go Back
-              </button>
+        return (
+          <div className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-slate-900/60 backdrop-blur-sm">
+            <div className="bg-white rounded-3xl w-full max-w-[420px] shadow-2xl relative overflow-hidden animate-in fade-in zoom-in-95 duration-200 p-6 text-center select-none animate-in fade-in-0 duration-300">
+              <div className="mx-auto w-12 h-12 rounded-full bg-red-50 flex items-center justify-center text-[#DC2626] mb-4 border border-red-100">
+                <AlertTriangle className="w-5 h-5" />
+              </div>
+              
+              <h3 className="text-lg font-black text-[#111827] tracking-tight mb-2">
+                {isCompletedCase ? "Record Dues Recovery?" : "Stop Dues Notices?"}
+              </h3>
+              <p className="text-xs sm:text-sm text-slate-500 font-semibold leading-relaxed mb-4">
+                {isCompletedCase 
+                  ? "Record the amount recovered from the defaulter to mark this case as settled and update your recovery metrics."
+                  : "This will permanently cancel all remaining scheduled legal notices and draft complaints for this case. This action is irreversible."}
+              </p>
 
-              <button
-                onClick={executeStopNotices}
-                disabled={isStopping}
-                className="w-full py-3 text-xs font-black text-white bg-[#DC2626] hover:bg-[#B91C1C] rounded-xl transition-colors flex items-center justify-center gap-1.5 cursor-pointer focus:outline-none"
-              >
-                {isStopping ? (
-                  <>
-                    <Loader2 className="w-3.5 h-3.5 animate-spin" />
-                    Processing...
-                  </>
-                ) : (
-                  "Confirm Stop"
+              {/* Recovered dues input */}
+              <div className="mb-6 text-left">
+                <label htmlFor="recoveredDuesInput" className="block text-[10px] font-black text-slate-405 uppercase tracking-wider mb-2">
+                  Dues Recovered (₹)
+                </label>
+                <div className="relative">
+                  <input
+                    id="recoveredDuesInput"
+                    type="number"
+                    max={selectedCase?.stuckAmount}
+                    value={recoveredAmountInput}
+                    onChange={(e) => setRecoveredAmountInput(e.target.value)}
+                    placeholder="Enter amount recovered..."
+                    className={`w-full px-4 py-3 text-sm font-semibold border rounded-xl focus:outline-none transition-colors
+                      ${isAmtInvalid ? "border-red-300 focus:border-red-500" : "border-slate-200 focus:border-red-500"}`}
+                  />
+                </div>
+                {selectedCase && parsedAmtInput > selectedCase.stuckAmount && (
+                  <p className="text-[10px] text-red-500 font-bold mt-1.5 leading-tight">
+                    Recovered amount cannot exceed outstanding dues of ₹{selectedCase.stuckAmount.toLocaleString("en-IN")}.
+                  </p>
                 )}
-              </button>
+                {selectedCase && (isNaN(parsedAmtInput) || parsedAmtInput < 0) && (
+                  <p className="text-[10px] text-red-500 font-bold mt-1.5 leading-tight">
+                    Please enter a valid positive number.
+                  </p>
+                )}
+              </div>
+
+              <div className="flex flex-col sm:flex-row gap-3">
+                <button
+                  onClick={() => setConfirmStopCaseId(null)}
+                  disabled={isStopping}
+                  className="w-full py-3 text-xs font-black text-slate-650 bg-slate-100 hover:bg-slate-200 rounded-xl transition-colors cursor-pointer focus:outline-none"
+                >
+                  Go Back
+                </button>
+
+                <button
+                  onClick={executeStopNotices}
+                  disabled={isStopping || !!isAmtInvalid}
+                  className="w-full py-3 text-xs font-black text-white bg-[#DC2626] hover:bg-[#B91C1C] disabled:bg-slate-350 disabled:cursor-not-allowed rounded-xl transition-colors flex items-center justify-center gap-1.5 cursor-pointer focus:outline-none"
+                >
+                  {isStopping ? (
+                    <>
+                      <Loader2 className="w-3.5 h-3.5 animate-spin" />
+                      Processing...
+                    </>
+                  ) : (
+                    isCompletedCase ? "Record Recovery" : "Confirm Stop"
+                  )}
+                </button>
+              </div>
             </div>
           </div>
-        </div>
-      )}
+        );
+      })()}
 
     </div>
   );

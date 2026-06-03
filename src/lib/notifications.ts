@@ -1,6 +1,6 @@
 import { Db } from "mongodb";
-import { sendPaymentSuccessEmail } from "./email";
-import { sendWatiPaymentSuccess } from "./wati";
+import { sendPaymentSuccessEmail, sendClientNotificationEmail } from "./email";
+import { sendWatiPaymentSuccess, sendWatiClientNoticeNotification } from "./wati";
 
 /**
  * Co-ordinates deduplicated dispatches of payment success emails and WATI WhatsApp alerts.
@@ -108,3 +108,115 @@ export async function processPaymentSuccessNotifications(
     } catch {}
   }
 }
+
+/**
+ * Sends a real-time status update to the client via Email and WhatsApp,
+ * and logs both channels to the MongoDB notifications collection.
+ */
+export async function sendAndLogClientNotification(
+  db: Db,
+  caseDoc: any,
+  step: number,
+  clientDisplayName: string,
+  clientEmail: string,
+  clientPhone: string,
+  noticeRef: string
+): Promise<{ emailSent: boolean; watiSent: boolean }> {
+  const emailSubject = `Notice ${step} Dispatched - Case Ref: ${noticeRef}`;
+  const emailBody = `Dear ${clientDisplayName},
+
+This is to inform you that Legal Demand Notice ${step} has been successfully dispatched to the accused, ${caseDoc.defaulterName}, via Zoho Email and WATI WhatsApp.
+
+You can track the live status and timeline of this case directly from your Legal Recovery dashboard.
+
+Regards,
+Legal Dispatch Desk
+AMA Legal Solutions`;
+
+  const promises = [
+    sendClientNotificationEmail(clientEmail, emailSubject, emailBody),
+    sendWatiClientNoticeNotification(clientPhone, clientDisplayName, caseDoc.defaulterName, step, noticeRef)
+  ];
+
+  const results = await Promise.allSettled(promises);
+  
+  const emailSent = results[0].status === "fulfilled" ? results[0].value : false;
+  const watiSent = results[1].status === "fulfilled" ? results[1].value : false;
+
+  const nowStr = new Date().toISOString();
+
+  if (emailSent) {
+    try {
+      await db.collection("notifications").insertOne({
+        userId: caseDoc.userId.toString(),
+        caseId: caseDoc.caseId,
+        caseName: caseDoc.defaulterName,
+        type: "email_status",
+        title: `Notice ${step} Dispatch Confirmation Email`,
+        description: `Subject: ${emailSubject}\n\n${emailBody}`,
+        status: "success",
+        date: nowStr,
+        isRead: false
+      });
+      console.log(`[Notification System] Logged email_status notification for Case: ${caseDoc.caseId}`);
+    } catch (logErr) {
+      console.error("[Notification System] Error logging email_status notification:", logErr);
+    }
+  }
+
+  if (watiSent) {
+    try {
+      const whatsappText = `Dear ${clientDisplayName},\n\nNotice ${step} has been successfully dispatched to the accused ${caseDoc.defaulterName}.\n\nCase Ref: ${noticeRef}`;
+      await db.collection("notifications").insertOne({
+        userId: caseDoc.userId.toString(),
+        caseId: caseDoc.caseId,
+        caseName: caseDoc.defaulterName,
+        type: "whatsapp_status",
+        title: `Notice ${step} Dispatch Confirmation WhatsApp`,
+        description: whatsappText,
+        status: "success",
+        date: nowStr,
+        isRead: false
+      });
+      console.log(`[Notification System] Logged whatsapp_status notification for Case: ${caseDoc.caseId}`);
+    } catch (logErr) {
+      console.error("[Notification System] Error logging whatsapp_status notification:", logErr);
+    }
+  }
+
+  return { emailSent, watiSent };
+}
+
+/**
+ * Logs a client notification entry when a police complaint is sent to the SHO and CC'd to the client.
+ */
+export async function logPoliceComplaintClientNotification(
+  db: Db,
+  caseDoc: any,
+  clientDisplayName: string,
+  clientEmail: string,
+  noticeRef: string
+): Promise<void> {
+  const emailSubject = `Formal Criminal Police Complaint - Cheating, Criminal Breach of Trust & Dishonest Non-Payment - Ref: ${noticeRef}`;
+  const nowStr = new Date().toISOString();
+  
+  const description = `Subject: ${emailSubject}\n\nTo: The Station House Officer, ${caseDoc.policeStationName}\n\nYour Police Complaint draft has been successfully dispatched to the SHO and the accused (${caseDoc.defaulterName}). A copy has been CC'd to your email: ${clientEmail}.`;
+
+  try {
+    await db.collection("notifications").insertOne({
+      userId: caseDoc.userId.toString(),
+      caseId: caseDoc.caseId,
+      caseName: caseDoc.defaulterName,
+      type: "email_status",
+      title: `Police Complaint Dispatched (CC'd to You)`,
+      description,
+      status: "success",
+      date: nowStr,
+      isRead: false
+    });
+    console.log(`[Notification System] Logged police complaint email notification for Case: ${caseDoc.caseId}`);
+  } catch (logErr) {
+    console.error("[Notification System] Error logging police complaint notification:", logErr);
+  }
+}
+

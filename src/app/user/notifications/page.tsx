@@ -126,9 +126,9 @@ export default function NotificationsLog() {
       {/* Header */}
       <div className="text-left border-b border-[#E5E7EB]/50 pb-6 flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4">
         <div>
-          <h1 className="text-2xl sm:text-3xl font-black text-[#111827] tracking-tight">Notification Log</h1>
+          <h1 className="text-2xl sm:text-3xl font-black text-[#111827] tracking-tight">Notifications & Activity Log</h1>
           <p className="text-xs sm:text-sm text-slate-500 font-semibold mt-1 font-sans">
-            Review automatic dispatches, WhatsApp Wati transmission summaries, and physical courier deliveries.
+            Track notice dispatch receipts and WhatsApp messaging delivery status in real time.
           </p>
         </div>
 
@@ -257,16 +257,7 @@ export default function NotificationsLog() {
                         🎯 {n.caseName || "System Notification"}
                       </span>
 
-                      {n.metadata?.speedPostId && (
-                        <a 
-                          href="https://www.indiapost.gov.in/_layouts/15/dop.portal.tracking/trackconsignment.aspx"
-                          target="_blank"
-                          rel="noopener noreferrer"
-                          className="text-[9px] font-black text-slate-650 hover:text-[#DC2626] flex items-center gap-1 bg-slate-50 border border-slate-200/80 px-2 py-0.5 rounded"
-                        >
-                          Indian Post Consignment: {n.metadata.speedPostId} <ExternalLink className="w-2.5 h-2.5" />
-                        </a>
-                      )}
+                      {/* Speed Post track link removed */}
 
                       {/* Interactive toggle for WhatsApp or Email replies */}
                       {isCollapsibleReply && (

@@ -592,7 +592,7 @@ export default function RentalRecoveryClient() {
                 <ul>
                   <li><strong>No practicing Advocate letterhead:</strong> Rent disputes involve high financial stakes. A basic letter sent on plain paper by a tenant carries zero weight and is immediately thrown out by landlords. A notice carrying the stamp, seal, and signature of a practicing high-court advocate establishes real legal risk.</li>
                   <li><strong>Failure to cite State-Specific Tenancy Rules:</strong> Rent laws in India are highly state-centric. Online templates do not differentiate between the Maharashtra Rent Control Act, Delhi Rent Control Act, or states implementing the Model Tenancy Act, rendering the notice legally toothless.</li>
-                  <li><strong>Lack of Systematic Escalation:</strong> A single, isolated notice sent via speed post does not build compounding pressure. Companies and individual landlords know that without automated follow-ups and a criminal draft escalation, the opposite party will likely not incur the cost of going to court.</li>
+                  <li><strong>Lack of Systematic Escalation:</strong> A single, isolated notice does not build compounding pressure. Companies and individual landlords know that without automated follow-ups and a criminal draft escalation, the opposite party will likely not incur the cost of going to court.</li>
                 </ul>
                 <p>
                   LegalRecovery provides you with attorney-signed, state-customized notice campaigns. We use real-time digital read receipts to track when the HR opened the email, leaving them with absolutely no room to claim they never received the demand.

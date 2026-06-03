@@ -2,8 +2,9 @@ import { NextRequest, NextResponse } from "next/server";
 import { getDbAndBucket } from "@/lib/mongodb";
 import { ObjectId } from "mongodb";
 import { generateNoticePDFBuffer } from "@/lib/pdf-generator";
-import { sendNoticeEmail, sendClientNotificationEmail } from "@/lib/email";
-import { sendNoticeWati, sendWatiClientNoticeNotification } from "@/lib/wati";
+import { sendNoticeEmail } from "@/lib/email";
+import { sendNoticeWati } from "@/lib/wati";
+import { sendAndLogClientNotification, logPoliceComplaintClientNotification } from "@/lib/notifications";
 
 export const maxDuration = 300; // Vercel max timeout
 export const dynamic = 'force-dynamic';
@@ -140,41 +141,6 @@ AMA Legal Solutions`;
   return { emailSent, whatsappSent };
 }
 
-/**
- * Sends a real-time status update to the client via Email and WhatsApp
- */
-async function sendClientNotification(
-  caseDoc: any,
-  step: number,
-  clientDisplayName: string,
-  clientEmail: string,
-  clientPhone: string,
-  noticeRef: string
-): Promise<{ emailSent: boolean; watiSent: boolean }> {
-  const emailSubject = `Notice ${step} Dispatched - Case Ref: ${noticeRef}`;
-  const emailBody = `Dear ${clientDisplayName},
-
-This is to inform you that Legal Demand Notice ${step} has been successfully dispatched to the accused, ${caseDoc.defaulterName}, via Zoho Email and WATI WhatsApp.
-
-You can track the live status and timeline of this case directly from your Legal Recovery dashboard.
-
-Regards,
-Legal Dispatch Desk
-AMA Legal Solutions`;
-
-  const promises = [
-    sendClientNotificationEmail(clientEmail, emailSubject, emailBody),
-    sendWatiClientNoticeNotification(clientPhone, clientDisplayName, caseDoc.defaulterName, step, noticeRef)
-  ];
-
-  const results = await Promise.allSettled(promises);
-  
-  const emailSent = results[0].status === "fulfilled" ? results[0].value : false;
-  const watiSent = results[1].status === "fulfilled" ? results[1].value : false;
-
-  return { emailSent, watiSent };
-}
-
 // --- Main Request Handlers ---
 
 export async function POST(req: NextRequest) {
@@ -259,7 +225,7 @@ async function handleDispatch(req: NextRequest) {
 
       // Fetch client profile securely
       const clientUser = await db.collection("users").findOne({ _id: caseDoc.userId });
-      const clientDisplayName = clientUser?.name || clientUser?.companyName || "Tech AMA";
+      const clientDisplayName = caseDoc.clientName || clientUser?.name || clientUser?.companyName || "Tech AMA";
 
       console.log(`[Queue Processor] Processing Case: ${caseDoc.caseId}, Step: ${caseDoc.currentStep}`);
 
@@ -268,9 +234,9 @@ async function handleDispatch(req: NextRequest) {
 
       // Handle Step 1, 2, or 3 (Accused Notices)
       if (caseDoc.currentStep <= 3) {
-        const complainantEmail = clientUser?.email || caseDoc.clientEmail;
-        const complainantPhone = clientUser?.phone || caseDoc.clientPhone;
-        const complainantAddress = clientUser?.address || caseDoc.clientAddress;
+        const complainantEmail = caseDoc.clientEmail || clientUser?.email || caseDoc.clientEmail;
+        const complainantPhone = caseDoc.clientPhone || clientUser?.phone || caseDoc.clientPhone;
+        const complainantAddress = caseDoc.clientAddress || clientUser?.address || caseDoc.clientAddress;
 
         // Generate PDF Buffer
         let pdfBuffer: Buffer;
@@ -359,14 +325,15 @@ async function handleDispatch(req: NextRequest) {
         if (emailSent) {
           // --- PRIMARY EMAIL DELIVERED SUCCESSFULLY ---
           // Immediately trigger the client notification in parallel
-          const clientEmail = clientUser?.email || caseDoc.clientEmail || "";
-          const clientPhone = clientUser?.phone || caseDoc.clientPhone || "";
+          const clientEmail = caseDoc.clientEmail || clientUser?.email || caseDoc.clientEmail || "";
+          const clientPhone = caseDoc.clientPhone || clientUser?.phone || caseDoc.clientPhone || "";
 
           // Only notify if we actually dispatched (or completed) the email in THIS execution run, avoiding double notifications
           if (isEmailPending) {
             console.log(`[Queue Processor] Email delivered successfully. Dispatching client updates inline.`);
             try {
-              const clientNotifRes = await sendClientNotification(
+              const clientNotifRes = await sendAndLogClientNotification(
+                db,
                 caseDoc,
                 caseDoc.currentStep,
                 clientDisplayName,
@@ -381,7 +348,6 @@ async function handleDispatch(req: NextRequest) {
           }
 
           const nextStep = caseDoc.currentStep + 1;
-          const speedPostId = `ED${Math.floor(100000000 + Math.random() * 900000000)}IN`;
           const nextScheduledTime = new Date(now.getTime() + 5 * 60 * 1000); // 5 minutes testing interval
 
           const updateDoc: any = {
@@ -390,7 +356,6 @@ async function handleDispatch(req: NextRequest) {
             [`timeline.${stepIndex}.status`]: "completed",
             [`timeline.${stepIndex}.completedAt`]: now.toISOString(),
             [`timeline.${stepIndex}.date`]: formatTimelineDate(now),
-            [`timeline.${stepIndex}.speedPostId`]: speedPostId,
             [`timeline.${stepIndex}.description`]: "Dispatched via Zoho Email & WATI WhatsApp",
           };
 
@@ -440,7 +405,7 @@ async function handleDispatch(req: NextRequest) {
 
       } else if (caseDoc.currentStep === 4) {
         // Step 4: SHO Criminal Police Complaint (Direct Email to SHO & Accused, CC Client)
-        const clientEmail = clientUser?.email || caseDoc.clientEmail;
+        const clientEmail = caseDoc.clientEmail || clientUser?.email || caseDoc.clientEmail;
         if (!clientEmail) {
           console.error(`[Queue Processor] Client email missing for Case ${caseDoc.caseId}`);
           await db.collection("cases").updateOne(
@@ -450,9 +415,9 @@ async function handleDispatch(req: NextRequest) {
           continue;
         }
 
-        const complainantEmail = clientUser?.email || caseDoc.clientEmail;
-        const complainantPhone = clientUser?.phone || caseDoc.clientPhone;
-        const complainantAddress = clientUser?.address || caseDoc.clientAddress;
+        const complainantEmail = caseDoc.clientEmail || clientUser?.email || caseDoc.clientEmail;
+        const complainantPhone = caseDoc.clientPhone || clientUser?.phone || caseDoc.clientPhone;
+        const complainantAddress = caseDoc.clientAddress || clientUser?.address || caseDoc.clientAddress;
 
         let pdfBuffer: Buffer;
         try {
@@ -526,6 +491,18 @@ async function handleDispatch(req: NextRequest) {
         await db.collection("dispatch_logs").insertOne(ledgerEntry);
 
         if (emailSent) {
+          try {
+            await logPoliceComplaintClientNotification(
+              db,
+              caseDoc,
+              clientDisplayName,
+              clientEmail,
+              noticeRef
+            );
+          } catch (notifErr) {
+            console.error(`[Queue Processor] Step 4 client notification logging error:`, notifErr);
+          }
+
           await db.collection("cases").updateOne(
             { _id: caseDoc._id },
             {

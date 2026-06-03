@@ -14,7 +14,8 @@ import {
   LogOut,
   ChevronRight,
   ShieldCheck,
-  LayoutDashboard
+  LayoutDashboard,
+  Info
 } from "lucide-react";
 
 const navigationItems = [
@@ -29,6 +30,12 @@ const navigationItems = [
     href: "/user/new-recovery",
     icon: Plus,
     mobileLabel: "New"
+  },
+  {
+    label: "How It Works",
+    href: "/user/how-it-works",
+    icon: Info,
+    mobileLabel: "Guide"
   },
   {
     label: "Notifications",
@@ -58,6 +65,9 @@ export default function UserPortalLayout({
   const [userName, setUserName] = useState("Tech AMA");
   const [userEmail, setUserEmail] = useState("tech.ama123@gmail.com");
 
+  // Onboarding tour state
+  const [onboardingState, setOnboardingState] = useState<string | null>(null);
+
   // Sync active count from database API to display in sidebar/bottombar
   useEffect(() => {
     const updateActiveCount = async () => {
@@ -76,6 +86,11 @@ export default function UserPortalLayout({
     };
 
     updateActiveCount();
+    
+    // Sync onboarding state on navigation
+    const tour = localStorage.getItem("lr_onboarding_state");
+    setOnboardingState(tour);
+
     // Listen for custom events to keep counts perfectly in sync across pages
     window.addEventListener("lr_cases_updated", updateActiveCount);
 
@@ -249,28 +264,64 @@ export default function UserPortalLayout({
             {navigationItems.map((item) => {
               const Icon = item.icon;
               const isActive = pathname === item.href;
+              const isSettingsTourHighlight = item.href === "/user/settings" && onboardingState === "recovery_done";
               return (
-                <Link
-                  key={item.href}
-                  href={item.href}
-                  className={`w-full flex items-center gap-3.5 px-4 py-3.5 text-[13px] font-bold rounded-xl transition-all duration-200 text-left focus:outline-none cursor-pointer group
-                    ${isActive 
-                      ? "bg-[#DC2626] text-white shadow-[0_4px_12px_rgba(220,38,38,0.2)]" 
-                      : "text-slate-300 hover:bg-white/5 hover:text-white"}`}
-                >
-                  <Icon className={`w-4 h-4 shrink-0 transition-colors duration-200
-                    ${isActive ? "text-white" : "text-slate-400 group-hover:text-white"}`} 
-                  />
-                  <span>{item.label}</span>
-                  {item.href === "/user/dashboard" && activeCount > 0 && (
-                    <span className={`ml-auto text-[10px] font-black px-2 py-0.5 rounded-full ${isActive ? "bg-red-800 text-white" : "bg-slate-800 text-slate-400"}`}>
-                      {activeCount}
-                    </span>
+                <div key={item.href} className="relative w-full">
+                  <Link
+                    href={item.href}
+                    onClick={() => {
+                      if (isSettingsTourHighlight) {
+                        localStorage.setItem("lr_onboarding_state", "settings_check");
+                        setOnboardingState("settings_check");
+                      }
+                    }}
+                    className={`w-full flex items-center gap-3.5 px-4 py-3.5 text-[13px] font-bold rounded-xl transition-all duration-200 text-left focus:outline-none cursor-pointer group
+                      ${isActive 
+                        ? "bg-[#DC2626] text-white shadow-[0_4px_12px_rgba(220,38,38,0.2)]" 
+                        : isSettingsTourHighlight
+                        ? "bg-white/5 border border-red-500 text-white animate-pulse shadow-[0_0_15px_rgba(220,38,38,0.3)]"
+                        : "text-slate-300 hover:bg-white/5 hover:text-white"}`}
+                  >
+                    <Icon className={`w-4 h-4 shrink-0 transition-colors duration-200
+                      ${isActive ? "text-white" : isSettingsTourHighlight ? "text-red-400" : "text-slate-400 group-hover:text-white"}`} 
+                    />
+                    <span>{item.label}</span>
+                    {item.href === "/user/dashboard" && activeCount > 0 && (
+                      <span className={`ml-auto text-[10px] font-black px-2 py-0.5 rounded-full ${isActive ? "bg-red-800 text-white" : "bg-slate-800 text-slate-400"}`}>
+                        {activeCount}
+                      </span>
+                    )}
+                    <ChevronRight className={`w-3.5 h-3.5 ml-auto opacity-0 scale-90 group-hover:opacity-100 group-hover:scale-100 transition-all duration-200
+                      ${isActive ? "text-white opacity-100!" : "text-slate-400"}`} 
+                    />
+                  </Link>
+
+                  {/* Sidebar Floating Tooltip next to Settings */}
+                  {isSettingsTourHighlight && (
+                    <div className="hidden lg:block absolute left-[calc(100%+16px)] top-1/2 -translate-y-1/2 bg-slate-900 text-white rounded-2xl p-4 shadow-2xl border border-slate-700 w-80 text-left pointer-events-auto z-50 animate-in slide-in-from-left-4 duration-300 font-sans">
+                      <div className="flex justify-between items-start mb-1.5">
+                        <span className="text-[10px] font-black uppercase tracking-wider text-red-400 bg-red-950/50 px-2 py-0.5 rounded select-none">Quick Guide</span>
+                        <button 
+                          onClick={(e) => {
+                            e.stopPropagation();
+                            e.preventDefault();
+                            localStorage.setItem("lr_onboarding_state", "completed");
+                            setOnboardingState("completed");
+                          }} 
+                          className="text-slate-450 hover:text-white text-xs font-bold cursor-pointer"
+                        >
+                          ✕
+                        </button>
+                      </div>
+                      <p className="text-xs font-semibold leading-relaxed text-slate-100">
+                        Confirm your profile details (owner name, email, and address) in Settings to ensure notice dispatches launch correctly.
+                      </p>
+                      <div className="text-[9px] font-extrabold text-[#DC2626] uppercase mt-2 select-none tracking-wider text-center">
+                        Click Settings to finalize!
+                      </div>
+                    </div>
                   )}
-                  <ChevronRight className={`w-3.5 h-3.5 ml-auto opacity-0 scale-90 group-hover:opacity-100 group-hover:scale-100 transition-all duration-200
-                    ${isActive ? "text-white opacity-100!" : "text-slate-400"}`} 
-                  />
-                </Link>
+                </div>
               );
             })}
           </nav>
@@ -303,26 +354,61 @@ export default function UserPortalLayout({
         {navigationItems.map((item) => {
           const Icon = item.icon;
           const isActive = pathname === item.href;
+          const isSettingsTourHighlight = item.href === "/user/settings" && onboardingState === "recovery_done";
           return (
-            <Link
-              key={item.href}
-              href={item.href}
-              className={`flex flex-col items-center justify-center py-2 px-3 gap-1 cursor-pointer select-none transition-colors duration-150 relative min-w-[64px]
-                ${isActive ? "text-[#DC2626]" : "text-slate-400 hover:text-slate-700"}`}
-            >
-              <div className="relative">
-                <Icon className={`w-5 h-5 shrink-0 ${isActive ? "text-[#DC2626]" : "text-slate-400"}`} />
-                {item.href === "/user/dashboard" && activeCount > 0 && (
-                  <span className="absolute -top-1.5 -right-2 bg-red-500 text-white text-[8px] font-extrabold w-4 h-4 rounded-full flex items-center justify-center scale-90 border border-white">
-                    {activeCount}
-                  </span>
+            <div key={item.href} className="relative flex flex-col items-center justify-center min-w-[64px]">
+              <Link
+                href={item.href}
+                onClick={() => {
+                  if (isSettingsTourHighlight) {
+                    localStorage.setItem("lr_onboarding_state", "settings_check");
+                    setOnboardingState("settings_check");
+                  }
+                }}
+                className={`flex flex-col items-center justify-center py-2 px-3 gap-1 cursor-pointer select-none transition-colors duration-150 min-w-[64px]
+                  ${isActive 
+                    ? "text-[#DC2626]" 
+                    : isSettingsTourHighlight
+                    ? "text-red-500 font-extrabold animate-pulse"
+                    : "text-slate-400 hover:text-slate-700"}`}
+              >
+                <div className="relative">
+                  <Icon className={`w-5 h-5 shrink-0 ${isActive ? "text-[#DC2626]" : isSettingsTourHighlight ? "text-red-500" : "text-slate-400"}`} />
+                  {item.href === "/user/dashboard" && activeCount > 0 && (
+                    <span className="absolute -top-1.5 -right-2 bg-red-500 text-white text-[8px] font-extrabold w-4 h-4 rounded-full flex items-center justify-center scale-90 border border-white">
+                      {activeCount}
+                    </span>
+                  )}
+                </div>
+                <span className="text-[9.5px] font-extrabold leading-none">{item.mobileLabel}</span>
+                {isActive && (
+                  <span className="absolute bottom-1 w-1.5 h-1.5 bg-[#DC2626] rounded-full" />
                 )}
-              </div>
-              <span className="text-[9.5px] font-extrabold leading-none">{item.mobileLabel}</span>
-              {isActive && (
-                <span className="absolute bottom-1 w-1.5 h-1.5 bg-[#DC2626] rounded-full" />
+              </Link>
+
+              {/* Mobile Tooltip pointing upwards */}
+              {isSettingsTourHighlight && (
+                <div className="absolute bottom-[calc(100%+8px)] right-[-10px] sm:right-0 bg-slate-900 text-white rounded-xl p-3 shadow-2xl border border-slate-700 w-56 text-left pointer-events-auto z-50 animate-in slide-in-from-bottom-3 duration-300 font-sans leading-normal">
+                  <div className="flex justify-between items-start mb-1">
+                    <span className="text-[9px] font-black uppercase tracking-wider text-red-400 bg-red-950/50 px-1.5 py-0.5 rounded">Quick Guide</span>
+                    <button 
+                      onClick={(e) => {
+                        e.stopPropagation();
+                        e.preventDefault();
+                        localStorage.setItem("lr_onboarding_state", "completed");
+                        setOnboardingState("completed");
+                      }} 
+                      className="text-slate-450 hover:text-white text-xs font-bold cursor-pointer"
+                    >
+                      ✕
+                    </button>
+                  </div>
+                  <p className="text-[10px] font-bold text-slate-100">
+                    Confirm your details in Settings to launch dispatches!
+                  </p>
+                </div>
               )}
-            </Link>
+            </div>
           );
         })}
       </nav>

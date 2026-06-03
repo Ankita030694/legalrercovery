@@ -123,7 +123,7 @@ export default function FreelancerRecoveryClient() {
     {
       id: "faq-7",
       question: "Can I recover payments from international clients based outside India?",
-      answer: "Yes, you can recover dues from international clients, though the procedural steps are slightly different. First, we send a formal legal notice via digital channels (registered email with read-tracking, WhatsApp, Slack) and, if possible, physical courier to their overseas office. International businesses are highly sensitive to legal compliance, brand damage, and copyright infringement notices. If they ignore the notice, we can file a complaint with international dispute bodies, report the intellectual property violation to their hosting providers (DMCA takedown), or initiate legal arbitration if your contract contains an international arbitration clause."
+      answer: "Yes, you can recover dues from international clients, though the procedural steps are slightly different. First, we send a formal legal notice via digital channels (registered email with read-tracking, WhatsApp, Slack) to their overseas office. International businesses are highly sensitive to legal compliance, brand damage, and copyright infringement notices. If they ignore the notice, we can file a complaint with international dispute bodies, report the intellectual property violation to their hosting providers (DMCA takedown), or initiate legal arbitration if your contract contains an international arbitration clause."
     },
     {
       id: "faq-8",
@@ -592,7 +592,7 @@ export default function FreelancerRecoveryClient() {
                 <ul>
                   <li><strong>Lack of Attorney Letterhead:</strong> Corporate legal teams immediately recognize home-printed notices as amateur attempts. A formal notice carrying the seal, signature, and letterhead of a registered, practicing advocate establishes a highly real legal threat.</li>
                   <li><strong>Failure to Leverage IP and Copyright Claims:</strong> Free templates usually frame disputes as general money recovery. They fail to outline that using unpaid code or designs is a criminal copyright infringement under Section 63 of the Copyright Act, which is a far more powerful lever to force instant payments.</li>
-                  <li><strong>No Digital tracking & Systematic Escalation:</strong> A single speed post letter is easily filed away. LegalRecovery uses real-time digital read-receipt tracking and automated week-by-week escalations to C-suite and investors, building overwhelming pressure.</li>
+                  <li><strong>No Digital tracking & Systematic Escalation:</strong> A single static letter is easily filed away. LegalRecovery uses real-time digital read-receipt tracking and automated week-by-week escalations to C-suite and investors, building overwhelming pressure.</li>
                 </ul>
                 <p>
                   LegalRecovery provides you with attorney-signed, state-customized notice campaigns. We use real-time digital read receipts to track when the HR opened the email, leaving them with absolutely no room to claim they never received the demand.

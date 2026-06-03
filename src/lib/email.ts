@@ -152,7 +152,7 @@ export async function sendPaymentSuccessEmail(toEmail: string, userName: string,
             <span style="font-size: 14px; color: #6b7280; display: block; font-weight: 600;">YOUR CASE ID</span>
             <span style="font-size: 24px; font-weight: 800; color: #dc2626; letter-spacing: 1px; display: block; margin-top: 5px;">${caseId}</span>
           </div>
-          <p>You can now log in to your secure Legal Recovery portal using your registered mobile number <strong>${phone}</strong> to track notice queue status, speed post dispatches, and real-time timeline updates.</p>
+          <p>You can now log in to your secure Legal Recovery portal using your registered mobile number <strong>${phone}</strong> to track notice queue status and real-time timeline updates.</p>
           <div style="text-align: center; margin: 30px 0;">
             <a href="https://legalrecovery.in/login" style="background-color: #dc2626; color: #ffffff; text-decoration: none; padding: 12px 25px; border-radius: 8px; font-weight: 700; font-size: 14px; display: inline-block;">Access Your Dashboard</a>
           </div>

@@ -44,6 +44,19 @@ export default function NewRecoveryForm() {
   const [generatedCaseId, setGeneratedCaseId] = useState("LR-0000-000000");
   const [mobileTab, setMobileTab] = useState<"form" | "preview">("form");
 
+  // Client profile state for notice previews
+  const [clientProfile, setClientProfile] = useState<{
+    name: string;
+    email: string;
+    phone: string;
+    state: string;
+    address: string;
+  } | null>(null);
+
+  // Onboarding tour states
+  const [onboardingState, setOnboardingState] = useState<string | null>(null);
+  const [onboardingTourStep, setOnboardingTourStep] = useState(1);
+
   useEffect(() => {
     const fetchNextCaseId = async () => {
       try {
@@ -58,7 +71,32 @@ export default function NewRecoveryForm() {
         console.error("Failed to fetch next case ID:", err);
       }
     };
+
+    const fetchProfile = async () => {
+      try {
+        const res = await fetch("/api/users/profile");
+        if (res.ok) {
+          const data = await res.json();
+          if (data.success && data.profile) {
+            setClientProfile(data.profile);
+          }
+        }
+      } catch (err) {
+        console.error("Failed to fetch user profile in new-recovery page:", err);
+      }
+    };
+
     fetchNextCaseId();
+    fetchProfile();
+
+    // Initialize onboarding
+    const tour = localStorage.getItem("lr_onboarding_state");
+    if (tour === "dashboard_new_recovery") {
+      setOnboardingState("new_recovery");
+      localStorage.setItem("lr_onboarding_state", "new_recovery");
+    } else {
+      setOnboardingState(tour);
+    }
   }, []);
 
   // ── ON CHANGE VALIDATION AND FORMATTING HANDLERS ──
@@ -207,6 +245,11 @@ export default function NewRecoveryForm() {
       // Notify sidebar components to sync claims badge count
       window.dispatchEvent(new Event("lr_cases_updated"));
 
+      const tour = localStorage.getItem("lr_onboarding_state");
+      if (tour === "new_recovery" || tour === "new_recovery_hint_read" || !tour) {
+        localStorage.setItem("lr_onboarding_state", "recovery_done");
+      }
+
       router.push("/user/dashboard");
     } catch (err: any) {
       console.error("Failed to save claim record:", err);
@@ -218,7 +261,7 @@ export default function NewRecoveryForm() {
   };
 
   return (
-    <div className={`flex flex-col gap-6 mx-auto text-left animate-in fade-in duration-355 ${previewTab === "police" ? "max-w-7xl" : "max-w-5xl"}`}>
+    <div className={`relative flex flex-col gap-6 mx-auto text-left animate-in fade-in duration-355 ${previewTab === "police" ? "max-w-7xl" : "max-w-5xl"}`}>
       
       {/* Back button */}
       <div>
@@ -232,9 +275,9 @@ export default function NewRecoveryForm() {
 
       {/* Header */}
       <div>
-        <h1 className="text-2xl sm:text-3xl font-black text-[#111827] tracking-tight">New Dues Notice Wizard</h1>
+        <h1 className="text-2xl sm:text-3xl font-black text-[#111827] tracking-tight">Initiate Debt Recovery</h1>
         <p className="text-xs sm:text-sm text-slate-500 font-semibold mt-1">
-          Provide claim placeholders and instantly preview your legal notices prior to Speed Post courier queuing.
+          Enter the defaulter's details and claim information to generate and schedule your automated legal demand notices.
         </p>
       </div>
 
@@ -272,7 +315,7 @@ export default function NewRecoveryForm() {
           {/* SECTION 1: DEFAULTER & CLAIM DETAILS */}
           <div className="bg-white border border-[#E5E7EB]/70 rounded-3xl p-6 sm:p-8 flex flex-col gap-5 shadow-sm">
             <h3 className="text-base font-black text-[#111827] border-b border-[#E5E7EB]/50 pb-2">
-              1. Defaulter & Stuck Dues details
+              1. Defaulter & Claim Details
             </h3>
             
             {/* Defaulter Name */}
@@ -396,9 +439,9 @@ export default function NewRecoveryForm() {
 
           {/* SECTION 2: POLICE AUTHORITY DETAILS COMPLAINT CARD */}
           <div className="bg-white border border-[#E5E7EB]/70 rounded-3xl p-6 sm:p-8 flex flex-col gap-5 shadow-sm">
-            <div className="border-b border-[#E5E7EB]/50 pb-2.5 flex items-center justify-between gap-3">
+             <div className="border-b border-[#E5E7EB]/50 pb-2.5 flex items-center justify-between gap-3">
               <h3 className="text-base font-black text-[#111827]">
-                2. Police Authority details
+                2. Jurisdictional Police Station Details
               </h3>
               <span className="text-[9px] font-black bg-slate-100 text-[#DC2626] px-2 py-0.5 rounded uppercase shrink-0">
                 Notice 4 Setup
@@ -467,7 +510,7 @@ export default function NewRecoveryForm() {
               className="w-full px-6 py-3 text-xs font-black text-white bg-[#DC2626] hover:bg-[#B91C1C] disabled:opacity-50 disabled:cursor-not-allowed rounded-xl transition-all flex items-center justify-center gap-1.5 cursor-pointer focus:outline-none shadow-md shadow-red-950/15"
             >
               {isValidating ? (
-                <>Auditing inputs via ChatGPT...</>
+                <>Auditing Inputs...</>
               ) : isSubmitting ? (
                 <>Saving Claim Tracks...</>
               ) : (
@@ -482,7 +525,7 @@ export default function NewRecoveryForm() {
           
           {/* Tab selector */}
           <div className="flex flex-col gap-2">
-            <span className="text-xs font-black text-[#111827] uppercase tracking-wider block">Live Placeholder Notice Switcher</span>
+            <span className="text-xs font-black text-[#111827] uppercase tracking-wider block">Select Demand Notice to Preview</span>
             <div className="grid grid-cols-4 gap-1.5 bg-slate-150 p-1.5 rounded-xl border border-slate-200/40 shadow-inner">
               {[
                 { tab: "notice1", label: "Notice 1" },
@@ -515,7 +558,7 @@ export default function NewRecoveryForm() {
 
           {/* Letterhead Mock Paper */}
           <div 
-            className="bg-white border border-[#E5E7EB]/70 rounded-3xl p-6 sm:p-8 shadow-sm flex flex-col gap-4 relative overflow-hidden aspect-[3/4] select-text"
+            className="bg-white border border-[#E5E7EB]/70 rounded-3xl p-6 sm:p-8 shadow-sm flex flex-col gap-4 relative select-text"
             style={{ fontFamily: "'Times New Roman', Times, serif" }}
           >
             {/* Legal letterhead graphic banner */}
@@ -558,7 +601,7 @@ export default function NewRecoveryForm() {
             </div>
 
             {/* ── DYNAMIC PREVIEW PANES ── */}
-            <div className="flex-1 overflow-y-auto pr-2 flex flex-col gap-4">
+            <div className="w-full flex flex-col gap-4">
             
             {/* Notice 1 */}
             {previewTab === "notice1" && (
@@ -582,13 +625,13 @@ export default function NewRecoveryForm() {
                   </div>
 
                   <div className="text-xs font-bold text-slate-900 border-b border-[#E5E7EB] pb-1 uppercase leading-tight">
-                    Subject: Demand Notice for Immediate Clearance of Outstanding Liability of ₹{stuckAmount || "[Amount]"} Towards Tech AMA
+                    Subject: Demand Notice for Immediate Clearance of Outstanding Liability of ₹{stuckAmount || "[Amount]"} Towards {clientProfile?.name || "Tech AMA"}
                   </div>
 
                   <p>Dear Sir/Madam,</p>
                   
                   <p>
-                    Under instructions from and on behalf of our client Tech AMA, residing at <strong className="bg-yellow-50 px-0.5">Delhi, India</strong>, we hereby call upon you to address and resolve the pending amount/claim arising out of dealings, transactions, services, agreements, commitments, or obligations between you and our client.
+                    Under instructions from and on behalf of our client {clientProfile?.name || "Tech AMA"}, residing at <strong className="bg-yellow-50 px-0.5">{clientProfile?.address || "Delhi, India"}</strong>, we hereby call upon you to address and resolve the pending amount/claim arising out of dealings, transactions, services, agreements, commitments, or obligations between you and our client.
                   </p>
                   
                   <p>
@@ -622,7 +665,7 @@ export default function NewRecoveryForm() {
                   </p>
 
                   <div className="mt-2 flex flex-col gap-0.5 text-left text-[8.5px] font-bold text-slate-500">
-                    <span>For and on behalf of Tech AMA</span>
+                    <span>For and on behalf of {clientProfile?.name || "Tech AMA"}</span>
                     <span className="text-slate-900 font-extrabold uppercase mt-1">Kindly treat this matter as urgent.</span>
                   </div>
                 </div>
@@ -646,13 +689,13 @@ export default function NewRecoveryForm() {
                 </div>
 
                 <div className="text-xs font-bold text-center text-slate-900 border-y border-[#E5E7EB] py-1.5 uppercase leading-tight">
-                  Subject: Demand Notice for Immediate Clearance of Outstanding Liability of ₹{stuckAmount || "[Amount]"} Towards Tech AMA
+                  Subject: Demand Notice for Immediate Clearance of Outstanding Liability of ₹{stuckAmount || "[Amount]"} Towards {clientProfile?.name || "Tech AMA"}
                 </div>
 
                 <div className="text-[9.5px] leading-relaxed text-slate-700 flex flex-col gap-3 select-text">
                   <p>Dear Sir/Madam,</p>
                   <p>
-                    Under instructions and authority from our client <strong>Tech AMA</strong>, residing/having office at <strong>Delhi, India</strong>, we hereby issue the present Second and Final Legal Notice calling upon you to immediately clear the outstanding dues/claim amounting to <strong className="bg-yellow-50 px-0.5">₹{stuckAmount || "[Amount]"}</strong> payable towards our client arising out of transactions, services, agreements, commitments, business dealings, or financial obligations undertaken by you.
+                    Under instructions and authority from our client <strong>{clientProfile?.name || "Tech AMA"}</strong>, residing/having office at <strong>{clientProfile?.address || "Delhi, India"}</strong>, we hereby issue the present Second and Final Legal Notice calling upon you to immediately clear the outstanding dues/claim amounting to <strong className="bg-yellow-50 px-0.5">₹{stuckAmount || "[Amount]"}</strong> payable towards our client arising out of transactions, services, agreements, commitments, business dealings, or financial obligations undertaken by you.
                   </p>
                   <p>
                     Despite repeated reminders, communications, and an earlier legal notice served upon you, you have failed to regularize the matter or provide any satisfactory response. Your conduct clearly reflects deliberate negligence, avoidance, and non-compliance towards lawful obligations owed to our client.
@@ -712,7 +755,7 @@ export default function NewRecoveryForm() {
                 <div className="text-[9.5px] leading-relaxed text-slate-700 flex flex-col gap-3 select-text">
                   <p>Dear Sir/Madam,</p>
                   <p>
-                    Under instructions from and on behalf of my client <strong>Tech AMA</strong>, I hereby issue the present Final Legal Notice against you with respect to the outstanding amount/claim of <strong className="bg-yellow-50 px-0.5">INR {stuckAmount || "[Amount]"}/-</strong> arising out of dealings, transactions, services, agreements, commitments, or obligations between you and our client.
+                    Under instructions from and on behalf of my client <strong>{clientProfile?.name || "Tech AMA"}</strong>, I hereby issue the present Final Legal Notice against you with respect to the outstanding amount/claim of <strong className="bg-yellow-50 px-0.5">INR {stuckAmount || "[Amount]"}/-</strong> arising out of dealings, transactions, services, agreements, commitments, or obligations between you and our client.
                   </p>
                   <p>
                     It is pertinent to note that despite repeated reminders, follow-ups, and opportunities extended to you for amicable resolution, you have deliberately failed and neglected to clear the outstanding liability and/or honour your commitments. Your conduct has caused substantial financial loss, harassment, mental agony, and inconvenience to my client.
@@ -777,7 +820,6 @@ export default function NewRecoveryForm() {
                     {policeStationAddress || "[POLICE STATION ADDRESS]"}
                   </span>
                 </div>
-
                 <div className="text-xs font-bold text-center text-slate-900 border-y border-[#E5E7EB] py-1.5 uppercase leading-tight">
                   Subject: Complaint Against {defaulterName || "[Accused Name]"} for Cheating, Criminal Breach of Trust, Dishonest Non-Payment and Other Applicable Offences Under Bharatiya Nyaya Sanhita (BNS)
                 </div>
@@ -785,10 +827,10 @@ export default function NewRecoveryForm() {
                 <div className="text-[9.5px] leading-relaxed text-slate-700 flex flex-col gap-3 select-text">
                   <div className="text-[10px] font-black uppercase text-slate-800 border-b border-[#E5E7EB] pb-0.5">COMPLAINANT DETAILS</div>
                   <div className="grid grid-cols-3 text-[9px] font-semibold text-slate-700 gap-y-0.5 pl-1">
-                    <span className="font-bold text-slate-500">Name:</span><span className="col-span-2 text-slate-950">Tech AMA</span>
-                    <span className="font-bold text-slate-500">Phone Number:</span><span className="col-span-2">+91-8700343611</span>
-                    <span className="font-bold text-slate-500">Email ID:</span><span className="col-span-2">notice@amalegalsolutions.com</span>
-                    <span className="font-bold text-slate-500">Address:</span><span className="col-span-2">2493AP, Ground floor, Sector 57, Gurugram-122003 (Haryana)</span>
+                    <span className="font-bold text-slate-500">Name:</span><span className="col-span-2 text-slate-950">{clientProfile?.name || "Tech AMA"}</span>
+                    <span className="font-bold text-slate-500">Phone Number:</span><span className="col-span-2">{clientProfile?.phone ? "+91 " + clientProfile.phone : "+91 87003 43611"}</span>
+                    <span className="font-bold text-slate-500">Email ID:</span><span className="col-span-2">{clientProfile?.email || "notice@amalegalsolutions.com"}</span>
+                    <span className="font-bold text-slate-500">Address:</span><span className="col-span-2">{clientProfile?.address || "2493AP, Ground floor, Sector 57, Gurugram-122003 (Haryana)"}</span>
                   </div>
 
                   <div className="text-[10px] font-black uppercase text-slate-800 border-b border-[#E5E7EB] pb-0.5 mt-1">ACCUSED DETAILS</div>
@@ -802,7 +844,7 @@ export default function NewRecoveryForm() {
                   <p className="mt-1 font-semibold text-slate-950">Respected Sir/Madam,</p>
 
                   <p>
-                    Under instructions from and on behalf of our client, namely <strong>Tech AMA</strong>, we, AMA Legal Solutions, through our authorized legal representatives, hereby submit the present complaint against the above-mentioned accused for acts involving deliberate non-payment of legitimate dues, cheating, dishonest inducement, criminal breach of trust, and wrongful financial loss caused to our client.
+                    Under instructions from and on behalf of our client, namely <strong>{clientProfile?.name || "Tech AMA"}</strong>, we, AMA Legal Solutions, through our authorized legal representatives, hereby submit the present complaint against the above-mentioned accused for acts involving deliberate non-payment of legitimate dues, cheating, dishonest inducement, criminal breach of trust, and wrongful financial loss caused to our client.
                   </p>
 
                   <p>
@@ -876,14 +918,14 @@ export default function NewRecoveryForm() {
       <div className="fixed inset-0 bg-slate-900/60 backdrop-blur-sm z-50 flex items-center justify-center p-4 animate-in fade-in duration-200">
         <div className="bg-white rounded-3xl border border-slate-200 max-w-xl w-full p-6 sm:p-8 flex flex-col gap-6 shadow-2xl animate-in zoom-in-95 duration-200 text-left">
           <div>
-            <h3 className="text-lg font-black text-slate-900 tracking-tight">Review Case & Final Confirmation</h3>
+            <h3 className="text-lg font-black text-slate-900 tracking-tight">Review Claim Details & Confirm</h3>
             <p className="text-xs text-slate-500 font-semibold mt-1">
               Verify that all information is completely accurate before beginning automated dispatch.
             </p>
           </div>
 
           {/* Structured Details Preview */}
-          <div className="border border-slate-100 rounded-2xl overflow-hidden text-xs max-h-[300px] overflow-y-auto">
+          <div className="border border-slate-100 rounded-2xl overflow-hidden text-xs">
             <div className="bg-slate-50 border-b border-slate-100 px-4 py-2 font-black text-slate-800 uppercase tracking-wider text-[9px]">
               Defaulter & Dues Summary
             </div>
@@ -951,6 +993,61 @@ export default function NewRecoveryForm() {
         </div>
       </div>
     )}
+
+      {/* Onboarding Tour Tooltips */}
+      {onboardingState === "new_recovery" && (
+        <div className="absolute inset-0 z-50 pointer-events-none">
+          {onboardingTourStep === 1 ? (
+            <div className="fixed sm:absolute top-[280px] left-4 right-4 sm:left-[20px] sm:top-[300px] bg-slate-900 text-white rounded-2xl p-5 shadow-2xl border border-slate-700 max-w-sm flex flex-col gap-3 animate-in slide-in-from-top-4 duration-300 pointer-events-auto">
+              <div className="flex justify-between items-start">
+                <span className="text-[10px] font-black uppercase tracking-wider text-red-400 bg-red-950/50 px-2 py-0.5 rounded select-none">Claim Setup (1/2)</span>
+                <button onClick={() => setOnboardingState(null)} className="text-slate-400 hover:text-white text-xs font-bold cursor-pointer">✕</button>
+              </div>
+              <p className="text-xs font-semibold leading-relaxed">
+                Enter the details of the entity or individual you wish to recover money from. Fill in their legal name, outstanding amount, and local police station.
+              </p>
+              <div className="flex justify-end gap-2 mt-1">
+                <button
+                  type="button"
+                  onClick={() => setOnboardingState(null)}
+                  className="px-3 py-1.5 text-[10px] font-bold text-slate-350 hover:text-white cursor-pointer bg-transparent"
+                >
+                  Skip
+                </button>
+                <button
+                  type="button"
+                  onClick={() => setOnboardingTourStep(2)}
+                  className="px-3.5 py-1.5 text-[10px] font-black bg-[#DC2626] hover:bg-[#B91C1C] text-white rounded-lg cursor-pointer"
+                >
+                  Next Hint →
+                </button>
+              </div>
+            </div>
+          ) : (
+            <div className="fixed sm:absolute top-[200px] right-4 left-4 sm:left-auto sm:right-[20px] sm:top-[280px] bg-slate-900 text-white rounded-2xl p-5 shadow-2xl border border-slate-700 max-w-sm flex flex-col gap-3 animate-in slide-in-from-right-4 duration-300 pointer-events-auto">
+              <div className="flex justify-between items-start">
+                <span className="text-[10px] font-black uppercase tracking-wider text-red-400 bg-red-950/50 px-2 py-0.5 rounded select-none">Live Previews (2/2)</span>
+                <button onClick={() => setOnboardingState(null)} className="text-slate-400 hover:text-white text-xs font-bold cursor-pointer">✕</button>
+              </div>
+              <p className="text-xs font-semibold leading-relaxed">
+                Your legal demand notice drafts compile in real time on this letterhead! Use these tabs to toggle between Notice 1, Notice 2, Notice 3, and the Police SHO Complaint.
+              </p>
+              <div className="flex justify-end gap-2 mt-1">
+                <button
+                  type="button"
+                  onClick={() => {
+                    setOnboardingState(null);
+                    localStorage.setItem("lr_onboarding_state", "new_recovery_hint_read");
+                  }}
+                  className="px-4 py-2 text-[10px] font-black bg-[#DC2626] hover:bg-[#B91C1C] text-white rounded-lg cursor-pointer"
+                >
+                  Got It!
+                </button>
+              </div>
+            </div>
+          )}
+        </div>
+      )}
 
   </div>
   );

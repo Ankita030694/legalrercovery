@@ -151,6 +151,10 @@ export async function POST(req: NextRequest) {
       policeStationName,
       policeStationEmail,
       policeStationAddress,
+      clientName: user.name || user.companyName || "Tech AMA",
+      clientEmail: user.email || "",
+      clientPhone: user.phone || "",
+      clientAddress: user.address || "",
       status: "active",
       currentStep: 1,
       createdAt: today.toISOString(),
@@ -215,7 +219,7 @@ export async function PATCH(req: NextRequest) {
   try {
     const userId = new ObjectId((session.user as any).id);
     const body = await req.json();
-    const { id, status } = body;
+    const { id, status, recoveredAmount } = body;
 
     if (!id || !status) {
       return NextResponse.json({ error: "Case ID and status are required." }, { status: 400 });
@@ -239,13 +243,26 @@ export async function PATCH(req: NextRequest) {
       updatedAt: new Date().toISOString()
     };
 
-    if (status === "recovered" && existingCase.timeline) {
-      updateDoc.timeline = existingCase.timeline.map((t: any) => {
-        if (t.status === "scheduled" || t.status === "active" || t.status === "locked") {
-          return { ...t, status: "cancelled", description: "Notice stopped (Dues recovered)" };
-        }
-        return t;
-      });
+    if (status === "recovered") {
+      const amt = recoveredAmount !== undefined ? parseFloat(recoveredAmount) : existingCase.stuckAmount;
+      if (isNaN(amt) || amt < 0) {
+        return NextResponse.json({ error: "Invalid recovered amount." }, { status: 400 });
+      }
+      if (amt > existingCase.stuckAmount) {
+        return NextResponse.json({
+          error: `Recovered amount (₹${amt.toLocaleString("en-IN")}) cannot exceed the outstanding dues of ₹${existingCase.stuckAmount.toLocaleString("en-IN")}.`
+        }, { status: 400 });
+      }
+      updateDoc.recoveredAmount = amt;
+
+      if (existingCase.timeline) {
+        updateDoc.timeline = existingCase.timeline.map((t: any) => {
+          if (t.status === "scheduled" || t.status === "active" || t.status === "locked") {
+            return { ...t, status: "cancelled", description: `Notice stopped (Dues recovered: ₹${amt.toLocaleString("en-IN")})` };
+          }
+          return t;
+        });
+      }
     }
 
     await db.collection("cases").updateOne(

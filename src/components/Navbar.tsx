@@ -1,8 +1,9 @@
 "use client";
 
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { Menu, X } from "lucide-react";
 import { usePathname } from "next/navigation";
+import { getSession } from "next-auth/react";
 import { PaymentModal } from "@/components/PaymentModal";
 
 const navLinks = [
@@ -20,6 +21,15 @@ export default function Navbar() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const [isPaymentModalOpen, setIsPaymentModalOpen] = useState(false);
   const pathname = usePathname();
+  const [session, setSession] = useState<any>(null);
+  const [loading, setLoading] = useState(true);
+
+  useEffect(() => {
+    getSession().then((session) => {
+      setSession(session);
+      setLoading(false);
+    });
+  }, []);
 
   if (pathname?.startsWith("/user")) {
     return null;
@@ -55,12 +65,23 @@ export default function Navbar() {
 
         {/* ── Desktop Right Buttons ── */}
         <div className="hidden xl:flex items-center gap-4 relative">
-          <a
-            href="/login"
-            className="px-5 py-2.5 text-[13.5px] font-bold text-[#4B5563] hover:text-[#DC2626] border border-[#E5E7EB] hover:border-[#DC2626]/30 rounded-[10px] transition-all duration-200 select-none text-center"
-          >
-            Login
-          </a>
+          {loading ? (
+            <div className="w-[80px] h-[38px] bg-[#E5E7EB]/50 rounded-[10px] animate-pulse" />
+          ) : session ? (
+            <a
+              href={session?.user?.role === "admin" ? "/authority/blog" : "/user/dashboard"}
+              className="px-5 py-2.5 text-[13.5px] font-bold text-[#4B5563] hover:text-[#DC2626] border border-[#E5E7EB] hover:border-[#DC2626]/30 rounded-[10px] transition-all duration-200 select-none text-center"
+            >
+              Dashboard
+            </a>
+          ) : (
+            <a
+              href="/login"
+              className="px-5 py-2.5 text-[13.5px] font-bold text-[#4B5563] hover:text-[#DC2626] border border-[#E5E7EB] hover:border-[#DC2626]/30 rounded-[10px] transition-all duration-200 select-none text-center"
+            >
+              Login
+            </a>
+          )}
           <button
             onClick={() => setIsPaymentModalOpen(true)}
             className="px-5 py-2.5 text-[13.5px] font-bold text-white bg-[#DC2626] hover:bg-[#B91C1C] rounded-[10px] shadow-[0_4px_12px_rgba(220,38,38,0.15)] transition-all duration-200 hover:-translate-y-0.5 focus:outline-none select-none cursor-pointer"
@@ -106,13 +127,25 @@ export default function Navbar() {
             >
               Recover My Money
             </button>
-            <a
-              href="/login"
-              onClick={() => setMobileMenuOpen(false)}
-              className="flex items-center justify-center gap-2 py-3.5 text-sm font-bold text-[#4B5563] border border-[#E5E7EB] rounded-xl text-center"
-            >
-              Login
-            </a>
+            {loading ? (
+              <div className="w-full h-[46px] bg-[#E5E7EB]/50 rounded-xl animate-pulse" />
+            ) : session ? (
+              <a
+                href={session?.user?.role === "admin" ? "/authority/blog" : "/user/dashboard"}
+                onClick={() => setMobileMenuOpen(false)}
+                className="flex items-center justify-center gap-2 py-3.5 text-sm font-bold text-[#4B5563] border border-[#E5E7EB] rounded-xl text-center"
+              >
+                Dashboard
+              </a>
+            ) : (
+              <a
+                href="/login"
+                onClick={() => setMobileMenuOpen(false)}
+                className="flex items-center justify-center gap-2 py-3.5 text-sm font-bold text-[#4B5563] border border-[#E5E7EB] rounded-xl text-center"
+              >
+                Login
+              </a>
+            )}
             <a
               href="/contact"
               onClick={() => setMobileMenuOpen(false)}
