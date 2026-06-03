@@ -113,11 +113,23 @@ Legal Dispatch Desk
 AMA Legal Solutions`;
 
     // 2. Perform parallel dispatch: Zoho Email + WATI WhatsApp
-    const clientEmail = caseDoc.clientEmail || clientUser.email || caseDoc.clientEmail;
-    const [emailSent, whatsappSent] = await Promise.all([
-      sendNoticeEmail(caseDoc.email, emailSubject, emailBody, pdfBuffer, pdfFilename, clientEmail),
+    const toEmails = caseDoc.email2 ? `${caseDoc.email},${caseDoc.email2}` : caseDoc.email;
+    const watiPromises = [
       sendNoticeWati(caseDoc.phone, caseDoc.defaulterName, caseDoc.stuckAmount, clientDisplayName)
+    ];
+    if (caseDoc.phone2) {
+      watiPromises.push(
+        sendNoticeWati(caseDoc.phone2, caseDoc.defaulterName, caseDoc.stuckAmount, clientDisplayName)
+      );
+    }
+
+    const clientEmail = caseDoc.clientEmail || clientUser.email || caseDoc.clientEmail;
+    const [emailSent, watiResults] = await Promise.all([
+      sendNoticeEmail(toEmails, emailSubject, emailBody, pdfBuffer, pdfFilename, clientEmail),
+      Promise.all(watiPromises)
     ]);
+
+    const whatsappSent = watiResults.every(r => r === true);
 
     console.log(`[Manual Start] Dispatches complete. Zoho Email status: ${emailSent}, WhatsApp status: ${whatsappSent}`);
 
@@ -126,8 +138,8 @@ AMA Legal Solutions`;
       caseId: caseDoc.caseId,
       dbId: caseDoc._id,
       step: 1,
-      recipientEmail: caseDoc.email,
-      recipientPhone: caseDoc.phone,
+      recipientEmail: toEmails,
+      recipientPhone: caseDoc.phone2 ? `${caseDoc.phone}, ${caseDoc.phone2}` : caseDoc.phone,
       dispatchedAt: new Date().toISOString(),
       channels: {
         email: {

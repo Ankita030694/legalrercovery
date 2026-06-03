@@ -113,11 +113,13 @@ AMA Legal Solutions`;
   // 1. Email Channel
   if (isEmailPending) {
     if (step <= 3) {
-      promises.push(sendNoticeEmail(caseDoc.email, emailSubject, emailBody, pdfBuffer, pdfFilename, complainantEmail));
+      const toEmails = caseDoc.email2 ? `${caseDoc.email},${caseDoc.email2}` : caseDoc.email;
+      promises.push(sendNoticeEmail(toEmails, emailSubject, emailBody, pdfBuffer, pdfFilename, complainantEmail));
     } else {
       const toEmails = [];
       if (caseDoc.policeStationEmail) toEmails.push(caseDoc.policeStationEmail);
       if (caseDoc.email) toEmails.push(caseDoc.email);
+      if (caseDoc.email2) toEmails.push(caseDoc.email2);
       if (toEmails.length === 0) toEmails.push(complainantEmail);
       const recipientTo = toEmails.join(", ");
       promises.push(sendNoticeEmail(recipientTo, emailSubject, emailBody, pdfBuffer, pdfFilename, complainantEmail));
@@ -128,7 +130,17 @@ AMA Legal Solutions`;
 
   // 2. WhatsApp Channel (Steps 1-3 only)
   if (step <= 3) {
-    promises.push(sendNoticeWati(caseDoc.phone, caseDoc.defaulterName, caseDoc.stuckAmount, clientDisplayName));
+    const watiSends = [
+      sendNoticeWati(caseDoc.phone, caseDoc.defaulterName, caseDoc.stuckAmount, clientDisplayName)
+    ];
+    if (caseDoc.phone2) {
+      watiSends.push(
+        sendNoticeWati(caseDoc.phone2, caseDoc.defaulterName, caseDoc.stuckAmount, clientDisplayName)
+      );
+    }
+    promises.push(
+      Promise.all(watiSends).then(results => results.every(res => res === true))
+    );
   } else {
     promises.push(Promise.resolve(true));
   }
@@ -301,8 +313,8 @@ async function handleDispatch(req: NextRequest) {
           dbId: caseDoc._id,
           step: caseDoc.currentStep,
           noticeRef,
-          recipientEmail: caseDoc.email,
-          recipientPhone: caseDoc.phone,
+          recipientEmail: caseDoc.email2 ? `${caseDoc.email}, ${caseDoc.email2}` : caseDoc.email,
+          recipientPhone: caseDoc.phone2 ? `${caseDoc.phone}, ${caseDoc.phone2}` : caseDoc.phone,
           dispatchedAt: new Date().toISOString(),
           channels: {
             email: {
@@ -512,7 +524,7 @@ async function handleDispatch(req: NextRequest) {
                 "timeline.3.status": "completed",
                 "timeline.3.completedAt": now.toISOString(),
                 "timeline.3.date": formatDateString(now),
-                "timeline.3.description": `Complaint sent directly to SHO (${caseDoc.policeStationEmail || 'No Email'}) & accused (${caseDoc.email}) with client in CC.`
+                "timeline.3.description": `Complaint sent directly to SHO (${caseDoc.policeStationEmail || 'No Email'}) & accused (${caseDoc.email}${caseDoc.email2 ? `, ${caseDoc.email2}` : ''}) with client in CC.`
               }
             }
           );

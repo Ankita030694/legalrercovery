@@ -26,7 +26,9 @@ export async function POST(req: NextRequest) {
       defaulterName,
       entityType,
       phone,
+      phone2,
       email,
+      email2,
       address,
       stuckAmount,
       dueDate,
@@ -51,11 +53,13 @@ export async function POST(req: NextRequest) {
       1. Defaulter Name: "${defaulterName}" (should be a plausible individual or business name, not gibberish, single letter, or a joke).
       2. Defaulter Address: "${address}" (should look like a plausible street, area, city, or pincode address, not a single word, placeholder, or gibberish).
       3. Defaulter Phone: "${phone}" (should be a standard 10-digit Indian number, not fake sequential/repeating numbers like "9999999999" or "1234567890").
-      4. Defaulter Email: "${email}" (should be a valid email format, not obviously fake/offensive domains or handles like "fuckyou@gmail.com").
-      5. Stuck Amount: "${stuckAmount}" (should be a realistic, plausible outstanding dues amount. Values above ₹1,00,00,000 (1 Crore) are considered absurd and highly likely to be fake/placeholder entries).
-      6. Due Date: "${dueDate}" (should be a realistic past or near-present due date, not futuristic or decades in the past).
-      7. Police Station Name: "${policeStationName}" (should be a plausible location or sector name of a police station, e.g. "Gurugram Sector 56", not placeholder/gibberish).
-      8. Police Station Address: "${policeStationAddress}" (should look like a plausible street or area location).
+      4. Defaulter Phone 2 (Optional): "${phone2 || 'Not provided'}" (if provided, should be a standard 10-digit Indian number, not fake sequential/repeating numbers like "9999999999" or "1234567890", and must not equal Defaulter Phone).
+      5. Defaulter Email: "${email}" (should be a valid email format, not obviously fake/offensive domains or handles like "fuckyou@gmail.com").
+      6. Defaulter Email 2 (Optional): "${email2 || 'Not provided'}" (if provided, should be a valid email format, not obviously fake/offensive, and must not equal Defaulter Email).
+      7. Stuck Amount: "${stuckAmount}" (should be a realistic, plausible outstanding dues amount. Values above ₹1,00,00,000 (1 Crore) are considered absurd and highly likely to be fake/placeholder entries).
+      8. Due Date: "${dueDate}" (should be a realistic past or near-present due date, not futuristic or decades in the past).
+      9. Police Station Name: "${policeStationName}" (should be a plausible location or sector name of a police station, e.g. "Gurugram Sector 56", not placeholder/gibberish).
+      10. Police Station Address: "${policeStationAddress}" (should look like a plausible street or area location).
 
       **Validation Criteria**:
       - If ANY field contains obvious gibberish (like "asdf", "zxccvb", "test1234"), profanity/abuse (e.g., "fuckyou@gmail.com"), obvious fake details ("Mickey Mouse", "Batman"), fake repeating digits ("9999999999"), or extreme nonsense placeholders/stuck amounts (like ₹99,99,99,999), classify it as INVALID.
@@ -74,7 +78,7 @@ export async function POST(req: NextRequest) {
       model: "gpt-4o-mini",
       messages: [
         { role: "system", content: systemPrompt },
-        { role: "user", content: `Please validate the following input data: Defaulter: "${defaulterName}", Address: "${address}", Police Station: "${policeStationName}", Police Station Address: "${policeStationAddress}"` }
+        { role: "user", content: `Please validate the following input data: Defaulter: "${defaulterName}", Address: "${address}", Police Station: "${policeStationName}", Police Station Address: "${policeStationAddress}", Phone 2: "${phone2 || ''}", Email 2: "${email2 || ''}"` }
       ],
       response_format: { type: "json_object" },
       temperature: 0.1, // Low temperature for high consistency

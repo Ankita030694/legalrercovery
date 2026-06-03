@@ -16,7 +16,8 @@ import {
   Phone,
   ShieldCheck,
   Building2,
-  Lock
+  Lock,
+  Plus
 } from "lucide-react";
 import Link from "next/link";
 
@@ -27,7 +28,11 @@ export default function NewRecoveryForm() {
   const [defaulterName, setDefaulterName] = useState("");
   const [entityType, setEntityType] = useState("Company");
   const [phone, setPhone] = useState("");
+  const [phone2, setPhone2] = useState("");
+  const [showPhone2, setShowPhone2] = useState(false);
   const [email, setEmail] = useState("");
+  const [email2, setEmail2] = useState("");
+  const [showEmail2, setShowEmail2] = useState(false);
   const [address, setAddress] = useState("");
   const [stuckAmount, setStuckAmount] = useState("");
   const [dueDate, setDueDate] = useState("");
@@ -41,6 +46,7 @@ export default function NewRecoveryForm() {
   const [isValidating, setIsValidating] = useState(false);
   const [validationError, setValidationError] = useState<string | null>(null);
   const [emailError, setEmailError] = useState(false);
+  const [email2Error, setEmail2Error] = useState(false);
   const [generatedCaseId, setGeneratedCaseId] = useState("LR-0000-000000");
   const [mobileTab, setMobileTab] = useState<"form" | "preview">("form");
 
@@ -112,6 +118,11 @@ export default function NewRecoveryForm() {
     setPhone(cleaned);
   };
 
+  const handlePhone2Change = (val: string) => {
+    const cleaned = val.replace(/\D/g, "").slice(0, 10);
+    setPhone2(cleaned);
+  };
+
   const handleEmailChange = (val: string) => {
     setEmail(val);
     if (!val) {
@@ -121,6 +132,16 @@ export default function NewRecoveryForm() {
     // Standard robust email validation regex
     const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
     setEmailError(!emailRegex.test(val));
+  };
+
+  const handleEmail2Change = (val: string) => {
+    setEmail2(val);
+    if (!val) {
+      setEmail2Error(false);
+      return;
+    }
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    setEmail2Error(!emailRegex.test(val));
   };
 
   const handleStuckAmountChange = (val: string) => {
@@ -156,8 +177,10 @@ export default function NewRecoveryForm() {
     defaulterName &&
     phone &&
     phone.length === 10 &&
+    (!showPhone2 || (phone2 && phone2.length === 10 && phone2 !== phone)) &&
     email &&
     !emailError &&
+    (!showEmail2 || (email2 && !email2Error && email2.toLowerCase().trim() !== email.toLowerCase().trim())) &&
     address &&
     stuckAmount &&
     dueDate &&
@@ -183,7 +206,9 @@ export default function NewRecoveryForm() {
             defaulterName,
             address,
             phone,
+            phone2,
             email,
+            email2,
             stuckAmount: stuckAmount.replace(/,/g, ""),
             dueDate,
             policeStationName,
@@ -226,7 +251,9 @@ export default function NewRecoveryForm() {
           defaulterName,
           entityType,
           phone,
+          phone2,
           email,
+          email2,
           address,
           stuckAmount: stuckAmount.replace(/,/g, ""),
           dueDate,
@@ -380,43 +407,137 @@ export default function NewRecoveryForm() {
                   max={new Date().toISOString().split("T")[0]}
                   value={dueDate}
                   onChange={(e) => handleDueDateChange(e.target.value)}
-                  className="bg-slate-50 hover:bg-slate-100/50 border border-[#E5E7EB] focus:border-[#DC2626] rounded-xl px-4 py-3 text-sm font-semibold outline-none transition-colors"
                 />
               </div>
             </div>
 
+            {/* Informational Help Alert for Multiple Contacts */}
+            <div className="text-[11px] font-bold text-slate-500 flex items-center gap-2 bg-slate-50 border border-[#E5E7EB]/50 px-4 py-2.5 rounded-xl w-fit">
+              <span className="w-1.5 h-1.5 rounded-full bg-[#DC2626] animate-pulse" />
+              <span>You can enter up to 2 unique phone numbers for WhatsApp broadcasts and up to 2 unique email IDs for notice dispatches.</span>
+            </div>
+
             {/* Defaulter Phone */}
-            <div className="flex flex-col">
-              <label className="text-xs font-bold text-slate-600 mb-1.5 flex items-center gap-1.5">
-                <Phone className="w-3.5 h-3.5 text-slate-400" /> Defaulter Mobile Number
-              </label>
-              <input 
-                type="tel" 
-                required
-                placeholder="e.g. 9876543210"
-                value={phone}
-                onChange={(e) => handlePhoneChange(e.target.value)}
-                className="bg-slate-50 hover:bg-slate-100/50 border border-[#E5E7EB] focus:border-[#DC2626] rounded-xl px-4 py-3 text-sm font-semibold outline-none transition-colors"
-              />
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 items-end">
+              <div className="flex flex-col">
+                <label className="text-xs font-bold text-slate-600 mb-1.5 flex items-center gap-1.5">
+                  <Phone className="w-3.5 h-3.5 text-slate-400" /> Defaulter Mobile Number 1
+                </label>
+                <input 
+                  type="tel" 
+                  required
+                  placeholder="e.g. 9876543210"
+                  value={phone}
+                  onChange={(e) => handlePhoneChange(e.target.value)}
+                  className="bg-slate-50 hover:bg-slate-100/50 border border-[#E5E7EB] focus:border-[#DC2626] rounded-xl px-4 py-3 text-sm font-semibold outline-none transition-colors"
+                />
+              </div>
+
+              {!showPhone2 ? (
+                <div className="flex items-center h-[46px]">
+                  <button
+                    type="button"
+                    onClick={() => setShowPhone2(true)}
+                    className="flex items-center gap-2 text-xs font-bold text-[#DC2626] hover:text-[#DC2626]/80 bg-red-50 hover:bg-red-100/50 px-4 py-2.5 rounded-xl border border-dashed border-red-200 transition-all shadow-sm cursor-pointer"
+                  >
+                    <Plus className="w-3.5 h-3.5" /> Add Secondary Mobile Number
+                  </button>
+                </div>
+              ) : (
+                <div className="flex flex-col relative group">
+                  <label className="text-xs font-bold text-slate-600 mb-1.5 flex items-center justify-between">
+                    <span className="flex items-center gap-1.5">
+                      <Phone className="w-3.5 h-3.5 text-slate-400" /> Defaulter Mobile Number 2 (Optional)
+                    </span>
+                    <button 
+                      type="button" 
+                      onClick={() => { setShowPhone2(false); setPhone2(""); }}
+                      className="text-[10px] font-bold text-red-500 hover:underline cursor-pointer"
+                    >
+                      Remove
+                    </button>
+                  </label>
+                  <input 
+                    type="tel" 
+                    placeholder="e.g. 9876543211"
+                    value={phone2}
+                    onChange={(e) => handlePhone2Change(e.target.value)}
+                    className={`bg-slate-50 hover:bg-slate-100/50 border rounded-xl px-4 py-3 text-sm font-semibold outline-none transition-colors
+                      ${phone2 && phone2 === phone ? "border-red-300 focus:border-red-500" : "border-[#E5E7EB] focus:border-[#DC2626]"}`}
+                  />
+                  {phone2 && phone2 === phone && (
+                    <span className="text-[11px] text-red-500 font-semibold mt-1">
+                      Must be unique from Mobile Number 1.
+                    </span>
+                  )}
+                </div>
+              )}
             </div>
 
             {/* Defaulter Email */}
-            <div className="flex flex-col">
-              <label className="text-xs font-bold text-slate-600 mb-1.5 flex items-center gap-1.5">
-                <Mail className="w-3.5 h-3.5 text-slate-400" /> Defaulter Email Address
-              </label>
-              <input 
-                type="email" 
-                required
-                placeholder="e.g. billing@company.in"
-                value={email}
-                onChange={(e) => handleEmailChange(e.target.value)}
-                className="bg-slate-50 hover:bg-slate-100/50 border border-[#E5E7EB] focus:border-[#DC2626] rounded-xl px-4 py-3 text-sm font-semibold outline-none transition-colors"
-              />
-              {emailError && (
-                <span className="text-[11px] text-red-500 font-semibold mt-1">
-                  Please enter a valid email address.
-                </span>
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 items-end">
+              <div className="flex flex-col">
+                <label className="text-xs font-bold text-slate-600 mb-1.5 flex items-center gap-1.5">
+                  <Mail className="w-3.5 h-3.5 text-slate-400" /> Defaulter Email Address 1
+                </label>
+                <input 
+                  type="email" 
+                  required
+                  placeholder="e.g. billing@company.in"
+                  value={email}
+                  onChange={(e) => handleEmailChange(e.target.value)}
+                  className="bg-slate-50 hover:bg-slate-100/50 border border-[#E5E7EB] focus:border-[#DC2626] rounded-xl px-4 py-3 text-sm font-semibold outline-none transition-colors"
+                />
+                {emailError && (
+                  <span className="text-[11px] text-red-500 font-semibold mt-1">
+                    Please enter a valid email address.
+                  </span>
+                )}
+              </div>
+
+              {!showEmail2 ? (
+                <div className="flex items-center h-[46px]">
+                  <button
+                    type="button"
+                    onClick={() => setShowEmail2(true)}
+                    className="flex items-center gap-2 text-xs font-bold text-[#DC2626] hover:text-[#DC2626]/80 bg-red-50 hover:bg-red-100/50 px-4 py-2.5 rounded-xl border border-dashed border-red-200 transition-all shadow-sm cursor-pointer"
+                  >
+                    <Plus className="w-3.5 h-3.5" /> Add Secondary Email Address
+                  </button>
+                </div>
+              ) : (
+                <div className="flex flex-col relative group">
+                  <label className="text-xs font-bold text-slate-600 mb-1.5 flex items-center justify-between">
+                    <span className="flex items-center gap-1.5">
+                      <Mail className="w-3.5 h-3.5 text-slate-400" /> Defaulter Email Address 2 (Optional)
+                    </span>
+                    <button 
+                      type="button" 
+                      onClick={() => { setShowEmail2(false); setEmail2(""); setEmail2Error(false); }}
+                      className="text-[10px] font-bold text-red-500 hover:underline cursor-pointer"
+                    >
+                      Remove
+                    </button>
+                  </label>
+                  <input 
+                    type="email" 
+                    placeholder="e.g. contact@company.in"
+                    value={email2}
+                    onChange={(e) => handleEmail2Change(e.target.value)}
+                    className={`bg-slate-50 hover:bg-slate-100/50 border rounded-xl px-4 py-3 text-sm font-semibold outline-none transition-colors
+                      ${email2Error || (email2 && email2.toLowerCase().trim() === email.toLowerCase().trim()) ? "border-red-300 focus:border-red-500" : "border-[#E5E7EB] focus:border-[#DC2626]"}`}
+                  />
+                  {email2Error && (
+                    <span className="text-[11px] text-red-500 font-semibold mt-1">
+                      Please enter a valid email address.
+                    </span>
+                  )}
+                  {email2 && email2.toLowerCase().trim() === email.toLowerCase().trim() && (
+                    <span className="text-[11px] text-red-500 font-semibold mt-1">
+                      Must be unique from Email Address 1.
+                    </span>
+                  )}
+                </div>
               )}
             </div>
 
@@ -617,8 +738,8 @@ export default function NewRecoveryForm() {
                     <span className="font-extrabold text-slate-900 bg-yellow-50 px-1 border border-yellow-100 rounded w-fit leading-tight mt-0.5">
                       {defaulterName || "[Name of Opposite Party / Individual / Company]"}
                     </span>
-                    {phone && <span className="text-slate-550 text-[8.5px]">Mobile: {phone}</span>}
-                    {email && <span className="text-slate-550 text-[8.5px]">Email: {email}</span>}
+                    {phone && <span className="text-slate-550 text-[8.5px]">Mobile: {phone}{phone2 ? `, ${phone2}` : ""}</span>}
+                    {email && <span className="text-slate-550 text-[8.5px]">Email: {email}{email2 ? `, ${email2}` : ""}</span>}
                     <span className="mt-0.5 bg-yellow-50 px-1 border border-yellow-100 rounded text-slate-800 font-bold max-w-[280px]">
                       {address || "[Address]"}
                     </span>
@@ -681,8 +802,8 @@ export default function NewRecoveryForm() {
                     {defaulterName || "[DEFAULTER LEGAL NAME]"}
                   </span>
                   <span>Constitution: {entityType}</span>
-                  {phone && <span>Mobile: {phone}</span>}
-                  {email && <span>Email: {email}</span>}
+                  {phone && <span>Mobile: {phone}{phone2 ? `, ${phone2}` : ""}</span>}
+                  {email && <span>Email: {email}{email2 ? `, ${email2}` : ""}</span>}
                   <span className="mt-0.5 bg-yellow-50 px-1 border border-yellow-100 rounded text-slate-800 font-bold max-w-[280px]">
                     {address || "[PHYSICAL STREET ADDRESS]"}
                   </span>
@@ -741,8 +862,8 @@ export default function NewRecoveryForm() {
                     {defaulterName || "[DEFAULTER LEGAL NAME]"}
                   </span>
                   <span>Constitution: {entityType}</span>
-                  {phone && <span>Mobile: {phone}</span>}
-                  {email && <span>Email: {email}</span>}
+                  {phone && <span>Mobile: {phone}{phone2 ? `, ${phone2}` : ""}</span>}
+                  {email && <span>Email: {email}{email2 ? `, ${email2}` : ""}</span>}
                   <span className="mt-0.5 bg-yellow-50 px-1 border border-yellow-100 rounded text-slate-800 font-bold max-w-[280px]">
                     {address || "[PHYSICAL STREET ADDRESS]"}
                   </span>
@@ -836,8 +957,8 @@ export default function NewRecoveryForm() {
                   <div className="text-[10px] font-black uppercase text-slate-800 border-b border-[#E5E7EB] pb-0.5 mt-1">ACCUSED DETAILS</div>
                   <div className="grid grid-cols-3 text-[9px] font-semibold text-slate-700 gap-y-0.5 pl-1">
                     <span className="font-bold text-slate-500">Name:</span><span className="col-span-2 text-slate-950 font-black bg-yellow-50 border border-yellow-100 rounded px-1 w-fit">{defaulterName || "[Accused Name]"}</span>
-                    <span className="font-bold text-slate-500">Phone Number:</span><span className="col-span-2">{phone || "[Phone Number]"}</span>
-                    <span className="font-bold text-slate-500">Email ID:</span><span className="col-span-2">{email || "[Email ID]"}</span>
+                    <span className="font-bold text-slate-500">Phone Number(s):</span><span className="col-span-2">{phone}{phone2 ? `, ${phone2}` : ""}</span>
+                    <span className="font-bold text-slate-500">Email ID(s):</span><span className="col-span-2">{email}{email2 ? `, ${email2}` : ""}</span>
                     <span className="font-bold text-slate-500">Address:</span><span className="col-span-2 bg-yellow-50 border border-yellow-100 rounded px-1 w-fit">{address || "[Accused Address]"}</span>
                   </div>
 
@@ -934,10 +1055,22 @@ export default function NewRecoveryForm() {
               <span className="col-span-2 text-slate-900 font-extrabold">{defaulterName}</span>
               <span className="font-bold text-slate-500">Type:</span>
               <span className="col-span-2 text-slate-700 font-semibold">{entityType}</span>
-              <span className="font-bold text-slate-500">Mobile Phone:</span>
+              <span className="font-bold text-slate-500">Mobile Phone 1:</span>
               <span className="col-span-2 text-slate-700 font-semibold">{phone}</span>
-              <span className="font-bold text-slate-500">Email Address:</span>
+              {phone2 && (
+                <>
+                  <span className="font-bold text-slate-500">Mobile Phone 2:</span>
+                  <span className="col-span-2 text-slate-700 font-semibold">{phone2}</span>
+                </>
+              )}
+              <span className="font-bold text-slate-500">Email Address 1:</span>
               <span className="col-span-2 text-slate-700 font-semibold">{email}</span>
+              {email2 && (
+                <>
+                  <span className="font-bold text-slate-500">Email Address 2:</span>
+                  <span className="col-span-2 text-slate-700 font-semibold">{email2}</span>
+                </>
+              )}
               <span className="font-bold text-slate-500">Physical Address:</span>
               <span className="col-span-2 text-slate-700 font-semibold">{address}</span>
               <span className="font-bold text-slate-500">Stuck Amount:</span>

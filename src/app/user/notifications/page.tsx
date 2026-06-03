@@ -207,8 +207,10 @@ export default function NotificationsLog() {
               <div 
                 key={n._id} 
                 onClick={() => !n.isRead && handleMarkAsRead(n._id)}
-                className={`bg-white border rounded-2xl p-5 flex flex-col gap-3 shadow-sm hover:shadow-md hover:shadow-slate-200/20 transition-all duration-200 cursor-pointer
-                  ${isUnread ? "border-indigo-150 bg-indigo-50/10" : "border-[#E5E7EB]/70"}`}
+                className={`border rounded-2xl p-5 flex flex-col gap-3 shadow-sm hover:shadow-md hover:shadow-slate-200/20 transition-all duration-200 cursor-pointer
+                  ${isEmailReply 
+                    ? (isUnread ? "bg-blue-50 border-blue-300 border-l-4 border-l-blue-600" : "bg-blue-50/30 border-blue-200 border-l-4 border-l-blue-400") 
+                    : (isUnread ? "bg-indigo-50/10 border-indigo-150" : "bg-white border-[#E5E7EB]/70")}`}
               >
                 <div className="flex items-start gap-4">
                   {/* Visual Type Indicators */}

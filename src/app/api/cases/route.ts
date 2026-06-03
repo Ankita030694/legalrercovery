@@ -66,7 +66,9 @@ export async function POST(req: NextRequest) {
       defaulterName,
       entityType,
       phone,
+      phone2,
       email,
+      email2,
       address,
       stuckAmount,
       dueDate,
@@ -89,6 +91,30 @@ export async function POST(req: NextRequest) {
       !policeStationAddress
     ) {
       return NextResponse.json({ error: "All wizard registration fields are required." }, { status: 400 });
+    }
+
+    // Validate secondary phone number uniqueness and length if provided
+    if (phone2) {
+      const cleanPhone2 = phone2.trim().replace(/\D/g, "");
+      if (cleanPhone2.length !== 10) {
+        return NextResponse.json({ error: "Secondary phone must be a 10-digit number." }, { status: 400 });
+      }
+      if (cleanPhone2 === phone.trim().replace(/\D/g, "")) {
+        return NextResponse.json({ error: "Secondary phone number must be unique from primary phone number." }, { status: 400 });
+      }
+    }
+
+    // Validate secondary email uniqueness and format if provided
+    if (email2) {
+      const cleanEmail = email.toLowerCase().trim();
+      const cleanEmail2 = email2.toLowerCase().trim();
+      const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+      if (!emailRegex.test(cleanEmail2)) {
+        return NextResponse.json({ error: "Secondary email address is invalid." }, { status: 400 });
+      }
+      if (cleanEmail2 === cleanEmail) {
+        return NextResponse.json({ error: "Secondary email address must be unique from primary email address." }, { status: 400 });
+      }
     }
 
     const { db } = await getDbAndBucket("fs");
@@ -144,7 +170,9 @@ export async function POST(req: NextRequest) {
       defaulterName,
       entityType,
       phone,
+      phone2: phone2 || "",
       email,
+      email2: email2 || "",
       address,
       stuckAmount: parseFloat(stuckAmount),
       dueDate,

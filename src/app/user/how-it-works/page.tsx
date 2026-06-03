@@ -1,275 +1,337 @@
 "use client";
 
 import React, { useState } from "react";
-import { 
-  FileText, 
-  Send, 
-  ShieldCheck, 
+import {
+  FileText,
+  Send,
+  ShieldCheck,
   ArrowRight,
   User,
   IndianRupee,
   MapPin,
   Building,
   CheckCircle2,
-  Clock,
-  ChevronDown,
-  ChevronUp
+  Mail,
+  MessageSquare,
+  AlertTriangle,
+  Gavel,
+  Calendar,
+  Phone,
 } from "lucide-react";
 import Link from "next/link";
 
-export default function HowItWorksPage() {
-  const [activeStep, setActiveStep] = useState<number>(1);
+const steps = [
+  {
+    num: 1,
+    title: "File a Claim",
+    shortTitle: "Claim",
+    subtitle: "Enter defaulter details & dues",
+    icon: FileText,
+    accentFrom: "#DC2626",
+    accentTo: "#EF4444",
+    accentBg: "bg-red-50",
+    accentBorder: "border-red-100",
+    accentText: "text-red-600",
+    dotColor: "bg-red-500",
+  },
+  {
+    num: 2,
+    title: "Auto Escalation",
+    shortTitle: "Escalate",
+    subtitle: "4 warnings over 3 weeks",
+    icon: Send,
+    accentFrom: "#EA580C",
+    accentTo: "#F97316",
+    accentBg: "bg-orange-50",
+    accentBorder: "border-orange-100",
+    accentText: "text-orange-600",
+    dotColor: "bg-orange-500",
+  },
+  {
+    num: 3,
+    title: "Get Paid",
+    shortTitle: "Settle",
+    subtitle: "Defaulter pays you directly",
+    icon: ShieldCheck,
+    accentFrom: "#16A34A",
+    accentTo: "#22C55E",
+    accentBg: "bg-green-50",
+    accentBorder: "border-green-100",
+    accentText: "text-green-600",
+    dotColor: "bg-green-500",
+  },
+];
 
-  return (
-    <div className="flex flex-col gap-5 max-w-4xl mx-auto text-left h-[calc(100vh-140px)] md:h-[calc(100vh-100px)] min-h-[480px] max-h-[580px] justify-between animate-in fade-in duration-300">
-      
-      {/* Header */}
-      <div className="border-b border-slate-200/60 pb-3 shrink-0">
-        <h1 className="text-xl sm:text-2xl font-black text-slate-900 tracking-tight">How It Works</h1>
-        <p className="text-[11px] sm:text-xs text-slate-500 font-semibold mt-0.5 font-sans">
-          Our legally-backed, automated system works in three simple phases to recover your outstanding dues.
+function StepContent({ stepNum }: { stepNum: number }) {
+  if (stepNum === 1) {
+    return (
+      <div className="flex flex-col gap-3 animate-in fade-in duration-200">
+        <p className="text-[11px] sm:text-xs leading-relaxed text-slate-500 font-semibold font-sans">
+          Tell us who owes you money. Fill in the defaulter&apos;s identity, dues, contact info &amp; police jurisdiction. Our system uses this to auto-generate advocate-backed demand notices.
         </p>
+        <div className="bg-slate-50 border border-slate-100 rounded-xl p-3 sm:p-4 font-sans">
+          <span className="text-[10px] sm:text-[11px] font-extrabold text-slate-700 block mb-2">
+            📋 Section 1 — Defaulter &amp; Claim Details
+          </span>
+          <div className="grid grid-cols-2 gap-x-4 gap-y-1.5 text-[10px] sm:text-[10.5px] font-bold text-slate-500">
+            <span className="flex items-center gap-1.5">
+              <User className="w-3 h-3 text-slate-400 shrink-0" /> Legal Name
+            </span>
+            <span className="flex items-center gap-1.5">
+              <Building className="w-3 h-3 text-slate-400 shrink-0" /> Entity Type
+            </span>
+            <span className="flex items-center gap-1.5">
+              <IndianRupee className="w-3 h-3 text-slate-400 shrink-0" /> Stuck Amount (₹)
+            </span>
+            <span className="flex items-center gap-1.5">
+              <Calendar className="w-3 h-3 text-slate-400 shrink-0" /> Payment Due Date
+            </span>
+            <span className="flex items-center gap-1.5">
+              <Phone className="w-3 h-3 text-slate-400 shrink-0" /> Mobile No. (up to 2)
+            </span>
+            <span className="flex items-center gap-1.5">
+              <Mail className="w-3 h-3 text-slate-400 shrink-0" /> Email ID (up to 2)
+            </span>
+            <span className="flex items-center gap-1.5 col-span-2">
+              <MapPin className="w-3 h-3 text-slate-400 shrink-0" /> Physical Address of Defaulter
+            </span>
+          </div>
+        </div>
+        <div className="bg-slate-50 border border-slate-100 rounded-xl p-3 sm:p-4 font-sans">
+          <span className="text-[10px] sm:text-[11px] font-extrabold text-slate-700 block mb-2">
+            🏛️ Section 2 — Police Station Details
+          </span>
+          <div className="grid grid-cols-2 gap-x-4 gap-y-1.5 text-[10px] sm:text-[10.5px] font-bold text-slate-500">
+            <span className="flex items-center gap-1.5">
+              <Building className="w-3 h-3 text-slate-400 shrink-0" /> Station Name
+            </span>
+            <span className="flex items-center gap-1.5">
+              <Mail className="w-3 h-3 text-slate-400 shrink-0" /> Station Email ID
+            </span>
+            <span className="flex items-center gap-1.5 col-span-2">
+              <MapPin className="w-3 h-3 text-slate-400 shrink-0" /> Station Physical Address
+            </span>
+          </div>
+        </div>
       </div>
+    );
+  }
 
-      {/* ── DESKTOP PORTAL LAYOUT (Split Side-by-Side) ── */}
-      <div className="hidden md:flex flex-1 gap-6 min-h-0 items-stretch">
-        
-        {/* Left Side: Step Selector Cards */}
-        <div className="w-[300px] flex flex-col gap-3 shrink-0">
-          {[
-            {
-              num: 1,
-              title: "1. Setup & Registration",
-              desc: "Enter defaulter dues & contact details",
-              icon: FileText,
-              color: "text-red-650 bg-red-50 border-red-100"
-            },
-            {
-              num: 2,
-              title: "2. Warning Escalation",
-              desc: "4-step automated lawyer dispatch",
-              icon: Send,
-              color: "text-orange-600 bg-orange-50 border-orange-100"
-            },
-            {
-              num: 3,
-              title: "3. Direct Payment & Stop",
-              desc: "Close the claim once you are paid",
-              icon: ShieldCheck,
-              color: "text-green-600 bg-green-50 border-green-100"
-            }
-          ].map((step) => {
-            const Icon = step.icon;
-            const isActive = activeStep === step.num;
+  if (stepNum === 2) {
+    const notices = [
+      {
+        label: "Notice 1",
+        time: "Immediate",
+        desc: "First demand letter sent via email & WhatsApp",
+        icon: Mail,
+        color: "text-red-500 bg-red-50",
+      },
+      {
+        label: "Notice 2",
+        time: "Day 8",
+        desc: "Warning citing applicable civil & criminal laws",
+        icon: MessageSquare,
+        color: "text-orange-500 bg-orange-50",
+      },
+      {
+        label: "Notice 3",
+        time: "Day 15",
+        desc: "Final warning — 48 hours to pay before complaint",
+        icon: AlertTriangle,
+        color: "text-amber-600 bg-amber-50",
+      },
+      {
+        label: "Notice 4",
+        time: "Day 22",
+        desc: "Signed police complaint sent to SHO & defaulter",
+        icon: Gavel,
+        color: "text-blue-600 bg-blue-50",
+      },
+    ];
+
+    return (
+      <div className="flex flex-col gap-2 animate-in fade-in duration-200">
+        <div className="flex items-center justify-between mb-0.5">
+          <p className="text-[10px] sm:text-[11px] text-slate-400 font-bold uppercase tracking-wider">
+            Automated Dispatch Timeline
+          </p>
+          <span className="text-[8px] sm:text-[9px] font-black uppercase bg-orange-50 text-orange-600 border border-orange-100 px-2 py-0.5 rounded-full shrink-0">
+            3-Week Schedule
+          </span>
+        </div>
+        <div className="flex flex-col gap-1.5 font-sans">
+          {notices.map((n) => {
+            const Icon = n.icon;
             return (
-              <button
-                key={step.num}
-                onClick={() => setActiveStep(step.num)}
-                className={`w-full p-4 rounded-2xl border text-left transition-all duration-200 cursor-pointer focus:outline-none flex gap-3.5
-                  ${isActive 
-                    ? "bg-white border-[#DC2626] shadow-md shadow-red-950/5 -translate-x-1" 
-                    : "bg-slate-50/50 hover:bg-slate-50 border-slate-200/60 text-slate-500"}`}
+              <div
+                key={n.label}
+                className="flex items-start gap-2.5 bg-white border border-slate-100 rounded-xl px-3 py-2 sm:py-2.5"
               >
-                <div className={`w-9 h-9 rounded-xl flex items-center justify-center shrink-0 border ${isActive ? step.color : "bg-white border-slate-200 text-slate-400"}`}>
-                  <Icon className="w-4 h-4" />
+                <div
+                  className={`w-6 h-6 sm:w-7 sm:h-7 rounded-lg flex items-center justify-center shrink-0 ${n.color}`}
+                >
+                  <Icon className="w-3 h-3 sm:w-3.5 sm:h-3.5" />
                 </div>
-                <div className="flex flex-col gap-0.5">
-                  <span className={`text-[12px] font-black tracking-tight ${isActive ? "text-[#111827]" : "text-slate-700"}`}>
-                    {step.title}
-                  </span>
-                  <span className="text-[10px] font-semibold text-slate-450 leading-tight">
-                    {step.desc}
-                  </span>
+                <div className="flex-1 min-w-0">
+                  <div className="flex items-center gap-2">
+                    <span className="text-[10px] sm:text-[11px] font-extrabold text-slate-800">
+                      {n.label}
+                    </span>
+                    <span className="text-[8px] sm:text-[9px] font-bold text-slate-400 uppercase tracking-wider">
+                      {n.time}
+                    </span>
+                  </div>
+                  <p className="text-[9.5px] sm:text-[10.5px] text-slate-500 font-semibold leading-snug">
+                    {n.desc}
+                  </p>
                 </div>
-              </button>
+              </div>
             );
           })}
         </div>
+      </div>
+    );
+  }
 
-        {/* Right Side: Step Detailed Content */}
-        <div className="flex-1 bg-white border border-slate-200/60 rounded-3xl p-6 shadow-sm overflow-hidden flex flex-col justify-center min-w-0">
-          
-          {/* Step 1 Details */}
-          {activeStep === 1 && (
-            <div className="flex flex-col gap-4 animate-in fade-in duration-300">
-              <div>
-                <h3 className="text-sm font-black text-slate-900">Phase 1: Configure Claim Details</h3>
-                <p className="text-[11px] text-slate-400 font-bold uppercase tracking-wider mt-0.5">Defaulter registration wizard</p>
-              </div>
-              <p className="text-xs leading-relaxed text-slate-500 font-semibold font-sans">
-                Tell us about your unpaid dues. You will enter the defaulter's legal name, constitution, outstanding dues, and physical address.
-              </p>
-              <div className="bg-slate-50 border border-slate-100 rounded-2xl p-4 flex flex-col gap-2.5 font-sans">
-                <span className="text-[11px] font-extrabold text-slate-750">💡 Information required to draft warning letters:</span>
-                <div className="grid grid-cols-2 gap-3 text-[10.5px] font-bold text-slate-500">
-                  <span className="flex items-center gap-1.5"><User className="w-3.5 h-3.5 text-slate-400" /> Defaulter Name & Contacts</span>
-                  <span className="flex items-center gap-1.5"><IndianRupee className="w-3.5 h-3.5 text-slate-400" /> Stuck Amount (INR)</span>
-                  <span className="flex items-center gap-1.5"><MapPin className="w-3.5 h-3.5 text-slate-400" /> Defaulter Physical Address</span>
-                  <span className="flex items-center gap-1.5"><Building className="w-3.5 h-3.5 text-slate-400" /> Police Station Jurisdiction</span>
-                </div>
-              </div>
-            </div>
-          )}
+  if (stepNum === 3) {
+    return (
+      <div className="flex flex-col gap-3 animate-in fade-in duration-200">
+        <p className="text-[11px] sm:text-xs leading-relaxed text-slate-500 font-semibold font-sans">
+          The defaulter settles dues directly with you — via UPI, bank transfer,
+          or cash. We don&apos;t collect money on your behalf or charge any
+          commission.
+        </p>
+        <div className="bg-green-50/60 border border-green-100 rounded-xl p-3 sm:p-4 flex gap-2.5 items-start font-sans">
+          <CheckCircle2 className="w-4 h-4 sm:w-5 sm:h-5 text-green-600 shrink-0 mt-0.5" />
+          <div className="flex flex-col gap-0.5">
+            <span className="text-[10.5px] sm:text-xs font-black text-green-800">
+              Once they pay:
+            </span>
+            <span className="text-[10px] sm:text-[10.5px] text-slate-600 font-semibold leading-relaxed">
+              Click &quot;Stop Notices&quot; on the case in your dashboard,
+              enter the amount recovered, and future dispatches stop instantly.
+            </span>
+          </div>
+        </div>
+      </div>
+    );
+  }
+  return null;
+}
 
-          {/* Step 2 Details */}
-          {activeStep === 2 && (
-            <div className="flex flex-col gap-4 animate-in fade-in duration-300">
-              <div className="flex justify-between items-center border-b border-slate-100 pb-2">
-                <div>
-                  <h3 className="text-sm font-black text-slate-900">Phase 2: Automated Escalation Timeline</h3>
-                  <p className="text-[11px] text-slate-400 font-bold uppercase tracking-wider mt-0.5">Real-time dispatches</p>
-                </div>
-                <span className="text-[9px] font-black uppercase bg-orange-50 text-orange-650 border border-orange-100 px-2.5 py-0.5 rounded-full">
-                  3-Week Schedule
-                </span>
-              </div>
-              <div className="grid grid-cols-4 gap-3 text-left font-sans mt-1">
-                <div className="flex flex-col gap-1 border-r border-slate-100 pr-2">
-                  <span className="text-[10px] font-extrabold text-red-650 uppercase tracking-wide">Notice 1</span>
-                  <span className="text-[8.5px] text-slate-450 font-bold">Immediate</span>
-                  <p className="text-[10px] text-slate-500 font-semibold leading-normal mt-1">
-                    First warning letter sent via email & WhatsApp. Defaulter gets a 7-day window.
-                  </p>
-                </div>
-                <div className="flex flex-col gap-1 border-r border-slate-100 pr-2 pl-1">
-                  <span className="text-[10px] font-extrabold text-orange-600 uppercase tracking-wide">Notice 2</span>
-                  <span className="text-[8.5px] text-slate-450 font-bold">Day 8 (+1 Wk)</span>
-                  <p className="text-[10px] text-slate-500 font-semibold leading-normal mt-1">
-                    Second notice specifying potential civil & criminal laws they might be breaking.
-                  </p>
-                </div>
-                <div className="flex flex-col gap-1 border-r border-slate-100 pr-2 pl-1">
-                  <span className="text-[10px] font-extrabold text-amber-600 uppercase tracking-wide">Notice 3</span>
-                  <span className="text-[8.5px] text-slate-450 font-bold">Day 15 (+2 Wk)</span>
-                  <p className="text-[10px] text-slate-500 font-semibold leading-normal mt-1">
-                    Final warning notice demanding payment in 48 hours to prevent police case.
-                  </p>
-                </div>
-                <div className="flex flex-col gap-1 pl-1">
-                  <span className="text-[10px] font-extrabold text-blue-650 uppercase tracking-wide">Notice 4</span>
-                  <span className="text-[8.5px] text-slate-450 font-bold">Day 22 (+3 Wk)</span>
-                  <p className="text-[10px] text-slate-500 font-semibold leading-normal mt-1">
-                    Signed police complaint draft sent directly to SHO & copy to defaulter.
-                  </p>
-                </div>
-              </div>
-            </div>
-          )}
+export default function HowItWorksPage() {
+  const [activeStep, setActiveStep] = useState<number>(1);
+  const currentStep = steps.find((s) => s.num === activeStep) || steps[0];
 
-          {/* Step 3 Details */}
-          {activeStep === 3 && (
-            <div className="flex flex-col gap-4 animate-in fade-in duration-300">
-              <div>
-                <h3 className="text-sm font-black text-slate-900">Phase 3: Dues Recovery & Closure</h3>
-                <p className="text-[11px] text-slate-400 font-bold uppercase tracking-wider mt-0.5">Direct Settlement</p>
-              </div>
-              <p className="text-xs leading-relaxed text-slate-500 font-semibold font-sans">
-                The defaulter settles dues directly with you (via UPI, Bank Transfer, cash, etc.). We do not collect money on your behalf or charge commission.
-              </p>
-              <div className="bg-green-50/50 border border-green-100 rounded-2xl p-4 flex gap-3 items-start font-sans">
-                <CheckCircle2 className="w-5 h-5 text-green-600 shrink-0 mt-0.5" />
-                <div className="flex flex-col gap-0.5">
-                  <span className="text-xs font-black text-green-800">Your Action Item:</span>
-                  <span className="text-[10.5px] text-slate-650 font-semibold leading-relaxed">
-                    Once they pay, click "Stop Notices" on the case in your dashboard, enter the amount recovered, and our system will instantly halt future dispatches.
+  return (
+    <div className="flex flex-col min-h-[calc(100dvh-128px)] sm:min-h-[calc(100dvh-128px)] lg:min-h-[calc(100dvh-80px)] max-w-4xl mx-auto text-left justify-between">
+      {/* ── HEADER ── */}
+      <div className="pb-3 sm:pb-4 shrink-0">
+        <h1 className="text-lg sm:text-xl lg:text-2xl font-black text-slate-900 tracking-tight">
+          How It Works
+        </h1>
+        <p className="text-[10.5px] sm:text-xs text-slate-500 font-semibold mt-0.5 font-sans">
+          Our legally-backed system works in 3 simple steps to recover your money.
+        </p>
+      </div>
+
+      {/* ── STEP SELECTOR (Horizontal Stepper) ── */}
+      <div className="flex items-center gap-0 shrink-0 mb-3 sm:mb-4">
+        {steps.map((step, idx) => {
+          const Icon = step.icon;
+          const isActive = activeStep === step.num;
+          return (
+            <React.Fragment key={step.num}>
+              <button
+                onClick={() => setActiveStep(step.num)}
+                className={`flex items-center gap-1.5 sm:gap-2 px-3 sm:px-4 py-2 sm:py-2.5 rounded-xl transition-all duration-200 cursor-pointer focus:outline-none border shrink-0
+                  ${
+                    isActive
+                      ? "bg-white border-slate-200 shadow-md shadow-slate-900/5 scale-[1.02]"
+                      : "bg-transparent border-transparent hover:bg-white/60 hover:border-slate-200/60"
+                  }`}
+              >
+                <div
+                  className={`w-6 h-6 sm:w-7 sm:h-7 rounded-lg flex items-center justify-center shrink-0 transition-colors duration-200
+                    ${
+                      isActive
+                        ? `${step.accentBg} ${step.accentBorder} border`
+                        : "bg-slate-100 text-slate-400"
+                    }`}
+                >
+                  <Icon
+                    className={`w-3 h-3 sm:w-3.5 sm:h-3.5 ${
+                      isActive ? step.accentText : ""
+                    }`}
+                  />
+                </div>
+                <div className="flex flex-col text-left">
+                  <span
+                    className={`text-[10px] sm:text-[11.5px] font-black leading-tight transition-colors duration-200
+                      ${isActive ? "text-slate-900" : "text-slate-500"}`}
+                  >
+                    <span className="hidden sm:inline">{step.title}</span>
+                    <span className="sm:hidden">{step.shortTitle}</span>
+                  </span>
+                  <span className="text-[8px] sm:text-[9.5px] font-semibold text-slate-400 leading-none hidden sm:block">
+                    {step.subtitle}
                   </span>
                 </div>
-              </div>
-            </div>
-          )}
+              </button>
+              {idx < steps.length - 1 && (
+                <div className="flex-1 flex items-center justify-center px-1">
+                  <div
+                    className={`h-[2px] w-full rounded-full transition-colors duration-300 ${
+                      activeStep > step.num ? "bg-slate-300" : "bg-slate-200/60"
+                    }`}
+                  />
+                </div>
+              )}
+            </React.Fragment>
+          );
+        })}
+      </div>
 
+      {/* ── CONTENT AREA ── */}
+      <div className="flex flex-col">
+        <div className="bg-white border border-slate-200/60 rounded-2xl p-4 sm:p-5 lg:p-6 shadow-sm">
+          {/* Phase title */}
+          <div className="flex items-center gap-2.5 mb-3 shrink-0">
+            <div
+              className="w-5 h-5 rounded-full flex items-center justify-center text-white text-[10px] font-black shrink-0"
+              style={{
+                background: `linear-gradient(135deg, ${currentStep.accentFrom}, ${currentStep.accentTo})`,
+              }}
+            >
+              {currentStep.num}
+            </div>
+            <h2 className="text-sm sm:text-[15px] font-black text-slate-900 tracking-tight">
+              {currentStep.title}
+            </h2>
+          </div>
+
+          {/* Dynamic content */}
+          <StepContent stepNum={activeStep} />
         </div>
       </div>
 
-      {/* ── MOBILE PORTAL LAYOUT (Collapsible Inline Accordion) ── */}
-      <div className="flex md:hidden flex-col gap-3 min-h-0 flex-1 overflow-y-auto pr-1">
-        
-        {/* Accordion 1 */}
-        <div className="bg-white border border-slate-200/60 rounded-2xl overflow-hidden shadow-sm">
-          <button 
-            type="button"
-            onClick={() => setActiveStep(activeStep === 1 ? 0 : 1)}
-            className="w-full px-4 py-3 flex items-center justify-between font-black text-xs text-slate-800 focus:outline-none cursor-pointer"
-          >
-            <span className="flex items-center gap-2">📋 1. Setup & Registration</span>
-            {activeStep === 1 ? <ChevronUp className="w-4 h-4 text-slate-500" /> : <ChevronDown className="w-4 h-4 text-slate-500" />}
-          </button>
-          
-          {activeStep === 1 && (
-            <div className="px-4 pb-4 flex flex-col gap-3 border-t border-slate-100 pt-3 text-[11px] leading-relaxed text-slate-500 font-semibold font-sans animate-in slide-in-from-top-1 duration-150">
-              <p>Tell us who owes you money. Enter defaulter details and the outstanding amount. Our system will generate advocate-backed demand notices immediately.</p>
-              <div className="bg-slate-50 rounded-xl p-3 border border-slate-100 flex flex-col gap-1.5 text-[10px] font-bold text-slate-600">
-                <span>Required fields:</span>
-                <span>• Defaulter Name & Contacts</span>
-                <span>• Outstanding Dues (INR)</span>
-                <span>• Police Station Jurisdiction</span>
-              </div>
-            </div>
-          )}
-        </div>
-
-        {/* Accordion 2 */}
-        <div className="bg-white border border-slate-200/60 rounded-2xl overflow-hidden shadow-sm">
-          <button 
-            type="button"
-            onClick={() => setActiveStep(activeStep === 2 ? 0 : 2)}
-            className="w-full px-4 py-3 flex items-center justify-between font-black text-xs text-slate-800 focus:outline-none cursor-pointer"
-          >
-            <span className="flex items-center gap-2">✉️ 2. Warning Escalation</span>
-            {activeStep === 2 ? <ChevronUp className="w-4 h-4 text-slate-500" /> : <ChevronDown className="w-4 h-4 text-slate-500" />}
-          </button>
-          
-          {activeStep === 2 && (
-            <div className="px-4 pb-4 flex flex-col gap-3 border-t border-slate-100 pt-3 text-[11px] leading-relaxed text-slate-500 font-semibold font-sans animate-in slide-in-from-top-1 duration-150">
-              <p>Notices are automatically emailed and WhatsApped to the defaulter over a 3-week queue:</p>
-              <div className="flex flex-col gap-2 bg-slate-50 rounded-xl p-3 border border-slate-100 text-[10px]">
-                <div className="flex justify-between border-b border-slate-200/50 pb-1"><span className="font-bold text-slate-700">Notice 1 (Day 1)</span><span className="text-slate-500">Initial demand (7-day window)</span></div>
-                <div className="flex justify-between border-b border-slate-200/50 pb-1"><span className="font-bold text-slate-700">Notice 2 (Day 8)</span><span className="text-slate-500">Notice outlining legal violations</span></div>
-                <div className="flex justify-between border-b border-slate-200/50 pb-1"><span className="font-bold text-slate-700">Notice 3 (Day 15)</span><span className="text-slate-500">Final warning before police copy</span></div>
-                <div className="flex justify-between"><span className="font-bold text-slate-700">Notice 4 (Day 22)</span><span className="text-slate-500">Signed police complaint sent to SHO</span></div>
-              </div>
-            </div>
-          )}
-        </div>
-
-        {/* Accordion 3 */}
-        <div className="bg-white border border-slate-200/60 rounded-2xl overflow-hidden shadow-sm">
-          <button 
-            type="button"
-            onClick={() => setActiveStep(activeStep === 3 ? 0 : 3)}
-            className="w-full px-4 py-3 flex items-center justify-between font-black text-xs text-slate-800 focus:outline-none cursor-pointer"
-          >
-            <span className="flex items-center gap-2">🤝 3. Payment & Close</span>
-            {activeStep === 3 ? <ChevronUp className="w-4 h-4 text-slate-500" /> : <ChevronDown className="w-4 h-4 text-slate-500" />}
-          </button>
-          
-          {activeStep === 3 && (
-            <div className="px-4 pb-4 flex flex-col gap-3 border-t border-slate-100 pt-3 text-[11px] leading-relaxed text-slate-500 font-semibold font-sans animate-in slide-in-from-top-1 duration-150">
-              <p>They pay you directly via UPI or Bank Transfer. We charge no commission.</p>
-              <div className="bg-green-50/50 border border-green-100 rounded-xl p-3 flex gap-2 text-[10px] text-slate-700 font-bold">
-                <span>💡</span>
-                <span>Once paid, click "Stop Notices" on the dashboard to cancel remaining scheduled notices.</span>
-              </div>
-            </div>
-          )}
-        </div>
-
-      </div>
-
-      {/* ── Footer CTA ── */}
-      <div className="bg-slate-900 text-white rounded-2xl p-4 flex items-center justify-between gap-4 shrink-0 shadow-sm">
+      {/* ── FOOTER CTA ── */}
+      <div className="bg-slate-900 text-white rounded-2xl p-3 sm:p-4 flex items-center justify-between gap-4 shrink-0 shadow-sm mt-3 sm:mt-4">
         <div className="text-left">
-          <span className="text-[11px] font-black text-white leading-tight block">Ready to start?</span>
-          <span className="text-[9.5px] text-slate-400 font-bold leading-none block mt-0.5">Launch a claim in just 2 minutes.</span>
+          <span className="text-[10.5px] sm:text-[11px] font-black text-white leading-tight block">
+            Ready to recover your money?
+          </span>
+          <span className="text-[9px] sm:text-[9.5px] text-slate-400 font-bold leading-none block mt-0.5">
+            File a claim in under 2 minutes.
+          </span>
         </div>
-        <Link 
+        <Link
           href="/user/new-recovery"
-          className="px-4 py-2.5 text-[11px] font-black text-white bg-[#DC2626] hover:bg-[#B91C1C] rounded-xl transition-all flex items-center gap-1 cursor-pointer"
+          className="px-3.5 sm:px-4 py-2 sm:py-2.5 text-[10.5px] sm:text-[11px] font-black text-white bg-[#DC2626] hover:bg-[#B91C1C] rounded-xl transition-all flex items-center gap-1 cursor-pointer shrink-0"
         >
-          Start Recovery <ArrowRight className="w-3.5 h-3.5" />
+          Start Recovery <ArrowRight className="w-3 h-3 sm:w-3.5 sm:h-3.5" />
         </Link>
       </div>
-
     </div>
   );
 }
