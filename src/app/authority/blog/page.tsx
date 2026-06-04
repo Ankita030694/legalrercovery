@@ -5,10 +5,12 @@ import { motion, AnimatePresence } from "framer-motion";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { 
   faHome, faUsers, faChartLine, faClipboardList, faCog, 
-  faPlus, faEdit, faTrash, faUpload, faMagic, faSearch, faSignOutAlt 
+  faPlus, faEdit, faTrash, faUpload, faMagic, faSearch, faSignOutAlt,
+  faNewspaper, faFilter
 } from "@fortawesome/free-solid-svg-icons";
 import { signOut, useSession } from "next-auth/react";
 import { useRouter } from "next/navigation";
+import Link from "next/link";
 import dynamic from "next/dynamic";
 import { Loader2 } from "lucide-react";
 
@@ -724,18 +726,11 @@ const BlogsDashboard = () => {
       className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8"
     >
       {/* Dashboard Header */}
-      <div className="bg-white rounded-2xl p-6 shadow-[0_4px_30px_rgba(0,0,0,0.02)] border-l-4 border-[#DC2626] mb-8 flex flex-col sm:flex-row justify-between items-start sm:items-center gap-4">
-        <div>
-          <h1 className="text-3xl font-black text-gray-800 tracking-tight">Blogs Dashboard</h1>
-          <div className="w-24 h-1 bg-gradient-to-r from-[#DC2626] to-[#B91C1C] mt-2"></div>
+      <div className="flex flex-col md:flex-row md:items-center justify-between gap-4 border-b border-[#E5E7EB]/50 pb-6 mb-6">
+        <div className="text-left">
+          <h1 className="text-2xl sm:text-3xl font-black text-[#111827] tracking-tight">Blogs Dashboard</h1>
+          <p className="text-xs sm:text-sm text-slate-500 font-semibold mt-1">Manage, write, edit, and publish blogs and articles with AI generation assistance.</p>
         </div>
-        <button
-          onClick={handleLogout}
-          className="flex items-center gap-2 px-4 py-2 border border-gray-200 text-gray-600 rounded-xl font-bold text-xs hover:text-[#DC2626] hover:border-[#DC2626]/20 transition-all cursor-pointer bg-white"
-        >
-          <FontAwesomeIcon icon={faSignOutAlt} />
-          Sign Out
-        </button>
       </div>
 
       {/* Content Container */}

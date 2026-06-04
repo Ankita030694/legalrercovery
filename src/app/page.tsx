@@ -36,7 +36,14 @@ import {
   Upload,
   FileSearch,
   Send,
-  Handshake
+  Handshake,
+  Plus,
+  Info,
+  Bell,
+  Settings,
+  LogOut,
+  ChevronRight,
+  ShieldCheck
 } from "lucide-react";
 
 export default function Home() {
@@ -192,143 +199,226 @@ export default function Home() {
               </div>
 
             </div>
-
           </div>
 
           {/* RIGHT COLUMN: High-Fidelity Dual-Pane Dashboard Mockup */}
-          <div className="lg:col-span-7 select-none w-full">
-            <div className="w-full bg-[#FFFFFF] rounded-3xl border border-[#E5E7EB] shadow-[0_20px_50px_rgba(0,0,0,0.06)] grid grid-cols-1 lg:grid-cols-12 overflow-hidden">
+          <div className="lg:col-span-7 select-none w-full pointer-events-none">
+            <div className="w-full bg-[#FFFFFF] rounded-3xl border border-[#E5E7EB] shadow-[0_20px_50px_rgba(0,0,0,0.06)] grid grid-cols-1 xl:grid-cols-12 overflow-hidden">
 
               {/* Left Dark Sidebar Pane */}
-              <div className="hidden lg:flex lg:col-span-4 bg-[#152331] p-5 flex-col items-stretch gap-6">
+              <div className="hidden xl:flex xl:col-span-3 bg-[#152331] p-5 flex-col items-stretch justify-between gap-6 min-h-[560px]">
+                
+                <div>
+                  {/* Brand Logo */}
+                  <div className="mb-8 pt-2 px-1 flex items-center justify-start">
+                    <img src="/lrwhite.svg" alt="LegalRecovery" className="h-6 w-auto object-contain" />
+                  </div>
 
-                {/* Active Tab */}
-                <div className="px-3.5 py-2 rounded-lg bg-[#DC2626] text-white text-[12px] font-bold flex items-center gap-2 shrink-0">
-                  <svg className="w-4 h-4 text-white" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5">
-                    <rect x="3" y="3" width="7" height="9" />
-                    <rect x="14" y="3" width="7" height="5" />
-                    <rect x="14" y="12" width="7" height="9" />
-                    <rect x="3" y="16" width="7" height="5" />
-                  </svg>
-                  Dashboard
+                  {/* Navigation list */}
+                  <div className="flex flex-col gap-1.5">
+                    {/* Active Tab: Active Claims */}
+                    <div className="px-3.5 py-3 rounded-xl bg-[#DC2626] text-white text-[12px] font-bold flex items-center gap-2.5 shrink-0 shadow-[0_4px_12px_rgba(220,38,38,0.2)]">
+                      <FolderClosed className="w-4 h-4 text-white" />
+                      Active Claims
+                      <ChevronRight className="w-3 h-3 ml-auto text-white opacity-80" />
+                    </div>
+
+                    {/* Other tabs */}
+                    <div className="px-3.5 py-3 text-[12px] font-bold text-[#9CA3AF] hover:text-white hover:bg-white/5 rounded-xl flex items-center gap-2.5 cursor-pointer transition-colors whitespace-nowrap">
+                      <Plus className="w-4 h-4 text-[#9CA3AF]" />
+                      New Recovery
+                    </div>
+                    <div className="px-3.5 py-3 text-[12px] font-bold text-[#9CA3AF] hover:text-white hover:bg-white/5 rounded-xl flex items-center gap-2.5 cursor-pointer transition-colors whitespace-nowrap">
+                      <Info className="w-4 h-4 text-[#9CA3AF]" />
+                      How It Works
+                    </div>
+                    <div className="px-3.5 py-3 text-[12px] font-bold text-[#9CA3AF] hover:text-white hover:bg-white/5 rounded-xl flex items-center gap-2.5 cursor-pointer transition-colors whitespace-nowrap">
+                      <Bell className="w-4 h-4 text-[#9CA3AF]" />
+                      Notifications
+                      <span className="ml-auto text-[9px] font-extrabold px-1.5 py-0.5 rounded-full bg-slate-800 text-slate-400">
+                        1
+                      </span>
+                    </div>
+                    <div className="px-3.5 py-3 text-[12px] font-bold text-[#9CA3AF] hover:text-white hover:bg-white/5 rounded-xl flex items-center gap-2.5 cursor-pointer transition-colors whitespace-nowrap">
+                      <Settings className="w-4 h-4 text-[#9CA3AF]" />
+                      Settings
+                    </div>
+                  </div>
                 </div>
 
-                {/* Vertical menu items stack */}
-                <div className="flex flex-col gap-1.5">
-                  <div className="px-3.5 py-2 text-[12px] font-bold text-[#9CA3AF] hover:text-white flex items-center gap-2 cursor-pointer transition-colors whitespace-nowrap">
-                    <HelpCircle className="w-4 h-4" />
-                    Knowledge Base
+                {/* Sidebar Bottom Footer Profile mockup */}
+                <div className="border-t border-gray-800/40 pt-4 bg-slate-900/10">
+                  <div className="flex items-center gap-2.5 px-3 py-2.5 mb-3 bg-white/5 border border-white/10 rounded-2xl shadow-sm">
+                    <div className="w-8 h-8 bg-[#DC2626]/10 rounded-full flex items-center justify-center font-extrabold text-[#DC2626] text-[11px] shrink-0">
+                      JD
+                    </div>
+                    <div className="flex flex-col text-left overflow-hidden">
+                      <span className="text-[11.5px] font-black text-white leading-tight truncate">John Doe</span>
+                      <span className="text-[9.5px] text-slate-400 font-bold leading-none mt-0.5 truncate">john.doe@example.com</span>
+                    </div>
                   </div>
-                  <div className="px-3.5 py-2 text-[12px] font-bold text-[#9CA3AF] hover:text-white flex items-center gap-2 cursor-pointer transition-colors whitespace-nowrap">
-                    <FileSearch className="w-4 h-4" />
-                    Documents Review
-                  </div>
-                  <div className="px-3.5 py-2 text-[12px] font-bold text-[#9CA3AF] hover:text-white flex items-center gap-2 cursor-pointer transition-colors whitespace-nowrap">
-                    <CreditCard className="w-4 h-4" />
-                    Payments
-                  </div>
-                  <div className="px-3.5 py-2 text-[12px] font-bold text-[#9CA3AF] hover:text-white flex items-center gap-2 cursor-pointer transition-colors whitespace-nowrap">
-                    <User className="w-4 h-4" />
-                    Profile
-                  </div>
+
+                  <button className="w-full flex items-center justify-center gap-2 px-3 py-2.5 text-[11.5px] font-bold text-slate-400 hover:text-[#DC2626] hover:bg-white/5 border border-white/10 rounded-xl transition-all cursor-pointer">
+                    <LogOut className="w-3.5 h-3.5 shrink-0" />
+                    Sign Out
+                  </button>
                 </div>
 
               </div>
 
-
-
               {/* Right White Content Workspace Pane */}
-              <div className="col-span-12 lg:col-span-8 bg-[#FFFFFF] p-4 sm:p-6 flex flex-col gap-6">
+              <div className="col-span-12 xl:col-span-9 bg-[#FFFFFF] p-4 sm:p-6 flex flex-col gap-5">
 
-                {/* Greeting section */}
-                <div className="flex flex-col">
-                  <div className="flex items-center gap-2">
-                    <h3 className="text-[17px] font-extrabold text-[#111827]">Welcome back, User</h3>
-                    <span className="px-2 py-0.5 text-[9px] font-extrabold text-[#DC2626] bg-red-50 border border-red-200/60 rounded-full uppercase tracking-wider leading-none">
-                      Demo
-                    </span>
+                {/* Welcome / Dashboard Header */}
+                <div className="flex flex-col md:flex-row md:items-center justify-between gap-4 border-b border-[#E5E7EB]/50 pb-4">
+                  <div className="text-left">
+                    <h3 className="text-base sm:text-lg font-black text-[#111827] tracking-tight">Recovery Dashboard</h3>
+                    <p className="text-[10px] sm:text-[11px] text-slate-500 font-semibold mt-0.5">Monitor active claims and notice dispatch queues in real time.</p>
                   </div>
-                  <span className="text-[11.5px] text-[#6B7280] font-semibold mt-0.5">Here's the status of your recovery</span>
+                  <button className="w-full md:w-auto justify-center px-3.5 py-2 text-[11.5px] font-black text-white bg-[#DC2626] hover:bg-[#B91C1C] rounded-xl flex items-center gap-1.5 shrink-0 shadow-sm shadow-red-900/10 cursor-pointer">
+                    <Plus className="w-3.5 h-3.5 stroke-[2.5]" />
+                    New Recovery
+                  </button>
                 </div>
 
-                {/* Sub-card: Current Recovery Status */}
-                <div className="bg-[#FFFFFF] rounded-2xl border border-[#E5E7EB] p-4 flex flex-col gap-4 relative">
-
-                  {/* Status header */}
-                  <div className="flex items-center justify-between pb-3 border-b border-[#E5E7EB]/60">
+                {/* Quick Metrics Grid */}
+                <div className="grid grid-cols-1 md:grid-cols-3 gap-3">
+                  {/* Metric 1 */}
+                  <div className="bg-white border border-[#E5E7EB]/70 rounded-xl p-3 text-left flex items-center gap-2 relative overflow-hidden shadow-sm">
+                    <div className="w-7 h-7 rounded-lg bg-red-50 text-[#DC2626] flex items-center justify-center shrink-0">
+                      <Wallet className="w-3.5 h-3.5" />
+                    </div>
                     <div className="flex flex-col">
-                      <span className="text-[11.5px] font-extrabold text-[#111827]">Current Recovery Status</span>
-                      <span className="text-[10px] text-[#9CA3AF] font-bold mt-0.5">Recovery ID: REC123456</span>
+                      <span className="text-[8px] uppercase tracking-wider text-slate-450 font-extrabold leading-none">Outstanding</span>
+                      <span className="text-[13px] font-black text-[#111827] mt-1 leading-none">₹45,000</span>
                     </div>
-                    {/* Sage-wash Status pill */}
-                    <span className="px-2.5 py-1 text-[10px] font-extrabold text-[#03543F] bg-[#DEF7EC] border border-emerald-200/50 rounded-full">
-                      In Progress
-                    </span>
                   </div>
 
-                  {/* Horizontal visual status timeline track */}
-                  <div className="relative pt-3 pb-2 flex items-center justify-between">
-                    {/* Visual Green connector path line */}
-                    <div className="absolute left-3.5 right-3.5 top-[23px] h-[2.5px] bg-[#E5E7EB]">
-                      <div className="w-[78%] h-full bg-[#10B981]"></div>
+                  {/* Metric 2 */}
+                  <div className="bg-white border border-[#E5E7EB]/70 rounded-xl p-3 text-left flex items-center gap-2 relative overflow-hidden shadow-sm">
+                    <div className="w-7 h-7 rounded-lg bg-orange-50 text-orange-650 flex items-center justify-center shrink-0">
+                      <Timer className="w-3.5 h-3.5" />
                     </div>
-
-                    {/* Step 1: Submitted */}
-                    <div className="flex flex-col items-center gap-1.5 relative z-10">
-                      <div className="w-6 h-6 rounded-full bg-[#10B981] text-white flex items-center justify-center shadow-sm">
-                        <Check className="w-3.5 h-3.5 stroke-[3]" />
-                      </div>
-                      <span className="text-[9px] font-bold text-[#111827]">Submitted</span>
-                      <span className="text-[7.5px] text-[#9CA3AF] font-extrabold leading-none">12 May</span>
+                    <div className="flex flex-col">
+                      <span className="text-[8px] uppercase tracking-wider text-slate-450 font-extrabold leading-none">Active Claims</span>
+                      <span className="text-[13px] font-black text-[#111827] mt-1 leading-none">1 Case</span>
                     </div>
-
-                    {/* Step 2: Notice Sent */}
-                    <div className="flex flex-col items-center gap-1.5 relative z-10">
-                      <div className="w-6 h-6 rounded-full bg-[#10B981] text-white flex items-center justify-center shadow-sm">
-                        <Check className="w-3.5 h-3.5 stroke-[3]" />
-                      </div>
-                      <span className="text-[9px] font-bold text-[#111827]">Notice Sent</span>
-                      <span className="text-[7.5px] text-[#9CA3AF] font-extrabold leading-none">14 May</span>
-                    </div>
-
-                    {/* Step 3: Responded */}
-                    <div className="flex flex-col items-center gap-1.5 relative z-10">
-                      <div className="w-6 h-6 rounded-full bg-[#10B981] text-white flex items-center justify-center shadow-sm">
-                        <Check className="w-3.5 h-3.5 stroke-[3]" />
-                      </div>
-                      <span className="text-[9px] font-bold text-[#111827]">Responded</span>
-                      <span className="text-[7.5px] text-[#9CA3AF] font-extrabold leading-none">18 May</span>
-                    </div>
-
-                    {/* Step 4: Resolution */}
-                    <div className="flex flex-col items-center gap-1.5 relative z-10">
-                      <div className="w-6 h-6 rounded-full bg-white border-2 border-[#9CA3AF] text-[#9CA3AF] flex items-center justify-center shadow-sm">
-                        <div className="w-1.5 h-1.5 rounded-full bg-current"></div>
-                      </div>
-                      <span className="text-[9px] font-bold text-[#4B5563]">Resolution</span>
-                      <span className="text-[7.5px] text-[#DC2626] font-black leading-none uppercase">In Progress</span>
-                    </div>
-
                   </div>
 
-                </div>
-
-                {/* Sub-card: Amount & Category column layout */}
-                <div className="grid grid-cols-2 gap-4">
-                  <div className="bg-[#FFFFFF] border border-[#E5E7EB] rounded-xl p-4 flex flex-col justify-center">
-                    <span className="text-[10px] font-bold text-[#9CA3AF] uppercase">Amount in Dispute</span>
-                    <span className="text-xl font-black text-[#111827] mt-1 select-text">₹85,000</span>
-                  </div>
-                  <div className="bg-[#FFFFFF] border border-[#E5E7EB] rounded-xl p-4 flex flex-col justify-center">
-                    <span className="text-[10px] font-bold text-[#9CA3AF] uppercase">Category</span>
-                    <span className="text-[13px] font-bold text-[#111827] mt-1 select-text">Salary Recovery</span>
+                  {/* Metric 3 */}
+                  <div className="bg-white border border-[#E5E7EB]/70 rounded-xl p-3 text-left flex items-center gap-2 relative overflow-hidden shadow-sm">
+                    <div className="w-7 h-7 rounded-lg bg-green-50 text-[#10B981] flex items-center justify-center shrink-0">
+                      <ShieldCheck className="w-3.5 h-3.5" />
+                    </div>
+                    <div className="flex flex-col">
+                      <span className="text-[8px] uppercase tracking-wider text-slate-450 font-extrabold leading-none">Recovered</span>
+                      <span className="text-[13px] font-black text-[#111827] mt-1 leading-none">₹0</span>
+                    </div>
                   </div>
                 </div>
 
-                {/* Detail action trigger */}
-                <button className="w-full text-center py-2.5 text-xs font-bold text-[#111827] border border-[#D1D5DB] hover:bg-gray-50 rounded-lg transition-colors cursor-pointer">
-                  View Details
-                </button>
+                {/* Case Card Mockup */}
+                <div className="bg-white border border-[#E5E7EB]/70 rounded-2xl p-4 sm:p-5 flex flex-col gap-4 text-left">
+                  
+                  {/* Case Header */}
+                  <div className="flex flex-col md:flex-row md:items-start justify-between gap-3 border-b border-[#E5E7EB]/50 pb-3">
+                    <div className="flex flex-col gap-1">
+                      <div className="flex flex-wrap items-center gap-2">
+                        <h4 className="text-[13px] sm:text-sm font-black text-[#111827]">Acme Corporation</h4>
+                        <span className="text-[8px] font-extrabold uppercase px-2 py-0.5 rounded-full border bg-red-50 border-red-150 text-[#DC2626]">
+                          Active Dispatch
+                        </span>
+                      </div>
+                      <div className="flex flex-wrap items-center gap-x-2.5 gap-y-1 text-slate-400 text-[9px] md:text-[10px] font-semibold mt-1">
+                        <span>📧 finance@acmecorp.com</span>
+                        <span className="text-slate-300 hidden md:inline">•</span>
+                        <span>📞 +91 99999 88888</span>
+                      </div>
+                    </div>
+                    <div className="text-left md:text-right shrink-0">
+                      <span className="text-[8.5px] text-slate-400 font-bold uppercase tracking-wider">Dispute Dues</span>
+                      <p className="text-sm sm:text-[14px] font-black text-[#111827] leading-none mt-0.5">₹45,000</p>
+                    </div>
+                  </div>
+
+                  {/* Dispatch Timeline Track */}
+                  <div className="flex flex-col gap-3">
+                    <div className="flex items-center gap-1.5">
+                      <Clock className="w-3.5 h-3.5 text-slate-400" />
+                      <span className="text-[9px] font-black uppercase text-slate-400 tracking-wider">Demand Notice Dispatch Timeline</span>
+                    </div>
+
+                    {/* Timeline segment */}
+                    <div className="flex flex-col md:flex-row md:items-stretch justify-between w-full relative pt-2 pb-1 gap-4 md:gap-0">
+                      
+                      {/* Connector Line segments */}
+                      {/* Horizontal desktop connector line segment */}
+                      <div className="absolute left-[8%] right-[8%] top-[19px] h-[3px] bg-slate-200 z-0 hidden md:block">
+                        <div className="w-[33%] h-full bg-[#10B981]"></div>
+                      </div>
+                      {/* Vertical mobile connector line segment */}
+                      <div className="absolute left-[11px] top-4 bottom-4 w-[2.5px] bg-slate-200 z-0 block md:hidden">
+                        <div className="w-full h-[33%] bg-[#10B981]"></div>
+                      </div>
+
+                      {/* Step 1: First Notice */}
+                      <div className="flex flex-row md:flex-col items-center relative z-10 w-full md:flex-1 gap-3 md:gap-0 text-left md:text-center">
+                        <div className="w-6 h-6 rounded-full bg-[#10B981] text-white flex items-center justify-center shrink-0 shadow-sm shadow-green-200/50">
+                          <Check className="w-3.5 h-3.5 stroke-[3]" />
+                        </div>
+                        <div className="flex flex-col items-start md:items-center">
+                          <span className="text-[8.5px] font-black text-[#10B981] mt-0.5 md:mt-1.5 leading-none">First Notice</span>
+                          <span className="text-[7.5px] text-slate-400 font-bold mt-1 leading-none">May 15</span>
+                        </div>
+                      </div>
+
+                      {/* Step 2: Second Notice */}
+                      <div className="flex flex-row md:flex-col items-center relative z-10 w-full md:flex-1 gap-3 md:gap-0 text-left md:text-center">
+                        <div className="w-6 h-6 rounded-full border-2 border-[#DC2626] bg-white flex items-center justify-center shrink-0 shadow-sm shadow-red-100">
+                          <div className="w-2 h-2 bg-[#DC2626] rounded-full animate-pulse" />
+                        </div>
+                        <div className="flex flex-col items-start md:items-center">
+                          <span className="text-[8.5px] font-black text-[#DC2626] mt-0.5 md:mt-1.5 leading-none">Second Notice</span>
+                          <span className="text-[7.5px] text-slate-450 font-extrabold uppercase mt-1 leading-none tracking-wide animate-pulse">IN PROGRESS</span>
+                        </div>
+                      </div>
+
+                      {/* Step 3: Third Notice */}
+                      <div className="flex flex-row md:flex-col items-center relative z-10 w-full md:flex-1 gap-3 md:gap-0 text-left md:text-center">
+                        <div className="w-6 h-6 rounded-full border-2 border-slate-200 bg-white flex items-center justify-center shrink-0">
+                          <div className="w-1.5 h-1.5 bg-slate-200 rounded-full" />
+                        </div>
+                        <div className="flex flex-col items-start md:items-center">
+                          <span className="text-[8.5px] font-black text-slate-400 mt-0.5 md:mt-1.5 leading-none">Third Notice</span>
+                          <span className="text-[7.5px] text-slate-400 font-bold mt-1 leading-none">June 05</span>
+                        </div>
+                      </div>
+
+                      {/* Step 4: Police Draft */}
+                      <div className="flex flex-row md:flex-col items-center relative z-10 w-full md:flex-1 gap-3 md:gap-0 text-left md:text-center">
+                        <div className="w-6 h-6 rounded-full border-2 border-slate-200 bg-white flex items-center justify-center shrink-0">
+                          <div className="w-1.5 h-1.5 bg-slate-200 rounded-full" />
+                        </div>
+                        <div className="flex flex-col items-start md:items-center">
+                          <span className="text-[8.5px] font-black text-slate-400 mt-0.5 md:mt-1.5 leading-none">Police Draft</span>
+                          <span className="text-[7.5px] text-slate-400 font-bold mt-1 leading-none">June 12</span>
+                        </div>
+                      </div>
+
+                    </div>
+                  </div>
+
+                  {/* Buttons */}
+                  <div className="flex justify-end gap-2 border-t border-[#E5E7EB]/50 pt-3">
+                    <button className="px-3.5 py-1.5 text-[10.5px] font-black text-[#991B1B] bg-[#FEF2F2] border border-[#FCA5A5] hover:bg-[#FEE2E2] rounded-lg transition-colors cursor-pointer">
+                      Stop Notices
+                    </button>
+                    <button className="px-3.5 py-1.5 text-[10.5px] font-black text-slate-600 bg-slate-50 border border-slate-200 hover:bg-slate-100 rounded-lg transition-colors cursor-pointer">
+                      View Details
+                    </button>
+                  </div>
+
+                </div>
 
               </div>
 

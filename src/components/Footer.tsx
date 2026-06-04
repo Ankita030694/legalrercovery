@@ -31,7 +31,7 @@ const legalLinks = [
 export default function Footer() {
   const pathname = usePathname();
 
-  if (pathname?.startsWith("/user")) {
+  if (pathname?.startsWith("/user") || pathname?.startsWith("/authority")) {
     return null;
   }
 

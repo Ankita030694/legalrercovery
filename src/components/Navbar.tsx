@@ -31,7 +31,7 @@ export default function Navbar() {
     });
   }, []);
 
-  if (pathname?.startsWith("/user")) {
+  if (pathname?.startsWith("/user") || pathname?.startsWith("/authority")) {
     return null;
   }
 
@@ -69,7 +69,7 @@ export default function Navbar() {
             <div className="w-[80px] h-[38px] bg-[#E5E7EB]/50 rounded-[10px] animate-pulse" />
           ) : session ? (
             <a
-              href={session?.user?.role === "admin" ? "/authority/blog" : "/user/dashboard"}
+              href={session?.user?.role === "admin" ? "/authority/dashboard" : "/user/dashboard"}
               className="px-5 py-2.5 text-[13.5px] font-bold text-[#4B5563] hover:text-[#DC2626] border border-[#E5E7EB] hover:border-[#DC2626]/30 rounded-[10px] transition-all duration-200 select-none text-center"
             >
               Dashboard
@@ -131,7 +131,7 @@ export default function Navbar() {
               <div className="w-full h-[46px] bg-[#E5E7EB]/50 rounded-xl animate-pulse" />
             ) : session ? (
               <a
-                href={session?.user?.role === "admin" ? "/authority/blog" : "/user/dashboard"}
+                href={session?.user?.role === "admin" ? "/authority/dashboard" : "/user/dashboard"}
                 onClick={() => setMobileMenuOpen(false)}
                 className="flex items-center justify-center gap-2 py-3.5 text-sm font-bold text-[#4B5563] border border-[#E5E7EB] rounded-xl text-center"
               >

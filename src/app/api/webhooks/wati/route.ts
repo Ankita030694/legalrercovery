@@ -19,6 +19,18 @@ function normalizePhoneNumber(phone: string): string {
 
 export async function POST(req: NextRequest) {
   try {
+    // Validate authorization token to prevent spoofing
+    const token = req.nextUrl.searchParams.get("token");
+    const authHeader = req.headers.get("Authorization");
+    const secureToken = process.env.ADMIN_API_KEY || "legalrecovery_admin_secure_secret_token_123";
+
+    const isTokenValid = token === secureToken || (authHeader && authHeader === `Bearer ${secureToken}`);
+
+    if (!isTokenValid) {
+      console.warn("[WATI Webhook] Unauthorized access attempt.");
+      return NextResponse.json({ error: "Unauthorized" }, { status: 401 });
+    }
+
     const payload = await req.json();
     console.log("[WATI Webhook] Received payload:", JSON.stringify(payload));
 

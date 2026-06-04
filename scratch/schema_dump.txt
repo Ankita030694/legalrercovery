@@ -1,0 +1,473 @@
+Connected to database: test
+
+========================================
+Collection: users
+========================================
+Sample Keys & Value Types:
+{
+  "_id": [
+    "buffer"
+  ],
+  "phone": "string (8178310300)",
+  "amountPaid": "number (3)",
+  "createdAt": "Date",
+  "email": "string (tech.ama123@gmail.com)",
+  "isPaid": "boolean (true)",
+  "name": "string (Shrey Arora)",
+  "oppositionCount": "number (3)",
+  "paymentDate": "Date",
+  "payuTxnId": "string (TXN17801379552308504)",
+  "state": "string (Haryana)",
+  "updatedAt": "Date",
+  "caseId": "string (LR-0001-1626)",
+  "paymentConfirmationSent": "boolean (true)",
+  "lastLoginAt": "Date"
+}
+
+Sample Document (Sanitized):
+{
+  "_id": "6a1abff5a5c3d24fcc346633",
+  "phone": "8178310300",
+  "amountPaid": 3,
+  "createdAt": "2026-05-30T10:46:13.128Z",
+  "email": "tech.ama123@gmail.com",
+  "isPaid": true,
+  "name": "Shrey Arora",
+  "oppositionCount": 3,
+  "paymentDate": "2026-05-30T10:46:13.128Z",
+  "payuTxnId": "TXN17801379552308504",
+  "state": "Haryana",
+  "updatedAt": "2026-06-03T06:25:45.101Z",
+  "caseId": "LR-0001-1626",
+  "paymentConfirmationSent": true,
+  "lastLoginAt": "2026-06-03T06:25:57.036Z"
+}
+
+========================================
+Collection: cases
+========================================
+Sample Keys & Value Types:
+{
+  "_id": [
+    "buffer"
+  ],
+  "userId": [
+    "buffer"
+  ],
+  "caseId": "string (LR-0001-3626)",
+  "defaulterName": "string (Xerxes)",
+  "entityType": "string (Individual)",
+  "phone": "string (8178310300)",
+  "email": "string (tech.ama123@gmail.com)",
+  "address": "string (Sector 57 Gurugram)",
+  "stuckAmount": "number (42000)",
+  "dueDate": "string (2026-06-01)",
+  "policeStationName": "string (Sector 57 Police Station Gurugram)",
+  "policeStationEmail": "string (police@gurgaon.com)",
+  "policeStationAddress": "string (Sector 57 near Vaani Hospital)",
+  "clientName": "string (Shrey Arora)",
+  "clientEmail": "string (tech.ama123@gmail.com)",
+  "clientPhone": "string (8178310300)",
+  "clientAddress": "string ()",
+  "status": "string (completed)",
+  "currentStep": "number (4)",
+  "createdAt": "string (2026-06-03T06:30:37.977Z)",
+  "updatedAt": "string (2026-06-03T11:15:47.100Z)",
+  "timeline": "Array (length: 4)"
+}
+
+Sample Document (Sanitized):
+{
+  "_id": "6a1fca0ecc5cc7fef0c59e1e",
+  "userId": "6a1abff5a5c3d24fcc346633",
+  "caseId": "LR-0001-3626",
+  "defaulterName": "Xerxes",
+  "entityType": "Individual",
+  "phone": "8178310300",
+  "email": "tech.ama123@gmail.com",
+  "address": "Sector 57 Gurugram",
+  "stuckAmount": 42000,
+  "dueDate": "2026-06-01",
+  "policeStationName": "Sector 57 Police Station Gurugram",
+  "policeStationEmail": "police@gurgaon.com",
+  "policeStationAddress": "Sector 57 near Vaani Hospital",
+  "clientName": "Shrey Arora",
+  "clientEmail": "tech.ama123@gmail.com",
+  "clientPhone": "8178310300",
+  "clientAddress": "",
+  "status": "completed",
+  "currentStep": 4,
+  "createdAt": "2026-06-03T06:30:37.977Z",
+  "updatedAt": "2026-06-03T11:15:47.100Z",
+  "timeline": [
+    {
+      "step": 1,
+      "label": "First Notice",
+      "description": "[REDACTED_OR_SHORTENED_FOR_BREVITY]",
+      "date": "3 Jun 2026, 12:01 pm",
+      "status": "completed",
+      "lockedAt": "2026-06-03T06:30:59.181Z",
+      "completedAt": "2026-06-03T06:31:14.834Z"
+    },
+    {
+      "step": 2,
+      "label": "Second Notice",
+      "description": "[REDACTED_OR_SHORTENED_FOR_BREVITY]",
+      "date": "3 Jun 2026, 12:06 pm",
+      "status": "completed",
+      "scheduledAt": "2026-06-03T06:36:14.834Z",
+      "timeRemaining": "5 mins remaining",
+      "lockedAt": "2026-06-03T06:36:16.873Z",
+      "completedAt": "2026-06-03T06:36:16.873Z"
+    },
+    {
+      "step": 3,
+      "label": "Third Notice",
+      "description": "[REDACTED_OR_SHORTENED_FOR_BREVITY]",
+      "date": "3 Jun 2026, 12:11 pm",
+      "status": "completed",
+      "scheduledAt": "2026-06-03T06:41:16.873Z",
+      "timeRemaining": "5 mins remaining",
+      "lockedAt": "2026-06-03T06:41:27.324Z",
+      "completedAt": "2026-06-03T06:41:27.324Z"
+    },
+    {
+      "step": 4,
+      "label": "SHO Criminal Complaint",
+      "description": "[REDACTED_OR_SHORTENED_FOR_BREVITY]",
+      "date": "03-06-2026",
+      "status": "completed",
+      "scheduledAt": "2026-06-01T00:00:00.000Z",
+      "timeRemaining": "5 mins remaining",
+      "lockedAt": "2026-06-03T11:15:47.100Z",
+      "completedAt": "2026-06-03T11:15:47.100Z",
+      "error": null
+    }
+  ]
+}
+
+========================================
+Collection: police_stations
+========================================
+Sample Keys & Value Types:
+{
+  "_id": [
+    "buffer"
+  ],
+  "state": "string (Andhra Pradesh)",
+  "hqName": "string (Director General of Police, Andhra Pradesh)",
+  "hqAddress": "string (Police Headquarters, Hyderabad-500004, Andhra Pradesh)",
+  "emails": "Array (length: 2)",
+  "phone": "string (040-23235170)",
+  "website": "string (www.apstatepolice.com)"
+}
+
+Sample Document (Sanitized):
+{
+  "_id": "6a214a71df9acc20ca51ded6",
+  "state": "Andhra Pradesh",
+  "hqName": "Director General of Police, Andhra Pradesh",
+  "hqAddress": "Police Headquarters, Hyderabad-500004, Andhra Pradesh",
+  "emails": [
+    "dgp@appolice.gov.in",
+    "ig@pcs.appolice.gov.in"
+  ],
+  "phone": "040-23235170",
+  "website": "www.apstatepolice.com"
+}
+
+========================================
+Collection: notifications
+========================================
+Sample Keys & Value Types:
+{
+  "_id": [
+    "buffer"
+  ],
+  "userId": "string (6a1abff5a5c3d24fcc346633)",
+  "caseId": "string (LR-0001-3626)",
+  "caseName": "string (Xerxes)",
+  "type": "string (email_status)",
+  "title": "string (Notice 1 Dispatch Confirmation Email)",
+  "description": "string (Subject: Notice 1 Dispatched - Case Ref: LR-0001-3626-N1\n\nDear Shrey Arora,\n\nThis is to inform you t...)",
+  "status": "string (success)",
+  "date": "string (2026-06-03T06:31:15.241Z)",
+  "isRead": "boolean (true)"
+}
+
+Sample Document (Sanitized):
+{
+  "_id": "6a1fca33cc5cc7fef0c59e20",
+  "userId": "6a1abff5a5c3d24fcc346633",
+  "caseId": "LR-0001-3626",
+  "caseName": "Xerxes",
+  "type": "email_status",
+  "title": "Notice 1 Dispatch Confirmation Email",
+  "description": "[REDACTED_OR_SHORTENED_FOR_BREVITY]",
+  "status": "success",
+  "date": "2026-06-03T06:31:15.241Z",
+  "isRead": true
+}
+
+========================================
+Collection: pending_verification
+========================================
+Sample Keys & Value Types:
+{
+  "_id": [
+    "buffer"
+  ],
+  "phone": "string (9876543210)",
+  "createdAt": "Date",
+  "email": "string (anything@gmail.com)",
+  "name": "string (Xerxes)",
+  "oppositionCount": "number (1)",
+  "otp": "string (HIDDEN)",
+  "otpExpires": "Date",
+  "state": "string (Delhi)",
+  "verified": "boolean (false)"
+}
+
+Sample Document (Sanitized):
+{
+  "_id": "6a202025a5c3d24fcc3489cb",
+  "phone": "9876543210",
+  "createdAt": "2026-06-03T12:37:57.129Z",
+  "email": "anything@gmail.com",
+  "name": "Xerxes",
+  "oppositionCount": 1,
+  "otp": "[REDACTED_OR_SHORTENED_FOR_BREVITY]",
+  "otpExpires": "2026-06-03T12:47:57.129Z",
+  "state": "Delhi",
+  "verified": false
+}
+
+========================================
+Collection: pending_payment
+========================================
+No documents found (collection empty).
+
+========================================
+Collection: transactions
+========================================
+Sample Keys & Value Types:
+{
+  "_id": [
+    "buffer"
+  ],
+  "userId": [
+    "buffer"
+  ],
+  "phone": "string (8178310300)",
+  "email": "string (tech.ama123@gmail.com)",
+  "payuTxnId": "string (TXN17801379552308504)",
+  "amount": "number (3)",
+  "status": "string (success)",
+  "oppositionCount": "number (3)",
+  "paymentDate": "Date",
+  "createdAt": "Date"
+}
+
+Sample Document (Sanitized):
+{
+  "_id": "6a1abff5fb229250d3678e47",
+  "userId": "6a1abff5a5c3d24fcc346633",
+  "phone": "8178310300",
+  "email": "tech.ama123@gmail.com",
+  "payuTxnId": "TXN17801379552308504",
+  "amount": 3,
+  "status": "success",
+  "oppositionCount": 3,
+  "paymentDate": "2026-05-30T10:46:13.693Z",
+  "createdAt": "2026-05-30T10:46:13.693Z"
+}
+
+========================================
+Collection: dispatch_logs
+========================================
+Sample Keys & Value Types:
+{
+  "_id": [
+    "buffer"
+  ],
+  "caseId": "string (LR-0001-3626)",
+  "dbId": [
+    "buffer"
+  ],
+  "step": "number (1)",
+  "recipientEmail": "string (tech.ama123@gmail.com)",
+  "recipientPhone": "string (8178310300)",
+  "dispatchedAt": "string (2026-06-03T06:31:14.797Z)",
+  "channels": [
+    "email",
+    "whatsapp"
+  ]
+}
+
+Sample Document (Sanitized):
+{
+  "_id": "6a1fca32cc5cc7fef0c59e1f",
+  "caseId": "LR-0001-3626",
+  "dbId": "6a1fca0ecc5cc7fef0c59e1e",
+  "step": 1,
+  "recipientEmail": "tech.ama123@gmail.com",
+  "recipientPhone": "8178310300",
+  "dispatchedAt": "2026-06-03T06:31:14.797Z",
+  "channels": {
+    "email": {
+      "status": "success",
+      "error": null
+    },
+    "whatsapp": {
+      "status": "success",
+      "error": null
+    }
+  }
+}
+
+========================================
+Collection: payment_debug_logs
+========================================
+Sample Keys & Value Types:
+{
+  "_id": [
+    "buffer"
+  ],
+  "step": "string (redirect_post_received)",
+  "timestamp": "Date",
+  "data": [
+    "status",
+    "txnid",
+    "amount",
+    "firstname",
+    "email",
+    "udf1",
+    "keyPresent"
+  ]
+}
+
+Sample Document (Sanitized):
+{
+  "_id": "6a1abff3fb229250d3678e44",
+  "step": "redirect_post_received",
+  "timestamp": "2026-05-30T10:46:11.702Z",
+  "data": {
+    "status": "success",
+    "txnid": "TXN17801379552308504",
+    "amount": "3.00",
+    "firstname": "Bhavya Jain",
+    "email": "tech.ama123@gmail.com",
+    "udf1": "6a1abfe2a5c3d24fcc346632",
+    "keyPresent": true
+  }
+}
+
+========================================
+Collection: blogs
+========================================
+Sample Keys & Value Types:
+{
+  "_id": [
+    "buffer"
+  ],
+  "title": "string (How to Legally Recover Money from a Friend Who Owes You)",
+  "slug": "string (recover-money-from-a-friend)",
+  "subtitleKeywords": "string (Claim Your Money Back Using Legal Notices and Recovery Strategies)",
+  "metaTitle": "string (Recover Money from a Friend Legally | LegalRecovery.in)",
+  "metaDescription": "string (Learn how to recover money owed by a friend using legal notices and recovery strategies. Start your ...)",
+  "publishedAt": "string (2026-05-27T00:00:00.000Z)",
+  "author": "string (Anuj Anand Malik)",
+  "coverImage": [
+    "gridFsId",
+    "filename",
+    "contentType"
+  ],
+  "faqs": "Array (length: 10)",
+  "reviewSnippets": "Array (length: 3)",
+  "content": "string (<h2>Understanding the Dynamics of Friendly Loans</h2><p>Lending money to a friend can often seem lik...)",
+  "createdAt": "string (2026-05-27T07:06:56.506Z)",
+  "updatedAt": "string (2026-05-27T07:06:56.506Z)"
+}
+
+Sample Document (Sanitized):
+{
+  "_id": "6a1698108c9deb92da5bfa0d",
+  "title": "How to Legally Recover Money from a Friend Who Owes You",
+  "slug": "recover-money-from-a-friend",
+  "subtitleKeywords": "Claim Your Money Back Using Legal Notices and Recovery Strategies",
+  "metaTitle": "Recover Money from a Friend Legally | LegalRecovery.in",
+  "metaDescription": "Learn how to recover money owed by a friend using legal notices and recovery strategies. Start your recovery journey with LegalRecovery.in today.",
+  "publishedAt": "2026-05-27T00:00:00.000Z",
+  "author": "Anuj Anand Malik",
+  "coverImage": {
+    "gridFsId": "6a16980a8c9deb92da5bfa0b",
+    "filename": "cover.jpg",
+    "contentType": "image/jpeg"
+  },
+  "faqs": [
+    {
+      "question": "What is the first step in recovering money from a friend?",
+      "answer": "The first step is to document all communications regarding the loan, including messages and emails, and then send a formal legal notice demanding repayment."
+    },
+    {
+      "question": "Can I use electronic messages as evidence in court?",
+      "answer": "Yes, under Section 65B of the Indian Evidence Act, electronic messages like WhatsApp chats and emails can be used as evidence in court."
+    },
+    {
+      "question": "How does a summary suit help in money recovery?",
+      "answer": "A summary suit under Order 37 of CPC allows for a quicker resolution by limiting the defenses available to the debtor, making it easier to recover your money."
+    },
+    {
+      "question": "What if my friend's cheque bounces?",
+      "answer": "If a cheque bounces, you can take legal action under Section 138 of the Negotiable Instruments Act, which treats cheque bouncing as a criminal offense."
+    },
+    {
+      "question": "Is it possible to recover money without going to court?",
+      "answer": "Yes, mediation or arbitration can help resolve the issue without court proceedings, often preserving the friendship while ensuring repayment."
+    },
+    {
+      "question": "How can LegalRecovery.in assist with money recovery?",
+      "answer": "LegalRecovery.in offers services to draft and send legal notices and file complaints, using technology to streamline the recovery process efficiently."
+    },
+    {
+      "question": "What documentation is needed for a summary suit?",
+      "answer": "While a formal agreement is preferred, electronic communications like emails or messages acknowledging the loan can serve as evidence for a summary suit."
+    },
+    {
+      "question": "Can a legal notice improve the chances of recovery?",
+      "answer": "Yes, a legal notice serves as a formal warning and often prompts the borrower to repay the debt to avoid legal action."
+    },
+    {
+      "question": "What are the benefits of using a legal-tech platform for recovery?",
+      "answer": "Legal-tech platforms like LegalRecovery.in provide affordable, tech-driven solutions that simplify the legal process, making recovery more accessible."
+    },
+    {
+      "question": "Are there any time limits for taking legal action on unpaid loans?",
+      "answer": "Yes, typically a legal notice should be sent promptly after a cheque bounce or default, and legal action should be initiated within three years of the loan date."
+    }
+  ],
+  "reviewSnippets": [
+    {
+      "reviewerName": "Amit",
+      "rating": 5,
+      "reviewText": "LegalRecovery.in made the process of recovering my money from a friend seamless and efficient. Highly recommended!",
+      "reviewDate": "27/5/2026"
+    },
+    {
+      "reviewerName": "Priya",
+      "rating": 4,
+      "reviewText": "I was able to get my loaned money back quickly with the help of LegalRecovery.in. Excellent service!",
+      "reviewDate": "27/5/2026"
+    },
+    {
+      "reviewerName": "Rohan",
+      "rating": 5,
+      "reviewText": "The team at LegalRecovery.in was professional and supportive throughout the recovery process. Great service!",
+      "reviewDate": "27/5/2026"
+    }
+  ],
+  "content": "[REDACTED_OR_SHORTENED_FOR_BREVITY]",
+  "createdAt": "2026-05-27T07:06:56.506Z",
+  "updatedAt": "2026-05-27T07:06:56.506Z"
+}
+
