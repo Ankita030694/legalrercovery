@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useState, useEffect, useRef } from "react";
+import React, { useState, useEffect, useRef, Suspense } from "react";
 import { useSearchParams, useRouter } from "next/navigation";
 import { motion, AnimatePresence } from "framer-motion";
 import {
@@ -91,6 +91,21 @@ interface DispatchLog {
 }
 
 export default function CaseInspectorPage() {
+  return (
+    <Suspense fallback={
+      <div className="py-32 flex flex-col items-center justify-center gap-3">
+        <Loader2 className="w-10 h-10 text-[#DC2626] animate-spin" />
+        <p className="text-xs font-bold text-gray-450 uppercase tracking-widest">
+          Loading Case Inspector...
+        </p>
+      </div>
+    }>
+      <CaseInspector />
+    </Suspense>
+  );
+}
+
+function CaseInspector() {
   const searchParams = useSearchParams();
   const router = useRouter();
   

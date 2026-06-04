@@ -133,7 +133,7 @@ export default function ContactSubmissions() {
   };
 
   // ── Load-more via ref ──
-  const loadMoreRef = useRef<() => void>();
+  const loadMoreRef = useRef<() => void>(undefined);
   loadMoreRef.current = () => {
     if (!hasMore || isSearching || isLoadingMore) return;
     const nextPage = page + 1;
