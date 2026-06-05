@@ -1,0 +1,26 @@
+import { Metadata } from "next";
+import OfficeSecurityDepositClient from "./OfficeSecurityDepositClient";
+
+export const metadata: Metadata = {
+  title: "Recover Commercial Office Security Deposit from Landlord | LegalRecovery",
+  description: "Is your landlord withholding your commercial office lease security deposit, claiming lock-in penalties, or demanding fit-out restoration charges? Get expert legal tech help.",
+  keywords: [
+    "recover commercial office security deposit",
+    "legal notice for refund of commercial lease deposit",
+    "commercial lease lock in period dispute",
+    "office reinstatement restoration make good clause",
+    "pre-institution mediation commercial lease",
+    "commercial courts act security deposit recovery",
+    "unregistered commercial lease deed enforceability",
+    "summary suit for commercial security deposit",
+    "arbitration in commercial lease agreements",
+    "withholding commercial office security deposit"
+  ],
+  alternates: {
+    canonical: 'https://www.legalrecovery.in/recovery/office-security-deposit',
+  },
+};
+
+export default function OfficeSecurityDepositPage() {
+  return <OfficeSecurityDepositClient />;
+}

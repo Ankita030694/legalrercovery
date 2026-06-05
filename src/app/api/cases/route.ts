@@ -140,7 +140,9 @@ export async function POST(req: NextRequest) {
 
     const currentCreatedCount = await db.collection("cases").countDocuments({ userId });
 
-    if (currentCreatedCount >= allowedLimit) {
+    const hasUnlimitedCases = user.hasUnlimitedCases === true;
+
+    if (!hasUnlimitedCases && currentCreatedCount >= allowedLimit) {
       return NextResponse.json(
         { error: `Case registration limit reached. Your active plan allows up to ${allowedLimit} opposing parties (calculated at ₹${PRICE_PER_OPPOSITION} per opposition based on ₹${amountPaid} paid). Please contact support or purchase additional slots.` },
         { status: 403 }

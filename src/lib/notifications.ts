@@ -1,4 +1,4 @@
-import { Db } from "mongodb";
+import { Db, ObjectId } from "mongodb";
 import { sendPaymentSuccessEmail, sendClientNotificationEmail } from "./email";
 import { sendWatiPaymentSuccess, sendWatiClientNoticeNotification } from "./wati";
 
@@ -81,10 +81,18 @@ export async function processPaymentSuccessNotifications(
       });
     } catch {}
 
+    // Check custom notification preferences (defaults to true if not explicitly set to false)
+    const emailEnabled = user.emailNotificationsEnabled !== false;
+    const whatsappEnabled = user.whatsappNotificationsEnabled !== false;
+
     // 4. Dispatch both notifications in parallel
     const [emailSent, whatsappSent] = await Promise.all([
-      sendPaymentSuccessEmail(email, name, amountPaid, caseId, phone),
-      sendWatiPaymentSuccess(phone, name, amountPaid, caseId)
+      emailEnabled
+        ? sendPaymentSuccessEmail(email, name, amountPaid, caseId, phone)
+        : Promise.resolve(false),
+      whatsappEnabled
+        ? sendWatiPaymentSuccess(phone, name, amountPaid, caseId)
+        : Promise.resolve(false)
     ]);
 
     console.log(`[Notification] Dispatches completed. Email status: ${emailSent}, WhatsApp status: ${whatsappSent}`);
@@ -109,10 +117,6 @@ export async function processPaymentSuccessNotifications(
   }
 }
 
-/**
- * Sends a real-time status update to the client via Email and WhatsApp,
- * and logs both channels to the MongoDB notifications collection.
- */
 export async function sendAndLogClientNotification(
   db: Db,
   caseDoc: any,
@@ -122,6 +126,19 @@ export async function sendAndLogClientNotification(
   clientPhone: string,
   noticeRef: string
 ): Promise<{ emailSent: boolean; watiSent: boolean }> {
+  // Check notification preferences for the client
+  let emailEnabled = true;
+  let whatsappEnabled = true;
+  try {
+    const user = await db.collection("users").findOne({ _id: new ObjectId(caseDoc.userId) });
+    if (user) {
+      if (user.emailNotificationsEnabled === false) emailEnabled = false;
+      if (user.whatsappNotificationsEnabled === false) whatsappEnabled = false;
+    }
+  } catch (err) {
+    console.error("[Notification System] Error fetching user preferences:", err);
+  }
+
   const emailSubject = `Notice ${step} Dispatched - Case Ref: ${noticeRef}`;
   const emailBody = `Dear ${clientDisplayName},
 
@@ -134,8 +151,12 @@ Legal Dispatch Desk
 AMA Legal Solutions`;
 
   const promises = [
-    sendClientNotificationEmail(clientEmail, emailSubject, emailBody),
-    sendWatiClientNoticeNotification(clientPhone, clientDisplayName, caseDoc.defaulterName, step, noticeRef)
+    emailEnabled
+      ? sendClientNotificationEmail(clientEmail, emailSubject, emailBody)
+      : Promise.resolve(false),
+    whatsappEnabled
+      ? sendWatiClientNoticeNotification(clientPhone, clientDisplayName, caseDoc.defaulterName, step, noticeRef)
+      : Promise.resolve(false)
   ];
 
   const results = await Promise.allSettled(promises);

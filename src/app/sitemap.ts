@@ -24,6 +24,16 @@ const STATIC_ROUTES: {
   { path: "/contact", changeFrequency: "monthly", priority: 0.7 },
   { path: "/privacy-policy", changeFrequency: "yearly", priority: 0.3 },
   { path: "/terms-and-conditions", changeFrequency: "yearly", priority: 0.3 },
+  { path: "/recovery", changeFrequency: "weekly", priority: 0.9 },
+  { path: "/recovery/unpaid-salary", changeFrequency: "weekly", priority: 0.8 },
+  { path: "/recovery/pending-salary-from-employer", changeFrequency: "weekly", priority: 0.8 },
+  { path: "/recovery/fnf-settlement", changeFrequency: "weekly", priority: 0.8 },
+  { path: "/recovery/outstanding-dues-from-employer", changeFrequency: "weekly", priority: 0.8 },
+  { path: "/recovery/security-deposit", changeFrequency: "weekly", priority: 0.8 },
+  { path: "/recovery/rental-security-deposit", changeFrequency: "weekly", priority: 0.8 },
+  { path: "/recovery/office-security-deposit", changeFrequency: "weekly", priority: 0.8 },
+  { path: "/recovery/unpaid-incentives", changeFrequency: "weekly", priority: 0.8 },
+  { path: "/recovery/unpaid-bonus", changeFrequency: "weekly", priority: 0.8 },
 ];
 
 async function getBlogEntries(): Promise<MetadataRoute.Sitemap> {

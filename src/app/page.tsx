@@ -786,6 +786,12 @@ function ServicesSection() {
                   </li>
                 ))}
               </ul>
+
+              {/* Redirect Button */}
+              <div className="w-full mt-4 pt-3 border-t border-[#E5E7EB]/60 flex items-center justify-between text-[#DC2626] font-black text-[10px] sm:text-xs tracking-tight group-hover:text-[#B91C1C] transition-colors select-none">
+                <span>Start Recovery</span>
+                <ChevronRight className="w-4 h-4 transform group-hover:translate-x-1 transition-transform" />
+              </div>
             </div>
           );
 
