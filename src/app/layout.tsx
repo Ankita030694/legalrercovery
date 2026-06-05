@@ -25,6 +25,9 @@ export const metadata: Metadata = {
   },
   description:
     "Recover unpaid money, salary, refunds, deposits, invoices, and consumer claims legally through India's trusted legal-tech platform. Start your claim online in minutes.",
+  alternates: {
+    canonical: "/",
+  },
   icons: {
     icon: [
       { url: "/favicon/favicon.ico", sizes: "any" },

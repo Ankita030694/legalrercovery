@@ -6,6 +6,9 @@ export const metadata: Metadata = {
   },
   description:
     "Read how Legal Recovery collects, uses, stores, and protects your personal information and claim documents on legalrecovery.in.",
+  alternates: {
+    canonical: "/privacy-policy",
+  },
 };
 
 export default function PrivacyPolicyLayout({

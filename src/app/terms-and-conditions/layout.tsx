@@ -6,6 +6,9 @@ export const metadata: Metadata = {
   },
   description:
     "Terms and conditions for using Legal Recovery’s legal-tech platform, claim submission, notices, and dispute escalation services in India.",
+  alternates: {
+    canonical: "/terms-and-conditions",
+  },
 };
 
 export default function TermsLayout({

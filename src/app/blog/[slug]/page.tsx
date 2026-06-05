@@ -96,6 +96,9 @@ export async function generateMetadata(
   return {
     title: `${metaTitle} | LegalRecovery`,
     description: metaDescription,
+    alternates: {
+      canonical: `/blog/${blog.slug}`,
+    },
     openGraph: {
       title: `${metaTitle} | LegalRecovery`,
       description: metaDescription,

@@ -2,10 +2,13 @@ import { Metadata } from "next";
 import RefundsComplaintsClient from "./RefundsComplaintsClient";
 
 export const metadata: Metadata = {
-  title: "Recover Stuck Refunds & File Consumer Complaints Legally in India | LegalRecovery",
+  title: "Recover Stuck Refunds & Consumer Complaints | LegalRecovery",
   description: "Exhaustive legal guide on consumer complaints, e-commerce refunds, defective products, deficient services, and warranty disputes in India. Learn legal notice formats, e-Daakhil filing, and NCDRC rules.",
+  alternates: {
+    canonical: "/services/refunds-and-consumer-complaints",
+  },
   openGraph: {
-    title: "Recover Stuck Refunds & File Consumer Complaints Legally in India | LegalRecovery",
+    title: "Recover Stuck Refunds & Consumer Complaints | LegalRecovery",
     description: "Exhaustive legal guide on consumer complaints, e-commerce refunds, defective products, deficient services, and warranty disputes in India. Learn legal notice formats, e-Daakhil filing, and NCDRC rules.",
     type: "article",
     url: "/services/refunds-and-consumer-complaints",
@@ -20,7 +23,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Recover Stuck Refunds & File Consumer Complaints Legally in India | LegalRecovery",
+    title: "Recover Stuck Refunds & Consumer Complaints | LegalRecovery",
     description: "Exhaustive legal guide on consumer complaints, e-commerce refunds, defective products, deficient services, and warranty disputes in India.",
     images: ["/blog_money_recovery.png"]
   }

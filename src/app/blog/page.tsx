@@ -310,6 +310,70 @@ export default function BlogPage() {
           </div>
         )}
 
+        {/* Information-Rich SEO Content Section to Avoid Thin Content */}
+        <section className="mt-20 bg-white border border-gray-100/80 rounded-3xl p-6 sm:p-10 shadow-[0_4px_24px_rgba(0,0,0,0.015)] text-left select-text">
+          <h2 className="text-xl sm:text-2xl font-black text-[#111827] mb-6">
+            Understanding Money Recovery & Legal Protection in India
+          </h2>
+          
+          <p className="text-[13px] sm:text-[14px] text-[#4B5563] leading-relaxed mb-6 font-medium">
+            Welcome to the Legal Recovery Blog, your comprehensive resource for navigating consumer claims, employment dues, and debt recovery in India. Our mission is to democratize legal awareness and provide actionable tips for individuals, freelancers, and businesses looking to recover their hard-earned money. 
+          </p>
+
+          <p className="text-[13px] sm:text-[14px] text-[#4B5563] leading-relaxed mb-6 font-medium">
+            In India, recovering stuck money has historically been seen as a slow and expensive process. However, modern legal-tech platforms combined with robust statutory protections make it easier than ever to enforce your rights. Below, we break down the key legal frameworks and strategies covered in our articles:
+          </p>
+
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 sm:gap-8 mt-8 pt-8 border-t border-gray-100">
+            <div>
+              <h3 className="text-sm sm:text-base font-extrabold text-[#111827] mb-3">
+                1. Recovery of Unpaid Salaries & Employment Dues
+              </h3>
+              <p className="text-[12.5px] text-[#6B7280] leading-relaxed font-semibold">
+                Employee rights in India are protected under several key legislations, including the <strong>Payment of Wages Act, 1936</strong>, and the <strong>Industrial Disputes Act, 1947</strong>. If your employer is withholding your salary, bonuses, or full-and-final (F&F) settlement dues, you are legally entitled to send a statutory demand notice. If the employer fails to respond or pay, claims can be escalated to the local Labour Commissioner or filed as a recovery suit in a civil court.
+              </p>
+            </div>
+
+            <div>
+              <h3 className="text-sm sm:text-base font-extrabold text-[#111827] mb-3">
+                2. Resolving Consumer Disputes & Stuck Refunds
+              </h3>
+              <p className="text-[12.5px] text-[#6B7280] leading-relaxed font-semibold">
+                The <strong>Consumer Protection Act, 2019</strong> guarantees protection against unfair trade practices, defective products, and deficient services. Under this law, consumer forums have the authority to order refunds, product replacements, and compensation for mental agony. Platforms like <strong>e-Daakhil</strong> allow consumers to file complaints online directly. Initiating the process with an attorney-drafted legal notice often prompts brands to settle disputes out of court.
+              </p>
+            </div>
+
+            <div>
+              <h3 className="text-sm sm:text-base font-extrabold text-[#111827] mb-3">
+                3. B2B Invoice Recoveries & MSME Protection
+              </h3>
+              <p className="text-[12.5px] text-[#6B7280] leading-relaxed font-semibold">
+                For registered Micro, Small, and Medium Enterprises (MSMEs), the <strong>MSMED Act, 2006</strong> provides a powerful mechanism under <strong>MSME Samadhaan</strong> to address delayed payments. Buyers who delay payments beyond 45 days are liable to pay compound interest at three times the bank rate notified by the RBI. For other businesses, filing a summary suit under <strong>Order 37 of the Civil Procedure Code (CPC)</strong> offers a fast-track litigation route for written debt recovery.
+              </p>
+            </div>
+          </div>
+
+          <div className="mt-8 pt-8 border-t border-gray-100">
+            <h3 className="text-sm sm:text-base font-extrabold text-[#111827] mb-4">
+              Actionable Steps Before Taking Legal Action
+            </h3>
+            <ul className="grid grid-cols-1 md:grid-cols-3 gap-4 list-none p-0 m-0">
+              <li className="bg-[#F8F9FB] rounded-2xl p-4 border border-gray-100">
+                <strong className="text-[13px] text-[#111827] block mb-1">Maintain a Paper Trail</strong>
+                <span className="text-[12px] text-[#6B7280] leading-relaxed font-semibold">Ensure you have clear, written communication, including email threads, invoices, contracts, or chat logs.</span>
+              </li>
+              <li className="bg-[#F8F9FB] rounded-2xl p-4 border border-gray-100">
+                <strong className="text-[13px] text-[#111827] block mb-1">Draft a Formal Notice</strong>
+                <span className="text-[12px] text-[#6B7280] leading-relaxed font-semibold">A legal notice prepared and signed by a qualified advocate holds strong evidentiary value and sets clear terms.</span>
+              </li>
+              <li className="bg-[#F8F9FB] rounded-2xl p-4 border border-gray-100">
+                <strong className="text-[13px] text-[#111827] block mb-1">Track Delivery</strong>
+                <span className="text-[12px] text-[#6B7280] leading-relaxed font-semibold">Always send notices via Registered Post AD or speed post, and keep the tracking records as proof of service.</span>
+              </li>
+            </ul>
+          </div>
+        </section>
+
       </div>
     </div>
   );

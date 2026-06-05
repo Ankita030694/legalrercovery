@@ -2,10 +2,13 @@ import { Metadata } from "next";
 import SalaryRecoveryClient from "./SalaryRecoveryClient";
 
 export const metadata: Metadata = {
-  title: "Recover Unpaid Salary & Employment Dues Legally in India | LegalRecovery",
+  title: "Recover Unpaid Salary & Employment Dues | LegalRecovery",
   description: "Exhaustive legal guide on recovering unpaid salary, F&F settlement, bonuses, gratuity, and notice pay in India. Learn legal notice formats, labor court filings, and recovery suits.",
+  alternates: {
+    canonical: "/services/recovery-of-salary-and-employment-dues",
+  },
   openGraph: {
-    title: "Recover Unpaid Salary & Employment Dues Legally in India | LegalRecovery",
+    title: "Recover Unpaid Salary & Employment Dues | LegalRecovery",
     description: "Exhaustive legal guide on recovering unpaid salary, F&F settlement, bonuses, gratuity, and notice pay in India. Learn legal notice formats, labor court filings, and recovery suits.",
     type: "article",
     url: "/services/recovery-of-salary-and-employment-dues",
@@ -20,7 +23,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Recover Unpaid Salary & Employment Dues Legally in India | LegalRecovery",
+    title: "Recover Unpaid Salary & Employment Dues | LegalRecovery",
     description: "Exhaustive legal guide on recovering unpaid salary, F&F settlement, bonuses, gratuity, and notice pay in India.",
     images: ["/blog_money_recovery.png"]
   }

@@ -5,5 +5,5 @@ export const SITE_DOMAIN = "legalrecovery.in";
 export const SITE_URL = (
   process.env.NEXT_PUBLIC_SITE_URL ||
   process.env.SITE_URL ||
-  `https://${SITE_DOMAIN}`
+  `https://www.${SITE_DOMAIN}`
 ).replace(/\/$/, "");

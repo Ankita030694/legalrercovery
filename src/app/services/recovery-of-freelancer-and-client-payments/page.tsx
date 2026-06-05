@@ -2,10 +2,13 @@ import { Metadata } from "next";
 import FreelancerRecoveryClient from "./FreelancerRecoveryClient";
 
 export const metadata: Metadata = {
-  title: "Recover Unpaid Freelancer & Client Payments Legally in India | LegalRecovery",
+  title: "Recover Freelancer & Client Payments | LegalRecovery",
   description: "Exhaustive legal guide on freelancer and client payment recoveries in India. Learn legal notice formats, MSME Samadhaan portals, Order 37 CPC summary suits, and copyright protection acts.",
+  alternates: {
+    canonical: "/services/recovery-of-freelancer-and-client-payments",
+  },
   openGraph: {
-    title: "Recover Unpaid Freelancer & Client Payments Legally in India | LegalRecovery",
+    title: "Recover Freelancer & Client Payments | LegalRecovery",
     description: "Exhaustive legal guide on freelancer and client payment recoveries in India. Learn legal notice formats, MSME Samadhaan portals, Order 37 CPC summary suits, and copyright protection acts.",
     type: "article",
     url: "/services/recovery-of-freelancer-and-client-payments",
@@ -20,7 +23,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Recover Unpaid Freelancer & Client Payments Legally in India | LegalRecovery",
+    title: "Recover Freelancer & Client Payments | LegalRecovery",
     description: "Exhaustive legal guide on freelancer and client payment recoveries in India.",
     images: ["/blog_money_recovery.png"]
   }
