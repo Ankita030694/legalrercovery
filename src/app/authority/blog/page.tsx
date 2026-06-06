@@ -346,8 +346,8 @@ const BlogsDashboard = () => {
 
   // Handle AI generation
   const handleGenerate = async () => {
-    if (!aiContext.trim()) {
-      alert("Please provide the context details for the article.");
+    if (!aiPrimaryKeyword.trim()) {
+      alert("Please enter a Primary Keyword.");
       return;
     }
 
@@ -359,7 +359,6 @@ const BlogsDashboard = () => {
           "Content-Type": "application/json",
         },
         body: JSON.stringify({ 
-          context: aiContext,
           primaryKeyword: aiPrimaryKeyword,
           secondaryKeywords: aiSecondaryKeywords,
           timestamp: Date.now(),
@@ -809,17 +808,7 @@ const BlogsDashboard = () => {
                     />
                   </div>
                 </div>
-                <div className="space-y-1.5">
-                  <label className="block text-[10px] font-black text-gray-500 uppercase">Article Context, Facts, & Case Guidance Dump</label>
-                  <textarea
-                    value={aiContext}
-                    onChange={(e) => setAiContext(e.target.value)}
-                    placeholder="Dump all the raw context, legal provisions, specific facts, or draft points here. The AI will write an extremely comprehensive ~3500 word blog post and auto-generate FAQs, Reviews, and an image prompt based on this info."
-                    rows={4}
-                    className="text-black w-full px-4 py-3 border border-gray-200 rounded-xl text-xs font-semibold focus:outline-none focus:border-[#DC2626] leading-relaxed"
-                    disabled={isGenerating}
-                  />
-                </div>
+
                 <button
                   type="button"
                   onClick={handleGenerate}
