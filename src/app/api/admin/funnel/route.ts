@@ -139,7 +139,7 @@ export async function GET(req: NextRequest) {
     const [pvTotal, ppTotal, compTotal] = await Promise.all([
       db.collection("pending_verification").countDocuments({}),
       db.collection("pending_payment").countDocuments({}),
-      db.collection("users").countDocuments({ isPaid: true }),
+      db.collection("users").countDocuments({ isPaid: true, hasUnlimitedCases: { $ne: true } }),
     ]);
 
     const grandTotal = pvTotal + ppTotal + compTotal;
@@ -179,7 +179,7 @@ export async function GET(req: NextRequest) {
     if (status === "all" || status === "completed") {
       queries.push({
         name: "users",
-        filter: mergeFilters({ isPaid: true }, searchFilter),
+        filter: mergeFilters({ isPaid: true, hasUnlimitedCases: { $ne: true } }, searchFilter),
         statusLabel: "completed",
       });
     }
