@@ -7,17 +7,6 @@ export const dynamic = "force-dynamic";
 export const revalidate = 0;
 export const maxDuration = 300; // Custom maximum duration for long-running Vercel operations
 
-function escapeJsonString(str: string): string {
-  return str
-    .replace(/\\/g, '\\\\')
-    .replace(/"/g, '\\"')
-    .replace(/\n/g, '\\n')
-    .replace(/\r/g, '\\r')
-    .replace(/\t/g, '\\t')
-    .replace(/\f/g, '\\f')
-    .replace(/\b/g, '\\b');
-}
-
 export async function POST(request: NextRequest) {
   // Validate NextAuth session
   const session = await getServerSession(authOptions);
@@ -77,9 +66,9 @@ Return ONLY a JSON object with this exact structure:
     const step1Result = JSON.parse(step1ResultStr);
 
     console.log(`[AI Generator Flow] Step 1 complete. Title: "${step1Result.title}"`);
-    console.log(`[AI Generator Flow] Step 2: Starting streaming description generation (3500+ words HTML)...`);
+    console.log(`[AI Generator Flow] Step 2: Generating description content (3500+ words HTML)...`);
 
-    // STEP 2: Generate Description (Streaming)
+    // STEP 2: Generate Description (Complete body in HTML)
     const step2SystemPrompt = `
 You are a professional legal content writer and SEO expert. Write a fully human-written, SEO-optimized, exhaustive legal article body for Legal Recovery (https://www.legalrecovery.in/).
 Target Primary Keyword: ${primaryKeyword}
@@ -94,6 +83,7 @@ Discuss relevant Indian acts (Payment of Wages, Shops & Establishments, Gratuity
 **Requirements**:
 - **Structure**: Use HTML tags: <h2>, <h3>, <h4>, <p>, <ul>, <li>, <table>. Include at least 8 main H2 sections.
 - **Tone**: Professional, authoritative, human. Use Indian context (Rupees ₹, RBI, etc.) naturally.
+- **No Markdown**: Do NOT use markdown headers (like ## or ###) or markdown bold (like **text**). Use HTML tags instead (like <h2>, <h3>, <strong>).
 - **Internal Linking**: You MUST naturally integrate links to the following Legal Recovery pages:
   - https://www.legalrecovery.in/
   - https://www.legalrecovery.in/about
@@ -118,86 +108,38 @@ Discuss relevant Indian acts (Payment of Wages, Shops & Establishments, Gratuity
       ? `Write an exhaustive, extremely detailed 3500+ words HTML body about: ${primaryKeyword}\nAdditional context & details: ${body.context}`
       : `Write an exhaustive, extremely detailed 3500+ words HTML body about: ${primaryKeyword}`;
 
-    const step2Stream = await openai.chat.completions.create({
+    const step2Completion = await openai.chat.completions.create({
       model: "gpt-4o",
       messages: [
         { role: "system", content: step2SystemPrompt },
         { role: "user", content: step2UserMessage },
       ],
       temperature: 0.8,
-      stream: true,
     });
 
-    const stream = new ReadableStream({
-      async start(controller) {
-        // Enqueue initial JSON keys
-        const initialJson = {
-          title: step1Result.title,
-          subtitle: step1Result.subtitle,
-          metaTitle: step1Result.metaTitle,
-          metaDescription: step1Result.metaDescription,
-          slug: step1Result.slug,
-        };
-        const initialJsonStr = JSON.stringify(initialJson);
-        // Remove closing bracket, add "description": "
-        const headerChunk = initialJsonStr.slice(0, -1) + ',"description":"';
-        controller.enqueue(new TextEncoder().encode(headerChunk));
+    let rawDescription = step2Completion.choices[0].message.content || "";
 
-        let accumulatedDescription = "";
-        let startedHTML = false;
+    // Clean up markdown fences at the root level
+    let cleanedDescription = rawDescription.trim();
+    if (cleanedDescription.startsWith("```html")) {
+      cleanedDescription = cleanedDescription.slice(7).trim();
+    } else if (cleanedDescription.startsWith("```")) {
+      cleanedDescription = cleanedDescription.slice(3).trim();
+    }
+    if (cleanedDescription.endsWith("```")) {
+      cleanedDescription = cleanedDescription.slice(0, -3).trim();
+    }
 
-        for await (const chunk of step2Stream) {
-          const chunkText = chunk.choices[0]?.delta?.content || "";
-          accumulatedDescription += chunkText;
+    console.log(`[AI Generator Flow] Step 2 complete. Description length: ${cleanedDescription.split(/\s+/).length} words.`);
+    console.log(`[AI Generator Flow] Step 3: Generating FAQs, reviews, and image prompt in the context of the description...`);
 
-          let textToSend = chunkText;
-          if (!startedHTML) {
-            const cleaned = accumulatedDescription.trimStart();
-            if (cleaned.startsWith("```html")) {
-              if (cleaned.length > 7) {
-                textToSend = cleaned.slice(7);
-                startedHTML = true;
-              } else {
-                textToSend = "";
-              }
-            } else if (cleaned.startsWith("```")) {
-              if (cleaned.length > 3) {
-                textToSend = cleaned.slice(3);
-                startedHTML = true;
-              } else {
-                textToSend = "";
-              }
-            } else {
-              startedHTML = true;
-            }
-          }
+    // STEP 3: Generate FAQs, Reviews, suggestedImagePrompt based on the Title, Subtitle, and Description
+    let faqs = [];
+    let reviews = [];
+    let suggestedImagePrompt = "Professional legal recovery illustration";
 
-          if (startedHTML && textToSend) {
-            const escaped = escapeJsonString(textToSend);
-            controller.enqueue(new TextEncoder().encode(escaped));
-          }
-        }
-
-        // Clean up markdown fences at the end of accumulatedDescription for Step 3
-        let cleanedDescription = accumulatedDescription.trim();
-        if (cleanedDescription.startsWith("```html")) {
-          cleanedDescription = cleanedDescription.slice(7).trim();
-        } else if (cleanedDescription.startsWith("```")) {
-          cleanedDescription = cleanedDescription.slice(3).trim();
-        }
-        if (cleanedDescription.endsWith("```")) {
-          cleanedDescription = cleanedDescription.slice(0, -3).trim();
-        }
-
-        console.log(`[AI Generator Flow] Step 2 complete. Description length: ${cleanedDescription.split(/\s+/).length} words.`);
-        console.log(`[AI Generator Flow] Step 3: Generating FAQs, reviews, and image prompt in the context of the description...`);
-
-        // Close the description string in JSON and prepare for Step 3 fields
-        controller.enqueue(new TextEncoder().encode('",'));
-
-        // STEP 3: Generate FAQs, Reviews, suggestedImagePrompt based on the Title, Subtitle, and Description
-        try {
-          const step3SystemPrompt = `
+    try {
+      const step3SystemPrompt = `
 You are a legal content strategist and SEO expert.
 Analyze the following generated article Title, Subtitle, and HTML Description, and generate:
 1. At least 8-10 highly relevant, detailed FAQs (frequently asked questions) that directly relate to the article content.
@@ -221,33 +163,46 @@ Return ONLY a JSON object with this exact structure:
   "suggestedImagePrompt": "Visual description for the article's featured image"
 }`;
 
-          const step3Completion = await openai.chat.completions.create({
-            model: "gpt-4o",
-            messages: [
-              { role: "system", content: step3SystemPrompt }
-            ],
-            response_format: { type: "json_object" },
-            temperature: 0.8,
-          });
+      const step3Completion = await openai.chat.completions.create({
+        model: "gpt-4o",
+        messages: [
+          { role: "system", content: step3SystemPrompt }
+        ],
+        response_format: { type: "json_object" },
+        temperature: 0.8,
+      });
 
-          const step3ResultStr = step3Completion.choices[0].message.content || "{}";
-          const step3Result = JSON.parse(step3ResultStr);
+      const step3ResultStr = step3Completion.choices[0].message.content || "{}";
+      const step3Result = JSON.parse(step3ResultStr);
 
-          const faqs = step3Result.faqs || [];
-          const reviews = step3Result.reviews || [];
-          const suggestedImagePrompt = step3Result.suggestedImagePrompt || "Professional legal recovery illustration";
+      faqs = step3Result.faqs || [];
+      reviews = step3Result.reviews || [];
+      suggestedImagePrompt = step3Result.suggestedImagePrompt || "Professional legal recovery illustration";
 
-          console.log(`[AI Generator Flow] Step 3 complete. FAQs: ${faqs.length}, Reviews: ${reviews.length}`);
+      console.log(`[AI Generator Flow] Step 3 complete. FAQs: ${faqs.length}, Reviews: ${reviews.length}`);
+    } catch (step3Error) {
+      console.error('[AI Generator Flow] Error in Step 3:', step3Error);
+    }
 
-          const remainingJson = `"faqs":${JSON.stringify(faqs)},"reviews":${JSON.stringify(reviews)},"suggestedImagePrompt":${JSON.stringify(suggestedImagePrompt)}}`;
-          controller.enqueue(new TextEncoder().encode(remainingJson));
-        } catch (step3Error) {
-          console.error('[AI Generator Flow] Error in Step 3:', step3Error);
-          // Fallback to empty values so the JSON is still valid and doesn't break the client
-          const fallbackJson = `"faqs":[],"reviews":[],"suggestedImagePrompt":"Professional legal recovery illustration"}`;
-          controller.enqueue(new TextEncoder().encode(fallbackJson));
-        }
+    // Build the final unified JSON object
+    const finalResult = {
+      title: step1Result.title,
+      subtitle: step1Result.subtitle,
+      metaTitle: step1Result.metaTitle,
+      metaDescription: step1Result.metaDescription,
+      slug: step1Result.slug,
+      description: cleanedDescription,
+      faqs: faqs,
+      reviews: reviews,
+      suggestedImagePrompt: suggestedImagePrompt
+    };
 
+    const finalJsonStr = JSON.stringify(finalResult);
+
+    // Stream the final JSON to the client to keep compatibility with the dashboard streaming reader
+    const stream = new ReadableStream({
+      async start(controller) {
+        controller.enqueue(new TextEncoder().encode(finalJsonStr));
         controller.close();
       },
     });
