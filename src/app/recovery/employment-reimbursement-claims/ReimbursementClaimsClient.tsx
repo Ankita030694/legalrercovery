@@ -365,10 +365,10 @@ export default function ReimbursementClaimsClient() {
                   <h2 className="text-xl md:text-3xl font-black text-slate-900 mb-5 border-b-2 border-[#DC2626] pb-2 inline-block">Contractual &amp; Policy Frameworks</h2>
                   <div className="prose prose-base max-w-none text-slate-650 space-y-6">
                     <p className="text-sm md:text-base leading-relaxed">
-                      In the eyes of the law, the employment relationship is governed by a contract. This contract is not limited to the initial offer letter or appointment letter; it extends to the company&apos;s **Employee Handbook**, **Travel Policy**, **Relocation Policy**, and standard operating procedures. Once these policies are published by the company, they are legally binding on both the employer and the employee.
+                      In the eyes of the law, the employment relationship is governed by a contract. This contract is not limited to the initial offer letter or appointment letter; it extends to the company&apos;s <strong>Employee Handbook</strong>, <strong>Travel Policy</strong>, <strong>Relocation Policy</strong>, and standard operating procedures. Once these policies are published by the company, they are legally binding on both the employer and the employee.
                     </p>
                     <p className="text-sm md:text-base leading-relaxed">
-                      If an employee incurs expenses within the limits defined by the Travel or Expense Policy, the company has a contractual obligation to reimburse them. An employer cannot retroactively change their policies or apply new rules to deny claims that were validly submitted under the policy in force when the expense was incurred. Unilateral changes to policies to deny claims constitute a breach of contractual terms under the **Indian Contract Act, 1872**.
+                      If an employee incurs expenses within the limits defined by the Travel or Expense Policy, the company has a contractual obligation to reimburse them. An employer cannot retroactively change their policies or apply new rules to deny claims that were validly submitted under the policy in force when the expense was incurred. Unilateral changes to policies to deny claims constitute a breach of contractual terms under the <strong>Indian Contract Act, 1872</strong>.
                     </p>
                   </div>
                 </section>
@@ -378,7 +378,7 @@ export default function ReimbursementClaimsClient() {
                   <h2 className="text-xl md:text-3xl font-black text-slate-900 mb-5 border-b-2 border-[#DC2626] pb-2 inline-block">Reimbursements vs Wages Definition</h2>
                   <div className="prose prose-base max-w-none text-slate-650 space-y-6">
                     <p className="text-sm md:text-base leading-relaxed">
-                      Understanding the legal distinction between &apos;wages&apos; and &apos;reimbursements&apos; is critical for selecting the right recovery forum. Under Section 2(vi) of the **Payment of Wages Act, 1936**, wages are defined as all remunerations payable to an employee for services rendered. Crucially, the Act explicitly **excludes** the following from the definition of wages:
+                      Understanding the legal distinction between &apos;wages&apos; and &apos;reimbursements&apos; is critical for selecting the right recovery forum. Under Section 2(vi) of the <strong>Payment of Wages Act, 1936</strong>, wages are defined as all remunerations payable to an employee for services rendered. Crucially, the Act explicitly <strong>excludes</strong> the following from the definition of wages:
                     </p>
                     <ol className="list-decimal pl-6 space-y-2 text-sm text-slate-650">
                       <li>The value of any house accommodation, supply of light, water, medical attendance or other amenity.</li>
@@ -448,14 +448,14 @@ export default function ReimbursementClaimsClient() {
                   <h2 className="text-xl md:text-3xl font-black text-slate-900 mb-5 border-b-2 border-[#DC2626] pb-2 inline-block">Breach of Contract (Section 73)</h2>
                   <div className="prose prose-base max-w-none text-slate-650 space-y-6">
                     <p className="text-sm md:text-base leading-relaxed">
-                      The core legal foundation for recovering expense claims is breach of contract. Under **Section 73 of the Indian Contract Act, 1872**, when a contract has been broken, the party who suffers by such breach is entitled to receive, from the party who has broken the contract, compensation for any loss or damage caused to him thereby.
+                      The core legal foundation for recovering expense claims is breach of contract. Under <strong>Section 73 of the Indian Contract Act, 1872</strong>, when a contract has been broken, the party who suffers by such breach is entitled to receive, from the party who has broken the contract, compensation for any loss or damage caused to him thereby.
                     </p>
                     <p className="text-sm md:text-base leading-relaxed">
                       By failing to reimburse business expenses incurred as per company policy, the employer violates the contract of employment. The employee has a legal right to claim compensation, which includes:
                     </p>
                     <ul className="list-disc pl-6 space-y-2 text-sm text-slate-650">
-                      <li>The **principal amount** of the approved reimbursements.</li>
-                      <li>**Interest damages** (typically 12% to 18% per annum) if the employee had to pay credit card interest due to corporate delay.</li>
+                      <li>The <strong>principal amount</strong> of the approved reimbursements.</li>
+                      <li><strong>Interest damages</strong> (typically 12% to 18% per annum) if the employee had to pay credit card interest due to corporate delay.</li>
                       <li>Legal expenses incurred to recover the dues.</li>
                     </ul>
                   </div>
@@ -466,13 +466,13 @@ export default function ReimbursementClaimsClient() {
                   <h2 className="text-xl md:text-3xl font-black text-slate-900 mb-5 border-b-2 border-[#DC2626] pb-2 inline-block">Summary Suits (Order 37 CPC)</h2>
                   <div className="prose prose-base max-w-none text-slate-650 space-y-6">
                     <p className="text-sm md:text-base leading-relaxed">
-                      For quick recovery of outstanding expenses, filing a **Summary Suit under Order XXXVII of the Code of Civil Procedure, 1908 (CPC)** is highly effective. A summary suit can be filed for the recovery of a liquidated amount of money arising on a written contract.
+                      For quick recovery of outstanding expenses, filing a <strong>Summary Suit under Order XXXVII of the Code of Civil Procedure, 1908 (CPC)</strong> is highly effective. A summary suit can be filed for the recovery of a liquidated amount of money arising on a written contract.
                     </p>
                     <p className="text-sm md:text-base leading-relaxed">
                       Key features of a summary suit include:
                     </p>
                     <ul className="list-disc pl-6 space-y-2 text-sm text-slate-650">
-                      <li>The employer (defendant) cannot file a defense automatically. They must apply for **&apos;Leave to Defend&apos;** within 10 days of receiving the summons.</li>
+                      <li>The employer (defendant) cannot file a defense automatically. They must apply for <strong>&apos;Leave to Defend&apos;</strong> within 10 days of receiving the summons.</li>
                       <li>To get leave, the employer must prove they have a substantial defense. If the court finds their defense is a sham (e.g. denying claims that their own portal marks as approved), the court will dismiss the application and pass a decree in favor of the employee immediately.</li>
                       <li>This bypasses lengthy trials, resulting in recovery within 6 to 12 months.</li>
                     </ul>
@@ -484,10 +484,10 @@ export default function ReimbursementClaimsClient() {
                   <h2 className="text-xl md:text-3xl font-black text-slate-900 mb-5 border-b-2 border-[#DC2626] pb-2 inline-block">Shops &amp; Establishments Recourse</h2>
                   <div className="prose prose-base max-w-none text-slate-650 space-y-6">
                     <p className="text-sm md:text-base leading-relaxed">
-                      Employees working in commercial establishments, shops, IT parks, or corporate offices can file complaints under their respective state&apos;s **Shops and Establishments Act**. Under these acts, withholding statutory benefits, contractual salaries, or authorized operational expenses during full and final (FNF) settlements represents a major compliance violation.
+                      Employees working in commercial establishments, shops, IT parks, or corporate offices can file complaints under their respective state&apos;s <strong>Shops and Establishments Act</strong>. Under these acts, withholding statutory benefits, contractual salaries, or authorized operational expenses during full and final (FNF) settlements represents a major compliance violation.
                     </p>
                     <p className="text-sm md:text-base leading-relaxed">
-                      The employee can submit a petition to the local **Labour Inspector or Assistant Labour Commissioner**. The Inspector holds the authority to summon HR and finance representatives, audit payroll books, and direct the company to clear the outstanding dues to avoid business license suspension or heavy fines.
+                      The employee can submit a petition to the local <strong>Labour Inspector or Assistant Labour Commissioner</strong>. The Inspector holds the authority to summon HR and finance representatives, audit payroll books, and direct the company to clear the outstanding dues to avoid business license suspension or heavy fines.
                     </p>
                   </div>
                 </section>
@@ -497,10 +497,10 @@ export default function ReimbursementClaimsClient() {
                   <h2 className="text-xl md:text-3xl font-black text-slate-900 mb-5 border-b-2 border-[#DC2626] pb-2 inline-block">Expense Claims in Insolvency (IBC)</h2>
                   <div className="prose prose-base max-w-none text-slate-650 space-y-6">
                     <p className="text-sm md:text-base leading-relaxed">
-                      If a company enters bankruptcy or insolvency under the **Insolvency and Bankruptcy Code, 2016 (IBC)**, employee expense claims are categorized as operational debts.
+                      If a company enters bankruptcy or insolvency under the <strong>Insolvency and Bankruptcy Code, 2016 (IBC)</strong>, employee expense claims are categorized as operational debts.
                     </p>
                     <p className="text-sm md:text-base leading-relaxed">
-                      While salaries of workmen have high priority under the distribution waterfall (Section 53 IBC), other employee out-of-pocket reimbursements must be formally submitted to the Resolution Professional (RP). Employees must file **Form D (Claim by Operational Creditor)** along with bank statements and portal approvals to register their claims and secure their share of payouts during corporate liquidation.
+                      While salaries of workmen have high priority under the distribution waterfall (Section 53 IBC), other employee out-of-pocket reimbursements must be formally submitted to the Resolution Professional (RP). Employees must file <strong>Form D (Claim by Operational Creditor)</strong> along with bank statements and portal approvals to register their claims and secure their share of payouts during corporate liquidation.
                     </p>
                   </div>
                 </section>
@@ -510,10 +510,10 @@ export default function ReimbursementClaimsClient() {
                   <h2 className="text-xl md:text-3xl font-black text-slate-900 mb-5 border-b-2 border-[#DC2626] pb-2 inline-block">Unjust Enrichment &amp; Section 70</h2>
                   <div className="prose prose-base max-w-none text-slate-650 space-y-6">
                     <p className="text-sm md:text-base leading-relaxed">
-                      Under **Section 70 of the Indian Contract Act, 1872**, if a person lawfully does anything for another person, or delivers anything to him, not intending to do so gratuitously, and such other person enjoys the benefit thereof, the latter is bound to make compensation to the former in respect of, or to restore, the thing so done or delivered.
+                      Under <strong>Section 70 of the Indian Contract Act, 1872</strong>, if a person lawfully does anything for another person, or delivers anything to him, not intending to do so gratuitously, and such other person enjoys the benefit thereof, the latter is bound to make compensation to the former in respect of, or to restore, the thing so done or delivered.
                     </p>
                     <p className="text-sm md:text-base leading-relaxed">
-                      This principle of quasi-contract prevents **Unjust Enrichment**. When an employee uses their personal money to pay for business trips, client meetings, or vendor services, they clearly do not intend to do so for free. Since the company enjoys the commercial benefits of those actions (such as client signings or business expansion), it cannot retain the employee&apos;s funds. The court will enforce the company&apos;s obligation to reimburse the employee.
+                      This principle of quasi-contract prevents <strong>Unjust Enrichment</strong>. When an employee uses their personal money to pay for business trips, client meetings, or vendor services, they clearly do not intend to do so for free. Since the company enjoys the commercial benefits of those actions (such as client signings or business expansion), it cannot retain the employee&apos;s funds. The court will enforce the company&apos;s obligation to reimburse the employee.
                     </p>
                   </div>
                 </section>
@@ -526,7 +526,7 @@ export default function ReimbursementClaimsClient() {
                       Withholding out-of-pocket expenses is not just a civil breach; it can escalate to a criminal offense if there is fraudulent intent.
                     </p>
                     <p className="text-sm md:text-base leading-relaxed">
-                      Under the **Bharatiya Nyaya Sanhita, 2023 (BNS)** (formerly the IPC):
+                      Under the <strong>Bharatiya Nyaya Sanhita, 2023 (BNS)</strong> (formerly the IPC):
                     </p>
                     <ul className="list-disc pl-6 space-y-2 text-sm text-slate-650">
                       <li><strong>Criminal Breach of Trust (Section 316 BNS):</strong> If an employer entrusts an employee with corporate travel or client management, induces them to pay from personal funds with a promise of reimbursement, and subsequently pocket the money or refuse to pay, it constitutes a criminal breach of trust.</li>
@@ -543,7 +543,7 @@ export default function ReimbursementClaimsClient() {
                   <h2 className="text-xl md:text-3xl font-black text-slate-900 mb-5 border-b-2 border-[#DC2626] pb-2 inline-block">Serving a Strategic Legal Notice</h2>
                   <div className="prose prose-base max-w-none text-slate-650 space-y-6">
                     <p className="text-sm md:text-base leading-relaxed">
-                      When internal follow-ups and escalation emails fail to yield results, serving a formal **Legal Notice** is the next logical step. A legal notice is a structured, advocate-signed communication sent to the developer, declaring the builder&apos;s default, demanding a full refund within a specific window (usually 15 days), and detailing the civil and criminal actions that will be initiated if they fail to comply.
+                      When internal follow-ups and escalation emails fail to yield results, serving a formal <strong>Legal Notice</strong> is the next logical step. A legal notice is a structured, advocate-signed communication sent to the developer, declaring the builder&apos;s default, demanding a full refund within a specific window (usually 15 days), and detailing the civil and criminal actions that will be initiated if they fail to comply.
                     </p>
                     <p className="text-sm md:text-base leading-relaxed">
                       At LegalRecovery, our legal panel drafts custom notices tailored to the facts of your case. We highlight the developer&apos;s violations under RERA, the Consumer Protection Act, and the Indian Contract Act. The notice is physically dispatched via Registered Speed Post with Acknowledgment Due (AD) to the builder&apos;s corporate office. Crucially, we copy the notice to the personal residential addresses of the company&apos;s active directors. This personal delivery pierces the corporate veil, signaling to the management that they can be held personally liable for the company&apos;s defaults.
@@ -562,7 +562,7 @@ export default function ReimbursementClaimsClient() {
                       In modern employment disputes, the paper trail is almost entirely digital. Corporate communications occur over email, Slack channels, Microsoft Teams, and WhatsApp. It is a common concern among employees whether these digital conversations hold weight in a court of law. The answer is a resounding yes, provided they are formatted and backed by the correct legal certificates.
                     </p>
                     <p className="text-sm md:text-base leading-relaxed">
-                      Under **Section 63 of the Bharatiya Nyaya Sanhita, 2023** (formerly Section 65B of the Indian Evidence Act, 1872), electronic records are fully admissible as secondary evidence in legal proceedings. To meet admissibility standards, you must present the digital printouts along with a signed electronic authenticity certificate. This certificate must confirm that the computer or device used to access the emails or portal was operating properly, and the record has not been tampered with.
+                      Under <strong>Section 63 of the Bharatiya Nyaya Sanhita, 2023</strong> (formerly Section 65B of the Indian Evidence Act, 1872), electronic records are fully admissible as secondary evidence in legal proceedings. To meet admissibility standards, you must present the digital printouts along with a signed electronic authenticity certificate. This certificate must confirm that the computer or device used to access the emails or portal was operating properly, and the record has not been tampered with.
                     </p>
                   </div>
                 </section>

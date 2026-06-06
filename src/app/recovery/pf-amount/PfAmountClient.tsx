@@ -353,7 +353,7 @@ export default function PfAmountClient() {
                       The Employees&apos; Provident Funds and Miscellaneous Provisions Act, 1952, applies to every factory or establishment engaged in any industry specified in Schedule I of the Act that employs <strong>twenty (20) or more employees</strong>. Once an establishment is covered under the Act, it remains covered even if the employee count drops below twenty.
                     </p>
                     <p className="text-sm md:text-base leading-relaxed">
-                      For employees, enrollment in the EPF scheme is mandatory if their basic salary and dearness allowance (DA) is up to **₹15,000 per month**. For employees earning above ₹15,000, coverage is voluntary, but once they opt into the scheme, the employer is legally bound to comply with the statutory contribution rules. The Act covers manual, clerical, managerial, and technical workers in private companies, retail establishments, IT firms, and startups.
+                      For employees, enrollment in the EPF scheme is mandatory if their basic salary and dearness allowance (DA) is up to <strong>₹15,000 per month</strong>. For employees earning above ₹15,000, coverage is voluntary, but once they opt into the scheme, the employer is legally bound to comply with the statutory contribution rules. The Act covers manual, clerical, managerial, and technical workers in private companies, retail establishments, IT firms, and startups.
                     </p>
                   </div>
                 </section>
@@ -406,9 +406,9 @@ export default function PfAmountClient() {
                       Homebuyers and employees alike must keep a close watch on their accounts to detect defaults early. To verify if your employer is depositing your PF contributions regularly:
                     </p>
                     <ol className="list-decimal pl-6 space-y-3 text-sm text-slate-650">
-                      <li>Log in to the **EPFO Member Portal** using your Universal Account Number (UAN) and password.</li>
-                      <li>Download and inspect your **EPF Passbook**. Check if monthly credits match the deductions shown on your salary slips.</li>
-                      <li>Install the **UMANG App** to view passbook balances and receive real-time credit notifications on your mobile.</li>
+                      <li>Log in to the <strong>EPFO Member Portal</strong> using your Universal Account Number (UAN) and password.</li>
+                      <li>Download and inspect your <strong>EPF Passbook</strong>. Check if monthly credits match the deductions shown on your salary slips.</li>
+                      <li>Install the <strong>UMANG App</strong> to view passbook balances and receive real-time credit notifications on your mobile.</li>
                     </ol>
                     <p className="text-sm md:text-base leading-relaxed">
                       If your salary slips show PF deductions but your passbook remains uncredited, you have clear evidence of a default.
@@ -441,10 +441,10 @@ export default function PfAmountClient() {
                   <h2 className="text-xl md:text-3xl font-black text-slate-900 mb-5 border-b-2 border-[#DC2626] pb-2 inline-block">Criminal Breach of Trust</h2>
                   <div className="prose prose-base max-w-none text-slate-650 space-y-6">
                     <p className="text-sm md:text-base leading-relaxed">
-                      Deducting the employee&apos;s share of PF from their salary and failing to deposit it with the EPFO is classified as a serious criminal offense. Under the Explanation to <strong>Section 405 of the Indian Penal Code (IPC)</strong> (now corresponding to relevant sections of the **Bharatiya Nyaya Sanhita, 2023**), any employer who deducts the employee&apos;s contribution and fails to pay it to the fund is deemed to have dishonestly used the money, committing the offense of **Criminal Breach of Trust**.
+                      Deducting the employee&apos;s share of PF from their salary and failing to deposit it with the EPFO is classified as a serious criminal offense. Under the Explanation to <strong>Section 405 of the Indian Penal Code (IPC)</strong> (now corresponding to relevant sections of the <strong>Bharatiya Nyaya Sanhita, 2023</strong>), any employer who deducts the employee&apos;s contribution and fails to pay it to the fund is deemed to have dishonestly used the money, committing the offense of <strong>Criminal Breach of Trust</strong>.
                     </p>
                     <p className="text-sm md:text-base leading-relaxed">
-                      This is a cognizable and non-bailable offense that carries a penalty of up to **three (3) years of imprisonment**, a fine, or both. The EPFO frequently files First Information Reports (FIRs) against defaulting employers under these sections. Copied notices to company directors outlining these criminal consequences are highly effective in forcing them to settle outstanding dues immediately to avoid arrest.
+                      This is a cognizable and non-bailable offense that carries a penalty of up to <strong>three (3) years of imprisonment</strong>, a fine, or both. The EPFO frequently files First Information Reports (FIRs) against defaulting employers under these sections. Copied notices to company directors outlining these criminal consequences are highly effective in forcing them to settle outstanding dues immediately to avoid arrest.
                     </p>
                   </div>
                 </section>
@@ -454,7 +454,7 @@ export default function PfAmountClient() {
                   <h2 className="text-xl md:text-3xl font-black text-slate-900 mb-5 border-b-2 border-[#DC2626] pb-2 inline-block">EPFiGMS Portal Guide</h2>
                   <div className="prose prose-base max-w-none text-slate-650 space-y-6">
                     <p className="text-sm md:text-base leading-relaxed">
-                      To streamline grievance resolution, the EPFO launched the **EPF i-Grievance Management System (EPFiGMS)**. This portal allows employees to submit formal complaints online directly to the respective Regional EPFO office, eliminating the need to visit offices in person.
+                      To streamline grievance resolution, the EPFO launched the <strong>EPF i-Grievance Management System (EPFiGMS)</strong>. This portal allows employees to submit formal complaints online directly to the respective Regional EPFO office, eliminating the need to visit offices in person.
                     </p>
                     <p className="text-sm md:text-base leading-relaxed">
                       The EPFiGMS portal handles a variety of claims, including non-deposit of PF, delayed transfers, settlement issues, and profile errors. Grievances submitted through the portal are monitored by the Head Office, and regional officers are mandated to investigate and resolve them within a set timeframe.
@@ -540,7 +540,7 @@ export default function PfAmountClient() {
                   <h2 className="text-xl md:text-3xl font-black text-slate-900 mb-5 border-b-2 border-[#DC2626] pb-2 inline-block">Limitation Periods</h2>
                   <div className="prose prose-base max-w-none text-slate-650 space-y-6">
                     <p className="text-sm md:text-base leading-relaxed">
-                      A vital protection for employees is that the Employees&apos; Provident Funds and Miscellaneous Provisions Act, 1952, does **not** prescribe any limitation period for recovering outstanding PF dues.
+                      A vital protection for employees is that the Employees&apos; Provident Funds and Miscellaneous Provisions Act, 1952, does <strong>not</strong> prescribe any limitation period for recovering outstanding PF dues.
                     </p>
                     <p className="text-sm md:text-base leading-relaxed">
                       The EPFO can initiate inquiry and recovery proceedings against a defaulting establishment at any time, even after several years of default. However, we strongly advise employees to raise grievances as soon as they detect a default to prevent the company from dissolving, filing for bankruptcy, or absconding, which complicates recovery.
@@ -587,7 +587,7 @@ export default function PfAmountClient() {
                   <h2 className="text-xl md:text-3xl font-black text-slate-900 mb-5 border-b-2 border-[#DC2626] pb-2 inline-block">Labour Dept Recourse</h2>
                   <div className="prose prose-base max-w-none text-slate-650 space-y-6">
                     <p className="text-sm md:text-base leading-relaxed">
-                      While the EPFO is the primary regulatory authority for PF recovery, employees can also approach the state **Labour Department** as a parallel recourse. Under state-specific Shops and Commercial Establishments Acts, withholding statutory benefits like PF represents a major compliance violation.
+                      While the EPFO is the primary regulatory authority for PF recovery, employees can also approach the state <strong>Labour Department</strong> as a parallel recourse. Under state-specific Shops and Commercial Establishments Acts, withholding statutory benefits like PF represents a major compliance violation.
                     </p>
                     <p className="text-sm md:text-base leading-relaxed">
                       Employees can file a formal complaint with the local Assistant Labour Commissioner. The Commissioner has the power to summon the employer, inspect their payroll books, and direct them to clear all outstanding FNF dues (including PF and salary arrears) to avoid license suspension or local prosecution.
@@ -603,7 +603,7 @@ export default function PfAmountClient() {
                       When a company enters insolvency or liquidation under the Insolvency and Bankruptcy Code, 2016 (IBC), unsecured creditors and vendors face severe write-offs. However, the law provides strong protection for employee retirement savings.
                     </p>
                     <p className="text-sm md:text-base leading-relaxed">
-                      Under **Section 36(4) of the IBC**, the provident fund, pension fund, and gratuity fund of a company are explicitly excluded from the liquidation estate of the corporate debtor. This means these trust funds cannot be used to pay off bank loans or other secured debts, and must be paid to the employees in full, providing absolute security during corporate bankruptcy.
+                      Under <strong>Section 36(4) of the IBC</strong>, the provident fund, pension fund, and gratuity fund of a company are explicitly excluded from the liquidation estate of the corporate debtor. This means these trust funds cannot be used to pay off bank loans or other secured debts, and must be paid to the employees in full, providing absolute security during corporate bankruptcy.
                     </p>
                   </div>
                 </section>
@@ -616,10 +616,10 @@ export default function PfAmountClient() {
                       In modern employment disputes, the paper trail is almost entirely digital. Corporate communications occur over email, Slack channels, Microsoft Teams, and WhatsApp. It is a common concern among employees whether these digital conversations hold weight in a court of law. The answer is a resounding yes, provided they are formatted and backed by the correct legal certificates.
                     </p>
                     <p className="text-sm md:text-base leading-relaxed">
-                      Under **Section 63 of the Bharatiya Sakshya Adhiniyam, 2023** (formerly Section 65B of the Indian Evidence Act, 1872), electronic records are fully admissible as secondary evidence in legal proceedings. This includes email acknowledgments from HR promising a payment date, WhatsApp chats with your manager discussing pending FNF amounts, and Slack screenshots proving your active participation in handovers.
+                      Under <strong>Section 63 of the Bharatiya Sakshya Adhiniyam, 2023</strong> (formerly Section 65B of the Indian Evidence Act, 1872), electronic records are fully admissible as secondary evidence in legal proceedings. This includes email acknowledgments from HR promising a payment date, WhatsApp chats with your manager discussing pending FNF amounts, and Slack screenshots proving your active participation in handovers.
                     </p>
                     <p className="text-sm md:text-base leading-relaxed">
-                      To make this evidence admissible, you must provide a signed **Section 63 Certificate** (formerly 65B). This certificate is a written declaration confirming that the device used to print or retrieve the digital record (your laptop or phone) was in active, working condition, and the data has not been tampered with. We guide our clients on how to preserve their chat histories, archive emails, and prepare these certificates to build an airtight evidentiary file.
+                      To make this evidence admissible, you must provide a signed <strong>Section 63 Certificate</strong> (formerly 65B). This certificate is a written declaration confirming that the device used to print or retrieve the digital record (your laptop or phone) was in active, working condition, and the data has not been tampered with. We guide our clients on how to preserve their chat histories, archive emails, and prepare these certificates to build an airtight evidentiary file.
                     </p>
                   </div>
                 </section>

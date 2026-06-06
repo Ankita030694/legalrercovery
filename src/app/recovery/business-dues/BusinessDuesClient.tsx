@@ -349,10 +349,10 @@ export default function BusinessDuesClient() {
                   <h2 className="text-xl md:text-3xl font-black text-slate-900 mb-5 border-b-2 border-[#DC2626] pb-2 inline-block">Commercial Courts Act &amp; Specified Value</h2>
                   <div className="prose prose-base max-w-none text-slate-650 space-y-6">
                     <p className="text-sm md:text-base leading-relaxed">
-                      Commercial debts are governed under a specialized procedural framework set up by the **Commercial Courts Act, 2015**. The Act was introduced to ensure fast-track resolution of commercial disputes, defined under Section 2(1)(c) to include transactions of merchants, bankers, traders, export/import transactions, and consulting agreements.
+                      Commercial debts are governed under a specialized procedural framework set up by the <strong>Commercial Courts Act, 2015</strong>. The Act was introduced to ensure fast-track resolution of commercial disputes, defined under Section 2(1)(c) to include transactions of merchants, bankers, traders, export/import transactions, and consulting agreements.
                     </p>
                     <p className="text-sm md:text-base leading-relaxed">
-                      To file a suit in a Commercial Court, the dispute must meet the **Specified Value** threshold. The 2018 amendment reduced this threshold from ₹1 crore to **₹3,00,000 (three lakh rupees)**. This lower limit allows small businesses, freelancers, and boutique vendors to access the Commercial Courts, which feature strict case management timelines, summary judgments, and specialized divisions.
+                      To file a suit in a Commercial Court, the dispute must meet the <strong>Specified Value</strong> threshold. The 2018 amendment reduced this threshold from ₹1 crore to <strong>₹3,00,000 (three lakh rupees)</strong>. This lower limit allows small businesses, freelancers, and boutique vendors to access the Commercial Courts, which feature strict case management timelines, summary judgments, and specialized divisions.
                     </p>
                   </div>
                 </section>
@@ -362,15 +362,15 @@ export default function BusinessDuesClient() {
                   <h2 className="text-xl md:text-3xl font-black text-slate-900 mb-5 border-b-2 border-[#DC2626] pb-2 inline-block">Pre-Institution Mediation (Section 12A)</h2>
                   <div className="prose prose-base max-w-none text-slate-650 space-y-6">
                     <p className="text-sm md:text-base leading-relaxed">
-                      A unique feature of the Commercial Courts Act is the mandatory requirement of **Pre-Institution Mediation** under **Section 12A**.
+                      A unique feature of the Commercial Courts Act is the mandatory requirement of <strong>Pre-Institution Mediation</strong> under <strong>Section 12A</strong>.
                     </p>
                     <p className="text-sm md:text-base leading-relaxed">
                       Under this section:
                     </p>
                     <ul className="list-disc pl-6 space-y-2 text-sm text-slate-650">
                       <li>A commercial suit that does not seek urgent interim relief cannot be filed unless the plaintiff first exhausts the remedy of pre-institution mediation.</li>
-                      <li>You file an application before the **District Legal Services Authority (DLSA)**, which coordinates mediation sessions between you and the debtor.</li>
-                      <li>If the debtor refuses to participate or if mediation fails, the DLSA issues a **Non-Starter Report**, which serves as a prerequisite to file the commercial recovery suit.</li>
+                      <li>You file an application before the <strong>District Legal Services Authority (DLSA)</strong>, which coordinates mediation sessions between you and the debtor.</li>
+                      <li>If the debtor refuses to participate or if mediation fails, the DLSA issues a <strong>Non-Starter Report</strong>, which serves as a prerequisite to file the commercial recovery suit.</li>
                       <li>If a settlement is reached, it is signed by both parties and the mediator, holding the same legal status as an arbitral award. The period spent in mediation is excluded from the 3-year limitation clock.</li>
                     </ul>
                   </div>
@@ -381,13 +381,13 @@ export default function BusinessDuesClient() {
                   <h2 className="text-xl md:text-3xl font-black text-slate-900 mb-5 border-b-2 border-[#DC2626] pb-2 inline-block">Summary Suits for Invoices (Order 37)</h2>
                   <div className="prose prose-base max-w-none text-slate-650 space-y-6">
                     <p className="text-sm md:text-base leading-relaxed">
-                      For rapid recovery of undisputed commercial debts, filing a **Summary Suit under Order XXXVII of the CPC** is highly effective. Invoices, delivery chalans, purchase orders, and ledger statements are valid contracts to establish a liquidated debt for a Summary Suit.
+                      For rapid recovery of undisputed commercial debts, filing a <strong>Summary Suit under Order XXXVII of the CPC</strong> is highly effective. Invoices, delivery chalans, purchase orders, and ledger statements are valid contracts to establish a liquidated debt for a Summary Suit.
                     </p>
                     <p className="text-sm md:text-base leading-relaxed">
                       Summary suits bypass standard trial delays:
                     </p>
                     <ul className="list-disc pl-6 space-y-2 text-sm text-slate-650">
-                      <li>The debtor (defendant) cannot defend the suit automatically. They must apply for **&apos;Leave to Defend&apos;** within 10 days of receiving the summons.</li>
+                      <li>The debtor (defendant) cannot defend the suit automatically. They must apply for <strong>&apos;Leave to Defend&apos;</strong> within 10 days of receiving the summons.</li>
                       <li>To obtain leave, they must prove they have a substantial defense. If their defense is a sham (e.g. denying delivery despite signed delivery chalans), the court will dismiss their application and pass a decree in your favor immediately.</li>
                       <li>This allows you to secure a decree within 6 to 12 months.</li>
                     </ul>
@@ -399,14 +399,14 @@ export default function BusinessDuesClient() {
                   <h2 className="text-xl md:text-3xl font-black text-slate-900 mb-5 border-b-2 border-[#DC2626] pb-2 inline-block">MSME Samadhaan Facilitation Route</h2>
                   <div className="prose prose-base max-w-none text-slate-650 space-y-6">
                     <p className="text-sm md:text-base leading-relaxed">
-                      If your business is registered under the MSMED Act, 2006 (Udyam Registration), you have access to a powerful debt recovery mechanism under the **MSME Samadhaan** portal.
+                      If your business is registered under the MSMED Act, 2006 (Udyam Registration), you have access to a powerful debt recovery mechanism under the <strong>MSME Samadhaan</strong> portal.
                     </p>
                     <p className="text-sm md:text-base leading-relaxed">
                       Key features of the MSMED Act include:
                     </p>
                     <ul className="list-disc pl-6 space-y-2 text-sm text-slate-650">
-                      <li><strong>45-Day Payment Limit:</strong> Under Section 15, the buyer must pay the MSME within the period agreed upon in writing, which cannot exceed **45 days**. If no agreement exists, payment must be made within 15 days of delivery.</li>
-                      <li><strong>Penal Compound Interest:</strong> Under Section 16, if the buyer defaults, they must pay compound interest on the outstanding amount. The interest rate is strictly defined as **three (3) times the bank rate** notified by the RBI, calculated with monthly rests.</li>
+                      <li><strong>45-Day Payment Limit:</strong> Under Section 15, the buyer must pay the MSME within the period agreed upon in writing, which cannot exceed <strong>45 days</strong>. If no agreement exists, payment must be made within 15 days of delivery.</li>
+                      <li><strong>Penal Compound Interest:</strong> Under Section 16, if the buyer defaults, they must pay compound interest on the outstanding amount. The interest rate is strictly defined as <strong>three (3) times the bank rate</strong> notified by the RBI, calculated with monthly rests.</li>
                       <li><strong>Quasi-Judicial Facilitation Council (MSEFC):</strong> If conciliation fails, the Council conducts arbitration to resolve the dispute, bypasses civil courts, and provides a faster resolution.</li>
                     </ul>
                   </div>
@@ -417,7 +417,7 @@ export default function BusinessDuesClient() {
                   <h2 className="text-xl md:text-3xl font-black text-slate-900 mb-5 border-b-2 border-[#DC2626] pb-2 inline-block">Cheque Bounce Prosecution (Section 138)</h2>
                   <div className="prose prose-base max-w-none text-slate-650 space-y-6">
                     <p className="text-sm md:text-base leading-relaxed">
-                      Bounced cheques are a common issue in business recovery. Under **Section 138 of the Negotiable Instruments (NI) Act, 1881**, issuing a cheque that bounces due to insufficient funds or 'stop payment' orders is a criminal offense.
+                      Bounced cheques are a common issue in business recovery. Under <strong>Section 138 of the Negotiable Instruments (NI) Act, 1881</strong>, issuing a cheque that bounces due to insufficient funds or 'stop payment' orders is a criminal offense.
                     </p>
                     <p className="text-sm md:text-base leading-relaxed">
                       To prosecute a cheque bounce claim:
@@ -426,7 +426,7 @@ export default function BusinessDuesClient() {
                       <li>You must serve a formal statutory demand notice to the drawer within 30 days of receiving the cheque return memo.</li>
                       <li>Wait 15 days for them to pay.</li>
                       <li>If they fail to pay, you can file a criminal complaint in the Magistrate court within 30 days.</li>
-                      <li>The offense carries a penalty of up to **two (2) years of imprisonment**, a fine up to **twice the cheque amount**, or both. Under Section 143A, the court can also order the drawer to pay up to 20% of the cheque amount as interim compensation.</li>
+                      <li>The offense carries a penalty of up to <strong>two (2) years of imprisonment</strong>, a fine up to <strong>twice the cheque amount</strong>, or both. Under Section 143A, the court can also order the drawer to pay up to 20% of the cheque amount as interim compensation.</li>
                     </ol>
                   </div>
                 </section>
@@ -436,7 +436,7 @@ export default function BusinessDuesClient() {
                   <h2 className="text-xl md:text-3xl font-black text-slate-900 mb-5 border-b-2 border-[#DC2626] pb-2 inline-block">Operational Creditor Claims (Section 9)</h2>
                   <div className="prose prose-base max-w-none text-slate-650 space-y-6">
                     <p className="text-sm md:text-base leading-relaxed">
-                      If the defaulting debtor is a corporate entity (private or public limited company) and the outstanding debt exceeds **₹1,00,000 (one crore rupees)**, you can initiate insolvency proceedings under the **Insolvency and Bankruptcy Code, 2016 (IBC)**.
+                      If the defaulting debtor is a corporate entity (private or public limited company) and the outstanding debt exceeds <strong>₹1,00,000 (one crore rupees)</strong>, you can initiate insolvency proceedings under the <strong>Insolvency and Bankruptcy Code, 2016 (IBC)</strong>.
                     </p>
                     <p className="text-sm md:text-base leading-relaxed">
                       The process includes:
@@ -470,15 +470,15 @@ export default function BusinessDuesClient() {
                   <h2 className="text-xl md:text-3xl font-black text-slate-900 mb-5 border-b-2 border-[#DC2626] pb-2 inline-block">Damages for Breach of Business Contracts</h2>
                   <div className="prose prose-base max-w-none text-slate-650 space-y-6">
                     <p className="text-sm md:text-base leading-relaxed">
-                      Under **Section 73 of the Indian Contract Act, 1872**, a party who suffers from a breach of contract is entitled to receive compensation for any loss or damage caused to him.
+                      Under <strong>Section 73 of the Indian Contract Act, 1872</strong>, a party who suffers from a breach of contract is entitled to receive compensation for any loss or damage caused to him.
                     </p>
                     <p className="text-sm md:text-base leading-relaxed">
                       In commercial debt recovery, this includes:
                     </p>
                     <ul className="list-disc pl-6 space-y-2 text-sm text-slate-650">
-                      <li>The **principal amount** of unpaid invoices.</li>
-                      <li>**Interest damages** (usually 12% to 18% p.a.) for the period of delay.</li>
-                      <li>**Consequential damages** (such as interest paid on loans taken to cover cash flow shortages) directly caused by the default.</li>
+                      <li>The <strong>principal amount</strong> of unpaid invoices.</li>
+                      <li><strong>Interest damages</strong> (usually 12% to 18% p.a.) for the period of delay.</li>
+                      <li><strong>Consequential damages</strong> (such as interest paid on loans taken to cover cash flow shortages) directly caused by the default.</li>
                     </ul>
                   </div>
                 </section>
@@ -488,7 +488,7 @@ export default function BusinessDuesClient() {
                   <h2 className="text-xl md:text-3xl font-black text-slate-900 mb-5 border-b-2 border-[#DC2626] pb-2 inline-block">Piercing the Corporate Veil for Directors</h2>
                   <div className="prose prose-base max-w-none text-slate-650 space-y-6">
                     <p className="text-sm md:text-base leading-relaxed">
-                      While directors are generally protected by limited liability, courts can **pierce the corporate veil** and hold them personally liable for company debts if you can prove fraud, siphoning of funds, or deliberate misrepresentation.
+                      While directors are generally protected by limited liability, courts can <strong>pierce the corporate veil</strong> and hold them personally liable for company debts if you can prove fraud, siphoning of funds, or deliberate misrepresentation.
                     </p>
                     <p className="text-sm md:text-base leading-relaxed">
                       If directors placed purchase orders despite knowing the company was insolvent and unable to pay, they can be prosecuted personally for corporate fraud. In criminal cases (Section 138 cheque bounce or BNS cheating), the directors in charge of daily operations are personally prosecuted, providing a strong leverage for recovery.
@@ -501,7 +501,7 @@ export default function BusinessDuesClient() {
                   <h2 className="text-xl md:text-3xl font-black text-slate-900 mb-5 border-b-2 border-[#DC2626] pb-2 inline-block">Three-Year Limitation Period for Debts</h2>
                   <div className="prose prose-base max-w-none text-slate-650 space-y-6">
                     <p className="text-sm md:text-base leading-relaxed">
-                      Under the **Limitation Act, 1963**, a suit for the recovery of money must be filed within **three (3) years** from the date the cause of action arose (i.e., the date the invoice payment became due).
+                      Under the <strong>Limitation Act, 1963</strong>, a suit for the recovery of money must be filed within <strong>three (3) years</strong> from the date the cause of action arose (i.e., the date the invoice payment became due).
                     </p>
                     <p className="text-sm md:text-base leading-relaxed">
                       If the debtor company formally acknowledges the debt in writing (such as an email saying 'we will clear it next month') or makes a partial payment, the 3-year limitation clock resets from that date, extending the timeline to initiate legal recovery.
@@ -514,7 +514,7 @@ export default function BusinessDuesClient() {
                   <h2 className="text-xl md:text-3xl font-black text-slate-900 mb-5 border-b-2 border-[#DC2626] pb-2 inline-block">Enforcing Arbitration Clauses</h2>
                   <div className="prose prose-base max-w-none text-slate-650 space-y-6">
                     <p className="text-sm md:text-base leading-relaxed">
-                      Many commercial agreements contain an **Arbitration Clause** mandating that disputes must be resolved outside of courts through an arbitrator appointed under the **Arbitration and Conciliation Act, 1996**.
+                      Many commercial agreements contain an <strong>Arbitration Clause</strong> mandating that disputes must be resolved outside of courts through an arbitrator appointed under the <strong>Arbitration and Conciliation Act, 1996</strong>.
                     </p>
                     <p className="text-sm md:text-base leading-relaxed">
                       If your contract has an arbitration clause, you can:
@@ -522,7 +522,7 @@ export default function BusinessDuesClient() {
                     <ol className="list-decimal pl-6 space-y-2 text-sm text-slate-650">
                       <li>Serve a notice invoking arbitration and proposing an arbitrator.</li>
                       <li>If the debtor fails to agree, apply to the High Court under Section 11 to appoint an arbitrator.</li>
-                      <li>The arbitrator passes an **Arbitral Award**, which holds the same legal status and enforcement powers as a civil court decree. You can apply for execution of the award to attach the debtor&apos;s bank accounts or assets.</li>
+                      <li>The arbitrator passes an <strong>Arbitral Award</strong>, which holds the same legal status and enforcement powers as a civil court decree. You can apply for execution of the award to attach the debtor&apos;s bank accounts or assets.</li>
                     </ol>
                   </div>
                 </section>
@@ -532,10 +532,10 @@ export default function BusinessDuesClient() {
                   <h2 className="text-xl md:text-3xl font-black text-slate-900 mb-5 border-b-2 border-[#DC2626] pb-2 inline-block">Unjust Enrichment &amp; Section 70 Dues</h2>
                   <div className="prose prose-base max-w-none text-slate-650 space-y-6">
                     <p className="text-sm md:text-base leading-relaxed">
-                      Under **Section 70 of the Indian Contract Act, 1872**, if a person lawfully does anything for another, not intending to do so gratuitously, and the other person enjoys the benefit thereof, the latter must compensate the former.
+                      Under <strong>Section 70 of the Indian Contract Act, 1872</strong>, if a person lawfully does anything for another, not intending to do so gratuitously, and the other person enjoys the benefit thereof, the latter must compensate the former.
                     </p>
                     <p className="text-sm md:text-base leading-relaxed">
-                      This principle of quasi-contract prevents **Unjust Enrichment**. If a vendor delivers goods or services to a company, and the company enjoys the commercial benefits of those goods, it cannot refuse to pay. Even in the absence of a formal signed contract, the court will enforce the company&apos;s obligation to compensate the vendor.
+                      This principle of quasi-contract prevents <strong>Unjust Enrichment</strong>. If a vendor delivers goods or services to a company, and the company enjoys the commercial benefits of those goods, it cannot refuse to pay. Even in the absence of a formal signed contract, the court will enforce the company&apos;s obligation to compensate the vendor.
                     </p>
                   </div>
                 </section>
@@ -548,7 +548,7 @@ export default function BusinessDuesClient() {
                       Withholding business dues is not just a civil breach; it can escalate to a criminal offense if there is fraudulent intent.
                     </p>
                     <p className="text-sm md:text-base leading-relaxed">
-                      Under the **Bharatiya Nyaya Sanhita, 2023 (BNS)** (formerly the IPC):
+                      Under the <strong>Bharatiya Nyaya Sanhita, 2023 (BNS)</strong> (formerly the IPC):
                     </p>
                     <ul className="list-disc pl-6 space-y-2 text-sm text-slate-650">
                       <li><strong>Criminal Breach of Trust (Section 316 BNS):</strong> If a client receives goods/services on credit, sells them to a third party, and pocket the proceeds instead of paying the supplier, it constitutes a criminal breach of trust.</li>
@@ -580,7 +580,7 @@ export default function BusinessDuesClient() {
                   <h2 className="text-xl md:text-3xl font-black text-slate-900 mb-5 border-b-2 border-[#DC2626] pb-2 inline-block">Serving a Strategic Legal Demand Notice</h2>
                   <div className="prose prose-base max-w-none text-slate-650 space-y-6">
                     <p className="text-sm md:text-base leading-relaxed">
-                      When informal follow-ups and escalation emails fail to yield results, serving a formal **Legal Notice** is the next logical step. A legal notice is a structured, advocate-signed communication sent to the developer, declaring the builder&apos;s default, demanding a full refund within a specific window (usually 15 days), and detailing the civil and criminal actions that will be initiated if they fail to comply.
+                      When informal follow-ups and escalation emails fail to yield results, serving a formal <strong>Legal Notice</strong> is the next logical step. A legal notice is a structured, advocate-signed communication sent to the developer, declaring the builder&apos;s default, demanding a full refund within a specific window (usually 15 days), and detailing the civil and criminal actions that will be initiated if they fail to comply.
                     </p>
                     <p className="text-sm md:text-base leading-relaxed">
                       At LegalRecovery, our legal panel drafts custom notices tailored to the facts of your case. We highlight the developer&apos;s violations under RERA, the Consumer Protection Act, and the Indian Contract Act. The notice is physically dispatched via Registered Speed Post with Acknowledgment Due (AD) to the builder&apos;s corporate office. Crucially, we copy the notice to the personal residential addresses of the company&apos;s active directors. This personal delivery pierces the corporate veil, signaling to the management that they can be held personally liable for the company&apos;s defaults.

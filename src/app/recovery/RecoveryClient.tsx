@@ -31,6 +31,8 @@ const queryLinks: Record<string, string> = {
   "Recovery of pending overtime payment": "/recovery/pending-overtime-payment",
   "Recovery of contractor payment": "/recovery/contractor-payment",
   "Recovery of pending project payment": "/recovery/pending-project-payment",
+  "Recovery of international client payment": "/recovery/international-client-payment",
+  "Recovery of export dues": "/recovery/export-dues",
 };
 
 export default function RecoveryClient() {

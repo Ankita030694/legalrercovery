@@ -504,7 +504,7 @@ export default function GratuityAmountClient() {
                       If the Controlling Authority rules in favor of the employee and issues an order directing the employer to pay, the employer must comply within thirty (30) days. If the employer refuses to pay despite the order, the employee can initiate recovery under <strong>Section 8 of the Act</strong>.
                     </p>
                     <p className="text-sm md:text-base leading-relaxed">
-                      Under Section 8, the Controlling Authority issues a formal **Recovery Certificate** to the District Collector. The Collector is then legally empowered to recover the calculated dues from the employer as "arrears of land revenue." This includes the power to freeze the company&apos;s bank accounts, attach their physical office assets, or seal their premises to recover your hard-earned wages.
+                      Under Section 8, the Controlling Authority issues a formal <strong>Recovery Certificate</strong> to the District Collector. The Collector is then legally empowered to recover the calculated dues from the employer as "arrears of land revenue." This includes the power to freeze the company&apos;s bank accounts, attach their physical office assets, or seal their premises to recover your hard-earned wages.
                     </p>
                   </div>
                 </section>
@@ -514,7 +514,7 @@ export default function GratuityAmountClient() {
                   <h2 className="text-xl md:text-3xl font-black text-slate-900 mb-5 border-b-2 border-[#DC2626] pb-2 inline-block">Appeal Process</h2>
                   <div className="prose prose-base max-w-none text-slate-650 space-y-6">
                     <p className="text-sm md:text-base leading-relaxed">
-                      If either the employee or the employer is dissatisfied with the Controlling Authority&apos;s order, they can file an appeal under <strong>Section 7(7) of the Act</strong>. The appeal must be filed before the **Appellate Authority** (typically the Regional Labour Commissioner) within <strong>60 days</strong> from the date of the order.
+                      If either the employee or the employer is dissatisfied with the Controlling Authority&apos;s order, they can file an appeal under <strong>Section 7(7) of the Act</strong>. The appeal must be filed before the <strong>Appellate Authority</strong> (typically the Regional Labour Commissioner) within <strong>60 days</strong> from the date of the order.
                     </p>
                     <p className="text-sm md:text-base leading-relaxed">
                       However, the Act places a strict condition on employers seeking to appeal: the employer must deposit the entire disputed gratuity amount with the Appellate Authority before the appeal can be admitted. This pre-deposit requirement prevents employers from filing frivolous appeals simply to delay payments, protecting the interests of the employee.
@@ -530,7 +530,7 @@ export default function GratuityAmountClient() {
                       The Payment of Gratuity Act, 1972, contains strict penal provisions to deter employers from avoiding their statutory obligations. Under <strong>Section 9(2) of the Act</strong>, any employer who avoids paying gratuity or makes false statements to reduce the payable amount faces criminal prosecution.
                     </p>
                     <p className="text-sm md:text-base leading-relaxed">
-                      This offense carries a mandatory minimum imprisonment of three (3) months, which can extend up to **one year**, or a fine of up to **₹20,000**, or both. Because non-payment of gratuity is a criminal offense, serving a notice that highlights these penalties often pressures directors to settle outstanding dues immediately to avoid personal prosecution.
+                      This offense carries a mandatory minimum imprisonment of three (3) months, which can extend up to <strong>one year</strong>, or a fine of up to <strong>₹20,000</strong>, or both. Because non-payment of gratuity is a criminal offense, serving a notice that highlights these penalties often pressures directors to settle outstanding dues immediately to avoid personal prosecution.
                     </p>
                   </div>
                 </section>

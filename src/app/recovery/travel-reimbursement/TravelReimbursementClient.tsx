@@ -349,7 +349,7 @@ export default function TravelReimbursementClient() {
                   <h2 className="text-xl md:text-3xl font-black text-slate-900 mb-5 border-b-2 border-[#DC2626] pb-2 inline-block">Travel Allowances Excluded from Wages</h2>
                   <div className="prose prose-base max-w-none text-slate-650 space-y-6">
                     <p className="text-sm md:text-base leading-relaxed">
-                      Under Indian labor law, it is vital to distinguish travel reimbursements from standard salary. The **Payment of Wages Act, 1936**, under Section 2(vi), defines wages as all remunerations payable for services rendered. Crucially, the statutory definition explicitly **excludes** the following:
+                      Under Indian labor law, it is vital to distinguish travel reimbursements from standard salary. The <strong>Payment of Wages Act, 1936</strong>, under Section 2(vi), defines wages as all remunerations payable for services rendered. Crucially, the statutory definition explicitly <strong>excludes</strong> the following:
                     </p>
                     <ul className="list-disc pl-6 space-y-2 text-sm text-slate-650">
                       <li>Any travelling allowance or the value of any travelling concession.</li>
@@ -366,10 +366,10 @@ export default function TravelReimbursementClient() {
                   <h2 className="text-xl md:text-3xl font-black text-slate-900 mb-5 border-b-2 border-[#DC2626] pb-2 inline-block">Binding Force of Travel Policy</h2>
                   <div className="prose prose-base max-w-none text-slate-650 space-y-6">
                     <p className="text-sm md:text-base leading-relaxed">
-                      An employer&apos;s written **Corporate Travel Policy** is not a discretionary guidelines manual; it is a legally binding extension of the employment contract. The policy defines eligibility limits, travel class (economy, business), lodging caps, and submission timelines.
+                      An employer&apos;s written <strong>Corporate Travel Policy</strong> is not a discretionary guidelines manual; it is a legally binding extension of the employment contract. The policy defines eligibility limits, travel class (economy, business), lodging caps, and submission timelines.
                     </p>
                     <p className="text-sm md:text-base leading-relaxed">
-                      Once an employee books travel and submits bills complying with this policy, the company is contractually obligated to reimburse them. If the company unilaterally rejects claims that fall within the policy, or retroactively changes the policy caps to reduce payouts, it commits a direct breach of contract under Section 73 of the **Indian Contract Act, 1872**. The employee is entitled to enforce the policy terms in a court of law.
+                      Once an employee books travel and submits bills complying with this policy, the company is contractually obligated to reimburse them. If the company unilaterally rejects claims that fall within the policy, or retroactively changes the policy caps to reduce payouts, it commits a direct breach of contract under Section 73 of the <strong>Indian Contract Act, 1872</strong>. The employee is entitled to enforce the policy terms in a court of law.
                     </p>
                   </div>
                 </section>
@@ -379,7 +379,7 @@ export default function TravelReimbursementClient() {
                   <h2 className="text-xl md:text-3xl font-black text-slate-900 mb-5 border-b-2 border-[#DC2626] pb-2 inline-block">Travel Documentation &amp; Audit Rules</h2>
                   <div className="prose prose-base max-w-none text-slate-650 space-y-6">
                     <p className="text-sm md:text-base leading-relaxed">
-                      To establish a legally enforceable claim, you must adhere to proper documentation standards. The **Income Tax Rules, 1962 (Rule 2BB)** and standard corporate audit norms require employees to substantiate travel claims with:
+                      To establish a legally enforceable claim, you must adhere to proper documentation standards. The <strong>Income Tax Rules, 1962 (Rule 2BB)</strong> and standard corporate audit norms require employees to substantiate travel claims with:
                     </p>
                     <ol className="list-decimal pl-6 space-y-3 text-sm text-slate-650">
                       <li><strong>Travel Authorizations:</strong> Pre-travel approvals from reporting managers or HR via email, travel portals (Concur, Happay), or Slack.</li>
@@ -447,7 +447,7 @@ export default function TravelReimbursementClient() {
                   <h2 className="text-xl md:text-3xl font-black text-slate-900 mb-5 border-b-2 border-[#DC2626] pb-2 inline-block">Civil Remedies &amp; Limitation Act</h2>
                   <div className="prose prose-base max-w-none text-slate-650 space-y-6">
                     <p className="text-sm md:text-base leading-relaxed">
-                      Under the **Limitation Act, 1963**, the statutory limitation period for filing a recovery suit for unpaid travel expenses is **three (3) years**. This period begins from the date the reimbursement became due, or from the date the company last acknowledged the outstanding dues in writing (via email, FNF draft, or settlement letter).
+                      Under the <strong>Limitation Act, 1963</strong>, the statutory limitation period for filing a recovery suit for unpaid travel expenses is <strong>three (3) years</strong>. This period begins from the date the reimbursement became due, or from the date the company last acknowledged the outstanding dues in writing (via email, FNF draft, or settlement letter).
                     </p>
                     <p className="text-sm md:text-base leading-relaxed">
                       This three-year window provides ample time for legal recovery. However, employees should not delay, as companies facing financial distress may enter liquidation or dissolve, which complicates recovery.
@@ -460,10 +460,10 @@ export default function TravelReimbursementClient() {
                   <h2 className="text-xl md:text-3xl font-black text-slate-900 mb-5 border-b-2 border-[#DC2626] pb-2 inline-block">Summary Suits for Travel Debts (Order 37)</h2>
                   <div className="prose prose-base max-w-none text-slate-650 space-y-6">
                     <p className="text-sm md:text-base leading-relaxed">
-                      For fast-track recovery of travel dues, filing a **Summary Suit under Order XXXVII of the Code of Civil Procedure, 1908 (CPC)** is highly recommended. Unlike regular civil suits, summary suits are expedited:
+                      For fast-track recovery of travel dues, filing a <strong>Summary Suit under Order XXXVII of the Code of Civil Procedure, 1908 (CPC)</strong> is highly recommended. Unlike regular civil suits, summary suits are expedited:
                     </p>
                     <ul className="list-disc pl-6 space-y-2 text-sm text-slate-650">
-                      <li>The employer (defendant) has no right to defend the suit unless they apply for **&apos;Leave to Defend&apos;** within 10 days of receiving the summons.</li>
+                      <li>The employer (defendant) has no right to defend the suit unless they apply for <strong>&apos;Leave to Defend&apos;</strong> within 10 days of receiving the summons.</li>
                       <li>To get leave, they must show a substantial defense. If the court finds their defense is frivolous or meant to delay, it will reject the application and pass a decree in favor of the employee immediately.</li>
                       <li>This allows employees to get a decree within 6 to 12 months, bypassing lengthy trials.</li>
                     </ul>
@@ -475,7 +475,7 @@ export default function TravelReimbursementClient() {
                   <h2 className="text-xl md:text-3xl font-black text-slate-900 mb-5 border-b-2 border-[#DC2626] pb-2 inline-block">Section 70 Contract Act &amp; Benefit</h2>
                   <div className="prose prose-base max-w-none text-slate-650 space-y-6">
                     <p className="text-sm md:text-base leading-relaxed">
-                      Under **Section 70 of the Indian Contract Act, 1872**, if a person lawfully does anything for another, not intending to do so gratuitously, and the other person enjoys the benefit thereof, the latter must compensate the former.
+                      Under <strong>Section 70 of the Indian Contract Act, 1872</strong>, if a person lawfully does anything for another, not intending to do so gratuitously, and the other person enjoys the benefit thereof, the latter must compensate the former.
                     </p>
                     <p className="text-sm md:text-base leading-relaxed">
                       When an employee travels to secure contracts or audit projects, they do so not as a personal favor, but for the company&apos;s benefit. Since the company enjoys the commercial benefits of those activities, it cannot refuse to reimburse the employee. The court will enforce the company&apos;s obligation to compensate the employee under the doctrine of quasi-contract.
@@ -488,15 +488,15 @@ export default function TravelReimbursementClient() {
                   <h2 className="text-xl md:text-3xl font-black text-slate-900 mb-5 border-b-2 border-[#DC2626] pb-2 inline-block">Section 73 Contract Act Damages</h2>
                   <div className="prose prose-base max-w-none text-slate-650 space-y-6">
                     <p className="text-sm md:text-base leading-relaxed">
-                      Under **Section 73 of the Indian Contract Act, 1872**, the party who suffers from a breach of contract is entitled to receive compensation for any loss or damage caused to him which naturally arose in the usual course of things from the breach.
+                      Under <strong>Section 73 of the Indian Contract Act, 1872</strong>, the party who suffers from a breach of contract is entitled to receive compensation for any loss or damage caused to him which naturally arose in the usual course of things from the breach.
                     </p>
                     <p className="text-sm md:text-base leading-relaxed">
                       If an employer defaults on travel reimbursements, the employee faces direct financial damages:
                     </p>
                     <ul className="list-disc pl-6 space-y-2 text-sm text-slate-650">
-                      <li>The **principal amount** of travel bills.</li>
-                      <li>**Interest damages** (usually 12% to 18% p.a.) for the period of delay.</li>
-                      <li>**Consequential damages**, such as credit card interest charges or CIBIL score recovery costs, if the default directly led to bank defaults.</li>
+                      <li>The <strong>principal amount</strong> of travel bills.</li>
+                      <li><strong>Interest damages</strong> (usually 12% to 18% p.a.) for the period of delay.</li>
+                      <li><strong>Consequential damages</strong>, such as credit card interest charges or CIBIL score recovery costs, if the default directly led to bank defaults.</li>
                     </ul>
                   </div>
                 </section>
@@ -519,10 +519,10 @@ export default function TravelReimbursementClient() {
                   <h2 className="text-xl md:text-3xl font-black text-slate-900 mb-5 border-b-2 border-[#DC2626] pb-2 inline-block">Labour Department Complaints</h2>
                   <div className="prose prose-base max-w-none text-slate-650 space-y-6">
                     <p className="text-sm md:text-base leading-relaxed">
-                      While travel reimbursements are not 'wages,' withholding these funds during full and final (FNF) settlements represents a major compliance violation under state-specific **Shops and Commercial Establishments Acts**.
+                      While travel reimbursements are not 'wages,' withholding these funds during full and final (FNF) settlements represents a major compliance violation under state-specific <strong>Shops and Commercial Establishments Acts</strong>.
                     </p>
                     <p className="text-sm md:text-base leading-relaxed">
-                      Employees can file a formal complaint with the local **Labour Inspector or Assistant Labour Commissioner**. The Commissioner has the power to summon the employer and direct them to clear all outstanding FNF dues (including salaries and travel arrears) to avoid business license suspension or local prosecution.
+                      Employees can file a formal complaint with the local <strong>Labour Inspector or Assistant Labour Commissioner</strong>. The Commissioner has the power to summon the employer and direct them to clear all outstanding FNF dues (including salaries and travel arrears) to avoid business license suspension or local prosecution.
                     </p>
                   </div>
                 </section>
@@ -532,10 +532,10 @@ export default function TravelReimbursementClient() {
                   <h2 className="text-xl md:text-3xl font-black text-slate-900 mb-5 border-b-2 border-[#DC2626] pb-2 inline-block">Travel Claims under IBC Waterfall</h2>
                   <div className="prose prose-base max-w-none text-slate-650 space-y-6">
                     <p className="text-sm md:text-base leading-relaxed">
-                      If the company enters liquidation or insolvency under the **Insolvency and Bankruptcy Code, 2016 (IBC)**, employee travel reimbursement claims are categorized as operational debts.
+                      If the company enters liquidation or insolvency under the <strong>Insolvency and Bankruptcy Code, 2016 (IBC)</strong>, employee travel reimbursement claims are categorized as operational debts.
                     </p>
                     <p className="text-sm md:text-base leading-relaxed">
-                      To secure outstanding travel dues, employees must file **Form D (Claim by Operational Creditor)** with the appointed Resolution Professional (RP). Attach hotel bookings, flight tickets, and portal approval screenshots to register your claim and receive payouts under the distribution waterfall.
+                      To secure outstanding travel dues, employees must file <strong>Form D (Claim by Operational Creditor)</strong> with the appointed Resolution Professional (RP). Attach hotel bookings, flight tickets, and portal approval screenshots to register your claim and receive payouts under the distribution waterfall.
                     </p>
                   </div>
                 </section>
@@ -545,7 +545,7 @@ export default function TravelReimbursementClient() {
                   <h2 className="text-xl md:text-3xl font-black text-slate-900 mb-5 border-b-2 border-[#DC2626] pb-2 inline-block">Serving an Advocate Notice</h2>
                   <div className="prose prose-base max-w-none text-slate-650 space-y-6">
                     <p className="text-sm md:text-base leading-relaxed">
-                      When informal follow-ups and escalation emails fail to yield results, serving a formal **Legal Notice** is the next logical step. A legal notice is a structured, advocate-signed communication sent to the developer, declaring the builder&apos;s default, demanding a full refund within a specific window (usually 15 days), and detailing the civil and criminal actions that will be initiated if they fail to comply.
+                      When informal follow-ups and escalation emails fail to yield results, serving a formal <strong>Legal Notice</strong> is the next logical step. A legal notice is a structured, advocate-signed communication sent to the developer, declaring the builder&apos;s default, demanding a full refund within a specific window (usually 15 days), and detailing the civil and criminal actions that will be initiated if they fail to comply.
                     </p>
                     <p className="text-sm md:text-base leading-relaxed">
                       At LegalRecovery, our legal panel drafts custom notices tailored to the facts of your case. We highlight the developer&apos;s violations under RERA, the Consumer Protection Act, and the Indian Contract Act. The notice is physically dispatched via Registered Speed Post with Acknowledgment Due (AD) to the builder&apos;s corporate office. Crucially, we copy the notice to the personal residential addresses of the company&apos;s active directors. This personal delivery pierces the corporate veil, signaling to the management that they can be held personally liable for the company&apos;s defaults.
@@ -564,7 +564,7 @@ export default function TravelReimbursementClient() {
                       In modern employment disputes, the paper trail is almost entirely digital. Corporate communications occur over email, Slack channels, Microsoft Teams, and WhatsApp. It is a common concern among employees whether these digital conversations hold weight in a court of law. The answer is a resounding yes, provided they are formatted and backed by the correct legal certificates.
                     </p>
                     <p className="text-sm md:text-base leading-relaxed">
-                      Under **Section 63 of the Bharatiya Nyaya Sanhita, 2023** (formerly Section 65B of the Indian Evidence Act, 1872), electronic records are fully admissible as secondary evidence in legal proceedings. To meet admissibility standards, you must present the digital printouts along with a signed electronic authenticity certificate. This certificate must confirm that the computer or device used to access the emails or portal was operating properly, and the record has not been tampered with.
+                      Under <strong>Section 63 of the Bharatiya Nyaya Sanhita, 2023</strong> (formerly Section 65B of the Indian Evidence Act, 1872), electronic records are fully admissible as secondary evidence in legal proceedings. To meet admissibility standards, you must present the digital printouts along with a signed electronic authenticity certificate. This certificate must confirm that the computer or device used to access the emails or portal was operating properly, and the record has not been tampered with.
                     </p>
                   </div>
                 </section>
