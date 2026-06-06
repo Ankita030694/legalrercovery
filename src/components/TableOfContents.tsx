@@ -1,6 +1,6 @@
 'use client';
 
-import { useEffect, useState } from 'react';
+import { useEffect, useState, useRef } from 'react';
 
 interface Section {
   id: string;
@@ -14,6 +14,7 @@ interface TableOfContentsProps {
 
 export default function TableOfContents({ sections, orientation = 'horizontal' }: TableOfContentsProps) {
   const [activeId, setActiveId] = useState<string>('');
+  const containerRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
     const observer = new IntersectionObserver(
@@ -39,6 +40,20 @@ export default function TableOfContents({ sections, orientation = 'horizontal' }
     };
   }, [sections]);
 
+  // Auto-scroll the active horizontal item into view on mobile
+  useEffect(() => {
+    if (activeId && containerRef.current) {
+      const activeEl = containerRef.current.querySelector(`[data-id="${activeId}"]`) as HTMLElement;
+      if (activeEl) {
+        activeEl.scrollIntoView({
+          behavior: 'smooth',
+          block: 'nearest',
+          inline: 'center',
+        });
+      }
+    }
+  }, [activeId]);
+
   if (sections.length === 0) return null;
 
   if (orientation === 'vertical') {
@@ -52,6 +67,7 @@ export default function TableOfContents({ sections, orientation = 'horizontal' }
               <a
                 key={section.id}
                 href={`#${section.id}`}
+                data-id={section.id}
                 className={`block text-xs font-extrabold leading-relaxed transition-all border-l-2 pl-3 ${
                   isActive
                     ? 'border-[#DC2626] text-[#DC2626] font-black'
@@ -69,21 +85,30 @@ export default function TableOfContents({ sections, orientation = 'horizontal' }
 
   // Mobile / Horizontal layout
   return (
-    <div className="bg-white p-5 rounded-2xl border border-gray-100 shadow-sm">
-      <h3 className="text-xs font-black text-gray-400 uppercase tracking-wider mb-3 flex items-center">
-        <span className="w-1.5 h-3 bg-[#DC2626] rounded-full mr-2"></span>
-        Table of Contents
-      </h3>
-      <div className="flex flex-wrap gap-2">
+    <div className="bg-white p-4 sm:p-5 rounded-2xl border border-gray-100 shadow-sm select-none">
+      <div className="flex items-center justify-between mb-3">
+        <h3 className="text-xs font-black text-gray-400 uppercase tracking-wider flex items-center">
+          <span className="w-1.5 h-3 bg-[#DC2626] rounded-full mr-2"></span>
+          Table of Contents
+        </h3>
+        <span className="text-[9px] font-extrabold text-slate-400 uppercase tracking-wider">
+          Swipe →
+        </span>
+      </div>
+      <div 
+        ref={containerRef}
+        className="flex flex-row gap-2 overflow-x-auto scrollbar-hide -mx-4 px-4 pb-1"
+      >
         {sections.map((section) => {
           const isActive = activeId === section.id;
           return (
             <a
               key={section.id}
               href={`#${section.id}`}
-              className={`px-3 py-1.5 text-xs font-bold rounded-xl border transition-all ${
+              data-id={section.id}
+              className={`px-3 py-1.5 text-xs font-bold rounded-xl border transition-all inline-block whitespace-nowrap flex-shrink-0 ${
                 isActive
-                  ? 'bg-[#DC2626]/10 border-[#DC2626] text-[#DC2626]'
+                  ? 'bg-[#DC2626]/10 border-[#DC2626] text-[#DC2626] font-black'
                   : 'bg-gray-50 border-gray-100 text-gray-500 hover:bg-gray-100 hover:text-gray-900'
               }`}
             >

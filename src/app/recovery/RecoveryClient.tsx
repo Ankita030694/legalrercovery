@@ -17,6 +17,20 @@ const queryLinks: Record<string, string> = {
   "Recovery of unpaid incentives": "/recovery/unpaid-incentives",
   "Recovery of unpaid bonus": "/recovery/unpaid-bonus",
   "Recovery of PF amount": "/recovery/pf-amount",
+  "Recovery of employee reimbursement claims": "/recovery/employment-reimbursement-claims",
+  "Recovery of travel reimbursement": "/recovery/travel-reimbursement",
+  "Recovery of business dues": "/recovery/business-dues",
+  "Recovery of unpaid invoices": "/recovery/unpaid-invoices",
+  "Recovery of vendor payments": "/recovery/vendor-payments",
+  "Recovery of freelancer payments": "/recovery/freelancer-payments",
+  "Recovery of consultancy fees": "/recovery/consultancy-fees",
+  "Recovery of unpaid commissions": "/recovery/unpaid-commissions",
+  "Recovery of retained salary": "/recovery/retained-salary",
+  "Recovery of delayed wages": "/recovery/delayed-wages",
+  "Recovery of notice period salary": "/recovery/notice-period-salary",
+  "Recovery of pending overtime payment": "/recovery/pending-overtime-payment",
+  "Recovery of contractor payment": "/recovery/contractor-payment",
+  "Recovery of pending project payment": "/recovery/pending-project-payment",
 };
 
 export default function RecoveryClient() {

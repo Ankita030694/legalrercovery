@@ -1,5 +1,6 @@
 import type { MetadataRoute } from "next";
 import { SITE_URL } from "@/lib/site";
+import { locationData } from "./legal-recovery-by-city/locationData";
 
 export const revalidate = 3600;
 
@@ -14,7 +15,7 @@ const STATIC_ROUTES: {
   { path: "/services/property-and-builder-disputes", changeFrequency: "weekly", priority: 0.85 },
   { path: "/services/recovery-of-salary-and-employment-dues", changeFrequency: "weekly", priority: 0.85 },
   { path: "/services/airline-and-travel-recoveries", changeFrequency: "weekly", priority: 0.85 },
-  { path: "/services/refunds-and-consumer-complaints", changeFrequency: "weekly", priority: 0.85 },
+  { path: "/services/refunds-and-consumer-complaints", changeFrequency: "weekly", priority: 0.855 },
   { path: "/services/vendor-and-invoice-recoveries", changeFrequency: "weekly", priority: 0.85 },
   { path: "/services/security-deposits-and-rental-recoveries", changeFrequency: "weekly", priority: 0.85 },
   { path: "/services/recovery-of-freelancer-and-client-payments", changeFrequency: "weekly", priority: 0.85 },
@@ -22,8 +23,15 @@ const STATIC_ROUTES: {
   { path: "/how-it-works", changeFrequency: "monthly", priority: 0.8 },
   { path: "/blog", changeFrequency: "weekly", priority: 0.8 },
   { path: "/contact", changeFrequency: "monthly", priority: 0.7 },
+  { path: "/contact/thank-you", changeFrequency: "monthly", priority: 0.5 },
   { path: "/privacy-policy", changeFrequency: "yearly", priority: 0.3 },
   { path: "/terms-and-conditions", changeFrequency: "yearly", priority: 0.3 },
+  { path: "/payment-success", changeFrequency: "monthly", priority: 0.3 },
+  { path: "/payment-failure", changeFrequency: "monthly", priority: 0.3 },
+  { path: "/payment-cancelled", changeFrequency: "monthly", priority: 0.3 },
+  { path: "/legal-recovery-by-city", changeFrequency: "weekly", priority: 0.8 },
+  
+  // Recovery routes
   { path: "/recovery", changeFrequency: "weekly", priority: 0.9 },
   { path: "/recovery/unpaid-salary", changeFrequency: "weekly", priority: 0.8 },
   { path: "/recovery/pending-salary-from-employer", changeFrequency: "weekly", priority: 0.8 },
@@ -34,6 +42,25 @@ const STATIC_ROUTES: {
   { path: "/recovery/office-security-deposit", changeFrequency: "weekly", priority: 0.8 },
   { path: "/recovery/unpaid-incentives", changeFrequency: "weekly", priority: 0.8 },
   { path: "/recovery/unpaid-bonus", changeFrequency: "weekly", priority: 0.8 },
+  { path: "/recovery/builder-booking-amount", changeFrequency: "weekly", priority: 0.8 },
+  { path: "/recovery/business-dues", changeFrequency: "weekly", priority: 0.8 },
+  { path: "/recovery/consultancy-fees", changeFrequency: "weekly", priority: 0.8 },
+  { path: "/recovery/contractor-payment", changeFrequency: "weekly", priority: 0.8 },
+  { path: "/recovery/delayed-wages", changeFrequency: "weekly", priority: 0.8 },
+  { path: "/recovery/employment-reimbursement-claims", changeFrequency: "weekly", priority: 0.8 },
+  { path: "/recovery/flat-booking-cancellation-refund", changeFrequency: "weekly", priority: 0.8 },
+  { path: "/recovery/freelancer-payments", changeFrequency: "weekly", priority: 0.8 },
+  { path: "/recovery/gratuity-amount", changeFrequency: "weekly", priority: 0.8 },
+  { path: "/recovery/international-client-payment", changeFrequency: "weekly", priority: 0.8 },
+  { path: "/recovery/notice-period-salary", changeFrequency: "weekly", priority: 0.8 },
+  { path: "/recovery/pending-overtime-payment", changeFrequency: "weekly", priority: 0.8 },
+  { path: "/recovery/pending-project-payment", changeFrequency: "weekly", priority: 0.8 },
+  { path: "/recovery/pf-amount", changeFrequency: "weekly", priority: 0.8 },
+  { path: "/recovery/retained-salary", changeFrequency: "weekly", priority: 0.8 },
+  { path: "/recovery/travel-reimbursement", changeFrequency: "weekly", priority: 0.8 },
+  { path: "/recovery/unpaid-commissions", changeFrequency: "weekly", priority: 0.8 },
+  { path: "/recovery/unpaid-invoices", changeFrequency: "weekly", priority: 0.8 },
+  { path: "/recovery/vendor-payments", changeFrequency: "weekly", priority: 0.8 },
 ];
 
 async function getBlogEntries(): Promise<MetadataRoute.Sitemap> {
@@ -82,5 +109,13 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
 
   const blogEntries = await getBlogEntries();
 
-  return [...staticEntries, ...blogEntries];
+  const cityEntries: MetadataRoute.Sitemap = locationData.map((loc) => ({
+    url: `${SITE_URL}/legal-recovery-by-city/${loc.slug}`,
+    lastModified: new Date(),
+    changeFrequency: "weekly" as const,
+    priority: 0.6,
+  }));
+
+  return [...staticEntries, ...blogEntries, ...cityEntries];
 }
+
