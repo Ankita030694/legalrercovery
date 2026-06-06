@@ -16,6 +16,7 @@ const queryLinks: Record<string, string> = {
   "Recovery of gratuity amount": "/recovery/gratuity-amount",
   "Recovery of unpaid incentives": "/recovery/unpaid-incentives",
   "Recovery of unpaid bonus": "/recovery/unpaid-bonus",
+  "Recovery of PF amount": "/recovery/pf-amount",
 };
 
 export default function RecoveryClient() {
