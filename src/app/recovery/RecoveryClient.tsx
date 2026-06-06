@@ -11,6 +11,8 @@ const queryLinks: Record<string, string> = {
   "Recovery of security deposit": "/recovery/security-deposit",
   "Recovery of rental security deposit": "/recovery/rental-security-deposit",
   "Recovery of office security deposit": "/recovery/office-security-deposit",
+  "Recovery of builder booking amount": "/recovery/builder-booking-amount",
+  "Recovery of flat booking cancellation refund": "/recovery/flat-booking-cancellation-refund",
   "Recovery of unpaid incentives": "/recovery/unpaid-incentives",
   "Recovery of unpaid bonus": "/recovery/unpaid-bonus",
 };

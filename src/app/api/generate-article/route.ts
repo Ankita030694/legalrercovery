@@ -38,7 +38,7 @@ export async function POST(request: NextRequest) {
     console.log(`[AI Generator] Triggering comprehensive 3000+ words article generation (Streaming) with gpt-4o for: Primary [${primaryKeyword}], Secondary [${secondaryKeyword || ''}]...`);
 
     const systemPrompt = `
-      Act as a professional SEO and AEO expert and legal content strategist. Create a fully human-written, SEO-optimized blog article for AMA Legal Solutions (www.amalegalsolutions.com) targeting [${primaryKeyword}] with secondary keywords [${secondaryKeyword || ''}]. The article should be 3000+ words, structured, and ready to publish.
+      Act as a professional SEO and AEO expert and legal content strategist. Create a fully human-written, SEO-optimized blog article for Legal Recovery (https://www.legalrecovery.in/) targeting [${primaryKeyword}] with secondary keywords [${secondaryKeyword || ''}]. The article should be 3000+ words, structured, and ready to publish.
 
       **Requirements**:
       - **Headings Structure**: 
@@ -47,21 +47,23 @@ export async function POST(request: NextRequest) {
         - H3/H4: Subtopics, examples, step-by-step guidance, and case studies. Include primary/secondary keywords naturally.
       - **Introduction**: 2–3 paragraphs mentioning the primary keyword at least twice, hooking the reader, and explaining the topic.
       - **Content**: Professional, authoritative, human tone. Include actionable legal advice, examples, case references, and statistics where relevant. Use bullet points, numbered lists, and tables for clarity.
-      - **Internal Linking**: You MUST naturally integrate mentions and links to the following AMA Legal Solutions services within the description (main body) where relevant:
-        - https://www.amalegalsolutions.com/services/banking-and-finance
-        - https://www.amalegalsolutions.com/services/loan-settlement
-        - https://www.amalegalsolutions.com/services/intellectual-property-rights
-        - https://www.amalegalsolutions.com/services/entertainment
-        - https://www.amalegalsolutions.com/services/real-estate
-        - https://www.amalegalsolutions.com/services/criminal-law
-        - https://www.amalegalsolutions.com/services/corporate
-        - https://www.amalegalsolutions.com/services/arbitration
-        - https://www.amalegalsolutions.com/services/cyber
-        - https://www.amalegalsolutions.com/services/civil
-        - https://www.amalegalsolutions.com/services/drafting
-        - https://www.amalegalsolutions.com/services/litigation
+      - **Internal Linking**: You MUST naturally integrate mentions and links to the following Legal Recovery services/pages within the description (main body) where relevant:
+        - https://www.legalrecovery.in/
+        - https://www.legalrecovery.in/about
+        - https://www.legalrecovery.in/services
+        - https://www.legalrecovery.in/how-it-works
+        - https://www.legalrecovery.in/blog
+        - https://www.legalrecovery.in/services/recovery-of-salary-and-employment-dues
+        - https://www.legalrecovery.in/services/refunds-and-consumer-complaints
+        - https://www.legalrecovery.in/services/security-deposits-and-rental-recoveries
+        - https://www.legalrecovery.in/services/recovery-of-freelancer-and-client-payments
+        - https://www.legalrecovery.in/services/recovery-of-money-from-a-friend
+        - https://www.legalrecovery.in/services/airline-and-travel-recoveries
+        - https://www.legalrecovery.in/services/vendor-and-invoice-recoveries
+        - https://www.legalrecovery.in/services/property-and-builder-disputes
+        - https://www.legalrecovery.in/contact
       - **External Linking**: Include links to authoritative sources (government/legal sites) if needed.
-      - **Conclusion**: 2–3 paragraphs summarizing key points and including a strong call-to-action to contact AMA Legal Solutions.
+      - **Conclusion**: 2–3 paragraphs summarizing key points and including a strong call-to-action to contact Legal Recovery.
       - **FAQs Section**: Include at least 8–10 FAQs answering common questions related to the primary keyword. Use keywords naturally.
       - **Meta Tags**: 
         - Meta Title (60–70 characters) with primary keyword.
