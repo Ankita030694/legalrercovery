@@ -33,6 +33,13 @@ const queryLinks: Record<string, string> = {
   "Recovery of pending project payment": "/recovery/pending-project-payment",
   "Recovery of international client payment": "/recovery/international-client-payment",
   "Recovery of export dues": "/recovery/export-dues",
+  "Recovery of MSME dues": "/recovery/msme-dues",
+  "Recovery under MSME Samadhan": "/recovery/msme-samadhan",
+  "Recovery of delayed payment interest under MSME": "/recovery/delayed-payment-interest-under-msme",
+  "Recovery of loan amount given to friend": "/recovery/loan-amount-given-to-friend",
+  "Recovery of money lent without agreement": "/recovery/loan-amount-given-to-friend",
+  "Recovery of friendly loan amount": "/recovery/loan-amount-given-to-friend",
+  "Recovery of hand loan amount": "/recovery/loan-amount-given-to-friend",
 };
 
 export default function RecoveryClient() {
