@@ -35,15 +35,18 @@ export async function POST(request: NextRequest) {
       return NextResponse.json({ error: 'Primary Keyword or Context is required' }, { status: 400 });
     }
 
-    console.log(`[AI Generator] Triggering comprehensive 3000+ words article generation (Streaming) with gpt-4o for: Primary [${primaryKeyword}], Secondary [${secondaryKeyword || ''}]...`);
+    console.log(`[AI Generator] Triggering comprehensive 3500+ words article generation (Streaming) with gpt-4o for: Primary [${primaryKeyword}], Secondary [${secondaryKeyword || ''}]...`);
 
     const systemPrompt = `
-      Act as a professional SEO and AEO expert and legal content strategist. Create a fully human-written, SEO-optimized blog article for Legal Recovery (https://www.legalrecovery.in/) targeting [${primaryKeyword}] with secondary keywords [${secondaryKeyword || ''}]. The article should be 3000+ words, structured, and ready to publish.
+      Act as a professional SEO and AEO expert and legal content strategist. Create a fully human-written, SEO-optimized blog article for Legal Recovery (https://www.legalrecovery.in/) targeting [${primaryKeyword}] with secondary keywords [${secondaryKeyword || ''}]. The article should be 3500+ words, structured, and ready to publish.
+
+      **CRITICAL WORD COUNT REQUIREMENT**:
+      The 'description' property in the JSON output MUST contain the full, exhaustive body of the article, and it MUST be at least 3500 words of detailed HTML text. This is a strict technical limit. If the content of the 'description' field is short (e.g. 400-1000 words), it is considered a complete failure. To achieve this, expand every section, subtopic, and legal concept with 4-6 detailed, comprehensive paragraphs. Discuss relevant Indian acts (Payment of Wages, Shops & Establishments, Gratuity Act, BNS/IPC, NI Act), specify court procedures, draft step-by-step guidance, list required evidence, and outline detailed case studies.
 
       **Requirements**:
       - **Headings Structure**: 
         - H1: Blog title with the primary keyword.
-        - H2: Main sections covering key legal aspects, practical tips, and solutions. Include primary keyword in H2.
+        - H2: Main sections covering key legal aspects, practical tips, and solutions. Include primary keyword in H2. Must have at least 8 main H2 sections.
         - H3/H4: Subtopics, examples, step-by-step guidance, and case studies. Include primary/secondary keywords naturally.
       - **Introduction**: 2–3 paragraphs mentioning the primary keyword at least twice, hooking the reader, and explaining the topic.
       - **Content**: Professional, authoritative, human tone. Include actionable legal advice, examples, case references, and statistics where relevant. Use bullet points, numbered lists, and tables for clarity.
@@ -76,7 +79,7 @@ export async function POST(request: NextRequest) {
       {
         "title": "H1 Title (max 70 chars)",
         "subtitle": "Engaging subtitle (max 120 chars)",
-        "description": "FULL HTML CONTENT (3000+ words). Use <h2>, <h3>, <h4>, <p>, <ul>, <li>, <table>. Include the internal links naturally. DO NOT include FAQs or Reviews in this field.",
+        "description": "FULL HTML CONTENT (MUST exceed 3500 words). Use <h2>, <h3>, <h4>, <p>, <ul>, <li>, <table>. Include the internal links naturally. DO NOT include FAQs or Reviews in this field.",
         "metaTitle": "SEO meta title (60-70 chars)",
         "metaDescription": "SEO meta description (150-160 chars)",
         "faqs": [
@@ -93,8 +96,8 @@ export async function POST(request: NextRequest) {
     `;
 
     const userMessageContent = body.context && body.context !== primaryKeyword
-      ? `Write a highly comprehensive 3000+ words article about: ${primaryKeyword}\nAdditional context & details: ${body.context}`
-      : `Write a highly comprehensive 3000+ words article about: ${primaryKeyword}`;
+      ? `Write an exhaustive, extremely detailed 3500+ words article about: ${primaryKeyword}\nAdditional context & details: ${body.context}\nMake sure the HTML content in the 'description' field alone exceeds 3500 words by writing multiple, long paragraphs with legal details.`
+      : `Write an exhaustive, extremely detailed 3500+ words article about: ${primaryKeyword}\nMake sure the HTML content in the 'description' field alone exceeds 3500 words by writing multiple, long paragraphs with legal details.`;
 
     const completion = await openai.chat.completions.create({
       model: "gpt-4o",
