@@ -34,7 +34,7 @@ export function fillPoliceComplaintTemplate(data: PoliceComplaintData): string {
     stampLogoBase64,
     signatureBase64,
     complainantName = "Tech AMA",
-    complainantPhone = "+91-8700343611",
+    complainantPhone = "+91-XXXXXXXXXX",
     complainantEmail = "notice@amalegalsolutions.com",
     complainantAddress = "2493AP, Ground floor, Sector 57, Gurugram-122003 (Haryana)",
     noticeRef

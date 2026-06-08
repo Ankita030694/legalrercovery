@@ -821,12 +821,12 @@ export default function VendorInvoiceClient() {
               <p className="text-gray-400 mb-5 text-[11px] leading-relaxed">
                 Get an advocate-drafted 3-stage notice pipeline and a corporate cheating police draft for a flat fee of ₹999.
               </p>
-              <a 
-                href="tel:+918700343611" 
+              <Link 
+                href="/contact" 
                 className="block w-full bg-[#DC2626] text-white text-center py-3 rounded-xl text-xs font-extrabold hover:bg-[#B91C1C] transition-colors mb-3 cursor-pointer"
               >
-                Call Support: +91-8700343611
-              </a>
+                Start Recovery Now
+              </Link>
               <Link 
                 href="/contact" 
                 className="block w-full border border-gray-700 text-gray-300 text-center py-3 rounded-xl text-xs font-extrabold hover:bg-white hover:text-[#111827] hover:border-white transition-colors"

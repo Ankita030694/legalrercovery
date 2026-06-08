@@ -201,7 +201,6 @@ export default async function BlogDetailPage(
     "name": "LegalRecovery",
     "image": `${SITE_URL}/lrlogo.svg`,
     "url": SITE_URL,
-    "telephone": "+91-8700343611",
     "address": {
       "@type": "PostalAddress",
       "addressCountry": "IN",

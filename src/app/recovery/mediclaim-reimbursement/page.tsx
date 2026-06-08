@@ -1,0 +1,26 @@
+import { Metadata } from "next";
+import MediclaimReimbursementClient from "./MediclaimReimbursementClient";
+
+export const metadata: Metadata = {
+  title: "Recover Wrongfully Rejected Mediclaim Reimbursement | LegalRecovery",
+  description: "Has your health insurance or mediclaim reimbursement been wrongfully rejected by the TPA or insurer? Learn about the IRDAI claim timelines, pre-existing disease guidelines, and how to recover your funds.",
+  keywords: [
+    "recover mediclaim reimbursement",
+    "wrongful health insurance claim rejection",
+    "tpa claim rejection refund",
+    "irdai mediclaim reimbursement guidelines",
+    "how to dispute health insurance claim",
+    "insurance ombudsman mediclaim complaint",
+    "legal notice to insurer for medical claim",
+    "hospital bill reimbursement dispute",
+    "moratorium period health insurance",
+    "consumer court mediclaim deficiency"
+  ],
+  alternates: {
+    canonical: 'https://www.legalrecovery.in/recovery/mediclaim-reimbursement',
+  },
+};
+
+export default function MediclaimReimbursementPage() {
+  return <MediclaimReimbursementClient />;
+}

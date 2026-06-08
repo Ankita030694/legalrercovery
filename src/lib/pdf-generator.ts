@@ -707,10 +707,10 @@ export async function generateNoticePDFBuffer(params: PDFGeneratorParams): Promi
 
     // Complainant Details Table
     writer.writeDetailsTable("COMPLAINANT DETAILS", [
-      { label: "Name:", value: params.clientName || "Tech AMA" },
-      { label: "Phone Number:", value: params.clientPhone || "+91-8700343611" },
-      { label: "Email ID:", value: params.clientEmail || "notice@amalegalsolutions.com" },
-      { label: "Address:", value: params.clientAddress || "2493AP, Ground floor, Sector 57, Gurugram-122003 (Haryana)" }
+      { label: "Name:", value: params.clientName || "No Name Provided"},
+      { label: "Phone Number:", value: params.clientPhone || "No Phone Number Provided"},
+      { label: "Email ID:", value: params.clientEmail || "No Email Provided"},
+      { label: "Address:", value: params.clientAddress || "No Address Provided"}
     ]);
 
     // Accused Details Table
