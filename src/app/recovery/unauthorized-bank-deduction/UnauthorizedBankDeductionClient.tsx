@@ -626,8 +626,6 @@ export default function UnauthorizedBankDeductionClient() {
       <PaymentModal
         isOpen={isPaymentModalOpen}
         onClose={() => setIsPaymentModalOpen(false)}
-        serviceName="Unauthorized Bank Deduction Legal Recovery Assistance"
-        amount={1999}
       />
     </>
   );

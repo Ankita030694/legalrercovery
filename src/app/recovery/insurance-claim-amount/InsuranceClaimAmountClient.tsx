@@ -623,8 +623,6 @@ export default function InsuranceClaimAmountClient() {
       <PaymentModal
         isOpen={isPaymentModalOpen}
         onClose={() => setIsPaymentModalOpen(false)}
-        serviceName="Insurance Claim Wrongful Rejection Legal Recovery Assistance"
-        amount={1999}
       />
     </>
   );

@@ -669,8 +669,6 @@ export default function CreditCardFraudClient() {
       <PaymentModal
         isOpen={isPaymentModalOpen}
         onClose={() => setIsPaymentModalOpen(false)}
-        serviceName="Credit Card Fraud Legal Recovery Assistance"
-        amount={1999}
       />
     </>
   );

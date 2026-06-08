@@ -669,8 +669,6 @@ export default function DebitCardFraudClient() {
       <PaymentModal
         isOpen={isPaymentModalOpen}
         onClose={() => setIsPaymentModalOpen(false)}
-        serviceName="Debit Card Fraud Legal Recovery Assistance"
-        amount={1999}
       />
     </>
   );

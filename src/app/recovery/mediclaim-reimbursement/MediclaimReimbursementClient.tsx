@@ -623,8 +623,6 @@ export default function MediclaimReimbursementClient() {
       <PaymentModal
         isOpen={isPaymentModalOpen}
         onClose={() => setIsPaymentModalOpen(false)}
-        serviceName="Mediclaim Reimbursement Wrongful Rejection Legal Recovery Assistance"
-        amount={1999}
       />
     </>
   );
