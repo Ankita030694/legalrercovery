@@ -37,7 +37,7 @@ const queryLinks: Record<string, string> = {
   "Recovery of MSME dues": "/recovery/msme-dues",
   "Recovery under MSME Samadhan": "/recovery/msme-samadhan",
   "Recovery of delayed payment interest under MSME": "/recovery/delayed-payment-interest-under-msme",
-  "Recovery of loan amount given to friend": "/recovery/loan-amount-given-to-friend",
+  "Recovery of loan amount given to friend": "/legal-notice-to-recovery-my-loan-from-friend",
   "Recovery of money lent without agreement": "/recovery/money-lent-without-agreement",
   "Recovery of friendly loan amount": "/recovery/friendly-loan-amount",
   "Recovery of hand loan amount": "/recovery/hand-loan-amount",
@@ -68,6 +68,9 @@ const queryLinks: Record<string, string> = {
   "Recovery of school fee refund": "/recovery/school-fee-refund",
   "Recovery of college fee refund": "/recovery/college-fee-refund",
   "Recovery of event cancellation refund": "/recovery/event-cancellation-refund",
+  "Recovery through legal notice": "/send-legal-notice-online-india",
+  "Freelancer payment recovery guide": "/freelancer-payment-recovery-guide",
+  "How to recover unpaid salary legally": "/how-to-recover-unpaid-salary-legally",
 };
 
 const recoveryFaqs: FAQItem[] = [
@@ -99,6 +102,7 @@ export default function RecoveryClient() {
     "Recovery of pending salary from employer",
     "Recovery of FNF settlement",
     "Recovery of outstanding dues from employer",
+    "How to recover unpaid salary legally",
     "Recovery of security deposit",
     "Recovery of rental security deposit",
     "Recovery of office security deposit",
@@ -114,6 +118,7 @@ export default function RecoveryClient() {
     "Recovery of unpaid invoices",
     "Recovery of vendor payments",
     "Recovery of freelancer payments",
+    "Freelancer payment recovery guide",
     "Recovery of consultancy fees",
     "Recovery of unpaid commissions",
     "Recovery of retained salary",

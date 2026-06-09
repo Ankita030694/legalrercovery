@@ -30,6 +30,7 @@ const STATIC_ROUTES: {
   { path: "/payment-failure", changeFrequency: "monthly", priority: 0.3 },
   { path: "/payment-cancelled", changeFrequency: "monthly", priority: 0.3 },
   { path: "/legal-recovery-by-city", changeFrequency: "weekly", priority: 0.8 },
+  { path: "/legal-notice-services", changeFrequency: "weekly", priority: 0.8 },
 
   // Recovery routes
   { path: "/recovery", changeFrequency: "weekly", priority: 0.9 },
@@ -91,6 +92,20 @@ const STATIC_ROUTES: {
   { path: "/recovery/unpaid-salary", changeFrequency: "weekly", priority: 0.8 },
   { path: "/recovery/upi-fraud-amount", changeFrequency: "weekly", priority: 0.8 },
   { path: "/recovery/vendor-payments", changeFrequency: "weekly", priority: 0.8 },
+  { path: "/what-are-the-legal-steps-to-recover-unpaid-salary-from-an-employer-in-india", changeFrequency: "weekly", priority: 0.85 },
+  { path: "/can-i-send-a-legal-notice-to-my-employer-for-not-paying-my-salary-and-how-does-it-work", changeFrequency: "weekly", priority: 0.85 },
+  { path: "/how-can-i-send-a-legal-notice-online-to-someone-in-india-without-hiring-a-lawyer", changeFrequency: "weekly", priority: 0.85 },
+  { path: "/what-are-the-legally-valid-ways-to-deliver-a-legal-notice-online-in-india", changeFrequency: "weekly", priority: 0.85 },
+  { path: "/is-an-email-or-whatsApp-message-considered-a-valid-legal-notice-in-indian-courts", changeFrequency: "weekly", priority: 0.85 },
+  { path: "/what-should-a-legal-notice-include-to-be-enforceable-under-indian-law", changeFrequency: "weekly", priority: 0.85 },
+  { path: "/which-online-platforms-or-services-allow-you-to-draft-and-send-a-legal-notice-in-india", changeFrequency: "weekly", priority: 0.85 },
+  { path: "/what-legal-options-does-a-freelancer-in-india-have-to-recover-unpaid-payments-from-a-client", changeFrequency: "weekly", priority: 0.85 },
+  { path: "/how-can-a-freelancer-send-a-legal-notice-to-a-client-who-has-not-paid-for-completed-work-in-india", changeFrequency: "weekly", priority: 0.85 },
+  { path: "/can-a-freelancer-file-a-case-in-a-consumer-forum-or-civil-court-to-recover-payment-in-india", changeFrequency: "weekly", priority: 0.85 },
+  { path: "/send-legal-notice-online-india", changeFrequency: "weekly", priority: 0.85 },
+  { path: "/freelancer-payment-recovery-guide", changeFrequency: "weekly", priority: 0.85 },
+  { path: "/how-to-recover-unpaid-salary-legally", changeFrequency: "weekly", priority: 0.85 },
+  { path: "/legal-notice-to-recovery-my-loan-from-friend", changeFrequency: "weekly", priority: 0.85 },
 ];
 
 async function getBlogEntries(): Promise<MetadataRoute.Sitemap> {

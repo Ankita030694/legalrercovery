@@ -32,6 +32,23 @@ const legalLinks = [
   { label: "Terms & Conditions", href: "/terms-and-conditions" },
 ];
 
+const guideLinks = [
+  { label: "Send Legal Notice Online", href: "/send-legal-notice-online-india" },
+  { label: "Freelancer Payment Recovery", href: "/freelancer-payment-recovery-guide" },
+  { label: "Recover Unpaid Salary", href: "/how-to-recover-unpaid-salary-legally" },
+  { label: "Friendly Loan Recovery", href: "/legal-notice-to-recovery-my-loan-from-friend" },
+  { label: "Steps to Recover Salary", href: "/what-are-the-legal-steps-to-recover-unpaid-salary-from-an-employer-in-india" },
+  { label: "Notice for Unpaid Salary", href: "/can-i-send-a-legal-notice-to-my-employer-for-not-paying-my-salary-and-how-does-it-work" },
+  { label: "DIY Legal Notice Guide", href: "/how-can-i-send-a-legal-notice-online-to-someone-in-india-without-hiring-a-lawyer" },
+  { label: "Online Notice Delivery", href: "/what-are-the-legally-valid-ways-to-deliver-a-legal-notice-online-in-india" },
+  { label: "WhatsApp & Email Notice Validity", href: "/is-an-email-or-whatsApp-message-considered-a-valid-legal-notice-in-indian-courts" },
+  { label: "Enforceable Notice Requirements", href: "/what-should-a-legal-notice-include-to-be-enforceable-under-indian-law" },
+  { label: "Online Notice Platforms", href: "/which-online-platforms-or-services-allow-you-to-draft-and-send-a-legal-notice-in-india" },
+  { label: "Freelancer Recovery Options", href: "/what-legal-options-does-a-freelancer-in-india-have-to-recover-unpaid-payments-from-a-client" },
+  { label: "Send Notice as Freelancer", href: "/how-can-a-freelancer-send-a-legal-notice-to-a-client-who-has-not-paid-for-completed-work-in-india" },
+  { label: "Freelancer Forum Choice", href: "/can-a-freelancer-file-a-case-in-a-consumer-forum-or-civil-court-to-recover-payment-in-india" },
+];
+
 export default function Footer() {
   const pathname = usePathname();
 
@@ -121,7 +138,7 @@ export default function Footer() {
           </div>
 
           {/* Links Cols */}
-          <div className="lg:col-span-7 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 lg:gap-12">
+          <div className="lg:col-span-7 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 lg:gap-8">
             
             {/* Navigation Col */}
             <div className="flex flex-col">
@@ -142,6 +159,20 @@ export default function Footer() {
               <h4 className="text-white font-extrabold text-[13px] uppercase tracking-wider mb-5">Services</h4>
               <ul className="flex flex-col gap-3.5">
                 {serviceLinks.map((link, idx) => (
+                  <li key={idx}>
+                    <a href={link.href} className="text-[12.5px] font-bold text-gray-400 hover:text-white hover:translate-x-0.5 transition-all inline-block cursor-pointer">
+                      {link.label}
+                    </a>
+                  </li>
+                ))}
+              </ul>
+            </div>
+
+            {/* Guides Col */}
+            <div className="flex flex-col">
+              <h4 className="text-white font-extrabold text-[13px] uppercase tracking-wider mb-5">Guides</h4>
+              <ul className="flex flex-col gap-3.5">
+                {guideLinks.map((link, idx) => (
                   <li key={idx}>
                     <a href={link.href} className="text-[12.5px] font-bold text-gray-400 hover:text-white hover:translate-x-0.5 transition-all inline-block cursor-pointer">
                       {link.label}
