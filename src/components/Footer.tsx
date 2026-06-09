@@ -33,20 +33,25 @@ const legalLinks = [
 ];
 
 const guideLinks = [
-  { label: "Send Legal Notice Online", href: "/send-legal-notice-online-india" },
-  { label: "Freelancer Payment Recovery", href: "/freelancer-payment-recovery-guide" },
-  { label: "Recover Unpaid Salary", href: "/how-to-recover-unpaid-salary-legally" },
-  { label: "Friendly Loan Recovery", href: "/legal-notice-to-recovery-my-loan-from-friend" },
-  { label: "Steps to Recover Salary", href: "/what-are-the-legal-steps-to-recover-unpaid-salary-from-an-employer-in-india" },
-  { label: "Notice for Unpaid Salary", href: "/can-i-send-a-legal-notice-to-my-employer-for-not-paying-my-salary-and-how-does-it-work" },
-  { label: "DIY Legal Notice Guide", href: "/how-can-i-send-a-legal-notice-online-to-someone-in-india-without-hiring-a-lawyer" },
-  { label: "Online Notice Delivery", href: "/what-are-the-legally-valid-ways-to-deliver-a-legal-notice-online-in-india" },
-  { label: "WhatsApp & Email Notice Validity", href: "/is-an-email-or-whatsApp-message-considered-a-valid-legal-notice-in-indian-courts" },
-  { label: "Enforceable Notice Requirements", href: "/what-should-a-legal-notice-include-to-be-enforceable-under-indian-law" },
-  { label: "Online Notice Platforms", href: "/which-online-platforms-or-services-allow-you-to-draft-and-send-a-legal-notice-in-india" },
-  { label: "Freelancer Recovery Options", href: "/what-legal-options-does-a-freelancer-in-india-have-to-recover-unpaid-payments-from-a-client" },
-  { label: "Send Notice as Freelancer", href: "/how-can-a-freelancer-send-a-legal-notice-to-a-client-who-has-not-paid-for-completed-work-in-india" },
-  { label: "Freelancer Forum Choice", href: "/can-a-freelancer-file-a-case-in-a-consumer-forum-or-civil-court-to-recover-payment-in-india" },
+  { label: "How to Send a Legal Notice Online in India", href: "/send-legal-notice-online-india" },
+  { label: "Freelancer Payment Recovery Options & Legal Actions", href: "/freelancer-payment-recovery-guide" },
+  { label: "How to Recover Unpaid Salary from Employer Legally", href: "/how-to-recover-unpaid-salary-legally" },
+  { label: "Legal Notice to Recover Loan Amount Given to Friend", href: "/legal-notice-to-recovery-my-loan-from-friend" },
+  { label: "What are the Legal Steps to Recover Unpaid Salary?", href: "/what-are-the-legal-steps-to-recover-unpaid-salary-from-an-employer-in-india" },
+  { label: "Can I Send a Legal Notice to My Employer for Salary?", href: "/can-i-send-a-legal-notice-to-my-employer-for-not-paying-my-salary-and-how-does-it-work" },
+  { label: "How to Send a Legal Notice Without Hiring a Lawyer", href: "/how-can-i-send-a-legal-notice-online-to-someone-in-india-without-hiring-a-lawyer" },
+  { label: "Valid Ways to Deliver a Legal Notice Online in India", href: "/what-are-the-legally-valid-ways-to-deliver-a-legal-notice-online-in-india" },
+  { label: "Is WhatsApp or Email a Valid Legal Notice in Court?", href: "/is-an-email-or-whatsApp-message-considered-a-valid-legal-notice-in-indian-courts" },
+  { label: "What Should a Legal Notice Include to Be Enforceable?", href: "/what-should-a-legal-notice-include-to-be-enforceable-under-indian-law" },
+  { label: "Which Online Platforms Allow You to Send a Legal Notice?", href: "/which-online-platforms-or-services-allow-you-to-draft-and-send-a-legal-notice-in-india" },
+  { label: "What Legal Options Does a Freelancer Have to Recover Dues?", href: "/what-legal-options-does-a-freelancer-in-india-have-to-recover-unpaid-payments-from-a-client" },
+  { label: "How Can a Freelancer Send a Legal Notice to a Client?", href: "/how-can-a-freelancer-send-a-legal-notice-to-a-client-who-has-not-paid-for-completed-work-in-india" },
+  { label: "Can a Freelancer File a Case in a Consumer Forum?", href: "/can-a-freelancer-file-a-case-in-a-consumer-forum-or-civil-court-to-recover-payment-in-india" },
+  { label: "What Evidence Should a Freelancer Collect for Recovery?", href: "/what-evidence-should-a-freelancer-collect-to-strengthen-a-payment-recovery-case-against-a-client" },
+  { label: "How Does the MSME Act Help Freelancers Recover Payments?", href: "/how-does-the-micro-small-and-medium-enterprises-act-help-freelancers-recover-overdue-payments-in-india" },
+  { label: "Steps to Recover Security Deposit from Refusing Landlord", href: "/what-are-the-legal-steps-to-recover-a-security-deposit-from-a-landlord-who-is-refusing-to-return-it-in-india" },
+  { label: "Can I Send a Legal Notice to Landlord for Deposit?", href: "/can-i-send-a-legal-notice-to-my-landlord-for-not-refunding-the-security-deposit-after-vacating-the-property" },
+  { label: "How to Send a Legal Notice to Friend for Personal Loan", href: "/how-do-i-send-a-legal-notice-to-a-friend-who-is-not-repaying-my-personal-loan-in-india" },
 ];
 
 export default function Footer() {
@@ -64,17 +69,17 @@ export default function Footer() {
 
       <div className="max-w-7xl mx-auto">
         {/* Top Grid */}
-        <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-start mb-10 md:mb-16">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-12 lg:gap-16 items-start mb-10 md:mb-16">
           
           {/* Brand Col */}
-          <div className="lg:col-span-5 flex flex-col items-start">
+          <div className="flex flex-col items-start">
             {/* Logo */}
             <a href="/" className="flex items-center mb-6 select-none cursor-pointer">
               <img src="/lrwhite.svg" alt="LegalRecovery" className="h-8 sm:h-9 w-auto object-contain" />
             </a>
 
             {/* Description */}
-            <p className="text-[13px] text-gray-400 font-medium leading-[1.6] mb-6 max-w-sm select-text">
+            <p className="text-[13px] text-gray-400 font-medium leading-[1.6] mb-6 max-w-sm select-text text-left">
               India's leading automated legal and money recovery engine. Empowering thousands of individuals and organizations to recover their stuck funds legally, efficiently, and securely.
             </p>
 
@@ -109,11 +114,11 @@ export default function Footer() {
                 { name: "Perplexity", logo: "/ai/perplexity-logo-svg_svgstack_com_37421779345999.svg", h: "21px", url: `https://www.perplexity.ai/?q=${encodeURIComponent(AI_PROMPT)}` },
               ];
               return (
-                <div className="mt-8 select-none">
+                <div className="mt-8 select-none text-left">
                   <span className="text-[10px] font-extrabold uppercase tracking-wider text-gray-500 block mb-3">
                     Powered by Advanced AI Engines
                   </span>
-                  <div className="flex flex-wrap items-center gap-4 bg-gray-800/10 border border-gray-800/40 rounded-xl p-3 max-w-[345px]">
+                  <div className="flex flex-wrap items-center gap-4 bg-gray-800/10 border border-gray-800/40 rounded-xl p-3 max-w-full">
                     {AI_LOGOS.map((ai) => (
                       <a
                         key={ai.name}
@@ -137,67 +142,65 @@ export default function Footer() {
             })()}
           </div>
 
-          {/* Links Cols */}
-          <div className="lg:col-span-7 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 lg:gap-8">
-            
-            {/* Navigation Col */}
-            <div className="flex flex-col">
-              <h4 className="text-white font-extrabold text-[13px] uppercase tracking-wider mb-5">Navigation</h4>
-              <ul className="flex flex-col gap-3.5">
-                {navLinks.map((link, idx) => (
-                  <li key={idx} className="flex items-center gap-1.5">
-                    <a href={link.href} className="text-[12.5px] font-bold text-gray-400 hover:text-white hover:translate-x-0.5 transition-all inline-block cursor-pointer">
-                      {link.label}
-                    </a>
-                  </li>
-                ))}
-              </ul>
-            </div>
-
-            {/* Services Col */}
-            <div className="flex flex-col">
-              <h4 className="text-white font-extrabold text-[13px] uppercase tracking-wider mb-5">Services</h4>
-              <ul className="flex flex-col gap-3.5">
-                {serviceLinks.map((link, idx) => (
-                  <li key={idx}>
-                    <a href={link.href} className="text-[12.5px] font-bold text-gray-400 hover:text-white hover:translate-x-0.5 transition-all inline-block cursor-pointer">
-                      {link.label}
-                    </a>
-                  </li>
-                ))}
-              </ul>
-            </div>
-
-            {/* Guides Col */}
-            <div className="flex flex-col">
-              <h4 className="text-white font-extrabold text-[13px] uppercase tracking-wider mb-5">Guides</h4>
-              <ul className="flex flex-col gap-3.5">
-                {guideLinks.map((link, idx) => (
-                  <li key={idx}>
-                    <a href={link.href} className="text-[12.5px] font-bold text-gray-400 hover:text-white hover:translate-x-0.5 transition-all inline-block cursor-pointer">
-                      {link.label}
-                    </a>
-                  </li>
-                ))}
-              </ul>
-            </div>
-
-            {/* Legal Col */}
-            <div className="flex flex-col">
-              <h4 className="text-white font-extrabold text-[13px] uppercase tracking-wider mb-5">Legal</h4>
-              <ul className="flex flex-col gap-3.5">
-                {legalLinks.map((link, idx) => (
-                  <li key={idx}>
-                    <a href={link.href} className="text-[12.5px] font-bold text-gray-400 hover:text-white hover:translate-x-0.5 transition-all inline-block cursor-pointer">
-                      {link.label}
-                    </a>
-                  </li>
-                ))}
-              </ul>
-            </div>
-
+          {/* Navigation Col */}
+          <div className="flex flex-col text-left">
+            <h4 className="text-white font-extrabold text-[13px] uppercase tracking-wider mb-5">Navigation</h4>
+            <ul className="flex flex-col gap-3.5">
+              {navLinks.map((link, idx) => (
+                <li key={idx} className="flex items-center gap-1.5">
+                  <a href={link.href} className="text-[12.5px] font-bold text-gray-400 hover:text-white hover:translate-x-0.5 transition-all inline-block cursor-pointer">
+                    {link.label}
+                  </a>
+                </li>
+              ))}
+            </ul>
           </div>
 
+          {/* Services Col */}
+          <div className="flex flex-col text-left">
+            <h4 className="text-white font-extrabold text-[13px] uppercase tracking-wider mb-5">Services</h4>
+            <ul className="flex flex-col gap-3.5">
+              {serviceLinks.map((link, idx) => (
+                <li key={idx}>
+                  <a href={link.href} className="text-[12.5px] font-bold text-gray-400 hover:text-white hover:translate-x-0.5 transition-all inline-block cursor-pointer">
+                    {link.label}
+                  </a>
+                </li>
+              ))}
+            </ul>
+          </div>
+
+          {/* Legal Col */}
+          <div className="flex flex-col text-left">
+            <h4 className="text-white font-extrabold text-[13px] uppercase tracking-wider mb-5">Legal</h4>
+            <ul className="flex flex-col gap-3.5">
+              {legalLinks.map((link, idx) => (
+                <li key={idx}>
+                  <a href={link.href} className="text-[12.5px] font-bold text-gray-400 hover:text-white hover:translate-x-0.5 transition-all inline-block cursor-pointer">
+                    {link.label}
+                  </a>
+                </li>
+              ))}
+            </ul>
+          </div>
+
+        </div>
+
+        {/* Divider */}
+        <div className="w-full h-px bg-gray-800/40 my-10" />
+
+        {/* Queries Row */}
+        <div className="text-left mb-10">
+          <h4 className="text-white font-extrabold text-[13px] uppercase tracking-wider mb-6">Queries</h4>
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-12 lg:gap-16 gap-y-3.5">
+            {guideLinks.map((link, idx) => (
+              <div key={idx} className="flex flex-col">
+                <a href={link.href} className="text-[12.5px] font-bold text-gray-400 hover:text-white hover:translate-x-0.5 transition-all inline-block cursor-pointer">
+                  {link.label}
+                </a>
+              </div>
+            ))}
+          </div>
         </div>
 
         {/* Divider */}
