@@ -204,6 +204,8 @@ export default function RecoveryClient() {
       <div className="absolute top-0 right-0 w-[500px] h-[500px] red-radial-glow -z-10 pointer-events-none rounded-full blur-[120px] opacity-25" />
       <div className="absolute bottom-0 left-0 w-[400px] h-[400px] red-radial-glow -z-10 pointer-events-none rounded-full blur-[100px] opacity-15" />
 
+      <div className="max-w-7xl mx-auto flex flex-col gap-10">
+
         {/* Header Title */}
         <div className="text-center md:text-left select-text">
           <h1 className="text-2xl sm:text-3xl font-black text-[#111827] tracking-tight">
