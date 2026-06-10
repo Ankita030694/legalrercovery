@@ -102,6 +102,7 @@ export default function BlogPage() {
               category: inferCategory(item),
               title: item.title || "Untitled Article",
               date: formattedDate,
+              rawDate: dateStr ? new Date(dateStr) : new Date(0),
               readTime: `${readTimeMinutes} min read`,
               image: imageUrl,
               excerpt: cleanExcerpt,
@@ -109,6 +110,14 @@ export default function BlogPage() {
               author: "Team LegalRecovery",
             };
           });
+
+          // Sort blogs in descending order of date (newest first)
+          mappedBlogs.sort((a: any, b: any) => {
+            const timeA = a.rawDate instanceof Date && !isNaN(a.rawDate.getTime()) ? a.rawDate.getTime() : 0;
+            const timeB = b.rawDate instanceof Date && !isNaN(b.rawDate.getTime()) ? b.rawDate.getTime() : 0;
+            return timeB - timeA;
+          });
+
           setBlogs(mappedBlogs);
         }
       } catch (error) {
