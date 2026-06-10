@@ -320,7 +320,7 @@ export default function NIActAmountClient() {
                       With the transition of criminal laws in India to the Bharatiya Nyaya Sanhita (BNS) and the Bharatiya Nagarik Suraksha Sanhita (BNSS), 2023, it is critical to note that Section 138 of the NI Act remains unchanged. Since the NI Act is a specialized Act (lex specialis), its specific provisions and procedures override general criminal laws. This means that case filings, notices, and hearings follow the Negotiable Instruments Act, while procedural steps like the service of summons and warrant execution leverage modern tools outlined in the BNSS, such as electronic summons dispatch.
                     </p>
                     <p className="text-sm md:text-base leading-relaxed">
-                      The statutory framework of Section 138 is designed to protect lenders and creditors. The law applies if a cheque is drawn by a person on an account maintained by them with a banker for payment of any amount of money to another person for the discharge, in whole or in part, of any **legally enforceable debt or other liability**. If the cheque is returned by the bank unpaid because the amount of money standing to the credit of that account is insufficient to honor the cheque or it exceeds the amount arranged to be paid, the drawer is deemed to have committed a criminal offense.
+                      The statutory framework of Section 138 is designed to protect lenders and creditors. The law applies if a cheque is drawn by a person on an account maintained by them with a banker for payment of any amount of money to another person for the discharge, in whole or in part, of any <strong>legally enforceable debt or other liability</strong>. If the cheque is returned by the bank unpaid because the amount of money standing to the credit of that account is insufficient to honor the cheque or it exceeds the amount arranged to be paid, the drawer is deemed to have committed a criminal offense.
                     </p>
                     <p className="text-sm md:text-base leading-relaxed">
                       At LegalRecovery, our legal panel specializes in guiding clients through the complex procedural steps of cheque bounce recoveries. We ensure that your evidence, starting with the Cheque Return Memo, is correctly compiled and that all legal notices are served within the strict timelines mandated by law, maximizing your chances of recovery.
@@ -345,14 +345,14 @@ export default function NIActAmountClient() {
                       <div>
                         <h3 className="text-base md:text-lg font-black text-slate-900 mb-2">1. Obtaining the Cheque Return Memo</h3>
                         <p className="text-sm text-slate-650 leading-relaxed">
-                          When a cheque is presented and bounces, the clearing bank returns the physical cheque along with a **Cheque Return Memo**. This memo contains the date of presentation, the date of return, and the specific reason for dishonor (e.g., 'insufficient funds'). This return memo is the starting point for your legal action.
+                          When a cheque is presented and bounces, the clearing bank returns the physical cheque along with a <strong>Cheque Return Memo</strong>. This memo contains the date of presentation, the date of return, and the specific reason for dishonor (e.g., 'insufficient funds'). This return memo is the starting point for your legal action.
                         </p>
                       </div>
 
                       <div>
                         <h3 className="text-base md:text-lg font-black text-slate-900 mb-2">2. Sending the Statutory Notice (Within 30 Days)</h3>
                         <p className="text-sm text-slate-650 leading-relaxed">
-                          You must send a formal written notice to the drawer within **30 days** of receiving the return memo. The notice must demand the payment of the cheque amount in full.
+                          You must send a formal written notice to the drawer within <strong>30 days</strong> of receiving the return memo. The notice must demand the payment of the cheque amount in full.
                         </p>
                       </div>
 
@@ -361,14 +361,14 @@ export default function NIActAmountClient() {
                           The 15-Day Payment Window
                         </h3>
                         <p className="text-sm text-red-900 leading-relaxed">
-                          Once the legal notice is delivered, the borrower has exactly **15 days** to clear the dues. If they pay the full cheque amount within this 15-day window, no offense is committed, and you cannot file a criminal case. However, if they fail to clear the dues by the 15th day, the criminal offense is complete on the 16th day.
+                          Once the legal notice is delivered, the borrower has exactly <strong>15 days</strong> to clear the dues. If they pay the full cheque amount within this 15-day window, no offense is committed, and you cannot file a criminal case. However, if they fail to clear the dues by the 15th day, the criminal offense is complete on the 16th day.
                         </p>
                       </div>
 
                       <div>
                         <h3 className="text-base md:text-lg font-black text-slate-900 mb-2">3. Filing the Criminal Case (Within 30 Days)</h3>
                         <p className="text-sm text-slate-650 leading-relaxed">
-                          If the borrower ignores the notice or refuses to pay, you must file a formal criminal complaint in the Magistrate&apos;s Court within **30 days** from the date the 15-day payment window expired.
+                          If the borrower ignores the notice or refuses to pay, you must file a formal criminal complaint in the Magistrate&apos;s Court within <strong>30 days</strong> from the date the 15-day payment window expired.
                         </p>
                       </div>
                     </div>
@@ -409,7 +409,7 @@ export default function NIActAmountClient() {
                       If the 15-day demand period expires and the borrower has not paid the outstanding amount, a formal criminal complaint must be filed. This is submitted before the Metropolitan Magistrate (in metro cities) or Judicial Magistrate First Class (JMFC) having jurisdiction.
                     </p>
                     <p className="text-sm md:text-base leading-relaxed">
-                      Under the **Negotiable Instruments (Amendment) Act, 2015**, the territorial jurisdiction is determined by the bank branch where you (the payee) maintain your account and present the cheque. This is highly advantageous, as it allows you to file the case in your own local court rather than traveling to the borrower&apos;s city.
+                      Under the <strong>Negotiable Instruments (Amendment) Act, 2015</strong>, the territorial jurisdiction is determined by the bank branch where you (the payee) maintain your account and present the cheque. This is highly advantageous, as it allows you to file the case in your own local court rather than traveling to the borrower&apos;s city.
                     </p>
                     <p className="text-sm md:text-base leading-relaxed">
                       The filing process involves:
@@ -429,10 +429,10 @@ export default function NIActAmountClient() {
                   </h2>
                   <div className="prose prose-base max-w-none text-slate-650 space-y-6">
                     <p className="text-sm md:text-base leading-relaxed">
-                      A Section 138 action is a criminal proceeding aimed at punishing the drawer. To recover the actual money, you can also initiate parallel civil recovery proceedings. The most effective civil remedy for a bounced cheque is a **Summary Suit** under **Order 37 of the Code of Civil Procedure (CPC), 1908**.
+                      A Section 138 action is a criminal proceeding aimed at punishing the drawer. To recover the actual money, you can also initiate parallel civil recovery proceedings. The most effective civil remedy for a bounced cheque is a <strong>Summary Suit</strong> under <strong>Order 37 of the Code of Civil Procedure (CPC), 1908</strong>.
                     </p>
                     <p className="text-sm md:text-base leading-relaxed">
-                      A Summary Suit is a fast-track civil trial. Unlike a regular civil suit where the borrower can delay hearings for years, Order 37 restricts the borrower&apos;s defense. Upon receiving summons, the borrower must apply for **&quot;Leave to Defend&quot;** within 10 days. 
+                      A Summary Suit is a fast-track civil trial. Unlike a regular civil suit where the borrower can delay hearings for years, Order 37 restricts the borrower&apos;s defense. Upon receiving summons, the borrower must apply for <strong>&quot;Leave to Defend&quot;</strong> within 10 days. 
                     </p>
                     <p className="text-sm md:text-base leading-relaxed">
                       The court will inspect their defense. If it is found to be a sham or a delaying tactic, the court will deny leave and pass a decree in your favor. If conditional leave is granted, the court will order the borrower to deposit the disputed amount in the court registry as a condition to contest the case, giving you significant leverage.
@@ -450,8 +450,8 @@ export default function NIActAmountClient() {
                       To protect the interest of complainants and prevent borrowers from delaying trials, the Negotiable Instruments Act includes provisions for interim relief:
                     </p>
                     <ul className="list-disc pl-6 space-y-3 text-sm text-slate-650">
-                      <li><strong>Interim Compensation (Section 143A):</strong> Under this section, the court can order the drawer of the cheque to pay up to **20%** of the cheque amount as interim compensation to the complainant. This is typically ordered at the stage of framing charges. The borrower must pay this amount within 60 days of the court order.</li>
-                      <li><strong>Conviction Penalties:</strong> If convicted at the end of the trial, the borrower faces up to 2 years of imprisonment, a fine of up to **double the cheque amount**, or both. The court usually orders the fine amount to be paid directly to the complainant as compensation.</li>
+                      <li><strong>Interim Compensation (Section 143A):</strong> Under this section, the court can order the drawer of the cheque to pay up to <strong>20%</strong> of the cheque amount as interim compensation to the complainant. This is typically ordered at the stage of framing charges. The borrower must pay this amount within 60 days of the court order.</li>
+                      <li><strong>Conviction Penalties:</strong> If convicted at the end of the trial, the borrower faces up to 2 years of imprisonment, a fine of up to <strong>double the cheque amount</strong>, or both. The court usually orders the fine amount to be paid directly to the complainant as compensation.</li>
                     </ul>
                     <div className="bg-red-50/40 p-6 rounded-2xl border border-red-150">
                       <p className="text-sm text-red-900 leading-relaxed font-semibold">

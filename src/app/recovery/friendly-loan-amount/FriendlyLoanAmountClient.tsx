@@ -317,10 +317,10 @@ export default function FriendlyLoanAmountClient() {
                       Lending a friendly loan is one of the most common ways individuals assist each other during emergencies. Whether it is a close colleague needing money for an immediate home purchase down payment, a relative facing medical expenses, or a friend starting a business, loans given on trust are frequent. In almost all such transactions, no formal contract or loan agreement is signed. The entire transaction is completed on verbal understanding, bank transfer, or UPI. However, when the borrower defaults, lenders often worry that their lack of a formal written agreement makes the money unrecoverable.
                     </p>
                     <p className="text-sm md:text-base leading-relaxed">
-                      Under Indian law, this fear is groundless. According to **Section 10 of the Indian Contract Act, 1872**, oral agreements are fully valid and enforceable. The statute does not mandate a written format for an agreement to become a contract, as long as there is mutual consent, competent parties, a lawful object, and lawful consideration.
+                      Under Indian law, this fear is groundless. According to <strong>Section 10 of the Indian Contract Act, 1872</strong>, oral agreements are fully valid and enforceable. The statute does not mandate a written format for an agreement to become a contract, as long as there is mutual consent, competent parties, a lawful object, and lawful consideration.
                     </p>
                     <p className="text-sm md:text-base leading-relaxed">
-                      The Supreme Court of India in **Alka Bose v. Parmatma Devi (2009)** and the High Courts in numerous decisions have confirmed that oral agreements carry the same legal validity as written contracts. The primary challenge is not the legal standing of the oral contract, but rather the **burden of proof**. Under Section 101 of the Evidence Act (now Bharatiya Sakshya Adhiniyam, 2023), the burden lies on the person alleging the existence of a debt to prove it. Consequently, the lender must produce financial records, bank transactions, and digital communications to show that the money was transferred as a loan (a debt to be repaid) rather than a gift, donation, or business investment.
+                      The Supreme Court of India in <strong>Alka Bose v. Parmatma Devi (2009)</strong> and the High Courts in numerous decisions have confirmed that oral agreements carry the same legal validity as written contracts. The primary challenge is not the legal standing of the oral contract, but rather the <strong>burden of proof</strong>. Under Section 101 of the Evidence Act (now Bharatiya Sakshya Adhiniyam, 2023), the burden lies on the person alleging the existence of a debt to prove it. Consequently, the lender must produce financial records, bank transactions, and digital communications to show that the money was transferred as a loan (a debt to be repaid) rather than a gift, donation, or business investment.
                     </p>
                     <p className="text-sm md:text-base leading-relaxed">
                       Our legal recovery experts at LegalRecovery have years of experience handling friendly loan disputes. We reconstruct the transaction timeline using bank logs, UPI histories, WhatsApp messages, and emails. By compiling this evidence, we establish a robust claim that shifts the burden of proof to the borrower, forcing them to justify why the outstanding amount should not be returned.
@@ -366,7 +366,7 @@ export default function FriendlyLoanAmountClient() {
                           Electronic Evidence Admissibility under BSA Section 63
                         </h3>
                         <p className="text-sm text-red-900 leading-relaxed">
-                          Under **Section 63 of the Bharatiya Sakshya Adhiniyam, 2023** (which replaced the old Section 65B of the Indian Evidence Act), digital logs are admissible in court if they are accompanied by a digital certification. This certificate verifies that the prints or logs were retrieved from a functioning system without data manipulation. LegalRecovery provides automatic assistance in drafting this certificate for our clients.
+                          Under <strong>Section 63 of the Bharatiya Sakshya Adhiniyam, 2023</strong> (which replaced the old Section 65B of the Indian Evidence Act), digital logs are admissible in court if they are accompanied by a digital certification. This certificate verifies that the prints or logs were retrieved from a functioning system without data manipulation. LegalRecovery provides automatic assistance in drafting this certificate for our clients.
                         </p>
                       </div>
 
@@ -394,7 +394,7 @@ export default function FriendlyLoanAmountClient() {
                   </h2>
                   <div className="prose prose-base max-w-none text-slate-650 space-y-6">
                     <p className="text-sm md:text-base leading-relaxed">
-                      Before initiating a formal lawsuit, serving an **Advocate-Signed Legal Notice** is highly recommended. It serves as a final statutory warning, giving the borrower a strict timeline (typically 15 days) to return the loan amount.
+                      Before initiating a formal lawsuit, serving an <strong>Advocate-Signed Legal Notice</strong> is highly recommended. It serves as a final statutory warning, giving the borrower a strict timeline (typically 15 days) to return the loan amount.
                     </p>
                     <p className="text-sm md:text-base leading-relaxed">
                       A professional legal notice serves several purposes:
@@ -402,7 +402,7 @@ export default function FriendlyLoanAmountClient() {
                     <ul className="list-disc pl-6 space-y-2 text-sm text-slate-650">
                       <li><strong>Documents the Claim:</strong> It outlines the transaction timeline, transaction numbers, and terms, creating an official record of default.</li>
                       <li><strong>Puts Pressure on the Borrower:</strong> Receiving a physical notice on a law firm&apos;s letterhead shows the borrower that you are serious about taking legal action.</li>
-                      <li><strong>Triggers Pre-Litigation Settlement:</strong> Approximately **80-85%** of friendly loan disputes are resolved at the legal notice stage, as borrowers prefer settling the dues to avoid court costs and public records.</li>
+                      <li><strong>Triggers Pre-Litigation Settlement:</strong> Approximately <strong>80-85%</strong> of friendly loan disputes are resolved at the legal notice stage, as borrowers prefer settling the dues to avoid court costs and public records.</li>
                       <li><strong>Demands Interest:</strong> The notice formally claims the principal amount along with delayed interest (9% to 18% per annum) and the costs of the notice.</li>
                     </ul>
                     <p className="text-sm md:text-base leading-relaxed">
@@ -418,16 +418,16 @@ export default function FriendlyLoanAmountClient() {
                   </h2>
                   <div className="prose prose-base max-w-none text-slate-650 space-y-6">
                     <p className="text-sm md:text-base leading-relaxed">
-                      If the borrower fails to pay after receiving the notice, you can file a **Summary Suit** under **Order 37 of the Code of Civil Procedure (CPC), 1908**. This is a fast-track civil recovery proceeding.
+                      If the borrower fails to pay after receiving the notice, you can file a <strong>Summary Suit</strong> under <strong>Order 37 of the Code of Civil Procedure (CPC), 1908</strong>. This is a fast-track civil recovery proceeding.
                     </p>
                     <p className="text-sm md:text-base leading-relaxed">
-                      Unlike an ordinary recovery suit that can take years, a Summary Suit restricts the defendant&apos;s ability to delay. Once the summons are served, the borrower must apply to the court for **&quot;Leave to Defend&quot;** within 10 days. 
+                      Unlike an ordinary recovery suit that can take years, a Summary Suit restricts the defendant&apos;s ability to delay. Once the summons are served, the borrower must apply to the court for <strong>&quot;Leave to Defend&quot;</strong> within 10 days. 
                     </p>
                     <p className="text-sm md:text-base leading-relaxed">
                       The borrower must satisfy the judge that they have a genuine, triable defense. If their defense is found to be a sham, vague, or intended to delay the trial, the court will dismiss the application and pass a decree in your favor. 
                     </p>
                     <p className="text-sm md:text-base leading-relaxed">
-                      Courts in landmark cases like **Sandeep Kohli v. Ranjit Singh (2018)** have ruled that when bank transfer sheets are coupled with digital acknowledgments of a debt (such as WhatsApp messages, emails, or UPI logs), they collectively constitute a written agreement for a liquidated sum of money, making a Summary Suit under Order 37 admissible.
+                      Courts in landmark cases like <strong>Sandeep Kohli v. Ranjit Singh (2018)</strong> have ruled that when bank transfer sheets are coupled with digital acknowledgments of a debt (such as WhatsApp messages, emails, or UPI logs), they collectively constitute a written agreement for a liquidated sum of money, making a Summary Suit under Order 37 admissible.
                     </p>
                   </div>
                 </section>
@@ -462,7 +462,7 @@ export default function FriendlyLoanAmountClient() {
                           2. Criminal Cheating & Breach of Trust under BNS
                         </h3>
                         <p className="text-sm text-slate-650 leading-relaxed">
-                          If there is no cheque, you can still file a criminal complaint under the **Bharatiya Nyaya Sanhita, 2023 (BNS)** (which replaced the Indian Penal Code, IPC) if you can prove dishonest intent.
+                          If there is no cheque, you can still file a criminal complaint under the <strong>Bharatiya Nyaya Sanhita, 2023 (BNS)</strong> (which replaced the Indian Penal Code, IPC) if you can prove dishonest intent.
                         </p>
                         <ul className="list-disc pl-6 space-y-2 text-sm text-slate-650">
                           <li><strong>BNS Section 318 (formerly Section 420 IPC - Cheating):</strong> If the borrower induced you to give them money based on a false pretext (e.g., lying about a medical emergency, promising to buy a property that didn't exist, or providing fake bank proofs), they have committed the offense of cheating. This is punishable by up to 7 years of imprisonment.</li>
@@ -480,14 +480,14 @@ export default function FriendlyLoanAmountClient() {
                   </h2>
                   <div className="prose prose-base max-w-none text-slate-650 space-y-6">
                     <p className="text-sm md:text-base leading-relaxed">
-                      Under the **Limitation Act, 1963**, the standard limitation period to file a civil suit for friendly loan recovery is **three (3) years**. This clock starts ticking from:
+                      Under the <strong>Limitation Act, 1963</strong>, the standard limitation period to file a civil suit for friendly loan recovery is <strong>three (3) years</strong>. This clock starts ticking from:
                     </p>
                     <ul className="list-disc pl-6 space-y-2 text-sm text-slate-650">
                       <li>The date the loan was disbursed (if no repayment date was agreed).</li>
                       <li>The repayment deadline date (if a repayment date was agreed).</li>
                     </ul>
                     <p className="text-sm md:text-base leading-relaxed">
-                      **Resetting the Clock (Section 18 and Section 19):**
+                      <strong>Resetting the Clock (Section 18 and Section 19):</strong>
                     </p>
                     <p className="text-sm md:text-base leading-relaxed">
                       You can restart the three-year limitation period (giving yourself an additional 3 years) if:

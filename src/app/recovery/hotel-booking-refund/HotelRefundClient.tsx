@@ -39,7 +39,7 @@ const faqs = [
   },
   {
     question: "Is there a deadline to file a consumer complaint against a hotel in India?",
-    answer: "Under the Consumer Protection Act, 2019, you must file your consumer complaint within **two years** from the date the dispute arose (the date the booking was cancelled or the date the hotel refused the refund). It is highly recommended to serve a formal legal notice within the first few months to create a solid paper trail and try to settle the dispute out of court before filing."
+    answer: "Under the Consumer Protection Act, 2019, you must file your consumer complaint within <strong>two years</strong> from the date the dispute arose (the date the booking was cancelled or the date the hotel refused the refund). It is highly recommended to serve a formal legal notice within the first few months to create a solid paper trail and try to settle the dispute out of court before filing."
   },
   {
     question: "What documents do I need to preserve to sue a hotel for a refund?",
@@ -234,7 +234,7 @@ export default function HotelRefundClient() {
                       Lodging contracts are divided into two main structures: refundable and non-refundable bookings. If you book a refundable room, the hotel must credit the refund to your bank account if you cancel within the free cancellation window. Any delay in processing this credit, or any unauthorized deductions of service charges or processing fees, constitutes a direct breach of contract.
                     </p>
                     <p className="text-sm md:text-base leading-relaxed">
-                      For 'non-refundable' bookings, the legal position shifts in cases of **force majeure** (such as landslides, heavy rain, earthquakes, lockdowns, or severe flight cancellations that make it impossible to reach the resort). Under the doctrine of frustration of contract, if travel is prevented by an Act of God or regulatory order, the contract becomes impossible to perform. Consumer commissions have ruled that hotels cannot retain the entire booking deposit in these scenarios. They must refund the fare, deducting only actual, verifiable expenses that they had already incurred for the booking.
+                      For 'non-refundable' bookings, the legal position shifts in cases of <strong>force majeure</strong> (such as landslides, heavy rain, earthquakes, lockdowns, or severe flight cancellations that make it impossible to reach the resort). Under the doctrine of frustration of contract, if travel is prevented by an Act of God or regulatory order, the contract becomes impossible to perform. Consumer commissions have ruled that hotels cannot retain the entire booking deposit in these scenarios. They must refund the fare, deducting only actual, verifiable expenses that they had already incurred for the booking.
                     </p>
                   </div>
                 </section>

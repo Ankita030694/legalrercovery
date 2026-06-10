@@ -343,7 +343,7 @@ export default function UPIFraudClient() {
                       First, open the UPI application (PhonePe, Google Pay, BHIM, etc.) used to perform the transaction. Navigate to the Transaction History, select the disputed transaction, and use the &quot;Report Fraud&quot; or &quot;Raise Dispute&quot; option. This flags the beneficiary&apos;s UPI ID on the app&apos;s system, preventing them from siphoning more money through that platform. Keep the complaint ticket number for reference.
                     </p>
                     <p className="text-sm md:text-base leading-relaxed">
-                      Second, escalate the dispute directly to the National Payments Corporation of India (NPCI). NPCI operates a centralized **UPI Product Dispute Redressal Mechanism** on its portal (npci.org.in). You must navigate to the dispute section and input:
+                      Second, escalate the dispute directly to the National Payments Corporation of India (NPCI). NPCI operates a centralized <strong>UPI Product Dispute Redressal Mechanism</strong> on its portal (npci.org.in). You must navigate to the dispute section and input:
                     </p>
                     <ul className="list-disc pl-6 space-y-2 text-sm text-slate-650">
                       <li>The 12-digit UTR/RRN number.</li>
@@ -370,9 +370,9 @@ export default function UPIFraudClient() {
                       The circular establishes clear limits on customer liability based on who is at fault and the reporting timeline:
                     </p>
                     <ul className="list-disc pl-6 space-y-3 text-sm text-slate-650">
-                      <li><strong>Zero Customer Liability:</strong> The customer faces zero financial loss if the fraud is caused by a bank-side deficiency, system compromise, or a third-party security breach, provided the customer reports the incident to the bank within **3 working days** of receiving the transaction alert.</li>
-                      <li><strong>Limited Customer Liability:</strong> If the report is delayed and made within **4 to 7 working days**, the customer&apos;s liability is capped at a maximum of ₹5,000 for basic savings accounts, ₹10,000 for standard savings/credit cards, and ₹25,000 for credit cards with limits exceeding ₹5 Lakhs. The bank must refund the remaining amount.</li>
-                      <li><strong>Customer Negligence:</strong> If the customer shared login credentials (UPI PIN, OTP), they bear the entire loss **until the fraud is reported**. Any subsequent fraud transactions occurring after reporting must be borne entirely by the bank.</li>
+                      <li><strong>Zero Customer Liability:</strong> The customer faces zero financial loss if the fraud is caused by a bank-side deficiency, system compromise, or a third-party security breach, provided the customer reports the incident to the bank within <strong>3 working days</strong> of receiving the transaction alert.</li>
+                      <li><strong>Limited Customer Liability:</strong> If the report is delayed and made within <strong>4 to 7 working days</strong>, the customer&apos;s liability is capped at a maximum of ₹5,000 for basic savings accounts, ₹10,000 for standard savings/credit cards, and ₹25,000 for credit cards with limits exceeding ₹5 Lakhs. The bank must refund the remaining amount.</li>
+                      <li><strong>Customer Negligence:</strong> If the customer shared login credentials (UPI PIN, OTP), they bear the entire loss <strong>until the fraud is reported</strong>. Any subsequent fraud transactions occurring after reporting must be borne entirely by the bank.</li>
                     </ul>
                     <p className="text-sm md:text-base leading-relaxed">
                       Furthermore, Paragraph 8 of the RBI Master Circular mandates the provision of <strong>Shadow Credit (Temporary Reversal)</strong>. Within 10 working days of receiving a customer&apos;s unauthorized transaction report, the bank must credit the disputed amount back to the customer&apos;s account. This shadow credit ensures the customer&apos;s funds are not locked during the bank&apos;s investigation, which can take up to 90 days. If the bank fails to credit this reversal, they are in direct violation of the RBI directive.
@@ -408,7 +408,7 @@ export default function UPIFraudClient() {
                   </h2>
                   <div className="prose prose-base max-w-none text-slate-650 space-y-6">
                     <p className="text-sm md:text-base leading-relaxed">
-                      If the bank ignores your initial UPI dispute or refuses the mandatory 10-day shadow credit, serving a formal **Statutory Legal Notice** is highly effective. Drafted by our expert panel of recovery advocates, the legal notice is sent to the bank&apos;s corporate office and principal grievance officer.
+                      If the bank ignores your initial UPI dispute or refuses the mandatory 10-day shadow credit, serving a formal <strong>Statutory Legal Notice</strong> is highly effective. Drafted by our expert panel of recovery advocates, the legal notice is sent to the bank&apos;s corporate office and principal grievance officer.
                     </p>
                     <p className="text-sm md:text-base leading-relaxed">
                       The legal notice outlines:
@@ -420,7 +420,7 @@ export default function UPIFraudClient() {
                       <li>A strict 15-day deadline for the bank to reverse the disputed funds.</li>
                     </ul>
                     <p className="text-sm md:text-base leading-relaxed">
-                      If the bank fails to comply within 30 days of notice delivery, we escalate the matter to the **RBI Integrated Ombudsman** via the Centralised Receipt and Processing Centre (CRPC) on the CMS portal (cms.rbi.org.in). The Ombudsman acts as an independent arbitrator to resolve disputes and can penalize the bank for service deficiencies.
+                      If the bank fails to comply within 30 days of notice delivery, we escalate the matter to the <strong>RBI Integrated Ombudsman</strong> via the Centralised Receipt and Processing Centre (CRPC) on the CMS portal (cms.rbi.org.in). The Ombudsman acts as an independent arbitrator to resolve disputes and can penalize the bank for service deficiencies.
                     </p>
                   </div>
                 </section>
@@ -438,10 +438,10 @@ export default function UPIFraudClient() {
                       You can file a consumer complaint in the District Consumer Disputes Redressal Commission having jurisdiction over your place of residence. Consumer courts are empowered to order the bank to refund the principal amount, pay simple interest, award compensation for mental agony, and cover your legal costs.
                     </p>
                     <p className="text-sm md:text-base leading-relaxed">
-                      Additionally, under **Section 43A of the Information Technology Act, 2000**, if a bank or payment gateway is negligent in implementing reasonable security standards while handling sensitive personal data, causing wrongful loss, they are liable to pay compensation to the victim, with no statutory cap on the compensation amount.
+                      Additionally, under <strong>Section 43A of the Information Technology Act, 2000</strong>, if a bank or payment gateway is negligent in implementing reasonable security standards while handling sensitive personal data, causing wrongful loss, they are liable to pay compensation to the victim, with no statutory cap on the compensation amount.
                     </p>
                     <p className="text-sm md:text-base leading-relaxed">
-                      If the cyber cell has frozen the funds in the scammer&apos;s mule account but the bank refuses to return the money, you must obtain a formal release order. This requires filing a petition under **Section 503 of the Bharatiya Nagarik Suraksha Sanhita (BNSS), 2023** (formerly Section 457 of the CrPC) before the Judicial Magistrate, directing the bank to release the frozen funds back to your account.
+                      If the cyber cell has frozen the funds in the scammer&apos;s mule account but the bank refuses to return the money, you must obtain a formal release order. This requires filing a petition under <strong>Section 503 of the Bharatiya Nagarik Suraksha Sanhita (BNSS), 2023</strong> (formerly Section 457 of the CrPC) before the Judicial Magistrate, directing the bank to release the frozen funds back to your account.
                     </p>
                   </div>
                 </section>

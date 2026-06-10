@@ -433,7 +433,7 @@ export default function UnauthorizedBankDeductionClient() {
                   </h2>
                   <div className="prose prose-base max-w-none text-slate-650 space-y-6">
                     <p className="text-sm md:text-base leading-relaxed">
-                      Resolving bank deduction disputes requires clear, documented evidence. In Indian courts, consumer commissions, and regulatory tribunals, electronic records are subject to strict admissibility rules. Under **Section 63 of the Bharatiya Sakshya Adhiniyam (BSA), 2023** (which replaced Section 65B of the Indian Evidence Act), any digital document introduced as evidence must be accompanied by a formal **Digital Certificate**.
+                      Resolving bank deduction disputes requires clear, documented evidence. In Indian courts, consumer commissions, and regulatory tribunals, electronic records are subject to strict admissibility rules. Under <strong>Section 63 of the Bharatiya Sakshya Adhiniyam (BSA), 2023</strong> (which replaced Section 65B of the Indian Evidence Act), any digital document introduced as evidence must be accompanied by a formal <strong>Digital Certificate</strong>.
                     </p>
                     <p className="text-sm md:text-base leading-relaxed">
                       A Section 63 BSA certificate is a signed declaration confirming the authenticity, integrity, and proper operation of the device or computer system that generated the electronic records. Without this certificate, documents like bank statements, email logs, or SMS screenshots are considered inadmissible hearsay, which can weaken your case.

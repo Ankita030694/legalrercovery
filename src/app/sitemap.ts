@@ -31,6 +31,16 @@ const STATIC_ROUTES: {
   { path: "/payment-cancelled", changeFrequency: "monthly", priority: 0.3 },
   { path: "/legal-recovery-by-city", changeFrequency: "weekly", priority: 0.8 },
   { path: "/legal-notice-services", changeFrequency: "weekly", priority: 0.8 },
+  { path: "/legal-notice-for-recovery-of-money", changeFrequency: "weekly", priority: 0.85 },
+  { path: "/legal-notice-for-recovery-of-money-sample", changeFrequency: "weekly", priority: 0.85 },
+  { path: "/how-to-send-a-legal-notice-for-recovery-of-money-in-india", changeFrequency: "weekly", priority: 0.85 },
+  { path: "/how-to-draft-a-legal-notice-for-recovery-of-money", changeFrequency: "weekly", priority: 0.85 },
+  { path: "/online-legal-notice", changeFrequency: "weekly", priority: 0.85 },
+  { path: "/legal-notice-online", changeFrequency: "weekly", priority: 0.85 },
+  { path: "/send-a-legal-notice", changeFrequency: "weekly", priority: 0.85 },
+  { path: "/send-legal-notice", changeFrequency: "weekly", priority: 0.85 },
+  { path: "/vakil-online", changeFrequency: "weekly", priority: 0.85 },
+  { path: "/online-lawyer-to-send-legal-notice", changeFrequency: "weekly", priority: 0.85 },
 
   // Recovery routes
   { path: "/recovery", changeFrequency: "weekly", priority: 0.9 },

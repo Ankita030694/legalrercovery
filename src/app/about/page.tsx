@@ -29,22 +29,22 @@ export default function AboutPage() {
     {
       icon: <Users className="w-8 h-8 text-[#1E293B]" />,
       title: "Our Mission",
-      body: "To help people recover what's rightfully theirs through legal expertise and technology."
+      body: "To help people recover what's rightfully theirs through legal recovery experts and digital legal services India."
     },
     {
       icon: <Lightbulb className="w-8 h-8 text-[#1E293B]" />,
       title: "Our Vision",
-      body: "To become India's most trusted consumer legal recovery platform."
+      body: "To become India's most trusted technology driven legal platform and nationwide legal recovery services provider."
     },
     {
       icon: <Heart className="w-8 h-8 text-[#1E293B]" />,
       title: "Our Values",
-      body: "Integrity, transparency, empathy and commitment to our clients."
+      body: "Commitment to client focused legal services, transparent legal process, and online dispute resolution."
     },
     {
       icon: <Target className="w-8 h-8 text-[#1E293B]" />,
       title: "Why We Exist",
-      body: "Everyday people lose money and don't know where to turn. We're here to change that."
+      body: "Providing affordable legal solutions, online legal assistance, and legal support for recovery."
     }
   ];
 
@@ -97,23 +97,23 @@ export default function AboutPage() {
   const aboutFaqs: FAQItem[] = [
     {
       question: "Who founded LegalRecovery and why?",
-      answer: "LegalRecovery was founded by a team of legal and technology professionals who witnessed firsthand how everyday Indians lose hard-earned money due to inaccessible legal systems. Our mission is to democratize legal recovery by combining expert advocacy with modern technology."
+      answer: "LegalRecovery was founded by a team of experienced legal professionals and technology experts who wanted to democratize access to the law. We built this trusted legal recovery platform to offer nationwide legal recovery services and digital legal services India, ensuring everyone gets proper legal support for recovery."
     },
     {
-      question: "Is LegalRecovery a law firm?",
-      answer: "No, LegalRecovery is a legal-tech platform — not a traditional law firm. We use technology to automate and streamline the legal recovery process while working with qualified, registered advocates who handle all legal aspects of your case."
+      question: "How do your legal recovery experts handle money disputes?",
+      answer: "We are a technology driven legal platform. While we are not a law firm, we connect you with qualified legal professionals for money disputes and expert recovery lawyers. Our legal recovery support team guides you through a transparent legal process and online dispute resolution to recover your dues without stress."
     },
     {
-      question: "How is LegalRecovery different from hiring a traditional lawyer?",
-      answer: "Traditional lawyers charge expensive retainers, require physical visits, and offer opaque progress updates. LegalRecovery provides transparent flat fees, 24-hour notice generation, a live case tracking dashboard, and a 100% online process — making legal recovery faster, affordable, and hassle-free."
+      question: "How is LegalRecovery different from a traditional law firm?",
+      answer: "Traditional law firms charge high hourly retainer fees. We provide affordable legal solutions and online legal assistance. With our quick legal notice service and reliable legal recovery platform, the entire legal process made simple, making recovery through legal action fast, transparent, and hassle-free."
     },
     {
-      question: "What is the success rate of LegalRecovery?",
-      answer: "We have a 91% successful resolution rate across all case categories. Our multi-stage escalation process — involving legal notices, follow-ups, and formal complaints — ensures maximum pressure on defaulters to settle outstanding dues."
+      question: "What types of disputes do your money recovery specialists cover?",
+      answer: "Our debt recovery experts and money recovery specialists handle consumer dispute legal help, landlord tenant dispute assistance, employee salary disputes, salary recovery specialists tasks, freelancer payment dispute experts reviews, and business payment recovery experts cases. We provide specialized legal recovery solutions India."
     },
     {
-      question: "Is my personal and case data safe with LegalRecovery?",
-      answer: "Absolutely. We use bank-grade encryption and strict data privacy protocols to protect all client information. Your case details, documents, and personal data are stored securely and are accessible only to the assigned legal team handling your case."
+      question: "Is my case handled by a secure legal recovery platform?",
+      answer: "Absolutely. We operate a highly secure legal recovery platform using advanced encryption. Our team of legal notice experts and professional recovery assistance advocates ensures that your case documents, personal data, and legal consultation online records are stored with bank-grade safety."
     }
   ];
 
@@ -136,24 +136,21 @@ export default function AboutPage() {
                           lg:w-[52%] xl:w-[50%] flex-shrink-0
                           max-w-full lg:max-w-none">
 
-            {/* ABOUT US label */}
-            <p className="text-[11px] sm:text-[13px] font-extrabold text-[#DC2626] uppercase tracking-[0.1em] mb-3 sm:mb-4">
-              ABOUT US
+            <p className="text-[11px] sm:text-[13px] font-extrabold text-[#DC2626] uppercase tracking-[0.15em] mb-3 sm:mb-4 select-text">
+              ABOUT US - trusted legal recovery platform
             </p>
 
             {/* Headline */}
             <h1 className="text-[26px] sm:text-[34px] lg:text-[40px] xl:text-[48px]
-                           font-extrabold text-[#111827] leading-[1.1] tracking-[-0.015em] mb-4 sm:mb-5">
+                           font-extrabold text-[#111827] leading-[1.1] tracking-[-0.015em] mb-4 sm:mb-5 select-text">
               We&apos;re On A Mission To Make{" "}
               Legal Recovery{" "}
               <span className="text-[#DC2626]">Simple For Everyone.</span>
             </h1>
 
             {/* Paragraph */}
-            <p className="text-[13px] sm:text-[14px] lg:text-[15px] text-[#4B5563] leading-[1.75] max-w-[600px] mb-8 sm:mb-10">
-              At Legal Recovery, we believe that no one should lose money or suffer in silence
-              when their rights are violated. Our mission is to make legal support accessible,
-              affordable and effective for every individual and business in India.
+            <p className="text-[13px] sm:text-[14px] lg:text-[15px] text-[#4B5563] leading-[1.75] max-w-[600px] mb-8 sm:mb-10 select-text">
+              At Legal Recovery, we are a secure legal recovery platform and trusted recovery partner committed to providing professional legal services India. Our technology driven legal platform combines experienced legal professionals, money recovery specialists, and expert recovery lawyers to offer legal recovery assistance. We ensure a transparent legal process and hassle free legal recovery for everyone.
             </p>
 
             <div className="relative w-full h-[220px] sm:h-[280px] overflow-hidden rounded-2xl mb-8 lg:hidden">
@@ -263,7 +260,7 @@ export default function AboutPage() {
               <span className="text-[#DC2626]">Why Legal Recovery Was Born</span>
             </h2>
             <p className="mt-4 text-[13px] sm:text-[15px] text-[#4B5563] max-w-[720px] mx-auto leading-relaxed">
-              Every day, thousands of honest people find themselves trapped in financial distress - not because they made a mistake, but because they chose to trust. Here is the story of why we built India&apos;s first dedicated legaltech recovery platform.
+              Every day, thousands of honest people find themselves trapped in financial disputes. As a leading legal recovery company India, our experienced legal professionals offer professional recovery assistance and legal support for recovery. Here is the story of why we built India's premier technology driven legal platform.
             </p>
           </div>
 
@@ -285,7 +282,7 @@ export default function AboutPage() {
                     Months pass, and the promise fades. Polite reminders are met with excuses - medical emergencies, bank issues, sudden business losses. Soon, messages go unread. Calls get declined or blocked. The sudden realization hits: <strong>you have been fooled by someone you trusted.</strong>
                   </p>
                   <p>
-                    When you turn to the traditional legal system, you find a daunting nightmare. High lawyer retainer fees, complex jargon, endless physical visits, and a system built for large corporations - not everyday individuals. Most people simply give up, losing their hard-earned money and their peace of mind.
+                    When you seek recovery through legal action, traditional systems pose a daunting nightmare. High lawyer retainer fees, complex jargon, endless physical visits, and a system built for large corporations - not everyday individuals. Most people simply give up without professional recovery assistance or legal help for unpaid dues.
                   </p>
                 </div>
               </div>
@@ -314,7 +311,7 @@ export default function AboutPage() {
                     We knew there had to be a better way. The law should not be a luxury reserved for those who can afford expensive retainers. It should be a shield that protects everyday citizens.
                   </p>
                   <p>
-                    <strong>Legal Recovery was created as a modern, technology-driven initiative.</strong> We took the absolute best legal strategies and combined them with advanced automation. By standardizing notice generation, streamlining case review with qualified advocates, and digitizing tracking, we stripped away the friction, delay, and exorbitant costs.
+                    <strong>Legal Recovery was created as a technology driven legal platform and nationwide legal recovery services initiative.</strong> Our legal recovery experts and debt recovery experts took the absolute best legal strategies and combined them with online dispute resolution. By delivering digital legal services India and legal recovery solutions India, we stripped away the friction, delay, and exorbitant costs.
                   </p>
                   <p>
                     With our platform, sending a legally-binding demand notice takes just minutes. We handle the drafting, the dispatch, and the tracking. You get a direct, professional, and powerful legal presence without leaving your couch. It is recovery made simple, transparent, and completely accessible.
@@ -364,28 +361,28 @@ export default function AboutPage() {
                 {
                   title: "The Friendly Handout",
                   scenario: "Lending to a friend/relative in an 'emergency'.",
-                  deception: "Months of 'I'll pay you next week' excuses, followed by blocked calls and social media ghosting.",
+                  deception: "Months of excuses. Get professional recovery assistance and debt resolution services to settle friend disputes.",
                   icon: <Users className="w-5 h-5 text-[#DC2626]" />,
                   color: "border-t-4 border-t-red-500"
                 },
                 {
-                  title: "The Security Deposit",
-                  scenario: "Paying high advance deposits to landlords.",
-                  deception: "Moving out only to have the landlord invent arbitrary damage fees, refuse to return the money, or stop replying.",
+                  title: "The Tenant Deposit Dispute",
+                  scenario: "Landlord tenant dispute assistance for security deposit recovery.",
+                  deception: "Moving out only to have landlords ignore you. Get security deposit recovery, tenant deposit recovery, and rental deposit recovery help.",
                   icon: <Scale className="w-5 h-5 text-[#DC2626]" />,
                   color: "border-t-4 border-t-blue-500"
                 },
                 {
-                  title: "The Unfinished Work",
-                  scenario: "Advancing money to contractors or builders.",
-                  deception: "Paying 50% upfront to a home designer, builder, or freelance developer, who then stops showing up or delivering work.",
+                  title: "Freelancer & B2B Dues",
+                  scenario: "Freelancer payment dispute experts and business payment recovery experts support.",
+                  deception: "Clients withholding payments. Get specialized freelancer payment dispute experts and business payment recovery experts to resolve contract breaches.",
                   icon: <Briefcase className="w-5 h-5 text-[#DC2626]" />,
                   color: "border-t-4 border-t-amber-500"
                 },
                 {
-                  title: "The Unpaid Work",
-                  scenario: "Rendering professional or employee services.",
-                  deception: "Working long hours, only for the employer or client to delay payments, ignore invoices, or lock you out.",
+                  title: "Unpaid Salary Dispute",
+                  scenario: "Salary recovery specialists helping resolve employee salary disputes.",
+                  deception: "Employers delaying full & final payments. Our salary recovery specialists draft quick legal notice service demands to claim your money.",
                   icon: <IndianRupee className="w-5 h-5 text-[#DC2626]" />,
                   color: "border-t-4 border-t-emerald-500"
                 }
@@ -458,10 +455,10 @@ export default function AboutPage() {
                 </h4>
                 <ul className="space-y-4">
                   {[
-                    { title: "Flat, Transparent Pricing", desc: "Zero surprise consultation fees. Pay only for the legal services you need, structured fairly." },
-                    { title: "24-Hour Digital Notice Generation", desc: "Our tech platform generates precise, iron-clad legal notices within 24 hours, approved by expert advocates." },
+                    { title: "Affordable Legal Solutions", desc: "Zero surprise consultation fees. We make legal process made simple through our secure legal recovery platform." },
+                    { title: "Fast Legal Recovery Services", desc: "Our tech platform generates precise, iron-clad legal notices within 24 hours, approved by expert advocates." },
                     { title: "Live Case Dashboard", desc: "Track every step of your notice delivery, recipient response, and case movement live on your screen." },
-                    { title: "100% Online & Hassle-Free", desc: "Initiate your case in 5 minutes from your phone. We handle all dispatch, follow-ups, and legal heavy lifting." }
+                    { title: "Debt Resolution Services", desc: "Initiate your case in 5 minutes. We handle all dispatch, follow-ups, and legal heavy lifting for debt resolution." }
                   ].map((item, idx) => (
                     <li key={idx} className="flex gap-3 items-start">
                       <CheckCircle2 className="w-5 h-5 text-emerald-500 flex-shrink-0 mt-0.5" />
@@ -512,12 +509,12 @@ export default function AboutPage() {
             {/* Right feature grid - 1-col on mobile, 2-col on sm+ */}
             <div className="lg:flex-1 grid grid-cols-1 sm:grid-cols-2 gap-3 sm:gap-4">
               {[
-                { icon: <Clock       className="w-4 h-4 text-[#DC2626]" />, title: "18-Day Avg Resolution", desc: "Dramatically faster than the 6–18 month court timeline." },
-                { icon: <IndianRupee className="w-4 h-4 text-[#DC2626]" />, title: "Transparent Flat Fees",  desc: "Affordable, upfront rates with absolutely no surprise bills or hidden costs." },
-                { icon: <Shield      className="w-4 h-4 text-[#DC2626]" />, title: "100% Confidential",     desc: "Bank-grade encryption and strict data privacy protocols." },
-                { icon: <Users       className="w-4 h-4 text-[#DC2626]" />, title: "Expert Advocates",      desc: "Every case handled by qualified, registered advocates." },
-                { icon: <TrendingUp  className="w-4 h-4 text-[#DC2626]" />, title: "Live Case Tracking",    desc: "See every update in real-time via our online dashboard." },
-                { icon: <Award       className="w-4 h-4 text-[#DC2626]" />, title: "Award Winning",         desc: "Best Legal Tech Startup - India LegalTech Summit 2024." }
+                { icon: <Clock       className="w-4 h-4 text-[#DC2626]" />, title: "Recovery Support Team", desc: "Our dedicated legal recovery support team keeps you updated at every stage." },
+                { icon: <IndianRupee className="w-4 h-4 text-[#DC2626]" />, title: "Legal Notice Experts",  desc: "All notice generation and legal notice and recovery services are managed by legal notice experts." },
+                { icon: <Shield      className="w-4 h-4 text-[#DC2626]" />, title: "Reliable Platform",     desc: "A reliable legal recovery platform with bank-grade security protocols." },
+                { icon: <Users       className="w-4 h-4 text-[#DC2626]" />, title: "Experienced Professionals", desc: "Connecting you with top legal professionals for money disputes and advocates." },
+                { icon: <TrendingUp  className="w-4 h-4 text-[#DC2626]" />, title: "Legal Consultation Online", desc: "Access legal consultation online and case updates via our digital dashboard." },
+                { icon: <Award       className="w-4 h-4 text-[#DC2626]" />, title: "Award Winning Team",         desc: "Recognized as the best legal recovery company India for tech-driven resolution." }
               ].map((feat, i) => (
                 <div key={i}
                   className="flex items-start gap-3 p-4 rounded-xl bg-white/5 border border-white/8
@@ -527,7 +524,7 @@ export default function AboutPage() {
                   </div>
                   <div>
                     <h4 className="text-[12.5px] font-bold text-white mb-0.5">{feat.title}</h4>
-                    <p className="text-[11px] text-[#64748B] leading-relaxed">{feat.desc}</p>
+                    <p className="text-[11px] text-[#94A3B8] leading-relaxed">{feat.desc}</p>
                   </div>
                 </div>
               ))}

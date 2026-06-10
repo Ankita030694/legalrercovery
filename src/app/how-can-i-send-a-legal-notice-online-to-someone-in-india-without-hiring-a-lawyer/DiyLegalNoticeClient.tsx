@@ -51,7 +51,7 @@ const faqs = [
   },
   {
     question: "What are the primary risks of drafting and sending a notice myself?",
-    answer: "The primary risks of the DIY approach include: 1. **Self-Incrimination:** Unwittingly admitting to a mistake or contract breach that the employer can use against you. 2. **Incorrect Citations:** Citing the wrong statutes, which can make the notice ineffective. 3. **Omission of Dues:** Failing to include variables, gratuity, or interest, which can restrict your claims in court. 4. **Delivery Failure:** Failing to document legally admissible proof of service, allowing the employer to deny receiving the notice."
+    answer: "The primary risks of the DIY approach include: 1. <strong>Self-Incrimination:</strong> Unwittingly admitting to a mistake or contract breach that the employer can use against you. 2. <strong>Incorrect Citations:</strong> Citing the wrong statutes, which can make the notice ineffective. 3. <strong>Omission of Dues:</strong> Failing to include variables, gratuity, or interest, which can restrict your claims in court. 4. <strong>Delivery Failure:</strong> Failing to document legally admissible proof of service, allowing the employer to deny receiving the notice."
   },
   {
     question: "When should I stop the DIY process and hire a lawyer?",

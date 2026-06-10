@@ -309,7 +309,7 @@ export default function SendLegalNoticeClient() {
                   <h2 className="text-xl md:text-3xl font-black text-slate-900 mb-5 border-b-2 border-[#DC2626] pb-2 inline-block">2. Statutory Notice vs. Advocate Letterhead</h2>
                   <div className="prose prose-base max-w-none text-slate-650 space-y-6">
                     <p className="text-sm md:text-base leading-relaxed">
-                      While a legal notice is essentially a formal communication, its legal nature can vary. It is important to distinguish between a **discretionary notice** (sent as a strategic choice to settle a dispute out of court) and a **statutory notice** (which is a mandatory legal prerequisite before a lawsuit can be filed).
+                      While a legal notice is essentially a formal communication, its legal nature can vary. It is important to distinguish between a <strong>discretionary notice</strong> (sent as a strategic choice to settle a dispute out of court) and a <strong>statutory notice</strong> (which is a mandatory legal prerequisite before a lawsuit can be filed).
                     </p>
                     <p className="text-sm md:text-base leading-relaxed">
                       In many Indian laws, sending a formal demand notice is a strict statutory requirement. If you file a case without serving this notice first, your lawsuit will be dismissed on technical grounds:
@@ -335,7 +335,7 @@ export default function SendLegalNoticeClient() {
                       </div>
                     </div>
                     <p className="text-sm md:text-base leading-relaxed">
-                      Even when not strictly mandatory, issuing a notice on an **advocate&apos;s official letterhead** is critical. A notice sent directly by an individual can easily be dismissed as a personal grievance. However, a notice on an advocate&apos;s letterhead indicates that you have engaged legal professionals and are prepared to escalate the matter to court. Advocates ensure that the notice cites the correct statutes, structures the facts logically, quantifies the claims (including interest and damages) precisely, and gives the recipient a strict deadline to comply, creating the necessary legal pressure for a quick out-of-court settlement.
+                      Even when not strictly mandatory, issuing a notice on an <strong>advocate&apos;s official letterhead</strong> is critical. A notice sent directly by an individual can easily be dismissed as a personal grievance. However, a notice on an advocate&apos;s letterhead indicates that you have engaged legal professionals and are prepared to escalate the matter to court. Advocates ensure that the notice cites the correct statutes, structures the facts logically, quantifies the claims (including interest and damages) precisely, and gives the recipient a strict deadline to comply, creating the necessary legal pressure for a quick out-of-court settlement.
                     </p>
                   </div>
                 </section>
@@ -384,7 +384,7 @@ export default function SendLegalNoticeClient() {
                   <h2 className="text-xl md:text-3xl font-black text-slate-900 mb-5 border-b-2 border-[#DC2626] pb-2 inline-block">4. Physical Dispatch via Speed Post &amp; Tracking</h2>
                   <div className="prose prose-base max-w-none text-slate-650 space-y-6">
                     <p className="text-sm md:text-base leading-relaxed">
-                      While digital notices are fast, Indian courts still place the highest reliance on traditional physical delivery methods. The gold standard for serving a legal notice is dispatching it via **India Post Speed Post** or **Registered Post with Acknowledgment Due (AD)**.
+                      While digital notices are fast, Indian courts still place the highest reliance on traditional physical delivery methods. The gold standard for serving a legal notice is dispatching it via <strong>India Post Speed Post</strong> or <strong>Registered Post with Acknowledgment Due (AD)</strong>.
                     </p>
                     <p className="text-sm md:text-base leading-relaxed">
                       Physical dispatch via India Post offers several distinct advantages in legal proceedings:
@@ -406,7 +406,7 @@ export default function SendLegalNoticeClient() {
                   <h2 className="text-xl md:text-3xl font-black text-slate-900 mb-5 border-b-2 border-[#DC2626] pb-2 inline-block">5. Digital Service: WhatsApp, Email &amp; BSA 2023</h2>
                   <div className="prose prose-base max-w-none text-slate-650 space-y-6">
                     <p className="text-sm md:text-base leading-relaxed">
-                      In the digital age, recipients of legal notices often attempt to evade the postman or change physical addresses to escape legal action. To counter this, serving notices digitally via **WhatsApp, Email, or SMS** has become an exceptionally effective strategy.
+                      In the digital age, recipients of legal notices often attempt to evade the postman or change physical addresses to escape legal action. To counter this, serving notices digitally via <strong>WhatsApp, Email, or SMS</strong> has become an exceptionally effective strategy.
                     </p>
                     <p className="text-sm md:text-base leading-relaxed">
                       The legal framework for electronic service is highly robust:
@@ -439,13 +439,13 @@ export default function SendLegalNoticeClient() {
                       <div>
                         <h3 className="text-base md:text-lg font-black text-slate-900 mb-2">Scenario B: The Recipient Replies with a Counter-Notice</h3>
                         <p className="text-sm text-slate-650 leading-relaxed">
-                          Often, the recipient will hire a lawyer to send a reply notice. This reply may contain denials, counter-allegations, or factual inaccuracies designed to weaken your claim. In this scenario, we draft a **Rejoinder (Reply to Reply) Notice**. The rejoinder refutes their false claims, re-establishes your original demands, and ensures that the record is clear before filing a lawsuit.
+                          Often, the recipient will hire a lawyer to send a reply notice. This reply may contain denials, counter-allegations, or factual inaccuracies designed to weaken your claim. In this scenario, we draft a <strong>Rejoinder (Reply to Reply) Notice</strong>. The rejoinder refutes their false claims, re-establishes your original demands, and ensures that the record is clear before filing a lawsuit.
                         </p>
                       </div>
                       <div>
                         <h3 className="text-base md:text-lg font-black text-slate-900 mb-2">Scenario C: The Recipient Seeks a Settlement</h3>
                         <p className="text-sm text-slate-650 leading-relaxed">
-                          This is the most common outcome. Faced with a professional notice on advocate letterhead and the prospect of court litigation, the recipient will contact you or our legal panel to settle. We help structure a formal **Settlement Agreement** to ensure the payment is received securely and all disputes are closed with mutual releases.
+                          This is the most common outcome. Faced with a professional notice on advocate letterhead and the prospect of court litigation, the recipient will contact you or our legal panel to settle. We help structure a formal <strong>Settlement Agreement</strong> to ensure the payment is received securely and all disputes are closed with mutual releases.
                         </p>
                       </div>
                     </div>

@@ -433,7 +433,7 @@ export default function InsuranceClaimAmountClient() {
                   </h2>
                   <div className="prose prose-base max-w-none text-slate-650 space-y-6">
                     <p className="text-sm md:text-base leading-relaxed">
-                      Resolving insurance disputes relies on the quality of the evidence compiled. Under the **Bharatiya Sakshya Adhiniyam (BSA), 2023**, specifically **Section 63** (which replaced Section 65B of the Indian Evidence Act), any digital records (such as PDF medical bills, scan reports, email threads, or digital surveyor reports) must be accompanied by a formal **Digital Certificate**.
+                      Resolving insurance disputes relies on the quality of the evidence compiled. Under the <strong>Bharatiya Sakshya Adhiniyam (BSA), 2023</strong>, specifically <strong>Section 63</strong> (which replaced Section 65B of the Indian Evidence Act), any digital records (such as PDF medical bills, scan reports, email threads, or digital surveyor reports) must be accompanied by a formal <strong>Digital Certificate</strong>.
                     </p>
                     <p className="text-sm md:text-base leading-relaxed">
                       A Section 63 BSA certificate is a signed declaration confirming the authenticity and integrity of the device and system that generated the electronic records. Without this certificate, digital evidence may be deemed inadmissible in consumer forums or civil courts, which can weaken your case.

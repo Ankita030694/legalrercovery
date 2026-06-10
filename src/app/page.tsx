@@ -71,6 +71,34 @@ export default function Home() {
     {
       question: "Do I need to visit a court or lawyer's office?",
       answer: "No. LegalRecovery is a 100% digital platform. You submit your case online, our qualified advocates draft and dispatch legal notices, and you track everything from your dashboard. No physical visits are required at any stage."
+    },
+    {
+      question: "How to send a legal notice in India?",
+      answer: "To know how to send a legal notice in India, simply use our online legal notice drafting service. You fill out our questionnaire, and an advocate for legal notice drafts the document using a professional legal notice format in India. We then handle dispatch and tracking."
+    },
+    {
+      question: "How to reply to a legal notice?",
+      answer: "If you received a demand notice, learning how to reply to a legal notice correctly is crucial. You should hire an online advocate for legal notice or a legal notice expert who can review the claims and draft a formal reply to resolve the dispute or prepare for a recovery suit."
+    },
+    {
+      question: "What is the cost of legal notice in India?",
+      answer: "The cost of legal notice in India varies depending on the advocate, but LegalRecovery provides fixed, transparent legal notice drafting charges starting at ₹999. There are no commission fees on recovered dues."
+    },
+    {
+      question: "Can I find a legal notice lawyer near me on your platform?",
+      answer: "Instead of searching for a physical legal notice lawyer near me, you can get legal notice consultation and legal notice assistance online from anywhere in the country. We connect you with a qualified legal notice lawyer online and legal notice expert to handle your case."
+    },
+    {
+      question: "Can I send legal notice without court?",
+      answer: "Yes, you can send legal notice without court. Sending a money recovery legal notice or a legal notice for recovery of money is a mandatory or highly recommended pre-litigation step to recover outstanding payment recovery or unpaid dues before filing a recovery suit in court."
+    },
+    {
+      question: "How does a Section 138 Notice for cheque bounce work?",
+      answer: "If a cheque bounces, you must send a Cheque Bounce Notice (Section 138 Notice) under the Negotiable Instruments Act. This NI Act legal notice must be drafted by a legal notice lawyer and sent to the drawer of the dishonoured cheque within 30 days of receiving the bounce memo from the bank. This is a prerequisite before initiating criminal proceedings for a dishonoured cheque notice."
+    },
+    {
+      question: "Is this the best legal notice service in India for money recovery?",
+      answer: "Yes, LegalRecovery is the best legal notice service in India, specialized in legal notice services India and legal notice for money recovery online. We offer a 100% online platform where you can send legal notice online, draft legal notice online, and track the entire recovery status in real-time."
     }
   ];
 
@@ -91,7 +119,7 @@ export default function Home() {
 
             {/* Top Red Subheading */}
             <span className="text-[13.5px] font-bold text-[#DC2626] uppercase tracking-[0.02em] mb-4 select-text">
-              India's Consumer & Money Recovery Platform
+              Send Legal Notice Online - India's Trusted Legal Notice Service
             </span>
 
             {/* Massive Headline */}
@@ -103,7 +131,7 @@ export default function Home() {
 
             {/* Subheading / Description Paragraph */}
             <p className="text-[15px] md:text-[16px] text-[#4B5563] font-medium leading-[1.6] mb-5 max-w-lg select-text">
-              Stuck salaries, corporate refunds, freelancer dues, travel ticketing disputes, and consumer recoveries. We send 3 legal notices and 1 police complaint draft week-by-week to recover what is yours.
+              Whether you need legal notice drafting for outstanding payment recovery, unpaid dues, or tenant disputes, our money recovery lawyers and online advocates for legal notice are here to help. Get professional legal notice assistance and send a legal notice online in India without any physical court visits.
             </p>
 
             {/* High-Trust Tagline Banner */}
@@ -500,7 +528,7 @@ export default function Home() {
               </h2>
               
               <p className="text-[13px] sm:text-[14.5px] text-[#4B5563] leading-relaxed mb-6 font-medium max-w-2xl mx-auto lg:mx-0">
-                To guarantee absolute validity and the highest resolution rates, Legal Recovery's cutting-edge legaltech platform is backed and legally powered by <b>AMA Legal Solutions</b> - a leading full-service legal firm. This powerful synergy combines digital convenience and advanced automation with institutional legal authority.
+                To guarantee absolute validity and the highest resolution rates, our cutting-edge online legal notice drafting service is backed and legally powered by <b>AMA Legal Solutions</b> - a leading full-service legal firm. Whether you need a legal notice for recovery of money, a Section 138 Notice for a dishonoured cheque, or a legal notice for property dispute, our legal notice experts provide dedicated legal notice consultation, legal notice assistance, and advocate for legal notice services online. From preparing the perfect legal notice format in India to handling complex commercial dispute notices and contract breach legal notices, we ensure expert-led legal notice lawyer online support with transparent legal notice drafting charges and zero hidden costs.
               </p>
 
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 max-w-xl mx-auto lg:mx-0">
@@ -606,10 +634,12 @@ function ServicesSection() {
       title: "Salary &\nEmployment Dues",
       slug: "/services/recovery-of-salary-and-employment-dues",
       pointers: [
-        "Unpaid F&F dues",
-        "Delayed salaries",
-        "Unpaid bonuses",
-        "Wrongful termination"
+        "Legal Notice for Salary Recovery",
+        "Unpaid Salary Recovery",
+        "Employment Dispute Legal Notice",
+        "FNF Settlement Recovery",
+        "Labour Dispute Legal Notice",
+        "Legal Notice to Employer"
       ],
       icon: (
         <div className="relative w-12 h-12 flex items-center justify-center">
@@ -624,10 +654,10 @@ function ServicesSection() {
       title: "Refunds &\nConsumer Complaints",
       slug: "/services/refunds-and-consumer-complaints",
       pointers: [
-        "E-commerce refunds",
-        "Defective products",
-        "Billing overcharges",
-        "Warranty breaches"
+        "Consumer Complaint Legal Notice",
+        "Legal Notice for Defective Products",
+        "Business Legal Notice",
+        "E-commerce & retail refunds"
       ],
       icon: (
         <div className="relative w-12 h-12 flex items-center justify-center">
@@ -642,10 +672,10 @@ function ServicesSection() {
       title: "Security Deposits &\nRental Recoveries",
       slug: "/services/security-deposits-and-rental-recoveries",
       pointers: [
-        "Unreturned deposits",
-        "Commercial leases",
-        "Deduction disputes",
-        "Delayed rent dues"
+        "Rent Recovery Notice",
+        "Landlord Legal Notice",
+        "Tenant Eviction Notice",
+        "Property Dispute Legal Notice"
       ],
       icon: (
         <div className="relative w-12 h-12 flex items-center justify-center">
@@ -660,10 +690,10 @@ function ServicesSection() {
       title: "Freelancer &\nClient Payments",
       slug: "/services/recovery-of-freelancer-and-client-payments",
       pointers: [
-        "Milestone payouts",
-        "Contract breaches",
-        "Unapproved work",
-        "Retainer recovery"
+        "Customer Payment Recovery",
+        "Vendor Payment Recovery",
+        "Legal Notice for Breach of Contract",
+        "Legal Notice for Unpaid Dues"
       ],
       icon: (
         <div className="relative w-12 h-12 flex items-center justify-center">
@@ -678,10 +708,11 @@ function ServicesSection() {
       title: "Friend / Personal\nMoney Recovery",
       slug: "/services/recovery-of-money-from-a-friend",
       pointers: [
-        "Personal loans",
-        "Group expenses",
-        "Cash advances",
-        "Promissory notes"
+        "Legal Notice for Loan Recovery",
+        "Money Recovery Legal Notice",
+        "Legal Notice for Cheque Bounce",
+        "Debt Recovery Legal Notice",
+        "Recovery Suit assistance"
       ],
       icon: (
         <div className="relative w-12 h-12 flex items-center justify-center">
@@ -696,10 +727,10 @@ function ServicesSection() {
       title: "Airline &\nTravel Recoveries",
       slug: "/services/airline-and-travel-recoveries",
       pointers: [
-        "Flight refunds",
-        "Train booking dues",
-        "Hotel overcharges",
-        "Baggage loss recovery"
+        "Flight & train refunds",
+        "Hotel booking recoveries",
+        "Baggage loss notices",
+        "Travel dispute legal notice"
       ],
       icon: (
         <div className="relative w-12 h-12 flex items-center justify-center">
@@ -714,10 +745,10 @@ function ServicesSection() {
       title: "Vendor &\nInvoice Recovery",
       slug: "/services/vendor-and-invoice-recoveries",
       pointers: [
-        "Supplier invoices",
-        "Raw material costs",
-        "Supply chain credit",
-        "Service provider dues"
+        "Outstanding Payment Recovery",
+        "Recovery of Payment Notice",
+        "Recovery of Dues Notice",
+        "Business Dispute Legal Notice"
       ],
       icon: (
         <div className="relative w-12 h-12 flex items-center justify-center">
@@ -732,10 +763,10 @@ function ServicesSection() {
       title: "Property &\nBuilder Disputes",
       slug: "/services/property-and-builder-disputes",
       pointers: [
-        "Possession delays",
-        "Booking token refund",
-        "Maintenance dues",
-        "Amenity breaches"
+        "Legal Notice for Property Dispute",
+        "Legal Notice for Possession",
+        "Landlord Legal Notice",
+        "Builder contract breach notice"
       ],
       icon: (
         <div className="relative w-12 h-12 flex items-center justify-center">
@@ -824,12 +855,12 @@ function WhyChooseUsSection() {
     },
     {
       title: "Affordable Pricing",
-      description: "High-quality legal support without burning a hole in your pocket.",
+      description: "Flat-rate legal notice drafting charges with zero commission fees.",
       icon: <IndianRupee className="w-8 h-8 text-[#111827] stroke-[2]" />
     },
     {
       title: "Trusted by Thousands",
-      description: "12,000+ people have recovered what they were owed.",
+      description: "The best legal notice service in India for individuals and businesses.",
       icon: <Users className="w-8 h-8 text-[#111827] stroke-[2]" />
     }
   ];

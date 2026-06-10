@@ -353,7 +353,7 @@ export default function OnlineNoticeDeliveryClient() {
                       WhatsApp has become one of the most widely used platforms for communication in India. Recognizing this, the judiciary has established clear precedents validating WhatsApp as a medium for serving legal notices and summons. One of the earliest landmark cases was <strong>Kross Television India Pvt. Ltd. v. Vikhyat Chitra Production (2017)</strong>, where the Bombay High Court accepted notice service via WhatsApp, noting that the purpose of service is to inform the recipient, and defendants cannot evade it by refusing physical post.
                     </p>
                     <p className="text-sm md:text-base leading-relaxed">
-                      The key factor in WhatsApp service is proving that the notice was received and read. The presence of the **"double blue ticks"** (read receipts) serves as conclusive proof of receipt under the Evidence Act. In <em>SBI v. Aditya Birla Fashion (2018)</em>, the Bombay High Court held that the double blue ticks on WhatsApp constituted sufficient proof of service, allowing the plaintiff to proceed with their claims.
+                      The key factor in WhatsApp service is proving that the notice was received and read. The presence of the <strong>"double blue ticks"</strong> (read receipts) serves as conclusive proof of receipt under the Evidence Act. In <em>SBI v. Aditya Birla Fashion (2018)</em>, the Bombay High Court held that the double blue ticks on WhatsApp constituted sufficient proof of service, allowing the plaintiff to proceed with their claims.
                     </p>
                     <p className="text-sm md:text-base leading-relaxed">
                       However, if the recipient has disabled read receipts, you must compile secondary evidence to prove service:
@@ -432,7 +432,7 @@ export default function OnlineNoticeDeliveryClient() {
                     </p>
                     <ul className="list-disc pl-6 space-y-3 text-sm text-slate-650">
                       <li><strong>Double Certification:</strong> Under Section 63(4), the digital evidence must be accompanied by a certificate signed by <strong>both</strong> the person in charge of the computer/device used to retrieve the data (Part A of the Schedule) and an independent technical expert (Part B of the Schedule).</li>
-                      <li><strong>Mandatory Hash Value:</strong> The certificate must include the digital **hash value** (such as SHA-256 or MD5) of the electronic files. The hash value acts as a unique digital fingerprint, proving that the screenshots or logs have not been tampered with.</li>
+                      <li><strong>Mandatory Hash Value:</strong> The certificate must include the digital <strong>hash value</strong> (such as SHA-256 or MD5) of the electronic files. The hash value acts as a unique digital fingerprint, proving that the screenshots or logs have not been tampered with.</li>
                       <li><strong>Device Details:</strong> The certificate must specify the details of the device (such as the make, model, and operating system) used to access the communication.</li>
                     </ul>
                     <p className="text-sm md:text-base leading-relaxed">

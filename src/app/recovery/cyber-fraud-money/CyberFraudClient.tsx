@@ -366,10 +366,10 @@ export default function CyberFraudClient() {
                   </h2>
                   <div className="prose prose-base max-w-none text-slate-650 space-y-6">
                     <p className="text-sm md:text-base leading-relaxed">
-                      Scammers frequently use payment gateways (like Razorpay, Cashfree, Paytm, or Pine Labs) to generate fake payment links or set up dummy merchant accounts. Under **Section 79 of the Information Technology Act, 2000**, these payment aggregators are classified as intermediaries and enjoy &quot;safe harbor&quot; immunity, meaning they are not civilly or criminally liable for the third-party transactions flowing through their servers.
+                      Scammers frequently use payment gateways (like Razorpay, Cashfree, Paytm, or Pine Labs) to generate fake payment links or set up dummy merchant accounts. Under <strong>Section 79 of the Information Technology Act, 2000</strong>, these payment aggregators are classified as intermediaries and enjoy &quot;safe harbor&quot; immunity, meaning they are not civilly or criminally liable for the third-party transactions flowing through their servers.
                     </p>
                     <p className="text-sm md:text-base leading-relaxed">
-                      However, this safe harbor is **conditional**. Payment gateways lose their legal immunity if they fail to perform proper due diligence:
+                      However, this safe harbor is <strong>conditional</strong>. Payment gateways lose their legal immunity if they fail to perform proper due diligence:
                     </p>
                     <ul className="list-disc pl-6 space-y-3 text-sm text-slate-650">
                       <li><strong>KYC Failures:</strong> Under RBI regulations, gateways must verify the existence and legitimacy of their merchants. If they onboard shell companies or dummy accounts without verification, they are negligent.</li>
@@ -424,7 +424,7 @@ export default function CyberFraudClient() {
                       <li><strong>Filing the Petition:</strong> Your advocate files the Section 503 BNSS application, attaching the initial bank complaint, Cyber Cell FIR, proof of transaction, bank statement showing debit, and the police freeze report.</li>
                       <li><strong>Requisitioning Police Report:</strong> The Magistrate issues notice to the Cyber Crime police cell, directing the Investigating Officer (IO) to submit a status report confirming whether the frozen funds in the mule account belong to you.</li>
                       <li><strong>Verification of Bank Balance:</strong> The bank is summoned to confirm the exact amount frozen in the mule account.</li>
-                      <li><strong>Order of Release:</strong> Once the IO and the bank confirm the details, the Magistrate orders the bank to release the frozen funds back to your account, subject to you executing an **Indemnity Bond** for the equivalent value.</li>
+                      <li><strong>Order of Release:</strong> Once the IO and the bank confirm the details, the Magistrate orders the bank to release the frozen funds back to your account, subject to you executing an <strong>Indemnity Bond</strong> for the equivalent value.</li>
                     </ul>
                     <p className="text-sm md:text-base leading-relaxed">
                       While this court process takes 2 to 4 months, it is the only legal way to recover frozen funds. Having an expert advocate draft the BNSS petition and follow up with the cyber cell is essential to prevent delays.

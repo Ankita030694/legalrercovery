@@ -312,7 +312,7 @@ export default function SalaryRecoveryGuideClient() {
                       For employees classified as &quot;workmen&quot; under Section 2(s) of the <strong>Industrial Disputes Act, 1947</strong>, the primary government channel for resolving wage disputes is the Office of the Labour Commissioner. The department provides an administrative conciliation mechanism designed to mediate disputes and secure settlements without putting the employee through a full civil court trial.
                     </p>
                     <p className="text-sm md:text-base leading-relaxed">
-                      To streamline this process, the Ministry of Labour and Employment launched the **SAMADHAN portal** (Software for Application, Monitoring and Disposal of Industrial Disputes). Through this portal, employees can register their wage claims online:
+                      To streamline this process, the Ministry of Labour and Employment launched the <strong>SAMADHAN portal</strong> (Software for Application, Monitoring and Disposal of Industrial Disputes). Through this portal, employees can register their wage claims online:
                     </p>
                     <ul className="list-disc pl-6 space-y-3 text-sm text-slate-650">
                       <li><strong>Filing the Grievance:</strong> Upload your appointment letter, bank statements showing missing credits, and monthly payslips to the portal. The case is reviewed and assigned to a jurisdictional Conciliation Officer (CO).</li>
@@ -331,7 +331,7 @@ export default function SalaryRecoveryGuideClient() {
                   <h2 className="text-xl md:text-3xl font-black text-slate-900 mb-5 border-b-2 border-[#DC2626] pb-2 inline-block">3. Summary Suits (Order 37, CPC) for Managers</h2>
                   <div className="prose prose-base max-w-none text-slate-650 space-y-6">
                     <p className="text-sm md:text-base leading-relaxed">
-                      If you are employed in a managerial, executive, or highly-paid supervisory role, you do not fall under the definition of a &quot;workman&quot; under labor laws. Consequently, you cannot file claims under Section 33-C(2). Your primary civil remedy is filing a **Summary Suit** under **Order XXXVII of the Code of Civil Procedure, 1908 (CPC)**.
+                      If you are employed in a managerial, executive, or highly-paid supervisory role, you do not fall under the definition of a &quot;workman&quot; under labor laws. Consequently, you cannot file claims under Section 33-C(2). Your primary civil remedy is filing a <strong>Summary Suit</strong> under <strong>Order XXXVII of the Code of Civil Procedure, 1908 (CPC)</strong>.
                     </p>
                     <p className="text-sm md:text-base leading-relaxed">
                       A summary suit is a fast-track civil recovery proceeding specifically designed for monetary claims arising out of written contracts (such as your employment contract or a signed FNF settlement sheet). Order 37 restricts the employer&apos;s ability to delay:
@@ -377,7 +377,7 @@ export default function SalaryRecoveryGuideClient() {
                       When companies experience cash flow crises, they often default on salaries for multiple employees simultaneously. If the employer is a corporate entity (Private Limited or Public Limited company) and is facing insolvency, employees have a powerful remedy under the <strong>Insolvency and Bankruptcy Code (IBC), 2016</strong>.
                     </p>
                     <p className="text-sm md:text-base leading-relaxed">
-                      Under the IBC, employees are classified as **Operational Creditors**. The recovery process involves two key steps:
+                      Under the IBC, employees are classified as <strong>Operational Creditors</strong>. The recovery process involves two key steps:
                     </p>
                     <ul className="list-disc pl-6 space-y-3 text-sm text-slate-650">
                       <li><strong>Section 8 Demand Notice:</strong> Before approaching the NCLT, you must serve a statutory Demand Notice under Section 8 of the IBC. This notice gives the company exactly <strong>10 days</strong> to either clear the dues or prove a pre-existing dispute (which must have been raised before the notice was sent).</li>
@@ -436,7 +436,7 @@ export default function SalaryRecoveryGuideClient() {
                   <h2 className="text-xl md:text-3xl font-black text-slate-900 mb-5 border-b-2 border-[#DC2626] pb-2 inline-block">8. The Legal Notice Strategy &amp; Mediation</h2>
                   <div className="prose prose-base max-w-none text-slate-650 space-y-6">
                     <p className="text-sm md:text-base leading-relaxed">
-                      A **Legal Notice** is a formal, advocate-signed communication that acts as the mandatory prelude to litigation. It is designed to establish a clear cause of action, demand the payment of outstanding dues within a strict window (typically 15 days), and lay down the evidentiary foundation for future court proceedings. Serving a legal notice is not just a procedural formality; it is a critical strategic move that notifies the employer of impending civil and criminal actions.
+                      A <strong>Legal Notice</strong> is a formal, advocate-signed communication that acts as the mandatory prelude to litigation. It is designed to establish a clear cause of action, demand the payment of outstanding dues within a strict window (typically 15 days), and lay down the evidentiary foundation for future court proceedings. Serving a legal notice is not just a procedural formality; it is a critical strategic move that notifies the employer of impending civil and criminal actions.
                     </p>
                     <p className="text-sm md:text-base leading-relaxed">
                       At LegalRecovery, our panel of experienced labor attorneys drafts custom notices tailored to the specific violations in your case. We do not use generic templates. Instead, we cite precise statutes—such as the relevant state&apos;s Shops and Establishments Act, the Payment of Wages Act, 1936, and the Indian Contract Act, 1872. The notice is physically dispatched via registered speed post to the company’s registered office and is copied to the personal residential addresses of all active directors to establish personal liability.

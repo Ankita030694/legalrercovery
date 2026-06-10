@@ -347,7 +347,7 @@ export default function OnlineScamClient() {
                       Unlike a standard refund request, which is voluntary and depends on the merchant, a chargeback is a forced dispute. Under card network rules (such as Visa Dispute Reason Code 13.1 for &quot;Services Not Provided or Merchandise Not Received&quot;), your card-issuing bank submits a formal chargeback request to the merchant&apos;s acquiring bank. The merchant&apos;s bank must immediately freeze the disputed transaction amount. The merchant is then given a specific timeline (usually 30 to 45 days) to submit proof of delivery or service fulfillment. Since scammers cannot provide legitimate proof of delivery, the card network rules in favor of the customer and reverses the funds.
                     </p>
                     <p className="text-sm md:text-base leading-relaxed">
-                      The standard filing window for chargeback disputes is generally **120 days** from the transaction settlement date. In specific cases, such as services scheduled for future delivery (like tour packages or flight bookings), this window can be extended up to 540 days from the transaction date, provided it is filed within 120 days of the scheduled delivery date. To secure your rights, you must file a chargeback request with your card-issuing bank immediately upon discovering the fraud.
+                      The standard filing window for chargeback disputes is generally <strong>120 days</strong> from the transaction settlement date. In specific cases, such as services scheduled for future delivery (like tour packages or flight bookings), this window can be extended up to 540 days from the transaction date, provided it is filed within 120 days of the scheduled delivery date. To secure your rights, you must file a chargeback request with your card-issuing bank immediately upon discovering the fraud.
                     </p>
                   </div>
                 </section>
@@ -365,9 +365,9 @@ export default function OnlineScamClient() {
                       According to these master regulations, customer liability is determined along the following lines:
                     </p>
                     <ul className="list-disc pl-6 space-y-3 text-sm text-slate-650">
-                      <li><strong>Zero Customer Liability:</strong> The customer faces zero financial loss if the fraud is caused by a bank-side deficiency, system compromise, or a third-party security breach, provided the customer reports the incident to the bank within **3 working days** of receiving the transaction alert.</li>
-                      <li><strong>Limited Customer Liability:</strong> If the report is delayed and made within **4 to 7 working days**, the customer&apos;s liability is capped at a maximum of ₹5,000 for basic savings accounts, ₹10,000 for standard savings/credit cards, and ₹25,000 for credit cards with limits exceeding ₹5 Lakhs. The bank must refund the remaining amount.</li>
-                      <li><strong>Liability for Customer Negligence:</strong> If the customer shared login credentials (OTP, PIN), they bear the entire loss **until the fraud is reported**. Any subsequent fraud transactions occurring after reporting must be borne entirely by the bank.</li>
+                      <li><strong>Zero Customer Liability:</strong> The customer faces zero financial loss if the fraud is caused by a bank-side deficiency, system compromise, or a third-party security breach, provided the customer reports the incident to the bank within <strong>3 working days</strong> of receiving the transaction alert.</li>
+                      <li><strong>Limited Customer Liability:</strong> If the report is delayed and made within <strong>4 to 7 working days</strong>, the customer&apos;s liability is capped at a maximum of ₹5,000 for basic savings accounts, ₹10,000 for standard savings/credit cards, and ₹25,000 for credit cards with limits exceeding ₹5 Lakhs. The bank must refund the remaining amount.</li>
+                      <li><strong>Liability for Customer Negligence:</strong> If the customer shared login credentials (OTP, PIN), they bear the entire loss <strong>until the fraud is reported</strong>. Any subsequent fraud transactions occurring after reporting must be borne entirely by the bank.</li>
                     </ul>
                     <p className="text-sm md:text-base leading-relaxed">
                       Furthermore, Paragraph 8 of the RBI Master Circular mandates the provision of <strong>Shadow Credit (Temporary Reversal)</strong>. Within 10 working days of receiving a customer&apos;s unauthorized transaction report, the bank must credit the disputed amount back to the customer&apos;s account. This shadow credit ensures the customer&apos;s funds are not locked during the bank&apos;s investigation, which can take up to 90 days. If the bank fails to credit this reversal, they are in direct violation of the RBI directive.
@@ -382,7 +382,7 @@ export default function OnlineScamClient() {
                   </h2>
                   <div className="prose prose-base max-w-none text-slate-650 space-y-6">
                     <p className="text-sm md:text-base leading-relaxed">
-                      When online scammers operate fake shopping websites or run scam links, they process payments through third-party payment gateways and aggregators (such as Razorpay, Cashfree, Instamojo, or Paytm). Under RBI directives, these aggregators are required to operate **Nodal Accounts** to temporarily hold customer funds.
+                      When online scammers operate fake shopping websites or run scam links, they process payments through third-party payment gateways and aggregators (such as Razorpay, Cashfree, Instamojo, or Paytm). Under RBI directives, these aggregators are required to operate <strong>Nodal Accounts</strong> to temporarily hold customer funds.
                     </p>
                     <p className="text-sm md:text-base leading-relaxed">
                       A nodal account is a special bank account designed to prevent payment intermediaries from utilizing customer money. The payout of funds from the nodal account to the merchant is delayed by a standard settlement cycle, typically T+2 or T+3 days (transaction day plus two/three days). This delay represents a crucial window for fraud recovery.
@@ -403,7 +403,7 @@ export default function OnlineScamClient() {
                       The legal liability of payment gateways, web hosts, and telecom companies is regulated by the <strong>Information Technology (IT) Act, 2000</strong>. Under Section 79 of the IT Act, these entities are classified as &quot;intermediaries&quot; and enjoy &quot;safe harbor&quot; protection, meaning they are not civilly or criminally liable for any third-party transaction data or services passing through their platforms.
                     </p>
                     <p className="text-sm md:text-base leading-relaxed">
-                      However, this safe harbor is **conditional** and can be stripped under specific circumstances:
+                      However, this safe harbor is <strong>conditional</strong> and can be stripped under specific circumstances:
                     </p>
                     <ul className="list-disc pl-6 space-y-3 text-sm text-slate-650">
                       <li><strong>KYC Negligence:</strong> Gateways must perform due diligence before onboarding merchants. If they onboard fraudulent shell companies without verifying their physical offices, registration certificates, and business models, they are negligent in their compliance duties.</li>
@@ -489,7 +489,7 @@ export default function OnlineScamClient() {
                       You can file a consumer complaint in the District Consumer Disputes Redressal Commission having jurisdiction over your place of residence or work (making it highly accessible). Consumer courts are empowered to order the bank to refund the principal fraud amount, pay interest, award compensation for mental agony and professional harassment, and cover your litigation costs.
                     </p>
                     <p className="text-sm md:text-base leading-relaxed">
-                      In parallel, complaints can be filed with the **RBI Integrated Ombudsman** via the Centralised Receipt and Processing Centre (CRPC) on the CMS portal (cms.rbi.org.in). The Ombudsman acts as an independent arbitrator to resolve customer disputes with banks and financial institutions quickly.
+                      In parallel, complaints can be filed with the <strong>RBI Integrated Ombudsman</strong> via the Centralised Receipt and Processing Centre (CRPC) on the CMS portal (cms.rbi.org.in). The Ombudsman acts as an independent arbitrator to resolve customer disputes with banks and financial institutions quickly.
                     </p>
                   </div>
                 </section>

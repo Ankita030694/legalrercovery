@@ -33,6 +33,16 @@ const legalLinks = [
 ];
 
 const guideLinks = [
+  { label: "Legal Notice for Recovery of Money in India", href: "/legal-notice-for-recovery-of-money" },
+  { label: "Legal Notice for Recovery of Money Sample & Draft", href: "/legal-notice-for-recovery-of-money-sample" },
+  { label: "How to Send a Legal Notice for Money Recovery in India", href: "/how-to-send-a-legal-notice-for-recovery-of-money-in-india" },
+  { label: "How to Draft a Legal Notice for Money Recovery", href: "/how-to-draft-a-legal-notice-for-recovery-of-money" },
+  { label: "Online Legal Notice Services & Legality", href: "/online-legal-notice" },
+  { label: "Legal Notice Online Portal & Legality", href: "/legal-notice-online" },
+  { label: "How to Send a Legal Notice in India", href: "/send-a-legal-notice" },
+  { label: "Send Legal Notice Online", href: "/send-legal-notice" },
+  { label: "Vakil Online Portal & Consultations", href: "/vakil-online" },
+  { label: "Online Lawyer to Send Legal Notice", href: "/online-lawyer-to-send-legal-notice" },
   { label: "How to Send a Legal Notice Online in India", href: "/send-legal-notice-online-india" },
   { label: "Freelancer Payment Recovery Options & Legal Actions", href: "/freelancer-payment-recovery-guide" },
   { label: "How to Recover Unpaid Salary from Employer Legally", href: "/how-to-recover-unpaid-salary-legally" },

@@ -35,36 +35,36 @@ export default function ServicesPage() {
 
   const servicesFaqs: FAQItem[] = [
     {
-      question: "When should I send a legal notice for money recovery?",
-      answer: "You should send a legal notice as soon as a payment becomes overdue and informal communication fails. Informing the debtor formally of the pending dues helps avoid prolonged litigation."
+      question: "How to draft and send legal notice online in India?",
+      answer: "To know how to send legal notice online, you can use our online legal notice drafting service. Simply upload your dispute details, and our advocate for legal notice will prepare a professional notice following the correct legal notice format. We provide the most reliable online legal notice India drafting service and dispatch."
     },
     {
-      question: "Is it mandatory to send a legal notice before filing a lawsuit?",
-      answer: "While not always mandatory, it is highly recommended to send a legal notice to establish your case and show the court you attempted an amicable resolution. In cheque bounce cases, it is a strict statutory requirement."
+      question: "How to reply to a legal notice online?",
+      answer: "If you receive a demand notice, learning how to reply to a legal notice correctly is critical. You should consult a legal notice lawyer or legal notice expert who can review the claims, provide a legal notice consultation, and draft a formal response to resolve the dispute or prevent a recovery suit."
     },
     {
-      question: "Can I send a legal notice for unpaid salary and employment dues?",
-      answer: "Yes, you can send a legal notice citing the Payment of Wages Act to recover unpaid salaries, bonuses, or full and final settlements. Most employers settle upon receiving a formal advocate notice."
+      question: "What are the legal notice drafting charges in India?",
+      answer: "The cost of legal notice drafting starts at a flat fee of ₹999 on our platform. Our transparent legal notice drafting charges cover advocate review, professional drafting, high-quality printing, speed post dispatch, and digital tracking, with zero hidden commissions or extra retainer fees."
     },
     {
-      question: "What happens after I send a legal notice and the recipient ignores it?",
-      answer: "If you send a legal notice and the recipient ignores it, you can escalate the matter by filing a summary suit, a police complaint for criminal breach of trust, or taking other appropriate legal actions."
+      question: "Can I send legal notice online for unpaid money?",
+      answer: "Yes, you can send legal notice online for unpaid money, outstanding dues recovery, or unpaid invoice recovery. A legal notice for recovery of money is a pre-litigation step sent by a money recovery lawyer to resolve a business dispute or contract breach amicably before resorting to physical litigation in court."
     },
     {
-      question: "How much does it cost to send a legal notice through this platform?",
-      answer: "You can send a legal notice starting at a flat fee of ₹999. This includes professional drafting, advocate review, printing, speed post dispatch, and digital tracking. There are no hidden charges."
+      question: "How does a Section 138 Notice for cheque bounce work?",
+      answer: "In cheque bounce cases, you must send a Cheque Bounce Notice (Section 138 Notice) under the Negotiable Instruments Act. This section 138 legal notice is a mandatory statutory requirement and must be sent by a legal notice lawyer online within 30 days of receiving the dishonoured cheque memo."
     },
     {
-      question: "Can a business send a legal notice to another business for unpaid invoices?",
-      answer: "Yes, any business can send a legal notice to recover unpaid B2B invoices and contractual dues under the Indian Contract Act and MSME guidelines."
+      question: "Is LegalRecovery the best legal recovery company in India?",
+      answer: "Yes, LegalRecovery is widely recognized as the best legal recovery company and legal recovery company India. We offer a 100% online legal notice drafting service where you can send legal notice online, draft legal notice online, and receive legal notice assistance from a qualified advocate for legal notice."
     },
     {
-      question: "Do I need to meet a lawyer in person to send a legal notice?",
-      answer: "No, you do not need to meet anyone in person. You can easily draft and send a legal notice online using our secure platform, saving time and money."
+      question: "Can I send a legal notice for salary recovery and employment disputes?",
+      answer: "Yes, you can send a legal notice to employer under the Payment of Wages Act for unpaid salary recovery, fnf settlement recovery, or general employee salary dispute. Most employers settle outstanding payment recovery upon receiving a formal legal notice for salary recovery or salary recovery legal notice."
     },
     {
-      question: "What details are required to send a legal notice?",
-      answer: "You need the recipient's name and address, details of the dispute, the total amount due, and supporting evidence like invoices, chat logs, or bank records to send a legal notice."
+      question: "What details are required to send a legal notice for security deposit recovery?",
+      answer: "To send a legal notice to landlord for security deposit recovery, tenant deposit recovery, or rental deposit recovery, you need the landlord's contact details, rent agreement copy, deposit receipt, and communication logs showing they withheld the money without justification. Our platform simplifies legal notice for security deposit recovery drafting."
     }
   ];
 
@@ -74,10 +74,11 @@ export default function ServicesPage() {
       title: "Salary &\nEmployment Dues",
       slug: "/services/recovery-of-salary-and-employment-dues",
       pointers: [
-        "Unpaid F&F dues",
-        "Delayed salaries",
-        "Unpaid bonuses",
-        "Wrongful termination"
+        "salary recovery legal notice",
+        "unpaid salary recovery",
+        "fnf settlement recovery",
+        "employee salary dispute",
+        "legal notice for salary recovery"
       ],
       icon: (
         <div className="relative w-8 h-8 sm:w-12 sm:h-12 flex items-center justify-center">
@@ -93,10 +94,10 @@ export default function ServicesPage() {
       title: "Refunds &\nConsumer Complaints",
       slug: "/services/refunds-and-consumer-complaints",
       pointers: [
-        "E-commerce refunds",
-        "Defective products",
-        "Billing overcharges",
-        "Warranty breaches"
+        "consumer refund recovery",
+        "ecommerce refund recovery",
+        "online refund legal notice",
+        "Consumer complaint filing"
       ],
       icon: (
         <div className="relative w-8 h-8 sm:w-12 sm:h-12 flex items-center justify-center">
@@ -112,10 +113,11 @@ export default function ServicesPage() {
       title: "Security Deposits &\nRental Recoveries",
       slug: "/services/security-deposits-and-rental-recoveries",
       pointers: [
-        "Unreturned deposits",
-        "Commercial leases",
-        "Deduction disputes",
-        "Delayed rent dues"
+        "security deposit recovery",
+        "rental deposit recovery",
+        "legal notice to landlord",
+        "tenant deposit recovery",
+        "legal notice for security deposit recovery"
       ],
       icon: (
         <div className="relative w-8 h-8 sm:w-12 sm:h-12 flex items-center justify-center">
@@ -131,10 +133,10 @@ export default function ServicesPage() {
       title: "Freelancer &\nClient Payments",
       slug: "/services/recovery-of-freelancer-and-client-payments",
       pointers: [
-        "Milestone payouts",
-        "Contract breaches",
-        "Unapproved work",
-        "Retainer recovery"
+        "freelancer payment recovery",
+        "client payment recovery",
+        "legal notice for freelancer payment",
+        "breach of contract legal notice"
       ],
       icon: (
         <div className="relative w-8 h-8 sm:w-12 sm:h-12 flex items-center justify-center">
@@ -150,10 +152,10 @@ export default function ServicesPage() {
       title: "Friend / Personal\nMoney Recovery",
       slug: "/services/recovery-of-money-from-a-friend",
       pointers: [
-        "Personal loans",
-        "Group expenses",
-        "Cash advances",
-        "Promissory notes"
+        "cheque bounce legal notice",
+        "section 138 legal notice",
+        "legal notice for unpaid money",
+        "debt settlement legal services"
       ],
       icon: (
         <div className="relative w-8 h-8 sm:w-12 sm:h-12 flex items-center justify-center">
@@ -169,10 +171,10 @@ export default function ServicesPage() {
       title: "Airline &\nTravel Recoveries",
       slug: "/services/airline-and-travel-recoveries",
       pointers: [
-        "Flight refunds",
-        "Train booking dues",
-        "Hotel overcharges",
-        "Baggage loss recovery"
+        "Flight & train refunds",
+        "Hotel booking recoveries",
+        "Baggage loss notices",
+        "Travel dispute legal notice"
       ],
       icon: (
         <div className="relative w-8 h-8 sm:w-12 sm:h-12 flex items-center justify-center">
@@ -188,10 +190,12 @@ export default function ServicesPage() {
       title: "Vendor &\nInvoice Recovery",
       slug: "/services/vendor-and-invoice-recoveries",
       pointers: [
-        "Supplier invoices",
-        "Raw material costs",
-        "Supply chain credit",
-        "Service provider dues"
+        "unpaid payment recovery",
+        "outstanding dues recovery",
+        "unpaid invoice recovery",
+        "business dues recovery",
+        "vendor payment recovery",
+        "legal notice for vendor payment"
       ],
       icon: (
         <div className="relative w-8 h-8 sm:w-12 sm:h-12 flex items-center justify-center">
@@ -207,10 +211,10 @@ export default function ServicesPage() {
       title: "Property &\nBuilder Disputes",
       slug: "/services/property-and-builder-disputes",
       pointers: [
-        "Possession delays",
-        "Booking token refund",
-        "Maintenance dues",
-        "Amenity breaches"
+        "legal notice for property dispute",
+        "legal notice for possession",
+        "Landlord legal notice",
+        "Builder contract breach notice"
       ],
       icon: (
         <div className="relative w-8 h-8 sm:w-12 sm:h-12 flex items-center justify-center">
@@ -226,10 +230,10 @@ export default function ServicesPage() {
       title: "Other Legal\nServices",
       slug: "/contact",
       pointers: [
-        "General legal queries",
-        "Document drafting",
-        "Corporate disputes",
-        "Custom notice review"
+        "legal notice drafting",
+        "advocate for legal notice",
+        "online advocate for legal notice",
+        "legal notice lawyer services"
       ],
       icon: (
         <div className="relative w-8 h-8 sm:w-12 sm:h-12 flex items-center justify-center">
@@ -257,13 +261,13 @@ export default function ServicesPage() {
           {/* Left Text Column */}
           <div className="flex flex-col items-start text-left max-w-2xl lg:w-1/2">
             <span className="text-[13px] sm:text-[14px] font-bold text-[#DC2626] uppercase tracking-[0.03em] mb-4 select-text">
-              Professional Services to Send a Legal Notice
+              Professional Legal notice service - online legal notice India
             </span>
             <h1 className="text-3xl sm:text-4xl md:text-[50px] font-black tracking-tight text-[#111827] leading-[1.1] mb-6 select-text">
-              Draft and <span className="text-[#DC2626]">Send a Legal Notice</span> Online
+              Draft and <span className="text-[#DC2626]">send legal notice online</span>
             </h1>
             <p className="text-[15px] md:text-[17px] text-[#4B5563] font-medium leading-[1.6] mb-8 select-text">
-              If you have outstanding salary dues, unreturned security deposits, unpaid freelancer bills, or consumer disputes, the most effective step is to send a legal notice. Our digital platform makes it easy to send a legal notice with professional advocate verification and real-time tracking.
+              Welcome to India's premier legal recovery platform India. If you need a legal notice lawyer or an online advocate for legal notice, our affordable legal notice service makes it easy. We provide professional legal notice drafting and online money recovery India services to resolve disputes quickly.
             </p>
 
             {/* High-Trust Tagline Banner */}
@@ -342,10 +346,10 @@ export default function ServicesPage() {
                 Core Information
               </span>
               <h2 className="text-2xl sm:text-3xl md:text-[36px] font-black text-[#111827] tracking-tight mt-4 leading-tight">
-                Why You Should Send a Legal Notice for Money Recovery
+                Why You Should Choose Our Money Recovery Services
               </h2>
               <p className="text-sm sm:text-base text-[#4B5563] font-medium leading-relaxed mt-4">
-                Under Indian law, deciding to send a legal notice is the most systematic way to resolve financial disputes before going to court. When you send a legal notice, you formally notify the other party of their default and establish a legal record.
+                Under Indian law, opting for recovery through legal notice is the most systematic approach to resolve financial disputes. When you use our legal recovery services, you secure professional legal notice drafting and expert counsel to formally demand the recovery of outstanding payments and manage unpaid dues recovery India.
               </p>
             </div>
 
@@ -356,10 +360,10 @@ export default function ServicesPage() {
                   What happens when you send a legal notice?
                 </h3>
                 <p className="text-[13.5px] sm:text-[14.5px] text-[#4B5563] leading-relaxed font-medium">
-                  When you send a legal notice through an advocate, it establishes that you are taking the dispute seriously and are prepared to pursue legal remedies. It outlines the grievances, states the exact outstanding amount, and provides a strict timeline, typically 15 days, for settlement.
+                  When you initiate a money recovery legal notice or commercial dispute legal notice, it establishes that you are taking the debt recovery services India process seriously. As a top legal recovery company India, we ensure that your legal notice for money recovery contains precise statutory references, clearly stating the unpaid payment recovery terms and giving the defaulting party a structured timeline to settle.
                 </p>
                 <p className="text-[13.5px] sm:text-[14.5px] text-[#4B5563] leading-relaxed font-medium">
-                  Most disputes are resolved successfully when you choose to send a legal notice, because it prompts the debtor to negotiate rather than risk a public and costly court proceeding. It is a critical initial step to safeguard your financial rights.
+                  Most businesses and individuals choose our legal help for money recovery to resolve disputes amicably. A professional legal notice drafting draft ensures you have a robust pre-litigation record before proceeding with any court action.
                 </p>
               </div>
 
@@ -371,11 +375,11 @@ export default function ServicesPage() {
                 <ul className="flex flex-col gap-3.5 mt-2">
                   <li className="flex items-start gap-2.5 text-[13.5px] sm:text-[14.5px] text-[#4B5563] font-medium">
                     <Check className="w-4 h-4 text-[#DC2626] stroke-[3.5] mt-1 shrink-0" />
-                    <span><b>Professional Drafting:</b> Advocates draft your notice to ensure all relevant acts and penal codes are referenced.</span>
+                    <span><b>Best Legal Recovery Company:</b> We are rated as the best legal recovery company, helping resolve disputes pan-India.</span>
                   </li>
                   <li className="flex items-start gap-2.5 text-[13.5px] sm:text-[14.5px] text-[#4B5563] font-medium">
                     <Check className="w-4 h-4 text-[#DC2626] stroke-[3.5] mt-1 shrink-0" />
-                    <span><b>Digital Delivery Tracking:</b> You will receive updates as soon as we send a legal notice and it is delivered.</span>
+                    <span><b>Digital Delivery Tracking:</b> You will receive updates as soon as we dispatch the legal notice and it is delivered.</span>
                   </li>
                   <li className="flex items-start gap-2.5 text-[13.5px] sm:text-[14.5px] text-[#4B5563] font-medium">
                     <Check className="w-4 h-4 text-[#DC2626] stroke-[3.5] mt-1 shrink-0" />
@@ -460,7 +464,7 @@ export default function ServicesPage() {
                 </div>
                 <h4 className="text-[15px] font-extrabold text-[#111827] mb-2">CPC Order 37</h4>
                 <p className="text-xs text-[#4B5563] font-medium leading-relaxed">
-                  Before filing a summary suit, you can send a legal notice to give the debtor a final chance to settle outstanding debts and avoid litigation.
+                  Before filing a summary recovery suit, you can send a legal notice for recovery of money to give the debtor a final chance to settle outstanding debts and avoid litigation.
                 </p>
               </div>
 
@@ -470,7 +474,7 @@ export default function ServicesPage() {
                 </div>
                 <h4 className="text-[15px] font-extrabold text-[#111827] mb-2">Section 138, NI Act</h4>
                 <p className="text-xs text-[#4B5563] font-medium leading-relaxed">
-                  It is a mandatory statutory requirement to send a legal notice within 30 days of a cheque bounce to initiate criminal proceedings against the drawer.
+                  It is a mandatory statutory requirement to send a Section 138 Notice (Cheque Bounce Notice) within 30 days of a cheque bounce memo to address a dishonoured cheque notice under the NI Act.
                 </p>
               </div>
 
@@ -480,7 +484,7 @@ export default function ServicesPage() {
                 </div>
                 <h4 className="text-[15px] font-extrabold text-[#111827] mb-2">Payment of Wages Act</h4>
                 <p className="text-xs text-[#4B5563] font-medium leading-relaxed">
-                  You can send a legal notice to defaulting employers who unlawfully withhold full and final dues, salaries, or bonuses.
+                  You can send a legal notice to employer under this Act for unpaid salary recovery, legal notice for salary recovery, or general employment dispute resolution.
                 </p>
               </div>
 
@@ -490,7 +494,7 @@ export default function ServicesPage() {
                 </div>
                 <h4 className="text-[15px] font-extrabold text-[#111827] mb-2">Contract Act, Sec 73</h4>
                 <p className="text-xs text-[#4B5563] font-medium leading-relaxed">
-                  In case of contract breaches, you send a legal notice to claim damages, unpaid freelancer invoices, or outstanding vendor bills.
+                  In case of contract breaches, you can send a legal notice for breach of contract to recover damages, unpaid freelancer invoices, or outstanding vendor bills.
                 </p>
               </div>
             </div>

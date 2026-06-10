@@ -316,13 +316,13 @@ export default function MoneyLentClient() {
                       In India, lending money on good faith is an age-old tradition. Friendly loans are frequently extended to relatives, colleagues, close friends, and long-standing business partners to tide over immediate crises. In a vast majority of these transactions, no formal loan contract, promissory note, or mortgage deed is drafted. This is usually due to mutual trust, social expectations, or the urgency of the situation. However, when the borrower defaults or goes cold, the lender is left with a deep anxiety: <strong>Is an oral agreement to lend money legally valid, or is the money lost forever?</strong>
                     </p>
                     <p className="text-sm md:text-base leading-relaxed">
-                      The short and clear answer under Indian law is **Yes**. Oral agreements are fully valid and enforceable. According to **Section 10 of the Indian Contract Act, 1872**, all agreements are contracts if they are made by the free consent of parties competent to contract, for a lawful consideration, and with a lawful object, and are not expressively declared to be void. The Act does not mandate that a contract must always be in writing. 
+                      The short and clear answer under Indian law is <strong>Yes</strong>. Oral agreements are fully valid and enforceable. According to <strong>Section 10 of the Indian Contract Act, 1872</strong>, all agreements are contracts if they are made by the free consent of parties competent to contract, for a lawful consideration, and with a lawful object, and are not expressively declared to be void. The Act does not mandate that a contract must always be in writing. 
                     </p>
                     <p className="text-sm md:text-base leading-relaxed">
-                      This statutory position has been repeatedly upheld by the highest judiciary. In the landmark case of **Alka Bose v. Parmatma Devi (2009)**, the Supreme Court of India observed that even an oral agreement can be as binding and enforceable as a written contract, provided the essential components of a valid contract are established. Similarly, in **S.V. Narayanaswamy v. Savithriamma (2013)**, the court clarified that the burden of proving an oral agreement is undoubtedly heavy, but if the lender can present consistent, reliable, and corroborative evidence, the court will readily grant a recovery decree.
+                      This statutory position has been repeatedly upheld by the highest judiciary. In the landmark case of <strong>Alka Bose v. Parmatma Devi (2009)</strong>, the Supreme Court of India observed that even an oral agreement can be as binding and enforceable as a written contract, provided the essential components of a valid contract are established. Similarly, in <strong>S.V. Narayanaswamy v. Savithriamma (2013)</strong>, the court clarified that the burden of proving an oral agreement is undoubtedly heavy, but if the lender can present consistent, reliable, and corroborative evidence, the court will readily grant a recovery decree.
                     </p>
                     <p className="text-sm md:text-base leading-relaxed">
-                      However, the critical distinction between a written contract and an oral contract lies entirely in the **Burden of Proof**. In a written agreement, the contract itself is primary evidence under the Indian Evidence Act (now the Bharatiya Sakshya Adhiniyam, 2023), and the borrower cannot easily deny their signature or the terms. In an oral agreement, the lender must reconstruct the transaction before the court using circumstantial evidence, financial transactions, and digital communications. Under Section 101 of the Evidence Act, the person who asserts the existence of a fact must prove it. Therefore, you must present a cumulative chain of evidence to convince the judge that money was transferred as a loan (a debt to be repaid) rather than a gift, a business investment, or a donation.
+                      However, the critical distinction between a written contract and an oral contract lies entirely in the <strong>Burden of Proof</strong>. In a written agreement, the contract itself is primary evidence under the Indian Evidence Act (now the Bharatiya Sakshya Adhiniyam, 2023), and the borrower cannot easily deny their signature or the terms. In an oral agreement, the lender must reconstruct the transaction before the court using circumstantial evidence, financial transactions, and digital communications. Under Section 101 of the Evidence Act, the person who asserts the existence of a fact must prove it. Therefore, you must present a cumulative chain of evidence to convince the judge that money was transferred as a loan (a debt to be repaid) rather than a gift, a business investment, or a donation.
                     </p>
                     <div className="bg-red-50 p-6 rounded-2xl border-l-4 border-[#DC2626] italic text-xs sm:text-sm text-red-900 font-semibold leading-relaxed">
                       &quot;An oral agreement is a valid contract in law. The challenge is not its legal status, but the standard of proof required to establish it. A lender must gather a comprehensive digital and banking trail to transform an oral promise into a judicially enforceable debt.&quot;
@@ -337,14 +337,14 @@ export default function MoneyLentClient() {
                   </h2>
                   <div className="prose prose-base max-w-none text-slate-650 space-y-6">
                     <p className="text-sm md:text-base leading-relaxed">
-                      When there is no signed agreement, the court looks at the **conduct of the parties** and the **contemporaneous records** of the transaction. You cannot rely solely on your verbal testimony; you must construct an airtight paper trail. A successful recovery strategy hinges on collecting, preserving, and organizing the following classes of evidence:
+                      When there is no signed agreement, the court looks at the <strong>conduct of the parties</strong> and the <strong>contemporaneous records</strong> of the transaction. You cannot rely solely on your verbal testimony; you must construct an airtight paper trail. A successful recovery strategy hinges on collecting, preserving, and organizing the following classes of evidence:
                     </p>
                     
                     <div className="space-y-6">
                       <div>
                         <h3 className="text-base md:text-lg font-black text-slate-900 mb-2">1. Bank Account Statements & UPI Logs</h3>
                         <p className="text-sm text-slate-650 leading-relaxed">
-                          This is the absolute cornerstone of your case. Avoid cash transactions, as they are notoriously difficult to prove in court unless backed by immediate, signed cash receipts. If you transferred the money via NEFT, RTGS, IMPS, or UPI apps (GPay, PhonePe, Paytm), the transaction record acts as irrefutable proof that money left your account and entered the borrower's account. This proves the **fact of transfer** (the delivery of consideration), which is the first step in proving a contract.
+                          This is the absolute cornerstone of your case. Avoid cash transactions, as they are notoriously difficult to prove in court unless backed by immediate, signed cash receipts. If you transferred the money via NEFT, RTGS, IMPS, or UPI apps (GPay, PhonePe, Paytm), the transaction record acts as irrefutable proof that money left your account and entered the borrower's account. This proves the <strong>fact of transfer</strong> (the delivery of consideration), which is the first step in proving a contract.
                         </p>
                       </div>
 
@@ -366,7 +366,7 @@ export default function MoneyLentClient() {
                           Admissibility under Bharatiya Sakshya Adhiniyam, 2023 (BSA)
                         </h3>
                         <p className="text-sm text-red-900 leading-relaxed">
-                          Electronic records are fully admissible as secondary evidence in Indian courts. Under **Section 63 of the BSA** (which replaced the old Section 65B of the Indian Evidence Act), you must file a digital certificate alongside printed copies of WhatsApp chats, SMS, or emails. This certificate must be signed by a person in charge of the computer system or device from which the logs are retrieved, stating that the device was operating properly and the data was not manipulated. LegalRecovery assists clients in drafting this critical certificate to ensure their digital evidence is accepted by the judge without delay.
+                          Electronic records are fully admissible as secondary evidence in Indian courts. Under <strong>Section 63 of the BSA</strong> (which replaced the old Section 65B of the Indian Evidence Act), you must file a digital certificate alongside printed copies of WhatsApp chats, SMS, or emails. This certificate must be signed by a person in charge of the computer system or device from which the logs are retrieved, stating that the device was operating properly and the data was not manipulated. LegalRecovery assists clients in drafting this critical certificate to ensure their digital evidence is accepted by the judge without delay.
                         </p>
                       </div>
 
@@ -394,7 +394,7 @@ export default function MoneyLentClient() {
                   </h2>
                   <div className="prose prose-base max-w-none text-slate-650 space-y-6">
                     <p className="text-sm md:text-base leading-relaxed">
-                      Many lenders jump straight to filing a lawsuit, which can be expensive and time-consuming. At LegalRecovery, we believe in a phased, strategic approach. The single most cost-effective and powerful step you can take is serving a formal **Advocate-Signed Legal Notice**. 
+                      Many lenders jump straight to filing a lawsuit, which can be expensive and time-consuming. At LegalRecovery, we believe in a phased, strategic approach. The single most cost-effective and powerful step you can take is serving a formal <strong>Advocate-Signed Legal Notice</strong>. 
                     </p>
                     <p className="text-sm md:text-base leading-relaxed">
                       A legal notice is not just a letter; it is a formal, statutory warning that creates a permanent legal record. It notifies the borrower that their failure to repay the loan constitutes a civil breach and potentially a criminal offense, and gives them a strict deadline (typically 15 days) to clear the outstanding amount.
@@ -405,7 +405,7 @@ export default function MoneyLentClient() {
                     <ul className="list-disc pl-6 space-y-2 text-sm text-slate-650">
                       <li><strong>Establishes the Cause of Action:</strong> It documents the history of the friendly loan, the exact dates of transfer, the verbal terms, and the borrower&apos;s default. This timeline is crucial if the case eventually goes to court.</li>
                       <li><strong>Stops Denials:</strong> When a borrower receives a notice detailing bank transaction numbers and transcripts of their WhatsApp promises, they realize that they cannot simply deny the debt in court.</li>
-                      <li><strong>Triggers Settlement:</strong> Approximately **80% to 85%** of friendly loan disputes are settled out of court after the delivery of a legal notice. Borrowers often consult their own lawyers, who advise them that settling the debt is cheaper and safer than fighting a long civil and criminal battle.</li>
+                      <li><strong>Triggers Settlement:</strong> Approximately <strong>80% to 85%</strong> of friendly loan disputes are settled out of court after the delivery of a legal notice. Borrowers often consult their own lawyers, who advise them that settling the debt is cheaper and safer than fighting a long civil and criminal battle.</li>
                       <li><strong>Calculates Dues and Interest:</strong> The notice formally demands the principal amount along with delayed interest (usually calculated at 9% to 18% per annum) and the costs of the legal notice.</li>
                     </ul>
                     <p className="text-sm md:text-base leading-relaxed">
@@ -421,19 +421,19 @@ export default function MoneyLentClient() {
                   </h2>
                   <div className="prose prose-base max-w-none text-slate-650 space-y-6">
                     <p className="text-sm md:text-base leading-relaxed">
-                      If the borrower ignores the legal notice, you must take the dispute to court. A common fear is that Indian courts take decades to resolve civil disputes. However, the Code of Civil Procedure, 1908 (CPC) contains a specialized, fast-track mechanism called a **Summary Suit** under **Order 37**.
+                      If the borrower ignores the legal notice, you must take the dispute to court. A common fear is that Indian courts take decades to resolve civil disputes. However, the Code of Civil Procedure, 1908 (CPC) contains a specialized, fast-track mechanism called a <strong>Summary Suit</strong> under <strong>Order 37</strong>.
                     </p>
                     <p className="text-sm md:text-base leading-relaxed">
-                      A Summary Suit is vastly different from a regular civil recovery suit. In a regular suit, the defendant has a right to file a written statement, delay hearings, cross-examine witnesses, and drag the case for years. Under Order 37, the defendant does not have an automatic right to defend the case. They must apply for **&quot;Leave to Defend&quot;** within 10 days of being served the summons.
+                      A Summary Suit is vastly different from a regular civil recovery suit. In a regular suit, the defendant has a right to file a written statement, delay hearings, cross-examine witnesses, and drag the case for years. Under Order 37, the defendant does not have an automatic right to defend the case. They must apply for <strong>&quot;Leave to Defend&quot;</strong> within 10 days of being served the summons.
                     </p>
                     <p className="text-sm md:text-base leading-relaxed">
                       To obtain Leave to Defend, the borrower must satisfy the judge that they have a genuine, triable defense. If their defense is found to be a sham, vague, or merely an attempt to delay payment, the court will dismiss their application and immediately pass a judgment and decree in your favor. Even if the court grants them permission to fight the case, it is often conditional upon them depositing the disputed amount (or a portion of it) in the court registry.
                     </p>
                     <p className="text-sm md:text-base leading-relaxed">
-                      **Can a Summary Suit be filed for a loan without a written agreement?**
+                      <strong>Can a Summary Suit be filed for a loan without a written agreement?</strong>
                     </p>
                     <p className="text-sm md:text-base leading-relaxed">
-                      While Order 37 is typically reserved for suits based on bills of exchange, hundis, promissory notes, or written contracts, the judiciary has expanded its scope. In a series of landmark judgments, including **Jyotsna K. Valia v. Patel Travels (2001)** and **Sandeep Kohli v. Ranjit Singh (2018)**, courts have held that a written acknowledgment of a debt—such as bank statements showing transfer, accompanied by emails or WhatsApp chats admitting the liability—constitutes a written contract for a liquidated sum of money. Therefore, if your digital trail is robust, we can file a Summary Suit to bypass years of litigation and secure a quick recovery decree.
+                      While Order 37 is typically reserved for suits based on bills of exchange, hundis, promissory notes, or written contracts, the judiciary has expanded its scope. In a series of landmark judgments, including <strong>Jyotsna K. Valia v. Patel Travels (2001)</strong> and <strong>Sandeep Kohli v. Ranjit Singh (2018)</strong>, courts have held that a written acknowledgment of a debt—such as bank statements showing transfer, accompanied by emails or WhatsApp chats admitting the liability—constitutes a written contract for a liquidated sum of money. Therefore, if your digital trail is robust, we can file a Summary Suit to bypass years of litigation and secure a quick recovery decree.
                     </p>
                   </div>
                 </section>
@@ -460,7 +460,7 @@ export default function MoneyLentClient() {
                           <li><strong>Statutory Notice:</strong> You must send a formal demand notice to the drawer within 30 days of receiving the bounce memo from your bank.</li>
                           <li><strong>15-Day Window:</strong> The borrower has exactly 15 days from receiving the notice to pay the amount.</li>
                           <li><strong>Filing Complaint:</strong> If they fail to pay, you must file a criminal complaint in the Magistrate Court within 30 days.</li>
-                          <li><strong>Penalties:</strong> Under Section 138, the court can sentence the borrower to up to 2 years in prison and impose a fine of up to **double the cheque amount**, which is awarded to the lender as compensation.</li>
+                          <li><strong>Penalties:</strong> Under Section 138, the court can sentence the borrower to up to 2 years in prison and impose a fine of up to <strong>double the cheque amount</strong>, which is awarded to the lender as compensation.</li>
                         </ul>
                       </div>
 
@@ -469,7 +469,7 @@ export default function MoneyLentClient() {
                           2. Criminal Cheating & Breach of Trust under BNS
                         </h3>
                         <p className="text-sm text-slate-650 leading-relaxed">
-                          If there is no cheque, you can still file a criminal complaint under the **Bharatiya Nyaya Sanhita, 2023 (BNS)** (which replaced the Indian Penal Code, IPC) if you can prove dishonest intent.
+                          If there is no cheque, you can still file a criminal complaint under the <strong>Bharatiya Nyaya Sanhita, 2023 (BNS)</strong> (which replaced the Indian Penal Code, IPC) if you can prove dishonest intent.
                         </p>
                         <ul className="list-disc pl-6 space-y-2 text-sm text-slate-650">
                           <li><strong>BNS Section 318 (formerly Section 420 IPC - Cheating):</strong> If the borrower induced you to give them money based on a false pretext (e.g., lying about a medical emergency, promising to buy a property that didn't exist, or providing fake bank proofs), they have committed the offense of cheating. This is punishable by up to 7 years of imprisonment.</li>
@@ -487,17 +487,17 @@ export default function MoneyLentClient() {
                   </h2>
                   <div className="prose prose-base max-w-none text-slate-650 space-y-6">
                     <p className="text-sm md:text-base leading-relaxed">
-                      Under Indian law, delay can defeat equity. You cannot wait indefinitely to recover a loan. The **Limitation Act, 1963** mandates a strict timeframe within which a lender must initiate legal action. If you cross this deadline, the court will dismiss your recovery suit as &quot;time-barred,&quot; regardless of how strong your evidence is.
+                      Under Indian law, delay can defeat equity. You cannot wait indefinitely to recover a loan. The <strong>Limitation Act, 1963</strong> mandates a strict timeframe within which a lender must initiate legal action. If you cross this deadline, the court will dismiss your recovery suit as &quot;time-barred,&quot; regardless of how strong your evidence is.
                     </p>
                     <p className="text-sm md:text-base leading-relaxed">
-                      For a suit to recover money lent, the limitation period is **three (3) years**. But when does the three-year clock start ticking?
+                      For a suit to recover money lent, the limitation period is <strong>three (3) years</strong>. But when does the three-year clock start ticking?
                     </p>
                     <ul className="list-disc pl-6 space-y-3 text-sm text-slate-650">
                       <li><strong>If a Repayment Date is Agreed:</strong> The three years begin from the day the repayment deadline passes (e.g., if they promised to return the money on December 31, 2024, you have until December 31, 2027 to file a suit).</li>
                       <li><strong>If No Repayment Date is Agreed:</strong> The limitation begins from the date the money was actually lent and transferred.</li>
                     </ul>
                     <p className="text-sm md:text-base leading-relaxed">
-                      **How to Reset the Limitation Clock (Section 18 & 19):**
+                      <strong>How to Reset the Limitation Clock (Section 18 & 19):</strong>
                     </p>
                     <p className="text-sm md:text-base leading-relaxed">
                       The law provides two critical exceptions that can reset the three-year limitation period, giving you a fresh window of three years:

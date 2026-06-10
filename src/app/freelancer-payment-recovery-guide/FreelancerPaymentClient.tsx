@@ -345,7 +345,7 @@ export default function FreelancerPaymentClient() {
                   <h2 className="text-xl md:text-3xl font-black text-slate-900 mb-5 border-b-2 border-[#DC2626] pb-2 inline-block">3. MSME Samadhan: Protection for Freelancers</h2>
                   <div className="prose prose-base max-w-none text-slate-650 space-y-6">
                     <p className="text-sm md:text-base leading-relaxed">
-                      For registered freelancers, the <strong>Micro, Small and Medium Enterprises Development (MSMED) Act, 2006</strong> provides the most powerful recovery mechanism in India. Individual freelancers, proprietary consultants, and independent agencies can easily secure an **Udyam Registration** online for free.
+                      For registered freelancers, the <strong>Micro, Small and Medium Enterprises Development (MSMED) Act, 2006</strong> provides the most powerful recovery mechanism in India. Individual freelancers, proprietary consultants, and independent agencies can easily secure an <strong>Udyam Registration</strong> online for free.
                     </p>
                     <p className="text-sm md:text-base leading-relaxed">
                       Once registered as a micro or small enterprise, you gain statutory protections under Section 15 to 24 of the MSMED Act:
@@ -367,7 +367,7 @@ export default function FreelancerPaymentClient() {
                   <h2 className="text-xl md:text-3xl font-black text-slate-900 mb-5 border-b-2 border-[#DC2626] pb-2 inline-block">4. Summary Suits for Fast-Track Recovery</h2>
                   <div className="prose prose-base max-w-none text-slate-650 space-y-6">
                     <p className="text-sm md:text-base leading-relaxed">
-                      If you are not registered under the MSMED Act, the primary civil remedy for recovering outstanding freelance invoices is filing a **Summary Suit** under **Order 37 of the Code of Civil Procedure, 1908 (CPC)**.
+                      If you are not registered under the MSMED Act, the primary civil remedy for recovering outstanding freelance invoices is filing a <strong>Summary Suit</strong> under <strong>Order 37 of the Code of Civil Procedure, 1908 (CPC)</strong>.
                     </p>
                     <p className="text-sm md:text-base leading-relaxed">
                       A summary suit is a specialized, fast-track recovery proceeding designed for claims arising out of written contracts or liquidated monetary demands (such as invoices, bills, and agreements). It prevents the client from using standard delay tactics:
@@ -412,7 +412,7 @@ export default function FreelancerPaymentClient() {
                   <h2 className="text-xl md:text-3xl font-black text-slate-900 mb-5 border-b-2 border-[#DC2626] pb-2 inline-block">6. Serving Advocate Notice to Defaulting Clients</h2>
                   <div className="prose prose-base max-w-none text-slate-650 space-y-6">
                     <p className="text-sm md:text-base leading-relaxed">
-                      Before initiating summary suits or filing complaints on the MSME portal, the most effective and low-cost step is to serve a **formal legal notice** on an advocate&apos;s letterhead.
+                      Before initiating summary suits or filing complaints on the MSME portal, the most effective and low-cost step is to serve a <strong>formal legal notice</strong> on an advocate&apos;s letterhead.
                     </p>
                     <p className="text-sm md:text-base leading-relaxed">
                       A legal notice acts as a structured final warning. It communicates to the defaulting client that you have formal legal backing and are prepared to escalate. The notice contains:
@@ -424,7 +424,7 @@ export default function FreelancerPaymentClient() {
                       <p><strong>4. The Compliance Deadline:</strong> A strict demand to settle the dues within 15 days, failing which civil and regulatory actions will be launched.</p>
                     </div>
                     <p className="text-sm md:text-base leading-relaxed">
-                      Our statistics show that **approximately 80% of freelance payment disputes are resolved successfully within 15 days of serving a professional notice**. Corporate entities prefer clearing outstanding invoice amounts to facing public litigation, commercial interest penalties, or having their legal departments tied up in court proceedings. We send the notice physically via Speed Post to their registered offices and digitally via email/WhatsApp for maximum impact.
+                      Our statistics show that <strong>approximately 80% of freelance payment disputes are resolved successfully within 15 days of serving a professional notice</strong>. Corporate entities prefer clearing outstanding invoice amounts to facing public litigation, commercial interest penalties, or having their legal departments tied up in court proceedings. We send the notice physically via Speed Post to their registered offices and digitally via email/WhatsApp for maximum impact.
                     </p>
                   </div>
                 </section>
@@ -437,7 +437,7 @@ export default function FreelancerPaymentClient() {
                       If the defaulting client is a Private Limited or Public Limited company, and the unpaid dues have accumulated to a substantial sum (e.g., across multiple projects or retainer months), freelancers have an additional remedy under the <strong>Insolvency and Bankruptcy Code (IBC), 2016</strong>.
                     </p>
                     <p className="text-sm md:text-base leading-relaxed">
-                      Under the IBC, freelancers are classified as **Operational Creditors**. If a corporate debtor defaults on payments, operational creditors can initiate corporate insolvency resolution proceedings:
+                      Under the IBC, freelancers are classified as <strong>Operational Creditors</strong>. If a corporate debtor defaults on payments, operational creditors can initiate corporate insolvency resolution proceedings:
                     </p>
                     <ul className="list-disc pl-6 space-y-3 text-sm text-slate-650">
                       <li><strong>Section 8 Demand Notice:</strong> Before approaching the National Company Law Tribunal (NCLT), you must serve a statutory Demand Notice under Section 8 of the IBC. This notice gives the company exactly <strong>10 days</strong> to either clear the dues or prove a pre-existing dispute (which must have been raised before the notice was sent).</li>

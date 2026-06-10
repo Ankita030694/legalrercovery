@@ -476,7 +476,7 @@ export default function CreditCardFraudClient() {
                   </h2>
                   <div className="prose prose-base max-w-none text-slate-650 space-y-6">
                     <p className="text-sm md:text-base leading-relaxed">
-                      Digital fraud recovery relies heavily on the quality and admissibility of the evidence presented. In Indian courts and regulatory tribunals, electronic records are subject to strict statutory requirements. Under the **Bharatiya Sakshya Adhiniyam (BSA), 2023**, specifically **Section 63** (which replaced Section 65B of the Indian Evidence Act, 1872), any digital document introduced as primary or secondary evidence must be accompanied by a formal **Digital Certificate**.
+                      Digital fraud recovery relies heavily on the quality and admissibility of the evidence presented. In Indian courts and regulatory tribunals, electronic records are subject to strict statutory requirements. Under the <strong>Bharatiya Sakshya Adhiniyam (BSA), 2023</strong>, specifically <strong>Section 63</strong> (which replaced Section 65B of the Indian Evidence Act, 1872), any digital document introduced as primary or secondary evidence must be accompanied by a formal <strong>Digital Certificate</strong>.
                     </p>
                     <p className="text-sm md:text-base leading-relaxed">
                       A Section 63 BSA certificate is a written declaration confirming the integrity and proper operation of the computer system, mobile phone, or server that produced the digital records. Without this certificate, documents like PDF bank statements, screenshots of transaction alerts, or email logs are considered inadmissible hearsay, which can weaken your case.

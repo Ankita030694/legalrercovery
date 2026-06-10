@@ -416,7 +416,7 @@ export default function EventRefundClient() {
                   <h2 className="text-xl md:text-3xl font-black text-slate-900 mb-5 border-b-2 border-[#DC2626] pb-2 inline-block">6. Statutory Demand Legal Notice</h2>
                   <div className="prose prose-base max-w-none text-slate-650 space-y-6">
                     <p className="text-sm md:text-base leading-relaxed">
-                      A **Legal Notice** is a formal, advocate-signed document that serves as the final warning to the defaulting party. It is not a template email. It is a precise legal instrument served to the registered corporate office of the ticketing platform and the personal addresses of the event organizer&apos;s directors.
+                      A <strong>Legal Notice</strong> is a formal, advocate-signed document that serves as the final warning to the defaulting party. It is not a template email. It is a precise legal instrument served to the registered corporate office of the ticketing platform and the personal addresses of the event organizer&apos;s directors.
                     </p>
                     <p className="text-sm md:text-base leading-relaxed">
                       At LegalRecovery, our legal panel drafts customized notices citing:
@@ -440,7 +440,7 @@ export default function EventRefundClient() {
                   <h2 className="text-xl md:text-3xl font-black text-slate-900 mb-5 border-b-2 border-[#DC2626] pb-2 inline-block">7. e-Daakhil Consumer Commission Filing</h2>
                   <div className="prose prose-base max-w-none text-slate-650 space-y-6">
                     <p className="text-sm md:text-base leading-relaxed">
-                      If the ticketing agency or organizer ignores the legal notice, we escalate the case to the jurisdictional **District Consumer Disputes Redressal Commission**. The government has made this process completely digital through the **e-Daakhil portal** (edaakhil.nic.in).
+                      If the ticketing agency or organizer ignores the legal notice, we escalate the case to the jurisdictional <strong>District Consumer Disputes Redressal Commission</strong>. The government has made this process completely digital through the <strong>e-Daakhil portal</strong> (edaakhil.nic.in).
                     </p>
                     <p className="text-sm md:text-base leading-relaxed">
                       Filing a case on e-Daakhil has several key advantages:

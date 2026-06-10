@@ -380,7 +380,7 @@ export default function FraudTransactionClient() {
                   </h2>
                   <div className="prose prose-base max-w-none text-slate-650 space-y-6">
                     <p className="text-sm md:text-base leading-relaxed">
-                      If the bank&apos;s internal grievance redressal mechanism rejects your complaint or delays the shadow reversal beyond 10 working days, you must scale the dispute to the next levels: the **RBI Integrated Ombudsman** and a formal **Statutory Legal Notice**.
+                      If the bank&apos;s internal grievance redressal mechanism rejects your complaint or delays the shadow reversal beyond 10 working days, you must scale the dispute to the next levels: the <strong>RBI Integrated Ombudsman</strong> and a formal <strong>Statutory Legal Notice</strong>.
                     </p>
                     <p className="text-sm md:text-base leading-relaxed">
                       The Reserve Bank - Integrated Ombudsman Scheme, 2021 (RB-IOS) provides a single point of reference for filing complaints against banks, NBFCs, and payment system providers (like UPI apps and gateways). The process is executed digitally via the RBI Centralised Receipt and Processing Centre (CRPC) through their Complaint Management System (cms.rbi.org.in). 
@@ -410,13 +410,13 @@ export default function FraudTransactionClient() {
                   </h2>
                   <div className="prose prose-base max-w-none text-slate-650 space-y-6">
                     <p className="text-sm md:text-base leading-relaxed">
-                      While bank-level proceedings focus on service deficiencies, identifying and stopping the fraudster requires law enforcement. The Government of India operates the **National Cyber Crime Reporting Portal (NCCRP)** at cybercrime.gov.in, supported by the national helpline **1930** (formerly 155260).
+                      While bank-level proceedings focus on service deficiencies, identifying and stopping the fraudster requires law enforcement. The Government of India operates the <strong>National Cyber Crime Reporting Portal (NCCRP)</strong> at cybercrime.gov.in, supported by the national helpline <strong>1930</strong> (formerly 155260).
                     </p>
                     <p className="text-sm md:text-base leading-relaxed">
-                      The 1930 helpline connects directly to the **Citizen Financial Cyber Fraud Reporting and Management System (CFCFRMS)**. This system acts as a real-time link between law enforcement agencies, commercial banks, and digital wallets. The moment a fraud is reported, the system tracks the route of the stolen funds across multiple layers of bank transfers and e-wallets. It triggers automated holds (freezes) on the beneficiary accounts, stopping the scammers from withdrawing or siphoning the money.
+                      The 1930 helpline connects directly to the <strong>Citizen Financial Cyber Fraud Reporting and Management System (CFCFRMS)</strong>. This system acts as a real-time link between law enforcement agencies, commercial banks, and digital wallets. The moment a fraud is reported, the system tracks the route of the stolen funds across multiple layers of bank transfers and e-wallets. It triggers automated holds (freezes) on the beneficiary accounts, stopping the scammers from withdrawing or siphoning the money.
                     </p>
                     <p className="text-sm md:text-base leading-relaxed">
-                      From a statutory perspective, the **Information Technology Act, 2000** provides strong protections:
+                      From a statutory perspective, the <strong>Information Technology Act, 2000</strong> provides strong protections:
                     </p>
                     <ul className="list-disc pl-6 space-y-3 text-sm text-slate-650">
                       <li><strong>Section 43A of the IT Act:</strong> If a body corporate (including banks, payment gateways, or e-commerce intermediaries) is negligent in implementing reasonable security practices while handling sensitive personal data, resulting in wrongful loss to a person, they must pay compensation to the victim. There is no upper limit on the compensation that can be claimed under this section.</li>

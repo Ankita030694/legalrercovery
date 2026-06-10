@@ -317,10 +317,10 @@ export default function HandLoanAmountClient() {
                       Lending a hand loan is a very common method of rendering financial assistance in India. Whether it is a colleague asking for money to pay rent, a close friend needing emergency medical funds, or an acquaintance asking for bridge capital, hand loans are frequently given on trust. Usually, these loans are disbursed without any formal loan agreement, promissory note, or security. The transaction is done on a verbal promise or via direct bank transfer/UPI. But when a borrower fails to return the money, lenders often worry that the lack of a written contract leaves them with no legal recourse.
                     </p>
                     <p className="text-sm md:text-base leading-relaxed">
-                      Under Indian law, this is a misconception. According to **Section 10 of the Indian Contract Act, 1872**, oral contracts are fully valid and legally binding, provided they fulfill the basic requirements of a valid contract: free consent of competent parties, a lawful object, and lawful consideration.
+                      Under Indian law, this is a misconception. According to <strong>Section 10 of the Indian Contract Act, 1872</strong>, oral contracts are fully valid and legally binding, provided they fulfill the basic requirements of a valid contract: free consent of competent parties, a lawful object, and lawful consideration.
                     </p>
                     <p className="text-sm md:text-base leading-relaxed">
-                      The validity of oral agreements has been repeatedly upheld by Indian courts, including the Supreme Court in the landmark case of **Alka Bose v. Parmatma Devi (2009)**. The primary challenge is not the legal validity itself, but rather the **burden of proof**. Under Section 101 of the Evidence Act (now the Bharatiya Sakshya Adhiniyam, 2023), the burden lies on the lender to prove the transaction. Consequently, you must present a cumulative chain of secondary evidence to prove that a loan was given with a mutual expectation of repayment, and not as a gift or a business investment.
+                      The validity of oral agreements has been repeatedly upheld by Indian courts, including the Supreme Court in the landmark case of <strong>Alka Bose v. Parmatma Devi (2009)</strong>. The primary challenge is not the legal validity itself, but rather the <strong>burden of proof</strong>. Under Section 101 of the Evidence Act (now the Bharatiya Sakshya Adhiniyam, 2023), the burden lies on the lender to prove the transaction. Consequently, you must present a cumulative chain of secondary evidence to prove that a loan was given with a mutual expectation of repayment, and not as a gift or a business investment.
                     </p>
                     <p className="text-sm md:text-base leading-relaxed">
                       Our legal recovery experts at LegalRecovery specialize in building cases for hand loan recoveries. We collect bank logs, UPI histories, WhatsApp chats, and SMS threads to reconstruct the transaction trail, ensuring the borrower cannot deny their debt in court.
@@ -366,7 +366,7 @@ export default function HandLoanAmountClient() {
                           Electronic Evidence Admissibility under BSA Section 63
                         </h3>
                         <p className="text-sm text-red-900 leading-relaxed">
-                          Under **Section 63 of the Bharatiya Sakshya Adhiniyam, 2023** (which replaced the old Section 65B of the Indian Evidence Act), digital logs are admissible in court if they are accompanied by a digital certification. This certificate verifies that the prints or logs were retrieved from a functioning system without data manipulation. LegalRecovery provides automatic assistance in drafting this certificate for our clients.
+                          Under <strong>Section 63 of the Bharatiya Sakshya Adhiniyam, 2023</strong> (which replaced the old Section 65B of the Indian Evidence Act), digital logs are admissible in court if they are accompanied by a digital certification. This certificate verifies that the prints or logs were retrieved from a functioning system without data manipulation. LegalRecovery provides automatic assistance in drafting this certificate for our clients.
                         </p>
                       </div>
 
@@ -394,7 +394,7 @@ export default function HandLoanAmountClient() {
                   </h2>
                   <div className="prose prose-base max-w-none text-slate-650 space-y-6">
                     <p className="text-sm md:text-base leading-relaxed">
-                      Before initiating a formal lawsuit, serving an **Advocate-Signed Legal Notice** is highly recommended. It serves as a final statutory warning, giving the borrower a strict timeline (typically 15 days) to return the loan amount.
+                      Before initiating a formal lawsuit, serving an <strong>Advocate-Signed Legal Notice</strong> is highly recommended. It serves as a final statutory warning, giving the borrower a strict timeline (typically 15 days) to return the loan amount.
                     </p>
                     <p className="text-sm md:text-base leading-relaxed">
                       A professional legal notice serves several purposes:
@@ -402,7 +402,7 @@ export default function HandLoanAmountClient() {
                     <ul className="list-disc pl-6 space-y-2 text-sm text-slate-650">
                       <li><strong>Documents the Claim:</strong> It outlines the transaction timeline, transaction numbers, and terms, creating an official record of default.</li>
                       <li><strong>Puts Pressure on the Borrower:</strong> Receiving a physical notice on a law firm&apos;s letterhead shows the borrower that you are serious about taking legal action.</li>
-                      <li><strong>Triggers Pre-Litigation Settlement:</strong> Approximately **80-85%** of friendly loan disputes are resolved at the legal notice stage, as borrowers prefer settling the dues to avoid court costs and public records.</li>
+                      <li><strong>Triggers Pre-Litigation Settlement:</strong> Approximately <strong>80-85%</strong> of friendly loan disputes are resolved at the legal notice stage, as borrowers prefer settling the dues to avoid court costs and public records.</li>
                       <li><strong>Demands Interest:</strong> The notice formally claims the principal amount along with delayed interest (9% to 18% per annum) and the costs of the notice.</li>
                     </ul>
                     <p className="text-sm md:text-base leading-relaxed">
@@ -418,16 +418,16 @@ export default function HandLoanAmountClient() {
                   </h2>
                   <div className="prose prose-base max-w-none text-slate-650 space-y-6">
                     <p className="text-sm md:text-base leading-relaxed">
-                      If the borrower fails to pay after receiving the notice, you can file a **Summary Suit** under **Order 37 of the Code of Civil Procedure (CPC), 1908**. This is a fast-track civil recovery proceeding.
+                      If the borrower fails to pay after receiving the notice, you can file a <strong>Summary Suit</strong> under <strong>Order 37 of the Code of Civil Procedure (CPC), 1908</strong>. This is a fast-track civil recovery proceeding.
                     </p>
                     <p className="text-sm md:text-base leading-relaxed">
-                      Unlike an ordinary recovery suit that can take years, a Summary Suit restricts the defendant&apos;s ability to delay. Once the summons are served, the borrower must apply to the court for **&quot;Leave to Defend&quot;** within 10 days. 
+                      Unlike an ordinary recovery suit that can take years, a Summary Suit restricts the defendant&apos;s ability to delay. Once the summons are served, the borrower must apply to the court for <strong>&quot;Leave to Defend&quot;</strong> within 10 days. 
                     </p>
                     <p className="text-sm md:text-base leading-relaxed">
                       The borrower must satisfy the judge that they have a genuine, triable defense. If their defense is found to be a sham, vague, or intended to delay the trial, the court will dismiss the application and pass a decree in your favor. 
                     </p>
                     <p className="text-sm md:text-base leading-relaxed">
-                      Courts in landmark cases like **Sandeep Kohli v. Ranjit Singh (2018)** have ruled that when bank transfer sheets are coupled with digital acknowledgments of a debt (such as WhatsApp messages, emails, or UPI logs), they collectively constitute a written agreement for a liquidated sum of money, making a Summary Suit under Order 37 admissible.
+                      Courts in landmark cases like <strong>Sandeep Kohli v. Ranjit Singh (2018)</strong> have ruled that when bank transfer sheets are coupled with digital acknowledgments of a debt (such as WhatsApp messages, emails, or UPI logs), they collectively constitute a written agreement for a liquidated sum of money, making a Summary Suit under Order 37 admissible.
                     </p>
                   </div>
                 </section>
@@ -462,7 +462,7 @@ export default function HandLoanAmountClient() {
                           2. Criminal Cheating & Breach of Trust under BNS
                         </h3>
                         <p className="text-sm text-slate-650 leading-relaxed">
-                          If there is no cheque, you can still file a criminal complaint under the **Bharatiya Nyaya Sanhita, 2023 (BNS)** (which replaced the Indian Penal Code, IPC) if you can prove dishonest intent.
+                          If there is no cheque, you can still file a criminal complaint under the <strong>Bharatiya Nyaya Sanhita, 2023 (BNS)</strong> (which replaced the Indian Penal Code, IPC) if you can prove dishonest intent.
                         </p>
                         <ul className="list-disc pl-6 space-y-2 text-sm text-slate-650">
                           <li><strong>BNS Section 318 (formerly Section 420 IPC - Cheating):</strong> If the borrower induced you to give them money based on a false pretext (e.g., lying about a medical emergency, promising to buy a property that didn't exist, or providing fake bank proofs), they have committed the offense of cheating. This is punishable by up to 7 years of imprisonment.</li>
@@ -480,14 +480,14 @@ export default function HandLoanAmountClient() {
                   </h2>
                   <div className="prose prose-base max-w-none text-slate-650 space-y-6">
                     <p className="text-sm md:text-base leading-relaxed">
-                      Under the **Limitation Act, 1963**, the standard limitation period to file a civil suit for friendly loan recovery is **three (3) years**. This clock starts ticking from:
+                      Under the <strong>Limitation Act, 1963</strong>, the standard limitation period to file a civil suit for friendly loan recovery is <strong>three (3) years</strong>. This clock starts ticking from:
                     </p>
                     <ul className="list-disc pl-6 space-y-2 text-sm text-slate-650">
                       <li>The date the loan was disbursed (if no repayment date was agreed).</li>
                       <li>The repayment deadline date (if a repayment date was agreed).</li>
                     </ul>
                     <p className="text-sm md:text-base leading-relaxed">
-                      **Resetting the Clock (Section 18 and Section 19):**
+                      <strong>Resetting the Clock (Section 18 and Section 19):</strong>
                     </p>
                     <p className="text-sm md:text-base leading-relaxed">
                       You can restart the three-year limitation period (giving yourself an additional 3 years) if:

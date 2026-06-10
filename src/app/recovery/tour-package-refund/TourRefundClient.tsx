@@ -35,7 +35,7 @@ const faqs = [
   },
   {
     question: "Is there a limitation period to file a legal claim for a tour package refund?",
-    answer: "Yes. Under the Consumer Protection Act, 2019, you must file a consumer complaint within **two years** from the date the dispute arose (the date the package was cancelled or the date the operator refused the refund). You should serve a statutory demand notice within the first few weeks of the dispute to establish a strong pre-litigation paper trail."
+    answer: "Yes. Under the Consumer Protection Act, 2019, you must file a consumer complaint within <strong>two years</strong> from the date the dispute arose (the date the package was cancelled or the date the operator refused the refund). You should serve a statutory demand notice within the first few weeks of the dispute to establish a strong pre-litigation paper trail."
   },
   {
     question: "What evidence do I need to support my tour package refund case?",
