@@ -282,15 +282,23 @@ async function handleDispatch(req: NextRequest) {
     // 1. Fetch cases that have a timeline step due or needing retry
     const query: any = {
       status: "active",
-      "timeline": {
+    };
+    if (userIdFilter) {
+      // Forceful dispatch for special user: ignore scheduledAt date check
+      query.userId = new ObjectId(userIdFilter);
+      query.timeline = {
+        $elemMatch: {
+          status: { $in: ["scheduled", "partially_delivered", "failed"] }
+        }
+      };
+    } else {
+      // Standard cron queue: enforce scheduledAt date check
+      query.timeline = {
         $elemMatch: {
           status: { $in: ["scheduled", "partially_delivered", "failed"] },
           scheduledAt: { $lte: now.toISOString() }
         }
-      }
-    };
-    if (userIdFilter) {
-      query.userId = new ObjectId(userIdFilter);
+      };
     }
 
     const limit = userIdFilter ? 100 : BATCH_SIZE;
@@ -314,7 +322,7 @@ async function handleDispatch(req: NextRequest) {
                     activeStep.status === "partially_delivered" || 
                     activeStep.status === "failed";
 
-      const isTimePassed = new Date(activeStep.scheduledAt) <= now;
+      const isTimePassed = userIdFilter ? true : (new Date(activeStep.scheduledAt) <= now);
 
       if (!isDue || !isTimePassed) {
         continue;
@@ -673,15 +681,21 @@ async function handleDispatch(req: NextRequest) {
     if (processedCount === limit) {
       const remainingQuery: any = {
         status: "active",
-        "timeline": {
+      };
+      if (userIdFilter) {
+        remainingQuery.userId = new ObjectId(userIdFilter);
+        remainingQuery.timeline = {
+          $elemMatch: {
+            status: { $in: ["scheduled", "partially_delivered", "failed"] }
+          }
+        };
+      } else {
+        remainingQuery.timeline = {
           $elemMatch: {
             status: { $in: ["scheduled", "partially_delivered", "failed"] },
             scheduledAt: { $lte: now.toISOString() }
           }
-        }
-      };
-      if (userIdFilter) {
-        remainingQuery.userId = new ObjectId(userIdFilter);
+        };
       }
       const remainingCount = await db.collection("cases").countDocuments(remainingQuery);
 
