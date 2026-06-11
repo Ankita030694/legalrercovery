@@ -296,7 +296,9 @@ async function handleDispatch(req: NextRequest) {
             clientEmail: complainantEmail,
             clientPhone: complainantPhone,
             clientAddress: complainantAddress,
-            noticeRef
+            noticeRef,
+            invoiceNo: caseDoc.invoiceNo,
+            invoiceDate: caseDoc.invoiceDate
           });
         } catch (pdfErr: any) {
           console.error(`[Queue Processor] PDF Generation error for Case ${caseDoc.caseId}:`, pdfErr);
@@ -476,7 +478,9 @@ async function handleDispatch(req: NextRequest) {
             clientEmail: complainantEmail,
             clientPhone: complainantPhone,
             clientAddress: complainantAddress,
-            noticeRef
+            noticeRef,
+            invoiceNo: caseDoc.invoiceNo,
+            invoiceDate: caseDoc.invoiceDate
           });
         } catch (pdfErr: any) {
           console.error(`[Queue Processor] Step 4 PDF Generation failed for Case ${caseDoc.caseId}:`, pdfErr);

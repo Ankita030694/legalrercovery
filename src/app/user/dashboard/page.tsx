@@ -17,7 +17,9 @@ import {
   Loader2,
   FolderClosed,
   X,
-  Check
+  Check,
+  ChevronDown,
+  Briefcase
 } from "lucide-react";
 import Link from "next/link";
 import { useRouter } from "next/navigation";
@@ -77,6 +79,11 @@ export default function UserDashboard() {
   // Onboarding Active Tour state
   const [onboardingActive, setOnboardingActive] = useState(false);
 
+  // States for advocate filtering features
+  const [representees, setRepresentees] = useState<any[]>([]);
+  const [selectedFilterRepId, setSelectedFilterRepId] = useState("all");
+  const [hasUnlimitedCases, setHasUnlimitedCases] = useState(false);
+
   const fetchCases = async () => {
     try {
       const response = await fetch(`/api/cases?_t=${Date.now()}`);
@@ -99,9 +106,35 @@ export default function UserDashboard() {
     }
   };
 
+  const fetchUserData = async () => {
+    try {
+      const profileRes = await fetch("/api/users/profile");
+      if (profileRes.ok) {
+        const profileData = await profileRes.json();
+        if (profileData.success && profileData.profile) {
+          const unlimited = profileData.profile.hasUnlimitedCases || false;
+          setHasUnlimitedCases(unlimited);
+          
+          if (unlimited) {
+            const repRes = await fetch("/api/representees");
+            if (repRes.ok) {
+              const repData = await repRes.json();
+              if (repData.success && repData.data) {
+                setRepresentees(repData.data);
+              }
+            }
+          }
+        }
+      }
+    } catch (err) {
+      console.error("Failed to load user data for filtering:", err);
+    }
+  };
+
   // Initialize and load cases from MongoDB
   useEffect(() => {
     fetchCases();
+    fetchUserData();
 
     // Sync cases updates if updated on other dashboard subroutes
     const handleRefresh = () => {
@@ -129,11 +162,22 @@ export default function UserDashboard() {
     }
   };
 
+  // Filtered cases calculation
+  const filteredCases = useMemo(() => {
+    if (selectedFilterRepId === "all") {
+      return cases;
+    }
+    if (selectedFilterRepId === "self") {
+      return cases.filter(c => !c.representeeId);
+    }
+    return cases.filter(c => c.representeeId === selectedFilterRepId);
+  }, [cases, selectedFilterRepId]);
+
   // Stats Computations
-  const totalStuck = useMemo(() => cases.reduce((acc, c) => acc + (c.status === "active" ? c.stuckAmount : 0), 0), [cases]);
-  const activeCount = useMemo(() => cases.filter(c => c.status === "active").length, [cases]);
-  const recoveredCount = useMemo(() => cases.filter(c => c.status === "recovered").length, [cases]);
-  const totalRecoveredAmount = useMemo(() => cases.reduce((acc, c) => acc + (c.status === "recovered" ? (c.recoveredAmount !== undefined ? c.recoveredAmount : c.stuckAmount) : 0), 0), [cases]);
+  const totalStuck = useMemo(() => filteredCases.reduce((acc, c) => acc + (c.status === "active" ? c.stuckAmount : 0), 0), [filteredCases]);
+  const activeCount = useMemo(() => filteredCases.filter(c => c.status === "active").length, [filteredCases]);
+  const recoveredCount = useMemo(() => filteredCases.filter(c => c.status === "recovered").length, [filteredCases]);
+  const totalRecoveredAmount = useMemo(() => filteredCases.reduce((acc, c) => acc + (c.status === "recovered" ? (c.recoveredAmount !== undefined ? c.recoveredAmount : c.stuckAmount) : 0), 0), [filteredCases]);
 
   const handleStopNotices = (caseId: string) => {
     setConfirmStopCaseId(caseId);
@@ -264,43 +308,65 @@ export default function UserDashboard() {
           <p className="text-xs sm:text-sm text-slate-500 font-semibold mt-1">Monitor the status of your active recovery claims and notice dispatch queues in real time.</p>
         </div>
 
-      <div className="relative w-full md:w-auto">
-        <Link
-          href="/user/new-recovery"
-          onClick={handleStartNewRecoveryClick}
-          className={`w-full md:w-auto px-5 py-3 text-sm font-black text-white bg-[#DC2626] hover:bg-[#B91C1C] rounded-xl shadow-md shadow-red-990/10 hover:-translate-y-0.5 transition-all duration-200 flex items-center justify-center gap-2 cursor-pointer focus:outline-none
-            ${onboardingActive ? "ring-4 ring-red-500 ring-offset-2 animate-pulse" : ""}`}
-        >
-          <Plus className="w-4 h-4" />
-          Start New Recovery
-        </Link>
-
-        {/* Floating Tooltip next to header button on desktop */}
-        {onboardingActive && (
-          <div className="hidden md:block absolute right-[calc(100%+16px)] top-1/2 -translate-y-1/2 bg-slate-900 text-white rounded-2xl p-4 shadow-2xl border border-slate-700 w-80 text-left pointer-events-auto z-50 animate-in slide-in-from-right-4 duration-300">
-            <div className="flex justify-between items-start mb-1.5">
-              <span className="text-[10px] font-black uppercase tracking-wider text-red-400 bg-red-950/50 px-2 py-0.5 rounded select-none">Quick Guide</span>
-              <button 
-                onClick={(e) => {
-                  e.stopPropagation();
-                  e.preventDefault();
-                  setOnboardingActive(false);
-                  localStorage.setItem("lr_onboarding_state", "completed");
-                }} 
-                className="text-slate-400 hover:text-white text-xs font-bold cursor-pointer"
+        {/* Filter & CTA Controls */}
+        <div className="flex flex-col sm:flex-row items-stretch sm:items-center gap-3 w-full md:w-auto">
+          {hasUnlimitedCases && (
+            <div className="relative shrink-0">
+              <select
+                value={selectedFilterRepId}
+                onChange={(e) => setSelectedFilterRepId(e.target.value)}
+                className="appearance-none bg-white border border-[#E5E7EB] hover:bg-slate-50 rounded-xl px-4 py-3 pr-10 text-xs font-black text-slate-650 cursor-pointer focus:outline-none focus:border-[#DC2626] transition-all"
               >
-                ✕
-              </button>
+                <option value="all">📁 Filter: All Representations</option>
+                <option value="self">👤 Filter: Self (Advocate)</option>
+                {representees.map(r => (
+                  <option key={r.id || r._id} value={r.id || r._id}>
+                    🏢 Filter: {r.name}
+                  </option>
+                ))}
+              </select>
+              <ChevronDown className="absolute right-3 top-1/2 -translate-y-1/2 w-4 h-4 text-slate-400 pointer-events-none" />
             </div>
-            <p className="text-xs font-semibold leading-relaxed text-slate-100">
-              Enter the details of the entity/individual you wish to recover money from.
-            </p>
-            <div className="text-[9px] font-extrabold text-[#DC2626] uppercase mt-2 select-none tracking-wider text-center">
-              Click this button to start!
-            </div>
+          )}
+
+          <div className="relative w-full md:w-auto">
+            <Link
+              href="/user/new-recovery"
+              onClick={handleStartNewRecoveryClick}
+              className={`w-full md:w-auto px-5 py-3 text-sm font-black text-white bg-[#DC2626] hover:bg-[#B91C1C] rounded-xl shadow-md shadow-red-990/10 hover:-translate-y-0.5 transition-all duration-200 flex items-center justify-center gap-2 cursor-pointer focus:outline-none
+                ${onboardingActive ? "ring-4 ring-red-500 ring-offset-2 animate-pulse" : ""}`}
+            >
+              <Plus className="w-4 h-4" />
+              Start New Recovery
+            </Link>
+
+            {/* Floating Tooltip next to header button on desktop */}
+            {onboardingActive && (
+              <div className="hidden md:block absolute right-[calc(100%+16px)] top-1/2 -translate-y-1/2 bg-slate-900 text-white rounded-2xl p-4 shadow-2xl border border-slate-700 w-80 text-left pointer-events-auto z-50 animate-in slide-in-from-right-4 duration-300">
+                <div className="flex justify-between items-start mb-1.5">
+                  <span className="text-[10px] font-black uppercase tracking-wider text-red-400 bg-red-950/50 px-2 py-0.5 rounded select-none">Quick Guide</span>
+                  <button 
+                    onClick={(e) => {
+                      e.stopPropagation();
+                      e.preventDefault();
+                      setOnboardingActive(false);
+                      localStorage.setItem("lr_onboarding_state", "completed");
+                    }} 
+                    className="text-slate-450 hover:text-white text-xs font-bold cursor-pointer"
+                  >
+                    ✕
+                  </button>
+                </div>
+                <p className="text-xs font-semibold leading-relaxed text-slate-100">
+                  Enter the details of the entity/individual you wish to recover money from.
+                </p>
+                <div className="text-[9px] font-extrabold text-[#DC2626] uppercase mt-2 select-none tracking-wider text-center">
+                  Click this button to start!
+                </div>
+              </div>
+            )}
           </div>
-        )}
-      </div>
+        </div>
       </div>
 
       {/* ── Quick Metrics Grid ── */}
@@ -352,7 +418,7 @@ export default function UserDashboard() {
 
       {/* ── Active Recoveries Timeline Track ── */}
       <div className="flex flex-col gap-6 mt-2">
-        {cases.length === 0 ? (
+        {filteredCases.length === 0 ? (
           <div className="bg-white border border-dashed border-[#E5E7EB] rounded-3xl p-12 text-center flex flex-col items-center">
             <div className="w-16 h-16 bg-slate-50 border border-slate-100 rounded-full flex items-center justify-center mb-4">
               <FolderClosed className="w-6 h-6 text-slate-350" />
@@ -397,7 +463,7 @@ export default function UserDashboard() {
             </div>
           </div>
         ) : (
-          cases.map((c) => (
+          filteredCases.map((c) => (
             <div 
               key={c.id} 
               className={`bg-white border ${c.status === "recovered" ? "border-green-200 shadow-md shadow-green-500/5" : "border-[#E5E7EB]/70"} rounded-3xl p-6 sm:p-8 flex flex-col gap-6 relative transition-all duration-300 hover:shadow-md hover:shadow-slate-200/40 text-left`}
@@ -405,8 +471,14 @@ export default function UserDashboard() {
               {/* Header Case details bar */}
               <div className="flex flex-col md:flex-row md:items-center justify-between gap-4 border-b border-[#E5E7EB]/50 pb-5">
                 <div className="flex flex-col gap-1.5">
-                  <div className="flex items-center gap-2.5">
+                  <div className="flex items-center flex-wrap gap-2.5">
                     <h4 className="text-base font-black text-[#111827] tracking-tight">{c.defaulterName}</h4>
+                    {c.representeeName && (
+                      <span className="text-[10px] font-extrabold bg-red-50 text-[#DC2626] border border-red-100 px-2 py-0.5 rounded-md flex items-center gap-1 shrink-0">
+                        <Briefcase className="w-3 h-3 text-[#DC2626]" />
+                        Representing: {c.representeeName}
+                      </span>
+                    )}
                     <span className={`text-[10px] font-extrabold uppercase px-2.5 py-0.5 rounded-full border
                       ${c.status === "recovered" 
                         ? "bg-green-50 border-green-200 text-[#10B981]" 

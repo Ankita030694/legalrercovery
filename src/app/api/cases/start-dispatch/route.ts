@@ -83,7 +83,9 @@ export async function POST(req: NextRequest) {
         clientName: clientDisplayName,
         clientEmail: complainantEmail,
         clientPhone: complainantPhone,
-        clientAddress: complainantAddress
+        clientAddress: complainantAddress,
+        invoiceNo: caseDoc.invoiceNo,
+        invoiceDate: caseDoc.invoiceDate
       });
     } catch (pdfErr: any) {
       console.error("[Manual Start] PDF generation failed:", pdfErr);

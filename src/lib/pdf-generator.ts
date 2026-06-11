@@ -52,6 +52,9 @@ export interface PDFGeneratorParams {
   clientPhone?: string;
   clientAddress?: string;
   noticeRef?: string;
+  // Invoice Details
+  invoiceNo?: string;
+  invoiceDate?: string;
 }
 
 // --- Letterhead Header and Cities Footer Draw Helpers ---
@@ -497,6 +500,10 @@ export async function generateNoticePDFBuffer(params: PDFGeneratorParams): Promi
     step
   } = params;
 
+  const invoiceSuffix = (params.invoiceNo && params.invoiceNo.trim())
+    ? ` against Invoice No: ${params.invoiceNo.trim()}${params.invoiceDate && params.invoiceDate.trim() ? ` dated ${params.invoiceDate.trim()}` : ""}`
+    : "";
+
   const pdfDoc = await PDFDocument.create();
   
   // Embed core fonts (Times Roman matches original visual design perfectly)
@@ -560,7 +567,7 @@ export async function generateNoticePDFBuffer(params: PDFGeneratorParams): Promi
     writer.currentY -= 10;
 
     // Subject
-    writer.writeParagraph(`Subject: Demand Notice for Immediate Clearance of Outstanding Liability of ₹${formattedAmount} Towards ${params.clientName || 'Tech AMA'}`, 11, true);
+    writer.writeParagraph(`Subject: Demand Notice for Immediate Clearance of Outstanding Liability of ₹${formattedAmount} Towards ${params.clientName || 'Tech AMA'}${invoiceSuffix}`, 11, true);
 
     // Salutation
     writer.writeParagraph("Dear Sir/Madam,", 10.5);
@@ -600,7 +607,7 @@ export async function generateNoticePDFBuffer(params: PDFGeneratorParams): Promi
     writer.currentY -= 10;
 
     // Subject
-    writer.writeParagraph(`Subject: Demand Notice for Immediate Clearance of Outstanding Liability of ₹${formattedAmount} Towards ${params.clientName || 'Tech AMA'}`, 11, true);
+    writer.writeParagraph(`Subject: Demand Notice for Immediate Clearance of Outstanding Liability of ₹${formattedAmount} Towards ${params.clientName || 'Tech AMA'}${invoiceSuffix}`, 11, true);
 
     // Salutation
     writer.writeParagraph("Dear Sir/Madam,", 10.5);
@@ -646,7 +653,7 @@ export async function generateNoticePDFBuffer(params: PDFGeneratorParams): Promi
     writer.currentY -= 10;
 
     // Subject
-    writer.writeParagraph(`Subject: Final Pre-Litigation and Police Complaint Notice for Recovery of ₹${formattedAmount} Under Applicable Provisions of Bharatiya Nyaya Sanhita (BNS)`, 11, true);
+    writer.writeParagraph(`Subject: Final Pre-Litigation and Police Complaint Notice for Recovery of ₹${formattedAmount} Under Applicable Provisions of Bharatiya Nyaya Sanhita (BNS)${invoiceSuffix}`, 11, true);
 
     // Salutation
     writer.writeParagraph("Dear Sir/Madam,", 10.5);
@@ -703,7 +710,7 @@ export async function generateNoticePDFBuffer(params: PDFGeneratorParams): Promi
     writer.currentY -= 10;
 
     // Subject
-    writer.writeParagraph(`Subject: Complaint Against ${defaulterName} for Cheating, Criminal Breach of Trust, Dishonest Non-Payment and Other Applicable Offences Under Bharatiya Nyaya Sanhita (BNS)`, 11, true);
+    writer.writeParagraph(`Subject: Complaint Against ${defaulterName} for Cheating, Criminal Breach of Trust, Dishonest Non-Payment and Other Applicable Offences Under Bharatiya Nyaya Sanhita (BNS)${invoiceSuffix}`, 11, true);
 
     // Complainant Details Table
     writer.writeDetailsTable("COMPLAINANT DETAILS", [

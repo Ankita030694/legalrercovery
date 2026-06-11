@@ -19,7 +19,9 @@ import {
   Lock,
   Plus,
   Search,
-  ChevronDown
+  ChevronDown,
+  Briefcase,
+  Trash2
 } from "lucide-react";
 import Link from "next/link";
 
@@ -67,11 +69,113 @@ export default function NewRecoveryForm() {
     phone: string;
     state: string;
     address: string;
+    hasUnlimitedCases?: boolean;
   } | null>(null);
+
+  // States for advocate representation features
+  const [representees, setRepresentees] = useState<any[]>([]);
+  const [selectedRepresenteeId, setSelectedRepresenteeId] = useState("self");
+  const [originalClientProfile, setOriginalClientProfile] = useState<any>(null);
 
   // Onboarding tour states
   const [onboardingState, setOnboardingState] = useState<string | null>(null);
   const [onboardingTourStep, setOnboardingTourStep] = useState(1);
+
+  const handleRepresentationChange = (repId: string) => {
+    setSelectedRepresenteeId(repId);
+    if (repId === "self") {
+      setClientProfile(originalClientProfile);
+    } else {
+      const rep = representees.find(r => r.id === repId || r._id === repId);
+      if (rep) {
+        setClientProfile({
+          name: rep.name,
+          email: rep.email,
+          phone: rep.phone,
+          state: rep.state,
+          address: rep.address,
+          hasUnlimitedCases: true // keep the flag so the selector remains visible
+        });
+      }
+    }
+  };
+
+  // ── ADVOCATE BULK WORKFLOW STATES & HANDLERS ──
+  const [bulkText, setBulkText] = useState("");
+  const [parsedCases, setParsedCases] = useState<any[]>([]);
+  const [isParsing, setIsParsing] = useState(false);
+  const [parseError, setParseError] = useState<string | null>(null);
+  const [isBulkSubmitting, setIsBulkSubmitting] = useState(false);
+
+  const handleParseBulk = async () => {
+    if (!bulkText.trim()) {
+      alert("Please paste some bulk claim data first.");
+      return;
+    }
+    setIsParsing(true);
+    setParseError(null);
+    try {
+      const response = await fetch("/api/cases/bulk-parse", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json"
+        },
+        body: JSON.stringify({ text: bulkText })
+      });
+      const data = await response.json();
+      if (!response.ok) {
+        throw new Error(data.error || "Failed to parse data");
+      }
+      if (data.success && data.cases) {
+        setParsedCases(data.cases);
+      } else {
+        throw new Error("No cases returned from parser.");
+      }
+    } catch (err: any) {
+      console.error(err);
+      setParseError(err.message || "Failed to connect to the parsing server.");
+    } finally {
+      setIsParsing(false);
+    }
+  };
+
+  const handleDeleteParsedRow = (indexToRemove: number) => {
+    setParsedCases(prev => prev.filter((_, idx) => idx !== indexToRemove));
+  };
+
+  const handleBulkSubmit = async () => {
+    if (parsedCases.length === 0) {
+      alert("No cases to submit.");
+      return;
+    }
+    setIsBulkSubmitting(true);
+    try {
+      const response = await fetch("/api/cases/bulk-create", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json"
+        },
+        body: JSON.stringify({
+          cases: parsedCases,
+          representeeId: selectedRepresenteeId
+        })
+      });
+      const data = await response.json();
+      if (!response.ok) {
+        throw new Error(data.error || "Failed to submit bulk cases.");
+      }
+      
+      // Trigger sidebar / dashboard update
+      window.dispatchEvent(new Event("lr_cases_updated"));
+      alert(`Successfully created ${data.insertedCount || parsedCases.length} cases.`);
+      router.push("/user/dashboard");
+    } catch (err: any) {
+      console.error(err);
+      alert(err.message || "Failed to create bulk cases.");
+    } finally {
+      setIsBulkSubmitting(false);
+    }
+  };
 
   useEffect(() => {
     const fetchNextCaseId = async () => {
@@ -95,6 +199,16 @@ export default function NewRecoveryForm() {
           const data = await res.json();
           if (data.success && data.profile) {
             setClientProfile(data.profile);
+            setOriginalClientProfile(data.profile);
+            if (data.profile.hasUnlimitedCases) {
+              const repRes = await fetch("/api/representees");
+              if (repRes.ok) {
+                const repData = await repRes.json();
+                if (repData.success && repData.data) {
+                  setRepresentees(repData.data);
+                }
+              }
+            }
           }
         }
       } catch (err) {
@@ -313,6 +427,7 @@ export default function NewRecoveryForm() {
           policeStationName,
           policeStationEmail,
           policeStationAddress,
+          representeeId: selectedRepresenteeId !== "self" ? selectedRepresenteeId : undefined
         }),
       });
 
@@ -339,6 +454,237 @@ export default function NewRecoveryForm() {
       setShowPreviewModal(false);
     }
   };
+
+  if (clientProfile?.hasUnlimitedCases) {
+    return (
+      <main className="flex-1 lg:pl-[275px] pt-16 pb-16 lg:pt-0 lg:pb-0 min-h-screen flex flex-col overflow-y-auto bg-slate-50/50">
+        <div className="flex-1 px-4 sm:px-6 lg:px-8 py-8 w-full max-w-5xl mx-auto">
+          <div className="relative flex flex-col gap-6 text-left animate-in fade-in duration-300">
+            
+            {/* Back button */}
+            <div>
+              <Link 
+                href="/user/dashboard"
+                className="inline-flex items-center gap-1.5 text-xs font-bold text-slate-500 hover:text-[#DC2626] transition-colors bg-white px-3.5 py-2 rounded-xl border border-[#E5E7EB]/80 shadow-sm"
+              >
+                <ArrowLeft className="w-3.5 h-3.5" /> Back to Dashboard
+              </Link>
+            </div>
+
+            {/* Header */}
+            <div>
+              <div className="flex items-center gap-2">
+                <span className="text-[10px] font-black bg-red-50 text-[#DC2626] border border-red-100 px-2 py-0.5 rounded uppercase select-none">Advocate Bulk Pipeline</span>
+              </div>
+              <h1 className="text-2xl sm:text-3xl font-black text-[#111827] tracking-tight mt-1">Initiate Bulk Recoveries</h1>
+              <p className="text-xs sm:text-sm text-slate-500 font-semibold mt-1">
+                Dump raw data lists containing outstanding dues and defaulter info. ChatGPT will extract structured claims to queue them for automated notice dispatches.
+              </p>
+            </div>
+
+            {/* Step 1: Configuration & Paste */}
+            <div className="bg-white border border-[#E5E7EB]/70 rounded-3xl p-6 sm:p-8 flex flex-col gap-6 shadow-sm">
+              <div className="border-b border-[#E5E7EB]/50 pb-2.5">
+                <h3 className="text-base font-black text-[#111827]">
+                  1. Setup Representation & Dump Data
+                </h3>
+              </div>
+
+              {/* Representation Selector */}
+              <div className="flex flex-col gap-1.5">
+                <label className="text-xs font-bold text-slate-655 flex items-center gap-1.5">
+                  <Briefcase className="w-3.5 h-3.5 text-slate-450" /> Client Representation
+                </label>
+                <div className="relative w-full max-w-md">
+                  <select
+                    value={selectedRepresenteeId}
+                    onChange={(e) => handleRepresentationChange(e.target.value)}
+                    className="appearance-none w-full bg-slate-50 hover:bg-slate-100/50 border border-[#E5E7EB] focus:border-[#DC2626] rounded-xl px-4 py-3 text-sm font-semibold outline-none transition-colors pr-10 cursor-pointer"
+                  >
+                    <option value="self">Representing Self (Advocate Profile)</option>
+                    {representees.map((r) => (
+                      <option key={r.id || r._id} value={r.id || r._id}>
+                        Representing: {r.name}
+                      </option>
+                    ))}
+                  </select>
+                  <ChevronDown className="absolute right-3 top-1/2 -translate-y-1/2 w-4 h-4 text-slate-400 pointer-events-none" />
+                </div>
+                <p className="text-[10px] text-slate-400 font-bold uppercase mt-1 leading-none">
+                  {selectedRepresenteeId === "self" 
+                    ? "Notices will use your administrator details." 
+                    : "Notices will automatically use organization details for preview and dispatch."}
+                </p>
+              </div>
+
+              {/* Large Textarea for Bulk Paste */}
+              <div className="flex flex-col gap-1.5">
+                <label className="text-xs font-bold text-slate-655 flex items-center justify-between">
+                  <span>Defaulter & Dues Bulk Data (Spreadsheet Dump)</span>
+                  <span className="text-[10px] font-extrabold text-[#DC2626] bg-red-50 border border-red-100 px-2 py-0.5 rounded">Tab-separated / Excel Paste Supported</span>
+                </label>
+                <textarea
+                  rows={10}
+                  placeholder={`Defaulter Legal Name\tOutstanding Dues Amount\tOriginal Payment Due Date\tDefaulter Contact Numbers\tDefaulter Email Addresses\tDefaulter State / UT\tComplete Physical Address of Defaulter\tInvoice no\tInvoice Date\nDr. Amrita Sharma\t1,461,994.00\t24-Nov\t97160 30793\tzumaxaa@ggmail.com\tHaryana\tMetro Pillar Number 461, Gurugram...\tGGN FY 23-24 Sales 5848\t31-Jan-24`}
+                  value={bulkText}
+                  onChange={(e) => setBulkText(e.target.value)}
+                  className="bg-slate-50 hover:bg-slate-100/50 border border-[#E5E7EB] focus:border-[#DC2626] rounded-2xl px-4 py-3 text-xs font-mono outline-none resize-none transition-colors leading-relaxed"
+                />
+              </div>
+
+              {/* Action Button */}
+              <div className="flex flex-col gap-3">
+                {parseError && (
+                  <div className="bg-red-50 border border-red-200 text-red-750 text-xs font-semibold p-4 rounded-xl flex items-center gap-2 leading-relaxed">
+                    <span className="font-bold">⚠️ Parsing Failed:</span>
+                    <span>{parseError}</span>
+                  </div>
+                )}
+                
+                <button
+                  type="button"
+                  onClick={handleParseBulk}
+                  disabled={isParsing || !bulkText.trim()}
+                  className="px-6 py-3.5 text-xs font-black text-white bg-[#DC2626] hover:bg-[#B91C1C] disabled:opacity-50 disabled:cursor-not-allowed rounded-xl transition-all flex items-center justify-center gap-2 cursor-pointer focus:outline-none shadow-md shadow-red-950/15"
+                >
+                  {isParsing ? (
+                    <>
+                      <span className="w-3.5 h-3.5 border-2 border-white border-t-transparent rounded-full animate-spin"></span>
+                      AI is Parsing Your Data List...
+                    </>
+                  ) : (
+                    <>
+                      <span>✨ Parse Claims with AI</span>
+                    </>
+                  )}
+                </button>
+              </div>
+            </div>
+
+            {/* Step 2: Preview & Submit */}
+            {parsedCases.length > 0 && (
+              <div className="bg-white border border-[#E5E7EB]/70 rounded-3xl p-6 sm:p-8 flex flex-col gap-6 shadow-sm animate-in fade-in duration-300">
+                <div className="border-b border-[#E5E7EB]/50 pb-2.5 flex justify-between items-center">
+                  <h3 className="text-base font-black text-[#111827]">
+                    2. Preview Extracted Claims
+                  </h3>
+                  <span className="text-xs font-extrabold uppercase px-2.5 py-0.5 rounded-full bg-red-50 text-[#DC2626] border border-red-100">
+                    {parsedCases.length} Claims Found
+                  </span>
+                </div>
+
+                {/* Table Preview Grid */}
+                <div className="border border-slate-150 rounded-2xl overflow-hidden shadow-sm">
+                  <div className="overflow-x-auto">
+                    <table className="w-full text-xs text-left border-collapse">
+                      <thead>
+                        <tr className="bg-slate-50 border-b border-slate-150 text-[10px] font-black uppercase text-slate-500 tracking-wider">
+                          <th className="px-4 py-3">Defaulter Info</th>
+                          <th className="px-4 py-3">Dues</th>
+                          <th className="px-4 py-3">Contact</th>
+                          <th className="px-4 py-3">State & Address</th>
+                          <th className="px-4 py-3">Invoice Details</th>
+                          <th className="px-4 py-3 text-center">Actions</th>
+                        </tr>
+                      </thead>
+                      <tbody className="divide-y divide-slate-100">
+                        {parsedCases.map((c, idx) => (
+                          <tr key={idx} className="hover:bg-slate-50/50 transition-colors">
+                            {/* Defaulter Info */}
+                            <td className="px-4 py-3.5 align-top">
+                              <div className="font-extrabold text-slate-800 leading-tight">{c.defaulterName}</div>
+                              <div className="text-[10px] text-slate-400 font-bold uppercase mt-0.5">{c.entityType}</div>
+                            </td>
+                            {/* Dues */}
+                            <td className="px-4 py-3.5 align-top">
+                              <div className="font-black text-red-650">₹{c.stuckAmount.toLocaleString("en-IN")}</div>
+                              <div className="text-[10px] text-slate-450 font-semibold mt-0.5">Due: {c.dueDate}</div>
+                            </td>
+                            {/* Contact */}
+                            <td className="px-4 py-3.5 align-top">
+                              <div className="font-semibold text-slate-600">{c.phone}</div>
+                              <div className="text-[10px] text-slate-450 lowercase">{c.email}</div>
+                            </td>
+                            {/* State & Address */}
+                            <td className="px-4 py-3.5 align-top max-w-[200px]">
+                              <div className="font-bold text-slate-700">{c.state}</div>
+                              <div className="text-[10px] text-slate-450 mt-0.5 line-clamp-2 leading-relaxed" title={c.address}>
+                                {c.address}
+                              </div>
+                            </td>
+                            {/* Invoice Details */}
+                            <td className="px-4 py-3.5 align-top">
+                              <div className="font-semibold text-slate-700 truncate max-w-[150px]">{c.invoiceNo || "-"}</div>
+                              <div className="text-[10px] text-slate-450 mt-0.5">{c.invoiceDate || "-"}</div>
+                            </td>
+                            {/* Actions */}
+                            <td className="px-4 py-3.5 align-middle text-center">
+                              <button
+                                type="button"
+                                onClick={() => handleDeleteParsedRow(idx)}
+                                className="p-2 text-red-600 hover:text-red-700 bg-red-50 hover:bg-red-100/80 rounded-xl transition-all cursor-pointer"
+                                title="Delete Case"
+                              >
+                                <Trash2 className="w-3.5 h-3.5" />
+                              </button>
+                            </td>
+                          </tr>
+                        ))}
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+
+                {/* Metrics / Totals footer */}
+                <div className="grid grid-cols-2 gap-4 bg-slate-50 border border-slate-100 p-5 rounded-2xl">
+                  <div className="flex flex-col text-left">
+                    <span className="text-[10px] font-black uppercase text-slate-450 tracking-wider">Total Claims to Launch</span>
+                    <span className="text-lg font-black text-slate-800 mt-0.5">{parsedCases.length}</span>
+                  </div>
+                  <div className="flex flex-col text-left">
+                    <span className="text-[10px] font-black uppercase text-slate-450 tracking-wider">Total Outstanding Dues</span>
+                    <span className="text-lg font-black text-[#DC2626] mt-0.5">
+                      ₹{parsedCases.reduce((sum, c) => sum + c.stuckAmount, 0).toLocaleString("en-IN")}
+                    </span>
+                  </div>
+                </div>
+
+                {/* Submit Panel */}
+                <div className="flex flex-col gap-3">
+                  <div className="bg-red-50 border border-red-200 p-4 rounded-2xl flex items-start gap-3">
+                    <Lock className="w-5 h-5 text-[#DC2626] shrink-0 mt-0.5" />
+                    <div className="flex flex-col gap-0.5 text-[#DC2626] leading-relaxed">
+                      <span className="text-[10px] font-black uppercase tracking-wider">CRITICAL BATCH CONFIRMATION</span>
+                      <span className="text-xs font-bold font-sans">
+                        Confirming will immediately initiate notice schedules for all {parsedCases.length} cases.
+                      </span>
+                    </div>
+                  </div>
+
+                  <button
+                    type="button"
+                    onClick={handleBulkSubmit}
+                    disabled={isBulkSubmitting}
+                    className="w-full py-4 text-xs font-black text-white bg-[#DC2626] hover:bg-[#B91C1C] disabled:opacity-50 rounded-xl transition-all flex items-center justify-center gap-1.5 cursor-pointer shadow-md"
+                  >
+                    {isBulkSubmitting ? (
+                      <>
+                        <span className="w-3.5 h-3.5 border-2 border-white border-t-transparent rounded-full animate-spin"></span>
+                        Launching Batch Pipeline...
+                      </>
+                    ) : (
+                      <>Submit & Launch All {parsedCases.length} Recoveries</>
+                    )}
+                  </button>
+                </div>
+              </div>
+            )}
+
+          </div>
+        </div>
+      </main>
+    );
+  }
 
   return (
     <main className="flex-1 lg:pl-[275px] pt-16 pb-16 lg:pt-0 lg:pb-0 min-h-screen flex flex-col overflow-y-auto">
@@ -399,6 +745,35 @@ export default function NewRecoveryForm() {
             <h3 className="text-base font-black text-[#111827] border-b border-[#E5E7EB]/50 pb-2">
               1. Defaulter & Claim Details
             </h3>
+
+            {/* Client Representation Selector (Only for Advocate/Unlimited Profiles) */}
+            {originalClientProfile?.hasUnlimitedCases && (
+              <div className="flex flex-col gap-1.5 border-b border-[#E5E7EB]/50 pb-4 mb-2">
+                <label className="text-xs font-bold text-slate-650 mb-1.5 flex items-center gap-1.5">
+                  <Briefcase className="w-3.5 h-3.5 text-slate-400" /> Client Representation
+                </label>
+                <div className="relative">
+                  <select
+                    value={selectedRepresenteeId}
+                    onChange={(e) => handleRepresentationChange(e.target.value)}
+                    className="appearance-none w-full bg-slate-50 hover:bg-slate-100/50 border border-[#E5E7EB] focus:border-[#DC2626] rounded-xl px-4 py-3 text-sm font-semibold outline-none transition-colors pr-10 cursor-pointer"
+                  >
+                    <option value="self">Representing Self (Advocate Profile)</option>
+                    {representees.map((r) => (
+                      <option key={r.id || r._id} value={r.id || r._id}>
+                        Representing: {r.name}
+                      </option>
+                    ))}
+                  </select>
+                  <ChevronDown className="absolute right-3 top-1/2 -translate-y-1/2 w-4 h-4 text-slate-400 pointer-events-none" />
+                </div>
+                <p className="text-[10px] text-slate-400 font-bold uppercase mt-1 leading-none">
+                  {selectedRepresenteeId === "self" 
+                    ? "Notices will list your administrator details as client." 
+                    : "Notices will automatically use organization details for preview and dispatch."}
+                </p>
+              </div>
+            )}
             
             {/* Defaulter Name */}
             <div className="flex flex-col">

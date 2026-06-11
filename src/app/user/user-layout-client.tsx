@@ -15,7 +15,8 @@ import {
   ChevronRight,
   ShieldCheck,
   LayoutDashboard,
-  Info
+  Info,
+  Briefcase
 } from "lucide-react";
 
 const navigationItems = [
@@ -64,9 +65,25 @@ export default function UserPortalLayoutClient({
   // Dynamic user details
   const [userName, setUserName] = useState("Tech AMA");
   const [userEmail, setUserEmail] = useState("tech.ama123@gmail.com");
+  const [hasUnlimitedCases, setHasUnlimitedCases] = useState(false);
 
   // Onboarding tour state
   const [onboardingState, setOnboardingState] = useState<string | null>(null);
+
+  // Memoized navigation items based on advocate status
+  const menuItems = React.useMemo(() => {
+    const items = [...navigationItems];
+    if (hasUnlimitedCases) {
+      // Insert representations between New Recovery and How It Works
+      items.splice(2, 0, {
+        label: "Representations",
+        href: "/user/representees",
+        icon: Briefcase,
+        mobileLabel: "Clients"
+      });
+    }
+    return items;
+  }, [hasUnlimitedCases]);
 
   // Sync active count from database API to display in sidebar/bottombar
   useEffect(() => {
@@ -109,6 +126,7 @@ export default function UserPortalLayoutClient({
           if (resData.success && resData.profile) {
             setUserName(resData.profile.name || "Tech AMA");
             setUserEmail(resData.profile.email || "tech.ama123@gmail.com");
+            setHasUnlimitedCases(resData.profile.hasUnlimitedCases || false);
           }
         }
       } catch (err) {
@@ -190,9 +208,8 @@ export default function UserPortalLayoutClient({
             </button>
           </div>
 
-          {/* Navigation Links list inside drawer */}
           <nav className="p-4 flex flex-col gap-1.5">
-            {navigationItems.map((item) => {
+            {menuItems.map((item) => {
               const Icon = item.icon;
               const isActive = pathname === item.href;
               return (
@@ -261,7 +278,7 @@ export default function UserPortalLayoutClient({
 
           {/* Navigation Links list */}
           <nav className="p-4 flex flex-col gap-1.5 mt-4">
-            {navigationItems.map((item) => {
+            {menuItems.map((item) => {
               const Icon = item.icon;
               const isActive = pathname === item.href;
               const isSettingsTourHighlight = item.href === "/user/settings" && onboardingState === "recovery_done";
@@ -351,7 +368,7 @@ export default function UserPortalLayoutClient({
 
       {/* ── MOBILE BOTTOM NAVIGATION BAR (True Mobile-First UX) ── */}
       <nav className="lg:hidden fixed bottom-0 left-0 right-0 h-16 bg-white border-t border-[#E5E7EB]/80 z-40 flex items-center justify-around px-2 pb-safe shadow-[0_-4px_16px_rgba(0,0,0,0.03)]">
-        {navigationItems.map((item) => {
+        {menuItems.map((item) => {
           const Icon = item.icon;
           const isActive = pathname === item.href;
           const isSettingsTourHighlight = item.href === "/user/settings" && onboardingState === "recovery_done";

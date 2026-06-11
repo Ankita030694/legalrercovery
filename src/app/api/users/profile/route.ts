@@ -17,7 +17,7 @@ export async function GET(req: NextRequest) {
   try {
     const { db } = await getDbAndBucket("fs");
     
-    let user;
+    let user: any;
     if (userId === "admin-env-root") {
       // Mock/Admin fallback
       user = {
@@ -43,7 +43,9 @@ export async function GET(req: NextRequest) {
         email: user.email,
         phone: user.phone,
         state: user.state || "Haryana",
-        address: user.address || ""
+        address: user.address || "",
+        hasUnlimitedCases: user.hasUnlimitedCases || false,
+        isPaid: user.isPaid || false
       }
     });
 

@@ -34,6 +34,10 @@ export async function GET(req: NextRequest) {
 
     const userId = new ObjectId((session.user as any).id);
 
+    // Fetch representees to map their names to cases in memory
+    const representees = await db.collection("representees").find({ userId }).toArray();
+    const representeeMap = new Map(representees.map(r => [r._id.toString(), r]));
+
     // Retrieve cases securely filtered by userId
     const cases = await db
       .collection("cases")
@@ -41,7 +45,18 @@ export async function GET(req: NextRequest) {
       .sort({ createdAt: -1 })
       .toArray();
 
-    return NextResponse.json({ success: true, count: cases.length, data: cases });
+    const mappedCases = cases.map(c => {
+      if (c.representeeId) {
+        const rep = representeeMap.get(c.representeeId.toString());
+        return {
+          ...c,
+          representeeName: rep ? rep.name : null
+        };
+      }
+      return c;
+    });
+
+    return NextResponse.json({ success: true, count: mappedCases.length, data: mappedCases });
   } catch (error: any) {
     console.error("GET Cases API Error:", error);
     return NextResponse.json({ error: "Internal server error" }, { status: 500 });
@@ -74,7 +89,8 @@ export async function POST(req: NextRequest) {
       dueDate,
       policeStationName,
       policeStationEmail,
-      policeStationAddress
+      policeStationAddress,
+      representeeId
     } = body;
 
     // Validate fields
@@ -129,6 +145,25 @@ export async function POST(req: NextRequest) {
       return NextResponse.json({ error: "Access denied. Active payment session not found. Please subscribe." }, { status: 403 });
     }
 
+    // Handle representation association if representeeId is provided
+    let representee = null;
+    if (representeeId) {
+      if (user.hasUnlimitedCases !== true) {
+        return NextResponse.json({ error: "Access denied. Only advocate profiles can represent multiple organizations." }, { status: 403 });
+      }
+      try {
+        representee = await db.collection("representees").findOne({
+          _id: new ObjectId(representeeId),
+          userId: userId
+        });
+      } catch (err) {
+        return NextResponse.json({ error: "Invalid representation ID format." }, { status: 400 });
+      }
+      if (!representee) {
+        return NextResponse.json({ error: "Represented organization not found or access denied." }, { status: 404 });
+      }
+    }
+
     // Enforce case creation credits/limits based on the amount the user has paid.
     // Production amount is ₹999 per opposition. Testing is ₹1 per opposition.
     const PRICE_PER_OPPOSITION = 999; // TO CHANGE TO PRODUCTION PRICE: Change 1 to 999
@@ -181,10 +216,11 @@ export async function POST(req: NextRequest) {
       policeStationName,
       policeStationEmail,
       policeStationAddress,
-      clientName: user.name || user.companyName || "Tech AMA",
-      clientEmail: user.email || "",
-      clientPhone: user.phone || "",
-      clientAddress: user.address || "",
+      clientName: representee ? representee.name : (user.name || user.companyName || "Tech AMA"),
+      clientEmail: representee ? representee.email : (user.email || ""),
+      clientPhone: representee ? representee.phone : (user.phone || ""),
+      clientAddress: representee ? representee.address : (user.address || ""),
+      ...(representee ? { representeeId: representee._id } : {}),
       status: "active",
       currentStep: 1,
       createdAt: today.toISOString(),
