@@ -234,11 +234,12 @@ export async function sendNoticeEmail(
     },
   });
 
+  const isHtml = bodyText.trim().startsWith("<") && bodyText.trim().includes(">");
   const mailOptions: any = {
     from: `"AMA Legal Solutions - Legal Notice" <${noticeEmailUser}>`,
     to: toEmail,
     subject: subject,
-    text: bodyText,
+    [isHtml ? "html" : "text"]: bodyText,
     attachments: [
       {
         filename: pdfFilename,

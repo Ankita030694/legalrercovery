@@ -19,7 +19,8 @@ import {
   X,
   Check,
   ChevronDown,
-  Briefcase
+  Briefcase,
+  Send
 } from "lucide-react";
 import Link from "next/link";
 import { useRouter } from "next/navigation";
@@ -83,6 +84,8 @@ export default function UserDashboard() {
   const [representees, setRepresentees] = useState<any[]>([]);
   const [selectedFilterRepId, setSelectedFilterRepId] = useState("all");
   const [hasUnlimitedCases, setHasUnlimitedCases] = useState(false);
+  const [userPhone, setUserPhone] = useState<string>("");
+  const [isDispatchingBatch, setIsDispatchingBatch] = useState(false);
 
   const fetchCases = async () => {
     try {
@@ -114,6 +117,7 @@ export default function UserDashboard() {
         if (profileData.success && profileData.profile) {
           const unlimited = profileData.profile.hasUnlimitedCases || false;
           setHasUnlimitedCases(unlimited);
+          setUserPhone(profileData.profile.phone || "");
           
           if (unlimited) {
             const repRes = await fetch("/api/representees");
@@ -128,6 +132,29 @@ export default function UserDashboard() {
       }
     } catch (err) {
       console.error("Failed to load user data for filtering:", err);
+    }
+  };
+
+  const isSpecialUser = userPhone.replace(/\D/g, '').endsWith('8700343611');
+
+  const handleTriggerSpecialDispatch = async () => {
+    if (isDispatchingBatch) return;
+    setIsDispatchingBatch(true);
+    try {
+      const res = await fetch("/api/cron/dispatch-queue", {
+        method: "POST",
+      });
+      const data = await res.json();
+      if (res.ok && data.success) {
+        alert(`Batch dispatch completed! Processed ${data.processed} notices.`);
+        fetchCases(); // Refresh cases on the dashboard
+      } else {
+        alert(`Error triggering dispatch: ${data.error || "Unknown error"}`);
+      }
+    } catch (err: any) {
+      alert(`Network error triggering dispatch: ${err.message || err}`);
+    } finally {
+      setIsDispatchingBatch(false);
     }
   };
 
@@ -327,6 +354,26 @@ export default function UserDashboard() {
               </select>
               <ChevronDown className="absolute right-3 top-1/2 -translate-y-1/2 w-4 h-4 text-slate-400 pointer-events-none" />
             </div>
+          )}
+
+          {isSpecialUser && (
+            <button
+              onClick={handleTriggerSpecialDispatch}
+              disabled={isDispatchingBatch}
+              className="w-full md:w-auto px-5 py-3 text-sm font-black text-white bg-slate-800 hover:bg-slate-900 rounded-xl shadow-md hover:-translate-y-0.5 transition-all duration-200 flex items-center justify-center gap-2 cursor-pointer focus:outline-none disabled:opacity-50"
+            >
+              {isDispatchingBatch ? (
+                <>
+                  <Loader2 className="w-4 h-4 animate-spin text-white" />
+                  Dispatching...
+                </>
+              ) : (
+                <>
+                  <Send className="w-4 h-4 text-white" />
+                  Dispatch Due Batch
+                </>
+              )}
+            </button>
           )}
 
           <div className="relative w-full md:w-auto">

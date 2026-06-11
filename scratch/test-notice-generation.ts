@@ -36,6 +36,7 @@ async function testGeneration() {
     try {
       const buffer = await generateNoticePDFBuffer({
         ...baseParams,
+        clientPhone: "9999999999", // Non-special user
         step
       });
       fs.writeFileSync(dest, buffer);

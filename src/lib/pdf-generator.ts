@@ -66,25 +66,27 @@ function drawLetterhead(
   headerImage: PDFImage | null,
   noticeRef: string,
   noticeDate: string
-) {
+): number {
   const { width, height } = page.getSize();
   
-  // 1. Draw header logo centered
+  let logoBottom = height - 55;
   if (headerImage) {
     const imgWidth = 220;
-    const imgHeight = 35;
+    const imgScale = imgWidth / headerImage.width;
+    const imgHeight = headerImage.height * imgScale;
     page.drawImage(headerImage, {
       x: (width - imgWidth) / 2,
-      y: height - 55,
+      y: height - 20 - imgHeight,
       width: imgWidth,
       height: imgHeight,
     });
+    logoBottom = height - 20 - imgHeight;
   }
 
   // 2. Draw address lines
   page.drawText("Advocate & Solicitors", {
     x: (width - fontBold.widthOfTextAtSize("Advocate & Solicitors", 10.5)) / 2,
-    y: height - 72,
+    y: logoBottom - 17,
     size: 10.5,
     font: fontBold,
     color: rgb(0, 0, 0),
@@ -93,7 +95,7 @@ function drawLetterhead(
   const addr = "2493AP, Ground floor, Sector 57, Gurugram-122003 (Haryana)";
   page.drawText(addr, {
     x: (width - fontRegular.widthOfTextAtSize(addr, 9.5)) / 2,
-    y: height - 85,
+    y: logoBottom - 30,
     size: 9.5,
     font: fontRegular,
     color: rgb(0.2, 0.2, 0.2),
@@ -102,40 +104,42 @@ function drawLetterhead(
   const emailText = "E: notice@amalegalsolutions.com";
   page.drawText(emailText, {
     x: (width - fontBold.widthOfTextAtSize(emailText, 9.5)) / 2,
-    y: height - 98,
+    y: logoBottom - 43,
     size: 9.5,
     font: fontBold,
     color: rgb(0.0, 0.4, 0.8), // Blue link color
   });
 
   // 3. Draw Advocate lists
-  page.drawText("Advocate Anuj Anand Malik", { x: 50, y: height - 118, size: 9.5, font: fontBold });
-  page.drawText("MEMBER - BAR COUNCIL OF DELHI", { x: width - 50 - fontBold.widthOfTextAtSize("MEMBER - BAR COUNCIL OF DELHI", 8), y: height - 118, size: 8, font: fontBold });
+  page.drawText("Advocate Anuj Anand Malik", { x: 50, y: logoBottom - 63, size: 9.5, font: fontBold });
+  page.drawText("MEMBER - BAR COUNCIL OF DELHI", { x: width - 50 - fontBold.widthOfTextAtSize("MEMBER - BAR COUNCIL OF DELHI", 8), y: logoBottom - 63, size: 8, font: fontBold });
 
-  page.drawText("Advocate Shrey Arora", { x: 50, y: height - 130, size: 9.5, font: fontBold });
-  page.drawText("MEMBER - MCIA (MUMBAI)", { x: width - 50 - fontBold.widthOfTextAtSize("MEMBER - MCIA (MUMBAI)", 8), y: height - 130, size: 8, font: fontBold });
+  page.drawText("Advocate Shrey Arora", { x: 50, y: logoBottom - 75, size: 9.5, font: fontBold });
+  page.drawText("MEMBER - MCIA (MUMBAI)", { x: width - 50 - fontBold.widthOfTextAtSize("MEMBER - MCIA (MUMBAI)", 8), y: logoBottom - 75, size: 8, font: fontBold });
 
-  page.drawText("ASSOCIATION MEMBER - IACC", { x: width - 50 - fontBold.widthOfTextAtSize("ASSOCIATION MEMBER - IACC", 8), y: height - 142, size: 8, font: fontBold });
+  page.drawText("ASSOCIATION MEMBER - IACC", { x: width - 50 - fontBold.widthOfTextAtSize("ASSOCIATION MEMBER - IACC", 8), y: logoBottom - 87, size: 8, font: fontBold });
 
   // 4. Divider Line
   page.drawLine({
-    start: { x: 50, y: height - 152 },
-    end: { x: width - 50, y: height - 152 },
+    start: { x: 50, y: logoBottom - 97 },
+    end: { x: width - 50, y: logoBottom - 97 },
     thickness: 1.5,
     color: rgb(0, 0, 0),
   });
 
   // 5. Ref and Date
-  page.drawText(`Ref: ${noticeRef}`, { x: 50, y: height - 168, size: 9.5, font: fontBold });
-  page.drawText(`Date: ${noticeDate}`, { x: width - 50 - fontBold.widthOfTextAtSize(`Date: ${noticeDate}`, 9.5), y: height - 168, size: 9.5, font: fontBold });
+  page.drawText(`Ref: ${noticeRef}`, { x: 50, y: logoBottom - 113, size: 9.5, font: fontBold });
+  page.drawText(`Date: ${noticeDate}`, { x: width - 50 - fontBold.widthOfTextAtSize(`Date: ${noticeDate}`, 9.5), y: logoBottom - 113, size: 9.5, font: fontBold });
 
   // 6. Header divider second line
   page.drawLine({
-    start: { x: 50, y: height - 176 },
-    end: { x: width - 50, y: height - 176 },
+    start: { x: 50, y: logoBottom - 121 },
+    end: { x: width - 50, y: logoBottom - 121 },
     thickness: 0.5,
     color: rgb(0.5, 0.5, 0.5),
   });
+
+  return logoBottom - 140;
 }
 
 function drawFooter(page: PDFPage, fontBold: PDFFont, stampImage: PDFImage | null) {
@@ -208,8 +212,7 @@ class NoticePDFWriter {
 
   private addNewPage() {
     this.currentPage = this.pdfDoc.addPage([595.276, 841.890]);
-    this.currentY = 841.890 - 195; // start below the letterhead
-    drawLetterhead(
+    this.currentY = drawLetterhead(
       this.currentPage,
       this.fontRegular,
       this.fontBold,
@@ -220,52 +223,106 @@ class NoticePDFWriter {
     drawFooter(this.currentPage, this.fontBold, this.stampImage);
   }
 
-  // Draw text paragraph with automatic wrapping
-  writeParagraph(text: string, size: number = 10.5, isBold: boolean = false, textIndent: number = 0) {
+  // Draw text paragraph with automatic wrapping and inline bold support (**text**)
+  writeParagraph(text: string, size: number = 10.5, defaultBold: boolean = false, textIndent: number = 0) {
     // Sanitize Rupee symbol to prevent WinAnsi encoding crashes
     const sanitizedText = text.replace(/₹/g, "Rs.");
-    const font = isBold ? this.fontBold : this.fontRegular;
     const maxWidth = 595.276 - 100; // Left margin 50, right margin 50
-    const words = sanitizedText.split(" ");
-    let currentLine = "";
-    const lines: string[] = [];
 
-    // Simple word-wrap algorithm
-    for (let i = 0; i < words.length; i++) {
-      const word = words[i];
-      const testLine = currentLine ? `${currentLine} ${word}` : word;
-      const testWidth = font.widthOfTextAtSize(testLine, size);
-      if (testWidth > maxWidth - (lines.length === 0 ? textIndent : 0)) {
-        lines.push(currentLine);
-        currentLine = word;
-      } else {
-        currentLine = testLine;
+    // Parse paragraph into WordTokens
+    interface WordToken {
+      text: string;
+      isBold: boolean;
+      hasTrailingSpace: boolean;
+    }
+
+    const words: WordToken[] = [];
+    let isBold = defaultBold;
+    let index = 0;
+    while (index < sanitizedText.length) {
+      if (sanitizedText.substring(index, index + 2) === "**") {
+        isBold = !isBold;
+        index += 2;
+        continue;
+      }
+
+      let word = "";
+      while (index < sanitizedText.length && sanitizedText[index] !== " " && sanitizedText.substring(index, index + 2) !== "**") {
+        word += sanitizedText[index];
+        index++;
+      }
+
+      let hasSpace = false;
+      if (index < sanitizedText.length && sanitizedText[index] === " ") {
+        hasSpace = true;
+        index++;
+      }
+
+      if (word !== "" || hasSpace) {
+        words.push({ text: word, isBold, hasTrailingSpace: hasSpace });
       }
     }
-    if (currentLine) {
+
+    // Group WordTokens into wrapped lines
+    const lines: WordToken[][] = [];
+    let currentLine: WordToken[] = [];
+    let currentLineWidth = 0;
+    const spaceWidthRegular = this.fontRegular.widthOfTextAtSize(" ", size);
+    const spaceWidthBold = this.fontBold.widthOfTextAtSize(" ", size);
+
+    for (const word of words) {
+      const font = word.isBold ? this.fontBold : this.fontRegular;
+      const wordWidth = font.widthOfTextAtSize(word.text, size);
+      const spaceWidth = word.isBold ? spaceWidthBold : spaceWidthRegular;
+      const addedWidth = wordWidth + (word.hasTrailingSpace ? spaceWidth : 0);
+      const indent = (lines.length === 0) ? textIndent : 0;
+
+      if (currentLineWidth + addedWidth > maxWidth - indent) {
+        lines.push(currentLine);
+        currentLine = [word];
+        currentLineWidth = addedWidth;
+      } else {
+        currentLine.push(word);
+        currentLineWidth += addedWidth;
+      }
+    }
+    if (currentLine.length > 0) {
       lines.push(currentLine);
     }
 
     const leading = size * 1.4;
 
     for (let i = 0; i < lines.length; i++) {
-      // Check if we hit the bottom page limit
       if (this.currentY < 75) {
         this.addNewPage();
       }
 
-      const indent = i === 0 ? textIndent : 0;
-      this.currentPage.drawText(lines[i], {
-        x: 50 + indent,
-        y: this.currentY,
-        size,
-        font,
-      });
+      const line = lines[i];
+      const indent = (i === 0) ? textIndent : 0;
+      let currentX = 50 + indent;
+
+      for (const word of line) {
+        const font = word.isBold ? this.fontBold : this.fontRegular;
+        
+        if (word.text) {
+          this.currentPage.drawText(word.text, {
+            x: currentX,
+            y: this.currentY,
+            size,
+            font,
+          });
+          currentX += font.widthOfTextAtSize(word.text, size);
+        }
+        
+        if (word.hasTrailingSpace) {
+          const spaceWidth = font.widthOfTextAtSize(" ", size);
+          currentX += spaceWidth;
+        }
+      }
 
       this.currentY -= leading;
     }
     
-    // Gap between paragraphs
     this.currentY -= size * 0.8;
   }
 
@@ -346,7 +403,7 @@ class NoticePDFWriter {
   }
 
   // Write signature block
-  writeSignatureBlock(firmName: string, subText: string) {
+  writeSignatureBlock(firmName: string, subText: string, stampOverrideImage?: PDFImage | null) {
     // If the signature block cannot fit (needs at least 150 points), start a new page
     if (this.currentY < 160) {
       this.addNewPage();
@@ -364,8 +421,9 @@ class NoticePDFWriter {
       });
     }
 
-    if (this.stampImage) {
-      this.currentPage.drawImage(this.stampImage, {
+    const activeStamp = stampOverrideImage !== undefined ? stampOverrideImage : this.stampImage;
+    if (activeStamp) {
+      this.currentPage.drawImage(activeStamp, {
         x: 180,
         y: this.currentY - 12,
         width: 55,
@@ -453,7 +511,7 @@ class NoticePDFWriter {
       for (let i = 0; i < words.length; i++) {
         const word = words[i];
         const testLine = currentLine ? `${currentLine} ${word}` : word;
-        if (this.fontRegular.widthOfTextAtSize(testLine, size) > valueMaxWidth) {
+        if (this.fontBold.widthOfTextAtSize(testLine, size) > valueMaxWidth) {
           lines.push(currentLine);
           currentLine = word;
         } else {
@@ -473,7 +531,7 @@ class NoticePDFWriter {
           x: 50 + labelWidth,
           y: this.currentY,
           size,
-          font: this.fontRegular,
+          font: this.fontBold,
         });
         this.currentY -= leading;
       }
@@ -501,7 +559,7 @@ export async function generateNoticePDFBuffer(params: PDFGeneratorParams): Promi
   } = params;
 
   const invoiceSuffix = (params.invoiceNo && params.invoiceNo.trim())
-    ? ` against Invoice No: ${params.invoiceNo.trim()}${params.invoiceDate && params.invoiceDate.trim() ? ` dated ${params.invoiceDate.trim()}` : ""}`
+    ? ` against Invoice No: **${params.invoiceNo.trim()}**${params.invoiceDate && params.invoiceDate.trim() ? ` dated **${params.invoiceDate.trim()}**` : ""}`
     : "";
 
   const pdfDoc = await PDFDocument.create();
@@ -513,6 +571,7 @@ export async function generateNoticePDFBuffer(params: PDFGeneratorParams): Promi
   let headerImage: PDFImage | null = null;
   let stampImage: PDFImage | null = null;
   let signatureImage: PDFImage | null = null;
+  let barStampImage: PDFImage | null = null;
 
   // Load logo, stamp, and signature assets dynamically
   try {
@@ -532,12 +591,20 @@ export async function generateNoticePDFBuffer(params: PDFGeneratorParams): Promi
     if (fs.existsSync(sigPath)) {
       signatureImage = await pdfDoc.embedPng(fs.readFileSync(sigPath));
     }
+
+    const barStampPath = path.join(publicPath, 'notices', 'bar_stamp.png');
+    if (fs.existsSync(barStampPath)) {
+      barStampImage = await pdfDoc.embedPng(fs.readFileSync(barStampPath));
+    }
   } catch (e) {
     console.warn('[PDF-Generator] Warning: Could not load PNG asset:', e);
   }
 
   const noticeDate = formatDate(new Date().toISOString());
   const noticeRef = params.noticeRef || `LR-0000-0000-${step === 4 ? 'C4' : 'N' + step}`;
+
+  const isSpecialUser = params.clientPhone?.replace(/\D/g, '').endsWith('8700343611');
+  const stampImageToUse = isSpecialUser ? barStampImage : stampImage;
 
   const writer = new NoticePDFWriter(
     pdfDoc,
@@ -573,14 +640,14 @@ export async function generateNoticePDFBuffer(params: PDFGeneratorParams): Promi
     writer.writeParagraph("Dear Sir/Madam,", 10.5);
 
     // Body text
-    writer.writeParagraph(`Under instructions from and on behalf of our client ${params.clientName || 'Tech AMA'}, residing at ${params.clientAddress || 'Delhi, India'}, we hereby call upon you to address and resolve the pending amount/claim arising out of dealings, transactions, services, agreements, commitments, or obligations between you and our client.`, 10.5);
+    writer.writeParagraph(`Under instructions from and on behalf of our client **${params.clientName || 'Tech AMA'}**, residing at **${params.clientAddress || 'Delhi, India'}**, we hereby call upon you to address and resolve the pending amount/claim arising out of dealings, transactions, services, agreements, commitments, or obligations between you and our client.`, 10.5);
 
-    writer.writeParagraph(`It has been informed to us that despite repeated requests, reminders, and communications made by our client, the matter remains unresolved and an amount of INR ${formattedAmount}/- (Rupees ${pendingWords}) is still due/pending towards our client.`, 10.5);
+    writer.writeParagraph(`It has been informed to us that despite repeated requests, reminders, and communications made by our client, the matter remains unresolved and an amount of **INR ${formattedAmount}/- (Rupees ${pendingWords})** is still due/pending towards our client.`, 10.5);
 
     writer.writeParagraph(`Our client has acted in good faith and fulfilled their part of obligations; however, the pending dues/claim have not been settled by you till date.`, 10.5);
 
     writer.writeParagraph(`You are therefore hereby requested to:`, 10.5);
-    writer.writeBulletPoint("1.", `Clear/pay the outstanding amount of INR ${formattedAmount}/- (Rupees ${pendingWords}); and/or`);
+    writer.writeBulletPoint("1.", `Clear/pay the outstanding amount of **INR ${formattedAmount}/- (Rupees ${pendingWords})**; and/or`);
     writer.writeBulletPoint("2.", `Resolve the matter amicably within 7 (Seven) days from the receipt of this notice.`);
 
     writer.writeParagraph(`In the event that you dispute the claim or amount, you are requested to provide your written response along with supporting documents within the aforesaid period for appropriate consideration.`, 10.5);
@@ -591,7 +658,7 @@ export async function generateNoticePDFBuffer(params: PDFGeneratorParams): Promi
 
     writer.writeParagraph(`A copy of this Notice has been preserved in our office for record and future course of action. You are hereby advised to preserve a copy of this notice, as the same may be required to be produced before the appropriate Court of Law and/or competent authority as and when required.`, 10.5);
 
-    writer.writeSignatureBlock("For AMA Legal Solutions®", "Through Authorized Signatory");
+    writer.writeSignatureBlock("For AMA Legal Solutions®", "Through Authorized Signatory", stampImageToUse);
 
   } else if (step === 2) {
     writer.writeTitle("SECOND LEGAL DEMAND NOTICE");
@@ -613,7 +680,7 @@ export async function generateNoticePDFBuffer(params: PDFGeneratorParams): Promi
     writer.writeParagraph("Dear Sir/Madam,", 10.5);
 
     // Body text
-    writer.writeParagraph(`Under instructions and authority from our client ${params.clientName || 'Tech AMA'}, residing/having office at ${params.clientAddress || 'Delhi, India'}, we hereby issue the present Second and Final Legal Notice calling upon you to immediately clear the outstanding dues/claim amounting to INR ${formattedAmount}/- (Rupees ${pendingWords}) payable towards our client arising out of transactions, services, agreements, commitments, business dealings, or financial obligations undertaken by you.`, 10.5);
+    writer.writeParagraph(`Under instructions and authority from our client **${params.clientName || 'Tech AMA'}**, residing/having office at **${params.clientAddress || 'Delhi, India'}**, we hereby issue the present Second and Final Legal Notice calling upon you to immediately clear the outstanding dues/claim amounting to **INR ${formattedAmount}/- (Rupees ${pendingWords})** payable towards our client arising out of transactions, services, agreements, commitments, business dealings, or financial obligations undertaken by you.`, 10.5);
 
     writer.writeParagraph(`Despite repeated reminders, communications, and an earlier legal notice served upon you, you have failed to regularize the matter or provide any satisfactory response. Your conduct clearly reflects deliberate negligence, avoidance, and non-compliance towards lawful obligations owed to our client.`, 10.5);
 
@@ -626,7 +693,7 @@ export async function generateNoticePDFBuffer(params: PDFGeneratorParams): Promi
     writer.writeParagraph(`Our client still wishes to provide you with a final opportunity to amicably resolve the matter without initiating formal legal proceedings.`, 10.5);
 
     writer.writeParagraph(`You are therefore finally called upon to:`, 10.5);
-    writer.writeBulletPoint("1.", `Make payment of the outstanding amount of INR ${formattedAmount}/- (Rupees ${pendingWords}) within 4 (Four) days from receipt of this notice; OR`);
+    writer.writeBulletPoint("1.", `Make payment of the outstanding amount of **INR ${formattedAmount}/- (Rupees ${pendingWords})** within 4 (Four) days from receipt of this notice; OR`);
     writer.writeBulletPoint("2.", `Provide a written explanation along with documentary proof disputing the claim within the aforesaid period.`);
 
     writer.writeParagraph(`Kindly take notice that upon failure to comply, our client shall be constrained to initiate appropriate civil and/or criminal proceedings before the competent authorities/courts/forum, including filing complaints before the appropriate police authorities and legal forums, entirely at your own risk as to costs, liabilities, and consequences.`, 10.5);
@@ -637,7 +704,7 @@ export async function generateNoticePDFBuffer(params: PDFGeneratorParams): Promi
     
     writer.writeParagraph(`A copy of this Notice has been preserved in our office for record and future course of action. You are hereby advised to preserve a copy of this notice, as the same may be required to be produced before the appropriate Court of Law and/or competent authority as and when required.`, 10.5);
 
-    writer.writeSignatureBlock("For AMA Legal Solutions®", "Through Authorized Signatory");
+    writer.writeSignatureBlock("For AMA Legal Solutions®", "Through Authorized Signatory", stampImageToUse);
 
   } else if (step === 3) {
     writer.writeTitle("FINAL LEGAL DEMAND NOTICE");
@@ -659,7 +726,7 @@ export async function generateNoticePDFBuffer(params: PDFGeneratorParams): Promi
     writer.writeParagraph("Dear Sir/Madam,", 10.5);
 
     // Body text
-    writer.writeParagraph(`Under instructions from and on behalf of my client ${params.clientName || 'Tech AMA'}, I hereby issue the present Final Legal Notice against you with respect to the outstanding amount/claim of INR ${formattedAmount}/- (Rupees ${pendingWords}) arising out of dealings, transactions, services, agreements, commitments, or obligations between you and our client.`, 10.5);
+    writer.writeParagraph(`Under instructions from and on behalf of my client **${params.clientName || 'Tech AMA'}**, I hereby issue the present Final Legal Notice against you with respect to the outstanding amount/claim of **INR ${formattedAmount}/- (Rupees ${pendingWords})** arising out of dealings, transactions, services, agreements, commitments, or obligations between you and our client.`, 10.5);
 
     writer.writeParagraph(`It is pertinent to note that despite repeated reminders, follow-ups, and opportunities extended to you for amicable resolution, you have deliberately failed and neglected to clear the outstanding liability and/or honour your commitments. Your conduct has caused substantial financial loss, harassment, mental agony, and inconvenience to my client.`, 10.5);
 
@@ -678,9 +745,9 @@ export async function generateNoticePDFBuffer(params: PDFGeneratorParams): Promi
     writer.writeBulletPoint("-", "Any other applicable civil and criminal provisions based upon the facts and documents available on record.");
 
     writer.writeParagraph(`You are therefore called upon for the FINAL time to:`, 10.5);
-    writer.writeBulletPoint("1.", `Clear/pay the outstanding amount of INR ${formattedAmount}/- (Rupees ${pendingWords});`);
+    writer.writeBulletPoint("1.", `Clear/pay the outstanding amount of **INR ${formattedAmount}/- (Rupees ${pendingWords})**;`);
     writer.writeBulletPoint("2.", `Provide written confirmation of settlement; and`);
-    writer.writeBulletPoint("3.", `Resolve the matter within 48 HOURS from receipt of this notice.`);
+    writer.writeBulletPoint("3.", `Resolve the matter within 72 HOURS from receipt of this notice.`);
 
     writer.writeParagraph(`Please take notice that in the event of your failure to comply within the aforesaid period, my client shall be constrained to initiate appropriate legal proceedings against you, including but not limited to:`, 10.5);
     writer.writeBulletPoint("-", "filing of Police Complaint/FIR before the competent Police Authorities;");
@@ -694,7 +761,7 @@ export async function generateNoticePDFBuffer(params: PDFGeneratorParams): Promi
     
     writer.writeParagraph(`A copy of this Notice has been preserved in our office for record and future course of action. You are hereby advised to preserve a copy of this notice, as the same may be required to be produced before the appropriate Court of Law and/or competent authority as and when required.`, 10.5);
 
-    writer.writeSignatureBlock("For AMA Legal Solutions®", "Through Authorized Signatory");
+    writer.writeSignatureBlock("For AMA Legal Solutions®", "Through Authorized Signatory", stampImageToUse);
 
   } else if (step === 4) {
     // Step 4: SHO Criminal Complaint
@@ -732,9 +799,9 @@ export async function generateNoticePDFBuffer(params: PDFGeneratorParams): Promi
     writer.writeParagraph("Respected Sir/Madam,", 10.5, true);
 
     // Body text
-    writer.writeParagraph(`Under instructions from and on behalf of our client, namely ${params.clientName || "Tech AMA"}, we, AMA Legal Solutions, through our authorized legal representatives, hereby submit the present complaint against the above-mentioned accused for acts involving deliberate non-payment of legitimate dues, cheating, dishonest inducement, criminal breach of trust, and wrongful financial loss caused to our client.`, 10.5);
+    writer.writeParagraph(`Under instructions from and on behalf of our client, namely **${params.clientName || "Tech AMA"}**, we, AMA Legal Solutions, through our authorized legal representatives, hereby submit the present complaint against the above-mentioned accused for acts involving deliberate non-payment of legitimate dues, cheating, dishonest inducement, criminal breach of trust, and wrongful financial loss caused to our client.`, 10.5);
 
-    writer.writeParagraph(`That the accused had entered into a transaction/understanding with our client, pursuant to which an amount of INR ${formattedAmount}/- (Rupees ${pendingWords}) became legally due and payable to our client.`, 10.5);
+    writer.writeParagraph(`That the accused had entered into a transaction/understanding with our client, pursuant to which an amount of **INR ${formattedAmount}/- (Rupees ${pendingWords})** became legally due and payable to our client.`, 10.5);
 
     writer.writeParagraph(`Despite repeated follow-ups, calls, messages, reminders, and legal notices issued on behalf of our client, the accused has intentionally failed and neglected to clear the outstanding dues. The conduct of the accused clearly demonstrates dishonest intention from the very inception of the transaction and reflects wilful default and deliberate evasion of liability.`, 10.5);
 

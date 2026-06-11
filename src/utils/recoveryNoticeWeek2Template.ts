@@ -8,8 +8,12 @@ export interface RecoveryNoticeWeek2Data {
   noticeDate: string      // date of notice e.g. "30/04/2026"
   headerLogoBase64?: string
   stampLogoBase64?: string
+  barStampLogoBase64?: string
   signatureBase64?: string
   noticeRef?: string
+  complainantName?: string
+  complainantAddress?: string
+  isSpecialUser?: boolean
 }
 
 export function fillWeek2NoticeTemplate(data: RecoveryNoticeWeek2Data): string {
@@ -22,8 +26,12 @@ export function fillWeek2NoticeTemplate(data: RecoveryNoticeWeek2Data): string {
     noticeDate,
     headerLogoBase64,
     stampLogoBase64,
+    barStampLogoBase64,
     signatureBase64,
     noticeRef,
+    complainantName = "Tech AMA",
+    complainantAddress = "2493AP, Ground floor, Sector 57, Gurugram-122003 (Haryana)",
+    isSpecialUser = false,
   } = data
 
   // Convert amount to words helper
@@ -88,7 +96,7 @@ export function fillWeek2NoticeTemplate(data: RecoveryNoticeWeek2Data): string {
   }
   .header-logo-img {
     width: 260px;
-    height: auto;
+    height: 72px;
     display: block;
     margin: 0 auto 6px auto;
   }
@@ -220,7 +228,7 @@ export function fillWeek2NoticeTemplate(data: RecoveryNoticeWeek2Data): string {
       <tr>
         <td>
           <div class="header-wrapper">
-            ${headerLogoBase64 ? `<img class="header-logo-img" src="data:image/png;base64,${headerLogoBase64}" alt="AMA Logo" />` : ''}
+            ${headerLogoBase64 ? `<img class="header-logo-img" src="data:image/png;base64,${headerLogoBase64}" width="260" height="72" alt="AMA Logo" />` : ''}
             <div class="header-address">
               <div style="font-weight: bold; font-size: 11.5pt; margin-bottom: 3px;">Advocate & Solicitors</div>
               <div>2493AP, Ground floor, Sector 57, Gurugram-122003 (Haryana)</div>
@@ -244,8 +252,8 @@ export function fillWeek2NoticeTemplate(data: RecoveryNoticeWeek2Data): string {
             </table>
             <table style="width: 100%; border-collapse: collapse; border: none; font-size: 10.5pt; margin-top: 12px; margin-bottom: 5px; font-weight: bold; color: #333;">
               <tr>
-                <td style="text-align: left; border: none; padding: 2px 0;">Ref: ${noticeRef || "AMA/LRN-WEEK2"}</td>
-                <td style="text-align: right; border: none; padding: 2px 0;">Date: ${noticeDate}</td>
+                <td style="text-align: left; border: none; padding: 2px 0;">Ref: <strong>${noticeRef || "AMA/LRN-WEEK2"}</strong></td>
+                <td style="text-align: right; border: none; padding: 2px 0;">Date: <strong>${noticeDate}</strong></td>
               </tr>
             </table>
             <div class="header-divider"></div>
@@ -290,15 +298,15 @@ export function fillWeek2NoticeTemplate(data: RecoveryNoticeWeek2Data): string {
   <!-- Addressee -->
   <div class="addressee">
     <p><span class="addressee-label">To,</span></p>
-    <p>${clientName}</p>
-    ${clientPhone ? `<p>Mobile: ${clientPhone}</p>` : ''}
-    ${clientEmail ? `<p>Email: ${clientEmail}</p>` : ''}
-    <p>${clientAddress}</p>
+    <p><strong>${clientName}</strong></p>
+    ${clientPhone ? `<p>Mobile: <strong>${clientPhone}</strong></p>` : ''}
+    ${clientEmail ? `<p>Email: <strong>${clientEmail}</strong></p>` : ''}
+    <p><strong>${clientAddress}</strong></p>
   </div>
 
   <!-- Subject -->
   <div class="subject-line">
-    <strong>Subject: Demand Notice for Immediate Clearance of Outstanding Liability of ₹${amountPending} Towards Tech AMA</strong>
+    <strong>Subject: Demand Notice for Immediate Clearance of Outstanding Liability of ₹<strong>${amountPending}</strong> Towards <strong>${complainantName}</strong></strong>
   </div>
 
   <!-- Salutation -->
@@ -307,7 +315,7 @@ export function fillWeek2NoticeTemplate(data: RecoveryNoticeWeek2Data): string {
   <!-- Body -->
   <div class="notice-body">
 
-    <p>Under instructions and authority from our client <strong>Tech AMA</strong>, residing/having office at <strong>Delhi, India</strong>, we hereby issue the present Second and Final Legal Notice calling upon you to immediately clear the outstanding dues/claim amounting to <strong>INR ${amountPending}/- (Rupees ${pendingWords} Only)</strong> payable towards our client arising out of transactions, services, agreements, commitments, business dealings, or financial obligations undertaken by you.</p>
+    <p>Under instructions and authority from our client <strong>${complainantName}</strong>, residing/having office at <strong>${complainantAddress}</strong>, we hereby issue the present Second and Final Legal Notice calling upon you to immediately clear the outstanding dues/claim amounting to <strong>INR ${amountPending}/- (Rupees ${pendingWords} Only)</strong> payable towards our client arising out of transactions, services, agreements, commitments, business dealings, or financial obligations undertaken by you.</p>
 
     <p>Despite repeated reminders, communications, and an earlier legal notice served upon you, you have failed to regularize the matter or provide any satisfactory response. Your conduct clearly reflects deliberate negligence, avoidance, and non-compliance towards lawful obligations owed to our client.</p>
 
@@ -337,7 +345,7 @@ export function fillWeek2NoticeTemplate(data: RecoveryNoticeWeek2Data): string {
   <div class="signature-block">
     <div style="margin-bottom: 8px; white-space: nowrap; width: fit-content; text-align: left;">
       ${signatureBase64 ? `<img src="data:image/png;base64,${signatureBase64}" alt="Signature" style="height: 50px; width: auto; display: inline-block; vertical-align: bottom; margin-right: 15px;" />` : ''}
-      ${stampLogoBase64 ? `<img src="data:image/png;base64,${stampLogoBase64}" alt="Stamp" style="height: 65px; width: auto; display: inline-block; vertical-align: bottom;" />` : ''}
+      ${isSpecialUser && barStampLogoBase64 ? `<img src="data:image/png;base64,${barStampLogoBase64}" alt="Stamp" style="height: 65px; width: auto; display: inline-block; vertical-align: bottom;" />` : (stampLogoBase64 ? `<img src="data:image/png;base64,${stampLogoBase64}" alt="Stamp" style="height: 65px; width: auto; display: inline-block; vertical-align: bottom;" />` : '')}
     </div>
     <p class="signature-firm">For AMA Legal Solutions<sup>®</sup></p>
     <p class="signature-sub">Through Authorized Signatory</p>

@@ -3,6 +3,8 @@ import puppeteer from 'puppeteer-core'
 import fs from 'fs'
 import { fillWeek1NoticeTemplate } from '@/utils/recoveryNoticeWeek1Template'
 import { verifyAuth } from '@/lib/auth'
+import { getDbAndBucket } from '@/lib/mongodb'
+import { ObjectId } from 'mongodb'
 
 export const maxDuration = 60
 export const dynamic = 'force-dynamic'
@@ -42,6 +44,20 @@ function formatCurrencyIndian(amount: any): string {
 export async function POST(request: NextRequest) {
   const auth = await verifyAuth(request)
   if (auth.error) return auth.error
+  const session = auth.session;
+
+  let isSpecialUser = false
+  try {
+    const { db } = await getDbAndBucket("fs");
+    const userIdStr = (session?.user as any)?.id;
+    if (userIdStr) {
+      const userDoc = await db.collection("users").findOne({ _id: new ObjectId(userIdStr) });
+      const userPhone = userDoc?.phone || "";
+      isSpecialUser = userPhone.replace(/\D/g, '').endsWith('8700343611');
+    }
+  } catch (dbErr) {
+    console.warn("Could not check special user phone in API:", dbErr);
+  }
 
   try {
     const body = await request.json()
@@ -54,6 +70,9 @@ export async function POST(request: NextRequest) {
       totalFees,
       amountPending,
       noticeDate,
+      noticeRef,
+      complainantName,
+      complainantAddress,
     } = body
 
     if (!clientName || !clientPhone || !amountPending) {
@@ -62,6 +81,7 @@ export async function POST(request: NextRequest) {
 
     let headerLogoBase64 = ''
     let stampLogoBase64 = ''
+    let barStampLogoBase64 = ''
     let signatureBase64 = ''
     try {
       const headerPath = process.cwd() + '/public/notices/header logo AMA .png'
@@ -71,6 +91,10 @@ export async function POST(request: NextRequest) {
       const stampPath = process.cwd() + '/public/notices/AMA stamp logo.png'
       if (fs.existsSync(stampPath)) {
         stampLogoBase64 = fs.readFileSync(stampPath, 'base64')
+      }
+      const barStampPath = process.cwd() + '/public/notices/bar_stamp.png'
+      if (fs.existsSync(barStampPath)) {
+        barStampLogoBase64 = fs.readFileSync(barStampPath, 'base64')
       }
       const sigPath = process.cwd() + '/public/notices/Signature.png'
       if (fs.existsSync(sigPath)) {
@@ -90,7 +114,12 @@ export async function POST(request: NextRequest) {
       noticeDate: noticeDate ? formatDate(noticeDate) : formatDate(new Date().toISOString()),
       headerLogoBase64,
       stampLogoBase64,
+      barStampLogoBase64,
       signatureBase64,
+      noticeRef,
+      complainantName,
+      complainantAddress,
+      isSpecialUser,
     })
  
     // Launch Puppeteer

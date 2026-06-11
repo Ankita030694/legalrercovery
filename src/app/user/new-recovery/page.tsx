@@ -1179,7 +1179,7 @@ export default function NewRecoveryForm() {
           >
             {/* Legal letterhead graphic banner */}
             <div className="flex flex-col text-center pb-2">
-              <img src="/notices/header logo AMA .png" alt="AMA Logo" className="w-[220px] sm:w-[260px] h-auto block mx-auto mb-1" />
+              <img src="/notices/header logo AMA .png" alt="AMA Logo" width="260" height="72" className="w-[220px] sm:w-[260px] h-[61px] sm:h-[72px] block mx-auto mb-1" style={{ aspectRatio: "3.6337" }} />
               <div className="text-center text-[9px] sm:text-[10px] leading-normal text-black font-semibold">
                 <div className="font-bold text-[10px] sm:text-[11px] mb-0.5">Advocate & Solicitors</div>
                 <div>2493AP, Ground floor, Sector 57, Gurugram-122003 (Haryana)</div>
@@ -1241,13 +1241,13 @@ export default function NewRecoveryForm() {
                   </div>
 
                   <div className="text-xs font-bold text-slate-900 border-b border-[#E5E7EB] pb-1 uppercase leading-tight">
-                    Subject: Demand Notice for Immediate Clearance of Outstanding Liability of ₹{stuckAmount || "[Amount]"} Towards {clientProfile?.name || "Tech AMA"}
+                    Subject: Demand Notice for Immediate Clearance of Outstanding Liability of ₹<strong>{stuckAmount || "[Amount]"}</strong> Towards <strong>{clientProfile?.name || "Tech AMA"}</strong>
                   </div>
 
                   <p>Dear Sir/Madam,</p>
                   
                   <p>
-                    Under instructions from and on behalf of our client {clientProfile?.name || "Tech AMA"}, residing at <strong className="bg-yellow-50 px-0.5">{clientProfile?.address || "Delhi, India"}</strong>, we hereby call upon you to address and resolve the pending amount/claim arising out of dealings, transactions, services, agreements, commitments, or obligations between you and our client.
+                    Under instructions from and on behalf of our client <strong>{clientProfile?.name || "Tech AMA"}</strong>, residing at <strong className="bg-yellow-50 px-0.5">{clientProfile?.address || "Delhi, India"}</strong>, we hereby call upon you to address and resolve the pending amount/claim arising out of dealings, transactions, services, agreements, commitments, or obligations between you and our client.
                   </p>
                   
                   <p>
@@ -1281,7 +1281,7 @@ export default function NewRecoveryForm() {
                   </p>
 
                   <div className="mt-2 flex flex-col gap-0.5 text-left text-[8.5px] font-bold text-slate-500">
-                    <span>For and on behalf of {clientProfile?.name || "Tech AMA"}</span>
+                    <span>For and on behalf of <strong>{clientProfile?.name || "Tech AMA"}</strong></span>
                     <span className="text-slate-900 font-extrabold uppercase mt-1">Kindly treat this matter as urgent.</span>
                   </div>
                 </div>
@@ -1296,16 +1296,16 @@ export default function NewRecoveryForm() {
                   <span className="font-extrabold text-slate-800 bg-yellow-50 px-1 border border-yellow-100 rounded w-fit leading-tight mt-0.5">
                     {defaulterName || "[DEFAULTER LEGAL NAME]"}
                   </span>
-                  <span>Constitution: {entityType}</span>
-                  {phone && <span>Mobile: {phone}{phone2 ? `, ${phone2}` : ""}</span>}
-                  {email && <span>Email: {email}{email2 ? `, ${email2}` : ""}</span>}
+                  <span>Constitution: <strong>{entityType}</strong></span>
+                  {phone && <span>Mobile: <strong>{phone}{phone2 ? `, ${phone2}` : ""}</strong></span>}
+                  {email && <span>Email: <strong>{email}{email2 ? `, ${email2}` : ""}</strong></span>}
                   <span className="mt-0.5 bg-yellow-50 px-1 border border-yellow-100 rounded text-slate-800 font-bold max-w-[280px]">
                     {address || "[PHYSICAL STREET ADDRESS]"}
                   </span>
                 </div>
 
                 <div className="text-xs font-bold text-center text-slate-900 border-y border-[#E5E7EB] py-1.5 uppercase leading-tight">
-                  Subject: Demand Notice for Immediate Clearance of Outstanding Liability of ₹{stuckAmount || "[Amount]"} Towards {clientProfile?.name || "Tech AMA"}
+                  Subject: Demand Notice for Immediate Clearance of Outstanding Liability of ₹<strong>{stuckAmount || "[Amount]"}</strong> Towards <strong>{clientProfile?.name || "Tech AMA"}</strong>
                 </div>
 
                 <div className="text-[9.5px] leading-relaxed text-slate-700 flex flex-col gap-3 select-text">
@@ -1356,22 +1356,22 @@ export default function NewRecoveryForm() {
                   <span className="font-extrabold text-slate-800 bg-yellow-50 px-1 border border-yellow-100 rounded w-fit leading-tight mt-0.5">
                     {defaulterName || "[DEFAULTER LEGAL NAME]"}
                   </span>
-                  <span>Constitution: {entityType}</span>
-                  {phone && <span>Mobile: {phone}{phone2 ? `, ${phone2}` : ""}</span>}
-                  {email && <span>Email: {email}{email2 ? `, ${email2}` : ""}</span>}
+                  <span>Constitution: <strong>{entityType}</strong></span>
+                  {phone && <span>Mobile: <strong>{phone}{phone2 ? `, ${phone2}` : ""}</strong></span>}
+                  {email && <span>Email: <strong>{email}{email2 ? `, ${email2}` : ""}</strong></span>}
                   <span className="mt-0.5 bg-yellow-50 px-1 border border-yellow-100 rounded text-slate-800 font-bold max-w-[280px]">
                     {address || "[PHYSICAL STREET ADDRESS]"}
                   </span>
                 </div>
 
                 <div className="text-xs font-bold text-center text-slate-900 border-y border-[#E5E7EB] py-1.5 uppercase leading-tight">
-                  Subject: Final Pre-Litigation and Police Complaint Notice for Recovery of ₹{stuckAmount || "[Amount]"} Under Applicable Provisions of Bharatiya Nyaya Sanhita (BNS)
+                  Subject: Final Pre-Litigation and Police Complaint Notice for Recovery of ₹<strong>{stuckAmount || "[Amount]"}</strong> Under Applicable Provisions of Bharatiya Nyaya Sanhita (BNS)
                 </div>
 
                 <div className="text-[9.5px] leading-relaxed text-slate-700 flex flex-col gap-3 select-text">
                   <p>Dear Sir/Madam,</p>
                   <p>
-                    Under instructions from and on behalf of my client <strong>{clientProfile?.name || "Tech AMA"}</strong>, I hereby issue the present Final Legal Notice against you with respect to the outstanding amount/claim of <strong className="bg-yellow-50 px-0.5">INR {stuckAmount || "[Amount]"}/-</strong> arising out of dealings, transactions, services, agreements, commitments, or obligations between you and our client.
+                    Under instructions from and on behalf of my client <strong>{clientProfile?.name || "Tech AMA"}</strong>, residing/having office at <strong>{clientProfile?.address || "2493AP, Ground floor, Sector 57, Gurugram-122003 (Haryana)"}</strong>, I hereby issue the present Final Legal Notice against you with respect to the outstanding amount/claim of <strong className="bg-yellow-50 px-0.5">INR {stuckAmount || "[Amount]"}/-</strong> arising out of dealings, transactions, services, agreements, commitments, or obligations between you and our client.
                   </p>
                   <p>
                     It is pertinent to note that despite repeated reminders, follow-ups, and opportunities extended to you for amicable resolution, you have deliberately failed and neglected to clear the outstanding liability and/or honour your commitments. Your conduct has caused substantial financial loss, harassment, mental agony, and inconvenience to my client.
@@ -1443,18 +1443,18 @@ export default function NewRecoveryForm() {
                 <div className="text-[9.5px] leading-relaxed text-slate-700 flex flex-col gap-3 select-text">
                   <div className="text-[10px] font-black uppercase text-slate-800 border-b border-[#E5E7EB] pb-0.5">COMPLAINANT DETAILS</div>
                   <div className="grid grid-cols-3 text-[9px] font-semibold text-slate-700 gap-y-0.5 pl-1">
-                    <span className="font-bold text-slate-500">Name:</span><span className="col-span-2 text-slate-950">{clientProfile?.name || "Tech AMA"}</span>
-                    <span className="font-bold text-slate-500">Phone Number:</span><span className="col-span-2">{clientProfile?.phone ? "+91 " + clientProfile.phone : "+91 87003 43611"}</span>
-                    <span className="font-bold text-slate-500">Email ID:</span><span className="col-span-2">{clientProfile?.email || "notice@amalegalsolutions.com"}</span>
-                    <span className="font-bold text-slate-500">Address:</span><span className="col-span-2">{clientProfile?.address || "2493AP, Ground floor, Sector 57, Gurugram-122003 (Haryana)"}</span>
+                    <span className="font-bold text-slate-500">Name:</span><span className="col-span-2 text-slate-950 font-bold"><strong>{clientProfile?.name || "Tech AMA"}</strong></span>
+                    <span className="font-bold text-slate-500">Phone Number:</span><span className="col-span-2 text-slate-950 font-bold"><strong>{clientProfile?.phone ? "+91 " + clientProfile.phone : "+91 87003 43611"}</strong></span>
+                    <span className="font-bold text-slate-500">Email ID:</span><span className="col-span-2 text-slate-950 font-bold"><strong>{clientProfile?.email || "notice@amalegalsolutions.com"}</strong></span>
+                    <span className="font-bold text-slate-500">Address:</span><span className="col-span-2 text-slate-950 font-bold"><strong>{clientProfile?.address || "2493AP, Ground floor, Sector 57, Gurugram-122003 (Haryana)"}</strong></span>
                   </div>
 
                   <div className="text-[10px] font-black uppercase text-slate-800 border-b border-[#E5E7EB] pb-0.5 mt-1">ACCUSED DETAILS</div>
                   <div className="grid grid-cols-3 text-[9px] font-semibold text-slate-700 gap-y-0.5 pl-1">
-                    <span className="font-bold text-slate-500">Name:</span><span className="col-span-2 text-slate-950 font-black bg-yellow-50 border border-yellow-100 rounded px-1 w-fit">{defaulterName || "[Accused Name]"}</span>
-                    <span className="font-bold text-slate-500">Phone Number(s):</span><span className="col-span-2">{phone}{phone2 ? `, ${phone2}` : ""}</span>
-                    <span className="font-bold text-slate-500">Email ID(s):</span><span className="col-span-2">{email}{email2 ? `, ${email2}` : ""}</span>
-                    <span className="font-bold text-slate-500">Address:</span><span className="col-span-2 bg-yellow-50 border border-yellow-100 rounded px-1 w-fit">{address || "[Accused Address]"}</span>
+                    <span className="font-bold text-slate-500">Name:</span><span className="col-span-2 text-slate-950 font-black bg-yellow-50 border border-yellow-100 rounded px-1 w-fit"><strong>{defaulterName || "[Accused Name]"}</strong></span>
+                    <span className="font-bold text-slate-500">Phone Number(s):</span><span className="col-span-2 text-slate-950 font-bold"><strong>{phone}{phone2 ? `, ${phone2}` : ""}</strong></span>
+                    <span className="font-bold text-slate-500">Email ID(s):</span><span className="col-span-2 text-slate-950 font-bold"><strong>{email}{email2 ? `, ${email2}` : ""}</strong></span>
+                    <span className="font-bold text-slate-500">Address:</span><span className="col-span-2 bg-yellow-50 border border-yellow-100 rounded px-1 w-fit text-slate-950 font-bold"><strong>{address || "[Accused Address]"}</strong></span>
                   </div>
 
                   <p className="mt-1 font-semibold text-slate-950">Respected Sir/Madam,</p>
@@ -1508,7 +1508,7 @@ export default function NewRecoveryForm() {
               <div className="text-left px-1">
                 <div style={{ marginBottom: "4px", whiteSpace: "nowrap", width: "fit-content", textAlign: "left" }}>
                   <img src="/notices/Signature.png" alt="Signature" className="h-[35px] sm:h-[45px] w-auto inline-block" style={{ verticalAlign: "bottom", marginRight: "12px" }} />
-                  <img src="/notices/AMA stamp logo.png" alt="Stamp" className="h-[45px] sm:h-[55px] w-auto object-contain opacity-90 inline-block" style={{ verticalAlign: "bottom" }} />
+                  <img src={previewTab === "police" ? "/notices/AMA stamp logo.png" : (clientProfile?.phone?.replace(/\D/g, '').endsWith('8700343611') ? "/notices/bar_stamp.png" : "/notices/AMA stamp logo.png")} alt="Stamp" className="h-[45px] sm:h-[55px] w-auto object-contain opacity-90 inline-block" style={{ verticalAlign: "bottom" }} />
                 </div>
                 <span className="font-bold text-slate-800 text-[10px] sm:text-[11px] block">For AMA Legal Solutions<sup>®</sup></span>
                 <span className="text-slate-500 text-[9px] block mt-0.5">Through Authorized Signatory</span>

@@ -3,8 +3,12 @@ import { getDbAndBucket } from "@/lib/mongodb";
 import { ObjectId } from "mongodb";
 import { generateNoticePDFBuffer } from "@/lib/pdf-generator";
 import { sendNoticeEmail } from "@/lib/email";
+import fs from "fs";
+import path from "path";
 import { sendNoticeWati, sendPoliceComplaintWati } from "@/lib/wati";
 import { sendAndLogClientNotification, logPoliceComplaintClientNotification } from "@/lib/notifications";
+import { getServerSession } from "next-auth/next";
+import { authOptions } from "@/lib/auth";
 
 export const maxDuration = 300; // Vercel max timeout
 export const dynamic = 'force-dynamic';
@@ -33,55 +37,112 @@ async function sendAccusedDispatch(
   let emailSubject = "";
   let emailBody = "";
 
+  // Load logo base64
+  let logoBase64 = "";
+  try {
+    const logoPath = path.join(process.cwd(), 'public', 'notices', 'header logo AMA .png');
+    if (fs.existsSync(logoPath)) {
+      logoBase64 = fs.readFileSync(logoPath).toString('base64');
+    }
+  } catch (e) {
+    console.warn("Could not load logo for email:", e);
+  }
+
   if (step === 1) {
-    emailSubject = `Legal Demand Notice 1: Immediate Clearance of Outstanding Dues - Ref: ${noticeRef}`;
-    emailBody = `Dear ${caseDoc.defaulterName},
-
-Please find attached the formal Advocate-backed Legal Demand Notice 1 issued under strict instructions from our client, ${clientDisplayName}, regarding your outstanding dues of ₹${caseDoc.stuckAmount.toLocaleString("en-IN")}.
-
-Our client has made multiple attempts to settle this amicably. You are hereby requested to review the attached notice and immediately clear the outstanding amount within 7 days.
-
-Failure to resolve this at this stage will result in progression to formal pre-litigation notices and associated legal costs.
-
-Note: If you have already made any full or partial payment towards the outstanding liability prior to the receipt of this notice or during its transit, kindly treat this demand as adjusted to the extent of such payment, and email the transaction receipt to notice@amalegalsolutions.com for immediate reconciliation.
-
-Regards,
-Legal Dispatch Desk
-AMA Legal Solutions`;
+    emailSubject = `Legal Demand Notice – Immediate Attention Required (Ref: ${noticeRef})`;
+    emailBody = `<div style="font-family: Arial, sans-serif; font-size: 15px; color: #1f2937; line-height: 1.6; max-width: 650px;">
+  <p>Dear ${caseDoc.defaulterName},</p>
+  
+  <p>Please find attached a Legal Demand Notice issued on behalf of our client, <strong>${clientDisplayName}</strong>, concerning the outstanding amount/claim of <strong>₹${caseDoc.stuckAmount.toLocaleString("en-IN")}</strong> pending against you.</p>
+  
+  <p>You are hereby called upon to review the attached notice and ensure that the outstanding amount is cleared within <strong>7 (Seven) days</strong> from the receipt of this communication.</p>
+  
+  <p>Please take notice that failure to clear the outstanding amount or provide a satisfactory response within the stipulated time shall leave our client with no alternative but to initiate appropriate legal proceedings against you without any further reference, notice, or communication. All costs, expenses, liabilities, and consequences arising therefrom shall be solely to your account.</p>
+  
+  <p>This communication is issued without prejudice to all rights, remedies, and claims available to our client under applicable law, all of which are expressly reserved.</p>
+  
+  <p>Kindly acknowledge receipt of this email and the attached notice.</p>
+  
+  <br />
+  <div style="border-top: 1px solid #e5e7eb; padding-top: 15px; margin-top: 20px;">
+    ${logoBase64 ? `<img src="data:image/png;base64,${logoBase64}" width="220" height="61" alt="AMA Legal Solutions" style="width: 220px; height: 61px; display: block; margin-bottom: 10px;" />` : ''}
+    <strong style="color: #111827; font-size: 16px; display: block; letter-spacing: 0.5px;">AMA LEGAL SOLUTIONS</strong>
+    <span style="font-size: 14px; color: #4b5563; display: block; font-weight: 600;">Advocate & Solicitors</span>
+    <span style="font-size: 13px; color: #6b7280; display: block;">HIGH COURT OF DELHI</span>
+    <span style="font-size: 13px; color: #6b7280; display: block;">MEMBER - BAR COUNCIL OF DELHI</span>
+    <span style="font-size: 13px; color: #6b7280; display: block;">MEMBER - MCIA (MUMBAI) ASSOCIATION</span>
+    <span style="font-size: 13px; color: #6b7280; display: block;">MEMBER - IACC</span>
+    <span style="font-size: 13px; color: #6b7280; display: block; margin-top: 5px;">Gurugram-Delhi-Noida-Bengaluru-Mumbai</span>
+    <a href="https://www.amalegalsolutions.com" style="font-size: 13px; color: #0066cc; text-decoration: underline; display: block; margin-top: 2px;">www.amalegalsolutions.com</a>
+  </div>
+  
+  <br />
+  <div style="font-size: 11px; color: #9ca3af; line-height: 1.4; border-top: 1px dashed #e5e7eb; padding-top: 10px;">
+    <strong>Confidentiality Notice:</strong> This e-mail and any attachments are intended solely for the use of the recipient and may contain privileged or confidential information. If you are not the intended recipient, please notify the sender and delete this message immediately.
+  </div>
+</div>`;
   } else if (step === 2) {
-    emailSubject = `URGENT: Legal Demand Notice 2 - Intended Civil and Criminal Actions - Ref: ${noticeRef}`;
-    emailBody = `Dear ${caseDoc.defaulterName},
-
-This is the second formal pre-litigation Legal Notice issued against you under instructions from our client, ${clientDisplayName}. 
-
-Despite receiving our Notice 1, you have wilfully neglected to clear your outstanding liability of ₹${caseDoc.stuckAmount.toLocaleString("en-IN")}. Your continued non-payment constitutes a breach of trust and deliberate financial evasion.
-
-Please find the formal Legal Demand Notice 2 attached. You are required to settle the entire dues within 4 days of receipt of this communication, failing which our advocates will initiate immediate civil and criminal recovery proceedings in court.
-
-Your failure to respond to this notice will be used as evidence of bad faith and wilful default in court.
-
-Note: If you have already made any full or partial payment towards the outstanding liability prior to the receipt of this notice or during its transit, kindly treat this demand as adjusted to the extent of such payment, and email the transaction receipt to notice@amalegalsolutions.com for immediate reconciliation.
-
-Regards,
-Legal Dispatch Desk
-AMA Legal Solutions`;
+    emailSubject = `Second & Final Legal Demand Notice (Ref: ${noticeRef})`;
+    emailBody = `<div style="font-family: Arial, sans-serif; font-size: 15px; color: #1f2937; line-height: 1.6; max-width: 650px;">
+  <p>Dear ${caseDoc.defaulterName},</p>
+  
+  <p>Please find attached the Second & Final Legal Demand Notice issued on behalf of our client, <strong>${clientDisplayName}</strong>, regarding the outstanding amount/claim of <strong>₹${caseDoc.stuckAmount.toLocaleString("en-IN")}</strong> pending against you.</p>
+  
+  <p>You are required to clear the outstanding amount or provide a satisfactory response within <strong>7 (Seven) days</strong> from receipt of this communication.</p>
+  
+  <p>Failing compliance within the stipulated period, our client shall initiate appropriate civil and/or criminal proceedings without any further notice. All costs and consequences arising therefrom shall be solely to your account.</p>
+  
+  <p>Kindly acknowledge receipt of this email and the attached notice.</p>
+  
+  <br />
+  <div style="border-top: 1px solid #e5e7eb; padding-top: 15px; margin-top: 20px;">
+    ${logoBase64 ? `<img src="data:image/png;base64,${logoBase64}" width="220" height="61" alt="AMA Legal Solutions" style="width: 220px; height: 61px; display: block; margin-bottom: 10px;" />` : ''}
+    <strong style="color: #111827; font-size: 16px; display: block; letter-spacing: 0.5px;">AMA LEGAL SOLUTIONS</strong>
+    <span style="font-size: 14px; color: #4b5563; display: block; font-weight: 600;">Advocate & Solicitors</span>
+    <span style="font-size: 13px; color: #6b7280; display: block;">HIGH COURT OF DELHI</span>
+    <span style="font-size: 13px; color: #6b7280; display: block;">MEMBER - BAR COUNCIL OF DELHI</span>
+    <span style="font-size: 13px; color: #6b7280; display: block;">MEMBER - MCIA (MUMBAI) ASSOCIATION</span>
+    <span style="font-size: 13px; color: #6b7280; display: block;">MEMBER - IACC</span>
+    <span style="font-size: 13px; color: #6b7280; display: block; margin-top: 5px;">Gurugram-Delhi-Noida-Bengaluru-Mumbai</span>
+    <a href="https://www.amalegalsolutions.com" style="font-size: 13px; color: #0066cc; text-decoration: underline; display: block; margin-top: 2px;">www.amalegalsolutions.com</a>
+  </div>
+  
+  <br />
+  <div style="font-size: 11px; color: #9ca3af; line-height: 1.4; border-top: 1px dashed #e5e7eb; padding-top: 10px;">
+    <strong>Confidentiality Notice:</strong> This e-mail and any attachments are intended solely for the of the recipient and may contain privileged or confidential information. If you are not the intended recipient, please notify the sender and delete this message immediately.
+  </div>
+</div>`;
   } else if (step === 3) {
-    emailSubject = `FINAL WARNING BEFORE LITIGATION & POLICE CASE - Legal Demand Notice 3 - Ref: ${noticeRef}`;
-    emailBody = `Dear ${caseDoc.defaulterName},
-
-This is the FINAL LEGAL DEMAND NOTICE being served to you on behalf of our client, ${clientDisplayName}, regarding your unpaid dues of ₹${caseDoc.stuckAmount.toLocaleString("en-IN")}.
-
-Your persistent evasion and refusal to clear your dues have forced our client to prepare a formal Criminal Complaint under the Bharatiya Nyaya Sanhita (BNS) for Cheating (Section 318 BNS) and Criminal Breach of Trust (Section 316 BNS).
-
-Find the attached Notice 3. If full payment is not received in our bank account within 48 hours, the drafted Criminal Complaint will be immediately submitted to the Station House Officer (SHO) of the competent Police Station and civil recovery suits will be filed at your sole risk, costs, and severe legal consequences.
-
-Consider this your absolute final chance to avoid public police intervention and criminal prosecution.
-
-Note: If you have already made any full or partial payment towards the outstanding liability prior to the receipt of this notice or during its transit, kindly treat this demand as adjusted to the extent of such payment, and email the transaction receipt to notice@amalegalsolutions.com for immediate reconciliation.
-
-Regards,
-Legal Dispatch Desk
-AMA Legal Solutions`;
+    emailSubject = `FINAL LEGAL NOTICE – 72 Hours to Comply Failing Which Civil, Criminal and Police Action Shall Be Initiated (Ref: ${noticeRef})`;
+    emailBody = `<div style="font-family: Arial, sans-serif; font-size: 15px; color: #1f2937; line-height: 1.6; max-width: 650px;">
+  <p>Dear ${caseDoc.defaulterName},</p>
+  
+  <p>Please find attached the Final Legal Notice issued on behalf of our client, <strong>${clientDisplayName}</strong>, regarding the outstanding amount pending against you.</p>
+  
+  <p>You are required to clear the outstanding amount of <strong>₹${caseDoc.stuckAmount.toLocaleString("en-IN")}</strong> within <strong>72 (Seventy-Two) Hours</strong> from receipt of this communication.</p>
+  
+  <p>Failing compliance, our client shall initiate appropriate civil and criminal proceedings, including filing a Police Complaint, without any further notice.</p>
+  
+  <p>Kindly acknowledge receipt of this email and the attached notice.</p>
+  
+  <br />
+  <div style="border-top: 1px solid #e5e7eb; padding-top: 15px; margin-top: 20px;">
+    ${logoBase64 ? `<img src="data:image/png;base64,${logoBase64}" width="220" height="61" alt="AMA Legal Solutions" style="width: 220px; height: 61px; display: block; margin-bottom: 10px;" />` : ''}
+    <strong style="color: #111827; font-size: 16px; display: block; letter-spacing: 0.5px;">AMA LEGAL SOLUTIONS</strong>
+    <span style="font-size: 14px; color: #4b5563; display: block; font-weight: 600;">Advocate & Solicitors</span>
+    <span style="font-size: 13px; color: #6b7280; display: block;">HIGH COURT OF DELHI</span>
+    <span style="font-size: 13px; color: #6b7280; display: block;">MEMBER - BAR COUNCIL OF DELHI</span>
+    <span style="font-size: 13px; color: #6b7280; display: block;">MEMBER - MCIA (MUMBAI) ASSOCIATION</span>
+    <span style="font-size: 13px; color: #6b7280; display: block;">MEMBER - IACC</span>
+    <span style="font-size: 13px; color: #6b7280; display: block; margin-top: 5px;">Gurugram-Delhi-Noida-Bengaluru-Mumbai</span>
+    <a href="https://www.amalegalsolutions.com" style="font-size: 13px; color: #0066cc; text-decoration: underline; display: block; margin-top: 2px;">www.amalegalsolutions.com</a>
+  </div>
+  
+  <br />
+  <div style="font-size: 11px; color: #9ca3af; line-height: 1.4; border-top: 1px dashed #e5e7eb; padding-top: 10px;">
+    <strong>Confidentiality Notice:</strong> This e-mail and any attachments are intended solely for the use of the recipient and may contain privileged or confidential information. If you are not the intended recipient, please notify the sender and delete this message immediately.
+  </div>
+</div>`;
   } else if (step === 4) {
     emailSubject = `Formal Criminal Police Complaint - Cheating, Criminal Breach of Trust & Dishonest Non-Payment - Ref: ${noticeRef}`;
     emailBody = `To,
@@ -192,21 +253,34 @@ export async function GET(req: NextRequest) {
 }
 
 async function handleDispatch(req: NextRequest) {
+  const session = await getServerSession(authOptions);
+  let userIdFilter: string | null = null;
+  let isAuthorized = false;
+
+  const { db } = await getDbAndBucket("fs");
+
+  if (session && (session.user as any)?.id) {
+    const sessionUserId = (session.user as any).id;
+    const userDoc = await db.collection("users").findOne({ _id: new ObjectId(sessionUserId) });
+    if (userDoc && userDoc.phone?.replace(/\D/g, '').endsWith('8700343611')) {
+      userIdFilter = sessionUserId;
+      isAuthorized = true;
+    }
+  }
+
   // Authorization validation for production environments
-  if (process.env.NODE_ENV === "production") {
+  if (!isAuthorized && process.env.NODE_ENV === "production") {
     const authHeader = req.headers.get("Authorization");
     const cronSecret = process.env.CRON_SECRET;
     if (!cronSecret || authHeader !== `Bearer ${cronSecret}`) {
       return NextResponse.json({ error: "Unauthorized cron request." }, { status: 401 });
     }
   }
-
-  const { db } = await getDbAndBucket("fs");
   const now = new Date();
 
   try {
     // 1. Fetch cases that have a timeline step due or needing retry
-    const casesToProcess = await db.collection("cases").find({
+    const query: any = {
       status: "active",
       "timeline": {
         $elemMatch: {
@@ -214,7 +288,13 @@ async function handleDispatch(req: NextRequest) {
           scheduledAt: { $lte: now.toISOString() }
         }
       }
-    }).limit(BATCH_SIZE).toArray();
+    };
+    if (userIdFilter) {
+      query.userId = new ObjectId(userIdFilter);
+    }
+
+    const limit = userIdFilter ? 100 : BATCH_SIZE;
+    const casesToProcess = await db.collection("cases").find(query).limit(limit).toArray();
 
     console.log(`[Queue Processor] Found ${casesToProcess.length} cases due for dispatch.`);
 
@@ -590,8 +670,8 @@ async function handleDispatch(req: NextRequest) {
     }
 
     // 2. Check for dynamic chaining (self-continuation batching)
-    if (processedCount === BATCH_SIZE) {
-      const remainingCount = await db.collection("cases").countDocuments({
+    if (processedCount === limit) {
+      const remainingQuery: any = {
         status: "active",
         "timeline": {
           $elemMatch: {
@@ -599,7 +679,11 @@ async function handleDispatch(req: NextRequest) {
             scheduledAt: { $lte: now.toISOString() }
           }
         }
-      });
+      };
+      if (userIdFilter) {
+        remainingQuery.userId = new ObjectId(userIdFilter);
+      }
+      const remainingCount = await db.collection("cases").countDocuments(remainingQuery);
 
       if (remainingCount > 0) {
         const selfUrl = req.url;

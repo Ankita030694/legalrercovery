@@ -3,6 +3,8 @@ import { getDbAndBucket } from "@/lib/mongodb";
 import { getServerSession } from "next-auth/next";
 import { authOptions } from "@/lib/auth";
 import { ObjectId } from "mongodb";
+import fs from "fs";
+import path from "path";
 import { generateNoticePDFBuffer } from "@/lib/pdf-generator";
 import { sendNoticeEmail } from "@/lib/email";
 import { sendNoticeWati } from "@/lib/wati";
@@ -85,7 +87,8 @@ export async function POST(req: NextRequest) {
         clientPhone: complainantPhone,
         clientAddress: complainantAddress,
         invoiceNo: caseDoc.invoiceNo,
-        invoiceDate: caseDoc.invoiceDate
+        invoiceDate: caseDoc.invoiceDate,
+        noticeRef: `${caseDoc.caseId}-N1`
       });
     } catch (pdfErr: any) {
       console.error("[Manual Start] PDF generation failed:", pdfErr);
@@ -101,18 +104,49 @@ export async function POST(req: NextRequest) {
     const formattedDate = formatDateString(new Date());
     const pdfFilename = `${cleanDefaulterName}_Notice_${formattedDate}.pdf`;
 
-    const emailSubject = `Legal Demand Notice 1: Immediate Clearance of Outstanding Dues - Ref: ${caseDoc.caseId}`;
-    const emailBody = `Dear ${caseDoc.defaulterName},
+    // Load logo base64
+    let logoBase64 = "";
+    try {
+      const logoPath = path.join(process.cwd(), 'public', 'notices', 'header logo AMA .png');
+      if (fs.existsSync(logoPath)) {
+        logoBase64 = fs.readFileSync(logoPath).toString('base64');
+      }
+    } catch (e) {
+      console.warn("Could not load logo for email:", e);
+    }
 
-Please find attached the formal Advocate-backed Legal Demand Notice 1 issued under strict instructions from our client, ${clientDisplayName}, regarding your outstanding dues of ₹${caseDoc.stuckAmount.toLocaleString("en-IN")}.
-
-Our client has made multiple attempts to settle this amicably. You are hereby requested to review the attached notice and immediately clear the outstanding amount within 7 days.
-
-Failure to resolve this at this stage will result in progression to formal pre-litigation notices and associated legal costs.
-
-Regards,
-Legal Dispatch Desk
-AMA Legal Solutions`;
+    const emailSubject = `Legal Demand Notice – Immediate Attention Required (Ref: ${caseDoc.caseId})`;
+    const emailBody = `<div style="font-family: Arial, sans-serif; font-size: 15px; color: #1f2937; line-height: 1.6; max-width: 650px;">
+  <p>Dear ${caseDoc.defaulterName},</p>
+  
+  <p>Please find attached a Legal Demand Notice issued on behalf of our client, <strong>${clientDisplayName}</strong>, concerning the outstanding amount/claim of <strong>₹${caseDoc.stuckAmount.toLocaleString("en-IN")}</strong> pending against you.</p>
+  
+  <p>You are hereby called upon to review the attached notice and ensure that the outstanding amount is cleared within <strong>7 (Seven) days</strong> from the receipt of this communication.</p>
+  
+  <p>Please take notice that failure to clear the outstanding amount or provide a satisfactory response within the stipulated time shall leave our client with no alternative but to initiate appropriate legal proceedings against you without any further reference, notice, or communication. All costs, expenses, liabilities, and consequences arising therefrom shall be solely to your account.</p>
+  
+  <p>This communication is issued without prejudice to all rights, remedies, and claims available to our client under applicable law, all of which are expressly reserved.</p>
+  
+  <p>Kindly acknowledge receipt of this email and the attached notice.</p>
+  
+  <br />
+  <div style="border-top: 1px solid #e5e7eb; padding-top: 15px; margin-top: 20px;">
+    ${logoBase64 ? `<img src="data:image/png;base64,${logoBase64}" width="220" height="61" alt="AMA Legal Solutions" style="width: 220px; height: 61px; display: block; margin-bottom: 10px;" />` : ''}
+    <strong style="color: #111827; font-size: 16px; display: block; letter-spacing: 0.5px;">AMA LEGAL SOLUTIONS</strong>
+    <span style="font-size: 14px; color: #4b5563; display: block; font-weight: 600;">Advocate & Solicitors</span>
+    <span style="font-size: 13px; color: #6b7280; display: block;">HIGH COURT OF DELHI</span>
+    <span style="font-size: 13px; color: #6b7280; display: block;">MEMBER - BAR COUNCIL OF DELHI</span>
+    <span style="font-size: 13px; color: #6b7280; display: block;">MEMBER - MCIA (MUMBAI) ASSOCIATION</span>
+    <span style="font-size: 13px; color: #6b7280; display: block;">MEMBER - IACC</span>
+    <span style="font-size: 13px; color: #6b7280; display: block; margin-top: 5px;">Gurugram-Delhi-Noida-Bengaluru-Mumbai</span>
+    <a href="https://www.amalegalsolutions.com" style="font-size: 13px; color: #0066cc; text-decoration: underline; display: block; margin-top: 2px;">www.amalegalsolutions.com</a>
+  </div>
+  
+  <br />
+  <div style="font-size: 11px; color: #9ca3af; line-height: 1.4; border-top: 1px dashed #e5e7eb; padding-top: 10px;">
+    <strong>Confidentiality Notice:</strong> This e-mail and any attachments are intended solely for the use of the recipient and may contain privileged or confidential information. If you are not the intended recipient, please notify the sender and delete this message immediately.
+  </div>
+</div>`;
 
     // 2. Perform parallel dispatch: Zoho Email + WATI WhatsApp
     const toEmails = caseDoc.email2 ? `${caseDoc.email},${caseDoc.email2}` : caseDoc.email;

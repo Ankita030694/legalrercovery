@@ -102,7 +102,7 @@ export function fillPoliceComplaintTemplate(data: PoliceComplaintData): string {
   }
   .header-logo-img {
     width: 260px;
-    height: auto;
+    height: 72px;
     display: block;
     margin: 0 auto 6px auto;
   }
@@ -246,7 +246,7 @@ export function fillPoliceComplaintTemplate(data: PoliceComplaintData): string {
       <tr>
         <td>
           <div class="header-wrapper">
-            ${headerLogoBase64 ? `<img class="header-logo-img" src="data:image/png;base64,${headerLogoBase64}" alt="AMA Logo" />` : ''}
+            ${headerLogoBase64 ? `<img class="header-logo-img" src="data:image/png;base64,${headerLogoBase64}" width="260" height="72" alt="AMA Logo" />` : ''}
             <div class="header-address">
               <div style="font-weight: bold; font-size: 11.5pt; margin-bottom: 3px;">Advocate & Solicitors</div>
               <div>2493AP, Ground floor, Sector 57, Gurugram-122003 (Haryana)</div>
@@ -270,8 +270,8 @@ export function fillPoliceComplaintTemplate(data: PoliceComplaintData): string {
             </table>
             <table style="width: 100%; border-collapse: collapse; border: none; font-size: 10.5pt; margin-top: 12px; margin-bottom: 5px; font-weight: bold; color: #333;">
               <tr>
-                <td style="text-align: left; border: none; padding: 2px 0;">Ref: ${noticeRef || "AMA/COMP-POLICE"}</td>
-                <td style="text-align: right; border: none; padding: 2px 0;">Date: ${noticeDate}</td>
+                <td style="text-align: left; border: none; padding: 2px 0;">Ref: <strong>${noticeRef || "AMA/COMP-POLICE"}</strong></td>
+                <td style="text-align: right; border: none; padding: 2px 0;">Date: <strong>${noticeDate}</strong></td>
               </tr>
             </table>
             <div class="header-divider"></div>
@@ -327,19 +327,19 @@ export function fillPoliceComplaintTemplate(data: PoliceComplaintData): string {
   <table class="details-table">
     <tr>
       <td style="width: 140px; font-weight: bold;">Name:</td>
-      <td>${complainantName}</td>
+      <td><strong>${complainantName}</strong></td>
     </tr>
     <tr>
       <td style="font-weight: bold;">Phone Number:</td>
-      <td>${complainantPhone}</td>
+      <td><strong>${complainantPhone}</strong></td>
     </tr>
     <tr>
       <td style="font-weight: bold;">Email ID:</td>
-      <td>${complainantEmail}</td>
+      <td><strong>${complainantEmail}</strong></td>
     </tr>
     <tr>
       <td style="font-weight: bold;">Address:</td>
-      <td>${complainantAddress}</td>
+      <td><strong>${complainantAddress}</strong></td>
     </tr>
   </table>
 
@@ -348,13 +348,13 @@ export function fillPoliceComplaintTemplate(data: PoliceComplaintData): string {
   <table class="details-table">
     <tr>
       <td style="width: 140px; font-weight: bold;">Name:</td>
-      <td>${clientName}</td>
+      <td><strong>${clientName}</strong></td>
     </tr>
-    ${clientPhone ? `<tr><td style="font-weight: bold;">Phone Number:</td><td>${clientPhone}</td></tr>` : ''}
-    ${clientEmail ? `<tr><td style="font-weight: bold;">Email ID:</td><td>${clientEmail}</td></tr>` : ''}
+    ${clientPhone ? `<tr><td style="font-weight: bold;">Phone Number:</td><td><strong>${clientPhone}</strong></td></tr>` : ''}
+    ${clientEmail ? `<tr><td style="font-weight: bold;">Email ID:</td><td><strong>${clientEmail}</strong></td></tr>` : ''}
     <tr>
       <td style="font-weight: bold;">Address:</td>
-      <td>${clientAddress}</td>
+      <td><strong>${clientAddress}</strong></td>
     </tr>
   </table>
 

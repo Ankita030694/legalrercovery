@@ -55,6 +55,11 @@ export async function POST(request: NextRequest) {
       policeStationName,
       policeStationAddress,
       policeStationEmail,
+      noticeRef,
+      complainantName,
+      complainantPhone,
+      complainantEmail,
+      complainantAddress,
     } = body
 
     if (!clientName || !amountPending || !policeStationName || !policeStationAddress) {
@@ -94,6 +99,11 @@ export async function POST(request: NextRequest) {
       headerLogoBase64,
       stampLogoBase64,
       signatureBase64,
+      noticeRef,
+      complainantName,
+      complainantPhone,
+      complainantEmail,
+      complainantAddress,
     })
  
     // Launch Puppeteer
