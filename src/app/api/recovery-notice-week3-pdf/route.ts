@@ -72,6 +72,8 @@ export async function POST(request: NextRequest) {
       noticeRef,
       complainantName,
       complainantAddress,
+      invoiceNo,
+      invoiceDate,
     } = body
 
     if (!clientName || !clientPhone || !amountPending) {
@@ -119,6 +121,8 @@ export async function POST(request: NextRequest) {
       complainantName,
       complainantAddress,
       isSpecialUser,
+      invoiceNo,
+      invoiceDate,
     })
  
     // Launch Puppeteer

@@ -37,17 +37,6 @@ async function sendAccusedDispatch(
   let emailSubject = "";
   let emailBody = "";
 
-  // Load logo base64
-  let logoBase64 = "";
-  try {
-    const logoPath = path.join(process.cwd(), 'public', 'notices', 'header logo AMA .png');
-    if (fs.existsSync(logoPath)) {
-      logoBase64 = fs.readFileSync(logoPath).toString('base64');
-    }
-  } catch (e) {
-    console.warn("Could not load logo for email:", e);
-  }
-
   if (step === 1) {
     emailSubject = `Legal Demand Notice – Immediate Attention Required (Ref: ${noticeRef})`;
     emailBody = `<div style="font-family: Arial, sans-serif; font-size: 15px; color: #1f2937; line-height: 1.6; max-width: 650px;">
@@ -65,7 +54,7 @@ async function sendAccusedDispatch(
   
   <br />
   <div style="border-top: 1px solid #e5e7eb; padding-top: 15px; margin-top: 20px;">
-    ${logoBase64 ? `<img src="data:image/png;base64,${logoBase64}" width="220" height="61" alt="AMA Legal Solutions" style="width: 220px; height: 61px; display: block; margin-bottom: 10px;" />` : ''}
+    <img src="https://www.legalrecovery.in/notices/ama_logo.png" width="220" height="61" alt="AMA Legal Solutions" style="width: 220px; height: 61px; display: block; margin-bottom: 10px;" />
     <strong style="color: #111827; font-size: 16px; display: block; letter-spacing: 0.5px;">AMA LEGAL SOLUTIONS</strong>
     <span style="font-size: 14px; color: #4b5563; display: block; font-weight: 600;">Advocate & Solicitors</span>
     <span style="font-size: 13px; color: #6b7280; display: block;">HIGH COURT OF DELHI</span>
@@ -96,7 +85,7 @@ async function sendAccusedDispatch(
   
   <br />
   <div style="border-top: 1px solid #e5e7eb; padding-top: 15px; margin-top: 20px;">
-    ${logoBase64 ? `<img src="data:image/png;base64,${logoBase64}" width="220" height="61" alt="AMA Legal Solutions" style="width: 220px; height: 61px; display: block; margin-bottom: 10px;" />` : ''}
+    <img src="https://www.legalrecovery.in/notices/ama_logo.png" width="220" height="61" alt="AMA Legal Solutions" style="width: 220px; height: 61px; display: block; margin-bottom: 10px;" />
     <strong style="color: #111827; font-size: 16px; display: block; letter-spacing: 0.5px;">AMA LEGAL SOLUTIONS</strong>
     <span style="font-size: 14px; color: #4b5563; display: block; font-weight: 600;">Advocate & Solicitors</span>
     <span style="font-size: 13px; color: #6b7280; display: block;">HIGH COURT OF DELHI</span>
@@ -127,7 +116,7 @@ async function sendAccusedDispatch(
   
   <br />
   <div style="border-top: 1px solid #e5e7eb; padding-top: 15px; margin-top: 20px;">
-    ${logoBase64 ? `<img src="data:image/png;base64,${logoBase64}" width="220" height="61" alt="AMA Legal Solutions" style="width: 220px; height: 61px; display: block; margin-bottom: 10px;" />` : ''}
+    <img src="https://www.legalrecovery.in/notices/ama_logo.png" width="220" height="61" alt="AMA Legal Solutions" style="width: 220px; height: 61px; display: block; margin-bottom: 10px;" />
     <strong style="color: #111827; font-size: 16px; display: block; letter-spacing: 0.5px;">AMA LEGAL SOLUTIONS</strong>
     <span style="font-size: 14px; color: #4b5563; display: block; font-weight: 600;">Advocate & Solicitors</span>
     <span style="font-size: 13px; color: #6b7280; display: block;">HIGH COURT OF DELHI</span>
@@ -352,7 +341,13 @@ async function handleDispatch(req: NextRequest) {
       processedCount++;
 
       // Fetch client profile securely
-      const clientUser = await db.collection("users").findOne({ _id: caseDoc.userId });
+      let userQueryId: any = caseDoc.userId;
+      if (typeof caseDoc.userId === 'string' && ObjectId.isValid(caseDoc.userId)) {
+        try {
+          userQueryId = new ObjectId(caseDoc.userId);
+        } catch (e) {}
+      }
+      const clientUser = await db.collection("users").findOne({ _id: userQueryId });
       const clientDisplayName = caseDoc.clientName || clientUser?.name || clientUser?.companyName || "Tech AMA";
 
       console.log(`[Queue Processor] Processing Case: ${caseDoc.caseId}, Step: ${caseDoc.currentStep}`);
@@ -386,7 +381,8 @@ async function handleDispatch(req: NextRequest) {
             clientAddress: complainantAddress,
             noticeRef,
             invoiceNo: caseDoc.invoiceNo,
-            invoiceDate: caseDoc.invoiceDate
+            invoiceDate: caseDoc.invoiceDate,
+            isSpecialUser: clientUser?.phone?.replace(/\D/g, '').endsWith('8700343611')
           });
         } catch (pdfErr: any) {
           console.error(`[Queue Processor] PDF Generation error for Case ${caseDoc.caseId}:`, pdfErr);
@@ -568,7 +564,8 @@ async function handleDispatch(req: NextRequest) {
             clientAddress: complainantAddress,
             noticeRef,
             invoiceNo: caseDoc.invoiceNo,
-            invoiceDate: caseDoc.invoiceDate
+            invoiceDate: caseDoc.invoiceDate,
+            isSpecialUser: clientUser?.phone?.replace(/\D/g, '').endsWith('8700343611')
           });
         } catch (pdfErr: any) {
           console.error(`[Queue Processor] Step 4 PDF Generation failed for Case ${caseDoc.caseId}:`, pdfErr);

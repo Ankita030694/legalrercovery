@@ -14,6 +14,8 @@ export interface RecoveryNoticeWeek2Data {
   complainantName?: string
   complainantAddress?: string
   isSpecialUser?: boolean
+  invoiceNo?: string
+  invoiceDate?: string
 }
 
 export function fillWeek2NoticeTemplate(data: RecoveryNoticeWeek2Data): string {
@@ -32,6 +34,8 @@ export function fillWeek2NoticeTemplate(data: RecoveryNoticeWeek2Data): string {
     complainantName = "Tech AMA",
     complainantAddress = "2493AP, Ground floor, Sector 57, Gurugram-122003 (Haryana)",
     isSpecialUser = false,
+    invoiceNo,
+    invoiceDate,
   } = data
 
   // Convert amount to words helper
@@ -53,6 +57,9 @@ export function fillWeek2NoticeTemplate(data: RecoveryNoticeWeek2Data): string {
   }
 
   const pendingWords = amountToWords(amountPending)
+  const invoiceSuffix = (invoiceNo && invoiceNo.trim())
+    ? ` against Invoice No: <strong>${invoiceNo.trim()}</strong>${invoiceDate && invoiceDate.trim() ? ` dated <strong>${invoiceDate.trim()}</strong>` : ""}`
+    : "";
 
   return `<!DOCTYPE html>
 <html lang="en">
@@ -203,6 +210,7 @@ export function fillWeek2NoticeTemplate(data: RecoveryNoticeWeek2Data): string {
   .notice-body p {
     margin-bottom: 12px;
     text-indent: 0;
+    text-align: justify;
   }
   .signature-block {
     margin-top: 20px;
@@ -306,7 +314,7 @@ export function fillWeek2NoticeTemplate(data: RecoveryNoticeWeek2Data): string {
 
   <!-- Subject -->
   <div class="subject-line">
-    <strong>Subject: Demand Notice for Immediate Clearance of Outstanding Liability of ₹<strong>${amountPending}</strong> Towards <strong>${complainantName}</strong></strong>
+    <strong>Subject: Demand Notice for Immediate Clearance of Outstanding Liability of ₹<strong>${amountPending}</strong> Towards <strong>${complainantName}</strong>${invoiceSuffix}</strong>
   </div>
 
   <!-- Salutation -->

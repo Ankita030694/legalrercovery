@@ -69,6 +69,8 @@ export async function POST(req: NextRequest) {
     const complainantPhone = caseDoc.clientPhone || clientUser.phone || caseDoc.clientPhone;
     const complainantAddress = caseDoc.clientAddress || clientUser.address || caseDoc.clientAddress;
 
+    const isSpecialUser = clientUser?.phone?.replace(/\D/g, '').endsWith('8700343611');
+
     let pdfBuffer: Buffer;
     try {
       pdfBuffer = await generateNoticePDFBuffer({
@@ -88,7 +90,8 @@ export async function POST(req: NextRequest) {
         clientAddress: complainantAddress,
         invoiceNo: caseDoc.invoiceNo,
         invoiceDate: caseDoc.invoiceDate,
-        noticeRef: `${caseDoc.caseId}-N1`
+        noticeRef: `${caseDoc.caseId}-N1`,
+        isSpecialUser: isSpecialUser
       });
     } catch (pdfErr: any) {
       console.error("[Manual Start] PDF generation failed:", pdfErr);
@@ -103,17 +106,6 @@ export async function POST(req: NextRequest) {
     const cleanDefaulterName = caseDoc.defaulterName.replace(/[^a-zA-Z0-9]/g, "_");
     const formattedDate = formatDateString(new Date());
     const pdfFilename = `${cleanDefaulterName}_Notice_${formattedDate}.pdf`;
-
-    // Load logo base64
-    let logoBase64 = "";
-    try {
-      const logoPath = path.join(process.cwd(), 'public', 'notices', 'header logo AMA .png');
-      if (fs.existsSync(logoPath)) {
-        logoBase64 = fs.readFileSync(logoPath).toString('base64');
-      }
-    } catch (e) {
-      console.warn("Could not load logo for email:", e);
-    }
 
     const emailSubject = `Legal Demand Notice – Immediate Attention Required (Ref: ${caseDoc.caseId})`;
     const emailBody = `<div style="font-family: Arial, sans-serif; font-size: 15px; color: #1f2937; line-height: 1.6; max-width: 650px;">
@@ -131,7 +123,7 @@ export async function POST(req: NextRequest) {
   
   <br />
   <div style="border-top: 1px solid #e5e7eb; padding-top: 15px; margin-top: 20px;">
-    ${logoBase64 ? `<img src="data:image/png;base64,${logoBase64}" width="220" height="61" alt="AMA Legal Solutions" style="width: 220px; height: 61px; display: block; margin-bottom: 10px;" />` : ''}
+    <img src="https://www.legalrecovery.in/notices/ama_logo.png" width="220" height="61" alt="AMA Legal Solutions" style="width: 220px; height: 61px; display: block; margin-bottom: 10px;" />
     <strong style="color: #111827; font-size: 16px; display: block; letter-spacing: 0.5px;">AMA LEGAL SOLUTIONS</strong>
     <span style="font-size: 14px; color: #4b5563; display: block; font-weight: 600;">Advocate & Solicitors</span>
     <span style="font-size: 13px; color: #6b7280; display: block;">HIGH COURT OF DELHI</span>

@@ -52,6 +52,7 @@ export interface PDFGeneratorParams {
   clientPhone?: string;
   clientAddress?: string;
   noticeRef?: string;
+  isSpecialUser?: boolean;
   // Invoice Details
   invoiceNo?: string;
   invoiceDate?: string;
@@ -301,22 +302,62 @@ class NoticePDFWriter {
       const indent = (i === 0) ? textIndent : 0;
       let currentX = 50 + indent;
 
-      for (const word of line) {
-        const font = word.isBold ? this.fontBold : this.fontRegular;
-        
-        if (word.text) {
-          this.currentPage.drawText(word.text, {
-            x: currentX,
-            y: this.currentY,
-            size,
-            font,
-          });
-          currentX += font.widthOfTextAtSize(word.text, size);
+      const isLastLine = i === lines.length - 1;
+      const hasGaps = line.length > 1;
+
+      if (!isLastLine && hasGaps) {
+        // Calculate total width of all words in the line (without spaces)
+        let totalWordsWidth = 0;
+        let gapCount = 0;
+        for (let j = 0; j < line.length; j++) {
+          const word = line[j];
+          const font = word.isBold ? this.fontBold : this.fontRegular;
+          totalWordsWidth += font.widthOfTextAtSize(word.text, size);
+          if (j < line.length - 1) {
+            gapCount++;
+          }
         }
         
-        if (word.hasTrailingSpace) {
-          const spaceWidth = font.widthOfTextAtSize(" ", size);
-          currentX += spaceWidth;
+        // Remaining width to distribute
+        const remainingWidth = maxWidth - indent - totalWordsWidth;
+        const spaceWidth = gapCount > 0 ? (remainingWidth / gapCount) : 0;
+        
+        // Draw the words with the distributed spaceWidth
+        for (let j = 0; j < line.length; j++) {
+          const word = line[j];
+          const font = word.isBold ? this.fontBold : this.fontRegular;
+          if (word.text) {
+            this.currentPage.drawText(word.text, {
+              x: currentX,
+              y: this.currentY,
+              size,
+              font,
+            });
+            currentX += font.widthOfTextAtSize(word.text, size);
+          }
+          if (j < line.length - 1) {
+            currentX += spaceWidth;
+          }
+        }
+      } else {
+        // Left-align (original logic)
+        for (const word of line) {
+          const font = word.isBold ? this.fontBold : this.fontRegular;
+          
+          if (word.text) {
+            this.currentPage.drawText(word.text, {
+              x: currentX,
+              y: this.currentY,
+              size,
+              font,
+            });
+            currentX += font.widthOfTextAtSize(word.text, size);
+          }
+          
+          if (word.hasTrailingSpace) {
+            const spaceWidth = font.widthOfTextAtSize(" ", size);
+            currentX += spaceWidth;
+          }
         }
       }
 
@@ -559,7 +600,7 @@ export async function generateNoticePDFBuffer(params: PDFGeneratorParams): Promi
   } = params;
 
   const invoiceSuffix = (params.invoiceNo && params.invoiceNo.trim())
-    ? ` against Invoice No: **${params.invoiceNo.trim()}**${params.invoiceDate && params.invoiceDate.trim() ? ` dated **${params.invoiceDate.trim()}**` : ""}`
+    ? ` against Invoice No: ${params.invoiceNo.trim()}${params.invoiceDate && params.invoiceDate.trim() ? ` dated ${params.invoiceDate.trim()}` : ""}`
     : "";
 
   const pdfDoc = await PDFDocument.create();
@@ -603,7 +644,7 @@ export async function generateNoticePDFBuffer(params: PDFGeneratorParams): Promi
   const noticeDate = formatDate(new Date().toISOString());
   const noticeRef = params.noticeRef || `LR-0000-0000-${step === 4 ? 'C4' : 'N' + step}`;
 
-  const isSpecialUser = params.clientPhone?.replace(/\D/g, '').endsWith('8700343611');
+  const isSpecialUser = params.isSpecialUser || params.clientPhone?.replace(/\D/g, '').endsWith('8700343611');
   const stampImageToUse = isSpecialUser ? barStampImage : stampImage;
 
   const writer = new NoticePDFWriter(

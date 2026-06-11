@@ -14,6 +14,8 @@ export interface RecoveryNoticeWeek3Data {
   complainantName?: string
   complainantAddress?: string
   isSpecialUser?: boolean
+  invoiceNo?: string
+  invoiceDate?: string
 }
 
 export function fillWeek3NoticeTemplate(data: RecoveryNoticeWeek3Data): string {
@@ -32,6 +34,8 @@ export function fillWeek3NoticeTemplate(data: RecoveryNoticeWeek3Data): string {
     complainantName = "Tech AMA",
     complainantAddress = "2493AP, Ground floor, Sector 57, Gurugram-122003 (Haryana)",
     isSpecialUser = false,
+    invoiceNo,
+    invoiceDate,
   } = data
 
   // Convert amount to words helper
@@ -53,6 +57,9 @@ export function fillWeek3NoticeTemplate(data: RecoveryNoticeWeek3Data): string {
   }
 
   const pendingWords = amountToWords(amountPending)
+  const invoiceSuffix = (invoiceNo && invoiceNo.trim())
+    ? ` against Invoice No: <strong>${invoiceNo.trim()}</strong>${invoiceDate && invoiceDate.trim() ? ` dated <strong>${invoiceDate.trim()}</strong>` : ""}`
+    : "";
 
   return `<!DOCTYPE html>
 <html lang="en">
@@ -203,6 +210,7 @@ export function fillWeek3NoticeTemplate(data: RecoveryNoticeWeek3Data): string {
   .notice-body p {
     margin-bottom: 12px;
     text-indent: 0;
+    text-align: justify;
   }
   .signature-block {
     margin-top: 20px;
@@ -306,7 +314,7 @@ export function fillWeek3NoticeTemplate(data: RecoveryNoticeWeek3Data): string {
 
   <!-- Subject -->
   <div class="subject-line">
-    <strong>Subject: Final Pre-Litigation and Police Complaint Notice for Recovery of ₹<strong>${amountPending}</strong> Under Applicable Provisions of Bharatiya Nyaya Sanhita (BNS)</strong>
+    <strong>Subject: Final Pre-Litigation and Police Complaint Notice for Recovery of ₹<strong>${amountPending}</strong> Under Applicable Provisions of Bharatiya Nyaya Sanhita (BNS)${invoiceSuffix}</strong>
   </div>
 
   <!-- Salutation -->
