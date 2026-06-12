@@ -64,12 +64,6 @@ const breadcrumbSchema = {
     {
       "@type": "ListItem",
       "position": 2,
-      "name": "Guides",
-      "item": "https://www.legalrecovery.in/guides"
-    },
-    {
-      "@type": "ListItem",
-      "position": 3,
       "name": "Freelancer Forum Choice",
       "item": "https://www.legalrecovery.in/can-a-freelancer-file-a-case-in-a-consumer-forum-or-civil-court-to-recover-payment-in-india"
     }
@@ -227,7 +221,6 @@ export default function FreelancerForumClient() {
   ];
 
   const breadcrumbItems = [
-    { label: "Guides", href: "/guides" },
     { label: "Freelancer Forum Choice", href: "/can-a-freelancer-file-a-case-in-a-consumer-forum-or-civil-court-to-recover-payment-in-india" }
   ];
 

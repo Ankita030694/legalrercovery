@@ -64,12 +64,6 @@ const breadcrumbSchema = {
     {
       "@type": "ListItem",
       "position": 2,
-      "name": "Guides",
-      "item": "https://www.legalrecovery.in/guides"
-    },
-    {
-      "@type": "ListItem",
-      "position": 3,
       "name": "Freelancer Evidence Checklist",
       "item": "https://www.legalrecovery.in/what-evidence-should-a-freelancer-collect-to-strengthen-a-payment-recovery-case-against-a-client"
     }
@@ -227,7 +221,6 @@ export default function FreelancerEvidenceClient() {
   ];
 
   const breadcrumbItems = [
-    { label: "Guides", href: "/guides" },
     { label: "Freelancer Evidence Checklist", href: "/what-evidence-should-a-freelancer-collect-to-strengthen-a-payment-recovery-case-against-a-client" }
   ];
 

@@ -64,12 +64,6 @@ const breadcrumbSchema = {
     {
       "@type": "ListItem",
       "position": 2,
-      "name": "Guides",
-      "item": "https://www.legalrecovery.in/guides"
-    },
-    {
-      "@type": "ListItem",
-      "position": 3,
       "name": "Enforceable Legal Notice Requirements",
       "item": "https://www.legalrecovery.in/what-should-a-legal-notice-include-to-be-enforceable-under-indian-law"
     }
@@ -227,7 +221,6 @@ export default function EnforceableNoticeClient() {
   ];
 
   const breadcrumbItems = [
-    { label: "Guides", href: "/guides" },
     { label: "Legal Notice Enforceability", href: "/what-should-a-legal-notice-include-to-be-enforceable-under-indian-law" }
   ];
 

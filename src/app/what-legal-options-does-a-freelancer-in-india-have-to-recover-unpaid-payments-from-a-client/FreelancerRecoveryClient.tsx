@@ -64,12 +64,6 @@ const breadcrumbSchema = {
     {
       "@type": "ListItem",
       "position": 2,
-      "name": "Guides",
-      "item": "https://www.legalrecovery.in/guides"
-    },
-    {
-      "@type": "ListItem",
-      "position": 3,
       "name": "Freelancer Unpaid Payments Recovery",
       "item": "https://www.legalrecovery.in/what-legal-options-does-a-freelancer-in-india-have-to-recover-unpaid-payments-from-a-client"
     }
@@ -227,7 +221,6 @@ export default function FreelancerRecoveryClient() {
   ];
 
   const breadcrumbItems = [
-    { label: "Guides", href: "/guides" },
     { label: "Freelancer Payment Recovery", href: "/what-legal-options-does-a-freelancer-in-india-have-to-recover-unpaid-payments-from-a-client" }
   ];
 

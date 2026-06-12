@@ -64,12 +64,6 @@ const breadcrumbSchema = {
     {
       "@type": "ListItem",
       "position": 2,
-      "name": "Guides",
-      "item": "https://www.legalrecovery.in/guides"
-    },
-    {
-      "@type": "ListItem",
-      "position": 3,
       "name": "MSME Act Freelancer Guide",
       "item": "https://www.legalrecovery.in/how-does-the-micro-small-and-medium-enterprises-act-help-freelancers-recover-overdue-payments-in-india"
     }
@@ -227,7 +221,6 @@ export default function FreelancerMSMEClient() {
   ];
 
   const breadcrumbItems = [
-    { label: "Guides", href: "/guides" },
     { label: "MSME Act Freelancer Guide", href: "/how-does-the-micro-small-and-medium-enterprises-act-help-freelancers-recover-overdue-payments-in-india" }
   ];
 

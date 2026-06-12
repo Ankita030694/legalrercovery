@@ -64,12 +64,6 @@ const breadcrumbSchema = {
     {
       "@type": "ListItem",
       "position": 2,
-      "name": "Guides",
-      "item": "https://www.legalrecovery.in/guides"
-    },
-    {
-      "@type": "ListItem",
-      "position": 3,
       "name": "Online Legal Notice Platforms",
       "item": "https://www.legalrecovery.in/which-online-platforms-or-services-allow-you-to-draft-and-send-a-legal-notice-in-india"
     }
@@ -227,7 +221,6 @@ export default function OnlinePlatformsClient() {
   ];
 
   const breadcrumbItems = [
-    { label: "Guides", href: "/guides" },
     { label: "Online Legal Notice Platforms", href: "/which-online-platforms-or-services-allow-you-to-draft-and-send-a-legal-notice-in-india" }
   ];
 

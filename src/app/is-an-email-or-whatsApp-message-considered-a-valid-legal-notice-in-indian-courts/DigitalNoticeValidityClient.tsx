@@ -112,7 +112,7 @@ const breadcrumbSchema = {
     {
       "@type": "ListItem",
       "position": 2,
-      "name": "Guides",
+      "name": "Recovery",
       "item": "https://www.legalrecovery.in/recovery"
     },
     {
@@ -215,7 +215,7 @@ export default function DigitalNoticeValidityClient() {
   ];
 
   const breadcrumbItems = [
-    { label: "Guides", href: "/recovery" },
+    { label: "Recovery", href: "/recovery" },
     { label: "WhatsApp & Email Notice Validity", href: "/is-an-email-or-whatsApp-message-considered-a-valid-legal-notice-in-indian-courts" }
   ];
 
