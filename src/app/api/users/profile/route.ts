@@ -45,7 +45,8 @@ export async function GET(req: NextRequest) {
         state: user.state || "Haryana",
         address: user.address || "",
         hasUnlimitedCases: user.hasUnlimitedCases || false,
-        isPaid: user.isPaid || false
+        isPaid: user.isPaid || false,
+        sendPoliceComplaints: user.sendPoliceComplaints !== false
       }
     });
 
@@ -65,7 +66,7 @@ export async function PUT(req: NextRequest) {
 
   try {
     const body = await req.json();
-    const { name, email, address, state } = body;
+    const { name, email, address, state, sendPoliceComplaints } = body;
 
     if (!name || !name.trim()) {
       return NextResponse.json({ error: "Name is required." }, { status: 400 });
@@ -98,6 +99,7 @@ export async function PUT(req: NextRequest) {
             email: email.trim().toLowerCase(),
             address: address.trim(),
             state: state.trim(),
+            ...(typeof sendPoliceComplaints === 'boolean' ? { sendPoliceComplaints } : {}),
             updatedAt: new Date()
           }
         }
@@ -115,7 +117,8 @@ export async function PUT(req: NextRequest) {
         name: name.trim(),
         email: email.trim().toLowerCase(),
         address: address.trim(),
-        state: state.trim()
+        state: state.trim(),
+        sendPoliceComplaints: typeof sendPoliceComplaints === 'boolean' ? sendPoliceComplaints : true
       }
     });
 

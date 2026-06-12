@@ -530,8 +530,55 @@ async function handleDispatch(req: NextRequest) {
         }
 
       } else if (caseDoc.currentStep === 4) {
-        // Step 4: SHO Criminal Police Complaint (Direct Email to SHO & Accused, CC Client)
         const clientEmail = caseDoc.clientEmail || clientUser?.email || caseDoc.clientEmail;
+        
+        // Check if the advocate has disabled police complaints
+        const isSpecialUser = clientUser?.phone?.replace(/\D/g, '').endsWith('8700343611');
+        const sendComplaints = clientUser?.sendPoliceComplaints !== false;
+
+        if (isSpecialUser && !sendComplaints) {
+          console.log(`[Queue Processor] Police complaint toggle is OFF for special user case ${caseDoc.caseId}. Skipping dispatch.`);
+          
+          await db.collection("cases").updateOne(
+            { _id: caseDoc._id },
+            {
+              $set: {
+                status: "completed",
+                updatedAt: now.toISOString(),
+                "timeline.3.status": "completed",
+                "timeline.3.completedAt": now.toISOString(),
+                "timeline.3.date": formatDateString(now),
+                "timeline.3.description": "Police Complaint skipped as per advocate preference (Police complaints toggle off)."
+              }
+            }
+          );
+          
+          // Create a mock dispatch log entry so it's documented
+          const ledgerEntry = {
+            caseId: caseDoc.caseId,
+            dbId: caseDoc._id,
+            step: 4,
+            noticeRef,
+            recipientTo: "None (Skipped)",
+            clientCc: clientEmail || "None",
+            dispatchedAt: new Date().toISOString(),
+            channels: {
+              email: {
+                status: "success",
+                error: "Skipped (Police complaints toggle off)"
+              },
+              whatsapp: {
+                status: "success",
+                error: "Skipped (Police complaints toggle off)"
+              }
+            }
+          };
+          await db.collection("dispatch_logs").insertOne(ledgerEntry);
+          
+          continue;
+        }
+
+        // Step 4: SHO Criminal Police Complaint (Direct Email to SHO & Accused, CC Client)
         if (!clientEmail) {
           console.error(`[Queue Processor] Client email missing for Case ${caseDoc.caseId}`);
           await db.collection("cases").updateOne(
