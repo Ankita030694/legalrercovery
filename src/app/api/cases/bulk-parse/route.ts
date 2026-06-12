@@ -61,9 +61,18 @@ export async function POST(req: NextRequest) {
       - address: Complete physical address of the defaulter. If it contains a state name, clean/keep the full text.
       - state: Standardized Indian State or UT name matching the address (e.g. "Haryana", "Delhi", "Rajasthan").
       - stuckAmount: The outstanding dues amount as a number (float/integer). Clean all commas, spaces, currency symbols (e.g., "1,461,994.00" -> 1461994).
-      - dueDate: The original payment due date. Ensure the parsed due date is ALWAYS in the past (before today, June 11, 2026). If the due date specified is partial (e.g. '24-Nov'), you MUST infer the year from the invoice date (e.g. if the invoice date is '31-Jan-24', the due date '24-Nov' is likely '2024-11-24'). If no year is specified or can be inferred, default to the most logical past year (e.g. 2025 or 2024) such that the due date is not in the future relative to today, June 11, 2026. Format as standard YYYY-MM-DD.
+      - dueDate: The original payment due date in "YYYY-MM-DD" format. If the input contains due dates in formats like '24-Nov', '25-Nov', '24-Dec', '25-Dec', '24-Jun':
+        - The day is the number (e.g., 24, 25).
+        - The month is from the month name abbreviation (e.g., 'Nov' -> November, 'Dec' -> December, 'Jun' -> June).
+        - The year is 2024 if the corresponding invoice date is in 2024 (e.g. '31-Jan-24' or '22-Aug-24') or in 2023. If the invoice date specifies a year like 2025 (e.g., '9-Dec-25'), the year is 2025. Otherwise, if no invoice year can be inferred, use 2024.
+        - Examples:
+          * '24-Nov' with invoice date '31-Jan-24' -> '2024-11-24'
+          * '25-Nov' with invoice date '22-Aug-24' -> '2024-11-25'
+          * '24-Dec' with invoice date '25-Nov-24' -> '2024-12-24'
+          * '25-Dec' with invoice date '9-Dec-25' -> '2025-12-25'
+          * '24-Jun' with invoice dates in 2023 -> '2024-06-24'
       - invoiceNo: A string representation of all invoice numbers associated with the case. If there are multiple (e.g. separated by newlines/quotes), combine them into a single string (e.g. "GGN FY 23-24 Sales 5848, GGN FY 23-24 Sales 5849").
-      - invoiceDate: The invoice date in "YYYY-MM-DD" format (e.g. "31-Jan-24" -> "2024-01-31", "22-Aug-24" -> "2024-08-22"). If not present, set to null.
+      - invoiceDate: The invoice date in "YYYY-MM-DD" format. Translate abbreviations and dots (e.g., "31-Jan-24" -> "2024-01-31", "22-Aug-24" -> "2024-08-22", "30.0ct.23" -> "2023-10-30", "9.Nov.23" -> "2023-11-09", "12.Dec.23" -> "2023-12-12"). If there are multiple dates, pick the latest/most recent one. If not present, set to null.
 
       **Today's Current Date Context**: June 11, 2026. Do not generate due dates in the future.
 

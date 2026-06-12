@@ -21,9 +21,28 @@ import {
   Search,
   ChevronDown,
   Briefcase,
-  Trash2
+  Trash2,
+  Eye,
+  Edit
 } from "lucide-react";
 import Link from "next/link";
+
+const formatDateToDisplay = (dateStr: string) => {
+  if (!dateStr) return "-";
+  if (/^\d{2}-\d{2}-\d{4}$/.test(dateStr)) return dateStr;
+  const parts = dateStr.split("-");
+  if (parts.length === 3 && parts[0].length === 4) {
+    return `${parts[2]}-${parts[1]}-${parts[0]}`;
+  }
+  const d = new Date(dateStr);
+  if (!isNaN(d.getTime())) {
+    const day = String(d.getDate()).padStart(2, '0');
+    const month = String(d.getMonth() + 1).padStart(2, '0');
+    const year = d.getFullYear();
+    return `${day}-${month}-${year}`;
+  }
+  return dateStr;
+};
 
 export default function NewRecoveryForm() {
   const router = useRouter();
@@ -106,6 +125,119 @@ export default function NewRecoveryForm() {
   const [isParsing, setIsParsing] = useState(false);
   const [parseError, setParseError] = useState<string | null>(null);
   const [isBulkSubmitting, setIsBulkSubmitting] = useState(false);
+  const [parseSuccessCount, setParseSuccessCount] = useState<number | null>(null);
+
+  // ── VIEW / EDIT MODAL STATE VARIABLES ──
+  const [activeModalIndex, setActiveModalIndex] = useState<number | null>(null);
+  const [isModalEditMode, setIsModalEditMode] = useState<boolean>(false);
+  const [editDefaulterName, setEditDefaulterName] = useState("");
+  const [editEntityType, setEditEntityType] = useState("Company");
+  const [editPhone, setEditPhone] = useState("");
+  const [editPhone2, setEditPhone2] = useState("");
+  const [editEmail, setEditEmail] = useState("");
+  const [editEmail2, setEditEmail2] = useState("");
+  const [editAddress, setEditAddress] = useState("");
+  const [editState, setEditState] = useState("");
+  const [editStuckAmount, setEditStuckAmount] = useState("");
+  const [editDueDate, setEditDueDate] = useState("");
+  const [editInvoiceNo, setEditInvoiceNo] = useState("");
+  const [editInvoiceDate, setEditInvoiceDate] = useState("");
+  const [editPoliceStationName, setEditPoliceStationName] = useState("");
+  const [editPoliceStationEmail, setEditPoliceStationEmail] = useState("");
+  const [editPoliceStationAddress, setEditPoliceStationAddress] = useState("");
+
+  const handleOpenModal = (index: number, editMode: boolean = false) => {
+    const c = parsedCases[index];
+    if (!c) return;
+    setActiveModalIndex(index);
+    setIsModalEditMode(editMode);
+    setEditDefaulterName(c.defaulterName || "");
+    setEditEntityType(c.entityType || "Company");
+    setEditPhone(c.phone || "");
+    setEditPhone2(c.phone2 || "");
+    setEditEmail(c.email || "");
+    setEditEmail2(c.email2 || "");
+    setEditAddress(c.address || "");
+    setEditState(c.state || "");
+    setEditStuckAmount(c.stuckAmount ? String(c.stuckAmount) : "");
+    setEditDueDate(c.dueDate || "");
+    setEditInvoiceNo(c.invoiceNo || "");
+    setEditInvoiceDate(c.invoiceDate || "");
+    setEditPoliceStationName(c.policeStationName || "");
+    setEditPoliceStationEmail(c.policeStationEmail || "");
+    setEditPoliceStationAddress(c.policeStationAddress || "");
+  };
+
+  const handleSaveModalDetails = () => {
+    if (activeModalIndex === null) return;
+    if (!editDefaulterName.trim()) {
+      alert("Defaulter legal name is required.");
+      return;
+    }
+    if (!editPhone || editPhone.replace(/\D/g, "").length !== 10) {
+      alert("A valid 10-digit primary phone number is required.");
+      return;
+    }
+    if (!editEmail.trim()) {
+      alert("Primary email address is required.");
+      return;
+    }
+    if (!editAddress.trim()) {
+      alert("Defaulter physical address is required.");
+      return;
+    }
+    if (!editStuckAmount.trim() || isNaN(parseFloat(editStuckAmount.replace(/,/g, "")))) {
+      alert("A valid outstanding dues amount is required.");
+      return;
+    }
+    if (!editDueDate) {
+      alert("Original due date is required.");
+      return;
+    }
+
+    let matchedName = editPoliceStationName;
+    let matchedEmail = editPoliceStationEmail;
+    let matchedAddress = editPoliceStationAddress;
+
+    const currentState = parsedCases[activeModalIndex].state || "";
+    if (editState && editState.toLowerCase() !== currentState.toLowerCase()) {
+      const hq = policeStations.find(
+        (d) => d.state.toLowerCase() === editState.toLowerCase()
+      );
+      if (hq) {
+        matchedName = hq.hqName;
+        matchedEmail = hq.emails[0] || "";
+        matchedAddress = hq.hqAddress;
+      } else {
+        matchedName = "";
+        matchedEmail = "";
+        matchedAddress = "";
+      }
+    }
+
+    const updated = {
+      ...parsedCases[activeModalIndex],
+      defaulterName: editDefaulterName.trim(),
+      entityType: editEntityType,
+      phone: editPhone.replace(/\D/g, "").slice(0, 10),
+      phone2: editPhone2.replace(/\D/g, "").slice(0, 10),
+      email: editEmail.trim(),
+      email2: editEmail2.trim(),
+      address: editAddress.trim(),
+      state: editState,
+      stuckAmount: parseFloat(editStuckAmount.replace(/,/g, "")) || 0,
+      dueDate: editDueDate,
+      invoiceNo: editInvoiceNo.trim(),
+      invoiceDate: editInvoiceDate || null,
+      policeStationName: matchedName,
+      policeStationEmail: matchedEmail,
+      policeStationAddress: matchedAddress
+    };
+
+    setParsedCases(prev => prev.map((item, idx) => idx === activeModalIndex ? updated : item));
+    setActiveModalIndex(null);
+    setIsModalEditMode(false);
+  };
 
   const handleParseBulk = async () => {
     if (!bulkText.trim()) {
@@ -114,6 +246,7 @@ export default function NewRecoveryForm() {
     }
     setIsParsing(true);
     setParseError(null);
+    setParseSuccessCount(null);
     try {
       const response = await fetch("/api/cases/bulk-parse", {
         method: "POST",
@@ -127,7 +260,9 @@ export default function NewRecoveryForm() {
         throw new Error(data.error || "Failed to parse data");
       }
       if (data.success && data.cases) {
-        setParsedCases(data.cases);
+        setParsedCases(prev => [...prev, ...data.cases]);
+        setParseSuccessCount(data.cases.length);
+        setBulkText("");
       } else {
         throw new Error("No cases returned from parser.");
       }
@@ -141,6 +276,9 @@ export default function NewRecoveryForm() {
 
   const handleDeleteParsedRow = (indexToRemove: number) => {
     setParsedCases(prev => prev.filter((_, idx) => idx !== indexToRemove));
+    if (parsedCases.length <= 1) {
+      setParseSuccessCount(null);
+    }
   };
 
   const handleBulkSubmit = async () => {
@@ -535,9 +673,25 @@ export default function NewRecoveryForm() {
               {/* Action Button */}
               <div className="flex flex-col gap-3">
                 {parseError && (
-                  <div className="bg-red-50 border border-red-200 text-red-750 text-xs font-semibold p-4 rounded-xl flex items-center gap-2 leading-relaxed">
+                  <div className="bg-red-50 border border-red-200 text-red-750 text-xs font-semibold p-4 rounded-xl flex items-center gap-2 leading-relaxed animate-in fade-in">
                     <span className="font-bold">⚠️ Parsing Failed:</span>
                     <span>{parseError}</span>
+                  </div>
+                )}
+
+                {parseSuccessCount !== null && (
+                  <div className="bg-emerald-50 border border-emerald-250 text-emerald-805 text-xs font-semibold p-4 rounded-xl flex items-center justify-between leading-relaxed animate-in fade-in slide-in-from-top-2">
+                    <div className="flex items-center gap-2">
+                      <span className="text-sm">✨</span>
+                      <span>Successfully parsed and added <strong>{parseSuccessCount}</strong> new claims to the list below. You can enter another set of records now.</span>
+                    </div>
+                    <button 
+                      type="button" 
+                      onClick={() => setParseSuccessCount(null)}
+                      className="text-[10px] font-bold text-emerald-600 hover:text-emerald-850 hover:underline uppercase tracking-wider ml-4 cursor-pointer"
+                    >
+                      Dismiss
+                    </button>
                   </div>
                 )}
                 
@@ -565,9 +719,23 @@ export default function NewRecoveryForm() {
             {parsedCases.length > 0 && (
               <div className="bg-white border border-[#E5E7EB]/70 rounded-3xl p-6 sm:p-8 flex flex-col gap-6 shadow-sm animate-in fade-in duration-300">
                 <div className="border-b border-[#E5E7EB]/50 pb-2.5 flex justify-between items-center">
-                  <h3 className="text-base font-black text-[#111827]">
-                    2. Preview Extracted Claims
-                  </h3>
+                  <div className="flex items-center gap-3">
+                    <h3 className="text-base font-black text-[#111827]">
+                      2. Preview Extracted Claims
+                    </h3>
+                    <button
+                      type="button"
+                      onClick={() => {
+                        if (confirm("Are you sure you want to clear all parsed cases?")) {
+                          setParsedCases([]);
+                          setParseSuccessCount(null);
+                        }
+                      }}
+                      className="text-[10px] font-extrabold text-slate-500 hover:text-[#DC2626] bg-slate-50 hover:bg-red-50 border border-[#E5E7EB] hover:border-red-100 px-3 py-1 rounded-lg transition-all cursor-pointer"
+                    >
+                      Clear List
+                    </button>
+                  </div>
                   <span className="text-xs font-extrabold uppercase px-2.5 py-0.5 rounded-full bg-red-50 text-[#DC2626] border border-red-100">
                     {parsedCases.length} Claims Found
                   </span>
@@ -589,16 +757,20 @@ export default function NewRecoveryForm() {
                       </thead>
                       <tbody className="divide-y divide-slate-100">
                         {parsedCases.map((c, idx) => (
-                          <tr key={idx} className="hover:bg-slate-50/50 transition-colors">
+                          <tr 
+                            key={idx} 
+                            onClick={() => handleOpenModal(idx, false)}
+                            className="hover:bg-slate-50/70 transition-colors cursor-pointer group"
+                          >
                             {/* Defaulter Info */}
                             <td className="px-4 py-3.5 align-top">
-                              <div className="font-extrabold text-slate-800 leading-tight">{c.defaulterName}</div>
+                              <div className="font-extrabold text-slate-800 group-hover:text-[#DC2626] transition-colors leading-tight">{c.defaulterName}</div>
                               <div className="text-[10px] text-slate-400 font-bold uppercase mt-0.5">{c.entityType}</div>
                             </td>
-                            {/* Dues */}
+                             {/* Dues */}
                             <td className="px-4 py-3.5 align-top">
                               <div className="font-black text-red-650">₹{c.stuckAmount.toLocaleString("en-IN")}</div>
-                              <div className="text-[10px] text-slate-450 font-semibold mt-0.5">Due: {c.dueDate}</div>
+                              <div className="text-[10px] text-slate-450 font-semibold mt-0.5">Due: {formatDateToDisplay(c.dueDate)}</div>
                             </td>
                             {/* Contact */}
                             <td className="px-4 py-3.5 align-top">
@@ -615,18 +787,36 @@ export default function NewRecoveryForm() {
                             {/* Invoice Details */}
                             <td className="px-4 py-3.5 align-top">
                               <div className="font-semibold text-slate-700 truncate max-w-[150px]">{c.invoiceNo || "-"}</div>
-                              <div className="text-[10px] text-slate-450 mt-0.5">{c.invoiceDate || "-"}</div>
+                              <div className="text-[10px] text-slate-450 mt-0.5">{formatDateToDisplay(c.invoiceDate)}</div>
                             </td>
                             {/* Actions */}
-                            <td className="px-4 py-3.5 align-middle text-center">
-                              <button
-                                type="button"
-                                onClick={() => handleDeleteParsedRow(idx)}
-                                className="p-2 text-red-600 hover:text-red-700 bg-red-50 hover:bg-red-100/80 rounded-xl transition-all cursor-pointer"
-                                title="Delete Case"
-                              >
-                                <Trash2 className="w-3.5 h-3.5" />
-                              </button>
+                            <td className="px-4 py-3.5 align-middle text-center" onClick={(e) => e.stopPropagation()}>
+                              <div className="flex items-center justify-center gap-1.5">
+                                <button
+                                  type="button"
+                                  onClick={() => handleOpenModal(idx, false)}
+                                  className="p-2 text-slate-500 hover:text-slate-900 bg-slate-50 hover:bg-slate-100 rounded-xl transition-all cursor-pointer"
+                                  title="View Details"
+                                >
+                                  <Eye className="w-3.5 h-3.5" />
+                                </button>
+                                <button
+                                  type="button"
+                                  onClick={() => handleOpenModal(idx, true)}
+                                  className="p-2 text-[#DC2626] hover:text-white bg-red-50 hover:bg-[#DC2626] rounded-xl transition-all cursor-pointer"
+                                  title="Edit Details"
+                                >
+                                  <Edit className="w-3.5 h-3.5" />
+                                </button>
+                                <button
+                                  type="button"
+                                  onClick={() => handleDeleteParsedRow(idx)}
+                                  className="p-2 text-red-650 hover:text-red-750 bg-red-50 hover:bg-red-100 rounded-xl transition-all cursor-pointer"
+                                  title="Delete Case"
+                                >
+                                  <Trash2 className="w-3.5 h-3.5" />
+                                </button>
+                              </div>
                             </td>
                           </tr>
                         ))}
@@ -682,6 +872,363 @@ export default function NewRecoveryForm() {
 
           </div>
         </div>
+
+        {/* ── DETAILED VIEW & EDIT MODAL FOR PARSED RECORD ── */}
+        {activeModalIndex !== null && (
+          <div className="fixed inset-0 bg-slate-900/60 backdrop-blur-sm z-50 flex items-center justify-center p-4 animate-in fade-in duration-200">
+            <div className="bg-white rounded-3xl border border-slate-200 max-w-2xl w-full flex flex-col shadow-2xl animate-in zoom-in-95 duration-200 text-left max-h-[90vh] overflow-hidden">
+              {/* Header */}
+              <div className="p-6 border-b border-slate-100 flex items-center justify-between shrink-0">
+                <div>
+                  <h3 className="text-lg font-black text-slate-900 tracking-tight">
+                    {isModalEditMode ? "Edit Claim Details" : "Claim Information"}
+                  </h3>
+                  <p className="text-xs text-slate-500 font-semibold mt-0.5">
+                    {isModalEditMode ? "Modify the fields below to correct parsed claim data." : "Complete extracted database fields for this defaulter record."}
+                  </p>
+                </div>
+                <button
+                  type="button"
+                  onClick={() => {
+                    setActiveModalIndex(null);
+                    setIsModalEditMode(false);
+                  }}
+                  className="text-slate-400 hover:text-slate-600 font-bold text-sm cursor-pointer p-1"
+                >
+                  ✕
+                </button>
+              </div>
+
+              {/* Content (Scrollable) */}
+              <div className="p-6 overflow-y-auto flex-1 flex flex-col gap-6 text-xs">
+                {isModalEditMode ? (
+                  // ── EDIT MODE FORM ──
+                  <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                    {/* Defaulter Name */}
+                    <div className="flex flex-col gap-1 sm:col-span-2">
+                      <label className="font-bold text-slate-600">Defaulter Legal Name</label>
+                      <input
+                        type="text"
+                        value={editDefaulterName}
+                        onChange={(e) => setEditDefaulterName(e.target.value)}
+                        className="bg-slate-50 hover:bg-slate-100/50 border border-[#E5E7EB] focus:border-[#DC2626] rounded-xl px-3 py-2.5 font-semibold outline-none transition-colors"
+                      />
+                    </div>
+
+                    {/* Constitution Type */}
+                    <div className="flex flex-col gap-1">
+                      <label className="font-bold text-slate-600">Constitution Type</label>
+                      <select
+                        value={editEntityType}
+                        onChange={(e) => setEditEntityType(e.target.value)}
+                        className="bg-slate-50 border border-[#E5E7EB] focus:border-[#DC2626] rounded-xl px-3 py-2.5 font-semibold outline-none"
+                      >
+                        <option value="Company">Company</option>
+                        <option value="Individual">Individual</option>
+                        <option value="LLP / Partnership">LLP / Partnership</option>
+                        <option value="Proprietorship">Proprietorship</option>
+                      </select>
+                    </div>
+
+                    {/* Stuck Amount */}
+                    <div className="flex flex-col gap-1">
+                      <label className="font-bold text-slate-600">Dues Amount (INR)</label>
+                      <input
+                        type="text"
+                        value={editStuckAmount}
+                        onChange={(e) => setEditStuckAmount(e.target.value)}
+                        className="bg-slate-50 hover:bg-slate-100/50 border border-[#E5E7EB] focus:border-[#DC2626] rounded-xl px-3 py-2.5 font-semibold outline-none transition-colors"
+                      />
+                    </div>
+
+                    {/* Due Date */}
+                    <div className="flex flex-col gap-1">
+                      <label className="font-bold text-slate-600">Payment Due Date</label>
+                      <input
+                        type="date"
+                        value={editDueDate}
+                        onChange={(e) => setEditDueDate(e.target.value)}
+                        className="bg-slate-50 hover:bg-slate-100/50 border border-[#E5E7EB] focus:border-[#DC2626] rounded-xl px-3 py-2.5 font-semibold outline-none transition-colors"
+                      />
+                    </div>
+
+                    {/* Phone 1 */}
+                    <div className="flex flex-col gap-1">
+                      <label className="font-bold text-slate-600">Primary Phone</label>
+                      <input
+                        type="tel"
+                        maxLength={10}
+                        value={editPhone}
+                        onChange={(e) => setEditPhone(e.target.value.replace(/\D/g, ""))}
+                        className="bg-slate-50 hover:bg-slate-100/50 border border-[#E5E7EB] focus:border-[#DC2626] rounded-xl px-3 py-2.5 font-semibold outline-none transition-colors"
+                      />
+                    </div>
+
+                    {/* Phone 2 */}
+                    <div className="flex flex-col gap-1">
+                      <label className="font-bold text-slate-600">Secondary Phone (Optional)</label>
+                      <input
+                        type="tel"
+                        maxLength={10}
+                        value={editPhone2}
+                        onChange={(e) => setEditPhone2(e.target.value.replace(/\D/g, ""))}
+                        className="bg-slate-50 hover:bg-slate-100/50 border border-[#E5E7EB] focus:border-[#DC2626] rounded-xl px-3 py-2.5 font-semibold outline-none transition-colors"
+                      />
+                    </div>
+
+                    {/* Email 1 */}
+                    <div className="flex flex-col gap-1">
+                      <label className="font-bold text-slate-600">Primary Email</label>
+                      <input
+                        type="email"
+                        value={editEmail}
+                        onChange={(e) => setEditEmail(e.target.value)}
+                        className="bg-slate-50 hover:bg-slate-100/50 border border-[#E5E7EB] focus:border-[#DC2626] rounded-xl px-3 py-2.5 font-semibold outline-none transition-colors"
+                      />
+                    </div>
+
+                    {/* Email 2 */}
+                    <div className="flex flex-col gap-1">
+                      <label className="font-bold text-slate-600">Secondary Email (Optional)</label>
+                      <input
+                        type="email"
+                        value={editEmail2}
+                        onChange={(e) => setEditEmail2(e.target.value)}
+                        className="bg-slate-50 hover:bg-slate-100/50 border border-[#E5E7EB] focus:border-[#DC2626] rounded-xl px-3 py-2.5 font-semibold outline-none transition-colors"
+                      />
+                    </div>
+
+                    {/* State */}
+                    <div className="flex flex-col gap-1">
+                      <label className="font-bold text-slate-600">State / UT</label>
+                      <select
+                        value={editState}
+                        onChange={(e) => setEditState(e.target.value)}
+                        className="bg-slate-50 border border-[#E5E7EB] focus:border-[#DC2626] rounded-xl px-3 py-2.5 font-semibold outline-none"
+                      >
+                        <option value="">Select State</option>
+                        {indianStates.map((st) => (
+                          <option key={st} value={st}>{st}</option>
+                        ))}
+                      </select>
+                    </div>
+
+                    {/* Address */}
+                    <div className="flex flex-col gap-1 sm:col-span-2">
+                      <label className="font-bold text-slate-600">Complete Address</label>
+                      <textarea
+                        rows={3}
+                        value={editAddress}
+                        onChange={(e) => setEditAddress(e.target.value)}
+                        className="bg-slate-50 hover:bg-slate-100/50 border border-[#E5E7EB] focus:border-[#DC2626] rounded-2xl px-3 py-2 outline-none resize-none transition-colors font-sans"
+                      />
+                    </div>
+
+                    {/* Invoice No */}
+                    <div className="flex flex-col gap-1">
+                      <label className="font-bold text-slate-600">Invoice Number(s)</label>
+                      <input
+                        type="text"
+                        value={editInvoiceNo}
+                        onChange={(e) => setEditInvoiceNo(e.target.value)}
+                        className="bg-slate-50 hover:bg-slate-100/50 border border-[#E5E7EB] focus:border-[#DC2626] rounded-xl px-3 py-2.5 font-semibold outline-none transition-colors"
+                      />
+                    </div>
+
+                    {/* Invoice Date */}
+                    <div className="flex flex-col gap-1">
+                      <label className="font-bold text-slate-600">Invoice Date</label>
+                      <input
+                        type="date"
+                        value={editInvoiceDate}
+                        onChange={(e) => setEditInvoiceDate(e.target.value)}
+                        className="bg-slate-50 hover:bg-slate-100/50 border border-[#E5E7EB] focus:border-[#DC2626] rounded-xl px-3 py-2.5 font-semibold outline-none transition-colors"
+                      />
+                    </div>
+
+                    {/* Police Station details label */}
+                    <div className="sm:col-span-2 border-t border-slate-100 pt-3 mt-1">
+                      <span className="font-extrabold text-[10px] text-slate-400 uppercase tracking-wider">SHO Jurisdictional Police Station</span>
+                    </div>
+
+                    {/* Police Station Name */}
+                    <div className="flex flex-col gap-1">
+                      <label className="font-bold text-slate-600">Station Name</label>
+                      <input
+                        type="text"
+                        value={editPoliceStationName}
+                        onChange={(e) => setEditPoliceStationName(e.target.value)}
+                        className="bg-slate-50 hover:bg-slate-100/50 border border-[#E5E7EB] focus:border-[#DC2626] rounded-xl px-3 py-2.5 font-semibold outline-none transition-colors"
+                      />
+                    </div>
+
+                    {/* Police Station Email */}
+                    <div className="flex flex-col gap-1">
+                      <label className="font-bold text-slate-600">Station Email</label>
+                      <input
+                        type="email"
+                        value={editPoliceStationEmail}
+                        onChange={(e) => setEditPoliceStationEmail(e.target.value)}
+                        className="bg-slate-50 hover:bg-slate-100/50 border border-[#E5E7EB] focus:border-[#DC2626] rounded-xl px-3 py-2.5 font-semibold outline-none transition-colors"
+                      />
+                    </div>
+
+                    {/* Police Station Address */}
+                    <div className="flex flex-col gap-1 sm:col-span-2">
+                      <label className="font-bold text-slate-600">Station Address</label>
+                      <textarea
+                        rows={2}
+                        value={editPoliceStationAddress}
+                        onChange={(e) => setEditPoliceStationAddress(e.target.value)}
+                        className="bg-slate-50 hover:bg-slate-100/50 border border-[#E5E7EB] focus:border-[#DC2626] rounded-2xl px-3 py-2 outline-none resize-none transition-colors font-sans"
+                      />
+                    </div>
+                  </div>
+                ) : (
+                  // ── VIEW MODE DISPLAY ──
+                  <div className="flex flex-col gap-6">
+                    {/* Section 1: Defaulter Summary */}
+                    <div className="border border-slate-100 rounded-2xl overflow-hidden">
+                      <div className="bg-slate-50 border-b border-slate-100 px-4 py-2 font-black text-slate-800 uppercase tracking-wider text-[9px]">
+                        Defaulter & Dues Summary
+                      </div>
+                      <div className="grid grid-cols-3 px-4 py-3.5 gap-y-2 gap-x-1.5 leading-relaxed">
+                        <span className="font-bold text-slate-500">Legal Name:</span>
+                        <span className="col-span-2 text-slate-900 font-extrabold">{editDefaulterName}</span>
+                        
+                        <span className="font-bold text-slate-500">Type:</span>
+                        <span className="col-span-2 text-slate-700 font-semibold">{editEntityType}</span>
+
+                        <span className="font-bold text-slate-500">Dues Amount:</span>
+                        <span className="col-span-2 text-red-650 font-black">
+                          ₹{editStuckAmount ? parseFloat(editStuckAmount.replace(/,/g, "")).toLocaleString("en-IN") : "0"}
+                        </span>
+
+                        <span className="font-bold text-slate-500">Due Date:</span>
+                        <span className="col-span-2 text-slate-700 font-semibold">{editDueDate}</span>
+                      </div>
+                    </div>
+
+                    {/* Section 2: Contact Info */}
+                    <div className="border border-slate-100 rounded-2xl overflow-hidden">
+                      <div className="bg-slate-50 border-b border-slate-100 px-4 py-2 font-black text-slate-800 uppercase tracking-wider text-[9px]">
+                        Contact Details
+                      </div>
+                      <div className="grid grid-cols-3 px-4 py-3.5 gap-y-2 gap-x-1.5 leading-relaxed">
+                        <span className="font-bold text-slate-500">Primary Mobile:</span>
+                        <span className="col-span-2 text-slate-700 font-semibold">{editPhone}</span>
+
+                        {editPhone2 && (
+                          <>
+                            <span className="font-bold text-slate-500">Secondary Mobile:</span>
+                            <span className="col-span-2 text-slate-700 font-semibold">{editPhone2}</span>
+                          </>
+                        )}
+
+                        <span className="font-bold text-slate-500">Primary Email:</span>
+                        <span className="col-span-2 text-slate-700 font-semibold">{editEmail}</span>
+
+                        {editEmail2 && (
+                          <>
+                            <span className="font-bold text-slate-500">Secondary Email:</span>
+                            <span className="col-span-2 text-slate-700 font-semibold">{editEmail2}</span>
+                          </>
+                        )}
+                      </div>
+                    </div>
+
+                    {/* Section 3: Physical Address */}
+                    <div className="border border-slate-100 rounded-2xl overflow-hidden">
+                      <div className="bg-slate-50 border-b border-slate-100 px-4 py-2 font-black text-slate-800 uppercase tracking-wider text-[9px]">
+                        Location & Address
+                      </div>
+                      <div className="grid grid-cols-3 px-4 py-3.5 gap-y-2 gap-x-1.5 leading-relaxed">
+                        <span className="font-bold text-slate-500">State / UT:</span>
+                        <span className="col-span-2 text-slate-700 font-semibold">{editState}</span>
+
+                        <span className="font-bold text-slate-500">Address:</span>
+                        <span className="col-span-2 text-slate-700 font-semibold">{editAddress}</span>
+                      </div>
+                    </div>
+
+                    {/* Section 4: Invoice Details */}
+                    <div className="border border-slate-100 rounded-2xl overflow-hidden">
+                      <div className="bg-slate-50 border-b border-slate-100 px-4 py-2 font-black text-slate-800 uppercase tracking-wider text-[9px]">
+                        Invoice Info
+                      </div>
+                      <div className="grid grid-cols-3 px-4 py-3.5 gap-y-2 gap-x-1.5 leading-relaxed">
+                        <span className="font-bold text-slate-500">Invoice No:</span>
+                        <span className="col-span-2 text-slate-700 font-semibold">{editInvoiceNo || "-"}</span>
+
+                        <span className="font-bold text-slate-500">Invoice Date:</span>
+                        <span className="col-span-2 text-slate-700 font-semibold">{editInvoiceDate || "-"}</span>
+                      </div>
+                    </div>
+
+                    {/* Section 5: Jurisdictional Police Station */}
+                    <div className="border border-slate-100 rounded-2xl overflow-hidden">
+                      <div className="bg-slate-50 border-b border-slate-100 px-4 py-2 font-black text-slate-800 uppercase tracking-wider text-[9px]">
+                        Jurisdictional Police Station
+                      </div>
+                      <div className="grid grid-cols-3 px-4 py-3.5 gap-y-2 gap-x-1.5 leading-relaxed">
+                        <span className="font-bold text-slate-500">Station Name:</span>
+                        <span className="col-span-2 text-slate-950 font-bold">{editPoliceStationName || "Not set"}</span>
+
+                        <span className="font-bold text-slate-500">Station Email:</span>
+                        <span className="col-span-2 text-slate-700 font-semibold">{editPoliceStationEmail || "-"}</span>
+
+                        <span className="font-bold text-slate-500">Station Address:</span>
+                        <span className="col-span-2 text-slate-700 font-semibold">{editPoliceStationAddress || "-"}</span>
+                      </div>
+                    </div>
+                  </div>
+                )}
+              </div>
+
+              {/* Footer (Actions) */}
+              <div className="p-6 border-t border-slate-100 flex items-center justify-end gap-3 shrink-0">
+                {isModalEditMode ? (
+                  <>
+                    <button
+                      type="button"
+                      onClick={() => setIsModalEditMode(false)}
+                      className="px-4 py-2 text-slate-700 hover:bg-slate-50 border border-slate-200 rounded-xl transition-all cursor-pointer font-bold text-xs"
+                    >
+                      Cancel
+                    </button>
+                    <button
+                      type="button"
+                      onClick={handleSaveModalDetails}
+                      className="px-4 py-2 text-white bg-[#DC2626] hover:bg-[#B91C1C] rounded-xl transition-all cursor-pointer font-black text-xs shadow-md"
+                    >
+                      Save Changes
+                    </button>
+                  </>
+                ) : (
+                  <>
+                    <button
+                      type="button"
+                      onClick={() => setIsModalEditMode(true)}
+                      className="px-4 py-2 text-[#DC2626] hover:text-white bg-red-50 hover:bg-[#DC2626] border border-red-200 rounded-xl transition-all cursor-pointer font-black text-xs"
+                    >
+                      Edit Details
+                    </button>
+                    <button
+                      type="button"
+                      onClick={() => {
+                        setActiveModalIndex(null);
+                        setIsModalEditMode(false);
+                      }}
+                      className="px-4 py-2 text-slate-700 hover:bg-slate-50 border border-slate-200 rounded-xl transition-all cursor-pointer font-bold text-xs"
+                    >
+                      Close
+                    </button>
+                  </>
+                )}
+              </div>
+            </div>
+          </div>
+        )}
       </main>
     );
   }
@@ -1617,6 +2164,363 @@ export default function NewRecoveryForm() {
             >
               {isSubmitting ? "Launching Claim..." : "Yes, Confirm & Submit"}
             </button>
+          </div>
+        </div>
+      </div>
+    )}
+
+    {/* ── DETAILED VIEW & EDIT MODAL FOR PARSED RECORD ── */}
+    {activeModalIndex !== null && (
+      <div className="fixed inset-0 bg-slate-900/60 backdrop-blur-sm z-50 flex items-center justify-center p-4 animate-in fade-in duration-200">
+        <div className="bg-white rounded-3xl border border-slate-200 max-w-2xl w-full flex flex-col shadow-2xl animate-in zoom-in-95 duration-200 text-left max-h-[90vh] overflow-hidden">
+          {/* Header */}
+          <div className="p-6 border-b border-slate-100 flex items-center justify-between shrink-0">
+            <div>
+              <h3 className="text-lg font-black text-slate-900 tracking-tight">
+                {isModalEditMode ? "Edit Claim Details" : "Claim Information"}
+              </h3>
+              <p className="text-xs text-slate-500 font-semibold mt-0.5">
+                {isModalEditMode ? "Modify the fields below to correct parsed claim data." : "Complete extracted database fields for this defaulter record."}
+              </p>
+            </div>
+            <button
+              type="button"
+              onClick={() => {
+                setActiveModalIndex(null);
+                setIsModalEditMode(false);
+              }}
+              className="text-slate-400 hover:text-slate-600 font-bold text-sm cursor-pointer p-1"
+            >
+              ✕
+            </button>
+          </div>
+
+          {/* Content (Scrollable) */}
+          <div className="p-6 overflow-y-auto flex-1 flex flex-col gap-6 text-xs">
+            {isModalEditMode ? (
+              // ── EDIT MODE FORM ──
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                {/* Defaulter Name */}
+                <div className="flex flex-col gap-1 sm:col-span-2">
+                  <label className="font-bold text-slate-600">Defaulter Legal Name</label>
+                  <input
+                    type="text"
+                    value={editDefaulterName}
+                    onChange={(e) => setEditDefaulterName(e.target.value)}
+                    className="bg-slate-50 hover:bg-slate-100/50 border border-[#E5E7EB] focus:border-[#DC2626] rounded-xl px-3 py-2.5 font-semibold outline-none transition-colors"
+                  />
+                </div>
+
+                {/* Constitution Type */}
+                <div className="flex flex-col gap-1">
+                  <label className="font-bold text-slate-600">Constitution Type</label>
+                  <select
+                    value={editEntityType}
+                    onChange={(e) => setEditEntityType(e.target.value)}
+                    className="bg-slate-50 border border-[#E5E7EB] focus:border-[#DC2626] rounded-xl px-3 py-2.5 font-semibold outline-none"
+                  >
+                    <option value="Company">Company</option>
+                    <option value="Individual">Individual</option>
+                    <option value="LLP / Partnership">LLP / Partnership</option>
+                    <option value="Proprietorship">Proprietorship</option>
+                  </select>
+                </div>
+
+                {/* Stuck Amount */}
+                <div className="flex flex-col gap-1">
+                  <label className="font-bold text-slate-600">Dues Amount (INR)</label>
+                  <input
+                    type="text"
+                    value={editStuckAmount}
+                    onChange={(e) => setEditStuckAmount(e.target.value)}
+                    className="bg-slate-50 hover:bg-slate-100/50 border border-[#E5E7EB] focus:border-[#DC2626] rounded-xl px-3 py-2.5 font-semibold outline-none transition-colors"
+                  />
+                </div>
+
+                {/* Due Date */}
+                <div className="flex flex-col gap-1">
+                  <label className="font-bold text-slate-600">Payment Due Date</label>
+                  <input
+                    type="date"
+                    value={editDueDate}
+                    onChange={(e) => setEditDueDate(e.target.value)}
+                    className="bg-slate-50 hover:bg-slate-100/50 border border-[#E5E7EB] focus:border-[#DC2626] rounded-xl px-3 py-2.5 font-semibold outline-none transition-colors"
+                  />
+                </div>
+
+                {/* Phone 1 */}
+                <div className="flex flex-col gap-1">
+                  <label className="font-bold text-slate-600">Primary Phone</label>
+                  <input
+                    type="tel"
+                    maxLength={10}
+                    value={editPhone}
+                    onChange={(e) => setEditPhone(e.target.value.replace(/\D/g, ""))}
+                    className="bg-slate-50 hover:bg-slate-100/50 border border-[#E5E7EB] focus:border-[#DC2626] rounded-xl px-3 py-2.5 font-semibold outline-none transition-colors"
+                  />
+                </div>
+
+                {/* Phone 2 */}
+                <div className="flex flex-col gap-1">
+                  <label className="font-bold text-slate-600">Secondary Phone (Optional)</label>
+                  <input
+                    type="tel"
+                    maxLength={10}
+                    value={editPhone2}
+                    onChange={(e) => setEditPhone2(e.target.value.replace(/\D/g, ""))}
+                    className="bg-slate-50 hover:bg-slate-100/50 border border-[#E5E7EB] focus:border-[#DC2626] rounded-xl px-3 py-2.5 font-semibold outline-none transition-colors"
+                  />
+                </div>
+
+                {/* Email 1 */}
+                <div className="flex flex-col gap-1">
+                  <label className="font-bold text-slate-600">Primary Email</label>
+                  <input
+                    type="email"
+                    value={editEmail}
+                    onChange={(e) => setEditEmail(e.target.value)}
+                    className="bg-slate-50 hover:bg-slate-100/50 border border-[#E5E7EB] focus:border-[#DC2626] rounded-xl px-3 py-2.5 font-semibold outline-none transition-colors"
+                  />
+                </div>
+
+                {/* Email 2 */}
+                <div className="flex flex-col gap-1">
+                  <label className="font-bold text-slate-600">Secondary Email (Optional)</label>
+                  <input
+                    type="email"
+                    value={editEmail2}
+                    onChange={(e) => setEditEmail2(e.target.value)}
+                    className="bg-slate-50 hover:bg-slate-100/50 border border-[#E5E7EB] focus:border-[#DC2626] rounded-xl px-3 py-2.5 font-semibold outline-none transition-colors"
+                  />
+                </div>
+
+                {/* State */}
+                <div className="flex flex-col gap-1">
+                  <label className="font-bold text-slate-600">State / UT</label>
+                  <select
+                    value={editState}
+                    onChange={(e) => setEditState(e.target.value)}
+                    className="bg-slate-50 border border-[#E5E7EB] focus:border-[#DC2626] rounded-xl px-3 py-2.5 font-semibold outline-none"
+                  >
+                    <option value="">Select State</option>
+                    {indianStates.map((st) => (
+                      <option key={st} value={st}>{st}</option>
+                    ))}
+                  </select>
+                </div>
+
+                {/* Address */}
+                <div className="flex flex-col gap-1 sm:col-span-2">
+                  <label className="font-bold text-slate-600">Complete Address</label>
+                  <textarea
+                    rows={3}
+                    value={editAddress}
+                    onChange={(e) => setEditAddress(e.target.value)}
+                    className="bg-slate-50 hover:bg-slate-100/50 border border-[#E5E7EB] focus:border-[#DC2626] rounded-2xl px-3 py-2 outline-none resize-none transition-colors font-sans"
+                  />
+                </div>
+
+                {/* Invoice No */}
+                <div className="flex flex-col gap-1">
+                  <label className="font-bold text-slate-600">Invoice Number(s)</label>
+                  <input
+                    type="text"
+                    value={editInvoiceNo}
+                    onChange={(e) => setEditInvoiceNo(e.target.value)}
+                    className="bg-slate-50 hover:bg-slate-100/50 border border-[#E5E7EB] focus:border-[#DC2626] rounded-xl px-3 py-2.5 font-semibold outline-none transition-colors"
+                  />
+                </div>
+
+                {/* Invoice Date */}
+                <div className="flex flex-col gap-1">
+                  <label className="font-bold text-slate-600">Invoice Date</label>
+                  <input
+                    type="date"
+                    value={editInvoiceDate}
+                    onChange={(e) => setEditInvoiceDate(e.target.value)}
+                    className="bg-slate-50 hover:bg-slate-100/50 border border-[#E5E7EB] focus:border-[#DC2626] rounded-xl px-3 py-2.5 font-semibold outline-none transition-colors"
+                  />
+                </div>
+
+                {/* Police Station details label */}
+                <div className="sm:col-span-2 border-t border-slate-100 pt-3 mt-1">
+                  <span className="font-extrabold text-[10px] text-slate-400 uppercase tracking-wider">SHO Jurisdictional Police Station</span>
+                </div>
+
+                {/* Police Station Name */}
+                <div className="flex flex-col gap-1">
+                  <label className="font-bold text-slate-600">Station Name</label>
+                  <input
+                    type="text"
+                    value={editPoliceStationName}
+                    onChange={(e) => setEditPoliceStationName(e.target.value)}
+                    className="bg-slate-50 hover:bg-slate-100/50 border border-[#E5E7EB] focus:border-[#DC2626] rounded-xl px-3 py-2.5 font-semibold outline-none transition-colors"
+                  />
+                </div>
+
+                {/* Police Station Email */}
+                <div className="flex flex-col gap-1">
+                  <label className="font-bold text-slate-600">Station Email</label>
+                  <input
+                    type="email"
+                    value={editPoliceStationEmail}
+                    onChange={(e) => setEditPoliceStationEmail(e.target.value)}
+                    className="bg-slate-50 hover:bg-slate-100/50 border border-[#E5E7EB] focus:border-[#DC2626] rounded-xl px-3 py-2.5 font-semibold outline-none transition-colors"
+                  />
+                </div>
+
+                {/* Police Station Address */}
+                <div className="flex flex-col gap-1 sm:col-span-2">
+                  <label className="font-bold text-slate-600">Station Address</label>
+                  <textarea
+                    rows={2}
+                    value={editPoliceStationAddress}
+                    onChange={(e) => setEditPoliceStationAddress(e.target.value)}
+                    className="bg-slate-50 hover:bg-slate-100/50 border border-[#E5E7EB] focus:border-[#DC2626] rounded-2xl px-3 py-2 outline-none resize-none transition-colors font-sans"
+                  />
+                </div>
+              </div>
+            ) : (
+              // ── VIEW MODE DISPLAY ──
+              <div className="flex flex-col gap-6">
+                {/* Section 1: Defaulter Summary */}
+                <div className="border border-slate-100 rounded-2xl overflow-hidden">
+                  <div className="bg-slate-50 border-b border-slate-100 px-4 py-2 font-black text-slate-800 uppercase tracking-wider text-[9px]">
+                    Defaulter & Dues Summary
+                  </div>
+                  <div className="grid grid-cols-3 px-4 py-3.5 gap-y-2 gap-x-1.5 leading-relaxed">
+                    <span className="font-bold text-slate-500">Legal Name:</span>
+                    <span className="col-span-2 text-slate-900 font-extrabold">{editDefaulterName}</span>
+                    
+                    <span className="font-bold text-slate-500">Type:</span>
+                    <span className="col-span-2 text-slate-700 font-semibold">{editEntityType}</span>
+
+                    <span className="font-bold text-slate-500">Dues Amount:</span>
+                    <span className="col-span-2 text-red-650 font-black">
+                      ₹{editStuckAmount ? parseFloat(editStuckAmount.replace(/,/g, "")).toLocaleString("en-IN") : "0"}
+                    </span>
+
+                    <span className="font-bold text-slate-500">Due Date:</span>
+                    <span className="col-span-2 text-slate-700 font-semibold">{editDueDate}</span>
+                  </div>
+                </div>
+
+                {/* Section 2: Contact Info */}
+                <div className="border border-slate-100 rounded-2xl overflow-hidden">
+                  <div className="bg-slate-50 border-b border-slate-100 px-4 py-2 font-black text-slate-800 uppercase tracking-wider text-[9px]">
+                    Contact Details
+                  </div>
+                  <div className="grid grid-cols-3 px-4 py-3.5 gap-y-2 gap-x-1.5 leading-relaxed">
+                    <span className="font-bold text-slate-500">Primary Mobile:</span>
+                    <span className="col-span-2 text-slate-700 font-semibold">{editPhone}</span>
+
+                    {editPhone2 && (
+                      <>
+                        <span className="font-bold text-slate-500">Secondary Mobile:</span>
+                        <span className="col-span-2 text-slate-700 font-semibold">{editPhone2}</span>
+                      </>
+                    )}
+
+                    <span className="font-bold text-slate-500">Primary Email:</span>
+                    <span className="col-span-2 text-slate-700 font-semibold">{editEmail}</span>
+
+                    {editEmail2 && (
+                      <>
+                        <span className="font-bold text-slate-500">Secondary Email:</span>
+                        <span className="col-span-2 text-slate-700 font-semibold">{editEmail2}</span>
+                      </>
+                    )}
+                  </div>
+                </div>
+
+                {/* Section 3: Physical Address */}
+                <div className="border border-slate-100 rounded-2xl overflow-hidden">
+                  <div className="bg-slate-50 border-b border-slate-100 px-4 py-2 font-black text-slate-800 uppercase tracking-wider text-[9px]">
+                    Location & Address
+                  </div>
+                  <div className="grid grid-cols-3 px-4 py-3.5 gap-y-2 gap-x-1.5 leading-relaxed">
+                    <span className="font-bold text-slate-500">State / UT:</span>
+                    <span className="col-span-2 text-slate-700 font-semibold">{editState}</span>
+
+                    <span className="font-bold text-slate-500">Address:</span>
+                    <span className="col-span-2 text-slate-700 font-semibold">{editAddress}</span>
+                  </div>
+                </div>
+
+                {/* Section 4: Invoice Details */}
+                <div className="border border-slate-100 rounded-2xl overflow-hidden">
+                  <div className="bg-slate-50 border-b border-slate-100 px-4 py-2 font-black text-slate-800 uppercase tracking-wider text-[9px]">
+                    Invoice Info
+                  </div>
+                  <div className="grid grid-cols-3 px-4 py-3.5 gap-y-2 gap-x-1.5 leading-relaxed">
+                    <span className="font-bold text-slate-500">Invoice No:</span>
+                    <span className="col-span-2 text-slate-700 font-semibold">{editInvoiceNo || "-"}</span>
+
+                    <span className="font-bold text-slate-500">Invoice Date:</span>
+                    <span className="col-span-2 text-slate-700 font-semibold">{editInvoiceDate || "-"}</span>
+                  </div>
+                </div>
+
+                {/* Section 5: Jurisdictional Police Station */}
+                <div className="border border-slate-100 rounded-2xl overflow-hidden">
+                  <div className="bg-slate-50 border-b border-slate-100 px-4 py-2 font-black text-slate-800 uppercase tracking-wider text-[9px]">
+                    Jurisdictional Police Station
+                  </div>
+                  <div className="grid grid-cols-3 px-4 py-3.5 gap-y-2 gap-x-1.5 leading-relaxed">
+                    <span className="font-bold text-slate-500">Station Name:</span>
+                    <span className="col-span-2 text-slate-950 font-bold">{editPoliceStationName || "Not set"}</span>
+
+                    <span className="font-bold text-slate-500">Station Email:</span>
+                    <span className="col-span-2 text-slate-700 font-semibold">{editPoliceStationEmail || "-"}</span>
+
+                    <span className="font-bold text-slate-500">Station Address:</span>
+                    <span className="col-span-2 text-slate-700 font-semibold">{editPoliceStationAddress || "-"}</span>
+                  </div>
+                </div>
+              </div>
+            )}
+          </div>
+
+          {/* Footer (Actions) */}
+          <div className="p-6 border-t border-slate-100 flex items-center justify-end gap-3 shrink-0">
+            {isModalEditMode ? (
+              <>
+                <button
+                  type="button"
+                  onClick={() => setIsModalEditMode(false)}
+                  className="px-4 py-2 text-slate-700 hover:bg-slate-50 border border-slate-200 rounded-xl transition-all cursor-pointer font-bold text-xs"
+                >
+                  Cancel
+                </button>
+                <button
+                  type="button"
+                  onClick={handleSaveModalDetails}
+                  className="px-4 py-2 text-white bg-[#DC2626] hover:bg-[#B91C1C] rounded-xl transition-all cursor-pointer font-black text-xs shadow-md"
+                >
+                  Save Changes
+                </button>
+              </>
+            ) : (
+              <>
+                <button
+                  type="button"
+                  onClick={() => setIsModalEditMode(true)}
+                  className="px-4 py-2 text-[#DC2626] hover:text-white bg-red-50 hover:bg-[#DC2626] border border-red-200 rounded-xl transition-all cursor-pointer font-black text-xs"
+                >
+                  Edit Details
+                </button>
+                <button
+                  type="button"
+                  onClick={() => {
+                    setActiveModalIndex(null);
+                    setIsModalEditMode(false);
+                  }}
+                  className="px-4 py-2 text-slate-700 hover:bg-slate-50 border border-slate-200 rounded-xl transition-all cursor-pointer font-bold text-xs"
+                >
+                  Close
+                </button>
+              </>
+            )}
           </div>
         </div>
       </div>
