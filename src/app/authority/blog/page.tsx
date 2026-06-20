@@ -6,7 +6,8 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { 
   faHome, faUsers, faChartLine, faClipboardList, faCog, 
   faPlus, faEdit, faTrash, faUpload, faMagic, faSearch, faSignOutAlt,
-  faNewspaper, faFilter
+  faNewspaper, faFilter, faStar, faChevronLeft, faChevronRight,
+  faTimes, faArrowLeft, faCheckCircle, faInfoCircle, faFileAlt
 } from "@fortawesome/free-solid-svg-icons";
 import { signOut, useSession } from "next-auth/react";
 import { useRouter } from "next/navigation";
@@ -17,7 +18,14 @@ import { Loader2 } from "lucide-react";
 // Dynamically import Tiptap editor with client-side rendering only
 const TiptapEditor = dynamic(() => import("./TiptapEditor"), { 
   ssr: false,
-  loading: () => <p className="text-sm font-semibold text-gray-400">Loading Editor...</p>,
+  loading: () => (
+    <div className="flex items-center justify-center p-8 bg-slate-50 border border-slate-200 rounded-xl min-h-[350px]">
+      <div className="flex flex-col items-center gap-2">
+        <span className="animate-spin text-[#DC2626]">💫</span>
+        <p className="text-slate-500 text-sm font-semibold">Loading Custom Editor...</p>
+      </div>
+    </div>
+  ),
 });
 
 // Define FAQ interface
@@ -80,14 +88,13 @@ const BlogsDashboard = () => {
   const fileInputRef = useRef<HTMLInputElement>(null);
   const router = useRouter();
   const [currentPage, setCurrentPage] = useState(1);
-  const itemsPerPage = 10;
+  const itemsPerPage = 8;
   const [rssDebugInfo, setRssDebugInfo] = useState<string>("");
   const [isLoadingRss, setIsLoadingRss] = useState(false);
   const [searchTerm, setSearchTerm] = useState("");
   const [isLoadingBlogs, setIsLoadingBlogs] = useState(true);
 
   // AI Generation state
-  const [aiContext, setAiContext] = useState("");
   const [aiPrimaryKeyword, setAiPrimaryKeyword] = useState("");
   const [aiSecondaryKeywords, setAiSecondaryKeywords] = useState("");
   const [isGenerating, setIsGenerating] = useState(false);
@@ -504,8 +511,6 @@ const BlogsDashboard = () => {
     }
   };
 
-
-
   // Handle blog form submission (Create or Update) to MongoDB APIs
   const handleSubmitBlog = async (e: React.FormEvent) => {
     e.preventDefault();
@@ -597,6 +602,7 @@ const BlogsDashboard = () => {
       if (res.ok && data.success) {
         resetForm();
         fetchBlogsData();
+        alert(formMode === "add" ? "Blog Post published successfully!" : "Blog Post updated successfully!");
       } else {
         alert(data.error || "Save operation failed.");
       }
@@ -640,6 +646,7 @@ const BlogsDashboard = () => {
         const data = await res.json();
         if (res.ok && data.success) {
           setBlogs((prevBlogs) => prevBlogs.filter((blog) => blog.slug !== slugToDelete));
+          alert("Blog deleted successfully!");
         } else {
           alert(data.error || "Failed to delete from database.");
         }
@@ -719,580 +726,708 @@ const BlogsDashboard = () => {
   };
 
   return (
-    <motion.div 
-      initial={{ opacity: 0 }}
-      animate={{ opacity: 1 }}
-      className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8"
-    >
-      {/* Dashboard Header */}
-      <div className="flex flex-col md:flex-row md:items-center justify-between gap-4 border-b border-[#E5E7EB]/50 pb-6 mb-6">
-        <div className="text-left">
-          <h1 className="text-2xl sm:text-3xl font-black text-[#111827] tracking-tight">Blogs Dashboard</h1>
-          <p className="text-xs sm:text-sm text-slate-500 font-semibold mt-1">Manage, write, edit, and publish blogs and articles with AI generation assistance.</p>
-        </div>
-      </div>
-
-      {/* Content Container */}
-      <motion.div
-        initial={{ opacity: 0, y: 20 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.5, delay: 0.2 }}
-        className="bg-white rounded-3xl p-6 sm:p-8 shadow-[0_10px_40px_rgba(0,0,0,0.03)] border border-gray-100"
-      >
-        {/* Header with Add Blog Button */}
-        <div className="flex flex-col sm:flex-row justify-between sm:items-center gap-4 mb-8 pb-4 border-b border-gray-100">
-          <h2 className="text-xl font-extrabold text-gray-800">
-            {showBlogForm ? (formMode === "add" ? "Create New Blog" : "Edit Blog") : "Blog Management"}
-          </h2>
-          <motion.button
-            onClick={() => {
-              if (showBlogForm) {
-                resetForm();
-              } else {
-                setFormMode("add");
-
-                // Check for saved draft for new blog
-                const savedDraft = localStorage.getItem("autosave_blog_new");
-                if (savedDraft) {
-                  if (window.confirm("Found an unsaved draft. Do you want to restore it?")) {
-                    setNewBlog(JSON.parse(savedDraft));
-                  } else {
-                    localStorage.removeItem("autosave_blog_new");
-                  }
-                }
-
-                setShowBlogForm(true);
-              }
-            }}
-            whileHover={{ scale: 1.02 }}
-            whileTap={{ scale: 0.98 }}
-            className="flex items-center justify-center gap-2 px-5 py-2.5 bg-gradient-to-r from-[#DC2626] to-[#B91C1C] text-white rounded-xl font-extrabold text-xs tracking-wider uppercase cursor-pointer"
+    <div className="p-6 max-w-7xl mx-auto bg-slate-50 min-h-screen text-slate-800 font-sans">
+      <AnimatePresence mode="wait">
+        {!showBlogForm ? (
+          <motion.div
+            initial={{ opacity: 0, y: 15 }}
+            animate={{ opacity: 1, y: 0 }}
+            exit={{ opacity: 0, y: -15 }}
+            className="space-y-6"
           >
-            <FontAwesomeIcon icon={showBlogForm ? faChartLine : faPlus} />
-            {showBlogForm ? "View Blogs" : "Add Blog"}
-          </motion.button>
-        </div>
+            {/* Header Area */}
+            <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-4 border-b border-slate-200 pb-5 bg-white p-6 rounded-2xl shadow-3xs">
+              <div>
+                <h1 className="text-2xl font-black text-slate-900 tracking-tight flex items-center gap-2">
+                  <span className="text-[#DC2626]">📝</span>
+                  <span>Curated Blog Dashboard</span>
+                </h1>
+                <p className="text-slate-400 text-xs mt-1 font-semibold">
+                  Publish high-quality articles, SEO schemas, client star ratings, and detailed Q&A guides.
+                </p>
+              </div>
+              <button
+                onClick={() => {
+                  setFormMode("add");
+                  const savedDraft = localStorage.getItem("autosave_blog_new");
+                  if (savedDraft) {
+                    if (window.confirm("Found an unsaved draft. Do you want to restore it?")) {
+                      setNewBlog(JSON.parse(savedDraft));
+                      setImagePreview(JSON.parse(savedDraft).image || null);
+                    } else {
+                      localStorage.removeItem("autosave_blog_new");
+                      setNewBlog({
+                        title: "",
+                        subtitle: "",
+                        description: "",
+                        date: new Date().toISOString().split("T")[0],
+                        image: "",
+                        created: Date.now(),
+                        metaTitle: "",
+                        metaDescription: "",
+                        slug: "",
+                        faqs: [],
+                        reviews: [],
+                        author: "Anuj Anand Malik",
+                      });
+                      setImagePreview(null);
+                    }
+                  } else {
+                    setNewBlog({
+                      title: "",
+                      subtitle: "",
+                      description: "",
+                      date: new Date().toISOString().split("T")[0],
+                      image: "",
+                      created: Date.now(),
+                      metaTitle: "",
+                      metaDescription: "",
+                      slug: "",
+                      faqs: [],
+                      reviews: [],
+                      author: "Anuj Anand Malik",
+                    });
+                    setImagePreview(null);
+                  }
+                  setShowBlogForm(true);
+                }}
+                className="bg-[#DC2626] hover:bg-[#991B1B] text-white px-5 py-3 rounded-xl font-bold text-xs sm:text-sm flex items-center justify-center gap-2 transition-all cursor-pointer shadow-3xs"
+              >
+                <FontAwesomeIcon icon={faPlus} />
+                <span>Write Blog Post</span>
+              </button>
+            </div>
 
-        {/* Conditional Rendering: Show either Data Table or Blog Form */}
-        {showBlogForm ? (
-          <AnimatePresence mode="wait">
-            <form onSubmit={handleSubmitBlog} className="space-y-8">
-              
-              {/* AI Generator Section */}
-              <div className="bg-red-50/40 p-5 rounded-2xl border border-red-100 mb-6 space-y-4">
-                <h3 className="text-[#DC2626] font-black text-sm uppercase tracking-wider flex items-center">
-                  <FontAwesomeIcon icon={faMagic} className="mr-2" />
-                  AI Article Writer
-                </h3>
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-                  <div className="space-y-1.5">
-                    <label className="block text-[10px] font-black text-gray-500 uppercase">Primary Keyword</label>
-                    <input
-                      type="text"
-                      value={aiPrimaryKeyword}
-                      onChange={(e) => setAiPrimaryKeyword(e.target.value)}
-                      placeholder="e.g., recover FNF from previous employor"
-                      className="text-black w-full px-4 py-3 border border-gray-200 rounded-xl text-xs font-semibold focus:outline-none focus:border-[#DC2626]"
-                      disabled={isGenerating}
-                    />
-                  </div>
-                  <div className="space-y-1.5">
-                    <label className="block text-[10px] font-black text-gray-500 uppercase">Secondary Keywords</label>
-                    <input
-                      type="text"
-                      value={aiSecondaryKeywords}
-                      onChange={(e) => setAiSecondaryKeywords(e.target.value)}
-                      placeholder="e.g., recover FNF from previous employor"
-                      className="text-black w-full px-4 py-3 border border-gray-200 rounded-xl text-xs font-semibold focus:outline-none focus:border-[#DC2626]"
-                      disabled={isGenerating}
-                    />
-                  </div>
-                </div>
+            {/* Metrics Overview */}
+            <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
+              <div className="bg-white p-5 rounded-2xl border border-slate-100 shadow-3xs">
+                <span className="text-slate-400 text-[10px] font-bold uppercase tracking-wider">Total Published Blogs</span>
+                <p className="text-3xl font-black text-[#DC2626] mt-1">{blogs.length}</p>
+              </div>
+              <div className="bg-white p-5 rounded-2xl border border-slate-100 shadow-3xs">
+                <span className="text-slate-400 text-[10px] font-bold uppercase tracking-wider">TOC & SEO Enriched</span>
+                <p className="text-3xl font-black text-green-700 mt-1">
+                  {blogs.filter(b => b.description?.includes('<h2') || b.description?.includes('<h3')).length}
+                </p>
+              </div>
+              <div className="bg-white p-5 rounded-2xl border border-slate-100 shadow-3xs">
+                <span className="text-slate-400 text-[10px] font-bold uppercase tracking-wider">FAQs Embedded</span>
+                <p className="text-3xl font-black text-blue-700 mt-1">
+                  {blogs.filter(b => b.faqs && b.faqs.length > 0).length}
+                </p>
+              </div>
+            </div>
 
-                <button
-                  type="button"
-                  onClick={handleGenerate}
-                  disabled={isGenerating}
-                  className="bg-[#DC2626] text-white text-xs font-black uppercase px-5 py-2.5 rounded-xl hover:bg-[#B91C1C] disabled:bg-red-300 transition-colors flex items-center justify-center cursor-pointer shadow-sm"
-                >
-                  {isGenerating ? (
-                    <>
-                      <Loader2 className="animate-spin mr-2 w-4 h-4" />
-                      Generating Content...
-                    </>
-                  ) : (
-                    "Generate AI Blog Content"
-                  )}
-                </button>
-              </div>
-
-              {/* Core blog fields */}
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                <div className="space-y-1.5">
-                  <label htmlFor="title" className="block text-xs font-black text-gray-400 uppercase tracking-wider">Blog Title</label>
-                  <input
-                    type="text"
-                    id="title"
-                    name="title"
-                    value={newBlog.title}
-                    onChange={handleInputChange}
-                    required
-                    className="text-black w-full px-4 py-3 border border-gray-200 rounded-xl text-sm font-semibold focus:outline-none focus:border-[#DC2626]"
-                    placeholder="Enter blog title"
-                  />
-                </div>
-                
-                <div className="space-y-1.5">
-                  <label htmlFor="slug" className="block text-xs font-black text-gray-400 uppercase tracking-wider">URL Slug</label>
-                  <input
-                    type="text"
-                    id="slug"
-                    name="slug"
-                    value={newBlog.slug}
-                    onChange={handleInputChange}
-                    required
-                    className="text-black w-full px-4 py-3 border border-gray-200 rounded-xl text-sm font-semibold focus:outline-none focus:border-[#DC2626]"
-                    placeholder="url-friendly-slug-name"
-                  />
-                  <p className="mt-1 text-[11px] text-gray-400 font-mono">Will be used in the URL: /blog/{newBlog.slug}</p>
-                </div>
-              </div>
-              
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                <div className="space-y-1.5">
-                  <label htmlFor="subtitle" className="block text-xs font-black text-gray-400 uppercase tracking-wider">Subtitle/SEO Keywords</label>
-                  <input
-                    type="text"
-                    id="subtitle"
-                    name="subtitle"
-                    value={newBlog.subtitle}
-                    onChange={handleInputChange}
-                    required
-                    className="text-black w-full px-4 py-3 border border-gray-200 rounded-xl text-sm font-semibold focus:outline-none focus:border-[#DC2626]"
-                    placeholder="Enter SEO keywords"
-                  />
-                </div>
-                
-                <div className="space-y-1.5">
-                  <label htmlFor="metaTitle" className="block text-xs font-black text-gray-400 uppercase tracking-wider">Meta Title</label>
-                  <input
-                    type="text"
-                    id="metaTitle"
-                    name="metaTitle"
-                    value={newBlog.metaTitle || ""}
-                    onChange={handleInputChange}
-                    className="text-black w-full px-4 py-3 border border-gray-200 rounded-xl text-sm font-semibold focus:outline-none focus:border-[#DC2626]"
-                    placeholder="Enter meta title for search engines"
-                  />
-                </div>
-              </div>
-              
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                <div className="space-y-1.5">
-                  <label htmlFor="date" className="block text-xs font-black text-gray-400 uppercase tracking-wider">Publication Date</label>
-                  <input
-                    type="date"
-                    id="date"
-                    name="date"
-                    value={newBlog.date}
-                    onChange={handleInputChange}
-                    required
-                    className="text-black w-full px-4 py-3 border border-gray-200 rounded-xl text-sm font-semibold focus:outline-none focus:border-[#DC2626]"
-                  />
-                </div>
-                
-                <div className="space-y-1.5">
-                  <label htmlFor="image" className="block text-xs font-black text-gray-400 uppercase tracking-wider">Blog Image</label>
-                  <div className="flex flex-col space-y-3">
-                    <div className="flex items-center space-x-2">
-                      <input
-                        type="file"
-                        id="image-upload"
-                        ref={fileInputRef}
-                        accept="image/*"
-                        onChange={handleFileUpload}
-                        className="hidden"
-                      />
-                      <button
-                        type="button"
-                        onClick={() => fileInputRef.current?.click()}
-                        className="px-4 py-2.5 bg-gray-50 border border-gray-200 text-gray-600 rounded-xl text-xs font-bold flex items-center hover:bg-gray-100 cursor-pointer"
-                      >
-                        <FontAwesomeIcon icon={faUpload} className="mr-2" />
-                        {uploading ? "Uploading..." : "Choose Image"}
-                      </button>
-                      {newBlog.image && (
-                        <span className="text-xs font-bold text-emerald-600">Image successfully loaded</span>
-                      )}
-                    </div>
-                    
-                    {uploading && (
-                      <div className="w-full bg-gray-250 rounded-full h-2">
-                        <div 
-                          className="bg-[#DC2626] h-2 rounded-full transition-all duration-300" 
-                          style={{ width: `${uploadProgress}%` }}
-                        ></div>
-                      </div>
-                    )}
-                    
-                    {/* Image preview */}
-                    {(imagePreview || newBlog.image) && (
-                      <div className="mt-2">
-                        <img 
-                          src={imagePreview || newBlog.image} 
-                          alt="Blog image preview" 
-                          className="w-36 h-20 object-cover rounded-xl border border-gray-200"
-                        />
-                      </div>
-                    )}
-                    
-                    {/* AI Image Generation Prompt */}
-                    <div className="mt-4 p-4 bg-red-50/20 border border-red-100 rounded-2xl space-y-3">
-                      <label className="block text-[10px] font-black text-gray-500 uppercase">AI Image DALL-E Prompt</label>
-                      <textarea
-                        value={imagePrompt}
-                        onChange={(e) => setImagePrompt(e.target.value)}
-                        rows={2}
-                        className="text-black w-full px-3 py-2 text-xs border border-gray-200 rounded-xl focus:outline-none focus:border-[#DC2626]"
-                        placeholder="Describe the illustration to generate..."
-                      />
-                      <button
-                        type="button"
-                        onClick={handleGenerateImage}
-                        disabled={isGeneratingImage || !imagePrompt}
-                        className="w-full px-4 py-2 bg-[#111827] text-white rounded-xl text-xs font-bold disabled:bg-gray-300 cursor-pointer"
-                      >
-                        {isGeneratingImage ? "Generating Image..." : "Generate Image with DALL-E"}
-                      </button>
-                      
-                      {generatedImageUrl && (
-                        <div className="mt-4 flex flex-col items-center gap-3">
-                          <img 
-                            src={generatedImageUrl} 
-                            alt="Generated Preview" 
-                            className="w-full max-w-xs rounded-xl border border-gray-200"
-                          />
-                          <button
-                            type="button"
-                            onClick={handleUploadGeneratedImage}
-                            disabled={isUploadingGenerated}
-                            className="w-full px-4 py-2 bg-emerald-600 text-white rounded-xl text-xs font-bold cursor-pointer"
-                          >
-                            {isUploadingGenerated ? "Uploading..." : "Save Image to Database"}
-                          </button>
-                        </div>
-                      )}
-                    </div>
-                  </div>
-                </div>
-              </div>
-              
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                <div className="space-y-1.5">
-                  <label htmlFor="metaDescription" className="block text-xs font-black text-gray-400 uppercase tracking-wider">Meta Description</label>
-                  <input
-                    type="text"
-                    id="metaDescription"
-                    name="metaDescription"
-                    value={newBlog.metaDescription || ""}
-                    onChange={handleInputChange}
-                    className="text-black w-full px-4 py-3 border border-gray-200 rounded-xl text-sm font-semibold focus:outline-none focus:border-[#DC2626]"
-                    placeholder="Enter short meta description snippet"
-                  />
-                </div>
-                
-                <div className="space-y-1.5">
-                  <label htmlFor="author" className="block text-xs font-black text-gray-400 uppercase tracking-wider">Author</label>
-                  <select
-                    id="author"
-                    name="author"
-                    value={newBlog.author}
-                    onChange={handleInputChange}
-                    required
-                    className="text-black w-full px-4 py-3 border border-gray-200 rounded-xl text-sm font-semibold focus:outline-none"
-                  >
-                    <option value="Anuj Anand Malik">Anuj Anand Malik</option>
-                    <option value="Shrey Arora">Shrey Arora</option>
-                  </select>
-                </div>
-              </div>
-              
-              {/* Rich Text Editor */}
-              <div className="space-y-1.5">
-                <label className="block text-xs font-black text-gray-400 uppercase tracking-wider">Blog Content</label>
-                <TiptapEditor 
-                  value={newBlog.description} 
-                  onChange={handleEditorChange} 
-                />
-                
-
-              </div>
-
-              {/* FAQs Builder */}
-              <div className="p-5 border border-gray-200 rounded-2xl space-y-4">
-                <div className="flex justify-between items-center pb-2 border-b border-gray-150">
-                  <h4 className="text-sm font-black text-gray-800 uppercase tracking-wider">Frequently Asked Questions</h4>
-                  <button
-                    type="button"
-                    onClick={addFaq}
-                    className="px-3.5 py-1.5 bg-[#DC2626]/10 text-[#DC2626] rounded-lg text-xs font-bold uppercase tracking-wider hover:bg-[#DC2626]/20 transition-all cursor-pointer"
-                  >
-                    + Add FAQ
-                  </button>
-                </div>
-                {newBlog.faqs && newBlog.faqs.length > 0 ? (
-                  <div className="space-y-3">
-                    {newBlog.faqs.map((faq, index) => (
-                      <div key={index} className="p-4 bg-gray-50 border border-gray-150 rounded-xl space-y-3 relative">
-                        <button
-                          type="button"
-                          onClick={() => removeFaq(index)}
-                          className="absolute top-4 right-4 text-gray-400 hover:text-[#DC2626] cursor-pointer"
-                        >
-                          <FontAwesomeIcon icon={faTrash} />
-                        </button>
-                        <div className="space-y-1 w-[90%]">
-                          <label className="text-[9px] font-black text-gray-400 uppercase block">Question</label>
-                          <input
-                            type="text"
-                            value={faq.question}
-                            onChange={(e) => handleFaqChange(index, "question", e.target.value)}
-                            className="text-black w-full px-3 py-2 border border-gray-200 rounded-lg text-xs font-semibold"
-                            placeholder="FAQ question"
-                          />
-                        </div>
-                        <div className="space-y-1">
-                          <label className="text-[9px] font-black text-gray-400 uppercase block">Answer</label>
-                          <textarea
-                            value={faq.answer}
-                            onChange={(e) => handleFaqChange(index, "answer", e.target.value)}
-                            className="text-black w-full px-3 py-2 border border-gray-200 rounded-lg text-xs font-medium"
-                            rows={2}
-                            placeholder="FAQ answer details"
-                          />
-                        </div>
-                      </div>
-                    ))}
-                  </div>
-                ) : (
-                  <p className="text-center text-xs text-gray-400 font-semibold py-4 uppercase">No FAQs added yet.</p>
-                )}
-              </div>
-
-              {/* Review Snippets Builder */}
-              <div className="p-5 border border-gray-200 rounded-2xl space-y-4">
-                <div className="flex justify-between items-center pb-2 border-b border-gray-150">
-                  <h4 className="text-sm font-black text-gray-800 uppercase tracking-wider">Client Reviews</h4>
-                  <button
-                    type="button"
-                    onClick={addReview}
-                    className="px-3.5 py-1.5 bg-[#DC2626]/10 text-[#DC2626] rounded-lg text-xs font-bold uppercase tracking-wider hover:bg-[#DC2626]/20 transition-all cursor-pointer"
-                  >
-                    + Add Review
-                  </button>
-                </div>
-                {newBlog.reviews && newBlog.reviews.length > 0 ? (
-                  <div className="space-y-3">
-                    {newBlog.reviews.map((review, index) => (
-                      <div key={index} className="p-4 bg-gray-50 border border-gray-150 rounded-xl space-y-3 relative">
-                        <button
-                          type="button"
-                          onClick={() => removeReview(index)}
-                          className="absolute top-4 right-4 text-gray-400 hover:text-[#DC2626] cursor-pointer"
-                        >
-                          <FontAwesomeIcon icon={faTrash} />
-                        </button>
-                        <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 w-[90%]">
-                          <div className="space-y-1">
-                            <label className="text-[9px] font-black text-gray-400 uppercase block">Reviewer Name</label>
-                            <input
-                              type="text"
-                              value={review.name}
-                              onChange={(e) => handleReviewChange(index, "name", e.target.value)}
-                              className="text-black w-full px-3 py-2 border border-gray-200 rounded-lg text-xs font-semibold"
-                              placeholder="Reviewer Name"
-                            />
-                          </div>
-                          <div className="space-y-1">
-                            <label className="text-[9px] font-black text-gray-400 uppercase block">Star Rating</label>
-                            <select
-                              value={review.rating}
-                              onChange={(e) => handleReviewChange(index, "rating", parseInt(e.target.value))}
-                              className="text-black w-full px-3 py-2 border border-gray-200 rounded-lg text-xs font-semibold"
-                            >
-                              <option value={5}>5 Stars</option>
-                              <option value={4}>4 Stars</option>
-                              <option value={3}>3 Stars</option>
-                              <option value={2}>2 Stars</option>
-                              <option value={1}>1 Star</option>
-                            </select>
-                          </div>
-                        </div>
-                        <div className="space-y-1">
-                          <label className="text-[9px] font-black text-gray-400 uppercase block">Review Text</label>
-                          <textarea
-                            value={review.review}
-                            onChange={(e) => handleReviewChange(index, "review", e.target.value)}
-                            className="text-black w-full px-3 py-2 border border-gray-200 rounded-lg text-xs font-medium"
-                            rows={2}
-                            placeholder="Enter review copy"
-                          />
-                        </div>
-                      </div>
-                    ))}
-                  </div>
-                ) : (
-                  <p className="text-center text-xs text-gray-400 font-semibold py-4 uppercase">No reviews added yet.</p>
-                )}
-              </div>
-
-              {/* Form Action Buttons */}
-              <div className="flex justify-end gap-3 pt-4 border-t border-gray-100">
-                <button
-                  type="button"
-                  onClick={handleCancelForm}
-                  className="px-5 py-2.5 bg-white border border-gray-200 text-gray-600 rounded-xl font-bold text-xs cursor-pointer"
-                >
-                  Cancel
-                </button>
-                <button
-                  type="submit"
-                  disabled={isSubmitting}
-                  className="px-6 py-2.5 bg-[#DC2626] text-white rounded-xl font-black text-xs uppercase tracking-wider hover:bg-[#B91C1C] disabled:opacity-50 cursor-pointer shadow-sm"
-                >
-                  {isSubmitting ? "Saving..." : "Save Blog"}
-                </button>
-              </div>
-
-            </form>
-          </AnimatePresence>
-        ) : (
-          /* Table blogs list view */
-          <div className="space-y-6">
-            
-            {/* Search Input bar */}
-            <div className="flex items-center gap-3 max-w-sm border border-gray-250 rounded-xl px-4 py-2.5 bg-white shadow-sm">
-              <FontAwesomeIcon icon={faSearch} className="text-gray-400" />
+            {/* Filter and Search */}
+            <div className="flex bg-white p-4 rounded-2xl border border-slate-100 shadow-3xs items-center gap-3">
+              <FontAwesomeIcon icon={faSearch} className="text-slate-400 text-sm ml-2" />
               <input
                 type="text"
-                placeholder="Search blogs..."
+                placeholder="Search blogs by title, subtitle, or slug..."
                 value={searchTerm}
                 onChange={(e) => setSearchTerm(e.target.value)}
-                className="w-full bg-transparent text-xs font-semibold focus:outline-none text-gray-800"
+                className="w-full bg-transparent border-none text-xs sm:text-sm focus:outline-none placeholder-slate-400 text-slate-700"
               />
             </div>
 
+            {/* Blogs Table / List */}
             {isLoadingBlogs ? (
-              <div className="py-20 flex flex-col items-center justify-center gap-3">
-                <Loader2 className="w-10 h-10 text-[#DC2626] animate-spin" />
-                <p className="text-xs font-bold text-gray-400 uppercase tracking-widest">Loading directory...</p>
+              <div className="flex justify-center items-center py-20 bg-white rounded-2xl border border-slate-100 shadow-3xs">
+                <div className="flex flex-col items-center gap-2">
+                  <span className="animate-spin text-2xl text-[#DC2626]">💫</span>
+                  <p className="text-slate-500 text-sm font-semibold">Loading published blogs...</p>
+                </div>
               </div>
-            ) : currentBlogs.length > 0 ? (
-              <div className="overflow-x-auto rounded-2xl border border-gray-100">
-                <table className="w-full text-left border-collapse">
-                  <thead>
-                    <tr className="border-b border-gray-100 text-[10px] text-gray-400 font-black uppercase tracking-wider bg-gray-50/40">
-                      <th className="py-4 px-6">Image</th>
-                      <th className="py-4 px-6">Article Details</th>
-                      <th className="py-4 px-6">Author & Date</th>
-                      <th className="py-4 px-6 text-right">Actions</th>
-                    </tr>
-                  </thead>
-                  <tbody>
-                    {currentBlogs.map((blog) => (
-                      <tr key={blog.id} className="border-b border-gray-100 hover:bg-gray-50/20 transition-colors">
-                        <td className="py-4 px-6">
-                          <div className="w-24 h-14 bg-gray-100 rounded-xl overflow-hidden border border-gray-150">
-                            {blog.image ? (
-                              <img src={blog.image} alt={blog.title} className="w-full h-full object-cover" />
-                            ) : (
-                              <div className="w-full h-full bg-gray-200 flex items-center justify-center text-gray-400 text-xs">No Image</div>
-                            )}
-                          </div>
-                        </td>
-                        <td className="py-4 px-6 max-w-sm">
-                          <h4 className="text-xs sm:text-sm font-extrabold text-gray-800 line-clamp-1 mb-1">{blog.title}</h4>
-                          <span className="text-[10px] text-[#DC2626] font-mono tracking-tight bg-red-50/30 px-2 py-0.5 rounded border border-red-100/30">
-                            /blog/{blog.slug}
-                          </span>
-                        </td>
-                        <td className="py-4 px-6">
-                          <div className="text-xs font-bold text-gray-700">{blog.author}</div>
-                          <div className="text-[10px] text-gray-400 font-semibold">{blog.date}</div>
-                        </td>
-                        <td className="py-4 px-6 text-right">
-                          <div className="flex items-center justify-end gap-2">
-                            <button
-                              onClick={() => handleEdit(blog)}
-                              className="p-2 border border-gray-200 rounded-xl text-gray-500 hover:text-white hover:bg-gray-800 hover:border-gray-800 transition-colors cursor-pointer"
-                              title="Edit"
-                            >
-                              <FontAwesomeIcon icon={faEdit} />
-                            </button>
-                            <button
-                              onClick={() => handleDelete(blog.id, blog.slug)}
-                              className="p-2 border border-red-100 rounded-xl text-[#DC2626] hover:text-white hover:bg-[#DC2626] hover:border-[#DC2626] transition-colors cursor-pointer"
-                              title="Delete"
-                            >
-                              <FontAwesomeIcon icon={faTrash} />
-                            </button>
-                          </div>
-                        </td>
-                      </tr>
-                    ))}
-                  </tbody>
-                </table>
+            ) : currentBlogs.length === 0 ? (
+              <div className="text-center py-20 bg-white rounded-2xl border border-slate-100 shadow-3xs border-dashed border-slate-200">
+                <FontAwesomeIcon icon={faClipboardList} className="text-slate-300 text-4xl mb-4" />
+                <p className="text-slate-400 text-sm italic">No blog posts found matching search query.</p>
               </div>
             ) : (
-              <div className="py-16 text-center">No articles matches found.</div>
-            )}
+              <div className="bg-white rounded-2xl border border-slate-100 shadow-3xs overflow-hidden">
+                <div className="overflow-x-auto">
+                  <table className="w-full text-left border-collapse">
+                    <thead>
+                      <tr className="bg-slate-50 border-b border-slate-100">
+                        <th className="p-4 text-xs font-bold text-slate-400 uppercase">Banner</th>
+                        <th className="p-4 text-xs font-bold text-slate-400 uppercase">Title & Details</th>
+                        <th className="p-4 text-xs font-bold text-slate-400 uppercase">Slug / Link</th>
+                        <th className="p-4 text-xs font-bold text-slate-400 uppercase">Q&A / Reviews</th>
+                        <th className="p-4 text-xs font-bold text-slate-400 uppercase text-right">Actions</th>
+                      </tr>
+                    </thead>
+                    <tbody className="divide-y divide-slate-100">
+                      {currentBlogs.map((blog) => (
+                        <tr key={blog.id} className="hover:bg-slate-50/50 transition-colors">
+                          <td className="p-4">
+                            <img
+                              src={blog.image || "/logo_qa.png"}
+                              alt={blog.title}
+                              className="w-16 h-10 object-cover rounded-lg bg-slate-100 border border-slate-200/50 shadow-3xs"
+                            />
+                          </td>
+                          <td className="p-4 max-w-xs">
+                            <span className="font-extrabold text-slate-900 text-xs sm:text-sm line-clamp-1 hover:text-[#DC2626] transition-colors">
+                              {blog.title}
+                            </span>
+                            <div className="flex gap-2 items-center text-[10px] text-slate-400 font-semibold mt-1">
+                              <span>{blog.date}</span>
+                              <span>•</span>
+                              <span>By: {blog.author}</span>
+                            </div>
+                          </td>
+                          <td className="p-4">
+                            <span className="text-[11px] font-mono bg-slate-100 border border-slate-150 text-slate-600 px-2 py-0.5 rounded-md">
+                              {blog.slug}
+                            </span>
+                          </td>
+                          <td className="p-4">
+                            <div className="flex gap-2 items-center">
+                              <span className="px-2 py-0.5 bg-blue-50 border border-blue-200/50 rounded-md text-[10px] font-extrabold text-blue-700">
+                                {blog.faqs?.length || 0} FAQs
+                              </span>
+                              <span className="px-2 py-0.5 bg-red-50 border border-red-200/50 rounded-md text-[10px] font-extrabold text-[#DC2626]">
+                                {blog.reviews?.length || 0} Reviews
+                              </span>
+                            </div>
+                          </td>
+                          <td className="p-4 text-right">
+                            <div className="flex items-center justify-end gap-2">
+                              <button
+                                onClick={() => handleEdit(blog)}
+                                className="w-8 h-8 rounded-lg hover:bg-slate-100 border border-slate-150 flex items-center justify-center text-slate-500 hover:text-[#DC2626] transition-colors cursor-pointer"
+                                title="Edit post"
+                              >
+                                <FontAwesomeIcon icon={faEdit} className="text-xs" />
+                              </button>
+                              <button
+                                onClick={() => handleDelete(blog.id, blog.slug)}
+                                className="w-8 h-8 rounded-lg hover:bg-red-50 border border-slate-150 flex items-center justify-center text-slate-500 hover:text-red-600 transition-colors cursor-pointer"
+                                title="Delete post"
+                              >
+                                <FontAwesomeIcon icon={faTrash} className="text-xs" />
+                              </button>
+                            </div>
+                          </td>
+                        </tr>
+                      ))}
+                    </tbody>
+                  </table>
+                </div>
 
-            {/* Pagination Controls */}
-            {totalPages > 1 && (
-              <div className="flex items-center justify-between pt-4 bg-white border-t border-gray-100">
-                <button
-                  onClick={handlePreviousPage}
-                  disabled={currentPage === 1}
-                  className="px-4 py-2 border border-gray-200 text-xs font-bold rounded-xl disabled:opacity-50 cursor-pointer hover:bg-gray-50"
-                >
-                  Previous
-                </button>
-                <span className="text-xs font-extrabold text-gray-600">
-                  Page {currentPage} of {totalPages}
-                </span>
-                <button
-                  onClick={handleNextPage}
-                  disabled={currentPage === totalPages}
-                  className="px-4 py-2 border border-gray-200 text-xs font-bold rounded-xl disabled:opacity-50 cursor-pointer hover:bg-gray-50"
-                >
-                  Next
-                </button>
+                {/* Pagination */}
+                {totalPages > 1 && (
+                  <div className="flex items-center justify-between p-4 border-t border-slate-100 bg-slate-50/50">
+                    <span className="text-xs text-slate-400 font-semibold">
+                      Page {currentPage} of {totalPages}
+                    </span>
+                    <div className="flex items-center gap-1.5">
+                      <button
+                        onClick={handlePreviousPage}
+                        disabled={currentPage === 1}
+                        className="p-2 border border-slate-200 rounded-lg hover:bg-white text-slate-500 disabled:opacity-40 disabled:hover:bg-transparent cursor-pointer"
+                      >
+                        <FontAwesomeIcon icon={faChevronLeft} className="text-xs" />
+                      </button>
+                      <button
+                        onClick={handleNextPage}
+                        disabled={currentPage === totalPages}
+                        className="p-2 border border-slate-200 rounded-lg hover:bg-white text-slate-500 disabled:opacity-40 disabled:hover:bg-transparent cursor-pointer"
+                      >
+                        <FontAwesomeIcon icon={faChevronRight} className="text-xs" />
+                      </button>
+                    </div>
+                  </div>
+                )}
               </div>
             )}
-
+            
             {/* RSS Feed Diagnostic Debug Section */}
-            <div className="bg-gray-50 border border-gray-200 p-5 rounded-2xl space-y-4">
-              <h3 className="text-xs font-black text-gray-700 uppercase tracking-widest">RSS Feed Diagnostic Panel</h3>
+            <div className="bg-white border border-slate-100 shadow-3xs p-5 rounded-2xl space-y-4">
+              <h3 className="text-xs font-black text-slate-700 uppercase tracking-widest">RSS Feed Diagnostic Panel</h3>
               <button
                 type="button"
                 onClick={testRssFeed}
                 disabled={isLoadingRss}
-                className="px-4 py-2 bg-gradient-to-r from-[#DC2626] to-[#B91C1C] text-white rounded-xl text-xs font-bold hover:shadow transition-all cursor-pointer"
+                className="px-4 py-2 bg-slate-100 text-slate-700 rounded-xl text-xs font-bold hover:bg-slate-200 transition-all cursor-pointer border border-slate-200"
               >
                 {isLoadingRss ? "Checking RSS..." : "Execute RSS Diagnostic check"}
               </button>
               {rssDebugInfo && (
-                <pre className="bg-[#0B0F17] text-[#10B981] p-4 rounded-xl text-xs font-mono overflow-auto max-h-[300px] leading-relaxed border border-gray-800 shadow-inner">
+                <pre className="bg-slate-900 text-[#DC2626] p-4 rounded-xl text-xs font-mono overflow-auto max-h-[300px] leading-relaxed border border-slate-800 shadow-inner">
                   {rssDebugInfo}
                 </pre>
               )}
             </div>
 
-          </div>
-        )}
+          </motion.div>
+        ) : (
+          <motion.form
+            initial={{ opacity: 0, y: 15 }}
+            animate={{ opacity: 1, y: 0 }}
+            exit={{ opacity: 0, y: -15 }}
+            onSubmit={handleSubmitBlog}
+            className="space-y-8 bg-white p-6 sm:p-10 rounded-3xl border border-slate-100 shadow-sm"
+          >
+            {/* Form Header */}
+            <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between border-b border-slate-100 pb-6 gap-4">
+              <div className="flex items-center gap-3">
+                <button
+                  type="button"
+                  onClick={handleCancelForm}
+                  className="w-10 h-10 rounded-full border border-slate-200 flex items-center justify-center hover:bg-slate-50 text-slate-400 hover:text-slate-700 transition-colors cursor-pointer"
+                >
+                  <FontAwesomeIcon icon={faArrowLeft} className="text-sm" />
+                </button>
+                <div>
+                  <h2 className="text-xl font-black text-slate-900 tracking-tight">
+                    {formMode === 'add' ? 'Publish a New Blog Post' : 'Modify Blog Post Details'}
+                  </h2>
+                  <p className="text-slate-400 text-xs mt-0.5 font-semibold">
+                    Set up titles, subtitle blocks, canonical slug, Rich Tiptap body content, FAQs, and reviews.
+                  </p>
+                </div>
+              </div>
 
-      </motion.div>
-    </motion.div>
+              <div className="flex items-center gap-2 flex-wrap">
+                <button
+                  type="button"
+                  onClick={() => {
+                    const savedDraft = localStorage.getItem(formMode === 'add' ? "autosave_blog_new" : `autosave_blog_${newBlog.id}`);
+                    if (savedDraft) {
+                      setNewBlog(JSON.parse(savedDraft));
+                      setImagePreview(JSON.parse(savedDraft).image || null);
+                      alert("Draft recovered successfully!");
+                    } else {
+                      alert("No draft found in storage.");
+                    }
+                  }}
+                  className="bg-slate-100 hover:bg-slate-200 border border-slate-250 text-slate-600 px-4 py-2.5 rounded-xl font-bold text-xs flex items-center gap-2 transition-all cursor-pointer"
+                  title="Check autosaved version"
+                >
+                  <FontAwesomeIcon icon={faClipboardList} className="text-xs" />
+                  <span>Restore Draft</span>
+                </button>
+                
+                <button
+                  type="submit"
+                  disabled={isSubmitting}
+                  className="bg-[#DC2626] hover:bg-[#991B1B] border border-[#DC2626] text-white px-5 py-2.5 rounded-xl font-bold text-xs flex items-center gap-2 transition-all cursor-pointer disabled:opacity-50"
+                >
+                  {isSubmitting ? "Saving..." : "Save Blog"}
+                </button>
+              </div>
+            </div>
+
+            {/* AI Generator Section */}
+            <div className="p-6 border border-red-200/80 bg-gradient-to-br from-red-50/40 to-orange-50/10 rounded-2xl shadow-3xs relative overflow-hidden">
+              <div className="absolute top-0 right-0 w-24 h-24 bg-gradient-to-bl from-red-200/10 to-transparent rounded-bl-full pointer-events-none"></div>
+              
+              <div className="flex items-center justify-between mb-4">
+                <div className="flex items-center gap-2">
+                  <span className="flex items-center justify-center w-7 h-7 rounded-lg bg-red-100 text-[#DC2626] text-xs font-bold animate-pulse">✨</span>
+                  <div>
+                    <h3 className="text-slate-800 text-sm font-bold uppercase tracking-wider">
+                      AI Article Writer
+                    </h3>
+                    <p className="text-slate-500 text-[11px] mt-0.5 leading-relaxed normal-case">
+                      Provide context, topic, or a writeup. AI will generate a complete blog post including FAQs and reviews.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div className="grid grid-cols-1 gap-3">
+                <textarea
+                  value={aiPrimaryKeyword}
+                  onChange={(e) => setAiPrimaryKeyword(e.target.value)}
+                  placeholder="Provide detailed context, a writeup, or topic here to generate a comprehensive blog article..."
+                  rows={3}
+                  className="w-full p-4 bg-white border border-slate-200 focus:border-red-500 focus:ring-2 focus:ring-red-50 rounded-xl text-xs text-slate-800 focus:outline-none placeholder-slate-400 shadow-3xs transition-all resize-y"
+                  disabled={isGenerating}
+                />
+              </div>
+
+              <div className="flex items-center justify-end mt-3">
+                  <motion.button
+                    type="button"
+                    onClick={handleGenerate}
+                    disabled={isGenerating || !aiPrimaryKeyword.trim()}
+                    whileHover={{ scale: 1.02 }}
+                    whileTap={{ scale: 0.98 }}
+                    className="px-5 py-2.5 bg-gradient-to-r from-red-600 to-[#DC2626] hover:from-red-700 hover:to-[#991B1B] text-white disabled:opacity-40 rounded-xl font-bold text-xs shadow-sm hover:shadow transition-all cursor-pointer flex items-center gap-1.5"
+                  >
+                    {isGenerating ? (
+                      <>
+                        <span className="animate-spin text-xs">💫</span>
+                        <span>Generating Content...</span>
+                      </>
+                    ) : (
+                      <>
+                        <span>✨ Generate Blog with AI</span>
+                      </>
+                    )}
+                  </motion.button>
+              </div>
+            </div>
+
+            {/* Main Form Fields */}
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+              {/* Title */}
+              <div className="flex flex-col gap-1.5">
+                <label className="text-xs font-extrabold uppercase text-slate-400 tracking-wider">Blog Title *</label>
+                <input
+                  type="text"
+                  name="title"
+                  required
+                  value={newBlog.title}
+                  onChange={handleInputChange}
+                  placeholder="e.g. Defeating Bank Harassment & Debt Settlement"
+                  className="p-3.5 border border-slate-200 rounded-xl focus:border-[#DC2626] focus:outline-none text-xs sm:text-sm font-semibold text-slate-700 bg-white"
+                />
+              </div>
+
+              {/* Subtitle */}
+              <div className="flex flex-col gap-1.5">
+                <label className="text-xs font-extrabold uppercase text-slate-400 tracking-wider">Subtitle Block</label>
+                <input
+                  type="text"
+                  name="subtitle"
+                  value={newBlog.subtitle}
+                  onChange={handleInputChange}
+                  placeholder="e.g. A comprehensive guide on debtor legal rights and RBI OTS principles"
+                  className="p-3.5 border border-slate-200 rounded-xl focus:border-[#DC2626] focus:outline-none text-xs sm:text-sm font-semibold text-slate-700 bg-white"
+                />
+              </div>
+
+              {/* Slug */}
+              <div className="flex flex-col gap-1.5">
+                <label className="text-xs font-extrabold uppercase text-slate-400 tracking-wider flex items-center gap-2">
+                  <span>URL Slug *</span>
+                  <span className="text-[10px] text-slate-400 italic lowercase font-normal">(only letters, numbers, hyphens)</span>
+                </label>
+                <input
+                  type="text"
+                  name="slug"
+                  required
+                  value={newBlog.slug}
+                  onChange={handleInputChange}
+                  placeholder="e.g. defeating-bank-harassment"
+                  className="p-3.5 border border-slate-200 rounded-xl focus:border-[#DC2626] focus:outline-none text-xs sm:text-sm font-semibold text-slate-700 bg-white font-mono"
+                />
+              </div>
+
+              {/* Date */}
+              <div className="flex flex-col gap-1.5">
+                <label className="text-xs font-extrabold uppercase text-slate-400 tracking-wider">Publication Date *</label>
+                <input
+                  type="date"
+                  name="date"
+                  required
+                  value={newBlog.date}
+                  onChange={handleInputChange}
+                  className="p-3.5 border border-slate-200 rounded-xl focus:border-[#DC2626] focus:outline-none text-xs sm:text-sm font-semibold text-slate-700 bg-white"
+                />
+              </div>
+
+              {/* Author */}
+              <div className="flex flex-col gap-1.5">
+                <label className="text-xs font-extrabold uppercase text-slate-400 tracking-wider">Featured Author Profile</label>
+                <select
+                  name="author"
+                  value={newBlog.author}
+                  onChange={handleInputChange}
+                  className="p-3.5 border border-slate-200 rounded-xl focus:border-[#DC2626] focus:outline-none text-xs sm:text-sm font-semibold text-slate-700 bg-white"
+                >
+                  <option value="Anuj Anand Malik">Anuj Anand Malik</option>
+                  <option value="Shrey Arora">Shrey Arora</option>
+                  <option value="Adv. Ashish Bhay">Adv. Ashish Bhay</option>
+                </select>
+              </div>
+
+              {/* Image Input */}
+              <div className="flex flex-col gap-1.5">
+                <label className="text-xs font-extrabold uppercase text-slate-400 tracking-wider">Cover Image URL *</label>
+                <div className="flex gap-2">
+                  <input
+                    type="text"
+                    name="image"
+                    value={newBlog.image}
+                    onChange={handleInputChange}
+                    placeholder="e.g. /api/blog/image/... or select local file"
+                    className="p-3.5 border border-slate-200 rounded-xl focus:border-[#DC2626] focus:outline-none text-xs sm:text-sm font-semibold text-slate-700 bg-white flex-1"
+                  />
+                  <input
+                    type="file"
+                    ref={fileInputRef}
+                    accept="image/*"
+                    onChange={handleFileUpload}
+                    className="hidden"
+                  />
+                  <button
+                    type="button"
+                    onClick={() => fileInputRef.current?.click()}
+                    className="px-4 py-3 bg-slate-100 hover:bg-slate-200 border border-slate-250 text-slate-700 rounded-xl text-xs font-bold transition-all flex items-center justify-center gap-1.5 cursor-pointer"
+                    title="Upload cover image"
+                  >
+                    <FontAwesomeIcon icon={faUpload} />
+                    <span>{uploading ? '...' : 'Upload'}</span>
+                  </button>
+                </div>
+                
+                {/* Upload Progress bar */}
+                {uploading && (
+                  <div className="w-full bg-slate-100 rounded-full h-1 mt-1">
+                    <div 
+                      className="bg-[#DC2626] h-1 rounded-full transition-all duration-300" 
+                      style={{ width: `${uploadProgress}%` }}
+                    ></div>
+                  </div>
+                )}
+              </div>
+            </div>
+
+            {/* AI Image Generation Card */}
+            <div className="p-4 bg-slate-50 border border-slate-150 rounded-2xl space-y-3">
+              <label className="text-xs font-extrabold uppercase text-slate-400 tracking-wider">AI Image DALL-E Generator</label>
+              <div className="flex gap-2">
+                <input
+                  type="text"
+                  value={imagePrompt}
+                  onChange={(e) => setImagePrompt(e.target.value)}
+                  className="p-3 border border-slate-200 rounded-xl focus:border-[#DC2626] focus:outline-none text-xs font-semibold text-slate-700 bg-white flex-1"
+                  placeholder="Describe the illustration to generate..."
+                />
+                <button
+                  type="button"
+                  onClick={handleGenerateImage}
+                  disabled={isGeneratingImage || !imagePrompt}
+                  className="px-4 py-3 bg-slate-800 text-white rounded-xl text-xs font-bold disabled:bg-slate-300 cursor-pointer transition-colors"
+                >
+                  {isGeneratingImage ? "Generating..." : "Generate Image"}
+                </button>
+              </div>
+              
+              {generatedImageUrl && (
+                <div className="mt-4 flex flex-col sm:flex-row items-center gap-4 p-3 bg-white border border-slate-200 rounded-xl">
+                  <img 
+                    src={generatedImageUrl} 
+                    alt="Generated Preview" 
+                    className="w-32 h-20 object-cover rounded-lg border border-slate-200"
+                  />
+                  <div className="flex-1">
+                    <p className="text-xs text-slate-500 font-medium mb-2">Image generated successfully. Save to MongoDB to use it as cover image.</p>
+                    <button
+                      type="button"
+                      onClick={handleUploadGeneratedImage}
+                      disabled={isUploadingGenerated}
+                      className="px-4 py-2 bg-[#DC2626] text-white rounded-lg text-xs font-bold cursor-pointer hover:bg-[#991B1B] transition-colors"
+                    >
+                      {isUploadingGenerated ? "Uploading..." : "Save Image to Database"}
+                    </button>
+                  </div>
+                </div>
+              )}
+            </div>
+
+            {/* Image Preview Block */}
+            {(imagePreview || newBlog.image) && (
+              <div className="p-4 bg-slate-50 rounded-2xl border border-slate-150 flex flex-col items-center gap-2">
+                <span className="text-[10px] text-slate-400 font-bold uppercase tracking-wider">Cover Image Preview</span>
+                <img
+                  src={imagePreview || newBlog.image}
+                  alt="cover preview"
+                  className="w-full max-w-sm h-40 object-cover rounded-xl border border-slate-200 shadow-3xs"
+                />
+              </div>
+            )}
+
+            {/* Tiptap Rich Description Editor */}
+            <div className="flex flex-col gap-2">
+              <label className="text-xs font-extrabold uppercase text-slate-400 tracking-wider">Detailed Blog Content Body</label>
+              <div className="border border-slate-200 rounded-xl overflow-hidden bg-white">
+                <TiptapEditor
+                  value={newBlog.description}
+                  onChange={handleEditorChange}
+                />
+              </div>
+            </div>
+
+            {/* SEO Meta Tags Accordion */}
+            <div className="p-5 border border-slate-150 rounded-2xl bg-slate-50/50 flex flex-col gap-4">
+              <h3 className="text-xs font-black text-slate-900 uppercase tracking-widest flex items-center gap-1.5">
+                <FontAwesomeIcon icon={faInfoCircle} className="text-[#DC2626]" />
+                <span>Google Search SEO Configuration</span>
+              </h3>
+              
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                <div className="flex flex-col gap-1.5">
+                  <label className="text-[10px] font-extrabold uppercase text-slate-400">Custom Meta Title</label>
+                  <input
+                    type="text"
+                    name="metaTitle"
+                    value={newBlog.metaTitle || ""}
+                    onChange={handleInputChange}
+                    placeholder="Defaults to post title if left blank"
+                    className="p-3 border border-slate-200 rounded-lg focus:border-[#DC2626] focus:outline-none text-xs font-semibold text-slate-700 bg-white"
+                  />
+                </div>
+                <div className="flex flex-col gap-1.5">
+                  <label className="text-[10px] font-extrabold uppercase text-slate-400">Custom Meta Description</label>
+                  <input
+                    type="text"
+                    name="metaDescription"
+                    value={newBlog.metaDescription || ""}
+                    onChange={handleInputChange}
+                    placeholder="Short description for Google snippet"
+                    className="p-3 border border-slate-200 rounded-lg focus:border-[#DC2626] focus:outline-none text-xs font-semibold text-slate-700 bg-white"
+                  />
+                </div>
+              </div>
+            </div>
+
+            {/* FAQ Subcollection Section */}
+            <div className="p-6 border border-slate-150 rounded-3xl bg-slate-50/30 flex flex-col gap-6">
+              <div className="flex justify-between items-center border-b border-slate-100 pb-3">
+                <h3 className="text-xs font-black text-slate-900 uppercase tracking-widest flex items-center gap-1.5">
+                  <FontAwesomeIcon icon={faFileAlt} className="text-blue-700" />
+                  <span>Crawlable Q&A (FAQ Schema)</span>
+                </h3>
+                <button
+                  type="button"
+                  onClick={addFaq}
+                  className="text-xs font-bold text-blue-700 hover:text-blue-900 flex items-center gap-1 cursor-pointer"
+                >
+                  <FontAwesomeIcon icon={faPlus} />
+                  <span>Add FAQ Item</span>
+                </button>
+              </div>
+
+              {(newBlog.faqs || []).length === 0 ? (
+                <p className="text-slate-400 text-xs italic">No FAQ cards configured. Add items to support Google Q&A Rich snippets.</p>
+              ) : (
+                <div className="flex flex-col gap-4">
+                  {(newBlog.faqs || []).map((faq, idx) => (
+                    <div key={idx} className="bg-white p-4 rounded-xl border border-slate-150 flex flex-col gap-3 relative shadow-3xs">
+                      <button
+                        type="button"
+                        onClick={() => removeFaq(idx)}
+                        className="absolute top-2 right-2 w-6 h-6 rounded-full bg-slate-50 border border-slate-100 flex items-center justify-center text-slate-400 hover:text-red-500 cursor-pointer"
+                      >
+                        <FontAwesomeIcon icon={faTimes} className="text-[10px]" />
+                      </button>
+                      <div className="grid grid-cols-1 gap-2.5 pr-8">
+                        <input
+                          type="text"
+                          placeholder="Question (e.g. Can I settle a bank loan without court?)"
+                          required
+                          value={faq.question}
+                          onChange={(e) => handleFaqChange(idx, 'question', e.target.value)}
+                          className="w-full p-2.5 border border-slate-200 rounded-lg text-xs font-semibold focus:border-[#DC2626] focus:outline-none"
+                        />
+                        <textarea
+                          placeholder="Provide a detailed answer here..."
+                          required
+                          rows={2}
+                          value={faq.answer}
+                          onChange={(e) => handleFaqChange(idx, 'answer', e.target.value)}
+                          className="w-full p-2.5 border border-slate-200 rounded-lg text-xs font-medium focus:border-[#DC2626] focus:outline-none"
+                        />
+                      </div>
+                    </div>
+                  ))}
+                </div>
+              )}
+            </div>
+
+            {/* Review Subcollection Section */}
+            <div className="p-6 border border-slate-150 rounded-3xl bg-slate-50/30 flex flex-col gap-6">
+              <div className="flex justify-between items-center border-b border-slate-100 pb-3">
+                <h3 className="text-xs font-black text-slate-900 uppercase tracking-widest flex items-center gap-1.5">
+                  <FontAwesomeIcon icon={faStar} className="text-[#DC2626]" />
+                  <span>Client Reviews (Star Ratings)</span>
+                </h3>
+                <button
+                  type="button"
+                  onClick={addReview}
+                  className="text-xs font-bold text-[#DC2626] hover:text-[#991B1B] flex items-center gap-1 cursor-pointer"
+                >
+                  <FontAwesomeIcon icon={faPlus} />
+                  <span>Add Review</span>
+                </button>
+              </div>
+
+              {(newBlog.reviews || []).length === 0 ? (
+                <p className="text-slate-400 text-xs italic">No reviews added. User reviews boost conversion rates.</p>
+              ) : (
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                  {(newBlog.reviews || []).map((review, idx) => (
+                    <div key={idx} className="bg-white p-4 rounded-xl border border-slate-150 flex flex-col gap-3 relative shadow-3xs">
+                      <button
+                        type="button"
+                        onClick={() => removeReview(idx)}
+                        className="absolute top-2 right-2 w-6 h-6 rounded-full bg-slate-50 border border-slate-100 flex items-center justify-center text-slate-400 hover:text-red-500 cursor-pointer"
+                      >
+                        <FontAwesomeIcon icon={faTimes} className="text-[10px]" />
+                      </button>
+                      <div className="flex flex-col gap-2.5 pr-8">
+                        <div className="flex gap-2">
+                          <input
+                            type="text"
+                            placeholder="Reviewer Name"
+                            required
+                            value={review.name}
+                            onChange={(e) => handleReviewChange(idx, 'name', e.target.value)}
+                            className="w-full p-2 border border-slate-200 rounded-lg text-xs font-semibold focus:border-[#DC2626] focus:outline-none"
+                          />
+                          <select
+                            value={review.rating}
+                            onChange={(e) => handleReviewChange(idx, 'rating', parseInt(e.target.value))}
+                            className="w-24 p-2 border border-slate-200 rounded-lg text-xs font-bold text-[#DC2626] focus:border-[#DC2626] focus:outline-none"
+                          >
+                            <option value={5}>5 ★</option>
+                            <option value={4}>4 ★</option>
+                            <option value={3}>3 ★</option>
+                            <option value={2}>2 ★</option>
+                            <option value={1}>1 ★</option>
+                          </select>
+                        </div>
+                        <textarea
+                          placeholder="Review comments..."
+                          required
+                          rows={2}
+                          value={review.review}
+                          onChange={(e) => handleReviewChange(idx, 'review', e.target.value)}
+                          className="w-full p-2 border border-slate-200 rounded-lg text-[11px] font-medium focus:border-[#DC2626] focus:outline-none"
+                        />
+                      </div>
+                    </div>
+                  ))}
+                </div>
+              )}
+            </div>
+            
+            {/* Form Action Buttons Bottom */}
+            <div className="flex justify-end gap-3 pt-6 border-t border-slate-100">
+              <button
+                type="button"
+                onClick={handleCancelForm}
+                className="px-6 py-3 bg-white border border-slate-200 text-slate-600 rounded-xl font-bold text-xs cursor-pointer hover:bg-slate-50 transition-colors"
+              >
+                Cancel
+              </button>
+              <button
+                type="submit"
+                disabled={isSubmitting}
+                className="px-8 py-3 bg-[#DC2626] text-white rounded-xl font-black text-xs uppercase tracking-wider hover:bg-[#991B1B] disabled:opacity-50 cursor-pointer shadow-sm transition-colors"
+              >
+                {isSubmitting ? "Saving..." : "Save Blog Post"}
+              </button>
+            </div>
+          </motion.form>
+        )}
+      </AnimatePresence>
+    </div>
   );
 };
 

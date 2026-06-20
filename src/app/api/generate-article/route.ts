@@ -26,9 +26,11 @@ export async function POST(request: NextRequest) {
     apiKey: apiKey,
   });
 
+  const sanitizeText = (txt: string) => txt.replace(/—/g, "-").replace(/\u2014/g, "-");
+
   try {
     const body = await request.json();
-    const primaryKeyword = body.primaryKeyword || body.context;
+    const primaryKeyword = body.primaryKeyword || body.context || body.writeup;
     const secondaryKeyword = body.secondaryKeyword || body.secondaryKeywords;
 
     if (!primaryKeyword) {
@@ -45,8 +47,11 @@ export async function POST(request: NextRequest) {
           role: "system",
           content: `You are a professional legal SEO and AEO strategist.
 Generate an SEO-optimized H1 Title, engaging subtitle, meta title, meta description, and URL slug for a blog article on Legal Recovery.
-Primary Keyword: ${primaryKeyword}
+Primary Keyword/Context: ${primaryKeyword}
 Secondary Keywords: ${secondaryKeyword || ''}
+
+CRITICAL NEGATIVE CONSTRAINT:
+Under no circumstances should you include any em dashes (—) anywhere in your response. Always use normal hyphens (-), colons (:), commas, parentheses, or rewrite the sentence to avoid them.
 
 Return ONLY a JSON object with this exact structure:
 {
@@ -62,7 +67,7 @@ Return ONLY a JSON object with this exact structure:
       temperature: 0.7,
     });
 
-    const step1ResultStr = step1Completion.choices[0].message.content || "{}";
+    const step1ResultStr = sanitizeText(step1Completion.choices[0].message.content || "{}");
     const step1Result = JSON.parse(step1ResultStr);
 
     console.log(`[AI Generator Flow] Step 1 complete. Title: "${step1Result.title}"`);
@@ -71,7 +76,7 @@ Return ONLY a JSON object with this exact structure:
     // STEP 2: Generate Description (Complete body in HTML)
     const step2SystemPrompt = `
 You are a professional legal content writer and SEO expert. Write a fully human-written, SEO-optimized, exhaustive legal article body for Legal Recovery (https://www.legalrecovery.in/).
-Target Primary Keyword: ${primaryKeyword}
+Target Primary Keyword/Context: ${primaryKeyword}
 Secondary Keywords: ${secondaryKeyword || ''}
 Title: ${step1Result.title}
 Subtitle: ${step1Result.subtitle}
@@ -102,6 +107,9 @@ Discuss relevant Indian acts (Payment of Wages, Shops & Establishments, Gratuity
 - **Do NOT** include any title (H1) or subtitle, as they are already generated. Start directly with the introduction paragraphs.
 - **Do NOT** include any FAQs or Reviews in this content.
 - **Do NOT** wrap the response in markdown code blocks like \`\`\`html or \`\`\`. Output RAW HTML only. Start directly with the first HTML tag (e.g. <h2> or <p>).
+
+**CRITICAL NEGATIVE CONSTRAINT**:
+Under no circumstances should you include any em dashes (—) anywhere in your entire response. Always use normal hyphens (-), colons, commas, or parentheses if needed instead.
 `;
 
     const step2UserMessage = body.context && body.context !== primaryKeyword
@@ -117,7 +125,7 @@ Discuss relevant Indian acts (Payment of Wages, Shops & Establishments, Gratuity
       temperature: 0.8,
     });
 
-    let rawDescription = step2Completion.choices[0].message.content || "";
+    let rawDescription = sanitizeText(step2Completion.choices[0].message.content || "");
 
     // Clean up markdown fences at the root level
     let cleanedDescription = rawDescription.trim();
@@ -152,6 +160,9 @@ Article Subtitle: ${step1Result.subtitle}
 Article Description:
 ${cleanedDescription}
 
+CRITICAL NEGATIVE CONSTRAINT:
+Under no circumstances should you include any em dashes (—) anywhere in your response. Always use normal hyphens (-), colons (:), commas, parentheses, or rewrite the sentence to avoid them.
+
 Return ONLY a JSON object with this exact structure:
 {
   "faqs": [
@@ -172,7 +183,7 @@ Return ONLY a JSON object with this exact structure:
         temperature: 0.8,
       });
 
-      const step3ResultStr = step3Completion.choices[0].message.content || "{}";
+      const step3ResultStr = sanitizeText(step3Completion.choices[0].message.content || "{}");
       const step3Result = JSON.parse(step3ResultStr);
 
       faqs = step3Result.faqs || [];
