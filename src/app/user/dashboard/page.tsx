@@ -687,6 +687,7 @@ export default function UserDashboard() {
                     const isPending = t.status === "pending";
                     const isPartiallyDelivered = t.status === "partially_delivered";
                     const isFailed = t.status === "failed";
+                    const isOverdue = isScheduled && t.scheduledAt && new Date(t.scheduledAt) < new Date();
                     
                     return (
                       <div key={idx} className="flex-1 flex flex-row md:flex-col items-start md:items-center relative text-left md:text-center select-none w-full min-w-full md:min-w-[95px]">
@@ -772,9 +773,15 @@ export default function UserDashboard() {
                             </span>
                           )}
 
-                          {t.timeRemaining && isScheduled && (
-                            <span className="text-[7px] font-bold text-slate-400 leading-none mt-0.5">
-                              ({t.timeRemaining.split(" ")[0]}m left)
+                          {isOverdue && (
+                            <span className="text-[7px] font-bold text-orange-500 leading-none mt-0.5 max-w-[85px] text-center" title="Cron dispatch failed or delayed">
+                              (Tried at {new Date(t.scheduledAt).toLocaleTimeString("en-IN", {timeZone: "Asia/Kolkata", hour: '2-digit', minute:'2-digit'})} but delayed)
+                            </span>
+                          )}
+
+                          {!isOverdue && t.timeRemaining && isScheduled && (
+                            <span className="text-[7px] font-bold text-slate-400 leading-none mt-0.5 text-center">
+                              ({t.timeRemaining.replace(' remaining', '')} left)
                             </span>
                           )}
 
