@@ -62,6 +62,16 @@ const guideLinks = [
   { label: "Steps to Recover Security Deposit from Refusing Landlord", href: "/what-are-the-legal-steps-to-recover-a-security-deposit-from-a-landlord-who-is-refusing-to-return-it-in-india" },
   { label: "Can I Send a Legal Notice to Landlord for Deposit?", href: "/can-i-send-a-legal-notice-to-my-landlord-for-not-refunding-the-security-deposit-after-vacating-the-property" },
   { label: "How to Send a Legal Notice to Friend for Personal Loan", href: "/how-do-i-send-a-legal-notice-to-a-friend-who-is-not-repaying-my-personal-loan-in-india" },
+  { label: "Online Dispute Resolution in India: Legal Recovery", href: "/online-dispute-resolution-india" },
+  { label: "Can WhatsApp Chat be Used as Evidence in Money Recovery Case?", href: "/can-whatsapp-chat-be-used-as-evidence-in-money-recovery-case" },
+  { label: "Time Limit to File Money Recovery Case in India", href: "/time-limit-to-file-money-recovery-case-india" },
+  { label: "How to Recover Money Without Written Agreement", href: "/how-to-recover-money-without-written-agreement" },
+  { label: "Employer Withholding Relieving Letter: Legal Recovery", href: "/employer-withholding-relieving-letter-legal-action" },
+  { label: "What to do if Legal Notice is Ignored in India", href: "/what-to-do-if-legal-notice-is-ignored-india" },
+  { label: "How to Recover Full and Final Settlement from Employer", href: "/how-to-recover-full-and-final-settlement-from-employer" },
+  { label: "Civil Suit for Recovery of Money in India", href: "/civil-suit-for-recovery-of-money-india" },
+  { label: "How to Recover Money Without Going to Court in India", href: "/how-to-recover-money-without-going-to-court-india" },
+  { label: "Consolidate Multiple Cheque Bounce Cases from Same Transaction", href: "/multiple-cheque-bounce-cases-same-transaction" },
 ];
 
 export default function Footer() {

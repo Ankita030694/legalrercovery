@@ -79,7 +79,7 @@ const BlogsDashboard = () => {
     slug: "",
     faqs: [],
     reviews: [],
-    author: "Anuj Anand Malik", // Default author
+    author: "Rahul Verma", // Default author
   });
 
   const [uploading, setUploading] = useState(false);
@@ -162,7 +162,7 @@ const BlogsDashboard = () => {
             rating: r.rating || 5,
             review: r.reviewText || "",
           })),
-          author: docData.author || "Anuj Anand Malik",
+          author: docData.author || "Rahul Verma",
         }));
         
         // Sort blogs by created timestamp in descending order (newest first)
@@ -676,7 +676,7 @@ const BlogsDashboard = () => {
       slug: "",
       faqs: [],
       reviews: [],
-      author: "Anuj Anand Malik",
+      author: "Rahul Verma",
     });
     setImagePreview(null);
     setEditingBlogSlug(null);
@@ -768,7 +768,7 @@ const BlogsDashboard = () => {
                         slug: "",
                         faqs: [],
                         reviews: [],
-                        author: "Anuj Anand Malik",
+                        author: "Rahul Verma",
                       });
                       setImagePreview(null);
                     }
@@ -785,7 +785,7 @@ const BlogsDashboard = () => {
                       slug: "",
                       faqs: [],
                       reviews: [],
-                      author: "Anuj Anand Malik",
+                      author: "Rahul Verma",
                     });
                     setImagePreview(null);
                   }
@@ -1139,7 +1139,7 @@ const BlogsDashboard = () => {
                   onChange={handleInputChange}
                   className="p-3.5 border border-slate-200 rounded-xl focus:border-[#DC2626] focus:outline-none text-xs sm:text-sm font-semibold text-slate-700 bg-white"
                 >
-                  <option value="Anuj Anand Malik">Anuj Anand Malik</option>
+                  <option value="Rahul Verma">Rahul Verma</option>
                   <option value="Shrey Arora">Shrey Arora</option>
                   <option value="Adv. Ashish Bhay">Adv. Ashish Bhay</option>
                 </select>

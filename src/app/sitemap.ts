@@ -121,6 +121,16 @@ const STATIC_ROUTES: {
   { path: "/what-are-the-legal-steps-to-recover-a-security-deposit-from-a-landlord-who-is-refusing-to-return-it-in-india", changeFrequency: "weekly", priority: 0.85 },
   { path: "/can-i-send-a-legal-notice-to-my-landlord-for-not-refunding-the-security-deposit-after-vacating-the-property", changeFrequency: "weekly", priority: 0.85 },
   { path: "/how-do-i-send-a-legal-notice-to-a-friend-who-is-not-repaying-my-personal-loan-in-india", changeFrequency: "weekly", priority: 0.85 },
+  { path: "/online-dispute-resolution-india", changeFrequency: "weekly", priority: 0.8 },
+  { path: "/can-whatsapp-chat-be-used-as-evidence-in-money-recovery-case", changeFrequency: "weekly", priority: 0.8 },
+  { path: "/time-limit-to-file-money-recovery-case-india", changeFrequency: "weekly", priority: 0.8 },
+  { path: "/how-to-recover-money-without-written-agreement", changeFrequency: "weekly", priority: 0.8 },
+  { path: "/employer-withholding-relieving-letter-legal-action", changeFrequency: "weekly", priority: 0.8 },
+  { path: "/what-to-do-if-legal-notice-is-ignored-india", changeFrequency: "weekly", priority: 0.8 },
+  { path: "/how-to-recover-full-and-final-settlement-from-employer", changeFrequency: "weekly", priority: 0.8 },
+  { path: "/civil-suit-for-recovery-of-money-india", changeFrequency: "weekly", priority: 0.8 },
+  { path: "/how-to-recover-money-without-going-to-court-india", changeFrequency: "weekly", priority: 0.8 },
+  { path: "/multiple-cheque-bounce-cases-same-transaction", changeFrequency: "weekly", priority: 0.8 },
 ];
 
 async function getBlogEntries(): Promise<MetadataRoute.Sitemap> {
