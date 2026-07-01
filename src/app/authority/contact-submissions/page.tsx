@@ -161,8 +161,7 @@ export default function ContactSubmissions() {
     <motion.div
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
-      className="relative max-w-8xl mx-auto px-4 sm:px-6 lg:px-8 py-8 select-none text-left"
-      style={{ zoom: 0.8 }}
+      className="relative w-full max-w-full mx-auto px-4 sm:px-6 lg:px-8 py-8 select-none text-left"
     >
       {/* ── Header ── */}
       <div className="flex flex-col md:flex-row md:items-center justify-between gap-4 border-b border-[#E5E7EB]/50 pb-6 mb-6">
@@ -419,39 +418,7 @@ export default function ContactSubmissions() {
                                         </p>
                                       </div>
 
-                                      {/* Technical audit fields */}
-                                      <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-                                        <div className="bg-white border border-gray-200/60 p-4 rounded-xl shadow-sm text-left space-y-2">
-                                          <h6 className="font-black text-gray-850 uppercase tracking-wider text-[8.5px] border-b border-gray-50 pb-1 flex items-center gap-1.5">
-                                            <FontAwesomeIcon icon={faLaptop} className="text-slate-400" />
-                                            User Agent Client Details
-                                          </h6>
-                                          <span className="text-[10px] font-mono text-gray-500 break-words block leading-relaxed">
-                                            {item.userAgent || "Unknown User Agent"}
-                                          </span>
-                                        </div>
 
-                                        <div className="bg-white border border-gray-200/60 p-4 rounded-xl shadow-sm text-left space-y-2">
-                                          <h6 className="font-black text-gray-850 uppercase tracking-wider text-[8.5px] border-b border-gray-50 pb-1 flex items-center gap-1.5">
-                                            <FontAwesomeIcon icon={faNetworkWired} className="text-slate-400" />
-                                            Technical Audit Network Info
-                                          </h6>
-                                          <div className="space-y-1 text-xs">
-                                            <div className="flex justify-between text-slate-500">
-                                              <span>Source Reference:</span>
-                                              <span className="font-bold text-gray-700">{item.source}</span>
-                                            </div>
-                                            <div className="flex justify-between text-slate-500">
-                                              <span>IP Address:</span>
-                                              <span className="font-mono text-gray-700 font-bold">{item.ip || "Direct/Internal"}</span>
-                                            </div>
-                                            <div className="flex justify-between text-slate-500">
-                                              <span>Record ID:</span>
-                                              <span className="font-mono text-gray-500 text-[10px]">{item.id}</span>
-                                            </div>
-                                          </div>
-                                        </div>
-                                      </div>
                                     </div>
                                   </motion.div>
                                 </td>

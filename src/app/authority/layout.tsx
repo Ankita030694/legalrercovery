@@ -145,7 +145,7 @@ export default function AuthorityLayout({
                   key={item.href}
                   href={item.href}
                   onClick={() => setMobileMenuOpen(false)}
-                  className={`w-full flex items-center gap-3 px-4 py-3.5 text-[13.5px] font-bold rounded-xl transition-all duration-200 text-left focus:outline-none cursor-pointer
+                  className={`w-full flex items-center gap-3 px-4 py-3.5 text-base font-bold rounded-xl transition-all duration-200 text-left focus:outline-none cursor-pointer
                     ${isActive 
                       ? "bg-[#DC2626] text-white" 
                       : "text-slate-300 hover:bg-white/5 hover:text-white"}`}
@@ -166,14 +166,14 @@ export default function AuthorityLayout({
               {getInitials(adminName)}
             </div>
             <div className="flex flex-col text-left overflow-hidden">
-              <span className="text-[12px] font-black text-white leading-tight truncate">{adminName}</span>
-              <span className="text-[10px] text-slate-400 font-semibold leading-none mt-0.5 truncate">{adminEmail}</span>
+              <span className="text-sm font-black text-white leading-tight truncate">{adminName}</span>
+              <span className="text-xs text-slate-400 font-semibold leading-none mt-0.5 truncate">{adminEmail}</span>
             </div>
           </div>
 
           <button 
             onClick={handleSignOut}
-            className="w-full flex items-center justify-center gap-2.5 px-4 py-3 text-[13.5px] font-bold text-slate-400 hover:text-[#DC2626] hover:bg-white/5 rounded-xl transition-all cursor-pointer border border-white/10"
+            className="w-full flex items-center justify-center gap-2.5 px-4 py-3 text-base font-bold text-slate-400 hover:text-[#DC2626] hover:bg-white/5 rounded-xl transition-all cursor-pointer border border-white/10"
           >
             <LogOut className="w-4 h-4 shrink-0" />
             Sign Out
@@ -208,7 +208,7 @@ export default function AuthorityLayout({
                 <div key={item.href} className="relative w-full">
                   <Link
                     href={item.href}
-                    className={`w-full flex items-center gap-3.5 px-4 py-3.5 text-[13px] font-bold rounded-xl transition-all duration-200 text-left focus:outline-none cursor-pointer group
+                    className={`w-full flex items-center gap-3.5 px-4 py-3.5 text-base font-bold rounded-xl transition-all duration-200 text-left focus:outline-none cursor-pointer group
                       ${isActive 
                         ? "bg-[#DC2626] text-white shadow-[0_4px_12px_rgba(220,38,38,0.2)]" 
                         : "text-slate-300 hover:bg-white/5 hover:text-white"}`}
@@ -234,14 +234,14 @@ export default function AuthorityLayout({
               {getInitials(adminName)}
             </div>
             <div className="flex flex-col text-left overflow-hidden">
-              <span className="text-[12.5px] font-black text-white leading-tight truncate">{adminName}</span>
-              <span className="text-[10px] text-slate-400 font-bold leading-none mt-1 truncate">{adminEmail}</span>
+              <span className="text-sm font-black text-white leading-tight truncate">{adminName}</span>
+              <span className="text-xs text-slate-400 font-bold leading-none mt-1 truncate">{adminEmail}</span>
             </div>
           </div>
 
           <button 
             onClick={handleSignOut}
-            className="w-full flex items-center justify-center gap-2.5 px-4 py-3 text-[13px] font-bold text-slate-400 hover:text-[#DC2626] hover:bg-white/5 border border-white/10 hover:border-red-500/30 rounded-xl transition-all cursor-pointer"
+            className="w-full flex items-center justify-center gap-2.5 px-4 py-3 text-base font-bold text-slate-400 hover:text-[#DC2626] hover:bg-white/5 border border-white/10 hover:border-red-500/30 rounded-xl transition-all cursor-pointer"
           >
             <LogOut className="w-4 h-4 shrink-0" />
             Sign Out
@@ -274,7 +274,7 @@ export default function AuthorityLayout({
 
       {/* ── MAIN WORKSPACE CONTENT CONTAINER ── */}
       <main className="flex-1 lg:pl-[275px] pt-16 pb-16 lg:pt-0 lg:pb-0 min-h-screen flex flex-col overflow-y-auto">
-        <div className="flex-1 px-4 sm:px-6 lg:px-12 py-8 lg:py-10 max-w-7xl w-full mx-auto">
+        <div className={`flex-1 py-8 lg:py-10 w-full mx-auto ${['/authority/dispatch-logs', '/authority/transactions', '/authority/contact-submissions', '/authority/conversion-funnel'].includes(pathname) ? 'px-4' : 'px-4 sm:px-6 lg:px-12 max-w-7xl'}`}>
           {children}
         </div>
       </main>

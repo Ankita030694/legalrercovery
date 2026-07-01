@@ -176,7 +176,7 @@ export default function DispatchLogsPage() {
   };
 
   return (
-    <div className="relative max-w-8xl mx-auto select-none text-left p-2 sm:p-4" style={{ zoom: 0.8 }}>
+    <div className="relative w-full max-w-full mx-auto select-none text-left p-2 sm:p-4">
       {/* Header */}
       <div className="flex flex-col md:flex-row md:items-center justify-between gap-4 border-b border-[#E5E7EB]/50 pb-6 mb-8">
         <div>

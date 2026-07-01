@@ -245,38 +245,7 @@ export default function SuperAdminDashboard() {
               </div>
             </motion.div>
 
-            {/* Total Amount Recovered */}
-            <motion.div
-              initial={{ opacity: 0, y: 16 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ delay: 0.2 }}
-              className="relative bg-white rounded-3xl p-7 border border-gray-100 shadow-[0_10px_40px_rgba(0,0,0,0.03)] overflow-hidden group"
-            >
-              <div className="absolute -top-12 -right-12 w-40 h-40 bg-indigo-50 rounded-full blur-3xl opacity-60 pointer-events-none" />
 
-              <div className="flex items-start justify-between relative">
-                <div className="space-y-3">
-                  <span className="text-[10px] font-black text-slate-400 uppercase tracking-[0.15em]">
-                    Total Amount Recovered
-                  </span>
-                  <h2 className="text-3xl sm:text-4xl font-black text-[#111827] tracking-tight leading-none">
-                    <AnimatedNumber
-                      value={stats.totalRecovered}
-                      prefix="₹"
-                    />
-                  </h2>
-                  <p className="text-[11px] font-semibold text-slate-400 mt-1">
-                    Defaulter payments resolved ({stats.totalClaimed > 0 ? ((stats.totalRecovered / stats.totalClaimed) * 100).toFixed(1) : "0"}% recovery rate)
-                  </p>
-                </div>
-                <div className="w-14 h-14 rounded-2xl bg-indigo-50 border border-indigo-100 flex items-center justify-center shrink-0">
-                  <FontAwesomeIcon
-                    icon={faCoins}
-                    className="text-indigo-600 text-xl"
-                  />
-                </div>
-              </div>
-            </motion.div>
           </div>
 
           {/* ── Secondary Metric Cards ── */}
