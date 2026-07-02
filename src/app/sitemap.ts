@@ -117,7 +117,7 @@ const STATIC_ROUTES: {
   { path: "/how-to-recover-unpaid-salary-legally", changeFrequency: "weekly", priority: 0.85 },
   { path: "/legal-notice-to-recovery-my-loan-from-friend", changeFrequency: "weekly", priority: 0.85 },
   { path: "/what-evidence-should-a-freelancer-collect-to-strengthen-a-payment-recovery-case-against-a-client", changeFrequency: "weekly", priority: 0.85 },
-  { path: "/how-does-the-micro-small-and-medium-enterprises-act-help-freelancers-recover-overdue-payments-in-india", changeFrequency: "weekly", priority: 0.85 },
+  { path: "/msme-act-freelancer-payment-recovery", changeFrequency: "weekly", priority: 0.85 },
   { path: "/what-are-the-legal-steps-to-recover-a-security-deposit-from-a-landlord-who-is-refusing-to-return-it-in-india", changeFrequency: "weekly", priority: 0.85 },
   { path: "/can-i-send-a-legal-notice-to-my-landlord-for-not-refunding-the-security-deposit-after-vacating-the-property", changeFrequency: "weekly", priority: 0.85 },
   { path: "/how-do-i-send-a-legal-notice-to-a-friend-who-is-not-repaying-my-personal-loan-in-india", changeFrequency: "weekly", priority: 0.85 },

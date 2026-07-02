@@ -58,7 +58,7 @@ const guideLinks = [
   { label: "How Can a Freelancer Send a Legal Notice to a Client?", href: "/how-can-a-freelancer-send-a-legal-notice-to-a-client-who-has-not-paid-for-completed-work-in-india" },
   { label: "Can a Freelancer File a Case in a Consumer Forum?", href: "/can-a-freelancer-file-a-case-in-a-consumer-forum-or-civil-court-to-recover-payment-in-india" },
   { label: "What Evidence Should a Freelancer Collect for Recovery?", href: "/what-evidence-should-a-freelancer-collect-to-strengthen-a-payment-recovery-case-against-a-client" },
-  { label: "How Does the MSME Act Help Freelancers Recover Payments?", href: "/how-does-the-micro-small-and-medium-enterprises-act-help-freelancers-recover-overdue-payments-in-india" },
+  { label: "How Does the MSME Act Help Freelancers Recover Payments?", href: "/msme-act-freelancer-payment-recovery" },
   { label: "Steps to Recover Security Deposit from Refusing Landlord", href: "/what-are-the-legal-steps-to-recover-a-security-deposit-from-a-landlord-who-is-refusing-to-return-it-in-india" },
   { label: "Can I Send a Legal Notice to Landlord for Deposit?", href: "/can-i-send-a-legal-notice-to-my-landlord-for-not-refunding-the-security-deposit-after-vacating-the-property" },
   { label: "How to Send a Legal Notice to Friend for Personal Loan", href: "/how-do-i-send-a-legal-notice-to-a-friend-who-is-not-repaying-my-personal-loan-in-india" },

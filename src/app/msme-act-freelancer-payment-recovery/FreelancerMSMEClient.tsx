@@ -65,7 +65,7 @@ const breadcrumbSchema = {
       "@type": "ListItem",
       "position": 2,
       "name": "MSME Act Freelancer Guide",
-      "item": "https://www.legalrecovery.in/how-does-the-micro-small-and-medium-enterprises-act-help-freelancers-recover-overdue-payments-in-india"
+      "item": "https://www.legalrecovery.in/msme-act-freelancer-payment-recovery"
     }
   ]
 };
@@ -221,7 +221,7 @@ export default function FreelancerMSMEClient() {
   ];
 
   const breadcrumbItems = [
-    { label: "MSME Act Freelancer Guide", href: "/how-does-the-micro-small-and-medium-enterprises-act-help-freelancers-recover-overdue-payments-in-india" }
+    { label: "MSME Act Freelancer Guide", href: "/msme-act-freelancer-payment-recovery" }
   ];
 
   return (

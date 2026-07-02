@@ -17,7 +17,7 @@ export const metadata: Metadata = {
     "gig worker micro enterprise registration"
   ],
   alternates: {
-    canonical: 'https://www.legalrecovery.in/how-does-the-micro-small-and-medium-enterprises-act-help-freelancers-recover-overdue-payments-in-india',
+    canonical: 'https://www.legalrecovery.in/msme-act-freelancer-payment-recovery',
   },
 };
 
