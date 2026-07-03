@@ -55,16 +55,17 @@ export async function POST(req: NextRequest) {
       1. Defaulter Name: "${defaulterName}" (should be a plausible individual or business name, not gibberish, single letter, or a joke).
       2. Defaulter Address: "${address}" (should look like a plausible street, area, city, or pincode address, not a single word, placeholder, or gibberish).
       3. Defaulter Phone: "${phone}" (should be a standard 10-digit Indian number, not fake sequential/repeating numbers like "9999999999" or "1234567890").
-      4. Defaulter Phone 2 (Optional): "${phone2 || 'Not provided'}" (if provided, should be a standard 10-digit Indian number, not fake sequential/repeating numbers like "9999999999" or "1234567890", and must not equal Defaulter Phone).
+      4. Defaulter Phone 2 (Optional): "${phone2 || 'Not provided'}" (If empty or 'Not provided', completely ignore this field. Do not flag it. If provided, should be a standard 10-digit Indian number).
       5. Defaulter Email: "${email}" (should be a valid email format, not obviously fake/offensive domains or handles like "fuckyou@gmail.com").
-      6. Defaulter Email 2 (Optional): "${email2 || 'Not provided'}" (if provided, should be a valid email format, not obviously fake/offensive, and must not equal Defaulter Email).
+      6. Defaulter Email 2 (Optional): "${email2 || 'Not provided'}" (If empty or 'Not provided', completely ignore this field. Do not flag it. If provided, should be a valid email format).
       7. Stuck Amount: "${stuckAmount}" (should be a realistic, plausible outstanding dues amount. Values above ₹1,00,00,000 (1 Crore) are considered absurd and highly likely to be fake/placeholder entries).
-      8. Due Date: "${dueDate}" (should be a realistic past or near-present due date, not futuristic or decades in the past).
+      8. Due Date: "${dueDate}" (Any past date is 100% valid, even if it is years or decades ago. Only flag this as invalid if it is strictly in the future relative to Today's date).
       9. Police Station Name: "${policeStationName}" (should be a plausible location or sector name of a police station, e.g. "Gurugram Sector 56", not placeholder/gibberish).
       10. Police Station Address: "${policeStationAddress}" (should look like a plausible street or area location).
 
       **Validation Criteria**:
-      - If ANY field contains obvious gibberish (like "asdf", "zxccvb", "test1234"), profanity/abuse (e.g., "fuckyou@gmail.com"), obvious fake details ("Mickey Mouse", "Batman"), fake repeating digits ("9999999999"), or extreme nonsense placeholders/stuck amounts (like ₹99,99,99,999), classify it as INVALID.
+      - Ignore any fields marked as 'Not provided' or empty strings.
+      - If ANY provided field contains obvious gibberish (like "asdf", "zxccvb", "test1234"), profanity/abuse (e.g., "fuckyou@gmail.com"), obvious fake details ("Mickey Mouse", "Batman"), fake repeating digits ("9999999999"), or extreme nonsense placeholders/stuck amounts (like ₹99,99,99,999), classify it as INVALID.
       - Be reasonably lenient with formatting, spelling errors, or short valid Indian/international names and locations, but strictly catch absolute non-serious fake entries and random keyboard typing.
 
       **Return ONLY a valid JSON object with this exact structure**:
