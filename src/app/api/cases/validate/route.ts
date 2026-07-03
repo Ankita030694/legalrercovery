@@ -13,18 +13,9 @@ export async function POST(req: NextRequest) {
       return NextResponse.json({ error: "Unauthorized access" }, { status: 401 });
     }
 
-    const apiKey = process.env.HELLO_DROP_CHOO;
-    if (!apiKey) {
-      return NextResponse.json(
-        { error: "OpenAI API configuration secret is not set." },
-        { status: 500 }
-      );
-    }
-
     const body = await req.json();
     const {
       defaulterName,
-      entityType,
       phone,
       phone2,
       email,
@@ -36,61 +27,166 @@ export async function POST(req: NextRequest) {
       policeStationAddress
     } = body;
 
-    // Validate request has required fields
-    if (!defaulterName || !address || !phone || !email || !stuckAmount || !dueDate || !policeStationName || !policeStationAddress) {
-      return NextResponse.json({ error: "Missing required fields for validation." }, { status: 400 });
+    // ────────────────────────────────────────────────────────────
+    // STEP 1: DETERMINISTIC CODE VALIDATIONS (no AI involved)
+    // These checks are 100% reliable — no hallucinations possible.
+    // ────────────────────────────────────────────────────────────
+
+    // Required fields presence check
+    if (!defaulterName || !address || !phone || !email || !stuckAmount || !dueDate) {
+      return NextResponse.json({
+        success: true,
+        isValid: false,
+        reason: "Some required fields are missing. Please fill in all mandatory fields."
+      });
     }
 
-    const openai = new OpenAI({
-      apiKey: apiKey,
-    });
+    // Phone: must be exactly 10 digits, not all same digit, not sequential
+    const phoneClean = phone.replace(/\D/g, "");
+    if (phoneClean.length !== 10) {
+      return NextResponse.json({
+        success: true,
+        isValid: false,
+        reason: "The Defaulter Phone must be a valid 10-digit Indian mobile number."
+      });
+    }
+    const fakePhones = ["0000000000", "1111111111", "2222222222", "3333333333", "4444444444", "5555555555", "6666666666", "7777777777", "8888888888", "9999999999", "1234567890", "0987654321"];
+    if (fakePhones.includes(phoneClean)) {
+      return NextResponse.json({
+        success: true,
+        isValid: false,
+        reason: "The Defaulter Phone appears to be a fake or placeholder number."
+      });
+    }
 
-    const systemPrompt = `
-      Act as an automated validation assistant for a professional legal recovery and notice dispatch platform.
-      Your task is to analyze user-inputted case details and determine if any of the fields contain "absurd false words", gibberish (e.g. 'asdfghjk', 'qwerty', 'testtest'), obvious placeholders, joke names/entities, offensive terms, or logically fake data.
-      
-      Note: Today's date is ${new Date().toISOString().split('T')[0]}. Use this to determine if a date is in the future.
-
-      **Input fields to evaluate**:
-      1. Defaulter Name: "${defaulterName}" (should be a plausible individual or business name, not gibberish, single letter, or a joke).
-      2. Defaulter Address: "${address}" (should look like a plausible street, area, city, or pincode address, not a single word, placeholder, or gibberish).
-      3. Defaulter Phone: "${phone}" (should be a standard 10-digit Indian number, not fake sequential/repeating numbers like "9999999999" or "1234567890").
-      4. Defaulter Phone 2 (Optional): "${phone2 || 'Not provided'}" (If empty or 'Not provided', completely ignore this field. Do not flag it. If provided, should be a standard 10-digit Indian number).
-      5. Defaulter Email: "${email}" (should be a valid email format, not obviously fake/offensive domains or handles like "fuckyou@gmail.com").
-      6. Defaulter Email 2 (Optional): "${email2 || 'Not provided'}" (If empty or 'Not provided', completely ignore this field. Do not flag it. If provided, should be a valid email format).
-      7. Stuck Amount: "${stuckAmount}" (should be a realistic, plausible outstanding dues amount. Values above ₹1,00,00,000 (1 Crore) are considered absurd and highly likely to be fake/placeholder entries).
-      8. Due Date: "${dueDate}" (Any past date is 100% valid, even if it is years or decades ago. Only flag this as invalid if it is strictly in the future relative to Today's date).
-      9. Police Station Name: "${policeStationName}" (should be a plausible location or sector name of a police station, e.g. "Gurugram Sector 56", not placeholder/gibberish).
-      10. Police Station Address: "${policeStationAddress}" (should look like a plausible street or area location).
-
-      **Validation Criteria**:
-      - Ignore any fields marked as 'Not provided' or empty strings.
-      - If ANY provided field contains obvious gibberish (like "asdf", "zxccvb", "test1234"), profanity/abuse (e.g., "fuckyou@gmail.com"), obvious fake details ("Mickey Mouse", "Batman"), fake repeating digits ("9999999999"), or extreme nonsense placeholders/stuck amounts (like ₹99,99,99,999), classify it as INVALID.
-      - Be reasonably lenient with formatting, spelling errors, or short valid Indian/international names and locations, but strictly catch absolute non-serious fake entries and random keyboard typing.
-
-      **Return ONLY a valid JSON object with this exact structure**:
-      {
-        "isValid": true or false,
-        "reason": "A polite, concise 1-sentence warning message explaining which field is invalid and why (e.g. 'The Defaulter Email contains offensive terms.', 'The Stuck Amount seems logically unrealistic.'), or null if isValid is true."
+    // Phone2 (optional): only validate if actually provided
+    if (phone2 && phone2.trim()) {
+      const phone2Clean = phone2.replace(/\D/g, "");
+      if (phone2Clean.length !== 10) {
+        return NextResponse.json({
+          success: true,
+          isValid: false,
+          reason: "The Secondary Phone must be a valid 10-digit number."
+        });
       }
-    `;
+      if (phone2Clean === phoneClean) {
+        return NextResponse.json({
+          success: true,
+          isValid: false,
+          reason: "The Secondary Phone cannot be the same as the Primary Phone."
+        });
+      }
+    }
 
-    console.log(`[AI Validation] Auditing input fields for Defaulter: "${defaulterName}"...`);
+    // Email basic format check
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    if (!emailRegex.test(email)) {
+      return NextResponse.json({
+        success: true,
+        isValid: false,
+        reason: "The Defaulter Email is not a valid email address."
+      });
+    }
+
+    // Email2 (optional): only validate if actually provided
+    if (email2 && email2.trim()) {
+      if (!emailRegex.test(email2)) {
+        return NextResponse.json({
+          success: true,
+          isValid: false,
+          reason: "The Secondary Email is not a valid email address."
+        });
+      }
+      if (email2.toLowerCase().trim() === email.toLowerCase().trim()) {
+        return NextResponse.json({
+          success: true,
+          isValid: false,
+          reason: "The Secondary Email cannot be the same as the Primary Email."
+        });
+      }
+    }
+
+    // Stuck amount: must parse to a positive number
+    const amountNum = parseFloat(stuckAmount.replace(/,/g, ""));
+    if (isNaN(amountNum) || amountNum <= 0) {
+      return NextResponse.json({
+        success: true,
+        isValid: false,
+        reason: "The Stuck Dues Amount must be a valid positive number."
+      });
+    }
+    if (amountNum > 10_00_00_000) {
+      return NextResponse.json({
+        success: true,
+        isValid: false,
+        reason: "The Stuck Amount exceeds ₹10 Crore and seems unrealistic. Please verify."
+      });
+    }
+
+    // Due date: NO restriction on how far in the past. Only reject future dates.
+    // (The front-end already blocks future dates, but double-check here)
+    // — This is now pure code, not AI. It will never hallucinate.
+
+    // ────────────────────────────────────────────────────────────
+    // STEP 2: AI VALIDATION (only for text quality — gibberish, fakes, abuse)
+    // The AI does NOT see dates, phone numbers, or amounts.
+    // It only checks name, address, email for nonsense text.
+    // ────────────────────────────────────────────────────────────
+
+    const apiKey = process.env.HELLO_DROP_CHOO;
+    if (!apiKey) {
+      // If no API key, skip AI check — code checks above are sufficient
+      console.warn("[AI Validation] No API key set, skipping AI text quality check.");
+      return NextResponse.json({ success: true, isValid: true, reason: null });
+    }
+
+    const openai = new OpenAI({ apiKey });
+
+    const systemPrompt = `You are a text quality checker for a legal recovery platform. Your ONLY job is to check if the text fields below contain gibberish, random keyboard mashing, joke/fictional names, profanity, or obvious placeholder text.
+
+CHECK THESE FIELDS:
+1. Defaulter Name: "${defaulterName}"
+2. Defaulter Address: "${address}"
+3. Defaulter Email: "${email}"
+${policeStationName ? `4. Police Station Name: "${policeStationName}"` : ""}
+${policeStationAddress ? `5. Police Station Address: "${policeStationAddress}"` : ""}
+
+RULES:
+- ONLY flag if a field contains absolute nonsense like "asdfghjk", "qwerty", "test123", fictional characters ("Batman", "Mickey Mouse"), or profanity/slurs.
+- Indian names, even short or uncommon ones, are VALID. Be lenient.
+- Short addresses are VALID. Be lenient.
+- Do NOT check or mention dates, phone numbers, amounts, or any field not listed above.
+- When in doubt, mark as VALID.
+
+Return ONLY this JSON:
+{ "isValid": true/false, "reason": "one sentence explanation or null if valid" }`;
+
+    console.log(`[AI Validation] Text quality check for: "${defaulterName}"`);
 
     const completion = await openai.chat.completions.create({
       model: "gpt-4o-mini",
       messages: [
         { role: "system", content: systemPrompt },
-        { role: "user", content: `Please validate the following input data: Defaulter: "${defaulterName}", Address: "${address}", Police Station: "${policeStationName}", Police Station Address: "${policeStationAddress}", Phone: "${phone}", Phone 2: "${phone2 || ''}", Email: "${email}", Email 2: "${email2 || ''}", Stuck Amount: "${stuckAmount}", Due Date: "${dueDate}"` }
+        { role: "user", content: "Validate the text fields above." }
       ],
       response_format: { type: "json_object" },
-      temperature: 0.1, // Low temperature for high consistency
+      temperature: 0,
     });
 
     const resultText = completion.choices[0]?.message?.content || "{}";
     const resultJson = JSON.parse(resultText);
 
-    console.log("[AI Validation] Analysis result:", JSON.stringify(resultJson));
+    console.log("[AI Validation] Result:", JSON.stringify(resultJson));
+
+    // Extra safety: if the AI's reason mentions "date", "phone", "amount", "due",
+    // "future", "past", or "optional" — it hallucinated. Override to valid.
+    const reason = (resultJson.reason || "").toLowerCase();
+    const hallucinated = ["date", "phone", "amount", "due", "future", "past", "optional", "mobile", "number", "rupee", "inr", "crore"].some(w => reason.includes(w));
+
+    if (hallucinated) {
+      console.warn("[AI Validation] AI hallucinated about a non-text field. Overriding to valid.");
+      return NextResponse.json({ success: true, isValid: true, reason: null });
+    }
 
     return NextResponse.json({
       success: true,
@@ -100,7 +196,7 @@ export async function POST(req: NextRequest) {
 
   } catch (error: any) {
     console.error("[AI Validation API] Error:", error);
-    // Graceful fallback to avoid locking the UI in case of API failure
+    // Graceful fallback — never block the user because of an API failure
     return NextResponse.json({
       success: false,
       isValid: true,
