@@ -48,6 +48,8 @@ export async function POST(req: NextRequest) {
     const systemPrompt = `
       Act as an automated validation assistant for a professional legal recovery and notice dispatch platform.
       Your task is to analyze user-inputted case details and determine if any of the fields contain "absurd false words", gibberish (e.g. 'asdfghjk', 'qwerty', 'testtest'), obvious placeholders, joke names/entities, offensive terms, or logically fake data.
+      
+      Note: Today's date is ${new Date().toISOString().split('T')[0]}. Use this to determine if a date is in the future.
 
       **Input fields to evaluate**:
       1. Defaulter Name: "${defaulterName}" (should be a plausible individual or business name, not gibberish, single letter, or a joke).
