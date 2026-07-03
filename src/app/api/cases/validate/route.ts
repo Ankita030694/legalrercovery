@@ -78,7 +78,7 @@ export async function POST(req: NextRequest) {
       model: "gpt-4o-mini",
       messages: [
         { role: "system", content: systemPrompt },
-        { role: "user", content: `Please validate the following input data: Defaulter: "${defaulterName}", Address: "${address}", Police Station: "${policeStationName}", Police Station Address: "${policeStationAddress}", Phone 2: "${phone2 || ''}", Email 2: "${email2 || ''}"` }
+        { role: "user", content: `Please validate the following input data: Defaulter: "${defaulterName}", Address: "${address}", Police Station: "${policeStationName}", Police Station Address: "${policeStationAddress}", Phone: "${phone}", Phone 2: "${phone2 || ''}", Email: "${email}", Email 2: "${email2 || ''}", Stuck Amount: "${stuckAmount}", Due Date: "${dueDate}"` }
       ],
       response_format: { type: "json_object" },
       temperature: 0.1, // Low temperature for high consistency
