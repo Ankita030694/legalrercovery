@@ -3,8 +3,14 @@ import { cookies } from "next/headers";
 import { redirect } from "next/navigation";
 import { CheckCircle, ArrowRight, FileText } from "lucide-react";
 import Link from "next/link";
+import AutoLogin from "./AutoLogin";
 
-export default async function PaymentSuccessPage() {
+export default async function PaymentSuccessPage(props: {
+  searchParams: Promise<{ [key: string]: string | string[] | undefined }>
+}) {
+  const searchParams = await props.searchParams;
+  const autoLoginToken = searchParams?.token as string | undefined;
+  
   const cookieStore = await cookies();
   const token = cookieStore.get("payu_auth_token")?.value;
 
@@ -40,6 +46,8 @@ export default async function PaymentSuccessPage() {
       </div>
 
       <div className="bg-white rounded-3xl p-8 sm:p-12 w-full max-w-xl text-center shadow-[0_20px_50px_rgba(16,185,129,0.1)] relative z-10 border border-emerald-100">
+        
+        {autoLoginToken && <AutoLogin token={autoLoginToken} />}
         
         <div className="w-20 h-20 bg-emerald-100 text-emerald-600 rounded-full flex items-center justify-center mx-auto mb-6 shadow-inner border-4 border-white">
           <CheckCircle className="w-10 h-10" />

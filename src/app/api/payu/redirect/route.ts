@@ -65,6 +65,7 @@ export async function POST(req: NextRequest) {
     }
 
     let targetPath = "/payment-failure";
+    let tokenParam = "";
     
     // Some payment gateways use specific status strings for cancellations
     if (status === "cancel" || status === "userCancelled") {
@@ -102,6 +103,9 @@ export async function POST(req: NextRequest) {
             const amtPaid = oppCount * PRICE_PER_OPPOSITION;
 
             // Upsert details into the main users collection
+            const autoLoginToken = crypto.randomBytes(32).toString('hex');
+            tokenParam = `?token=${autoLoginToken}`;
+
             await db.collection("users").updateOne(
               { phone: pendingPaymentUser.phone },
               {
@@ -115,7 +119,9 @@ export async function POST(req: NextRequest) {
                   isPaid: true,
                   payuTxnId: txnid,
                   paymentDate: new Date(),
-                  updatedAt: new Date()
+                  updatedAt: new Date(),
+                  autoLoginToken,
+                  autoLoginTokenExpires: new Date(Date.now() + 15 * 60 * 1000) // 15 mins
                 },
                 $setOnInsert: {
                   createdAt: new Date()
@@ -178,8 +184,8 @@ export async function POST(req: NextRequest) {
     const url = req.nextUrl.clone();
     url.pathname = targetPath;
     
-    // Clear any search params to keep the URL clean
-    url.search = "";
+    // Set any search params like the auto-login token
+    url.search = tokenParam;
 
     const response = NextResponse.redirect(url, 302);
 

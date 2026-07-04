@@ -12,6 +12,7 @@ export const authOptions: NextAuthOptions = {
         otp: { label: "OTP", type: "text" },
         email: { label: "Email", type: "email", placeholder: "admin@example.com" },
         password: { label: "Password", type: "password" },
+        token: { label: "Token", type: "text" },
       },
       async authorize(credentials) {
         // --- 1. User Login via Phone OTP ---
@@ -61,7 +62,34 @@ export const authOptions: NextAuthOptions = {
           return null;
         }
 
-        // --- 2. Admin Login via Email/Password ---
+        // --- 2. User Login via Auto-Login Token ---
+        if (credentials?.token) {
+          try {
+            const { db } = await getDbAndBucket("fs");
+            const user = await db.collection("users").findOne({ autoLoginToken: credentials.token });
+            if (user && user.autoLoginTokenExpires && new Date() < new Date(user.autoLoginTokenExpires)) {
+               // Clear token to prevent reuse and update last login timestamp
+               await db.collection("users").updateOne(
+                 { _id: user._id }, 
+                 { 
+                   $unset: { autoLoginToken: "", autoLoginTokenExpires: "" },
+                   $set: { lastLoginAt: new Date() }
+                 }
+               );
+               return {
+                  id: user._id.toString(),
+                  email: user.email,
+                  name: user.name || "User",
+                  role: "user",
+               };
+            }
+          } catch(e) {
+            console.error("NextAuth token login MongoDB query error:", e);
+          }
+          return null;
+        }
+
+        // --- 3. Admin Login via Email/Password ---
         if (!credentials?.email || !credentials?.password) {
           return null;
         }
