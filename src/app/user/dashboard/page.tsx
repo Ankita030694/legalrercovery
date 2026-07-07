@@ -198,6 +198,8 @@ export default function UserDashboard() {
     }
   };
 
+
+
   // Initialize and load cases from MongoDB
   useEffect(() => {
     fetchCases();
@@ -302,6 +304,31 @@ export default function UserDashboard() {
     } finally {
       setIsStopping(false);
       setConfirmStopCaseId(null);
+    }
+  };
+
+  const [isDeleting, setIsDeleting] = useState<Record<string, boolean>>({});
+
+  const handleDeleteCase = async (caseId: string) => {
+    if (!confirm("Are you sure you want to completely delete this record? This action cannot be undone.")) return;
+    setIsDeleting((prev) => ({ ...prev, [caseId]: true }));
+    try {
+      const response = await fetch("/api/cases", {
+        method: "DELETE",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ id: caseId }),
+      });
+      if (!response.ok) {
+        const errData = await response.json();
+        throw new Error(errData.error || "Failed to delete case.");
+      }
+      await fetchCases();
+      window.dispatchEvent(new Event("lr_cases_updated"));
+    } catch (err: any) {
+      console.error("Error deleting case:", err);
+      alert(err.message || "Failed to delete case.");
+    } finally {
+      setIsDeleting((prev) => ({ ...prev, [caseId]: false }));
     }
   };
 
@@ -426,6 +453,8 @@ export default function UserDashboard() {
                   </button>
                 </div>
               </div>
+
+
 
               <button
                 onClick={handleTriggerSpecialDispatch}
@@ -616,6 +645,7 @@ export default function UserDashboard() {
                     <span>📧 {c.email}</span>
                     <span>📞 {c.phone}</span>
                     <span>📍 {c.address}</span>
+                    {c.ccEmails && <span className="text-[#DC2626]" title={c.ccEmails}>CC'd: {c.ccEmails}</span>}
                   </div>
                 </div>
 
@@ -666,6 +696,15 @@ export default function UserDashboard() {
                         Record Recovery
                       </button>
                     )}
+
+                    <button
+                      onClick={() => handleDeleteCase(c.id)}
+                      disabled={isDeleting[c.id]}
+                      className="px-4 py-2 text-xs font-black text-slate-500 bg-slate-100 border border-slate-200 hover:bg-slate-200 hover:text-slate-700 hover:border-slate-300 rounded-xl transition-all cursor-pointer focus:outline-none flex items-center justify-center gap-1"
+                      title="Delete Record"
+                    >
+                      {isDeleting[c.id] ? "..." : "Delete"}
+                    </button>
                   </div>
                 </div>
               </div>

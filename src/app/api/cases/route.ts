@@ -346,3 +346,50 @@ export async function PATCH(req: NextRequest) {
     return NextResponse.json({ error: "Internal server error" }, { status: 500 });
   }
 }
+
+
+/**
+ * DELETE /api/cases - Deletes a case from the database.
+ * Restricts updates strictly to the owning user.
+ */
+export async function DELETE(req: NextRequest) {
+  const session = await getServerSession(authOptions);
+  if (!session || !(session.user as any).id) {
+    return NextResponse.json({ error: "Unauthorized. Please log in first." }, { status: 401 });
+  }
+
+  try {
+    const userId = new ObjectId((session.user as any).id);
+    const body = await req.json();
+    const { id } = body;
+
+    if (!id) {
+      return NextResponse.json({ error: "Case ID is required." }, { status: 400 });
+    }
+
+    const { db } = await getDbAndBucket("fs");
+
+    const existingCase = await db.collection("cases").findOne({
+      _id: new ObjectId(id),
+      userId: userId
+    });
+
+    if (!existingCase) {
+      return NextResponse.json({ error: "Case not found or access denied." }, { status: 404 });
+    }
+
+    await db.collection("cases").deleteOne({
+      _id: new ObjectId(id),
+      userId: userId
+    });
+
+    return NextResponse.json({
+      success: true,
+      message: "Case successfully deleted."
+    });
+
+  } catch (error: any) {
+    console.error("DELETE Case API Error:", error);
+    return NextResponse.json({ error: "Internal server error" }, { status: 500 });
+  }
+}

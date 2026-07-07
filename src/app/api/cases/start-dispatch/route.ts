@@ -90,6 +90,7 @@ export async function POST(req: NextRequest) {
         clientAddress: complainantAddress,
         invoiceNo: caseDoc.invoiceNo,
         invoiceDate: caseDoc.invoiceDate,
+        invoices: caseDoc.invoices,
         noticeRef: `${caseDoc.caseId}-N1`,
         isSpecialUser: isSpecialUser
       });
@@ -152,8 +153,13 @@ export async function POST(req: NextRequest) {
     }
 
     const clientEmail = caseDoc.clientEmail || clientUser.email || caseDoc.clientEmail;
+    let combinedCcEmails = clientEmail || "";
+    if (caseDoc.ccEmails) {
+      combinedCcEmails = combinedCcEmails ? `${combinedCcEmails},${caseDoc.ccEmails}` : caseDoc.ccEmails;
+    }
+
     const [emailSent, watiResults] = await Promise.all([
-      sendNoticeEmail(toEmails, emailSubject, emailBody, pdfBuffer, pdfFilename, clientEmail),
+      sendNoticeEmail(toEmails, emailSubject, emailBody, pdfBuffer, pdfFilename, combinedCcEmails),
       Promise.all(watiPromises)
     ]);
 

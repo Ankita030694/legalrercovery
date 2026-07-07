@@ -16,6 +16,7 @@ export interface RecoveryNoticeWeek2Data {
   isSpecialUser?: boolean
   invoiceNo?: string
   invoiceDate?: string
+  invoices?: { invoiceNo: string; invoiceDate: string; amount: number }[]
 }
 
 export function fillWeek2NoticeTemplate(data: RecoveryNoticeWeek2Data): string {
@@ -36,6 +37,7 @@ export function fillWeek2NoticeTemplate(data: RecoveryNoticeWeek2Data): string {
     isSpecialUser = false,
     invoiceNo,
     invoiceDate,
+    invoices,
   } = data
 
   // Convert amount to words helper
@@ -57,9 +59,46 @@ export function fillWeek2NoticeTemplate(data: RecoveryNoticeWeek2Data): string {
   }
 
   const pendingWords = amountToWords(amountPending)
-  const invoiceSuffix = (invoiceNo && invoiceNo.trim())
-    ? ` against Invoice No: <strong>${invoiceNo.trim()}</strong>${invoiceDate && invoiceDate.trim() ? ` dated <strong>${invoiceDate.trim()}</strong>` : ""}`
-    : "";
+  let invoiceSuffix = "";
+  if (invoices && invoices.length > 0) {
+    invoiceSuffix = ` against Invoices mentioned in Annexure - A`;
+  } else if (invoiceNo && invoiceNo.trim()) {
+    invoiceSuffix = ` against Invoice No: <strong>${invoiceNo.trim()}</strong>${invoiceDate && invoiceDate.trim() ? ` dated <strong>${invoiceDate.trim()}</strong>` : ""}`;
+  }
+
+
+  let invoicesTableHTML = "";
+  if (invoices && invoices.length > 0) {
+    let rows = invoices.map((inv, idx) => {
+      return `
+        <tr>
+          <td style="border: 1px solid #000; padding: 4px; text-align: center;">${idx + 1}</td>
+          <td style="border: 1px solid #000; padding: 4px; text-align: center;">${inv.invoiceNo || "-"}</td>
+          <td style="border: 1px solid #000; padding: 4px; text-align: center;">${inv.invoiceDate || "-"}</td>
+          <td style="border: 1px solid #000; padding: 4px; text-align: right;">Rs. ${inv.amount.toLocaleString("en-IN")}</td>
+        </tr>
+      `;
+    }).join("");
+
+    invoicesTableHTML = `
+      <div style="page-break-before: always; margin-top: 20px;">
+        <h3 style="text-align: center; margin-bottom: 10px; text-decoration: underline;">Annexure - A</h3>
+        <table style="width: 100%; border-collapse: collapse; margin-bottom: 20px; font-size: 10.5pt;">
+          <thead>
+            <tr>
+              <th style="border: 1px solid #000; padding: 6px; background: #f0f0f0;">S.No.</th>
+              <th style="border: 1px solid #000; padding: 6px; background: #f0f0f0;">Invoice No.</th>
+              <th style="border: 1px solid #000; padding: 6px; background: #f0f0f0;">Date</th>
+              <th style="border: 1px solid #000; padding: 6px; background: #f0f0f0;">Amount</th>
+            </tr>
+          </thead>
+          <tbody>
+            ${rows}
+          </tbody>
+        </table>
+      </div>
+    `;
+  }
 
   return `<!DOCTYPE html>
 <html lang="en">
@@ -323,7 +362,7 @@ export function fillWeek2NoticeTemplate(data: RecoveryNoticeWeek2Data): string {
   <!-- Body -->
   <div class="notice-body">
 
-    <p>Under instructions and authority from our client <strong>${complainantName}</strong>, residing/having office at <strong>${complainantAddress}</strong>, we hereby issue the present Second and Final Legal Notice calling upon you to immediately clear the outstanding dues/claim amounting to <strong>INR ${amountPending}/- (Rupees ${pendingWords} Only)</strong> payable towards our client arising out of transactions, services, agreements, commitments, business dealings, or financial obligations undertaken by you.</p>
+    <p>Under instructions and authority from our client <strong>${complainantName}</strong>, residing/having office at <strong>${complainantAddress}</strong>, we hereby issue the present Second and Final Legal Notice calling upon you to immediately clear the outstanding dues/claim amounting to <strong>INR ${amountPending}/- (Rupees ${pendingWords} Only)</strong> as mentioned in Annexure - A payable towards our client arising out of transactions, services, agreements, commitments, business dealings, or financial obligations undertaken by you.</p>
 
     <p>Despite repeated reminders, communications, and an earlier legal notice served upon you, you have failed to regularize the matter or provide any satisfactory response. Your conduct clearly reflects deliberate negligence, avoidance, and non-compliance towards lawful obligations owed to our client.</p>
 
@@ -348,6 +387,8 @@ export function fillWeek2NoticeTemplate(data: RecoveryNoticeWeek2Data): string {
     <p>A copy of this Notice has been preserved in our office for record and future course of action. You are hereby advised to preserve a copy of this notice, as the same may be required to be produced before the appropriate Court of Law and/or competent authority as and when required.</p>
 
   </div>
+
+  ${invoicesTableHTML}
 
   <!-- Signature Block with Stamp right beside the signature -->
   <div class="signature-block">

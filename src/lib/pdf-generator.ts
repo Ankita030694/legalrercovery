@@ -56,6 +56,7 @@ export interface PDFGeneratorParams {
   // Invoice Details
   invoiceNo?: string;
   invoiceDate?: string;
+  invoices?: { invoiceNo: string; invoiceDate: string; amount: number; dueDate?: string }[];
 }
 
 // --- Letterhead Header and Cities Footer Draw Helpers ---
@@ -581,6 +582,84 @@ class NoticePDFWriter {
 
     this.currentY -= 10;
   }
+  writeInvoiceTable(invoices: { invoiceNo: string; invoiceDate: string; amount: number; dueDate?: string }[], size: number = 10.5) {
+    if (this.currentY < 150) {
+      this.addNewPage();
+    }
+
+    this.currentY -= 15;
+
+    // Title
+    const titleText = "Annexure - A";
+    const titleWidth = this.fontBold.widthOfTextAtSize(titleText, 11.5);
+    this.currentPage.drawText(titleText, {
+      x: (595.276 - titleWidth) / 2,
+      y: this.currentY,
+      size: 11.5,
+      font: this.fontBold,
+    });
+
+    this.currentY -= 4;
+
+    // Underline
+    this.currentPage.drawLine({
+      start: { x: 50, y: this.currentY },
+      end: { x: 595.276 - 50, y: this.currentY },
+      thickness: 1,
+      color: rgb(0, 0, 0),
+    });
+
+    this.currentY -= 16;
+
+    // Headers
+    const col1 = 50;
+    const col2 = 90;
+    const col3 = 200;
+    const col4 = 310;
+    const col5 = 420;
+
+    this.currentPage.drawText("S.No.", { x: col1, y: this.currentY, size, font: this.fontBold });
+    this.currentPage.drawText("Invoice No.", { x: col2, y: this.currentY, size, font: this.fontBold });
+    this.currentPage.drawText("Date", { x: col3, y: this.currentY, size, font: this.fontBold });
+    this.currentPage.drawText("Due Date", { x: col4, y: this.currentY, size, font: this.fontBold });
+    this.currentPage.drawText("Amount", { x: col5, y: this.currentY, size, font: this.fontBold });
+
+    this.currentY -= size * 1.5;
+
+    let idx = 1;
+    let totalAmount = 0;
+    for (const inv of invoices) {
+      if (this.currentY < 65) {
+        this.addNewPage();
+      }
+      this.currentPage.drawText(String(idx) + ".", { x: col1, y: this.currentY, size, font: this.fontRegular });
+      this.currentPage.drawText(inv.invoiceNo || "-", { x: col2, y: this.currentY, size, font: this.fontRegular });
+      this.currentPage.drawText(inv.invoiceDate || "-", { x: col3, y: this.currentY, size, font: this.fontRegular });
+      this.currentPage.drawText(inv.dueDate || "-", { x: col4, y: this.currentY, size, font: this.fontRegular });
+      this.currentPage.drawText("Rs. " + Number(inv.amount).toLocaleString("en-IN"), { x: col5, y: this.currentY, size, font: this.fontRegular });
+      
+      totalAmount += Number(inv.amount);
+      this.currentY -= size * 1.5;
+      idx++;
+    }
+
+    // Total Row
+    if (this.currentY < 65) {
+      this.addNewPage();
+    }
+    
+    this.currentPage.drawLine({
+      start: { x: col5, y: this.currentY + 12 },
+      end: { x: 595.276 - 50, y: this.currentY + 12 },
+      thickness: 0.5,
+      color: rgb(0, 0, 0),
+    });
+
+    this.currentPage.drawText("Total:", { x: col4, y: this.currentY, size, font: this.fontBold });
+    this.currentPage.drawText("Rs. " + totalAmount.toLocaleString("en-IN"), { x: col5, y: this.currentY, size, font: this.fontBold });
+
+    this.currentY -= 10;
+  }
 }
 
 // --- Main Programmatic PDF Generator ---
@@ -599,9 +678,12 @@ export async function generateNoticePDFBuffer(params: PDFGeneratorParams): Promi
     step
   } = params;
 
-  const invoiceSuffix = (params.invoiceNo && params.invoiceNo.trim())
-    ? ` against Invoice No: ${params.invoiceNo.trim()}${params.invoiceDate && params.invoiceDate.trim() ? ` dated ${params.invoiceDate.trim()}` : ""}`
-    : "";
+  let invoiceSuffix = "";
+  if (params.invoices && params.invoices.length > 0) {
+    invoiceSuffix = ` against Invoices mentioned in Annexure - A`;
+  } else if (params.invoiceNo && params.invoiceNo.trim()) {
+    invoiceSuffix = ` against Invoice No: ${params.invoiceNo.trim()}${params.invoiceDate && params.invoiceDate.trim() ? ` dated ${params.invoiceDate.trim()}` : ""}`;
+  }
 
   const pdfDoc = await PDFDocument.create();
   
@@ -683,7 +765,7 @@ export async function generateNoticePDFBuffer(params: PDFGeneratorParams): Promi
     // Body text
     writer.writeParagraph(`Under instructions from and on behalf of our client **${params.clientName || 'Tech AMA'}**, residing at **${params.clientAddress || 'Delhi, India'}**, we hereby call upon you to address and resolve the pending amount/claim arising out of dealings, transactions, services, agreements, commitments, or obligations between you and our client.`, 10.5);
 
-    writer.writeParagraph(`It has been informed to us that despite repeated requests, reminders, and communications made by our client, the matter remains unresolved and an amount of **INR ${formattedAmount}/- (Rupees ${pendingWords})** is still due/pending towards our client.`, 10.5);
+    writer.writeParagraph(`It has been informed to us that despite repeated requests, reminders, and communications made by our client, the matter remains unresolved and an amount of **INR ${formattedAmount}/- (Rupees ${pendingWords})** as mentioned in **Annexure - A** is still due/pending towards our client.`, 10.5);
 
     writer.writeParagraph(`Our client has acted in good faith and fulfilled their part of obligations; however, the pending dues/claim have not been settled by you till date.`, 10.5);
 
@@ -699,6 +781,9 @@ export async function generateNoticePDFBuffer(params: PDFGeneratorParams): Promi
 
     writer.writeParagraph(`A copy of this Notice has been preserved in our office for record and future course of action. You are hereby advised to preserve a copy of this notice, as the same may be required to be produced before the appropriate Court of Law and/or competent authority as and when required.`, 10.5);
 
+    if (params.invoices && params.invoices.length > 0) {
+      writer.writeInvoiceTable(params.invoices);
+    }
     writer.writeSignatureBlock("For AMA Legal Solutions®", "Through Authorized Signatory", stampImageToUse);
 
   } else if (step === 2) {
@@ -721,7 +806,7 @@ export async function generateNoticePDFBuffer(params: PDFGeneratorParams): Promi
     writer.writeParagraph("Dear Sir/Madam,", 10.5);
 
     // Body text
-    writer.writeParagraph(`Under instructions and authority from our client **${params.clientName || 'Tech AMA'}**, residing/having office at **${params.clientAddress || 'Delhi, India'}**, we hereby issue the present Second and Final Legal Notice calling upon you to immediately clear the outstanding dues/claim amounting to **INR ${formattedAmount}/- (Rupees ${pendingWords})** payable towards our client arising out of transactions, services, agreements, commitments, business dealings, or financial obligations undertaken by you.`, 10.5);
+    writer.writeParagraph(`Under instructions and authority from our client **${params.clientName || 'Tech AMA'}**, residing/having office at **${params.clientAddress || 'Delhi, India'}**, we hereby issue the present Second and Final Legal Notice calling upon you to immediately clear the outstanding dues/claim amounting to **INR ${formattedAmount}/- (Rupees ${pendingWords})** as mentioned in **Annexure - A** payable towards our client arising out of transactions, services, agreements, commitments, business dealings, or financial obligations undertaken by you.`, 10.5);
 
     writer.writeParagraph(`Despite repeated reminders, communications, and an earlier legal notice served upon you, you have failed to regularize the matter or provide any satisfactory response. Your conduct clearly reflects deliberate negligence, avoidance, and non-compliance towards lawful obligations owed to our client.`, 10.5);
 
@@ -745,6 +830,9 @@ export async function generateNoticePDFBuffer(params: PDFGeneratorParams): Promi
     
     writer.writeParagraph(`A copy of this Notice has been preserved in our office for record and future course of action. You are hereby advised to preserve a copy of this notice, as the same may be required to be produced before the appropriate Court of Law and/or competent authority as and when required.`, 10.5);
 
+    if (params.invoices && params.invoices.length > 0) {
+      writer.writeInvoiceTable(params.invoices);
+    }
     writer.writeSignatureBlock("For AMA Legal Solutions®", "Through Authorized Signatory", stampImageToUse);
 
   } else if (step === 3) {
@@ -767,7 +855,7 @@ export async function generateNoticePDFBuffer(params: PDFGeneratorParams): Promi
     writer.writeParagraph("Dear Sir/Madam,", 10.5);
 
     // Body text
-    writer.writeParagraph(`Under instructions from and on behalf of my client **${params.clientName || 'Tech AMA'}**, I hereby issue the present Final Legal Notice against you with respect to the outstanding amount/claim of **INR ${formattedAmount}/- (Rupees ${pendingWords})** arising out of dealings, transactions, services, agreements, commitments, or obligations between you and our client.`, 10.5);
+    writer.writeParagraph(`Under instructions from and on behalf of my client **${params.clientName || 'Tech AMA'}**, I hereby issue the present Final Legal Notice against you with respect to the outstanding amount/claim of **INR ${formattedAmount}/- (Rupees ${pendingWords})** as mentioned in **Annexure - A** arising out of dealings, transactions, services, agreements, commitments, or obligations between you and our client.`, 10.5);
 
     writer.writeParagraph(`It is pertinent to note that despite repeated reminders, follow-ups, and opportunities extended to you for amicable resolution, you have deliberately failed and neglected to clear the outstanding liability and/or honour your commitments. Your conduct has caused substantial financial loss, harassment, mental agony, and inconvenience to my client.`, 10.5);
 
@@ -802,6 +890,9 @@ export async function generateNoticePDFBuffer(params: PDFGeneratorParams): Promi
     
     writer.writeParagraph(`A copy of this Notice has been preserved in our office for record and future course of action. You are hereby advised to preserve a copy of this notice, as the same may be required to be produced before the appropriate Court of Law and/or competent authority as and when required.`, 10.5);
 
+    if (params.invoices && params.invoices.length > 0) {
+      writer.writeInvoiceTable(params.invoices);
+    }
     writer.writeSignatureBlock("For AMA Legal Solutions®", "Through Authorized Signatory", stampImageToUse);
 
   } else if (step === 4) {

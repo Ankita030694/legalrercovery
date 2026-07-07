@@ -32,7 +32,8 @@ async function sendAccusedDispatch(
   clientDisplayName: string,
   complainantEmail: string,
   isEmailPending: boolean,
-  noticeRef: string
+  noticeRef: string,
+  ccEmails: string
 ): Promise<{ emailSent: boolean; whatsappSent: boolean }> {
   let emailSubject = "";
   let emailBody = "";
@@ -164,15 +165,15 @@ AMA Legal Solutions`;
   if (isEmailPending) {
     if (step <= 3) {
       const toEmails = caseDoc.email2 ? `${caseDoc.email},${caseDoc.email2}` : caseDoc.email;
-      promises.push(sendNoticeEmail(toEmails, emailSubject, emailBody, pdfBuffer, pdfFilename, complainantEmail));
+      promises.push(sendNoticeEmail(toEmails, emailSubject, emailBody, pdfBuffer, pdfFilename, ccEmails));
     } else {
       const toEmails = [];
       if (caseDoc.policeStationEmail) toEmails.push(caseDoc.policeStationEmail);
       if (caseDoc.email) toEmails.push(caseDoc.email);
       if (caseDoc.email2) toEmails.push(caseDoc.email2);
-      if (toEmails.length === 0) toEmails.push(complainantEmail);
+      if (toEmails.length === 0) toEmails.push(ccEmails);
       const recipientTo = toEmails.join(", ");
-      promises.push(sendNoticeEmail(recipientTo, emailSubject, emailBody, pdfBuffer, pdfFilename, complainantEmail));
+      promises.push(sendNoticeEmail(recipientTo, emailSubject, emailBody, pdfBuffer, pdfFilename, ccEmails));
     }
   } else {
     promises.push(Promise.resolve(true));
@@ -404,6 +405,11 @@ async function handleDispatch(req: NextRequest) {
         let emailSent = !isEmailPending;
         let whatsappSent = false;
 
+        let combinedCcEmails = complainantEmail || "";
+        if (caseDoc.ccEmails) {
+          combinedCcEmails = combinedCcEmails ? `${combinedCcEmails},${caseDoc.ccEmails}` : caseDoc.ccEmails;
+        }
+
         try {
           const dispatchRes = await sendAccusedDispatch(
             caseDoc,
@@ -413,7 +419,8 @@ async function handleDispatch(req: NextRequest) {
             clientDisplayName,
             complainantEmail,
             isEmailPending,
-            noticeRef
+            noticeRef,
+            combinedCcEmails
           );
           emailSent = dispatchRes.emailSent;
           whatsappSent = dispatchRes.whatsappSent;
@@ -626,6 +633,11 @@ async function handleDispatch(req: NextRequest) {
         const cleanDefaulterName = caseDoc.defaulterName.replace(/[^a-zA-Z0-9]/g, "_");
         const pdfFilename = `${cleanDefaulterName}_Police_Complaint_${formatDateString(now)}.pdf`;
 
+        let combinedCcEmails = clientEmail || "";
+        if (caseDoc.ccEmails) {
+          combinedCcEmails = combinedCcEmails ? `${combinedCcEmails},${caseDoc.ccEmails}` : caseDoc.ccEmails;
+        }
+
         let emailSent = false;
         let whatsappSent = false;
         try {
@@ -637,7 +649,8 @@ async function handleDispatch(req: NextRequest) {
             clientDisplayName,
             clientEmail,
             true,
-            noticeRef
+            noticeRef,
+            combinedCcEmails
           );
           emailSent = dispatchRes.emailSent;
           whatsappSent = dispatchRes.whatsappSent;
