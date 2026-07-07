@@ -45,15 +45,17 @@ export async function POST(req: NextRequest) {
     });
 
     const systemPrompt = `
-      Act as a highly intelligent, flexible AI data parsing assistant for a legal recovery platform.
-      Your task is to take raw, unstructured, or semi-structured copy-pasted text (which could be in any sequence, format, or tabular arrangement) containing outstanding dues and defaulter details, and intelligently parse it into a clean, structured JSON array of cases.
+      **Crucial Guidelines for Handling Tabular Spreadsheet Data:**
+      1. **STRICT HORIZONTAL ROW ALIGNMENT**: The text is an Excel paste. You MUST process the text strictly row-by-row. DO NOT attempt to solve a jigsaw puzzle by matching invoice dates to due dates across different rows. If an invoice number and an amount appear on Row 1, they belong together. If an invoice number and an amount appear on Row 2, they belong together.
       
-      **Crucial Guidelines for Handling Messy Data:**
-      1. **Order Independence**: The data might not be in a strict order. Use heuristics to identify names, phone numbers, emails, addresses, dates, and amounts regardless of the column sequence.
-      2. **Inheritance for Merged/Sparse Cells**: In tabular data, a single defaulter name (along with contact, address, email) might be listed once, followed by multiple rows of different invoices, amounts, and dates (where the name and contact columns are left blank). You MUST inherit the name, contact, and address from the last seen populated row and apply them to these blank rows.
-      3. **Group by Defaulter**: You MUST group all invoices and amounts for a single defaulter into a SINGLE case object. Do NOT create separate case objects for the same defaulter.
-      4. **Calculate Total Amount**: Calculate and set the \`stuckAmount\` to be the SUM of all invoices for that defaulter.
-      5. **Extract Invoices Array**: Extract each individual invoice into an \`invoices\` array within the case object. Each item should have \`invoiceNo\`, \`invoiceDate\`, and \`amount\`.
+      2. **Amounts**:
+      The amount listed on the FIRST row is ONLY the amount for the very first invoice.
+      The amount on the SECOND row is ONLY the amount for the second invoice, and so on.
+      Do NOT attempt to calculate any grand totals yourself. Extract the exact specific amount for each invoice.
+      
+      3. **Inheritance for Merged/Sparse Cells**: In tabular data, subsequent rows for the same defaulter will have blank name/contact columns but will contain additional invoices and their corresponding amounts. You MUST group all these subsequent invoices under the same defaulter.
+      4. **Group by Defaulter**: You MUST group all invoices and amounts for a single defaulter into a SINGLE case object. Do NOT create separate case objects for the same defaulter.
+      5. **Date Years**: If a due date is missing a year (e.g. "25-Sep"), infer the year from the corresponding invoice date on the same line, or the surrounding context.
       
       **Schema Details**:
       For EACH individual case, extract the following:
@@ -66,13 +68,12 @@ export async function POST(req: NextRequest) {
       - ccEmails: Extract any emails designated as CC (carbon copy). If CC emails are provided globally for the entire batch in the text (e.g. "cc emails: a@b.com, c@d.com"), you MUST apply these same CC emails to EVERY single case you extract. Combine multiple CC emails with a comma. Return empty string if none found.
       - address: Complete physical address of the defaulter.
       - state: Standardized Indian State or UT name matching the address (e.g. "Haryana", "Maharashtra", "Madhya Pradesh"). Extract this from the address or state column.
-      - stuckAmount: The TOTAL sum of all outstanding dues for this defaulter (all their invoices combined) as a number (float/integer). Clean all commas and currency symbols.
       - dueDate: The earliest or most relevant payment due date in "YYYY-MM-DD" format. Handle formats like '30.06.2026', '24-Nov' (infer year from context/invoice date). Dates in the future are ACCEPTABLE.
       - invoices: An array of objects representing each individual invoice, containing:
           - invoiceNo: A string representation of the invoice number.
           - invoiceDate: The invoice date in "YYYY-MM-DD" format. Set to null if not present.
           - dueDate: The payment due date of this specific invoice in "YYYY-MM-DD" format. Set to null if not present.
-          - amount: The specific outstanding amount for this invoice as a number.
+          - amount: The specific outstanding amount for this invoice as a number. Clean all commas and currency symbols.
 
       **Return ONLY a valid JSON object with this exact structure**:
       {
@@ -87,7 +88,6 @@ export async function POST(req: NextRequest) {
             "ccEmails": "...",
             "address": "...",
             "state": "...",
-            "stuckAmount": 1234.56,
             "dueDate": "YYYY-MM-DD",
             "invoices": [
               {
@@ -119,7 +119,24 @@ export async function POST(req: NextRequest) {
     const resultJson = JSON.parse(resultText);
     const parsedCases = resultJson.cases || [];
 
-    console.log(`[Bulk AI Parse] Successfully parsed ${parsedCases.length} cases.`);
+    // Manually calculate stuckAmount for each case by summing invoice amounts
+    parsedCases.forEach((c: any) => {
+      let total = 0;
+      if (c.invoices && Array.isArray(c.invoices)) {
+        c.invoices.forEach((inv: any) => {
+          if (typeof inv.amount === "number") {
+            total += inv.amount;
+          } else if (typeof inv.amount === "string") {
+            const parsed = parseFloat(inv.amount.replace(/[^0-9.-]+/g,""));
+            if (!isNaN(parsed)) total += parsed;
+          }
+        });
+      }
+      // Set the calculated sum as stuckAmount
+      c.stuckAmount = parseFloat(total.toFixed(2));
+    });
+
+    console.log(`[Bulk AI Parse] Successfully parsed ${parsedCases.length} cases and calculated stuckAmounts.`);
 
     // 4. Fetch police station directory to auto-populate jurisdictional SHO details
     const stations = await db.collection("police_stations").find({}).toArray();
