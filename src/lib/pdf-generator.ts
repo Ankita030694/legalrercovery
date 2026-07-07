@@ -628,18 +628,80 @@ class NoticePDFWriter {
 
     let idx = 1;
     let totalAmount = 0;
+    const maxInvWidth = 100; // col3 is 200, col2 is 90. 200 - 90 - 10(margin) = 100
+    
     for (const inv of invoices) {
       if (this.currentY < 65) {
         this.addNewPage();
       }
+
+      let invNoStr = inv.invoiceNo || "-";
+      let lines: string[] = [];
+      let words = invNoStr.split(' ');
+      let currentLine = "";
+      
+      for (const word of words) {
+         if (currentLine === "") {
+             if (this.fontRegular.widthOfTextAtSize(word, size) > maxInvWidth) {
+                 let charLine = "";
+                 for (let i = 0; i < word.length; i++) {
+                     let testLine = charLine + word[i];
+                     if (this.fontRegular.widthOfTextAtSize(testLine, size) > maxInvWidth && charLine.length > 0) {
+                         lines.push(charLine);
+                         charLine = word[i];
+                     } else {
+                         charLine = testLine;
+                     }
+                 }
+                 currentLine = charLine; 
+             } else {
+                 currentLine = word;
+             }
+         } else {
+             let testLine = currentLine + " " + word;
+             if (this.fontRegular.widthOfTextAtSize(testLine, size) > maxInvWidth) {
+                 lines.push(currentLine);
+                 
+                 if (this.fontRegular.widthOfTextAtSize(word, size) > maxInvWidth) {
+                     let charLine = "";
+                     for (let i = 0; i < word.length; i++) {
+                         let testLineChar = charLine + word[i];
+                         if (this.fontRegular.widthOfTextAtSize(testLineChar, size) > maxInvWidth && charLine.length > 0) {
+                             lines.push(charLine);
+                             charLine = word[i];
+                         } else {
+                             charLine = testLineChar;
+                         }
+                     }
+                     currentLine = charLine;
+                 } else {
+                     currentLine = word;
+                 }
+             } else {
+                 currentLine = testLine;
+             }
+         }
+      }
+      if (currentLine) {
+        lines.push(currentLine);
+      }
+      if (lines.length === 0) lines.push("-");
+
       this.currentPage.drawText(String(idx) + ".", { x: col1, y: this.currentY, size, font: this.fontRegular });
-      this.currentPage.drawText(inv.invoiceNo || "-", { x: col2, y: this.currentY, size, font: this.fontRegular });
       this.currentPage.drawText(inv.invoiceDate || "-", { x: col3, y: this.currentY, size, font: this.fontRegular });
       this.currentPage.drawText(inv.dueDate || "-", { x: col4, y: this.currentY, size, font: this.fontRegular });
       this.currentPage.drawText("Rs. " + Number(inv.amount).toLocaleString("en-IN"), { x: col5, y: this.currentY, size, font: this.fontRegular });
       
+      let invoiceY = this.currentY;
+      for (let j = 0; j < lines.length; j++) {
+        this.currentPage.drawText(lines[j], { x: col2, y: invoiceY, size, font: this.fontRegular });
+        invoiceY -= size * 1.2;
+      }
+      
       totalAmount += Number(inv.amount);
-      this.currentY -= size * 1.5;
+      
+      const rowHeight = Math.max(size * 1.5, size * 1.2 * lines.length + size * 0.3);
+      this.currentY -= rowHeight;
       idx++;
     }
 
