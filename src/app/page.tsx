@@ -1,6 +1,6 @@
 "use client";
 
-import React from "react";
+import React, { useState } from "react";
 import Link from "next/link";
 import { PaymentModal } from "@/components/PaymentModal";
 import FAQSection, { FAQItem } from "@/components/FAQSection";
@@ -47,6 +47,8 @@ import {
 } from "lucide-react";
 
 export default function Home() {
+  const [isPaymentModalOpen, setIsPaymentModalOpen] = useState(false);
+
   const homeFaqs: FAQItem[] = [
     {
       question: "What is LegalRecovery and how does it work?",
@@ -183,11 +185,11 @@ export default function Home() {
 
             {/* CTA Buttons Row */}
             <div className="w-full sm:w-auto mb-10">
-              <Link href="/contact" className="block w-full sm:w-auto">
+              <button onClick={() => setIsPaymentModalOpen(true)} className="block w-full sm:w-auto focus:outline-none">
                 <span className="block w-full px-6 sm:px-8 py-3.5 text-[13.5px] sm:text-[15px] font-bold text-white bg-[#DC2626] hover:bg-[#B91C1C] rounded-[10px] shadow-[0_4px_16px_rgba(220,38,38,0.15)] transition-all duration-200 hover:-translate-y-0.5 active:translate-y-0 cursor-pointer text-center">
                   Recover My Money
                 </span>
-              </Link>
+              </button>
             </div>
 
             {/* Trust Row badging underneath */}
@@ -624,6 +626,7 @@ export default function Home() {
 
       </main>
 
+      <PaymentModal isOpen={isPaymentModalOpen} onClose={() => setIsPaymentModalOpen(false)} />
     </div>
   );
 }
