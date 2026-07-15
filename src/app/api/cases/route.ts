@@ -329,6 +329,32 @@ export async function PATCH(req: NextRequest) {
           return t;
         });
       }
+    } else if (status === "paused" || (status === "active" && existingCase.status === "paused")) {
+      const user = await db.collection("users").findOne({ _id: userId });
+      if (!user || user.phone !== "8700343611") {
+        return NextResponse.json({ error: "Access denied. Feature restricted." }, { status: 403 });
+      }
+
+      if (status === "active" && existingCase.status === "paused") {
+        // Resuming case: recalculate scheduledAt for future notices
+        const formatDate = (d: Date) => d.toLocaleDateString("en-IN", { day: "numeric", month: "short", year: "numeric" });
+        if (existingCase.timeline) {
+          let nextDate = new Date();
+          updateDoc.timeline = existingCase.timeline.map((t: any) => {
+            if (t.status === "scheduled") {
+              const newScheduledAt = new Date(nextDate);
+              const tCopy = { 
+                ...t, 
+                scheduledAt: newScheduledAt.toISOString(),
+                date: formatDate(newScheduledAt)
+              };
+              nextDate.setDate(nextDate.getDate() + 7);
+              return tCopy;
+            }
+            return t;
+          });
+        }
+      }
     }
 
     await db.collection("cases").updateOne(

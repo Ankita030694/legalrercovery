@@ -76,6 +76,7 @@ export default function UserDashboard() {
   const [confirmStopCaseId, setConfirmStopCaseId] = useState<string | null>(null);
   const [isStopping, setIsStopping] = useState(false);
   const [recoveredAmountInput, setRecoveredAmountInput] = useState<string>("");
+  const [isTogglingPauseId, setIsTogglingPauseId] = useState<string | null>(null);
 
   // Onboarding Active Tour state
   const [onboardingActive, setOnboardingActive] = useState(false);
@@ -247,6 +248,33 @@ export default function UserDashboard() {
   const activeCount = useMemo(() => filteredCases.filter(c => c.status === "active").length, [filteredCases]);
   const recoveredCount = useMemo(() => filteredCases.filter(c => c.status === "recovered").length, [filteredCases]);
   const totalRecoveredAmount = useMemo(() => filteredCases.reduce((acc, c) => acc + (c.status === "recovered" ? (c.recoveredAmount !== undefined ? c.recoveredAmount : c.stuckAmount) : 0), 0), [filteredCases]);
+
+  const handleTogglePauseCase = async (caseId: string, isPausing: boolean) => {
+    setIsTogglingPauseId(caseId);
+    try {
+      const response = await fetch("/api/cases", {
+        method: "PATCH",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+          id: caseId,
+          status: isPausing ? "paused" : "active",
+        }),
+      });
+
+      if (!response.ok) {
+        const errData = await response.json();
+        throw new Error(errData.error || `Failed to ${isPausing ? 'pause' : 'resume'} notices.`);
+      }
+
+      await fetchCases();
+      window.dispatchEvent(new Event("lr_cases_updated"));
+    } catch (err: any) {
+      console.error(`Error ${isPausing ? 'pausing' : 'resuming'} notices:`, err);
+      alert(err.message || `Failed to ${isPausing ? 'pause' : 'resume'} notices.`);
+    } finally {
+      setIsTogglingPauseId(null);
+    }
+  };
 
   const handleStopNotices = (caseId: string) => {
     setConfirmStopCaseId(caseId);
@@ -631,12 +659,16 @@ export default function UserDashboard() {
                         ? "bg-green-50 border-green-200 text-[#10B981]" 
                         : c.status === "completed"
                         ? "bg-blue-50 border-blue-200 text-blue-600"
+                        : c.status === "paused"
+                        ? "bg-amber-50 border-amber-200 text-amber-600"
                         : "bg-red-50 border-red-150 text-[#DC2626]"}`}
                     >
                       {c.status === "recovered" 
                         ? "Dues Recovered" 
                         : c.status === "completed"
                         ? "Dispatches Completed"
+                        : c.status === "paused"
+                        ? "Paused"
                         : "Active Dispatch"}
                     </span>
                   </div>
@@ -679,7 +711,33 @@ export default function UserDashboard() {
                       </button>
                     )}
 
-                    {c.status === "active" && (
+                    {c.status === "active" && userPhone === "8700343611" && (
+                      <button
+                        onClick={() => handleTogglePauseCase(c.id, true)}
+                        disabled={isTogglingPauseId === c.id}
+                        className="px-4 py-2 text-xs font-black text-amber-700 bg-amber-50 border border-amber-200 hover:bg-amber-100 hover:border-amber-300 disabled:opacity-50 disabled:cursor-not-allowed rounded-xl transition-all cursor-pointer focus:outline-none flex items-center justify-center gap-1.5"
+                      >
+                        {isTogglingPauseId === c.id ? (
+                           <Loader2 className="w-3.5 h-3.5 animate-spin" />
+                        ) : null}
+                        Pause
+                      </button>
+                    )}
+
+                    {c.status === "paused" && userPhone === "8700343611" && (
+                      <button
+                        onClick={() => handleTogglePauseCase(c.id, false)}
+                        disabled={isTogglingPauseId === c.id}
+                        className="px-4 py-2 text-xs font-black text-emerald-700 bg-emerald-50 border border-emerald-200 hover:bg-emerald-100 hover:border-emerald-300 disabled:opacity-50 disabled:cursor-not-allowed rounded-xl transition-all cursor-pointer focus:outline-none flex items-center justify-center gap-1.5"
+                      >
+                        {isTogglingPauseId === c.id ? (
+                           <Loader2 className="w-3.5 h-3.5 animate-spin" />
+                        ) : null}
+                        Resume
+                      </button>
+                    )}
+
+                    {(c.status === "active" || c.status === "paused") && (
                       <button
                         onClick={() => handleStopNotices(c.id)}
                         className="px-4 py-2 text-xs font-black text-[#991B1B] bg-[#FEF2F2] border border-[#FCA5A5] hover:bg-[#FEE2E2] hover:border-[#F87171] rounded-xl transition-all cursor-pointer focus:outline-none"
