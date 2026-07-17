@@ -6,6 +6,7 @@ import Script from "next/script";
 import TableOfContents from "@/components/TableOfContents";
 import Breadcrumbs from "@/components/Breadcrumbs";
 import { PaymentModal } from "@/components/PaymentModal";
+import Image from "next/image";
 
 // FAQ data for rendering and Schema
 const faqs = [
