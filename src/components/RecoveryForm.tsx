@@ -1,6 +1,7 @@
 "use client";
 
 import React, { useState, useMemo, useEffect } from "react";
+import Link from "next/link";
 import { User, Mail, Phone, MapPin, CheckCircle, AlertCircle, Loader2, Shield, ArrowLeft, Lock } from "lucide-react";
 
 export const RecoveryForm = () => {
@@ -340,6 +341,9 @@ export const RecoveryForm = () => {
             </button>
           </div>
           
+          <p className="text-[10px] sm:text-[11px] text-center text-slate-500 font-semibold mt-2 px-1 leading-relaxed">
+            By clicking submit, you agree to share these details with us for the purpose of contacting you regarding our services. Please read our <Link href="/privacy-policy" className="text-[#DC2626] hover:text-[#B91C1C] transition-colors">Privacy Policy</Link> for more details.
+          </p>
           <p className="text-[10px] text-center text-slate-400 font-semibold mt-1">
             Payments are securely processed by PayU.
           </p>
