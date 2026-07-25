@@ -2,7 +2,7 @@ import { Metadata } from "next";
 import InternationalClientNoticeClient from "./InternationalClientNoticeClient";
 
 export const metadata: Metadata = {
-  title: "Legal Notice to International Client for Unpaid Invoice & Project Dues",
+  title: "Legal Notice to International Client: Unpaid Invoices",
   description: "Learn how Indian freelancers and agencies can legally recover unpaid invoices from foreign clients. Draft a cross-border legal notice for breach of contract.",
   keywords: [
     "recover unpaid money from international client",

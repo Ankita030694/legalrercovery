@@ -2,7 +2,7 @@ import { Metadata } from "next";
 import BuilderDelayedPossessionClient from "./BuilderDelayedPossessionClient";
 
 export const metadata: Metadata = {
-  title: "Legal Notice to Builder for Delayed Possession & Refund | Recovery",
+  title: "Legal Notice to Builder: Delayed Possession & Refund",
   description: "How home buyers can use a legal notice to demand a refund of their booking amount from a builder under RERA, Consumer Forum, and NCLT rules.",
   keywords: [
     "legal notice to builder for delayed possession",

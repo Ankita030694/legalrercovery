@@ -2,7 +2,7 @@ import { Metadata } from "next";
 import HousingSocietyNoticeClient from "./HousingSocietyNoticeClient";
 
 export const metadata: Metadata = {
-  title: "Legal Notice to Cooperative Housing Society for Maintenance Disputes",
+  title: "Legal Notice to Housing Society: Maintenance Disputes",
   description: "Learn how to fight arbitrary maintenance charges, illegal transfer fees, and harassment by RWA management committees. Draft a legal notice to your housing society.",
   keywords: [
     "housing society maintenance refund dispute",

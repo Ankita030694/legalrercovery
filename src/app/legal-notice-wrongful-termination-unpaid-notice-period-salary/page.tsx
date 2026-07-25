@@ -2,7 +2,7 @@ import { Metadata } from "next";
 import WrongfulTerminationClient from "./WrongfulTerminationClient";
 
 export const metadata: Metadata = {
-  title: "Wrongful Termination Legal Notice & Unpaid Notice Salary Recovery | Recovery",
+  title: "Wrongful Termination & Unpaid Salary Legal Notice",
   description: "Sudden termination without cause or forced resignation? Learn how to recover unpaid notice period salary and severance pay under Indian labor laws.",
   keywords: [
     "legal notice for wrongful termination india",

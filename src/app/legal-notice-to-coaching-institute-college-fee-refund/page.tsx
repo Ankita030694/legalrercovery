@@ -2,7 +2,7 @@ import { Metadata } from "next";
 import CoachingCollegeRefundClient from "./CoachingCollegeRefundClient";
 
 export const metadata: Metadata = {
-  title: "Fee Refund Legal Notice to Coaching Institute & Private College | Recovery",
+  title: "Fee Refund Legal Notice to Coaching Institute & College",
   description: "Many educational centers claim that fees are entirely non-refundable. Learn how to recover tuition and college admission fees using CCPA and UGC guidelines.",
   keywords: [
     "coaching institute fee refund legal notice",
