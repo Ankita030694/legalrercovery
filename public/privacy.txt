@@ -18,8 +18,8 @@ A. Personal Information
 Full Name
 Phone Number
 Email Address
-City/Location
-Identification documents (if required)
+State / Union Territory
+Number of Opposing Parties
 Billing and payment information
 B. Claim & Dispute Information
 
