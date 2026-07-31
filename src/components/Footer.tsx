@@ -89,10 +89,19 @@ const guideLinks = [
   { label: "Fee Refund Legal Notice to Coaching Institute & Private College", href: "/legal-notice-to-coaching-institute-college-fee-refund" },
   { label: "Wrongful Termination & Unpaid Notice Salary Recovery", href: "/legal-notice-wrongful-termination-unpaid-notice-period-salary" },
   { label: "Legal Notice to E-Commerce Marketplace for Frozen Payouts", href: "/legal-notice-to-ecommerce-marketplace-seller-payment-recovery" },
+  { label: "Legal Notice to Event Planner & Wedding Venue for Refund", href: "/legal-notice-to-event-planner-wedding-venue-refund" },
   { label: "Legal Notice for Notice Period Salary Withheld", href: "/legal-notice-for-salary-withheld-during-notice-period" },
   { label: "PG & Hostel Security Deposit Refund Legal Notice", href: "/legal-notice-to-pg-owner-for-security-deposit-refund" },
   { label: "Legal Notice for Wrong or Damaged Product Delivery", href: "/legal-notice-to-retailer-wrong-damaged-product-delivery" },
+  { label: "Flipkart Return & Refund Dispute Consumer Complaint", href: "/flipkart-return-refund-complaint" },
   { label: "Legal Notice for Unauthorized ECS & NACH Auto-Debits", href: "/legal-notice-to-bank-unauthorized-ecs-nach-debit-reversal" },
+  { label: "How to File a Consumer Complaint in India: Online & Offline Guide", href: "/how-to-file-consumer-complaint-india" },
+  { label: "What is a Legal Notice in India: Validity, Rules & Recovery", href: "/what-is-a-legal-notice-in-india" },
+  { label: "Legal Notice Format in India: PDF Download & Drafting Checklist", href: "/legal-notice-format-india" },
+  { label: "Is a Notarized Rent Agreement Valid? Rules & Disputes", href: "/should-rental-agreements-be-notarized-in-india" },
+  { label: "Legal Notice to Insurance Company for Claim Rejection & Recovery", href: "/legal-notice-to-insurance-company-claim-rejection-recovery" },
+  { label: "Builder Booking Cancellation Token Money Refund Rules", href: "/builder-booking-cancellation-refund-legal-notice" },
+  { label: "Legal Notice to Interior Designer for Incomplete Work", href: "/legal-notice-to-interior-designer-contractor-refund" }
 ];
 
 export default function Footer() {

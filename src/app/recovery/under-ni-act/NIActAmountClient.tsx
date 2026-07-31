@@ -289,7 +289,7 @@ export default function NIActAmountClient() {
             <Breadcrumbs items={breadcrumbItems} />
           </div>
           
-          <div className="grid grid-cols-1 lg:grid-cols-[220px_1fr_280px] gap-8 items-start mt-6">
+          <div className="grid grid-cols-1 lg:grid-cols-[260px_1fr_280px] xl:grid-cols-[280px_1fr_300px] gap-8 xl:gap-10 items-start mt-6">
             
             {/* Left Sidebar - TOC (Desktop) */}
             <div className="hidden lg:block sticky top-24 max-h-[calc(100vh-120px)] overflow-y-auto pr-2 scrollbar-hide">

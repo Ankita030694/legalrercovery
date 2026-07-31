@@ -218,14 +218,14 @@ export default function NoticePeriodSalaryClient() {
           </div>
         </header>
 
-        <div className="container mx-auto px-4 max-w-8xl py-10">
+        <div className="w-full max-w-[1600px] mx-auto px-4 md:px-8 xl:px-12 py-10">
           {/* Breadcrumbs Navigation */}
           <nav className="mb-6" aria-label="Breadcrumb">
             <Breadcrumbs items={breadcrumbItems} />
           </nav>
           
           {/* 3-Column Layout: TOC, Content, Sidebar */}
-          <div className="grid grid-cols-1 lg:grid-cols-[220px_1fr_280px] gap-8 items-start mt-6">
+          <div className="grid grid-cols-1 lg:grid-cols-[260px_1fr_280px] xl:grid-cols-[280px_1fr_300px] gap-8 xl:gap-10 items-start mt-6">
             
             {/* Left Column Sticky TOC */}
             <nav className="hidden lg:block sticky top-24 max-h-[calc(100vh-120px)] overflow-y-auto pr-2 scrollbar-hide" aria-label="Table of Contents">

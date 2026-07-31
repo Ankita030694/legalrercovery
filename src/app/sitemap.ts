@@ -41,6 +41,7 @@ const STATIC_ROUTES: {
   { path: "/send-legal-notice", changeFrequency: "weekly", priority: 0.85 },
   { path: "/vakil-online", changeFrequency: "weekly", priority: 0.85 },
   { path: "/online-lawyer-to-send-legal-notice", changeFrequency: "weekly", priority: 0.85 },
+  { path: "/what-is-a-legal-notice-in-india", changeFrequency: "weekly", priority: 0.85 },
 
   // Recovery routes
   { path: "/recovery", changeFrequency: "weekly", priority: 0.9 },
@@ -148,10 +149,18 @@ const STATIC_ROUTES: {
   { path: "/legal-notice-to-coaching-institute-college-fee-refund", changeFrequency: "weekly", priority: 0.85 },
   { path: "/legal-notice-wrongful-termination-unpaid-notice-period-salary", changeFrequency: "weekly", priority: 0.85 },
   { path: "/legal-notice-to-ecommerce-marketplace-seller-payment-recovery", changeFrequency: "weekly", priority: 0.85 },
+  { path: "/legal-notice-to-insurance-company-claim-rejection-recovery", changeFrequency: "weekly", priority: 0.85 },
+  { path: "/legal-notice-to-event-planner-wedding-venue-refund", changeFrequency: "weekly", priority: 0.85 },
   { path: "/legal-notice-for-salary-withheld-during-notice-period", changeFrequency: "weekly", priority: 0.85 },
   { path: "/legal-notice-to-pg-owner-for-security-deposit-refund", changeFrequency: "weekly", priority: 0.85 },
   { path: "/legal-notice-to-retailer-wrong-damaged-product-delivery", changeFrequency: "weekly", priority: 0.85 },
+  { path: "/flipkart-return-refund-complaint", changeFrequency: "weekly", priority: 0.85 },
   { path: "/legal-notice-to-bank-unauthorized-ecs-nach-debit-reversal", changeFrequency: "weekly", priority: 0.85 },
+  { path: "/how-to-file-consumer-complaint-india", changeFrequency: "weekly", priority: 0.85 },
+  { path: "/legal-notice-format-india", changeFrequency: "weekly", priority: 0.85 },
+  { path: "/should-rental-agreements-be-notarized-in-india", changeFrequency: "weekly", priority: 0.85 },
+  { path: "/builder-booking-cancellation-refund-legal-notice", changeFrequency: "weekly", priority: 0.85 },
+  { path: "/legal-notice-to-interior-designer-contractor-refund", changeFrequency: "weekly", priority: 0.85 },
 ];
 
 async function getBlogEntries(): Promise<MetadataRoute.Sitemap> {

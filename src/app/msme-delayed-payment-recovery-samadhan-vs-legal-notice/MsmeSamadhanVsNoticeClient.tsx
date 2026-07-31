@@ -213,14 +213,14 @@ export default function MsmeSamadhanVsNoticeClient() {
           </div>
         </header>
 
-        <div className="container mx-auto px-4 max-w-8xl py-10">
+        <div className="w-full max-w-[1600px] mx-auto px-4 md:px-8 xl:px-12 py-10">
           {/* Breadcrumbs Navigation */}
           <nav className="mb-6" aria-label="Breadcrumb">
             <Breadcrumbs items={breadcrumbItems} />
           </nav>
           
           {/* 3-Column Layout: TOC, Content, Sidebar */}
-          <div className="grid grid-cols-1 lg:grid-cols-[220px_1fr_280px] gap-8 items-start mt-6">
+          <div className="grid grid-cols-1 lg:grid-cols-[260px_1fr_280px] xl:grid-cols-[280px_1fr_300px] gap-8 xl:gap-10 items-start mt-6">
             
             {/* Left Column Sticky TOC */}
             <nav className="hidden lg:block sticky top-24 max-h-[calc(100vh-120px)] overflow-y-auto pr-2 scrollbar-hide" aria-label="Table of Contents">
@@ -239,11 +239,11 @@ export default function MsmeSamadhanVsNoticeClient() {
                 </p>
 
                 <p className="text-sm md:text-base leading-relaxed">
-                  In the competitive landscape of Indian commerce, maintaining healthy cash flow is critical for the survival of Micro, Small, and Medium Enterprises. Yet, delayed payments from corporate buyers remain a persistent threat. To address this challenge, the Government of India enacted the Micro, Small and Medium Enterprises Development (MSMED) Act in 2006. This legislation provides strong statutory protection to registered suppliers against delayed payments. However, when faced with unpaid invoices, business owners often face a strategic dilemma: should they immediately file a claim on the government's MSME Samadhan Portal, or should they initiate recovery by serving a formal legal notice?
+                  In Indian commerce, maintaining healthy cash flow is critical for the survival of Micro, Small, and Medium Enterprises. Yet, delayed payments from corporate buyers remain a persistent threat. To address this, the Government of India enacted the MSMED Act, 2006, providing strong statutory protection to registered suppliers. However, when faced with unpaid invoices, business owners strategic dilemma remains: should they file on the government's MSME Samadhan Portal, or serve a formal legal notice?
                 </p>
                 
                 <p className="text-sm md:text-base leading-relaxed">
-                  Both routes offer distinct benefits and serve different tactical purposes. A formal notice signals immediate legal escalation and gives the buyer a final opportunity to settle the debt amicably within a short timeframe. On the other hand, the MSME Samadhan portal provides a statutory arbitration mechanism that holds immense legal weight, backed by severe interest penalties. Understanding how to leverage these tools effectively is crucial for maximizing recovery rates while minimizing litigation expenses and delays. Businesses must also understand the broader ecosystem, including <Link href="/what-legal-options-does-a-freelancer-in-india-have-to-recover-unpaid-payments-from-a-client" className="text-[#DC2626] hover:underline font-medium">what legal options does a freelancer in India have to recover unpaid payments from a client</Link>, as the principles of commercial debt recovery often overlap across different entity classes.
+                  Both routes serve different tactical purposes. A formal notice signals immediate legal escalation, giving the buyer a final opportunity to settle. Conversely, the MSME Samadhan portal provides a statutory arbitration mechanism backed by interest penalties. Understanding how to leverage these tools is crucial for maximizing recovery while minimizing litigation expenses. Businesses should also understand the broader ecosystem, including <Link href="/what-legal-options-does-a-freelancer-in-india-have-to-recover-unpaid-payments-from-a-client" className="text-[#DC2626] hover:underline font-medium">what legal options does a freelancer in India have to recover unpaid payments from a client</Link>, as commercial debt recovery principles overlap across entity classes.
                 </p>
               </div>
 
@@ -254,53 +254,28 @@ export default function MsmeSamadhanVsNoticeClient() {
                 </h2>
                 <div className="prose prose-base max-w-none text-slate-650 space-y-6">
                   <p className="text-sm md:text-base leading-relaxed">
-                    The core protection of the MSMED Act lies in its strict timelines for clearing invoices. Under the Act, when a registered MSME supplier delivers goods or renders services to a buyer, the buyer is legally mandated to make the payment on or before the agreed date. Section 15 of the Act imposes a hard statutory cap on this agreement. It states that the agreed period of payment between a buyer and a supplier in writing cannot exceed 45 days from the date of acceptance or the date of deemed acceptance.
+                    Under Section 15 of the MSMED Act, a buyer must pay a registered MSME supplier within the mutually agreed period, capped strictly at 45 days. Any contract clause specifying longer credit terms (e.g., 60 or 90 days) is legally overridden. Without a written agreement, payment is due within a maximum of 15 days from delivery.
                   </p>
                   
                   <p className="text-sm md:text-base leading-relaxed">
-                    This means that even if a corporate buyer inserts a clause in the contract specifying a 60-day or 90-day payment term, such a clause is overridden by Section 15. The law limits the credit period to 45 days. If there is no written agreement, the payment timeline is even stricter. In the absence of a written contract, the buyer must clear the invoices within 15 days from the date of delivery or completion of services. This statutory restriction forces buyers to prioritize MSME invoices over other liabilities, as missing these deadlines triggers severe interest penalties.
-                  </p>
-                  
-                  <p className="text-sm md:text-base leading-relaxed">
-                    The concept of the 'appointed day' is critical here. Defined under Section 2(b) of the MSMED Act, the appointed day represents the day following the expiry of fifteen days from the day of acceptance or the day of deemed acceptance of any goods or services from a supplier. In simple terms, if the buyer raises no objection to the quality or delivery of the goods or services within fifteen days of delivery, they are deemed to have accepted them. Once accepted, the credit period of 15 days (if no written contract exists) or up to 45 days (if a written contract exists) begins immediately.
+                    The 'appointed day' under Section 2(b) defines this timeline: if no objection is raised within 15 days of delivery, the goods or services are deemed accepted, and the 15-day or 45-day payment window commences immediately.
                   </p>
 
                   <h3 id="calculating-interest-penalty" className="text-lg md:text-xl font-bold text-slate-900 mt-8 mb-3 scroll-mt-32">
                     Calculating the Three-Times Bank Rate Compound Interest Penalty
                   </h3>
                   <p className="text-sm md:text-base leading-relaxed">
-                    If a buyer fails to pay the supplier within the mandated timeline, Section 16 of the MSMED Act applies. The buyer is liable to pay compound interest with monthly rests to the supplier on the outstanding amount. The interest rate is not determined by the contract or the buyer's internal policies. The Act specifies that the interest rate will be exactly three times the bank rate notified by the Reserve Bank of India.
+                    If a buyer fails to pay within the mandated timeline, Section 16 of the MSMED Act applies. The buyer is liable to pay compound interest with monthly rests at exactly three times the RBI bank rate. This compounding penalty serves as a powerful deterrent, forcing corporate buyers to pay small vendors on time.
                   </p>
                   <p className="text-sm md:text-base leading-relaxed">
-                    The RBI bank rate is subject to periodic updates. For instance, if the prevailing RBI bank rate is 6.75 percent, the penalty interest rate for delayed MSME payments is a massive 20.25 percent per annum, compounded monthly. This compounding effect means that the outstanding debt escalates rapidly. This compounding interest penalty serves as a deterrent against corporate buyers who use small vendor invoices as interest-free working capital.
-                  </p>
-                  <p className="text-sm md:text-base leading-relaxed">
-                    To illustrate the severity of this penalty, consider a concrete example. Suppose a corporate buyer defaults on an invoice of 10 Lakhs. If the delay extends for 12 months and the RBI bank rate stands at 6.75 percent, the statutory interest rate is 20.25 percent per annum. Compounded monthly, the interest payable is calculated using the formula:
-                  </p>
-                  <p className="text-sm md:text-base font-mono bg-slate-50 p-4 rounded-xl border border-slate-200">
-                    A = P * (1 + r/12)^n
-                  </p>
-                  <p className="text-sm md:text-base leading-relaxed">
-                    Where A is the total accumulated amount, P is the principal (10 Lakhs), r is the annual rate of interest (0.2025), and n is the number of months (12). Substituting these values:
-                  </p>
-                  <p className="text-sm md:text-base font-mono bg-slate-50 p-4 rounded-xl border border-slate-200">
-                    A = 10,00,000 * (1 + 0.2025/12)^12 = 10,00,000 * (1.016875)^12 ≈ 12,22,238
-                  </p>
-                  <p className="text-sm md:text-base leading-relaxed">
-                    The compound interest alone amounts to approximately 2.22 Lakhs, increasing the total payable debt to over 12.22 Lakhs in just one year. This represents a heavy surcharge that no standard commercial corporate entity would want to bear.
-                  </p>
-                  <p className="text-sm md:text-base leading-relaxed">
-                    Additionally, under Section 23 of the MSMED Act, this interest paid by the buyer is non-deductible for income tax purposes. The buyer cannot claim the penalty interest as a business expense to reduce their tax liability. This double financial blow makes delaying payments to registered MSME suppliers highly unprofitable for corporate entities.
+                    For example, if the RBI bank rate stands at 6.75 percent, the statutory annual penalty interest is 20.25 percent compounded monthly. Under Section 23 of the Act, this interest is non-deductible for income tax purposes, meaning the buyer cannot claim it as a business expense. This double financial blow makes delayed payments highly unprofitable.
                   </p>
 
                   <h3 id="section-15-16-mandate" className="text-lg md:text-xl font-bold text-slate-900 mt-8 mb-3 scroll-mt-32">
                     Section 15 and 16 of the MSME Act: The Statutory Mandate
                   </h3>
                   <p className="text-sm md:text-base leading-relaxed">
-                    The provisions of Section 15 and Section 16 are absolute. They represent a statutory mandate that cannot be bypassed by mutual contracts. The law assumes that micro and small enterprises lack the bargaining power to negotiate fair credit terms with large corporate buyers. Therefore, the state intervenes to establish a baseline of protection.
-                  </p>
-                  <p className="text-sm md:text-base leading-relaxed">
-                    Furthermore, Section 17 of the Act states that the buyer is liable to pay the invoice amount along with the interest as provided under Section 16. This establishes a clear debt liability. If a supplier files a reference before the Micro and Small Enterprises Facilitation Council, the council's role is primarily to verify the delivery of goods or services and calculate the interest. The buyer cannot raise general defenses like cash flow issues or internal administrative delays. The statutory liability remains absolute.
+                    The provisions of Section 15, 16, and 17 are absolute statutory mandates that cannot be bypassed by contracts. The council's primary role is to verify delivery and calculate the interest; the buyer cannot raise defenses like internal delays or cash flow constraints.
                   </p>
 
                 </div>
@@ -313,16 +288,16 @@ export default function MsmeSamadhanVsNoticeClient() {
                 </h2>
                 <div className="prose prose-base max-w-none text-slate-650 space-y-6">
                   <p className="text-sm md:text-base leading-relaxed">
-                    When choosing between filing a claim on the MSME Samadhan Portal and sending a legal notice, suppliers must weigh factors like speed, cost, and psychological impact on the debtor.
+                    When choosing between filing a claim on the MSME Samadhan Portal and sending a legal notice, suppliers must weigh speed, cost, and psychological impact. A formal legal notice gives the debtor a 15-day timeline to clear the dues. This is a quick, low-cost method that signals seriousness, especially for debtors ignoring emails. You can read about the benefits of a <Link href="/legal-notice-for-recovery-of-money" className="text-[#DC2626] hover:underline font-medium">legal notice for recovery of money</Link> to structure your demand.
                   </p>
                   <p className="text-sm md:text-base leading-relaxed">
-                    A formal legal notice is a direct communication drafted by an advocate and served to the debtor. It gives the debtor a specific timeline (usually 15 days) to clear the outstanding amount or face legal action. This notice is a quick, low-cost method that signals seriousness. It is highly effective for dealing with debtors who are ignoring emails but want to avoid formal litigation. To understand how a notice is structured, you can read about the benefits of a <Link href="/legal-notice-for-recovery-of-money" className="text-[#DC2626] hover:underline font-medium">legal notice for recovery of money</Link> to ensure it is drafted correctly.
+                    The MSME Samadhan Portal, managed by the Ministry of MSME, routes claims to the state MSEFC, acting as a quasi-judicial body for conciliation and arbitration. This route is slower but carries statutory backing. Filing a case on the Samadhan portal incurs no court fees, whereas a traditional <Link href="/civil-suit-for-recovery-of-money-india" className="text-[#DC2626] hover:underline font-medium">civil suit for recovery of money in India</Link> requires ad-valorem court fees of up to 5 percent of the claim amount. Regardless of the chosen route, all claims must be initiated within the statutory <Link href="/time-limit-to-file-money-recovery-case-india" className="text-[#DC2626] hover:underline font-medium">time limit to file money recovery case in India</Link> to prevent the debt from becoming legally time-barred.
                   </p>
                   <p className="text-sm md:text-base leading-relaxed">
-                    The MSME Samadhan Portal is an online filing platform managed by the Ministry of MSME. Once a claim is uploaded, it is routed to the respective state's MSEFC. The council acts as a quasi-judicial body, initiating conciliation and arbitration. This route is slower but carries statutory backing, making it highly effective for recovering large amounts from stubborn debtors.
+                    For example, a corporate buyer defaulting on an invoice of 10 Lakhs for 12 months at a 20.25% penalty rate would owe approximately 12.22 Lakhs, as the interest compounded monthly adds over 2.22 Lakhs in penalties. This represents a heavy surcharge that no standard commercial corporate entity would want to bear.
                   </p>
                   <p className="text-sm md:text-base leading-relaxed">
-                    In terms of cost, filing a case on the Samadhan portal incurs no court fees. In contrast, standard civil lawsuits involve ad-valorem court fees that can reach up to 5 percent of the claim amount. The psychological pressure of receiving a lawyer-backed notice often prompts buyers to pay immediately, avoiding the need for any portal filing.
+                    The MSME Samadhan Portal, managed by the Ministry of MSME, routes references to the respective MSEFC. The council acts as a quasi-judicial body, initiating conciliation and arbitration. This route is slower but carries statutory backing, making it highly effective for recovering large amounts from stubborn debtors. If your transaction lacks a written contract, check our guidelines on <Link href="/how-to-recover-money-without-written-agreement" className="text-[#DC2626] hover:underline font-medium">how to recover money without written agreement</Link> to see how to proceed.
                   </p>
 
                   {/* Comparison Table */}
@@ -452,8 +427,8 @@ export default function MsmeSamadhanVsNoticeClient() {
                       </div>
                       <div className="w-[calc(100%-4rem)] md:w-[calc(50%-2.5rem)] bg-white p-5 rounded-2xl shadow-sm border border-slate-100 group-hover:border-[#DC2626]/30 transition-colors">
                         <h3 className="text-lg md:text-xl font-bold text-slate-900 mb-2">Day 90+: Council Conciliation</h3>
-                        <p className="text-xs md:text-sm text-slate-600 leading-relaxed">
-                          The MSEFC summons both parties for conciliation. If conciliation fails, the case escalates to binding arbitration, resulting in an award that is equivalent to a civil court decree.
+                        <p className="text-xs md:text-sm text-slate-650 leading-relaxed">
+                          The MSEFC summons both parties for conciliation. If conciliation fails, it escalates to binding arbitration (equivalent to a court decree). To ensure claims remain valid, suppliers must track the <Link href="/time-limit-to-file-money-recovery-case-india" className="text-[#DC2626] hover:underline font-medium">time limit to file a money recovery case in India</Link>.
                         </p>
                       </div>
                     </div>
@@ -469,11 +444,7 @@ export default function MsmeSamadhanVsNoticeClient() {
                 </h2>
                 <div className="prose prose-base max-w-none text-slate-650 space-y-6">
                   <p className="text-sm md:text-base leading-relaxed">
-                    Not all business transactions are eligible for recovery under the MSME Samadhan Portal. The system is designed to protect specific categories of enterprises. To file a claim, you must meet the following eligibility criteria:
-                  </p>
-                  
-                  <p className="text-sm md:text-base leading-relaxed">
-                    Under the MSMED Act, only Micro and Small enterprises are eligible to file delayed payment references. Medium enterprises are excluded from this portal-based recovery mechanism.
+                    Not all transactions are eligible under the Samadhan Portal; it protects specific classes of enterprises. Under the MSMED Act, only Micro and Small enterprises are eligible to file references, while Medium enterprises are excluded. If you lack a formal contract, you can also read how the rules on <Link href="/how-to-recover-money-without-written-agreement" className="text-[#DC2626] hover:underline font-medium">how to recover money without written agreement</Link> apply to supporting evidence like purchase orders or delivery proof.
                   </p>
 
                   {/* Checklist */}
