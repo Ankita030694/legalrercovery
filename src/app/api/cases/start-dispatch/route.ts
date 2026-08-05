@@ -71,25 +71,29 @@ export async function POST(req: NextRequest) {
 
     const isSpecialUser = clientUser?.phone?.replace(/\D/g, '').endsWith('8700343611');
 
+    // Sanitize helper: replace newlines with a comma-space so multiline addresses render cleanly
+    const sanitizeField = (val: string | undefined | null): string =>
+      (val || "").replace(/\r\n/g, ", ").replace(/\n/g, ", ").replace(/\r/g, ", ").trim();
+
     let pdfBuffer: Buffer;
     try {
       pdfBuffer = await generateNoticePDFBuffer({
-        defaulterName: caseDoc.defaulterName,
-        phone: caseDoc.phone,
-        email: caseDoc.email,
-        address: caseDoc.address,
+        defaulterName: sanitizeField(caseDoc.defaulterName),
+        phone: sanitizeField(caseDoc.phone),
+        email: sanitizeField(caseDoc.email),
+        address: sanitizeField(caseDoc.address),
         stuckAmount: caseDoc.stuckAmount,
-        policeStationName: caseDoc.policeStationName,
-        policeStationAddress: caseDoc.policeStationAddress,
-        policeStationEmail: caseDoc.policeStationEmail,
+        policeStationName: sanitizeField(caseDoc.policeStationName),
+        policeStationAddress: sanitizeField(caseDoc.policeStationAddress),
+        policeStationEmail: sanitizeField(caseDoc.policeStationEmail),
         createdAt: caseDoc.createdAt,
         step: 1,
         clientName: clientDisplayName,
         clientEmail: complainantEmail,
         clientPhone: complainantPhone,
-        clientAddress: complainantAddress,
-        invoiceNo: caseDoc.invoiceNo,
-        invoiceDate: caseDoc.invoiceDate,
+        clientAddress: sanitizeField(complainantAddress),
+        invoiceNo: sanitizeField(caseDoc.invoiceNo),
+        invoiceDate: sanitizeField(caseDoc.invoiceDate),
         invoices: caseDoc.invoices,
         noticeRef: `${caseDoc.caseId}-N1`,
         isSpecialUser: isSpecialUser

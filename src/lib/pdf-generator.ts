@@ -227,8 +227,12 @@ class NoticePDFWriter {
 
   // Draw text paragraph with automatic wrapping and inline bold support (**text**)
   writeParagraph(text: string, size: number = 10.5, defaultBold: boolean = false, textIndent: number = 0) {
-    // Sanitize Rupee symbol to prevent WinAnsi encoding crashes
-    const sanitizedText = text.replace(/₹/g, "Rs.");
+    // Sanitize Rupee symbol and newline characters to prevent WinAnsi encoding crashes
+    const sanitizedText = text
+      .replace(/₹/g, "Rs.")
+      .replace(/\r\n/g, " ")  // Windows line endings
+      .replace(/\n/g, " ")    // Unix line endings
+      .replace(/\r/g, " ");   // Old Mac line endings
     const maxWidth = 595.276 - 100; // Left margin 50, right margin 50
 
     // Parse paragraph into WordTokens
@@ -498,7 +502,11 @@ class NoticePDFWriter {
     const sanitizedTitle = title.replace(/₹/g, "Rs.");
     const sanitizedRows = rows.map(r => ({
       label: r.label,
-      value: (r.value || "").replace(/₹/g, "Rs.")
+      value: (r.value || "")
+        .replace(/₹/g, "Rs.")
+        .replace(/\r\n/g, " ")  // Windows line endings
+        .replace(/\n/g, " ")    // Unix line endings
+        .replace(/\r/g, " ")    // Old Mac line endings
     }));
 
     if (this.currentY < 130) {
