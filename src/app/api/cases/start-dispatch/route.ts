@@ -69,7 +69,7 @@ export async function POST(req: NextRequest) {
     const complainantPhone = caseDoc.clientPhone || clientUser.phone || caseDoc.clientPhone;
     const complainantAddress = caseDoc.clientAddress || clientUser.address || caseDoc.clientAddress;
 
-    const isSpecialUser = clientUser?.phone?.replace(/\D/g, '').endsWith('8700343611');
+    const isSpecialUser = clientUser?.phone?.replace(/\D/g, '').endsWith('8700343611') || clientUser?.phone?.replace(/\D/g, '').endsWith('8130104447');
 
     // Sanitize helper: replace newlines with a comma-space so multiline addresses render cleanly
     const sanitizeField = (val: string | undefined | null): string =>

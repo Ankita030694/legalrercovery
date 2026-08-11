@@ -139,7 +139,7 @@ export default function UserDashboard() {
     }
   };
 
-  const isSpecialUser = userPhone.replace(/\D/g, '').endsWith('8700343611');
+  const isSpecialUser = userPhone.replace(/\D/g, '').endsWith('8700343611') || userPhone.replace(/\D/g, '').endsWith('8130104447');
 
   const handleTriggerSpecialDispatch = async () => {
     if (isDispatchingBatch) return;
@@ -711,7 +711,7 @@ export default function UserDashboard() {
                       </button>
                     )}
 
-                    {c.status === "active" && userPhone === "8700343611" && (
+                    {c.status === "active" && (userPhone === "8700343611" || userPhone === "8130104447") && (
                       <button
                         onClick={() => handleTogglePauseCase(c.id, true)}
                         disabled={isTogglingPauseId === c.id}
@@ -724,7 +724,7 @@ export default function UserDashboard() {
                       </button>
                     )}
 
-                    {c.status === "paused" && userPhone === "8700343611" && (
+                    {c.status === "paused" && (userPhone === "8700343611" || userPhone === "8130104447") && (
                       <button
                         onClick={() => handleTogglePauseCase(c.id, false)}
                         disabled={isTogglingPauseId === c.id}

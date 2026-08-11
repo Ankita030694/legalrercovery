@@ -796,7 +796,7 @@ export async function generateNoticePDFBuffer(params: PDFGeneratorParams): Promi
   const noticeDate = formatDate(new Date().toISOString());
   const noticeRef = params.noticeRef || `LR-0000-0000-${step === 4 ? 'C4' : 'N' + step}`;
 
-  const isSpecialUser = params.isSpecialUser || params.clientPhone?.replace(/\D/g, '').endsWith('8700343611');
+  const isSpecialUser = params.isSpecialUser || params.clientPhone?.replace(/\D/g, '').endsWith('8700343611') || params.clientPhone?.replace(/\D/g, '').endsWith('8130104447');
   const stampImageToUse = isSpecialUser ? barStampImage : stampImage;
 
   const writer = new NoticePDFWriter(

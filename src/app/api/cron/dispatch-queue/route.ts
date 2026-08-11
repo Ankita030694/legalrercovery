@@ -252,7 +252,7 @@ async function handleDispatch(req: NextRequest) {
   if (session && (session.user as any)?.id) {
     const sessionUserId = (session.user as any).id;
     const userDoc = await db.collection("users").findOne({ _id: new ObjectId(sessionUserId) });
-    if (userDoc && userDoc.phone?.replace(/\D/g, '').endsWith('8700343611')) {
+    if (userDoc && (userDoc.phone?.replace(/\D/g, '').endsWith('8700343611') || userDoc.phone?.replace(/\D/g, '').endsWith('8130104447'))) {
       userIdFilter = sessionUserId;
       isAuthorized = true;
     }
@@ -383,7 +383,7 @@ async function handleDispatch(req: NextRequest) {
             noticeRef,
             invoiceNo: caseDoc.invoiceNo,
             invoiceDate: caseDoc.invoiceDate,
-            isSpecialUser: clientUser?.phone?.replace(/\D/g, '').endsWith('8700343611')
+            isSpecialUser: clientUser?.phone?.replace(/\D/g, '').endsWith('8700343611') || clientUser?.phone?.replace(/\D/g, '').endsWith('8130104447')
           });
         } catch (pdfErr: any) {
           console.error(`[Queue Processor] PDF Generation error for Case ${caseDoc.caseId}:`, pdfErr);
@@ -540,7 +540,7 @@ async function handleDispatch(req: NextRequest) {
         const clientEmail = caseDoc.clientEmail || clientUser?.email || caseDoc.clientEmail;
         
         // Check if the advocate has disabled police complaints
-        const isSpecialUser = clientUser?.phone?.replace(/\D/g, '').endsWith('8700343611');
+        const isSpecialUser = clientUser?.phone?.replace(/\D/g, '').endsWith('8700343611') || clientUser?.phone?.replace(/\D/g, '').endsWith('8130104447');
         const sendComplaints = clientUser?.sendPoliceComplaints !== false;
 
         if (isSpecialUser && !sendComplaints) {
@@ -619,7 +619,7 @@ async function handleDispatch(req: NextRequest) {
             noticeRef,
             invoiceNo: caseDoc.invoiceNo,
             invoiceDate: caseDoc.invoiceDate,
-            isSpecialUser: clientUser?.phone?.replace(/\D/g, '').endsWith('8700343611')
+            isSpecialUser: clientUser?.phone?.replace(/\D/g, '').endsWith('8700343611') || clientUser?.phone?.replace(/\D/g, '').endsWith('8130104447')
           });
         } catch (pdfErr: any) {
           console.error(`[Queue Processor] Step 4 PDF Generation failed for Case ${caseDoc.caseId}:`, pdfErr);

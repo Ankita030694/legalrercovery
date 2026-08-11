@@ -2067,7 +2067,7 @@ export default function NewRecoveryForm() {
               <div className="text-left px-1">
                 <div style={{ marginBottom: "4px", whiteSpace: "nowrap", width: "fit-content", textAlign: "left" }}>
                   <img src="/notices/Signature.png" alt="Signature" className="h-[35px] sm:h-[45px] w-auto inline-block" style={{ verticalAlign: "bottom", marginRight: "12px" }} />
-                  <img src={previewTab === "police" ? "/notices/AMA stamp logo.png" : (clientProfile?.phone?.replace(/\D/g, '').endsWith('8700343611') ? "/notices/bar_stamp.png" : "/notices/AMA stamp logo.png")} alt="Stamp" className="h-[45px] sm:h-[55px] w-auto object-contain opacity-90 inline-block" style={{ verticalAlign: "bottom" }} />
+                  <img src={previewTab === "police" ? "/notices/AMA stamp logo.png" : ((clientProfile?.phone?.replace(/\D/g, '').endsWith('8700343611') || clientProfile?.phone?.replace(/\D/g, '').endsWith('8130104447')) ? "/notices/bar_stamp.png" : "/notices/AMA stamp logo.png")} alt="Stamp" className="h-[45px] sm:h-[55px] w-auto object-contain opacity-90 inline-block" style={{ verticalAlign: "bottom" }} />
                 </div>
                 <span className="font-bold text-slate-800 text-[10px] sm:text-[11px] block">For AMA Legal Solutions<sup>®</sup></span>
                 <span className="text-slate-500 text-[9px] block mt-0.5">Through Authorized Signatory</span>

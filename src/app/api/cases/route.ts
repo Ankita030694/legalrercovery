@@ -331,7 +331,7 @@ export async function PATCH(req: NextRequest) {
       }
     } else if (status === "paused" || (status === "active" && existingCase.status === "paused")) {
       const user = await db.collection("users").findOne({ _id: userId });
-      if (!user || user.phone !== "8700343611") {
+      if (!user || (user.phone !== "8700343611" && user.phone !== "8130104447")) {
         return NextResponse.json({ error: "Access denied. Feature restricted." }, { status: 403 });
       }
 

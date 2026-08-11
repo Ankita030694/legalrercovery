@@ -53,7 +53,7 @@ export async function POST(request: NextRequest) {
     if (userIdStr) {
       const userDoc = await db.collection("users").findOne({ _id: new ObjectId(userIdStr) });
       const userPhone = userDoc?.phone || "";
-      isSpecialUser = userPhone.replace(/\D/g, '').endsWith('8700343611');
+      isSpecialUser = userPhone.replace(/\D/g, '').endsWith('8700343611') || userPhone.replace(/\D/g, '').endsWith('8130104447');
     }
   } catch (dbErr) {
     console.warn("Could not check special user phone in API:", dbErr);
