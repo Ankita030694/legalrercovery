@@ -378,7 +378,7 @@ async function handleDispatch(req: NextRequest) {
             policeStationAddress: sanitizeField(caseDoc.policeStationAddress),
             policeStationEmail: sanitizeField(caseDoc.policeStationEmail),
             createdAt: caseDoc.createdAt,
-            step: pendingStep,
+            step: caseDoc.currentStep,
             clientName: clientDisplayName,
             clientEmail: complainantEmail,
             clientPhone: complainantPhone,
