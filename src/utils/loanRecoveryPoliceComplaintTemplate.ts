@@ -23,6 +23,8 @@ export interface LoanRecoveryPoliceComplaintData {
   bookmanFontBase64?: string
   isSpecialUser?: boolean
   category?: string
+  clientAuthRepName?: string
+  clientAuthRepPhone?: string
 }
 
 export function fillLoanRecoveryPoliceComplaintTemplate(data: LoanRecoveryPoliceComplaintData): string {
