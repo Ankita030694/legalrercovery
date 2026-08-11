@@ -16,9 +16,21 @@ export async function GET(req: NextRequest) {
     const userId = (session.user as any).id;
     const { db } = await getDbAndBucket("fs");
 
+    let queryUserId: any = userId;
+    const sessionUser = await db.collection("users").findOne({ _id: new ObjectId(userId) });
+    if (sessionUser && (sessionUser.phone?.replace(/\D/g, '').endsWith('8700343611') || sessionUser.phone?.replace(/\D/g, '').endsWith('8130104447'))) {
+      const admins = await db.collection("users").find({
+        phone: { $regex: /(8700343611|8130104447)$/ }
+      }).toArray();
+      const adminIds = admins.map(a => a._id.toString());
+      if (adminIds.length > 0) {
+        queryUserId = { $in: adminIds };
+      }
+    }
+
     // Fetch notifications matching this user, sorted by date in descending order
     const notifications = await db.collection("notifications")
-      .find({ userId: userId })
+      .find({ userId: queryUserId })
       .sort({ date: -1 })
       .toArray();
 
@@ -42,10 +54,22 @@ export async function PUT(req: NextRequest) {
     
     const { db } = await getDbAndBucket("fs");
 
+    let queryUserId: any = userId;
+    const sessionUser = await db.collection("users").findOne({ _id: new ObjectId(userId) });
+    if (sessionUser && (sessionUser.phone?.replace(/\D/g, '').endsWith('8700343611') || sessionUser.phone?.replace(/\D/g, '').endsWith('8130104447'))) {
+      const admins = await db.collection("users").find({
+        phone: { $regex: /(8700343611|8130104447)$/ }
+      }).toArray();
+      const adminIds = admins.map(a => a._id.toString());
+      if (adminIds.length > 0) {
+        queryUserId = { $in: adminIds };
+      }
+    }
+
     if (markAll) {
       // Mark all unread notifications for this user as read
       const result = await db.collection("notifications").updateMany(
-        { userId: userId, isRead: false },
+        { userId: queryUserId, isRead: false },
         { $set: { isRead: true } }
       );
       console.log(`[Notifications API] Marked all notifications as read. Affected: ${result.modifiedCount}`);
@@ -58,7 +82,7 @@ export async function PUT(req: NextRequest) {
 
     // Mark single notification as read
     const result = await db.collection("notifications").updateOne(
-      { _id: new ObjectId(notificationId), userId: userId },
+      { _id: new ObjectId(notificationId), userId: queryUserId },
       { $set: { isRead: true } }
     );
 
@@ -84,9 +108,21 @@ export async function DELETE(req: NextRequest) {
 
     const { db } = await getDbAndBucket("fs");
 
+    let queryUserId: any = userId;
+    const sessionUser = await db.collection("users").findOne({ _id: new ObjectId(userId) });
+    if (sessionUser && (sessionUser.phone?.replace(/\D/g, '').endsWith('8700343611') || sessionUser.phone?.replace(/\D/g, '').endsWith('8130104447'))) {
+      const admins = await db.collection("users").find({
+        phone: { $regex: /(8700343611|8130104447)$/ }
+      }).toArray();
+      const adminIds = admins.map(a => a._id.toString());
+      if (adminIds.length > 0) {
+        queryUserId = { $in: adminIds };
+      }
+    }
+
     if (clearAll === "true") {
       // Delete all notifications for this user
-      const result = await db.collection("notifications").deleteMany({ userId: userId });
+      const result = await db.collection("notifications").deleteMany({ userId: queryUserId });
       console.log(`[Notifications API] Cleared all notifications. Deleted: ${result.deletedCount}`);
       return NextResponse.json({ success: true, deletedCount: result.deletedCount });
     }
@@ -98,7 +134,7 @@ export async function DELETE(req: NextRequest) {
     // Delete single notification
     const result = await db.collection("notifications").deleteOne({
       _id: new ObjectId(notificationId),
-      userId: userId
+      userId: queryUserId
     });
 
     console.log(`[Notifications API] Deleted notification: ${notificationId}`);
