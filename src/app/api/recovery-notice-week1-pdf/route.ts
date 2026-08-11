@@ -76,6 +76,7 @@ export async function POST(request: NextRequest) {
       invoiceNo,
       invoiceDate,
       invoices,
+      category,
     } = body
 
     if (!clientName || !clientPhone || !amountPending) {
@@ -126,6 +127,7 @@ export async function POST(request: NextRequest) {
       invoiceNo,
       invoiceDate,
       invoices,
+      category: category || 'general-recovery',
     })
  
     // Launch Puppeteer

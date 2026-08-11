@@ -80,7 +80,7 @@ export async function POST(req: NextRequest) {
 
     const { db, userId } = auth;
     const body = await req.json();
-    const { name, email, phone, address, state } = body;
+    const { name, email, phone, address, state, authRepName, authRepPhone } = body;
 
     // Validation
     if (!name || !name.trim()) {
@@ -110,6 +110,8 @@ export async function POST(req: NextRequest) {
       phone: phone.trim().replace(/\D/g, ""),
       address: address.trim(),
       state: state.trim(),
+      authRepName: authRepName ? authRepName.trim() : "",
+      authRepPhone: authRepPhone ? authRepPhone.trim().replace(/\D/g, "") : "",
       createdAt: new Date().toISOString(),
       updatedAt: new Date().toISOString()
     };
@@ -142,7 +144,7 @@ export async function PUT(req: NextRequest) {
 
     const { db, userId } = auth;
     const body = await req.json();
-    const { id, name, email, phone, address, state } = body;
+    const { id, name, email, phone, address, state, authRepName, authRepPhone } = body;
 
     if (!id) {
       return NextResponse.json({ error: "Representation ID is required." }, { status: 400 });
@@ -178,6 +180,8 @@ export async function PUT(req: NextRequest) {
           phone: phone.trim().replace(/\D/g, ""),
           address: address.trim(),
           state: state.trim(),
+          authRepName: authRepName ? authRepName.trim() : "",
+          authRepPhone: authRepPhone ? authRepPhone.trim().replace(/\D/g, "") : "",
           updatedAt: new Date().toISOString()
         }
       }

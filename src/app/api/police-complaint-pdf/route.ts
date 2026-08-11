@@ -60,6 +60,7 @@ export async function POST(request: NextRequest) {
       complainantPhone,
       complainantEmail,
       complainantAddress,
+      category,
     } = body
 
     if (!clientName || !amountPending || !policeStationName || !policeStationAddress) {
@@ -104,6 +105,7 @@ export async function POST(request: NextRequest) {
       complainantPhone,
       complainantEmail,
       complainantAddress,
+      category: category || 'general-recovery',
     })
  
     // Launch Puppeteer

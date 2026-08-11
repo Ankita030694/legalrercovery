@@ -2,6 +2,7 @@ import { NextRequest, NextResponse } from "next/server";
 import { getDbAndBucket } from "@/lib/mongodb";
 import { ObjectId } from "mongodb";
 import { generateNoticePDFBuffer } from "@/lib/pdf-generator";
+import { generateLoanNoticePDFBuffer } from "@/lib/loan-pdf-generator";
 import { sendNoticeEmail } from "@/lib/email";
 import fs from "fs";
 import path from "path";
@@ -365,26 +366,34 @@ async function handleDispatch(req: NextRequest) {
         // Generate PDF Buffer
         let pdfBuffer: Buffer;
         try {
-          pdfBuffer = await generateNoticePDFBuffer({
-            defaulterName: caseDoc.defaulterName,
-            phone: caseDoc.phone,
-            email: caseDoc.email,
-            address: caseDoc.address,
+          const pdfParams = {
+            defaulterName: sanitizeField(caseDoc.defaulterName),
+            phone: sanitizeField(caseDoc.phone),
+            email: sanitizeField(caseDoc.email),
+            address: sanitizeField(caseDoc.address),
             stuckAmount: caseDoc.stuckAmount,
-            policeStationName: caseDoc.policeStationName,
-            policeStationAddress: caseDoc.policeStationAddress,
-            policeStationEmail: caseDoc.policeStationEmail,
+            policeStationName: sanitizeField(caseDoc.policeStationName),
+            policeStationAddress: sanitizeField(caseDoc.policeStationAddress),
+            policeStationEmail: sanitizeField(caseDoc.policeStationEmail),
             createdAt: caseDoc.createdAt,
-            step: caseDoc.currentStep,
+            step: pendingStep,
             clientName: clientDisplayName,
             clientEmail: complainantEmail,
             clientPhone: complainantPhone,
-            clientAddress: complainantAddress,
+            clientAddress: sanitizeField(complainantAddress),
+            invoiceNo: sanitizeField(caseDoc.invoiceNo),
+            invoiceDate: sanitizeField(caseDoc.invoiceDate),
+            invoices: caseDoc.invoices,
             noticeRef,
-            invoiceNo: caseDoc.invoiceNo,
-            invoiceDate: caseDoc.invoiceDate,
-            isSpecialUser: clientUser?.phone?.replace(/\D/g, '').endsWith('8700343611') || clientUser?.phone?.replace(/\D/g, '').endsWith('8130104447')
-          });
+            isSpecialUser: isSpecialUser,
+            category: caseDoc.category || 'general-recovery',
+          };
+          
+          if (caseDoc.category === 'loan-recovery') {
+            pdfBuffer = await generateLoanNoticePDFBuffer(pdfParams);
+          } else {
+            pdfBuffer = await generateNoticePDFBuffer(pdfParams);
+          }
         } catch (pdfErr: any) {
           console.error(`[Queue Processor] PDF Generation error for Case ${caseDoc.caseId}:`, pdfErr);
           
@@ -601,26 +610,34 @@ async function handleDispatch(req: NextRequest) {
 
         let pdfBuffer: Buffer;
         try {
-          pdfBuffer = await generateNoticePDFBuffer({
-            defaulterName: caseDoc.defaulterName,
-            phone: caseDoc.phone,
-            email: caseDoc.email,
-            address: caseDoc.address,
+          const pdfParams = {
+            defaulterName: sanitizeField(caseDoc.defaulterName),
+            phone: sanitizeField(caseDoc.phone),
+            email: sanitizeField(caseDoc.email),
+            address: sanitizeField(caseDoc.address),
             stuckAmount: caseDoc.stuckAmount,
-            policeStationName: caseDoc.policeStationName,
-            policeStationAddress: caseDoc.policeStationAddress,
-            policeStationEmail: caseDoc.policeStationEmail,
+            policeStationName: sanitizeField(caseDoc.policeStationName),
+            policeStationAddress: sanitizeField(caseDoc.policeStationAddress),
+            policeStationEmail: sanitizeField(caseDoc.policeStationEmail),
             createdAt: caseDoc.createdAt,
             step: 4,
             clientName: clientDisplayName,
             clientEmail: complainantEmail,
             clientPhone: complainantPhone,
-            clientAddress: complainantAddress,
+            clientAddress: sanitizeField(complainantAddress),
+            invoiceNo: sanitizeField(caseDoc.invoiceNo),
+            invoiceDate: sanitizeField(caseDoc.invoiceDate),
+            invoices: caseDoc.invoices,
             noticeRef,
-            invoiceNo: caseDoc.invoiceNo,
-            invoiceDate: caseDoc.invoiceDate,
-            isSpecialUser: clientUser?.phone?.replace(/\D/g, '').endsWith('8700343611') || clientUser?.phone?.replace(/\D/g, '').endsWith('8130104447')
-          });
+            isSpecialUser: isSpecialUser,
+            category: caseDoc.category || 'general-recovery',
+          };
+          
+          if (caseDoc.category === 'loan-recovery') {
+            pdfBuffer = await generateLoanNoticePDFBuffer(pdfParams);
+          } else {
+            pdfBuffer = await generateNoticePDFBuffer(pdfParams);
+          }
         } catch (pdfErr: any) {
           console.error(`[Queue Processor] Step 4 PDF Generation failed for Case ${caseDoc.caseId}:`, pdfErr);
           await db.collection("cases").updateOne(

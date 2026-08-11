@@ -17,6 +17,7 @@ export interface RecoveryNoticeWeek1Data {
   invoiceNo?: string
   invoiceDate?: string
   invoices?: { invoiceNo: string; invoiceDate: string; amount: number }[]
+  category?: string
 }
 
 export function fillWeek1NoticeTemplate(data: RecoveryNoticeWeek1Data): string {
@@ -38,7 +39,10 @@ export function fillWeek1NoticeTemplate(data: RecoveryNoticeWeek1Data): string {
     invoiceNo,
     invoiceDate,
     invoices,
+    category,
   } = data
+
+
 
   // Convert amount to words helper
   function amountToWords(amount: string): string {

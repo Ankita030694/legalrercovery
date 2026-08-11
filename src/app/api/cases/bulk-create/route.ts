@@ -24,7 +24,7 @@ export async function POST(req: NextRequest) {
     }
 
     const body = await req.json();
-    const { cases, representeeId } = body;
+    const { cases, representeeId, category } = body;
 
     if (!cases || !Array.isArray(cases) || cases.length === 0) {
       return NextResponse.json({ error: "No cases provided for creation." }, { status: 400 });
@@ -91,11 +91,14 @@ export async function POST(req: NextRequest) {
         clientEmail: representee ? representee.email : (user.email || ""),
         clientPhone: representee ? representee.phone : (user.phone || ""),
         clientAddress: representee ? representee.address : (user.address || ""),
+        clientAuthRepName: representee ? (representee.authRepName || "") : "",
+        clientAuthRepPhone: representee ? (representee.authRepPhone || "") : "",
         ...(representee ? { representeeId: representee._id } : {}),
         invoiceNo: c.invoiceNo || "",
         invoiceDate: c.invoiceDate || "",
         invoices: Array.isArray(c.invoices) ? c.invoices : [],
         status: "active",
+        category: category || "general-recovery",
         currentStep: 1,
         createdAt: today.toISOString(),
         updatedAt: today.toISOString(),

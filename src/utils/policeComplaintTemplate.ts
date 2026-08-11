@@ -16,6 +16,7 @@ export interface PoliceComplaintData {
   complainantPhone?: string
   complainantEmail?: string
   complainantAddress?: string
+  category?: string
   noticeRef?: string
 }
 
@@ -37,8 +38,11 @@ export function fillPoliceComplaintTemplate(data: PoliceComplaintData): string {
     complainantPhone = "+91-XXXXXXXXXX",
     complainantEmail = "notice@amalegalsolutions.com",
     complainantAddress = "2493AP, Ground floor, Sector 57, Gurugram-122003 (Haryana)",
+    category,
     noticeRef
   } = data
+
+
 
   // Convert amount to words helper
   function amountToWords(amount: string): string {

@@ -1,0 +1,232 @@
+--- src/utils/recoveryNoticeWeek1Template.ts	2026-08-11 13:01:19
++++ src/utils/loanRecoveryNoticeWeek1Template.ts	2026-08-11 13:32:52
+@@ -1,11 +1,11 @@
+-export interface RecoveryNoticeWeek1Data {
++export interface LoanRecoveryNoticeWeek1Data {
+   clientName: string
+   clientPhone: string
+   clientAddress: string
+   clientEmail?: string
+-  startDate: string       // engagement date e.g. "01/01/2026"
+-  amountPending: string   // outstanding e.g. "30,000"
+-  noticeDate: string      // date of notice e.g. "30/04/2026"
++  startDate: string       
++  amountPending: string   
++  noticeDate: string      
+   headerLogoBase64?: string
+   stampLogoBase64?: string
+   barStampLogoBase64?: string
+@@ -20,7 +20,7 @@
+   category?: string
+ }
+ 
+-export function fillWeek1NoticeTemplate(data: RecoveryNoticeWeek1Data): string {
++export function fillLoanRecoveryNoticeWeek1Template(data: LoanRecoveryNoticeWeek1Data): string {
+   const {
+     clientName,
+     clientPhone,
+@@ -33,22 +33,16 @@
+     barStampLogoBase64,
+     signatureBase64,
+     noticeRef,
+-    complainantName = "Tech AMA",
+-    complainantAddress = "2493AP, Ground floor, Sector 57, Gurugram-122003 (Haryana)",
++    complainantName = "Actoloan",
++    complainantAddress = "SHOP NO-4, GROUND FLOOR, EXTN-2, NEAR NEW SARASWATI PUBLIC SCHOOL NANGLOI, Nangloi, West Delhi, New Delhi, Delhi, India,110041",
+     isSpecialUser = false,
+     invoiceNo,
+     invoiceDate,
+-    invoices,
+-    category,
+   } = data
+ 
+-
+-
+-  // Convert amount to words helper
+   function amountToWords(amount: string): string {
+     const num = parseFloat(amount.replace(/,/g, ''))
+     if (isNaN(num)) return amount
+-    // Simple conversion for common values — expand as needed
+     const ones = ['', 'One', 'Two', 'Three', 'Four', 'Five', 'Six', 'Seven', 'Eight', 'Nine',
+       'Ten', 'Eleven', 'Twelve', 'Thirteen', 'Fourteen', 'Fifteen', 'Sixteen', 'Seventeen', 'Eighteen', 'Nineteen']
+     const tens = ['', '', 'Twenty', 'Thirty', 'Forty', 'Fifty', 'Sixty', 'Seventy', 'Eighty', 'Ninety']
+@@ -64,53 +58,15 @@
+   }
+ 
+   const pendingWords = amountToWords(amountPending)
+-  let invoiceSuffix = "";
+-  if (invoices && invoices.length > 0) {
+-    invoiceSuffix = ` against Invoices mentioned in Annexure - A`;
+-  } else if (invoiceNo && invoiceNo.trim()) {
+-    invoiceSuffix = ` against Invoice No: <strong>${invoiceNo.trim()}</strong>${invoiceDate && invoiceDate.trim() ? ` dated <strong>${invoiceDate.trim()}</strong>` : ""}`;
+-  }
+-
+-
+-  let invoicesTableHTML = "";
+-  if (invoices && invoices.length > 0) {
+-    let rows = invoices.map((inv, idx) => {
+-      return `
+-        <tr>
+-          <td style="border: 1px solid #000; padding: 4px; text-align: center;">${idx + 1}</td>
+-          <td style="border: 1px solid #000; padding: 4px; text-align: center;">${inv.invoiceNo || "-"}</td>
+-          <td style="border: 1px solid #000; padding: 4px; text-align: center;">${inv.invoiceDate || "-"}</td>
+-          <td style="border: 1px solid #000; padding: 4px; text-align: right;">Rs. ${inv.amount.toLocaleString("en-IN")}</td>
+-        </tr>
+-      `;
+-    }).join("");
+-
+-    invoicesTableHTML = `
+-      <div style="page-break-before: always; margin-top: 20px;">
+-        <h3 style="text-align: center; margin-bottom: 10px; text-decoration: underline;">Annexure - A</h3>
+-        <table style="width: 100%; border-collapse: collapse; margin-bottom: 20px; font-size: 10.5pt;">
+-          <thead>
+-            <tr>
+-              <th style="border: 1px solid #000; padding: 6px; background: #f0f0f0;">S.No.</th>
+-              <th style="border: 1px solid #000; padding: 6px; background: #f0f0f0;">Invoice No.</th>
+-              <th style="border: 1px solid #000; padding: 6px; background: #f0f0f0;">Date</th>
+-              <th style="border: 1px solid #000; padding: 6px; background: #f0f0f0;">Amount</th>
+-            </tr>
+-          </thead>
+-          <tbody>
+-            ${rows}
+-          </tbody>
+-        </table>
+-      </div>
+-    `;
+-  }
++  
++  const parsedAmount = parseFloat(amountPending.toString().replace(/,/g, ''))
++  const formattedAmount = isNaN(parsedAmount) ? amountPending : parsedAmount.toLocaleString('en-IN')
+ 
+   return `<!DOCTYPE html>
+-<html lang="en">
++<html>
+ <head>
+-<meta charset="UTF-8" />
+-<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+-<title>Legal Demand Notice – Notice 1</title>
++<meta charset="utf-8" />
++<title>Legal Demand Notice</title>
+ <style>
+   * { margin: 0; padding: 0; box-sizing: border-box; }
+ 
+@@ -297,7 +253,6 @@
+ </style>
+ </head>
+ <body>
+-
+ <div class="page">
+   <table class="page-layout">
+     <!-- REPEATING HEADER -->
+@@ -369,7 +324,7 @@
+           <div class="content-area">
+ 
+   <!-- Notice Title -->
+-  <div class="notice-title">LEGAL DEMAND NOTICE</div>
++  <div class="notice-title">FIRST LEGAL DEMAND NOTICE</div>
+   <div class="dispatch-mode">THROUGH EMAIL/WHATSAPP</div>
+ 
+   <!-- Addressee -->
+@@ -383,7 +338,7 @@
+ 
+   <!-- Subject -->
+   <div class="subject-line">
+-    <strong>Subject: Demand Notice for Immediate Clearance of Outstanding Liability of ₹<strong>${amountPending}</strong> Towards <strong>${complainantName}</strong>${invoiceSuffix}</strong>
++    <strong>Subject: First Legal Demand Notice for Recovery of Outstanding Loan Amount & Filing of Police Complaint.</strong>
+   </div>
+ 
+   <!-- Salutation -->
+@@ -391,37 +346,77 @@
+ 
+   <!-- Body -->
+   <div class="notice-body">
+-
+-    <p>Under instructions from and on behalf of our client <strong>${complainantName}</strong>, residing at <strong>${complainantAddress}</strong>, we hereby call upon you to address and resolve the pending amount/claim arising out of dealings, transactions, services, agreements, commitments, or obligations between you and our client.</p>
+-
+-    <p>It has been informed to us that despite repeated requests, reminders, and communications made by our client, the matter remains unresolved and an amount of <strong>INR ${amountPending}/- (Rupees ${pendingWords} Only)</strong> as mentioned in Annexure - A is still due/pending towards our client.</p>
++    <p>Under the instructions and authority of our client, <strong>${complainantName}</strong> ("Our Client") having its registered address at <strong>${complainantAddress}</strong>, we hereby issue this First Legal Demand Notice, calling upon you to immediately discharge your outstanding financial obligations arising from the loan facility availed by you from Our Client.</p>
++    
++    <p>You had approached Our Client for financial assistance and, pursuant to your request, Our Client sanctioned a loan bearing Loan ID <strong>${invoiceNo || "__________"}</strong>, vide Sanction Date <strong>${invoiceDate || "__________"}</strong>, for a sum of <strong>₹${formattedAmount} (Rupees ${pendingWords} Only)</strong>, which was duly disbursed to you, upon your acceptance and execution of the Loan Agreement, repayment schedule, sanction terms, declarations, mandates, electronic records, and all other ancillary loan documents (collectively referred to as the "Loan Documents"), whether executed physically, electronically, or through any digital mode made available by Our Client.</p>
+ 
+-    <p>Our client has acted in good faith and fulfilled their part of obligations; however, the pending dues/claim have not been settled by you till date.</p>
++    <p>By voluntarily executing and accepting the Loan Documents, you unequivocally agreed to comply with all contractual obligations, including timely repayment of the loan together with applicable interest, penal interest, default charges, processing fees, taxes, and all other contractual dues in accordance with the agreed repayment schedule.</p>
+ 
+-    <p>You are therefore hereby requested to:</p>
+-    <p>1. Clear/pay the outstanding amount of <strong>INR ${amountPending}/- (Rupees ${pendingWords} Only)</strong>; and/or</p>
+-    <p>2. Resolve the matter amicably within 7 (Seven) days from the receipt of this notice.</p>
++    <p>Despite availing and utilizing the financial assistance extended by Our Client, you have wilfully failed to honour your repayment obligations. Your repeated defaults have rendered your loan account irregular, and in terms of the Loan Agreement, the entire outstanding liability has become immediately due and payable.</p>
+ 
+-    <p>In the event that you dispute the claim or amount, you are requested to provide your written response along with supporting documents within the aforesaid period for appropriate consideration.</p>
++    <p>As per the books of accounts and electronic records maintained by Our Client, an amount of <strong>₹${formattedAmount} (Rupees ${pendingWords} Only)</strong> ("Outstanding Amount") remains due and payable under Loan ID <strong>${invoiceNo || "__________"}</strong>. The Outstanding Amount comprises the outstanding principal, accrued contractual interest, overdue interest, default interest, penal charges, processing charges, applicable taxes, and all other contractual dues. Your liability continues to increase each day until full realization of the dues.</p>
+ 
+-    <p>Please take notice that failure to respond or resolve the matter within the stipulated time may compel our client to initiate appropriate legal proceedings and remedies available under applicable laws, entirely at your own risk as to costs and consequences.</p>
++    <p>Prior to issuing this Notice, Our Client made several bona fide attempts to resolve the matter through calls, SMS, WhatsApp messages, emails, and payment reminders. Despite repeated opportunities, you have willfully failed to regularize your account, constituting a material breach of your contractual obligations and compelling Our Client to initiate appropriate legal proceedings.</p>
+ 
+-    <p>This notice is being issued without prejudice to all rights, claims, remedies, and legal actions available to our client under law.</p>
++    <p>Your deliberate failure to discharge the outstanding dues, despite repeated opportunities, constitutes a clear breach of your contractual obligations, leaving Our Client with no option but to initiate appropriate legal proceedings for recovery of its lawful dues.</p>
+ 
+-    <p>A copy of this Notice has been preserved in our office for record and future course of action. You are hereby advised to preserve a copy of this notice, as the same may be required to be produced before the appropriate Court of Law and/or competent authority as and when required.</p>
++    <p>Our Client is in possession of complete documentary and electronic records relating to the loan transaction, including the Loan Documents, KYC records, account statements, repayment history, digital execution records, electronic consent, bank records, and all other relevant evidence. The same shall be duly relied upon before the competent judicial, arbitral, or statutory authorities in support of Our Client's claims.</p>
+ 
+-  </div>
++    <p>You are further put to notice that your continued default may be reported to the relevant Credit Information Companies in accordance with the Credit Information Companies (Regulation) Act, 2005, applicable RBI guidelines, and other governing laws. Such reporting may adversely affect your creditworthiness, CIBIL score, and future eligibility to obtain loans, credit facilities, or other banking services.</p>
+ 
+-  ${invoicesTableHTML}
++    <p>Further, where the facts and material available disclose dishonest intention, fraudulent inducement, dishonest retention or misappropriation of entrusted funds, deception, or acts amounting to unlawful intimidation, Our Client shall initiate appropriate criminal proceedings before the competent authorities, including for offences punishable under Section 318 of the Bharatiya Nyaya Sanhita, 2023 (Cheating), carrying punishment of imprisonment up to seven (7) years and fine; Section 316 of the Bharatiya Nyaya Sanhita, 2023 (Criminal Breach of Trust), punishable with imprisonment, fine, or both; and Section 351 of the Bharatiya Nyaya Sanhita, 2023 (Criminal Intimidation), punishable with imprisonment, fine, or both, together with such other civil and criminal proceedings and offences as may be disclosed during investigation or otherwise permissible in law.</p>
+ 
++    <p>Kindly note that Our Client is no longer inclined to extend unlimited opportunities for repayment. This Notice constitutes your final opportunity to avoid legal consequences.</p>
++
++    <p>Accordingly, you are hereby finally called upon to:</p>
++    <ol>
++      <li>Pay the Outstanding Amount of <strong>₹${formattedAmount} (Rupees ${pendingWords} Only)</strong> within Three (3) days from the date of receipt of this Notice; or</li>
++      <li>If you dispute the Outstanding Amount or any component thereof, submit a detailed written representation along with complete documentary evidence within the aforesaid period on <strong>Legal@actoloan.com</strong>. For an amicable solution you can also reach out to Mr. Raman Jhakal on 9896197115.</li>
++    </ol>
++
++    <p>TAKE FURTHER NOTICE that if you fail to clear the Outstanding Amount or submit a valid written response within Three (3) days from receipt of this Notice, Our Client shall, without any further notice, initiate all appropriate legal proceedings available under law, including but not limited to:</p>
++    <ol>
++      <li>Recovery proceedings before the competent Court, Arbitral Tribunal, or other judicial/quasi-judicial authority having jurisdiction;</li>
++      <li>Lodging of an appropriate complaint before the competent Police Authorities, wherever warranted by the facts and applicable law; and</li>
++      <li>Communication with the references furnished by you at the time of availing the loan facility, strictly in accordance with applicable law.</li>
++    </ol>
++
++    <p>Our Client further reserves all civil, contractual, statutory, criminal, arbitral, and other legal remedies available under law and shall rely upon all documentary and electronic evidence in support of its claims.</p>
++
++    <p>Our Client shall seek recovery of, inter alia:</p>
++    <ul>
++      <li>The entire Outstanding Amount;</li>
++      <li>Continuing contractual interest, overdue interest and default interest until full realization;</li>
++      <li>Penal charges and all other contractual dues;</li>
++      <li>Advocate's fees, legal expenses, court fees, arbitration costs, recovery expenses, execution charges and all incidental costs;</li>
++      <li>Attachment, execution and enforcement of all remedies available under the Loan Documents and applicable law; and</li>
++      <li>Any other reliefs, damages, compensation and remedies available under the Loan Documents and applicable law.</li>
++    </ul>
++
++    <p>Please further note that once legal proceedings are initiated, you may become liable for substantial additional financial liabilities towards litigation costs, legal representation, arbitration fees, execution expenses and other incidental charges, all of which shall be claimed from you in accordance with law.</p>
++
++    <p>Nothing contained herein shall be construed as a waiver of any rights or remedies available to Our Client, all of which are expressly reserved.</p>
++
++    <p>This Notice is issued without prejudice to all rights, remedies, and causes of action available to Our Client under the Loan Documents and applicable law.</p>
++
++    <p>Govern yourself accordingly, failing which Our Client shall proceed strictly in accordance with law without any further correspondence or indulgence.</p>
++
++    <p>A copy of this Notice is retained in our office for future reference and legal proceedings.</p>
++
++  </div>
++
+   <!-- Signature Block with Stamp right beside the signature -->
+   <div class="signature-block">
+     <div style="margin-bottom: 8px; white-space: nowrap; width: fit-content; text-align: left;">
+       ${signatureBase64 ? `<img src="data:image/png;base64,${signatureBase64}" alt="Signature" style="height: 50px; width: auto; display: inline-block; vertical-align: bottom; margin-right: 15px;" />` : ''}
+       ${isSpecialUser && barStampLogoBase64 ? `<img src="data:image/png;base64,${barStampLogoBase64}" alt="Stamp" style="height: 65px; width: auto; display: inline-block; vertical-align: bottom;" />` : (stampLogoBase64 ? `<img src="data:image/png;base64,${stampLogoBase64}" alt="Stamp" style="height: 65px; width: auto; display: inline-block; vertical-align: bottom;" />` : '')}
+     </div>
+-    <p class="signature-firm">For AMA Legal Solutions<sup>®</sup></p>
+-    <p class="signature-sub">Through Authorized Signatory</p>
++    <p class="signature-firm">Advocate, Anuj Anand Malik</p>
++    <p class="signature-firm">AMA Legal Solutions<sup>®</sup></p>
++    <p class="signature-sub">Digitally Signed by</p>
++    <p class="signature-sub">Anuj Anand Malik</p>
++    <p class="signature-sub">${noticeDate}</p>
++    <p class="signature-sub">Authorised Signature</p>
+   </div>
+ 
+           </div>

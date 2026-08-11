@@ -33,7 +33,7 @@ export async function POST(req: NextRequest) {
     }
 
     const body = await req.json();
-    const { text } = body;
+    const { text, category } = body;
 
     if (!text || !text.trim()) {
       return NextResponse.json({ error: "No text data provided." }, { status: 400 });
@@ -44,7 +44,7 @@ export async function POST(req: NextRequest) {
       apiKey: apiKey,
     });
 
-    const systemPrompt = `
+    const generalSystemPrompt = `
       **Crucial Guidelines for Handling Tabular Spreadsheet Data:**
       1. **STRICT HORIZONTAL ROW ALIGNMENT**: The text is an Excel paste. You MUST process the text strictly row-by-row. DO NOT attempt to solve a jigsaw puzzle by matching invoice dates to due dates across different rows. If an invoice number and an amount appear on Row 1, they belong together. If an invoice number and an amount appear on Row 2, they belong together.
       
@@ -101,6 +101,65 @@ export async function POST(req: NextRequest) {
         ]
       }
     `;
+
+    const loanRecoverySystemPrompt = `
+      **Crucial Guidelines for Handling Loan Recovery Tabular Spreadsheet Data:**
+      1. **STRICT HORIZONTAL ROW ALIGNMENT**: The text is an Excel paste. You MUST process the text strictly row-by-row.
+      
+      2. **Amounts**:
+      Extract the exact specific outstanding loan amount for each borrower.
+      
+      3. **Inheritance for Merged/Sparse Cells**: In tabular data, subsequent rows for the same borrower will have blank name/contact columns but will contain additional loans and their corresponding amounts. You MUST group all these subsequent loans under the same borrower.
+      4. **Group by Borrower**: You MUST group all loans and amounts for a single borrower into a SINGLE case object. Do NOT create separate case objects for the same borrower.
+      5. **Date Years**: If a date is missing a year, infer the year from the corresponding context.
+      
+      **Schema Details**:
+      For EACH individual LOAN RECOVERY case, extract the following:
+      - defaulterName: Legal name of the borrower (e.g. "Arun Kumar").
+      - entityType: "Company" or "Individual" (infer from name, usually "Individual" for loans).
+      - phone: A 10-digit primary phone number of the borrower, cleaned of spaces/hyphens. If multiple, extract the first one here.
+      - phone2: An optional secondary phone number, if available.
+      - email: Primary email of the borrower. Crucially, you MUST identify and rectify obvious domain typos in email addresses (e.g., "ggmail.com", "gamil.com", "gmial.com", "gmal.com" should be corrected to "gmail.com").
+      - email2: An optional secondary email, if available.
+      - ccEmails: Extract any emails designated as CC (carbon copy). If globally provided for the batch, apply to EVERY single case. Combine multiple CC emails with a comma. Return empty string if none found.
+      - address: Complete physical address of the borrower.
+      - state: Standardized Indian State or UT name matching the address. Extract this from the address or state column.
+      - dueDate: The earliest or most relevant default date or due date in "YYYY-MM-DD" format. Dates in the future are ACCEPTABLE.
+      - invoices: An array of objects representing each individual LOAN, containing:
+          - invoiceNo: A string representation of the Loan Account Number or Loan ID.
+          - invoiceDate: The loan disbursement date in "YYYY-MM-DD" format. Set to null if not present.
+          - dueDate: The payment due date or default date in "YYYY-MM-DD" format. Set to null if not present.
+          - amount: The specific outstanding loan amount or principal amount as a number. Clean all commas and currency symbols.
+
+      **Return ONLY a valid JSON object with this exact structure**:
+      {
+        "cases": [
+          {
+            "defaulterName": "...",
+            "entityType": "...",
+            "phone": "...",
+            "phone2": "...",
+            "email": "...",
+            "email2": "...",
+            "ccEmails": "...",
+            "address": "...",
+            "state": "...",
+            "dueDate": "YYYY-MM-DD",
+            "invoices": [
+              {
+                "invoiceNo": "LOAN-123",
+                "invoiceDate": "YYYY-MM-DD",
+                "dueDate": "YYYY-MM-DD",
+                "amount": 500000
+              }
+            ]
+          }
+        ]
+      }
+    `;
+
+    const systemPrompt = category === 'loan-recovery' ? loanRecoverySystemPrompt : generalSystemPrompt;
+
 
     console.log(`[Bulk AI Parse] Parsing text input of length ${text.length}...`);
 

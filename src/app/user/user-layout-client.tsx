@@ -16,7 +16,8 @@ import {
   ShieldCheck,
   LayoutDashboard,
   Info,
-  Briefcase
+  Briefcase,
+  FlaskConical
 } from "lucide-react";
 
 const navigationItems = [
@@ -54,8 +55,10 @@ const navigationItems = [
 
 export default function UserPortalLayoutClient({
   children,
+  initialProfile
 }: {
   children: React.ReactNode;
+  initialProfile?: { name: string; email: string; hasUnlimitedCases: boolean; };
 }) {
   const pathname = usePathname();
   const router = useRouter();
@@ -63,9 +66,9 @@ export default function UserPortalLayoutClient({
   const [activeCount, setActiveCount] = useState(0);
 
   // Dynamic user details
-  const [userName, setUserName] = useState("");
-  const [userEmail, setUserEmail] = useState("");
-  const [hasUnlimitedCases, setHasUnlimitedCases] = useState(false);
+  const [userName, setUserName] = useState(initialProfile?.name || "");
+  const [userEmail, setUserEmail] = useState(initialProfile?.email || "");
+  const [hasUnlimitedCases, setHasUnlimitedCases] = useState(initialProfile?.hasUnlimitedCases || false);
 
   // Onboarding tour state
   const [onboardingState, setOnboardingState] = useState<string | null>(null);
@@ -80,6 +83,13 @@ export default function UserPortalLayoutClient({
         href: "/user/representees",
         icon: Briefcase,
         mobileLabel: "Clients"
+      });
+      // Add a test drafts page
+      items.push({
+        label: "Test Drafts",
+        href: "/user/test",
+        icon: FlaskConical,
+        mobileLabel: "Test"
       });
     }
     return items;

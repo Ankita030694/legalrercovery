@@ -102,7 +102,8 @@ export async function POST(req: NextRequest) {
       policeStationName,
       policeStationEmail,
       policeStationAddress,
-      representeeId
+      representeeId,
+      category
     } = body;
 
     // Validate fields
@@ -216,6 +217,7 @@ export async function POST(req: NextRequest) {
     const caseDoc = {
       userId, // Strictly link case to the authenticated client ObjectId
       caseId,
+      category: category || "general-recovery",
       defaulterName,
       entityType,
       phone,
@@ -232,6 +234,8 @@ export async function POST(req: NextRequest) {
       clientEmail: representee ? representee.email : (user.email || ""),
       clientPhone: representee ? representee.phone : (user.phone || ""),
       clientAddress: representee ? representee.address : (user.address || ""),
+      clientAuthRepName: representee ? (representee.authRepName || "") : "",
+      clientAuthRepPhone: representee ? (representee.authRepPhone || "") : "",
       ...(representee ? { representeeId: representee._id } : {}),
       status: "active",
       currentStep: 1,

@@ -61,6 +61,7 @@ export default function NewRecoveryForm() {
   const [defaulterPincode, setDefaulterPincode] = useState("");
   const [stuckAmount, setStuckAmount] = useState("");
   const [dueDate, setDueDate] = useState("");
+  const [category, setCategory] = useState("general-recovery");
 
   // ── FORM STATE: SECTION 2 (POLICE AUTHORITY) ──
   const [policeStationName, setPoliceStationName] = useState("");
@@ -99,6 +100,8 @@ export default function NewRecoveryForm() {
   // Onboarding tour states
   const [onboardingState, setOnboardingState] = useState<string | null>(null);
   const [onboardingTourStep, setOnboardingTourStep] = useState(1);
+
+  const isSpecialUser = originalClientProfile?.phone?.replace(/\D/g, '').endsWith('8700343611') || originalClientProfile?.phone?.replace(/\D/g, '').endsWith('8130104447');
 
   const handleRepresentationChange = (repId: string) => {
     setSelectedRepresenteeId(repId);
@@ -253,7 +256,7 @@ export default function NewRecoveryForm() {
         headers: {
           "Content-Type": "application/json"
         },
-        body: JSON.stringify({ text: bulkText })
+        body: JSON.stringify({ text: bulkText, category: category })
       });
       const data = await response.json();
       if (!response.ok) {
@@ -295,7 +298,8 @@ export default function NewRecoveryForm() {
         },
         body: JSON.stringify({
           cases: parsedCases,
-          representeeId: selectedRepresenteeId
+          representeeId: selectedRepresenteeId,
+          category: category
         })
       });
       const data = await response.json();
@@ -565,7 +569,8 @@ export default function NewRecoveryForm() {
           policeStationName,
           policeStationEmail,
           policeStationAddress,
-          representeeId: selectedRepresenteeId !== "self" ? selectedRepresenteeId : undefined
+          representeeId: selectedRepresenteeId === "self" ? undefined : selectedRepresenteeId,
+          category
         }),
       });
 
@@ -655,15 +660,38 @@ export default function NewRecoveryForm() {
                 </p>
               </div>
 
+              {/* Notice Category (Admin Only) */}
+              {isSpecialUser && (
+                <div className="flex flex-col gap-1.5">
+                  <label className="text-xs font-bold text-slate-655 flex items-center gap-1.5">
+                    <FileText className="w-3.5 h-3.5 text-slate-450" /> Notice Category (Admin Only)
+                  </label>
+                  <div className="relative w-full max-w-md">
+                    <select 
+                      value={category}
+                      onChange={(e) => setCategory(e.target.value)}
+                      className="appearance-none w-full bg-slate-50 hover:bg-slate-100/50 border border-[#E5E7EB] focus:border-[#DC2626] rounded-xl px-4 py-3 text-sm font-semibold outline-none transition-colors pr-10 cursor-pointer"
+                    >
+                      <option value="general-recovery">General Recovery</option>
+                      <option value="loan-recovery">Loan Recovery</option>
+                    </select>
+                    <ChevronDown className="absolute right-3 top-1/2 -translate-y-1/2 w-4 h-4 text-slate-400 pointer-events-none" />
+                  </div>
+                </div>
+              )}
+
               {/* Large Textarea for Bulk Paste */}
               <div className="flex flex-col gap-1.5">
                 <label className="text-xs font-bold text-slate-655 flex items-center justify-between">
-                  <span>Defaulter & Dues Bulk Data (Spreadsheet Dump)</span>
+                  <span>{category === 'loan-recovery' ? 'Borrower & Loan Bulk Data (Spreadsheet Dump)' : 'Defaulter & Dues Bulk Data (Spreadsheet Dump)'}</span>
                   <span className="text-[10px] font-extrabold text-[#DC2626] bg-red-50 border border-red-100 px-2 py-0.5 rounded">Tab-separated / Excel Paste Supported</span>
                 </label>
                 <textarea
                   rows={10}
-                  placeholder={`Defaulter Legal Name\tOutstanding Dues Amount\tOriginal Payment Due Date\tDefaulter Contact Numbers\tDefaulter Email Addresses\tDefaulter State / UT\tComplete Physical Address of Defaulter\tInvoice no\tInvoice Date\nDr. Amrita Sharma\t1,461,994.00\t24-Nov\t97160 30793\tzumaxaa@ggmail.com\tHaryana\tMetro Pillar Number 461, Gurugram...\tGGN FY 23-24 Sales 5848\t31-Jan-24`}
+                  placeholder={category === 'loan-recovery' 
+                    ? "Borrower Legal Name\tOutstanding Loan Amount\tDefault/Due Date\tBorrower Contact Numbers\tBorrower Email Addresses\tBorrower State / UT\tComplete Physical Address of Borrower\tLoan ID\tDisbursement Date\nArun Kumar\t5,00,000.00\t24-Nov\t97160 30793\tarun@gmail.com\tHaryana\tMetro Pillar Number 461, Gurugram...\tLOAN-9923\t31-Jan-24"
+                    : "Defaulter Legal Name\tOutstanding Dues Amount\tOriginal Payment Due Date\tDefaulter Contact Numbers\tDefaulter Email Addresses\tDefaulter State / UT\tComplete Physical Address of Defaulter\tInvoice no\tInvoice Date\nDr. Amrita Sharma\t1,461,994.00\t24-Nov\t97160 30793\tzumaxaa@ggmail.com\tHaryana\tMetro Pillar Number 461, Gurugram...\tGGN FY 23-24 Sales 5848\t31-Jan-24"
+                  }
                   value={bulkText}
                   onChange={(e) => setBulkText(e.target.value)}
                   className="bg-slate-50 hover:bg-slate-100/50 border border-[#E5E7EB] focus:border-[#DC2626] rounded-2xl px-4 py-3 text-xs font-mono outline-none resize-none transition-colors leading-relaxed"
@@ -1331,6 +1359,26 @@ export default function NewRecoveryForm() {
                     ? "Notices will list your administrator details as client." 
                     : "Notices will automatically use organization details for preview and dispatch."}
                 </p>
+              </div>
+            )}
+            
+            {/* Notice Category (Admin Only) */}
+            {isSpecialUser && (
+              <div className="flex flex-col">
+                <label className="text-xs font-bold text-slate-600 mb-1.5 flex items-center gap-1.5">
+                  <FileText className="w-3.5 h-3.5 text-slate-400" /> Notice Category (Admin Only)
+                </label>
+                <div className="relative">
+                  <select 
+                    value={category}
+                    onChange={(e) => setCategory(e.target.value)}
+                    className="w-full bg-slate-50 hover:bg-slate-100/50 border border-[#E5E7EB] focus:border-[#DC2626] rounded-xl px-4 py-3 text-sm font-semibold outline-none transition-colors appearance-none cursor-pointer"
+                  >
+                    <option value="general-recovery">General Recovery</option>
+                    <option value="loan-recovery">Loan Recovery</option>
+                  </select>
+                  <ChevronDown className="absolute right-4 top-1/2 -translate-y-1/2 w-4 h-4 text-slate-400 pointer-events-none" />
+                </div>
               </div>
             )}
             

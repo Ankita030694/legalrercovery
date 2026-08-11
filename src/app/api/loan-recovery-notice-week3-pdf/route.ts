@@ -1,7 +1,7 @@
 import { NextRequest, NextResponse } from 'next/server'
 import puppeteer from 'puppeteer-core'
 import fs from 'fs'
-import { fillWeek3NoticeTemplate } from '@/utils/recoveryNoticeWeek3Template'
+import { fillLoanRecoveryNoticeWeek3Template } from '@/utils/loanRecoveryNoticeWeek3Template'
 import { verifyAuth } from '@/lib/auth'
 import { getDbAndBucket } from '@/lib/mongodb'
 import { ObjectId } from 'mongodb'
@@ -74,8 +74,11 @@ export async function POST(request: NextRequest) {
       complainantAddress,
       invoiceNo,
       invoiceDate,
+      disbursementDate,
       invoices,
       category,
+      clientAuthRepName,
+      clientAuthRepPhone,
     } = body
 
     if (!clientName || !clientPhone || !amountPending) {
@@ -107,7 +110,7 @@ export async function POST(request: NextRequest) {
       console.warn('Could not read logo PNGs:', e)
     }
 
-    const html = fillWeek3NoticeTemplate({
+    const html = fillLoanRecoveryNoticeWeek3Template({
       clientName,
       clientPhone,
       clientAddress: clientAddress || 'Address on file',
@@ -125,8 +128,11 @@ export async function POST(request: NextRequest) {
       isSpecialUser,
       invoiceNo,
       invoiceDate,
+      disbursementDate,
       invoices,
       category: category || 'general-recovery',
+      clientAuthRepName,
+      clientAuthRepPhone,
     })
  
     // Launch Puppeteer
@@ -162,10 +168,53 @@ export async function POST(request: NextRequest) {
     const page = await browser.newPage()
     await page.setContent(html, { waitUntil: 'domcontentloaded', timeout: 15000 })
 
+    // Build header HTML for Puppeteer (injected natively on every page)
+    const headerTemplate = `
+      <div style="width:100%; font-family:'Times New Roman',Times,serif; font-size:11pt; padding: 8px 22mm 0 22mm; box-sizing:border-box;">
+        ${headerLogoBase64 ? `<div style="text-align:center; margin-bottom:4px;"><img src="data:image/png;base64,${headerLogoBase64}" style="height:60px; width:auto;" /></div>` : ''}
+        <div style="text-align:center; font-size:11pt; margin-bottom:3px;"><strong>Advocate &amp; Solicitors</strong></div>
+        <div style="text-align:center; font-size:11pt; margin-bottom:2px;">2493AP, Ground floor, Sector 57, Gurugram-122003 (Haryana)</div>
+        <div style="text-align:center; font-size:11pt; margin-bottom:4px;">E: <span style="color:#0066cc; text-decoration:underline;">notice@amalegalsolutions.com</span></div>
+        <table style="width:100%; font-size:11pt; border-collapse:collapse;">
+          <tr>
+            <td style="text-align:left; font-weight:bold;">Advocate Anuj Anand Malik</td>
+            <td style="text-align:right; font-weight:bold; font-size:11pt;">MEMBER - BAR COUNCIL OF DELHI</td>
+          </tr>
+          <tr>
+            <td style="text-align:left; font-weight:bold;">Advocate Shrey Arora</td>
+            <td style="text-align:right; font-weight:bold; font-size:11pt;">MEMBER - MCIA (MUMBAI)</td>
+          </tr>
+          <tr>
+            <td></td>
+            <td style="text-align:right; font-weight:bold; font-size:11pt;">ASSOCIATION MEMBER - IACC</td>
+          </tr>
+        </table>
+        <div style="border-bottom:1.5px solid #000; margin-top:4px;"></div>
+      </div>`
+
+    // Build footer HTML for Puppeteer
+    const footerTemplate = `
+      <div style="width:100%; font-family:'Times New Roman',Times,serif; padding: 0 22mm 6px 22mm; box-sizing:border-box;">
+        <div style="border-top:1.5px solid #000; border-bottom:1.5px solid #000; padding:4px 0;">
+          <table style="width:100%; border-collapse:collapse;">
+            <tr>
+              <td style="width:50px;"></td>
+              <td style="text-align:center; font-size:12pt; font-weight:bold; letter-spacing:0.3px; white-space:nowrap;">GURUGRAM - DELHI - NOIDA - BENGALURU - MUMBAI</td>
+              <td style="width:50px; text-align:right; vertical-align:middle;">
+                ${stampLogoBase64 ? `<img src="data:image/png;base64,${stampLogoBase64}" style="height:40px; width:auto;" />` : ''}
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>`
+
     const pdf = await page.pdf({
       format: 'A4',
-      margin: { top: '20mm', right: '18mm', bottom: '20mm', left: '22mm' },
+      margin: { top: '58mm', right: '18mm', bottom: '22mm', left: '22mm' },
       printBackground: true,
+      displayHeaderFooter: true,
+      headerTemplate,
+      footerTemplate,
     })
 
     await browser.close()
@@ -174,12 +223,12 @@ export async function POST(request: NextRequest) {
 
     return new NextResponse(new Uint8Array(pdf), {
       headers: {
-        'Content-Disposition': `attachment; filename="${safeClientName}_week3_recovery_notice.pdf"`,
+        'Content-Disposition': `attachment; filename="${safeClientName}_week3_final_notice.pdf"`,
         'Content-Type': 'application/pdf',
       },
     })
   } catch (error: any) {
-    console.error('[recovery-notice-week3-pdf] Error:', error)
+    console.error('[recall-notice-week3-pdf] Error:', error)
     return NextResponse.json({ error: error.message }, { status: 500 })
   }
 }

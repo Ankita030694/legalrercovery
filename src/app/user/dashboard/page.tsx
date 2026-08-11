@@ -654,6 +654,16 @@ export default function UserDashboard() {
                         Representing: {c.representeeName}
                       </span>
                     )}
+                    {isSpecialUser && c.category === "loan-recovery" && (
+                      <span className="text-[10px] font-extrabold bg-purple-50 text-purple-600 border border-purple-200 px-2.5 py-0.5 rounded-full uppercase tracking-wider shrink-0">
+                        Loan Recovery
+                      </span>
+                    )}
+                    {isSpecialUser && (!c.category || c.category === "general-recovery") && (
+                      <span className="text-[10px] font-extrabold bg-slate-100 text-slate-500 border border-slate-200 px-2.5 py-0.5 rounded-full uppercase tracking-wider shrink-0">
+                        General Recovery
+                      </span>
+                    )}
                     <span className={`text-[10px] font-extrabold uppercase px-2.5 py-0.5 rounded-full border
                       ${c.status === "recovered" 
                         ? "bg-green-50 border-green-200 text-[#10B981]" 

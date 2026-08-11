@@ -6,6 +6,7 @@ import { ObjectId } from "mongodb";
 import fs from "fs";
 import path from "path";
 import { generateNoticePDFBuffer } from "@/lib/pdf-generator";
+import { generateLoanNoticePDFBuffer } from "@/lib/loan-pdf-generator";
 import { sendNoticeEmail } from "@/lib/email";
 import { sendNoticeWati } from "@/lib/wati";
 import { sendAndLogClientNotification } from "@/lib/notifications";
@@ -77,7 +78,7 @@ export async function POST(req: NextRequest) {
 
     let pdfBuffer: Buffer;
     try {
-      pdfBuffer = await generateNoticePDFBuffer({
+      const pdfParams = {
         defaulterName: sanitizeField(caseDoc.defaulterName),
         phone: sanitizeField(caseDoc.phone),
         email: sanitizeField(caseDoc.email),
@@ -96,8 +97,15 @@ export async function POST(req: NextRequest) {
         invoiceDate: sanitizeField(caseDoc.invoiceDate),
         invoices: caseDoc.invoices,
         noticeRef: `${caseDoc.caseId}-N1`,
-        isSpecialUser: isSpecialUser
-      });
+        isSpecialUser: isSpecialUser,
+        category: caseDoc.category || 'general-recovery',
+      };
+      
+      if (caseDoc.category === 'loan-recovery') {
+        pdfBuffer = await generateLoanNoticePDFBuffer(pdfParams);
+      } else {
+        pdfBuffer = await generateNoticePDFBuffer(pdfParams);
+      }
     } catch (pdfErr: any) {
       console.error("[Manual Start] PDF generation failed:", pdfErr);
       await db.collection("cases").updateOne(

@@ -15,7 +15,8 @@ import {
   AlertTriangle,
   FolderClosed,
   ChevronRight,
-  Check
+  Check,
+  User
 } from "lucide-react";
 
 interface Representee {
@@ -26,6 +27,8 @@ interface Representee {
   phone: string;
   address: string;
   state: string;
+  authRepName?: string;
+  authRepPhone?: string;
   createdAt: string;
 }
 
@@ -44,6 +47,8 @@ export default function RepresenteesPage() {
   const [formPhone, setFormPhone] = useState("");
   const [formAddress, setFormAddress] = useState("");
   const [formState, setFormState] = useState("");
+  const [formAuthRepName, setFormAuthRepName] = useState("");
+  const [formAuthRepPhone, setFormAuthRepPhone] = useState("");
   const [isSaving, setIsSaving] = useState(false);
   const [formError, setFormError] = useState<string | null>(null);
 
@@ -156,6 +161,8 @@ export default function RepresenteesPage() {
     setFormPhone("");
     setFormAddress("");
     setFormState("");
+    setFormAuthRepName("");
+    setFormAuthRepPhone("");
     setFormError(null);
     setModalOpen(true);
   };
@@ -167,6 +174,8 @@ export default function RepresenteesPage() {
     setFormPhone(rep.phone);
     setFormAddress(rep.address);
     setFormState(rep.state);
+    setFormAuthRepName(rep.authRepName || "");
+    setFormAuthRepPhone(rep.authRepPhone || "");
     setFormError(null);
     setModalOpen(true);
   };
@@ -193,7 +202,9 @@ export default function RepresenteesPage() {
         email: formEmail,
         phone: formPhone,
         address: formAddress,
-        state: formState
+        state: formState,
+        authRepName: formAuthRepName,
+        authRepPhone: formAuthRepPhone
       };
 
       const response = await fetch("/api/representees", {
@@ -324,6 +335,12 @@ export default function RepresenteesPage() {
 
                   {/* Contact Details List */}
                   <div className="flex flex-col gap-2 border-t border-[#E5E7EB]/50 pt-3 text-xs font-semibold text-slate-500">
+                    {rep.authRepName && (
+                      <div className="flex items-center gap-2 text-slate-600">
+                        <User className="w-3.5 h-3.5 text-[#DC2626] shrink-0" />
+                        <span className="truncate">{rep.authRepName} {rep.authRepPhone ? `(+91-${rep.authRepPhone})` : ''}</span>
+                      </div>
+                    )}
                     <div className="flex items-center gap-2">
                       <Mail className="w-3.5 h-3.5 text-slate-400 shrink-0" />
                       <span className="truncate">{rep.email}</span>
@@ -427,6 +444,31 @@ export default function RepresenteesPage() {
 
               {/* Email & Phone */}
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                <div className="flex flex-col">
+                  <label className="text-xs font-bold text-slate-600 mb-1.5">
+                    Authorized Representative Name (Optional)
+                  </label>
+                  <input
+                    type="text"
+                    placeholder="e.g. Mr. Raman Jhakal"
+                    value={formAuthRepName}
+                    onChange={(e) => setFormAuthRepName(e.target.value)}
+                    className="bg-slate-50 border border-[#E5E7EB] focus:border-[#DC2626] rounded-xl px-4 py-3 text-sm font-semibold outline-none focus:ring-1 focus:ring-[#DC2626]"
+                  />
+                </div>
+                <div className="flex flex-col">
+                  <label className="text-xs font-bold text-slate-600 mb-1.5">
+                    Authorized Representative Phone (Optional)
+                  </label>
+                  <input
+                    type="tel"
+                    maxLength={10}
+                    placeholder="e.g. 9896197115"
+                    value={formAuthRepPhone}
+                    onChange={(e) => setFormAuthRepPhone(e.target.value.replace(/\D/g, "").slice(0, 10))}
+                    className="bg-slate-50 border border-[#E5E7EB] focus:border-[#DC2626] rounded-xl px-4 py-3 text-sm font-semibold outline-none focus:ring-1 focus:ring-[#DC2626]"
+                  />
+                </div>
                 <div className="flex flex-col">
                   <label className="text-xs font-bold text-slate-600 mb-1.5">
                     Contact Email Address <span className="text-red-500">*</span>
