@@ -353,6 +353,7 @@ async function handleDispatch(req: NextRequest) {
       }
       const clientUser = await db.collection("users").findOne({ _id: userQueryId });
       const clientDisplayName = caseDoc.clientName || clientUser?.name || clientUser?.companyName || "Tech AMA";
+      const isSpecialUser = clientUser?.phone?.replace(/\D/g, '').endsWith('8700343611') || clientUser?.phone?.replace(/\D/g, '').endsWith('8130104447');
 
       console.log(`[Queue Processor] Processing Case: ${caseDoc.caseId}, Step: ${caseDoc.currentStep}`);
 
@@ -551,7 +552,6 @@ async function handleDispatch(req: NextRequest) {
         const clientEmail = caseDoc.clientEmail || clientUser?.email || caseDoc.clientEmail;
         
         // Check if the advocate has disabled police complaints
-        const isSpecialUser = clientUser?.phone?.replace(/\D/g, '').endsWith('8700343611') || clientUser?.phone?.replace(/\D/g, '').endsWith('8130104447');
         const sendComplaints = clientUser?.sendPoliceComplaints !== false;
 
         if (isSpecialUser && !sendComplaints) {
