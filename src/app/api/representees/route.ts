@@ -37,10 +37,22 @@ export async function GET(req: NextRequest) {
     if (auth.errorResponse) return auth.errorResponse;
 
     const { db, userId } = auth;
+    let queryUserId: any = userId;
+
+    const sessionUser = await db.collection("users").findOne({ _id: userId });
+    if (sessionUser && (sessionUser.phone?.replace(/\D/g, '').endsWith('8700343611') || sessionUser.phone?.replace(/\D/g, '').endsWith('8130104447'))) {
+      const admins = await db.collection("users").find({
+        phone: { $regex: /(8700343611|8130104447)$/ }
+      }).toArray();
+      const adminIds = admins.map(a => a._id);
+      if (adminIds.length > 0) {
+        queryUserId = { $in: adminIds };
+      }
+    }
 
     const representees = await db
       .collection("representees")
-      .find({ userId })
+      .find({ userId: queryUserId })
       .sort({ createdAt: -1 })
       .toArray();
 

@@ -33,15 +33,27 @@ export async function GET(req: NextRequest) {
     }
 
     const userId = new ObjectId((session.user as any).id);
+    let queryUserId: any = userId;
+
+    const sessionUser = await db.collection("users").findOne({ _id: userId });
+    if (sessionUser && (sessionUser.phone?.replace(/\D/g, '').endsWith('8700343611') || sessionUser.phone?.replace(/\D/g, '').endsWith('8130104447'))) {
+      const admins = await db.collection("users").find({
+        phone: { $regex: /(8700343611|8130104447)$/ }
+      }).toArray();
+      const adminIds = admins.map(a => a._id);
+      if (adminIds.length > 0) {
+        queryUserId = { $in: adminIds };
+      }
+    }
 
     // Fetch representees to map their names to cases in memory
-    const representees = await db.collection("representees").find({ userId }).toArray();
+    const representees = await db.collection("representees").find({ userId: queryUserId }).toArray();
     const representeeMap = new Map(representees.map(r => [r._id.toString(), r]));
 
     // Retrieve cases securely filtered by userId
     const cases = await db
       .collection("cases")
-      .find({ userId })
+      .find({ userId: queryUserId })
       .sort({ createdAt: -1 })
       .toArray();
 
