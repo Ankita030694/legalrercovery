@@ -63,8 +63,8 @@ export default function UserPortalLayoutClient({
   const [activeCount, setActiveCount] = useState(0);
 
   // Dynamic user details
-  const [userName, setUserName] = useState("Tech AMA");
-  const [userEmail, setUserEmail] = useState("tech.ama123@gmail.com");
+  const [userName, setUserName] = useState("");
+  const [userEmail, setUserEmail] = useState("");
   const [hasUnlimitedCases, setHasUnlimitedCases] = useState(false);
 
   // Onboarding tour state
@@ -151,6 +151,7 @@ export default function UserPortalLayoutClient({
   }, []);
 
   const getInitials = (n: string) => {
+    if (!n) return "";
     return n
       .split(" ")
       .map((part) => part[0])
