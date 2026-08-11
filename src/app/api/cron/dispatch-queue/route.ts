@@ -18,6 +18,8 @@ function formatDateString(d: Date): string {
   return `${String(d.getDate()).padStart(2, '0')}-${String(d.getMonth() + 1).padStart(2, '0')}-${d.getFullYear()}`;
 }
 
+const sanitizeField = (val: any) => (val ? String(val).trim() : "");
+
 const BATCH_SIZE = 25;
 
 // --- Modular Helper Functions ---
