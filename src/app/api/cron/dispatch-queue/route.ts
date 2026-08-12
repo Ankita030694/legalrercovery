@@ -77,10 +77,36 @@ async function sendAccusedDispatch(
   </div>
 </div>`;
   } else if (step === 2) {
-    emailSubject = caseDoc.category === 'loan-recovery'
-      ? `Loan Recall-cum-Recovery Notice and Intimation of Filing Complaint before the Commissioner of Police for Offences under Section 318(4) of the Bharatiya Nyaya Sanhita, 2023 (Ref: ${noticeRef})`
-      : `Second & Final Legal Demand Notice (Ref: ${noticeRef})`;
-    emailBody = `<div style="font-family: Arial, sans-serif; font-size: 15px; color: #1f2937; line-height: 1.6; max-width: 650px;">
+    const isLoanRecovery = caseDoc.category === 'loan-recovery';
+    if (isLoanRecovery) {
+      // loan-recovery Step 2 = police complaint to SHO
+      emailSubject = `COMPLAINT ON BEHALF OF ${clientDisplayName.toUpperCase()} AGAINST THE BORROWER FOR DELIBERATE AND WILFUL NON-PAYMENT OF OUTSTANDING LOAN DUES AND OTHER ACTS ATTRACTING APPLICABLE PROVISIONS OF LAW - Ref: ${noticeRef}`;
+      emailBody = `To,
+The Station House Officer,
+${caseDoc.policeStationName}
+${caseDoc.policeStationAddress}
+
+Respected Sir/Madam,
+
+On behalf of our client (Complainant), namely ${clientDisplayName}, we are formally submitting the advocate-backed Criminal Police Complaint against the accused/borrower, ${caseDoc.defaulterName}, for offences of Cheating, Criminal Breach of Trust, and Dishonest Non-Payment under the Bharatiya Nyaya Sanhita (BNS).
+
+Respective details of the Complainant & the Accused:
+- Complainant (Client) Name: ${clientDisplayName}
+- Complainant (Client) Email ID: ${complainantEmail}
+- Accused (Defaulter) Name: ${caseDoc.defaulterName}
+- Accused (Defaulter) Email ID: ${caseDoc.email}
+
+Please find the completed and formal signed complaint PDF attached to this email for your immediate action, investigation, and summoning of the accused.
+
+A copy of this communication is marked to both the Complainant and the Accused for their records.
+
+Regards,
+Legal Dispatch Desk
+AMA Legal Solutions`;
+    } else {
+      // general-recovery Step 2 = second notice to accused
+      emailSubject = `Second & Final Legal Demand Notice (Ref: ${noticeRef})`;
+      emailBody = `<div style="font-family: Arial, sans-serif; font-size: 15px; color: #1f2937; line-height: 1.6; max-width: 650px;">
   <p>Dear ${caseDoc.defaulterName},</p>
   
   <p>Please find attached the Second & Final Legal Demand Notice issued on behalf of our client, <strong>${clientDisplayName}</strong>, regarding the outstanding amount/claim of <strong>₹${caseDoc.stuckAmount.toLocaleString("en-IN")}</strong> pending against you.</p>
@@ -109,6 +135,7 @@ async function sendAccusedDispatch(
     <strong>Confidentiality Notice:</strong> This e-mail and any attachments are intended solely for the of the recipient and may contain privileged or confidential information. If you are not the intended recipient, please notify the sender and delete this message immediately.
   </div>
 </div>`;
+    }
   } else if (step === 3) {
     emailSubject = caseDoc.category === 'loan-recovery'
       ? `Final Demand Cum Legal Action Notice Prior to Commencement of Recovery Proceedings and Invocation of Arbitration (Ref: ${noticeRef})`
@@ -172,12 +199,19 @@ AMA Legal Solutions`;
 
   const promises: Promise<boolean>[] = [];
 
+  const isLoanRecovery = caseDoc.category === 'loan-recovery';
+  const isLoanStep2Complaint = isLoanRecovery && step === 2;
+  const isGeneralStep4Complaint = !isLoanRecovery && step === 4;
+  const isComplaintStep = isLoanStep2Complaint || isGeneralStep4Complaint;
+
   // 1. Email Channel
   if (isEmailPending) {
-    if (step <= 3) {
+    if (!isComplaintStep) {
+      // Regular notice: send to accused only
       const toEmails = caseDoc.email2 ? `${caseDoc.email},${caseDoc.email2}` : caseDoc.email;
       promises.push(sendNoticeEmail(toEmails, emailSubject, emailBody, pdfBuffer, pdfFilename, ccEmails));
     } else {
+      // Police complaint step: send to SHO + accused, CC client
       const toEmails = [];
       if (caseDoc.policeStationEmail) toEmails.push(caseDoc.policeStationEmail);
       if (caseDoc.email) toEmails.push(caseDoc.email);
@@ -190,8 +224,9 @@ AMA Legal Solutions`;
     promises.push(Promise.resolve(true));
   }
 
-  // 2. WhatsApp Channel (Steps 1-3 use sendNoticeWati, Step 4 uses sendPoliceComplaintWati to Accused)
-  if (step <= 3) {
+  // 2. WhatsApp Channel
+  // Complaint steps: use sendPoliceComplaintWati; notice steps: use sendNoticeWati
+  if (!isComplaintStep) {
     const watiSends = [
       sendNoticeWati(caseDoc.phone, caseDoc.defaulterName, caseDoc.stuckAmount, clientDisplayName)
     ];
@@ -203,7 +238,7 @@ AMA Legal Solutions`;
     promises.push(
       Promise.all(watiSends).then(results => results.every(res => res === true))
     );
-  } else if (step === 4) {
+  } else {
     const watiSends = [
       sendPoliceComplaintWati(
         caseDoc.phone,
@@ -365,11 +400,24 @@ async function handleDispatch(req: NextRequest) {
 
       console.log(`[Queue Processor] Processing Case: ${caseDoc.caseId}, Step: ${caseDoc.currentStep}`);
 
-      const suffix = caseDoc.currentStep === 4 ? "C4" : `N${caseDoc.currentStep}`;
+      // For loan-recovery: Step 2 is a police complaint (suffix C2), Steps 3-4 are notices (N3, N4)
+      // For general-recovery: Steps 1-3 are notices (N1-N3), Step 4 is complaint (C4)
+      const isLoanRecovery = caseDoc.category === 'loan-recovery';
+      const isLoanStep2Complaint = isLoanRecovery && caseDoc.currentStep === 2;
+      const isGeneralStep4Complaint = !isLoanRecovery && caseDoc.currentStep === 4;
+      const suffix = isLoanStep2Complaint ? "C2" : (isGeneralStep4Complaint ? "C4" : `N${caseDoc.currentStep}`);
       const noticeRef = `${caseDoc.caseId}-${suffix}`;
 
-      // Handle Step 1, 2, or 3 (Accused Notices)
-      if (caseDoc.currentStep <= 3) {
+      // loan-recovery Step 2 is a police complaint — handled in the notice block above via isLoanStep2Complaint flag
+      // general-recovery Step 4 OR loan-recovery Step 4 (third notice, treated as final notice to accused)
+      // Handle Step 4 for general-recovery as a police complaint to SHO
+      // Handle Step 4 for loan-recovery as a third notice to accused (NOT a complaint)
+      // loan-recovery Step 4 = third notice to accused, handled in the notices block above (currentStep <= 4)
+      // This branch handles ONLY general-recovery Step 4 (police complaint)
+      // No additional routing needed here — loan-recovery Steps 2, 3, 4 all go through currentStep <= 4 block
+
+      // Handle Step 1, 2, or 3 (Accused Notices) and loan-recovery Step 4 (Third Notice)
+      if (!isGeneralStep4Complaint) {
         const complainantEmail = caseDoc.clientEmail || clientUser?.email || caseDoc.clientEmail;
         const complainantPhone = caseDoc.clientPhone || clientUser?.phone || caseDoc.clientPhone;
         const complainantAddress = caseDoc.clientAddress || clientUser?.address || caseDoc.clientAddress;
@@ -394,6 +442,8 @@ async function handleDispatch(req: NextRequest) {
             clientAddress: sanitizeField(complainantAddress),
             invoiceNo: sanitizeField(caseDoc.invoiceNo),
             invoiceDate: sanitizeField(caseDoc.invoiceDate),
+            asOnDate: sanitizeField(caseDoc.asOnDate),
+            disbursementDate: sanitizeField(caseDoc.disbursementDate),
             invoices: caseDoc.invoices,
             noticeRef,
             isSpecialUser: isSpecialUser,
@@ -479,31 +529,49 @@ async function handleDispatch(req: NextRequest) {
 
         if (emailSent) {
           // --- PRIMARY EMAIL DELIVERED SUCCESSFULLY ---
-          // Immediately trigger the client notification in parallel
           const clientEmail = caseDoc.clientEmail || clientUser?.email || caseDoc.clientEmail || "";
           const clientPhone = caseDoc.clientPhone || clientUser?.phone || caseDoc.clientPhone || "";
 
-          // Only notify if we actually dispatched (or completed) the email in THIS execution run, avoiding double notifications
           if (isEmailPending) {
             console.log(`[Queue Processor] Email delivered successfully. Dispatching client updates inline.`);
             try {
-              const clientNotifRes = await sendAndLogClientNotification(
-                db,
-                caseDoc,
-                caseDoc.currentStep,
-                clientDisplayName,
-                clientEmail,
-                clientPhone,
-                noticeRef
-              );
-              console.log(`[Queue Processor] Client notifications result: Email=${clientNotifRes.emailSent}, WhatsApp=${clientNotifRes.watiSent}`);
+              // loan-recovery Step 2 is a police complaint — use police complaint client notification
+              if (isLoanRecovery && caseDoc.currentStep === 2) {
+                await logPoliceComplaintClientNotification(
+                  db,
+                  caseDoc,
+                  clientDisplayName,
+                  clientEmail,
+                  noticeRef
+                );
+              } else {
+                const clientNotifRes = await sendAndLogClientNotification(
+                  db,
+                  caseDoc,
+                  caseDoc.currentStep,
+                  clientDisplayName,
+                  clientEmail,
+                  clientPhone,
+                  noticeRef
+                );
+                console.log(`[Queue Processor] Client notifications result: Email=${clientNotifRes.emailSent}, WhatsApp=${clientNotifRes.watiSent}`);
+              }
             } catch (notifErr) {
               console.error(`[Queue Processor] Non-blocking client notification error:`, notifErr);
             }
           }
 
           const nextStep = caseDoc.currentStep + 1;
-          const nextScheduledTime = new Date(now.getTime() + 7 * 24 * 60 * 60 * 1000); // 7 days production interval
+
+          // Interval to next step:
+          // loan-recovery: after Step 2 (complaint) → +4 days to land on Day 7 from start
+          //                after Step 3 (2nd notice) → +7 days
+          // general-recovery: always +7 days
+          let nextIntervalDays = 7;
+          if (isLoanRecovery && caseDoc.currentStep === 2) {
+            nextIntervalDays = 4; // Day 3 + 4 = Day 7 from case start
+          }
+          const nextScheduledTime = new Date(now.getTime() + nextIntervalDays * 24 * 60 * 60 * 1000);
 
           const updateDoc: any = {
             currentStep: nextStep,
@@ -511,20 +579,23 @@ async function handleDispatch(req: NextRequest) {
             [`timeline.${stepIndex}.status`]: "completed",
             [`timeline.${stepIndex}.completedAt`]: now.toISOString(),
             [`timeline.${stepIndex}.date`]: formatTimelineDate(now),
-            [`timeline.${stepIndex}.description`]: "Dispatched via Email & WhatsApp",
+            [`timeline.${stepIndex}.description`]: isLoanRecovery && caseDoc.currentStep === 2
+              ? `Police Complaint dispatched to SHO (${caseDoc.policeStationEmail || 'No Email'}) & accused (${caseDoc.email}) with client in CC.`
+              : "Dispatched via Email & WhatsApp",
           };
 
           // If there is a next step, unlock and schedule it
           if (nextStep <= 4) {
+            const intervalLabel = isLoanRecovery && caseDoc.currentStep === 2 ? "4 days" : "7 days";
             updateDoc[`timeline.${stepIndex + 1}.status`] = "scheduled";
             updateDoc[`timeline.${stepIndex + 1}.scheduledAt`] = nextScheduledTime.toISOString();
             updateDoc[`timeline.${stepIndex + 1}.date`] = formatTimelineDate(nextScheduledTime);
-            updateDoc[`timeline.${stepIndex + 1}.timeRemaining`] = "7 days remaining";
-            
-            if (nextStep === 4) {
+            updateDoc[`timeline.${stepIndex + 1}.timeRemaining`] = `${intervalLabel} remaining`;
+
+            if (!isLoanRecovery && nextStep === 4) {
               updateDoc[`timeline.${stepIndex + 1}.description`] = `Draft complaint copy shared for client`;
             } else {
-              updateDoc[`timeline.${stepIndex + 1}.description`] = `Dispatched exactly 1 week after Notice ${nextStep - 1}`;
+              updateDoc[`timeline.${stepIndex + 1}.description`] = `Dispatched ${intervalLabel} after previous step`;
             }
           }
 

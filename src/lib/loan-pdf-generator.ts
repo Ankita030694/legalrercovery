@@ -61,6 +61,8 @@ export async function generateLoanNoticePDFBuffer(params: PDFGeneratorParams): P
     clientAuthRepPhone,
     invoiceNo,
     invoiceDate,
+    disbursementDate,
+    asOnDate,
     invoices
   } = params;
 
@@ -119,25 +121,27 @@ export async function generateLoanNoticePDFBuffer(params: PDFGeneratorParams): P
     category: category || 'loan-recovery',
     clientAuthRepName,
     clientAuthRepPhone,
+    disbursementDate,
+    asOnDate,
   };
 
   let html = '';
   if (step === 1) {
     html = fillLoanRecoveryNoticeWeek1Template(templateArgs as any);
   } else if (step === 2) {
-    html = fillLoanRecoveryNoticeWeek2Template(templateArgs as any);
-  } else if (step === 3) {
-    html = fillLoanRecoveryNoticeWeek3Template(templateArgs as any);
-  } else if (step === 4) {
     // Police complaint template uses different property names for the SHO details
     const policeTemplateArgs = {
       ...templateArgs,
       policeStationName: policeStationName || 'Station House Officer',
       policeStationAddress: policeStationAddress || 'Jurisdictional Police Station',
       policeStationEmail: policeStationEmail || '',
-      disbursementDate: invoices?.[0]?.invoiceDate ? formatDate(invoices[0].invoiceDate) : '__________',
+      disbursementDate: disbursementDate || (invoices?.[0]?.invoiceDate ? formatDate(invoices[0].invoiceDate) : '__________'),
     };
     html = fillLoanRecoveryPoliceComplaintTemplate(policeTemplateArgs as any);
+  } else if (step === 3) {
+    html = fillLoanRecoveryNoticeWeek2Template(templateArgs as any);
+  } else if (step === 4) {
+    html = fillLoanRecoveryNoticeWeek3Template(templateArgs as any);
   } else {
     html = fillLoanRecoveryNoticeWeek1Template(templateArgs as any);
   }

@@ -103,7 +103,9 @@ export async function POST(req: NextRequest) {
       policeStationEmail,
       policeStationAddress,
       representeeId,
-      category
+      category,
+      asOnDate,
+      disbursementDate
     } = body;
 
     // Validate fields
@@ -197,11 +199,15 @@ export async function POST(req: NextRequest) {
       );
     }
 
-    // Generate standard horizontal timeline dates matching the wizard presentation
+    // Generate timeline dates based on category-specific intervals
     const today = new Date();
-    const oneWeekLater = new Date(today.getTime() + 7 * 24 * 60 * 60 * 1000);
-    const twoWeeksLater = new Date(today.getTime() + 14 * 24 * 60 * 60 * 1000);
-    const threeWeeksLater = new Date(today.getTime() + 21 * 24 * 60 * 60 * 1000);
+    const isLoanRecovery = (category || "general-recovery") === "loan-recovery";
+
+    // loan-recovery: Day 0, Day 3, Day 7, Day 14
+    // general-recovery: Day 0, Day 7, Day 14, Day 21
+    const step2Date = new Date(today.getTime() + (isLoanRecovery ? 3 : 7) * 24 * 60 * 60 * 1000);
+    const step3Date = new Date(today.getTime() + (isLoanRecovery ? 7 : 14) * 24 * 60 * 60 * 1000);
+    const step4Date = new Date(today.getTime() + (isLoanRecovery ? 14 : 21) * 24 * 60 * 60 * 1000);
 
     const formatDate = (d: Date) => {
       return d.toLocaleDateString("en-IN", { day: "numeric", month: "short", year: "numeric" });
@@ -213,6 +219,69 @@ export async function POST(req: NextRequest) {
     const month = today.getMonth() + 1;
     const yearSuffix = today.getFullYear().toString().slice(-2);
     const caseId = `LR-${nextNum}-${day}${month}${yearSuffix}`;
+
+    // Build category-specific timeline labels and descriptions
+    const timelineSteps = isLoanRecovery
+      ? [
+          {
+            step: 1,
+            label: "First Notice",
+            description: "Notice drafted. Ready to dispatch.",
+            date: "Awaiting dispatch",
+            status: "pending"
+          },
+          {
+            step: 2,
+            label: "Police Complaint",
+            description: `Complaint dispatched to SHO of ${policeStationName} — 3 days after first notice`,
+            date: formatDate(step2Date),
+            status: "locked"
+          },
+          {
+            step: 3,
+            label: "Second Notice",
+            description: "Second demand notice dispatched 7 days after first notice",
+            date: formatDate(step3Date),
+            status: "locked"
+          },
+          {
+            step: 4,
+            label: "Third Notice",
+            description: "Final demand notice dispatched 7 days after second notice",
+            date: formatDate(step4Date),
+            status: "locked"
+          }
+        ]
+      : [
+          {
+            step: 1,
+            label: "First Notice",
+            description: "Notice drafted. Ready to dispatch.",
+            date: "Awaiting dispatch",
+            status: "pending"
+          },
+          {
+            step: 2,
+            label: "Second Notice",
+            description: "Dispatched exactly 1 week after",
+            date: formatDate(step2Date),
+            status: "locked"
+          },
+          {
+            step: 3,
+            label: "Third Notice",
+            description: "Final demand notice prior to filing",
+            date: formatDate(step3Date),
+            status: "locked"
+          },
+          {
+            step: 4,
+            label: "SHO Criminal Complaint",
+            description: `Drafted complaint copy shared for ${policeStationName}`,
+            date: formatDate(step4Date),
+            status: "locked"
+          }
+        ];
 
     const caseDoc = {
       userId, // Strictly link case to the authenticated client ObjectId
@@ -227,6 +296,8 @@ export async function POST(req: NextRequest) {
       address,
       stuckAmount: parseFloat(stuckAmount),
       dueDate,
+      asOnDate: asOnDate || "",
+      disbursementDate: disbursementDate || "",
       policeStationName,
       policeStationEmail,
       policeStationAddress,
@@ -241,36 +312,7 @@ export async function POST(req: NextRequest) {
       currentStep: 1,
       createdAt: today.toISOString(),
       updatedAt: today.toISOString(),
-      timeline: [
-        { 
-          step: 1, 
-          label: "First Notice", 
-          description: "Notice drafted. Ready to dispatch.", 
-          date: "Awaiting dispatch", 
-          status: "pending" 
-        },
-        { 
-          step: 2, 
-          label: "Second Notice", 
-          description: "Dispatched exactly 1 week after", 
-          date: formatDate(oneWeekLater), 
-          status: "locked" 
-        },
-        { 
-          step: 3, 
-          label: "Third Notice", 
-          description: "Final demand notice prior to filing", 
-          date: formatDate(twoWeeksLater), 
-          status: "locked" 
-        },
-        { 
-          step: 4, 
-          label: "SHO Criminal Complaint", 
-          description: `Drafted complaint copy shared for ${policeStationName}`, 
-          date: formatDate(threeWeeksLater), 
-          status: "locked" 
-        }
-      ]
+      timeline: timelineSteps
     };
 
     const result = await db.collection("cases").insertOne(caseDoc);

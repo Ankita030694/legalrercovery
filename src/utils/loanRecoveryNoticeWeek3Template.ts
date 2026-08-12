@@ -158,7 +158,8 @@ export function fillLoanRecoveryNoticeWeek3Template(data: LoanRecoveryNoticeWeek
   <ul>
     <li>Loan ID: <strong>${invoiceNo || "__________"}</strong>;</li>
     <li>Sanction Date: <strong>${invoiceDate || "__________"}</strong>;</li>
-    <li>Amount Sanctioned: <strong>&#8377;${formattedAmount} (Rupees ${pendingWords} Only)</strong>.</li>
+    <li>Disbursed Amount: <strong>__________</strong>;</li>
+    <li>Outstanding Amount (Including 2% Penalty): <strong>&#8377;${formattedAmount} (Rupees ${pendingWords} Only)</strong>.</li>
   </ul>
 
   <p>The aforesaid loan was sanctioned and disbursed pursuant to the Loan Agreement, Sanction Letter, repayment schedule, declarations, mandates, electronic records, digital consents and all ancillary documentation (collectively referred to as the "Loan Documents"). By voluntarily applying for, executing and accepting the loan facility, you entered into a valid, binding and legally enforceable contract and unequivocally undertook to repay the principal amount together with contractual interest, default interest, penal charges, taxes and all other applicable dues in accordance with the agreed repayment schedule. Your obligations under the Loan Documents are absolute, unconditional and continue to remain fully enforceable.</p>
@@ -171,14 +172,14 @@ export function fillLoanRecoveryNoticeWeek3Template(data: LoanRecoveryNoticeWeek
 
   <p>Our Client's verification records further indicate that income credits, business receipts and/or other income continue to be received by you in the bank account furnished at the time of availing the loan. Your continued refusal to discharge your lawful liability, despite having an apparent financial capacity to do so, demonstrates a deliberate disregard of your contractual obligations and reflects conduct lacking in bona fides.</p>
 
-  <p>Take notice that, as on <strong>${noticeDate}</strong>, a sum of <strong>&#8377;${formattedAmount} (Rupees ${pendingWords} Only)</strong> remains outstanding and legally recoverable from you ("Outstanding Amount"), comprising principal, accrued contractual interest, default interest, penal charges, processing charges, taxes and all other contractual dues. The Outstanding Amount continues to accrue additional interest and contractual charges on a daily basis until the date of actual realization.</p>
+  <p>Take notice that, as on <strong>${data.asOnDate || "__________"}</strong>, a sum of <strong>&#8377;${formattedAmount} (Rupees ${pendingWords} Only)</strong> remains outstanding and legally recoverable from you ("Outstanding Amount including 2% Penalty"), comprising principal, accrued contractual interest, default interest, penal charges, processing charges, taxes and all other contractual dues. The Outstanding Amount continues to accrue additional interest and contractual charges on a daily basis until the date of actual realization.</p>
 
   <p class="take-notice-heading">Final Opportunity</p>
 
   <p>You are hereby called upon to, within Seven (7) Days from the date of receipt of this Notice:</p>
   <ol>
-    <li>Pay the entire Outstanding Amount of <strong>&#8377;${formattedAmount} (Rupees ${pendingWords} Only)</strong> through a verified mode of payment acceptable to Our Client; or</li>
-    <li>Produce documentary evidence establishing any bona fide dispute regarding the Outstanding Amount on <strong>${data.clientEmail || 'the aforementioned email address'}</strong>.${data.clientAuthRepName ? ` For an amicable solution you can also reach out to <strong>${data.clientAuthRepName}</strong>${data.clientAuthRepPhone ? ` on <strong>${data.clientAuthRepPhone}</strong>` : ''}.` : ''}</li>
+    <li>Pay the entire Outstanding Amount (Including 2% Penalty) of <strong>&#8377;${formattedAmount} (Rupees ${pendingWords} Only)</strong> through a verified mode of payment acceptable to Our Client; or</li>
+    <li>Produce documentary evidence establishing any bona fide dispute regarding the Outstanding Amount on <strong>${data.clientEmail || 'Legal@actoloan.com'}</strong>. For an amicable solution you can also reach out to Mr. Raman Jhakal on 9896197115.</li>
   </ol>
 
   <p>Your failure to respond within the aforesaid period shall leave no room for any inference other than your intentional refusal to honour your legally enforceable obligations, and Our Client shall proceed against you without any further opportunity.</p>

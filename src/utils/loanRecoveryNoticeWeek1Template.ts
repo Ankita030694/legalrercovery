@@ -21,6 +21,8 @@ export interface LoanRecoveryNoticeWeek1Data {
   category?: string
   clientAuthRepName?: string
   clientAuthRepPhone?: string
+  disbursementDate?: string
+  asOnDate?: string
 }
 
 export function fillLoanRecoveryNoticeWeek1Template(data: LoanRecoveryNoticeWeek1Data): string {
@@ -42,6 +44,8 @@ export function fillLoanRecoveryNoticeWeek1Template(data: LoanRecoveryNoticeWeek
     isSpecialUser = false,
     invoiceNo,
     invoiceDate,
+    disbursementDate,
+    asOnDate,
   } = data
 
   function amountToWords(amount: string): string {
@@ -157,15 +161,15 @@ export function fillLoanRecoveryNoticeWeek1Template(data: LoanRecoveryNoticeWeek
 <div class="salutation">Dear Sir/Madam,</div>
 
 <div class="notice-body">
-  <p>Under the instructions and authority of our client, <strong>${complainantName}</strong> ("Our Client") having its registered address at <strong>${complainantAddress}</strong>, we hereby issue this Legal Demand Notice, calling upon you to immediately discharge your outstanding financial obligations arising from the loan facility availed by you from Our Client.</p>
+  <p>Under the instructions and authority of our client, <strong>${complainantName}</strong> ("Our Client") having its registered address at <strong>${complainantAddress}</strong>, we hereby issue this First Legal Demand Notice, calling upon you to immediately discharge your outstanding financial obligations arising from the loan facility availed by you from Our Client.</p>
 
-  <p>You had approached Our Client for financial assistance and, pursuant to your request, Our Client sanctioned a loan bearing Loan ID <strong>${invoiceNo || "__________"}</strong>, vide Sanction Date <strong>${invoiceDate || "__________"}</strong>, for a sum of <strong>&#8377;${formattedAmount} (Rupees ${pendingWords} Only)</strong>, which was duly disbursed to you, upon your acceptance and execution of the Loan Agreement, repayment schedule, sanction terms, declarations, mandates, electronic records, and all other ancillary loan documents (collectively referred to as the "Loan Documents"), whether executed physically, electronically, or through any digital mode made available by Our Client.</p>
+  <p>You had approached Our Client for financial assistance and, pursuant to your request, Our Client sanctioned a loan bearing Loan ID <strong>${invoiceNo || "__________"}</strong>, vide Disbursement Date <strong>${disbursementDate || invoiceDate || "__________"}</strong>, for a sum of <strong>&#8377;${formattedAmount} (Rupees ${pendingWords} Only)</strong>, which was duly disbursed to you on Disbursement Date <strong>${disbursementDate || invoiceDate || "__________"}</strong>, upon your acceptance and execution of the Loan Agreement, repayment schedule, sanction terms, declarations, mandates, electronic records, and all other ancillary loan documents (collectively referred to as the "Loan Documents"), whether executed physically, electronically, or through any digital mode made available by Our Client.</p>
 
   <p>By voluntarily executing and accepting the Loan Documents, you unequivocally agreed to comply with all contractual obligations, including timely repayment of the loan together with applicable interest, penal interest, default charges, processing fees, taxes, and all other contractual dues in accordance with the agreed repayment schedule.</p>
 
   <p>Despite availing and utilizing the financial assistance extended by Our Client, you have wilfully failed to honour your repayment obligations. Your repeated defaults have rendered your loan account irregular, and in terms of the Loan Agreement, the entire outstanding liability has become immediately due and payable.</p>
 
-  <p>As per the books of accounts and electronic records maintained by Our Client, an amount of <strong>&#8377;${formattedAmount} (Rupees ${pendingWords} Only)</strong> ("Outstanding Amount") remains due and payable under Loan ID <strong>${invoiceNo || "__________"}</strong>. The Outstanding Amount comprises the outstanding principal, accrued contractual interest, overdue interest, default interest, penal charges, processing charges, applicable taxes, and all other contractual dues. Your liability continues to increase each day until full realization of the dues.</p>
+  <p>As per the books of accounts and electronic records maintained by Our Client, as on <strong>${asOnDate || noticeDate}</strong>, an amount of <strong>&#8377;${formattedAmount} (Rupees ${pendingWords} Only)</strong> ("Outstanding Amount including 2% Penalty") remains due and payable under Loan ID <strong>${invoiceNo || "__________"}</strong>. The Outstanding Amount comprises the outstanding principal, accrued contractual interest, overdue interest, default interest, penal charges, processing charges, applicable taxes, and all other contractual dues. Your liability continues to increase each day until full realization of the dues.</p>
 
   <p>Prior to issuing this Notice, Our Client made several bona fide attempts to resolve the matter through calls, SMS, WhatsApp messages, emails, and payment reminders. Despite repeated opportunities, you have willfully failed to regularize your account, constituting a material breach of your contractual obligations and compelling Our Client to initiate appropriate legal proceedings.</p>
 
@@ -181,8 +185,8 @@ export function fillLoanRecoveryNoticeWeek1Template(data: LoanRecoveryNoticeWeek
 
   <p>Accordingly, you are hereby finally called upon to:</p>
   <ol>
-    <li>Pay the Outstanding Amount of <strong>&#8377;${formattedAmount} (Rupees ${pendingWords} Only)</strong> within Three (3) days from the date of receipt of this Notice; or</li>
-    <li>If you dispute the Outstanding Amount or any component thereof, submit a detailed written representation along with complete documentary evidence within the aforesaid period on <strong>${data.clientEmail || 'the aforementioned email address'}</strong>.${data.clientAuthRepName ? ` For an amicable solution you can also reach out to <strong>${data.clientAuthRepName}</strong>${data.clientAuthRepPhone ? ` on <strong>${data.clientAuthRepPhone}</strong>` : ''}.` : ''}</li>
+    <li>Pay the Outstanding Amount (Including 2% Penalty) of <strong>&#8377;${formattedAmount} (Rupees ${pendingWords} Only)</strong> within Three (3) days from the date of receipt of this Notice; or</li>
+    <li>If you dispute the Outstanding Amount or any component thereof, submit a detailed written representation along with complete documentary evidence within the aforesaid period on <strong><a href="mailto:${data.clientEmail || 'Legal@actoloan.com'}" style="color: blue; text-decoration: underline;">${data.clientEmail || 'Legal@actoloan.com'}</a></strong>. For an amicable solution you can also reach out to <strong>Mr. Raman Jhakal</strong> on <strong>9896197115</strong>.</li>
   </ol>
 
   <p>TAKE FURTHER NOTICE that if you fail to clear the Outstanding Amount or submit a valid written response within Three (3) days from receipt of this Notice, Our Client shall, without any further notice, initiate all appropriate legal proceedings available under law, including but not limited to:</p>

@@ -96,6 +96,7 @@ export async function POST(req: NextRequest) {
         ...(representee ? { representeeId: representee._id } : {}),
         invoiceNo: c.invoiceNo || "",
         invoiceDate: c.invoiceDate || "",
+        asOnDate: c.asOnDate || "",
         invoices: Array.isArray(c.invoices) ? c.invoices : [],
         status: "active",
         category: category || "general-recovery",

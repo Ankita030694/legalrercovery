@@ -210,6 +210,7 @@ export function fillLoanRecoveryPoliceComplaintTemplate(data: LoanRecoveryPolice
     <li>Loan ID: <strong>${invoiceNo || "__________"}</strong></li>
     <li>Sanction Date: <strong>${invoiceDate || "__________"}</strong></li>
     <li>Disbursement Date: <strong>${disbursementDate || "__________"}</strong></li>
+    <li>Loan Amount: <strong>INR __________/-</strong></li>
     <li>Outstanding Amount: <strong>INR ${formattedAmount}/-</strong></li>
   </ul>
   

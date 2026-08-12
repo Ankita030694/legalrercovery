@@ -125,6 +125,8 @@ export async function POST(req: NextRequest) {
       - address: Complete physical address of the borrower.
       - state: Standardized Indian State or UT name matching the address. Extract this from the address or state column.
       - dueDate: The earliest or most relevant default date or due date in "YYYY-MM-DD" format. Dates in the future are ACCEPTABLE.
+      - asOnDate: The date the outstanding amount was calculated as-of in "YYYY-MM-DD" format. Infer from context or set to null if not explicitly mentioned.
+      - disbursementDate: The date the loan was disbursed in "YYYY-MM-DD" format. Set to null if not explicitly mentioned.
       - invoices: An array of objects representing each individual LOAN, containing:
           - invoiceNo: A string representation of the Loan Account Number or Loan ID.
           - invoiceDate: The loan disbursement date in "YYYY-MM-DD" format. Set to null if not present.
@@ -145,6 +147,8 @@ export async function POST(req: NextRequest) {
             "address": "...",
             "state": "...",
             "dueDate": "YYYY-MM-DD",
+            "asOnDate": "YYYY-MM-DD",
+            "disbursementDate": "YYYY-MM-DD",
             "invoices": [
               {
                 "invoiceNo": "LOAN-123",

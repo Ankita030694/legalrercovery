@@ -95,6 +95,8 @@ export async function POST(req: NextRequest) {
         clientAddress: sanitizeField(complainantAddress),
         invoiceNo: sanitizeField(caseDoc.invoiceNo),
         invoiceDate: sanitizeField(caseDoc.invoiceDate),
+        asOnDate: sanitizeField(caseDoc.asOnDate),
+        disbursementDate: sanitizeField(caseDoc.disbursementDate),
         invoices: caseDoc.invoices,
         noticeRef: `${caseDoc.caseId}-N1`,
         isSpecialUser: isSpecialUser,
@@ -202,8 +204,12 @@ export async function POST(req: NextRequest) {
 
     // 3. Handle state transitions based on success/failure
     const today = new Date();
-    // Schedule next notice (Step 2) in exactly 7 days (production interval)
-    const oneWeekLater = new Date(today.getTime() + 7 * 24 * 60 * 60 * 1000);
+    const isLoanRecovery = caseDoc.category === 'loan-recovery';
+
+    // loan-recovery: police complaint fires 3 days after first notice
+    // general-recovery: second notice fires 7 days after first notice
+    const step2IntervalDays = isLoanRecovery ? 3 : 7;
+    const step2ScheduledAt = new Date(today.getTime() + step2IntervalDays * 24 * 60 * 60 * 1000);
 
     const formatTimelineDate = (d: Date) => {
       return d.toLocaleDateString("en-IN", { day: "numeric", month: "short", year: "numeric", hour: "2-digit", minute: "2-digit" });
@@ -211,7 +217,12 @@ export async function POST(req: NextRequest) {
 
     if (emailSent && whatsappSent) {
       // SUCCESS STATE
-      
+
+      const step2Description = isLoanRecovery
+        ? `Police Complaint dispatched to SHO — 3 days after first notice`
+        : `Dispatched exactly 1 week after first notice`;
+      const step2TimeRemaining = isLoanRecovery ? "3 days remaining" : "7 days remaining";
+
       const updateDoc = {
         status: "active",
         currentStep: 2,
@@ -221,10 +232,10 @@ export async function POST(req: NextRequest) {
         "timeline.0.date": formatTimelineDate(today),
         "timeline.0.description": "Dispatched via Email & WhatsApp",
         "timeline.1.status": "scheduled",
-        "timeline.1.scheduledAt": oneWeekLater.toISOString(),
-        "timeline.1.date": formatTimelineDate(oneWeekLater),
-        "timeline.1.description": "Dispatched exactly 1 week after first notice",
-        "timeline.1.timeRemaining": "7 days remaining"
+        "timeline.1.scheduledAt": step2ScheduledAt.toISOString(),
+        "timeline.1.date": formatTimelineDate(step2ScheduledAt),
+        "timeline.1.description": step2Description,
+        "timeline.1.timeRemaining": step2TimeRemaining
       };
 
       // Dispatch client notification immediately inline
