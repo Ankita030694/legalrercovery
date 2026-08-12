@@ -22,6 +22,7 @@ export interface LoanRecoveryNoticeWeek3Data {
   category?: string
   clientAuthRepName?: string
   clientAuthRepPhone?: string
+  asOnDate?: string
 }
 
 export function fillLoanRecoveryNoticeWeek3Template(data: LoanRecoveryNoticeWeek3Data): string {
@@ -44,6 +45,7 @@ export function fillLoanRecoveryNoticeWeek3Template(data: LoanRecoveryNoticeWeek
     invoiceNo,
     invoiceDate,
     disbursementDate,
+    asOnDate,
   } = data
 
   function amountToWords(amount: string): string {
@@ -172,14 +174,14 @@ export function fillLoanRecoveryNoticeWeek3Template(data: LoanRecoveryNoticeWeek
 
   <p>Our Client's verification records further indicate that income credits, business receipts and/or other income continue to be received by you in the bank account furnished at the time of availing the loan. Your continued refusal to discharge your lawful liability, despite having an apparent financial capacity to do so, demonstrates a deliberate disregard of your contractual obligations and reflects conduct lacking in bona fides.</p>
 
-  <p>Take notice that, as on <strong>${data.asOnDate || "__________"}</strong>, a sum of <strong>&#8377;${formattedAmount} (Rupees ${pendingWords} Only)</strong> remains outstanding and legally recoverable from you ("Outstanding Amount including 2% Penalty"), comprising principal, accrued contractual interest, default interest, penal charges, processing charges, taxes and all other contractual dues. The Outstanding Amount continues to accrue additional interest and contractual charges on a daily basis until the date of actual realization.</p>
+  <p>Take notice that, as on <strong>${asOnDate || "__________"}</strong>, a sum of <strong>&#8377;${formattedAmount} (Rupees ${pendingWords} Only)</strong> remains outstanding and legally recoverable from you ("Outstanding Amount including 2% Penalty"), comprising principal, accrued contractual interest, default interest, penal charges, processing charges, taxes and all other contractual dues. The Outstanding Amount continues to accrue additional interest and contractual charges on a daily basis until the date of actual realization.</p>
 
   <p class="take-notice-heading">Final Opportunity</p>
 
   <p>You are hereby called upon to, within Seven (7) Days from the date of receipt of this Notice:</p>
   <ol>
     <li>Pay the entire Outstanding Amount (Including 2% Penalty) of <strong>&#8377;${formattedAmount} (Rupees ${pendingWords} Only)</strong> through a verified mode of payment acceptable to Our Client; or</li>
-    <li>Produce documentary evidence establishing any bona fide dispute regarding the Outstanding Amount on <strong>${data.clientEmail || 'Legal@actoloan.com'}</strong>. For an amicable solution you can also reach out to Mr. Raman Jhakal on 9896197115.</li>
+    <li>Produce documentary evidence establishing any bona fide dispute regarding the Outstanding Amount on <strong>${clientEmail || 'Legal@actoloan.com'}</strong>. For an amicable solution you can also reach out to Mr. Raman Jhakal on 9896197115.</li>
   </ol>
 
   <p>Your failure to respond within the aforesaid period shall leave no room for any inference other than your intentional refusal to honour your legally enforceable obligations, and Our Client shall proceed against you without any further opportunity.</p>

@@ -22,6 +22,7 @@ export interface LoanRecoveryNoticeWeek2Data {
   category?: string
   clientAuthRepName?: string
   clientAuthRepPhone?: string
+  asOnDate?: string
 }
 
 export function fillLoanRecoveryNoticeWeek2Template(data: LoanRecoveryNoticeWeek2Data): string {
@@ -44,6 +45,7 @@ export function fillLoanRecoveryNoticeWeek2Template(data: LoanRecoveryNoticeWeek
     invoiceNo,
     invoiceDate,
     disbursementDate,
+    asOnDate,
   } = data
 
   function amountToWords(amount: string): string {
@@ -166,7 +168,7 @@ export function fillLoanRecoveryNoticeWeek2Template(data: LoanRecoveryNoticeWeek
 
   <p>Further, at the time of applying for the loan, you voluntarily furnished your income details, including statement of accounts and a stable source of income and expressly consented to the verification and use of such information in accordance with the Loan Documents and applicable law. In the event of your continued default, Our Client reserves its right, to the extent legally permissible and contractually authorized, to communicate with your references provided by you at the time of taking the loan.</p>
 
-  <p>As per the books of accounts, loan records and electronic records maintained by Our Client, as on <strong>${data.asOnDate || "__________"}</strong>, an amount of <strong>&#8377;${formattedAmount} (Rupees ${pendingWords} Only)</strong> ("Outstanding Amount including 2% penalty") remains due and payable by you in respect of Loan ID <strong>${invoiceNo || "__________"}</strong>. The Outstanding Amount comprises the principal outstanding, accrued contractual interest, overdue interest, default interest, penal charges, processing charges, applicable taxes and all other contractual dues payable under the Loan Documents. Your liability continues to increase every day on account of continuing contractual interest, default interest and other applicable contractual charges until full realization.</p>
+  <p>As per the books of accounts, loan records and electronic records maintained by Our Client, as on <strong>${asOnDate || "__________"}</strong>, an amount of <strong>&#8377;${formattedAmount} (Rupees ${pendingWords} Only)</strong> ("Outstanding Amount including 2% penalty") remains due and payable by you in respect of Loan ID <strong>${invoiceNo || "__________"}</strong>. The Outstanding Amount comprises the principal outstanding, accrued contractual interest, overdue interest, default interest, penal charges, processing charges, applicable taxes and all other contractual dues payable under the Loan Documents. Your liability continues to increase every day on account of continuing contractual interest, default interest and other applicable contractual charges until full realization.</p>
 
   <p>Your continued failure to honour your contractual obligations despite repeated opportunities demonstrates complete disregard for the contractual commitments voluntarily undertaken by you while availing the loan facility. Your persistent default has caused substantial financial loss and prejudice to Our Client and has compelled Our Client to initiate formal legal action.</p>
 
@@ -181,7 +183,7 @@ export function fillLoanRecoveryNoticeWeek2Template(data: LoanRecoveryNoticeWeek
   <p>You are hereby finally called upon to:</p>
   <ol>
     <li>Pay the entire Outstanding Amount (including 2% penalty) of <strong>&#8377;${formattedAmount} (Rupees ${pendingWords} Only)</strong> within Seven (7) days from the date of receipt of this Notice; or</li>
-    <li>If you dispute the Outstanding Amount or any component thereof, submit a detailed written representation supported by complete documentary evidence within the aforesaid period on <strong>${data.clientEmail || 'Legal@actoloan.com'}</strong>. For an amicable solution you can also reach out to Mr. Raman Jhakal on 9896197115.</li>
+    <li>If you dispute the Outstanding Amount or any component thereof, submit a detailed written representation supported by complete documentary evidence within the aforesaid period on <strong>${clientEmail || 'Legal@actoloan.com'}</strong>. For an amicable solution you can also reach out to Mr. Raman Jhakal on 9896197115.</li>
   </ol>
 
   <p class="take-notice-heading">TAKE FURTHER NOTICE</p>
