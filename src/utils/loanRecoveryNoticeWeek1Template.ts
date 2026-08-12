@@ -139,7 +139,7 @@ export function fillLoanRecoveryNoticeWeek1Template(data: LoanRecoveryNoticeWeek
 </head>
 <body>
 
-<div class="notice-title">FIRST LEGAL DEMAND NOTICE</div>
+<div class="notice-title">LEGAL DEMAND NOTICE</div>
 <div class="dispatch-mode">THROUGH EMAIL/WHATSAPP</div>
 
 <div class="addressee">
@@ -151,13 +151,13 @@ export function fillLoanRecoveryNoticeWeek1Template(data: LoanRecoveryNoticeWeek
 </div>
 
 <div class="subject-line">
-  <strong>Subject: First Legal Demand Notice for Recovery of Outstanding Loan Amount &amp; Filing of Police Complaint.</strong>
+  <strong>Subject: Legal Demand Notice for Recovery of Outstanding Loan Amount &amp; Filing of Police Complaint.</strong>
 </div>
 
 <div class="salutation">Dear Sir/Madam,</div>
 
 <div class="notice-body">
-  <p>Under the instructions and authority of our client, <strong>${complainantName}</strong> ("Our Client") having its registered address at <strong>${complainantAddress}</strong>, we hereby issue this First Legal Demand Notice, calling upon you to immediately discharge your outstanding financial obligations arising from the loan facility availed by you from Our Client.</p>
+  <p>Under the instructions and authority of our client, <strong>${complainantName}</strong> ("Our Client") having its registered address at <strong>${complainantAddress}</strong>, we hereby issue this Legal Demand Notice, calling upon you to immediately discharge your outstanding financial obligations arising from the loan facility availed by you from Our Client.</p>
 
   <p>You had approached Our Client for financial assistance and, pursuant to your request, Our Client sanctioned a loan bearing Loan ID <strong>${invoiceNo || "__________"}</strong>, vide Sanction Date <strong>${invoiceDate || "__________"}</strong>, for a sum of <strong>&#8377;${formattedAmount} (Rupees ${pendingWords} Only)</strong>, which was duly disbursed to you, upon your acceptance and execution of the Loan Agreement, repayment schedule, sanction terms, declarations, mandates, electronic records, and all other ancillary loan documents (collectively referred to as the "Loan Documents"), whether executed physically, electronically, or through any digital mode made available by Our Client.</p>
 

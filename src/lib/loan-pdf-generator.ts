@@ -95,7 +95,6 @@ export async function generateLoanNoticePDFBuffer(params: PDFGeneratorParams): P
   const noticeRef = params.noticeRef || `LR-0000-0000-${step === 4 ? 'C4' : 'N' + step}`;
 
   const isSpecialUser = params.isSpecialUser || params.clientPhone?.replace(/\\D/g, '').endsWith('8700343611') || params.clientPhone?.replace(/\\D/g, '').endsWith('8130104447');
-  const stampToUse = isSpecialUser ? barStampLogoBase64 : stampLogoBase64;
 
   const templateArgs = {
     clientName: defaulterName,
@@ -206,7 +205,7 @@ export async function generateLoanNoticePDFBuffer(params: PDFGeneratorParams): P
             <td style="width:50px;"></td>
             <td style="text-align:center; font-size:12pt; font-weight:bold; letter-spacing:0.3px; white-space:nowrap;">GURUGRAM - DELHI - NOIDA - BENGALURU - MUMBAI</td>
             <td style="width:50px; text-align:right; vertical-align:middle;">
-              ${stampToUse ? `<img src="data:image/png;base64,${stampToUse}" style="height:40px; width:auto;" />` : ''}
+              ${stampLogoBase64 ? `<img src="data:image/png;base64,${stampLogoBase64}" style="height:40px; width:auto;" />` : ''}
             </td>
           </tr>
         </table>

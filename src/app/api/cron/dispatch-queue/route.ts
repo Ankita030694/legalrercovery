@@ -42,7 +42,9 @@ async function sendAccusedDispatch(
   let emailBody = "";
 
   if (step === 1) {
-    emailSubject = `Legal Demand Notice – Immediate Attention Required (Ref: ${noticeRef})`;
+    emailSubject = caseDoc.category === 'loan-recovery' 
+      ? `Legal Demand Notice for Recovery of Outstanding Loan Amount & Filing of Police Complaint (Ref: ${noticeRef})`
+      : `Legal Demand Notice – Immediate Attention Required (Ref: ${noticeRef})`;
     emailBody = `<div style="font-family: Arial, sans-serif; font-size: 15px; color: #1f2937; line-height: 1.6; max-width: 650px;">
   <p>Dear ${caseDoc.defaulterName},</p>
   
@@ -75,7 +77,9 @@ async function sendAccusedDispatch(
   </div>
 </div>`;
   } else if (step === 2) {
-    emailSubject = `Second & Final Legal Demand Notice (Ref: ${noticeRef})`;
+    emailSubject = caseDoc.category === 'loan-recovery'
+      ? `Loan Recall-cum-Recovery Notice and Intimation of Filing Complaint before the Commissioner of Police for Offences under Section 318(4) of the Bharatiya Nyaya Sanhita, 2023 (Ref: ${noticeRef})`
+      : `Second & Final Legal Demand Notice (Ref: ${noticeRef})`;
     emailBody = `<div style="font-family: Arial, sans-serif; font-size: 15px; color: #1f2937; line-height: 1.6; max-width: 650px;">
   <p>Dear ${caseDoc.defaulterName},</p>
   
@@ -106,7 +110,9 @@ async function sendAccusedDispatch(
   </div>
 </div>`;
   } else if (step === 3) {
-    emailSubject = `FINAL LEGAL NOTICE – 72 Hours to Comply Failing Which Civil, Criminal and Police Action Shall Be Initiated (Ref: ${noticeRef})`;
+    emailSubject = caseDoc.category === 'loan-recovery'
+      ? `Final Demand Cum Legal Action Notice Prior to Commencement of Recovery Proceedings and Invocation of Arbitration (Ref: ${noticeRef})`
+      : `FINAL LEGAL NOTICE – 72 Hours to Comply Failing Which Civil, Criminal and Police Action Shall Be Initiated (Ref: ${noticeRef})`;
     emailBody = `<div style="font-family: Arial, sans-serif; font-size: 15px; color: #1f2937; line-height: 1.6; max-width: 650px;">
   <p>Dear ${caseDoc.defaulterName},</p>
   
@@ -137,7 +143,9 @@ async function sendAccusedDispatch(
   </div>
 </div>`;
   } else if (step === 4) {
-    emailSubject = `Formal Criminal Police Complaint - Cheating, Criminal Breach of Trust & Dishonest Non-Payment - Ref: ${noticeRef}`;
+    emailSubject = caseDoc.category === 'loan-recovery'
+      ? `COMPLAINT ON BEHALF OF ${clientDisplayName.toUpperCase()} AGAINST THE BORROWER FOR DELIBERATE AND WILFUL NON-PAYMENT OF OUTSTANDING LOAN DUES AND OTHER ACTS ATTRACTING APPLICABLE PROVISIONS OF LAW - Ref: ${noticeRef}`
+      : `Formal Criminal Police Complaint - Cheating, Criminal Breach of Trust & Dishonest Non-Payment - Ref: ${noticeRef}`;
     emailBody = `To,
 The Station House Officer,
 ${caseDoc.policeStationName}
