@@ -225,23 +225,34 @@ AMA Legal Solutions`;
   }
 
   // 2. WhatsApp Channel
-  if (isWhatsappPending) {
-    if (!isComplaintStep) {
-      const watiSends = [
-        sendNoticeWati(caseDoc.phone, caseDoc.defaulterName, caseDoc.stuckAmount, clientDisplayName)
-      ];
-      if (caseDoc.phone2) {
-        watiSends.push(
-          sendNoticeWati(caseDoc.phone2, caseDoc.defaulterName, caseDoc.stuckAmount, clientDisplayName)
-        );
-      }
-      promises.push(
-        Promise.all(watiSends).then(results => results.every(res => res === true))
+  if (!isComplaintStep) {
+    const watiSends = [
+      sendNoticeWati(caseDoc.phone, caseDoc.defaulterName, caseDoc.stuckAmount, clientDisplayName)
+    ];
+    if (caseDoc.phone2) {
+      watiSends.push(
+        sendNoticeWati(caseDoc.phone2, caseDoc.defaulterName, caseDoc.stuckAmount, clientDisplayName)
       );
-    } else {
-      const watiSends = [
+    }
+    promises.push(
+      Promise.all(watiSends).then(results => results.every(res => res === true))
+    );
+  } else {
+    const watiSends = [
+      sendPoliceComplaintWati(
+        caseDoc.phone,
+        caseDoc.defaulterName,
+        caseDoc.policeStationName,
+        caseDoc.stuckAmount,
+        caseDoc.dueDate,
+        clientDisplayName,
+        caseDoc.email
+      )
+    ];
+    if (caseDoc.phone2) {
+      watiSends.push(
         sendPoliceComplaintWati(
-          caseDoc.phone,
+          caseDoc.phone2,
           caseDoc.defaulterName,
           caseDoc.policeStationName,
           caseDoc.stuckAmount,
@@ -249,26 +260,11 @@ AMA Legal Solutions`;
           clientDisplayName,
           caseDoc.email
         )
-      ];
-      if (caseDoc.phone2) {
-        watiSends.push(
-          sendPoliceComplaintWati(
-            caseDoc.phone2,
-            caseDoc.defaulterName,
-            caseDoc.policeStationName,
-            caseDoc.stuckAmount,
-            caseDoc.dueDate,
-            clientDisplayName,
-            caseDoc.email
-          )
-        );
-      }
-      promises.push(
-        Promise.all(watiSends).then(results => results.every(res => res === true))
       );
     }
-  } else {
-    promises.push(Promise.resolve(true));
+    promises.push(
+      Promise.all(watiSends).then(results => results.every(res => res === true))
+    );
   }
 
   const results = await Promise.allSettled(promises);
