@@ -176,7 +176,7 @@ export function fillLoanRecoveryNoticeWeek3Template(data: LoanRecoveryNoticeWeek
 
   <p>Our Client's verification records further indicate that income credits, business receipts and/or other income continue to be received by you in the bank account furnished at the time of availing the loan. Your continued refusal to discharge your lawful liability, despite having an apparent financial capacity to do so, demonstrates a deliberate disregard of your contractual obligations and reflects conduct lacking in bona fides.</p>
 
-  <p>Take notice that, as on <strong>${asOnDate || "__________"}</strong>, a sum of <strong>&#8377;${formattedAmount} (Rupees ${pendingWords} Only)</strong> remains outstanding and legally recoverable from you ("Outstanding Amount including 2% Penalty"), comprising principal, accrued contractual interest, default interest, penal charges, processing charges, taxes and all other contractual dues. The Outstanding Amount continues to accrue additional interest and contractual charges on a daily basis until the date of actual realization.</p>
+  <p>Take notice that, as on <strong>${asOnDate || noticeDate}</strong>, a sum of <strong>&#8377;${formattedAmount} (Rupees ${pendingWords} Only)</strong> remains outstanding and legally recoverable from you ("Outstanding Amount including 2% Penalty"), comprising principal, accrued contractual interest, default interest, penal charges, processing charges, taxes and all other contractual dues. The Outstanding Amount continues to accrue additional interest and contractual charges on a daily basis until the date of actual realization.</p>
 
   <p class="take-notice-heading">Final Opportunity</p>
 

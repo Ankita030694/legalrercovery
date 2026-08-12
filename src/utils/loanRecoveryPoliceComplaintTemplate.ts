@@ -10,6 +10,7 @@ export interface LoanRecoveryPoliceComplaintData {
   complainantPhone?: string
   complainantEmail?: string
   complainantAddress?: string
+  clientAuthRepPhone?: string
   policeStationName: string
   policeStationAddress: string
   policeStationEmail?: string
@@ -40,7 +41,8 @@ export function fillLoanRecoveryPoliceComplaintTemplate(data: LoanRecoveryPolice
     policeStationAddress,
     policeStationEmail,
     complainantName = "ActoLoan",
-    complainantPhone = "+91-XXXXXXXXXX",
+    clientAuthRepPhone,
+    complainantPhone = clientAuthRepPhone || "+91-XXXXXXXXXX",
     complainantEmail = "Legal@actoloan.com",
     complainantAddress = "SHOP NO-4, GROUND FLOOR, EXTN-2, NEAR NEW SARASWATI PUBLIC SCHOOL NANGLOI, Nangloi, West Delhi, New Delhi, Delhi, India,110041",
     invoiceNo,

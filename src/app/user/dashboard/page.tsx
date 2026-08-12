@@ -89,6 +89,7 @@ export default function UserDashboard() {
   const [isDispatchingBatch, setIsDispatchingBatch] = useState(false);
   const [userProfile, setUserProfile] = useState<any>(null);
   const [isUpdatingToggle, setIsUpdatingToggle] = useState(false);
+  const [isForceDispatching, setIsForceDispatching] = useState<Record<string, boolean>>({});
 
   const fetchCases = async () => {
     try {
@@ -159,6 +160,30 @@ export default function UserDashboard() {
       alert(`Network error triggering dispatch: ${err.message || err}`);
     } finally {
       setIsDispatchingBatch(false);
+    }
+  };
+
+  const handleForceDispatchCase = async (caseId: string) => {
+    setIsForceDispatching((prev) => ({ ...prev, [caseId]: true }));
+    try {
+      const res = await fetch("/api/cron/dispatch-queue", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json"
+        },
+        body: JSON.stringify({ forceCaseId: caseId })
+      });
+      const data = await res.json();
+      if (res.ok && data.success) {
+        alert(`Next notice dispatched successfully for this case!`);
+        fetchCases();
+      } else {
+        alert(`Error triggering dispatch: ${data.error || "Unknown error"}`);
+      }
+    } catch (err: any) {
+      alert(`Network error triggering dispatch: ${err.message || err}`);
+    } finally {
+      setIsForceDispatching((prev) => ({ ...prev, [caseId]: false }));
     }
   };
 
@@ -747,6 +772,20 @@ export default function UserDashboard() {
                       </button>
                     )}
 
+                    {c.status === "active" && c.timeline && c.timeline.length > 0 && c.timeline[0].status !== "pending" && (userPhone === "8700343611" || userPhone === "8130104447") && (
+                      <button
+                        onClick={() => handleForceDispatchCase(c.id)}
+                        disabled={isForceDispatching[c.id]}
+                        className="px-4 py-2 text-xs font-black text-slate-700 bg-slate-100 border border-slate-300 hover:bg-slate-200 hover:border-slate-400 disabled:opacity-50 disabled:cursor-not-allowed rounded-xl transition-all cursor-pointer focus:outline-none flex items-center justify-center gap-1.5 shadow-sm hover:-translate-y-0.5"
+                        title="Dispatch the next notice immediately, overriding the 7-day wait period"
+                      >
+                        {isForceDispatching[c.id] ? (
+                           <Loader2 className="w-3.5 h-3.5 animate-spin" />
+                        ) : <Send className="w-3.5 h-3.5" />}
+                        Force Next Notice
+                      </button>
+                    )}
+
                     {(c.status === "active" || c.status === "paused") && (
                       <button
                         onClick={() => handleStopNotices(c.id)}
@@ -848,7 +887,9 @@ export default function UserDashboard() {
                               ? "text-slate-500"
                               : "text-slate-400"}`}
                           >
-                            {t.label}
+                            {c.category === "loan-recovery" 
+                              ? (t.step === 1 ? "1st Notice" : t.step === 2 ? "Police Complaint" : t.step === 3 ? "2nd Notice" : t.step === 4 ? "3rd Notice" : t.label)
+                              : t.label}
                           </span>
                           
                           <span className="text-[8px] sm:text-[9.5px] text-slate-400 font-bold mt-0.5 leading-none font-sans">

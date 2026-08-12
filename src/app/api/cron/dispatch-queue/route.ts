@@ -105,9 +105,7 @@ Legal Dispatch Desk
 AMA Legal Solutions`;
     } else {
       // general-recovery Step 2 = second notice to accused
-      emailSubject = caseDoc.category === 'loan-recovery' 
-        ? `Loan Recall-cum-Recovery Notice and Intimation of Filing Complaint before the Commissioner of Police for Offences under Section 318(4) of the Bharatiya Nyaya Sanhita, 2023 - Ref: ${noticeRef}`
-        : `Second & Final Legal Demand Notice (Ref: ${noticeRef})`;
+      emailSubject = `Second & Final Legal Demand Notice (Ref: ${noticeRef})`;
       emailBody = `<div style="font-family: Arial, sans-serif; font-size: 15px; color: #1f2937; line-height: 1.6; max-width: 650px;">
   <p>Dear ${caseDoc.defaulterName},</p>
   
@@ -140,7 +138,7 @@ AMA Legal Solutions`;
     }
   } else if (step === 3) {
     emailSubject = caseDoc.category === 'loan-recovery'
-      ? `Final Demand Cum Legal Action Notice Prior to Commencement of Recovery Proceedings and Invocation of Arbitration - Ref: ${noticeRef}`
+      ? `Loan Recall-cum-Recovery Notice and Intimation of Filing Complaint before the Commissioner of Police for Offences under Section 318(4) of the Bharatiya Nyaya Sanhita, 2023 - Ref: ${noticeRef}`
       : `FINAL LEGAL NOTICE – 72 Hours to Comply Failing Which Civil, Criminal and Police Action Shall Be Initiated (Ref: ${noticeRef})`;
     emailBody = `<div style="font-family: Arial, sans-serif; font-size: 15px; color: #1f2937; line-height: 1.6; max-width: 650px;">
   <p>Dear ${caseDoc.defaulterName},</p>
@@ -173,9 +171,40 @@ AMA Legal Solutions`;
 </div>`;
   } else if (step === 4) {
     emailSubject = caseDoc.category === 'loan-recovery'
-      ? `COMPLAINT ON BEHALF OF ${clientDisplayName.toUpperCase()} AGAINST THE BORROWER FOR DELIBERATE AND WILFUL NON-PAYMENT OF OUTSTANDING LOAN DUES AND OTHER ACTS ATTRACTING APPLICABLE PROVISIONS OF LAW - Ref: ${noticeRef}`
+      ? `Final Demand Cum Legal Action Notice Prior to Commencement of Recovery Proceedings and Invocation of Arbitration - Ref: ${noticeRef}`
       : `Formal Criminal Police Complaint - Cheating, Criminal Breach of Trust & Dishonest Non-Payment - Ref: ${noticeRef}`;
-    emailBody = `To,
+    if (caseDoc.category === 'loan-recovery') {
+      emailBody = `<div style="font-family: Arial, sans-serif; font-size: 15px; color: #1f2937; line-height: 1.6; max-width: 650px;">
+  <p>Dear ${caseDoc.defaulterName},</p>
+  
+  <p>Please find attached the Final Demand Cum Legal Action Notice Prior to Commencement of Recovery Proceedings and Invocation of Arbitration issued on behalf of our client, <strong>${clientDisplayName}</strong>, regarding the outstanding amount pending against you.</p>
+  
+  <p>You are required to clear the outstanding amount of <strong>₹${caseDoc.stuckAmount.toLocaleString("en-IN")}</strong> within <strong>72 (Seventy-Two) Hours</strong> from receipt of this communication.</p>
+  
+  <p>Failing compliance, our client shall initiate appropriate civil and criminal proceedings without any further notice.</p>
+  
+  <p>Kindly acknowledge receipt of this email and the attached notice.</p>
+  
+  <br />
+  <div style="border-top: 1px solid #e5e7eb; padding-top: 15px; margin-top: 20px;">
+    <img src="https://www.legalrecovery.in/notices/ama_logo.png" width="220" height="61" alt="AMA Legal Solutions" style="width: 220px; height: 61px; display: block; margin-bottom: 10px;" />
+    <strong style="color: #111827; font-size: 16px; display: block; letter-spacing: 0.5px;">AMA LEGAL SOLUTIONS</strong>
+    <span style="font-size: 14px; color: #4b5563; display: block; font-weight: 600;">Advocate & Solicitors</span>
+    <span style="font-size: 13px; color: #6b7280; display: block;">HIGH COURT OF DELHI</span>
+    <span style="font-size: 13px; color: #6b7280; display: block;">MEMBER - BAR COUNCIL OF DELHI</span>
+    <span style="font-size: 13px; color: #6b7280; display: block;">MEMBER - MCIA (MUMBAI) ASSOCIATION</span>
+    <span style="font-size: 13px; color: #6b7280; display: block;">MEMBER - IACC</span>
+    <span style="font-size: 13px; color: #6b7280; display: block; margin-top: 5px;">Gurugram-Delhi-Noida-Bengaluru-Mumbai</span>
+    <a href="https://www.amalegalsolutions.com" style="font-size: 13px; color: #0066cc; text-decoration: underline; display: block; margin-top: 2px;">www.amalegalsolutions.com</a>
+  </div>
+  
+  <br />
+  <div style="font-size: 11px; color: #9ca3af; line-height: 1.4; border-top: 1px dashed #e5e7eb; padding-top: 10px;">
+    <strong>Confidentiality Notice:</strong> This e-mail and any attachments are intended solely for the use of the recipient and may contain privileged or confidential information. If you are not the intended recipient, please notify the sender and delete this message immediately.
+  </div>
+</div>`;
+    } else {
+      emailBody = `To,
 The Station House Officer,
 ${caseDoc.policeStationName}
 ${caseDoc.policeStationAddress}
@@ -197,6 +226,7 @@ A copy of this communication is marked to both the Complainant and the Accused f
 Regards,
 Legal Dispatch Desk
 AMA Legal Solutions`;
+    }
   }
 
   const promises: Promise<boolean>[] = [];
@@ -291,6 +321,18 @@ async function handleDispatch(req: NextRequest) {
   const session = await getServerSession(authOptions);
   let userIdFilter: string | null = null;
   let isAuthorized = false;
+  let forceCaseId: string | null = null;
+
+  if (req.method === "POST") {
+    try {
+      const body = await req.json();
+      if (body.forceCaseId) {
+        forceCaseId = body.forceCaseId;
+      }
+    } catch (e) {
+      // Ignore if no JSON body
+    }
+  }
 
   const { db } = await getDbAndBucket("fs");
 
@@ -318,6 +360,9 @@ async function handleDispatch(req: NextRequest) {
     const query: any = {
       status: "active",
     };
+    if (forceCaseId) {
+      query._id = new ObjectId(forceCaseId);
+    }
     if (userIdFilter) {
       // Forceful dispatch for special user: ignore scheduledAt date check
       query.userId = new ObjectId(userIdFilter);
