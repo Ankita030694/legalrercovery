@@ -390,6 +390,8 @@ async function handleDispatch(req: NextRequest) {
             noticeRef,
             isSpecialUser: isSpecialUser,
             category: caseDoc.category || 'general-recovery',
+            clientAuthRepName: sanitizeField(caseDoc.clientAuthRepName),
+            clientAuthRepPhone: sanitizeField(caseDoc.clientAuthRepPhone),
           };
           
           if (caseDoc.category === 'loan-recovery') {
@@ -633,6 +635,8 @@ async function handleDispatch(req: NextRequest) {
             noticeRef,
             isSpecialUser: isSpecialUser,
             category: caseDoc.category || 'general-recovery',
+            clientAuthRepName: sanitizeField(caseDoc.clientAuthRepName),
+            clientAuthRepPhone: sanitizeField(caseDoc.clientAuthRepPhone),
           };
           
           if (caseDoc.category === 'loan-recovery') {

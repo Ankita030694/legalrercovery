@@ -47,11 +47,12 @@ export interface PDFGeneratorParams {
   createdAt: string;
   step: number;
   category?: string;
-  // Complainant Details
   clientName?: string;
   clientEmail?: string;
   clientPhone?: string;
   clientAddress?: string;
+  clientAuthRepName?: string;
+  clientAuthRepPhone?: string;
   noticeRef?: string;
   isSpecialUser?: boolean;
   // Invoice Details
