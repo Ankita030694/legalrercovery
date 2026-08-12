@@ -10,7 +10,6 @@ export interface LoanRecoveryPoliceComplaintData {
   complainantPhone?: string
   complainantEmail?: string
   complainantAddress?: string
-  clientAuthRepPhone?: string
   policeStationName: string
   policeStationAddress: string
   policeStationEmail?: string
