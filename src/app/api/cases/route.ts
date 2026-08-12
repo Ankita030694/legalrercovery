@@ -105,7 +105,8 @@ export async function POST(req: NextRequest) {
       representeeId,
       category,
       asOnDate,
-      disbursementDate
+      disbursementDate,
+      disbursedAmount
     } = body;
 
     // Validate fields
@@ -298,6 +299,7 @@ export async function POST(req: NextRequest) {
       dueDate,
       asOnDate: asOnDate || "",
       disbursementDate: disbursementDate || "",
+      disbursedAmount: disbursedAmount ? parseFloat(disbursedAmount) : null,
       policeStationName,
       policeStationEmail,
       policeStationAddress,

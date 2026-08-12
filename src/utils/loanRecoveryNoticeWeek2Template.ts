@@ -23,6 +23,7 @@ export interface LoanRecoveryNoticeWeek2Data {
   clientAuthRepName?: string
   clientAuthRepPhone?: string
   asOnDate?: string
+  disbursedAmount?: number | string
 }
 
 export function fillLoanRecoveryNoticeWeek2Template(data: LoanRecoveryNoticeWeek2Data): string {
@@ -46,6 +47,7 @@ export function fillLoanRecoveryNoticeWeek2Template(data: LoanRecoveryNoticeWeek
     invoiceDate,
     disbursementDate,
     asOnDate,
+    disbursedAmount,
   } = data
 
   function amountToWords(amount: string): string {
@@ -156,7 +158,7 @@ export function fillLoanRecoveryNoticeWeek2Template(data: LoanRecoveryNoticeWeek
 <div class="notice-body">
   <p>Under the instructions and authority of our client, <strong>${complainantName}</strong> ("Our Client") having its registered address at <strong>${complainantAddress}</strong>, we hereby issue this Final Demand Cum Legal Action Notice, calling upon you to immediately discharge your outstanding financial obligations arising from the loan facility availed by you from Our Client.</p>
 
-  <p>Reference is invited to the loan bearing Loan ID <strong>${invoiceNo || "__________"}</strong>, sanctioned by Our Client on <strong>${invoiceDate || "__________"}</strong> (Disbursement Date) for a sum of <strong>&#8377;__________ (Rupees __________________ Only)</strong>(Disbursed Amount) and disbursed to you on <strong>${disbursementDate || "__________"}</strong> (Disbursement Date) pursuant to the Loan Agreement, repayment schedule, sanction terms, declarations, mandates, electronic records, and all other ancillary loan documents (collectively referred to as the "Loan Documents"), whether executed physically, electronically, or through any digital mode made available by Our Client.</p>
+  <p>Reference is invited to the loan bearing Loan ID <strong>${invoiceNo || "__________"}</strong>, sanctioned by Our Client on <strong>${disbursementDate || "__________"}</strong> (Disbursement Date) for a sum of <strong>&#8377;${disbursedAmount ? parseFloat(String(disbursedAmount)).toLocaleString('en-IN') : "__________"} (Rupees ${disbursedAmount ? amountToWords(String(disbursedAmount)) : "__________________"} Only)</strong> (Disbursed Amount) and disbursed to you on <strong>${disbursementDate || "__________"}</strong> (Disbursement Date) pursuant to the Loan Agreement, repayment schedule, sanction terms and other connected transaction documents executed/accepted by you ("Loan Documents"). The terms, conditions, rights and obligations governing the said loan facility are exhaustively detailed in the Loan Documents, which you have read, understood and voluntarily agreed to be bound by.</p>
 
   <p>By voluntarily executing and accepting the Loan Documents, you unequivocally agreed to repay the loan amount together with contractual interest, default interest, penal charges, processing fees, taxes, and all other contractual dues in accordance with the agreed repayment schedule and the terms and conditions governing the loan facility.</p>
 

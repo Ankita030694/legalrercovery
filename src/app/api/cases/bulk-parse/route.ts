@@ -127,11 +127,12 @@ export async function POST(req: NextRequest) {
       - dueDate: The earliest or most relevant default date or due date in "YYYY-MM-DD" format. Dates in the future are ACCEPTABLE.
       - asOnDate: The date the outstanding amount was calculated as-of in "YYYY-MM-DD" format. Infer from context or set to null if not explicitly mentioned.
       - disbursementDate: The date the loan was disbursed in "YYYY-MM-DD" format. Set to null if not explicitly mentioned.
+      - disbursedAmount: The original "Loan Amount" disbursed as a number. Clean all commas and currency symbols. Set to null if not explicitly mentioned.
       - invoices: An array of objects representing each individual LOAN, containing:
           - invoiceNo: A string representation of the Loan Account Number or Loan ID.
           - invoiceDate: The loan disbursement date in "YYYY-MM-DD" format. Set to null if not present.
           - dueDate: The payment due date or default date in "YYYY-MM-DD" format. Set to null if not present.
-          - amount: The specific outstanding loan amount or principal amount as a number. Clean all commas and currency symbols.
+          - amount: The specific "Total Outstanding" loan amount as a number. Clean all commas and currency symbols.
 
       **Return ONLY a valid JSON object with this exact structure**:
       {
@@ -149,6 +150,7 @@ export async function POST(req: NextRequest) {
             "dueDate": "YYYY-MM-DD",
             "asOnDate": "YYYY-MM-DD",
             "disbursementDate": "YYYY-MM-DD",
+            "disbursedAmount": 450000,
             "invoices": [
               {
                 "invoiceNo": "LOAN-123",
@@ -178,8 +180,9 @@ export async function POST(req: NextRequest) {
       max_tokens: 16384,
     });
 
-    const resultText = completion.choices[0]?.message?.content || "{}";
-    const resultJson = JSON.parse(resultText);
+    const rawContent = completion.choices[0]?.message?.content || "{}";
+    console.log("[Bulk AI Parse] Raw AI Response:", rawContent);
+    const resultJson = JSON.parse(rawContent);
     const parsedCases = resultJson.cases || [];
 
     // Manually calculate stuckAmount for each case by summing invoice amounts

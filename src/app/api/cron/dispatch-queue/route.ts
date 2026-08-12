@@ -105,7 +105,9 @@ Legal Dispatch Desk
 AMA Legal Solutions`;
     } else {
       // general-recovery Step 2 = second notice to accused
-      emailSubject = `Second & Final Legal Demand Notice (Ref: ${noticeRef})`;
+      emailSubject = caseDoc.category === 'loan-recovery' 
+        ? `Loan Recall-cum-Recovery Notice and Intimation of Filing Complaint before the Commissioner of Police for Offences under Section 318(4) of the Bharatiya Nyaya Sanhita, 2023 - Ref: ${noticeRef}`
+        : `Second & Final Legal Demand Notice (Ref: ${noticeRef})`;
       emailBody = `<div style="font-family: Arial, sans-serif; font-size: 15px; color: #1f2937; line-height: 1.6; max-width: 650px;">
   <p>Dear ${caseDoc.defaulterName},</p>
   
@@ -138,7 +140,7 @@ AMA Legal Solutions`;
     }
   } else if (step === 3) {
     emailSubject = caseDoc.category === 'loan-recovery'
-      ? `Final Demand Cum Legal Action Notice Prior to Commencement of Recovery Proceedings and Invocation of Arbitration (Ref: ${noticeRef})`
+      ? `Final Demand Cum Legal Action Notice Prior to Commencement of Recovery Proceedings and Invocation of Arbitration - Ref: ${noticeRef}`
       : `FINAL LEGAL NOTICE – 72 Hours to Comply Failing Which Civil, Criminal and Police Action Shall Be Initiated (Ref: ${noticeRef})`;
     emailBody = `<div style="font-family: Arial, sans-serif; font-size: 15px; color: #1f2937; line-height: 1.6; max-width: 650px;">
   <p>Dear ${caseDoc.defaulterName},</p>
@@ -437,10 +439,11 @@ async function handleDispatch(req: NextRequest) {
             clientEmail: complainantEmail,
             clientPhone: complainantPhone,
             clientAddress: sanitizeField(complainantAddress),
-            invoiceNo: sanitizeField(caseDoc.invoiceNo),
+            invoiceNo: sanitizeField(caseDoc.invoiceNo || caseDoc.invoices?.[0]?.invoiceNo),
             invoiceDate: sanitizeField(caseDoc.invoiceDate),
             asOnDate: sanitizeField(caseDoc.asOnDate),
             disbursementDate: sanitizeField(caseDoc.disbursementDate),
+            disbursedAmount: caseDoc.disbursedAmount,
             invoices: caseDoc.invoices,
             noticeRef,
             isSpecialUser: isSpecialUser,
@@ -705,7 +708,7 @@ async function handleDispatch(req: NextRequest) {
             clientEmail: complainantEmail,
             clientPhone: complainantPhone,
             clientAddress: sanitizeField(complainantAddress),
-            invoiceNo: sanitizeField(caseDoc.invoiceNo),
+            invoiceNo: sanitizeField(caseDoc.invoiceNo || caseDoc.invoices?.[0]?.invoiceNo),
             invoiceDate: sanitizeField(caseDoc.invoiceDate),
             invoices: caseDoc.invoices,
             noticeRef,

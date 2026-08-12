@@ -60,6 +60,7 @@ export interface PDFGeneratorParams {
   invoiceDate?: string;
   disbursementDate?: string;
   asOnDate?: string;
+  disbursedAmount?: string | number;
   invoices?: { invoiceNo: string; invoiceDate: string; amount: number; dueDate?: string }[];
 }
 

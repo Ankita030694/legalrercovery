@@ -23,6 +23,7 @@ export interface LoanRecoveryNoticeWeek1Data {
   clientAuthRepPhone?: string
   disbursementDate?: string
   asOnDate?: string
+  disbursedAmount?: string | number
 }
 
 export function fillLoanRecoveryNoticeWeek1Template(data: LoanRecoveryNoticeWeek1Data): string {
@@ -46,6 +47,7 @@ export function fillLoanRecoveryNoticeWeek1Template(data: LoanRecoveryNoticeWeek
     invoiceDate,
     disbursementDate,
     asOnDate,
+    disbursedAmount,
   } = data
 
   function amountToWords(amount: string): string {
@@ -163,7 +165,7 @@ export function fillLoanRecoveryNoticeWeek1Template(data: LoanRecoveryNoticeWeek
 <div class="notice-body">
   <p>Under the instructions and authority of our client, <strong>${complainantName}</strong> ("Our Client") having its registered address at <strong>${complainantAddress}</strong>, we hereby issue this First Legal Demand Notice, calling upon you to immediately discharge your outstanding financial obligations arising from the loan facility availed by you from Our Client.</p>
 
-  <p>You had approached Our Client for financial assistance and, pursuant to your request, Our Client sanctioned a loan bearing Loan ID <strong>${invoiceNo || "__________"}</strong>, vide Disbursement Date <strong>${disbursementDate || invoiceDate || "__________"}</strong>, for a sum of <strong>&#8377;${formattedAmount} (Rupees ${pendingWords} Only)</strong>, which was duly disbursed to you on Disbursement Date <strong>${disbursementDate || invoiceDate || "__________"}</strong>, upon your acceptance and execution of the Loan Agreement, repayment schedule, sanction terms, declarations, mandates, electronic records, and all other ancillary loan documents (collectively referred to as the "Loan Documents"), whether executed physically, electronically, or through any digital mode made available by Our Client.</p>
+  <p>You had approached Our Client for financial assistance and, pursuant to your request, Our Client sanctioned a loan bearing Loan ID <strong>${invoiceNo || "__________"}</strong>, vide Disbursement Date <strong>${disbursementDate || invoiceDate || "__________"}</strong>, for a sum of <strong>&#8377;${disbursedAmount ? parseFloat(String(disbursedAmount)).toLocaleString('en-IN') : "__________"} (Rupees ${disbursedAmount ? amountToWords(String(disbursedAmount)) : "__________________"} Only)</strong>, which was duly disbursed to you on Disbursement Date <strong>${disbursementDate || invoiceDate || "__________"}</strong>, upon your acceptance and execution of the Loan Agreement, repayment schedule, sanction terms, declarations, mandates, electronic records, and all other ancillary loan documents (collectively referred to as the "Loan Documents"), whether executed physically, electronically, or through any digital mode made available by Our Client.</p>
 
   <p>By voluntarily executing and accepting the Loan Documents, you unequivocally agreed to comply with all contractual obligations, including timely repayment of the loan together with applicable interest, penal interest, default charges, processing fees, taxes, and all other contractual dues in accordance with the agreed repayment schedule.</p>
 

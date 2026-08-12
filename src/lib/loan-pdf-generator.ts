@@ -63,6 +63,7 @@ export async function generateLoanNoticePDFBuffer(params: PDFGeneratorParams): P
     invoiceDate,
     disbursementDate,
     asOnDate,
+    disbursedAmount,
     invoices
   } = params;
 
@@ -115,7 +116,7 @@ export async function generateLoanNoticePDFBuffer(params: PDFGeneratorParams): P
     complainantName: clientName,
     complainantAddress: clientAddress,
     isSpecialUser,
-    invoiceNo,
+    invoiceNo: invoiceNo || (invoices?.[0]?.invoiceNo),
     invoiceDate,
     invoices,
     category: category || 'loan-recovery',
@@ -123,6 +124,7 @@ export async function generateLoanNoticePDFBuffer(params: PDFGeneratorParams): P
     clientAuthRepPhone,
     disbursementDate,
     asOnDate,
+    disbursedAmount,
   };
 
   let html = '';

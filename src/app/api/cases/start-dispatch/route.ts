@@ -93,10 +93,11 @@ export async function POST(req: NextRequest) {
         clientEmail: complainantEmail,
         clientPhone: complainantPhone,
         clientAddress: sanitizeField(complainantAddress),
-        invoiceNo: sanitizeField(caseDoc.invoiceNo),
+        invoiceNo: sanitizeField(caseDoc.invoiceNo || caseDoc.invoices?.[0]?.invoiceNo),
         invoiceDate: sanitizeField(caseDoc.invoiceDate),
         asOnDate: sanitizeField(caseDoc.asOnDate),
         disbursementDate: sanitizeField(caseDoc.disbursementDate),
+        disbursedAmount: caseDoc.disbursedAmount,
         invoices: caseDoc.invoices,
         noticeRef: `${caseDoc.caseId}-N1`,
         isSpecialUser: isSpecialUser,
@@ -122,7 +123,9 @@ export async function POST(req: NextRequest) {
     const formattedDate = formatDateString(new Date());
     const pdfFilename = `${cleanDefaulterName}_Notice_${formattedDate}.pdf`;
 
-    const emailSubject = `Legal Demand Notice – Immediate Attention Required (Ref: ${caseDoc.caseId})`;
+    const emailSubject = caseDoc.category === 'loan-recovery' 
+      ? `LEGAL DEMAND NOTICE FOR RECOVERY OF OUTSTANDING LOAN AMOUNT & FILING OF POLICE COMPLAINT.`
+      : `Legal Demand Notice – Immediate Attention Required (Ref: ${caseDoc.caseId})`;
     const emailBody = `<div style="font-family: Arial, sans-serif; font-size: 15px; color: #1f2937; line-height: 1.6; max-width: 650px;">
   <p>Dear ${caseDoc.defaulterName},</p>
   

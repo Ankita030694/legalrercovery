@@ -23,6 +23,7 @@ export interface LoanRecoveryNoticeWeek3Data {
   clientAuthRepName?: string
   clientAuthRepPhone?: string
   asOnDate?: string
+  disbursedAmount?: number | string
 }
 
 export function fillLoanRecoveryNoticeWeek3Template(data: LoanRecoveryNoticeWeek3Data): string {
@@ -46,6 +47,7 @@ export function fillLoanRecoveryNoticeWeek3Template(data: LoanRecoveryNoticeWeek
     invoiceDate,
     disbursementDate,
     asOnDate,
+    disbursedAmount,
   } = data
 
   function amountToWords(amount: string): string {
@@ -159,8 +161,8 @@ export function fillLoanRecoveryNoticeWeek3Template(data: LoanRecoveryNoticeWeek
   <p>Reference is invited to the loan bearing the following particulars:</p>
   <ul>
     <li>Loan ID: <strong>${invoiceNo || "__________"}</strong>;</li>
-    <li>Sanction Date: <strong>${invoiceDate || "__________"}</strong>;</li>
-    <li>Disbursed Amount: <strong>__________</strong>;</li>
+    <li>Disbursement Date: <strong>${disbursementDate || "__________"}</strong>;</li>
+    <li>Disbursed Amount: <strong>&#8377;${disbursedAmount ? parseFloat(String(disbursedAmount)).toLocaleString('en-IN') : "__________"}</strong>;</li>
     <li>Outstanding Amount (Including 2% Penalty): <strong>&#8377;${formattedAmount} (Rupees ${pendingWords} Only)</strong>.</li>
   </ul>
 

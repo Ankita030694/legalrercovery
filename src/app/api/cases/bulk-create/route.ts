@@ -97,6 +97,8 @@ export async function POST(req: NextRequest) {
         invoiceNo: c.invoiceNo || "",
         invoiceDate: c.invoiceDate || "",
         asOnDate: c.asOnDate || "",
+        disbursementDate: c.disbursementDate || "",
+        disbursedAmount: parseFloat(c.disbursedAmount) || null,
         invoices: Array.isArray(c.invoices) ? c.invoices : [],
         status: "active",
         category: category || "general-recovery",

@@ -25,6 +25,7 @@ export interface LoanRecoveryPoliceComplaintData {
   category?: string
   clientAuthRepName?: string
   clientAuthRepPhone?: string
+  disbursedAmount?: number | string
 }
 
 export function fillLoanRecoveryPoliceComplaintTemplate(data: LoanRecoveryPoliceComplaintData): string {
@@ -45,6 +46,7 @@ export function fillLoanRecoveryPoliceComplaintTemplate(data: LoanRecoveryPolice
     invoiceNo,
     invoiceDate,
     disbursementDate,
+    disbursedAmount,
     headerLogoBase64,
     stampLogoBase64,
     barStampLogoBase64,
@@ -207,11 +209,10 @@ export function fillLoanRecoveryPoliceComplaintTemplate(data: LoanRecoveryPolice
   
   <p>The loan was duly sanctioned and disbursed to the Accused in accordance with the applicable terms and conditions.</p>
   <ul>
-    <li>Loan ID: <strong>${invoiceNo || "__________"}</strong></li>
-    <li>Sanction Date: <strong>${invoiceDate || "__________"}</strong></li>
-    <li>Disbursement Date: <strong>${disbursementDate || "__________"}</strong></li>
-    <li>Loan Amount: <strong>INR __________/-</strong></li>
-    <li>Outstanding Amount: <strong>INR ${formattedAmount}/-</strong></li>
+    <li><strong>Loan ID:</strong> ${invoiceNo || "__________"}</li>
+    <li><strong>Disbursement Date:</strong> ${disbursementDate || "__________"}</li>
+    <li><strong>Loan Amount:</strong> INR ${disbursedAmount ? parseFloat(String(disbursedAmount)).toLocaleString('en-IN') : "__________"}/-</li>
+    <li><strong>Outstanding Amount including 2% Penalty:</strong> INR ${formattedAmount}/- (Rupees ${pendingWords} Only)</li>
   </ul>
   
   <p>The Accused was contractually and legally bound to repay the loan amount together with applicable interest, charges and other amounts payable under the agreed repayment schedule.</p>

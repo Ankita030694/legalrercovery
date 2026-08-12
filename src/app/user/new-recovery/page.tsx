@@ -144,6 +144,9 @@ export default function NewRecoveryForm() {
   const [editState, setEditState] = useState("");
   const [editStuckAmount, setEditStuckAmount] = useState("");
   const [editDueDate, setEditDueDate] = useState("");
+  const [editDisbursementDate, setEditDisbursementDate] = useState("");
+  const [editDisbursedAmount, setEditDisbursedAmount] = useState("");
+  const [editAsOnDate, setEditAsOnDate] = useState("");
   const [editInvoices, setEditInvoices] = useState<{invoiceNo: string; invoiceDate: string; dueDate?: string; amount: number}[]>([]);
   const [editPoliceStationName, setEditPoliceStationName] = useState("");
   const [editPoliceStationEmail, setEditPoliceStationEmail] = useState("");
@@ -165,6 +168,9 @@ export default function NewRecoveryForm() {
     setEditState(c.state || "");
     setEditStuckAmount(c.stuckAmount ? String(c.stuckAmount) : "");
     setEditDueDate(c.dueDate || "");
+    setEditDisbursementDate(c.disbursementDate || "");
+    setEditDisbursedAmount(c.disbursedAmount ? String(c.disbursedAmount) : "");
+    setEditAsOnDate(c.asOnDate || "");
     setEditInvoices(c.invoices || []);
     setEditPoliceStationName(c.policeStationName || "");
     setEditPoliceStationEmail(c.policeStationEmail || "");
@@ -231,6 +237,9 @@ export default function NewRecoveryForm() {
       state: editState,
       stuckAmount: parseFloat(editStuckAmount.replace(/,/g, "")) || 0,
       dueDate: editDueDate,
+      disbursementDate: editDisbursementDate,
+      disbursedAmount: parseFloat(editDisbursedAmount.replace(/,/g, "")) || 0,
+      asOnDate: editAsOnDate,
       invoices: editInvoices,
       policeStationName: matchedName,
       policeStationEmail: matchedEmail,
@@ -980,6 +989,43 @@ export default function NewRecoveryForm() {
                       />
                     </div>
 
+                    {category === "loan-recovery" && (
+                      <>
+                        {/* Disbursement Date */}
+                        <div className="flex flex-col gap-1">
+                          <label className="font-bold text-slate-600">Disbursement Date</label>
+                          <input
+                            type="date"
+                            value={editDisbursementDate}
+                            onChange={(e) => setEditDisbursementDate(e.target.value)}
+                            className="bg-slate-50 hover:bg-slate-100/50 border border-[#E5E7EB] focus:border-[#DC2626] rounded-xl px-3 py-2.5 font-semibold outline-none transition-colors"
+                          />
+                        </div>
+
+                        {/* Disbursed Amount */}
+                        <div className="flex flex-col gap-1">
+                          <label className="font-bold text-slate-600">Disbursed Amount (INR)</label>
+                          <input
+                            type="text"
+                            value={editDisbursedAmount}
+                            onChange={(e) => setEditDisbursedAmount(e.target.value)}
+                            className="bg-slate-50 hover:bg-slate-100/50 border border-[#E5E7EB] focus:border-[#DC2626] rounded-xl px-3 py-2.5 font-semibold outline-none transition-colors"
+                          />
+                        </div>
+
+                        {/* As On Date */}
+                        <div className="flex flex-col gap-1">
+                          <label className="font-bold text-slate-600">As On Date</label>
+                          <input
+                            type="date"
+                            value={editAsOnDate}
+                            onChange={(e) => setEditAsOnDate(e.target.value)}
+                            className="bg-slate-50 hover:bg-slate-100/50 border border-[#E5E7EB] focus:border-[#DC2626] rounded-xl px-3 py-2.5 font-semibold outline-none transition-colors"
+                          />
+                        </div>
+                      </>
+                    )}
+
                     {/* Phone 1 */}
                     <div className="flex flex-col gap-1">
                       <label className="font-bold text-slate-600">Primary Phone</label>
@@ -1132,6 +1178,27 @@ export default function NewRecoveryForm() {
 
                         <span className="font-bold text-slate-500">Due Date:</span>
                         <span className="col-span-2 text-slate-700 font-semibold">{editDueDate}</span>
+
+                        {editDisbursementDate && (
+                          <>
+                            <span className="font-bold text-slate-500">Disbursed On:</span>
+                            <span className="col-span-2 text-slate-700 font-semibold">{editDisbursementDate}</span>
+                          </>
+                        )}
+
+                        {editDisbursedAmount && (
+                          <>
+                            <span className="font-bold text-slate-500">Disbursed Amt:</span>
+                            <span className="col-span-2 text-slate-700 font-semibold">₹{parseFloat(editDisbursedAmount.replace(/,/g, "")).toLocaleString("en-IN")}</span>
+                          </>
+                        )}
+
+                        {editAsOnDate && (
+                          <>
+                            <span className="font-bold text-slate-500">Amount As On:</span>
+                            <span className="col-span-2 text-slate-700 font-semibold">{editAsOnDate}</span>
+                          </>
+                        )}
                       </div>
                     </div>
 
