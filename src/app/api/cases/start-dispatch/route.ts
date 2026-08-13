@@ -126,7 +126,25 @@ export async function POST(req: NextRequest) {
     const emailSubject = caseDoc.category === 'loan-recovery' 
       ? `LEGAL DEMAND NOTICE FOR RECOVERY OF OUTSTANDING LOAN AMOUNT & FILING OF POLICE COMPLAINT.`
       : `Legal Demand Notice – Immediate Attention Required (Ref: ${caseDoc.caseId})`;
-    const emailBody = `<div style="font-family: Arial, sans-serif; font-size: 15px; color: #1f2937; line-height: 1.6; max-width: 650px;">
+
+    let emailBody = '';
+    if (caseDoc.category === 'loan-recovery') {
+      emailBody = `<div style="font-family: Arial, sans-serif; font-size: 15px; color: #1f2937; line-height: 1.6; max-width: 650px;">
+  <p>Dear Mr. ${caseDoc.defaulterName},</p>
+  
+  <p>Please find attached the Legal Demand Notice issued on behalf of our client, <strong>${clientDisplayName}</strong>, having its office through ${sanitizeField(complainantAddress)}, for recovery of the outstanding <strong>₹${caseDoc.stuckAmount.toLocaleString("en-IN")}/-</strong>.</p>
+  
+  <p>You are finally called upon to clear the entire outstanding amount within <strong>7 (Seven) days</strong> of receipt. You are advised to read the enclosed Notice carefully and take immediate steps to comply.</p>
+  
+  <p>Please further take notice that, in the event of non-payment, our client shall proceed with filing an appropriate police complaint before the competent police authorities having jurisdiction over the registered/KYC address furnished by you, in addition to initiating appropriate recovery and other legal proceedings available under law.</p>
+  
+  <p>No further opportunity or correspondence may be extended.</p>
+  
+  <p>Treat this communication as your final opportunity to resolve the matter without further legal action.</p>
+  
+  <br />`;
+    } else {
+      emailBody = `<div style="font-family: Arial, sans-serif; font-size: 15px; color: #1f2937; line-height: 1.6; max-width: 650px;">
   <p>Dear ${caseDoc.defaulterName},</p>
   
   <p>Please find attached a Legal Demand Notice issued on behalf of our client, <strong>${clientDisplayName}</strong>, concerning the outstanding amount/claim of <strong>₹${caseDoc.stuckAmount.toLocaleString("en-IN")}</strong> pending against you.</p>
@@ -139,7 +157,10 @@ export async function POST(req: NextRequest) {
   
   <p>Kindly acknowledge receipt of this email and the attached notice.</p>
   
-  <br />
+  <br />`;
+    }
+    
+    emailBody += `
   <div style="border-top: 1px solid #e5e7eb; padding-top: 15px; margin-top: 20px;">
     <img src="https://www.legalrecovery.in/notices/ama_logo.png" width="220" height="61" alt="AMA Legal Solutions" style="width: 220px; height: 61px; display: block; margin-bottom: 10px;" />
     <strong style="color: #111827; font-size: 16px; display: block; letter-spacing: 0.5px;">AMA LEGAL SOLUTIONS</strong>

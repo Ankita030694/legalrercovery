@@ -79,6 +79,7 @@ export async function POST(request: NextRequest) {
       category,
       clientAuthRepName,
       clientAuthRepPhone,
+      defaulterName,
     } = body
 
     if (!clientName || !clientPhone || !amountPending) {
@@ -89,6 +90,7 @@ export async function POST(request: NextRequest) {
     let stampLogoBase64 = ''
     let barStampLogoBase64 = ''
     let signatureBase64 = ''
+    let bookmanFontBase64 = ''
     try {
       const headerPath = process.cwd() + '/public/notices/header logo AMA .png'
       if (fs.existsSync(headerPath)) {
@@ -111,7 +113,7 @@ export async function POST(request: NextRequest) {
     }
 
     const html = fillLoanRecoveryNoticeWeek2Template({
-      clientName,
+      clientName: defaulterName || clientName,
       clientPhone,
       clientAddress: clientAddress || 'Address on file',
       clientEmail,
@@ -122,13 +124,14 @@ export async function POST(request: NextRequest) {
       stampLogoBase64,
       barStampLogoBase64,
       signatureBase64,
+      bookmanFontBase64,
       noticeRef,
       complainantName,
       complainantAddress,
       isSpecialUser,
       invoiceNo,
-      invoiceDate,
-      disbursementDate,
+      invoiceDate: invoiceDate ? formatDate(invoiceDate) : invoiceDate,
+      disbursementDate: disbursementDate ? formatDate(disbursementDate) : disbursementDate,
       invoices,
       category: category || 'general-recovery',
       clientAuthRepName,
@@ -210,7 +213,7 @@ export async function POST(request: NextRequest) {
 
     const pdf = await page.pdf({
       format: 'A4',
-      margin: { top: '58mm', right: '18mm', bottom: '22mm', left: '22mm' },
+      margin: { top: '58mm', right: '22mm', bottom: '22mm', left: '22mm' },
       printBackground: true,
       displayHeaderFooter: true,
       headerTemplate,

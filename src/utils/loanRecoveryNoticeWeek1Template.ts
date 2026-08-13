@@ -87,6 +87,7 @@ export function fillLoanRecoveryNoticeWeek1Template(data: LoanRecoveryNoticeWeek
   }` : ''}
 
   body {
+    text-align: justify;
     font-family: 'Times New Roman', Times, serif;
     font-size: 12pt;
     line-height: 1.6;
@@ -146,7 +147,7 @@ export function fillLoanRecoveryNoticeWeek1Template(data: LoanRecoveryNoticeWeek
 <body>
 
 <div class="notice-title">LEGAL DEMAND NOTICE</div>
-<div class="dispatch-mode">THROUGH EMAIL/WHATSAPP</div>
+<div class="dispatch-mode">THROUGH EMAIL / WHATSAPP / SPEED POST</div>
 
 <div class="addressee">
   <p>To,</p>
@@ -179,9 +180,9 @@ export function fillLoanRecoveryNoticeWeek1Template(data: LoanRecoveryNoticeWeek
 
   <p>Our Client is in possession of complete documentary and electronic records relating to the loan transaction, including the Loan Documents, KYC records, account statements, repayment history, digital execution records, electronic consent, bank records, and all other relevant evidence. The same shall be duly relied upon before the competent judicial, arbitral, or statutory authorities in support of Our Client's claims.</p>
 
-  <p>You are further put to notice that your continued default may be reported to the relevant Credit Information Companies in accordance with the Credit Information Companies (Regulation) Act, 2005, applicable RBI guidelines, and other governing laws. Such reporting may adversely affect your creditworthiness, CIBIL score, and future eligibility to obtain loans, credit facilities, or other banking services.</p>
+  <p><strong>You are further put to notice that your continued default may be reported to the relevant Credit Information Companies in accordance with the Credit Information Companies (Regulation) Act, 2005, applicable RBI guidelines, and other governing laws. Such reporting may adversely affect your creditworthiness, CIBIL score, and future eligibility to obtain loans, credit facilities, or other banking services.</strong></p>
 
-  <p>Further, where the facts and material available disclose dishonest intention, fraudulent inducement, dishonest retention or misappropriation of entrusted funds, deception, or acts amounting to unlawful intimidation, Our Client shall initiate appropriate criminal proceedings before the competent authorities, including for offences punishable under Section 318 of the Bharatiya Nyaya Sanhita, 2023 (Cheating), carrying punishment of imprisonment up to seven (7) years and fine; Section 316 of the Bharatiya Nyaya Sanhita, 2023 (Criminal Breach of Trust), punishable with imprisonment, fine, or both; and Section 351 of the Bharatiya Nyaya Sanhita, 2023 (Criminal Intimidation), punishable with imprisonment, fine, or both, together with such other civil and criminal proceedings and offences as may be disclosed during investigation or otherwise permissible in law.</p>
+  <p>Further, where the facts and material available disclose dishonest intention, fraudulent inducement, dishonest retention or misappropriation of entrusted funds, deception, or acts amounting to unlawful intimidation, Our Client shall initiate appropriate criminal proceedings before the competent authorities, including for offences punishable under <strong>Section 318 of the Bharatiya Nyaya Sanhita, 2023</strong> (Cheating), carrying punishment of imprisonment up to seven (7) years and fine; <strong>Section 316 of the Bharatiya Nyaya Sanhita, 2023</strong> (Criminal Breach of Trust), punishable with imprisonment, fine, or both; and <strong>Section 351 of the Bharatiya Nyaya Sanhita, 2023</strong> (Criminal Intimidation), punishable with imprisonment, fine, or both, together with such other civil and criminal proceedings and offences as may be disclosed during investigation or otherwise permissible in law.</p>
 
   <p>Kindly note that Our Client is no longer inclined to extend unlimited opportunities for repayment. This Notice constitutes your final opportunity to avoid legal consequences.</p>
 
@@ -191,7 +192,7 @@ export function fillLoanRecoveryNoticeWeek1Template(data: LoanRecoveryNoticeWeek
     <li>If you dispute the Outstanding Amount or any component thereof, submit a detailed written representation along with complete documentary evidence within the aforesaid period on <strong><a href="mailto:${data.clientEmail || 'Legal@actoloan.com'}" style="color: blue; text-decoration: underline;">${data.clientEmail || 'Legal@actoloan.com'}</a></strong>. For an amicable solution you can also reach out to <strong>Mr. Raman Jhakal</strong> on <strong>9896197115</strong>.</li>
   </ol>
 
-  <p>TAKE FURTHER NOTICE that if you fail to clear the Outstanding Amount or submit a valid written response within Three (3) days from receipt of this Notice, Our Client shall, without any further notice, initiate all appropriate legal proceedings available under law, including but not limited to:</p>
+  <p><strong>TAKE FURTHER NOTICE</strong> that if you fail to clear the Outstanding Amount or submit a valid written response within Three (3) days from receipt of this Notice, Our Client shall, without any further notice, initiate all appropriate legal proceedings available under law, including but not limited to:</p>
   <ol>
     <li>Recovery proceedings before the competent Court, Arbitral Tribunal, or other judicial/quasi-judicial authority having jurisdiction;</li>
     <li>Lodging of an appropriate complaint before the competent Police Authorities, wherever warranted by the facts and applicable law; and</li>

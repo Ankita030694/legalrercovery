@@ -36,7 +36,8 @@ async function sendAccusedDispatch(
   complainantEmail: string,
   isEmailPending: boolean,
   noticeRef: string,
-  ccEmails: string
+  ccEmails: string,
+  complainantAddress: string
 ): Promise<{ emailSent: boolean; whatsappSent: boolean }> {
   let emailSubject = "";
   let emailBody = "";
@@ -80,7 +81,7 @@ async function sendAccusedDispatch(
     const isLoanRecovery = caseDoc.category === 'loan-recovery';
     if (isLoanRecovery) {
       // loan-recovery Step 2 = police complaint to SHO
-      emailSubject = `COMPLAINT ON BEHALF OF ${clientDisplayName.toUpperCase()} AGAINST THE BORROWER FOR DELIBERATE AND WILFUL NON-PAYMENT OF OUTSTANDING LOAN DUES AND OTHER ACTS ATTRACTING APPLICABLE PROVISIONS OF LAW - Ref: ${noticeRef}`;
+      emailSubject = `Complaint on behalf of ${clientDisplayName} against ${caseDoc.defaulterName} for non-payment of dues and breach of trust and cheating - Ref: ${noticeRef}`;
       emailBody = `To,
 The Station House Officer,
 ${caseDoc.policeStationName}
@@ -140,7 +141,23 @@ AMA Legal Solutions`;
     emailSubject = caseDoc.category === 'loan-recovery'
       ? `Loan Recall-cum-Recovery Notice and Intimation of Filing Complaint before the Commissioner of Police for Offences under Section 318(4) of the Bharatiya Nyaya Sanhita, 2023 - Ref: ${noticeRef}`
       : `FINAL LEGAL NOTICE – 72 Hours to Comply Failing Which Civil, Criminal and Police Action Shall Be Initiated (Ref: ${noticeRef})`;
-    emailBody = `<div style="font-family: Arial, sans-serif; font-size: 15px; color: #1f2937; line-height: 1.6; max-width: 650px;">
+    if (caseDoc.category === 'loan-recovery') {
+      emailBody = `<div style="font-family: Arial, sans-serif; font-size: 15px; color: #1f2937; line-height: 1.6; max-width: 650px;">
+  <p>Dear Mr. ${caseDoc.defaulterName},</p>
+  
+  <p>Please find attached the Recall Notice issued on behalf of our client, <strong>${clientDisplayName}</strong>, having its office through ${complainantAddress}, concerning the outstanding amount of <strong>₹${caseDoc.stuckAmount.toLocaleString("en-IN")}/-</strong> payable by you.</p>
+  
+  <p>You are hereby finally called upon to clear the entire outstanding amount within <strong>24 (Twenty-Four) hours</strong> from receipt of this communication.</p>
+  
+  <p>Take further notice that a Police Complaint has already been filed before the competent authorities. Further, lawful visits may be undertaken by the Client’s authorised recovery representatives/field legal team at your registered/KYC address for verification, communication and lawful recovery of the outstanding dues, strictly in accordance with applicable law.</p>
+  
+  <p>Failure to comply within the stipulated period shall result in our Client pursuing all appropriate civil, criminal and recovery proceedings available under law, including invocation of arbitration, without any further notice or opportunity.</p>
+  
+  <p>Treat this as your final opportunity to resolve the matter.</p>
+  
+  <br />`;
+    } else {
+      emailBody = `<div style="font-family: Arial, sans-serif; font-size: 15px; color: #1f2937; line-height: 1.6; max-width: 650px;">
   <p>Dear ${caseDoc.defaulterName},</p>
   
   <p>Please find attached the Final Legal Notice issued on behalf of our client, <strong>${clientDisplayName}</strong>, regarding the outstanding amount pending against you.</p>
@@ -151,7 +168,10 @@ AMA Legal Solutions`;
   
   <p>Kindly acknowledge receipt of this email and the attached notice.</p>
   
-  <br />
+  <br />`;
+    }
+    
+    emailBody += `
   <div style="border-top: 1px solid #e5e7eb; padding-top: 15px; margin-top: 20px;">
     <img src="https://www.legalrecovery.in/notices/ama_logo.png" width="220" height="61" alt="AMA Legal Solutions" style="width: 220px; height: 61px; display: block; margin-bottom: 10px;" />
     <strong style="color: #111827; font-size: 16px; display: block; letter-spacing: 0.5px;">AMA LEGAL SOLUTIONS</strong>
@@ -175,13 +195,15 @@ AMA Legal Solutions`;
       : `Formal Criminal Police Complaint - Cheating, Criminal Breach of Trust & Dishonest Non-Payment - Ref: ${noticeRef}`;
     if (caseDoc.category === 'loan-recovery') {
       emailBody = `<div style="font-family: Arial, sans-serif; font-size: 15px; color: #1f2937; line-height: 1.6; max-width: 650px;">
-  <p>Dear ${caseDoc.defaulterName},</p>
+  <p>Please find attached the FINAL DEMAND CUM LEGAL ACTION NOTICE PRIOR TO COMMENCEMENT OF RECOVERY PROCEEDINGS AND INVOCATION OF ARBITRATION, issued on behalf of <strong>${clientDisplayName}</strong>, having its office through ${complainantAddress}, regarding your outstanding dues of <strong>₹${caseDoc.stuckAmount.toLocaleString("en-IN")}/-</strong>.</p>
   
-  <p>Please find attached the Final Demand Cum Legal Action Notice Prior to Commencement of Recovery Proceedings and Invocation of Arbitration issued on behalf of our client, <strong>${clientDisplayName}</strong>, regarding the outstanding amount pending against you.</p>
+  <p>You are hereby called upon to clear the entire outstanding amount within <strong>24 (Twenty-Four) hours</strong> from receipt of this communication.</p>
   
-  <p>You are required to clear the outstanding amount of <strong>₹${caseDoc.stuckAmount.toLocaleString("en-IN")}</strong> within <strong>72 (Seventy-Two) Hours</strong> from receipt of this communication.</p>
+  <p>Failing full payment within the stipulated period, our Client shall, without any further reminder or correspondence, proceed with appropriate legal remedies, including invocation of arbitration and/or civil recovery proceedings, along with any other action available under applicable law.</p>
   
-  <p>Failing compliance, our client shall initiate appropriate civil and criminal proceedings without any further notice.</p>
+  <p>You are further notified that any court/tribunal or other competent authority may issue formal notices, summons or process for service at the registered/KYC address furnished by you, in accordance with law. You shall remain responsible for complying with such process and appearing before the concerned authority wherever required.</p>
+  
+  <p>Treat this communication as the FINAL OPPORTUNITY to resolve the matter voluntarily. Failure to comply within 24 hours may result in immediate commencement of legal proceedings and additional costs and consequences as permissible under law.</p>
   
   <p>Kindly acknowledge receipt of this email and the attached notice.</p>
   
@@ -537,7 +559,8 @@ async function handleDispatch(req: NextRequest) {
             complainantEmail,
             isEmailPending,
             noticeRef,
-            combinedCcEmails
+            combinedCcEmails,
+            sanitizeField(complainantAddress)
           );
           emailSent = dispatchRes.emailSent;
           whatsappSent = dispatchRes.whatsappSent;
@@ -797,7 +820,8 @@ async function handleDispatch(req: NextRequest) {
             clientEmail,
             true,
             noticeRef,
-            combinedCcEmails
+            combinedCcEmails,
+            sanitizeField(complainantAddress)
           );
           emailSent = dispatchRes.emailSent;
           whatsappSent = dispatchRes.whatsappSent;

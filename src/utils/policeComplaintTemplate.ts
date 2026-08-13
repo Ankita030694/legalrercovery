@@ -74,6 +74,7 @@ export function fillPoliceComplaintTemplate(data: PoliceComplaintData): string {
   * { margin: 0; padding: 0; box-sizing: border-box; }
 
   body {
+    text-align: justify;
     font-family: 'Times New Roman', Times, serif;
     font-size: 11.5pt;
     line-height: 1.5;

@@ -87,6 +87,7 @@ export function fillLoanRecoveryNoticeWeek3Template(data: LoanRecoveryNoticeWeek
   }` : ''}
 
   body {
+    text-align: justify;
     font-family: 'Times New Roman', Times, serif;
     font-size: 12pt;
     line-height: 1.6;
@@ -139,7 +140,7 @@ export function fillLoanRecoveryNoticeWeek3Template(data: LoanRecoveryNoticeWeek
 <body>
 
 <div class="notice-title">FULL AND FINAL LEGAL NOTICE</div>
-<div class="dispatch-mode">THROUGH EMAIL/WHATSAPP</div>
+<div class="dispatch-mode">THROUGH EMAIL / WHATSAPP / SPEED POST</div>
 
 <div class="addressee">
   <p>To,</p>
@@ -172,11 +173,11 @@ export function fillLoanRecoveryNoticeWeek3Template(data: LoanRecoveryNoticeWeek
 
   <p>Despite having received and enjoyed the entire benefit of the loan facility, you have wilfully, deliberately and continuously defaulted in the repayment of your admitted financial obligations. Your persistent failure to honour the repayment schedule constitutes a material breach of the Loan Documents and has caused substantial financial loss and prejudice to Our Client.</p>
 
-  <p>Our Client has acted with utmost fairness and patience by extending repeated opportunities to you to regularise your account. A First Legal Demand Notice was served upon you, followed by a Loan Recall Cum Recovery Notice, whereby the entire loan facility was recalled and immediate repayment was demanded. Thereafter, numerous reminders were communicated through telephone calls, emails, SMS messages and electronic communication platforms. Despite repeated demands and sufficient opportunities, you have consciously chosen to ignore your contractual obligations and have failed to liquidate your outstanding liability.</p>
+  <p>Our Client has acted with utmost fairness and patience by extending repeated opportunities to you to regularise your account. A <strong>First Legal Demand Notice</strong> was served upon you, followed by a <strong>Loan Recall Cum Recovery Notice</strong>, whereby the entire loan facility was recalled and immediate repayment was demanded. <strong>Thereafter, numerous reminders were communicated through telephone calls, emails, SMS messages and electronic communication platforms. Despite repeated demands and sufficient opportunities, you have consciously chosen to ignore your contractual obligations and have failed to liquidate your outstanding liability.</strong></p>
 
   <p>Our Client's verification records further indicate that income credits, business receipts and/or other income continue to be received by you in the bank account furnished at the time of availing the loan. Your continued refusal to discharge your lawful liability, despite having an apparent financial capacity to do so, demonstrates a deliberate disregard of your contractual obligations and reflects conduct lacking in bona fides.</p>
 
-  <p>Take notice that, as on <strong>${asOnDate || noticeDate}</strong>, a sum of <strong>&#8377;${formattedAmount} (Rupees ${pendingWords} Only)</strong> remains outstanding and legally recoverable from you ("Outstanding Amount including 2% Penalty"), comprising principal, accrued contractual interest, default interest, penal charges, processing charges, taxes and all other contractual dues. The Outstanding Amount continues to accrue additional interest and contractual charges on a daily basis until the date of actual realization.</p>
+  <p><strong>Take notice that</strong>, as on <strong>${asOnDate || noticeDate}</strong>, a sum of <strong>&#8377;${formattedAmount} (Rupees ${pendingWords} Only)</strong> remains outstanding and legally recoverable from you ("Outstanding Amount including 2% Penalty"), comprising principal, accrued contractual interest, default interest, penal charges, processing charges, taxes and all other contractual dues. The Outstanding Amount continues to accrue additional interest and contractual charges on a daily basis until the date of actual realization.</p>
 
   <p class="take-notice-heading">Final Opportunity</p>
 
@@ -194,9 +195,9 @@ export function fillLoanRecoveryNoticeWeek3Template(data: LoanRecoveryNoticeWeek
 
   <p>Our Client shall further seek every interim and final relief available in law, including attachment of your bank accounts, salary, receivables and such movable and immovable assets as may be legally attachable in execution of any award or decree obtained against you.</p>
 
-  <p>Further, where the facts and material available disclose dishonest intention, fraudulent inducement, dishonest retention or misappropriation of entrusted funds, deception, or acts amounting to unlawful intimidation, Our Client shall initiate appropriate criminal proceedings before the competent authorities, including for offences punishable under Section 318 of the Bharatiya Nyaya Sanhita, 2023 (Cheating), carrying punishment of imprisonment up to seven (7) years and fine; Section 316 of the Bharatiya Nyaya Sanhita, 2023 (Criminal Breach of Trust), punishable with imprisonment, fine, or both; and Section 351 of the Bharatiya Nyaya Sanhita, 2023 (Criminal Intimidation), punishable with imprisonment, fine, or both, together with such other civil and criminal proceedings and offences as may be disclosed during investigation or otherwise permissible in law.</p>
+  <p>Further, where the facts and material available disclose dishonest intention, fraudulent inducement, dishonest retention or misappropriation of entrusted funds, deception, or acts amounting to unlawful intimidation, Our Client shall initiate appropriate criminal proceedings before the competent authorities, including for offences punishable under <strong>Section 318 of the Bharatiya Nyaya Sanhita, 2023</strong> (Cheating), carrying punishment of imprisonment up to seven (7) years and fine; <strong>Section 316 of the Bharatiya Nyaya Sanhita, 2023</strong> (Criminal Breach of Trust), punishable with imprisonment, fine, or both; and <strong>Section 351 of the Bharatiya Nyaya Sanhita, 2023</strong> (Criminal Intimidation), punishable with imprisonment, fine, or both, together with such other civil and criminal proceedings and offences as may be disclosed during investigation or otherwise permissible in law.</p>
 
-  <p>Our Client also reserves its right to report your continuing default to the appropriate Credit Information Companies, including TransUnion CIBIL, Experian, CRIF High Mark and Equifax, in accordance with applicable law and regulatory requirements. Such reporting may significantly impair your credit profile and materially affect your ability to obtain future loans, credit cards and other financial facilities.</p>
+  <p><strong>Our Client also reserves its right to report your continuing default to the appropriate Credit Information Companies, including TransUnion CIBIL, Experian, CRIF High Mark and Equifax, in accordance with applicable law and regulatory requirements. Such reporting may significantly impair your credit profile and materially affect your ability to obtain future loans, credit cards and other financial facilities.</strong></p>
 
   <p class="take-notice-heading">Final Intimation</p>
 

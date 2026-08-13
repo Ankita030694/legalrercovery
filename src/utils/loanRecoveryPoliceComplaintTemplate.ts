@@ -93,6 +93,7 @@ export function fillLoanRecoveryPoliceComplaintTemplate(data: LoanRecoveryPolice
   }
   * { margin: 0; padding: 0; box-sizing: border-box; }
   body {
+    text-align: justify;
     font-family: 'Times New Roman', Times, serif;
     font-size: 12pt;
     line-height: 1.5;
@@ -163,7 +164,7 @@ export function fillLoanRecoveryPoliceComplaintTemplate(data: LoanRecoveryPolice
 </div>
 
 <div class="subject-line">
-  <strong>SUBJECT: COMPLAINT ON BEHALF OF ${complainantName.toUpperCase()} AGAINST THE BORROWER FOR DELIBERATE AND WILFUL NON-PAYMENT OF OUTSTANDING LOAN DUES AND OTHER ACTS ATTRACTING APPLICABLE PROVISIONS OF LAW</strong>
+  <strong>SUBJECT: COMPLAINT ON BEHALF OF ${complainantName.toUpperCase()} AGAINST ${clientName.toUpperCase()} FOR NON-PAYMENT OF DUES AND BREACH OF TRUST AND CHEATING</strong>
 </div>
 
 <div class="details-title">COMPLAINANT DETAILS</div>

@@ -119,13 +119,13 @@ export async function generateLoanNoticePDFBuffer(params: PDFGeneratorParams): P
     complainantAddress: clientAddress,
     isSpecialUser,
     invoiceNo: invoiceNo || (invoices?.[0]?.invoiceNo),
-    invoiceDate,
+    invoiceDate: invoiceDate ? formatDate(invoiceDate) : invoiceDate,
     invoices,
     category: category || 'loan-recovery',
     clientAuthRepName,
     clientAuthRepPhone,
-    disbursementDate,
-    asOnDate,
+    disbursementDate: disbursementDate ? formatDate(disbursementDate) : disbursementDate,
+    asOnDate: asOnDate ? formatDate(asOnDate) : asOnDate,
     disbursedAmount,
   };
 
@@ -222,7 +222,7 @@ export async function generateLoanNoticePDFBuffer(params: PDFGeneratorParams): P
 
   const pdfArray = await page.pdf({
     format: 'A4',
-    margin: { top: '58mm', right: '18mm', bottom: '22mm', left: '22mm' },
+    margin: { top: '58mm', right: '22mm', bottom: '22mm', left: '22mm' },
     printBackground: true,
     displayHeaderFooter: true,
     headerTemplate,

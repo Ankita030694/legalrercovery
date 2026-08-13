@@ -82,6 +82,7 @@ export async function POST(request: NextRequest) {
       category,
       clientAuthRepName,
       clientAuthRepPhone,
+      defaulterName,
     } = body
 
     if (!clientName || !clientPhone || !amountPending) {
@@ -119,7 +120,7 @@ export async function POST(request: NextRequest) {
     }
 
     const html = fillLoanRecoveryPoliceComplaintTemplate({
-      clientName,
+      clientName: defaulterName || clientName,
       clientPhone: clientPhone || '',
       clientAddress: clientAddress || 'Address on file',
       clientEmail: clientEmail || '',
@@ -140,8 +141,8 @@ export async function POST(request: NextRequest) {
       bookmanFontBase64,
       isSpecialUser,
       invoiceNo,
-      invoiceDate,
-      disbursementDate,
+      invoiceDate: invoiceDate ? formatDate(invoiceDate) : invoiceDate,
+      disbursementDate: disbursementDate ? formatDate(disbursementDate) : disbursementDate,
       category: category || 'loan-recovery',
       clientAuthRepName,
       clientAuthRepPhone,
@@ -222,7 +223,7 @@ export async function POST(request: NextRequest) {
 
     const pdf = await page.pdf({
       format: 'A4',
-      margin: { top: '58mm', right: '18mm', bottom: '22mm', left: '22mm' },
+      margin: { top: '58mm', right: '22mm', bottom: '22mm', left: '22mm' },
       printBackground: true,
       displayHeaderFooter: true,
       headerTemplate,

@@ -87,6 +87,7 @@ export function fillLoanRecoveryNoticeWeek2Template(data: LoanRecoveryNoticeWeek
   }` : ''}
 
   body {
+    text-align: justify;
     font-family: 'Times New Roman', Times, serif;
     font-size: 12pt;
     line-height: 1.6;
@@ -139,7 +140,7 @@ export function fillLoanRecoveryNoticeWeek2Template(data: LoanRecoveryNoticeWeek
 <body>
 
 <div class="notice-title">RECALL NOTICE</div>
-<div class="dispatch-mode">THROUGH EMAIL/WHATSAPP</div>
+<div class="dispatch-mode">THROUGH EMAIL / WHATSAPP / SPEED POST</div>
 
 <div class="addressee">
   <p>To,</p>
@@ -162,7 +163,7 @@ export function fillLoanRecoveryNoticeWeek2Template(data: LoanRecoveryNoticeWeek
 
   <p>By voluntarily executing and accepting the Loan Documents, you unequivocally agreed to repay the loan amount together with contractual interest, default interest, penal charges, processing fees, taxes, and all other contractual dues in accordance with the agreed repayment schedule and the terms and conditions governing the loan facility.</p>
 
-  <p>Despite your contractual obligations, you committed an Event of Default by persistently failing to adhere to the agreed repayment schedule. Consequently, Our Client previously issued a First Legal Demand Notice, followed by this notice, whereby the entire loan facility was recalled and the entire outstanding liability was declared immediately due and payable.</p>
+  <p>Despite your contractual obligations, you committed an Event of Default by persistently failing to adhere to the agreed repayment schedule. Consequently, Our Client previously issued a <strong>First Legal Demand Notice</strong>, followed by this notice, whereby the entire loan facility was recalled and the entire outstanding liability was declared immediately due and payable.</p>
 
   <p>Despite repeated telephonic calls, recovery calls, emails, SMS notifications, WhatsApp communications (where applicable), reminder communications, and other electronic correspondence, you have neither responded nor made any sincere effort to regularize your loan account. Even the references and contact details voluntarily furnished by you during the loan application process were contacted solely for facilitating communication with you. However, no response or payment has been received from your end.</p>
 
@@ -178,7 +179,7 @@ export function fillLoanRecoveryNoticeWeek2Template(data: LoanRecoveryNoticeWeek
 
   <p>Our Client has preserved complete documentary and electronic evidence relating to the loan transaction, including but not limited to the loan application, KYC documents, sanction records, repayment history, account statements, digitally executed Loan Documents, OTP authentication logs, IP logs, electronic execution records, correspondence, emails, SMS communications, WhatsApp communications, payment records, bank records and all other electronic evidence. Our Client expressly reserves its right to rely upon all such records before the competent Courts, Arbitration Tribunal, Police Authorities and all other judicial or quasi-judicial forums.</p>
 
-  <p>Please further note that your continued default may be reported to one or more Credit Information Companies including TransUnion CIBIL Limited, Experian Credit Information Company of India Private Limited, CRIF High Mark Credit Information Services Private Limited and Equifax Credit Information Services Private Limited in accordance with the Credit Information Companies (Regulation) Act, 2005, applicable Reserve Bank of India directions and other applicable laws. Such reporting may seriously and adversely affect your credit score, financial reputation and future eligibility to obtain loans, credit cards or any other banking or financial facilities.</p>
+  <p><strong>Please further note that your continued default may be reported to one or more Credit Information Companies including TransUnion CIBIL Limited, Experian Credit Information Company of India Private Limited, CRIF High Mark Credit Information Services Private Limited and Equifax Credit Information Services Private Limited in accordance with the Credit Information Companies (Regulation) Act, 2005, applicable Reserve Bank of India directions and other applicable laws. Such reporting may seriously and adversely affect your credit score, financial reputation and future eligibility to obtain loans, credit cards or any other banking or financial facilities.</strong></p>
 
   <p>This Notice constitutes your final and non-extendable opportunity to discharge your contractual liability.</p>
 
@@ -188,7 +189,7 @@ export function fillLoanRecoveryNoticeWeek2Template(data: LoanRecoveryNoticeWeek
     <li>If you dispute the Outstanding Amount or any component thereof, submit a detailed written representation supported by complete documentary evidence within the aforesaid period on <strong>${clientEmail || 'Legal@actoloan.com'}</strong>. For an amicable solution you can also reach out to Mr. Raman Jhakal on 9896197115.</li>
   </ol>
 
-  <p class="take-notice-heading">TAKE FURTHER NOTICE</p>
+  <p class="take-notice-heading"><strong>TAKE FURTHER NOTICE</strong></p>
 
   <p>Upon your failure to comply with this Final Notice within the stipulated period, Our Client shall, without issuing any further notice or granting any further opportunity, initiate all appropriate legal proceedings before the competent Court(s), Arbitration Tribunal(s), Recovery Forum(s) and other competent judicial or quasi-judicial authorities for recovery of its lawful dues and shall seek, inter alia:</p>
   <ol>
@@ -200,7 +201,7 @@ export function fillLoanRecoveryNoticeWeek2Template(data: LoanRecoveryNoticeWeek
     <li>Any other monetary, contractual, statutory or equitable relief available under the Loan Documents and applicable law.</li>
   </ol>
 
-  <p>Further, where the facts and material available disclose dishonest intention, fraudulent inducement, dishonest retention or misappropriation of entrusted funds, deception, or acts amounting to unlawful intimidation, Our Client shall initiate appropriate criminal proceedings before the competent authorities, including for offences punishable under Section 318 of the Bharatiya Nyaya Sanhita, 2023 (Cheating), carrying punishment of imprisonment up to seven (7) years and fine; Section 316 of the Bharatiya Nyaya Sanhita, 2023 (Criminal Breach of Trust), punishable with imprisonment, fine, or both; and Section 351 of the Bharatiya Nyaya Sanhita, 2023 (Criminal Intimidation), punishable with imprisonment, fine, or both, together with such other civil and criminal proceedings and offences as may be disclosed during investigation or otherwise permissible in law.</p>
+  <p>Further, where the facts and material available disclose dishonest intention, fraudulent inducement, dishonest retention or misappropriation of entrusted funds, deception, or acts amounting to unlawful intimidation, Our Client shall initiate appropriate criminal proceedings before the competent authorities, including for offences punishable under <strong>Section 318 of the Bharatiya Nyaya Sanhita, 2023</strong> (Cheating), carrying punishment of imprisonment up to seven (7) years and fine; <strong>Section 316 of the Bharatiya Nyaya Sanhita, 2023</strong> (Criminal Breach of Trust), punishable with imprisonment, fine, or both; and <strong>Section 351 of the Bharatiya Nyaya Sanhita, 2023</strong> (Criminal Intimidation), punishable with imprisonment, fine, or both, together with such other civil and criminal proceedings and offences as may be disclosed during investigation or otherwise permissible in law.</p>
 
   <p>You are further informed that Our Client shall continue to pursue every remedy available under the Loan Documents and applicable law, including reliance upon the police complaint already lodged, institution of civil recovery proceedings, arbitration proceedings, execution proceedings and all other legal remedies available for enforcement of its rights.</p>
 
@@ -214,7 +215,7 @@ export function fillLoanRecoveryNoticeWeek2Template(data: LoanRecoveryNoticeWeek
 
   <p>Govern yourself accordingly. Failing compliance within the time stipulated herein, Our Client shall proceed strictly in accordance with law without any further correspondence, and entirely at your risk as to costs and legal consequences.</p>
 
-  <p>Further take notice that, in the event you fail to liquidate the Outstanding Amount within Seven (7) days from the date of receipt of this Notice, Our Client shall, without any further reference to you, be constrained to lodge an appropriate complaint before the office of the jurisdictional Commissioner of Police, as applicable, having territorial jurisdiction over the residential address furnished by you in your Aadhaar and other KYC documents at the time of availing the loan facility, together with all supporting documentary and electronic evidence. Such complaint shall be in addition to, and not in derogation of, Our Client's rights to initiate civil, contractual, arbitral, recovery, or any other proceedings available under applicable law.</p>
+  <p><strong>Further take notice that</strong>, in the event you fail to liquidate the Outstanding Amount within Seven (7) days from the date of receipt of this Notice, Our Client shall, without any further reference to you, be constrained to lodge an appropriate complaint before the office of the jurisdictional Commissioner of Police, as applicable, having territorial jurisdiction over the residential address furnished by you in your Aadhaar and other KYC documents at the time of availing the loan facility, together with all supporting documentary and electronic evidence. Such complaint shall be in addition to, and not in derogation of, Our Client's rights to initiate civil, contractual, arbitral, recovery, or any other proceedings available under applicable law.</p>
 
   <p>A copy of this Notice is retained in our office for future reference and legal proceedings.</p>
 </div>
