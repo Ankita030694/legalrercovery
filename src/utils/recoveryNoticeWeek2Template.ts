@@ -62,8 +62,10 @@ export function fillWeek2NoticeTemplate(data: RecoveryNoticeWeek2Data): string {
 
   const pendingWords = amountToWords(amountPending)
   let invoiceSuffix = "";
+  let annexureReference = "";
   if (invoices && invoices.length > 0) {
     invoiceSuffix = ` against Invoices mentioned in Annexure - A`;
+    annexureReference = ` as mentioned in Annexure - A`;
   } else if (invoiceNo && invoiceNo.trim()) {
     invoiceSuffix = ` against Invoice No: <strong>${invoiceNo.trim()}</strong>${invoiceDate && invoiceDate.trim() ? ` dated <strong>${invoiceDate.trim()}</strong>` : ""}`;
   }
@@ -365,7 +367,7 @@ export function fillWeek2NoticeTemplate(data: RecoveryNoticeWeek2Data): string {
   <!-- Body -->
   <div class="notice-body">
 
-    <p>Under instructions and authority from our client <strong>${complainantName}</strong>, residing/having office at <strong>${complainantAddress}</strong>, we hereby issue the present Second and Final Legal Notice calling upon you to immediately clear the outstanding dues/claim amounting to <strong>INR ${amountPending}/- (Rupees ${pendingWords} Only)</strong> as mentioned in Annexure - A payable towards our client arising out of transactions, services, agreements, commitments, business dealings, or financial obligations undertaken by you.</p>
+    <p>Under instructions and authority from our client <strong>${complainantName}</strong>, residing/having office at <strong>${complainantAddress}</strong>, we hereby issue the present Second and Final Legal Notice calling upon you to immediately clear the outstanding dues/claim amounting to <strong>INR ${amountPending}/- (Rupees ${pendingWords} Only)</strong>${annexureReference} payable towards our client arising out of transactions, services, agreements, commitments, business dealings, or financial obligations undertaken by you.</p>
 
     <p>Despite repeated reminders, communications, and an earlier legal notice served upon you, you have failed to regularize the matter or provide any satisfactory response. Your conduct clearly reflects deliberate negligence, avoidance, and non-compliance towards lawful obligations owed to our client.</p>
 

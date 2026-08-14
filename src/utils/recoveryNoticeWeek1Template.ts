@@ -65,8 +65,10 @@ export function fillWeek1NoticeTemplate(data: RecoveryNoticeWeek1Data): string {
 
   const pendingWords = amountToWords(amountPending)
   let invoiceSuffix = "";
+  let annexureReference = "";
   if (invoices && invoices.length > 0) {
     invoiceSuffix = ` against Invoices mentioned in Annexure - A`;
+    annexureReference = ` as mentioned in Annexure - A`;
   } else if (invoiceNo && invoiceNo.trim()) {
     invoiceSuffix = ` against Invoice No: <strong>${invoiceNo.trim()}</strong>${invoiceDate && invoiceDate.trim() ? ` dated <strong>${invoiceDate.trim()}</strong>` : ""}`;
   }
@@ -395,7 +397,7 @@ export function fillWeek1NoticeTemplate(data: RecoveryNoticeWeek1Data): string {
 
     <p>Under instructions from and on behalf of our client <strong>${complainantName}</strong>, residing at <strong>${complainantAddress}</strong>, we hereby call upon you to address and resolve the pending amount/claim arising out of dealings, transactions, services, agreements, commitments, or obligations between you and our client.</p>
 
-    <p>It has been informed to us that despite repeated requests, reminders, and communications made by our client, the matter remains unresolved and an amount of <strong>INR ${amountPending}/- (Rupees ${pendingWords} Only)</strong> as mentioned in Annexure - A is still due/pending towards our client.</p>
+    <p>It has been informed to us that despite repeated requests, reminders, and communications made by our client, the matter remains unresolved and an amount of <strong>INR ${amountPending}/- (Rupees ${pendingWords} Only)</strong>${annexureReference} is still due/pending towards our client.</p>
 
     <p>Our client has acted in good faith and fulfilled their part of obligations; however, the pending dues/claim have not been settled by you till date.</p>
 

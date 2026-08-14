@@ -62,8 +62,10 @@ export function fillWeek3NoticeTemplate(data: RecoveryNoticeWeek3Data): string {
 
   const pendingWords = amountToWords(amountPending)
   let invoiceSuffix = "";
+  let annexureReference = "";
   if (invoices && invoices.length > 0) {
     invoiceSuffix = ` against Invoices mentioned in Annexure - A`;
+    annexureReference = ` as mentioned in Annexure - A`;
   } else if (invoiceNo && invoiceNo.trim()) {
     invoiceSuffix = ` against Invoice No: <strong>${invoiceNo.trim()}</strong>${invoiceDate && invoiceDate.trim() ? ` dated <strong>${invoiceDate.trim()}</strong>` : ""}`;
   }
@@ -365,7 +367,7 @@ export function fillWeek3NoticeTemplate(data: RecoveryNoticeWeek3Data): string {
   <!-- Body -->
   <div class="notice-body">
 
-    <p>Under instructions from and on behalf of my client <strong>${complainantName}</strong>, residing/having office at <strong>${complainantAddress}</strong>, I hereby issue the present Final Legal Notice against you with respect to the outstanding amount/claim of <strong>INR ${amountPending}/- (Rupees ${pendingWords} Only)</strong> as mentioned in Annexure - A arising out of dealings, transactions, services, agreements, commitments, or obligations between you and our client.</p>
+    <p>Under instructions from and on behalf of my client <strong>${complainantName}</strong>, residing/having office at <strong>${complainantAddress}</strong>, I hereby issue the present Final Legal Notice against you with respect to the outstanding amount/claim of <strong>INR ${amountPending}/- (Rupees ${pendingWords} Only)</strong>${annexureReference} arising out of dealings, transactions, services, agreements, commitments, or obligations between you and our client.</p>
 
     <p>It is pertinent to note that despite repeated reminders, follow-ups, and opportunities extended to you for amicable resolution, you have deliberately failed and neglected to clear the outstanding liability and/or honour your commitments. Your conduct has caused substantial financial loss, harassment, mental agony, and inconvenience to my client.</p>
 

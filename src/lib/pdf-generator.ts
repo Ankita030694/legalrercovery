@@ -755,8 +755,10 @@ export async function generateNoticePDFBuffer(params: PDFGeneratorParams): Promi
   } = params;
 
   let invoiceSuffix = "";
+  let annexureReference = "";
   if (params.invoices && params.invoices.length > 0) {
     invoiceSuffix = ` against Invoices mentioned in Annexure - A`;
+    annexureReference = ` as mentioned in **Annexure - A**`;
   } else if (params.invoiceNo && params.invoiceNo.trim()) {
     invoiceSuffix = ` against Invoice No: ${params.invoiceNo.trim()}${params.invoiceDate && params.invoiceDate.trim() ? ` dated ${params.invoiceDate.trim()}` : ""}`;
   }
@@ -841,7 +843,7 @@ export async function generateNoticePDFBuffer(params: PDFGeneratorParams): Promi
     // Body text
     writer.writeParagraph(`Under instructions from and on behalf of our client **${params.clientName || 'Tech AMA'}**, residing at **${params.clientAddress || 'Delhi, India'}**, we hereby call upon you to address and resolve the pending amount/claim arising out of dealings, transactions, services, agreements, commitments, or obligations between you and our client.`, 10.5);
 
-    writer.writeParagraph(`It has been informed to us that despite repeated requests, reminders, and communications made by our client, the matter remains unresolved and an amount of **INR ${formattedAmount}/- (Rupees ${pendingWords})** as mentioned in **Annexure - A** is still due/pending towards our client.`, 10.5);
+    writer.writeParagraph(`It has been informed to us that despite repeated requests, reminders, and communications made by our client, the matter remains unresolved and an amount of **INR ${formattedAmount}/- (Rupees ${pendingWords})**${annexureReference} is still due/pending towards our client.`, 10.5);
 
     writer.writeParagraph(`Our client has acted in good faith and fulfilled their part of obligations; however, the pending dues/claim have not been settled by you till date.`, 10.5);
 
@@ -882,7 +884,7 @@ export async function generateNoticePDFBuffer(params: PDFGeneratorParams): Promi
     writer.writeParagraph("Dear Sir/Madam,", 10.5);
 
     // Body text
-    writer.writeParagraph(`Under instructions and authority from our client **${params.clientName || 'Tech AMA'}**, residing/having office at **${params.clientAddress || 'Delhi, India'}**, we hereby issue the present Second and Final Legal Notice calling upon you to immediately clear the outstanding dues/claim amounting to **INR ${formattedAmount}/- (Rupees ${pendingWords})** as mentioned in **Annexure - A** payable towards our client arising out of transactions, services, agreements, commitments, business dealings, or financial obligations undertaken by you.`, 10.5);
+    writer.writeParagraph(`Under instructions and authority from our client **${params.clientName || 'Tech AMA'}**, residing/having office at **${params.clientAddress || 'Delhi, India'}**, we hereby issue the present Second and Final Legal Notice calling upon you to immediately clear the outstanding dues/claim amounting to **INR ${formattedAmount}/- (Rupees ${pendingWords})**${annexureReference} payable towards our client arising out of transactions, services, agreements, commitments, business dealings, or financial obligations undertaken by you.`, 10.5);
 
     writer.writeParagraph(`Despite repeated reminders, communications, and an earlier legal notice served upon you, you have failed to regularize the matter or provide any satisfactory response. Your conduct clearly reflects deliberate negligence, avoidance, and non-compliance towards lawful obligations owed to our client.`, 10.5);
 
@@ -931,7 +933,7 @@ export async function generateNoticePDFBuffer(params: PDFGeneratorParams): Promi
     writer.writeParagraph("Dear Sir/Madam,", 10.5);
 
     // Body text
-    writer.writeParagraph(`Under instructions from and on behalf of my client **${params.clientName || 'Tech AMA'}**, I hereby issue the present Final Legal Notice against you with respect to the outstanding amount/claim of **INR ${formattedAmount}/- (Rupees ${pendingWords})** as mentioned in **Annexure - A** arising out of dealings, transactions, services, agreements, commitments, or obligations between you and our client.`, 10.5);
+    writer.writeParagraph(`Under instructions from and on behalf of my client **${params.clientName || 'Tech AMA'}**, I hereby issue the present Final Legal Notice against you with respect to the outstanding amount/claim of **INR ${formattedAmount}/- (Rupees ${pendingWords})**${annexureReference} arising out of dealings, transactions, services, agreements, commitments, or obligations between you and our client.`, 10.5);
 
     writer.writeParagraph(`It is pertinent to note that despite repeated reminders, follow-ups, and opportunities extended to you for amicable resolution, you have deliberately failed and neglected to clear the outstanding liability and/or honour your commitments. Your conduct has caused substantial financial loss, harassment, mental agony, and inconvenience to my client.`, 10.5);
 

@@ -80,6 +80,7 @@ export default function UserDashboard() {
 
   // Onboarding Active Tour state
   const [onboardingActive, setOnboardingActive] = useState(false);
+  const [viewingCase, setViewingCase] = useState<any>(null);
 
   // States for advocate filtering features
   const [representees, setRepresentees] = useState<any[]>([]);
@@ -249,6 +250,17 @@ export default function UserDashboard() {
 
     return () => window.removeEventListener("lr_cases_updated", handleRefresh);
   }, [router]);
+
+  useEffect(() => {
+    if (viewingCase || confirmStopCaseId) {
+      document.body.style.overflow = "hidden";
+    } else {
+      document.body.style.overflow = "";
+    }
+    return () => {
+      document.body.style.overflow = "";
+    };
+  }, [viewingCase, confirmStopCaseId]);
 
   const handleStartNewRecoveryClick = () => {
     const tour = localStorage.getItem("lr_onboarding_state");
@@ -666,7 +678,8 @@ export default function UserDashboard() {
           filteredCases.map((c) => (
             <div 
               key={c.id} 
-              className={`bg-white border ${c.status === "recovered" ? "border-green-200 shadow-md shadow-green-500/5" : "border-[#E5E7EB]/70"} rounded-3xl p-6 sm:p-8 flex flex-col gap-6 relative transition-all duration-300 hover:shadow-md hover:shadow-slate-200/40 text-left`}
+              onClick={() => setViewingCase(c)}
+              className={`cursor-pointer bg-white border ${c.status === "recovered" ? "border-green-200 shadow-md shadow-green-500/5" : "border-[#E5E7EB]/70"} rounded-3xl p-6 sm:p-8 flex flex-col gap-6 relative transition-all duration-300 hover:shadow-md hover:shadow-slate-200/40 text-left`}
             >
               {/* Header Case details bar */}
               <div className="flex flex-col md:flex-row md:items-center justify-between gap-4 border-b border-[#E5E7EB]/50 pb-5">
@@ -728,7 +741,7 @@ export default function UserDashboard() {
                     )}
                   </div>
 
-                  <div className="flex flex-col sm:flex-row gap-2">
+                  <div className="flex flex-col sm:flex-row gap-2" onClick={(e) => e.stopPropagation()}>
                     {c.status === "active" && c.timeline && c.timeline[0] && c.timeline[0].status === "pending" && (
                       <button
                         onClick={() => handleStartDispatch(c.id)}
@@ -951,6 +964,218 @@ export default function UserDashboard() {
           ))
         )}
       </div>
+
+      {/* ── CASE DETAILS MODAL ── */}
+      {viewingCase && (
+        <div className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-slate-900/60 backdrop-blur-sm" onClick={() => setViewingCase(null)}>
+          <div className="bg-white rounded-3xl w-full max-w-4xl max-h-[90vh] overflow-y-auto shadow-2xl relative animate-in fade-in zoom-in-95 duration-200 p-6 md:p-8 text-left" onClick={(e) => e.stopPropagation()}>
+            <div className="flex justify-between items-center mb-6 border-b border-slate-100 pb-4">
+              <div>
+                <h2 className="text-2xl font-black text-slate-800">Case Details</h2>
+                <p className="text-xs font-bold text-slate-400 mt-1 uppercase tracking-wider">{viewingCase.caseId || viewingCase.id}</p>
+              </div>
+              <button onClick={() => setViewingCase(null)} className="p-2 hover:bg-slate-100 rounded-full transition-colors cursor-pointer">
+                <X className="w-6 h-6 text-slate-500" />
+              </button>
+            </div>
+            
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-8 gap-y-6">
+              {/* Defaulter Info */}
+              <div className="flex flex-col gap-3">
+                <h3 className="text-sm font-black text-slate-800 uppercase tracking-wide border-b border-slate-100 pb-2">Defaulter Info</h3>
+                {viewingCase.defaulterName && (
+                  <div className="flex flex-col">
+                    <span className="text-[10px] font-bold text-slate-400 uppercase tracking-wider">Name</span>
+                    <span className="text-sm font-semibold text-slate-700 whitespace-pre-wrap">{viewingCase.defaulterName}</span>
+                  </div>
+                )}
+                {viewingCase.entityType && (
+                  <div className="flex flex-col">
+                    <span className="text-[10px] font-bold text-slate-400 uppercase tracking-wider">Entity Type</span>
+                    <span className="text-sm font-semibold text-slate-700 whitespace-pre-wrap">{viewingCase.entityType}</span>
+                  </div>
+                )}
+                {viewingCase.phone && (
+                  <div className="flex flex-col">
+                    <span className="text-[10px] font-bold text-slate-400 uppercase tracking-wider">Phone</span>
+                    <span className="text-sm font-semibold text-slate-700 whitespace-pre-wrap">{viewingCase.phone}</span>
+                  </div>
+                )}
+                {viewingCase.phone2 && (
+                  <div className="flex flex-col">
+                    <span className="text-[10px] font-bold text-slate-400 uppercase tracking-wider">Phone 2</span>
+                    <span className="text-sm font-semibold text-slate-700 whitespace-pre-wrap">{viewingCase.phone2}</span>
+                  </div>
+                )}
+                {viewingCase.email && (
+                  <div className="flex flex-col">
+                    <span className="text-[10px] font-bold text-slate-400 uppercase tracking-wider">Email</span>
+                    <span className="text-sm font-semibold text-slate-700 whitespace-pre-wrap">{viewingCase.email}</span>
+                  </div>
+                )}
+                {viewingCase.email2 && (
+                  <div className="flex flex-col">
+                    <span className="text-[10px] font-bold text-slate-400 uppercase tracking-wider">Email 2</span>
+                    <span className="text-sm font-semibold text-slate-700 whitespace-pre-wrap">{viewingCase.email2}</span>
+                  </div>
+                )}
+                {viewingCase.ccEmails && (
+                  <div className="flex flex-col">
+                    <span className="text-[10px] font-bold text-slate-400 uppercase tracking-wider">CC Emails</span>
+                    <span className="text-sm font-semibold text-slate-700 whitespace-pre-wrap">{viewingCase.ccEmails}</span>
+                  </div>
+                )}
+                {viewingCase.address && (
+                  <div className="flex flex-col">
+                    <span className="text-[10px] font-bold text-slate-400 uppercase tracking-wider">Address</span>
+                    <span className="text-sm font-semibold text-slate-700 whitespace-pre-wrap">{viewingCase.address}</span>
+                  </div>
+                )}
+              </div>
+
+              {/* Client Info */}
+              <div className="flex flex-col gap-3">
+                <h3 className="text-sm font-black text-slate-800 uppercase tracking-wide border-b border-slate-100 pb-2">Client Info</h3>
+                {viewingCase.clientName && (
+                  <div className="flex flex-col">
+                    <span className="text-[10px] font-bold text-slate-400 uppercase tracking-wider">Client Name</span>
+                    <span className="text-sm font-semibold text-slate-700 whitespace-pre-wrap">{viewingCase.clientName}</span>
+                  </div>
+                )}
+                {viewingCase.clientPhone && (
+                  <div className="flex flex-col">
+                    <span className="text-[10px] font-bold text-slate-400 uppercase tracking-wider">Client Phone</span>
+                    <span className="text-sm font-semibold text-slate-700 whitespace-pre-wrap">{viewingCase.clientPhone}</span>
+                  </div>
+                )}
+                {viewingCase.clientEmail && (
+                  <div className="flex flex-col">
+                    <span className="text-[10px] font-bold text-slate-400 uppercase tracking-wider">Client Email</span>
+                    <span className="text-sm font-semibold text-slate-700 whitespace-pre-wrap">{viewingCase.clientEmail}</span>
+                  </div>
+                )}
+                {viewingCase.clientAddress && (
+                  <div className="flex flex-col">
+                    <span className="text-[10px] font-bold text-slate-400 uppercase tracking-wider">Client Address</span>
+                    <span className="text-sm font-semibold text-slate-700 whitespace-pre-wrap">{viewingCase.clientAddress}</span>
+                  </div>
+                )}
+                {viewingCase.representeeName && (
+                  <div className="flex flex-col">
+                    <span className="text-[10px] font-bold text-slate-400 uppercase tracking-wider">Representing</span>
+                    <span className="text-sm font-semibold text-slate-700 whitespace-pre-wrap">{viewingCase.representeeName}</span>
+                  </div>
+                )}
+              </div>
+
+              {/* Case Info */}
+              <div className="flex flex-col gap-3">
+                <h3 className="text-sm font-black text-slate-800 uppercase tracking-wide border-b border-slate-100 pb-2">Case Info</h3>
+                {viewingCase.stuckAmount !== undefined && (
+                  <div className="flex flex-col">
+                    <span className="text-[10px] font-bold text-slate-400 uppercase tracking-wider">Stuck Amount</span>
+                    <span className="text-sm font-black text-slate-800">₹{viewingCase.stuckAmount.toLocaleString("en-IN")}</span>
+                  </div>
+                )}
+                {viewingCase.recoveredAmount !== undefined && (
+                  <div className="flex flex-col">
+                    <span className="text-[10px] font-bold text-[#10B981] uppercase tracking-wider">Recovered Amount</span>
+                    <span className="text-sm font-black text-[#10B981]">₹{viewingCase.recoveredAmount.toLocaleString("en-IN")}</span>
+                  </div>
+                )}
+                {viewingCase.dueDate && (
+                  <div className="flex flex-col">
+                    <span className="text-[10px] font-bold text-slate-400 uppercase tracking-wider">Due Date</span>
+                    <span className="text-sm font-semibold text-slate-700 whitespace-pre-wrap">{new Date(viewingCase.dueDate).toLocaleDateString()}</span>
+                  </div>
+                )}
+                {viewingCase.status && (
+                  <div className="flex flex-col">
+                    <span className="text-[10px] font-bold text-slate-400 uppercase tracking-wider">Status</span>
+                    <span className="text-sm font-semibold text-slate-700 whitespace-pre-wrap capitalize">{viewingCase.status}</span>
+                  </div>
+                )}
+                {viewingCase.currentStep !== undefined && (
+                  <div className="flex flex-col">
+                    <span className="text-[10px] font-bold text-slate-400 uppercase tracking-wider">Current Step</span>
+                    <span className="text-sm font-semibold text-slate-700 whitespace-pre-wrap">{viewingCase.currentStep}</span>
+                  </div>
+                )}
+                {viewingCase.createdAt && (
+                  <div className="flex flex-col">
+                    <span className="text-[10px] font-bold text-slate-400 uppercase tracking-wider">Created At</span>
+                    <span className="text-sm font-semibold text-slate-700 whitespace-pre-wrap">{new Date(viewingCase.createdAt).toLocaleString()}</span>
+                  </div>
+                )}
+                {viewingCase.updatedAt && (
+                  <div className="flex flex-col">
+                    <span className="text-[10px] font-bold text-slate-400 uppercase tracking-wider">Updated At</span>
+                    <span className="text-sm font-semibold text-slate-700 whitespace-pre-wrap">{new Date(viewingCase.updatedAt).toLocaleString()}</span>
+                  </div>
+                )}
+              </div>
+
+              {/* Police Station Info */}
+              {(viewingCase.policeStationName || viewingCase.policeStationEmail || viewingCase.policeStationAddress) && (
+                <div className="flex flex-col gap-3">
+                  <h3 className="text-sm font-black text-slate-800 uppercase tracking-wide border-b border-slate-100 pb-2">Police Station Info</h3>
+                  {viewingCase.policeStationName && (
+                    <div className="flex flex-col">
+                      <span className="text-[10px] font-bold text-slate-400 uppercase tracking-wider">Station Name</span>
+                      <span className="text-sm font-semibold text-slate-700 whitespace-pre-wrap">{viewingCase.policeStationName}</span>
+                    </div>
+                  )}
+                  {viewingCase.policeStationEmail && (
+                    <div className="flex flex-col">
+                      <span className="text-[10px] font-bold text-slate-400 uppercase tracking-wider">Station Email</span>
+                      <span className="text-sm font-semibold text-slate-700 whitespace-pre-wrap">{viewingCase.policeStationEmail}</span>
+                    </div>
+                  )}
+                  {viewingCase.policeStationAddress && (
+                    <div className="flex flex-col">
+                      <span className="text-[10px] font-bold text-slate-400 uppercase tracking-wider">Station Address</span>
+                      <span className="text-sm font-semibold text-slate-700 whitespace-pre-wrap">{viewingCase.policeStationAddress}</span>
+                    </div>
+                  )}
+                </div>
+              )}
+
+              {/* Invoices Info */}
+              {(viewingCase.invoiceNo || (viewingCase.invoices && viewingCase.invoices.length > 0)) && (
+                <div className="flex flex-col gap-3 lg:col-span-2">
+                  <h3 className="text-sm font-black text-slate-800 uppercase tracking-wide border-b border-slate-100 pb-2">Invoices</h3>
+                  {viewingCase.invoiceNo && (
+                    <div className="flex flex-col">
+                      <span className="text-[10px] font-bold text-slate-400 uppercase tracking-wider">Invoice No</span>
+                      <span className="text-sm font-semibold text-slate-700 whitespace-pre-wrap">{viewingCase.invoiceNo}</span>
+                    </div>
+                  )}
+                  {viewingCase.invoiceDate && (
+                    <div className="flex flex-col">
+                      <span className="text-[10px] font-bold text-slate-400 uppercase tracking-wider">Invoice Date</span>
+                      <span className="text-sm font-semibold text-slate-700 whitespace-pre-wrap">{new Date(viewingCase.invoiceDate).toLocaleDateString()}</span>
+                    </div>
+                  )}
+                  {viewingCase.invoices && viewingCase.invoices.length > 0 && (
+                     <div className="mt-2">
+                       <span className="text-[10px] font-bold text-slate-400 uppercase tracking-wider block mb-2">Multiple Invoices ({viewingCase.invoices.length})</span>
+                       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-4 gap-3">
+                         {viewingCase.invoices.map((inv: any, i: number) => (
+                           <div key={i} className="bg-slate-50 p-3 rounded-xl border border-slate-200 flex flex-col gap-1">
+                             <div className="font-bold text-sm text-slate-700">{inv.invoiceNo}</div>
+                             <div className="text-xs font-semibold text-slate-500">Date: {inv.invoiceDate ? new Date(inv.invoiceDate).toLocaleDateString() : 'N/A'}</div>
+                             <div className="text-xs font-semibold text-slate-500">Amount: ₹{inv.amount}</div>
+                           </div>
+                         ))}
+                       </div>
+                     </div>
+                  )}
+                </div>
+              )}
+            </div>
+          </div>
+        </div>
+      )}
 
       {/* ── STOP DUES CONFIRMATION MODAL ── */}
       {confirmStopCaseId && (() => {
