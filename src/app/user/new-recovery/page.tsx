@@ -79,7 +79,13 @@ export default function NewRecoveryForm() {
   const [policeStations, setPoliceStations] = useState<any[]>([]);
 
   const indianStates = React.useMemo(() => {
-    return policeStations.map((d) => d.state).sort();
+    return Array.from(
+      new Set(
+        policeStations
+          .map((d) => d?.state)
+          .filter((state) => typeof state === "string" && state.trim() !== "")
+      )
+    ).sort();
   }, [policeStations]);
 
   // Client profile state for notice previews
@@ -369,7 +375,7 @@ export default function NewRecoveryForm() {
 
     const fetchPoliceStations = async () => {
       try {
-        const res = await fetch("/api/police-stations");
+        const res = await fetch("/api/police-stations", { cache: "no-store" });
         if (res.ok) {
           const data = await res.json();
           if (data.success && data.data) {

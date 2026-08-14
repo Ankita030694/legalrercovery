@@ -132,7 +132,7 @@ const reviewSchema = {
         "@type": "Person",
         "name": "Karan Johar"
       },
-      "reviewBody": "Using this online platform to recover my unpaid salary was incredibly smooth. The flat-fee pricing of ₹999 was transparent, and the draft was ready in 24 hours. The employer paid within a week of getting the speed post notice."
+      "reviewBody": "Using this online platform to recover my unpaid salary was incredibly smooth. The flat-fee pricing of ₹999 was transparent, and the draft was ready in 24 hours. The employer paid within a week of getting the digital notice."
     },
     {
       "@type": "Review",
@@ -180,7 +180,7 @@ const reviewSchema = {
         "@type": "Person",
         "name": "Nitin Goel"
       },
-      "reviewBody": "Great interface and tracking support. They provided the post office speed post receipt on the client dashboard. Excellent service for small businesses seeking invoice recoveries."
+      "reviewBody": "Great interface and tracking support. They provided the verified digital delivery receipt on the client dashboard. Excellent service for small businesses seeking invoice recoveries."
     },
     {
       "@type": "Review",
@@ -518,7 +518,7 @@ export default function FreelancerRecoveryClient() {
                       </ul>
                     </div>
                     <p>
-                      At LegalRecovery, we implement a dual-delivery strategy. Every legal notice is dispatched physically via Speed Post to the client&apos;s office, and simultaneously served via email and WhatsApp. We generate automated SMTP delivery logs and prepare the required Section 63 BSA certificates for every digital notice sent, ensuring you have an airtight proof of service for court.
+                      At LegalRecovery, every legal notice is served digitally via verified email and WhatsApp to the client&apos;s office. We generate automated SMTP delivery logs and prepare the required Section 63 BSA certificates for every digital notice sent, ensuring you have an airtight proof of service for court.
                     </p>
                   </div>
                 </section>
@@ -566,7 +566,7 @@ export default function FreelancerRecoveryClient() {
                       The third pitfall is <strong>failing to demand interest in writing</strong>. Under the <strong>Interest Act, 1978</strong>, you can only claim interest on delayed payments if you have made a written demand. Your invoices must contain a clear terms clause, stating: <em>&quot;Payments delayed beyond 15 days from the invoice date shall attract interest at 1.5% per month.&quot;</em> This clause makes the interest demand legally enforceable from the first day of default.
                     </p>
                     <p>
-                      To ensure your freelance notices and agreements are legally sound and free from these loopholes, it is highly recommended to use a professional legal-tech platform like LegalRecovery. Our panel of advocates reviews your case, calculates interest, drafts the notice with precise statutory citations, and dispatches it via Speed Post and digital channels with verified tracking, protecting your rights and maximizing your chances of recovery.
+                      To ensure your freelance notices and agreements are legally sound and free from these loopholes, it is highly recommended to use a professional legal-tech platform like LegalRecovery. Our panel of advocates reviews your case, calculates interest, drafts the notice with precise statutory citations, and dispatches it digitally via email and WhatsApp with verified tracking, protecting your rights and maximizing your chances of recovery.
                     </p>
                   </div>
                 </section>
@@ -579,7 +579,7 @@ export default function FreelancerRecoveryClient() {
                   <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                     <div className="p-6 bg-slate-50 rounded-2xl border border-slate-100">
                       <p className="text-sm text-slate-700 italic mb-4">
-                        &quot;Using this online platform to recover my unpaid salary was incredibly smooth. The flat-fee pricing of ₹999 was transparent, and the draft was ready in 24 hours. The employer paid within a week of getting the speed post notice.&quot;
+                        &quot;Using this online platform to recover my unpaid salary was incredibly smooth. The flat-fee pricing of ₹999 was transparent, and the draft was ready in 24 hours. The employer paid within a week of getting the digital notice.&quot;
                       </p>
                       <h4 className="font-extrabold text-xs text-slate-900">— Karan Johar (Gurugram)</h4>
                     </div>
@@ -603,7 +603,7 @@ export default function FreelancerRecoveryClient() {
                     </div>
                     <div className="p-6 bg-slate-50 rounded-2xl border border-slate-100">
                       <p className="text-sm text-slate-700 italic mb-4">
-                        &quot;Great interface and tracking support. They provided the post office speed post receipt on the client dashboard. Excellent service for small businesses seeking invoice recoveries.&quot;
+                        &quot;Great interface and tracking support. They provided the verified digital delivery receipt on the client dashboard. Excellent service for small businesses seeking invoice recoveries.&quot;
                       </p>
                       <h4 className="font-extrabold text-xs text-slate-900">— Nitin Goel (Delhi)</h4>
                     </div>

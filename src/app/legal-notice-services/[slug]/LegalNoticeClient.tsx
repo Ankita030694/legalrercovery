@@ -390,7 +390,7 @@ export default function LegalNoticeClient({ location }: LegalNoticeClientProps) 
                       <div>
                         <h3 className="text-lg md:text-2xl font-bold text-gray-900 mb-2 md:mb-3">Dispatch via Registered Post & Digital</h3>
                         <p className="text-gray-700 leading-relaxed text-sm md:text-base">
-                          The finalized notice is dispatched to the recipient via India Post Registered Post with Acknowledgment Due (RPAD), ensuring proof of delivery. Simultaneously, digital copies are sent via email and WhatsApp for immediate impact.
+                          The finalized notice is dispatched to the recipient digitally via email and WhatsApp, ensuring immediate impact and proof of delivery.
                         </p>
                       </div>
                     </div>

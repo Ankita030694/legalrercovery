@@ -409,7 +409,7 @@ export default function MoneyLentClient() {
                       <li><strong>Calculates Dues and Interest:</strong> The notice formally demands the principal amount along with delayed interest (usually calculated at 9% to 18% per annum) and the costs of the legal notice.</li>
                     </ul>
                     <p className="text-sm md:text-base leading-relaxed">
-                      Our process at LegalRecovery ensures maximum impact. We send physical, registered speed post letters to the borrower&apos;s home and office addresses. If the borrower is running a business, we also send notices to their active directors or partners to pierce the corporate shield and establish personal liability.
+                      Our process at LegalRecovery ensures maximum impact. We digitally dispatch notices via verified email and WhatsApp to the borrower&apos;s home and office addresses. If the borrower is running a business, we also send notices to their active directors or partners to pierce the corporate shield and establish personal liability.
                     </p>
                   </div>
                 </section>
@@ -576,7 +576,7 @@ export default function MoneyLentClient() {
                     <ul className="list-disc pl-6 space-y-3 text-sm text-slate-650">
                       <li><strong>Custom Legal Notice:</strong> We do not send generic letters. Our legal panel carefully reviews your UPI transactions, bank records, and chat logs to draft a notice that cites precise legal provisions tailored to your case.</li>
                       <li><strong>Digital Evidence Certification:</strong> We handle the complex drafting of electronic certificates (under BSA Section 63) to ensure your WhatsApp messages and emails are ready for court.</li>
-                      <li><strong>Director & Personal Trackers:</strong> If you lent to a business or if the borrower has a corporate standing, we dispatch notices to their homes and registered offices via registered speed post, maximizing reach and pressure.</li>
+                      <li><strong>Director & Personal Trackers:</strong> If you lent to a business or if the borrower has a corporate standing, we dispatch notices digitally to their personal emails and registered offices, maximizing reach and pressure.</li>
                       <li><strong>End-to-End Legal Support:</strong> From sending the first legal notice to representing you in Summary Suits, cheque bounce cases, and filing criminal complaints, our panel of labor and civil advocates handles it all.</li>
                       <li><strong>Transparent Pricing:</strong> No hidden hourly charges or surprise retainers. You pay a single transparent flat fee for the entire notice service.</li>
                     </ul>

@@ -11,7 +11,7 @@ import { PaymentModal } from "@/components/PaymentModal";
 const faqs = [
   {
     question: "What is an online legal notice portal and how does it operate in India?",
-    answer: "An online legal notice portal is a digital workspace that connects clients with legal professionals to draft and serve notices. The process is completely online: you submit case details through an intake questionnaire, upload files to an encrypted document vault, review drafts on a digital dashboard, and sign documents electronically. The platform manages advocate assignment, physical speed post booking, and email/WhatsApp dispatch tracking."
+    answer: "An online legal notice portal is a digital workspace that connects clients with legal professionals to draft and serve notices. The process is completely online: you submit case details through an intake questionnaire, upload files to an encrypted document vault, review drafts on a digital dashboard, and sign documents electronically. The platform manages advocate assignment and email/WhatsApp dispatch tracking."
   },
   {
     question: "Is digital signing of a legal notice legally valid under Indian law?",
@@ -26,8 +26,8 @@ const faqs = [
     answer: "Online Dispute Resolution (ODR) is a framework that uses technology to resolve disputes out of court through negotiation, mediation, or arbitration. An online legal notice is the entry point of the ODR pipeline. If the debtor responds to the notice, the platform offers digital dispute rooms, negotiation dashboards, and electronic settlement deed signing to resolve the matter without physical court visits."
   },
   {
-    question: "Can I track the delivery status of my speed post notice online?",
-    answer: "Yes, our portal provides automated tracking. Once the notice is physically booked via India Post, the 13-digit consignment number is integrated with your user dashboard. The system updates the delivery tracking status (booked, in transit, delivered, or refused) in real-time, providing a court-admissible delivery report."
+    question: "Can I track the delivery status of my digital notice online?",
+    answer: "Yes, our portal provides automated tracking. Once the notice is digitally dispatched, the system updates the delivery tracking status (sent, delivered, or read) in real-time on your user dashboard, providing a court-admissible delivery report."
   },
   {
     question: "How does the portal assist if the debtor ignores the online notice?",
@@ -43,7 +43,7 @@ const faqs = [
   },
   {
     question: "What is the flat pricing for sending a notice through the portal?",
-    answer: "We offer flat-fee pricing starting at ₹999 per opposing party. This transparent rate covers advocate consultation, customized drafting, legal review, physical printing, Speed Post booking and dispatch, and digital delivery via email and WhatsApp. There are no hourly consultation rates or hidden postage fees."
+    answer: "We offer flat-fee pricing starting at ₹999 per opposing party. This transparent rate covers advocate consultation, customized drafting, legal review, and digital delivery via email and WhatsApp. There are no hourly consultation rates."
   },
   {
     question: "How long does it take for a panel advocate to draft the notice?",
@@ -146,7 +146,7 @@ const reviewSchema = {
         "@type": "Person",
         "name": "Balakrishnan Iyer"
       },
-      "reviewBody": "Using this online portal was seamless. I uploaded my invoices and outstanding ledger details to the secure vault. The platform verified the debtor's company registration, and a panel lawyer drafted the notice within 24 hours. The real-time Speed Post tracking showed delivery, and the company settled the ₹3.8L dues."
+      "reviewBody": "Using this online portal was seamless. I uploaded my invoices and outstanding ledger details to the secure vault. The platform verified the debtor's company registration, and a panel lawyer drafted the notice within 24 hours. The real-time digital tracking showed delivery, and the company settled the ₹3.8L dues."
     },
     {
       "@type": "Review",
@@ -158,7 +158,7 @@ const reviewSchema = {
         "@type": "Person",
         "name": "Nidhi Aggarwal"
       },
-      "reviewBody": "The e-signing process under the IT Act made everything fast and convenient. I didn't have to visit any offices or print files manually. The advocate digitally signed the notice, and the platform handled the Speed Post dispatch. Extremely efficient legal tech service."
+      "reviewBody": "The e-signing process under the IT Act made everything fast and convenient. I didn't have to visit any offices or print files manually. The advocate digitally signed the notice, and the platform handled the digital dispatch. Extremely efficient legal tech service."
     },
     {
       "@type": "Review",
@@ -346,7 +346,7 @@ export default function LegalNoticeOnlineClient() {
                       <div className="bg-slate-50 p-6 rounded-2xl border border-slate-100">
                         <h4 className="font-extrabold text-sm sm:text-base text-slate-900 mb-2">A. Flat-Fee Pricing and Financial Transparency</h4>
                         <p className="text-xs sm:text-sm text-slate-650 leading-relaxed">
-                          Unlike traditional advocate chambers that charge hourly consultation rates or variable fees for typing and postage, online portals operate on a flat-fee pricing model. On LegalRecovery, services start at a transparent rate of ₹999 per opposing party. This rate is all-inclusive, covering advocate review, customized drafting, printing on advocate letterhead, physical Speed Post dispatch, and digital delivery.
+                          Unlike traditional advocate chambers that charge hourly consultation rates or variable fees for typing and postage, online portals operate on a flat-fee pricing model. On LegalRecovery, services start at a transparent rate of ₹999 per opposing party. This rate is all-inclusive, covering advocate review, customized drafting, and digital delivery.
                         </p>
                       </div>
 
@@ -360,7 +360,7 @@ export default function LegalNoticeOnlineClient() {
                       <div className="bg-slate-50 p-6 rounded-2xl border border-slate-100">
                         <h4 className="font-extrabold text-sm sm:text-base text-slate-900 mb-2">C. Real-Time Consignment Tracking &amp; Dashboard Alerts</h4>
                         <p className="text-xs sm:text-sm text-slate-650 leading-relaxed">
-                          Rather than requiring users to manually copy tracking numbers and query the post office website, online portals integrate with the India Post tracking API. Once the notice is dispatched, tracking updates (booked, in transit, delivered, or refused) are automatically updated on your secure user dashboard, accompanied by email and SMS notifications.
+                          Rather than requiring users to manually manage communication, online portals integrate with digital delivery tracking APIs. Once the notice is dispatched, tracking updates are automatically updated on your secure user dashboard, accompanied by email and SMS notifications.
                         </p>
                       </div>
 
@@ -409,7 +409,7 @@ export default function LegalNoticeOnlineClient() {
                       <div className="bg-slate-50 p-6 rounded-2xl border border-slate-100">
                         <h4 className="font-extrabold text-sm text-slate-900 mb-2">4. Hybrid Dispatch Execution</h4>
                         <p className="text-xs text-slate-650 leading-relaxed">
-                          Once e-signed, the notice is sent to our automated print-and-dispatch queue. It is physically printed, sealed, and dispatched via Speed Post. Simultaneously, the digital system serves the notice via verified corporate email and WhatsApp, creating multiple paths of delivery.
+                          Once e-signed, the digital system serves the notice via verified corporate email and WhatsApp, creating multiple paths of delivery.
                         </p>
                       </div>
                     </div>
@@ -423,20 +423,13 @@ export default function LegalNoticeOnlineClient() {
                   </h2>
                   <div className="prose prose-base max-w-none text-slate-650 space-y-6">
                     <p className="text-sm md:text-base leading-relaxed">
-                      A legal notice must be accompanied by reliable proof of delivery to be useful in subsequent court proceedings. If a debtor claims in court that they never received the notice, the plaintiff must present indisputable service records. Online legal notice portals address this by combining physical delivery records with electronic tracking.
+                      A legal notice must be accompanied by reliable proof of delivery to be useful in subsequent court proceedings. If a debtor claims in court that they never received the notice, the plaintiff must present indisputable service records. Online legal notice portals address this by combining digital delivery records with electronic tracking.
+                    </p>
+                    <p className="text-sm md:text-base leading-relaxed">
+                      When the portal dispatches the notice digitally, the delivery is protected under the law. Electronic delivery via verified email and WhatsApp generates read receipts and server logs. Even if the debtor claims ignorance, the court accepts the digital delivery report backed by a BSA certificate as proof of constructive service.
                     </p>
                     
-                    <p className="text-sm md:text-base leading-relaxed">
-                      Proving service of an online legal notice relies on two key legal frameworks:
-                    </p>
-
                     <div className="space-y-6">
-                      <div>
-                        <h4 className="text-base font-black text-slate-900 mb-2">1. Constructive Service under the General Clauses Act</h4>
-                        <p className="text-sm text-slate-650 leading-relaxed">
-                          When the portal dispatches the notice physically via Speed Post or Registered Post AD, the delivery is protected under Section 27 of the General Clauses Act, 1897. This statute states that if a letter is correctly addressed, prepaid, and posted, service is deemed to be completed. Even if the debtor refuses the post or it is returned as &quot;unclaimed&quot;, the court accepts the returned envelope as proof of constructive service.
-                        </p>
-                      </div>
                       <div>
                         <h4 className="text-base font-black text-slate-900 mb-2">2. Section 63 BSA 2023 Digital Evidence Certificates</h4>
                         <p className="text-sm text-slate-650 leading-relaxed">
@@ -456,7 +449,7 @@ export default function LegalNoticeOnlineClient() {
                         </thead>
                         <tbody className="divide-y divide-slate-100 text-slate-650">
                           <tr>
-                            <td className="p-3 font-bold text-slate-900">India Post Speed Post</td>
+                            <td className="p-3 font-bold text-slate-900">Digital Dispatch</td>
                             <td className="p-3">Consignment delivery report showing date, time, and recipient location.</td>
                             <td className="p-3">Section 27 of the General Clauses Act, 1897</td>
                           </tr>
@@ -501,7 +494,7 @@ export default function LegalNoticeOnlineClient() {
                           <span className="text-[#DC2626] text-xs font-black uppercase tracking-wider">Case 2: Trade Receivable Recovery</span>
                           <h4 className="font-extrabold text-sm text-slate-900 mt-2 mb-3">Recovered ₹6.8 Lakhs invoice dues</h4>
                           <p className="text-xs text-slate-650 leading-relaxed">
-                            A manufacturer in Gujarat faced defaults on B2B invoices from a distributor. The distributor claimed they never received the invoices. We cross-referenced the distributor&apos;s GSTIN, verified their active registered address, and dispatched the notice via Speed Post and email. The distributor cleared the outstanding dues to avoid insolvency proceedings.
+                            A manufacturer in Gujarat faced defaults on B2B invoices from a distributor. The distributor claimed they never received the invoices. We cross-referenced the distributor&apos;s GSTIN, verified their active registered address, and dispatched the notice digitally via email. The distributor cleared the outstanding dues to avoid insolvency proceedings.
                           </p>
                         </div>
                       </div>

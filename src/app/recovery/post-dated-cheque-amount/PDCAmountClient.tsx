@@ -366,7 +366,7 @@ export default function PDCAmountClient() {
                       <div>
                         <h3 className="text-base md:text-lg font-black text-slate-900 mb-2">3. Sending the Statutory Notice (Within 30 Days)</h3>
                         <p className="text-sm text-slate-650 leading-relaxed">
-                          You must send a formal written legal notice to the drawer within <strong>30 days</strong> of receiving the return memo. The notice must demand the payment of the cheque amount in full. It must be sent via Registered Post AD or Speed Post to ensure you have proof of dispatch and delivery, which are essential court documents.
+                          You must send a formal written legal notice to the drawer within <strong>30 days</strong> of receiving the return memo. The notice must demand the payment of the cheque amount in full. It must be sent digitally via verified email and WhatsApp to ensure you have proof of dispatch and delivery, which are essential court documents.
                         </p>
                       </div>
 
@@ -522,7 +522,7 @@ export default function PDCAmountClient() {
                     <ul className="list-disc pl-6 space-y-3 text-sm text-slate-650">
                       <li><strong>Custom Legal Notice:</strong> We do not send generic letters. Our legal panel carefully reviews your UPI transactions, bank records, and chat logs to draft a notice that cites precise legal provisions tailored to your case.</li>
                       <li><strong>Digital Evidence Certification:</strong> We handle the complex drafting of electronic certificates (under BSA Section 63) to ensure your WhatsApp messages and emails are ready for court.</li>
-                      <li><strong>Director & Personal Trackers:</strong> If you lent to a business or if the borrower has a corporate standing, we dispatch notices to their homes and registered offices via registered speed post, maximizing reach and pressure.</li>
+                      <li><strong>Director & Personal Trackers:</strong> If you lent to a business or if the borrower has a corporate standing, we dispatch notices digitally via email and WhatsApp to their homes and registered offices, maximizing reach and pressure.</li>
                       <li><strong>End-to-End Legal Support:</strong> From sending the first legal notice to representing you in Summary Suits, cheque bounce cases, and filing criminal complaints, our panel of labor and civil advocates handles it all.</li>
                       <li><strong>Transparent Pricing:</strong> No hidden hourly charges or surprise retainers. You pay a single transparent flat fee for the entire notice service.</li>
                     </ul>

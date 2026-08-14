@@ -22,7 +22,7 @@ const faqs = [
   },
   {
     question: "How do I send a legal notice to a wedding decorator who defaulted on services?",
-    answer: "If a wedding decorator defaults on services such as failing to set up the decor, providing substandard materials, or failing to show up, you should serve a formal legal notice. The notice must detail the terms of the agreement, the amount paid as an advance, the specific defaults committed by the decorator, and the resulting financial and emotional distress. You must demand a full refund of the advance along with interest and compensation. The notice should give the decorator a 15-day compliance window to settle the matter. It should be drafted by a qualified advocate and served via Registered Post or Speed Post to ensure legal validity."
+    answer: "If a wedding decorator defaults on services such as failing to set up the decor, providing substandard materials, or failing to show up, you should serve a formal legal notice. The notice must detail the terms of the agreement, the amount paid as an advance, the specific defaults committed by the decorator, and the resulting financial and emotional distress. You must demand a full refund of the advance along with interest and compensation. The notice should give the decorator a 15-day compliance window to settle the matter. It should be drafted by a qualified advocate and served digitally via email and WhatsApp to ensure legal validity."
   },
   {
     question: "Can I file a consumer complaint against a banquet hall for poor service?",
@@ -431,7 +431,7 @@ export default function EventPlannerRefundClient() {
                       <div className="w-[calc(100%-4rem)] md:w-[calc(50%-2.5rem)] bg-white p-5 rounded-2xl shadow-sm border border-slate-100 group-hover:border-[#DC2626]/30 transition-colors">
                         <h3 className="text-lg md:text-xl font-bold text-slate-900 mb-2">Stage 4: Track Delivery and Wait for Compliance</h3>
                         <p className="text-xs md:text-sm text-slate-650 leading-relaxed">
-                          Send the notice via Speed Post or Registered Post. Preserve the postal receipt and track the delivery confirmation. Also, send a copy via email and WhatsApp. Wait for the 15-day window for their reply or settlement.
+                          Send the notice digitally via verified email and WhatsApp. Preserve the delivery confirmation. Wait for the 15-day window for their reply or settlement.
                         </p>
                       </div>
                     </div>

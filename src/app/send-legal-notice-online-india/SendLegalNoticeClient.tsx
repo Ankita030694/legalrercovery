@@ -43,7 +43,7 @@ const faqs = [
   },
   {
     question: "How much does it cost to send a legal notice online in India?",
-    answer: "At LegalRecovery, we follow a transparent, flat-pricing model for online legal notices. Unlike traditional law firms that charge hourly consultation rates, our online process includes advocate consultation, drafting of the notice, legal vetting, physical printing, dispatch via Speed Post/Registered Post, and real-time tracking updates, all for a single, upfront flat fee. This makes professional legal notices accessible to individuals, startups, and small businesses alike."
+    answer: "At LegalRecovery, we follow a transparent, flat-pricing model for online legal notices. Unlike traditional law firms that charge hourly consultation rates, our online process includes advocate consultation, drafting of the notice, legal vetting, digital dispatch via email and WhatsApp, and real-time tracking updates, all for a single, upfront flat fee. This makes professional legal notices accessible to individuals, startups, and small businesses alike."
   },
   {
     question: "Can a legal notice be sent to a company registered under a foreign jurisdiction?",
@@ -56,7 +56,7 @@ const reviews = [
     id: "rev-ln-1",
     name: "Dr. Alok Sen (Senior Consultant)",
     rating: 5,
-    review: "I had a flat booking refund dispute of ₹4.5 Lakhs with a builder who kept ignoring my calls. I used LegalRecovery's online service. An advocate drafted a comprehensive notice citing RERA rules and served it to the builder's office. Within 10 days of receiving the Speed Post, the builder's legal team contacted me and processed my full refund. Saving the hassle of physical lawyer visits was a huge relief!"
+    review: "I had a flat booking refund dispute of ₹4.5 Lakhs with a builder who kept ignoring my calls. I used LegalRecovery's online service. An advocate drafted a comprehensive notice citing RERA rules and served it to the builder's office. Within 10 days of receiving the digital notice, the builder's legal team contacted me and processed my full refund. Saving the hassle of physical lawyer visits was a huge relief!"
   },
   {
     id: "rev-ln-2",
@@ -68,7 +68,7 @@ const reviews = [
     id: "rev-ln-3",
     name: "Abhinav Reddy (Software Engineer)",
     rating: 5,
-    review: "My previous employer refused to pay my last month's salary and withheld my relieving letter after I resigned. LegalRecovery helped me send an online notice. They dispatched the physical notice via Speed Post and also served it via email. The company sent my documents and cleared my pending salary within a week. Highly recommended!"
+    review: "My previous employer refused to pay my last month's salary and withheld my relieving letter after I resigned. LegalRecovery helped me send an online notice. They served it via email and WhatsApp. The company sent my documents and cleared my pending salary within a week. Highly recommended!"
   },
   {
     id: "rev-ln-4",
@@ -296,7 +296,7 @@ export default function SendLegalNoticeClient() {
                       However, digital validity does not mean that a simple email draft is sufficient. For an online legal notice to be legally robust, it must follow strict guidelines. It must clearly state the facts of the dispute, detail the specific legal violations, specify the exact compensation or relief demanded, and provide a clear timeline for compliance. Additionally, you must maintain a secure record of the transmission logs. Under the <strong>Bharatiya Nyaya Sanhita, 2023 (BNS)</strong> and the <strong>Bharatiya Sakshya Adhiniyam, 2023 (BSA)</strong>, which replaced the old Indian Penal Code and Evidence Act, electronic documents are fully recognized as primary evidence. When presenting an online notice in court, providing the digital receipt accompanied by a statutory electronic certificate ensures that the court accepts the notice as indisputable evidence.
                     </p>
                     <p className="text-sm md:text-base leading-relaxed">
-                      At LegalRecovery, we combine the legal validity of the digital medium with the security of traditional delivery. We draft the notice digitally, have it verified and signed by a registered advocate from our legal panel, serve it via email and WhatsApp for immediate receipt, and simultaneously dispatch a physical copy on advocate letterhead via India Post Speed Post. This dual-track approach ensures that the recipient cannot evade the notice, providing you with absolute proof of service in a court of law.
+                      At LegalRecovery, we combine the legal validity of the digital medium with our efficient delivery engine. We draft the notice digitally, have it verified and signed by a registered advocate from our legal panel, and serve it via email and WhatsApp for immediate receipt. This digital approach ensures that the recipient cannot evade the notice, providing you with absolute proof of service in a court of law.
                     </p>
                     <div className="bg-red-50 p-6 rounded-2xl border-l-4 border-[#DC2626] italic text-xs sm:text-sm text-red-900 font-semibold leading-relaxed">
                       &quot;Electronic service of legal notices is not just a modern convenience; it is a legally recognized, court-admissible method of dispute resolution under the IT Act, 2000 and the Bharatiya Sakshya Adhiniyam, 2023.&quot;
@@ -417,7 +417,7 @@ export default function SendLegalNoticeClient() {
                       <li><strong>Immediate Compliance Clock:</strong> While a speed post can take 3 to 5 days to reach, a WhatsApp notice is delivered instantly. The double blue ticks on WhatsApp serve as immediate proof that the recipient has read the notice, starting the 15-day compliance clock without delay.</li>
                     </ul>
                     <p className="text-sm md:text-base leading-relaxed">
-                      When you send a notice through LegalRecovery, we automatically execute electronic service alongside physical dispatch. We send the official PDF notice signed by our advocate to the recipient&apos;s verified email ID and WhatsApp number, and compile a certified electronic evidence report to protect your case.
+                      When you send a notice through LegalRecovery, we execute an electronic service protocol. We send the official PDF notice signed by our advocate to the recipient&apos;s verified email ID and WhatsApp number, and compile a certified electronic evidence report to protect your case.
                     </p>
                   </div>
                 </section>

@@ -77,7 +77,7 @@ const reviews = [
     id: "rev-dnv-3",
     name: "Saurabh Deshpande (Operations Head)",
     rating: 5,
-    review: "I was worried my notice wouldn't be valid because my landlord turned off their blue ticks. LegalRecovery sent the notice via WhatsApp and Speed Post. They compiled the WhatsApp double gray ticks and screenshot metadata, certified them under Section 63 of the new BSA 2023, and tracked the physical post. The landlord settled the deposit refund immediately when they realized we had legal proof of service. Excellent multi-channel approach!"
+    review: "I was worried my notice wouldn't be valid because my landlord turned off their blue ticks. LegalRecovery sent the notice via WhatsApp and verified email. They compiled the WhatsApp double gray ticks and screenshot metadata, certified them under Section 63 of the new BSA 2023, and tracked the digital delivery logs. The landlord settled the deposit refund immediately when they realized we had legal proof of service. Excellent digital approach!"
   },
   {
     id: "rev-dnv-4",
@@ -472,7 +472,7 @@ export default function DigitalNoticeValidityClient() {
                       In your court filings, naming both physical tracking reports and digital delivery logs (along with the Section 63 BSA certificate) leaves no room for the recipient to dispute the service. If they dispute the WhatsApp delivery, you can present the postal tracking log. If they refuse to accept the physical post, you can present the WhatsApp blue ticks and email SMTP logs. This combined approach creates a legally secure proof of service.
                     </p>
                     <p className="text-sm md:text-base leading-relaxed">
-                      LegalRecovery automatically implements a multi-channel delivery protocol for all notices. We handle the physical dispatch via Speed Post and log all digital delivery confirmations, creating a comprehensive proof of service report.
+                      LegalRecovery automatically implements a multi-channel digital delivery protocol for all notices. We handle the digital dispatch via verified email and WhatsApp and log all delivery confirmations, creating a comprehensive proof of service report.
                     </p>
                   </div>
                 </section>

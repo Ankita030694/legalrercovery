@@ -395,7 +395,7 @@ export default function GymRefundNoticeClient() {
                     <div className="w-[calc(100%-4rem)] md:w-[calc(50%-2.5rem)] bg-white p-5 rounded-2xl shadow-sm border border-slate-100 group-hover:border-[#DC2626]/30 transition-colors">
                       <h3 className="text-lg md:text-xl font-bold text-slate-900 mb-2">Days 1 to 15: The Legal Notice Phase</h3>
                       <p className="text-xs md:text-sm text-slate-600 leading-relaxed">
-                        Your advocate sends the formal notice via Registered Post and email to the gym corporate headquarters. This triggers an internal legal review. Realizing they are dealing with a legally informed consumer and risking a CCPA complaint, many businesses quietly process the refund during this window.
+                        Your advocate sends the formal notice digitally via verified email to the gym corporate headquarters. This triggers an internal legal review. Realizing they are dealing with a legally informed consumer and risking a CCPA complaint, many businesses quietly process the refund during this window.
                       </p>
                     </div>
                   </div>

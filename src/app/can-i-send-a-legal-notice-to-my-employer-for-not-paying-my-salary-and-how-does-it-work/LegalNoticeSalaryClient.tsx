@@ -400,7 +400,7 @@ export default function LegalNoticeSalaryClient() {
                       In a court of law, proving that the legal notice was actually delivered to the employer is as important as the content of the notice itself. If you cannot provide clear proof of service, the employer's legal counsel can deny receiving the notice, which can delay subsequent litigation. Therefore, following strict statutory delivery protocols is critical.
                     </p>
                     <p className="text-sm md:text-base leading-relaxed">
-                      The traditional and most reliable method is dispatching the notice via <strong>Registered Post with Acknowledgment Due (AD)</strong> or <strong>Speed Post</strong>. You must send the notice to the company's registered office address and the directors' MCA-listed home addresses. Always save the physical postal receipts and track the delivery status on the India Post portal. Print and save the delivery tracking log as proof of service. The Acknowledgment Due card signed by the recipient is also strong evidence of delivery.
+                      The reliable method is dispatching the notice digitally via <strong>verified email and WhatsApp</strong>. You must send the notice to the company's registered office address and the directors' MCA-listed home addresses. Always save the digital delivery receipts and track the delivery status. Print and save the delivery tracking log as proof of service.
                     </p>
                     <p className="text-sm md:text-base leading-relaxed">
                       Under Indian civil law, if a registered notice is returned with postal remarks like 'refused to accept', 'not claimed', or 'door locked', the court will apply the principle of <strong>deemed service</strong>. Under Section 27 of the General Clauses Act, 1897, and Section 114 of the Indian Evidence Act, the court presumes that the notice was delivered, and the recipient chose to evade it. This evasion is treated as bad faith, strengthening your case.
@@ -413,7 +413,7 @@ export default function LegalNoticeSalaryClient() {
                       <li><strong>WhatsApp/Slack:</strong> If the company used WhatsApp or Slack for official communication during your employment, you can send the PDF copy through these platforms. The Supreme Court has validated service of notice via WhatsApp if you can document the delivery status (blue ticks).</li>
                     </ul>
                     <p className="text-sm md:text-base leading-relaxed">
-                      To ensure compliance, LegalRecovery uses a multi-channel delivery protocol. We dispatch physical notices via Speed Post and simultaneously send digital copies via verified email and WhatsApp. This creates an undeniable record of service that can be presented in court.
+                      To ensure compliance, LegalRecovery uses a robust digital delivery protocol. We serve the digital copies via verified email and WhatsApp. This creates an undeniable record of service that can be presented in court.
                     </p>
                   </div>
                 </section>

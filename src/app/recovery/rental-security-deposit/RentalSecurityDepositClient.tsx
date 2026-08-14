@@ -448,7 +448,7 @@ export default function RentalSecurityDepositClient() {
                       To prevent landlords from claiming that you left the property without notice or caused damage, you must document your exit process.
                     </p>
                     <p className="text-sm md:text-base leading-relaxed">
-                      First, ensure you serve the <strong>Notice to Quit</strong> strictly in accordance with the rent agreement (typically 1 or 2 months in advance). Send this notice via email or registered post to establish a clear date of termination.
+                      First, ensure you serve the <strong>Notice to Quit</strong> strictly in accordance with the rent agreement (typically 1 or 2 months in advance). Send this notice via email to establish a clear date of termination.
                     </p>
                     <p className="text-sm md:text-base leading-relaxed">
                       Second, on the day of vacating the property, request a joint move-out inspection. Take detailed photos and videos of all rooms, walls, appliances, and fixtures to prove the property is being returned in good condition.

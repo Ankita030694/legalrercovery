@@ -402,7 +402,7 @@ export default function BuilderDelayedPossessionClient() {
                   </div>
 
                   <p className="text-sm md:text-base leading-relaxed">
-                    Once the draft is completed, it must be sent via Registered Post with Acknowledgment Due (RPAD) or Speed Post. A digital copy can also be sent via email to the developer's customer care address, which provides additional proof of delivery. Make sure to preserve all postal receipts and tracking logs, as these will be appended to your petition.
+                    Once the draft is completed, it must be sent digitally via verified email and WhatsApp to the developer's customer care address. Make sure to preserve all delivery logs, as these will be appended to your petition.
                   </p>
                 </div>
               </section>

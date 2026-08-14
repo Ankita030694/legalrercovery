@@ -542,7 +542,7 @@ export default function OfficeSecurityDepositClient() {
                       To prevent landlords from claiming that you left the office without notice or caused damage, you must document the handover process.
                     </p>
                     <p className="text-sm md:text-base leading-relaxed">
-                      First, ensure you serve the <strong>Termination Notice</strong> strictly in accordance with the lease deed. Send this notice via email or registered post to establish a clear date of termination.
+                      First, ensure you serve the <strong>Termination Notice</strong> strictly in accordance with the lease deed. Send this notice via email to establish a clear date of termination.
                     </p>
                     <p className="text-sm md:text-base leading-relaxed">
                       Second, on the day of vacating, request a joint move-out inspection. Take detailed photos and videos of all rooms, walls, flooring, and fixtures to prove the property is being returned in good condition.

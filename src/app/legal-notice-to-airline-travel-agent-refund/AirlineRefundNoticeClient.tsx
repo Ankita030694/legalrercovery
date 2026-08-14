@@ -412,7 +412,7 @@ export default function AirlineRefundNoticeClient() {
                     <div className="w-[calc(100%-4rem)] md:w-[calc(50%-2.5rem)] bg-white p-5 rounded-2xl shadow-sm border border-slate-100 group-hover:border-[#DC2626]/30 transition-colors">
                       <h3 className="text-lg md:text-xl font-bold text-slate-900 mb-2">Days 1 to 15: The Ultimatum Window</h3>
                       <p className="text-xs md:text-sm text-slate-600 leading-relaxed">
-                        The joint notice is served via Registered Post and formal email to the nodal officers. This triggers a 15 day countdown. During this phase, the automated customer service bots are bypassed, and human legal executives review the case file to verify the DGCA violations cited.
+                        The joint notice is served digitally via formal email to the nodal officers. This triggers a 15 day countdown. During this phase, the automated customer service bots are bypassed, and human legal executives review the case file to verify the DGCA violations cited.
                       </p>
                     </div>
                   </div>

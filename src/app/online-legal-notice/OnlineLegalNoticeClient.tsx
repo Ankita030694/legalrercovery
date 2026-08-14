@@ -23,7 +23,7 @@ const faqs = [
   },
   {
     question: "How does an online legal notice platform operate?",
-    answer: "An online legal notice platform like LegalRecovery operates a secure digital workspace. The user uploads details and supporting documents (bank receipts, invoices, chat logs). The platform's automated engine audits the limitation dates, validates entity details via MCA/GSTIN directories, and routes the case to a panel advocate. The advocate drafts the notice, uploads it to the dashboard for user approval, and dispatches it through speed post and electronic channels."
+    answer: "An online legal notice platform like LegalRecovery operates a secure digital workspace. The user uploads details and supporting documents (bank receipts, invoices, chat logs). The platform's automated engine audits the limitation dates, validates entity details via MCA/GSTIN directories, and routes the case to a panel advocate. The advocate drafts the notice, uploads it to the dashboard for user approval, and dispatches it through electronic channels."
   },
   {
     question: "What is 'constructive service' under Section 27 of the General Clauses Act?",
@@ -35,7 +35,7 @@ const faqs = [
   },
   {
     question: "What are the fees for sending an online legal notice in India?",
-    answer: "Manual notice dispatch through traditional law chambers can cost between ₹3,000 to ₹10,000, including consulting and postage charges. On LegalRecovery, we offer automated drafting assistance and advocate-verified dispatch services starting at a transparent flat fee of ₹999 per opposing party. This fee includes advocate review, physical Speed Post dispatch with tracking, and electronic service."
+    answer: "Manual notice dispatch through traditional law chambers can cost between ₹3,000 to ₹10,000, including consulting and postage charges. On LegalRecovery, we offer automated drafting assistance and advocate-verified dispatch services starting at a transparent flat fee of ₹999 per opposing party. This fee includes advocate review and electronic service."
   },
   {
     question: "Is my personal data safe when submitting a case online?",
@@ -336,7 +336,7 @@ export default function OnlineLegalNoticeClient() {
                         <strong>Advocate Routing Network:</strong> A secure routing protocol that matches the verified case file with an experienced advocate on our partner panel. The advocate reviews the files, schedules a phone consultation if needed, drafts the notice on their official letterhead, and uploads it to the user&apos;s dashboard for review.
                       </li>
                       <li>
-                        <strong>Multi-Channel Tracking Engine:</strong> An integration with delivery systems (including the India Post tracking API and email/WhatsApp status monitors) that updates the user on booking receipts, dispatch logs, and delivery confirmations in real-time.
+                        <strong>Multi-Channel Tracking Engine:</strong> An integration with delivery systems (including email and WhatsApp status monitors) that updates the user on booking receipts, dispatch logs, and delivery confirmations in real-time.
                       </li>
                     </ul>
                     <p className="text-sm md:text-base leading-relaxed">
@@ -383,7 +383,7 @@ export default function OnlineLegalNoticeClient() {
                     </div>
                     
                     <p className="text-sm md:text-base leading-relaxed">
-                      Because of these strict evidentiary standards, our platform implements a <strong>Hybrid Service Protocol</strong>. We dispatch the legal notice physically via India Post Speed Post to establish a physical record under Section 27 of the General Clauses Act, and simultaneously serve it electronically via email and WhatsApp. This dual service ensures that the debtor cannot deny receipt, giving you an airtight proof-of-service file for subsequent court filings.
+                      Because of these strict evidentiary standards, our platform implements a <strong>Digital Service Protocol</strong>. We dispatch the legal notice electronically via email and WhatsApp. This service ensures that the debtor cannot deny receipt, giving you an airtight proof-of-service file for subsequent court filings.
                     </p>
                   </div>
                 </section>
@@ -433,7 +433,7 @@ export default function OnlineLegalNoticeClient() {
                       <div className="border-l-4 border-[#DC2626] pl-4">
                         <p className="text-sm text-slate-700 leading-relaxed font-bold">Phase 5: Hybrid Service &amp; Real-Time Tracking</p>
                         <p className="text-xs text-slate-600 leading-relaxed">
-                          The signed notice is automatically dispatched via Speed Post. The platform uploads the India Post consignment number and tracks the delivery status in real-time. Simultaneously, the system dispatches the notice via email and WhatsApp. Once delivery is confirmed on WhatsApp, the platform generates a Section 63 BSA certificate to seal the delivery records.
+                          The signed notice is automatically dispatched digitally via email and WhatsApp. The platform tracks the delivery status in real-time. Once delivery is confirmed, the platform generates a Section 63 BSA certificate to seal the delivery records.
                         </p>
                       </div>
                     </div>
@@ -486,7 +486,7 @@ export default function OnlineLegalNoticeClient() {
                           <tr>
                             <td className="p-3 font-bold text-slate-900">Real-Time Tracking</td>
                             <td className="p-3">Consignment status updated on user dashboard automatically via API integration.</td>
-                            <td className="p-3">Advocate provides a receipt slip. User must manually track status on India Post site.</td>
+                            <td className="p-3">Advocate provides a receipt slip. User must manually track status.</td>
                           </tr>
                           <tr>
                             <td className="p-3 font-bold text-slate-900">Limitation Check</td>

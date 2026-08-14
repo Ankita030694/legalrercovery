@@ -71,7 +71,7 @@ const reviews = [
     id: "rev-ond-2",
     name: "Neetu Kapoor (Creative Lead)",
     rating: 5,
-    review: "I was worried that my landlord would evade my notice regarding my unpaid security deposit. LegalRecovery sent the notice via speed post and WhatsApp. They tracked the WhatsApp delivery and logged the blue ticks. Faced with this airtight proof, the landlord refunded my deposit immediately. The digital dashboard tracking is amazing!"
+    review: "I was worried that my landlord would evade my notice regarding my unpaid security deposit. LegalRecovery sent the notice via verified email and WhatsApp. They tracked the WhatsApp delivery and logged the blue ticks. Faced with this airtight proof, the landlord refunded my deposit immediately. The digital dashboard tracking is amazing!"
   },
   {
     id: "rev-ond-3",
@@ -464,7 +464,7 @@ export default function OnlineNoticeDeliveryClient() {
                       This approach provides both traditional and digital proof of service. If the recipient disputes the WhatsApp delivery, you can present the postal speed post tracking log. If they refuse to accept the physical post, you can present the WhatsApp blue ticks and email SMTP logs showing successful delivery. Naming both physical and digital delivery proofs in your court filings leaves no room for the recipient to dispute the service.
                     </p>
                     <p className="text-sm md:text-base leading-relaxed">
-                      LegalRecovery automatically implements a multi-channel delivery protocol for all notices. We handle the physical dispatch via Speed Post and log all digital delivery confirmations, creating a comprehensive proof of service report.
+                      LegalRecovery automatically implements a multi-channel digital delivery protocol for all notices. We handle the digital dispatch via verified email and WhatsApp and log all delivery confirmations, creating a comprehensive proof of service report.
                     </p>
                   </div>
                 </section>

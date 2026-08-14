@@ -404,7 +404,7 @@ export default function LandlordDeductionsNoticeClient() {
                     <div className="w-[calc(100%-4rem)] md:w-[calc(50%-2.5rem)] bg-white p-5 rounded-2xl shadow-sm border border-slate-100 group-hover:border-[#DC2626]/30 transition-colors">
                       <h3 className="text-lg md:text-xl font-bold text-slate-900 mb-2">Days 1 to 15: The Legal Notice Period</h3>
                       <p className="text-xs md:text-sm text-slate-600 leading-relaxed">
-                        Your advocate drafts and serves the legal notice via Registered Post with Acknowledgment Due (RPAD) and email. This notice gives the landlord a strict 15 day deadline to refund the money or produce verifiable invoices. Most disputes are settled during this window as landlords wish to avoid legal fees.
+                        Your advocate drafts and serves the legal notice digitally via verified email and WhatsApp. This notice gives the landlord a strict 15 day deadline to refund the money or produce verifiable invoices. Most disputes are settled during this window as landlords wish to avoid legal fees.
                       </p>
                     </div>
                   </div>

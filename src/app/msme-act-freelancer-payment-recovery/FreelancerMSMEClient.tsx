@@ -132,7 +132,7 @@ const reviewSchema = {
         "@type": "Person",
         "name": "Karan Johar"
       },
-      "reviewBody": "Using this online platform to recover my unpaid salary was incredibly smooth. The flat-fee pricing of ₹999 was transparent, and the draft was ready in 24 hours. The employer paid within a week of getting the speed post notice."
+      "reviewBody": "Using this online platform to recover my unpaid salary was incredibly smooth. The flat-fee pricing of ₹999 was transparent, and the draft was ready in 24 hours. The employer paid within a week of getting the digital notice."
     },
     {
       "@type": "Review",
@@ -180,7 +180,7 @@ const reviewSchema = {
         "@type": "Person",
         "name": "Nitin Goel"
       },
-      "reviewBody": "Great interface and tracking support. They provided the post office speed post receipt on the client dashboard. Excellent service for small businesses seeking invoice recoveries."
+      "reviewBody": "Great interface and tracking support. They provided the verified digital delivery receipt on the client dashboard. Excellent service for small businesses seeking invoice recoveries."
     },
     {
       "@type": "Review",
@@ -538,7 +538,7 @@ export default function FreelancerMSMEClient() {
                         <strong>Document Audit:</strong> We review your Udyam certificate, contract trails, and invoices to verify that your case meets the statutory requirements of the MSMED Act, identifying any technical issues before filing.
                       </li>
                       <li>
-                        <strong>Pre-Suit Notice Dispatch:</strong> We draft and dispatch a formal advocate-backed pre-suit legal notice citing Section 15 and 16 of the MSMED Act, served via physical Speed Post and digital channels with verified tracking. In most cases, this notice is sufficient to secure a prompt settlement.
+                        <strong>Pre-Suit Notice Dispatch:</strong> We draft and dispatch a formal advocate-backed pre-suit legal notice citing Section 15 and 16 of the MSMED Act, served digitally via verified email and WhatsApp with real-time tracking. In most cases, this notice is sufficient to secure a prompt settlement.
                       </li>
                       <li>
                         <strong>Interest Calculations:</strong> We calculate the compound interest under Section 16 based on the official RBI bank rates, ensuring that your claim includes every rupee of interest you are legally entitled to.
@@ -564,7 +564,7 @@ export default function FreelancerMSMEClient() {
                   <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                     <div className="p-6 bg-slate-50 rounded-2xl border border-slate-100">
                       <p className="text-sm text-slate-700 italic mb-4">
-                        &quot;Using this online platform to recover my unpaid salary was incredibly smooth. The flat-fee pricing of ₹999 was transparent, and the draft was ready in 24 hours. The employer paid within a week of getting the speed post notice.&quot;
+                        &quot;Using this online platform to recover my unpaid salary was incredibly smooth. The flat-fee pricing of ₹999 was transparent, and the draft was ready in 24 hours. The employer paid within a week of getting the digital notice.&quot;
                       </p>
                       <h4 className="font-extrabold text-xs text-slate-900">— Karan Johar (Gurugram)</h4>
                     </div>
@@ -588,7 +588,7 @@ export default function FreelancerMSMEClient() {
                     </div>
                     <div className="p-6 bg-slate-50 rounded-2xl border border-slate-100">
                       <p className="text-sm text-slate-700 italic mb-4">
-                        &quot;Great interface and tracking support. They provided the post office speed post receipt on the client dashboard. Excellent service for small businesses seeking invoice recoveries.&quot;
+                        &quot;Great interface and tracking support. They provided the verified digital delivery receipt on the client dashboard. Excellent service for small businesses seeking invoice recoveries.&quot;
                       </p>
                       <h4 className="font-extrabold text-xs text-slate-900">— Nitin Goel (Delhi)</h4>
                     </div>

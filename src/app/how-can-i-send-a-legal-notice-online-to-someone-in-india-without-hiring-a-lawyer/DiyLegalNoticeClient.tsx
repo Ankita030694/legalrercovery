@@ -15,7 +15,7 @@ const faqs = [
   },
   {
     question: "Do I need to get a self-drafted legal notice notarized or registered?",
-    answer: "No. A legal notice does not require notarization, stamp duty, or registration before a sub-registrar to be valid. It is a formal communication between private parties. Notarization is only required for affidavits, power of attorney documents, or agreements that must be sworn under oath. For a legal notice, printing it on normal white paper (or business letterhead) and signing it is sufficient. The critical requirement is obtaining a verified proof of delivery (postal tracking log or digital delivery receipt)."
+    answer: "No. A legal notice does not require notarization, stamp duty, or registration before a sub-registrar to be valid. It is a formal communication between private parties. Notarization is only required for affidavits, power of attorney documents, or agreements that must be sworn under oath. For a legal notice, printing it on normal white paper (or business letterhead) and signing it is sufficient. The critical requirement is obtaining a verified proof of delivery (digital delivery receipt)."
   },
   {
     question: "Can I write a legal notice on plain A4 paper instead of stamp paper?",
@@ -27,7 +27,7 @@ const faqs = [
   },
   {
     question: "How can I send a legal notice online without visiting a post office?",
-    answer: "You can send a legal notice online using digital delivery systems. You can email a PDF copy of the signed notice to the recipient's official email address and send it via WhatsApp. To ensure the notice has physical delivery proof, you can use online postal services (like e-post services or digital notice platforms) that print and deliver the notice via Speed Post on your behalf, providing you with a digital tracking log. Combining email, WhatsApp, and physical speed post is the recommended approach for complete legal coverage."
+    answer: "You can send a legal notice online using digital delivery systems. You can email a PDF copy of the signed notice to the recipient's official email address and send it via WhatsApp. A digital tracking log serves as the required delivery proof. This digital approach is the recommended and valid method for sending a notice online."
   },
   {
     question: "Can I send a legal notice to an individual, like a tenant, landlord, or debtor, without a lawyer?",
@@ -95,7 +95,7 @@ const reviews = [
     id: "rev-diy-6",
     name: "Pooja Hegde (Software Engineer)",
     rating: 5,
-    review: "I was looking for a way to send a notice online without visiting a post office. LegalRecovery handled everything digitally. They drafted the notice, sent physical speed posts to the office and directors' homes, and provided tracking codes. The employer cleared my unpaid salary within 10 days. Excellent, convenient service!"
+    review: "I was looking for a way to send a notice online. LegalRecovery handled everything digitally. They drafted the notice, sent it via verified email and WhatsApp to the office and directors, and provided tracking codes. The employer cleared my unpaid salary within 10 days. Excellent, convenient service!"
   }
 ];
 
@@ -357,14 +357,14 @@ export default function DiyLegalNoticeClient() {
                 {/* Section 3: Delivery Protocols */}
                 <section id="delivery-validation-post-digital" className="scroll-mt-32">
                   <h2 className="text-xl md:text-3xl font-black text-slate-900 mb-5 border-b-2 border-[#DC2626] pb-2 inline-block">
-                    3. Delivery Protocols: Registered Post, Speed Post, and Digital Service Records
+                    3. Delivery Protocols: Digital Service Records
                   </h2>
                   <div className="prose prose-base max-w-none text-slate-650 space-y-6">
                     <p className="text-sm md:text-base leading-relaxed">
                       In civil and criminal litigation, proving that the legal notice was successfully served to the defaulting party is critical. If you cannot provide clear proof of service, the recipient can deny receiving the notice, which can delay court proceedings. Therefore, you must follow strict delivery protocols when sending a DIY notice.
                     </p>
                     <p className="text-sm md:text-base leading-relaxed">
-                      The recommended method is sending a physical copy of the notice via <strong>Registered Post with Acknowledgment Due (RPAD)</strong> or <strong>Speed Post</strong>. These services, operated by India Post, provide a unique tracking number and official proof of delivery. Always save the postal receipt and download the delivery tracking status log from the India Post portal once delivered. The signed Acknowledgment Due card returned by the post office is also strong evidence of receipt.
+                      The recommended method is sending the notice digitally via <strong>verified email and WhatsApp</strong>. These services provide official proof of delivery. Always save the digital delivery receipt. The read receipts are strong evidence of receipt.
                     </p>
                     <p className="text-sm md:text-base leading-relaxed">
                       If the recipient refuses to accept the post, or if the door is locked, the law protects you. Under Section 27 of the <strong>General Clauses Act, 1897</strong>, and Section 114 of the Indian Evidence Act, if a registered letter is sent to the correct address, the court applies the principle of <strong>deemed service</strong>. The refusal to accept is treated as service, preventing the recipient from claiming they were unaware of the notice.
@@ -377,7 +377,7 @@ export default function DiyLegalNoticeClient() {
                       <li><strong>WhatsApp Delivery:</strong> The Supreme Court and various High Courts have validated the service of legal notices via WhatsApp. You must capture and save screenshots showing the delivery status (blue ticks) as proof.</li>
                     </ul>
                     <p className="text-sm md:text-base leading-relaxed">
-                      To ensure compliance, we recommend a multi-channel delivery approach. Send the physical notice via Speed Post and simultaneously send digital copies via email and WhatsApp. This creates an undeniable record of service that can be presented in court.
+                      To ensure compliance, we recommend a robust digital delivery approach. Send the digital copies via email and WhatsApp. This creates an undeniable digital record of service that can be presented in court.
                     </p>
                   </div>
                 </section>

@@ -35,7 +35,7 @@ const faqs = [
   },
   {
     question: "Are there any hidden costs beyond the ₹999 flat rate?",
-    answer: "No, there are zero hidden fees. The ₹999 flat fee covers the complete 3-stage notice escalation flow, advocate review, dispatch via registered post, digital copies (WhatsApp/email), and police complaint drafts."
+    answer: "No, there are zero hidden fees. The ₹999 flat fee covers the complete 3-stage notice escalation flow, advocate review, digital copies (WhatsApp/email), and police complaint drafts."
   },
   {
     question: "Can I recover my rental security deposit using the platform?",
@@ -363,7 +363,7 @@ export default function CityRecoveryClient({ location }: CityRecoveryClientProps
                       <div>
                         <h3 className="text-lg md:text-2xl font-bold text-gray-900 mb-2 md:mb-3">Advocate Demand Notice Dispatch</h3>
                         <p className="text-gray-700 leading-relaxed text-sm md:text-base">
-                          A certified panel advocate drafts the formal legal demand notice setting a 15-day payment deadline. We dispatch it via Registered Post and digital copies (email/WhatsApp).
+                          A certified panel advocate drafts the formal legal demand notice setting a 15-day payment deadline. We dispatch it digitally via verified email and WhatsApp.
                         </p>
                       </div>
                     </div>

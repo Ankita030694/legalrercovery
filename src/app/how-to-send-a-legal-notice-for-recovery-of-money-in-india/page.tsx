@@ -9,7 +9,7 @@ export const metadata: Metadata = {
     "step by step process legal notice money recovery",
     "how to draft recovery of money notice",
     "process of sending legal notice in India",
-    "servicing legal notice via speed post",
+    "servicing legal notice digitally",
     "legal notice delivery WhatsApp email",
     "how to reply to recovery of money notice",
     "send legal notice online India",

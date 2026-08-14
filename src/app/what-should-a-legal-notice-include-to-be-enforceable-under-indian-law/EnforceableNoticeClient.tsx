@@ -538,7 +538,7 @@ export default function EnforceableNoticeClient() {
                       </ul>
                     </div>
                     <p>
-                      At LegalRecovery, we implement a dual-delivery strategy. Every legal notice is dispatched physically via Speed Post / RPAD to the company&apos;s registered office and ROC address, and simultaneously served digitally via verified email and WhatsApp. We generate automated SMTP delivery logs and prepare the required Section 63 BSA certificates for every digital notice sent. This dual approach ensures that the recipient cannot claim non-delivery, giving us an airtight proof of service for court.
+                      At LegalRecovery, we implement a digital delivery strategy. Every legal notice is served digitally via verified email and WhatsApp. We generate automated SMTP delivery logs and prepare the required Section 63 BSA certificates for every digital notice sent. This approach ensures that the recipient cannot claim non-delivery, giving us an airtight proof of service for court.
                     </p>
                   </div>
                 </section>
@@ -608,7 +608,7 @@ export default function EnforceableNoticeClient() {
                       &quot;Never use emotional, abusive, or threatening language in a legal notice. A notice must remain professional and objective. Using defamatory language can expose the sender to criminal defamation cases under Section 356 of the BNS, 2023, shifting the focus away from your recovery.&quot;
                     </div>
                     <p>
-                      To ensure your legal notice is enforceable and free from these pitfalls, it is highly recommended to use a professional legal-tech platform like LegalRecovery. Our panel of experienced labor and commercial attorneys reviews every case, extracts company details, calculates interest, drafts the notice with precise statutory citations, and dispatches it via Speed Post and digital channels with verified tracking. This professional approach protects your rights and maximizes your chances of recovery.
+                      To ensure your legal notice is enforceable and free from these pitfalls, it is highly recommended to use a professional legal-tech platform like LegalRecovery. Our panel of experienced labor and commercial attorneys reviews every case, extracts company details, calculates interest, drafts the notice with precise statutory citations, and dispatches it digitally via verified email and WhatsApp with verified tracking. This professional approach protects your rights and maximizes your chances of recovery.
                     </p>
                   </div>
                 </section>

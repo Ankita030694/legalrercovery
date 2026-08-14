@@ -161,6 +161,12 @@ const STATIC_ROUTES: {
   { path: "/should-rental-agreements-be-notarized-in-india", changeFrequency: "weekly", priority: 0.85 },
   { path: "/builder-booking-cancellation-refund-legal-notice", changeFrequency: "weekly", priority: 0.85 },
   { path: "/legal-notice-to-interior-designer-contractor-refund", changeFrequency: "weekly", priority: 0.85 },
+  { path: "/send-a-legal-notice/unfair-trade-practice-complaint", changeFrequency: "weekly", priority: 0.85 },
+  { path: "/send-a-legal-notice/online-shopping-dispute", changeFrequency: "weekly", priority: 0.85 },
+  { path: "/send-a-legal-notice/wrong-product-delivered", changeFrequency: "weekly", priority: 0.85 },
+  { path: "/send-a-legal-notice/company-refusing-refund", changeFrequency: "weekly", priority: 0.85 },
+  { path: "/send-a-legal-notice/online-refund-not-received", changeFrequency: "weekly", priority: 0.85 },
+  { path: "/send-a-legal-notice/defective-product-refund", changeFrequency: "weekly", priority: 0.85 },
 ];
 
 async function getBlogEntries(): Promise<MetadataRoute.Sitemap> {

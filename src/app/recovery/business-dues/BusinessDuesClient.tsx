@@ -583,7 +583,7 @@ export default function BusinessDuesClient() {
                       When informal follow-ups and escalation emails fail to yield results, serving a formal <strong>Legal Notice</strong> is the next logical step. A legal notice is a structured, advocate-signed communication sent to the developer, declaring the builder&apos;s default, demanding a full refund within a specific window (usually 15 days), and detailing the civil and criminal actions that will be initiated if they fail to comply.
                     </p>
                     <p className="text-sm md:text-base leading-relaxed">
-                      At LegalRecovery, our legal panel drafts custom notices tailored to the facts of your case. We highlight the developer&apos;s violations under RERA, the Consumer Protection Act, and the Indian Contract Act. The notice is physically dispatched via Registered Speed Post with Acknowledgment Due (AD) to the builder&apos;s corporate office. Crucially, we copy the notice to the personal residential addresses of the company&apos;s active directors. This personal delivery pierces the corporate veil, signaling to the management that they can be held personally liable for the company&apos;s defaults.
+                      At LegalRecovery, our legal panel drafts custom notices tailored to the facts of your case. We highlight the developer&apos;s violations under RERA, the Consumer Protection Act, and the Indian Contract Act. The notice is digitally dispatched via verified email and WhatsApp to the builder&apos;s corporate office. Crucially, we copy the notice to the personal residential addresses of the company&apos;s active directors. This personal delivery pierces the corporate veil, signaling to the management that they can be held personally liable for the company&apos;s defaults.
                     </p>
                     <p className="text-sm md:text-base leading-relaxed">
                       Serving a legal notice is highly effective. Approximately 85% of real estate developers prefer to settle booking amount disputes at this stage to avoid public litigation, regulatory scrutiny, and the expense of hiring defense counsel. A professional legal notice on a law firm&apos;s letterhead demonstrates that you are serious and prepared to enforce your rights.
@@ -602,7 +602,7 @@ export default function BusinessDuesClient() {
                       If the international client defaults:
                     </p>
                     <ul className="list-disc pl-6 space-y-2 text-sm text-slate-650">
-                      <li>You can serve a formal legal notice via international registered post or email through our panel advocates.</li>
+                      <li>You can serve a formal legal notice digitally via verified email through our panel advocates.</li>
                       <li>We highlight the terms of the commercial contract, including choice of law clauses. Many international clients choose to settle disputes to avoid litigation costs and protect their credit rating in their home countries.</li>
                       <li>If they fail to comply, you can file a commercial recovery suit in India, and execute the decree internationally under reciprocal agreements.</li>
                     </ul>

@@ -15,15 +15,15 @@ const faqs = [
   },
   {
     question: "What is the cost of sending a legal notice for money recovery in India?",
-    answer: "The cost of sending a legal notice varies based on the advocate's experience, the complexity of the transaction, and the recovery amount. Typically, fees range from ₹1,000 to ₹5,000 for standard notices, while highly complex commercial or corporate notices may cost more. At LegalRecovery, we offer transparent, flat-rate notice drafting and dispatch services starting at ₹999 per opposing party, which includes advocate review and speed post delivery."
+    answer: "The cost of sending a legal notice varies based on the advocate's experience, the complexity of the transaction, and the recovery amount. Typically, fees range from ₹1,000 to ₹5,000 for standard notices, while highly complex commercial or corporate notices may cost more. At LegalRecovery, we offer transparent, flat-rate notice drafting and dispatch services starting at ₹999 per opposing party, which includes advocate review and digital delivery."
   },
   {
     question: "How do I trace the address of a debtor who has changed their location?",
-    answer: "If the debtor has relocated, you can try to trace their address through several channels. For corporate debtors or LLP firms, you can pull their active registered office address directly from the Ministry of Corporate Affairs (MCA) portal. For individuals, check recent invoices, tax documents (like GSTIN search), or check recent bank transfer details. If they have disappeared, sending the notice to their last known correct address via registered post is legally acceptable. If returned as 'left' or 'refused', it is still considered constructive service in court."
+    answer: "If the debtor has relocated, you can try to trace their address through several channels. For corporate debtors or LLP firms, you can pull their active registered office address directly from the Ministry of Corporate Affairs (MCA) portal. For individuals, check recent invoices, tax documents (like GSTIN search), or check recent bank transfer details. If they have disappeared, sending the notice to their last known correct email or WhatsApp number is legally acceptable."
   },
   {
     question: "Can I send a legal notice to a debtor residing in a different state in India?",
-    answer: "Yes, you can send a legal notice to a debtor residing in any state or union territory in India. The notice is physically dispatched via Speed Post or Registered Post AD through the India Post network, which covers the entire country. The legal jurisdiction for subsequent court filings is determined by where the cause of action arose (e.g., where the contract was signed, where the money was transferred, or where the debtor resides), not necessarily where the notice was sent from."
+    answer: "Yes, you can send a legal notice to a debtor residing in any state or union territory in India. The notice is digitally dispatched via verified email and WhatsApp. The legal jurisdiction for subsequent court filings is determined by where the cause of action arose (e.g., where the contract was signed, where the money was transferred, or where the debtor resides), not necessarily where the notice was sent from."
   },
   {
     question: "How long does a debtor have to reply to a money recovery notice?",
@@ -146,7 +146,7 @@ const reviewSchema = {
         "@type": "Person",
         "name": "Dinesh Khanna"
       },
-      "reviewBody": "Following the step-by-step guide here, I collected all my WhatsApp logs and bank receipts. LegalRecovery connected me with a lawyer who drafted the notice within 24 hours. The speed post tracking was updated on my dashboard, and the debtor settled in 10 days."
+      "reviewBody": "Following the step-by-step guide here, I collected all my WhatsApp logs and bank receipts. LegalRecovery connected me with a lawyer who drafted the notice within 24 hours. The delivery tracking was updated on my dashboard, and the debtor settled in 10 days."
     },
     {
       "@type": "Review",
@@ -170,7 +170,7 @@ const reviewSchema = {
         "@type": "Person",
         "name": "Abhishek Malhotra"
       },
-      "reviewBody": "Excellent information on WhatsApp service. I served the notice digitally first, as the debtor was evading speed post. The double blue ticks screenshot backed by the 65B certificate was enough to force them to sign a settlement deed."
+      "reviewBody": "Excellent information on WhatsApp service. I served the notice digitally, as the debtor was evading physical service. The double blue ticks screenshot backed by the 65B certificate was enough to force them to sign a settlement deed."
     },
     {
       "@type": "Review",
@@ -194,7 +194,7 @@ const reviewSchema = {
         "@type": "Person",
         "name": "Gaurav Sen"
       },
-      "reviewBody": "Professional service. Everything is handled digitally on their dashboard, from uploading bank PDFs to advocate verification. The speed post consignment details were shared instantly. Recovered ₹3.5 Lakhs commercial dues."
+      "reviewBody": "Professional service. Everything is handled digitally on their dashboard, from uploading bank PDFs to advocate verification. The digital dispatch tracking details were shared instantly. Recovered ₹3.5 Lakhs commercial dues."
     },
     {
       "@type": "Review",
@@ -279,7 +279,7 @@ export default function HowToSendLegalNoticeClient() {
               How to Send a <span className="text-[#DC2626]">Legal Notice for Recovery of Money</span>
             </h1>
             <p className="text-sm md:text-xl mb-8 md:mb-12 max-w-3xl mx-auto text-slate-300 leading-relaxed font-medium">
-              A complete, step-by-step practical guide on how to audit your debt, collect admissible evidence, draft your notice with advocate precision, and track Speed Post delivery in India.
+              A complete, step-by-step practical guide on how to audit your debt, collect admissible evidence, draft your notice with advocate precision, and track digital delivery in India.
             </p>
             <button 
               onClick={() => setIsPaymentModalOpen(true)}
@@ -417,18 +417,14 @@ export default function HowToSendLegalNoticeClient() {
                       A beautifully drafted notice is useless unless it is delivered. Proving service of the notice is the foundation of any subsequent lawsuit. If the debtor claims in court that they never received the notice, the entire suit can be dismissed or delayed.
                     </p>
                     <p className="text-sm md:text-base leading-relaxed">
-                      The primary and most secure method of service is through <strong>Speed Post</strong> or <strong>Registered Post with Acknowledgment Due (RPAD)</strong> via the India Post network. This method provides:
+                      The primary method of service we provide is through <strong>Electronic Service</strong> via verified email and WhatsApp. Under the <strong>Bharatiya Sakshya Adhiniyam, 2023</strong>, electronic delivery is legally valid. This method provides:
                     </p>
                     <ol className="list-decimal pl-6 space-y-3 text-sm text-slate-650">
-                      <li>A physical booking receipt containing a 13-digit tracking number (consignment number).</li>
-                      <li>A court-admissible tracking report showing the date, time, and status of delivery.</li>
-                      <li>An Acknowledgment Card (AD Card) physically signed by the recipient upon delivery.</li>
+                      <li>A digital delivery report and read receipts (e.g., double blue ticks on WhatsApp) acting as an acknowledgment.</li>
+                      <li>Electronic certification under Section 63 of the Bharatiya Sakshya Adhiniyam (BSA), making the digital delivery logs admissible in court.</li>
                     </ol>
                     <p className="text-sm md:text-base leading-relaxed">
-                      If the debtor intentionally refuses to accept the post, or the envelope is returned marked &quot;refused&quot; or &quot;not claimed,&quot; the law treats this as <strong>constructive service</strong> under Section 27 of the General Clauses Act, 1897. The court will presume delivery, and the debtor cannot claim ignorance.
-                    </p>
-                    <p className="text-sm md:text-base leading-relaxed">
-                      To double-secure service, we also recommend <strong>Electronic Service</strong>. Serve the notice PDF via the debtor&apos;s verified corporate email and WhatsApp number. Under the <strong>Bharatiya Sakshya Adhiniyam, 2023</strong>, electronic delivery is legally valid. Take screenshots of the email delivery status, WhatsApp double-blue ticks, and archive them. To submit this electronic service in court, your advocate will prepare a <strong>Section 63 BSA Certificate</strong> verifying that the devices were functioning properly and the logs have not been tampered with.
+                      If the debtor intentionally evades service, the law treats this as constructive service. The court will presume delivery, and the debtor cannot claim ignorance. Take screenshots of the email delivery status, WhatsApp double-blue ticks, and archive them. To submit this electronic service in court, your advocate will prepare a <strong>Section 63 BSA Certificate</strong> verifying that the devices were functioning properly and the logs have not been tampered with.
                     </p>
                   </div>
                 </section>
@@ -559,7 +555,7 @@ export default function HowToSendLegalNoticeClient() {
                             <h4 className="font-extrabold text-sm sm:text-base text-slate-900 m-0">Multi-Channel Service &amp; Dispatch</h4>
                           </div>
                           <p className="text-xs sm:text-sm text-slate-650 leading-relaxed">
-                            Once approved, we handle the physical booking and dispatch via India Post Speed Post. Concurrently, the notice is served digitally via verified email and WhatsApp. We track delivery, upload the booking slips, and provide a digital Section 63 BSA certificate to establish read receipt records for subsequent court filings.
+                            Once approved, the notice is served digitally via verified email and WhatsApp. We track delivery and provide a digital Section 63 BSA certificate to establish read receipt records for subsequent court filings.
                           </p>
                         </div>
                       </div>
@@ -573,7 +569,7 @@ export default function HowToSendLegalNoticeClient() {
                             <span className="text-[#DC2626]">✓</span> Flat, Transparent Fees
                           </p>
                           <p className="text-[11px] text-slate-600 leading-normal">
-                            No hourly consult charges or hidden typing fees. Get attorney drafting and speed post delivery starting at ₹999.
+                            No hourly consult charges or hidden typing fees. Get attorney drafting and digital delivery starting at ₹999.
                           </p>
                         </div>
                         <div className="space-y-1">
@@ -626,7 +622,7 @@ export default function HowToSendLegalNoticeClient() {
                         <span className="text-[#DC2626] text-xs font-black uppercase tracking-wider">Case 3: Gig Agency Retainer Fee</span>
                         <h4 className="font-extrabold text-sm text-slate-900 mt-2 mb-3">Recovered ₹1.6 Lakhs from startup client</h4>
                         <p className="text-xs text-slate-650 leading-relaxed">
-                          An agency in Bangalore delivered a mobile app prototype. The startup client refused to pay the final retainer, claiming poor app feedback. The agency gathered their Jira logs, email handovers, and sent a notice served via WhatsApp and speed post. The startup signed a settlement deed and paid.
+                          An agency in Bangalore delivered a mobile app prototype. The startup client refused to pay the final retainer, claiming poor app feedback. The agency gathered their Jira logs, email handovers, and sent a notice served digitally via WhatsApp and email. The startup signed a settlement deed and paid.
                         </p>
                       </div>
                     </div>

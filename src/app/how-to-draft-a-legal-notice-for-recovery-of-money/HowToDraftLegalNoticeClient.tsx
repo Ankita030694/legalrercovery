@@ -55,7 +55,7 @@ const faqs = [
   },
   {
     question: "What if the debtor refuses to sign the acknowledgment of the physical notice?",
-    answer: "If the debtor refuses to accept delivery of the Speed Post or Registered Post envelope, the post office will return it with a remarks slip ('Refused' or 'Not Claimed'). Under Section 27 of the General Clauses Act, 1897, a refused post is deemed to be validly served ('constructive service'). Keep the unopened returned envelope safely; the court will accept it as proof of service."
+    answer: "If the debtor intentionally evades delivery, it is deemed to be validly served ('constructive service'). Keep the digital delivery logs safely; the court will accept it as proof of service."
   }
 ];
 
@@ -474,7 +474,7 @@ export default function HowToDraftLegalNoticeClient() {
                       <div>
                         <h3 className="text-base md:text-lg font-black text-slate-900 mb-2">3. Section 27 of the General Clauses Act, 1897</h3>
                         <p className="text-sm text-slate-650 leading-relaxed">
-                          This provision covers the presumption of service. If a legal notice is addressed correctly, prepaid, and dispatched via Registered Post or Speed Post, the law presumes that delivery has been completed. Even if the debtor refuses the envelope or leaves it unclaimed, the court treats it as constructive service under Section 27.
+                          This provision covers the presumption of service. If a legal notice is addressed and dispatched correctly, the law presumes that delivery has been completed. Even if the debtor evades service, the court treats it as constructive service under Section 27.
                         </p>
                       </div>
                       <div>
@@ -603,7 +603,7 @@ export default function HowToDraftLegalNoticeClient() {
                           <h4 className="font-extrabold text-sm sm:text-base text-slate-900 m-0">Dispatch &amp; Digital Tracking</h4>
                         </div>
                         <p className="text-xs sm:text-sm text-slate-650 leading-relaxed">
-                          Once approved, the notice is signed by the advocate and dispatched via Speed Post. Concurrently, it is served digitally via verified email and WhatsApp. You receive real-time updates and India Post tracking details directly on your dashboard.
+                          Once approved, the notice is signed by the advocate and served digitally via verified email and WhatsApp. You receive real-time updates and tracking details directly on your dashboard.
                         </p>
                       </div>
                     </div>

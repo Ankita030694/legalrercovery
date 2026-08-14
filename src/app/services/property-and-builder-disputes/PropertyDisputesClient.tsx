@@ -491,7 +491,7 @@ export default function PropertyDisputesClient() {
                       <h4 className="font-extrabold text-[#111827] text-sm">Stage 1: Advocate Demand Notice</h4>
                     </div>
                     <p className="text-xs text-[#4B5563] leading-relaxed">
-                      We draft and serve a highly authoritative legal demand on the letterhead of a practicing real estate advocate. Sent physically via Registered Post AD and digitally via email and WhatsApp, it gives the builder a strict 15-day window to resolve the claim.
+                          We draft and serve a highly authoritative legal demand on the letterhead of a practicing real estate advocate. Sent digitally via verified email and WhatsApp, it gives the builder a strict 15-day window to resolve the claim.
                     </p>
                   </div>
 

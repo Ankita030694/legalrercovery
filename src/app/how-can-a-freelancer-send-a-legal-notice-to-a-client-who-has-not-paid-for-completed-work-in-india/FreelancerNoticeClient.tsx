@@ -47,7 +47,7 @@ const faqs = [
   },
   {
     question: "How much does it cost to send a legal notice to a client through LegalRecovery?",
-    answer: "LegalRecovery offers a highly affordable, transparent, flat-fee pricing model for freelancers. Drafting and dispatching a formal legal notice through our panel of experienced advocates costs a flat fee of ₹999 per opposing party. This fee includes the initial case review, attorney drafting, stamp charges (if applicable), physical printing, dispatch via Registered Speed Post, digital service via email/WhatsApp, and real-time tracking updates on your client dashboard."
+    answer: "LegalRecovery offers a highly affordable, transparent, flat-fee pricing model for freelancers. Drafting and dispatching a formal legal notice through our panel of experienced advocates costs a flat fee of ₹999 per opposing party. This fee includes the initial case review, attorney drafting, stamp charges (if applicable), digital service via email/WhatsApp, and real-time tracking updates on your client dashboard."
   }
 ];
 
@@ -540,7 +540,7 @@ export default function FreelancerNoticeClient() {
                       </ul>
                     </div>
                     <p>
-                      At LegalRecovery, we implement a dual-delivery strategy. Every legal notice is dispatched physically via Speed Post / RPAD to the client&apos;s registered office and ROC address, and simultaneously served digitally via verified email and WhatsApp. We generate automated SMTP delivery logs and prepare the required Section 63 BSA certificates for every digital notice sent. This dual approach ensures that the client cannot claim non-delivery, giving us an airtight proof of service for court.
+                      At LegalRecovery, we implement a digital delivery strategy. Every legal notice is served digitally via verified email and WhatsApp. We generate automated SMTP delivery logs and prepare the required Section 63 BSA certificates for every digital notice sent. This approach ensures that the client cannot claim non-delivery, giving us an airtight proof of service for court.
                     </p>
                   </div>
                 </section>
@@ -621,7 +621,7 @@ export default function FreelancerNoticeClient() {
                       </li>
                     </ul>
                     <p>
-                      By combining physical Speed Post service with digital delivery logs and Section 63 BSA certification, LegalRecovery provides freelancers with an airtight, enforceable legal recovery tool. Serving a formal notice through our advocate panel signals to the defaulting client that you are serious and fully prepared to enforce your rights, leading to an 85% settlement rate during the notice cure window.
+                      By combining verified digital delivery logs with Section 63 BSA certification, LegalRecovery provides freelancers with an airtight, enforceable legal recovery tool. Serving a formal notice through our advocate panel signals to the defaulting client that you are serious and fully prepared to enforce your rights, leading to an 85% settlement rate during the notice cure window.
                     </p>
                   </div>
                 </section>

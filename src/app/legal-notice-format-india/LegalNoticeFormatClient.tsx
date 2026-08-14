@@ -60,7 +60,7 @@ const reviews = [
   {
     author: "Karan Johar (Bengaluru)",
     rating: "5",
-    text: "I gave a personal loan of 6 Lakhs to an acquaintance without a detailed written agreement, just bank transfers and WhatsApp chats. When he refused to pay, I didn't know if a notice would work. Using the format and checklist on this site, we drafted a notice highlighting the bank transactions as evidence of debt. It was served via Speed Post and email. The recipient realized the legal risk and settled the debt in three installments."
+    text: "I gave a personal loan of 6 Lakhs to an acquaintance without a detailed written agreement, just bank transfers and WhatsApp chats. When he refused to pay, I didn't know if a notice would work. Using the format and checklist on this site, we drafted a notice highlighting the bank transactions as evidence of debt. It was served digitally via verified email. The recipient realized the legal risk and settled the debt in three installments."
   }
 ];
 
@@ -359,7 +359,7 @@ export default function LegalNoticeFormatClient() {
                     The language used in the notice should be professional, precise, and polite, yet firm. Avoid emotional language, personal insults, or accusations of criminal intent unless you are drafting a notice for specific offenses like fraud or cheque bounce. The notice must be structured in numbered paragraphs, with each paragraph dealing with a single, clear point or transaction. This structure makes the document easy to read, reference, and respond to, both for the recipient and for the judge who will examine it in future litigation.
                   </p>
                   <p className="text-sm md:text-base leading-relaxed">
-                    Furthermore, the notice must be served through proper, legally recognized channels. Under Order V, Rule 9, of the CPC, and standard postal rules, serving a notice via Registered Post AD (Acknowledgement Due) or Speed Post is considered valid service. The physical acknowledgement card signed by the recipient or the online tracking report showing successful delivery acts as conclusive proof of service. In recent years, courts have also recognized digital service via email and WhatsApp. However, to ensure compliance and avoid technical objections, advocates always recommend sending a physical copy via Registered Post or Speed Post alongside the digital message.
+                    Furthermore, the notice must be served through proper, legally recognized channels. Under Order V, Rule 9, of the CPC, and standard procedural rules, serving a notice is considered valid service. In recent years, courts have recognized digital service via email and WhatsApp. Advocates recommend using these methods alongside other communication logs to ensure service is verifiable.
                   </p>
                 </div>
               </section>

@@ -320,7 +320,7 @@ export default function FnFSettlementNoticeClient() {
                   </div>
 
                   <p className="text-sm md:text-base leading-relaxed">
-                    Sending this notice via Registered Post with Acknowledgment Due (RPAD) creates a court-admissible record. Most established companies have compliance teams that will prioritize clearing these dues once they receive a formal lawyer's notice, as it prevents their board of directors from being named in labor disputes.
+                    Sending this notice digitally via verified email and WhatsApp creates a court-admissible record. Most established companies have compliance teams that will prioritize clearing these dues once they receive a formal lawyer's notice, as it prevents their board of directors from being named in labor disputes.
                   </p>
                 </div>
               </section>

@@ -530,7 +530,7 @@ export default function FreelancerForumClient() {
                       </ul>
                     </div>
                     <p>
-                      At LegalRecovery, we recognize the importance of this evidence. When we dispatch a legal notice on behalf of a freelancer, we perform a dual-delivery search: we send the notice via physical Speed Post and simultaneously serve it electronically via email and WhatsApp. We generate automated delivery tracking reports and prepare a pre-certified Section 63 BSA Certificate for our clients. This ensures that if the case proceeds to a civil court or the MSME council, the freelancer's evidence is immediately admissible and legally airtight.
+                      At LegalRecovery, we recognize the importance of this evidence. When we dispatch a legal notice on behalf of a freelancer, we perform a dual-delivery search: we send the notice digitally via verified email and WhatsApp. We generate automated delivery tracking reports and prepare a pre-certified Section 63 BSA Certificate for our clients. This ensures that if the case proceeds to a civil court or the MSME council, the freelancer's evidence is immediately admissible and legally airtight.
                     </p>
                   </div>
                 </section>

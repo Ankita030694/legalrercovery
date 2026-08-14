@@ -1,0 +1,4 @@
+# llms.txt
+# This file provides metadata and a sitemap specifically for AI bots and LLMs to index our legal recovery resources.
+
+- [Legal Notice for Wrong Product Delivered](https://legalrecovery.in/send-a-legal-notice/wrong-product-delivered)

@@ -35,7 +35,7 @@ const faqs = [
   },
   {
     question: "What documents do I need to file a consumer case for a cancelled event refund?",
-    answer: "You must preserve a complete paper and digital trail: (1) The ticket booking confirmation email and SMS; (2) The official ticket PDF showing the booking ID, price break-up, and convenience fees; (3) Bank or credit card statements showing the debit; (4) The official cancellation announcement (email, social media post, or newspaper clipping); (5) Email exchanges with customer support showing their refusal or delay; (6) A copy of the legal notice sent along with proof of delivery (postal AD card or speed post tracking report)."
+    answer: "You must preserve a complete paper and digital trail: (1) The ticket booking confirmation email and SMS; (2) The official ticket PDF showing the booking ID, price break-up, and convenience fees; (3) Bank or credit card statements showing the debit; (4) The official cancellation announcement (email, social media post, or newspaper clipping); (5) Email exchanges with customer support showing their refusal or delay; (6) A copy of the legal notice sent along with proof of delivery (digital tracking report)."
   },
   {
     question: "Can I file a class-action or joint complaint if hundreds of ticket holders are affected?",

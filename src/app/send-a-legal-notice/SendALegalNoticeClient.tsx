@@ -31,7 +31,7 @@ const faqs = [
   },
   {
     question: "Can I draft and send a legal notice online without visiting an advocate's office?",
-    answer: "Yes, modern legal tech platforms like LegalRecovery allow you to draft and send a legal notice completely online. You do not need to make physical visits to an advocate's chambers. You submit your case details through our secure digital intake questionnaire, upload supporting files to an encrypted document vault, and review the draft notice prepared by a panel advocate on your personal dashboard. Once you approve the draft, the advocate digitally signs the notice under Section 5 of the Information Technology Act, 2000. The portal then dispatches the notice physically via India Post Speed Post and electronically via verified email and WhatsApp, providing you with real-time delivery tracking alerts."
+    answer: "Yes, modern legal tech platforms like LegalRecovery allow you to draft and send a legal notice completely online. You do not need to make physical visits to an advocate's chambers. You submit your case details through our secure digital intake questionnaire, upload supporting files to an encrypted document vault, and review the draft notice prepared by a panel advocate on your personal dashboard. Once you approve the draft, the advocate digitally signs the notice under Section 5 of the Information Technology Act, 2000. The portal then dispatches the notice digitally via verified email and WhatsApp, providing you with real-time delivery tracking alerts."
   },
   {
     question: "How is the delivery of a legal notice proved in court if the recipient refuses to accept it?",
@@ -47,7 +47,7 @@ const faqs = [
   },
   {
     question: "What is the flat fee pricing structure for sending a notice through LegalRecovery?",
-    answer: "LegalRecovery operates on a transparent, flat-fee pricing model starting at ₹999 per opposing party. This flat rate is all-inclusive and covers: 1) Client intake and case file assembly. 2) Document verification and vetting by a panel advocate. 3) Professional drafting on the advocate's official letterhead. 4) Digital review and modifications via the user dashboard. 5) Digital signing under the IT Act. 6) Physical printing, envelope sealing, and Speed Post booking with India Post. 7) Electronic dispatch via verified email and WhatsApp. 8) Real-time tracking dashboard updates. There are no hidden charges, hourly fees, or postal markups."
+    answer: "LegalRecovery operates on a transparent, flat-fee pricing model starting at ₹999 per opposing party. This flat rate is all-inclusive and covers: 1) Client intake and case file assembly. 2) Document verification and vetting by a panel advocate. 3) Professional drafting on the advocate's official letterhead. 4) Digital review and modifications via the user dashboard. 5) Digital signing under the IT Act. 6) Electronic dispatch via verified email and WhatsApp. 7) Real-time tracking dashboard updates. There are no hidden charges or hourly fees."
   },
   {
     question: "What legal actions can I take if the recipient ignores my legal notice?",
@@ -260,14 +260,14 @@ export default function SendALegalNoticeClient() {
       />
 
       <div className="bg-[#F8F9FB] min-h-screen font-sans text-slate-800 text-left">
-        
+
         {/* Hero Section */}
         <div className="relative bg-gradient-to-br from-[#111827] via-[#0F172A] to-[#020617] text-white overflow-hidden py-24 md:py-44 border-b border-slate-900">
           <div className="absolute inset-0 bg-black opacity-40 z-10"></div>
           {/* Ambient Red Glow */}
           <div className="absolute top-0 left-0 w-96 h-96 bg-[#DC2626] opacity-20 rounded-full -translate-x-1/2 -translate-y-1/2 z-0 blur-[100px]"></div>
           <div className="absolute bottom-0 right-0 w-96 h-96 bg-[#DC2626] opacity-15 rounded-full translate-x-1/3 translate-y-1/3 z-0 blur-[100px]"></div>
-          
+
           <div className="relative z-20 container mx-auto px-4 text-center">
             <span className="inline-block text-[#DC2626] text-xs md:text-sm font-black uppercase tracking-widest mb-4 bg-red-950/30 px-4 py-1.5 rounded-full border border-[#DC2626]/20">
               PRE-LITIGATION AND RECOVERY ENGINE
@@ -278,7 +278,7 @@ export default function SendALegalNoticeClient() {
             <p className="text-sm md:text-xl mb-8 md:mb-12 max-w-3xl mx-auto text-slate-300 leading-relaxed font-medium">
               Understand the statutory requirements, procedural workflows, and digital tools for drafting and serving a legal notice online under modern Indian laws.
             </p>
-            <button 
+            <button
               onClick={() => setIsPaymentModalOpen(true)}
               className="bg-[#DC2626] hover:bg-[#B91C1C] text-white font-extrabold py-4 px-10 md:py-5 md:px-14 rounded-xl transition-all transform hover:scale-[1.02] active:scale-100 shadow-xl shadow-red-950/20 text-sm md:text-lg cursor-pointer animate-pulse-slow"
             >
@@ -287,13 +287,13 @@ export default function SendALegalNoticeClient() {
           </div>
         </div>
 
-        <div className="w-full max-w-[1600px] mx-auto px-4 md:px-8 xl:px-12 py-10">
+        <div className="w-full max-w-8xl mx-auto px-4 py-10">
           <div className="mb-6">
             <Breadcrumbs items={breadcrumbItems} />
           </div>
-          
+
           <div className="grid grid-cols-1 lg:grid-cols-[260px_1fr_280px] xl:grid-cols-[280px_1fr_300px] gap-8 xl:gap-10 items-start mt-6">
-            
+
             {/* Left Sidebar - TOC (Desktop) */}
             <div className="hidden lg:block sticky top-24 max-h-[calc(100vh-120px)] overflow-y-auto pr-2 scrollbar-hide">
               <div className="bg-white p-5 rounded-2xl shadow-sm border border-slate-100">
@@ -309,7 +309,7 @@ export default function SendALegalNoticeClient() {
               </div>
 
               <div className="bg-white p-6 md:p-12 rounded-3xl shadow-sm space-y-12 border border-slate-100">
-                
+
                 {/* Section 1: The Modern Protocol of Sending a Notice */}
                 <section id="protocol" className="scroll-mt-32">
                   <h2 className="text-xl md:text-3xl font-black text-slate-900 mb-5 border-b-2 border-[#DC2626] pb-2 inline-block">
@@ -323,7 +323,7 @@ export default function SendALegalNoticeClient() {
                       Under the Indian legal framework, sending a legal notice serves several critical objectives. First, it clearly conveys your legal grievances to the other party, leaving no room for ambiguity about your intentions. Second, it establishes a reliable, court-admissible paper trail showing that you made reasonable efforts to resolve the dispute out of court. Third, it sets a firm timeline for the other party to respond or comply, which is vital for calculating limitation periods in civil recovery suits. Fourth, it demonstrates your good faith in eventual court proceedings. Judges consistently look favorably upon plaintiffs who have tried to settle disputes through formal warnings before burdening the judicial system.
                     </p>
                     <p className="text-sm md:text-base leading-relaxed">
-                      In recent years, the process of sending a legal notice has undergone a massive digital transition. Traditionally, drafting a notice required multiple in-person meetings with an advocate, manual document checks, physical printing on legal paper, and posting at a local post office. Today, legal tech platforms have digitized this entire flow. By combining automated database checks, secure cloud document vaults, panel advocate assignment, and digital tracking dashboards, online portals make drafting and dispatching notices faster and more transparent. A legal notice has evolved from a simple physical letter into a structured digital case file, which is integrated with Online Dispute Resolution (ODR) systems and ready for e-filing.
+                      In recent years, the process of sending a legal notice has undergone a massive digital transition. Traditionally, drafting a notice required multiple in-person meetings with an advocate, manual document checks, printing on legal paper, and posting at a local post office. Today, legal tech platforms have digitized this entire flow. By combining automated database checks, secure cloud document vaults, panel advocate assignment, and digital tracking dashboards, online portals make drafting and dispatching notices faster and more transparent. A legal notice has evolved into a structured digital case file, which is integrated with Online Dispute Resolution (ODR) systems and ready for e-filing.
                     </p>
                     <p className="text-sm md:text-base leading-relaxed">
                       Legal notices in India fall into two broad categories: statutory notices and non-statutory notices. Statutory notices are those mandated by specific acts of parliament before any legal action can be filed. For instance, you cannot file a suit against a government department without serving a 60-day notice under Section 80 of the Code of Civil Procedure (CPC), nor can you file a criminal cheque bounce complaint without serving a 15-day notice under Section 138 of the Negotiable Instruments Act. Non-statutory notices are those sent in general civil matters, such as contractual breaches, partition disputes, or consumer grievances. While not strictly mandated by law, sending a non-statutory notice is standard practice to establish default and encourage settlement.
@@ -343,7 +343,7 @@ export default function SendALegalNoticeClient() {
                     <p className="text-sm md:text-base leading-relaxed">
                       Different legal disputes in India are governed by specific statutes that dictate how a notice must be drafted, served, and timed. Compliance with these statutory provisions is non-negotiable. Below is a detailed breakdown of the four most common statutory notice categories under Indian civil and criminal law:
                     </p>
-                    
+
                     <div className="space-y-8">
                       <div className="bg-slate-50 p-6 rounded-2xl border border-slate-100">
                         <h3 className="font-extrabold text-sm sm:text-base text-slate-900 mb-3">A. Section 80 of the Code of Civil Procedure, 1908 (Government Notices)</h3>
@@ -408,7 +408,7 @@ export default function SendALegalNoticeClient() {
                     <p className="text-sm md:text-base leading-relaxed font-semibold text-slate-800">
                       The step-by-step procedure for sending a notice online is structured as follows:
                     </p>
-                    
+
                     <div className="space-y-6">
                       <div className="flex items-start space-x-4">
                         <div className="bg-[#DC2626] text-white rounded-full w-8 h-8 flex items-center justify-center shrink-0 font-black text-sm">
@@ -494,7 +494,7 @@ export default function SendALegalNoticeClient() {
                     <p className="text-sm md:text-base leading-relaxed">
                       A legal notice is only effective if you can prove to a court that it was delivered to the recipient. Under the Indian civil justice system, defendants frequently try to delay proceedings by claiming they never received the notice. Proving service requires combining physical postal records with digital delivery logs.
                     </p>
-                    
+
                     <h3 className="font-extrabold text-base text-slate-900 mb-2">A. Constructive Service under the General Clauses Act</h3>
                     <p className="text-sm text-slate-650 leading-relaxed">
                       When a legal notice is sent physically to the correct address via Registered Post AD or India Post Speed Post, its service is protected by <strong>Section 27 of the General Clauses Act, 1897</strong>. This section states that if a letter is correctly addressed, prepaid, and posted, service is deemed to have been completed. Even if the recipient refuses to accept the letter, or if it is returned as &quot;unclaimed&quot; or &quot;out of station,&quot; the court accepts the returned envelope as proof of constructive service. This prevents recipients from evading the notice simply by refusing to open their door.
@@ -584,14 +584,14 @@ export default function SendALegalNoticeClient() {
                     <p className="text-sm md:text-base leading-relaxed">
                       Sending a legal notice online has helped hundreds of individuals and businesses recover outstanding funds without resorting to expensive, long-drawn litigation. Below are three representative case studies:
                     </p>
-                    
+
                     <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mt-4">
                       <div className="bg-slate-50 p-6 rounded-2xl border border-slate-100 flex flex-col justify-between">
                         <div>
                           <span className="text-[#DC2626] text-xs font-black uppercase tracking-wider">Case 1: Trade Receivable</span>
                           <h4 className="font-extrabold text-sm text-slate-900 mt-2 mb-3">Recovered ₹5.4 Lakhs Outstanding Invoice</h4>
                           <p className="text-xs text-slate-650 leading-relaxed">
-                            A vendor in Pune faced defaults on B2B invoices from a distributor. The distributor claimed they never received the invoices. We verified the distributor&apos;s GSTIN and sent the notice via Speed Post and corporate email. The distributor cleared the dues to avoid insolvency proceedings.
+                            A vendor in Pune faced defaults on B2B invoices from a distributor. The distributor claimed they never received the invoices. We verified the distributor&apos;s GSTIN and sent the notice via corporate email and WhatsApp. The distributor cleared the dues to avoid insolvency proceedings.
                           </p>
                         </div>
                       </div>
@@ -637,8 +637,8 @@ export default function SendALegalNoticeClient() {
                         const faqId = `faq-${idx}`;
                         const isExpanded = expandedFaqs.includes(faqId);
                         return (
-                          <div 
-                            key={idx} 
+                          <div
+                            key={idx}
                             className="border border-slate-200 rounded-xl overflow-hidden bg-white shadow-sm transition-all duration-200 hover:border-slate-350"
                           >
                             <button
@@ -675,12 +675,54 @@ export default function SendALegalNoticeClient() {
                 <p className="text-gray-400 mb-5 text-[11px] leading-relaxed">
                   We match you with a panel advocate, handle the custom drafting, physically post the notice, and track its delivery in real-time.
                 </p>
-                <button 
+                <button
                   onClick={() => setIsPaymentModalOpen(true)}
                   className="block w-full bg-[#DC2626] text-white text-center py-3 rounded-xl text-xs font-bold hover:bg-[#B91C1C] transition-colors mb-3 cursor-pointer"
                 >
                   Start Notice Intake
                 </button>
+              </div>
+
+              {/* Related Templates Card */}
+              <div className="bg-white p-6 rounded-2xl shadow-sm border border-slate-100">
+                <h3 className="text-sm font-black text-slate-900 mb-4">Notice Templates</h3>
+                <ul className="space-y-3">
+                  <li>
+                    <Link href="/send-a-legal-notice/airline-refund-not-received" className="text-xs font-medium text-slate-650 hover:text-[#DC2626] transition-colors flex items-center">
+                      <span className="mr-2 text-slate-300">→</span> Airline Refund Not Received
+                    </Link>
+                  </li>
+                  <li>
+                    <Link href="/send-a-legal-notice/company-refusing-refund" className="text-xs font-medium text-slate-650 hover:text-[#DC2626] transition-colors flex items-center">
+                      <span className="mr-2 text-slate-300">→</span> Company Refusing Refund
+                    </Link>
+                  </li>
+                  <li>
+                    <Link href="/send-a-legal-notice/defective-product-refund" className="text-xs font-medium text-slate-650 hover:text-[#DC2626] transition-colors flex items-center">
+                      <span className="mr-2 text-slate-300">→</span> Defective Product Refund
+                    </Link>
+                  </li>
+                  <li>
+                    <Link href="/send-a-legal-notice/online-refund-not-received" className="text-xs font-medium text-slate-650 hover:text-[#DC2626] transition-colors flex items-center">
+                      <span className="mr-2 text-slate-300">→</span> Online Refund Not Received
+                    </Link>
+                  </li>
+                  <li>
+                    <Link href="/send-a-legal-notice/online-shopping-dispute" className="text-xs font-medium text-slate-650 hover:text-[#DC2626] transition-colors flex items-center">
+                      <span className="mr-2 text-slate-300">→</span> Online Shopping Dispute
+                    </Link>
+                  </li>
+                  <li>
+                    <Link href="/send-a-legal-notice/unfair-trade-practice-complaint" className="text-xs font-medium text-slate-650 hover:text-[#DC2626] transition-colors flex items-center">
+                      <span className="mr-2 text-slate-300">→</span> Unfair Trade Practice Complaint
+                    </Link>
+                  </li>
+                  <li>
+                    <Link href="/send-a-legal-notice/wrong-product-delivered" className="text-xs font-medium text-slate-650 hover:text-[#DC2626] transition-colors flex items-center">
+                      <span className="mr-2 text-slate-300">→</span> Wrong Product Delivered
+                    </Link>
+                  </li>
+                </ul>
               </div>
             </div>
 

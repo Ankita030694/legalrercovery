@@ -363,7 +363,7 @@ export default function RecoveryClient() {
               </div>
               <h4 className="text-[13.5px] font-extrabold text-[#111827] mb-1.5">Dispatch & Track</h4>
               <p className="text-[11.5px] text-slate-500 leading-relaxed">
-                The notice is printed on official lawyer letterhead and sent via Speed Post or Registered Post. Digital tracking updates are shared with you in real-time.
+                The notice is printed on official lawyer letterhead and served digitally. Digital tracking updates are shared with you in real-time.
               </p>
             </div>
 

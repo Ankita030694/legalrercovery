@@ -56,7 +56,7 @@ const reviews = [
     id: "rev-fl-1",
     name: "Aarav Mehta (UI/UX Designer)",
     rating: 5,
-    review: "A startup client in Delhi refused to pay my final project milestone of ₹85,000, claiming they did not like the designs after using them on their live app. LegalRecovery served a formal legal notice for copyright infringement and breach of contract. Within 8 days of the Speed Post delivery, the startup founders cleared my full invoice and requested a formal release deed. Fantastic platform!"
+    review: "A startup client in Delhi refused to pay my final project milestone of ₹85,000, claiming they did not like the designs after using them on their live app. LegalRecovery served a formal legal notice for copyright infringement and breach of contract. Within 8 days of the digital notice delivery, the startup founders cleared my full invoice and requested a formal release deed. Fantastic platform!"
   },
   {
     id: "rev-fl-2",
@@ -424,7 +424,7 @@ export default function FreelancerPaymentClient() {
                       <p><strong>4. The Compliance Deadline:</strong> A strict demand to settle the dues within 15 days, failing which civil and regulatory actions will be launched.</p>
                     </div>
                     <p className="text-sm md:text-base leading-relaxed">
-                      Our statistics show that <strong>approximately 80% of freelance payment disputes are resolved successfully within 15 days of serving a professional notice</strong>. Corporate entities prefer clearing outstanding invoice amounts to facing public litigation, commercial interest penalties, or having their legal departments tied up in court proceedings. We send the notice physically via Speed Post to their registered offices and digitally via email/WhatsApp for maximum impact.
+                      Our statistics show that <strong>approximately 80% of freelance payment disputes are resolved successfully within 15 days of serving a professional notice</strong>. Corporate entities prefer clearing outstanding invoice amounts to facing public litigation, commercial interest penalties, or having their legal departments tied up in court proceedings. We send the notice digitally via verified email and WhatsApp for maximum impact.
                     </p>
                   </div>
                 </section>

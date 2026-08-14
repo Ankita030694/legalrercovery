@@ -23,7 +23,7 @@ const faqs = [
   },
   {
     question: "What happens if the landlord refuses to accept the physical legal notice?",
-    answer: "If the landlord refuses to accept the physical notice delivered by Registered Post or Speed Post, the law treats this as 'deemed service' under Section 27 of the General Clauses Act, 1897. The envelope returned marked 'Refused' or 'Door Locked' is accepted by courts as proof that the landlord was served, preventing them from claiming they were unaware of your legal demands."
+    answer: "If the landlord intentionally evades service, the law treats this as 'deemed service' under Section 27 of the General Clauses Act, 1897. A digital delivery report backed by a BSA certificate is accepted by courts as proof that the landlord was served, preventing them from claiming they were unaware of your legal demands."
   },
   {
     question: "Do I need a registered rental agreement to send a valid legal notice?",
@@ -39,7 +39,7 @@ const faqs = [
   },
   {
     question: "Can I serve a legal notice to a landlord digitally via WhatsApp and email?",
-    answer: "Yes, you can serve a legal notice digitally, but it should always be sent alongside physical dispatches via Speed Post or Registered Post. Digital notices served via email and WhatsApp are legally valid under the IT Act, 2000, provided they are accompanied by a Section 63 BSA Certificate (formerly Section 65B of the Evidence Act) to be admissible in court."
+    answer: "Yes, you can serve a legal notice digitally. Digital notices served via email and WhatsApp are legally valid under the IT Act, 2000, provided they are accompanied by a Section 63 BSA Certificate (formerly Section 65B of the Evidence Act) to be admissible in court."
   },
   {
     question: "What is the limitation period for initiating legal action for a rental deposit refund?",
@@ -47,7 +47,7 @@ const faqs = [
   },
   {
     question: "How does LegalRecovery help in serving a legal notice to my landlord?",
-    answer: "LegalRecovery simplifies the entire process. We review your rental agreement and invoice logs, calculate applicable interest, connect you with our panel of advocates to draft the notice, and dispatch it via physical Speed Post and digital channels with verified delivery logs and Section 63 BSA compliance, maximizing your chances of an out-of-court refund."
+    answer: "LegalRecovery simplifies the entire process. We review your rental agreement and invoice logs, calculate applicable interest, connect you with our panel of advocates to draft the notice, and dispatch it digitally via verified email and WhatsApp with delivery logs and Section 63 BSA compliance, maximizing your chances of an out-of-court refund."
   }
 ];
 
@@ -131,7 +131,7 @@ const reviewSchema = {
         "@type": "Person",
         "name": "Karan Johar"
       },
-      "reviewBody": "Using this online platform to recover my unpaid salary was incredibly smooth. The flat-fee pricing of ₹999 was transparent, and the draft was ready in 24 hours. The employer paid within a week of getting the speed post notice."
+      "reviewBody": "Using this online platform to recover my unpaid salary was incredibly smooth. The flat-fee pricing of ₹999 was transparent, and the draft was ready in 24 hours. The employer paid within a week of getting the digital notice."
     },
     {
       "@type": "Review",
@@ -179,7 +179,7 @@ const reviewSchema = {
         "@type": "Person",
         "name": "Nitin Goel"
       },
-      "reviewBody": "Great interface and tracking support. They provided the post office speed post receipt on the client dashboard. Excellent service for small businesses seeking invoice recoveries."
+      "reviewBody": "Great interface and tracking support. They provided the verified digital delivery receipt on the client dashboard. Excellent service for small businesses seeking invoice recoveries."
     },
     {
       "@type": "Review",
@@ -380,20 +380,20 @@ export default function LandlordNoticeClient() {
                 {/* Section 4 */}
                 <section id="delivery-protocols-evidence" className="scroll-mt-32">
                   <h2 className="text-xl md:text-3xl font-black text-slate-900 mb-5 border-b-2 border-[#DC2626] pb-2 inline-block">
-                    4. Proof of Service: Dispatches via Speed Post, Email, and WhatsApp
+                    4. Proof of Service: Digital Dispatch via Email and WhatsApp
                   </h2>
                   <div className="prose prose-base max-w-none text-slate-650 space-y-6 text-sm md:text-base leading-relaxed">
                     <p>
                       In court, your legal notice is only as good as your ability to prove that the landlord received it. If a landlord can claim they never received the notice, your case can face significant procedural delays, as courts will not entertain recovery suits without proof that the defendant was given a reasonable opportunity to comply. Therefore, tenants must follow strict delivery protocols to establish an undeniable <strong>Proof of Service</strong>.
                     </p>
                     <p>
-                      The primary and legally mandated delivery channel in India is the physical dispatch through the government Post Office. The notice must be sent via <strong>Registered Post with Acknowledgement Due (RPAD) or Speed Post</strong>. You must keep the original booking receipt containing the unique tracking number. Once the notice is delivered, download and print the official tracking report from the India Post website showing &quot;Item Delivered.&quot; If the landlord refuses to accept the postman's delivery, do not worry. Under <strong>Section 27 of the General Clauses Act, 1897</strong>, if a notice is addressed correctly and sent via registered post, it is legally deemed as served. The returned envelope marked &quot;Refused&quot; by the postman is accepted by courts as proof of service, and the landlord cannot claim ignorance.
+                      The primary delivery channel is digital dispatch via <strong>verified email and WhatsApp</strong>. You must keep the delivery reports. Once the notice is delivered, preserve the read receipts showing &quot;Read.&quot; If the landlord intentionally evades service, do not worry. Under the law, if a notice is addressed correctly, it is legally deemed as served. The digital tracking report is accepted by courts as proof of service, and the landlord cannot claim ignorance.
                     </p>
                     <p>
                       To ensure absolute service, the notice should also be served digitally via email and WhatsApp. Digital service is recognized under Section 4 and 5 of the Information Technology Act, 2000. However, to present digital notices as evidence in court, you must comply with the strict rules of the <strong>Bharatiya Sakshya Adhiniyam (BSA), 2023</strong>. Any printout or screenshot of an email sent or a WhatsApp chat showing double blue ticks must be accompanied by a signed <strong>Section 63 BSA Certificate</strong>.
                     </p>
                     <p>
-                      The Section 63 BSA Certificate is a mandatory declaration confirming the integrity of the electronic record. It must detail the specifications of the device used (laptop/phone), attest that it was working properly, and include the cryptographic SHA-256 hash values of the screenshots or files. At LegalRecovery, we handle this entire workflow: we dispatch the physical notice via Speed Post, serve the digital notice with verified email/WhatsApp tracking, and automatically generate the pre-certified Section 63 BSA Certificate for our clients, creating an airtight proof of service for court.
+                      The Section 63 BSA Certificate is a mandatory declaration confirming the integrity of the electronic record. It must detail the specifications of the device used (laptop/phone), attest that it was working properly, and include the cryptographic SHA-256 hash values of the screenshots or files. At LegalRecovery, we handle this entire workflow: we serve the digital notice with verified email/WhatsApp tracking, and automatically generate the pre-certified Section 63 BSA Certificate for our clients, creating an airtight proof of service for court.
                     </p>
                     <div className="bg-slate-50 p-6 rounded-2xl border border-slate-100 space-y-3">
                       <h4 className="font-extrabold text-sm text-slate-900 uppercase tracking-wider text-[#DC2626]">
@@ -401,10 +401,10 @@ export default function LandlordNoticeClient() {
                       </h4>
                       <ul className="list-disc pl-6 space-y-2 text-xs sm:text-sm text-slate-600">
                         <li>
-                          <strong>Physical Speed Post Receipt:</strong> Preserve the post office booking slip with the tracking ID.
+                          <strong>Digital Delivery Logs:</strong> Preserve the email read receipts and WhatsApp delivery logs generated by our platform.
                         </li>
                         <li>
-                          <strong>India Post Delivery Report:</strong> Print the tracking status showing successful delivery.
+                          <strong>Digital Delivery Report:</strong> Print the digital tracking status showing successful delivery.
                         </li>
                         <li>
                           <strong>SMTP Email logs:</strong> Verify that the email notice did not bounce and was delivered.
@@ -534,7 +534,7 @@ export default function LandlordNoticeClient() {
                         <strong>Advocate Drafting:</strong> We connect you with our panel of qualified advocates who draft a professional legal notice on their letterhead, citing the Model Tenancy Act, the Interest Act, 1978, and civil procedures.
                       </li>
                       <li>
-                        <strong>Dual-Delivery Dispatch:</strong> We dispatch the notice physically via Speed Post to the landlord's address, and simultaneously serve it digitally via email and WhatsApp with verified tracking.
+                        <strong>Digital Delivery Dispatch:</strong> We serve the notice digitally via verified email and WhatsApp to the landlord with verified tracking logs.
                       </li>
                       <li>
                         <strong>Section 63 BSA Compliance:</strong> We prepare the required Section 63 BSA Certificate for all digital dispatches, ensuring your digital proof of service is immediately admissible in court.
@@ -557,7 +557,7 @@ export default function LandlordNoticeClient() {
                   <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                     <div className="p-6 bg-slate-50 rounded-2xl border border-slate-100">
                       <p className="text-sm text-slate-700 italic mb-4">
-                        &quot;Using this online platform to recover my unpaid salary was incredibly smooth. The flat-fee pricing of ₹999 was transparent, and the draft was ready in 24 hours. The employer paid within a week of getting the speed post notice.&quot;
+                        &quot;Using this online platform to recover my unpaid salary was incredibly smooth. The flat-fee pricing of ₹999 was transparent, and the draft was ready in 24 hours. The employer paid within a week of getting the digital notice.&quot;
                       </p>
                       <h4 className="font-extrabold text-xs text-slate-900">— Karan Johar (Gurugram)</h4>
                     </div>
@@ -581,7 +581,7 @@ export default function LandlordNoticeClient() {
                     </div>
                     <div className="p-6 bg-slate-50 rounded-2xl border border-slate-100">
                       <p className="text-sm text-slate-700 italic mb-4">
-                        &quot;Great interface and tracking support. They provided the post office speed post receipt on the client dashboard. Excellent service for small businesses seeking invoice recoveries.&quot;
+                        &quot;Great interface and tracking support. They provided the verified digital delivery receipt on the client dashboard. Excellent service for small businesses seeking invoice recoveries.&quot;
                       </p>
                       <h4 className="font-extrabold text-xs text-slate-900">— Nitin Goel (Delhi)</h4>
                     </div>

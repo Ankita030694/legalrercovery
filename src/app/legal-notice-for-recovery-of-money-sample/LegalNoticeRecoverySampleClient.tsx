@@ -19,7 +19,7 @@ const faqs = [
   },
   {
     question: "Is a sample legal notice valid if it is sent via email or WhatsApp?",
-    answer: "Yes, under Section 63 of the Bharatiya Sakshya Adhiniyam, 2023 (previously Section 65B of the Indian Evidence Act), electronic communications are admissible. If a notice is sent as a PDF via email or WhatsApp and delivery can be tracked (such as blue ticks or read receipts), it is considered validly served. However, it is always best practice to send a physical copy via Registered Post or Speed Post alongside the digital copy."
+    answer: "Yes, under Section 63 of the Bharatiya Sakshya Adhiniyam, 2023 (previously Section 65B of the Indian Evidence Act), electronic communications are admissible. If a notice is sent as a PDF via email or WhatsApp and delivery can be tracked (such as blue ticks or read receipts), it is considered validly served."
   },
   {
     question: "What statutory acts are cited in a commercial invoice recovery sample?",
@@ -328,7 +328,7 @@ export default function LegalNoticeRecoverySampleClient() {
                       In this guide, we provide three distinct, professionally vetted sample drafts representing the most common scenarios of payment defaults in India: friendly loans, commercial B2B invoices, and freelancer/independent contractor service fees. Each draft is accompanied by a detailed statutory commentary explaining why specific clauses are used. By studying these formats, you will gain a clear understanding of the structural anatomy of formal legal notices.
                     </p>
                     <p className="text-sm md:text-base leading-relaxed">
-                      However, we must emphasize a critical caveat: <em>a sample notice is a blueprint, not a final solution.</em> Every financial dispute has unique facts, electronic evidence trails, and jurisdictional elements. Copying and pasting a template and sending it on your own personal letterhead rarely yields results. In the legal ecosystem of India, a notice physically dispatched under an advocate&apos;s seal and signature carries serious weight. It signals to the debtor that you have engaged professional counsel and are ready to execute your legal threats. At LegalRecovery, we pair you with veteran civil and commercial lawyers who customize these templates to fit your specific transaction, ensuring maximum enforceability.
+                      However, we must emphasize a critical caveat: <em>a sample notice is a blueprint, not a final solution.</em> Every financial dispute has unique facts, electronic evidence trails, and jurisdictional elements. Copying and pasting a template and sending it on your own personal letterhead rarely yields results. In the legal ecosystem of India, a notice digitally dispatched under an advocate&apos;s seal and signature carries serious weight. It signals to the debtor that you have engaged professional counsel and are ready to execute your legal threats. At LegalRecovery, we pair you with veteran civil and commercial lawyers who customize these templates to fit your specific transaction, ensuring maximum enforceability.
                     </p>
                     <div className="bg-red-50 p-6 rounded-2xl border-l-4 border-[#DC2626] italic text-xs sm:text-sm text-red-900 font-semibold leading-relaxed">
                       &quot;A sample format provides structure, but the strength of a notice lies in its customized facts and the authority of the advocate&apos;s letterhead. Treat the template as a guide, and leave the execution to professional counsel.&quot;
@@ -664,7 +664,7 @@ export default function LegalNoticeRecoverySampleClient() {
                         <span className="text-[#DC2626] text-xs font-black uppercase tracking-wider">Case 1: Friendly Loan Default Resolved</span>
                         <h4 className="font-extrabold text-sm text-slate-900 mt-2 mb-3">Recovered ₹3 Lakhs from Friend</h4>
                         <p className="text-xs text-slate-650 leading-relaxed">
-                          A client in Hyderabad lent ₹3 Lakhs via UPI bank transfer to a childhood friend. After a year of evasion, the client downloaded our loan recovery template. Realizing the complexity of promissory notes and jurisdiction clauses, they hired our platform to customize and serve the notice. Our advocate physically dispatched the notice to the debtor&apos;s residential address. The friend contacted the client within 5 days of delivery, apologized, and cleared the debt.
+                          A client in Hyderabad lent ₹3 Lakhs via UPI bank transfer to a childhood friend. After a year of evasion, the client downloaded our loan recovery template. Realizing the complexity of promissory notes and jurisdiction clauses, they hired our platform to customize and serve the notice. Our advocate digitally dispatched the notice to the debtor&apos;s email and WhatsApp. The friend contacted the client within 5 days of delivery, apologized, and cleared the debt.
                         </p>
                       </div>
                       <div className="bg-slate-50 p-6 rounded-2xl border border-slate-100">

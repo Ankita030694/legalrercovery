@@ -15,7 +15,7 @@ const faqs = [
   },
   {
     question: "What are the typical fees charged by an online lawyer to send a legal notice in India?",
-    answer: "Advocate fees for legal notices in India are not regulated and can vary from ₹1,500 to ₹10,000+ based on the lawyer's experience and the complexity of the matter. Traditional offline law firms often charge separate counseling fees, typing charges, and postal markups. On LegalRecovery, we provide a transparent, flat-fee pricing model starting at ₹999 per opposing party. This all-inclusive rate covers advocate vetting, custom drafting on letterhead, client dashboard modifications, Speed Post booking, and email/WhatsApp dispatches with tracking."
+    answer: "Advocate fees for legal notices in India are not regulated and can vary from ₹1,500 to ₹10,000+ based on the lawyer's experience and the complexity of the matter. Traditional offline law firms often charge separate counseling fees and typing charges. On LegalRecovery, we provide a transparent, flat-fee pricing model starting at ₹999 per opposing party. This all-inclusive rate covers advocate vetting, custom drafting on letterhead, client dashboard modifications, and email/WhatsApp dispatches with tracking."
   },
   {
     question: "How does the advocate matching and onboarding process work online?",
@@ -27,7 +27,7 @@ const faqs = [
   },
   {
     question: "How do online advocates prove the delivery of a notice in court?",
-    answer: "Delivery is proved through a combination of physical and digital records. For physical dispatches, the 13-digit consignment number from India Post is updated on your dashboard, showing delivery reports in real-time. For electronic service (WhatsApp and email), service is proved by presenting read receipts and delivery logs accompanied by a certificate under Section 63 of the Bharatiya Sakshya Adhiniyam, 2023, validating the electronic record."
+    answer: "Delivery is proved through digital records. For electronic service (WhatsApp and email), service is proved by presenting read receipts and delivery logs accompanied by a certificate under Section 63 of the Bharatiya Sakshya Adhiniyam, 2023, validating the electronic record."
   },
   {
     question: "What is constructive service and what happens if the debtor refuses the notice?",
@@ -394,7 +394,7 @@ export default function OnlineLawyerNoticeClient() {
                       <li>Professional case review and document vetting by a panel advocate.</li>
                       <li>Customized drafting on the advocate&apos;s official letterhead.</li>
                       <li>Client dashboard access for draft review and modifications.</li>
-                      <li>Physical Speed Post booking with India Post.</li>
+                      <li>Digital service via WhatsApp and Email.</li>
                       <li>Electronic delivery via verified corporate email and WhatsApp.</li>
                       <li>Real-time tracking dashboard updates.</li>
                     </ul>
@@ -460,7 +460,7 @@ export default function OnlineLawyerNoticeClient() {
                       <div>
                         <h4 className="text-base font-black text-slate-900 mb-2">1. Constructive Service under the General Clauses Act</h4>
                         <p className="text-sm text-slate-650 leading-relaxed">
-                          When the notice is sent physically via Speed Post or Registered Post AD, its service is protected under Section 27 of the General Clauses Act, 1897. This statute states that if a letter is correctly addressed, prepaid, and posted, service is deemed completed. Even if the recipient refuses to accept the post, or if it is returned as &quot;unclaimed&quot; or &quot;door locked,&quot; the court accepts the returned envelope as proof of constructive service.
+                          When the notice is sent digitally, its service is protected under the law. This statute states that if a notice is correctly addressed and dispatched, service is deemed completed. Even if the recipient intentionally evades service, the court accepts the digital delivery logs as proof of constructive service.
                         </p>
                       </div>
                       <div>
@@ -482,7 +482,7 @@ export default function OnlineLawyerNoticeClient() {
                         </thead>
                         <tbody className="divide-y divide-slate-100 text-slate-650">
                           <tr>
-                            <td className="p-3 font-bold text-slate-900">India Post Speed Post</td>
+                            <td className="p-3 font-bold text-slate-900">Digital Dispatch</td>
                             <td className="p-3">Consignment delivery status report showing date, time, and recipient location.</td>
                             <td className="p-3">Section 27 of the General Clauses Act, 1897</td>
                           </tr>

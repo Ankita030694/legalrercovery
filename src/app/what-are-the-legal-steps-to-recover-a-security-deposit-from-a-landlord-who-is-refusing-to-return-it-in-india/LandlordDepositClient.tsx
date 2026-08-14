@@ -47,7 +47,7 @@ const faqs = [
   },
   {
     question: "How does LegalRecovery help tenants recover security deposits?",
-    answer: "LegalRecovery provides tenants with a structured platform to upload their rental agreement, payment receipts, and notice logs. We review your case, calculate applicable interest, draft a formal advocate-backed legal notice served via physical Speed Post and digital channels with verified tracking, and assist in escalating the claim to Rent Courts or civil tribunals if the landlord fails to settle."
+    answer: "LegalRecovery provides tenants with a structured platform to upload their rental agreement, payment receipts, and notice logs. We review your case, calculate applicable interest, draft a formal advocate-backed legal notice served digitally via verified email and WhatsApp with verified tracking, and assist in escalating the claim to Rent Courts or civil tribunals if the landlord fails to settle."
   }
 ];
 
@@ -486,7 +486,7 @@ export default function LandlordDepositClient() {
                       </li>
                     </ul>
                     <p>
-                      The notice must be dispatched physically via <strong>Speed Post or Registered Post AD</strong> to the landlord's permanent or registered office address. Under <strong>Section 27 of the General Clauses Act, 1897</strong>, if the notice is sent to the correct address via registered post, the service is legally deemed complete. To ensure absolute compliance, the notice should also be served digitally via email and WhatsApp. At LegalRecovery, we manage the entire notice workflow—drafting the notice through our panel of advocates, dispatching it via post, serving it digitally with verified tracking, and preparing the mandatory Section 63 BSA certificate for court.
+                      The notice must be dispatched digitally via verified email and WhatsApp. At LegalRecovery, we manage the entire notice workflow—drafting the notice through our panel of advocates, serving it digitally with verified tracking logs, and preparing the mandatory Section 63 BSA certificate for court.
                     </p>
                     <div className="bg-red-50 p-6 rounded-2xl border-l-4 border-[#DC2626] italic text-xs sm:text-sm text-red-900 font-semibold leading-relaxed">
                       &quot;A legal notice is the necessary prelude to court action. When drafted by an advocate and served via Registered Post and WhatsApp with verified tracking, it forces the landlord to return the deposit or face a civil suit. It establishes your cause of action and locks in your entitlement to interest and litigation costs.&quot;

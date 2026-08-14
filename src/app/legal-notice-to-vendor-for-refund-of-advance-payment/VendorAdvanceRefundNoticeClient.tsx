@@ -445,7 +445,7 @@ export default function VendorAdvanceRefundNoticeClient() {
                       <div className="w-[calc(100%-4rem)] md:w-[calc(50%-2.5rem)] bg-white p-5 rounded-2xl shadow-sm border border-slate-100 group-hover:border-[#DC2626]/30 transition-colors">
                         <h3 className="text-lg md:text-xl font-bold text-slate-900 mb-2">Step 4: Formal Service</h3>
                         <p className="text-xs md:text-sm text-slate-650 leading-relaxed">
-                          Serve the notice via Registered Post and Speed Post to the vendor's registered address or office. Send a digital copy via email and WhatsApp to ensure they receive it immediately, starting the 15-day compliance window.
+                          Serve the notice digitally via verified email and WhatsApp to ensure they receive it immediately, starting the 15-day compliance window.
                         </p>
                       </div>
                     </div>

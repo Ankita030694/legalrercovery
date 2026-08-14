@@ -31,7 +31,7 @@ const faqs = [
   },
   {
     question: "What happens if my friend refuses to accept the physical legal notice?",
-    answer: "If your friend refuses to accept the speed post or registered post, the law treats it as 'deemed service' under Section 27 of the General Clauses Act, 1897. The envelope returned to you with the mark 'Refused' or 'Unclaimed' is accepted by Indian courts as conclusive proof that the notice was successfully served."
+    answer: "If your friend intentionally evades service, the law treats it as 'deemed service'. The digital delivery report is accepted by Indian courts as conclusive proof that the notice was successfully served."
   },
   {
     question: "Can I file a summary suit under Order 37 CPC for a friendly loan?",
@@ -47,7 +47,7 @@ const faqs = [
   },
   {
     question: "How does LegalRecovery assist in recovering a friendly loan?",
-    answer: "LegalRecovery manages the entire notice process. We audit your financial receipts and WhatsApp logs, calculate the applicable penal interest under the Interest Act, assign a specialized advocate to draft the notice on their letterhead, dispatch it via Speed Post and WhatsApp, and generate the mandatory Section 63 BSA compliance certificate for your digital files."
+    answer: "LegalRecovery manages the entire notice process. We audit your financial receipts and WhatsApp logs, calculate the applicable penal interest under the Interest Act, assign a specialized advocate to draft the notice on their letterhead, dispatch it digitally via verified email and WhatsApp, and generate the mandatory Section 63 BSA compliance certificate for your digital files."
   }
 ];
 
@@ -436,7 +436,7 @@ export default function FriendNoticeClient() {
                       </li>
                     </ul>
                     <p>
-                      At LegalRecovery, we recognize the critical importance of digital compliance. When we send a legal notice on your behalf, we serve it physically via Speed Post and simultaneously dispatch a digital copy via WhatsApp and email. Our system automatically tracks the delivery status, records the read receipts, and generates a pre-certified, legally compliant Section 63 BSA Certificate. This provides you with an airtight, court-proof record of service and evidence, saving you from complex technical compliance hurdles later.
+                      At LegalRecovery, we recognize the critical importance of digital compliance. When we send a legal notice on your behalf, we serve it digitally via verified email and WhatsApp. Our system automatically tracks the delivery status, records the read receipts, and generates a pre-certified, legally compliant Section 63 BSA Certificate. This provides you with an airtight, court-proof record of service and evidence, saving you from complex technical compliance hurdles later.
                     </p>
                     <div className="bg-slate-50 p-6 rounded-2xl border border-slate-100 space-y-3">
                       <h4 className="font-extrabold text-sm text-slate-900 uppercase tracking-wider text-[#DC2626]">
@@ -470,13 +470,13 @@ export default function FriendNoticeClient() {
                       To initiate successful litigation, a lender must prove to the court's satisfaction that the borrower actually received the legal notice. If a borrower can claim in court that they were never served, the judge will likely adjourn the matter and direct you to reserve the notice, resulting in months of delay. Therefore, establishing an undeniable <strong>Proof of Service</strong> is a critical requirement of the recovery process.
                     </p>
                     <p>
-                      The gold standard for physical service in India is dispatching the notice via <strong>Registered Post with Acknowledgement Due (RPAD) or Speed Post</strong> through the Government Post Office. Avoid private couriers, as courts often refuse to accept courier slips as conclusive proof of service. When the notice is sent via Speed Post, you must preserve the original booking receipt containing the unique tracking ID. Once the post office delivers the notice, download and print the tracking report from the official India Post portal, which clearly logs &quot;Item Delivered&quot; along with the date and time.
+                      The gold standard for service is dispatching the notice digitally via <strong>verified email and WhatsApp</strong>. You must preserve the original delivery receipts. Once the notice is delivered, save the tracking report, which clearly logs &quot;Item Delivered&quot; along with the date and time.
                     </p>
                     <p>
                       What happens if the defaulting friend refuses to accept the postman's delivery, or deliberately keeps their door locked? Lenders need not worry. Under <strong>Section 27 of the General Clauses Act, 1897</strong>, and Section 114 of the Indian Evidence Act, the law recognizes the principle of <strong>Deemed Service</strong>. If a notice is addressed correctly, pre-paid, and sent via registered post, it is legally deemed as served once the post office attempts delivery.
                     </p>
                     <p>
-                      If the postman returns the envelope to you marked as &quot;Refused,&quot; &quot;Unclaimed,&quot; or &quot;Door Locked,&quot; do not open the envelope. Keep the sealed envelope in your possession. In court, this sealed envelope acts as conclusive proof that you attempted service, and the borrower cannot claim they were unaware of the notice. This deemed service rule prevents the borrower from stalling the legal process by simply avoiding the postman.
+                      If the borrower intentionally evades service, preserve the digital logs in your possession. In court, these logs act as conclusive proof that you attempted service, and the borrower cannot claim they were unaware of the notice. This deemed service rule prevents the borrower from stalling the legal process.
                     </p>
                   </div>
                 </section>

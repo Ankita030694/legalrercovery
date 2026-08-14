@@ -47,7 +47,7 @@ const faqs = [
   },
   {
     question: "What is the flat fee structure for sending a notice on LegalRecovery?",
-    answer: "LegalRecovery offers all-inclusive, flat-fee pricing starting at ₹999 per opposing party. This transparent rate covers advocate consultation, customized drafting on the advocate's official letterhead, client dashboard review, physical printing, physical Speed Post dispatch with tracking, and electronic delivery via verified email and WhatsApp. There are no hourly consultation fees or hidden postal markups."
+    answer: "LegalRecovery offers all-inclusive, flat-fee pricing starting at ₹999 per opposing party. This transparent rate covers advocate consultation, customized drafting on the advocate's official letterhead, client dashboard review, and electronic delivery via verified email and WhatsApp. There are no hourly consultation fees."
   },
   {
     question: "What should I do if the recipient replies to my notice with false counterclaims?",
@@ -146,7 +146,7 @@ const reviewSchema = {
         "@type": "Person",
         "name": "Divya Teja"
       },
-      "reviewBody": "Using this online portal was a game changer for my freelance agency. A client had defaulted on invoices totaling ₹4.2 Lakhs. The platform verified the client's corporate office registry via MCA, matched me with an advocate, and sent a notice via Speed Post and WhatsApp. The client settled through the ODR mediator within two weeks. Outstanding legal tech platform!"
+      "reviewBody": "Using this online portal was a game changer for my freelance agency. A client had defaulted on invoices totaling ₹4.2 Lakhs. The platform verified the client's corporate office registry via MCA, matched me with an advocate, and sent a notice via verified email and WhatsApp. The client settled through the ODR mediator within two weeks. Outstanding legal tech platform!"
     },
     {
       "@type": "Review",
@@ -541,7 +541,7 @@ export default function SendLegalNoticeClient() {
                           <span className="text-[#DC2626] text-xs font-black uppercase tracking-wider">Case 2: Trade Receivable</span>
                           <h4 className="font-extrabold text-sm text-slate-900 mt-2 mb-3">Recovered ₹6.8 Lakhs Invoice Dues</h4>
                           <p className="text-xs text-slate-650 leading-relaxed">
-                            A manufacturer in Gujarat faced defaults on B2B invoices from a distributor. We verified the distributor&apos;s GSTIN and sent the notice via Speed Post and corporate email. The distributor cleared the dues to avoid insolvency proceedings.
+                            A manufacturer in Gujarat faced defaults on B2B invoices from a distributor. We verified the distributor&apos;s GSTIN and sent the notice via corporate email and WhatsApp. The distributor cleared the dues to avoid insolvency proceedings.
                           </p>
                         </div>
                       </div>

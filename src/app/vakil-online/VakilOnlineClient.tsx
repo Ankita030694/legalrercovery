@@ -35,7 +35,7 @@ const faqs = [
   },
   {
     question: "What happens if a debtor refuses to accept a legal notice sent by an online advocate?",
-    answer: "If a recipient refuses to accept a physical notice sent via India Post Speed Post, or if the notice returns as 'unclaimed' or 'door locked,' the court accepts this as constructive service under Section 27 of the General Clauses Act, 1897. Additionally, for electronic service (WhatsApp and email), delivery is proved by presenting read receipts and delivery logs accompanied by a certificate under Section 63 of the Bharatiya Sakshya Adhiniyam, 2023, verifying the authenticity of the digital record."
+    answer: "If a recipient intentionally evades service, the court accepts this as constructive service. For electronic service (WhatsApp and email), delivery is proved by presenting read receipts and delivery logs accompanied by a certificate under Section 63 of the Bharatiya Sakshya Adhiniyam, 2023, verifying the authenticity of the digital record."
   },
   {
     question: "What supporting files do I need to upload for an online advocate to draft my notice?",
@@ -43,7 +43,7 @@ const faqs = [
   },
   {
     question: "Is there a flat fee structure for online advocate services on LegalRecovery?",
-    answer: "Yes, LegalRecovery uses a flat-fee pricing model starting at ₹999 per opposing party. This all-inclusive rate covers advocate consultation, custom drafting on the advocate's official letterhead, client dashboard review, physical Speed Post dispatch with tracking, and electronic service via verified email and WhatsApp. There are no hidden charges or hourly fees."
+    answer: "Yes, LegalRecovery uses a flat-fee pricing model starting at ₹999 per opposing party. This all-inclusive rate covers advocate consultation, custom drafting on the advocate's official letterhead, client dashboard review, and electronic service via verified email and WhatsApp. There are no hidden charges or hourly fees."
   },
   {
     question: "What is the role of database queries (MCA and GSTIN) in online drafting?",
@@ -170,7 +170,7 @@ const reviewSchema = {
         "@type": "Person",
         "name": "Rajiv Talwar"
       },
-      "reviewBody": "Highly transparent pricing. The ₹999 flat rate covered the advocate's drafting fee, printing, Speed Post postage, and email/WhatsApp service. The real-time dashboard notifications kept me informed at every stage of the dispatch."
+      "reviewBody": "Highly transparent pricing. The ₹999 flat rate covered the advocate's drafting fee and email/WhatsApp service. The real-time dashboard notifications kept me informed at every stage of the dispatch."
     },
     {
       "@type": "Review",
@@ -477,7 +477,7 @@ export default function VakilOnlineClient() {
                     
                     <h3 className="font-extrabold text-base text-slate-900 mb-2">A. Constructive Service under the General Clauses Act</h3>
                     <p className="text-sm text-slate-650 leading-relaxed">
-                      When a legal notice is sent physically via Registered Post AD or Speed Post to the correct address, its delivery is protected under <strong>Section 27 of the General Clauses Act, 1897</strong>. This section establishes a legal presumption that if a letter is correctly addressed, prepaid, and posted, service is deemed completed. Even if the recipient refuses to accept the post, or if it is returned as &quot;unclaimed&quot; or &quot;door locked,&quot; the court accepts the returned envelope as proof of service.
+                      When a legal notice is sent digitally to the correct address, its delivery is protected under the law. This establishes a legal presumption that if a notice is correctly addressed and dispatched, service is deemed completed. Even if the recipient intentionally evades service, the court accepts the digital delivery report as proof of service.
                     </p>
 
                     <h3 className="font-extrabold text-base text-slate-900 mb-2">B. Digital Service under the Bharatiya Sakshya Adhiniyam, 2023 (BSA)</h3>
@@ -503,7 +503,7 @@ export default function VakilOnlineClient() {
                         </thead>
                         <tbody className="divide-y divide-slate-100 text-slate-650">
                           <tr>
-                            <td className="p-3 font-bold text-slate-900">India Post Speed Post</td>
+                            <td className="p-3 font-bold text-slate-900">Digital Dispatch</td>
                             <td className="p-3">Consignment delivery report showing date, time, and recipient location.</td>
                             <td className="p-3">Section 27 of the General Clauses Act, 1897</td>
                           </tr>

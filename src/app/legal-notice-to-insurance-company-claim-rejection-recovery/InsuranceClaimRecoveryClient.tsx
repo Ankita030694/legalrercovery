@@ -403,10 +403,10 @@ export default function InsuranceClaimRecoveryClient() {
                     Service Rules and Postal Compliance for Insurance Companies
                   </h3>
                   <p className="text-sm md:text-base leading-relaxed">
-                    To establish proper service of the legal notice, you must send it through Registered Post with Acknowledgement Due (RPAD) or Speed Post. The notice must be addressed to the registered corporate headquarters of the insurance company in India and copies must be sent to the local branch office and the designated Grievance Redressal Officer.
+                    To establish proper service of the legal notice, you must send it digitally via verified email. The notice must be addressed to the registered corporate headquarters of the insurance company in India and copies must be sent to the local branch office and the designated Grievance Redressal Officer.
                   </p>
                   <p className="text-sm md:text-base leading-relaxed">
-                    Once the post is delivered, you must preserve the physical postal receipts and track the delivery status on the India Post portal. You should print and save the tracking report showing successful delivery. Under Section 27 of the General Clauses Act, 1897, proof of sending a document by registered post to the correct address constitutes sufficient evidence of service. This proof is critical when you later file a case, as it prevents the insurance company from claiming that they never received your demand notice.
+                    Once the notice is delivered, you must preserve the digital delivery reports. You should print and save the tracking report showing successful delivery. This proof is critical when you later file a case, as it prevents the insurance company from claiming that they never received your demand notice.
                   </p>
                 </div>
               </section>
@@ -479,7 +479,7 @@ export default function InsuranceClaimRecoveryClient() {
                   {/* Process Map Timeline */}
                   <h3 className="text-lg md:text-xl font-bold text-slate-900 mt-8 mb-4">The Claim Recovery Timeline Roadmap</h3>
                   <p className="text-sm md:text-base leading-relaxed mb-6">
-                    The process timeline roadmap details the chronological steps to claim recovery: Step 1: Receipt of Rejection Letter containing specific exclusion clauses; Step 2: Internal Grievance Appeal to the Grievance Redressal Officer; Step 3: Service of Legal Notice via Registered Post; Step 4: Formal Escalation to the Ombudsman or Consumer Court.
+                    The process timeline roadmap details the chronological steps to claim recovery: Step 1: Receipt of Rejection Letter containing specific exclusion clauses; Step 2: Internal Grievance Appeal to the Grievance Redressal Officer; Step 3: Service of Legal Notice via verified email; Step 4: Formal Escalation to the Ombudsman or Consumer Court.
                   </p>
                   
                   <div className="space-y-8 relative before:absolute before:inset-0 before:ml-5 before:-translate-x-px md:before:mx-auto md:before:translate-x-0 before:h-full before:w-0.5 before:bg-gradient-to-b before:from-[#DC2626] before:via-slate-300 before:to-transparent">
@@ -518,7 +518,7 @@ export default function InsuranceClaimRecoveryClient() {
                       <div className="w-[calc(100%-4rem)] md:w-[calc(50%-2.5rem)] bg-white p-5 rounded-2xl shadow-sm border border-slate-100 group-hover:border-[#DC2626]/30 transition-colors">
                         <h3 className="text-base md:text-lg font-bold text-slate-900 mb-2">Step 3: Service of Legal Notice</h3>
                         <p className="text-xs md:text-sm text-slate-600 leading-relaxed">
-                          Draft and serve a formal legal notice via Registered Post, giving the insurer a 15-day window to settle the claim.
+                          Draft and serve a formal legal notice digitally via verified email, giving the insurer a 15-day window to settle the claim.
                         </p>
                       </div>
                     </div>

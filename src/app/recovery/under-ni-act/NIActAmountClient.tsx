@@ -394,7 +394,7 @@ export default function NIActAmountClient() {
                       <li><strong>The 15-Day Demand:</strong> An explicit demand to pay the exact cheque amount within 15 days of receiving the notice.</li>
                     </ul>
                     <p className="text-sm md:text-base leading-relaxed">
-                      Our panel of recovery advocates at LegalRecovery drafts custom notices, ensuring that the return memo details, delivery tracking logs, and legal codes are perfectly integrated. We send notices via registered speed post to ensure proof of service is officially recorded, which is crucial for proving delivery in court.
+                      Our panel of recovery advocates at LegalRecovery drafts custom notices, ensuring that the return memo details, delivery tracking logs, and legal codes are perfectly integrated. We digitally dispatch notices via verified email and WhatsApp to ensure proof of service is officially recorded, which is crucial for proving delivery in court.
                     </p>
                   </div>
                 </section>
@@ -523,7 +523,7 @@ export default function NIActAmountClient() {
                     <ul className="list-disc pl-6 space-y-3 text-sm text-slate-650">
                       <li><strong>Custom Legal Notice:</strong> We do not send generic letters. Our legal panel carefully reviews your UPI transactions, bank records, and chat logs to draft a notice that cites precise legal provisions tailored to your case.</li>
                       <li><strong>Digital Evidence Certification:</strong> We handle the complex drafting of electronic certificates (under BSA Section 63) to ensure your WhatsApp messages and emails are ready for court.</li>
-                      <li><strong>Director & Personal Trackers:</strong> If you lent to a business or if the borrower has a corporate standing, we dispatch notices to their homes and registered offices via registered speed post, maximizing reach and pressure.</li>
+                      <li><strong>Director & Personal Trackers:</strong> If you lent to a business or if the borrower has a corporate standing, we dispatch notices digitally via email and WhatsApp to their homes and registered offices, maximizing reach and pressure.</li>
                       <li><strong>End-to-End Legal Support:</strong> From sending the first legal notice to representing you in Summary Suits, cheque bounce cases, and filing criminal complaints, our panel of labor and civil advocates handles it all.</li>
                       <li><strong>Transparent Pricing:</strong> No hidden hourly charges or surprise retainers. You pay a single transparent flat fee for the entire notice service.</li>
                     </ul>
