@@ -624,12 +624,7 @@ export default function DefectiveProductRefundClient() {
         </div>
       </div>
 
-      <PaymentModal 
-        isOpen={isPaymentModalOpen} 
-        onClose={() => setIsPaymentModalOpen(false)} 
-        serviceName="Legal Notice for Defective Product Refund"
-        amount={1499}
-      />
+      <PaymentModal isOpen={isPaymentModalOpen} onClose={() => setIsPaymentModalOpen(false)} />
     </>
   );
 }

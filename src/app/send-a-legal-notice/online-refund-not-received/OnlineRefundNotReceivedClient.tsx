@@ -220,11 +220,7 @@ export default function OnlineRefundNotReceivedClient() {
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
       />
-      <PaymentModal 
-        isOpen={isPaymentModalOpen}
-        onClose={() => setIsPaymentModalOpen(false)}
-        serviceType="legal-notice-refund"
-      />
+      <PaymentModal isOpen={isPaymentModalOpen} onClose={() => setIsPaymentModalOpen(false)} />
 
       <div className="bg-[#F8F9FB] min-h-screen font-sans text-slate-800 text-left">
         {/* Hero Section */}

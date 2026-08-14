@@ -609,12 +609,7 @@ export default function UnfairTradePracticeClient() {
         </div>
       </div>
 
-      <PaymentModal 
-        isOpen={isPaymentModalOpen} 
-        onClose={() => setIsPaymentModalOpen(false)}
-        serviceId="legal_notice"
-        amount={999}
-      />
+      <PaymentModal isOpen={isPaymentModalOpen} onClose={() => setIsPaymentModalOpen(false)} />
     </>
   );
 }
