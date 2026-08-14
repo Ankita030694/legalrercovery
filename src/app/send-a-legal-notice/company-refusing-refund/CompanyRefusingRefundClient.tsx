@@ -648,7 +648,7 @@ export default function CompanyRefusingRefundClient() {
       </div>
       
       {isPaymentModalOpen && (
-        <PaymentModal onClose={() => setIsPaymentModalOpen(false)} />
+        <PaymentModal isOpen={isPaymentModalOpen} onClose={() => setIsPaymentModalOpen(false)} />
       )}
     </>
   );
