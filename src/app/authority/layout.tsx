@@ -14,8 +14,7 @@ import {
   ChevronRight,
   History,
   Briefcase,
-  CreditCard,
-  MessageSquare
+  CreditCard
 } from "lucide-react";
 
 const adminNavigationItems = [
@@ -42,12 +41,6 @@ const adminNavigationItems = [
     href: "/authority/transactions",
     icon: CreditCard,
     mobileLabel: "Billing"
-  },
-  {
-    label: "Contact Submissions",
-    href: "/authority/contact-submissions",
-    icon: MessageSquare,
-    mobileLabel: "Contacts"
   },
   {
     label: "Blog Manager",
