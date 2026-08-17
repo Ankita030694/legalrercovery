@@ -29,6 +29,13 @@ function mapDatabaseBlog(item: any): Blog {
     }
   }
 
+  let infographicUrl = "";
+  if (typeof item.infographicImage === "string") {
+    infographicUrl = item.infographicImage;
+  } else if (item.infographicImage?.gridFsId) {
+    infographicUrl = `/api/blog/image/${item.infographicImage.gridFsId}`;
+  }
+
   return {
     id: String(item._id || item.id),
     title: item.title || "Untitled Article",
@@ -36,11 +43,13 @@ function mapDatabaseBlog(item: any): Blog {
     description: rawContent,
     date: formattedDate,
     image: imageUrl,
+    infographicImage: infographicUrl,
     slug: item.slug || "",
     author: "Team LegalRecovery",
     created: item.created || (item.createdAt ? new Date(item.createdAt).getTime() : Date.now()),
     metaTitle: item.metaTitle || item.title || "",
-    metaDescription: item.metaDescription || item.subtitle || item.subtitleKeywords || ""
+    metaDescription: item.metaDescription || item.subtitle || item.subtitleKeywords || "",
+    popularSearches: Array.isArray(item.popularSearches) ? item.popularSearches : []
   };
 }
 

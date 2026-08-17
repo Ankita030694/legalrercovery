@@ -59,6 +59,8 @@ export async function PUT(
       faqs,
       reviewSnippets,
       content,
+      popularSearches,
+      infographicImage,
     } = body;
 
     const { db } = await getDbAndBucket("fs");
@@ -94,6 +96,23 @@ export async function PUT(
     if (publishedAt) updateDoc.publishedAt = publishedAt;
     if (author) updateDoc.author = author;
     if (content) updateDoc.content = content;
+    if (popularSearches !== undefined) {
+      updateDoc.popularSearches = Array.isArray(popularSearches) ? popularSearches : [];
+    }
+
+    if (infographicImage !== undefined) {
+      if (infographicImage?.gridFsId) {
+        updateDoc.infographicImage = {
+          gridFsId: infographicImage.gridFsId,
+          filename: infographicImage.filename || "infographic.png",
+          contentType: infographicImage.contentType || "image/png",
+        };
+      } else if (typeof infographicImage === "string") {
+        updateDoc.infographicImage = infographicImage;
+      } else {
+        updateDoc.infographicImage = null;
+      }
+    }
 
     if (coverImage?.gridFsId) {
       updateDoc.coverImage = {

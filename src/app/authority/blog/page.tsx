@@ -7,7 +7,7 @@ import {
   faHome, faUsers, faChartLine, faClipboardList, faCog, 
   faPlus, faEdit, faTrash, faUpload, faMagic, faSearch, faSignOutAlt,
   faNewspaper, faFilter, faStar, faChevronLeft, faChevronRight,
-  faTimes, faArrowLeft, faCheckCircle, faInfoCircle, faFileAlt
+  faTimes, faArrowLeft, faCheckCircle, faInfoCircle, faFileAlt, faBolt
 } from "@fortawesome/free-solid-svg-icons";
 import { signOut, useSession } from "next-auth/react";
 import { useRouter } from "next/navigation";
@@ -51,10 +51,12 @@ interface Blog {
   description: string;
   date: string;
   image: string;
+  infographicImage?: string;
   created: number;
   metaTitle?: string;
   metaDescription?: string;
   slug: string;
+  popularSearches?: string[];
   faqs?: FAQ[];
   reviews?: Review[];
   author: string;
@@ -73,10 +75,12 @@ const BlogsDashboard = () => {
     description: "",
     date: new Date().toISOString().split("T")[0], // Format as YYYY-MM-DD
     image: "",
+    infographicImage: "",
     created: Date.now(),
     metaTitle: "",
     metaDescription: "",
     slug: "",
+    popularSearches: [],
     faqs: [],
     reviews: [],
     author: "Rahul Verma", // Default author
@@ -86,6 +90,17 @@ const BlogsDashboard = () => {
   const [uploadProgress, setUploadProgress] = useState(0);
   const [imagePreview, setImagePreview] = useState<string | null>(null);
   const fileInputRef = useRef<HTMLInputElement>(null);
+
+  // Infographic state
+  const [infographicPrompt, setInfographicPrompt] = useState("");
+  const [isGeneratingInfographic, setIsGeneratingInfographic] = useState(false);
+  const [generatedInfographicUrl, setGeneratedInfographicUrl] = useState<string | null>(null);
+  const [isUploadingInfographic, setIsUploadingInfographic] = useState(false);
+  const [infographicPreview, setInfographicPreview] = useState<string | null>(null);
+  const infographicFileInputRef = useRef<HTMLInputElement>(null);
+  const [uploadingInfographic, setUploadingInfographic] = useState(false);
+  const [uploadProgressInfographic, setUploadProgressInfographic] = useState(0);
+
   const router = useRouter();
   const [currentPage, setCurrentPage] = useState(1);
   const itemsPerPage = 8;
@@ -94,10 +109,32 @@ const BlogsDashboard = () => {
   const [searchTerm, setSearchTerm] = useState("");
   const [isLoadingBlogs, setIsLoadingBlogs] = useState(true);
 
-  // AI Generation state
   const [aiPrimaryKeyword, setAiPrimaryKeyword] = useState("");
   const [aiSecondaryKeywords, setAiSecondaryKeywords] = useState("");
   const [isGenerating, setIsGenerating] = useState(false);
+
+  // Popular searches tag editor state
+  const [newSearchTag, setNewSearchTag] = useState("");
+
+  const handleAddSearchTag = () => {
+    const trimmed = newSearchTag.trim();
+    if (!trimmed) return;
+    const current = newBlog.popularSearches || [];
+    if (!current.includes(trimmed)) {
+      setNewBlog((prev) => ({
+        ...prev,
+        popularSearches: [...(prev.popularSearches || []), trimmed],
+      }));
+    }
+    setNewSearchTag("");
+  };
+
+  const handleRemoveSearchTag = (index: number) => {
+    setNewBlog((prev) => ({
+      ...prev,
+      popularSearches: (prev.popularSearches || []).filter((_, idx) => idx !== index),
+    }));
+  };
 
   // Image Generation state
   const [imagePrompt, setImagePrompt] = useState("");
@@ -152,10 +189,14 @@ const BlogsDashboard = () => {
           description: docData.content || "",
           date: docData.publishedAt ? docData.publishedAt.split("T")[0] : "",
           image: docData.coverImage?.gridFsId ? `/api/blog/image/${docData.coverImage.gridFsId}` : "",
+          infographicImage: docData.infographicImage?.gridFsId
+            ? `/api/blog/image/${docData.infographicImage.gridFsId}`
+            : (typeof docData.infographicImage === "string" ? docData.infographicImage : ""),
           created: docData.createdAt ? new Date(docData.createdAt).getTime() : Date.now(),
           metaTitle: docData.metaTitle || "",
           metaDescription: docData.metaDescription || "",
           slug: docData.slug || "",
+          popularSearches: docData.popularSearches || [],
           faqs: docData.faqs || [],
           reviews: (docData.reviewSnippets || []).map((r: any) => ({
             name: r.reviewerName || "Anonymous",
@@ -391,6 +432,13 @@ const BlogsDashboard = () => {
 
       const generatedData = JSON.parse(accumulatedDetails);
 
+      let incomingSearches: string[] = [];
+      if (Array.isArray(generatedData.popularSearches)) {
+        incomingSearches = generatedData.popularSearches.map((s: any) => String(s).trim()).filter(Boolean);
+      } else if (typeof generatedData.popularSearches === "string" && generatedData.popularSearches.trim()) {
+        incomingSearches = generatedData.popularSearches.split(",").map((s: string) => s.trim()).filter(Boolean);
+      }
+
       setNewBlog((prevState) => ({
         ...prevState,
         title: generatedData.title || prevState.title,
@@ -399,6 +447,7 @@ const BlogsDashboard = () => {
         metaTitle: generatedData.metaTitle || prevState.metaTitle,
         metaDescription: generatedData.metaDescription || prevState.metaDescription,
         slug: generatedData.slug || prevState.slug,
+        popularSearches: incomingSearches.length > 0 ? incomingSearches : (prevState.popularSearches || []),
         faqs: generatedData.faqs || prevState.faqs,
         reviews: generatedData.reviews || prevState.reviews,
       }));
@@ -409,12 +458,15 @@ const BlogsDashboard = () => {
         setNewBlog((prev) => ({ ...prev, slug: generatedSlug }));
       }
       
-      // Also set the image prompt if suggested
+      // Also set the image prompt and infographic prompt if suggested
       if (generatedData.suggestedImagePrompt) {
         setImagePrompt(generatedData.suggestedImagePrompt);
       }
+      if (generatedData.suggestedInfographicPrompt) {
+        setInfographicPrompt(generatedData.suggestedInfographicPrompt);
+      }
       
-      alert("Blog generated successfully! Please review and add an image.");
+      alert("Blog generated successfully! Please review and add an image / infographic.");
     } catch (error) {
       console.error("Error generating blog:", error);
       alert("Failed to generate blog. Please try again.");
@@ -450,6 +502,36 @@ const BlogsDashboard = () => {
       alert("Failed to generate image. Please try again.");
     } finally {
       setIsGeneratingImage(false);
+    }
+  };
+
+  const handleGenerateInfographic = async () => {
+    if (!infographicPrompt.trim()) {
+      alert("Please enter an infographic prompt.");
+      return;
+    }
+
+    try {
+      setIsGeneratingInfographic(true);
+      const response = await fetch("/api/generate-image", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({ prompt: infographicPrompt }),
+      });
+
+      if (!response.ok) {
+        throw new Error("Failed to generate infographic");
+      }
+
+      const data = await response.json();
+      setGeneratedInfographicUrl(data.imageUrl);
+    } catch (error) {
+      console.error("Error generating infographic:", error);
+      alert("Failed to generate infographic. Please try again.");
+    } finally {
+      setIsGeneratingInfographic(false);
     }
   };
 
@@ -511,6 +593,95 @@ const BlogsDashboard = () => {
     }
   };
 
+  const handleUploadGeneratedInfographic = async () => {
+    if (!generatedInfographicUrl) return;
+
+    try {
+      setIsUploadingInfographic(true);
+      
+      const blob = await getImageBlob(generatedInfographicUrl);
+      const file = new File([blob], `infographic_${Date.now()}.png`, { type: "image/png" });
+
+      const formData = new FormData();
+      formData.append("file", file);
+
+      const uploadRes = await fetch("/api/blog/upload", {
+        method: "POST",
+        body: formData,
+      });
+
+      const data = await uploadRes.json();
+      if (uploadRes.ok && data.success) {
+        const imageUrl = `/api/blog/image/${data.gridFsId}`;
+        setNewBlog((prevState) => ({
+          ...prevState,
+          infographicImage: imageUrl,
+        }));
+        setInfographicPreview(imageUrl);
+        setGeneratedInfographicUrl(null);
+        alert("Infographic image saved to database successfully!");
+      } else {
+        throw new Error(data.error || "Infographic upload failed.");
+      }
+    } catch (error) {
+      console.error("Error uploading generated infographic:", error);
+      alert("Failed to upload infographic to MongoDB.");
+    } finally {
+      setIsUploadingInfographic(false);
+    }
+  };
+
+  const handleInfographicFileUpload = async (e: React.ChangeEvent<HTMLInputElement>) => {
+    const file = e.target.files?.[0];
+    if (!file) return;
+    
+    const MAX_FILE_SIZE = 10 * 1024 * 1024;
+    if (file.size > MAX_FILE_SIZE) {
+      alert("Infographic image is too large. Maximum size is 10MB.");
+      return;
+    }
+    
+    try {
+      setUploadingInfographic(true);
+      setUploadProgressInfographic(30);
+      
+      const reader = new FileReader();
+      reader.onload = (event) => {
+        setInfographicPreview(event.target?.result as string);
+      };
+      reader.readAsDataURL(file);
+      
+      const formData = new FormData();
+      formData.append("file", file);
+      
+      setUploadProgressInfographic(60);
+
+      const res = await fetch("/api/blog/upload", {
+        method: "POST",
+        body: formData,
+      });
+      
+      const data = await res.json();
+      setUploadProgressInfographic(90);
+
+      if (res.ok && data.success) {
+        const imageUrl = `/api/blog/image/${data.gridFsId}`;
+        setNewBlog((prevState) => ({
+          ...prevState,
+          infographicImage: imageUrl,
+        }));
+        setUploadProgressInfographic(100);
+      } else {
+        throw new Error(data.error || "File upload failed.");
+      }
+    } catch (error: any) {
+      console.error("Error uploading infographic image:", error);
+      alert(`Failed to upload infographic image: ${error.message}`);
+    } finally {
+      setUploadingInfographic(false);
+    }
+  };
+
   // Handle blog form submission (Create or Update) to MongoDB APIs
   const handleSubmitBlog = async (e: React.FormEvent) => {
     e.preventDefault();
@@ -527,7 +698,7 @@ const BlogsDashboard = () => {
     if (imageToUpload) {
       setIsSubmitting(true);
       try {
-        console.log("[Auto-Uploader] Auto-uploading external image to GridFS before saving...");
+        console.log("[Auto-Uploader] Auto-uploading external cover image to GridFS before saving...");
         const blob = await getImageBlob(imageToUpload);
         const file = new File([blob], `generated_${Date.now()}.png`, { type: "image/png" });
 
@@ -545,7 +716,7 @@ const BlogsDashboard = () => {
           newBlog.image = `/api/blog/image/${gridFsId}`;
           setImagePreview(newBlog.image);
           setGeneratedImageUrl(null);
-          console.log("[Auto-Uploader] Auto-uploaded successfully. gridFsId:", gridFsId);
+          console.log("[Auto-Uploader] Auto-uploaded cover successfully. gridFsId:", gridFsId);
         } else {
           throw new Error(uploadData.error || "Auto file upload failed.");
         }
@@ -554,6 +725,40 @@ const BlogsDashboard = () => {
         alert(`Failed to auto-upload image: ${error.message || error}. Please upload the cover image manually before saving.`);
         setIsSubmitting(false);
         return;
+      }
+    }
+
+    // Auto-upload external infographic image if present
+    let infographicGridFsId = "";
+    if (newBlog.infographicImage && newBlog.infographicImage.includes("/api/blog/image/")) {
+      infographicGridFsId = newBlog.infographicImage.split("/api/blog/image/")[1];
+    }
+
+    const infographicToUpload = !infographicGridFsId ? (generatedInfographicUrl || (newBlog.infographicImage && newBlog.infographicImage.startsWith("http") ? newBlog.infographicImage : "")) : "";
+
+    if (infographicToUpload) {
+      try {
+        console.log("[Auto-Uploader] Auto-uploading infographic image to GridFS before saving...");
+        const blob = await getImageBlob(infographicToUpload);
+        const file = new File([blob], `infographic_${Date.now()}.png`, { type: "image/png" });
+
+        const formData = new FormData();
+        formData.append("file", file);
+
+        const uploadRes = await fetch("/api/blog/upload", {
+          method: "POST",
+          body: formData,
+        });
+
+        const uploadData = await uploadRes.json();
+        if (uploadRes.ok && uploadData.success) {
+          infographicGridFsId = uploadData.gridFsId;
+          newBlog.infographicImage = `/api/blog/image/${infographicGridFsId}`;
+          setInfographicPreview(newBlog.infographicImage);
+          setGeneratedInfographicUrl(null);
+        }
+      } catch (infographicErr) {
+        console.warn("Failed to auto-upload infographic, continuing without it:", infographicErr);
       }
     }
 
@@ -575,6 +780,14 @@ const BlogsDashboard = () => {
           filename: "cover.jpg",
           contentType: "image/jpeg",
         },
+        infographicImage: infographicGridFsId
+          ? {
+              gridFsId: infographicGridFsId,
+              filename: "infographic.png",
+              contentType: "image/png",
+            }
+          : (newBlog.infographicImage || null),
+        popularSearches: newBlog.popularSearches || [],
         faqs: (newBlog.faqs || []).map((f) => ({
           question: f.question,
           answer: f.answer,
@@ -620,6 +833,7 @@ const BlogsDashboard = () => {
     setNewBlog(blog);
     setFormMode("edit");
     setImagePreview(blog.image);
+    setInfographicPreview(blog.infographicImage || null);
 
     // Check for saved draft for this specific blog
     const savedDraft = localStorage.getItem(`autosave_blog_${blog.id}`);
@@ -670,15 +884,22 @@ const BlogsDashboard = () => {
       description: "",
       date: new Date().toISOString().split("T")[0],
       image: "",
+      infographicImage: "",
       created: Date.now(),
       metaTitle: "",
       metaDescription: "",
       slug: "",
+      popularSearches: [],
       faqs: [],
       reviews: [],
       author: "Rahul Verma",
     });
     setImagePreview(null);
+    setInfographicPreview(null);
+    setGeneratedImageUrl(null);
+    setGeneratedInfographicUrl(null);
+    setImagePrompt("");
+    setInfographicPrompt("");
     setEditingBlogSlug(null);
     setFormMode("add");
     setShowBlogForm(false);
@@ -1242,10 +1463,149 @@ const BlogsDashboard = () => {
               </div>
             )}
 
+            {/* ═══════════════════════════════════════════════════════════════
+                MID-ARTICLE INFOGRAPHIC IMAGE SECTION
+            ═══════════════════════════════════════════════════════════════ */}
+            <div className="p-5 bg-gradient-to-br from-amber-50/60 via-white to-orange-50/40 border-2 border-amber-300/80 rounded-2xl space-y-4 shadow-xs">
+              <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-2 border-b border-amber-200/80 pb-3">
+                <div className="flex items-center gap-2">
+                  <div className="w-7 h-7 rounded-lg bg-amber-500/20 border border-amber-400/60 flex items-center justify-center text-amber-800 text-xs font-black">
+                    <FontAwesomeIcon icon={faBolt} className="text-amber-600" />
+                  </div>
+                  <div>
+                    <h4 className="text-xs font-black uppercase text-slate-900 tracking-wider">
+                      Mid-Article Key Insights & Data Infographic (Optional)
+                    </h4>
+                    <p className="text-[11px] text-slate-500">
+                      Generated or uploaded visual chart/framework embedded dynamically in the middle of the blog post.
+                    </p>
+                  </div>
+                </div>
+                {newBlog.infographicImage && (
+                  <span className="inline-flex items-center gap-1 text-[10px] font-extrabold uppercase px-2.5 py-1 bg-emerald-100 text-emerald-800 rounded-full border border-emerald-300 self-start sm:self-auto">
+                    ✓ Infographic Attached
+                  </span>
+                )}
+              </div>
+
+              {/* Infographic Manual URL or File Upload */}
+              <div className="flex flex-col gap-1.5">
+                <label className="text-[10px] font-extrabold uppercase text-slate-400 tracking-wider">Infographic Image URL / Upload</label>
+                <div className="flex gap-2">
+                  <input
+                    type="text"
+                    name="infographicImage"
+                    value={newBlog.infographicImage || ""}
+                    onChange={handleInputChange}
+                    placeholder="e.g. /api/blog/image/... or upload below"
+                    className="p-3 border border-slate-200 rounded-xl focus:border-amber-500 focus:outline-none text-xs sm:text-sm font-semibold text-slate-700 bg-white flex-1"
+                  />
+                  <input
+                    type="file"
+                    ref={infographicFileInputRef}
+                    accept="image/*"
+                    onChange={handleInfographicFileUpload}
+                    className="hidden"
+                  />
+                  <button
+                    type="button"
+                    onClick={() => infographicFileInputRef.current?.click()}
+                    className="px-4 py-3 bg-amber-100/80 hover:bg-amber-200 border border-amber-300 text-amber-900 rounded-xl text-xs font-bold transition-all flex items-center justify-center gap-1.5 cursor-pointer"
+                    title="Upload infographic file"
+                  >
+                    <FontAwesomeIcon icon={faUpload} />
+                    <span>{uploadingInfographic ? '...' : 'Upload'}</span>
+                  </button>
+                </div>
+
+                {uploadingInfographic && (
+                  <div className="w-full bg-amber-100 rounded-full h-1 mt-1">
+                    <div 
+                      className="bg-amber-500 h-1 rounded-full transition-all duration-300" 
+                      style={{ width: `${uploadProgressInfographic}%` }}
+                    ></div>
+                  </div>
+                )}
+              </div>
+
+              {/* AI Infographic Generator Prompt Input */}
+              <div className="flex flex-col gap-1.5">
+                <label className="text-[10px] font-extrabold uppercase text-slate-400 tracking-wider">AI Infographic Prompt</label>
+                <div className="flex gap-2">
+                  <input
+                    type="text"
+                    value={infographicPrompt}
+                    onChange={(e) => setInfographicPrompt(e.target.value)}
+                    className="p-3 border border-slate-200 rounded-xl focus:border-amber-500 focus:outline-none text-xs font-semibold text-slate-700 bg-white flex-1"
+                    placeholder="Describe legal process flowchart, data infographic, statutory timeline chart..."
+                  />
+                  <button
+                    type="button"
+                    onClick={handleGenerateInfographic}
+                    disabled={isGeneratingInfographic || !infographicPrompt}
+                    className="px-4 py-3 bg-gradient-to-r from-amber-600 to-yellow-600 hover:from-amber-700 hover:to-yellow-700 text-white rounded-xl text-xs font-bold disabled:opacity-50 cursor-pointer transition-all shadow-xs"
+                  >
+                    {isGeneratingInfographic ? "Generating..." : "Generate Infographic"}
+                  </button>
+                </div>
+              </div>
+
+              {/* Generated Infographic Preview & Database Save */}
+              {generatedInfographicUrl && (
+                <div className="mt-3 flex flex-col sm:flex-row items-center gap-4 p-3 bg-white border border-amber-200 rounded-xl shadow-2xs">
+                  <img 
+                    src={generatedInfographicUrl} 
+                    alt="Generated Infographic Preview" 
+                    className="w-36 h-24 object-cover rounded-lg border border-amber-200"
+                  />
+                  <div className="flex-1">
+                    <p className="text-xs text-slate-600 font-medium mb-2">
+                      Infographic rendered. Save it to MongoDB to embed inside the middle of the article.
+                    </p>
+                    <button
+                      type="button"
+                      onClick={handleUploadGeneratedInfographic}
+                      disabled={isUploadingInfographic}
+                      className="px-4 py-2 bg-amber-600 hover:bg-amber-700 text-white rounded-lg text-xs font-bold cursor-pointer transition-colors shadow-2xs"
+                    >
+                      {isUploadingInfographic ? "Saving..." : "Save Infographic to Database"}
+                    </button>
+                  </div>
+                </div>
+              )}
+
+              {/* Attached Infographic Preview Block */}
+              {(infographicPreview || newBlog.infographicImage) && (
+                <div className="p-3 bg-amber-50/50 rounded-xl border border-amber-200/70 flex flex-col items-center gap-2">
+                  <div className="flex items-center justify-between w-full">
+                    <span className="text-[10px] text-amber-900 font-bold uppercase tracking-wider">
+                      Active Mid-Article Infographic Preview
+                    </span>
+                    <button
+                      type="button"
+                      onClick={() => {
+                        setNewBlog(prev => ({ ...prev, infographicImage: "" }));
+                        setInfographicPreview(null);
+                        setGeneratedInfographicUrl(null);
+                      }}
+                      className="text-[11px] text-red-600 hover:text-red-800 font-bold cursor-pointer"
+                    >
+                      Remove
+                    </button>
+                  </div>
+                  <img
+                    src={infographicPreview || newBlog.infographicImage}
+                    alt="infographic preview"
+                    className="w-full max-w-md max-h-56 object-contain rounded-lg border border-amber-200 bg-slate-900 shadow-2xs"
+                  />
+                </div>
+              )}
+            </div>
+
             {/* Tiptap Rich Description Editor */}
             <div className="flex flex-col gap-2">
               <label className="text-xs font-extrabold uppercase text-slate-400 tracking-wider">Detailed Blog Content Body</label>
-              <div className="border border-slate-200 rounded-xl overflow-hidden bg-white">
+              <div className="border border-slate-200 rounded-2xl bg-white">
                 <TiptapEditor
                   value={newBlog.description}
                   onChange={handleEditorChange}
@@ -1283,6 +1643,76 @@ const BlogsDashboard = () => {
                     className="p-3 border border-slate-200 rounded-lg focus:border-[#DC2626] focus:outline-none text-xs font-semibold text-slate-700 bg-white"
                   />
                 </div>
+              </div>
+            </div>
+
+            {/* ═══════════════════════════════════════════════════════════════
+                POPULAR SEARCHES & RELATED KEYWORDS TAG EDITOR
+            ═══════════════════════════════════════════════════════════════ */}
+            <div className="p-5 border border-slate-150 rounded-2xl bg-slate-50/50 flex flex-col gap-4">
+              <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-2 border-b border-slate-200/80 pb-3">
+                <div className="flex items-center gap-2">
+                  <FontAwesomeIcon icon={faSearch} className="text-[#DC2626] text-xs" />
+                  <div>
+                    <h3 className="text-xs font-black text-slate-900 uppercase tracking-widest">
+                      Popular Searches & Related Keywords ({newBlog.popularSearches?.length || 0})
+                    </h3>
+                    <p className="text-[11px] text-slate-500">
+                      Non-clickable keyword pill badges rendered on the frontend blog page for SEO & topic relevance.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              {/* Tag Input Field */}
+              <div className="flex gap-2">
+                <input
+                  type="text"
+                  value={newSearchTag}
+                  onChange={(e) => setNewSearchTag(e.target.value)}
+                  onKeyDown={(e) => {
+                    if (e.key === "Enter") {
+                      e.preventDefault();
+                      handleAddSearchTag();
+                    }
+                  }}
+                  placeholder="Type a search keyword (e.g. online refund complaint) and press Enter or click Add..."
+                  className="p-3 border border-slate-200 rounded-xl focus:border-[#DC2626] focus:outline-none text-xs font-semibold text-slate-700 bg-white flex-1"
+                />
+                <button
+                  type="button"
+                  onClick={handleAddSearchTag}
+                  className="px-4 py-2 bg-slate-800 hover:bg-slate-900 text-white rounded-xl text-xs font-bold transition-colors cursor-pointer"
+                >
+                  + Add Tag
+                </button>
+              </div>
+
+              {/* Tags Cloud */}
+              <div className="flex flex-wrap gap-2 pt-1">
+                {(newBlog.popularSearches && newBlog.popularSearches.length > 0) ? (
+                  newBlog.popularSearches.map((tag, idx) => (
+                    <span
+                      key={idx}
+                      className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full text-xs font-bold bg-white text-slate-800 border border-slate-200 shadow-3xs"
+                    >
+                      <span className="text-red-600 font-extrabold">#</span>
+                      {tag.replace(/^#/, "").trim()}
+                      <button
+                        type="button"
+                        onClick={() => handleRemoveSearchTag(idx)}
+                        className="text-slate-400 hover:text-red-600 ml-1 font-black cursor-pointer text-sm leading-none"
+                        title="Remove tag"
+                      >
+                        ×
+                      </button>
+                    </span>
+                  ))
+                ) : (
+                  <p className="text-slate-400 text-xs italic">
+                    No popular searches added yet. Generated automatically when clicking &quot;Generate with AI&quot;, or type above to add.
+                  </p>
+                )}
               </div>
             </div>
 

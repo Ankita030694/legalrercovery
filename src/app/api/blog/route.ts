@@ -56,6 +56,8 @@ export async function POST(req: NextRequest) {
       faqs,
       reviewSnippets,
       content,
+      popularSearches,
+      infographicImage,
     } = body;
 
     // Validate essential fields
@@ -81,7 +83,18 @@ export async function POST(req: NextRequest) {
       );
     }
 
-    const blogDoc = {
+    let formattedInfographicImage = null;
+    if (infographicImage?.gridFsId) {
+      formattedInfographicImage = {
+        gridFsId: infographicImage.gridFsId,
+        filename: infographicImage.filename || "infographic.png",
+        contentType: infographicImage.contentType || "image/png",
+      };
+    } else if (typeof infographicImage === "string" && infographicImage.trim()) {
+      formattedInfographicImage = infographicImage;
+    }
+
+    const blogDoc: any = {
       title,
       slug: cleanSlug,
       subtitleKeywords: subtitleKeywords || "",
@@ -94,6 +107,8 @@ export async function POST(req: NextRequest) {
         filename: coverImage.filename || "image.jpg",
         contentType: coverImage.contentType || "image/jpeg",
       },
+      infographicImage: formattedInfographicImage,
+      popularSearches: Array.isArray(popularSearches) ? popularSearches : [],
       faqs: Array.isArray(faqs) ? faqs.map((f: any) => ({
         question: f.question || "",
         answer: f.answer || "",
