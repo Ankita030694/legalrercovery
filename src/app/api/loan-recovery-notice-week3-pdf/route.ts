@@ -171,26 +171,26 @@ export async function POST(request: NextRequest) {
 
     // Build header HTML for Puppeteer (injected natively on every page)
     const headerTemplate = `
-      <div style="width:100%; font-family:'Times New Roman',Times,serif; font-size:11pt; padding: 8px 22mm 0 22mm; box-sizing:border-box;">
-        ${headerLogoBase64 ? `<div style="text-align:center; margin-bottom:4px;"><img src="data:image/png;base64,${headerLogoBase64}" style="height:60px; width:auto;" /></div>` : ''}
-        <div style="text-align:center; font-size:11pt; margin-bottom:3px;"><strong>Advocate &amp; Solicitors</strong></div>
-        <div style="text-align:center; font-size:11pt; margin-bottom:2px;">2493AP, Ground floor, Sector 57, Gurugram-122003 (Haryana)</div>
-        <div style="text-align:center; font-size:11pt; margin-bottom:4px;">E: <span style="color:#0066cc; text-decoration:underline;">notice@amalegalsolutions.com</span></div>
-        <table style="width:100%; font-size:11pt; border-collapse:collapse;">
+      <div style="width:100%; font-family:'Times New Roman',Times,serif; font-size:10.5pt; padding: 6px 22mm 0 22mm; box-sizing:border-box;">
+        ${headerLogoBase64 ? `<div style="text-align:center; margin-bottom:3px;"><img src="data:image/png;base64,${headerLogoBase64}" style="height:52px; width:auto;" /></div>` : ''}
+        <div style="text-align:center; font-size:10.5pt; margin-bottom:2px;"><strong>Advocate &amp; Solicitors</strong></div>
+        <div style="text-align:center; font-size:10pt; margin-bottom:2px;">2493AP, Ground floor, Sector 57, Gurugram-122003 (Haryana)</div>
+        <div style="text-align:center; font-size:10pt; margin-bottom:3px;">E: <span style="color:#0066cc; text-decoration:underline;">notice@amalegalsolutions.com</span></div>
+        <table style="width:100%; font-size:10pt; border-collapse:collapse;">
           <tr>
             <td style="text-align:left; font-weight:bold;">Advocate Anuj Anand Malik</td>
-            <td style="text-align:right; font-weight:bold; font-size:11pt;">MEMBER - BAR COUNCIL OF DELHI</td>
+            <td style="text-align:right; font-weight:bold; font-size:10pt;">MEMBER - BAR COUNCIL OF DELHI</td>
           </tr>
           <tr>
             <td style="text-align:left; font-weight:bold;">Advocate Shrey Arora</td>
-            <td style="text-align:right; font-weight:bold; font-size:11pt;">MEMBER - MCIA (MUMBAI)</td>
+            <td style="text-align:right; font-weight:bold; font-size:10pt;">MEMBER - MCIA (MUMBAI)</td>
           </tr>
           <tr>
             <td></td>
-            <td style="text-align:right; font-weight:bold; font-size:11pt;">ASSOCIATION MEMBER - IACC</td>
+            <td style="text-align:right; font-weight:bold; font-size:10pt;">ASSOCIATION MEMBER - IACC</td>
           </tr>
         </table>
-        <div style="border-bottom:1.5px solid #000; margin-top:4px;"></div>
+        <div style="border-bottom:1.5px solid #000; margin-top:3px;"></div>
       </div>`
 
     // Build footer HTML for Puppeteer
@@ -211,7 +211,7 @@ export async function POST(request: NextRequest) {
 
     const pdf = await page.pdf({
       format: 'A4',
-      margin: { top: '58mm', right: '22mm', bottom: '22mm', left: '22mm' },
+      margin: { top: '62mm', right: '22mm', bottom: '22mm', left: '22mm' },
       printBackground: true,
       displayHeaderFooter: true,
       headerTemplate,
