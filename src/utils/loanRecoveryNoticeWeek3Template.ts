@@ -1,3 +1,5 @@
+import { getTimesFontFaceCSS, getBookmanFontFaceCSS } from './noticeFonts'
+
 export interface LoanRecoveryNoticeWeek3Data {
   clientName: string
   clientPhone: string
@@ -11,6 +13,8 @@ export interface LoanRecoveryNoticeWeek3Data {
   barStampLogoBase64?: string
   signatureBase64?: string
   bookmanFontBase64?: string
+  timesRegularBase64?: string
+  timesBoldBase64?: string
   noticeRef?: string
   complainantName?: string
   complainantAddress?: string
@@ -39,6 +43,8 @@ export function fillLoanRecoveryNoticeWeek3Template(data: LoanRecoveryNoticeWeek
     barStampLogoBase64,
     signatureBase64,
     bookmanFontBase64,
+    timesRegularBase64,
+    timesBoldBase64,
     noticeRef,
     complainantName = "ActoLoan",
     complainantAddress = "SHOP NO-4, GROUND FLOOR, EXTN-2, NEAR NEW SARASWATI PUBLIC SCHOOL NANGLOI, Nangloi, West Delhi, New Delhi, Delhi, India,110041",
@@ -48,7 +54,12 @@ export function fillLoanRecoveryNoticeWeek3Template(data: LoanRecoveryNoticeWeek
     disbursementDate,
     asOnDate,
     disbursedAmount,
+    clientAuthRepName,
+    clientAuthRepPhone,
   } = data
+
+  const repName = clientAuthRepName ? (clientAuthRepName.toLowerCase().startsWith('mr.') ? clientAuthRepName : `Mr. ${clientAuthRepName}`) : 'Mr. Raman Jhakal'
+  const repPhone = clientAuthRepPhone || '9896197115'
 
   function amountToWords(amount: string): string {
     const num = parseFloat(amount.replace(/,/g, ''))
@@ -79,12 +90,8 @@ export function fillLoanRecoveryNoticeWeek3Template(data: LoanRecoveryNoticeWeek
 <style>
   * { margin: 0; padding: 0; box-sizing: border-box; }
 
-  ${bookmanFontBase64 ? `@font-face {
-    font-family: 'BookmanStyle';
-    src: url('data:font/woff2;base64,${bookmanFontBase64}') format('woff2');
-    font-weight: normal;
-    font-style: normal;
-  }` : ''}
+  ${getTimesFontFaceCSS(timesRegularBase64, timesBoldBase64)}
+  ${getBookmanFontFaceCSS(bookmanFontBase64)}
 
   body {
     text-align: justify;
@@ -184,7 +191,7 @@ export function fillLoanRecoveryNoticeWeek3Template(data: LoanRecoveryNoticeWeek
   <p>You are hereby called upon to, within Seven (7) Days from the date of receipt of this Notice:</p>
   <ol>
     <li>Pay the entire Outstanding Amount (Including 2% Penalty) of <strong>&#8377;${formattedAmount} (Rupees ${pendingWords} Only)</strong> through a verified mode of payment acceptable to Our Client; or</li>
-    <li>Produce documentary evidence establishing any bona fide dispute regarding the Outstanding Amount on <strong>${clientEmail || 'Legal@actoloan.com'}</strong>. For an amicable solution you can also reach out to Mr. Raman Jhakal on 9896197115.</li>
+    <li>Produce documentary evidence establishing any bona fide dispute regarding the Outstanding Amount on <strong>${clientEmail || 'Legal@actoloan.com'}</strong>. For an amicable solution you can also reach out to <strong>${repName}</strong> on <strong>${repPhone}</strong>.</li>
   </ol>
 
   <p>Your failure to respond within the aforesaid period shall leave no room for any inference other than your intentional refusal to honour your legally enforceable obligations, and Our Client shall proceed against you without any further opportunity.</p>

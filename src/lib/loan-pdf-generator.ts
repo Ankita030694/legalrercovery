@@ -6,6 +6,7 @@ import { fillLoanRecoveryNoticeWeek1Template } from '@/utils/loanRecoveryNoticeW
 import { fillLoanRecoveryNoticeWeek2Template } from '@/utils/loanRecoveryNoticeWeek2Template';
 import { fillLoanRecoveryNoticeWeek3Template } from '@/utils/loanRecoveryNoticeWeek3Template';
 import { fillLoanRecoveryPoliceComplaintTemplate } from '@/utils/loanRecoveryPoliceComplaintTemplate';
+import { getNoticeFonts, getTimesFontFaceCSS } from '@/utils/noticeFonts';
 
 // Reuse the interface from pdf-generator.ts
 import { PDFGeneratorParams } from '@/lib/pdf-generator';
@@ -39,7 +40,7 @@ function formatCurrencyIndian(amount: any): string {
   let lastThree = x.substring(x.length - 3);
   const otherNumbers = x.substring(0, x.length - 3);
   if (otherNumbers !== '') lastThree = ',' + lastThree;
-  return otherNumbers.replace(/\\B(?=(\\d{2})+(?!\\d))/g, ',') + lastThree;
+  return otherNumbers.replace(/\B(?=(\d{2})+(?!\d))/g, ',') + lastThree;
 }
 
 export async function generateLoanNoticePDFBuffer(params: PDFGeneratorParams): Promise<Buffer> {
@@ -72,7 +73,9 @@ export async function generateLoanNoticePDFBuffer(params: PDFGeneratorParams): P
   let stampLogoBase64 = '';
   let barStampLogoBase64 = '';
   let signatureBase64 = '';
-  let bookmanFontBase64 = '';
+  
+  const { timesRegularBase64, timesBoldBase64, bookmanFontBase64: loadedBookman } = getNoticeFonts();
+  let bookmanFontBase64 = loadedBookman;
   
   try {
     const publicPath = path.join(process.cwd(), 'public');
@@ -98,7 +101,7 @@ export async function generateLoanNoticePDFBuffer(params: PDFGeneratorParams): P
   const noticeDate = formatDate(new Date().toISOString());
   const noticeRef = params.noticeRef || `LR-0000-0000-${step === 4 ? 'C4' : 'N' + step}`;
 
-  const isSpecialUser = params.isSpecialUser || params.clientPhone?.replace(/\\D/g, '').endsWith('8700343611') || params.clientPhone?.replace(/\\D/g, '').endsWith('8130104447');
+  const isSpecialUser = params.isSpecialUser || params.clientPhone?.replace(/\D/g, '').endsWith('8700343611') || params.clientPhone?.replace(/\D/g, '').endsWith('8130104447');
 
   const templateArgs = {
     clientName: defaulterName,
@@ -113,6 +116,8 @@ export async function generateLoanNoticePDFBuffer(params: PDFGeneratorParams): P
     barStampLogoBase64,
     signatureBase64,
     bookmanFontBase64,
+    timesRegularBase64,
+    timesBoldBase64,
     noticeRef,
     complainantName: clientName,
     complainantPhone: clientPhone || clientAuthRepPhone,
@@ -183,6 +188,9 @@ export async function generateLoanNoticePDFBuffer(params: PDFGeneratorParams): P
   await page.setContent(html, { waitUntil: 'domcontentloaded', timeout: 15000 });
 
   const headerTemplate = `
+    <style>
+      ${getTimesFontFaceCSS(timesRegularBase64, timesBoldBase64)}
+    </style>
     <div style="width:100%; font-family:'Times New Roman',Times,serif; font-size:10.5pt; padding: 6px 22mm 0 22mm; box-sizing:border-box;">
       ${headerLogoBase64 ? `<div style="text-align:center; margin-bottom:3px;"><img src="data:image/png;base64,${headerLogoBase64}" style="height:52px; width:auto;" /></div>` : ''}
       <div style="text-align:center; font-size:10.5pt; margin-bottom:2px;"><strong>Advocate &amp; Solicitors</strong></div>
@@ -206,6 +214,9 @@ export async function generateLoanNoticePDFBuffer(params: PDFGeneratorParams): P
     </div>`;
 
   const footerTemplate = `
+    <style>
+      ${getTimesFontFaceCSS(timesRegularBase64, timesBoldBase64)}
+    </style>
     <div style="width:100%; font-family:'Times New Roman',Times,serif; padding: 0 22mm 6px 22mm; box-sizing:border-box;">
       <div style="border-top:1.5px solid #000; border-bottom:1.5px solid #000; padding:4px 0;">
         <table style="width:100%; border-collapse:collapse;">

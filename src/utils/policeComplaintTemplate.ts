@@ -1,3 +1,5 @@
+import { getTimesFontFaceCSS } from './noticeFonts'
+
 export interface PoliceComplaintData {
   clientName: string      // Accused Name
   clientPhone: string     // Accused Phone
@@ -11,6 +13,8 @@ export interface PoliceComplaintData {
   headerLogoBase64?: string
   stampLogoBase64?: string
   signatureBase64?: string
+  timesRegularBase64?: string
+  timesBoldBase64?: string
   // Dynamic Complainant Details
   complainantName?: string
   complainantPhone?: string
@@ -34,6 +38,8 @@ export function fillPoliceComplaintTemplate(data: PoliceComplaintData): string {
     headerLogoBase64,
     stampLogoBase64,
     signatureBase64,
+    timesRegularBase64,
+    timesBoldBase64,
     complainantName = "Tech AMA",
     complainantPhone = "+91-XXXXXXXXXX",
     complainantEmail = "notice@amalegalsolutions.com",
@@ -72,6 +78,8 @@ export function fillPoliceComplaintTemplate(data: PoliceComplaintData): string {
 <title>SHO Police Complaint</title>
 <style>
   * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  ${getTimesFontFaceCSS(timesRegularBase64, timesBoldBase64)}
 
   body {
     text-align: justify;

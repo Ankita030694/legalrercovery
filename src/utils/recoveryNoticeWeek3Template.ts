@@ -1,3 +1,5 @@
+import { getTimesFontFaceCSS } from './noticeFonts'
+
 export interface RecoveryNoticeWeek3Data {
   clientName: string
   clientPhone: string
@@ -10,6 +12,8 @@ export interface RecoveryNoticeWeek3Data {
   stampLogoBase64?: string
   barStampLogoBase64?: string
   signatureBase64?: string
+  timesRegularBase64?: string
+  timesBoldBase64?: string
   noticeRef?: string
   complainantName?: string
   complainantAddress?: string
@@ -32,6 +36,8 @@ export function fillWeek3NoticeTemplate(data: RecoveryNoticeWeek3Data): string {
     stampLogoBase64,
     barStampLogoBase64,
     signatureBase64,
+    timesRegularBase64,
+    timesBoldBase64,
     noticeRef,
     complainantName = "Tech AMA",
     complainantAddress = "2493AP, Ground floor, Sector 57, Gurugram-122003 (Haryana)",
@@ -112,6 +118,8 @@ export function fillWeek3NoticeTemplate(data: RecoveryNoticeWeek3Data): string {
 <title>Final Legal Demand Notice – Notice 3</title>
 <style>
   * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  ${getTimesFontFaceCSS(timesRegularBase64, timesBoldBase64)}
 
   body {
     text-align: justify;

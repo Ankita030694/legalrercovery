@@ -1,3 +1,5 @@
+import { getTimesFontFaceCSS, getBookmanFontFaceCSS } from './noticeFonts'
+
 export interface LoanRecoveryPoliceComplaintData {
   clientName: string
   clientPhone: string
@@ -21,6 +23,8 @@ export interface LoanRecoveryPoliceComplaintData {
   barStampLogoBase64?: string
   signatureBase64?: string
   bookmanFontBase64?: string
+  timesRegularBase64?: string
+  timesBoldBase64?: string
   isSpecialUser?: boolean
   category?: string
   clientAuthRepName?: string
@@ -53,6 +57,8 @@ export function fillLoanRecoveryPoliceComplaintTemplate(data: LoanRecoveryPolice
     barStampLogoBase64,
     signatureBase64,
     bookmanFontBase64,
+    timesRegularBase64,
+    timesBoldBase64,
     isSpecialUser,
   } = data
 
@@ -85,13 +91,11 @@ export function fillLoanRecoveryPoliceComplaintTemplate(data: LoanRecoveryPolice
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <title>Loan Recovery Police Complaint</title>
 <style>
-  @font-face {
-    font-family: 'BookmanStyle';
-    src: url(data:font/woff2;charset=utf-8;base64,${bookmanFontBase64 || ''}) format('woff2');
-    font-weight: normal;
-    font-style: normal;
-  }
   * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  ${getTimesFontFaceCSS(timesRegularBase64, timesBoldBase64)}
+  ${getBookmanFontFaceCSS(bookmanFontBase64)}
+
   body {
     text-align: justify;
     font-family: 'Times New Roman', Times, serif;

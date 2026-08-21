@@ -2,6 +2,7 @@ import { NextRequest, NextResponse } from 'next/server'
 import puppeteer from 'puppeteer-core'
 import fs from 'fs'
 import { fillLoanRecoveryNoticeWeek1Template } from '@/utils/loanRecoveryNoticeWeek1Template'
+import { getNoticeFonts, getTimesFontFaceCSS } from '@/utils/noticeFonts'
 import { verifyAuth } from '@/lib/auth'
 import { getDbAndBucket } from '@/lib/mongodb'
 import { ObjectId } from 'mongodb'
@@ -87,11 +88,12 @@ export async function POST(request: NextRequest) {
       return NextResponse.json({ error: 'clientName, clientPhone, and amountPending are required.' }, { status: 400 })
     }
 
+    const { timesRegularBase64, timesBoldBase64, bookmanFontBase64: defaultBookman } = getNoticeFonts()
     let headerLogoBase64 = ''
     let stampLogoBase64 = ''
     let barStampLogoBase64 = ''
     let signatureBase64 = ''
-    let bookmanFontBase64 = ''
+    let bookmanFontBase64 = defaultBookman
     try {
       const headerPath = process.cwd() + '/public/notices/header logo AMA .png'
       if (fs.existsSync(headerPath)) {
@@ -130,6 +132,8 @@ export async function POST(request: NextRequest) {
       barStampLogoBase64,
       signatureBase64,
       bookmanFontBase64,
+      timesRegularBase64,
+      timesBoldBase64,
       noticeRef,
       complainantName,
       complainantAddress,
@@ -177,6 +181,9 @@ export async function POST(request: NextRequest) {
 
     // Build header HTML for Puppeteer (injected natively on every page)
     const headerTemplate = `
+      <style>
+        ${getTimesFontFaceCSS(timesRegularBase64, timesBoldBase64)}
+      </style>
       <div style="width:100%; font-family:'Times New Roman',Times,serif; font-size:10.5pt; padding: 6px 22mm 0 22mm; box-sizing:border-box;">
         ${headerLogoBase64 ? `<div style="text-align:center; margin-bottom:3px;"><img src="data:image/png;base64,${headerLogoBase64}" style="height:52px; width:auto;" /></div>` : ''}
         <div style="text-align:center; font-size:10.5pt; margin-bottom:2px;"><strong>Advocate &amp; Solicitors</strong></div>
@@ -201,6 +208,9 @@ export async function POST(request: NextRequest) {
 
     // Build footer HTML for Puppeteer
     const footerTemplate = `
+      <style>
+        ${getTimesFontFaceCSS(timesRegularBase64, timesBoldBase64)}
+      </style>
       <div style="width:100%; font-family:'Times New Roman',Times,serif; padding: 0 22mm 6px 22mm; box-sizing:border-box;">
         <div style="border-top:1.5px solid #000; border-bottom:1.5px solid #000; padding:4px 0;">
           <table style="width:100%; border-collapse:collapse;">
