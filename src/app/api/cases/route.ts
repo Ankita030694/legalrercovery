@@ -333,8 +333,8 @@ export async function POST(req: NextRequest) {
 }
 
 /**
- * PATCH /api/cases - Updates a case status (e.g. to mark as recovered/stopped).
- * Restricts updates strictly to the owning user.
+ * PATCH /api/cases - Updates a case status (e.g. to mark as recovered/stopped/paused/resumed).
+ * Restricts updates strictly to the owning user or special admin accounts.
  */
 export async function PATCH(req: NextRequest) {
   const session = await getServerSession(authOptions);
@@ -353,10 +353,27 @@ export async function PATCH(req: NextRequest) {
 
     const { db } = await getDbAndBucket("fs");
 
-    // Fetch the case to make sure it belongs to the user
+    let queryUserId: any = userId;
+    const sessionUser = await db.collection("users").findOne({ _id: userId });
+    const isSpecialAdmin = sessionUser && (
+      sessionUser.phone?.replace(/\D/g, '').endsWith('8700343611') || 
+      sessionUser.phone?.replace(/\D/g, '').endsWith('8130104447')
+    );
+
+    if (isSpecialAdmin) {
+      const admins = await db.collection("users").find({
+        phone: { $regex: /(8700343611|8130104447)$/ }
+      }).toArray();
+      const adminIds = admins.map(a => a._id);
+      if (adminIds.length > 0) {
+        queryUserId = { $in: adminIds };
+      }
+    }
+
+    // Fetch the case to make sure it belongs to the user or pooled admin
     const existingCase = await db.collection("cases").findOne({
       _id: new ObjectId(id),
-      userId: userId
+      userId: queryUserId
     });
 
     if (!existingCase) {
@@ -390,14 +407,14 @@ export async function PATCH(req: NextRequest) {
         });
       }
     } else if (status === "paused" || (status === "active" && existingCase.status === "paused")) {
-      const user = await db.collection("users").findOne({ _id: userId });
-      if (!user || (user.phone !== "8700343611" && user.phone !== "8130104447")) {
+      if (!isSpecialAdmin) {
         return NextResponse.json({ error: "Access denied. Feature restricted." }, { status: 403 });
       }
 
       if (status === "active" && existingCase.status === "paused") {
         // Resuming case: recalculate scheduledAt for future notices
         const formatDate = (d: Date) => d.toLocaleDateString("en-IN", { day: "numeric", month: "short", year: "numeric" });
+        const isLoanRecovery = existingCase.category === 'loan-recovery';
         if (existingCase.timeline) {
           let nextDate = new Date();
           updateDoc.timeline = existingCase.timeline.map((t: any) => {
@@ -408,7 +425,8 @@ export async function PATCH(req: NextRequest) {
                 scheduledAt: newScheduledAt.toISOString(),
                 date: formatDate(newScheduledAt)
               };
-              nextDate.setDate(nextDate.getDate() + 7);
+              const intervalDays = (isLoanRecovery && t.step === 2) ? 3 : (isLoanRecovery && t.step === 3) ? 4 : 7;
+              nextDate.setDate(nextDate.getDate() + intervalDays);
               return tCopy;
             }
             return t;
@@ -418,7 +436,7 @@ export async function PATCH(req: NextRequest) {
     }
 
     await db.collection("cases").updateOne(
-      { _id: new ObjectId(id), userId: userId },
+      { _id: new ObjectId(id), userId: queryUserId },
       { $set: updateDoc }
     );
 
