@@ -107,7 +107,7 @@ const guideLinks = [
 export default function Footer() {
   const pathname = usePathname();
 
-  if (pathname?.startsWith("/user") || pathname?.startsWith("/authority")) {
+  if (pathname?.startsWith("/user") || pathname?.startsWith("/authority") || pathname?.startsWith("/notice-dispatch")) {
     return null;
   }
 

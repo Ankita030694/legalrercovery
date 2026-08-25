@@ -17,7 +17,8 @@ import {
   LayoutDashboard,
   Info,
   Briefcase,
-  FlaskConical
+  FlaskConical,
+  Send
 } from "lucide-react";
 
 const navigationItems = [
@@ -68,17 +69,35 @@ export default function UserPortalLayoutClient({
   // Dynamic user details
   const [userName, setUserName] = useState(initialProfile?.name || "");
   const [userEmail, setUserEmail] = useState(initialProfile?.email || "");
+  const [userPhone, setUserPhone] = useState("");
   const [hasUnlimitedCases, setHasUnlimitedCases] = useState(initialProfile?.hasUnlimitedCases || false);
+
+  const isSpecialUser = React.useMemo(() => {
+    const clean = userPhone.replace(/\D/g, "");
+    return clean.endsWith("8700343611") || clean.endsWith("8130104447");
+  }, [userPhone]);
 
   // Onboarding tour state
   const [onboardingState, setOnboardingState] = useState<string | null>(null);
 
-  // Memoized navigation items based on advocate status
+  // Memoized navigation items based on advocate status & special user privilege
   const menuItems = React.useMemo(() => {
     const items = [...navigationItems];
+
+    if (isSpecialUser) {
+      // Insert Notice Dispatch right after Active Claims (index 1)
+      items.splice(1, 0, {
+        label: "Notice Dispatch",
+        href: "/user/notice-dispatch",
+        icon: Send,
+        mobileLabel: "Dispatch"
+      });
+    }
+
     if (hasUnlimitedCases) {
-      // Insert representations between New Recovery and How It Works
-      items.splice(2, 0, {
+      // Insert representations
+      const insertIdx = isSpecialUser ? 3 : 2;
+      items.splice(insertIdx, 0, {
         label: "Representations",
         href: "/user/representees",
         icon: Briefcase,
@@ -93,7 +112,7 @@ export default function UserPortalLayoutClient({
       });
     }
     return items;
-  }, [hasUnlimitedCases]);
+  }, [hasUnlimitedCases, isSpecialUser]);
 
   // Sync active count from database API to display in sidebar/bottombar
   useEffect(() => {
@@ -136,6 +155,7 @@ export default function UserPortalLayoutClient({
           if (resData.success && resData.profile) {
             setUserName(resData.profile.name || "Tech AMA");
             setUserEmail(resData.profile.email || "tech.ama123@gmail.com");
+            setUserPhone(resData.profile.phone || "");
             setHasUnlimitedCases(resData.profile.hasUnlimitedCases || false);
           }
         }
@@ -151,6 +171,7 @@ export default function UserPortalLayoutClient({
       if (customEvent.detail) {
         if (customEvent.detail.name) setUserName(customEvent.detail.name);
         if (customEvent.detail.email) setUserEmail(customEvent.detail.email);
+        if (customEvent.detail.phone) setUserPhone(customEvent.detail.phone);
       }
     };
 
@@ -444,6 +465,12 @@ export default function UserPortalLayoutClient({
       {/* ── MAIN WORKSPACE CONTENT CONTAINER ── */}
       {pathname === "/user/new-recovery" ? (
         children
+      ) : pathname === "/user/notice-dispatch" ? (
+        <main className="flex-1 lg:pl-[275px] pt-16 pb-16 lg:pt-0 lg:pb-0 min-h-screen flex flex-col overflow-y-auto">
+          <div className="flex-1 p-0 w-full">
+            {children}
+          </div>
+        </main>
       ) : (
         <main className="flex-1 lg:pl-[275px] pt-16 pb-16 lg:pt-0 lg:pb-0 min-h-screen flex flex-col overflow-y-auto">
           <div className="flex-1 px-4 sm:px-6 lg:px-12 py-8 lg:py-10 max-w-7xl w-full mx-auto">

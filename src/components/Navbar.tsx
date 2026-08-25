@@ -31,7 +31,7 @@ export default function Navbar() {
     });
   }, []);
 
-  if (pathname?.startsWith("/user") || pathname?.startsWith("/authority")) {
+  if (pathname?.startsWith("/user") || pathname?.startsWith("/authority") || pathname?.startsWith("/notice-dispatch")) {
     return null;
   }
 
