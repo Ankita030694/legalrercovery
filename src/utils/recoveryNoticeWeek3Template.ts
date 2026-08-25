@@ -366,7 +366,7 @@ export function fillWeek3NoticeTemplate(data: RecoveryNoticeWeek3Data): string {
 
   <!-- Subject -->
   <div class="subject-line">
-    <strong>Subject: Final Pre-Litigation and Police Complaint Notice for Recovery of ₹<strong>${amountPending}</strong> Under Applicable Provisions of Bharatiya Nyaya Sanhita (BNS)${invoiceSuffix}</strong>
+    <strong>Subject: Final Pre-Litigation and Police Complaint Notice for Recovery of Rs. <strong>${amountPending}</strong> Under Applicable Provisions of Bharatiya Nyaya Sanhita (BNS)${invoiceSuffix}</strong>
   </div>
 
   <!-- Salutation -->

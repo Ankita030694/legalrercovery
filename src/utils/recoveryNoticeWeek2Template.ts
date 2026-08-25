@@ -366,7 +366,7 @@ export function fillWeek2NoticeTemplate(data: RecoveryNoticeWeek2Data): string {
 
   <!-- Subject -->
   <div class="subject-line">
-    <strong>Subject: Demand Notice for Immediate Clearance of Outstanding Liability of ₹<strong>${amountPending}</strong> Towards <strong>${complainantName}</strong>${invoiceSuffix}</strong>
+    <strong>Subject: Demand Notice for Immediate Clearance of Outstanding Liability of Rs. <strong>${amountPending}</strong> Towards <strong>${complainantName}</strong>${invoiceSuffix}</strong>
   </div>
 
   <!-- Salutation -->
