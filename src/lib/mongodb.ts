@@ -5,7 +5,13 @@ if (!process.env.MONGODB_URI) {
 }
 
 const uri = process.env.MONGODB_URI;
-const options = {};
+// maxIdleTimeMS: 10000 ensures idle connections are closed before the serverless function freezes,
+// forcing a fresh connection on cold starts and preventing "Internal server error".
+// serverSelectionTimeoutMS: 5000 fails fast instead of hanging for 30s if a connection issue occurs.
+const options = {
+  maxIdleTimeMS: 10000,
+  serverSelectionTimeoutMS: 5000,
+};
 
 let client: MongoClient;
 let clientPromise: Promise<MongoClient>;
