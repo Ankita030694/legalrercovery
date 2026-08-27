@@ -20,7 +20,8 @@ import {
   Check,
   ChevronDown,
   Briefcase,
-  Send
+  Send,
+  Calendar
 } from "lucide-react";
 import Link from "next/link";
 import { useRouter } from "next/navigation";
@@ -82,9 +83,10 @@ export default function UserDashboard() {
   const [onboardingActive, setOnboardingActive] = useState(false);
   const [viewingCase, setViewingCase] = useState<any>(null);
 
-  // States for advocate filtering features
+  // States for advocate & special user filtering features
   const [representees, setRepresentees] = useState<any[]>([]);
   const [selectedFilterRepId, setSelectedFilterRepId] = useState("all");
+  const [selectedDateFilter, setSelectedDateFilter] = useState<string>("all");
   const [hasUnlimitedCases, setHasUnlimitedCases] = useState(false);
   const [userPhone, setUserPhone] = useState<string>("");
   const [isDispatchingBatch, setIsDispatchingBatch] = useState(false);
@@ -121,11 +123,13 @@ export default function UserDashboard() {
         const profileData = await profileRes.json();
         if (profileData.success && profileData.profile) {
           const unlimited = profileData.profile.hasUnlimitedCases || false;
+          const phone = profileData.profile.phone || "";
+          const isSpecial = phone.replace(/\D/g, '').endsWith('8700343611') || phone.replace(/\D/g, '').endsWith('8130104447');
           setHasUnlimitedCases(unlimited);
-          setUserPhone(profileData.profile.phone || "");
+          setUserPhone(phone);
           setUserProfile(profileData.profile);
           
-          if (unlimited) {
+          if (unlimited || isSpecial) {
             const repRes = await fetch("/api/representees");
             if (repRes.ok) {
               const repData = await repRes.json();
@@ -269,16 +273,75 @@ export default function UserDashboard() {
     }
   };
 
-  // Filtered cases calculation
-  const filteredCases = useMemo(() => {
+  // 1. Filter cases by representee first (used to derive available dates for that representee and for final filtering)
+  const repFilteredCases = useMemo(() => {
     if (selectedFilterRepId === "all") {
       return cases;
     }
     if (selectedFilterRepId === "self") {
       return cases.filter(c => !c.representeeId);
     }
-    return cases.filter(c => c.representeeId === selectedFilterRepId);
+    return cases.filter(c => {
+      const cRepId = c.representeeId ? (c.representeeId.toString ? c.representeeId.toString() : String(c.representeeId)) : "";
+      return cRepId === selectedFilterRepId;
+    });
   }, [cases, selectedFilterRepId]);
+
+  // 2. Extract unique creation dates from representee-filtered cases for special users
+  const availableDates = useMemo(() => {
+    const dateMap = new Map<string, { rawDate: string; formattedDate: string; count: number }>();
+    
+    repFilteredCases.forEach((c) => {
+      if (!c.createdAt) return;
+      try {
+        const d = new Date(c.createdAt);
+        if (isNaN(d.getTime())) return;
+        const dateKey = d.toISOString().split("T")[0];
+        const formatted = d.toLocaleDateString("en-IN", {
+          day: "numeric",
+          month: "short",
+          year: "numeric"
+        });
+        
+        if (dateMap.has(dateKey)) {
+          dateMap.get(dateKey)!.count += 1;
+        } else {
+          dateMap.set(dateKey, { rawDate: dateKey, formattedDate: formatted, count: 1 });
+        }
+      } catch (e) {
+        // ignore invalid dates
+      }
+    });
+
+    return Array.from(dateMap.values()).sort((a, b) => b.rawDate.localeCompare(a.rawDate));
+  }, [repFilteredCases]);
+
+  // 3. Auto-reset date filter if the currently selected date does not exist in the selected representee's dates
+  useEffect(() => {
+    if (selectedDateFilter !== "all" && !availableDates.some(d => d.rawDate === selectedDateFilter)) {
+      setSelectedDateFilter("all");
+    }
+  }, [availableDates, selectedDateFilter]);
+
+  // 4. Final Filtered cases calculation
+  const filteredCases = useMemo(() => {
+    return repFilteredCases.filter((c) => {
+      // Date Filter (Special Users)
+      if (isSpecialUser && selectedDateFilter !== "all") {
+        if (!c.createdAt) return false;
+        try {
+          const d = new Date(c.createdAt);
+          if (isNaN(d.getTime())) return false;
+          const caseDateKey = d.toISOString().split("T")[0];
+          if (caseDateKey !== selectedDateFilter) return false;
+        } catch (e) {
+          return false;
+        }
+      }
+
+      return true;
+    });
+  }, [repFilteredCases, selectedDateFilter, isSpecialUser]);
 
   // Stats Computations
   const totalStuck = useMemo(() => filteredCases.reduce((acc, c) => acc + (c.status === "active" ? c.stuckAmount : 0), 0), [filteredCases]);
@@ -468,19 +531,42 @@ export default function UserDashboard() {
         </div>
 
         {/* Filter & CTA Controls */}
-        <div className="flex flex-col sm:flex-row items-stretch sm:items-center gap-3 w-full md:w-auto">
-          {hasUnlimitedCases && (
-            <div className="relative shrink-0">
+        <div className="flex flex-wrap items-center gap-3 w-full md:w-auto">
+          {/* Representee Filter Dropdown */}
+          {(hasUnlimitedCases || isSpecialUser) && (
+            <div className="relative shrink-0 w-full sm:w-auto">
               <select
                 value={selectedFilterRepId}
-                onChange={(e) => setSelectedFilterRepId(e.target.value)}
-                className="appearance-none bg-white border border-[#E5E7EB] hover:bg-slate-50 rounded-xl px-4 py-3 pr-10 text-xs font-black text-slate-650 cursor-pointer focus:outline-none focus:border-[#DC2626] transition-all"
+                onChange={(e) => {
+                  setSelectedFilterRepId(e.target.value);
+                  setSelectedDateFilter("all");
+                }}
+                className="w-full sm:w-auto appearance-none bg-white border border-[#E5E7EB] hover:bg-slate-50 rounded-xl px-4 py-3 pr-10 text-xs font-black text-slate-700 cursor-pointer focus:outline-none focus:border-[#DC2626] transition-all shadow-sm"
               >
                 <option value="all">📁 Filter: All Representations</option>
                 <option value="self">👤 Filter: Self (Advocate)</option>
                 {representees.map(r => (
                   <option key={r.id || r._id} value={r.id || r._id}>
                     🏢 Filter: {r.name}
+                  </option>
+                ))}
+              </select>
+              <ChevronDown className="absolute right-3 top-1/2 -translate-y-1/2 w-4 h-4 text-slate-400 pointer-events-none" />
+            </div>
+          )}
+
+          {/* Date Filter Dropdown for Special Users */}
+          {isSpecialUser && (
+            <div className="relative shrink-0 w-full sm:w-auto">
+              <select
+                value={selectedDateFilter}
+                onChange={(e) => setSelectedDateFilter(e.target.value)}
+                className="w-full sm:w-auto appearance-none bg-white border border-[#E5E7EB] hover:bg-slate-50 rounded-xl px-4 py-3 pr-10 text-xs font-black text-slate-700 cursor-pointer focus:outline-none focus:border-[#DC2626] transition-all shadow-sm"
+              >
+                <option value="all">📅 Filter: All Added Dates ({repFilteredCases.length})</option>
+                {availableDates.map(d => (
+                  <option key={d.rawDate} value={d.rawDate}>
+                    📅 Added: {d.formattedDate} ({d.count} {d.count === 1 ? 'case' : 'cases'})
                   </option>
                 ))}
               </select>
@@ -518,8 +604,6 @@ export default function UserDashboard() {
                   </button>
                 </div>
               </div>
-
-
 
               <button
                 onClick={handleTriggerSpecialDispatch}
@@ -635,44 +719,63 @@ export default function UserDashboard() {
             <div className="w-16 h-16 bg-slate-50 border border-slate-100 rounded-full flex items-center justify-center mb-4">
               <FolderClosed className="w-6 h-6 text-slate-350" />
             </div>
-            <h3 className="text-sm font-black text-slate-700">No Recovery Claims Yet</h3>
-            <p className="text-xs text-slate-400 font-semibold max-w-xs mt-1.5 mb-6">Create a case, secure your payment, and configure automated legal demand letters.</p>
-            <div className="relative">
-              <Link
-                href="/user/new-recovery"
-                onClick={handleStartNewRecoveryClick}
-                className={`px-5 py-3 text-xs font-black text-white bg-[#DC2626] hover:bg-[#B91C1C] rounded-xl transition-all block
-                  ${onboardingActive ? "ring-4 ring-red-500 ring-offset-2 animate-pulse" : ""}`}
+            <h3 className="text-sm font-black text-slate-700">
+              {cases.length > 0 ? "No Cases Match Filters" : "No Recovery Claims Yet"}
+            </h3>
+            <p className="text-xs text-slate-400 font-semibold max-w-xs mt-1.5 mb-6">
+              {cases.length > 0
+                ? "No recovery claims found matching the selected organization or added date."
+                : "Create a case, secure your payment, and configure automated legal demand letters."}
+            </p>
+            {cases.length > 0 ? (
+              <button
+                type="button"
+                onClick={() => {
+                  setSelectedFilterRepId("all");
+                  setSelectedDateFilter("all");
+                }}
+                className="px-5 py-2.5 text-xs font-black text-slate-700 bg-slate-100 hover:bg-slate-200 rounded-xl transition-all cursor-pointer shadow-sm"
               >
-                Start Your First Claim
-              </Link>
+                Clear All Filters
+              </button>
+            ) : (
+              <div className="relative">
+                <Link
+                  href="/user/new-recovery"
+                  onClick={handleStartNewRecoveryClick}
+                  className={`px-5 py-3 text-xs font-black text-white bg-[#DC2626] hover:bg-[#B91C1C] rounded-xl transition-all block
+                    ${onboardingActive ? "ring-4 ring-red-500 ring-offset-2 animate-pulse" : ""}`}
+                >
+                  Start Your First Claim
+                </Link>
 
-              {/* Floating Tooltip below the empty state button */}
-              {onboardingActive && (
-                <div className="absolute top-[calc(100%+16px)] left-1/2 -translate-x-1/2 bg-slate-900 text-white rounded-2xl p-4 shadow-2xl border border-slate-700 w-72 text-left pointer-events-auto z-50 animate-in slide-in-from-top-4 duration-300">
-                  <div className="flex justify-between items-start mb-1.5">
-                    <span className="text-[10px] font-black uppercase tracking-wider text-red-400 bg-red-950/50 px-2 py-0.5 rounded select-none">Quick Guide</span>
-                    <button 
-                      onClick={(e) => {
-                        e.stopPropagation();
-                        e.preventDefault();
-                        setOnboardingActive(false);
-                        localStorage.setItem("lr_onboarding_state", "completed");
-                      }} 
-                      className="text-slate-400 hover:text-white text-xs font-bold cursor-pointer"
-                    >
-                      ✕
-                    </button>
+                {/* Floating Tooltip below the empty state button */}
+                {onboardingActive && (
+                  <div className="absolute top-[calc(100%+16px)] left-1/2 -translate-x-1/2 bg-slate-900 text-white rounded-2xl p-4 shadow-2xl border border-slate-700 w-72 text-left pointer-events-auto z-50 animate-in slide-in-from-top-4 duration-300">
+                    <div className="flex justify-between items-start mb-1.5">
+                      <span className="text-[10px] font-black uppercase tracking-wider text-red-400 bg-red-950/50 px-2 py-0.5 rounded select-none">Quick Guide</span>
+                      <button 
+                        onClick={(e) => {
+                          e.stopPropagation();
+                          e.preventDefault();
+                          setOnboardingActive(false);
+                          localStorage.setItem("lr_onboarding_state", "completed");
+                        }} 
+                        className="text-slate-400 hover:text-white text-xs font-bold cursor-pointer"
+                      >
+                        ✕
+                      </button>
+                    </div>
+                    <p className="text-xs font-semibold leading-relaxed text-slate-100">
+                      Enter the details of the entity or individual you wish to recover money from.
+                    </p>
+                    <div className="text-[9px] font-extrabold text-[#DC2626] uppercase mt-2 select-none tracking-wider text-center">
+                      Click this button to start!
+                    </div>
                   </div>
-                  <p className="text-xs font-semibold leading-relaxed text-slate-100">
-                    Enter the details of the entity or individual you wish to recover money from.
-                  </p>
-                  <div className="text-[9px] font-extrabold text-[#DC2626] uppercase mt-2 select-none tracking-wider text-center">
-                    Click this button to start!
-                  </div>
-                </div>
-              )}
-            </div>
+                )}
+              </div>
+            )}
           </div>
         ) : (
           filteredCases.map((c) => (
@@ -725,6 +828,12 @@ export default function UserDashboard() {
                     <span>📧 {c.email}</span>
                     <span>📞 {c.phone}</span>
                     <span>📍 {c.address}</span>
+                    {c.createdAt && (
+                      <span className="flex items-center gap-1 text-slate-500 font-bold">
+                        <Calendar className="w-3.5 h-3.5 text-slate-400" />
+                        Added: {new Date(c.createdAt).toLocaleDateString("en-IN", { day: "numeric", month: "short", year: "numeric" })}
+                      </span>
+                    )}
                     {c.ccEmails && <span className="text-[#DC2626]" title={c.ccEmails}>CC'd: {c.ccEmails}</span>}
                   </div>
                 </div>

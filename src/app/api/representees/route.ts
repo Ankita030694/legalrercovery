@@ -171,8 +171,24 @@ export async function PUT(req: NextRequest) {
       return NextResponse.json({ error: "State/UT is required." }, { status: 400 });
     }
 
+    let queryUserId: any = userId;
+    const sessionUser = await db.collection("users").findOne({ _id: userId });
+    if (sessionUser && (sessionUser.phone?.replace(/\D/g, '').endsWith('8700343611') || sessionUser.phone?.replace(/\D/g, '').endsWith('8130104447'))) {
+      const admins = await db.collection("users").find({
+        phone: { $regex: /(8700343611|8130104447)$/ }
+      }).toArray();
+      const adminIds = admins.map(a => a._id);
+      if (adminIds.length > 0) {
+        queryUserId = { $in: adminIds };
+      }
+    }
+
+    const userIdFilter = Array.isArray(queryUserId?.$in)
+      ? { $in: [...queryUserId.$in, ...queryUserId.$in.map((id: any) => id.toString())] }
+      : { $in: [userId, userId.toString()] };
+
     const updateResult = await db.collection("representees").updateOne(
-      { _id: new ObjectId(id), userId },
+      { _id: new ObjectId(id), userId: userIdFilter },
       {
         $set: {
           name: name.trim(),
@@ -218,9 +234,25 @@ export async function DELETE(req: NextRequest) {
       return NextResponse.json({ error: "Representation ID is required." }, { status: 400 });
     }
 
+    let queryUserId: any = userId;
+    const sessionUser = await db.collection("users").findOne({ _id: userId });
+    if (sessionUser && (sessionUser.phone?.replace(/\D/g, '').endsWith('8700343611') || sessionUser.phone?.replace(/\D/g, '').endsWith('8130104447'))) {
+      const admins = await db.collection("users").find({
+        phone: { $regex: /(8700343611|8130104447)$/ }
+      }).toArray();
+      const adminIds = admins.map(a => a._id);
+      if (adminIds.length > 0) {
+        queryUserId = { $in: adminIds };
+      }
+    }
+
+    const userIdFilter = Array.isArray(queryUserId?.$in)
+      ? { $in: [...queryUserId.$in, ...queryUserId.$in.map((id: any) => id.toString())] }
+      : { $in: [userId, userId.toString()] };
+
     const deleteResult = await db.collection("representees").deleteOne({
       _id: new ObjectId(id),
-      userId
+      userId: userIdFilter
     });
 
     if (deleteResult.deletedCount === 0) {
