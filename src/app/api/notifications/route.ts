@@ -28,13 +28,90 @@ export async function GET(req: NextRequest) {
       }
     }
 
+    const isSpecialUser = !!(sessionUser && (sessionUser.phone?.replace(/\D/g, '').endsWith('8700343611') || sessionUser.phone?.replace(/\D/g, '').endsWith('8130104447')));
+
     // Fetch notifications matching this user, sorted by date in descending order
     const notifications = await db.collection("notifications")
       .find({ userId: queryUserId })
       .sort({ date: -1 })
       .toArray();
 
-    return NextResponse.json({ success: true, notifications });
+    // Fetch linked cases to enrich metadata (e.g. Loan ID, Accused phone, email, client name)
+    const caseIds = [...new Set(notifications.map(n => n.caseId).filter(Boolean))];
+    const caseDocs = caseIds.length > 0
+      ? await db.collection("cases").find({ caseId: { $in: caseIds } }).toArray()
+      : [];
+    const caseMap = new Map(caseDocs.map(c => [c.caseId, c]));
+
+    const enrichedNotifications = notifications.map(n => {
+      const c = caseMap.get(n.caseId);
+      if (!c) return n;
+
+      const loanId = c.invoices?.[0]?.invoiceNo || c.invoiceNo || c.loanId || "";
+      const accusedName = c.defaulterName || n.caseName || "";
+      const accusedPhone = c.phone || "";
+      const accusedPhone2 = c.phone2 || "";
+      const accusedEmail = c.email || "";
+      const accusedEmail2 = c.email2 || "";
+      let clientName = c.clientName ? c.clientName.split(",")[0].trim() : "Client";
+      const clientEmail = c.clientEmail || "";
+
+      let senderRole = n.metadata?.senderRole;
+      let senderDisplayName = n.metadata?.senderDisplayName;
+
+      if (!senderRole && n.type === "email_reply") {
+        const sender = (n.metadata?.senderEmail || "").toLowerCase().trim();
+        const clientEmailLower = (clientEmail || "").toLowerCase().trim();
+        if (
+          (clientEmailLower && sender === clientEmailLower) ||
+          sender.includes("actoloan") ||
+          sender.includes("amalegalsolutions")
+        ) {
+          senderRole = "client";
+          senderDisplayName = clientName;
+        } else {
+          senderRole = "accused";
+          senderDisplayName = accusedName;
+        }
+      }
+
+      let title = n.title;
+      if (n.type === "email_reply" && senderRole === "client") {
+        if (!title.includes("(Client)") && !title.toLowerCase().includes("actoloan")) {
+          title = `Email reply from ${clientName} (Client)`;
+        }
+      }
+
+      // Clean up description if it contains leaked Zoho CSS rule
+      let description = n.description || "";
+      if (description.includes("div.zm_") || description.includes("<style")) {
+        description = description
+          .replace(/<style\b[^>]*>([\s\S]*?)<\/style>/gi, "")
+          .replace(/div\.zm_[^{\n]+\{[^}]*\}/gi, "")
+          .trim();
+      }
+
+      return {
+        ...n,
+        title,
+        description,
+        metadata: {
+          ...n.metadata,
+          loanId: n.metadata?.loanId || loanId,
+          accusedName: n.metadata?.accusedName || accusedName,
+          accusedPhone: n.metadata?.accusedPhone || accusedPhone,
+          accusedPhone2: n.metadata?.accusedPhone2 || accusedPhone2,
+          accusedEmail: n.metadata?.accusedEmail || accusedEmail,
+          accusedEmail2: n.metadata?.accusedEmail2 || accusedEmail2,
+          clientName: n.metadata?.clientName || clientName,
+          clientEmail: n.metadata?.clientEmail || clientEmail,
+          senderRole: senderRole || "accused",
+          senderDisplayName: senderDisplayName || (senderRole === "client" ? clientName : accusedName)
+        }
+      };
+    });
+
+    return NextResponse.json({ success: true, isSpecialUser, notifications: enrichedNotifications });
   } catch (error: any) {
     console.error("[Notifications API] GET Error:", error);
     return NextResponse.json({ error: error.message || "Internal Server Error" }, { status: 500 });

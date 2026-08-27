@@ -14,11 +14,16 @@ import {
   Check,
   ChevronDown,
   ChevronUp,
-  Loader2
+  Loader2,
+  User,
+  Phone,
+  Hash,
+  Building2
 } from "lucide-react";
 
 export default function NotificationsLog() {
   const [notifications, setNotifications] = useState<any[]>([]);
+  const [isSpecialUser, setIsSpecialUser] = useState<boolean>(false);
   const [loading, setLoading] = useState<boolean>(true);
   const [error, setError] = useState<string | null>(null);
   const [expandedReplyId, setExpandedReplyId] = useState<string | null>(null);
@@ -33,6 +38,9 @@ export default function NotificationsLog() {
       }
       const data = await res.json();
       setNotifications(data.notifications || []);
+      if (data.isSpecialUser !== undefined) {
+        setIsSpecialUser(!!data.isSpecialUser);
+      }
       setError(null);
     } catch (err: any) {
       console.error("Notifications fetch error:", err);
@@ -44,6 +52,19 @@ export default function NotificationsLog() {
 
   useEffect(() => {
     fetchNotifications();
+
+    // Verify special user status from profile
+    fetch("/api/users/profile")
+      .then(res => res.json())
+      .then(data => {
+        if (data.success && data.profile?.phone) {
+          const clean = data.profile.phone.replace(/\D/g, "");
+          if (clean.endsWith("8700343611") || clean.endsWith("8130104447")) {
+            setIsSpecialUser(true);
+          }
+        }
+      })
+      .catch(() => {});
   }, []);
 
   // Mark single notification as read in database
@@ -188,6 +209,13 @@ export default function NotificationsLog() {
             const isCollapsibleReply = isWhatsAppReply || isEmailReply;
             const isExpanded = expandedReplyId === n._id;
 
+            const isClientSender = n.metadata?.senderRole === "client";
+            const accusedName = n.metadata?.accusedName || n.caseName || "Borrower";
+            const clientName = n.metadata?.clientName || "Client";
+            const loanId = n.metadata?.loanId || "";
+            const accusedPhone = n.metadata?.accusedPhone || "";
+            const accusedEmail = n.metadata?.accusedEmail || "";
+
             // Formats ISO date to readable string
             const formatEventDate = (isoStr: string) => {
               try {
@@ -217,7 +245,7 @@ export default function NotificationsLog() {
                   <div className={`w-9 h-9 rounded-xl flex items-center justify-center shrink-0 border
                     ${n.type === "courier_status" ? "bg-red-50 border-red-100 text-[#DC2626]" : ""}
                     ${isWhatsAppReply ? "bg-emerald-50 border-emerald-100 text-[#10B981]" : ""}
-                    ${isEmailReply ? "bg-blue-50 border-blue-100 text-blue-600" : ""}
+                    ${isEmailReply ? (isClientSender ? "bg-purple-50 border-purple-100 text-purple-600" : "bg-blue-50 border-blue-100 text-blue-600") : ""}
                     ${n.type === "whatsapp_status" ? "bg-emerald-50 border-emerald-50 text-[#10B981]" : ""}
                     ${n.type === "email_status" ? "bg-blue-50 border-blue-50 text-blue-600" : ""}
                     ${n.type === "security" ? "bg-indigo-50 border-indigo-100 text-indigo-650" : ""}
@@ -235,11 +263,16 @@ export default function NotificationsLog() {
                   {/* Event Contents Text */}
                   <div className="flex-1 flex flex-col gap-1 overflow-hidden">
                     <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-1">
-                      <div className="flex items-center gap-2">
+                      <div className="flex items-center gap-2 flex-wrap">
                         {isUnread && (
                           <span className="w-2 h-2 rounded-full bg-indigo-600 shrink-0" title="Unread event" />
                         )}
                         <span className="text-xs font-black text-[#111827] tracking-tight">{n.title}</span>
+                        {isClientSender && (
+                          <span className="text-[9px] font-black uppercase tracking-wider bg-purple-100/80 text-purple-700 border border-purple-200 px-1.5 py-0.5 rounded">
+                            Client Response
+                          </span>
+                        )}
                       </div>
                       <span className="text-[10px] text-slate-400 font-bold sm:text-right shrink-0">
                         {formatEventDate(n.date)}
@@ -249,17 +282,62 @@ export default function NotificationsLog() {
                     <p className={`text-[11px] leading-relaxed font-semibold
                       ${isCollapsibleReply ? "text-indigo-950 font-bold" : "text-slate-500"}`}>
                       {isCollapsibleReply 
-                        ? `${n.caseName} replied directly to your notice step.`
+                        ? (isClientSender 
+                            ? `${clientName} (Client) replied regarding ${accusedName}'s legal recovery notice.`
+                            : `${accusedName} replied directly to your notice step.`)
                         : n.description}
                     </p>
 
-                    {/* Metadata Badges */}
+                    {/* Option 1: Special User Accused Details Pill Strip */}
+                    {isSpecialUser && (isEmailReply || isWhatsAppReply) && (
+                      <div className="flex flex-wrap items-center gap-2 mt-2 pt-1 select-text">
+                        {/* Accused Name Badge */}
+                        <div className="inline-flex items-center gap-1.5 bg-slate-100/90 border border-slate-200 text-slate-800 text-[10.5px] font-bold px-2.5 py-1 rounded-lg">
+                          <User className="w-3.5 h-3.5 text-slate-500 shrink-0" />
+                          <span>Accused: <span className="font-extrabold text-slate-900">{accusedName}</span></span>
+                        </div>
+
+                        {/* Loan ID Badge */}
+                        {loanId && (
+                          <div className="inline-flex items-center gap-1.5 bg-indigo-50 border border-indigo-200 text-indigo-900 text-[10.5px] font-bold px-2.5 py-1 rounded-lg">
+                            <Hash className="w-3.5 h-3.5 text-indigo-600 shrink-0" />
+                            <span>Loan ID: <span className="font-extrabold text-indigo-700 tracking-wide">{loanId}</span></span>
+                          </div>
+                        )}
+
+                        {/* Accused Phone Badge */}
+                        {accusedPhone && (
+                          <a 
+                            href={`tel:${accusedPhone}`}
+                            onClick={(e) => e.stopPropagation()}
+                            className="inline-flex items-center gap-1.5 bg-emerald-50 hover:bg-emerald-100 border border-emerald-250 text-emerald-900 text-[10.5px] font-bold px-2.5 py-1 rounded-lg transition-colors cursor-pointer"
+                            title="Call Accused Phone"
+                          >
+                            <Phone className="w-3.5 h-3.5 text-emerald-600 shrink-0" />
+                            <span>{accusedPhone}</span>
+                          </a>
+                        )}
+
+                        {/* Accused Email Badge */}
+                        {accusedEmail && (
+                          <a 
+                            href={`mailto:${accusedEmail}`}
+                            onClick={(e) => e.stopPropagation()}
+                            className="inline-flex items-center gap-1.5 bg-blue-50 hover:bg-blue-100 border border-blue-250 text-blue-900 text-[10.5px] font-bold px-2.5 py-1 rounded-lg transition-colors cursor-pointer"
+                            title="Email Accused"
+                          >
+                            <Mail className="w-3.5 h-3.5 text-blue-600 shrink-0" />
+                            <span className="truncate max-w-[220px]">{accusedEmail}</span>
+                          </a>
+                        )}
+                      </div>
+                    )}
+
+                    {/* Metadata Badges & Toggle */}
                     <div className="flex flex-wrap items-center gap-x-4 gap-y-1.5 mt-2 select-none">
                       <span className="text-[9px] font-extrabold uppercase tracking-wider bg-slate-50 border border-slate-200/80 px-2 py-0.5 rounded text-slate-500">
                         🎯 {n.caseName || "System Notification"}
                       </span>
-
-                      {/* Speed Post track link removed */}
 
                       {/* Interactive toggle for WhatsApp or Email replies */}
                       {isCollapsibleReply && (
@@ -287,15 +365,19 @@ export default function NotificationsLog() {
                   </button>
                 </div>
 
-                {/* Collapsible Chat Bubble for Accused replies */}
+                {/* Collapsible Chat Bubble for Accused/Client replies */}
                 {isCollapsibleReply && isExpanded && (
                   <div className="mt-2 pl-13 border-t border-slate-100 pt-3 animate-in slide-in-from-top-2 duration-200">
                     <div className="bg-slate-50 rounded-2xl p-4 border border-slate-200/60 flex flex-col gap-1.5 max-w-xl">
-                      <div className="flex items-center justify-between text-[9px] font-bold text-slate-400 border-b border-slate-200/50 pb-1.5 mb-1.5">
-                        <span>
-                          {isWhatsAppReply ? "💬 WHATSAPP CHAT INBOUND" : "✉️ INBOUND EMAIL RESPONSE"}
+                      <div className="flex items-center justify-between text-[9px] font-bold text-slate-500 border-b border-slate-200/50 pb-1.5 mb-1.5">
+                        <span className="flex items-center gap-1.5 font-extrabold">
+                          {isWhatsAppReply ? "💬 WHATSAPP CHAT INBOUND" : (
+                            isClientSender 
+                              ? `✉️ INBOUND EMAIL FROM CLIENT (${clientName})`
+                              : "✉️ INBOUND EMAIL RESPONSE (ACCUSED)"
+                          )}
                         </span>
-                        <span>
+                        <span className="font-mono text-slate-600">
                           {isWhatsAppReply ? n.metadata?.senderPhone : n.metadata?.senderEmail}
                         </span>
                       </div>

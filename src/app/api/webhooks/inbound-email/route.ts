@@ -1,5 +1,6 @@
 import { NextRequest, NextResponse } from "next/server";
 import { getDbAndBucket } from "@/lib/mongodb";
+import { ObjectId } from "mongodb";
 
 export const dynamic = 'force-dynamic';
 
@@ -8,7 +9,14 @@ function cleanEmailBody(body: string): string {
 
   let cleaned = body;
 
-  // 1. Truncate at common HTML thread reply markers (such as gmail_quote, blockquote, outlook style)
+  // 1. Strip script and style tags and their contents
+  cleaned = cleaned.replace(/<style\b[^>]*>([\s\S]*?)<\/style>/gi, "");
+  cleaned = cleaned.replace(/<script\b[^>]*>([\s\S]*?)<\/script>/gi, "");
+
+  // 2. Strip leftover CSS selectors / rule blocks (such as div.zm_... { ... })
+  cleaned = cleaned.replace(/div\.zm_[^{\n]+\{[^}]*\}/gi, "");
+
+  // 3. Truncate at common HTML thread reply markers (such as gmail_quote, blockquote, outlook style)
   const htmlSplitters = [
     /<div[^>]*class="[^"]*gmail_quote[^"]*"[^>]*>/i,
     /<div[^>]*class="[^"]*x_[^"]*gmail_quote[^"]*"[^>]*>/i,
@@ -24,14 +32,14 @@ function cleanEmailBody(body: string): string {
     }
   }
 
-  // 2. Convert standard spacing and layout HTML tags to plain text equivalents
+  // 4. Convert standard spacing and layout HTML tags to plain text equivalents
   cleaned = cleaned
     .replace(/<br\s*\/?>/gi, "\n")
     .replace(/<\/p\s*>/gi, "\n")
     .replace(/<\/div\s*>/gi, "\n")
     .replace(/<[^>]+>/g, ""); // Strip all remaining HTML tags
 
-  // 3. Decode common HTML entities
+  // 5. Decode common HTML entities
   const entities: { [key: string]: string } = {
     "&nbsp;": " ",
     "&amp;": "&",
@@ -43,7 +51,7 @@ function cleanEmailBody(body: string): string {
   };
   cleaned = cleaned.replace(/&[a-z0-9#]+;/gi, (match) => entities[match.toLowerCase()] || match);
 
-  // 4. Split on common plain-text threading reply headers
+  // 6. Split on common plain-text threading reply headers
   const textSplitters = [
     /-----Original Message-----/i,
     /On\s+.*\s+wrote:/i,
@@ -59,10 +67,11 @@ function cleanEmailBody(body: string): string {
     }
   }
 
-  // 5. Clean up duplicate newlines and leading/trailing whitespace
+  // 7. Clean up leftover CSS definitions and duplicate newlines
   return cleaned
     .split("\n")
     .map(line => line.trim())
+    .filter(line => !line.startsWith("div.zm_") && !line.includes("{ margin-top:"))
     .filter((line, index, arr) => line !== "" || (index > 0 && arr[index - 1] !== ""))
     .join("\n")
     .trim();
@@ -126,7 +135,7 @@ export async function POST(req: NextRequest) {
 
     let matchedCase = null;
 
-    // Step 1: Match via unique Case Reference Number in subject (E.g. Ref: LR-T001-020626 or Ref: LR-0001-1626)
+    // Step 1: Match via unique Case Reference Number in subject (E.g. Ref: LR-T001-020626 or Ref: LR-0001-1626 or LR-0098-24826)
     const refMatch = subject.match(/LR-[A-Z0-9]{4}-\d{4,6}/i);
     if (refMatch) {
       const extractedCaseId = refMatch[0].toUpperCase();
@@ -138,7 +147,11 @@ export async function POST(req: NextRequest) {
     if (!matchedCase) {
       console.log(`[Inbound Email Webhook] Reference ID not found/matched in subject. Falling back to email match: ${senderEmail}`);
       matchedCase = await db.collection("cases").findOne({
-        email: senderEmail
+        $or: [
+          { email: senderEmail },
+          { email2: senderEmail },
+          { clientEmail: senderEmail }
+        ]
       });
     }
 
@@ -160,13 +173,38 @@ export async function POST(req: NextRequest) {
       }
     }
 
+    // Determine sender role (client / representee vs accused / borrower)
+    const senderEmailLower = senderEmail.toLowerCase().trim();
+    const accusedEmailLower = (matchedCase.email || "").toLowerCase().trim();
+    const accusedEmail2Lower = (matchedCase.email2 || "").toLowerCase().trim();
+    const clientEmailLower = (matchedCase.clientEmail || "").toLowerCase().trim();
+
+    let clientShortName = matchedCase.clientName || "Client";
+    if (clientShortName.includes(",")) {
+      clientShortName = clientShortName.split(",")[0].trim();
+    }
+
+    let isClientReply = false;
+    if (
+      (clientEmailLower && senderEmailLower === clientEmailLower) ||
+      senderEmailLower.includes("actoloan") ||
+      senderEmailLower.includes("amalegalsolutions")
+    ) {
+      isClientReply = true;
+    }
+
+    const loanId = matchedCase.invoices?.[0]?.invoiceNo || matchedCase.invoiceNo || matchedCase.loanId || "";
+    const notificationTitle = isClientReply 
+      ? `Email reply from ${clientShortName} (Client)`
+      : `Email reply from ${matchedCase.defaulterName}`;
+
     // Insert new Email reply notification in DB
     const notification = {
       userId: matchedCase.userId.toString(),
       caseId: matchedCase.caseId,
       caseName: matchedCase.defaulterName,
       type: "email_reply",
-      title: `Email reply from ${matchedCase.defaulterName}`,
+      title: notificationTitle,
       description: cleanBody || body || "Empty message body",
       status: "info",
       date: new Date().toISOString(),
@@ -174,7 +212,17 @@ export async function POST(req: NextRequest) {
       metadata: {
         messageId: messageId || `zoho-${Date.now()}`,
         senderEmail: senderEmail,
-        subject: subject
+        senderRole: isClientReply ? "client" : "accused",
+        senderDisplayName: isClientReply ? clientShortName : matchedCase.defaulterName,
+        subject: subject,
+        loanId: loanId,
+        accusedName: matchedCase.defaulterName,
+        accusedPhone: matchedCase.phone || "",
+        accusedPhone2: matchedCase.phone2 || "",
+        accusedEmail: matchedCase.email || "",
+        accusedEmail2: matchedCase.email2 || "",
+        clientName: clientShortName,
+        clientEmail: matchedCase.clientEmail || ""
       }
     };
 
