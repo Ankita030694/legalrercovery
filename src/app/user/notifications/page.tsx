@@ -18,7 +18,8 @@ import {
   User,
   Phone,
   Hash,
-  Building2
+  Building2,
+  Copy
 } from "lucide-react";
 
 export default function NotificationsLog() {
@@ -27,6 +28,7 @@ export default function NotificationsLog() {
   const [loading, setLoading] = useState<boolean>(true);
   const [error, setError] = useState<string | null>(null);
   const [expandedReplyId, setExpandedReplyId] = useState<string | null>(null);
+  const [copiedId, setCopiedId] = useState<string | null>(null);
 
   // Fetch notifications from the backend MongoDB API
   const fetchNotifications = async () => {
@@ -133,6 +135,23 @@ export default function NotificationsLog() {
     } catch (err) {
       console.error("Error clearing notifications:", err);
     }
+  };
+
+  // Copy accused details in the strict order: name number loan id
+  const handleCopyAccusedDetails = (n: any, e: React.MouseEvent) => {
+    e.stopPropagation();
+    const name = (n.metadata?.accusedName || n.caseName || "").trim();
+    const phone = (n.metadata?.accusedPhone || "").trim();
+    const loanId = (n.metadata?.loanId || "").trim();
+
+    const copyText = [name, phone, loanId].filter(Boolean).join(" ");
+    if (!copyText) return;
+
+    navigator.clipboard.writeText(copyText);
+    setCopiedId(n._id);
+    setTimeout(() => {
+      setCopiedId((prev) => (prev === n._id ? null : prev));
+    }, 2000);
   };
 
   const toggleExpandReply = (id: string, e: React.MouseEvent) => {
@@ -330,6 +349,28 @@ export default function NotificationsLog() {
                             <span className="truncate max-w-[220px]">{accusedEmail}</span>
                           </a>
                         )}
+
+                        {/* Copy Accused Info Button (in order: name number loan id) */}
+                        <button
+                          onClick={(e) => handleCopyAccusedDetails(n, e)}
+                          className={`inline-flex items-center gap-1.5 px-2.5 py-1 rounded-lg text-[10.5px] font-extrabold transition-all cursor-pointer shadow-2xs border
+                            ${copiedId === n._id 
+                              ? "bg-emerald-600 border-emerald-700 text-white" 
+                              : "bg-slate-800 hover:bg-slate-900 border-slate-900 text-white active:scale-95"}`}
+                          title="Copy Accused: Name Number Loan ID"
+                        >
+                          {copiedId === n._id ? (
+                            <>
+                              <Check className="w-3.5 h-3.5 text-white shrink-0" />
+                              <span>Copied!</span>
+                            </>
+                          ) : (
+                            <>
+                              <Copy className="w-3.5 h-3.5 text-slate-300 shrink-0" />
+                              <span>Copy Info</span>
+                            </>
+                          )}
+                        </button>
                       </div>
                     )}
 
@@ -355,14 +396,28 @@ export default function NotificationsLog() {
                     </div>
                   </div>
 
-                  {/* Individual Delete Button */}
-                  <button 
-                    onClick={(e) => handleDeleteNotification(n._id, e)}
-                    className="p-1.5 text-slate-400 hover:text-red-500 rounded-lg hover:bg-slate-50 transition-all shrink-0 cursor-pointer self-start"
-                    title="Delete entry from logs"
-                  >
-                    <Trash2 className="w-3.5 h-3.5" />
-                  </button>
+                  {/* Top-Right Action Buttons */}
+                  <div className="flex items-center gap-1 shrink-0 self-start">
+                    <button 
+                      onClick={(e) => handleCopyAccusedDetails(n, e)}
+                      className="p-1.5 text-slate-400 hover:text-indigo-600 rounded-lg hover:bg-slate-100 transition-all cursor-pointer"
+                      title="Copy Accused: Name Number Loan ID"
+                    >
+                      {copiedId === n._id ? (
+                        <Check className="w-3.5 h-3.5 text-emerald-600" />
+                      ) : (
+                        <Copy className="w-3.5 h-3.5" />
+                      )}
+                    </button>
+
+                    <button 
+                      onClick={(e) => handleDeleteNotification(n._id, e)}
+                      className="p-1.5 text-slate-400 hover:text-red-500 rounded-lg hover:bg-slate-50 transition-all shrink-0 cursor-pointer"
+                      title="Delete entry from logs"
+                    >
+                      <Trash2 className="w-3.5 h-3.5" />
+                    </button>
+                  </div>
                 </div>
 
                 {/* Collapsible Chat Bubble for Accused/Client replies */}
