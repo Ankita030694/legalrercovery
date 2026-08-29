@@ -713,6 +713,11 @@ export default function SendALegalNoticeClient() {
                     </Link>
                   </li>
                   <li>
+                    <Link href="/send-a-legal-notice/swiggy-refund-not-recieved" className="text-xs font-medium text-slate-650 hover:text-[#DC2626] transition-colors flex items-center">
+                      <span className="mr-2 text-slate-300">→</span> Swiggy Refund Not Received
+                    </Link>
+                  </li>
+                  <li>
                     <Link href="/send-a-legal-notice/unfair-trade-practice-complaint" className="text-xs font-medium text-slate-650 hover:text-[#DC2626] transition-colors flex items-center">
                       <span className="mr-2 text-slate-300">→</span> Unfair Trade Practice Complaint
                     </Link>
@@ -720,6 +725,41 @@ export default function SendALegalNoticeClient() {
                   <li>
                     <Link href="/send-a-legal-notice/wrong-product-delivered" className="text-xs font-medium text-slate-650 hover:text-[#DC2626] transition-colors flex items-center">
                       <span className="mr-2 text-slate-300">→</span> Wrong Product Delivered
+                    </Link>
+                  </li>
+                  <li>
+                    <Link href="/send-a-legal-notice/zomato-refund-not-recieved" className="text-xs font-medium text-slate-650 hover:text-[#DC2626] transition-colors flex items-center">
+                      <span className="mr-2 text-slate-300">→</span> Zomato Refund Not Received
+                    </Link>
+                  </li>
+                  <li>
+                    <Link href="/send-a-legal-notice/pharmacy-invoice-not-cleared" className="text-xs font-medium text-slate-650 hover:text-[#DC2626] transition-colors flex items-center">
+                      <span className="mr-2 text-slate-300">→</span> Pharmacy Invoice Not Cleared
+                    </Link>
+                  </li>
+                  <li>
+                    <Link href="/send-a-legal-notice/b2b-invoice-not-recieved" className="text-xs font-medium text-slate-650 hover:text-[#DC2626] transition-colors flex items-center">
+                      <span className="mr-2 text-slate-300">→</span> B2B Invoice Not Received
+                    </Link>
+                  </li>
+                  <li>
+                    <Link href="/send-a-legal-notice/for-nbfc-to-recover-their-unpaid-dues" className="text-xs font-medium text-slate-650 hover:text-[#DC2626] transition-colors flex items-center">
+                      <span className="mr-2 text-slate-300">→</span> Legal Notice for NBFC Recovery
+                    </Link>
+                  </li>
+                  <li>
+                    <Link href="/send-a-legal-notice/for-banks-to-recover-their-unpaid-dues" className="text-xs font-medium text-slate-650 hover:text-[#DC2626] transition-colors flex items-center">
+                      <span className="mr-2 text-slate-300">→</span> Legal Notice for Bank Recovery of Unpaid Dues
+                    </Link>
+                  </li>
+                  <li>
+                    <Link href="/send-a-legal-notice/for-business-to-recover-their-unpaid-dues" className="text-xs font-medium text-slate-650 hover:text-[#DC2626] transition-colors flex items-center">
+                      <span className="mr-2 text-slate-300">→</span> Legal Notice for Business Recovery of Unpaid Dues
+                    </Link>
+                  </li>
+                  <li>
+                    <Link href="/send-a-legal-notice/security-deposit-not-refunded-landlord" className="text-xs font-medium text-slate-650 hover:text-[#DC2626] transition-colors flex items-center">
+                      <span className="mr-2 text-slate-300">→</span> Security Deposit Not Refunded by Landlord
                     </Link>
                   </li>
                 </ul>

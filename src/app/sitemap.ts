@@ -167,6 +167,14 @@ const STATIC_ROUTES: {
   { path: "/send-a-legal-notice/company-refusing-refund", changeFrequency: "weekly", priority: 0.85 },
   { path: "/send-a-legal-notice/online-refund-not-received", changeFrequency: "weekly", priority: 0.85 },
   { path: "/send-a-legal-notice/defective-product-refund", changeFrequency: "weekly", priority: 0.85 },
+  { path: "/send-a-legal-notice/swiggy-refund-not-recieved", changeFrequency: "weekly", priority: 0.85 },
+  { path: "/send-a-legal-notice/zomato-refund-not-recieved", changeFrequency: "weekly", priority: 0.85 },
+  { path: "/send-a-legal-notice/pharmacy-invoice-not-cleared", changeFrequency: "weekly", priority: 0.85 },
+  { path: "/send-a-legal-notice/b2b-invoice-not-recieved", changeFrequency: "weekly", priority: 0.85 },
+  { path: "/send-a-legal-notice/for-nbfc-to-recover-their-unpaid-dues", changeFrequency: "weekly", priority: 0.85 },
+  { path: "/send-a-legal-notice/for-banks-to-recover-their-unpaid-dues", changeFrequency: "weekly", priority: 0.85 },
+  { path: "/send-a-legal-notice/for-business-to-recover-their-unpaid-dues", changeFrequency: "weekly", priority: 0.85 },
+  { path: "/send-a-legal-notice/security-deposit-not-refunded-landlord", changeFrequency: "weekly", priority: 0.85 },
 ];
 
 async function getBlogEntries(): Promise<MetadataRoute.Sitemap> {
