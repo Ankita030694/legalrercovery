@@ -1,45 +1,61 @@
 import { MongoClient, GridFSBucket } from "mongodb";
+import dns from "dns";
+
+// Ensure resilient DNS resolution for MongoDB Atlas SRV/shard hostnames across local/ISP resolvers
+try {
+  dns.setServers(["8.8.8.8", "1.1.1.1", "8.8.4.4"]);
+} catch (e) {
+  // Ignore in environments where setting DNS servers is restricted
+}
 
 if (!process.env.MONGODB_URI) {
   throw new Error('Invalid/Missing environment variable: "MONGODB_URI"');
 }
 
 const uri = process.env.MONGODB_URI;
-// maxIdleTimeMS: 10000 ensures idle connections are closed before the serverless function freezes,
-// forcing a fresh connection on cold starts and preventing "Internal server error".
-// serverSelectionTimeoutMS: 5000 fails fast instead of hanging for 30s if a connection issue occurs.
+
+// Options tuned for resilient cloud & serverless operations
 const options = {
-  maxIdleTimeMS: 10000,
-  serverSelectionTimeoutMS: 5000,
+  serverSelectionTimeoutMS: 15000, // 15 seconds to gracefully handle cold starts & multi-shard handshakes
+  connectTimeoutMS: 15000,
+  socketTimeoutMS: 45000,
+  maxPoolSize: 10,
+  minPoolSize: 0,
+  retryWrites: true,
+  retryReads: true,
 };
 
-let client: MongoClient;
-let clientPromise: Promise<MongoClient>;
+let globalWithMongo = global as typeof globalThis & {
+  _mongoClientPromise?: Promise<MongoClient> | null;
+};
 
-if (process.env.NODE_ENV === "development") {
-  // In development mode, use a global variable so that the value
-  // is preserved across hot reloads to prevent saturating database connections.
-  let globalWithMongo = global as typeof globalThis & {
-    _mongoClientPromise?: Promise<MongoClient>;
-  };
-
+export async function getMongoClient(): Promise<MongoClient> {
   if (!globalWithMongo._mongoClientPromise) {
-    client = new MongoClient(uri, options);
-    globalWithMongo._mongoClientPromise = client.connect();
+    const client = new MongoClient(uri, options);
+    globalWithMongo._mongoClientPromise = client
+      .connect()
+      .catch((err) => {
+        // Clear cached promise on failure so next request doesn't stay permanently rejected
+        globalWithMongo._mongoClientPromise = null;
+        console.error("[MongoDB] Connection error, resetting connection pool cache:", err);
+        throw err;
+      });
   }
-  clientPromise = globalWithMongo._mongoClientPromise;
-} else {
-  // In production mode, it's best to not use a global variable.
-  client = new MongoClient(uri, options);
-  clientPromise = client.connect();
+
+  try {
+    return await globalWithMongo._mongoClientPromise;
+  } catch (err) {
+    globalWithMongo._mongoClientPromise = null;
+    throw err;
+  }
 }
 
-// Helper function to get database and gridfs bucket
+// Helper function to get database and gridfs bucket with automatic self-healing
 export async function getDbAndBucket(bucketName: string = "fs") {
-  const client = await clientPromise;
+  const client = await getMongoClient();
   const db = client.db();
   const bucket = new GridFSBucket(db, { bucketName });
   return { db, bucket };
 }
 
-export default clientPromise;
+export default getMongoClient();

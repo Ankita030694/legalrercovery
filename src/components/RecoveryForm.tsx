@@ -43,7 +43,9 @@ export const RecoveryForm = () => {
   };
 
   const handlePhoneChange = (e: React.ChangeEvent<HTMLInputElement>) => {
-    const filteredValue = e.target.value.replace(/\D/g, "").slice(0, 10);
+    const raw = e.target.value.replace(/\D/g, "");
+    const maxDigits = raw.startsWith("0") ? 11 : 10;
+    const filteredValue = raw.slice(0, maxDigits);
     setPhone(filteredValue);
   };
 
@@ -54,6 +56,9 @@ export const RecoveryForm = () => {
   }, [email]);
 
   const isPhoneValid = useMemo(() => {
+    if (phone.startsWith("0")) {
+      return phone.length === 11;
+    }
     return phone.length === 10;
   }, [phone]);
 
@@ -247,7 +252,7 @@ export const RecoveryForm = () => {
                 required
                 value={phone}
                 onChange={handlePhoneChange}
-                placeholder="10-digit mobile number"
+                placeholder={phone.startsWith("0") ? "11-digit mobile number (e.g. 098...)" : "10-digit mobile number"}
                 className={`w-full bg-[#F9FAFB] border ${formTouched && !isPhoneValid ? "border-[#DC2626] focus:ring-[#DC2626]/20" : "border-[#E5E7EB] focus:ring-[#DC2626]/10"} rounded-xl px-4 py-3 text-sm text-[#111827] focus:outline-none focus:ring-4 transition-all font-semibold`}
               />
             </div>

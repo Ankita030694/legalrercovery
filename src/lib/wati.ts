@@ -14,6 +14,9 @@ export async function sendWatiOtp(phone: string, otp: string): Promise<boolean> 
 
   // Format phone number to international format (Indian code 91)
   let formattedPhone = phone.trim().replace(/\D/g, "");
+  if (formattedPhone.startsWith("0") && formattedPhone.length === 11) {
+    formattedPhone = formattedPhone.slice(1);
+  }
   if (formattedPhone.length === 10) {
     formattedPhone = `91${formattedPhone}`;
   }
@@ -91,6 +94,9 @@ export async function sendWatiPaymentSuccess(
 
   // Format phone number to international format (Indian code 91)
   let formattedPhone = phone.trim().replace(/\D/g, "");
+  if (formattedPhone.startsWith("0") && formattedPhone.length === 11) {
+    formattedPhone = formattedPhone.slice(1);
+  }
   if (formattedPhone.length === 10) {
     formattedPhone = `91${formattedPhone}`;
   }
@@ -167,6 +173,9 @@ export async function sendNoticeWati(
 
   // Format phone number to international format (Indian code 91)
   let formattedPhone = phone.trim().replace(/\D/g, "");
+  if (formattedPhone.startsWith("0") && formattedPhone.length === 11) {
+    formattedPhone = formattedPhone.slice(1);
+  }
   if (formattedPhone.length === 10) {
     formattedPhone = `91${formattedPhone}`;
   }
@@ -254,6 +263,9 @@ export async function sendWatiClientNoticeNotification(
   }
 
   let formattedPhone = phone.trim().replace(/\D/g, "");
+  if (formattedPhone.startsWith("0") && formattedPhone.length === 11) {
+    formattedPhone = formattedPhone.slice(1);
+  }
   if (formattedPhone.length === 10) {
     formattedPhone = `91${formattedPhone}`;
   }
@@ -318,6 +330,9 @@ export async function sendPoliceComplaintWati(
 
   // Format phone number to international format (Indian code 91)
   let formattedPhone = phone.trim().replace(/\D/g, "");
+  if (formattedPhone.startsWith("0") && formattedPhone.length === 11) {
+    formattedPhone = formattedPhone.slice(1);
+  }
   if (formattedPhone.length === 10) {
     formattedPhone = `91${formattedPhone}`;
   }

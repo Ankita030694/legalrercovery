@@ -55,7 +55,10 @@ export async function POST(req: NextRequest) {
     const productinfo = "Paid With ButtonId 111293057";
     const firstname = name.trim().replace(/[^a-zA-Z0-9\s]/g, ""); // Alpha-numeric + spaces only
     const sanitizedEmail = email.trim().toLowerCase();
-    const sanitizedPhone = phone.trim().replace(/\D/g, "");
+    let sanitizedPhone = phone.trim().replace(/\D/g, "");
+    if (sanitizedPhone.startsWith("0") && sanitizedPhone.length === 11) {
+      sanitizedPhone = sanitizedPhone.slice(1);
+    }
     const udf1 = paymentPendingId; // Securely pass the database _id
 
     // Use .join("|") to compute the standard SHA-512 PayU request signature hash safely

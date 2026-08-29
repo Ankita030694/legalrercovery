@@ -18,10 +18,10 @@ export async function POST(req: NextRequest) {
       return NextResponse.json({ error: "Invalid email format" }, { status: 400 });
     }
 
-    // Validate phone number format (10 digits)
-    const phoneRegex = /^\d{10}$/;
+    // Validate phone number format (11 digits if starting with 0, otherwise 10 digits)
+    const phoneRegex = /^(0\d{10}|[1-9]\d{9})$/;
     if (!phoneRegex.test(phone)) {
-      return NextResponse.json({ error: "Phone number must be exactly 10 digits" }, { status: 400 });
+      return NextResponse.json({ error: "Phone number must be 10 digits (or 11 digits if starting with 0)" }, { status: 400 });
     }
 
     const { db } = await getDbAndBucket("fs");
