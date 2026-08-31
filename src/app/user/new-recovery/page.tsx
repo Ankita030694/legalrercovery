@@ -1897,291 +1897,300 @@ export default function NewRecoveryForm() {
             </div>
 
             {/* ── DYNAMIC PREVIEW PANES ── */}
-            <div className="w-full flex flex-col gap-4">
-            
-            {/* Notice 1 */}
-            {previewTab === "notice1" && (
-              <div className="flex-1 flex flex-col gap-4">
-                <div className="text-center font-bold text-slate-900 border-y border-[#E5E7EB] py-1.5 tracking-wide text-xs uppercase leading-tight">
-                  LEGAL DEMAND NOTICE
+            {(() => {
+              const clientDisplayAddress = clientProfile?.address?.trim()
+                ? clientProfile.address.trim()
+                : (clientProfile?.state?.trim() ? `${clientProfile.state.trim()}, India` : "India");
+              const clientDisplayName = clientProfile?.name?.trim() || "Tech AMA";
+
+              return (
+                <div className="w-full flex flex-col gap-4">
+                
+                {/* Notice 1 */}
+                {previewTab === "notice1" && (
+                  <div className="flex-1 flex flex-col gap-4">
+                    <div className="text-center font-bold text-slate-900 border-y border-[#E5E7EB] py-1.5 tracking-wide text-xs uppercase leading-tight">
+                      LEGAL DEMAND NOTICE
+                    </div>
+
+                    <div className="text-[9.5px] leading-relaxed text-slate-700 flex flex-col gap-3 select-text">
+                      <div className="font-bold text-slate-600 flex flex-col gap-0.5">
+                        <span>Date: {new Date().toLocaleDateString("en-IN")}</span>
+                        <span className="mt-1">To,</span>
+                        <span className="font-extrabold text-slate-900 bg-yellow-50 px-1 border border-yellow-100 rounded w-fit leading-tight mt-0.5">
+                          {defaulterName || "[Name of Opposite Party / Individual / Company]"}
+                        </span>
+                        {phone && <span className="text-slate-550 text-[8.5px]">Mobile: {phone}{phone2 ? `, ${phone2}` : ""}</span>}
+                        {email && <span className="text-slate-550 text-[8.5px]">Email: {email}{email2 ? `, ${email2}` : ""}</span>}
+                        <span className="mt-0.5 bg-yellow-50 px-1 border border-yellow-100 rounded text-slate-800 font-bold max-w-[280px]">
+                          {address || "[Address]"}
+                        </span>
+                      </div>
+
+                      <div className="text-xs font-bold text-slate-900 border-b border-[#E5E7EB] pb-1 uppercase leading-tight">
+                        Subject: Demand Notice for Immediate Clearance of Outstanding Liability of ₹<strong>{stuckAmount || "[Amount]"}</strong> Towards <strong>{clientDisplayName}</strong>
+                      </div>
+
+                      <p>Dear Sir/Madam,</p>
+                      
+                      <p>
+                        Under instructions from and on behalf of our client <strong>{clientDisplayName}</strong>, residing at <strong className="bg-yellow-50 px-0.5">{clientDisplayAddress}</strong>, we hereby call upon you to address and resolve the pending amount/claim arising out of dealings, transactions, services, agreements, commitments, or obligations between you and our client.
+                      </p>
+                      
+                      <p>
+                        It has been informed to us that despite repeated requests, reminders, and communications made by our client, the matter remains unresolved and an amount of <strong className="bg-yellow-50 px-0.5">₹{stuckAmount || "[Amount]"}</strong> is still due/pending towards our client.
+                      </p>
+                      
+                      <p>
+                        Our client has acted in good faith and fulfilled their part of obligations; however, the pending dues/claim have not been settled by you till date.
+                      </p>
+                      
+                      <div className="flex flex-col gap-1">
+                        <span>You are therefore hereby requested to:</span>
+                        <span>1. Clear/pay the outstanding amount of <strong className="bg-yellow-50 px-0.5">₹{stuckAmount || "[Amount]"}</strong>; and/or</span>
+                        <span>2. Resolve the matter amicably within 7 (Seven) days from the receipt of this notice.</span>
+                      </div>
+                      
+                      <p>
+                        In the event that you dispute the claim or amount, you are requested to provide your written response along with supporting documents within the aforesaid period for appropriate consideration.
+                      </p>
+                      
+                      <p>
+                        Please take notice that failure to respond or resolve the matter within the stipulated time may compel our client to initiate appropriate legal proceedings and remedies available under applicable laws, entirely at your own risk as to costs and consequences.
+                      </p>
+                      
+                      <p>
+                        This notice is being issued without prejudice to all rights, claims, remedies, and legal actions available to our client under law.
+                      </p>
+                      
+                      <p>
+                        A copy of this Notice has been preserved in our office for record and future course of action. You are hereby advised to preserve a copy of this notice, as the same may be required to be produced before the appropriate Court of Law and/or competent authority as and when required.
+                      </p>
+
+                      <div className="mt-2 flex flex-col gap-0.5 text-left text-[8.5px] font-bold text-slate-500">
+                        <span>For and on behalf of <strong>{clientDisplayName}</strong></span>
+                        <span className="text-slate-900 font-extrabold uppercase mt-1">Kindly treat this matter as urgent.</span>
+                      </div>
+                    </div>
+                  </div>
+                )}
+
+                {/* Notice 2 */}
+                {previewTab === "notice2" && (
+                  <div className="flex-1 flex flex-col gap-4">
+                    <div className="text-[9.5px] leading-relaxed text-slate-600 flex flex-col">
+                      <span className="text-[8px] text-slate-450 font-bold uppercase tracking-wider mb-0.5">TO DEFAULTER:</span>
+                      <span className="font-extrabold text-slate-800 bg-yellow-50 px-1 border border-yellow-100 rounded w-fit leading-tight mt-0.5">
+                        {defaulterName || "[DEFAULTER LEGAL NAME]"}
+                      </span>
+                      <span>Constitution: <strong>{entityType}</strong></span>
+                      {phone && <span>Mobile: <strong>{phone}{phone2 ? `, ${phone2}` : ""}</strong></span>}
+                      {email && <span>Email: <strong>{email}{email2 ? `, ${email2}` : ""}</strong></span>}
+                      <span className="mt-0.5 bg-yellow-50 px-1 border border-yellow-100 rounded text-slate-800 font-bold max-w-[280px]">
+                        {address || "[PHYSICAL STREET ADDRESS]"}
+                      </span>
+                    </div>
+
+                    <div className="text-xs font-bold text-center text-slate-900 border-y border-[#E5E7EB] py-1.5 uppercase leading-tight">
+                      Subject: Demand Notice for Immediate Clearance of Outstanding Liability of ₹<strong>{stuckAmount || "[Amount]"}</strong> Towards <strong>{clientDisplayName}</strong>
+                    </div>
+
+                    <div className="text-[9.5px] leading-relaxed text-slate-700 flex flex-col gap-3 select-text">
+                      <p>Dear Sir/Madam,</p>
+                      <p>
+                        Under instructions and authority from our client <strong>{clientDisplayName}</strong>, residing/having office at <strong className="bg-yellow-50 px-0.5">{clientDisplayAddress}</strong>, we hereby issue the present Second and Final Legal Notice calling upon you to immediately clear the outstanding dues/claim amounting to <strong className="bg-yellow-50 px-0.5">₹{stuckAmount || "[Amount]"}</strong> payable towards our client arising out of transactions, services, agreements, commitments, business dealings, or financial obligations undertaken by you.
+                      </p>
+                      <p>
+                        Despite repeated reminders, communications, and an earlier legal notice served upon you, you have failed to regularize the matter or provide any satisfactory response. Your conduct clearly reflects deliberate negligence, avoidance, and non-compliance towards lawful obligations owed to our client.
+                      </p>
+                      <p>
+                        It is pertinent to mention that if any person dishonestly retains money, intentionally avoids payment despite liability, induces another party under false assurances, or causes wrongful financial loss, such actions may attract legal consequences under applicable provisions of the <strong>Bharatiya Nyaya Sanhita, 2023</strong>, including but not limited to provisions relating to:
+                      </p>
+                      <div className="flex flex-col gap-1 pl-4">
+                        <span>1. Cheating and dishonest inducement;</span>
+                        <span>2. Criminal breach of trust;</span>
+                        <span>3. Fraudulent or dishonest conduct causing wrongful loss.</span>
+                      </div>
+                      <p>
+                        Our client still wishes to provide you with a final opportunity to amicably resolve the matter without initiating formal legal proceedings.
+                      </p>
+                      <p>You are therefore finally called upon to:</p>
+                      <div className="flex flex-col gap-1 pl-4">
+                        <span>1. Make payment of the outstanding amount of <strong className="bg-yellow-50 px-0.5">₹{stuckAmount || "[Amount]"}</strong> within 7 (Seven) days from receipt of this notice; OR</span>
+                        <span>2. Provide a written explanation along with documentary proof disputing the claim within the aforesaid period.</span>
+                      </div>
+                      <p>
+                        Kindly take notice that upon failure to comply, our client shall be constrained to initiate appropriate civil and/or criminal proceedings before the competent authorities/courts/forum, including filing complaints before the appropriate police authorities and legal forums, entirely at your own risk as to costs, liabilities, and consequences.
+                      </p>
+                      <p>
+                        Please further note that any continued avoidance, non-response, or intentional withholding of payment may be relied upon as adverse conduct in future legal proceedings.
+                      </p>
+                      <p>
+                        This notice is issued without prejudice to all legal rights and remedies available to our client under applicable law.
+                      </p>
+                      <p>
+                        A copy of this Notice has been preserved in our office for record and future course of action. You are hereby advised to preserve a copy of this notice, as the same may be required to be produced before the appropriate Court of Law and/or competent authority as and when required.
+                      </p>
+                    </div>
+                  </div>
+                )}
+
+                {/* Notice 3 */}
+                {previewTab === "notice3" && (
+                  <div className="flex-1 flex flex-col gap-4">
+                    <div className="text-[9.5px] leading-relaxed text-slate-650 flex flex-col">
+                      <span className="text-[8px] text-slate-400 font-bold uppercase tracking-wider mb-0.5">TO DEFAULTER:</span>
+                      <span className="font-extrabold text-slate-800 bg-yellow-50 px-1 border border-yellow-100 rounded w-fit leading-tight mt-0.5">
+                        {defaulterName || "[DEFAULTER LEGAL NAME]"}
+                      </span>
+                      <span>Constitution: <strong>{entityType}</strong></span>
+                      {phone && <span>Mobile: <strong>{phone}{phone2 ? `, ${phone2}` : ""}</strong></span>}
+                      {email && <span>Email: <strong>{email}{email2 ? `, ${email2}` : ""}</strong></span>}
+                      <span className="mt-0.5 bg-yellow-50 px-1 border border-yellow-100 rounded text-slate-800 font-bold max-w-[280px]">
+                        {address || "[PHYSICAL STREET ADDRESS]"}
+                      </span>
+                    </div>
+
+                    <div className="text-xs font-bold text-center text-slate-900 border-y border-[#E5E7EB] py-1.5 uppercase leading-tight">
+                      Subject: Final Pre-Litigation and Police Complaint Notice for Recovery of ₹<strong>{stuckAmount || "[Amount]"}</strong> Under Applicable Provisions of Bharatiya Nyaya Sanhita (BNS) Towards <strong>{clientDisplayName}</strong>
+                    </div>
+
+                    <div className="text-[9.5px] leading-relaxed text-slate-700 flex flex-col gap-3 select-text">
+                      <p>Dear Sir/Madam,</p>
+                      <p>
+                        Under instructions from and on behalf of my client <strong>{clientDisplayName}</strong>, residing/having office at <strong className="bg-yellow-50 px-0.5">{clientDisplayAddress}</strong>, I hereby issue the present Final Legal Notice against you with respect to the outstanding amount/claim of <strong className="bg-yellow-50 px-0.5">INR {stuckAmount || "[Amount]"}/-</strong> arising out of dealings, transactions, services, agreements, commitments, or obligations between you and our client.
+                      </p>
+                      <p>
+                        It is pertinent to note that despite repeated reminders, follow-ups, and opportunities extended to you for amicable resolution, you have deliberately failed and neglected to clear the outstanding liability and/or honour your commitments. Your conduct has caused substantial financial loss, harassment, mental agony, and inconvenience to my client.
+                      </p>
+                      <p>Your actions prima facie disclose elements of:</p>
+                      <div className="flex flex-col gap-0.5 pl-3 text-slate-700 font-semibold">
+                        <span>- dishonest intention,</span>
+                        <span>- wrongful withholding of money/property,</span>
+                        <span>- misrepresentation,</span>
+                        <span>- criminal breach of trust,</span>
+                        <span>- cheating, and</span>
+                        <span>- intentional non-compliance despite repeated demands.</span>
+                      </div>
+                      <p>
+                        Accordingly, your acts may attract penal consequences under the relevant provisions of the <strong>Bharatiya Nyaya Sanhita, 2023</strong> including but not limited to:
+                      </p>
+                      <div className="flex flex-col gap-0.5 pl-3 text-slate-700 font-semibold">
+                        <span>- <strong>Section 316 BNS</strong> – Criminal Breach of Trust</span>
+                        <span>- <strong>Section 318 BNS</strong> – Cheating</span>
+                        <span>- <strong>Section 351 BNS</strong> – Criminal Intimidation (where applicable)</span>
+                        <span>- Any other applicable civil and criminal provisions based upon the facts and documents available on record.</span>
+                      </div>
+                      <p>You are therefore called upon for the <strong>FINAL</strong> time to:</p>
+                      <div className="flex flex-col gap-0.5 pl-3 text-slate-700 font-semibold">
+                        <span>1. Clear/pay the outstanding amount of <strong className="bg-yellow-50 px-0.5">INR {stuckAmount || "[Amount]"}/-</strong>;</span>
+                        <span>2. Provide written confirmation of settlement; and</span>
+                        <span>3. Resolve the matter within <strong>72 HOURS</strong> from receipt of this notice.</span>
+                      </div>
+                      <p>
+                        Please take notice that in the event of your failure to comply within the aforesaid period, my client shall be constrained to initiate appropriate legal proceedings against you, including but not limited to:
+                      </p>
+                      <div className="flex flex-col gap-0.5 pl-3 text-slate-700 font-semibold">
+                        <span>- filing of Police Complaint/FIR before the competent Police Authorities;</span>
+                        <span>- initiation of criminal proceedings under applicable provisions of BNS;</span>
+                        <span>- civil recovery proceedings before appropriate courts/forums;</span>
+                        <span>- recovery of interest, damages, litigation costs, and legal expenses.</span>
+                      </div>
+                      <p>
+                        Kindly note that the entire risk as to costs and legal consequences arising therefrom shall solely be attributable to you.
+                      </p>
+                      <p>
+                        This notice is issued without prejudice to all other legal rights and remedies available to my client under applicable law.
+                      </p>
+                      <p>
+                        A copy of this Notice has been preserved in our office for record and future course of action. You are hereby advised to preserve a copy of this notice, as the same may be required to be produced before the appropriate Court of Law and/or competent authority as and when required.
+                      </p>
+                    </div>
+                  </div>
+                )}
+
+                {/* SHO Police Complaint */}
+                {previewTab === "police" && (
+                  <div className="flex-1 flex flex-col gap-3">
+                    <div className="text-[9.5px] leading-relaxed text-slate-650 flex flex-col">
+                      <span className="text-[8px] text-slate-400 font-bold uppercase tracking-wider mb-0.5">TO POLICE AUTHORITY:</span>
+                      <span className="font-extrabold text-slate-800">To,</span>
+                      <span className="font-extrabold text-slate-800">The Station House Officer (SHO),</span>
+                      <span className="font-extrabold text-slate-800 bg-yellow-50 px-1 border border-yellow-100 rounded w-fit mt-0.5 leading-tight">
+                        {policeStationName || "[POLICE STATION NAME]"}
+                      </span>
+                      <span className="mt-0.5 bg-yellow-50 px-1 border border-yellow-100 rounded text-slate-800 font-bold max-w-[280px]">
+                        {policeStationAddress || "[POLICE STATION ADDRESS]"}
+                      </span>
+                    </div>
+                    <div className="text-xs font-bold text-center text-slate-900 border-y border-[#E5E7EB] py-1.5 uppercase leading-tight">
+                      Subject: Complaint Against {defaulterName || "[Accused Name]"} for Cheating, Criminal Breach of Trust, Dishonest Non-Payment and Other Applicable Offences Under Bharatiya Nyaya Sanhita (BNS)
+                    </div>
+
+                    <div className="text-[9.5px] leading-relaxed text-slate-700 flex flex-col gap-3 select-text">
+                      <div className="text-[10px] font-black uppercase text-slate-800 border-b border-[#E5E7EB] pb-0.5">COMPLAINANT DETAILS</div>
+                      <div className="grid grid-cols-3 text-[9px] font-semibold text-slate-700 gap-y-0.5 pl-1">
+                        <span className="font-bold text-slate-500">Name:</span><span className="col-span-2 text-slate-950 font-bold"><strong>{clientDisplayName}</strong></span>
+                        <span className="font-bold text-slate-500">Phone Number:</span><span className="col-span-2 text-slate-950 font-bold"><strong>{clientProfile?.phone ? "+91 " + clientProfile.phone : "+91 87003 43611"}</strong></span>
+                        <span className="font-bold text-slate-500">Email ID:</span><span className="col-span-2 text-slate-950 font-bold"><strong>{clientProfile?.email || "notice@amalegalsolutions.com"}</strong></span>
+                        <span className="font-bold text-slate-500">Address:</span><span className="col-span-2 text-slate-950 font-bold"><strong>{clientDisplayAddress}</strong></span>
+                      </div>
+
+                      <div className="text-[10px] font-black uppercase text-slate-800 border-b border-[#E5E7EB] pb-0.5 mt-1">ACCUSED DETAILS</div>
+                      <div className="grid grid-cols-3 text-[9px] font-semibold text-slate-700 gap-y-0.5 pl-1">
+                        <span className="font-bold text-slate-500">Name:</span><span className="col-span-2 text-slate-950 font-black bg-yellow-50 border border-yellow-100 rounded px-1 w-fit"><strong>{defaulterName || "[Accused Name]"}</strong></span>
+                        <span className="font-bold text-slate-500">Phone Number(s):</span><span className="col-span-2 text-slate-950 font-bold"><strong>{phone}{phone2 ? `, ${phone2}` : ""}</strong></span>
+                        <span className="font-bold text-slate-500">Email ID(s):</span><span className="col-span-2 text-slate-950 font-bold"><strong>{email}{email2 ? `, ${email2}` : ""}</strong></span>
+                        <span className="font-bold text-slate-500">Address:</span><span className="col-span-2 bg-yellow-50 border border-yellow-100 rounded px-1 w-fit text-slate-950 font-bold"><strong>{address || "[Accused Address]"}</strong></span>
+                      </div>
+
+                      <p className="mt-1 font-semibold text-slate-950">Respected Sir/Madam,</p>
+
+                      <p>
+                        Under instructions from and on behalf of our client, namely <strong>{clientDisplayName}</strong>, we, AMA Legal Solutions, through our authorized legal representatives, hereby submit the present complaint against the above-mentioned accused for acts involving deliberate non-payment of legitimate dues, cheating, dishonest inducement, criminal breach of trust, and wrongful financial loss caused to our client.
+                      </p>
+
+                      <p>
+                        That the accused had entered into a transaction/understanding with our client, pursuant to which an amount of <strong className="bg-yellow-50 px-1">INR {stuckAmount || "[Amount]"}/-</strong> became legally due and payable to our client.
+                      </p>
+
+                      <p>
+                        Despite repeated follow-ups, calls, messages, reminders, and legal notices issued on behalf of our client, the accused has intentionally failed and neglected to clear the outstanding dues. The conduct of the accused clearly demonstrates dishonest intention from the very inception of the transaction and reflects wilful default and deliberate evasion of liability.
+                      </p>
+
+                      <p>
+                        It is pertinent to mention that the accused has continuously avoided communication and has failed to provide any lawful justification for withholding the legitimate dues of our client. Such conduct has caused severe financial loss, mental harassment, business disruption, and unnecessary hardship to our client.
+                      </p>
+
+                      <p>
+                        The actions of the accused prima facie attract offences punishable under the applicable provisions of the <strong>Bharatiya Nyaya Sanhita (BNS)</strong>, including but not limited to offences relating to:
+                      </p>
+                      <div className="flex flex-col gap-0.5 pl-3 font-semibold text-slate-700">
+                        <span>1. Cheating;</span>
+                        <span>2. Criminal Breach of Trust;</span>
+                        <span>3. Dishonest Misappropriation;</span>
+                        <span>4. Fraudulent and dishonest inducement; and</span>
+                        <span>5. Other allied offences as may be made out during investigation.</span>
+                      </div>
+
+                      <p>In view of the foregoing, we respectfully request your good office to:</p>
+                      <div className="flex flex-col gap-0.5 pl-3 font-semibold text-slate-700">
+                        <span>1. Take cognizance of the present complaint;</span>
+                        <span>2. Initiate appropriate inquiry/investigation against the accused;</span>
+                        <span>3. Summon/call the accused for questioning;</span>
+                        <span>4. Take necessary legal action in accordance with law; and</span>
+                        <span>5. Protect the rights and interests of our client.</span>
+                      </div>
+
+                      <p className="font-bold text-slate-900 mt-1">
+                        Kindly treat this matter as urgent and take appropriate action at the earliest.
+                      </p>
+                    </div>
+                  </div>
+                )}
                 </div>
-
-                <div className="text-[9.5px] leading-relaxed text-slate-700 flex flex-col gap-3 select-text">
-                  <div className="font-bold text-slate-600 flex flex-col gap-0.5">
-                    <span>Date: {new Date().toLocaleDateString("en-IN")}</span>
-                    <span className="mt-1">To,</span>
-                    <span className="font-extrabold text-slate-900 bg-yellow-50 px-1 border border-yellow-100 rounded w-fit leading-tight mt-0.5">
-                      {defaulterName || "[Name of Opposite Party / Individual / Company]"}
-                    </span>
-                    {phone && <span className="text-slate-550 text-[8.5px]">Mobile: {phone}{phone2 ? `, ${phone2}` : ""}</span>}
-                    {email && <span className="text-slate-550 text-[8.5px]">Email: {email}{email2 ? `, ${email2}` : ""}</span>}
-                    <span className="mt-0.5 bg-yellow-50 px-1 border border-yellow-100 rounded text-slate-800 font-bold max-w-[280px]">
-                      {address || "[Address]"}
-                    </span>
-                  </div>
-
-                  <div className="text-xs font-bold text-slate-900 border-b border-[#E5E7EB] pb-1 uppercase leading-tight">
-                    Subject: Demand Notice for Immediate Clearance of Outstanding Liability of ₹<strong>{stuckAmount || "[Amount]"}</strong> Towards <strong>{clientProfile?.name || "Tech AMA"}</strong>
-                  </div>
-
-                  <p>Dear Sir/Madam,</p>
-                  
-                  <p>
-                    Under instructions from and on behalf of our client <strong>{clientProfile?.name || "Tech AMA"}</strong>, residing at <strong className="bg-yellow-50 px-0.5">{clientProfile?.address || "Delhi, India"}</strong>, we hereby call upon you to address and resolve the pending amount/claim arising out of dealings, transactions, services, agreements, commitments, or obligations between you and our client.
-                  </p>
-                  
-                  <p>
-                    It has been informed to us that despite repeated requests, reminders, and communications made by our client, the matter remains unresolved and an amount of <strong className="bg-yellow-50 px-0.5">₹{stuckAmount || "[Amount]"}</strong> is still due/pending towards our client.
-                  </p>
-                  
-                  <p>
-                    Our client has acted in good faith and fulfilled their part of obligations; however, the pending dues/claim have not been settled by you till date.
-                  </p>
-                  
-                  <div className="flex flex-col gap-1">
-                    <span>You are therefore hereby requested to:</span>
-                    <span>1. Clear/pay the outstanding amount of <strong className="bg-yellow-50 px-0.5">₹{stuckAmount || "[Amount]"}</strong>; and/or</span>
-                    <span>2. Resolve the matter amicably within 7 (Seven) days from the receipt of this notice.</span>
-                  </div>
-                  
-                  <p>
-                    In the event that you dispute the claim or amount, you are requested to provide your written response along with supporting documents within the aforesaid period for appropriate consideration.
-                  </p>
-                  
-                  <p>
-                    Please take notice that failure to respond or resolve the matter within the stipulated time may compel our client to initiate appropriate legal proceedings and remedies available under applicable laws, entirely at your own risk as to costs and consequences.
-                  </p>
-                  
-                  <p>
-                    This notice is being issued without prejudice to all rights, claims, remedies, and legal actions available to our client under law.
-                  </p>
-                  
-                  <p>
-                    A copy of this Notice has been preserved in our office for record and future course of action. You are hereby advised to preserve a copy of this notice, as the same may be required to be produced before the appropriate Court of Law and/or competent authority as and when required.
-                  </p>
-
-                  <div className="mt-2 flex flex-col gap-0.5 text-left text-[8.5px] font-bold text-slate-500">
-                    <span>For and on behalf of <strong>{clientProfile?.name || "Tech AMA"}</strong></span>
-                    <span className="text-slate-900 font-extrabold uppercase mt-1">Kindly treat this matter as urgent.</span>
-                  </div>
-                </div>
-              </div>
-            )}
-
-            {/* Notice 2 */}
-            {previewTab === "notice2" && (
-              <div className="flex-1 flex flex-col gap-4">
-                <div className="text-[9.5px] leading-relaxed text-slate-600 flex flex-col">
-                  <span className="text-[8px] text-slate-450 font-bold uppercase tracking-wider mb-0.5">TO DEFAULTER:</span>
-                  <span className="font-extrabold text-slate-800 bg-yellow-50 px-1 border border-yellow-100 rounded w-fit leading-tight mt-0.5">
-                    {defaulterName || "[DEFAULTER LEGAL NAME]"}
-                  </span>
-                  <span>Constitution: <strong>{entityType}</strong></span>
-                  {phone && <span>Mobile: <strong>{phone}{phone2 ? `, ${phone2}` : ""}</strong></span>}
-                  {email && <span>Email: <strong>{email}{email2 ? `, ${email2}` : ""}</strong></span>}
-                  <span className="mt-0.5 bg-yellow-50 px-1 border border-yellow-100 rounded text-slate-800 font-bold max-w-[280px]">
-                    {address || "[PHYSICAL STREET ADDRESS]"}
-                  </span>
-                </div>
-
-                <div className="text-xs font-bold text-center text-slate-900 border-y border-[#E5E7EB] py-1.5 uppercase leading-tight">
-                  Subject: Demand Notice for Immediate Clearance of Outstanding Liability of ₹<strong>{stuckAmount || "[Amount]"}</strong> Towards <strong>{clientProfile?.name || "Tech AMA"}</strong>
-                </div>
-
-                <div className="text-[9.5px] leading-relaxed text-slate-700 flex flex-col gap-3 select-text">
-                  <p>Dear Sir/Madam,</p>
-                  <p>
-                    Under instructions and authority from our client <strong>{clientProfile?.name || "Tech AMA"}</strong>, residing/having office at <strong>{clientProfile?.address || "Delhi, India"}</strong>, we hereby issue the present Second and Final Legal Notice calling upon you to immediately clear the outstanding dues/claim amounting to <strong className="bg-yellow-50 px-0.5">₹{stuckAmount || "[Amount]"}</strong> payable towards our client arising out of transactions, services, agreements, commitments, business dealings, or financial obligations undertaken by you.
-                  </p>
-                  <p>
-                    Despite repeated reminders, communications, and an earlier legal notice served upon you, you have failed to regularize the matter or provide any satisfactory response. Your conduct clearly reflects deliberate negligence, avoidance, and non-compliance towards lawful obligations owed to our client.
-                  </p>
-                  <p>
-                    It is pertinent to mention that if any person dishonestly retains money, intentionally avoids payment despite liability, induces another party under false assurances, or causes wrongful financial loss, such actions may attract legal consequences under applicable provisions of the <strong>Bharatiya Nyaya Sanhita, 2023</strong>, including but not limited to provisions relating to:
-                  </p>
-                  <div className="flex flex-col gap-1 pl-4">
-                    <span>1. Cheating and dishonest inducement;</span>
-                    <span>2. Criminal breach of trust;</span>
-                    <span>3. Fraudulent or dishonest conduct causing wrongful loss.</span>
-                  </div>
-                  <p>
-                    Our client still wishes to provide you with a final opportunity to amicably resolve the matter without initiating formal legal proceedings.
-                  </p>
-                  <p>You are therefore finally called upon to:</p>
-                  <div className="flex flex-col gap-1 pl-4">
-                    <span>1. Make payment of the outstanding amount of <strong className="bg-yellow-50 px-0.5">₹{stuckAmount || "[Amount]"}</strong> within 7 (Seven) days from receipt of this notice; OR</span>
-                    <span>2. Provide a written explanation along with documentary proof disputing the claim within the aforesaid period.</span>
-                  </div>
-                  <p>
-                    Kindly take notice that upon failure to comply, our client shall be constrained to initiate appropriate civil and/or criminal proceedings before the competent authorities/courts/forum, including filing complaints before the appropriate police authorities and legal forums, entirely at your own risk as to costs, liabilities, and consequences.
-                  </p>
-                  <p>
-                    Please further note that any continued avoidance, non-response, or intentional withholding of payment may be relied upon as adverse conduct in future legal proceedings.
-                  </p>
-                  <p>
-                    This notice is issued without prejudice to all legal rights and remedies available to our client under applicable law.
-                  </p>
-                  <p>
-                    A copy of this Notice has been preserved in our office for record and future course of action. You are hereby advised to preserve a copy of this notice, as the same may be required to be produced before the appropriate Court of Law and/or competent authority as and when required.
-                  </p>
-                </div>
-              </div>
-            )}
-
-            {/* Notice 3 */}
-            {previewTab === "notice3" && (
-              <div className="flex-1 flex flex-col gap-4">
-                <div className="text-[9.5px] leading-relaxed text-slate-650 flex flex-col">
-                  <span className="text-[8px] text-slate-400 font-bold uppercase tracking-wider mb-0.5">TO DEFAULTER:</span>
-                  <span className="font-extrabold text-slate-800 bg-yellow-50 px-1 border border-yellow-100 rounded w-fit leading-tight mt-0.5">
-                    {defaulterName || "[DEFAULTER LEGAL NAME]"}
-                  </span>
-                  <span>Constitution: <strong>{entityType}</strong></span>
-                  {phone && <span>Mobile: <strong>{phone}{phone2 ? `, ${phone2}` : ""}</strong></span>}
-                  {email && <span>Email: <strong>{email}{email2 ? `, ${email2}` : ""}</strong></span>}
-                  <span className="mt-0.5 bg-yellow-50 px-1 border border-yellow-100 rounded text-slate-800 font-bold max-w-[280px]">
-                    {address || "[PHYSICAL STREET ADDRESS]"}
-                  </span>
-                </div>
-
-                <div className="text-xs font-bold text-center text-slate-900 border-y border-[#E5E7EB] py-1.5 uppercase leading-tight">
-                  Subject: Final Pre-Litigation and Police Complaint Notice for Recovery of ₹<strong>{stuckAmount || "[Amount]"}</strong> Under Applicable Provisions of Bharatiya Nyaya Sanhita (BNS)
-                </div>
-
-                <div className="text-[9.5px] leading-relaxed text-slate-700 flex flex-col gap-3 select-text">
-                  <p>Dear Sir/Madam,</p>
-                  <p>
-                    Under instructions from and on behalf of my client <strong>{clientProfile?.name || "Tech AMA"}</strong>, residing/having office at <strong>{clientProfile?.address || "2493AP, Ground floor, Sector 57, Gurugram-122003 (Haryana)"}</strong>, I hereby issue the present Final Legal Notice against you with respect to the outstanding amount/claim of <strong className="bg-yellow-50 px-0.5">INR {stuckAmount || "[Amount]"}/-</strong> arising out of dealings, transactions, services, agreements, commitments, or obligations between you and our client.
-                  </p>
-                  <p>
-                    It is pertinent to note that despite repeated reminders, follow-ups, and opportunities extended to you for amicable resolution, you have deliberately failed and neglected to clear the outstanding liability and/or honour your commitments. Your conduct has caused substantial financial loss, harassment, mental agony, and inconvenience to my client.
-                  </p>
-                  <p>Your actions prima facie disclose elements of:</p>
-                  <div className="flex flex-col gap-0.5 pl-3 text-slate-700 font-semibold">
-                    <span>- dishonest intention,</span>
-                    <span>- wrongful withholding of money/property,</span>
-                    <span>- misrepresentation,</span>
-                    <span>- criminal breach of trust,</span>
-                    <span>- cheating, and</span>
-                    <span>- intentional non-compliance despite repeated demands.</span>
-                  </div>
-                  <p>
-                    Accordingly, your acts may attract penal consequences under the relevant provisions of the <strong>Bharatiya Nyaya Sanhita, 2023</strong> including but not limited to:
-                  </p>
-                  <div className="flex flex-col gap-0.5 pl-3 text-slate-700 font-semibold">
-                    <span>- <strong>Section 316 BNS</strong> – Criminal Breach of Trust</span>
-                    <span>- <strong>Section 318 BNS</strong> – Cheating</span>
-                    <span>- <strong>Section 351 BNS</strong> – Criminal Intimidation (where applicable)</span>
-                    <span>- Any other applicable civil and criminal provisions based upon the facts and documents available on record.</span>
-                  </div>
-                  <p>You are therefore called upon for the <strong>FINAL</strong> time to:</p>
-                  <div className="flex flex-col gap-0.5 pl-3 text-slate-700 font-semibold">
-                    <span>1. Clear/pay the outstanding amount of <strong className="bg-yellow-50 px-0.5">INR {stuckAmount || "[Amount]"}/-</strong>;</span>
-                    <span>2. Provide written confirmation of settlement; and</span>
-                    <span>3. Resolve the matter within <strong>72 HOURS</strong> from receipt of this notice.</span>
-                  </div>
-                  <p>
-                    Please take notice that in the event of your failure to comply within the aforesaid period, my client shall be constrained to initiate appropriate legal proceedings against you, including but not limited to:
-                  </p>
-                  <div className="flex flex-col gap-0.5 pl-3 text-slate-700 font-semibold">
-                    <span>- filing of Police Complaint/FIR before the competent Police Authorities;</span>
-                    <span>- initiation of criminal proceedings under applicable provisions of BNS;</span>
-                    <span>- civil recovery proceedings before appropriate courts/forums;</span>
-                    <span>- recovery of interest, damages, litigation costs, and legal expenses.</span>
-                  </div>
-                  <p>
-                    Kindly note that the entire risk as to costs and legal consequences arising therefrom shall solely be attributable to you.
-                  </p>
-                  <p>
-                    This notice is issued without prejudice to all other legal rights and remedies available to my client under applicable law.
-                  </p>
-                  <p>
-                    A copy of this Notice has been preserved in our office for record and future course of action. You are hereby advised to preserve a copy of this notice, as the same may be required to be produced before the appropriate Court of Law and/or competent authority as and when required.
-                  </p>
-                </div>
-              </div>
-            )}
-
-            {/* SHO Police Complaint */}
-            {previewTab === "police" && (
-              <div className="flex-1 flex flex-col gap-3">
-                <div className="text-[9.5px] leading-relaxed text-slate-650 flex flex-col">
-                  <span className="text-[8px] text-slate-400 font-bold uppercase tracking-wider mb-0.5">TO POLICE AUTHORITY:</span>
-                  <span className="font-extrabold text-slate-800">To,</span>
-                  <span className="font-extrabold text-slate-800">The Station House Officer (SHO),</span>
-                  <span className="font-extrabold text-slate-800 bg-yellow-50 px-1 border border-yellow-100 rounded w-fit mt-0.5 leading-tight">
-                    {policeStationName || "[POLICE STATION NAME]"}
-                  </span>
-                  <span className="mt-0.5 bg-yellow-50 px-1 border border-yellow-100 rounded text-slate-800 font-bold max-w-[280px]">
-                    {policeStationAddress || "[POLICE STATION ADDRESS]"}
-                  </span>
-                </div>
-                <div className="text-xs font-bold text-center text-slate-900 border-y border-[#E5E7EB] py-1.5 uppercase leading-tight">
-                  Subject: Complaint Against {defaulterName || "[Accused Name]"} for Cheating, Criminal Breach of Trust, Dishonest Non-Payment and Other Applicable Offences Under Bharatiya Nyaya Sanhita (BNS)
-                </div>
-
-                <div className="text-[9.5px] leading-relaxed text-slate-700 flex flex-col gap-3 select-text">
-                  <div className="text-[10px] font-black uppercase text-slate-800 border-b border-[#E5E7EB] pb-0.5">COMPLAINANT DETAILS</div>
-                  <div className="grid grid-cols-3 text-[9px] font-semibold text-slate-700 gap-y-0.5 pl-1">
-                    <span className="font-bold text-slate-500">Name:</span><span className="col-span-2 text-slate-950 font-bold"><strong>{clientProfile?.name || "Tech AMA"}</strong></span>
-                    <span className="font-bold text-slate-500">Phone Number:</span><span className="col-span-2 text-slate-950 font-bold"><strong>{clientProfile?.phone ? "+91 " + clientProfile.phone : "+91 87003 43611"}</strong></span>
-                    <span className="font-bold text-slate-500">Email ID:</span><span className="col-span-2 text-slate-950 font-bold"><strong>{clientProfile?.email || "notice@amalegalsolutions.com"}</strong></span>
-                    <span className="font-bold text-slate-500">Address:</span><span className="col-span-2 text-slate-950 font-bold"><strong>{clientProfile?.address || "2493AP, Ground floor, Sector 57, Gurugram-122003 (Haryana)"}</strong></span>
-                  </div>
-
-                  <div className="text-[10px] font-black uppercase text-slate-800 border-b border-[#E5E7EB] pb-0.5 mt-1">ACCUSED DETAILS</div>
-                  <div className="grid grid-cols-3 text-[9px] font-semibold text-slate-700 gap-y-0.5 pl-1">
-                    <span className="font-bold text-slate-500">Name:</span><span className="col-span-2 text-slate-950 font-black bg-yellow-50 border border-yellow-100 rounded px-1 w-fit"><strong>{defaulterName || "[Accused Name]"}</strong></span>
-                    <span className="font-bold text-slate-500">Phone Number(s):</span><span className="col-span-2 text-slate-950 font-bold"><strong>{phone}{phone2 ? `, ${phone2}` : ""}</strong></span>
-                    <span className="font-bold text-slate-500">Email ID(s):</span><span className="col-span-2 text-slate-950 font-bold"><strong>{email}{email2 ? `, ${email2}` : ""}</strong></span>
-                    <span className="font-bold text-slate-500">Address:</span><span className="col-span-2 bg-yellow-50 border border-yellow-100 rounded px-1 w-fit text-slate-950 font-bold"><strong>{address || "[Accused Address]"}</strong></span>
-                  </div>
-
-                  <p className="mt-1 font-semibold text-slate-950">Respected Sir/Madam,</p>
-
-                  <p>
-                    Under instructions from and on behalf of our client, namely <strong>{clientProfile?.name || "Tech AMA"}</strong>, we, AMA Legal Solutions, through our authorized legal representatives, hereby submit the present complaint against the above-mentioned accused for acts involving deliberate non-payment of legitimate dues, cheating, dishonest inducement, criminal breach of trust, and wrongful financial loss caused to our client.
-                  </p>
-
-                  <p>
-                    That the accused had entered into a transaction/understanding with our client, pursuant to which an amount of <strong className="bg-yellow-50 px-1">INR {stuckAmount || "[Amount]"}/-</strong> became legally due and payable to our client.
-                  </p>
-
-                  <p>
-                    Despite repeated follow-ups, calls, messages, reminders, and legal notices issued on behalf of our client, the accused has intentionally failed and neglected to clear the outstanding dues. The conduct of the accused clearly demonstrates dishonest intention from the very inception of the transaction and reflects wilful default and deliberate evasion of liability.
-                  </p>
-
-                  <p>
-                    It is pertinent to mention that the accused has continuously avoided communication and has failed to provide any lawful justification for withholding the legitimate dues of our client. Such conduct has caused severe financial loss, mental harassment, business disruption, and unnecessary hardship to our client.
-                  </p>
-
-                  <p>
-                    The actions of the accused prima facie attract offences punishable under the applicable provisions of the <strong>Bharatiya Nyaya Sanhita (BNS)</strong>, including but not limited to offences relating to:
-                  </p>
-                  <div className="flex flex-col gap-0.5 pl-3 font-semibold text-slate-700">
-                    <span>1. Cheating;</span>
-                    <span>2. Criminal Breach of Trust;</span>
-                    <span>3. Dishonest Misappropriation;</span>
-                    <span>4. Fraudulent and dishonest inducement; and</span>
-                    <span>5. Other allied offences as may be made out during investigation.</span>
-                  </div>
-
-                  <p>In view of the foregoing, we respectfully request your good office to:</p>
-                  <div className="flex flex-col gap-0.5 pl-3 font-semibold text-slate-700">
-                    <span>1. Take cognizance of the present complaint;</span>
-                    <span>2. Initiate appropriate inquiry/investigation against the accused;</span>
-                    <span>3. Summon/call the accused for questioning;</span>
-                    <span>4. Take necessary legal action in accordance with law; and</span>
-                    <span>5. Protect the rights and interests of our client.</span>
-                  </div>
-
-                  <p className="font-bold text-slate-900 mt-1">
-                    Kindly treat this matter as urgent and take appropriate action at the earliest.
-                  </p>
-                </div>
-              </div>
-            )}
-            </div>
+              );
+            })()}
 
             {/* Signature & High Fidelity Repeating Footer */}
             <div className="mt-auto pt-2 flex flex-col gap-2">

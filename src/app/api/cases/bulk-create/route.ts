@@ -106,7 +106,7 @@ export async function POST(req: NextRequest) {
         clientName: representee ? representee.name : (user.name || user.companyName || "Tech AMA"),
         clientEmail: representee ? representee.email : (user.email || ""),
         clientPhone: representee ? representee.phone : (user.phone || ""),
-        clientAddress: representee ? representee.address : (user.address || ""),
+        clientAddress: representee ? representee.address : (user.address || (user.state ? `${user.state}, India` : "")),
         clientAuthRepName: representee ? (representee.authRepName || "") : "",
         clientAuthRepPhone: representee ? (representee.authRepPhone || "") : "",
         ...(representee ? { representeeId: representee._id } : {}),
