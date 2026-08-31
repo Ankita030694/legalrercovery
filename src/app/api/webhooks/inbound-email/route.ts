@@ -77,6 +77,28 @@ function cleanEmailBody(body: string): string {
     .trim();
 }
 
+function escapeRegex(str: string): string {
+  return str.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
+}
+
+function extractEmailAddresses(...inputs: (string | undefined | null | string[] | any)[]): string[] {
+  const emails: string[] = [];
+  const regex = /[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}/g;
+
+  for (const input of inputs) {
+    if (!input) continue;
+    const text = typeof input === "string" ? input : JSON.stringify(input);
+    const matches = text.match(regex);
+    if (matches) {
+      for (const m of matches) {
+        emails.push(m.toLowerCase().trim());
+      }
+    }
+  }
+
+  return [...new Set(emails)];
+}
+
 export async function POST(req: NextRequest) {
   try {
     // Validate authorization token to prevent spoofed email notifications
@@ -122,37 +144,108 @@ export async function POST(req: NextRequest) {
       }
     }
 
-    const { from, subject, body, timestamp, messageId } = payload;
+    const { 
+      from, 
+      to, 
+      cc, 
+      bcc, 
+      recipient, 
+      recipients, 
+      toAddress, 
+      ccAddress, 
+      subject, 
+      body, 
+      htmlBody, 
+      content, 
+      timestamp, 
+      messageId 
+    } = payload;
 
     if (!from || !subject) {
       console.warn("[Inbound Email Webhook] Missing from address or subject.");
       return NextResponse.json({ error: "Missing required fields" }, { status: 400 });
     }
 
-    const senderEmail = from.toLowerCase();
-    const cleanBody = cleanEmailBody(body || "");
+    const senderEmail = (typeof from === "string" ? from : JSON.stringify(from)).toLowerCase();
+    const cleanBody = cleanEmailBody(body || content || htmlBody || "");
     const { db } = await getDbAndBucket("fs");
 
     let matchedCase = null;
 
     // Step 1: Match via unique Case Reference Number in subject (E.g. Ref: LR-T001-020626 or Ref: LR-0001-1626 or LR-0098-24826)
-    const refMatch = subject.match(/LR-[A-Z0-9]{4}-\d{4,6}/i);
+    const refMatch = (subject || "").match(/LR-[A-Z0-9]{4}-\d{4,6}/i);
     if (refMatch) {
       const extractedCaseId = refMatch[0].toUpperCase();
       console.log(`[Inbound Email Webhook] Extracted Case ID: ${extractedCaseId} from subject: "${subject}"`);
       matchedCase = await db.collection("cases").findOne({ caseId: extractedCaseId });
     }
 
-    // Step 2: Fallback to matching by sender email address if subject reference is missing
+    // Step 2: Match by Accused Email address (from, to, cc, or email body)
     if (!matchedCase) {
-      console.log(`[Inbound Email Webhook] Reference ID not found/matched in subject. Falling back to email match: ${senderEmail}`);
-      matchedCase = await db.collection("cases").findOne({
-        $or: [
-          { email: senderEmail },
-          { email2: senderEmail },
-          { clientEmail: senderEmail }
-        ]
+      const fromEmails = extractEmailAddresses(from);
+      const toAndCcEmails = extractEmailAddresses(to, cc, bcc, recipient, recipients, toAddress, ccAddress);
+      const bodyAndSubjectEmails = extractEmailAddresses(body, content, htmlBody, subject);
+
+      console.log("[Inbound Email Webhook] Candidate emails:", {
+        from: fromEmails,
+        toAndCc: toAndCcEmails,
+        bodyAndSubject: bodyAndSubjectEmails
       });
+
+      // Priority 2a: Accused directly sent the email from their registered email
+      if (fromEmails.length > 0) {
+        const fromRegexes = fromEmails.map(e => new RegExp(`^${escapeRegex(e)}$`, "i"));
+        matchedCase = await db.collection("cases").findOne({
+          $or: [
+            { email: { $in: fromRegexes } },
+            { email2: { $in: fromRegexes } }
+          ]
+        });
+      }
+
+      // Priority 2b: Email was sent/replied TO or CC'd to the accused's registered email
+      if (!matchedCase && toAndCcEmails.length > 0) {
+        const toRegexes = toAndCcEmails.map(e => new RegExp(`^${escapeRegex(e)}$`, "i"));
+        matchedCase = await db.collection("cases").findOne({
+          $or: [
+            { email: { $in: toRegexes } },
+            { email2: { $in: toRegexes } }
+          ]
+        });
+      }
+
+      // Priority 2c: Accused's email address is referenced in the email body or subject
+      if (!matchedCase && bodyAndSubjectEmails.length > 0) {
+        const bodyRegexes = bodyAndSubjectEmails.map(e => new RegExp(`^${escapeRegex(e)}$`, "i"));
+        matchedCase = await db.collection("cases").findOne({
+          $or: [
+            { email: { $in: bodyRegexes } },
+            { email2: { $in: bodyRegexes } }
+          ]
+        });
+      }
+    }
+
+    // Step 3: Match via Loan ID / Invoice No in subject or body (e.g. ACT261789)
+    if (!matchedCase) {
+      const rawText = `${subject || ""} ${body || ""} ${content || ""}`;
+      const loanMatches = rawText.match(/\b([A-Z]{2,6}\d{4,10}|INV-[A-Z0-9-]+)\b/gi);
+      if (loanMatches && loanMatches.length > 0) {
+        for (const token of loanMatches) {
+          const cleanToken = token.trim();
+          matchedCase = await db.collection("cases").findOne({
+            $or: [
+              { invoiceNo: cleanToken },
+              { loanId: cleanToken },
+              { "invoices.invoiceNo": cleanToken }
+            ]
+          });
+          if (matchedCase) {
+            console.log(`[Inbound Email Webhook] Matched Case by Loan ID token: ${cleanToken}`);
+            break;
+          }
+        }
+      }
     }
 
     if (!matchedCase) {
@@ -160,7 +253,7 @@ export async function POST(req: NextRequest) {
       return NextResponse.json({ success: false, message: "No matching case found" });
     }
 
-    console.log(`[Inbound Email Webhook] Matched Case: ${matchedCase.caseId} for client user: ${matchedCase.userId}`);
+    console.log(`[Inbound Email Webhook] Matched Case: ${matchedCase.caseId} (${matchedCase.defaulterName}) for client user: ${matchedCase.userId}`);
 
     // Check for duplicates
     if (messageId) {

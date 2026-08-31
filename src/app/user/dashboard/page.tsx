@@ -955,7 +955,58 @@ export default function UserDashboard() {
                     const isPending = t.status === "pending";
                     const isPartiallyDelivered = t.status === "partially_delivered";
                     const isFailed = t.status === "failed";
-                    const isOverdue = isScheduled && t.scheduledAt && new Date(t.scheduledAt) < new Date();
+                    
+                    // Real-time timeline calculations based on scheduledAt
+                    let displayDate = t.date === "Today, Grace Active" || t.date === "Awaiting dispatch" || t.date?.includes("Grace") ? "Today" : (t.date || "Scheduled");
+                    let countdownText: string | null = null;
+                    let countdownColor = "text-slate-400";
+
+                    if (isCompleted) {
+                      displayDate = t.date || (t.completedAt ? new Date(t.completedAt).toLocaleDateString("en-IN", { timeZone: "Asia/Kolkata", day: "numeric", month: "short", year: "numeric", hour: "2-digit", minute: "2-digit" }) : "Completed");
+                    } else if (isScheduled && t.scheduledAt) {
+                      const schedDate = new Date(t.scheduledAt);
+                      const now = new Date();
+                      const diffMs = schedDate.getTime() - now.getTime();
+                      const diffMins = Math.round(diffMs / (1000 * 60));
+                      const diffHours = Math.round(diffMs / (1000 * 60 * 60));
+                      const diffDays = Math.ceil(diffMs / (1000 * 60 * 60 * 24));
+
+                      const isToday = schedDate.toDateString() === now.toDateString();
+                      const isTomorrow = new Date(now.getTime() + 24 * 60 * 60 * 1000).toDateString() === schedDate.toDateString();
+
+                      const timeStr = schedDate.toLocaleTimeString("en-IN", {
+                        timeZone: "Asia/Kolkata",
+                        hour: "2-digit",
+                        minute: "2-digit",
+                        hour12: true
+                      });
+
+                      const dateStr = schedDate.toLocaleDateString("en-IN", {
+                        timeZone: "Asia/Kolkata",
+                        day: "numeric",
+                        month: "short",
+                        year: "numeric"
+                      });
+
+                      displayDate = isToday ? `Today, ${timeStr}` : (isTomorrow ? `Tomorrow, ${timeStr}` : `${dateStr}, ${timeStr}`);
+
+                      if (diffMs <= 0) {
+                        countdownText = "(Ready for dispatch)";
+                        countdownColor = "text-emerald-600 font-extrabold";
+                      } else if (diffMins < 60) {
+                        countdownText = `(in ${diffMins} min${diffMins === 1 ? "" : "s"})`;
+                        countdownColor = "text-amber-600 font-extrabold";
+                      } else if (isToday) {
+                        countdownText = `(in ${diffHours} hr${diffHours === 1 ? "" : "s"})`;
+                        countdownColor = "text-indigo-600 font-bold";
+                      } else if (isTomorrow) {
+                        countdownText = "(in 1 day)";
+                        countdownColor = "text-slate-500 font-bold";
+                      } else {
+                        countdownText = `(in ${diffDays} days)`;
+                        countdownColor = "text-slate-400 font-semibold";
+                      }
+                    }
                     
                     return (
                       <div key={idx} className="flex-1 flex flex-row md:flex-col items-start md:items-center relative text-left md:text-center select-none w-full min-w-full md:min-w-[95px]">
@@ -1015,7 +1066,7 @@ export default function UserDashboard() {
                           </span>
                           
                           <span className="text-[8px] sm:text-[9.5px] text-slate-400 font-bold mt-0.5 leading-none font-sans">
-                            {t.date === "Today, Grace Active" || t.date === "Awaiting dispatch" || t.date.includes("Grace") ? "Today" : t.date}
+                            {displayDate}
                           </span>
 
                           {/* Dynamic Active details */}
@@ -1043,15 +1094,9 @@ export default function UserDashboard() {
                             </span>
                           )}
 
-                          {isOverdue && (
-                            <span className="text-[7px] font-bold text-orange-500 leading-none mt-0.5 max-w-[85px] text-center" title="Cron dispatch failed or delayed">
-                              (Tried at {new Date(t.scheduledAt).toLocaleTimeString("en-IN", {timeZone: "Asia/Kolkata", hour: '2-digit', minute:'2-digit'})} but delayed)
-                            </span>
-                          )}
-
-                          {!isOverdue && t.timeRemaining && isScheduled && (
-                            <span className="text-[7px] font-bold text-slate-400 leading-none mt-0.5 text-center">
-                              ({t.timeRemaining.replace(' remaining', '')} left)
+                          {isScheduled && countdownText && (
+                            <span className={`text-[7px] leading-none mt-0.5 text-center ${countdownColor}`}>
+                              {countdownText}
                             </span>
                           )}
 
@@ -1060,8 +1105,6 @@ export default function UserDashboard() {
                               {t.error}
                             </span>
                           )}
-
-                          {/* Speed Post tracker action removed */}
                         </div>
 
                       </div>
