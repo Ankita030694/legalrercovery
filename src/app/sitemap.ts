@@ -175,6 +175,23 @@ const STATIC_ROUTES: {
   { path: "/send-a-legal-notice/for-banks-to-recover-their-unpaid-dues", changeFrequency: "weekly", priority: 0.85 },
   { path: "/send-a-legal-notice/for-business-to-recover-their-unpaid-dues", changeFrequency: "weekly", priority: 0.85 },
   { path: "/send-a-legal-notice/security-deposit-not-refunded-landlord", changeFrequency: "weekly", priority: 0.85 },
+  { path: "/send-a-legal-notice/employer-not-paying-pf-provident-fund", changeFrequency: "weekly", priority: 0.85 },
+  { path: "/send-a-legal-notice/recover-unpaid-rent-from-tenant-india", changeFrequency: "weekly", priority: 0.9 },
+  { path: "/send-a-legal-notice/hospital-for-medical-negligence-refund", changeFrequency: "weekly", priority: 0.85 },
+  { path: "/send-a-legal-notice/commission-not-paid-by-company", changeFrequency: "weekly", priority: 0.85 },
+  { path: "/send-a-legal-notice/school-college-fee-refund-admission-cancellation", changeFrequency: "weekly", priority: 0.85 },
+  { path: "/send-a-legal-notice/recover-money-from-business-partner-cheating-india", changeFrequency: "weekly", priority: 0.85 },
+  { path: "/send-a-legal-notice/leave-encashment-not-paid-by-employer", changeFrequency: "weekly", priority: 0.85 },
+  { path: "/send-a-legal-notice/recover-gratuity-from-employer-legal-notice", changeFrequency: "weekly", priority: 0.85 },
+  { path: "/send-a-legal-notice/co-founder-startup-unpaid-dues-equity", changeFrequency: "weekly", priority: 0.85 },
+  { path: "/send-a-legal-notice/insurance-claim-not-settled-delay", changeFrequency: "weekly", priority: 0.85 },
+  { path: "/send-a-legal-notice/employer-deduct-salary-without-notice-legal-action", changeFrequency: "weekly", priority: 0.85 },
+  { path: "/send-a-legal-notice/travel-agent-holiday-package-refund", changeFrequency: "weekly", priority: 0.85 },
+  { path: "/send-a-legal-notice/salary-deducted-during-notice-period-legal-action-india", changeFrequency: "weekly", priority: 0.85 },
+  { path: "/send-a-legal-notice/recover-money-from-online-shopping-scam-india", changeFrequency: "weekly", priority: 0.85 },
+  { path: "/send-a-legal-notice/delayed-salary-startup-company-india", changeFrequency: "weekly", priority: 0.85 },
+  { path: "/send-a-legal-notice/recover-money-from-tenant-who-damaged-property", changeFrequency: "weekly", priority: 0.85 },
+  { path: "/send-a-legal-notice/gym-yoga-club-membership-fee-refund", changeFrequency: "weekly", priority: 0.85 },
 ];
 
 async function getBlogEntries(): Promise<MetadataRoute.Sitemap> {

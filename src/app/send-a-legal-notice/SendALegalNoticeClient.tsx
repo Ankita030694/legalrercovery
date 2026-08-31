@@ -211,6 +211,41 @@ const reviewSchema = {
   ]
 };
 
+const noticeTemplates = [
+  { title: "Airline Refund Not Received", href: "/send-a-legal-notice/airline-refund-not-received" },
+  { title: "Company Refusing Refund", href: "/send-a-legal-notice/company-refusing-refund" },
+  { title: "Defective Product Refund", href: "/send-a-legal-notice/defective-product-refund" },
+  { title: "Online Refund Not Received", href: "/send-a-legal-notice/online-refund-not-received" },
+  { title: "Online Shopping Dispute", href: "/send-a-legal-notice/online-shopping-dispute" },
+  { title: "Swiggy Refund Not Received", href: "/send-a-legal-notice/swiggy-refund-not-recieved" },
+  { title: "Unfair Trade Practice Complaint", href: "/send-a-legal-notice/unfair-trade-practice-complaint" },
+  { title: "Wrong Product Delivered", href: "/send-a-legal-notice/wrong-product-delivered" },
+  { title: "Zomato Refund Not Received", href: "/send-a-legal-notice/zomato-refund-not-recieved" },
+  { title: "Pharmacy Invoice Not Cleared", href: "/send-a-legal-notice/pharmacy-invoice-not-cleared" },
+  { title: "B2B Invoice Not Received", href: "/send-a-legal-notice/b2b-invoice-not-recieved" },
+  { title: "Legal Notice for NBFC Recovery", href: "/send-a-legal-notice/for-nbfc-to-recover-their-unpaid-dues" },
+  { title: "Legal Notice for Bank Recovery of Unpaid Dues", href: "/send-a-legal-notice/for-banks-to-recover-their-unpaid-dues" },
+  { title: "Legal Notice for Business Recovery of Unpaid Dues", href: "/send-a-legal-notice/for-business-to-recover-their-unpaid-dues" },
+  { title: "Security Deposit Not Refunded by Landlord", href: "/send-a-legal-notice/security-deposit-not-refunded-landlord" },
+  { title: "Legal Notice to Employer for Not Paying PF", href: "/send-a-legal-notice/employer-not-paying-pf-provident-fund" },
+  { title: "Legal Notice to Tenant for Not Paying Rent", href: "/send-a-legal-notice/recover-unpaid-rent-from-tenant-india" },
+  { title: "Legal Notice to Hospital for Medical Negligence & Refund", href: "/send-a-legal-notice/hospital-for-medical-negligence-refund" },
+  { title: "Legal Notice to Company for Not Paying Commission", href: "/send-a-legal-notice/commission-not-paid-by-company" },
+  { title: "Fee Refund on School/College Admission Cancellation", href: "/send-a-legal-notice/school-college-fee-refund-admission-cancellation" },
+  { title: "Legal Notice to Business Partner for Recovery of Money", href: "/send-a-legal-notice/recover-money-from-business-partner-cheating-india" },
+  { title: "Legal Notice for Leave Encashment Not Paid by Employer", href: "/send-a-legal-notice/leave-encashment-not-paid-by-employer" },
+  { title: "Legal Notice to Company for Gratuity Not Paid by Employer", href: "/send-a-legal-notice/recover-gratuity-from-employer-legal-notice" },
+  { title: "Legal Notice to Co-Founder for Unpaid Startup Dues & Equity", href: "/send-a-legal-notice/co-founder-startup-unpaid-dues-equity" },
+  { title: "Legal Notice for Insurance Claim Not Settled / Delay", href: "/send-a-legal-notice/insurance-claim-not-settled-delay" },
+  { title: "Legal Notice to Employer for Deducting Salary Without Notice", href: "/send-a-legal-notice/employer-deduct-salary-without-notice-legal-action" },
+  { title: "Legal Notice to Travel Agent for Holiday Package Refund", href: "/send-a-legal-notice/travel-agent-holiday-package-refund" },
+  { title: "Legal Notice for Salary Deducted During Notice Period", href: "/send-a-legal-notice/salary-deducted-during-notice-period-legal-action-india" },
+  { title: "Recover Money from Online Shopping Scam", href: "/send-a-legal-notice/recover-money-from-online-shopping-scam-india" },
+  { title: "Legal Notice for Delayed Salary from Startup Company", href: "/send-a-legal-notice/delayed-salary-startup-company-india" },
+  { title: "Legal Notice to Tenant for Property Damage Recovery", href: "/send-a-legal-notice/recover-money-from-tenant-who-damaged-property" },
+  { title: "Legal Notice for Gym & Yoga Club Fee Refund", href: "/send-a-legal-notice/gym-yoga-club-membership-fee-refund" }
+];
+
 export default function SendALegalNoticeClient() {
   const [expandedFaqs, setExpandedFaqs] = useState<string[]>([]);
   const [isPaymentModalOpen, setIsPaymentModalOpen] = useState(false);
@@ -228,7 +263,8 @@ export default function SendALegalNoticeClient() {
     { id: "procedure", title: "3. Step-by-Step Online Notice Process" },
     { id: "evidence", title: "4. Evidentiary Authenticity & Proof of Service" },
     { id: "resolution", title: "5. Out-of-Court Settlement & ODR Integration" },
-    { id: "cases-faqs", title: "6. Case Studies, Reviews & FAQs" }
+    { id: "cases-faqs", title: "6. Case Studies, Reviews & FAQs" },
+    { id: "notice-templates", title: "7. Statutory Notice Frameworks & Practice Areas" }
   ];
 
   const breadcrumbItems = [
@@ -683,90 +719,49 @@ export default function SendALegalNoticeClient() {
                 </button>
               </div>
 
-              {/* Related Templates Card */}
+              {/* Quick Practice Areas Overview Card */}
               <div className="bg-white p-6 rounded-2xl shadow-sm border border-slate-100">
-                <h3 className="text-sm font-black text-slate-900 mb-4">Notice Templates</h3>
-                <ul className="space-y-3">
-                  <li>
-                    <Link href="/send-a-legal-notice/airline-refund-not-received" className="text-xs font-medium text-slate-650 hover:text-[#DC2626] transition-colors flex items-center">
-                      <span className="mr-2 text-slate-300">→</span> Airline Refund Not Received
-                    </Link>
-                  </li>
-                  <li>
-                    <Link href="/send-a-legal-notice/company-refusing-refund" className="text-xs font-medium text-slate-650 hover:text-[#DC2626] transition-colors flex items-center">
-                      <span className="mr-2 text-slate-300">→</span> Company Refusing Refund
-                    </Link>
-                  </li>
-                  <li>
-                    <Link href="/send-a-legal-notice/defective-product-refund" className="text-xs font-medium text-slate-650 hover:text-[#DC2626] transition-colors flex items-center">
-                      <span className="mr-2 text-slate-300">→</span> Defective Product Refund
-                    </Link>
-                  </li>
-                  <li>
-                    <Link href="/send-a-legal-notice/online-refund-not-received" className="text-xs font-medium text-slate-650 hover:text-[#DC2626] transition-colors flex items-center">
-                      <span className="mr-2 text-slate-300">→</span> Online Refund Not Received
-                    </Link>
-                  </li>
-                  <li>
-                    <Link href="/send-a-legal-notice/online-shopping-dispute" className="text-xs font-medium text-slate-650 hover:text-[#DC2626] transition-colors flex items-center">
-                      <span className="mr-2 text-slate-300">→</span> Online Shopping Dispute
-                    </Link>
-                  </li>
-                  <li>
-                    <Link href="/send-a-legal-notice/swiggy-refund-not-recieved" className="text-xs font-medium text-slate-650 hover:text-[#DC2626] transition-colors flex items-center">
-                      <span className="mr-2 text-slate-300">→</span> Swiggy Refund Not Received
-                    </Link>
-                  </li>
-                  <li>
-                    <Link href="/send-a-legal-notice/unfair-trade-practice-complaint" className="text-xs font-medium text-slate-650 hover:text-[#DC2626] transition-colors flex items-center">
-                      <span className="mr-2 text-slate-300">→</span> Unfair Trade Practice Complaint
-                    </Link>
-                  </li>
-                  <li>
-                    <Link href="/send-a-legal-notice/wrong-product-delivered" className="text-xs font-medium text-slate-650 hover:text-[#DC2626] transition-colors flex items-center">
-                      <span className="mr-2 text-slate-300">→</span> Wrong Product Delivered
-                    </Link>
-                  </li>
-                  <li>
-                    <Link href="/send-a-legal-notice/zomato-refund-not-recieved" className="text-xs font-medium text-slate-650 hover:text-[#DC2626] transition-colors flex items-center">
-                      <span className="mr-2 text-slate-300">→</span> Zomato Refund Not Received
-                    </Link>
-                  </li>
-                  <li>
-                    <Link href="/send-a-legal-notice/pharmacy-invoice-not-cleared" className="text-xs font-medium text-slate-650 hover:text-[#DC2626] transition-colors flex items-center">
-                      <span className="mr-2 text-slate-300">→</span> Pharmacy Invoice Not Cleared
-                    </Link>
-                  </li>
-                  <li>
-                    <Link href="/send-a-legal-notice/b2b-invoice-not-recieved" className="text-xs font-medium text-slate-650 hover:text-[#DC2626] transition-colors flex items-center">
-                      <span className="mr-2 text-slate-300">→</span> B2B Invoice Not Received
-                    </Link>
-                  </li>
-                  <li>
-                    <Link href="/send-a-legal-notice/for-nbfc-to-recover-their-unpaid-dues" className="text-xs font-medium text-slate-650 hover:text-[#DC2626] transition-colors flex items-center">
-                      <span className="mr-2 text-slate-300">→</span> Legal Notice for NBFC Recovery
-                    </Link>
-                  </li>
-                  <li>
-                    <Link href="/send-a-legal-notice/for-banks-to-recover-their-unpaid-dues" className="text-xs font-medium text-slate-650 hover:text-[#DC2626] transition-colors flex items-center">
-                      <span className="mr-2 text-slate-300">→</span> Legal Notice for Bank Recovery of Unpaid Dues
-                    </Link>
-                  </li>
-                  <li>
-                    <Link href="/send-a-legal-notice/for-business-to-recover-their-unpaid-dues" className="text-xs font-medium text-slate-650 hover:text-[#DC2626] transition-colors flex items-center">
-                      <span className="mr-2 text-slate-300">→</span> Legal Notice for Business Recovery of Unpaid Dues
-                    </Link>
-                  </li>
-                  <li>
-                    <Link href="/send-a-legal-notice/security-deposit-not-refunded-landlord" className="text-xs font-medium text-slate-650 hover:text-[#DC2626] transition-colors flex items-center">
-                      <span className="mr-2 text-slate-300">→</span> Security Deposit Not Refunded by Landlord
-                    </Link>
-                  </li>
-                </ul>
+                <h3 className="text-sm font-black text-slate-900 mb-2">Practice Areas</h3>
+                <p className="text-xs text-slate-500 mb-4 leading-relaxed">
+                  Browse 16+ specialized statutory legal notice frameworks vetted by high court and corporate panel advocates.
+                </p>
+                <a
+                  href="#notice-templates"
+                  className="inline-flex items-center text-xs font-extrabold text-[#DC2626] hover:underline"
+                >
+                  Explore All Categories ↓
+                </a>
               </div>
             </div>
 
           </div>
+
+          {/* Full-Width Notice Templates Section */}
+          <section id="notice-templates" className="mt-16 pt-12 border-t border-slate-200 scroll-mt-24 max-w-7xl mx-auto">
+            <div className="mb-8">
+              <span className="inline-block text-[#DC2626] text-xs font-black uppercase tracking-widest mb-2 bg-red-50 px-3 py-1 rounded-full border border-red-100">
+                PRE-LITIGATION DISPUTE RESOLUTION
+              </span>
+              <h2 className="text-xl md:text-3xl font-black text-slate-900 tracking-tight block">
+                Statutory Legal Notice Frameworks &amp; Practice Areas
+              </h2>
+            </div>
+
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+              {noticeTemplates.map((template, idx) => (
+                <Link
+                  key={idx}
+                  href={template.href}
+                  className="bg-white p-4 rounded-xl border border-slate-200 hover:border-[#DC2626] hover:shadow-sm transition-all duration-150 flex items-center group"
+                >
+                  <span className="text-slate-300 group-hover:text-[#DC2626] mr-2.5 transition-colors">→</span>
+                  <span className="text-xs sm:text-sm font-semibold text-slate-700 group-hover:text-[#DC2626] transition-colors leading-snug">
+                    {template.title}
+                  </span>
+                </Link>
+              ))}
+            </div>
+          </section>
         </div>
         <PaymentModal isOpen={isPaymentModalOpen} onClose={() => setIsPaymentModalOpen(false)} />
       </div>
