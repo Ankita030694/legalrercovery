@@ -962,7 +962,24 @@ export default function UserDashboard() {
                     let countdownColor = "text-slate-400";
 
                     if (isCompleted) {
-                      displayDate = t.date || (t.completedAt ? new Date(t.completedAt).toLocaleDateString("en-IN", { timeZone: "Asia/Kolkata", day: "numeric", month: "short", year: "numeric", hour: "2-digit", minute: "2-digit" }) : "Completed");
+                      if (t.completedAt) {
+                        const compDate = new Date(t.completedAt);
+                        if (!isNaN(compDate.getTime())) {
+                          displayDate = compDate.toLocaleString("en-IN", {
+                            timeZone: "Asia/Kolkata",
+                            day: "numeric",
+                            month: "short",
+                            year: "numeric",
+                            hour: "2-digit",
+                            minute: "2-digit",
+                            hour12: true
+                          });
+                        } else {
+                          displayDate = t.date || "Completed";
+                        }
+                      } else {
+                        displayDate = t.date || "Completed";
+                      }
                     } else if (isScheduled && t.scheduledAt) {
                       const schedDate = new Date(t.scheduledAt);
                       const now = new Date();
