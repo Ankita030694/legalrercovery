@@ -23,7 +23,9 @@ export default function TimedPopupModal() {
       pathname.includes("thank-you") ||
       pathname.startsWith("/payment-success") ||
       pathname.startsWith("/payment-cancelled") ||
-      pathname.startsWith("/payment-failure");
+      pathname.startsWith("/payment-failure") ||
+      pathname.startsWith("/login") ||
+      pathname.startsWith("/email-landing");
 
     if (isExcluded) {
       return;
@@ -49,7 +51,9 @@ export default function TimedPopupModal() {
     pathname.includes("thank-you") ||
     pathname.startsWith("/payment-success") ||
     pathname.startsWith("/payment-cancelled") ||
-    pathname.startsWith("/payment-failure");
+    pathname.startsWith("/payment-failure") ||
+    pathname.startsWith("/login") ||
+    pathname.startsWith("/email-landing");
 
   if (isExcluded) return null;
 
