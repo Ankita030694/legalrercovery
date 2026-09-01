@@ -42,6 +42,7 @@ const STATIC_ROUTES: {
   { path: "/vakil-online", changeFrequency: "weekly", priority: 0.85 },
   { path: "/online-lawyer-to-send-legal-notice", changeFrequency: "weekly", priority: 0.85 },
   { path: "/what-is-a-legal-notice-in-india", changeFrequency: "weekly", priority: 0.85 },
+  { path: "/email-landing", changeFrequency: "weekly", priority: 0.95 },
 
   // Recovery routes
   { path: "/recovery", changeFrequency: "weekly", priority: 0.9 },
