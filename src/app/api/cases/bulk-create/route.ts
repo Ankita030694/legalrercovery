@@ -106,7 +106,7 @@ export async function POST(req: NextRequest) {
         clientName: representee ? representee.name : (user.name || user.companyName || "Tech AMA"),
         clientEmail: representee ? representee.email : (user.email || ""),
         clientPhone: representee ? representee.phone : (user.phone || ""),
-        clientAddress: representee ? representee.address : (user.address || (user.state ? `${user.state}, India` : "")),
+        clientAddress: representee ? representee.address : (user.address || ""),
         clientAuthRepName: representee ? (representee.authRepName || "") : "",
         clientAuthRepPhone: representee ? (representee.authRepPhone || "") : "",
         ...(representee ? { representeeId: representee._id } : {}),
@@ -122,33 +122,33 @@ export async function POST(req: NextRequest) {
         createdAt: today.toISOString(),
         updatedAt: today.toISOString(),
         timeline: [
-          { 
-            step: 1, 
-            label: "First Notice", 
-            description: "Notice drafted. Ready to dispatch.", 
-            date: "Awaiting dispatch", 
-            status: "pending" 
+          {
+            step: 1,
+            label: "First Notice",
+            description: "Notice drafted. Ready to dispatch.",
+            date: "Awaiting dispatch",
+            status: "pending"
           },
-          { 
-            step: 2, 
-            label: "Second Notice", 
-            description: "Dispatched exactly 1 week after", 
-            date: formatDate(oneWeekLater), 
-            status: "locked" 
+          {
+            step: 2,
+            label: "Second Notice",
+            description: "Dispatched exactly 1 week after",
+            date: formatDate(oneWeekLater),
+            status: "locked"
           },
-          { 
-            step: 3, 
-            label: "Third Notice", 
-            description: "Final demand notice prior to filing", 
-            date: formatDate(twoWeeksLater), 
-            status: "locked" 
+          {
+            step: 3,
+            label: "Third Notice",
+            description: "Final demand notice prior to filing",
+            date: formatDate(twoWeeksLater),
+            status: "locked"
           },
-          { 
-            step: 4, 
-            label: "Police Complaint Draft", 
-            description: "Drafted complaint copy shared with SHO", 
-            date: formatDate(threeWeeksLater), 
-            status: "locked" 
+          {
+            step: 4,
+            label: "Police Complaint Draft",
+            description: "Drafted complaint copy shared with SHO",
+            date: formatDate(threeWeeksLater),
+            status: "locked"
           }
         ]
       };

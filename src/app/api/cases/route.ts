@@ -241,65 +241,65 @@ export async function POST(req: NextRequest) {
     // Build category-specific timeline labels and descriptions
     const timelineSteps = isLoanRecovery
       ? [
-          {
-            step: 1,
-            label: "First Notice",
-            description: "Notice drafted. Ready to dispatch.",
-            date: "Awaiting dispatch",
-            status: "pending"
-          },
-          {
-            step: 2,
-            label: "Police Complaint",
-            description: `Complaint dispatched to SHO of ${policeStationName} — 3 days after first notice`,
-            date: formatDate(step2Date),
-            status: "locked"
-          },
-          {
-            step: 3,
-            label: "Second Notice",
-            description: "Second demand notice dispatched 7 days after first notice",
-            date: formatDate(step3Date),
-            status: "locked"
-          },
-          {
-            step: 4,
-            label: "Third Notice",
-            description: "Final demand notice dispatched 7 days after second notice",
-            date: formatDate(step4Date),
-            status: "locked"
-          }
-        ]
+        {
+          step: 1,
+          label: "First Notice",
+          description: "Notice drafted. Ready to dispatch.",
+          date: "Awaiting dispatch",
+          status: "pending"
+        },
+        {
+          step: 2,
+          label: "Police Complaint",
+          description: `Complaint dispatched to SHO of ${policeStationName} — 3 days after first notice`,
+          date: formatDate(step2Date),
+          status: "locked"
+        },
+        {
+          step: 3,
+          label: "Second Notice",
+          description: "Second demand notice dispatched 7 days after first notice",
+          date: formatDate(step3Date),
+          status: "locked"
+        },
+        {
+          step: 4,
+          label: "Third Notice",
+          description: "Final demand notice dispatched 7 days after second notice",
+          date: formatDate(step4Date),
+          status: "locked"
+        }
+      ]
       : [
-          {
-            step: 1,
-            label: "First Notice",
-            description: "Notice drafted. Ready to dispatch.",
-            date: "Awaiting dispatch",
-            status: "pending"
-          },
-          {
-            step: 2,
-            label: "Second Notice",
-            description: "Dispatched exactly 1 week after",
-            date: formatDate(step2Date),
-            status: "locked"
-          },
-          {
-            step: 3,
-            label: "Third Notice",
-            description: "Final demand notice prior to filing",
-            date: formatDate(step3Date),
-            status: "locked"
-          },
-          {
-            step: 4,
-            label: "SHO Criminal Complaint",
-            description: `Drafted complaint copy shared for ${policeStationName}`,
-            date: formatDate(step4Date),
-            status: "locked"
-          }
-        ];
+        {
+          step: 1,
+          label: "First Notice",
+          description: "Notice drafted. Ready to dispatch.",
+          date: "Awaiting dispatch",
+          status: "pending"
+        },
+        {
+          step: 2,
+          label: "Second Notice",
+          description: "Dispatched exactly 1 week after",
+          date: formatDate(step2Date),
+          status: "locked"
+        },
+        {
+          step: 3,
+          label: "Third Notice",
+          description: "Final demand notice prior to filing",
+          date: formatDate(step3Date),
+          status: "locked"
+        },
+        {
+          step: 4,
+          label: "SHO Criminal Complaint",
+          description: `Drafted complaint copy shared for ${policeStationName}`,
+          date: formatDate(step4Date),
+          status: "locked"
+        }
+      ];
 
     const caseDoc = {
       userId, // Strictly link case to the authenticated client ObjectId
@@ -373,7 +373,7 @@ export async function PATCH(req: NextRequest) {
     let queryUserId: any = userId;
     const sessionUser = await db.collection("users").findOne({ _id: userId });
     const isSpecialAdmin = sessionUser && (
-      sessionUser.phone?.replace(/\D/g, '').endsWith('8700343611') || 
+      sessionUser.phone?.replace(/\D/g, '').endsWith('8700343611') ||
       sessionUser.phone?.replace(/\D/g, '').endsWith('8130104447')
     );
 
@@ -437,8 +437,8 @@ export async function PATCH(req: NextRequest) {
           updateDoc.timeline = existingCase.timeline.map((t: any) => {
             if (t.status === "scheduled") {
               const newScheduledAt = new Date(nextDate);
-              const tCopy = { 
-                ...t, 
+              const tCopy = {
+                ...t,
                 scheduledAt: newScheduledAt.toISOString(),
                 date: formatDate(newScheduledAt)
               };
