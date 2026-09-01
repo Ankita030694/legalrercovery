@@ -60,7 +60,100 @@ export async function POST(req: NextRequest) {
       }, { status: 400 });
     }
 
-    // OTP is verified. Move data to 'pending_payment' collection
+    // ─── OTP VERIFIED ───────────────────────────────────────────────────────
+    // Check if this phone number belongs to an existing paid user
+    const sanitizedPhone = record.phone.trim().replace(/\D/g, "");
+    const existingUser = await db.collection("users").findOne({ phone: sanitizedPhone, isPaid: true });
+
+    if (existingUser) {
+      // ── EXISTING PAID USER DETECTED ──
+      // Calculate their remaining case quota
+      const PRICE_PER_OPPOSITION = 999;
+      const amountPaid = existingUser.amountPaid || 0;
+      const limitFromAmountPaid = Math.floor(amountPaid / PRICE_PER_OPPOSITION);
+      const allowedLimit = Math.max(limitFromAmountPaid, existingUser.oppositionCount || 1);
+      const hasUnlimitedCases = existingUser.hasUnlimitedCases === true;
+
+      const currentCreatedCount = await db.collection("cases").countDocuments({ userId: existingUser._id });
+      const hasRemainingQuota = hasUnlimitedCases || currentCreatedCount < allowedLimit;
+
+      // Generate an auto-login token so the frontend can sign them in
+      const autoLoginToken = crypto.randomBytes(32).toString("hex");
+      await db.collection("users").updateOne(
+        { _id: existingUser._id },
+        {
+          $set: {
+            autoLoginToken,
+            autoLoginTokenExpires: new Date(Date.now() + 15 * 60 * 1000), // 15 mins
+            updatedAt: new Date()
+          }
+        }
+      );
+
+      // Clean up the pending_verification record
+      await db.collection("pending_verification").deleteOne({ _id: objectId });
+
+      if (hasRemainingQuota) {
+        // User has unused case slots — no payment needed, just auto-login
+        return NextResponse.json({
+          success: true,
+          isExistingUser: true,
+          hasRemainingQuota: true,
+          autoLoginToken,
+          remainingSlots: hasUnlimitedCases ? "unlimited" : (allowedLimit - currentCreatedCount),
+          userName: existingUser.name || "User"
+        }, { status: 200 });
+      } else {
+        // User has used all slots — offer choice: dashboard or pay for more
+        // Also create a pending_payment record in case they want to pay
+        const pendingPaymentUser = {
+          name: record.name,
+          email: record.email,
+          phone: record.phone,
+          state: record.state,
+          oppositionCount: record.oppositionCount || 1,
+          isReturningUser: true,
+          verified: true,
+          verifiedAt: new Date(),
+          createdAt: new Date(),
+        };
+
+        await db.collection("pending_payment").updateOne(
+          { phone: record.phone },
+          { $set: pendingPaymentUser },
+          { upsert: true }
+        );
+
+        const paymentRecord = await db.collection("pending_payment").findOne({ phone: record.phone });
+        const paymentPendingId = paymentRecord?._id.toString() || "";
+
+        const response = NextResponse.json({
+          success: true,
+          isExistingUser: true,
+          hasRemainingQuota: false,
+          autoLoginToken,
+          paymentPendingId,
+          userName: existingUser.name || "User",
+          usedSlots: currentCreatedCount,
+          totalSlots: allowedLimit
+        }, { status: 200 });
+
+        // Set browser cookie for pending payment flow
+        if (paymentPendingId) {
+          response.cookies.set("pending_checkout_id", paymentPendingId, {
+            httpOnly: true,
+            secure: process.env.NODE_ENV === "production",
+            sameSite: "lax",
+            path: "/",
+            maxAge: 60 * 60, // 1 hour
+          });
+        }
+
+        return response;
+      }
+    }
+
+    // ── BRAND NEW USER — proceed with existing payment flow ──
     const pendingPaymentUser = {
       name: record.name,
       email: record.email,

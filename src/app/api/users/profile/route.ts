@@ -35,6 +35,18 @@ export async function GET(req: NextRequest) {
       return NextResponse.json({ error: "User profile not found." }, { status: 404 });
     }
 
+    const PRICE_PER_OPPOSITION = 999;
+    const amountPaid = user.amountPaid || 0;
+    const limitFromAmountPaid = Math.floor(amountPaid / PRICE_PER_OPPOSITION);
+    const hasUnlimitedCases = user.hasUnlimitedCases === true;
+    const allowedLimit = hasUnlimitedCases ? -1 : Math.max(limitFromAmountPaid, user.oppositionCount || 1);
+
+    let usedCases = 0;
+    if (user._id) {
+      usedCases = await db.collection("cases").countDocuments({ userId: user._id });
+    }
+    const remainingCases = hasUnlimitedCases ? -1 : Math.max(0, allowedLimit - usedCases);
+
     // Return profile details safely
     return NextResponse.json({
       success: true,
@@ -44,9 +56,14 @@ export async function GET(req: NextRequest) {
         phone: user.phone,
         state: user.state || "Haryana",
         address: user.address || "",
-        hasUnlimitedCases: user.hasUnlimitedCases || false,
+        hasUnlimitedCases,
         isPaid: user.isPaid || false,
-        sendPoliceComplaints: user.sendPoliceComplaints !== false
+        sendPoliceComplaints: user.sendPoliceComplaints !== false,
+        amountPaid,
+        oppositionCount: user.oppositionCount || 1,
+        allowedLimit,
+        usedCases,
+        remainingCases
       }
     });
 

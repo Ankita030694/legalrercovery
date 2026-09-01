@@ -23,9 +23,11 @@ import {
   Briefcase,
   Trash2,
   Eye,
-  Edit
+  Edit,
+  CreditCard
 } from "lucide-react";
 import Link from "next/link";
+import { BuyCreditsModal } from "@/components/BuyCreditsModal";
 
 const formatDateToDisplay = (dateStr: string) => {
   if (!dateStr) return "-";
@@ -96,7 +98,14 @@ export default function NewRecoveryForm() {
     state: string;
     address: string;
     hasUnlimitedCases?: boolean;
+    amountPaid?: number;
+    oppositionCount?: number;
+    allowedLimit?: number;
+    usedCases?: number;
+    remainingCases?: number;
   } | null>(null);
+
+  const [isBuyCreditsOpen, setIsBuyCreditsOpen] = useState(false);
 
   // States for advocate representation features
   const [representees, setRepresentees] = useState<any[]>([]);
@@ -606,7 +615,11 @@ export default function NewRecoveryForm() {
       router.push("/user/dashboard");
     } catch (err: any) {
       console.error("Failed to save claim record:", err);
-      alert(err.message || "Failed to save claim record.");
+      if (err.message && (err.message.includes("limit reached") || err.message.includes("purchase additional slots"))) {
+        setIsBuyCreditsOpen(true);
+      } else {
+        alert(err.message || "Failed to save claim record.");
+      }
     } finally {
       setIsSubmitting(false);
       setShowPreviewModal(false);
@@ -1351,15 +1364,45 @@ export default function NewRecoveryForm() {
       <div className="flex-1 px-4 sm:px-6 lg:px-8 py-8 w-full max-w-8xl mx-auto">
         <div className={`relative flex flex-col gap-6 text-left animate-in fade-in duration-355`}>
       
-      {/* Back button */}
-      <div>
+      {/* Back button and Buy Credits */}
+      <div className="flex items-center justify-between gap-3">
         <Link 
           href="/user/dashboard"
           className="inline-flex items-center gap-1.5 text-xs font-bold text-slate-500 hover:text-[#DC2626] transition-colors bg-white px-3.5 py-2 rounded-xl border border-[#E5E7EB]/80 shadow-sm"
         >
           <ArrowLeft className="w-3.5 h-3.5" /> Back to Claims
         </Link>
+
+        {clientProfile && !clientProfile.hasUnlimitedCases && (
+          <button
+            type="button"
+            onClick={() => setIsBuyCreditsOpen(true)}
+            className="inline-flex items-center gap-1.5 text-xs font-black text-slate-800 bg-white border-2 border-slate-200 hover:border-[#DC2626]/40 hover:bg-red-50/30 px-3.5 py-2 rounded-xl shadow-sm transition-all hover:-translate-y-0.5 cursor-pointer"
+          >
+            <CreditCard className="w-3.5 h-3.5 text-[#DC2626]" />
+            Buy Credits (₹999)
+          </button>
+        )}
       </div>
+
+      {/* Quota Limit Warning Banner */}
+      {clientProfile && !clientProfile.hasUnlimitedCases && clientProfile.remainingCases === 0 && (
+        <div className="bg-red-50 border-2 border-red-200 rounded-2xl p-4 sm:p-5 flex flex-col sm:flex-row sm:items-center justify-between gap-3 text-left">
+          <div>
+            <h4 className="text-xs font-black text-red-800 uppercase tracking-wider">Case Limit Reached (0 Slots Remaining)</h4>
+            <p className="text-xs font-semibold text-red-700 mt-0.5">
+              You have used all {clientProfile.allowedLimit || 1} of your case slots. Purchase additional credits to submit this claim.
+            </p>
+          </div>
+          <button
+            type="button"
+            onClick={() => setIsBuyCreditsOpen(true)}
+            className="px-4 py-2.5 bg-[#DC2626] hover:bg-[#B91C1C] text-white text-xs font-black rounded-xl shadow-md transition-all shrink-0 cursor-pointer"
+          >
+            Add Case Slots (₹999)
+          </button>
+        </div>
+      )}
 
       {/* Header */}
       <div>
@@ -2743,6 +2786,31 @@ export default function NewRecoveryForm() {
 
         </div>
       </div>
+
+      {/* ── Buy Credits Modal ── */}
+      <BuyCreditsModal
+        isOpen={isBuyCreditsOpen}
+        onClose={() => {
+          setIsBuyCreditsOpen(false);
+          const fetchProfile = async () => {
+            try {
+              const res = await fetch("/api/users/profile");
+              if (res.ok) {
+                const data = await res.json();
+                if (data.success && data.profile) {
+                  setClientProfile(data.profile);
+                  setOriginalClientProfile(data.profile);
+                }
+              }
+            } catch {}
+          };
+          fetchProfile();
+        }}
+        currentUsed={clientProfile?.usedCases}
+        currentTotal={clientProfile?.allowedLimit}
+        remainingCredits={clientProfile?.remainingCases}
+      />
+
     </main>
   );
 }

@@ -82,12 +82,21 @@ export default function Navbar() {
               Login
             </a>
           )}
-          <button
-            onClick={() => setIsPaymentModalOpen(true)}
-            className="px-5 py-2.5 text-[13.5px] font-bold text-white bg-[#DC2626] hover:bg-[#B91C1C] rounded-[10px] shadow-[0_4px_12px_rgba(220,38,38,0.15)] transition-all duration-200 hover:-translate-y-0.5 focus:outline-none select-none cursor-pointer"
-          >
-            Recover My Money
-          </button>
+          {session ? (
+            <a
+              href="/user/new-recovery"
+              className="px-5 py-2.5 text-[13.5px] font-bold text-white bg-[#DC2626] hover:bg-[#B91C1C] rounded-[10px] shadow-[0_4px_12px_rgba(220,38,38,0.15)] transition-all duration-200 hover:-translate-y-0.5 focus:outline-none select-none cursor-pointer"
+            >
+              Recover My Money
+            </a>
+          ) : (
+            <button
+              onClick={() => setIsPaymentModalOpen(true)}
+              className="px-5 py-2.5 text-[13.5px] font-bold text-white bg-[#DC2626] hover:bg-[#B91C1C] rounded-[10px] shadow-[0_4px_12px_rgba(220,38,38,0.15)] transition-all duration-200 hover:-translate-y-0.5 focus:outline-none select-none cursor-pointer"
+            >
+              Recover My Money
+            </button>
+          )}
         </div>
 
         {/* ── Mobile Hamburger ── */}
@@ -118,15 +127,25 @@ export default function Navbar() {
             );
           })}
           <div className="mt-6 flex flex-col gap-3">
-            <button
-              onClick={() => {
-                setMobileMenuOpen(false);
-                setIsPaymentModalOpen(true);
-              }}
-              className="flex items-center justify-center gap-2 py-3.5 text-sm font-bold text-white bg-[#DC2626] rounded-xl shadow-md cursor-pointer focus:outline-none"
-            >
-              Recover My Money
-            </button>
+            {session ? (
+              <a
+                href="/user/new-recovery"
+                onClick={() => setMobileMenuOpen(false)}
+                className="flex items-center justify-center gap-2 py-3.5 text-sm font-bold text-white bg-[#DC2626] rounded-xl shadow-md cursor-pointer focus:outline-none"
+              >
+                Recover My Money
+              </a>
+            ) : (
+              <button
+                onClick={() => {
+                  setMobileMenuOpen(false);
+                  setIsPaymentModalOpen(true);
+                }}
+                className="flex items-center justify-center gap-2 py-3.5 text-sm font-bold text-white bg-[#DC2626] rounded-xl shadow-md cursor-pointer focus:outline-none"
+              >
+                Recover My Money
+              </button>
+            )}
             {loading ? (
               <div className="w-full h-[46px] bg-[#E5E7EB]/50 rounded-xl animate-pulse" />
             ) : session ? (

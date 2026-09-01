@@ -21,10 +21,13 @@ import {
   ChevronDown,
   Briefcase,
   Send,
-  Calendar
+  Calendar,
+  CreditCard,
+  Sparkles
 } from "lucide-react";
 import Link from "next/link";
 import { useRouter } from "next/navigation";
+import { BuyCreditsModal } from "@/components/BuyCreditsModal";
 
 // Pre-populated high-fidelity demo cases for first-time visits
 const initialCases = [
@@ -93,6 +96,7 @@ export default function UserDashboard() {
   const [userProfile, setUserProfile] = useState<any>(null);
   const [isUpdatingToggle, setIsUpdatingToggle] = useState(false);
   const [isForceDispatching, setIsForceDispatching] = useState<Record<string, boolean>>({});
+  const [isBuyCreditsOpen, setIsBuyCreditsOpen] = useState(false);
 
   const fetchCases = async () => {
     try {
@@ -625,6 +629,16 @@ export default function UserDashboard() {
             </>
           )}
 
+          {!hasUnlimitedCases && (
+            <button
+              onClick={() => setIsBuyCreditsOpen(true)}
+              className="w-full md:w-auto px-5 py-3 text-sm font-black text-slate-800 bg-white border-2 border-slate-200 hover:border-[#DC2626]/40 hover:bg-red-50/40 rounded-xl shadow-sm hover:-translate-y-0.5 transition-all duration-200 flex items-center justify-center gap-2 cursor-pointer focus:outline-none"
+            >
+              <CreditCard className="w-4 h-4 text-[#DC2626]" />
+              Buy Credits (₹999)
+            </button>
+          )}
+
           <div className="relative w-full md:w-auto">
             <Link
               href="/user/new-recovery"
@@ -664,6 +678,44 @@ export default function UserDashboard() {
           </div>
         </div>
       </div>
+
+      {/* ── Case Credits & Quota Banner (for standard users) ── */}
+      {userProfile && !userProfile.hasUnlimitedCases && (
+        <div className="bg-gradient-to-r from-slate-900 via-slate-850 to-slate-900 text-white rounded-2xl p-4 sm:p-5 flex flex-col sm:flex-row sm:items-center justify-between gap-4 shadow-md border border-slate-800 relative overflow-hidden">
+          <div className="flex items-center gap-3.5 relative z-10">
+            <div className="w-11 h-11 rounded-2xl bg-red-500/20 border border-red-500/30 flex items-center justify-center text-red-400 shrink-0">
+              <CreditCard className="w-5 h-5" />
+            </div>
+            <div className="text-left">
+              <div className="flex items-center gap-2">
+                <span className="text-[11px] font-bold text-slate-400 uppercase tracking-wider">Account Case Allowance</span>
+                <span className={`px-2.5 py-0.5 rounded-full text-[10px] font-black uppercase tracking-wider border ${
+                  (userProfile.remainingCases ?? 0) > 0 
+                    ? "bg-emerald-500/20 text-emerald-300 border-emerald-500/30" 
+                    : "bg-red-500/20 text-red-300 border-red-500/30"
+                }`}>
+                  {(userProfile.remainingCases ?? 0) > 0 
+                    ? `${userProfile.remainingCases} ${userProfile.remainingCases === 1 ? 'Slot' : 'Slots'} Available` 
+                    : "0 Slots Left"}
+                </span>
+              </div>
+              <p className="text-xs sm:text-sm font-semibold text-slate-200 mt-1">
+                <span className="text-white font-extrabold">{userProfile.usedCases ?? 0}</span> of <span className="text-white font-extrabold">{userProfile.allowedLimit ?? 1}</span> case slots used
+                {userProfile.amountPaid ? ` (₹${userProfile.amountPaid.toLocaleString("en-IN")} total paid)` : ""}
+              </p>
+            </div>
+          </div>
+
+          <button
+            type="button"
+            onClick={() => setIsBuyCreditsOpen(true)}
+            className="px-4 py-2.5 bg-[#DC2626] hover:bg-[#B91C1C] text-white text-xs font-black rounded-xl transition-all shadow-md shadow-red-950/40 flex items-center justify-center gap-1.5 shrink-0 cursor-pointer hover:-translate-y-0.5 relative z-10"
+          >
+            <Plus className="w-3.5 h-3.5" />
+            Add Case Slots (₹999)
+          </button>
+        </div>
+      )}
 
       {/* ── Quick Metrics Grid ── */}
       <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
@@ -1426,6 +1478,18 @@ export default function UserDashboard() {
           </div>
         );
       })()}
+
+      {/* ── Buy Credits Modal ── */}
+      <BuyCreditsModal
+        isOpen={isBuyCreditsOpen}
+        onClose={() => {
+          setIsBuyCreditsOpen(false);
+          fetchUserData();
+        }}
+        currentUsed={userProfile?.usedCases}
+        currentTotal={userProfile?.allowedLimit}
+        remainingCredits={userProfile?.remainingCases}
+      />
 
     </div>
   );

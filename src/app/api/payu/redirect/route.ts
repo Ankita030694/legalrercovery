@@ -102,33 +102,58 @@ export async function POST(req: NextRequest) {
             const oppCount = pendingPaymentUser.oppositionCount || 1;
             const amtPaid = oppCount * PRICE_PER_OPPOSITION;
 
-            // Upsert details into the main users collection
             const autoLoginToken = crypto.randomBytes(32).toString('hex');
             tokenParam = `?token=${autoLoginToken}`;
 
-            await db.collection("users").updateOne(
-              { phone: pendingPaymentUser.phone },
-              {
-                $set: {
-                  name: pendingPaymentUser.name,
-                  email: pendingPaymentUser.email,
-                  phone: pendingPaymentUser.phone,
-                  state: pendingPaymentUser.state,
-                  oppositionCount: oppCount,
-                  amountPaid: amtPaid,
-                  isPaid: true,
-                  payuTxnId: txnid,
-                  paymentDate: new Date(),
-                  updatedAt: new Date(),
-                  autoLoginToken,
-                  autoLoginTokenExpires: new Date(Date.now() + 15 * 60 * 1000) // 15 mins
-                },
-                $setOnInsert: {
-                  createdAt: new Date()
+            // Check if user already exists in the users collection (returning paid user)
+            const existingUser = await db.collection("users").findOne({ phone: pendingPaymentUser.phone });
+
+            if (existingUser) {
+              // RETURNING USER: Accumulate amountPaid and oppositionCount instead of overwriting
+              await db.collection("users").updateOne(
+                { phone: pendingPaymentUser.phone },
+                {
+                  $inc: {
+                    amountPaid: amtPaid,
+                    oppositionCount: oppCount
+                  },
+                  $set: {
+                    isPaid: true,
+                    payuTxnId: txnid,
+                    lastPaymentDate: new Date(),
+                    updatedAt: new Date(),
+                    autoLoginToken,
+                    autoLoginTokenExpires: new Date(Date.now() + 15 * 60 * 1000)
+                  }
                 }
-              },
-              { upsert: true }
-            );
+              );
+              console.log(`Returning user payment accumulated. Phone: ${pendingPaymentUser.phone}, Added: ₹${amtPaid}`);
+            } else {
+              // NEW USER: Standard upsert with initial values
+              await db.collection("users").updateOne(
+                { phone: pendingPaymentUser.phone },
+                {
+                  $set: {
+                    name: pendingPaymentUser.name,
+                    email: pendingPaymentUser.email,
+                    phone: pendingPaymentUser.phone,
+                    state: pendingPaymentUser.state,
+                    oppositionCount: oppCount,
+                    amountPaid: amtPaid,
+                    isPaid: true,
+                    payuTxnId: txnid,
+                    paymentDate: new Date(),
+                    updatedAt: new Date(),
+                    autoLoginToken,
+                    autoLoginTokenExpires: new Date(Date.now() + 15 * 60 * 1000)
+                  },
+                  $setOnInsert: {
+                    createdAt: new Date()
+                  }
+                },
+                { upsert: true }
+              );
+            }
             
             // Remove the record from pending_payment collection using its database _id
             await db.collection("pending_payment").deleteOne({ _id: pendingPaymentUser._id });
@@ -154,18 +179,19 @@ export async function POST(req: NextRequest) {
               await db.collection("payment_debug_logs").insertOne({
                 step: "redirect_migration_success",
                 timestamp: new Date(),
-                data: { phone: pendingPaymentUser.phone, amtPaid, caseMigratedId: pendingPaymentUser._id.toString(), transactionLogged: !!migratedUser }
+                data: { phone: pendingPaymentUser.phone, amtPaid, isReturningUser: !!existingUser, caseMigratedId: pendingPaymentUser._id.toString(), transactionLogged: !!migratedUser }
               });
             } catch (logErr) {}
 
-            // Trigger payment success email and WATI WhatsApp notifications and await their completion to prevent serverless function termination
+            // Trigger payment success email and WATI WhatsApp notifications
             try {
               await processPaymentSuccessNotifications(
                 db,
                 pendingPaymentUser.phone,
                 pendingPaymentUser.email,
                 pendingPaymentUser.name,
-                amtPaid
+                amtPaid,
+                txnid
               );
             } catch (notiErr) {
               console.error("Error triggering success notifications in redirect route:", notiErr);

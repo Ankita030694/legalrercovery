@@ -5,20 +5,22 @@ import { sendWatiPaymentSuccess, sendWatiClientNoticeNotification } from "./wati
 /**
  * Co-ordinates deduplicated dispatches of payment success emails and WATI WhatsApp alerts.
  * Generates a unique Case ID, logs parameters, and sets the transaction flag in the database.
+ * Deduplication is per-transaction (via txnid) instead of per-user to ensure every new payment gets its own confirmation.
  */
 export async function processPaymentSuccessNotifications(
   db: Db,
   phone: string,
   email: string,
   name: string,
-  amountPaid: number
+  amountPaid: number,
+  txnid?: string
 ): Promise<void> {
   // Debug log entry
   try {
     await db.collection("payment_debug_logs").insertOne({
       step: "notification_triggered",
       timestamp: new Date(),
-      data: { phone, email, name, amountPaid }
+      data: { phone, email, name, amountPaid, txnid }
     });
   } catch (err) {
     console.error("Failed to write initial notification log to DB:", err);
@@ -32,7 +34,7 @@ export async function processPaymentSuccessNotifications(
       await db.collection("payment_debug_logs").insertOne({
         step: "notification_user_query",
         timestamp: new Date(),
-        data: { phone, userFound: !!user, currentConfirmationSent: user?.paymentConfirmationSent }
+        data: { phone, userFound: !!user, txnid }
       });
     } catch {}
 
@@ -41,10 +43,22 @@ export async function processPaymentSuccessNotifications(
       return;
     }
 
-    // Deduplication check
-    if (user.paymentConfirmationSent) {
-      console.log(`[Notification] Payment confirmation already sent to phone ${phone}. Skipping to prevent duplicates.`);
-      return;
+    // Per-transaction deduplication: check if notification was already sent for this specific transaction
+    if (txnid) {
+      const existingNotification = await db.collection("transactions").findOne({
+        payuTxnId: txnid,
+        notificationSent: true
+      });
+      if (existingNotification) {
+        console.log(`[Notification] Payment confirmation already sent for txnid ${txnid}. Skipping to prevent duplicates.`);
+        return;
+      }
+    } else {
+      // Fallback for calls without txnid (legacy): use the old global boolean
+      if (user.paymentConfirmationSent) {
+        console.log(`[Notification] Payment confirmation already sent to phone ${phone} (legacy check). Skipping to prevent duplicates.`);
+        return;
+      }
     }
 
     // 2. Generate caseId if not already present
@@ -59,7 +73,7 @@ export async function processPaymentSuccessNotifications(
       caseId = `LR-${nextNum}-${day}${month}${yearSuffix}`;
     }
 
-    // 3. Persist the caseId, amountPaid, and dispatch lock flag in the database immediately
+    // 3. Persist the caseId and amountPaid in the database immediately
     await db.collection("users").updateOne(
       { _id: user._id },
       {
@@ -72,12 +86,20 @@ export async function processPaymentSuccessNotifications(
       }
     );
 
-    console.log(`[Notification] Dispatched lock acquired. Starting dispatches for Case ${caseId} to phone ${phone}`);
+    // Mark this specific transaction's notification as sent (per-transaction deduplication)
+    if (txnid) {
+      await db.collection("transactions").updateOne(
+        { payuTxnId: txnid },
+        { $set: { notificationSent: true, notificationSentAt: new Date() } }
+      );
+    }
+
+    console.log(`[Notification] Dispatched lock acquired. Starting dispatches for Case ${caseId} to phone ${phone} (txnid: ${txnid || "N/A"})`);
     try {
       await db.collection("payment_debug_logs").insertOne({
         step: "notification_dispatch_start",
         timestamp: new Date(),
-        data: { phone, email, name, amountPaid, caseId }
+        data: { phone, email, name, amountPaid, caseId, txnid }
       });
     } catch {}
 

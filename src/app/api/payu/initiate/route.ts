@@ -53,7 +53,7 @@ export async function POST(req: NextRequest) {
       { $set: { txnid, updatedAt: new Date() } }
     );
     const productinfo = "Paid With ButtonId 111293057";
-    const firstname = name.trim().replace(/[^a-zA-Z0-9\s]/g, ""); // Alpha-numeric + spaces only
+    const firstname = name.trim().replace(/[^a-zA-Z0-9\s]/g, "") || "Client"; // Alpha-numeric + spaces only
     const sanitizedEmail = email.trim().toLowerCase();
     let sanitizedPhone = phone.trim().replace(/\D/g, "");
     if (sanitizedPhone.startsWith("0") && sanitizedPhone.length === 11) {

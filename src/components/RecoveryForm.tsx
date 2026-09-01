@@ -2,11 +2,14 @@
 
 import React, { useState, useMemo, useEffect } from "react";
 import Link from "next/link";
-import { User, Mail, Phone, MapPin, CheckCircle, AlertCircle, Loader2, Shield, ArrowLeft, Lock } from "lucide-react";
+import { useRouter } from "next/navigation";
+import { signIn } from "next-auth/react";
+import { User, Mail, Phone, MapPin, CheckCircle, AlertCircle, Loader2, Shield, ArrowLeft, Lock, LogIn, CreditCard } from "lucide-react";
 
 export const RecoveryForm = () => {
   const PRICE_PER_OPPOSITION = 999; // TO CHANGE TO PRODUCTION PRICE: Change 1 to 999
-  const [step, setStep] = useState(1); // 1 = Details, 2 = OTP Verification
+  const router = useRouter();
+  const [step, setStep] = useState(1); // 1 = Details, 2 = OTP Verification, 3 = Existing User Decision
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [phone, setPhone] = useState("");
@@ -19,6 +22,18 @@ export const RecoveryForm = () => {
   const [formTouched, setFormTouched] = useState(false);
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [submitError, setSubmitError] = useState<string | null>(null);
+
+  // Existing user state
+  const [existingUserData, setExistingUserData] = useState<{
+    autoLoginToken: string;
+    hasRemainingQuota: boolean;
+    paymentPendingId?: string;
+    userName: string;
+    remainingSlots?: number | string;
+    usedSlots?: number;
+    totalSlots?: number;
+  } | null>(null);
+  const [isAutoLoggingIn, setIsAutoLoggingIn] = useState(false);
 
   useEffect(() => {
     if (resendCooldown <= 0) return;
@@ -103,6 +118,72 @@ export const RecoveryForm = () => {
     }
   };
 
+  const handleAutoLogin = async (token: string) => {
+    setIsAutoLoggingIn(true);
+    try {
+      const res = await signIn("credentials", {
+        redirect: false,
+        token,
+      });
+
+      if (res && !res.error) {
+        router.push("/user/dashboard");
+        router.refresh();
+      } else {
+        // Fallback: redirect to login page
+        router.push("/login");
+      }
+    } catch {
+      router.push("/login");
+    }
+  };
+
+  const handlePayForMore = async () => {
+    if (!existingUserData?.paymentPendingId) return;
+    setIsSubmitting(true);
+    setSubmitError(null);
+
+    try {
+      const initiateRes = await fetch("/api/payu/initiate", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ 
+          name, 
+          email, 
+          phone, 
+          state, 
+          paymentPendingId: existingUserData.paymentPendingId,
+          oppositionCount
+        }),
+      });
+
+      const initiateData = await initiateRes.json().catch(() => ({}));
+      if (!initiateRes.ok) {
+        setSubmitError(initiateData?.error || "Failed to initialize payment gateway.");
+        setIsSubmitting(false);
+        return;
+      }
+
+      const form = document.createElement("form");
+      form.method = "POST";
+      form.action = initiateData.action;
+
+      Object.keys(initiateData.fields).forEach((key) => {
+        const input = document.createElement("input");
+        input.type = "hidden";
+        input.name = key;
+        input.value = initiateData.fields[key];
+        form.appendChild(input);
+      });
+
+      document.body.appendChild(form);
+      form.submit();
+    } catch {
+      setIsSubmitting(false);
+      setSubmitError("Network error. Please try again.");
+    }
+  };
+
   const handleVerifyOtp = async (e: React.FormEvent) => {
     e.preventDefault();
     setSubmitError(null);
@@ -128,6 +209,33 @@ export const RecoveryForm = () => {
         return;
       }
 
+      // ── EXISTING USER DETECTED ──
+      if (data.isExistingUser) {
+        setExistingUserData({
+          autoLoginToken: data.autoLoginToken,
+          hasRemainingQuota: data.hasRemainingQuota,
+          paymentPendingId: data.paymentPendingId,
+          userName: data.userName,
+          remainingSlots: data.remainingSlots,
+          usedSlots: data.usedSlots,
+          totalSlots: data.totalSlots,
+        });
+
+        if (data.hasRemainingQuota) {
+          // Auto-login directly — user has unused case slots
+          setStep(3);
+          setIsSubmitting(false);
+          // Trigger auto-login after a brief display
+          setTimeout(() => handleAutoLogin(data.autoLoginToken), 1500);
+        } else {
+          // Show decision UI — user has used all slots
+          setStep(3);
+          setIsSubmitting(false);
+        }
+        return;
+      }
+
+      // ── BRAND NEW USER — proceed to PayU ──
       if (data.paymentPendingId) {
         const initiateRes = await fetch("/api/payu/initiate", {
           method: "POST",
@@ -206,12 +314,16 @@ export const RecoveryForm = () => {
     <>
       <div className="text-center mb-6">
         <h2 className="text-xl sm:text-2xl font-black text-[#111827] mb-2 tracking-tight">
-          {step === 1 ? "Complete Details" : "Verify Identity"}
+          {step === 1 ? "Complete Details" : step === 2 ? "Verify Identity" : "Welcome Back!"}
         </h2>
         <p className="text-xs sm:text-sm text-slate-500 font-semibold">
           {step === 1 
             ? "Enter your details to initiate secure legal recovery setup." 
-            : "Enter the OTP sent to your WhatsApp and email to verify your identity."
+            : step === 2
+            ? "Enter the OTP sent to your WhatsApp and email to verify your identity."
+            : existingUserData?.hasRemainingQuota
+            ? "We found your existing account. Redirecting you to your dashboard..."
+            : "You've used all your current case slots."
           }
         </p>
       </div>
@@ -353,7 +465,7 @@ export const RecoveryForm = () => {
             Payments are securely processed by PayU.
           </p>
         </form>
-      ) : (
+      ) : step === 2 ? (
         <form onSubmit={handleVerifyOtp} className="flex flex-col gap-4 sm:gap-5 select-none text-center">
           <div className="mx-auto w-12 h-12 rounded-full bg-red-50 flex items-center justify-center text-[#DC2626] mb-2 border border-red-100">
             <Lock className="w-5 h-5" />
@@ -425,6 +537,103 @@ export const RecoveryForm = () => {
             Your payment is secure. We never share your data.
           </p>
         </form>
+      ) : (
+        /* ── STEP 3: EXISTING USER DECISION SCREEN ── */
+        <div className="flex flex-col gap-4 sm:gap-5 select-none text-center">
+          {existingUserData?.hasRemainingQuota ? (
+            /* User has unused case slots — auto-logging in */
+            <>
+              <div className="mx-auto w-16 h-16 rounded-full bg-emerald-50 flex items-center justify-center text-emerald-600 mb-2 border-2 border-emerald-100">
+                <CheckCircle className="w-8 h-8" />
+              </div>
+              <div className="bg-emerald-50/50 border border-emerald-200 rounded-2xl p-5">
+                <p className="text-sm font-bold text-emerald-800 mb-2">
+                  Welcome back, {existingUserData.userName}!
+                </p>
+                <p className="text-xs text-emerald-700 font-semibold leading-relaxed">
+                  You already have an active recovery plan with{" "}
+                  <span className="font-extrabold">
+                    {existingUserData.remainingSlots === "unlimited" 
+                      ? "unlimited" 
+                      : existingUserData.remainingSlots
+                    } unused case slot{existingUserData.remainingSlots !== 1 ? "s" : ""}
+                  </span>.
+                  Signing you in now...
+                </p>
+              </div>
+              <div className="flex items-center justify-center gap-2 text-emerald-600">
+                <Loader2 className="w-4 h-4 animate-spin" />
+                <span className="text-xs font-black">Redirecting to your dashboard...</span>
+              </div>
+            </>
+          ) : (
+            /* User has used all case slots — decision required */
+            <>
+              <div className="mx-auto w-16 h-16 rounded-full bg-blue-50 flex items-center justify-center text-blue-600 mb-2 border-2 border-blue-100">
+                <User className="w-8 h-8" />
+              </div>
+              <div className="bg-slate-50 border border-slate-200 rounded-2xl p-5">
+                <p className="text-sm font-bold text-[#111827] mb-2">
+                  Welcome back, {existingUserData?.userName}!
+                </p>
+                <p className="text-xs text-slate-600 font-semibold leading-relaxed">
+                  You have used all <span className="font-extrabold">{existingUserData?.totalSlots}</span> of your current case slots
+                  ({existingUserData?.usedSlots} case{(existingUserData?.usedSlots || 0) !== 1 ? "s" : ""} filed).
+                </p>
+              </div>
+
+              <div className="flex flex-col gap-3 mt-2">
+                {/* Option 1: Go to Dashboard */}
+                <button
+                  type="button"
+                  disabled={isAutoLoggingIn}
+                  onClick={() => {
+                    if (existingUserData?.autoLoginToken) {
+                      handleAutoLogin(existingUserData.autoLoginToken);
+                    }
+                  }}
+                  className="w-full py-3.5 text-sm font-black text-[#111827] bg-white border-2 border-[#E5E7EB] hover:border-[#DC2626]/30 hover:bg-slate-50 rounded-xl transition-all duration-200 flex items-center justify-center gap-2 hover:-translate-y-0.5 cursor-pointer"
+                >
+                  {isAutoLoggingIn ? (
+                    <>
+                      <Loader2 className="w-4 h-4 animate-spin" />
+                      Signing you in...
+                    </>
+                  ) : (
+                    <>
+                      <LogIn className="w-4 h-4" />
+                      Go to My Dashboard
+                    </>
+                  )}
+                </button>
+
+                {/* Option 2: Pay for Additional Case */}
+                <button
+                  type="button"
+                  disabled={isSubmitting || isAutoLoggingIn}
+                  onClick={handlePayForMore}
+                  className="w-full py-3.5 text-sm font-black text-white bg-[#DC2626] hover:bg-[#B91C1C] disabled:bg-[#DC2626]/60 rounded-xl transition-all duration-200 shadow-md shadow-red-950/30 flex items-center justify-center gap-2 hover:-translate-y-0.5 cursor-pointer"
+                >
+                  {isSubmitting ? (
+                    <>
+                      <Loader2 className="w-4 h-4 animate-spin" />
+                      Initializing Payment...
+                    </>
+                  ) : (
+                    <>
+                      <CreditCard className="w-4 h-4" />
+                      Add New Case (₹{oppositionCount * PRICE_PER_OPPOSITION})
+                    </>
+                  )}
+                </button>
+              </div>
+
+              <p className="text-[10px] text-center text-slate-400 font-semibold mt-1">
+                Adding a new case will extend your recovery plan with additional opposing party slots.
+              </p>
+            </>
+          )}
+        </div>
       )}
     </>
   );

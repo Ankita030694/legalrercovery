@@ -131,28 +131,52 @@ export async function POST(req: NextRequest) {
           const PRICE_PER_OPPOSITION = 999; // TO CHANGE TO PRODUCTION PRICE: Change 1 to 999
           const oppCount = pendingUser.oppositionCount || 1;
           const amtPaid = oppCount * PRICE_PER_OPPOSITION;
-          
-          await db.collection("users").updateOne(
-            { phone: pendingUser.phone },
-            {
-              $set: {
-                name: pendingUser.name,
-                email: pendingUser.email,
-                phone: pendingUser.phone,
-                state: pendingUser.state,
-                oppositionCount: oppCount,
-                amountPaid: amtPaid,
-                isPaid: true,
-                payuTxnId: txnid,
-                paymentDate: new Date(),
-                updatedAt: new Date()
-              },
-              $setOnInsert: {
-                createdAt: new Date()
+
+          // Check if user already exists in the users collection (returning paid user)
+          const existingUser = await db.collection("users").findOne({ phone: pendingUser.phone });
+
+          if (existingUser) {
+            // RETURNING USER: Accumulate amountPaid and oppositionCount instead of overwriting
+            await db.collection("users").updateOne(
+              { phone: pendingUser.phone },
+              {
+                $inc: {
+                  amountPaid: amtPaid,
+                  oppositionCount: oppCount
+                },
+                $set: {
+                  isPaid: true,
+                  payuTxnId: txnid,
+                  lastPaymentDate: new Date(),
+                  updatedAt: new Date()
+                }
               }
-            },
-            { upsert: true }
-          );
+            );
+            console.log(`Webhook: Returning user payment accumulated. Phone: ${pendingUser.phone}, Added: ₹${amtPaid}`);
+          } else {
+            // NEW USER: Standard upsert with initial values
+            await db.collection("users").updateOne(
+              { phone: pendingUser.phone },
+              {
+                $set: {
+                  name: pendingUser.name,
+                  email: pendingUser.email,
+                  phone: pendingUser.phone,
+                  state: pendingUser.state,
+                  oppositionCount: oppCount,
+                  amountPaid: amtPaid,
+                  isPaid: true,
+                  payuTxnId: txnid,
+                  paymentDate: new Date(),
+                  updatedAt: new Date()
+                },
+                $setOnInsert: {
+                  createdAt: new Date()
+                }
+              },
+              { upsert: true }
+            );
+          }
           
           // Delete from pending_payment to clean up database
           await db.collection("pending_payment").deleteOne({ _id: userPendingId });
@@ -181,7 +205,7 @@ export async function POST(req: NextRequest) {
             await db.collection("payment_debug_logs").insertOne({
               step: "webhook_migration_success",
               timestamp: new Date(),
-              data: { phone: pendingUser.phone, amtPaid, caseMigratedId: userPendingId.toString(), transactionLogged: !!migratedUser }
+              data: { phone: pendingUser.phone, amtPaid, isReturningUser: !!existingUser, caseMigratedId: userPendingId.toString(), transactionLogged: !!migratedUser }
             });
           } catch {}
 
@@ -191,7 +215,8 @@ export async function POST(req: NextRequest) {
             pendingUser.phone,
             pendingUser.email,
             pendingUser.name,
-            amtPaid
+            amtPaid,
+            txnid
           );
           
         } else {
@@ -249,7 +274,8 @@ export async function POST(req: NextRequest) {
                 user.phone,
                 user.email,
                 user.name,
-                amtPaid
+                amtPaid,
+                txnid
               );
             }
           } else {
