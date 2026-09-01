@@ -14,7 +14,8 @@ import {
   ChevronRight,
   History,
   Briefcase,
-  CreditCard
+  CreditCard,
+  MessageSquare
 } from "lucide-react";
 
 const adminNavigationItems = [
@@ -23,6 +24,12 @@ const adminNavigationItems = [
     href: "/authority/dashboard",
     icon: LayoutDashboard,
     mobileLabel: "Home"
+  },
+  {
+    label: "Inbound Replies",
+    href: "/authority/replies",
+    icon: MessageSquare,
+    mobileLabel: "Replies"
   },
   {
     label: "Case Inspector",
@@ -267,7 +274,7 @@ export default function AuthorityLayout({
 
       {/* ── MAIN WORKSPACE CONTENT CONTAINER ── */}
       <main className="flex-1 lg:pl-[275px] pt-16 pb-16 lg:pt-0 lg:pb-0 min-h-screen flex flex-col">
-        <div className={`flex-1 py-8 lg:py-10 w-full mx-auto ${['/authority/dispatch-logs', '/authority/transactions', '/authority/contact-submissions', '/authority/conversion-funnel'].includes(pathname) ? 'px-4' : 'px-4 sm:px-6 lg:px-12 max-w-7xl'}`}>
+        <div className={`flex-1 py-8 lg:py-10 w-full mx-auto ${['/authority/dispatch-logs', '/authority/transactions', '/authority/contact-submissions', '/authority/conversion-funnel', '/authority/replies'].includes(pathname) ? 'px-4' : 'px-4 sm:px-6 lg:px-12 max-w-7xl'}`}>
           {children}
         </div>
       </main>
