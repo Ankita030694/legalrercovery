@@ -9,6 +9,9 @@ export default function TimedPopupModal() {
   const pathname = usePathname();
 
   useEffect(() => {
+    // Disable in development environment
+    if (process.env.NODE_ENV === "development") return;
+
     // Reset state on path change
     setIsOpen(false);
 
@@ -40,6 +43,9 @@ export default function TimedPopupModal() {
       clearTimeout(timer);
     };
   }, [pathname]);
+
+  // Disable in development environment
+  if (process.env.NODE_ENV === "development") return null;
 
   if (!pathname) return null;
 

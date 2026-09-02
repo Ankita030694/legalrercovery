@@ -193,6 +193,13 @@ const STATIC_ROUTES: {
   { path: "/send-a-legal-notice/delayed-salary-startup-company-india", changeFrequency: "weekly", priority: 0.85 },
   { path: "/send-a-legal-notice/recover-money-from-tenant-who-damaged-property", changeFrequency: "weekly", priority: 0.85 },
   { path: "/send-a-legal-notice/gym-yoga-club-membership-fee-refund", changeFrequency: "weekly", priority: 0.85 },
+  { path: "/send-a-legal-notice/agency-not-paying-the-creator", changeFrequency: "weekly", priority: 0.85 },
+  { path: "/send-a-legal-notice/company-not-paying-gratuity", changeFrequency: "weekly", priority: 0.85 },
+  { path: "/send-a-legal-notice/company-not-paying-bonus", changeFrequency: "weekly", priority: 0.85 },
+  { path: "/send-a-legal-notice/vendor-not-paying-pending-payment", changeFrequency: "weekly", priority: 0.85 },
+  { path: "/send-a-legal-notice/college-security-deposit-refund", changeFrequency: "weekly", priority: 0.85 },
+  { path: "/send-a-legal-notice/trading-scam-telegram", changeFrequency: "weekly", priority: 0.85 },
+  { path: "/send-a-legal-notice/property-dispute-money-stuck", changeFrequency: "weekly", priority: 0.85 },
 ];
 
 async function getBlogEntries(): Promise<MetadataRoute.Sitemap> {

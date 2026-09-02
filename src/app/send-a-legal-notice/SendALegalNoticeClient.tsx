@@ -243,7 +243,14 @@ const noticeTemplates = [
   { title: "Recover Money from Online Shopping Scam", href: "/send-a-legal-notice/recover-money-from-online-shopping-scam-india" },
   { title: "Legal Notice for Delayed Salary from Startup Company", href: "/send-a-legal-notice/delayed-salary-startup-company-india" },
   { title: "Legal Notice to Tenant for Property Damage Recovery", href: "/send-a-legal-notice/recover-money-from-tenant-who-damaged-property" },
-  { title: "Legal Notice for Gym & Yoga Club Fee Refund", href: "/send-a-legal-notice/gym-yoga-club-membership-fee-refund" }
+  { title: "Legal Notice for Gym & Yoga Club Fee Refund", href: "/send-a-legal-notice/gym-yoga-club-membership-fee-refund" },
+  { title: "Legal Notice to Agency for Unpaid Creator Payment", href: "/send-a-legal-notice/agency-not-paying-the-creator" },
+  { title: "Legal Notice to Company for Not Paying Gratuity", href: "/send-a-legal-notice/company-not-paying-gratuity" },
+  { title: "Legal Notice to Company for Not Paying Bonus", href: "/send-a-legal-notice/company-not-paying-bonus" },
+  { title: "Legal Notice for Vendor Not Paying Pending Payment", href: "/send-a-legal-notice/vendor-not-paying-pending-payment" },
+  { title: "Legal Notice to College for Not Paying Security Deposit", href: "/send-a-legal-notice/college-security-deposit-refund" },
+  { title: "Legal Notice for Trading Scam on Telegram", href: "/send-a-legal-notice/trading-scam-telegram" },
+  { title: "Legal Notice for Property Dispute & Stuck Money", href: "/send-a-legal-notice/property-dispute-money-stuck" }
 ];
 
 export default function SendALegalNoticeClient() {
