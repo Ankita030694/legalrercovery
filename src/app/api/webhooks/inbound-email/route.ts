@@ -170,6 +170,97 @@ export async function POST(req: NextRequest) {
     const cleanBody = cleanEmailBody(body || content || htmlBody || "");
     const { db } = await getDbAndBucket("fs");
 
+    const fromEmails = extractEmailAddresses(from);
+    const cleanSenderEmail = fromEmails[0] || senderEmail.toLowerCase().trim();
+
+    // Early Check: Detect if the sender is a registered postal dispatcher or replying to a notice dispatch batch
+    const isBatchSubject = /Notice Dispatch Batch|DISP-\d+/i.test(subject || "");
+    let matchedBatch = await db.collection("dispatch_batches").findOne({
+      dispatcherEmail: cleanSenderEmail.toLowerCase()
+    });
+
+    if (!matchedBatch && isBatchSubject) {
+      // Look for batchId in subject or body
+      const batchMatch = (subject + " " + cleanBody).match(/DISP-\d{8}-\d{4}/i);
+      if (batchMatch) {
+        matchedBatch = await db.collection("dispatch_batches").findOne({ batchId: batchMatch[0].toUpperCase() });
+      } else {
+        // Fallback to most recent active batch
+        matchedBatch = await db.collection("dispatch_batches").findOne({}, { sort: { createdAt: -1 } });
+      }
+    }
+
+    const isDispatcherEmail = !!matchedBatch || cleanSenderEmail.includes("jatinder") || isBatchSubject;
+
+    if (isDispatcherEmail) {
+      console.log(`[Inbound Email Webhook] Dispatcher reply detected from ${cleanSenderEmail}. Processing as dispatcher communication without case linking.`);
+
+      // Check for duplicates
+      if (messageId) {
+        const existing = await db.collection("notifications").findOne({
+          "metadata.messageId": messageId
+        });
+        if (existing) {
+          console.log(`[Inbound Email Webhook] Duplicate webhook trigger ignored for messageId: ${messageId}`);
+          return NextResponse.json({ success: true, message: "Duplicate event ignored" });
+        }
+      }
+
+      // Determine dispatcher display name
+      let dispatcherDisplayName = "Dispatcher";
+      if (cleanSenderEmail.includes("jatinder")) {
+        dispatcherDisplayName = "Dispatcher (Jatinder)";
+      } else if (typeof from === "string" && from.includes("<")) {
+        const namePart = from.split("<")[0].replace(/['"]/g, "").trim();
+        if (namePart) dispatcherDisplayName = `Dispatcher (${namePart})`;
+      }
+
+      const adminUserId = matchedBatch?.createdById?.toString() || "6a7aaf191170b4d4d8a4b3bf";
+      const batchId = matchedBatch?.batchId || "Notice Dispatch Batch";
+
+      const dispatcherNotification = {
+        userId: adminUserId,
+        caseId: "",
+        caseName: "Postal Notice Dispatcher",
+        type: "email_reply",
+        title: `Email reply from ${dispatcherDisplayName}`,
+        description: cleanBody || body || "Empty message body",
+        status: "info",
+        date: new Date().toISOString(),
+        isRead: false,
+        metadata: {
+          messageId: messageId || `zoho-disp-${Date.now()}`,
+          senderEmail: cleanSenderEmail,
+          senderRole: "dispatcher",
+          senderDisplayName: dispatcherDisplayName,
+          batchId: batchId,
+          subject: subject
+        }
+      };
+
+      await db.collection("notifications").insertOne(dispatcherNotification);
+
+      if (matchedBatch) {
+        await db.collection("dispatch_batches").updateOne(
+          { _id: matchedBatch._id },
+          {
+            $push: {
+              replies: {
+                senderEmail: cleanSenderEmail,
+                subject: subject,
+                message: cleanBody || body || "",
+                receivedAt: new Date().toISOString(),
+                messageId: messageId || ""
+              } as any
+            }
+          }
+        );
+      }
+
+      console.log(`[Inbound Email Webhook] Dispatcher notification created for admin ${adminUserId}.`);
+      return NextResponse.json({ success: true, message: "Dispatcher reply successfully processed." });
+    }
+
     let matchedCase = null;
 
     // Step 1: Match via unique Case Reference Number in subject (E.g. Ref: LR-T001-020626 or Ref: LR-0001-1626 or LR-0098-24826)

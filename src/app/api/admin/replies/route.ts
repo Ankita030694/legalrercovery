@@ -45,7 +45,8 @@ export async function GET(req: NextRequest) {
         whatsappReplies,
         repliesToday,
         accusedReplies,
-        clientReplies
+        clientReplies,
+        dispatcherReplies
       ] = await Promise.all([
         // Total Inbound Replies
         db.collection("notifications").countDocuments({
@@ -71,13 +72,19 @@ export async function GET(req: NextRequest) {
         // Accused Sender Replies
         db.collection("notifications").countDocuments({
           type: { $in: ["email_reply", "whatsapp_reply"] },
-          "metadata.senderRole": { $ne: "client" }
+          "metadata.senderRole": { $nin: ["client", "dispatcher"] }
         }),
 
         // Client Sender Replies
         db.collection("notifications").countDocuments({
           type: { $in: ["email_reply", "whatsapp_reply"] },
           "metadata.senderRole": "client"
+        }),
+
+        // Dispatcher Sender Replies
+        db.collection("notifications").countDocuments({
+          type: { $in: ["email_reply", "whatsapp_reply"] },
+          "metadata.senderRole": "dispatcher"
         })
       ]);
 
@@ -89,7 +96,8 @@ export async function GET(req: NextRequest) {
           whatsappReplies,
           repliesToday,
           accusedReplies,
-          clientReplies
+          clientReplies,
+          dispatcherReplies
         }
       });
     }
@@ -107,8 +115,10 @@ export async function GET(req: NextRequest) {
 
     if (senderRole === "client") {
       matchConditions["metadata.senderRole"] = "client";
+    } else if (senderRole === "dispatcher") {
+      matchConditions["metadata.senderRole"] = "dispatcher";
     } else if (senderRole === "accused") {
-      matchConditions["metadata.senderRole"] = { $ne: "client" };
+      matchConditions["metadata.senderRole"] = { $nin: ["client", "dispatcher"] };
     }
 
     const pipeline: any[] = [{ $match: matchConditions }];
@@ -142,6 +152,8 @@ export async function GET(req: NextRequest) {
             { description: { $regex: cleanSearch, $options: "i" } },
             { "metadata.senderEmail": { $regex: cleanSearch, $options: "i" } },
             { "metadata.senderPhone": { $regex: cleanSearch, $options: "i" } },
+            { "metadata.senderDisplayName": { $regex: cleanSearch, $options: "i" } },
+            { "metadata.batchId": { $regex: cleanSearch, $options: "i" } },
             { "metadata.accusedName": { $regex: cleanSearch, $options: "i" } },
             { "metadata.accusedPhone": { $regex: cleanSearch, $options: "i" } },
             { "metadata.accusedEmail": { $regex: cleanSearch, $options: "i" } },
@@ -225,7 +237,8 @@ export async function GET(req: NextRequest) {
           senderEmail: n.metadata?.senderEmail || (n.type === "email_reply" ? accusedEmail : ""),
           senderPhone: n.metadata?.senderPhone || (n.type === "whatsapp_reply" ? accusedPhone : ""),
           senderRole: senderRole || "accused",
-          senderDisplayName: senderRole === "client" ? clientName : accusedName,
+          senderDisplayName: senderRole === "dispatcher" ? (n.metadata?.senderDisplayName || "Dispatcher") : senderRole === "client" ? clientName : accusedName,
+          batchId: n.metadata?.batchId || "",
           subject: n.metadata?.subject || "",
           loanId: loanId,
           accusedName: accusedName,

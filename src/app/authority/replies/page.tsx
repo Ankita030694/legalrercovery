@@ -26,7 +26,9 @@ import {
   Building2,
   Calendar,
   X,
-  FileText
+  FileText,
+  Truck,
+  Layers
 } from "lucide-react";
 
 interface ReplyItem {
@@ -43,7 +45,7 @@ interface ReplyItem {
     messageId?: string;
     senderEmail?: string;
     senderPhone?: string;
-    senderRole?: "accused" | "client";
+    senderRole?: "accused" | "client" | "dispatcher";
     senderDisplayName?: string;
     subject?: string;
     loanId?: string;
@@ -57,6 +59,7 @@ interface ReplyItem {
     clientPhone?: string;
     claimAmount?: number;
     caseStatus?: string;
+    batchId?: string;
   };
 }
 
@@ -67,6 +70,7 @@ interface Metrics {
   repliesToday: number;
   accusedReplies: number;
   clientReplies: number;
+  dispatcherReplies?: number;
 }
 
 export default function AuthorityRepliesPage() {
@@ -87,7 +91,7 @@ export default function AuthorityRepliesPage() {
   // Filters & Pagination State
   const [searchQuery, setSearchQuery] = useState("");
   const [channelFilter, setChannelFilter] = useState<"all" | "email" | "whatsapp">("all");
-  const [senderFilter, setSenderFilter] = useState<"all" | "accused" | "client">("all");
+  const [senderFilter, setSenderFilter] = useState<"all" | "accused" | "client" | "dispatcher">("all");
   const [currentPage, setCurrentPage] = useState(1);
   const [totalPages, setTotalPages] = useState(1);
   const [totalCount, setTotalCount] = useState(0);
@@ -435,6 +439,16 @@ export default function AuthorityRepliesPage() {
             >
               Clients
             </button>
+            <button
+              onClick={() => setSenderFilter("dispatcher")}
+              className={`px-3 py-1.5 rounded-lg transition-all cursor-pointer ${
+                senderFilter === "dispatcher"
+                  ? "bg-amber-600 text-white shadow-2xs"
+                  : "text-amber-700 hover:text-amber-900"
+              }`}
+            >
+              Dispatchers
+            </button>
           </div>
         </div>
       </div>
@@ -477,11 +491,12 @@ export default function AuthorityRepliesPage() {
             const isWhatsApp = reply.type === "whatsapp_reply";
             const isEmail = reply.type === "email_reply";
             const isClientSender = reply.metadata?.senderRole === "client";
+            const isDispatcherSender = reply.metadata?.senderRole === "dispatcher";
             const isExpanded = expandedMessageIds.has(reply._id);
 
             const accusedName = reply.metadata?.accusedName || reply.caseName || "Borrower";
             const accusedPhone = reply.metadata?.accusedPhone || reply.metadata?.senderPhone || "";
-            const accusedEmail = reply.metadata?.accusedEmail || (isEmail && !isClientSender ? reply.metadata?.senderEmail : "") || "";
+            const accusedEmail = reply.metadata?.accusedEmail || (isEmail && !isClientSender && !isDispatcherSender ? reply.metadata?.senderEmail : "") || "";
             const loanId = reply.metadata?.loanId || "";
             const clientName = reply.metadata?.clientName || "Client";
             const clientEmail = reply.metadata?.clientEmail || "";
@@ -494,7 +509,11 @@ export default function AuthorityRepliesPage() {
                 key={reply._id}
                 className={`bg-white rounded-2xl border transition-all duration-200 shadow-2xs hover:shadow-md p-4 sm:p-5 flex flex-col gap-3.5
                   ${isEmail
-                    ? (isClientSender ? "border-purple-250 hover:border-purple-400" : "border-blue-250 hover:border-blue-400")
+                    ? (isDispatcherSender 
+                        ? "border-amber-250 hover:border-amber-400" 
+                        : isClientSender 
+                          ? "border-purple-250 hover:border-purple-400" 
+                          : "border-blue-250 hover:border-blue-400")
                     : "border-emerald-250 hover:border-emerald-400"}`}
               >
                 {/* Top Header Row */}
@@ -514,7 +533,12 @@ export default function AuthorityRepliesPage() {
                     )}
 
                     {/* Sender Classification Badge */}
-                    {isClientSender ? (
+                    {isDispatcherSender ? (
+                      <span className="inline-flex items-center gap-1 px-2.5 py-1 rounded-lg text-[10.5px] font-extrabold bg-amber-100 text-amber-800 border border-amber-200">
+                        <Truck className="w-3 h-3 text-amber-600" />
+                        <span>Dispatcher Response ({reply.metadata?.senderDisplayName || "Dispatcher"})</span>
+                      </span>
+                    ) : isClientSender ? (
                       <span className="inline-flex items-center gap-1 px-2.5 py-1 rounded-lg text-[10.5px] font-extrabold bg-purple-100 text-purple-800 border border-purple-200">
                         <User className="w-3 h-3 text-purple-600" />
                         <span>Client Response ({clientName})</span>
@@ -526,8 +550,8 @@ export default function AuthorityRepliesPage() {
                       </span>
                     )}
 
-                    {/* Case Link */}
-                    {reply.caseId && (
+                    {/* Case Link or Batch Reference */}
+                    {reply.caseId ? (
                       <Link
                         href={`/authority/cases?id=${reply.caseId}`}
                         target="_blank"
@@ -538,7 +562,12 @@ export default function AuthorityRepliesPage() {
                         <span>{reply.caseId}</span>
                         <ArrowUpRight className="w-3 h-3 opacity-60" />
                       </Link>
-                    )}
+                    ) : reply.metadata?.batchId ? (
+                      <span className="inline-flex items-center gap-1 text-[11px] font-extrabold text-amber-800 bg-amber-50 px-2.5 py-1 rounded-lg border border-amber-200">
+                        <Layers className="w-3 h-3 text-amber-600" />
+                        <span>Batch: {reply.metadata.batchId}</span>
+                      </span>
+                    ) : null}
 
                     {claimAmount > 0 && (
                       <span className="text-[10.5px] font-black text-slate-600 bg-slate-100 px-2 py-0.5 rounded-md">
@@ -557,52 +586,82 @@ export default function AuthorityRepliesPage() {
                 {/* Debtor & Victim Quick Contact Strip */}
                 <div className="bg-slate-50/80 rounded-xl p-3 border border-slate-200/70 flex flex-wrap items-center justify-between gap-2 select-text">
                   <div className="flex flex-wrap items-center gap-2">
-                    {/* Accused Name Badge */}
-                    <div className="inline-flex items-center gap-1.5 bg-white border border-slate-200 text-slate-800 text-[11px] font-bold px-2.5 py-1 rounded-lg shadow-2xs">
-                      <User className="w-3.5 h-3.5 text-slate-500 shrink-0" />
-                      <span>Accused: <span className="font-extrabold text-slate-900">{accusedName}</span></span>
-                    </div>
+                    {isDispatcherSender ? (
+                      <>
+                        {/* Dispatcher Name Badge */}
+                        <div className="inline-flex items-center gap-1.5 bg-amber-50 border border-amber-200 text-amber-900 text-[11px] font-bold px-2.5 py-1 rounded-lg shadow-2xs">
+                          <Truck className="w-3.5 h-3.5 text-amber-600 shrink-0" />
+                          <span>Dispatcher: <span className="font-extrabold text-amber-900">{reply.metadata?.senderDisplayName || "Dispatcher"}</span></span>
+                        </div>
 
-                    {/* Loan / Invoice ID Badge */}
-                    {loanId && (
-                      <div className="inline-flex items-center gap-1.5 bg-indigo-50 border border-indigo-200 text-indigo-900 text-[11px] font-bold px-2.5 py-1 rounded-lg shadow-2xs">
-                        <Hash className="w-3.5 h-3.5 text-indigo-600 shrink-0" />
-                        <span>Loan ID: <span className="font-extrabold text-indigo-700 tracking-wide">{loanId}</span></span>
-                      </div>
+                        {/* Batch ID Badge */}
+                        {reply.metadata?.batchId && (
+                          <div className="inline-flex items-center gap-1.5 bg-white border border-slate-200 text-slate-800 text-[11px] font-bold px-2.5 py-1 rounded-lg shadow-2xs">
+                            <Layers className="w-3.5 h-3.5 text-slate-500 shrink-0" />
+                            <span>Batch ID: <span className="font-extrabold text-slate-900">{reply.metadata.batchId}</span></span>
+                          </div>
+                        )}
+
+                        {/* Dispatcher Email */}
+                        {reply.metadata?.senderEmail && (
+                          <div className="inline-flex items-center gap-1.5 text-[11px] font-bold text-slate-700 bg-white border border-slate-200 px-2.5 py-1 rounded-lg shadow-2xs">
+                            <Mail className="w-3.5 h-3.5 text-slate-400 shrink-0" />
+                            <a href={`mailto:${reply.metadata.senderEmail}`} className="text-blue-600 underline font-medium hover:text-blue-800">
+                              {reply.metadata.senderEmail}
+                            </a>
+                          </div>
+                        )}
+                      </>
+                    ) : (
+                      <>
+                        {/* Accused Name Badge */}
+                        <div className="inline-flex items-center gap-1.5 bg-white border border-slate-200 text-slate-800 text-[11px] font-bold px-2.5 py-1 rounded-lg shadow-2xs">
+                          <User className="w-3.5 h-3.5 text-slate-500 shrink-0" />
+                          <span>Accused: <span className="font-extrabold text-slate-900">{accusedName}</span></span>
+                        </div>
+
+                        {/* Loan / Invoice ID Badge */}
+                        {loanId && (
+                          <div className="inline-flex items-center gap-1.5 bg-indigo-50 border border-indigo-200 text-indigo-900 text-[11px] font-bold px-2.5 py-1 rounded-lg shadow-2xs">
+                            <Hash className="w-3.5 h-3.5 text-indigo-600 shrink-0" />
+                            <span>Loan ID: <span className="font-extrabold text-indigo-700 tracking-wide">{loanId}</span></span>
+                          </div>
+                        )}
+
+                        {/* Phone Badge */}
+                        {accusedPhone && (
+                          <a
+                            href={`tel:${accusedPhone}`}
+                            onClick={(e) => e.stopPropagation()}
+                            className="inline-flex items-center gap-1.5 bg-emerald-50 hover:bg-emerald-100 border border-emerald-250 text-emerald-900 text-[11px] font-bold px-2.5 py-1 rounded-lg transition-colors cursor-pointer shadow-2xs"
+                            title="Call Accused Phone"
+                          >
+                            <Phone className="w-3.5 h-3.5 text-emerald-600 shrink-0" />
+                            <span>{accusedPhone}</span>
+                          </a>
+                        )}
+
+                        {/* Email Badge */}
+                        {accusedEmail && (
+                          <a
+                            href={`mailto:${accusedEmail}`}
+                            onClick={(e) => e.stopPropagation()}
+                            className="inline-flex items-center gap-1.5 bg-blue-50 hover:bg-blue-100 border border-blue-250 text-blue-900 text-[11px] font-bold px-2.5 py-1 rounded-lg transition-colors cursor-pointer shadow-2xs"
+                            title="Email Accused"
+                          >
+                            <Mail className="w-3.5 h-3.5 text-blue-600 shrink-0" />
+                            <span className="truncate max-w-[200px]">{accusedEmail}</span>
+                          </a>
+                        )}
+
+                        {/* Victim / Client Reference */}
+                        <div className="inline-flex items-center gap-1 text-slate-500 text-[11px] font-semibold pl-1">
+                          <span>Victim/Client:</span>
+                          <span className="font-bold text-slate-800">{clientName}</span>
+                          {clientEmail && <span className="text-slate-400 text-[10px]">({clientEmail})</span>}
+                        </div>
+                      </>
                     )}
-
-                    {/* Phone Badge */}
-                    {accusedPhone && (
-                      <a
-                        href={`tel:${accusedPhone}`}
-                        onClick={(e) => e.stopPropagation()}
-                        className="inline-flex items-center gap-1.5 bg-emerald-50 hover:bg-emerald-100 border border-emerald-250 text-emerald-900 text-[11px] font-bold px-2.5 py-1 rounded-lg transition-colors cursor-pointer shadow-2xs"
-                        title="Call Accused Phone"
-                      >
-                        <Phone className="w-3.5 h-3.5 text-emerald-600 shrink-0" />
-                        <span>{accusedPhone}</span>
-                      </a>
-                    )}
-
-                    {/* Email Badge */}
-                    {accusedEmail && (
-                      <a
-                        href={`mailto:${accusedEmail}`}
-                        onClick={(e) => e.stopPropagation()}
-                        className="inline-flex items-center gap-1.5 bg-blue-50 hover:bg-blue-100 border border-blue-250 text-blue-900 text-[11px] font-bold px-2.5 py-1 rounded-lg transition-colors cursor-pointer shadow-2xs"
-                        title="Email Accused"
-                      >
-                        <Mail className="w-3.5 h-3.5 text-blue-600 shrink-0" />
-                        <span className="truncate max-w-[200px]">{accusedEmail}</span>
-                      </a>
-                    )}
-
-                    {/* Victim / Client Reference */}
-                    <div className="inline-flex items-center gap-1 text-slate-500 text-[11px] font-semibold pl-1">
-                      <span>Victim/Client:</span>
-                      <span className="font-bold text-slate-800">{clientName}</span>
-                      {clientEmail && <span className="text-slate-400 text-[10px]">({clientEmail})</span>}
-                    </div>
                   </div>
 
                   {/* One-Click Copy Debtor Info Button */}
