@@ -442,6 +442,10 @@ export default function UserDashboard() {
   const [isDeleting, setIsDeleting] = useState<Record<string, boolean>>({});
 
   const handleDeleteCase = async (caseId: string) => {
+    if (!isSpecialUser) {
+      alert("Cases cannot be deleted once registered to preserve legal audit history and quota integrity. You may stop active notices using the Stop Notices option.");
+      return;
+    }
     if (!confirm("Are you sure you want to completely delete this record? This action cannot be undone.")) return;
     setIsDeleting((prev) => ({ ...prev, [caseId]: true }));
     try {
@@ -978,14 +982,16 @@ export default function UserDashboard() {
                       </button>
                     )}
 
-                    <button
-                      onClick={() => handleDeleteCase(c.id)}
-                      disabled={isDeleting[c.id]}
-                      className="px-4 py-2 text-xs font-black text-slate-500 bg-slate-100 border border-slate-200 hover:bg-slate-200 hover:text-slate-700 hover:border-slate-300 rounded-xl transition-all cursor-pointer focus:outline-none flex items-center justify-center gap-1"
-                      title="Delete Record"
-                    >
-                      {isDeleting[c.id] ? "..." : "Delete"}
-                    </button>
+                    {isSpecialUser && (
+                      <button
+                        onClick={() => handleDeleteCase(c.id)}
+                        disabled={isDeleting[c.id]}
+                        className="px-4 py-2 text-xs font-black text-slate-500 bg-slate-100 border border-slate-200 hover:bg-slate-200 hover:text-slate-700 hover:border-slate-300 rounded-xl transition-all cursor-pointer focus:outline-none flex items-center justify-center gap-1"
+                        title="Delete Record"
+                      >
+                        {isDeleting[c.id] ? "..." : "Delete"}
+                      </button>
+                    )}
                   </div>
                 </div>
               </div>

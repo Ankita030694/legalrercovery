@@ -43,7 +43,9 @@ export async function GET(req: NextRequest) {
 
     let usedCases = 0;
     if (user._id) {
-      usedCases = await db.collection("cases").countDocuments({ userId: user._id });
+      const activeCasesCount = await db.collection("cases").countDocuments({ userId: user._id });
+      const historicalCasesCount = user.totalCasesCreated || 0;
+      usedCases = Math.max(activeCasesCount, historicalCasesCount);
     }
     const remainingCases = hasUnlimitedCases ? -1 : Math.max(0, allowedLimit - usedCases);
 

@@ -206,7 +206,9 @@ export async function POST(req: NextRequest) {
     // Determine the allowed limit, using direct oppositionCount as a fallback
     const allowedLimit = Math.max(limitFromAmountPaid, user.oppositionCount || 1);
 
-    const currentCreatedCount = await db.collection("cases").countDocuments({ userId });
+    const activeCasesCount = await db.collection("cases").countDocuments({ userId });
+    const historicalCasesCount = user.totalCasesCreated || 0;
+    const currentCreatedCount = Math.max(activeCasesCount, historicalCasesCount);
 
     const hasUnlimitedCases = user.hasUnlimitedCases === true;
 
@@ -335,6 +337,12 @@ export async function POST(req: NextRequest) {
     };
 
     const result = await db.collection("cases").insertOne(caseDoc);
+
+    // Track total cases created persistently on user profile to prevent deletion exploits
+    await db.collection("users").updateOne(
+      { _id: userId },
+      { $inc: { totalCasesCreated: 1 } }
+    );
 
     return NextResponse.json({
       success: true,
@@ -471,7 +479,8 @@ export async function PATCH(req: NextRequest) {
 
 /**
  * DELETE /api/cases - Deletes a case from the database.
- * Restricts updates strictly to the owning user.
+ * Strictly restricted to administrators and authorized special staff (phones 8700343611 and 8130104447).
+ * Normal users cannot delete cases once created to preserve legal audit logs and quota integrity.
  */
 export async function DELETE(req: NextRequest) {
   const session = await getServerSession(authOptions);
@@ -490,9 +499,36 @@ export async function DELETE(req: NextRequest) {
 
     const { db } = await getDbAndBucket("fs");
 
+    // Retrieve user record to verify authorization
+    const user = await db.collection("users").findOne({ _id: userId });
+    const userRole = (session.user as any).role;
+    const userPhoneClean = user?.phone?.replace(/\D/g, "") || "";
+    const isSpecialUser = userPhoneClean.endsWith("8700343611") || userPhoneClean.endsWith("8130104447") || userRole === "admin";
+
+    if (!isSpecialUser) {
+      return NextResponse.json(
+        { 
+          error: "Cases cannot be deleted once registered to preserve legal audit history and quota integrity. You may stop active notices using the Stop Notices option." 
+        }, 
+        { status: 403 }
+      );
+    }
+
+    // Determine query filter for special users / admins
+    let queryUserId: any = userId;
+    if (userPhoneClean.endsWith("8700343611") || userPhoneClean.endsWith("8130104447")) {
+      const admins = await db.collection("users").find({
+        phone: { $regex: /(8700343611|8130104447)$/ }
+      }).toArray();
+      const adminIds = admins.map(a => a._id);
+      if (adminIds.length > 0) {
+        queryUserId = { $in: [...adminIds, ...adminIds.map(a => a.toString())] };
+      }
+    }
+
     const existingCase = await db.collection("cases").findOne({
       _id: new ObjectId(id),
-      userId: userId
+      ...(userRole === "admin" ? {} : { userId: queryUserId })
     });
 
     if (!existingCase) {
@@ -500,8 +536,7 @@ export async function DELETE(req: NextRequest) {
     }
 
     await db.collection("cases").deleteOne({
-      _id: new ObjectId(id),
-      userId: userId
+      _id: new ObjectId(id)
     });
 
     return NextResponse.json({
