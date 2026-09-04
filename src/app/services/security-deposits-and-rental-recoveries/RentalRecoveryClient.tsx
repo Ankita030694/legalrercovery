@@ -78,7 +78,7 @@ export default function RentalRecoveryClient() {
   // Table of Contents sections
   const tocSections = useMemo(() => [
     { id: "service-overview", title: "1. Service Overview" },
-    { id: "coverage-details", title: "2. What We Help You Recover" },
+    { id: "coverage-details", title: "2. Security Deposits & Rental Dues We Help You Recover" },
     { id: "notice-strategy", title: "3. Our 3+1 Notice Strategy" },
     { id: "legal-framework", title: "4. The Indian Statutory Shield" },
     { id: "why-online-templates-fail", title: "5. Why Online Templates Fail" },
@@ -93,52 +93,52 @@ export default function RentalRecoveryClient() {
     {
       id: "faq-1",
       question: "What is the limitation period to file a civil recovery suit for security deposit or unpaid rent in India?",
-      answer: "Under the Limitation Act, 1963, the limitation period to file a civil recovery suit (including summary suits under Order 37 of the CPC) for recovering a security deposit or claiming unpaid rent arrears is three (3) years. This period starts counting from the exact date the cause of action arose. For a tenant, it is the day of vacating the property or when the landlord formally refused the refund. For a landlord, it is the date when the rent payment became defaulted. Claims delayed beyond three years are legally barred unless there is a written acknowledgment of debt by the opposite party under Section 18 of the Limitation Act, which resets the limitation clock."
+      answer: "Under the Limitation Act, 1963, you have three years to file a civil recovery case. For tenants, this clock starts on the day you vacate or when the landlord denies the refund. For landlords, it starts when rent falls overdue. Written acknowledgment of the debt by either party resets this three-year period."
     },
     {
       id: "faq-2",
       question: "What is the security deposit cap under the Model Tenancy Act, 2021?",
-      answer: "The Model Tenancy Act (MTA), 2021, introduces standardized regulatory caps on security deposits to protect tenants from excessive upfront demands. Under Section 11 of the MTA, the security deposit to be paid by the tenant in advance cannot exceed: 1) A maximum of two (2) months' rent in case of residential premises, and 2) A maximum of six (6) months' rent in case of non-residential (commercial) premises. These limits are binding in all states that have formally adopted and notified the Model Tenancy rules, ensuring landlords cannot arbitrarily demand larger advances."
+      answer: "The Model Tenancy Act (MTA), 2021 sets clear limits on security deposits. Landlords cannot charge more than two months' rent for residential homes. For commercial properties, the limit is six months' rent. These caps protect tenants from unfair upfront demands in states that adopted the Act."
     },
     {
       id: "faq-3",
       question: "Can a landlord legally deduct painting charges or general cleaning from the security deposit?",
-      answer: "Generally, no, unless it was explicitly and clearly agreed upon in the signed rent agreement. Under the Model Tenancy Act and standard rent laws, a landlord is only entitled to make deductions for actual damages that exceed 'normal wear and tear' or for outstanding rent/utility bills. Routine maintenance like wall painting, minor hinge adjustments, deep cleaning, or natural discoloration of walls due to weather conditions are classified as normal wear and tear and are the landlord's statutory maintenance responsibilities. Deducting these without a specific contractual clause constitutes an unfair practice and a breach of contract."
+      answer: "No, unless your signed agreement clearly allows it. Painting, minor wall scuffs, and deep cleaning fall under normal wear and tear. Maintaining the property is the landlord's legal responsibility. Landlords can only deduct costs for actual structural damages or unpaid utility bills."
     },
     {
       id: "faq-4",
       question: "What legal options do landlords have if a tenant refuses to pay rent and refuses to vacate?",
-      answer: "If a tenant defaults on rent and refuses to vacate, self-help measures like changing locks, cutting off electricity/water, or physical threats are strictly illegal and expose the landlord to severe criminal charges. The legal recourse is: 1) Serve a formal, advocate-backed legal notice demanding payment of rent arrears and termination of lease within 15 days, 2) If the tenant doesn't comply, file an eviction petition before the Rent Authority (in MTA states) or file a Civil Eviction Suit in the local Small Causes or Civil Court, and 3) Claim double the monthly rent as mesne profits (penalty for illegal holdover) for the period of unauthorized occupation after lease termination."
+      answer: "Landlords must follow legal steps. Cutting off water or electricity is illegal and invites police action. First, send an advocate-backed legal notice demanding payment and lease termination within 15 days. If the tenant still stays, file an eviction petition with the Rent Authority or Civil Court."
     },
     {
       id: "faq-5",
       question: "Is an unregistered lease agreement legally enforceable for recovering deposits or rent?",
-      answer: "Under the Registration Act, 1908, any lease agreement of one year (12 months) or more must be compulsorily registered. An unregistered lease deed for 12 months or more is inadmissible as primary evidence in court for enforcing lease terms. However, it can still be used as 'collateral evidence' to prove the existence of a landlord-tenant relationship and the actual physical possession. If your rent agreement is for 11 months, registration is not mandatory under central law (unless specified by state amendments), making it fully enforceable in civil courts to claim deposits or rent arrears."
+      answer: "Under the Registration Act, 1908, leases of 12 months or longer must be registered. An unregistered long-term lease has limited evidentiary value in court. However, standard 11-month rental agreements do not require central registration. They remain fully enforceable in civil courts to recover dues."
     },
     {
       id: "faq-6",
       question: "Can a landlord withhold the security deposit if the tenant vacates before the lock-in period ends?",
-      answer: "If the rent agreement contains a mutual 'lock-in period' (e.g., 6 or 11 months) and the tenant vacates before its expiry, the landlord's right to withhold the deposit depends entirely on the agreement's terms. If the agreement explicitly states that vacating early will result in 'forfeiture of the security deposit' as liquidated damages, the landlord can withhold it. However, if there is no such forfeiture clause, the landlord cannot unilaterally keep the deposit; they must refund the deposit and can only sue the tenant to recover actual financial losses suffered due to the early termination, provided they made reasonable efforts to find a new tenant."
+      answer: "It depends on your contract. If the lease specifically states that early exit forfeits the deposit, the landlord may keep it. Without an explicit forfeiture clause, the landlord must refund the deposit. They can only claim actual rent losses while searching for a replacement tenant."
     },
     {
       id: "faq-7",
       question: "How do I approach the Rent Authority under the Model Tenancy Act, 2021?",
-      answer: "In states that have established Rent Authorities under the MTA (such as Uttar Pradesh, Tamil Nadu, Andhra Pradesh), landlords and tenants can file disputes online or physically before the Rent Authority. The process is: 1) File an application along with a copy of the registered tenancy agreement and evidentiary documents (bank statements, notices), 2) The Rent Authority registers the case and summons the opposite party, 3) It attempts to resolve the dispute through summary inquiries. If the dispute is not settled, the authority passes a binding order. Appeals against Rent Authority orders can be filed before the Rent Court within 30 days."
+      answer: "In states with active Rent Authorities, you can file your petition online or in person. Attach your rental deed, payment receipts, and legal notices. The Authority summons the opposite party and conducts a summary hearing. Orders from the Rent Authority can be appealed within 30 days."
     },
     {
       id: "faq-8",
       question: "What is Mesne Profits, and when can a landlord demand it?",
-      answer: "Mesne Profits (pronounced 'mean') represent the compensation or damages that a landlord is legally entitled to recover from a tenant who remains in wrongful, unauthorized possession of the property after their tenancy has been legally terminated. Under Section 2(12) of the Code of Civil Procedure, 1908, when a lease is terminated via notice and the tenant fails to hand over keys, the landlord can demand mesne profits, which are computed based on the prevailing market rent of the area or as a penalty (often twice the original rent) to compensate for the loss of opportunity."
+      answer: "Mesne profits are financial damages paid by a tenant who stays unlawfully after a lease ends. Under Section 2(12) of the CPC, landlords can claim this compensation. It is usually calculated at current market rent or double the monthly rate for the unauthorized period."
     },
     {
       id: "faq-9",
       question: "Can a tenant adjust the final months' rent against the security deposit?",
-      answer: "Legally, a tenant cannot adjust the final months' rent against the security deposit unless the landlord gives written consent or it is explicitly permitted in the lease deed. The security deposit is held to secure the landlord against unpaid utilities, actual property damages, and outstanding bills discovered *after* the tenant vacates. Adjusting it unilaterally constitutes a breach of contract, and the landlord can legally demand the rent and levy late payment penalties as per the agreement terms."
+      answer: "Tenants cannot adjust rent against the deposit without the landlord's written consent. The deposit is held to cover unpaid utility bills and physical damages after vacating. Unilateral adjustments breach the contract, allowing the landlord to demand interest and late fees."
     },
     {
       id: "faq-10",
       question: "What should I do if my landlord has moved out of the country or is an NRI?",
-      answer: "If your landlord is an Non-Resident Indian (NRI) or has moved abroad and is unresponsive regarding your deposit refund, you can still pursue legal action: 1) Serve the advocate-backed legal notice to their registered email address, their power of attorney (POA) holder in India, and their foreign physical address, 2) Send physical notices to the property address you rented, as that is the local address of the landlord's asset, and 3) If ignored, initiate a summary suit in the civil court having jurisdiction over the property. The court can order attachment of the property or the rent from other tenants to satisfy your decree."
+      answer: "You can still recover your money. Serve the legal notice to the landlord's email, their Power of Attorney holder, and the rented property address. If ignored, file a summary suit in the local civil court. The court can attach the property or its rental income to settle your decree."
     }
   ], []);
 
@@ -432,58 +432,58 @@ export default function RentalRecoveryClient() {
               <div className="prose prose-lg max-w-none text-gray-700 leading-relaxed tiptap-content">
                 
                 {/* 1. Service Overview */}
-                <h2 id="service-overview">1. Professional Security Deposit & Rental Recovery Service</h2>
+                <h2 id="service-overview">1. Professional Security Deposit &amp; Rental Recovery Service</h2>
                 <p>
-                  Tenancy is a structured contractual and statutory relationship. Whether you are a tenant renting a residential apartment in a metropolitan hub, a startup leasing a commercial office workspace, or a landlord renting out your ancestral property, you are bound by mutual legal obligations. Unfortunately, the real estate landscape in India is heavily marked by friction, asymmetrical power dynamics, and bad faith defaults.
+                  Tenancy is a legal agreement with clear rights for both parties. Whether you rent a flat, an office, or commercial space, both sides must follow the law. Unfortunately, rental disputes happen often in India.
                 </p>
                 <p>
-                  For <strong className="font-extrabold text-[#111827]">tenants</strong>, the biggest dispute arises at the time of vacating. Many landlords view the tenant's security deposit as free liquidity, unilaterally withholding huge sums of money under the guise of painting charges, deep cleaning, or general wear and tear that are legally the landlord's maintenance liabilities. For <strong className="font-extrabold text-[#111827]">landlords</strong>, the nightmare involves tenants who stop paying monthly rent, refuse to clear cumulative utility bills, damage structural assets, or illegally hold over the property past the lease expiration date.
+                  For <strong className="font-extrabold text-[#111827]">tenants</strong>, disputes usually happen when moving out. Many landlords withhold security deposits unfairly. They claim fake painting charges or normal wear and tear that is legally the landlord&apos;s job. For <strong className="font-extrabold text-[#111827]">landlords</strong>, problems arise when tenants stop paying rent, leave utility bills unpaid, or refuse to vacate.
                 </p>
                 <p>
-                  The LegalRecovery <strong className="font-extrabold text-[#111827]">Security Deposit and Rental Recovery Service</strong> is a specialized pre-litigation pipeline engineered to bypass these endless stalemates. Traditional litigation through civil rent courts is notoriously slow, taking years to settle basic financial disputes. We have re-engineered this dispute cycle by deploying an aggressive, attorney-signed, multi-stage digital and physical escalation notice pipeline that targets the opposition, co-owners, and partners, compelling them to settle the outstanding dues immediately to avoid heavy penalties and Rent Court action.
+                  LegalRecovery helps resolve these disputes quickly. Going to civil rent court can take years. We replace slow court litigation with a fast, advocate-signed escalation notice process. This compels the other party to settle quickly to avoid penalties and court action.
                 </p>
                 <blockquote>
-                  <strong>Our Service Promise:</strong> We provide comprehensive, flat-fee recovery support with absolutely <strong>zero commissions</strong> taken on your recovered money. We draft, validate, and launch progressive legal notices designed to reach the opposite party.
+                  <strong>Our Service Promise:</strong> We provide full recovery support for a flat fee. We take <strong>zero commission</strong> on your recovered money. We draft, verify, and send legally binding notices directly to the opposite party.
                 </blockquote>
                 <p>
-                  No landlord can legally withhold your security deposit for routine wear and tear, and no tenant can occupy your property rent-free. Let our platform take the burden of writing, executing, and tracking your rental claims so you can reclaim your money.
+                  Landlords cannot withhold deposits for normal wear, and tenants cannot live rent-free. Let our legal platform handle your recovery claim so you get your money back.
                 </p>
 
                 {/* 2. What We Help You Recover */}
-                <h2 id="coverage-details">2. What We Help You Recover</h2>
+                <h2 id="coverage-details">2. Security Deposits & Rental Dues We Help You Recover</h2>
                 <p>
-                  A rental or lease dispute involves distinct components that must be legally isolated and quantified. Our advocate panel audits the rental contract and drafts structured demands customized to your specific role:
+                  Rental disputes require clear evidence. Our advocate panel reviews your agreement and drafts tailored demands for your situation:
                 </p>
                 
                 <h3 id="unreturned-security-deposits">A. Unreturned Security Deposits (For Tenants)</h3>
                 <p>
-                  We recover security deposits withheld by residential and commercial landlords. We contest arbitrary deductions made without proof of damage and compute interest for every day of delay past the handover of keys.
+                  We recover security deposits withheld by landlords. We contest unjustified deductions and demand statutory interest for every day of delay.
                 </p>
 
-                <h3 id="unpaid-rent-arrears">B. Unpaid Rent & Utility Arrears (For Landlords)</h3>
+                <h3 id="unpaid-rent-arrears">B. Unpaid Rent &amp; Utility Arrears (For Landlords)</h3>
                 <p>
-                  If a tenant vacated your property overnight without clearing outstanding monthly rent, society maintenance charges, electricity, or water bills, we track down their new addresses, employment details, and serve formal recovery notices.
+                  If a tenant vacated without paying rent or electricity bills, we locate their current address and send formal recovery notices.
                 </p>
 
                 <h3 id="property-damage">C. Compensation for Property Damages (For Landlords)</h3>
                 <p>
-                  We recover costs for substantial, documented damages caused by tenants to your building, modular fittings, electrical systems, or wooden work. We compile repair quotes and demand direct restitution under product liability and contract rules.
+                  We recover costs for serious, documented damage caused by tenants to fittings, flooring, or walls. We gather repair estimates and demand reimbursement under the Contract Act.
                 </p>
 
-                <h3 id="commercial-lease">D. Commercial Lease defaults & Lock-in Period Claims</h3>
+                <h3 id="commercial-lease">D. Commercial Lease Defaults &amp; Lock-in Period Claims</h3>
                 <p>
-                  Commercial leases are highly binding under the Indian Contract Act. If a business tenant defaults on lease rentals, breaks lock-in period commitments, or refuses to pay society dues, we launch a targeted contractual recovery notice campaign.
+                  Commercial leases are strictly binding contracts. If a corporate tenant breaks a lock-in period or defaults on rent, we launch an aggressive contractual recovery claim.
                 </p>
 
-                <h3 id="booking-token">E. Booking Advances & Token Money Refunds</h3>
+                <h3 id="booking-token">E. Booking Advances &amp; Token Money Refunds</h3>
                 <p>
-                  If you paid a token advance to reserve a property but the transaction fell through because the landlord/broker failed to provide clean titles or execute structural repairs, we demand a full refund of the advance under the Contract Act.
+                  If you paid token money to reserve a rental property but the deal failed due to landlord title issues, we demand a full refund under the Indian Contract Act.
                 </p>
 
                 {/* 3. Our 3+1 Notice Strategy */}
                 <h2 id="notice-strategy">3. Our 3+1 Notice Strategy: Engineered for Maximum Pressure</h2>
                 <p>
-                  Landlord-tenant friction is deeply personal. A single casual message or basic phone call is often met with anger or complete silence. To bypass this emotional gridlock, LegalRecovery deploys a systematic <strong className="font-extrabold text-[#111827]">3-stage progressive notice pipeline combined with a criminal police complaint draft</strong> to enforce compliance:
+                  Landlord-tenant conflicts often get heated. Phone calls and casual chats are easy to ignore. LegalRecovery uses a structured <strong className="font-extrabold text-[#111827]">3-stage advocate notice pipeline with a criminal complaint draft</strong>:
                 </p>
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6 my-8">
                   <div className="bg-[#F9FAFB] p-5 rounded-2xl border border-[#E5E7EB]">
@@ -492,17 +492,17 @@ export default function RentalRecoveryClient() {
                       <h4 className="font-extrabold text-[#111827] text-sm">Stage 1: Advocate Demand Notice</h4>
                     </div>
                     <p className="text-xs text-[#4B5563] leading-relaxed">
-                      We launch a highly authoritative demand notice on a practicing advocate's letterhead. This notice is served via digital pipelines (Email, WhatsApp) and physical registered post, giving the opposite party a strict 15-day window to settle outstanding claims.
+                      We issue a formal legal notice on an advocate&apos;s letterhead. It is sent via tracked email, WhatsApp, and registered post with a 15-day settlement deadline.
                     </p>
                   </div>
 
                   <div className="bg-[#F9FAFB] p-5 rounded-2xl border border-[#E5E7EB]">
                     <div className="flex items-center gap-3 mb-3">
                       <div className="w-8 h-8 rounded-full bg-[#DC2626] text-white flex items-center justify-center font-black text-xs">2</div>
-                      <h4 className="font-extrabold text-[#111827] text-sm">Stage 2: Co-Owner & Nodal Escalation</h4>
+                      <h4 className="font-extrabold text-[#111827] text-sm">Stage 2: Co-Owner &amp; Nodal Escalation</h4>
                     </div>
                     <p className="text-xs text-[#4B5563] leading-relaxed">
-                      If the first notice is ignored, we escalate directly to the property's co-owners, family members, co-signers, or corporate trustees. We attach daily interest calculations (up to 18% p.a.) and outline personal liabilities.
+                      If ignored, we send Notice 2 to co-owners, family guarantors, or corporate partners. We attach daily interest calculations and outline legal liabilities.
                     </p>
                   </div>
 
@@ -512,7 +512,7 @@ export default function RentalRecoveryClient() {
                       <h4 className="font-extrabold text-[#111827] text-sm">Stage 3: Pre-Litigation Warning</h4>
                     </div>
                     <p className="text-xs text-[#4B5563] leading-relaxed">
-                      We deliver a final warning package, including finalized drafts of a Rent Court petition or a civil summary recovery suit (Order 37 CPC) compiled under state-specific laws, showing that our legal machinery is fully prepared to enter court.
+                      We deliver a final warning package with draft copies of a Rent Court petition or Order 37 summary suit. This proves you are ready for court.
                     </p>
                   </div>
 
@@ -522,25 +522,25 @@ export default function RentalRecoveryClient() {
                       <h4 className="font-extrabold text-[#111827] text-sm">Criminal Police Complaint Draft</h4>
                     </div>
                     <p className="text-xs text-[#4B5563] leading-relaxed">
-                      Simultaneously, we provide you with a meticulously compiled criminal police complaint draft for <strong className="font-extrabold text-[#111827]">Criminal Breach of Trust (Section 405/406 IPC)</strong> or Mischief/Cheating (Section 420/425 IPC). Filing this at the local station creates immediate, non-bailable pressure.
+                      We also prepare a police complaint draft for <strong className="font-extrabold text-[#111827]">Criminal Breach of Trust (Section 405/406 IPC)</strong> or cheating. This creates immediate personal pressure.
                     </p>
                   </div>
                 </div>
                 <p>
-                  By moving through these four distinct escalation stages week-by-week, we make it highly expensive, operationally disruptive, and legally risky for the landlord or tenant to continue withholding your money.
+                  This multi-stage approach makes withholding your money legally risky and inconvenient for the defaulting party.
                 </p>
 
                 {/* 4. The Indian Statutory Shield */}
                 <h2 id="legal-framework">4. The Indian Statutory Shield: Know Your Rental Rights</h2>
                 <p>
-                  India's legal framework provides both landlords and tenants with comprehensive statutory protections. Our advocate panel leverages these specific acts and guidelines to build a bulletproof case:
+                  Indian law protects both tenants and landlords. Our legal notices invoke clear statutory protections:
                 </p>
                 <ul>
-                  <li><strong>The Model Tenancy Act, 2021:</strong> Introduces strict deposit caps (maximum 2 months' rent for residential, 6 months' rent for commercial properties) and outlines the role of Rent Authorities in solving landlord-tenant disputes in a fast-track manner (Section 11).</li>
-                  <li><strong>The Transfer of Property Act, 1882 (Section 108):</strong> Governs the rights and liabilities of landlords and tenants, strictly defining that normal wear and tear is the landlord's responsibility and that landlords cannot evict tenants using illegal force without a court order.</li>
-                  <li><strong>Normal Wear and Tear vs. Actual Damages:</strong> Under established property jurisprudence, painting, natural fading of walls, weather damage, minor pipe rust, and natural ageing of floor tiles are categorized as normal wear and tear. Actual damages cover cracked marble, broken furniture, altered walls, or torn wiring.</li>
-                  <li><strong>Order 37 of the Civil Procedure Code, 1908:</strong> Empowers landlords or tenants to initiate a <strong className="font-extrabold text-[#111827]">Summary Suit</strong> in the civil court to recover a debt arising from a written contract (like a rent deed), forcing a fast-track decree within a few hearings.</li>
-                  <li><strong>State Rent Control Acts:</strong> Local rent control legislations (e.g., Delhi Rent Control Act 1958, Maharashtra Rent Control Act 1999) provide additional protections against arbitrary rent hikes and specify the absolute grounds for eviction.</li>
+                  <li><strong>The Model Tenancy Act, 2021:</strong> Caps security deposits at two months for homes and six months for commercial spaces (Section 11). Fast-tracks dispute resolution before Rent Authorities.</li>
+                  <li><strong>The Transfer of Property Act, 1882 (Section 108):</strong> Confirms that normal wear and tear is the landlord&apos;s responsibility. Landlords cannot use force or evict tenants without a court order.</li>
+                  <li><strong>Normal Wear and Tear vs. Actual Damages:</strong> Wall fading, minor scuffs, and age-related wear are normal wear and tear. Actual damages include broken tiles, damaged furniture, or altered walls.</li>
+                  <li><strong>Order 37 of the Civil Procedure Code, 1908:</strong> Allows landlords or tenants to file a fast-track Summary Suit based on written rent agreements.</li>
+                  <li><strong>State Rent Control Acts:</strong> Local rent control laws protect against arbitrary rent hikes and outline exact legal grounds for eviction.</li>
                 </ul>
 
                 {/* Compare Wear and Tear Table */}
@@ -587,24 +587,24 @@ export default function RentalRecoveryClient() {
                 {/* 5. Why Online Templates Fail */}
                 <h2 id="why-online-templates-fail">5. Why Free Online Lease Notices Fail</h2>
                 <p>
-                  Many tenants or landlords try to copy free legal notice templates or lease termination formats from the internet. While they seem convenient, they almost always fail to produce a resolution:
+                  Many tenants and landlords copy free templates from the web. In real rental disputes, generic templates rarely work:
                 </p>
                 <ul>
-                  <li><strong>No practicing Advocate letterhead:</strong> Rent disputes involve high financial stakes. A basic letter sent on plain paper by a tenant carries zero weight and is immediately thrown out by landlords. A notice carrying the stamp, seal, and signature of a practicing high-court advocate establishes real legal risk.</li>
-                  <li><strong>Failure to cite State-Specific Tenancy Rules:</strong> Rent laws in India are highly state-centric. Online templates do not differentiate between the Maharashtra Rent Control Act, Delhi Rent Control Act, or states implementing the Model Tenancy Act, rendering the notice legally toothless.</li>
-                  <li><strong>Lack of Systematic Escalation:</strong> A single, isolated notice does not build compounding pressure. Companies and individual landlords know that without automated follow-ups and a criminal draft escalation, the opposite party will likely not incur the cost of going to court.</li>
+                  <li><strong>No Lawyer Signature:</strong> Casual letters on plain paper carry no real legal threat. A notice on a practicing advocate&apos;s letterhead shows you are serious about taking court action.</li>
+                  <li><strong>Missing State-Specific Rules:</strong> Rent laws vary by state. Standard templates miss vital local rules under the Maharashtra Rent Act, Delhi Rent Control Act, or Model Tenancy Act.</li>
+                  <li><strong>No Compounding Pressure:</strong> A single generic letter is easily ignored. Without progressive escalations and criminal breach of trust drafts, the other party rarely acts.</li>
                 </ul>
                 <p>
-                  LegalRecovery provides you with attorney-signed, state-customized notice campaigns. We use real-time digital read receipts to track when the HR opened the email, leaving them with absolutely no room to claim they never received the demand.
+                  LegalRecovery provides attorney-verified, state-specific notice campaigns. We track delivery in real time so the opposite party cannot claim non-receipt.
                 </p>
 
                 {/* 6. Transparent Flat Pricing */}
                 <h2 id="service-pricing">6. Transparent Flat Pricing</h2>
                 <p>
-                  Traditional advocates charge thousands of rupees per consultation and demand additional percentages (commissions) on the recovered amount. We believe this is highly exploitative. 
+                  Traditional advocates charge high consultation fees and ask for a cut of your recovered funds. We believe in transparent, honest pricing.
                 </p>
                 <p>
-                  LegalRecovery provides professional, attorney-verified security deposit and rental recovery notice campaigns for a single, flat fee of <strong className="font-extrabold text-[#111827]">₹999</strong>. We charge absolutely zero hidden fees and take zero commission on your recovered money.
+                  LegalRecovery offers complete rental recovery notice campaigns for a single flat fee of <strong className="font-extrabold text-[#111827]">₹999</strong>. We charge no hidden fees and take zero commission on your recovered money.
                 </p>
 
                 {/* Pixel-perfect reproduction of the home page unified pricing container */}

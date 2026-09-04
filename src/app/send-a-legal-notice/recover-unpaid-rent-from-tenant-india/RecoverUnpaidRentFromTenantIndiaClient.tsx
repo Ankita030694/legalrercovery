@@ -379,39 +379,54 @@ export default function RecoverUnpaidRentFromTenantIndiaClient() {
                     <span className="text-xs font-semibold text-slate-400 uppercase tracking-wider mr-2">
                       Share:
                     </span>
-                    <a
-                      href={`https://twitter.com/intent/tweet?url=${shareUrl}&text=${shareText}`}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="w-8 h-8 rounded-full bg-black text-white hover:opacity-80 flex items-center justify-center transition-opacity"
+                    <button
+                      type="button"
+                      onClick={() =>
+                        window.open(
+                          `https://twitter.com/intent/tweet?url=${shareUrl}&text=${shareText}`,
+                          '_blank',
+                          'noopener,noreferrer,width=600,height=400'
+                        )
+                      }
+                      className="w-8 h-8 rounded-full bg-black text-white hover:opacity-80 flex items-center justify-center transition-opacity cursor-pointer"
                       aria-label="Share on X (Twitter)"
                     >
                       <svg className="w-4 h-4 fill-current" viewBox="0 0 24 24">
                         <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z" />
                       </svg>
-                    </a>
-                    <a
-                      href={`https://www.facebook.com/sharer/sharer.php?u=${shareUrl}`}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="w-8 h-8 rounded-full bg-[#1877F2] text-white hover:opacity-80 flex items-center justify-center transition-opacity"
+                    </button>
+                    <button
+                      type="button"
+                      onClick={() =>
+                        window.open(
+                          `https://www.facebook.com/sharer/sharer.php?u=${shareUrl}`,
+                          '_blank',
+                          'noopener,noreferrer,width=600,height=400'
+                        )
+                      }
+                      className="w-8 h-8 rounded-full bg-[#1877F2] text-white hover:opacity-80 flex items-center justify-center transition-opacity cursor-pointer"
                       aria-label="Share on Facebook"
                     >
                       <svg className="w-4 h-4 fill-current" viewBox="0 0 24 24">
                         <path d="M9.198 21.5h4v-8.01h3.604l.396-3.98h-4V7.5a1 1 0 0 1 1-1h3v-4h-3a5 5 0 0 0-5 5v2.01h-2l-.396 3.98h2.396v8.01z" />
                       </svg>
-                    </a>
-                    <a
-                      href={`https://www.linkedin.com/shareArticle?mini=true&url=${shareUrl}&title=${encodeURIComponent('Legal Notice to Tenant for Not Paying Rent | Recover Unpaid Rent India')}`}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="w-8 h-8 rounded-full bg-[#0A66C2] text-white hover:opacity-80 flex items-center justify-center transition-opacity"
+                    </button>
+                    <button
+                      type="button"
+                      onClick={() =>
+                        window.open(
+                          `https://www.linkedin.com/shareArticle?mini=true&url=${shareUrl}&title=${encodeURIComponent('Legal Notice to Tenant for Not Paying Rent | Recover Unpaid Rent India')}`,
+                          '_blank',
+                          'noopener,noreferrer,width=600,height=400'
+                        )
+                      }
+                      className="w-8 h-8 rounded-full bg-[#0A66C2] text-white hover:opacity-80 flex items-center justify-center transition-opacity cursor-pointer"
                       aria-label="Share on LinkedIn"
                     >
                       <svg className="w-4 h-4 fill-current" viewBox="0 0 24 24">
                         <path d="M4.98 3.5c0 1.381-1.11 2.5-2.48 2.5s-2.48-1.119-2.48-2.5c0-1.38 1.11-2.5 2.48-2.5s2.48 1.12 2.48 2.5zm.02 4.5h-5v16h5v-16zm7.982 0h-4.968v16h4.969v-8.399c0-4.67 6.029-5.052 6.029 0v8.399h4.988v-10.131c0-7.88-8.922-7.593-11.018-3.714v-2.155z" />
                       </svg>
-                    </a>
+                    </button>
                   </div>
                 </div>
 
@@ -422,31 +437,13 @@ export default function RecoverUnpaidRentFromTenantIndiaClient() {
                   </h2>
                   <p className="text-sm text-slate-700 font-medium leading-relaxed">
                     A landlord can send an advocate-drafted statutory legal notice to a tenant for
-                    not paying rent under{' '}
-                    <a
-                      href="https://www.indiacode.nic.in/handle/123456789/2238"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="text-purple-600 hover:text-purple-800 hover:underline"
-                    >
-                      Section 106 of the Transfer of Property Act, 1882
-                    </a>{' '}
-                    and the applicable state Rent Control Act, demanding full payment of all rent
+                    not paying rent under <strong className="text-slate-900 font-semibold">Section 106 of the Transfer of Property Act, 1882</strong> and the applicable state Rent Control Act, demanding full payment of all rent
                     arrears within 15 days. The notice simultaneously satisfies the mandatory
                     statutory notice-to-quit requirement and creates a formal evidentiary record
                     of default, empowering the landlord to file an eviction petition and a summary
                     civil suit for rent recovery if the tenant fails to comply. Non-payment of rent
                     for two or more consecutive months is the strongest recognized ground for
-                    eviction under all major Indian Rent Control statutes, including the{' '}
-                    <a
-                      href="https://legislative.gov.in/sites/default/files/A1958-59.pdf"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="text-purple-600 hover:text-purple-800 hover:underline"
-                    >
-                      Delhi Rent Control Act, 1958
-                    </a>
-                    , the Maharashtra Rent Control Act, 1999, and the Model Tenancy Act, 2021.
+                    eviction under all major Indian Rent Control statutes, including the <strong className="text-slate-900 font-semibold">Delhi Rent Control Act, 1958</strong>, the Maharashtra Rent Control Act, 1999, and the Model Tenancy Act, 2021.
                   </p>
                 </div>
 
@@ -895,34 +892,34 @@ export default function RecoverUnpaidRentFromTenantIndiaClient() {
                   </h2>
                   <ol className="list-decimal list-inside space-y-2 text-xs sm:text-sm text-slate-600">
                     <li>
-                      <a href="https://www.indiacode.nic.in/handle/123456789/2238" target="_blank" rel="noopener noreferrer" className="text-purple-600 hover:text-purple-800 hover:underline">
-                        Transfer of Property Act, 1882 — Section 106 &amp; Section 108(l), indiacode.nic.in
-                      </a>
+                      <span className="font-semibold text-slate-800">
+                        Transfer of Property Act, 1882 — Section 106 &amp; Section 108(l) (indiacode.nic.in)
+                      </span>
                     </li>
                     <li>
-                      <a href="https://mohua.gov.in/upload/uploadfiles/files/Draft_Model_Tenancy_Act.pdf" target="_blank" rel="noopener noreferrer" className="text-purple-600 hover:text-purple-800 hover:underline">
-                        Model Tenancy Act, 2021 — Ministry of Housing and Urban Affairs, mohua.gov.in
-                      </a>
+                      <span className="font-semibold text-slate-800">
+                        Model Tenancy Act, 2021 — Ministry of Housing and Urban Affairs (mohua.gov.in)
+                      </span>
                     </li>
                     <li>
-                      <a href="https://legislative.gov.in/sites/default/files/A1958-59.pdf" target="_blank" rel="noopener noreferrer" className="text-purple-600 hover:text-purple-800 hover:underline">
-                        Delhi Rent Control Act, 1958 — Section 14(1)(a), legislative.gov.in
-                      </a>
+                      <span className="font-semibold text-slate-800">
+                        Delhi Rent Control Act, 1958 — Section 14(1)(a) (legislative.gov.in)
+                      </span>
                     </li>
                     <li>
-                      <a href="https://www.indiacode.nic.in/handle/123456789/1566" target="_blank" rel="noopener noreferrer" className="text-purple-600 hover:text-purple-800 hover:underline">
-                        Code of Civil Procedure, 1908 — Order XXXVII (Summary Suits), indiacode.nic.in
-                      </a>
+                      <span className="font-semibold text-slate-800">
+                        Code of Civil Procedure, 1908 — Order XXXVII (Summary Suits) (indiacode.nic.in)
+                      </span>
                     </li>
                     <li>
-                      <a href="https://www.indiacode.nic.in/handle/123456789/2186" target="_blank" rel="noopener noreferrer" className="text-purple-600 hover:text-purple-800 hover:underline">
-                        Indian Penal Code, 1860 — Section 415 (Cheating) &amp; Section 420, indiacode.nic.in
-                      </a>
+                      <span className="font-semibold text-slate-800">
+                        Indian Penal Code, 1860 — Section 415 (Cheating) &amp; Section 420 (indiacode.nic.in)
+                      </span>
                     </li>
                     <li>
-                      <a href="https://www.indiacode.nic.in/handle/123456789/20234" target="_blank" rel="noopener noreferrer" className="text-purple-600 hover:text-purple-800 hover:underline">
-                        Bharatiya Nyaya Sanhita, 2023 — Section 318 (Cheating), indiacode.nic.in
-                      </a>
+                      <span className="font-semibold text-slate-800">
+                        Bharatiya Nyaya Sanhita, 2023 — Section 318 (Cheating) (indiacode.nic.in)
+                      </span>
                     </li>
                   </ol>
                 </section>

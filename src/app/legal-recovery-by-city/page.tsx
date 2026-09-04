@@ -1,11 +1,15 @@
+import type { Metadata } from "next";
 import React from "react";
 import Link from "next/link";
 import { locationData } from "./locationData";
 
-export const metadata = {
+export const metadata: Metadata = {
   title: "Legal Recovery Services by City | Legal Recovery",
   description:
     "Find the best advocate panel for legal recovery and debt collection across various cities in India. Get expert legal assistance with Legal Recovery.",
+  alternates: {
+    canonical: "https://www.legalrecovery.in/legal-recovery-by-city",
+  },
 };
 
 export default function LawyerByCity() {

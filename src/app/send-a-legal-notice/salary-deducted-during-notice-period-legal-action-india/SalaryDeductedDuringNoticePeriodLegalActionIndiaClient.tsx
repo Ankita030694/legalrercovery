@@ -396,39 +396,54 @@ export default function SalaryDeductedDuringNoticePeriodLegalActionIndiaClient()
                     <span className="text-xs font-semibold text-slate-400 uppercase tracking-wider mr-2">
                       Share:
                     </span>
-                    <a
-                      href={`https://twitter.com/intent/tweet?url=${shareUrl}&text=${shareText}`}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="w-8 h-8 rounded-full bg-black text-white hover:opacity-80 flex items-center justify-center transition-opacity"
+                    <button
+                      type="button"
+                      onClick={() =>
+                        window.open(
+                          `https://twitter.com/intent/tweet?url=${shareUrl}&text=${shareText}`,
+                          '_blank',
+                          'noopener,noreferrer,width=600,height=400'
+                        )
+                      }
+                      className="w-8 h-8 rounded-full bg-black text-white hover:opacity-80 flex items-center justify-center transition-opacity cursor-pointer"
                       aria-label="Share on X (Twitter)"
                     >
                       <svg className="w-4 h-4 fill-current" viewBox="0 0 24 24">
                         <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z" />
                       </svg>
-                    </a>
-                    <a
-                      href={`https://www.facebook.com/sharer/sharer.php?u=${shareUrl}`}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="w-8 h-8 rounded-full bg-[#1877F2] text-white hover:opacity-80 flex items-center justify-center transition-opacity"
+                    </button>
+                    <button
+                      type="button"
+                      onClick={() =>
+                        window.open(
+                          `https://www.facebook.com/sharer/sharer.php?u=${shareUrl}`,
+                          '_blank',
+                          'noopener,noreferrer,width=600,height=400'
+                        )
+                      }
+                      className="w-8 h-8 rounded-full bg-[#1877F2] text-white hover:opacity-80 flex items-center justify-center transition-opacity cursor-pointer"
                       aria-label="Share on Facebook"
                     >
                       <svg className="w-4 h-4 fill-current" viewBox="0 0 24 24">
                         <path d="M9.198 21.5h4v-8.01h3.604l.396-3.98h-4V7.5a1 1 0 0 1 1-1h3v-4h-3a5 5 0 0 0-5 5v2.01h-2l-.396 3.98h2.396v8.01z" />
                       </svg>
-                    </a>
-                    <a
-                      href={`https://www.linkedin.com/shareArticle?mini=true&url=${shareUrl}&title=${encodeURIComponent('Salary Deducted During Notice Period Legal Action India | Legal Recovery')}`}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="w-8 h-8 rounded-full bg-[#0A66C2] text-white hover:opacity-80 flex items-center justify-center transition-opacity"
+                    </button>
+                    <button
+                      type="button"
+                      onClick={() =>
+                        window.open(
+                          `https://www.linkedin.com/shareArticle?mini=true&url=${shareUrl}&title=${encodeURIComponent('Salary Deducted During Notice Period Legal Action India | Legal Recovery')}`,
+                          '_blank',
+                          'noopener,noreferrer,width=600,height=400'
+                        )
+                      }
+                      className="w-8 h-8 rounded-full bg-[#0A66C2] text-white hover:opacity-80 flex items-center justify-center transition-opacity cursor-pointer"
                       aria-label="Share on LinkedIn"
                     >
                       <svg className="w-4 h-4 fill-current" viewBox="0 0 24 24">
                         <path d="M4.98 3.5c0 1.381-1.11 2.5-2.48 2.5s-2.48-1.119-2.48-2.5c0-1.38 1.11-2.5 2.48-2.5s2.48 1.12 2.48 2.5zm.02 4.5h-5v16h5v-16zm7.982 0h-4.968v16h4.969v-8.399c0-4.67 6.029-5.052 6.029 0v8.399h4.988v-10.131c0-7.88-8.922-7.593-11.018-3.714v-2.155z" />
                       </svg>
-                    </a>
+                    </button>
                   </div>
                 </div>
 
@@ -438,34 +453,7 @@ export default function SalaryDeductedDuringNoticePeriodLegalActionIndiaClient()
                     Quick Answer
                   </h2>
                   <p className="text-sm text-slate-700 font-medium leading-relaxed">
-                    Under Section 7 and Section 15 of the{' '}
-                    <a
-                      href="https://labour.gov.in/sites/default/files/ThePaymentofWagesAct1936.pdf"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="text-purple-600 hover:text-purple-800 hover:underline"
-                    >
-                      Payment of Wages Act, 1936
-                    </a>
-                    , Section 18 of the{' '}
-                    <a
-                      href="https://labour.gov.in/sites/default/files/the_code_on_wages_2019_no._29_of_2019.pdf"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="text-purple-600 hover:text-purple-800 hover:underline"
-                    >
-                      Code on Wages, 2019
-                    </a>
-                    , and Section 74 of the{' '}
-                    <a
-                      href="https://www.indiacode.nic.in/handle/123456789/2187"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="text-purple-600 hover:text-purple-800 hover:underline"
-                    >
-                      Indian Contract Act, 1872
-                    </a>
-                    , an employer in India cannot lawfully deduct salary or withhold wages during an employee&apos;s active notice period unless the deduction is strictly authorized by statute or represents a proportionate basic salary shortfall for unserved days. If an employer makes unauthorized deductions from monthly pay or the Full and Final (FNF) settlement, the aggrieved employee can serve an advocate-vetted statutory legal demand notice giving the management 15 days to refund the deducted amount with interest and release all service certificates. Continued non-compliance empowers the employee to initiate summary recovery proceedings under Order 37 of the Code of Civil Procedure, 1908, file a statutory claim before the Labour Commissioner with up to ten times penalty compensation, and register a complaint under the applicable State Shops and Establishments Act.
+                    Under Section 7 and Section 15 of the <strong className="text-slate-900 font-semibold">Payment of Wages Act, 1936</strong>, Section 18 of the <strong className="text-slate-900 font-semibold">Code on Wages, 2019</strong>, and Section 74 of the <strong className="text-slate-900 font-semibold">Indian Contract Act, 1872</strong>, an employer in India cannot lawfully deduct salary or withhold wages during an employee&apos;s active notice period unless the deduction is strictly authorized by statute or represents a proportionate basic salary shortfall for unserved days. If an employer makes unauthorized deductions from monthly pay or the Full and Final (FNF) settlement, the aggrieved employee can serve an advocate-vetted statutory legal demand notice giving the management 15 days to refund the deducted amount with interest and release all service certificates. Continued non-compliance empowers the employee to initiate summary recovery proceedings under Order 37 of the Code of Civil Procedure, 1908, file a statutory claim before the Labour Commissioner with up to ten times penalty compensation, and register a complaint under the applicable State Shops and Establishments Act.
                   </p>
                 </div>
 
@@ -969,84 +957,44 @@ export default function SalaryDeductedDuringNoticePeriodLegalActionIndiaClient()
                   </h3>
                   <ol className="list-decimal list-inside space-y-2 text-xs text-slate-600">
                     <li>
-                      <a
-                        href="https://labour.gov.in/sites/default/files/ThePaymentofWagesAct1936.pdf"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="text-purple-600 hover:text-purple-800 hover:underline"
-                      >
-                        Payment of Wages Act, 1936 — Section 7 (Permissible Deductions) &amp; Section 15 (Claims out of Deductions), labour.gov.in
-                      </a>
+                      <span className="font-semibold text-slate-800">
+                        Payment of Wages Act, 1936 — Section 7 (Permissible Deductions) &amp; Section 15 (Claims out of Deductions) (labour.gov.in)
+                      </span>
                     </li>
                     <li>
-                      <a
-                        href="https://labour.gov.in/sites/default/files/the_code_on_wages_2019_no._29_of_2019.pdf"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="text-purple-600 hover:text-purple-800 hover:underline"
-                      >
-                        Code on Wages, 2019 — Section 17 (Time Limit for Payment of Wages) &amp; Section 18 (Deductions), labour.gov.in
-                      </a>
+                      <span className="font-semibold text-slate-800">
+                        Code on Wages, 2019 — Section 17 (Time Limit for Payment of Wages) &amp; Section 18 (Deductions) (labour.gov.in)
+                      </span>
                     </li>
                     <li>
-                      <a
-                        href="https://www.indiacode.nic.in/handle/123456789/2187"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="text-purple-600 hover:text-purple-800 hover:underline"
-                      >
-                        Indian Contract Act, 1872 — Section 27 (Agreements in Restraint of Trade) &amp; Section 74 (Liquidated Damages vs Penalty), indiacode.nic.in
-                      </a>
+                      <span className="font-semibold text-slate-800">
+                        Indian Contract Act, 1872 — Section 27 (Agreements in Restraint of Trade) &amp; Section 74 (Liquidated Damages vs Penalty) (indiacode.nic.in)
+                      </span>
                     </li>
                     <li>
-                      <a
-                        href="https://main.sci.gov.in/judgment/judis/8422.pdf"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="text-purple-600 hover:text-purple-800 hover:underline"
-                      >
-                        Supreme Court of India — Central Inland Water Transport Corp. v. Brojo Nath Ganguly (1986) 3 SCC 156 (Unconscionable Clauses Void), main.sci.gov.in
-                      </a>
+                      <span className="font-semibold text-slate-800">
+                        Supreme Court of India — Central Inland Water Transport Corp. v. Brojo Nath Ganguly (1986) 3 SCC 156 (main.sci.gov.in)
+                      </span>
                     </li>
                     <li>
-                      <a
-                        href="https://main.sci.gov.in/judgment/judis/6075.pdf"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="text-purple-600 hover:text-purple-800 hover:underline"
-                      >
-                        Supreme Court of India — Superintendence Company of India (P) Ltd. v. Krishan Murgai (1980) 2 SCC 246, main.sci.gov.in
-                      </a>
+                      <span className="font-semibold text-slate-800">
+                        Supreme Court of India — Superintendence Company of India (P) Ltd. v. Krishan Murgai (1980) 2 SCC 246 (main.sci.gov.in)
+                      </span>
                     </li>
                     <li>
-                      <a
-                        href="https://www.indiacode.nic.in/handle/123456789/2191"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="text-purple-600 hover:text-purple-800 hover:underline"
-                      >
-                        Code of Civil Procedure, 1908 — Order 37 Summary Procedure for Liquidated Debts, indiacode.nic.in
-                      </a>
+                      <span className="font-semibold text-slate-800">
+                        Code of Civil Procedure, 1908 — Order 37 Summary Procedure for Liquidated Debts (indiacode.nic.in)
+                      </span>
                     </li>
                     <li>
-                      <a
-                        href="https://www.mca.gov.in/content/mca/global/en/home.html"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="text-purple-600 hover:text-purple-800 hover:underline"
-                      >
-                        Ministry of Corporate Affairs (MCA) — Company Master Data &amp; Registered Office Verification, mca.gov.in
-                      </a>
+                      <span className="font-semibold text-slate-800">
+                        Ministry of Corporate Affairs (MCA) — Company Master Data &amp; Registered Office Verification (mca.gov.in)
+                      </span>
                     </li>
                     <li>
-                      <a
-                        href="https://www.indiacode.nic.in/handle/123456789/20234"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="text-purple-600 hover:text-purple-800 hover:underline"
-                      >
-                        Bharatiya Nyaya Sanhita, 2023 — Section 316 (Criminal Breach of Trust) &amp; Section 318 (Cheating), indiacode.nic.in
-                      </a>
+                      <span className="font-semibold text-slate-800">
+                        Bharatiya Nyaya Sanhita, 2023 — Section 316 (Criminal Breach of Trust) &amp; Section 318 (Cheating) (indiacode.nic.in)
+                      </span>
                     </li>
                   </ol>
                 </section>

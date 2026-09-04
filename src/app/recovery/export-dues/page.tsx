@@ -2,8 +2,8 @@ import { Metadata } from "next";
 import ExportDuesClient from "./ExportDuesClient";
 
 export const metadata: Metadata = {
-  title: "Recover Unpaid Export Dues & International Trade Payments | LegalRecovery",
-  description: "Struggling to recover unpaid export dues, outstanding trade bills, or B2B export payments in India? Learn about ECGC claims, FEMA write-offs, EDPMS tracking, and legal notices.",
+  title: "Recover Unpaid Export Dues in India | LegalRecovery",
+  description: "Struggling to recover unpaid export dues in India? Learn about ECGC claims, FEMA compliance, EDPMS tracking, and international debt recovery notices.",
   keywords: [
     "recover export dues India",
     "unpaid export bills legal notice",

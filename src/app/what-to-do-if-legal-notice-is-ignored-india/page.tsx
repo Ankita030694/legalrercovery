@@ -3,7 +3,7 @@ import WhatToDoClient from "./WhatToDoClient";
 
 export const metadata: Metadata = {
   title: "What to do if Legal Notice is Ignored in India | Recovery",
-  description: "Learn the exact legal steps to take when a debtor ignores your legal notice for money recovery in India, including civil summary suits and criminal complaints.",
+  description: "Learn the legal steps to take when a debtor ignores your legal notice in India, including civil summary suits and criminal complaint options.",
   keywords: [
     "legal recovery",
     "recover my money",

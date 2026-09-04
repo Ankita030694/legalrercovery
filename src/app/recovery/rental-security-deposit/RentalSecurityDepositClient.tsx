@@ -167,8 +167,8 @@ export default function RentalSecurityDepositClient() {
   };
 
   const tocSections = [
-    { id: "rental-deposit-introduction", title: "Introduction" },
-    { id: "statutory-framework-tenancy", title: "Legal Framework" },
+    { id: "rental-deposit-introduction", title: "Introduction to Rental Security Deposit Disputes" },
+    { id: "statutory-framework-tenancy", title: "Legal Framework for Rental Tenancy Deposits" },
     { id: "valid-vs-invalid-deductions", title: "Permissible Deductions" },
     { id: "model-tenancy-act-deposit-cap", title: "Model Tenancy Act Cap" },
     { id: "security-deposit-interest", title: "Interest on Deposits" },
@@ -273,7 +273,7 @@ export default function RentalSecurityDepositClient() {
                 
                 {/* Introduction */}
                 <section id="rental-deposit-introduction" className="scroll-mt-32">
-                  <h2 className="text-xl md:text-3xl font-black text-slate-900 mb-5 border-b-2 border-[#DC2626] pb-2 inline-block">Introduction</h2>
+                  <h2 className="text-xl md:text-3xl font-black text-slate-900 mb-5 border-b-2 border-[#DC2626] pb-2 inline-block">Introduction to Rental Security Deposit Disputes</h2>
                   <div className="prose prose-base max-w-none text-slate-650 space-y-6">
                     <p className="text-sm md:text-base leading-relaxed">
                       Securing a rental property—whether a residential apartment in Mumbai, a tech-hub flat in Bangalore, or a commercial office space in Gurugram—requires a significant upfront financial commitment. Tenants are routinely required to pay a substantial security deposit to the landlord. This deposit is intended to serve as a financial shield for the property owner, protecting against potential defaults on rent, outstanding utility bills, or severe structural damage caused to the property during the lease term.
@@ -292,7 +292,7 @@ export default function RentalSecurityDepositClient() {
 
                 {/* Legal Framework */}
                 <section id="statutory-framework-tenancy" className="scroll-mt-32">
-                  <h2 className="text-xl md:text-3xl font-black text-slate-900 mb-5 border-b-2 border-[#DC2626] pb-2 inline-block">Legal Framework</h2>
+                  <h2 className="text-xl md:text-3xl font-black text-slate-900 mb-5 border-b-2 border-[#DC2626] pb-2 inline-block">Legal Framework for Rental Tenancy Deposits</h2>
                   <div className="prose prose-base max-w-none text-slate-650 space-y-6">
                     <p className="text-sm md:text-base leading-relaxed">
                       Tenancy relations in India are governed by state-specific laws and central guidelines. Because land and tenancy are state subjects under the Constitution of India, different rules apply depending on where the property is located.

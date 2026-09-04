@@ -2,8 +2,8 @@ import { Metadata } from "next";
 import FriendlyLoanAmountClient from "./FriendlyLoanAmountClient";
 
 export const metadata: Metadata = {
-  title: "Friendly Loan Recovery Process & Legal Actions in India | LegalRecovery",
-  description: "Struggling to recover a friendly loan given to a friend, relative, or colleague? Learn about legal options, oral contracts validity, digital proofs, and how to recover your funds.",
+  title: "Friendly Loan Recovery Process in India | LegalRecovery",
+  description: "Struggling to recover a friendly loan in India? Learn legal options, oral contract validity, digital proofs, and how to recover your funds legally.",
   keywords: [
     "friendly loan recovery process",
     "how to recover friendly loan india",

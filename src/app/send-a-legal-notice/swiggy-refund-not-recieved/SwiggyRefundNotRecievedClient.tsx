@@ -313,33 +313,48 @@ export default function SwiggyRefundNotRecievedClient() {
                   {/* Share Buttons in Native Brand Colors */}
                   <div className="flex items-center gap-2">
                     <span className="text-xs font-semibold text-slate-400 uppercase tracking-wider mr-2">Share:</span>
-                    <a
-                      href="https://twitter.com/intent/tweet?url=https%3A%2F%2Flegalrecovery.in%2Fsend-a-legal-notice%2Fswiggy-refund-not-recieved&text=Step-by-step%20guide%20on%20sending%20a%20legal%20notice%20for%20a%20Swiggy%20refund%20not%20received%20under%20Consumer%20Protection%20Act.%20%23ConsumerRights"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="w-8 h-8 rounded-full bg-black text-white hover:opacity-80 flex items-center justify-center transition-opacity"
+                    <button
+                      type="button"
+                      onClick={() =>
+                        window.open(
+                          'https://twitter.com/intent/tweet?url=https%3A%2F%2Flegalrecovery.in%2Fsend-a-legal-notice%2Fswiggy-refund-not-recieved&text=Step-by-step%20guide%20on%20sending%20a%20legal%20notice%20for%20a%20Swiggy%20refund%20not%20received%20under%20Consumer%20Protection%20Act.%20%23ConsumerRights',
+                          '_blank',
+                          'noopener,noreferrer,width=600,height=400'
+                        )
+                      }
+                      className="w-8 h-8 rounded-full bg-black text-white hover:opacity-80 flex items-center justify-center transition-opacity cursor-pointer"
                       aria-label="Share on X (Twitter)"
                     >
                       <svg className="w-4 h-4 fill-current" viewBox="0 0 24 24"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
-                    </a>
-                    <a
-                      href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Flegalrecovery.in%2Fsend-a-legal-notice%2Fswiggy-refund-not-recieved"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="w-8 h-8 rounded-full bg-[#1877F2] text-white hover:opacity-80 flex items-center justify-center transition-opacity"
+                    </button>
+                    <button
+                      type="button"
+                      onClick={() =>
+                        window.open(
+                          'https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Flegalrecovery.in%2Fsend-a-legal-notice%2Fswiggy-refund-not-recieved',
+                          '_blank',
+                          'noopener,noreferrer,width=600,height=400'
+                        )
+                      }
+                      className="w-8 h-8 rounded-full bg-[#1877F2] text-white hover:opacity-80 flex items-center justify-center transition-opacity cursor-pointer"
                       aria-label="Share on Facebook"
                     >
                       <svg className="w-4 h-4 fill-current" viewBox="0 0 24 24"><path d="M9.198 21.5h4v-8.01h3.604l.396-3.98h-4V7.5a1 1 0 0 1 1-1h3v-4h-3a5 5 0 0 0-5 5v2.01h-2l-.396 3.98h2.396v8.01z"/></svg>
-                    </a>
-                    <a
-                      href="https://www.linkedin.com/shareArticle?mini=true&url=https%3A%2F%2Flegalrecovery.in%2Fsend-a-legal-notice%2Fswiggy-refund-not-recieved&title=Legal%20Notice%20for%20Swiggy%20Refund%20Not%20Received"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="w-8 h-8 rounded-full bg-[#0A66C2] text-white hover:opacity-80 flex items-center justify-center transition-opacity"
+                    </button>
+                    <button
+                      type="button"
+                      onClick={() =>
+                        window.open(
+                          'https://www.linkedin.com/shareArticle?mini=true&url=https%3A%2F%2Flegalrecovery.in%2Fsend-a-legal-notice%2Fswiggy-refund-not-recieved&title=Legal%20Notice%20for%20Swiggy%20Refund%20Not%20Received',
+                          '_blank',
+                          'noopener,noreferrer,width=600,height=400'
+                        )
+                      }
+                      className="w-8 h-8 rounded-full bg-[#0A66C2] text-white hover:opacity-80 flex items-center justify-center transition-opacity cursor-pointer"
                       aria-label="Share on LinkedIn"
                     >
                       <svg className="w-4 h-4 fill-current" viewBox="0 0 24 24"><path d="M4.98 3.5c0 1.381-1.11 2.5-2.48 2.5s-2.48-1.119-2.48-2.5c0-1.38 1.11-2.5 2.48-2.5s2.48 1.12 2.48 2.5zm.02 4.5h-5v16h5v-16zm7.982 0h-4.968v16h4.969v-8.399c0-4.67 6.029-5.052 6.029 0v8.399h4.988v-10.131c0-7.88-8.922-7.593-11.018-3.714v-2.155z"/></svg>
-                    </a>
+                    </button>
                   </div>
                 </div>
 
@@ -759,25 +774,18 @@ export default function SwiggyRefundNotRecievedClient() {
                 {/* External Authority Citations */}
                 <div className="pt-8 border-t border-slate-100 space-y-3">
                   <h4 className="text-xs font-bold uppercase tracking-wider text-slate-400">Statutory &amp; Regulatory Authorities</h4>
-                  <div className="flex flex-wrap gap-x-6 gap-y-2 text-xs">
-                    <a href="https://ncdrc.nic.in" target="_blank" rel="noopener noreferrer" className="text-purple-600 hover:text-purple-800 hover:underline">
-                      National Consumer Disputes Redressal Commission (NCDRC)
-                    </a>
-                    <a href="https://consumeraffairs.nic.in" target="_blank" rel="noopener noreferrer" className="text-purple-600 hover:text-purple-800 hover:underline">
-                      Ministry of Consumer Affairs &ndash; E-Commerce Rules 2020
-                    </a>
-                    <a href="https://edaakhil.nic.in" target="_blank" rel="noopener noreferrer" className="text-purple-600 hover:text-purple-800 hover:underline">
-                      e-Daakhil Consumer Grievance Filing System
-                    </a>
-                    <a href="https://www.indiacode.nic.in" target="_blank" rel="noopener noreferrer" className="text-purple-600 hover:text-purple-800 hover:underline">
-                      India Code &ndash; Consumer Protection Act, 2019
-                    </a>
-                    <a href="https://www.rbi.org.in" target="_blank" rel="noopener noreferrer" className="text-purple-600 hover:text-purple-800 hover:underline">
-                      Reserve Bank of India (RBI) Failed Transaction Turn Around Time (TAT)
-                    </a>
-                    <a href="https://fssai.gov.in" target="_blank" rel="noopener noreferrer" className="text-purple-600 hover:text-purple-800 hover:underline">
-                      Food Safety and Standards Authority of India (FSSAI)
-                    </a>
+                  <div className="flex flex-wrap gap-x-4 gap-y-2 text-xs text-slate-600">
+                    <span className="font-medium">National Consumer Disputes Redressal Commission (NCDRC)</span>
+                    <span className="text-slate-300">•</span>
+                    <span className="font-medium">Ministry of Consumer Affairs &ndash; E-Commerce Rules 2020</span>
+                    <span className="text-slate-300">•</span>
+                    <span className="font-medium">e-Daakhil Consumer Grievance Filing System</span>
+                    <span className="text-slate-300">•</span>
+                    <span className="font-medium">India Code &ndash; Consumer Protection Act, 2019</span>
+                    <span className="text-slate-300">•</span>
+                    <span className="font-medium">Reserve Bank of India (RBI) Failed Transaction TAT</span>
+                    <span className="text-slate-300">•</span>
+                    <span className="font-medium">Food Safety and Standards Authority of India (FSSAI)</span>
                   </div>
                 </div>
 

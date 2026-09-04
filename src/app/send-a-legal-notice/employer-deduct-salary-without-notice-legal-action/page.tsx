@@ -6,7 +6,7 @@ const title =
   'Legal Notice to Employer for Deducting Salary Without Notice | Legal Action & Recovery India';
 const description =
   'Employer made unauthorized deductions or slashed your salary without prior notice or disciplinary inquiry? Send an advocate-vetted statutory legal notice under Payment of Wages Act 1936, Code on Wages 2019 & Industrial Disputes Act for immediate recovery with penal compensation.';
-const url = `https://legalrecovery.in/${slug}`;
+const url = `https://www.legalrecovery.in/${slug}`;
 const ogImage = `/images/og/employer-deduct-salary-without-notice-legal-action.jpg`;
 
 export const metadata: Metadata = {

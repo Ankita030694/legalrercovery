@@ -64,10 +64,10 @@ export default function ContactPage() {
             
             {/* Card 1: Support Hubs */}
             <div className="bg-white border border-[#E5E7EB] rounded-2xl p-6 md:p-8 shadow-[0_4px_24px_rgba(0,0,0,0.01)] flex flex-col gap-6">
-              <h3 className="text-lg md:text-xl font-black text-[#111827] border-b border-[#E5E7EB]/60 pb-3 flex items-center gap-2.5">
+              <h2 className="text-lg md:text-xl font-black text-[#111827] border-b border-[#E5E7EB]/60 pb-3 flex items-center gap-2.5">
                 <Building2 className="w-5 h-5 text-[#DC2626]" />
                 Corporate Offices
-              </h3>
+              </h2>
 
               <div className="flex items-start gap-4">
                 <div className="w-10 h-10 rounded-xl bg-red-50 text-[#DC2626] flex items-center justify-center shrink-0">
@@ -84,10 +84,10 @@ export default function ContactPage() {
 
             {/* Card 2: Contact Hours */}
             <div className="bg-white border border-[#E5E7EB] rounded-2xl p-6 md:p-8 shadow-[0_4px_24px_rgba(0,0,0,0.01)] flex flex-col gap-6">
-              <h3 className="text-lg md:text-xl font-black text-[#111827] border-b border-[#E5E7EB]/60 pb-3 flex items-center gap-2.5">
+              <h2 className="text-lg md:text-xl font-black text-[#111827] border-b border-[#E5E7EB]/60 pb-3 flex items-center gap-2.5">
                 <Clock className="w-5 h-5 text-[#DC2626]" />
                 Support Operations
-              </h3>
+              </h2>
 
               <div className="flex items-start gap-4">
                 <div className="w-10 h-10 rounded-xl bg-red-50 text-[#DC2626] flex items-center justify-center shrink-0">

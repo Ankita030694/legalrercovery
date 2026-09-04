@@ -2,8 +2,8 @@ import { Metadata } from "next";
 import DelayedWagesClient from "./DelayedWagesClient";
 
 export const metadata: Metadata = {
-  title: "Delayed Salary Recovery & Late Payment Penalty | LegalRecovery",
-  description: "Is your employer delaying your monthly wages or salary in India? Learn about your legal rights under the Payment of Wages Act, late salary interest, and legal notices.",
+  title: "Delayed Salary Recovery in India | LegalRecovery",
+  description: "Employer delaying monthly wages in India? Learn about your rights under Payment of Wages Act, late salary interest rules, and legal notice procedures.",
   keywords: [
     "delayed wages recovery India",
     "late salary payment legal notice",

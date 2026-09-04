@@ -2,8 +2,8 @@ import { Metadata } from "next";
 import UnpaidSalaryClient from "./UnpaidSalaryClient";
 
 export const metadata: Metadata = {
-  title: "Employer Not Paying Salary After Resignation? Recovery Dues | LegalRecovery",
-  description: "Struggling with unpaid salary after resignation? LegalRecovery provides expert legal-tech assistance to recover your FNF dues, salary, and gratuity. Stop harassment and get what is yours.",
+  title: "Recover Unpaid Salary After Resignation | LegalRecovery",
+  description: "Struggling with unpaid salary after resignation? LegalRecovery provides expert legal assistance to recover your FNF dues, salary, and gratuity.",
   keywords: [
     "employer not paying salary after resignation",
     "salary recovery legal notice",

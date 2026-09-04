@@ -2,9 +2,9 @@ import { Metadata } from "next";
 import FriendlyLoanRecoveryClient from "./FriendlyLoanRecoveryClient";
 
 export const metadata: Metadata = {
-  title: "Legal Notice for Recovery of Friendly Loan in India | Complete Guide",
+  title: "Legal Notice for Friendly Loan Recovery in India",
   description:
-    "Learn how to recover a friendly or personal loan from a friend or relative in India. Get the complete guide on drafting a legal notice, Order 37 CPC summary suits, Section 138 NI Act, and civil recovery suits.",
+    "Learn how to recover a personal loan from a friend or relative in India. Complete guide on drafting a legal notice, Order 37 CPC, and summary suits.",
   alternates: {
     canonical: "/legal-notice-to-recovery-my-loan-from-friend",
   },

@@ -11,51 +11,51 @@ import { PaymentModal } from "@/components/PaymentModal";
 const faqs = [
   {
     question: "What should I do if an international client refuses to pay my invoices?",
-    answer: "You should first review your contract to identify the governing law, dispute resolution clauses, and jurisdictional provisions. Send a formal demand letter via email, and if ignored, escalate by serving a formal advocate-signed legal notice. If the debt remains unpaid, you can initiate international conciliation, cross-border arbitration, or file a commercial suit in the appropriate forum."
+    answer: "Review your contract for governing law and jurisdiction clauses. Send a formal demand letter by email. If ignored, escalate with an advocate-signed international legal notice. You can then pursue international arbitration, commercial mediation, or court litigation."
   },
   {
     question: "Does Indian law apply to contracts signed with foreign companies?",
-    answer: "Indian law applies only if the contract explicitly contains a 'Choice of Law' or 'Governing Law' clause stating that the agreement is governed by the laws of India. If the contract is silent, jurisdiction is determined by where the services were rendered or where the contract was executed, though courts may apply international private law principles."
+    answer: "Indian law applies if your contract contains an express Indian governing law clause. Without this clause, jurisdiction depends on where services were rendered. Service delivery from India gives Indian courts a valid jurisdictional basis."
   },
   {
     question: "What is the RBI's EDPMS, and how does it affect unpaid international invoices?",
-    answer: "The Export Data Processing and Monitoring System (EDPMS) is an RBI-monitored electronic platform that tracks all export transactions and foreign exchange realizations. Exporters must realize payments within the statutory timelines (typically 9 to 15 months). Unrealized invoices are flagged as 'outstanding entries', exposing the exporter to RBI warnings and FEMA regulatory compliance checks."
+    answer: "The Export Data Processing and Monitoring System tracks export proceeds for the RBI. Exporters must realize export payments within 9 to 15 months. Unpaid invoices trigger EDPMS alerts and strict bank compliance inquiries."
   },
   {
     question: "How can I enforce an international contract if the client is based in the US or Europe?",
-    answer: "If the contract contains a mutual arbitration clause, you can initiate arbitration. Since India, the US, and most European nations are signatories to the New York Convention, any resulting arbitral award is enforceable in the client's home country. Alternatively, you can hire cross-border legal counsel to file a commercial debt recovery suit in their local courts."
+    answer: "Initiate arbitration if your contract includes an arbitration clause. Arbitral awards are enforceable globally under the New York Convention. Alternatively, you can file a commercial debt recovery suit in foreign local courts."
   },
   {
     question: "What is the New York Convention, and how does it help in recovering international payments?",
-    answer: "The New York Convention of 1958 is an international treaty signed by over 160 countries. It requires member states to recognize and enforce arbitral awards made in other signatory nations. This means that if you secure an arbitral award in India against a foreign client, you can directly petition the courts in the client's country to attach their bank accounts and assets."
+    answer: "The New York Convention is an international treaty signed by over 160 countries. Member states recognize and enforce arbitral awards from other signatory nations. You can directly petition foreign courts to attach the debtor's bank accounts."
   },
   {
     question: "Can I file a summary suit under Order 37 CPC against a foreign client in an Indian court?",
-    answer: "Yes, provided the Indian court has territorial and pecuniary jurisdiction (for example, if the contract was signed in India, services were rendered from India, or the contract specifies Indian jurisdiction). You can serve the summons to the foreign client via international post or through diplomatic channels, although serving summons abroad can add time to the process."
+    answer: "Yes, if Indian courts hold jurisdiction over the transaction. You can file an Order 37 summary suit based on written contracts. Summons can be served abroad via international registered post or diplomatic channels."
   },
   {
     question: "What are the FEMA compliance requirements if my export payments are delayed or unpaid?",
-    answer: "Under the Foreign Exchange Management Act (FEMA), exporters must take all reasonable steps to realize export proceeds on time. If payments are delayed or defaulted, you must document your recovery efforts (legal notices, correspondence, MSEFC filings) to show the RBI and Authorized Dealer (AD) banks that the non-realization is due to client default rather than illegal capital flight."
+    answer: "Under FEMA rules, exporters must take all reasonable steps to realize export proceeds. Document your legal notices and recovery actions carefully. This proves client default to AD banks and prevents penalties for capital flight."
   },
   {
     question: "How does an international arbitration clause (e.g., SIAC or ICC) work for payment recovery?",
-    answer: "An international arbitration clause specifies that disputes will be resolved by a neutral body like the Singapore International Arbitration Centre (SIAC) or the International Chamber of Commerce (ICC). If a client defaults, you file a petition with the selected center. The tribunal conducts hearings and issues an award, which can then be enforced globally under the New York Convention."
+    answer: "An arbitration clause refers disputes to institutions like SIAC or ICC. You file an arbitration petition with the designated center. Tribunals issue binding arbitral awards that are enforceable worldwide."
   },
   {
     question: "Can I block a foreign client's website, app, or server access if they fail to pay for software services?",
-    answer: "Yes, unless the contract contains a clause that transfers intellectual property (IP) and server ownership immediately upon generation. Under the Contract Act and general commercial principles, a service provider can exercise a lien over project assets, source code, or domain control in their possession until all outstanding project invoices are cleared."
+    answer: "Yes, unless your agreement transfers intellectual property rights before full payment. Service providers hold a legal lien over source code and server access until all invoices are cleared."
   },
   {
     question: "What is the limitation period for recovering cross-border commercial debts?",
-    answer: "Under the Limitation Act, 1963, the limitation period to initiate legal action in India for B2B payment recovery is three (3) years from the date the invoice default occurred or the date of the last written acknowledgment of the debt. If you are filing in the client's home country, the limitation period is governed by their local laws."
+    answer: "In India, you have three years under the Limitation Act 1963. The clock starts from the invoice default date. Written payment acknowledgments reset this three-year limitation period."
   },
   {
     question: "How do I serve a legal notice to a company registered outside India?",
-    answer: "An international legal notice is drafted by an advocate and served via verified email to the client's registered corporate address. You must verify their active corporate status through their local registry (such as Delaware Division of Corporations in the US or Companies House in the UK) to ensure the notice is legally valid."
+    answer: "An advocate drafts the notice and serves it via verified email and registered international post. Verify the debtor's corporate status through official state registries like Delaware Division of Corporations or UK Companies House."
   },
   {
     question: "Can I initiate insolvency proceedings under the IBC against a foreign company's Indian subsidiary?",
-    answer: "Yes. If the outstanding debt is ₹1 crore or more, and it is owed by the Indian subsidiary of a foreign company, you can serve a Section 8 demand notice under the Insolvency and Bankruptcy Code (IBC). If they fail to pay within 10 days, you can petition the NCLT to initiate corporate insolvency proceedings against the subsidiary."
+    answer: "Yes. If the Indian subsidiary owes ₹1 Crore or more, you can serve a Section 8 demand notice. If unpaid after 10 days, you can file an NCLT insolvency petition."
   }
 ];
 
@@ -314,19 +314,19 @@ export default function InternationalClientPaymentClient() {
                   <h2 className="text-xl md:text-3xl font-black text-slate-900 mb-5 border-b-2 border-[#DC2626] pb-2 inline-block">1. Cross-Border Defaults &amp; Business Impact</h2>
                   <div className="prose prose-base max-w-none text-slate-650 space-y-6">
                     <p className="text-sm md:text-base leading-relaxed">
-                      In the globalized economy, Indian IT firms, SaaS startups, digital agencies, and professional consultants increasingly export services to clients across the United States, Europe, the United Kingdom, and the Middle East. While this cross-border trade offers significant opportunities, it also exposes Indian service providers to the risk of international B2B payment defaults. Foreign client defaults represent a complex challenge due to geographical distance, different legal systems, and jurisdictional barriers. Unlike domestic B2B defaults, where you can easily file a local summary suit or approach the Labour Commissioner, international defaults involve cross-border contract enforcement. The client may stop responding to emails, raise post-facto quality complaints, or simply refuse to clear invoices, knowing that the contractor is thousands of miles away.
+                      Indian IT companies, digital agencies, and consultants regularly export services across the globe. They serve clients across the US, UK, Europe, and the Middle East. While lucrative, global trade exposes service providers to international payment defaults. Distant clients often stop responding, claim sudden quality flaws, or withhold milestone payments.
                     </p>
                     <p className="text-sm md:text-base leading-relaxed">
-                      For the Indian exporter, the impact of an unpaid international invoice extends beyond financial loss; it creates severe regulatory challenges. Under the <strong>Foreign Exchange Management Act (FEMA)</strong> and Reserve Bank of India (RBI) regulations, all export proceeds must be realized within a statutory period (typically 9 to 15 months from the date of service or export). The RBI tracks these transactions through the <strong>Export Data Processing and Monitoring System (EDPMS)</strong>. If an international client defaults, the invoice is flagged as an &quot;outstanding entry&quot; in the EDPMS. The exporter&apos;s Authorized Dealer (AD) bank is required to issue warning letters and show-cause notices to the exporter, demanding proof of realization. Failure to resolve these entries can lead to regulatory audits, blacklisting, and penalties for violation of exchange control laws, creating a double burden of financial loss and regulatory scrutiny.
+                      Unpaid export invoices trigger serious regulatory problems in India. Under the <strong>Foreign Exchange Management Act (FEMA)</strong>, exporters must realize proceeds within 9 to 15 months. The Reserve Bank of India tracks export billing through the <strong>Export Data Processing and Monitoring System (EDPMS)</strong>. Defaulted bills create outstanding entries that prompt bank warning letters and regulatory scrutiny.
                     </p>
                     <p className="text-sm md:text-base leading-relaxed">
-                      A major issue in cross-border disputes is the contractor&apos;s hesitation to take legal action. Many Indian agencies believe that recovering money from a foreign client is impossible or too expensive, assuming they must hire foreign lawyers and file suits in foreign courts. Some international clients exploit this belief, deliberately delaying payments or demanding deep discounts on completed work. However, cross-border payment recovery is highly feasible if approached systematically. Indian contract law, international conventions, and RBI regulations provide structured pathways for recovery. A well-documented recovery trail is also essential to satisfy AD banks and protect the exporter from FEMA penalties, establishing that the delay is due to client default rather than capital flight.
+                      Many Indian founders hesitate to take legal action abroad due to perceived costs. Unscrupulous foreign clients exploit this hesitation to demand steep discounts. However, structured international legal frameworks make cross-border debt recovery viable. Formal legal steps also provide necessary documentation to satisfy Authorized Dealer banks and prevent FEMA penalties.
                     </p>
                     <p className="text-sm md:text-base leading-relaxed">
-                      At LegalRecovery, we specialize in helping Indian exporters and service providers recover their outstanding international B2B payments and manage their regulatory compliance. We analyze your cross-border contracts, Statements of Work (SOW), timesheets, and communications to build a robust evidence dossier. By serving international legal notices, leveraging global collection networks, and guiding you through FEMA compliance documentation, we help protect your business from both financial loss and regulatory penalties. We help you assert your rights across borders, ensuring that foreign clients respect their contractual commitments.
+                      LegalRecovery helps Indian exporters collect foreign B2B dues and satisfy compliance requirements. We examine contracts, statements of work, and project logs to build airtight claims. By issuing international legal notices and guiding FEMA reporting, we safeguard your revenue and legal standing.
                     </p>
                     <div className="bg-red-50 p-6 rounded-2xl border-l-4 border-[#DC2626] italic text-xs sm:text-sm text-red-900 font-semibold leading-relaxed">
-                      &quot;Recovering money from international clients requires a combination of cross-border contract enforcement and FEMA regulatory compliance. A documented recovery trail protects you from RBI penalties and establishes your legal claim.&quot;
+                      &quot;Recovering money from international clients requires contract enforcement alongside FEMA compliance. A documented recovery trail satisfies RBI rules and enforces your financial claims.&quot;
                     </div>
                   </div>
                 </section>
@@ -336,16 +336,16 @@ export default function InternationalClientPaymentClient() {
                   <h2 className="text-xl md:text-3xl font-black text-slate-900 mb-5 border-b-2 border-[#DC2626] pb-2 inline-block">2. Governing Law &amp; Choice of Jurisdiction</h2>
                   <div className="prose prose-base max-w-none text-slate-650 space-y-6">
                     <p className="text-sm md:text-base leading-relaxed">
-                      The foundation of any cross-border recovery action is the contract&apos;s <strong>Choice of Law</strong> and <strong>Jurisdiction</strong> clauses. Choice of law defines which country&apos;s laws govern the interpretation of the contract (e.g., &quot;This Agreement shall be governed by the laws of India&quot; or &quot;This Agreement shall be governed by the laws of the State of Delaware, USA&quot;). Jurisdiction defines which courts or arbitral tribunals have the authority to hear disputes. If the contract specifies Indian law and jurisdiction, the recovery process is governed by the <strong>Indian Contract Act, 1872</strong> and the <strong>Code of Civil Procedure, 1908 (CPC)</strong>, allowing you to file recovery actions in Indian courts or facilitation councils.
+                      Every cross-border recovery action begins with the contract&apos;s <strong>Choice of Law</strong> and <strong>Jurisdiction</strong> clauses. Governing law determines which legal rules interpret your contract. Jurisdiction identifies which court or arbitral panel hears disputes. If your contract specifies Indian law, the <strong>Indian Contract Act, 1872</strong> and the <strong>Code of Civil Procedure, 1908 (CPC)</strong> govern recovery.
                     </p>
                     <p className="text-sm md:text-base leading-relaxed">
-                      If the contract is silent on governing law, jurisdiction is determined by where the services were rendered or where the contract was executed. In service exports (such as software development, design, or consulting executed from India), the services are performed in India, and the contract is often executed electronically in India. Under private international law principles, Indian courts can assume jurisdiction on the grounds that the contract was performed within their territorial limits. However, foreign clients may challenge this by raising the plea of <strong>forum non conveniens</strong>, arguing that the dispute should be heard in their home country. Having a clear, written contract with an explicit governing law and jurisdiction clause is critical to avoiding these jurisdictional challenges.
+                      When contracts omit governing law clauses, jurisdiction depends on execution and service performance locations. Software coding, design, and consulting delivered from India support Indian court jurisdiction. While debtors may claim <strong>forum non conveniens</strong>, clear agreements eliminate jurisdictional challenges.
                     </p>
                     <p className="text-sm md:text-base leading-relaxed">
-                      Many cross-border agreements specify international arbitration seated in a neutral third-party territory, such as the <strong>Singapore International Arbitration Centre (SIAC)</strong>, the <strong>London Court of International Arbitration (LCIA)</strong>, or the <strong>International Chamber of Commerce (ICC)</strong>. Arbitration is preferred for international B2B disputes because it is faster than civil courts and results in an arbitral award that is recognized internationally. If your contract contains an arbitration clause, civil courts in India and abroad are legally bound under Section 8 of the Arbitration Act to refer the dispute to arbitration. Our legal team reviews your contract&apos;s dispute resolution clause to identify the correct seat, venue, and rules, ensuring that your recovery action is filed in the appropriate forum.
+                      Many global agreements mandate neutral international arbitration through centers like <strong>SIAC</strong>, <strong>LCIA</strong>, or the <strong>ICC</strong>. Arbitration offers faster resolution and produces awards enforceable worldwide. Under Section 8 of the Arbitration Act, courts must refer covered disputes directly to arbitration. We analyze your contract terms to ensure actions are filed in the right forum.
                     </p>
                     <p className="text-sm md:text-base leading-relaxed">
-                      For contracts governed by foreign laws, our panel works with international legal networks to evaluate your options. Many foreign jurisdictions have fast-track commercial debt collection laws (such as Small Claims Courts in the US or County Court Judgments in the UK) that can be used to recover outstanding dues cost-effectively. Serving a legal notice that references these local laws and details the breach of contract under the designated governing law is a highly effective way to encourage a settlement.
+                      For contracts governed by foreign laws, our panel works with international legal networks. Many jurisdictions offer expedited small claims procedures for fast debt collection. Serving formal demand notices citing foreign contract laws often prompts immediate settlement.
                     </p>
                   </div>
                 </section>
@@ -355,23 +355,25 @@ export default function InternationalClientPaymentClient() {
                   <h2 className="text-xl md:text-3xl font-black text-slate-900 mb-5 border-b-2 border-[#DC2626] pb-2 inline-block">3. Arbitral Enforcement &amp; New York Convention</h2>
                   <div className="prose prose-base max-w-none text-slate-650 space-y-6">
                     <p className="text-sm md:text-base leading-relaxed">
-                      When a cross-border dispute is resolved through arbitration, the resulting arbitral award is a powerful tool for recovery. The enforcement of international arbitral awards is governed by the <strong>New York Convention on the Recognition and Enforcement of Foreign Arbitral Awards, 1958</strong>. The New York Convention is an international treaty signed by over 160 countries, including India, the United States, the United Kingdom, Canada, Singapore, and EU nations. Under the convention, signatory states are legally bound to recognize and enforce arbitral awards made in other member states, treating them as equivalent to local court decrees. This international enforceability is the main reason why arbitration is the preferred method for resolving cross-border commercial disputes.
+                      Arbitral awards provide strong global recovery enforcement. Enforcement of cross-border awards follows the <strong>New York Convention of 1958</strong>. Signed by over 160 nations including India, the US, and UK, member states enforce foreign arbitral awards like domestic court decrees.
                     </p>
                     <p className="text-sm md:text-base leading-relaxed">
-                      In India, the enforcement of foreign arbitral awards is governed by <strong>Part II of the Arbitration and Conciliation Act, 1996</strong>. Under Section 48 of the Act, an Indian court can refuse to enforce a foreign arbitral award only under very limited grounds:
-                      <ul className="list-disc pl-6 space-y-2 mt-2">
-                        <li><strong>Incapacity of Parties:</strong> If the parties to the agreement were under some incapacity under the law applicable to them.</li>
-                        <li><strong>Lack of Proper Notice:</strong> If the party against whom the award is invoked was not given proper notice of the appointment of the arbitrator or of the arbitral proceedings.</li>
-                        <li><strong>Scope of Submission:</strong> If the award deals with a difference not contemplated by or not falling within the terms of the submission to arbitration.</li>
-                        <li><strong>Public Policy:</strong> If the court finds that the enforcement of the award would be contrary to the public policy of India.</li>
-                      </ul>
-                      Indian courts cannot review the merits of the dispute or re-evaluate the evidence, ensuring a fast-track enforcement process.
+                      In India, foreign arbitral enforcement is governed by <strong>Part II of the Arbitration and Conciliation Act, 1996</strong>. Under Section 48, courts refuse enforcement on limited grounds only:
+                    </p>
+                    <ul className="list-disc pl-6 space-y-2 text-sm text-slate-650">
+                      <li><strong>Incapacity:</strong> The contracting parties lacked legal capacity under applicable governing laws.</li>
+                      <li><strong>Lack of Notice:</strong> A party did not receive fair notice of arbitrator appointments or hearings.</li>
+                      <li><strong>Beyond Scope:</strong> The award decides issues outside the scope of the arbitration agreement.</li>
+                      <li><strong>Public Policy:</strong> Enforcement directly violates the fundamental public policy of India.</li>
+                    </ul>
+                    <p className="text-sm md:text-base leading-relaxed">
+                      Indian courts cannot review the underlying factual merits of the dispute. This ensures an expedited enforcement procedure.
                     </p>
                     <p className="text-sm md:text-base leading-relaxed">
-                      If you secure an arbitral award in India (for instance, through a domestic arbitration clause or an MSEFC award) against a foreign client, you can enforce the award in the client&apos;s home country. Under the New York Convention, you can petition the local court in the client&apos;s jurisdiction to recognize the award. Once recognized, the court will issue execution orders, allowing you to attach the client&apos;s local bank accounts, seize their business assets, or garnish their receivables. This cross-border enforcement mechanism makes international arbitral awards a highly effective remedy against defaulting foreign clients.
+                      When you obtain an arbitral award in India against a foreign company, you can enforce it overseas. Foreign courts in the debtor&apos;s home country will freeze local bank accounts and garnish assets. This global enforceability makes international arbitration a potent remedy.
                     </p>
                     <p className="text-sm md:text-base leading-relaxed">
-                      Similarly, if a foreign client secures an award against you, or if you must defend against a foreign claim, understanding Part II of the Arbitration Act is critical. Our legal panel specializes in both enforcing foreign arbitral awards in India and managing international arbitration proceedings. We guide you through the process of filing enforcement petitions in commercial courts, managing challenges under Section 48, and coordinating with international legal counsel to enforce awards abroad, protecting your commercial interests.
+                      Our legal panel manages enforcement petitions in commercial courts and coordinates with overseas advocates. We handle Section 48 challenges and international execution to recover your funds.
                     </p>
                   </div>
                 </section>
@@ -381,21 +383,21 @@ export default function InternationalClientPaymentClient() {
                   <h2 className="text-xl md:text-3xl font-black text-slate-900 mb-5 border-b-2 border-[#DC2626] pb-2 inline-block">4. Summary Suits &amp; FEMA Compliance Dues</h2>
                   <div className="prose prose-base max-w-none text-slate-650 space-y-6">
                     <p className="text-sm md:text-base leading-relaxed">
-                      If your contract specifies Indian jurisdiction and the foreign client has an active presence in India (such as a subsidiary, liaison office, or bank accounts in India), you can file a <strong>Summary Suit under Order XXXVII of the Code of Civil Procedure, 1908 (CPC)</strong> in Indian courts. Order 37 is a fast-track debt recovery mechanism for liquidated claims based on written contracts or invoices. The foreign client does not have an automatic right to defend the suit; they must apply for &quot;Leave to Defend&quot; within 10 days of receiving the summons, proving they have a genuine and substantial defense. If they fail to do so, or if their defense is found to be a sham, the court passes a decree in your favor, allowing you to attach their Indian assets.
+                      If your agreement specifies Indian jurisdiction and the client holds Indian assets, file an <strong>Order XXXVII Summary Suit under the CPC</strong>. Order 37 offers rapid recovery for documented contract debts. The defendant must secure court leave to defend within 10 days. Without a valid defense, courts issue decrees attaching their local assets.
                     </p>
                     <p className="text-sm md:text-base leading-relaxed">
-                      If the foreign client does not have assets in India, you must manage your <strong>FEMA compliance</strong> and <strong>EDPMS tracking</strong> obligations. Under the Foreign Exchange Management Act (FEMA), Indian exporters must realize and repatriate the full value of export services within the statutory period (typically 9 to 15 months). If payments are delayed or defaulted, the invoice remains open on the RBI&apos;s EDPMS portal, exposing the exporter to regulatory penalties. Exporters must document their recovery efforts (such as legal notices, correspondence, and arbitration filings) to show the RBI and AD banks that the non-realization is due to client default rather than an illegal capital transfer:
-                      <ul className="list-disc pl-6 space-y-2 mt-2">
-                        <li><strong>AD Bank Notification:</strong> Notify your Authorized Dealer (AD) bank of the default, providing copies of the invoices, service contracts, and communication logs.</li>
-                        <li><strong>Extension Requests:</strong> Apply for extensions of the realization period, using the documented dispute as a valid reason.</li>
-                        <li><strong>Write-Off Provisions:</strong> Under RBI guidelines, AD banks can permit write-offs of unrealized export bills up to specified limits, provided the exporter proves they have taken all reasonable legal steps to recover the debt.</li>
-                      </ul>
+                      If the foreign client lacks local assets, maintain strict <strong>FEMA compliance</strong> and <strong>EDPMS tracking</strong>. Exporters must realize export revenue within statutory time limits. Defaulted invoices trigger regulatory scrutiny. You must document recovery efforts to prove non-realization resulted from client default rather than capital flight:
+                    </p>
+                    <ul className="list-disc pl-6 space-y-2 text-sm text-slate-650">
+                      <li><strong>Notify AD Banks:</strong> Inform your bank of default with contracts, invoices, and communication records.</li>
+                      <li><strong>File Extension Applications:</strong> Request formal extension windows supported by active dispute records.</li>
+                      <li><strong>Apply for Write-Offs:</strong> Banks permit write-offs within limits when exporters demonstrate documented legal recovery efforts.</li>
+                    </ul>
+                    <p className="text-sm md:text-base leading-relaxed">
+                      We prepare compliance dossiers for Authorized Dealer banks certifying client defaults. This protects exporters from regulatory fines and facilitates lawful bill write-offs.
                     </p>
                     <p className="text-sm md:text-base leading-relaxed">
-                      To protect your business from FEMA penalties, our legal team helps you build a robust regulatory compliance dossier. We draft formal notices to your AD bank, document your recovery actions, and provide legal opinion letters certifying the default. This documented recovery trail satisfies regulatory requirements, helping you secure write-offs or extensions and protecting your business from penalties.
-                    </p>
-                    <p className="text-sm md:text-base leading-relaxed">
-                      If you must file a recovery suit abroad, we help you prepare the documentation. Under Order 38 Rule 5 of the CPC, if you can prove that the debtor is trying to dispose of their assets in India to avoid a decree, you can seek an <strong>Attachment Before Judgment</strong> to freeze their assets before the trial begins. We coordinate with international legal networks to initiate similar asset freezing actions in the client&apos;s home country, protecting your recovery options.
+                      Under Order 38 Rule 5 CPC, creditors can request <strong>Attachment Before Judgment</strong> if debtors attempt to dispose of local assets. We also coordinate cross-border asset freezing petitions in foreign jurisdictions.
                     </p>
                   </div>
                 </section>
@@ -405,16 +407,16 @@ export default function InternationalClientPaymentClient() {
                   <h2 className="text-xl md:text-3xl font-black text-slate-900 mb-5 border-b-2 border-[#DC2626] pb-2 inline-block">5. International Legal Notices &amp; Escalation</h2>
                   <div className="prose prose-base max-w-none text-slate-650 space-y-6">
                     <p className="text-sm md:text-base leading-relaxed">
-                      The recovery of unpaid international B2B invoices should begin with a structured pre-litigation escalation strategy. This involves building a clear documentary record of your recovery efforts. You should compile all relevant records, including the service contract, Statement of Work (SOW), project timesheets, raised invoices, proof of service delivery, and client communication logs. You should send a formal final demand email to the client&apos;s finance team and senior management, attaching a detailed statement of accounts and requesting a resolution within a specific timeframe.
+                      Cross-border payment recovery begins with structured pre-litigation escalation. Collect your service contracts, statements of work, timesheets, invoices, and delivery receipts. Send a formal final demand email with full account statements requesting prompt settlement.
                     </p>
                     <p className="text-sm md:text-base leading-relaxed">
-                      If internal escalation is ignored, the next step is to serve a formal <strong>Advocate-Signed International Legal Notice</strong>. An international legal notice is a structured legal document sent to the foreign client, setting out the facts of your transaction, detailing the payment default, calculating the interest due under the contract or the Interest Act, 1978, and warning of the civil, regulatory, and arbitration actions that will follow if they fail to comply. Serving a legal notice is a critical step, as it establishes your cause of action and forms part of the regulatory record for your AD bank.
+                      If informal notices are ignored, serve an <strong>Advocate-Signed International Legal Notice</strong>. The notice states contractual facts, details invoice defaults, and calculates interest under the Interest Act 1978. It formally warns of impending international arbitration and civil litigation. Serving this notice also provides necessary evidence for your AD bank.
                     </p>
                     <p className="text-sm md:text-base leading-relaxed">
-                      At LegalRecovery, our legal panel drafts custom international notices tailored to the specific details of your cross-border dispute. We do not use generic templates. Instead, we highlight the contract terms, the governing law provisions, the applicability of international conventions, and the personal liability of the company&apos;s directors. We send the notice digitally via verified email to the company&apos;s registered corporate address, and send copies to the personal email addresses of the directors, ensuring they are personally aware of their legal exposure.
+                      LegalRecovery drafts customized cross-border notices citing applicable governing laws and international treaties. We serve notices digitally to registered corporate emails and send copies directly to company directors.
                     </p>
                     <p className="text-sm md:text-base leading-relaxed">
-                      Approximately 85% of international payment disputes are resolved successfully at the legal notice stage. Most foreign corporate entities prefer to clear outstanding invoices rather than face public litigation, credit rating impacts, or regulatory audits that could damage their business operations. If the client responds with a settlement offer, we help you negotiate the terms and draft a binding settlement deed that covers both the payment timeline and the release of any project deliverables, helping you protect your business interests.
+                      Around 85% of international payment disputes settle at the legal notice stage. Foreign businesses avoid public litigation to protect credit ratings and commercial reputations. When clients propose settlements, we draft binding agreements securing full payment and release terms.
                     </p>
                   </div>
                 </section>

@@ -301,7 +301,7 @@ export default function FreelancerRecoveryClient() {
                 {/* Section 1 */}
                 <section id="freelancer-legal-status-india" className="scroll-mt-32">
                   <h2 className="text-xl md:text-3xl font-black text-slate-900 mb-5 border-b-2 border-[#DC2626] pb-2 inline-block">
-                    1. The Vulnerabilities of Freelancers in India: Legal Status and Contractual Realities
+                    1. Freelancer Legal Status &amp; Contract Realities
                   </h2>
                   <div className="prose prose-base max-w-none text-slate-650 space-y-6 text-sm md:text-base leading-relaxed">
                     <p>
@@ -325,7 +325,7 @@ export default function FreelancerRecoveryClient() {
                 {/* Section 2 */}
                 <section id="quasi-contractual-remedies-section-70" className="scroll-mt-32">
                   <h2 className="text-xl md:text-3xl font-black text-slate-900 mb-5 border-b-2 border-[#DC2626] pb-2 inline-block">
-                    2. Quantum Meruit under Section 70: Recovering Payments Without a Written Contract
+                    2. Section 70 Claims: Payment Without Contracts
                   </h2>
                   <div className="prose prose-base max-w-none text-slate-650 space-y-6 text-sm md:text-base leading-relaxed">
                     <p>
@@ -376,7 +376,7 @@ export default function FreelancerRecoveryClient() {
                 {/* Section 3 */}
                 <section id="udyam-registration-msme-samadhaan" className="scroll-mt-32">
                   <h2 className="text-xl md:text-3xl font-black text-slate-900 mb-5 border-b-2 border-[#DC2626] pb-2 inline-block">
-                    3. MSME Udyam Registration &amp; Samadhaan: The Fast-Track Government Recovery Route
+                    3. MSME Samadhaan: Government Dispute Recovery
                   </h2>
                   <div className="prose prose-base max-w-none text-slate-650 space-y-6 text-sm md:text-base leading-relaxed">
                     <p>
@@ -430,7 +430,7 @@ export default function FreelancerRecoveryClient() {
                 {/* Section 4 */}
                 <section id="summary-suits-order-37" className="scroll-mt-32">
                   <h2 className="text-xl md:text-3xl font-black text-slate-900 mb-5 border-b-2 border-[#DC2626] pb-2 inline-block">
-                    4. Summary Suits under Order 37 CPC: Fast-Track Civil Debt Recovery for Invoiced Claims
+                    4. Order 37 CPC: Summary Suits for Invoiced Dues
                   </h2>
                   <div className="prose prose-base max-w-none text-slate-650 space-y-6 text-sm md:text-base leading-relaxed">
                     <p>
@@ -454,7 +454,7 @@ export default function FreelancerRecoveryClient() {
                 {/* Section 5 */}
                 <section id="criminal-remedies-cheating-ni-act" className="scroll-mt-32">
                   <h2 className="text-xl md:text-3xl font-black text-slate-900 mb-5 border-b-2 border-[#DC2626] pb-2 inline-block">
-                    5. Criminal Remedies: Bounced Cheques (NI Act Sec 138) and Criminal Cheating (BNS Sec 318)
+                    5. Criminal Remedies: Section 138 &amp; Cheating Dues
                   </h2>
                   <div className="prose prose-base max-w-none text-slate-650 space-y-6 text-sm md:text-base leading-relaxed">
                     <p>
@@ -486,7 +486,7 @@ export default function FreelancerRecoveryClient() {
                 {/* Section 6 */}
                 <section id="evidence-preservation-digital-notices" className="scroll-mt-32">
                   <h2 className="text-xl md:text-3xl font-black text-slate-900 mb-5 border-b-2 border-[#DC2626] pb-2 inline-block">
-                    6. Evidentiary Standards: Digital Forensics &amp; Section 63 BSA 2023 Certification
+                    6. Evidence Rules: Section 63 BSA Certification
                   </h2>
                   <div className="prose prose-base max-w-none text-slate-650 space-y-6 text-sm md:text-base leading-relaxed">
                     <p>
@@ -526,7 +526,7 @@ export default function FreelancerRecoveryClient() {
                 {/* Section 7 */}
                 <section id="settlement-deed-drafting" className="scroll-mt-32">
                   <h2 className="text-xl md:text-3xl font-black text-slate-900 mb-5 border-b-2 border-[#DC2626] pb-2 inline-block">
-                    7. Structuring Settlement Deeds: Clear Releases, Default Clauses, and Dispute Resolution
+                    7. Structuring Enforceable Settlement Deeds
                   </h2>
                   <div className="prose prose-base max-w-none text-slate-650 space-y-6 text-sm md:text-base leading-relaxed">
                     <p>
@@ -550,7 +550,7 @@ export default function FreelancerRecoveryClient() {
                 {/* Section 8 */}
                 <section id="common-freelance-drafting-errors" className="scroll-mt-32">
                   <h2 className="text-xl md:text-3xl font-black text-slate-900 mb-5 border-b-2 border-[#DC2626] pb-2 inline-block">
-                    8. Freelance Drafting Pitfalls: Intellectual Property Over-transfer, Vague Scopes, and Waived Interest
+                    8. Common Drafting Mistakes &amp; Scope Pitfalls
                   </h2>
                   <div className="prose prose-base max-w-none text-slate-650 space-y-6 text-sm md:text-base leading-relaxed">
                     <p>

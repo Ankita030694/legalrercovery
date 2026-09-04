@@ -2,8 +2,8 @@ import { Metadata } from "next";
 import MSMESamadhaanClient from "./MSMESamadhaanClient";
 
 export const metadata: Metadata = {
-  title: "Online Dues Recovery via MSME Samadhan Portal | LegalRecovery",
-  description: "Struggling to recover B2B delayed payments? Learn how to file a case on the official MSME Samadhan portal (samadhaan.msme.gov.in) step-by-step, upload required documents, and track MSEFC case status.",
+  title: "Recovery via MSME Samadhan Portal | LegalRecovery",
+  description: "Learn how to file a case on the MSME Samadhan portal for delayed B2B payments, upload required documents, and track MSEFC case status step by step.",
   keywords: [
     "MSME Samadhan portal case filing",
     "samadhaan.msme.gov.in delayed payment",

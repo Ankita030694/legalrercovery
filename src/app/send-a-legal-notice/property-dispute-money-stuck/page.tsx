@@ -5,7 +5,7 @@ const slug = 'send-a-legal-notice/property-dispute-money-stuck';
 const title = 'Legal Notice for Property Dispute Money Stuck | Commercial Real Estate Recovery India';
 const description =
   'Commercial property token money, earnest deposit, or booking advance stuck with a developer or seller? Send an advocate-drafted statutory legal notice under the Indian Contract Act, RERA Section 18, and Commercial Courts Act to recover your stuck money with statutory interest.';
-const url = `https://legalrecovery.in/${slug}`;
+const url = `https://www.legalrecovery.in/${slug}`;
 const ogImage = `/images/og/property-dispute-money-stuck.jpg`;
 
 export const metadata: Metadata = {

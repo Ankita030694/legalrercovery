@@ -414,7 +414,7 @@ export default function InsuranceClaimAmountClient() {
                         <strong>Submit a Grievance to the Nodal Officer (GRO):</strong> File a written complaint with the insurance company's Grievance Redressal Officer (GRO). Include medical certificates, surveyor reports, and a response to the repudiation points. The insurer must acknowledge the complaint within 3 days and respond within 15 days.
                       </li>
                       <li>
-                        <strong>Register a Complaint on Bima Bharosa:</strong> If the GRO does not respond or rejects your complaint, log the dispute on the IRDAI's Bima Bharosa portal at <Link href="https://bimabharosa.irdai.gov.in" target="_blank" className="text-[#DC2626] underline font-medium">bimabharosa.irdai.gov.in</Link>. This tracks the complaint under regulatory supervision.
+                        <strong>Register a Complaint on Bima Bharosa:</strong> If the GRO does not respond or rejects your complaint, log the dispute on the IRDAI's Bima Bharosa portal at <Link href="https://bimabharosa.irdai.gov.in" target="_blank" rel="noopener noreferrer" className="text-[#DC2626] underline font-medium">bimabharosa.irdai.gov.in</Link>. This tracks the complaint under regulatory supervision.
                       </li>
                       <li>
                         <strong>Initiate the Insurance Ombudsman Process:</strong> For disputes up to ₹50 Lakhs, file a complaint with the Insurance Ombudsman in your jurisdiction. This must be done within one year of the GRO's rejection or non-response. The Ombudsman process is free of charge.

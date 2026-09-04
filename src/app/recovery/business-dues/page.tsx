@@ -2,8 +2,8 @@ import { Metadata } from "next";
 import BusinessDuesClient from "./BusinessDuesClient";
 
 export const metadata: Metadata = {
-  title: "Recover Unpaid Business Dues & Vendor Invoices | LegalRecovery",
-  description: "Struggling to recover unpaid business debts, commercial invoices, or vendor dues in India? Learn about MSME Samadhaan, summary suits, and Section 138 cheque bounce options.",
+  title: "Recover Unpaid Business Dues in India | LegalRecovery",
+  description: "Recover unpaid business debts, invoices, or vendor dues in India. Learn about MSME Samadhaan, summary suits, and Section 138 cheque bounce remedies.",
   keywords: [
     "recover unpaid business dues India",
     "recovery of commercial debts legal notice",

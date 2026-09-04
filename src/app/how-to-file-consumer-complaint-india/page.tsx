@@ -2,8 +2,8 @@ import { Metadata } from "next";
 import ConsumerComplaintClient from "./ConsumerComplaintClient";
 
 export const metadata: Metadata = {
-  title: "How to File a Consumer Complaint in India: Online (e-Daakhil) & Offline Guide",
-  description: "Learn how to file a consumer complaint in India online via e-Daakhil and offline. Master pecuniary jurisdiction limits, fee calculations, and legal notice requirements under the Consumer Protection Act, 2019.",
+  title: "How to File a Consumer Complaint in India: Online Guide",
+  description: "Learn how to file a consumer complaint in India via e-Daakhil. Understand jurisdiction limits, fee rules, and notice requirements under CPA 2019.",
   keywords: [
     "how to file consumer complaint online india",
     "e daakhil filing procedure",

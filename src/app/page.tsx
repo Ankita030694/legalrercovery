@@ -302,7 +302,7 @@ export default function Home() {
                 {/* Welcome / Dashboard Header */}
                 <div className="flex flex-col md:flex-row md:items-center justify-between gap-4 border-b border-[#E5E7EB]/50 pb-4">
                   <div className="text-left">
-                    <h3 className="text-base sm:text-lg font-black text-[#111827] tracking-tight">Recovery Dashboard</h3>
+                    <p className="text-base sm:text-lg font-black text-[#111827] tracking-tight">Recovery Dashboard</p>
                     <p className="text-[10px] sm:text-[11px] text-slate-500 font-semibold mt-0.5">Monitor active claims and notice dispatch queues in real time.</p>
                   </div>
                   <button className="w-full md:w-auto justify-center px-3.5 py-2 text-[11.5px] font-black text-white bg-[#DC2626] hover:bg-[#B91C1C] rounded-xl flex items-center gap-1.5 shrink-0 shadow-sm shadow-red-900/10 cursor-pointer">
@@ -354,7 +354,7 @@ export default function Home() {
                   <div className="flex flex-col md:flex-row md:items-start justify-between gap-3 border-b border-[#E5E7EB]/50 pb-3">
                     <div className="flex flex-col gap-1">
                       <div className="flex flex-wrap items-center gap-2">
-                        <h4 className="text-[13px] sm:text-sm font-black text-[#111827]">Acme Corporation</h4>
+                        <p className="text-[13px] sm:text-sm font-black text-[#111827]">Acme Corporation</p>
                         <span className="text-[8px] font-extrabold uppercase px-2 py-0.5 rounded-full border bg-red-50 border-red-150 text-[#DC2626]">
                           Active Dispatch
                         </span>
@@ -539,7 +539,7 @@ export default function Home() {
                     <Shield className="w-4 h-4" />
                   </div>
                   <div className="text-left">
-                    <h4 className="text-[12.5px] font-bold text-[#111827]">Advocate-Vetted Process</h4>
+                    <p className="text-[12.5px] font-bold text-[#111827]">Advocate-Vetted Process</p>
                     <p className="text-[11.5px] text-[#6B7280] leading-relaxed mt-0.5">Every step is designed and audited by senior legal professionals.</p>
                   </div>
                 </div>
@@ -549,7 +549,7 @@ export default function Home() {
                     <Handshake className="w-4 h-4" />
                   </div>
                   <div className="text-left">
-                    <h4 className="text-[12.5px] font-bold text-[#111827]">Seamless Legal Escalation</h4>
+                    <p className="text-[12.5px] font-bold text-[#111827]">Seamless Legal Escalation</p>
                     <p className="text-[11.5px] text-[#6B7280] leading-relaxed mt-0.5">Direct transition to physical litigation or court proceedings if required.</p>
                   </div>
                 </div>
@@ -1055,9 +1055,9 @@ function HowItWorksSection() {
                   <div className="text-right">
                     {idx % 2 === 0 && (
                       <div className="flex flex-col">
-                        <h4 className="text-[13px] font-black text-[#111827] leading-tight mb-1">
+                        <p className="text-[13px] font-black text-[#111827] leading-tight mb-1">
                           {node.label}
-                        </h4>
+                        </p>
                         <span className="text-[11px] text-[#6B7280] font-bold leading-none">
                           {node.date}
                         </span>
@@ -1082,9 +1082,9 @@ function HowItWorksSection() {
                   <div className="text-left">
                     {idx % 2 === 1 && (
                       <div className="flex flex-col">
-                        <h4 className="text-[13px] font-black text-[#111827] leading-tight mb-1">
+                        <p className="text-[13px] font-black text-[#111827] leading-tight mb-1">
                           {node.label}
-                        </h4>
+                        </p>
                         <span className="text-[11px] text-[#6B7280] font-bold leading-none">
                           {node.date}
                         </span>
@@ -1113,9 +1113,9 @@ function HowItWorksSection() {
                   {/* Text Wrapper */}
                   <div className="flex flex-col items-center mt-3.5">
                     {/* Node Label */}
-                    <h4 className="text-[13px] font-black text-[#111827] mb-1 leading-tight">
+                    <p className="text-[13px] font-black text-[#111827] mb-1 leading-tight">
                       {node.label}
-                    </h4>
+                    </p>
 
                     {/* Node Date / Pending state */}
                     <span className="text-[11px] text-[#6B7280] font-bold leading-none">
@@ -1181,7 +1181,7 @@ function PricingSection() {
           {/* Right Block: Included features & Call-to-action */}
           <div className="lg:col-span-7 p-6 sm:p-8 md:p-12 flex flex-col justify-between">
             <div>
-              <h4 className="text-[13.5px] font-extrabold text-[#111827] uppercase tracking-wider mb-6">What's included in this plan:</h4>
+              <p className="text-[13.5px] font-extrabold text-[#111827] uppercase tracking-wider mb-6">What's included in this plan:</p>
               
               <div className="grid grid-cols-2 gap-y-4 gap-x-3 sm:gap-x-6 mb-10">
                 <div className="flex items-start gap-2 sm:gap-3">

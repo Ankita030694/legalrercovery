@@ -3,7 +3,7 @@ import HowToRecoverMoneyWithoutAgreementClient from "./HowToRecoverMoneyWithoutA
 
 export const metadata: Metadata = {
   title: "Recover Money Without Written Agreement: Legal Guide India",
-  description: "Learn the exact legal steps to recover money without a written agreement in India using Section 10 of Contract Act, circumstantial evidence, and legal notices.",
+  description: "Learn legal steps to recover money without a written agreement in India using Section 10 Contract Act, circumstantial evidence, and legal notices.",
   keywords: [
     "legal recovery",
     "recover my money",

@@ -3,7 +3,7 @@ import WhatIsALegalNoticeClient from "./WhatIsALegalNoticeClient";
 
 export const metadata: Metadata = {
   title: "What is a Legal Notice in India: Validity, Rules & Recovery",
-  description: "Learn what is a legal notice in India, its legal validity, rules of service under Civil Procedure Code, how to reply, and the step-by-step recovery process.",
+  description: "Learn what is a legal notice in India, its legal validity, service rules under CPC, how to reply, and the step-by-step recovery process.",
   keywords: [
     "what is a legal notice in India",
     "legal notice validity period",

@@ -266,9 +266,9 @@ export default function HowItWorksPage() {
 
                 {/* Title & Description (Right of the circle on mobile, below the circle on desktop) */}
                 <div className="flex flex-col text-left lg:text-center mt-0 lg:mt-6 pl-2 lg:pl-0 select-text pt-2 sm:pt-3 lg:pt-0">
-                  <h3 className="text-sm sm:text-base lg:text-[27px] font-black text-[#111827] mb-1.5 sm:mb-2 lg:mb-3 leading-tight">
+                  <p className="text-sm sm:text-base lg:text-[27px] font-black text-[#111827] mb-1.5 sm:mb-2 lg:mb-3 leading-tight">
                     {item.title}
-                  </h3>
+                  </p>
                   <p className="text-[10px] sm:text-xs lg:text-base text-[#4B5563] font-medium leading-[1.6] max-w-[280px] lg:max-w-[310px] lg:mx-auto">
                     {item.description}
                   </p>
@@ -313,9 +313,9 @@ export default function HowItWorksPage() {
             
             {/* Left Content */}
             <div className="flex flex-col items-start text-left select-text max-w-2xl">
-              <h3 className="text-base sm:text-lg md:text-xl font-black text-white leading-tight tracking-tight">
+              <p className="text-base sm:text-lg md:text-xl font-black text-white leading-tight tracking-tight">
                 Not sure which category Fits your case?
-              </h3>
+              </p>
               <p className="text-xs sm:text-[13px] text-gray-400 font-semibold leading-normal mt-1 md:mt-2">
                 Talk to your legal experts and get clarity
               </p>

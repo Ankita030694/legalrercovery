@@ -2,8 +2,8 @@ import { Metadata } from "next";
 import UnpaidCommissionsClient from "./UnpaidCommissionsClient";
 
 export const metadata: Metadata = {
-  title: "Recover Unpaid Sales Commissions & Brokerage Dues | LegalRecovery",
-  description: "Struggling to recover unpaid sales commissions, referral fees, channel partner payouts, or brokerage dues in India? Learn about agency contracts, summary suits (Order 37 CPC), and legal notice procedures.",
+  title: "Recover Sales Commissions & Brokerage | LegalRecovery",
+  description: "Recover unpaid sales commissions, referral fees, or brokerage dues in India. Learn legal notice rules, agency contracts, and Order 37 CPC remedies.",
   keywords: [
     "recover unpaid commissions India",
     "sales commission default legal notice",

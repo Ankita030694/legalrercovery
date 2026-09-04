@@ -393,39 +393,54 @@ export default function VendorNotPayingPendingPaymentClient() {
                     <span className="text-xs font-semibold text-slate-400 uppercase tracking-wider mr-2">
                       Share:
                     </span>
-                    <a
-                      href={`https://twitter.com/intent/tweet?url=${shareUrl}&text=${shareText}`}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="w-8 h-8 rounded-full bg-black text-white hover:opacity-80 flex items-center justify-center transition-opacity"
+                    <button
+                      type="button"
+                      onClick={() =>
+                        window.open(
+                          `https://twitter.com/intent/tweet?url=${shareUrl}&text=${shareText}`,
+                          '_blank',
+                          'noopener,noreferrer,width=600,height=400'
+                        )
+                      }
+                      className="w-8 h-8 rounded-full bg-black text-white hover:opacity-80 flex items-center justify-center transition-opacity cursor-pointer"
                       aria-label="Share on X (Twitter)"
                     >
                       <svg className="w-4 h-4 fill-current" viewBox="0 0 24 24">
                         <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z" />
                       </svg>
-                    </a>
-                    <a
-                      href={`https://www.facebook.com/sharer/sharer.php?u=${shareUrl}`}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="w-8 h-8 rounded-full bg-[#1877F2] text-white hover:opacity-80 flex items-center justify-center transition-opacity"
+                    </button>
+                    <button
+                      type="button"
+                      onClick={() =>
+                        window.open(
+                          `https://www.facebook.com/sharer/sharer.php?u=${shareUrl}`,
+                          '_blank',
+                          'noopener,noreferrer,width=600,height=400'
+                        )
+                      }
+                      className="w-8 h-8 rounded-full bg-[#1877F2] text-white hover:opacity-80 flex items-center justify-center transition-opacity cursor-pointer"
                       aria-label="Share on Facebook"
                     >
                       <svg className="w-4 h-4 fill-current" viewBox="0 0 24 24">
                         <path d="M9.198 21.5h4v-8.01h3.604l.396-3.98h-4V7.5a1 1 0 0 1 1-1h3v-4h-3a5 5 0 0 0-5 5v2.01h-2l-.396 3.98h2.396v8.01z" />
                       </svg>
-                    </a>
-                    <a
-                      href={`https://www.linkedin.com/shareArticle?mini=true&url=${shareUrl}&title=${encodeURIComponent('Legal Notice for Vendor Not Paying Pending Payment | Commercial Debt Recovery India')}`}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="w-8 h-8 rounded-full bg-[#0A66C2] text-white hover:opacity-80 flex items-center justify-center transition-opacity"
+                    </button>
+                    <button
+                      type="button"
+                      onClick={() =>
+                        window.open(
+                          `https://www.linkedin.com/shareArticle?mini=true&url=${shareUrl}&title=${encodeURIComponent('Legal Notice for Vendor Not Paying Pending Payment | Commercial Debt Recovery India')}`,
+                          '_blank',
+                          'noopener,noreferrer,width=600,height=400'
+                        )
+                      }
+                      className="w-8 h-8 rounded-full bg-[#0A66C2] text-white hover:opacity-80 flex items-center justify-center transition-opacity cursor-pointer"
                       aria-label="Share on LinkedIn"
                     >
                       <svg className="w-4 h-4 fill-current" viewBox="0 0 24 24">
                         <path d="M4.98 3.5c0 1.381-1.11 2.5-2.48 2.5s-2.48-1.119-2.48-2.5c0-1.38 1.11-2.5 2.48-2.5s2.48 1.12 2.48 2.5zm.02 4.5h-5v16h5v-16zm7.982 0h-4.968v16h4.969v-8.399c0-4.67 6.029-5.052 6.029 0v8.399h4.988v-10.131c0-7.88-8.922-7.593-11.018-3.714v-2.155z" />
                       </svg>
-                    </a>
+                    </button>
                   </div>
                 </div>
 
@@ -435,34 +450,7 @@ export default function VendorNotPayingPendingPaymentClient() {
                     Quick Answer
                   </h2>
                   <p className="text-sm text-slate-700 font-medium leading-relaxed">
-                    Under{' '}
-                    <a
-                      href="https://www.indiacode.nic.in/handle/123456789/2005"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="text-purple-600 hover:text-purple-800 hover:underline font-semibold"
-                    >
-                      Section 15 and Section 16 of the Micro, Small and Medium Enterprises Development (MSMED) Act, 2006
-                    </a>
-                    ,{' '}
-                    <a
-                      href="https://www.indiacode.nic.in/handle/123456789/2187"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="text-purple-600 hover:text-purple-800 hover:underline font-semibold"
-                    >
-                      Section 70 and Section 73 of the Indian Contract Act, 1872
-                    </a>
-                    , and{' '}
-                    <a
-                      href="https://www.indiacode.nic.in/handle/123456789/2388"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="text-purple-600 hover:text-purple-800 hover:underline font-semibold"
-                    >
-                      Section 55 of the Sale of Goods Act, 1930
-                    </a>
-                    , a vendor or supplier has the statutory right to issue an advocate-drafted legal notice demanding immediate settlement of overdue commercial invoices with compound interest at three times the RBI benchmark rate. The legal notice establishes a mandatory 15-day peremptory demand, formalizes documentary proof of debt (Purchase Orders, Delivery Challans, and GST E-Invoices), and serves as an indispensable prerequisite before filing an MSEFC claim on the MSME Samadhaan portal, initiating Pre-Institution Mediation under Section 12A of the Commercial Courts Act, 2015, or filing an Order 37 summary suit in civil court.
+                    Under <strong className="text-slate-900 font-semibold">Section 15 and Section 16 of the Micro, Small and Medium Enterprises Development (MSMED) Act, 2006</strong>, <strong className="text-slate-900 font-semibold">Section 70 and Section 73 of the Indian Contract Act, 1872</strong>, and <strong className="text-slate-900 font-semibold">Section 55 of the Sale of Goods Act, 1930</strong>, a vendor or supplier has the statutory right to issue an advocate-drafted legal notice demanding immediate settlement of overdue commercial invoices with compound interest at three times the RBI benchmark rate. The legal notice establishes a mandatory 15-day peremptory demand, formalizes documentary proof of debt (Purchase Orders, Delivery Challans, and GST E-Invoices), and serves as an indispensable prerequisite before filing an MSEFC claim on the MSME Samadhaan portal, initiating Pre-Institution Mediation under Section 12A of the Commercial Courts Act, 2015, or filing an Order 37 summary suit in civil court.
                   </p>
                 </div>
 
@@ -902,15 +890,8 @@ export default function VendorNotPayingPendingPaymentClient() {
                           <td className="p-3.5 font-bold text-slate-900">
                             MSME Samadhaan (MSEFC)
                           </td>
-                          <td className="p-3.5">
-                            <a
-                              href="https://samadhaan.msme.gov.in/"
-                              target="_blank"
-                              rel="noopener noreferrer"
-                              className="text-purple-600 hover:text-purple-800 hover:underline"
-                            >
-                              MSMED Act, 2006 (Sec 18)
-                            </a>
+                          <td className="p-3.5 font-medium text-slate-900">
+                            MSMED Act, 2006 (Sec 18)
                           </td>
                           <td className="p-3.5">
                             Any amount (Udyam registered suppliers)
@@ -926,7 +907,7 @@ export default function VendorNotPayingPendingPaymentClient() {
                           <td className="p-3.5 font-bold text-slate-900">
                             Summary Suit (Order 37 CPC)
                           </td>
-                          <td className="p-3.5">
+                          <td className="p-3.5 font-medium text-slate-900">
                             Code of Civil Procedure, 1908
                           </td>
                           <td className="p-3.5">
@@ -943,15 +924,8 @@ export default function VendorNotPayingPendingPaymentClient() {
                           <td className="p-3.5 font-bold text-slate-900">
                             Commercial Suit &amp; PIMS
                           </td>
-                          <td className="p-3.5">
-                            <a
-                              href="https://www.indiacode.nic.in/handle/123456789/2144"
-                              target="_blank"
-                              rel="noopener noreferrer"
-                              className="text-purple-600 hover:text-purple-800 hover:underline"
-                            >
-                              Commercial Courts Act, 2015
-                            </a>
+                          <td className="p-3.5 font-medium text-slate-900">
+                            Commercial Courts Act, 2015
                           </td>
                           <td className="p-3.5">
                             Specified value of ₹3 Lakhs &amp; above
@@ -967,15 +941,8 @@ export default function VendorNotPayingPendingPaymentClient() {
                           <td className="p-3.5 font-bold text-slate-900">
                             Cheque Dishonor Complaint
                           </td>
-                          <td className="p-3.5">
-                            <a
-                              href="https://www.indiacode.nic.in/handle/123456789/2189"
-                              target="_blank"
-                              rel="noopener noreferrer"
-                              className="text-purple-600 hover:text-purple-800 hover:underline"
-                            >
-                              NI Act, 1881 (Sec 138)
-                            </a>
+                          <td className="p-3.5 font-medium text-slate-900">
+                            NI Act, 1881 (Sec 138)
                           </td>
                           <td className="p-3.5">
                             Dishonored cheque / NACH mandate
@@ -991,15 +958,8 @@ export default function VendorNotPayingPendingPaymentClient() {
                           <td className="p-3.5 font-bold text-slate-900">
                             Insolvency Petition (CIRP)
                           </td>
-                          <td className="p-3.5">
-                            <a
-                              href="https://ibbi.gov.in/"
-                              target="_blank"
-                              rel="noopener noreferrer"
-                              className="text-purple-600 hover:text-purple-800 hover:underline"
-                            >
-                              Insolvency &amp; Bankruptcy Code, 2016
-                            </a>
+                          <td className="p-3.5 font-medium text-slate-900">
+                            Insolvency &amp; Bankruptcy Code, 2016
                           </td>
                           <td className="p-3.5">
                             Undisputed operational debt ≥ ₹1 Crore
@@ -1142,84 +1102,54 @@ export default function VendorNotPayingPendingPaymentClient() {
                   </h3>
                   <div className="grid grid-cols-1 md:grid-cols-2 gap-3 text-xs">
                     <div className="p-3 bg-slate-50 rounded-xl border border-slate-100">
-                      <a
-                        href="https://www.indiacode.nic.in/handle/123456789/2005"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="text-purple-600 hover:text-purple-800 hover:underline font-bold block mb-1"
-                      >
-                        MSMED Act, 2006 (India Code) →
-                      </a>
+                      <span className="text-slate-900 font-bold block mb-1">
+                        MSMED Act, 2006 (India Code)
+                      </span>
                       <span className="text-slate-500">
                         Section 15 (Payment liability), Section 16 (Compound interest at 3x RBI rate), Section 18 (MSEFC reference), Section 19 (75% pre-deposit for appeal), Section 24 (Overriding effect).
                       </span>
                     </div>
 
                     <div className="p-3 bg-slate-50 rounded-xl border border-slate-100">
-                      <a
-                        href="https://samadhaan.msme.gov.in/"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="text-purple-600 hover:text-purple-800 hover:underline font-bold block mb-1"
-                      >
-                        MSME Samadhaan Official MSEFC Portal →
-                      </a>
+                      <span className="text-slate-900 font-bold block mb-1">
+                        MSME Samadhaan Official MSEFC Portal
+                      </span>
                       <span className="text-slate-500">
                         Ministry of Micro, Small &amp; Medium Enterprises platform for online filing of delayed payment disputes against corporate buyers.
                       </span>
                     </div>
 
                     <div className="p-3 bg-slate-50 rounded-xl border border-slate-100">
-                      <a
-                        href="https://www.indiacode.nic.in/handle/123456789/2187"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="text-purple-600 hover:text-purple-800 hover:underline font-bold block mb-1"
-                      >
-                        Indian Contract Act, 1872 (India Code) →
-                      </a>
+                      <span className="text-slate-900 font-bold block mb-1">
+                        Indian Contract Act, 1872 (India Code)
+                      </span>
                       <span className="text-slate-500">
                         Section 70 (Obligation of person enjoying benefit of non-gratuitous act) &amp; Section 73 (Compensation for breach of contract).
                       </span>
                     </div>
 
                     <div className="p-3 bg-slate-50 rounded-xl border border-slate-100">
-                      <a
-                        href="https://www.indiacode.nic.in/handle/123456789/2388"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="text-purple-600 hover:text-purple-800 hover:underline font-bold block mb-1"
-                      >
-                        Sale of Goods Act, 1930 (India Code) →
-                      </a>
+                      <span className="text-slate-900 font-bold block mb-1">
+                        Sale of Goods Act, 1930 (India Code)
+                      </span>
                       <span className="text-slate-500">
                         Section 45 (Unpaid seller defined), Section 55 (Suit for price of goods), and Section 42 (Deemed acceptance of delivery).
                       </span>
                     </div>
 
                     <div className="p-3 bg-slate-50 rounded-xl border border-slate-100">
-                      <a
-                        href="https://www.indiacode.nic.in/handle/123456789/2144"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="text-purple-600 hover:text-purple-800 hover:underline font-bold block mb-1"
-                      >
-                        Commercial Courts Act, 2015 (India Code) →
-                      </a>
+                      <span className="text-slate-900 font-bold block mb-1">
+                        Commercial Courts Act, 2015 (India Code)
+                      </span>
                       <span className="text-slate-500">
                         Section 12A (Mandatory Pre-Institution Mediation and Settlement - PIMS) &amp; Commercial Appellate Division framework.
                       </span>
                     </div>
 
                     <div className="p-3 bg-slate-50 rounded-xl border border-slate-100">
-                      <a
-                        href="https://ibbi.gov.in/"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="text-purple-600 hover:text-purple-800 hover:underline font-bold block mb-1"
-                      >
-                        Insolvency and Bankruptcy Board of India (IBBI) →
-                      </a>
+                      <span className="text-slate-900 font-bold block mb-1">
+                        Insolvency and Bankruptcy Board of India (IBBI)
+                      </span>
                       <span className="text-slate-500">
                         Statutory guidelines for issuing Section 8 Demand Notices for operational debt and filing Section 9 CIRP petitions before NCLT.
                       </span>

@@ -78,7 +78,7 @@ export default function RefundsComplaintsClient() {
   // Table of Contents sections
   const tocSections = useMemo(() => [
     { id: "service-overview", title: "1. Service Overview" },
-    { id: "coverage-details", title: "2. What We Help You Recover" },
+    { id: "coverage-details", title: "2. Consumer Refunds & Claims We Help You Recover" },
     { id: "notice-strategy", title: "3. Our 3+1 Notice Strategy" },
     { id: "legal-framework", title: "4. The Indian Statutory Shield" },
     { id: "why-online-templates-fail", title: "5. Why Online Templates Fail" },
@@ -93,52 +93,52 @@ export default function RefundsComplaintsClient() {
     {
       id: "faq-1",
       question: "What is the limitation period to file a consumer complaint in India?",
-      answer: "Under Section 69 of the Consumer Protection Act, 2019, the limitation period to file a formal consumer complaint is two (2) years from the exact date on which the 'cause of action' arose. This means two years from the date of purchase, date of discovering a defect, date when a service deficiency occurred, or when a refund was explicitly denied. In case the deadline has passed, you can file an application for 'condonation of delay' under Section 69(2) by establishing sufficient cause for not filing within the two-year window, which the Consumer Commission must review and approve."
+      answer: "Under Section 69 of the Consumer Protection Act, 2019, you have two years to file a complaint. This two-year clock begins on the date of purchase, defect discovery, or when a refund is denied. If you miss this deadline, you can apply for delay condonation by showing sufficient cause."
     },
     {
       id: "faq-2",
       question: "Is it legally mandatory to send a legal notice to a company before filing a consumer complaint?",
-      answer: "No, sending a pre-litigation legal notice is not strictly mandatory under the Consumer Protection Act, 2019. However, it is highly recommended as a matter of legal strategy. A formal, advocate-backed notice serves three vital purposes: 1) It provides conclusive proof to the Consumer Commission that you acted in good faith and gave the opposite party a fair chance to resolve the dispute, 2) It clearly documents the dispute details, establishing a precise timeline, and 3) It creates immediate corporate pressure, resolving roughly 75% to 80% of consumer disputes within the notice period (typically 15 to 30 days) without ever needing to step into court."
+      answer: "A pre-litigation legal notice is not mandatory under the Act, but it is highly effective. It proves to the Consumer Commission that you tried to resolve the dispute in good faith. A formal advocate notice creates urgent pressure. It resolves nearly 80% of disputes without going to court."
     },
     {
       id: "faq-3",
       question: "What is the new pecuniary jurisdiction for Consumer Commissions in India?",
-      answer: "Following the Consumer Protection Act, 2019 and subsequent central government notifications in late 2021, the pecuniary jurisdictions (the monetary limit of claims a commission can hear) are: 1) District Consumer Commission: Handles disputes where the value of goods or services paid does not exceed ₹50 Lakhs (revised down from ₹1 Crore to prevent overloading local courts), 2) State Consumer Commission: Handles disputes where the value exceeds ₹50 Lakhs but does not exceed ₹2 Crores, and 3) National Consumer Disputes Redressal Commission (NCDRC): Handles disputes where the value exceeds ₹2 Crores. The value is computed strictly on the consideration paid, not the compensation claimed."
+      answer: "Monetary limits depend on the amount paid for goods or services. The District Commission hears claims up to ₹50 Lakhs. The State Commission handles cases between ₹50 Lakhs and ₹2 Crores. The National Commission (NCDRC) handles claims exceeding ₹2 Crores."
     },
     {
       id: "faq-4",
       question: "What is the e-Daakhil portal, and how does it help consumers?",
-      answer: "The e-Daakhil portal (edaakhil.nic.in) is an electronic filing platform launched under the Consumer Protection Act, 2019, which enables consumers to file complaints online directly before the District, State, or National Consumer Commissions. It eliminates the physical hassle of visiting the court to submit paperwork. Through e-Daakhil, you can register a profile, draft a complaint, upload digital evidence in PDF format, pay the court fees via online integration, and track status, notice issuance, and upcoming hearing dates in real time from home."
+      answer: "The e-Daakhil portal (edaakhil.nic.in) lets consumers file complaints online. You do not need to visit courts physically. You can upload evidence in PDF format, pay court fees online, and track your case status and hearing dates from home."
     },
     {
       id: "faq-5",
       question: "What are the court fees for filing a consumer complaint in India?",
-      answer: "Under the Consumer Protection Rules, court fees are kept extremely nominal to encourage consumer redressal. For claims (value of consideration paid) up to ₹5 Lakhs, there is absolutely zero court fee. For claims between ₹5 Lakhs and ₹10 Lakhs, the fee is ₹250. For ₹10 Lakhs to ₹20 Lakhs, the fee is ₹500. For ₹20 Lakhs to ₹50 Lakhs, the fee is ₹1,000. For ₹50 Lakhs to ₹1 Crore, the fee is ₹2,000, and for ₹1 Crore to ₹2 Crores, it is ₹2,500. Fees are paid via demand draft or online integration during e-filing."
+      answer: "Court fees are minimal. Claims up to ₹5 Lakhs have zero court fees. Claims between ₹5 Lakhs and ₹10 Lakhs cost ₹250. Claims from ₹10 Lakhs to ₹20 Lakhs cost ₹500. Fees range up to ₹2,500 for larger claims and can be paid online during e-filing."
     },
     {
       id: "faq-6",
       question: "What constitutes 'Unfair Trade Practice' (UTP) under the 2019 Act?",
-      answer: "Under Section 2(47) of the Consumer Protection Act, 2019, an Unfair Trade Practice (UTP) includes any trade practice that adopts unfair methods or deceptive practices to promote the sale, use, or supply of goods/services. This covers: 1) Making false representations regarding the standard, quality, grade, or composition of goods, 2) Misrepresenting a second-hand item as brand new, 3) Giving misleading statements regarding warranties, performance guarantees, or pricing, 4) Refusing to issue a valid tax invoice, 5) Unilaterally refusing to take back defective goods or refund money within the period specified in the invoice or within 30 days if not specified, and 6) Disclosing consumer personal data to third parties without consent."
+      answer: "Under Section 2(47), Unfair Trade Practices include deceptive methods to sell goods or services. Examples include false quality claims, selling refurbished items as new, and refusing to issue bills. Refusing refunds for defective products within 30 days also violates this rule."
     },
     {
       id: "faq-7",
       question: "How does 'Product Liability' work under the Consumer Protection Act, 2019?",
-      answer: "The 2019 Act introduced an exclusive chapter (Chapter VI) on Product Liability. Under these provisions, a product manufacturer, product service provider, or product seller is held strictly liable to compensate a consumer for any harm, personal injury, property damage, or death caused by a defective product or deficient service. To claim product liability, the consumer must prove that the product contained a manufacturing defect, design flaw, inadequate instructions/warnings, or that the service provider failed to provide proper maintenance or instructions. This holds manufacturers directly accountable, even if the item was bought from a retail distributor."
+      answer: "Chapter VI of the Act holds manufacturers, sellers, and service providers strictly liable for harm caused by defective products. You can claim compensation for personal injury or property damage. You only need to prove that the product had a design defect or lacked proper warnings."
     },
     {
       id: "faq-8",
       question: "Can an e-commerce platform claim they are just an 'intermediary' to escape refund liability?",
-      answer: "No. Under the Consumer Protection (E-Commerce) Rules, 2020, e-commerce platforms (marketplaces like Amazon, Flipkart, etc.) cannot hide behind their 'intermediary' status to escape liability for defective goods or unfair practices. They are legally mandated to appoint grievance officers, disclose product origins, establish transparent return/refund policies, and take joint responsibility if they actively host or guarantee the merchant. Unilateral 'no return/no refund' policies on standard retail purchases have been repeatedly held by consumer courts as an unfair trade practice, making the platform liable for immediate restitution."
+      answer: "No. Under the Consumer Protection (E-Commerce) Rules, 2020, marketplaces cannot hide behind intermediary status. They must have grievance officers and clear refund rules. Courts routinely reject 'no refund' policies on defective goods and hold platforms accountable."
     },
     {
       id: "faq-9",
       question: "What specific reliefs or remedies can a Consumer Commission grant?",
-      answer: "Under Section 39 of the 2019 Act, Consumer Commissions have vast powers to award comprehensive reliefs, including: 1) Ordering the removal of defects pointed out by an expert laboratory, 2) Ordering the direct replacement of the defective product with a new, defect-free unit, 3) Mandating a full refund of the price paid along with reasonable interest (often 9% to 18% p.a.), 4) Directing the payment of adequate compensation for mental agony, harassment, physical injury, or financial loss suffered, 5) Ordering the removal of service deficiencies, 6) Awarding litigation cost, and 7) Directing the withdrawal of hazardous goods from sale."
+      answer: "Under Section 39, Consumer Commissions can order full refunds with 9% to 18% interest. They can direct companies to replace defective goods or repair faults. Commissions also grant compensation for mental harassment and award litigation costs."
     },
     {
       id: "faq-10",
       question: "What is the procedure if a company refuses to obey a Consumer Commission's order?",
-      answer: "If a company or service provider fails or refuses to comply with an order passed by a Consumer Commission, you can initiate execution proceedings under Section 71 and Section 72 of the Consumer Protection Act, 2019. Under Section 72, the Commission acts as a Judicial Magistrate, having the power to punish the defaulting party with imprisonment for a term ranging from one month up to three years, or a fine ranging from ₹25,000 to ₹1,000,000, or both. This severe criminal penalty ensures that corporate directors comply with consumer commission decrees."
+      answer: "If a company ignores a Commission order, you can file execution proceedings under Section 71 and 72. The Commission has Judicial Magistrate powers. It can punish non-compliant directors with fines and imprisonment from one month up to three years."
     }
   ], []);
 
@@ -432,60 +432,60 @@ export default function RefundsComplaintsClient() {
               <div className="prose prose-lg max-w-none text-gray-700 leading-relaxed tiptap-content">
                 
                 {/* 1. Service Overview */}
-                <h2 id="service-overview">1. Professional Refunds & Consumer Complaints Service</h2>
+                <h2 id="service-overview">1. Professional Refunds &amp; Consumer Complaints Service</h2>
                 <p>
-                  As an individual consumer in the modern retail landscape, you face an extreme, systemic power imbalance. Whether buying a physical product from a digital storefront, booking a flight ticket via a global travel portal, or purchasing a health insurance policy for your family, you are forced to agree to extensive, one-sided terms of service. When products prove dangerously defective, services fall grossly short of promises, or companies sit on your refunds for months, standard customer support channels often subject you to endless automated chats, canned responses, and bureaucratic dead-ends.
+                  Consumers often face frustrating customer support when products fail. Automated chatbots and canned emails lead to endless delays. When sellers deliver broken items or refuse refunds, buyers feel powerless.
                 </p>
                 <p>
-                  The LegalRecovery <strong className="font-extrabold text-[#111827]">Refunds and Consumer Complaints Service</strong> is a specialized pre-litigation tech platform engineered to level the playing field. We realize that corporations delay refunds and deny valid claims because they count on you quietly giving up due to the prohibitive cost, stress, and time of formal consumer litigation. We have re-engineered consumer advocacy by deploying an aggressive, attorney-verified, automated multi-stage escalation notice pipeline designed to bypass front-line support staff and reach the personal mailboxes of key corporate decision-makers, general counsels, and executive board directors.
+                  LegalRecovery levels the playing field. Companies delay refunds because they assume you will give up. We replace endless follow-ups with a structured, advocate-backed legal notice process. Our notices reach company directors and legal teams directly, compelling them to act.
                 </p>
                 <blockquote>
-                  <strong>Our Service Promise:</strong> We provide comprehensive, flat-fee recovery support with absolutely <strong>zero commissions</strong> taken on your recovered money. We draft, validate, and launch progressive legal notices designed to force commercial entities to resolve your dispute.
+                  <strong>Our Service Promise:</strong> We offer full consumer recovery support for a flat fee. We take <strong>zero commission</strong> on your recovered money. We draft and serve authoritative legal notices to resolve your claims fast.
                 </blockquote>
                 <p>
-                  No commercial enterprise - regardless of its scale, startup status, or institutional backing - can legally withhold your money, deliver defective products, or escape statutory warranties. Let our platform take the burden of writing, executing, and tracking your consumer claims so you can secure a refund, replacement, or compensation swiftly.
+                  No company has the legal right to withhold your refund or deliver defective goods. Let our platform manage your consumer claim to secure your refund or replacement.
                 </p>
 
                 {/* 2. What We Help You Recover */}
-                <h2 id="coverage-details">2. What We Help You Recover</h2>
+                <h2 id="coverage-details">2. Consumer Refunds & Claims We Help You Recover</h2>
                 <p>
-                  A consumer grievance is rarely limited to the basic transaction price alone. Our legal panel compiles and details every single component of your outstanding claim - including direct considerations paid, statutory interest, and financial losses - to maximize pressure:
+                  A consumer claim covers more than just the purchase price. We calculate interest and damages to maximize your legal leverage:
                 </p>
                 
-                <h3 id="ecommerce-retail">A. E-Commerce & Retail Marketplace Refunds</h3>
+                <h3 id="ecommerce-retail">A. E-Commerce &amp; Retail Marketplace Refunds</h3>
                 <p>
-                  We recover stuck refunds for returned items, misdirected shipments, and lost packages. If a platform like Amazon, Flipkart, or a direct-to-consumer (D2C) brand refuses to issue your credit, locks your account unilaterally, or delivers a counterfeit product, our notices target their specific liabilities under the E-Commerce Rules, 2020.
+                  We recover refunds for missing parcels, wrong items, and delayed returns. If an online platform denies your refund, our notices cite obligations under the E-Commerce Rules, 2020.
                 </p>
 
-                <h3 id="defective-electronics">B. Defective Products, Electronics & Appliances</h3>
+                <h3 id="defective-electronics">B. Defective Products, Electronics &amp; Appliances</h3>
                 <p>
-                  If you purchased a laptop, smartphone, smart TV, or home appliance that suffered component failure within the warranty period, and the brand refuses to repair it, delays parts, or falsely claims physical damage, we enforce your <strong className="font-extrabold text-[#111827]">Product Liability</strong> rights to demand a brand-new replacement or a full refund.
+                  If your phone, TV, or laptop fails within warranty and the service center stalls repairs, we enforce your Product Liability rights. We demand an immediate replacement or full cash refund.
                 </p>
 
-                <h3 id="travel-hospitality">C. Airline, Travel & Hospitality Cancellations</h3>
+                <h3 id="travel-hospitality">C. Airline, Travel &amp; Hospitality Cancellations</h3>
                 <p>
-                  Airlines, railway operators, and online travel agents (OTAs) frequently withhold refunds for cancelled flights, impose illegal cancellation fees, or offer restrictive credit shells. We demand complete cash restitution under DGCA directives, and state laws, targeting their head office compliance desks directly.
+                  Airlines and booking sites often trap refunds in credit shells. We demand full cash refunds under DGCA guidelines, sending legal notices directly to airline compliance desks.
                 </p>
 
-                <h3 id="insurance-claims">D. Insurance Rejections & Frivolous Banking Charges</h3>
+                <h3 id="insurance-claims">D. Insurance Rejections &amp; Frivolous Banking Charges</h3>
                 <p>
-                  Insurance companies routinely reject legitimate medical, life, or motor insurance claims by misinterpreting 'pre-existing disease' clauses or policy fine-print. We challenge these rejections by citing IRDAI guidelines and consumer precedents, forcing the insurer's grievance officers to re-evaluate the claim.
+                  Insurers frequently reject valid claims by misinterpreting policy terms. We challenge wrongful rejections using IRDAI rules and consumer court precedents.
                 </p>
 
-                <h3 id="edtech-education">E. EdTech Platforms & Course Fee Refunds</h3>
+                <h3 id="edtech-education">E. EdTech Platforms &amp; Course Fee Refunds</h3>
                 <p>
-                  EdTech giants and coaching institutes frequently utilize high-pressure sales tactics, misleading advertisements, and false employment guarantees to secure upfront annual fees, only to refuse refunds when students withdraw. We target these misrepresentations under the Consumer Protection (E-Commerce) Rules and ASCI guidelines to secure refunds of the unused fee portion.
+                  Coaching institutes and EdTech portals often make false job promises. When students drop out, companies refuse refunds. We cite consumer protection rules to recover your tuition fees.
                 </p>
 
-                <h3 id="utility-services">F. Utility Services & Telecom Billing Overcharges</h3>
+                <h3 id="utility-services">F. Utility Services &amp; Telecom Billing Overcharges</h3>
                 <p>
-                  Whether it is a telecom operator, internet service provider, gas distributor, or local builder charging arbitrary maintenance dues, we audit the bills, issue a breakdown of overcharges, and demand immediate credit adjustments or refunds for unfair, restrictive billing practices.
+                  We audit billing overcharges from internet providers, telecom companies, or local builders. We demand immediate credit reversals for unfair billing practices.
                 </p>
 
                 {/* 3. Our 3+1 Notice Strategy */}
                 <h2 id="notice-strategy">3. Our 3+1 Notice Strategy: Engineered for Maximum Pressure</h2>
                 <p>
-                  Filing a court case immediately can take months to show progress. Conversely, sending a single basic complaint email is easily ignored by corporate support bots. To overcome this, LegalRecovery utilizes an aggressive <strong className="font-extrabold text-[#111827]">3-stage progressive notice pipeline combined with a criminal police complaint draft</strong> to systematically escalate pressure:
+                  Filing a lawsuit takes time, while basic complaint emails are easily ignored. LegalRecovery deploys a <strong className="font-extrabold text-[#111827]">3-stage advocate notice pipeline with a criminal complaint draft</strong>:
                 </p>
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6 my-8">
                   <div className="bg-[#F9FAFB] p-5 rounded-2xl border border-[#E5E7EB]">
@@ -494,17 +494,17 @@ export default function RefundsComplaintsClient() {
                       <h4 className="font-extrabold text-[#111827] text-sm">Stage 1: Advocate Demand Notice</h4>
                     </div>
                     <p className="text-xs text-[#4B5563] leading-relaxed">
-                      We launch a highly authoritative demand notice on a practicing advocate's letterhead. This notice is served via digital pipelines (corporate emails, WhatsApp) and physical registered post, giving the company a strict 15-day window to settle undisputed claims.
+                      We serve a formal legal notice on an advocate&apos;s letterhead via tracked email and registered post, giving the seller 15 days to settle.
                     </p>
                   </div>
 
                   <div className="bg-[#F9FAFB] p-5 rounded-2xl border border-[#E5E7EB]">
                     <div className="flex items-center gap-3 mb-3">
                       <div className="w-8 h-8 rounded-full bg-[#DC2626] text-white flex items-center justify-center font-black text-xs">2</div>
-                      <h4 className="font-extrabold text-[#111827] text-sm">Stage 2: C-Suite & Board Escalation</h4>
+                      <h4 className="font-extrabold text-[#111827] text-sm">Stage 2: C-Suite &amp; Board Escalation</h4>
                     </div>
                     <p className="text-xs text-[#4B5563] leading-relaxed">
-                      If the first notice is ignored, we escalate directly to the company's C-level executives (CEO, CFO, General Counsel), nodal grievance officers, and board directors. We outline individual director liabilities for hosting unfair trade practices.
+                      If ignored, we send Notice 2 directly to corporate executives and grievance officers, highlighting director liability for unfair trade practices.
                     </p>
                   </div>
 
@@ -514,7 +514,7 @@ export default function RefundsComplaintsClient() {
                       <h4 className="font-extrabold text-[#111827] text-sm">Stage 3: Pre-Litigation Draft Package</h4>
                     </div>
                     <p className="text-xs text-[#4B5563] leading-relaxed">
-                      We deliver a final warning package, including a finalized draft of the District Consumer Commission complaint compiled under the e-Daakhil portal standard, signalling our absolute readiness to initiate formal litigation.
+                      We deliver a final warning package with completed draft complaints formatted for the e-Daakhil consumer court portal.
                     </p>
                   </div>
 
@@ -524,26 +524,26 @@ export default function RefundsComplaintsClient() {
                       <h4 className="font-extrabold text-[#111827] text-sm">Criminal Police Complaint Draft</h4>
                     </div>
                     <p className="text-xs text-[#4B5563] leading-relaxed">
-                      Simultaneously, we provide you with a meticulously compiled criminal police complaint draft for <strong className="font-extrabold text-[#111827]">Cheating (Section 420 IPC)</strong> and <strong className="font-extrabold text-[#111827]">Criminal Breach of Trust (Section 405/406 IPC)</strong> to be submitted at your local police station in case of blatant fraud.
+                      We also prepare a police complaint draft for <strong className="font-extrabold text-[#111827]">Cheating (Section 420 IPC)</strong> to submit if the company engaged in outright fraud.
                     </p>
                   </div>
                 </div>
                 <p>
-                  By moving through these four distinct escalation stages week-by-week, we make it highly expensive, operationally disruptive, and legally risky for the corporate entity to continue withholding your refund or denying your replacement.
+                  This multi-step escalation makes it costly and reputationally risky for the company to withhold your refund.
                 </p>
 
                 {/* 4. The Indian Statutory Shield */}
                 <h2 id="legal-framework">4. The Indian Statutory Shield: The Consumer Protection Act, 2019</h2>
                 <p>
-                  India's legal framework provides consumers with robust, modern statutory protections. The <strong className="font-extrabold text-[#111827]">Consumer Protection Act, 2019</strong> (which replaced the legacy 1986 Act) introduced several groundbreaking provisions that our legal panel leverages to build your case:
+                  The <strong className="font-extrabold text-[#111827]">Consumer Protection Act, 2019</strong> gives Indian buyers powerful legal rights:
                 </p>
                 <ul>
-                  <li><strong className="font-extrabold text-[#111827]">The Right to Redressal (Section 2(9)(v)):</strong> Grants consumers the absolute right to seek legal remedies against unfair trade practices, exploitation, or deficiency in service.</li>
-                  <li><strong className="font-extrabold text-[#111827]">Unfair Trade Practices (UTP) (Section 2(47)):</strong> Broadly defines deceptive practices, including refusing to issue a bill, refusing returns/refunds within standard commercial periods, or offering misleading warranties, as severe statutory defaults.</li>
-                  <li><strong className="font-extrabold text-[#111827]">Deficiency of Service (Section 2(11)):</strong> Governs any fault, imperfection, shortcoming, or inadequacy in the quality, nature, or manner of performance of a service (e.g., flight cancellations, insurance rejection, edtech failures).</li>
-                  <li><strong className="font-extrabold text-[#111827]">Product Liability (Chapter VI):</strong> Holds manufacturers, service providers, and retail sellers strictly liable for any harm or loss caused by a defective product or negligent service, regardless of intermediate distributors.</li>
-                  <li><strong className="font-extrabold text-[#111827]">E-Daakhil Portal E-Filing:</strong> Simplifies litigation by enabling consumers to file cases online without physical court visits.</li>
-                  <li><strong className="font-extrabold text-[#111827]">Territorial Convenience:</strong> Under the 2019 Act, you can file a complaint in the Consumer Commission located in the district where <strong className="font-extrabold text-[#111827]">you (the complainant)</strong> reside or work, eliminating the need to travel to the company's head office location.</li>
+                  <li><strong className="font-extrabold text-[#111827]">Right to Redressal (Section 2(9)(v)):</strong> Gives consumers the statutory right to seek compensation against unfair practices.</li>
+                  <li><strong className="font-extrabold text-[#111827]">Unfair Trade Practices (Section 2(47)):</strong> Forbids false discounts, misleading ads, and unilateral refusals to refund defective items.</li>
+                  <li><strong className="font-extrabold text-[#111827]">Deficiency of Service (Section 2(11)):</strong> Covers poor quality service in travel, education, insurance, and banking.</li>
+                  <li><strong className="font-extrabold text-[#111827]">Product Liability (Chapter VI):</strong> Holds manufacturers and sellers strictly liable for injuries or losses caused by defective products.</li>
+                  <li><strong className="font-extrabold text-[#111827]">E-Daakhil Filing:</strong> Lets you file consumer complaints online without stepping into a courtroom.</li>
+                  <li><strong className="font-extrabold text-[#111827]">Local Jurisdiction:</strong> You can file cases in your home district rather than traveling to the company&apos;s headquarters.</li>
                 </ul>
 
                 {/* Compare Pecuniary Jurisdictions Table */}
@@ -584,24 +584,24 @@ export default function RefundsComplaintsClient() {
                 {/* 5. Why Online Templates Fail */}
                 <h2 id="why-online-templates-fail">5. Why Free Online Complaint Templates Fail</h2>
                 <p>
-                  Many consumers try to download free legal notice templates or complaint forms from basic internet blogs. While tempting, these amateur attempts almost always fail to yield results:
+                  Many consumers download free complaint templates from blogs. These generic letters rarely get results:
                 </p>
                 <ul>
-                  <li><strong>No Advocate Letterhead or Seal:</strong> Corporations employ large internal legal teams. When they receive a basic printed email without the signature and seal of a registered, practicing advocate, they categorize it as low-risk and ignore it.</li>
-                  <li><strong>Outdated Legal Citations:</strong> Most online formats still cite sections of the repealed 1986 Act, incorrect Shop & Establishment clauses, or fail to mention the E-Commerce Rules, 2020, making the notice legally ineffective.</li>
-                  <li><strong>Lack of Executive Reach:</strong> Standard online templates are sent to general info@ or support@ email addresses, where they are filtered out by customer service agents rather than reaching corporate directors or legal heads.</li>
+                  <li><strong>No Lawyer Seal:</strong> Companies have in-house legal teams. A casual email without an advocate&apos;s seal is treated as low risk and ignored.</li>
+                  <li><strong>Outdated Acts Cited:</strong> Free templates often cite the repealed 1986 Act or omit the E-Commerce Rules, 2020. This makes the notice legally toothless.</li>
+                  <li><strong>No Direct Board Access:</strong> Standard templates get buried in general support inboxes rather than reaching decision-makers.</li>
                 </ul>
                 <p>
-                  LegalRecovery provides you with attorney-signed, state-customized notice campaigns. We use real-time digital read receipts to track when the HR opened the email, leaving them with absolutely no room to claim they never received the demand.
+                  LegalRecovery delivers advocate-signed, customized consumer notices. We track digital delivery so corporate teams cannot deny receiving your claim.
                 </p>
 
                 {/* 6. Transparent Flat Pricing */}
                 <h2 id="service-pricing">6. Transparent Flat Pricing</h2>
                 <p>
-                  Traditional advocates charge thousands of rupees per consultation and demand additional percentages (commissions) on the recovered amount. We believe this is highly exploitative. 
+                  Traditional lawyers charge heavy consultation fees and demand percentages on recovered amounts. We believe in clear, flat pricing.
                 </p>
                 <p>
-                  LegalRecovery provides professional, attorney-verified consumer complaint and refund notice campaigns for a single, flat fee of <strong className="font-extrabold text-[#111827]">₹999</strong>. We charge absolutely zero hidden fees and take zero commission on your recovered money.
+                  LegalRecovery offers complete consumer notice campaigns for a flat fee of <strong className="font-extrabold text-[#111827]">₹999</strong>. We charge no hidden fees and take zero commission on your recovered money.
                 </p>
 
                 {/* Pixel-perfect reproduction of the home page unified pricing container */}

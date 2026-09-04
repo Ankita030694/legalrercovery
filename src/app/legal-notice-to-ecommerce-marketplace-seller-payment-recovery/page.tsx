@@ -2,8 +2,8 @@ import { Metadata } from "next";
 import EcommerceSellerRecoveryClient from "./EcommerceSellerRecoveryClient";
 
 export const metadata: Metadata = {
-  title: "Recover Frozen Payouts from Amazon/Flipkart | E-Commerce Dispute",
-  description: "Learn how to recover frozen seller account money on Amazon, Flipkart, or Meesho. Serve a legal notice to e-commerce marketplace platforms for withheld payouts.",
+  title: "Recover Frozen Marketplace Payouts | Seller Dispute",
+  description: "Learn how to recover frozen seller money on Amazon, Flipkart, or Meesho. Serve a legal notice to e-commerce marketplaces for withheld seller payouts.",
   keywords: [
     "recover frozen seller account money Amazon",
     "legal notice to e-commerce marketplace",

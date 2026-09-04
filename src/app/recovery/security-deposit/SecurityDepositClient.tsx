@@ -7,47 +7,47 @@ import TableOfContents from "@/components/TableOfContents";
 import Breadcrumbs from "@/components/Breadcrumbs";
 import { PaymentModal } from "@/components/PaymentModal";
 
-// FAQ data for rendering and Schema
+// FAQ data for rendering and Schema rewritten for high readability
 const faqs = [
   {
     question: "Is it legal for an company in India to take a security deposit from an employee?",
-    answer: "Generally, taking a cash security deposit from an employee is considered a highly coercive and unfair labor practice. While some companies do it under the guise of an 'employment bond' or 'training bond,' they can only legally enforce it to recover actual, documented training expenses. If no specialized training was provided, the company cannot legally withhold or forfeit your security deposit."
+    answer: "Taking cash security deposits from employees is generally an unfair labour practice. Employers can only enforce training bonds to recover actual, documented training costs. If no specialized training occurred, the company cannot legally withhold your deposit."
   },
   {
     question: "Can an employer deduct a security deposit from my monthly salary?",
-    answer: "No, monthly deductions from your salary to build a security deposit violate Section 7 of the Payment of Wages Act, 1936. The Act lists permissible deductions (like tax, provident fund, or advances), and 'employee security deposits' are not included. Any such deduction made without government approval is illegal."
+    answer: "No. Monthly salary deductions for security deposits violate Section 7 of the Payment of Wages Act 1936. The Act lists permitted deductions like taxes and provident funds. Arbitrary deductions without government permission are unlawful."
   },
   {
     question: "What should I do if my employer is holding my original educational certificates?",
-    answer: "Withholding an employee's original educational certificates (degrees, marksheets, or passports) is illegal and constitutes a violation of your fundamental Right to Livelihood under Article 21 of the Constitution. You should immediately send a formal legal notice demanding their return. If they refuse, you can file a complaint with the Labour Commissioner and lodge a police complaint for Criminal Breach of Trust."
+    answer: "Withholding an employee's original marksheets or degrees is illegal. It violates your constitutional Right to Livelihood under Article 21. Send a formal legal notice immediately demanding their return. You can also file a police complaint for criminal breach of trust."
   },
   {
     question: "Can an company file a case against me for breaking an employment bond?",
-    answer: "An employer can only file a case to recover proportionate training costs if they spent significant, documented funds on your specialized training and you left before the bond period ended. If they did not provide any training, or if they demand an arbitrary, excessive penalty, the bond is considered invalid and unenforceable under Section 74 of the Indian Contract Act, 1872."
+    answer: "A company can only sue to recover actual, documented training expenses. If they provided no specialized training, the bond is unenforceable. Under Section 74 of the Indian Contract Act, courts reject arbitrary penalty claims."
   },
   {
     question: "What if the company threatens to bounce a security cheque I gave them?",
-    answer: "Many employers ask for blank security cheques at the time of joining and threaten to file a cheque bounce case under Section 138 of the Negotiable Instruments Act if you resign early. Legally, a security cheque cannot be used to enforce an invalid contract or penalty. You should immediately send a written letter revoking the authorization of that cheque and instruct your bank to 'stop payment' to protect yourself."
+    answer: "Security cheques cannot enforce invalid bond penalties. Send an email immediately revoking your cheque authorization. Instruct your bank to place a stop-payment order. File a police complaint if the employer threatens cheque bounce action."
   },
   {
     question: "What is the time limit to file a suit to recover my security deposit?",
-    answer: "Under the Limitation Act, 1963, the limitation period to file a civil recovery suit or summary suit to claim a refund of your security deposit is three (3) years from the date the payment was due to be refunded (typically your last working day or the completion of the bond period)."
+    answer: "Under the Limitation Act 1963, you have three years to file a recovery suit. The clock starts from your last working day or the date your refund became due."
   },
   {
     question: "Does the Supreme Court support employment bonds?",
-    answer: "The Supreme Court of India (e.g., in Vijaya Bank & Anr. v. Prashant B. Narnaware) has held that employment bonds are enforceable only if they are reasonable, proportionate, and intended to recover actual expenses incurred by the employer on training. The court does not support arbitrary penalties or excessive bond periods that restrict an employee's freedom of trade."
+    answer: "The Supreme Court enforces bonds only if they cover actual, documented training costs. Courts do not enforce arbitrary exit penalties. Excessive bond terms that restrict employment freedom violate Section 27 of the Contract Act."
   },
   {
     question: "How do I prove that I paid a security deposit if the company didn't give me a receipt?",
-    answer: "You can prove the payment using bank transaction records (online transfer receipts), salary slips showing monthly deductions labeled as 'security deposit' or 'retention money,' and email exchanges with HR or management acknowledging the deposit amount."
+    answer: "You can prove payments through bank transfer records and salary slips showing retention deductions. You can also use HR emails acknowledging deposit receipts."
   },
   {
     question: "Can the Labour Commissioner help me get my original certificates back?",
-    answer: "Yes, the Labour Commissioner and Shops and Establishments inspectors have the power to summon employers who indulge in unfair labor practices like holding original certificates. They can direct the company to return the documents immediately during conciliation proceedings."
+    answer: "Yes. Labour commissioners and Shops and Establishments inspectors have the legal authority to summon employers. They direct companies to return personal documents during conciliation meetings."
   },
   {
     question: "What is the criminal section for an employer withholding personal documents?",
-    answer: "Under the Bharatiya Nyaya Sanhita (BNS), 2023, withholding an employee's original personal certificates constitutes Criminal Breach of Trust under Section 316 (formerly Section 406 of the IPC). It is a criminal offense punishable by imprisonment of up to three years, a fine, or both."
+    answer: "Withholding personal documents constitutes Criminal Breach of Trust under Section 316 of the Bharatiya Nyaya Sanhita (formerly Section 406 IPC). It carries imprisonment for up to three years, a fine, or both."
   }
 ];
 
@@ -167,7 +167,7 @@ export default function SecurityDepositClient() {
   };
 
   const tocSections = [
-    { id: "security-deposit-introduction", title: "Introduction" },
+    { id: "security-deposit-introduction", title: "Introduction to Security Deposit Recovery in India" },
     { id: "types-of-security-deposits", title: "Types of Deposits" },
     { id: "legality-of-salary-deductions", title: "Payment of Wages Act" },
     { id: "employment-bonds-enforceability", title: "Bond Enforceability" },
@@ -273,19 +273,19 @@ export default function SecurityDepositClient() {
                 
                 {/* Introduction */}
                 <section id="security-deposit-introduction" className="scroll-mt-32">
-                  <h2 className="text-xl md:text-3xl font-black text-slate-900 mb-5 border-b-2 border-[#DC2626] pb-2 inline-block">Introduction</h2>
+                  <h2 className="text-xl md:text-3xl font-black text-slate-900 mb-5 border-b-2 border-[#DC2626] pb-2 inline-block">Introduction to Security Deposit Recovery in India</h2>
                   <div className="prose prose-base max-w-none text-slate-650 space-y-6">
                     <p className="text-sm md:text-base leading-relaxed">
-                      Entering a new employment relationship is meant to be a professional partnership built on mutual value and legal respect. However, a highly coercive practice continues to plague the Indian corporate and industrial sectors, particularly affecting fresh graduates, software developers, and entry-level professionals. To prevent employees from resigning, corporate entities frequently demand monetary security deposits, deduct monthly retention amounts from salaries, enforce punitive training bonds, or physically seize original educational marksheets and degrees.
+                      Starting a new job should be a positive career move. However, many Indian firms exploit new hires through unfair retention tactics. They demand monetary deposits or deduct monthly pay. Some companies enforce punitive bonds or confiscate original college degrees.
                     </p>
                     <p className="text-sm md:text-base leading-relaxed">
-                      These practices are designed to hold the employee hostaged within the organization, creating a modern form of corporate servitude. When an employee decides to resign due to better opportunities, toxic work environments, or personal reasons, HR and finance departments frequently refuse to refund the deposit, invoke arbitrary bond penalties, or withhold the employee&apos;s original academic documents. This leaves the employee facing severe professional stagnation and financial loss.
+                      These unfair practices trap employees in toxic workplaces. When workers resign, employers often refuse to refund security money. They also withhold academic marksheets and issue hollow legal threats. This causes unfair career delays and emotional distress.
                     </p>
                     <p className="text-sm md:text-base leading-relaxed">
-                      It is vital to understand that your security deposits and original certificates are your personal property. Withholding them under the guise of an employment bond or notice period default is, in most cases, completely illegal and unenforceable. The Indian legal system provides clear protections against such coercive practices. At LegalRecovery, we help employees navigate the complex legal frameworks under contract law, labor codes, and criminal statutes to recover their security deposits and secured certificates swiftly.
+                      Your original certificates and earned money belong solely to you. Employers cannot legally withhold personal documents or money as exit collateral. Indian labor laws and criminal statutes protect employees from these abusive terms. At LegalRecovery, we help you reclaim your money and certificates quickly.
                     </p>
                     <div className="bg-red-50 p-6 rounded-2xl border-l-4 border-[#DC2626] italic text-xs sm:text-sm text-red-900 font-semibold leading-relaxed">
-                      &quot;A security deposit or educational certificate is not corporate collateral. Withholding an employee&apos;s personal documents or earned salary as a retention measure is a direct breach of contract, a violation of the fundamental Right to Livelihood, and a criminal breach of trust under Indian law.&quot;
+                      &quot;A security deposit or educational degree is not company collateral. Withholding personal records or earned salary violates your Right to Livelihood. It constitutes an unlawful breach of trust under Indian law.&quot;
                     </div>
                   </div>
                 </section>
@@ -295,18 +295,18 @@ export default function SecurityDepositClient() {
                   <h2 className="text-xl md:text-3xl font-black text-slate-900 mb-5 border-b-2 border-[#DC2626] pb-2 inline-block">Types of Deposits</h2>
                   <div className="prose prose-base max-w-none text-slate-650 space-y-6">
                     <p className="text-sm md:text-base leading-relaxed">
-                      Employers utilize various methods to secure financial leverage over employees. Understanding how your deposit was collected is critical to determining the appropriate legal strategy for recovery.
+                      Employers collect security deposits in several different ways. Knowing how the firm took your money helps us choose the best legal remedy.
                     </p>
                     <p className="text-sm md:text-base leading-relaxed">
-                      The three most common forms of employee security deposits in India are:
+                      The three most common forms of employee deposits in India are:
                     </p>
                     <ul className="list-disc pl-6 space-y-3 text-sm text-slate-650">
-                      <li><strong>Upfront Cash Deposits:</strong> Demanding a lump-sum amount (ranging from ₹20,000 to over ₹1,000,000) at the time of joining as a condition for issuing the appointment letter. This is often labeled as a &quot;training deposit&quot; or &quot;security bond.&quot;</li>
-                      <li><strong>Monthly Salary Deductions:</strong> Deducting a fixed portion of the employee&apos;s monthly salary (e.g., ₹5,000 per month) for the first year of employment. This is commonly referred to as &quot;retention money&quot; or &quot;accruing security deposit.&quot;</li>
-                      <li><strong>Post-Dated Security Cheques:</strong> Forcing the employee to sign and hand over one or more blank, post-dated cheques during onboarding. The company then threatens to file criminal cheque bounce charges if the employee resigns before the contract period.</li>
+                      <li><strong>Upfront Cash Deposits:</strong> Companies demand a cash deposit before handing over your offer letter. They often call this a training bond or onboarding deposit.</li>
+                      <li><strong>Monthly Salary Deductions:</strong> The employer withholds a fixed cut from your monthly pay during your first year. They usually label this as retention money or security funds.</li>
+                      <li><strong>Post-Dated Security Cheques:</strong> Employers force new hires to sign blank cheques during onboarding. They later threaten cheque bounce cases if you leave early.</li>
                     </ul>
                     <p className="text-sm md:text-base leading-relaxed">
-                      All three methods are highly coercive. Regardless of the label used in your employment contract, the company cannot legally forfeit these deposits unless they can prove actual, reasonable financial losses directly related to specialized training or onboarding costs. We assist clients by auditing their contract terms, analyzing transaction trails, and targeting the specific type of deposit for recovery.
+                      All three practices are coercive and strictly restricted under Indian law. Employers cannot keep this money without proving actual, direct training losses. We audit your employment agreements to build a fast recovery claim.
                     </p>
                   </div>
                 </section>
@@ -316,22 +316,22 @@ export default function SecurityDepositClient() {
                   <h2 className="text-xl md:text-3xl font-black text-slate-900 mb-5 border-b-2 border-[#DC2626] pb-2 inline-block">Payment of Wages Act</h2>
                   <div className="prose prose-base max-w-none text-slate-650 space-y-6">
                     <p className="text-sm md:text-base leading-relaxed">
-                      When an employer deducts a security deposit directly from your monthly earnings, they violate central labor legislation. The primary law protecting employees against arbitrary salary deductions is the <strong>Payment of Wages Act, 1936</strong>.
+                      Deducting security money from your regular salary is unlawful. The primary protective legislation is the <strong>Payment of Wages Act, 1936</strong>.
                     </p>
                     <p className="text-sm md:text-base leading-relaxed">
-                      <strong>Section 7</strong> of the Payment of Wages Act explicitly lists the only permissible deductions an employer can make from an employee&apos;s wages. These include:
+                      <strong>Section 7</strong> of the Act sets strict rules for wage deductions. Employers may only deduct specific permitted items:
                     </p>
                     <ul className="list-disc pl-6 space-y-2 text-sm text-slate-650">
-                      <li>Deductions for income tax, professional tax, or other statutory dues.</li>
-                      <li>Deductions for contributions to Employees&apos; Provident Fund (EPF) and ESI.</li>
-                      <li>Deductions for recovery of advances or loans granted by the employer.</li>
-                      <li>Deductions authorized by a court order or the government.</li>
+                      <li>Statutory taxes such as income tax and professional tax.</li>
+                      <li>Mandatory contributions to Provident Fund (EPF) and ESI schemes.</li>
+                      <li>Documented recoveries of employee loans or salary advances.</li>
+                      <li>Deductions expressly ordered by a court of law or government decree.</li>
                     </ul>
                     <p className="text-sm md:text-base leading-relaxed">
-                      A &quot;security deposit,&quot; &quot;retention fund,&quot; or &quot;performance bond deduction&quot; is <strong>not</strong> included in Section 7. Therefore, any monthly deduction made from your salary to build a security deposit is a direct violation of the law, even if you signed a contract authorizing it. Contract clauses that violate statutory laws are void from the beginning.
+                      Security deposits and retention funds are <strong>not</strong> listed in Section 7. Therefore, deducting deposit money from monthly wages is completely illegal. Any employment clause allowing such deductions is null and void.
                     </p>
                     <p className="text-sm md:text-base leading-relaxed">
-                      We help clients identify these illegal deductions in their salary slips. We draft formal representations to the employer pointing out the violations of the Payment of Wages Act, which often prompts immediate refunds to avoid labor inspector audits and statutory fines.
+                      We highlight these statutory violations directly in formal demand notices. Employers usually refund the money quickly to prevent labor inspection fines.
                     </p>
                   </div>
                 </section>
@@ -341,18 +341,18 @@ export default function SecurityDepositClient() {
                   <h2 className="text-xl md:text-3xl font-black text-slate-900 mb-5 border-b-2 border-[#DC2626] pb-2 inline-block">Bond Enforceability</h2>
                   <div className="prose prose-base max-w-none text-slate-650 space-y-6">
                     <p className="text-sm md:text-base leading-relaxed">
-                      Employers often justify withholding security deposits by pointing to employment or training bonds. These bonds require an employee to serve a minimum period (often 1 to 3 years) or pay a financial penalty if they leave early. However, under Indian contract jurisprudence, the enforceability of these bonds is highly restricted.
+                      Employers often justify withholding deposits by citing training bonds. These contracts require workers to serve fixed tenures or face steep monetary penalties. However, Indian contract law strictly limits these claims.
                     </p>
                     <p className="text-sm md:text-base leading-relaxed">
-                      Under <strong>Section 74 of the Indian Contract Act, 1872</strong>, an employer cannot enforce a bond penalty simply because the contract was broken. For an employment bond to be legally valid and enforceable, the employer must prove:
+                      Under <strong>Section 74 of the Indian Contract Act, 1872</strong>, employers cannot enforce punitive damages. To validate a bond claim, the employer must establish three key facts:
                     </p>
                     <ul className="list-disc pl-6 space-y-2 text-sm text-slate-650">
-                      <li><strong>Actual Expenses:</strong> The company spent specific, documented funds on providing specialized, out-of-the-ordinary training to the employee. Regular on-the-job training or basic orientation does not qualify.</li>
-                      <li><strong>Reasonable Damages:</strong> The penalty claimed in the bond is a reasonable estimate of the actual loss suffered by the company, rather than a punitive fine.</li>
-                      <li><strong>Proportionate Recovery:</strong> If the employee has completed a portion of the bond period, the recovery amount must be reduced proportionately.</li>
+                      <li><strong>Actual Expenses:</strong> The company spent specific funds on exclusive, specialized employee training. Routine on-the-job orientation does not count.</li>
+                      <li><strong>Reasonable Damages:</strong> The bond sum reflects genuine economic loss rather than a penalty.</li>
+                      <li><strong>Proportionate Recovery:</strong> Deductions must decrease proportionately with the duration of service completed.</li>
                     </ul>
                     <p className="text-sm md:text-base leading-relaxed">
-                      If the company did not spend money on specialized training, or if they demand the entire bond amount as a penalty without proving actual loss, the bond is void. The company cannot legally forfeit your security deposit under the guise of bond enforcement. We draft comprehensive legal defenses citing Section 74 to nullify these invalid bonds.
+                      Without clear training bills, the company cannot forfeit your money. Employers cannot use unverified bonds to seize your deposits. We cite Section 74 to overturn these arbitrary bond forfeitures.
                     </p>
                   </div>
                 </section>
@@ -362,16 +362,16 @@ export default function SecurityDepositClient() {
                   <h2 className="text-xl md:text-3xl font-black text-slate-900 mb-5 border-b-2 border-[#DC2626] pb-2 inline-block">Withholding Certificates</h2>
                   <div className="prose prose-base max-w-none text-slate-650 space-y-6">
                     <p className="text-sm md:text-base leading-relaxed">
-                      One of the most coercive and legally indefensible practices in the employment sector is the physical retention of an employee&apos;s original educational certificates, marksheets, or passports. Employers frequently demand these documents during onboarding, claiming they are needed for &quot;safe custody&quot; or to &quot;verify credentials,&quot; and then refuse to return them when the employee resigns.
+                      Retaining an employee&apos;s original marksheets or degrees is deeply unethical and illegal. Employers take these documents during onboarding under the pretext of verification. They then refuse to release them when the employee resigns.
                     </p>
                     <p className="text-sm md:text-base leading-relaxed">
-                      This practice is <strong>completely illegal</strong>. Educational degrees, marksheets, and identity documents are your personal property. An employer has no ownership rights over them under any circumstances. Even if you have signed an employment bond or are in a notice period dispute, the company cannot legally hold your certificates as leverage.
+                      This conduct is <strong>entirely unlawful</strong>. Your academic certificates are your exclusive personal property. An employer never acquires legal ownership or a lien over your degrees. Even during notice period disputes, withholding documents remains strictly forbidden.
                     </p>
                     <p className="text-sm md:text-base leading-relaxed">
-                      Withholding original certificates is a coercive tactic that acts as an invalid restraint of your freedom to work. Regulatory bodies like the University Grants Commission (UGC) and the All India Council for Technical Education (AICTE) have issued strict guidelines prohibiting institutions and associated employers from retaining original documents of candidates.
+                      Both the University Grants Commission (UGC) and AICTE expressly forbid retaining candidate certificates. Keeping documents unlawfully restricts your right to seek other employment.
                     </p>
                     <p className="text-sm md:text-base leading-relaxed">
-                      At LegalRecovery, we treat certificate withholding as a priority case. We draft urgent demand notices pointing out the illegality of document retention, which carries serious civil and criminal consequences for the company&apos;s management.
+                      LegalRecovery treats document retention cases with urgent priority. We serve strong demand notices that trigger immediate administrative and legal consequences.
                     </p>
                   </div>
                 </section>
@@ -381,16 +381,16 @@ export default function SecurityDepositClient() {
                   <h2 className="text-xl md:text-3xl font-black text-slate-900 mb-5 border-b-2 border-[#DC2626] pb-2 inline-block">Right to Livelihood</h2>
                   <div className="prose prose-base max-w-none text-slate-650 space-y-6">
                     <p className="text-sm md:text-base leading-relaxed">
-                      The practice of holding an employee&apos;s educational certificates or enforcing excessive bonds is not just a breach of contract; it is a violation of your fundamental constitutional rights.
+                      Seizing personal degrees and enforcing harsh bonds violates your fundamental constitutional rights.
                     </p>
                     <p className="text-sm md:text-base leading-relaxed">
-                      Under <strong>Article 21 of the Constitution of India</strong>, every citizen is guaranteed the Right to Life, which the Supreme Court has repeatedly interpreted to include the <strong>Right to Livelihood</strong>. Your educational degrees and professional certificates are essential tools for earning a livelihood. When an employer physically retains these documents, they prevent you from seeking alternative employment, registering for higher education, or practicing your profession.
+                      <strong>Article 21 of the Constitution of India</strong> guarantees the Right to Life. The Supreme Court confirms that this includes the <strong>Right to Livelihood</strong>. Your educational degrees are essential assets for professional work. When an employer withholds them, you cannot join another firm or pursue studies.
                     </p>
                     <p className="text-sm md:text-base leading-relaxed">
-                      By blocking your ability to work elsewhere, the employer deprives you of your livelihood without the authority of law. This elevates the dispute from a private contractual matter to a violation of constitutional rights.
+                      This unlawful retention directly strips away your constitutional freedom to work. It transforms a routine employment dispute into a serious constitutional violation.
                     </p>
                     <p className="text-sm md:text-base leading-relaxed">
-                      In cases involving government or public sector entities, we file Writ Petitions (specifically a Writ of Mandamus) under Article 226 of the Constitution before the High Court, seeking urgent directions to compel the immediate release of the withheld certificates.
+                      For public sector cases, we file Writ Petitions under Article 226 of the Constitution. The High Court can issue an urgent Writ of Mandamus directing the immediate return of your records.
                     </p>
                   </div>
                 </section>
@@ -400,16 +400,16 @@ export default function SecurityDepositClient() {
                   <h2 className="text-xl md:text-3xl font-black text-slate-900 mb-5 border-b-2 border-[#DC2626] pb-2 inline-block">Restraint of Trade Laws</h2>
                   <div className="prose prose-base max-w-none text-slate-650 space-y-6">
                     <p className="text-sm md:text-base leading-relaxed">
-                      To protect their business interests, companies often include restrictive clauses in employment agreements. These include non-compete clauses (preventing you from working for a competitor) and non-solicitation clauses. When combined with an employment bond, these clauses act as barriers to professional exit.
+                      Companies often add restrictive covenants to employment letters. These include non-compete clauses that ban you from working for competitors. When coupled with bonds, they unlawfully restrict your career mobility.
                     </p>
                     <p className="text-sm md:text-base leading-relaxed">
-                      These restrictions are governed by <strong>Section 27 of the Indian Contract Act, 1872</strong>. Section 27 explicitly states that any agreement that restricts a person from exercising a lawful profession, trade, or business of any kind is <strong>void</strong> to that extent.
+                      Such covenants are governed by <strong>Section 27 of the Indian Contract Act, 1872</strong>. The statute provides that any agreement restraining a person from exercising a lawful trade or profession is <strong>void</strong>.
                     </p>
                     <p className="text-sm md:text-base leading-relaxed">
-                      Indian courts have consistently upheld this principle. While an employer can protect confidential business data or trade secrets, they cannot prevent an employee from using their skills and experience to seek other employment. Post-employment non-compete clauses are completely unenforceable in India.
+                      Indian courts strictly enforce this statutory protection. Companies may safeguard trade secrets, but they cannot restrict an employee&apos;s labor. Post-employment non-compete clauses are completely void in India.
                     </p>
                     <p className="text-sm md:text-base leading-relaxed">
-                      If an employer forfeits your security deposit or threatens legal action based on a non-compete clause, they violate Section 27. We help employees challenge these void clauses and ensure their right to practice their profession is protected.
+                      An employer cannot seize your deposit based on an invalid non-compete term. We help employees challenge these void restrictions and safeguard their professional careers.
                     </p>
                   </div>
                 </section>
@@ -419,30 +419,30 @@ export default function SecurityDepositClient() {
                   <h2 className="text-xl md:text-3xl font-black text-slate-900 mb-5 border-b-2 border-[#DC2626] pb-2 inline-block">Evidence Checklist</h2>
                   <div className="prose prose-base max-w-none text-slate-650 space-y-6">
                     <p className="text-sm md:text-base leading-relaxed">
-                      To successfully recover a security deposit or withheld certificates, you must compile a structured paper trail. This evidence is crucial to support your legal notice and represent your case in court or before labor authorities.
+                      Recovering your deposit and certificates requires a well-documented paper trail. Solid records strengthen your legal notice and courtroom filings.
                     </p>
                     <p className="text-sm md:text-base leading-relaxed">
-                      Essential evidence to gather includes:
+                      Gather these vital documents before starting legal action:
                     </p>
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                       <div className="p-6 bg-slate-50 rounded-2xl border border-slate-100">
                         <h4 className="font-extrabold text-sm text-slate-900 mb-3">Deposit & Bond Records</h4>
                         <ul className="list-disc pl-5 space-y-2 text-xs text-slate-600">
-                          <li>Signed employment agreement or bond contract.</li>
-                          <li>Online transfer receipts for upfront security deposits.</li>
-                          <li>Salary slips showing monthly security or retention deductions.</li>
-                          <li>Email confirmations from HR acknowledging receipt of the deposit.</li>
-                          <li>Photocopies or scan copies of the handed-over certificates.</li>
+                          <li>Signed employment contracts, offer letters, and bond terms.</li>
+                          <li>Bank transfer receipts for upfront deposit payments.</li>
+                          <li>Salary slips showing monthly retention fund deductions.</li>
+                          <li>HR emails confirming receipt of money or certificates.</li>
+                          <li>Photocopies or scanned copies of handed-over documents.</li>
                         </ul>
                       </div>
                       <div className="p-6 bg-slate-50 rounded-2xl border border-slate-100">
                         <h4 className="font-extrabold text-sm text-slate-900 mb-3">Separation & Communication Records</h4>
                         <ul className="list-disc pl-5 space-y-2 text-xs text-slate-600">
-                          <li>Document submission receipts or certificate handover sheets.</li>
-                          <li>Resignation email, exit clearance logs, and IT sign-offs.</li>
-                          <li>Emails or WhatsApp messages where you requested the return of your deposit/certificates and the company refused.</li>
-                          <li>Stop-payment request confirmations sent to your bank for security cheques.</li>
-                          <li>Timeline of events documenting when and to whom the documents were given.</li>
+                          <li>Document handover receipts signed by HR or managers.</li>
+                          <li>Resignation letters, exit clearance forms, and asset handovers.</li>
+                          <li>Emails or WhatsApp messages showing the employer&apos;s refusal to refund.</li>
+                          <li>Bank receipts showing stop-payment requests for security cheques.</li>
+                          <li>A detailed timeline of events from onboarding to exit.</li>
                         </ul>
                       </div>
                     </div>
@@ -454,19 +454,19 @@ export default function SecurityDepositClient() {
                   <h2 className="text-xl md:text-3xl font-black text-slate-900 mb-5 border-b-2 border-[#DC2626] pb-2 inline-block">Limitation Periods</h2>
                   <div className="prose prose-base max-w-none text-slate-650 space-y-6">
                     <p className="text-sm md:text-base leading-relaxed">
-                      Every claim for the recovery of money or documents is subject to strict statutory timelines. Under the <strong>Limitation Act, 1963</strong>, you must initiate legal action within a specific period, or you lose the right to seek remedies in court.
+                      Every legal claim must follow statutory filing deadlines. Under the <strong>Limitation Act, 1963</strong>, delaying your claim can extinguish your right to recover.
                     </p>
                     <p className="text-sm md:text-base leading-relaxed">
-                      For civil recovery suits and summary suits to claim a refund of your security deposit, the limitation period is <strong>three (3) years</strong>. This period begins from the date the refund became due under the contract—typically your last working day or the completion of the contract period.
+                      The limitation period for recovering monetary security deposits is <strong>three (3) years</strong>. Time begins running on your last working day or when the refund was due.
                     </p>
                     <p className="text-sm md:text-base leading-relaxed">
-                      For the recovery of physical documents (like educational certificates), the limitation period to file a suit for recovery of movable property is also <strong>three (3) years</strong> from the date you demanded their return and the employer refused.
+                      For retrieving personal certificates, you also have a <strong>three (3) year</strong> limit. This period runs from the date you demanded your documents and the company refused.
                     </p>
                     <p className="text-sm md:text-base leading-relaxed">
-                      Under <strong>Section 18 of the Limitation Act, 1963</strong>, if the employer sends a written acknowledgment of the deposit or promises to refund it at a future date before the three-year window expires, a fresh limitation period of three years begins from the date of that acknowledgment.
+                      Under <strong>Section 18 of the Limitation Act, 1963</strong>, written company acknowledgments reset this clock. An email promising a future refund starts a fresh three-year period.
                     </p>
                     <p className="text-sm md:text-base leading-relaxed">
-                      We advise taking legal action as soon as the standard exit clearance window (30-45 days) expires, as delaying can lead to loss of evidence and complicate recovery.
+                      We advise taking legal action promptly after exit clearance delays exceed 30 days. Early action preserves evidence and speeds up your refund.
                     </p>
                   </div>
                 </section>
@@ -476,21 +476,21 @@ export default function SecurityDepositClient() {
                   <h2 className="text-xl md:text-3xl font-black text-slate-900 mb-5 border-b-2 border-[#DC2626] pb-2 inline-block">Order 37 Summary Suits</h2>
                   <div className="prose prose-base max-w-none text-slate-650 space-y-6">
                     <p className="text-sm md:text-base leading-relaxed">
-                      For employees and consultants seeking a refund of upfront cash security deposits or accumulated salary deductions, the civil court process offers a fast-track remedy: the <strong>Summary Suit under Order 37 of the CPC</strong>.
+                      Civil courts offer an expedited procedure for unpaid deposits: the <strong>Summary Suit under Order 37 of the CPC</strong>.
                     </p>
                     <p className="text-sm md:text-base leading-relaxed">
-                      A Summary Suit is designed specifically for recovering liquidated monetary claims—claims where the exact debt is fixed and documented—arising from written contracts, invoices, or receipts. This makes it an effective tool for recovering security deposits where the amount is clearly stated in the employment agreement or bank transfer receipts.
+                      Order 37 applies to fixed, liquidated monetary claims based on written contracts or receipts. This makes it ideal for recovering security deposits verified by employment letters or bank slips.
                     </p>
                     <p className="text-sm md:text-base leading-relaxed">
-                      The procedure in a Summary Suit differs from ordinary civil suits:
+                      Summary suits move much faster than ordinary civil trials:
                     </p>
                     <ul className="list-disc pl-6 space-y-2 text-sm text-slate-650">
-                      <li><strong>Summons of Appearance:</strong> Once the suit is filed, the defendant company must enter an appearance within 10 days of receiving the summons.</li>
-                      <li><strong>No Automatic Right to Defend:</strong> The defendant does not have an automatic right to file a written statement. They must apply to the court for &quot;leave to defend&quot; by demonstrating a genuine, triable defense.</li>
-                      <li><strong>Quick Judgment:</strong> If the defendant fails to enter an appearance within 10 days, or if the court rejects their application for leave to defend, the allegations in the plaint are deemed admitted, and the court passes a judgment in favor of the plaintiff.</li>
+                      <li><strong>Summons for Appearance:</strong> The company must formally appear in court within 10 days of receiving notice.</li>
+                      <li><strong>No Automatic Defense:</strong> The employer cannot file a standard defense freely. They must first prove to the judge that they have a genuine triable defense.</li>
+                      <li><strong>Immediate Decree:</strong> If the employer defaults or fails to obtain leave to defend, the court enters judgment for the plaintiff.</li>
                     </ul>
                     <p className="text-sm md:text-base leading-relaxed">
-                      This fast-track mechanism prevents companies from using delaying tactics in court. LegalRecovery&apos;s legal team drafts and files summary suits to secure quick judgments for our clients.
+                      This fast mechanism stops companies from dragging out litigation. LegalRecovery prepares and files these summary suits to secure rapid court decrees.
                     </p>
                   </div>
                 </section>
@@ -500,18 +500,18 @@ export default function SecurityDepositClient() {
                   <h2 className="text-xl md:text-3xl font-black text-slate-900 mb-5 border-b-2 border-[#DC2626] pb-2 inline-block">Labour Commissioner Role</h2>
                   <div className="prose prose-base max-w-none text-slate-650 space-y-6">
                     <p className="text-sm md:text-base leading-relaxed">
-                      If the employer fails to comply with a legal notice demanding the return of your deposit or certificates, you can seek assistance through the state&apos;s labor administration. The government provides a mediation mechanism through the Office of the Labour Commissioner.
+                      If an employer ignores your legal notice, state labor authorities can intervene. The local Labour Commissioner office provides free, fast dispute mediation.
                     </p>
                     <p className="text-sm md:text-base leading-relaxed">
-                      You can file a formal complaint with the local labor office under the state&apos;s <strong>Shops and Commercial Establishments Act</strong>. Shops inspectors and Assistant Labour Commissioners have the statutory power to:
+                      You can lodge a formal grievance under the state&apos;s <strong>Shops and Commercial Establishments Act</strong>. Labor officers have clear statutory powers:
                     </p>
                     <ul className="list-disc pl-6 space-y-2 text-sm text-slate-650">
-                      <li><strong>Summon Employers:</strong> Issue directions to the employer&apos;s management to appear for joint conciliation meetings.</li>
-                      <li><strong>Conduct Inspections:</strong> Audit the company&apos;s payroll registers, attendance books, and document clearance logs.</li>
-                      <li><strong>Order Restitution:</strong> Direct the company to return the withheld educational certificates and refund illegal salary deductions immediately.</li>
+                      <li><strong>Summon Management:</strong> Compel company directors and HR heads to attend conciliation hearings.</li>
+                      <li><strong>Audit Company Records:</strong> Inspect payroll registers, attendance logs, and deduction records on site.</li>
+                      <li><strong>Direct Restitution:</strong> Instruct the company to return withheld certificates and refund illegal deductions promptly.</li>
                     </ul>
                     <p className="text-sm md:text-base leading-relaxed">
-                      Labour Commissioner proceedings are less formal than court trials and are focused on achieving an amicable settlement. If the employer refuses to comply despite clear evidence of illegal document retention or salary deductions, the labor officer can initiate prosecution against the company. We help clients draft and file these administrative complaints.
+                      Labor hearings avoid long court formalities and prioritize fast settlements. Continued company refusal can trigger government prosecution. We help clients draft and file these official labor complaints.
                     </p>
                   </div>
                 </section>
@@ -521,17 +521,17 @@ export default function SecurityDepositClient() {
                   <h2 className="text-xl md:text-3xl font-black text-slate-900 mb-5 border-b-2 border-[#DC2626] pb-2 inline-block">Criminal Action under BNS</h2>
                   <div className="prose prose-base max-w-none text-slate-650 space-y-6">
                     <p className="text-sm md:text-base leading-relaxed">
-                      While monetary recovery is primarily a civil matter, the physical withholding of an employee&apos;s original educational certificates constitutes a serious criminal offense under the <strong>Bharatiya Nyaya Sanhita (BNS), 2023</strong>.
+                      Financial recovery is mainly civil, but seizing certificates is a criminal act. The <strong>Bharatiya Nyaya Sanhita (BNS), 2023</strong> establishes clear penalties for document retention.
                     </p>
                     <p className="text-sm md:text-base leading-relaxed">
-                      Key criminal provisions that apply to certificate withholding include:
+                      Key criminal provisions against withholding certificates include:
                     </p>
                     <ul className="list-disc pl-6 space-y-3 text-sm text-slate-650">
-                      <li><strong>Criminal Breach of Trust (Section 316, BNS):</strong> This applies when you entrust your original educational documents to the employer for verification purposes, and they dishonestly retain or convert them for their own use (e.g., as leverage for a bond). Under Section 316, this is punishable by imprisonment of up to three years, a fine, or both.</li>
-                      <li><strong>Cheating & Dishonestly Inducing Delivery of Property (Section 318, BNS):</strong> This applies if the company induced you to hand over your certificates by making false representations about verification policies, with the intent of holding them hostage.</li>
+                      <li><strong>Criminal Breach of Trust (Section 316, BNS):</strong> You entrusted your documents solely for verification. Keeping them dishonestly as bond collateral carries up to three years in prison, a fine, or both.</li>
+                      <li><strong>Cheating and Dishonest Inducement (Section 318, BNS):</strong> Applies when employers misrepresent verification rules to take original certificates with fraudulent intent.</li>
                     </ul>
                     <p className="text-sm md:text-base leading-relaxed">
-                      To initiate criminal action, you can file a complaint under <strong>Section 173 of the BNSS, 2023</strong> at the local police station. The threat of criminal prosecution, which names the company&apos;s HR manager and directors personally, is a powerful motivator that often leads to the immediate return of withheld documents.
+                      You can file an official complaint under <strong>Section 173 of the BNSS, 2023</strong> at your local police station. Naming directors and HR managers in criminal complaints usually forces an immediate release of documents.
                     </p>
                   </div>
                 </section>
@@ -541,21 +541,21 @@ export default function SecurityDepositClient() {
                   <h2 className="text-xl md:text-3xl font-black text-slate-900 mb-5 border-b-2 border-[#DC2626] pb-2 inline-block">Cheque Abuse Counters</h2>
                   <div className="prose prose-base max-w-none text-slate-650 space-y-6">
                     <p className="text-sm md:text-base leading-relaxed">
-                      A common coercive tactic used by employers is to demand signed, blank cheques from employees at the time of joining as a &quot;security deposit.&quot; If the employee decides to resign before the contract or bond period ends, the employer threatens to write a large amount on the cheque, present it to the bank, and file a criminal cheque bounce case under <strong>Section 138 of the Negotiable Instruments (NI) Act, 1881</strong>.
+                      Many employers force candidates to submit blank cheques at joining. If you resign, they threaten to present the cheque and file a case under <strong>Section 138 of the Negotiable Instruments (NI) Act, 1881</strong>.
                     </p>
                     <p className="text-sm md:text-base leading-relaxed">
-                      If you face this threat, you must take immediate preventive steps. Under the law, a cheque bounce case is only valid if the cheque was issued to discharge a <strong>legally enforceable debt or liability</strong>. A penalty under an invalid employment bond is not a legally enforceable debt. If the company did not spend money on specialized training, they cannot legally present the cheque.
+                      You can neutralize this threat quickly. Section 138 applies solely to cheques issued for a <strong>legally enforceable debt</strong>. Penalties under unverified employment bonds are not valid legal debts. Employers cannot legally cash cheques without documented training expenses.
                     </p>
                     <p className="text-sm md:text-base leading-relaxed">
-                      To protect yourself, you should take the following actions:
+                      Protect yourself immediately by taking these essential steps:
                     </p>
                     <ul className="list-disc pl-6 space-y-2 text-sm text-slate-650">
-                      <li><strong>Revoke Authorization:</strong> Send a formal email and registered letter to the company revoking their authorization to use the security cheque, stating that there is no legally enforceable debt.</li>
-                      <li><strong>Stop Payment:</strong> Instruct your bank in writing to place a 'stop payment' order on the specific cheque numbers, citing 'revocation of security authorization.'</li>
-                      <li><strong>Police Intimation:</strong> File a police complaint documenting that the company holds your security cheques and is threatening to misuse them.</li>
+                      <li><strong>Revoke Authorization:</strong> Email and send a written notice revoking company authority to use the cheque.</li>
+                      <li><strong>Issue Stop Payment:</strong> Instruct your bank to stop payment due to revoked security authorization.</li>
+                      <li><strong>File Police Intimation:</strong> Lodge a written report with police stating the employer is threatening cheque misuse.</li>
                     </ul>
                     <p className="text-sm md:text-base leading-relaxed">
-                      Taking these steps builds a strong defense and makes it difficult for the company to prosecute you under Section 138. We guide clients through this process to protect them from cheque abuse.
+                      These prompt actions block Section 138 liability. We assist clients in drafting these revocation notices and protecting their bank accounts.
                     </p>
                   </div>
                 </section>
@@ -565,15 +565,15 @@ export default function SecurityDepositClient() {
                   <h2 className="text-xl md:text-3xl font-black text-slate-900 mb-5 border-b-2 border-[#DC2626] pb-2 inline-block">Judicial Precedents</h2>
                   <div className="prose prose-base max-w-none text-slate-650 space-y-6">
                     <p className="text-sm md:text-base leading-relaxed">
-                      Indian courts have established a strong body of precedents protecting employees against coercive deposits and arbitrary bonds. Key judicial rulings to note include:
+                      Indian courts consistently protect employees from unfair bond forfeitures. Several landmark rulings establish these protections:
                     </p>
                     <ul className="list-disc pl-6 space-y-3 text-sm text-slate-650">
-                      <li><strong>Vijaya Bank & Anr. v. Prashant B. Narnaware:</strong> In this ruling, the Supreme Court of India affirmed that employment bonds are enforceable only if they are reasonable, proportionate, and intended to recover actual expenses incurred by the employer on training. The court does not support arbitrary penalties.</li>
-                      <li><strong>Niranjan Shankar Golikari v. Century Spinning and Manufacturing Co. Ltd.:</strong> The Supreme Court clarified that while negative covenants (restrictions) are valid during the active term of employment to protect business interests, any restriction that extends post-employment is void under Section 27 of the Contract Act.</li>
-                      <li><strong>SICPA India Limited v. Shri Devendra Dutt Pathak:</strong> The Delhi High Court held that an employer cannot claim the entire bond amount as a penalty unless they can show they suffered a loss equivalent to that amount. The court only allowed recovery of actual training costs.</li>
+                      <li><strong>Vijaya Bank & Anr. v. Prashant B. Narnaware:</strong> The Supreme Court held that bonds are valid only to recover reasonable, actual training costs. Judges will not enforce arbitrary penalties.</li>
+                      <li><strong>Niranjan Shankar Golikari v. Century Spinning and Manufacturing Co. Ltd.:</strong> The Supreme Court confirmed that post-employment restrictions are void under Section 27 of the Contract Act.</li>
+                      <li><strong>SICPA India Limited v. Shri Devendra Dutt Pathak:</strong> The Delhi High Court ruled that firms cannot claim arbitrary bond sums without showing equal actual loss.</li>
                     </ul>
                     <p className="text-sm md:text-base leading-relaxed">
-                      These judgments show that the judiciary protects employees from arbitrary contracts. We cite these precedents in our legal notices to demonstrate to employers that their bonds and forfeitures are legally unsustainable.
+                      These landmark rulings prove that employers cannot enforce one-sided bonds. We cite these precedents in our legal notices to secure rapid settlements.
                     </p>
                   </div>
                 </section>
@@ -583,18 +583,18 @@ export default function SecurityDepositClient() {
                   <h2 className="text-xl md:text-3xl font-black text-slate-900 mb-5 border-b-2 border-[#DC2626] pb-2 inline-block">State-Specific Rules</h2>
                   <div className="prose prose-base max-w-none text-slate-650 space-y-6">
                     <p className="text-sm md:text-base leading-relaxed">
-                      In addition to central statutes like the Payment of Wages Act, private sector employment in India is regulated by state-specific <strong>Shops and Commercial Establishments Acts</strong>. These acts govern working hours, leaves, and exit settlements, and some states have specific provisions regarding deposits.
+                      State-level <strong>Shops and Commercial Establishments Acts</strong> regulate local corporate offices. These acts govern working hours, leaves, and final settlement timelines.
                     </p>
                     <p className="text-sm md:text-base leading-relaxed">
-                      For example:
+                      Key state regulations include:
                     </p>
                     <ul className="list-disc pl-6 space-y-2 text-sm text-slate-650">
-                      <li><strong>Karnataka:</strong> The Karnataka Shops and Commercial Establishments Act prohibits employers from collecting cash security deposits from employees unless approved by the government for specific roles handling valuable assets.</li>
-                      <li><strong>Maharashtra:</strong> Under the Maharashtra Shops and Establishments Act, employers are required to settle all exit dues within a specified time, and arbitrary withholding of salary or deposits is classified as an offense.</li>
-                      <li><strong>Delhi & Tamil Nadu:</strong> Local shops inspectors have powers to inspect establishment registers and verify that no unauthorized salary deductions are being made.</li>
+                      <li><strong>Karnataka:</strong> State law bars employers from taking cash deposits from staff without prior government approval.</li>
+                      <li><strong>Maharashtra:</strong> Requires firms to pay final dues promptly. Withholding wages or deposits constitutes an offense.</li>
+                      <li><strong>Delhi & Tamil Nadu:</strong> Labor inspectors examine company registers to penalize illegal wage deductions.</li>
                     </ul>
                     <p className="text-sm md:text-base leading-relaxed">
-                      We analyze the location of your employer&apos;s registered office to apply the correct state-specific provisions in our claims, increasing pressure through local administrative channels.
+                      We invoke local state rules based on the company&apos;s registered address. This local administrative pressure leads to faster resolutions.
                     </p>
                   </div>
                 </section>
@@ -604,18 +604,18 @@ export default function SecurityDepositClient() {
                   <h2 className="text-xl md:text-3xl font-black text-slate-900 mb-5 border-b-2 border-[#DC2626] pb-2 inline-block">Tax & TDS Rules</h2>
                   <div className="prose prose-base max-w-none text-slate-650 space-y-6">
                     <p className="text-sm md:text-base leading-relaxed">
-                      The recovery or forfeiture of a security deposit involves tax implications under the <strong>Income Tax Act, 1961</strong>. Understanding how these transactions are classified is important for your tax filings.
+                      Recovering or forfeiting deposits involves tax rules under the <strong>Income Tax Act, 1961</strong>. Proper classification ensures you avoid tax errors.
                     </p>
                     <p className="text-sm md:text-base leading-relaxed">
-                      Key tax rules include:
+                      Essential tax principles include:
                     </p>
                     <ul className="list-disc pl-6 space-y-2 text-sm text-slate-650">
-                      <li><strong>Refunded Deposits:</strong> A security deposit is a capital receipt. When it is refunded to you, it is not taxable as income.</li>
-                      <li><strong>Salary Deductions:</strong> If the deposit was built through monthly salary deductions, those deductions were made from your gross taxable salary. You have already paid income tax on that money. When the company refunds it, it must not be taxed again.</li>
-                      <li><strong>Forfeitures:</strong> If the company illegally forfeits your deposit and you do not recover it, you can claim it as a capital loss in certain contexts. If the company pays you interest on delayed refunds, that interest is taxable under &quot;Income from Other Sources.&quot;</li>
+                      <li><strong>Refunded Deposits:</strong> A security deposit is a capital receipt. When returned to you, it is non-taxable.</li>
+                      <li><strong>Salary Deductions:</strong> Deductions were taken from gross salary where tax was already paid. A refund must not be taxed twice.</li>
+                      <li><strong>Forfeitures and Interest:</strong> Unrecovered deposits can qualify as losses. Any delayed refund interest is taxed under Other Sources.</li>
                     </ul>
                     <p className="text-sm md:text-base leading-relaxed">
-                      We ensure that refunded deposits are correctly documented as refunds of capital receipts to prevent double taxation or incorrect TDS deductions by the employer.
+                      We ensure settlements clearly describe refunds as capital receipts. This protects you from wrongful employer TDS cuts.
                     </p>
                   </div>
                 </section>
@@ -625,13 +625,13 @@ export default function SecurityDepositClient() {
                   <h2 className="text-xl md:text-3xl font-black text-slate-900 mb-5 border-b-2 border-[#DC2626] pb-2 inline-block">Foreign Contracts & Bonds</h2>
                   <div className="prose prose-base max-w-none text-slate-650 space-y-6">
                     <p className="text-sm md:text-base leading-relaxed">
-                      With the growth of remote work, many Indian software engineers and professionals work for foreign companies based in the US, UK, or Europe. To secure commitment, some foreign employers include security deposit or training bond clauses in remote service agreements.
+                      Many Indian developers work remotely for companies in the US, UK, or Europe. Some foreign firms insert training bonds or security deposits into remote contracts.
                     </p>
                     <p className="text-sm md:text-base leading-relaxed">
-                      If a foreign employer defaults on refunding a deposit or threatens to enforce a bond overseas, recovery can be complex. Because they lack a physical office in India, local labor inspectors cannot serve summonses easily. However, you still have options.
+                      When a foreign firm defaults on a refund, cross-border issues arise. Indian labor officers cannot easily serve summons abroad. However, practical legal solutions exist.
                     </p>
                     <p className="text-sm md:text-base leading-relaxed">
-                      First, we review the contract to identify the governing law. If the contract is governed by Indian law, we can initiate civil recovery proceedings. If governed by foreign law, we draft international demand notices citing relevant contract principles. Foreign companies are sensitive to international compliance and contract risks and often settle disputes to avoid legal issues.
+                      We first inspect the contract&apos;s governing law. If Indian law applies, we file civil claims here. Under foreign law, we issue formal cross-border demand notices. International firms take compliance risks seriously and often settle promptly.
                     </p>
                   </div>
                 </section>
@@ -641,13 +641,13 @@ export default function SecurityDepositClient() {
                   <h2 className="text-xl md:text-3xl font-black text-slate-900 mb-5 border-b-2 border-[#DC2626] pb-2 inline-block">Arbitration Clauses</h2>
                   <div className="prose prose-base max-w-none text-slate-650 space-y-6">
                     <p className="text-sm md:text-base leading-relaxed">
-                      Modern employment contracts, especially for senior staff and executives, often contain an <strong>Arbitration Clause</strong>. This clause specifies that any dispute arising from the contract, including bond disputes and deposit claims, must be resolved through private arbitration rather than civil courts.
+                      Executive contracts often include an <strong>Arbitration Clause</strong>. This requires parties to resolve bond disputes via private arbitration rather than civil courts.
                     </p>
                     <p className="text-sm md:text-base leading-relaxed">
-                      Arbitration is governed by the <strong>Arbitration and Conciliation Act, 1996</strong>. If your contract has a valid arbitration clause, either party can apply to the court to refer the dispute to an arbitrator.
+                      Arbitrations are governed by the <strong>Arbitration and Conciliation Act, 1996</strong>. When a valid clause exists, either party can petition the court to appoint an arbitrator.
                     </p>
                     <p className="text-sm md:text-base leading-relaxed">
-                      While arbitration is private, it can be expensive as the parties must pay the arbitrator&apos;s fees. However, under Indian law, employment disputes involving traditional &quot;workmen&quot; are generally considered non-arbitrable, as they fall under the jurisdiction of public Labor Courts. Arbitration clauses are typically enforceable only for managerial staff, senior executives, and independent consultants. We help clients evaluate these clauses and represent them in the arbitration process if needed.
+                      Private arbitration can be fast, but arbitrator fees are often costly. Under Indian law, routine workman disputes are non-arbitrable and belong before public labor courts. Arbitration clauses primarily bind senior executives and independent contractors. We review your clause to pick the most efficient legal path.
                     </p>
                   </div>
                 </section>
@@ -657,13 +657,13 @@ export default function SecurityDepositClient() {
                   <h2 className="text-xl md:text-3xl font-black text-slate-900 mb-5 border-b-2 border-[#DC2626] pb-2 inline-block">Step-by-Step Escalation</h2>
                   <div className="prose prose-base max-w-none text-slate-650 space-y-6">
                     <p className="text-sm md:text-base leading-relaxed">
-                      If your security deposit is withheld or certificates are detained, we recommend a structured escalation timeline:
+                      When an employer withholds your deposit or certificates, use this structured four-step timeline:
                     </p>
                     <ol className="list-decimal pl-6 space-y-4 text-sm text-slate-650">
-                      <li><strong>Day 1-7 (Formal Demand Email):</strong> Send a formal email to HR and your manager requesting the return of your deposit/certificates, attaching proof of exit clearance.</li>
-                      <li><strong>Day 8-15 (Revocation & Stop-Payment):</strong> If ignored, send a letter revoking authorization for any security cheques and instruct your bank to stop payment. Demand a written confirmation of document release.</li>
-                      <li><strong>Day 16-30 (Legal Notice):</strong> Serve a formal legal notice through our advocate panel. This notice demands the return of documents and deposits within 15 days, citing BNS and Contract Act provisions.</li>
-                      <li><strong>Day 30+ (Court/Labour Complaint):</strong> If the company fails to comply, file a complaint with the Labour Commissioner and, if certificates are held, lodge a police complaint for Criminal Breach of Trust.</li>
+                      <li><strong>Days 1-7 (Formal Demand Email):</strong> Email HR and leadership demanding your deposit and certificates with proof of clearance.</li>
+                      <li><strong>Days 8-15 (Revocation & Stop-Payment):</strong> Revoke security cheque authorization in writing and place a bank stop-payment order.</li>
+                      <li><strong>Days 16-30 (Legal Notice):</strong> Serve a formal advocate notice giving 15 days to comply under BNS and Contract Act rules.</li>
+                      <li><strong>Day 30+ (Labour Complaint & Police Action):</strong> File a complaint with the Labour Commissioner and report document retention to the police.</li>
                     </ol>
                   </div>
                 </section>
@@ -676,7 +676,7 @@ export default function SecurityDepositClient() {
                       <span className="text-[#DC2626] text-xs font-black uppercase tracking-widest block mb-2">Case Study 1: Certificate Release</span>
                       <h4 className="text-lg font-black text-slate-900 mb-3">Withheld Original Marksheets Recovered from IT Firm</h4>
                       <p className="text-sm text-slate-650 leading-relaxed">
-                        A software trainee resigned from an IT services company after 6 months due to a medical emergency. The company refused to return his original educational certificates, demanding ₹1.5 Lakhs under an employment bond. LegalRecovery served an urgent legal notice citing Section 316 of the BNS (Criminal Breach of Trust). Realizing the criminal liability involved in retaining personal documents, the company returned the certificates within 3 days and waived the bond demand.
+                        A trainee left an IT firm after six months for medical reasons. The company retained his degree marksheets and demanded ₹1.5 Lakhs. LegalRecovery served an urgent notice citing Section 316 BNS. Facing personal criminal liability, the company returned his certificates within three days and waived the bond.
                       </p>
                     </div>
 
@@ -684,7 +684,7 @@ export default function SecurityDepositClient() {
                       <span className="text-[#DC2626] text-xs font-black uppercase tracking-widest block mb-2">Case Study 2: Salary Deductions Refund</span>
                       <h4 className="text-lg font-black text-slate-900 mb-3">Recovered Monthly Security Deductions for Sales Executive</h4>
                       <p className="text-sm text-slate-650 leading-relaxed">
-                        A company deducted ₹3,000 per month from a sales executive&apos;s salary as 'retention money' for a 1-year bond. When she resigned after 10 months, the company forfeited the accumulated ₹30,000. LegalRecovery served a notice pointing out that monthly security deductions violate Section 7 of the Payment of Wages Act, 1936. The company settled the claim and refunded the entire amount to avoid labor inspector audits.
+                        A firm deducted ₹3,000 monthly as retention money from a sales executive. When she resigned, the company seized ₹30,000. LegalRecovery served notice citing Section 7 of the Payment of Wages Act. To avoid labor inspection audits, the employer refunded the entire sum.
                       </p>
                     </div>
 
@@ -692,7 +692,7 @@ export default function SecurityDepositClient() {
                       <span className="text-[#DC2626] text-xs font-black uppercase tracking-widest block mb-2">Case Study 3: Upfront Deposit Refund</span>
                       <h4 className="text-lg font-black text-slate-900 mb-3">Upfront Training Deposit Recovered from Analytics Company</h4>
                       <p className="text-sm text-slate-650 leading-relaxed">
-                        A candidate paid ₹50,000 as an upfront security deposit when joining an analytics firm under a 2-year bond. He resigned after 8 months due to non-payment of regular incentives. The firm refused to refund the deposit. LegalRecovery filed a summary suit under Order 37 of the CPC based on the deposit receipt. The court directed the firm to show proof of actual training costs. Unable to provide proof, the company settled the dispute out of court, refunding the deposit with interest.
+                        An employee paid ₹50,000 upfront deposit when joining an analytics firm. When he resigned, the firm refused any refund. LegalRecovery filed an Order 37 summary suit. The court ordered proof of training expenses. Unable to provide proof, the company settled out of court with interest.
                       </p>
                     </div>
                   </div>
@@ -704,37 +704,37 @@ export default function SecurityDepositClient() {
                   <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                     <div className="p-6 bg-slate-50 rounded-2xl border border-slate-100">
                       <p className="text-sm text-slate-700 italic mb-4">
-                        &quot;My employer withheld ₹50,000 which they deducted from my salary as a security deposit for a bond. LegalRecovery served a formal notice and I got my refund within 10 days without going to court.&quot;
+                        &quot;My employer withheld ₹50,000 deducted from my wages as a bond deposit. LegalRecovery served a formal notice. I got my complete refund in ten days without going to court.&quot;
                       </p>
                       <h4 className="font-extrabold text-xs text-slate-900">— Rahul Verma</h4>
                     </div>
                     <div className="p-6 bg-slate-50 rounded-2xl border border-slate-100">
                       <p className="text-sm text-slate-700 italic mb-4">
-                        &quot;They refused to return my original B.Tech degree certificates because I resigned before the 2-year bond. LegalRecovery drafted a notice highlighting BNS criminal sections, and HR returned my documents the next day!&quot;
+                        &quot;They withheld my original B.Tech degree after I left before the bond term. LegalRecovery sent a strong notice citing BNS provisions. HR returned my degrees the next morning!&quot;
                       </p>
                       <h4 className="font-extrabold text-xs text-slate-900">— Simran Kaur</h4>
                     </div>
                     <div className="p-6 bg-slate-50 rounded-2xl border border-slate-100">
                       <p className="text-sm text-slate-700 italic mb-4">
-                        &quot;They threatened to file a cheque bounce case using a security cheque I gave during onboarding. LegalRecovery helped me draft a stop-payment and revocation letter, and the company backed down immediately.&quot;
+                        &quot;They threatened a cheque bounce suit using a blank cheque given at onboarding. LegalRecovery helped me issue a stop-payment and revocation letter. The company backed down completely.&quot;
                       </p>
                       <h4 className="font-extrabold text-xs text-slate-900">— Anand Joshi</h4>
                     </div>
                     <div className="p-6 bg-slate-50 rounded-2xl border border-slate-100">
                       <p className="text-sm text-slate-700 italic mb-4">
-                        &quot;Recovered my upfront deposit of ₹1 Lakh from a coaching institute after I resigned. The process was completely transparent, and I tracked everything from my dashboard.&quot;
+                        &quot;Recovered my ₹1 Lakh deposit from a coaching institute after resigning. The entire procedure was clear and trackable on my dashboard.&quot;
                       </p>
                       <h4 className="font-extrabold text-xs text-slate-900">— Meera Nair</h4>
                     </div>
                     <div className="p-6 bg-slate-50 rounded-2xl border border-slate-100">
                       <p className="text-sm text-slate-700 italic mb-4">
-                        &quot;Very professional legal service. They handled my educational document recovery case with extreme diligence. Highly recommended for any employment disputes.&quot;
+                        &quot;Very skilled legal team. They recovered my original educational certificates with great diligence. Highly recommended for employment conflicts.&quot;
                       </p>
                       <h4 className="font-extrabold text-xs text-slate-900">— Siddharth Sen</h4>
                     </div>
                     <div className="p-6 bg-slate-50 rounded-2xl border border-slate-100">
                       <p className="text-sm text-slate-700 italic mb-4">
-                        &quot;They withheld my certificates and FNF. LegalRecovery sent a strong notice and got both my money and degrees returned in 2 weeks. Grateful for their help.&quot;
+                        &quot;They held my certificates and final settlement. LegalRecovery sent an assertive notice and recovered my money and certificates within two weeks.&quot;
                       </p>
                       <h4 className="font-extrabold text-xs text-slate-900">— Pooja Roy</h4>
                     </div>
@@ -746,13 +746,13 @@ export default function SecurityDepositClient() {
                   <h2 className="text-xl md:text-3xl font-black text-slate-900 mb-5 border-b-2 border-[#DC2626] pb-2 inline-block">Why LegalRecovery?</h2>
                   <div className="prose prose-base max-w-none text-slate-650 space-y-6">
                     <p className="text-sm md:text-base leading-relaxed">
-                      LegalRecovery is India&apos;s leading tech-enabled recovery platform. We combine the legal authority of veteran advocates with advanced workflow automation to deliver speed, transparency, and resolution rates that traditional law firms cannot match. Here is what sets us apart:
+                      LegalRecovery is India&apos;s leading legal tech recovery platform. We combine expert advocate authority with digital automation for fast, transparent results. Here is why professionals trust our platform:
                     </p>
                     <ul className="list-disc pl-6 space-y-3 text-sm text-slate-650">
-                      <li><strong>Expert Panel Advocates:</strong> Your notices are drafted and reviewed by experienced labor and contract attorneys, ensuring precise statutory citations.</li>
-                      <li><strong>Multi-Channel Escalations:</strong> We do not just email HR. We dispatch physical registered letters to the registered company office and personal residences of all active directors to maximize pressure.</li>
-                      <li><strong>Real-Time Tracking:</strong> Track the drafting progress, post office dispatch status, and delivery of your legal notices in real-time from your secure client dashboard.</li>
-                      <li><strong>Transparent Flat Pricing:</strong> No hourly bills, no hidden surprises. You pay a single transparent flat fee for the entire notice pipeline.</li>
+                      <li><strong>Experienced Panel Advocates:</strong> Senior employment lawyers draft every notice with precise statutory citations.</li>
+                      <li><strong>Multi-Channel Dispatch:</strong> We send speed post notices to company headquarters and directors&apos; residential addresses.</li>
+                      <li><strong>Live Tracking:</strong> Monitor drafting progress and post office tracking directly on your client dashboard.</li>
+                      <li><strong>Transparent Flat Fees:</strong> Clear flat fees with no hidden costs or surprising hourly bills.</li>
                     </ul>
                   </div>
                 </section>

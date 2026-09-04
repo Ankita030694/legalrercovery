@@ -2,8 +2,8 @@ import { Metadata } from "next";
 import ChequeBounceAmountClient from "./ChequeBounceAmountClient";
 
 export const metadata: Metadata = {
-  title: "Recover Bounced Cheque Amount under Section 138 NI Act | LegalRecovery",
-  description: "Faced with a bounced cheque in India? Learn the step-by-step legal process under Section 138 NI Act, demand notice timelines, and how to recover your money.",
+  title: "Recover Bounced Cheque Amount (Sec 138) | LegalRecovery",
+  description: "Faced with a bounced cheque in India? Learn the legal process under Section 138 NI Act, demand notice timelines, and how to recover your money.",
   keywords: [
     "recover bounced cheque amount",
     "section 138 ni act cheque bounce",

@@ -4,71 +4,69 @@ Legal Recovery
 Effective Date: 27 May 2026
 
 Welcome to Legal Recovery (“Platform”, “Company”, “we”, “our”, or “us”).
-These Terms & Conditions govern your use of the website, services, notice drafting assistance, and related services offered through Legal Recovery. By accessing or using this platform, you agree to comply with these Terms & Conditions.
+These Terms & Conditions govern your use of our website and notice drafting services. By accessing or using this platform, you agree to these Terms & Conditions.
 
 1. NATURE OF SERVICE
 
-LegalRecovery is an automated legal notice drafting platform.
+LegalRecovery is an online platform for drafting legal notices.
 
-The legal notice draft is generated through an automated system based solely on the information submitted by the user.
+We generate notice drafts using automated templates. Experienced advocates supervise all templates.
 
-The templates used are designed under the supervision of experienced advocates.
+A licensed advocate reviews your uploaded documents and details. Upon approval, the advocate signs and seals the notice.
 
-The service includes advocate review, verification of uploaded documents, and affixation of seal & signature upon approval.
-
-LegalRecovery does not constitute full legal representation unless separately agreed.
+LegalRecovery does not provide full courtroom representation unless you hire an advocate separately.
 
 2. USER RESPONSIBILITY & DECLARATION
 
-By submitting the form, you confirm that:
+When you submit a form, you make the following promises:
 
-All information provided is true, correct, and complete.
-All uploaded documents are genuine and lawfully obtained.
-The claim is not false, malicious, defamatory, or fabricated.
-The dispute is lawful and suitable for issuance of a legal notice.
-The User agrees that any misrepresentation shall make them solely liable for all civil or criminal consequences.
-No refund shall be provided if incorrect opponent details are submitted, the user changes their mind after review has started, or the notice is already sealed and issued.
+All information you provide is true, accurate, and complete.
+All uploaded files and documents are genuine and legal.
+Your claim is honest and not fabricated or defamatory.
+Your dispute is genuine and suitable for a legal notice.
+You take full legal responsibility for any false statements.
+We cannot issue refunds once advocate review begins. No refunds are given for incorrect recipient details or after a notice is issued.
 
 3. SCOPE LIMITATION
 
-LegalRecovery service is intended for low-value or straightforward disputes such as money recovery, employment dues, consumer complaints, and basic contractual defaults.
+LegalRecovery helps with straightforward civil disputes. These include unpaid salaries, stuck rent deposits, consumer refunds, and invoice defaults.
 
-LegalRecovery does NOT include court representation, follow-ups, negotiation services, litigation filing, ongoing advisory, criminal complaints, or defamation escalation handling.
+Our service does not include court appearances or ongoing litigation. It does not include filing criminal complaints or managing negotiations.
 
-Any additional service shall be chargeable separately.
+You can request additional legal services separately.
 
 4. NO FOLLOW-UP OBLIGATION
 
-The advocate shall issue the notice but shall not engage in follow-ups, calls (if not opted), negotiations, or settlement discussions unless separately engaged.
+The advocate will issue and send your legal notice. The advocate is not obligated to make follow-up calls. They will not negotiate settlements unless you engage them separately.
 
 5. DELIVERY OF NOTICE
 
-The notice may be delivered through Email, WhatsApp.
+We deliver notices digitally via verified Email and WhatsApp.
 
-Delivery confirmation does not guarantee response from the opposite party.
+Delivery confirmation proves that the notice was sent. It does not guarantee that the recipient will reply.
 
 6. NO GUARANTEE CLAUSE
 
-LegalRecovery and its advocates do not guarantee payment recovery, settlement, legal success, court outcome, or response from the opposite party.
+LegalRecovery and its advocates do not guarantee money recovery. We do not guarantee settlements or court outcomes.
 
-LegalRecovery is a notice issuance service, not a recovery or enforcement service.
+Our platform drafts and serves notices. We do not enforce payment collection.
 
 7. LIMITATION OF LIABILITY
 
-Under no circumstances shall LegalRecovery or its advocates be liable for indirect damages, loss of reputation, business loss, or litigation costs arising from user-submitted content.
+LegalRecovery and its advocates are not liable for indirect losses. We are not liable for business loss or legal costs arising from user data.
 
 8. INDEMNITY CLAUSE
 
-The User agrees to indemnify and hold harmless LegalRecovery, the LegalRecovery platform, and assigned Advocate(s) against any claim, loss, penalty, defamation action, or legal proceeding arising from false statements, forged documents, misleading information, or malicious intent.
+You agree to protect and hold harmless LegalRecovery and its advocates. You cover any claims, losses, or legal costs caused by false information, forged documents, or malicious claims.
 
 9. CONFIDENTIALITY
 
-All information submitted shall be treated as confidential, subject to legal compliance requirements.
+We keep all submitted information strictly confidential. We only disclose details when required by law.
 
 10. ADVOCATE-CLIENT RELATIONSHIP
 
-The review under LegalRecovery does not create a full attorney-client relationship beyond issuance of the notice unless separately engaged.
+Using LegalRecovery does not create a formal attorney-client relationship. Our service is limited to drafting and issuing the notice unless you hire the advocate separately.
 
 11. AUTOMATED DRAFT DISCLAIMER
 
-The user acknowledges that the draft is system-generated, not manually customized unless separately opted, and minor drafting variations may occur due to system processing.
+Our system generates notice drafts using structured templates. Minor variations may occur during processing. You must review and approve all details before dispatch.

@@ -4,7 +4,7 @@ import ForBusinessToRecoverTheirUnpaidDuesClient from './ForBusinessToRecoverThe
 const slug = 'send-a-legal-notice/for-business-to-recover-their-unpaid-dues';
 const title = 'Legal Notice for Business to Recover Their Unpaid Dues | Draft & Send Notice';
 const description = 'Unpaid B2B invoices, delayed client payments, vendor defaults, or contract dues? Send an advocate-drafted statutory legal notice for business debt recovery under MSMED Act, Order 37 CPC, and Section 138 NI Act.';
-const url = `https://legalrecovery.in/${slug}`;
+const url = `https://www.legalrecovery.in/${slug}`;
 
 export const metadata: Metadata = {
   title,

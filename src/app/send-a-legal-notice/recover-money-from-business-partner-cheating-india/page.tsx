@@ -5,7 +5,7 @@ const slug = 'send-a-legal-notice/recover-money-from-business-partner-cheating-i
 const title = 'Legal Notice to Business Partner for Recovery of Money | Cheating & Fraud India';
 const description =
   'Business partner siphoned capital, withheld profits, or cheated on partnership dues? Send an advocate-vetted statutory legal notice for recovery of money under Indian Partnership Act 1932, Section 73 Contract Act, Order 37 CPC & BNS 2023.';
-const url = `https://legalrecovery.in/${slug}`;
+const url = `https://www.legalrecovery.in/${slug}`;
 const ogImage = `/images/og/recover-money-from-business-partner-cheating-india.jpg`;
 
 export const metadata: Metadata = {

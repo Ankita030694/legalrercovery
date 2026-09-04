@@ -2,8 +2,8 @@ import { Metadata } from "next";
 import OnlineLawyerNoticeClient from "./OnlineLawyerNoticeClient";
 
 export const metadata: Metadata = {
-  title: "Hire Online Lawyer to Send a Legal Notice in India: Process & Fees",
-  description: "Hire an online lawyer to send a legal notice. Understand advocate fees, drafting guidelines, BCI rules, digital evidence tracking, and ODR settlement pipelines.",
+  title: "Hire Online Lawyer to Send Legal Notice in India: Fees",
+  description: "Hire an online lawyer to send a legal notice in India. Understand advocate fees, drafting rules, BCI guidelines, and digital ODR settlement pipelines.",
   keywords: [
     "online lawyer to send legal notice",
     "hire advocate online legal notice",

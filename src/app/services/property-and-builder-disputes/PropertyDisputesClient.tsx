@@ -80,7 +80,7 @@ export default function PropertyDisputesClient() {
   // Table of Contents sections matching RERA/Property content structure
   const tocSections = useMemo(() => [
     { id: "service-overview", title: "1. Service Overview" },
-    { id: "coverage-details", title: "2. What We Help You Recover" },
+    { id: "coverage-details", title: "2. Property & Builder Dues We Help You Recover" },
     { id: "notice-strategy", title: "3. Our 3+1 Notice Strategy" },
     { id: "legal-framework", title: "4. The Indian Statutory Shield" },
     { id: "why-online-templates-fail", title: "5. Why Online Notices Fail" },
@@ -90,57 +90,57 @@ export default function PropertyDisputesClient() {
     { id: "reviews", title: "9. Client Testimonials" }
   ], []);
 
-  // 10 Highly Comprehensive, Detailed Real Estate FAQs
+  // 10 Highly Comprehensive Real Estate FAQs rewritten for high readability
   const faqs: FAQ[] = useMemo(() => [
     {
       id: "faq-1",
       question: "What is the statutory limitation period to file a property dispute complaint under the RERA Act or Consumer Protection Act?",
-      answer: "Under Section 18 of the RERA Act, 2016, there is no strict limitation period explicitly barred if the default (such as delayed possession or project non-completion) is continuing. However, for filing claims under the Consumer Protection Act, 2019, the standard limitation period is two (2) years from the date on which the 'cause of action' arose. If a builder repeatedly extends the possession date through letters, the cause of action is treated as continuous, extending the timeline. For regular civil suits seeking specific performance of a builder-buyer agreement (BBA) or recovery of a booking token, the limitation period is three (3) years under the Limitation Act, 1963, commencing from the date performance was refused or the refund became due."
+      answer: "Under RERA Section 18, delayed possession is a continuing default without a strict bar. Consumer forum complaints must be filed within two years from the cause of action. For civil recovery or token refunds, you have three years under the Limitation Act 1963."
     },
     {
       id: "faq-2",
       question: "Can a real estate builder legally forfeit my booking token or earnest money if I withdraw from a project due to delay?",
-      answer: "No. A builder cannot legally forfeit your booking token or earnest money if the withdrawal is triggered by the builder's default, such as failure to secure structural approvals, change in building plans without consent, or failure to execute the builder-buyer agreement on time. While builders often write strict 'non-refundable token' clauses in their provisional booking applications, the Supreme Court of India has held that unfair contracts and forfeiture of substantial amounts without proving loss are legally invalid. Under RERA Section 18, if the builder fails to hand over possession in accordance with the terms of the agreement, the allottee is entitled to a full refund with interest, and no forfeiture can be enforced."
+      answer: "No. A builder cannot forfeit your booking token if delays or approval failures triggered your withdrawal. The Supreme Court has struck down one-sided forfeiture terms as unfair. Under RERA Section 18, you are entitled to a full refund with interest."
     },
     {
       id: "faq-3",
       question: "What is the prescribed interest rate a builder must pay for delayed possession under RERA rules?",
-      answer: "Under the RERA Act, 2016 and subsequent state-specific RERA Rules, the interest rate payable by the promoter to the allottee for delayed possession is uniform and linked to the State Bank of India's (SBI) highest Marginal Cost of Funds based Lending Rate (MCLR) plus two percent (2%). Currently, this translates to an annual interest rate ranging between 10.25% and 11.5% depending on the prevailing MCLR. RERA strictly enforces a parity principle: the rate of interest charged by the builder for buyer payment defaults cannot be higher than the rate of interest the builder must pay the buyer for project delays."
+      answer: "RERA rules link delay interest to State Bank of India's highest Marginal Cost of Funds based Lending Rate (MCLR) plus 2%. This currently ranges from 10.25% to 11.5% per year. Builders must pay the same rate they charge buyers for payment delays."
     },
     {
       id: "faq-4",
       question: "Can I approach both RERA and a Consumer Forum simultaneously for the same developer dispute?",
-      answer: "While the Supreme Court in landmark judgments (such as M/s. Imperia Structures Ltd. vs. Anil Patni) affirmed that the remedies under RERA and the Consumer Protection Act are concurrent and that the jurisdiction of consumer forums is not barred by RERA, you generally cannot pursue parallel litigations for the *exact same relief* (e.g., seeking the same refund amount and interest) in both forums at the same time to prevent conflicting decrees. You can, however, choose the forum that best fits your goal. RERA is typically faster for enforcing project completion or securing statutory interest, while Consumer Forums are well-suited for awarding general compensation for mental distress, harassment, and litigation costs alongside refunds."
+      answer: "Remedies under RERA and the Consumer Protection Act are concurrent under Supreme Court rulings. However, you cannot claim identical relief in both forums at once. RERA works best for possession timelines. Consumer forums award broader compensation for harassment and mental distress."
     },
     {
       id: "faq-5",
       question: "Under what conditions can a developer make changes to the sanctioned layout plans of a project?",
-      answer: "Under Section 14 of the RERA Act, 2016, a developer is strictly prohibited from making any minor or major additions or alterations to the sanctioned plans, layout plans, and specifications of the individual apartment without the prior written consent of the specific allottee. Furthermore, the developer cannot make any alterations to the sanctioned layout plans, common areas, or specifications of the entire building or project without the prior written consent of at least two-thirds (2/3) of the allottees who have agreed to take apartments in that project."
+      answer: "Under Section 14 of RERA, developers cannot alter an individual apartment without written buyer consent. Changing overall building plans or common areas requires written approval from at least two-thirds of all allottees. Unilateral alterations violate the Act."
     },
     {
       id: "faq-6",
       question: "What legal actions can homebuyers take if a builder defaults on a project that is not registered with RERA?",
-      answer: "If a project is unregistered under RERA (often because it was started prior to 2017 or is smaller than 500 sq. meters/8 apartments), homebuyers are still fully protected under alternative legal frameworks. You can file: 1) A consumer complaint under the Consumer Protection Act, 2019 for 'deficiency in service' and 'unfair trade practices', 2) A civil recovery suit under Order 37 of the CPC for the recovery of liquidated booking dues, and 3) A criminal complaint for Cheating (Section 318 BNS / Section 420 IPC) and Criminal Breach of Trust (Section 316 BNS / Section 406 IPC) at the local police station if the developer gathered funds without possessing title to the land or intended to defraud."
+      answer: "Even without RERA registration, you have strong remedies. You can file a consumer complaint for deficiency in service and unfair trade practices. You can file an Order 37 CPC summary suit, or file criminal cheating complaints under Section 318 BNS / 420 IPC."
     },
     {
       id: "faq-7",
       question: "How does the Insolvency and Bankruptcy Code (IBC) help homebuyers in case of stalled real estate projects?",
-      answer: "Under the Insolvency and Bankruptcy Amendment Act, homebuyers are legally recognized as 'Financial Creditors' under Section 5(8)(f) of the IBC. This status permits allottees to initiate Corporate Insolvency Resolution Proceedings (CIRP) against a defaulting developer at the National Company Law Tribunal (NCLT). To prevent misuse, the law requires a joint petition filed by a minimum of 100 allottees or ten percent (10%) of the total allottees of the same real estate project, whichever is lower. Initiating or warning of IBC action creates severe pressure, as it threatens to strip the promoter of their company control."
+      answer: "Homebuyers are recognized as Financial Creditors under Section 5(8)(f) of the IBC. A group of 100 allottees or 10% of buyers can initiate corporate insolvency proceedings at the NCLT. This legal step threatens developer control of the company."
     },
     {
       id: "faq-8",
       question: "Is a builder legally allowed to demand extra payments for 'Super Area increase' at the time of possession?",
-      answer: "Any demand for extra payment based on an increase in the 'super area' must be supported by transparent, verifiable calculations and are highly restricted. RERA mandates that properties must be sold on the basis of 'Carpet Area' rather than vague 'super built-up area'. If the carpet area increases during construction, the developer can charge for the extra area up to a maximum of 3%, provided it is supported by amended structural plans approved by local authorities. Any unilateral increase beyond 3% without consent is invalid, and developers cannot hold physical possession hostage to extract unverified super area dues."
+      answer: "No. RERA mandates that sales must be based on clear carpet area, not super area. Builders can only charge for verified carpet area increases up to 3% with municipal approval. Demands beyond 3% without consent are unenforceable."
     },
     {
       id: "faq-9",
       question: "What are the consequences if a developer fails to comply with a RERA refund or execution order?",
-      answer: "If a developer fails to comply with a refund or interest order passed by the RERA Authority, the homebuyer can file an Execution Application under Section 40 of the RERA Act. RERA then issues an Execution Certificate, referring the matter to the local District Magistrate (Collector). The Collector is empowered to recover the amount from the builder as 'arrears of land revenue' by attaching the builder's bank accounts, seizing their physical assets, and auctioning their unsold inventories to pay the homebuyers."
+      answer: "If a developer defies a RERA order, you can file an execution application under Section 40. RERA directs the District Magistrate to recover dues as arrears of land revenue. The Collector can attach builder bank accounts and auction unsold units."
     },
     {
       id: "faq-10",
       question: "Can a builder force me to pay high maintenance charges before the Resident Welfare Association (RWA) is formed?",
-      answer: "No. Under Section 11(4)(d) of the RERA Act, the developer is solely responsible for providing and paying for all outgoings, maintenance, municipal taxes, and electricity charges until they hand over the physical maintenance of the project to the association of allottees (RWA). While the developer can collect a reasonable, pre-agreed maintenance charge during the interim period, they must maintain a separate, dedicated bank account for these funds, provide audited expense statements to the RWA, and cannot charge arbitrary, inflated commercial tariffs."
+      answer: "No. Under Section 11(4)(d) of RERA, developers must pay project outgoings until handing over maintenance to the RWA. They cannot charge arbitrary tariffs. Any interim maintenance funds must be placed in a dedicated, auditable bank account."
     }
   ], []);
 
@@ -303,7 +303,7 @@ export default function PropertyDisputesClient() {
               <span className="text-[#DC2626]">Funds Legally.</span>
             </h1>
             <p className="text-[15px] md:text-[17px] text-[#4B5563] font-medium leading-[1.6] mb-6 max-w-xl select-text">
-              Reclaim forfeited booking tokens, delayed possession interest, and project cancellation refunds. Challenge illegal super area escalations and undelivered amenities. We deploy a systematic 3-stage progressive notice campaign and a formal criminal cheating complaint draft.
+              Reclaim forfeited booking tokens, delayed possession interest, and cancellation refunds. We deploy 3 progressive advocate notices and 1 criminal complaint draft.
             </p>
 
             {/* High-Trust Tagline Banner */}
@@ -436,53 +436,53 @@ export default function PropertyDisputesClient() {
                 {/* 1. Service Overview */}
                 <h2 id="service-overview">1. Professional Property & Builder Disputes Recovery Service</h2>
                 <p>
-                  Purchasing real estate represents one of the largest financial commitments an individual will make in their lifetime. When a builder or developer fails to deliver possession of your home, illegally forfeits your hard-earned booking token, or raises arbitrary, unapproved prices, they violate their statutory duties and breach contractual law.
+                  Buying a home is one of life's largest financial investments. When a developer delays possession, forfeits booking tokens, or raises prices unfairly, they breach contractual commitments and statutory regulations.
                 </p>
                 <p>
-                  The LegalRecovery <strong className="font-extrabold text-[#111827]">Property and Builder Disputes Service</strong> is a premier legal-tech system designed to counter the asymmetric power holding of deep-pocketed developers. Real estate developers often assume individual buyers will remain quiet due to the massive delays and high expenses associated with hiring traditional lawyers. We bypass these traditional bottlenecks by offering an aggressive, systematic, and attorney-verified pre-litigation pipeline to force developers to settle your claims or return your stuck funds.
+                  Our <strong className="font-extrabold text-[#111827]">Property and Builder Disputes Service</strong> balances this power dynamic. Builders often count on buyers remaining silent due to high litigation costs. We offer a structured, attorney-verified pre-litigation process to compel developers to settle quickly.
                 </p>
                 <blockquote>
-                  <strong>Our Service Promise:</strong> We provide structured, end-to-end recovery campaigns for a single, flat fee of <strong>₹999</strong> with absolutely <strong>zero commissions</strong> taken on your recovered money. We draft, validate, and launch progressive legal notices served directly to executive directors and institutional financiers.
+                  <strong>Our Service Promise:</strong> We provide flat-fee recovery support for <strong>₹999</strong> with <strong>zero commission</strong> on recovered money. We draft, verify, and deliver firm legal notices directly to company directors and project lenders.
                 </blockquote>
                 <p>
-                  No real estate promoter - regardless of their market presence or corporate structure - is above the law. Let our platform take the burden of writing, executing, and tracking your legal claims so you can confidently recover what is rightfully yours.
+                  No real estate promoter is above the law. Let our platform draft, deliver, and track your legal notices so you can recover your hard-earned funds.
                 </p>
 
                 {/* 2. What We Help You Recover */}
-                <h2 id="coverage-details">2. What We Help You Recover</h2>
+                <h2 id="coverage-details">2. Property & Builder Dues We Help You Recover</h2>
                 <p>
-                  A real estate dispute is rarely limited to basic delays. We target the full spectrum of financial recoveries, ensuring every illegal charge and statutory interest is thoroughly claimed:
+                  Real estate disputes involve multiple financial losses. We target every unauthorized charge and statutory entitlement to maximize your recovery:
                 </p>
                 
                 <h3 id="booking-token">A. Stuck Booking Tokens & Earnest Money</h3>
                 <p>
-                  If you choose to withdraw from a project before signing a formal Builder-Buyer Agreement (BBA) due to delays, layout modifications, or broken promises, the builder cannot legally forfeit your earnest money. We demand a full return of your booking deposits, citing Supreme Court rules on unfair contract clauses.
+                  If you withdraw before signing a Builder-Buyer Agreement due to developer default, the builder cannot keep your deposit. We demand a full return of your earnest money under Supreme Court rules against unfair contract clauses.
                 </p>
 
                 <h3 id="possession-delay">B. RERA Section 18 Delayed Possession Interest</h3>
                 <p>
-                  If you choose to stay in a project that has missed its delivery timeline, you are legally entitled to receive monthly interest for every month of delay. We enforce Section 18 of the RERA Act, demanding interest computed at the State Bank of India's (SBI) highest MCLR plus 2% from the original delivery date until actual possession is handed over.
+                  When a project misses its promised delivery date, you are entitled to monthly delay interest. Under Section 18 of RERA, we demand interest at SBI MCLR plus 2% until actual possession.
                 </p>
 
                 <h3 id="full-refunds">C. Full Refunds for Project Delay or Stalling</h3>
                 <p>
-                  For projects that are indefinitely stalled, structurally compromised, or abandoned, we launch campaigns demanding a full refund of all principal amounts paid to date, along with statutory delay interest and compensation for financial loss.
+                  For stalled or abandoned projects, we demand a complete refund of all payments made. We also claim statutory interest and financial compensation for your losses.
                 </p>
 
                 <h3 id="illegal-charges">D. Unilateral Price Escalations & Extra Maintenance Dues</h3>
                 <p>
-                  Developers frequently demand arbitrary payments under headings like 'super area increase', 'holding charges', or inflated interim maintenance fees. We dismantle these demands by requesting approved structural blueprints, verifying carpet area calculations, and enforcing RERA-governed billing rules.
+                  Developers often add arbitrary charges for super area increases or inflated interim maintenance fees. We verify carpet area measurements and enforce RERA billing rules to challenge illegal demands.
                 </p>
 
                 <h3 id="amenity-deficiency">E. Amenity Breaches & Defective Construction Compensation</h3>
                 <p>
-                  If a developer delivers an apartment but fails to construct promised amenities (such as a clubhouse, swimming pool, power backup) or leaves major structural defects, we demand proportional refunds and compensation for 'deficiency in service' under the Consumer Protection Act.
+                  If a developer fails to build promised amenities like clubhouses or delivers defective work, we demand compensation for deficiency in service under consumer protection laws.
                 </p>
 
                 {/* 3. Our 3+1 Notice Strategy */}
                 <h2 id="notice-strategy">3. Our 3+1 Notice Strategy: Engineered for Maximum Pressure</h2>
                 <p>
-                  Standard court battles are notoriously slow. Developers rely on these delays to exhaust you financially. To counter this, LegalRecovery utilizes an aggressive, multi-stage digital and physical pre-litigation pipeline to bring developers to the settlement table within weeks.
+                  Court battles can move slowly, and developers often rely on delays to discourage buyers. We use a <strong className="font-extrabold text-[#111827]">3-stage notice campaign and a criminal cheating complaint draft</strong> to bring developers to the settlement table:
                 </p>
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6 my-8">
                   <div className="bg-[#F9FAFB] p-5 rounded-2xl border border-[#E5E7EB]">
@@ -491,7 +491,7 @@ export default function PropertyDisputesClient() {
                       <h4 className="font-extrabold text-[#111827] text-sm">Stage 1: Advocate Demand Notice</h4>
                     </div>
                     <p className="text-xs text-[#4B5563] leading-relaxed">
-                          We draft and serve a highly authoritative legal demand on the letterhead of a practicing real estate advocate. Sent digitally via verified email and WhatsApp, it gives the builder a strict 15-day window to resolve the claim.
+                      We serve a formal demand on a practicing advocate's letterhead. Delivered via email, WhatsApp, and speed post, it sets a firm 15-day deadline.
                     </p>
                   </div>
 
@@ -501,7 +501,7 @@ export default function PropertyDisputesClient() {
                       <h4 className="font-extrabold text-[#111827] text-sm">Stage 2: Board & Financier Escalation</h4>
                     </div>
                     <p className="text-xs text-[#4B5563] leading-relaxed">
-                      If ignored, we serve Notice 2 directly to the developer's executive board, co-promoters, and the banks or NBFCs financing the project. Escalating to lenders alerts them to legal defaults, which can restrict the developer's credit lines and cash liquidity.
+                      If ignored, we escalate directly to board directors and project financing banks. Alerting institutional lenders threatens the developer's credit lines and cash liquidity.
                     </p>
                   </div>
 
@@ -511,7 +511,7 @@ export default function PropertyDisputesClient() {
                       <h4 className="font-extrabold text-[#111827] text-sm">Stage 3: Pre-Litigation Warning Package</h4>
                     </div>
                     <p className="text-xs text-[#4B5563] leading-relaxed">
-                      We deliver a final warning package attaching ready-to-file drafts of a RERA Section 31 complaint, a Consumer Commission petition, and a warning under the Insolvency and Bankruptcy Code. This signals that our legal panel is prepared to initiate formal court proceedings.
+                      We deliver a final warning package with ready drafts for a RERA Section 31 complaint, Consumer Commission petition, and an IBC insolvency warning.
                     </p>
                   </div>
 
@@ -521,49 +521,49 @@ export default function PropertyDisputesClient() {
                       <h4 className="font-extrabold text-[#111827] text-sm">Criminal Action & Cheating Complaint Draft</h4>
                     </div>
                     <p className="text-xs text-[#4B5563] leading-relaxed">
-                      Simultaneously, we provide you with a customized criminal police complaint draft under <strong className="font-extrabold text-[#111827]">Section 318 BNS (Cheating)</strong> and <strong className="font-extrabold text-[#111827]">Section 316 BNS (Criminal Breach of Trust)</strong>. Filing this against the promoter personally creates immediate, non-bailable pressure.
+                      We provide a police complaint draft under <strong className="font-extrabold text-[#111827]">Section 318 BNS (Cheating)</strong> and <strong className="font-extrabold text-[#111827]">Section 316 BNS (Criminal Breach of Trust)</strong> to create personal accountability.
                     </p>
                   </div>
                 </div>
                 <p>
-                  By moving through these four distinct escalation stages week-by-week, we make it highly expensive, operationally disruptive, and legally risky for the promoter to continue ignoring your payments.
+                  This structured escalation makes ignoring your refunds risky and disruptive for the developer.
                 </p>
 
                 {/* 4. The Indian Statutory Shield */}
                 <h2 id="legal-framework">4. The Indian Statutory Shield: Know Your Rights</h2>
                 <p>
-                  India's legal framework provides extensive protections for property buyers. Our advocate panel leverages these specific statutory tools to build an unassailable recovery claim:
+                  Indian law provides extensive protections for property buyers. Our advocate panel leverages these statutes to recover your money:
                 </p>
                 <ul>
-                  <li><strong>The RERA Act, 2016 (Section 18):</strong> Directs that if a builder fails to deliver possession in accordance with the agreement, the buyer has the absolute right to withdraw and claim a full refund with interest (SBI MCLR + 2%) or stay and claim monthly interest for the delay.</li>
-                  <li><strong>The RERA Act, 2016 (Section 31):</strong> Empowers any aggrieved homebuyer to file a complaint with the RERA Authority or an Adjudicating Officer for any violations of the Act's rules.</li>
-                  <li><strong>The Consumer Protection Act, 2019:</strong> Categorizes project delay and construction defects as a 'deficiency in service' and 'unfair trade practice'. It allows buyers to seek compensation for mental distress, hotel/rent expenses, and litigation fees.</li>
-                  <li><strong>The Insolvency & Bankruptcy Code, 2016 (IBC):</strong> Recognizes homebuyers as <strong className="font-extrabold text-[#111827]">Financial Creditors</strong> under Section 5(8)(f). If 100 allottees or 10% of allottees in a project unite, they can initiate corporate insolvency against the builder at the NCLT.</li>
-                  <li><strong>The Bharatiya Nyaya Sanhita, 2023 (BNS):</strong> Replaces the old IPC. Section 318 (replaces Section 420 IPC) covers Cheating, and Section 316 (replaces Section 406 IPC) covers Criminal Breach of Trust, providing up to 7 years of imprisonment for fraudulent developers.</li>
-                  <li><strong>Supreme Court Jurisprudence:</strong> In *Pioneer Urban Land & Infrastructure Ltd. vs. Union of India*, the apex court upheld the status of homebuyers as financial creditors. In *Imperia Structures Ltd. vs. Anil Patni*, it held that RERA does not bar Consumer Court remedies, allowing homebuyers concurrent legal options.</li>
+                  <li><strong>The RERA Act, 2016 (Section 18):</strong> Gives buyers the right to withdraw with full refund and interest (SBI MCLR + 2%) or claim monthly delay interest.</li>
+                  <li><strong>The RERA Act, 2016 (Section 31):</strong> Enables homebuyers to file formal complaints with RERA authorities for any statutory rule violation.</li>
+                  <li><strong>The Consumer Protection Act, 2019:</strong> Classifies delivery delays as deficiency in service, granting compensation for mental harassment and legal costs.</li>
+                  <li><strong>The Insolvency & Bankruptcy Code, 2016 (IBC):</strong> Treats homebuyers as <strong className="font-extrabold text-[#111827]">Financial Creditors</strong> under Section 5(8)(f), allowing collective insolvency filings at the NCLT.</li>
+                  <li><strong>The Bharatiya Nyaya Sanhita, 2023 (BNS):</strong> Section 318 covers cheating and Section 316 covers criminal breach of trust, providing penalties for fraudulent builders.</li>
+                  <li><strong>Supreme Court Precedents:</strong> Rulings like *Pioneer Urban* and *Imperia Structures* confirm homebuyer rights as financial creditors and uphold concurrent Consumer Court remedies.</li>
                 </ul>
 
                 {/* 5. Why Online Templates Fail */}
                 <h2 id="why-online-templates-fail">5. Why Free Online Notice Templates Fail</h2>
                 <p>
-                  Many property buyers attempt to save money by copying free legal notice templates from real estate forums or blogs. However, these amateur attempts rarely produce results:
+                  Many property buyers try using free legal notice formats found on forums. These generic letters rarely produce results:
                 </p>
                 <ul>
-                  <li><strong>No Advocate Standing:</strong> Free templates do not carry the seal, signature, bar association number, and formal letterhead of a practicing real estate advocate. Developers' legal cells immediately spot these and discard them.</li>
-                  <li><strong>Outdated Statutory References:</strong> Most online formats still cite old IPC sections (like Section 420) instead of the new <strong className="font-extrabold text-[#111827]">BNS, 2023</strong> codes, or fail to mention state-specific RERA Rules which vary from Maharashtra (MahaRERA) to Karnataka (K-RERA) and Uttar Pradesh (UP-RERA).</li>
-                  <li><strong>No Strategic Target Delivery:</strong> Free notices are usually sent to a generic office address. Our system targets personal corporate email addresses of board directors, registrars, and project financing departments for immediate impact.</li>
+                  <li><strong>No Advocate Standing:</strong> Free templates lack a registered advocate's seal and official letterhead. Developer legal teams easily disregard them.</li>
+                  <li><strong>Outdated Law Citations:</strong> Online templates often cite obsolete IPC sections instead of the current <strong className="font-extrabold text-[#111827]">BNS 2023</strong> or miss state-specific RERA rules.</li>
+                  <li><strong>No Tracked Escalation:</strong> Generic letters sent to front desks get ignored. We send tracked notices directly to company directors and lending banks.</li>
                 </ul>
                 <p>
-                  LegalRecovery provides state-customized, attorney-verified legal notices equipped with digital tracking. We know when the builder's legal department opens the email, leaving them with no defense of non-receipt.
+                  LegalRecovery provides verified, customized notice campaigns. Digital read receipts ensure developers cannot claim they never received your legal demand.
                 </p>
 
                 {/* 6. Transparent Flat Pricing */}
                 <h2 id="service-pricing">6. Transparent Flat Pricing</h2>
                 <p>
-                  Traditional property lawyers charge massive upfront consultation fees, billing hourly or demanding hefty commissions (percentage cuts) on your recovered booking amounts. We believe this is exploitative to buyers who are already facing financial stress.
+                  Traditional property lawyers charge steep fees and demand percentage commissions on recovered amounts. We do not do that.
                 </p>
                 <p>
-                  LegalRecovery offers a professional, attorney-verified recovery notice campaign for a single, flat fee of <strong className="font-extrabold text-[#111827]">₹999</strong>. We charge zero commissions on your recovered money and have no hidden charges.
+                  We offer a complete, attorney-verified property recovery package for a flat fee of <strong className="font-extrabold text-[#111827]">₹999</strong>. You pay no commissions and face zero hidden charges.
                 </p>
 
                 {/* Pixel-perfect reproduction of the home page unified pricing container */}
@@ -654,14 +654,14 @@ export default function PropertyDisputesClient() {
                 {/* 7. Evidentiary Checklist */}
                 <h2 id="documentation-needed">7. The Evidentiary Checklist for Property Recoveries</h2>
                 <p>
-                  To initiate your booking token or delay interest case on our platform, you will need to gather simple, standard real estate records. Our advocate panel utilizes these documents to build a flawless case:
+                  To start your recovery, gather common property records. Our advocates will use these documents to build your claim:
                 </p>
                 <ul>
-                  <li><strong>Allotment Letter / Booking Form:</strong> Proves your initial booking, payment of token money, and tentative possession timelines.</li>
-                  <li><strong>Builder-Buyer Agreement (BBA):</strong> Details specific terms, payment plans, default clauses, and the contractually agreed possession date.</li>
-                  <li><strong>Payment Receipts & Bank Statements:</strong> Validates all payments made to the developer, confirming the transfer of funds.</li>
-                  <li><strong>Developer Communications:</strong> All emails, letters extending deadlines, demand notices for additional payments, or WhatsApp chats.</li>
-                  <li><strong>Project Photos / RERA Site Reports:</strong> Proves the physical status of construction to highlight delays or stalled progress.</li>
+                  <li><strong>Allotment Letter or Booking Form:</strong> Shows initial token payment and agreed possession dates.</li>
+                  <li><strong>Builder-Buyer Agreement (BBA):</strong> Details project milestones, payment schedules, and possession deadlines.</li>
+                  <li><strong>Payment Receipts & Bank Statements:</strong> Validates all money transferred to the developer.</li>
+                  <li><strong>Developer Communications:</strong> Emails, deadline extension letters, extra demands, or WhatsApp chats.</li>
+                  <li><strong>Site Photos or RERA Reports:</strong> Proves actual construction status to establish delays or stalled work.</li>
                 </ul>
 
               </div>

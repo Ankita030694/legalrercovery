@@ -2,8 +2,8 @@ import { Metadata } from "next";
 import UnpaidIncentivesClient from "./UnpaidIncentivesClient";
 
 export const metadata: Metadata = {
-  title: "Recover Unpaid Sales Incentives & Commissions | LegalRecovery",
-  description: "Is your employer withholding your sales commissions, performance bonuses, or accrued incentives? Learn your legal rights, notice guidelines, and recovery options under Indian law.",
+  title: "Recover Sales Incentives & Commissions | LegalRecovery",
+  description: "Employer withholding sales commissions or performance incentives? Learn your legal rights, notice guidelines, and recovery options under Indian law.",
   keywords: [
     "recover unpaid sales incentives",
     "unpaid sales commission employee rights india",

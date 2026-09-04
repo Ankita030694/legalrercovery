@@ -2,7 +2,7 @@ import { Metadata } from "next";
 import PgHostelRefundClient from "./PgHostelRefundClient";
 
 export const metadata: Metadata = {
-  title: "PG & Hostel Security Deposit Refund Legal Notice Guide | Recovery",
+  title: "PG Security Deposit Refund Legal Notice Guide | Recovery",
   description: "Struggling to recover your PG or hostel security deposit from a defaulting owner? Learn how to draft and send a legal notice under rent control laws.",
   keywords: [
     "pg security deposit refund legal notice",

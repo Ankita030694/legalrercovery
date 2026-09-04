@@ -300,7 +300,7 @@ export default function LandlordNoticeClient() {
                 {/* Section 1 */}
                 <section id="legal-notice-statutory-basis" className="scroll-mt-32">
                   <h2 className="text-xl md:text-3xl font-black text-slate-900 mb-5 border-b-2 border-[#DC2626] pb-2 inline-block">
-                    1. The Statutory Foundation: Why a Legal Notice is the Essential Prelude to Rental Recovery
+                    1. Why Demand Notices Precede Rental Recovery
                   </h2>
                   <div className="prose prose-base max-w-none text-slate-650 space-y-6 text-sm md:text-base leading-relaxed">
                     <p>
@@ -324,7 +324,7 @@ export default function LandlordNoticeClient() {
                 {/* Section 2 */}
                 <section id="essential-elements-drafting" className="scroll-mt-32">
                   <h2 className="text-xl md:text-3xl font-black text-slate-900 mb-5 border-b-2 border-[#DC2626] pb-2 inline-block">
-                    2. Drafting Checklist: Non-Negotiable Elements of a Valid Rental Refund Notice
+                    2. Essential Clauses in a Rental Refund Notice
                   </h2>
                   <div className="prose prose-base max-w-none text-slate-650 space-y-6 text-sm md:text-base leading-relaxed">
                     <p>
@@ -359,7 +359,7 @@ export default function LandlordNoticeClient() {
                 {/* Section 3 */}
                 <section id="advocate-vs-diy-notices" className="scroll-mt-32">
                   <h2 className="text-xl md:text-3xl font-black text-slate-900 mb-5 border-b-2 border-[#DC2626] pb-2 inline-block">
-                    3. Advocate Letterhead vs. Self-Sent Demands: Strategic and Legal Advantages
+                    3. Advocate Letterhead vs Personal Demands
                   </h2>
                   <div className="prose prose-base max-w-none text-slate-650 space-y-6 text-sm md:text-base leading-relaxed">
                     <p>
@@ -423,7 +423,7 @@ export default function LandlordNoticeClient() {
                 {/* Section 5 */}
                 <section id="landlord-defense-evaluation" className="scroll-mt-32">
                   <h2 className="text-xl md:text-3xl font-black text-slate-900 mb-5 border-b-2 border-[#DC2626] pb-2 inline-block">
-                    5. Countering Landlord Defenses: Repainting Charges and Wear and Tear Objections
+                    5. Countering Wear &amp; Tear Repainting Claims
                   </h2>
                   <div className="prose prose-base max-w-none text-slate-650 space-y-6 text-sm md:text-base leading-relaxed">
                     <p>
@@ -447,7 +447,7 @@ export default function LandlordNoticeClient() {
                 {/* Section 6 */}
                 <section id="lock-in-and-termination-disputes" className="scroll-mt-32">
                   <h2 className="text-xl md:text-3xl font-black text-slate-900 mb-5 border-b-2 border-[#DC2626] pb-2 inline-block">
-                    6. Lock-In and Notice Period Penalties: Evidentiary Defenses for Tenants
+                    6. Lock-In Clauses &amp; Notice Period Penalties
                   </h2>
                   <div className="prose prose-base max-w-none text-slate-650 space-y-6 text-sm md:text-base leading-relaxed">
                     <p>
@@ -468,7 +468,7 @@ export default function LandlordNoticeClient() {
                 {/* Section 7 */}
                 <section id="post-notice-escalation-options" className="scroll-mt-32">
                   <h2 className="text-xl md:text-3xl font-black text-slate-900 mb-5 border-b-2 border-[#DC2626] pb-2 inline-block">
-                    7. Post-Notice Judicial Routes: Choosing Between Rent Tribunals and Order 37 Suits
+                    7. Rent Tribunals vs Order 37 Summary Suits
                   </h2>
                   <div className="prose prose-base max-w-none text-slate-650 space-y-6 text-sm md:text-base leading-relaxed">
                     <p>
@@ -517,7 +517,7 @@ export default function LandlordNoticeClient() {
                 {/* Section 8 */}
                 <section id="legalrecovery-notice-workflow" className="scroll-mt-32">
                   <h2 className="text-xl md:text-3xl font-black text-slate-900 mb-5 border-b-2 border-[#DC2626] pb-2 inline-block">
-                    8. Automated Legal Recovery: How LegalRecovery Powers Rental Deposit Notice Dispatches
+                    8. Rapid Rental Deposit Notice Dispatches
                   </h2>
                   <div className="prose prose-base max-w-none text-slate-650 space-y-6 text-sm md:text-base leading-relaxed">
                     <p>

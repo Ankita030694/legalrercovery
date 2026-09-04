@@ -2,8 +2,8 @@ import { Metadata } from "next";
 import VendorPaymentsClient from "./VendorPaymentsClient";
 
 export const metadata: Metadata = {
-  title: "Recover Unpaid Vendor Payments & Supply Chain Dues | LegalRecovery",
-  description: "Struggling to recover unpaid vendor payments, raw material supplier dues, or corporate procurement debts in India? Learn about MSMED Act claims, Summary Suits (Order 37 CPC), and legal notice procedures.",
+  title: "Recover Unpaid Vendor Payments & Dues | LegalRecovery",
+  description: "Recover unpaid vendor payments and supplier debts in India. Learn about MSMED Act claims, Order 37 summary suits, and legal notice procedures.",
   keywords: [
     "recover unpaid vendor payments India",
     "vendor debt recovery legal notice",

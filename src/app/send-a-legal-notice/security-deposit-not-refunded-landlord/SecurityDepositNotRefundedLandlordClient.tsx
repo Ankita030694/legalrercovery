@@ -307,15 +307,48 @@ export default function SecurityDepositNotRefundedLandlordClient() {
                   {/* Share Buttons */}
                   <div className="flex items-center gap-2">
                     <span className="text-xs font-semibold text-slate-400 uppercase tracking-wider mr-2">Share:</span>
-                    <a href="https://twitter.com/intent/tweet?url=https%3A%2F%2Flegalrecovery.in%2Fsend-a-legal-notice%2Fsecurity-deposit-not-refunded-landlord&text=Recover%20unrefunded%20commercial%20and%20residential%20security%20deposits%20from%20landlords%20with%20a%20statutory%20legal%20notice!%20%23SecurityDeposit%20%23TenantRights" target="_blank" rel="noopener noreferrer" className="w-8 h-8 rounded-full bg-black text-white hover:opacity-80 flex items-center justify-center transition-opacity" aria-label="Share on X (Twitter)">
+                    <button
+                      type="button"
+                      onClick={() =>
+                        window.open(
+                          'https://twitter.com/intent/tweet?url=https%3A%2F%2Flegalrecovery.in%2Fsend-a-legal-notice%2Fsecurity-deposit-not-refunded-landlord&text=Recover%20unrefunded%20commercial%20and%20residential%20security%20deposits%20from%20landlords%20with%20a%20statutory%20legal%20notice!%20%23SecurityDeposit%20%23TenantRights',
+                          '_blank',
+                          'noopener,noreferrer,width=600,height=400'
+                        )
+                      }
+                      className="w-8 h-8 rounded-full bg-black text-white hover:opacity-80 flex items-center justify-center transition-opacity cursor-pointer"
+                      aria-label="Share on X (Twitter)"
+                    >
                       <svg className="w-4 h-4 fill-current" viewBox="0 0 24 24"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
-                    </a>
-                    <a href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Flegalrecovery.in%2Fsend-a-legal-notice%2Fsecurity-deposit-not-refunded-landlord" target="_blank" rel="noopener noreferrer" className="w-8 h-8 rounded-full bg-[#1877F2] text-white hover:opacity-80 flex items-center justify-center transition-opacity" aria-label="Share on Facebook">
+                    </button>
+                    <button
+                      type="button"
+                      onClick={() =>
+                        window.open(
+                          'https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Flegalrecovery.in%2Fsend-a-legal-notice%2Fsecurity-deposit-not-refunded-landlord',
+                          '_blank',
+                          'noopener,noreferrer,width=600,height=400'
+                        )
+                      }
+                      className="w-8 h-8 rounded-full bg-[#1877F2] text-white hover:opacity-80 flex items-center justify-center transition-opacity cursor-pointer"
+                      aria-label="Share on Facebook"
+                    >
                       <svg className="w-4 h-4 fill-current" viewBox="0 0 24 24"><path d="M9.198 21.5h4v-8.01h3.604l.396-3.98h-4V7.5a1 1 0 0 1 1-1h3v-4h-3a5 5 0 0 0-5 5v2.01h-2l-.396 3.98h2.396v8.01z"/></svg>
-                    </a>
-                    <a href="https://www.linkedin.com/shareArticle?mini=true&url=https%3A%2F%2Flegalrecovery.in%2Fsend-a-legal-notice%2Fsecurity-deposit-not-refunded-landlord&title=Legal%20Notice%20to%20Landlord%20for%20Not%20Giving%20Back%20Security%20Deposit" target="_blank" rel="noopener noreferrer" className="w-8 h-8 rounded-full bg-[#0A66C2] text-white hover:opacity-80 flex items-center justify-center transition-opacity" aria-label="Share on LinkedIn">
+                    </button>
+                    <button
+                      type="button"
+                      onClick={() =>
+                        window.open(
+                          'https://www.linkedin.com/shareArticle?mini=true&url=https%3A%2F%2Flegalrecovery.in%2Fsend-a-legal-notice%2Fsecurity-deposit-not-refunded-landlord&title=Legal%20Notice%20to%20Landlord%20for%20Not%20Giving%20Back%20Security%20Deposit',
+                          '_blank',
+                          'noopener,noreferrer,width=600,height=400'
+                        )
+                      }
+                      className="w-8 h-8 rounded-full bg-[#0A66C2] text-white hover:opacity-80 flex items-center justify-center transition-opacity cursor-pointer"
+                      aria-label="Share on LinkedIn"
+                    >
                       <svg className="w-4 h-4 fill-current" viewBox="0 0 24 24"><path d="M4.98 3.5c0 1.381-1.11 2.5-2.48 2.5s-2.48-1.119-2.48-2.5c0-1.38 1.11-2.5 2.48-2.5s2.48 1.12 2.48 2.5zm.02 4.5h-5v16h5v-16zm7.982 0h-4.968v16h4.969v-8.399c0-4.67 6.029-5.052 6.029 0v8.399h4.988v-10.131c0-7.88-8.922-7.593-11.018-3.714v-2.155z"/></svg>
-                    </a>
+                    </button>
                   </div>
                 </div>
 
@@ -690,8 +723,8 @@ export default function SecurityDepositNotRefundedLandlordClient() {
                 </section>
 
                 <div className="pt-8 border-t border-slate-100">
-                  <p className="text-xs text-slate-400">
-                    References: [1] <a href="https://www.indiacode.nic.in/handle/123456789/2338" target="_blank" rel="noopener noreferrer" className="text-purple-600 hover:text-purple-800 hover:underline">Transfer of Property Act, 1882 (Section 108 Rights and Liabilities of Lessor and Lessee)</a>. [2] <a href="https://www.indiacode.nic.in/handle/123456789/2187" target="_blank" rel="noopener noreferrer" className="text-purple-600 hover:text-purple-800 hover:underline">Indian Contract Act, 1872 (Section 73 Compensation for Loss or Damage &amp; Section 74 Penalty Clauses)</a>. [3] <a href="https://mohua.gov.in/upload/uploadfiles/files/Model_Tenancy_Act_English.pdf" target="_blank" rel="noopener noreferrer" className="text-purple-600 hover:text-purple-800 hover:underline">Ministry of Housing and Urban Affairs Model Tenancy Act, 2021</a>. [4] <a href="https://www.indiacode.nic.in/handle/123456789/2157" target="_blank" rel="noopener noreferrer" className="text-purple-600 hover:text-purple-800 hover:underline">Commercial Courts Act, 2015 (Pre-Institution Mediation and Settlement under Section 12A)</a>. [5] <a href="https://main.sci.gov.in/" target="_blank" rel="noopener noreferrer" className="text-purple-600 hover:text-purple-800 hover:underline">Supreme Court of India (Kailash Nath Associates v. DDA &amp; Maula Bux v. Union of India on Contractual Forfeiture)</a>. [6] <a href="https://ncdrc.nic.in/" target="_blank" rel="noopener noreferrer" className="text-purple-600 hover:text-purple-800 hover:underline">National Consumer Disputes Redressal Commission (Tenancy Security Deposit Deficiency Jurisprudence)</a>.
+                  <p className="text-xs text-slate-500">
+                    <span className="font-semibold text-slate-700">References:</span> [1] Transfer of Property Act, 1882 (Section 108 Rights and Liabilities of Lessor and Lessee) • [2] Indian Contract Act, 1872 (Section 73 Compensation for Loss or Damage &amp; Section 74 Penalty Clauses) • [3] Ministry of Housing and Urban Affairs Model Tenancy Act, 2021 • [4] Commercial Courts Act, 2015 (Pre-Institution Mediation and Settlement under Section 12A) • [5] Supreme Court of India (Kailash Nath Associates v. DDA &amp; Maula Bux v. Union of India) • [6] National Consumer Disputes Redressal Commission (Tenancy Security Deposit Deficiency Jurisprudence).
                   </p>
                 </div>
               </div>

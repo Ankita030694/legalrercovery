@@ -223,7 +223,7 @@ export default function FlatBookingCancellationRefundClient() {
   };
 
   const tocSections = [
-    { id: "cancellation-context", title: "Overview & Context" },
+    { id: "cancellation-context", title: "Flat Booking Cancellation: Overview & Legal Context" },
     { id: "voluntary-vs-involuntary", title: "Voluntary vs. Involuntary" },
     { id: "refund-forfeiture-rules", title: "Forfeiture Rules" },
     { id: "rera-cancellation-guidelines", title: "RERA Guidelines" },
@@ -328,7 +328,7 @@ export default function FlatBookingCancellationRefundClient() {
                 
                 {/* Section 1: Overview & Context */}
                 <section id="cancellation-context" className="scroll-mt-32">
-                  <h2 className="text-xl md:text-3xl font-black text-slate-900 mb-5 border-b-2 border-[#DC2626] pb-2 inline-block">Overview &amp; Context</h2>
+                  <h2 className="text-xl md:text-3xl font-black text-slate-900 mb-5 border-b-2 border-[#DC2626] pb-2 inline-block">Flat Booking Cancellation: Overview &amp; Legal Context</h2>
                   <div className="prose prose-base max-w-none text-slate-650 space-y-6">
                     <p className="text-sm md:text-base leading-relaxed">
                       Purchasing a residential flat or apartment represents a major milestone for home buyers in India. The transaction typically begins with the selection of a property, followed by paying a substantial booking amount to reserve the unit. Under normal circumstances, this booking amount leads to the execution of a formal Builder-Buyer Agreement (BBA) and subsequent construction progress. However, a significant percentage of property bookings end in cancellation due to developer delays, changes in building plans, or personal financial crises. In such scenarios, developers routinely attempt to withhold the initial booking deposit, claiming that the booking amount is entirely non-refundable.

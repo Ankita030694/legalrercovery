@@ -484,7 +484,7 @@ export default function UnauthorizedBankDeductionClient() {
                       <div className="p-6 bg-slate-50 rounded-2xl border border-slate-200">
                         <h3 className="text-lg font-bold text-slate-900 mb-2">2. The RBI Integrated Ombudsman Scheme, 2021</h3>
                         <p className="text-sm text-slate-650 leading-relaxed mb-3">
-                          If the bank does not respond or rejects your claim, you can file a complaint with the RBI Integrated Ombudsman via the online Complaint Management System (CMS) at <Link href="https://cms.rbi.org.in" target="_blank" className="text-[#DC2626] underline font-medium">cms.rbi.org.in</Link>. The Ombudsman reviews the dispute under the RBI guidelines. If the bank is found to have violated the customer protection circular, the Ombudsman can direct a full refund and award compensation up to ₹20 Lakhs for direct losses, plus up to ₹1 Lakh for mental harassment.
+                          If the bank does not respond or rejects your claim, you can file a complaint with the RBI Integrated Ombudsman via the online Complaint Management System (CMS) at <Link href="https://cms.rbi.org.in" target="_blank" rel="noopener noreferrer" className="text-[#DC2626] underline font-medium">cms.rbi.org.in</Link>. The Ombudsman reviews the dispute under the RBI guidelines. If the bank is found to have violated the customer protection circular, the Ombudsman can direct a full refund and award compensation up to ₹20 Lakhs for direct losses, plus up to ₹1 Lakh for mental harassment.
                         </p>
                       </div>
 

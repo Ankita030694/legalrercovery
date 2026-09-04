@@ -301,7 +301,7 @@ export default function FreelancerMSMEClient() {
                 {/* Section 1 */}
                 <section id="msmed-act-legislative-framework" className="scroll-mt-32">
                   <h2 className="text-xl md:text-3xl font-black text-slate-900 mb-5 border-b-2 border-[#DC2626] pb-2 inline-block">
-                    1. The Statutory Shield: Understanding the MSMED Act, 2006 for Independent Contractors
+                    1. MSMED Act, 2006 for Independent Freelancers
                   </h2>
                   <div className="prose prose-base max-w-none text-slate-650 space-y-6 text-sm md:text-base leading-relaxed">
                     <p>
@@ -367,7 +367,7 @@ export default function FreelancerMSMEClient() {
                 {/* Section 4 */}
                 <section id="section-16-compound-interest" className="scroll-mt-32">
                   <h2 className="text-xl md:text-3xl font-black text-slate-900 mb-5 border-b-2 border-[#DC2626] pb-2 inline-block">
-                    4. Punitive Interest Penalties: Section 16 Interest at Three Times RBI Rate
+                    4. Section 16 Penalties: 3x RBI Interest Rate
                   </h2>
                   <div className="prose prose-base max-w-none text-slate-650 space-y-6 text-sm md:text-base leading-relaxed">
                     <p>
@@ -457,7 +457,7 @@ export default function FreelancerMSMEClient() {
                 {/* Section 6 */}
                 <section id="msefc-conciliation-and-arbitration" className="scroll-mt-32">
                   <h2 className="text-xl md:text-3xl font-black text-slate-900 mb-5 border-b-2 border-[#DC2626] pb-2 inline-block">
-                    6. The MSEFC Tribunal: Navigating Conciliation and Arbitration Proceedings
+                    6. MSEFC Conciliation &amp; Arbitration Proceedings
                   </h2>
                   <div className="prose prose-base max-w-none text-slate-650 space-y-6 text-sm md:text-base leading-relaxed">
                     <p>
@@ -503,7 +503,7 @@ export default function FreelancerMSMEClient() {
                 {/* Section 7 */}
                 <section id="section-19-appeal-restrictions" className="scroll-mt-32">
                   <h2 className="text-xl md:text-3xl font-black text-slate-900 mb-5 border-b-2 border-[#DC2626] pb-2 inline-block">
-                    7. Defeating Buyer Evasion: Section 19 and the 75% Deposit Requirement
+                    7. Section 19: 75% Deposit Rule for Appeals
                   </h2>
                   <div className="prose prose-base max-w-none text-slate-650 space-y-6 text-sm md:text-base leading-relaxed">
                     <p>
@@ -524,7 +524,7 @@ export default function FreelancerMSMEClient() {
                 {/* Section 8 */}
                 <section id="legalrecovery-msme-integration" className="scroll-mt-32">
                   <h2 className="text-xl md:text-3xl font-black text-slate-900 mb-5 border-b-2 border-[#DC2626] pb-2 inline-block">
-                    8. Maximizing MSME Recovery: How LegalRecovery Simplifies Facilitation Claims
+                    8. Fast MSME Recovery with LegalRecovery
                   </h2>
                   <div className="prose prose-base max-w-none text-slate-650 space-y-6 text-sm md:text-base leading-relaxed">
                     <p>

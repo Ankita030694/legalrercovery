@@ -2,8 +2,8 @@ import { Metadata } from "next";
 import FriendlyLoanClient from "./FriendlyLoanClient";
 
 export const metadata: Metadata = {
-  title: "Recovery of Loan Amount Given to Friend | Recover Money Lent Without Agreement | LegalRecovery",
-  description: "Struggling to recover a personal loan given to a friend, relative, or acquaintance? LegalRecovery helps you recover money lent on trust through legal notices, promissory note enforcement, summary suits, and cheque bounce cases under Section 138 NI Act.",
+  title: "Recover Loan Amount Given to a Friend | LegalRecovery",
+  description: "Struggling to recover a loan given to a friend? LegalRecovery helps recover money through legal notices, summary suits, and Section 138 NI Act actions.",
   keywords: [
     "recover loan given to friend",
     "recovery of money lent to friend India",

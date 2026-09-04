@@ -5,7 +5,7 @@ const slug = 'send-a-legal-notice/gym-yoga-club-membership-fee-refund';
 const title = 'Legal Notice to Gym, Yoga & Fitness Club for Membership Fee Refund | Legal Recovery India';
 const description =
   'Gym, yoga studio, or fitness club refusing advance membership fee refund? Send an advocate-vetted statutory legal notice for unfair contract terms, deficiency in service, or abrupt closure under Consumer Protection Act 2019 & Indian Contract Act.';
-const url = `https://legalrecovery.in/${slug}`;
+const url = `https://www.legalrecovery.in/${slug}`;
 const ogImage = `/images/og/gym-yoga-club-membership-fee-refund.jpg`;
 
 export const metadata: Metadata = {

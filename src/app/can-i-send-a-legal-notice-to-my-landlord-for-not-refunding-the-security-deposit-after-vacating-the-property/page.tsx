@@ -2,7 +2,7 @@ import { Metadata } from "next";
 import LandlordNoticeClient from "./LandlordNoticeClient";
 
 export const metadata: Metadata = {
-  title: "Can I Send a Legal Notice to My Landlord for Security Deposit?",
+  title: "Can I Send a Legal Notice to Landlord for Deposit?",
   description: "A comprehensive guide on sending a legal notice to your landlord in India for withholding your rental security deposit after vacating the property.",
   keywords: [
     "send legal notice to landlord security deposit",

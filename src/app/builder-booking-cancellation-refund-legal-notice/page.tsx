@@ -2,8 +2,8 @@ import { Metadata } from "next";
 import BuilderBookingCancellationRefundClient from "./BuilderBookingCancellationRefundClient";
 
 export const metadata: Metadata = {
-  title: "Flat Booking Cancellation: Recover Token Money Refund from Builder",
-  description: "Learn how to recover token money after a flat booking cancellation. Serve a legal notice to the builder for booking amount refund under RERA guidelines and contract rules.",
+  title: "Flat Booking Cancellation: Recover Refund from Builder",
+  description: "Recover token money after flat booking cancellation. Serve a legal notice to the builder for booking refunds under RERA guidelines and contract law.",
   keywords: [
     "flat booking cancellation refund rules",
     "legal notice to builder for token money refund",

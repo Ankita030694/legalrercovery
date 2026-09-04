@@ -2,8 +2,8 @@ import { Metadata } from "next";
 import AirlineRefundClient from "./AirlineRefundClient";
 
 export const metadata: Metadata = {
-  title: "Airline Refund Amount Recovery: Force Vouchers vs Cash Refund | DGCA Rules | LegalRecovery",
-  description: "Struggling to get your airline ticket refund in India? Learn your legal rights under DGCA CAR rules and Carriage by Air Act. Get expert legal representation to recover your withheld refund.",
+  title: "Airline Refund Amount Recovery in India | LegalRecovery",
+  description: "Struggling to get your airline ticket refund in India? Learn your legal rights under DGCA CAR rules and get expert assistance to recover withheld dues.",
   keywords: [
     "airline refund amount recovery",
     "DGCA flight cancellation refund rules",

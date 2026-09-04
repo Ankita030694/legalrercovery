@@ -2,8 +2,8 @@ import { Metadata } from "next";
 import InteriorDesignerRefundClient from "./InteriorDesignerRefundClient";
 
 export const metadata: Metadata = {
-  title: "Legal Notice to Interior Designer or Renovation Contractor for Incomplete Work",
-  description: "Learn how to send a legal notice to interior designer for incomplete work. Recover advance payments and claim damages for abandoned or delayed home renovation disputes.",
+  title: "Legal Notice to Interior Designer for Incomplete Work",
+  description: "Send a legal notice to an interior designer for incomplete work. Recover advance payments and claim damages for delayed home renovations in India.",
   keywords: [
     "legal notice to interior designer for incomplete work",
     "recover money from defaulting interior contractor",

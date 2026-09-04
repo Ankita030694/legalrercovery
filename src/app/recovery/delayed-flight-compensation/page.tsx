@@ -2,8 +2,8 @@ import { Metadata } from "next";
 import DelayedFlightClient from "./DelayedFlightClient";
 
 export const metadata: Metadata = {
-  title: "Delayed Flight Compensation India: Recover Compensation under DGCA Rules | LegalRecovery",
-  description: "Struggling to claim compensation for a delayed flight in India? Learn your rights under DGCA CAR Section 3, the Montreal Convention, and Consumer Protection Act. Get expert legal representation to recover dues.",
+  title: "Delayed Flight Compensation in India | LegalRecovery",
+  description: "Struggling to claim delayed flight compensation in India? Learn your rights under DGCA CAR Section 3 and get expert legal help to recover dues.",
   keywords: [
     "delayed flight compensation India",
     "DGCA flight delay rules",

@@ -3,7 +3,7 @@ import WrongDamagedProductClient from "./WrongDamagedProductClient";
 
 export const metadata: Metadata = {
   title: "Legal Notice for Wrong or Damaged Product Delivery | Refund",
-  description: "Receive a wrong, counterfeit, or damaged item? Learn how to serve a legal notice to e-commerce sellers and retailers for product replacement or refund in India.",
+  description: "Received a wrong, fake, or damaged item? Learn how to serve a legal notice to sellers and retailers for product replacement or a full refund in India.",
   keywords: [
     "legal notice to seller for wrong product delivery",
     "damaged item received e commerce refund",

@@ -78,7 +78,7 @@ export default function FreelancerRecoveryClient() {
   // Table of Contents sections
   const tocSections = useMemo(() => [
     { id: "service-overview", title: "1. Service Overview" },
-    { id: "coverage-details", title: "2. What We Help You Recover" },
+    { id: "coverage-details", title: "2. Freelancer & Client Dues We Help You Recover" },
     { id: "notice-strategy", title: "3. Our 3+1 Notice Strategy" },
     { id: "legal-framework", title: "4. The Indian Statutory Shield" },
     { id: "why-online-templates-fail", title: "5. Why Online Templates Fail" },
@@ -88,57 +88,57 @@ export default function FreelancerRecoveryClient() {
     { id: "reviews", title: "9. Client Testimonials" }
   ], []);
 
-  // FAQs List (10 comprehensive, detailed Q&As)
+  // FAQs List (10 comprehensive, detailed Q&As rewritten for high readability)
   const faqs: FAQ[] = useMemo(() => [
     {
       id: "faq-1",
       question: "What is the limitation period to file a legal suit for recovering unpaid freelancer or client payments in India?",
-      answer: "Under the Limitation Act, 1963, the limitation period to file a civil recovery suit (including summary suits under Order 37 of the CPC) for recovering unpaid freelance payments or outstanding client invoices is three (3) years. This three-year clock begins ticking from the exact 'date of default' - which is typically the due date specified on the tax invoice, the date of project delivery, or the date the client formally refused to clear the payment. If a client sends a written email or chat acknowledging the pending debt, the limitation period resets for another three years under Section 18 of the Limitation Act."
+      answer: "Under the Limitation Act 1963, you have three years to file a recovery suit. The limitation period starts from the default date or invoice due date. Any written email acknowledging the debt resets the three-year clock under Section 18."
     },
     {
       id: "faq-2",
       question: "Are email trails, Slack messages, or WhatsApp chats legally binding contracts for freelancers?",
-      answer: "Yes, absolutely. Under Section 10 and Section 10A of the Indian Contract Act, 1872, and the Information Technology Act, 2000, electronic contracts and communications are fully recognized as valid and legally binding agreements. A signed paper contract is not mandatory. If you have an email exchange, a Slack conversation, or a WhatsApp chat where a client explicitly offered a project, defined a price or milestone rate, and you accepted the work and delivered it, it constitutes a binding contract. These electronic records are admissible as primary evidence under Section 65B of the Indian Evidence Act."
+      answer: "Yes. Section 10A of the Indian Contract Act 1872 recognizes electronic contracts. Written agreements on Slack, email, or WhatsApp form a binding contract. You can use these chats as primary evidence in court under electronic record rules."
     },
     {
       id: "faq-3",
       question: "What is MSME Samadhaan, and can a freelance designer, developer, or consultant use it?",
-      answer: "Yes. Freelance professionals, agency owners, and independent consultants can leverage the highly effective MSME Samadhaan portal, provided they have a valid Udyam Registration (which is a free, quick online registration under the Micro, Small, and Medium Enterprises Development Act, 2006). Registered MSMEs are protected under the MSMED Act, which mandates that buyers must clear payments within forty-five (45) days of accepting goods or services. Defaults allow the MSME to file a complaint on the Samadhaan portal to recover the principal amount along with compound interest at three (3) times the RBI bank rate."
+      answer: "Yes. Freelancers with a free Udyam registration qualify as micro or small enterprises. Under the MSMED Act 2006, clients must pay within 45 days. If they default, you can claim compound interest at three times the RBI bank rate."
     },
     {
       id: "faq-4",
       question: "Can a client legally use my work (designs, code, content) if they refuse to clear my final invoice?",
-      answer: "No. Under Section 19 and 19A of the Indian Copyright Act, 1957, the intellectual property rights, copyright, and ownership of any creative work (including software code, website designs, articles, video edits, and graphics) only transfer to the client upon the actual fulfillment of the agreed contract conditions - which includes full payment of the invoice. If a client uses, hosts, or publishes your work without clearing your final bill, they are committing a direct copyright infringement under Section 51, making them liable to civil injunctions, damages, and criminal penalties under Section 63."
+      answer: "No. Under the Indian Copyright Act 1957, intellectual property transfers only after full payment. Using unpaid designs, code, or content without clearing your invoice constitutes copyright infringement. You can demand immediate removal and statutory damages."
     },
     {
       id: "faq-5",
       question: "What is a Summary Suit under Order 37 CPC, and how does it benefit freelancers?",
-      answer: "A Summary Suit filed under Order 37 of the Code of Civil Procedure, 1908, is a highly effective, fast-track civil remedy designed specifically for recovering liquidated debts arising from written contracts, signed invoices, bills of exchange, or cheques. Unlike a regular civil suit which can take years, a summary suit prevents the defaulting client from delaying the case. The defendant does not have an automatic right to defend; they must apply for 'leave to defend' within 10 days of the summons, establishing a genuine defense. If the court finds their defense frivolous or a delaying tactic, it passes a recovery decree immediately."
+      answer: "Order 37 CPC provides a fast-track civil court process for unpaid invoices. Defending clients cannot drag out proceedings with false claims. They must apply for leave to defend within 10 days, or the court awards you a summary decree."
     },
     {
       id: "faq-6",
       question: "What should I do if a client's cheque for milestone payment bounces?",
-      answer: "A cheque bounce is a serious criminal offense in India under Section 138 of the Negotiable Instruments Act, 1881. If a client's cheque bounces due to 'insufficient funds' or 'stop payment', you must: 1) Obtain the cheque return memo from your bank, 2) Serve a formal, advocate-backed legal notice demanding payment within fifteen (15) days of receiving the notice, and 3) If they fail to pay within those 15 days, file a criminal complaint before the Metropolitan Magistrate Court within thirty (30) days from the expiry of the notice period. The offense attracts a penalty of up to double the cheque amount, or imprisonment for up to two years, or both."
+      answer: "A bounced cheque is a criminal offence under Section 138 of the Negotiable Instruments Act. You must send an advocate notice within 30 days of the bounce memo. If the client fails to pay within 15 days, you can file a criminal case."
     },
     {
       id: "faq-7",
       question: "Can I recover payments from international clients based outside India?",
-      answer: "Yes, you can recover dues from international clients, though the procedural steps are slightly different. First, we send a formal legal notice via digital channels (registered email with read-tracking, WhatsApp, Slack) to their overseas office. International businesses are highly sensitive to legal compliance, brand damage, and copyright infringement notices. If they ignore the notice, we can file a complaint with international dispute bodies, report the intellectual property violation to their hosting providers (DMCA takedown), or initiate legal arbitration if your contract contains an international arbitration clause."
+      answer: "Yes. We send legal notices through registered digital channels to their overseas office. International companies want to protect their brand and avoid copyright infringement claims. We can also file DMCA takedowns if they use your work without payment."
     },
     {
       id: "faq-8",
       question: "What is 'Scope Creep', and how do I legally recover payments for unapproved extra work?",
-      answer: "Scope creep refers to a situation where a client demands additional features, revisions, or tasks that are beyond the originally agreed Statement of Work (SOW). Legally, you can recover payment for extra work if you have a written trail (emails, chats) where: 1) You notified the client that the requested work was outside the original scope, 2) You provided a price estimate or rate for the extra work, and 3) The client explicitly or implicitly authorized you to proceed. In the absence of an SLA, courts rely on the doctrine of *Quantum Meruit* (as much as earned) under Section 70 of the Contract Act to award reasonable compensation."
+      answer: "Scope creep happens when clients request extra tasks outside the original contract. You can recover payment if you have written messages confirming the extra scope. Under Section 70 of the Contract Act, courts award reasonable compensation for completed work."
     },
     {
       id: "faq-9",
       question: "How long does a legal notice take to show results in client payment disputes?",
-      answer: "In approximately 80% of freelancer and client payment disputes, a formal, advocate-signed legal notice yields results within the specified 15-day notice window. Most corporate clients, tech startups, and design agencies prefer to avoid the public exposure, brand damage, and operational disruption of an MSME Samadhaan dispute, a copyright infringement case, or a summary recovery suit. Typically, they initiate a settlement discussion or release the outstanding invoice amount immediately upon receiving the advocate notice."
+      answer: "About 80% of client payment disputes settle within the 15-day notice window. Businesses prefer to avoid public MSME disputes, court lawsuits, and copyright claims. Most clients clear the invoice or offer a settlement schedule quickly."
     },
     {
       id: "faq-10",
       question: "What criminal actions can a freelancer take against a client who fraudulently refuses to pay?",
-      answer: "If a client hires a freelancer with the clear, pre-planned fraudulent intention of not paying (e.g., locking you out of servers, deleting communications, or ghosting after downloading files), you can initiate criminal proceedings: 1) File a criminal complaint for Cheating (Section 420 IPC) and Criminal Breach of Trust (Section 405/406 IPC) at your local police station, and 2) File a complaint for dishonest misappropriation of property. We provide a meticulously compiled criminal police complaint draft in our Stage 4 package to create heavy non-bailable pressure on corporate directors."
+      answer: "If a client hired you with dishonest intent, you can take criminal action. You can file a police complaint for cheating (Section 420 IPC) and criminal breach of trust (Section 405/406 IPC). This creates personal accountability for company directors."
     }
   ], []);
 
@@ -301,7 +301,7 @@ export default function FreelancerRecoveryClient() {
               <span className="text-[#DC2626]">Recover It Legally.</span>
             </h1>
             <p className="text-[15px] md:text-[17px] text-[#4B5563] font-medium leading-[1.6] mb-6 max-w-xl select-text">
-              Reclaim stuck freelance milestone payments, recover outstanding retainer fees, settle scope creep/revision overcharges, and stop the unauthorized usage of your designs or code. We serve 3 advocate-signed notices and provide 1 formal police complaint draft.
+              Reclaim unpaid milestone payments, retainer fees, and scope creep dues. Stop unauthorized use of your work with 3 advocate notices and 1 police complaint draft.
             </p>
 
             {/* High-Trust Tagline Banner */}
@@ -434,56 +434,56 @@ export default function FreelancerRecoveryClient() {
                 {/* 1. Service Overview */}
                 <h2 id="service-overview">1. Professional Freelancer & Client Payments Recovery Service</h2>
                 <p>
-                  Freelance consulting, creative design, software development, and professional services form the backbone of the modern digital economy. However, as an independent creator, developer, or agency, you face a chronic, systemic threat: non-payment of invoices. The freelance landscape in India is heavily marked by corporate asymmetry, where clients and middleman agencies count on freelancers quietly absorbing losses due to the high cost, stress, and complexity of traditional legal systems.
+                  Freelance professionals, designers, developers, and consultants power the modern digital economy. Yet independent creators often face delayed client payments and ignored invoices. Many clients count on freelancers abandoning dues because of high legal costs.
                 </p>
                 <p>
-                  Many <strong className="font-extrabold text-[#111827]">freelancers</strong> suffer from "ghosting" - where a client stops responding to emails, Slack threads, or calls once the deliverables have been handed over. In other cases, clients withhold final milestones under the pretext of endless revisions (scope creep), use your unapproved draft assets on production environments without clearing invoices, or abruptly cancel monthly retainer agreements in direct breach of contract terms.
+                  Clients frequently stop replying once they receive the final deliverables. Others demand endless revisions or use draft work in production without paying. Some clients cancel contracts abruptly, violating agreed notice terms.
                 </p>
                 <p>
-                  The LegalRecovery <strong className="font-extrabold text-[#111827]">Freelancer and Client Payments Recovery Service</strong> is a specialized pre-litigation pipeline engineered to balance this power dynamic. We have restructured the entire recovery lifecycle into an aggressive, automated, and attorney-verified pre-litigation notice pipeline. Our strategy bypasses junior project coordinators and targets C-suite executives, general counsels, co-founders, and funding partners directly, forcing them to settle your outstanding bills immediately to prevent intellectual property violations and commercial litigation.
+                  Our <strong className="font-extrabold text-[#111827]">Freelancer and Client Payments Recovery Service</strong> evens the playing field. We turn payment recovery into an automated, attorney-verified legal pipeline. We serve notices directly to founders, finance heads, and directors to resolve disputes fast.
                 </p>
                 <blockquote>
-                  <strong>Our Service Promise:</strong> We provide comprehensive, flat-fee recovery support with absolutely <strong>zero commissions</strong> taken on your recovered money. We draft, validate, and serve progressive legal notices designed to reach the highest decision-makers.
+                  <strong>Our Service Promise:</strong> We provide flat-fee recovery support with <strong>zero commission</strong> on your recovered money. We draft, verify, and deliver firm legal notices directly to company leadership.
                 </blockquote>
                 <p>
-                  No company - regardless of its scale, startup status, or venture funding - can legally use your hard-earned work without paying for it. Let our platform take the burden of writing, executing, and tracking your claims so you can reclaim your outstanding earnings.
+                  No business can legally use your creative work without paying for it. We handle drafting, notice delivery, and tracking so you can recover your rightful earnings.
                 </p>
 
                 {/* 2. What We Help You Recover */}
-                <h2 id="coverage-details">2. What We Help You Recover</h2>
+                <h2 id="coverage-details">2. Freelancer & Client Dues We Help You Recover</h2>
                 <p>
-                  An outstanding gig-economy claim is rarely limited to the basic invoice alone. Our legal panel compiles and details every single component of your outstanding remuneration to maximize the impact of your claim:
+                  Freelance payment disputes often involve multiple billing components. Our legal team calculates every unpaid balance to maximize your claim:
                 </p>
                 
                 <h3 id="milestone-payments">A. Milestone & Final Project Payouts</h3>
                 <p>
-                  We recover outstanding milestone payments and final project balances. If a client has accepted your deliverables (such as software, websites, graphics, or content) and delays the credit indefinitely, we issue a formal demand backed by delivery proofs.
+                  We recover unpaid milestone balances and final project invoices. When clients accept work but delay payments, we issue a formal demand backed by delivery logs.
                 </p>
 
                 <h3 id="retainer-fees">B. Unpaid Monthly Retainer Fees</h3>
                 <p>
-                  For ongoing agency contracts and marketing/consulting retainers, we recover unpaid monthly dues and audit contract clauses to enforce payment schedules, late fees, and notice period payouts in case of sudden, unilateral cancellations.
+                  For ongoing consulting or marketing retainers, we claim unpaid monthly fees. We enforce contract terms, late fees, and notice-period payouts when clients cancel without cause.
                 </p>
 
                 <h3 id="scope-creep">C. Scope Creep & Unauthorized Revisions</h3>
                 <p>
-                  Clients frequently demand revisions outside the agreed Statement of Work (SOW) without agreeing to extra charges. We leverage the doctrine of *Quantum Meruit* under the Contract Act to demand reasonable, industry-standard compensation for extra hours worked.
+                  Clients often ask for revisions outside the agreed Statement of Work. Under the doctrine of *Quantum Meruit* in the Contract Act, we demand fair compensation for extra work.
                 </p>
 
                 <h3 id="contract-breaches">D. Contract Breaches & Premature Terminations</h3>
                 <p>
-                  If a client terminates a long-term service level agreement (SLA) prematurely without the contractually mandated notice period or without proving gross misconduct, we recover your notice-period pay and severance damages.
+                  When a client cancels a contract without required notice, you are entitled to damages. We claim your notice-period pay and agreed severance amounts.
                 </p>
 
                 <h3 id="unauthorized-work">E. Compensation for Intellectual Property Theft</h3>
                 <p>
-                  Under Indian law, your creative work is your proprietary asset until paid for. If a client hosts your code, publishes your designs, or runs your ad copy without clearing final bills, we target them under copyright rules, demanding statutory damages for intellectual property infringement.
+                  Under Indian law, your creative work remains yours until paid for in full. If a client uses your code, designs, or content without clearing dues, we demand damages for copyright infringement.
                 </p>
 
                 {/* 3. Our 3+1 Notice Strategy */}
                 <h2 id="notice-strategy">3. Our 3+1 Notice Strategy: Engineered for Corporate Pressure</h2>
                 <p>
-                  Corporate entities ignore single complaint emails, assuming a freelancer will not spend resources pursuing litigation. To counter this, LegalRecovery utilizes an aggressive <strong className="font-extrabold text-[#111827]">3-stage progressive notice pipeline combined with a criminal police complaint draft</strong> to systematically build pressure:
+                  Companies often ignore casual emails, assuming freelancers will not pursue claims. We use a <strong className="font-extrabold text-[#111827]">3-stage notice pipeline and a formal police complaint draft</strong> to build steady pressure:
                 </p>
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6 my-8">
                   <div className="bg-[#F9FAFB] p-5 rounded-2xl border border-[#E5E7EB]">
@@ -492,7 +492,7 @@ export default function FreelancerRecoveryClient() {
                       <h4 className="font-extrabold text-[#111827] text-sm">Stage 1: Advocate Demand Notice</h4>
                     </div>
                     <p className="text-xs text-[#4B5563] leading-relaxed">
-                      We launch a highly authoritative demand notice on a practicing advocate's letterhead. Served via digital pipelines (corporate emails, WhatsApp) and physical registered post, it gives the client a strict 15-day window to settle undisputed invoices.
+                      We issue a formal legal notice on an advocate letterhead. We serve it via email, WhatsApp, and registered speed post with a 15-day deadline.
                     </p>
                   </div>
 
@@ -502,7 +502,7 @@ export default function FreelancerRecoveryClient() {
                       <h4 className="font-extrabold text-[#111827] text-sm">Stage 2: Board & Investor Escalation</h4>
                     </div>
                     <p className="text-xs text-[#4B5563] leading-relaxed">
-                      If ignored, we serve Notice 2 directly to the company's Board of Directors, venture capital investors, and major partners. We attach daily interest calculations (up to 18% p.a.) and detail personal director liabilities for willful defaults.
+                      If unanswered, we escalate to company directors and investors. We highlight director liabilities and calculate ongoing interest at 18% per year.
                     </p>
                   </div>
 
@@ -512,7 +512,7 @@ export default function FreelancerRecoveryClient() {
                       <h4 className="font-extrabold text-[#111827] text-sm">Stage 3: Pre-Litigation Warning</h4>
                     </div>
                     <p className="text-xs text-[#4B5563] leading-relaxed">
-                      We deliver a final warning package, including finalized drafts of a civil summary recovery suit (Order 37 CPC) or an MSME Samadhaan delayed payment claim, signalling our absolute readiness to initiate formal litigation.
+                      We deliver a final litigation warning package. This includes drafts for an Order 37 CPC summary suit and an MSME Samadhaan claim.
                     </p>
                   </div>
 
@@ -522,25 +522,25 @@ export default function FreelancerRecoveryClient() {
                       <h4 className="font-extrabold text-[#111827] text-sm">Criminal Police Complaint Draft</h4>
                     </div>
                     <p className="text-xs text-[#4B5563] leading-relaxed">
-                      Simultaneously, we provide you with a meticulously compiled criminal police complaint draft for <strong className="font-extrabold text-[#111827]">Cheating (Section 420 IPC)</strong> and <strong className="font-extrabold text-[#111827]">Criminal Breach of Trust (Section 405/406 IPC)</strong>. Filing this creates immediate, non-bailable pressure.
+                      We draft a police complaint for <strong className="font-extrabold text-[#111827]">Cheating (Section 420 IPC)</strong> and <strong className="font-extrabold text-[#111827]">Criminal Breach of Trust (Section 405/406 IPC)</strong>. This creates immediate personal accountability.
                     </p>
                   </div>
                 </div>
                 <p>
-                  By moving through these four distinct escalation stages week-by-week, we make it highly expensive, operationally disruptive, and legally risky for the corporate client to continue withholding your money.
+                  This multi-step escalation makes withholding your money legally risky and disruptive for the client.
                 </p>
 
                 {/* 4. The Indian Statutory Shield */}
                 <h2 id="legal-framework">4. The Indian Statutory Shield: Know Your Freelancer Rights</h2>
                 <p>
-                  India's legal framework provides freelance professionals with comprehensive statutory protections. Our advocate panel leverages these specific acts and sections to build an airtight case:
+                  Indian law provides freelance professionals with solid legal protections. Our advocate panel leverages these statutes to recover your money:
                 </p>
                 <ul>
-                  <li><strong>The Indian Contract Act, 1872:</strong> Explicitly recognizes electronic contracts, email trails, and WhatsApp/Slack chats as legally binding (Sections 10 and 10A). Unilateral non-payment constitutes a severe breach of contract.</li>
-                  <li><strong>The Copyright Act, 1597 (Section 19 & 19A):</strong> Dictates that the copyright of any creative work (including software code, designs, video edits, copy) only transfers to the client *after* the contract conditions - specifically the full payment - are cleared. Unauthorized use without paying constitutes copyright infringement.</li>
-                  <li><strong>MSMED Act, 2006 & MSME Samadhaan:</strong> If you are Udyam registered (free online process), clients are legally mandated to pay you within 45 days. Delayed payments attract mandatory compound interest calculated at <strong className="font-extrabold text-[#111827]">three times the RBI bank rate</strong> (Section 15/16).</li>
-                  <li><strong>Code of Civil Procedure, 1908 (Order 37 Summary Suit):</strong> Provides a summary procedure for fast-track recovery of contractual debts based on written agreements, invoices, or cheque bounce cases.</li>
-                  <li><strong>Section 138 of the Negotiable Instruments Act, 1881:</strong> If the client issued a cheque for a milestone payment that subsequently bounced, they face immediate criminal trial, imprisonment, and hefty fines.</li>
+                  <li><strong>The Indian Contract Act, 1872:</strong> Recognizes electronic contracts and emails as binding under Sections 10 and 10A. Unilateral non-payment breaches contract law.</li>
+                  <li><strong>The Copyright Act, 1957 (Section 19 & 19A):</strong> States that copyright transfers only after invoice payment. Using unpaid work constitutes copyright infringement.</li>
+                  <li><strong>MSMED Act, 2006 & MSME Samadhaan:</strong> Mandates client payment within 45 days for registered MSMEs. Defaults attract compound interest at <strong className="font-extrabold text-[#111827]">three times the RBI bank rate</strong>.</li>
+                  <li><strong>Code of Civil Procedure, 1908 (Order 37 Summary Suit):</strong> Offers a fast-track court procedure to recover debts based on written contracts and invoices.</li>
+                  <li><strong>Section 138 of the Negotiable Instruments Act, 1881:</strong> Provides criminal prosecution and penalties when client cheques bounce.</li>
                 </ul>
 
                 {/* Compare Contract vs IP Protection Table */}
@@ -587,24 +587,24 @@ export default function FreelancerRecoveryClient() {
                 {/* 5. Why Online Templates Fail */}
                 <h2 id="why-online-templates-fail">5. Why Free Online Freelance Notice Templates Fail</h2>
                 <p>
-                  Many independent creators try to copy free legal notice formats from online blogs. While this seems cost-effective, it almost always fails to produce results:
+                  Many creators use free legal notice formats found online. These generic templates rarely get results:
                 </p>
                 <ul>
-                  <li><strong>Lack of Attorney Letterhead:</strong> Corporate legal teams immediately recognize home-printed notices as amateur attempts. A formal notice carrying the seal, signature, and letterhead of a registered, practicing advocate establishes a highly real legal threat.</li>
-                  <li><strong>Failure to Leverage IP and Copyright Claims:</strong> Free templates usually frame disputes as general money recovery. They fail to outline that using unpaid code or designs is a criminal copyright infringement under Section 63 of the Copyright Act, which is a far more powerful lever to force instant payments.</li>
-                  <li><strong>No Digital tracking & Systematic Escalation:</strong> A single static letter is easily filed away. LegalRecovery uses real-time digital read-receipt tracking and automated week-by-week escalations to C-suite and investors, building overwhelming pressure.</li>
+                  <li><strong>No Advocate Verification:</strong> Free templates lack the seal and signature of a practicing advocate. Corporate legal teams easily ignore them.</li>
+                  <li><strong>Missing IP and Copyright Claims:</strong> Generic formats overlook that using unpaid work violates Section 63 of the Copyright Act. Copyright claims create stronger settlement pressure.</li>
+                  <li><strong>No Structured Escalation:</strong> One lone letter is easy to ignore. We provide tracked digital delivery and weekly escalations to executive leadership.</li>
                 </ul>
                 <p>
-                  LegalRecovery provides you with attorney-signed, state-customized notice campaigns. We use real-time digital read receipts to track when the HR opened the email, leaving them with absolutely no room to claim they never received the demand.
+                  LegalRecovery provides verified, customized notice campaigns. We use digital read receipts so clients cannot deny receiving your demand.
                 </p>
 
                 {/* 6. Transparent Flat Pricing */}
                 <h2 id="service-pricing">6. Transparent Flat Pricing</h2>
                 <p>
-                  Traditional advocates charge thousands of rupees per consultation and demand additional percentages (commissions) on the recovered amount. We believe this is highly exploitative. 
+                  Traditional lawyers charge high consultation fees and take percentages of your recovered money. We do not do that.
                 </p>
                 <p>
-                  LegalRecovery provides professional, attorney-verified freelancer and client payment recovery notice campaigns for a single, flat fee of <strong className="font-extrabold text-[#111827]">₹999</strong>. We charge absolutely zero hidden fees and take zero commission on your recovered money.
+                  We offer a complete, attorney-verified freelancer recovery package for a flat fee of <strong className="font-extrabold text-[#111827]">₹999</strong>. You pay no commissions and face zero hidden charges.
                 </p>
 
                 {/* Pixel-perfect reproduction of the home page unified pricing container */}
@@ -695,14 +695,14 @@ export default function FreelancerRecoveryClient() {
                 {/* 7. Evidentiary Checklist */}
                 <h2 id="documentation-needed">7. The Evidentiary Checklist for Freelancer Recovery</h2>
                 <p>
-                  To initiate your recovery case on our platform, you must gather simple, standard work records to prove your claim. Our advocates will utilize these records to compile an airtight dispute profile:
+                  To start your recovery, gather common project records. Our advocates will use these documents to build your claim:
                 </p>
                 <ul>
-                  <li><strong>Rent/Service Agreement or statement of Work (SOW):</strong> Outlines the scope of deliverables, agreed pricing, milestones, payment terms, and notice period constraints.</li>
-                  <li><strong>Tax Invoices:</strong> Documents the billing date, GST registration details, bank accounts, and payment terms of the disputed transaction.</li>
-                  <li><strong>Proof of Work Delivery:</strong> GitHub pull request logs, Figma project links, unboxing/source file download records, or Google Drive folder timestamps showing actual work handover.</li>
-                  <li><strong>Email/Chat Conversation history:</strong> Admissible screenshots or PDF logs of emails, Slack threads, or WhatsApp chats proving project approvals and milestone clearances.</li>
-                  <li><strong>Bank Account Statement:</strong> Proof of non-payment or partial payment showing the sudden cessation of client transfers.</li>
+                  <li><strong>Service Agreement or Statement of Work (SOW):</strong> Defines deliverables, pricing, milestones, payment schedules, and notice rules.</li>
+                  <li><strong>Tax Invoices:</strong> Shows invoice numbers, GST details, bank accounts, and agreed payment terms.</li>
+                  <li><strong>Proof of Work Delivery:</strong> GitHub pull requests, Figma links, Google Drive logs, or email delivery records.</li>
+                  <li><strong>Written Messages:</strong> Admissible email threads, Slack chats, or WhatsApp messages confirming work approvals.</li>
+                  <li><strong>Bank Account Statement:</strong> Serves as proof that the client never transferred the pending amount.</li>
                 </ul>
 
               </div>

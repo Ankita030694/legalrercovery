@@ -3,7 +3,7 @@ import FnFSettlementNoticeClient from "./FnFSettlementNoticeClient";
 
 export const metadata: Metadata = {
   title: "Legal Notice for Withheld Salary & FnF Settlement",
-  description: "Learn how to send a legal notice to your employer for withholding full and final settlement, gratuity, and unpaid salary. Understand the labour laws in India.",
+  description: "Send a legal notice to your employer for withholding FNF settlement, gratuity, or unpaid salary. Understand employee rights under Indian labour laws.",
   keywords: [
     "legal notice for full and final settlement",
     "withholding fnf salary legal notice",

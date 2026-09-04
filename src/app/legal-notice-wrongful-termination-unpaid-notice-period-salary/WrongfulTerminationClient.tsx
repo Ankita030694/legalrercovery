@@ -10,35 +10,35 @@ import { PaymentModal } from "@/components/PaymentModal";
 const faqs = [
   {
     question: "What constitutes wrongful termination under Indian labor laws?",
-    answer: "Wrongful termination occurs when an employer dismisses an employee in violation of the employment contract, state Shops and Establishments Act, or central labor laws. This includes firing an employee without the contractually mandated notice period, without paying severance, terminating them during maternity leave, or dismissing them without conducting a fair domestic inquiry for alleged misconduct."
+    answer: "Wrongful termination occurs when an employer fires an employee violating statutory labor laws. Dismissing staff without contractual notice or paying required severance is illegal under law. Terminating female employees during maternity leave violates mandatory federal employee protection rules. Employers cannot dismiss employees without conducting fair internal domestic inquiry proceedings first."
   },
   {
     question: "Can an employer force me to resign immediately?",
-    answer: "No. A forced resignation is legally categorized as 'constructive dismissal' or wrongful termination. Employers often use pressure tactics, such as threat of termination or negative background checks, to force resignations. If you are forced to resign, you should document the coercion, send a formal protest email, and refuse to sign one-sided settlement sheets before consulting legal counsel."
+    answer: "Employers cannot legally coerce any employee into submitting an immediate forced resignation. Forced resignation is treated as constructive dismissal under Indian employment legal jurisprudence. Companies often use termination threats or background check intimidation to pressure staff. You should preserve all coercive communications and refuse one-sided exit settlement agreements."
   },
   {
     question: "What is the notice period salary rule in India?",
-    answer: "Under the Industrial Disputes Act and state Shops and Establishments Acts, if an employer terminates your services without cause, they must either let you serve the notice period defined in your contract or pay you the equivalent basic salary and allowances in lieu of that notice period. Withholding notice pay is a breach of contract and an illegal practice."
+    answer: "Employers must provide contractual notice or pay equivalent salary upon sudden termination. State Shops and Establishments Acts require basic salary plus regular earned allowances. Withholding notice period salary breaches employment contracts and violates statutory state rules. Employees can demand full notice pay through an advocate served legal notice."
   },
   {
     question: "How is retrenchment compensation calculated under the Industrial Disputes Act?",
-    answer: "Under Section 25F of the Industrial Disputes Act, 1947, a workman who has completed one year of continuous service is entitled to retrenchment compensation. This is calculated at the rate of 15 days' average pay for every completed year of continuous service or any part thereof in excess of six months, along with one month's notice or wages in lieu of notice."
+    answer: "Section 25F of the Industrial Disputes Act 1947 governs statutory retrenchment compensation. Eligible workmen must have completed one continuous year of active company service. Compensation equals fifteen days average pay for every completed year of service. The employer must also provide one month written notice or wages instead."
   },
   {
     question: "What legal options do I have if I am terminated during notice period?",
-    answer: "If you are terminated after resigning and during your notice period, the employer must still pay your salary for the remaining notice period days. If they refuse, you can serve a legal notice citing breach of contract. For unpaid notices, you can refer to our guides on <Link href=\"/legal-notice-for-recovery-of-money\" className=\"text-[#DC2626] hover:underline font-medium\">legal notice for recovery of money</Link> to initiate recovery proceedings."
+    answer: "Employers terminating staff during an active notice period must pay remaining days. Withholding notice salary violates employment contracts and state labor welfare statutory regulations. Employees can serve an advocate legal notice demanding immediate payment of dues. You can initiate formal recovery proceedings if the employer refuses out-of-court settlement."
   },
   {
     question: "Can an employer terminate me without cause if my contract has an 'at-will' clause?",
-    answer: "While many employment contracts contain 'termination by convenience' clauses allowing either party to end the contract with notice, Indian courts do not recognize pure 'at-will' employment. Employers must show reasonable cause for termination and comply with state-specific Shops and Establishments Acts, which mandate minimum notice or severance pay."
+    answer: "Indian employment jurisprudence does not recognize pure at-will termination contractual terms. Employers must demonstrate reasonable objective cause before terminating any confirmed corporate employee. State Shops and Establishments Acts mandate statutory notice periods or severance compensation. Arbitrary terminations without reasonable cause remain legally challengeable before jurisdictional labor courts."
   },
   {
     question: "What is the role of the Labor Commissioner in wrongful termination disputes?",
-    answer: "If you file a complaint, the Labor Commissioner will summon the employer for conciliation hearings to negotiate a settlement. If the employer refuses to settle, the commissioner will refer the dispute to the Labor Court. For steps to take when facing non-cooperative employers, check <Link href=\"/what-to-do-if-legal-notice-is-ignored-india\" className=\"text-[#DC2626] hover:underline font-medium\">what to do if legal notice is ignored in India</Link> to plan your court escalation."
+    answer: "The Labor Commissioner summons employers for conciliation proceedings after receiving employee complaints. If conciliation fails, the commissioner refers the labor dispute to court. Conciliation creates substantial pressure on employers to resolve pending unpaid salary dues. Employees can escalate to labor tribunals if employers ignore statutory conciliation summons."
   },
   {
     question: "Can I claim compensation for mental harassment in a wrongful dismissal case?",
-    answer: "Yes. In addition to recovering unpaid notice salary and severance, you can claim damages for wrongful dismissal, loss of reputation, and mental harassment before a civil court or consumer commission (where applicable). Serving a formal legal notice that quantifies these damages puts immense pressure on corporate legal teams to settle."
+    answer: "Employees can legally claim damages for mental agony resulting from wrongful termination. You can demand compensation for reputational harm before civil or labor courts. A formal legal notice quantifying emotional damages pressures corporate leadership to settle. Companies frequently settle out of court to prevent costly public court litigation."
   }
 ];
 
@@ -46,17 +46,17 @@ const reviews = [
   {
     author: "Nisha Sharma (Mumbai)",
     rating: "5",
-    text: "I was terminated overnight by a fintech startup without any explanation, and they refused to pay my 2-month notice period salary. I served a formal legal notice citing the Maharashtra Shops and Establishments Act. The company immediately agreed to an out-of-court settlement, releasing my full salary and experience letter. Very helpful guide."
+    text: "A fintech startup terminated me overnight and withheld my earned notice salary. I served a formal legal notice under state labor welfare protection laws. The management quickly agreed to settle all dues and issued experience certificates."
   },
   {
     author: "Vikram Malhotra (Bengaluru)",
     rating: "5",
-    text: "After 3 years of service, my company forced me to resign by threatening my background checks. I recorded the conversation and served a legal notice for constructive dismissal. The HR director intervened and cleared my 3-month severance pay along with a positive recommendation letter. Knowing your rights is critical."
+    text: "My company forced my resignation by threatening negative employment verification remarks. I preserved evidence and served an advocate notice for illegal constructive dismissal. The management settled three months severance pay and provided positive reference letters."
   },
   {
     author: "Rohan Kapoor (Gurugram)",
     rating: "5",
-    text: "This guide helped me recover ₹2.8 Lakhs in unpaid notice pay. The company laid me off citing restructuring but refused notice compensation. A formal lawyer notice citing the Industrial Disputes Act forced their legal team to settle the dues within 10 days. Do not let employers bully you."
+    text: "This legal guide helped me recover two point eight lakhs notice pay. The company laid off staff citing restructuring without providing statutory severance compensation. A formal legal notice forced their corporate counsel to settle within days."
   }
 ];
 
@@ -200,7 +200,7 @@ export default function WrongfulTerminationClient() {
               Wrongful Termination &amp; <span className="text-[#DC2626]">Notice Salary Recovery</span>
             </h1>
             <p className="text-sm md:text-xl mb-8 md:mb-12 max-w-3xl mx-auto text-slate-300 leading-relaxed font-medium">
-              Sudden termination without cause or forced resignation? Learn how to recover unpaid notice period salary and severance pay under Indian labor laws.
+              Sudden termination without cause or forced resignation violates Indian labor welfare laws. Learn how to recover unpaid notice period salary and statutory severance pay. Our specialized legal platform enforces employer compliance to secure full employee dues.
             </p>
           </div>
         </header>
@@ -223,15 +223,15 @@ export default function WrongfulTerminationClient() {
               <div className="prose prose-base max-w-none text-slate-650 space-y-6">
                 
                 <p className="text-sm md:text-base leading-relaxed font-semibold text-slate-900">
-                  Under the Industrial Disputes Act and state-specific Shops and Establishments Acts, an employer cannot terminate an employee suddenly without cause or force their resignation without paying the contractually defined notice period salary and severance package. If you have been wrongfully terminated, serving a formal legal notice is the first step to recover your dues and challenge the dismissal.
+                  The Industrial Disputes Act and state Shops Acts protect employees against dismissal. Employers cannot terminate staff without cause or coerce resignations without paying dues. Serving a formal legal notice initiates recovery of unpaid notice period salaries.
                 </p>
 
                 <p className="text-sm md:text-base leading-relaxed">
-                  Losing a job is a highly stressful event, but the situation becomes significantly worse when the separation is executed in an illegal or arbitrary manner. Many corporate employers, startups, and private companies in India routinely bypass statutory labor regulations to cut costs. They terminate employees overnight without cause, refusing to pay their notice period salary or contractually defined severance packages. In other cases, companies resort to forced resignations. They pressure employees to resign immediately, threatening to block their relieving letters or ruin their background verification check if they do not comply. Under Indian labor jurisprudence, a forced resignation is legally treated as constructive dismissal, making the company liable to pay full severance and damages. The law provides robust protections to safeguard employees against these corporate abuses.
+                  Job loss causes severe emotional stress and creates sudden financial distress for families. The situation worsens when corporate employers execute dismissals through illegal arbitrary methods. Many corporate startups and private firms bypass labor welfare statutes to cut costs. Companies terminate employees overnight while refusing contractual notice pay and earned severance. Employers often coerce immediate resignations by threatening negative background verification remarks. Indian labor jurisprudence treats forced resignations as actionable illegal constructive dismissals. Aggrieved employees have strong statutory rights to recover complete severance and damages.
                 </p>
                 
                 <p className="text-sm md:text-base leading-relaxed">
-                  If you are seeking to dispute an arbitrary termination and recover your outstanding dues, you must begin by serving a formal legal demand to the company's directors. You can consult our comprehensive guide on the <Link href="/legal-notice-for-recovery-of-money" className="text-[#DC2626] hover:underline font-medium">legal notice for recovery of money</Link> to outline your financial demands and understand the formal drafting structure. If you wish to explore amicable avenues of resolution before heading to court, there are effective strategies you can employ. You can read about <Link href="/how-to-recover-money-without-going-to-court-india" className="text-[#DC2626] hover:underline font-medium">how to recover money without going to court in India</Link> to evaluate out-of-court settlements and mediation. Additionally, if the employer remains completely non-cooperative and ignores your notice, you must plan your next steps. You can review the <Link href="/what-to-do-if-legal-notice-is-ignored-india" className="text-[#DC2626] hover:underline font-medium">what to do if legal notice is ignored in India</Link> guide to prepare for labor court or civil suit escalations. Let us analyze the statutory rules governing wrongful termination.
+                  Disputing arbitrary terminations begins by serving a formal legal notice to directors. A detailed legal notice outlines statutory violations and quantifies all outstanding dues. Employers often settle disputes amicably when faced with potential labor tribunal proceedings. Exploring conciliation and mediation enables swift recovery without prolonged court litigation. If the company ignores your legal notice, escalate the matter before authorities. Understanding relevant labor regulations ensures effective enforcement against defaulting corporate employers.
                 </p>
               </div>
 
@@ -242,7 +242,7 @@ export default function WrongfulTerminationClient() {
                 
                 <div className="prose prose-base max-w-none text-slate-650 space-y-6">
                   <p className="text-sm md:text-base leading-relaxed">
-                    Employment contracts in India are subject to federal and state labor laws. These laws override any one-sided clauses in appointment letters that attempt to restrict employee rights.
+                    Indian labor statutes govern all corporate employment contracts and commercial appointments. Statutory labor provisions override unilateral contractual clauses that restrict fundamental employee rights.
                   </p>
                 </div>
 
@@ -252,10 +252,10 @@ export default function WrongfulTerminationClient() {
                       Industrial Disputes Act and Retrenchment Rules
                     </h3>
                     <p className="text-sm md:text-base text-slate-650 leading-relaxed">
-                      The Industrial Disputes Act, 1947 is the primary central legislation safeguarding the rights of workmen. Under Section 2(s) of the Act, a 'workman' includes any person employed in an industry to do manual, unskilled, skilled, technical, operational, clerical, or supervisory work. It excludes individuals employed in managerial or administrative capacities.
+                      The Industrial Disputes Act 1947 protects workmen against unfair industrial labor practices. Section 2(s) classifies operational, clerical, technical, and skilled personnel as statutory workmen. Managerial and administrative personnel are excluded from the definition of a workman.
                     </p>
                     <p className="text-sm md:text-base text-slate-650 leading-relaxed mt-3">
-                      Section 25F of the Act mandates that no workman who has completed one year of continuous service can be retrenched (laid off) until they have been given one month's notice in writing indicating the reasons for retrenchment, or have been paid wages in lieu of such notice. Additionally, the employer must pay retrenchment compensation equivalent to 15 days' average pay for every completed year of continuous service. If an employer fails to comply with these conditions, the retrenchment is deemed illegal, and the workman can demand reinstatement with back wages.
+                      Section 25F mandates that workmen with one year service receive written notice. Employers must provide one month advance notice or pay wages instead. Furthermore, employers must pay retrenchment compensation of fifteen days per service year. Retrenchments executed without statutory compensation remain illegal under Indian industrial law. Workmen can claim reinstatement with full back wages before labor tribunals.
                     </p>
                   </div>
 
@@ -264,10 +264,10 @@ export default function WrongfulTerminationClient() {
                       State Shops and Establishments Acts Governing Termination
                     </h3>
                     <p className="text-sm md:text-base text-slate-650 leading-relaxed">
-                      For white-collar corporate employees, IT professionals, and service sector workers who do not qualify as 'workmen', the primary governing laws are the state-specific Shops and Commercial Establishments Acts.
+                      State Shops and Commercial Establishments Acts protect corporate executives and service employees. These statutes regulate working conditions and termination rules for non-workman office professionals.
                     </p>
                     <p className="text-sm md:text-base text-slate-650 leading-relaxed mt-3">
-                      For example, the Karnataka Shops and Commercial Establishments Act and the Maharashtra Shops and Establishments Act outline clear termination guidelines. Under these acts, an employer cannot terminate an employee who has been in continuous service for more than six months without providing at least one month's notice or one month's salary in lieu of notice. The termination must be based on a reasonable cause, such as redundancy or misconduct. In cases of alleged misconduct, the employer must conduct a fair domestic inquiry, giving the employee a reasonable opportunity to present their case, before terminating their services.
+                      Karnataka and Maharashtra Shops Acts mandate thirty days notice for confirmed employees. Employers must provide one month notice or equivalent salary in lieu. Dismissals require reasonable objective justification like proven redundancy or gross personal misconduct. Employers alleging misconduct must conduct a fair domestic inquiry following natural justice. Employees must receive full opportunity to present defense before termination orders.
                     </p>
                   </div>
 
@@ -276,10 +276,10 @@ export default function WrongfulTerminationClient() {
                       Constitutional Protections and Public Sector Employee Rights
                     </h3>
                     <p className="text-sm md:text-base text-slate-650 leading-relaxed">
-                      While private sector employees are primarily governed by contract terms and state Shops Acts, public sector employees in India enjoy constitutional protections under Article 311 of the Constitution. Article 311 provides that no civil servant can be dismissed or removed by an authority subordinate to that by which they were appointed, and no such person can be dismissed except after an inquiry in which they have been informed of the charges and given a reasonable opportunity of being heard.
+                      Public sector employees enjoy specialized constitutional safeguards under Article 311 of the Constitution. Civil servants cannot be dismissed without holding formal departmental disciplinary inquiry proceedings. The appointing authority alone holds statutory jurisdiction to terminate public service personnel.
                     </p>
                     <p className="text-sm md:text-base text-slate-650 leading-relaxed mt-3">
-                      For private sector workers, though Article 311 does not directly apply, courts have integrated the principles of natural justice into private employment contracts. If a company terminates an employee on allegations of fraud or misconduct without holding a proper inquiry, it violates the principles of natural justice, making the termination wrongful in the eyes of law. Citing these principles in your legal notice warns the company that they cannot bypass due process.
+                      Courts enforce natural justice principles across private sector commercial employment contracts as well. Dismissals based on unproven misconduct without domestic inquiries violate recognized legal standards. Citing procedural violations in your legal notice puts immense pressure on employers.
                     </p>
                   </div>
                 </div>
@@ -292,16 +292,16 @@ export default function WrongfulTerminationClient() {
                 
                 <div className="prose prose-base max-w-none text-slate-650 space-y-6">
                   <p className="text-sm md:text-base leading-relaxed">
-                    Notice period pay and severance packages are statutory rights designed to provide a financial cushion to employees during transition periods. If an employer terminates your services with immediate effect, they must clear all outstanding dues in your Full &amp; Final (FnF) settlement.
+                    Notice period pay and severance packages provide essential financial cushions during transitions. Terminating employers must disburse complete statutory dues in full and final settlements.
                   </p>
                   <p className="text-sm md:text-base leading-relaxed">
-                    The FnF settlement must include: 1) Earned basic salary up to the last working day, 2) Accrued leaf encashment, 3) Contractual bonus or performance incentives, 4) Gratuity (if you completed 5 years of service), and 5) Notice period salary in lieu of notice. If an employer tries to deduct training costs, recruitment fees, or project damages from your FnF without documented proof of losses, it constitutes an illegal deduction, and you can recover the withheld amount through a legal notice.
+                    Full and final settlements must include earned wages until the final day. Settlements must include accrued leave encashment, performance bonuses, and statutory gratuity dues. Employers must also pay notice period salary if immediate termination occurred. Deducting arbitrary training expenses or recruitment costs from employee settlements is illegal. Employees can recover unlawfully withheld salary amounts through a formal legal notice.
                   </p>
                   <p className="text-sm md:text-base leading-relaxed">
-                    When a company releases a severance package or notice period pay as part of the Full &amp; Final settlement, the taxation of these amounts is governed by Section 10(10B) of the Income Tax Act, 1961. Under this section, retrenchment compensation received by a workman is exempt from income tax up to a maximum limit of ₹5 Lakhs, provided the compensation is calculated in accordance with the Industrial Disputes Act. Any amount exceeding this limit is taxable as salary.
+                    Section 10(10B) of the Income Tax Act 1961 governs retrenchment taxation. Retrenchment compensation for workmen is tax-exempt up to five lakh rupees. Compensation amounts must follow statutory formulas prescribed by the Industrial Disputes Act. Amounts exceeding statutory thresholds are taxable under standard personal income tax slabs.
                   </p>
                   <p className="text-sm md:text-base leading-relaxed">
-                    For managerial employees, severance pay is generally taxable as 'profits in lieu of salary' under Section 17(3) of the Act. However, employees can claim tax relief under Section 89(1) by filing Form 10E. The employer is legally required to compute these tax benefits and reflect them correctly in the Form 16 issued during separation. If the employer refuses to compute these tax relief benefits or makes arbitrary tax deductions from your severance, you can include this tax non-compliance as a key grievance in your legal notice.
+                    Managerial severance payments are classified as profits in lieu of salary. Employees can claim tax relief under Section 89(1) using Form 10E. Employers must compute statutory tax benefits correctly on issued Form 16 certificates. Arbitrary tax withholdings can be challenged as non-compliance in legal notices.
                   </p>
                 </div>
               </section>
@@ -313,7 +313,7 @@ export default function WrongfulTerminationClient() {
                 
                 <div className="prose prose-base max-w-none text-slate-650 space-y-6 mb-6">
                   <p className="text-sm md:text-base leading-relaxed">
-                    If you are facing a wrongful termination or forced resignation, you should take these steps to secure your legal position:
+                    Follow these systematic legal steps to challenge wrongful terminations and forced resignations:
                   </p>
                 </div>
 
@@ -324,7 +324,7 @@ export default function WrongfulTerminationClient() {
                     <div>
                       <h4 className="font-bold text-slate-900 mb-1">Preserve All Written Evidence</h4>
                       <p className="text-xs md:text-sm text-slate-600 leading-relaxed">
-                        Save copies of your employment contract, appraisal letters, termination email, and performance reports. Backup chat logs showing any coercion or forced resignation demands.
+                        Preserve appointment letters, appraisal emails, termination notices, and positive performance evaluation records. Save chat logs and audio recordings documenting coercion or forced resignation pressure.
                       </p>
                     </div>
                   </div>
@@ -334,7 +334,7 @@ export default function WrongfulTerminationClient() {
                     <div>
                       <h4 className="font-bold text-slate-900 mb-1">Send a Formal Protest Email</h4>
                       <p className="text-xs md:text-sm text-slate-600 leading-relaxed">
-                        Reply to the termination or resignation email. State clearly that you dispute the dismissal, and request a detailed explanation of the cause and calculation of notice pay.
+                        Send a written protest email contesting the unfair dismissal or forced resignation. Demand clear written explanations regarding termination grounds and full notice salary calculations.
                       </p>
                     </div>
                   </div>
@@ -344,7 +344,7 @@ export default function WrongfulTerminationClient() {
                     <div>
                       <h4 className="font-bold text-slate-900 mb-1">Serve a Formal Legal Notice</h4>
                       <p className="text-xs md:text-sm text-slate-600 leading-relaxed">
-                        Hire a labor lawyer to draft and serve a legal notice to the company's directors. Demand reinstatement or payment of outstanding notice salary and severance within 15 days.
+                        Engage an experienced labor advocate to serve a formal legal notice. Demand immediate payment of unpaid notice pay, severance, and gratuity within fifteen days.
                       </p>
                     </div>
                   </div>
@@ -354,7 +354,7 @@ export default function WrongfulTerminationClient() {
                     <div>
                       <h4 className="font-bold text-slate-900 mb-1">File Complaint with Labor Commissioner</h4>
                       <p className="text-xs md:text-sm text-slate-600 leading-relaxed">
-                        If the employer refuses to settle, file a complaint before the regional Labor Commissioner under the Shops and Establishments Act or Industrial Disputes Act for conciliation.
+                        File a formal complaint before the local Labor Commissioner for conciliation hearings. The commissioner summons corporate leadership to resolve outstanding unpaid salary and severance disputes.
                       </p>
                     </div>
                   </div>
@@ -363,17 +363,17 @@ export default function WrongfulTerminationClient() {
                 <div className="prose prose-base max-w-none text-slate-650 space-y-6 mt-8">
                   <h3 className="text-lg md:text-xl font-bold text-slate-900 mb-3">Filing an Appeal before the Appellate Authority under Shops Acts</h3>
                   <p className="text-sm md:text-base leading-relaxed">
-                    If the employer ignores your legal notice, most state Shops and Establishments Acts provide an administrative appeal mechanism. Under the Delhi Shops and Establishments Act, for instance, an employee can file an appeal before the designated Appellate Authority within 30 days of the date of dismissal. The authority has the power to conduct hearings, examine witnesses, and review the reasons for termination.
+                    State Shops and Establishments Acts provide accessible administrative appeal forums for employees. The Delhi Shops Act permits employees to appeal dismissals within thirty days. Appellate authorities conduct hearings, examine employment records, and review termination justifications impartially.
                   </p>
                   <p className="text-sm md:text-base leading-relaxed">
-                    If the Appellate Authority finds that the termination was executed without reasonable cause, they can direct the employer to pay compensation equivalent to one month's salary for every year of service, or order the reinstatement of the employee with full back wages. Filing this appeal is a fast-track administrative remedy that bypasses the lengthy delays of civil courts, making it an excellent option for corporate workers.
+                    Authorities ordering wrongful dismissal remedies direct employers to pay substantial severance compensation. Appellate authorities can also mandate full reinstatement with complete back salary benefits. This administrative mechanism provides fast resolution without lengthy civil court trial delays.
                   </p>
                 </div>
 
                 <div className="prose prose-base max-w-none text-slate-650 space-y-6 mt-8">
                   <h3 className="text-lg md:text-xl font-bold text-slate-900 mb-3">Understanding Severance Entitlements</h3>
                   <p className="text-sm md:text-base leading-relaxed">
-                    To evaluate the notice period salary and severance benefits you are eligible to claim, you must verify the statutory rules based on your designation:
+                    Verify your legal severance entitlements based on your designation and governing statute:
                   </p>
                 </div>
 
@@ -413,7 +413,7 @@ export default function WrongfulTerminationClient() {
                 
                 <div className="prose prose-base max-w-none text-slate-650 space-y-6">
                   <p className="text-sm md:text-base leading-relaxed">
-                    A legal notice for wrongful dismissal must be drafted with precision, focusing on the illegality of the termination process and the exact outstanding dues. It must warn the company of potential labor commission filings and civil suits if the dues are not cleared within 15 days of receiving the notice.
+                    A wrongful dismissal legal notice requires precise drafting detailing all statutory violations. The notice must specify outstanding salary amounts, leave encashment, and damages for harassment. It gives employers a strict fifteen-day deadline before initiating formal labor litigation.
                   </p>
                   
                   <div className="bg-[#111827] text-slate-300 p-6 rounded-2xl border border-slate-800 my-6 font-mono text-xs overflow-x-auto leading-relaxed">
@@ -430,17 +430,17 @@ export default function WrongfulTerminationClient() {
                   <h3 className="text-lg md:text-xl font-bold text-slate-900 mb-3">Sample Wrongful Termination Notice Template</h3>
                   <div className="bg-slate-50 p-6 rounded-2xl border border-slate-200 shadow-inner font-sans text-xs md:text-sm text-slate-700 leading-relaxed space-y-4">
                     <p className="font-bold">LEGAL NOTICE</p>
-                    <p>To,<br />The Board of Directors / Head of HR<br />[Company Name Private Limited]<br />[Registered Office Address]</p>
-                    <p>Dear Sir/Madam,</p>
-                    <p>Under instructions from my client, [Employee Name], resident of [Address], I hereby serve you with this legal notice regarding the illegal and wrongful termination of my client's services and the withholding of outstanding dues.</p>
-                    <p>My client joined your organization on [Joining Date] as [Designation] under the employment contract dated [Contract Date]. During their service, my client maintained an exemplary performance record, obtaining [Details of Appraisals/Promotions]. On [Termination Date], your company terminated my client's services with immediate effect without providing any reasonable cause, domestic inquiry, or the contractually mandated notice period pay of [Number of Months] months.</p>
-                    <p>This arbitrary termination is a direct violation of Section 5 of the state Shops and Establishments Act and Section 25F of the Industrial Disputes Act, 1947. Furthermore, your company has withheld my client's outstanding FnF settlement amounting to ₹[Amount] and refused to issue the relieving letter, causing severe career damage.</p>
-                    <p>We hereby call upon you to reinstate my client with full back wages, or in the alternative, pay the outstanding amount of ₹[Amount] along with interest at 18% per annum, and issue the relieving letter within 15 days of receiving this notice. Failure to do so will compel my client to file a complaint before the Labor Commissioner and initiate civil proceedings, making your company liable for all costs.</p>
+                    <p>To,<br />The Board of Directors and Head of Human Resources<br />[Company Name Private Limited]<br />[Registered Office Address]</p>
+                    <p>Dear Sir or Madam,</p>
+                    <p>Under instructions from my client, [Employee Name], resident of [Address], I hereby serve this legal notice regarding the illegal termination of my client and withholding of outstanding dues.</p>
+                    <p>My client joined your organization on [Joining Date] as [Designation] under the employment contract dated [Contract Date]. My client maintained an exemplary performance record throughout the tenure with your organization. On [Termination Date], your company terminated my client without reasonable cause, inquiry, or contractual notice salary.</p>
+                    <p>This arbitrary termination violates Section 25F of the Industrial Disputes Act 1947 and state Shops Acts. Your company has withheld outstanding full and final dues amounting to ₹[Amount] and refused to issue relieving documents.</p>
+                    <p>We call upon you to pay the outstanding dues of ₹[Amount] with eighteen percent interest within fifteen days. Failure to comply will compel my client to file complaints before the Labor Commissioner and initiate civil proceedings.</p>
                     <p>Yours faithfully,<br />[Advocate Name]</p>
                   </div>
 
                   <p className="text-sm md:text-base leading-relaxed">
-                    Sending this notice digitally via verified email creates a court-admissible digital record. Most established companies have compliance teams that will prioritize clearing these dues once they receive a formal lawyer's notice, as it prevents their board of directors from being named in labor disputes.
+                    Serving legal notices via verified digital channels creates court-admissible evidence of formal delivery. Corporate compliance teams typically clear outstanding dues quickly to prevent director litigation.
                   </p>
                 </div>
               </section>
@@ -452,7 +452,7 @@ export default function WrongfulTerminationClient() {
                 
                 <div className="prose prose-base max-w-none text-slate-650 space-y-6">
                   <p className="text-sm md:text-base leading-relaxed">
-                    If you are hesitant about sending a formal notice, it is helpful to look at how the dynamics change before and after the notice is delivered:
+                    Notice delivery alters corporate dynamics and prompts immediate action from company legal counsel:
                   </p>
 
                   {/* BEFORE VS AFTER WORKFLOW */}
@@ -462,13 +462,13 @@ export default function WrongfulTerminationClient() {
                       <div className="bg-slate-800/50 p-4 rounded-xl border border-slate-700/50">
                         <span className="text-red-400 font-bold uppercase tracking-wider text-xs block mb-2">Before Notice</span>
                         <p className="text-slate-300 leading-relaxed">
-                          The HR team ignores your emails or claims that the termination was due to 'restructuring' or 'performance issues' without providing any evidence. They refuse notice pay.
+                          HR departments ignore employee emails and claim restructuring without presenting objective evidence. Management refuses notice pay and withholding relieving documents to discourage salary claims.
                         </p>
                       </div>
                       <div className="bg-slate-800/50 p-4 rounded-xl border border-slate-700/50">
                         <span className="text-emerald-400 font-bold uppercase tracking-wider text-xs block mb-2">After Notice</span>
                         <p className="text-slate-300 leading-relaxed">
-                          The company's legal team instructs HR to release the notice pay and clear the outstanding dues to prevent corporate litigation, labor commission audits, and director liabilities.
+                          Corporate legal advisors instruct HR to disburse notice pay and settle dues. Companies settle promptly to prevent labor commission inquiries, regulatory penalties, and director liabilities.
                         </p>
                       </div>
                     </div>
@@ -482,13 +482,13 @@ export default function WrongfulTerminationClient() {
                 </h2>
                 <div className="prose prose-base max-w-none text-slate-650 space-y-6">
                   <p className="text-sm md:text-base leading-relaxed">
-                    In India, company directors and partners can face criminal prosecution, fines, and even imprisonment for willful default under labor laws. The court can direct the local police to inspect the company's premises and seize accounting records.
+                    Company directors and partners face severe legal liability for willful labor defaults. Magistrates can issue summons and initiate criminal proceedings for deliberate salary non-payment.
                   </p>
                   <p className="text-sm md:text-base leading-relaxed">
-                    When a legal notice is addressed directly to the company directors by name, it highlights their personal liability. Most corporate directors will instruct their HR and legal departments to settle the dispute immediately, as they do not want to risk criminal prosecution or be summoned by a labor court over employee salary disputes.
+                    Addressing legal notices to directors personally creates immediate accountability for corporate leadership. Directors instruct legal departments to settle claims quickly rather than face court appearances.
                   </p>
                   <p className="text-sm md:text-base leading-relaxed">
-                    Withholding notice period salary or severance dues is not just a breach of contract; it is a punishable offense under Section 20 of the Payment of Wages Act. If a company willfully defaults on salary payments, the local labor inspector can file a criminal complaint in the court of a Metropolitan Magistrate against the company's directors and the designated manager. The directors can face fines, attachment of personal bank accounts, and prosecution.
+                    Section 20 of the Payment of Wages Act penalizes willful salary withholding. Labor inspectors can file criminal complaints before Metropolitan Magistrates against defaulting company directors. Directors face monetary fines, company bank account attachments, and ongoing criminal prosecution.
                   </p>
                 </div>
               </section>
@@ -500,27 +500,27 @@ export default function WrongfulTerminationClient() {
                 
                 <div className="prose prose-base max-w-none text-slate-650 space-y-6">
                   <p className="text-sm md:text-base leading-relaxed">
-                    Most employment recovery disputes are resolved during the initial notice phase. Companies want to avoid the legal expenses and negative branding associated with labor court trials.
+                    Most employee termination disputes reach full settlement during the initial legal notice stage. Companies prefer resolving claims quietly to protect corporate branding and avoid litigation expenses:
                   </p>
                   
                   <div className="bg-slate-50 p-6 rounded-2xl border border-slate-200 my-6 shadow-sm">
                     <h4 className="font-bold text-slate-900 text-base mb-2">The Startup Retrenchment Case</h4>
                     <p className="text-sm text-slate-600 leading-relaxed">
-                      A senior product manager at an e-commerce startup was terminated with immediate effect during a restructuring phase. The company refused to pay their 3-month notice period salary, claiming that the contract had a termination for convenience clause. The manager served a legal notice prepared by an advocate, citing the Karnataka Shops and Commercial Establishments Act. The company released the entire notice pay along with a positive relieving letter within 10 days, avoiding further escalation.
+                      An e-commerce product manager faced immediate termination during sudden organizational restructuring. The company refused three months notice pay citing termination for convenience contractual clauses. The manager served an advocate legal notice under state Shops and Establishments regulations. The company released the entire notice pay and issued positive relieving letters.
                     </p>
                   </div>
 
                   <div className="bg-slate-50 p-6 rounded-2xl border border-slate-200 my-6 shadow-sm">
                     <h4 className="font-bold text-slate-900 text-base mb-2">The Forced Resignation Dispute</h4>
                     <p className="text-sm text-slate-600 leading-relaxed">
-                      An executive was forced to submit their resignation under pressure during a closed-door meeting with HR. The executive sent a formal protest email and served a legal notice for constructive dismissal and unpaid notice salary. The company's legal cell reviewed the notice and processed a full settlement, including notice compensation, to avoid labor court litigation.
+                      An executive faced intense coercion during closed-door meetings to submit immediate resignation. The executive issued formal written protest emails and served an advocate legal notice. The company legal department reviewed the notice and released complete severance settlement.
                     </p>
                   </div>
 
                   <div className="bg-slate-50 p-6 rounded-2xl border border-slate-200 my-6 shadow-sm">
                     <h4 className="font-bold text-slate-900 text-base mb-2">The Maternity Leave Termination Dispute</h4>
                     <p className="text-sm text-slate-600 leading-relaxed">
-                      A senior designer at an advertising agency was terminated immediately after returning from maternity leave. The company claimed redundancy, but refused to pay her 3-month notice period salary and the maternity benefits. The designer served a legal notice prepared by an advocate, citing the Maternity Benefit Act, 1961, and state Shops Acts. The notice highlighted that under Section 12 of the Maternity Benefit Act, it is unlawful for an employer to discharge a woman during her pregnancy or maternity leave. The agency's board settled the matter within a week, paying the full maternity dues, notice pay, and damages to prevent regulatory prosecution.
+                      An advertising agency designer faced termination immediately after resuming duties following maternity leave. The agency refused three months notice pay and statutory maternity benefit payments. The designer served a legal notice under the Maternity Benefit Act 1961. Section 12 makes discharging pregnant or nursing employees strictly unlawful under Indian law. The company board settled the dispute within a week by paying full compensation.
                     </p>
                   </div>
                 </div>
@@ -569,7 +569,7 @@ export default function WrongfulTerminationClient() {
                 <div className="absolute top-0 right-0 w-24 h-24 bg-red-600/10 rounded-full blur-xl pointer-events-none" />
                 <h3 className="text-sm font-black mb-3">Need Legal Advice?</h3>
                 <p className="text-gray-400 mb-5 text-[11px] leading-relaxed">
-                  Discuss your money recovery case with legal experts. We draft and serve legally compliant notices tailored to your transaction.
+                  Discuss your employment recovery case with experienced labor law advocates. We draft legally compliant notices tailored to recover your outstanding salary and severance.
                 </p>
                 <button 
                   onClick={() => setIsPaymentModalOpen(true)}
@@ -589,7 +589,7 @@ export default function WrongfulTerminationClient() {
             <div className="text-center mb-12">
               <h2 className="text-2xl md:text-4xl font-black mb-4">Termination Notice Reviews</h2>
               <p className="text-slate-400 text-sm md:text-base max-w-2xl mx-auto">
-                Read how separated employees have successfully resolved wrongful termination disputes using our legal guides.
+                Read how separated employees successfully resolved wrongful termination disputes using our legal guides.
               </p>
             </div>
             

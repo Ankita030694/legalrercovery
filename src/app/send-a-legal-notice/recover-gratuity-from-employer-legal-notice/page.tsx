@@ -5,7 +5,7 @@ const slug = 'send-a-legal-notice/recover-gratuity-from-employer-legal-notice';
 const title = 'Legal Notice to Company for Gratuity Not Paid by Employer | Send Notice India';
 const description =
   'Employer or company withholding or delaying your gratuity payout? Send an advocate-vetted statutory legal notice under Payment of Gratuity Act 1972 to claim full gratuity with mandatory 10% interest per annum.';
-const url = `https://legalrecovery.in/${slug}`;
+const url = `https://www.legalrecovery.in/${slug}`;
 const ogImage = `/images/og/recover-gratuity-from-employer-legal-notice.jpg`;
 
 export const metadata: Metadata = {

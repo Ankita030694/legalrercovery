@@ -2,8 +2,8 @@ import { Metadata } from "next";
 import OutstandingDuesClient from "./OutstandingDuesClient";
 
 export const metadata: Metadata = {
-  title: "Recovery of Outstanding Dues from Employer: ESOPs, Commission, Retainers | LegalRecovery",
-  description: "Struggling to recover outstanding dues like sales commissions, vested ESOPs, maternity benefits, or independent retainer fees from your employer in India? Get tech-enabled legal help now.",
+  title: "Recover Outstanding Dues from Employer | LegalRecovery",
+  description: "Recover outstanding employee dues like sales commissions, ESOPs, maternity benefits, and retainers in India. Get expert legal-tech assistance today.",
   keywords: [
     "recovery of outstanding dues from employer",
     "unpaid sales commissions recovery india",

@@ -206,7 +206,7 @@ export default function TourRefundClient() {
                 {/* Section 1 */}
                 <section id="legal-rights-tour-packages-india" className="scroll-mt-32">
                   <h2 className="text-xl md:text-3xl font-black text-slate-900 mb-5 border-b-2 border-[#DC2626] pb-2 inline-block">
-                    The Statutory Foundation: Deficiency of Service and Unfair Terms in Package Tours under the Consumer Protection Act, 2019
+                    Statutory Foundation: Consumer Protection Act 2019
                   </h2>
                   <div className="prose prose-base max-w-none text-slate-650 space-y-6">
                     <p className="text-sm md:text-base leading-relaxed">
@@ -227,7 +227,7 @@ export default function TourRefundClient() {
                 {/* Section 2 */}
                 <section id="cancellation-by-operator-and-force-majeure" className="scroll-mt-32">
                   <h2 className="text-xl md:text-3xl font-black text-slate-900 mb-5 border-b-2 border-[#DC2626] pb-2 inline-block">
-                    Refund Mechanics: Unilateral Operator Cancellations, Deductions, and Force Majeure
+                    Tour Refund Rules: Cancellations &amp; Force Majeure
                   </h2>
                   <div className="prose prose-base max-w-none text-slate-650 space-y-6">
                     <p className="text-sm md:text-base leading-relaxed">
@@ -242,7 +242,7 @@ export default function TourRefundClient() {
                 {/* Section 3 */}
                 <section id="substandard-services-and-unfulfilled-itineraries" className="scroll-mt-32">
                   <h2 className="text-xl md:text-3xl font-black text-slate-900 mb-5 border-b-2 border-[#DC2626] pb-2 inline-block">
-                    deficiency of Service: Claiming Refunds for Substandard Stays, Unsafe Transport, and Missed Sightseeing
+                    Claiming Refunds for Substandard Travel Services
                   </h2>
                   <div className="prose prose-base max-w-none text-slate-650 space-y-6">
                     <p className="text-sm md:text-base leading-relaxed">
@@ -257,7 +257,7 @@ export default function TourRefundClient() {
                 {/* Section 4 */}
                 <section id="the-operator-agent-vendor-liability" className="scroll-mt-32">
                   <h2 className="text-xl md:text-3xl font-black text-slate-900 mb-5 border-b-2 border-[#DC2626] pb-2 inline-block">
-                    Establishing Liability: Holding Tour Operators, Booking Agents, and Local Vendors Accountable Jointly
+                    Holding Operators &amp; Travel Agents Jointly Liable
                   </h2>
                   <div className="prose prose-base max-w-none text-slate-650 space-y-6">
                     <p className="text-sm md:text-base leading-relaxed">
@@ -280,7 +280,7 @@ export default function TourRefundClient() {
                 {/* Section 5 */}
                 <section id="escalation-playbook-notices-edaakhil" className="scroll-mt-32">
                   <h2 className="text-xl md:text-3xl font-black text-slate-900 mb-5 border-b-2 border-[#DC2626] pb-2 inline-block">
-                    Legal Escalation Playbook: Statutory Demand Notice, NCH Grievances, and e-Daakhil Filings
+                    Legal Escalation: Notices, NCH &amp; e-Daakhil Claims
                   </h2>
                   <div className="prose prose-base max-w-none text-slate-650 space-y-6">
                     <p className="text-sm md:text-base leading-relaxed">
@@ -303,7 +303,7 @@ export default function TourRefundClient() {
                 {/* Section 6 */}
                 <section id="expert-tour-package-refund-services" className="scroll-mt-32">
                   <h2 className="text-xl md:text-3xl font-black text-slate-900 mb-5 border-b-2 border-[#DC2626] pb-2 inline-block">
-                    The LegalRecovery Advantage: Structured Advocacy and Successful Outcomes
+                    The LegalRecovery Travel Claims Advantage
                   </h2>
                   <div className="prose prose-base max-w-none text-slate-650 space-y-6">
                     <p className="text-sm md:text-base leading-relaxed">

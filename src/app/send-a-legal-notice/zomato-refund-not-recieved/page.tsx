@@ -4,7 +4,7 @@ import ZomatoRefundNotRecievedClient from './ZomatoRefundNotRecievedClient';
 const slug = 'send-a-legal-notice/zomato-refund-not-recieved';
 const title = 'Legal Notice for Zomato Refund Not Received | Draft & Send Notice';
 const description = 'Zomato refund not received or wrongfully denied? Send a formal advocate-vetted legal notice under the Consumer Protection Act to recover your money with interest and damages.';
-const url = `https://legalrecovery.in/${slug}`;
+const url = `https://www.legalrecovery.in/${slug}`;
 
 export const metadata: Metadata = {
   title,

@@ -301,7 +301,7 @@ export default function FreelancerForumClient() {
                 {/* Section 1 */}
                 <section id="consumer-court-freelancer-exclusion" className="scroll-mt-32">
                   <h2 className="text-xl md:text-3xl font-black text-slate-900 mb-5 border-b-2 border-[#DC2626] pb-2 inline-block">
-                    1. The Legal Paradox: Why Freelancers Are Excluded from Consumer Forum Protection
+                    1. Why Freelancers Cannot Use Consumer Forums
                   </h2>
                   <div className="prose prose-base max-w-none text-slate-650 space-y-6 text-sm md:text-base leading-relaxed">
                     <p>
@@ -328,7 +328,7 @@ export default function FreelancerForumClient() {
                 {/* Section 2 */}
                 <section id="civil-court-summary-suits" className="scroll-mt-32">
                   <h2 className="text-xl md:text-3xl font-black text-slate-900 mb-5 border-b-2 border-[#DC2626] pb-2 inline-block">
-                    2. Order 37 Summary Suits: The Fast-Track Civil Remedy for Written Claims
+                    2. Order 37 CPC: Fast Civil Recovery Suits
                   </h2>
                   <div className="prose prose-base max-w-none text-slate-650 space-y-6 text-sm md:text-base leading-relaxed">
                     <p>
@@ -391,7 +391,7 @@ export default function FreelancerForumClient() {
                 {/* Section 3 */}
                 <section id="regular-money-recovery-suits" className="scroll-mt-32">
                   <h2 className="text-xl md:text-3xl font-black text-slate-900 mb-5 border-b-2 border-[#DC2626] pb-2 inline-block">
-                    3. Regular Money Recovery Suits: Navigating Complex and Oral Agreements
+                    3. Regular Civil Suits for Oral Agreements
                   </h2>
                   <div className="prose prose-base max-w-none text-slate-650 space-y-6 text-sm md:text-base leading-relaxed">
                     <p>
@@ -415,7 +415,7 @@ export default function FreelancerForumClient() {
                 {/* Section 4 */}
                 <section id="msme-samadhaan-facilitation-council" className="scroll-mt-32">
                   <h2 className="text-xl md:text-3xl font-black text-slate-900 mb-5 border-b-2 border-[#DC2626] pb-2 inline-block">
-                    4. MSME Samadhaan: The Specialized Government Forum for Registered Gig Workers
+                    4. MSME Samadhaan for Registered Freelancers
                   </h2>
                   <div className="prose prose-base max-w-none text-slate-650 space-y-6 text-sm md:text-base leading-relaxed">
                     <p>
@@ -480,7 +480,7 @@ export default function FreelancerForumClient() {
                 {/* Section 5 */}
                 <section id="evidentiary-requirements-court" className="scroll-mt-32">
                   <h2 className="text-xl md:text-3xl font-black text-slate-900 mb-5 border-b-2 border-[#DC2626] pb-2 inline-block">
-                    5. Admissibility of Evidence: Proving Work Delivery and Client Default in Civil Trials
+                    5. Proving Delivery &amp; Client Default in Court
                   </h2>
                   <div className="prose prose-base max-w-none text-slate-650 space-y-6 text-sm md:text-base leading-relaxed">
                     <p>
@@ -576,7 +576,7 @@ export default function FreelancerForumClient() {
                 {/* Section 7 */}
                 <section id="court-jurisdiction-rules" className="scroll-mt-32">
                   <h2 className="text-xl md:text-3xl font-black text-slate-900 mb-5 border-b-2 border-[#DC2626] pb-2 inline-block">
-                    7. Territorial and Pecuniary Jurisdiction: Choosing the Correct Civil Court
+                    7. Choosing the Proper Court Jurisdiction
                   </h2>
                   <div className="prose prose-base max-w-none text-slate-650 space-y-6 text-sm md:text-base leading-relaxed">
                     <p>

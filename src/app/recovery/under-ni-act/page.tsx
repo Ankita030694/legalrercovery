@@ -2,8 +2,8 @@ import { Metadata } from "next";
 import NIActAmountClient from "./NIActAmountClient";
 
 export const metadata: Metadata = {
-  title: "Recover Money Under Negotiable Instruments Act in India | LegalRecovery",
-  description: "Need to recover dues under the Negotiable Instruments Act, 1881? Learn the step-by-step process for Section 138 cheque bounce filings, notices, and summary suits.",
+  title: "Recover Money Under NI Act in India | LegalRecovery",
+  description: "Recover dues under the Negotiable Instruments Act, 1881. Learn the process for Section 138 cheque bounce filings, demand notices, and summary suits.",
   keywords: [
     "recovery under negotiable instruments act",
     "section 138 ni act case process",

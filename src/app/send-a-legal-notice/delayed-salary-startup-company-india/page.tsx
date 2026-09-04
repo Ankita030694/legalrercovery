@@ -5,7 +5,7 @@ const slug = 'send-a-legal-notice/delayed-salary-startup-company-india';
 const title = 'Legal Notice to Startup Company for Delayed Salary | Recover Unpaid Dues India';
 const description =
   'Is your startup employer delaying or withholding your earned monthly salary, ESOP settlements, or reimbursement dues? Send an advocate-drafted statutory legal notice for unpaid salary under the Code on Wages 2019, Section 73 Indian Contract Act, and IBC Operational Debt rules.';
-const url = `https://legalrecovery.in/${slug}`;
+const url = `https://www.legalrecovery.in/${slug}`;
 const ogImage = `/images/og/delayed-salary-startup-company-india.jpg`;
 
 export const metadata: Metadata = {

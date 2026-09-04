@@ -2,8 +2,8 @@ import { Metadata } from "next";
 import FlightCancellationRefundClient from "./FlightCancellationRefundClient";
 
 export const metadata: Metadata = {
-  title: "Flight Cancellation Refund Denied? Recover Your Full Ticket Amount | DGCA Rules & Consumer Rights | LegalRecovery",
-  description: "Has your airline denied your flight cancellation refund, forced a credit shell, or delayed reimbursement for weeks? Learn your rights under DGCA CAR Section 3, the new 2026 refund regulations, and the Consumer Protection Act. Recover your full ticket amount with interest and compensation.",
+  title: "Recover Flight Cancellation Refund | LegalRecovery",
+  description: "Airline denied your cancellation refund or forced a credit shell? Learn DGCA CAR rules, AirSewa options, and recover your full ticket amount in India.",
   keywords: [
     "flight cancellation refund India",
     "airline refund denied India",

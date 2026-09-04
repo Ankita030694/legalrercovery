@@ -3,7 +3,7 @@ import RelativeLoanRecoveryNoticeClient from "./RelativeLoanRecoveryNoticeClient
 
 export const metadata: Metadata = {
   title: "Recover Personal Loan to Relative Without Agreement",
-  description: "Learn how to recover a personal loan given to a relative or family member without a written agreement in India. Draft a firm legal notice for an unpaid loan.",
+  description: "Learn how to recover a personal loan given to a relative without a written agreement in India. Draft a firm legal notice to recover your unpaid loan.",
   keywords: [
     "recover personal loan from relative india",
     "lent money to relative how to recover",

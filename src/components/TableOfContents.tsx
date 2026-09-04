@@ -59,7 +59,7 @@ export default function TableOfContents({ sections, orientation = 'horizontal' }
   if (orientation === 'vertical') {
     return (
       <div className="bg-white p-5 rounded-2xl border border-gray-100 shadow-sm">
-        <h3 className="text-xs font-black text-gray-400 uppercase tracking-wider mb-4">Table of Contents</h3>
+        <p className="text-xs font-black text-gray-400 uppercase tracking-wider mb-4">Table of Contents</p>
         <nav className="space-y-2.5">
           {sections.map((section) => {
             const isActive = activeId === section.id;
@@ -87,10 +87,10 @@ export default function TableOfContents({ sections, orientation = 'horizontal' }
   return (
     <div className="bg-white p-4 sm:p-5 rounded-2xl border border-gray-100 shadow-sm select-none">
       <div className="flex items-center justify-between mb-3">
-        <h3 className="text-xs font-black text-gray-400 uppercase tracking-wider flex items-center">
+        <p className="text-xs font-black text-gray-400 uppercase tracking-wider flex items-center">
           <span className="w-1.5 h-3 bg-[#DC2626] rounded-full mr-2"></span>
           Table of Contents
-        </h3>
+        </p>
         <span className="text-[9px] font-extrabold text-slate-400 uppercase tracking-wider">
           Swipe →
         </span>

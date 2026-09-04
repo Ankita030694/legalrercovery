@@ -167,7 +167,7 @@ export default function OfficeSecurityDepositClient() {
   };
 
   const tocSections = [
-    { id: "office-deposit-introduction", title: "Introduction" },
+    { id: "office-deposit-introduction", title: "Introduction to Commercial Office Deposit Recovery" },
     { id: "statutory-commercial-framework", title: "Commercial Tenancy Laws" },
     { id: "lockin-period-disputes", title: "Lock-in Period Disputes" },
     { id: "reinstatement-restoration-makegood", title: "Reinstatement Clauses" },
@@ -273,7 +273,7 @@ export default function OfficeSecurityDepositClient() {
                 
                 {/* Introduction */}
                 <section id="office-deposit-introduction" className="scroll-mt-32">
-                  <h2 className="text-xl md:text-3xl font-black text-slate-900 mb-5 border-b-2 border-[#DC2626] pb-2 inline-block">Introduction</h2>
+                  <h2 className="text-xl md:text-3xl font-black text-slate-900 mb-5 border-b-2 border-[#DC2626] pb-2 inline-block">Introduction to Commercial Office Deposit Recovery</h2>
                   <div className="prose prose-base max-w-none text-slate-650 space-y-6">
                     <p className="text-sm md:text-base leading-relaxed">
                       Leasing commercial office space is a major operational milestone for any business, whether a growing startup, a mid-sized firm, or a multinational corporation. Unlike residential tenancies, commercial leases involve significant capital expenditure. Landlords of IT parks, commercial towers, and co-working facilities routinely demand substantial security deposits, often ranging from 3 to 10 months of rent (frequently amounting to lakhs or crores of rupees). This deposit is held in trust to secure the tenant&apos;s performance under the lease deed.

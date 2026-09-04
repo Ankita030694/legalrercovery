@@ -555,6 +555,7 @@ export default function AuthorityRepliesPage() {
                       <Link
                         href={`/authority/cases?id=${reply.caseId}`}
                         target="_blank"
+                        rel="noopener noreferrer"
                         className="inline-flex items-center gap-1 text-[11px] font-extrabold text-slate-700 hover:text-[#DC2626] bg-slate-50 hover:bg-red-50 px-2.5 py-1 rounded-lg border border-slate-200 hover:border-red-200 transition-colors"
                         title="Inspect full case file in Case Inspector"
                       >
@@ -845,6 +846,7 @@ export default function AuthorityRepliesPage() {
                 <Link
                   href={`/authority/cases?id=${inspectReply.caseId}`}
                   target="_blank"
+                  rel="noopener noreferrer"
                   className="px-4 py-2 bg-[#DC2626] hover:bg-red-700 text-white font-bold text-xs rounded-xl flex items-center gap-1.5 transition-colors"
                 >
                   <span>Open in Case Inspector</span>

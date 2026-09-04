@@ -5,7 +5,7 @@ const slug = 'send-a-legal-notice/trading-scam-telegram';
 const title = 'Legal Notice for Trading Scam on Telegram | Recover Money India';
 const description =
   'Defrauded by a Telegram stock trading, IPO allocation, or crypto investment group? Send an advocate-drafted statutory legal notice under BNS Section 318(4), IT Act Section 66D, and BNSS Section 106 to freeze mule bank accounts and recover stolen funds.';
-const url = `https://legalrecovery.in/${slug}`;
+const url = `https://www.legalrecovery.in/${slug}`;
 const ogImage = `/images/og/trading-scam-telegram.jpg`;
 
 export const metadata: Metadata = {

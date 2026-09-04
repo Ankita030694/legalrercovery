@@ -2,8 +2,8 @@ import { Metadata } from "next";
 import FnfSettlementClient from "./FnfSettlementClient";
 
 export const metadata: Metadata = {
-  title: "Withholding Full and Final (FNF) Settlement? Recover Exit Dues Legally | LegalRecovery",
-  description: "Is your company refusing to clear your FNF settlement, withholding gratuity, or delaying exit clearance? Learn about legal notices, the 2-working-day wage rule, and Labour Court procedures. Start recovery online.",
+  title: "Recover Full & Final (FNF) Settlement | LegalRecovery",
+  description: "Company withholding your FNF settlement or gratuity? Learn about legal notices, the 2-day wage settlement rule, and Labour Court procedures in India.",
   keywords: [
     "withholding fnf settlement india",
     "full and final settlement rules labour law",

@@ -3,13 +3,13 @@ import PropertyDisputesClient from "./PropertyDisputesClient";
 
 export const metadata: Metadata = {
   title: "Property & Builder Disputes Legal Recovery | LegalRecovery",
-  description: "Exhaustive legal guide on recovering booking token refunds, possession delays interest, and claiming refunds for incomplete builder projects under RERA, Consumer Court, and IBC.",
+  description: "Recover booking token refunds, possession delay interest, and stalled project funds in India under RERA, Consumer Court, and IBC proceedings.",
   alternates: {
     canonical: "/services/property-and-builder-disputes",
   },
   openGraph: {
     title: "Property & Builder Disputes Legal Recovery | LegalRecovery",
-    description: "Exhaustive legal guide on recovering booking token refunds, possession delays interest, and claiming refunds for incomplete builder projects in India under RERA, Consumer Forum, and IBC.",
+    description: "Recover booking token refunds, possession delay interest, and stalled project funds in India under RERA, Consumer Court, and IBC proceedings.",
     type: "article",
     url: "/services/property-and-builder-disputes",
     images: [

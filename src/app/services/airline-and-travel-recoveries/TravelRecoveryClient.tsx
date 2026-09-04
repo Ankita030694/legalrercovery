@@ -84,7 +84,7 @@ export default function TravelRecoveryClient() {
   // Table of Contents sections
   const tocSections = useMemo(() => [
     { id: "service-overview", title: "1. Service Overview" },
-    { id: "what-we-recover", title: "2. What We Help You Recover" },
+    { id: "what-we-recover", title: "2. Airline & Travel Claims We Help You Recover" },
     { id: "dgca-charter", title: "3. The DGCA Passenger Charter" },
     { id: "montreal-convention", title: "4. The Montreal Convention" },
     { id: "train-irctc-rules", title: "5. Train & IRCTC Refund Laws" },
@@ -459,7 +459,7 @@ export default function TravelRecoveryClient() {
                 </p>
 
                 {/* 2. What We Help You Recover */}
-                <h2 id="what-we-recover">2. What We Help You Recover</h2>
+                <h2 id="what-we-recover">2. Airline & Travel Claims We Help You Recover</h2>
                 <p>
                   Disputes within the travel and hospitality sector often involve multiple distinct components. Our legal advocate panel compiles and details every single component of your outstanding travel claims to maximize the legal pressure on defaulting operators:
                 </p>

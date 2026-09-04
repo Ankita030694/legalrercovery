@@ -2,8 +2,8 @@ import { Metadata } from "next";
 import HowToSendLegalNoticeClient from "./HowToSendLegalNoticeClient";
 
 export const metadata: Metadata = {
-  title: "How to Send a Legal Notice for Recovery of Money in India: Step-by-Step Guide",
-  description: "Learn the exact step-by-step process of drafting, serving, and dispatching a legal notice for recovery of money (loans, commercial dues, freelancer fees) online in India.",
+  title: "How to Send a Legal Notice for Money Recovery in India",
+  description: "Step-by-step guide to drafting and sending a legal notice for money recovery (loans, dues, freelancer fees) online via Speed Post in India.",
   keywords: [
     "how to send legal notice for recovery of money",
     "step by step process legal notice money recovery",

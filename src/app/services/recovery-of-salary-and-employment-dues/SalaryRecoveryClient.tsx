@@ -80,7 +80,7 @@ export default function SalaryRecoveryClient() {
   // Table of Contents sections
   const tocSections = useMemo(() => [
     { id: "service-overview", title: "1. Service Overview" },
-    { id: "coverage-details", title: "2. What We Help You Recover" },
+    { id: "coverage-details", title: "2. Salary & Employment Dues We Help You Recover" },
     { id: "notice-strategy", title: "3. Our 3+1 Notice Strategy" },
     { id: "legal-framework", title: "4. The Indian Statutory Shield" },
     { id: "why-online-templates-fail", title: "5. Why Online Notices Fail" },
@@ -90,57 +90,57 @@ export default function SalaryRecoveryClient() {
     { id: "reviews", title: "9. Client Testimonials" }
   ], []);
 
-  // FAQs List (10 comprehensive, detailed Q&As)
+  // FAQs List (10 comprehensive, detailed Q&As rewritten for high readability)
   const faqs: FAQ[] = useMemo(() => [
     {
       id: "faq-1",
       question: "What is the time limit or limitation period to file a legal suit for salary recovery in India?",
-      answer: "Under the Limitation Act, 1963, the limitation period to file a civil suit for the recovery of unpaid salary or wages is three (3) years from the date the wages became due and payable. For labour-specific forums under the Payment of Wages Act or the Industrial Disputes Act, complaints are ideally filed within 12 months, although delayed filings may be accepted if 'sufficient cause' is shown to explain the delay under Section 5 of the Limitation Act."
+      answer: "Under the Limitation Act 1963, you have three years to file a recovery suit. The clock starts from the date your salary became due. For labour commissioner claims, you should ideally file within 12 months. However, courts can condone delays if you show sufficient cause."
     },
     {
       id: "faq-2",
       question: "Can an employer legally withhold my salary during a notice period?",
-      answer: "No. An employer cannot legally withhold salary during the notice period, provided you are fulfilling your duties as per the employment agreement. Notice pay and regular salary are statutory and contractual entitlements. Withholding them constitutes a breach of contract and a violation of the local Shops and Establishments Act. If there is a dispute regarding handovers, the employer must still pay the wages and resolve the dispute separately rather than unilaterally withholding your livelihood."
+      answer: "No. Employers cannot withhold salary during your notice period. Notice pay and monthly wages are legal employee rights. Withholding them breaches your contract and state Shops and Establishments Acts. Handover disputes must be settled separately without stopping your earnings."
     },
     {
       id: "faq-3",
       question: "What is the distinction between a 'Workman' and a 'Non-Workman' under Indian labor laws?",
-      answer: "Under Section 2(s) of the Industrial Disputes Act, 1947, a 'workman' is defined as any person employed in an industry to do manual, unskilled, skilled, technical, operational, clerical, or supervisory work. It explicitly excludes individuals employed in a primarily managerial or administrative capacity, or those in a supervisory role earning above ₹10,000 per month (though new labor codes proposed raising this threshold). Non-workmen (such as senior executives, managers, and directors) must seek dues recovery via civil courts rather than labour courts."
+      answer: "Section 2(s) of the Industrial Disputes Act 1947 defines a workman. It includes technical, clerical, manual, and operational staff. It excludes staff who hold primarily managerial or administrative roles. Non-workmen and senior managers recover unpaid salary through civil courts."
     },
     {
       id: "faq-4",
       question: "What are the legal consequences for an employer who refuses to pay Full and Final (F&F) dues?",
-      answer: "Refusing to pay F&F dues exposes the employer to civil litigation, labour department investigations, and statutory penalties. Under the Payment of Wages Act and Shops and Establishments Acts, employers are liable to pay the outstanding amount along with interest (often ranging from 12% to 18% per annum) and potentially additional penalties or fines for non-compliance. Directors and partners can also be held personally liable for wilful default of employee wages in summary civil suits."
+      answer: "Defaulting employers face labour department inquiries, civil recovery suits, and legal penalties. Courts can award unpaid wages with interest between 12% and 18% per year. In willful default cases, company directors can face direct legal liability."
     },
     {
       id: "faq-5",
       question: "Can I approach the NCLT (Insolvency Court) for unpaid salary recovery?",
-      answer: "Yes. Employees are recognized as 'Operational Creditors' under the Insolvency and Bankruptcy Code, 2016 (IBC). If a corporate employer defaults on salaries, employees (either individually or jointly) can file an insolvency petition under Section 9 of the IBC. However, the default threshold for initiating corporate insolvency is ₹1 crore (increased from ₹1 lakh). To meet this, multiple employees with pending salaries from the same corporate debtor can join together to file a joint petition."
+      answer: "Yes. Employees are recognized as Operational Creditors under the Insolvency and Bankruptcy Code (IBC). You can issue a Section 8 demand notice. If unpaid dues cross ₹1 crore, employees can join together to file an insolvency petition."
     },
     {
       id: "faq-6",
       question: "How long does it take for a legal notice to show results for unpaid salaries?",
-      answer: "In approximately 70% to 80% of salary dispute cases, a formal, advocate-backed legal notice yields results within the specified notice window - usually 15 days. Companies prefer to avoid public litigation, labour commissioner summons, or corporate insolvency filings. If the employer is professional, they typically initiate conciliation or release the undisputed portion of F&F dues immediately upon receiving the notice."
+      answer: "Most employers respond within 15 days of receiving an advocate notice. Companies want to avoid public labour disputes and court litigation. Responsible firms usually clear undisputed dues or propose a payment schedule quickly."
     },
     {
       id: "faq-7",
       question: "Are startup employees protected under the Payment of Wages Act?",
-      answer: "Yes, startup employees are fully protected. All registered commercial enterprises, including tech startups, LLPs, and private limited companies, are governed by the respective state's Shops and Establishments Act. These acts strictly mandate the timely payment of salaries (usually by the 7th or 10th of the following month) and cover provisions for termination, leave encashment, and notice pay. Startups cannot use funding delays or financial distress as a legal justification to withhold earned salaries."
+      answer: "Yes. Startup employees enjoy full legal protection under state Shops and Establishments Acts. Employers must pay monthly wages by the 7th or 10th of each month. Startups cannot use cash flow issues or funding delays to withhold earned pay."
     },
     {
       id: "faq-8",
       question: "What is wrongful termination, and can I recover damages for it?",
-      answer: "Wrongful termination occurs when an employee is dismissed in violation of their employment contract, statutory laws, or the principles of natural justice (e.g., terminated without notice, without being given a fair hearing, or without proving misconduct). In such cases, you can legally demand: 1) Back wages for the period of wrongful dismissal, 2) Severance pay as per the contract or law, and 3) General damages for mental harassment and reputational harm."
+      answer: "Wrongful termination happens when an employer fires staff without required contractual notice or fair inquiry. In such cases, you can legally demand back wages and contractual notice pay. You can also claim damages for mental harassment."
     },
     {
       id: "faq-9",
       question: "Can an employer adjust my pending salary against training bonds or non-compete clauses?",
-      answer: "Generally, no. Unilateral deductions from salaries are highly restricted under Section 7 of the Payment of Wages Act. Training bonds are only enforceable if the employer has spent actual, documented resources on specialized training (not general onboarding) and the bond amount is reasonable. Employers cannot hold your earned salary hostage to enforce non-compete or training bond terms; they must pay the salary and file a separate civil claim to enforce a valid bond."
+      answer: "No. Section 7 of the Payment of Wages Act bars unilateral pay deductions. Employers cannot hold earned salary hostage over training bonds. A company must pay your earned salary first and file a separate civil claim for disputed bonds."
     },
     {
       id: "faq-10",
       question: "What should I do if my employer has closed the office or is absconding?",
-      answer: "If the company has shut down its physical offices or the management is absconding, you should: 1) Send the legal notice to the registered office address (available on the MCA portal) and the personal residential addresses of the directors, 2) File a criminal complaint for criminal breach of trust (Section 405/406 IPC) and cheating (Section 420 IPC) at the local police station, and 3) Initiate joint recovery action before the Labour Commissioner or file an operational creditor petition under the IBC."
+      answer: "First, send your legal notice to the company's MCA registered address and directors' homes. Second, file a police complaint for criminal breach of trust under Section 405/406 IPC. Third, submit a claim before the local Labour Commissioner."
     }
   ], []);
 
@@ -303,7 +303,7 @@ export default function SalaryRecoveryClient() {
               <span className="text-[#DC2626]">Dues Legally.</span>
             </h1>
             <p className="text-[15px] md:text-[17px] text-[#4B5563] font-medium leading-[1.6] mb-6 max-w-xl select-text">
-              Reclaim unpaid Full & Final (F&F) dues, delayed salaries, performance incentives, statutory gratuity, and wrongful termination payouts in India. We launch 3 highly authoritative legal notices and provide 1 formal police complaint draft week-by-week.
+              Reclaim unpaid F&F dues, delayed salaries, incentives, and notice pay in India. We launch 3 advocate notices and provide 1 formal police complaint draft week-by-week.
             </p>
 
             {/* High-Trust Tagline Banner */}
@@ -436,53 +436,53 @@ export default function SalaryRecoveryClient() {
                 {/* 1. Service Overview */}
                 <h2 id="service-overview">1. Professional Salary & Employment Dues Recovery Service</h2>
                 <p>
-                  Employment is a mutually binding legal contract. When an employer refuses to credit your monthly salaries, delays payments indefinitely, or withholds your Full and Final (F&F) settlement, they are committing a direct breach of contract and violating the statutory labor laws of India. 
+                  Employment is a legally binding contract. When an employer delays salary or withholds your Full and Final settlement, they breach the contract. This also violates statutory Indian labour laws.
                 </p>
                 <p>
-                  The Legal Recovery <strong className="font-extrabold text-[#111827]">Salary and Employment Dues Recovery Service</strong> is a specialized, end-to-end legal tech solution designed to dismantle corporate asymmetry. We understand that well-funded companies count on employees quietly moving on because of the prohibitive cost and time of traditional litigation. We have restructured the entire recovery lifecycle into an aggressive, automated, and attorney-verified pre-litigation pipeline to force employers to settle your dues quickly.
+                  Our <strong className="font-extrabold text-[#111827]">Salary and Employment Dues Recovery Service</strong> protects your workplace rights. Many companies rely on employees walking away due to the cost of regular litigation. We solve this through a swift, structured, attorney-backed recovery process.
                 </p>
                 <blockquote>
-                  <strong>Our Service Promise:</strong> We provide comprehensive, flat-fee recovery support with absolutely <strong>zero commissions</strong> taken on your recovered money. We draft, validate, and launch progressive legal notices designed to reach the top decision-makers at your former company.
+                  <strong>Our Service Promise:</strong> We provide complete recovery support for a flat fee. We take <strong>zero commission</strong> on your recovered money. We draft, verify, and deliver firm legal notices directly to company leadership.
                 </blockquote>
                 <p>
-                  No company - regardless of its scale, startup status, or institutional backing - can legally withhold your earned salary. Let our platform take the burden of writing, executing, and tracking your legal claims so you can reclaim your hard-earned earnings.
+                  No company can lawfully withhold your earned earnings. We manage drafting, notice delivery, and tracking so you can recover what is rightfully yours.
                 </p>
 
                 {/* 2. What We Help You Recover */}
-                <h2 id="coverage-details">2. What We Help You Recover</h2>
+                <h2 id="coverage-details">2. Salary & Employment Dues We Help You Recover</h2>
                 <p>
-                  An outstanding employment claim is rarely limited to basic salary alone. Our legal panel compiles and details every single component of your outstanding remuneration to maximize the impact of your claim.
+                  Salary claims often include multiple pay components. Our legal panel calculates every pending amount to build an airtight claim.
                 </p>
                 
                 <h3 id="unpaid-salaries">A. Unpaid Salaries & Cumulative Delayed Wages</h3>
                 <p>
-                  We recover unpaid base salaries, Special Allowances, House Rent Allowance (HRA), and other standard monthly pay structures detailed in your appointment letter. Under state Shops and Establishments laws, withholding these payments is a severe statutory default.
+                  We recover unpaid base salaries, HRA, and standard monthly allowances shown on your appointment letter. State Shops and Establishments laws strictly punish employers who withhold monthly wages.
                 </p>
 
                 <h3 id="ff-settlements">B. Unpaid Full & Final (F&F) Settlement Dues</h3>
                 <p>
-                  Upon your resignation or termination, companies are legally mandated to clear your outstanding account. Our notice pipeline targets the delay in F&F dues, enforcing the strict payment timelines outlined under state laws and the Code on Wages.
+                  Companies must settle all accounts promptly upon resignation or termination. Our notice demands immediate release of your full F&F balance under statutory payment timelines.
                 </p>
 
                 <h3 id="incentives">C. Performance Bonuses, Commissions & Incentives</h3>
                 <p>
-                  Employers often label bonuses and sales incentives as "discretionary" to justify withholding them. If your appointment letter outlines target criteria and you have written proof (emails or scorecards) of achieving them, we treat these components as enforceable contractual debts in our legal notices.
+                  Employers often call bonuses discretionary to avoid paying them. When target terms are documented and achieved, they become legally enforceable debts.
                 </p>
 
                 <h3 id="notice-severance">D. Notice Period Salaries & Severance Pay</h3>
                 <p>
-                  If you were terminated without the contractually stipulated notice period, you are legally entitled to receive notice pay. We recover the notice period salary in lieu of notice and contractual severance amounts.
+                  If a company terminates you without notice, you are entitled to notice pay. We recover your contractually guaranteed notice salary and agreed severance benefits.
                 </p>
 
                 <h3 id="withheld-gratuity">E. Withheld Gratuity & Leave Encashment</h3>
                 <p>
-                  Under the <strong className="font-extrabold text-[#111827]">Payment of Gratuity Act, 1972</strong>, employees completing continuous service are entitled to gratuity. We compute and claim your outstanding gratuity - demanding statutory interest for every day of delay - along with the financial value of your accumulated privilege leaves.
+                  Under the <strong className="font-extrabold text-[#111827]">Payment of Gratuity Act, 1972</strong>, eligible staff must receive gratuity within 30 days. We claim your unpaid gratuity with statutory interest, plus payment for unused privilege leaves.
                 </p>
 
                 {/* 3. Our 3+1 Notice Strategy */}
                 <h2 id="notice-strategy">3. Our 3+1 Notice Strategy: Engineered for Maximum Pressure</h2>
                 <p>
-                  Traditional court cases are painfully slow. Most companies ignore a single legal letter, assuming the employee will not pursue the matter further. To counter this, LegalRecovery utilizes an aggressive <strong className="font-extrabold text-[#111827]">3-stage progressive notice pipeline combined with a criminal police complaint draft</strong> to systematically escalate pressure.
+                  Court litigation takes time. Defaulters often ignore a single letter, hoping you drop the matter. We use a <strong className="font-extrabold text-[#111827]">3-stage notice pipeline and a formal police complaint draft</strong> to build consistent pressure.
                 </p>
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6 my-8">
                   <div className="bg-[#F9FAFB] p-5 rounded-2xl border border-[#E5E7EB]">
@@ -491,7 +491,7 @@ export default function SalaryRecoveryClient() {
                       <h4 className="font-extrabold text-[#111827] text-sm">Stage 1: Advocate Demand Notice</h4>
                     </div>
                     <p className="text-xs text-[#4B5563] leading-relaxed">
-                      We launch a highly authoritative demand notice on a practicing advocate's letterhead. This notice is served via digital pipelines (Email, WhatsApp) and physical registered post, giving the employer a strict 15-day window to clear undisputed dues.
+                      We issue a formal legal notice on an advocate letterhead. We serve it via email, WhatsApp, and registered speed post with a 15-day deadline.
                     </p>
                   </div>
 
@@ -501,7 +501,7 @@ export default function SalaryRecoveryClient() {
                       <h4 className="font-extrabold text-[#111827] text-sm">Stage 2: Board & Investor Escalation</h4>
                     </div>
                     <p className="text-xs text-[#4B5563] leading-relaxed">
-                      If ignored, we serve Notice 2 directly to the company's Board of Directors, key institutional investors, and startup partners. We attach daily interest calculations (18% p.a.) and outline personal director liabilities.
+                      If unanswered, we escalate to company directors and key investors. We highlight director liabilities and calculate ongoing interest at 18% per annum.
                     </p>
                   </div>
 
@@ -511,7 +511,7 @@ export default function SalaryRecoveryClient() {
                       <h4 className="font-extrabold text-[#111827] text-sm">Stage 3: Pre-Litigation Warning</h4>
                     </div>
                     <p className="text-xs text-[#4B5563] leading-relaxed">
-                      We deliver a final pre-litigation warning package, including finalized drafts of a civil recovery suit (Order 37 CPC) and an operational creditor demand under the IBC. This signals that our legal machinery is fully prepared to approach the courts.
+                      We issue a final court warning. This includes drafts for an Order 37 CPC summary suit and an IBC insolvency claim.
                     </p>
                   </div>
 
@@ -521,48 +521,48 @@ export default function SalaryRecoveryClient() {
                       <h4 className="font-extrabold text-[#111827] text-sm">Criminal Police Complaint Draft</h4>
                     </div>
                     <p className="text-xs text-[#4B5563] leading-relaxed">
-                      Simultaneously, we provide you with a meticulously compiled criminal police complaint draft for <strong className="font-extrabold text-[#111827]">Criminal Breach of Trust (Section 405/406 IPC)</strong> and Cheating (Section 420 IPC). Filing this at your local station creates immediate, non-bailable pressure on directors.
+                      We draft a police complaint for <strong className="font-extrabold text-[#111827]">Criminal Breach of Trust (Section 405/406 IPC)</strong> and Cheating (Section 420 IPC). This creates immediate accountability for defaulting directors.
                     </p>
                   </div>
                 </div>
                 <p>
-                  By moving through these four distinct escalation stages week-by-week, we make it highly expensive, legally risky, and operationally disruptive for the employer to continue withholding your money.
+                  This multi-step escalation makes withholding your salary risky and legally challenging for the employer.
                 </p>
 
                 {/* 4. The Indian Statutory Shield */}
                 <h2 id="legal-framework">4. The Indian Statutory Shield: Know Your Rights</h2>
                 <p>
-                  India's legal framework provides employees with robust statutory protections. Our advocate panel leverages these specific acts and sections to build a bulletproof case against defaulting employers:
+                  Indian law strongly protects worker rights. Our advocates use these statutes to compel defaulting employers to pay:
                 </p>
                 <ul>
-                  <li><strong>The Payment of Wages Act, 1936:</strong> Dictates that salaries must be paid on time without unauthorized deductions (Section 7). In case of defaults, employees can demand the principal amount along with interest and damages (Section 15).</li>
-                  <li><strong>The Industrial Disputes Act, 1947 (Section 33C):</strong> Empowers individuals classified as 'Workmen' (non-managerial staff) to directly approach the Labour Court for recovery of outstanding monies due from an employer.</li>
-                  <li><strong>Respective State Shops and Establishments Acts:</strong> Every commercial establishment must register under these state acts (e.g., Delhi, Maharashtra, Karnataka). They strictly govern working hours, leave policies, and provide local Inspectors who have summary powers to investigate salary disputes.</li>
-                  <li><strong>Payment of Gratuity Act, 1972:</strong> Restricts employers from withholding gratuity past 30 days of separation (Section 7). Delays attract mandatory simple interest from the date the gratuity became due.</li>
-                  <li><strong>Insolvency & Bankruptcy Code, 2016 (IBC):</strong> Recognizes employees as <strong className="font-extrabold text-[#111827]">Operational Creditors</strong>. Serving a Section 8 demand notice often forces companies to pay up immediately to prevent the NCLT from taking over their corporate management.</li>
+                  <li><strong>The Payment of Wages Act, 1936:</strong> Requires timely salary release under Section 7. Employees can demand unpaid wages with statutory damages under Section 15.</li>
+                  <li><strong>The Industrial Disputes Act, 1947 (Section 33C):</strong> Allows workmen to recover dues directly through the Labour Court.</li>
+                  <li><strong>State Shops and Establishments Acts:</strong> Regulate working hours, leave rules, and pay cycles for commercial establishments. Local labour inspectors can summon non-compliant employers.</li>
+                  <li><strong>Payment of Gratuity Act, 1972:</strong> Requires gratuity payment within 30 days under Section 7. Delays attract mandatory statutory interest.</li>
+                  <li><strong>Insolvency & Bankruptcy Code, 2016 (IBC):</strong> Treats employees as <strong className="font-extrabold text-[#111827]">Operational Creditors</strong>. A Section 8 demand notice often prompts fast settlement.</li>
                 </ul>
 
                 {/* 5. Why Online Templates Fail */}
                 <h2 id="why-online-templates-fail">5. Why Free Online Notice Templates Fail</h2>
                 <p>
-                  Many professionals try to copy free legal notice formats from online blogs. While this seems cost-effective, it almost always fails to produce results:
+                  Many people use free legal notice formats found online. These generic templates rarely deliver results:
                 </p>
                 <ul>
-                  <li><strong>Lack of Attorney Verification:</strong> Free templates do not carry the seal, signature, and letterhead of a registered, practicing advocate. Corporate legal teams immediately recognize these as amateur attempts and file them away.</li>
-                  <li><strong>Incorrect Legal Citing:</strong> Online formats rarely match your specific state’s Shops & Establishments Act, your exact workman classification under Section 2(s) of the Industrial Disputes Act, or correct CPC summary suit clauses.</li>
-                  <li><strong>No Systematic Escalation:</strong> A single, isolated letter sent via standard post does not build compounding pressure. Companies know that without automated digital tracking and week-by-week follow-up notices, the employee will likely lose momentum.</li>
+                  <li><strong>No Advocate Verification:</strong> Free formats lack a verified advocate signature and official letterhead. Corporate legal teams easily ignore them.</li>
+                  <li><strong>Wrong Legal References:</strong> Generic templates miss state-specific Shops and Establishments Acts and workman rules under Section 2(s).</li>
+                  <li><strong>No Systematic Follow-up:</strong> One lone notice is easy to overlook. Without structured escalation, employers know individuals often give up.</li>
                 </ul>
                 <p>
-                  LegalRecovery provides you with attorney-signed, state-customized notice campaigns. We use real-time digital read receipts to track when the HR opened the email, leaving them with absolutely no room to claim they never received the demand.
+                  LegalRecovery delivers verified, customized notice campaigns. We track delivery with digital read receipts so employers cannot claim they never received your demand.
                 </p>
 
                 {/* 6. Transparent Flat Pricing */}
                 <h2 id="service-pricing">6. Transparent Flat Pricing</h2>
                 <p>
-                  Traditional advocates charge thousands of rupees per consultation and demand additional percentages (commissions) on the recovered amount. We believe this is highly exploitative. 
+                  Many lawyers charge hefty consultation fees and take percentages of your recovered money. We do not do that.
                 </p>
                 <p>
-                  LegalRecovery provides professional, attorney-verified salary recovery campaigns for a single, flat fee of <strong className="font-extrabold text-[#111827]">₹999</strong>. We charge absolutely zero hidden fees and take zero commission on your recovered money.
+                  We offer a complete, attorney-verified salary recovery package for a flat fee of <strong className="font-extrabold text-[#111827]">₹999</strong>. You pay no commissions and face zero hidden charges.
                 </p>
 
                 {/* Pixel-perfect reproduction of the home page unified pricing container */}
@@ -653,14 +653,14 @@ export default function SalaryRecoveryClient() {
                 {/* 7. Evidentiary Checklist */}
                 <h2 id="documentation-needed">7. The Evidentiary Checklist for Salary Recovery</h2>
                 <p>
-                  To initiate your case on our platform, you will need to gather simple, standard work records to prove your claim. Our advocates will utilize these records to compile a flawless case profile:
+                  To start your recovery, gather common workplace records. Our advocates will use these documents to build your claim:
                 </p>
                 <ul>
-                  <li><strong>Appointment Letter / Work Contract:</strong> Documents your design, agreed monthly salary, notice period conditions, and work location.</li>
-                  <li><strong>Salary Slips:</strong> Validates your monthly structural payscales and demonstrates any sudden, unilateral deductions.</li>
-                  <li><strong>Bank Account Statement:</strong> Serves as absolute proof of non-payment by demonstrating the sudden cessation of incoming salary credits.</li>
-                  <li><strong>Resignation Email / Separation Letter:</strong> Establishes the date your employment concluded and the F&F terms.</li>
-                  <li><strong>Written Correspondence:</strong> Slack screenshots, HR emails, or WhatsApp chats showing your repeated requests for pending wages.</li>
+                  <li><strong>Appointment Letter or Contract:</strong> Shows your role, agreed monthly pay, notice period terms, and work location.</li>
+                  <li><strong>Salary Slips:</strong> Proves your pay structure and reveals any unauthorized deductions.</li>
+                  <li><strong>Bank Account Statement:</strong> Serves as clear proof of unpaid wages by showing when credits stopped.</li>
+                  <li><strong>Resignation or Termination Email:</strong> Verifies your last working day and settlement terms.</li>
+                  <li><strong>Written Messages:</strong> Work emails, Slack messages, or WhatsApp chats proving requests for payment.</li>
                 </ul>
 
               </div>

@@ -3,7 +3,7 @@ import CarDealerNoticeClient from "./CarDealerNoticeClient";
 
 export const metadata: Metadata = {
   title: "Legal Notice to Car Dealer: Defect & Delayed Delivery",
-  description: "Learn how to hold car dealerships and manufacturers accountable for delayed deliveries and manufacturing defects. Draft a legal notice for vehicle replacement or refund.",
+  description: "Hold car dealers and manufacturers accountable for delayed delivery or vehicle defects. Draft a legal notice for vehicle replacement or refund in India.",
   keywords: [
     "legal notice to car dealer for delayed delivery",
     "lemon car refund legal notice format",

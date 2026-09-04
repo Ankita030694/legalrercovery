@@ -3,7 +3,7 @@ import FreelancerEvidenceClient from "./FreelancerEvidenceClient";
 
 export const metadata: Metadata = {
   title: "Evidence Checklist for Freelancer Payment Recovery in India",
-  description: "A comprehensive guide on the evidence a freelancer in India must collect to recover unpaid dues. Learn about digital evidence, Section 63 BSA, and contract proofs.",
+  description: "Essential evidence checklist for freelancers in India to recover unpaid dues. Learn about digital proof, Section 63 BSA certificates, and contracts.",
   keywords: [
     "freelancer evidence collection",
     "prove work delivery freelancer",

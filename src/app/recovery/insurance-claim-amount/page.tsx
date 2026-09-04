@@ -3,7 +3,7 @@ import InsuranceClaimAmountClient from "./InsuranceClaimAmountClient";
 
 export const metadata: Metadata = {
   title: "Recover Insurance Claim Amount in India | LegalRecovery",
-  description: "Has your insurance claim been wrongfully rejected or delayed? Learn about the IRDAI settlement guidelines, 2% interest penalties on delays, and how to file a complaint with the Insurance Ombudsman.",
+  description: "Insurance claim rejected or delayed? Learn about IRDAI settlement rules, penal interest on delays, and how to file an Insurance Ombudsman complaint.",
   keywords: [
     "recover insurance claim amount",
     "wrongful insurance claim rejection refund",

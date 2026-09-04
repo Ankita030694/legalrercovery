@@ -6,7 +6,7 @@ const title =
   'Legal Notice to Company for Leave Encashment Not Paid by Employer | Draft & Send Notice India';
 const description =
   'Company refusing or delaying earned leave encashment in Full & Final (F&F) settlement? Send an advocate-vetted statutory legal notice for unpaid leave encashment under the Factories Act 1948, State Shops & Establishments Act, Payment of Wages Act, and Code on Wages.';
-const url = `https://legalrecovery.in/${slug}`;
+const url = `https://www.legalrecovery.in/${slug}`;
 const ogImage = `/images/og/leave-encashment-not-paid-by-employer.jpg`;
 
 export const metadata: Metadata = {

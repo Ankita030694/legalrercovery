@@ -300,7 +300,7 @@ export default function FriendNoticeClient() {
                 {/* Section 1 */}
                 <section id="personal-loan-recovery-statutory-basis" className="scroll-mt-32">
                   <h2 className="text-xl md:text-3xl font-black text-slate-900 mb-5 border-b-2 border-[#DC2626] pb-2 inline-block">
-                    1. The Statutory Framework: Indian Contract Act and Interest Act Rules for Friendly Loans
+                    1. Legal Rules for Friendly Loans in India
                   </h2>
                   <div className="prose prose-base max-w-none text-slate-650 space-y-6 text-sm md:text-base leading-relaxed">
                     <p>
@@ -359,7 +359,7 @@ export default function FriendNoticeClient() {
                 {/* Section 3 */}
                 <section id="advocate-vs-personal-demand-letter" className="scroll-mt-32">
                   <h2 className="text-xl md:text-3xl font-black text-slate-900 mb-5 border-b-2 border-[#DC2626] pb-2 inline-block">
-                    3. Advocate Letterhead vs. Personal Demands: The Legal & Psychological Advantages
+                    3. Advocate Notice vs Personal Reminders
                   </h2>
                   <div className="prose prose-base max-w-none text-slate-650 space-y-6 text-sm md:text-base leading-relaxed">
                     <p>
@@ -380,7 +380,7 @@ export default function FriendNoticeClient() {
                 {/* Section 4 */}
                 <section id="proving-friendly-loan-evidence-checklist" className="scroll-mt-32">
                   <h2 className="text-xl md:text-3xl font-black text-slate-900 mb-5 border-b-2 border-[#DC2626] pb-2 inline-block">
-                    4. Evidentiary Core: Building a Case Without a Formal Written Agreement
+                    4. Loan Evidence Without Written Agreements
                   </h2>
                   <div className="prose prose-base max-w-none text-slate-650 space-y-6 text-sm md:text-base leading-relaxed">
                     <p>
@@ -412,7 +412,7 @@ export default function FriendNoticeClient() {
                 {/* Section 5 */}
                 <section id="electronic-evidence-bsa-certification" className="scroll-mt-32">
                   <h2 className="text-xl md:text-3xl font-black text-slate-900 mb-5 border-b-2 border-[#DC2626] pb-2 inline-block">
-                    5. Digital Notices and BSA Compliance: Electronic Evidence under BNS/BSA 2023
+                    5. Digital Evidence Under BNS &amp; BSA 2023
                   </h2>
                   <div className="prose prose-base max-w-none text-slate-650 space-y-6 text-sm md:text-base leading-relaxed">
                     <p>
@@ -463,7 +463,7 @@ export default function FriendNoticeClient() {
                 {/* Section 6 */}
                 <section id="service-of-notice-and-deemed-delivery" className="scroll-mt-32">
                   <h2 className="text-xl md:text-3xl font-black text-slate-900 mb-5 border-b-2 border-[#DC2626] pb-2 inline-block">
-                    6. Proof of Physical Service: Speed Post, Registered Post, and Deemed Service Rules
+                    6. Speed Post Delivery &amp; Deemed Service Rules
                   </h2>
                   <div className="prose prose-base max-w-none text-slate-650 space-y-6 text-sm md:text-base leading-relaxed">
                     <p>
@@ -484,7 +484,7 @@ export default function FriendNoticeClient() {
                 {/* Section 7 */}
                 <section id="civil-recovery-order-37-suits" className="scroll-mt-32">
                   <h2 className="text-xl md:text-3xl font-black text-slate-900 mb-5 border-b-2 border-[#DC2626] pb-2 inline-block">
-                    7. Civil Litigation Paths: Filing Summary Suits and Regular Recovery Suits
+                    7. Summary Suits &amp; Civil Court Recovery Steps
                   </h2>
                   <div className="prose prose-base max-w-none text-slate-650 space-y-6 text-sm md:text-base leading-relaxed">
                     <p>
@@ -533,7 +533,7 @@ export default function FriendNoticeClient() {
                 {/* Section 8 */}
                 <section id="criminal-remedies-cheating-breach-of-trust" className="scroll-mt-32">
                   <h2 className="text-xl md:text-3xl font-black text-slate-900 mb-5 border-b-2 border-[#DC2626] pb-2 inline-block">
-                    8. Criminal Recourse Options: Cheque Bounce Complaints and Criminal Breach of Trust
+                    8. Section 138 Bounce &amp; Criminal Breach Rules
                   </h2>
                   <div className="prose prose-base max-w-none text-slate-650 space-y-6 text-sm md:text-base leading-relaxed">
                     <p>

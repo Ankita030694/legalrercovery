@@ -6,7 +6,7 @@ export const metadata: Metadata = {
       "About Legal Recovery | Consumer Claims & Money Recovery",
   },
   description:
-    "Learn how Legal Recovery helps individuals and businesses recover stuck money, refunds, salaries, deposits, and unpaid dues through affordable legal escalation and technology.",
+    "Learn how Legal Recovery helps recover stuck money, refunds, salaries, deposits, and unpaid dues through affordable legal escalation and technology.",
   alternates: {
     canonical: "/about",
   },

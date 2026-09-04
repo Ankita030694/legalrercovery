@@ -2,8 +2,8 @@ import { Metadata } from "next";
 import FreelancerPaymentsClient from "./FreelancerPaymentsClient";
 
 export const metadata: Metadata = {
-  title: "Recover Unpaid Freelancer Payments & Consultant Fees | LegalRecovery",
-  description: "Struggling to recover unpaid freelance payments, gig worker fees, or independent contractor dues in India? Learn about contract enforcement, Order 37 CPC summary suits, and legal notices.",
+  title: "Recover Unpaid Freelancer Payments | LegalRecovery",
+  description: "Recover unpaid freelance payments or contractor dues in India. Learn contract enforcement, Order 37 CPC summary suits, and legal notice procedures.",
   keywords: [
     "recover unpaid freelancer payments India",
     "freelance payment default legal notice",

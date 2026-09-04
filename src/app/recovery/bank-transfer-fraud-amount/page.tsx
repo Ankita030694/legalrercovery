@@ -3,7 +3,7 @@ import BankTransferFraudClient from "./BankTransferFraudClient";
 
 export const metadata: Metadata = {
   title: "Recover Bank Transfer Fraud Amount in India | LegalRecovery",
-  description: "Victim of an unauthorized net banking debit, RTGS/NEFT fraud, or phishing transfer? Learn about the RBI customer protection circular, interbank recall processes, and legal notices.",
+  description: "Victim of unauthorized net banking, RTGS, or NEFT fraud? Learn about RBI customer protection circulars, interbank recall steps, and legal notices.",
   keywords: [
     "recover bank transfer fraud amount",
     "unauthorized net banking transfer refund",

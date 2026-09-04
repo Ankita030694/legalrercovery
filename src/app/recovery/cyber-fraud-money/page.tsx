@@ -3,7 +3,7 @@ import CyberFraudClient from "./CyberFraudClient";
 
 export const metadata: Metadata = {
   title: "Recover Cyber Fraud Money in India | LegalRecovery",
-  description: "Victim of online trading scams, task frauds, or banking cyber crime? Learn how to freeze mule accounts, leverage the 1930 helpline, and obtain court recovery orders.",
+  description: "Victim of online trading scams or banking cyber crime? Learn how to freeze mule accounts, use the 1930 helpline, and obtain court fund release orders.",
   keywords: [
     "recover cyber fraud money",
     "cyber crime money recovery legal process",

@@ -3,7 +3,7 @@ import FriendNoticeClient from "./FriendNoticeClient";
 
 export const metadata: Metadata = {
   title: "How to Send a Legal Notice to a Friend for Personal Loan?",
-  description: "A comprehensive guide on sending a legal notice to a friend in India for not repaying a personal loan. Understand drafting rules, evidence checklists, and legal recourse.",
+  description: "Guide on sending a legal notice to a friend in India for an unpaid personal loan. Understand drafting rules, evidence checklists, and legal remedies.",
   keywords: [
     "send legal notice to friend for money recovery",
     "legal notice for personal loan recovery",

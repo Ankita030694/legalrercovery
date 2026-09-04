@@ -2,8 +2,8 @@ import { Metadata } from "next";
 import MSMEDuesClient from "./MSMEDuesClient";
 
 export const metadata: Metadata = {
-  title: "Recover Unpaid MSME Dues & B2B Delayed Payments | LegalRecovery",
-  description: "Struggling with outstanding B2B payments from corporate buyers? Learn about MSMED Act 2006 protections, 45-day payment limits, 3x RBI interest rates, and MSEFC filing on the Samadhaan portal.",
+  title: "Recover Unpaid MSME Dues & Payments | LegalRecovery",
+  description: "Struggling with unpaid B2B dues? Learn about MSMED Act 2006 protections, 45-day payment rules, 3x RBI interest rates, and Samadhaan portal filing.",
   keywords: [
     "MSME dues recovery India",
     "delayed payment to MSME",

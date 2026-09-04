@@ -2,8 +2,8 @@ import { Metadata } from "next";
 import InternationalClientPaymentClient from "./InternationalClientPaymentClient";
 
 export const metadata: Metadata = {
-  title: "Recover Unpaid International Client Payments & B2B Dues | LegalRecovery",
-  description: "Struggling to recover unpaid invoices from international clients or foreign businesses? Learn about cross-border debt recovery, FEMA compliance, EDPMS tracking, and legal notices.",
+  title: "Recover International Client Payments | LegalRecovery",
+  description: "Recover unpaid foreign client invoices in India. Learn about cross-border debt recovery, FEMA compliance, EDPMS tracking, and legal notice options.",
   keywords: [
     "recover international client payment India",
     "unpaid foreign invoice legal notice",

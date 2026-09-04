@@ -3,7 +3,7 @@ import PendingOvertimeClient from "./PendingOvertimeClient";
 
 export const metadata: Metadata = {
   title: "Recover Unpaid Overtime Compensation & Dues | LegalRecovery",
-  description: "Struggling to recover pending overtime payment or late overtime wages in India? Learn about the Factories Act, Shops and Establishments Act, and legal notices.",
+  description: "Recover pending overtime payment or late wages in India. Learn about the Factories Act, Shops and Establishments Act, and legal notice remedies.",
   keywords: [
     "recover unpaid overtime India",
     "overtime calculation formula labor law",

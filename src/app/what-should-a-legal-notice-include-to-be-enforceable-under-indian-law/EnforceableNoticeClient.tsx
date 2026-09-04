@@ -301,7 +301,7 @@ export default function EnforceableNoticeClient() {
                 {/* Section 1 */}
                 <section id="notice-enforceability-concept" className="scroll-mt-32">
                   <h2 className="text-xl md:text-3xl font-black text-slate-900 mb-5 border-b-2 border-[#DC2626] pb-2 inline-block">
-                    1. The Jurisprudential Basis of a Legal Notice &amp; Its Enforceability Metrics
+                    1. Legal Basis &amp; Enforceability of Demand Notices
                   </h2>
                   <div className="prose prose-base max-w-none text-slate-650 space-y-6 text-sm md:text-base leading-relaxed">
                     <p>
@@ -328,7 +328,7 @@ export default function EnforceableNoticeClient() {
                 {/* Section 2 */}
                 <section id="identifying-parties-correctly" className="scroll-mt-32">
                   <h2 className="text-xl md:text-3xl font-black text-slate-900 mb-5 border-b-2 border-[#DC2626] pb-2 inline-block">
-                    2. Precision in Party Identification: Piercing Corporate Shields and Tracing Entities
+                    2. Party Identification &amp; Tracing Corporate Entities
                   </h2>
                   <div className="prose prose-base max-w-none text-slate-650 space-y-6 text-sm md:text-base leading-relaxed">
                     <p>
@@ -371,7 +371,7 @@ export default function EnforceableNoticeClient() {
                 {/* Section 3 */}
                 <section id="factual-chronology-narrative" className="scroll-mt-32">
                   <h2 className="text-xl md:text-3xl font-black text-slate-900 mb-5 border-b-2 border-[#DC2626] pb-2 inline-block">
-                    3. The Factual Baseline: Chronological Narrative, Cause of Action, and Contractual Bindings
+                    3. Stating the Facts, Cause of Action &amp; Contracts
                   </h2>
                   <div className="prose prose-base max-w-none text-slate-650 space-y-6 text-sm md:text-base leading-relaxed">
                     <p>
@@ -403,7 +403,7 @@ export default function EnforceableNoticeClient() {
                 {/* Section 4 */}
                 <section id="statutory-grounds-citations" className="scroll-mt-32">
                   <h2 className="text-xl md:text-3xl font-black text-slate-900 mb-5 border-b-2 border-[#DC2626] pb-2 inline-block">
-                    4. Statutory Framing: Citing Core Acts, Breach Thresholds, and Damages Clauses
+                    4. Statutory Framing: Core Acts &amp; Damages Clauses
                   </h2>
                   <div className="prose prose-base max-w-none text-slate-650 space-y-6 text-sm md:text-base leading-relaxed">
                     <p>
@@ -465,7 +465,7 @@ export default function EnforceableNoticeClient() {
                 {/* Section 5 */}
                 <section id="prayer-remedy-ultimatum" className="scroll-mt-32">
                   <h2 className="text-xl md:text-3xl font-black text-slate-900 mb-5 border-b-2 border-[#DC2626] pb-2 inline-block">
-                    5. The Ultimatum: The Cure Window, Relational Consequences, and Prayer for Relief
+                    5. The Ultimatum: Cure Window &amp; Demanded Relief
                   </h2>
                   <div className="prose prose-base max-w-none text-slate-650 space-y-6 text-sm md:text-base leading-relaxed">
                     <p>
@@ -506,7 +506,7 @@ export default function EnforceableNoticeClient() {
                 {/* Section 6 */}
                 <section id="service-and-delivery-forensics" className="scroll-mt-32">
                   <h2 className="text-xl md:text-3xl font-black text-slate-900 mb-5 border-b-2 border-[#DC2626] pb-2 inline-block">
-                    6. Airtight Service Protocols: Traditional Speed Post, Deemed Service, and Digital Forensics
+                    6. Service Protocols: Speed Post &amp; Digital Delivery
                   </h2>
                   <div className="prose prose-base max-w-none text-slate-650 space-y-6 text-sm md:text-base leading-relaxed">
                     <p>
@@ -546,7 +546,7 @@ export default function EnforceableNoticeClient() {
                 {/* Section 7 */}
                 <section id="recipient-response-strategy" className="scroll-mt-32">
                   <h2 className="text-xl md:text-3xl font-black text-slate-900 mb-5 border-b-2 border-[#DC2626] pb-2 inline-block">
-                    7. The Response Matrix: Evaluating Replies, Rejoinders, and Settlement Deeds
+                    7. Evaluating Replies, Rejoinders &amp; Settlements
                   </h2>
                   <div className="prose prose-base max-w-none text-slate-650 space-y-6 text-sm md:text-base leading-relaxed">
                     <p>
@@ -589,7 +589,7 @@ export default function EnforceableNoticeClient() {
                 {/* Section 8 */}
                 <section id="common-drafting-pitfalls" className="scroll-mt-32">
                   <h2 className="text-xl md:text-3xl font-black text-slate-900 mb-5 border-b-2 border-[#DC2626] pb-2 inline-block">
-                    8. Drafting Pitfalls: Self-Incrimination, Vague Demands, and Limitation Errors
+                    8. Common Drafting Errors &amp; Limitation Pitfalls
                   </h2>
                   <div className="prose prose-base max-w-none text-slate-650 space-y-6 text-sm md:text-base leading-relaxed">
                     <p>

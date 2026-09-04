@@ -95,52 +95,52 @@ export default function VendorInvoiceClient() {
     {
       id: "faq-1",
       question: "What is the statute of limitations to recover outstanding B2B invoice debts in India?",
-      answer: "Under the Limitation Act, 1963, the limitation period to file a civil recovery suit (including summary suits under Order 37 CPC) for unpaid commercial invoices is three (3) years. This clock begins running from the date the invoice becomes due and payable (not the date the invoice was generated), or from the date of the last partial payment or written acknowledgment of the debt by the debtor company, whichever is later."
+      answer: "Under the Limitation Act, 1963, you have three years to file a recovery case for unpaid invoices. This three-year clock starts from the invoice due date. If the debtor makes a partial payment or admits the debt in writing, the three-year limit resets from that date."
     },
     {
       id: "faq-2",
       question: "Can I use the MSME Samadhaan portal if my Udyam Registration was obtained after the invoice was generated?",
-      answer: "No. The Supreme Court of India in Silpi Industries v. Kerala State Road Transport Corporation ruled that the benefits of the MSMED Act, 2006 (including access to the MSEFC and 3x bank rate compound interest) can only be claimed for transactions that occurred *after* the micro/small enterprise was registered with a valid Udyam certificate. However, you can still recover the principal amount under standard civil laws or pursue regular recovery for invoices dated after your registration."
+      answer: "No. In Silpi Industries v. Kerala State RTC, the Supreme Court ruled that MSMED Act benefits apply only to transactions made after Udyam registration. However, you can still recover your money. You can file a civil summary suit under Order 37 CPC or take legal action through standard commercial courts."
     },
     {
       id: "faq-3",
       question: "Is the buyer liable to pay interest on delayed payments even if our contract does not mention interest?",
-      answer: "Yes, under Section 16 of the MSMED Act, 2006, if you are a registered Micro or Small Enterprise, the buyer is statutorily liable to pay compound interest at three times the RBI bank rate from the appointed day of delay, regardless of what is written in your B2B contract. For non-MSME entities, Section 34 of the CPC allows courts to award interest at reasonable commercial rates (usually 9% to 12% per annum) on outstanding transactions if a clear demand for interest was made in your invoices or initial legal notice."
+      answer: "Yes. Under Section 16 of the MSMED Act, registered MSMEs are entitled to compound interest at three times the RBI bank rate. This statutory rule overrides any contract terms. For non-MSME businesses, courts can grant commercial interest of 9% to 12% per year under Section 34 CPC."
     },
     {
       id: "faq-4",
       question: "How long does a Summary Suit (Order 37 CPC) take compared to a regular civil recovery suit?",
-      answer: "A regular civil recovery suit in India can drag on for 3 to 7 years due to extensive trials and cross-examinations. Conversely, a Summary Suit under Order 37 CPC is designed to bypass this trial phase. If the defendant fails to enter an appearance within 10 days of service, or if their application for 'Leave to Defend' is rejected by the judge because they have no realistic defense, the court immediately passes a judgment. This generally resolves cases within 6 to 18 months."
+      answer: "A regular civil lawsuit often takes 3 to 7 years in Indian courts. An Order 37 Summary Suit is much faster. The debtor must file an appearance within 10 days of receiving court summons. Unless they prove a genuine defense, the court passes a decree quickly. Most cases finish in 6 to 18 months."
     },
     {
       id: "faq-5",
       question: "Can B2B directors be held personally liable for unpaid company invoices or corporate defaults?",
-      answer: "Ordinarily, directors are protected by the doctrine of corporate personality and limited liability. However, in B2B disputes, directors can be held personally liable if: 1) They have signed a personal guarantee backing the company's B2B debt, 2) They issued corporate cheques that bounced, triggering criminal prosecution under Section 138/141 of the Negotiable Instruments Act, 3) Willful cheating or fraud under Section 420 IPC is proven, or 4) The company enters NCLT insolvency and is found guilty of fraudulent or wrongful trading under Section 66 of the IBC."
+      answer: "Yes, under specific legal conditions. Directors become personally liable if they sign a personal guarantee for company debt. They also face personal liability if company cheques bounce under Section 138 of the NI Act. Finally, fraud or cheating under Section 420 IPC creates direct personal liability."
     },
     {
       id: "faq-6",
       question: "What is the minimum default amount required to initiate insolvency proceedings (IBC) against a corporate debtor?",
-      answer: "Currently, the minimum default threshold to file a corporate insolvency application at the NCLT under Section 9 of the Insolvency and Bankruptcy Code (IBC) is ₹1 crore (increased from the original ₹1 lakh in 2020 to prevent choking the tribunals with minor claims). This threshold is calculated purely on the principal debt and undisputed dues. For smaller B2B claims, civil courts, commercial courts, and MSME tribunals remain the primary statutory avenues."
+      answer: "The minimum default threshold under Section 9 of the Insolvency and Bankruptcy Code (IBC) is ₹1 crore. For amounts under ₹1 crore, creditors use other fast legal paths. These include MSME Samadhaan, commercial courts, and civil summary suits."
     },
     {
       id: "faq-7",
       question: "Does the MSMED Act cover trading firms, or is it limited to manufacturers and service providers?",
-      answer: "The MSME Samadhaan and MSEFC recovery arbitration mechanisms are statutorily restricted to Micro and Small Enterprises engaged in manufacturing goods or rendering services. While the Ministry of MSME allows Retailers and Wholesale Traders to register on the Udyam portal to obtain priority sector lending from banks, they are explicitly excluded from filing delayed payment claims or recovering interest under the MSME Samadhaan dispute resolution system."
+      answer: "MSME Samadhaan recovery rules protect manufacturers and service providers. While retail and wholesale traders can register on Udyam for bank priority loans, they cannot file delayed payment claims at the MSEFC. Traders can instead recover dues using Order 37 summary suits."
     },
     {
       id: "faq-8",
       question: "What should I do if a buyer disputes the quality of goods as an excuse to withhold our invoice payment?",
-      answer: "This is a common stall tactic. If the buyer has accepted, processed, or resold the goods without raising a written quality complaint within a reasonable time (typically 15 to 30 days as per the contract or Sale of Goods Act), their quality defense is legally deemed waived. We compile all delivery challans, e-way bills, and subsequent communications showing their silent acceptance of the materials to dismantle their excuse in our legal notice."
+      answer: "Buyers often invent quality complaints to delay payments. If the buyer accepted or resold the goods without complaining within a reasonable time, their defense is invalid under the Sale of Goods Act. We present your delivery challans and e-way bills to refute their excuse."
     },
     {
       id: "faq-9",
       question: "What happens if a debtor company goes into NCLT insolvency (CIRP) while our recovery is pending?",
-      answer: "If the NCLT admits an insolvency petition against your corporate buyer, a statutory 'moratorium' under Section 14 of the IBC is immediately declared, which halts all ongoing civil suits and recovery actions. In this scenario, you must immediately file your operational debt claim as an Operational Creditor using Form B with the appointed Interim Resolution Professional (IRP) to ensure your outstanding invoices are registered in the corporate recovery pool."
+      answer: "If the NCLT admits an insolvency petition against your buyer, a legal pause (moratorium) begins under Section 14 IBC. This halts ordinary court suits. You must immediately file Form B as an Operational Creditor with the appointed Resolution Professional to claim your dues."
     },
     {
       id: "faq-10",
       question: "Can we initiate both criminal cheque bounce (Sec 138 NI Act) and civil recovery (Order 37 CPC) simultaneously?",
-      answer: "Yes, absolutely. The Supreme Court has repeatedly confirmed that criminal proceedings for cheque bouncing and civil suits for recovery are independent, parallel remedies. Initiating criminal prosecution under Section 138 creates personal criminal pressure on the signing directors (exposing them to imprisonment), while the civil summary suit runs concurrently to secure an executable decree against the corporate assets, maximizing your recovery probability."
+      answer: "Yes. The Supreme Court has affirmed that cheque bounce cases and civil recovery suits run in parallel. A Section 138 criminal case puts personal pressure on directors with the risk of jail time. At the same time, a civil summary suit lets you seize company assets to recover your funds."
     }
   ], []);
 
@@ -436,48 +436,48 @@ export default function VendorInvoiceClient() {
                 {/* 1. Service Overview */}
                 <h2 id="service-overview">1. Professional B2B Commercial Debt & Invoice Recovery Service</h2>
                 <p>
-                  In B2B business operations, cash flow is the fundamental lifeblood. When a corporate client defaults on tax invoices, delays milestone clearances, or ignores contractually agreed credit cycles, they threaten the survival of your enterprise. In India, many well-funded buyer companies strategically drag out payments, counting on the fact that small suppliers, wholesalers, and agencies cannot afford the exorbitant legal costs, bureaucratic bottlenecks, and multi-year delays of traditional court litigation.
+                  Healthy cash flow is vital for any business. When a corporate client defaults on tax invoices or delays payments, your business suffers. In India, some buyers delay payments on purpose. They assume small suppliers and agencies cannot afford the cost or delays of court litigation.
                 </p>
                 <p>
-                  The Legal Recovery <strong className="font-extrabold text-[#111827]">B2B Commercial Debt & Invoice Recovery Service</strong> is an aggressive, automated, and attorney-verified pre-litigation machine designed to tilt the scales of leverage back to the creditor. We have transformed the commercial debt recovery cycle by replacing long-drawn court trials with a highly professional, triple-stage escalation notice campaign. We leverage powerful statutory weapons such as the <strong className="font-extrabold text-[#111827]">MSMED Act, 2006 (MSME Samadhaan)</strong>, <strong className="font-extrabold text-[#111827]">Summary Civil Suits (Order 37 CPC)</strong>, <strong className="font-extrabold text-[#111827]">Commercial Courts Act</strong>, and <strong className="font-extrabold text-[#111827]">Section 138 of the Negotiable Instruments Act</strong> to force debtor companies to settle your accounts without expensive litigation.
+                  LegalRecovery changes this dynamic. Our <strong className="font-extrabold text-[#111827]">B2B Invoice Recovery Service</strong> gives you strong legal leverage. We replace slow court trials with a structured, advocate-backed escalation notice process. We use effective statutory tools like the <strong className="font-extrabold text-[#111827]">MSMED Act, 2006 (MSME Samadhaan)</strong>, <strong className="font-extrabold text-[#111827]">Order 37 CPC Summary Suits</strong>, the <strong className="font-extrabold text-[#111827]">Commercial Courts Act</strong>, and <strong className="font-extrabold text-[#111827]">Section 138 of the NI Act</strong> to help you recover your money quickly.
                 </p>
                 <blockquote>
-                  <strong>Our Service Promise:</strong> We provide full B2B commercial debt recovery campaigns for a single, flat fee with absolutely <strong>zero commissions</strong> taken on your recovered invoices. We draft, attorney-verify, and execute authoritative notices designed to bypass gatekeepers and land directly on the desks of the buyer's Board of Directors, CFO, and institutional investors.
+                  <strong>Our Service Promise:</strong> We handle your entire B2B recovery campaign for a single, flat fee. We take <strong>zero commission</strong> on your recovered money. Our legal notices go directly to the company directors, CFOs, and decision-makers.
                 </blockquote>
                 <p>
-                  No corporate debtor, private limited company, or VC-funded startup can legally fund their working capital by holding your earned money hostage. Let our advanced legal technology platform handle the writing, tracing, and legal enforcement of your invoices so you can protect your cash flow and focus on growing your business.
+                  No company has the legal right to fund its operations by holding your money. Let our legal technology platform handle the demand, tracking, and enforcement of your invoices so you can focus on running your business.
                 </p>
 
                 {/* 2. B2B Case Scopes */}
                 <h2 id="coverage-details">2. Commercial B2B Scopes We Help You Recover</h2>
                 <p>
-                  B2B commercial disputes involve complex transactional documentation and multi-layered terms. Our expert corporate law panel drafts highly customized recovery notices designed around your specific transactional structure to maximize pressure and counter typical buyer excuses.
+                  B2B disputes involve detailed contracts, invoices, and purchase orders. Our legal team drafts targeted recovery notices tailored to your exact transaction to counter common buyer excuses.
                 </p>
                 
                 <h3 id="wholesaler-supplier">A. Wholesaler, Trader & Manufacturer Supply Invoices</h3>
                 <p>
-                  We recover outstanding payments for raw materials, finished products, and bulk goods supplied under commercial trade agreements. We draft notices enforcing prompt payments, highlighting signed purchase orders, delivery challans, and e-way bills to systematically block typical buyer quality disputes.
+                  We recover unpaid balances for raw materials and finished goods. Our notices reference signed purchase orders, delivery challans, and e-way bills. This stops buyers from using false quality complaints to withhold payments.
                 </p>
 
                 <h3 id="raw-material">B. Raw Material Costs & Supply Chain Credit Accounts</h3>
                 <p>
-                  For heavy industries, packaging manufacturers, and manufacturing suppliers, outstanding balances on credit ledger accounts can restrict operations. Our notices calculate overdue interest and outline structural defaults, demanding the immediate clearance of supply ledger balances.
+                  Unpaid credit lines restrict operational cash flow for suppliers and manufacturers. Our notices calculate statutory overdue interest and demand immediate clearance of your supply ledger balances.
                 </p>
 
                 <h3 id="retailer-distributor">C. Retailer, Franchise & Distributor Settlements</h3>
                 <p>
-                  Distributors often face significant issues when retail brands or franchise partners refuse to return caution money deposits, safety deposits, or clear final inventory accounts. We target withheld deposits and accumulated commission dues, demanding timely reconciliation of channel accounts.
+                  Distributors often struggle when brands refuse to return security deposits or clear inventory accounts. We help you recover withheld caution deposits and accumulated commissions.
                 </p>
 
                 <h3 id="service-provider">D. Service Provider Retainers, IT Agency Billing & Professional Fees</h3>
                 <p>
-                  Marketing firms, software agencies, IT consultants, and professional freelancers are highly vulnerable to clients who default on final milestones or monthly retainers. We compile service agreements, email delivery sign-offs, and project handovers to construct an ironclad contractual claim, rendering buyer delay tactics legally indefensible.
+                  Agencies, software firms, and consultants frequently face payment delays on final milestones. We assemble your service agreements, delivery sign-offs, and email approvals to build an airtight claim that leaves no room for excuses.
                 </p>
 
                 {/* 3. B2B Escalation Pipeline */}
                 <h2 id="notice-strategy">3. Our B2B Triple-Escalation Notice Pipeline: Engineered for Maximum Pressure</h2>
                 <p>
-                  B2B buyers routinely ignore isolated letters from business owners, viewing them as empty threats. To dismantle this, LegalRecovery implements a systematic, <strong className="font-extrabold text-[#111827]">3-stage progressive advocate-backed notice campaign combined with a criminal cheating draft</strong> that builds massive corporate pressure week-by-week:
+                  Corporate buyers often ignore casual reminder emails. To overcome this, LegalRecovery uses a progressive <strong className="font-extrabold text-[#111827]">3-stage advocate notice campaign paired with a criminal complaint draft</strong>:
                 </p>
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6 my-8">
                   <div className="bg-[#F9FAFB] p-5 rounded-2xl border border-[#E5E7EB]">
@@ -486,17 +486,17 @@ export default function VendorInvoiceClient() {
                       <h4 className="font-extrabold text-[#111827] text-sm">Stage 1: Advocate B2B Demand Notice</h4>
                     </div>
                     <p className="text-xs text-[#4B5563] leading-relaxed">
-                      We launch an authoritative demand notice on a senior corporate advocate's letterhead. This notice is served via digital pathways (tracked Email, WhatsApp) and physical registered post to the debtor's registered office, giving their legal and finance teams a strict 15-day window to settle.
+                      We serve a formal demand notice on a corporate advocate&apos;s letterhead. The notice is delivered via verified email, WhatsApp, and registered post with a strict 15-day deadline to pay.
                     </p>
                   </div>
 
                   <div className="bg-[#F9FAFB] p-5 rounded-2xl border border-[#E5E7EB]">
                     <div className="flex items-center gap-3 mb-3">
                       <div className="w-8 h-8 rounded-full bg-[#DC2626] text-white flex items-center justify-center font-black text-xs">2</div>
-                      <h4 className="font-extrabold text-[#111827] text-sm">Stage 2: Board, VC & Shareholder Escalation</h4>
+                      <h4 className="font-extrabold text-[#111827] text-sm">Stage 2: Board & Director Escalation</h4>
                     </div>
                     <p className="text-xs text-[#4B5563] leading-relaxed">
-                      If ignored, we serve Notice 2 directly to the company's Board of Directors, institutional venture capital backers, and private equity investors. We attach compound interest calculations (at 3x RBI rate for MSMEs) and highlight the directors' personal liability for willful corporate defaults.
+                      If unpaid, we send Notice 2 directly to the company directors and investors. We include compound interest calculations under MSME rules and outline personal liability for willful defaults.
                     </p>
                   </div>
 
@@ -506,7 +506,7 @@ export default function VendorInvoiceClient() {
                       <h4 className="font-extrabold text-[#111827] text-sm">Stage 3: Pre-Litigation CPC / NCLT Warning</h4>
                     </div>
                     <p className="text-xs text-[#4B5563] leading-relaxed">
-                      We deliver a final warning package, including drafted copies of a summary civil suit under CPC Order 37 or a corporate insolvency petition under Section 9 of the IBC. This signals that our legal machinery is fully prepared to approach the courts to seize corporate bank accounts.
+                      We deliver a final warning package with draft copies of a civil summary suit under Order 37 CPC or an IBC insolvency notice. This shows you are fully prepared to take court action.
                     </p>
                   </div>
 
@@ -516,48 +516,48 @@ export default function VendorInvoiceClient() {
                       <h4 className="font-extrabold text-[#111827] text-sm">Criminal Cheating Draft (Sec 420 IPC)</h4>
                     </div>
                     <p className="text-xs text-[#4B5563] leading-relaxed">
-                      Simultaneously, we provide you with a meticulously compiled criminal police complaint draft for <strong className="font-extrabold text-[#111827]">Cheating (Section 420 IPC)</strong> and <strong className="font-extrabold text-[#111827]">Criminal Breach of Trust (Section 405/406 IPC)</strong>. Filing this against the directors creates immediate, non-bailable pressure on corporate key-management.
+                      We also prepare a police complaint draft for <strong className="font-extrabold text-[#111827]">Cheating (Section 420 IPC)</strong> and breach of trust. This creates immediate personal accountability for key company management.
                     </p>
                   </div>
                 </div>
                 <p>
-                  By moving through these four distinct escalation stages week-by-week, we make it highly expensive, operationally disruptive, and reputationally damaging for the debtor to continue withholding your commercial dues.
+                  This structured escalation makes delaying your payments costly and reputationally damaging for the debtor.
                 </p>
 
                 {/* 4. Legal Remedies for B2B */}
                 <h2 id="legal-framework">4. The Statutory Framework: Indian Commercial Debt Recovery Acts</h2>
                 <p>
-                  India's legal framework provides powerful tools to commercial creditors. Our corporate legal panel actively leverages these specific acts and sections in our notices to build a bulletproof case against B2B debtors:
+                  Indian law provides strong remedies for business creditors. Our legal notices invoke key statutory provisions to secure your funds:
                 </p>
                 <ul>
-                  <li><strong>The MSMED Act, 2006 (Section 15 & 16):</strong> If your business is Udyam-registered, buyers must pay within 45 days. Delays attract <strong className="font-extrabold text-[#111827]">mandatory compound interest calculated at 3 times the RBI Bank Rate</strong>. Furthermore, if the buyer appeals an MSEFC facilitation award, they must deposit <strong className="font-extrabold text-[#111827]">75% of the disputed amount</strong> in court first.</li>
-                  <li><strong>Order 37 of the Code of Civil Procedure (Summary Suit):</strong> Enables creditors to file fast-track suits in civil/commercial courts for liquidated contract debts. The debtor has no automatic right to defend and must apply for 'Leave to Defend' within 10 days of the summons. If leave is denied, a decree is passed instantly.</li>
-                  <li><strong>The Commercial Courts Act, 2015:</strong> Mandatory Pre-Institution Mediation and Settlement (PIMS) rules expedite settlement. Dedicated commercial courts are legally bound to resolve disputes rapidly, bypassing normal trial backlogs.</li>
-                  <li><strong>Section 138 of the Negotiable Instruments Act, 1881:</strong> If a buyer issues a cheque that bounces, they face criminal prosecution. Our advocates serve the mandatory 15-day statutory notice. Failure to clear the cheque within 15 days exposes directors to <strong className="font-extrabold text-[#111827]">up to 2 years of imprisonment</strong>.</li>
-                  <li><strong>Insolvency & Bankruptcy Code, 2016 (IBC - Section 9):</strong> For corporate debtor defaults exceeding ₹1 crore, creditors can serve a Section 8 demand notice. If unpaid, filing a petition under Section 9 allows the NCLT to suspend the board and initiate corporate insolvency.</li>
+                  <li><strong>The MSMED Act, 2006 (Section 15 & 16):</strong> Buyers must clear invoices within 45 days. Delays attract <strong className="font-extrabold text-[#111827]">mandatory compound interest at three times the RBI bank rate</strong>. If the buyer appeals an MSEFC order, they must first deposit <strong className="font-extrabold text-[#111827]">75% of the award</strong> in court.</li>
+                  <li><strong>Order 37 of the Code of Civil Procedure (Summary Suit):</strong> Enables fast-track recovery in civil and commercial courts. The debtor has no automatic right to defend. They must apply for leave to defend within 10 days. If rejected, the court enters judgment right away.</li>
+                  <li><strong>The Commercial Courts Act, 2015:</strong> Mandatory mediation encourages quick settlements. Dedicated commercial benches fast-track business disputes, avoiding normal court backlogs.</li>
+                  <li><strong>Section 138 of the Negotiable Instruments Act, 1881:</strong> If a buyer&apos;s cheque bounces, they face criminal prosecution. Our advocates serve the mandatory 15-day notice. Continued non-payment exposes directors to <strong className="font-extrabold text-[#111827]">up to 2 years in prison</strong>.</li>
+                  <li><strong>Insolvency & Bankruptcy Code, 2016 (IBC - Section 9):</strong> For corporate defaults over ₹1 crore, you can issue a Section 8 demand notice. If unpaid, you can petition the NCLT to initiate corporate insolvency proceedings.</li>
                 </ul>
 
                 {/* 5. Why Free Templates Fail */}
                 <h2 id="why-online-templates-fail">5. Why Free Online B2B Legal Notice Templates Fail</h2>
                 <p>
-                  Many business owners try to copy free legal drafts or letter formats from online blogs. In B2B recoveries, this approach almost always fails to produce results:
+                  Many business owners try using free templates found online. In B2B debt disputes, free templates rarely work:
                 </p>
                 <ul>
-                  <li><strong>No Attorney Signature & Letterhead:</strong> Debtor legal departments immediately recognize free templates as amateur attempts. Without a registered advocate's seal and practicing ID, companies know there is no immediate litigation threat.</li>
-                  <li><strong>Incorrect Statutory Citing:</strong> Online formats rarely match your specific state’s MSME facilitation rules, the correct territorial jurisdiction under the CPC, or the precise mandatory warning clauses required for Sec 138 NI Act or IBC actions.</li>
-                  <li><strong>No Compounding Pressure:</strong> A single template sent via post fails to build compounding leverage. Without automated email tracking, read receipts, and systematic weekly board escalations, corporate debtors simply archive your claim.</li>
+                  <li><strong>No Lawyer Signature:</strong> Debtor legal teams recognize internet templates immediately. Without a licensed advocate&apos;s seal, debtors know there is no real legal risk.</li>
+                  <li><strong>Wrong Legal Sections:</strong> Free templates often cite obsolete laws. They miss state-specific MSME rules, territorial jurisdiction, and mandatory cheque bounce warnings.</li>
+                  <li><strong>No Follow-Through:</strong> A single generic letter is easy to ignore. Without digital read receipts and direct board escalations, corporate debtors simply shelve your claim.</li>
                 </ul>
                 <p>
-                  LegalRecovery provides you with attorney-signed, highly customized B2B notice campaigns. We use real-time digital read receipts to track when the CFO or director opens our email, leaving them with no room to claim they never received the demand.
+                  LegalRecovery provides attorney-backed, custom B2B notices. We track digital delivery in real time, leaving debtors no excuse to deny receipt.
                 </p>
 
                 {/* 6. Transparent Flat Pricing */}
                 <h2 id="service-pricing">6. Transparent Flat B2B Pricing</h2>
                 <p>
-                  Traditional corporate law firms charge steep hourly fees, consultation costs, and demand high commissions (often 10% to 20%) on the recovered B2B amount. We believe this is highly exploitative. 
+                  Traditional law firms charge high hourly retainers and take up to 20% commission on recovered funds. We believe that is unfair to creditors.
                 </p>
                 <p>
-                  LegalRecovery provides professional, attorney-verified B2B invoice recovery campaigns for a single, flat fee of <strong className="font-extrabold text-[#111827]">₹999</strong>. We charge absolutely zero hidden fees and take zero commission on your recovered money.
+                  LegalRecovery offers complete B2B recovery campaigns for a single flat fee of <strong className="font-extrabold text-[#111827]">₹999</strong>. We charge no hidden fees and take zero commission on your recovered money.
                 </p>
 
                 {/* Pixel-perfect B2B customized unified pricing container */}

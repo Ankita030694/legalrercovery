@@ -2,8 +2,8 @@ import { Metadata } from "next";
 import SecurityDepositClient from "./SecurityDepositClient";
 
 export const metadata: Metadata = {
-  title: "Recovery of Employee Security Deposit & Withheld Certificates | LegalRecovery",
-  description: "Did your employer deduct a security deposit from your salary or withhold your original certificates due to an employment bond? Learn how to legally recover your money and documents.",
+  title: "Recover Employee Security Deposit Dues | LegalRecovery",
+  description: "Did your employer deduct a security deposit or hold certificates for an employment bond? Learn how to legally recover your money and documents.",
   keywords: [
     "recovery of employee security deposit",
     "employer withholding original certificates legal notice",

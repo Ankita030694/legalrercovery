@@ -387,39 +387,54 @@ export default function TradingScamTelegramClient() {
                     <span className="text-xs font-semibold text-slate-400 uppercase tracking-wider mr-2">
                       Share:
                     </span>
-                    <a
-                      href={`https://twitter.com/intent/tweet?url=${shareUrl}&text=${shareText}`}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="w-8 h-8 rounded-full bg-black text-white hover:opacity-80 flex items-center justify-center transition-opacity"
+                    <button
+                      type="button"
+                      onClick={() =>
+                        window.open(
+                          `https://twitter.com/intent/tweet?url=${shareUrl}&text=${shareText}`,
+                          '_blank',
+                          'noopener,noreferrer,width=600,height=400'
+                        )
+                      }
+                      className="w-8 h-8 rounded-full bg-black text-white hover:opacity-80 flex items-center justify-center transition-opacity cursor-pointer"
                       aria-label="Share on X (Twitter)"
                     >
                       <svg className="w-4 h-4 fill-current" viewBox="0 0 24 24">
                         <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z" />
                       </svg>
-                    </a>
-                    <a
-                      href={`https://www.facebook.com/sharer/sharer.php?u=${shareUrl}`}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="w-8 h-8 rounded-full bg-[#1877F2] text-white hover:opacity-80 flex items-center justify-center transition-opacity"
+                    </button>
+                    <button
+                      type="button"
+                      onClick={() =>
+                        window.open(
+                          `https://www.facebook.com/sharer/sharer.php?u=${shareUrl}`,
+                          '_blank',
+                          'noopener,noreferrer,width=600,height=400'
+                        )
+                      }
+                      className="w-8 h-8 rounded-full bg-[#1877F2] text-white hover:opacity-80 flex items-center justify-center transition-opacity cursor-pointer"
                       aria-label="Share on Facebook"
                     >
                       <svg className="w-4 h-4 fill-current" viewBox="0 0 24 24">
                         <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z" />
                       </svg>
-                    </a>
-                    <a
-                      href={`https://www.linkedin.com/shareArticle?mini=true&url=${shareUrl}&title=${encodeURIComponent('Legal Notice for Telegram Trading Scam Recovery')}`}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="w-8 h-8 rounded-full bg-[#0A66C2] text-white hover:opacity-80 flex items-center justify-center transition-opacity"
+                    </button>
+                    <button
+                      type="button"
+                      onClick={() =>
+                        window.open(
+                          `https://www.linkedin.com/shareArticle?mini=true&url=${shareUrl}&title=${encodeURIComponent('Legal Notice for Telegram Trading Scam Recovery')}`,
+                          '_blank',
+                          'noopener,noreferrer,width=600,height=400'
+                        )
+                      }
+                      className="w-8 h-8 rounded-full bg-[#0A66C2] text-white hover:opacity-80 flex items-center justify-center transition-opacity cursor-pointer"
                       aria-label="Share on LinkedIn"
                     >
                       <svg className="w-4 h-4 fill-current" viewBox="0 0 24 24">
                         <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z" />
                       </svg>
-                    </a>
+                    </button>
                   </div>
                 </div>
 
@@ -904,55 +919,18 @@ export default function TradingScamTelegramClient() {
                   <h3 className="text-base font-black text-slate-900 uppercase tracking-wider">
                     Authoritative Legal Sources &amp; Statutory References
                   </h3>
-                  <div className="flex flex-wrap gap-x-6 gap-y-2 text-xs">
-                    <a
-                      href="https://cybercrime.gov.in"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="text-purple-600 hover:text-purple-800 hover:underline"
-                    >
-                      National Cyber Crime Reporting Portal (MHA)
-                    </a>
-                    <a
-                      href="https://www.sebi.gov.in"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="text-purple-600 hover:text-purple-800 hover:underline"
-                    >
-                      Securities and Exchange Board of India (SEBI)
-                    </a>
-                    <a
-                      href="https://www.rbi.org.in"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="text-purple-600 hover:text-purple-800 hover:underline"
-                    >
-                      Reserve Bank of India Master Directions
-                    </a>
-                    <a
-                      href="https://www.indiacode.nic.in/handle/123456789/1362"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="text-purple-600 hover:text-purple-800 hover:underline"
-                    >
-                      Information Technology Act, 2000 (India Code)
-                    </a>
-                    <a
-                      href="https://www.indiacode.nic.in"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="text-purple-600 hover:text-purple-800 hover:underline"
-                    >
-                      Bharatiya Nyaya Sanhita, 2023 &amp; BNSS, 2023
-                    </a>
-                    <a
-                      href="https://main.sci.gov.in/"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="text-purple-600 hover:text-purple-800 hover:underline"
-                    >
-                      Supreme Court of India Case Judgments
-                    </a>
+                  <div className="flex flex-wrap gap-x-4 gap-y-2 text-xs text-slate-600">
+                    <span className="font-medium">National Cyber Crime Reporting Portal (MHA)</span>
+                    <span className="text-slate-300">•</span>
+                    <span className="font-medium">Securities and Exchange Board of India (SEBI)</span>
+                    <span className="text-slate-300">•</span>
+                    <span className="font-medium">Reserve Bank of India Master Directions</span>
+                    <span className="text-slate-300">•</span>
+                    <span className="font-medium">Information Technology Act, 2000 (India Code)</span>
+                    <span className="text-slate-300">•</span>
+                    <span className="font-medium">Bharatiya Nyaya Sanhita, 2023 &amp; BNSS, 2023</span>
+                    <span className="text-slate-300">•</span>
+                    <span className="font-medium">Supreme Court of India Case Judgments</span>
                   </div>
                 </section>
 

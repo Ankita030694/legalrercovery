@@ -2,8 +2,8 @@ import { Metadata } from "next";
 import DigitalNoticeValidityClient from "./DigitalNoticeValidityClient";
 
 export const metadata: Metadata = {
-  title: "Is Email or WhatsApp Message a Valid Legal Notice in Indian Courts?",
-  description: "Exhaustive legal analysis on the validity of WhatsApp messages & emails as legal notices in India. Learn about court precedents, IT Act provisions, and BSA 2023 requirements.",
+  title: "Is WhatsApp or Email a Valid Legal Notice in India?",
+  description: "Legal analysis on the validity of WhatsApp and email legal notices in India. Learn court precedents, IT Act rules, and Section 63 BSA requirements.",
   keywords: [
     "is email or whatsapp valid legal notice in india",
     "whatsapp legal notice validity supreme court",

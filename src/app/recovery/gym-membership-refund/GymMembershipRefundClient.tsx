@@ -203,7 +203,7 @@ export default function GymMembershipRefundClient() {
   };
 
   const tocSections = [
-    { id: "introduction", title: "Introduction" },
+    { id: "introduction", title: "Introduction to Gym Membership Refund Claims" },
     { id: "consumer-rights", title: "Your Consumer Rights" },
     { id: "unfair-contracts", title: "Unfair Contract Terms" },
     { id: "grounds-for-refund", title: "Grounds for Refund" },
@@ -299,7 +299,7 @@ export default function GymMembershipRefundClient() {
               <div className="bg-white p-6 md:p-12 rounded-3xl shadow-sm space-y-12 border border-slate-100">
                                {/* Introduction */}
                 <section id="introduction" className="scroll-mt-32">
-                  <h2 className="text-xl md:text-3xl font-black text-slate-900 mb-5 border-b-2 border-[#DC2626] pb-2 inline-block">Introduction</h2>
+                  <h2 className="text-xl md:text-3xl font-black text-slate-900 mb-5 border-b-2 border-[#DC2626] pb-2 inline-block">Introduction to Gym Membership Refund Claims</h2>
                   <div className="prose prose-base max-w-none text-slate-650 space-y-6">
                     <p className="text-sm md:text-base leading-relaxed">
                       The Indian fitness industry has experienced explosive growth over the past decade, evolving from a handful of neighbourhood gyms into a multi-billion-rupee ecosystem of boutique studios, international franchise chains, and technology-enabled fitness platforms. From the premium high-rises of Gurugram and South Mumbai to the bustling commercial centres of Bangalore and Pune, fitness memberships have become as commonplace as mobile phone recharges. But along with this rapid expansion has come a deeply troubling pattern of consumer exploitation—one that LegalRecovery witnesses on a daily basis: <strong>gyms and fitness centres refusing to refund membership fees when consumers have every legal right to demand their money back.</strong>

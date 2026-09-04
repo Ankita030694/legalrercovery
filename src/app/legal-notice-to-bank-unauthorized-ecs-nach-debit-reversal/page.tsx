@@ -2,7 +2,7 @@ import { Metadata } from "next";
 import BankAutoDebitReversalClient from "./BankAutoDebitReversalClient";
 
 export const metadata: Metadata = {
-  title: "Legal Notice for Unauthorized ECS & NACH Auto-Debits",
+  title: "Legal Notice to Bank: Reverse Unauthorized ECS & NACH Debits",
   description: "Bank continuing to auto-debit your account via ECS or NACH despite mandate cancellation? Learn how to send a legal notice to reverse unauthorized debits.",
   keywords: [
     "unauthorized nach debit bank compensation",

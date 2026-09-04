@@ -2,8 +2,8 @@ import { Metadata } from "next";
 import CyberFraudRecoveryClient from "./CyberFraudRecoveryClient";
 
 export const metadata: Metadata = {
-  title: "How to Recover Money Stuck in Online Cyber Fraud | Legal Recovery",
-  description: "Understand the RBI zero liability policy for cyber fraud and learn the exact step-by-step cyber crime refund process to recover fraudulent bank transactions in India.",
+  title: "Recover Money Stuck in Online Cyber Fraud | Recovery",
+  description: "Understand RBI zero liability policy for cyber fraud and learn the step-by-step process to recover fraudulent bank and UPI transactions in India.",
   keywords: [
     "cyber crime refund process",
     "rbi zero liability policy cyber fraud",

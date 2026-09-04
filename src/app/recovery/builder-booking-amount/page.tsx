@@ -2,8 +2,8 @@ import { Metadata } from "next";
 import BuilderBookingAmountClient from "./BuilderBookingAmountClient";
 
 export const metadata: Metadata = {
-  title: "Builder Not Refunding Booking Amount? Recovery Legal Notice | LegalRecovery",
-  description: "Struggling to get a refund of your booking amount or token money from a builder? LegalRecovery provides expert legal-tech assistance to recover your property dues under RERA and Consumer Protection Act.",
+  title: "Recover Builder Booking Amount Refund | LegalRecovery",
+  description: "Builder refusing to refund booking token money? LegalRecovery provides expert legal-tech assistance to recover your property dues under RERA rules.",
   keywords: [
     "builder not refunding booking amount",
     "recover booking amount from builder",

@@ -301,7 +301,7 @@ export default function FreelancerNoticeClient() {
                 {/* Section 1 */}
                 <section id="pre-notice-documentation-audit" className="scroll-mt-32">
                   <h2 className="text-xl md:text-3xl font-black text-slate-900 mb-5 border-b-2 border-[#DC2626] pb-2 inline-block">
-                    1. The Pre-Notice Phase: Building an Evidentiary Paper Trail and Auditing Digital Communications
+                    1. Building Your Freelance Evidence Trail
                   </h2>
                   <div className="prose prose-base max-w-none text-slate-650 space-y-6 text-sm md:text-base leading-relaxed">
                     <p>
@@ -339,7 +339,7 @@ export default function FreelancerNoticeClient() {
                 {/* Section 2 */}
                 <section id="identifying-client-entity" className="scroll-mt-32">
                   <h2 className="text-xl md:text-3xl font-black text-slate-900 mb-5 border-b-2 border-[#DC2626] pb-2 inline-block">
-                    2. Precision in Target Selection: Tracing Client Corporate Structures and Naming Directors
+                    2. Tracing Client Structures &amp; Naming Directors
                   </h2>
                   <div className="prose prose-base max-w-none text-slate-650 space-y-6 text-sm md:text-base leading-relaxed">
                     <p>
@@ -379,7 +379,7 @@ export default function FreelancerNoticeClient() {
                 {/* Section 3 */}
                 <section id="drafting-factual-narrative" className="scroll-mt-32">
                   <h2 className="text-xl md:text-3xl font-black text-slate-900 mb-5 border-b-2 border-[#DC2626] pb-2 inline-block">
-                    3. The Factual Statement: Chronological Drafting, Scope Descriptions, and Delivery Confirmations
+                    3. Statement of Facts: Scopes &amp; Deliverables
                   </h2>
                   <div className="prose prose-base max-w-none text-slate-650 space-y-6 text-sm md:text-base leading-relaxed">
                     <p>
@@ -408,7 +408,7 @@ export default function FreelancerNoticeClient() {
                 {/* Section 4 */}
                 <section id="statutory-citations-grounds" className="scroll-mt-32">
                   <h2 className="text-xl md:text-3xl font-black text-slate-900 mb-5 border-b-2 border-[#DC2626] pb-2 inline-block">
-                    4. Statutory Grounding: Citing Indian Contract Act Sec 73/70, Interest Act, and BNS Cheating
+                    4. Statutory Grounding: Contract Act &amp; BNS Rules
                   </h2>
                   <div className="prose prose-base max-w-none text-slate-650 space-y-6 text-sm md:text-base leading-relaxed">
                     <p>
@@ -467,7 +467,7 @@ export default function FreelancerNoticeClient() {
                 {/* Section 5 */}
                 <section id="compliance-window-prayer" className="scroll-mt-32">
                   <h2 className="text-xl md:text-3xl font-black text-slate-900 mb-5 border-b-2 border-[#DC2626] pb-2 inline-block">
-                    5. The Demand Ultimatum: Setting the Compliance Window and the Prayer for Relief
+                    5. Notice Ultimatum &amp; Settlement Demands
                   </h2>
                   <div className="prose prose-base max-w-none text-slate-650 space-y-6 text-sm md:text-base leading-relaxed">
                     <p>
@@ -508,7 +508,7 @@ export default function FreelancerNoticeClient() {
                 {/* Section 6 */}
                 <section id="service-and-dispatch-forensics" className="scroll-mt-32">
                   <h2 className="text-xl md:text-3xl font-black text-slate-900 mb-5 border-b-2 border-[#DC2626] pb-2 inline-block">
-                    6. Airtight Service Protocols: Speed Post, Deemed Service, and Section 63 BSA Digital Forensics
+                    6. Speed Post Delivery &amp; Section 63 BSA Proof
                   </h2>
                   <div className="prose prose-base max-w-none text-slate-650 space-y-6 text-sm md:text-base leading-relaxed">
                     <p>
@@ -548,7 +548,7 @@ export default function FreelancerNoticeClient() {
                 {/* Section 7 */}
                 <section id="post-notice-negotiations" className="scroll-mt-32">
                   <h2 className="text-xl md:text-3xl font-black text-slate-900 mb-5 border-b-2 border-[#DC2626] pb-2 inline-block">
-                    7. The Post-Notice Matrix: Handling Client Denials, Performance Allegations, and Rejoinders
+                    7. Handling Denials, Disputes &amp; Rejoinders
                   </h2>
                   <div className="prose prose-base max-w-none text-slate-650 space-y-6 text-sm md:text-base leading-relaxed">
                     <p>
@@ -591,7 +591,7 @@ export default function FreelancerNoticeClient() {
                 {/* Section 8 */}
                 <section id="legalrecovery-recovery-dashboard" className="scroll-mt-32">
                   <h2 className="text-xl md:text-3xl font-black text-slate-900 mb-5 border-b-2 border-[#DC2626] pb-2 inline-block">
-                    8. Leveraging LegalRecovery: Flat-Fee Drafting, Corporate Searches, and Live Tracking
+                    8. Flat-Fee Legal Notice Drafting &amp; Tracking
                   </h2>
                   <div className="prose prose-base max-w-none text-slate-650 space-y-6 text-sm md:text-base leading-relaxed">
                     <p>

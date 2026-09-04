@@ -5,7 +5,7 @@ const slug = 'send-a-legal-notice/insurance-claim-not-settled-delay';
 const title = 'Legal Notice for Insurance Claim Not Settled Delay | Draft & Send Notice India';
 const description =
   'Insurance company delaying or not settling your health, motor, life, fire, or commercial claim? Send an advocate-vetted statutory legal notice for claim settlement delay under IRDAI 30-day mandate, penal interest rules & Consumer Protection Act 2019.';
-const url = `https://legalrecovery.in/${slug}`;
+const url = `https://www.legalrecovery.in/${slug}`;
 const ogImage = `/images/og/insurance-claim-not-settled-delay.jpg`;
 
 export const metadata: Metadata = {

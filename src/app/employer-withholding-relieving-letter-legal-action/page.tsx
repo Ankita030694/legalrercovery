@@ -2,7 +2,7 @@ import { Metadata } from "next";
 import EmployerWithholdingClient from "./EmployerWithholdingClient";
 
 export const metadata: Metadata = {
-  title: "Employer Withholding Relieving Letter: Legal Recovery",
+  title: "Employer Withholding Relieving Letter: Legal Action & Rights",
   description: "Learn the specific legal actions and steps to recover money and force the release of a withheld relieving letter from your employer in India.",
   keywords: [
     "legal recovery",

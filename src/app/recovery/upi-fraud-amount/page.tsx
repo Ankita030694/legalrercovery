@@ -3,7 +3,7 @@ import UPIFraudClient from "./UPIFraudClient";
 
 export const metadata: Metadata = {
   title: "Recover UPI Fraud Amount in India | LegalRecovery",
-  description: "Victim of an online UPI scam, fake QR code, or remote access app fraud? Learn the NPCI dispute mechanism, RBI customer liability rules, and legal notice actions.",
+  description: "Victim of an online UPI scam or fake QR fraud? Learn the NPCI dispute mechanism, RBI zero-liability rules, and legal notice recovery actions.",
   keywords: [
     "recover upi fraud amount",
     "upi scam refund legal notice",

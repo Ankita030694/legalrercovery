@@ -2,8 +2,8 @@ import { Metadata } from "next";
 import EnforceableNoticeClient from "./EnforceableNoticeClient";
 
 export const metadata: Metadata = {
-  title: "What Should a Legal Notice Include to Be Enforceable Under Indian Law?",
-  description: "Learn the essential components, statutory citations, and delivery forensics required to make a legal notice legally binding and enforceable in Indian courts.",
+  title: "What Should a Legal Notice Include in India? Checklist",
+  description: "Learn the essential components, statutory citations, and delivery rules required to make a legal notice legally binding and enforceable in India.",
   keywords: [
     "legal notice requirements india",
     "what should a legal notice include",

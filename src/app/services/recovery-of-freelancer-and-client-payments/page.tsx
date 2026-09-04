@@ -3,13 +3,13 @@ import FreelancerRecoveryClient from "./FreelancerRecoveryClient";
 
 export const metadata: Metadata = {
   title: "Recover Freelancer & Client Payments | LegalRecovery",
-  description: "Exhaustive legal guide on freelancer and client payment recoveries in India. Learn legal notice formats, MSME Samadhaan portals, Order 37 CPC summary suits, and copyright protection acts.",
+  description: "Recover unpaid freelance invoices and client dues in India. Learn legal notice formats, MSME Samadhaan options, Order 37 summary suits, and remedies.",
   alternates: {
     canonical: "/services/recovery-of-freelancer-and-client-payments",
   },
   openGraph: {
     title: "Recover Freelancer & Client Payments | LegalRecovery",
-    description: "Exhaustive legal guide on freelancer and client payment recoveries in India. Learn legal notice formats, MSME Samadhaan portals, Order 37 CPC summary suits, and copyright protection acts.",
+    description: "Recover unpaid freelance invoices and client dues in India. Learn legal notice formats, MSME Samadhaan options, Order 37 summary suits, and remedies.",
     type: "article",
     url: "/services/recovery-of-freelancer-and-client-payments",
     images: [

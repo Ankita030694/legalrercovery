@@ -3,7 +3,7 @@ import HandLoanAmountClient from "./HandLoanAmountClient";
 
 export const metadata: Metadata = {
   title: "Recover Hand Loan Given on Trust in India | LegalRecovery",
-  description: "Lent a hand loan to someone on trust without an agreement? Learn how to legally recover your hand loan using digital trails, legal notices, and civil/criminal remedies.",
+  description: "Lent a hand loan on trust without an agreement? Learn how to recover your money legally using digital proofs, legal notices, and civil court remedies.",
   keywords: [
     "recover hand loan amount",
     "how to recover hand loan in india",

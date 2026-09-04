@@ -2,8 +2,8 @@ import { Metadata } from "next";
 import OnlineLegalNoticeClient from "./OnlineLegalNoticeClient";
 
 export const metadata: Metadata = {
-  title: "Online Legal Notice Services in India: Legality, Service & Process",
-  description: "Learn about the legality of serving an online legal notice via WhatsApp, Email, or SMS in India. Understand Section 63 BSA 2023 admissibility and court rules.",
+  title: "Online Legal Notice Services in India: Process & Law",
+  description: "Learn about serving an online legal notice via WhatsApp, Email, or SMS in India. Understand Section 63 BSA 2023 admissibility and court rules.",
   keywords: [
     "online legal notice",
     "send legal notice online India",

@@ -2,8 +2,8 @@ import { Metadata } from "next";
 import GratuityAmountClient from "./GratuityAmountClient";
 
 export const metadata: Metadata = {
-  title: "Employer Not Paying Gratuity? Recovery Legal Notice | LegalRecovery",
-  description: "Struggling to recover your gratuity amount from a previous employer? LegalRecovery provides expert legal-tech assistance to recover your statutory dues under the Payment of Gratuity Act, 1972.",
+  title: "Recover Unpaid Gratuity from Employer | LegalRecovery",
+  description: "Recover unpaid gratuity from your employer. LegalRecovery provides expert legal-tech assistance under the Payment of Gratuity Act, 1972 with interest.",
   keywords: [
     "recover unpaid gratuity from employer",
     "payment of gratuity act 1972 recovery",

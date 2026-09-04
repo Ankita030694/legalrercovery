@@ -2,8 +2,8 @@ import { Metadata } from "next";
 import AccidentalInsuranceClaimClient from "./AccidentalInsuranceClaimClient";
 
 export const metadata: Metadata = {
-  title: "Accidental Insurance Claim Rejected or Delayed? Recover Your Claim Amount | LegalRecovery",
-  description: "Has your personal accident insurance claim been rejected, underpaid, or delayed by the insurer? LegalRecovery provides expert legal-tech assistance to recover your rightful accidental death, disability, and injury claim amount under IRDAI guidelines.",
+  title: "Recover Accidental Insurance Claim | LegalRecovery",
+  description: "Personal accident insurance claim rejected or delayed? LegalRecovery helps recover accidental death, disability, and injury claims under IRDAI rules.",
   keywords: [
     "accidental insurance claim rejected India",
     "personal accident insurance claim recovery",

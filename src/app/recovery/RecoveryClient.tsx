@@ -76,23 +76,23 @@ const queryLinks: Record<string, string> = {
 const recoveryFaqs: FAQItem[] = [
   {
     question: "What is a legal notice for money recovery?",
-    answer: "A legal notice for money recovery is a formal written communication sent by an advocate on behalf of a creditor to a debtor. It details the amount owed, the transaction history, the legal basis of the claim, and gives the debtor a strict deadline (typically 15 days) to settle the payment. Sending a legal notice is a mandatory first step before initiating most legal suits in India, as it serves as official evidence of the dispute and gives the debtor a final chance to resolve the matter out of court."
+    answer: "A legal notice for money recovery is a formal written demand. An advocate issues it on behalf of a creditor to a debtor. It outlines the debt amount, transaction dates, and underlying contractual terms. The notice provides a strict fifteen-day deadline to clear outstanding dues. Serving a notice creates documented proof before filing a court suit. It gives the debtor a final opportunity to settle out of court."
   },
   {
     question: "How long does a debtor have to reply to a legal recovery notice?",
-    answer: "Usually, a legal notice for money recovery specifies a time limit of 15 days from the date of receipt for the debtor to reply or settle the outstanding amount. However, depending on the case and contract terms, this period can sometimes be extended to 21 or 30 days. If the debtor does not reply or pay within this period, the creditor is legally entitled to file a civil suit or pursue other legal actions."
+    answer: "Most legal notices give the debtor fifteen days to respond or pay. In certain commercial contracts, this window extends to twenty-one or thirty days. If the debtor ignores the notice, the creditor can file court proceedings. You can file a civil recovery suit or initiate insolvency petitions immediately. The expiry of the notice period establishes your right to litigate."
   },
   {
     question: "What can I do if the debtor does not respond to the legal notice?",
-    answer: "If the debtor fails to respond to the legal notice or refuses to pay within the stipulated time, you can initiate formal legal proceedings. Depending on the nature of the dispute, your options include filing a Summary Suit under Order 37 of the CPC, initiating insolvency proceedings under the IBC (if the debt is corporate and exceeds the threshold), filing a complaint under Section 138 of the NI Act (for cheque bounces), or filing a claim through the MSME Samadhan portal if you are a registered MSME."
+    answer: "If the debtor ignores the notice, you can initiate formal court proceedings. You can file a summary suit under Order 37 of the CPC. For bounced cheques, file a complaint under Section 138 of the NI Act. Registered micro and small enterprises can file cases on MSME Samadhan. For corporate debts over one crore, file insolvency under the IBC."
   },
   {
     question: "Is a legal notice mandatory before filing a recovery suit in India?",
-    answer: "While not strictly mandatory for every type of civil suit under the Code of Civil Procedure, sending a legal notice is highly recommended and practically essential. It establishes your clean intentions (bona fide attempt to settle out of court), documents the exact amount and interest claimed, and forces the debtor to state their defense. For specific actions like Cheque Bounce cases under Section 138 of the NI Act or filing under MSME Samadhan, serving a formal demand/legal notice is a strict statutory requirement before you can file a case."
+    answer: "A legal notice is not mandatory for every regular civil suit under the CPC. However, sending a notice is highly recommended in all debt disputes. It proves good faith efforts to settle the dispute without court intervention. It records exact principal amounts and calculates accrued contractual interest clearly. For cheque bounces under the NI Act, serving notice is strictly mandatory. MSME Samadhan claims also require formal demand notices before statutory filing."
   },
   {
     question: "How does MSME Samadhan help micro & small enterprises recover payments?",
-    answer: "The MSME Samadhan portal is a dedicated platform set up under the MSMED Act, 2006. If a registered micro or small enterprise supplies goods or services to a buyer, the buyer must make payment within 45 days. If they fail to do so, the MSME can file a case online. The buyer is then liable to pay compound interest with monthly rests to the supplier on the delayed amount, calculated at three times the bank rate notified by the RBI. The MSME Facilitation Council conducts conciliation and arbitration to resolve the dispute."
+    answer: "The MSME Samadhan portal operates under the MSMED Act 2006. Buyers must pay registered micro and small suppliers within forty-five days. Delayed payments attract penal compound interest at three times the RBI bank rate. Suppliers can file recovery applications directly on the official government portal. The MSME Facilitation Council conducts conciliation and arbitration to recover dues."
   }
 ];
 
@@ -223,8 +223,8 @@ export default function RecoveryClient() {
 
         {/* Directory Introduction */}
         <div className="bg-white border border-slate-200/60 rounded-3xl p-6 sm:p-8 shadow-sm">
-          <p className="text-[13px] sm:text-[14px] text-slate-600 leading-[1.75]">
-            Welcome to the LegalRecovery Money Claims Directory. Recovering outstanding dues, unpaid business invoices, or pending wages under Indian law often begins with dispatching a formal legal notice. A legal notice acts as a structured final warning to the debtor, establishing a clear timeline (typically 15 days) to resolve the dispute before initiating a court suit. Below, you will find 100+ specialized money recovery claim categories covering workplace disputes, consumer refunds, friendly loans, landlord-tenant arguments, B2B defaults, and digital fraud. Select a category below to instantly structure, validate, and launch a digital legal notice campaign tailored to your exact scenario.
+          <p className="text-[13px] sm:text-[14px] text-slate-650 leading-[1.75]">
+            Welcome to the LegalRecovery Money Claims Directory. Recovering outstanding dues in India begins with dispatching a formal legal notice. A legal notice acts as a structured final warning to the debtor. It establishes a firm fifteen-day deadline to resolve payment disputes amicably. Below, browse our directory of over one hundred money recovery categories. We cover workplace dues, consumer refunds, friendly loans, landlord deposits, and commercial invoices. Select a claim category below to launch your verified legal notice campaign.
           </p>
         </div>
 
@@ -275,7 +275,7 @@ export default function RecoveryClient() {
               </div>
               <h3 className="text-[14px] font-extrabold text-slate-800 mb-2">Summary Suits (Order 37, CPC)</h3>
               <p className="text-[12px] text-slate-500 leading-relaxed">
-                A fast-track legal recourse available under the Civil Procedure Code for quick debt recovery. It applies to written contracts, bills of exchange, and promissory notes. Unlike ordinary suits, the defendant must obtain the court's leave to defend, preventing baseless delays.
+                Summary suits under Order 37 of the CPC provide fast debt recovery. They apply to written contracts, negotiable instruments, and formal debt acknowledgments. Defendants must obtain special leave from the court to defend themselves. This strict rule prevents debtors from raising frivolous defenses to delay payments.
               </p>
             </div>
 
@@ -288,7 +288,7 @@ export default function RecoveryClient() {
               </div>
               <h3 className="text-[14px] font-extrabold text-slate-800 mb-2">Cheque Bounce (Sec 138, NI Act)</h3>
               <p className="text-[12px] text-slate-500 leading-relaxed">
-                Bouncing a cheque due to insufficient funds is a criminal offense in India. A legal notice must be sent to the drawer within 30 days of receiving the memo. If payment is not made within 15 days of receiving the notice, criminal proceedings can be initiated.
+                Bouncing a cheque due to insufficient funds constitutes a criminal offense in India. Creditors must issue a statutory legal notice within thirty days of cheque bounce. If the drawer fails to pay within fifteen days, criminal proceedings commence. Convictions carry up to two years imprisonment and double the cheque amount.
               </p>
             </div>
 
@@ -301,7 +301,7 @@ export default function RecoveryClient() {
               </div>
               <h3 className="text-[14px] font-extrabold text-slate-800 mb-2">MSME Samadhan Portal</h3>
               <p className="text-[12px] text-slate-500 leading-relaxed">
-                Protects registered micro and small enterprises from delayed payments by buyers. Under the MSMED Act, buyers must pay within 45 days. Delayed payments attract compound interest at three times the bank rate, and cases can be referred to the MSME Council.
+                The MSMED Act protects registered micro and small enterprises against buyer payment defaults. Buyers must settle invoices within forty-five days of goods acceptance. Delayed balances incur penal compound interest at three times the RBI bank rate. The MSME Council provides fast conciliation and binding arbitration awards.
               </p>
             </div>
 
@@ -314,7 +314,7 @@ export default function RecoveryClient() {
               </div>
               <h3 className="text-[14px] font-extrabold text-slate-800 mb-2">Corporate Recovery (IBC)</h3>
               <p className="text-[12px] text-slate-500 leading-relaxed">
-                For operational debts exceeding ₹1 Crore owed by a corporate debtor, creditors can trigger the Insolvency and Bankruptcy Code (IBC). Serving a Section 8 demand notice is the prerequisite, which often prompts immediate settlement to avoid corporate insolvency.
+                Creditors can trigger corporate insolvency for undisputed operational debts over one crore. The creditor first serves a mandatory statutory demand notice under Section 8. Corporate debtors often clear dues immediately to avoid insolvency proceedings before NCLT. This mechanism provides immense commercial leverage against defaulting corporate companies.
               </p>
             </div>
           </div>
@@ -341,7 +341,7 @@ export default function RecoveryClient() {
               </div>
               <h4 className="text-[13.5px] font-extrabold text-[#111827] mb-1.5">Select a Category</h4>
               <p className="text-[11.5px] text-slate-500 leading-relaxed">
-                Choose from our directory of 100+ recovery query categories that matches your specific scenario (e.g., unpaid salary, cheque bounce, or invoice default).
+                Select your specific claim category from our directory of one hundred disputes. Options cover unpaid salary, invoice defaults, security deposits, and freelance payments.
               </p>
             </div>
 
@@ -352,7 +352,7 @@ export default function RecoveryClient() {
               </div>
               <h4 className="text-[13.5px] font-extrabold text-[#111827] mb-1.5">Draft the Notice</h4>
               <p className="text-[11.5px] text-slate-500 leading-relaxed">
-                Provide the details of your claim, transaction dates, outstanding amount, and debtor information. Our platform structures the legal draft automatically.
+                Enter transaction dates, owed amounts, supporting agreements, and debtor details. Our platform structures your formal legal notice draft with precise statutory citations.
               </p>
             </div>
 
@@ -363,7 +363,7 @@ export default function RecoveryClient() {
               </div>
               <h4 className="text-[13.5px] font-extrabold text-[#111827] mb-1.5">Dispatch & Track</h4>
               <p className="text-[11.5px] text-slate-500 leading-relaxed">
-                The notice is printed on official lawyer letterhead and served digitally. Digital tracking updates are shared with you in real-time.
+                Advocates review and issue your notice on official legal letterhead. We dispatch notices via registered post and track real-time delivery confirmations.
               </p>
             </div>
 
@@ -374,7 +374,7 @@ export default function RecoveryClient() {
               </div>
               <h4 className="text-[13.5px] font-extrabold text-[#111827] mb-1.5">Debtor Response</h4>
               <p className="text-[11.5px] text-slate-500 leading-relaxed">
-                The debtor is given 15 days to settle the dues. Most cases resolve at this stage; if not, you have established a strong evidentiary basis to pursue further legal recourse.
+                The debtor receives fifteen days to settle all outstanding payment dues. Most disputes settle promptly; otherwise, you hold documented proof for court action.
               </p>
             </div>
           </div>

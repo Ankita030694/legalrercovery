@@ -215,7 +215,7 @@ export default function UnpaidIncentivesClient() {
   };
 
   const tocSections = [
-    { id: "incentives-introduction", title: "Introduction" },
+    { id: "incentives-introduction", title: "Introduction to Unpaid Sales Incentive Recovery" },
     { id: "statutory-incentive-framework", title: "Statutory Framework" },
     { id: "are-incentives-wages-law", title: "Are Incentives Wages?" },
     { id: "contractual-enforceability-incentives", title: "Contractual Enforceability" },
@@ -322,7 +322,7 @@ export default function UnpaidIncentivesClient() {
                 
                 {/* Introduction */}
                 <section id="incentives-introduction" className="scroll-mt-32">
-                  <h2 className="text-xl md:text-3xl font-black text-slate-900 mb-5 border-b-2 border-[#D2A02A] pb-2 inline-block">Introduction</h2>
+                  <h2 className="text-xl md:text-3xl font-black text-slate-900 mb-5 border-b-2 border-[#D2A02A] pb-2 inline-block">Introduction to Unpaid Sales Incentive Recovery</h2>
                   <div className="prose prose-base max-w-none text-slate-650 space-y-6">
                     <p className="text-sm md:text-base leading-relaxed">
                       In the modern corporate ecosystem, variable compensation forms a significant portion of an employee&apos;s total earning potential. Industries such as information technology, SaaS, real estate, banking, insurance, and retail sales heavily structure employee compensation packages with performance-linked incentives, commission splits, and quarterly or annual bonuses. These models align individual effort with corporate growth, motivating employees to exceed baseline targets.

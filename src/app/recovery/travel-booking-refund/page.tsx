@@ -2,8 +2,8 @@ import { Metadata } from "next";
 import TravelRefundClient from "./TravelRefundClient";
 
 export const metadata: Metadata = {
-  title: "Travel Booking Refund Recovery: Recover Delayed & Withheld Dues | LegalRecovery",
-  description: "Facing delayed or denied travel booking refunds from OTAs, hotels, or tour operators in India? Know your consumer rights and get expert legal help to recover your money.",
+  title: "Travel Booking Refund Recovery in India | LegalRecovery",
+  description: "Delayed or denied travel booking refunds from OTAs, hotels, or tour operators in India? Know your consumer rights and get expert legal help to recover dues.",
   keywords: [
     "travel booking refund recovery",
     "online travel agency refund delay",

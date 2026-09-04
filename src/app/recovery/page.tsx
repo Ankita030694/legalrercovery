@@ -2,14 +2,14 @@ import { Metadata } from "next";
 import RecoveryClient from "./RecoveryClient";
 
 export const metadata: Metadata = {
-  title: "Money Recovery Claims Directory & Legal Notice Filing | LegalRecovery",
-  description: "Complete index of money recovery and legal notice filing categories in India. Start a digital notice campaign for salary, FNF dues, invoices, freelancer, vendor and B2B claims.",
+  title: "Money Recovery Claims Directory | LegalRecovery",
+  description: "Index of money recovery and legal notice filing categories in India. Send legal notices for unpaid salary, FNF, invoices, and business dues online.",
   alternates: {
     canonical: "/recovery",
   },
   openGraph: {
-    title: "Money Recovery Claims Directory & Legal Notice Filing | LegalRecovery",
-    description: "Complete index of money recovery and legal notice filing categories in India. Start a digital notice campaign for salary, FNF dues, invoices, freelancer, vendor and B2B claims.",
+    title: "Money Recovery Claims Directory | LegalRecovery",
+    description: "Index of money recovery and legal notice filing categories in India. Send legal notices for unpaid salary, FNF, invoices, and business dues online.",
     type: "website",
     url: "/recovery",
     images: [
@@ -23,7 +23,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Money Recovery Claims Directory & Legal Notice Filing | LegalRecovery",
+    title: "Money Recovery Claims Directory | LegalRecovery",
     description: "Complete index of money recovery and legal notice filing categories in India.",
     images: ["/blog_money_recovery.png"]
   }

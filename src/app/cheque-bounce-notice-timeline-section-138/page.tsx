@@ -2,8 +2,8 @@ import { Metadata } from "next";
 import ChequeBounceTimelineClient from "./ChequeBounceTimelineClient";
 
 export const metadata: Metadata = {
-  title: "Cheque Bounce Notice Timeline & Section 138 Deadlines | Recovery",
-  description: "The definitive guide to calculating and surviving the strict 15-day grace period and 30-day filing deadlines for a Section 138 NI Act cheque bounce case in India.",
+  title: "Cheque Bounce Notice Timeline (Sec 138) | Recovery",
+  description: "Guide to calculating the 15-day notice period and 30-day filing deadlines for a Section 138 NI Act cheque bounce case in India. Settle dues legally.",
   keywords: [
     "cheque bounce notice timeline",
     "section 138 notice period",

@@ -2,8 +2,8 @@ import { Metadata } from "next";
 import TourRefundClient from "./TourRefundClient";
 
 export const metadata: Metadata = {
-  title: "Tour Package Refund Recovery: Recover Withheld Holiday Dues | LegalRecovery",
-  description: "Struggling to get your tour package refund in India? Learn your legal rights against arbitrary operator cancellations and get expert legal representation to recover your money.",
+  title: "Tour Package Refund Recovery in India | LegalRecovery",
+  description: "Struggling to get a tour package refund in India? Learn your rights against arbitrary cancellations and recover your money with expert legal help.",
   keywords: [
     "tour package refund recovery",
     "holiday package cancellation refund consumer court",

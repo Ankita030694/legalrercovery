@@ -206,7 +206,7 @@ export default function HotelRefundClient() {
                 {/* Section 1 */}
                 <section id="legal-rights-hotel-bookings-india" className="scroll-mt-32">
                   <h2 className="text-xl md:text-3xl font-black text-slate-900 mb-5 border-b-2 border-[#DC2626] pb-2 inline-block">
-                    The Statutory Foundation: Deficiency of Service and Unfair Terms under the Consumer Protection Act, 2019
+                    Statutory Foundation: Consumer Protection Act 2019
                   </h2>
                   <div className="prose prose-base max-w-none text-slate-650 space-y-6">
                     <p className="text-sm md:text-base leading-relaxed">
@@ -227,7 +227,7 @@ export default function HotelRefundClient() {
                 {/* Section 2 */}
                 <section id="cancellation-rules-and-force-majeure" className="scroll-mt-32">
                   <h2 className="text-xl md:text-3xl font-black text-slate-900 mb-5 border-b-2 border-[#DC2626] pb-2 inline-block">
-                    Refund Mechanics: Refundable vs. Non-Refundable Bookings and Force Majeure Exceptions
+                    Hotel Refund Rules: Non-Refundable Terms &amp; Force Majeure
                   </h2>
                   <div className="prose prose-base max-w-none text-slate-650 space-y-6">
                     <p className="text-sm md:text-base leading-relaxed">
@@ -242,7 +242,7 @@ export default function HotelRefundClient() {
                 {/* Section 3 */}
                 <section id="ad-hoc-deductions-and-unfair-policies" className="scroll-mt-32">
                   <h2 className="text-xl md:text-3xl font-black text-slate-900 mb-5 border-b-2 border-[#DC2626] pb-2 inline-block">
-                    Unfair Disclaimers: Exposing Excessive Fees, False Advertising, and Hidden Charges
+                    Exposing Hidden Hotel Fees &amp; False Advertising
                   </h2>
                   <div className="prose prose-base max-w-none text-slate-650 space-y-6">
                     <p className="text-sm md:text-base leading-relaxed">
@@ -254,7 +254,7 @@ export default function HotelRefundClient() {
                 {/* Section 4 */}
                 <section id="the-hotel-portal-dispute-strategy" className="scroll-mt-32">
                   <h2 className="text-xl md:text-3xl font-black text-slate-900 mb-5 border-b-2 border-[#DC2626] pb-2 inline-block">
-                    Dispute Strategies: Resolving Platform Deflections, Credit Card Chargebacks, and ARN Verification
+                    Booking Portal Deflections &amp; Card Chargebacks
                   </h2>
                   <div className="prose prose-base max-w-none text-slate-650 space-y-6">
                     <p className="text-sm md:text-base leading-relaxed">
@@ -277,7 +277,7 @@ export default function HotelRefundClient() {
                 {/* Section 5 */}
                 <section id="escalation-playbook-notices-daakhil" className="scroll-mt-32">
                   <h2 className="text-xl md:text-3xl font-black text-slate-900 mb-5 border-b-2 border-[#DC2626] pb-2 inline-block">
-                    Legal Escalation Playbook: Serve Demand Notice, Register NCH Grievances, and File e-Daakhil Claims
+                    Legal Escalation: Notices, NCH &amp; e-Daakhil Claims
                   </h2>
                   <div className="prose prose-base max-w-none text-slate-650 space-y-6">
                     <p className="text-sm md:text-base leading-relaxed">
@@ -300,7 +300,7 @@ export default function HotelRefundClient() {
                 {/* Section 6 */}
                 <section id="expert-hotel-refund-recovery-services" className="scroll-mt-32">
                   <h2 className="text-xl md:text-3xl font-black text-slate-900 mb-5 border-b-2 border-[#DC2626] pb-2 inline-block">
-                    The LegalRecovery Advantage: Structured Advocacy and Successful Case Outcomes
+                    The LegalRecovery Hotel Claims Advantage
                   </h2>
                   <div className="prose prose-base max-w-none text-slate-650 space-y-6">
                     <p className="text-sm md:text-base leading-relaxed">

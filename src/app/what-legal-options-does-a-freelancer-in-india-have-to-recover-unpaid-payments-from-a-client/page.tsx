@@ -3,7 +3,7 @@ import FreelancerRecoveryClient from "./FreelancerRecoveryClient";
 
 export const metadata: Metadata = {
   title: "Freelancer Unpaid Payments Recovery: Legal Options in India",
-  description: "A comprehensive guide on legal remedies for freelancers in India to recover outstanding client payments. Learn about MSME Samadhaan, summary suits, and contract acts.",
+  description: "Legal remedies for freelancers in India to recover unpaid client payments. Learn about MSME Samadhaan, Order 37 summary suits, and contract rights.",
   keywords: [
     "freelancer payment recovery india",
     "recover unpaid payments client",

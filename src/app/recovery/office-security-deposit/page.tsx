@@ -2,8 +2,8 @@ import { Metadata } from "next";
 import OfficeSecurityDepositClient from "./OfficeSecurityDepositClient";
 
 export const metadata: Metadata = {
-  title: "Recover Commercial Office Security Deposit from Landlord | LegalRecovery",
-  description: "Is your landlord withholding your commercial office lease security deposit, claiming lock-in penalties, or demanding fit-out restoration charges? Get expert legal tech help.",
+  title: "Recover Office Security Deposit | LegalRecovery",
+  description: "Landlord withholding your commercial office lease security deposit? Learn legal notice rules, Commercial Courts remedies, and recovery options in India.",
   keywords: [
     "recover commercial office security deposit",
     "legal notice for refund of commercial lease deposit",

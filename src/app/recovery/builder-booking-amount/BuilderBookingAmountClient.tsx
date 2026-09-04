@@ -223,7 +223,7 @@ export default function BuilderBookingAmountClient() {
   };
 
   const tocSections = [
-    { id: "overview-builder-booking", title: "Overview & Context" },
+    { id: "overview-builder-booking", title: "Builder Booking Amount Recovery: Overview & Legal Context" },
     { id: "earnest-vs-advance", title: "Earnest Money vs Advance" },
     { id: "rera-statutory-protections", title: "RERA Protections" },
     { id: "consumer-protection-act", title: "Consumer Rights" },
@@ -328,7 +328,7 @@ export default function BuilderBookingAmountClient() {
                 
                 {/* Section 1: Overview & Context */}
                 <section id="overview-builder-booking" className="scroll-mt-32">
-                  <h2 className="text-xl md:text-3xl font-black text-slate-900 mb-5 border-b-2 border-[#DC2626] pb-2 inline-block">Overview &amp; Context</h2>
+                  <h2 className="text-xl md:text-3xl font-black text-slate-900 mb-5 border-b-2 border-[#DC2626] pb-2 inline-block">Builder Booking Amount Recovery: Overview &amp; Legal Context</h2>
                   <div className="prose prose-base max-w-none text-slate-650 space-y-6">
                     <p className="text-sm md:text-base leading-relaxed">
                       Purchasing a home or commercial space is one of the most significant financial decisions a family or business makes in India. The process typically begins with the selection of a property, followed by the payment of a booking amount, token money, or earnest money deposit to lock in the unit. Unfortunately, what is intended to be a gateway to property ownership often evolves into a protracted financial dispute. Across major Indian metropolitan areas—including Delhi NCR, Mumbai Metropolitan Region (MMR), Bangalore, and Pune—homebuyers routinely face situations where they must cancel a booking due to project delays, layout changes, lack of approvals, or personal financial shifts, only to meet with absolute refusal from the builder to refund their initial deposit.

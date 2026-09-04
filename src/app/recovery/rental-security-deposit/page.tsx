@@ -2,8 +2,8 @@ import { Metadata } from "next";
 import RentalSecurityDepositClient from "./RentalSecurityDepositClient";
 
 export const metadata: Metadata = {
-  title: "Recover Rental Security Deposit from Landlord | LegalRecovery",
-  description: "Is your landlord refusing to refund your rental security deposit or making arbitrary deductions for painting and cleaning? Learn how to legally recover your money in India.",
+  title: "Recover Rental Deposit from Landlord | LegalRecovery",
+  description: "Landlord refusing to refund your rental security deposit or making arbitrary deductions? Learn how to legally recover your deposit money in India.",
   keywords: [
     "recover rental security deposit from landlord",
     "legal notice to landlord for refund of security deposit",

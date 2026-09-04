@@ -2,8 +2,8 @@ import { Metadata } from "next";
 import MediclaimReimbursementClient from "./MediclaimReimbursementClient";
 
 export const metadata: Metadata = {
-  title: "Recover Wrongfully Rejected Mediclaim Reimbursement | LegalRecovery",
-  description: "Has your health insurance or mediclaim reimbursement been wrongfully rejected by the TPA or insurer? Learn about the IRDAI claim timelines, pre-existing disease guidelines, and how to recover your funds.",
+  title: "Recover Rejected Mediclaim Dues | LegalRecovery",
+  description: "Mediclaim reimbursement rejected by TPA or insurer? Learn about IRDAI timelines, pre-existing disease rules, Ombudsman complaints, and recovery steps.",
   keywords: [
     "recover mediclaim reimbursement",
     "wrongful health insurance claim rejection",

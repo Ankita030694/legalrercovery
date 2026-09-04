@@ -2,8 +2,8 @@ import { Metadata } from "next";
 import ContractorPaymentClient from "./ContractorPaymentClient";
 
 export const metadata: Metadata = {
-  title: "Recover Contractor Payments & Unpaid B2B Dues | LegalRecovery",
-  description: "Struggling to recover contractor payments, unpaid B2B project dues, or vendor fees in India? Learn about MSME Samadhaan, Order 37 CPC summary suits, and legal notices.",
+  title: "Recover Contractor Payments & Dues | LegalRecovery",
+  description: "Struggling to recover contractor payments or B2B project dues in India? Learn about MSME Samadhaan, Order 37 CPC summary suits, and legal notices.",
   keywords: [
     "recover contractor payment India",
     "unpaid B2B dues legal notice",

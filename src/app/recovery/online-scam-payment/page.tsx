@@ -3,7 +3,7 @@ import OnlineScamClient from "./OnlineScamClient";
 
 export const metadata: Metadata = {
   title: "Recover Online Scam Payment in India | LegalRecovery",
-  description: "Tricked into paying money to online scammers via UPI, Credit Card, or Net Banking? Learn about bank chargeback rights, RBI customer protection rules, and legal notices.",
+  description: "Lost money to an online scam via UPI or cards? Learn about bank chargeback rights, RBI customer protection circulars, and legal recovery notices.",
   keywords: [
     "recover online scam payment",
     "chargeback process online fraud india",

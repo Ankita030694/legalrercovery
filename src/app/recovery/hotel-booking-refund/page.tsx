@@ -2,8 +2,8 @@ import { Metadata } from "next";
 import HotelRefundClient from "./HotelRefundClient";
 
 export const metadata: Metadata = {
-  title: "Hotel Booking Refund Recovery: Recover Delayed & Withheld Lodging Dues | LegalRecovery",
-  description: "Struggling to get a hotel booking refund in India? Learn your legal rights against arbitrary cancellations and get expert legal representation to recover your money.",
+  title: "Hotel Booking Refund Recovery in India | LegalRecovery",
+  description: "Struggling to get a hotel booking refund in India? Know your consumer rights against cancellations and get expert legal assistance to recover dues.",
   keywords: [
     "hotel booking refund recovery",
     "hotel cancellation refund consumer court",

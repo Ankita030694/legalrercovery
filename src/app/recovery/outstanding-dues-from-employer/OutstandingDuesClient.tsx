@@ -11,43 +11,43 @@ import { PaymentModal } from "@/components/PaymentModal";
 const faqs = [
   {
     question: "Can an employer unilaterally cancel my vested ESOPs when I resign?",
-    answer: "No, vested ESOPs are your earned property and cannot be unilaterally cancelled or clawed back unless there is a specific, legally valid clause for 'termination for cause' (like fraud or theft). If you resign normally, you have the right to exercise your vested options within the exercise period specified in the ESOP Scheme. If the employer refuses to process your exercise request, it constitutes a breach of contract."
+    answer: "No. Vested ESOPs are your earned property. Companies cannot cancel them unless there is proven fraud or theft. Upon resignation, you can exercise vested options within the plan window. Denying exercise requests is a direct breach of contract."
   },
   {
     question: "What legal recourse do I have for unpaid sales commissions in India?",
-    answer: "Sales commissions are governed by the Indian Contract Act, 1872. If you have achieved the target and the commission has accrued, the employer is legally bound to pay it. You can serve a formal legal notice for breach of contract. If the dues remain unpaid, you can file a Summary Suit under Order 37 of the CPC for fast-track recovery based on written agreements and performance dashboards."
+    answer: "Sales incentives are binding agreements under the Indian Contract Act 1872. Once you hit your target, the company must pay. You can serve a formal legal notice. You can also file an Order 37 summary suit in civil court."
   },
   {
     question: "How long does a consultant have to sue an employer for unpaid retainer fees?",
-    answer: "Under Article 113 of the Schedule to the Limitation Act, 1963, the limitation period to file a civil recovery suit or summary suit for unpaid professional/retainer fees is three (3) years from the date the invoice became due or from the date the debt was last acknowledged in writing by the company."
+    answer: "You have three years under the Limitation Act 1963. The timeline begins on the invoice due date. Written emails acknowledging the debt reset this three-year period."
   },
   {
     question: "Is withholding maternity wages a criminal offense under Indian law?",
-    answer: "Yes, under Section 21 of the Maternity Benefit Act, 1961, if an employer fails to pay maternity benefits or discharges/dismisses a woman during her maternity leave, they can be prosecuted. The offense is punishable with imprisonment of not less than three months, which may extend to one year, and a fine."
+    answer: "Yes. Withholding maternity pay violates Section 21 of the Maternity Benefit Act 1961. Defaulting employers face up to one year of imprisonment and statutory fines. Firing an employee during maternity leave is also illegal."
   },
   {
     question: "Can an employer claw back my sign-on bonus if they terminate me without cause?",
-    answer: "Generally, no. Sign-on bonus clawback clauses are designed to ensure employee retention. If the employer terminates your employment without cause before the bond period ends, they cannot legally enforce the clawback. Such arbitrary clawbacks violate Section 74 of the Indian Contract Act, 1872, as they act as a penalty rather than reasonable damages."
+    answer: "No. If a company fires you without cause, they cannot reclaim your sign-on bonus. Arbitrary clawbacks act as unfair penalties under Section 74 of the Contract Act. Courts reject these penalty claims."
   },
   {
     question: "What is a Summary Suit (Order 37 CPC) and how does it help recover dues?",
-    answer: "A Summary Suit is a fast-track civil remedy under Order 37 of the CPC for recovering liquidated monetary claims arising from written contracts, invoices, or cheques. Unlike regular civil suits, the defendant does not have an automatic right to defend the case; they must apply to the court for 'leave to defend' within 10 days of service, showing a genuine triable dispute."
+    answer: "An Order 37 summary suit is a fast-track civil remedy. It recovers liquidated debts from written contracts and unpaid invoices. The defendant must obtain court leave to defend within 10 days or face an immediate decree."
   },
   {
     question: "Can I approach the Labour Commissioner for unpaid freelance or consulting fees?",
-    answer: "No. The Labour Commissioner and Labor Courts only have jurisdiction over 'workmen' or 'employees' under labor statutes. Independent consultants and freelancers are classified as independent contractors. Their disputes are governed by commercial contract law, and they must seek remedies through civil courts or arbitration."
+    answer: "No. Labour courts only handle traditional employees and workmen. Independent consultants are commercial service providers. They must recover unpaid fees through civil courts, MSME councils, or commercial arbitration."
   },
   {
     question: "How do I prove my target achievements if the company locks me out of Salesforce/CRM?",
-    answer: "You must preserve secondary evidence, such as weekly performance reports sent via email, screenshot logs of target completion, client sign-offs, WhatsApp chats with your manager confirming achievements, and appraisal letters. Under Section 63 of the Bharatiya Sakshya Adhiniyam (BSA), 2023, digital prints and emails are admissible in court when accompanied by a statutory certificate."
+    answer: "Preserve secondary records before leaving. Save weekly progress emails, client sign-offs, and target screenshots. WhatsApp chats and appraisal letters also serve as valid digital evidence under the Bharatiya Sakshya Adhiniyam 2023."
   },
   {
     question: "Can I file an insolvency case against a company for outstanding commission dues?",
-    answer: "Yes, under the Insolvency and Bankruptcy Code (IBC), 2016, employees and consultants are operational creditors. If your total undisputed outstanding dues exceed ₹1 Crore, you can serve a statutory demand notice under Section 8. If the company fails to pay or show an existing dispute within 10 days, you can file an insolvency petition before the NCLT."
+    answer: "Yes. Employees and contractors are operational creditors under the IBC 2016. If your undisputed dues exceed ₹1 Crore, you can serve a Section 8 demand notice. Unsettled claims can be filed before the NCLT."
   },
   {
     question: "Can directors be held personally liable for outstanding contractual dues of a company?",
-    answer: "Generally, directors have limited liability because a private limited company is a separate legal entity. However, if you can prove that the directors engaged in fraud, siphoned off company funds, or stripped assets deliberately to evade paying dues, courts can 'pierce the corporate veil' and hold the directors personally liable under civil law or prosecute them under BNS 2023 for cheating."
+    answer: "Usually, corporate entities offer limited liability. However, courts pierce the corporate veil if directors siphon money or commit fraud. Directors can also face criminal prosecution for cheating under the BNS 2023."
   }
 ];
 
@@ -167,7 +167,7 @@ export default function OutstandingDuesClient() {
   };
 
   const tocSections = [
-    { id: "outstanding-dues-introduction", title: "Introduction" },
+    { id: "outstanding-dues-introduction", title: "Introduction to Outstanding Employment Dues" },
     { id: "esop-equity-defaults", title: "ESOP & Equity Disputes" },
     { id: "incentives-commissions-claims", title: "Commissions & Incentives" },
     { id: "allowances-reimbursements-claims", title: "Allowances & Travel Dues" },
@@ -273,19 +273,19 @@ export default function OutstandingDuesClient() {
                 
                 {/* Introduction */}
                 <section id="outstanding-dues-introduction" className="scroll-mt-32">
-                  <h2 className="text-xl md:text-3xl font-black text-slate-900 mb-5 border-b-2 border-[#DC2626] pb-2 inline-block">Introduction</h2>
+                  <h2 className="text-xl md:text-3xl font-black text-slate-900 mb-5 border-b-2 border-[#DC2626] pb-2 inline-block">Introduction to Outstanding Employment Dues</h2>
                   <div className="prose prose-base max-w-none text-slate-650 space-y-6">
                     <p className="text-sm md:text-base leading-relaxed">
-                      In the modern employment landscape, compensation is rarely a simple matter of a fixed monthly salary. To attract and retain high-performing talent, businesses—ranging from fast-growing startups to established multinational corporations—design complex, multi-tiered compensation packages. These packages regularly include non-salary elements such as Employee Stock Option Plans (ESOPs), performance-linked sales commissions, sign-on bonuses, relocation payouts, travel reimbursements, and statutory maternity benefits. Furthermore, many organizations rely on independent consultants, freelancers, and retainers who operate under distinct commercial agreements rather than traditional employment contracts.
+                      Modern compensation includes far more than a basic monthly salary. High-growth firms offer stock options, sales commissions, sign-on bonuses, and relocation payouts. Companies also hire independent consultants and retainers on commercial contracts.
                     </p>
                     <p className="text-sm md:text-base leading-relaxed">
-                      While these complex compensation structures align incentives and support remote collaboration, they also introduce significant friction when a relationship ends or when a company faces a financial crunch. At LegalRecovery, we regularly observe a concerning corporate trend: when companies decide to cut costs, conserve cash, or penalize resigning employees, they target these non-salary outstanding dues first. HR and finance departments frequently employ bureaucratic delays, complex policy interpretations, and access blockages to avoid paying earned commissions, relisting vested equity, or settling outstanding professional retainer invoices.
+                      Unfortunately, companies often withhold these non-salary dues when employees resign. HR teams use bureaucratic delays, portal lockouts, or sudden policy changes to avoid payments. They freeze commissions, block vested stock options, or ignore consultant invoices.
                     </p>
                     <p className="text-sm md:text-base leading-relaxed">
-                      Withholding these dues is a direct breach of contract and a severe violation of the law. Outstanding dues represent compensation for value you have already delivered. Whether you are an executive disputing vested stock options, a sales head fighting for earned commissions, a mother whose statutory maternity benefit has been withheld, or a contractor waiting on unpaid invoices, the law provides robust pathways for recovery. At LegalRecovery, we combine expert legal advocacy with technology-driven workflows to pierce corporate defenses and ensure that every rupee of your outstanding dues is recovered with interest.
+                      Withholding earned earnings is a direct breach of contract. Whether you are an executive fighting for vested shares, a salesperson seeking commissions, or a mother denied maternity pay, the law is on your side. LegalRecovery combines legal expertise with digital tracking to help you recover every rupee with interest.
                     </p>
                     <div className="bg-red-50 p-6 rounded-2xl border-l-4 border-[#DC2626] italic text-xs sm:text-sm text-red-900 font-semibold leading-relaxed">
-                      &quot;Non-salary compensation components represent contractually binding and statutorily protected earnings. When an employer unilaterally alters, delays, or denies these components, they commit an actionable breach of contract, exposing the entity and its directors to civil liability, summary suits, and statutory penalties.&quot;
+                      &quot;Non-salary compensation is contractually protected pay. Unilaterally cancelling, reducing, or delaying these components constitutes an actionable breach of contract under Indian law.&quot;
                     </div>
                   </div>
                 </section>
@@ -295,22 +295,22 @@ export default function OutstandingDuesClient() {
                   <h2 className="text-xl md:text-3xl font-black text-slate-900 mb-5 border-b-2 border-[#DC2626] pb-2 inline-block">ESOP & Equity Disputes</h2>
                   <div className="prose prose-base max-w-none text-slate-650 space-y-6">
                     <p className="text-sm md:text-base leading-relaxed">
-                      Employee Stock Option Plans (ESOPs) have become a cornerstone of compensation in the startup and technology sectors. They allow employees to participate in the growth of the company by purchasing equity at a pre-determined price. However, equity compensation is also one of the most common sources of high-value disputes when an employee resigns or is terminated.
+                      Employee Stock Option Plans (ESOPs) are a core reward in the technology and startup sectors. They allow employees to buy company shares at fixed grant prices. However, equity packages often spark high-value disputes during employee exits.
                     </p>
                     <p className="text-sm md:text-base leading-relaxed">
-                      The primary issue arises when an employer attempts to unilaterally cancel or claw back options that have already vested. Under the law, options vest as a result of time spent or milestones achieved, representing earned compensation. Once an option has vested, it is the property of the employee. The company cannot cancel vested options during a normal resignation. The employee has a contractual right to exercise these options within the exercise period specified in the ESOP Scheme.
+                      The most common dispute happens when employers cancel vested options. Options vest after specific milestones or time periods. Once options vest, they become the employee&apos;s earned legal property. A company cannot cancel vested options during an ordinary resignation.
                     </p>
                     <p className="text-sm md:text-base leading-relaxed">
-                      Common employer defaults in equity compensation include:
+                      Common corporate defaults in equity compensation include:
                     </p>
                     <ul className="list-disc pl-6 space-y-2 text-sm text-slate-650">
-                      <li><strong>Exercise Denials:</strong> Refusing to process the employee&apos;s option exercise application during the notice period or post-exit window.</li>
-                      <li><strong>Clawback Manipulations:</strong> Attempting to apply retroactive clawback clauses for normal exits by falsely labeling them as &quot;terminations for cause.&quot;</li>
-                      <li><strong>Valuation Withholding:</strong> Failing to provide the Fair Market Value (FMV) assessment required for the employee to calculate tax liabilities and exercise costs.</li>
-                      <li><strong>Buyback Defaults:</strong> Agreeing to buy back the shares during a liquidity event but withholding the cash payout indefinitely.</li>
+                      <li><strong>Exercise Denials:</strong> Blocking portal access or rejecting option exercise forms during your notice period.</li>
+                      <li><strong>Clawback Manipulations:</strong> Attempting to revoke vested options without proving gross employee misconduct.</li>
+                      <li><strong>Valuation Withholding:</strong> Refusing to share Fair Market Value data needed for exercise cost calculations.</li>
+                      <li><strong>Buyback Defaults:</strong> Promising share buybacks during funding rounds but delaying cash disbursements indefinitely.</li>
                     </ul>
                     <p className="text-sm md:text-base leading-relaxed">
-                      ESOP disputes are governed by the ESOP Scheme document, the specific Letter of Grant, and the <strong>Companies Act, 2013 (Section 62(1)(b))</strong>. If an employer illegally denies your vested options, it constitutes a material breach of contract. We help employees audit their grant letters, compute the valuation of their vested options, serve formal demand notices to the company&apos;s board, and, if necessary, initiate civil suits to enforce the contract and claim damages for the lost value of the equity.
+                      ESOPs are governed by the grant agreement and <strong>Section 62(1)(b) of the Companies Act, 2013</strong>. Canceling vested shares is an unlawful breach of contract. We audit grant terms, serve demand notices to boards of directors, and file civil suits to recover lost equity value.
                     </p>
                   </div>
                 </section>
@@ -320,21 +320,21 @@ export default function OutstandingDuesClient() {
                   <h2 className="text-xl md:text-3xl font-black text-slate-900 mb-5 border-b-2 border-[#DC2626] pb-2 inline-block">Commissions & Incentives</h2>
                   <div className="prose prose-base max-w-none text-slate-650 space-y-6">
                     <p className="text-sm md:text-base leading-relaxed">
-                      For sales, business development, and executive roles, commissions and performance-linked incentives often make up a significant portion of annual earnings. Unlike fixed salary, these payouts are calculated based on targets, revenue milestones, or profit margins. Because commission calculations involve internal data and accounting cycles, they are highly susceptible to employer defaults and manipulation.
+                      Sales professionals and executives often earn substantial income through performance incentives. Payouts depend on hit revenue targets, closed deals, or profit margins. Because companies calculate incentives internally, defaults and accounting disputes happen frequently.
                     </p>
                     <p className="text-sm md:text-base leading-relaxed">
-                      Employers often attempt to avoid commission payouts using several common tactics. A frequent excuse is that the employee must be &quot;actively on the payroll on the date of disbursement.&quot; While this clause is common, it is legally vulnerable if the employee completed all target parameters and the commission accrued during their active employment. Courts have repeatedly ruled that once the employee has performed their side of the bargain, the incentive is an accrued right that cannot be wiped out by a subsequent separation.
+                      Employers often claim that employees must be actively employed on payout dates. However, Indian courts reject this defense when targets were completed during active tenure. Once you deliver the agreed results, your right to the commission becomes an accrued asset.
                     </p>
                     <p className="text-sm md:text-base leading-relaxed">
-                      Other common disputes include:
+                      Common incentive disputes include:
                     </p>
                     <ul className="list-disc pl-6 space-y-2 text-sm text-slate-650">
-                      <li><strong>Retrospective Policy Changes:</strong> Unilaterally modifying target structures or commission percentages after the performance period has ended.</li>
-                      <li><strong>Delayed Accounting:</strong> Delaying the audit of sales books to push the payout calculation past the employee&apos;s exit date.</li>
-                      <li><strong>Client Default Excuses:</strong> Refusing to pay commissions on closed deals because the client is slow to pay the company, transferring the company&apos;s business risk onto the employee.</li>
+                      <li><strong>Retroactive Policy Cuts:</strong> Changing target schemes or reducing commission rates after deals are closed.</li>
+                      <li><strong>Delayed Accounting:</strong> Postponing sales audits until after the employee exits to avoid payouts.</li>
+                      <li><strong>Client Delay Excuses:</strong> Refusing commissions because a client delayed payment, shifting company risk onto workers.</li>
                     </ul>
                     <p className="text-sm md:text-base leading-relaxed">
-                      Under the <strong>Indian Contract Act, 1872</strong>, commission agreements are binding bilateral contracts. If you have documented proof of target achievement—such as CRM dashboards, email approvals, or performance certificates—the company cannot withhold payment. We assist clients by demanding a formal audit of the incentive calculations, serving targeted legal notices to recover unpaid commissions, and filing recovery suits to secure these performance-linked dues.
+                      Under the <strong>Indian Contract Act, 1872</strong>, incentive plans are legally binding agreements. If you have proof of target completion, your company must pay. We demand audit records, issue assertive legal notices, and file recovery suits for unpaid commissions.
                     </p>
                   </div>
                 </section>
@@ -344,16 +344,16 @@ export default function OutstandingDuesClient() {
                   <h2 className="text-xl md:text-3xl font-black text-slate-900 mb-5 border-b-2 border-[#DC2626] pb-2 inline-block">Allowances & Travel Dues</h2>
                   <div className="prose prose-base max-w-none text-slate-650 space-y-6">
                     <p className="text-sm md:text-base leading-relaxed">
-                      To facilitate operations, companies offer various allowances and expense reimbursement schemes. These include relocation allowances, sign-on bonuses, business travel reimbursements, client entertainment budgets, and home-office allowances. When employees incur out-of-pocket expenses for business activities, the company holds these funds in trust.
+                      Companies offer various expense schemes, including relocation grants, sign-on bonuses, and business travel reimbursements. When employees spend personal funds for work, companies hold that money in trust.
                     </p>
                     <p className="text-sm md:text-base leading-relaxed">
-                      A common dispute involves sign-on bonus clawback clauses. Many contracts state that if an employee leaves within 12 months, they must return the sign-on bonus. However, if the company terminates the employee without cause, or if the employee is forced to resign due to toxic work conditions or unpaid salary, the company cannot legally enforce this clawback. Under <strong>Section 74 of the Indian Contract Act, 1872</strong>, arbitrary clawbacks that do not reflect actual, reasonable losses incurred by the employer are classified as invalid penalties.
+                      Disputes often arise over sign-on bonus clawbacks. Many contracts state that workers leaving within one year must refund bonuses. However, if the employer terminates you without cause, clawbacks are unenforceable. Under <strong>Section 74 of the Indian Contract Act, 1872</strong>, arbitrary clawbacks act as illegal penalties.
                     </p>
                     <p className="text-sm md:text-base leading-relaxed">
-                      Furthermore, companies often withhold travel and operational reimbursements during the exit process, claiming that bills are missing or were submitted late. If you have proof of submission and manager approval, these reimbursements are undisputed debts. Withholding them is an illegal deduction from your compensation.
+                      Employers also delay travel reimbursements during exits by claiming missing receipts. When you provide submission proof and manager sign-offs, these claims become undisputed debts. Withholding approved expenses is unlawful.
                     </p>
                     <p className="text-sm md:text-base leading-relaxed">
-                      LegalRecovery helps clients compile their reimbursement claims, review sign-on bonus agreements, and counter invalid clawback demands. We ensure these travel, operational, and relocation allowances are fully accounted for and recovered as part of the overall settlement.
+                      LegalRecovery helps clients compile expense receipts, challenge clawback clauses, and demand full reimbursement. We ensure all pending business expenses are recovered during exit settlements.
                     </p>
                   </div>
                 </section>
@@ -363,16 +363,16 @@ export default function OutstandingDuesClient() {
                   <h2 className="text-xl md:text-3xl font-black text-slate-900 mb-5 border-b-2 border-[#DC2626] pb-2 inline-block">Maternity Benefits Recovery</h2>
                   <div className="prose prose-base max-w-none text-slate-650 space-y-6">
                     <p className="text-sm md:text-base leading-relaxed">
-                      The <strong>Maternity Benefit Act, 1961</strong> (amended in 2017) is a protective statute designed to secure women&apos;s employment and economic independence during maternity. The Act mandates that every woman who has worked for an employer for at least 80 days in the 12 months preceding her expected delivery date is entitled to 26 weeks of fully paid maternity leave.
+                      The <strong>Maternity Benefit Act, 1961</strong> guarantees economic security and employment protection for working mothers. Any woman who has worked for 80 days in the preceding 12 months is entitled to 26 weeks of fully paid leave.
                     </p>
                     <p className="text-sm md:text-base leading-relaxed">
-                      Despite the clear statutory mandate, some employers attempt to evade these payments. We frequently see cases where companies constructively discharge pregnant employees, refuse to pay maternity wages, or delay payments indefinitely. Under <strong>Section 12</strong> of the Act, it is unlawful for an employer to discharge, dismiss, or reduce the wages of a woman during her maternity leave. Any termination during this period is invalid and constitutes a serious statutory offense.
+                      Despite these clear rules, some companies illegally withhold payments or terminate pregnant employees. Under <strong>Section 12</strong> of the Act, firing or dismissing a woman during maternity leave is strictly unlawful. Any termination during this period is legally void.
                     </p>
                     <p className="text-sm md:text-base leading-relaxed">
-                      In addition to the 26 weeks of paid leave, women are entitled to a medical bonus of ₹3,500 (or the amount revised by the government). If an employer withholds these benefits, they violate central labor laws. Under <strong>Section 21</strong>, the failure to pay maternity benefits is a criminal offense punishable by imprisonment of up to one year and a fine.
+                      Eligible employees also receive a statutory medical bonus of ₹3,500. Under <strong>Section 21</strong>, withholding maternity benefits is a criminal offense punishable by up to one year in prison and fines.
                     </p>
                     <p className="text-sm md:text-base leading-relaxed">
-                      At LegalRecovery, we protect the rights of working mothers. We serve formal notices to defaulting employers citing the strict provisions of the Maternity Benefit Act. If the company fails to comply, we assist in filing formal complaints before the Controlling Authority (Assistant Labour Commissioner) to secure the dues, interest, and statutory penalties.
+                      At LegalRecovery, we protect working mothers. We serve formal notices citing the Maternity Benefit Act. If employers refuse to pay, we file claims before the Controlling Authority to secure wages, interest, and penalties.
                     </p>
                   </div>
                 </section>
@@ -382,21 +382,21 @@ export default function OutstandingDuesClient() {
                   <h2 className="text-xl md:text-3xl font-black text-slate-900 mb-5 border-b-2 border-[#DC2626] pb-2 inline-block">Consulting & Retainer Fees</h2>
                   <div className="prose prose-base max-w-none text-slate-650 space-y-6">
                     <p className="text-sm md:text-base leading-relaxed">
-                      The modern economy relies heavily on professional retainers, freelancers, and independent contractors. These professionals provide specialized services, such as software development, marketing, business advisory, and design, without being enrolled on the company&apos;s permanent payroll. Instead, their relationship is governed by professional service agreements or retainership contracts, and payments are processed against raised invoices.
+                      Many businesses rely on independent contractors, freelancers, and retainers. These professionals deliver software, marketing, or design work under commercial service contracts rather than employment rolls.
                     </p>
                     <p className="text-sm md:text-base leading-relaxed">
-                      A common challenge for independent retainers is the lack of payment protection under traditional labor laws. When a client company defaults on an invoice or terminates a retainer contract without paying the notice fee, the consultant cannot approach the Labour Commissioner. Their dispute is strictly commercial and is governed by the <strong>Indian Contract Act, 1872</strong>.
+                      Independent contractors do not have access to standard labor courts. When a client defaults on invoices, the dispute is governed purely by the <strong>Indian Contract Act, 1872</strong>.
                     </p>
                     <p className="text-sm md:text-base leading-relaxed">
-                      To recover unpaid retainer fees, the consultant must rely on the terms of the service agreement. Key elements to establish include:
+                      To recover unpaid professional fees, consultants must prove three elements:
                     </p>
                     <ul className="list-disc pl-6 space-y-2 text-sm text-slate-650">
-                      <li><strong>Scope of Work:</strong> Proof that the services were delivered in accordance with the agreement.</li>
-                      <li><strong>Invoice Validation:</strong> Emails showing that invoices were sent, received, and acknowledged by the client company.</li>
-                      <li><strong>Acceptance of Deliverables:</strong> Written sign-offs or client approvals of the completed project milestones.</li>
+                      <li><strong>Scope of Work:</strong> Proof that deliverables matched the agreed contractual specifications.</li>
+                      <li><strong>Invoice Records:</strong> Verified emails showing invoices were delivered to and acknowledged by the client.</li>
+                      <li><strong>Project Approvals:</strong> Written sign-offs or client messages accepting the completed project milestones.</li>
                     </ul>
                     <p className="text-sm md:text-base leading-relaxed">
-                      LegalRecovery provides specialized contract enforcement services for freelancers and independent consultants. We draft commercial demand notices that emphasize breach of contract and intellectual property ownership (retaining the right to withhold deliverables if unpaid). If the client does not settle, we assist in filing summary suits or commercial recovery cases to secure the outstanding fees.
+                      LegalRecovery enforces consulting agreements. We issue commercial demand notices highlighting breach of contract and intellectual property rights. If needed, we file summary suits or commercial cases to recover your fees.
                     </p>
                   </div>
                 </section>
@@ -406,16 +406,16 @@ export default function OutstandingDuesClient() {
                   <h2 className="text-xl md:text-3xl font-black text-slate-900 mb-5 border-b-2 border-[#DC2626] pb-2 inline-block">Employee vs Contractor Status</h2>
                   <div className="prose prose-base max-w-none text-slate-650 space-y-6">
                     <p className="text-sm md:text-base leading-relaxed">
-                      When recovering outstanding dues, determining whether you are classified as an employee or an independent contractor is a critical first step. This classification determines which laws protect you and which legal forums (Labor Courts vs. Civil/Commercial Courts) have jurisdiction over your dispute.
+                      Knowing whether you are an employee or an independent contractor is essential. This distinction determines which court or authority has legal jurisdiction over your claim.
                     </p>
                     <p className="text-sm md:text-base leading-relaxed">
-                      Indian courts use specific legal tests to determine this status, looking beyond the label used in your contract. In landmark judgments such as <strong>Dharangadhra Chemical Works Ltd. v. State of Saurashtra</strong>, the Supreme Court established the &quot;control test&quot; and the &quot;integration test.&quot; Under these tests, you are likely classified as an employee if the company controls not only what work you do but also how and when you do it, and if your work is integrated into the core operations of the business.
+                      Indian courts examine actual working realities rather than contract labels. In <strong>Dharangadhra Chemical Works Ltd. v. State of Saurashtra</strong>, the Supreme Court established the control test. If a company directs your hours, methods, and equipment, you are legally an employee.
                     </p>
                     <p className="text-sm md:text-base leading-relaxed">
-                      Conversely, if you retain independence over your working hours, use your own equipment, work for multiple clients, and raise invoices with GST, you are classified as an independent contractor. While employees can access Labor Courts and Shops Act inspectors, independent contractors must seek remedies through civil litigation, commercial arbitration, or Micro and Small Enterprise Facilitation Councils (MSEFC).
+                      In contrast, if you control your schedule, use your own tools, and invoice with GST, you are an independent contractor. Employees can file in Labor Courts, while contractors must file in Civil Courts, MSME councils, or commercial arbitration.
                     </p>
                     <p className="text-sm md:text-base leading-relaxed">
-                      Understanding this distinction is vital to avoid filing in the wrong forum, which can lead to dismissals and delays. At LegalRecovery, we analyze your contract and day-to-day work relationship to select the correct legal strategy for your specific status.
+                      Selecting the correct legal forum avoids costly dismissals. We review your working relationship to pick the fastest legal remedy for your case.
                     </p>
                   </div>
                 </section>
@@ -425,19 +425,19 @@ export default function OutstandingDuesClient() {
                   <h2 className="text-xl md:text-3xl font-black text-slate-900 mb-5 border-b-2 border-[#DC2626] pb-2 inline-block">Written Proof & Dashboards</h2>
                   <div className="prose prose-base max-w-none text-slate-650 space-y-6">
                     <p className="text-sm md:text-base leading-relaxed">
-                      In any legal dispute regarding outstanding dues, the strength of your case depends on your evidence. Verbal promises, informal commitments, or unconfirmed discussions are difficult to enforce. To build an airtight case, you must compile a structured paper trail that documents your contract, your performance, and the company&apos;s default.
+                      Recovering outstanding compensation depends on the quality of your evidence. Unwritten promises and verbal assurances carry little weight in court. You need a verifiable paper trail showing agreed terms and actual performance.
                     </p>
                     <p className="text-sm md:text-base leading-relaxed">
-                      Crucial evidence for recovering non-salary dues includes:
+                      Key evidence to collect includes:
                     </p>
                     <ul className="list-disc pl-6 space-y-2 text-sm text-slate-650">
-                      <li><strong>Written Agreements:</strong> Signed employment contracts, ESOP grant letters, commission agreements, and signed addendums detailing target structures.</li>
-                      <li><strong>Performance Logs:</strong> Screenshots of CRM dashboards (like Salesforce or HubSpot), completed project sheets, sales reports, and client sign-offs confirming target completion.</li>
-                      <li><strong>Written Acknowledgments:</strong> Emails from managers or HR acknowledging your target achievements, approving expense bills, or promising payment dates.</li>
-                      <li><strong>Invoices and Statements:</strong> Raised professional invoices, GST filing logs, and bank statements showing partial payments or historical payouts.</li>
+                      <li><strong>Written Agreements:</strong> Signed employment contracts, ESOP letters, commission plans, and scope addendums.</li>
+                      <li><strong>Performance Records:</strong> Screenshots of CRM dashboards, sales logs, code repositories, and client sign-offs.</li>
+                      <li><strong>Manager Confirmations:</strong> Emails or Slack chats acknowledging target hits or approving travel expense bills.</li>
+                      <li><strong>Financial Documents:</strong> Raised tax invoices, GST returns, and bank statements showing past payments.</li>
                     </ul>
                     <p className="text-sm md:text-base leading-relaxed">
-                      It is important to download and preserve these records before the company revokes your access to work email, Slack, and CRM portals. Under the <strong>Bharatiya Sakshya Adhiniyam (BSA), 2023</strong>, digital evidence is fully admissible in Indian courts, provided it is supported by a statutory certificate verifying its authenticity and integrity. We guide our clients through this collection process to ensure all digital evidence is legally preserved.
+                      Download these records before the company revokes your portal access. Under the <strong>Bharatiya Sakshya Adhiniyam (BSA), 2023</strong>, digital logs and emails are admissible when accompanied by a statutory certificate. We help clients preserve this vital electronic evidence.
                     </p>
                   </div>
                 </section>
@@ -447,16 +447,16 @@ export default function OutstandingDuesClient() {
                   <h2 className="text-xl md:text-3xl font-black text-slate-900 mb-5 border-b-2 border-[#DC2626] pb-2 inline-block">Limitation Periods</h2>
                   <div className="prose prose-base max-w-none text-slate-650 space-y-6">
                     <p className="text-sm md:text-base leading-relaxed">
-                      Every legal claim for outstanding dues is bound by strict statutory timelines. Under the <strong>Limitation Act, 1963</strong>, you must initiate legal action within a specific window, or you lose the right to enforce your claim in a court of law.
+                      All claims for outstanding compensation must meet strict statutory deadlines. Under the <strong>Limitation Act, 1963</strong>, missing your deadline bars you from legal relief.
                     </p>
                     <p className="text-sm md:text-base leading-relaxed">
-                      For civil recovery suits, summary suits, and breach of contract claims arising from unpaid commissions, ESOPs, or retainer invoices, the limitation period is <strong>three (3) years</strong> from the date the payment became due. For example, if an invoice or commission payout was due on June 5, 2023, you must file a lawsuit before June 5, 2026.
+                      For civil suits, summary claims, and breach of contract cases involving commissions, ESOPs, or invoices, the limitation period is <strong>three (3) years</strong>. The clock starts on the date the payment was due.
                     </p>
                     <p className="text-sm md:text-base leading-relaxed">
-                      Under <strong>Section 18 of the Limitation Act, 1963</strong>, the limitation period can be reset. If the employer sends an email or text message acknowledging the outstanding debt or promising to pay at a future date before the three-year window expires, a fresh limitation period of three years begins from the date of that acknowledgment.
+                      Under <strong>Section 18 of the Limitation Act, 1963</strong>, written company acknowledgments reset this clock. An email acknowledging the debt starts a fresh three-year limitation period.
                     </p>
                     <p className="text-sm md:text-base leading-relaxed">
-                      While three years may seem like a long time, delaying action can lead to lost evidence, company insolvency, or directors leaving the country. We advise serving a formal legal notice as soon as payment is delayed beyond 30 days to establish your claim and protect your rights.
+                      However, waiting too long risks lost evidence or employer insolvency. We recommend serving a legal notice within 30 days of default to protect your rights.
                     </p>
                   </div>
                 </section>
@@ -466,21 +466,21 @@ export default function OutstandingDuesClient() {
                   <h2 className="text-xl md:text-3xl font-black text-slate-900 mb-5 border-b-2 border-[#DC2626] pb-2 inline-block">Order 37 Summary Suits</h2>
                   <div className="prose prose-base max-w-none text-slate-650 space-y-6">
                     <p className="text-sm md:text-base leading-relaxed">
-                      For independent consultants, executives, and employees who cannot access labor forums, the ordinary civil court process can be slow. To address this, the Code of Civil Procedure (CPC) provides a fast-track remedy: the <strong>Summary Suit under Order 37</strong>.
+                      Consultants and executives who cannot access labor courts need rapid civil remedies. The Code of Civil Procedure offers a fast-track solution: the <strong>Summary Suit under Order 37</strong>.
                     </p>
                     <p className="text-sm md:text-base leading-relaxed">
-                      A Summary Suit is designed specifically for recovering liquidated monetary claims—claims where the exact debt is fixed and documented—arising from written contracts, invoices, or bounced cheques. This makes it an effective tool for recovering unpaid retainer fees, commissions, and sign-on bonuses.
+                      Order 37 applies specifically to fixed, liquidated monetary claims supported by contracts, invoices, or cheques. It is an effective option for recovering unpaid retainer fees, commissions, and bonuses.
                     </p>
                     <p className="text-sm md:text-base leading-relaxed">
-                      The procedure in a Summary Suit differs from ordinary civil suits:
+                      Summary suits follow an expedited timeline:
                     </p>
                     <ul className="list-disc pl-6 space-y-2 text-sm text-slate-650">
-                      <li><strong>Summons of Appearance:</strong> Once the suit is filed, the defendant company must enter an appearance within 10 days of receiving the summons.</li>
-                      <li><strong>No Automatic Right to Defend:</strong> The defendant does not have an automatic right to file a written statement. They must apply for &quot;leave to defend&quot; by demonstrating that they have a genuine, triable defense.</li>
-                      <li><strong>Quick Judgment:</strong> If the defendant fails to enter an appearance within 10 days, or if the court rejects their application for leave to defend, the allegations in the plaint are deemed admitted, and the court passes a judgment in favor of the plaintiff.</li>
+                      <li><strong>Summons for Appearance:</strong> The employer must enter an appearance within 10 days of receiving court summons.</li>
+                      <li><strong>Leave to Defend:</strong> The company does not have an automatic right to defend. They must convince the judge that they have a genuine triable defense.</li>
+                      <li><strong>Immediate Judgment:</strong> If the company fails to appear or lacks a defense, the court awards judgment to the plaintiff.</li>
                     </ul>
                     <p className="text-sm md:text-base leading-relaxed">
-                      This fast-track mechanism prevents companies from using delaying tactics in court. LegalRecovery&apos;s legal team specializes in drafting and filing Order 37 summary suits, ensuring all necessary documentation is presented to secure quick judgments.
+                      This fast-track process stops companies from using stalling tactics. LegalRecovery drafts and files Order 37 summary suits to secure rapid recovery decrees.
                     </p>
                   </div>
                 </section>
@@ -490,16 +490,16 @@ export default function OutstandingDuesClient() {
                   <h2 className="text-xl md:text-3xl font-black text-slate-900 mb-5 border-b-2 border-[#DC2626] pb-2 inline-block">Commercial Courts & PIMS</h2>
                   <div className="prose prose-base max-w-none text-slate-650 space-y-6">
                     <p className="text-sm md:text-base leading-relaxed">
-                      If your dispute regarding outstanding dues involves a commercial contract—such as an independent consulting agreement, business development contract, or vendor invoice—and the value of the claim is ₹3 Lakhs or more, the dispute falls under the <strong>Commercial Courts Act, 2015</strong>.
+                      Disputes over consulting retainers, sales contracts, or vendor invoices valued at ₹3 Lakhs or more fall under the <strong>Commercial Courts Act, 2015</strong>.
                     </p>
                     <p className="text-sm md:text-base leading-relaxed">
-                      The Commercial Courts Act was enacted to speed up the resolution of commercial disputes in India. One of its key features is the mandatory <strong>Pre-Institution Mediation and Settlement (PIMS)</strong> under Section 12A. Before you can file a lawsuit in a Commercial Court, you must apply to the District Legal Services Authority (DLSA) to initiate mediation, unless you are seeking urgent interim relief.
+                      A central requirement is mandatory <strong>Pre-Institution Mediation and Settlement (PIMS)</strong> under Section 12A. Before filing in court, you must apply to the District Legal Services Authority (DLSA) for mediation, unless seeking urgent interim relief.
                     </p>
                     <p className="text-sm md:text-base leading-relaxed">
-                      During PIMS, a neutral mediator helps both parties reach a settlement. This process is time-bound (usually completed within three months) and confidential. If a settlement is reached, it is signed by both parties and is legally binding, carrying the same status as a court decree. If the mediation fails, the DLSA issues a failure report, allowing you to file your suit in the Commercial Court.
+                      During PIMS, a neutral mediator helps both parties settle within three months. Signed settlements carry the legal weight of a court decree. If talks fail, the DLSA issues a failure report, enabling you to file in Commercial Court.
                     </p>
                     <p className="text-sm md:text-base leading-relaxed">
-                      Commercial Courts operate under strict timelines for filings, evidence, and arguments, making them faster than regular civil courts. LegalRecovery assists clients throughout the PIMS and Commercial Court processes, helping them secure their dues efficiently.
+                      Commercial Courts follow tight procedural deadlines, making them much faster than regular civil courts. LegalRecovery manages both PIMS mediation and Commercial Court litigation for fast results.
                     </p>
                   </div>
                 </section>
@@ -509,20 +509,20 @@ export default function OutstandingDuesClient() {
                   <h2 className="text-xl md:text-3xl font-black text-slate-900 mb-5 border-b-2 border-[#DC2626] pb-2 inline-block">Criminal Action under BNS</h2>
                   <div className="prose prose-base max-w-none text-slate-650 space-y-6">
                     <p className="text-sm md:text-base leading-relaxed">
-                      While outstanding dues disputes are primarily civil and commercial matters, certain circumstances can justify criminal action. When an employer acts with dishonest intent, misrepresents facts, or misappropriates funds, criminal provisions under the <strong>Bharatiya Nyaya Sanhita (BNS), 2023</strong> can apply.
+                      Most compensation disputes are civil, but deliberate employer fraud justifies criminal charges. The <strong>Bharatiya Nyaya Sanhita (BNS), 2023</strong> penalizes dishonest conduct and misappropriation.
                     </p>
                     <p className="text-sm md:text-base leading-relaxed">
-                      Key criminal offenses in outstanding dues disputes include:
+                      Key criminal provisions include:
                     </p>
                     <ul className="list-disc pl-6 space-y-2 text-sm text-slate-650">
-                      <li><strong>Criminal Breach of Trust (Section 316, BNS):</strong> This applies when an employer deducts funds from your compensation (such as tax deductions or employee contributions) but fails to deposit them with the relevant authorities or withhold them dishonestly.</li>
-                      <li><strong>Cheating (Section 318, BNS):</strong> This applies if the company induced you to perform services or join the organization by making false promises about incentives, bonuses, or ESOPs that they had no intention of honoring.</li>
+                      <li><strong>Criminal Breach of Trust (Section 316, BNS):</strong> Applies when employers withhold deductions like TDS or PF without remitting them to government accounts.</li>
+                      <li><strong>Cheating (Section 318, BNS):</strong> Applies when companies make false promises about incentives or ESOPs with no intention to pay.</li>
                     </ul>
                     <p className="text-sm md:text-base leading-relaxed">
-                      To initiate criminal action, you must file a detailed complaint under <strong>Section 173 of the Bharatiya Nagarik Suraksha Sanhita (BNSS), 2023</strong> at the local police station. If the police refuse to register an FIR, you can approach the Judicial Magistrate under <strong>Section 173(2) of BNSS</strong> to seek an order directing a police investigation.
+                      To initiate criminal proceedings, you can lodge a complaint under <strong>Section 173 of the BNSS, 2023</strong> at your police station. If police delay action, you can petition a Judicial Magistrate for an investigation order.
                     </p>
                     <p className="text-sm md:text-base leading-relaxed">
-                      Criminal proceedings are serious and can result in the arrest of company directors. They should be used selectively when clear evidence of fraud or misappropriation exists. At LegalRecovery, we evaluate the facts of your case to determine if criminal actions are appropriate to support your recovery.
+                      Criminal action creates personal liability for company directors. We evaluate your case to determine if criminal filings will speed up your recovery.
                     </p>
                   </div>
                 </section>
@@ -532,21 +532,21 @@ export default function OutstandingDuesClient() {
                   <h2 className="text-xl md:text-3xl font-black text-slate-900 mb-5 border-b-2 border-[#DC2626] pb-2 inline-block">NCLT Insolvency Petitions</h2>
                   <div className="prose prose-base max-w-none text-slate-650 space-y-6">
                     <p className="text-sm md:text-base leading-relaxed">
-                      When a company defaults on payments to multiple employees, consultants, and vendors, it may be facing insolvency. In such cases, the <strong>Insolvency and Bankruptcy Code (IBC), 2016</strong> offers a powerful remedy for recovery.
+                      When a company defaults across multiple staff members and vendors, insolvency procedures become relevant. The <strong>Insolvency and Bankruptcy Code (IBC), 2016</strong> provides a strong recovery mechanism.
                     </p>
                     <p className="text-sm md:text-base leading-relaxed">
-                      Under the IBC, employees, consultants, and contractors are classified as <strong>Operational Creditors</strong>. If your total undisputed outstanding dues exceed the statutory threshold of <strong>₹1 Crore</strong> (which can be met individually or collectively by a group of joint employee petitioners), you can file an insolvency petition before the National Company Law Tribunal (NCLT).
+                      Under the IBC, employees and contractors qualify as <strong>Operational Creditors</strong>. If undisputed dues exceed <strong>₹1 Crore</strong> (individually or jointly with colleagues), you can file an insolvency petition before the NCLT.
                     </p>
                     <p className="text-sm md:text-base leading-relaxed">
-                      The IBC process involves the following steps:
+                      The IBC recovery process follows three steps:
                     </p>
                     <ol className="list-decimal pl-6 space-y-2 text-sm text-slate-650">
-                      <li><strong>Section 8 Demand Notice:</strong> You must serve a formal demand notice on the debtor company, attaching invoices, contracts, and proof of default.</li>
-                      <li><strong>10-Day Response Window:</strong> The company has 10 days to pay the dues or prove that a genuine dispute exists.</li>
-                      <li><strong>Section 9 Petition:</strong> If the company fails to pay or show a dispute, you can file a petition before the NCLT to initiate the Corporate Insolvency Resolution Process (CIRP).</li>
+                      <li><strong>Section 8 Demand Notice:</strong> Serve a statutory notice with contracts, invoices, and default calculations.</li>
+                      <li><strong>10-Day Response Window:</strong> The company has 10 days to pay or show an existing genuine dispute.</li>
+                      <li><strong>Section 9 Petition:</strong> If unpaid, file an NCLT petition to initiate corporate insolvency proceedings.</li>
                     </ol>
                     <p className="text-sm md:text-base leading-relaxed">
-                      Filing an NCLT petition is a serious action that can result in the company&apos;s management losing control of the business to an Insolvency Professional. As a result, companies often settle outstanding dues quickly after receiving a Section 8 notice to protect their business. LegalRecovery&apos;s insolvency lawyers assist clients in drafting notices and representing them before the NCLT.
+                      Insolvency filings risk stripping directors of company control. Because of this risk, companies often settle dues quickly after receiving a Section 8 notice. LegalRecovery manages these insolvency filings seamlessly.
                     </p>
                   </div>
                 </section>
@@ -556,16 +556,16 @@ export default function OutstandingDuesClient() {
                   <h2 className="text-xl md:text-3xl font-black text-slate-900 mb-5 border-b-2 border-[#DC2626] pb-2 inline-block">Director Personal Liability</h2>
                   <div className="prose prose-base max-w-none text-slate-650 space-y-6">
                     <p className="text-sm md:text-base leading-relaxed">
-                      A private limited company or public limited company is a separate legal entity under the law. This means the company is responsible for its own debts, and the personal assets of its directors and shareholders are generally protected. This is known as the doctrine of corporate personality.
+                      Incorporated companies exist as separate legal entities from their founders. Generally, corporate debts do not attach to directors&apos; personal bank accounts or private homes.
                     </p>
                     <p className="text-sm md:text-base leading-relaxed">
-                      However, this protection is not absolute. In cases of fraud, siphoning of funds, or deliberate asset stripping to evade creditors, courts can <strong>pierce the corporate veil</strong>. If you can prove that the directors acted dishonestly or used the corporate structure to defraud employees and consultants, the court can hold them personally liable for the outstanding dues.
+                      However, this corporate protection has clear limits. In cases of fraud or deliberate asset stripping, courts will <strong>pierce the corporate veil</strong>. When directors use corporate shells to defraud workers, judges hold them personally liable.
                     </p>
                     <p className="text-sm md:text-base leading-relaxed">
-                      Additionally, under various labor statutes (such as the Payment of Gratuity Act and the Employees&apos; Provident Funds Act), directors and managers are classified as &quot;employers&quot; and can face personal prosecution, including imprisonment, for non-compliance.
+                      Under statutes like the Payment of Gratuity Act and EPF Act, managers and directors are defined as employers. They face personal prosecution and imprisonment for defaults.
                     </p>
                     <p className="text-sm md:text-base leading-relaxed">
-                      To establish personal liability, our legal notices are served not only to the company but also directly to the personal residential addresses of all active directors. This alerts the board to their personal risk and encourages them to settle the outstanding dues.
+                      We dispatch legal notices to registered offices and directors&apos; homes. Highlighting personal liability motivates leadership to resolve outstanding dues quickly.
                     </p>
                   </div>
                 </section>
@@ -575,18 +575,18 @@ export default function OutstandingDuesClient() {
                   <h2 className="text-xl md:text-3xl font-black text-slate-900 mb-5 border-b-2 border-[#DC2626] pb-2 inline-block">Maternity Controlling Authority</h2>
                   <div className="prose prose-base max-w-none text-slate-650 space-y-6">
                     <p className="text-sm md:text-base leading-relaxed">
-                      If an employer withholds maternity benefits, discharges you during maternity leave, or denies your right to paid time off, you can seek assistance through the state&apos;s labor administration. The Maternity Benefit Act, 1961 provides an administrative remedy that is faster than civil litigation.
+                      When an employer withholds maternity benefits, you can seek fast administrative relief. The Maternity Benefit Act 1961 offers a specialized resolution mechanism outside regular civil courts.
                     </p>
                     <p className="text-sm md:text-base leading-relaxed">
-                      Under <strong>Section 17</strong> of the Act, any woman who has been denied maternity benefits can file a formal complaint with the <strong>Controlling Authority</strong> (typically the local Inspector or Assistant Labour Commissioner). Once the complaint is filed, the authority is empowered to:
+                      Under <strong>Section 17</strong> of the Act, you can file a formal complaint with the local <strong>Controlling Authority</strong>. The officer has clear statutory powers:
                     </p>
                     <ul className="list-disc pl-6 space-y-2 text-sm text-slate-650">
-                      <li><strong>Conduct Inquiries:</strong> Direct the employer to produce attendance registers, wages books, and medical certificates.</li>
-                      <li><strong>Order Payments:</strong> Issue an order directing the employer to pay the outstanding maternity benefits and medical bonuses.</li>
-                      <li><strong>Impose Penalties:</strong> Direct the employer to pay interest on delayed payments and initiate prosecution for statutory violations.</li>
+                      <li><strong>Examine Company Books:</strong> Summon wage registers, attendance logs, and medical records.</li>
+                      <li><strong>Order Direct Payment:</strong> Direct the employer to pay all pending maternity wages and medical bonuses.</li>
+                      <li><strong>Levy Statutory Penalties:</strong> Direct delayed payment interest and initiate prosecution for statutory violations.</li>
                     </ul>
                     <p className="text-sm md:text-base leading-relaxed">
-                      The Controlling Authority&apos;s orders are legally binding. If the employer fails to pay the ordered amount, it can be recovered as an arrear of land revenue through the local Collector. LegalRecovery helps working mothers draft complaints, compile medical records, and represent them before the Controlling Authority.
+                      The Controlling Authority&apos;s directives are legally binding. Unpaid amounts are recovered as land revenue arrears by district collectors. LegalRecovery helps working mothers file and manage these official claims.
                     </p>
                   </div>
                 </section>
@@ -596,16 +596,16 @@ export default function OutstandingDuesClient() {
                   <h2 className="text-xl md:text-3xl font-black text-slate-900 mb-5 border-b-2 border-[#DC2626] pb-2 inline-block">GST & Retainer Invoice Claims</h2>
                   <div className="prose prose-base max-w-none text-slate-650 space-y-6">
                     <p className="text-sm md:text-base leading-relaxed">
-                      For independent consultants and freelancers, recovering outstanding dues involves tax and compliance considerations. When you raise an invoice for professional services, you are typically required to charge Goods and Services Tax (GST) if you are registered under the GST Act.
+                      Recovering consultant fees involves tax rules under Goods and Services Tax (GST) laws. When you raise a professional invoice, you must deposit the GST component with the government.
                     </p>
                     <p className="text-sm md:text-base leading-relaxed">
-                      If a client company defaults on an invoice, you still face tax liabilities. Under GST laws, you must deposit the GST component of the raised invoice with the government by the 20th of the following month, regardless of whether the client has paid you. This can create a cash flow challenge, leaving you out of pocket for both the services rendered and the tax deposited.
+                      If a client defaults on your invoice, you still face tax liabilities. You must pay GST by the 20th of the following month, even if unpaid. This creates severe personal cash flow strain.
                     </p>
                     <p className="text-sm md:text-base leading-relaxed">
-                      To address this, our legal claims demand the recovery of the complete invoice value, including the GST component, along with interest to cover your tax costs. Additionally, we analyze compliance under <strong>Section 16 of the CGST Act</strong>. If a company does not pay a consultant&apos;s invoice within 180 days, they must reverse any Input Tax Credit (ITC) they claimed on that invoice, adding a tax penalty to their unpaid debt.
+                      Our legal claims demand the total invoice amount including GST plus interest. Furthermore, under <strong>Section 16 of the CGST Act</strong>, clients who fail to pay within 180 days must reverse their claimed Input Tax Credit.
                     </p>
                     <p className="text-sm md:text-base leading-relaxed">
-                      LegalRecovery helps consultants manage these tax issues during the recovery process. We ensure that all claims are structured to recover both the principal fees and the associated tax liabilities.
+                      LegalRecovery structures contractor claims to protect your cash flow. We ensure you recover professional fees alongside all tax liabilities.
                     </p>
                   </div>
                 </section>
@@ -615,21 +615,21 @@ export default function OutstandingDuesClient() {
                   <h2 className="text-xl md:text-3xl font-black text-slate-900 mb-5 border-b-2 border-[#DC2626] pb-2 inline-block">Foreign Employers Recovery</h2>
                   <div className="prose prose-base max-w-none text-slate-650 space-y-6">
                     <p className="text-sm md:text-base leading-relaxed">
-                      The growth of remote work has allowed many Indian software developers, designers, and consultants to work for foreign employers located in the US, UK, Europe, or Southeast Asia. Often, these foreign entities do not have a physical office or subsidiary in India, paying their remote staff through international wire transfers or digital wallets.
+                      Many Indian tech professionals work remotely for firms in the US, UK, or Europe. These overseas companies rarely have local Indian offices, paying via wire transfers or digital platforms.
                     </p>
                     <p className="text-sm md:text-base leading-relaxed">
-                      When a foreign employer defaults on outstanding dues, recovery can be complex. Because the employer has no physical presence in India, local labor inspectors cannot serve summonses easily. However, you still have options for recovery.
+                      When foreign clients default, local labor inspectors cannot easily serve notices abroad. However, effective international legal remedies remain available.
                     </p>
                     <p className="text-sm md:text-base leading-relaxed">
-                      Key steps in international recovery include:
+                      We follow three essential steps for cross-border recovery:
                     </p>
                     <ul className="list-disc pl-6 space-y-2 text-sm text-slate-650">
-                      <li><strong>Jurisdiction Clauses:</strong> Reviewing your contract to determine the governing law and jurisdiction. Many contracts specify that the laws of the employer&apos;s country apply, while others allow for local jurisdiction where the services are performed.</li>
-                      <li><strong>International Notices:</strong> Serving a formal legal notice electronically and physically to the company&apos;s overseas headquarters. This often prompts action, as foreign companies are sensitive to international compliance risks.</li>
-                      <li><strong>Collaborative Legal Action:</strong> If the claim is significant, we work with international legal partners to initiate proceedings in the employer&apos;s home country or file commercial disputes under international arbitration terms.</li>
+                      <li><strong>Review Jurisdiction Terms:</strong> Check governing law clauses to establish applicable dispute mechanisms.</li>
+                      <li><strong>Send International Demand Notices:</strong> Dispatch formal notices physically and electronically to foreign headquarters.</li>
+                      <li><strong>Overseas Legal Enforcement:</strong> Collaborate with international legal partners or initiate commercial arbitration.</li>
                     </ul>
                     <p className="text-sm md:text-base leading-relaxed">
-                      At LegalRecovery, we help remote workers protect their interests. We review international service agreements, draft cross-border demand notices, and select appropriate strategies to recover outstanding dues from overseas employers.
+                      Foreign companies value international compliance and typically settle to avoid global reputational harm. We help remote Indian professionals recover cross-border earnings.
                     </p>
                   </div>
                 </section>
@@ -639,16 +639,16 @@ export default function OutstandingDuesClient() {
                   <h2 className="text-xl md:text-3xl font-black text-slate-900 mb-5 border-b-2 border-[#DC2626] pb-2 inline-block">Arbitration Clauses</h2>
                   <div className="prose prose-base max-w-none text-slate-650 space-y-6">
                     <p className="text-sm md:text-base leading-relaxed">
-                      Many modern employment agreements, especially for senior executives, directors, and independent consultants, contain an <strong>Arbitration Clause</strong>. This clause specifies that any dispute arising from the contract must be resolved through private arbitration rather than public courts.
+                      Executive employment agreements often feature an <strong>Arbitration Clause</strong>. This requires parties to settle contractual compensation disputes via private arbitration rather than public courts.
                     </p>
                     <p className="text-sm md:text-base leading-relaxed">
-                      Arbitration is governed by the <strong>Arbitration and Conciliation Act, 1996</strong>. If your contract contains a valid arbitration clause, either party can apply to the court under Section 8 of the Act to refer the dispute to an arbitrator. This can make civil recovery suits in regular courts unavailable.
+                      Arbitrations are governed by the <strong>Arbitration and Conciliation Act, 1996</strong>. Under Section 8, either party can ask courts to refer the dispute to a designated arbitrator.
                     </p>
                     <p className="text-sm md:text-base leading-relaxed">
-                      While arbitration is private and can be faster than civil courts, it can also be expensive, as the parties must pay the arbitrator&apos;s fees. However, under Indian law, employment disputes involving traditional &quot;workmen&quot; are generally considered non-arbitrable, as they fall under the jurisdiction of public Labor Courts. Arbitration clauses are typically enforceable only for managerial staff, senior executives, and independent consultants.
+                      While private arbitration can be quick, arbitrator fees are often substantial. Routine workman claims are non-arbitrable in India and belong before public labor courts. Arbitration clauses primarily bind executives and independent contractors.
                     </p>
                     <p className="text-sm md:text-base leading-relaxed">
-                      LegalRecovery helps clients evaluate the validity of arbitration clauses in their contracts. If enforceable, we represent clients in the arbitration process, from appointing the arbitrator to presenting the case and enforcing the final arbitral award.
+                      LegalRecovery examines your arbitration clause for validity. If enforceable, we represent you throughout arbitration proceedings to secure a binding award.
                     </p>
                   </div>
                 </section>
@@ -658,27 +658,27 @@ export default function OutstandingDuesClient() {
                   <h2 className="text-xl md:text-3xl font-black text-slate-900 mb-5 border-b-2 border-[#DC2626] pb-2 inline-block">Evidence Checklist</h2>
                   <div className="prose prose-base max-w-none text-slate-650 space-y-6">
                     <p className="text-sm md:text-base leading-relaxed">
-                      Before initiating legal action to recover outstanding dues, you must compile and organize your evidence. The following checklist outlines the essential documents and records you should gather to support your claim:
+                      Collect and organize your records before starting legal action. Solid documentation strengthens your demand notice and accelerates settlement negotiations.
                     </p>
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mt-4">
                       <div className="p-6 bg-slate-50 rounded-2xl border border-slate-100">
                         <h4 className="font-extrabold text-sm text-slate-900 mb-3">Contractual & Financial Records</h4>
                         <ul className="list-disc pl-5 space-y-2 text-xs text-slate-600">
-                          <li>Signed employment agreement or professional service contract.</li>
-                          <li>ESOP grant letters and copy of the company&apos;s ESOP Scheme.</li>
-                          <li>Approved commission structures and targets.</li>
-                          <li>Bank statements showing past payments and salary credits.</li>
+                          <li>Signed employment contracts or professional service agreements.</li>
+                          <li>ESOP grant letters and official scheme documents.</li>
+                          <li>Approved sales target matrices and commission formulas.</li>
+                          <li>Bank statements showing past salary and bonus deposits.</li>
                           <li>Form 16, Form 26AS, and TDS certificates.</li>
                         </ul>
                       </div>
                       <div className="p-6 bg-slate-50 rounded-2xl border border-slate-100">
                         <h4 className="font-extrabold text-sm text-slate-900 mb-3">Performance & Separation Records</h4>
                         <ul className="list-disc pl-5 space-y-2 text-xs text-slate-600">
-                          <li>Screenshots of target completion dashboards (CRM logs, code commits).</li>
-                          <li>Approved expense bills and reimbursement submissions.</li>
-                          <li>Resignation letter, acceptance email, and relieving documents.</li>
-                          <li>Written approvals of target achievements from managers.</li>
-                          <li>WhatsApp, Slack, and email chats discussing outstanding payments.</li>
+                          <li>Screenshots of CRM dashboards and completed project sheets.</li>
+                          <li>Approved travel expense bills and reimbursement submissions.</li>
+                          <li>Resignation emails, acceptance letters, and relieving certificates.</li>
+                          <li>Manager emails confirming target achievement.</li>
+                          <li>Slack, WhatsApp, and email records discussing pending dues.</li>
                         </ul>
                       </div>
                     </div>
@@ -693,7 +693,7 @@ export default function OutstandingDuesClient() {
                       <span className="text-[#DC2626] text-xs font-black uppercase tracking-widest block mb-2">Case Study 1: ESOP Recovery</span>
                       <h4 className="text-lg font-black text-slate-900 mb-3">Vested Equity Secured from Tech Startup</h4>
                       <p className="text-sm text-slate-650 leading-relaxed">
-                        An engineering director resigned from a fintech startup to join another company. At the time of his resignation, he had vested options worth ₹25 Lakhs. The company&apos;s HR department attempted to cancel these options, citing a clause that required him to exercise them within 10 days of exit, while refusing to provide the necessary exercise portal access. LegalRecovery served a formal notice to the board of directors, highlighting the breach of contract. The company relented, restored portal access, and processed the option exercise.
+                        An engineering director resigned with vested options worth ₹25 Lakhs. The startup attempted to cancel the options by blocking his portal access. LegalRecovery served a formal notice to the board highlighting breach of contract. The company relented, reopened portal access, and processed the option exercise.
                       </p>
                     </div>
 
@@ -701,7 +701,7 @@ export default function OutstandingDuesClient() {
                       <span className="text-[#DC2626] text-xs font-black uppercase tracking-widest block mb-2">Case Study 2: Commission Recovery</span>
                       <h4 className="text-lg font-black text-slate-900 mb-3">Unpaid Sales Commission Recovered for Enterprise Sales Lead</h4>
                       <p className="text-sm text-slate-650 leading-relaxed">
-                        An enterprise sales lead closed a deal worth ₹2 Crores, which qualified him for a commission of ₹8 Lakhs based on his target sheet. Following his resignation, the company refused to pay the commission, claiming that the deal&apos;s billing cycle fell outside his active tenure. LegalRecovery gathered CRM logs and email approvals showing that the deal was closed and approved during his active employment. We served a legal notice under the Indian Contract Act, 1872, prompting the company to settle the commission in full to avoid a civil lawsuit.
+                        A sales lead closed a ₹2 Crore deal qualifying for an ₹8 Lakh commission. Following his resignation, the firm claimed the deal fell outside his active tenure. LegalRecovery compiled CRM logs and email sign-offs proving active closure. We served a legal notice under the Contract Act, and the firm settled in full.
                       </p>
                     </div>
 
@@ -709,7 +709,7 @@ export default function OutstandingDuesClient() {
                       <span className="text-[#DC2626] text-xs font-black uppercase tracking-widest block mb-2">Case Study 3: Consulting Retainer Recovery</span>
                       <h4 className="text-lg font-black text-slate-900 mb-3">Freelance Developer Recovers Unpaid Retainer Fees</h4>
                       <p className="text-sm text-slate-650 leading-relaxed">
-                        An independent software developer worked with a mid-sized marketing agency on a six-month retainer contract. After completing the project, the agency defaulted on her final three invoices, totaling ₹4.5 Lakhs, claiming client delays. LegalRecovery drafted a commercial notice and prepared a summary suit under Order 37 of the CPC. Faced with a potential lawsuit, the agency paid the outstanding fees, including the GST component, within 15 days.
+                        A software developer completed a six-month project for an agency. The agency defaulted on three invoices totaling ₹4.5 Lakhs, citing client delays. LegalRecovery issued a commercial notice and prepared an Order 37 summary suit. Facing a lawsuit, the agency cleared all outstanding fees with GST within 15 days.
                       </p>
                     </div>
                   </div>
@@ -721,37 +721,37 @@ export default function OutstandingDuesClient() {
                   <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                     <div className="p-6 bg-slate-50 rounded-2xl border border-slate-100">
                       <p className="text-sm text-slate-700 italic mb-4">
-                        &quot;My previous company refused to process my vested ESOP exercise worth 15 Lakhs post-resignation. LegalRecovery&apos;s structured legal notice to the board of directors resolved the issue in 20 days. Highly professional service!&quot;
+                        &quot;My previous employer refused to process vested ESOPs worth 15 Lakhs after I resigned. LegalRecovery sent a formal notice to the board. The issue was resolved in 20 days!&quot;
                       </p>
                       <h4 className="font-extrabold text-xs text-slate-900">— Rohan Deshmukh</h4>
                     </div>
                     <div className="p-6 bg-slate-50 rounded-2xl border border-slate-100">
                       <p className="text-sm text-slate-700 italic mb-4">
-                        &quot;They withheld my statutory maternity benefit after I resigned. Team LegalRecovery helped me file a complaint with the Controlling Authority, and the company settled the dues with interest within a month.&quot;
+                        &quot;They withheld my statutory maternity pay after I left. LegalRecovery helped me file with the Controlling Authority. The company settled with interest within one month.&quot;
                       </p>
                       <h4 className="font-extrabold text-xs text-slate-900">— Priyanjana Sen</h4>
                     </div>
                     <div className="p-6 bg-slate-50 rounded-2xl border border-slate-100">
                       <p className="text-sm text-slate-700 italic mb-4">
-                        &quot;I was waiting on ₹6 Lakhs of unpaid sales commission for six months. LegalRecovery drafted a strong notice, and the company paid the entire amount along with a formal apology.&quot;
+                        &quot;I waited six months for ₹6 Lakhs in sales commissions. LegalRecovery sent a strong notice, and the company paid the entire sum with a formal apology.&quot;
                       </p>
                       <h4 className="font-extrabold text-xs text-slate-900">— Amit Singhal</h4>
                     </div>
                     <div className="p-6 bg-slate-50 rounded-2xl border border-slate-100">
                       <p className="text-sm text-slate-700 italic mb-4">
-                        &quot;As a freelance consultant, recovering dues from clients is always a nightmare. LegalRecovery&apos;s automated platform made the notice dispatch process quick, and the client settled my invoices immediately.&quot;
+                        &quot;Recovering freelance dues used to be a nightmare. LegalRecovery made the legal notice dispatch seamless. The client paid my invoices right away.&quot;
                       </p>
                       <h4 className="font-extrabold text-xs text-slate-900">— Kriti Sharma</h4>
                     </div>
                     <div className="p-6 bg-slate-50 rounded-2xl border border-slate-100">
                       <p className="text-sm text-slate-700 italic mb-4">
-                        &quot;They tried to claw back my sign-on bonus after they terminated me without cause. LegalRecovery cited Section 74 of the Contract Act, and the company backed down immediately. Exceptional service!&quot;
+                        &quot;They tried to claw back my sign-on bonus after a no-cause termination. LegalRecovery cited Section 74 of the Contract Act, and the firm dropped the claim immediately.&quot;
                       </p>
                       <h4 className="font-extrabold text-xs text-slate-900">— Varun Mehta</h4>
                     </div>
                     <div className="p-6 bg-slate-50 rounded-2xl border border-slate-100">
                       <p className="text-sm text-slate-700 italic mb-4">
-                        &quot;Recovered my pending international retainer fees from a US-based client. LegalRecovery&apos;s team handled the cross-border notice process with ease. Highly recommend for remote workers.&quot;
+                        &quot;Recovered pending retainer fees from a US client. LegalRecovery handled the cross-border notice process smoothly. Highly recommended for remote consultants.&quot;
                       </p>
                       <h4 className="font-extrabold text-xs text-slate-900">— Neha Kapoor</h4>
                     </div>
@@ -763,13 +763,13 @@ export default function OutstandingDuesClient() {
                   <h2 className="text-xl md:text-3xl font-black text-slate-900 mb-5 border-b-2 border-[#DC2626] pb-2 inline-block">Why LegalRecovery?</h2>
                   <div className="prose prose-base max-w-none text-slate-650 space-y-6">
                     <p className="text-sm md:text-base leading-relaxed">
-                      LegalRecovery is India&apos;s leading tech-enabled recovery platform. We combine the legal authority of veteran advocates with advanced workflow automation to deliver speed, transparency, and resolution rates that traditional law firms cannot match. Here is what sets us apart:
+                      LegalRecovery is India&apos;s leading legal tech recovery platform. We combine veteran advocate expertise with digital workflows for rapid, transparent recoveries. Here is why clients rely on our platform:
                     </p>
                     <ul className="list-disc pl-6 space-y-3 text-sm text-slate-650">
-                      <li><strong>Expert Panel Advocates:</strong> Your notices are drafted and reviewed by experienced labor and contract attorneys, ensuring precise statutory citations.</li>
-                      <li><strong>Multi-Channel Escalations:</strong> We do not just email HR. We dispatch physical registered letters to the registered company office and personal residences of all active directors to maximize pressure.</li>
-                      <li><strong>Real-Time Tracking:</strong> Track the drafting progress, post office dispatch status, and delivery of your legal notices in real-time from your secure client dashboard.</li>
-                      <li><strong>Transparent Flat Pricing:</strong> No hourly bills, no hidden surprises. You pay a single transparent flat fee for the entire notice pipeline.</li>
+                      <li><strong>Senior Panel Advocates:</strong> Experienced labor and commercial lawyers draft notices with precise statutory citations.</li>
+                      <li><strong>Multi-Channel Escalations:</strong> We deliver registered post notices to company offices and directors&apos; homes for maximum impact.</li>
+                      <li><strong>Live Tracking:</strong> Monitor notice drafting progress and postal delivery directly on your client dashboard.</li>
+                      <li><strong>Transparent Pricing:</strong> Transparent flat fees with zero hidden charges or unexpected hourly bills.</li>
                     </ul>
                   </div>
                 </section>

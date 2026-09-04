@@ -3,7 +3,7 @@ import CoachingCollegeRefundClient from "./CoachingCollegeRefundClient";
 
 export const metadata: Metadata = {
   title: "Fee Refund Legal Notice to Coaching Institute & College",
-  description: "Many educational centers claim that fees are entirely non-refundable. Learn how to recover tuition and college admission fees using CCPA and UGC guidelines.",
+  description: "Told fees are non-refundable? Learn how to recover tuition and college admission fees using CCPA and UGC guidelines. Send a legal notice in India.",
   keywords: [
     "coaching institute fee refund legal notice",
     "how to recover college admission fees",

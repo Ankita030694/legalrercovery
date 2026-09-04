@@ -297,7 +297,7 @@ export default function SalaryRecoveryStepsClient() {
                 {/* 1. The Changing Landscape of Salary Defaults */}
                 <section id="corporate-default-landscape" className="scroll-mt-32">
                   <h2 className="text-xl md:text-3xl font-black text-slate-900 mb-5 border-b-2 border-[#DC2626] pb-2 inline-block">
-                    1. The Changing Landscape of Salary Defaults in Indian Corporate Sectors
+                    1. Corporate Salary Defaults in India
                   </h2>
                   <div className="prose prose-base max-w-none text-slate-650 space-y-6">
                     <p className="text-sm md:text-base leading-relaxed">
@@ -348,7 +348,7 @@ export default function SalaryRecoveryStepsClient() {
                 {/* 3. Notice Strategy */}
                 <section id="legal-notice-strategy" className="scroll-mt-32">
                   <h2 className="text-xl md:text-3xl font-black text-slate-900 mb-5 border-b-2 border-[#DC2626] pb-2 inline-block">
-                    3. Tactical Notice Strategy: Piercing the Corporate Shield and Naming Directors
+                    3. Tactical Notice Strategy &amp; Naming Directors
                   </h2>
                   <div className="prose prose-base max-w-none text-slate-650 space-y-6">
                     <p className="text-sm md:text-base leading-relaxed">
@@ -372,7 +372,7 @@ export default function SalaryRecoveryStepsClient() {
                 {/* 4. SAMADHAN & Conciliation */}
                 <section id="labour-commissioner-conciliation" className="scroll-mt-32">
                   <h2 className="text-xl md:text-3xl font-black text-slate-900 mb-5 border-b-2 border-[#DC2626] pb-2 inline-block">
-                    4. Administrative Conciliation: Leveraging the SAMADHAN Portal and Labour Inspectorate
+                    4. Labour Conciliation &amp; SAMADHAN Portal Steps
                   </h2>
                   <div className="prose prose-base max-w-none text-slate-650 space-y-6">
                     <p className="text-sm md:text-base leading-relaxed">
@@ -396,7 +396,7 @@ export default function SalaryRecoveryStepsClient() {
                 {/* 5. Labour Court Actions */}
                 <section id="labour-court-claims" className="scroll-mt-32">
                   <h2 className="text-xl md:text-3xl font-black text-slate-900 mb-5 border-b-2 border-[#DC2626] pb-2 inline-block">
-                    5. Labour Court Petitions: Recovering Unpaid Wages Under Section 33-C(2)
+                    5. Section 33-C(2) Labour Court Petitions
                   </h2>
                   <div className="prose prose-base max-w-none text-slate-650 space-y-6">
                     <p className="text-sm md:text-base leading-relaxed">
@@ -426,7 +426,7 @@ export default function SalaryRecoveryStepsClient() {
                 {/* 6. CPC Summary Suits */}
                 <section id="summary-suits-cpc" className="scroll-mt-32">
                   <h2 className="text-xl md:text-3xl font-black text-slate-900 mb-5 border-b-2 border-[#DC2626] pb-2 inline-block">
-                    6. Summary Suits (Order 37 CPC): Fast-Track Recovery for Managers and Non-Workmen
+                    6. Order 37 CPC Summary Suits for Managers
                   </h2>
                   <div className="prose prose-base max-w-none text-slate-650 space-y-6">
                     <p className="text-sm md:text-base leading-relaxed">
@@ -456,7 +456,7 @@ export default function SalaryRecoveryStepsClient() {
                 {/* 7. NCLT Insolvency */}
                 <section id="insolvency-proceedings-nclt" className="scroll-mt-32">
                   <h2 className="text-xl md:text-3xl font-black text-slate-900 mb-5 border-b-2 border-[#DC2626] pb-2 inline-block">
-                    7. Insolvency and Bankruptcy (IBC): Filing Claims as Operational Creditors
+                    7. IBC Claims as Operational Creditors
                   </h2>
                   <div className="prose prose-base max-w-none text-slate-650 space-y-6">
                     <p className="text-sm md:text-base leading-relaxed">
@@ -485,7 +485,7 @@ export default function SalaryRecoveryStepsClient() {
                 {/* 8. Criminal Remedies */}
                 <section id="criminal-recourse-bns" className="scroll-mt-32">
                   <h2 className="text-xl md:text-3xl font-black text-slate-900 mb-5 border-b-2 border-[#DC2626] pb-2 inline-block">
-                    8. Criminal Penalties: Bounced Cheques (NI Act 138) and Breach of Trust (BNS 316)
+                    8. Section 138 Cheque Bounce &amp; BNS Penalties
                   </h2>
                   <div className="prose prose-base max-w-none text-slate-650 space-y-6">
                     <p className="text-sm md:text-base leading-relaxed">
@@ -513,7 +513,7 @@ export default function SalaryRecoveryStepsClient() {
                 {/* 9. Interest & Tax Relief */}
                 <section id="taxation-interest-compensation" className="scroll-mt-32">
                   <h2 className="text-xl md:text-3xl font-black text-slate-900 mb-5 border-b-2 border-[#DC2626] pb-2 inline-block">
-                    9. Financial Auditing: Recovering Interest, Damages, and Claiming Section 89(1) Tax Relief
+                    9. Recovering Interest &amp; Section 89(1) Relief
                   </h2>
                   <div className="prose prose-base max-w-none text-slate-650 space-y-6">
                     <p className="text-sm md:text-base leading-relaxed">

@@ -3,7 +3,7 @@ import NoticePeriodSalaryClient from "./NoticePeriodSalaryClient";
 
 export const metadata: Metadata = {
   title: "Recover Salary Withheld During Notice Period | Legal Remedy",
-  description: "Learn how to recover notice period salary withheld by your employer under the guise of final settlement. Serve a legal notice to employer before your final day.",
+  description: "Recover notice period salary withheld by your employer during exit settlement. Serve an advocate legal notice before your last working day in India.",
   keywords: [
     "employer withheld notice period salary",
     "legal notice for notice period salary",

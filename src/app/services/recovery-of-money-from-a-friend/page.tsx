@@ -3,13 +3,13 @@ import FriendRecoveryClient from "./FriendRecoveryClient";
 
 export const metadata: Metadata = {
   title: "Recover Money From a Friend Legally | LegalRecovery",
-  description: "Exhaustive legal guide on recovering personal loans, cash advances, group expenses, and promissory notes in India. Learn legal notice formats, summary suits (Order 37 CPC), and criminal cheating options.",
+  description: "Recover personal loans, cash advances, and friendly debts in India. Learn legal notice formats, Order 37 summary suits, and statutory debt remedies.",
   alternates: {
     canonical: "/services/recovery-of-money-from-a-friend",
   },
   openGraph: {
     title: "Recover Money From a Friend Legally | LegalRecovery",
-    description: "Exhaustive legal guide on recovering personal loans, cash advances, group expenses, and promissory notes in India. Learn legal notice formats, summary suits (Order 37 CPC), and criminal cheating options.",
+    description: "Recover personal loans, cash advances, and friendly debts in India. Learn legal notice formats, Order 37 summary suits, and statutory debt remedies.",
     type: "article",
     url: "/services/recovery-of-money-from-a-friend",
     images: [

@@ -2,8 +2,8 @@ import { Metadata } from "next";
 import FlightCompensationClaimClient from "./FlightCompensationClaimClient";
 
 export const metadata: Metadata = {
-  title: "Flight Compensation Claim India: Delay, Denied Boarding, Downgrading & Lost Baggage | DGCA Rules | LegalRecovery",
-  description: "Claim compensation for flight delays, denied boarding due to overbooking, involuntary downgrading, tarmac delays, lost or damaged baggage, and missed connections. Know your rights under DGCA CAR Section 3, the Montreal Convention, and the Consumer Protection Act, 2019.",
+  title: "Flight Compensation Claim in India | LegalRecovery",
+  description: "Claim flight compensation for delays, denied boarding, or lost baggage in India. Know your rights under DGCA CAR rules and Consumer Protection Act.",
   keywords: [
     "flight delay compensation India",
     "denied boarding compensation DGCA",

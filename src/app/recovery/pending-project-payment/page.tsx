@@ -3,7 +3,7 @@ import PendingProjectPaymentClient from "./PendingProjectPaymentClient";
 
 export const metadata: Metadata = {
   title: "Recover Pending Project Payments & B2B Dues | LegalRecovery",
-  description: "Struggling to recover pending project payments, outstanding milestone dues, or B2B project fees in India? Learn about MSME Samadhaan, Order 37 CPC summary suits, and legal notices.",
+  description: "Recover pending project payments, milestone dues, and B2B fees in India. Learn about MSME Samadhaan, Order 37 summary suits, and legal notice options.",
   keywords: [
     "recover pending project payment India",
     "unpaid project dues legal notice",

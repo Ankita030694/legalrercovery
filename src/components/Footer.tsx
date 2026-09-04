@@ -124,8 +124,9 @@ export default function Footer() {
           {/* Brand Col */}
           <div className="flex flex-col items-start">
             {/* Logo */}
-            <a href="/" className="flex items-center mb-6 select-none cursor-pointer">
+            <a href="/" className="flex items-center mb-6 select-none cursor-pointer" aria-label="LegalRecovery Home">
               <img src="/lrwhite.svg" alt="LegalRecovery" className="h-8 sm:h-9 w-auto object-contain" />
+              <span className="sr-only">LegalRecovery Home</span>
             </a>
 
             {/* Description */}
@@ -136,13 +137,15 @@ export default function Footer() {
             {/* Socials */}
             <div className="flex items-center gap-3">
               {/* LinkedIn */}
-              <a href="https://www.linkedin.com/company/legal-recovery-india/" className="w-9 h-9 rounded-full bg-gray-800/40 border border-gray-800 hover:border-[#DC2626] hover:text-white flex items-center justify-center transition-all duration-200 cursor-pointer">
+              <a href="https://www.linkedin.com/company/legal-recovery-india/" aria-label="LinkedIn" className="w-9 h-9 rounded-full bg-gray-800/40 border border-gray-800 hover:border-[#DC2626] hover:text-white flex items-center justify-center transition-all duration-200 cursor-pointer">
+                <span className="sr-only">LinkedIn</span>
                 <svg className="w-4 h-4 fill-current" viewBox="0 0 24 24">
                   <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452z" />
                 </svg>
               </a>
               {/* Instagram */}
-              <a href="/contact" className="w-9 h-9 rounded-full bg-gray-800/40 border border-gray-800 hover:border-[#DC2626] hover:text-white flex items-center justify-center transition-all duration-200 cursor-pointer">
+              <a href="/contact" aria-label="Contact Us" className="w-9 h-9 rounded-full bg-gray-800/40 border border-gray-800 hover:border-[#DC2626] hover:text-white flex items-center justify-center transition-all duration-200 cursor-pointer">
+                <span className="sr-only">Contact Us</span>
                 <svg className="w-4 h-4 stroke-current fill-none" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round" viewBox="0 0 24 24">
                   <rect x="2" y="2" width="20" height="20" rx="5" ry="5" />
                   <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" />
@@ -169,21 +172,22 @@ export default function Footer() {
                   </span>
                   <div className="flex flex-wrap items-center gap-4 bg-gray-800/10 border border-gray-800/40 rounded-xl p-3 max-w-full">
                     {AI_LOGOS.map((ai) => (
-                      <a
+                      <button
                         key={ai.name}
-                        href={ai.url}
-                        target="_blank"
-                        rel="noopener noreferrer"
+                        type="button"
+                        onClick={() => window.open(ai.url, '_blank', 'noopener,noreferrer')}
                         title={`Ask ${ai.name} about Legal Recovery`}
-                        className="opacity-50 hover:opacity-100 hover:scale-110 transition-all duration-300"
+                        aria-label={`Ask ${ai.name} about Legal Recovery`}
+                        className="opacity-50 hover:opacity-100 hover:scale-110 transition-all duration-300 cursor-pointer bg-transparent border-none p-0 flex items-center justify-center"
                       >
+                        <span className="sr-only">{ai.name}</span>
                         <img
                           src={ai.logo}
                           style={{ height: ai.h }}
                           className="w-auto brightness-0 invert"
                           alt={ai.name}
                         />
-                      </a>
+                      </button>
                     ))}
                   </div>
                 </div>
@@ -193,7 +197,7 @@ export default function Footer() {
 
           {/* Navigation Col */}
           <div className="flex flex-col text-left">
-            <h4 className="text-white font-extrabold text-[13px] uppercase tracking-wider mb-5">Navigation</h4>
+            <p className="text-white font-extrabold text-[13px] uppercase tracking-wider mb-5">Navigation</p>
             <ul className="flex flex-col gap-3.5">
               {navLinks.map((link, idx) => (
                 <li key={idx} className="flex items-center gap-1.5">
@@ -207,7 +211,7 @@ export default function Footer() {
 
           {/* Services Col */}
           <div className="flex flex-col text-left">
-            <h4 className="text-white font-extrabold text-[13px] uppercase tracking-wider mb-5">Services</h4>
+            <p className="text-white font-extrabold text-[13px] uppercase tracking-wider mb-5">Services</p>
             <ul className="flex flex-col gap-3.5">
               {serviceLinks.map((link, idx) => (
                 <li key={idx}>
@@ -221,7 +225,7 @@ export default function Footer() {
 
           {/* Legal Col */}
           <div className="flex flex-col text-left">
-            <h4 className="text-white font-extrabold text-[13px] uppercase tracking-wider mb-5">Legal</h4>
+            <p className="text-white font-extrabold text-[13px] uppercase tracking-wider mb-5">Legal</p>
             <ul className="flex flex-col gap-3.5">
               {legalLinks.map((link, idx) => (
                 <li key={idx}>
@@ -240,7 +244,7 @@ export default function Footer() {
 
         {/* Queries Row */}
         <div className="text-left mb-10">
-          <h4 className="text-white font-extrabold text-[13px] uppercase tracking-wider mb-6">Queries</h4>
+          <p className="text-white font-extrabold text-[13px] uppercase tracking-wider mb-6">Queries</p>
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-12 lg:gap-16 gap-y-3.5">
             {guideLinks.map((link, idx) => (
               <div key={idx} className="flex flex-col">

@@ -296,7 +296,7 @@ export default function DigitalNoticeValidityClient() {
                 {/* Section 1: Statutory Standing Under IT Act */}
                 <section id="notice-digital-legality" className="scroll-mt-32">
                   <h2 className="text-xl md:text-3xl font-black text-slate-900 mb-5 border-b-2 border-[#DC2626] pb-2 inline-block">
-                    1. The Statutory Standing of Email & WhatsApp Notice Service under the IT Act, 2000
+                    1. Legal Status of Email &amp; WhatsApp Notices
                   </h2>
                   <div className="prose prose-base max-w-none text-slate-650 space-y-6">
                     <p className="text-sm md:text-base leading-relaxed">
@@ -323,7 +323,7 @@ export default function DigitalNoticeValidityClient() {
                 {/* Section 2: Blue Tick Standard & WhatsApp */}
                 <section id="blue-tick-jurisprudence" className="scroll-mt-32">
                   <h2 className="text-xl md:text-3xl font-black text-slate-900 mb-5 border-b-2 border-[#DC2626] pb-2 inline-block">
-                    2. The Blue Tick Standard: WhatsApp Delivery, Read Receipts, and Evasion Tactics
+                    2. WhatsApp Blue Ticks &amp; Evading Notice Service
                   </h2>
                   <div className="prose prose-base max-w-none text-slate-650 space-y-6">
                     <p className="text-sm md:text-base leading-relaxed">
@@ -349,7 +349,7 @@ export default function DigitalNoticeValidityClient() {
                 {/* Section 3: Email SMTP Logs & Forensics */}
                 <section id="email-delivery-forensics" className="scroll-mt-32">
                   <h2 className="text-xl md:text-3xl font-black text-slate-900 mb-5 border-b-2 border-[#DC2626] pb-2 inline-block">
-                    3. Email Service Proof: SMTP Handshakes, Delivery Logs, and Header Verification
+                    3. Email Proof: SMTP Logs &amp; Delivery Headers
                   </h2>
                   <div className="prose prose-base max-w-none text-slate-650 space-y-6">
                     <p className="text-sm md:text-base leading-relaxed">
@@ -375,7 +375,7 @@ export default function DigitalNoticeValidityClient() {
                 {/* Section 4: Supreme Court & High Court Precedents */}
                 <section id="landmark-judgments" className="scroll-mt-32">
                   <h2 className="text-xl md:text-3xl font-black text-slate-900 mb-5 border-b-2 border-[#DC2626] pb-2 inline-block">
-                    4. Precedents in Motion: Supreme Court and High Court Rulings on Digital Service
+                    4. Court Precedents on Digital Notice Service
                   </h2>
                   <div className="prose prose-base max-w-none text-slate-650 space-y-6">
                     <p className="text-sm md:text-base leading-relaxed">
@@ -401,7 +401,7 @@ export default function DigitalNoticeValidityClient() {
                 {/* Section 5: Evidence Law & BSA Section 63 */}
                 <section id="BSA-digital-certification" className="scroll-mt-32">
                   <h2 className="text-xl md:text-3xl font-black text-slate-900 mb-5 border-b-2 border-[#DC2626] pb-2 inline-block">
-                    5. Admissibility Under BSA 2023: Executing Section 63 Cryptographic Hash Certificates
+                    5. Section 63 BSA 2023 Digital Certificates
                   </h2>
                   <div className="prose prose-base max-w-none text-slate-650 space-y-6">
                     <p className="text-sm md:text-base leading-relaxed">
@@ -427,7 +427,7 @@ export default function DigitalNoticeValidityClient() {
                 {/* Section 6: Deemed Service & Digital Evasion */}
                 <section id="deemed-service-rules" className="scroll-mt-32">
                   <h2 className="text-xl md:text-3xl font-black text-slate-900 mb-5 border-b-2 border-[#DC2626] pb-2 inline-block">
-                    6. Service Evasion: Refusal of Delivery and General Clauses Act Section 27 Presumptions
+                    6. Section 27 Presumptions &amp; Notice Refusal
                   </h2>
                   <div className="prose prose-base max-w-none text-slate-650 space-y-6">
                     <p className="text-sm md:text-base leading-relaxed">
@@ -452,7 +452,7 @@ export default function DigitalNoticeValidityClient() {
                 {/* Section 7: Multi-Channel Delivery Strategy */}
                 <section id="multi-channel-strategy" className="scroll-mt-32">
                   <h2 className="text-xl md:text-3xl font-black text-slate-900 mb-5 border-b-2 border-[#DC2626] pb-2 inline-block">
-                    7. The Dual-Service Standard: Combining Online Notice Service with Physical Speed Post
+                    7. Dual-Service: Online &amp; Speed Post Delivery
                   </h2>
                   <div className="prose prose-base max-w-none text-slate-650 space-y-6">
                     <p className="text-sm md:text-base leading-relaxed">
@@ -480,7 +480,7 @@ export default function DigitalNoticeValidityClient() {
                 {/* Section 8: Next Escalation & Litigation Steps */}
                 <section id="notice-ignored-litigation" className="scroll-mt-32">
                   <h2 className="text-xl md:text-3xl font-black text-slate-900 mb-5 border-b-2 border-[#DC2626] pb-2 inline-block">
-                    8. From Notice to Litigation: Next Escalation Steps for Unresponsive Parties
+                    8. Legal Steps When the Debtor Does Not Reply
                   </h2>
                   <div className="prose prose-base max-w-none text-slate-650 space-y-6">
                     <p className="text-sm md:text-base leading-relaxed">

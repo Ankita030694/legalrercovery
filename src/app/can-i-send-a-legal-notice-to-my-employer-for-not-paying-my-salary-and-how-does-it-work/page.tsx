@@ -2,7 +2,7 @@ import { Metadata } from "next";
 import LegalNoticeSalaryClient from "./LegalNoticeSalaryClient";
 
 export const metadata: Metadata = {
-  title: "Can I Send a Legal Notice to My Employer for Not Paying My Salary?",
+  title: "Can I Send a Legal Notice to Employer for Salary?",
   description: "Learn how to send a legal notice to your employer for unpaid salary or FNF dues in India. Explore draft requirements, delivery protocols, and next steps.",
   keywords: [
     "send legal notice to employer for unpaid salary",

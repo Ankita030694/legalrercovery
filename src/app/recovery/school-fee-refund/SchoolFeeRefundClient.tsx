@@ -190,7 +190,7 @@ export default function SchoolFeeRefundClient() {
   };
 
   const tocSections = [
-    { id: "introduction",            title: "Introduction" },
+    { id: "introduction",            title: "Introduction to School Fee Refund Claims" },
     { id: "parents-legal-standing",  title: "Parents' Legal Standing" },
     { id: "fee-anatomy",             title: "Fee Anatomy & Refundable Components" },
     { id: "capitation-rte",          title: "Capitation Fees & RTE Act" },
@@ -271,7 +271,7 @@ export default function SchoolFeeRefundClient() {
 
                 {/* ── Introduction ── */}
                 <section id="introduction" className="scroll-mt-32">
-                  <h2 className="text-xl md:text-3xl font-black text-slate-900 mb-5 border-b-2 border-[#DC2626] pb-2 inline-block">Introduction</h2>
+                  <h2 className="text-xl md:text-3xl font-black text-slate-900 mb-5 border-b-2 border-[#DC2626] pb-2 inline-block">Introduction to School Fee Refund Claims</h2>
                   <div className="prose prose-base max-w-none text-slate-650 space-y-6">
                     <p className="text-sm md:text-base leading-relaxed">
                       In a country where a child&apos;s school is often chosen before they are born—where parents research rankings, visit campuses, attend open days, and join waiting lists years in advance—the act of paying school admission fees is rarely a casual transaction. For millions of Indian families, a single year&apos;s fees at a reputed private school can represent a month&apos;s salary, a family&apos;s fixed deposit, or the liquidation of savings that took years to accumulate. The payment is made in an atmosphere of hope, aspiration, and trust: trust that the school will deliver the quality of education it advertised, trust that the facilities shown during the campus tour will actually be functional, and trust that if circumstances change, the management will deal with the family fairly and humanely. <strong>That trust is broken—shockingly often—when a school management responds to a fee refund request with a rigid, unfeeling, and frequently illegal &quot;fees once paid are non-refundable.&quot;</strong>

@@ -391,39 +391,54 @@ export default function TravelAgentHolidayPackageRefundClient() {
                     <span className="text-xs font-semibold text-slate-400 uppercase tracking-wider mr-2">
                       Share:
                     </span>
-                    <a
-                      href={`https://twitter.com/intent/tweet?url=${shareUrl}&text=${shareText}`}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="w-8 h-8 rounded-full bg-black text-white hover:opacity-80 flex items-center justify-center transition-opacity"
+                    <button
+                      type="button"
+                      onClick={() =>
+                        window.open(
+                          `https://twitter.com/intent/tweet?url=${shareUrl}&text=${shareText}`,
+                          '_blank',
+                          'noopener,noreferrer,width=600,height=400'
+                        )
+                      }
+                      className="w-8 h-8 rounded-full bg-black text-white hover:opacity-80 flex items-center justify-center transition-opacity cursor-pointer"
                       aria-label="Share on X (Twitter)"
                     >
                       <svg className="w-4 h-4 fill-current" viewBox="0 0 24 24">
                         <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z" />
                       </svg>
-                    </a>
-                    <a
-                      href={`https://www.facebook.com/sharer/sharer.php?u=${shareUrl}`}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="w-8 h-8 rounded-full bg-[#1877F2] text-white hover:opacity-80 flex items-center justify-center transition-opacity"
+                    </button>
+                    <button
+                      type="button"
+                      onClick={() =>
+                        window.open(
+                          `https://www.facebook.com/sharer/sharer.php?u=${shareUrl}`,
+                          '_blank',
+                          'noopener,noreferrer,width=600,height=400'
+                        )
+                      }
+                      className="w-8 h-8 rounded-full bg-[#1877F2] text-white hover:opacity-80 flex items-center justify-center transition-opacity cursor-pointer"
                       aria-label="Share on Facebook"
                     >
                       <svg className="w-4 h-4 fill-current" viewBox="0 0 24 24">
                         <path d="M9.198 21.5h4v-8.01h3.604l.396-3.98h-4V7.5a1 1 0 0 1 1-1h3v-4h-3a5 5 0 0 0-5 5v2.01h-2l-.396 3.98h2.396v8.01z" />
                       </svg>
-                    </a>
-                    <a
-                      href={`https://www.linkedin.com/shareArticle?mini=true&url=${shareUrl}&title=${encodeURIComponent('Legal Notice to Travel Agent for Holiday Package Refund | Legal Recovery India')}`}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="w-8 h-8 rounded-full bg-[#0A66C2] text-white hover:opacity-80 flex items-center justify-center transition-opacity"
+                    </button>
+                    <button
+                      type="button"
+                      onClick={() =>
+                        window.open(
+                          `https://www.linkedin.com/shareArticle?mini=true&url=${shareUrl}&title=${encodeURIComponent('Legal Notice to Travel Agent for Holiday Package Refund | Legal Recovery India')}`,
+                          '_blank',
+                          'noopener,noreferrer,width=600,height=400'
+                        )
+                      }
+                      className="w-8 h-8 rounded-full bg-[#0A66C2] text-white hover:opacity-80 flex items-center justify-center transition-opacity cursor-pointer"
                       aria-label="Share on LinkedIn"
                     >
                       <svg className="w-4 h-4 fill-current" viewBox="0 0 24 24">
                         <path d="M4.98 3.5c0 1.381-1.11 2.5-2.48 2.5s-2.48-1.119-2.48-2.5c0-1.38 1.11-2.5 2.48-2.5s2.48 1.12 2.48 2.5zm.02 4.5h-5v16h5v-16zm7.982 0h-4.968v16h4.969v-8.399c0-4.67 6.029-5.052 6.029 0v8.399h4.988v-10.131c0-7.88-8.922-7.593-11.018-3.714v-2.155z" />
                       </svg>
-                    </a>
+                    </button>
                   </div>
                 </div>
 
@@ -433,34 +448,7 @@ export default function TravelAgentHolidayPackageRefundClient() {
                     Quick Answer
                   </h2>
                   <p className="text-sm text-slate-700 font-medium leading-relaxed">
-                    An aggrieved traveler or consumer can serve an advocate-drafted statutory legal notice to a travel agent or tour operator under{' '}
-                    <a
-                      href="https://consumeraffairs.nic.in/acts-and-rules/consumer-protection"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="text-purple-600 hover:text-purple-800 hover:underline"
-                    >
-                      Section 2(11) and Section 2(47) of the Consumer Protection Act, 2019
-                    </a>
-                    , demanding full refund of advance package payments, unrendered hotel stays, and cancelled excursion fees within 15 days. If a travel agency unilaterally alters the agreed itinerary, downgrades accommodation standards, or withholds refunds after trip cancellations due to unforeseen events, the tour operator commits an actionable deficiency of service and unfair trade practice under{' '}
-                    <a
-                      href="https://www.indiacode.nic.in/handle/123456789/2187"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="text-purple-600 hover:text-purple-800 hover:underline"
-                    >
-                      Section 73 and Section 56 of the Indian Contract Act, 1872
-                    </a>
-                    . Serving a formal legal notice establishes crucial pre-litigation proof before filing a digital complaint on the{' '}
-                    <a
-                      href="https://edaakhil.nic.in"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="text-purple-600 hover:text-purple-800 hover:underline"
-                    >
-                      E-Daakhil portal
-                    </a>{' '}
-                    or initiating recovery proceedings before the District Consumer Disputes Redressal Commission for principal refund, 12% to 18% annual interest, and substantial compensation for mental agony.
+                    An aggrieved traveler or consumer can serve an advocate-drafted statutory legal notice to a travel agent or tour operator under <strong className="text-slate-900 font-semibold">Section 2(11) and Section 2(47) of the Consumer Protection Act, 2019</strong>, demanding full refund of advance package payments, unrendered hotel stays, and cancelled excursion fees within 15 days. If a travel agency unilaterally alters the agreed itinerary, downgrades accommodation standards, or withholds refunds after trip cancellations due to unforeseen events, the tour operator commits an actionable deficiency of service and unfair trade practice under <strong className="text-slate-900 font-semibold">Section 73 and Section 56 of the Indian Contract Act, 1872</strong>. Serving a formal legal notice establishes crucial pre-litigation proof before filing a digital complaint on the <strong className="text-slate-900 font-semibold">E-Daakhil portal</strong> or initiating recovery proceedings before the District Consumer Disputes Redressal Commission for principal refund, 12% to 18% annual interest, and substantial compensation for mental agony.
                   </p>
                 </div>
 
@@ -707,16 +695,7 @@ export default function TravelAgentHolidayPackageRefundClient() {
                         >
                           Thomas Cook (India) Ltd. v. Dr. M.M. Shenoy (NCDRC 2019)
                         </a>
-                        , the National Consumer Commission held that when a travel operator promises a specific standard of hotel and itinerary, any unilateral substitution with inferior properties constitutes gross deficiency of service, ordering a complete refund of tour fees along with punitive damages for distress. Similarly, in{' '}
-                        <a
-                          href="http://www.ncdrc.nic.in"
-                          target="_blank"
-                          rel="noopener noreferrer"
-                          className="text-purple-600 hover:text-purple-800 hover:underline"
-                        >
-                          Cox &amp; Kings Ltd. v. Ramachandran (NCDRC 2018)
-                        </a>
-                        , the commission affirmed that tour operators cannot hide behind fine-print exclusion clauses to deny refunds when scheduled excursions are omitted.
+                        , the National Consumer Commission held that when a travel operator promises a specific standard of hotel and itinerary, any unilateral substitution with inferior properties constitutes gross deficiency of service, ordering a complete refund of tour fees along with punitive damages for distress. Similarly, in <strong className="text-slate-900 font-semibold">Cox &amp; Kings Ltd. v. Ramachandran (NCDRC 2018)</strong>, the commission affirmed that tour operators cannot hide behind fine-print exclusion clauses to deny refunds when scheduled excursions are omitted.
                       </p>
                     </div>
                   </div>
@@ -796,16 +775,7 @@ export default function TravelAgentHolidayPackageRefundClient() {
                         >
                           Ministry of Corporate Affairs (MCA)
                         </a>{' '}
-                        portal or GSTIN registry. Legal Recovery automatically validates company master records, IATA memberships, and{' '}
-                        <a
-                          href="https://tourism.gov.in"
-                          target="_blank"
-                          rel="noopener noreferrer"
-                          className="text-purple-600 hover:text-purple-800 hover:underline"
-                        >
-                          Ministry of Tourism (Incredible India)
-                        </a>{' '}
-                        approvals to prevent technical defects during service.
+                        portal or GSTIN registry. Legal Recovery automatically validates company master records, IATA memberships, and <strong className="text-slate-900 font-semibold">Ministry of Tourism (Incredible India)</strong> approvals to prevent technical defects during service.
                       </p>
                     </div>
                   </div>
@@ -952,74 +922,39 @@ export default function TravelAgentHolidayPackageRefundClient() {
                   </h3>
                   <ol className="list-decimal list-inside space-y-2 text-xs text-slate-600">
                     <li>
-                      <a
-                        href="https://consumeraffairs.nic.in/acts-and-rules/consumer-protection"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="text-purple-600 hover:text-purple-800 hover:underline"
-                      >
-                        Consumer Protection Act, 2019 — Sections 2(11), 2(46), 2(47), 35 &amp; 39, consumeraffairs.nic.in
-                      </a>
+                      <span className="font-semibold text-slate-800">
+                        Consumer Protection Act, 2019 — Sections 2(11), 2(46), 2(47), 35 &amp; 39 (consumeraffairs.nic.in)
+                      </span>
                     </li>
                     <li>
-                      <a
-                        href="https://www.indiacode.nic.in/handle/123456789/2187"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="text-purple-600 hover:text-purple-800 hover:underline"
-                      >
-                        Indian Contract Act, 1872 — Section 56 (Doctrine of Frustration) &amp; Section 73 (Breach of Contract), indiacode.nic.in
-                      </a>
+                      <span className="font-semibold text-slate-800">
+                        Indian Contract Act, 1872 — Section 56 (Doctrine of Frustration) &amp; Section 73 (Breach of Contract) (indiacode.nic.in)
+                      </span>
                     </li>
                     <li>
-                      <a
-                        href="https://main.sci.gov.in/judgment/judis/47101.pdf"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="text-purple-600 hover:text-purple-800 hover:underline"
-                      >
-                        Supreme Court of India — Pravasi Legal Cell &amp; Ors. v. Union of India (2020) Airline &amp; Package Refund Directives, main.sci.gov.in
-                      </a>
+                      <span className="font-semibold text-slate-800">
+                        Supreme Court of India — Pravasi Legal Cell &amp; Ors. v. Union of India (2020) Airline &amp; Package Refund Directives (main.sci.gov.in)
+                      </span>
                     </li>
                     <li>
-                      <a
-                        href="http://www.ncdrc.nic.in"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="text-purple-600 hover:text-purple-800 hover:underline"
-                      >
-                        National Consumer Disputes Redressal Commission (NCDRC) — Thomas Cook (India) Ltd. v. Dr. M.M. Shenoy (2019), ncdrc.nic.in
-                      </a>
+                      <span className="font-semibold text-slate-800">
+                        National Consumer Disputes Redressal Commission (NCDRC) — Thomas Cook (India) Ltd. v. Dr. M.M. Shenoy (2019) (ncdrc.nic.in)
+                      </span>
                     </li>
                     <li>
-                      <a
-                        href="https://www.dgca.gov.in"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="text-purple-600 hover:text-purple-800 hover:underline"
-                      >
-                        Directorate General of Civil Aviation (DGCA) — Civil Aviation Requirements (CAR) Series M Passenger Charter, dgca.gov.in
-                      </a>
+                      <span className="font-semibold text-slate-800">
+                        Directorate General of Civil Aviation (DGCA) — Civil Aviation Requirements (CAR) Series M Passenger Charter (dgca.gov.in)
+                      </span>
                     </li>
                     <li>
-                      <a
-                        href="https://tourism.gov.in"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="text-purple-600 hover:text-purple-800 hover:underline"
-                      >
-                        Ministry of Tourism (Incredible India) — Guidelines for Recognition of Tour Operators and Travel Agencies, tourism.gov.in
-                      </a>
+                      <span className="font-semibold text-slate-800">
+                        Ministry of Tourism (Incredible India) — Guidelines for Recognition of Tour Operators and Travel Agencies (tourism.gov.in)
+                      </span>
                     </li>
                     <li>
-                      <a
-                        href="https://www.mca.gov.in/content/mca/global/en/home.html"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="text-purple-600 hover:text-purple-800 hover:underline"
-                      >
-                        Ministry of Corporate Affairs (MCA) — Company Master Data &amp; Registered Office Verification, mca.gov.in
-                      </a>
+                      <span className="font-semibold text-slate-800">
+                        Ministry of Corporate Affairs (MCA) — Company Master Data &amp; Registered Office Verification (mca.gov.in)
+                      </span>
                     </li>
                   </ol>
                 </section>

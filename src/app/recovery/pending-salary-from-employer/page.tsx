@@ -2,8 +2,8 @@ import { Metadata } from "next";
 import PendingSalaryClient from "./PendingSalaryClient";
 
 export const metadata: Metadata = {
-  title: "Pending Salary From Employer? Recover Delayed Wages Legally | LegalRecovery",
-  description: "Employer not paying your salary during active service or after layoffs? LegalRecovery provides expert legal-tech assistance to recover pending salaries and wages in India. Start your recovery online.",
+  title: "Recover Pending Salary from Employer | LegalRecovery",
+  description: "Employer not paying salary during active service or after layoffs? LegalRecovery helps you recover pending wages in India. Start your recovery online.",
   keywords: [
     "pending salary from employer",
     "employer delaying salary india",

@@ -5,7 +5,7 @@ const slug = 'send-a-legal-notice/vendor-not-paying-pending-payment';
 const title = 'Legal Notice for Vendor Not Paying Pending Payment | Commercial Debt Recovery India';
 const description =
   'Corporate client, buyer, or contractor withholding pending vendor payments, unpaid commercial invoices, or supply contract dues? Send an advocate-drafted statutory legal notice under the MSMED Act 2006, Commercial Courts Act 2015, and Indian Contract Act 1872 to recover your pending vendor dues with 3x RBI compound interest within 15 days.';
-const url = `https://legalrecovery.in/${slug}`;
+const url = `https://www.legalrecovery.in/${slug}`;
 const ogImage = `/images/og/vendor-not-paying-pending-payment.jpg`;
 
 export const metadata: Metadata = {

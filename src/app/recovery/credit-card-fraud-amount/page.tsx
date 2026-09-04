@@ -3,7 +3,7 @@ import CreditCardFraudClient from "./CreditCardFraudClient";
 
 export const metadata: Metadata = {
   title: "Recover Credit Card Fraud Amount in India | LegalRecovery",
-  description: "Victim of credit card cloning, skimming, unauthorized international billing, or online e-commerce fraud? Learn about the RBI customer protection circular, Visa/Mastercard dispute rules, and how to recover your funds.",
+  description: "Victim of credit card fraud or unauthorized billing? Learn about RBI customer protection circulars, chargeback dispute rules, and how to recover funds.",
   keywords: [
     "recover credit card fraud amount",
     "unauthorized credit card transaction refund",

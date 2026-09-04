@@ -2,7 +2,7 @@ import { Metadata } from "next";
 import OnlineNoticeDeliveryClient from "./OnlineNoticeDeliveryClient";
 
 export const metadata: Metadata = {
-  title: "What are the Legally Valid Ways to Deliver a Legal Notice Online in India?",
+  title: "Valid Ways to Deliver a Legal Notice Online in India",
   description: "Exhaustive legal guide on serving legal notices online in India. Learn about the validity of WhatsApp, email, and digital delivery under BSA 2023.",
   keywords: [
     "legally valid ways to deliver legal notice online in india",

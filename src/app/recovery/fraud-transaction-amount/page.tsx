@@ -3,7 +3,7 @@ import FraudTransactionClient from "./FraudTransactionClient";
 
 export const metadata: Metadata = {
   title: "Recover Fraud Transaction Amount in India | LegalRecovery",
-  description: "Struggling to recover funds from an unauthorized online banking or UPI fraud? Learn about the RBI zero liability guidelines, cyber complaint filings, and legal notices.",
+  description: "Recover funds from unauthorized online banking or UPI fraud. Learn about RBI zero liability guidelines, 1930 helpline, and legal recovery notices.",
   keywords: [
     "recover fraud transaction amount",
     "unauthorized electronic transaction liability rbi",

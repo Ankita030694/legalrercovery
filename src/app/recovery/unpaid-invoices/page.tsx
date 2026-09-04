@@ -2,8 +2,8 @@ import { Metadata } from "next";
 import UnpaidInvoicesClient from "./UnpaidInvoicesClient";
 
 export const metadata: Metadata = {
-  title: "Recover Unpaid Invoices & B2B Vendor Payments | LegalRecovery",
-  description: "Struggling to recover unpaid commercial invoices, B2B debts, or vendor payments in India? Learn about MSME Samadhaan, Order 37 CPC summary suits, Section 138 cheque bounce, and how to serve a legal notice.",
+  title: "Recover Unpaid Invoices & B2B Dues | LegalRecovery",
+  description: "Recover unpaid commercial invoices and B2B debts in India. Learn about MSME Samadhaan, Order 37 summary suits, Section 138, and legal notices.",
   keywords: [
     "recover unpaid invoices India",
     "commercial invoice debt recovery",

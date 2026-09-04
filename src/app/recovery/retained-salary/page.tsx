@@ -2,8 +2,8 @@ import { Metadata } from "next";
 import RetainedSalaryClient from "./RetainedSalaryClient";
 
 export const metadata: Metadata = {
-  title: "Recover Retained Salary & Withheld Deferred Pay | LegalRecovery",
-  description: "Struggling to recover retained salary, deferred compensation payouts, or withheld retention bonuses in India? Learn about the Payment of Wages Act, Order 37 CPC summary suits, and legal notices.",
+  title: "Recover Retained Salary & Deferred Pay | LegalRecovery",
+  description: "Recover retained salary, deferred compensation, and withheld bonuses in India. Learn about the Payment of Wages Act, Order 37 summary suits, and notices.",
   keywords: [
     "recover retained salary India",
     "withheld salary legal notice advocate",

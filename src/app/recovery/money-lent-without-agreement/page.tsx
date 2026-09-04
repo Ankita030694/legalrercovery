@@ -2,8 +2,8 @@ import { Metadata } from "next";
 import MoneyLentClient from "./MoneyLentClient";
 
 export const metadata: Metadata = {
-  title: "How to Recover Money Lent Without Written Agreement in India | LegalRecovery",
-  description: "Lent money to a friend, relative, or business without a written agreement? Learn about legal rights, oral contracts validity, summary suits, and how to recover your money legally.",
+  title: "Recover Money Lent Without Agreement | LegalRecovery",
+  description: "Lent money without an agreement? Learn about oral contract validity, summary suits, digital evidence, and how to recover your money legally in India.",
   keywords: [
     "recover money lent without agreement",
     "recovery of friendly loan without contract",

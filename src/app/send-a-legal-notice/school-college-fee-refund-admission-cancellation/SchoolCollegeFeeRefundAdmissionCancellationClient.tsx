@@ -385,39 +385,54 @@ export default function SchoolCollegeFeeRefundAdmissionCancellationClient() {
                     <span className="text-xs font-semibold text-slate-400 uppercase tracking-wider mr-2">
                       Share:
                     </span>
-                    <a
-                      href={`https://twitter.com/intent/tweet?url=${shareUrl}&text=${shareText}`}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="w-8 h-8 rounded-full bg-black text-white hover:opacity-80 flex items-center justify-center transition-opacity"
+                    <button
+                      type="button"
+                      onClick={() =>
+                        window.open(
+                          `https://twitter.com/intent/tweet?url=${shareUrl}&text=${shareText}`,
+                          '_blank',
+                          'noopener,noreferrer,width=600,height=400'
+                        )
+                      }
+                      className="w-8 h-8 rounded-full bg-black text-white hover:opacity-80 flex items-center justify-center transition-opacity cursor-pointer"
                       aria-label="Share on X (Twitter)"
                     >
                       <svg className="w-4 h-4 fill-current" viewBox="0 0 24 24">
                         <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z" />
                       </svg>
-                    </a>
-                    <a
-                      href={`https://www.facebook.com/sharer/sharer.php?u=${shareUrl}`}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="w-8 h-8 rounded-full bg-[#1877F2] text-white hover:opacity-80 flex items-center justify-center transition-opacity"
+                    </button>
+                    <button
+                      type="button"
+                      onClick={() =>
+                        window.open(
+                          `https://www.facebook.com/sharer/sharer.php?u=${shareUrl}`,
+                          '_blank',
+                          'noopener,noreferrer,width=600,height=400'
+                        )
+                      }
+                      className="w-8 h-8 rounded-full bg-[#1877F2] text-white hover:opacity-80 flex items-center justify-center transition-opacity cursor-pointer"
                       aria-label="Share on Facebook"
                     >
                       <svg className="w-4 h-4 fill-current" viewBox="0 0 24 24">
                         <path d="M9.198 21.5h4v-8.01h3.604l.396-3.98h-4V7.5a1 1 0 0 1 1-1h3v-4h-3a5 5 0 0 0-5 5v2.01h-2l-.396 3.98h2.396v8.01z" />
                       </svg>
-                    </a>
-                    <a
-                      href={`https://www.linkedin.com/shareArticle?mini=true&url=${shareUrl}&title=${encodeURIComponent('Legal Notice to School or College Fee Refund Admission Cancellation | Legal Recovery India')}`}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="w-8 h-8 rounded-full bg-[#0A66C2] text-white hover:opacity-80 flex items-center justify-center transition-opacity"
+                    </button>
+                    <button
+                      type="button"
+                      onClick={() =>
+                        window.open(
+                          `https://www.linkedin.com/shareArticle?mini=true&url=${shareUrl}&title=${encodeURIComponent('Legal Notice to School or College Fee Refund Admission Cancellation | Legal Recovery India')}`,
+                          '_blank',
+                          'noopener,noreferrer,width=600,height=400'
+                        )
+                      }
+                      className="w-8 h-8 rounded-full bg-[#0A66C2] text-white hover:opacity-80 flex items-center justify-center transition-opacity cursor-pointer"
                       aria-label="Share on LinkedIn"
                     >
                       <svg className="w-4 h-4 fill-current" viewBox="0 0 24 24">
                         <path d="M4.98 3.5c0 1.381-1.11 2.5-2.48 2.5s-2.48-1.119-2.48-2.5c0-1.38 1.11-2.5 2.48-2.5s2.48 1.12 2.48 2.5zm.02 4.5h-5v16h5v-16zm7.982 0h-4.968v16h4.969v-8.399c0-4.67 6.029-5.052 6.029 0v8.399h4.988v-10.131c0-7.88-8.922-7.593-11.018-3.714v-2.155z" />
                       </svg>
-                    </a>
+                    </button>
                   </div>
                 </div>
 
@@ -427,34 +442,7 @@ export default function SchoolCollegeFeeRefundAdmissionCancellationClient() {
                     Quick Answer
                   </h2>
                   <p className="text-sm text-slate-700 font-medium leading-relaxed">
-                    A parent or student can serve an advocate-vetted statutory legal notice to any school, college, or private university demanding a full refund of tuition, capitation, admission, hostel, or caution fees upon admission cancellation under{' '}
-                    <a
-                      href="https://www.ugc.gov.in"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="text-purple-600 hover:text-purple-800 hover:underline"
-                    >
-                      University Grants Commission (UGC) Fee Refund Norms
-                    </a>
-                    ,{' '}
-                    <a
-                      href="https://www.aicte-india.org"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="text-purple-600 hover:text-purple-800 hover:underline"
-                    >
-                      AICTE Approval Process Handbook
-                    </a>
-                    , and{' '}
-                    <a
-                      href="https://consumeraffairs.nic.in/acts-and-rules/consumer-protection-act-2019"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="text-purple-600 hover:text-purple-800 hover:underline"
-                    >
-                      Section 2(47) of the Consumer Protection Act, 2019
-                    </a>
-                    . Educational institutions in India are legally prohibited from enforcing non-refundable clauses or retaining unearned fees for unavailed academic semesters when a seat is surrendered before or near the commencement cutoff. If the institution fails to disburse the refund within 15 days of receiving the legal notice, the claimant can initiate summary recovery before the District Consumer Disputes Redressal Commission (DCDRC), claim 18% per annum statutory interest, and report the management to regulatory bodies for de-recognition and punitive penalties.
+                    A parent or student can serve an advocate-vetted statutory legal notice to any school, college, or private university demanding a full refund of tuition, capitation, admission, hostel, or caution fees upon admission cancellation under <strong className="text-slate-900 font-semibold">University Grants Commission (UGC) Fee Refund Norms</strong>, <strong className="text-slate-900 font-semibold">AICTE Approval Process Handbook</strong>, and <strong className="text-slate-900 font-semibold">Section 2(47) of the Consumer Protection Act, 2019</strong>. Educational institutions in India are legally prohibited from enforcing non-refundable clauses or retaining unearned fees for unavailed academic semesters when a seat is surrendered before or near the commencement cutoff. If the institution fails to disburse the refund within 15 days of receiving the legal notice, the claimant can initiate summary recovery before the District Consumer Disputes Redressal Commission (DCDRC), claim 18% per annum statutory interest, and report the management to regulatory bodies for de-recognition and punitive penalties.
                   </p>
                 </div>
 
@@ -887,84 +875,44 @@ export default function SchoolCollegeFeeRefundAdmissionCancellationClient() {
                   </h3>
                   <ol className="list-decimal list-inside space-y-2 text-xs text-slate-600">
                     <li>
-                      <a
-                        href="https://www.ugc.gov.in"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="text-purple-600 hover:text-purple-800 hover:underline"
-                      >
-                        University Grants Commission (UGC) — Notification on Fee Refund Policy and Document Retention Norms, ugc.gov.in
-                      </a>
+                      <span className="font-semibold text-slate-800">
+                        University Grants Commission (UGC) — Notification on Fee Refund Policy and Document Retention Norms (ugc.gov.in)
+                      </span>
                     </li>
                     <li>
-                      <a
-                        href="https://www.aicte-india.org"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="text-purple-600 hover:text-purple-800 hover:underline"
-                      >
-                        All India Council for Technical Education (AICTE) — Approval Process Handbook (APH) Fee Refund Guidelines, aicte-india.org
-                      </a>
+                      <span className="font-semibold text-slate-800">
+                        All India Council for Technical Education (AICTE) — Approval Process Handbook (APH) Fee Refund Guidelines (aicte-india.org)
+                      </span>
                     </li>
                     <li>
-                      <a
-                        href="https://consumeraffairs.nic.in/acts-and-rules/consumer-protection-act-2019"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="text-purple-600 hover:text-purple-800 hover:underline"
-                      >
-                        Consumer Protection Act, 2019 — Section 2(47) (Unfair Trade Practice) &amp; Section 35 (Complaint Filing), consumeraffairs.nic.in
-                      </a>
+                      <span className="font-semibold text-slate-800">
+                        Consumer Protection Act, 2019 — Section 2(47) (Unfair Trade Practice) &amp; Section 35 (Complaint Filing) (consumeraffairs.nic.in)
+                      </span>
                     </li>
                     <li>
-                      <a
-                        href="https://ncdrc.nic.in"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="text-purple-600 hover:text-purple-800 hover:underline"
-                      >
-                        National Consumer Disputes Redressal Commission (NCDRC) — FIITJEE Ltd. v. Dr. Minathi Rath &amp; Educational Refund Precedents, ncdrc.nic.in
-                      </a>
+                      <span className="font-semibold text-slate-800">
+                        National Consumer Disputes Redressal Commission (NCDRC) — FIITJEE Ltd. v. Dr. Minathi Rath &amp; Educational Refund Precedents (ncdrc.nic.in)
+                      </span>
                     </li>
                     <li>
-                      <a
-                        href="https://main.sci.gov.in"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="text-purple-600 hover:text-purple-800 hover:underline"
-                      >
-                        Supreme Court of India — Islamic Academy of Education v. State of Karnataka (2003) 6 SCC 697, main.sci.gov.in
-                      </a>
+                      <span className="font-semibold text-slate-800">
+                        Supreme Court of India — Islamic Academy of Education v. State of Karnataka (2003) 6 SCC 697 (main.sci.gov.in)
+                      </span>
                     </li>
                     <li>
-                      <a
-                        href="https://www.indiacode.nic.in/handle/123456789/2086"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="text-purple-600 hover:text-purple-800 hover:underline"
-                      >
-                        Right to Education Act, 2009 — Section 13 (Prohibition of Capitation Fee &amp; Screening), indiacode.nic.in
-                      </a>
+                      <span className="font-semibold text-slate-800">
+                        Right to Education Act, 2009 — Section 13 (Prohibition of Capitation Fee &amp; Screening) (indiacode.nic.in)
+                      </span>
                     </li>
                     <li>
-                      <a
-                        href="https://www.indiacode.nic.in/handle/123456789/2187"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="text-purple-600 hover:text-purple-800 hover:underline"
-                      >
-                        Indian Contract Act, 1872 — Section 73 (Breach of Contract) &amp; Section 74 (Unreasonable Penalties), indiacode.nic.in
-                      </a>
+                      <span className="font-semibold text-slate-800">
+                        Indian Contract Act, 1872 — Section 73 (Breach of Contract) &amp; Section 74 (Unreasonable Penalties) (indiacode.nic.in)
+                      </span>
                     </li>
                     <li>
-                      <a
-                        href="https://www.indiacode.nic.in/handle/123456789/20234"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="text-purple-600 hover:text-purple-800 hover:underline"
-                      >
-                        Bharatiya Nyaya Sanhita, 2023 — Section 316 (Criminal Breach of Trust) &amp; Section 318 (Cheating), indiacode.nic.in
-                      </a>
+                      <span className="font-semibold text-slate-800">
+                        Bharatiya Nyaya Sanhita, 2023 — Section 316 (Criminal Breach of Trust) &amp; Section 318 (Cheating) (indiacode.nic.in)
+                      </span>
                     </li>
                   </ol>
                 </section>

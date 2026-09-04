@@ -2,8 +2,8 @@ import { Metadata } from "next";
 import FreelancerNoticeClient from "./FreelancerNoticeClient";
 
 export const metadata: Metadata = {
-  title: "How to Send a Legal Notice as a Freelancer for Unpaid Work in India",
-  description: "A step-by-step guide for freelancers in India to draft and send an enforceable legal notice to a non-paying client. Learn about evidence audits and speed post service.",
+  title: "How Freelancers Send a Legal Notice for Unpaid Work",
+  description: "Guide for freelancers in India to draft and send an enforceable legal notice to non-paying clients. Learn evidence audits and speed post rules.",
   keywords: [
     "how to send legal notice freelancer",
     "unpaid work legal notice client",

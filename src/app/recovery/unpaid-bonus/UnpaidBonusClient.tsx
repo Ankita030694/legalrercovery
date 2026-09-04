@@ -215,7 +215,7 @@ export default function UnpaidBonusClient() {
   };
 
   const tocSections = [
-    { id: "bonus-introduction", title: "Introduction" },
+    { id: "bonus-introduction", title: "Introduction to Statutory Bonus Recovery in India" },
     { id: "payment-of-bonus-act-overview", title: "Statutory Overview" },
     { id: "statutory-vs-contractual-bonus", title: "Statutory vs Contractual" },
     { id: "eligibility-criteria-statutory-bonus", title: "Eligibility Rules" },
@@ -323,7 +323,7 @@ export default function UnpaidBonusClient() {
                 
                 {/* Introduction */}
                 <section id="bonus-introduction" className="scroll-mt-32">
-                  <h2 className="text-xl md:text-3xl font-black text-slate-900 mb-5 border-b-2 border-[#D2A02A] pb-2 inline-block">Introduction</h2>
+                  <h2 className="text-xl md:text-3xl font-black text-slate-900 mb-5 border-b-2 border-[#D2A02A] pb-2 inline-block">Introduction to Statutory Bonus Recovery in India</h2>
                   <div className="prose prose-base max-w-none text-slate-650 space-y-6">
                     <p className="text-sm md:text-base leading-relaxed">
                       Employee bonuses are an integral part of professional compensation structures in India, bridging the gap between profit-sharing and performance-linked motivation. For many workers, a bonus represents a significant financial expectation, designed to share the organization&apos;s success or reward individual excellence. In corporate compensation packages, bonuses appear in various forms, including statutory minimum bonuses, profit-linked schemes, quarterly variable pay, and annual executive performance bonuses.

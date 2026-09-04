@@ -25,7 +25,7 @@ export const metadata: Metadata = {
       "Legal Recovery India – Recover Your Money Legally Online",
   },
   description:
-    "Recover unpaid money, salary, refunds, deposits, invoices, and consumer claims legally through India's trusted legal-tech platform. Start your claim online in minutes.",
+    "Recover unpaid money, salary, refunds, deposits, invoices, and consumer claims legally through India's trusted legal platform. Start your claim online.",
   alternates: {
     canonical: "/",
   },

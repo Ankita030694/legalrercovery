@@ -320,7 +320,7 @@ export default function OnlineNoticeDeliveryClient() {
                 {/* Section 2: Valid Online Channels */}
                 <section id="legally-valid-online-modes" className="scroll-mt-32">
                   <h2 className="text-xl md:text-3xl font-black text-slate-900 mb-5 border-b-2 border-[#DC2626] pb-2 inline-block">
-                    2. Legally Valid Online Delivery Channels: Emails, WhatsApp, and Portals
+                    2. Online Delivery: Email, WhatsApp &amp; Portals
                   </h2>
                   <div className="prose prose-base max-w-none text-slate-650 space-y-6">
                     <p className="text-sm md:text-base leading-relaxed">
@@ -447,7 +447,7 @@ export default function OnlineNoticeDeliveryClient() {
                 {/* Section 7: Multi-Channel Strategy */}
                 <section id="multi-channel-safety" className="scroll-mt-32">
                   <h2 className="text-xl md:text-3xl font-black text-slate-900 mb-5 border-b-2 border-[#DC2626] pb-2 inline-block">
-                    7. The Multi-Channel Strategy: Combining Digital and Physical Notice Service
+                    7. Multi-Channel Notice Delivery Strategy
                   </h2>
                   <div className="prose prose-base max-w-none text-slate-650 space-y-6">
                     <p className="text-sm md:text-base leading-relaxed">
@@ -472,7 +472,7 @@ export default function OnlineNoticeDeliveryClient() {
                 {/* Section 8: Service Evasion & General Clauses */}
                 <section id="notice-evasion-deemed-service" className="scroll-mt-32">
                   <h2 className="text-xl md:text-3xl font-black text-slate-900 mb-5 border-b-2 border-[#DC2626] pb-2 inline-block">
-                    8. Countering Evasion: Refusal of Service and Deemed Service Presumptions
+                    8. Overcoming Service Evasion &amp; Refusal
                   </h2>
                   <div className="prose prose-base max-w-none text-slate-650 space-y-6">
                     <p className="text-sm md:text-base leading-relaxed">

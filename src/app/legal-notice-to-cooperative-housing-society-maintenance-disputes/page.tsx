@@ -3,7 +3,7 @@ import HousingSocietyNoticeClient from "./HousingSocietyNoticeClient";
 
 export const metadata: Metadata = {
   title: "Legal Notice to Housing Society: Maintenance Disputes",
-  description: "Learn how to fight arbitrary maintenance charges, illegal transfer fees, and harassment by RWA management committees. Draft a legal notice to your housing society.",
+  description: "Fight arbitrary maintenance charges, illegal transfer fees, and RWA harassment in India. Draft an enforceable legal notice to your housing society.",
   keywords: [
     "housing society maintenance refund dispute",
     "legal notice to cooperative housing society",

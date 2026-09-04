@@ -3,13 +3,13 @@ import RefundsComplaintsClient from "./RefundsComplaintsClient";
 
 export const metadata: Metadata = {
   title: "Recover Stuck Refunds & Consumer Complaints | LegalRecovery",
-  description: "Exhaustive legal guide on consumer complaints, e-commerce refunds, defective products, deficient services, and warranty disputes in India. Learn legal notice formats, e-Daakhil filing, and NCDRC rules.",
+  description: "Recover e-commerce refunds, defective product costs, and service claim dues in India. Learn legal notice formats, e-Daakhil filing, and consumer rights.",
   alternates: {
     canonical: "/services/refunds-and-consumer-complaints",
   },
   openGraph: {
     title: "Recover Stuck Refunds & Consumer Complaints | LegalRecovery",
-    description: "Exhaustive legal guide on consumer complaints, e-commerce refunds, defective products, deficient services, and warranty disputes in India. Learn legal notice formats, e-Daakhil filing, and NCDRC rules.",
+    description: "Recover e-commerce refunds, defective product costs, and service claim dues in India. Learn legal notice formats, e-Daakhil filing, and consumer rights.",
     type: "article",
     url: "/services/refunds-and-consumer-complaints",
     images: [

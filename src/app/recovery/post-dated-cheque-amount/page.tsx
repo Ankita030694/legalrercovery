@@ -2,8 +2,8 @@ import { Metadata } from "next";
 import PDCAmountClient from "./PDCAmountClient";
 
 export const metadata: Metadata = {
-  title: "Recover Post-Dated Cheque (PDC) Amount in India | LegalRecovery",
-  description: "Struggling to recover dues from a bounced post-dated cheque (PDC) or security cheque? Learn the step-by-step legal process under Section 138 NI Act and CPC.",
+  title: "Recover Post-Dated Cheque Amount | LegalRecovery",
+  description: "Recover dues from a bounced post-dated cheque (PDC) or security cheque. Learn the legal process under Section 138 NI Act and CPC summary suits.",
   keywords: [
     "recover post dated cheque amount",
     "bounced post-dated cheque legal process",

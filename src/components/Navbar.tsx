@@ -39,8 +39,9 @@ export default function Navbar() {
     <>
       <header className="fixed top-0 left-0 right-0 h-20 z-50 bg-white/72 backdrop-blur-md border-b border-[#E5E7EB]/60 flex items-center justify-between px-6 xl:px-12 transition-all gpu-accelerated">
 
-        <a href="/" className="flex items-center select-none">
+        <a href="/" className="flex items-center select-none" aria-label="LegalRecovery Home">
           <img src="/lrlogo.svg" alt="LegalRecovery" className="h-8 sm:h-9 w-auto object-contain" />
+          <span className="sr-only">LegalRecovery Home</span>
         </a>
 
         {/* ── Desktop Nav Links ── */}

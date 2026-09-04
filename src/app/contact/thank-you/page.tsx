@@ -1,5 +1,15 @@
+import type { Metadata } from "next";
 import Link from "next/link";
 import { CheckCircle, ArrowRight } from "lucide-react";
+
+export const metadata: Metadata = {
+  title: "Thank You | Legal Recovery",
+  description:
+    "Thank you for submitting your case details. Our legal recovery experts will review your details and contact you within 24 hours.",
+  alternates: {
+    canonical: "https://www.legalrecovery.in/contact/thank-you",
+  },
+};
 
 export default function ContactThankYouPage() {
   return (

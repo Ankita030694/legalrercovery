@@ -300,7 +300,7 @@ export default function LandlordDepositClient() {
                 {/* Section 1 */}
                 <section id="residential-tenancy-legal-framework" className="scroll-mt-32">
                   <h2 className="text-xl md:text-3xl font-black text-slate-900 mb-5 border-b-2 border-[#DC2626] pb-2 inline-block">
-                    1. The Statutory Landscape: Understanding Tenancy Laws and the Model Tenancy Act, 2021
+                    1. Tenancy Laws &amp; Model Tenancy Act, 2021
                   </h2>
                   <div className="prose prose-base max-w-none text-slate-650 space-y-6 text-sm md:text-base leading-relaxed">
                     <p>
@@ -356,7 +356,7 @@ export default function LandlordDepositClient() {
                 {/* Section 3 */}
                 <section id="wear-and-tear-deduction-rules" className="scroll-mt-32">
                   <h2 className="text-xl md:text-3xl font-black text-slate-900 mb-5 border-b-2 border-[#DC2626] pb-2 inline-block">
-                    3. Permissible Deductions: Normal Wear and Tear vs. Actual Property Damage
+                    3. Normal Wear and Tear vs Property Damage
                   </h2>
                   <div className="prose prose-base max-w-none text-slate-650 space-y-6 text-sm md:text-base leading-relaxed">
                     <p>
@@ -459,7 +459,7 @@ export default function LandlordDepositClient() {
                 {/* Section 5 */}
                 <section id="demand-letter-and-legal-notice" className="scroll-mt-32">
                   <h2 className="text-xl md:text-3xl font-black text-slate-900 mb-5 border-b-2 border-[#DC2626] pb-2 inline-block">
-                    5. The Escalation Pathway: Drafting and Dispatching the Pre-Suit Legal Notice
+                    5. Serving the Pre-Suit Demand Notice
                   </h2>
                   <div className="prose prose-base max-w-none text-slate-650 space-y-6 text-sm md:text-base leading-relaxed">
                     <p>
@@ -497,7 +497,7 @@ export default function LandlordDepositClient() {
                 {/* Section 6 */}
                 <section id="rent-court-tribunal-proceedings" className="scroll-mt-32">
                   <h2 className="text-xl md:text-3xl font-black text-slate-900 mb-5 border-b-2 border-[#DC2626] pb-2 inline-block">
-                    6. Specialized Rental Forums: Rent Authority and Rent Tribunal Procedures
+                    6. Rent Authority &amp; Tribunal Procedures
                   </h2>
                   <div className="prose prose-base max-w-none text-slate-650 space-y-6 text-sm md:text-base leading-relaxed">
                     <p>
@@ -518,7 +518,7 @@ export default function LandlordDepositClient() {
                 {/* Section 7 */}
                 <section id="civil-court-recovery-suits" className="scroll-mt-32">
                   <h2 className="text-xl md:text-3xl font-black text-slate-900 mb-5 border-b-2 border-[#DC2626] pb-2 inline-block">
-                    7. Civil Court Litigation: Summary Suits under Order 37 CPC for Deposit Refunds
+                    7. Civil Suits for Rental Deposit Refunds
                   </h2>
                   <div className="prose prose-base max-w-none text-slate-650 space-y-6 text-sm md:text-base leading-relaxed">
                     <p>

@@ -2,8 +2,8 @@ import { Metadata } from "next";
 import SalaryRecoveryGuideClient from "./SalaryRecoveryGuideClient";
 
 export const metadata: Metadata = {
-  title: "How to Recover Unpaid Salary Legally in India: Complete Guide",
-  description: "Exhaustive legal guide on recovering unpaid salary, FNF settlements, and delayed wages from employers in India. Learn about labour departments, summary suits, and IBC claims.",
+  title: "How to Recover Unpaid Salary Legally in India: Guide",
+  description: "Legal guide on recovering unpaid salary, FNF settlements, and delayed wages in India. Learn about labour departments, summary suits, and legal notices.",
   keywords: [
     "how to recover unpaid salary legally India",
     "unpaid salary recovery legal notice",

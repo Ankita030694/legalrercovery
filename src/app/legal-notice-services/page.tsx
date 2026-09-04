@@ -3,9 +3,9 @@ import Link from "next/link";
 import { noticeLocationData } from "./locationData";
 
 export const metadata = {
-  title: "Legal Notice Services by City | Send Legal Notice Online | Legal Recovery",
+  title: "Legal Notice Services Online & by City | Legal Recovery",
   description:
-    "Send a professional legal notice online from any city in India. Expert advocate-drafted legal notices for unpaid dues, tenant disputes, employment issues, and more. Browse our city-wise legal notice directory.",
+    "Send a professional legal notice online from any city in India. Expert advocate-drafted notices for dues, tenancy, employment, and commercial disputes.",
   alternates: {
     canonical: "https://www.legalrecovery.in/legal-notice-services",
   },
@@ -47,9 +47,9 @@ export default function LegalNoticeServicesByCity() {
               className="bg-white/70 backdrop-blur-sm border border-black/5 hover:border-[#DC2626]/30 p-6 rounded-2xl transition-all duration-300 hover:shadow-[0_8px_30px_rgb(0,0,0,0.04)] group hover:-translate-y-1 block relative overflow-hidden"
             >
               <div className="absolute top-0 left-0 w-1.5 h-full bg-[#DC2626] opacity-0 group-hover:opacity-100 transition-opacity"></div>
-              <h3 className="text-base md:text-lg font-medium text-[#111827] group-hover:text-[#DC2626] transition-colors leading-snug">
+              <p className="text-base md:text-lg font-medium text-[#111827] group-hover:text-[#DC2626] transition-colors leading-snug">
                 {loc.title}
-              </h3>
+              </p>
               <div className="mt-4 flex items-center text-sm text-[#DC2626] font-medium opacity-100 transition-all duration-300">
                 View Details{" "}
                 <span className="ml-1 group-hover:translate-x-1 transition-transform">

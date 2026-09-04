@@ -6,7 +6,7 @@ export const metadata: Metadata = {
       "Legal Recovery Services | Salary, Invoice & Refund Claims",
   },
   description:
-    "Explore legal recovery services for unpaid salary, refunds, security deposits, vendor payments, freelancer dues, airline claims, and consumer complaints across India.",
+    "Explore legal recovery services for unpaid salary, refunds, deposits, vendor invoices, freelancer dues, and consumer complaints across India.",
   alternates: {
     canonical: "/services",
   },

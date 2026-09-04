@@ -2,8 +2,8 @@ import { Metadata } from "next";
 import ConsultancyFeesClient from "./ConsultancyFeesClient";
 
 export const metadata: Metadata = {
-  title: "Recover Unpaid Consultancy Fees & Retainer Dues | LegalRecovery",
-  description: "Struggling to recover unpaid consulting fees, advisory retainers, or professional service dues in India? Learn about contract enforcement, summary suits (Order 37 CPC), and legal notice procedures.",
+  title: "Recover Unpaid Consultancy Fees | LegalRecovery",
+  description: "Struggling to recover unpaid consulting fees or retainers in India? Learn about contract enforcement, Order 37 CPC summary suits, and legal notices.",
   keywords: [
     "recover unpaid consultancy fees India",
     "consulting agreement payment default",

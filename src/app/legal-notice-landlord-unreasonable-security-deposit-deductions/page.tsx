@@ -2,7 +2,7 @@ import { Metadata } from "next";
 import LandlordDeductionsNoticeClient from "./LandlordDeductionsNoticeClient";
 
 export const metadata: Metadata = {
-  title: "Tenant Legal Notice for Unreasonable Landlord Deposit Deductions",
+  title: "Legal Notice: Unreasonable Landlord Deposit Deductions",
   description: "Learn how to challenge landlord deposit deductions in India. Understand tenant rights regarding security deposit painting charges and draft a legal notice.",
   keywords: [
     "landlord deducted painting charges from deposit",

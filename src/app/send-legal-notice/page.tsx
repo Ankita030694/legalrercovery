@@ -2,8 +2,8 @@ import { Metadata } from "next";
 import SendLegalNoticeClient from "./SendLegalNoticeClient";
 
 export const metadata: Metadata = {
-  title: "Send Legal Notice Online in India: Fees, Process & Reply Rules",
-  description: "Exhaustive legal-tech guide to sending a legal notice in India. Learn about statutory requirements, response timelines, consequences of silence, and ODR integrations.",
+  title: "Send Legal Notice Online in India: Fees & Process",
+  description: "Legal guide to sending a legal notice in India. Learn statutory requirements, response timelines, consequences of silence, and ODR integrations.",
   keywords: [
     "send legal notice",
     "send legal notice online india",

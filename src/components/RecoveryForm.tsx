@@ -313,9 +313,9 @@ export const RecoveryForm = () => {
   return (
     <>
       <div className="text-center mb-6">
-        <h2 className="text-xl sm:text-2xl font-black text-[#111827] mb-2 tracking-tight">
+        <p className="text-xl sm:text-2xl font-black text-[#111827] mb-2 tracking-tight">
           {step === 1 ? "Complete Details" : step === 2 ? "Verify Identity" : "Welcome Back!"}
-        </h2>
+        </p>
         <p className="text-xs sm:text-sm text-slate-500 font-semibold">
           {step === 1 
             ? "Enter your details to initiate secure legal recovery setup." 

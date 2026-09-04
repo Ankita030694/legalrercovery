@@ -2,8 +2,8 @@ import { Metadata } from "next";
 import EventPlannerRefundClient from "./EventPlannerRefundClient";
 
 export const metadata: Metadata = {
-  title: "Legal Notice to Event Planner or Wedding Venue for Booking Refund",
-  description: "Learn how to recover advance booking payments from event planners, wedding decorators, or banquet halls in India. Serve a legal notice for venue booking cancellation refunds.",
+  title: "Legal Notice to Event Planner for Venue Booking Refund",
+  description: "Recover advance payments from event planners, decorators, or banquet halls in India. Learn how to serve a legal notice for venue cancellation refunds.",
   keywords: [
     "wedding venue booking refund law india",
     "legal notice to event planner refund",

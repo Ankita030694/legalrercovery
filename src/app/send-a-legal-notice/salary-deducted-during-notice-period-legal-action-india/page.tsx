@@ -5,7 +5,7 @@ const slug = 'send-a-legal-notice/salary-deducted-during-notice-period-legal-act
 const title = 'Legal Notice for Salary Deducted During Notice Period | Legal Action India';
 const description =
   'Employer unlawfully deducting salary during notice period or withholding full and final (FNF) settlement? Send an advocate-vetted statutory legal demand notice under Payment of Wages Act, Code on Wages, and Indian Contract Act for full recovery with interest.';
-const url = `https://legalrecovery.in/${slug}`;
+const url = `https://www.legalrecovery.in/${slug}`;
 const ogImage = `/images/og/salary-deducted-during-notice-period-legal-action-india.jpg`;
 
 export const metadata: Metadata = {

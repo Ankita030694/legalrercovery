@@ -6,7 +6,7 @@ export const metadata: Metadata = {
       "How Legal Recovery Works | Recover Money in Simple Steps",
   },
   description:
-    "Upload proof, start your claim, and recover your money legally through structured legal notices, claim escalation, and professional dispute resolution support.",
+    "Upload proof, start your claim, and recover money legally through structured legal notices, claim escalation, and dispute resolution support in India.",
   alternates: {
     canonical: "/how-it-works",
   },

@@ -301,7 +301,7 @@ export default function FreelancerEvidenceClient() {
                 {/* Section 1 */}
                 <section id="freelance-contractual-existence-proof" className="scroll-mt-32">
                   <h2 className="text-xl md:text-3xl font-black text-slate-900 mb-5 border-b-2 border-[#DC2626] pb-2 inline-block">
-                    1. Establishing the Legal Agreement: Documenting Offer, Acceptance, and Commercial Intent
+                    1. Documenting Offer, Acceptance &amp; Contracts
                   </h2>
                   <div className="prose prose-base max-w-none text-slate-650 space-y-6 text-sm md:text-base leading-relaxed">
                     <p>
@@ -325,7 +325,7 @@ export default function FreelancerEvidenceClient() {
                 {/* Section 2 */}
                 <section id="service-delivery-and-acceptance-records" className="scroll-mt-32">
                   <h2 className="text-xl md:text-3xl font-black text-slate-900 mb-5 border-b-2 border-[#DC2626] pb-2 inline-block">
-                    2. Work Delivery and Milestones: Compiling Airtight Proof of Completion
+                    2. Proving Work Delivery and Milestone Completion
                   </h2>
                   <div className="prose prose-base max-w-none text-slate-650 space-y-6 text-sm md:text-base leading-relaxed">
                     <p>
@@ -346,7 +346,7 @@ export default function FreelancerEvidenceClient() {
                 {/* Section 3 */}
                 <section id="invoice-compliance-and-tax-trails" className="scroll-mt-32">
                   <h2 className="text-xl md:text-3xl font-black text-slate-900 mb-5 border-b-2 border-[#DC2626] pb-2 inline-block">
-                    3. Invoicing and Financial Audits: Matching Invoices with GST and TDS Logs
+                    3. Invoicing Records, GST &amp; TDS Proof
                   </h2>
                   <div className="prose prose-base max-w-none text-slate-650 space-y-6 text-sm md:text-base leading-relaxed">
                     <p>
@@ -400,7 +400,7 @@ export default function FreelancerEvidenceClient() {
                 {/* Section 4 */}
                 <section id="digital-evidence-bsa-certification" className="scroll-mt-32">
                   <h2 className="text-xl md:text-3xl font-black text-slate-900 mb-5 border-b-2 border-[#DC2626] pb-2 inline-block">
-                    4. Electronic Evidence Admissibility: Compliance with Section 63 BSA 2023 Rules
+                    4. Digital Evidence &amp; Section 63 BSA Rules
                   </h2>
                   <div className="prose prose-base max-w-none text-slate-650 space-y-6 text-sm md:text-base leading-relaxed">
                     <p>
@@ -475,7 +475,7 @@ export default function FreelancerEvidenceClient() {
                 {/* Section 6 */}
                 <section id="pre-suit-demands-and-notices" className="scroll-mt-32">
                   <h2 className="text-xl md:text-3xl font-black text-slate-900 mb-5 border-b-2 border-[#DC2626] pb-2 inline-block">
-                    6. Pre-Suit Communication Audit: Preserving Legal Notices and Dispatches
+                    6. Auditing Communications &amp; Notice Proof
                   </h2>
                   <div className="prose prose-base max-w-none text-slate-650 space-y-6 text-sm md:text-base leading-relaxed">
                     <p>
@@ -496,7 +496,7 @@ export default function FreelancerEvidenceClient() {
                 {/* Section 7 */}
                 <section id="quantum-meruit-and-quasi-contract-evidence" className="scroll-mt-32">
                   <h2 className="text-xl md:text-3xl font-black text-slate-900 mb-5 border-b-2 border-[#DC2626] pb-2 inline-block">
-                    7. Proving Quasi-Contractual Entitlement: Section 70 Evidence Standards
+                    7. Section 70 Evidence Standards
                   </h2>
                   <div className="prose prose-base max-w-none text-slate-650 space-y-6 text-sm md:text-base leading-relaxed">
                     <p>
@@ -517,7 +517,7 @@ export default function FreelancerEvidenceClient() {
                 {/* Section 8 */}
                 <section id="evidence-file-compilation-best-practices" className="scroll-mt-32">
                   <h2 className="text-xl md:text-3xl font-black text-slate-900 mb-5 border-b-2 border-[#DC2626] pb-2 inline-block">
-                    8. The Master Evidence File: Structuring Your Case Folder for Litigation
+                    8. Assembling Your Court-Ready Case File
                   </h2>
                   <div className="prose prose-base max-w-none text-slate-650 space-y-6 text-sm md:text-base leading-relaxed">
                     <p>

@@ -3,7 +3,7 @@ import LandlordDepositClient from "./LandlordDepositClient";
 
 export const metadata: Metadata = {
   title: "Recover Rental Security Deposit from Landlord in India",
-  description: "A comprehensive guide on the legal steps to recover a security deposit from a landlord in India. Learn about Model Tenancy Act, Rent Controllers, and Summary Suits.",
+  description: "Legal steps to recover your rental security deposit from a landlord in India. Learn about the Model Tenancy Act, Rent Courts, and Order 37 summary suits.",
   keywords: [
     "recover security deposit landlord india",
     "landlord refusing refund security deposit",

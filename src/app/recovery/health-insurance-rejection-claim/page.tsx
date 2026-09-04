@@ -2,8 +2,8 @@ import { Metadata } from "next";
 import HealthInsuranceRejectionClaimClient from "./HealthInsuranceRejectionClaimClient";
 
 export const metadata: Metadata = {
-  title: "Health Insurance Claim Rejected? Challenge Wrongful Repudiation & Recover Your Amount | LegalRecovery",
-  description: "Has your health insurance claim been wrongfully rejected, delayed, or underpaid by your insurer or TPA? Learn how to challenge the repudiation using IRDAI regulations, the 5-year moratorium shield, Insurance Ombudsman, and Consumer Forums. Recover your full hospitalization amount with expert legal help.",
+  title: "Recover Rejected Health Insurance Claim | LegalRecovery",
+  description: "Health insurance claim rejected or delayed? Challenge repudiations using IRDAI rules, 5-year moratorium shields, Ombudsman, and Consumer Courts.",
   keywords: [
     "health insurance claim rejected India",
     "health insurance repudiation challenge",

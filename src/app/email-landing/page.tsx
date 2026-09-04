@@ -488,9 +488,9 @@ export default function EmailLandingPage() {
               <ShieldCheck className="w-3.5 h-3.5 text-[#DC2626]" />
               <span>India&apos;s #1 Legal-Tech Money Recovery</span>
             </div>
-            <h1 className="text-2xl sm:text-3xl font-black tracking-tight text-[#111827] leading-tight mb-2">
+            <p className="text-2xl sm:text-3xl font-black tracking-tight text-[#111827] leading-tight mb-2">
               Recover Your <span className="text-[#DC2626]">Stuck Money</span> Legally in 15–30 Days.
-            </h1>
+            </p>
             <p className="text-xs sm:text-sm text-[#4B5563] font-medium leading-relaxed mb-3">
               We draft & send <strong className="text-[#111827] font-bold">3 Legal Notices & 1 Police Complaint Draft</strong> at automated 7-day intervals.
             </p>
@@ -507,7 +507,7 @@ export default function EmailLandingPage() {
                     <Scale className="w-3.5 h-3.5" />
                   </div>
                   <div>
-                    <h3 className="text-xs sm:text-sm font-black text-[#111827] tracking-tight">Instant Recovery Setup</h3>
+                    <p className="text-xs sm:text-sm font-black text-[#111827] tracking-tight">Instant Recovery Setup</p>
                     <p className="text-[10px] text-slate-500 font-medium">Takes less than 2 minutes</p>
                   </div>
                 </div>
@@ -558,7 +558,7 @@ export default function EmailLandingPage() {
                     <Check className="w-2.5 h-2.5 stroke-[3]" />
                   </div>
                   <div>
-                    <h4 className="text-[11px] sm:text-xs font-black text-[#111827] leading-tight">{item.title}</h4>
+                    <p className="text-[11px] sm:text-xs font-black text-[#111827] leading-tight">{item.title}</p>
                     <p className="text-[10px] text-slate-500 font-medium leading-tight mt-0.5">{item.desc}</p>
                   </div>
                 </div>
@@ -924,7 +924,7 @@ export default function EmailLandingPage() {
                   <Shield className="w-4 h-4" />
                 </div>
                 <div>
-                  <h4 className="text-xs font-bold text-[#111827]">Advocate-Vetted Notices</h4>
+                  <p className="text-xs font-bold text-[#111827]">Advocate-Vetted Notices</p>
                   <p className="text-[11px] text-[#6B7280] leading-tight mt-0.5">Audited by registered Bar Council advocates.</p>
                 </div>
               </div>
@@ -934,7 +934,7 @@ export default function EmailLandingPage() {
                   <Handshake className="w-4 h-4" />
                 </div>
                 <div>
-                  <h4 className="text-xs font-bold text-[#111827]">Seamless Escalation</h4>
+                  <p className="text-xs font-bold text-[#111827]">Seamless Escalation</p>
                   <p className="text-[11px] text-[#6B7280] leading-tight mt-0.5">Smooth transition to litigation if needed.</p>
                 </div>
               </div>
@@ -1015,7 +1015,7 @@ export default function EmailLandingPage() {
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4 sm:gap-6">
               <div className="bg-white rounded-2xl p-5 border border-slate-200 text-left">
                 <div className="flex items-center justify-between pb-3 mb-3 border-b border-slate-100">
-                  <h4 className="text-xs font-black text-slate-700">Traditional Law Firm</h4>
+                  <p className="text-xs font-black text-slate-700">Traditional Law Firm</p>
                   <span className="text-[10px] font-bold text-red-600 bg-red-50 px-2 py-0.5 rounded">High Cost</span>
                 </div>
 
@@ -1037,7 +1037,7 @@ export default function EmailLandingPage() {
 
               <div className="bg-slate-900 text-white rounded-2xl p-5 border border-slate-700 text-left shadow-md">
                 <div className="flex items-center justify-between pb-3 mb-3 border-b border-slate-700">
-                  <h4 className="text-xs font-black text-white">LegalRecovery.in</h4>
+                  <p className="text-xs font-black text-white">LegalRecovery.in</p>
                   <span className="text-[10px] font-black text-emerald-300 bg-emerald-950 px-2 py-0.5 rounded border border-emerald-500/30">
                     0% Cut
                   </span>

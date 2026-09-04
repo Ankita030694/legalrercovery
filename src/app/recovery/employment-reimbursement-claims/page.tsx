@@ -2,8 +2,8 @@ import { Metadata } from "next";
 import ReimbursementClaimsClient from "./ReimbursementClaimsClient";
 
 export const metadata: Metadata = {
-  title: "Unpaid Employee Expense Reimbursement Recovery | LegalRecovery",
-  description: "Struggling to recover unpaid business travel, relocation, client, or internet expenses from your employer? Learn how to send a legal notice and recover your reimbursement claims.",
+  title: "Recover Employee Expense Reimbursements | LegalRecovery",
+  description: "Struggling to recover unpaid travel or relocation expenses from your employer? Send a legal notice and recover your expense reimbursements in India.",
   keywords: [
     "recover employee business expenses from employer",
     "unpaid travel reimbursement claim legal notice",

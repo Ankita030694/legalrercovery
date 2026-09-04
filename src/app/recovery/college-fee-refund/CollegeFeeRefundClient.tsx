@@ -147,7 +147,7 @@ export default function CollegeFeeRefundClient() {
   };
 
   const tocSections = [
-    { id: "introduction",          title: "Introduction" },
+    { id: "introduction",          title: "Introduction to College Fee Refund Claims" },
     { id: "ugc-refund-slabs",      title: "UGC Mandated Refund Slabs" },
     { id: "aicte-technical-rules", title: "AICTE & Technical Education Rules" },
     { id: "documents-withheld",    title: "Original Documents Held Hostage" },
@@ -221,7 +221,7 @@ export default function CollegeFeeRefundClient() {
 
                 {/* ── Introduction ── */}
                 <section id="introduction" className="scroll-mt-32">
-                  <h2 className="text-xl md:text-3xl font-black text-slate-900 mb-5 border-b-2 border-[#DC2626] pb-2 inline-block">Introduction</h2>
+                  <h2 className="text-xl md:text-3xl font-black text-slate-900 mb-5 border-b-2 border-[#DC2626] pb-2 inline-block">Introduction to College Fee Refund Claims</h2>
                   <div className="space-y-5 text-sm md:text-base text-slate-650 leading-relaxed">
                     <p>
                       Securing admission to a college or university in India is, for most families, the culmination of years of preparation, sacrifice, and financial planning. Whether it is a government engineering college, a private business school, a deemed-to-be university, a medical college, or a law school, the admission fee payment is a high-stakes, high-pressure moment. Families liquidate fixed deposits, take education loans, borrow from relatives, and in some cases sell assets—all to secure a seat that represents their child&apos;s professional future. The fee amounts involved are often substantial: ₹50,000 to ₹5,00,000 for a single year at a private college, and several multiples of that for professional programmes like MBBS, BDS, MBA, or engineering at a premium institution.

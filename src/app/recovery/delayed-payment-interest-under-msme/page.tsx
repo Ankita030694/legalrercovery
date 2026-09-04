@@ -2,8 +2,8 @@ import { Metadata } from "next";
 import MSMEInterestClient from "./MSMEInterestClient";
 
 export const metadata: Metadata = {
-  title: "Calculate & Recover MSME Delayed Payment Interest | LegalRecovery",
-  description: "Outstanding B2B dues? Learn how to calculate and claim statutory compound interest at 3x the RBI bank rate under Section 16 of the MSMED Act, 2006. Understand tax non-deductibility and balance sheet disclosures.",
+  title: "Recover MSME Delayed Payment Interest | LegalRecovery",
+  description: "Calculate and claim compound interest at 3x RBI bank rate under Section 16 MSMED Act for delayed B2B payments in India. Recover your outstanding dues.",
   keywords: [
     "MSME delayed payment interest calculation",
     "Section 16 MSMED Act interest rate",

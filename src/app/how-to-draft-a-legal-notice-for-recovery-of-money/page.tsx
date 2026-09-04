@@ -2,8 +2,8 @@ import { Metadata } from "next";
 import HowToDraftLegalNoticeClient from "./HowToDraftLegalNoticeClient";
 
 export const metadata: Metadata = {
-  title: "How to Draft a Legal Notice for Recovery of Money: Step-by-Step Guide",
-  description: "Learn how to draft a legal notice for recovery of money in India. Step-by-step drafting guide with essential clauses, legal terminology, statutory sections, and formatting rules.",
+  title: "How to Draft a Legal Notice for Money Recovery: Guide",
+  description: "Learn how to draft a legal notice for recovery of money in India. Step-by-step guide with essential clauses, statutory sections, and formatting rules.",
   keywords: [
     "how to draft a legal notice for recovery of money",
     "legal notice drafting format money recovery",

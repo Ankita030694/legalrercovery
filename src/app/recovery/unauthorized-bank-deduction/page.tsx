@@ -3,7 +3,7 @@ import UnauthorizedBankDeductionClient from "./UnauthorizedBankDeductionClient";
 
 export const metadata: Metadata = {
   title: "Recover Unauthorized Bank Deduction in India | LegalRecovery",
-  description: "Has your bank deducted money without your consent? Learn about the RBI guidelines on unauthorized transactions, e-mandate rules, hidden charges recovery, and Ombudsman complaints.",
+  description: "Bank deducted money without your consent? Learn RBI rules on unauthorized transactions, e-mandates, hidden charges recovery, and Ombudsman complaints.",
   keywords: [
     "recover unauthorized bank deduction",
     "unauthorized bank charges refund india",

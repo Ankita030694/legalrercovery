@@ -2,8 +2,8 @@ import { Metadata } from "next";
 import UnpaidBonusClient from "./UnpaidBonusClient";
 
 export const metadata: Metadata = {
-  title: "Recover Unpaid Statutory & Contractual Bonus from Employer | LegalRecovery",
-  description: "Has your employer defaulted on your statutory bonus or contractual performance bonus? Learn your rights under the Payment of Bonus Act, 1965 and get expert legal tech help.",
+  title: "Recover Unpaid Bonus from Employer | LegalRecovery",
+  description: "Employer defaulted on your statutory or performance bonus? Learn your rights under the Payment of Bonus Act, 1965 and get expert legal recovery help.",
   keywords: [
     "recover unpaid bonus from employer",
     "payment of bonus act 1965 employee rights",

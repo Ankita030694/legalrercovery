@@ -2,8 +2,8 @@ import { Metadata } from "next";
 import LegalNoticeRecoverySampleClient from "./LegalNoticeRecoverySampleClient";
 
 export const metadata: Metadata = {
-  title: "Legal Notice for Recovery of Money Sample: Format & Draft Template",
-  description: "Download and view standard Legal Notice formats for recovery of money (friendly loans, unpaid invoices, freelancer dues) in India. Learn how to draft and customize templates legally.",
+  title: "Legal Notice for Recovery of Money Sample & Format",
+  description: "Download Legal Notice formats for recovery of money in India (loans, invoices, freelancer dues). Learn how to draft and customize templates legally.",
   keywords: [
     "legal notice for recovery of money sample",
     "money recovery legal notice format",

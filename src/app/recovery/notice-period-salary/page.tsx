@@ -3,7 +3,7 @@ import NoticePeriodSalaryClient from "./NoticePeriodSalaryClient";
 
 export const metadata: Metadata = {
   title: "Recover Unpaid Notice Period Salary & Dues | LegalRecovery",
-  description: "Struggling to recover notice period salary, compensation in lieu of notice, or FNF dues in India? Learn about state labor laws, summary suits, and legal notices.",
+  description: "Recover unpaid notice period salary, pay in lieu of notice, or FNF dues in India. Learn about labour laws, legal notice drafting, and recovery options.",
   keywords: [
     "recover notice period salary India",
     "payment in lieu of notice recovery",

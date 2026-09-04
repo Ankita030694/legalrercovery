@@ -223,8 +223,8 @@ export default function UnpaidSalaryClient() {
   };
 
   const tocSections = [
-    { id: "introduction", title: "Introduction" },
-    { id: "legal-framework", title: "Legal Framework" },
+    { id: "introduction", title: "Introduction to Unpaid Salary Recovery in India" },
+    { id: "legal-framework", title: "Legal Framework for Recovering Unpaid Salary" },
     { id: "rights-of-employees", title: "Your Rights" },
     { id: "fnf-components", title: "Settlement Components" },
     { id: "pre-legal-steps", title: "Initial Steps" },
@@ -330,7 +330,7 @@ export default function UnpaidSalaryClient() {
               <div className="bg-white p-6 md:p-12 rounded-3xl shadow-sm space-y-12 border border-slate-100">
                                {/* Introduction */}
                 <section id="introduction" className="scroll-mt-32">
-                  <h2 className="text-xl md:text-3xl font-black text-slate-900 mb-5 border-b-2 border-[#DC2626] pb-2 inline-block">Introduction</h2>
+                  <h2 className="text-xl md:text-3xl font-black text-slate-900 mb-5 border-b-2 border-[#DC2626] pb-2 inline-block">Introduction to Unpaid Salary Recovery in India</h2>
                   <div className="prose prose-base max-w-none text-slate-650 space-y-6">
                     <p className="text-sm md:text-base leading-relaxed">
                       Resigning from a job is often the start of a new chapter—a moment of transition that should ideally be marked by mutual respect and professional closure. You expect a smooth handover, a proper farewell, and the timely receipt of your Full and Final (FNF) settlement. However, for a significant number of employees across India—from the tech hubs of Bangalore and Gurugram to the financial centers of Mumbai—this transition turns into a grueling legal battleground. At LegalRecovery, the most frequent and distress-laden query we encounter is: <strong>&quot;What legal recourse do I have if my employer is withholding my salary after my resignation?&quot;</strong>
@@ -352,7 +352,7 @@ export default function UnpaidSalaryClient() {
 
                 {/* Legal Framework */}
                 <section id="legal-framework" className="scroll-mt-32">
-                  <h2 className="text-xl md:text-3xl font-black text-slate-900 mb-5 border-b-2 border-[#DC2626] pb-2 inline-block">Legal Framework</h2>
+                  <h2 className="text-xl md:text-3xl font-black text-slate-900 mb-5 border-b-2 border-[#DC2626] pb-2 inline-block">Legal Framework for Recovering Unpaid Salary</h2>
                   <div className="prose prose-base max-w-none text-slate-650 space-y-6">
                     <p className="text-sm md:text-base leading-relaxed">
                       India's legal system provides a multi-layered shield for employees. Depending on your role, salary, and the nature of your employer's business, several statutes come into play. Understanding which \"lane\" of the law you fall into is the first step toward a successful recovery.

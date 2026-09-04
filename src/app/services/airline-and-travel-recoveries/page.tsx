@@ -3,13 +3,13 @@ import TravelRecoveryClient from "./TravelRecoveryClient";
 
 export const metadata: Metadata = {
   title: "Airline & Travel Dues Recovery | LegalRecovery",
-  description: "Exhaustive legal guide on recovering flight refunds, train booking dues, hotel overcharges, and baggage loss compensation in India under DGCA and Consumer Protection laws.",
+  description: "Recover flight refunds, booking dues, hotel overcharges, and baggage compensation in India under DGCA regulations and Consumer Protection laws.",
   alternates: {
     canonical: "/services/airline-and-travel-recoveries",
   },
   openGraph: {
     title: "Airline & Travel Dues Recovery | LegalRecovery",
-    description: "Exhaustive legal guide on recovering flight refunds, train booking dues, hotel overcharges, and baggage loss compensation in India. Learn DGCA rules, TDR filings, and consumer complaints.",
+    description: "Recover flight refunds, booking dues, hotel overcharges, and baggage compensation in India under DGCA regulations and Consumer Protection laws.",
     type: "article",
     url: "/services/airline-and-travel-recoveries",
     images: [

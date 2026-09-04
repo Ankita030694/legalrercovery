@@ -2,8 +2,8 @@ import { Metadata } from "next";
 import PfAmountClient from "./PfAmountClient";
 
 export const metadata: Metadata = {
-  title: "Employer Not Depositing PF? Recovery Legal Notice | LegalRecovery",
-  description: "Struggling to recover your unpaid Provident Fund (PF) amount from your employer? LegalRecovery provides expert legal-tech assistance to file EPFiGMS complaints and recover your EPF dues.",
+  title: "Recover Unpaid PF from Employer | LegalRecovery",
+  description: "Recover unpaid Provident Fund (PF) from your employer. LegalRecovery helps you file EPFiGMS complaints, serve legal notices, and recover your EPF dues.",
   keywords: [
     "recover unpaid pf from employer",
     "epf non payment complaint epfigms",

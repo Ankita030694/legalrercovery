@@ -2,10 +2,10 @@ import type { Metadata } from "next";
 
 export const metadata: Metadata = {
   title: {
-    absolute: "Recover Your Stuck Money Legally | Advocate Speed Post Notice ₹999 | LegalRecovery",
+    absolute: "Recover Stuck Money Legally | Notice ₹999 | LegalRecovery",
   },
   description:
-    "Recover unpaid salary, freelancer dues, security deposits, unpaid invoices, and consumer refunds legally. Advocate-drafted legal notice dispatched via India Post Speed Post within 24 hours. Flat ₹999, 0% commission.",
+    "Recover unpaid salary, freelancer dues, deposits, and invoices legally. Advocate-drafted legal notice dispatched via Speed Post in 24 hours. Flat ₹999.",
   alternates: {
     canonical: "/email-landing",
   },

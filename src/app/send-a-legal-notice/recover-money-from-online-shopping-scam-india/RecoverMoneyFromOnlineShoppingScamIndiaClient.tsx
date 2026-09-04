@@ -380,39 +380,54 @@ export default function RecoverMoneyFromOnlineShoppingScamIndiaClient() {
                     <span className="text-xs font-semibold text-slate-400 uppercase tracking-wider mr-2">
                       Share:
                     </span>
-                    <a
-                      href={`https://twitter.com/intent/tweet?url=${shareUrl}&text=${shareText}`}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="w-8 h-8 rounded-full bg-black text-white hover:opacity-80 flex items-center justify-center transition-opacity"
+                    <button
+                      type="button"
+                      onClick={() =>
+                        window.open(
+                          `https://twitter.com/intent/tweet?url=${shareUrl}&text=${shareText}`,
+                          '_blank',
+                          'noopener,noreferrer,width=600,height=400'
+                        )
+                      }
+                      className="w-8 h-8 rounded-full bg-black text-white hover:opacity-80 flex items-center justify-center transition-opacity cursor-pointer"
                       aria-label="Share on X (Twitter)"
                     >
                       <svg className="w-4 h-4 fill-current" viewBox="0 0 24 24">
                         <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z" />
                       </svg>
-                    </a>
-                    <a
-                      href={`https://www.facebook.com/sharer/sharer.php?u=${shareUrl}`}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="w-8 h-8 rounded-full bg-[#1877F2] text-white hover:opacity-80 flex items-center justify-center transition-opacity"
+                    </button>
+                    <button
+                      type="button"
+                      onClick={() =>
+                        window.open(
+                          `https://www.facebook.com/sharer/sharer.php?u=${shareUrl}`,
+                          '_blank',
+                          'noopener,noreferrer,width=600,height=400'
+                        )
+                      }
+                      className="w-8 h-8 rounded-full bg-[#1877F2] text-white hover:opacity-80 flex items-center justify-center transition-opacity cursor-pointer"
                       aria-label="Share on Facebook"
                     >
                       <svg className="w-4 h-4 fill-current" viewBox="0 0 24 24">
                         <path d="M9.198 21.5h4v-8.01h3.604l.396-3.98h-4V7.5a1 1 0 0 1 1-1h3v-4h-3a5 5 0 0 0-5 5v2.01h-2l-.396 3.98h2.396v8.01z" />
                       </svg>
-                    </a>
-                    <a
-                      href={`https://www.linkedin.com/shareArticle?mini=true&url=${shareUrl}&title=${encodeURIComponent('How to Recover Money from Online Shopping Scam India | Legal Recovery')}`}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="w-8 h-8 rounded-full bg-[#0A66C2] text-white hover:opacity-80 flex items-center justify-center transition-opacity"
+                    </button>
+                    <button
+                      type="button"
+                      onClick={() =>
+                        window.open(
+                          `https://www.linkedin.com/shareArticle?mini=true&url=${shareUrl}&title=${encodeURIComponent('How to Recover Money from Online Shopping Scam India | Legal Recovery')}`,
+                          '_blank',
+                          'noopener,noreferrer,width=600,height=400'
+                        )
+                      }
+                      className="w-8 h-8 rounded-full bg-[#0A66C2] text-white hover:opacity-80 flex items-center justify-center transition-opacity cursor-pointer"
                       aria-label="Share on LinkedIn"
                     >
                       <svg className="w-4 h-4 fill-current" viewBox="0 0 24 24">
                         <path d="M4.98 3.5c0 1.381-1.11 2.5-2.48 2.5s-2.48-1.119-2.48-2.5c0-1.38 1.11-2.5 2.48-2.5s2.48 1.12 2.48 2.5zm.02 4.5h-5v16h5v-16zm7.982 0h-4.968v16h4.969v-8.399c0-4.67 6.029-5.052 6.029 0v8.399h4.988v-10.131c0-7.88-8.922-7.593-11.018-3.714v-2.155z" />
                       </svg>
-                    </a>
+                    </button>
                   </div>
                 </div>
 
@@ -423,23 +438,13 @@ export default function RecoverMoneyFromOnlineShoppingScamIndiaClient() {
                   </h2>
                   <p className="text-sm text-slate-700 font-medium leading-relaxed">
                     Consumers in India can recover money lost to online shopping scams by immediately dialing the 1930 National Cybercrime helpline within 2 to 24 hours to freeze suspicious fund transfers under the Citizen Financial Cyber Fraud Reporting and Management System. Simultaneously, serving an advocate-vetted statutory legal notice upon the fraudulent merchant and the payment aggregator enforces mandatory refund obligations under the{' '}
-                    <a
-                      href="https://consumeraffairs.nic.in/acts-and-rules/consumer-protection-act-2019"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="text-purple-600 hover:text-purple-800 hover:underline"
-                    >
+                    <strong className="text-slate-900 font-semibold">
                       Consumer Protection (E-Commerce) Rules, 2020
-                    </a>{' '}
+                    </strong>{' '}
                     and Section 318 of the Bharatiya Nyaya Sanhita, 2023. If the merchant fails to refund the defrauded amount within 15 days, the buyer can initiate a bank chargeback under{' '}
-                    <a
-                      href="https://www.rbi.org.in/Scripts/NotificationUser.aspx?Id=11040"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="text-purple-600 hover:text-purple-800 hover:underline"
-                    >
+                    <strong className="text-slate-900 font-semibold">
                       RBI Customer Protection Directives
-                    </a>{' '}
+                    </strong>{' '}
                     and lodge a formal statutory petition on the E-Daakhil consumer court portal for principal recovery, 18% annual interest, and litigation costs.
                   </p>
                 </div>
@@ -937,74 +942,39 @@ export default function RecoverMoneyFromOnlineShoppingScamIndiaClient() {
                   </h3>
                   <ol className="list-decimal list-inside space-y-2 text-xs text-slate-600">
                     <li>
-                      <a
-                        href="https://consumeraffairs.nic.in/acts-and-rules/consumer-protection-act-2019"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="text-purple-600 hover:text-purple-800 hover:underline"
-                      >
+                      <span className="font-semibold text-slate-800">
                         Consumer Protection Act, 2019 &amp; Consumer Protection (E-Commerce) Rules, 2020, consumeraffairs.nic.in
-                      </a>
+                      </span>
                     </li>
                     <li>
-                      <a
-                        href="https://www.indiacode.nic.in/handle/123456789/1999"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="text-purple-600 hover:text-purple-800 hover:underline"
-                      >
+                      <span className="font-semibold text-slate-800">
                         Information Technology Act, 2000 — Sections 43A, 66C, 66D &amp; 79 Intermediary Guidelines, indiacode.nic.in
-                      </a>
+                      </span>
                     </li>
                     <li>
-                      <a
-                        href="https://www.indiacode.nic.in/handle/123456789/20234"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="text-purple-600 hover:text-purple-800 hover:underline"
-                      >
+                      <span className="font-semibold text-slate-800">
                         Bharatiya Nyaya Sanhita, 2023 — Section 316 (Criminal Breach of Trust) &amp; Section 318 (Cheating), indiacode.nic.in
-                      </a>
+                      </span>
                     </li>
                     <li>
-                      <a
-                        href="https://www.rbi.org.in/Scripts/NotificationUser.aspx?Id=11040"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="text-purple-600 hover:text-purple-800 hover:underline"
-                      >
+                      <span className="font-semibold text-slate-800">
                         Reserve Bank of India (RBI) — Limiting Liability of Customers in Unauthorized Electronic Banking Transactions, rbi.org.in
-                      </a>
+                      </span>
                     </li>
                     <li>
-                      <a
-                        href="https://cybercrime.gov.in"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="text-purple-600 hover:text-purple-800 hover:underline"
-                      >
+                      <span className="font-semibold text-slate-800">
                         Ministry of Home Affairs — National Cyber Crime Reporting Portal &amp; 1930 Helpline Framework, cybercrime.gov.in
-                      </a>
+                      </span>
                     </li>
                     <li>
-                      <a
-                        href="https://edaakhil.nic.in"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="text-purple-600 hover:text-purple-800 hover:underline"
-                      >
+                      <span className="font-semibold text-slate-800">
                         National Consumer Disputes Redressal Commission (NCDRC) — E-Daakhil Electronic Filing Portal, edaakhil.nic.in
-                      </a>
+                      </span>
                     </li>
                     <li>
-                      <a
-                        href="https://main.sci.gov.in"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="text-purple-600 hover:text-purple-800 hover:underline"
-                      >
+                      <span className="font-semibold text-slate-800">
                         Supreme Court of India — Landmark E-Commerce &amp; Consumer Protection Precedents, main.sci.gov.in
-                      </a>
+                      </span>
                     </li>
                   </ol>
                 </section>

@@ -231,7 +231,7 @@ export default function CoachingInstituteFeesClient() {
   };
 
   const tocSections = [
-    { id: "introduction", title: "Introduction" },
+    { id: "introduction", title: "Introduction to Coaching Institute Fee Claims" },
     { id: "ccpa-regulatory-framework", title: "CCPA & Regulatory Framework" },
     { id: "valid-refund-grounds", title: "Valid Refund Grounds" },
     { id: "edtech-and-online-coaching", title: "EdTech & Online Coaching" },
@@ -326,7 +326,7 @@ export default function CoachingInstituteFeesClient() {
               <div className="bg-white p-6 md:p-12 rounded-3xl shadow-sm space-y-12 border border-slate-100">
                                {/* Introduction */}
                 <section id="introduction" className="scroll-mt-32">
-                  <h2 className="text-xl md:text-3xl font-black text-slate-900 mb-5 border-b-2 border-[#DC2626] pb-2 inline-block">Introduction</h2>
+                  <h2 className="text-xl md:text-3xl font-black text-slate-900 mb-5 border-b-2 border-[#DC2626] pb-2 inline-block">Introduction to Coaching Institute Fee Claims</h2>
                   <div className="prose prose-base max-w-none text-slate-650 space-y-6">
                     <p className="text-sm md:text-base leading-relaxed">
                       India&apos;s coaching industry is a behemoth—a sprawling, multi-billion-rupee ecosystem that stretches from the dusty lanes of Kota, Rajasthan, to the sleek digital dashboards of Bangalore-based edtech startups. Every year, millions of students and their families pour their life savings, educational loans, and emotional hopes into coaching programmes that promise to crack the country&apos;s most fiercely competitive examinations: IIT-JEE, NEET-UG, UPSC Civil Services, CA, CLAT, CAT, and a growing list of state-level entrance tests. The coaching centre—whether a cramped classroom above a Karol Bagh bookshop or a venture-capital-funded mobile application with millions of downloads—occupies a uniquely powerful position in the Indian educational landscape. It is simultaneously a beacon of aspiration and, for far too many families, a source of devastating financial exploitation. At LegalRecovery, the single most heartbreaking category of consumer complaints we handle involves <strong>coaching institutes and edtech platforms that refuse to refund tuition fees when students have every legal and moral right to demand their money back.</strong>
