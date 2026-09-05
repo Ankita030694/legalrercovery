@@ -277,7 +277,7 @@ export default function SchoolCollegeFeeRefundAdmissionCancellationClient() {
             </span>
             <h1 className="text-3xl md:text-6xl font-black mb-6 leading-tight tracking-tight">
               Legal Notice to School or College for{' '}
-              <span className="text-[#DC2626]">Fee Refund on Admission Cancellation</span>
+              <span className="text-[#DC2626]">Admission Fee Refund</span>
             </h1>
             <p className="text-sm md:text-xl mb-8 md:mb-12 max-w-3xl mx-auto text-slate-300 leading-relaxed font-medium">
               Recover unrefunded tuition fees, capitation deposits, annual developmental charges, and hostel fees from schools, colleges, and deemed universities under UGC Guidelines, AICTE Norms, and Consumer Protection Act 2019.

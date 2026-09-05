@@ -65,7 +65,7 @@ const breadcrumbSchema = {
       "@type": "ListItem",
       "position": 2,
       "name": "Freelancer Unpaid Payments Recovery",
-      "item": "https://www.legalrecovery.in/what-legal-options-does-a-freelancer-in-india-have-to-recover-unpaid-payments-from-a-client"
+      "item": "https://www.legalrecovery.in/freelancer-payment-recovery-legal-options-india"
     }
   ]
 };
@@ -221,7 +221,7 @@ export default function FreelancerRecoveryClient() {
   ];
 
   const breadcrumbItems = [
-    { label: "Freelancer Payment Recovery", href: "/what-legal-options-does-a-freelancer-in-india-have-to-recover-unpaid-payments-from-a-client" }
+    { label: "Freelancer Payment Recovery", href: "/freelancer-payment-recovery-legal-options-india" }
   ];
 
   return (

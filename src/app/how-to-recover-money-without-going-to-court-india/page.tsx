@@ -2,7 +2,7 @@ import { Metadata } from "next";
 import HowToRecoverMoneyWithoutGoingToCourtIndiaClient from "./HowToRecoverMoneyWithoutGoingToCourtIndiaClient";
 
 export const metadata: Metadata = {
-  title: "How to Recover Money Without Going to Court: Fast Legal Options",
+  title: "How to Recover Money Without Going to Court in India",
   description: "Discover pre-litigation strategies, legal notice drafting, and ADR methods to recover your money in India without lengthy civil court battles.",
   keywords: [
     "legal recovery",

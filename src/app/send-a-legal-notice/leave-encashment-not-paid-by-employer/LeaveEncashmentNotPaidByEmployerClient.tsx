@@ -424,41 +424,36 @@ export default function LeaveEncashmentNotPaidByEmployerClient() {
                     <span className="text-xs font-semibold text-slate-400 uppercase tracking-wider mr-2">
                       Share:
                     </span>
-                    <a
-                      href={`https://twitter.com/intent/tweet?url=${shareUrl}&text=${shareText}`}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="w-8 h-8 rounded-full bg-black text-white hover:opacity-80 flex items-center justify-center transition-opacity"
+                    <button
+                      type="button"
+                      onClick={() => window.open(`https://twitter.com/intent/tweet?url=${shareUrl}&text=${shareText}`, '_blank', 'noopener,noreferrer')}
+                      className="w-8 h-8 rounded-full bg-black text-white hover:opacity-80 flex items-center justify-center transition-opacity cursor-pointer"
                       aria-label="Share on X (Twitter)"
                     >
                       <svg className="w-4 h-4 fill-current" viewBox="0 0 24 24">
                         <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z" />
                       </svg>
-                    </a>
-                    <a
-                      href={`https://www.facebook.com/sharer/sharer.php?u=${shareUrl}`}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="w-8 h-8 rounded-full bg-[#1877F2] text-white hover:opacity-80 flex items-center justify-center transition-opacity"
+                    </button>
+                    <button
+                      type="button"
+                      onClick={() => window.open(`https://www.facebook.com/sharer/sharer.php?u=${shareUrl}`, '_blank', 'noopener,noreferrer')}
+                      className="w-8 h-8 rounded-full bg-[#1877F2] text-white hover:opacity-80 flex items-center justify-center transition-opacity cursor-pointer"
                       aria-label="Share on Facebook"
                     >
                       <svg className="w-4 h-4 fill-current" viewBox="0 0 24 24">
                         <path d="M9.198 21.5h4v-8.01h3.604l.396-3.98h-4V7.5a1 1 0 0 1 1-1h3v-4h-3a5 5 0 0 0-5 5v2.01h-2l-.396 3.98h2.396v8.01z" />
                       </svg>
-                    </a>
-                    <a
-                      href={`https://www.linkedin.com/shareArticle?mini=true&url=${shareUrl}&title=${encodeURIComponent(
-                        'Legal Notice to Company for Leave Encashment Not Paid by Employer | Legal Recovery India'
-                      )}`}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="w-8 h-8 rounded-full bg-[#0A66C2] text-white hover:opacity-80 flex items-center justify-center transition-opacity"
+                    </button>
+                    <button
+                      type="button"
+                      onClick={() => window.open(`https://www.linkedin.com/shareArticle?mini=true&url=${shareUrl}&title=${encodeURIComponent('Legal Notice to Company for Leave Encashment Not Paid by Employer | Legal Recovery India')}`, '_blank', 'noopener,noreferrer')}
+                      className="w-8 h-8 rounded-full bg-[#0A66C2] text-white hover:opacity-80 flex items-center justify-center transition-opacity cursor-pointer"
                       aria-label="Share on LinkedIn"
                     >
                       <svg className="w-4 h-4 fill-current" viewBox="0 0 24 24">
                         <path d="M4.98 3.5c0 1.381-1.11 2.5-2.48 2.5s-2.48-1.119-2.48-2.5c0-1.38 1.11-2.5 2.48-2.5s2.48 1.12 2.48 2.5zm.02 4.5h-5v16h5v-16zm7.982 0h-4.968v16h4.969v-8.399c0-4.67 6.029-5.052 6.029 0v8.399h4.988v-10.131c0-7.88-8.922-7.593-11.018-3.714v-2.155z" />
                       </svg>
-                    </a>
+                    </button>
                   </div>
                 </div>
 
@@ -473,49 +468,29 @@ export default function LeaveEncashmentNotPaidByEmployerClient() {
                   <p className="text-sm text-slate-700 font-medium leading-relaxed">
                     An employee, executive, or workman in India can serve an advocate-drafted
                     statutory legal notice to an employer for unpaid leave encashment under{' '}
-                    <a
-                      href="https://www.indiacode.nic.in/handle/123456789/1530"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="text-purple-600 hover:text-purple-800 hover:underline"
-                    >
+                    <span className="font-semibold text-slate-800">
                       Section 79(11) of the Factories Act, 1948
-                    </a>
+                    </span>
                     , the applicable State Shops and Commercial Establishments Act, and{' '}
-                    <a
-                      href="https://www.indiacode.nic.in/handle/123456789/2367"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="text-purple-600 hover:text-purple-800 hover:underline"
-                    >
+                    <span className="font-semibold text-slate-800">
                       Section 15 of the Payment of Wages Act, 1936
-                    </a>
+                    </span>
                     , demanding the release of accumulated earned leave wages within a strict 15-day
                     compliance window. Leave encashment constitutes an accrued statutory property
                     right under Article 300A of the Constitution of India, as reaffirmed by the
                     Supreme Court of India in{' '}
-                    <a
-                      href="https://main.sci.gov.in/judgment/judis/40673.pdf"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="text-purple-600 hover:text-purple-800 hover:underline"
-                    >
+                    <span className="font-semibold text-slate-800">
                       State of Jharkhand v. Jitendra Kumar Srivastava (2013)
-                    </a>
+                    </span>
                     , and cannot be forfeited or withheld through arbitrary internal corporate
                     policies. If the employer fails to disburse the earned leave balance upon
                     resignation, retirement, or termination, the aggrieved employee can initiate
                     recovery proceedings before the Labour Commissioner, file a summary recovery claim
                     under Order 37 of the Code of Civil Procedure, 1908, or petition the Labour Court
                     under{' '}
-                    <a
-                      href="https://www.indiacode.nic.in/handle/123456789/1709"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="text-purple-600 hover:text-purple-800 hover:underline"
-                    >
+                    <span className="font-semibold text-slate-800">
                       Section 33C(2) of the Industrial Disputes Act, 1947
-                    </a>
+                    </span>
                     .
                   </p>
                 </div>
@@ -543,14 +518,9 @@ export default function LeaveEncashmentNotPaidByEmployerClient() {
                     </span>{' '}
                     authoritatively held that terminal employment benefits, including leave encashment
                     and pensionary dues, constitute &ldquo;property&rdquo; under{' '}
-                    <a
-                      href="https://www.indiacode.nic.in/handle/123456789/2187"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="text-purple-600 hover:text-purple-800 hover:underline"
-                    >
+                    <span className="font-semibold text-slate-800">
                       Article 300A of the Constitution of India
-                    </a>
+                    </span>
                     . The Apex Court ruled that an individual cannot be deprived of earned statutory
                     property except by the express authority of law. A company cannot withhold,
                     deplete, or forfeit leave encashment through administrative circulars, subjective HR
@@ -817,14 +787,9 @@ export default function LeaveEncashmentNotPaidByEmployerClient() {
                       </div>
                       <p className="text-xs md:text-sm text-slate-650 leading-relaxed">
                         Aggrieved employees can file a petition under{' '}
-                        <a
-                          href="https://www.indiacode.nic.in/handle/123456789/2367"
-                          target="_blank"
-                          rel="noopener noreferrer"
-                          className="text-purple-600 hover:text-purple-800 hover:underline"
-                        >
+                        <span className="font-semibold text-slate-800">
                           Section 15 of the Payment of Wages Act, 1936
-                        </a>{' '}
+                        </span>{' '}
                         or under the enforcement provisions of the applicable State Shops and
                         Establishments Act. The Labour Inspector or Assistant Labour Commissioner (ALC)
                         issues summons to company directors, conducts conciliation, and has statutory
@@ -844,14 +809,9 @@ export default function LeaveEncashmentNotPaidByEmployerClient() {
                       <p className="text-xs md:text-sm text-slate-650 leading-relaxed">
                         Where an existing statutory or contractual right to leave encashment exists but
                         remains uncomputed or unpaid, a petition under{' '}
-                        <a
-                          href="https://www.indiacode.nic.in/handle/123456789/1709"
-                          target="_blank"
-                          rel="noopener noreferrer"
-                          className="text-purple-600 hover:text-purple-800 hover:underline"
-                        >
+                        <span className="font-semibold text-slate-800">
                           Section 33C(2) of the Industrial Disputes Act, 1947
-                        </a>{' '}
+                        </span>{' '}
                         enables the Labour Court to compute the exact monetary benefit and order direct
                         recovery with penal interest.
                       </p>
@@ -871,14 +831,9 @@ export default function LeaveEncashmentNotPaidByEmployerClient() {
                         encashment backed by written employment contracts, HRMS leave ledgers, and F&amp;F
                         acknowledgments constitutes an actionable liquidated commercial debt. Filing a
                         Summary Suit under{' '}
-                        <a
-                          href="https://www.indiacode.nic.in/handle/123456789/2191"
-                          target="_blank"
-                          rel="noopener noreferrer"
-                          className="text-purple-600 hover:text-purple-800 hover:underline"
-                        >
+                        <span className="font-semibold text-slate-800">
                           Order XXXVII of the Code of Civil Procedure, 1908
-                        </a>{' '}
+                        </span>{' '}
                         disallows frivolous employer defenses and compels expedited recovery decrees.
                       </p>
                     </div>
@@ -895,14 +850,9 @@ export default function LeaveEncashmentNotPaidByEmployerClient() {
                       <p className="text-xs md:text-sm text-slate-650 leading-relaxed">
                         Commercial recovery disputes exceeding ₹3,00,000 in specified value can be
                         channelled through the Commercial Court framework under the{' '}
-                        <a
-                          href="https://www.indiacode.nic.in/handle/123456789/2156"
-                          target="_blank"
-                          rel="noopener noreferrer"
-                          className="text-purple-600 hover:text-purple-800 hover:underline"
-                        >
+                        <span className="font-semibold text-slate-800">
                           Commercial Courts Act, 2015
-                        </a>
+                        </span>
                         , mandating pre-institution mediation under Section 12A via the District Legal
                         Services Authority (DLSA) to enforce fast-track settlement.
                       </p>
@@ -970,14 +920,9 @@ export default function LeaveEncashmentNotPaidByEmployerClient() {
                         <strong className="text-slate-900">Corporate &amp; MCA Verification:</strong>{' '}
                         Active Corporate Identification Number (CIN), registered office address, and active
                         Board of Directors details verified via the{' '}
-                        <a
-                          href="https://www.mca.gov.in/content/mca/global/en/home.html"
-                          target="_blank"
-                          rel="noopener noreferrer"
-                          className="text-purple-600 hover:text-purple-800 hover:underline font-semibold"
-                        >
+                        <span className="font-semibold text-slate-800">
                           Ministry of Corporate Affairs (MCA) Portal
-                        </a>
+                        </span>
                         .
                       </div>
                     </div>
@@ -1156,7 +1101,7 @@ export default function LeaveEncashmentNotPaidByEmployerClient() {
                       <a
                         href="https://www.indiacode.nic.in/handle/123456789/1530"
                         target="_blank"
-                        rel="noopener noreferrer"
+                        rel="nofollow noopener noreferrer"
                         className="text-purple-600 hover:text-purple-800 hover:underline"
                       >
                         Factories Act, 1948 — Section 79 (Annual Leave with Wages) &amp; Section 80 (Wages during Leave Period), indiacode.nic.in
@@ -1164,73 +1109,31 @@ export default function LeaveEncashmentNotPaidByEmployerClient() {
                     </li>
                     <li>
                       <a
-                        href="https://main.sci.gov.in/judgment/judis/40673.pdf"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="text-purple-600 hover:text-purple-800 hover:underline"
-                      >
-                        Supreme Court of India — State of Jharkhand &amp; Ors. v. Jitendra Kumar Srivastava (2013) 12 SCC 210 (Leave Encashment as Property under Article 300A), main.sci.gov.in
-                      </a>
-                    </li>
-                    <li>
-                      <a
-                        href="https://www.indiacode.nic.in/handle/123456789/2367"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="text-purple-600 hover:text-purple-800 hover:underline"
-                      >
-                        Payment of Wages Act, 1936 — Section 2(vi) Definition of Wages &amp; Section 15 Claims Arising Out of Deductions, indiacode.nic.in
-                      </a>
-                    </li>
-                    <li>
-                      <a
-                        href="https://www.indiacode.nic.in/handle/123456789/1709"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="text-purple-600 hover:text-purple-800 hover:underline"
-                      >
-                        Industrial Disputes Act, 1947 — Section 33C(2) Recovery of Money Due from Employer, indiacode.nic.in
-                      </a>
-                    </li>
-                    <li>
-                      <a
                         href="https://labour.gov.in/sites/default/files/the_code_on_wages_2019_no._29_of_2019.pdf"
                         target="_blank"
-                        rel="noopener noreferrer"
+                        rel="nofollow noopener noreferrer"
                         className="text-purple-600 hover:text-purple-800 hover:underline"
                       >
                         Ministry of Labour &amp; Employment — The Code on Wages, 2019 (Act No. 29 of 2019), labour.gov.in
                       </a>
                     </li>
                     <li>
-                      <a
-                        href="https://www.indiacode.nic.in/handle/123456789/2191"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="text-purple-600 hover:text-purple-800 hover:underline"
-                      >
-                        Code of Civil Procedure, 1908 — Order XXXVII Summary Suits for Liquidated Debts, indiacode.nic.in
-                      </a>
+                      Supreme Court of India — State of Jharkhand &amp; Ors. v. Jitendra Kumar Srivastava (2013) 12 SCC 210 (Leave Encashment as Property under Article 300A)
                     </li>
                     <li>
-                      <a
-                        href="https://www.mca.gov.in/content/mca/global/en/home.html"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="text-purple-600 hover:text-purple-800 hover:underline"
-                      >
-                        Ministry of Corporate Affairs (MCA) — Company Master Data &amp; Registered Office Verification, mca.gov.in
-                      </a>
+                      Payment of Wages Act, 1936 — Section 2(vi) Definition of Wages &amp; Section 15 Claims Arising Out of Deductions
                     </li>
                     <li>
-                      <a
-                        href="https://www.indiacode.nic.in/handle/123456789/20234"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="text-purple-600 hover:text-purple-800 hover:underline"
-                      >
-                        Bharatiya Nyaya Sanhita, 2023 — Section 316 (Criminal Breach of Trust) &amp; Section 318 (Cheating), indiacode.nic.in
-                      </a>
+                      Industrial Disputes Act, 1947 — Section 33C(2) Recovery of Money Due from Employer
+                    </li>
+                    <li>
+                      Code of Civil Procedure, 1908 — Order XXXVII Summary Suits for Liquidated Debts
+                    </li>
+                    <li>
+                      Ministry of Corporate Affairs (MCA) — Company Master Data &amp; Registered Office Verification
+                    </li>
+                    <li>
+                      Bharatiya Nyaya Sanhita, 2023 — Section 316 (Criminal Breach of Trust) &amp; Section 318 (Cheating)
                     </li>
                   </ol>
                 </section>

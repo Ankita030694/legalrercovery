@@ -389,44 +389,41 @@ export default function CompanyNotPayingBonusClient() {
                     <span>Last updated: {currentDate}</span>
                   </div>
                   {/* Social Share Buttons (Native Brand Colors) */}
-                  <div className="flex items-center gap-2">
-                    <span className="text-xs font-semibold text-slate-400 uppercase tracking-wider mr-2">
-                      Share:
-                    </span>
-                    <a
-                      href={`https://twitter.com/intent/tweet?url=${shareUrl}&text=${shareText}`}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="w-8 h-8 rounded-full bg-black text-white hover:opacity-80 flex items-center justify-center transition-opacity"
-                      aria-label="Share on X (Twitter)"
-                    >
-                      <svg className="w-4 h-4 fill-current" viewBox="0 0 24 24">
-                        <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z" />
-                      </svg>
-                    </a>
-                    <a
-                      href={`https://www.facebook.com/sharer/sharer.php?u=${shareUrl}`}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="w-8 h-8 rounded-full bg-[#1877F2] text-white hover:opacity-80 flex items-center justify-center transition-opacity"
-                      aria-label="Share on Facebook"
-                    >
-                      <svg className="w-4 h-4 fill-current" viewBox="0 0 24 24">
-                        <path d="M9.198 21.5h4v-8.01h3.604l.396-3.98h-4V7.5a1 1 0 0 1 1-1h3v-4h-3a5 5 0 0 0-5 5v2.01h-2l-.396 3.98h2.396v8.01z" />
-                      </svg>
-                    </a>
-                    <a
-                      href={`https://www.linkedin.com/shareArticle?mini=true&url=${shareUrl}&title=${encodeURIComponent('Send Legal Notice to Company for Not Paying Bonus | Recovery India')}`}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="w-8 h-8 rounded-full bg-[#0A66C2] text-white hover:opacity-80 flex items-center justify-center transition-opacity"
-                      aria-label="Share on LinkedIn"
-                    >
-                      <svg className="w-4 h-4 fill-current" viewBox="0 0 24 24">
-                        <path d="M4.98 3.5c0 1.381-1.11 2.5-2.48 2.5s-2.48-1.119-2.48-2.5c0-1.38 1.11-2.5 2.48-2.5s2.48 1.12 2.48 2.5zm.02 4.5h-5v16h5v-16zm7.982 0h-4.968v16h4.969v-8.399c0-4.67 6.029-5.052 6.029 0v8.399h4.988v-10.131c0-7.88-8.922-7.593-11.018-3.714v-2.155z" />
-                      </svg>
-                    </a>
-                  </div>
+                    <div className="flex items-center gap-2">
+                      <span className="text-xs font-semibold text-slate-400 uppercase tracking-wider mr-2">
+                        Share:
+                      </span>
+                      <button
+                        type="button"
+                        onClick={() => window.open(`https://twitter.com/intent/tweet?url=${shareUrl}&text=${shareText}`, '_blank', 'noopener,noreferrer')}
+                        className="w-8 h-8 rounded-full bg-black text-white hover:opacity-80 flex items-center justify-center transition-opacity cursor-pointer"
+                        aria-label="Share on X (Twitter)"
+                      >
+                        <svg className="w-4 h-4 fill-current" viewBox="0 0 24 24">
+                          <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z" />
+                        </svg>
+                      </button>
+                      <button
+                        type="button"
+                        onClick={() => window.open(`https://www.facebook.com/sharer/sharer.php?u=${shareUrl}`, '_blank', 'noopener,noreferrer')}
+                        className="w-8 h-8 rounded-full bg-[#1877F2] text-white hover:opacity-80 flex items-center justify-center transition-opacity cursor-pointer"
+                        aria-label="Share on Facebook"
+                      >
+                        <svg className="w-4 h-4 fill-current" viewBox="0 0 24 24">
+                          <path d="M9.198 21.5h4v-8.01h3.604l.396-3.98h-4V7.5a1 1 0 0 1 1-1h3v-4h-3a5 5 0 0 0-5 5v2.01h-2l-.396 3.98h2.396v8.01z" />
+                        </svg>
+                      </button>
+                      <button
+                        type="button"
+                        onClick={() => window.open(`https://www.linkedin.com/shareArticle?mini=true&url=${shareUrl}&title=${encodeURIComponent('Send Legal Notice to Company for Not Paying Bonus | Recovery India')}`, '_blank', 'noopener,noreferrer')}
+                        className="w-8 h-8 rounded-full bg-[#0A66C2] text-white hover:opacity-80 flex items-center justify-center transition-opacity cursor-pointer"
+                        aria-label="Share on LinkedIn"
+                      >
+                        <svg className="w-4 h-4 fill-current" viewBox="0 0 24 24">
+                          <path d="M4.98 3.5c0 1.381-1.11 2.5-2.48 2.5s-2.48-1.119-2.48-2.5c0-1.38 1.11-2.5 2.48-2.5s2.48 1.12 2.48 2.5zm.02 4.5h-5v16h5v-16zm7.982 0h-4.968v16h4.969v-8.399c0-4.67 6.029-5.052 6.029 0v8.399h4.988v-10.131c0-7.88-8.922-7.593-11.018-3.714v-2.155z" />
+                        </svg>
+                      </button>
+                    </div>
                 </div>
 
                 {/* ── QUICK ANSWER ──────────────────────────────────────── */}
@@ -436,41 +433,21 @@ export default function CompanyNotPayingBonusClient() {
                   </h2>
                   <p className="text-sm text-slate-700 font-medium leading-relaxed">
                     Under{' '}
-                    <a
-                      href="https://www.indiacode.nic.in/handle/123456789/1513"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="text-purple-600 hover:text-purple-800 hover:underline"
-                    >
+                    <span className="font-semibold text-slate-800">
                       Section 8, Section 10, and Section 19 of the Payment of Bonus Act, 1965
-                    </a>{' '}
+                    </span>{' '}
                     and{' '}
-                    <a
-                      href="https://www.indiacode.nic.in/handle/123456789/2187"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="text-purple-600 hover:text-purple-800 hover:underline"
-                    >
+                    <span className="font-semibold text-slate-800">
                       Section 73 of the Indian Contract Act, 1872
-                    </a>
+                    </span>
                     , an employee who has worked the qualifying period or achieved established performance key performance indicators (KPIs) possesses an enforceable legal right to receive statutory bonus and contractual variable pay. When an employer arbitrarily withholds, delays, or forfeits bonus payments post-resignation or during annual disbursement cycles, serving an advocate-drafted statutory legal notice demands immediate release of the principal sum alongside 18% commercial interest within 15 days. If the employer fails to comply within the notice window, the employee can initiate certificate recovery before the{' '}
-                    <a
-                      href="https://clc.gov.in/"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="text-purple-600 hover:text-purple-800 hover:underline"
-                    >
+                    <span className="font-semibold text-slate-800">
                       Chief Labour Commissioner
-                    </a>{' '}
+                    </span>{' '}
                     under Section 21 of the Payment of Bonus Act, file a wage deduction complaint under{' '}
-                    <a
-                      href="https://www.indiacode.nic.in/handle/123456789/2347"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="text-purple-600 hover:text-purple-800 hover:underline"
-                    >
+                    <span className="font-semibold text-slate-800">
                       Section 15 of the Payment of Wages Act, 1936
-                    </a>
+                    </span>
                     , or file a summary recovery suit under Order 37 of the Code of Civil Procedure, 1908 in civil court.
                   </p>
                 </div>
@@ -490,27 +467,17 @@ export default function CompanyNotPayingBonusClient() {
                 {/* ── SECTION 1: STATUTORY VS CONTRACTUAL BONUS FRAMEWORK ── */}
                 <section id="statutory-framework" className="space-y-6">
                   <h2 className="text-2xl md:text-3xl font-black text-slate-900 leading-tight">
-                    1. Legal Framework: Statutory Bonus vs Contractual Variable Pay under Indian Law
+                    1. Legal Framework: Statutory Bonus vs Contractual Variable Pay
                   </h2>
                   <p className="text-slate-700 leading-relaxed text-sm md:text-base">
                     Corporate bonus disputes in India typically fall into two distinct legal categories: statutory social welfare bonuses governed by the{' '}
-                    <a
-                      href="https://www.indiacode.nic.in/handle/123456789/1513"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="text-purple-600 hover:text-purple-800 hover:underline font-medium"
-                    >
+                    <span className="font-semibold text-slate-800">
                       Payment of Bonus Act, 1965
-                    </a>
+                    </span>
                     , and contractual incentive schemes, performance variable pay, retention bonuses, or sales commissions governed by the{' '}
-                    <a
-                      href="https://www.indiacode.nic.in/handle/123456789/2187"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="text-purple-600 hover:text-purple-800 hover:underline font-medium"
-                    >
+                    <span className="font-semibold text-slate-800">
                       Indian Contract Act, 1872
-                    </a>
+                    </span>
                     . Understanding this legal bifurcation is crucial when drafting a formidable legal demand notice that defeats corporate evasion tactics.
                   </p>
                   <p className="text-slate-700 leading-relaxed text-sm md:text-base">
@@ -573,7 +540,7 @@ export default function CompanyNotPayingBonusClient() {
                 {/* ── SECTION 2: DEBUNKING CORPORATE EXCUSES ──────────────── */}
                 <section id="corporate-excuses-debunked" className="space-y-6">
                   <h2 className="text-2xl md:text-3xl font-black text-slate-900 leading-tight">
-                    2. Debunking Corporate Excuses: "Active Payroll on Disbursement Date" &amp; Resignation Forfeitures
+                    2. Debunking Corporate Excuses: Forfeitures &amp; Payroll Rules
                   </h2>
                   <p className="text-slate-700 leading-relaxed text-sm md:text-base">
                     Human Resource departments in IT services companies, startups, and consulting conglomerates routinely employ standard bureaucratic arguments to withhold earned bonuses from departing employees. These excuses collapse under judicial scrutiny when challenged through an advocate-drafted statutory notice:
@@ -621,7 +588,7 @@ export default function CompanyNotPayingBonusClient() {
                 {/* ── SECTION 3: BONUS CALCULATION MATRIX ─────────────────── */}
                 <section id="bonus-calculation-matrix" className="space-y-6">
                   <h2 className="text-2xl md:text-3xl font-black text-slate-900 leading-tight">
-                    3. Bonus Calculation Matrix: Statutory (8.33% to 20%) &amp; Prorated Variable Pay
+                    3. Bonus Calculation: Statutory (8.33%-20%) &amp; Variable Pay
                   </h2>
                   <p className="text-slate-700 leading-relaxed text-sm md:text-base">
                     Calculating the exact monetary claim before issuing a legal notice is essential. A vague demand allows corporate legal teams to delay proceedings, whereas an itemized calculation with statutory interest components commands immediate compliance.
@@ -688,14 +655,9 @@ export default function CompanyNotPayingBonusClient() {
                   </h2>
                   <p className="text-slate-700 leading-relaxed text-sm md:text-base">
                     Under the{' '}
-                    <a
-                      href="https://www.indiacode.nic.in/handle/123456789/20062"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="text-purple-600 hover:text-purple-800 hover:underline font-medium"
-                    >
+                    <span className="font-semibold text-slate-800">
                       Bharatiya Sakshya Adhiniyam, 2023 (BSA)
-                    </a>
+                    </span>
                     , electronic records including emails, HRMS screenshots, digital appraisal ratings, and WhatsApp correspondence are admissible as primary electronic evidence under Section 63. Before issuing a formal legal notice, compiling an airtight evidentiary dossier ensures immediate leverage during corporate negotiations.
                   </p>
 
@@ -739,7 +701,7 @@ export default function CompanyNotPayingBonusClient() {
                 {/* ── SECTION 5: ESSENTIAL CLAUSES IN A LEGAL NOTICE ──────── */}
                 <section id="essential-clauses" className="space-y-6">
                   <h2 className="text-2xl md:text-3xl font-black text-slate-900 leading-tight">
-                    5. Critical Clauses in an Advocate-Drafted Legal Notice for Unpaid Bonus
+                    5. Critical Clauses in a Legal Notice for Unpaid Bonus
                   </h2>
                   <p className="text-slate-700 leading-relaxed text-sm md:text-base">
                     A poorly drafted legal notice that resembles a generic grievance email is easily dismissed by corporate legal departments. An effective statutory demand notice drafted by an experienced employment advocate must incorporate strict procedural elements:
@@ -796,7 +758,7 @@ export default function CompanyNotPayingBonusClient() {
                 {/* ── SECTION 6: QUASI-JUDICIAL & JUDICIAL ESCALATION ────── */}
                 <section id="judicial-escalation" className="space-y-6">
                   <h2 className="text-2xl md:text-3xl font-black text-slate-900 leading-tight">
-                    6. Quasi-Judicial &amp; Judicial Escalation: Labour Commissioner (Sec 21), Wages Authority &amp; Civil Suits
+                    6. Legal Escalation: Labour Commissioner &amp; Civil Suits
                   </h2>
                   <p className="text-slate-700 leading-relaxed text-sm md:text-base">
                     When an employer fails to comply with the statutory demand notice within 15 days, multiple specialized legal forums are available under Indian law to attach assets and enforce payment:
@@ -948,7 +910,7 @@ export default function CompanyNotPayingBonusClient() {
                       <a
                         href="https://www.indiacode.nic.in/handle/123456789/1513"
                         target="_blank"
-                        rel="noopener noreferrer"
+                        rel="nofollow noopener noreferrer"
                         className="text-purple-600 hover:text-purple-800 hover:underline font-bold block mb-1"
                       >
                         Payment of Bonus Act, 1965 (India Code) →
@@ -959,14 +921,9 @@ export default function CompanyNotPayingBonusClient() {
                     </div>
 
                     <div className="p-3 bg-slate-50 rounded-xl border border-slate-100">
-                      <a
-                        href="https://www.indiacode.nic.in/handle/123456789/2187"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="text-purple-600 hover:text-purple-800 hover:underline font-bold block mb-1"
-                      >
-                        Indian Contract Act, 1872 (India Code) →
-                      </a>
+                      <span className="font-bold text-slate-900 block mb-1">
+                        Indian Contract Act, 1872 (India Code)
+                      </span>
                       <span className="text-slate-500">
                         Section 73 (Compensation for breach of contract) &amp; Section 23 (Agreements contrary to public policy).
                       </span>
@@ -976,7 +933,7 @@ export default function CompanyNotPayingBonusClient() {
                       <a
                         href="https://clc.gov.in/"
                         target="_blank"
-                        rel="noopener noreferrer"
+                        rel="nofollow noopener noreferrer"
                         className="text-purple-600 hover:text-purple-800 hover:underline font-bold block mb-1"
                       >
                         Chief Labour Commissioner (Central) →
@@ -987,14 +944,9 @@ export default function CompanyNotPayingBonusClient() {
                     </div>
 
                     <div className="p-3 bg-slate-50 rounded-xl border border-slate-100">
-                      <a
-                        href="https://www.indiacode.nic.in/handle/123456789/2347"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="text-purple-600 hover:text-purple-800 hover:underline font-bold block mb-1"
-                      >
-                        Payment of Wages Act, 1936 (India Code) →
-                      </a>
+                      <span className="font-bold text-slate-900 block mb-1">
+                        Payment of Wages Act, 1936 (India Code)
+                      </span>
                       <span className="text-slate-500">
                         Section 2(vi) (Definition of Wages including Bonus) &amp; Section 15 (Claims arising out of deductions).
                       </span>

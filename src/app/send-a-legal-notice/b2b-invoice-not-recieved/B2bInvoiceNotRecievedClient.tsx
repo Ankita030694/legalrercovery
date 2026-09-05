@@ -307,15 +307,30 @@ export default function B2bInvoiceNotRecievedClient() {
                   {/* Share Buttons */}
                   <div className="flex items-center gap-2">
                     <span className="text-xs font-semibold text-slate-400 uppercase tracking-wider mr-2">Share:</span>
-                    <a href="https://twitter.com/intent/tweet?url=https%3A%2F%2Flegalrecovery.in%2Fsend-a-legal-notice%2Fb2b-invoice-not-recieved&text=Recover%20unpaid%20B2B%20invoices%20and%20commercial%20bills%20with%20a%20formal%20legal%20notice!%20%23CommercialRecovery" target="_blank" rel="noopener noreferrer" className="w-8 h-8 rounded-full bg-black text-white hover:opacity-80 flex items-center justify-center transition-opacity" aria-label="Share on X (Twitter)">
+                    <button
+                      type="button"
+                      onClick={() => window.open('https://twitter.com/intent/tweet?url=https%3A%2F%2Flegalrecovery.in%2Fsend-a-legal-notice%2Fb2b-invoice-not-recieved&text=Recover%20unpaid%20B2B%20invoices%20and%20commercial%20bills%20with%20a%20formal%20legal%20notice!%20%23CommercialRecovery', '_blank', 'noopener,noreferrer')}
+                      className="w-8 h-8 rounded-full bg-black text-white hover:opacity-80 flex items-center justify-center transition-opacity cursor-pointer"
+                      aria-label="Share on X (Twitter)"
+                    >
                       <svg className="w-4 h-4 fill-current" viewBox="0 0 24 24"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
-                    </a>
-                    <a href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Flegalrecovery.in%2Fsend-a-legal-notice%2Fb2b-invoice-not-recieved" target="_blank" rel="noopener noreferrer" className="w-8 h-8 rounded-full bg-[#1877F2] text-white hover:opacity-80 flex items-center justify-center transition-opacity" aria-label="Share on Facebook">
+                    </button>
+                    <button
+                      type="button"
+                      onClick={() => window.open('https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Flegalrecovery.in%2Fsend-a-legal-notice%2Fb2b-invoice-not-recieved', '_blank', 'noopener,noreferrer')}
+                      className="w-8 h-8 rounded-full bg-[#1877F2] text-white hover:opacity-80 flex items-center justify-center transition-opacity cursor-pointer"
+                      aria-label="Share on Facebook"
+                    >
                       <svg className="w-4 h-4 fill-current" viewBox="0 0 24 24"><path d="M9.198 21.5h4v-8.01h3.604l.396-3.98h-4V7.5a1 1 0 0 1 1-1h3v-4h-3a5 5 0 0 0-5 5v2.01h-2l-.396 3.98h2.396v8.01z"/></svg>
-                    </a>
-                    <a href="https://www.linkedin.com/shareArticle?mini=true&url=https%3A%2F%2Flegalrecovery.in%2Fsend-a-legal-notice%2Fb2b-invoice-not-recieved&title=Legal%20Notice%20for%20B2B%20Invoice%20Not%20Recieved" target="_blank" rel="noopener noreferrer" className="w-8 h-8 rounded-full bg-[#0A66C2] text-white hover:opacity-80 flex items-center justify-center transition-opacity" aria-label="Share on LinkedIn">
+                    </button>
+                    <button
+                      type="button"
+                      onClick={() => window.open('https://www.linkedin.com/shareArticle?mini=true&url=https%3A%2F%2Flegalrecovery.in%2Fsend-a-legal-notice%2Fb2b-invoice-not-recieved&title=Legal%20Notice%20for%20B2B%20Invoice%20Not%20Recieved', '_blank', 'noopener,noreferrer')}
+                      className="w-8 h-8 rounded-full bg-[#0A66C2] text-white hover:opacity-80 flex items-center justify-center transition-opacity cursor-pointer"
+                      aria-label="Share on LinkedIn"
+                    >
                       <svg className="w-4 h-4 fill-current" viewBox="0 0 24 24"><path d="M4.98 3.5c0 1.381-1.11 2.5-2.48 2.5s-2.48-1.119-2.48-2.5c0-1.38 1.11-2.5 2.48-2.5s2.48 1.12 2.48 2.5zm.02 4.5h-5v16h5v-16zm7.982 0h-4.968v16h4.969v-8.399c0-4.67 6.029-5.052 6.029 0v8.399h4.988v-10.131c0-7.88-8.922-7.593-11.018-3.714v-2.155z"/></svg>
-                    </a>
+                    </button>
                   </div>
                 </div>
 
@@ -336,13 +351,13 @@ export default function B2bInvoiceNotRecievedClient() {
                       In the modern Indian economy, business-to-business (B2B) commerce relies upon unsecured trade credit agreements, supply contracts, purchase orders, and tax invoices. When a corporate buyer, wholesaler, distributor, or procurement entity deliberately withholds invoice payment, it creates severe liquidity deficits, disrupts payroll cycles, and jeopardizes vendor viability. Indian commercial jurisprudence establishes rigorous statutory protections designed to curb trade defaults and enforce commercial accountability.
                     </p>
                     <p className="text-sm md:text-base leading-relaxed">
-                      Under Section 15 of the <a href="https://samadhaan.msme.gov.in/" target="_blank" rel="noopener noreferrer" className="text-purple-600 hover:text-purple-800 hover:underline">Micro, Small and Medium Enterprises Development (MSMED) Act, 2006</a>, any buyer purchasing goods or procuring services from an enterprise registered with an Udyam certificate is statutorily obligated to settle payment on or before the mutually agreed credit date, which cannot exceed 45 calendar days under any circumstances. Where no credit tenure is established in writing, Section 15 mandates that payment must be released within 15 calendar days from the date of physical receipt and acceptance of goods or services.
+                      Under Section 15 of the <span className="font-semibold text-slate-800">Micro, Small and Medium Enterprises Development (MSMED) Act, 2006</span>, any buyer purchasing goods or procuring services from an enterprise registered with an Udyam certificate is statutorily obligated to settle payment on or before the mutually agreed credit date, which cannot exceed 45 calendar days under any circumstances. Where no credit tenure is established in writing, Section 15 mandates that payment must be released within 15 calendar days from the date of physical receipt and acceptance of goods or services.
                     </p>
                     <p className="text-sm md:text-base leading-relaxed">
-                      If the buyer defaults beyond the statutory timeline, Section 16 of the MSMED Act imposes a non-derogable obligation to pay compound interest with monthly rests at three times the Reserve Bank of India (RBI) notified bank rate. For commercial transactions outside the MSME framework, Section 73 of the <a href="https://www.indiacode.nic.in/handle/123456789/2187" target="_blank" rel="noopener noreferrer" className="text-purple-600 hover:text-purple-800 hover:underline">Indian Contract Act, 1872</a> entitles the aggrieved supplier to full damages for direct financial losses arising from contractual breach, while the <a href="https://www.indiacode.nic.in/handle/123456789/2398" target="_blank" rel="noopener noreferrer" className="text-purple-600 hover:text-purple-800 hover:underline">Sale of Goods Act, 1930</a> (Sections 45 to 55) guarantees the rights of an unpaid seller to sue for the price of goods delivered and accepted.
+                      If the buyer defaults beyond the statutory timeline, Section 16 of the MSMED Act imposes a non-derogable obligation to pay compound interest with monthly rests at three times the Reserve Bank of India (RBI) notified bank rate. For commercial transactions outside the MSME framework, Section 73 of the <span className="font-semibold text-slate-800">Indian Contract Act, 1872</span> entitles the aggrieved supplier to full damages for direct financial losses arising from contractual breach, while the <span className="font-semibold text-slate-800">Sale of Goods Act, 1930</span> (Sections 45 to 55) guarantees the rights of an unpaid seller to sue for the price of goods delivered and accepted.
                     </p>
                     <p className="text-sm md:text-base leading-relaxed">
-                      Furthermore, Section 12A of the <a href="https://www.indiacode.nic.in/handle/123456789/1362" target="_blank" rel="noopener noreferrer" className="text-purple-600 hover:text-purple-800 hover:underline">Commercial Courts Act, 2015</a> governs pre-institution mediation and expedited commercial recovery suits under Order XXXVII of the Code of Civil Procedure, 1908. Serving a formal advocate-drafted legal notice constitutes the essential foundational milestone that establishes an unassailable evidentiary baseline, calculates statutory interest liabilities, and puts corporate management on notice regarding impending legal and financial exposure.
+                      Furthermore, Section 12A of the <span className="font-semibold text-slate-800">Commercial Courts Act, 2015</span> governs pre-institution mediation and expedited commercial recovery suits under Order XXXVII of the Code of Civil Procedure, 1908. Serving a formal advocate-drafted legal notice constitutes the essential foundational milestone that establishes an unassailable evidentiary baseline, calculates statutory interest liabilities, and puts corporate management on notice regarding impending legal and financial exposure.
                     </p>
                   </div>
                 </section>
@@ -382,7 +397,7 @@ export default function B2bInvoiceNotRecievedClient() {
                         <div>
                           <h4 className="font-extrabold text-slate-900 text-sm">GST Input Tax Credit (ITC) Estoppel &amp; CGST Rule Violations</h4>
                           <p className="text-xs sm:text-sm text-slate-650 leading-relaxed mt-1">
-                            Debtors claiming non-receipt of goods while simultaneously availing tax credits on <a href="https://einvoice1.gst.gov.in/" target="_blank" rel="noopener noreferrer" className="text-purple-600 hover:text-purple-800 hover:underline">GST E-Invoices</a> face complete legal estoppel under Section 16(2) of the CGST Act. Furthermore, failing to pay the supplier within 180 days forces the buyer to reverse ITC with 18% interest under the second proviso to Section 16(2).
+                            Debtors claiming non-receipt of goods while simultaneously availing tax credits on <span className="font-semibold text-slate-800">GST E-Invoices</span> face complete legal estoppel under Section 16(2) of the CGST Act. Furthermore, failing to pay the supplier within 180 days forces the buyer to reverse ITC with 18% interest under the second proviso to Section 16(2).
                           </p>
                         </div>
                       </div>
@@ -392,7 +407,7 @@ export default function B2bInvoiceNotRecievedClient() {
                         <div>
                           <h4 className="font-extrabold text-slate-900 text-sm">Dishonor of Commercial Cheques &amp; Electronic Mandates</h4>
                           <p className="text-xs sm:text-sm text-slate-650 leading-relaxed mt-1">
-                            When commercial debtors issue post-dated cheques or NACH electronic payment mandates that bounce due to insufficient funds, the default transcends civil liability. It creates immediate criminal exposure under Section 138 of the <a href="https://www.indiacode.nic.in/handle/123456789/2189" target="_blank" rel="noopener noreferrer" className="text-purple-600 hover:text-purple-800 hover:underline">Negotiable Instruments Act, 1881</a> and Section 25 of the Payments and Settlement Systems Act, 2007.
+                            When commercial debtors issue post-dated cheques or NACH electronic payment mandates that bounce due to insufficient funds, the default transcends civil liability. It creates immediate criminal exposure under Section 138 of the <span className="font-semibold text-slate-800">Negotiable Instruments Act, 1881</span> and Section 25 of the Payments and Settlement Systems Act, 2007.
                           </p>
                         </div>
                       </div>
@@ -509,7 +524,7 @@ export default function B2bInvoiceNotRecievedClient() {
                           </tr>
                           <tr className="bg-slate-50">
                             <td className="p-3 font-bold text-slate-900">Insolvency Petition (IBC Sec 9)</td>
-                            <td className="p-3"><a href="https://ibbi.gov.in/" target="_blank" rel="noopener noreferrer" className="text-purple-600 hover:text-purple-800 hover:underline">Insolvency &amp; Bankruptcy Code, 2016</a></td>
+                            <td className="p-3"><span className="font-semibold text-slate-800">Insolvency &amp; Bankruptcy Code, 2016</span></td>
                             <td className="p-3">Principal Operational Debt + Agreed Interest</td>
                             <td className="p-3">6 to 14 Months</td>
                             <td className="p-3">Applicable for corporate debts over ₹1 Crore; triggers Corporate Insolvency Resolution (CIRP).</td>
@@ -545,7 +560,7 @@ export default function B2bInvoiceNotRecievedClient() {
                         <div>
                           <h4 className="font-extrabold text-sm sm:text-base text-slate-900 mb-1">Corporate &amp; Director Entity Due Diligence</h4>
                           <p className="text-xs sm:text-sm text-slate-650 leading-relaxed">
-                            Extract official corporate records from the <a href="https://www.mca.gov.in/" target="_blank" rel="noopener noreferrer" className="text-purple-600 hover:text-purple-800 hover:underline">Ministry of Corporate Affairs (MCA)</a> to verify the debtor&apos;s registered office address, CIN/LLPIN, and identity of active managing directors or designated partners for joint and several liability.
+                            Extract official corporate records from the <span className="font-semibold text-slate-800">Ministry of Corporate Affairs (MCA)</span> to verify the debtor&apos;s registered office address, CIN/LLPIN, and identity of active managing directors or designated partners for joint and several liability.
                           </p>
                         </div>
                       </div>
@@ -671,7 +686,7 @@ export default function B2bInvoiceNotRecievedClient() {
 
                 <div className="pt-8 border-t border-slate-100">
                   <p className="text-xs text-slate-400">
-                    References: [1] <a href="https://samadhaan.msme.gov.in/" target="_blank" rel="noopener noreferrer" className="text-purple-600 hover:text-purple-800 hover:underline">Micro, Small and Medium Enterprises Development Act, 2006 (Sections 15-18)</a>. [2] <a href="https://www.indiacode.nic.in/handle/123456789/2187" target="_blank" rel="noopener noreferrer" className="text-purple-600 hover:text-purple-800 hover:underline">Indian Contract Act, 1872 (Section 73 - Compensation for Breach)</a>. [3] <a href="https://www.indiacode.nic.in/handle/123456789/1362" target="_blank" rel="noopener noreferrer" className="text-purple-600 hover:text-purple-800 hover:underline">Commercial Courts Act, 2015 (Pre-Institution Mediation &amp; Summary Suits)</a>. [4] <a href="https://www.indiacode.nic.in/handle/123456789/2189" target="_blank" rel="noopener noreferrer" className="text-purple-600 hover:text-purple-800 hover:underline">Negotiable Instruments Act, 1881 (Section 138)</a>. [5] <a href="https://ibbi.gov.in/" target="_blank" rel="noopener noreferrer" className="text-purple-600 hover:text-purple-800 hover:underline">Insolvency and Bankruptcy Code, 2016 (Section 8 &amp; 9 Operational Debt)</a>. [6] <a href="https://einvoice1.gst.gov.in/" target="_blank" rel="noopener noreferrer" className="text-purple-600 hover:text-purple-800 hover:underline">GST E-Invoice System &amp; E-Way Bill Portal</a>.
+                    References: [1] <a href="https://samadhaan.msme.gov.in/" target="_blank" rel="nofollow noopener noreferrer" className="text-purple-600 hover:text-purple-800 hover:underline">Micro, Small and Medium Enterprises Development Act, 2006 (Sections 15-18)</a>. [2] <a href="https://www.indiacode.nic.in/handle/123456789/2187" target="_blank" rel="nofollow noopener noreferrer" className="text-purple-600 hover:text-purple-800 hover:underline">Indian Contract Act, 1872 (Section 73 - Compensation for Breach)</a>. [3] Commercial Courts Act, 2015 (Pre-Institution Mediation &amp; Summary Suits). [4] Negotiable Instruments Act, 1881 (Section 138). [5] Insolvency and Bankruptcy Code, 2016 (Section 8 &amp; 9 Operational Debt). [6] GST E-Invoice System &amp; E-Way Bill Portal.
                   </p>
                 </div>
               </div>

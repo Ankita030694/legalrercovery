@@ -471,7 +471,7 @@ export default function TradingScamTelegramClient() {
                 {/* ── SECTION 1 ─────────────────────────────────────────── */}
                 <section id="anatomy-of-scam" className="space-y-6">
                   <h2 className="text-2xl md:text-3xl font-black text-slate-900 tracking-tight">
-                    1. Anatomy of Telegram Trading Scams: Clone Apps, Institutional Traps &amp; Mule Rings
+                    1. Anatomy of Telegram Trading Scams: Clone Apps &amp; Mule Rings
                   </h2>
                   <p className="text-slate-650 leading-relaxed text-sm md:text-base">
                     Organized financial cyber syndicates operate heavily across encrypted messaging applications, orchestrating sophisticated investment deceptions designed to exploit retail investors seeking abnormal market returns. The operational architecture of a Telegram trading scam typically unfolds across structured psychological and technological stages:
@@ -530,7 +530,7 @@ export default function TradingScamTelegramClient() {
                 {/* ── SECTION 2 ─────────────────────────────────────────── */}
                 <section id="statutory-framework" className="space-y-6">
                   <h2 className="text-2xl md:text-3xl font-black text-slate-900 tracking-tight">
-                    2. Statutory Framework: BNS 318(4), IT Act 66D &amp; SEBI PFUTP Regulations
+                    2. Statutory Framework: BNS, IT Act &amp; SEBI Regulations
                   </h2>
                   <p className="text-slate-650 leading-relaxed text-sm md:text-base">
                     A legally sound notice for Telegram investment fraud must invoke substantive criminal, cyber, and securities statutes to establish strict liability, fraudulent inducement, and regulatory violations:
@@ -574,7 +574,7 @@ export default function TradingScamTelegramClient() {
                 {/* ── SECTION 3 ─────────────────────────────────────────── */}
                 <section id="mule-bank-liability" className="space-y-6">
                   <h2 className="text-2xl md:text-3xl font-black text-slate-900 tracking-tight">
-                    3. Beneficiary Mule Accounts: Legal Demand &amp; Statutory Notice to Account Holders
+                    3. Beneficiary Mule Accounts: Notice to Account Holders
                   </h2>
                   <p className="text-slate-650 leading-relaxed text-sm md:text-base">
                     In almost all Telegram trading deceptions, the actual mastermind remains concealed behind virtual private networks (VPNs) and offshore identities. However, the domestic bank accounts into which the victim transferred funds are registered to identifiable Indian citizens and corporate entities. Serving a statutory legal demand notice directly to these beneficiary account holders is a potent legal tactic:
@@ -651,7 +651,7 @@ export default function TradingScamTelegramClient() {
                 {/* ── SECTION 5 ─────────────────────────────────────────── */}
                 <section id="telegram-intermediary-notice" className="space-y-6">
                   <h2 className="text-2xl md:text-3xl font-black text-slate-900 tracking-tight">
-                    5. Intermediary Liability: Serving Legal Notice to Telegram under IT Rules, 2021
+                    5. Intermediary Liability: Notice to Telegram under IT Rules
                   </h2>
                   <p className="text-slate-650 leading-relaxed text-sm md:text-base">
                     While messaging platforms frequently invoke &quot;safe harbor&quot; immunity under Section 79 of the Information Technology Act, 2000, that protection is strictly conditional and subject to active compliance with the Information Technology (Intermediary Guidelines and Digital Media Ethics Code) Rules, 2021:

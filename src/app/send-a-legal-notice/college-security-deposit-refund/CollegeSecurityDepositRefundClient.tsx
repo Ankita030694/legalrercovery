@@ -238,13 +238,13 @@ export default function CollegeSecurityDepositRefundClient() {
   };
 
   const tocSections = [
-    { id: 'statutory-mandate', title: '1. UGC & AICTE Guidelines on Caution Money & Security Deposit Refunds' },
-    { id: 'legal-character', title: '2. Legal Nature of Caution Money: Fiduciary Bailment vs. Unlawful Enrichment' },
+    { id: 'statutory-mandate', title: '1. Statutory Rights: UGC & AICTE Caution Money Refund Rules' },
+    { id: 'legal-character', title: '2. Legal Nature of Caution Money: Bailment vs Unlawful Enrichment' },
     { id: 'common-violations', title: '3. Illegal Retention Excuses & Unfair Trade Practices by Colleges' },
     { id: 'evidentiary-checklist', title: '4. Evidentiary Checklist: Documents, Receipts & No-Dues Clearances' },
     { id: 'notice-anatomy', title: '5. Key Clauses in a Statutory Demand Notice to University/College' },
-    { id: 'legal-remedies-matrix', title: '6. Multi-Forum Remedies: Consumer Court, UGC Grievance, Summary Suit & BNS' },
-    { id: 'step-by-step-guide', title: '7. Step-by-Step Strategic Roadmap to Recover Withheld Caution Deposits' },
+    { id: 'legal-remedies-matrix', title: '6. Legal Remedies: Consumer Court, UGC Grievance & BNS Sanctions' },
+    { id: 'step-by-step-guide', title: '7. Step-by-Step Strategic Roadmap to Recover Caution Deposits' },
     { id: 'faqs', title: '8. Frequently Asked Questions' },
   ];
 
@@ -394,44 +394,41 @@ export default function CollegeSecurityDepositRefundClient() {
                     <span>Last updated: {currentDate}</span>
                   </div>
                   {/* Social Share Buttons (Native Brand Colors) */}
-                  <div className="flex items-center gap-2">
-                    <span className="text-xs font-semibold text-slate-400 uppercase tracking-wider mr-2">
-                      Share:
-                    </span>
-                    <a
-                      href={`https://twitter.com/intent/tweet?url=${shareUrl}&text=${shareText}`}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="w-8 h-8 rounded-full bg-black text-white hover:opacity-80 flex items-center justify-center transition-opacity"
-                      aria-label="Share on X (Twitter)"
-                    >
-                      <svg className="w-4 h-4 fill-current" viewBox="0 0 24 24">
-                        <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z" />
-                      </svg>
-                    </a>
-                    <a
-                      href={`https://www.facebook.com/sharer/sharer.php?u=${shareUrl}`}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="w-8 h-8 rounded-full bg-[#1877F2] text-white hover:opacity-80 flex items-center justify-center transition-opacity"
-                      aria-label="Share on Facebook"
-                    >
-                      <svg className="w-4 h-4 fill-current" viewBox="0 0 24 24">
-                        <path d="M9.198 21.5h4v-8.01h3.604l.396-3.98h-4V7.5a1 1 0 0 1 1-1h3v-4h-3a5 5 0 0 0-5 5v2.01h-2l-.396 3.98h2.396v8.01z" />
-                      </svg>
-                    </a>
-                    <a
-                      href={`https://www.linkedin.com/shareArticle?mini=true&url=${shareUrl}&title=${encodeURIComponent('Legal Notice to College for Not Paying Security Deposit | Legal Recovery India')}`}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="w-8 h-8 rounded-full bg-[#0A66C2] text-white hover:opacity-80 flex items-center justify-center transition-opacity"
-                      aria-label="Share on LinkedIn"
-                    >
-                      <svg className="w-4 h-4 fill-current" viewBox="0 0 24 24">
-                        <path d="M4.98 3.5c0 1.381-1.11 2.5-2.48 2.5s-2.48-1.119-2.48-2.5c0-1.38 1.11-2.5 2.48-2.5s2.48 1.12 2.48 2.5zm.02 4.5h-5v16h5v-16zm7.982 0h-4.968v16h4.969v-8.399c0-4.67 6.029-5.052 6.029 0v8.399h4.988v-10.131c0-7.88-8.922-7.593-11.018-3.714v-2.155z" />
-                      </svg>
-                    </a>
-                  </div>
+                    <div className="flex items-center gap-2">
+                      <span className="text-xs font-semibold text-slate-400 uppercase tracking-wider mr-2">
+                        Share:
+                      </span>
+                      <button
+                        type="button"
+                        onClick={() => window.open(`https://twitter.com/intent/tweet?url=${shareUrl}&text=${shareText}`, '_blank', 'noopener,noreferrer')}
+                        className="w-8 h-8 rounded-full bg-black text-white hover:opacity-80 flex items-center justify-center transition-opacity cursor-pointer"
+                        aria-label="Share on X (Twitter)"
+                      >
+                        <svg className="w-4 h-4 fill-current" viewBox="0 0 24 24">
+                          <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z" />
+                        </svg>
+                      </button>
+                      <button
+                        type="button"
+                        onClick={() => window.open(`https://www.facebook.com/sharer/sharer.php?u=${shareUrl}`, '_blank', 'noopener,noreferrer')}
+                        className="w-8 h-8 rounded-full bg-[#1877F2] text-white hover:opacity-80 flex items-center justify-center transition-opacity cursor-pointer"
+                        aria-label="Share on Facebook"
+                      >
+                        <svg className="w-4 h-4 fill-current" viewBox="0 0 24 24">
+                          <path d="M9.198 21.5h4v-8.01h3.604l.396-3.98h-4V7.5a1 1 0 0 1 1-1h3v-4h-3a5 5 0 0 0-5 5v2.01h-2l-.396 3.98h2.396v8.01z" />
+                        </svg>
+                      </button>
+                      <button
+                        type="button"
+                        onClick={() => window.open(`https://www.linkedin.com/shareArticle?mini=true&url=${shareUrl}&title=${encodeURIComponent('Legal Notice to College for Not Paying Security Deposit | Legal Recovery India')}`, '_blank', 'noopener,noreferrer')}
+                        className="w-8 h-8 rounded-full bg-[#0A66C2] text-white hover:opacity-80 flex items-center justify-center transition-opacity cursor-pointer"
+                        aria-label="Share on LinkedIn"
+                      >
+                        <svg className="w-4 h-4 fill-current" viewBox="0 0 24 24">
+                          <path d="M4.98 3.5c0 1.381-1.11 2.5-2.48 2.5s-2.48-1.119-2.48-2.5c0-1.38 1.11-2.5 2.48-2.5s2.48 1.12 2.48 2.5zm.02 4.5h-5v16h5v-16zm7.982 0h-4.968v16h4.969v-8.399c0-4.67 6.029-5.052 6.029 0v8.399h4.988v-10.131c0-7.88-8.922-7.593-11.018-3.714v-2.155z" />
+                        </svg>
+                      </button>
+                    </div>
                 </div>
 
                 {/* ── QUICK ANSWER ──────────────────────────────────────── */}
@@ -441,68 +438,33 @@ export default function CollegeSecurityDepositRefundClient() {
                   </h2>
                   <p className="text-sm text-slate-700 font-medium leading-relaxed">
                     A student or parent can issue an advocate-drafted statutory legal notice to a college, private university, or educational institute under{' '}
-                    <a
-                      href="https://www.indiacode.nic.in/handle/123456789/2187"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="text-purple-600 hover:text-purple-800 hover:underline"
-                    >
+                    <span className="font-semibold text-slate-800">
                       Section 70 and Section 73 of the Indian Contract Act, 1872
-                    </a>
+                    </span>
                     , read with binding{' '}
-                    <a
-                      href="https://www.ugc.gov.in/"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="text-purple-600 hover:text-purple-800 hover:underline"
-                    >
+                    <span className="font-semibold text-slate-800">
                       University Grants Commission (UGC) Fee Refund Guidelines
-                    </a>
+                    </span>
                     ,{' '}
-                    <a
-                      href="https://www.aicte-india.org/"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="text-purple-600 hover:text-purple-800 hover:underline"
-                    >
+                    <span className="font-semibold text-slate-800">
                       AICTE Approval Process Regulations
-                    </a>
+                    </span>
                     , and{' '}
-                    <a
-                      href="https://consumeraffairs.nic.in/"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="text-purple-600 hover:text-purple-800 hover:underline"
-                    >
+                    <span className="font-semibold text-slate-800">
                       Section 2(11) of the Consumer Protection Act, 2019
-                    </a>
+                    </span>
                     , demanding the immediate refund of withheld caution money, laboratory deposits, and hostel security deposits within a mandatory 15-day settlement period. Under Indian law and landmark{' '}
-                    <a
-                      href="http://ncdrc.nic.in/"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="text-purple-600 hover:text-purple-800 hover:underline"
-                    >
+                    <span className="font-semibold text-slate-800">
                       National Consumer Disputes Redressal Commission (NCDRC)
-                    </a>{' '}
+                    </span>{' '}
                     judgments, educational institutions cannot lawfully forfeit or retain caution deposits once a student has vacated the premises or graduated and submitted an approved No-Dues Clearance Certificate. If the educational trust or college management fails to release the principal deposit amount alongside 9% to 18% statutory interest within the stipulated 15 days, the student can initiate digital fast-track litigation through the{' '}
-                    <a
-                      href="https://edaakhil.nic.in/"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="text-purple-600 hover:text-purple-800 hover:underline"
-                    >
+                    <span className="font-semibold text-slate-800">
                       National Consumer E-Daakhil Portal
-                    </a>
+                    </span>
                     , file a formal regulatory complaint before the UGC Anti-Retention Grievance Cell, or institute a summary suit under{' '}
-                    <a
-                      href="https://www.indiacode.nic.in/handle/123456789/2191"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="text-purple-600 hover:text-purple-800 hover:underline"
-                    >
+                    <span className="font-semibold text-slate-800">
                       Order 37 of the Code of Civil Procedure, 1908
-                    </a>
+                    </span>
                     .
                   </p>
                 </div>
@@ -522,30 +484,20 @@ export default function CollegeSecurityDepositRefundClient() {
                 {/* ── SECTION 1: STATUTORY MANDATE ──────────────────────── */}
                 <section id="statutory-mandate" className="space-y-6">
                   <h2 className="text-2xl md:text-3xl font-black text-slate-900 leading-tight">
-                    1. Statutory Rights: UGC &amp; AICTE Guidelines on Caution Money &amp; Security Deposit Refunds
+                    1. Statutory Rights: UGC &amp; AICTE Caution Money Refund Rules
                   </h2>
                   <p className="text-slate-700 leading-relaxed text-sm md:text-base">
                     Every academic year across India, millions of undergraduate, postgraduate, engineering, and medical students pay substantial upfront deposits designated under nomenclatures such as &quot;Institutional Caution Money,&quot; &quot;Hostel Security Deposit,&quot; &quot;Laboratory Breakage Fund,&quot; or &quot;Central Library Caution Deposit.&quot; By regulatory definition, these deposits are strictly caution funds held in fiduciary trust by the academic body to cover contingent physical damages to institutional infrastructure during the student&apos;s tenure. Upon completion of the academic degree or upon formally vacating university premises with a certified No-Dues Clearance, the educational institution is under an absolute statutory obligation to refund 100% of the caution money.
                   </p>
                   <p className="text-slate-700 leading-relaxed text-sm md:text-base">
                     The{' '}
-                    <a
-                      href="https://www.ugc.gov.in/"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="text-purple-600 hover:text-purple-800 hover:underline"
-                    >
+                    <span className="font-semibold text-slate-800">
                       University Grants Commission (UGC) Public Notice on Fee Refund and Non-Retention of Original Certificates
-                    </a>{' '}
+                    </span>{' '}
                     and the{' '}
-                    <a
-                      href="https://www.aicte-india.org/"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="text-purple-600 hover:text-purple-800 hover:underline"
-                    >
+                    <span className="font-semibold text-slate-800">
                       All India Council for Technical Education (AICTE) Approval Process Handbook (Clause 8.2)
-                    </a>{' '}
+                    </span>{' '}
                     lay down unequivocal statutory mandates governing higher education institutions:
                   </p>
 
@@ -597,39 +549,24 @@ export default function CollegeSecurityDepositRefundClient() {
                 {/* ── SECTION 2: LEGAL CHARACTER & BAILMENT ────────────── */}
                 <section id="legal-character" className="space-y-6">
                   <h2 className="text-2xl md:text-3xl font-black text-slate-900 leading-tight">
-                    2. Legal Nature of Caution Money: Fiduciary Bailment vs. Unlawful Enrichment
+                    2. Legal Nature of Caution Money: Bailment vs. Unlawful Enrichment
                   </h2>
                   <p className="text-slate-700 leading-relaxed text-sm md:text-base">
                     From the standpoint of Indian jurisprudence, security deposits and caution funds hold a distinct legal status separate from academic tuition or service fees. When a student remits caution money at the time of college admission, a statutory relationship of <em>fiduciary bailment</em> is established under{' '}
-                    <a
-                      href="https://www.indiacode.nic.in/handle/123456789/2187"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="text-purple-600 hover:text-purple-800 hover:underline"
-                    >
+                    <span className="font-semibold text-slate-800">
                       Section 148 of the Indian Contract Act, 1872
-                    </a>
+                    </span>
                     . The college acts as a bailee entrusted with specific funds for a conditional purpose—namely, indemnification against verified physical breakages. Under{' '}
-                    <a
-                      href="https://www.indiacode.nic.in/handle/123456789/2187"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="text-purple-600 hover:text-purple-800 hover:underline"
-                    >
+                    <span className="font-semibold text-slate-800">
                       Section 160 of the Indian Contract Act
-                    </a>
+                    </span>
                     , the bailee is under a strict legal duty to return the bailed money to the bailor without demand as soon as the purpose for which it was bailed has been accomplished.
                   </p>
                   <p className="text-slate-700 leading-relaxed text-sm md:text-base">
                     Furthermore, under{' '}
-                    <a
-                      href="https://www.indiacode.nic.in/handle/123456789/2187"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="text-purple-600 hover:text-purple-800 hover:underline"
-                    >
+                    <span className="font-semibold text-slate-800">
                       Section 70 of the Indian Contract Act, 1872
-                    </a>
+                    </span>
                     , where a party delivers funds to another not intending to do so gratuitously, and the recipient enjoys the commercial benefit thereof, the recipient is legally bound to make compensation or restore the sum in full. Withholding caution money transforms the institution&apos;s possession into <em>unjust enrichment</em> and an illegal appropriation of student capital.
                   </p>
 
@@ -677,14 +614,9 @@ export default function CollegeSecurityDepositRefundClient() {
                   </h2>
                   <p className="text-slate-700 leading-relaxed text-sm md:text-base">
                     When graduating students or parents approach the accounts and administrative offices of colleges to claim their security deposits, administrative staff frequently present fabricated hurdles. Under{' '}
-                    <a
-                      href="https://consumeraffairs.nic.in/"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="text-purple-600 hover:text-purple-800 hover:underline"
-                    >
+                    <span className="font-semibold text-slate-800">
                       Section 2(47) of the Consumer Protection Act, 2019
-                    </a>
+                    </span>
                     , these administrative tactics constitute actionable <em>Unfair Trade Practices</em> and <em>Deficiency in Service</em>:
                   </p>
 
@@ -734,14 +666,9 @@ export default function CollegeSecurityDepositRefundClient() {
                   </h2>
                   <p className="text-slate-700 leading-relaxed text-sm md:text-base">
                     Before serving a statutory legal notice on a college administration, assembling a watertight evidentiary paper trail is vital. Under the{' '}
-                    <a
-                      href="https://www.indiacode.nic.in/handle/123456789/2187"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="text-purple-600 hover:text-purple-800 hover:underline"
-                    >
+                    <span className="font-semibold text-slate-800">
                       Bharatiya Sakshya Adhiniyam, 2023 (BSA)
-                    </a>{' '}
+                    </span>{' '}
                     and the Consumer Protection Act, contemporaneous electronic records, bank statements, and administrative clearances establish an indisputable prima facie case of financial default.
                   </p>
 
@@ -876,7 +803,7 @@ export default function CollegeSecurityDepositRefundClient() {
                 {/* ── SECTION 6: LEGAL REMEDIES MATRIX ──────────────────── */}
                 <section id="legal-remedies-matrix" className="space-y-6">
                   <h2 className="text-2xl md:text-3xl font-black text-slate-900 leading-tight">
-                    6. Multi-Forum Remedies: Consumer Court, UGC Grievance, Summary Suit &amp; BNS
+                    6. Legal Remedies: Consumer Court, UGC Grievance &amp; BNS Sanctions
                   </h2>
                   <p className="text-slate-700 leading-relaxed text-sm md:text-base">
                     If the educational institution fails to disburse the caution money within the 15-day peremptory notice window, the served legal notice unlocks four distinct, high-impact legal recovery avenues:
@@ -896,14 +823,7 @@ export default function CollegeSecurityDepositRefundClient() {
                       <tbody className="divide-y divide-slate-200 bg-white">
                         <tr className="hover:bg-slate-50">
                           <td className="p-4 font-bold text-slate-900">
-                            <a
-                              href="https://edaakhil.nic.in/"
-                              target="_blank"
-                              rel="noopener noreferrer"
-                              className="text-purple-600 hover:text-purple-800 hover:underline"
-                            >
-                              District Consumer Disputes Redressal Commission (DCDRC / E-Daakhil)
-                            </a>
+                            District Consumer Disputes Redressal Commission (DCDRC / E-Daakhil)
                           </td>
                           <td className="p-4 text-slate-700">
                             Section 35, Consumer Protection Act, 2019 (Deficiency in Service &amp; Unfair Trade Practice)
@@ -918,14 +838,7 @@ export default function CollegeSecurityDepositRefundClient() {
                         </tr>
                         <tr className="hover:bg-slate-50">
                           <td className="p-4 font-bold text-slate-900">
-                            <a
-                              href="https://www.ugc.gov.in/"
-                              target="_blank"
-                              rel="noopener noreferrer"
-                              className="text-purple-600 hover:text-purple-800 hover:underline"
-                            >
-                              UGC e-Samadhan Grievance Redressal Portal
-                            </a>
+                            UGC e-Samadhan Grievance Redressal Portal
                           </td>
                           <td className="p-4 text-slate-700">
                             UGC (Grievance Redressal) Regulations &amp; Fee Refund Mandates
@@ -940,14 +853,7 @@ export default function CollegeSecurityDepositRefundClient() {
                         </tr>
                         <tr className="hover:bg-slate-50">
                           <td className="p-4 font-bold text-slate-900">
-                            <a
-                              href="https://www.indiacode.nic.in/handle/123456789/2191"
-                              target="_blank"
-                              rel="noopener noreferrer"
-                              className="text-purple-600 hover:text-purple-800 hover:underline"
-                            >
-                              Civil Court (Summary Suit under Order 37 CPC)
-                            </a>
+                            Civil Court (Summary Suit under Order 37 CPC)
                           </td>
                           <td className="p-4 text-slate-700">
                             Order 37, Code of Civil Procedure, 1908 (Liquidated Debt on Written Receipts)
@@ -965,14 +871,9 @@ export default function CollegeSecurityDepositRefundClient() {
                             Criminal Complaint / Police FIR
                           </td>
                           <td className="p-4 text-slate-700">
-                            <a
-                              href="https://www.indiacode.nic.in/handle/123456789/2187"
-                              target="_blank"
-                              rel="noopener noreferrer"
-                              className="text-purple-600 hover:text-purple-800 hover:underline"
-                            >
+                            <span className="font-semibold text-slate-800">
                               Section 316 &amp; 318 of Bharatiya Nyaya Sanhita, 2023 (BNS)
-                            </a>
+                            </span>
                           </td>
                           <td className="p-4 text-slate-700">Immediate Action</td>
                           <td className="p-4 text-slate-700">
@@ -990,7 +891,7 @@ export default function CollegeSecurityDepositRefundClient() {
                 {/* ── SECTION 7: STEP-BY-STEP STRATEGIC ROADMAP ─────────── */}
                 <section id="step-by-step-guide" className="space-y-6">
                   <h2 className="text-2xl md:text-3xl font-black text-slate-900 leading-tight">
-                    7. Step-by-Step Strategic Roadmap to Recover Withheld Caution Deposits
+                    7. Step-by-Step Strategic Roadmap to Recover Caution Deposits
                   </h2>
                   <p className="text-slate-700 leading-relaxed text-sm md:text-base">
                     Recovering stuck caution money and security deposits from rigid academic administrations requires a disciplined, legally sequenced escalation strategy:
@@ -1086,7 +987,7 @@ export default function CollegeSecurityDepositRefundClient() {
                       <a
                         href="https://www.ugc.gov.in/"
                         target="_blank"
-                        rel="noopener noreferrer"
+                        rel="nofollow noopener noreferrer"
                         className="text-purple-600 hover:text-purple-800 hover:underline"
                       >
                         ugc.gov.in (Mandatory 100% Caution Refund Norms)
@@ -1094,21 +995,14 @@ export default function CollegeSecurityDepositRefundClient() {
                     </div>
                     <div>
                       <span className="font-bold text-slate-900">AICTE Approval Process Handbook: </span>
-                      <a
-                        href="https://www.aicte-india.org/"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="text-purple-600 hover:text-purple-800 hover:underline"
-                      >
-                        aicte-india.org (Security Deposit &amp; Certificate Non-Retention)
-                      </a>
+                      <span className="text-slate-600">aicte-india.org (Security Deposit &amp; Certificate Non-Retention)</span>
                     </div>
                     <div>
                       <span className="font-bold text-slate-900">Consumer Protection Act, 2019: </span>
                       <a
                         href="https://consumeraffairs.nic.in/"
                         target="_blank"
-                        rel="noopener noreferrer"
+                        rel="nofollow noopener noreferrer"
                         className="text-purple-600 hover:text-purple-800 hover:underline"
                       >
                         consumeraffairs.nic.in (Deficiency &amp; Unfair Trade Practice)
@@ -1116,36 +1010,15 @@ export default function CollegeSecurityDepositRefundClient() {
                     </div>
                     <div>
                       <span className="font-bold text-slate-900">Indian Contract Act, 1872: </span>
-                      <a
-                        href="https://www.indiacode.nic.in/handle/123456789/2187"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="text-purple-600 hover:text-purple-800 hover:underline"
-                      >
-                        indiacode.nic.in (Sections 70, 73, 148 &amp; 160 Bailment)
-                      </a>
+                      <span className="text-slate-600">indiacode.nic.in (Sections 70, 73, 148 &amp; 160 Bailment)</span>
                     </div>
                     <div>
                       <span className="font-bold text-slate-900">National Consumer Commission (NCDRC): </span>
-                      <a
-                        href="http://ncdrc.nic.in/"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="text-purple-600 hover:text-purple-800 hover:underline"
-                      >
-                        ncdrc.nic.in (Caution Money Restitution Precedents)
-                      </a>
+                      <span className="text-slate-600">ncdrc.nic.in (Caution Money Restitution Precedents)</span>
                     </div>
                     <div>
                       <span className="font-bold text-slate-900">National E-Daakhil Portal: </span>
-                      <a
-                        href="https://edaakhil.nic.in/"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="text-purple-600 hover:text-purple-800 hover:underline"
-                      >
-                        edaakhil.nic.in (Online Consumer Complaint Filing)
-                      </a>
+                      <span className="text-slate-600">edaakhil.nic.in (Online Consumer Complaint Filing)</span>
                     </div>
                   </div>
                 </section>

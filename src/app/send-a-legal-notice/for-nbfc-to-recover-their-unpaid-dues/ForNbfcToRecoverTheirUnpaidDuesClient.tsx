@@ -303,19 +303,33 @@ export default function ForNbfcToRecoverTheirUnpaidDuesClient() {
                     <span className="hidden sm:inline">•</span>
                     <span>Last updated: {currentDate}</span>
                   </div>
-                  
-                  {/* Share Buttons */}
+                                 {/* Share Buttons */}
                   <div className="flex items-center gap-2">
                     <span className="text-xs font-semibold text-slate-400 uppercase tracking-wider mr-2">Share:</span>
-                    <a href="https://twitter.com/intent/tweet?url=https%3A%2F%2Flegalrecovery.in%2Fsend-a-legal-notice%2Ffor-nbfc-to-recover-their-unpaid-dues&text=Recover%20unpaid%20NBFC%20dues%20and%20defaulted%20loans%20with%20a%20statutory%20legal%20notice!%20%23DebtRecovery%20%23NBFC" target="_blank" rel="noopener noreferrer" className="w-8 h-8 rounded-full bg-black text-white hover:opacity-80 flex items-center justify-center transition-opacity" aria-label="Share on X (Twitter)">
+                    <button
+                      type="button"
+                      onClick={() => window.open('https://twitter.com/intent/tweet?url=https%3A%2F%2Flegalrecovery.in%2Fsend-a-legal-notice%2Ffor-nbfc-to-recover-their-unpaid-dues&text=Recover%20unpaid%20NBFC%20dues%20and%20defaulted%20loans%20with%20a%20statutory%20legal%20notice!%20%23DebtRecovery%20%23NBFC', '_blank', 'noopener,noreferrer')}
+                      className="w-8 h-8 rounded-full bg-black text-white hover:opacity-80 flex items-center justify-center transition-opacity cursor-pointer"
+                      aria-label="Share on X (Twitter)"
+                    >
                       <svg className="w-4 h-4 fill-current" viewBox="0 0 24 24"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
-                    </a>
-                    <a href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Flegalrecovery.in%2Fsend-a-legal-notice%2Ffor-nbfc-to-recover-their-unpaid-dues" target="_blank" rel="noopener noreferrer" className="w-8 h-8 rounded-full bg-[#1877F2] text-white hover:opacity-80 flex items-center justify-center transition-opacity" aria-label="Share on Facebook">
+                    </button>
+                    <button
+                      type="button"
+                      onClick={() => window.open('https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Flegalrecovery.in%2Fsend-a-legal-notice%2Ffor-nbfc-to-recover-their-unpaid-dues', '_blank', 'noopener,noreferrer')}
+                      className="w-8 h-8 rounded-full bg-[#1877F2] text-white hover:opacity-80 flex items-center justify-center transition-opacity cursor-pointer"
+                      aria-label="Share on Facebook"
+                    >
                       <svg className="w-4 h-4 fill-current" viewBox="0 0 24 24"><path d="M9.198 21.5h4v-8.01h3.604l.396-3.98h-4V7.5a1 1 0 0 1 1-1h3v-4h-3a5 5 0 0 0-5 5v2.01h-2l-.396 3.98h2.396v8.01z"/></svg>
-                    </a>
-                    <a href="https://www.linkedin.com/shareArticle?mini=true&url=https%3A%2F%2Flegalrecovery.in%2Fsend-a-legal-notice%2Ffor-nbfc-to-recover-their-unpaid-dues&title=Legal%20Notice%20for%20NBFC%20Recovery%20of%20Unpaid%20Dues" target="_blank" rel="noopener noreferrer" className="w-8 h-8 rounded-full bg-[#0A66C2] text-white hover:opacity-80 flex items-center justify-center transition-opacity" aria-label="Share on LinkedIn">
+                    </button>
+                    <button
+                      type="button"
+                      onClick={() => window.open('https://www.linkedin.com/shareArticle?mini=true&url=https%3A%2F%2Flegalrecovery.in%2Fsend-a-legal-notice%2Ffor-nbfc-to-recover-their-unpaid-dues&title=Legal%20Notice%20for%20NBFC%20Recovery%20of%20Unpaid%20Dues', '_blank', 'noopener,noreferrer')}
+                      className="w-8 h-8 rounded-full bg-[#0A66C2] text-white hover:opacity-80 flex items-center justify-center transition-opacity cursor-pointer"
+                      aria-label="Share on LinkedIn"
+                    >
                       <svg className="w-4 h-4 fill-current" viewBox="0 0 24 24"><path d="M4.98 3.5c0 1.381-1.11 2.5-2.48 2.5s-2.48-1.119-2.48-2.5c0-1.38 1.11-2.5 2.48-2.5s2.48 1.12 2.48 2.5zm.02 4.5h-5v16h5v-16zm7.982 0h-4.968v16h4.969v-8.399c0-4.67 6.029-5.052 6.029 0v8.399h4.988v-10.131c0-7.88-8.922-7.593-11.018-3.714v-2.155z"/></svg>
-                    </a>
+                    </button>
                   </div>
                 </div>
 
@@ -333,16 +347,16 @@ export default function ForNbfcToRecoverTheirUnpaidDuesClient() {
                   </h2>
                   <div className="prose prose-base max-w-none text-slate-650 space-y-6">
                     <p className="text-sm md:text-base leading-relaxed">
-                      Non-Banking Financial Companies (NBFCs) and digital lending platforms form a foundational pillar of India&apos;s credit architecture, servicing retail consumers, Micro, Small, and Medium Enterprises (MSMEs), and infrastructure corporations. When borrowers default on credit facilities, loan EMIs, or trade lines, NBFCs require rigorous, multi-tiered statutory legal remedies to recover outstanding dues while adhering strictly to regulatory guidelines issued by the <a href="https://www.rbi.org.in/" target="_blank" rel="noopener noreferrer" className="text-purple-600 hover:text-purple-800 hover:underline">Reserve Bank of India (RBI)</a>.
+                      Non-Banking Financial Companies (NBFCs) and digital lending platforms form a foundational pillar of India&apos;s credit architecture, servicing retail consumers, Micro, Small, and Medium Enterprises (MSMEs), and infrastructure corporations. When borrowers default on credit facilities, loan EMIs, or trade lines, NBFCs require rigorous, multi-tiered statutory legal remedies to recover outstanding dues while adhering strictly to regulatory guidelines issued by the <span className="font-semibold text-slate-800">Reserve Bank of India (RBI)</span>.
                     </p>
                     <p className="text-sm md:text-base leading-relaxed">
-                      The primary statutory mechanism for secured credit recovery is the <a href="https://www.indiacode.nic.in/handle/123456789/2006" target="_blank" rel="noopener noreferrer" className="text-purple-600 hover:text-purple-800 hover:underline">Securitisation and Reconstruction of Financial Assets and Enforcement of Security Interest (SARFAESI) Act, 2002</a>. Qualifying NBFCs notified by the Ministry of Finance (NBFCs having asset sizes of ₹100 Crore and above, for loan debts of ₹20 Lakhs and above) are legally empowered to enforce security interests without the intervention of a civil court. Under Section 13(2) of the SARFAESI Act, once an account is classified as a Non-Performing Asset (NPA) in accordance with RBI prudential norms, the lender must serve a 60-day statutory demand notice calling upon the borrower and guarantors to discharge their full liabilities.
+                      The primary statutory mechanism for secured credit recovery is the <span className="font-semibold text-slate-800">Securitisation and Reconstruction of Financial Assets and Enforcement of Security Interest (SARFAESI) Act, 2002</span>. Qualifying NBFCs notified by the Ministry of Finance (NBFCs having asset sizes of ₹100 Crore and above, for loan debts of ₹20 Lakhs and above) are legally empowered to enforce security interests without the intervention of a civil court. Under Section 13(2) of the SARFAESI Act, once an account is classified as a Non-Performing Asset (NPA) in accordance with RBI prudential norms, the lender must serve a 60-day statutory demand notice calling upon the borrower and guarantors to discharge their full liabilities.
                     </p>
                     <p className="text-sm md:text-base leading-relaxed">
-                      For unsecured business loans, consumer credit lines, and bounced repayment installments, NBFCs possess dual civil and criminal remedies. Under Section 138 of the <a href="https://www.indiacode.nic.in/handle/123456789/2189" target="_blank" rel="noopener noreferrer" className="text-purple-600 hover:text-purple-800 hover:underline">Negotiable Instruments Act, 1881</a>, the dishonor of repayment cheques triggers criminal liability. Similarly, Section 25 of the <a href="https://www.indiacode.nic.in/handle/123456789/2070" target="_blank" rel="noopener noreferrer" className="text-purple-600 hover:text-purple-800 hover:underline">Payment and Settlement Systems Act, 2007 (PSSA)</a> accords identical criminal status to dishonored electronic NACH (National Automated Clearing House) mandates and automated debit instructions.
+                      For unsecured business loans, consumer credit lines, and bounced repayment installments, NBFCs possess dual civil and criminal remedies. Under Section 138 of the <span className="font-semibold text-slate-800">Negotiable Instruments Act, 1881</span>, the dishonor of repayment cheques triggers criminal liability. Similarly, Section 25 of the <span className="font-semibold text-slate-800">Payment and Settlement Systems Act, 2007 (PSSA)</span> accords identical criminal status to dishonored electronic NACH (National Automated Clearing House) mandates and automated debit instructions.
                     </p>
                     <p className="text-sm md:text-base leading-relaxed">
-                      Furthermore, where outstanding dues exceed ₹20 Lakhs, notified NBFCs can institute recovery proceedings before the <a href="https://drt.gov.in/" target="_blank" rel="noopener noreferrer" className="text-purple-600 hover:text-purple-800 hover:underline">Debt Recovery Tribunal (DRT)</a> under the Recovery of Debts and Bankruptcy Act, 1993 (RDB Act). For corporate debtors with default quantum exceeding ₹1 Crore, Section 7 of the <a href="https://ibbi.gov.in/" target="_blank" rel="noopener noreferrer" className="text-purple-600 hover:text-purple-800 hover:underline">Insolvency and Bankruptcy Code, 2016 (IBC)</a> permits NBFCs as financial creditors to initiate Corporate Insolvency Resolution Processes (CIRP). Serving a formal advocate-drafted demand notice is the mandatory pre-litigation cornerstone establishing an uncontroverted record of default.
+                      Furthermore, where outstanding dues exceed ₹20 Lakhs, notified NBFCs can institute recovery proceedings before the <span className="font-semibold text-slate-800">Debt Recovery Tribunal (DRT)</span> under the Recovery of Debts and Bankruptcy Act, 1993 (RDB Act). For corporate debtors with default quantum exceeding ₹1 Crore, Section 7 of the <span className="font-semibold text-slate-800">Insolvency and Bankruptcy Code, 2016 (IBC)</span> permits NBFCs as financial creditors to initiate Corporate Insolvency Resolution Processes (CIRP). Serving a formal advocate-drafted demand notice is the mandatory pre-litigation cornerstone establishing an uncontroverted record of default.
                     </p>
                   </div>
                 </section>
@@ -392,7 +406,7 @@ export default function ForNbfcToRecoverTheirUnpaidDuesClient() {
                         <div>
                           <h4 className="font-extrabold text-slate-900 text-sm">Digital Lending &amp; Fintech Consumer Credit</h4>
                           <p className="text-xs sm:text-sm text-slate-650 leading-relaxed mt-1">
-                            App-based short-term personal loans and Buy-Now-Pay-Later (BNPL) credit facilities. In full compliance with the <a href="https://www.rbi.org.in/Scripts/BS_PressReleaseDisplay.aspx?prid=54354" target="_blank" rel="noopener noreferrer" className="text-purple-600 hover:text-purple-800 hover:underline">RBI Digital Lending Guidelines</a>, recovery notices must be served through verified digital and postal channels without unlawful harassment, detailing exact overdue breakdowns and credit bureau reporting ramifications.
+                            App-based short-term personal loans and Buy-Now-Pay-Later (BNPL) credit facilities. In full compliance with the <span className="font-semibold text-slate-800">RBI Digital Lending Guidelines</span>, recovery notices must be served through verified digital and postal channels without unlawful harassment, detailing exact overdue breakdowns and credit bureau reporting ramifications.
                           </p>
                         </div>
                       </div>
@@ -406,7 +420,7 @@ export default function ForNbfcToRecoverTheirUnpaidDuesClient() {
                   </h2>
                   <div className="prose prose-base max-w-none text-slate-650 space-y-6">
                     <p className="text-sm md:text-base leading-relaxed">
-                      To ensure that a recovery notice withstands judicial challenges in DRT, NCLT, or magistrate courts, NBFC credit operations must assemble an airtight documentary dossier under the <a href="https://www.indiacode.nic.in/handle/123456789/2187" target="_blank" rel="noopener noreferrer" className="text-purple-600 hover:text-purple-800 hover:underline">Indian Contract Act, 1872</a> and Bankers&apos; Books Evidence Act principles.
+                      To ensure that a recovery notice withstands judicial challenges in DRT, NCLT, or magistrate courts, NBFC credit operations must assemble an airtight documentary dossier under the <span className="font-semibold text-slate-800">Indian Contract Act, 1872</span> and Bankers&apos; Books Evidence Act principles.
                     </p>
 
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-4 my-6">
@@ -552,7 +566,7 @@ export default function ForNbfcToRecoverTheirUnpaidDuesClient() {
                         <div>
                           <h4 className="font-extrabold text-sm sm:text-base text-slate-900 mb-1">Corporate &amp; Guarantor Entity Verification</h4>
                           <p className="text-xs sm:text-sm text-slate-650 leading-relaxed">
-                            Verify borrower and guarantor corporate filings via the <a href="https://www.mca.gov.in/" target="_blank" rel="noopener noreferrer" className="text-purple-600 hover:text-purple-800 hover:underline">Ministry of Corporate Affairs (MCA)</a> portal, confirm property title search reports for secured loans, and cross-check active residential and workplace addresses.
+                            Verify borrower and guarantor corporate filings via the <span className="font-semibold text-slate-800">Ministry of Corporate Affairs (MCA)</span> portal, confirm property title search reports for secured loans, and cross-check active residential and workplace addresses.
                           </p>
                         </div>
                       </div>
@@ -678,7 +692,7 @@ export default function ForNbfcToRecoverTheirUnpaidDuesClient() {
 
                 <div className="pt-8 border-t border-slate-100">
                   <p className="text-xs text-slate-400">
-                    References: [1] <a href="https://www.rbi.org.in/" target="_blank" rel="noopener noreferrer" className="text-purple-600 hover:text-purple-800 hover:underline">Reserve Bank of India Master Directions on Non-Banking Financial Companies &amp; Fair Practices Code</a>. [2] <a href="https://www.indiacode.nic.in/handle/123456789/2006" target="_blank" rel="noopener noreferrer" className="text-purple-600 hover:text-purple-800 hover:underline">Securitisation and Reconstruction of Financial Assets and Enforcement of Security Interest (SARFAESI) Act, 2002</a>. [3] <a href="https://drt.gov.in/" target="_blank" rel="noopener noreferrer" className="text-purple-600 hover:text-purple-800 hover:underline">Recovery of Debts and Bankruptcy Act, 1993 (Debt Recovery Tribunal Procedures)</a>. [4] <a href="https://www.indiacode.nic.in/handle/123456789/2189" target="_blank" rel="noopener noreferrer" className="text-purple-600 hover:text-purple-800 hover:underline">Negotiable Instruments Act, 1881 (Section 138 Dishonor of Cheque)</a>. [5] <a href="https://www.indiacode.nic.in/handle/123456789/2070" target="_blank" rel="noopener noreferrer" className="text-purple-600 hover:text-purple-800 hover:underline">Payment and Settlement Systems Act, 2007 (Section 25 Electronic NACH Mandate Dishonor)</a>. [6] <a href="https://ibbi.gov.in/" target="_blank" rel="noopener noreferrer" className="text-purple-600 hover:text-purple-800 hover:underline">Insolvency and Bankruptcy Code, 2016 (Section 7 Financial Creditor Applications)</a>.
+                    References: [1] <a href="https://www.rbi.org.in/" target="_blank" rel="nofollow noopener noreferrer" className="text-purple-600 hover:text-purple-800 hover:underline">Reserve Bank of India Master Directions on Non-Banking Financial Companies &amp; Fair Practices Code</a>. [2] <a href="https://www.indiacode.nic.in/handle/123456789/2006" target="_blank" rel="nofollow noopener noreferrer" className="text-purple-600 hover:text-purple-800 hover:underline">Securitisation and Reconstruction of Financial Assets and Enforcement of Security Interest (SARFAESI) Act, 2002</a>. [3] <span className="text-slate-600">Recovery of Debts and Bankruptcy Act, 1993 (Debt Recovery Tribunal Procedures)</span>. [4] <span className="text-slate-600">Negotiable Instruments Act, 1881 (Section 138 Dishonor of Cheque)</span>. [5] <span className="text-slate-600">Payment and Settlement Systems Act, 2007 (Section 25 Electronic NACH Mandate Dishonor)</span>. [6] <span className="text-slate-600">Insolvency and Bankruptcy Code, 2016 (Section 7 Financial Creditor Applications)</span>.
                   </p>
                 </div>
               </div>

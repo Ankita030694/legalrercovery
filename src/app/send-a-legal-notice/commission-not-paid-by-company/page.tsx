@@ -2,9 +2,9 @@ import { Metadata } from 'next';
 import CommissionNotPaidByCompanyClient from './CommissionNotPaidByCompanyClient';
 
 const slug = 'send-a-legal-notice/commission-not-paid-by-company';
-const title = 'Legal Notice to Company for Not Paying Commission | Draft & Send Notice India';
+const title = 'Legal Notice to Company for Unpaid Commission Fees';
 const description =
-  'Company refusing or delaying earned sales commission, channel partner payout, or freelance incentives? Send an advocate-vetted statutory legal notice for unpaid commission under Indian Contract Act 1872, Commercial Courts Act 2015 & Code on Wages.';
+  'Company refusing to pay sales commission? Send an advocate-vetted legal notice under the Contract Act & Code on Wages to recover dues.';
 const url = `https://www.legalrecovery.in/${slug}`;
 const ogImage = `/images/og/commission-not-paid-by-company.jpg`;
 

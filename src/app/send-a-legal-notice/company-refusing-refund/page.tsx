@@ -2,7 +2,7 @@ import { Metadata } from 'next';
 import CompanyRefusingRefundClient from './CompanyRefusingRefundClient';
 
 export const metadata: Metadata = {
-  title: 'Send a Legal Notice for Company Refusing Refund | Legal Recovery',
+  title: 'Legal Notice for Company Refusing Refund | Send Notice',
   description: 'Learn the exact legal steps and how to send a legal notice for a company refusing refund. Get your money back under the Consumer Protection Act.',
   alternates: {
     canonical: 'https://www.legalrecovery.in/send-a-legal-notice/company-refusing-refund',

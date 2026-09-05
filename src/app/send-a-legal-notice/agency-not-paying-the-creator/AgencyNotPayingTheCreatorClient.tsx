@@ -231,7 +231,7 @@ export default function AgencyNotPayingTheCreatorClient() {
     { id: 'copyright-revocation', title: '3. Intellectual Property Leverage: Revoking Commercial Licenses' },
     { id: 'evidentiary-checklist', title: '4. Pre-Notice Evidentiary Checklist & Section 63 BSA Records' },
     { id: 'essential-clauses', title: '5. Key Clauses in a Statutory Demand Notice to Agencies' },
-    { id: 'legal-remedies-table', title: '6. Multi-Forum Remedies: MSME, Summary Suit, Commercial Court & BNS' },
+    { id: 'legal-remedies-table', title: '6. Multi-Forum Remedies: MSME, Summary Suit & BNS Action' },
     { id: 'action-roadmap', title: '7. Step-by-Step Roadmap to Recover Unpaid Creator Dues' },
     { id: 'faqs', title: '8. Frequently Asked Questions' },
   ];
@@ -386,39 +386,36 @@ export default function AgencyNotPayingTheCreatorClient() {
                     <span className="text-xs font-semibold text-slate-400 uppercase tracking-wider mr-2">
                       Share:
                     </span>
-                    <a
-                      href={`https://twitter.com/intent/tweet?url=${shareUrl}&text=${shareText}`}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="w-8 h-8 rounded-full bg-black text-white hover:opacity-80 flex items-center justify-center transition-opacity"
+                    <button
+                      type="button"
+                      onClick={() => window.open(`https://twitter.com/intent/tweet?url=${shareUrl}&text=${shareText}`, '_blank', 'noopener,noreferrer')}
+                      className="w-8 h-8 rounded-full bg-black text-white hover:opacity-80 flex items-center justify-center transition-opacity cursor-pointer"
                       aria-label="Share on X (Twitter)"
                     >
                       <svg className="w-4 h-4 fill-current" viewBox="0 0 24 24">
                         <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z" />
                       </svg>
-                    </a>
-                    <a
-                      href={`https://www.facebook.com/sharer/sharer.php?u=${shareUrl}`}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="w-8 h-8 rounded-full bg-[#1877F2] text-white hover:opacity-80 flex items-center justify-center transition-opacity"
+                    </button>
+                    <button
+                      type="button"
+                      onClick={() => window.open(`https://www.facebook.com/sharer/sharer.php?u=${shareUrl}`, '_blank', 'noopener,noreferrer')}
+                      className="w-8 h-8 rounded-full bg-[#1877F2] text-white hover:opacity-80 flex items-center justify-center transition-opacity cursor-pointer"
                       aria-label="Share on Facebook"
                     >
                       <svg className="w-4 h-4 fill-current" viewBox="0 0 24 24">
                         <path d="M9.198 21.5h4v-8.01h3.604l.396-3.98h-4V7.5a1 1 0 0 1 1-1h3v-4h-3a5 5 0 0 0-5 5v2.01h-2l-.396 3.98h2.396v8.01z" />
                       </svg>
-                    </a>
-                    <a
-                      href={`https://www.linkedin.com/shareArticle?mini=true&url=${shareUrl}&title=${encodeURIComponent('Legal Notice to Agency for Unpaid Creator Payment Recovery | Legal Recovery India')}`}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="w-8 h-8 rounded-full bg-[#0A66C2] text-white hover:opacity-80 flex items-center justify-center transition-opacity"
+                    </button>
+                    <button
+                      type="button"
+                      onClick={() => window.open(`https://www.linkedin.com/shareArticle?mini=true&url=${shareUrl}&title=${encodeURIComponent('Legal Notice to Agency for Unpaid Creator Payment Recovery | Legal Recovery India')}`, '_blank', 'noopener,noreferrer')}
+                      className="w-8 h-8 rounded-full bg-[#0A66C2] text-white hover:opacity-80 flex items-center justify-center transition-opacity cursor-pointer"
                       aria-label="Share on LinkedIn"
                     >
                       <svg className="w-4 h-4 fill-current" viewBox="0 0 24 24">
                         <path d="M4.98 3.5c0 1.381-1.11 2.5-2.48 2.5s-2.48-1.119-2.48-2.5c0-1.38 1.11-2.5 2.48-2.5s2.48 1.12 2.48 2.5zm.02 4.5h-5v16h5v-16zm7.982 0h-4.968v16h4.969v-8.399c0-4.67 6.029-5.052 6.029 0v8.399h4.988v-10.131c0-7.88-8.922-7.593-11.018-3.714v-2.155z" />
                       </svg>
-                    </a>
+                    </button>
                   </div>
                 </div>
 
@@ -429,50 +426,25 @@ export default function AgencyNotPayingTheCreatorClient() {
                   </h2>
                   <p className="text-sm text-slate-700 font-medium leading-relaxed">
                     A digital content creator, influencer, or video producer can serve an advocate-vetted statutory legal notice to an advertising or talent management agency under{' '}
-                    <a
-                      href="https://www.indiacode.nic.in/handle/123456789/2187"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="text-purple-600 hover:text-purple-800 hover:underline"
-                    >
+                    <span className="font-semibold text-slate-800">
                       Section 70 and Section 73 of the Indian Contract Act, 1872
-                    </a>{' '}
+                    </span>{' '}
                     and{' '}
-                    <a
-                      href="https://www.indiacode.nic.in/handle/123456789/1367"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="text-purple-600 hover:text-purple-800 hover:underline"
-                    >
+                    <span className="font-semibold text-slate-800">
                       Section 19 of the Copyright Act, 1957
-                    </a>
+                    </span>
                     , demanding immediate disbursement of unpaid campaign invoices, late payment interest, and revoking commercial licensing rights within 15 days. Under Indian contract jurisprudence, an agency remains strictly liable to compensate the creator once deliverables are approved and published, regardless of whether the third-party brand client has cleared the agency’s internal invoice. If the agency fails to settle the dues within the stipulated 15-day window, the creator can initiate fast-track recovery through the{' '}
-                    <a
-                      href="https://samadhaan.msme.gov.in/"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="text-purple-600 hover:text-purple-800 hover:underline"
-                    >
+                    <span className="font-semibold text-slate-800">
                       MSME Samadhaan MSEFC Portal
-                    </a>{' '}
+                    </span>{' '}
                     (yielding 3× RBI compound interest under the MSMED Act, 2006), institute a summary suit under{' '}
-                    <a
-                      href="https://www.indiacode.nic.in/handle/123456789/2191"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="text-purple-600 hover:text-purple-800 hover:underline"
-                    >
+                    <span className="font-semibold text-slate-800">
                       Order 37 of the Code of Civil Procedure, 1908
-                    </a>
+                    </span>
                     , or file a criminal complaint for criminal breach of trust under{' '}
-                    <a
-                      href="https://www.indiacode.nic.in/handle/123456789/2187"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="text-purple-600 hover:text-purple-800 hover:underline"
-                    >
+                    <span className="font-semibold text-slate-800">
                       Section 316 and Section 318 of the Bharatiya Nyaya Sanhita, 2023 (BNS)
-                    </a>
+                    </span>
                     .
                   </p>
                 </div>
@@ -492,7 +464,7 @@ export default function AgencyNotPayingTheCreatorClient() {
                 {/* ── SECTION 1: STATUTORY FRAMEWORK ───────────────────── */}
                 <section id="statutory-framework" className="space-y-6">
                   <h2 className="text-2xl md:text-3xl font-black text-slate-900 leading-tight">
-                    1. Statutory Framework: Indian Contract, Copyright &amp; MSME Laws Protecting Creators
+                    1. Statutory Framework: Contract, Copyright &amp; MSME Creator Laws
                   </h2>
                   <p className="text-slate-700 leading-relaxed text-sm md:text-base">
                     The rapid expansion of India&apos;s digital creator economy has witnessed thousands of lifestyle influencers, YouTube filmmakers, podcast hosts, and user-generated content (UGC) specialists executing high-value brand endorsements through intermediary influencer marketing and media buying agencies. However, payment defaults, indefinite credit extensions (Net-90, Net-120 days), and arbitrary fee deductions have become systemic issues. Under Indian jurisprudence, digital creators are not defenseless freelance workers; they are specialized commercial service providers protected by a robust statutory framework spanning the Indian Contract Act, the Copyright Act, and the Micro, Small and Medium Enterprises Development (MSMED) Act.
@@ -511,14 +483,9 @@ export default function AgencyNotPayingTheCreatorClient() {
                       </div>
                       <p className="text-xs md:text-sm text-slate-650 leading-relaxed">
                         <strong>Section 70:</strong> Obligation of person enjoying benefit of non-gratuitous act. As affirmed by the Supreme Court in{' '}
-                        <a
-                          href="https://main.sci.gov.in/"
-                          target="_blank"
-                          rel="noopener noreferrer"
-                          className="text-purple-600 hover:text-purple-800 hover:underline font-medium"
-                        >
+                        <span className="font-semibold text-slate-800">
                           State of West Bengal v. B.K. Mondal &amp; Sons (AIR 1962 SC 779)
-                        </a>
+                        </span>
                         , where a party receives and retains the benefit of creative work, they are legally bound to pay compensation. Furthermore,{' '}
                         <strong>Section 73</strong> grants right to liquidated damages and loss of commercial earnings.
                       </p>
@@ -533,14 +500,9 @@ export default function AgencyNotPayingTheCreatorClient() {
                       </div>
                       <p className="text-xs md:text-sm text-slate-650 leading-relaxed">
                         <strong>Section 14 &amp; Section 19(3):</strong> The author is the first owner of copyright in artistic and cinematographic works. Any commercial assignment or broadcasting license is statutorily conditional upon payment of agreed consideration. Non-payment automatically invalidates the license, transforming ongoing usage into actionable copyright infringement under{' '}
-                        <a
-                          href="https://www.indiacode.nic.in/handle/123456789/1367"
-                          target="_blank"
-                          rel="noopener noreferrer"
-                          className="text-purple-600 hover:text-purple-800 hover:underline font-medium"
-                        >
+                        <span className="font-semibold text-slate-800">
                           Section 51 of the Copyright Act, 1957
-                        </a>
+                        </span>
                         .
                       </p>
                     </div>
@@ -554,14 +516,9 @@ export default function AgencyNotPayingTheCreatorClient() {
                       </div>
                       <p className="text-xs md:text-sm text-slate-650 leading-relaxed">
                         <strong>Section 15 &amp; Section 16:</strong> Mandates payment within 45 days maximum. Delayed settlement attracts mandatory compound interest with monthly rests at 3× the RBI bank rate. Creators registered on Udyam can file direct recovery claims through the{' '}
-                        <a
-                          href="https://samadhaan.msme.gov.in/"
-                          target="_blank"
-                          rel="noopener noreferrer"
-                          className="text-purple-600 hover:text-purple-800 hover:underline font-medium"
-                        >
+                        <span className="font-semibold text-slate-800">
                           MSME Samadhaan Portal
-                        </a>
+                        </span>
                         .
                       </p>
                     </div>
@@ -583,7 +540,7 @@ export default function AgencyNotPayingTheCreatorClient() {
                 {/* ── SECTION 2: THE "CLIENT HASN'T PAID US" FALLACY ──── */}
                 <section id="agency-liability-defense" className="space-y-6">
                   <h2 className="text-2xl md:text-3xl font-black text-slate-900 leading-tight">
-                    2. The &quot;Client Hasn&apos;t Paid Us&quot; Fallacy: Why Agencies Remain Strictly Liable
+                    2. The &quot;Client Hasn&apos;t Paid Us&quot; Fallacy: Strict Agency Liability
                   </h2>
                   <p className="text-slate-700 leading-relaxed text-sm md:text-base">
                     The single most prevalent defense raised by influencer marketing agencies and media buying houses is: <em>&quot;We are waiting for the brand client to clear our master campaign invoice. As soon as the brand pays us, we will disburse your creator fees.&quot;</em>
@@ -617,14 +574,9 @@ export default function AgencyNotPayingTheCreatorClient() {
                       </h3>
                       <p className="text-xs md:text-sm text-slate-650 leading-relaxed">
                         Agencies frequently issue purchase orders with Net-30 or Net-45 credit terms but unilaterally drag payouts to 120 or 180 days. Such arbitrary delays constitute a material breach under{' '}
-                        <a
-                          href="https://www.indiacode.nic.in/handle/123456789/2187"
-                          target="_blank"
-                          rel="noopener noreferrer"
-                          className="text-purple-600 hover:text-purple-800 hover:underline font-medium"
-                        >
+                        <span className="font-semibold text-slate-800">
                           Section 73 of the Indian Contract Act, 1872
-                        </a>
+                        </span>
                         , entitling the creator to sue for the principal amount plus commercial interest from the exact date of default.
                       </p>
                     </div>
@@ -634,18 +586,13 @@ export default function AgencyNotPayingTheCreatorClient() {
                 {/* ── SECTION 3: COPYRIGHT REVOCATION & IP LEVERAGE ────── */}
                 <section id="copyright-revocation" className="space-y-6">
                   <h2 className="text-2xl md:text-3xl font-black text-slate-900 leading-tight">
-                    3. Intellectual Property Leverage: Revoking Commercial Licenses &amp; Cease-and-Desist Actions
+                    3. Intellectual Property Leverage: Revoking Commercial Licenses
                   </h2>
                   <p className="text-slate-700 leading-relaxed text-sm md:text-base">
                     One of the most potent legal levers available to creators against recalcitrant agencies is intellectual property revocation under the{' '}
-                    <a
-                      href="https://www.indiacode.nic.in/handle/123456789/1367"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="text-purple-600 hover:text-purple-800 hover:underline font-medium"
-                    >
+                    <span className="font-semibold text-slate-800">
                       Copyright Act, 1957
-                    </a>
+                    </span>
                     . Under Indian intellectual property laws, the creator is the author and first owner of the copyright in their original creative work (scripts, voiceovers, video recordings, graphics, photographs, and performance).
                   </p>
                   <p className="text-slate-700 leading-relaxed text-sm md:text-base">
@@ -679,18 +626,13 @@ export default function AgencyNotPayingTheCreatorClient() {
                 {/* ── SECTION 4: EVIDENTIARY CHECKLIST UNDER SECTION 63 BSA ─ */}
                 <section id="evidentiary-checklist" className="space-y-6">
                   <h2 className="text-2xl md:text-3xl font-black text-slate-900 leading-tight">
-                    4. Pre-Notice Evidentiary Checklist &amp; Electronic Records under Section 63 BSA
+                    4. Pre-Notice Evidentiary Checklist &amp; Section 63 BSA Records
                   </h2>
                   <p className="text-slate-700 leading-relaxed text-sm md:text-base">
                     Under modern Indian evidence law, electronic communications are fully admissible in court. The{' '}
-                    <a
-                      href="https://www.indiacode.nic.in/handle/123456789/2187"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="text-purple-600 hover:text-purple-800 hover:underline font-medium"
-                    >
+                    <span className="font-semibold text-slate-800">
                       Bharatiya Sakshya Adhiniyam, 2023 (BSA)
-                    </a>{' '}
+                    </span>{' '}
                     under Section 63 (which replaces Section 65B of the Indian Evidence Act, 1872) governs the admissibility of digital records. Prior to drafting a statutory legal notice, creators must consolidate and preserve the following evidentiary chain:
                   </p>
 
@@ -742,7 +684,7 @@ export default function AgencyNotPayingTheCreatorClient() {
                 {/* ── SECTION 5: ESSENTIAL CLAUSES IN STATUTORY NOTICE ──── */}
                 <section id="essential-clauses" className="space-y-6">
                   <h2 className="text-2xl md:text-3xl font-black text-slate-900 leading-tight">
-                    5. Anatomy of an Advocate-Vetted Legal Notice &amp; Key Clauses for Marketing Agencies
+                    5. Key Clauses in a Statutory Demand Notice to Agencies
                   </h2>
                   <p className="text-slate-700 leading-relaxed text-sm md:text-base">
                     A boilerplate or amateur demand letter is routinely disregarded by agency legal desks. An effective statutory legal notice must be issued on an advocate&apos;s official legal stationery, citing precise statutory enactments, quantifying exact principal and interest liabilities, and setting an uncompromised 15-day compliance deadline.
@@ -799,7 +741,7 @@ export default function AgencyNotPayingTheCreatorClient() {
                 {/* ── SECTION 6: LEGAL REMEDIES COMPARISON TABLE ─────────── */}
                 <section id="legal-remedies-table" className="space-y-6">
                   <h2 className="text-2xl md:text-3xl font-black text-slate-900 leading-tight">
-                    6. Multi-Forum Legal Remedies: Comparison of Legal Options for Creators
+                    6. Multi-Forum Remedies: MSME, Summary Suit &amp; BNS Action
                   </h2>
                   <p className="text-slate-700 leading-relaxed text-sm md:text-base">
                     If the marketing agency ignores or fails to comply with the statutory legal demand notice within the 15-day period, the creator can initiate legal action across various specialized forums depending on the claim amount and registration status:
@@ -900,7 +842,7 @@ export default function AgencyNotPayingTheCreatorClient() {
                 {/* ── SECTION 7: STEP-BY-STEP ROADMAP ───────────────────── */}
                 <section id="action-roadmap" className="space-y-6">
                   <h2 className="text-2xl md:text-3xl font-black text-slate-900 leading-tight">
-                    7. Step-by-Step Legal Action Roadmap to Recover Unpaid Creator Money
+                    7. Step-by-Step Roadmap to Recover Unpaid Creator Dues
                   </h2>
                   <p className="text-slate-700 leading-relaxed text-sm md:text-base">
                     Executing a systematic legal recovery strategy ensures maximum recovery rate while minimizing procedural delays. Here is the exact five-stage process followed by Legal Recovery advocates:
@@ -1022,7 +964,7 @@ export default function AgencyNotPayingTheCreatorClient() {
                     <a
                       href="https://www.indiacode.nic.in/handle/123456789/2187"
                       target="_blank"
-                      rel="noopener noreferrer"
+                      rel="nofollow noopener noreferrer"
                       className="text-purple-600 hover:text-purple-800 hover:underline"
                     >
                       Indian Contract Act, 1872 (India Code)
@@ -1030,51 +972,26 @@ export default function AgencyNotPayingTheCreatorClient() {
                     <a
                       href="https://www.indiacode.nic.in/handle/123456789/1367"
                       target="_blank"
-                      rel="noopener noreferrer"
+                      rel="nofollow noopener noreferrer"
                       className="text-purple-600 hover:text-purple-800 hover:underline"
                     >
                       Copyright Act, 1957 (India Code)
                     </a>
-                    <a
-                      href="https://samadhaan.msme.gov.in/"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="text-purple-600 hover:text-purple-800 hover:underline"
-                    >
+                    <span className="text-slate-500">
                       MSME Samadhaan Portal (Ministry of MSME)
-                    </a>
-                    <a
-                      href="https://www.indiacode.nic.in/handle/123456789/2191"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="text-purple-600 hover:text-purple-800 hover:underline"
-                    >
+                    </span>
+                    <span className="text-slate-500">
                       Code of Civil Procedure, 1908 (Order 37)
-                    </a>
-                    <a
-                      href="https://www.indiacode.nic.in/handle/123456789/2156"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="text-purple-600 hover:text-purple-800 hover:underline"
-                    >
+                    </span>
+                    <span className="text-slate-500">
                       Commercial Courts Act, 2015
-                    </a>
-                    <a
-                      href="https://www.indiacode.nic.in/handle/123456789/1785"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="text-purple-600 hover:text-purple-800 hover:underline"
-                    >
+                    </span>
+                    <span className="text-slate-500">
                       Limitation Act, 1963
-                    </a>
-                    <a
-                      href="https://main.sci.gov.in/"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="text-purple-600 hover:text-purple-800 hover:underline"
-                    >
+                    </span>
+                    <span className="text-slate-500">
                       Supreme Court of India Official Judgments
-                    </a>
+                    </span>
                   </div>
                 </section>
 
@@ -1091,7 +1008,7 @@ export default function AgencyNotPayingTheCreatorClient() {
                       },
                       {
                         title: 'How a Freelancer Can Send a Legal Notice to Client',
-                        href: '/how-can-a-freelancer-send-a-legal-notice-to-a-client-who-has-not-paid-for-completed-work-in-india',
+                        href: '/how-freelancer-can-send-legal-notice-to-client-india',
                       },
                       {
                         title: 'MSME Act for Freelancer Payment Recovery',
@@ -1099,7 +1016,7 @@ export default function AgencyNotPayingTheCreatorClient() {
                       },
                       {
                         title: 'What Evidence Should a Freelancer Collect for Recovery',
-                        href: '/what-evidence-should-a-freelancer-collect-to-strengthen-a-payment-recovery-case-against-a-client',
+                        href: '/freelancer-evidence-checklist-payment-recovery-india',
                       },
                       {
                         title: 'Legal Notice to Company for Unpaid Commission',
@@ -1119,7 +1036,7 @@ export default function AgencyNotPayingTheCreatorClient() {
                       },
                       {
                         title: 'What Legal Options Does a Freelancer Have for Unpaid Dues?',
-                        href: '/what-legal-options-does-a-freelancer-in-india-have-to-recover-unpaid-payments-from-a-client',
+                        href: '/freelancer-payment-recovery-legal-options-india',
                       },
                       {
                         title: 'Send a Legal Notice Online in India',

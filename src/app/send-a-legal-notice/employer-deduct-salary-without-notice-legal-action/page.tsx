@@ -3,9 +3,9 @@ import EmployerDeductSalaryWithoutNoticeLegalActionClient from './EmployerDeduct
 
 const slug = 'send-a-legal-notice/employer-deduct-salary-without-notice-legal-action';
 const title =
-  'Legal Notice to Employer for Deducting Salary Without Notice | Legal Action & Recovery India';
+  'Legal Notice for Salary Deducted Without Prior Notice';
 const description =
-  'Employer made unauthorized deductions or slashed your salary without prior notice or disciplinary inquiry? Send an advocate-vetted statutory legal notice under Payment of Wages Act 1936, Code on Wages 2019 & Industrial Disputes Act for immediate recovery with penal compensation.';
+  'Employer deducted salary without notice? Send an advocate-vetted legal notice under the Payment of Wages Act to recover unpaid wages.';
 const url = `https://www.legalrecovery.in/${slug}`;
 const ogImage = `/images/og/employer-deduct-salary-without-notice-legal-action.jpg`;
 

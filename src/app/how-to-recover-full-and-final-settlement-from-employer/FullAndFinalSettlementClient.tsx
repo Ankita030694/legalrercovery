@@ -5,7 +5,6 @@ import Link from "next/link";
 import Script from "next/script";
 import TableOfContents from "@/components/TableOfContents";
 import Breadcrumbs from "@/components/Breadcrumbs";
-import Image from "next/image";
 
 
 const faqs = [
@@ -70,9 +69,13 @@ const articleSchema = {
   "image": "https://www.legalrecovery.in/og-full-and-final-settlement.png",
   "author": {
     "@type": "Person",
-    "name": "Anuj Bhiya",
-    "url": "https://www.legalrecovery.in/author/anujbhiya",
-    "image": "https://www.legalrecovery.in/anujbhiya.png"
+    "name": "Advocate Aman Chawla",
+    "url": "https://www.legalrecovery.in/authors/advocate-aman-chawla"
+  },
+  "reviewedBy": {
+    "@type": "Person",
+    "name": "Advocate Sneha Sharma",
+    "url": "https://www.legalrecovery.in/authors/advocate-sneha-sharma"
   },
   "publisher": {
     "@type": "Organization",
@@ -194,6 +197,15 @@ export default function FullAndFinalSettlementClient() {
 
             <article className="min-w-0 bg-white p-6 md:p-12 rounded-3xl shadow-sm space-y-12 border border-slate-100">
               
+              {/* Meta details */}
+              <div className="flex flex-wrap items-center text-xs sm:text-sm text-slate-500 gap-3 border-b border-slate-100 pb-4">
+                <span>Written by <Link href="/authors/advocate-aman-chawla" className="font-semibold text-[#DC2626] hover:underline">Advocate Aman Chawla</Link></span>
+                <span className="hidden sm:inline">•</span>
+                <span>Reviewed by <Link href="/authors/advocate-sneha-sharma" className="font-semibold text-[#DC2626] hover:underline">Advocate Sneha Sharma</Link></span>
+                <span className="hidden sm:inline">•</span>
+                <span>Updated: June 29, 2026</span>
+              </div>
+
               <div className="prose prose-base max-w-none text-slate-650 space-y-6">
                 
                 <p className="text-sm md:text-base leading-relaxed font-bold">
@@ -502,22 +514,18 @@ export default function FullAndFinalSettlementClient() {
             </article>
 
             <aside className="hidden lg:block sticky top-24 max-h-[calc(100vh-120px)] overflow-y-auto pl-2 scrollbar-hide">
-              <div className="bg-white p-6 rounded-3xl shadow-sm border border-slate-100 text-center">
-                <div className="w-24 h-24 mx-auto rounded-full overflow-hidden mb-4 border-4 border-slate-50 shadow-sm relative">
-                  <Image 
-                    src="/anujbhiya.png" 
-                    alt="Anuj Bhiya Author Image" 
-                    fill
-                    className="object-cover"
-                    sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-                  />
-                </div>
-                <h3 className="font-black text-slate-900 text-lg">Anuj Bhiya</h3>
-                <p className="text-xs text-[#DC2626] font-bold uppercase tracking-wider mb-3">Employment Law Specialist</p>
-                <p className="text-xs text-slate-600 leading-relaxed">
-                  Anuj Bhiya helps Indian professionals enforce employee rights against corporate exploitation. He specializes in the Payment of Wages Act and high-impact salary recovery strategies.
+              <div className="bg-white p-6 rounded-3xl shadow-sm border border-slate-100 text-left space-y-3">
+                <p className="text-xs text-slate-500">
+                  <span className="text-slate-400 block text-[10px] uppercase font-bold tracking-wider mb-1">Written by</span>
+                  <Link href="/authors/advocate-aman-chawla" className="font-bold text-[#DC2626] hover:underline text-sm">Advocate Aman Chawla</Link>
                 </p>
-                <time dateTime="2026-06-29" className="block mt-4 text-[10px] text-slate-400 uppercase tracking-widest font-semibold border-t border-slate-100 pt-3">
+                <div className="border-t border-slate-100 pt-3">
+                  <p className="text-xs text-slate-500">
+                    <span className="text-slate-400 block text-[10px] uppercase font-bold tracking-wider mb-1">Reviewed by</span>
+                    <Link href="/authors/advocate-sneha-sharma" className="font-bold text-[#DC2626] hover:underline text-sm">Advocate Sneha Sharma</Link>
+                  </p>
+                </div>
+                <time dateTime="2026-06-29" className="block text-[10px] text-slate-400 uppercase tracking-widest font-semibold border-t border-slate-100 pt-3">
                   Updated: June 29, 2026
                 </time>
               </div>

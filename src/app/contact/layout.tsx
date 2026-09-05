@@ -10,6 +10,10 @@ export const metadata: Metadata = {
   alternates: {
     canonical: "/contact",
   },
+  robots: {
+    index: false,
+    follow: false,
+  },
 };
 
 export default function ContactLayout({

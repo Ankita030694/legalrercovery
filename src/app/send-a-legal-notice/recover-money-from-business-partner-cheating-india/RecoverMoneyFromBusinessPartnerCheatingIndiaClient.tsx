@@ -385,39 +385,36 @@ export default function RecoverMoneyFromBusinessPartnerCheatingIndiaClient() {
                     <span className="text-xs font-semibold text-slate-400 uppercase tracking-wider mr-2">
                       Share:
                     </span>
-                    <a
-                      href={`https://twitter.com/intent/tweet?url=${shareUrl}&text=${shareText}`}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="w-8 h-8 rounded-full bg-black text-white hover:opacity-80 flex items-center justify-center transition-opacity"
+                    <button
+                      type="button"
+                      onClick={() => window.open(`https://twitter.com/intent/tweet?url=${shareUrl}&text=${shareText}`, '_blank', 'noopener,noreferrer')}
+                      className="w-8 h-8 rounded-full bg-black text-white hover:opacity-80 flex items-center justify-center transition-opacity cursor-pointer"
                       aria-label="Share on X (Twitter)"
                     >
                       <svg className="w-4 h-4 fill-current" viewBox="0 0 24 24">
                         <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z" />
                       </svg>
-                    </a>
-                    <a
-                      href={`https://www.facebook.com/sharer/sharer.php?u=${shareUrl}`}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="w-8 h-8 rounded-full bg-[#1877F2] text-white hover:opacity-80 flex items-center justify-center transition-opacity"
+                    </button>
+                    <button
+                      type="button"
+                      onClick={() => window.open(`https://www.facebook.com/sharer/sharer.php?u=${shareUrl}`, '_blank', 'noopener,noreferrer')}
+                      className="w-8 h-8 rounded-full bg-[#1877F2] text-white hover:opacity-80 flex items-center justify-center transition-opacity cursor-pointer"
                       aria-label="Share on Facebook"
                     >
                       <svg className="w-4 h-4 fill-current" viewBox="0 0 24 24">
                         <path d="M9.198 21.5h4v-8.01h3.604l.396-3.98h-4V7.5a1 1 0 0 1 1-1h3v-4h-3a5 5 0 0 0-5 5v2.01h-2l-.396 3.98h2.396v8.01z" />
                       </svg>
-                    </a>
-                    <a
-                      href={`https://www.linkedin.com/shareArticle?mini=true&url=${shareUrl}&title=${encodeURIComponent('Legal Notice to Business Partner for Recovery of Money | Legal Recovery India')}`}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="w-8 h-8 rounded-full bg-[#0A66C2] text-white hover:opacity-80 flex items-center justify-center transition-opacity"
+                    </button>
+                    <button
+                      type="button"
+                      onClick={() => window.open(`https://www.linkedin.com/shareArticle?mini=true&url=${shareUrl}&title=${encodeURIComponent('Legal Notice to Business Partner for Recovery of Money | Legal Recovery India')}`, '_blank', 'noopener,noreferrer')}
+                      className="w-8 h-8 rounded-full bg-[#0A66C2] text-white hover:opacity-80 flex items-center justify-center transition-opacity cursor-pointer"
                       aria-label="Share on LinkedIn"
                     >
                       <svg className="w-4 h-4 fill-current" viewBox="0 0 24 24">
                         <path d="M4.98 3.5c0 1.381-1.11 2.5-2.48 2.5s-2.48-1.119-2.48-2.5c0-1.38 1.11-2.5 2.48-2.5s2.48 1.12 2.48 2.5zm.02 4.5h-5v16h5v-16zm7.982 0h-4.968v16h4.969v-8.399c0-4.67 6.029-5.052 6.029 0v8.399h4.988v-10.131c0-7.88-8.922-7.593-11.018-3.714v-2.155z" />
                       </svg>
-                    </a>
+                    </button>
                   </div>
                 </div>
 
@@ -428,41 +425,21 @@ export default function RecoverMoneyFromBusinessPartnerCheatingIndiaClient() {
                   </h2>
                   <p className="text-sm text-slate-700 font-medium leading-relaxed">
                     An aggrieved co-founder, partner, or commercial shareholder can serve an advocate-vetted statutory legal demand notice to a fraudulent business partner under{' '}
-                    <a
-                      href="https://www.indiacode.nic.in/handle/123456789/2387"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="text-purple-600 hover:text-purple-800 hover:underline"
-                    >
+                    <span className="font-semibold text-slate-800">
                       Sections 9, 10, and 13 of the Indian Partnership Act, 1932
-                    </a>{' '}
+                    </span>{' '}
                     and{' '}
-                    <a
-                      href="https://www.indiacode.nic.in/handle/123456789/2187"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="text-purple-600 hover:text-purple-800 hover:underline"
-                    >
+                    <span className="font-semibold text-slate-800">
                       Section 73 of the Indian Contract Act, 1872
-                    </a>
+                    </span>
                     , demanding full restitution of siphoned capital, diverted client receivables, or withheld profit shares within 15 calendar days. If the defaulting partner fails to comply within the statutory 15-day notice window, the claimant can initiate summary recovery under{' '}
-                    <a
-                      href="https://www.indiacode.nic.in/handle/123456789/2191"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="text-purple-600 hover:text-purple-800 hover:underline"
-                    >
+                    <span className="font-semibold text-slate-800">
                       Order 37 of the Code of Civil Procedure, 1908
-                    </a>
+                    </span>
                     , obtain pre-judgment attachment of personal assets under Order 38 Rule 5, trigger mandatory mediation under{' '}
-                    <a
-                      href="https://www.indiacode.nic.in/handle/123456789/2156"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="text-purple-600 hover:text-purple-800 hover:underline"
-                    >
+                    <span className="font-semibold text-slate-800">
                       Section 12A of the Commercial Courts Act, 2015
-                    </a>
+                    </span>
                     , or file a criminal complaint for cheating and criminal breach of trust under Section 316 and Section 318 of the Bharatiya Nyaya Sanhita, 2023.
                   </p>
                 </div>
@@ -484,7 +461,7 @@ export default function RecoverMoneyFromBusinessPartnerCheatingIndiaClient() {
                 {/* ── SECTION 1: STATUTORY FRAMEWORK ────────────────────── */}
                 <section id="statutory-framework" className="scroll-mt-32">
                   <h2 className="text-xl md:text-3xl font-black text-slate-900 mb-5 border-b-2 border-[#DC2626] pb-2 inline-block">
-                    1. Statutory Framework: Partnership &amp; Commercial Laws Governing Partner Fraud
+                    1. Statutory Framework: Partnership &amp; Commercial Laws on Fraud
                   </h2>
                   <div className="prose prose-base max-w-none text-slate-650 space-y-6">
                     <p className="text-sm md:text-base leading-relaxed">
@@ -492,23 +469,13 @@ export default function RecoverMoneyFromBusinessPartnerCheatingIndiaClient() {
                     </p>
                     <p className="text-sm md:text-base leading-relaxed">
                       The primary substantive legislation regulating rights, duties, and financial liabilities among business partners is the{' '}
-                      <a
-                        href="https://www.indiacode.nic.in/handle/123456789/2387"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="text-purple-600 hover:text-purple-800 hover:underline"
-                      >
+                      <span className="font-semibold text-slate-800">
                         Indian Partnership Act, 1932 (IPA)
-                      </a>
+                      </span>
                       , reinforced by the{' '}
-                      <a
-                        href="https://www.indiacode.nic.in/handle/123456789/2187"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="text-purple-600 hover:text-purple-800 hover:underline"
-                      >
+                      <span className="font-semibold text-slate-800">
                         Indian Contract Act, 1872
-                      </a>
+                      </span>
                       . Crucial statutory provisions include:
                     </p>
 
@@ -534,23 +501,13 @@ export default function RecoverMoneyFromBusinessPartnerCheatingIndiaClient() {
 
                     <p className="text-sm md:text-base leading-relaxed">
                       For registered corporate structures like Limited Liability Partnerships governed under the{' '}
-                      <a
-                        href="https://www.mca.gov.in"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="text-purple-600 hover:text-purple-800 hover:underline"
-                      >
+                      <span className="font-semibold text-slate-800">
                         Limited Liability Partnership Act, 2008
-                      </a>{' '}
+                      </span>{' '}
                       or Private Limited Companies governed under the{' '}
-                      <a
-                        href="https://www.mca.gov.in"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="text-purple-600 hover:text-purple-800 hover:underline"
-                      >
+                      <span className="font-semibold text-slate-800">
                         Companies Act, 2013
-                      </a>
+                      </span>
                       , directors and designated partners who divert corporate assets are liable for statutory disqualification, personal indemnity, and criminal prosecution for corporate fraud under Section 447 of the Companies Act, 2013, which prescribes mandatory imprisonment from 6 months up to 10 years and fines extending up to three times the quantum of fraud.
                     </p>
                   </div>
@@ -559,7 +516,7 @@ export default function RecoverMoneyFromBusinessPartnerCheatingIndiaClient() {
                 {/* ── SECTION 2: ACTIONABLE GROUNDS ─────────────────────── */}
                 <section id="actionable-grounds" className="scroll-mt-32">
                   <h2 className="text-xl md:text-3xl font-black text-slate-900 mb-5 border-b-2 border-[#DC2626] pb-2 inline-block">
-                    2. Actionable Grounds: Siphoning, Secret Profits &amp; Breach of Fiduciary Duty
+                    2. Actionable Grounds: Siphoning, Secret Profits &amp; Breach of Duty
                   </h2>
                   <div className="prose prose-base max-w-none text-slate-650 space-y-6">
                     <p className="text-sm md:text-base leading-relaxed">
@@ -633,7 +590,7 @@ export default function RecoverMoneyFromBusinessPartnerCheatingIndiaClient() {
                 {/* ── SECTION 3: DUAL REMEDY ARCHITECTURE ────────────────── */}
                 <section id="dual-remedy-architecture" className="scroll-mt-32">
                   <h2 className="text-xl md:text-3xl font-black text-slate-900 mb-5 border-b-2 border-[#DC2626] pb-2 inline-block">
-                    3. Dual Remedy Architecture: Summary Civil Recovery vs. Criminal Prosecution
+                    3. Dual Remedies: Civil Recovery vs Criminal Prosecution
                   </h2>
                   <div className="prose prose-base max-w-none text-slate-650 space-y-6">
                     <p className="text-sm md:text-base leading-relaxed">
@@ -657,15 +614,8 @@ export default function RecoverMoneyFromBusinessPartnerCheatingIndiaClient() {
                         <tbody className="bg-white divide-y divide-slate-200">
                           <tr className="hover:bg-slate-50">
                             <td className="p-3 border border-slate-200 font-bold text-slate-900">Summary Civil Suit</td>
-                            <td className="p-3 border border-slate-200">
-                              <a
-                                href="https://www.indiacode.nic.in/handle/123456789/2191"
-                                target="_blank"
-                                rel="noopener noreferrer"
-                                className="text-purple-600 hover:text-purple-800 hover:underline"
-                              >
-                                Order 37, Code of Civil Procedure, 1908
-                              </a>
+                            <td className="p-3 border border-slate-200 font-semibold text-slate-800">
+                              Order 37, Code of Civil Procedure, 1908
                             </td>
                             <td className="p-3 border border-slate-200 text-slate-650">
                               Fast-track money decree for liquidated debt without prolonged trial unless defendant obtains leave to defend.
@@ -674,15 +624,8 @@ export default function RecoverMoneyFromBusinessPartnerCheatingIndiaClient() {
                           </tr>
                           <tr className="hover:bg-slate-50">
                             <td className="p-3 border border-slate-200 font-bold text-slate-900">Commercial Court Claim</td>
-                            <td className="p-3 border border-slate-200">
-                              <a
-                                href="https://www.indiacode.nic.in/handle/123456789/2156"
-                                target="_blank"
-                                rel="noopener noreferrer"
-                                className="text-purple-600 hover:text-purple-800 hover:underline"
-                              >
-                                Commercial Courts Act, 2015 (Sec 12A)
-                              </a>
+                            <td className="p-3 border border-slate-200 font-semibold text-slate-800">
+                              Commercial Courts Act, 2015 (Sec 12A)
                             </td>
                             <td className="p-3 border border-slate-200 text-slate-650">
                               Mandatory pre-institution mediation followed by expedited commercial trial and summary judgment under Order 13A.
@@ -691,15 +634,8 @@ export default function RecoverMoneyFromBusinessPartnerCheatingIndiaClient() {
                           </tr>
                           <tr className="hover:bg-slate-50">
                             <td className="p-3 border border-slate-200 font-bold text-slate-900">Pre-Judgment Asset Attachment</td>
-                            <td className="p-3 border border-slate-200">
-                              <a
-                                href="https://www.indiacode.nic.in/handle/123456789/2191"
-                                target="_blank"
-                                rel="noopener noreferrer"
-                                className="text-purple-600 hover:text-purple-800 hover:underline"
-                              >
-                                Order 38 Rule 5, CPC 1908
-                              </a>
+                            <td className="p-3 border border-slate-200 font-semibold text-slate-800">
+                              Order 38 Rule 5, CPC 1908
                             </td>
                             <td className="p-3 border border-slate-200 text-slate-650">
                               Injunction freezing partner&apos;s personal bank accounts, luxury vehicles, and real estate properties before final judgment.
@@ -708,15 +644,8 @@ export default function RecoverMoneyFromBusinessPartnerCheatingIndiaClient() {
                           </tr>
                           <tr className="hover:bg-slate-50">
                             <td className="p-3 border border-slate-200 font-bold text-slate-900">Arbitration Interim Relief</td>
-                            <td className="p-3 border border-slate-200">
-                              <a
-                                href="https://www.indiacode.nic.in/handle/123456789/1978"
-                                target="_blank"
-                                rel="noopener noreferrer"
-                                className="text-purple-600 hover:text-purple-800 hover:underline"
-                              >
-                                Section 9, Arbitration &amp; Conciliation Act, 1996
-                              </a>
+                            <td className="p-3 border border-slate-200 font-semibold text-slate-800">
+                              Section 9, Arbitration &amp; Conciliation Act, 1996
                             </td>
                             <td className="p-3 border border-slate-200 text-slate-650">
                               Emergency High Court interim orders appointing a court receiver, sealing premises, and freezing disputed revenues.
@@ -971,7 +900,7 @@ export default function RecoverMoneyFromBusinessPartnerCheatingIndiaClient() {
                       <a
                         href="https://www.indiacode.nic.in/handle/123456789/2387"
                         target="_blank"
-                        rel="noopener noreferrer"
+                        rel="nofollow noopener noreferrer"
                         className="text-purple-600 hover:text-purple-800 hover:underline font-medium"
                       >
                         Indian Partnership Act, 1932 (India Code)
@@ -980,58 +909,18 @@ export default function RecoverMoneyFromBusinessPartnerCheatingIndiaClient() {
                     <div>
                       •{' '}
                       <a
-                        href="https://www.indiacode.nic.in/handle/123456789/2187"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="text-purple-600 hover:text-purple-800 hover:underline font-medium"
-                      >
-                        Indian Contract Act, 1872 (India Code)
-                      </a>
-                    </div>
-                    <div>
-                      •{' '}
-                      <a
-                        href="https://www.indiacode.nic.in/handle/123456789/2191"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="text-purple-600 hover:text-purple-800 hover:underline font-medium"
-                      >
-                        Code of Civil Procedure, 1908 – Order 37 &amp; 38 (India Code)
-                      </a>
-                    </div>
-                    <div>
-                      •{' '}
-                      <a
-                        href="https://www.indiacode.nic.in/handle/123456789/2156"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="text-purple-600 hover:text-purple-800 hover:underline font-medium"
-                      >
-                        Commercial Courts Act, 2015 – Section 12A (India Code)
-                      </a>
-                    </div>
-                    <div>
-                      •{' '}
-                      <a
                         href="https://www.mca.gov.in"
                         target="_blank"
-                        rel="noopener noreferrer"
+                        rel="nofollow noopener noreferrer"
                         className="text-purple-600 hover:text-purple-800 hover:underline font-medium"
                       >
                         Ministry of Corporate Affairs – Companies Act &amp; LLP Act
                       </a>
                     </div>
-                    <div>
-                      •{' '}
-                      <a
-                        href="https://main.sci.gov.in"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="text-purple-600 hover:text-purple-800 hover:underline font-medium"
-                      >
-                        Supreme Court of India Case Law Reports
-                      </a>
-                    </div>
+                    <div>• Indian Contract Act, 1872 (Section 73 &amp; 74)</div>
+                    <div>• Code of Civil Procedure, 1908 (Order 37 &amp; Order 38)</div>
+                    <div>• Commercial Courts Act, 2015 (Pre-Institution Mediation)</div>
+                    <div>• Supreme Court of India Commercial Bench Precedents</div>
                   </div>
                 </section>
 

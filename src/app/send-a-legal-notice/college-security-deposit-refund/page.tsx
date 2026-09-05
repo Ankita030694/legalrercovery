@@ -2,9 +2,9 @@ import { Metadata } from 'next';
 import CollegeSecurityDepositRefundClient from './CollegeSecurityDepositRefundClient';
 
 const slug = 'send-a-legal-notice/college-security-deposit-refund';
-const title = 'Legal Notice to College for Not Paying Security Deposit | Refund Caution Money';
+const title = 'Legal Notice to College for Security Deposit Refund';
 const description =
-  'College or university refusing to refund caution money, hostel security deposit, or laboratory fees? Send an advocate-drafted statutory legal notice under UGC/AICTE Guidelines, Indian Contract Act, and Consumer Protection Act 2019 to recover your deposit with 18% interest.';
+  'College withholding caution money or hostel deposit? Send a legal notice under UGC guidelines to recover your security deposit with interest.';
 const url = `https://www.legalrecovery.in/${slug}`;
 const ogImage = `/images/og/college-security-deposit-refund.jpg`;
 

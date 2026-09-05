@@ -386,39 +386,36 @@ export default function PropertyDisputeMoneyStuckClient() {
                     <span className="text-xs font-semibold text-slate-400 uppercase tracking-wider mr-2">
                       Share:
                     </span>
-                    <a
-                      href={`https://twitter.com/intent/tweet?url=${shareUrl}&text=${shareText}`}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="w-8 h-8 rounded-full bg-black text-white hover:opacity-80 flex items-center justify-center transition-opacity"
+                    <button
+                      type="button"
+                      onClick={() => window.open(`https://twitter.com/intent/tweet?url=${shareUrl}&text=${shareText}`, '_blank', 'noopener,noreferrer')}
+                      className="w-8 h-8 rounded-full bg-black text-white hover:opacity-80 flex items-center justify-center transition-opacity cursor-pointer"
                       aria-label="Share on X (Twitter)"
                     >
                       <svg className="w-4 h-4 fill-current" viewBox="0 0 24 24">
                         <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z" />
                       </svg>
-                    </a>
-                    <a
-                      href={`https://www.facebook.com/sharer/sharer.php?u=${shareUrl}`}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="w-8 h-8 rounded-full bg-[#1877F2] text-white hover:opacity-80 flex items-center justify-center transition-opacity"
+                    </button>
+                    <button
+                      type="button"
+                      onClick={() => window.open(`https://www.facebook.com/sharer/sharer.php?u=${shareUrl}`, '_blank', 'noopener,noreferrer')}
+                      className="w-8 h-8 rounded-full bg-[#1877F2] text-white hover:opacity-80 flex items-center justify-center transition-opacity cursor-pointer"
                       aria-label="Share on Facebook"
                     >
                       <svg className="w-4 h-4 fill-current" viewBox="0 0 24 24">
                         <path d="M9.198 21.5h4v-8.01h3.604l.396-3.98h-4V7.5a1 1 0 0 1 1-1h3v-4h-3a5 5 0 0 0-5 5v2.01h-2l-.396 3.98h2.396v8.01z" />
                       </svg>
-                    </a>
-                    <a
-                      href={`https://www.linkedin.com/shareArticle?mini=true&url=${shareUrl}&title=${encodeURIComponent('Legal Notice for Property Dispute Money Stuck Recovery | Legal Recovery India')}`}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="w-8 h-8 rounded-full bg-[#0A66C2] text-white hover:opacity-80 flex items-center justify-center transition-opacity"
+                    </button>
+                    <button
+                      type="button"
+                      onClick={() => window.open(`https://www.linkedin.com/shareArticle?mini=true&url=${shareUrl}&title=${encodeURIComponent('Legal Notice for Property Dispute Money Stuck Recovery | Legal Recovery India')}`, '_blank', 'noopener,noreferrer')}
+                      className="w-8 h-8 rounded-full bg-[#0A66C2] text-white hover:opacity-80 flex items-center justify-center transition-opacity cursor-pointer"
                       aria-label="Share on LinkedIn"
                     >
                       <svg className="w-4 h-4 fill-current" viewBox="0 0 24 24">
                         <path d="M4.98 3.5c0 1.381-1.11 2.5-2.48 2.5s-2.48-1.119-2.48-2.5c0-1.38 1.11-2.5 2.48-2.5s2.48 1.12 2.48 2.5zm.02 4.5h-5v16h5v-16zm7.982 0h-4.968v16h4.969v-8.399c0-4.67 6.029-5.052 6.029 0v8.399h4.988v-10.131c0-7.88-8.922-7.593-11.018-3.714v-2.155z" />
                       </svg>
-                    </a>
+                    </button>
                   </div>
                 </div>
 
@@ -429,32 +426,17 @@ export default function PropertyDisputeMoneyStuckClient() {
                   </h2>
                   <p className="text-sm text-slate-700 font-medium leading-relaxed">
                     Commercial buyers, investors, and business allottees can serve an advocate-vetted statutory legal notice to defaulting property developers, vendors, or commercial landlords under{' '}
-                    <a
-                      href="https://www.indiacode.nic.in/handle/123456789/2187"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="text-purple-600 hover:text-purple-800 hover:underline"
-                    >
+                    <span className="font-semibold text-slate-800">
                       Sections 70, 73, and 74 of the Indian Contract Act, 1872
-                    </a>{' '}
+                    </span>{' '}
                     and{' '}
-                    <a
-                      href="https://www.indiacode.nic.in/handle/123456789/2158"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="text-purple-600 hover:text-purple-800 hover:underline"
-                    >
+                    <span className="font-semibold text-slate-800">
                       Section 18 of the Real Estate (Regulation and Development) Act, 2016 (RERA)
-                    </a>
+                    </span>
                     , demanding immediate refund of stuck token money, earnest booking advances, and accrued statutory interest within a mandatory 15-day window. Under settled Supreme Court jurisprudence, a seller cannot arbitrarily forfeit commercial booking deposits without proving actual financial damage. Serving a formal statutory notice crystallizes the developer’s breach, establishes an indisputable pre-litigation record, and unlocks fast-track commercial remedies including{' '}
-                    <a
-                      href="https://www.indiacode.nic.in/handle/123456789/2157"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="text-purple-600 hover:text-purple-800 hover:underline"
-                    >
+                    <span className="font-semibold text-slate-800">
                       Section 12A Pre-Institution Mediation under the Commercial Courts Act, 2015
-                    </a>
+                    </span>
                     , Order 37 summary recovery suits, and corporate insolvency petitions under the Insolvency and Bankruptcy Code, 2016.
                   </p>
                 </div>
@@ -500,10 +482,10 @@ export default function PropertyDisputeMoneyStuckClient() {
                       <a
                         href="https://www.indiacode.nic.in/handle/123456789/2187"
                         target="_blank"
-                        rel="noopener noreferrer"
+                        rel="nofollow noopener noreferrer"
                         className="inline-block text-xs font-bold text-purple-600 hover:text-purple-800 hover:underline"
                       >
-                        Read Indian Contract Act, 1872 →
+                        Read Indian Contract Act, 1872 (India Code) →
                       </a>
                     </div>
 
@@ -520,10 +502,10 @@ export default function PropertyDisputeMoneyStuckClient() {
                       <a
                         href="https://www.indiacode.nic.in/handle/123456789/2158"
                         target="_blank"
-                        rel="noopener noreferrer"
+                        rel="nofollow noopener noreferrer"
                         className="inline-block text-xs font-bold text-purple-600 hover:text-purple-800 hover:underline"
                       >
-                        Read RERA Act, 2016 Provisions →
+                        Read RERA Act, 2016 Provisions (India Code) →
                       </a>
                     </div>
 
@@ -537,14 +519,9 @@ export default function PropertyDisputeMoneyStuckClient() {
                       <p className="text-xs text-slate-650 leading-relaxed">
                         Agreements relating to immovable property used exclusively in trade or commerce are categorized as &quot;Commercial Disputes.&quot; Under Section 12A, mandatory Pre-Institution Mediation and Settlement (PIMS) through the District Legal Services Authority (DLSA) expedites recovery without prolonged trial cycles, backed by specialized commercial benches.
                       </p>
-                      <a
-                        href="https://www.indiacode.nic.in/handle/123456789/2157"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="inline-block text-xs font-bold text-purple-600 hover:text-purple-800 hover:underline"
-                      >
-                        Read Commercial Courts Act, 2015 →
-                      </a>
+                      <span className="inline-block text-xs font-bold text-slate-700">
+                        Governed under Commercial Courts Act, 2015 (Pre-Institution Mediation)
+                      </span>
                     </div>
 
                     <div className="bg-slate-50 p-6 rounded-2xl border border-slate-100 space-y-3">
@@ -557,14 +534,9 @@ export default function PropertyDisputeMoneyStuckClient() {
                       <p className="text-xs text-slate-600 leading-relaxed">
                         Empowers commercial buyers to enforce specific performance of contracts or seek substituted performance alongside statutory claims for refund of earnest money and substantial compensatory damages under Section 21 and Section 22 whenever the vendor defaults on execution.
                       </p>
-                      <a
-                        href="https://www.indiacode.nic.in/handle/123456789/1570"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="inline-block text-xs font-bold text-purple-600 hover:text-purple-800 hover:underline"
-                      >
-                        Read Specific Relief Act, 1963 →
-                      </a>
+                      <span className="inline-block text-xs font-bold text-slate-700">
+                        Governed under Specific Relief Act, 1963 (Sections 10, 20 &amp; 22)
+                      </span>
                     </div>
                   </div>
                 </section>
@@ -586,14 +558,9 @@ export default function PropertyDisputeMoneyStuckClient() {
                       The Supreme Court of India held that Section 74 of the Indian Contract Act, 1872 applies squarely to the forfeiture of earnest money deposits. The Apex Court ruled that a vendor or statutory authority cannot forfeit earnest money arbitrarily unless the party asserting the forfeiture produces concrete, demonstrable evidence of actual financial damage or loss suffered. If no actual loss is proven, or if the loss is negligible, forfeiting the deposit constitutes an unlawful penalty, and the entire advance must be refunded to the buyer.
                     </p>
                     <div className="pt-2">
-                      <a
-                        href="https://main.sci.gov.in"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="text-xs font-extrabold text-[#DC2626] hover:underline"
-                      >
-                        Supreme Court of India Case Archive →
-                      </a>
+                      <span className="text-xs font-extrabold text-[#DC2626]">
+                        Precedent: Kailash Nath Associates v. DDA (Supreme Court of India)
+                      </span>
                     </div>
                   </div>
 
@@ -713,16 +680,7 @@ export default function PropertyDisputeMoneyStuckClient() {
                     4. Evidentiary Checklist &amp; Section 63 BSA Digital Records
                   </h2>
                   <p className="text-base text-slate-650 leading-relaxed font-normal">
-                    Under the{' '}
-                    <a
-                      href="https://www.indiacode.nic.in/handle/123456789/2189"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="text-purple-600 hover:text-purple-800 hover:underline"
-                    >
-                      Bharatiya Sakshya Adhiniyam, 2023 (BSA)
-                    </a>
-                    , electronic records, banking logs, and digital communications carry primary evidentiary value when certified under Section 63 (formerly Section 65B of the Indian Evidence Act). Before serving the statutory notice, assemble the following evidentiary dossier:
+                    Under the <span className="font-semibold text-slate-800">Bharatiya Sakshya Adhiniyam, 2023 (BSA)</span>, electronic records, banking logs, and digital communications carry primary evidentiary value when certified under Section 63 (formerly Section 65B of the Indian Evidence Act). Before serving the statutory notice, assemble the following evidentiary dossier:
                   </p>
 
                   <div className="overflow-x-auto">

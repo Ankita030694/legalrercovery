@@ -2,9 +2,9 @@ import { Metadata } from 'next';
 import TravelAgentHolidayPackageRefundClient from './TravelAgentHolidayPackageRefundClient';
 
 const slug = 'send-a-legal-notice/travel-agent-holiday-package-refund';
-const title = 'Legal Notice to Travel Agent for Holiday Package Refund | Send Notice India';
+const title = 'Legal Notice to Travel Agent for Holiday Package Refund';
 const description =
-  'Travel agency or tour operator refusing holiday package refund, cutting itineraries, or downgrading hotels? Send an advocate-vetted statutory legal notice under Consumer Protection Act 2019 & Indian Contract Act 1872 for prompt refund recovery.';
+  'Travel agent refusing a holiday refund? Send an advocate-vetted legal notice under the Consumer Protection Act for quick refund recovery.';
 const url = `https://www.legalrecovery.in/${slug}`;
 const ogImage = `/images/og/travel-agent-holiday-package-refund.jpg`;
 

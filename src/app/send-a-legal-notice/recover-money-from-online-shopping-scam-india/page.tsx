@@ -2,9 +2,9 @@ import { Metadata } from 'next';
 import RecoverMoneyFromOnlineShoppingScamIndiaClient from './RecoverMoneyFromOnlineShoppingScamIndiaClient';
 
 const slug = 'send-a-legal-notice/recover-money-from-online-shopping-scam-india';
-const title = 'How to Recover Money from Online Shopping Scam India | Legal Notice & Recovery Guide';
+const title = 'Recover Money from Online Shopping Scam | Legal Notice';
 const description =
-  'Scammed by a fake shopping website, fraudulent social media seller, or deceptive ecommerce portal in India? Send an advocate-vetted statutory legal notice, trigger bank chargebacks, file on National Cybercrime Portal (1930), and recover your money under Consumer Protection Act 2019 and BNS 2023.';
+  'Scammed by an online shopping portal in India? Send a legal notice and take statutory action under the Consumer Protection Act for refund.';
 const url = `https://www.legalrecovery.in/${slug}`;
 const ogImage = `/images/og/recover-money-from-online-shopping-scam-india.jpg`;
 

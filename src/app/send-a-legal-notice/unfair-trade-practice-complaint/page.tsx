@@ -2,8 +2,8 @@ import { Metadata } from 'next';
 import UnfairTradePracticeClient from './UnfairTradePracticeClient';
 
 export const metadata: Metadata = {
-  title: 'Legal Notice for Unfair Trade Practice Complaint | Legal Recovery',
-  description: 'Learn how to draft and send a legal notice for an unfair trade practice complaint. Protect your consumer rights against deceptive marketing, hidden charges, and false claims in India.',
+  title: 'Legal Notice for Unfair Trade Practices | Legal Recovery',
+  description: 'Send a legal notice for unfair trade practices in India. Protect your rights against deceptive marketing, hidden charges, and false claims.',
   alternates: {
     canonical: 'https://www.legalrecovery.in/send-a-legal-notice/unfair-trade-practice-complaint',
   },

@@ -2,8 +2,8 @@ import { Metadata } from 'next';
 import ForBanksToRecoverTheirUnpaidDuesClient from './ForBanksToRecoverTheirUnpaidDuesClient';
 
 const slug = 'send-a-legal-notice/for-banks-to-recover-their-unpaid-dues';
-const title = 'Legal Notice for Banks to Recover Their Unpaid Dues | Draft & Send Notice';
-const description = 'Defaulted commercial loan, Cash Credit/Overdraft limit, term loan, or NPA? Send an advocate-drafted statutory legal notice for bank recovery under SARFAESI Act, Section 138 NI Act, and DRT provisions.';
+const title = 'Legal Notice for Banks to Recover Outstanding Dues';
+const description = 'Defaulted loan or NPA account? Send an advocate-drafted legal notice for bank loan recovery under the SARFAESI Act and Section 138 NI Act.';
 const url = `https://www.legalrecovery.in/${slug}`;
 
 export const metadata: Metadata = {

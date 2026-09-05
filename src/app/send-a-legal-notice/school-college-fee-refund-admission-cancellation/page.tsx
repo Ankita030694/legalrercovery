@@ -2,9 +2,9 @@ import { Metadata } from 'next';
 import SchoolCollegeFeeRefundAdmissionCancellationClient from './SchoolCollegeFeeRefundAdmissionCancellationClient';
 
 const slug = 'send-a-legal-notice/school-college-fee-refund-admission-cancellation';
-const title = 'Legal Notice to School or College for Fee Refund on Admission Cancellation | Legal Recovery India';
+const title = 'Legal Notice for College or School Fee Refund India';
 const description =
-  'School, university, or college refusing to refund fees after admission cancellation or seat withdrawal? Send an advocate-drafted statutory legal notice under UGC Guidelines, AICTE Norms, and Consumer Protection Act 2019 for 100% refund.';
+  'College or school refusing fee refund after admission cancellation? Send a legal notice under UGC guidelines for 100% fee refund recovery.';
 const url = `https://www.legalrecovery.in/${slug}`;
 const ogImage = `/images/og/school-college-fee-refund-admission-cancellation.jpg`;
 

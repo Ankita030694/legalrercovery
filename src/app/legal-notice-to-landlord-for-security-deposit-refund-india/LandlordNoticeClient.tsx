@@ -65,7 +65,7 @@ const breadcrumbSchema = {
       "@type": "ListItem",
       "position": 2,
       "name": "Send Legal Notice to Landlord",
-      "item": "https://www.legalrecovery.in/can-i-send-a-legal-notice-to-my-landlord-for-not-refunding-the-security-deposit-after-vacating-the-property"
+      "item": "https://www.legalrecovery.in/legal-notice-to-landlord-for-security-deposit-refund-india"
     }
   ]
 };
@@ -220,7 +220,7 @@ export default function LandlordNoticeClient() {
   ];
 
   const breadcrumbItems = [
-    { label: "Send Notice to Landlord", href: "/can-i-send-a-legal-notice-to-my-landlord-for-not-refunding-the-security-deposit-after-vacating-the-property" }
+    { label: "Send Notice to Landlord", href: "/legal-notice-to-landlord-for-security-deposit-refund-india" }
   ];
 
   return (

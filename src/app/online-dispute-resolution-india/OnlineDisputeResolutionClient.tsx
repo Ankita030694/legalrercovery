@@ -10,31 +10,31 @@ import Image from "next/image";
 const faqs = [
   {
     question: "Is an online arbitration award legally valid in India?",
-    answer: "Online arbitration awards are completely valid and enforceable across Indian courts. The Arbitration and Conciliation Act 1996 grants digital awards equal status. Combined with the Information Technology Act 2000, digital awards execute like court decrees."
+    answer: "Yes. Online arbitration awards are fully valid under Indian law. The Arbitration and Conciliation Act, 1996, and the IT Act, 2000, treat digital awards the same as regular court decrees."
   },
   {
     question: "Can I use ODR to recover my money without an arbitration clause in the original contract?",
-    answer: "You can execute a digital post-dispute arbitration agreement with the defaulting party. Alternatively, parties can initiate voluntary online mediation through certified digital recovery platforms. Successful mediation settlements become legally binding contracts enforceable before civil executing courts."
+    answer: "Yes. You and the debtor can sign a simple digital arbitration agreement after the dispute arises. You can also start with voluntary online mediation. Any settlement reached during mediation is legally binding."
   },
   {
     question: "How long does the online legal recovery process typically take?",
-    answer: "Online dispute resolution resolves debt recovery disputes within forty-five to ninety days. The timeframe depends upon document complexity and responsiveness of the participating parties. Automated digital case tracking prevents procedural adjournments common in traditional court litigation."
+    answer: "Most online dispute claims wrap up within 45 to 90 days. This timeline depends on the complexity of your case and how quickly both sides respond. Automated portals prevent long court adjournments."
   },
   {
     question: "Are digital signatures and WhatsApp notices legally recognized in ODR?",
-    answer: "The Supreme Court of India officially recognizes legal notices served through WhatsApp. Delivery confirmation with read receipts establishes valid court-admissible proof of statutory service. Aadhaar e-Signatures and digital signatures maintain full evidentiary validity under Indian statutes."
+    answer: "Yes. The Supreme Court of India recognizes legal notices sent via WhatsApp when blue ticks show delivery. Aadhaar e-Signatures and digital signatures also hold full legal proof under Indian law."
   },
   {
     question: "What happens if the debtor simply ignores the final ODR arbitral award?",
-    answer: "Creditors file execution petitions under Section 36 in jurisdictional civil courts. Civil judges enforce arbitral awards by ordering immediate attachment of debtor bank accounts. Courts can also seize movable assets or garnish business receivables for debt realization."
+    answer: "You can take the award to your local civil court under Section 36. The court can order bank account freezes, salary attachments, or property seizures to recover your money."
   },
   {
     question: "Is ODR suitable for very small amounts of money recovery?",
-    answer: "Digital dispute platforms make small financial claim recoveries practical and economically viable. Eliminating court travel, heavy paperwork, and lawyer appearance retainers cuts legal expenses. Small business owners can recover unpaid client dues without incurring disproportionate litigation expenses."
+    answer: "Yes. Online dispute resolution is ideal for small claims. Because there is no travel or costly court paperwork, legal expenses remain low. Small businesses and individuals can recover modest sums without losing money on legal fees."
   },
   {
     question: "Do I need to hire a lawyer to represent me in an ODR proceeding?",
-    answer: "Parties can represent themselves directly on user-friendly digital dispute resolution portals. Engaging specialized legal recovery counsel ensures accurate document drafting and evidence presentation. Advocates help navigate procedural arbitration rules and manage subsequent court execution filings efficiently."
+    answer: "No, you can represent yourself on the digital portal. However, hiring a legal recovery expert helps ensure your documents are strong and filed correctly. A lawyer can also guide you through court execution if the debtor does not pay."
   }
 ];
 
@@ -42,17 +42,17 @@ const reviews = [
   {
     author: "Ravi Shankar",
     rating: "5",
-    text: "The digital platform helped me recover unpaid freelance invoices within sixty days. Serving digital notices via email accelerated negotiations without visiting physical courtrooms once."
+    text: "The digital platform helped me recover unpaid freelance invoices in under 60 days. Serving notices online saved me from visiting a courtroom even once."
   },
   {
     author: "Meera Desai",
     rating: "5",
-    text: "Online mediation helped me resolve an outstanding personal loan dispute smoothly. The mediator facilitated structured settlement dialogues leading to a binding enforceable agreement."
+    text: "Online mediation helped me resolve an outstanding personal loan dispute smoothly. The mediator set up a clear payment plan that we both signed online."
   },
   {
     author: "Vikram Kapoor",
     rating: "5",
-    text: "Implementing digital arbitration clauses protected our small manufacturing company from default losses. We secured binding arbitral awards and enforced recovery through local civil courts."
+    text: "Adding a digital arbitration clause protected our small manufacturing firm from bad debts. We secured a binding award and enforced recovery through our local court."
   }
 ];
 
@@ -194,7 +194,7 @@ export default function OnlineDisputeResolutionClient() {
               Online Dispute Resolution in India: <span className="text-[#DC2626]">Legal Recovery</span>
             </h1>
             <p className="text-sm md:text-xl mb-8 md:mb-12 max-w-3xl mx-auto text-slate-300 leading-relaxed font-medium">
-              Recover unpaid personal or commercial debts swiftly through digital mediation and arbitration. Avoid lengthy courtroom adjournments while securing legally binding enforceable debt recovery awards.
+              Recover unpaid money quickly through online mediation and arbitration. Skip long court delays and get legally binding recovery orders from home.
             </p>
           </div>
         </header>
@@ -225,20 +225,20 @@ export default function OnlineDisputeResolutionClient() {
                       </svg>
                     </div>
                     <div>
-                      <h4 className="text-white font-bold text-lg mb-2">The Litigation Crisis in India</h4>
+                      <p className="text-white font-bold text-lg mb-2">The Litigation Crisis in India</p>
                       <p className="text-slate-300 text-sm leading-relaxed">
-                        Over sixty-five percent of pending Indian civil disputes involve unpaid commercial invoices. Traditional litigation clogs district courts for an average of three years. Online Dispute Resolution provides legally binding arbitral awards without physical courtroom appearances.
+                        Over 65% of pending civil cases in India involve unpaid bills. Regular court cases often take over three years. Online dispute resolution offers a fast way out. It delivers binding legal awards without a single court visit.
                       </p>
                     </div>
                   </div>
                 </div>
 
                 <p className="text-sm md:text-base leading-relaxed">
-                  Digital justice systems represent a transformative breakthrough for businesses and individual lenders. Understanding online dispute resolution mechanics accelerates recovery against chronic non-paying debtors. Traditional litigation consumes excessive capital, whereas digital platforms emphasize speed and transparency.
+                  Online dispute resolution helps you recover unpaid money without court delays. It gives lenders and businesses a fast, fair way to resolve claims online. Traditional civil lawsuits take years and cost too much money. In contrast, digital dispute platforms focus on speed, low costs, and clear outcomes. You can file claims from your phone or laptop. Certified neutrals guide both sides toward a settlement. If talks fail, you can get a binding arbitral award quickly.
                 </p>
                 
                 <p className="text-sm md:text-base leading-relaxed">
-                  Integrating modern technology into dispute resolution makes debt recovery accessible to everyone. Creditors move disputes from overcrowded courtrooms to secure and efficient virtual platforms. Digital enforcement tools protect contractual rights while eliminating procedural delays and bureaucracy.
+                  Moving your dispute online protects your hard-earned cash. It saves you time and avoids stressful courtroom fights. You can submit contracts, chats, and bank slips with ease. The system tracks every step so no one can play delay games. Best of all, the final award has the full force of law.
                 </p>
               </div>
 
@@ -248,20 +248,20 @@ export default function OnlineDisputeResolutionClient() {
                 </h2>
                 <div className="prose prose-base max-w-none text-slate-650 space-y-6">
                   <p className="text-sm md:text-base leading-relaxed">
-                    Online Dispute Resolution combines digital software platforms with traditional alternative dispute resolution. The Arbitration and Conciliation Act 1996 provides statutory authority for proceedings. The Information Technology Act 2000 validates electronic records, e-signatures, and virtual hearings.
+                    Online Dispute Resolution uses web tools to resolve conflicts out of court. It combines online mediation and digital arbitration into one simple flow. Two key laws back this process: the Arbitration and Conciliation Act, 1996, and the IT Act, 2000. Under these laws, online hearings, digital records, and e-signatures are fully valid.
                   </p>
                   <p className="text-sm md:text-base leading-relaxed">
-                    NITI Aayog actively advocates online dispute platforms to clear judicial case backlogs. The Reserve Bank of India mandates digital grievance mechanisms across payment systems. Institutional backing establishes online resolution as a permanent foundation for modern justice. Creditors leverage structured virtual systems to recover outstanding funds without administrative friction.
+                    Government think tanks like NITI Aayog actively promote online dispute tools. Top financial bodies, including the Reserve Bank of India, also support digital claims. This strong backing gives online dispute resolution true legal weight. Lenders and business owners can now resolve money disputes with speed and confidence.
                   </p>
 
                   <h3 className="text-lg md:text-xl font-bold text-slate-900 mt-8 mb-3">
                     How ODR Differs from Traditional Court Litigation
                   </h3>
                   <p className="text-sm md:text-base leading-relaxed">
-                    Digital dispute resolution offers distinct strategic advantages over conventional physical court litigation. Traditional recovery suits drag on for years through procedural adjournments and delays. In contrast, online arbitration concludes disputes within weeks through strict digital timelines. Traditional litigation involves high court fees, physical printing, and ongoing advocate retainers. Digital resolution reduces dispute expenditure by operating entirely within remote paperless workflows.
+                    Online dispute resolution offers major benefits over regular civil courts. First, it saves years of waiting. Traditional court cases drag on through endless adjournments. Online arbitration sets strict timelines and often wraps up in weeks. Second, it cuts legal costs. You do not need to print thick paper files or pay daily court fees.
                   </p>
                   <p className="text-sm md:text-base leading-relaxed">
-                    Virtual platforms offer superior convenience through asynchronous messaging and online video conferences. Parties participate from their offices without taking disruptive leaves from active work. The informal digital environment avoids intimidating courtroom atmosphere and complex procedural rituals. Specialized arbitrators and retired judges manage proceedings with deep commercial financial expertise. Expert adjudicators evaluate financial documents quickly, ensuring accurate and swift debt determinations.
+                    Third, it is far more convenient. Both sides join hearings by video call from their office or home. You do not have to waste days traveling to distant courtrooms. In addition, skilled arbitrators handle your case. They understand business contracts, bank statements, and loan agreements. Their commercial expertise ensures quick, fair decisions.
                   </p>
                 </div>
               </section>
@@ -272,27 +272,27 @@ export default function OnlineDisputeResolutionClient() {
                 </h2>
                 <div className="prose prose-base max-w-none text-slate-650 space-y-6">
                   <p className="text-sm md:text-base leading-relaxed">
-                    Digital dispute platforms resolve diverse civil, commercial, and financial payment contract disputes. Creditors primarily leverage online mechanisms for invoice realization and breached loan agreements.
+                    Digital platforms handle many kinds of monetary claims. Lenders and companies use them most often for unpaid invoices, service defaults, and personal loans.
                   </p>
 
                   <h3 className="text-lg md:text-xl font-bold text-slate-900 mt-8 mb-3">
                     Commercial Debt Recovery
                   </h3>
                   <p className="text-sm md:text-base leading-relaxed">
-                    Unpaid commercial invoices severely disrupt operational cash flow for modern Indian enterprises. Digital dispute platforms resolve vendor supply contract defaults and service level breaches. Micro and small enterprises face critical liquidity challenges when corporate clients delay payments.
+                    Unpaid invoices can choke any business. Late payments hurt small firms, freelancers, and suppliers the hardest. Online platforms offer a fast way to collect this money. You can upload unpaid bills, purchase orders, and delivery slips in minutes.
                   </p>
                   <p className="text-sm md:text-base leading-relaxed">
-                    Creditors can integrate claims into private dispute portals for accelerated conciliation hearings. Digital mediation encourages structured payment installments while preserving valuable long-term business partnerships. Whether recovering distributor dues or freelance fees, online resolution enforces contractual obligations.
+                    Trained mediators then step in to help both sides talk. Many clients agree to pay in installments once formal talks begin. This helps you recover your money while keeping a good business relationship. If the client refuses to pay, you can move straight to binding arbitration.
                   </p>
 
                   <h3 className="text-lg md:text-xl font-bold text-slate-900 mt-8 mb-3">
                     Personal Loan Defaults
                   </h3>
                   <p className="text-sm md:text-base leading-relaxed">
-                    Informal peer lending and unsecured personal loans frequently lead to bitter disputes. Lenders struggle to recover borrowed capital without pursuing hostile criminal police complaints. Online dispute resolution offers a structured and professional platform to demand repayment.
+                    Lending money to friends, relatives, or peers can turn sour quickly. Without a formal recovery plan, lenders often feel stuck. Police rarely take up pure loan matters, and courts take years. Online dispute tools offer a calm, professional way forward.
                   </p>
                   <p className="text-sm md:text-base leading-relaxed">
-                    Digital mediation facilitates constructive dialogue to resolve personal loan defaults without hostility. When borrowers refuse cooperation, claims escalate to binding arbitration based on promissory notes. Digital payment receipts and WhatsApp debt acknowledgments provide conclusive supporting legal evidence. Online resolution formalizes legitimate financial claims, ensuring lenders recover their hard-earned money.
+                    A mediator helps the borrower set up a clear repayment plan. If the borrower still evades payment, an arbitrator steps in. Your bank transfers, WhatsApp chats, and promissory notes serve as strong proof. The arbitrator can issue a binding award that holds the borrower legally accountable.
                   </p>
                 </div>
               </section>
@@ -304,7 +304,7 @@ export default function OnlineDisputeResolutionClient() {
                 
                 <div className="prose prose-base max-w-none text-slate-650 space-y-6">
                   <p className="text-sm md:text-base leading-relaxed">
-                    Following a structured legal process map ensures seamless debt recovery on platforms:
+                    Follow this clear roadmap to recover unpaid money online:
                   </p>
                 </div>
 
@@ -319,7 +319,7 @@ export default function OnlineDisputeResolutionClient() {
                     <div className="w-[calc(100%-4rem)] md:w-[calc(50%-2.5rem)] bg-white p-5 rounded-2xl shadow-sm border border-slate-100 group-hover:border-[#DC2626]/30 transition-colors">
                       <h3 className="text-lg md:text-xl font-bold text-slate-900 mb-2">Drafting and Serving the Digital Notice</h3>
                       <p className="text-xs md:text-sm text-slate-600 leading-relaxed">
-                        The recovery process commences by issuing a comprehensive digital legal demand notice. Creditors serve notices via verified email, WhatsApp messages, and registered mobile links. The Supreme Court confirms that instant messaging delivery constitutes valid legal notice service. Digital notices detail exact loan amounts, payment timelines, and consequences of default. Verifiable delivery timestamps eliminate common debtor claims of never receiving physical letters.
+                        The process begins with a formal digital legal notice. You send this notice by email, WhatsApp, and SMS. The Supreme Court of India accepts notices sent on WhatsApp with blue ticks as valid legal delivery. The notice states the exact amount due, the repayment deadline, and next steps. Digital delivery timestamps stop debtors from claiming they never received the letter.
                       </p>
                     </div>
                   </div>
@@ -332,10 +332,10 @@ export default function OnlineDisputeResolutionClient() {
                     <div className="w-[calc(100%-4rem)] md:w-[calc(50%-2.5rem)] bg-white p-5 rounded-2xl shadow-sm border border-slate-100 group-hover:border-[#DC2626]/30 transition-colors">
                       <h3 className="text-lg md:text-xl font-bold text-slate-900 mb-2">The e-Mediation Phase</h3>
                       <p className="text-xs md:text-sm text-slate-600 leading-relaxed">
-                        Unresolved payment notices transition immediately into the formal online mediation resolution phase. The platform appoints an impartial accredited mediator to facilitate constructive settlement negotiations. The mediator identifies underlying financial constraints and suggests realistic structured repayment installment plans.
+                        If the debtor does not clear the dues, the case moves to online mediation. The platform assigns an accredited mediator to help both sides reach an agreement. The mediator reviews the debt and suggests a realistic payment plan.
                       </p>
                       <p className="text-xs md:text-sm text-slate-600 leading-relaxed mt-2">
-                        Parties conduct private video conferences to negotiate mutually acceptable debt resolution terms. Reaching an agreement leads to a formal settlement contract signed via Aadhaar. Digital settlement agreements possess equal legal force as formal court decrees under law.
+                        Both sides join private video calls to work out terms. If you reach a deal, both sides sign a settlement agreement via Aadhaar e-Sign. Under Indian law, this agreement has the same legal power as a court decree.
                       </p>
                     </div>
                   </div>
@@ -348,10 +348,10 @@ export default function OnlineDisputeResolutionClient() {
                     <div className="w-[calc(100%-4rem)] md:w-[calc(50%-2.5rem)] bg-white p-5 rounded-2xl shadow-sm border border-slate-100 group-hover:border-[#DC2626]/30 transition-colors">
                       <h3 className="text-lg md:text-xl font-bold text-slate-900 mb-2">Binding e-Arbitration and the Arbitral Award</h3>
                       <p className="text-xs md:text-sm text-slate-600 leading-relaxed">
-                        Disputes escalate to binding digital arbitration if borrowers refuse mediation settlement offers. The digital platform appoints an independent arbitrator to adjudicate the financial claim. Both parties upload invoices, contract agreements, and bank records to the portal.
+                        If mediation fails or the debtor refuses to join, the claim moves to arbitration. The platform appoints an independent arbitrator to rule on your case. Both sides upload their contracts, chats, and bank receipts to the portal.
                       </p>
                       <p className="text-xs md:text-sm text-slate-600 leading-relaxed mt-2">
-                        Arbitrators conduct virtual hearings or review documentary evidence through accelerated paperless procedures. The arbitrator delivers a digitally signed arbitral award holding full binding legal authority. The award conclusively establishes borrower liability and mandates immediate payment of outstanding dues.
+                        The arbitrator reviews the evidence and holds virtual hearings. Then, the arbitrator issues a final, digitally signed arbitral award. This award is legally binding and orders the debtor to pay the full debt with interest.
                       </p>
                     </div>
                   </div>
@@ -364,27 +364,27 @@ export default function OnlineDisputeResolutionClient() {
                 </h2>
                 <div className="prose prose-base max-w-none text-slate-650 space-y-6">
                   <p className="text-sm md:text-base leading-relaxed">
-                    Online dispute resolution resolves chronic collection bottlenecks inherent in conventional judicial litigation. Creditors recover outstanding capital faster while maintaining complete statutory compliance throughout proceedings:
+                    Online dispute resolution fixes the biggest flaws of regular court cases. It lets you recover money fast while staying fully within the law:
                   </p>
 
                   <h3 className="text-lg md:text-xl font-bold text-slate-900 mt-8 mb-3">
                     Speed and Efficiency of Digital Proceedings
                   </h3>
                   <p className="text-sm md:text-base leading-relaxed">
-                    Automated case management software eliminates administrative delays and missing physical court file issues. Software systems strictly enforce document filing deadlines without granting endless verbal adjournments. Virtual hearings start punctually, saving valuable working hours for business founders and executives.
+                    Automated software keeps your case on track. It prevents the paperwork delays and lost case files common in district courts. The portal enforces strict deadlines for filing documents. Hearings start on time, so business owners do not waste valuable work hours.
                   </p>
                   <p className="text-sm md:text-base leading-relaxed">
-                    Creditors secure enforceable arbitral awards in weeks rather than enduring years in courts. Digital processes eliminate geographical boundaries, enabling seamless resolution across different Indian cities.
+                    Most online cases finish in weeks rather than years. Because it is all online, you can resolve claims across different states with zero travel.
                   </p>
 
                   <h3 className="text-lg md:text-xl font-bold text-slate-900 mt-8 mb-3">
                     Legal Enforceability of the Final Award
                   </h3>
                   <p className="text-sm md:text-base leading-relaxed">
-                    Online arbitral awards carry full legal validity under Indian arbitration statutory law. Section 36 of the Arbitration and Conciliation Act 1996 ensures complete enforceability. Digital awards function with identical authority as formal decrees passed by civil courts.
+                    An online arbitral award carries the same legal weight as a civil court decree. Section 36 of the Arbitration and Conciliation Act gives it full binding force. The debtor must follow the award once it is issued.
                   </p>
                   <p className="text-sm md:text-base leading-relaxed">
-                    If debtors fail to comply, creditors file execution petitions in local courts. Civil courts order bank account attachments, salary garnishments, or property seizures against debtors. Ironclad legal enforceability transforms online dispute resolution into a formidable recovery tool.
+                    If the debtor still refuses to pay, you can take the award to your local civil court for execution. The court can freeze the debtor's bank accounts, garnish their salary, or attach their property. This strong legal backing gives online claims real teeth.
                   </p>
                 </div>
               </section>
@@ -395,14 +395,14 @@ export default function OnlineDisputeResolutionClient() {
                 </h2>
                 <div className="prose prose-base max-w-none text-slate-650 space-y-6">
                   <p className="text-sm md:text-base leading-relaxed">
-                    Creditors must navigate procedural challenges and deceptive debtor tactics during digital dispute proceedings:
+                    Watch out for common debtor tricks and procedural hurdles during online claims:
                   </p>
 
                   <h3 className="text-lg md:text-xl font-bold text-slate-900 mt-8 mb-3">
                     Non-responsive Defaulters During Mediation
                   </h3>
                   <p className="text-sm md:text-base leading-relaxed">
-                    Debtors occasionally ignore digital summons, hoping creditors abandon claims due to frustration. Uncooperative respondents refuse portal registrations and leave official settlement messages unread continuously:
+                    Some debtors ignore digital summons, hoping you will give up. They skip portal sign-ups and leave messages unread. Keep an eye out for these warning signs:
                   </p>
 
                   {/* RED FLAGS LIST UI */}
@@ -415,7 +415,7 @@ export default function OnlineDisputeResolutionClient() {
                       </div>
                       <div>
                         <h4 className="font-bold text-slate-900 text-sm">Ignoring Legal Notices</h4>
-                        <p className="text-xs text-slate-600 mt-1">Debtors receive verified digital notices but refuse to reply within fifteen days.</p>
+                        <p className="text-xs text-slate-600 mt-1">The debtor receives your digital notice but fails to reply within 15 days.</p>
                       </div>
                     </div>
                     <div className="flex items-start p-4 bg-red-50 rounded-xl border border-red-100">
@@ -426,7 +426,7 @@ export default function OnlineDisputeResolutionClient() {
                       </div>
                       <div>
                         <h4 className="font-bold text-slate-900 text-sm">Refusing Portal Registration</h4>
-                        <p className="text-xs text-slate-600 mt-1">Borrowers decline to verify identity credentials on the digital dispute resolution platform.</p>
+                        <p className="text-xs text-slate-600 mt-1">The borrower refuses to verify their ID on the dispute resolution portal.</p>
                       </div>
                     </div>
                     <div className="flex items-start p-4 bg-red-50 rounded-xl border border-red-100">
@@ -437,7 +437,7 @@ export default function OnlineDisputeResolutionClient() {
                       </div>
                       <div>
                         <h4 className="font-bold text-slate-900 text-sm">Delay Tactics in Arbitration</h4>
-                        <p className="text-xs text-slate-600 mt-1">Defaulting parties submit repetitive procedural applications to delay arbitral hearings unnecessarily.</p>
+                        <p className="text-xs text-slate-600 mt-1">The debtor files repeated excuses to stall virtual hearings.</p>
                       </div>
                     </div>
                     <div className="flex items-start p-4 bg-red-50 rounded-xl border border-red-100">
@@ -447,17 +447,17 @@ export default function OnlineDisputeResolutionClient() {
                         </svg>
                       </div>
                       <div>
-                        <h4 className="font-bold text-slate-900 text-sm">Hidden Asset Execution</h4>
-                        <p className="text-xs text-slate-600 mt-1">Debtors divert funds across accounts to frustrate court execution of arbitral awards.</p>
+                        <h4 className="font-bold text-slate-900 text-sm">Hiding Assets from Recovery</h4>
+                        <p className="text-xs text-slate-600 mt-1">The debtor moves money to other accounts to avoid paying the final award.</p>
                       </div>
                     </div>
                   </div>
 
                   <p className="text-sm md:text-base leading-relaxed">
-                    Arbitrators proceed ex-parte when defaulting parties deliberately ignore official dispute notices. The arbitrator evaluates creditor evidence independently and delivers a binding ex-parte arbitral award. Solid documentary records of unpaid debts guarantee favorable awards despite respondent absence.
+                    If a debtor refuses to join the case, the arbitrator does not stop. The arbitrator can hold ex-parte proceedings. They review your evidence alone and issue a binding ex-parte award in your favor. Strong digital records ensure you still win your case.
                   </p>
                   <p className="text-sm md:text-base leading-relaxed">
-                    Executing awards requires identifying active bank accounts and tangible assets of debtors. Creditors should conduct preliminary asset searches to facilitate swift civil court execution. Diligent financial recordkeeping ensures court bailiffs attach debtor assets without procedural delays.
+                    To collect your money, you must know where the debtor keeps their assets. Do a quick check of their bank branches, business premises, or vehicles. Clear asset details help court officers attach funds quickly and recover every rupee owed.
                   </p>
                 </div>
               </section>
@@ -539,7 +539,7 @@ export default function OnlineDisputeResolutionClient() {
                 <h3 className="font-black text-slate-900 text-lg">Vikram Sharma</h3>
                 <p className="text-xs text-[#DC2626] font-bold uppercase tracking-wider mb-3">Legal Strategist</p>
                 <p className="text-xs text-slate-600 leading-relaxed">
-                  Specialized legal strategist advising enterprises on digital dispute resolution and debt recovery. Dedicated to helping Indian creditors secure fast, compliant, and enforceable financial resolutions.
+                  Vikram Sharma is a legal strategist who guides businesses on digital debt recovery and online dispute tools. He helps Indian creditors resolve payment defaults quickly, fairly, and within the law.
                 </p>
                 <time dateTime="2026-06-29" className="block mt-4 text-[10px] text-slate-400 uppercase tracking-widest font-semibold border-t border-slate-100 pt-3">
                   Updated: June 29, 2026

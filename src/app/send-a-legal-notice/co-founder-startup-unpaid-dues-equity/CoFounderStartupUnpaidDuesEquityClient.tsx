@@ -232,9 +232,9 @@ export default function CoFounderStartupUnpaidDuesEquityClient() {
   };
 
   const tocSections = [
-    { id: 'statutory-framework', title: '1. Statutory Framework: Founder Rights, Equity Vesting & Company Law' },
-    { id: 'actionable-grounds', title: '2. Actionable Grounds: Unlawful Dilution, Forced Ouster & Unpaid Dues' },
-    { id: 'legal-remedies', title: '3. Legal Remedies: NCLT Oppression Petitions, Commercial Suits & Injunctions' },
+    { id: 'statutory-framework', title: '1. Statutory Framework: Founder Rights, Equity Vesting & MCA Laws' },
+    { id: 'actionable-grounds', title: '2. Actionable Grounds: Dilution, Forced Ouster & Unpaid Dues' },
+    { id: 'legal-remedies', title: '3. Legal Remedies: NCLT Petitions, Commercial Suits & Injunctions' },
     { id: 'judicial-precedents', title: '4. Landmark Judicial Precedents on Founder Equity & Oppression' },
     { id: 'evidentiary-checklist', title: '5. Pre-Notice Evidentiary Checklist & MCA Register Verification' },
     { id: 'essential-clauses', title: '6. Key Clauses in a Co-Founder Statutory Demand Notice' },
@@ -392,39 +392,36 @@ export default function CoFounderStartupUnpaidDuesEquityClient() {
                     <span className="text-xs font-semibold text-slate-400 uppercase tracking-wider mr-2">
                       Share:
                     </span>
-                    <a
-                      href={`https://twitter.com/intent/tweet?url=${shareUrl}&text=${shareText}`}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="w-8 h-8 rounded-full bg-black text-white hover:opacity-80 flex items-center justify-center transition-opacity"
+                    <button
+                      type="button"
+                      onClick={() => window.open(`https://twitter.com/intent/tweet?url=${shareUrl}&text=${shareText}`, '_blank', 'noopener,noreferrer')}
+                      className="w-8 h-8 rounded-full bg-black text-white hover:opacity-80 flex items-center justify-center transition-opacity cursor-pointer"
                       aria-label="Share on X (Twitter)"
                     >
                       <svg className="w-4 h-4 fill-current" viewBox="0 0 24 24">
                         <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z" />
                       </svg>
-                    </a>
-                    <a
-                      href={`https://www.facebook.com/sharer/sharer.php?u=${shareUrl}`}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="w-8 h-8 rounded-full bg-[#1877F2] text-white hover:opacity-80 flex items-center justify-center transition-opacity"
+                    </button>
+                    <button
+                      type="button"
+                      onClick={() => window.open(`https://www.facebook.com/sharer/sharer.php?u=${shareUrl}`, '_blank', 'noopener,noreferrer')}
+                      className="w-8 h-8 rounded-full bg-[#1877F2] text-white hover:opacity-80 flex items-center justify-center transition-opacity cursor-pointer"
                       aria-label="Share on Facebook"
                     >
                       <svg className="w-4 h-4 fill-current" viewBox="0 0 24 24">
                         <path d="M9.198 21.5h4v-8.01h3.604l.396-3.98h-4V7.5a1 1 0 0 1 1-1h3v-4h-3a5 5 0 0 0-5 5v2.01h-2l-.396 3.98h2.396v8.01z" />
                       </svg>
-                    </a>
-                    <a
-                      href={`https://www.linkedin.com/shareArticle?mini=true&url=${shareUrl}&title=${encodeURIComponent('Legal Notice to Co-Founder for Unpaid Startup Dues & Equity | Legal Recovery India')}`}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="w-8 h-8 rounded-full bg-[#0A66C2] text-white hover:opacity-80 flex items-center justify-center transition-opacity"
+                    </button>
+                    <button
+                      type="button"
+                      onClick={() => window.open(`https://www.linkedin.com/shareArticle?mini=true&url=${shareUrl}&title=${encodeURIComponent('Legal Notice to Co-Founder for Unpaid Startup Dues & Equity | Legal Recovery India')}`, '_blank', 'noopener,noreferrer')}
+                      className="w-8 h-8 rounded-full bg-[#0A66C2] text-white hover:opacity-80 flex items-center justify-center transition-opacity cursor-pointer"
                       aria-label="Share on LinkedIn"
                     >
                       <svg className="w-4 h-4 fill-current" viewBox="0 0 24 24">
                         <path d="M4.98 3.5c0 1.381-1.11 2.5-2.48 2.5s-2.48-1.119-2.48-2.5c0-1.38 1.11-2.5 2.48-2.5s2.48 1.12 2.48 2.5zm.02 4.5h-5v16h5v-16zm7.982 0h-4.968v16h4.969v-8.399c0-4.67 6.029-5.052 6.029 0v8.399h4.988v-10.131c0-7.88-8.922-7.593-11.018-3.714v-2.155z" />
                       </svg>
-                    </a>
+                    </button>
                   </div>
                 </div>
 
@@ -435,32 +432,17 @@ export default function CoFounderStartupUnpaidDuesEquityClient() {
                   </h2>
                   <p className="text-sm text-slate-700 font-medium leading-relaxed">
                     A startup founder, technical architect, or early partner can serve an advocate-drafted statutory legal notice to a defaulting co-founder and company under{' '}
-                    <a
-                      href="https://www.indiacode.nic.in/handle/123456789/2187"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="text-purple-600 hover:text-purple-800 hover:underline"
-                    >
+                    <span className="font-semibold text-slate-800">
                       Section 73 of the Indian Contract Act, 1872
-                    </a>{' '}
+                    </span>{' '}
                     and{' '}
-                    <a
-                      href="https://www.indiacode.nic.in/handle/123456789/2114"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="text-purple-600 hover:text-purple-800 hover:underline"
-                    >
+                    <span className="font-semibold text-slate-800">
                       Sections 56, 88, 169, and 241 of the Companies Act, 2013
-                    </a>
+                    </span>
                     , demanding immediate release of unpaid compensation, sweat equity remuneration, and formal allotment of vested equity shares within 15 days. If the co-founders fail to comply, the claimant can initiate oppression and mismanagement proceedings before the National Company Law Tribunal (NCLT) or file a commercial suit for specific performance under{' '}
-                    <a
-                      href="https://www.indiacode.nic.in/handle/123456789/1583"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="text-purple-600 hover:text-purple-800 hover:underline"
-                    >
+                    <span className="font-semibold text-slate-800">
                       Section 10 of the Specific Relief Act, 1963
-                    </a>{' '}
+                    </span>{' '}
                     alongside emergency interim injunctions to freeze cap table alterations and share transfers.
                   </p>
                 </div>
@@ -482,7 +464,7 @@ export default function CoFounderStartupUnpaidDuesEquityClient() {
                 {/* ── SECTION 1: STATUTORY FRAMEWORK ────────────────────── */}
                 <section id="statutory-framework" className="scroll-mt-32">
                   <h2 className="text-xl md:text-3xl font-black text-slate-900 mb-5 border-b-2 border-[#DC2626] pb-2 inline-block">
-                    1. Statutory Framework: Founder Rights, Equity Vesting &amp; Company Law in India
+                    1. Statutory Framework: Founder Rights, Equity Vesting &amp; MCA Laws
                   </h2>
                   <div className="prose prose-base max-w-none text-slate-650 space-y-6">
                     <p className="text-sm md:text-base leading-relaxed">
@@ -512,14 +494,9 @@ export default function CoFounderStartupUnpaidDuesEquityClient() {
                     </div>
                     <p className="text-sm md:text-base leading-relaxed">
                       Furthermore, founder remuneration agreements executed through board resolutions or employment contracts constitute enforceable liquidated debts. Under Section 2(y) of the{' '}
-                      <a
-                        href="https://labour.gov.in/sites/default/files/the_code_on_wages_2019_no._29_of_2019.pdf"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="text-purple-600 hover:text-purple-800 hover:underline"
-                      >
+                      <span className="font-semibold text-slate-800">
                         Code on Wages, 2019
-                      </a>
+                      </span>
                       , accrued founder salary and performance bonuses form part of statutory wages, prohibiting unauthorized deductions or indefinite deferrals once agreed company milestones have been attained.
                     </p>
                   </div>
@@ -528,7 +505,7 @@ export default function CoFounderStartupUnpaidDuesEquityClient() {
                 {/* ── SECTION 2: ACTIONABLE GROUNDS ─────────────────────── */}
                 <section id="actionable-grounds" className="scroll-mt-32">
                   <h2 className="text-xl md:text-3xl font-black text-slate-900 mb-5 border-b-2 border-[#DC2626] pb-2 inline-block">
-                    2. Actionable Grounds: Unlawful Dilution, Forced Ouster &amp; Unpaid Founder Dues
+                    2. Actionable Grounds: Dilution, Forced Ouster &amp; Unpaid Dues
                   </h2>
                   <div className="prose prose-base max-w-none text-slate-650 space-y-6">
                     <p className="text-sm md:text-base leading-relaxed">
@@ -582,7 +559,7 @@ export default function CoFounderStartupUnpaidDuesEquityClient() {
                 {/* ── SECTION 3: LEGAL REMEDIES ─────────────────────────── */}
                 <section id="legal-remedies" className="scroll-mt-32">
                   <h2 className="text-xl md:text-3xl font-black text-slate-900 mb-5 border-b-2 border-[#DC2626] pb-2 inline-block">
-                    3. Legal Remedies: NCLT Oppression Petitions, Commercial Suits &amp; Injunctions
+                    3. Legal Remedies: NCLT Petitions, Commercial Suits &amp; Injunctions
                   </h2>
                   <div className="prose prose-base max-w-none text-slate-650 space-y-6">
                     <p className="text-sm md:text-base leading-relaxed">
@@ -660,14 +637,9 @@ export default function CoFounderStartupUnpaidDuesEquityClient() {
                       </h4>
                       <p className="text-xs sm:text-sm text-slate-700 leading-relaxed">
                         Under the authoritative ruling of the Supreme Court of India in{' '}
-                        <a
-                          href="https://main.sci.gov.in/judgment/judis/49605.pdf"
-                          target="_blank"
-                          rel="noopener noreferrer"
-                          className="text-purple-600 hover:text-purple-800 hover:underline"
-                        >
+                        <span className="font-semibold text-slate-800">
                           Patil Automation Pvt. Ltd. v. Rakheja Engineers Pvt. Ltd. (2022) 10 SCC 1
-                        </a>
+                        </span>
                         , commercial suits concerning founder agreements, shareholder dues, and executive contracts must undergo mandatory pre-institution mediation through the District Legal Services Authority (DLSA) unless urgent interim relief is claimed. Serving a comprehensive statutory legal notice satisfies evidentiary conditions, defines the exact dispute scope, and accelerates commercial settlement during the mediation window.
                       </p>
                     </div>
@@ -809,14 +781,9 @@ export default function CoFounderStartupUnpaidDuesEquityClient() {
                       </h4>
                       <p className="text-xs sm:text-sm text-slate-700 leading-relaxed">
                         Before dispatching the notice, our legal team conducts a forensic audit on the{' '}
-                        <a
-                          href="https://www.mca.gov.in/content/mca/global/en/home.html"
-                          target="_blank"
-                          rel="noopener noreferrer"
-                          className="text-purple-600 hover:text-purple-800 hover:underline"
-                        >
+                        <span className="font-semibold text-slate-800">
                           Ministry of Corporate Affairs (MCA) portal
-                        </a>
+                        </span>
                         . We extract the company&apos;s Master Data, verify authorized share capital, inspect filed Form MGT-7 (Annual Return), Form PAS-3 (Return of Allotment), and Form DIR-12 (Director Appointments/Resignations). This ensures the statutory notice is served on all current directors at the exact registered office, eliminating procedural service defects in court.
                       </p>
                     </div>
@@ -967,7 +934,7 @@ export default function CoFounderStartupUnpaidDuesEquityClient() {
                       <a
                         href="https://www.indiacode.nic.in/handle/123456789/2114"
                         target="_blank"
-                        rel="noopener noreferrer"
+                        rel="nofollow noopener noreferrer"
                         className="text-purple-600 hover:text-purple-800 hover:underline"
                       >
                         Companies Act, 2013 — Sections 56, 62, 88, 169, 241 &amp; 242, indiacode.nic.in
@@ -977,71 +944,29 @@ export default function CoFounderStartupUnpaidDuesEquityClient() {
                       <a
                         href="https://www.indiacode.nic.in/handle/123456789/2187"
                         target="_blank"
-                        rel="noopener noreferrer"
+                        rel="nofollow noopener noreferrer"
                         className="text-purple-600 hover:text-purple-800 hover:underline"
                       >
                         Indian Contract Act, 1872 — Sections 73 &amp; 74 (Breach of Contract &amp; Compensation), indiacode.nic.in
                       </a>
                     </li>
                     <li>
-                      <a
-                        href="https://www.indiacode.nic.in/handle/123456789/1583"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="text-purple-600 hover:text-purple-800 hover:underline"
-                      >
-                        Specific Relief Act, 1963 — Section 10 (Mandatory Specific Performance of Contracts), indiacode.nic.in
-                      </a>
+                      Specific Relief Act, 1963 — Section 10 (Mandatory Specific Performance of Contracts), indiacode.nic.in
                     </li>
                     <li>
-                      <a
-                        href="https://www.indiacode.nic.in/handle/123456789/2156"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="text-purple-600 hover:text-purple-800 hover:underline"
-                      >
-                        Commercial Courts Act, 2015 — Section 12A Mandatory Pre-Institution Mediation, indiacode.nic.in
-                      </a>
+                      Commercial Courts Act, 2015 — Section 12A Mandatory Pre-Institution Mediation, indiacode.nic.in
                     </li>
                     <li>
-                      <a
-                        href="https://main.sci.gov.in"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="text-purple-600 hover:text-purple-800 hover:underline"
-                      >
-                        Supreme Court of India — Tata Consultancy Services Ltd. v. Cyrus Investments Pvt. Ltd. (2021) 9 SCC 449, main.sci.gov.in
-                      </a>
+                      Supreme Court of India — Tata Consultancy Services Ltd. v. Cyrus Investments Pvt. Ltd. (2021) 9 SCC 449, main.sci.gov.in
                     </li>
                     <li>
-                      <a
-                        href="https://nclt.gov.in"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="text-purple-600 hover:text-purple-800 hover:underline"
-                      >
-                        National Company Law Tribunal (NCLT) Rules &amp; Company Petition Procedures, nclt.gov.in
-                      </a>
+                      National Company Law Tribunal (NCLT) Rules &amp; Company Petition Procedures, nclt.gov.in
                     </li>
                     <li>
-                      <a
-                        href="https://www.mca.gov.in/content/mca/global/en/home.html"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="text-purple-600 hover:text-purple-800 hover:underline"
-                      >
-                        Ministry of Corporate Affairs (MCA) — Company Master Data &amp; Form PAS-3 / MGT-7 Audit, mca.gov.in
-                      </a>
+                      Ministry of Corporate Affairs (MCA) — Company Master Data &amp; Form PAS-3 / MGT-7 Audit, mca.gov.in
                     </li>
                     <li>
-                      <a
-                        href="https://www.indiacode.nic.in/handle/123456789/20234"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="text-purple-600 hover:text-purple-800 hover:underline"
-                      >
-                        Bharatiya Nyaya Sanhita, 2023 — Sections 316 (Breach of Trust) &amp; 318 (Cheating), indiacode.nic.in
-                      </a>
+                      Bharatiya Nyaya Sanhita, 2023 — Sections 316 (Breach of Trust) &amp; 318 (Cheating), indiacode.nic.in
                     </li>
                   </ol>
                 </section>

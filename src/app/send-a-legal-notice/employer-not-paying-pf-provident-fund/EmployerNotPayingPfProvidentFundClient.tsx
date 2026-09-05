@@ -307,15 +307,30 @@ export default function EmployerNotPayingPfProvidentFundClient() {
                   {/* Share Buttons */}
                   <div className="flex items-center gap-2">
                     <span className="text-xs font-semibold text-slate-400 uppercase tracking-wider mr-2">Share:</span>
-                    <a href="https://twitter.com/intent/tweet?url=https%3A%2F%2Flegalrecovery.in%2Fsend-a-legal-notice%2Femployer-not-paying-pf-provident-fund&text=Recover%20unpaid%20PF%20and%20Provident%20Fund%20dues%20from%20defaulting%20employers%20with%20a%20formal%20legal%20notice!%20%23EPFORecovery" target="_blank" rel="noopener noreferrer" className="w-8 h-8 rounded-full bg-black text-white hover:opacity-80 flex items-center justify-center transition-opacity" aria-label="Share on X (Twitter)">
+                    <button
+                      type="button"
+                      onClick={() => window.open('https://twitter.com/intent/tweet?url=https%3A%2F%2Flegalrecovery.in%2Fsend-a-legal-notice%2Femployer-not-paying-pf-provident-fund&text=Recover%20unpaid%20PF%20and%20Provident%20Fund%20dues%20from%20defaulting%20employers%20with%20a%20formal%20legal%20notice!%20%23EPFORecovery', '_blank', 'noopener,noreferrer')}
+                      className="w-8 h-8 rounded-full bg-black text-white hover:opacity-80 flex items-center justify-center transition-opacity cursor-pointer"
+                      aria-label="Share on X (Twitter)"
+                    >
                       <svg className="w-4 h-4 fill-current" viewBox="0 0 24 24"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
-                    </a>
-                    <a href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Flegalrecovery.in%2Fsend-a-legal-notice%2Femployer-not-paying-pf-provident-fund" target="_blank" rel="noopener noreferrer" className="w-8 h-8 rounded-full bg-[#1877F2] text-white hover:opacity-80 flex items-center justify-center transition-opacity" aria-label="Share on Facebook">
+                    </button>
+                    <button
+                      type="button"
+                      onClick={() => window.open('https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Flegalrecovery.in%2Fsend-a-legal-notice%2Femployer-not-paying-pf-provident-fund', '_blank', 'noopener,noreferrer')}
+                      className="w-8 h-8 rounded-full bg-[#1877F2] text-white hover:opacity-80 flex items-center justify-center transition-opacity cursor-pointer"
+                      aria-label="Share on Facebook"
+                    >
                       <svg className="w-4 h-4 fill-current" viewBox="0 0 24 24"><path d="M9.198 21.5h4v-8.01h3.604l.396-3.98h-4V7.5a1 1 0 0 1 1-1h3v-4h-3a5 5 0 0 0-5 5v2.01h-2l-.396 3.98h2.396v8.01z"/></svg>
-                    </a>
-                    <a href="https://www.linkedin.com/shareArticle?mini=true&url=https%3A%2F%2Flegalrecovery.in%2Fsend-a-legal-notice%2Femployer-not-paying-pf-provident-fund&title=Legal%20Notice%20to%20Employer%20for%20Not%20Paying%20PF%20Provident%20Fund" target="_blank" rel="noopener noreferrer" className="w-8 h-8 rounded-full bg-[#0A66C2] text-white hover:opacity-80 flex items-center justify-center transition-opacity" aria-label="Share on LinkedIn">
+                    </button>
+                    <button
+                      type="button"
+                      onClick={() => window.open('https://www.linkedin.com/shareArticle?mini=true&url=https%3A%2F%2Flegalrecovery.in%2Fsend-a-legal-notice%2Femployer-not-paying-pf-provident-fund&title=Legal%20Notice%20to%20Employer%20for%20Not%20Paying%20PF%20Provident%20Fund', '_blank', 'noopener,noreferrer')}
+                      className="w-8 h-8 rounded-full bg-[#0A66C2] text-white hover:opacity-80 flex items-center justify-center transition-opacity cursor-pointer"
+                      aria-label="Share on LinkedIn"
+                    >
                       <svg className="w-4 h-4 fill-current" viewBox="0 0 24 24"><path d="M4.98 3.5c0 1.381-1.11 2.5-2.48 2.5s-2.48-1.119-2.48-2.5c0-1.38 1.11-2.5 2.48-2.5s2.48 1.12 2.48 2.5zm.02 4.5h-5v16h5v-16zm7.982 0h-4.968v16h4.969v-8.399c0-4.67 6.029-5.052 6.029 0v8.399h4.988v-10.131c0-7.88-8.922-7.593-11.018-3.714v-2.155z"/></svg>
-                    </a>
+                    </button>
                   </div>
                 </div>
 
@@ -333,7 +348,7 @@ export default function EmployerNotPayingPfProvidentFundClient() {
                   </h2>
                   <div className="prose prose-base max-w-none text-slate-650 space-y-6">
                     <p className="text-sm md:text-base leading-relaxed">
-                      Provident Fund contributions represent a sacrosanct statutory social security benefit guaranteed to Indian employees under the <a href="https://www.indiacode.nic.in/handle/123456789/2187" target="_blank" rel="noopener noreferrer" className="text-purple-600 hover:text-purple-800 hover:underline">Employees&apos; Provident Funds and Miscellaneous Provisions Act, 1952 (EPF &amp; MP Act, 1952)</a>. Every commercial establishment, manufacturing entity, tech startup, or corporate enterprise employing 20 or more persons is legally mandated to register with the <a href="https://www.epfindia.gov.in/" target="_blank" rel="noopener noreferrer" className="text-purple-600 hover:text-purple-800 hover:underline">Employees&apos; Provident Fund Organisation (EPFO)</a> under the aegis of the <a href="https://labour.gov.in/" target="_blank" rel="noopener noreferrer" className="text-purple-600 hover:text-purple-800 hover:underline">Ministry of Labour and Employment</a>.
+                      Provident Fund contributions represent a sacrosanct statutory social security benefit guaranteed to Indian employees under the <span className="font-semibold text-slate-800">Employees&apos; Provident Funds and Miscellaneous Provisions Act, 1952 (EPF &amp; MP Act, 1952)</span>. Every commercial establishment, manufacturing entity, tech startup, or corporate enterprise employing 20 or more persons is legally mandated to register with the <span className="font-semibold text-slate-800">Employees&apos; Provident Fund Organisation (EPFO)</span> under the aegis of the <span className="font-semibold text-slate-800">Ministry of Labour and Employment</span>.
                     </p>
                     <p className="text-sm md:text-base leading-relaxed">
                       Under Section 6 of the EPF &amp; MP Act, 1952 read with Paragraph 38 of the Employees&apos; Provident Funds Scheme, 1952, the employer is legally obligated to deduct 12% of the employee&apos;s basic wages, dearness allowance (DA), and retaining allowance, match it with a mandatory 12% employer contribution (distributed into 8.33% Employees&apos; Pension Scheme and 3.67% EPF account), and deposit the entire aggregate sum with EPFO on or before the 15th day of the following calendar month.
@@ -526,7 +541,7 @@ export default function EmployerNotPayingPfProvidentFundClient() {
                           </tr>
                           <tr>
                             <td className="p-3 font-bold text-slate-900">NCLT Priority Claim in Insolvency</td>
-                            <td className="p-3"><a href="https://ibbi.gov.in/" target="_blank" rel="noopener noreferrer" className="text-purple-600 hover:text-purple-800 hover:underline">Insolvency &amp; Bankruptcy Code, 2016 (Sec 36(4))</a></td>
+                            <td className="p-3 font-semibold text-slate-800">Insolvency &amp; Bankruptcy Code, 2016 (Sec 36(4))</td>
                             <td className="p-3">Provident Fund excluded from liquidation estate; cleared with super-priority</td>
                             <td className="p-3">During CIRP / Liquidation</td>
                             <td className="p-3">Guarantees 100% PF recovery ahead of secured financial creditors and banks.</td>
@@ -655,7 +670,7 @@ export default function EmployerNotPayingPfProvidentFundClient() {
                       <div className="p-5 rounded-2xl bg-white border border-slate-200 shadow-sm">
                         <h4 className="font-extrabold text-slate-900 text-sm mb-1">1. Lodge Formal EPFO Complaint &amp; Trigger Section 7A Inquiry</h4>
                         <p className="text-xs sm:text-sm text-slate-650 leading-relaxed">
-                          Submit an official complaint on the <a href="https://epfigms.gov.in/" target="_blank" rel="noopener noreferrer" className="text-purple-600 hover:text-purple-800 hover:underline">EPFiGMS Grievance Portal</a> and <a href="https://pgportal.gov.in/" target="_blank" rel="noopener noreferrer" className="text-purple-600 hover:text-purple-800 hover:underline">CPGRAMS</a>. The RPFC initiates quasi-judicial Section 7A inquiry summons, issues production orders for company wage registers, and attaches corporate bank accounts under Section 8B.
+                          Submit an official complaint on the <span className="font-semibold text-slate-800">EPFiGMS Grievance Portal</span> and <span className="font-semibold text-slate-800">CPGRAMS</span>. The RPFC initiates quasi-judicial Section 7A inquiry summons, issues production orders for company wage registers, and attaches corporate bank accounts under Section 8B.
                         </p>
                       </div>
 
@@ -711,7 +726,7 @@ export default function EmployerNotPayingPfProvidentFundClient() {
 
                 <div className="pt-8 border-t border-slate-100">
                   <p className="text-xs text-slate-400">
-                    References: [1] <a href="https://www.indiacode.nic.in/handle/123456789/2187" target="_blank" rel="noopener noreferrer" className="text-purple-600 hover:text-purple-800 hover:underline">Employees&apos; Provident Funds and Miscellaneous Provisions Act, 1952 (Sections 6, 7A, 7Q, 14, 14B)</a>. [2] <a href="https://www.epfindia.gov.in/" target="_blank" rel="noopener noreferrer" className="text-purple-600 hover:text-purple-800 hover:underline">Employees&apos; Provident Fund Organisation (EPFO) Operational Guidelines</a>. [3] <a href="https://epfigms.gov.in/" target="_blank" rel="noopener noreferrer" className="text-purple-600 hover:text-purple-800 hover:underline">EPFiGMS Portal for Online Grievance Redressal</a>. [4] <a href="https://pgportal.gov.in/" target="_blank" rel="noopener noreferrer" className="text-purple-600 hover:text-purple-800 hover:underline">Centralised Public Grievance Redress and Monitoring System (CPGRAMS)</a>. [5] <a href="https://labour.gov.in/" target="_blank" rel="noopener noreferrer" className="text-purple-600 hover:text-purple-800 hover:underline">Ministry of Labour &amp; Employment, Government of India</a>. [6] <a href="https://ibbi.gov.in/" target="_blank" rel="noopener noreferrer" className="text-purple-600 hover:text-purple-800 hover:underline">Insolvency &amp; Bankruptcy Code, 2016 (Section 36(4)(a)(iii) - Provident Fund Super-Priority)</a>.
+                    References: [1] <a href="https://www.indiacode.nic.in/handle/123456789/2187" target="_blank" rel="nofollow noopener noreferrer" className="text-purple-600 hover:text-purple-800 hover:underline">Employees&apos; Provident Funds and Miscellaneous Provisions Act, 1952 (Sections 6, 7A, 7Q, 14, 14B)</a>. [2] <a href="https://www.epfindia.gov.in/" target="_blank" rel="nofollow noopener noreferrer" className="text-purple-600 hover:text-purple-800 hover:underline">Employees&apos; Provident Fund Organisation (EPFO) Operational Guidelines</a>. [3] EPFiGMS Portal for Online Grievance Redressal. [4] Centralised Public Grievance Redress and Monitoring System (CPGRAMS). [5] Ministry of Labour &amp; Employment, Government of India. [6] Insolvency &amp; Bankruptcy Code, 2016 (Section 36(4)(a)(iii) - Provident Fund Super-Priority).
                   </p>
                 </div>
               </div>

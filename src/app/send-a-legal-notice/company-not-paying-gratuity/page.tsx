@@ -2,9 +2,9 @@ import { Metadata } from 'next';
 import CompanyNotPayingGratuityClient from './CompanyNotPayingGratuityClient';
 
 const slug = 'send-a-legal-notice/company-not-paying-gratuity';
-const title = 'Send Legal Notice to Company for Not Paying Gratuity | Recovery India';
+const title = 'Legal Notice to Company for Not Paying Gratuity India';
 const description =
-  'Company or employer withholding your gratuity after resignation, retirement, or termination? Send an advocate-drafted statutory legal notice under Section 4, 7(3A), and 8 of the Payment of Gratuity Act, 1972 to recover your unpaid gratuity with mandatory 10% statutory interest within 15 days.';
+  'Employer not paying gratuity after resignation? Send a legal notice under the Payment of Gratuity Act to recover dues with 10% interest.';
 const url = `https://www.legalrecovery.in/${slug}`;
 const ogImage = `/images/og/company-not-paying-gratuity.jpg`;
 

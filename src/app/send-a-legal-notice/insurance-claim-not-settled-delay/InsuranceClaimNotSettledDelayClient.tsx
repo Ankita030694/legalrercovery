@@ -392,39 +392,36 @@ export default function InsuranceClaimNotSettledDelayClient() {
                     <span className="text-xs font-semibold text-slate-400 uppercase tracking-wider mr-2">
                       Share:
                     </span>
-                    <a
-                      href={`https://twitter.com/intent/tweet?url=${shareUrl}&text=${shareText}`}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="w-8 h-8 rounded-full bg-black text-white hover:opacity-80 flex items-center justify-center transition-opacity"
+                    <button
+                      type="button"
+                      onClick={() => window.open(`https://twitter.com/intent/tweet?url=${shareUrl}&text=${shareText}`, '_blank', 'noopener,noreferrer')}
+                      className="w-8 h-8 rounded-full bg-black text-white hover:opacity-80 flex items-center justify-center transition-opacity cursor-pointer"
                       aria-label="Share on X (Twitter)"
                     >
                       <svg className="w-4 h-4 fill-current" viewBox="0 0 24 24">
                         <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z" />
                       </svg>
-                    </a>
-                    <a
-                      href={`https://www.facebook.com/sharer/sharer.php?u=${shareUrl}`}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="w-8 h-8 rounded-full bg-[#1877F2] text-white hover:opacity-80 flex items-center justify-center transition-opacity"
+                    </button>
+                    <button
+                      type="button"
+                      onClick={() => window.open(`https://www.facebook.com/sharer/sharer.php?u=${shareUrl}`, '_blank', 'noopener,noreferrer')}
+                      className="w-8 h-8 rounded-full bg-[#1877F2] text-white hover:opacity-80 flex items-center justify-center transition-opacity cursor-pointer"
                       aria-label="Share on Facebook"
                     >
                       <svg className="w-4 h-4 fill-current" viewBox="0 0 24 24">
                         <path d="M9.198 21.5h4v-8.01h3.604l.396-3.98h-4V7.5a1 1 0 0 1 1-1h3v-4h-3a5 5 0 0 0-5 5v2.01h-2l-.396 3.98h2.396v8.01z" />
                       </svg>
-                    </a>
-                    <a
-                      href={`https://www.linkedin.com/shareArticle?mini=true&url=${shareUrl}&title=${encodeURIComponent('Legal Notice for Insurance Claim Not Settled Delay | Legal Recovery India')}`}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="w-8 h-8 rounded-full bg-[#0A66C2] text-white hover:opacity-80 flex items-center justify-center transition-opacity"
+                    </button>
+                    <button
+                      type="button"
+                      onClick={() => window.open(`https://www.linkedin.com/shareArticle?mini=true&url=${shareUrl}&title=${encodeURIComponent('Legal Notice for Insurance Claim Not Settled Delay | Legal Recovery India')}`, '_blank', 'noopener,noreferrer')}
+                      className="w-8 h-8 rounded-full bg-[#0A66C2] text-white hover:opacity-80 flex items-center justify-center transition-opacity cursor-pointer"
                       aria-label="Share on LinkedIn"
                     >
                       <svg className="w-4 h-4 fill-current" viewBox="0 0 24 24">
                         <path d="M4.98 3.5c0 1.381-1.11 2.5-2.48 2.5s-2.48-1.119-2.48-2.5c0-1.38 1.11-2.5 2.48-2.5s2.48 1.12 2.48 2.5zm.02 4.5h-5v16h5v-16zm7.982 0h-4.968v16h4.969v-8.399c0-4.67 6.029-5.052 6.029 0v8.399h4.988v-10.131c0-7.88-8.922-7.593-11.018-3.714v-2.155z" />
                       </svg>
-                    </a>
+                    </button>
                   </div>
                 </div>
 
@@ -435,32 +432,17 @@ export default function InsuranceClaimNotSettledDelayClient() {
                   </h2>
                   <p className="text-sm text-slate-700 font-medium leading-relaxed">
                     A policyholder facing an unsettled or delayed health, motor, life, or commercial insurance claim can serve an advocate-vetted statutory legal notice under{' '}
-                    <a
-                      href="https://irdai.gov.in"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="text-purple-600 hover:text-purple-800 hover:underline"
-                    >
+                    <span className="font-semibold text-slate-800">
                       Regulation 15 of the IRDAI (Protection of Policyholders’ Interests) Regulations, 2017
-                    </a>
+                    </span>
                     , demanding immediate disbursement of the full claim amount alongside statutory penal interest at 2% above the prevailing bank rate within a 15-day compliance window. If the insurance company fails to settle the claim or offer justifiable grounds within the notice period, the policyholder can initiate summary adjudication before the Insurance Ombudsman for claims up to ₹50 Lakhs or file a consumer complaint for deficiency in service under{' '}
-                    <a
-                      href="https://consumeraffairs.nic.in/acts-and-rules/consumer-protection"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="text-purple-600 hover:text-purple-800 hover:underline"
-                    >
+                    <span className="font-semibold text-slate-800">
                       Section 2(11) and Sections 35, 47, or 58 of the Consumer Protection Act, 2019
-                    </a>
+                    </span>
                     . Furthermore, under landmark rulings by the Supreme Court of India in{' '}
-                    <a
-                      href="https://main.sci.gov.in/judgment/judis/49047.pdf"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="text-purple-600 hover:text-purple-800 hover:underline"
-                    >
+                    <span className="font-semibold text-slate-800">
                       Gurmel Singh v. National Insurance Co. Ltd. (2022)
-                    </a>
+                    </span>
                     , insurers are legally barred from withholding policy payouts on hyper-technical or procedural grounds.
                   </p>
                 </div>
@@ -490,14 +472,9 @@ export default function InsuranceClaimNotSettledDelayClient() {
                     </p>
                     <p className="text-sm md:text-base leading-relaxed">
                       The primary regulatory authority governing claim settlement timelines is the{' '}
-                      <a
-                        href="https://irdai.gov.in"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="text-purple-600 hover:text-purple-800 hover:underline"
-                      >
+                      <span className="font-semibold text-slate-800">
                         Insurance Regulatory and Development Authority of India (IRDAI)
-                      </a>
+                      </span>
                       . Under the <strong>IRDAI (Protection of Policyholders’ Interests) Regulations, 2017</strong> (and subsequent Master Circulars on Policyholder Protection), strict, non-negotiable procedural deadlines govern every phase of claim handling:
                     </p>
 
@@ -636,14 +613,9 @@ export default function InsuranceClaimNotSettledDelayClient() {
                         </h3>
                         <p className="text-xs sm:text-sm text-slate-650 leading-relaxed mb-3">
                           Governed by the{' '}
-                          <a
-                            href="https://www.cioins.co.in"
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            className="text-purple-600 hover:text-purple-800 hover:underline font-semibold"
-                          >
+                          <span className="font-semibold text-slate-800">
                             Insurance Ombudsman Rules, 2017
-                          </a>{' '}
+                          </span>{' '}
                           (amended in 2021 &amp; 2023), this quasi-judicial authority handles personal lines of insurance (health, motor, life, home, personal accident) as well as sole proprietors and micro-enterprises.
                         </p>
                         <ul className="text-xs sm:text-sm text-slate-700 list-disc list-inside space-y-1">
@@ -662,14 +634,9 @@ export default function InsuranceClaimNotSettledDelayClient() {
                         </h3>
                         <p className="text-xs sm:text-sm text-slate-650 leading-relaxed mb-3">
                           Under the{' '}
-                          <a
-                            href="https://consumeraffairs.nic.in/acts-and-rules/consumer-protection"
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            className="text-purple-600 hover:text-purple-800 hover:underline font-semibold"
-                          >
+                          <span className="font-semibold text-slate-800">
                             Consumer Protection Act, 2019
-                          </a>
+                          </span>
                           , an unjustified delay in settling an insurance claim constitutes an actionable &quot;deficiency in service&quot; under Section 2(11) and an &quot;unfair trade practice&quot; under Section 2(47).
                         </p>
                         <ul className="text-xs sm:text-sm text-slate-700 list-disc list-inside space-y-1">
@@ -689,14 +656,9 @@ export default function InsuranceClaimNotSettledDelayClient() {
                         </h3>
                         <p className="text-xs sm:text-sm text-slate-650 leading-relaxed mb-3">
                           For commercial entities, corporate factories, marine freight cargo, and large industrial property policies, claims are pursued before designated Commercial Courts under the{' '}
-                          <a
-                            href="https://www.indiacode.nic.in/handle/123456789/2156"
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            className="text-purple-600 hover:text-purple-800 hover:underline font-semibold"
-                          >
+                          <span className="font-semibold text-slate-800">
                             Commercial Courts Act, 2015
-                          </a>
+                          </span>
                           . The mandatory pre-institution mediation mechanism under Section 12A allows fast-track commercial debt recovery backed by formal legal demand notices.
                         </p>
                       </div>
@@ -900,7 +862,7 @@ export default function InsuranceClaimNotSettledDelayClient() {
                       <a
                         href="https://irdai.gov.in"
                         target="_blank"
-                        rel="noopener noreferrer"
+                        rel="nofollow noopener noreferrer"
                         className="text-purple-600 hover:text-purple-800 hover:underline"
                       >
                         IRDAI (Protection of Policyholders’ Interests) Regulations, 2017 — Regulation 15 Claim Settlement Procedures &amp; Penal Interest, irdai.gov.in
@@ -910,71 +872,29 @@ export default function InsuranceClaimNotSettledDelayClient() {
                       <a
                         href="https://consumeraffairs.nic.in/acts-and-rules/consumer-protection"
                         target="_blank"
-                        rel="noopener noreferrer"
+                        rel="nofollow noopener noreferrer"
                         className="text-purple-600 hover:text-purple-800 hover:underline"
                       >
                         Consumer Protection Act, 2019 — Section 2(11) Deficiency in Service &amp; Sections 35, 47, 58 Commission Jurisdiction, consumeraffairs.nic.in
                       </a>
                     </li>
                     <li>
-                      <a
-                        href="https://www.cioins.co.in"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="text-purple-600 hover:text-purple-800 hover:underline"
-                      >
-                        Insurance Ombudsman Rules, 2017 (Amended 2021 &amp; 2023) — Council for Insurance Ombudsmen, cioins.co.in
-                      </a>
+                      <span className="text-slate-700">Insurance Ombudsman Rules, 2017 (Amended 2021 &amp; 2023) — Council for Insurance Ombudsmen, cioins.co.in</span>
                     </li>
                     <li>
-                      <a
-                        href="https://main.sci.gov.in/judgment/judis/49047.pdf"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="text-purple-600 hover:text-purple-800 hover:underline"
-                      >
-                        Supreme Court of India — Gurmel Singh v. Branch Manager, National Insurance Co. Ltd. (2022) 7 SCC 287 (Rejection on Technical Grounds Prohibited), main.sci.gov.in
-                      </a>
+                      <span className="text-slate-700">Supreme Court of India — Gurmel Singh v. Branch Manager, National Insurance Co. Ltd. (2022) 7 SCC 287 (Rejection on Technical Grounds Prohibited), main.sci.gov.in</span>
                     </li>
                     <li>
-                      <a
-                        href="https://main.sci.gov.in/judgment/judis/48914.pdf"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="text-purple-600 hover:text-purple-800 hover:underline"
-                      >
-                        Supreme Court of India — Manmohan Nanda v. United India Assurance Co. Ltd. (2022) 4 SCC 582 (Uberrima Fides Duty on Insurers), main.sci.gov.in
-                      </a>
+                      <span className="text-slate-700">Supreme Court of India — Manmohan Nanda v. United India Assurance Co. Ltd. (2022) 4 SCC 582 (Uberrima Fides Duty on Insurers), main.sci.gov.in</span>
                     </li>
                     <li>
-                      <a
-                        href="https://main.sci.gov.in/judgment/judis/35099.pdf"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="text-purple-600 hover:text-purple-800 hover:underline"
-                      >
-                        Supreme Court of India — New India Assurance Co. Ltd. v. Pradeep Kumar (2009) 7 SCC 787 (Surveyor Reports &amp; Arbitrary Delays), main.sci.gov.in
-                      </a>
+                      <span className="text-slate-700">Supreme Court of India — New India Assurance Co. Ltd. v. Pradeep Kumar (2009) 7 SCC 787 (Surveyor Reports &amp; Arbitrary Delays), main.sci.gov.in</span>
                     </li>
                     <li>
-                      <a
-                        href="https://www.indiacode.nic.in/handle/123456789/2187"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="text-purple-600 hover:text-purple-800 hover:underline"
-                      >
-                        Indian Contract Act, 1872 — Section 73 (Compensation for Loss or Damage Caused by Breach of Contract), indiacode.nic.in
-                      </a>
+                      <span className="text-slate-700">Indian Contract Act, 1872 — Section 73 (Compensation for Loss or Damage Caused by Breach of Contract), indiacode.nic.in</span>
                     </li>
                     <li>
-                      <a
-                        href="https://ncdrc.nic.in"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="text-purple-600 hover:text-purple-800 hover:underline"
-                      >
-                        National Consumer Disputes Redressal Commission (NCDRC) — Case Law on Delayed Insurance Claim Settlement, ncdrc.nic.in
-                      </a>
+                      <span className="text-slate-700">National Consumer Disputes Redressal Commission (NCDRC) — Case Law on Delayed Insurance Claim Settlement, ncdrc.nic.in</span>
                     </li>
                   </ol>
                 </section>

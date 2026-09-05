@@ -381,44 +381,41 @@ export default function DelayedSalaryStartupCompanyIndiaClient() {
                     <span>Last updated: {currentDate}</span>
                   </div>
                   {/* Social Share Buttons (Native Brand Colors) */}
-                  <div className="flex items-center gap-2">
-                    <span className="text-xs font-semibold text-slate-400 uppercase tracking-wider mr-2">
-                      Share:
-                    </span>
-                    <a
-                      href={`https://twitter.com/intent/tweet?url=${shareUrl}&text=${shareText}`}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="w-8 h-8 rounded-full bg-black text-white hover:opacity-80 flex items-center justify-center transition-opacity"
-                      aria-label="Share on X (Twitter)"
-                    >
-                      <svg className="w-4 h-4 fill-current" viewBox="0 0 24 24">
-                        <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z" />
-                      </svg>
-                    </a>
-                    <a
-                      href={`https://www.facebook.com/sharer/sharer.php?u=${shareUrl}`}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="w-8 h-8 rounded-full bg-[#1877F2] text-white hover:opacity-80 flex items-center justify-center transition-opacity"
-                      aria-label="Share on Facebook"
-                    >
-                      <svg className="w-4 h-4 fill-current" viewBox="0 0 24 24">
-                        <path d="M9.198 21.5h4v-8.01h3.604l.396-3.98h-4V7.5a1 1 0 0 1 1-1h3v-4h-3a5 5 0 0 0-5 5v2.01h-2l-.396 3.98h2.396v8.01z" />
-                      </svg>
-                    </a>
-                    <a
-                      href={`https://www.linkedin.com/shareArticle?mini=true&url=${shareUrl}&title=${encodeURIComponent('Legal Notice to Startup Company for Delayed Salary | Legal Recovery India')}`}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="w-8 h-8 rounded-full bg-[#0A66C2] text-white hover:opacity-80 flex items-center justify-center transition-opacity"
-                      aria-label="Share on LinkedIn"
-                    >
-                      <svg className="w-4 h-4 fill-current" viewBox="0 0 24 24">
-                        <path d="M4.98 3.5c0 1.381-1.11 2.5-2.48 2.5s-2.48-1.119-2.48-2.5c0-1.38 1.11-2.5 2.48-2.5s2.48 1.12 2.48 2.5zm.02 4.5h-5v16h5v-16zm7.982 0h-4.968v16h4.969v-8.399c0-4.67 6.029-5.052 6.029 0v8.399h4.988v-10.131c0-7.88-8.922-7.593-11.018-3.714v-2.155z" />
-                      </svg>
-                    </a>
-                  </div>
+                    <div className="flex items-center gap-2">
+                      <span className="text-xs font-semibold text-slate-400 uppercase tracking-wider mr-2">
+                        Share:
+                      </span>
+                      <button
+                        type="button"
+                        onClick={() => window.open(`https://twitter.com/intent/tweet?url=${shareUrl}&text=${shareText}`, '_blank', 'noopener,noreferrer')}
+                        className="w-8 h-8 rounded-full bg-black text-white hover:opacity-80 flex items-center justify-center transition-opacity cursor-pointer"
+                        aria-label="Share on X (Twitter)"
+                      >
+                        <svg className="w-4 h-4 fill-current" viewBox="0 0 24 24">
+                          <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z" />
+                        </svg>
+                      </button>
+                      <button
+                        type="button"
+                        onClick={() => window.open(`https://www.facebook.com/sharer/sharer.php?u=${shareUrl}`, '_blank', 'noopener,noreferrer')}
+                        className="w-8 h-8 rounded-full bg-[#1877F2] text-white hover:opacity-80 flex items-center justify-center transition-opacity cursor-pointer"
+                        aria-label="Share on Facebook"
+                      >
+                        <svg className="w-4 h-4 fill-current" viewBox="0 0 24 24">
+                          <path d="M9.198 21.5h4v-8.01h3.604l.396-3.98h-4V7.5a1 1 0 0 1 1-1h3v-4h-3a5 5 0 0 0-5 5v2.01h-2l-.396 3.98h2.396v8.01z" />
+                        </svg>
+                      </button>
+                      <button
+                        type="button"
+                        onClick={() => window.open(`https://www.linkedin.com/shareArticle?mini=true&url=${shareUrl}&title=${encodeURIComponent('Legal Notice to Startup Company for Delayed Salary | Legal Recovery India')}`, '_blank', 'noopener,noreferrer')}
+                        className="w-8 h-8 rounded-full bg-[#0A66C2] text-white hover:opacity-80 flex items-center justify-center transition-opacity cursor-pointer"
+                        aria-label="Share on LinkedIn"
+                      >
+                        <svg className="w-4 h-4 fill-current" viewBox="0 0 24 24">
+                          <path d="M4.98 3.5c0 1.381-1.11 2.5-2.48 2.5s-2.48-1.119-2.48-2.5c0-1.38 1.11-2.5 2.48-2.5s2.48 1.12 2.48 2.5zm.02 4.5h-5v16h5v-16zm7.982 0h-4.968v16h4.969v-8.399c0-4.67 6.029-5.052 6.029 0v8.399h4.988v-10.131c0-7.88-8.922-7.593-11.018-3.714v-2.155z" />
+                        </svg>
+                      </button>
+                    </div>
                 </div>
 
                 {/* ── QUICK ANSWER ──────────────────────────────────────── */}
@@ -428,32 +425,11 @@ export default function DelayedSalaryStartupCompanyIndiaClient() {
                   </h2>
                   <p className="text-sm text-slate-700 font-medium leading-relaxed">
                     An aggrieved employee, software engineer, or executive can serve an advocate-drafted statutory legal notice to a startup company for delayed or unpaid salary under{' '}
-                    <a
-                      href="https://labour.gov.in/sites/default/files/the_code_on_wages_2019_no._29_of_2019.pdf"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="text-purple-600 hover:text-purple-800 hover:underline"
-                    >
-                      Section 17 of the Code on Wages, 2019
-                    </a>{' '}
+                    <span className="font-semibold text-slate-800">Section 17 of the Code on Wages, 2019</span>{' '}
                     and{' '}
-                    <a
-                      href="https://www.indiacode.nic.in/handle/123456789/2187"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="text-purple-600 hover:text-purple-800 hover:underline"
-                    >
-                      Section 73 of the Indian Contract Act, 1872
-                    </a>
+                    <span className="font-semibold text-slate-800">Section 73 of the Indian Contract Act, 1872</span>
                     , demanding full release of accumulated wage arrears, notice pay, and expense reimbursements within a 15-day peremptory window. Startup founders and managing directors who deliberately defer payroll citing funding round delays or force equity swaps commit an actionable breach of employment contract and face personal liability alongside statutory interest under Section 15 of the Payment of Wages Act, 1936. If the startup fails to comply within 15 days, the employee can initiate summary recovery under Order 37 of the Code of Civil Procedure, 1908, file a statutory wage complaint before the Labour Commissioner, or serve an Operational Creditor Demand Notice under{' '}
-                    <a
-                      href="https://ibbi.gov.in/en/legal-framework/act"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="text-purple-600 hover:text-purple-800 hover:underline"
-                    >
-                      Section 8 of the Insolvency and Bankruptcy Code, 2016 (IBC)
-                    </a>{' '}
+                    <span className="font-semibold text-slate-800">Section 8 of the Insolvency and Bankruptcy Code, 2016 (IBC)</span>{' '}
                     to trigger corporate insolvency proceedings before the NCLT.
                   </p>
                 </div>
@@ -616,14 +592,7 @@ export default function DelayedSalaryStartupCompanyIndiaClient() {
                         </h3>
                         <p className="text-xs md:text-sm text-slate-650 leading-relaxed">
                           For salaried employees, unpaid wages constitute an undisputed liquidated demand arising out of a written employment contract. Under{' '}
-                          <a
-                            href="https://www.indiacode.nic.in/handle/123456789/2191"
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            className="text-purple-600 hover:text-purple-800 hover:underline"
-                          >
-                            Order XXXVII of the CPC (Order 37)
-                          </a>
+                          <span className="font-semibold text-slate-800">Order XXXVII of the CPC (Order 37)</span>
                           , the defaulting startup has no automatic right to defend the suit. The company must seek leave to defend from the court within 10 days of receiving summons, demonstrating a genuine, bona fide triable defense. If the startup cannot substantiate a valid legal defense for non-payment, the court immediately enters a summary money decree against the company.
                         </p>
                       </div>
@@ -634,14 +603,7 @@ export default function DelayedSalaryStartupCompanyIndiaClient() {
                         </h3>
                         <p className="text-xs md:text-sm text-slate-650 leading-relaxed">
                           Employees can initiate formal proceedings before the Deputy Labour Commissioner or the Authority constituted under Section 15 of the Payment of Wages Act, 1936 and the{' '}
-                          <a
-                            href="https://labour.gov.in/sites/default/files/the_code_on_wages_2019_no._29_of_2019.pdf"
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            className="text-purple-600 hover:text-purple-800 hover:underline"
-                          >
-                            Code on Wages, 2019
-                          </a>
+                          <span className="font-semibold text-slate-800">Code on Wages, 2019</span>
                           . The Labour Authority issues formal summons to the startup founders, conducts conciliation hearings, and possesses statutory authority to attach company bank accounts to recover wage arrears and levy penalties.
                         </p>
                       </div>
@@ -652,14 +614,7 @@ export default function DelayedSalaryStartupCompanyIndiaClient() {
                         </h3>
                         <p className="text-xs md:text-sm text-slate-650 leading-relaxed">
                           Where employment dues involve senior executives, directors, or consulting partners exceeding the specified pecuniary threshold, claims can be instituted under the{' '}
-                          <a
-                            href="https://www.indiacode.nic.in/handle/123456789/2156"
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            className="text-purple-600 hover:text-purple-800 hover:underline"
-                          >
-                            Commercial Courts Act, 2015
-                          </a>
+                          <span className="font-semibold text-slate-800">Commercial Courts Act, 2015</span>
                           . Under Section 12A, parties undergo time-bound mediation before the District Legal Services Authority (DLSA), which often yields a legally binding settlement deed without lengthy trial cycles.
                         </p>
                       </div>
@@ -670,14 +625,7 @@ export default function DelayedSalaryStartupCompanyIndiaClient() {
                         </h3>
                         <p className="text-xs md:text-sm text-slate-650 leading-relaxed">
                           Under{' '}
-                          <a
-                            href="https://ibbi.gov.in/en/legal-framework/act"
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            className="text-purple-600 hover:text-purple-800 hover:underline"
-                          >
-                            Section 8 of the Insolvency and Bankruptcy Code, 2016 (IBC)
-                          </a>
+                          <span className="font-semibold text-slate-800">Section 8 of the Insolvency and Bankruptcy Code, 2016 (IBC)</span>
                           , employees are statutory Operational Creditors. Serving a Form 3/Form 4 Demand Notice on the startup puts the company on strict 10-day notice. If the startup fails to pay or show an existing dispute, employees (individually or collectively meeting statutory thresholds) can file a Section 9 petition before the National Company Law Tribunal (NCLT) to initiate Corporate Insolvency Resolution Proceedings (CIRP), a lethal risk that triggers prompt settlement.
                         </p>
                       </div>
@@ -688,14 +636,7 @@ export default function DelayedSalaryStartupCompanyIndiaClient() {
                         </h3>
                         <p className="text-xs md:text-sm text-slate-650 leading-relaxed">
                           Where startup founders induced employees to continue working under false promises of upcoming funding while secretly siphoning company revenues, employees can file a criminal complaint under{' '}
-                          <a
-                            href="https://www.indiacode.nic.in/handle/123456789/20234"
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            className="text-purple-600 hover:text-purple-800 hover:underline"
-                          >
-                            Section 316 (Criminal Breach of Trust) and Section 318 (Cheating) of the Bharatiya Nyaya Sanhita, 2023 (BNS)
-                          </a>
+                          <span className="font-semibold text-slate-800">Section 316 (Criminal Breach of Trust) and Section 318 (Cheating) of the Bharatiya Nyaya Sanhita, 2023 (BNS)</span>
                           . Moreover, if the employer deducted Employee Provident Fund (EPF) or Tax Deducted at Source (TDS) from salaries but failed to deposit the amounts with the EPFO or Income Tax Department, the directors face direct non-bailable criminal prosecution under Section 405/406 IPC (Section 316 BNS) and Section 276B of the Income Tax Act, 1961.
                         </p>
                       </div>
@@ -742,14 +683,7 @@ export default function DelayedSalaryStartupCompanyIndiaClient() {
                       </h4>
                       <p className="text-xs sm:text-sm text-amber-800 leading-relaxed">
                         Startups frequently rebrand their public trading names, shift physical office spaces without updating paperwork, or operate under holding entity structures. Legal Recovery advocates verify the company&apos;s active status on the{' '}
-                        <a
-                          href="https://www.mca.gov.in/content/mca/global/en/home.html"
-                          target="_blank"
-                          rel="noopener noreferrer"
-                          className="text-purple-600 hover:text-purple-800 hover:underline font-semibold"
-                        >
-                          Ministry of Corporate Affairs (MCA) Portal
-                        </a>
+                        <span className="font-semibold text-amber-900">Ministry of Corporate Affairs (MCA) Portal</span>
                         . This verification extracts the official registered office address, Corporate Identification Number (CIN), and Director Identification Numbers (DIN) of all active directors, ensuring statutory notices are served with undeniable legal validity.
                       </p>
                     </div>
@@ -897,7 +831,7 @@ export default function DelayedSalaryStartupCompanyIndiaClient() {
                       <a
                         href="https://labour.gov.in/sites/default/files/the_code_on_wages_2019_no._29_of_2019.pdf"
                         target="_blank"
-                        rel="noopener noreferrer"
+                        rel="nofollow noopener noreferrer"
                         className="text-purple-600 hover:text-purple-800 hover:underline"
                       >
                         Code on Wages, 2019 — Section 17 (Time Limit for Payment of Wages) &amp; Section 18 (Deductions), Ministry of Labour &amp; Employment
@@ -907,71 +841,29 @@ export default function DelayedSalaryStartupCompanyIndiaClient() {
                       <a
                         href="https://labour.gov.in/sites/default/files/ThePaymentofWagesAct1936.pdf"
                         target="_blank"
-                        rel="noopener noreferrer"
+                        rel="nofollow noopener noreferrer"
                         className="text-purple-600 hover:text-purple-800 hover:underline"
                       >
                         Payment of Wages Act, 1936 — Section 15 (Claims Arising Out of Deductions or Delay in Payment), labour.gov.in
                       </a>
                     </li>
                     <li>
-                      <a
-                        href="https://www.indiacode.nic.in/handle/123456789/2187"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="text-purple-600 hover:text-purple-800 hover:underline"
-                      >
-                        Indian Contract Act, 1872 — Section 73 (Compensation for Loss or Damage Caused by Breach of Contract), indiacode.nic.in
-                      </a>
+                      Indian Contract Act, 1872 — Section 73 (Compensation for Loss or Damage Caused by Breach of Contract), indiacode.nic.in
                     </li>
                     <li>
-                      <a
-                        href="https://www.indiacode.nic.in/handle/123456789/2191"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="text-purple-600 hover:text-purple-800 hover:underline"
-                      >
-                        Code of Civil Procedure, 1908 — Order XXXVII (Summary Procedure on Liquidated Debts), indiacode.nic.in
-                      </a>
+                      Code of Civil Procedure, 1908 — Order XXXVII (Summary Procedure on Liquidated Debts), indiacode.nic.in
                     </li>
                     <li>
-                      <a
-                        href="https://ibbi.gov.in/en/legal-framework/act"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="text-purple-600 hover:text-purple-800 hover:underline"
-                      >
-                        Insolvency and Bankruptcy Code, 2016 (IBC) — Section 8 &amp; Section 9 (Operational Creditor Demand Notice &amp; CIRP), ibbi.gov.in
-                      </a>
+                      Insolvency and Bankruptcy Code, 2016 (IBC) — Section 8 &amp; Section 9 (Operational Creditor Demand Notice &amp; CIRP), ibbi.gov.in
                     </li>
                     <li>
-                      <a
-                        href="https://www.mca.gov.in/content/mca/global/en/home.html"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="text-purple-600 hover:text-purple-800 hover:underline"
-                      >
-                        Ministry of Corporate Affairs (MCA) — Company Master Data, Registered Office &amp; Director Identification (DIN), mca.gov.in
-                      </a>
+                      Ministry of Corporate Affairs (MCA) — Company Master Data, Registered Office &amp; Director Identification (DIN), mca.gov.in
                     </li>
                     <li>
-                      <a
-                        href="https://www.indiacode.nic.in/handle/123456789/20234"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="text-purple-600 hover:text-purple-800 hover:underline"
-                      >
-                        Bharatiya Nyaya Sanhita, 2023 — Section 316 (Criminal Breach of Trust) &amp; Section 318 (Cheating), indiacode.nic.in
-                      </a>
+                      Bharatiya Nyaya Sanhita, 2023 — Section 316 (Criminal Breach of Trust) &amp; Section 318 (Cheating), indiacode.nic.in
                     </li>
                     <li>
-                      <a
-                        href="https://main.sci.gov.in/judgment/judis/44243.pdf"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="text-purple-600 hover:text-purple-800 hover:underline"
-                      >
-                        Supreme Court of India — State of Punjab v. Jagjit Singh (2017) 1 SCC 148 (Right to Equal Pay and Wage Protection under Article 21), main.sci.gov.in
-                      </a>
+                      Supreme Court of India — State of Punjab v. Jagjit Singh (2017) 1 SCC 148 (Right to Equal Pay and Wage Protection under Article 21), main.sci.gov.in
                     </li>
                   </ol>
                 </section>

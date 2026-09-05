@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import React from "react";
-import Link from "next/link";
 import { locationData } from "./locationData";
+import CityDirectoryExplorer from "@/components/CityDirectoryExplorer";
 
 export const metadata: Metadata = {
   title: "Legal Recovery Services by City | Legal Recovery",
@@ -40,26 +40,12 @@ export default function LawyerByCity() {
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-          {locationData.map((loc, index) => (
-            <Link
-              key={index}
-              href={`/legal-recovery-by-city/${loc.slug}`}
-              className="bg-white/70 backdrop-blur-sm border border-black/5 hover:border-[#DC2626]/30 p-6 rounded-2xl transition-all duration-300 hover:shadow-[0_8px_30px_rgb(0,0,0,0.04)] group hover:-translate-y-1 block relative overflow-hidden"
-            >
-              <div className="absolute top-0 left-0 w-1.5 h-full bg-[#DC2626] opacity-0 group-hover:opacity-100 transition-opacity"></div>
-              <h3 className="text-base md:text-lg font-medium text-[#111827] group-hover:text-[#DC2626] transition-colors leading-snug">
-                {loc.title}
-              </h3>
-              <div className="mt-4 flex items-center text-sm text-[#DC2626] font-medium opacity-100 transition-all duration-300">
-                View Details{" "}
-                <span className="ml-1 group-hover:translate-x-1 transition-transform">
-                  →
-                </span>
-              </div>
-            </Link>
-          ))}
-        </div>
+        <CityDirectoryExplorer
+          items={locationData}
+          basePath="/legal-recovery-by-city"
+          searchPlaceholder="Search city, district or area (e.g. Gurugram, Mumbai, Pune, Kolkata)..."
+          badgeLabel="Pan-India Debt Recovery Network"
+        />
       </div>
 
       {/* SEO Content Section */}

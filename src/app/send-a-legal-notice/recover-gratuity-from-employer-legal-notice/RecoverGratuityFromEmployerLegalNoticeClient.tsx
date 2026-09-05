@@ -400,41 +400,38 @@ export default function RecoverGratuityFromEmployerLegalNoticeClient() {
                       Share:
                     </span>
                     {/* X (Twitter) - Black */}
-                    <a
-                      href="https://twitter.com/intent/tweet?url=https%3A%2F%2Flegalrecovery.in%2Fsend-a-legal-notice%2Frecover-gratuity-from-employer-legal-notice&text=Employer%20withholding%20your%20statutory%20gratuity%20dues%3F%20Send%20a%20formal%20legal%20notice%20for%20rapid%20recovery%20in%20India!%20%23GratuityRecovery"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="w-8 h-8 rounded-full bg-black text-white hover:opacity-80 flex items-center justify-center transition-opacity"
+                    <button
+                      type="button"
+                      onClick={() => window.open("https://twitter.com/intent/tweet?url=https%3A%2F%2Flegalrecovery.in%2Fsend-a-legal-notice%2Frecover-gratuity-from-employer-legal-notice&text=Employer%20withholding%20your%20statutory%20gratuity%20dues%3F%20Send%20a%20formal%20legal%20notice%20for%20rapid%20recovery%20in%20India!%20%23GratuityRecovery", '_blank', 'noopener,noreferrer')}
+                      className="w-8 h-8 rounded-full bg-black text-white hover:opacity-80 flex items-center justify-center transition-opacity cursor-pointer"
                       aria-label="Share on X (Twitter)"
                     >
                       <svg className="w-4 h-4 fill-current" viewBox="0 0 24 24">
                         <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z" />
                       </svg>
-                    </a>
+                    </button>
                     {/* Facebook - #1877F2 */}
-                    <a
-                      href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Flegalrecovery.in%2Fsend-a-legal-notice%2Frecover-gratuity-from-employer-legal-notice"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="w-8 h-8 rounded-full bg-[#1877F2] text-white hover:opacity-80 flex items-center justify-center transition-opacity"
+                    <button
+                      type="button"
+                      onClick={() => window.open("https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Flegalrecovery.in%2Fsend-a-legal-notice%2Frecover-gratuity-from-employer-legal-notice", '_blank', 'noopener,noreferrer')}
+                      className="w-8 h-8 rounded-full bg-[#1877F2] text-white hover:opacity-80 flex items-center justify-center transition-opacity cursor-pointer"
                       aria-label="Share on Facebook"
                     >
                       <svg className="w-4 h-4 fill-current" viewBox="0 0 24 24">
                         <path d="M9.198 21.5h4v-8.01h3.604l.396-3.98h-4V7.5a1 1 0 0 1 1-1h3v-4h-3a5 5 0 0 0-5 5v2.01h-2l-.396 3.98h2.396v8.01z" />
                       </svg>
-                    </a>
+                    </button>
                     {/* LinkedIn - #0A66C2 */}
-                    <a
-                      href="https://www.linkedin.com/shareArticle?mini=true&url=https%3A%2F%2Flegalrecovery.in%2Fsend-a-legal-notice%2Frecover-gratuity-from-employer-legal-notice&title=Legal%20Notice%20to%20Company%20for%20Gratuity%20Not%20Paid%20by%20Employer"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="w-8 h-8 rounded-full bg-[#0A66C2] text-white hover:opacity-80 flex items-center justify-center transition-opacity"
+                    <button
+                      type="button"
+                      onClick={() => window.open("https://www.linkedin.com/shareArticle?mini=true&url=https%3A%2F%2Flegalrecovery.in%2Fsend-a-legal-notice%2Frecover-gratuity-from-employer-legal-notice&title=Legal%20Notice%20to%20Company%20for%20Gratuity%20Not%20Paid%20by%20Employer", '_blank', 'noopener,noreferrer')}
+                      className="w-8 h-8 rounded-full bg-[#0A66C2] text-white hover:opacity-80 flex items-center justify-center transition-opacity cursor-pointer"
                       aria-label="Share on LinkedIn"
                     >
                       <svg className="w-4 h-4 fill-current" viewBox="0 0 24 24">
                         <path d="M4.98 3.5c0 1.381-1.11 2.5-2.48 2.5s-2.48-1.119-2.48-2.5c0-1.38 1.11-2.5 2.48-2.5s2.48 1.12 2.48 2.5zm.02 4.5h-5v16h5v-16zm7.982 0h-4.968v16h4.969v-8.399c0-4.67 6.029-5.052 6.029 0v8.399h4.988v-10.131c0-7.88-8.922-7.593-11.018-3.714v-2.155z" />
                       </svg>
-                    </a>
+                    </button>
                   </div>
                 </div>
 
@@ -469,23 +466,13 @@ export default function RecoverGratuityFromEmployerLegalNoticeClient() {
                     <p className="text-sm md:text-base leading-relaxed">
                       In Indian labor jurisprudence, gratuity is not an ex-gratia gift, discretionary bonus, or managerial bounty. As established by the Supreme Court of India in the landmark judgment of{' '}
                       <strong className="text-slate-900">Bakshish Singh v. Darshan Engineering Works &amp; Ors. (1994)</strong>, gratuity constitutes a statutory retirement benefit and an indefeasible monetary right earned by an employee through steadfast past service. The statutory architecture governing gratuity recovery is codified under the{' '}
-                      <a
-                        href="https://www.indiacode.nic.in/handle/123456789/1579"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="text-purple-600 hover:text-purple-800 hover:underline font-semibold"
-                      >
-                        Payment of Gratuity Act, 1972 (India Code)
-                      </a>
+                      <span className="font-semibold text-slate-800">
+                        Payment of Gratuity Act, 1972
+                      </span>
                       , enacted by Parliament as a comprehensive self-contained social security code under the oversight of the{' '}
-                      <a
-                        href="https://labour.gov.in/"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="text-purple-600 hover:text-purple-800 hover:underline font-semibold"
-                      >
+                      <span className="font-semibold text-slate-800">
                         Ministry of Labour and Employment
-                      </a>
+                      </span>
                       .
                     </p>
 
@@ -981,51 +968,31 @@ export default function RecoverGratuityFromEmployerLegalNoticeClient() {
                     <a
                       href="https://www.indiacode.nic.in/handle/123456789/1579"
                       target="_blank"
-                      rel="noopener noreferrer"
+                      rel="nofollow noopener noreferrer"
                       className="text-purple-600 hover:text-purple-800 hover:underline flex items-center gap-1.5 font-bold"
                     >
                       <span>↗</span> Payment of Gratuity Act, 1972 (India Code Portal)
                     </a>
                     <a
-                      href="https://labour.gov.in/"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="text-purple-600 hover:text-purple-800 hover:underline flex items-center gap-1.5 font-bold"
-                    >
-                      <span>↗</span> Ministry of Labour &amp; Employment, Govt. of India
-                    </a>
-                    <a
-                      href="https://clc.gov.in/"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="text-purple-600 hover:text-purple-800 hover:underline flex items-center gap-1.5 font-bold"
-                    >
-                      <span>↗</span> Chief Labour Commissioner (Central) Official Portal
-                    </a>
-                    <a
-                      href="https://main.sci.gov.in/"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="text-purple-600 hover:text-purple-800 hover:underline flex items-center gap-1.5 font-bold"
-                    >
-                      <span>↗</span> Supreme Court of India Official Judgments Portal
-                    </a>
-                    <a
                       href="https://samadhan.labour.gov.in/"
                       target="_blank"
-                      rel="noopener noreferrer"
+                      rel="nofollow noopener noreferrer"
                       className="text-purple-600 hover:text-purple-800 hover:underline flex items-center gap-1.5 font-bold"
                     >
                       <span>↗</span> SAMADHAN Portal for Online Labour Dispute Filing
                     </a>
-                    <a
-                      href="https://www.indiacode.nic.in/handle/123456789/15474"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="text-purple-600 hover:text-purple-800 hover:underline flex items-center gap-1.5 font-bold"
-                    >
-                      <span>↗</span> Code on Social Security, 2020 (India Code Portal)
-                    </a>
+                    <div className="flex items-center gap-1.5 text-slate-700 font-medium">
+                      <span>•</span> Ministry of Labour &amp; Employment, Govt. of India
+                    </div>
+                    <div className="flex items-center gap-1.5 text-slate-700 font-medium">
+                      <span>•</span> Chief Labour Commissioner (Central) Official Authority
+                    </div>
+                    <div className="flex items-center gap-1.5 text-slate-700 font-medium">
+                      <span>•</span> Supreme Court of India Industrial Jurisprudence
+                    </div>
+                    <div className="flex items-center gap-1.5 text-slate-700 font-medium">
+                      <span>•</span> Code on Social Security, 2020 Statutory Guidelines
+                    </div>
                   </div>
                 </section>
 

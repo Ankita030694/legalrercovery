@@ -385,39 +385,36 @@ export default function GymYogaClubMembershipFeeRefundClient() {
                     <span className="text-xs font-semibold text-slate-400 uppercase tracking-wider mr-2">
                       Share:
                     </span>
-                    <a
-                      href={`https://twitter.com/intent/tweet?url=${shareUrl}&text=${shareText}`}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="w-8 h-8 rounded-full bg-black text-white hover:opacity-80 flex items-center justify-center transition-opacity"
+                    <button
+                      type="button"
+                      onClick={() => window.open(`https://twitter.com/intent/tweet?url=${shareUrl}&text=${shareText}`, '_blank', 'noopener,noreferrer')}
+                      className="w-8 h-8 rounded-full bg-black text-white hover:opacity-80 flex items-center justify-center transition-opacity cursor-pointer"
                       aria-label="Share on X (Twitter)"
                     >
                       <svg className="w-4 h-4 fill-current" viewBox="0 0 24 24">
                         <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z" />
                       </svg>
-                    </a>
-                    <a
-                      href={`https://www.facebook.com/sharer/sharer.php?u=${shareUrl}`}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="w-8 h-8 rounded-full bg-[#1877F2] text-white hover:opacity-80 flex items-center justify-center transition-opacity"
+                    </button>
+                    <button
+                      type="button"
+                      onClick={() => window.open(`https://www.facebook.com/sharer/sharer.php?u=${shareUrl}`, '_blank', 'noopener,noreferrer')}
+                      className="w-8 h-8 rounded-full bg-[#1877F2] text-white hover:opacity-80 flex items-center justify-center transition-opacity cursor-pointer"
                       aria-label="Share on Facebook"
                     >
                       <svg className="w-4 h-4 fill-current" viewBox="0 0 24 24">
                         <path d="M9.198 21.5h4v-8.01h3.604l.396-3.98h-4V7.5a1 1 0 0 1 1-1h3v-4h-3a5 5 0 0 0-5 5v2.01h-2l-.396 3.98h2.396v8.01z" />
                       </svg>
-                    </a>
-                    <a
-                      href={`https://www.linkedin.com/shareArticle?mini=true&url=${shareUrl}&title=${encodeURIComponent('Legal Notice to Gym, Yoga & Fitness Club for Membership Fee Refund | Legal Recovery India')}`}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="w-8 h-8 rounded-full bg-[#0A66C2] text-white hover:opacity-80 flex items-center justify-center transition-opacity"
+                    </button>
+                    <button
+                      type="button"
+                      onClick={() => window.open(`https://www.linkedin.com/shareArticle?mini=true&url=${shareUrl}&title=${encodeURIComponent('Legal Notice to Gym, Yoga & Fitness Club for Membership Fee Refund | Legal Recovery India')}`, '_blank', 'noopener,noreferrer')}
+                      className="w-8 h-8 rounded-full bg-[#0A66C2] text-white hover:opacity-80 flex items-center justify-center transition-opacity cursor-pointer"
                       aria-label="Share on LinkedIn"
                     >
                       <svg className="w-4 h-4 fill-current" viewBox="0 0 24 24">
                         <path d="M4.98 3.5c0 1.381-1.11 2.5-2.48 2.5s-2.48-1.119-2.48-2.5c0-1.38 1.11-2.5 2.48-2.5s2.48 1.12 2.48 2.5zm.02 4.5h-5v16h5v-16zm7.982 0h-4.968v16h4.969v-8.399c0-4.67 6.029-5.052 6.029 0v8.399h4.988v-10.131c0-7.88-8.922-7.593-11.018-3.714v-2.155z" />
                       </svg>
-                    </a>
+                    </button>
                   </div>
                 </div>
 
@@ -428,32 +425,17 @@ export default function GymYogaClubMembershipFeeRefundClient() {
                   </h2>
                   <p className="text-sm text-slate-700 font-medium leading-relaxed">
                     A consumer can serve an advocate-vetted statutory legal notice to a gym, yoga studio, or fitness club demanding a full prorated refund of unutilized membership fees under{' '}
-                    <a
-                      href="https://www.indiacode.nic.in/handle/123456789/15256"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="text-purple-600 hover:text-purple-800 hover:underline"
-                    >
+                    <span className="font-semibold text-slate-800">
                       Section 2(11), Section 2(46), and Section 2(47) of the Consumer Protection Act, 2019
-                    </a>
+                    </span>
                     , rendering unilateral &quot;No Refund&quot; boilerplate clauses legally void as unfair trade practices and unfair contracts. When a fitness establishment suffers service deficiencies, closes down, changes certified trainers, or when the consumer experiences medical incapacity, the consumer has the statutory right to contract rescission and restitution under{' '}
-                    <a
-                      href="https://www.indiacode.nic.in/handle/123456789/2187"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="text-purple-600 hover:text-purple-800 hover:underline"
-                    >
+                    <span className="font-semibold text-slate-800">
                       Section 56 and Section 73 of the Indian Contract Act, 1872
-                    </a>
+                    </span>
                     . Serving a formal 15-day statutory demand notice places fitness center directors on strict notice before initiating fast-track proceedings before the{' '}
-                    <a
-                      href="http://ncdrc.nic.in"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="text-purple-600 hover:text-purple-800 hover:underline"
-                    >
+                    <span className="font-semibold text-slate-800">
                       District Consumer Disputes Redressal Commission (DCDRC)
-                    </a>{' '}
+                    </span>{' '}
                     or invoking criminal liability under Section 316 and Section 318 of the Bharatiya Nyaya Sanhita, 2023 for cheating and criminal breach of trust.
                   </p>
                 </div>
@@ -475,7 +457,7 @@ export default function GymYogaClubMembershipFeeRefundClient() {
                 {/* ── SECTION 1: STATUTORY FRAMEWORK ────────────────────── */}
                 <section id="statutory-framework" className="scroll-mt-32">
                   <h2 className="text-xl md:text-3xl font-black text-slate-900 mb-5 border-b-2 border-[#DC2626] pb-2 inline-block">
-                    1. Statutory Framework: Consumer Rights &amp; Fitness Membership Laws in India
+                    1. Statutory Framework: Consumer Rights &amp; Gym Membership Laws
                   </h2>
                   <div className="prose prose-base max-w-none text-slate-650 space-y-6">
                     <p className="text-sm md:text-base leading-relaxed">
@@ -483,14 +465,9 @@ export default function GymYogaClubMembershipFeeRefundClient() {
                     </p>
                     <p className="text-sm md:text-base leading-relaxed">
                       Under Indian consumer jurisprudence, these adhesive boilerplate terms have zero legal validity. The{' '}
-                      <a
-                        href="https://www.indiacode.nic.in/handle/123456789/15256"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="text-purple-600 hover:text-purple-800 hover:underline"
-                      >
+                      <span className="font-semibold text-slate-800">
                         Consumer Protection Act, 2019 (CPA 2019)
-                      </a>{' '}
+                      </span>{' '}
                       and established common law principles provide comprehensive statutory remedies against fitness centers engaging in predatory retention of unearned consumer capital.
                     </p>
 
@@ -526,14 +503,9 @@ export default function GymYogaClubMembershipFeeRefundClient() {
                         </h4>
                         <p className="text-xs sm:text-sm text-slate-650 leading-relaxed">
                           Under the{' '}
-                          <a
-                            href="https://www.indiacode.nic.in/handle/123456789/2187"
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            className="text-purple-600 hover:text-purple-800 hover:underline"
-                          >
+                          <span className="font-semibold text-slate-800">
                             Indian Contract Act, 1872
-                          </a>
+                          </span>
                           , unforeseen impossibility—such as gym location closure, relocation of member, or debilitating medical ailment certified by a physician—frustrates the contract, mandating restitution of advance fees.
                         </p>
                       </div>
@@ -579,7 +551,7 @@ export default function GymYogaClubMembershipFeeRefundClient() {
                 {/* ── SECTION 2: ACTIONABLE GROUNDS ─────────────────────── */}
                 <section id="actionable-grounds" className="scroll-mt-32">
                   <h2 className="text-xl md:text-3xl font-black text-slate-900 mb-5 border-b-2 border-[#DC2626] pb-2 inline-block">
-                    2. Actionable Grounds: Unfair &quot;No Refund&quot; Clauses, Substandard Facilities &amp; Closures
+                    2. Actionable Grounds: &quot;No Refund&quot; Clauses &amp; Facility Closures
                   </h2>
                   <div className="prose prose-base max-w-none text-slate-650 space-y-6">
                     <p className="text-sm md:text-base leading-relaxed">
@@ -633,15 +605,10 @@ export default function GymYogaClubMembershipFeeRefundClient() {
                           Unauthorized Auto-Debit Recurring Deductions &amp; Hidden Charges
                         </h3>
                         <p className="text-xs sm:text-sm text-slate-650 leading-relaxed">
-                          Fitness chains leveraging digital payment gateways often enroll consumers in recurring credit card auto-debits without explicit consent or refuse to honor written cancellation notices. Under{' '}
-                          <a
-                            href="https://www.rbi.org.in"
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            className="text-purple-600 hover:text-purple-800 hover:underline"
-                          >
+                          Fitness chains leveraging digital payment gateways often enroll consumers in recurring credit card auto-debits without explicit consent or refuse to honor written cancellation notices. Under the{' '}
+                          <span className="font-semibold text-slate-800">
                             Reserve Bank of India (RBI) e-Mandate Framework
-                          </a>
+                          </span>
                           , unauthorized auto-debits warrant immediate reversal, bank chargeback, and penal damages.
                         </p>
                       </div>
@@ -652,7 +619,7 @@ export default function GymYogaClubMembershipFeeRefundClient() {
                 {/* ── SECTION 3: LEGAL REMEDIES ─────────────────────────── */}
                 <section id="legal-remedies" className="scroll-mt-32">
                   <h2 className="text-xl md:text-3xl font-black text-slate-900 mb-5 border-b-2 border-[#DC2626] pb-2 inline-block">
-                    3. Legal Remedies: Statutory Demand Notice, DCDRC Consumer Complaints &amp; CCPA Action
+                    3. Legal Remedies: Demand Notice, DCDRC &amp; CCPA Action
                   </h2>
                   <div className="prose prose-base max-w-none text-slate-650 space-y-6">
                     <p className="text-sm md:text-base leading-relaxed">
@@ -685,8 +652,8 @@ export default function GymYogaClubMembershipFeeRefundClient() {
                           <a
                             href="https://edaakhil.nic.in"
                             target="_blank"
-                            rel="noopener noreferrer"
-                            className="text-purple-600 hover:text-purple-800 hover:underline"
+                            rel="nofollow noopener noreferrer"
+                            className="text-purple-600 hover:text-purple-800 hover:underline font-semibold"
                           >
                             e-Daakhil Online Filing Portal (edaakhil.nic.in)
                           </a>
@@ -702,37 +669,7 @@ export default function GymYogaClubMembershipFeeRefundClient() {
                           </h4>
                         </div>
                         <p className="text-xs sm:text-sm text-slate-650 leading-relaxed">
-                          For widespread fitness franchise frauds where a gym chain closes multiple centers or systematically refuses refunds to hundreds of members, complaints are lodged with the{' '}
-                          <a
-                            href="https://consumeraffairs.nic.in"
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            className="text-purple-600 hover:text-purple-800 hover:underline"
-                          >
-                            Central Consumer Protection Authority (CCPA)
-                          </a>
-                          . The CCPA has the statutory power to order industry-wide investigations, impose penalties up to ₹10,00,000 under Section 21 of CPA 2019, and mandate collective consumer refunds.
-                        </p>
-                      </div>
-
-                      <div className="border border-slate-200 rounded-2xl p-5 bg-gradient-to-r from-slate-50 to-white">
-                        <div className="flex items-center gap-3 mb-2">
-                          <span className="bg-[#DC2626] text-white text-xs font-black px-2.5 py-1 rounded-md">TIER 4</span>
-                          <h4 className="font-extrabold text-slate-900 text-sm md:text-base">
-                            Criminal Complaint under Bharatiya Nyaya Sanhita, 2023 (BNS)
-                          </h4>
-                        </div>
-                        <p className="text-xs sm:text-sm text-slate-650 leading-relaxed">
-                          Where gym founders collect heavy upfront multi-year fees with pre-planned intent to shut down operations and flee, an FIR or private criminal complaint is maintainable under{' '}
-                          <a
-                            href="https://www.indiacode.nic.in/handle/123456789/20234"
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            className="text-purple-600 hover:text-purple-800 hover:underline"
-                          >
-                            Section 316 (Criminal Breach of Trust) and Section 318 (Cheating) of the Bharatiya Nyaya Sanhita, 2023
-                          </a>
-                          .
+                          CCPA regulatory complaints can be submitted via the <span className="font-semibold text-slate-800">Central Consumer Protection Authority (CCPA)</span>. For systematic fraud, criminal complaints are maintainable under <span className="font-semibold text-slate-800">Section 316 and Section 318 of Bharatiya Nyaya Sanhita, 2023 (BNS)</span>.
                         </p>
                       </div>
                     </div>
@@ -835,7 +772,7 @@ export default function GymYogaClubMembershipFeeRefundClient() {
                 {/* ── SECTION 6: STRATEGIC ROADMAP ──────────────────────── */}
                 <section id="strategic-roadmap" className="scroll-mt-32">
                   <h2 className="text-xl md:text-3xl font-black text-slate-900 mb-5 border-b-2 border-[#DC2626] pb-2 inline-block">
-                    6. Strategic Roadmap: From 15-Day Notice to Rapid Financial Redressal
+                    6. Strategic Roadmap: From 15-Day Notice to Refund Redressal
                   </h2>
                   <div className="prose prose-base max-w-none text-slate-650 space-y-6">
                     <p className="text-sm md:text-base leading-relaxed">
@@ -924,71 +861,29 @@ export default function GymYogaClubMembershipFeeRefundClient() {
                       <a
                         href="https://www.indiacode.nic.in/handle/123456789/15256"
                         target="_blank"
-                        rel="noopener noreferrer"
+                        rel="nofollow noopener noreferrer"
                         className="text-purple-600 hover:text-purple-800 hover:underline"
                       >
                         Consumer Protection Act, 2019 — Section 2(11) (Deficiency), Section 2(46) (Unfair Contract) &amp; Section 2(47) (Unfair Trade Practice), indiacode.nic.in
                       </a>
                     </li>
                     <li>
-                      <a
-                        href="https://consumeraffairs.nic.in"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="text-purple-600 hover:text-purple-800 hover:underline"
-                      >
-                        Central Consumer Protection Authority (CCPA) — Guidelines on Prevention of Misleading Advertisements &amp; Unfair Contract Terms, consumeraffairs.nic.in
-                      </a>
+                      Central Consumer Protection Authority (CCPA) — Guidelines on Prevention of Misleading Advertisements &amp; Unfair Contract Terms
                     </li>
                     <li>
-                      <a
-                        href="https://www.indiacode.nic.in/handle/123456789/2187"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="text-purple-600 hover:text-purple-800 hover:underline"
-                      >
-                        Indian Contract Act, 1872 — Section 23 (Unlawful Object), Section 56 (Frustration of Contract) &amp; Section 73 (Breach Damages), indiacode.nic.in
-                      </a>
+                      Indian Contract Act, 1872 — Section 23 (Unlawful Object), Section 56 (Frustration of Contract) &amp; Section 73 (Breach Damages)
                     </li>
                     <li>
-                      <a
-                        href="http://ncdrc.nic.in"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="text-purple-600 hover:text-purple-800 hover:underline"
-                      >
-                        National Consumer Disputes Redressal Commission (NCDRC) — Precedents on Non-Refundable Subscription Clauses, ncdrc.nic.in
-                      </a>
+                      National Consumer Disputes Redressal Commission (NCDRC) — Precedents on Non-Refundable Subscription Clauses
                     </li>
                     <li>
-                      <a
-                        href="https://edaakhil.nic.in"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="text-purple-600 hover:text-purple-800 hover:underline"
-                      >
-                        National Consumer Commission Online Portal — e-Daakhil Consumer Complaint Filing System, edaakhil.nic.in
-                      </a>
+                      National Consumer Commission Online Portal — e-Daakhil Consumer Complaint Filing System (edaakhil.nic.in)
                     </li>
                     <li>
-                      <a
-                        href="https://www.mca.gov.in"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="text-purple-600 hover:text-purple-800 hover:underline"
-                      >
-                        Ministry of Corporate Affairs (MCA) — Verification of Corporate Fitness Franchises &amp; Directors, mca.gov.in
-                      </a>
+                      Ministry of Corporate Affairs (MCA) — Verification of Corporate Fitness Franchises &amp; Directors
                     </li>
                     <li>
-                      <a
-                        href="https://www.indiacode.nic.in/handle/123456789/20234"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="text-purple-600 hover:text-purple-800 hover:underline"
-                      >
-                        Bharatiya Nyaya Sanhita, 2023 — Section 316 (Criminal Breach of Trust) &amp; Section 318 (Cheating), indiacode.nic.in
-                      </a>
+                      Bharatiya Nyaya Sanhita, 2023 — Section 316 (Criminal Breach of Trust) &amp; Section 318 (Cheating)
                     </li>
                   </ol>
                 </section>

@@ -307,15 +307,30 @@ export default function ForBanksToRecoverTheirUnpaidDuesClient() {
                   {/* Share Buttons */}
                   <div className="flex items-center gap-2">
                     <span className="text-xs font-semibold text-slate-400 uppercase tracking-wider mr-2">Share:</span>
-                    <a href="https://twitter.com/intent/tweet?url=https%3A%2F%2Flegalrecovery.in%2Fsend-a-legal-notice%2Ffor-banks-to-recover-their-unpaid-dues&text=Recover%20unpaid%20bank%20dues%20and%20defaulted%20loans%20with%20a%20statutory%20legal%20notice!%20%23DebtRecovery%20%23BankLoan" target="_blank" rel="noopener noreferrer" className="w-8 h-8 rounded-full bg-black text-white hover:opacity-80 flex items-center justify-center transition-opacity" aria-label="Share on X (Twitter)">
+                    <button
+                      type="button"
+                      onClick={() => window.open('https://twitter.com/intent/tweet?url=https%3A%2F%2Flegalrecovery.in%2Fsend-a-legal-notice%2Ffor-banks-to-recover-their-unpaid-dues&text=Recover%20unpaid%20bank%20dues%20and%20defaulted%20loans%20with%20a%20statutory%20legal%20notice!%20%23DebtRecovery%20%23BankLoan', '_blank', 'noopener,noreferrer')}
+                      className="w-8 h-8 rounded-full bg-black text-white hover:opacity-80 flex items-center justify-center transition-opacity cursor-pointer"
+                      aria-label="Share on X (Twitter)"
+                    >
                       <svg className="w-4 h-4 fill-current" viewBox="0 0 24 24"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
-                    </a>
-                    <a href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Flegalrecovery.in%2Fsend-a-legal-notice%2Ffor-banks-to-recover-their-unpaid-dues" target="_blank" rel="noopener noreferrer" className="w-8 h-8 rounded-full bg-[#1877F2] text-white hover:opacity-80 flex items-center justify-center transition-opacity" aria-label="Share on Facebook">
+                    </button>
+                    <button
+                      type="button"
+                      onClick={() => window.open('https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Flegalrecovery.in%2Fsend-a-legal-notice%2Ffor-banks-to-recover-their-unpaid-dues', '_blank', 'noopener,noreferrer')}
+                      className="w-8 h-8 rounded-full bg-[#1877F2] text-white hover:opacity-80 flex items-center justify-center transition-opacity cursor-pointer"
+                      aria-label="Share on Facebook"
+                    >
                       <svg className="w-4 h-4 fill-current" viewBox="0 0 24 24"><path d="M9.198 21.5h4v-8.01h3.604l.396-3.98h-4V7.5a1 1 0 0 1 1-1h3v-4h-3a5 5 0 0 0-5 5v2.01h-2l-.396 3.98h2.396v8.01z"/></svg>
-                    </a>
-                    <a href="https://www.linkedin.com/shareArticle?mini=true&url=https%3A%2F%2Flegalrecovery.in%2Fsend-a-legal-notice%2Ffor-banks-to-recover-their-unpaid-dues&title=Legal%20Notice%20for%20Banks%20to%20Recover%20Their%20Unpaid%20Dues" target="_blank" rel="noopener noreferrer" className="w-8 h-8 rounded-full bg-[#0A66C2] text-white hover:opacity-80 flex items-center justify-center transition-opacity" aria-label="Share on LinkedIn">
+                    </button>
+                    <button
+                      type="button"
+                      onClick={() => window.open('https://www.linkedin.com/shareArticle?mini=true&url=https%3A%2F%2Flegalrecovery.in%2Fsend-a-legal-notice%2Ffor-banks-to-recover-their-unpaid-dues&title=Legal%20Notice%20for%20Banks%20to%20Recover%20Their%20Unpaid%20Dues', '_blank', 'noopener,noreferrer')}
+                      className="w-8 h-8 rounded-full bg-[#0A66C2] text-white hover:opacity-80 flex items-center justify-center transition-opacity cursor-pointer"
+                      aria-label="Share on LinkedIn"
+                    >
                       <svg className="w-4 h-4 fill-current" viewBox="0 0 24 24"><path d="M4.98 3.5c0 1.381-1.11 2.5-2.48 2.5s-2.48-1.119-2.48-2.5c0-1.38 1.11-2.5 2.48-2.5s2.48 1.12 2.48 2.5zm.02 4.5h-5v16h5v-16zm7.982 0h-4.968v16h4.969v-8.399c0-4.67 6.029-5.052 6.029 0v8.399h4.988v-10.131c0-7.88-8.922-7.593-11.018-3.714v-2.155z"/></svg>
-                    </a>
+                    </button>
                   </div>
                 </div>
 
@@ -333,16 +348,16 @@ export default function ForBanksToRecoverTheirUnpaidDuesClient() {
                   </h2>
                   <div className="prose prose-base max-w-none text-slate-650 space-y-6">
                     <p className="text-sm md:text-base leading-relaxed">
-                      Scheduled commercial banks, public sector banking institutions, regional rural banks, and cooperative credit societies operate under rigorous prudential guidelines prescribed by the <a href="https://www.rbi.org.in/" target="_blank" rel="noopener noreferrer" className="text-purple-600 hover:text-purple-800 hover:underline">Reserve Bank of India (RBI)</a>. When commercial credit facilities, corporate term loans, or retail credit lines cross the 90-day overdue threshold and are classified as Non-Performing Assets (NPAs), banks must deploy multi-tiered statutory legal remedies to protect depositors&apos; funds and maintain capital adequacy ratios.
+                      Scheduled commercial banks, public sector banking institutions, regional rural banks, and cooperative credit societies operate under rigorous prudential guidelines prescribed by the <span className="font-semibold text-slate-800">Reserve Bank of India (RBI)</span>. When commercial credit facilities, corporate term loans, or retail credit lines cross the 90-day overdue threshold and are classified as Non-Performing Assets (NPAs), banks must deploy multi-tiered statutory legal remedies to protect depositors&apos; funds and maintain capital adequacy ratios.
                     </p>
                     <p className="text-sm md:text-base leading-relaxed">
-                      The cornerstone of secured asset enforcement for Indian banks is the <a href="https://www.indiacode.nic.in/handle/123456789/2006" target="_blank" rel="noopener noreferrer" className="text-purple-600 hover:text-purple-800 hover:underline">Securitisation and Reconstruction of Financial Assets and Enforcement of Security Interest (SARFAESI) Act, 2002</a>. Under Section 13(2) of the SARFAESI Act, once an account is classified as an NPA, the bank&apos;s Authorized Officer issues a statutory 60-day demand notice calling upon the principal borrower and personal or corporate guarantors to discharge their full liabilities. If the borrower fails to satisfy the demand or make valid representations under Section 13(3A), Section 13(4) empowers the bank to assume physical possession of mortgaged properties, take over management of the secured business, or auction collateral without obtaining a prior court decree.
+                      The cornerstone of secured asset enforcement for Indian banks is the <span className="font-semibold text-slate-800">Securitisation and Reconstruction of Financial Assets and Enforcement of Security Interest (SARFAESI) Act, 2002</span>. Under Section 13(2) of the SARFAESI Act, once an account is classified as an NPA, the bank&apos;s Authorized Officer issues a statutory 60-day demand notice calling upon the principal borrower and personal or corporate guarantors to discharge their full liabilities. If the borrower fails to satisfy the demand or make valid representations under Section 13(3A), Section 13(4) empowers the bank to assume physical possession of mortgaged properties, take over management of the secured business, or auction collateral without obtaining a prior court decree.
                     </p>
                     <p className="text-sm md:text-base leading-relaxed">
-                      For high-value credit claims of ₹20 Lakhs and above, banks possess statutory recourse to the <a href="https://drt.gov.in/" target="_blank" rel="noopener noreferrer" className="text-purple-600 hover:text-purple-800 hover:underline">Debt Recovery Tribunal (DRT)</a> established under the Recovery of Debts and Bankruptcy Act, 1993 (RDB Act). An Original Application (OA) filed under Section 19 of the RDB Act enables the bank to obtain immediate interim attachment of the debtor&apos;s unpledged properties, bank accounts, and receivables pending the issuance of an executable Recovery Certificate.
+                      For high-value credit claims of ₹20 Lakhs and above, banks possess statutory recourse to the <span className="font-semibold text-slate-800">Debt Recovery Tribunal (DRT)</span> established under the Recovery of Debts and Bankruptcy Act, 1993 (RDB Act). An Original Application (OA) filed under Section 19 of the RDB Act enables the bank to obtain immediate interim attachment of the debtor&apos;s unpledged properties, bank accounts, and receivables pending the issuance of an executable Recovery Certificate.
                     </p>
                     <p className="text-sm md:text-base leading-relaxed">
-                      In parallel, banks enforce strict criminal consequences for instrument dishonor. Section 138 of the <a href="https://www.indiacode.nic.in/handle/123456789/2189" target="_blank" rel="noopener noreferrer" className="text-purple-600 hover:text-purple-800 hover:underline">Negotiable Instruments Act, 1881</a> imposes criminal liability for bounced repayment or security cheques, while Section 25 of the <a href="https://www.indiacode.nic.in/handle/123456789/2070" target="_blank" rel="noopener noreferrer" className="text-purple-600 hover:text-purple-800 hover:underline">Payment and Settlement Systems Act, 2007 (PSSA)</a> applies identical criminal penalties to failed electronic NACH mandates. For corporate defaults exceeding ₹1 Crore, banks as financial creditors can trigger Corporate Insolvency Resolution Processes (CIRP) under Section 7 of the <a href="https://ibbi.gov.in/" target="_blank" rel="noopener noreferrer" className="text-purple-600 hover:text-purple-800 hover:underline">Insolvency and Bankruptcy Code, 2016 (IBC)</a>. Serving a formal advocate demand notice is the mandatory pre-condition establishing the uncontroverted record of default.
+                      In parallel, banks enforce strict criminal consequences for instrument dishonor. Section 138 of the <span className="font-semibold text-slate-800">Negotiable Instruments Act, 1881</span> imposes criminal liability for bounced repayment or security cheques, while Section 25 of the <span className="font-semibold text-slate-800">Payment and Settlement Systems Act, 2007 (PSSA)</span> applies identical criminal penalties to failed electronic NACH mandates. For corporate defaults exceeding ₹1 Crore, banks as financial creditors can trigger Corporate Insolvency Resolution Processes (CIRP) under Section 7 of the <span className="font-semibold text-slate-800">Insolvency and Bankruptcy Code, 2016 (IBC)</span>. Serving a formal advocate demand notice is the mandatory pre-condition establishing the uncontroverted record of default.
                     </p>
                   </div>
                 </section>
@@ -402,7 +417,7 @@ export default function ForBanksToRecoverTheirUnpaidDuesClient() {
                         <div>
                           <h4 className="font-extrabold text-slate-900 text-sm">Retail Housing, Auto &amp; Personal Loan Defaults</h4>
                           <p className="text-xs sm:text-sm text-slate-650 leading-relaxed mt-1">
-                            Individual retail credit defaults subject to strict compliance with <a href="https://www.rbi.org.in/" target="_blank" rel="noopener noreferrer" className="text-purple-600 hover:text-purple-800 hover:underline">RBI Fair Practices Code</a>. Notices detail itemized overdue principal, contractual interest, and penal charges, while warning of credit bureau reporting to CIBIL, Experian, and CRIF High Mark.
+                            Individual retail credit defaults subject to strict compliance with <span className="font-semibold text-slate-800">RBI Fair Practices Code</span>. Notices detail itemized overdue principal, contractual interest, and penal charges, while warning of credit bureau reporting to CIBIL, Experian, and CRIF High Mark.
                           </p>
                         </div>
                       </div>
@@ -416,7 +431,7 @@ export default function ForBanksToRecoverTheirUnpaidDuesClient() {
                   </h2>
                   <div className="prose prose-base max-w-none text-slate-650 space-y-6">
                     <p className="text-sm md:text-base leading-relaxed">
-                      To withstand judicial scrutiny in the Debt Recovery Tribunal, National Company Law Tribunal, or criminal courts, bank credit and recovery officers must assemble a certified evidentiary dossier under the <a href="https://www.indiacode.nic.in/handle/123456789/2187" target="_blank" rel="noopener noreferrer" className="text-purple-600 hover:text-purple-800 hover:underline">Indian Contract Act, 1872</a> and the Bankers&apos; Books Evidence Act, 1891.
+                      To withstand judicial scrutiny in the Debt Recovery Tribunal, National Company Law Tribunal, or criminal courts, bank credit and recovery officers must assemble a certified evidentiary dossier under the <span className="font-semibold text-slate-800">Indian Contract Act, 1872</span> and the Bankers&apos; Books Evidence Act, 1891.
                     </p>
 
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-4 my-6">
@@ -562,7 +577,7 @@ export default function ForBanksToRecoverTheirUnpaidDuesClient() {
                         <div>
                           <h4 className="font-extrabold text-sm sm:text-base text-slate-900 mb-1">Guarantor &amp; Collateral Title Verification</h4>
                           <p className="text-xs sm:text-sm text-slate-650 leading-relaxed">
-                            Verify active corporate registrations and director credentials via the <a href="https://www.mca.gov.in/" target="_blank" rel="noopener noreferrer" className="text-purple-600 hover:text-purple-800 hover:underline">Ministry of Corporate Affairs (MCA)</a> portal, confirm CERSAI charge filings, and verify residential and business addresses of all co-borrowers and personal guarantors.
+                            Verify active corporate registrations and director credentials via the <span className="font-semibold text-slate-800">Ministry of Corporate Affairs (MCA)</span> portal, confirm CERSAI charge filings, and verify residential and business addresses of all co-borrowers and personal guarantors.
                           </p>
                         </div>
                       </div>
@@ -688,7 +703,7 @@ export default function ForBanksToRecoverTheirUnpaidDuesClient() {
 
                 <div className="pt-8 border-t border-slate-100">
                   <p className="text-xs text-slate-400">
-                    References: [1] <a href="https://www.rbi.org.in/" target="_blank" rel="noopener noreferrer" className="text-purple-600 hover:text-purple-800 hover:underline">Reserve Bank of India Master Circulars on Prudential Norms on Income Recognition, Asset Classification and Provisioning pertaining to Advances (IRAC)</a>. [2] <a href="https://www.indiacode.nic.in/handle/123456789/2006" target="_blank" rel="noopener noreferrer" className="text-purple-600 hover:text-purple-800 hover:underline">Securitisation and Reconstruction of Financial Assets and Enforcement of Security Interest (SARFAESI) Act, 2002</a>. [3] <a href="https://drt.gov.in/" target="_blank" rel="noopener noreferrer" className="text-purple-600 hover:text-purple-800 hover:underline">Recovery of Debts and Bankruptcy Act, 1993 (Debt Recovery Tribunal Procedures)</a>. [4] <a href="https://www.indiacode.nic.in/handle/123456789/2189" target="_blank" rel="noopener noreferrer" className="text-purple-600 hover:text-purple-800 hover:underline">Negotiable Instruments Act, 1881 (Section 138 Cheque Dishonor)</a>. [5] <a href="https://www.indiacode.nic.in/handle/123456789/2070" target="_blank" rel="noopener noreferrer" className="text-purple-600 hover:text-purple-800 hover:underline">Payment and Settlement Systems Act, 2007 (Section 25 NACH Dishonor)</a>. [6] <a href="https://ibbi.gov.in/" target="_blank" rel="noopener noreferrer" className="text-purple-600 hover:text-purple-800 hover:underline">Insolvency and Bankruptcy Code, 2016 (Section 7 Financial Creditor Applications)</a>. [7] <a href="https://ecourts.gov.in/" target="_blank" rel="noopener noreferrer" className="text-purple-600 hover:text-purple-800 hover:underline">e-Courts Commercial Court Portal (Order XXXVII CPC Summary Suits)</a>.
+                    References: [1] <a href="https://www.rbi.org.in/" target="_blank" rel="nofollow noopener noreferrer" className="text-purple-600 hover:text-purple-800 hover:underline">Reserve Bank of India Master Circulars on Prudential Norms on Income Recognition, Asset Classification and Provisioning pertaining to Advances (IRAC)</a>. [2] <a href="https://www.indiacode.nic.in/handle/123456789/2006" target="_blank" rel="nofollow noopener noreferrer" className="text-purple-600 hover:text-purple-800 hover:underline">Securitisation and Reconstruction of Financial Assets and Enforcement of Security Interest (SARFAESI) Act, 2002</a>. [3] <span className="text-slate-600">Recovery of Debts and Bankruptcy Act, 1993 (Debt Recovery Tribunal Procedures)</span>. [4] <span className="text-slate-600">Negotiable Instruments Act, 1881 (Section 138 Cheque Dishonor)</span>. [5] <span className="text-slate-600">Payment and Settlement Systems Act, 2007 (Section 25 NACH Dishonor)</span>. [6] <span className="text-slate-600">Insolvency and Bankruptcy Code, 2016 (Section 7 Financial Creditor Applications)</span>. [7] <span className="text-slate-600">e-Courts Commercial Court Portal (Order XXXVII CPC Summary Suits)</span>.
                   </p>
                 </div>
               </div>

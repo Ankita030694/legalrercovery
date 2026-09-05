@@ -65,7 +65,7 @@ const breadcrumbSchema = {
       "@type": "ListItem",
       "position": 2,
       "name": "Landlord Deposit Recovery Guide",
-      "item": "https://www.legalrecovery.in/what-are-the-legal-steps-to-recover-a-security-deposit-from-a-landlord-who-is-refusing-to-return-it-in-india"
+      "item": "https://www.legalrecovery.in/recover-security-deposit-from-landlord-india"
     }
   ]
 };
@@ -220,7 +220,7 @@ export default function LandlordDepositClient() {
   ];
 
   const breadcrumbItems = [
-    { label: "Landlord Deposit Recovery Guide", href: "/what-are-the-legal-steps-to-recover-a-security-deposit-from-a-landlord-who-is-refusing-to-return-it-in-india" }
+    { label: "Landlord Deposit Recovery Guide", href: "/recover-security-deposit-from-landlord-india" }
   ];
 
   return (

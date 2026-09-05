@@ -2,9 +2,9 @@ import { Metadata } from 'next';
 import RecoverMoneyFromTenantWhoDamagedPropertyClient from './RecoverMoneyFromTenantWhoDamagedPropertyClient';
 
 const slug = 'send-a-legal-notice/recover-money-from-tenant-who-damaged-property';
-const title = 'Legal Notice to Tenant for Property Damage | Recover Money India';
+const title = 'Legal Notice to Tenant for Property Damage Recovery';
 const description =
-  'Tenant damaged your commercial or residential property? Send an advocate-vetted statutory legal notice under Transfer of Property Act Section 108(m) & Contract Act Section 73 to recover repair costs exceeding security deposit.';
+  'Tenant damaged your property? Send an advocate-vetted legal notice under the Transfer of Property Act to recover repair costs and damages.';
 const url = `https://www.legalrecovery.in/${slug}`;
 const ogImage = `/images/og/recover-money-from-tenant-who-damaged-property.jpg`;
 

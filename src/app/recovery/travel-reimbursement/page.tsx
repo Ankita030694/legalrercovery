@@ -2,7 +2,7 @@ import { Metadata } from "next";
 import TravelReimbursementClient from "./TravelReimbursementClient";
 
 export const metadata: Metadata = {
-  title: "Unpaid Business Travel & Conveyance Recovery | LegalRecovery",
+  title: "Unpaid Travel & Conveyance Recovery | LegalRecovery",
   description: "Employer refusing to clear your business travel, hotel, flight, or conveyance bills? Find out how to send a legal notice and recover travel reimbursements.",
   keywords: [
     "recover travel reimbursement from employer",

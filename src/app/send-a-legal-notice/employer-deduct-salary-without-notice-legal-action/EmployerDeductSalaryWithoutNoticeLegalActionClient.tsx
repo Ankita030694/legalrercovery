@@ -388,41 +388,38 @@ export default function EmployerDeductSalaryWithoutNoticeLegalActionClient() {
                     <span className="text-xs font-semibold text-slate-400 uppercase tracking-wider mr-2">
                       Share:
                     </span>
-                    <a
-                      href={`https://twitter.com/intent/tweet?url=${shareUrl}&text=${shareText}`}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="w-8 h-8 rounded-full bg-black text-white hover:opacity-80 flex items-center justify-center transition-opacity"
+                    <button
+                      type="button"
+                      onClick={() => window.open(`https://twitter.com/intent/tweet?url=${shareUrl}&text=${shareText}`, '_blank', 'noopener,noreferrer')}
+                      className="w-8 h-8 rounded-full bg-black text-white hover:opacity-80 flex items-center justify-center transition-opacity cursor-pointer"
                       aria-label="Share on X (Twitter)"
                     >
                       <svg className="w-4 h-4 fill-current" viewBox="0 0 24 24">
                         <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z" />
                       </svg>
-                    </a>
-                    <a
-                      href={`https://www.facebook.com/sharer/sharer.php?u=${shareUrl}`}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="w-8 h-8 rounded-full bg-[#1877F2] text-white hover:opacity-80 flex items-center justify-center transition-opacity"
+                    </button>
+                    <button
+                      type="button"
+                      onClick={() => window.open(`https://www.facebook.com/sharer/sharer.php?u=${shareUrl}`, '_blank', 'noopener,noreferrer')}
+                      className="w-8 h-8 rounded-full bg-[#1877F2] text-white hover:opacity-80 flex items-center justify-center transition-opacity cursor-pointer"
                       aria-label="Share on Facebook"
                     >
                       <svg className="w-4 h-4 fill-current" viewBox="0 0 24 24">
                         <path d="M9.198 21.5h4v-8.01h3.604l.396-3.98h-4V7.5a1 1 0 0 1 1-1h3v-4h-3a5 5 0 0 0-5 5v2.01h-2l-.396 3.98h2.396v8.01z" />
                       </svg>
-                    </a>
-                    <a
-                      href={`https://www.linkedin.com/shareArticle?mini=true&url=${shareUrl}&title=${encodeURIComponent(
+                    </button>
+                    <button
+                      type="button"
+                      onClick={() => window.open(`https://www.linkedin.com/shareArticle?mini=true&url=${shareUrl}&title=${encodeURIComponent(
                         'Legal Notice to Employer for Deducting Salary Without Notice | Legal Recovery India'
-                      )}`}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="w-8 h-8 rounded-full bg-[#0A66C2] text-white hover:opacity-80 flex items-center justify-center transition-opacity"
+                      )}`, '_blank', 'noopener,noreferrer')}
+                      className="w-8 h-8 rounded-full bg-[#0A66C2] text-white hover:opacity-80 flex items-center justify-center transition-opacity cursor-pointer"
                       aria-label="Share on LinkedIn"
                     >
                       <svg className="w-4 h-4 fill-current" viewBox="0 0 24 24">
                         <path d="M4.98 3.5c0 1.381-1.11 2.5-2.48 2.5s-2.48-1.119-2.48-2.5c0-1.38 1.11-2.5 2.48-2.5s2.48 1.12 2.48 2.5zm.02 4.5h-5v16h5v-16zm7.982 0h-4.968v16h4.969v-8.399c0-4.67 6.029-5.052 6.029 0v8.399h4.988v-10.131c0-7.88-8.922-7.593-11.018-3.714v-2.155z" />
                       </svg>
-                    </a>
+                    </button>
                   </div>
                 </div>
 
@@ -433,32 +430,17 @@ export default function EmployerDeductSalaryWithoutNoticeLegalActionClient() {
                   </h2>
                   <p className="text-sm text-slate-700 font-medium leading-relaxed">
                     An employee or corporate professional can issue an advocate-vetted statutory legal notice to an employer for deducting salary without prior written notice under{' '}
-                    <a
-                      href="https://labour.gov.in/sites/default/files/ThePaymentofWagesAct1936.pdf"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="text-purple-600 hover:text-purple-800 hover:underline"
-                    >
+                    <span className="font-semibold text-slate-800">
                       Section 7 and Section 10 of the Payment of Wages Act, 1936
-                    </a>
+                    </span>
                     ,{' '}
-                    <a
-                      href="https://labour.gov.in/sites/default/files/the_code_on_wages_2019_no._29_of_2019.pdf"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="text-purple-600 hover:text-purple-800 hover:underline"
-                    >
+                    <span className="font-semibold text-slate-800">
                       Section 18 of the Code on Wages, 2019
-                    </a>
+                    </span>
                     , and{' '}
-                    <a
-                      href="https://www.indiacode.nic.in/handle/123456789/2187"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="text-purple-600 hover:text-purple-800 hover:underline"
-                    >
+                    <span className="font-semibold text-slate-800">
                       Section 73 of the Indian Contract Act, 1872
-                    </a>
+                    </span>
                     , demanding immediate refund of unlawfully withheld wages with 18% per annum commercial interest within a 15-day peremptory deadline. Employers are strictly prohibited by law from imposing unilateral fines, project loss deductions, or arbitrary penalty clawbacks without serving a formal show-cause notice and conducting a fair disciplinary inquiry. If the employer fails to refund the deducted salary within the 15-day notice window, the aggrieved employee can initiate recovery proceedings before the Payment of Wages Authority (seeking up to ten times compensation under Section 15(3)), file a recovery petition under Section 33C(2) of the Industrial Disputes Act, 1947, institute an Order 37 summary suit in civil court, or file criminal proceedings for criminal breach of trust under Section 316 of the Bharatiya Nyaya Sanhita, 2023.
                   </p>
                 </div>
@@ -513,23 +495,13 @@ export default function EmployerDeductSalaryWithoutNoticeLegalActionClient() {
                     </div>
                     <p className="text-sm md:text-base leading-relaxed">
                       In the landmark ruling of{' '}
-                      <a
-                        href="https://main.sci.gov.in/judgment/judis/3739.pdf"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="text-purple-600 hover:text-purple-800 hover:underline"
-                      >
+                      <span className="font-semibold text-slate-800">
                         State of Punjab v. K.R. Erry &amp; Sobhag Rai Mehta (1973) 1 SCC 120
-                      </a>
+                      </span>
                       , the Supreme Court of India held that any arbitrary deduction or reduction from an employee&apos;s earned emoluments without affording a prior opportunity of being heard violates the inviolable principles of natural justice (<em>audi alteram partem</em>) and is void ab initio. This doctrine was further reinforced in{' '}
-                      <a
-                        href="https://main.sci.gov.in/judgment/judis/49605.pdf"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="text-purple-600 hover:text-purple-800 hover:underline"
-                      >
+                      <span className="font-semibold text-slate-800">
                         M/s Bennett Coleman &amp; Co. Ltd. v. Punya Priya Das Gupta (1969) 2 SCC 1
-                      </a>
+                      </span>
                       , confirming that recovery proceedings apply directly to all unauthorized wage deductions.
                     </p>
                   </div>
@@ -759,14 +731,9 @@ export default function EmployerDeductSalaryWithoutNoticeLegalActionClient() {
                       </h4>
                       <p className="text-xs sm:text-sm text-slate-700 leading-relaxed">
                         To ensure that your legal notice carries full judicial enforceability, the notice must be addressed to the exact corporate legal entity, citing its Corporate Identification Number (CIN), registered office address, and Board of Directors as recorded on the{' '}
-                        <a
-                          href="https://www.mca.gov.in/content/mca/global/en/home.html"
-                          target="_blank"
-                          rel="noopener noreferrer"
-                          className="text-purple-600 hover:text-purple-800 hover:underline"
-                        >
+                        <span className="font-semibold text-slate-800">
                           Ministry of Corporate Affairs (MCA) portal
-                        </a>
+                        </span>
                         . Serving the notice on individual branch managers or HR executives without naming the registered company and active managing directors creates procedural defects in court. Legal Recovery automatically cross-checks MCA company master data to serve directors directly.
                       </p>
                     </div>
@@ -917,7 +884,7 @@ export default function EmployerDeductSalaryWithoutNoticeLegalActionClient() {
                       <a
                         href="https://labour.gov.in/sites/default/files/ThePaymentofWagesAct1936.pdf"
                         target="_blank"
-                        rel="noopener noreferrer"
+                        rel="nofollow noopener noreferrer"
                         className="text-purple-600 hover:text-purple-800 hover:underline"
                       >
                         Payment of Wages Act, 1936 — Sections 7, 8, 9, 10 &amp; 15 (Authorized Deductions &amp; Claims), labour.gov.in
@@ -927,71 +894,29 @@ export default function EmployerDeductSalaryWithoutNoticeLegalActionClient() {
                       <a
                         href="https://labour.gov.in/sites/default/files/the_code_on_wages_2019_no._29_of_2019.pdf"
                         target="_blank"
-                        rel="noopener noreferrer"
+                        rel="nofollow noopener noreferrer"
                         className="text-purple-600 hover:text-purple-800 hover:underline"
                       >
                         Code on Wages, 2019 — Section 18 (Deductions from Wages &amp; 50% Statutory Cap), labour.gov.in
                       </a>
                     </li>
                     <li>
-                      <a
-                        href="https://www.indiacode.nic.in/handle/123456789/2187"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="text-purple-600 hover:text-purple-800 hover:underline"
-                      >
-                        Indian Contract Act, 1872 — Section 73 (Compensation for Breach of Employment Contract), indiacode.nic.in
-                      </a>
+                      <span className="text-slate-700">Indian Contract Act, 1872 — Section 73 (Compensation for Breach of Employment Contract), indiacode.nic.in</span>
                     </li>
                     <li>
-                      <a
-                        href="https://www.indiacode.nic.in/handle/123456789/11018"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="text-purple-600 hover:text-purple-800 hover:underline"
-                      >
-                        Industrial Disputes Act, 1947 — Section 33C(2) (Recovery of Money Due from Employer), indiacode.nic.in
-                      </a>
+                      <span className="text-slate-700">Industrial Disputes Act, 1947 — Section 33C(2) (Recovery of Money Due from Employer), indiacode.nic.in</span>
                     </li>
                     <li>
-                      <a
-                        href="https://main.sci.gov.in/judgment/judis/3739.pdf"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="text-purple-600 hover:text-purple-800 hover:underline"
-                      >
-                        Supreme Court of India — State of Punjab v. K.R. Erry &amp; Sobhag Rai Mehta (1973) 1 SCC 120, main.sci.gov.in
-                      </a>
+                      <span className="text-slate-700">Supreme Court of India — State of Punjab v. K.R. Erry &amp; Sobhag Rai Mehta (1973) 1 SCC 120, main.sci.gov.in</span>
                     </li>
                     <li>
-                      <a
-                        href="https://main.sci.gov.in/judgment/judis/49605.pdf"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="text-purple-600 hover:text-purple-800 hover:underline"
-                      >
-                        Supreme Court of India — M/s Bennett Coleman &amp; Co. Ltd. v. Punya Priya Das Gupta (1969) 2 SCC 1, main.sci.gov.in
-                      </a>
+                      <span className="text-slate-700">Supreme Court of India — M/s Bennett Coleman &amp; Co. Ltd. v. Punya Priya Das Gupta (1969) 2 SCC 1, main.sci.gov.in</span>
                     </li>
                     <li>
-                      <a
-                        href="https://www.mca.gov.in/content/mca/global/en/home.html"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="text-purple-600 hover:text-purple-800 hover:underline"
-                      >
-                        Ministry of Corporate Affairs (MCA) — Company Master Data &amp; Corporate Identification Number (CIN), mca.gov.in
-                      </a>
+                      <span className="text-slate-700">Ministry of Corporate Affairs (MCA) — Company Master Data &amp; Corporate Identification Number (CIN), mca.gov.in</span>
                     </li>
                     <li>
-                      <a
-                        href="https://www.indiacode.nic.in/handle/123456789/20234"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="text-purple-600 hover:text-purple-800 hover:underline"
-                      >
-                        Bharatiya Nyaya Sanhita, 2023 — Section 316 (Criminal Breach of Trust) &amp; Section 318 (Cheating), indiacode.nic.in
-                      </a>
+                      <span className="text-slate-700">Bharatiya Nyaya Sanhita, 2023 — Section 316 (Criminal Breach of Trust) &amp; Section 318 (Cheating), indiacode.nic.in</span>
                     </li>
                   </ol>
                 </section>

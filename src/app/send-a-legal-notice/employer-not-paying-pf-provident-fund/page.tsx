@@ -2,8 +2,8 @@ import { Metadata } from 'next';
 import EmployerNotPayingPfProvidentFundClient from './EmployerNotPayingPfProvidentFundClient';
 
 const slug = 'send-a-legal-notice/employer-not-paying-pf-provident-fund';
-const title = 'Legal Notice to Employer for Not Paying PF Provident Fund | Draft & Send Notice';
-const description = 'Employer deducted PF from salary but did not deposit with EPFO? Send an advocate-vetted legal notice to your employer for unpaid provident fund under EPF Act Section 14B, Section 7Q & IPC 406.';
+const title = 'Legal Notice to Employer for Not Paying PF / EPF Dues';
+const description = 'Employer not depositing PF with EPFO? Send an advocate-vetted legal notice for unpaid provident fund under Section 14B of the EPF Act.';
 const url = `https://www.legalrecovery.in/${slug}`;
 
 export const metadata: Metadata = {

@@ -2,8 +2,8 @@ import { Metadata } from 'next';
 import SecurityDepositNotRefundedLandlordClient from './SecurityDepositNotRefundedLandlordClient';
 
 const slug = 'send-a-legal-notice/security-deposit-not-refunded-landlord';
-const title = 'Legal Notice to Landlord for Not Giving Back Security Deposit | Commercial & Residential';
-const description = 'Landlord withholding commercial or residential rental deposit? Send an advocate-drafted statutory legal notice for security deposit recovery with penal interest under TPA, Model Tenancy Act & Commercial Courts Act.';
+const title = 'Legal Notice to Landlord for Security Deposit Refund';
+const description = 'Landlord withholding your security deposit? Send an advocate-drafted legal notice under the Tenancy Act to recover your deposit with interest.';
 const url = `https://www.legalrecovery.in/${slug}`;
 
 export const metadata: Metadata = {

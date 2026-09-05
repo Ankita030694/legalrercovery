@@ -97,9 +97,13 @@ const articleSchema = {
   "image": "https://www.legalrecovery.in/og-msme-samadhan-vs-legal-notice.png",
   "author": {
     "@type": "Person",
-    "name": "Anuj Bhiya",
-    "url": "https://www.legalrecovery.in/author/anujbhiya",
-    "image": "https://www.legalrecovery.in/anujbhiya.png"
+    "name": "Advocate Aman Chawla",
+    "url": "https://www.legalrecovery.in/authors/advocate-aman-chawla"
+  },
+  "reviewedBy": {
+    "@type": "Person",
+    "name": "Advocate Sneha Sharma",
+    "url": "https://www.legalrecovery.in/authors/advocate-sneha-sharma"
   },
   "publisher": {
     "@type": "Organization",
@@ -231,6 +235,12 @@ export default function MsmeSamadhanVsNoticeClient() {
 
             {/* Middle Column Main Content */}
             <article className="min-w-0 bg-white p-6 md:p-12 rounded-3xl shadow-sm space-y-12 border border-slate-100">
+              {/* Meta details */}
+              <div className="flex flex-wrap items-center text-xs sm:text-sm text-slate-500 gap-3 border-b border-slate-100 pb-4">
+                <span>Written by <Link href="/authors/advocate-aman-chawla" className="font-semibold text-[#DC2626] hover:underline">Advocate Aman Chawla</Link></span>
+                <span className="hidden sm:inline">•</span>
+                <span>Reviewed by <Link href="/authors/advocate-sneha-sharma" className="font-semibold text-[#DC2626] hover:underline">Advocate Sneha Sharma</Link></span>
+              </div>
               
               {/* Introduction with Lead Hook */}
               <div className="prose prose-base max-w-none text-slate-650 space-y-6">
@@ -243,7 +253,7 @@ export default function MsmeSamadhanVsNoticeClient() {
                 </p>
                 
                 <p className="text-sm md:text-base leading-relaxed">
-                  Both routes serve different tactical purposes. A formal notice signals immediate legal escalation, giving the buyer a final opportunity to settle. Conversely, the MSME Samadhan portal provides a statutory arbitration mechanism backed by interest penalties. Understanding how to leverage these tools is crucial for maximizing recovery while minimizing litigation expenses. Businesses should also understand the broader ecosystem, including <Link href="/what-legal-options-does-a-freelancer-in-india-have-to-recover-unpaid-payments-from-a-client" className="text-[#DC2626] hover:underline font-medium">what legal options does a freelancer in India have to recover unpaid payments from a client</Link>, as commercial debt recovery principles overlap across entity classes.
+                  Both routes serve different tactical purposes. A formal notice signals immediate legal escalation, giving the buyer a final opportunity to settle. Conversely, the MSME Samadhan portal provides a statutory arbitration mechanism backed by interest penalties. Understanding how to leverage these tools is crucial for maximizing recovery while minimizing litigation expenses. Businesses should also understand the broader ecosystem, including <Link href="/freelancer-payment-recovery-legal-options-india" className="text-[#DC2626] hover:underline font-medium">what legal options does a freelancer in India have to recover unpaid payments from a client</Link>, as commercial debt recovery principles overlap across entity classes.
                 </p>
               </div>
 

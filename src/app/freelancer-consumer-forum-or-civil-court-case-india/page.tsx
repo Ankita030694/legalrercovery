@@ -3,7 +3,7 @@ import FreelancerForumClient from "./FreelancerForumClient";
 
 export const metadata: Metadata = {
   title: "Can a Freelancer File in Consumer or Civil Court?",
-  description: "Guide for Indian freelancers on payment recovery. Learn why Consumer Courts exclude B2B claims and how Order 37 Summary Suits and MSME Samadhaan help.",
+  description: "Freelancer payment recovery guide in India. Learn legal remedies, Order 37 summary suits, and MSME Samadhaan options to recover dues.",
   keywords: [
     "freelancer consumer court india",
     "can freelancer file consumer court",
@@ -17,7 +17,7 @@ export const metadata: Metadata = {
     "civil court freelancer recovery"
   ],
   alternates: {
-    canonical: 'https://www.legalrecovery.in/can-a-freelancer-file-a-case-in-a-consumer-forum-or-civil-court-to-recover-payment-in-india',
+    canonical: 'https://www.legalrecovery.in/freelancer-consumer-forum-or-civil-court-case-india',
   },
 };
 

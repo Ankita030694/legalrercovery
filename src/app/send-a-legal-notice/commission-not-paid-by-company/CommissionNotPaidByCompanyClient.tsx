@@ -381,44 +381,41 @@ export default function CommissionNotPaidByCompanyClient() {
                     <span>Last updated: {currentDate}</span>
                   </div>
                   {/* Social Share Buttons (Native Brand Colors) */}
-                  <div className="flex items-center gap-2">
-                    <span className="text-xs font-semibold text-slate-400 uppercase tracking-wider mr-2">
-                      Share:
-                    </span>
-                    <a
-                      href={`https://twitter.com/intent/tweet?url=${shareUrl}&text=${shareText}`}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="w-8 h-8 rounded-full bg-black text-white hover:opacity-80 flex items-center justify-center transition-opacity"
-                      aria-label="Share on X (Twitter)"
-                    >
-                      <svg className="w-4 h-4 fill-current" viewBox="0 0 24 24">
-                        <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z" />
-                      </svg>
-                    </a>
-                    <a
-                      href={`https://www.facebook.com/sharer/sharer.php?u=${shareUrl}`}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="w-8 h-8 rounded-full bg-[#1877F2] text-white hover:opacity-80 flex items-center justify-center transition-opacity"
-                      aria-label="Share on Facebook"
-                    >
-                      <svg className="w-4 h-4 fill-current" viewBox="0 0 24 24">
-                        <path d="M9.198 21.5h4v-8.01h3.604l.396-3.98h-4V7.5a1 1 0 0 1 1-1h3v-4h-3a5 5 0 0 0-5 5v2.01h-2l-.396 3.98h2.396v8.01z" />
-                      </svg>
-                    </a>
-                    <a
-                      href={`https://www.linkedin.com/shareArticle?mini=true&url=${shareUrl}&title=${encodeURIComponent('Legal Notice to Company for Not Paying Commission | Legal Recovery India')}`}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="w-8 h-8 rounded-full bg-[#0A66C2] text-white hover:opacity-80 flex items-center justify-center transition-opacity"
-                      aria-label="Share on LinkedIn"
-                    >
-                      <svg className="w-4 h-4 fill-current" viewBox="0 0 24 24">
-                        <path d="M4.98 3.5c0 1.381-1.11 2.5-2.48 2.5s-2.48-1.119-2.48-2.5c0-1.38 1.11-2.5 2.48-2.5s2.48 1.12 2.48 2.5zm.02 4.5h-5v16h5v-16zm7.982 0h-4.968v16h4.969v-8.399c0-4.67 6.029-5.052 6.029 0v8.399h4.988v-10.131c0-7.88-8.922-7.593-11.018-3.714v-2.155z" />
-                      </svg>
-                    </a>
-                  </div>
+                    <div className="flex items-center gap-2">
+                      <span className="text-xs font-semibold text-slate-400 uppercase tracking-wider mr-2">
+                        Share:
+                      </span>
+                      <button
+                        type="button"
+                        onClick={() => window.open(`https://twitter.com/intent/tweet?url=${shareUrl}&text=${shareText}`, '_blank', 'noopener,noreferrer')}
+                        className="w-8 h-8 rounded-full bg-black text-white hover:opacity-80 flex items-center justify-center transition-opacity cursor-pointer"
+                        aria-label="Share on X (Twitter)"
+                      >
+                        <svg className="w-4 h-4 fill-current" viewBox="0 0 24 24">
+                          <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z" />
+                        </svg>
+                      </button>
+                      <button
+                        type="button"
+                        onClick={() => window.open(`https://www.facebook.com/sharer/sharer.php?u=${shareUrl}`, '_blank', 'noopener,noreferrer')}
+                        className="w-8 h-8 rounded-full bg-[#1877F2] text-white hover:opacity-80 flex items-center justify-center transition-opacity cursor-pointer"
+                        aria-label="Share on Facebook"
+                      >
+                        <svg className="w-4 h-4 fill-current" viewBox="0 0 24 24">
+                          <path d="M9.198 21.5h4v-8.01h3.604l.396-3.98h-4V7.5a1 1 0 0 1 1-1h3v-4h-3a5 5 0 0 0-5 5v2.01h-2l-.396 3.98h2.396v8.01z" />
+                        </svg>
+                      </button>
+                      <button
+                        type="button"
+                        onClick={() => window.open(`https://www.linkedin.com/shareArticle?mini=true&url=${shareUrl}&title=${encodeURIComponent('Legal Notice to Company for Not Paying Commission | Legal Recovery India')}`, '_blank', 'noopener,noreferrer')}
+                        className="w-8 h-8 rounded-full bg-[#0A66C2] text-white hover:opacity-80 flex items-center justify-center transition-opacity cursor-pointer"
+                        aria-label="Share on LinkedIn"
+                      >
+                        <svg className="w-4 h-4 fill-current" viewBox="0 0 24 24">
+                          <path d="M4.98 3.5c0 1.381-1.11 2.5-2.48 2.5s-2.48-1.119-2.48-2.5c0-1.38 1.11-2.5 2.48-2.5s2.48 1.12 2.48 2.5zm.02 4.5h-5v16h5v-16zm7.982 0h-4.968v16h4.969v-8.399c0-4.67 6.029-5.052 6.029 0v8.399h4.988v-10.131c0-7.88-8.922-7.593-11.018-3.714v-2.155z" />
+                        </svg>
+                      </button>
+                    </div>
                 </div>
 
                 {/* ── QUICK ANSWER ──────────────────────────────────────── */}
@@ -428,32 +425,17 @@ export default function CommissionNotPaidByCompanyClient() {
                   </h2>
                   <p className="text-sm text-slate-700 font-medium leading-relaxed">
                     A commercial agent, freelance consultant, broker, or sales professional can serve an advocate-drafted statutory legal notice to a company for unpaid commission under{' '}
-                    <a
-                      href="https://www.indiacode.nic.in/handle/123456789/2187"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="text-purple-600 hover:text-purple-800 hover:underline"
-                    >
+                    <span className="font-semibold text-slate-800">
                       Section 73 and Section 219 of the Indian Contract Act, 1872
-                    </a>
+                    </span>
                     , demanding immediate disbursement of accrued incentives, sales commissions, and contractual overrides within 15 days. If the company withholds commission earned under employment or contractual terms, the claimant can initiate recovery proceedings under Order 37 of the Code of Civil Procedure, 1908 for summary debt recovery or trigger mandatory pre-institution mediation under{' '}
-                    <a
-                      href="https://www.indiacode.nic.in/handle/123456789/2156"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="text-purple-600 hover:text-purple-800 hover:underline"
-                    >
+                    <span className="font-semibold text-slate-800">
                       Section 12A of the Commercial Courts Act, 2015
-                    </a>
+                    </span>
                     . Additionally, registered MSME agents and service providers are entitled to claim compound interest at three times the RBI bank rate under{' '}
-                    <a
-                      href="https://msme.gov.in/documents/acts-and-rules"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="text-purple-600 hover:text-purple-800 hover:underline"
-                    >
+                    <span className="font-semibold text-slate-800">
                       Section 16 of the MSMED Act, 2006
-                    </a>{' '}
+                    </span>{' '}
                     alongside potential prosecution of company directors under Section 316 and Section 318 of the Bharatiya Nyaya Sanhita, 2023 for criminal breach of trust and fraudulent inducement.
                   </p>
                 </div>
@@ -483,14 +465,9 @@ export default function CommissionNotPaidByCompanyClient() {
                     </p>
                     <p className="text-sm md:text-base leading-relaxed">
                       The core substantive legislation governing commercial commission claims is the{' '}
-                      <a
-                        href="https://www.indiacode.nic.in/handle/123456789/2187"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="text-purple-600 hover:text-purple-800 hover:underline"
-                      >
+                      <span className="font-semibold text-slate-800">
                         Indian Contract Act, 1872 (ICA)
-                      </a>
+                      </span>
                       . Several specific provisions create an unassailable legal mandate for full commission payment:
                     </p>
                     <div className="bg-slate-50 p-6 rounded-2xl border border-slate-100 space-y-4">
@@ -511,23 +488,13 @@ export default function CommissionNotPaidByCompanyClient() {
                     </div>
                     <p className="text-sm md:text-base leading-relaxed">
                       For salaried professionals and retained executives, sales commissions and performance incentives are statutorily recognized as integral components of &quot;wages&quot; under the{' '}
-                      <a
-                        href="https://labour.gov.in/sites/default/files/the_code_on_wages_2019_no._29_of_2019.pdf"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="text-purple-600 hover:text-purple-800 hover:underline"
-                      >
+                      <span className="font-semibold text-slate-800">
                         Code on Wages, 2019
-                      </a>{' '}
+                      </span>{' '}
                       and the{' '}
-                      <a
-                        href="https://labour.gov.in/sites/default/files/ThePaymentofWagesAct1936.pdf"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="text-purple-600 hover:text-purple-800 hover:underline"
-                      >
+                      <span className="font-semibold text-slate-800">
                         Payment of Wages Act, 1936
-                      </a>
+                      </span>
                       . Section 2(y) of the Code on Wages defines wages to include all remuneration expressed in terms of money, including contractual commission payable upon fulfilling employment terms. Employers who unlawfully withhold earned commissions commit an actionable labor offense punishable with statutory penalties and interest under Section 15(3) of the Payment of Wages Act.
                     </p>
                   </div>
@@ -668,14 +635,9 @@ export default function CommissionNotPaidByCompanyClient() {
                       </h4>
                       <p className="text-xs sm:text-sm text-slate-700 leading-relaxed">
                         Under the landmark Supreme Court ruling in{' '}
-                        <a
-                          href="https://main.sci.gov.in/judgment/judis/49605.pdf"
-                          target="_blank"
-                          rel="noopener noreferrer"
-                          className="text-purple-600 hover:text-purple-800 hover:underline"
-                        >
+                        <span className="font-semibold text-slate-800">
                           Patil Automation Pvt. Ltd. v. Rakheja Engineers Pvt. Ltd. (2022) 10 SCC 1
-                        </a>
+                        </span>
                         , Section 12A of the Commercial Courts Act, 2015 is strictly mandatory. A plaintiff seeking recovery of commercial dues (including agency commissions) must undergo pre-institution mediation through the District Legal Services Authority (DLSA) before filing a suit, unless urgent interim relief is claimed. Serving a statutory legal notice prior to mediation establishes the formal record of default and substantially accelerates the settlement process.
                       </p>
                     </div>
@@ -720,14 +682,9 @@ export default function CommissionNotPaidByCompanyClient() {
                       </h4>
                       <p className="text-xs sm:text-sm text-slate-700 leading-relaxed">
                         To guarantee legal validity in court, the legal notice must be addressed to the exact corporate entity, citing its Corporate Identification Number (CIN), registered office address, and active Board of Directors as recorded on the{' '}
-                        <a
-                          href="https://www.mca.gov.in/content/mca/global/en/home.html"
-                          target="_blank"
-                          rel="noopener noreferrer"
-                          className="text-purple-600 hover:text-purple-800 hover:underline"
-                        >
+                        <span className="font-semibold text-purple-900">
                           Ministry of Corporate Affairs (MCA) portal
-                        </a>
+                        </span>
                         . Legal Recovery automatically verifies MCA records and GSTIN databases to prevent technical defects and ensure constructive legal service on all managing directors.
                       </p>
                     </div>
@@ -878,7 +835,7 @@ export default function CommissionNotPaidByCompanyClient() {
                       <a
                         href="https://www.indiacode.nic.in/handle/123456789/2187"
                         target="_blank"
-                        rel="noopener noreferrer"
+                        rel="nofollow noopener noreferrer"
                         className="text-purple-600 hover:text-purple-800 hover:underline"
                       >
                         Indian Contract Act, 1872 — Sections 73, 217, 219 &amp; 221, indiacode.nic.in
@@ -888,61 +845,26 @@ export default function CommissionNotPaidByCompanyClient() {
                       <a
                         href="https://www.indiacode.nic.in/handle/123456789/2156"
                         target="_blank"
-                        rel="noopener noreferrer"
+                        rel="nofollow noopener noreferrer"
                         className="text-purple-600 hover:text-purple-800 hover:underline"
                       >
                         Commercial Courts Act, 2015 — Section 2(1)(c) &amp; Section 12A Mandatory Pre-Institution Mediation, indiacode.nic.in
                       </a>
                     </li>
                     <li>
-                      <a
-                        href="https://msme.gov.in/documents/acts-and-rules"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="text-purple-600 hover:text-purple-800 hover:underline"
-                      >
-                        Micro, Small and Medium Enterprises Development (MSMED) Act, 2006 — Sections 15–18 Delayed Payment Rules, msme.gov.in
-                      </a>
+                      Micro, Small and Medium Enterprises Development (MSMED) Act, 2006 — Sections 15–18 Delayed Payment Rules, msme.gov.in
                     </li>
                     <li>
-                      <a
-                        href="https://labour.gov.in/sites/default/files/the_code_on_wages_2019_no._29_of_2019.pdf"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="text-purple-600 hover:text-purple-800 hover:underline"
-                      >
-                        Code on Wages, 2019 — Definition of Wages &amp; Payment Timelines, labour.gov.in
-                      </a>
+                      Code on Wages, 2019 — Definition of Wages &amp; Payment Timelines, labour.gov.in
                     </li>
                     <li>
-                      <a
-                        href="https://main.sci.gov.in/judgment/judis/49605.pdf"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="text-purple-600 hover:text-purple-800 hover:underline"
-                      >
-                        Supreme Court of India — Patil Automation Pvt. Ltd. v. Rakheja Engineers Pvt. Ltd. (2022) 10 SCC 1, main.sci.gov.in
-                      </a>
+                      Supreme Court of India — Patil Automation Pvt. Ltd. v. Rakheja Engineers Pvt. Ltd. (2022) 10 SCC 1, main.sci.gov.in
                     </li>
                     <li>
-                      <a
-                        href="https://www.mca.gov.in/content/mca/global/en/home.html"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="text-purple-600 hover:text-purple-800 hover:underline"
-                      >
-                        Ministry of Corporate Affairs (MCA) — Company Master Data &amp; Registered Office Verification, mca.gov.in
-                      </a>
+                      Ministry of Corporate Affairs (MCA) — Company Master Data &amp; Registered Office Verification, mca.gov.in
                     </li>
                     <li>
-                      <a
-                        href="https://www.indiacode.nic.in/handle/123456789/20234"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="text-purple-600 hover:text-purple-800 hover:underline"
-                      >
-                        Bharatiya Nyaya Sanhita, 2023 — Section 316 (Breach of Trust) &amp; Section 318 (Cheating), indiacode.nic.in
-                      </a>
+                      Bharatiya Nyaya Sanhita, 2023 — Section 316 (Breach of Trust) &amp; Section 318 (Cheating), indiacode.nic.in
                     </li>
                   </ol>
                 </section>

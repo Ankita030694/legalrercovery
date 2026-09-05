@@ -2,9 +2,9 @@ import { Metadata } from 'next';
 import CompanyNotPayingBonusClient from './CompanyNotPayingBonusClient';
 
 const slug = 'send-a-legal-notice/company-not-paying-bonus';
-const title = 'Send Legal Notice to Company for Not Paying Bonus | Recovery India';
+const title = 'Legal Notice to Company for Unpaid Employee Bonus';
 const description =
-  'Company withholding your earned annual performance bonus, statutory bonus, or retention incentive post-resignation? Send an advocate-drafted statutory legal notice under the Payment of Bonus Act, 1965 and Indian Contract Act, 1872 to recover your unpaid bonus with 18% interest within 15 days.';
+  'Company not paying your earned bonus? Send an advocate-drafted legal notice under the Payment of Bonus Act to claim dues with 18% interest.';
 const url = `https://www.legalrecovery.in/${slug}`;
 const ogImage = `/images/og/company-not-paying-bonus.jpg`;
 

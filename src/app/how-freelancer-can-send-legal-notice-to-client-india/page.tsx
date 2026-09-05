@@ -17,7 +17,7 @@ export const metadata: Metadata = {
     "freelancer nonpayment recovery guide"
   ],
   alternates: {
-    canonical: 'https://www.legalrecovery.in/how-can-a-freelancer-send-a-legal-notice-to-a-client-who-has-not-paid-for-completed-work-in-india',
+    canonical: 'https://www.legalrecovery.in/how-freelancer-can-send-legal-notice-to-client-india',
   },
 };
 

@@ -2,8 +2,8 @@ import { Metadata } from 'next';
 import WrongProductDeliveredClient from './WrongProductDeliveredClient';
 
 export const metadata: Metadata = {
-  title: 'Send a Legal Notice for Wrong Product Delivered | Legal Recovery',
-  description: 'Learn the exact legal steps and how to send a legal notice for a wrong product delivered. Get your refund or replacement from e-commerce sellers under the Consumer Protection Act.',
+  title: 'Legal Notice for Wrong Product Delivered | Send Notice',
+  description: 'Received a wrong product? Send a legal notice to get a full refund or replacement from e-commerce sellers under the Consumer Protection Act.',
   alternates: {
     canonical: 'https://www.legalrecovery.in/send-a-legal-notice/wrong-product-delivered',
   },

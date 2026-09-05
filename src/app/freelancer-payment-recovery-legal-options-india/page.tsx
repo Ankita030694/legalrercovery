@@ -17,7 +17,7 @@ export const metadata: Metadata = {
     "legal rights gig workers india"
   ],
   alternates: {
-    canonical: 'https://www.legalrecovery.in/what-legal-options-does-a-freelancer-in-india-have-to-recover-unpaid-payments-from-a-client',
+    canonical: 'https://www.legalrecovery.in/freelancer-payment-recovery-legal-options-india',
   },
 };
 

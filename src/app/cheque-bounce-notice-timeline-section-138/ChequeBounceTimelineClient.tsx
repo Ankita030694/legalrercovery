@@ -85,9 +85,13 @@ const articleSchema = {
   "image": "https://www.legalrecovery.in/og-cheque-bounce.png",
   "author": {
     "@type": "Person",
-    "name": "Anuj Bhiya",
-    "url": "https://www.legalrecovery.in/author/anujbhiya",
-    "image": "https://www.legalrecovery.in/anujbhiya.png"
+    "name": "Advocate Aman Chawla",
+    "url": "https://www.legalrecovery.in/authors/advocate-aman-chawla"
+  },
+  "reviewedBy": {
+    "@type": "Person",
+    "name": "Advocate Sneha Sharma",
+    "url": "https://www.legalrecovery.in/authors/advocate-sneha-sharma"
   },
   "publisher": {
     "@type": "Organization",
@@ -252,6 +256,12 @@ export default function ChequeBounceTimelineClient() {
             </nav>
 
             <article className="min-w-0 bg-white p-6 md:p-12 rounded-3xl shadow-sm space-y-12 border border-slate-100">
+              {/* Meta details */}
+              <div className="flex flex-wrap items-center text-xs sm:text-sm text-slate-500 gap-3 border-b border-slate-100 pb-4">
+                <span>Written by <Link href="/authors/advocate-aman-chawla" className="font-semibold text-[#DC2626] hover:underline">Advocate Aman Chawla</Link></span>
+                <span className="hidden sm:inline">•</span>
+                <span>Reviewed by <Link href="/authors/advocate-sneha-sharma" className="font-semibold text-[#DC2626] hover:underline">Advocate Sneha Sharma</Link></span>
+              </div>
               
               <div className="prose prose-base max-w-none text-slate-650 space-y-6">
                 

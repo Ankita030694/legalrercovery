@@ -392,44 +392,41 @@ export default function CompanyNotPayingGratuityClient() {
                     <span>Last updated: {currentDate}</span>
                   </div>
                   {/* Social Share Buttons (Native Brand Colors) */}
-                  <div className="flex items-center gap-2">
-                    <span className="text-xs font-semibold text-slate-400 uppercase tracking-wider mr-2">
-                      Share:
-                    </span>
-                    <a
-                      href={`https://twitter.com/intent/tweet?url=${shareUrl}&text=${shareText}`}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="w-8 h-8 rounded-full bg-black text-white hover:opacity-80 flex items-center justify-center transition-opacity"
-                      aria-label="Share on X (Twitter)"
-                    >
-                      <svg className="w-4 h-4 fill-current" viewBox="0 0 24 24">
-                        <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z" />
-                      </svg>
-                    </a>
-                    <a
-                      href={`https://www.facebook.com/sharer/sharer.php?u=${shareUrl}`}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="w-8 h-8 rounded-full bg-[#1877F2] text-white hover:opacity-80 flex items-center justify-center transition-opacity"
-                      aria-label="Share on Facebook"
-                    >
-                      <svg className="w-4 h-4 fill-current" viewBox="0 0 24 24">
-                        <path d="M9.198 21.5h4v-8.01h3.604l.396-3.98h-4V7.5a1 1 0 0 1 1-1h3v-4h-3a5 5 0 0 0-5 5v2.01h-2l-.396 3.98h2.396v8.01z" />
-                      </svg>
-                    </a>
-                    <a
-                      href={`https://www.linkedin.com/shareArticle?mini=true&url=${shareUrl}&title=${encodeURIComponent('Send Legal Notice to Company for Not Paying Gratuity | Recovery India')}`}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="w-8 h-8 rounded-full bg-[#0A66C2] text-white hover:opacity-80 flex items-center justify-center transition-opacity"
-                      aria-label="Share on LinkedIn"
-                    >
-                      <svg className="w-4 h-4 fill-current" viewBox="0 0 24 24">
-                        <path d="M4.98 3.5c0 1.381-1.11 2.5-2.48 2.5s-2.48-1.119-2.48-2.5c0-1.38 1.11-2.5 2.48-2.5s2.48 1.12 2.48 2.5zm.02 4.5h-5v16h5v-16zm7.982 0h-4.968v16h4.969v-8.399c0-4.67 6.029-5.052 6.029 0v8.399h4.988v-10.131c0-7.88-8.922-7.593-11.018-3.714v-2.155z" />
-                      </svg>
-                    </a>
-                  </div>
+                    <div className="flex items-center gap-2">
+                      <span className="text-xs font-semibold text-slate-400 uppercase tracking-wider mr-2">
+                        Share:
+                      </span>
+                      <button
+                        type="button"
+                        onClick={() => window.open(`https://twitter.com/intent/tweet?url=${shareUrl}&text=${shareText}`, '_blank', 'noopener,noreferrer')}
+                        className="w-8 h-8 rounded-full bg-black text-white hover:opacity-80 flex items-center justify-center transition-opacity cursor-pointer"
+                        aria-label="Share on X (Twitter)"
+                      >
+                        <svg className="w-4 h-4 fill-current" viewBox="0 0 24 24">
+                          <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z" />
+                        </svg>
+                      </button>
+                      <button
+                        type="button"
+                        onClick={() => window.open(`https://www.facebook.com/sharer/sharer.php?u=${shareUrl}`, '_blank', 'noopener,noreferrer')}
+                        className="w-8 h-8 rounded-full bg-[#1877F2] text-white hover:opacity-80 flex items-center justify-center transition-opacity cursor-pointer"
+                        aria-label="Share on Facebook"
+                      >
+                        <svg className="w-4 h-4 fill-current" viewBox="0 0 24 24">
+                          <path d="M9.198 21.5h4v-8.01h3.604l.396-3.98h-4V7.5a1 1 0 0 1 1-1h3v-4h-3a5 5 0 0 0-5 5v2.01h-2l-.396 3.98h2.396v8.01z" />
+                        </svg>
+                      </button>
+                      <button
+                        type="button"
+                        onClick={() => window.open(`https://www.linkedin.com/shareArticle?mini=true&url=${shareUrl}&title=${encodeURIComponent('Send Legal Notice to Company for Not Paying Gratuity | Recovery India')}`, '_blank', 'noopener,noreferrer')}
+                        className="w-8 h-8 rounded-full bg-[#0A66C2] text-white hover:opacity-80 flex items-center justify-center transition-opacity cursor-pointer"
+                        aria-label="Share on LinkedIn"
+                      >
+                        <svg className="w-4 h-4 fill-current" viewBox="0 0 24 24">
+                          <path d="M4.98 3.5c0 1.381-1.11 2.5-2.48 2.5s-2.48-1.119-2.48-2.5c0-1.38 1.11-2.5 2.48-2.5s2.48 1.12 2.48 2.5zm.02 4.5h-5v16h5v-16zm7.982 0h-4.968v16h4.969v-8.399c0-4.67 6.029-5.052 6.029 0v8.399h4.988v-10.131c0-7.88-8.922-7.593-11.018-3.714v-2.155z" />
+                        </svg>
+                      </button>
+                    </div>
                 </div>
 
                 {/* ── QUICK ANSWER ──────────────────────────────────────── */}
@@ -439,32 +436,17 @@ export default function CompanyNotPayingGratuityClient() {
                   </h2>
                   <p className="text-sm text-slate-700 font-medium leading-relaxed">
                     Under{' '}
-                    <a
-                      href="https://www.indiacode.nic.in/handle/123456789/1544"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="text-purple-600 hover:text-purple-800 hover:underline"
-                    >
+                    <span className="font-semibold text-slate-800">
                       Section 4 and Section 7(3) of the Payment of Gratuity Act, 1972
-                    </a>
+                    </span>
                     , an employee who has completed five years of continuous service (or 4 years and 240 days) is legally entitled to full gratuity payment within 30 days of resignation, retirement, or termination. If an employer withholds or delays gratuity, serving an advocate-drafted statutory legal notice under{' '}
-                    <a
-                      href="https://www.indiacode.nic.in/handle/123456789/1544"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="text-purple-600 hover:text-purple-800 hover:underline"
-                    >
+                    <span className="font-semibold text-slate-800">
                       Section 7(3A)
-                    </a>{' '}
+                    </span>{' '}
                     demands immediate clearance of the principal amount along with mandatory 10% per annum statutory interest and puts company directors on personal legal notice. If the company fails to settle the dues within the stipulated 15-day notice window, the employee can initiate recovery proceedings under Form N before the{' '}
-                    <a
-                      href="https://clc.gov.in/"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="text-purple-600 hover:text-purple-800 hover:underline"
-                    >
+                    <span className="font-semibold text-slate-800">
                       Controlling Authority (Labour Commissioner)
-                    </a>{' '}
+                    </span>{' '}
                     and obtain a Section 8 Recovery Certificate to attach company bank accounts through the District Collector as arrears of land revenue.
                   </p>
                 </div>
@@ -484,30 +466,20 @@ export default function CompanyNotPayingGratuityClient() {
                 {/* ── SECTION 1: STATUTORY FRAMEWORK ───────────────────── */}
                 <section id="statutory-framework" className="space-y-6">
                   <h2 className="text-2xl md:text-3xl font-black text-slate-900 leading-tight">
-                    1. Statutory Framework: Payment of Gratuity Act, 1972 &amp; Non-Negotiable Employee Rights
+                    1. Statutory Framework: Payment of Gratuity Act &amp; Employee Rights
                   </h2>
                   <p className="text-slate-700 leading-relaxed text-sm md:text-base">
                     In the Indian corporate ecosystem, gratuity is frequently mischaracterized by human resource departments as a discretionary retirement bonus or an ex-gratia incentive tied to management satisfaction. In reality, gratuity is a strictly codified statutory retiral benefit governed by the{' '}
-                    <a
-                      href="https://www.indiacode.nic.in/handle/123456789/1544"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="text-purple-600 hover:text-purple-800 hover:underline font-medium"
-                    >
+                    <span className="font-semibold text-slate-800">
                       Payment of Gratuity Act, 1972
-                    </a>
+                    </span>
                     . The Act applies mandatorily to every factory, mine, oilfield, plantation, port, railway company, shop, and commercial establishment in which ten or more persons are employed or were employed on any day of the preceding twelve months. Once an establishment crosses this threshold of 10 employees, the Act continues to govern the entity perpetually, regardless of subsequent workforce reductions.
                   </p>
                   <p className="text-slate-700 leading-relaxed text-sm md:text-base">
                     As unequivocally held by the Supreme Court of India in the landmark judgment{' '}
-                    <a
-                      href="https://main.sci.gov.in/"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="text-purple-600 hover:text-purple-800 hover:underline font-medium"
-                    >
+                    <span className="font-semibold text-slate-800">
                       Jaswant Singh Gill v. Bharat Coking Coal Ltd. (2007) 1 SCC 663
-                    </a>
+                    </span>
                     , gratuity is not a bounty, gratuitous gift, or discretionary reward distributed at the employer&apos;s whim. It represents a vested property right earned through dedicated, long-standing service. Withholding, delaying, or arbitrarily deducting earned gratuity constitutes a direct violation of statutory welfare law and triggers severe legal repercussions against both the corporate entity and its principal officers:
                   </p>
 
@@ -533,14 +505,9 @@ export default function CompanyNotPayingGratuityClient() {
                       </div>
                       <p className="text-xs md:text-sm text-slate-650 leading-relaxed">
                         <strong>Section 7(3) &amp; Section 7(3A):</strong> The employer must determine and disburse gratuity within 30 days. Delay beyond 30 days incurs mandatory statutory simple interest at 10% per annum under Central Government Notification (S.O. 874(E)), as reaffirmed in{' '}
-                        <a
-                          href="https://main.sci.gov.in/"
-                          target="_blank"
-                          rel="noopener noreferrer"
-                          className="text-purple-600 hover:text-purple-800 hover:underline font-medium"
-                        >
+                        <span className="font-semibold text-slate-800">
                           Y.K. Singla v. Punjab National Bank (2013) 3 SCC 472
-                        </a>
+                        </span>
                         .
                       </p>
                     </div>
@@ -574,7 +541,7 @@ export default function CompanyNotPayingGratuityClient() {
                 {/* ── SECTION 2: UNLAWFUL FORFEITURES & CORPORATE EXCUSES ─ */}
                 <section id="unlawful-forfeitures" className="space-y-6">
                   <h2 className="text-2xl md:text-3xl font-black text-slate-900 leading-tight">
-                    2. Debunking Corporate Excuses: Handover Delays, Notice Buyouts &amp; Section 4(6) Protections
+                    2. Corporate Excuses: Handover Delays &amp; Unlawful Forfeitures
                   </h2>
                   <p className="text-slate-700 leading-relaxed text-sm md:text-base">
                     When employees resign after years of meritorious contribution, defaulting employers and startup founders routinely concoct administrative pretexts to stall or deduct gratuity payouts during Full and Final (FnF) settlements. It is essential to recognize that virtually all standard corporate justifications for withholding gratuity are completely unlawful under Indian jurisprudence.
@@ -601,14 +568,9 @@ export default function CompanyNotPayingGratuityClient() {
 
                   <p className="text-slate-700 leading-relaxed text-sm md:text-base">
                     As settled by the Supreme Court in{' '}
-                    <a
-                      href="https://main.sci.gov.in/"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="text-purple-600 hover:text-purple-800 hover:underline font-medium"
-                    >
+                    <span className="font-semibold text-slate-800">
                       Union of India v. C.G. Ajay Babu (2018) 8 SCC 529
-                    </a>
+                    </span>
                     , forfeiture of gratuity cannot be sustained merely on an allegation of administrative misconduct or internal disciplinary censure unless there is an express termination order premised on moral turpitude with independent court conviction or quantified physical property loss.
                   </p>
 
@@ -656,7 +618,7 @@ export default function CompanyNotPayingGratuityClient() {
                 {/* ── SECTION 3: CALCULATION & 240 DAYS RULE ───────────── */}
                 <section id="calculation-and-240-days" className="space-y-6">
                   <h2 className="text-2xl md:text-3xl font-black text-slate-900 leading-tight">
-                    3. Gratuity Calculation Matrix &amp; The Landmark 4 Years 240 Days Service Rule
+                    3. Gratuity Calculation Matrix &amp; The 4 Years 240 Days Rule
                   </h2>
                   <p className="text-slate-700 leading-relaxed text-sm md:text-base">
                     Accurately calculating your statutory gratuity entitlement is critical before issuing a formal legal notice. Under <strong>Section 4(2)</strong> of the Payment of Gratuity Act, 1972, for every completed year of service or part thereof in excess of six months, the employer is statutorily bound to pay gratuity at the rate of fifteen days&apos; wages based on the rate of wages last drawn by the employee.
@@ -693,14 +655,9 @@ export default function CompanyNotPayingGratuityClient() {
                   </p>
                   <p className="text-slate-700 leading-relaxed text-sm md:text-base">
                     In landmark decisions such as{' '}
-                    <a
-                      href="https://main.sci.gov.in/"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="text-purple-600 hover:text-purple-800 hover:underline font-medium"
-                    >
+                    <span className="font-semibold text-slate-800">
                       Mettur Beardsell Ltd. v. Regional Labour Commissioner (Madras High Court)
-                    </a>{' '}
+                    </span>{' '}
                     and rulings by the Supreme Court of India, it has been settled that once an employee completes 4 full years of continuous service and completes at least 240 working days in the fifth year (equivalent to roughly 4 years and 240 days / ~4.8 years), the employee has legally completed five years of continuous service and is entitled to full statutory gratuity for all 5 years.
                   </p>
 
@@ -726,18 +683,13 @@ export default function CompanyNotPayingGratuityClient() {
                 {/* ── SECTION 4: EVIDENTIARY CHECKLIST UNDER SECTION 63 BSA ─ */}
                 <section id="evidentiary-checklist" className="space-y-6">
                   <h2 className="text-2xl md:text-3xl font-black text-slate-900 leading-tight">
-                    4. Pre-Notice Evidentiary Checklist &amp; Electronic Records under Section 63 BSA
+                    4. Pre-Notice Evidentiary Checklist &amp; Section 63 BSA Records
                   </h2>
                   <p className="text-slate-700 leading-relaxed text-sm md:text-base">
                     Under Indian procedural law, electronic evidence plays a decisive role in establishing employment tenure, salary structure, and employer default. The{' '}
-                    <a
-                      href="https://www.indiacode.nic.in/handle/123456789/2187"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="text-purple-600 hover:text-purple-800 hover:underline font-medium"
-                    >
+                    <span className="font-semibold text-slate-800">
                       Bharatiya Sakshya Adhiniyam, 2023 (BSA)
-                    </a>{' '}
+                    </span>{' '}
                     under Section 63 (which replaces Section 65B of the Indian Evidence Act, 1872) governs the admissibility of digital communications. Prior to issuing a formal legal notice, you must consolidate and secure the following documentation:
                   </p>
 
@@ -803,7 +755,7 @@ export default function CompanyNotPayingGratuityClient() {
                 {/* ── SECTION 5: CRITICAL STATUTORY CLAUSES IN NOTICE ─── */}
                 <section id="essential-clauses" className="space-y-6">
                   <h2 className="text-2xl md:text-3xl font-black text-slate-900 leading-tight">
-                    5. Critical Statutory Clauses in a Legal Notice to Company for Withheld Gratuity
+                    5. Critical Clauses in a Legal Notice to Company for Gratuity
                   </h2>
                   <p className="text-slate-700 leading-relaxed text-sm md:text-base">
                     A generic demand letter drafted without statutory rigor will often be ignored by corporate legal counsel. A formidable advocate-drafted statutory legal notice under the Payment of Gratuity Act, 1972 must incorporate precise legal assertions that pin liability directly upon the company and its board of directors:
@@ -860,7 +812,7 @@ export default function CompanyNotPayingGratuityClient() {
                 {/* ── SECTION 6: CONTROLLING AUTHORITY, SEC 8 & CRIMINAL RECOURSE ─ */}
                 <section id="controlling-authority-form-n" className="space-y-6">
                   <h2 className="text-2xl md:text-3xl font-black text-slate-900 leading-tight">
-                    6. Quasi-Judicial &amp; Judicial Escalation: Controlling Authority (Form N), Section 8 &amp; BNS Sanctions
+                    6. Controlling Authority (Form N), Section 8 &amp; Criminal Sanctions
                   </h2>
                   <p className="text-slate-700 leading-relaxed text-sm md:text-base">
                     Serving an advocate-vetted statutory legal notice resolves the vast majority of gratuity disputes out of court because corporate management understands that statutory non-compliance exposes them to administrative enforcement and personal liability. If a recalcitrant employer fails to comply within the 15-day notice period, the law provides robust multi-tiered remedies:
@@ -909,14 +861,9 @@ export default function CompanyNotPayingGratuityClient() {
                       </div>
                       <p className="text-xs md:text-sm text-slate-700 leading-relaxed">
                         Under <strong>Section 9</strong> of the Act, non-payment of statutory gratuity is an offence punishable with imprisonment for a term up to one year and statutory fines. Furthermore, if the company maintained an internal gratuity trust or made accounting deductions from employee cost-to-company (CTC) structures but diverted those reserved funds for operational cash flow, criminal proceedings can be initiated against directors for criminal breach of trust under{' '}
-                        <a
-                          href="https://www.indiacode.nic.in/handle/123456789/2187"
-                          target="_blank"
-                          rel="noopener noreferrer"
-                          className="text-purple-600 hover:text-purple-800 hover:underline font-medium"
-                        >
+                        <span className="font-semibold text-slate-800">
                           Section 316 and Section 318 of the Bharatiya Nyaya Sanhita, 2023 (BNS)
-                        </a>
+                        </span>
                         .
                       </p>
                     </div>
@@ -926,7 +873,7 @@ export default function CompanyNotPayingGratuityClient() {
                 {/* ── SECTION 7: STEP-BY-STEP RECOVERY ROADMAP ─────────── */}
                 <section id="step-by-step-roadmap" className="space-y-6">
                   <h2 className="text-2xl md:text-3xl font-black text-slate-900 leading-tight">
-                    7. Step-by-Step Strategic Roadmap from Legal Notice to Bank Account Attachment
+                    7. Step-by-Step Strategic Roadmap to Bank Account Attachment
                   </h2>
                   <p className="text-slate-700 leading-relaxed text-sm md:text-base">
                     Executing a disciplined, evidence-backed legal strategy ensures rapid recovery of your withheld gratuity while minimizing procedural delays. Here is the proven 6-step recovery workflow:
@@ -1021,7 +968,7 @@ export default function CompanyNotPayingGratuityClient() {
                     <a
                       href="https://www.indiacode.nic.in/handle/123456789/1544"
                       target="_blank"
-                      rel="noopener noreferrer"
+                      rel="nofollow noopener noreferrer"
                       className="text-purple-600 hover:text-purple-800 hover:underline"
                     >
                       Payment of Gratuity Act, 1972 (India Code)
@@ -1029,51 +976,26 @@ export default function CompanyNotPayingGratuityClient() {
                     <a
                       href="https://clc.gov.in/"
                       target="_blank"
-                      rel="noopener noreferrer"
+                      rel="nofollow noopener noreferrer"
                       className="text-purple-600 hover:text-purple-800 hover:underline"
                     >
                       Chief Labour Commissioner (Central) - Controlling Authority
                     </a>
-                    <a
-                      href="https://labour.gov.in/"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="text-purple-600 hover:text-purple-800 hover:underline"
-                    >
+                    <span className="text-slate-600">
                       Ministry of Labour &amp; Employment Official Portal
-                    </a>
-                    <a
-                      href="https://main.sci.gov.in/"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="text-purple-600 hover:text-purple-800 hover:underline"
-                    >
+                    </span>
+                    <span className="text-slate-600">
                       Supreme Court of India Official Judgments
-                    </a>
-                    <a
-                      href="https://www.indiacode.nic.in/handle/123456789/2187"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="text-purple-600 hover:text-purple-800 hover:underline"
-                    >
+                    </span>
+                    <span className="text-slate-600">
                       Bharatiya Nyaya Sanhita, 2023 (BNS)
-                    </a>
-                    <a
-                      href="https://www.indiacode.nic.in/handle/123456789/2191"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="text-purple-600 hover:text-purple-800 hover:underline"
-                    >
+                    </span>
+                    <span className="text-slate-600">
                       Code of Civil Procedure, 1908 (Order 37)
-                    </a>
-                    <a
-                      href="https://www.indiacode.nic.in/handle/123456789/1785"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="text-purple-600 hover:text-purple-800 hover:underline"
-                    >
+                    </span>
+                    <span className="text-slate-600">
                       Limitation Act, 1963
-                    </a>
+                    </span>
                   </div>
                 </section>
 

@@ -2,9 +2,9 @@ import { Metadata } from 'next';
 import CoFounderStartupUnpaidDuesEquityClient from './CoFounderStartupUnpaidDuesEquityClient';
 
 const slug = 'send-a-legal-notice/co-founder-startup-unpaid-dues-equity';
-const title = 'Legal Notice to Co-Founder for Unpaid Startup Dues & Equity | Legal Recovery India';
+const title = 'Legal Notice to Co-Founder for Unpaid Dues & Equity';
 const description =
-  'Defaulting co-founder withholding vested equity shares, unpaid salary, or sweat equity? Issue an advocate-drafted statutory legal notice under Companies Act 2013, Indian Contract Act 1872, Specific Relief Act & NCLT provisions.';
+  'Co-founder dispute over unpaid salary or equity shares? Send an advocate-drafted legal notice under the Companies Act to recover dues.';
 const url = `https://www.legalrecovery.in/${slug}`;
 const ogImage = `/images/og/co-founder-startup-unpaid-dues-equity.jpg`;
 

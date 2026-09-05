@@ -207,7 +207,7 @@ export default function WhatsappEvidenceClient() {
                 </p>
 
                 <p className="text-sm md:text-base leading-relaxed">
-                  Modern messaging tools have completely changed how creditors pursue legal claims across India. Creditors once faced massive hurdles when they lacked signed physical loan agreements. Defaulting debtors frequently denied financial liability when there was no stamped paper document. Today, most business transactions and payment reminders occur through instant smartphone text messaging. The Information Technology Act 2000 and Evidence Act recognize these critical digital records. Learning how to <Link href="/what-evidence-should-a-freelancer-collect-to-strengthen-a-payment-recovery-case-against-a-client" className="text-[#DC2626] hover:underline font-medium">recover my money</Link> requires collecting and preserving these online message exchanges.
+                  Modern messaging tools have completely changed how creditors pursue legal claims across India. Creditors once faced massive hurdles when they lacked signed physical loan agreements. Defaulting debtors frequently denied financial liability when there was no stamped paper document. Today, most business transactions and payment reminders occur through instant smartphone text messaging. The Information Technology Act 2000 and Evidence Act recognize these critical digital records. Learning how to <Link href="/freelancer-evidence-checklist-payment-recovery-india" className="text-[#DC2626] hover:underline font-medium">recover my money</Link> requires collecting and preserving these online message exchanges.
                 </p>
 
                 <p className="text-sm md:text-base leading-relaxed">
@@ -300,7 +300,7 @@ export default function WhatsappEvidenceClient() {
                   </p>
                   
                   <p className="text-sm md:text-base leading-relaxed">
-                    Double blue ticks show that the message reached the recipient and was opened. This eliminates dishonest debtor defenses claiming they never saw the payment demand letter. An <Link href="/is-an-email-or-whatsApp-message-considered-a-valid-legal-notice-in-indian-courts" className="text-[#DC2626] hover:underline font-medium">email or WhatsApp message is considered a valid legal notice</Link> when delivery receipts are documented.
+                    Double blue ticks show that the message reached the recipient and was opened. This eliminates dishonest debtor defenses claiming they never saw the payment demand letter. An <Link href="/is-an-email-or-whatsapp-message-considered-a-valid-legal-notice-in-indian-courts" className="text-[#DC2626] hover:underline font-medium">email or WhatsApp message is considered a valid legal notice</Link> when delivery receipts are documented.
                   </p>
                   
                   <p className="text-sm md:text-base leading-relaxed">

@@ -3,7 +3,7 @@ import VendorInvoiceClient from "./VendorInvoiceClient";
 
 export const metadata: Metadata = {
   title: "Recover B2B Invoices & Vendor Payments | LegalRecovery",
-  description: "Recover unpaid B2B invoices, supply chain credits, and vendor dues in India. Learn about MSME Samadhaan, Section 15 MSMED Act, and Order 37 summary suits.",
+  description: "Recover unpaid B2B invoices and vendor dues in India. Learn about MSME Samadhaan, Section 15 MSMED Act, and Order 37 summary suits.",
   alternates: {
     canonical: "/services/vendor-and-invoice-recoveries",
   },

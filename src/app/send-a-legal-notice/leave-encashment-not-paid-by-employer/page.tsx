@@ -3,9 +3,9 @@ import LeaveEncashmentNotPaidByEmployerClient from './LeaveEncashmentNotPaidByEm
 
 const slug = 'send-a-legal-notice/leave-encashment-not-paid-by-employer';
 const title =
-  'Legal Notice to Company for Leave Encashment Not Paid by Employer | Draft & Send Notice India';
+  'Legal Notice to Company for Unpaid Leave Encashment';
 const description =
-  'Company refusing or delaying earned leave encashment in Full & Final (F&F) settlement? Send an advocate-vetted statutory legal notice for unpaid leave encashment under the Factories Act 1948, State Shops & Establishments Act, Payment of Wages Act, and Code on Wages.';
+  'Company withholding earned leave encashment? Send an advocate-vetted legal notice under the Factories & Wages Act for immediate recovery.';
 const url = `https://www.legalrecovery.in/${slug}`;
 const ogImage = `/images/og/leave-encashment-not-paid-by-employer.jpg`;
 

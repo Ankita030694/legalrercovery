@@ -119,7 +119,7 @@ const breadcrumbSchema = {
       "@type": "ListItem",
       "position": 3,
       "name": "WhatsApp & Email Notice Validity",
-      "item": "https://www.legalrecovery.in/is-an-email-or-whatsApp-message-considered-a-valid-legal-notice-in-indian-courts"
+      "item": "https://www.legalrecovery.in/is-an-email-or-whatsapp-message-considered-a-valid-legal-notice-in-indian-courts"
     }
   ]
 };
@@ -216,7 +216,7 @@ export default function DigitalNoticeValidityClient() {
 
   const breadcrumbItems = [
     { label: "Recovery", href: "/recovery" },
-    { label: "WhatsApp & Email Notice Validity", href: "/is-an-email-or-whatsApp-message-considered-a-valid-legal-notice-in-indian-courts" }
+    { label: "WhatsApp & Email Notice Validity", href: "/is-an-email-or-whatsapp-message-considered-a-valid-legal-notice-in-indian-courts" }
   ];
 
   return (

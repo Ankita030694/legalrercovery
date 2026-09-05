@@ -941,11 +941,11 @@ export default function RecoverUnpaidRentFromTenantIndiaClient() {
                       },
                       {
                         title: 'Legal Steps to Recover Security Deposit from Landlord',
-                        href: '/what-are-the-legal-steps-to-recover-a-security-deposit-from-a-landlord-who-is-refusing-to-return-it-in-india',
+                        href: '/recover-security-deposit-from-landlord-india',
                       },
                       {
                         title: 'Can I Send a Legal Notice to My Landlord for Security Deposit?',
-                        href: '/can-i-send-a-legal-notice-to-my-landlord-for-not-refunding-the-security-deposit-after-vacating-the-property',
+                        href: '/legal-notice-to-landlord-for-security-deposit-refund-india',
                       },
                       {
                         title: 'Legal Notice to PG Owner for Security Deposit Refund',

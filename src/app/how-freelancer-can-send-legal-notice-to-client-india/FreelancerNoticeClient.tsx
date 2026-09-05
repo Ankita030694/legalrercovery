@@ -65,7 +65,7 @@ const breadcrumbSchema = {
       "@type": "ListItem",
       "position": 2,
       "name": "Send Legal Notice as Freelancer",
-      "item": "https://www.legalrecovery.in/how-can-a-freelancer-send-a-legal-notice-to-a-client-who-has-not-paid-for-completed-work-in-india"
+      "item": "https://www.legalrecovery.in/how-freelancer-can-send-legal-notice-to-client-india"
     }
   ]
 };
@@ -221,7 +221,7 @@ export default function FreelancerNoticeClient() {
   ];
 
   const breadcrumbItems = [
-    { label: "Send Legal Notice as Freelancer", href: "/how-can-a-freelancer-send-a-legal-notice-to-a-client-who-has-not-paid-for-completed-work-in-india" }
+    { label: "Send Legal Notice as Freelancer", href: "/how-freelancer-can-send-legal-notice-to-client-india" }
   ];
 
   return (

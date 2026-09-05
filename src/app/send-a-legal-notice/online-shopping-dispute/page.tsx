@@ -2,8 +2,8 @@ import { Metadata } from 'next';
 import OnlineShoppingDisputeClient from './OnlineShoppingDisputeClient';
 
 export const metadata: Metadata = {
-  title: 'Send a Legal Notice for Online Shopping Dispute | Legal Recovery',
-  description: 'Learn the exact legal steps and how to send a legal notice for online shopping disputes. Get your refund or compensation from e-commerce sellers under the Consumer Protection Act.',
+  title: 'Legal Notice for Online Shopping Dispute | Send Notice',
+  description: 'Facing an online shopping dispute? Send an advocate-vetted legal notice to get a refund or compensation under the Consumer Protection Act.',
   alternates: {
     canonical: 'https://www.legalrecovery.in/send-a-legal-notice/online-shopping-dispute',
   },

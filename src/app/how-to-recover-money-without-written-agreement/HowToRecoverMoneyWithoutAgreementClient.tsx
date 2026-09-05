@@ -5,7 +5,6 @@ import Link from "next/link";
 import Script from "next/script";
 import TableOfContents from "@/components/TableOfContents";
 import Breadcrumbs from "@/components/Breadcrumbs";
-import Image from "next/image";
 
 const faqs = [
   {
@@ -98,9 +97,13 @@ const articleSchema = {
   "image": "https://www.legalrecovery.in/og-recover-without-agreement.png",
   "author": {
     "@type": "Person",
-    "name": "Anuj Bhiya",
-    "url": "https://www.legalrecovery.in/author/anujbhiya",
-    "image": "https://www.legalrecovery.in/anujbhiya.png"
+    "name": "Advocate Aman Chawla",
+    "url": "https://www.legalrecovery.in/authors/advocate-aman-chawla"
+  },
+  "reviewedBy": {
+    "@type": "Person",
+    "name": "Advocate Sneha Sharma",
+    "url": "https://www.legalrecovery.in/authors/advocate-sneha-sharma"
   },
   "publisher": {
     "@type": "Organization",
@@ -222,6 +225,15 @@ export default function HowToRecoverMoneyWithoutAgreementClient() {
 
             <article className="min-w-0 bg-white p-6 md:p-12 rounded-3xl shadow-sm space-y-12 border border-slate-100">
               
+              {/* Meta details */}
+              <div className="flex flex-wrap items-center text-xs sm:text-sm text-slate-500 gap-3 border-b border-slate-100 pb-4">
+                <span>Written by <Link href="/authors/advocate-aman-chawla" className="font-semibold text-[#DC2626] hover:underline">Advocate Aman Chawla</Link></span>
+                <span className="hidden sm:inline">•</span>
+                <span>Reviewed by <Link href="/authors/advocate-sneha-sharma" className="font-semibold text-[#DC2626] hover:underline">Advocate Sneha Sharma</Link></span>
+                <span className="hidden sm:inline">•</span>
+                <span>Updated: June 29, 2026</span>
+              </div>
+
               <div className="prose prose-base max-w-none text-slate-650 space-y-6">
                 <p className="text-sm md:text-base leading-relaxed font-semibold text-slate-900">
                   In India, over 60% of informal loans between friends and business partners occur without a signed contract, leading to millions in unrecovered debt. However, Section 10 of the Indian Contract Act legally validates oral agreements, meaning the absence of a written document does not eliminate your right to recover the money.
@@ -236,7 +248,7 @@ export default function HowToRecoverMoneyWithoutAgreementClient() {
                       </svg>
                     </div>
                     <div>
-                      <h4 className="text-white font-bold text-lg mb-2">The Scope of Informal Lending</h4>
+                      <p className="text-white font-bold text-lg mb-2">The Scope of Informal Lending</p>
                       <p className="text-slate-300 text-sm leading-relaxed">
                         Data suggests that the vast majority of personal loans are disbursed based on trust. While the law permits the recovery of money lent verbally, creditors face a steep evidentiary challenge. Mastering the use of Section 65B of the Indian Evidence Act to present digital communications is the key to converting an undocumented loan into a legally enforceable debt.
                       </p>
@@ -325,12 +337,12 @@ export default function HowToRecoverMoneyWithoutAgreementClient() {
                   
                   {/* COST BREAKDOWN UI */}
                   <div className="bg-white border border-slate-200 rounded-2xl shadow-sm p-6 my-8">
-                    <h4 className="font-bold text-slate-900 text-lg mb-4 flex items-center gap-2">
+                    <h3 className="font-bold text-slate-900 text-lg mb-4 flex items-center gap-2">
                       <svg className="w-5 h-5 text-[#DC2626]" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 14l6-6m-5.5.5h.01m4.99 5h.01M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16l3.5-2 3.5 2 3.5-2 3.5 2zM10 8.5a.5.5 0 11-1 0 .5.5 0 011 0zm5 5a.5.5 0 11-1 0 .5.5 0 011 0z" />
                       </svg>
                       Estimated Cost Breakdown for Recovery Process
-                    </h4>
+                    </h3>
                     <div className="space-y-3">
                       <div className="flex justify-between items-center py-2 border-b border-slate-100">
                         <span className="text-sm text-slate-600">Drafting and Sending Legal Notice</span>
@@ -385,7 +397,7 @@ export default function HowToRecoverMoneyWithoutAgreementClient() {
                         </svg>
                       </div>
                       <div>
-                        <h4 className="font-bold text-slate-900 text-sm">Large Cash Transactions</h4>
+                        <h3 className="font-bold text-slate-900 text-sm">Large Cash Transactions</h3>
                         <p className="text-xs text-slate-600 mt-1">Lending massive sums in pure cash without any digital footprint or signed receipt severely damages the credibility of the claim.</p>
                       </div>
                     </div>
@@ -396,7 +408,7 @@ export default function HowToRecoverMoneyWithoutAgreementClient() {
                         </svg>
                       </div>
                       <div>
-                        <h4 className="font-bold text-slate-900 text-sm">Expired Limitation Period</h4>
+                        <h3 className="font-bold text-slate-900 text-sm">Expired Limitation Period</h3>
                         <p className="text-xs text-slate-600 mt-1">Waiting more than three years from the date of default to take legal action permanently extinguishes your right to sue.</p>
                       </div>
                     </div>
@@ -407,7 +419,7 @@ export default function HowToRecoverMoneyWithoutAgreementClient() {
                         </svg>
                       </div>
                       <div>
-                        <h4 className="font-bold text-slate-900 text-sm">Lack of Follow Up</h4>
+                        <h3 className="font-bold text-slate-900 text-sm">Lack of Follow Up</h3>
                         <p className="text-xs text-slate-600 mt-1">If there are no WhatsApp chats, emails, or call recordings demanding the money back, the court may presume it was a gift.</p>
                       </div>
                     </div>
@@ -418,7 +430,7 @@ export default function HowToRecoverMoneyWithoutAgreementClient() {
                         </svg>
                       </div>
                       <div>
-                        <h4 className="font-bold text-slate-900 text-sm">Inconsistent Witness Statements</h4>
+                        <h3 className="font-bold text-slate-900 text-sm">Inconsistent Witness Statements</h3>
                         <p className="text-xs text-slate-600 mt-1">Relying solely on family members who provide contradictory statements during cross examination weakens the oral agreement claim.</p>
                       </div>
                     </div>
@@ -494,22 +506,18 @@ export default function HowToRecoverMoneyWithoutAgreementClient() {
 
             {/* Author Aside placed on the right as per specifications */}
             <aside className="hidden lg:block sticky top-24 max-h-[calc(100vh-120px)] overflow-y-auto pl-2 scrollbar-hide">
-              <div className="bg-white p-6 rounded-3xl shadow-sm border border-slate-100 text-center">
-                <div className="w-24 h-24 mx-auto rounded-full overflow-hidden mb-4 border-4 border-slate-50 shadow-sm relative">
-                  <Image 
-                    src="/anujbhiya.png" 
-                    alt="Anuj Bhiya Author Image" 
-                    fill
-                    className="object-cover"
-                    sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-                  />
-                </div>
-                <h3 className="font-black text-slate-900 text-lg">Anuj Bhiya</h3>
-                <p className="text-xs text-[#DC2626] font-bold uppercase tracking-wider mb-3">Legal Strategist</p>
-                <p className="text-xs text-slate-600 leading-relaxed">
-                  An expert in digital dispute resolution and modern legal recovery tactics. Passionate about empowering individuals with legally sound financial recovery methods under the Indian Contract Act.
+              <div className="bg-white p-6 rounded-3xl shadow-sm border border-slate-100 text-left space-y-3">
+                <p className="text-xs text-slate-500">
+                  <span className="text-slate-400 block text-[10px] uppercase font-bold tracking-wider mb-1">Written by</span>
+                  <Link href="/authors/advocate-aman-chawla" className="font-bold text-[#DC2626] hover:underline text-sm">Advocate Aman Chawla</Link>
                 </p>
-                <time dateTime="2026-06-29" className="block mt-4 text-[10px] text-slate-400 uppercase tracking-widest font-semibold border-t border-slate-100 pt-3">
+                <div className="border-t border-slate-100 pt-3">
+                  <p className="text-xs text-slate-500">
+                    <span className="text-slate-400 block text-[10px] uppercase font-bold tracking-wider mb-1">Reviewed by</span>
+                    <Link href="/authors/advocate-sneha-sharma" className="font-bold text-[#DC2626] hover:underline text-sm">Advocate Sneha Sharma</Link>
+                  </p>
+                </div>
+                <time dateTime="2026-06-29" className="block text-[10px] text-slate-400 uppercase tracking-widest font-semibold border-t border-slate-100 pt-3">
                   Updated: June 29, 2026
                 </time>
               </div>

@@ -2,7 +2,7 @@ import { Metadata } from "next";
 import PendingOvertimeClient from "./PendingOvertimeClient";
 
 export const metadata: Metadata = {
-  title: "Recover Unpaid Overtime Compensation & Dues | LegalRecovery",
+  title: "Recover Unpaid Overtime Compensation | LegalRecovery",
   description: "Recover pending overtime payment or late wages in India. Learn about the Factories Act, Shops and Establishments Act, and legal notice remedies.",
   keywords: [
     "recover unpaid overtime India",

@@ -2,9 +2,9 @@ import { Metadata } from 'next';
 import AgencyNotPayingTheCreatorClient from './AgencyNotPayingTheCreatorClient';
 
 const slug = 'send-a-legal-notice/agency-not-paying-the-creator';
-const title = 'Legal Notice to Agency for Unpaid Creator Payment | Recover Dues India';
+const title = 'Legal Notice to Agency for Unpaid Creator Payments';
 const description =
-  'Marketing or talent agency withholding payment for completed influencer campaigns, UGC reels, or creative deliverables? Send an advocate-drafted statutory legal notice under the Indian Contract Act, Copyright Act Section 19, and MSMED Act to recover outstanding creator dues with interest.';
+  'Agency withholding creator or influencer payments? Send an advocate-drafted legal notice under the Contract Act to recover unpaid dues.';
 const url = `https://www.legalrecovery.in/${slug}`;
 const ogImage = `/images/og/agency-not-paying-the-creator.jpg`;
 

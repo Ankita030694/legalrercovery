@@ -2,9 +2,9 @@ import { Metadata } from 'next';
 import RecoverMoneyFromBusinessPartnerCheatingIndiaClient from './RecoverMoneyFromBusinessPartnerCheatingIndiaClient';
 
 const slug = 'send-a-legal-notice/recover-money-from-business-partner-cheating-india';
-const title = 'Legal Notice to Business Partner for Recovery of Money | Cheating & Fraud India';
+const title = 'Legal Notice to Business Partner for Money Recovery';
 const description =
-  'Business partner siphoned capital, withheld profits, or cheated on partnership dues? Send an advocate-vetted statutory legal notice for recovery of money under Indian Partnership Act 1932, Section 73 Contract Act, Order 37 CPC & BNS 2023.';
+  'Cheated by a business partner? Send an advocate-vetted legal notice under the Partnership Act & Order 37 CPC to recover your business dues.';
 const url = `https://www.legalrecovery.in/${slug}`;
 const ogImage = `/images/og/recover-money-from-business-partner-cheating-india.jpg`;
 

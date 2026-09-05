@@ -2,7 +2,7 @@ import { Metadata } from "next";
 import FullAndFinalSettlementClient from "./FullAndFinalSettlementClient";
 
 export const metadata: Metadata = {
-  title: "How to Recover Full & Final Settlement From Employer in India",
+  title: "Recover Full & Final Settlement From Employer in India",
   description: "Learn how to recover your full and final settlement from an employer wrongfully withholding dues after resignation or termination in India.",
   keywords: [
     "legal recovery",

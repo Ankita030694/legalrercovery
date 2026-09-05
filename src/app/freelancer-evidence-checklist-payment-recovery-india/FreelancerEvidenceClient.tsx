@@ -65,7 +65,7 @@ const breadcrumbSchema = {
       "@type": "ListItem",
       "position": 2,
       "name": "Freelancer Evidence Checklist",
-      "item": "https://www.legalrecovery.in/what-evidence-should-a-freelancer-collect-to-strengthen-a-payment-recovery-case-against-a-client"
+      "item": "https://www.legalrecovery.in/freelancer-evidence-checklist-payment-recovery-india"
     }
   ]
 };
@@ -221,7 +221,7 @@ export default function FreelancerEvidenceClient() {
   ];
 
   const breadcrumbItems = [
-    { label: "Freelancer Evidence Checklist", href: "/what-evidence-should-a-freelancer-collect-to-strengthen-a-payment-recovery-case-against-a-client" }
+    { label: "Freelancer Evidence Checklist", href: "/freelancer-evidence-checklist-payment-recovery-india" }
   ];
 
   return (

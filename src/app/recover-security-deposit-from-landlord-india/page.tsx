@@ -17,7 +17,7 @@ export const metadata: Metadata = {
     "how to sue landlord for deposit refund"
   ],
   alternates: {
-    canonical: 'https://www.legalrecovery.in/what-are-the-legal-steps-to-recover-a-security-deposit-from-a-landlord-who-is-refusing-to-return-it-in-india',
+    canonical: 'https://www.legalrecovery.in/recover-security-deposit-from-landlord-india',
   },
 };
 

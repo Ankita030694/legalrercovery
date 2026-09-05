@@ -65,7 +65,7 @@ const breadcrumbSchema = {
       "@type": "ListItem",
       "position": 2,
       "name": "Freelancer Forum Choice",
-      "item": "https://www.legalrecovery.in/can-a-freelancer-file-a-case-in-a-consumer-forum-or-civil-court-to-recover-payment-in-india"
+      "item": "https://www.legalrecovery.in/freelancer-consumer-forum-or-civil-court-case-india"
     }
   ]
 };
@@ -221,7 +221,7 @@ export default function FreelancerForumClient() {
   ];
 
   const breadcrumbItems = [
-    { label: "Freelancer Forum Choice", href: "/can-a-freelancer-file-a-case-in-a-consumer-forum-or-civil-court-to-recover-payment-in-india" }
+    { label: "Freelancer Forum Choice", href: "/freelancer-consumer-forum-or-civil-court-case-india" }
   ];
 
   return (

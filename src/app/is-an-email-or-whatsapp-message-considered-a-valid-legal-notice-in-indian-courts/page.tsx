@@ -15,7 +15,7 @@ export const metadata: Metadata = {
     "legal notice online validity in indian courts"
   ],
   alternates: {
-    canonical: 'https://www.legalrecovery.in/is-an-email-or-whatsApp-message-considered-a-valid-legal-notice-in-indian-courts',
+    canonical: 'https://www.legalrecovery.in/is-an-email-or-whatsapp-message-considered-a-valid-legal-notice-in-indian-courts',
   },
 };
 

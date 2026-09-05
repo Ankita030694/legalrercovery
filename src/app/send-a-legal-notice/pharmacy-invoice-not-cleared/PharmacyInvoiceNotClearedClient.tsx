@@ -336,13 +336,13 @@ export default function PharmacyInvoiceNotClearedClient() {
                       The pharmaceutical distribution ecosystem operates on high-volume, credit-intensive turnover involving carrying and forwarding (C&amp;F) agents, super stockists, distributors, PCD pharma franchise owners, and retail pharmacies. When a retail chemist, corporate pharmacy chain, or private hospital withholds invoice clearance, it triggers catastrophic working capital paralysis across the entire pharmaceutical supply chain. Indian commercial law provides robust, multi-layered statutory protections to enforce prompt payment and deter mala fide payment withholding.
                     </p>
                     <p className="text-sm md:text-base leading-relaxed">
-                      Under Section 15 of the <a href="https://samadhaan.msme.gov.in/" target="_blank" rel="noopener noreferrer" className="text-purple-600 hover:text-purple-800 hover:underline">Micro, Small and Medium Enterprises Development (MSMED) Act, 2006</a>, any buyer purchasing pharmaceutical goods or healthcare supplies from an enterprise registered with an Udyam certificate is legally bound to clear payment within the mutually agreed period, which cannot exceed 45 calendar days from the date of delivery. If no formal credit duration is agreed upon in writing, the statutory payment ceiling is strictly capped at 15 days from the date of goods acceptance.
+                      Under Section 15 of the <span className="font-semibold text-slate-800">Micro, Small and Medium Enterprises Development (MSMED) Act, 2006</span>, any buyer purchasing pharmaceutical goods or healthcare supplies from an enterprise registered with an Udyam certificate is legally bound to clear payment within the mutually agreed period, which cannot exceed 45 calendar days from the date of delivery. If no formal credit duration is agreed upon in writing, the statutory payment ceiling is strictly capped at 15 days from the date of goods acceptance.
                     </p>
                     <p className="text-sm md:text-base leading-relaxed">
-                      Where a pharmacy or hospital fails to settle the dues within the statutory period, Section 16 of the MSMED Act mandates that the buyer is unconditionally liable to pay compound interest with monthly rests on the outstanding amount at three times the bank rate notified by the Reserve Bank of India (RBI). Furthermore, under Section 73 of the <a href="https://www.indiacode.nic.in/handle/123456789/2187" target="_blank" rel="noopener noreferrer" className="text-purple-600 hover:text-purple-800 hover:underline">Indian Contract Act, 1872</a>, the supplier is entitled to full compensation for any direct financial loss resulting from the breach of contract, while Section 12A of the <a href="https://www.indiacode.nic.in/handle/123456789/1362" target="_blank" rel="noopener noreferrer" className="text-purple-600 hover:text-purple-800 hover:underline">Commercial Courts Act, 2015</a> governs pre-institution mediation and fast-track commercial suit procedures.
+                      Where a pharmacy or hospital fails to settle the dues within the statutory period, Section 16 of the MSMED Act mandates that the buyer is unconditionally liable to pay compound interest with monthly rests on the outstanding amount at three times the bank rate notified by the Reserve Bank of India (RBI). Furthermore, under Section 73 of the <span className="font-semibold text-slate-800">Indian Contract Act, 1872</span>, the supplier is entitled to full compensation for any direct financial loss resulting from the breach of contract, while Section 12A of the <span className="font-semibold text-slate-800">Commercial Courts Act, 2015</span> governs pre-institution mediation and fast-track commercial suit procedures.
                     </p>
                     <p className="text-sm md:text-base leading-relaxed">
-                      Additionally, the <a href="https://www.indiacode.nic.in/handle/123456789/2398" target="_blank" rel="noopener noreferrer" className="text-purple-600 hover:text-purple-800 hover:underline">Sale of Goods Act, 1930</a> (Sections 45 to 55) establishes the rights of an unpaid seller to exercise a lien over goods, stop consignments in transit, and sue the defaulting buyer for the price of goods delivered and accepted. Serving a formal advocate-drafted legal notice is the indispensable first legal step that creates conclusive documentary proof of commercial default before invoking judicial remedies.
+                      Additionally, the <span className="font-semibold text-slate-800">Sale of Goods Act, 1930</span> (Sections 45 to 55) establishes the rights of an unpaid seller to exercise a lien over goods, stop consignments in transit, and sue the defaulting buyer for the price of goods delivered and accepted. Serving a formal advocate-drafted legal notice is the indispensable first legal step that creates conclusive documentary proof of commercial default before invoking judicial remedies.
                     </p>
                   </div>
                 </section>
@@ -372,7 +372,7 @@ export default function PharmacyInvoiceNotClearedClient() {
                         <div>
                           <h4 className="font-extrabold text-slate-900 text-sm">Unsigned Delivery Challans vs Digital E-Way Bills</h4>
                           <p className="text-xs sm:text-sm text-slate-650 leading-relaxed mt-1">
-                            Debtors often claim non-receipt of medicine cartons due to missing physical signatures on physical delivery challans. However, the generation and acceptance of <a href="https://einvoice1.gst.gov.in/" target="_blank" rel="noopener noreferrer" className="text-purple-600 hover:text-purple-800 hover:underline">GST E-Invoices</a> and matched E-Way bills (Form GST EWB-01) create a statutory presumption of physical delivery under the Central Goods and Services Tax Act.
+                            Debtors often claim non-receipt of medicine cartons due to missing physical signatures on physical delivery challans. However, the generation and acceptance of <span className="font-semibold text-slate-800">GST E-Invoices</span> and matched E-Way bills (Form GST EWB-01) create a statutory presumption of physical delivery under the Central Goods and Services Tax Act.
                           </p>
                         </div>
                       </div>
@@ -392,7 +392,7 @@ export default function PharmacyInvoiceNotClearedClient() {
                         <div>
                           <h4 className="font-extrabold text-slate-900 text-sm">Dishonored Post-Dated Cheques (PDC)</h4>
                           <p className="text-xs sm:text-sm text-slate-650 leading-relaxed mt-1">
-                            Pharmacies routinely issue post-dated cheques to maintain continuous credit lines. When these cheques bounce with bank remarks such as &quot;Funds Insufficient&quot; or &quot;Account Closed,&quot; the supplier obtains an immediate dual remedy under civil recovery law and criminal law under Section 138 of the <a href="https://www.indiacode.nic.in/handle/123456789/2189" target="_blank" rel="noopener noreferrer" className="text-purple-600 hover:text-purple-800 hover:underline">Negotiable Instruments Act, 1881</a>.
+                            Pharmacies routinely issue post-dated cheques to maintain continuous credit lines. When these cheques bounce with bank remarks such as &quot;Funds Insufficient&quot; or &quot;Account Closed,&quot; the supplier obtains an immediate dual remedy under civil recovery law and criminal law under Section 138 of the <span className="font-semibold text-slate-800">Negotiable Instruments Act, 1881</span>.
                           </p>
                         </div>
                       </div>
@@ -406,7 +406,7 @@ export default function PharmacyInvoiceNotClearedClient() {
                   </h2>
                   <div className="prose prose-base max-w-none text-slate-650 space-y-6">
                     <p className="text-sm md:text-base leading-relaxed">
-                      A robust legal notice must be accompanied by an airtight evidentiary dossier that demonstrates an uncontroverted debt. In pharmaceutical debt recovery, regulatory compliance records maintained under the <a href="https://cdsco.gov.in/" target="_blank" rel="noopener noreferrer" className="text-purple-600 hover:text-purple-800 hover:underline">Drugs and Cosmetics Rules, 1945</a> serve as decisive statutory evidence.
+                      A robust legal notice must be accompanied by an airtight evidentiary dossier that demonstrates an uncontroverted debt. In pharmaceutical debt recovery, regulatory compliance records maintained under the <span className="font-semibold text-slate-800">Drugs and Cosmetics Rules, 1945</span> serve as decisive statutory evidence.
                     </p>
 
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-4 my-6">
@@ -509,7 +509,7 @@ export default function PharmacyInvoiceNotClearedClient() {
                           </tr>
                           <tr className="bg-slate-50">
                             <td className="p-3 font-bold text-slate-900">Insolvency Petition (IBC Sec 9)</td>
-                            <td className="p-3"><a href="https://ibbi.gov.in/" target="_blank" rel="noopener noreferrer" className="text-purple-600 hover:text-purple-800 hover:underline">Insolvency &amp; Bankruptcy Code, 2016</a></td>
+                            <td className="p-3 font-semibold text-slate-800">Insolvency &amp; Bankruptcy Code, 2016</td>
                             <td className="p-3">Principal + agreed commercial interest</td>
                             <td className="p-3">6 to 14 Months</td>
                             <td className="p-3">Applicable for corporate debts over ₹1 Crore; triggers Corporate Insolvency (CIRP).</td>
@@ -671,7 +671,7 @@ export default function PharmacyInvoiceNotClearedClient() {
 
                 <div className="pt-8 border-t border-slate-100">
                   <p className="text-xs text-slate-400">
-                    References: [1] <a href="https://samadhaan.msme.gov.in/" target="_blank" rel="noopener noreferrer" className="text-purple-600 hover:text-purple-800 hover:underline">Micro, Small and Medium Enterprises Development Act, 2006 (Sections 15-18)</a>. [2] <a href="https://www.indiacode.nic.in/handle/123456789/1362" target="_blank" rel="noopener noreferrer" className="text-purple-600 hover:text-purple-800 hover:underline">Commercial Courts Act, 2015 (Pre-Institution Mediation &amp; Summary Procedures)</a>. [3] <a href="https://www.indiacode.nic.in/handle/123456789/2189" target="_blank" rel="noopener noreferrer" className="text-purple-600 hover:text-purple-800 hover:underline">Negotiable Instruments Act, 1881 (Section 138)</a>. [4] <a href="https://cdsco.gov.in/" target="_blank" rel="noopener noreferrer" className="text-purple-600 hover:text-purple-800 hover:underline">Drugs and Cosmetics Rules, 1945</a>. [5] <a href="https://einvoice1.gst.gov.in/" target="_blank" rel="noopener noreferrer" className="text-purple-600 hover:text-purple-800 hover:underline">GST E-Invoice System &amp; E-Way Bill Portal</a>.
+                    References: [1] <a href="https://samadhaan.msme.gov.in/" target="_blank" rel="nofollow noopener noreferrer" className="text-purple-600 hover:text-purple-800 hover:underline">MSME Samadhaan MSEFC Portal</a>. [2] <a href="https://cdsco.gov.in/" target="_blank" rel="nofollow noopener noreferrer" className="text-purple-600 hover:text-purple-800 hover:underline">Central Drugs Standard Control Organization (CDSCO)</a>. [3] Commercial Courts Act, 2015 (Pre-Institution Mediation &amp; Summary Procedures). [4] Negotiable Instruments Act, 1881 (Section 138). [5] GST E-Invoice System &amp; E-Way Bill Portal.
                   </p>
                 </div>
               </div>

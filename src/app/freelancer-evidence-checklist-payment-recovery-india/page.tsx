@@ -17,7 +17,7 @@ export const metadata: Metadata = {
     "how to sue client for nonpayment evidence"
   ],
   alternates: {
-    canonical: 'https://www.legalrecovery.in/what-evidence-should-a-freelancer-collect-to-strengthen-a-payment-recovery-case-against-a-client',
+    canonical: 'https://www.legalrecovery.in/freelancer-evidence-checklist-payment-recovery-india',
   },
 };
 

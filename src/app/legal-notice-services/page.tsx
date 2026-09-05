@@ -1,6 +1,6 @@
 import React from "react";
-import Link from "next/link";
 import { noticeLocationData } from "./locationData";
+import CityDirectoryExplorer from "@/components/CityDirectoryExplorer";
 
 export const metadata = {
   title: "Legal Notice Services Online & by City | Legal Recovery",
@@ -39,26 +39,12 @@ export default function LegalNoticeServicesByCity() {
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-          {noticeLocationData.map((loc, index) => (
-            <Link
-              key={index}
-              href={`/legal-notice-services/${loc.slug}`}
-              className="bg-white/70 backdrop-blur-sm border border-black/5 hover:border-[#DC2626]/30 p-6 rounded-2xl transition-all duration-300 hover:shadow-[0_8px_30px_rgb(0,0,0,0.04)] group hover:-translate-y-1 block relative overflow-hidden"
-            >
-              <div className="absolute top-0 left-0 w-1.5 h-full bg-[#DC2626] opacity-0 group-hover:opacity-100 transition-opacity"></div>
-              <p className="text-base md:text-lg font-medium text-[#111827] group-hover:text-[#DC2626] transition-colors leading-snug">
-                {loc.title}
-              </p>
-              <div className="mt-4 flex items-center text-sm text-[#DC2626] font-medium opacity-100 transition-all duration-300">
-                View Details{" "}
-                <span className="ml-1 group-hover:translate-x-1 transition-transform">
-                  →
-                </span>
-              </div>
-            </Link>
-          ))}
-        </div>
+        <CityDirectoryExplorer
+          items={noticeLocationData}
+          basePath="/legal-notice-services"
+          searchPlaceholder="Search city, district or area (e.g. Bengaluru, Delhi, Mumbai, Hyderabad)..."
+          badgeLabel="Pan-India Legal Notice Coverage"
+        />
       </div>
 
       {/* SEO Content Section */}

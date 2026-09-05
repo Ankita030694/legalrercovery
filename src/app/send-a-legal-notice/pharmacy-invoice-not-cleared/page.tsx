@@ -2,8 +2,8 @@ import { Metadata } from 'next';
 import PharmacyInvoiceNotClearedClient from './PharmacyInvoiceNotClearedClient';
 
 const slug = 'send-a-legal-notice/pharmacy-invoice-not-cleared';
-const title = 'Legal Notice for Pharmacy Invoice Not Cleared | Draft & Send Notice';
-const description = 'Unpaid pharmacy, medical store, or pharmaceutical distributor invoice? Send a formal advocate-vetted legal notice under the MSMED Act and Commercial Courts Act to recover pending dues with interest.';
+const title = 'Legal Notice for Unpaid Pharmacy Invoice | Send Notice';
+const description = 'Unpaid pharmacy or medical store invoice? Send an advocate-vetted legal notice under the MSMED Act to recover pending dues with interest.';
 const url = `https://www.legalrecovery.in/${slug}`;
 
 export const metadata: Metadata = {

@@ -9,6 +9,10 @@ export const metadata: Metadata = {
   alternates: {
     canonical: "https://www.legalrecovery.in/contact/thank-you",
   },
+  robots: {
+    index: false,
+    follow: false,
+  },
 };
 
 export default function ContactThankYouPage() {
@@ -22,10 +26,45 @@ export default function ContactThankYouPage() {
         <h1 className="mb-4 text-2xl font-black text-[#111827] sm:text-3xl">
           Thank You! Case Submission Received
         </h1>
-        <p className="mb-8 max-w-2xl text-sm font-semibold leading-relaxed text-[#6B7280] sm:text-base">
+        <p className="mb-6 max-w-2xl text-sm font-semibold leading-relaxed text-[#6B7280] sm:text-base">
           Our legal experts will review your details and contact you within 24
           hours.
         </p>
+
+        <div className="my-6 w-full border-t border-slate-100 pt-6 text-left">
+          <h2 className="mb-5 text-center text-lg font-bold text-slate-900 sm:text-xl">
+            What Happens Next?
+          </h2>
+          <div className="grid grid-cols-1 gap-4 sm:grid-cols-3">
+            <div className="rounded-2xl border border-slate-100 bg-slate-50 p-4 text-center">
+              <span className="mb-2 inline-flex h-7 w-7 items-center justify-center rounded-full bg-[#DC2626]/10 text-xs font-black text-[#DC2626]">
+                1
+              </span>
+              <h3 className="mb-1 text-sm font-bold text-slate-900">Case Review</h3>
+              <p className="text-xs text-slate-500 leading-relaxed">
+                Our legal team reviews your dispute facts and submitted details.
+              </p>
+            </div>
+            <div className="rounded-2xl border border-slate-100 bg-slate-50 p-4 text-center">
+              <span className="mb-2 inline-flex h-7 w-7 items-center justify-center rounded-full bg-[#DC2626]/10 text-xs font-black text-[#DC2626]">
+                2
+              </span>
+              <h3 className="mb-1 text-sm font-bold text-slate-900">Advocate Connect</h3>
+              <p className="text-xs text-slate-500 leading-relaxed">
+                A specialist advocate reaches out via call or WhatsApp within 24 hours.
+              </p>
+            </div>
+            <div className="rounded-2xl border border-slate-100 bg-slate-50 p-4 text-center">
+              <span className="mb-2 inline-flex h-7 w-7 items-center justify-center rounded-full bg-[#DC2626]/10 text-xs font-black text-[#DC2626]">
+                3
+              </span>
+              <h3 className="mb-1 text-sm font-bold text-slate-900">Recovery Action</h3>
+              <p className="text-xs text-slate-500 leading-relaxed">
+                Drafting &amp; dispatch of formal legal notice to recover your dues.
+              </p>
+            </div>
+          </div>
+        </div>
 
         <div className="flex flex-wrap items-center justify-center gap-3">
           <Link

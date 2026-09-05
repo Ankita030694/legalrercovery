@@ -17,7 +17,7 @@ export const metadata: Metadata = {
     "rent control act notice to landlord"
   ],
   alternates: {
-    canonical: 'https://www.legalrecovery.in/can-i-send-a-legal-notice-to-my-landlord-for-not-refunding-the-security-deposit-after-vacating-the-property',
+    canonical: 'https://www.legalrecovery.in/legal-notice-to-landlord-for-security-deposit-refund-india',
   },
 };
 
