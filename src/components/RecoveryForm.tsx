@@ -5,6 +5,7 @@ import Link from "next/link";
 import { useRouter } from "next/navigation";
 import { signIn } from "next-auth/react";
 import { User, Mail, Phone, MapPin, CheckCircle, AlertCircle, Loader2, Shield, ArrowLeft, Lock, LogIn, CreditCard } from "lucide-react";
+import { fetchWithRetry } from "@/lib/fetchWithRetry";
 
 export const RecoveryForm = () => {
   const PRICE_PER_OPPOSITION = 999; // TO CHANGE TO PRODUCTION PRICE: Change 1 to 999
@@ -91,7 +92,7 @@ export const RecoveryForm = () => {
     setIsSubmitting(true);
 
     try {
-      const res = await fetch("/api/users/send-otp", {
+      const res = await fetchWithRetry("/api/users/send-otp", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ name, email, phone, state, oppositionCount }),
@@ -196,7 +197,7 @@ export const RecoveryForm = () => {
     setIsSubmitting(true);
 
     try {
-      const res = await fetch("/api/users/verify-otp", {
+      const res = await fetchWithRetry("/api/users/verify-otp", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ pendingId, otp }),
@@ -289,7 +290,7 @@ export const RecoveryForm = () => {
     setIsSubmitting(true);
 
     try {
-      const res = await fetch("/api/users/send-otp", {
+      const res = await fetchWithRetry("/api/users/send-otp", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ name, email, phone, state, oppositionCount }),

@@ -28,6 +28,7 @@ import {
 } from "lucide-react";
 import Link from "next/link";
 import { BuyCreditsModal } from "@/components/BuyCreditsModal";
+import { fetchWithRetry } from "@/lib/fetchWithRetry";
 
 const formatDateToDisplay = (dateStr: string) => {
   if (!dateStr) return "-";
@@ -575,7 +576,7 @@ export default function NewRecoveryForm() {
     setIsSubmitting(true);
 
     try {
-      const response = await fetch("/api/cases", {
+      const response = await fetchWithRetry("/api/cases", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",

@@ -38,11 +38,11 @@ export async function GET(
       },
     });
 
-    // Return image binary directly with long-lived browser caching
+    // Return image binary directly with long-lived browser & CDN Edge caching
     return new Response(webStream, {
       headers: {
         "Content-Type": file.metadata?.contentType || file.contentType || "image/jpeg",
-        "Cache-Control": "public, max-age=31536000, immutable",
+        "Cache-Control": "public, max-age=31536000, s-maxage=31536000, stale-while-revalidate, immutable",
       },
     });
   } catch (error: any) {
