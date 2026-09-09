@@ -10,15 +10,30 @@ interface PaymentModalProps {
 }
 
 export const PaymentModal = ({ isOpen, onClose }: PaymentModalProps) => {
-  // Reset scroll lock if needed when modal opens/closes
+  // Reset scroll lock and track global modal state when modal opens/closes
   useEffect(() => {
     if (isOpen) {
       document.body.style.overflow = 'hidden';
+      if (typeof window !== "undefined") {
+        (window as any).__isPaymentModalOpen = true;
+        try {
+          sessionStorage.setItem("hasOpenedPaymentModal", "true");
+        } catch (_) {}
+        window.dispatchEvent(new CustomEvent("paymentModalStateChange", { detail: { isOpen: true } }));
+      }
     } else {
       document.body.style.overflow = 'unset';
+      if (typeof window !== "undefined") {
+        (window as any).__isPaymentModalOpen = false;
+        window.dispatchEvent(new CustomEvent("paymentModalStateChange", { detail: { isOpen: false } }));
+      }
     }
     return () => {
       document.body.style.overflow = 'unset';
+      if (typeof window !== "undefined") {
+        (window as any).__isPaymentModalOpen = false;
+        window.dispatchEvent(new CustomEvent("paymentModalStateChange", { detail: { isOpen: false } }));
+      }
     };
   }, [isOpen]);
 

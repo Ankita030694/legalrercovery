@@ -17,8 +17,9 @@ export default function TimedPopupModal() {
 
     if (!pathname) return;
 
-    // Check if current route is an excluded route
+    // Check if current route is an excluded route (including home page which has its own hero CTA)
     const isExcluded =
+      pathname === "/" ||
       pathname.startsWith("/authority") ||
       pathname.startsWith("/user") ||
       pathname.startsWith("/nullify") ||
@@ -34,13 +35,38 @@ export default function TimedPopupModal() {
       return;
     }
 
-    // Set 3-second delay timer to open popup modal
-    const timer = setTimeout(() => {
+    // Do not pop up if the user already interacted with or opened a modal in this session
+    try {
+      if (sessionStorage.getItem("hasOpenedPaymentModal") === "true") {
+        return;
+      }
+    } catch (_) {}
+
+    let timer: NodeJS.Timeout | null = null;
+
+    const handleModalStateChange = (e: any) => {
+      if (e?.detail?.isOpen) {
+        if (timer) clearTimeout(timer);
+        setIsOpen(false);
+      }
+    };
+
+    window.addEventListener("paymentModalStateChange", handleModalStateChange);
+
+    // Set 3-second delay timer to open popup modal if no modal is already open
+    timer = setTimeout(() => {
+      if (typeof window !== "undefined") {
+        if ((window as any).__isPaymentModalOpen) return;
+        try {
+          if (sessionStorage.getItem("hasOpenedPaymentModal") === "true") return;
+        } catch (_) {}
+      }
       setIsOpen(true);
     }, 3000);
 
     return () => {
-      clearTimeout(timer);
+      if (timer) clearTimeout(timer);
+      window.removeEventListener("paymentModalStateChange", handleModalStateChange);
     };
   }, [pathname]);
 
@@ -50,6 +76,7 @@ export default function TimedPopupModal() {
   if (!pathname) return null;
 
   const isExcluded =
+    pathname === "/" ||
     pathname.startsWith("/authority") ||
     pathname.startsWith("/user") ||
     pathname.startsWith("/nullify") ||
@@ -66,7 +93,12 @@ export default function TimedPopupModal() {
   return (
     <PaymentModal
       isOpen={isOpen}
-      onClose={() => setIsOpen(false)}
+      onClose={() => {
+        setIsOpen(false);
+        try {
+          sessionStorage.setItem("hasOpenedPaymentModal", "true");
+        } catch (_) {}
+      }}
     />
   );
 }

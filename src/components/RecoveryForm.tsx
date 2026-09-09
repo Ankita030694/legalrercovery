@@ -4,7 +4,7 @@ import React, { useState, useMemo, useEffect } from "react";
 import Link from "next/link";
 import { useRouter } from "next/navigation";
 import { signIn } from "next-auth/react";
-import { User, Mail, Phone, MapPin, CheckCircle, AlertCircle, Loader2, Shield, ArrowLeft, Lock, LogIn, CreditCard } from "lucide-react";
+import { User, Mail, Phone, MapPin, CheckCircle, AlertCircle, Loader2, Shield, ArrowLeft, ArrowRight, Lock, LogIn, CreditCard } from "lucide-react";
 import { fetchWithRetry } from "@/lib/fetchWithRetry";
 
 export const RecoveryForm = () => {
@@ -24,6 +24,7 @@ export const RecoveryForm = () => {
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [isResending, setIsResending] = useState(false);
   const [submitError, setSubmitError] = useState<string | null>(null);
+  const [payuSession, setPayuSession] = useState<{ action: string; fields: Record<string, string> } | null>(null);
 
   // Existing user state
   const [existingUserData, setExistingUserData] = useState<{
@@ -36,6 +37,47 @@ export const RecoveryForm = () => {
     totalSlots?: number;
   } | null>(null);
   const [isAutoLoggingIn, setIsAutoLoggingIn] = useState(false);
+
+  // Helper to programmatically submit PayU form with native button activation
+  const triggerPayUSubmission = (session: { action: string; fields: Record<string, string> }) => {
+    try {
+      const existingForm = document.getElementById("payu-auto-form");
+      if (existingForm) {
+        existingForm.remove();
+      }
+
+      const form = document.createElement("form");
+      form.id = "payu-auto-form";
+      form.method = "POST";
+      form.action = session.action;
+      form.style.display = "none";
+
+      Object.keys(session.fields).forEach((key) => {
+        const input = document.createElement("input");
+        input.type = "hidden";
+        input.name = key;
+        input.value = session.fields[key];
+        form.appendChild(input);
+      });
+
+      const submitBtn = document.createElement("button");
+      submitBtn.type = "submit";
+      form.appendChild(submitBtn);
+
+      document.body.style.overflow = "unset";
+      document.body.appendChild(form);
+
+      if (typeof form.requestSubmit === "function") {
+        form.requestSubmit(submitBtn);
+      } else if (typeof submitBtn.click === "function") {
+        submitBtn.click();
+      } else {
+        form.submit();
+      }
+    } catch (err) {
+      console.error("Auto-submit attempt failed:", err);
+    }
+  };
 
   useEffect(() => {
     if (resendCooldown <= 0) return;
@@ -146,49 +188,39 @@ export const RecoveryForm = () => {
     setSubmitError(null);
 
     try {
-      const initiateRes = await fetch("/api/payu/initiate", {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ 
-          name, 
-          email, 
-          phone, 
-          state, 
-          paymentPendingId: existingUserData.paymentPendingId,
-          oppositionCount
-        }),
-      });
+      let session = payuSession;
 
-      const initiateData = await initiateRes.json().catch(() => ({}));
-      if (!initiateRes.ok) {
-        setSubmitError(initiateData?.error || "Failed to initialize payment gateway.");
-        setIsSubmitting(false);
-        return;
+      if (!session) {
+        const initiateRes = await fetch("/api/payu/initiate", {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify({ 
+            name, 
+            email, 
+            phone, 
+            state, 
+            paymentPendingId: existingUserData.paymentPendingId,
+            oppositionCount
+          }),
+        });
+
+        const initiateData = await initiateRes.json().catch(() => ({}));
+        if (!initiateRes.ok || !initiateData.fields) {
+          setSubmitError(initiateData?.error || "Failed to initialize payment gateway.");
+          setIsSubmitting(false);
+          return;
+        }
+
+        session = {
+          action: initiateData.action,
+          fields: initiateData.fields,
+        };
       }
 
-      const form = document.createElement("form");
-      form.method = "POST";
-      form.action = initiateData.action;
+      setPayuSession(session);
+      setIsSubmitting(false);
+      triggerPayUSubmission(session);
 
-      Object.keys(initiateData.fields).forEach((key) => {
-        const input = document.createElement("input");
-        input.type = "hidden";
-        input.name = key;
-        input.value = initiateData.fields[key];
-        form.appendChild(input);
-      });
-
-      // Restore body scroll before submitting — mobile browsers can block
-      // form-POST redirects when overflow is hidden on the body element.
-      document.body.style.overflow = 'unset';
-      document.body.appendChild(form);
-      form.submit();
-
-      // Safety net: if the redirect doesn't happen within 8s (e.g. pop-up
-      // blocker or mobile browser quirk), reset state so the user can retry.
-      setTimeout(() => {
-        setIsSubmitting(false);
-      }, 8000);
     } catch {
       setIsSubmitting(false);
       setSubmitError("Network error. Please try again.");
@@ -207,10 +239,6 @@ export const RecoveryForm = () => {
     setIsSubmitting(true);
 
     try {
-      // Use plain fetch instead of fetchWithRetry — verify-otp is non-idempotent
-      // (it deletes the pending_verification record on success). If the first call
-      // succeeds but the response hits a transient 502/504 from Vercel's edge,
-      // a retry would find the record already deleted and return "session not found".
       const res = await fetch("/api/users/verify-otp", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
@@ -246,12 +274,18 @@ export const RecoveryForm = () => {
           // Show decision UI — user has used all slots
           setStep(3);
           setIsSubmitting(false);
+          if (data.paymentSession) {
+            setPayuSession(data.paymentSession);
+          }
         }
         return;
       }
 
       // ── BRAND NEW USER — proceed to PayU ──
-      if (data.paymentPendingId) {
+      let session = data.paymentSession;
+
+      // Fallback: If not returned directly by verify-otp, query initiate endpoint
+      if (!session && data.paymentPendingId) {
         const initiateRes = await fetch("/api/payu/initiate", {
           method: "POST",
           headers: { "Content-Type": "application/json" },
@@ -266,35 +300,18 @@ export const RecoveryForm = () => {
         });
 
         const initiateData = await initiateRes.json().catch(() => ({}));
-        if (!initiateRes.ok) {
-          setSubmitError(initiateData?.error || "Failed to initialize payment gateway.");
-          setIsSubmitting(false);
-          return;
+        if (initiateRes.ok && initiateData.fields) {
+          session = {
+            action: initiateData.action,
+            fields: initiateData.fields,
+          };
         }
+      }
 
-        const form = document.createElement("form");
-        form.method = "POST";
-        form.action = initiateData.action;
-
-        Object.keys(initiateData.fields).forEach((key) => {
-          const input = document.createElement("input");
-          input.type = "hidden";
-          input.name = key;
-          input.value = initiateData.fields[key];
-          form.appendChild(input);
-        });
-
-        // Restore body scroll before submitting — mobile browsers can block
-        // form-POST redirects when overflow is hidden on the body element.
-        document.body.style.overflow = 'unset';
-        document.body.appendChild(form);
-        form.submit();
-
-        // Safety net: if the redirect doesn't happen within 8s, reset state.
-        setTimeout(() => {
-          setIsSubmitting(false);
-        }, 8000);
-        
+      if (session) {
+        setPayuSession(session);
+        setIsSubmitting(false);
+        triggerPayUSubmission(session);
       } else {
         setSubmitError("Failed to generate payment session. Please try again.");
         setIsSubmitting(false);
@@ -345,10 +362,12 @@ export const RecoveryForm = () => {
     <>
       <div className="text-center mb-6">
         <p className="text-xl sm:text-2xl font-black text-[#111827] mb-2 tracking-tight">
-          {step === 1 ? "Complete Details" : step === 2 ? "Verify Identity" : "Welcome Back!"}
+          {payuSession ? "Secure Payment" : step === 1 ? "Complete Details" : step === 2 ? "Verify Identity" : "Welcome Back!"}
         </p>
         <p className="text-xs sm:text-sm text-slate-500 font-semibold">
-          {step === 1 
+          {payuSession
+            ? "Your identity has been verified. Redirecting you to PayU..."
+            : step === 1 
             ? "Enter your details to initiate secure legal recovery setup." 
             : step === 2
             ? "Enter the OTP sent to your WhatsApp and email to verify your identity."
@@ -365,7 +384,68 @@ export const RecoveryForm = () => {
         </div>
       )}
 
-      {step === 1 ? (
+      {payuSession ? (
+        <div className="flex flex-col gap-4 sm:gap-5 select-none text-center py-2 animate-in fade-in duration-200">
+          <div className="mx-auto w-16 h-16 rounded-full bg-emerald-50 flex items-center justify-center text-emerald-600 border-2 border-emerald-100 shadow-sm">
+            <CheckCircle className="w-8 h-8 text-[#10B981]" />
+          </div>
+
+          <div>
+            <h3 className="text-lg sm:text-xl font-black text-[#111827] tracking-tight">
+              Identity Verified Successfully!
+            </h3>
+            <p className="text-xs sm:text-sm text-slate-500 font-semibold mt-1">
+              Proceeding to the 256-bit encrypted PayU payment gateway.
+            </p>
+          </div>
+
+          <div className="bg-slate-50 border border-slate-200/80 rounded-2xl p-4 text-left">
+            <div className="flex items-center justify-between text-xs font-semibold text-slate-500 pb-2 border-b border-slate-200/60">
+              <span>Amount Payable</span>
+              <span className="text-sm font-extrabold text-[#111827]">
+                ₹{payuSession.fields.amount || (oppositionCount * PRICE_PER_OPPOSITION)}
+              </span>
+            </div>
+            <div className="flex items-center justify-between text-xs font-semibold text-slate-500 pt-2">
+              <span>Payment Gateway</span>
+              <span className="font-bold text-slate-700">PayU Hosted Checkout</span>
+            </div>
+          </div>
+
+          {/* Native HTML form submit directly triggered by user click */}
+          <form method="POST" action={payuSession.action} className="flex flex-col gap-3">
+            {Object.entries(payuSession.fields).map(([key, value]) => (
+              <input key={key} type="hidden" name={key} value={value} />
+            ))}
+            <button
+              type="submit"
+              className="w-full py-4 text-sm sm:text-base font-black text-white bg-[#DC2626] hover:bg-[#B91C1C] rounded-xl transition-all duration-200 shadow-lg shadow-red-950/20 flex items-center justify-center gap-2 hover:-translate-y-0.5 cursor-pointer"
+            >
+              <Lock className="w-4 h-4" />
+              Proceed to Pay ₹{payuSession.fields.amount || (oppositionCount * PRICE_PER_OPPOSITION)} on PayU
+              <ArrowRight className="w-4 h-4" />
+            </button>
+          </form>
+
+          <div className="flex items-center justify-center gap-2 text-slate-400 text-xs mt-0.5">
+            <Loader2 className="w-3.5 h-3.5 animate-spin text-[#DC2626]" />
+            <span className="font-medium">If not redirected automatically, tap the button above.</span>
+          </div>
+
+          <button
+            type="button"
+            onClick={() => {
+              setPayuSession(null);
+              setStep(1);
+              setOtp("");
+              setSubmitError(null);
+            }}
+            className="text-xs font-bold text-slate-500 hover:text-[#DC2626] flex items-center justify-center gap-1.5 transition-colors mt-1"
+          >
+            <ArrowLeft className="w-3.5 h-3.5" /> Start over
+          </button>
+        </div>
+      ) : step === 1 ? (
         <form onSubmit={handleSendOtp} className="flex flex-col gap-4 sm:gap-5 select-none">
           {/* Name Field */}
           <div className="flex flex-col text-left">
@@ -544,6 +624,7 @@ export const RecoveryForm = () => {
               <button
                 type="button"
                 onClick={() => {
+                  setPayuSession(null);
                   setStep(1);
                   setOtp("");
                   setSubmitError(null);

@@ -507,7 +507,7 @@ export default function Home() {
         <HowItWorksSection />
 
         {/* ================= PRICING SECTION ================= */}
-        <PricingSection />
+        <PricingSection onOpenModal={() => setIsPaymentModalOpen(true)} />
 
         {/* ================= JOINT BRANDING: POWERED BY AMA LEGAL SOLUTIONS ================= */}
         <section className="mt-12 md:mt-24 max-w-7xl mx-auto px-4 md:px-0">
@@ -1135,12 +1135,9 @@ function HowItWorksSection() {
   );
 }
 
-function PricingSection() {
-  const [isModalOpen, setIsModalOpen] = React.useState(false);
-
+function PricingSection({ onOpenModal }: { onOpenModal: () => void }) {
   return (
     <section className="mt-12 md:mt-24 max-w-5xl mx-auto px-4 md:px-0 select-none">
-      <PaymentModal isOpen={isModalOpen} onClose={() => setIsModalOpen(false)} />
       {/* Centered Header */}
       <div className="text-center mb-8 md:mb-12">
         <h2 className="text-2xl sm:text-3xl md:text-[34px] font-black text-[#111827] leading-none mb-3 tracking-tight">
@@ -1217,7 +1214,7 @@ function PricingSection() {
 
             <div className="flex flex-col sm:flex-row items-center gap-6 pt-6 border-t border-[#E5E7EB]/85">
               <button
-                onClick={() => setIsModalOpen(true)}
+                onClick={onOpenModal}
                 style={{
                   width: "150px",
                   backgroundColor: "#c21717",

@@ -157,7 +157,9 @@ export async function POST(req: NextRequest) {
             
             // Remove the record from pending_payment collection using its database _id
             await db.collection("pending_payment").deleteOne({ _id: pendingPaymentUser._id });
-            console.log("Successfully verified payment, migrated user from 'pending_payment' to 'users', and cleaned up pending_payment. ID:", pendingPaymentUser._id.toString());
+            // Clean up verified pending_verification records for this phone number
+            await db.collection("pending_verification").deleteMany({ phone: pendingPaymentUser.phone });
+            console.log("Successfully verified payment, migrated user from 'pending_payment' to 'users', and cleaned up pending collections. ID:", pendingPaymentUser._id.toString());
 
             // Retrieve the migrated user document to get their true database _id and record in the transactions collection
             const migratedUser = await db.collection("users").findOne({ phone: pendingPaymentUser.phone });
