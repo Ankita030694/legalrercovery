@@ -22,6 +22,7 @@ export const RecoveryForm = () => {
   
   const [formTouched, setFormTouched] = useState(false);
   const [isSubmitting, setIsSubmitting] = useState(false);
+  const [isResending, setIsResending] = useState(false);
   const [submitError, setSubmitError] = useState<string | null>(null);
 
   // Existing user state
@@ -206,7 +207,11 @@ export const RecoveryForm = () => {
     setIsSubmitting(true);
 
     try {
-      const res = await fetchWithRetry("/api/users/verify-otp", {
+      // Use plain fetch instead of fetchWithRetry — verify-otp is non-idempotent
+      // (it deletes the pending_verification record on success). If the first call
+      // succeeds but the response hits a transient 502/504 from Vercel's edge,
+      // a retry would find the record already deleted and return "session not found".
+      const res = await fetch("/api/users/verify-otp", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ pendingId, otp }),
@@ -304,7 +309,7 @@ export const RecoveryForm = () => {
   const handleResendOtp = async () => {
     if (resendCooldown > 0) return;
     setSubmitError(null);
-    setIsSubmitting(true);
+    setIsResending(true);
 
     try {
       const res = await fetchWithRetry("/api/users/send-otp", {
@@ -316,7 +321,7 @@ export const RecoveryForm = () => {
       const data = await res.json().catch(() => ({}));
       if (!res.ok) {
         setSubmitError(data?.error || "Failed to resend OTP. Please try again.");
-        setIsSubmitting(false);
+        setIsResending(false);
         return;
       }
 
@@ -328,10 +333,10 @@ export const RecoveryForm = () => {
       }
 
       setOtp(""); // Clear any previously entered OTP digits
-      setIsSubmitting(false);
+      setIsResending(false);
       setResendCooldown(60); // Reset cooldown
     } catch {
-      setIsSubmitting(false);
+      setIsResending(false);
       setSubmitError("Failed to resend OTP. Please try again.");
     }
   };
@@ -551,10 +556,10 @@ export const RecoveryForm = () => {
               <button
                 type="button"
                 onClick={handleResendOtp}
-                disabled={isSubmitting || resendCooldown > 0}
-                className={`text-xs font-black ${(isSubmitting || resendCooldown > 0) ? "text-slate-400 cursor-not-allowed" : "text-[#DC2626] hover:text-[#B91C1C]"} transition-colors`}
+                disabled={isSubmitting || isResending || resendCooldown > 0}
+                className={`text-xs font-black ${(isResending || resendCooldown > 0) ? "text-slate-400 cursor-not-allowed" : "text-[#DC2626] hover:text-[#B91C1C]"} transition-colors`}
               >
-                {isSubmitting ? "Sending..." : resendCooldown > 0 ? `Resend OTP in ${resendCooldown}s` : "Resend OTP"}
+                {isResending ? "Sending..." : resendCooldown > 0 ? `Resend OTP in ${resendCooldown}s` : "Resend OTP"}
               </button>
             </div>
           </div>
