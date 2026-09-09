@@ -38,44 +38,43 @@ export const RecoveryForm = () => {
   } | null>(null);
   const [isAutoLoggingIn, setIsAutoLoggingIn] = useState(false);
 
-  // Helper to programmatically submit PayU form with native button activation
-  const triggerPayUSubmission = (session: { action: string; fields: Record<string, string> }) => {
+  // Helper to execute native PayU form submission (used by both automatic trigger and button click)
+  const submitPayUForm = (sessionToSubmit?: { action: string; fields: Record<string, string> } | null) => {
+    const session = sessionToSubmit || payuSession;
+    if (!session) return;
+
     try {
-      const existingForm = document.getElementById("payu-auto-form");
+      const existingForm = document.getElementById("payu-direct-submit-form");
       if (existingForm) {
         existingForm.remove();
       }
 
       const form = document.createElement("form");
-      form.id = "payu-auto-form";
+      form.id = "payu-direct-submit-form";
       form.method = "POST";
       form.action = session.action;
-      form.style.display = "none";
+      form.target = "_self";
+      // Position off-screen without display:none so WebKit on iOS doesn't suppress it
+      form.style.position = "fixed";
+      form.style.left = "-9999px";
+      form.style.top = "-9999px";
+      form.style.width = "1px";
+      form.style.height = "1px";
+      form.style.opacity = "0";
 
-      Object.keys(session.fields).forEach((key) => {
+      Object.entries(session.fields).forEach(([key, value]) => {
         const input = document.createElement("input");
         input.type = "hidden";
         input.name = key;
-        input.value = session.fields[key];
+        input.value = String(value);
         form.appendChild(input);
       });
 
-      const submitBtn = document.createElement("button");
-      submitBtn.type = "submit";
-      form.appendChild(submitBtn);
-
-      document.body.style.overflow = "unset";
       document.body.appendChild(form);
-
-      if (typeof form.requestSubmit === "function") {
-        form.requestSubmit(submitBtn);
-      } else if (typeof submitBtn.click === "function") {
-        submitBtn.click();
-      } else {
-        form.submit();
-      }
+      // Use prototype.submit to guarantee execution regardless of any input field names
+      HTMLFormElement.prototype.submit.call(form);
     } catch (err) {
-      console.error("Auto-submit attempt failed:", err);
+      console.error("PayU form submission error:", err);
     }
   };
 
@@ -219,7 +218,7 @@ export const RecoveryForm = () => {
 
       setPayuSession(session);
       setIsSubmitting(false);
-      triggerPayUSubmission(session);
+      submitPayUForm(session);
 
     } catch {
       setIsSubmitting(false);
@@ -311,7 +310,7 @@ export const RecoveryForm = () => {
       if (session) {
         setPayuSession(session);
         setIsSubmitting(false);
-        triggerPayUSubmission(session);
+        submitPayUForm(session);
       } else {
         setSubmitError("Failed to generate payment session. Please try again.");
         setIsSubmitting(false);
@@ -385,7 +384,7 @@ export const RecoveryForm = () => {
       )}
 
       {payuSession ? (
-        <div className="flex flex-col gap-4 sm:gap-5 select-none text-center py-2 animate-in fade-in duration-200">
+        <div className="flex flex-col gap-4 sm:gap-5 text-center py-2 animate-in fade-in duration-200">
           <div className="mx-auto w-16 h-16 rounded-full bg-emerald-50 flex items-center justify-center text-emerald-600 border-2 border-emerald-100 shadow-sm">
             <CheckCircle className="w-8 h-8 text-[#10B981]" />
           </div>
@@ -412,20 +411,18 @@ export const RecoveryForm = () => {
             </div>
           </div>
 
-          {/* Native HTML form submit directly triggered by user click */}
-          <form method="POST" action={payuSession.action} className="flex flex-col gap-3">
-            {Object.entries(payuSession.fields).map(([key, value]) => (
-              <input key={key} type="hidden" name={key} value={value} />
-            ))}
+          {/* User click handler directly invokes submitPayUForm */}
+          <div className="flex flex-col gap-3">
             <button
-              type="submit"
-              className="w-full py-4 text-sm sm:text-base font-black text-white bg-[#DC2626] hover:bg-[#B91C1C] rounded-xl transition-all duration-200 shadow-lg shadow-red-950/20 flex items-center justify-center gap-2 hover:-translate-y-0.5 cursor-pointer"
+              type="button"
+              onClick={() => submitPayUForm(payuSession)}
+              className="w-full py-4 text-sm sm:text-base font-black text-white bg-[#DC2626] active:bg-[#991B1B] hover:bg-[#B91C1C] rounded-xl transition-all duration-200 shadow-lg shadow-red-950/20 flex items-center justify-center gap-2 hover:-translate-y-0.5 active:translate-y-0 cursor-pointer touch-manipulation relative z-20"
             >
               <Lock className="w-4 h-4" />
               Proceed to Pay ₹{payuSession.fields.amount || (oppositionCount * PRICE_PER_OPPOSITION)} on PayU
               <ArrowRight className="w-4 h-4" />
             </button>
-          </form>
+          </div>
 
           <div className="flex items-center justify-center gap-2 text-slate-400 text-xs mt-0.5">
             <Loader2 className="w-3.5 h-3.5 animate-spin text-[#DC2626]" />
@@ -446,7 +443,7 @@ export const RecoveryForm = () => {
           </button>
         </div>
       ) : step === 1 ? (
-        <form onSubmit={handleSendOtp} className="flex flex-col gap-4 sm:gap-5 select-none">
+        <form onSubmit={handleSendOtp} className="flex flex-col gap-4 sm:gap-5">
           {/* Name Field */}
           <div className="flex flex-col text-left">
             <label className="text-xs font-black text-[#111827] mb-1.5 flex items-center gap-1.5">
@@ -577,7 +574,7 @@ export const RecoveryForm = () => {
           </p>
         </form>
       ) : step === 2 ? (
-        <form onSubmit={handleVerifyOtp} className="flex flex-col gap-4 sm:gap-5 select-none text-center">
+        <form onSubmit={handleVerifyOtp} className="flex flex-col gap-4 sm:gap-5 text-center">
           <div className="mx-auto w-12 h-12 rounded-full bg-red-50 flex items-center justify-center text-[#DC2626] mb-2 border border-red-100">
             <Lock className="w-5 h-5" />
           </div>
@@ -605,7 +602,7 @@ export const RecoveryForm = () => {
             <button
               type="submit"
               disabled={isSubmitting || otp.trim().length !== 6}
-              className="w-full py-3.5 text-sm font-black text-white bg-[#DC2626] hover:bg-[#B91C1C] disabled:bg-[#DC2626]/60 rounded-xl transition-all duration-200 shadow-md shadow-red-950/30 flex items-center justify-center gap-2 hover:-translate-y-0.5"
+              className="w-full py-3.5 text-sm font-black text-white bg-[#DC2626] hover:bg-[#B91C1C] disabled:bg-[#DC2626]/60 rounded-xl transition-all duration-200 shadow-md shadow-red-950/30 flex items-center justify-center gap-2 hover:-translate-y-0.5 cursor-pointer touch-manipulation"
             >
               {isSubmitting ? (
                 <>
@@ -651,7 +648,7 @@ export const RecoveryForm = () => {
         </form>
       ) : (
         /* ── STEP 3: EXISTING USER DECISION SCREEN ── */
-        <div className="flex flex-col gap-4 sm:gap-5 select-none text-center">
+        <div className="flex flex-col gap-4 sm:gap-5 text-center">
           {existingUserData?.hasRemainingQuota ? (
             /* User has unused case slots — auto-logging in */
             <>
