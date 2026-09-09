@@ -177,8 +177,17 @@ export const RecoveryForm = () => {
         form.appendChild(input);
       });
 
+      // Restore body scroll before submitting — mobile browsers can block
+      // form-POST redirects when overflow is hidden on the body element.
+      document.body.style.overflow = 'unset';
       document.body.appendChild(form);
       form.submit();
+
+      // Safety net: if the redirect doesn't happen within 8s (e.g. pop-up
+      // blocker or mobile browser quirk), reset state so the user can retry.
+      setTimeout(() => {
+        setIsSubmitting(false);
+      }, 8000);
     } catch {
       setIsSubmitting(false);
       setSubmitError("Network error. Please try again.");
@@ -270,8 +279,16 @@ export const RecoveryForm = () => {
           form.appendChild(input);
         });
 
+        // Restore body scroll before submitting — mobile browsers can block
+        // form-POST redirects when overflow is hidden on the body element.
+        document.body.style.overflow = 'unset';
         document.body.appendChild(form);
         form.submit();
+
+        // Safety net: if the redirect doesn't happen within 8s, reset state.
+        setTimeout(() => {
+          setIsSubmitting(false);
+        }, 8000);
         
       } else {
         setSubmitError("Failed to generate payment session. Please try again.");
@@ -303,6 +320,14 @@ export const RecoveryForm = () => {
         return;
       }
 
+      // Update pendingId — the old record may have been deleted by the server
+      // (expired OTP or max failed attempts), so the resend creates a new one
+      // with a different _id.
+      if (data.pendingId) {
+        setPendingId(data.pendingId);
+      }
+
+      setOtp(""); // Clear any previously entered OTP digits
       setIsSubmitting(false);
       setResendCooldown(60); // Reset cooldown
     } catch {
@@ -527,9 +552,9 @@ export const RecoveryForm = () => {
                 type="button"
                 onClick={handleResendOtp}
                 disabled={isSubmitting || resendCooldown > 0}
-                className={`text-xs font-black ${resendCooldown > 0 ? "text-slate-400 cursor-not-allowed" : "text-[#DC2626] hover:text-[#B91C1C]"} transition-colors`}
+                className={`text-xs font-black ${(isSubmitting || resendCooldown > 0) ? "text-slate-400 cursor-not-allowed" : "text-[#DC2626] hover:text-[#B91C1C]"} transition-colors`}
               >
-                {resendCooldown > 0 ? `Resend OTP in ${resendCooldown}s` : "Resend OTP"}
+                {isSubmitting ? "Sending..." : resendCooldown > 0 ? `Resend OTP in ${resendCooldown}s` : "Resend OTP"}
               </button>
             </div>
           </div>
