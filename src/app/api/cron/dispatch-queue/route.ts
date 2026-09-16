@@ -344,12 +344,16 @@ async function handleDispatch(req: NextRequest) {
   let userIdFilter: string | null = null;
   let isAuthorized = false;
   let forceCaseId: string | null = null;
+  let representeeIdFilter: string | null = req.nextUrl.searchParams.get("representeeId");
 
   if (req.method === "POST") {
     try {
-      const body = await req.json();
-      if (body.forceCaseId) {
-        forceCaseId = body.forceCaseId;
+      const bodyJson = await req.json();
+      if (bodyJson?.forceCaseId) {
+        forceCaseId = bodyJson.forceCaseId;
+      }
+      if (bodyJson?.representeeId) {
+        representeeIdFilter = bodyJson.representeeId;
       }
     } catch (e) {
       // Ignore if no JSON body
@@ -360,10 +364,26 @@ async function handleDispatch(req: NextRequest) {
 
   if (session && (session.user as any)?.id) {
     const sessionUserId = (session.user as any).id;
-    const userDoc = await db.collection("users").findOne({ _id: new ObjectId(sessionUserId) });
-    if (userDoc && (userDoc.phone?.replace(/\D/g, '').endsWith('8700343611') || userDoc.phone?.replace(/\D/g, '').endsWith('8130104447'))) {
-      userIdFilter = sessionUserId;
+    const sessionUserRole = (session.user as any).role;
+    const sessionUserEmail = (session.user as any).email;
+
+    if (sessionUserId === "admin-env-root" || sessionUserRole === "admin" || sessionUserEmail === "admin@legalrecovery.in") {
       isAuthorized = true;
+      // If representeeId is provided, filter by it
+      if (representeeIdFilter) {
+        let repObjId: any = representeeIdFilter;
+        try { repObjId = new ObjectId(representeeIdFilter); } catch (e) {}
+        // will be applied to query below
+      }
+    } else {
+      let userDoc: any = null;
+      try {
+        userDoc = await db.collection("users").findOne({ _id: new ObjectId(sessionUserId) });
+      } catch (e) {}
+      if (userDoc && (userDoc.phone?.replace(/\D/g, '').endsWith('8700343611') || userDoc.phone?.replace(/\D/g, '').endsWith('8130104447'))) {
+        userIdFilter = sessionUserId;
+        isAuthorized = true;
+      }
     }
   }
 
@@ -382,15 +402,28 @@ async function handleDispatch(req: NextRequest) {
     const query: any = {
       status: "active",
     };
+    if (representeeIdFilter) {
+      if (representeeIdFilter === "self" || representeeIdFilter === "direct") {
+        query.$or = [{ representeeId: { $exists: false } }, { representeeId: null }, { representeeId: "" }];
+      } else {
+        let rId: any = representeeIdFilter;
+        try { rId = new ObjectId(representeeIdFilter); } catch (e) {}
+        query.$or = [{ representeeId: rId }, { representeeId: representeeIdFilter }];
+      }
+    }
     if (forceCaseId) {
       query._id = new ObjectId(forceCaseId);
-    }
-    if (userIdFilter) {
+      query.timeline = {
+        $elemMatch: {
+          status: { $in: ["pending", "scheduled", "partially_delivered", "failed"] }
+        }
+      };
+    } else if (userIdFilter) {
       // Forceful dispatch for special user: ignore scheduledAt date check
       query.userId = new ObjectId(userIdFilter);
       query.timeline = {
         $elemMatch: {
-          status: { $in: ["scheduled", "partially_delivered", "failed"] }
+          status: { $in: ["pending", "scheduled", "partially_delivered", "failed"] }
         }
       };
     } else {
@@ -420,11 +453,13 @@ async function handleDispatch(req: NextRequest) {
       const activeStep = caseDoc.timeline[stepIndex];
 
       // Verify the step is actually due and not locked
-      const isDue = activeStep.status === "scheduled" || 
+      const isDue = Boolean(forceCaseId) ||
+                    activeStep.status === "pending" ||
+                    activeStep.status === "scheduled" || 
                     activeStep.status === "partially_delivered" || 
                     activeStep.status === "failed";
 
-      const isTimePassed = userIdFilter ? true : (new Date(activeStep.scheduledAt) <= now);
+      const isTimePassed = Boolean(forceCaseId) || userIdFilter ? true : (new Date(activeStep.scheduledAt) <= now);
 
       if (!isDue || !isTimePassed) {
         continue;

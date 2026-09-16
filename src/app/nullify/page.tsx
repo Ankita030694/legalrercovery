@@ -27,14 +27,14 @@ export default function AdminLoginPage() {
         email,
         password,
         redirect: false,
-        callbackUrl: "/authority/blog",
+        callbackUrl: "/authority",
       });
 
       if (res?.error) {
         setError("Invalid email address or administrative password.");
         setIsLoading(false);
       } else {
-        window.location.href = "/authority/blog";
+        window.location.href = "/authority";
       }
     } catch (err: any) {
       setError("An unexpected error occurred. Please try again.");

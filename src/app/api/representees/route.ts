@@ -16,16 +16,33 @@ async function authorizeAdvocate(req: NextRequest) {
     return { errorResponse: NextResponse.json({ error: "Unauthorized. Please sign in first." }, { status: 401 }) };
   }
 
-  const userId = (session.user as any).id;
+  const sessionUserId = (session.user as any).id;
+  const userRole = (session.user as any).role;
+  const userEmail = (session.user as any).email;
+  const isAdmin = sessionUserId === "admin-env-root" || userRole === "admin" || userEmail === "admin@legalrecovery.in";
+
   const { db } = await getDbAndBucket("fs");
 
+  if (isAdmin) {
+    const primaryAdmin = await db.collection("users").findOne({ phone: "8700343611" });
+    const userId = primaryAdmin ? primaryAdmin._id : new ObjectId();
+    return { db, userId, isAdmin: true };
+  }
+
+  let userObjId: ObjectId;
+  try {
+    userObjId = new ObjectId(sessionUserId);
+  } catch (e) {
+    return { errorResponse: NextResponse.json({ error: "Invalid user session" }, { status: 400 }) };
+  }
+
   // Retrieve user document to verify hasUnlimitedCases
-  const user = await db.collection("users").findOne({ _id: new ObjectId(userId) });
+  const user = await db.collection("users").findOne({ _id: userObjId });
   if (!user || user.hasUnlimitedCases !== true) {
     return { errorResponse: NextResponse.json({ error: "Access denied. Advocate profile required." }, { status: 403 }) };
   }
 
-  return { db, userId: new ObjectId(userId) };
+  return { db, userId: userObjId, isAdmin: false };
 }
 
 /**
@@ -36,17 +53,23 @@ export async function GET(req: NextRequest) {
     const auth = await authorizeAdvocate(req);
     if (auth.errorResponse) return auth.errorResponse;
 
-    const { db, userId } = auth;
+    const { db, userId, isAdmin } = auth;
     let queryUserId: any = userId;
 
-    const sessionUser = await db.collection("users").findOne({ _id: userId });
-    if (sessionUser && (sessionUser.phone?.replace(/\D/g, '').endsWith('8700343611') || sessionUser.phone?.replace(/\D/g, '').endsWith('8130104447'))) {
-      const admins = await db.collection("users").find({
-        phone: { $regex: /(8700343611|8130104447)$/ }
-      }).toArray();
-      const adminIds = admins.map(a => a._id);
-      if (adminIds.length > 0) {
-        queryUserId = { $in: adminIds };
+    const admins = await db.collection("users").find({
+      phone: { $regex: /(8700343611|8130104447)$/ }
+    }).toArray();
+    const adminIds = admins.map(a => a._id);
+    const adminIdStrings = admins.map(a => a._id.toString());
+
+    if (isAdmin) {
+      queryUserId = { $in: [...adminIds, ...adminIdStrings] };
+    } else {
+      const sessionUser = await db.collection("users").findOne({ _id: userId });
+      if (sessionUser && (sessionUser.phone?.replace(/\D/g, '').endsWith('8700343611') || sessionUser.phone?.replace(/\D/g, '').endsWith('8130104447'))) {
+        if (adminIds.length > 0) {
+          queryUserId = { $in: [...adminIds, ...adminIdStrings] };
+        }
       }
     }
 
@@ -172,14 +195,22 @@ export async function PUT(req: NextRequest) {
     }
 
     let queryUserId: any = userId;
-    const sessionUser = await db.collection("users").findOne({ _id: userId });
-    if (sessionUser && (sessionUser.phone?.replace(/\D/g, '').endsWith('8700343611') || sessionUser.phone?.replace(/\D/g, '').endsWith('8130104447'))) {
+    if (auth.isAdmin) {
       const admins = await db.collection("users").find({
         phone: { $regex: /(8700343611|8130104447)$/ }
       }).toArray();
       const adminIds = admins.map(a => a._id);
-      if (adminIds.length > 0) {
-        queryUserId = { $in: adminIds };
+      queryUserId = { $in: [...adminIds, ...adminIds.map(a => a.toString())] };
+    } else {
+      const sessionUser = await db.collection("users").findOne({ _id: userId });
+      if (sessionUser && (sessionUser.phone?.replace(/\D/g, '').endsWith('8700343611') || sessionUser.phone?.replace(/\D/g, '').endsWith('8130104447'))) {
+        const admins = await db.collection("users").find({
+          phone: { $regex: /(8700343611|8130104447)$/ }
+        }).toArray();
+        const adminIds = admins.map(a => a._id);
+        if (adminIds.length > 0) {
+          queryUserId = { $in: adminIds };
+        }
       }
     }
 
@@ -187,8 +218,12 @@ export async function PUT(req: NextRequest) {
       ? { $in: [...queryUserId.$in, ...queryUserId.$in.map((id: any) => id.toString())] }
       : { $in: [userId, userId.toString()] };
 
+    const updateFilter = auth.isAdmin
+      ? { _id: new ObjectId(id) }
+      : { _id: new ObjectId(id), userId: userIdFilter };
+
     const updateResult = await db.collection("representees").updateOne(
-      { _id: new ObjectId(id), userId: userIdFilter },
+      updateFilter,
       {
         $set: {
           name: name.trim(),
@@ -226,7 +261,7 @@ export async function DELETE(req: NextRequest) {
     const auth = await authorizeAdvocate(req);
     if (auth.errorResponse) return auth.errorResponse;
 
-    const { db, userId } = auth;
+    const { db, userId, isAdmin } = auth;
     const url = new URL(req.url);
     const id = url.searchParams.get("id");
 
@@ -235,14 +270,22 @@ export async function DELETE(req: NextRequest) {
     }
 
     let queryUserId: any = userId;
-    const sessionUser = await db.collection("users").findOne({ _id: userId });
-    if (sessionUser && (sessionUser.phone?.replace(/\D/g, '').endsWith('8700343611') || sessionUser.phone?.replace(/\D/g, '').endsWith('8130104447'))) {
+    if (isAdmin) {
       const admins = await db.collection("users").find({
         phone: { $regex: /(8700343611|8130104447)$/ }
       }).toArray();
       const adminIds = admins.map(a => a._id);
-      if (adminIds.length > 0) {
-        queryUserId = { $in: adminIds };
+      queryUserId = { $in: [...adminIds, ...adminIds.map(a => a.toString())] };
+    } else {
+      const sessionUser = await db.collection("users").findOne({ _id: userId });
+      if (sessionUser && (sessionUser.phone?.replace(/\D/g, '').endsWith('8700343611') || sessionUser.phone?.replace(/\D/g, '').endsWith('8130104447'))) {
+        const admins = await db.collection("users").find({
+          phone: { $regex: /(8700343611|8130104447)$/ }
+        }).toArray();
+        const adminIds = admins.map(a => a._id);
+        if (adminIds.length > 0) {
+          queryUserId = { $in: adminIds };
+        }
       }
     }
 
@@ -250,10 +293,11 @@ export async function DELETE(req: NextRequest) {
       ? { $in: [...queryUserId.$in, ...queryUserId.$in.map((id: any) => id.toString())] }
       : { $in: [userId, userId.toString()] };
 
-    const deleteResult = await db.collection("representees").deleteOne({
-      _id: new ObjectId(id),
-      userId: userIdFilter
-    });
+    const deleteFilter = isAdmin
+      ? { _id: new ObjectId(id) }
+      : { _id: new ObjectId(id), userId: userIdFilter };
+
+    const deleteResult = await db.collection("representees").deleteOne(deleteFilter);
 
     if (deleteResult.deletedCount === 0) {
       return NextResponse.json({ error: "Representation not found or access denied." }, { status: 404 });

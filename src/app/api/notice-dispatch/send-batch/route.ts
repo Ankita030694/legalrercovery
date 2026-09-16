@@ -30,23 +30,39 @@ export async function POST(request: NextRequest) {
 
     const { db } = await getDbAndBucket("fs");
     const userIdStr = (session?.user as any)?.id;
+    const userRole = (session?.user as any)?.role;
+    const userEmail = (session?.user as any)?.email;
+
     if (!userIdStr) {
       return NextResponse.json({ error: "Unauthorized session" }, { status: 401 });
     }
 
-    let userObjId: ObjectId;
-    try {
-      userObjId = new ObjectId(userIdStr);
-    } catch {
-      return NextResponse.json({ error: "Invalid user session ID" }, { status: 400 });
-    }
+    const isAdmin = userIdStr === "admin-env-root" || userRole === "admin" || userEmail === "admin@legalrecovery.in";
 
-    const user = await db.collection("users").findOne({ _id: userObjId });
-    if (!user || !isSpecialUserPhone(user.phone || "")) {
-      return NextResponse.json(
-        { error: "Forbidden: Notice Dispatch features are strictly restricted to Special Administrators." },
-        { status: 403 }
-      );
+    let userObjId: any = null;
+    let user: any = null;
+
+    if (isAdmin) {
+      user = await db.collection("users").findOne({ phone: "8700343611" });
+      if (user) {
+        userObjId = user._id;
+      } else {
+        user = { name: "Super Administrator", email: "admin@legalrecovery.in", phone: "8700343611" };
+      }
+    } else {
+      try {
+        userObjId = new ObjectId(userIdStr);
+      } catch {
+        return NextResponse.json({ error: "Invalid user session ID" }, { status: 400 });
+      }
+
+      user = await db.collection("users").findOne({ _id: userObjId });
+      if (!user || !isSpecialUserPhone(user.phone || "")) {
+        return NextResponse.json(
+          { error: "Forbidden: Notice Dispatch features are strictly restricted to Special Administrators." },
+          { status: 403 }
+        );
+      }
     }
 
     const body = await request.json();

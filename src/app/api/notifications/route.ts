@@ -13,26 +13,57 @@ export async function GET(req: NextRequest) {
       return NextResponse.json({ error: "Unauthorized access. Please login." }, { status: 401 });
     }
 
-    const userId = (session.user as any).id;
+    const sessionUserId = (session.user as any).id;
+    const userRole = (session.user as any).role;
+    const userEmail = (session.user as any).email;
+    const isAdmin = sessionUserId === "admin-env-root" || userRole === "admin" || userEmail === "admin@legalrecovery.in";
+
     const { db } = await getDbAndBucket("fs");
 
-    let queryUserId: any = userId;
-    const sessionUser = await db.collection("users").findOne({ _id: new ObjectId(userId) });
-    if (sessionUser && (sessionUser.phone?.replace(/\D/g, '').endsWith('8700343611') || sessionUser.phone?.replace(/\D/g, '').endsWith('8130104447'))) {
-      const admins = await db.collection("users").find({
-        phone: { $regex: /(8700343611|8130104447)$/ }
-      }).toArray();
-      const adminIds = admins.map(a => a._id.toString());
+    const admins = await db.collection("users").find({
+      phone: { $regex: /(8700343611|8130104447)$/ }
+    }).toArray();
+    const adminIds = admins.map(a => a._id.toString());
+
+    let queryUserId: any = sessionUserId;
+    let isSpecialUser = isAdmin;
+
+    if (isAdmin) {
       if (adminIds.length > 0) {
         queryUserId = { $in: adminIds };
       }
+    } else {
+      let userObjId: ObjectId;
+      try {
+        userObjId = new ObjectId(sessionUserId);
+        const sessionUser = await db.collection("users").findOne({ _id: userObjId });
+        if (sessionUser && (sessionUser.phone?.replace(/\D/g, '').endsWith('8700343611') || sessionUser.phone?.replace(/\D/g, '').endsWith('8130104447'))) {
+          isSpecialUser = true;
+          if (adminIds.length > 0) {
+            queryUserId = { $in: adminIds };
+          }
+        }
+      } catch (e) {}
     }
 
-    const isSpecialUser = !!(sessionUser && (sessionUser.phone?.replace(/\D/g, '').endsWith('8700343611') || sessionUser.phone?.replace(/\D/g, '').endsWith('8130104447')));
+    const representeeId = req.nextUrl.searchParams.get("representeeId");
+    let repCaseIds: string[] | null = null;
+    if (representeeId) {
+      const repFilter: any = (representeeId === "self" || representeeId === "direct")
+        ? { $or: [{ representeeId: { $exists: false } }, { representeeId: null }, { representeeId: "" }] }
+        : { $or: [{ representeeId: new ObjectId(representeeId) }, { representeeId }] };
+      const repCases = await db.collection("cases").find(repFilter, { projection: { caseId: 1 } }).toArray();
+      repCaseIds = repCases.map(c => c.caseId).filter(Boolean);
+    }
 
-    // Fetch notifications matching this user, sorted by date in descending order
+    const notificationQuery: any = { userId: queryUserId };
+    if (repCaseIds !== null) {
+      notificationQuery.caseId = { $in: repCaseIds };
+    }
+
+    // Fetch notifications matching this query, sorted by date in descending order
     const notifications = await db.collection("notifications")
-      .find({ userId: queryUserId })
+      .find(notificationQuery)
       .sort({ date: -1 })
       .toArray();
 

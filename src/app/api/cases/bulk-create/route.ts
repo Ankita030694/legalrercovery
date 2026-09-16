@@ -14,13 +14,36 @@ export async function POST(req: NextRequest) {
   }
 
   try {
-    const userId = new ObjectId((session.user as any).id);
+    const sessionUserId = (session.user as any).id;
+    const userRole = (session.user as any).role;
+    const userEmail = (session.user as any).email;
+    const isAdmin = sessionUserId === "admin-env-root" || userRole === "admin" || userEmail === "admin@legalrecovery.in";
+
     const { db } = await getDbAndBucket("fs");
 
-    // 2. Verify user has advocate privileges (hasUnlimitedCases === true)
-    const user = await db.collection("users").findOne({ _id: userId });
-    if (!user || user.hasUnlimitedCases !== true) {
-      return NextResponse.json({ error: "Access denied. Only advocate profiles can create bulk recoveries." }, { status: 403 });
+    let userId: any = null;
+    let user: any = null;
+
+    if (isAdmin) {
+      const primaryAdmin = await db.collection("users").findOne({ phone: "8700343611" });
+      if (primaryAdmin) {
+        userId = primaryAdmin._id;
+        user = primaryAdmin;
+      } else {
+        const anyAdmin = await db.collection("users").findOne({ hasUnlimitedCases: true });
+        userId = anyAdmin ? anyAdmin._id : new ObjectId();
+        user = anyAdmin || { name: "Super Administrator", email: "admin@legalrecovery.in", hasUnlimitedCases: true };
+      }
+    } else {
+      try {
+        userId = new ObjectId(sessionUserId);
+      } catch (e) {
+        return NextResponse.json({ error: "Invalid user session ID" }, { status: 400 });
+      }
+      user = await db.collection("users").findOne({ _id: userId });
+      if (!user || user.hasUnlimitedCases !== true) {
+        return NextResponse.json({ error: "Access denied. Only advocate profiles can create bulk recoveries." }, { status: 403 });
+      }
     }
 
     const body = await req.json();
@@ -32,10 +55,10 @@ export async function POST(req: NextRequest) {
 
     // 3. Handle representation association if representeeId is provided
     let representee = null;
-    if (representeeId && representeeId !== "self") {
+    if (representeeId && representeeId !== "self" && representeeId !== "direct") {
       let queryUserId: any = userId;
       const userPhoneClean = user?.phone?.replace(/\D/g, '') || '';
-      if (userPhoneClean.endsWith('8700343611') || userPhoneClean.endsWith('8130104447')) {
+      if (isAdmin || userPhoneClean.endsWith('8700343611') || userPhoneClean.endsWith('8130104447')) {
         const admins = await db.collection("users").find({
           phone: { $regex: /(8700343611|8130104447)$/ }
         }).toArray();
@@ -52,7 +75,7 @@ export async function POST(req: NextRequest) {
       try {
         representee = await db.collection("representees").findOne({
           _id: new ObjectId(representeeId),
-          userId: userIdFilter
+          ...(isAdmin ? {} : { userId: userIdFilter })
         });
       } catch (err) {
         return NextResponse.json({ error: "Invalid representation ID format." }, { status: 400 });

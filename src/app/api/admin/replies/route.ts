@@ -2,6 +2,7 @@ import { NextRequest, NextResponse } from "next/server";
 import { getDbAndBucket } from "@/lib/mongodb";
 import { getServerSession } from "next-auth/next";
 import { authOptions } from "@/lib/auth";
+import { ObjectId } from "mongodb";
 
 export const dynamic = "force-dynamic";
 
@@ -34,6 +35,55 @@ export async function GET(req: NextRequest) {
     const limit = Math.min(100, Math.max(1, parseInt(searchParams.get("limit") || "20")));
     const skip = (page - 1) * limit;
 
+    const representeeId = searchParams.get("representeeId");
+    const workspace = searchParams.get("workspace"); // "retail" | "ama"
+
+    let scopedCaseIds: string[] | null = null;
+    if (representeeId || workspace) {
+      // Find admin user IDs to accurately distinguish AMA vs retail workspaces
+      const adminQuery = {
+        $or: [
+          { role: "admin" },
+          { hasUnlimitedCases: true },
+          { phone: { $regex: /(8700343611|8130104447)$/ } }
+        ]
+      };
+      const admins = await db.collection("users").find(adminQuery).toArray();
+      const adminIds = admins.map(a => a._id);
+      const adminIdStrings = admins.map(a => a._id.toString());
+
+      const caseFilter: any = {};
+      if (representeeId) {
+        if (representeeId === "self" || representeeId === "direct") {
+          caseFilter.$and = [
+            { $or: [{ representeeId: { $exists: false } }, { representeeId: null }, { representeeId: "" }] },
+            { $or: [{ userId: { $in: [...adminIds, ...adminIdStrings] } }, { clientPhone: { $regex: /(8700343611|8130104447)$/ } }] }
+          ];
+        } else {
+          let repObjId: any = representeeId;
+          try { repObjId = new ObjectId(representeeId); } catch (e) {}
+          caseFilter.$or = [{ representeeId: repObjId }, { representeeId }];
+        }
+      } else if (workspace === "retail") {
+        caseFilter.$and = [
+          { userId: { $nin: [...adminIds, ...adminIdStrings] } },
+          { clientPhone: { $not: /(8700343611|8130104447)$/ } },
+          { $or: [{ representeeId: { $exists: false } }, { representeeId: null }, { representeeId: "" }] }
+        ];
+      } else if (workspace === "ama") {
+        caseFilter.$or = [
+          { userId: { $in: [...adminIds, ...adminIdStrings] } },
+          { clientPhone: { $regex: /(8700343611|8130104447)$/ } },
+          { representeeId: { $exists: true, $nin: [null, ""] } }
+        ];
+      }
+
+      const matchingCases = await db.collection("cases").find(caseFilter, { projection: { caseId: 1 } }).toArray();
+      scopedCaseIds = matchingCases.map(c => c.caseId).filter(Boolean);
+    }
+
+    const baseCaseScope = scopedCaseIds !== null ? { caseId: { $in: scopedCaseIds } } : {};
+
     // ── 1. Metrics Mode ──
     if (type === "metrics") {
       const startOfToday = new Date();
@@ -50,39 +100,46 @@ export async function GET(req: NextRequest) {
       ] = await Promise.all([
         // Total Inbound Replies
         db.collection("notifications").countDocuments({
+          ...baseCaseScope,
           type: { $in: ["email_reply", "whatsapp_reply"] }
         }),
 
         // Email Inbound
         db.collection("notifications").countDocuments({
+          ...baseCaseScope,
           type: "email_reply"
         }),
 
         // WhatsApp Inbound
         db.collection("notifications").countDocuments({
+          ...baseCaseScope,
           type: "whatsapp_reply"
         }),
 
         // Replies received today
         db.collection("notifications").countDocuments({
+          ...baseCaseScope,
           type: { $in: ["email_reply", "whatsapp_reply"] },
           date: { $gte: startOfToday.toISOString() }
         }),
 
         // Accused Sender Replies
         db.collection("notifications").countDocuments({
+          ...baseCaseScope,
           type: { $in: ["email_reply", "whatsapp_reply"] },
           "metadata.senderRole": { $nin: ["client", "dispatcher"] }
         }),
 
         // Client Sender Replies
         db.collection("notifications").countDocuments({
+          ...baseCaseScope,
           type: { $in: ["email_reply", "whatsapp_reply"] },
           "metadata.senderRole": "client"
         }),
 
         // Dispatcher Sender Replies
         db.collection("notifications").countDocuments({
+          ...baseCaseScope,
           type: { $in: ["email_reply", "whatsapp_reply"] },
           "metadata.senderRole": "dispatcher"
         })
@@ -104,6 +161,7 @@ export async function GET(req: NextRequest) {
 
     // ── 2. List & Query Mode with MongoDB Aggregation ──
     const matchConditions: any = {
+      ...baseCaseScope,
       type: { $in: ["email_reply", "whatsapp_reply"] }
     };
 
@@ -213,11 +271,12 @@ export async function GET(req: NextRequest) {
         }
       }
 
-      // Clean CSS rules if any leaked from email formatting
+      // Clean CSS rules and scripts if any leaked from email formatting
       let description = n.description || "";
-      if (description.includes("div.zm_") || description.includes("<style")) {
+      if (description.includes("div.zm_") || description.includes("<style") || description.includes("<script")) {
         description = description
           .replace(/<style\b[^>]*>([\s\S]*?)<\/style>/gi, "")
+          .replace(/<script\b[^>]*>([\s\S]*?)<\/script>/gi, "")
           .replace(/div\.zm_[^{\n]+\{[^}]*\}/gi, "")
           .trim();
       }

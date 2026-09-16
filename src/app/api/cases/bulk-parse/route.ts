@@ -16,12 +16,22 @@ export async function POST(req: NextRequest) {
     }
 
     const { db } = await getDbAndBucket("fs");
-    const userId = (session.user as any).id;
+    const sessionUserId = (session.user as any).id;
+    const userRole = (session.user as any).role;
+    const userEmail = (session.user as any).email;
+    const isAdmin = sessionUserId === "admin-env-root" || userRole === "admin" || userEmail === "admin@legalrecovery.in";
 
-    // 2. Verify user is advocate (hasUnlimitedCases === true)
-    const user = await db.collection("users").findOne({ _id: new ObjectId(userId) });
-    if (!user || user.hasUnlimitedCases !== true) {
-      return NextResponse.json({ error: "Access denied. Only advocate profiles can use bulk recovery features." }, { status: 403 });
+    if (!isAdmin) {
+      let userIdObj: ObjectId;
+      try {
+        userIdObj = new ObjectId(sessionUserId);
+      } catch (e) {
+        return NextResponse.json({ error: "Invalid user session ID" }, { status: 400 });
+      }
+      const user = await db.collection("users").findOne({ _id: userIdObj });
+      if (!user || user.hasUnlimitedCases !== true) {
+        return NextResponse.json({ error: "Access denied. Only advocate profiles can use bulk recovery features." }, { status: 403 });
+      }
     }
 
     const apiKey = process.env.HELLO_DROP_CHOO;
@@ -193,7 +203,7 @@ export async function POST(req: NextRequest) {
           if (typeof inv.amount === "number") {
             total += inv.amount;
           } else if (typeof inv.amount === "string") {
-            const parsed = parseFloat(inv.amount.replace(/[^0-9.-]+/g,""));
+            const parsed = parseFloat(inv.amount.replace(/[^0-9.-]+/g, ""));
             if (!isNaN(parsed)) total += parsed;
           }
         });
@@ -206,7 +216,7 @@ export async function POST(req: NextRequest) {
 
     // 4. Fetch police station directory to auto-populate jurisdictional SHO details
     const stations = await db.collection("police_stations").find({}).toArray();
-    
+
     // 5. Map police station details based on state
     const finalCases = parsedCases.map((c: any) => {
       let policeStationName = "";
@@ -215,7 +225,7 @@ export async function POST(req: NextRequest) {
 
       if (c.state) {
         const stationMatch = stations.find(
-          (s) => s.state.toLowerCase() === c.state.toLowerCase()
+          (s: any) => s.state.toLowerCase() === c.state.toLowerCase()
         );
         if (stationMatch) {
           policeStationName = stationMatch.hqName;

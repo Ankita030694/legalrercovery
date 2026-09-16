@@ -32,28 +32,102 @@ export async function GET(req: NextRequest) {
       return NextResponse.json({ success: true, caseId });
     }
 
-    const userId = new ObjectId((session.user as any).id);
-    let queryUserId: any = userId;
+    const sessionUserId = (session.user as any).id;
+    const userRole = (session.user as any).role;
+    const userEmail = (session.user as any).email;
+    const isAdmin = sessionUserId === "admin-env-root" || userRole === "admin" || userEmail === "admin@legalrecovery.in";
 
-    const sessionUser = await db.collection("users").findOne({ _id: userId });
-    if (sessionUser && (sessionUser.phone?.replace(/\D/g, '').endsWith('8700343611') || sessionUser.phone?.replace(/\D/g, '').endsWith('8130104447'))) {
-      const admins = await db.collection("users").find({
-        phone: { $regex: /(8700343611|8130104447)$/ }
-      }).toArray();
-      const adminIds = admins.map(a => a._id);
-      if (adminIds.length > 0) {
-        queryUserId = { $in: adminIds };
+    const workspaceParam = req.nextUrl.searchParams.get("workspace"); // "retail" | "ama"
+    const representeeIdParam = req.nextUrl.searchParams.get("representeeId");
+
+    let queryUserId: any = null;
+    let isSpecialAdmin = isAdmin;
+
+    // Find all admin accounts matching the special phone numbers
+    const admins = await db.collection("users").find({
+      phone: { $regex: /(8700343611|8130104447)$/ }
+    }).toArray();
+    const adminIds = admins.map(a => a._id);
+    const adminIdStrings = admins.map(a => a._id.toString());
+
+    if (!isAdmin) {
+      let userIdObj: ObjectId;
+      try {
+        userIdObj = new ObjectId(sessionUserId);
+      } catch (e) {
+        return NextResponse.json({ error: "Invalid user session" }, { status: 400 });
+      }
+      queryUserId = userIdObj;
+
+      const sessionUser = await db.collection("users").findOne({ _id: userIdObj });
+      if (sessionUser && (sessionUser.phone?.replace(/\D/g, '').endsWith('8700343611') || sessionUser.phone?.replace(/\D/g, '').endsWith('8130104447'))) {
+        isSpecialAdmin = true;
+        if (adminIds.length > 0) {
+          queryUserId = { $in: adminIds };
+        }
+      }
+    } else {
+      // Default query for admin is the special admin pool unless retail workspace is requested
+      queryUserId = { $in: [...adminIds, ...adminIdStrings] };
+    }
+
+    // Build the query
+    let caseQuery: any = {};
+
+    if (isAdmin && workspaceParam === "retail") {
+      // Retail workspace: All cases created by non-special/public users
+      caseQuery = {
+        $and: [
+          { userId: { $nin: [...adminIds, ...adminIdStrings] } },
+          { clientPhone: { $not: /(8700343611|8130104447)$/ } }
+        ]
+      };
+    } else if (isAdmin && workspaceParam === "all") {
+      // Global inspector query
+      caseQuery = {};
+    } else {
+      // AMA Legal Cases / Special User workspace
+      const baseAmaFilter = isSpecialAdmin
+        ? {
+            $or: [
+              { userId: queryUserId },
+              { clientPhone: { $regex: /(8700343611|8130104447)$/ } }
+            ]
+          }
+        : { userId: queryUserId };
+
+      if (representeeIdParam) {
+        if (representeeIdParam === "self" || representeeIdParam === "direct") {
+          caseQuery = {
+            $and: [
+              baseAmaFilter,
+              { $or: [{ representeeId: { $exists: false } }, { representeeId: null }, { representeeId: "" }] }
+            ]
+          };
+        } else {
+          let repObjectId: any = representeeIdParam;
+          try { repObjectId = new ObjectId(representeeIdParam); } catch (e) {}
+          caseQuery = {
+            $and: [
+              baseAmaFilter,
+              { $or: [{ representeeId: repObjectId }, { representeeId: representeeIdParam }] }
+            ]
+          };
+        }
+      } else {
+        caseQuery = baseAmaFilter;
       }
     }
 
     // Fetch representees to map their names to cases in memory
-    const representees = await db.collection("representees").find({ userId: queryUserId }).toArray();
+    const repQuery = isSpecialAdmin ? { userId: { $in: [...adminIds, ...adminIdStrings] } } : { userId: queryUserId };
+    const representees = await db.collection("representees").find(repQuery).toArray();
     const representeeMap = new Map(representees.map(r => [r._id.toString(), r]));
 
-    // Retrieve cases securely filtered by userId
+    // Retrieve cases
     const cases = await db
       .collection("cases")
-      .find({ userId: queryUserId })
+      .find(caseQuery)
       .sort({ createdAt: -1 })
       .toArray();
 
@@ -62,10 +136,14 @@ export async function GET(req: NextRequest) {
         const rep = representeeMap.get(c.representeeId.toString());
         return {
           ...c,
+          id: c._id.toString(),
           representeeName: rep ? rep.name : null
         };
       }
-      return c;
+      return {
+        ...c,
+        id: c._id.toString()
+      };
     });
 
     return NextResponse.json({ success: true, count: mappedCases.length, data: mappedCases });
@@ -86,7 +164,42 @@ export async function POST(req: NextRequest) {
   }
 
   try {
-    const userId = new ObjectId((session.user as any).id);
+    const sessionUserId = (session.user as any).id;
+    const userRole = (session.user as any).role;
+    const userEmail = (session.user as any).email;
+    const isAdmin = sessionUserId === "admin-env-root" || userRole === "admin" || userEmail === "admin@legalrecovery.in";
+
+    const { db } = await getDbAndBucket("fs");
+
+    let userId: any = null;
+    let user: any = null;
+
+    if (isAdmin) {
+      // Find the primary advocate account in users to attach case ownership
+      const primaryAdmin = await db.collection("users").findOne({ phone: "8700343611" });
+      if (primaryAdmin) {
+        userId = primaryAdmin._id;
+        user = primaryAdmin;
+      } else {
+        const anyAdmin = await db.collection("users").findOne({ hasUnlimitedCases: true });
+        userId = anyAdmin ? anyAdmin._id : new ObjectId();
+        user = anyAdmin || { name: "Super Administrator", email: "admin@legalrecovery.in", isPaid: true, hasUnlimitedCases: true };
+      }
+    } else {
+      try {
+        userId = new ObjectId(sessionUserId);
+      } catch (e) {
+        return NextResponse.json({ error: "Invalid user session ID" }, { status: 400 });
+      }
+      user = await db.collection("users").findOne({ _id: userId });
+      if (!user) {
+        return NextResponse.json({ error: "Authenticated client profile not found." }, { status: 404 });
+      }
+      if (!user.isPaid) {
+        return NextResponse.json({ error: "Access denied. Active payment session not found. Please subscribe." }, { status: 403 });
+      }
+    }
+
     const body = await req.json();
 
     const {
@@ -149,28 +262,16 @@ export async function POST(req: NextRequest) {
       }
     }
 
-    const { db } = await getDbAndBucket("fs");
-
-    // Fetch user document to check payment status and opposition limits
-    const user = await db.collection("users").findOne({ _id: userId });
-    if (!user) {
-      return NextResponse.json({ error: "Authenticated client profile not found." }, { status: 404 });
-    }
-
-    if (!user.isPaid) {
-      return NextResponse.json({ error: "Access denied. Active payment session not found. Please subscribe." }, { status: 403 });
-    }
-
     // Handle representation association if representeeId is provided
     let representee = null;
-    if (representeeId) {
-      if (user.hasUnlimitedCases !== true) {
+    if (representeeId && representeeId !== "self" && representeeId !== "direct") {
+      if (!isAdmin && user.hasUnlimitedCases !== true) {
         return NextResponse.json({ error: "Access denied. Only advocate profiles can represent multiple organizations." }, { status: 403 });
       }
 
       let queryUserId: any = userId;
       const userPhoneClean = user?.phone?.replace(/\D/g, '') || '';
-      if (userPhoneClean.endsWith('8700343611') || userPhoneClean.endsWith('8130104447')) {
+      if (isAdmin || userPhoneClean.endsWith('8700343611') || userPhoneClean.endsWith('8130104447')) {
         const admins = await db.collection("users").find({
           phone: { $regex: /(8700343611|8130104447)$/ }
         }).toArray();
@@ -187,7 +288,7 @@ export async function POST(req: NextRequest) {
       try {
         representee = await db.collection("representees").findOne({
           _id: new ObjectId(representeeId),
-          userId: userIdFilter
+          ...(isAdmin ? {} : { userId: userIdFilter })
         });
       } catch (err) {
         return NextResponse.json({ error: "Invalid representation ID format." }, { status: 400 });
@@ -210,7 +311,7 @@ export async function POST(req: NextRequest) {
     const historicalCasesCount = user.totalCasesCreated || 0;
     const currentCreatedCount = Math.max(activeCasesCount, historicalCasesCount);
 
-    const hasUnlimitedCases = user.hasUnlimitedCases === true;
+    const hasUnlimitedCases = isAdmin || user.hasUnlimitedCases === true;
 
     if (!hasUnlimitedCases && currentCreatedCount >= allowedLimit) {
       return NextResponse.json(
@@ -368,38 +469,69 @@ export async function PATCH(req: NextRequest) {
   }
 
   try {
-    const userId = new ObjectId((session.user as any).id);
-    const body = await req.json();
-    const { id, status, recoveredAmount } = body;
+    const sessionUserId = (session.user as any).id;
+    const userRole = (session.user as any).role;
+    const userEmail = (session.user as any).email;
+    const isAdmin = sessionUserId === "admin-env-root" || userRole === "admin" || userEmail === "admin@legalrecovery.in";
 
-    if (!id || !status) {
-      return NextResponse.json({ error: "Case ID and status are required." }, { status: 400 });
+    const body = await req.json();
+    const { 
+      id, 
+      caseId: altCaseId, 
+      status, 
+      recoveredAmount,
+      remarks,
+      feeType,
+      claimedAmount,
+      receivedAmount,
+      caseManager
+    } = body;
+
+    const targetId = id || altCaseId;
+    if (!targetId) {
+      return NextResponse.json({ error: "Case ID is required." }, { status: 400 });
     }
 
     const { db } = await getDbAndBucket("fs");
 
-    let queryUserId: any = userId;
-    const sessionUser = await db.collection("users").findOne({ _id: userId });
-    const isSpecialAdmin = sessionUser && (
-      sessionUser.phone?.replace(/\D/g, '').endsWith('8700343611') ||
-      sessionUser.phone?.replace(/\D/g, '').endsWith('8130104447')
-    );
+    let queryUserId: any = null;
+    let isSpecialAdmin = isAdmin;
 
-    if (isSpecialAdmin) {
-      const admins = await db.collection("users").find({
-        phone: { $regex: /(8700343611|8130104447)$/ }
-      }).toArray();
-      const adminIds = admins.map(a => a._id);
-      if (adminIds.length > 0) {
-        queryUserId = { $in: adminIds };
+    if (!isAdmin) {
+      let userObjId: ObjectId;
+      try {
+        userObjId = new ObjectId(sessionUserId);
+      } catch (e) {
+        return NextResponse.json({ error: "Invalid user session" }, { status: 400 });
+      }
+      queryUserId = userObjId;
+
+      const sessionUser = await db.collection("users").findOne({ _id: userObjId });
+      if (sessionUser && (sessionUser.phone?.replace(/\D/g, '').endsWith('8700343611') || sessionUser.phone?.replace(/\D/g, '').endsWith('8130104447'))) {
+        isSpecialAdmin = true;
+        const admins = await db.collection("users").find({
+          phone: { $regex: /(8700343611|8130104447)$/ }
+        }).toArray();
+        const adminIds = admins.map(a => a._id);
+        if (adminIds.length > 0) {
+          queryUserId = { $in: adminIds };
+        }
       }
     }
 
-    // Fetch the case to make sure it belongs to the user or pooled admin
-    const existingCase = await db.collection("cases").findOne({
-      _id: new ObjectId(id),
-      userId: queryUserId
-    });
+    let targetObjId: ObjectId;
+    try {
+      targetObjId = new ObjectId(targetId);
+    } catch (e) {
+      return NextResponse.json({ error: "Invalid Case ObjectId format" }, { status: 400 });
+    }
+
+    // Fetch the case to make sure it exists and belongs to user / admin
+    const caseLookup = isAdmin
+      ? { _id: targetObjId }
+      : { _id: targetObjId, userId: queryUserId };
+
+    const existingCase = await db.collection("cases").findOne(caseLookup);
 
     if (!existingCase) {
       return NextResponse.json({ error: "Case not found or access denied." }, { status: 404 });
@@ -407,21 +539,48 @@ export async function PATCH(req: NextRequest) {
 
     // Update case in DB
     const updateDoc: any = {
-      status,
       updatedAt: new Date().toISOString()
     };
 
-    if (status === "recovered") {
-      const amt = recoveredAmount !== undefined ? parseFloat(recoveredAmount) : existingCase.stuckAmount;
+    if (status) {
+      updateDoc.status = status;
+    }
+
+    if (remarks !== undefined) {
+      updateDoc.remarks = remarks;
+    }
+
+    if (feeType !== undefined) {
+      updateDoc.feeType = feeType;
+    }
+
+    if (claimedAmount !== undefined) {
+      const parsedClaim = parseFloat(claimedAmount);
+      if (!isNaN(parsedClaim)) {
+        updateDoc.claimedAmount = parsedClaim;
+        updateDoc.stuckAmount = parsedClaim;
+      }
+    }
+
+    if (receivedAmount !== undefined) {
+      const parsedRec = parseFloat(receivedAmount);
+      if (!isNaN(parsedRec)) {
+        updateDoc.receivedAmount = parsedRec;
+        updateDoc.recoveredAmount = parsedRec;
+      }
+    }
+
+    if (caseManager !== undefined) {
+      updateDoc.caseManager = caseManager;
+    }
+
+    if (status === "recovered" || (receivedAmount !== undefined && parseFloat(receivedAmount) >= (existingCase.stuckAmount || 0) && (existingCase.stuckAmount || 0) > 0)) {
+      const amt = recoveredAmount !== undefined ? parseFloat(recoveredAmount) : (receivedAmount !== undefined ? parseFloat(receivedAmount) : existingCase.stuckAmount);
       if (isNaN(amt) || amt < 0) {
         return NextResponse.json({ error: "Invalid recovered amount." }, { status: 400 });
       }
-      if (amt > existingCase.stuckAmount) {
-        return NextResponse.json({
-          error: `Recovered amount (₹${amt.toLocaleString("en-IN")}) cannot exceed the outstanding dues of ₹${existingCase.stuckAmount.toLocaleString("en-IN")}.`
-        }, { status: 400 });
-      }
       updateDoc.recoveredAmount = amt;
+      updateDoc.status = "recovered";
 
       if (existingCase.timeline) {
         updateDoc.timeline = existingCase.timeline.map((t: any) => {
@@ -460,14 +619,25 @@ export async function PATCH(req: NextRequest) {
       }
     }
 
+    const updateOps: any = { $set: updateDoc };
+    if (remarks !== undefined && remarks.trim() !== "") {
+      updateOps.$push = {
+        remarksHistory: {
+          text: remarks.trim(),
+          date: new Date().toISOString(),
+          author: (session.user as any)?.name || "Advocate Chambers"
+        }
+      };
+    }
+
     await db.collection("cases").updateOne(
-      { _id: new ObjectId(id), userId: queryUserId },
-      { $set: updateDoc }
+      { _id: targetObjId },
+      updateOps
     );
 
     return NextResponse.json({
       success: true,
-      message: "Case status successfully updated in database."
+      message: "Case record successfully updated in database."
     });
 
   } catch (error: any) {
@@ -489,9 +659,18 @@ export async function DELETE(req: NextRequest) {
   }
 
   try {
-    const userId = new ObjectId((session.user as any).id);
-    const body = await req.json();
-    const { id } = body;
+    const sessionUserId = (session.user as any).id;
+    const userRole = (session.user as any).role;
+    const userEmail = (session.user as any).email;
+    const isAdmin = sessionUserId === "admin-env-root" || userRole === "admin" || userEmail === "admin@legalrecovery.in";
+
+    let id: string | null = req.nextUrl.searchParams.get("id");
+    if (!id) {
+      try {
+        const body = await req.json();
+        id = body?.id || null;
+      } catch (e) {}
+    }
 
     if (!id) {
       return NextResponse.json({ error: "Case ID is required." }, { status: 400 });
@@ -499,11 +678,18 @@ export async function DELETE(req: NextRequest) {
 
     const { db } = await getDbAndBucket("fs");
 
-    // Retrieve user record to verify authorization
-    const user = await db.collection("users").findOne({ _id: userId });
-    const userRole = (session.user as any).role;
-    const userPhoneClean = user?.phone?.replace(/\D/g, "") || "";
-    const isSpecialUser = userPhoneClean.endsWith("8700343611") || userPhoneClean.endsWith("8130104447") || userRole === "admin";
+    let userId: any = null;
+    let user: any = null;
+    let userPhoneClean = "";
+    if (!isAdmin) {
+      try {
+        userId = new ObjectId(sessionUserId);
+        user = await db.collection("users").findOne({ _id: userId });
+        userPhoneClean = user?.phone?.replace(/\D/g, "") || "";
+      } catch (e) {}
+    }
+
+    const isSpecialUser = isAdmin || userPhoneClean.endsWith("8700343611") || userPhoneClean.endsWith("8130104447");
 
     if (!isSpecialUser) {
       return NextResponse.json(

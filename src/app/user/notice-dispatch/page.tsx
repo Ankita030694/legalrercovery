@@ -48,8 +48,22 @@ interface CaseItem {
   currentStep: number;
   clientName: string;
   representeeId?: string | null;
+  entityType?: string;
+  ccEmails?: string;
   policeStationName?: string;
   policeStationEmail?: string;
+  policeStationAddress?: string;
+  clientAddress?: string;
+  clientAuthRepName?: string;
+  clientAuthRepPhone?: string;
+  clientEmail?: string;
+  clientPhone?: string;
+  disbursedAmount?: number | null;
+  disbursementDate?: string;
+  asOnDate?: string;
+  invoiceNo?: string;
+  invoiceDate?: string;
+  invoices?: any[];
   timeline?: any[];
   createdAt: string;
   updatedAt: string;
@@ -1293,6 +1307,86 @@ export default function NoticeDispatchPage() {
                   <span className="text-[10px] font-bold uppercase text-emerald-700 block">Total Recovered Amount</span>
                   <span className="text-base font-black text-emerald-800">{formatCurrency(viewingCase.recoveredAmount || 0)}</span>
                 </div>
+              </div>
+
+              {/* Category-Specific Particulars: Loan vs General */}
+              <div className="bg-slate-50 p-3 rounded-xl space-y-2 border border-slate-100">
+                <span className="text-[10px] font-bold uppercase text-slate-400 block">
+                  {viewingCase.category === "loan-recovery" ? "Loan Recovery Particulars" : "Commercial Invoicing Particulars"}
+                </span>
+
+                {viewingCase.category === "loan-recovery" ? (
+                  <div className="grid grid-cols-2 sm:grid-cols-4 gap-2 text-xs">
+                    <div className="bg-white p-2 rounded-lg border border-slate-200/60">
+                      <span className="text-[9px] font-bold uppercase text-slate-400 block">Disbursed Principal</span>
+                      <span className="font-bold text-slate-800">{viewingCase.disbursedAmount ? formatCurrency(viewingCase.disbursedAmount) : "—"}</span>
+                    </div>
+                    <div className="bg-white p-2 rounded-lg border border-slate-200/60">
+                      <span className="text-[9px] font-bold uppercase text-slate-400 block">Disbursement Date</span>
+                      <span className="font-bold text-slate-800">{viewingCase.disbursementDate || "—"}</span>
+                    </div>
+                    <div className="bg-white p-2 rounded-lg border border-slate-200/60">
+                      <span className="text-[9px] font-bold uppercase text-slate-400 block">As On Cut-Off</span>
+                      <span className="font-bold text-slate-800">{viewingCase.asOnDate || "—"}</span>
+                    </div>
+                    <div className="bg-white p-2 rounded-lg border border-slate-200/60">
+                      <span className="text-[9px] font-bold uppercase text-slate-400 block">Default / Due Date</span>
+                      <span className="font-bold text-rose-700">{viewingCase.dueDate || "—"}</span>
+                    </div>
+                  </div>
+                ) : (
+                  <div className="grid grid-cols-2 sm:grid-cols-4 gap-2 text-xs">
+                    <div className="bg-white p-2 rounded-lg border border-slate-200/60">
+                      <span className="text-[9px] font-bold uppercase text-slate-400 block">Invoice Number(s)</span>
+                      <span className="font-bold text-slate-800 truncate block" title={viewingCase.invoiceNo}>{viewingCase.invoiceNo || "—"}</span>
+                    </div>
+                    <div className="bg-white p-2 rounded-lg border border-slate-200/60">
+                      <span className="text-[9px] font-bold uppercase text-slate-400 block">Invoice Date</span>
+                      <span className="font-bold text-slate-800">{viewingCase.invoiceDate || "—"}</span>
+                    </div>
+                    <div className="bg-white p-2 rounded-lg border border-slate-200/60">
+                      <span className="text-[9px] font-bold uppercase text-slate-400 block">Payment Due Date</span>
+                      <span className="font-bold text-rose-700">{viewingCase.dueDate || "—"}</span>
+                    </div>
+                    <div className="bg-white p-2 rounded-lg border border-slate-200/60">
+                      <span className="text-[9px] font-bold uppercase text-slate-400 block">Cut-Off / As On</span>
+                      <span className="font-bold text-slate-800">{viewingCase.asOnDate || "Standard Commercial"}</span>
+                    </div>
+                  </div>
+                )}
+
+                {/* Itemized Invoices / Loans Schedule */}
+                {Array.isArray(viewingCase.invoices) && viewingCase.invoices.length > 0 && (
+                  <div className="pt-2 border-t border-slate-200/60">
+                    <span className="text-[9px] font-bold uppercase text-slate-400 block mb-1.5">
+                      {viewingCase.category === "loan-recovery" ? "Itemized Loans / Accounts Schedule" : "Itemized Invoices Breakdown"} ({viewingCase.invoices.length})
+                    </span>
+                    <div className="rounded-lg border border-slate-200 overflow-hidden bg-white">
+                      <table className="w-full text-left text-xs">
+                        <thead className="bg-slate-100 border-b border-slate-200 text-[9px] font-bold uppercase text-slate-500">
+                          <tr>
+                            <th className="py-1 px-2.5">#</th>
+                            <th className="py-1 px-2.5">{viewingCase.category === "loan-recovery" ? "Loan / Account ID" : "Invoice No"}</th>
+                            <th className="py-1 px-2.5">{viewingCase.category === "loan-recovery" ? "Disbursement Date" : "Date"}</th>
+                            <th className="py-1 px-2.5">Due Date</th>
+                            <th className="py-1 px-2.5 text-right">Amount</th>
+                          </tr>
+                        </thead>
+                        <tbody className="divide-y divide-slate-100">
+                          {viewingCase.invoices.map((inv: any, idx: number) => (
+                            <tr key={idx}>
+                              <td className="py-1 px-2.5 text-slate-400 text-[10px]">{idx + 1}</td>
+                              <td className="py-1 px-2.5 font-bold text-slate-800">{inv.invoiceNo || inv.loanId || `Item ${idx + 1}`}</td>
+                              <td className="py-1 px-2.5 text-slate-600">{inv.invoiceDate || inv.date || "—"}</td>
+                              <td className="py-1 px-2.5 text-slate-600">{inv.dueDate || "—"}</td>
+                              <td className="py-1 px-2.5 text-right font-black text-slate-900">{formatCurrency(inv.amount)}</td>
+                            </tr>
+                          ))}
+                        </tbody>
+                      </table>
+                    </div>
+                  </div>
+                )}
               </div>
 
               {/* Notice Timeline */}

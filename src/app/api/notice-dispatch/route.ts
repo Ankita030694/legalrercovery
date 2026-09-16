@@ -16,20 +16,28 @@ async function authorizeSpecialUser(session: any, db: any) {
   }
 
   const userId = (session.user as any).id;
-  let user: any;
+  const userRole = (session.user as any).role;
+  const userEmail = (session.user as any).email;
 
-  if (userId === "admin-env-root") {
-    user = {
-      phone: "8700343611",
-      name: "Super Administrator",
-      email: "admin@legalrecovery.in"
+  // Direct admin bypass
+  if (userId === "admin-env-root" || userRole === "admin" || userEmail === "admin@legalrecovery.in") {
+    return {
+      authorized: true,
+      user: {
+        _id: "admin-env-root",
+        phone: "8700343611",
+        name: "Super Administrator",
+        email: "admin@legalrecovery.in"
+      },
+      cleanPhone: "8700343611"
     };
-  } else {
-    try {
-      user = await db.collection("users").findOne({ _id: new ObjectId(userId) });
-    } catch (e) {
-      user = await db.collection("users").findOne({ _id: userId });
-    }
+  }
+
+  let user: any;
+  try {
+    user = await db.collection("users").findOne({ _id: new ObjectId(userId) });
+  } catch (e) {
+    user = await db.collection("users").findOne({ _id: userId });
   }
 
   if (!user) {
@@ -37,7 +45,7 @@ async function authorizeSpecialUser(session: any, db: any) {
   }
 
   const cleanPhone = (user.phone || "").replace(/\D/g, "");
-  const isSpecial = cleanPhone.endsWith("8700343611") || cleanPhone.endsWith("8130104447");
+  const isSpecial = cleanPhone.endsWith("8700343611") || cleanPhone.endsWith("8130104447") || user.role === "admin";
 
   if (!isSpecial) {
     return { 
@@ -61,6 +69,7 @@ async function authorizeSpecialUser(session: any, db: any) {
  * - Recovered Amount
  * - Total Stuck/Claim Amount
  * - Notice status and dispatch timelines
+ * Optional query param: representeeId to filter by a specific client representation
  */
 export async function GET(req: NextRequest) {
   try {
@@ -71,6 +80,8 @@ export async function GET(req: NextRequest) {
     if (!authCheck.authorized) {
       return authCheck.errorResponse;
     }
+
+    const representeeIdParam = req.nextUrl.searchParams.get("representeeId");
 
     // Find all admin accounts matching the special phone numbers
     const admins = await db.collection("users").find({
@@ -89,13 +100,35 @@ export async function GET(req: NextRequest) {
     const representeeMap = new Map(representees.map(r => [r._id.toString(), r]));
 
     // Query all cases belonging to these admin IDs or client phones
-    const cases = await db.collection("cases").find({
-      $or: [
-        { userId: { $in: adminIds } },
-        { userId: { $in: adminIdStrings } },
-        { clientPhone: { $regex: /(8700343611|8130104447)$/ } }
-      ]
-    }).sort({ createdAt: -1 }).toArray();
+    const queryConditions: any[] = [
+      { userId: { $in: adminIds } },
+      { userId: { $in: adminIdStrings } },
+      { clientPhone: { $regex: /(8700343611|8130104447)$/ } }
+    ];
+
+    let query: any = { $or: queryConditions };
+
+    if (representeeIdParam) {
+      if (representeeIdParam === "self" || representeeIdParam === "direct") {
+        query = {
+          $and: [
+            { $or: queryConditions },
+            { $or: [{ representeeId: { $exists: false } }, { representeeId: null }, { representeeId: "" }] }
+          ]
+        };
+      } else {
+        let repObjectId: any = representeeIdParam;
+        try { repObjectId = new ObjectId(representeeIdParam); } catch (e) {}
+        query = {
+          $and: [
+            { $or: queryConditions },
+            { $or: [{ representeeId: repObjectId }, { representeeId: representeeIdParam }] }
+          ]
+        };
+      }
+    }
+
+    const cases = await db.collection("cases").find(query).sort({ createdAt: -1 }).toArray();
 
     let totalRecovered = 0;
     let totalDebt = 0;

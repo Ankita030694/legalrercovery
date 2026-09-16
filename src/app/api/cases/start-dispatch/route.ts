@@ -25,7 +25,11 @@ export async function POST(req: NextRequest) {
   }
 
   try {
-    const userId = new ObjectId((session.user as any).id);
+    const sessionUserId = (session.user as any).id;
+    const userRole = (session.user as any).role;
+    const userEmail = (session.user as any).email;
+    const isAdmin = sessionUserId === "admin-env-root" || userRole === "admin" || userEmail === "admin@legalrecovery.in";
+
     const body = await req.json();
     const { id } = body;
 
@@ -35,21 +39,51 @@ export async function POST(req: NextRequest) {
 
     const { db } = await getDbAndBucket("fs");
 
-    // Fetch user/client document to get client details
-    const clientUser = await db.collection("users").findOne({ _id: userId });
-    if (!clientUser) {
-      return NextResponse.json({ error: "Authenticated client profile not found." }, { status: 404 });
+    // Fetch the case document
+    let caseDoc: any;
+    try {
+      caseDoc = await db.collection("cases").findOne({ _id: new ObjectId(id) });
+    } catch (e) {
+      return NextResponse.json({ error: "Invalid case ID format." }, { status: 400 });
     }
-
-    // Fetch the case document to verify ownership
-    const caseDoc = await db.collection("cases").findOne({
-      _id: new ObjectId(id),
-      userId: userId
-    });
 
     if (!caseDoc) {
+      return NextResponse.json({ error: "Case not found." }, { status: 404 });
+    }
+
+    if (!isAdmin && caseDoc.userId?.toString() !== sessionUserId) {
       return NextResponse.json({ error: "Case not found or access denied." }, { status: 404 });
     }
+
+    let clientUser: any = null;
+    if (caseDoc.userId) {
+      try {
+        clientUser = await db.collection("users").findOne({ _id: new ObjectId(caseDoc.userId) });
+      } catch (e) {}
+    }
+    if (!clientUser && isAdmin) {
+      clientUser = await db.collection("users").findOne({ phone: "8700343611" }) || {
+        name: "Tech AMA",
+        email: "tech.ama123@gmail.com",
+        phone: "8700343611"
+      };
+    }
+
+    if (!clientUser) {
+      clientUser = {
+        name: caseDoc.clientName || "Tech AMA",
+        email: caseDoc.clientEmail || "",
+        phone: caseDoc.clientPhone || "8700343611"
+      };
+    }
+
+    const isSpecialUser = isAdmin || 
+      clientUser?.phone?.replace(/\D/g, '').endsWith('8700343611') || 
+      clientUser?.phone?.replace(/\D/g, '').endsWith('8130104447');
+
+    // Sanitize helper: replace newlines with a comma-space so multiline addresses render cleanly
+    const sanitizeField = (val: string | undefined | null): string =>
+      (val || "").replace(/\r\n/g, ", ").replace(/\n/g, ", ").replace(/\r/g, ", ").trim();
 
     // Verify step 1 is pending
     if (!caseDoc.timeline || caseDoc.timeline[0].status !== "pending") {
@@ -69,12 +103,6 @@ export async function POST(req: NextRequest) {
     const complainantEmail = caseDoc.clientEmail || clientUser.email || caseDoc.clientEmail;
     const complainantPhone = caseDoc.clientPhone || clientUser.phone || caseDoc.clientPhone;
     const complainantAddress = caseDoc.clientAddress || clientUser.address || caseDoc.clientAddress;
-
-    const isSpecialUser = clientUser?.phone?.replace(/\D/g, '').endsWith('8700343611') || clientUser?.phone?.replace(/\D/g, '').endsWith('8130104447');
-
-    // Sanitize helper: replace newlines with a comma-space so multiline addresses render cleanly
-    const sanitizeField = (val: string | undefined | null): string =>
-      (val || "").replace(/\r\n/g, ", ").replace(/\n/g, ", ").replace(/\r/g, ", ").trim();
 
     let pdfBuffer: Buffer;
     try {

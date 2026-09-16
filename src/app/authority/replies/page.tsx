@@ -30,6 +30,7 @@ import {
   Truck,
   Layers
 } from "lucide-react";
+import EmailBodyViewer, { getEmailSnippet, parseEmailContent } from "@/components/EmailBodyViewer";
 
 interface ReplyItem {
   _id: string;
@@ -105,7 +106,7 @@ export default function AuthorityRepliesPage() {
   // Fetch KPI Metrics
   const fetchMetrics = useCallback(async () => {
     try {
-      const res = await fetch(`/api/admin/replies?type=metrics&_t=${Date.now()}`);
+      const res = await fetch(`/api/admin/replies?workspace=retail&type=metrics&_t=${Date.now()}`);
       if (res.ok) {
         const data = await res.json();
         if (data.success && data.metrics) {
@@ -128,6 +129,7 @@ export default function AuthorityRepliesPage() {
 
     try {
       const params = new URLSearchParams({
+        workspace: "retail",
         type: "list",
         page: pageToLoad.toString(),
         limit: "20",
@@ -717,12 +719,9 @@ export default function AuthorityRepliesPage() {
                     </span>
                   </div>
 
-                  <p
-                    className={`text-xs sm:text-[13px] font-medium font-sans leading-relaxed text-slate-800 whitespace-pre-line select-text
-                      ${!isExpanded && isLongMessage ? "line-clamp-4" : ""}`}
-                  >
-                    {reply.description || "Empty message body"}
-                  </p>
+                  <div className="text-xs sm:text-[13px] font-medium font-sans leading-relaxed text-slate-800 select-text">
+                    <EmailBodyViewer content={reply.description || "Empty message body"} />
+                  </div>
 
                   {/* Expand / Collapse toggle for long text */}
                   {isLongMessage && (
