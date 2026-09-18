@@ -43,7 +43,9 @@ import {
   Receipt,
   CreditCard,
   UserCheck,
-  Shield
+  Shield,
+  Layers,
+  Calendar
 } from "lucide-react";
 
 export default function ScopedRepresentationCasesPage() {
@@ -59,6 +61,15 @@ export default function ScopedRepresentationCasesPage() {
   // Search & Filter
   const [searchQuery, setSearchQuery] = useState("");
   const [statusFilter, setStatusFilter] = useState("all");
+  const [batchFilter, setBatchFilter] = useState("all");
+  const [collapsedBatches, setCollapsedBatches] = useState<Record<string, boolean>>({});
+
+  const toggleBatchCollapse = (batchKey: string) => {
+    setCollapsedBatches(prev => ({
+      ...prev,
+      [batchKey]: !prev[batchKey]
+    }));
+  };
 
   // Per-row remarks states
   const [editedRemarks, setEditedRemarks] = useState<Record<string, string>>({});
@@ -436,11 +447,107 @@ export default function ScopedRepresentationCasesPage() {
     }
   };
 
+  // Helper to extract creation date key YYYY-MM-DD
+  const getCaseDateKey = (c: any): string => {
+    if (c.createdAt) {
+      try {
+        const d = new Date(c.createdAt);
+        if (!isNaN(d.getTime())) {
+          const year = d.getFullYear();
+          const month = String(d.getMonth() + 1).padStart(2, "0");
+          const day = String(d.getDate()).padStart(2, "0");
+          return `${year}-${month}-${day}`;
+        }
+      } catch {}
+    }
+    const idStr = String(c._id || c.id || "");
+    if (idStr.length === 24) {
+      try {
+        const timestamp = parseInt(idStr.substring(0, 8), 16) * 1000;
+        const d = new Date(timestamp);
+        if (!isNaN(d.getTime())) {
+          const year = d.getFullYear();
+          const month = String(d.getMonth() + 1).padStart(2, "0");
+          const day = String(d.getDate()).padStart(2, "0");
+          return `${year}-${month}-${day}`;
+        }
+      } catch {}
+    }
+    return "legacy";
+  };
+
+  // Helper to format batch display dates
+  const formatBatchDisplayDate = (dateKey: string): { short: string; full: string } => {
+    if (dateKey === "legacy" || dateKey === "unknown") {
+      return { short: "Earlier Records", full: "Legacy / Historical Records" };
+    }
+    try {
+      const [y, m, d] = dateKey.split("-").map(Number);
+      const dateObj = new Date(y, m - 1, d);
+      if (isNaN(dateObj.getTime())) return { short: dateKey, full: dateKey };
+
+      const now = new Date();
+      const todayKey = `${now.getFullYear()}-${String(now.getMonth() + 1).padStart(2, "0")}-${String(now.getDate()).padStart(2, "0")}`;
+      const yesterday = new Date(now);
+      yesterday.setDate(yesterday.getDate() - 1);
+      const yestKey = `${yesterday.getFullYear()}-${String(yesterday.getMonth() + 1).padStart(2, "0")}-${String(yesterday.getDate()).padStart(2, "0")}`;
+
+      const shortDate = dateObj.toLocaleDateString("en-IN", { day: "numeric", month: "short", year: "numeric" });
+      let prefix = "";
+      if (dateKey === todayKey) prefix = "Today, ";
+      else if (dateKey === yestKey) prefix = "Yesterday, ";
+
+      return {
+        short: `${prefix}${shortDate}`,
+        full: dateObj.toLocaleDateString("en-IN", { weekday: "long", day: "numeric", month: "long", year: "numeric" })
+      };
+    } catch {
+      return { short: dateKey, full: dateKey };
+    }
+  };
+
+  // Derive master batches from all cases
+  const allBatches = useMemo(() => {
+    const map = new Map<string, any[]>();
+    cases.forEach(c => {
+      const key = getCaseDateKey(c);
+      if (!map.has(key)) map.set(key, []);
+      map.get(key)!.push(c);
+    });
+
+    // Sort batch keys descending (newest dates first)
+    const sortedKeys = Array.from(map.keys()).sort((a, b) => {
+      if (a === "legacy") return 1;
+      if (b === "legacy") return -1;
+      return b.localeCompare(a);
+    });
+
+    return sortedKeys.map((key, index) => {
+      const batchCases = map.get(key) || [];
+      const dateInfo = formatBatchDisplayDate(key);
+      const totalClaimed = batchCases.reduce((sum, c) => sum + (Number(c.claimedAmount !== undefined ? c.claimedAmount : (c.stuckAmount || 0))), 0);
+      const totalRecovered = batchCases.reduce((sum, c) => sum + (Number(c.receivedAmount !== undefined ? c.receivedAmount : (c.recoveredAmount || 0))), 0);
+
+      return {
+        batchKey: key,
+        batchNumber: index + 1,
+        batchDate: dateInfo.short,
+        fullDateStr: dateInfo.full,
+        totalCount: batchCases.length,
+        totalClaimed,
+        totalRecovered,
+        cases: batchCases
+      };
+    });
+  }, [cases]);
+
   // Export CSV
   const handleExportCSV = () => {
-    if (cases.length === 0) return;
+    const listToExport = filteredCases.length > 0 ? filteredCases : cases;
+    if (listToExport.length === 0) return;
     const headers = [
-      "Date",
+      "Batch Number",
+      "Date Added",
       "Defaulter Name",
       "Phone",
       "Phone 2",
@@ -452,13 +559,17 @@ export default function ScopedRepresentationCasesPage() {
       "Remarks"
     ];
 
-    const rows = cases.map(c => {
+    const rows = listToExport.map(c => {
+      const dateKey = getCaseDateKey(c);
+      const batchObj = allBatches.find(b => b.batchKey === dateKey);
+      const batchLabel = batchObj ? `Batch #${batchObj.batchNumber} (${batchObj.batchDate})` : "Standard Batch";
       const claimed = c.claimedAmount !== undefined ? c.claimedAmount : (c.stuckAmount || 0);
       const received = c.receivedAmount !== undefined ? c.receivedAmount : (c.recoveredAmount || 0);
       const isPaused = (c.status || '').toLowerCase() === 'paused' || (c.status || '').toLowerCase() === 'on_hold';
       const isStopped = ['recovered', 'paid', 'completed', 'stopped', 'cancelled'].includes((c.status || '').toLowerCase());
       const noticeStatus = isPaused ? "PAUSED" : isStopped ? "STOPPED" : "ACTIVE";
       return [
+        `"${batchLabel}"`,
         formatTableDate(c.createdAt),
         `"${(c.defaulterName || '').replace(/"/g, '""')}"`,
         c.phone || "",
@@ -485,6 +596,12 @@ export default function ScopedRepresentationCasesPage() {
   // Filtered cases
   const filteredCases = useMemo(() => {
     return cases.filter(c => {
+      // 1. Batch Filter (divides records by when they were added)
+      if (batchFilter !== "all") {
+        if (getCaseDateKey(c) !== batchFilter) return false;
+      }
+
+      // 2. Status Filter
       if (statusFilter !== "all") {
         const s = (c.status || "active").toLowerCase();
         const isPaused = s === "paused" || s === "on_hold";
@@ -495,6 +612,8 @@ export default function ScopedRepresentationCasesPage() {
         if (statusFilter === "paused" && !isPaused) return false;
         if (statusFilter === "stopped" && !isStopped) return false;
       }
+
+      // 3. Search query
       if (searchQuery.trim()) {
         const q = searchQuery.toLowerCase();
         const matchesName = (c.defaulterName || "").toLowerCase().includes(q);
@@ -505,7 +624,33 @@ export default function ScopedRepresentationCasesPage() {
       }
       return true;
     });
-  }, [cases, statusFilter, searchQuery]);
+  }, [cases, batchFilter, statusFilter, searchQuery]);
+
+  // Group filtered cases into batches for structured ledger display
+  const groupedBatches = useMemo(() => {
+    const map = new Map<string, any[]>();
+    filteredCases.forEach(c => {
+      const key = getCaseDateKey(c);
+      if (!map.has(key)) map.set(key, []);
+      map.get(key)!.push(c);
+    });
+
+    return allBatches
+      .map(b => {
+        const batchFilteredCases = map.get(b.batchKey) || [];
+        if (batchFilteredCases.length === 0) return null;
+        const totalClaimed = batchFilteredCases.reduce((sum, c) => sum + (Number(c.claimedAmount !== undefined ? c.claimedAmount : (c.stuckAmount || 0))), 0);
+        const totalRecovered = batchFilteredCases.reduce((sum, c) => sum + (Number(c.receivedAmount !== undefined ? c.receivedAmount : (c.recoveredAmount || 0))), 0);
+        return {
+          ...b,
+          cases: batchFilteredCases,
+          filteredCount: batchFilteredCases.length,
+          totalClaimed,
+          totalRecovered
+        };
+      })
+      .filter(Boolean) as (typeof allBatches[0] & { filteredCount: number })[];
+  }, [filteredCases, allBatches]);
 
   // Stage configuration for Escalation Lifecycle (4 Steps)
   const STAGES = [
@@ -625,6 +770,24 @@ export default function ScopedRepresentationCasesPage() {
             />
           </div>
 
+          {/* BATCH FILTER (DIVIDE/GROUP BY DATE ADDED) */}
+          <div className="flex items-center gap-1.5 px-3 py-1.5 bg-white border border-slate-200 rounded-full shadow-xs">
+            <Layers className="w-3.5 h-3.5 text-[#DC2626] shrink-0" />
+            <select
+              value={batchFilter}
+              onChange={(e) => setBatchFilter(e.target.value)}
+              className="bg-transparent text-xs font-semibold text-slate-700 focus:outline-none cursor-pointer pr-1"
+            >
+              <option value="all">All Batches ({allBatches.length} {allBatches.length === 1 ? "Date" : "Dates"} • {cases.length} Notices)</option>
+              {allBatches.map((b) => (
+                <option key={b.batchKey} value={b.batchKey}>
+                  Batch #{b.batchNumber}: {b.batchDate} ({b.totalCount} {b.totalCount === 1 ? "notice" : "notices"})
+                </option>
+              ))}
+            </select>
+          </div>
+
+          {/* STATUS FILTER */}
           <select
             value={statusFilter}
             onChange={(e) => setStatusFilter(e.target.value)}
@@ -635,12 +798,49 @@ export default function ScopedRepresentationCasesPage() {
             <option value="paused">Paused</option>
             <option value="stopped">Stopped</option>
           </select>
+
+          {/* ACTIVE BATCH FILTER PILL */}
+          {batchFilter !== "all" && (
+            <button
+              onClick={() => setBatchFilter("all")}
+              className="flex items-center gap-1.5 px-3 py-1 bg-red-50 hover:bg-red-100 border border-red-200 text-[#DC2626] rounded-full text-xs font-bold transition-all cursor-pointer shadow-xs"
+              title="Click to reset to all batches"
+            >
+              <span>Filtered: {allBatches.find(b => b.batchKey === batchFilter)?.batchDate || batchFilter}</span>
+              <X className="w-3 h-3" />
+            </button>
+          )}
+
+          {/* QUICK COLLAPSE / EXPAND TOGGLE */}
+          {groupedBatches.length > 1 && (
+            <div className="hidden lg:flex items-center gap-1">
+              <button
+                type="button"
+                onClick={() => {
+                  const allCollapsed: Record<string, boolean> = {};
+                  groupedBatches.forEach(b => { allCollapsed[b.batchKey] = true; });
+                  setCollapsedBatches(allCollapsed);
+                }}
+                className="text-[11px] font-semibold text-slate-500 hover:text-slate-900 px-2 py-1 rounded hover:bg-slate-200/60 transition-colors cursor-pointer"
+              >
+                Collapse Batches
+              </button>
+              <span className="text-slate-300">|</span>
+              <button
+                type="button"
+                onClick={() => setCollapsedBatches({})}
+                className="text-[11px] font-semibold text-slate-500 hover:text-slate-900 px-2 py-1 rounded hover:bg-slate-200/60 transition-colors cursor-pointer"
+              >
+                Expand Batches
+              </button>
+            </div>
+          )}
         </div>
 
-        {/* RECORDS PILL */}
-        <div className="self-end md:self-auto">
+        {/* RECORDS & BATCHES PILL */}
+        <div className="self-end md:self-auto flex items-center gap-2">
           <div className="border border-slate-200/90 rounded-full px-4 py-1.5 font-bold text-xs text-slate-700 bg-white shadow-xs tracking-wider uppercase">
-            {filteredCases.length} RECORDS
+            {filteredCases.length} RECORDS {groupedBatches.length > 0 && `• ${groupedBatches.length} ${groupedBatches.length === 1 ? "BATCH" : "BATCHES"}`}
           </div>
         </div>
       </div>
@@ -676,9 +876,81 @@ export default function ScopedRepresentationCasesPage() {
                 </tr>
               </thead>
 
-              {/* ── TABLE BODY ROWS ── */}
+              {/* ── TABLE BODY ROWS (DIVIDED INTO DATE BATCHES) ── */}
               <tbody className="divide-y divide-stone-100 font-medium text-stone-700 bg-white">
-                {filteredCases.map((c) => {
+                {groupedBatches.map((batch) => {
+                  const isCollapsed = Boolean(collapsedBatches[batch.batchKey]);
+
+                  return (
+                    <React.Fragment key={`batch-group-${batch.batchKey}`}>
+                      {/* ── BATCH DIVIDER HEADER ROW ── */}
+                      <tr className="bg-slate-100/95 hover:bg-slate-100 border-y-2 border-slate-200 text-slate-800 select-none transition-colors">
+                        <td colSpan={7} className="py-2.5 px-4">
+                          <div className="flex flex-wrap items-center justify-between gap-3">
+                            {/* Left: Batch Info & Toggle */}
+                            <div className="flex items-center gap-3">
+                              <button
+                                type="button"
+                                onClick={() => toggleBatchCollapse(batch.batchKey)}
+                                className="flex items-center gap-2 text-left cursor-pointer group focus:outline-none"
+                                title={isCollapsed ? "Click to expand batch" : "Click to collapse batch"}
+                              >
+                                <div className="w-5 h-5 rounded-md bg-white border border-slate-300 text-slate-600 flex items-center justify-center group-hover:border-[#DC2626] group-hover:text-[#DC2626] transition-colors shadow-2xs">
+                                  {isCollapsed ? (
+                                    <ChevronRight className="w-3.5 h-3.5" />
+                                  ) : (
+                                    <ChevronDown className="w-3.5 h-3.5" />
+                                  )}
+                                </div>
+                                <div className="flex items-center gap-2">
+                                  <span className="px-2 py-0.5 rounded-full text-[10px] font-extrabold uppercase tracking-wider bg-[#DC2626] text-white shadow-xs">
+                                    Batch #{batch.batchNumber}
+                                  </span>
+                                  <span className="text-xs font-black text-slate-900 tracking-tight">
+                                    {batch.batchDate}
+                                  </span>
+                                </div>
+                              </button>
+
+                              <span className="inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-full text-[11px] font-bold bg-white text-slate-700 border border-slate-200 shadow-2xs">
+                                <span className="w-1.5 h-1.5 rounded-full bg-slate-400" />
+                                {batch.cases.length} {batch.cases.length === 1 ? "Notice" : "Notices"}
+                              </span>
+
+                              <span className="text-[11px] font-medium text-slate-400 hidden sm:inline">
+                                Added on {batch.fullDateStr}
+                              </span>
+                            </div>
+
+                            {/* Right: Batch Financials & Quick Batch Filter */}
+                            <div className="flex items-center gap-4 text-xs font-medium">
+                              <span className="text-slate-600">
+                                Batch Claimed: <strong className="font-mono text-slate-900 font-black">₹{batch.totalClaimed.toLocaleString("en-IN")}</strong>
+                              </span>
+                              {batch.totalRecovered > 0 && (
+                                <span className="text-emerald-600">
+                                  Recovered: <strong className="font-mono font-black">₹{batch.totalRecovered.toLocaleString("en-IN")}</strong>
+                                </span>
+                              )}
+                              <button
+                                type="button"
+                                onClick={() => setBatchFilter(batchFilter === batch.batchKey ? "all" : batch.batchKey)}
+                                className={`text-[11px] font-bold px-2 py-1 rounded-md transition-colors cursor-pointer border ${
+                                  batchFilter === batch.batchKey
+                                    ? "bg-red-50 text-[#DC2626] border-red-200"
+                                    : "bg-white text-slate-600 border-slate-200 hover:text-[#DC2626] hover:border-red-200"
+                                }`}
+                              >
+                                {batchFilter === batch.batchKey ? "Showing This Batch Only" : "Filter Batch"}
+                              </button>
+                            </div>
+                          </div>
+                        </td>
+                      </tr>
+
+                      {/* ── BATCH CASE ROWS (IF NOT COLLAPSED) ── */}
+                      {!isCollapsed ? (
+                        batch.cases.map((c) => {
                   const caseId = c._id || c.id;
                   const rawStatus = (c.status || "active").toLowerCase();
                   const escalation = getEscalationInfo(c);
@@ -1068,11 +1340,20 @@ export default function ScopedRepresentationCasesPage() {
                               </div>
                             </div>
                           )}
+                          </div>
                         </div>
-                      </div>
-                    </td>
-
+                      </td>
                     </tr>
+                  );
+                })
+                      ) : (
+                        <tr key={`batch-collapsed-row-${batch.batchKey}`} className="bg-white">
+                          <td colSpan={7} className="py-3 px-6 text-xs text-slate-400 font-semibold italic">
+                            Batch #{batch.batchNumber} collapsed ({batch.cases.length} notices hidden). Click header or chevron to expand.
+                          </td>
+                        </tr>
+                      )}
+                    </React.Fragment>
                   );
                 })}
               </tbody>
