@@ -744,12 +744,14 @@ async function handleDispatch(req: NextRequest) {
       } else if (caseDoc.currentStep === 4) {
         const clientEmail = caseDoc.clientEmail || clientUser?.email || caseDoc.clientEmail;
         
-        // Check if PC is disabled for this specific case (per-case toggle) OR user-level toggle
-        const skipByCase = caseDoc.skipPoliceComplaint === true;
+        // Check if PC is disabled: explicit per-case toggle takes precedence, otherwise fallback to user preference
         const sendComplaints = clientUser?.sendPoliceComplaints !== false;
+        const shouldSkipPolice = typeof caseDoc.skipPoliceComplaint === "boolean"
+          ? caseDoc.skipPoliceComplaint === true
+          : (isSpecialUser && !sendComplaints);
 
-        if (skipByCase || (isSpecialUser && !sendComplaints)) {
-          console.log(`[Queue Processor] Police complaint toggle is OFF for case ${caseDoc.caseId} (perCase=${skipByCase}). Skipping dispatch.`);
+        if (shouldSkipPolice) {
+          console.log(`[Queue Processor] Police complaint toggle is OFF for case ${caseDoc.caseId} (perCase=${caseDoc.skipPoliceComplaint}, userPreference=${sendComplaints}). Skipping dispatch.`);
           
           await db.collection("cases").updateOne(
             { _id: caseDoc._id },

@@ -131,19 +131,45 @@ export async function GET(req: NextRequest) {
       .sort({ createdAt: -1 })
       .toArray();
 
+    // Fetch owner users for representees/cases to determine default sendPoliceComplaints preference
+    const repUserIds = [
+      ...representees.map(r => (typeof r.userId === "string" ? new ObjectId(r.userId) : r.userId)),
+      ...cases.map(c => (typeof c.userId === "string" ? new ObjectId(c.userId) : c.userId))
+    ].filter(Boolean);
+    const users = repUserIds.length > 0
+      ? await db.collection("users").find({ _id: { $in: repUserIds } }).toArray()
+      : [];
+    const userMap = new Map(users.map(u => [u._id.toString(), u]));
+
     const mappedCases = cases.map(c => {
+      const rep = c.representeeId ? representeeMap.get(c.representeeId.toString()) : null;
+      const ownerUser = rep?.userId
+        ? userMap.get(rep.userId.toString())
+        : (c.userId ? userMap.get(c.userId.toString()) : null);
+
+      const repSendPolice = rep?.sendPoliceComplaints !== undefined
+        ? rep.sendPoliceComplaints
+        : (ownerUser?.sendPoliceComplaints !== undefined ? ownerUser.sendPoliceComplaints : true);
+
+      // If case has explicit skipPoliceComplaint boolean, use it. Otherwise inherit from representee/user
+      const effectiveSkipPoliceComplaint = typeof c.skipPoliceComplaint === "boolean"
+        ? c.skipPoliceComplaint
+        : (repSendPolice === false);
+
+      const baseCase = {
+        ...c,
+        id: c._id.toString(),
+        skipPoliceComplaint: effectiveSkipPoliceComplaint,
+        sendPoliceComplaints: repSendPolice
+      };
+
       if (c.representeeId) {
-        const rep = representeeMap.get(c.representeeId.toString());
         return {
-          ...c,
-          id: c._id.toString(),
+          ...baseCase,
           representeeName: rep ? rep.name : null
         };
       }
-      return {
-        ...c,
-        id: c._id.toString()
-      };
+      return baseCase;
     });
 
     return NextResponse.json({ success: true, count: mappedCases.length, data: mappedCases });

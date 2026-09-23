@@ -130,21 +130,23 @@ export default function ScopedRepresentationCasesPage() {
   const fetchData = async () => {
     setIsLoading(true);
     try {
+      let currentRep: any = null;
       if (!isDirect) {
         const repRes = await fetch(`/api/representees?_t=${Date.now()}`);
         if (repRes.ok) {
           const repData = await repRes.json();
           if (repData.success && repData.data) {
-            const currentRep = repData.data.find((r: any) => r._id === repId || r.id === repId);
+            currentRep = repData.data.find((r: any) => r._id === repId || r.id === repId);
             setRepresentee(currentRep || null);
           }
         }
       } else {
-        setRepresentee({
+        currentRep = {
           _id: "direct",
           name: "Direct AMA Claims",
           state: "Delhi"
-        });
+        };
+        setRepresentee(currentRep);
       }
 
       const casesRes = await fetch(`/api/cases?workspace=ama&representeeId=${repId}&_t=${Date.now()}`);
@@ -157,8 +159,18 @@ export default function ScopedRepresentationCasesPage() {
           casesData.data.forEach((c: any) => {
             const id = c._id || c.id;
             initialRemarks[id] = c.remarks || "";
-            // PC toggle is ON by default; OFF only if explicitly set to true in DB
-            initialPcToggles[id] = c.skipPoliceComplaint !== true;
+            // Police complaint toggle state:
+            // 1. Explicit case-level setting has highest precedence
+            // 2. Otherwise inherit from representee or user preference
+            let isEnabled = true;
+            if (typeof c.skipPoliceComplaint === "boolean") {
+              isEnabled = !c.skipPoliceComplaint;
+            } else if (currentRep && currentRep.sendPoliceComplaints === false) {
+              isEnabled = false;
+            } else if (typeof c.sendPoliceComplaints === "boolean") {
+              isEnabled = c.sendPoliceComplaints;
+            }
+            initialPcToggles[id] = isEnabled;
           });
           setEditedRemarks(initialRemarks);
           setPcToggles(initialPcToggles);
@@ -1066,6 +1078,13 @@ export default function ScopedRepresentationCasesPage() {
                   const hasValidManager = Boolean(c.caseManager && c.caseManager !== "Advocate Chambers" && c.caseManager.trim() !== "");
                   const isFreshNotice = isActive && escalation.reachedCount === 0;
 
+                  const isLoanCase = (c.category || "") === "loan-recovery";
+                  const pcEnabled = pcToggles[caseId] !== undefined
+                    ? pcToggles[caseId]
+                    : (typeof c.skipPoliceComplaint === "boolean"
+                        ? !c.skipPoliceComplaint
+                        : (representee?.sendPoliceComplaints !== false && c.sendPoliceComplaints !== false));
+
                   return (
                     <tr key={caseId} className="group hover:bg-[#F9FAFB] transition-colors">
                       
@@ -1173,10 +1192,8 @@ export default function ScopedRepresentationCasesPage() {
 
                           <div className="grid grid-cols-4 gap-2 items-end text-center w-full">
                             {escalation.stages.map((st: {key: string; label: string}, idx: number) => {
-                              const isLoanCase = (c.category || "") === "loan-recovery";
                               // Toggle is ONLY for general-recovery step 4 (Police Complaint)
                               const isPCStep = st.key === "PC" && !isLoanCase;
-                              const pcEnabled = pcToggles[caseId] !== false; // default ON
                               const pcSkipped = isPCStep && !pcEnabled;
 
                               // Treat the PC step as not-reached when it's toggled off
@@ -1240,26 +1257,6 @@ export default function ScopedRepresentationCasesPage() {
                                       </>
                                     )}
                                   </div>
-
-                                  {/* PC toggle switch — only for PC step of loan-recovery, when not yet dispatched */}
-                                  {isPCStep && !isReached && (
-                                    <button
-                                      onClick={(e) => {
-                                        e.stopPropagation();
-                                        handleTogglePCComplaint(c, !pcEnabled);
-                                      }}
-                                      title={pcEnabled ? "Disable Police Complaint dispatch" : "Enable Police Complaint dispatch"}
-                                      className="mt-1 cursor-pointer focus:outline-none"
-                                    >
-                                      <div className={`relative w-7 h-3.5 rounded-full transition-colors duration-200 ${
-                                        pcEnabled ? "bg-emerald-500" : "bg-slate-200"
-                                      }`}>
-                                        <div className={`absolute top-0.5 w-2.5 h-2.5 rounded-full bg-white shadow-sm transition-all duration-200 ${
-                                          pcEnabled ? "left-[14px]" : "left-0.5"
-                                        }`} />
-                                      </div>
-                                    </button>
-                                  )}
                                 </div>
                               );
                             })}
@@ -1468,6 +1465,30 @@ export default function ScopedRepresentationCasesPage() {
                                   <AlertTriangle className="w-3.5 h-3.5 text-rose-600" />
                                   <span>Stop Notices</span>
                                 </button>
+
+                                {/* Police Complaint Toggle */}
+                                {!isLoanCase && (
+                                  <button
+                                    onClick={() => {
+                                      handleTogglePCComplaint(c, !pcEnabled);
+                                      setActiveActionDropdownId(null);
+                                    }}
+                                    className={`w-full text-left px-3 py-2 rounded-xl text-xs font-bold flex items-center justify-between gap-2 cursor-pointer transition-colors ${
+                                      pcEnabled ? "text-amber-700 hover:bg-amber-50" : "text-emerald-700 hover:bg-emerald-50"
+                                    }`}
+                                    title={pcEnabled ? "Disable Police Complaint dispatch for this case" : "Enable Police Complaint dispatch for this case"}
+                                  >
+                                    <div className="flex items-center gap-2">
+                                      <ShieldAlert className={`w-3.5 h-3.5 ${pcEnabled ? "text-amber-600" : "text-emerald-600"}`} />
+                                      <span>{pcEnabled ? "Disable Police Complaint" : "Enable Police Complaint"}</span>
+                                    </div>
+                                    <span className={`text-[9px] font-black px-1.5 py-0.5 rounded-full uppercase tracking-wider ${
+                                      pcEnabled ? "bg-amber-100 text-amber-800" : "bg-emerald-100 text-emerald-800"
+                                    }`}>
+                                      {pcEnabled ? "Active" : "Disabled"}
+                                    </span>
+                                  </button>
+                                )}
                               </div>
 
                               <div className="space-y-0.5 pt-1">

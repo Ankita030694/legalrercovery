@@ -79,12 +79,29 @@ export async function GET(req: NextRequest) {
       .sort({ createdAt: -1 })
       .toArray();
 
-    // Map _id to string for frontend usability
-    const formatted = representees.map(r => ({
-      ...r,
-      id: r._id.toString(),
-      _id: r._id.toString()
-    }));
+    // Fetch owner users to determine default sendPoliceComplaints preference
+    const repUserIds = representees
+      .map(r => (typeof r.userId === "string" ? new ObjectId(r.userId) : r.userId))
+      .filter(Boolean);
+    const users = repUserIds.length > 0
+      ? await db.collection("users").find({ _id: { $in: repUserIds } }).toArray()
+      : [];
+    const userMap = new Map(users.map(u => [u._id.toString(), u]));
+
+    // Map _id to string for frontend usability and populate sendPoliceComplaints
+    const formatted = representees.map(r => {
+      const ownerUser = r.userId ? userMap.get(r.userId.toString()) : null;
+      const sendPoliceComplaints = r.sendPoliceComplaints !== undefined
+        ? r.sendPoliceComplaints
+        : (ownerUser?.sendPoliceComplaints !== undefined ? ownerUser.sendPoliceComplaints : true);
+
+      return {
+        ...r,
+        id: r._id.toString(),
+        _id: r._id.toString(),
+        sendPoliceComplaints
+      };
+    });
 
     return NextResponse.json({ success: true, count: formatted.length, data: formatted });
   } catch (error: any) {
@@ -233,6 +250,7 @@ export async function PUT(req: NextRequest) {
           state: state.trim(),
           authRepName: authRepName ? authRepName.trim() : "",
           authRepPhone: authRepPhone ? authRepPhone.trim().replace(/\D/g, "") : "",
+          ...(typeof body.sendPoliceComplaints === "boolean" ? { sendPoliceComplaints: body.sendPoliceComplaints } : {}),
           updatedAt: new Date().toISOString()
         }
       }
