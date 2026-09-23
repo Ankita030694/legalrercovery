@@ -654,16 +654,40 @@ export default function ScopedRepresentationCasesPage() {
 
   // Stage configuration for Escalation Lifecycle (4 Steps)
   const STAGES = [
-    { key: "N1", label: "N1", defaultOffset: 0 },
-    { key: "PC", label: "PC", defaultOffset: 7 },
-    { key: "N3", label: "N3", defaultOffset: 14 },
-    { key: "N4", label: "N4", defaultOffset: 21 }
+    { key: "N1", label: "N1" },
+    { key: "PC", label: "PC" },
+    { key: "N3", label: "N3" },
+    { key: "N4", label: "N4" }
   ];
+
+  // Format a date+time for the timeline (e.g. "3 Oct, 2:30 pm")
+  const formatStepDateTime = (isoOrStr?: string | null): string => {
+    if (!isoOrStr) return "—";
+    // Try parsing as ISO first, then fall back to the stored formatted string
+    const d = new Date(isoOrStr);
+    if (!isNaN(d.getTime())) {
+      return d.toLocaleString("en-IN", {
+        day: "numeric",
+        month: "short",
+        hour: "2-digit",
+        minute: "2-digit",
+        hour12: true
+      }).replace(",", "");
+    }
+    // Stored as pre-formatted date string (e.g. "3 Oct 2026") — return as-is short form
+    return isoOrStr.split(" ").slice(0, 2).join(" ");
+  };
 
   // Helper to compute progress for a case
   const getEscalationInfo = (c: any) => {
     const rawStatus = (c.status || "active").toLowerCase();
     const currentStep = c.currentStep || 1;
+    const isLoanRecovery = (c.category || "") === "loan-recovery";
+
+    // Category-aware fallback day offsets:
+    // loan-recovery:    Day 0, 3, 7, 14
+    // general-recovery: Day 0, 7, 14, 21
+    const fallbackOffsets = isLoanRecovery ? [0, 3, 7, 14] : [0, 7, 14, 21];
 
     let reachedCount = 0;
     if (rawStatus === "recovered" || rawStatus === "paid") {
@@ -695,27 +719,63 @@ export default function ScopedRepresentationCasesPage() {
       statusBadgeColor = "text-emerald-600";
     }
 
+    // Build rich step info from DB timeline
     const baseDate = c.createdAt ? new Date(c.createdAt) : new Date();
-    const stepDates = STAGES.map((s, idx) => {
-      if (c.timeline && c.timeline[idx]) {
-        const t = c.timeline[idx];
-        if (t.date && t.date !== "Awaiting dispatch") {
-          return formatTableDate(t.date);
+    const stepInfos = STAGES.map((s, idx) => {
+      const t = c.timeline && Array.isArray(c.timeline) ? c.timeline[idx] : null;
+      const stepStatus: string = t?.status || "locked";
+
+      if (t) {
+        // Completed step — show actual dispatch time
+        if (stepStatus === "completed" || stepStatus === "partially_delivered") {
+          const dispatchTime = t.completedAt || t.date;
+          return {
+            label: formatStepDateTime(dispatchTime),
+            sublabel: "Dispatched",
+            isDispatched: true
+          };
         }
+        // Scheduled / pending step — show scheduled dispatch time
         if (t.scheduledAt) {
-          return formatTableDate(t.scheduledAt);
+          return {
+            label: formatStepDateTime(t.scheduledAt),
+            sublabel: "Scheduled",
+            isDispatched: false
+          };
+        }
+        // Awaiting first dispatch
+        if (stepStatus === "pending" || t.date === "Awaiting dispatch") {
+          return {
+            label: "Pending",
+            sublabel: "Awaiting",
+            isDispatched: false
+          };
+        }
+        // Fallback: use the stored date string
+        if (t.date && t.date !== "Awaiting dispatch") {
+          return {
+            label: formatStepDateTime(t.date),
+            sublabel: stepStatus === "completed" ? "Dispatched" : "Scheduled",
+            isDispatched: stepStatus === "completed"
+          };
         }
       }
+
+      // No timeline entry yet — calculate from case creation date using category-aware offset
       const offsetDate = new Date(baseDate);
-      offsetDate.setDate(offsetDate.getDate() + s.defaultOffset);
-      return formatTableDate(offsetDate.toISOString());
+      offsetDate.setDate(offsetDate.getDate() + fallbackOffsets[idx]);
+      return {
+        label: offsetDate.toLocaleDateString("en-IN", { day: "numeric", month: "short" }),
+        sublabel: idx === 0 ? "Est." : `+${fallbackOffsets[idx]}d`,
+        isDispatched: false
+      };
     });
 
     return {
       reachedCount: Math.min(4, reachedCount),
       statusBadgeText,
       statusBadgeColor,
-      stepDates
+      stepInfos
     };
   };
 
@@ -1072,7 +1132,7 @@ export default function ScopedRepresentationCasesPage() {
                           <div className="grid grid-cols-4 gap-2 items-end text-center w-full">
                             {STAGES.map((st, idx) => {
                               const isReached = idx < escalation.reachedCount;
-                              const stepDate = escalation.stepDates[idx];
+                              const stepInfo = escalation.stepInfos[idx];
 
                               return (
                                 <div key={st.key} className="flex flex-col items-center">
@@ -1092,8 +1152,21 @@ export default function ScopedRepresentationCasesPage() {
                                     {st.label}
                                   </span>
 
-                                  <span className="text-[9px] font-medium text-slate-400 block whitespace-nowrap">
-                                    {stepDate}
+                                  {/* Date/time from DB timeline */}
+                                  <span
+                                    className={`text-[9px] font-semibold block whitespace-nowrap leading-tight ${
+                                      isReached
+                                        ? "text-[#DC2626]"
+                                        : stepInfo?.sublabel === "Scheduled"
+                                        ? "text-amber-600"
+                                        : "text-slate-400"
+                                    }`}
+                                    title={stepInfo?.sublabel || ""}
+                                  >
+                                    {stepInfo?.label || "—"}
+                                  </span>
+                                  <span className="text-[8px] font-medium text-slate-300 block leading-tight">
+                                    {stepInfo?.sublabel || ""}
                                   </span>
 
                                   <div className="h-3 flex items-center justify-center gap-0.5 mt-0.5">
