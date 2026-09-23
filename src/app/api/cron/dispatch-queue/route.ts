@@ -254,9 +254,10 @@ AMA Legal Solutions`;
   const promises: Promise<boolean>[] = [];
 
   const isLoanRecovery = caseDoc.category === 'loan-recovery';
+  // loan-recovery: step 2 (PC) is a police complaint to SHO
+  // general-recovery: ALL 4 steps are notice dispatches to the accused (no dedicated police complaint step)
   const isLoanStep2Complaint = isLoanRecovery && step === 2;
-  const isGeneralStep4Complaint = !isLoanRecovery && step === 4;
-  const isComplaintStep = isLoanStep2Complaint || isGeneralStep4Complaint;
+  const isComplaintStep = isLoanStep2Complaint;
 
   // 1. Email Channel
   if (isEmailPending) {
@@ -501,8 +502,8 @@ async function handleDispatch(req: NextRequest) {
 
       console.log(`[Queue Processor] Processing Case: ${caseDoc.caseId}, Step: ${caseDoc.currentStep}`);
 
-      // For loan-recovery: Step 2 is a police complaint (suffix C2), Steps 3-4 are notices (N3, N4)
-      // For general-recovery: Steps 1-3 are notices (N1-N3), Step 4 is complaint (C4)
+      // For loan-recovery: Step 2 is a police complaint (suffix C2), Steps 1,3,4 are notices (N1, N3, N4)
+      // For general-recovery: Steps 1-3 are notices (N1-N3), Step 4 is police complaint to SHO (C4)
       const isLoanRecovery = caseDoc.category === 'loan-recovery';
       const isLoanStep2Complaint = isLoanRecovery && caseDoc.currentStep === 2;
       const isGeneralStep4Complaint = !isLoanRecovery && caseDoc.currentStep === 4;
@@ -667,12 +668,16 @@ async function handleDispatch(req: NextRequest) {
           const nextStep = caseDoc.currentStep + 1;
 
           // Interval to next step:
-          // loan-recovery: after Step 2 (complaint) → +4 days to land on Day 7 from start
-          //                after Step 3 (2nd notice) → +7 days
+          // loan-recovery:
+          //   after N1  (step 1) → +3 days to reach PC on Day 3
+          //   after PC  (step 2) → +4 days to reach N3 on Day 7 from case start
+          //   after N3  (step 3) → +7 days to reach N4 on Day 14 from case start
           // general-recovery: always +7 days
           let nextIntervalDays = 7;
-          if (isLoanRecovery && caseDoc.currentStep === 2) {
-            nextIntervalDays = 4; // Day 3 + 4 = Day 7 from case start
+          if (isLoanRecovery && caseDoc.currentStep === 1) {
+            nextIntervalDays = 3; // N1 → PC: 3 days
+          } else if (isLoanRecovery && caseDoc.currentStep === 2) {
+            nextIntervalDays = 4; // PC → N3: Day 3 + 4 = Day 7 from case start
           }
           const nextScheduledTime = new Date(now.getTime() + nextIntervalDays * 24 * 60 * 60 * 1000);
 
@@ -689,14 +694,18 @@ async function handleDispatch(req: NextRequest) {
 
           // If there is a next step, unlock and schedule it
           if (nextStep <= 4) {
-            const intervalLabel = isLoanRecovery && caseDoc.currentStep === 2 ? "4 days" : "7 days";
+            const intervalLabel = isLoanRecovery && caseDoc.currentStep === 1 ? "3 days"
+              : isLoanRecovery && caseDoc.currentStep === 2 ? "4 days"
+              : "7 days";
             updateDoc[`timeline.${stepIndex + 1}.status`] = "scheduled";
             updateDoc[`timeline.${stepIndex + 1}.scheduledAt`] = nextScheduledTime.toISOString();
             updateDoc[`timeline.${stepIndex + 1}.date`] = formatTimelineDate(nextScheduledTime);
             updateDoc[`timeline.${stepIndex + 1}.timeRemaining`] = `${intervalLabel} remaining`;
 
             if (!isLoanRecovery && nextStep === 4) {
-              updateDoc[`timeline.${stepIndex + 1}.description`] = `Draft complaint copy shared for client`;
+              updateDoc[`timeline.${stepIndex + 1}.description`] = `Police Complaint draft shared with client — dispatching to SHO`;
+            } else if (isLoanRecovery && nextStep === 2) {
+              updateDoc[`timeline.${stepIndex + 1}.description`] = `Police Complaint dispatched to SHO — 3 days after first notice`;
             } else {
               updateDoc[`timeline.${stepIndex + 1}.description`] = `Dispatched ${intervalLabel} after previous step`;
             }
@@ -735,11 +744,12 @@ async function handleDispatch(req: NextRequest) {
       } else if (caseDoc.currentStep === 4) {
         const clientEmail = caseDoc.clientEmail || clientUser?.email || caseDoc.clientEmail;
         
-        // Check if the advocate has disabled police complaints
+        // Check if PC is disabled for this specific case (per-case toggle) OR user-level toggle
+        const skipByCase = caseDoc.skipPoliceComplaint === true;
         const sendComplaints = clientUser?.sendPoliceComplaints !== false;
 
-        if (isSpecialUser && !sendComplaints) {
-          console.log(`[Queue Processor] Police complaint toggle is OFF for special user case ${caseDoc.caseId}. Skipping dispatch.`);
+        if (skipByCase || (isSpecialUser && !sendComplaints)) {
+          console.log(`[Queue Processor] Police complaint toggle is OFF for case ${caseDoc.caseId} (perCase=${skipByCase}). Skipping dispatch.`);
           
           await db.collection("cases").updateOne(
             { _id: caseDoc._id },

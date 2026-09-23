@@ -83,6 +83,9 @@ export default function ScopedRepresentationCasesPage() {
   const [isForceDispatching, setIsForceDispatching] = useState<Record<string, boolean>>({});
   const [isTogglingPauseId, setIsTogglingPauseId] = useState<string | null>(null);
 
+  // Police Complaint toggle per case (true = PC is enabled/will be sent, false = PC skipped)
+  const [pcToggles, setPcToggles] = useState<Record<string, boolean>>({});
+
   // Record Payment Modal
   const [recordPaymentCase, setRecordPaymentCase] = useState<any | null>(null);
   const [recordPaymentAmount, setRecordPaymentAmount] = useState<string>("");
@@ -150,11 +153,15 @@ export default function ScopedRepresentationCasesPage() {
         if (casesData.success && casesData.data) {
           setCases(casesData.data);
           const initialRemarks: Record<string, string> = {};
+          const initialPcToggles: Record<string, boolean> = {};
           casesData.data.forEach((c: any) => {
             const id = c._id || c.id;
             initialRemarks[id] = c.remarks || "";
+            // PC toggle is ON by default; OFF only if explicitly set to true in DB
+            initialPcToggles[id] = c.skipPoliceComplaint !== true;
           });
           setEditedRemarks(initialRemarks);
+          setPcToggles(initialPcToggles);
         }
       }
     } catch (err) {
@@ -286,6 +293,30 @@ export default function ScopedRepresentationCasesPage() {
       }
     } catch (err) {
       console.error("Failed to update status:", err);
+    }
+  };
+
+  // Toggle Police Complaint for a loan-recovery case
+  const handleTogglePCComplaint = async (caseItem: any, enabled: boolean) => {
+    const caseId = caseItem._id || caseItem.id;
+    // Optimistically update UI
+    setPcToggles(prev => ({ ...prev, [caseId]: enabled }));
+    try {
+      await fetch("/api/cases", {
+        method: "PATCH",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ id: caseId, skipPoliceComplaint: !enabled })
+      });
+      // Reflect in cases state so refresh picks it up
+      setCases(prev => prev.map(c =>
+        (c._id === caseId || c.id === caseId)
+          ? { ...c, skipPoliceComplaint: !enabled }
+          : c
+      ));
+    } catch (err) {
+      console.error("Failed to toggle PC complaint:", err);
+      // Roll back on error
+      setPcToggles(prev => ({ ...prev, [caseId]: !enabled }));
     }
   };
 
@@ -653,11 +684,18 @@ export default function ScopedRepresentationCasesPage() {
   }, [filteredCases, allBatches]);
 
   // Stage configuration for Escalation Lifecycle (4 Steps)
-  const STAGES = [
-    { key: "N1", label: "N1" },
-    { key: "PC", label: "PC" },
-    { key: "N3", label: "N3" },
-    { key: "N4", label: "N4" }
+  // Labels are category-aware: loan-recovery vs general-recovery have different step sequences
+  const LOAN_STAGES = [
+    { key: "N1", label: "N1" }, // Day 0  – First Notice
+    { key: "PC", label: "PC" }, // Day 3  – Police Complaint (3 days after N1)
+    { key: "N3", label: "N3" }, // Day 7  – Second Notice (7 days after N1)
+    { key: "N4", label: "N4" }  // Day 14 – Third Notice  (7 days after N3)
+  ];
+  const GENERAL_STAGES = [
+    { key: "N1", label: "N1" }, // Day 0  – First Notice
+    { key: "N2", label: "N2" }, // Day 7  – Second Notice
+    { key: "N3", label: "N3" }, // Day 14 – Third Notice
+    { key: "PC", label: "PC" }  // Day 21 – Police Complaint
   ];
 
   // Format a date+time for the timeline (e.g. "3 Oct, 2:30 pm")
@@ -684,9 +722,12 @@ export default function ScopedRepresentationCasesPage() {
     const currentStep = c.currentStep || 1;
     const isLoanRecovery = (c.category || "") === "loan-recovery";
 
-    // Category-aware fallback day offsets:
-    // loan-recovery:    Day 0, 3, 7, 14
-    // general-recovery: Day 0, 7, 14, 21
+    // Pick the right stage labels based on category
+    const STAGES = isLoanRecovery ? LOAN_STAGES : GENERAL_STAGES;
+
+    // Category-aware fallback day offsets (used only when no timeline entry exists in DB):
+    // loan-recovery:    N1=Day 0, PC=Day 3, N3=Day 7, N4=Day 14
+    // general-recovery: N1=Day 0, N2=Day 7, N3=Day 14, PC=Day 21
     const fallbackOffsets = isLoanRecovery ? [0, 3, 7, 14] : [0, 7, 14, 21];
 
     let reachedCount = 0;
@@ -775,7 +816,8 @@ export default function ScopedRepresentationCasesPage() {
       reachedCount: Math.min(4, reachedCount),
       statusBadgeText,
       statusBadgeColor,
-      stepInfos
+      stepInfos,
+      stages: STAGES
     };
   };
 
@@ -1130,47 +1172,67 @@ export default function ScopedRepresentationCasesPage() {
                           </div>
 
                           <div className="grid grid-cols-4 gap-2 items-end text-center w-full">
-                            {STAGES.map((st, idx) => {
-                              const isReached = idx < escalation.reachedCount;
+                            {escalation.stages.map((st: {key: string; label: string}, idx: number) => {
+                              const isLoanCase = (c.category || "") === "loan-recovery";
+                              // Toggle is ONLY for general-recovery step 4 (Police Complaint)
+                              const isPCStep = st.key === "PC" && !isLoanCase;
+                              const pcEnabled = pcToggles[caseId] !== false; // default ON
+                              const pcSkipped = isPCStep && !pcEnabled;
+
+                              // Treat the PC step as not-reached when it's toggled off
+                              const isReached = idx < escalation.reachedCount && !pcSkipped;
                               const stepInfo = escalation.stepInfos[idx];
 
                               return (
                                 <div key={st.key} className="flex flex-col items-center">
+                                  {/* Icon row */}
                                   <div className="h-4 flex items-center justify-center mb-0.5">
                                     {isReached && (
                                       <FileText className="w-3.5 h-3.5 text-[#DC2626] fill-[#DC2626]/20" />
                                     )}
+                                    {pcSkipped && (
+                                      <X className="w-3 h-3 text-slate-300" />
+                                    )}
                                   </div>
 
-                                  <div
-                                    className={`w-full h-1 rounded-full transition-all ${
-                                      isReached ? "bg-[#DC2626]" : "bg-slate-200"
-                                    }`}
-                                  />
+                                  {/* Progress bar */}
+                                  <div className={`w-full h-1 rounded-full transition-all ${
+                                    pcSkipped ? "bg-slate-100" : isReached ? "bg-[#DC2626]" : "bg-slate-200"
+                                  }`} />
 
-                                  <span className="text-[10px] font-bold text-slate-800 mt-1 block">
+                                  {/* Step label */}
+                                  <span className={`text-[10px] font-bold mt-1 block transition-colors ${
+                                    pcSkipped ? "text-slate-300" : "text-slate-800"
+                                  }`}>
                                     {st.label}
                                   </span>
 
-                                  {/* Date/time from DB timeline */}
-                                  <span
-                                    className={`text-[9px] font-semibold block whitespace-nowrap leading-tight ${
-                                      isReached
-                                        ? "text-[#DC2626]"
-                                        : stepInfo?.sublabel === "Scheduled"
-                                        ? "text-amber-600"
-                                        : "text-slate-400"
-                                    }`}
-                                    title={stepInfo?.sublabel || ""}
-                                  >
-                                    {stepInfo?.label || "—"}
-                                  </span>
-                                  <span className="text-[8px] font-medium text-slate-300 block leading-tight">
-                                    {stepInfo?.sublabel || ""}
-                                  </span>
+                                  {/* Date/time — replaced with "PC Off" badge when skipped */}
+                                  {pcSkipped ? (
+                                    <span className="text-[9px] font-bold text-slate-300 block leading-tight whitespace-nowrap mt-0.5">
+                                      PC Off
+                                    </span>
+                                  ) : (
+                                    <>
+                                      <span
+                                        className={`text-[9px] font-semibold block whitespace-nowrap leading-tight ${
+                                          isReached ? "text-[#DC2626]"
+                                            : stepInfo?.sublabel === "Scheduled" ? "text-amber-600"
+                                            : "text-slate-400"
+                                        }`}
+                                        title={stepInfo?.sublabel || ""}
+                                      >
+                                        {stepInfo?.label || "—"}
+                                      </span>
+                                      <span className="text-[8px] font-medium text-slate-300 block leading-tight">
+                                        {stepInfo?.sublabel || ""}
+                                      </span>
+                                    </>
+                                  )}
 
+                                  {/* Dispatch channel icons */}
                                   <div className="h-3 flex items-center justify-center gap-0.5 mt-0.5">
-                                    {isReached && (
+                                    {isReached && !pcSkipped && (
                                       <>
                                         <Mail className="w-2.5 h-2.5 text-slate-400" />
                                         <MessageSquare className="w-2.5 h-2.5 text-slate-400" />
@@ -1178,6 +1240,26 @@ export default function ScopedRepresentationCasesPage() {
                                       </>
                                     )}
                                   </div>
+
+                                  {/* PC toggle switch — only for PC step of loan-recovery, when not yet dispatched */}
+                                  {isPCStep && !isReached && (
+                                    <button
+                                      onClick={(e) => {
+                                        e.stopPropagation();
+                                        handleTogglePCComplaint(c, !pcEnabled);
+                                      }}
+                                      title={pcEnabled ? "Disable Police Complaint dispatch" : "Enable Police Complaint dispatch"}
+                                      className="mt-1 cursor-pointer focus:outline-none"
+                                    >
+                                      <div className={`relative w-7 h-3.5 rounded-full transition-colors duration-200 ${
+                                        pcEnabled ? "bg-emerald-500" : "bg-slate-200"
+                                      }`}>
+                                        <div className={`absolute top-0.5 w-2.5 h-2.5 rounded-full bg-white shadow-sm transition-all duration-200 ${
+                                          pcEnabled ? "left-[14px]" : "left-0.5"
+                                        }`} />
+                                      </div>
+                                    </button>
+                                  )}
                                 </div>
                               );
                             })}

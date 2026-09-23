@@ -342,6 +342,8 @@ export async function POST(req: NextRequest) {
     const caseId = `LR-${nextNum}-${day}${month}${yearSuffix}`;
 
     // Build category-specific timeline labels and descriptions
+    // loan-recovery:    N1(Day 0) → PC(Day 3) → N3(Day 7) → N4(Day 14)
+    // general-recovery: N1(Day 0) → N2(Day 7) → N3(Day 14) → N4(Day 21)
     const timelineSteps = isLoanRecovery
       ? [
         {
@@ -356,6 +358,7 @@ export async function POST(req: NextRequest) {
           label: "Police Complaint",
           description: `Complaint dispatched to SHO of ${policeStationName} — 3 days after first notice`,
           date: formatDate(step2Date),
+          scheduledAt: step2Date.toISOString(),
           status: "locked"
         },
         {
@@ -363,6 +366,7 @@ export async function POST(req: NextRequest) {
           label: "Second Notice",
           description: "Second demand notice dispatched 7 days after first notice",
           date: formatDate(step3Date),
+          scheduledAt: step3Date.toISOString(),
           status: "locked"
         },
         {
@@ -370,6 +374,7 @@ export async function POST(req: NextRequest) {
           label: "Third Notice",
           description: "Final demand notice dispatched 7 days after second notice",
           date: formatDate(step4Date),
+          scheduledAt: step4Date.toISOString(),
           status: "locked"
         }
       ]
@@ -384,22 +389,25 @@ export async function POST(req: NextRequest) {
         {
           step: 2,
           label: "Second Notice",
-          description: "Dispatched exactly 1 week after",
+          description: "Dispatched exactly 1 week after first notice",
           date: formatDate(step2Date),
+          scheduledAt: step2Date.toISOString(),
           status: "locked"
         },
         {
           step: 3,
           label: "Third Notice",
-          description: "Final demand notice prior to filing",
+          description: "Dispatched 1 week after second notice",
           date: formatDate(step3Date),
+          scheduledAt: step3Date.toISOString(),
           status: "locked"
         },
         {
           step: 4,
           label: "SHO Criminal Complaint",
-          description: `Drafted complaint copy shared for ${policeStationName}`,
+          description: `Police complaint draft shared with client — dispatched to ${policeStationName}`,
           date: formatDate(step4Date),
+          scheduledAt: step4Date.toISOString(),
           status: "locked"
         }
       ];
@@ -481,10 +489,12 @@ export async function PATCH(req: NextRequest) {
       status, 
       recoveredAmount,
       remarks,
+      remarksHistory,
       feeType,
       claimedAmount,
       receivedAmount,
-      caseManager
+      caseManager,
+      skipPoliceComplaint
     } = body;
 
     const targetId = id || altCaseId;
@@ -554,6 +564,14 @@ export async function PATCH(req: NextRequest) {
       updateDoc.feeType = feeType;
     }
 
+    if (skipPoliceComplaint !== undefined) {
+      updateDoc.skipPoliceComplaint = Boolean(skipPoliceComplaint);
+    }
+
+    if (remarksHistory !== undefined && Array.isArray(remarksHistory)) {
+      updateDoc.remarksHistory = remarksHistory;
+    }
+
     if (claimedAmount !== undefined) {
       const parsedClaim = parseFloat(claimedAmount);
       if (!isNaN(parsedClaim)) {
@@ -609,7 +627,14 @@ export async function PATCH(req: NextRequest) {
                 scheduledAt: newScheduledAt.toISOString(),
                 date: formatDate(newScheduledAt)
               };
-              const intervalDays = (isLoanRecovery && t.step === 2) ? 3 : (isLoanRecovery && t.step === 3) ? 4 : 7;
+              // loan-recovery resume intervals:
+              //   step 2 (PC)  scheduled 3 days after resume of step 1 (N1)
+              //   step 3 (N3)  scheduled 4 days after PC (step 2)
+              //   step 4 (N4)  scheduled 7 days after N3 (step 3)
+              // general-recovery: always 7 days between steps
+              const intervalDays = (isLoanRecovery && t.step === 1) ? 3
+                : (isLoanRecovery && t.step === 2) ? 4
+                : 7;
               nextDate.setDate(nextDate.getDate() + intervalDays);
               return tCopy;
             }
