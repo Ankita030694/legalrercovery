@@ -82,6 +82,8 @@ export default function ScopedRepresentationCasesPage() {
   // Action states
   const [isForceDispatching, setIsForceDispatching] = useState<Record<string, boolean>>({});
   const [isTogglingPauseId, setIsTogglingPauseId] = useState<string | null>(null);
+  const [isBatchDispatching, setIsBatchDispatching] = useState(false);
+  const [batchDispatchStatus, setBatchDispatchStatus] = useState<string | null>(null);
 
   // Police Complaint toggle per case (true = PC is enabled/will be sent, false = PC skipped)
   const [pcToggles, setPcToggles] = useState<Record<string, boolean>>({});
@@ -332,7 +334,7 @@ export default function ScopedRepresentationCasesPage() {
     }
   };
 
-  // 1. Force Send Notice
+  // 1. Force Send Notice (Single case)
   const handleForceSendNotice = async (caseItem: any) => {
     const caseId = caseItem._id || caseItem.id || caseItem.caseId;
     setIsForceDispatching(prev => ({ ...prev, [caseId]: true }));
@@ -355,6 +357,57 @@ export default function ScopedRepresentationCasesPage() {
     } finally {
       setIsForceDispatching(prev => ({ ...prev, [caseId]: false }));
       setActiveActionDropdownId(null);
+    }
+  };
+
+  // 1b. Batch Dispatch All 1st Notices
+  const handleDispatchBatchNotices = async (casesToDispatch: any[], batchName: string) => {
+    if (!casesToDispatch || casesToDispatch.length === 0) {
+      alert("No undispatched 1st notices found in this batch.");
+      return;
+    }
+
+    const count = casesToDispatch.length;
+    const ok = window.confirm(
+      `Are you sure you want to dispatch 1st legal notices for all ${count} cases in ${batchName} at once?\n\nThis will generate legal notice PDFs and dispatch them via Email and WhatsApp immediately.`
+    );
+    if (!ok) return;
+
+    setIsBatchDispatching(true);
+    setBatchDispatchStatus(`Starting batch dispatch for ${count} cases...`);
+
+    const ids = casesToDispatch.map(c => c._id || c.id || c.caseId).filter(Boolean);
+
+    try {
+      const chunkSize = 5;
+      let processedTotal = 0;
+
+      for (let i = 0; i < ids.length; i += chunkSize) {
+        const chunk = ids.slice(i, i + chunkSize);
+        setBatchDispatchStatus(`Dispatching ${i + 1} to ${Math.min(i + chunkSize, ids.length)} of ${count}...`);
+
+        const res = await fetch("/api/cron/dispatch-queue", {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify({ forceCaseIds: chunk })
+        });
+
+        if (res.ok) {
+          const data = await res.json();
+          processedTotal += (data.processed || chunk.length);
+        } else {
+          console.error("Batch dispatch chunk error:", await res.text());
+        }
+      }
+
+      alert(`Batch dispatch complete! Successfully triggered 1st notice dispatch for ${processedTotal} cases.`);
+      await fetchData();
+    } catch (err: any) {
+      alert(`Network error during batch dispatch: ${err.message || err}`);
+      await fetchData();
+    } finally {
+      setIsBatchDispatching(false);
+      setBatchDispatchStatus(null);
     }
   };
 
@@ -710,22 +763,42 @@ export default function ScopedRepresentationCasesPage() {
     { key: "PC", label: "PC" }  // Day 21 – Police Complaint
   ];
 
-  // Format a date+time for the timeline (e.g. "3 Oct, 2:30 pm")
-  const formatStepDateTime = (isoOrStr?: string | null): string => {
+  // Format a date+time for the timeline concisely (e.g. "1/10/2026 5:42p")
+  const formatStepDateTime = (isoOrStr?: string | Date | null): string => {
     if (!isoOrStr) return "—";
-    // Try parsing as ISO first, then fall back to the stored formatted string
-    const d = new Date(isoOrStr);
-    if (!isNaN(d.getTime())) {
-      return d.toLocaleString("en-IN", {
-        day: "numeric",
-        month: "short",
-        hour: "2-digit",
-        minute: "2-digit",
-        hour12: true
-      }).replace(",", "");
+    try {
+      const d = isoOrStr instanceof Date ? isoOrStr : new Date(isoOrStr);
+      if (isNaN(d.getTime())) {
+        return typeof isoOrStr === "string" ? isoOrStr : "—";
+      }
+
+      const day = d.getDate();
+      const month = d.getMonth() + 1;
+      const year = d.getFullYear();
+      const datePart = `${day}/${month}/${year}`;
+
+      const rawHours = d.getHours();
+      const rawMinutes = d.getMinutes();
+
+      // If it's a date-only string without explicit time
+      if (
+        typeof isoOrStr === "string" &&
+        !isoOrStr.includes("T") &&
+        !isoOrStr.includes(":") &&
+        rawHours === 0 &&
+        rawMinutes === 0
+      ) {
+        return datePart;
+      }
+
+      const hours = rawHours % 12 || 12;
+      const minutes = String(rawMinutes).padStart(2, "0");
+      const ampm = rawHours >= 12 ? "p" : "a";
+
+      return `${datePart} ${hours}:${minutes}${ampm}`;
+    } catch {
+      return typeof isoOrStr === "string" ? isoOrStr : "—";
     }
-    // Stored as pre-formatted date string (e.g. "3 Oct 2026") — return as-is short form
-    return isoOrStr.split(" ").slice(0, 2).join(" ");
   };
 
   // Helper to compute progress for a case
@@ -818,7 +891,7 @@ export default function ScopedRepresentationCasesPage() {
       const offsetDate = new Date(baseDate);
       offsetDate.setDate(offsetDate.getDate() + fallbackOffsets[idx]);
       return {
-        label: offsetDate.toLocaleDateString("en-IN", { day: "numeric", month: "short" }),
+        label: formatStepDateTime(offsetDate),
         sublabel: idx === 0 ? "Est." : `+${fallbackOffsets[idx]}d`,
         isDispatched: false
       };
@@ -832,6 +905,28 @@ export default function ScopedRepresentationCasesPage() {
       stages: STAGES
     };
   };
+
+  // Helper to filter undispatched 1st notices for any set of cases
+  const getUndispatchedFirstNotices = (caseList: any[]) => {
+    return caseList.filter(c => {
+      const rawStatus = (c.status || "active").toLowerCase();
+      const isStopped = ["recovered", "paid", "completed", "stopped", "cancelled", "paused", "on_hold"].includes(rawStatus);
+      if (isStopped) return false;
+      const escalation = getEscalationInfo(c);
+      return escalation.reachedCount === 0;
+    });
+  };
+
+  // Currently filtered batch details & undispatched count
+  const currentFilteredBatch = useMemo(() => {
+    if (batchFilter === "all") return null;
+    return allBatches.find(b => b.batchKey === batchFilter) || null;
+  }, [allBatches, batchFilter]);
+
+  const currentBatchUndispatchedCases = useMemo(() => {
+    if (!currentFilteredBatch) return [];
+    return getUndispatchedFirstNotices(currentFilteredBatch.cases);
+  }, [currentFilteredBatch, cases]);
 
   return (
     <div className="space-y-6 select-none text-left bg-[#F8F9FB] min-h-screen w-full p-4 sm:p-6 lg:p-8 rounded-3xl">
@@ -925,6 +1020,29 @@ export default function ScopedRepresentationCasesPage() {
             </button>
           )}
 
+          {/* DISPATCH ALL 1ST NOTICES IN FILTERED BATCH BUTTON */}
+          {batchFilter !== "all" && currentBatchUndispatchedCases.length > 0 && (
+            <button
+              type="button"
+              onClick={() => handleDispatchBatchNotices(currentBatchUndispatchedCases, currentFilteredBatch?.batchDate || "Selected Batch")}
+              disabled={isBatchDispatching}
+              className="flex items-center gap-2 px-3.5 py-1.5 bg-[#DC2626] hover:bg-[#B91C1C] disabled:bg-red-400 text-white rounded-full text-xs font-black uppercase tracking-wider transition-all shadow-[0_4px_16px_rgba(220,38,38,0.25)] cursor-pointer active:scale-95"
+              title={`Dispatch all ${currentBatchUndispatchedCases.length} undispatched 1st notices at once`}
+            >
+              {isBatchDispatching ? (
+                <>
+                  <Loader2 className="w-3.5 h-3.5 animate-spin" />
+                  <span>{batchDispatchStatus || "Dispatching..."}</span>
+                </>
+              ) : (
+                <>
+                  <Send className="w-3.5 h-3.5" />
+                  <span>Dispatch All 1st Notices ({currentBatchUndispatchedCases.length})</span>
+                </>
+              )}
+            </button>
+          )}
+
           {/* QUICK COLLAPSE / EXPAND TOGGLE */}
           {groupedBatches.length > 1 && (
             <div className="hidden lg:flex items-center gap-1">
@@ -959,6 +1077,48 @@ export default function ScopedRepresentationCasesPage() {
         </div>
       </div>
 
+      {/* ── FRESH BATCH ACTION BANNER (WHEN FILTERED TO BATCH WITH UNDISPATCHED NOTICES) ── */}
+      {batchFilter !== "all" && currentBatchUndispatchedCases.length > 0 && (
+        <div className="bg-gradient-to-r from-red-50 via-white to-amber-50/30 border-2 border-red-200/90 rounded-2xl p-4 flex flex-wrap items-center justify-between gap-4 shadow-xs">
+          <div className="flex items-center gap-3">
+            <div className="w-10 h-10 rounded-2xl bg-red-100 text-[#DC2626] flex items-center justify-center shrink-0 shadow-2xs">
+              <Send className="w-5 h-5" />
+            </div>
+            <div>
+              <div className="flex items-center gap-2">
+                <span className="px-2 py-0.5 rounded-full text-[10px] font-extrabold uppercase tracking-wider bg-[#DC2626] text-white">
+                  Fresh Batch
+                </span>
+                <h4 className="text-sm font-black text-slate-900 tracking-tight">
+                  {currentFilteredBatch?.batchDate || "Batch"} — {currentBatchUndispatchedCases.length} Undispatched 1st Notice{currentBatchUndispatchedCases.length === 1 ? "" : "s"}
+                </h4>
+              </div>
+              <p className="text-xs text-slate-600 mt-0.5 font-medium">
+                None of the 1st legal notices in this batch have been sent yet. Click below to dispatch all {currentBatchUndispatchedCases.length} demand notices at once.
+              </p>
+            </div>
+          </div>
+          <button
+            type="button"
+            onClick={() => handleDispatchBatchNotices(currentBatchUndispatchedCases, currentFilteredBatch?.batchDate || "Selected Batch")}
+            disabled={isBatchDispatching}
+            className="flex items-center gap-2 px-5 py-2.5 bg-[#DC2626] hover:bg-[#B91C1C] disabled:bg-red-400 text-white text-xs font-black uppercase tracking-wider rounded-xl shadow-[0_4px_16px_rgba(220,38,38,0.25)] transition-all cursor-pointer active:scale-95 shrink-0"
+          >
+            {isBatchDispatching ? (
+              <>
+                <Loader2 className="w-4 h-4 animate-spin" />
+                <span>{batchDispatchStatus || "Dispatching Notices..."}</span>
+              </>
+            ) : (
+              <>
+                <Send className="w-4 h-4" />
+                <span>Dispatch All 1st Notices ({currentBatchUndispatchedCases.length})</span>
+              </>
+            )}
+          </button>
+        </div>
+      )}
+
       {/* ── ENTERPRISE RECOVERY LEDGER TABLE ── */}
       <div className="bg-white rounded-2xl border border-slate-200/90 shadow-xs overflow-hidden">
         {isLoading ? (
@@ -981,11 +1141,11 @@ export default function ScopedRepresentationCasesPage() {
               <thead>
                 <tr className="bg-[#F8F9FA] border-b border-[#E5E7EB] text-[10px] font-extrabold text-[#6B7280] uppercase tracking-wider select-none">
                   <th className="py-3.5 px-4 w-[7%] whitespace-nowrap">DATE</th>
-                  <th className="py-3.5 px-4 w-[25%]">CLIENT DETAILS</th>
-                  <th className="py-3.5 px-4 w-[14%]">CLAIMED AMOUNT</th>
-                  <th className="py-3.5 px-4 w-[24%]">ESCALATION LIFECYCLE</th>
+                  <th className="py-3.5 px-4 w-[23%]">CLIENT DETAILS</th>
+                  <th className="py-3.5 px-4 w-[13%]">CLAIMED AMOUNT</th>
+                  <th className="py-3.5 px-4 min-w-[320px] w-[28%]">ESCALATION LIFECYCLE</th>
                   <th className="py-3.5 px-4 w-[9%] text-center whitespace-nowrap">NOTICE STATUS</th>
-                  <th className="py-3.5 px-4 w-[11%]">REMARKS</th>
+                  <th className="py-3.5 px-4 w-[10%]">REMARKS</th>
                   <th className="py-3.5 px-4 w-[10%] text-center whitespace-nowrap">ACTIONS</th>
                 </tr>
               </thead>
@@ -1036,8 +1196,8 @@ export default function ScopedRepresentationCasesPage() {
                               </span>
                             </div>
 
-                            {/* Right: Batch Financials & Quick Batch Filter */}
-                            <div className="flex items-center gap-4 text-xs font-medium">
+                            {/* Right: Batch Financials, Batch Dispatch Button & Quick Batch Filter */}
+                            <div className="flex flex-wrap items-center gap-3 text-xs font-medium">
                               <span className="text-slate-600">
                                 Batch Claimed: <strong className="font-mono text-slate-900 font-black">₹{batch.totalClaimed.toLocaleString("en-IN")}</strong>
                               </span>
@@ -1046,6 +1206,34 @@ export default function ScopedRepresentationCasesPage() {
                                   Recovered: <strong className="font-mono font-black">₹{batch.totalRecovered.toLocaleString("en-IN")}</strong>
                                 </span>
                               )}
+
+                              {/* Batch-level Dispatch All 1st Notices button */}
+                              {(() => {
+                                const undispatched = getUndispatchedFirstNotices(batch.cases);
+                                if (undispatched.length === 0) return null;
+                                return (
+                                  <button
+                                    type="button"
+                                    onClick={() => handleDispatchBatchNotices(undispatched, `Batch #${batch.batchNumber} (${batch.batchDate})`)}
+                                    disabled={isBatchDispatching}
+                                    className="flex items-center gap-1.5 px-3 py-1 bg-[#DC2626] hover:bg-[#B91C1C] disabled:bg-red-400 text-white rounded-md text-[11px] font-black uppercase tracking-wider transition-all shadow-xs cursor-pointer active:scale-95"
+                                    title={`Dispatch 1st notice for all ${undispatched.length} undispatched cases in Batch #${batch.batchNumber}`}
+                                  >
+                                    {isBatchDispatching ? (
+                                      <>
+                                        <Loader2 className="w-3 h-3 animate-spin" />
+                                        <span>Dispatching...</span>
+                                      </>
+                                    ) : (
+                                      <>
+                                        <Send className="w-3 h-3" />
+                                        <span>Dispatch All 1st Notices ({undispatched.length})</span>
+                                      </>
+                                    )}
+                                  </button>
+                                );
+                              })()}
+
                               <button
                                 type="button"
                                 onClick={() => setBatchFilter(batchFilter === batch.batchKey ? "all" : batch.batchKey)}
@@ -1150,47 +1338,19 @@ export default function ScopedRepresentationCasesPage() {
 
                       {/* 4. ESCALATION LIFECYCLE (4 STAGES) */}
                       <td className="py-4 px-4 align-top">
-                        <div className="w-full min-w-[210px]">
+                        <div className="w-full min-w-[320px]">
                           <div className="flex items-center justify-between mb-1 h-5">
                             <span className={`text-[10px] font-black tracking-wider uppercase ${escalation.statusBadgeColor || "text-emerald-600"}`}>
                               {escalation.statusBadgeText}
                             </span>
-
-                            {/* Start Dispatch Button on Row Hover for Fresh Notices */}
-                            {isFreshNotice && (
-                              <button
-                                onClick={(e) => {
-                                  e.stopPropagation();
-                                  handleForceSendNotice(c);
-                                }}
-                                disabled={isForceDispatching[caseId]}
-                                className={`inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-full text-[9px] font-black uppercase tracking-wider transition-all duration-200 cursor-pointer shadow-xs active:scale-95 ${
-                                  isForceDispatching[caseId]
-                                    ? "opacity-100 bg-[#DC2626] text-white"
-                                    : "opacity-0 group-hover:opacity-100 bg-[#DC2626] hover:bg-[#B91C1C] hover:shadow-md text-white ring-2 ring-red-400/25"
-                                }`}
-                                title="Click to start dispatching notice 1 immediately"
-                              >
-                                {isForceDispatching[caseId] ? (
-                                  <>
-                                    <Loader2 className="w-2.5 h-2.5 animate-spin" />
-                                    <span>Dispatching...</span>
-                                  </>
-                                ) : (
-                                  <>
-                                    <Send className="w-2.5 h-2.5" />
-                                    <span>Start Dispatch</span>
-                                  </>
-                                )}
-                              </button>
-                            )}
 
                             <span className="text-xs font-bold text-slate-800">
                               {escalation.reachedCount} / 4
                             </span>
                           </div>
 
-                          <div className="grid grid-cols-4 gap-2 items-end text-center w-full">
+                          {/* Parallel 4-Step Lifecycle Grid */}
+                          <div className="grid grid-cols-4 gap-2 items-start text-center w-full">
                             {escalation.stages.map((st: {key: string; label: string}, idx: number) => {
                               // Toggle is ONLY for general-recovery step 4 (Police Complaint)
                               const isPCStep = st.key === "PC" && !isLoanCase;
@@ -1201,8 +1361,8 @@ export default function ScopedRepresentationCasesPage() {
                               const stepInfo = escalation.stepInfos[idx];
 
                               return (
-                                <div key={st.key} className="flex flex-col items-center">
-                                  {/* Icon row */}
+                                <div key={st.key} className="flex flex-col items-center min-w-0 w-full">
+                                  {/* 1. Icon row - fixed height for parallel alignment */}
                                   <div className="h-4 flex items-center justify-center mb-0.5">
                                     {isReached && (
                                       <FileText className="w-3.5 h-3.5 text-[#DC2626] fill-[#DC2626]/20" />
@@ -1212,49 +1372,51 @@ export default function ScopedRepresentationCasesPage() {
                                     )}
                                   </div>
 
-                                  {/* Progress bar */}
+                                  {/* 2. Progress bar - perfectly horizontal across all 4 steps */}
                                   <div className={`w-full h-1 rounded-full transition-all ${
                                     pcSkipped ? "bg-slate-100" : isReached ? "bg-[#DC2626]" : "bg-slate-200"
                                   }`} />
 
-                                  {/* Step label */}
-                                  <span className={`text-[10px] font-bold mt-1 block transition-colors ${
+                                  {/* 3. Step label */}
+                                  <span className={`text-[10px] font-bold mt-1 block h-3.5 leading-none transition-colors ${
                                     pcSkipped ? "text-slate-300" : "text-slate-800"
                                   }`}>
                                     {st.label}
                                   </span>
 
-                                  {/* Date/time — replaced with "PC Off" badge when skipped */}
-                                  {pcSkipped ? (
-                                    <span className="text-[9px] font-bold text-slate-300 block leading-tight whitespace-nowrap mt-0.5">
-                                      PC Off
-                                    </span>
-                                  ) : (
-                                    <>
+                                  {/* 4. Date & Time — strictly parallel on one line */}
+                                  <div className="mt-1 flex flex-col items-center w-full">
+                                    {pcSkipped ? (
+                                      <span className="text-[8.5px] font-bold text-slate-300 block leading-tight whitespace-nowrap h-4 flex items-center justify-center">
+                                        PC Off
+                                      </span>
+                                    ) : (
                                       <span
-                                        className={`text-[9px] font-semibold block whitespace-nowrap leading-tight ${
+                                        className={`text-[8.5px] font-semibold block leading-tight text-center whitespace-nowrap h-4 flex items-center justify-center ${
                                           isReached ? "text-[#DC2626]"
                                             : stepInfo?.sublabel === "Scheduled" ? "text-amber-600"
-                                            : "text-slate-400"
+                                            : "text-slate-500"
                                         }`}
-                                        title={stepInfo?.sublabel || ""}
+                                        title={`${stepInfo?.label || "—"} (${stepInfo?.sublabel || ""})`}
                                       >
                                         {stepInfo?.label || "—"}
                                       </span>
-                                      <span className="text-[8px] font-medium text-slate-300 block leading-tight">
-                                        {stepInfo?.sublabel || ""}
-                                      </span>
-                                    </>
-                                  )}
+                                    )}
+                                    <span className="text-[8px] font-medium text-slate-400 block leading-tight whitespace-nowrap h-3 mt-0.5 flex items-center justify-center">
+                                      {pcSkipped ? "—" : (stepInfo?.sublabel || "—")}
+                                    </span>
+                                  </div>
 
-                                  {/* Dispatch channel icons */}
-                                  <div className="h-3 flex items-center justify-center gap-0.5 mt-0.5">
-                                    {isReached && !pcSkipped && (
+                                  {/* 5. Dispatch channel icons - fixed height placeholder so all steps stay aligned */}
+                                  <div className="h-3.5 flex items-center justify-center gap-0.5 mt-1">
+                                    {isReached && !pcSkipped ? (
                                       <>
                                         <Mail className="w-2.5 h-2.5 text-slate-400" />
                                         <MessageSquare className="w-2.5 h-2.5 text-slate-400" />
                                         <Smartphone className="w-2.5 h-2.5 text-slate-700 fill-slate-700" />
                                       </>
+                                    ) : (
+                                      <span className="w-2.5 h-2.5 block" />
                                     )}
                                   </div>
                                 </div>
@@ -1362,32 +1524,9 @@ export default function ScopedRepresentationCasesPage() {
                         </div>
                       </td>
 
-                      {/* 7. ACTIONS (FORCE SEND NOTICE, RECORD PAYMENT, STOP NOTICES, PAUSE NOTICES, DOSSIER, DELETE) */}
+                      {/* 7. ACTIONS (FORCE SEND NOTICE IN MENU, RECORD PAYMENT, STOP NOTICES, PAUSE NOTICES, DOSSIER, DELETE) */}
                       <td className="py-4 px-4 align-top text-center">
                         <div className="flex items-center justify-center gap-1.5">
-                          {isFreshNotice && (
-                            <button
-                              onClick={(e) => {
-                                e.stopPropagation();
-                                handleForceSendNotice(c);
-                              }}
-                              disabled={isForceDispatching[caseId]}
-                              className={`px-2 py-1 rounded-lg text-[10px] font-black uppercase tracking-wider transition-all duration-200 cursor-pointer shadow-2xs active:scale-95 flex items-center gap-1 shrink-0 ${
-                                isForceDispatching[caseId]
-                                  ? "opacity-100 bg-[#DC2626] text-white"
-                                  : "opacity-0 group-hover:opacity-100 bg-[#DC2626] hover:bg-[#B91C1C] text-white"
-                              }`}
-                              title="Start Notice Dispatch"
-                            >
-                              {isForceDispatching[caseId] ? (
-                                <Loader2 className="w-2.5 h-2.5 animate-spin" />
-                              ) : (
-                                <Send className="w-2.5 h-2.5" />
-                              )}
-                              <span>Send N1</span>
-                            </button>
-                          )}
-
                           <div className="relative inline-block text-left dropdown-container">
                             <button
                               onClick={(e) => {

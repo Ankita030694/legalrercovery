@@ -347,11 +347,15 @@ async function handleDispatch(req: NextRequest) {
   let forceCaseId: string | null = null;
   let representeeIdFilter: string | null = req.nextUrl.searchParams.get("representeeId");
 
+  let forceCaseIds: string[] = [];
   if (req.method === "POST") {
     try {
       const bodyJson = await req.json();
       if (bodyJson?.forceCaseId) {
         forceCaseId = bodyJson.forceCaseId;
+      }
+      if (Array.isArray(bodyJson?.forceCaseIds) && bodyJson.forceCaseIds.length > 0) {
+        forceCaseIds = bodyJson.forceCaseIds;
       }
       if (bodyJson?.representeeId) {
         representeeIdFilter = bodyJson.representeeId;
@@ -412,8 +416,19 @@ async function handleDispatch(req: NextRequest) {
         query.$or = [{ representeeId: rId }, { representeeId: representeeIdFilter }];
       }
     }
+    const hasForceCases = Boolean(forceCaseId) || forceCaseIds.length > 0;
     if (forceCaseId) {
       query._id = new ObjectId(forceCaseId);
+      query.timeline = {
+        $elemMatch: {
+          status: { $in: ["pending", "scheduled", "partially_delivered", "failed"] }
+        }
+      };
+    } else if (forceCaseIds.length > 0) {
+      const objIds = forceCaseIds.map((id: string) => {
+        try { return new ObjectId(id); } catch (e) { return id; }
+      });
+      query._id = { $in: objIds };
       query.timeline = {
         $elemMatch: {
           status: { $in: ["pending", "scheduled", "partially_delivered", "failed"] }
@@ -437,7 +452,7 @@ async function handleDispatch(req: NextRequest) {
       };
     }
 
-    const limit = userIdFilter ? 100 : BATCH_SIZE;
+    const limit = forceCaseIds.length > 0 ? Math.max(100, forceCaseIds.length) : (userIdFilter ? 100 : BATCH_SIZE);
     const casesToProcess = await db.collection("cases").find(query).limit(limit).toArray();
 
     console.log(`[Queue Processor] Found ${casesToProcess.length} cases due for dispatch.`);
@@ -454,13 +469,13 @@ async function handleDispatch(req: NextRequest) {
       const activeStep = caseDoc.timeline[stepIndex];
 
       // Verify the step is actually due and not locked
-      const isDue = Boolean(forceCaseId) ||
+      const isDue = hasForceCases ||
                     activeStep.status === "pending" ||
                     activeStep.status === "scheduled" || 
                     activeStep.status === "partially_delivered" || 
                     activeStep.status === "failed";
 
-      const isTimePassed = Boolean(forceCaseId) || userIdFilter ? true : (new Date(activeStep.scheduledAt) <= now);
+      const isTimePassed = hasForceCases || userIdFilter ? true : (new Date(activeStep.scheduledAt) <= now);
 
       if (!isDue || !isTimePassed) {
         continue;
