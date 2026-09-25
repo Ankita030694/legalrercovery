@@ -38,6 +38,19 @@ export async function POST(request: NextRequest) {
       return NextResponse.json({ error: 'Primary Keyword or Context is required' }, { status: 400 });
     }
 
+    // Out-of-scope keyword guard: Block topics unrelated to LegalRecovery's services.
+    // LegalRecovery is a legal-notice and money recovery platform — NOT a bank, NBFC, or debt settlement agency.
+    const OUT_OF_SCOPE_PATTERNS = [
+      /\b(bank\s+loan\s+settlement|loan\s+settlement|npa\s+settlement|one\s+time\s+settlement|ots\s+settlement|emi\s+waiver|emi\s+settlement|debt\s+restructuring|debt\s+settlement|loan\s+waiver|loan\s+write\s*off|npa\s+recovery|sarfaesi|credit\s+card\s+settlement|home\s+loan\s+settlement|personal\s+loan\s+settlement|bank\s+npa|chit\s+fund\s+recovery|nbfc\s+settlement|bank\s+settlement|mortgage\s+settlement|foreclosure\s+settlement|drt\s+recovery|wilful\s+defaulter)\b/i
+    ];
+    const combinedInput = `${primaryKeyword} ${secondaryKeyword || ''}`;
+    const isOutOfScope = OUT_OF_SCOPE_PATTERNS.some(pattern => pattern.test(combinedInput));
+    if (isOutOfScope) {
+      return NextResponse.json({
+        error: "This topic is outside LegalRecovery's service scope. LegalRecovery handles legal notices and recovery for: unpaid salary and employment dues, consumer refunds and complaints, security deposits and rental disputes, freelancer and client payment recovery, personal money recovery from friends or relatives, airline and travel refunds, vendor and invoice recovery, and property or builder disputes. Bank loan settlement, NPA, OTS, EMI waivers, SARFAESI, debt restructuring, and financial product disputes are NOT services offered by LegalRecovery."
+      }, { status: 400 });
+    }
+
     // Fetch existing blogs dynamically from MongoDB for cross-article interlinking
     let existingBlogLinks: { title: string; url: string }[] = [];
     try {
@@ -185,8 +198,23 @@ export async function POST(request: NextRequest) {
       messages: [
         {
           role: "system",
-          content: `You are a professional legal SEO, AEO (AI Engine Optimization), and search strategist.
-Generate an SEO-optimized H1 Title, engaging subtitle, meta title, meta description, URL slug, and an array of 10 to 15 Popular Search queries / long-tail keywords for a blog article on Legal Recovery.
+          content: `You are a professional legal SEO, AEO (AI Engine Optimization), and search strategist for LegalRecovery (https://www.legalrecovery.in/).
+
+**ABOUT LEGALRECOVERY (READ CAREFULLY BEFORE GENERATING):**
+LegalRecovery is India's premier legal-tech platform that helps individuals and businesses recover unpaid money through professionally drafted legal notices, multi-stage escalation, and litigation guidance. The platform covers ONLY these 8 service categories:
+1. Unpaid Salary and Employment Dues (full & final settlement from employers, notice period salary, wrongful termination)
+2. Consumer Refunds and Complaints (defective products, e-commerce disputes, gym/subscription refunds)
+3. Security Deposits and Rental Recoveries (landlord disputes, PG deposits, unreasonable deductions)
+4. Freelancer and Client Payment Recovery (unpaid invoices, client defaults, MSME Samadhan)
+5. Personal Money Recovery from Friends or Relatives (loans given to individuals without formal agreements)
+6. Airline and Travel Recoveries (flight refunds, DGCA complaints, hotel booking disputes)
+7. Vendor and Invoice Recovery (B2B outstanding payments, advance refunds, partner dues)
+8. Property and Builder Disputes (RERA complaints, delayed possession, builder refunds)
+
+**STRICTLY OUT OF SCOPE — NEVER MENTION OR REFERENCE:**
+Bank loan settlement, NPA settlement, OTS (One Time Settlement), EMI waivers, debt restructuring, SARFAESI Act bank recovery, mortgage settlement, credit card settlement, NBFC disputes, chit fund recovery, or any financial product or banking loan service. LegalRecovery is NOT a bank, NBFC, or debt collection agency.
+
+Generate an SEO-optimized H1 Title, engaging subtitle, meta title, meta description, URL slug, and an array of 12 to 15 Popular Search queries / long-tail keywords for a blog article strictly within LegalRecovery's service scope.
 
 Primary Keyword/Context: ${primaryKeyword}
 Secondary Keywords: ${secondaryKeyword || ''}
@@ -213,7 +241,10 @@ Return ONLY a JSON object with this exact structure:
     "search query 9",
     "search query 10",
     "search query 11",
-    "search query 12"
+    "search query 12",
+    "search query 13",
+    "search query 14",
+    "search query 15"
   ]
 }`
         }
@@ -237,17 +268,20 @@ Return ONLY a JSON object with this exact structure:
     }
 
     if (parsedPopularSearches.length === 0 && primaryKeyword) {
+      // Fallback popular searches — scoped strictly to LegalRecovery's legal notice and money recovery services
       parsedPopularSearches = [
-        `${primaryKeyword} recovery process`,
-        `how to recover ${primaryKeyword}`,
-        `legal notice format for ${primaryKeyword}`,
-        `${primaryKeyword} dispute complaint online`,
-        `${primaryKeyword} refund statutory rules`,
-        `${primaryKeyword} legal advice India`,
-        `send demand notice for ${primaryKeyword}`,
-        `${primaryKeyword} consumer court procedure`,
-        `advocate consultation for ${primaryKeyword}`,
-        `limitation period for ${primaryKeyword}`
+        `how to send legal notice for ${primaryKeyword} in India`,
+        `legal notice format for ${primaryKeyword} recovery`,
+        `how to recover ${primaryKeyword} without going to court`,
+        `${primaryKeyword} money recovery legal notice India`,
+        `${primaryKeyword} dispute legal steps India`,
+        `send demand notice online for ${primaryKeyword}`,
+        `${primaryKeyword} legal notice advocate India`,
+        `recover ${primaryKeyword} through legal notice`,
+        `${primaryKeyword} recovery legal options India`,
+        `limitation period for ${primaryKeyword} recovery case`,
+        `${primaryKeyword} legal notice registered post India`,
+        `legal action for ${primaryKeyword} non-payment India`
       ];
     }
 
@@ -256,15 +290,30 @@ Return ONLY a JSON object with this exact structure:
 
     // STEP 2: Generate Description (Complete body in HTML with tables and internal links)
     const step2SystemPrompt = `
-You are a professional legal content writer and SEO/AEO expert. Write a fully human-written, SEO-optimized, exhaustive legal article body for Legal Recovery (https://www.legalrecovery.in/).
+You are a professional legal content writer and SEO/AEO expert. Write a fully human-written, SEO-optimized, exhaustive legal article body for LegalRecovery (https://www.legalrecovery.in/).
 Target Primary Keyword/Context: ${primaryKeyword}
 Secondary Keywords: ${secondaryKeyword || ''}
 Title: ${step1Result.title}
 Subtitle: ${step1Result.subtitle}
 
+**ABOUT LEGALRECOVERY — READ CAREFULLY BEFORE WRITING:**
+LegalRecovery is India's premier legal-tech platform that helps individuals and businesses recover unpaid money through professionally drafted legal notices, multi-stage escalation, and litigation guidance. It operates a 5-step process: (1) Submit your case, (2) Legal experts review and analyze, (3) A professional legal notice is drafted and dispatched via registered post, (4) Escalation and follow-up through multiple channels, (5) Resolution and recovery. The platform is 100% online with no court visits required. Pricing starts from ₹1,499 with flat fees and no hidden charges.
+
+The platform covers ONLY these 8 service categories. Every article MUST contextualize the topic within one of these:
+1. Unpaid Salary and Employment Dues (withheld full & final settlement, notice period salary, wrongful termination, relieving letter disputes)
+2. Consumer Refunds and Complaints (defective products, e-commerce platform disputes, gym/subscription refunds, coaching fee refunds)
+3. Security Deposits and Rental Recoveries (landlord refusal, PG/hostel deposits, unreasonable deductions, housing society disputes)
+4. Freelancer and Client Payment Recovery (unpaid invoices, client defaults, MSME Samadhan portal, contract enforcement)
+5. Personal Money Recovery from Friends or Relatives (money lent informally, loans without written agreements, WhatsApp evidence)
+6. Airline and Travel Recoveries (flight refunds, DGCA complaints, hotel booking disputes, travel agent fraud)
+7. Vendor and Invoice Recovery (B2B outstanding payments, advance payment refunds, partner dues, e-commerce marketplace frozen payouts)
+8. Property and Builder Disputes (RERA complaints, delayed flat possession, builder booking cancellation refunds, interior designer disputes)
+
+**STRICTLY OUT OF SCOPE — NEVER WRITE ABOUT THESE TOPICS:**
+This article MUST NOT mention or discuss: bank loan settlement, NPA (Non-Performing Asset) settlement, OTS (One Time Settlement) with banks or NBFCs, EMI waivers, EMI restructuring, debt restructuring, SARFAESI Act bank recovery, mortgage settlement, credit card settlement, NBFC disputes, chit fund recovery, wilful defaulter proceedings, DRT (Debt Recovery Tribunal) for bank loans, or any banking financial product. LegalRecovery is NOT a bank, NBFC, or debt collection agency.
+
 **CRITICAL WORD COUNT REQUIREMENT**:
-The content MUST be extremely detailed and exceed 3500 words. To achieve this, expand every section, subtopic, and legal concept with 4-6 detailed, comprehensive paragraphs.
-Specify court procedures, draft step-by-step statutory guidance, list required evidentiary documentation, and outline practical dispute resolution strategies.
+The content MUST be extremely detailed and EXCEED 5000 words. To achieve this, expand every section, subtopic, and legal concept with 5-7 detailed, comprehensive paragraphs. Add sub-sections under each h2 using h3 and h4 tags. Specify precise court procedures, draft step-by-step statutory guidance with exact timelines, list required evidentiary documentation with admissibility rules, outline practical dispute resolution strategies, and include real-world practical examples.
 
 **CRITICAL DYNAMIC HEADING & STRUCTURE RULES (STRICT PROHIBITION ON BOILERPLATE 'UNDERSTANDING' HEADINGS)**:
 - **NO CLICHÉ BOILERPLATE OPENINGS**:
@@ -282,15 +331,17 @@ Specify court procedures, draft step-by-step statutory guidance, list required e
     * *E-Commerce & Retail*: <h2>Consumer Protection Act 2019: Statutory Liability of E-Commerce Platforms for Wrong or Defective Products</h2>
     * *Tenant & Landlord*: <h2>Tenant Protections and Legal Limitations on Unreasonable Landlord Security Deposit Deductions</h2>
     * *Freelancer & Vendor*: <h2>Contractual Enforcement and MSME Samadhan Legal Remedies for Unpaid Client Invoices</h2>
-    * *Friend & Relative Loan*: <h2>Evidentiary Essentials and Demand Notice Protocols for Recovering Personal Loans in India</h2>
+    * *Friend & Relative Loan*: <h2>Evidentiary Essentials and Demand Notice Protocols for Recovering Personal Loans from Individuals in India</h2>
     * *Builder & Real Estate*: <h2>RERA Statutory Protections and Legal Compensation for Delayed Property Possession</h2>
     * *Cheque Bounce*: <h2>Section 138 NI Act: Mandatory Statutory Demand Notice Protocol and Magistrate Filing Windows</h2>
     * *Cyber Fraud*: <h2>National Cybercrime Reporting Framework (Helpline 1930) and Bank Chargeback Reversals</h2>
+    * *Salary & Employment*: <h2>Statutory Rights of Employees Under the Payment of Wages Act and Industrial Disputes Act for Salary Recovery</h2>
+    * *Vendor & Invoice*: <h2>Legal Remedies Under the Indian Contract Act 1872 and MSMED Act 2006 for Outstanding Invoice Recovery</h2>
 - **USE RELEVANT STATUTES ONLY**:
-  - Cite ONLY the specific Indian Acts, Regulations, and Forums that directly govern "${primaryKeyword}" (e.g. Consumer Protection Act 2019, DGCA CAR, NI Act 1881, Transfer of Property Act, RERA 2016, MSMED Act 2006, Indian Contract Act 1872, Bharatiya Nyaya Sanhita / IPC, Bharatiya Sakshya Adhiniyam / Evidence Act). Do NOT cite unrelated employment acts for consumer or property topics.
+  - Cite ONLY the specific Indian Acts, Regulations, and Forums that directly govern "${primaryKeyword}" (e.g. Consumer Protection Act 2019, DGCA CAR, NI Act 1881, Transfer of Property Act, RERA 2016, MSMED Act 2006, Indian Contract Act 1872, Bharatiya Nyaya Sanhita / IPC, Bharatiya Sakshya Adhiniyam / Evidence Act, Payment of Wages Act 1936, Industrial Disputes Act 1947). Do NOT cite unrelated employment acts for consumer or property topics.
 
-**CRITICAL STRUCTURE & TABLE LIMIT REQUIREMENT (BETWEEN 1 TO 3 TABLES ONLY)**:
-- Structure content with HTML tags: <h2>, <h3>, <h4>, <p>, <ul>, <ol>, <li>, <table>, <thead>, <tbody>, <tr>, <th>, <td>. Include at least 8 main <h2> sections.
+**CRITICAL STRUCTURE REQUIREMENTS (AT LEAST 10 h2 SECTIONS + h3/h4 SUB-SECTIONS)**:
+- Structure content with HTML tags: <h2>, <h3>, <h4>, <p>, <ul>, <ol>, <li>, <table>, <thead>, <tbody>, <tr>, <th>, <td>. Include at least 10 main <h2> sections with multiple <h3> and <h4> sub-sections under each.
 - **DATA TABLES LIMIT IS STRICTLY BETWEEN 1 TO 3 TABLES**:
   - You MUST include at least 1 and AT MOST 3 rich, well-structured HTML data tables (<table>, <thead>, <tbody>, <tr>, <th>, <td>).
   - CRITICAL CONSTRAINT: Under NO circumstances should you generate more than 3 tables. Generate between 1 and 3 tables total across the entire article.
@@ -300,7 +351,7 @@ Specify court procedures, draft step-by-step statutory guidance, list required e
   3. *Evidence & Documentation Checklist Table*: Category of dispute, mandatory evidentiary documents, and admissibility.
 
 **CRITICAL INTERNAL INTERLINKING REQUIREMENT (MANDATORY)**:
-- You MUST naturally embed 5 to 10 contextual hyperlinks (<a href="...">natural anchor text</a>) into the HTML body paragraphs.
+- You MUST naturally embed 7 to 12 contextual hyperlinks (<a href="...">natural anchor text</a>) into the HTML body paragraphs.
 - Select the most relevant query-based legal guides, recovery services, and existing blog articles from this directory:
 ${interlinkingDirectory}
 - **Rule 1**: Use natural, keyword-rich anchor text matching user search queries and topics (e.g., '<a href="https://www.legalrecovery.in/how-to-recover-unpaid-salary-legally">steps to recover unpaid salary from an employer</a>', '<a href="https://www.legalrecovery.in/legal-notice-for-recovery-of-money">sending a legal notice for recovery of money</a>', '<a href="https://www.legalrecovery.in/cheque-bounce-notice-timeline-section-138">Section 138 cheque bounce notice timeline</a>', '<a href="https://www.legalrecovery.in/how-to-file-consumer-complaint-india">filing a consumer court complaint online</a>').
@@ -319,8 +370,8 @@ Under no circumstances should you include any em dashes (—) anywhere in your e
 `;
 
     const step2UserMessage = body.context && body.context !== primaryKeyword
-      ? `Write an exhaustive, extremely detailed 3500+ words HTML body with 1 to 3 data tables and internal links about: ${primaryKeyword}\nAdditional context & details: ${body.context}`
-      : `Write an exhaustive, extremely detailed 3500+ words HTML body with 1 to 3 data tables and internal links about: ${primaryKeyword}`;
+      ? `Write an exhaustive, extremely detailed 5000+ words HTML body with 1 to 3 data tables, at least 10 h2 sections, and internal links about: ${primaryKeyword}\nAdditional context & details: ${body.context}`
+      : `Write an exhaustive, extremely detailed 5000+ words HTML body with 1 to 3 data tables, at least 10 h2 sections, and internal links about: ${primaryKeyword}`;
 
     const step2Completion = await openai.chat.completions.create({
       model: "gpt-4o",
@@ -328,6 +379,7 @@ Under no circumstances should you include any em dashes (—) anywhere in your e
         { role: "system", content: step2SystemPrompt },
         { role: "user", content: step2UserMessage },
       ],
+      max_tokens: 9000,
       temperature: 0.8,
     });
 
@@ -344,19 +396,28 @@ Under no circumstances should you include any em dashes (—) anywhere in your e
       cleanedDescription = cleanedDescription.slice(0, -3).trim();
     }
 
-    // Safety check: Remove accidental boilerplate "Understanding [Topic] Full and Final Settlement (FNF)" for non-employment topics
-    const isEmploymentTopic = /salary|employment|fnf|settlement|resignation|gratuity|wages|employer|notice period/i.test(primaryKeyword);
+    // Safety check 1: Remove accidental FNF/Settlement boilerplate for non-employment topics
+    const isEmploymentTopic = /salary|employment|fnf|full.and.final|resignation|gratuity|wages|employer|notice.period/i.test(primaryKeyword);
     if (!isEmploymentTopic) {
       cleanedDescription = cleanedDescription.replace(/<h2>Understanding\s+([^<]+?)\s+Full\s+and\s+Final\s+Settlement\s*\(FNF\)<\/h2>/gi, (_match, topic) => {
         return `<h2>Legal Framework and Statutory Enforcement for ${topic.trim()} in India</h2>`;
       });
     }
 
-    // Safety check: Clean up generic <h2>Understanding [Keyword]</h2> opening headings to make them authoritative
+    // Safety check 2: Clean up generic <h2>Understanding [Keyword]</h2> opening headings
     cleanedDescription = cleanedDescription.replace(/^(\s*<p>[\s\S]*?<\/p>\s*)?<h2>Understanding\s+([^<]+)<\/h2>/i, (_match, prefix, headingText) => {
       const cleanPrefix = prefix || '';
       return `${cleanPrefix}<h2>Statutory Framework and Legal Remedies for ${headingText.trim()}</h2>`;
     });
+
+    // Safety check 3: Remove any off-brand bank/financial loan settlement references that GPT may have hallucinated
+    const offBrandPatterns: [RegExp, string][] = [
+      [/\b(bank\s+loan\s+settlement|loan\s+settlement|npa\s+settlement|one\s+time\s+settlement\s+with\s+(bank|lender|nbfc)|ots\s+settlement|emi\s+waiver|debt\s+restructuring|debt\s+settlement|loan\s+waiver|sarfaesi|credit\s+card\s+settlement|nbfc\s+settlement|wilful\s+defaulter|drt\s+proceedings)\b/gi, 'legal notice for money recovery'],
+      [/<h[2-4][^>]*>\s*[^<]*(loan\s+settlement|npa\s+settlement|ots\s+with|debt\s+restructuring)[^<]*<\/h[2-4]>/gi, '<h2>Legal Recovery and Notice Escalation Process in India</h2>'],
+    ];
+    for (const [pattern, replacement] of offBrandPatterns) {
+      cleanedDescription = cleanedDescription.replace(pattern, replacement);
+    }
 
     console.log(`[AI Generator Flow] Step 2 complete. Description length: ${cleanedDescription.split(/\s+/).length} words.`);
     console.log(`[AI Generator Flow] Step 3: Generating FAQs, reviews, and image prompt in the context of the description...`);
@@ -369,12 +430,26 @@ Under no circumstances should you include any em dashes (—) anywhere in your e
 
     try {
       const step3SystemPrompt = `
-You are a legal content strategist and SEO expert.
+You are a legal content strategist and SEO expert for LegalRecovery (https://www.legalrecovery.in/).
 Analyze the following generated article Title, Subtitle, and HTML Description, and generate:
-1. At least 8-10 highly relevant, detailed FAQs (frequently asked questions) that directly relate to the article content.
-2. 5 realistic customer review snippets (with Indian names) expressing high satisfaction with the recovery service.
+1. At least 12-15 highly relevant, detailed FAQs (frequently asked questions) that directly relate to the article content and LegalRecovery's services.
+2. 5 realistic customer review snippets (with Indian names) expressing high satisfaction with LegalRecovery's legal notice and money recovery service.
 3. A suggested image prompt describing a clean, professional, modern corporate illustration suitable for the article's featured hero image.
 4. A suggested infographic prompt describing a structured data infographic, statutory process flowchart, or visual metrics chart specifically tailored for the mid-article infographic.
+
+**ABOUT LEGALRECOVERY — REVIEWS MUST REFLECT THESE SERVICES ONLY:**
+LegalRecovery helps people recover unpaid money through legal notices and escalation. Reviews MUST be based on one of these 8 real service categories only:
+- Unpaid salary, withheld full & final settlement, or notice period dues from an employer
+- Consumer refund disputes (e-commerce, products, subscriptions, gyms, coaching institutes)
+- Security deposit or rental recovery from a landlord or PG owner
+- Freelancer or client payment recovery for unpaid invoices
+- Personal money recovery from a friend or relative (informal loans)
+- Airline, hotel, or travel agent refund recovery
+- Vendor, supplier, or business partner invoice recovery
+- Property or builder dispute (delayed possession, booking cancellation refund)
+
+**STRICTLY PROHIBITED IN REVIEWS AND FAQS:**
+Do NOT write reviews or FAQs about: bank loan settlement, NPA settlement, OTS, EMI waivers, debt restructuring, SARFAESI, mortgage settlement, credit card dues, chit fund recovery, or any banking/financial product. These are NOT services LegalRecovery offers.
 
 Article Title: ${step1Result.title}
 Article Subtitle: ${step1Result.subtitle}
@@ -391,7 +466,7 @@ Return ONLY a JSON object with this exact structure:
     { "question": "Detailed question?", "answer": "Detailed helpful answer." }
   ],
   "reviews": [
-    { "name": "Reviewer Full Name", "rating": 5, "review": "Detailed review text..." }
+    { "name": "Reviewer Full Name", "rating": 5, "review": "Detailed review text reflecting a real LegalRecovery service outcome..." }
   ],
   "suggestedImagePrompt": "Visual description for the article's featured hero image",
   "suggestedInfographicPrompt": "Visual description for a structured legal data infographic / chart / workflow diagram"
@@ -403,6 +478,7 @@ Return ONLY a JSON object with this exact structure:
           { role: "system", content: step3SystemPrompt }
         ],
         response_format: { type: "json_object" },
+        max_tokens: 4000,
         temperature: 0.8,
       });
 
