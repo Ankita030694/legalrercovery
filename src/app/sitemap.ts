@@ -43,6 +43,7 @@ const STATIC_ROUTES: {
   { path: "/email-landing", changeFrequency: "weekly", priority: 0.95 },
 
   // Recovery routes
+  { path: "/bulk-recovery-cases-all-in-one-affordable-solutions", changeFrequency: "weekly", priority: 0.9 },
   { path: "/recovery", changeFrequency: "weekly", priority: 0.9 },
   { path: "/recovery/accidental-insurance-claim", changeFrequency: "weekly", priority: 0.8 },
   { path: "/recovery/airline-refund-amount", changeFrequency: "weekly", priority: 0.8 },
