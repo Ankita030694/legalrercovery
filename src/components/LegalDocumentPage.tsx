@@ -111,10 +111,10 @@ export default function LegalDocumentPage({
         <p className="mt-8 text-center text-sm text-[#6B7280]">
           Questions?{" "}
           <a
-            href="mailto:support@legalrecovery.in"
+            href="mailto:notify@legalrecovery.in"
             className="text-[#DC2626] font-semibold hover:underline"
           >
-            support@legalrecovery.in
+            notify@legalrecovery.in
           </a>
         </p>
       </article>

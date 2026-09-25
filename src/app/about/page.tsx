@@ -10,7 +10,6 @@ import {
   Users,
   TrendingUp,
   Gavel,
-  Phone,
   ArrowRight,
   Briefcase,
   Scale,
@@ -548,19 +547,13 @@ export default function AboutPage() {
           <p className="text-[13px] sm:text-[14px] text-[#6B7280] mb-7 max-w-[460px] mx-auto leading-relaxed">
             Join thousands of citizens who trusted LegalRecovery to reclaim their rightful funds.
           </p>
-          <div className="flex flex-col sm:flex-row items-center justify-center gap-3">
+          <div className="flex items-center justify-center">
             <a href="/contact"
-              className="w-full sm:w-auto flex items-center justify-center gap-2 px-6 py-3.5
+              className="w-full sm:w-auto flex items-center justify-center gap-2 px-8 py-3.5
                          bg-[#DC2626] text-white text-[13px] sm:text-[14px] font-bold rounded-xl
                          shadow-[0_4px_20px_rgba(220,38,38,0.25)] hover:bg-[#B91C1C]
                          hover:-translate-y-0.5 transition-all duration-200">
               Start Your Free Case Review <ArrowRight className="w-4 h-4" />
-            </a>
-            <a href="tel:+918000000000"
-              className="w-full sm:w-auto flex items-center justify-center gap-2 px-6 py-3.5
-                         border border-[#D1D5DB] text-[#111827] text-[13px] sm:text-[14px] font-bold rounded-xl
-                         hover:border-[#DC2626] hover:text-[#DC2626] transition-all duration-200">
-              <Phone className="w-4 h-4" /> Call Us Now
             </a>
           </div>
         </div>

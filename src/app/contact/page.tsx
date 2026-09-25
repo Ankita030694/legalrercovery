@@ -3,9 +3,6 @@
 import React from "react";
 import {
   Mail,
-  Phone,
-  MapPin,
-  Building2,
   Clock,
 } from "lucide-react";
 import FAQSection, { FAQItem } from "@/components/FAQSection";
@@ -15,7 +12,7 @@ export default function ContactPage() {
   const contactFaqs: FAQItem[] = [
     {
       question: "How quickly will LegalRecovery respond to my inquiry?",
-      answer: "Our legal team typically responds within 24 hours of receiving your inquiry. For urgent cases, you can call our toll-free helpline at 1800-309-8480 during business hours (Monday to Saturday, 9 AM – 7 PM IST) for immediate assistance."
+      answer: "Our legal team typically responds within 24 hours of receiving your inquiry. You can submit your case details directly through our contact form or write to us at notify@legalrecovery.in for prompt legal review and assistance."
     },
     {
       question: "What information should I include in my case submission?",
@@ -31,7 +28,7 @@ export default function ContactPage() {
     },
     {
       question: "What are your office hours and support channels?",
-      answer: "Our support team is available Monday to Saturday, 9:00 AM to 7:00 PM IST. You can reach us via our toll-free number 1800-309-8480, email at support@legalrecovery.in, or by submitting the contact form on this page. We also offer WhatsApp support for quick queries."
+      answer: "Our support team is available Monday to Saturday, 9:00 AM to 7:00 PM IST. You can reach us by email at notify@legalrecovery.in or by submitting the contact form on this page."
     }
   ];
 
@@ -48,11 +45,11 @@ export default function ContactPage() {
         {/* Hero Section */}
         <div className="text-left w-full max-w-8xl mx-auto mb-12 md:mb-16 pt-6 sm:pt-8 md:pt-12">
           <h1 className="text-3xl sm:text-4xl md:text-[52px] font-black tracking-tight text-[#111827] leading-[1.1] mb-4 select-text">
-            Get In Touch With <br />
-            Our <span className="text-[#DC2626]">Legal Experts</span>
+            Get Started With <br />
+            Your <span className="text-[#DC2626]">Legal Notice</span>
           </h1>
           <p className="text-sm sm:text-base md:text-lg text-[#6B7280] font-semibold leading-relaxed max-w-2xl select-text">
-            Submit your details below. Our legal advocates will analyze your case and reach back to you within 24 hours.
+            Submit your dispute details below to initiate your recovery. Our legal advocates will draft, vet, and dispatch your formal legal notice to recover your dues.
           </p>
         </div>
 
@@ -62,27 +59,7 @@ export default function ContactPage() {
           {/* Left Column: Office details & Support hubs */}
           <div className="lg:col-span-5 flex flex-col gap-6 order-2 lg:order-1">
             
-            {/* Card 1: Support Hubs */}
-            <div className="bg-white border border-[#E5E7EB] rounded-2xl p-6 md:p-8 shadow-[0_4px_24px_rgba(0,0,0,0.01)] flex flex-col gap-6">
-              <h2 className="text-lg md:text-xl font-black text-[#111827] border-b border-[#E5E7EB]/60 pb-3 flex items-center gap-2.5">
-                <Building2 className="w-5 h-5 text-[#DC2626]" />
-                Corporate Offices
-              </h2>
-
-              <div className="flex items-start gap-4">
-                <div className="w-10 h-10 rounded-xl bg-red-50 text-[#DC2626] flex items-center justify-center shrink-0">
-                  <MapPin className="w-5 h-5" />
-                </div>
-                <div className="flex flex-col text-left select-text">
-                  <span className="text-sm font-black text-[#111827]">
-                    Our headquarters are located in Gurugram.
-                  </span>
-                </div>
-              </div>
-
-            </div>
-
-            {/* Card 2: Contact Hours */}
+            {/* Card: Contact Hours */}
             <div className="bg-white border border-[#E5E7EB] rounded-2xl p-6 md:p-8 shadow-[0_4px_24px_rgba(0,0,0,0.01)] flex flex-col gap-6">
               <h2 className="text-lg md:text-xl font-black text-[#111827] border-b border-[#E5E7EB]/60 pb-3 flex items-center gap-2.5">
                 <Clock className="w-5 h-5 text-[#DC2626]" />
@@ -108,19 +85,7 @@ export default function ContactPage() {
                 <div className="flex flex-col text-left select-text">
                   <span className="text-sm font-black text-[#111827]">Email Support</span>
                   <span className="text-xs text-[#6B7280] font-semibold mt-1 leading-normal">
-                    support@legalrecovery.in
-                  </span>
-                </div>
-              </div>
-
-              <div className="flex items-start gap-4">
-                <div className="w-10 h-10 rounded-xl bg-red-50 text-[#DC2626] flex items-center justify-center shrink-0">
-                  <Phone className="w-5 h-5" />
-                </div>
-                <div className="flex flex-col text-left select-text">
-                  <span className="text-sm font-black text-[#111827]">Toll-Free Helpline</span>
-                  <span className="text-xs text-[#6B7280] font-semibold mt-1 leading-normal">
-                    1800-309-8480 (Toll-Free)
+                    notify@legalrecovery.in
                   </span>
                 </div>
               </div>

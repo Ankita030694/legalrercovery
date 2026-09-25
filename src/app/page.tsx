@@ -362,7 +362,7 @@ export default function Home() {
                       <div className="flex flex-wrap items-center gap-x-2.5 gap-y-1 text-slate-400 text-[9px] md:text-[10px] font-semibold mt-1">
                         <span>📧 finance@acmecorp.com</span>
                         <span className="text-slate-300 hidden md:inline">•</span>
-                        <span>📞 +91 99999 88888</span>
+                        <span>Ref: #REC-4921</span>
                       </div>
                     </div>
                     <div className="text-left md:text-right shrink-0">
