@@ -190,11 +190,49 @@ export async function POST(request: NextRequest) {
       ...existingBlogLinks
     ].map(item => `- ${item.title}: ${item.url}`).join("\n");
 
+    // STEP 0: Web Research — use gpt-4o with built-in web search to gather grounding facts
+    let researchContext = "";
+    console.log(`[AI Generator Flow] Step 0: Web research for: [${primaryKeyword}]...`);
+    try {
+      const step0Query = `Find comprehensive, accurate, and up-to-date information about the following topic specifically for India: "${primaryKeyword}${secondaryKeyword ? ` (related: ${secondaryKeyword})` : ''}"
+
+Provide a concise research digest covering:
+1. Who typically faces this problem in India and what goes wrong in real life (concrete scenarios, typical ₹ amounts)
+2. The exact relevant Indian laws, acts, and specific section numbers that apply to this situation
+3. Government portals, consumer forums, or regulatory bodies where affected people can file complaints (with URLs where possible)
+4. Typical timeline: how long does sending a legal notice take to work, when does escalation happen, how long does resolution usually take
+5. Key documents and evidence a person needs to prove their case
+6. Any recent 2024-2025 court rulings, regulatory changes, or news about this topic in India
+7. Practical steps and strategies that have actually worked for people to recover their money
+
+Keep the digest factual, concise (under 900 words), and specific to India. Focus on practical, real-world information that a normal person can act on.`;
+
+      // Use the OpenAI Responses API with web_search_preview tool
+      const step0Response = await (openai as any).responses.create({
+        model: "gpt-6-sol",
+        tools: [{ type: "web_search_preview" }],
+        input: step0Query,
+      });
+
+      researchContext = step0Response?.output_text || "";
+
+      // Trim if too long to avoid token explosion in downstream prompts (max ~900 words)
+      const rcWords = researchContext.split(/\s+/);
+      if (rcWords.length > 900) {
+        researchContext = rcWords.slice(0, 900).join(" ") + " [summary trimmed]";
+      }
+
+      console.log(`[AI Generator Flow] Step 0 complete. Research context: ${researchContext.split(/\s+/).length} words.`);
+    } catch (step0Error) {
+      console.warn("[AI Generator Flow] Step 0 web research failed — continuing without research context:", step0Error);
+      researchContext = "";
+    }
+
     console.log(`[AI Generator Flow] Step 1: Generating SEO metadata (Title, Subtitle, Slug, Popular Searches) for: [${primaryKeyword}]...`);
 
     // STEP 1: Generate Title, Subtitle, Meta Title, Meta Description, Slug, Popular Searches
     const step1Completion = await openai.chat.completions.create({
-      model: "gpt-4o",
+      model: "gpt-6-luna",
       messages: [
         {
           role: "system",
@@ -214,7 +252,7 @@ LegalRecovery is India's premier legal-tech platform that helps individuals and 
 **STRICTLY OUT OF SCOPE — NEVER MENTION OR REFERENCE:**
 Bank loan settlement, NPA settlement, OTS (One Time Settlement), EMI waivers, debt restructuring, SARFAESI Act bank recovery, mortgage settlement, credit card settlement, NBFC disputes, chit fund recovery, or any financial product or banking loan service. LegalRecovery is NOT a bank, NBFC, or debt collection agency.
 
-Generate an SEO-optimized H1 Title, engaging subtitle, meta title, meta description, URL slug, and an array of 12 to 15 Popular Search queries / long-tail keywords for a blog article strictly within LegalRecovery's service scope.
+${researchContext ? `**RESEARCH CONTEXT — use this to generate more accurate, grounded popular search queries:**\n${researchContext}\n` : ''}Generate an SEO-optimized H1 Title, engaging subtitle, meta title, meta description, URL slug, and an array of 12 to 15 Popular Search queries / long-tail keywords for a blog article strictly within LegalRecovery's service scope.
 
 Primary Keyword/Context: ${primaryKeyword}
 Secondary Keywords: ${secondaryKeyword || ''}
@@ -222,9 +260,22 @@ Secondary Keywords: ${secondaryKeyword || ''}
 CRITICAL NEGATIVE CONSTRAINT:
 Under no circumstances should you include any em dashes (—) anywhere in your response. Always use normal hyphens (-), colons (:), commas, parentheses, or rewrite the sentence to avoid them.
 
+**TITLE QUALITY RULES — READ CAREFULLY:**
+- The title MUST sound like it was written by a helpful, informed person — NOT by an SEO template bot.
+- The title must directly match what the reader searched for. If they searched "how can I recover my money", the title should reflect that naturally.
+- NEVER append generic professional-sounding suffixes to the title. The following phrases are STRICTLY BANNED from the title:
+  * "Legal Solutions", "Legal Remedies", "Legal Options"
+  * "A Complete Guide", "Complete Guide to", "Comprehensive Guide"
+  * "Everything You Need to Know", "All You Need to Know"
+  * "Ultimate Guide", "The Ultimate"
+  * "Overview", "Introduction to"
+  * Any phrase that sounds like a marketing tagline or SEO heading template
+- GOOD title examples: "How to Recover Unpaid Salary from Your Employer in India", "My Landlord is Refusing to Return My Deposit — What Do I Do?", "How Can I Recover My Money in India: A Practical Breakdown"
+- BAD title examples: "Legal Solutions for Money Recovery in India", "A Complete Guide to Legal Recovery", "Comprehensive Overview of Statutory Remedies"
+
 Return ONLY a JSON object with this exact structure:
 {
-  "title": "H1 Title containing the primary keyword (max 70 chars)",
+  "title": "H1 Title that sounds natural and matches what the user searched for (max 70 chars, no banned suffixes)",
   "subtitle": "Engaging subtitle (max 120 chars)",
   "metaTitle": "SEO meta title (60-70 chars)",
   "metaDescription": "SEO meta description (150-160 chars)",
@@ -250,11 +301,18 @@ Return ONLY a JSON object with this exact structure:
         }
       ],
       response_format: { type: "json_object" },
-      temperature: 0.7,
     });
 
     const step1ResultStr = sanitizeText(step1Completion.choices[0].message.content || "{}");
     const step1Result = JSON.parse(step1ResultStr);
+
+    // Title sanitizer: strip robotic template suffixes if any slipped through
+    if (step1Result.title && typeof step1Result.title === "string") {
+      step1Result.title = step1Result.title
+        .replace(/:\s*(A\s+)?(Complete|Comprehensive|Ultimate)?\s*(Guide|Overview|Legal Solutions|Legal Remedies|Legal Options|Everything You Need to Know).*$/i, '')
+        .replace(/\|\s*Legal\s*Recovery.*$/i, '')
+        .trim();
+    }
 
     let parsedPopularSearches: string[] = [];
     if (Array.isArray(step1Result.popularSearches) && step1Result.popularSearches.length > 0) {
@@ -286,20 +344,28 @@ Return ONLY a JSON object with this exact structure:
     }
 
     console.log(`[AI Generator Flow] Step 1 complete. Title: "${step1Result.title}", Popular Searches (${parsedPopularSearches.length}):`, parsedPopularSearches);
-    console.log(`[AI Generator Flow] Step 2: Generating description content (3500+ words HTML with dynamic headings, 1 to 3 structured data tables and interlinking)...`);
+    console.log(`[AI Generator Flow] Step 2: Generating description content (2000-2300 words HTML with 6-8 sections, 1 to 2 structured data tables and interlinking)...`);
 
     // STEP 2: Generate Description (Complete body in HTML with tables and internal links)
     const step2SystemPrompt = `
-You are a professional legal content writer and SEO/AEO expert. Write a fully human-written, SEO-optimized, exhaustive legal article body for LegalRecovery (https://www.legalrecovery.in/).
-Target Primary Keyword/Context: ${primaryKeyword}
-Secondary Keywords: ${secondaryKeyword || ''}
-Title: ${step1Result.title}
-Subtitle: ${step1Result.subtitle}
+You are an empathetic, adaptive content writer with deep knowledge of Indian law and consumer rights. You shift your voice naturally based on what each section needs. When a section is about someone's frustrating situation, you write with warmth and clarity. When a section covers legal rights or procedures, you write with confidence and precision. You never sound like a textbook, a legal journal, or a courtroom document. You write for real people.
 
-**ABOUT LEGALRECOVERY — READ CAREFULLY BEFORE WRITING:**
-LegalRecovery is India's premier legal-tech platform that helps individuals and businesses recover unpaid money through professionally drafted legal notices, multi-stage escalation, and litigation guidance. It operates a 5-step process: (1) Submit your case, (2) Legal experts review and analyze, (3) A professional legal notice is drafted and dispatched via registered post, (4) Escalation and follow-up through multiple channels, (5) Resolution and recovery. The platform is 100% online with no court visits required. Pricing starts from ₹1,499 with flat fees and no hidden charges.
+**READER PERSONA — KEEP THIS IN MIND FOR EVERY SINGLE SENTENCE:**
+The person reading this is an Indian aged 18 to 50. They have never dealt with a legal dispute before. Right now they are stressed and confused — their money is stuck and they genuinely do not know what to do or where to even start. They searched online hoping someone would clearly explain their options. Write so that this person feels understood, supported, and clear on what to do next. Make getting their money back feel achievable, not overwhelming.
 
-The platform covers ONLY these 8 service categories. Every article MUST contextualize the topic within one of these:
+**TARGET TOPIC:**
+Primary: ${primaryKeyword}
+Secondary: ${secondaryKeyword || 'none'}
+Article Title: ${step1Result.title}
+Article Subtitle: ${step1Result.subtitle}
+
+${researchContext ? `**RESEARCHED FACTS — USE THESE AS YOUR FACTUAL FOUNDATION (do not hallucinate laws or amounts):**
+${researchContext}
+` : ''}
+**ABOUT LEGALRECOVERY — WEAVE NATURALLY INTO THE ARTICLE:**
+LegalRecovery (https://www.legalrecovery.in/) is India's legal-tech platform that helps people recover unpaid money through professionally drafted legal notices, multi-stage escalation, and 100% online case management. No court visits required. Pricing starts at ₹1,499 flat fee. Their 5-step process: (1) Submit case online, (2) Legal experts review and analyze, (3) Professional notice drafted and dispatched via registered post, (4) Multi-channel follow-up and escalation, (5) Resolution and money recovery. Reference LegalRecovery's process naturally and helpfully where the topic allows — never force it.
+
+The platform covers ONLY these 8 service categories — contextualize the topic within the right one:
 1. Unpaid Salary and Employment Dues (withheld full & final settlement, notice period salary, wrongful termination, relieving letter disputes)
 2. Consumer Refunds and Complaints (defective products, e-commerce platform disputes, gym/subscription refunds, coaching fee refunds)
 3. Security Deposits and Rental Recoveries (landlord refusal, PG/hostel deposits, unreasonable deductions, housing society disputes)
@@ -309,78 +375,69 @@ The platform covers ONLY these 8 service categories. Every article MUST contextu
 7. Vendor and Invoice Recovery (B2B outstanding payments, advance payment refunds, partner dues, e-commerce marketplace frozen payouts)
 8. Property and Builder Disputes (RERA complaints, delayed flat possession, builder booking cancellation refunds, interior designer disputes)
 
-**STRICTLY OUT OF SCOPE — NEVER WRITE ABOUT THESE TOPICS:**
-This article MUST NOT mention or discuss: bank loan settlement, NPA (Non-Performing Asset) settlement, OTS (One Time Settlement) with banks or NBFCs, EMI waivers, EMI restructuring, debt restructuring, SARFAESI Act bank recovery, mortgage settlement, credit card settlement, NBFC disputes, chit fund recovery, wilful defaulter proceedings, DRT (Debt Recovery Tribunal) for bank loans, or any banking financial product. LegalRecovery is NOT a bank, NBFC, or debt collection agency.
+**STRICTLY OUT OF SCOPE — NEVER WRITE ABOUT:**
+Bank loan settlement, NPA settlement, OTS (One Time Settlement) with banks/NBFCs, EMI waivers, debt restructuring, SARFAESI Act bank recovery, mortgage settlement, credit card settlement, NBFC disputes, chit fund recovery, wilful defaulter proceedings, DRT for bank loans, or any banking/financial product. LegalRecovery is NOT a bank, NBFC, or debt collection agency.
 
-**CRITICAL WORD COUNT REQUIREMENT**:
-The content MUST be extremely detailed and EXCEED 5000 words. To achieve this, expand every section, subtopic, and legal concept with 5-7 detailed, comprehensive paragraphs. Add sub-sections under each h2 using h3 and h4 tags. Specify precise court procedures, draft step-by-step statutory guidance with exact timelines, list required evidentiary documentation with admissibility rules, outline practical dispute resolution strategies, and include real-world practical examples.
+**SCOPE INTELLIGENCE — VERY IMPORTANT:**
+Look at the topic you are writing about. Before writing:
+- If the topic is a BROAD/GENERIC question (e.g. "how to recover money", "how to get my money back", "legal ways to recover money"): Do NOT try to cover all 8 service categories. Focus the article on the PROCESS of money recovery — how a legal notice works, the escalation journey, what to do first. Use salary, consumer refund, or security deposit as relatable running examples. Keep it grounded in 2-3 common situations.
+- If the topic is SPECIFIC (e.g. "recover unpaid salary", "flight refund complaint", "security deposit from landlord"): Focus entirely on that specific category. Cover it deeply.
+- RERA (Real Estate Regulation and Development Act) MUST NEVER appear unless the primaryKeyword explicitly mentions: property, builder, flat, apartment, possession, real estate, housing project, RERA.
+- MSME Samadhan MUST NEVER appear unless the primaryKeyword explicitly mentions: freelancer, invoice, vendor, B2B, supplier, client payment, MSME.
+- DGCA/airline law MUST NEVER appear unless the primaryKeyword explicitly mentions: flight, airline, travel, DGCA, ticket.
+- Citing the wrong law for a topic is worse than citing no law at all. Only use laws that directly apply to the primaryKeyword.
 
-**CRITICAL DYNAMIC HEADING & STRUCTURE RULES (STRICT PROHIBITION ON BOILERPLATE 'UNDERSTANDING' HEADINGS)**:
-- **NO CLICHÉ BOILERPLATE OPENINGS**:
-  - Under NO circumstances should the opening <h2> heading (or any heading) use repetitive clichés like:
-    * "Understanding [Keyword]"
-    * "Understanding [Keyword] Full and Final Settlement (FNF)"
-    * "What is [Keyword]?"
-    * "An Introduction to [Keyword]"
-    * "Overview of [Keyword]"
-  - DO NOT mention "Full and Final Settlement (FNF)" unless the primary topic is explicitly about employment/salary resignation settlements.
-- **DYNAMIC, TOPIC-SPECIFIC OPENING HEADING**:
-  - The very first <h2> heading MUST be dynamic, authoritative, engaging, and directly tailored to the specific dispute scenario of "${primaryKeyword}".
-  - Examples of dynamic opening headings based on dispute category:
-    * *Flight & Travel*: <h2>DGCA Passenger Rights, Civil Aviation Requirements (CAR), and Statutory Airline Refund Timelines</h2>
-    * *E-Commerce & Retail*: <h2>Consumer Protection Act 2019: Statutory Liability of E-Commerce Platforms for Wrong or Defective Products</h2>
-    * *Tenant & Landlord*: <h2>Tenant Protections and Legal Limitations on Unreasonable Landlord Security Deposit Deductions</h2>
-    * *Freelancer & Vendor*: <h2>Contractual Enforcement and MSME Samadhan Legal Remedies for Unpaid Client Invoices</h2>
-    * *Friend & Relative Loan*: <h2>Evidentiary Essentials and Demand Notice Protocols for Recovering Personal Loans from Individuals in India</h2>
-    * *Builder & Real Estate*: <h2>RERA Statutory Protections and Legal Compensation for Delayed Property Possession</h2>
-    * *Cheque Bounce*: <h2>Section 138 NI Act: Mandatory Statutory Demand Notice Protocol and Magistrate Filing Windows</h2>
-    * *Cyber Fraud*: <h2>National Cybercrime Reporting Framework (Helpline 1930) and Bank Chargeback Reversals</h2>
-    * *Salary & Employment*: <h2>Statutory Rights of Employees Under the Payment of Wages Act and Industrial Disputes Act for Salary Recovery</h2>
-    * *Vendor & Invoice*: <h2>Legal Remedies Under the Indian Contract Act 1872 and MSMED Act 2006 for Outstanding Invoice Recovery</h2>
-- **USE RELEVANT STATUTES ONLY**:
-  - Cite ONLY the specific Indian Acts, Regulations, and Forums that directly govern "${primaryKeyword}" (e.g. Consumer Protection Act 2019, DGCA CAR, NI Act 1881, Transfer of Property Act, RERA 2016, MSMED Act 2006, Indian Contract Act 1872, Bharatiya Nyaya Sanhita / IPC, Bharatiya Sakshya Adhiniyam / Evidence Act, Payment of Wages Act 1936, Industrial Disputes Act 1947). Do NOT cite unrelated employment acts for consumer or property topics.
+**OPENING — THIS IS MANDATORY:**
+The very first paragraph of the article (before any <h2> tag) MUST speak directly to the reader's real situation in plain, warm language. Acknowledge what they are going through. Tell them clearly what this article will help them understand and do. Do NOT open with any law citation, act name, or section number. Think of how a knowledgeable friend would open this conversation.
 
-**CRITICAL STRUCTURE REQUIREMENTS (AT LEAST 10 h2 SECTIONS + h3/h4 SUB-SECTIONS)**:
-- Structure content with HTML tags: <h2>, <h3>, <h4>, <p>, <ul>, <ol>, <li>, <table>, <thead>, <tbody>, <tr>, <th>, <td>. Include at least 10 main <h2> sections with multiple <h3> and <h4> sub-sections under each.
-- **DATA TABLES LIMIT IS STRICTLY BETWEEN 1 TO 3 TABLES**:
-  - You MUST include at least 1 and AT MOST 3 rich, well-structured HTML data tables (<table>, <thead>, <tbody>, <tr>, <th>, <td>).
-  - CRITICAL CONSTRAINT: Under NO circumstances should you generate more than 3 tables. Generate between 1 and 3 tables total across the entire article.
-  Examples of tables:
-  1. *Statutory Timelines & Limitation Matrix*: Timeline limits under Indian Acts, notice deadlines, response times, and court filing windows.
-  2. *Legal Provisions & Penalty Benchmarks*: Act name, specific sections, competent forum, penalty provisions, and statutory interest rates.
-  3. *Evidence & Documentation Checklist Table*: Category of dispute, mandatory evidentiary documents, and admissibility.
+**HEADINGS — GENERATE FREELY, NO TEMPLATES:**
+Do NOT use any fixed heading formats or statute-title patterns. Every <h2>, <h3>, and <h4> heading must be written naturally for what that section actually covers:
+- Some headings should sound like questions the reader is already thinking: "What can you actually do if they refuse to pay?", "Is a WhatsApp message enough proof?", "How long does this realistically take?"
+- Some should be direct, action-oriented statements: "The documents you need before you do anything", "Step by step: what to do this week"
+- Some covering legal rights or procedures can be precise: "Your rights under the Consumer Protection Act 2019" — but only when the section genuinely needs that precision
+- NEVER start any section's heading with an act name followed by a colon (like "Section 138 NI Act: ...") — that sounds like a legal textbook
+- NEVER open the body text of any section directly with an act citation. Always open with the human situation or problem first, then bring in the legal context
 
-**CRITICAL INTERNAL INTERLINKING REQUIREMENT (MANDATORY)**:
-- You MUST naturally embed 7 to 12 contextual hyperlinks (<a href="...">natural anchor text</a>) into the HTML body paragraphs.
-- Select the most relevant query-based legal guides, recovery services, and existing blog articles from this directory:
+**TONE PER SECTION — ADAPT, DO NOT USE A FIXED REGISTER:**
+- Sections about the reader's situation or what's happening to them: warm, conversational, validating — "If you have been waiting weeks for a response and getting only silence, you are not alone..."
+- Sections about the reader's legal rights: confident, clear, factual — cite the relevant law accurately in plain language, explain what it means for the reader
+- Sections about what to do step by step: direct, concrete, numbered or bulleted, no filler
+- Sections about escalation or what happens if ignored: matter-of-fact, reassuring, practical
+- Tables and checklists: clean, scannable, genuinely useful — not just padding
+- NEVER pad with law text just to hit word count. Every paragraph must earn its place.
+
+**WORD COUNT: STRICT LIMIT (2,000 TO 2,300 WORDS FOR DESCRIPTION BODY):**
+Write 6 to 8 main <h2> sections, each with focused <h3> and <h4> sub-sections as needed. Total description body must be between 2,000 and 2,300 words so the entire final article (including FAQs and reviews) stays strictly under 3,000 words. Keep every paragraph punchy, insightful, and practical without fluff.
+
+**DATA TABLES (1 TO 2 ONLY):**
+- Include 1 or 2 rich HTML tables.
+- Make each table genuinely useful: timelines, evidence checklists, legal provisions with plain-language explanations, comparison of options, or step-by-step process overview.
+- Do NOT include more than 2 tables.
+
+**INTERNAL LINKS (6 TO 10 — MANDATORY):**
+Naturally embed 6 to 10 contextual hyperlinks (<a href="...">anchor text</a>) inside paragraph sentences. Use only URLs from this directory:
 ${interlinkingDirectory}
-- **Rule 1**: Use natural, keyword-rich anchor text matching user search queries and topics (e.g., '<a href="https://www.legalrecovery.in/how-to-recover-unpaid-salary-legally">steps to recover unpaid salary from an employer</a>', '<a href="https://www.legalrecovery.in/legal-notice-for-recovery-of-money">sending a legal notice for recovery of money</a>', '<a href="https://www.legalrecovery.in/cheque-bounce-notice-timeline-section-138">Section 138 cheque bounce notice timeline</a>', '<a href="https://www.legalrecovery.in/how-to-file-consumer-complaint-india">filing a consumer court complaint online</a>').
-- **Rule 2**: Interlink smoothly inside paragraph sentences where the concept or legal action is discussed. Do NOT dump links at the bottom or create bullet lists of links.
-- **Rule 3**: Strictly use only URLs provided in the directory above.
+Use natural anchor text. Interlink where the concept is discussed. Never dump links at the bottom.
 
-**Formatting Rules**:
-- **Tone**: Professional, authoritative, human. Use Indian context (Rupees ₹, RBI, High Courts, Supreme Court, NCLT, MSME Samadhan, etc.) naturally.
-- **No Markdown**: Do NOT use markdown headers (like ## or ###) or markdown bold (like **text**). Use HTML tags instead (like <h2>, <h3>, <strong>, <table>).
-- **Do NOT** include any title (H1) or subtitle, as they are already generated. Start directly with the introduction paragraphs.
-- **Do NOT** include any FAQs or Reviews in this content.
-- **Do NOT** wrap the response in markdown code blocks like \`\`\`html or \`\`\`. Output RAW HTML only. Start directly with the first HTML tag (e.g. <h2> or <p>).
-
-**CRITICAL NEGATIVE CONSTRAINT**:
-Under no circumstances should you include any em dashes (—) anywhere in your entire response. Always use normal hyphens (-), colons (:), commas, or parentheses if needed instead.
+**FORMATTING:**
+- Use HTML tags only: <h2>, <h3>, <h4>, <p>, <ul>, <ol>, <li>, <table>, <thead>, <tbody>, <tr>, <th>, <td>, <strong>, <em>, <a>.
+- No markdown at all. No ** bold. No ## headings. No \`\`\` code blocks. Output RAW HTML only.
+- Do NOT include the H1 title or subtitle (already generated). Start directly with the opening paragraph.
+- Do NOT include FAQs or Reviews sections.
+- No em dashes (—) anywhere. Use hyphens (-), colons (:), or commas instead.
 `;
 
     const step2UserMessage = body.context && body.context !== primaryKeyword
-      ? `Write an exhaustive, extremely detailed 5000+ words HTML body with 1 to 3 data tables, at least 10 h2 sections, and internal links about: ${primaryKeyword}\nAdditional context & details: ${body.context}`
-      : `Write an exhaustive, extremely detailed 5000+ words HTML body with 1 to 3 data tables, at least 10 h2 sections, and internal links about: ${primaryKeyword}`;
+      ? `Write a comprehensive, human-friendly HTML blog post (strictly 2,000 to 2,300 words) with 1 to 2 data tables, 6 to 8 h2 sections, and internal links about: ${primaryKeyword}\nAdditional context & details: ${body.context}`
+      : `Write a comprehensive, human-friendly HTML blog post (strictly 2,000 to 2,300 words) with 1 to 2 data tables, 6 to 8 h2 sections, and internal links about: ${primaryKeyword}`;
 
     const step2Completion = await openai.chat.completions.create({
-      model: "gpt-4o",
+      model: "gpt-6-sol",
       messages: [
         { role: "system", content: step2SystemPrompt },
         { role: "user", content: step2UserMessage },
       ],
-      max_tokens: 9000,
-      temperature: 0.8,
+      max_completion_tokens: 5000,
     });
 
     let rawDescription = sanitizeText(step2Completion.choices[0].message.content || "");
@@ -396,6 +453,24 @@ Under no circumstances should you include any em dashes (—) anywhere in your e
       cleanedDescription = cleanedDescription.slice(0, -3).trim();
     }
 
+    // Post-process: Convert any markdown syntax GPT snuck in despite HTML-only instructions
+    // 1. Convert markdown numbered list items with bold: "1. **Item**: text" -> "<ol><li><strong>Item:</strong> text</li></ol>"
+    cleanedDescription = cleanedDescription.replace(/^(\d+\.\s+)\*\*([^*\n]+)\*\*:?\s*/gm, (_m, num, text) => `${num}<strong>${text}:</strong> `);
+    // 2. Convert bulleted list items with bold: "- **Item**: text" -> "- <strong>Item:</strong> text"
+    cleanedDescription = cleanedDescription.replace(/^([*-]\s+)\*\*([^*\n]+)\*\*:?\s*/gm, (_m, bullet, text) => `${bullet}<strong>${text}:</strong> `);
+    // 3. Convert inline **bold** -> <strong>bold</strong>
+    cleanedDescription = cleanedDescription.replace(/\*\*([^*\n<>]+)\*\*/g, '<strong>$1</strong>');
+    // 4. Convert inline __bold__ -> <strong>bold</strong>
+    cleanedDescription = cleanedDescription.replace(/__([_\n<>]+)__/g, '<strong>$1</strong>');
+    // 5. Convert inline *italic* -> <em>italic</em> (only single asterisks not surrounded by other asterisks)
+    cleanedDescription = cleanedDescription.replace(/(?<![*])\*(?![*])([^*\n<>]+)(?<![*])\*(?![*])/g, '<em>$1</em>');
+    // 6. Convert inline _italic_ -> <em>italic</em>
+    cleanedDescription = cleanedDescription.replace(/(?<![_])_(?![_])([^\n<>_]+)(?<![_])_(?![_])/g, '<em>$1</em>');
+    // 7. Convert bare markdown headings #### -> h4, ### -> h3, ## -> h2 if GPT slipped them in
+    cleanedDescription = cleanedDescription.replace(/^#{4}\s+(.+)$/gm, '<h4>$1</h4>');
+    cleanedDescription = cleanedDescription.replace(/^#{3}\s+(.+)$/gm, '<h3>$1</h3>');
+    cleanedDescription = cleanedDescription.replace(/^#{2}\s+(.+)$/gm, '<h2>$1</h2>');
+
     // Safety check 1: Remove accidental FNF/Settlement boilerplate for non-employment topics
     const isEmploymentTopic = /salary|employment|fnf|full.and.final|resignation|gratuity|wages|employer|notice.period/i.test(primaryKeyword);
     if (!isEmploymentTopic) {
@@ -410,13 +485,31 @@ Under no circumstances should you include any em dashes (—) anywhere in your e
       return `${cleanPrefix}<h2>Statutory Framework and Legal Remedies for ${headingText.trim()}</h2>`;
     });
 
-    // Safety check 3: Remove any off-brand bank/financial loan settlement references that GPT may have hallucinated
+    // Safety check 3: Remove any off-brand bank/financial loan settlement references
     const offBrandPatterns: [RegExp, string][] = [
       [/\b(bank\s+loan\s+settlement|loan\s+settlement|npa\s+settlement|one\s+time\s+settlement\s+with\s+(bank|lender|nbfc)|ots\s+settlement|emi\s+waiver|debt\s+restructuring|debt\s+settlement|loan\s+waiver|sarfaesi|credit\s+card\s+settlement|nbfc\s+settlement|wilful\s+defaulter|drt\s+proceedings)\b/gi, 'legal notice for money recovery'],
       [/<h[2-4][^>]*>\s*[^<]*(loan\s+settlement|npa\s+settlement|ots\s+with|debt\s+restructuring)[^<]*<\/h[2-4]>/gi, '<h2>Legal Recovery and Notice Escalation Process in India</h2>'],
     ];
     for (const [pattern, replacement] of offBrandPatterns) {
       cleanedDescription = cleanedDescription.replace(pattern, replacement);
+    }
+
+    // Safety check 4: Strip RERA/MSME/DGCA content when topic is not property/freelancer/airline
+    const isPropertyTopic = /\b(rera|builder|property|flat|apartment|possession|real\s*estate|housing\s*project|homebuyer|landlord|tenant|lease)\b/i.test(primaryKeyword);
+    const isFreelancerTopic = /\b(freelancer|invoice|vendor|msme|supplier|client\s*payment|b2b|samadhan|contractor)\b/i.test(primaryKeyword);
+    const isAirlineTopic = /\b(flight|airline|travel|dgca|ticket|airport)\b/i.test(primaryKeyword);
+
+    if (!isPropertyTopic) {
+      // Remove entire RERA-specific h2/h3 sections and replace inline RERA mentions
+      cleanedDescription = cleanedDescription.replace(/<h[2-4][^>]*>[^<]*\bRERA\b[^<]*<\/h[2-4]>([\s\S]*?)(?=<h[2-4]|$)/gi, '');
+      cleanedDescription = cleanedDescription.replace(/\bRERA\b/g, 'the applicable legal framework');
+      cleanedDescription = cleanedDescription.replace(/Real\s+Estate\s+\(Regulation\s+and\s+Development\)\s+Act[^.;,]*/gi, 'applicable statutory regulations');
+    }
+    if (!isFreelancerTopic) {
+      cleanedDescription = cleanedDescription.replace(/<h[2-4][^>]*>[^<]*\bMSME\s+Samadhan\b[^<]*<\/h[2-4]>([\s\S]*?)(?=<h[2-4]|$)/gi, '');
+    }
+    if (!isAirlineTopic) {
+      cleanedDescription = cleanedDescription.replace(/<h[2-4][^>]*>[^<]*\bDGCA\b[^<]*<\/h[2-4]>([\s\S]*?)(?=<h[2-4]|$)/gi, '');
     }
 
     console.log(`[AI Generator Flow] Step 2 complete. Description length: ${cleanedDescription.split(/\s+/).length} words.`);
@@ -432,10 +525,10 @@ Under no circumstances should you include any em dashes (—) anywhere in your e
       const step3SystemPrompt = `
 You are a legal content strategist and SEO expert for LegalRecovery (https://www.legalrecovery.in/).
 Analyze the following generated article Title, Subtitle, and HTML Description, and generate:
-1. At least 12-15 highly relevant, detailed FAQs (frequently asked questions) that directly relate to the article content and LegalRecovery's services.
-2. 5 realistic customer review snippets (with Indian names) expressing high satisfaction with LegalRecovery's legal notice and money recovery service.
+1. 6 to 8 concise, highly relevant FAQs (frequently asked questions) that directly answer specific practical questions from the article.
+2. 4 realistic customer review snippets (with Indian names) expressing satisfaction with LegalRecovery's legal notice and money recovery service.
 3. A suggested image prompt describing a clean, professional, modern corporate illustration suitable for the article's featured hero image.
-4. A suggested infographic prompt describing a structured data infographic, statutory process flowchart, or visual metrics chart specifically tailored for the mid-article infographic.
+4. A suggested infographic prompt describing a structured legal data infographic, statutory process flowchart, or visual metrics chart specifically tailored for the mid-article infographic.
 
 **ABOUT LEGALRECOVERY — REVIEWS MUST REFLECT THESE SERVICES ONLY:**
 LegalRecovery helps people recover unpaid money through legal notices and escalation. Reviews MUST be based on one of these 8 real service categories only:
@@ -451,7 +544,7 @@ LegalRecovery helps people recover unpaid money through legal notices and escala
 **STRICTLY PROHIBITED IN REVIEWS AND FAQS:**
 Do NOT write reviews or FAQs about: bank loan settlement, NPA settlement, OTS, EMI waivers, debt restructuring, SARFAESI, mortgage settlement, credit card dues, chit fund recovery, or any banking/financial product. These are NOT services LegalRecovery offers.
 
-Article Title: ${step1Result.title}
+${researchContext ? `**ADDITIONAL RESEARCH CONTEXT (use this to generate accurate, real-world FAQs that people actually search for):**\n${researchContext}\n` : ''}Article Title: ${step1Result.title}
 Article Subtitle: ${step1Result.subtitle}
 
 Article Description:
@@ -473,13 +566,12 @@ Return ONLY a JSON object with this exact structure:
 }`;
 
       const step3Completion = await openai.chat.completions.create({
-        model: "gpt-4o",
+        model: "gpt-6-luna",
         messages: [
           { role: "system", content: step3SystemPrompt }
         ],
         response_format: { type: "json_object" },
-        max_tokens: 4000,
-        temperature: 0.8,
+        max_completion_tokens: 2500,
       });
 
       const step3ResultStr = sanitizeText(step3Completion.choices[0].message.content || "{}");
