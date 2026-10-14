@@ -24,6 +24,31 @@ export async function POST(req: NextRequest) {
     // Retrieve document from 'pending_verification'
     const record = await db.collection("pending_verification").findOne({ _id: objectId });
     if (!record) {
+      // ── IDEMPOTENT RETRY SUPPORT ──
+      // After a successful verification the pending_verification record is deleted and the lead
+      // lives only in 'pending_payment' (which implies the OTP was verified). On a double-click or
+      // retry, answer from that record instead of failing with 404.
+      const movedRecord = await db.collection("pending_payment").findOne({ verificationId: objectId });
+      if (movedRecord) {
+        const paymentPendingId = movedRecord._id.toString();
+        const retryResponse = NextResponse.json({
+          success: true,
+          paymentPendingId,
+          paymentSession: movedRecord.paymentSession || null,
+          ...(movedRecord.verifyResult || {}),
+          alreadyVerified: true,
+        }, { status: 200 });
+
+        retryResponse.cookies.set("pending_checkout_id", paymentPendingId, {
+          httpOnly: true,
+          secure: process.env.NODE_ENV === "production",
+          sameSite: "lax",
+          path: "/",
+          maxAge: 60 * 60, // 1 hour
+        });
+
+        return retryResponse;
+      }
       return NextResponse.json({ error: "Verification session not found" }, { status: 404 });
     }
 
@@ -119,7 +144,10 @@ export async function POST(req: NextRequest) {
 
       if (hasRemainingQuota) {
         // User has unused case slots — clean up pending_verification and auto-login
-        await db.collection("pending_verification").deleteOne({ _id: objectId });
+        await db.collection("pending_verification").deleteMany({ phone: record.phone });
+        // A user in 'users' has already paid, so any stale signup lead in 'pending_payment' is removed.
+        // In-flight 'buy more credits' records (isReturningUser) are kept so their payment can still be credited.
+        await db.collection("pending_payment").deleteMany({ phone: record.phone, isReturningUser: { $ne: true } });
 
         return NextResponse.json({
           success: true,
@@ -174,21 +202,7 @@ export async function POST(req: NextRequest) {
           }
         }
 
-        // Retain verified status so retries don't throw 404
-        await db.collection("pending_verification").updateOne(
-          { _id: objectId },
-          {
-            $set: {
-              verified: true,
-              paymentPendingId,
-              paymentSession,
-              verifiedAt: new Date(),
-              otpExpires: new Date(Date.now() + 30 * 60 * 1000)
-            }
-          }
-        );
-
-        const response = NextResponse.json({
+        const responseBody = {
           success: true,
           isExistingUser: true,
           hasRemainingQuota: false,
@@ -198,7 +212,18 @@ export async function POST(req: NextRequest) {
           userName: existingUser.name || "User",
           usedSlots: currentCreatedCount,
           totalSlots: allowedLimit
-        }, { status: 200 });
+        };
+
+        // Move the lead: keep the retry info on pending_payment and delete the OTP record
+        if (paymentRecord) {
+          await db.collection("pending_payment").updateOne(
+            { _id: paymentRecord._id },
+            { $set: { verificationId: objectId, paymentSession, verifyResult: responseBody, updatedAt: new Date() } }
+          );
+        }
+        await db.collection("pending_verification").deleteMany({ phone: record.phone });
+
+        const response = NextResponse.json(responseBody, { status: 200 });
 
         // Set browser cookie for pending payment flow
         if (paymentPendingId) {
@@ -263,19 +288,13 @@ export async function POST(req: NextRequest) {
       console.error("Failed to generate PayU session in verify-otp:", sessionErr);
     }
 
-    // Mark as verified instead of deleting immediately so retries do not fail
-    await db.collection("pending_verification").updateOne(
-      { _id: objectId },
-      {
-        $set: {
-          verified: true,
-          paymentPendingId,
-          paymentSession,
-          verifiedAt: new Date(),
-          otpExpires: new Date(Date.now() + 30 * 60 * 1000)
-        }
-      }
+    // Move the lead: keep the retry info on pending_payment and delete the OTP record.
+    // From now on, presence in 'pending_payment' means the OTP is already verified.
+    await db.collection("pending_payment").updateOne(
+      { _id: paymentRecord._id },
+      { $set: { verificationId: objectId, paymentSession, updatedAt: new Date() } }
     );
+    await db.collection("pending_verification").deleteMany({ phone: record.phone });
 
     const response = NextResponse.json({ 
       success: true, 

@@ -39,3 +39,6 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# PII backups written by scratch/cleanup_pending_duplicates.js
+/scratch/out/pending_cleanup_backup_*.json

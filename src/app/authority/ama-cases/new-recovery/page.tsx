@@ -161,6 +161,80 @@ export function NewRecoveryForm({ repId }: { repId?: string } = {}) {
     }).format(val || 0);
   };
 
+  // Check mandatory fields required for Notice PDF generation & dispatch
+  const getMissingNoticeFields = (c: any) => {
+    const missing: string[] = [];
+    if (!c?.defaulterName || !String(c.defaulterName).trim()) {
+      missing.push("Defaulter Legal Name");
+    }
+    const cleanPhone = String(c?.phone || "").replace(/\D/g, "");
+    if (cleanPhone.length < 10) {
+      missing.push("Primary Phone (10-digit)");
+    }
+    const cleanEmail = String(c?.email || "").trim();
+    if (!cleanEmail || !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(cleanEmail)) {
+      missing.push("Primary Email");
+    }
+    if (!c?.address || !String(c.address).trim()) {
+      missing.push("Physical Address");
+    }
+    if (!c?.state || !String(c.state).trim()) {
+      missing.push("State / UT");
+    }
+    const stuckVal = typeof c?.stuckAmount === "string"
+      ? parseFloat(c.stuckAmount.replace(/,/g, ""))
+      : Number(c?.stuckAmount || 0);
+    if (!stuckVal || isNaN(stuckVal) || stuckVal <= 0) {
+      missing.push("Claim Amount");
+    }
+    if (!c?.dueDate || !String(c.dueDate).trim()) {
+      missing.push("Payment Due Date");
+    }
+    if (!c?.policeStationName || !String(c.policeStationName).trim()) {
+      missing.push("Police Station Name");
+    }
+    if (!c?.policeStationEmail || !String(c.policeStationEmail).trim()) {
+      missing.push("Police Station Email");
+    }
+    if (!c?.policeStationAddress || !String(c.policeStationAddress).trim()) {
+      missing.push("Police Station Address");
+    }
+
+    if (category === "loan-recovery") {
+      const hasLoanId = Boolean(
+        (c?.invoiceNo && String(c.invoiceNo).trim()) ||
+        (c?.invoices && c.invoices.length > 0 && c.invoices[0]?.invoiceNo && String(c.invoices[0].invoiceNo).trim())
+      );
+      if (!hasLoanId) {
+        missing.push("Loan ID");
+      }
+      const disbVal = typeof c?.disbursedAmount === "string"
+        ? parseFloat(c.disbursedAmount.replace(/,/g, ""))
+        : Number(c?.disbursedAmount || 0);
+      if (!disbVal || isNaN(disbVal) || disbVal <= 0) {
+        missing.push("Disbursed Amount");
+      }
+      const hasDisbDate = Boolean(
+        (c?.disbursementDate && String(c.disbursementDate).trim()) ||
+        (c?.invoices && c.invoices.length > 0 && c.invoices[0]?.invoiceDate && String(c.invoices[0].invoiceDate).trim())
+      );
+      if (!hasDisbDate) {
+        missing.push("Disbursement Date");
+      }
+    } else {
+      if (!c?.invoices || !Array.isArray(c.invoices) || c.invoices.length === 0) {
+        missing.push("Invoices (Annexure-A)");
+      } else {
+        const missingInvNo = c.invoices.some((inv: any) => !inv?.invoiceNo || !String(inv.invoiceNo).trim());
+        const missingInvDate = c.invoices.some((inv: any) => !inv?.invoiceDate || !String(inv.invoiceDate).trim());
+        if (missingInvNo) missing.push("Invoice No");
+        if (missingInvDate) missing.push("Invoice Date");
+      }
+    }
+
+    return missing;
+  };
+
   // Fetch representations and police stations
   useEffect(() => {
     const init = async () => {
@@ -635,93 +709,274 @@ export function NewRecoveryForm({ repId }: { repId?: string } = {}) {
                 </span>
               </div>
 
+              {/* Mandatory Notice Readiness Summary Banner */}
+              {(() => {
+                const casesWithMissing = parsedCases.filter((c) => getMissingNoticeFields(c).length > 0);
+                if (casesWithMissing.length > 0) {
+                  return (
+                    <div className="p-4 bg-amber-50 border border-amber-200 rounded-2xl flex items-start gap-3">
+                      <AlertCircle className="w-4 h-4 text-amber-600 shrink-0 mt-0.5" />
+                      <div className="text-xs space-y-1">
+                        <div className="font-black text-amber-900">
+                          {casesWithMissing.length} of {parsedCases.length}{" "}
+                          {parsedCases.length === 1 ? "claim is" : "claims are"} missing mandatory details for Legal Notice / Police Complaint
+                        </div>
+                        <div className="text-[11px] text-amber-800 font-medium">
+                          Missing fields are highlighted in red below. Click any row or the Edit button to fill in missing details before confirming.
+                        </div>
+                      </div>
+                    </div>
+                  );
+                }
+                return (
+                  <div className="p-3.5 bg-emerald-50 border border-emerald-200 rounded-2xl flex items-center gap-2.5 text-xs font-bold text-emerald-800">
+                    <CheckCircle2 className="w-4 h-4 text-emerald-600 shrink-0" />
+                    <span>All {parsedCases.length} extracted claims have complete mandatory details for Notice & Police Complaint dispatch.</span>
+                  </div>
+                );
+              })()}
+
               {/* Table */}
               <div className="border border-slate-200 rounded-2xl overflow-hidden shadow-xs">
                 <div className="overflow-x-auto">
                   <table className="w-full text-left text-xs border-collapse">
                     <thead>
                       <tr className="bg-slate-50/80 border-b border-slate-200 text-[10px] font-black uppercase text-slate-500 tracking-wider">
-                        <th className="px-4 py-3">Defaulter</th>
-                        <th className="px-4 py-3">Claim Amount</th>
-                        <th className="px-4 py-3">Contact</th>
-                        <th className="px-4 py-3">State & Address</th>
-                        <th className="px-4 py-3">Invoices</th>
+                        <th className="px-4 py-3">Defaulter & Notice Status</th>
+                        <th className="px-4 py-3">Claim & Dates</th>
+                        <th className="px-4 py-3">Contact Details</th>
+                        <th className="px-4 py-3">Location & Police HQ</th>
+                        <th className="px-4 py-3">Extracted Invoices / Loans</th>
                         <th className="px-4 py-3 text-center">Actions</th>
                       </tr>
                     </thead>
                     <tbody className="divide-y divide-slate-100 font-medium">
-                      {parsedCases.map((c, idx) => (
-                        <tr
-                          key={idx}
-                          onClick={() => handleOpenModal(idx, false)}
-                          className="hover:bg-slate-50/60 transition-colors cursor-pointer group"
-                        >
-                          <td className="px-4 py-3.5 align-top">
-                            <div className="font-extrabold text-slate-900 group-hover:text-[#DC2626] transition-colors">
-                              {c.defaulterName}
-                            </div>
-                            <div className="text-[10px] text-slate-400 font-bold uppercase mt-0.5">
-                              {c.entityType || "Company"}
-                            </div>
-                          </td>
+                      {parsedCases.map((c, idx) => {
+                        const missingFields = getMissingNoticeFields(c);
+                        return (
+                          <tr
+                            key={idx}
+                            onClick={() => handleOpenModal(idx, false)}
+                            className={`hover:bg-slate-50/60 transition-colors cursor-pointer group ${
+                              missingFields.length > 0 ? "bg-amber-50/20" : ""
+                            }`}
+                          >
+                            <td className="px-4 py-3.5 align-top space-y-1.5 max-w-[220px]">
+                              <div>
+                                {c.defaulterName ? (
+                                  <div className="font-extrabold text-slate-900 group-hover:text-[#DC2626] transition-colors">
+                                    {c.defaulterName}
+                                  </div>
+                                ) : (
+                                  <span className="inline-block px-1.5 py-0.5 rounded bg-red-100 text-red-700 text-[10px] font-bold">
+                                    Missing Name (Required)
+                                  </span>
+                                )}
+                                <div className="text-[10px] text-slate-400 font-bold uppercase mt-0.5">
+                                  {c.entityType || "Company"}
+                                </div>
+                              </div>
 
-                          <td className="px-4 py-3.5 align-top">
-                            <div className="font-extrabold text-slate-900">
-                              {formatCurrency(c.stuckAmount)}
-                            </div>
-                            <div className="text-[10px] text-slate-400 mt-0.5">
-                              Due: {formatDateToDisplay(c.dueDate)}
-                            </div>
-                          </td>
+                              {missingFields.length > 0 ? (
+                                <div className="p-2 rounded-xl bg-red-50 border border-red-200/80 space-y-1">
+                                  <div className="flex items-center gap-1 text-[10px] font-black text-red-700 uppercase">
+                                    <AlertCircle className="w-3 h-3 shrink-0" />
+                                    <span>{missingFields.length} Missing for Notice</span>
+                                  </div>
+                                  <div className="flex flex-wrap gap-1">
+                                    {missingFields.map((field, fIdx) => (
+                                      <span
+                                        key={fIdx}
+                                        className="px-1.5 py-0.5 bg-white border border-red-200 text-red-700 rounded text-[9px] font-bold"
+                                      >
+                                        {field}
+                                      </span>
+                                    ))}
+                                  </div>
+                                </div>
+                              ) : (
+                                <span className="inline-flex items-center gap-1 px-2 py-0.5 rounded-full bg-emerald-50 border border-emerald-200 text-emerald-700 text-[10px] font-bold">
+                                  <CheckCircle2 className="w-3 h-3" />
+                                  Notice Ready
+                                </span>
+                              )}
+                            </td>
 
-                          <td className="px-4 py-3.5 align-top">
-                            <div className="text-slate-800 font-semibold">{c.phone}</div>
-                            <div className="text-[11px] text-slate-400 truncate max-w-[180px]">{c.email}</div>
-                          </td>
+                            <td className="px-4 py-3.5 align-top space-y-0.5">
+                              {c.stuckAmount && Number(c.stuckAmount) > 0 ? (
+                                <div className="font-extrabold text-[#DC2626]">
+                                  {formatCurrency(c.stuckAmount)}
+                                </div>
+                              ) : (
+                                <div className="text-[10px] font-bold text-red-600 bg-red-50 border border-red-200 px-1.5 py-0.5 rounded inline-block">
+                                  Missing Claim Amount *
+                                </div>
+                              )}
+                              <div>
+                                {c.dueDate ? (
+                                  <span className="text-[10px] text-slate-500 font-semibold">
+                                    Due: {formatDateToDisplay(c.dueDate)}
+                                  </span>
+                                ) : (
+                                  <span className="text-[10px] font-bold text-red-600">
+                                    Missing Due Date *
+                                  </span>
+                                )}
+                              </div>
+                              {(category === "loan-recovery" || c.disbursedAmount) && (
+                                <div className="text-[10px] text-slate-500">
+                                  {c.disbursedAmount && Number(c.disbursedAmount) > 0 ? (
+                                    <span>Disbursed: {formatCurrency(Number(c.disbursedAmount))}</span>
+                                  ) : (
+                                    <span className="font-bold text-red-600">Missing Disbursed Amt *</span>
+                                  )}
+                                </div>
+                              )}
+                              {(category === "loan-recovery" || c.disbursementDate) && (
+                                <div className="text-[10px] text-slate-400">
+                                  {c.disbursementDate || c.invoices?.[0]?.invoiceDate ? (
+                                    <span>
+                                      Disbursed On: {formatDateToDisplay(c.disbursementDate || c.invoices?.[0]?.invoiceDate)}
+                                    </span>
+                                  ) : (
+                                    <span className="font-bold text-red-600">Missing Disbursed Date *</span>
+                                  )}
+                                </div>
+                              )}
+                              {c.asOnDate ? (
+                                <div className="text-[10px] text-slate-400">
+                                  As On: {formatDateToDisplay(c.asOnDate)}
+                                </div>
+                              ) : null}
+                            </td>
 
-                          <td className="px-4 py-3.5 align-top max-w-[200px]">
-                            <div className="font-bold text-slate-700">{c.state}</div>
-                            <div className="text-[10px] text-slate-400 line-clamp-2 mt-0.5">
-                              {c.address}
-                            </div>
-                          </td>
+                            <td className="px-4 py-3.5 align-top space-y-0.5 min-w-[170px]">
+                              {c.phone && String(c.phone).replace(/\D/g, "").length >= 10 ? (
+                                <div className="text-slate-800 font-semibold">{c.phone}</div>
+                              ) : (
+                                <div className="text-[10px] font-bold text-red-600 bg-red-50 border border-red-200 px-1.5 py-0.5 rounded inline-block">
+                                  {c.phone ? `Invalid Phone (${c.phone}) *` : "Missing Phone *"}
+                                </div>
+                              )}
+                              {c.phone2 && (
+                                <div className="text-[10px] text-slate-500">Alt: {c.phone2}</div>
+                              )}
+                              {c.email && /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(String(c.email).trim()) ? (
+                                <div className="text-[11px] text-slate-600 break-all">{c.email}</div>
+                              ) : (
+                                <div className="text-[10px] font-bold text-red-600 bg-red-50 border border-red-200 px-1.5 py-0.5 rounded inline-block">
+                                  {c.email ? `Invalid Email (${c.email}) *` : "Missing Email *"}
+                                </div>
+                              )}
+                              {c.email2 && (
+                                <div className="text-[10px] text-slate-500 break-all">Alt: {c.email2}</div>
+                              )}
+                              {c.ccEmails && (
+                                <div className="text-[10px] text-slate-400 break-all">CC: {c.ccEmails}</div>
+                              )}
+                            </td>
 
-                          <td className="px-4 py-3.5 align-top">
-                            <div className="font-semibold text-slate-700">
-                              {c.invoices && c.invoices.length > 0 ? `${c.invoices.length} Invoices` : "-"}
-                            </div>
-                          </td>
+                            <td className="px-4 py-3.5 align-top max-w-[240px] space-y-1">
+                              {c.state ? (
+                                <div className="font-bold text-slate-800">{c.state}</div>
+                              ) : (
+                                <div className="text-[10px] font-bold text-red-600">Missing State *</div>
+                              )}
+                              {c.address ? (
+                                <div className="text-[10px] text-slate-500 whitespace-pre-wrap leading-relaxed">
+                                  {c.address}
+                                </div>
+                              ) : (
+                                <div className="text-[10px] font-bold text-red-600 bg-red-50 border border-red-200 px-1.5 py-0.5 rounded inline-block">
+                                  Missing Physical Address *
+                                </div>
+                              )}
+                              <div className="pt-1 mt-1 border-t border-slate-100 text-[10px] space-y-0.5">
+                                {c.policeStationName ? (
+                                  <div className="font-semibold text-slate-600">{c.policeStationName}</div>
+                                ) : (
+                                  <div className="font-bold text-red-600">Missing Police HQ *</div>
+                                )}
+                                {c.policeStationEmail ? (
+                                  <div className="text-slate-400 break-all">{c.policeStationEmail}</div>
+                                ) : (
+                                  <div className="font-bold text-red-600">Missing Police Email *</div>
+                                )}
+                              </div>
+                            </td>
 
-                          <td className="px-4 py-3.5 align-middle text-center" onClick={(e) => e.stopPropagation()}>
-                            <div className="flex items-center justify-center gap-1.5">
-                              <button
-                                type="button"
-                                onClick={() => handleOpenModal(idx, false)}
-                                className="p-2 text-slate-500 hover:text-slate-900 bg-slate-50 hover:bg-slate-100 rounded-xl transition-colors cursor-pointer"
-                                title="View Details"
-                              >
-                                <Eye className="w-3.5 h-3.5" />
-                              </button>
-                              <button
-                                type="button"
-                                onClick={() => handleOpenModal(idx, true)}
-                                className="p-2 text-[#DC2626] hover:text-white bg-red-50 hover:bg-[#DC2626] rounded-xl transition-colors cursor-pointer"
-                                title="Edit Claim"
-                              >
-                                <Edit className="w-3.5 h-3.5" />
-                              </button>
-                              <button
-                                type="button"
-                                onClick={() => handleDeleteParsedRow(idx)}
-                                className="p-2 text-red-600 hover:text-white bg-red-50 hover:bg-red-600 rounded-xl transition-colors cursor-pointer"
-                                title="Delete Claim"
-                              >
-                                <Trash2 className="w-3.5 h-3.5" />
-                              </button>
-                            </div>
-                          </td>
-                        </tr>
-                      ))}
+                            <td className="px-4 py-3.5 align-top min-w-[220px]">
+                              {c.invoices && c.invoices.length > 0 ? (
+                                <div className="space-y-1.5">
+                                  <div className="text-[10px] font-extrabold uppercase text-slate-500">
+                                    {c.invoices.length} {c.invoices.length === 1 ? "Record" : "Records"}
+                                  </div>
+                                  <div className="space-y-1 max-h-28 overflow-y-auto pr-1">
+                                    {c.invoices.map((inv: any, invIdx: number) => (
+                                      <div
+                                        key={invIdx}
+                                        className="bg-slate-50 border border-slate-200/70 rounded-lg px-2 py-1 text-[10px] flex flex-col gap-0.5"
+                                      >
+                                        <div className="flex items-center justify-between gap-2">
+                                          {inv.invoiceNo ? (
+                                            <span className="font-bold text-slate-800">{inv.invoiceNo}</span>
+                                          ) : (
+                                            <span className="font-bold text-red-600">Missing No *</span>
+                                          )}
+                                          <span className="font-extrabold text-[#DC2626]">
+                                            ₹{Number(inv.amount || 0).toLocaleString("en-IN")}
+                                          </span>
+                                        </div>
+                                        <div className="flex items-center justify-between gap-2 text-[9px] text-slate-400">
+                                          {inv.invoiceDate ? (
+                                            <span>Date: {formatDateToDisplay(inv.invoiceDate)}</span>
+                                          ) : (
+                                            <span className="font-bold text-red-600">Missing Date *</span>
+                                          )}
+                                          {inv.dueDate && <span>Due: {formatDateToDisplay(inv.dueDate)}</span>}
+                                        </div>
+                                      </div>
+                                    ))}
+                                  </div>
+                                </div>
+                              ) : (
+                                <span className="text-[10px] font-bold text-red-600 bg-red-50 border border-red-200 px-1.5 py-0.5 rounded inline-block">
+                                  {category === "loan-recovery" ? "Missing Loan ID *" : "Missing Invoices *"}
+                                </span>
+                              )}
+                            </td>
+
+                            <td className="px-4 py-3.5 align-middle text-center" onClick={(e) => e.stopPropagation()}>
+                              <div className="flex items-center justify-center gap-1.5">
+                                <button
+                                  type="button"
+                                  onClick={() => handleOpenModal(idx, false)}
+                                  className="p-2 text-slate-500 hover:text-slate-900 bg-slate-50 hover:bg-slate-100 rounded-xl transition-colors cursor-pointer"
+                                  title="View All Details"
+                                >
+                                  <Eye className="w-3.5 h-3.5" />
+                                </button>
+                                <button
+                                  type="button"
+                                  onClick={() => handleOpenModal(idx, true)}
+                                  className="p-2 text-[#DC2626] hover:text-white bg-red-50 hover:bg-[#DC2626] rounded-xl transition-colors cursor-pointer"
+                                  title="Edit Claim"
+                                >
+                                  <Edit className="w-3.5 h-3.5" />
+                                </button>
+                                <button
+                                  type="button"
+                                  onClick={() => handleDeleteParsedRow(idx)}
+                                  className="p-2 text-red-600 hover:text-white bg-red-50 hover:bg-red-600 rounded-xl transition-colors cursor-pointer"
+                                  title="Delete Claim"
+                                >
+                                  <Trash2 className="w-3.5 h-3.5" />
+                                </button>
+                              </div>
+                            </td>
+                          </tr>
+                        );
+                      })}
                     </tbody>
                   </table>
                 </div>
@@ -945,7 +1200,7 @@ export function NewRecoveryForm({ repId }: { repId?: string } = {}) {
                   {isModalEditMode ? "Edit Extracted Claim" : "Claim Details"}
                 </h3>
                 <p className="text-xs text-slate-400 mt-0.5">
-                  {isModalEditMode ? "Modify any fields extracted by ChatGPT." : "Review details interpreted by ChatGPT."}
+                  {isModalEditMode ? "Modify any fields extracted by AI." : "Complete extracted details interpreted by AI for this record."}
                 </p>
               </div>
               <button
@@ -954,129 +1209,658 @@ export function NewRecoveryForm({ repId }: { repId?: string } = {}) {
                   setActiveModalIndex(null);
                   setIsModalEditMode(false);
                 }}
-                className="text-slate-400 hover:text-slate-700 p-1 font-bold text-sm"
+                className="text-slate-400 hover:text-slate-700 p-1 font-bold text-sm cursor-pointer"
               >
                 ✕
               </button>
             </div>
 
-            <div className="p-6 overflow-y-auto flex-1 space-y-4 text-xs">
+            <div className="p-6 overflow-y-auto flex-1 space-y-5 text-xs">
+              {(() => {
+                const currentModalMissing = getMissingNoticeFields({
+                  defaulterName: editDefaulterName,
+                  entityType: editEntityType,
+                  phone: editPhone,
+                  phone2: editPhone2,
+                  email: editEmail,
+                  email2: editEmail2,
+                  ccEmails: editCcEmails,
+                  address: editAddress,
+                  state: editState,
+                  stuckAmount: editStuckAmount,
+                  dueDate: editDueDate,
+                  disbursementDate: editDisbursementDate,
+                  disbursedAmount: editDisbursedAmount,
+                  asOnDate: editAsOnDate,
+                  invoices: editInvoices,
+                  policeStationName: editPoliceStationName,
+                  policeStationEmail: editPoliceStationEmail,
+                  policeStationAddress: editPoliceStationAddress
+                });
+
+                if (currentModalMissing.length > 0) {
+                  return (
+                    <div className="p-3.5 bg-red-50 border border-red-200 rounded-2xl space-y-2">
+                      <div className="flex items-center gap-2 text-red-800 font-black">
+                        <AlertCircle className="w-4 h-4 text-[#DC2626] shrink-0" />
+                        <span>
+                          Missing Mandatory Notice Details ({currentModalMissing.length})
+                        </span>
+                      </div>
+                      <div className="flex flex-wrap gap-1.5">
+                        {currentModalMissing.map((item, mIdx) => (
+                          <span
+                            key={mIdx}
+                            className="px-2 py-0.5 bg-white border border-red-200 text-red-700 rounded-lg text-[10px] font-bold"
+                          >
+                            {item}
+                          </span>
+                        ))}
+                      </div>
+                    </div>
+                  );
+                }
+
+                return (
+                  <div className="p-3 bg-emerald-50 border border-emerald-200 rounded-2xl flex items-center gap-2 text-emerald-800 font-bold">
+                    <CheckCircle2 className="w-4 h-4 text-emerald-600 shrink-0" />
+                    <span>All mandatory details required for Legal Notice & Police Complaint are present.</span>
+                  </div>
+                );
+              })()}
+
               {isModalEditMode ? (
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                   <div className="sm:col-span-2">
-                    <label className="font-bold text-slate-700 block mb-1">Defaulter Legal Name</label>
+                    <label className="font-bold text-slate-700 block mb-1">Defaulter Legal Name *</label>
                     <input
                       type="text"
                       value={editDefaulterName}
                       onChange={(e) => setEditDefaulterName(e.target.value)}
-                      className="w-full px-3 py-2 border border-slate-200 rounded-xl font-bold"
+                      className={`w-full px-3 py-2 border rounded-xl font-bold ${
+                        !editDefaulterName.trim() ? "border-red-400 bg-red-50/30" : "border-slate-200"
+                      }`}
                     />
                   </div>
 
                   <div>
-                    <label className="font-bold text-slate-700 block mb-1">Phone Number</label>
-                    <input
-                      type="text"
-                      value={editPhone}
-                      onChange={(e) => setEditPhone(e.target.value)}
-                      className="w-full px-3 py-2 border border-slate-200 rounded-xl"
-                    />
+                    <label className="font-bold text-slate-700 block mb-1">Constitution / Entity Type</label>
+                    <select
+                      value={editEntityType}
+                      onChange={(e) => setEditEntityType(e.target.value)}
+                      className="w-full px-3 py-2 bg-slate-50 border border-slate-200 rounded-xl font-semibold"
+                    >
+                      <option value="Company">Company</option>
+                      <option value="Individual">Individual</option>
+                      <option value="LLP / Partnership">LLP / Partnership</option>
+                      <option value="Proprietorship">Proprietorship</option>
+                    </select>
                   </div>
 
                   <div>
-                    <label className="font-bold text-slate-700 block mb-1">Email Address</label>
-                    <input
-                      type="email"
-                      value={editEmail}
-                      onChange={(e) => setEditEmail(e.target.value)}
-                      className="w-full px-3 py-2 border border-slate-200 rounded-xl"
-                    />
-                  </div>
-
-                  <div>
-                    <label className="font-bold text-slate-700 block mb-1">Claim Amount (₹)</label>
+                    <label className="font-bold text-slate-700 block mb-1">Claim Amount (₹) *</label>
                     <input
                       type="text"
                       value={editStuckAmount}
                       onChange={(e) => setEditStuckAmount(e.target.value)}
-                      className="w-full px-3 py-2 border border-slate-200 rounded-xl font-bold"
+                      className={`w-full px-3 py-2 border rounded-xl font-bold ${
+                        !editStuckAmount || Number(String(editStuckAmount).replace(/,/g, "")) <= 0
+                          ? "border-red-400 bg-red-50/30"
+                          : "border-slate-200"
+                      }`}
                     />
                   </div>
 
                   <div>
-                    <label className="font-bold text-slate-700 block mb-1">Due Date</label>
+                    <label className="font-bold text-slate-700 block mb-1">Payment Due Date *</label>
                     <input
                       type="date"
                       value={editDueDate}
                       onChange={(e) => setEditDueDate(e.target.value)}
+                      className={`w-full px-3 py-2 border rounded-xl ${
+                        !editDueDate ? "border-red-400 bg-red-50/30" : "border-slate-200"
+                      }`}
+                    />
+                  </div>
+
+                  <div>
+                    <label className="font-bold text-slate-700 block mb-1">State / UT *</label>
+                    <select
+                      value={editState}
+                      onChange={(e) => {
+                        const newState = e.target.value;
+                        setEditState(newState);
+                        if (newState) {
+                          const hq = policeStations.find(
+                            (d) => d.state?.toLowerCase() === newState.toLowerCase()
+                          );
+                          if (hq) {
+                            setEditPoliceStationName(hq.hqName || "");
+                            setEditPoliceStationEmail(hq.emails?.[0] || "");
+                            setEditPoliceStationAddress(hq.hqAddress || "");
+                          }
+                        }
+                      }}
+                      className={`w-full px-3 py-2 bg-slate-50 border rounded-xl font-semibold ${
+                        !editState ? "border-red-400 bg-red-50/30" : "border-slate-200"
+                      }`}
+                    >
+                      <option value="">Select State</option>
+                      {editState && !availablePoliceStates.includes(editState) && (
+                        <option value={editState}>{editState}</option>
+                      )}
+                      {availablePoliceStates.map((st) => (
+                        <option key={st} value={st}>
+                          {st}
+                        </option>
+                      ))}
+                    </select>
+                  </div>
+
+                  {(category === "loan-recovery" || editDisbursedAmount || editDisbursementDate || editAsOnDate) && (
+                    <>
+                      <div>
+                        <label className="font-bold text-slate-700 block mb-1">
+                          Disbursed Amount (₹) {category === "loan-recovery" ? "*" : ""}
+                        </label>
+                        <input
+                          type="text"
+                          value={editDisbursedAmount}
+                          onChange={(e) => setEditDisbursedAmount(e.target.value)}
+                          className={`w-full px-3 py-2 border rounded-xl ${
+                            category === "loan-recovery" &&
+                            (!editDisbursedAmount || Number(String(editDisbursedAmount).replace(/,/g, "")) <= 0)
+                              ? "border-red-400 bg-red-50/30"
+                              : "border-slate-200"
+                          }`}
+                        />
+                      </div>
+
+                      <div>
+                        <label className="font-bold text-slate-700 block mb-1">
+                          Disbursement Date {category === "loan-recovery" ? "*" : ""}
+                        </label>
+                        <input
+                          type="date"
+                          value={editDisbursementDate}
+                          onChange={(e) => setEditDisbursementDate(e.target.value)}
+                          className={`w-full px-3 py-2 border rounded-xl ${
+                            category === "loan-recovery" &&
+                            !editDisbursementDate &&
+                            !editInvoices?.[0]?.invoiceDate
+                              ? "border-red-400 bg-red-50/30"
+                              : "border-slate-200"
+                          }`}
+                        />
+                      </div>
+
+                      <div>
+                        <label className="font-bold text-slate-700 block mb-1">Amount As On Date</label>
+                        <input
+                          type="date"
+                          value={editAsOnDate}
+                          onChange={(e) => setEditAsOnDate(e.target.value)}
+                          className="w-full px-3 py-2 border border-slate-200 rounded-xl"
+                        />
+                      </div>
+                    </>
+                  )}
+
+                  <div>
+                    <label className="font-bold text-slate-700 block mb-1">Primary Phone (10-digit) *</label>
+                    <input
+                      type="text"
+                      value={editPhone}
+                      onChange={(e) => setEditPhone(e.target.value)}
+                      className={`w-full px-3 py-2 border rounded-xl ${
+                        String(editPhone || "").replace(/\D/g, "").length < 10
+                          ? "border-red-400 bg-red-50/30"
+                          : "border-slate-200"
+                      }`}
+                    />
+                  </div>
+
+                  <div>
+                    <label className="font-bold text-slate-700 block mb-1">Secondary Phone (Optional)</label>
+                    <input
+                      type="text"
+                      value={editPhone2}
+                      onChange={(e) => setEditPhone2(e.target.value)}
+                      className="w-full px-3 py-2 border border-slate-200 rounded-xl"
+                    />
+                  </div>
+
+                  <div>
+                    <label className="font-bold text-slate-700 block mb-1">Primary Email *</label>
+                    <input
+                      type="email"
+                      value={editEmail}
+                      onChange={(e) => setEditEmail(e.target.value)}
+                      className={`w-full px-3 py-2 border rounded-xl ${
+                        !editEmail || !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(editEmail.trim())
+                          ? "border-red-400 bg-red-50/30"
+                          : "border-slate-200"
+                      }`}
+                    />
+                  </div>
+
+                  <div>
+                    <label className="font-bold text-slate-700 block mb-1">Secondary Email (Optional)</label>
+                    <input
+                      type="email"
+                      value={editEmail2}
+                      onChange={(e) => setEditEmail2(e.target.value)}
                       className="w-full px-3 py-2 border border-slate-200 rounded-xl"
                     />
                   </div>
 
                   <div className="sm:col-span-2">
-                    <label className="font-bold text-slate-700 block mb-1">Physical Address</label>
+                    <label className="font-bold text-slate-700 block mb-1">CC Emails (Comma-separated)</label>
+                    <input
+                      type="text"
+                      value={editCcEmails}
+                      onChange={(e) => setEditCcEmails(e.target.value)}
+                      placeholder="cc1@example.com, cc2@example.com"
+                      className="w-full px-3 py-2 border border-slate-200 rounded-xl"
+                    />
+                  </div>
+
+                  <div className="sm:col-span-2">
+                    <label className="font-bold text-slate-700 block mb-1">Complete Physical Address *</label>
                     <textarea
                       value={editAddress}
                       onChange={(e) => setEditAddress(e.target.value)}
                       rows={2}
-                      className="w-full px-3 py-2 border border-slate-200 rounded-xl"
+                      className={`w-full px-3 py-2 border rounded-xl ${
+                        !editAddress.trim() ? "border-red-400 bg-red-50/30" : "border-slate-200"
+                      }`}
+                    />
+                  </div>
+
+                  {/* Invoices / Loans Editor */}
+                  <div className="sm:col-span-2 space-y-2 pt-2 border-t border-slate-100">
+                    <div className="flex items-center justify-between">
+                      <label className="font-bold text-slate-700">
+                        Extracted Invoices / Loan Records ({editInvoices.length}) *
+                      </label>
+                      <button
+                        type="button"
+                        onClick={() =>
+                          setEditInvoices((prev) => [
+                            ...prev,
+                            { invoiceNo: "", invoiceDate: "", dueDate: "", amount: 0 }
+                          ])
+                        }
+                        className="text-[10px] font-bold text-[#DC2626] hover:underline flex items-center gap-1 cursor-pointer"
+                      >
+                        <Plus className="w-3 h-3" /> Add Row
+                      </button>
+                    </div>
+                    {editInvoices.length > 0 ? (
+                      <div className="space-y-2 max-h-48 overflow-y-auto pr-1">
+                        {editInvoices.map((inv: any, i: number) => (
+                          <div
+                            key={i}
+                            className="grid grid-cols-12 gap-2 items-center bg-slate-50 p-2 rounded-xl border border-slate-200"
+                          >
+                            <div className="col-span-3">
+                              <span className="text-[9px] text-slate-400 block">Invoice / Loan No *</span>
+                              <input
+                                type="text"
+                                value={inv.invoiceNo || ""}
+                                onChange={(e) => {
+                                  const next = [...editInvoices];
+                                  next[i] = { ...next[i], invoiceNo: e.target.value };
+                                  setEditInvoices(next);
+                                }}
+                                className={`w-full px-2 py-1 bg-white border rounded-lg text-[11px] font-semibold ${
+                                  !inv.invoiceNo ? "border-red-400" : "border-slate-200"
+                                }`}
+                              />
+                            </div>
+                            <div className="col-span-3">
+                              <span className="text-[9px] text-slate-400 block">Invoice Date *</span>
+                              <input
+                                type="date"
+                                value={inv.invoiceDate || ""}
+                                onChange={(e) => {
+                                  const next = [...editInvoices];
+                                  next[i] = { ...next[i], invoiceDate: e.target.value };
+                                  setEditInvoices(next);
+                                }}
+                                className={`w-full px-2 py-1 bg-white border rounded-lg text-[11px] ${
+                                  !inv.invoiceDate ? "border-red-400" : "border-slate-200"
+                                }`}
+                              />
+                            </div>
+                            <div className="col-span-3">
+                              <span className="text-[9px] text-slate-400 block">Due Date</span>
+                              <input
+                                type="date"
+                                value={inv.dueDate || ""}
+                                onChange={(e) => {
+                                  const next = [...editInvoices];
+                                  next[i] = { ...next[i], dueDate: e.target.value };
+                                  setEditInvoices(next);
+                                }}
+                                className="w-full px-2 py-1 bg-white border border-slate-200 rounded-lg text-[11px]"
+                              />
+                            </div>
+                            <div className="col-span-2">
+                              <span className="text-[9px] text-slate-400 block">Amount (₹) *</span>
+                              <input
+                                type="number"
+                                value={inv.amount ?? ""}
+                                onChange={(e) => {
+                                  const next = [...editInvoices];
+                                  next[i] = { ...next[i], amount: parseFloat(e.target.value) || 0 };
+                                  setEditInvoices(next);
+                                  const sum = next.reduce((acc, item) => acc + (Number(item.amount) || 0), 0);
+                                  setEditStuckAmount(String(parseFloat(sum.toFixed(2))));
+                                }}
+                                className="w-full px-2 py-1 bg-white border border-slate-200 rounded-lg text-[11px] font-bold"
+                              />
+                            </div>
+                            <div className="col-span-1 flex justify-end pt-3">
+                              <button
+                                type="button"
+                                onClick={() => {
+                                  const next = editInvoices.filter((_, idx) => idx !== i);
+                                  setEditInvoices(next);
+                                  if (next.length > 0) {
+                                    const sum = next.reduce((acc, item) => acc + (Number(item.amount) || 0), 0);
+                                    setEditStuckAmount(String(parseFloat(sum.toFixed(2))));
+                                  }
+                                }}
+                                className="p-1 text-red-500 hover:bg-red-50 rounded-lg cursor-pointer"
+                                title="Remove Invoice"
+                              >
+                                <Trash2 className="w-3.5 h-3.5" />
+                              </button>
+                            </div>
+                          </div>
+                        ))}
+                      </div>
+                    ) : (
+                      <div className="text-[11px] text-red-600 font-semibold bg-red-50 p-3 rounded-xl border border-red-200">
+                        No individual invoices/loans extracted — required for Notice Annexure / Loan ID.
+                      </div>
+                    )}
+                  </div>
+
+                  {/* Jurisdictional Police Station */}
+                  <div className="sm:col-span-2 border-t border-slate-100 pt-3 mt-1">
+                    <span className="font-extrabold text-[10px] text-slate-400 uppercase tracking-wider">
+                      SHO Jurisdictional Police Station
+                    </span>
+                  </div>
+
+                  <div>
+                    <label className="font-bold text-slate-700 block mb-1">Station Name *</label>
+                    <input
+                      type="text"
+                      value={editPoliceStationName}
+                      onChange={(e) => setEditPoliceStationName(e.target.value)}
+                      className={`w-full px-3 py-2 border rounded-xl ${
+                        !editPoliceStationName.trim() ? "border-red-400 bg-red-50/30" : "border-slate-200"
+                      }`}
+                    />
+                  </div>
+
+                  <div>
+                    <label className="font-bold text-slate-700 block mb-1">Station Email *</label>
+                    <input
+                      type="email"
+                      value={editPoliceStationEmail}
+                      onChange={(e) => setEditPoliceStationEmail(e.target.value)}
+                      className={`w-full px-3 py-2 border rounded-xl ${
+                        !editPoliceStationEmail.trim() ? "border-red-400 bg-red-50/30" : "border-slate-200"
+                      }`}
+                    />
+                  </div>
+
+                  <div className="sm:col-span-2">
+                    <label className="font-bold text-slate-700 block mb-1">Station Address *</label>
+                    <textarea
+                      value={editPoliceStationAddress}
+                      onChange={(e) => setEditPoliceStationAddress(e.target.value)}
+                      rows={2}
+                      className={`w-full px-3 py-2 border rounded-xl ${
+                        !editPoliceStationAddress.trim() ? "border-red-400 bg-red-50/30" : "border-slate-200"
+                      }`}
                     />
                   </div>
                 </div>
               ) : (
                 <div className="space-y-4">
-                  <div className="grid grid-cols-2 gap-4 bg-slate-50 p-4 rounded-2xl">
-                    <div>
-                      <span className="text-[10px] uppercase font-bold text-slate-400">Defaulter Name</span>
-                      <div className="font-extrabold text-slate-900 text-sm">{editDefaulterName}</div>
+                  {/* Section 1: Defaulter & Dues Summary */}
+                  <div className="border border-slate-200/80 rounded-2xl overflow-hidden">
+                    <div className="bg-slate-50 border-b border-slate-200/80 px-4 py-2 font-black text-slate-700 uppercase tracking-wider text-[10px]">
+                      Defaulter & Claim Summary
                     </div>
-                    <div>
-                      <span className="text-[10px] uppercase font-bold text-slate-400">Claim Amount</span>
-                      <div className="font-extrabold text-[#DC2626] text-sm">₹{Number(editStuckAmount || 0).toLocaleString("en-IN")}</div>
-                    </div>
-                    <div>
-                      <span className="text-[10px] uppercase font-bold text-slate-400">Contact</span>
-                      <div className="text-slate-800">{editPhone}</div>
-                      <div className="text-slate-400">{editEmail}</div>
-                    </div>
-                    <div>
-                      <span className="text-[10px] uppercase font-bold text-slate-400">Due Date</span>
-                      <div className="text-slate-800">{formatDateToDisplay(editDueDate)}</div>
+                    <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 p-4">
+                      <div>
+                        <span className="text-[10px] uppercase font-bold text-slate-400 block">Defaulter Legal Name *</span>
+                        {editDefaulterName ? (
+                          <span className="font-extrabold text-slate-900 text-sm">{editDefaulterName}</span>
+                        ) : (
+                          <span className="text-red-600 font-bold">Missing — Required for Notice</span>
+                        )}
+                      </div>
+                      <div>
+                        <span className="text-[10px] uppercase font-bold text-slate-400 block">Constitution / Entity Type</span>
+                        <span className="font-bold text-slate-800">{editEntityType || "Company"}</span>
+                      </div>
+                      <div>
+                        <span className="text-[10px] uppercase font-bold text-slate-400 block">Total Claim Amount *</span>
+                        {editStuckAmount && Number(String(editStuckAmount).replace(/,/g, "")) > 0 ? (
+                          <span className="font-extrabold text-[#DC2626] text-sm">
+                            ₹{Number(String(editStuckAmount || 0).replace(/,/g, "")).toLocaleString("en-IN")}
+                          </span>
+                        ) : (
+                          <span className="text-red-600 font-bold">Missing — Required for Notice</span>
+                        )}
+                      </div>
+                      <div>
+                        <span className="text-[10px] uppercase font-bold text-slate-400 block">Payment Due Date *</span>
+                        {editDueDate ? (
+                          <span className="font-bold text-slate-800">{formatDateToDisplay(editDueDate)}</span>
+                        ) : (
+                          <span className="text-red-600 font-bold">Missing — Required for Notice</span>
+                        )}
+                      </div>
+                      {(category === "loan-recovery" || editDisbursedAmount) && (
+                        <div>
+                          <span className="text-[10px] uppercase font-bold text-slate-400 block">
+                            Disbursed Amount {category === "loan-recovery" ? "*" : ""}
+                          </span>
+                          {editDisbursedAmount && Number(String(editDisbursedAmount).replace(/,/g, "")) > 0 ? (
+                            <span className="font-bold text-slate-800">
+                              ₹{Number(String(editDisbursedAmount).replace(/,/g, "")).toLocaleString("en-IN")}
+                            </span>
+                          ) : (
+                            <span className="text-red-600 font-bold">Missing — Required for Loan Notice</span>
+                          )}
+                        </div>
+                      )}
+                      {(category === "loan-recovery" || editDisbursementDate) && (
+                        <div>
+                          <span className="text-[10px] uppercase font-bold text-slate-400 block">
+                            Disbursement Date {category === "loan-recovery" ? "*" : ""}
+                          </span>
+                          {editDisbursementDate || editInvoices?.[0]?.invoiceDate ? (
+                            <span className="font-bold text-slate-800">
+                              {formatDateToDisplay(editDisbursementDate || editInvoices?.[0]?.invoiceDate)}
+                            </span>
+                          ) : (
+                            <span className="text-red-600 font-bold">Missing — Required for Loan Notice</span>
+                          )}
+                        </div>
+                      )}
+                      {(category === "loan-recovery" || editAsOnDate) && (
+                        <div>
+                          <span className="text-[10px] uppercase font-bold text-slate-400 block">Amount As On Date</span>
+                          <span className="font-bold text-slate-800">
+                            {editAsOnDate ? formatDateToDisplay(editAsOnDate) : "Defaults to Notice Date"}
+                          </span>
+                        </div>
+                      )}
                     </div>
                   </div>
 
-                  <div>
-                    <span className="text-[10px] uppercase font-bold text-slate-400">Physical Address</span>
-                    <div className="text-slate-800 mt-0.5">{editAddress || "Not provided"}</div>
+                  {/* Section 2: Contact Details */}
+                  <div className="border border-slate-200/80 rounded-2xl overflow-hidden">
+                    <div className="bg-slate-50 border-b border-slate-200/80 px-4 py-2 font-black text-slate-700 uppercase tracking-wider text-[10px]">
+                      Contact Details
+                    </div>
+                    <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 p-4">
+                      <div>
+                        <span className="text-[10px] uppercase font-bold text-slate-400 block">Primary Phone *</span>
+                        {editPhone && String(editPhone).replace(/\D/g, "").length >= 10 ? (
+                          <span className="font-semibold text-slate-800">{editPhone}</span>
+                        ) : (
+                          <span className="text-red-600 font-bold">
+                            {editPhone ? `Invalid (${editPhone}) — 10-digit Required` : "Missing — Required for WhatsApp & Notice"}
+                          </span>
+                        )}
+                      </div>
+                      <div>
+                        <span className="text-[10px] uppercase font-bold text-slate-400 block">Secondary Phone</span>
+                        <span className="font-semibold text-slate-800">{editPhone2 || "-"}</span>
+                      </div>
+                      <div>
+                        <span className="text-[10px] uppercase font-bold text-slate-400 block">Primary Email *</span>
+                        {editEmail && /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(editEmail.trim()) ? (
+                          <span className="font-semibold text-slate-800 break-all">{editEmail}</span>
+                        ) : (
+                          <span className="text-red-600 font-bold">
+                            {editEmail ? `Invalid (${editEmail})` : "Missing — Required for Email Dispatch"}
+                          </span>
+                        )}
+                      </div>
+                      <div>
+                        <span className="text-[10px] uppercase font-bold text-slate-400 block">Secondary Email</span>
+                        <span className="font-semibold text-slate-800 break-all">{editEmail2 || "-"}</span>
+                      </div>
+                      <div className="sm:col-span-2">
+                        <span className="text-[10px] uppercase font-bold text-slate-400 block">CC Emails</span>
+                        <span className="font-semibold text-slate-800 break-all">{editCcEmails || "-"}</span>
+                      </div>
+                    </div>
                   </div>
 
-                  {editInvoices && editInvoices.length > 0 && (
-                    <div>
-                      <span className="text-[10px] uppercase font-bold text-slate-400 block mb-1">
-                        Invoices ({editInvoices.length})
-                      </span>
-                      <div className="border border-slate-200 rounded-xl overflow-hidden">
+                  {/* Section 3: Location & Physical Address */}
+                  <div className="border border-slate-200/80 rounded-2xl overflow-hidden">
+                    <div className="bg-slate-50 border-b border-slate-200/80 px-4 py-2 font-black text-slate-700 uppercase tracking-wider text-[10px]">
+                      Location & Physical Address
+                    </div>
+                    <div className="grid grid-cols-1 sm:grid-cols-3 gap-3 p-4">
+                      <div>
+                        <span className="text-[10px] uppercase font-bold text-slate-400 block">State / UT *</span>
+                        {editState ? (
+                          <span className="font-bold text-slate-800">{editState}</span>
+                        ) : (
+                          <span className="text-red-600 font-bold">Missing — Required</span>
+                        )}
+                      </div>
+                      <div className="sm:col-span-2">
+                        <span className="text-[10px] uppercase font-bold text-slate-400 block">Physical Address *</span>
+                        {editAddress ? (
+                          <span className="font-semibold text-slate-800 whitespace-pre-wrap">{editAddress}</span>
+                        ) : (
+                          <span className="text-red-600 font-bold">Missing — Required for Notice Addressee</span>
+                        )}
+                      </div>
+                    </div>
+                  </div>
+
+                  {/* Section 4: Invoices / Loans */}
+                  <div className="border border-slate-200/80 rounded-2xl overflow-hidden">
+                    <div className="bg-slate-50 border-b border-slate-200/80 px-4 py-2 font-black text-slate-700 uppercase tracking-wider text-[10px] flex items-center justify-between">
+                      <span>Extracted Invoices / Loans ({editInvoices ? editInvoices.length : 0}) *</span>
+                      {editInvoices && editInvoices.length > 0 && (
+                        <span className="text-[#DC2626]">
+                          Sum: ₹
+                          {editInvoices
+                            .reduce((acc: number, inv: any) => acc + (Number(inv.amount) || 0), 0)
+                            .toLocaleString("en-IN")}
+                        </span>
+                      )}
+                    </div>
+                    {editInvoices && editInvoices.length > 0 ? (
+                      <div className="overflow-x-auto">
                         <table className="w-full text-left text-xs">
-                          <thead className="bg-slate-50 text-[10px] font-bold text-slate-500">
+                          <thead className="bg-slate-50/60 border-b border-slate-100 text-[10px] font-bold text-slate-500">
                             <tr>
-                              <th className="p-2">Invoice No</th>
-                              <th className="p-2">Date</th>
-                              <th className="p-2 text-right">Amount</th>
+                              <th className="px-4 py-2">Invoice / Loan No *</th>
+                              <th className="px-4 py-2">Invoice Date *</th>
+                              <th className="px-4 py-2">Due Date</th>
+                              <th className="px-4 py-2 text-right">Amount *</th>
                             </tr>
                           </thead>
                           <tbody className="divide-y divide-slate-100">
                             {editInvoices.map((inv: any, i: number) => (
                               <tr key={i}>
-                                <td className="p-2 font-bold">{inv.invoiceNo}</td>
-                                <td className="p-2 text-slate-500">{inv.invoiceDate || "-"}</td>
-                                <td className="p-2 text-right font-bold">₹{Number(inv.amount || 0).toLocaleString("en-IN")}</td>
+                                <td className="px-4 py-2 font-bold text-slate-800">
+                                  {inv.invoiceNo || <span className="text-red-600">Missing *</span>}
+                                </td>
+                                <td className="px-4 py-2 text-slate-600">
+                                  {inv.invoiceDate ? (
+                                    formatDateToDisplay(inv.invoiceDate)
+                                  ) : (
+                                    <span className="text-red-600 font-bold">Missing *</span>
+                                  )}
+                                </td>
+                                <td className="px-4 py-2 text-slate-600">{formatDateToDisplay(inv.dueDate)}</td>
+                                <td className="px-4 py-2 text-right font-bold text-[#DC2626]">
+                                  ₹{Number(inv.amount || 0).toLocaleString("en-IN")}
+                                </td>
                               </tr>
                             ))}
                           </tbody>
                         </table>
                       </div>
+                    ) : (
+                      <div className="p-4 text-red-600 font-bold">
+                        Missing — Required for Notice Annexure-A / Loan ID
+                      </div>
+                    )}
+                  </div>
+
+                  {/* Section 5: Jurisdictional Police Station */}
+                  <div className="border border-slate-200/80 rounded-2xl overflow-hidden">
+                    <div className="bg-slate-50 border-b border-slate-200/80 px-4 py-2 font-black text-slate-700 uppercase tracking-wider text-[10px]">
+                      Jurisdictional Police Station (Auto-Mapped)
                     </div>
-                  )}
+                    <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 p-4">
+                      <div>
+                        <span className="text-[10px] uppercase font-bold text-slate-400 block">Station Name *</span>
+                        {editPoliceStationName ? (
+                          <span className="font-bold text-slate-900">{editPoliceStationName}</span>
+                        ) : (
+                          <span className="text-red-600 font-bold">Missing — Required for Police Complaint</span>
+                        )}
+                      </div>
+                      <div>
+                        <span className="text-[10px] uppercase font-bold text-slate-400 block">Station Email *</span>
+                        {editPoliceStationEmail ? (
+                          <span className="font-semibold text-slate-800 break-all">{editPoliceStationEmail}</span>
+                        ) : (
+                          <span className="text-red-600 font-bold">Missing — Required for Police Complaint</span>
+                        )}
+                      </div>
+                      <div className="sm:col-span-2">
+                        <span className="text-[10px] uppercase font-bold text-slate-400 block">Station Address *</span>
+                        {editPoliceStationAddress ? (
+                          <span className="font-semibold text-slate-800 whitespace-pre-wrap">
+                            {editPoliceStationAddress}
+                          </span>
+                        ) : (
+                          <span className="text-red-600 font-bold">Missing — Required for Police Complaint</span>
+                        )}
+                      </div>
+                    </div>
+                  </div>
                 </div>
               )}
             </div>
@@ -1087,14 +1871,14 @@ export function NewRecoveryForm({ repId }: { repId?: string } = {}) {
                   <button
                     type="button"
                     onClick={() => setIsModalEditMode(false)}
-                    className="px-4 py-2 text-xs font-bold text-slate-600 hover:bg-slate-100 rounded-xl"
+                    className="px-4 py-2 text-xs font-bold text-slate-600 hover:bg-slate-100 rounded-xl cursor-pointer"
                   >
                     Cancel Edit
                   </button>
                   <button
                     type="button"
                     onClick={handleSaveModalDetails}
-                    className="px-5 py-2 bg-[#DC2626] hover:bg-[#B91C1C] text-white text-xs font-bold rounded-xl"
+                    className="px-5 py-2 bg-[#DC2626] hover:bg-[#B91C1C] text-white text-xs font-bold rounded-xl cursor-pointer"
                   >
                     Save Changes
                   </button>
@@ -1104,14 +1888,14 @@ export function NewRecoveryForm({ repId }: { repId?: string } = {}) {
                   <button
                     type="button"
                     onClick={() => setIsModalEditMode(true)}
-                    className="px-4 py-2 bg-red-50 hover:bg-red-100 text-[#DC2626] border border-red-200 text-xs font-bold rounded-xl"
+                    className="px-4 py-2 bg-red-50 hover:bg-red-100 text-[#DC2626] border border-red-200 text-xs font-bold rounded-xl cursor-pointer"
                   >
                     Edit This Claim
                   </button>
                   <button
                     type="button"
                     onClick={() => setActiveModalIndex(null)}
-                    className="px-5 py-2 bg-slate-900 text-white text-xs font-bold rounded-xl"
+                    className="px-5 py-2 bg-slate-900 text-white text-xs font-bold rounded-xl cursor-pointer"
                   >
                     Close
                   </button>

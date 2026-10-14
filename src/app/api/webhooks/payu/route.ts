@@ -180,6 +180,9 @@ export async function POST(req: NextRequest) {
           
           // Delete from pending_payment to clean up database
           await db.collection("pending_payment").deleteOne({ _id: userPendingId });
+          // The phone is now in 'users': drop duplicate signup leads and any OTP records for it
+          await db.collection("pending_payment").deleteMany({ phone: pendingUser.phone, isReturningUser: { $ne: true } });
+          await db.collection("pending_verification").deleteMany({ phone: pendingUser.phone });
           console.log("Webhook successfully migrated user from pending_payment to users! ID:", userPendingId.toString());
 
           // Retrieve the migrated user document to get their true database _id and record in the transactions collection (deduplicated)
@@ -248,6 +251,11 @@ export async function POST(req: NextRequest) {
             
             // Trigger notifications if not already sent (safely deduplicated inside processPaymentSuccessNotifications)
             const user = await db.collection("users").findOne(query);
+            if (user?.phone) {
+              // User is in 'users' (paid): remove any leftover signup lead / OTP record for this phone
+              await db.collection("pending_payment").deleteMany({ phone: user.phone, isReturningUser: { $ne: true } });
+              await db.collection("pending_verification").deleteMany({ phone: user.phone });
+            }
             if (user) {
               const PRICE_PER_OPPOSITION = 999; // TO CHANGE TO PRODUCTION PRICE: Change 1 to 999
               const oppCount = user.oppositionCount || 1;
