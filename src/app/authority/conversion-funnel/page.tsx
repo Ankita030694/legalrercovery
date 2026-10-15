@@ -391,6 +391,31 @@ export default function ConversionFunnel() {
     }
   };
 
+  const handleStartAllUnpaidWave1 = async () => {
+    setActionLoadingKey("start_all_unpaid_wave_1");
+    try {
+      const res = await fetch("/api/admin/funnel", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ action: "start_all_unpaid_wave_1" }),
+      });
+      const json = await res.json();
+      if (!res.ok || !json.success) {
+        showToast(json.error || "Failed to start Wave 1 for unpaid users.", "error");
+      } else {
+        showToast(
+          json.message ||
+            `Started Wave 1 for ${json.wave1DispatchedCount || 0} unique unpaid users!`
+        );
+        fetchPage(1, false);
+      }
+    } catch {
+      showToast("Error starting Wave 1 for unpaid users.", "error");
+    } finally {
+      setActionLoadingKey(null);
+    }
+  };
+
   const handleSendWave = async (
     item: FunnelItem,
     wave: 1 | 2 | 3,
@@ -537,6 +562,20 @@ export default function ConversionFunnel() {
             ) : (
               <ChevronDown className="w-3.5 h-3.5 text-slate-400" />
             )}
+          </button>
+
+          <button
+            onClick={handleStartAllUnpaidWave1}
+            disabled={actionLoadingKey === "start_all_unpaid_wave_1" || runningQueue}
+            className="px-4 py-2.5 rounded-xl bg-[#DC2626] hover:bg-[#B91C1C] text-white text-xs font-black flex items-center gap-2 cursor-pointer transition-all shadow-sm disabled:opacity-60"
+            title="Removes paid duplicates, deduplicates unpaid leads, and sends Wave 1 to all unique truly unpaid users"
+          >
+            {actionLoadingKey === "start_all_unpaid_wave_1" ? (
+              <Loader2 className="w-4 h-4 animate-spin text-white" />
+            ) : (
+              <Send className="w-3.5 h-3.5 text-white" />
+            )}
+            <span>Start Wave 1 for All Unpaid</span>
           </button>
 
           <button

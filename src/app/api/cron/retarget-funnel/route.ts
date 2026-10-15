@@ -2,7 +2,10 @@ import { NextRequest, NextResponse } from "next/server";
 import { getDbAndBucket } from "@/lib/mongodb";
 import { getServerSession } from "next-auth/next";
 import { authOptions } from "@/lib/auth";
-import { runAutomatedFunnelQueue } from "@/lib/funnel-dispatcher";
+import {
+  runAutomatedFunnelQueue,
+  startWave1ForAllUnpaidLeads,
+} from "@/lib/funnel-dispatcher";
 
 export const maxDuration = 300;
 export const dynamic = "force-dynamic";
@@ -26,7 +29,20 @@ async function handleCron(req: NextRequest) {
   try {
     const { db } = await getDbAndBucket("fs");
     const url = new URL(req.url);
+    const mode = url.searchParams.get("mode");
     const force = url.searchParams.get("force") === "true" || isAdminSession;
+
+    if (mode === "start_wave_1") {
+      const batchSummary = await startWave1ForAllUnpaidLeads(db, {
+        batchLimit: 500,
+      });
+      return NextResponse.json({
+        success: true,
+        mode: "start_wave_1",
+        timestamp: new Date().toISOString(),
+        ...batchSummary,
+      });
+    }
 
     const summary = await runAutomatedFunnelQueue(db, {
       forceRunWhenPaused: force,

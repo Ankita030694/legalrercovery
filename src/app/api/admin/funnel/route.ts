@@ -13,8 +13,10 @@ import {
 } from "@/lib/funnel-config";
 import {
   LeadCollectionName,
+  cleanupAndDeduplicateUnpaidLeads,
   dispatchWaveToLead,
   runAutomatedFunnelQueue,
+  startWave1ForAllUnpaidLeads,
 } from "@/lib/funnel-dispatcher";
 
 export const dynamic = "force-dynamic";
@@ -88,12 +90,14 @@ function computeNextWaveSchedule(doc: any, status: string, settings: FunnelSetti
   const startMs = startDate.getTime();
   if (isNaN(startMs) || startMs <= 0) return null;
 
-  // Only show live countdowns for leads from the last 14 days (matches automated queue window)
-  const ageDays = (Date.now() - startMs) / (1000 * 60 * 60 * 24);
-  if (ageDays > 14) return null;
-
   const waves = doc.retargeting?.waves || {};
+  const currentWave = Number(doc.retargeting?.currentWave) || 0;
+  const ageDays = (Date.now() - startMs) / (1000 * 60 * 60 * 24);
+  if (ageDays > 14 && currentWave === 0) return null;
+
   const nowMs = Date.now();
+  const w1Cfg = settings.waves.find((w) => w.wave === 1) || settings.waves[0];
+  const w2Cfg = settings.waves.find((w) => w.wave === 2) || settings.waves[1];
 
   for (const wCfg of settings.waves) {
     if (!wCfg.enabled) continue;
@@ -101,7 +105,21 @@ function computeNextWaveSchedule(doc: any, status: string, settings: FunnelSetti
     const done = Boolean(wState?.whatsappSent && wState?.emailSent) || (Number(wState?.attempts) || 0) >= 3;
     if (done) continue;
 
-    const dueMs = startMs + wCfg.delayMinutes * 60 * 1000;
+    let dueMs = startMs + wCfg.delayMinutes * 60 * 1000;
+    if (wCfg.wave === 2) {
+      const w1SentAt = waves["1"]?.sentAt || waves["1"]?.lastAttemptAt;
+      if (w1SentAt) {
+        const gapMins = Math.max(30, wCfg.delayMinutes - (w1Cfg?.delayMinutes || 30));
+        dueMs = new Date(w1SentAt).getTime() + gapMins * 60 * 1000;
+      }
+    } else if (wCfg.wave === 3) {
+      const w2SentAt = waves["2"]?.sentAt || waves["2"]?.lastAttemptAt;
+      if (w2SentAt) {
+        const gapMins = Math.max(60, wCfg.delayMinutes - (w2Cfg?.delayMinutes || 360));
+        dueMs = new Date(w2SentAt).getTime() + gapMins * 60 * 1000;
+      }
+    }
+
     const dueInMinutes = Math.round((dueMs - nowMs) / (60 * 1000));
     return {
       wave: wCfg.wave,
@@ -286,6 +304,15 @@ export async function GET(req: NextRequest) {
     );
     const status = url.searchParams.get("status") || "all";
     const search = (url.searchParams.get("search") || "").trim();
+
+    // Automatically remove paid users' stale pending entries & deduplicate unpaid leads on initial page load
+    if (page === 1 && !search) {
+      try {
+        await cleanupAndDeduplicateUnpaidLeads(db);
+      } catch (cleanErr) {
+        console.warn("[Funnel API GET] Non-fatal cleanup warning:", cleanErr);
+      }
+    }
 
     const skip = (page - 1) * limit;
     const searchFilter = buildSearchFilter(search);
@@ -557,7 +584,19 @@ export async function POST(req: NextRequest) {
       return NextResponse.json({
         success: true,
         ...queueRes,
-        message: `Processed ${queueRes.processed} due leads (${queueRes.skipped} skipped).`,
+        message: `Processed ${queueRes.processed} due leads (${queueRes.skipped} skipped, ${queueRes.removedPaidDuplicates} paid duplicates cleaned).`,
+      });
+    }
+
+    // 2b. Clean Up Paid/Duplicate Leads & Start Wave 1 for All Unique Truly Unpaid Users
+    if (action === "start_all_unpaid_wave_1") {
+      const batchRes = await startWave1ForAllUnpaidLeads(db, {
+        batchLimit: 500,
+      });
+      return NextResponse.json({
+        success: true,
+        ...batchRes,
+        message: `Started Wave 1 for ${batchRes.wave1DispatchedCount} unique unpaid users (${batchRes.removedPaidDuplicates} paid entries & ${batchRes.removedUnpaidDuplicates} duplicate entries removed). Waves 2 & 3 will now follow automatically!`,
       });
     }
 
