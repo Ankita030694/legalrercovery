@@ -61,8 +61,12 @@ export default async function PaymentFailurePage() {
         </div>
 
         <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
-          <Link href="/" className="w-full sm:w-auto px-8 py-3.5 font-black text-white bg-[#DC2626] hover:bg-[#B91C1C] rounded-xl transition-all shadow-md flex items-center justify-center gap-2">
-            <RefreshCw className="w-4 h-4" /> Try Again
+          <Link
+            href={data?.resumeToken ? `/resume/${data.resumeToken}` : "/"}
+            className="w-full sm:w-auto px-8 py-3.5 font-black text-white bg-[#DC2626] hover:bg-[#B91C1C] rounded-xl transition-all shadow-md flex items-center justify-center gap-2"
+          >
+            <RefreshCw className="w-4 h-4" />
+            {data?.resumeToken ? "Retry Payment Now (No OTP)" : "Try Again"}
           </Link>
           <Link href="/contact" className="w-full sm:w-auto px-8 py-3.5 font-bold text-[#4B5563] bg-white hover:bg-slate-50 border border-slate-200 rounded-xl transition-all flex items-center justify-center gap-2">
             <ArrowLeft className="w-4 h-4" /> Get Help

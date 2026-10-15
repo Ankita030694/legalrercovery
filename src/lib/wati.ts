@@ -415,6 +415,158 @@ export async function sendPoliceComplaintWati(
   }
 }
 
+export interface WatiFunnelRetargetingParams {
+  phone: string;
+  wave: 1 | 2 | 3;
+  templateName?: string;
+  userName: string;
+  discountPercent: number;
+  originalAmount: number;
+  discountedAmount: number;
+  resumeToken: string;
+  magicUrl: string;
+}
 
+/**
+ * Dispatches Automated Sales Funnel Retargeting WhatsApp messages (Wave 1, Wave 2, Wave 3).
+ * STRICTLY uses the Legal Recovery WATI account (WATI_API_KEY + WATI_API_ENDPOINT).
+ */
+export async function sendWatiFunnelRetargeting({
+  phone,
+  wave,
+  templateName,
+  userName,
+  discountPercent,
+  originalAmount,
+  discountedAmount,
+  resumeToken,
+  magicUrl,
+}: WatiFunnelRetargetingParams): Promise<{ ok: boolean; error?: string }> {
+  const apiKey = process.env.WATI_API_KEY;
+  const endpoint = process.env.WATI_API_ENDPOINT;
 
+  if (!apiKey || !endpoint) {
+    const msg = "WATI_API_KEY or WATI_API_ENDPOINT is not configured for Legal Recovery WATI.";
+    console.error("[Funnel WATI Error]:", msg);
+    return { ok: false, error: msg };
+  }
 
+  let formattedPhone = (phone || "").trim().replace(/\D/g, "");
+  if (formattedPhone.startsWith("0") && formattedPhone.length === 11) {
+    formattedPhone = formattedPhone.slice(1);
+  }
+  if (formattedPhone.length === 10) {
+    formattedPhone = `91${formattedPhone}`;
+  }
+
+  const url = `${endpoint.replace(/\/$/, "")}/api/v2/sendTemplateMessage?whatsappNumber=${formattedPhone}`;
+  const authHeader = apiKey.startsWith("Bearer ") ? apiKey : `Bearer ${apiKey}`;
+
+  const cleanName = (userName || "there").trim();
+  const formattedOriginal = originalAmount.toLocaleString("en-IN");
+  const formattedDiscounted = discountedAmount.toLocaleString("en-IN");
+  const pctStr = String(discountPercent || 15);
+
+  const resolvedTemplate =
+    templateName ||
+    (wave === 1
+      ? "signup_recovery_wave_1"
+      : wave === 2
+      ? "signup_recovery_discount_wave_2_v2"
+      : "signup_recovery_final_wave_3");
+
+  let parameters: Array<{ name: string; value: string }> = [];
+
+  if (wave === 1) {
+    // Template: signup_recovery_wave_1
+    // Hi {{1}}, ... complete your ₹{{2}} activation ... {{3}} + CTA button {{4}}
+    parameters = [
+      { name: "1", value: cleanName },
+      { name: "2", value: formattedDiscounted },
+      { name: "3", value: magicUrl },
+      { name: "4", value: resumeToken },
+      { name: "name", value: cleanName },
+      { name: "amount", value: formattedDiscounted },
+      { name: "link", value: magicUrl },
+      { name: "token", value: resumeToken },
+    ];
+  } else if (wave === 2) {
+    // Template: signup_recovery_discount_wave_2_v2
+    // Hi {{1}}, ... *{{2}}%* FEE DROP ... Regular: ₹{{3}} ... Unlocked: *₹{{4}}* + CTA button {{5}}
+    parameters = [
+      { name: "1", value: cleanName },
+      { name: "2", value: pctStr },
+      { name: "3", value: formattedOriginal },
+      { name: "4", value: formattedDiscounted },
+      { name: "5", value: resumeToken },
+      { name: "6", value: resumeToken },
+      { name: "name", value: cleanName },
+      { name: "discount", value: pctStr },
+      { name: "original_amount", value: formattedOriginal },
+      { name: "discounted_amount", value: formattedDiscounted },
+      { name: "token", value: resumeToken },
+      { name: "link", value: magicUrl },
+    ];
+  } else {
+    // Template: signup_recovery_final_wave_3
+    // 🚨 Last Call for {{1}}: Your unlocked {{2}}% discount (₹{{3}} instead of ₹{{4}}) ... Lock in your ₹{{3}} ... resets to ₹{{4}}: {{5}} + CTA button {{6}}
+    parameters = [
+      { name: "1", value: cleanName },
+      { name: "2", value: pctStr },
+      { name: "3", value: formattedDiscounted },
+      { name: "4", value: formattedOriginal },
+      { name: "5", value: magicUrl },
+      { name: "6", value: resumeToken },
+      { name: "name", value: cleanName },
+      { name: "discount", value: pctStr },
+      { name: "discounted_amount", value: formattedDiscounted },
+      { name: "original_amount", value: formattedOriginal },
+      { name: "link", value: magicUrl },
+      { name: "token", value: resumeToken },
+    ];
+  }
+
+  const payload = {
+    template_name: resolvedTemplate,
+    broadcast_name: `${resolvedTemplate}_wave_${wave}`,
+    parameters,
+  };
+
+  try {
+    console.log(
+      `[Funnel WATI] Dispatching Wave ${wave} (${resolvedTemplate}) to ${formattedPhone} via Legal Recovery WATI`
+    );
+    const response = await fetch(url, {
+      method: "POST",
+      headers: {
+        Authorization: authHeader,
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify(payload),
+    });
+
+    const responseText = await response.text();
+    console.log(`[Funnel WATI] Wave ${wave} Response (${response.status}): ${responseText}`);
+
+    if (!response.ok) {
+      return { ok: false, error: `HTTP ${response.status}: ${responseText.slice(0, 200)}` };
+    }
+
+    try {
+      const data = JSON.parse(responseText);
+      if (data.result === false || data.status === "error") {
+        return {
+          ok: false,
+          error: data.info || data.message || JSON.stringify(data).slice(0, 200),
+        };
+      }
+    } catch {
+      // Non-JSON 2xx response is treated as success
+    }
+
+    return { ok: true };
+  } catch (err: any) {
+    console.error(`[Funnel WATI] Network error on Wave ${wave}:`, err);
+    return { ok: false, error: err?.message || "Network error" };
+  }
+}

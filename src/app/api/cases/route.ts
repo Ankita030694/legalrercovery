@@ -341,7 +341,7 @@ export async function POST(req: NextRequest) {
 
     if (!hasUnlimitedCases && currentCreatedCount >= allowedLimit) {
       return NextResponse.json(
-        { error: `Case registration limit reached. Your active plan allows up to ${allowedLimit} opposing parties (calculated at ₹${PRICE_PER_OPPOSITION} per opposition based on ₹${amountPaid} paid). Please contact support or purchase additional slots.` },
+        { error: `Case registration limit reached. Your active plan includes ${allowedLimit} opposing ${allowedLimit === 1 ? "party slot" : "party slots"} (₹${amountPaid} total paid). Please purchase additional slots or contact support.` },
         { status: 403 }
       );
     }

@@ -1,7 +1,7 @@
 import React from "react";
 import { cookies } from "next/headers";
 import { redirect } from "next/navigation";
-import { AlertTriangle, ArrowLeft } from "lucide-react";
+import { AlertTriangle, ArrowLeft, RefreshCw } from "lucide-react";
 import Link from "next/link";
 
 export default async function PaymentCancelledPage() {
@@ -11,6 +11,17 @@ export default async function PaymentCancelledPage() {
   if (!token) {
     redirect("/");
   }
+
+  let resumeToken: string | null = null;
+  try {
+    const decoded = Buffer.from(token, "base64").toString("utf-8");
+    const data = JSON.parse(decoded);
+    resumeToken = data?.resumeToken || null;
+  } catch {
+    // Ignore parse error
+  }
+
+  const retryHref = resumeToken ? `/resume/${resumeToken}` : "/";
 
   return (
     <div className="min-h-screen bg-[#F8F9FB] flex items-center justify-center p-4">
@@ -29,12 +40,13 @@ export default async function PaymentCancelledPage() {
         </h1>
         
         <p className="text-[#4B5563] font-medium mb-8">
-          You cancelled the payment process. No charges were made to your account.
+          You cancelled the payment process. No charges were made to your account. Your registration details are saved so you can resume in one click.
         </p>
 
         <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
-          <Link href="/" className="w-full sm:w-auto px-8 py-3.5 font-black text-white bg-[#111827] hover:bg-[#1F2937] rounded-xl transition-all shadow-md flex items-center justify-center gap-2">
-            Return to Home
+          <Link href={retryHref} className="w-full sm:w-auto px-8 py-3.5 font-black text-white bg-[#DC2626] hover:bg-[#B91C1C] rounded-xl transition-all shadow-md flex items-center justify-center gap-2">
+            <RefreshCw className="w-4 h-4" />
+            {resumeToken ? "Resume Checkout Now" : "Return to Home"}
           </Link>
           <Link href="/contact" className="w-full sm:w-auto px-8 py-3.5 font-bold text-[#4B5563] bg-white hover:bg-slate-50 border border-slate-200 rounded-xl transition-all flex items-center justify-center gap-2">
             <ArrowLeft className="w-4 h-4" /> Have a question?

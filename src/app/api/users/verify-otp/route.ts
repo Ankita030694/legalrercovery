@@ -3,6 +3,11 @@ import { getDbAndBucket } from "@/lib/mongodb";
 import { ObjectId } from "mongodb";
 import crypto from "crypto";
 import { createPayUPaymentSession } from "@/lib/payu";
+import {
+  generateResumeToken,
+  getFunnelSettings,
+  resolveEffectiveDiscount,
+} from "@/lib/funnel-config";
 
 export async function POST(req: NextRequest) {
   try {
@@ -73,11 +78,17 @@ export async function POST(req: NextRequest) {
       return response;
     }
 
-    // Check if signup OTP has expired
+    // Check if signup OTP has expired (preserve record in pending_verification so retargeting funnel can recover them)
     if (record.otpExpires && new Date() > new Date(record.otpExpires)) {
-      // Delete expired session immediately
-      await db.collection("pending_verification").deleteOne({ _id: objectId });
+      await db.collection("pending_verification").updateOne(
+        { _id: objectId },
+        { $set: { otpExpired: true, updatedAt: new Date() } }
+      );
       return NextResponse.json({ error: "OTP has expired. Please request a new OTP." }, { status: 400 });
+    }
+
+    if (record.otpLocked) {
+      return NextResponse.json({ error: "Too many failed verification attempts. Please request a new OTP." }, { status: 400 });
     }
 
     // Verify OTP code match (with max 5 failed attempts limit to prevent brute force) using timing-safe comparison
@@ -91,15 +102,18 @@ export async function POST(req: NextRequest) {
       const attempts = (record.failedAttempts || 0) + 1;
       
       if (attempts >= 5) {
-        // Exceeded maximum attempts: delete session immediately
-        await db.collection("pending_verification").deleteOne({ _id: objectId });
+        // Mark locked instead of deleting so retargeting funnel can still recover this lead via magic link
+        await db.collection("pending_verification").updateOne(
+          { _id: objectId },
+          { $set: { failedAttempts: attempts, otpLocked: true, updatedAt: new Date() } }
+        );
         return NextResponse.json({ error: "Too many failed verification attempts. Please request a new OTP." }, { status: 400 });
       }
 
       // Increment failed attempts count
       await db.collection("pending_verification").updateOne(
         { _id: objectId },
-        { $set: { failedAttempts: attempts } }
+        { $set: { failedAttempts: attempts, updatedAt: new Date() } }
       );
 
       return NextResponse.json({ 
@@ -116,6 +130,37 @@ export async function POST(req: NextRequest) {
     if (baseOrigin.includes("localhost") || baseOrigin.includes("127.0.0.1")) {
       baseOrigin = "https://legalrecovery.in";
     }
+
+    const funnelSettings = await getFunnelSettings(db);
+    const existingPaymentDoc = await db.collection("pending_payment").findOne({ phone: record.phone });
+
+    // Merge funnel state from pending_verification and any prior pending_payment record
+    const resumeToken = record.resumeToken || existingPaymentDoc?.resumeToken || generateResumeToken();
+    const funnelStartedAt =
+      record.funnelStartedAt ||
+      existingPaymentDoc?.funnelStartedAt ||
+      record.createdAt ||
+      new Date();
+    const mergedDiscountPercent = Math.max(
+      Number(record.discountPercent) || 0,
+      Number(existingPaymentDoc?.discountPercent) || 0
+    );
+    const discountUnlockedAt = record.discountUnlockedAt || existingPaymentDoc?.discountUnlockedAt || null;
+    const discountExpiresAt = record.discountExpiresAt || existingPaymentDoc?.discountExpiresAt || null;
+    const retargeting = record.retargeting || existingPaymentDoc?.retargeting || {
+      currentWave: 0,
+      waves: {},
+    };
+    const clickCount = Math.max(
+      Number(record.clickCount) || 0,
+      Number(existingPaymentDoc?.clickCount) || 0
+    );
+    const linkClickedAt = record.linkClickedAt || existingPaymentDoc?.linkClickedAt || null;
+
+    const { effectiveDiscountPercent } = resolveEffectiveDiscount(
+      { discountPercent: mergedDiscountPercent, discountExpiresAt },
+      funnelSettings
+    );
 
     if (existingUser) {
       // ── EXISTING PAID USER DETECTED ──
@@ -158,7 +203,8 @@ export async function POST(req: NextRequest) {
           userName: existingUser.name || "User"
         }, { status: 200 });
       } else {
-        // User has used all slots — offer choice: dashboard or pay for more
+        // User has used all slots via public homepage form — offer choice: dashboard or pay for more
+        // Note: reSubmittedFromPublicForm: true allows retargeting if they abandon here (per Decision #9)
         const pendingPaymentUser = {
           name: record.name,
           email: record.email,
@@ -166,9 +212,20 @@ export async function POST(req: NextRequest) {
           state: record.state,
           oppositionCount: record.oppositionCount || 1,
           isReturningUser: true,
+          reSubmittedFromPublicForm: true,
           verified: true,
+          verifiedVia: "otp",
           verifiedAt: new Date(),
-          createdAt: new Date(),
+          resumeToken,
+          funnelStartedAt,
+          discountPercent: mergedDiscountPercent,
+          discountUnlockedAt,
+          discountExpiresAt,
+          retargeting,
+          clickCount,
+          linkClickedAt,
+          createdAt: existingPaymentDoc?.createdAt || record.createdAt || new Date(),
+          updatedAt: new Date(),
         };
 
         await db.collection("pending_payment").updateOne(
@@ -190,12 +247,21 @@ export async function POST(req: NextRequest) {
               phone: record.phone,
               paymentPendingId,
               oppositionCount: record.oppositionCount || 1,
+              discountPercent: effectiveDiscountPercent,
+              basePricePerOpposition: funnelSettings.basePricePerOpposition,
               origin: baseOrigin,
             });
 
             await db.collection("pending_payment").updateOne(
               { _id: paymentRecord._id },
-              { $set: { txnid: paymentSession.txnid, updatedAt: new Date() } }
+              {
+                $set: {
+                  txnid: paymentSession.txnid,
+                  expectedAmount: paymentSession.totalAmount,
+                  originalAmount: paymentSession.originalAmount,
+                  updatedAt: new Date(),
+                },
+              }
             );
           } catch (sessionErr) {
             console.error("Failed to generate PayU session for returning user:", sessionErr);
@@ -248,8 +314,18 @@ export async function POST(req: NextRequest) {
       state: record.state,
       oppositionCount: record.oppositionCount || 1,
       verified: true,
+      verifiedVia: "otp",
       verifiedAt: new Date(),
-      createdAt: new Date(),
+      resumeToken,
+      funnelStartedAt,
+      discountPercent: mergedDiscountPercent,
+      discountUnlockedAt,
+      discountExpiresAt,
+      retargeting,
+      clickCount,
+      linkClickedAt,
+      createdAt: existingPaymentDoc?.createdAt || record.createdAt || new Date(),
+      updatedAt: new Date(),
     };
 
     // Upsert into the 'pending_payment' collection by phone number
@@ -276,13 +352,22 @@ export async function POST(req: NextRequest) {
         phone: record.phone,
         paymentPendingId,
         oppositionCount: record.oppositionCount || 1,
+        discountPercent: effectiveDiscountPercent,
+        basePricePerOpposition: funnelSettings.basePricePerOpposition,
         origin: baseOrigin,
       });
 
-      // Update pending record with the generated transaction ID
+      // Update pending record with the generated transaction ID and expected discounted amount
       await db.collection("pending_payment").updateOne(
         { _id: paymentRecord._id },
-        { $set: { txnid: paymentSession.txnid, updatedAt: new Date() } }
+        {
+          $set: {
+            txnid: paymentSession.txnid,
+            expectedAmount: paymentSession.totalAmount,
+            originalAmount: paymentSession.originalAmount,
+            updatedAt: new Date(),
+          },
+        }
       );
     } catch (sessionErr) {
       console.error("Failed to generate PayU session in verify-otp:", sessionErr);

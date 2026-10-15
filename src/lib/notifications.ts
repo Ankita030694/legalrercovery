@@ -73,13 +73,14 @@ export async function processPaymentSuccessNotifications(
       caseId = `LR-${nextNum}-${day}${month}${yearSuffix}`;
     }
 
-    // 3. Persist the caseId and amountPaid in the database immediately
+    // 3. Persist the caseId and ensure amountPaid is never reduced for returning users
+    const safeTotalAmountPaid = Math.max(Number(user.amountPaid) || 0, Number(amountPaid) || 0);
     await db.collection("users").updateOne(
       { _id: user._id },
       {
         $set: {
           caseId: caseId,
-          amountPaid: amountPaid,
+          amountPaid: safeTotalAmountPaid,
           paymentConfirmationSent: true,
           updatedAt: new Date()
         }

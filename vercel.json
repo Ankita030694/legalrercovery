@@ -3,6 +3,10 @@
     {
       "path": "/api/cron/dispatch-queue",
       "schedule": "0 */2 * * *"
+    },
+    {
+      "path": "/api/cron/retarget-funnel",
+      "schedule": "*/10 * * * *"
     }
   ],
   "headers": [

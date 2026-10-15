@@ -128,33 +128,53 @@ export async function POST(req: NextRequest) {
         // 3. If the user is found in pending_payment, migrate them to the primary users collection
         if (pendingUser) {
           const userPendingId = pendingUser._id;
-          const PRICE_PER_OPPOSITION = 999; // TO CHANGE TO PRODUCTION PRICE: Change 1 to 999
+          const PRICE_PER_OPPOSITION = 999;
           const oppCount = pendingUser.oppositionCount || 1;
-          const amtPaid = oppCount * PRICE_PER_OPPOSITION;
+          const parsedGatewayAmount = amount ? Math.round(Number(amount)) : 0;
+          const amtPaid =
+            pendingUser.expectedAmount ||
+            (parsedGatewayAmount > 0 ? parsedGatewayAmount : oppCount * PRICE_PER_OPPOSITION);
+          const originalAmount = pendingUser.originalAmount || oppCount * PRICE_PER_OPPOSITION;
+          const discountPercent = Number(pendingUser.discountPercent) || 0;
+          const currentWave = Number(pendingUser.retargeting?.currentWave) || 0;
+          const clickCount = Number(pendingUser.clickCount) || 0;
+          const recoveredViaFunnel = currentWave > 0 || clickCount > 0 || discountPercent > 0;
 
-          // Check if user already exists in the users collection (returning paid user)
+          // Check if user already exists in the users collection (returning paid user or redirect already ran)
           const existingUser = await db.collection("users").findOne({ phone: pendingUser.phone });
+          const existingTxnForThisId = txnid
+            ? await db.collection("transactions").findOne({ payuTxnId: txnid })
+            : null;
+          const alreadyProcessedThisTxn =
+            Boolean(existingTxnForThisId) ||
+            Boolean(txnid && existingUser && existingUser.payuTxnId === txnid);
 
           if (existingUser) {
-            // RETURNING USER: Accumulate amountPaid and oppositionCount instead of overwriting
-            await db.collection("users").updateOne(
-              { phone: pendingUser.phone },
-              {
-                $inc: {
-                  amountPaid: amtPaid,
-                  oppositionCount: oppCount
-                },
-                $set: {
-                  isPaid: true,
-                  payuTxnId: txnid,
-                  lastPaymentDate: new Date(),
-                  updatedAt: new Date()
+            if (!alreadyProcessedThisTxn) {
+              // RETURNING USER: Safely accumulate amountPaid and oppositionCount (supporting legacy users without explicit oppositionCount)
+              const priorAmountPaid = Number(existingUser.amountPaid) || 0;
+              const priorSlots = Math.max(
+                Math.floor(priorAmountPaid / PRICE_PER_OPPOSITION),
+                Number(existingUser.oppositionCount) || 1
+              );
+              await db.collection("users").updateOne(
+                { phone: pendingUser.phone },
+                {
+                  $set: {
+                    amountPaid: priorAmountPaid + amtPaid,
+                    oppositionCount: priorSlots + oppCount,
+                    isPaid: true,
+                    payuTxnId: txnid,
+                    lastPaymentDate: new Date(),
+                    updatedAt: new Date(),
+                    ...(pendingUser.resumeToken ? { lastResumeToken: pendingUser.resumeToken } : {}),
+                  },
                 }
-              }
-            );
-            console.log(`Webhook: Returning user payment accumulated. Phone: ${pendingUser.phone}, Added: ₹${amtPaid}`);
+              );
+              console.log(`Webhook: Returning user payment accumulated. Phone: ${pendingUser.phone}, Added: ₹${amtPaid}`);
+            }
           } else {
-            // NEW USER: Standard upsert with initial values
+            // NEW USER: Standard upsert with initial values and full funnel attribution
             await db.collection("users").updateOne(
               { phone: pendingUser.phone },
               {
@@ -165,13 +185,23 @@ export async function POST(req: NextRequest) {
                   state: pendingUser.state,
                   oppositionCount: oppCount,
                   amountPaid: amtPaid,
+                  originalAmount,
+                  discountPercent,
+                  recoveredViaFunnel,
+                  recoveredAtWave: currentWave,
+                  retargeting: pendingUser.retargeting || null,
+                  clickCount,
+                  linkClickedAt: pendingUser.linkClickedAt || null,
+                  verifiedVia: pendingUser.verifiedVia || "otp",
+                  funnelStartedAt: pendingUser.funnelStartedAt || pendingUser.createdAt || new Date(),
+                  lastResumeToken: pendingUser.resumeToken || null,
                   isPaid: true,
                   payuTxnId: txnid,
                   paymentDate: new Date(),
                   updatedAt: new Date()
                 },
                 $setOnInsert: {
-                  createdAt: new Date()
+                  createdAt: pendingUser.createdAt ? new Date(pendingUser.createdAt) : new Date()
                 }
               },
               { upsert: true }
@@ -196,6 +226,10 @@ export async function POST(req: NextRequest) {
                 email: migratedUser.email,
                 payuTxnId: txnid,
                 amount: amtPaid,
+                originalAmount,
+                discountPercent,
+                recoveredViaFunnel,
+                recoveredAtWave: currentWave,
                 status: "success",
                 oppositionCount: oppCount,
                 paymentDate: new Date(),
@@ -208,7 +242,7 @@ export async function POST(req: NextRequest) {
             await db.collection("payment_debug_logs").insertOne({
               step: "webhook_migration_success",
               timestamp: new Date(),
-              data: { phone: pendingUser.phone, amtPaid, isReturningUser: !!existingUser, caseMigratedId: userPendingId.toString(), transactionLogged: !!migratedUser }
+              data: { phone: pendingUser.phone, amtPaid, discountPercent, recoveredViaFunnel, isReturningUser: !!existingUser, caseMigratedId: userPendingId.toString(), transactionLogged: !!migratedUser }
             });
           } catch {}
 

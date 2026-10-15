@@ -66,6 +66,24 @@ export async function POST(req: NextRequest) {
 
     let targetPath = "/payment-failure";
     let tokenParam = "";
+
+    // Look up pendingPaymentUser first (useful for both success migration and failure/cancel resume link)
+    let pendingPaymentUser: any = null;
+    try {
+      if (txnid) {
+        pendingPaymentUser = await db.collection("pending_payment").findOne({ txnid });
+      }
+      if (!pendingPaymentUser) {
+        const pendingUserId = udf1 || req.cookies.get("pending_checkout_id")?.value;
+        if (pendingUserId && ObjectId.isValid(pendingUserId)) {
+          pendingPaymentUser = await db.collection("pending_payment").findOne({ _id: new ObjectId(pendingUserId) });
+        }
+      }
+    } catch (lookupErr) {
+      console.error("Failed to lookup pendingPaymentUser in redirect:", lookupErr);
+    }
+
+    const resumeTokenForCookie = pendingPaymentUser?.resumeToken || null;
     
     // Some payment gateways use specific status strings for cancellations
     if (status === "cancel" || status === "userCancelled") {
@@ -74,21 +92,6 @@ export async function POST(req: NextRequest) {
         targetPath = "/payment-success";
         
         try {
-          let pendingPaymentUser = null;
-          
-          // 1. Prioritize querying using the unique transaction ID (guarantees domain/cookie independence)
-          if (txnid) {
-            pendingPaymentUser = await db.collection("pending_payment").findOne({ txnid });
-          }
-          
-          // 2. Fallback to udf1 / cookie ID
-          if (!pendingPaymentUser) {
-            const pendingUserId = udf1 || req.cookies.get("pending_checkout_id")?.value;
-            if (pendingUserId && ObjectId.isValid(pendingUserId)) {
-              pendingPaymentUser = await db.collection("pending_payment").findOne({ _id: new ObjectId(pendingUserId) });
-            }
-          }
-
           try {
             await db.collection("payment_debug_logs").insertOne({
               step: "redirect_pending_user_fetch",
@@ -98,38 +101,70 @@ export async function POST(req: NextRequest) {
           } catch (logErr) {}
           
           if (pendingPaymentUser) {
-            const PRICE_PER_OPPOSITION = 999; // TO CHANGE TO PRODUCTION PRICE: Change 1 to 999
+            const PRICE_PER_OPPOSITION = 999;
             const oppCount = pendingPaymentUser.oppositionCount || 1;
-            const amtPaid = oppCount * PRICE_PER_OPPOSITION;
+            const parsedGatewayAmount = amount ? Math.round(Number(amount)) : 0;
+            const amtPaid =
+              pendingPaymentUser.expectedAmount ||
+              (parsedGatewayAmount > 0 ? parsedGatewayAmount : oppCount * PRICE_PER_OPPOSITION);
+            const originalAmount = pendingPaymentUser.originalAmount || oppCount * PRICE_PER_OPPOSITION;
+            const discountPercent = Number(pendingPaymentUser.discountPercent) || 0;
+            const currentWave = Number(pendingPaymentUser.retargeting?.currentWave) || 0;
+            const clickCount = Number(pendingPaymentUser.clickCount) || 0;
+            const recoveredViaFunnel = currentWave > 0 || clickCount > 0 || discountPercent > 0;
 
             const autoLoginToken = crypto.randomBytes(32).toString('hex');
             tokenParam = `?token=${autoLoginToken}`;
 
-            // Check if user already exists in the users collection (returning paid user)
+            // Check if user already exists in the users collection (returning paid user or webhook already ran)
             const existingUser = await db.collection("users").findOne({ phone: pendingPaymentUser.phone });
+            const existingTxnForThisId = txnid
+              ? await db.collection("transactions").findOne({ payuTxnId: txnid })
+              : null;
+            const alreadyProcessedThisTxn =
+              Boolean(existingTxnForThisId) ||
+              Boolean(txnid && existingUser && existingUser.payuTxnId === txnid);
 
             if (existingUser) {
-              // RETURNING USER: Accumulate amountPaid and oppositionCount instead of overwriting
-              await db.collection("users").updateOne(
-                { phone: pendingPaymentUser.phone },
-                {
-                  $inc: {
-                    amountPaid: amtPaid,
-                    oppositionCount: oppCount
-                  },
-                  $set: {
-                    isPaid: true,
-                    payuTxnId: txnid,
-                    lastPaymentDate: new Date(),
-                    updatedAt: new Date(),
-                    autoLoginToken,
-                    autoLoginTokenExpires: new Date(Date.now() + 15 * 60 * 1000)
+              if (alreadyProcessedThisTxn) {
+                // Webhook already processed this exact txnid — only attach the browser autoLoginToken
+                await db.collection("users").updateOne(
+                  { phone: pendingPaymentUser.phone },
+                  {
+                    $set: {
+                      autoLoginToken,
+                      autoLoginTokenExpires: new Date(Date.now() + 15 * 60 * 1000),
+                      ...(pendingPaymentUser.resumeToken ? { lastResumeToken: pendingPaymentUser.resumeToken } : {}),
+                    },
                   }
-                }
-              );
-              console.log(`Returning user payment accumulated. Phone: ${pendingPaymentUser.phone}, Added: ₹${amtPaid}`);
+                );
+              } else {
+                // RETURNING USER: Safely accumulate amountPaid and oppositionCount (supporting legacy users without explicit oppositionCount)
+                const priorAmountPaid = Number(existingUser.amountPaid) || 0;
+                const priorSlots = Math.max(
+                  Math.floor(priorAmountPaid / PRICE_PER_OPPOSITION),
+                  Number(existingUser.oppositionCount) || 1
+                );
+                await db.collection("users").updateOne(
+                  { phone: pendingPaymentUser.phone },
+                  {
+                    $set: {
+                      amountPaid: priorAmountPaid + amtPaid,
+                      oppositionCount: priorSlots + oppCount,
+                      isPaid: true,
+                      payuTxnId: txnid,
+                      lastPaymentDate: new Date(),
+                      updatedAt: new Date(),
+                      autoLoginToken,
+                      autoLoginTokenExpires: new Date(Date.now() + 15 * 60 * 1000),
+                      ...(pendingPaymentUser.resumeToken ? { lastResumeToken: pendingPaymentUser.resumeToken } : {}),
+                    },
+                  }
+                );
+                console.log(`Returning user payment accumulated. Phone: ${pendingPaymentUser.phone}, Added: ₹${amtPaid}`);
+              }
             } else {
-              // NEW USER: Standard upsert with initial values
+              // NEW USER: Standard upsert with initial values and full funnel attribution
               await db.collection("users").updateOne(
                 { phone: pendingPaymentUser.phone },
                 {
@@ -140,6 +175,16 @@ export async function POST(req: NextRequest) {
                     state: pendingPaymentUser.state,
                     oppositionCount: oppCount,
                     amountPaid: amtPaid,
+                    originalAmount,
+                    discountPercent,
+                    recoveredViaFunnel,
+                    recoveredAtWave: currentWave,
+                    retargeting: pendingPaymentUser.retargeting || null,
+                    clickCount,
+                    linkClickedAt: pendingPaymentUser.linkClickedAt || null,
+                    verifiedVia: pendingPaymentUser.verifiedVia || "otp",
+                    funnelStartedAt: pendingPaymentUser.funnelStartedAt || pendingPaymentUser.createdAt || new Date(),
+                    lastResumeToken: pendingPaymentUser.resumeToken || null,
                     isPaid: true,
                     payuTxnId: txnid,
                     paymentDate: new Date(),
@@ -148,7 +193,7 @@ export async function POST(req: NextRequest) {
                     autoLoginTokenExpires: new Date(Date.now() + 15 * 60 * 1000)
                   },
                   $setOnInsert: {
-                    createdAt: new Date()
+                    createdAt: pendingPaymentUser.createdAt ? new Date(pendingPaymentUser.createdAt) : new Date()
                   }
                 },
                 { upsert: true }
@@ -163,15 +208,19 @@ export async function POST(req: NextRequest) {
             await db.collection("pending_verification").deleteMany({ phone: pendingPaymentUser.phone });
             console.log("Successfully verified payment, migrated user from 'pending_payment' to 'users', and cleaned up pending collections. ID:", pendingPaymentUser._id.toString());
 
-            // Retrieve the migrated user document to get their true database _id and record in the transactions collection
+            // Retrieve the migrated user document to get their true database _id and record in the transactions collection (deduplicated)
             const migratedUser = await db.collection("users").findOne({ phone: pendingPaymentUser.phone });
-            if (migratedUser) {
+            if (migratedUser && !existingTxnForThisId) {
               await db.collection("transactions").insertOne({
                 userId: migratedUser._id,
                 phone: migratedUser.phone,
                 email: migratedUser.email,
                 payuTxnId: txnid,
                 amount: amtPaid,
+                originalAmount,
+                discountPercent,
+                recoveredViaFunnel,
+                recoveredAtWave: currentWave,
                 status: "success",
                 oppositionCount: oppCount,
                 paymentDate: new Date(),
@@ -183,7 +232,7 @@ export async function POST(req: NextRequest) {
               await db.collection("payment_debug_logs").insertOne({
                 step: "redirect_migration_success",
                 timestamp: new Date(),
-                data: { phone: pendingPaymentUser.phone, amtPaid, isReturningUser: !!existingUser, caseMigratedId: pendingPaymentUser._id.toString(), transactionLogged: !!migratedUser }
+                data: { phone: pendingPaymentUser.phone, amtPaid, discountPercent, recoveredViaFunnel, isReturningUser: !!existingUser, caseMigratedId: pendingPaymentUser._id.toString(), transactionLogged: !!migratedUser }
               });
             } catch (logErr) {}
 
@@ -201,14 +250,31 @@ export async function POST(req: NextRequest) {
               console.error("Error triggering success notifications in redirect route:", notiErr);
             }
           } else {
-            console.warn("No matching record in pending_payment for txnid:", txnid);
+            // Webhook may have already migrated this user to `users` and deleted `pending_payment` before browser redirect arrived
+            const migratedByWebhook = txnid
+              ? await db.collection("users").findOne({ payuTxnId: txnid })
+              : null;
+            if (migratedByWebhook) {
+              const autoLoginToken = crypto.randomBytes(32).toString("hex");
+              tokenParam = `?token=${autoLoginToken}`;
+              await db.collection("users").updateOne(
+                { _id: migratedByWebhook._id },
+                {
+                  $set: {
+                    autoLoginToken,
+                    autoLoginTokenExpires: new Date(Date.now() + 15 * 60 * 1000),
+                  },
+                }
+              );
+              console.log("User was already migrated by webhook; attached autoLoginToken for txnid:", txnid);
+            } else {
+              console.warn("No matching record in pending_payment for txnid:", txnid);
+            }
           }
         } catch (e) {
           console.error("Failed to migrate user on successful payment in redirect route:", e);
         }
     }
-
-
 
     // Create the redirect URL based on the incoming request origin
     const url = req.nextUrl.clone();
@@ -225,6 +291,7 @@ export async function POST(req: NextRequest) {
       status: status, 
       txnid: txnid, 
       verified: isVerified,
+      resumeToken: resumeTokenForCookie,
       time: Date.now() 
     });
     
@@ -236,7 +303,7 @@ export async function POST(req: NextRequest) {
       secure: process.env.NODE_ENV === "production",
       sameSite: "lax",
       path: "/",
-      maxAge: 5 * 60, // 5 minutes
+      maxAge: 30 * 60, // 30 minutes so user can easily click Retry Checkout
     });
 
     return response;

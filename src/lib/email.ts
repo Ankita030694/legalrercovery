@@ -334,5 +334,155 @@ export async function sendClientNotificationEmail(
   }
 }
 
+export interface FunnelRetargetingEmailParams {
+  toEmail: string;
+  userName: string;
+  wave: 1 | 2 | 3;
+  discountPercent: number;
+  originalAmount: number;
+  discountedAmount: number;
+  oppositionCount: number;
+  magicUrl: string;
+}
 
+/**
+ * Dispatches Automated Sales Funnel Retargeting HTML Emails (Wave 1, Wave 2, Wave 3).
+ * Uses NOTIFY_EMAIL ("Legal Recovery") with zero mention of any legal team or AMA Legal Solutions.
+ */
+export async function sendFunnelRetargetingEmail({
+  toEmail,
+  userName,
+  wave,
+  discountPercent,
+  originalAmount,
+  discountedAmount,
+  oppositionCount,
+  magicUrl,
+}: FunnelRetargetingEmailParams): Promise<{ ok: boolean; error?: string }> {
+  if (!emailUser || !emailPassword) {
+    return { ok: false, error: "NOTIFY_EMAIL or NOTIFY_EMAIL_PASSWORD not configured." };
+  }
 
+  const cleanName = (userName || "there").trim();
+  const formattedOriginal = originalAmount.toLocaleString("en-IN");
+  const formattedDiscounted = discountedAmount.toLocaleString("en-IN");
+  const savings = Math.max(0, originalAmount - discountedAmount).toLocaleString("en-IN");
+  const partyText = `${oppositionCount} ${oppositionCount === 1 ? "Opposing Party" : "Opposing Parties"}`;
+
+  let subject = "";
+  let badgeText = "";
+  let headline = "";
+  let bodyCopyHtml = "";
+  let ctaLabel = "";
+  let bannerImgUrl = "";
+
+  if (wave === 1) {
+    subject = `${cleanName}, your money recovery setup is 90% complete (No OTP needed)`;
+    badgeText = "⚡ SETUP ALMOST COMPLETE • DETAILS SAVED";
+    headline = "Complete Your Money Recovery Setup in 30 Seconds";
+    bannerImgUrl = "https://legalrecovery.in/wati_wave1_editorial_light.jpg";
+    ctaLabel = `Complete ₹${formattedDiscounted} Activation in 1 Click →`;
+    bodyCopyHtml = `
+      <p style="margin: 0 0 16px 0;">Hi <strong>${cleanName}</strong>, your money recovery setup is almost complete.</p>
+      <p style="margin: 0 0 16px 0;">With <strong>Legal Recovery</strong>, there is <strong>zero waiting and zero paperwork</strong>. The entire recovery notice &amp; police intimation dispatch process requires just a few clicks.</p>
+      <p style="margin: 0 0 16px 0;">Your details (${partyText}) are already saved and verified. Tap the button below to complete your <strong>₹${formattedDiscounted}</strong> activation in 30 seconds and finalize your recovery process:</p>
+    `;
+  } else if (wave === 2) {
+    subject = `💡 Instant ${discountPercent}% Fee Drop Unlocked for ${cleanName} (₹${formattedDiscounted} instead of ₹${formattedOriginal})`;
+    badgeText = `💡 INSTANT ${discountPercent}% FEE DROP UNLOCKED`;
+    headline = "Why Let Someone Sit on Your Hard-Earned Money When You Can Start Recovery in 60 Seconds?";
+    bannerImgUrl = "https://legalrecovery.in/wati_wave2_discount_light.jpg";
+    ctaLabel = `Claim ${discountPercent}% Fee Drop (Pay ₹${formattedDiscounted}) →`;
+    bodyCopyHtml = `
+      <p style="margin: 0 0 16px 0;">Hi <strong>${cleanName}</strong>, why let someone sit on your hard-earned money when you can start recovery in 60 seconds? 💡</p>
+      <p style="margin: 0 0 16px 0;">To help you take action right now, we have unlocked an instant <strong>${discountPercent}% FEE DROP</strong> on your registration (${partyText})!</p>
+      <div style="background-color: #0f172a; color: #ffffff; border-radius: 12px; padding: 18px 20px; margin: 22px 0;">
+        <div style="font-size: 13px; color: #94a3b8; margin-bottom: 6px;">
+          ❌ Regular Activation (${partyText}): <span style="text-decoration: line-through; color: #f87171;">₹${formattedOriginal}</span>
+        </div>
+        <div style="font-size: 20px; font-weight: 800; color: #34d399;">
+          ✅ Your Unlocked Price: Just ₹${formattedDiscounted} <span style="font-size: 12px; color: #a7f3d0; font-weight: 600;">(You Save ₹${savings})</span>
+        </div>
+      </div>
+      <p style="margin: 0 0 16px 0;">Just click the button below to complete your registration and dispatch formal recovery notices in just a few clicks. Your <strong>${discountPercent}% discount</strong> is pre-applied and waiting for you.</p>
+    `;
+  } else {
+    subject = `🚨 Last Call for ${cleanName}: Your ${discountPercent}% discount (₹${formattedDiscounted}) is about to expire!`;
+    badgeText = "🚨 LAST CALL • DISCOUNT EXPIRING SOON";
+    headline = `Lock In Your ₹${formattedDiscounted} Discounted Activation Before It Resets to ₹${formattedOriginal}`;
+    bannerImgUrl = "https://legalrecovery.in/wati_wave3_lastcall_light.jpg";
+    ctaLabel = `Lock In ₹${formattedDiscounted} Discounted Activation Now →`;
+    bodyCopyHtml = `
+      <p style="margin: 0 0 16px 0;">🚨 <strong>Last Call for ${cleanName}:</strong> Your unlocked <strong>${discountPercent}% discount</strong> (<strong>₹${formattedDiscounted}</strong> instead of <span style="text-decoration: line-through;">₹${formattedOriginal}</span>) is about to expire!</p>
+      <p style="margin: 0 0 16px 0;">Silence only helps the person who owes you money. The longer you wait to put official pressure on them, the harder recovery becomes.</p>
+      <p style="margin: 0 0 16px 0;">In less than 60 seconds and just a few clicks, dispatch scheduled recovery notices &amp; police complaints — completely on autopilot.</p>
+      <div style="background-color: #fff1f2; border: 1px solid #fecdd3; border-radius: 12px; padding: 16px 18px; margin: 20px 0;">
+        <div style="font-size: 15px; font-weight: 800; color: #be123c;">
+          Locked-In Price: ₹${formattedDiscounted} <span style="font-size: 13px; color: #64748b; text-decoration: line-through; font-weight: 600; margin-left: 6px;">₹${formattedOriginal}</span>
+        </div>
+        <div style="font-size: 12px; color: #881337; margin-top: 4px;">
+          Reverts to ₹${formattedOriginal} once your discount window closes. No OTP required.
+        </div>
+      </div>
+    `;
+  }
+
+  const html = `
+    <div style="font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Arial, sans-serif; max-width: 600px; margin: 0 auto; border: 1px solid #e2e8f0; border-radius: 16px; overflow: hidden; background-color: #ffffff;">
+      <div style="background-color: #0f172a; padding: 18px 24px; text-align: left;">
+        <span style="color: #ffffff; font-size: 20px; font-weight: 900; letter-spacing: -0.5px;">Legal <span style="color: #dc2626;">Recovery</span></span>
+        <span style="float: right; background-color: #dc2626; color: #ffffff; font-size: 10px; font-weight: 800; padding: 4px 10px; border-radius: 999px; text-transform: uppercase;">${badgeText}</span>
+      </div>
+      <div>
+        <a href="${magicUrl}" style="display: block; text-decoration: none;">
+          <img src="${bannerImgUrl}" alt="Legal Recovery" style="width: 100%; height: auto; display: block; border-bottom: 1px solid #e2e8f0;" />
+        </a>
+      </div>
+      <div style="padding: 28px 24px; color: #334155; font-size: 15px; line-height: 1.65;">
+        <h2 style="color: #0f172a; font-size: 21px; font-weight: 800; line-height: 1.3; margin: 0 0 18px 0;">${headline}</h2>
+        ${bodyCopyHtml}
+        <div style="text-align: center; margin: 28px 0 22px 0;">
+          <a href="${magicUrl}" style="background-color: #dc2626; color: #ffffff; text-decoration: none; padding: 15px 28px; border-radius: 12px; font-weight: 800; font-size: 15px; display: inline-block; box-shadow: 0 8px 20px rgba(220, 38, 38, 0.25);">
+            ${ctaLabel}
+          </a>
+        </div>
+        <p style="font-size: 12px; color: #64748b; text-align: center; margin: 0;">
+          Or tap this direct link: <a href="${magicUrl}" style="color: #dc2626; font-weight: 700; word-break: break-all;">${magicUrl}</a>
+        </p>
+      </div>
+      <div style="background-color: #f8fafc; border-top: 1px solid #e2e8f0; padding: 16px 24px; text-align: center; font-size: 12px; color: #94a3b8; font-weight: 600;">
+        &copy; ${new Date().getFullYear()} Legal Recovery • Claim What's Rightfully Yours • 100% Automated Portal
+      </div>
+    </div>
+  `;
+
+  const mailOptions = {
+    from: `"Legal Recovery" <${emailUser}>`,
+    to: toEmail,
+    subject,
+    html,
+  };
+
+  try {
+    await transporter.sendMail(mailOptions);
+    return { ok: true };
+  } catch (err: any) {
+    console.warn("[Funnel Email] Primary smtp.zoho.in failed, trying smtp.zoho.com fallback:", err?.message);
+    try {
+      const fallbackTransporter = nodemailer.createTransport({
+        host: "smtp.zoho.com",
+        port: 465,
+        secure: true,
+        auth: {
+          user: emailUser,
+          pass: emailPassword,
+        },
+      });
+      await fallbackTransporter.sendMail(mailOptions);
+      return { ok: true };
+    } catch (fallbackErr: any) {
+      console.error("[Funnel Email] Fallback smtp.zoho.com also failed:", fallbackErr);
+      return { ok: false, error: fallbackErr?.message || "Email dispatch failed" };
+    }
+  }
+}

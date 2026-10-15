@@ -77,9 +77,15 @@ export async function verifyPayUTxn(txnid: string, key: string): Promise<boolean
   return false;
 }
 
+import { calculateFunnelPricing } from "./funnel-config";
+
 export interface PayUPaymentSession {
   txnid: string;
   amount: string;
+  totalAmount: number;
+  originalAmount: number;
+  discountPercent: number;
+  unitPrice: number;
   action: string;
   fields: Record<string, string>;
 }
@@ -90,6 +96,8 @@ export function createPayUPaymentSession({
   phone,
   paymentPendingId,
   oppositionCount = 1,
+  discountPercent = 0,
+  basePricePerOpposition = 999,
   origin = "https://legalrecovery.in",
 }: {
   name: string;
@@ -97,6 +105,8 @@ export function createPayUPaymentSession({
   phone: string;
   paymentPendingId: string;
   oppositionCount?: number;
+  discountPercent?: number;
+  basePricePerOpposition?: number;
   origin?: string;
 }): PayUPaymentSession {
   const key = process.env.PAYU_API_KEY?.trim();
@@ -107,9 +117,8 @@ export function createPayUPaymentSession({
   }
 
   const txnid = `TXN${Date.now()}${Math.floor(1000 + Math.random() * 9000)}`;
-  const PRICE_PER_OPPOSITION = 999;
-  const oppCount = oppositionCount || 1;
-  const totalAmount = oppCount * PRICE_PER_OPPOSITION;
+  const pricing = calculateFunnelPricing(oppositionCount || 1, discountPercent || 0, basePricePerOpposition);
+  const totalAmount = pricing.totalPayable;
   const amount = `${totalAmount}.00`;
 
   const productinfo = "Paid With ButtonId 111293057";
@@ -155,6 +164,10 @@ export function createPayUPaymentSession({
   return {
     txnid,
     amount,
+    totalAmount,
+    originalAmount: pricing.totalOriginal,
+    discountPercent: pricing.discountPercent,
+    unitPrice: pricing.unitDiscountedPrice,
     action: actionUrl,
     fields: {
       key,
