@@ -184,28 +184,39 @@ export async function POST(request: NextRequest) {
       { title: "How to Recover Money Without Going to Court in India", url: "https://www.legalrecovery.in/how-to-recover-money-without-going-to-court-india" }
     ];
 
+    // Deduplicate interlinking URLs so the prompt directory is clean and never repeats the same link
+    const seenUrls = new Set<string>();
     const interlinkingDirectory = [
       ...coreServicePages,
       ...footerQueryPages,
       ...existingBlogLinks
-    ].map(item => `- ${item.title}: ${item.url}`).join("\n");
+    ]
+      .filter(item => {
+        const normalized = item.url.replace(/\/+$/, "");
+        if (seenUrls.has(normalized)) return false;
+        seenUrls.add(normalized);
+        return true;
+      })
+      .map(item => `- ${item.title}: ${item.url}`)
+      .join("\n");
 
-    // STEP 0: Web Research — use gpt-4o with built-in web search to gather grounding facts
+    // STEP 0: Web Research — gather topic-specific grounding facts, domain nuances, and current Indian legal context
     let researchContext = "";
     console.log(`[AI Generator Flow] Step 0: Web research for: [${primaryKeyword}]...`);
     try {
-      const step0Query = `Find comprehensive, accurate, and up-to-date information about the following topic specifically for India: "${primaryKeyword}${secondaryKeyword ? ` (related: ${secondaryKeyword})` : ''}"
+      const step0Query = `Find comprehensive, accurate, and up-to-date information specifically for India on the topic: "${primaryKeyword}${secondaryKeyword ? ` (additional focus: ${secondaryKeyword})` : ''}"
 
-Provide a concise research digest covering:
-1. Who typically faces this problem in India and what goes wrong in real life (concrete scenarios, typical ₹ amounts)
-2. The exact relevant Indian laws, acts, and specific section numbers that apply to this situation
-3. Government portals, consumer forums, or regulatory bodies where affected people can file complaints (with URLs where possible)
-4. Typical timeline: how long does sending a legal notice take to work, when does escalation happen, how long does resolution usually take
-5. Key documents and evidence a person needs to prove their case
-6. Any recent 2024-2025 court rulings, regulatory changes, or news about this topic in India
-7. Practical steps and strategies that have actually worked for people to recover their money
+Note: This research is for an Indian legal-notice and money-recovery platform (covering unpaid salary/employment dues, consumer refunds, rental security deposits, freelancer/client invoices, personal loans to friends/relatives, airline/travel refunds, B2B vendor dues, and property/builder disputes — NOT bank/NBFC loan settlement, NPA, or credit card debt restructuring).
 
-Keep the digest factual, concise (under 900 words), and specific to India. Focus on practical, real-world information that a normal person can act on.`;
+Instead of a generic overview, dig into what makes THIS specific topic, dispute, or question unique in India:
+1. Domain-specific realities: What actually happens in this exact scenario in India (the specific industry practices, typical ₹ amounts involved, common clauses, billing cycles, or the exact excuses/tactics the defaulting party uses to delay or deny payment)?
+2. Exact Indian legal framework: Which specific Acts, exact Section numbers, rules, or statutory interest/compensation provisions govern this exact issue?
+3. Topic-specific nuances & edge cases: What are the tricky gray areas people run into in this specific situation (e.g., missing paperwork, partial payments, counter-allegations, unfair contract terms, jurisdiction traps, or limitation periods)?
+4. Official escalation channels: Which exact Indian regulatory portals, ombudsmen, tribunals, commissions, or courts apply to this specific dispute (with URLs and monetary/territorial jurisdiction rules where applicable)?
+5. Recent 2025-2026 developments: Any recent Indian court rulings, regulatory circulars, consumer commission precedents, or portal updates relevant to this topic.
+6. High-leverage resolution tactics: What specific facts, calculations, or evidence inside a formal demand/legal notice actually compel the other side to settle in this specific type of case?
+
+Keep the digest factual, dense with specific details (under 900 words), and strictly focused on India.`;
 
       // Use the OpenAI Responses API with web_search_preview tool
       const step0Response = await (openai as any).responses.create({
@@ -216,10 +227,12 @@ Keep the digest factual, concise (under 900 words), and specific to India. Focus
 
       researchContext = step0Response?.output_text || "";
 
-      // Trim if too long to avoid token explosion in downstream prompts (max ~900 words)
+      // Trim cleanly at sentence boundary if too long to avoid token explosion in downstream prompts (max ~900 words)
       const rcWords = researchContext.split(/\s+/);
       if (rcWords.length > 900) {
-        researchContext = rcWords.slice(0, 900).join(" ") + " [summary trimmed]";
+        const sliced = rcWords.slice(0, 900).join(" ");
+        const lastPeriod = sliced.lastIndexOf(".");
+        researchContext = lastPeriod > 400 ? sliced.slice(0, lastPeriod + 1) : sliced;
       }
 
       console.log(`[AI Generator Flow] Step 0 complete. Research context: ${researchContext.split(/\s+/).length} words.`);
@@ -228,15 +241,15 @@ Keep the digest factual, concise (under 900 words), and specific to India. Focus
       researchContext = "";
     }
 
-    console.log(`[AI Generator Flow] Step 1: Generating SEO metadata (Title, Subtitle, Slug, Popular Searches) for: [${primaryKeyword}]...`);
+    console.log(`[AI Generator Flow] Step 1: Generating SEO metadata & bespoke editorial blueprint for: [${primaryKeyword}]...`);
 
-    // STEP 1: Generate Title, Subtitle, Meta Title, Meta Description, Slug, Popular Searches
+    // STEP 1: Generate Title, Subtitle, Meta Title, Meta Description, Slug, Popular Searches, AND a Topic-Specific Editorial Blueprint
     const step1Completion = await openai.chat.completions.create({
       model: "gpt-6-luna",
       messages: [
         {
           role: "system",
-          content: `You are a professional legal SEO, AEO (AI Engine Optimization), and search strategist for LegalRecovery (https://www.legalrecovery.in/).
+          content: `You are a senior legal SEO strategist and editorial director for LegalRecovery (https://www.legalrecovery.in/).
 
 **ABOUT LEGALRECOVERY (READ CAREFULLY BEFORE GENERATING):**
 LegalRecovery is India's premier legal-tech platform that helps individuals and businesses recover unpaid money through professionally drafted legal notices, multi-stage escalation, and litigation guidance. The platform covers ONLY these 8 service categories:
@@ -252,17 +265,16 @@ LegalRecovery is India's premier legal-tech platform that helps individuals and 
 **STRICTLY OUT OF SCOPE — NEVER MENTION OR REFERENCE:**
 Bank loan settlement, NPA settlement, OTS (One Time Settlement), EMI waivers, debt restructuring, SARFAESI Act bank recovery, mortgage settlement, credit card settlement, NBFC disputes, chit fund recovery, or any financial product or banking loan service. LegalRecovery is NOT a bank, NBFC, or debt collection agency.
 
-${researchContext ? `**RESEARCH CONTEXT — use this to generate more accurate, grounded popular search queries:**\n${researchContext}\n` : ''}Generate an SEO-optimized H1 Title, engaging subtitle, meta title, meta description, URL slug, and an array of 12 to 15 Popular Search queries / long-tail keywords for a blog article strictly within LegalRecovery's service scope.
-
-Primary Keyword/Context: ${primaryKeyword}
-Secondary Keywords: ${secondaryKeyword || ''}
+${researchContext ? `**RESEARCH CONTEXT — use this to ground your metadata and editorial blueprint in topic-specific facts:**\n${researchContext}\n` : ''}Your job is two-fold:
+1. Generate an SEO-optimized H1 Title, engaging subtitle, meta title, meta description, URL slug (concise, 4-8 words), and an array of 12 to 15 Popular Search queries / long-tail keywords.
+2. Design a **Bespoke Editorial Blueprint** so this article has its own distinct structure, opening angle, section flow, and custom data tables — NEVER a generic cookie-cutter recovery template.
 
 CRITICAL NEGATIVE CONSTRAINT:
 Under no circumstances should you include any em dashes (—) anywhere in your response. Always use normal hyphens (-), colons (:), commas, parentheses, or rewrite the sentence to avoid them.
 
 **TITLE QUALITY RULES — READ CAREFULLY:**
-- The title MUST sound like it was written by a helpful, informed person — NOT by an SEO template bot.
-- The title must directly match what the reader searched for. If they searched "how can I recover my money", the title should reflect that naturally.
+- The title MUST sound like it was written by a helpful, informed person - NOT by an SEO template bot.
+- The title must directly match what the reader searched for.
 - NEVER append generic professional-sounding suffixes to the title. The following phrases are STRICTLY BANNED from the title:
   * "Legal Solutions", "Legal Remedies", "Legal Options"
   * "A Complete Guide", "Complete Guide to", "Comprehensive Guide"
@@ -270,8 +282,23 @@ Under no circumstances should you include any em dashes (—) anywhere in your r
   * "Ultimate Guide", "The Ultimate"
   * "Overview", "Introduction to"
   * Any phrase that sounds like a marketing tagline or SEO heading template
-- GOOD title examples: "How to Recover Unpaid Salary from Your Employer in India", "My Landlord is Refusing to Return My Deposit — What Do I Do?", "How Can I Recover My Money in India: A Practical Breakdown"
+- GOOD title examples: "How to Recover Unpaid Salary from Your Employer in India", "My Landlord is Refusing to Return My Deposit: What Should I Do?", "How Can I Recover My Money in India: A Practical Breakdown"
 - BAD title examples: "Legal Solutions for Money Recovery in India", "A Complete Guide to Legal Recovery", "Comprehensive Overview of Statutory Remedies"
+
+**EDITORIAL DIFFERENTIATION RULES (WHY THIS MATTERS):**
+Every topic has a different search intent. Do NOT design the same generic outline ("1. Work out what is owed -> 2. Collect proof -> 3. What to do this week -> 4. Send a legal notice -> 5. What if ignored") for every article!
+Instead, analyze the exact nature of the query:
+- Is it a **Drafting / Format / Notice Mechanics** query? (Center the blueprint around clause-by-clause anatomy, fatal drafting mistakes, service/delivery rules, and response handling.)
+- Is it an **Evidence / Proof / Informal Transaction** query? (Center the blueprint around digital trail admissibility, reconstructing proof from bank/UPI/chat logs, handling denials, and statutory presumptions.)
+- Is it a **Forum Comparison / Legal Route Decision** query? (Center the blueprint around head-to-head forum mechanics, cost/speed trade-offs, pecuniary limits, and when a pre-litigation notice resolves it faster.)
+- Is it an **Industry / Role-Specific Dispute** (e.g. doctors, tutors, builders, airlines, gyms, vendors, startups)? (Center the blueprint around the specific contractual/industry bottlenecks, common excuses used in that sector, sector-specific regulators, and targeted leverage points.)
+- Is it a **Timeline / Limitation / Ignored Notice** query? (Center the blueprint around statutory clocks, acknowledgment extensions, post-deadline escalation stages, and interest accrual.)
+
+Choose an **openingHookBrief** that fits THIS specific topic:
+- Sometimes open with a sharp, specific real-life moment or exact excuse from that industry (e.g., what a landlord claims about "repainting deductions" or how a hospital accounts desk stalls a vendor bill).
+- Sometimes open by directly answering the core question in the very first sentence (especially for "Can I...", "Is...", "How long...", or "What happens if..." queries) before unpacking the details.
+- Sometimes open by busting a costly misconception people believe in this exact situation (e.g., believing a "no refund" clause on a receipt is legally final).
+- NEVER use the repetitive formula: "You [did X], and expected [Y]. Instead, [Z]. That is frustrating/stressful, especially when..."
 
 Return ONLY a JSON object with this exact structure:
 {
@@ -279,25 +306,30 @@ Return ONLY a JSON object with this exact structure:
   "subtitle": "Engaging subtitle (max 120 chars)",
   "metaTitle": "SEO meta title (60-70 chars)",
   "metaDescription": "SEO meta description (150-160 chars)",
-  "slug": "url-friendly-slug",
+  "slug": "concise-url-friendly-slug",
   "popularSearches": [
-    "search query 1",
-    "search query 2",
-    "search query 3",
-    "search query 4",
-    "search query 5",
-    "search query 6",
-    "search query 7",
-    "search query 8",
-    "search query 9",
-    "search query 10",
-    "search query 11",
-    "search query 12",
-    "search query 13",
-    "search query 14",
-    "search query 15"
+    "12 to 15 realistic long-tail search queries"
+  ],
+  "articleAngle": "1-2 sentences defining the unique editorial angle, primary search intent, and what makes this article's perspective distinct.",
+  "openingHookBrief": "Specific instruction for how the opening paragraph should hook the reader for this exact topic without using generic 'You did X, expected Y, that is frustrating' formulas.",
+  "sectionBlueprint": [
+    "H2 Section 1 heading & specific focus tailored to this topic",
+    "H2 Section 2 heading & specific focus tailored to this topic",
+    "H2 Section 3 heading & specific focus tailored to this topic",
+    "H2 Section 4 heading & specific focus tailored to this topic",
+    "H2 Section 5 heading & specific focus tailored to this topic",
+    "H2 Section 6 heading & specific focus tailored to this topic",
+    "H2 Section 7 heading & specific focus tailored to this topic (optional 7th or 8th section if needed by the topic)"
+  ],
+  "tableBlueprints": [
+    "Specific concept & custom column headers for Table 1 (tailored to the topic's data, calculations, clauses, or scenarios - NOT a generic 'Keep this / What it helps show' table)",
+    "Optional specific concept & custom column headers for Table 2 if a second table genuinely adds value"
   ]
 }`
+        },
+        {
+          role: "user",
+          content: `Primary Keyword / Topic: ${primaryKeyword}\nSecondary Keywords / Additional Context: ${secondaryKeyword || 'none'}`
         }
       ],
       response_format: { type: "json_object" },
@@ -343,29 +375,38 @@ Return ONLY a JSON object with this exact structure:
       ];
     }
 
-    console.log(`[AI Generator Flow] Step 1 complete. Title: "${step1Result.title}", Popular Searches (${parsedPopularSearches.length}):`, parsedPopularSearches);
+    const articleAngle = typeof step1Result.articleAngle === "string" ? step1Result.articleAngle : "";
+    const openingHookBrief = typeof step1Result.openingHookBrief === "string" ? step1Result.openingHookBrief : "";
+    const sectionBlueprint = Array.isArray(step1Result.sectionBlueprint) && step1Result.sectionBlueprint.length >= 5
+      ? step1Result.sectionBlueprint.map((s: any, idx: number) => `${idx + 1}. ${String(s).trim()}`).join("\n")
+      : "";
+    const tableBlueprints = Array.isArray(step1Result.tableBlueprints) && step1Result.tableBlueprints.length > 0
+      ? step1Result.tableBlueprints.map((t: any, idx: number) => `Table ${idx + 1}: ${String(t).trim()}`).join("\n")
+      : "";
+
+    console.log(`[AI Generator Flow] Step 1 complete. Title: "${step1Result.title}", Popular Searches (${parsedPopularSearches.length})`);
     console.log(`[AI Generator Flow] Step 2: Generating description content (2000-2300 words HTML with 6-8 sections, 1 to 2 structured data tables and interlinking)...`);
 
     // STEP 2: Generate Description (Complete body in HTML with tables and internal links)
     const step2SystemPrompt = `
-You are an empathetic, adaptive content writer with deep knowledge of Indian law and consumer rights. You shift your voice naturally based on what each section needs. When a section is about someone's frustrating situation, you write with warmth and clarity. When a section covers legal rights or procedures, you write with confidence and precision. You never sound like a textbook, a legal journal, or a courtroom document. You write for real people.
+You are an empathetic, sharp, and adaptive legal-consumer writer with deep knowledge of Indian law and real-world dispute resolution. You shift your voice naturally based on what each section needs. When a section explores someone's real-life situation, you write with warmth, specificity, and clarity. When a section covers legal rights, contracts, or procedures, you write with confidence and precision. You never sound like a textbook, a legal journal, or a courtroom document, and you never rely on repetitive blog formulas. You write for real people in India.
 
 **READER PERSONA — KEEP THIS IN MIND FOR EVERY SINGLE SENTENCE:**
-The person reading this is an Indian aged 18 to 50. They have never dealt with a legal dispute before. Right now they are stressed and confused — their money is stuck and they genuinely do not know what to do or where to even start. They searched online hoping someone would clearly explain their options. Write so that this person feels understood, supported, and clear on what to do next. Make getting their money back feel achievable, not overwhelming.
+The person reading this is an Indian aged 18 to 50. Most have never dealt with a legal dispute before. Their money is stuck, delayed, or unfairly withheld, and they searched online hoping someone would clearly explain their specific situation and options. Write so that this person feels understood, supported, and clear on what works in the real world. Make resolving the issue feel practical and achievable, not overwhelming.
 
-**TARGET TOPIC:**
-Primary: ${primaryKeyword}
-Secondary: ${secondaryKeyword || 'none'}
+**TARGET TOPIC & BESPOKE EDITORIAL BLUEPRINT:**
+Primary Topic: ${primaryKeyword}
+Secondary Focus: ${secondaryKeyword || 'none'}
 Article Title: ${step1Result.title}
 Article Subtitle: ${step1Result.subtitle}
-
+${articleAngle ? `\n**EDITORIAL ANGLE FOR THIS ARTICLE:**\n${articleAngle}\n` : ''}${openingHookBrief ? `\n**OPENING HOOK DIRECTION FOR THIS ARTICLE:**\n${openingHookBrief}\n` : ''}${sectionBlueprint ? `\n**BESPOKE 6-TO-8 H2 SECTION BLUEPRINT (FOLLOW THIS TOPIC-SPECIFIC ARC):**\n${sectionBlueprint}\n(Adapt the exact <h2> wording naturally so it reads like a human-written heading, and add focused <h3> and <h4> sub-headings inside sections where helpful.)\n` : ''}${tableBlueprints ? `\n**BESPOKE DATA TABLE BLUEPRINT FOR THIS ARTICLE:**\n${tableBlueprints}\n` : ''}
 ${researchContext ? `**RESEARCHED FACTS — USE THESE AS YOUR FACTUAL FOUNDATION (do not hallucinate laws or amounts):**
 ${researchContext}
 ` : ''}
 **ABOUT LEGALRECOVERY — WEAVE NATURALLY INTO THE ARTICLE:**
-LegalRecovery (https://www.legalrecovery.in/) is India's legal-tech platform that helps people recover unpaid money through professionally drafted legal notices, multi-stage escalation, and 100% online case management. No court visits required. Pricing starts at ₹1,499 flat fee. Their 5-step process: (1) Submit case online, (2) Legal experts review and analyze, (3) Professional notice drafted and dispatched via registered post, (4) Multi-channel follow-up and escalation, (5) Resolution and money recovery. Reference LegalRecovery's process naturally and helpfully where the topic allows — never force it.
+LegalRecovery (https://www.legalrecovery.in/) is India's legal-tech platform that helps people recover unpaid money through professionally drafted legal notices, multi-stage escalation, and 100% online case management. No court visits required. Pricing starts at ₹1,499 flat fee. Their 5-step process: (1) Submit case online, (2) Legal experts review and analyze, (3) Professional notice drafted and dispatched via registered post, (4) Multi-channel follow-up and escalation, (5) Resolution and money recovery. Reference LegalRecovery's process naturally and helpfully where the topic allows - never force it or use the exact same sales pitch phrasing in every paragraph.
 
-The platform covers ONLY these 8 service categories — contextualize the topic within the right one:
+The platform covers ONLY these 8 service categories - contextualize the topic within the right one:
 1. Unpaid Salary and Employment Dues (withheld full & final settlement, notice period salary, wrongful termination, relieving letter disputes)
 2. Consumer Refunds and Complaints (defective products, e-commerce platform disputes, gym/subscription refunds, coaching fee refunds)
 3. Security Deposits and Rental Recoveries (landlord refusal, PG/hostel deposits, unreasonable deductions, housing society disputes)
@@ -380,56 +421,60 @@ Bank loan settlement, NPA settlement, OTS (One Time Settlement) with banks/NBFCs
 
 **SCOPE INTELLIGENCE — VERY IMPORTANT:**
 Look at the topic you are writing about. Before writing:
-- If the topic is a BROAD/GENERIC question (e.g. "how to recover money", "how to get my money back", "legal ways to recover money"): Do NOT try to cover all 8 service categories. Focus the article on the PROCESS of money recovery — how a legal notice works, the escalation journey, what to do first. Use salary, consumer refund, or security deposit as relatable running examples. Keep it grounded in 2-3 common situations.
-- If the topic is SPECIFIC (e.g. "recover unpaid salary", "flight refund complaint", "security deposit from landlord"): Focus entirely on that specific category. Cover it deeply.
-- RERA (Real Estate Regulation and Development Act) MUST NEVER appear unless the primaryKeyword explicitly mentions: property, builder, flat, apartment, possession, real estate, housing project, RERA.
-- MSME Samadhan MUST NEVER appear unless the primaryKeyword explicitly mentions: freelancer, invoice, vendor, B2B, supplier, client payment, MSME.
-- DGCA/airline law MUST NEVER appear unless the primaryKeyword explicitly mentions: flight, airline, travel, DGCA, ticket.
-- Citing the wrong law for a topic is worse than citing no law at all. Only use laws that directly apply to the primaryKeyword.
+- If the topic is a BROAD/GENERIC question (e.g. "how to recover money", "how to get my money back", "legal ways to recover money"): Do NOT try to cover all 8 service categories. Focus the article on the PROCESS of money recovery - how a legal notice works, the escalation journey, what to do first. Use salary, consumer refund, or security deposit as relatable running examples. Keep it grounded in 2-3 common situations.
+- If the topic is SPECIFIC (e.g. "recover unpaid salary", "flight refund complaint", "security deposit from landlord", or a specific profession/industry): Focus entirely on that specific category and its unique real-world dynamics. Cover it deeply.
+- RERA (Real Estate Regulation and Development Act) MUST NEVER appear unless the topic explicitly involves property, builder, flat, apartment, possession, real estate, housing project, or RERA.
+- MSME Samadhan MUST NEVER appear unless the topic explicitly involves freelancer, invoice, vendor, B2B, supplier, client payment, or MSME.
+- DGCA/airline law MUST NEVER appear unless the topic explicitly involves flight, airline, travel, DGCA, or ticket.
+- Citing the wrong law for a topic is worse than citing no law at all. Only use laws that directly apply to the topic.
 
-**OPENING — THIS IS MANDATORY:**
-The very first paragraph of the article (before any <h2> tag) MUST speak directly to the reader's real situation in plain, warm language. Acknowledge what they are going through. Tell them clearly what this article will help them understand and do. Do NOT open with any law citation, act name, or section number. Think of how a knowledgeable friend would open this conversation.
+**ANTI-REPETITION & ORIGINALITY RULES (CRITICAL — READ CAREFULLY):**
+1. **BANNED OPENING CLICHÉS:**
+   - NEVER open the article with the formula: *"You [did X / finished the work / paid someone], and expected [Y]. Instead, [Z]. That is frustrating / stressful, especially when..."*
+   - NEVER use the stock phrase *"That is frustrating, especially when..."* or *"That is stressful, especially when..."* in the opening paragraph.
+   - Instead, follow the **OPENING HOOK DIRECTION** above: start with a vivid, topic-specific detail, a direct answer to the reader's core question, a surprising truth about their leverage, or the exact real-world friction point unique to this dispute. Do NOT open the first paragraph with any law citation, act name, or section number.
+2. **BANNED GENERIC SECTION SKELETON:**
+   - Do NOT fall back to the same generic 7-heading sequence across articles. The following overused stock headings are BANNED:
+     * "First, work out what is owed" / "First, work out what went wrong" / "Before sending a notice, pin down..."
+     * "The proof to collect before you draft anything" / "Build a proof file that tells the whole story"
+     * "Step by step: what to do this week" / "What should you do this week?" / "Your practical plan for this week"
+     * "What if the notice is ignored?" (unless the entire article is specifically about an ignored notice)
+   - Instead, craft every \`<h2>\`, \`<h3>\`, and \`<h4>\` around the **BESPOKE SECTION BLUEPRINT** for this exact topic. Mix natural reader questions, sharp analytical statements, and scenario-specific subheadings.
+   - NEVER start any section's heading with an act name followed by a colon (like "Section 138 NI Act: ...").
+   - NEVER open the body text of any section directly with an act citation. Always ground the paragraph in the real-world problem or practical question first, then bring in the legal rule that solves it.
+3. **BANNED GENERIC TABLE TEMPLATES:**
+   - Do NOT reuse generic table headers like \`Keep this | What it helps show | Check before sending\` or \`Route | What you do | What it can achieve\` in every post.
+   - Build the 1 or 2 HTML tables using the **BESPOKE DATA TABLE BLUEPRINT** above so the columns and rows reflect concrete numbers, timelines, calculation heads, contract clauses, deduction rules, or sector-specific escalation paths unique to this topic.
 
-**HEADINGS — GENERATE FREELY, NO TEMPLATES:**
-Do NOT use any fixed heading formats or statute-title patterns. Every <h2>, <h3>, and <h4> heading must be written naturally for what that section actually covers:
-- Some headings should sound like questions the reader is already thinking: "What can you actually do if they refuse to pay?", "Is a WhatsApp message enough proof?", "How long does this realistically take?"
-- Some should be direct, action-oriented statements: "The documents you need before you do anything", "Step by step: what to do this week"
-- Some covering legal rights or procedures can be precise: "Your rights under the Consumer Protection Act 2019" — but only when the section genuinely needs that precision
-- NEVER start any section's heading with an act name followed by a colon (like "Section 138 NI Act: ...") — that sounds like a legal textbook
-- NEVER open the body text of any section directly with an act citation. Always open with the human situation or problem first, then bring in the legal context
-
-**TONE PER SECTION — ADAPT, DO NOT USE A FIXED REGISTER:**
-- Sections about the reader's situation or what's happening to them: warm, conversational, validating — "If you have been waiting weeks for a response and getting only silence, you are not alone..."
-- Sections about the reader's legal rights: confident, clear, factual — cite the relevant law accurately in plain language, explain what it means for the reader
-- Sections about what to do step by step: direct, concrete, numbered or bulleted, no filler
-- Sections about escalation or what happens if ignored: matter-of-fact, reassuring, practical
-- Tables and checklists: clean, scannable, genuinely useful — not just padding
-- NEVER pad with law text just to hit word count. Every paragraph must earn its place.
+**TONE & DEPTH PER SECTION:**
+- Write with genuine domain authority and human warmth. Use concrete Indian examples (e.g., realistic ₹ figures, actual excuses used by HR/landlords/clients/vendors, how Registered Post AD and WhatsApp/email service work in practice).
+- Explain legal rights in plain, confident English: cite the exact applicable Act/Section accurately and immediately translate what it means in practice for the reader's leverage.
+- Keep action steps concrete, specific to the topic, and free of generic filler.
+- NEVER pad with law text or repetitive summaries just to hit word count. Every paragraph must earn its place.
 
 **WORD COUNT: STRICT LIMIT (2,000 TO 2,300 WORDS FOR DESCRIPTION BODY):**
 Write 6 to 8 main <h2> sections, each with focused <h3> and <h4> sub-sections as needed. Total description body must be between 2,000 and 2,300 words so the entire final article (including FAQs and reviews) stays strictly under 3,000 words. Keep every paragraph punchy, insightful, and practical without fluff.
 
 **DATA TABLES (1 TO 2 ONLY):**
-- Include 1 or 2 rich HTML tables.
-- Make each table genuinely useful: timelines, evidence checklists, legal provisions with plain-language explanations, comparison of options, or step-by-step process overview.
+- Include 1 or 2 rich HTML tables tailored to the topic.
 - Do NOT include more than 2 tables.
 
 **INTERNAL LINKS (6 TO 10 — MANDATORY):**
 Naturally embed 6 to 10 contextual hyperlinks (<a href="...">anchor text</a>) inside paragraph sentences. Use only URLs from this directory:
 ${interlinkingDirectory}
-Use natural anchor text. Interlink where the concept is discussed. Never dump links at the bottom.
+Use natural anchor text. Interlink where the concept is discussed. Never dump links at the bottom, and never link to the exact same URL more than once.
 
 **FORMATTING:**
 - Use HTML tags only: <h2>, <h3>, <h4>, <p>, <ul>, <ol>, <li>, <table>, <thead>, <tbody>, <tr>, <th>, <td>, <strong>, <em>, <a>.
 - No markdown at all. No ** bold. No ## headings. No \`\`\` code blocks. Output RAW HTML only.
-- Do NOT include the H1 title or subtitle (already generated). Start directly with the opening paragraph.
+- Do NOT include the H1 title or subtitle (already generated). Start directly with the opening <p> paragraph.
 - Do NOT include FAQs or Reviews sections.
 - No em dashes (—) anywhere. Use hyphens (-), colons (:), or commas instead.
 `;
 
     const step2UserMessage = body.context && body.context !== primaryKeyword
-      ? `Write a comprehensive, human-friendly HTML blog post (strictly 2,000 to 2,300 words) with 1 to 2 data tables, 6 to 8 h2 sections, and internal links about: ${primaryKeyword}\nAdditional context & details: ${body.context}`
-      : `Write a comprehensive, human-friendly HTML blog post (strictly 2,000 to 2,300 words) with 1 to 2 data tables, 6 to 8 h2 sections, and internal links about: ${primaryKeyword}`;
+      ? `Write a comprehensive, human-friendly, and structurally original HTML blog post (strictly 2,000 to 2,300 words) following the bespoke editorial blueprint, with 1 to 2 topic-specific data tables, 6 to 8 h2 sections, and 6 to 10 internal links about: ${primaryKeyword}\nAdditional context & details: ${body.context}`
+      : `Write a comprehensive, human-friendly, and structurally original HTML blog post (strictly 2,000 to 2,300 words) following the bespoke editorial blueprint, with 1 to 2 topic-specific data tables, 6 to 8 h2 sections, and 6 to 10 internal links about: ${primaryKeyword}`;
 
     const step2Completion = await openai.chat.completions.create({
       model: "gpt-6-sol",
@@ -437,7 +482,7 @@ Use natural anchor text. Interlink where the concept is discussed. Never dump li
         { role: "system", content: step2SystemPrompt },
         { role: "user", content: step2UserMessage },
       ],
-      max_completion_tokens: 5000,
+      max_completion_tokens: 7500,
     });
 
     let rawDescription = sanitizeText(step2Completion.choices[0].message.content || "");
@@ -454,7 +499,7 @@ Use natural anchor text. Interlink where the concept is discussed. Never dump li
     }
 
     // Post-process: Convert any markdown syntax GPT snuck in despite HTML-only instructions
-    // 1. Convert markdown numbered list items with bold: "1. **Item**: text" -> "<ol><li><strong>Item:</strong> text</li></ol>"
+    // 1. Convert markdown numbered list items with bold: "1. **Item**: text" -> "1. <strong>Item:</strong> text"
     cleanedDescription = cleanedDescription.replace(/^(\d+\.\s+)\*\*([^*\n]+)\*\*:?\s*/gm, (_m, num, text) => `${num}<strong>${text}:</strong> `);
     // 2. Convert bulleted list items with bold: "- **Item**: text" -> "- <strong>Item:</strong> text"
     cleanedDescription = cleanedDescription.replace(/^([*-]\s+)\*\*([^*\n]+)\*\*:?\s*/gm, (_m, bullet, text) => `${bullet}<strong>${text}:</strong> `);
@@ -472,44 +517,37 @@ Use natural anchor text. Interlink where the concept is discussed. Never dump li
     cleanedDescription = cleanedDescription.replace(/^#{2}\s+(.+)$/gm, '<h2>$1</h2>');
 
     // Safety check 1: Remove accidental FNF/Settlement boilerplate for non-employment topics
-    const isEmploymentTopic = /salary|employment|fnf|full.and.final|resignation|gratuity|wages|employer|notice.period/i.test(primaryKeyword);
+    const combinedTopicText = `${primaryKeyword} ${secondaryKeyword || ''} ${step1Result.title || ''}`;
+    const isEmploymentTopic = /salary|employment|fnf|full.and.final|resignation|gratuity|wages|employer|notice.period|stipend|relieving/i.test(combinedTopicText);
     if (!isEmploymentTopic) {
       cleanedDescription = cleanedDescription.replace(/<h2>Understanding\s+([^<]+?)\s+Full\s+and\s+Final\s+Settlement\s*\(FNF\)<\/h2>/gi, (_match, topic) => {
-        return `<h2>Legal Framework and Statutory Enforcement for ${topic.trim()} in India</h2>`;
+        return `<h2>How ${topic.trim()} Disputes Work in Practice</h2>`;
       });
     }
 
-    // Safety check 2: Clean up generic <h2>Understanding [Keyword]</h2> opening headings
-    cleanedDescription = cleanedDescription.replace(/^(\s*<p>[\s\S]*?<\/p>\s*)?<h2>Understanding\s+([^<]+)<\/h2>/i, (_match, prefix, headingText) => {
-      const cleanPrefix = prefix || '';
-      return `${cleanPrefix}<h2>Statutory Framework and Legal Remedies for ${headingText.trim()}</h2>`;
-    });
-
-    // Safety check 3: Remove any off-brand bank/financial loan settlement references
+    // Safety check 2: Remove any off-brand bank/financial loan settlement references
     const offBrandPatterns: [RegExp, string][] = [
       [/\b(bank\s+loan\s+settlement|loan\s+settlement|npa\s+settlement|one\s+time\s+settlement\s+with\s+(bank|lender|nbfc)|ots\s+settlement|emi\s+waiver|debt\s+restructuring|debt\s+settlement|loan\s+waiver|sarfaesi|credit\s+card\s+settlement|nbfc\s+settlement|wilful\s+defaulter|drt\s+proceedings)\b/gi, 'legal notice for money recovery'],
-      [/<h[2-4][^>]*>\s*[^<]*(loan\s+settlement|npa\s+settlement|ots\s+with|debt\s+restructuring)[^<]*<\/h[2-4]>/gi, '<h2>Legal Recovery and Notice Escalation Process in India</h2>'],
+      [/<h[2-4][^>]*>\s*[^<]*(loan\s+settlement|npa\s+settlement|ots\s+with|debt\s+restructuring)[^<]*<\/h[2-4]>/gi, '<h2>How the Legal Notice and Recovery Escalation Process Works</h2>'],
     ];
     for (const [pattern, replacement] of offBrandPatterns) {
       cleanedDescription = cleanedDescription.replace(pattern, replacement);
     }
 
-    // Safety check 4: Strip RERA/MSME/DGCA content when topic is not property/freelancer/airline
-    const isPropertyTopic = /\b(rera|builder|property|flat|apartment|possession|real\s*estate|housing\s*project|homebuyer|landlord|tenant|lease)\b/i.test(primaryKeyword);
-    const isFreelancerTopic = /\b(freelancer|invoice|vendor|msme|supplier|client\s*payment|b2b|samadhan|contractor)\b/i.test(primaryKeyword);
-    const isAirlineTopic = /\b(flight|airline|travel|dgca|ticket|airport)\b/i.test(primaryKeyword);
+    // Safety check 3: Strip RERA/MSME/DGCA headings when topic is not property/freelancer/airline
+    const isPropertyTopic = /\b(rera|builder|property|flat|apartment|possession|real\s*estate|housing\s*project|homebuyer|landlord|tenant|lease|society)\b/i.test(combinedTopicText);
+    const isFreelancerTopic = /\b(freelancer|invoice|vendor|msme|mse|supplier|client\s*payment|b2b|samadhan|contractor|business|agency|consult)\b/i.test(combinedTopicText);
+    const isAirlineTopic = /\b(flight|airline|travel|dgca|ticket|airport|tour|hotel)\b/i.test(combinedTopicText);
 
     if (!isPropertyTopic) {
-      // Remove entire RERA-specific h2/h3 sections and replace inline RERA mentions
-      cleanedDescription = cleanedDescription.replace(/<h[2-4][^>]*>[^<]*\bRERA\b[^<]*<\/h[2-4]>([\s\S]*?)(?=<h[2-4]|$)/gi, '');
       cleanedDescription = cleanedDescription.replace(/\bRERA\b/g, 'the applicable legal framework');
       cleanedDescription = cleanedDescription.replace(/Real\s+Estate\s+\(Regulation\s+and\s+Development\)\s+Act[^.;,]*/gi, 'applicable statutory regulations');
     }
     if (!isFreelancerTopic) {
-      cleanedDescription = cleanedDescription.replace(/<h[2-4][^>]*>[^<]*\bMSME\s+Samadhan\b[^<]*<\/h[2-4]>([\s\S]*?)(?=<h[2-4]|$)/gi, '');
+      cleanedDescription = cleanedDescription.replace(/<h[2-4][^>]*>[^<]*\bMSME\s+Samadhan\b[^<]*<\/h[2-4]>/gi, '');
     }
     if (!isAirlineTopic) {
-      cleanedDescription = cleanedDescription.replace(/<h[2-4][^>]*>[^<]*\bDGCA\b[^<]*<\/h[2-4]>([\s\S]*?)(?=<h[2-4]|$)/gi, '');
+      cleanedDescription = cleanedDescription.replace(/<h[2-4][^>]*>[^<]*\bDGCA\b[^<]*<\/h[2-4]>/gi, '');
     }
 
     console.log(`[AI Generator Flow] Step 2 complete. Description length: ${cleanedDescription.split(/\s+/).length} words.`);
@@ -524,11 +562,11 @@ Use natural anchor text. Interlink where the concept is discussed. Never dump li
     try {
       const step3SystemPrompt = `
 You are a legal content strategist and SEO expert for LegalRecovery (https://www.legalrecovery.in/).
-Analyze the following generated article Title, Subtitle, and HTML Description, and generate:
-1. 6 to 8 concise, highly relevant FAQs (frequently asked questions) that directly answer specific practical questions from the article.
-2. 4 realistic customer review snippets (with Indian names) expressing satisfaction with LegalRecovery's legal notice and money recovery service.
-3. A suggested image prompt describing a clean, professional, modern corporate illustration suitable for the article's featured hero image.
-4. A suggested infographic prompt describing a structured legal data infographic, statutory process flowchart, or visual metrics chart specifically tailored for the mid-article infographic.
+Analyze the generated article Title, Subtitle, and HTML Description, and generate:
+1. 6 to 8 concise, highly specific FAQs (frequently asked questions) that directly address practical edge cases, timelines, evidence questions, and statutory doubts unique to THIS article's exact topic (avoid generic questions that could apply to any random blog post).
+2. 4 realistic customer review snippets (with authentic Indian names) expressing satisfaction with LegalRecovery's legal notice and money recovery service specifically for scenarios closely related to THIS article's topic.
+3. A suggested image prompt describing a clean, professional, modern editorial illustration suitable for THIS article's featured hero image (Indian context, crimson #DC2626 and slate accents, clean composition, no text or words inside the image).
+4. A suggested infographic prompt describing a clean, structured 4-to-5 step visual process flowchart or legal data infographic specifically tailored to THIS article's topic with short, crisp 2-to-4 word labels.
 
 **ABOUT LEGALRECOVERY — REVIEWS MUST REFLECT THESE SERVICES ONLY:**
 LegalRecovery helps people recover unpaid money through legal notices and escalation. Reviews MUST be based on one of these 8 real service categories only:
@@ -544,34 +582,35 @@ LegalRecovery helps people recover unpaid money through legal notices and escala
 **STRICTLY PROHIBITED IN REVIEWS AND FAQS:**
 Do NOT write reviews or FAQs about: bank loan settlement, NPA settlement, OTS, EMI waivers, debt restructuring, SARFAESI, mortgage settlement, credit card dues, chit fund recovery, or any banking/financial product. These are NOT services LegalRecovery offers.
 
-${researchContext ? `**ADDITIONAL RESEARCH CONTEXT (use this to generate accurate, real-world FAQs that people actually search for):**\n${researchContext}\n` : ''}Article Title: ${step1Result.title}
-Article Subtitle: ${step1Result.subtitle}
-
-Article Description:
-${cleanedDescription}
-
 CRITICAL NEGATIVE CONSTRAINT:
 Under no circumstances should you include any em dashes (—) anywhere in your response. Always use normal hyphens (-), colons (:), commas, parentheses, or rewrite the sentence to avoid them.
 
 Return ONLY a JSON object with this exact structure:
 {
   "faqs": [
-    { "question": "Detailed question?", "answer": "Detailed helpful answer." }
+    { "question": "Topic-specific practical question?", "answer": "Direct, helpful, and legally accurate answer." }
   ],
   "reviews": [
-    { "name": "Reviewer Full Name", "rating": 5, "review": "Detailed review text reflecting a real LegalRecovery service outcome..." }
+    { "name": "Reviewer Full Name", "rating": 5, "review": "Detailed review text reflecting a specific LegalRecovery service outcome matching this topic..." }
   ],
   "suggestedImagePrompt": "Visual description for the article's featured hero image",
   "suggestedInfographicPrompt": "Visual description for a structured legal data infographic / chart / workflow diagram"
 }`;
 
+      const step3UserMessage = `${researchContext ? `**RESEARCH CONTEXT:**\n${researchContext}\n\n` : ''}Article Title: ${step1Result.title}
+Article Subtitle: ${step1Result.subtitle}
+
+Article Description:
+${cleanedDescription}`;
+
       const step3Completion = await openai.chat.completions.create({
         model: "gpt-6-luna",
         messages: [
-          { role: "system", content: step3SystemPrompt }
+          { role: "system", content: step3SystemPrompt },
+          { role: "user", content: step3UserMessage }
         ],
         response_format: { type: "json_object" },
-        max_completion_tokens: 2500,
+        max_completion_tokens: 3000,
       });
 
       const step3ResultStr = sanitizeText(step3Completion.choices[0].message.content || "{}");
