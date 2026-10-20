@@ -164,6 +164,14 @@ const jsonLd = {
         "@type": "Organization",
         "name": "Legal Recovery"
       },
+      "offers": {
+        "@type": "Offer",
+        "url": "https://www.legalrecovery.in/bulk-recovery-notice-send-through-email-whatsapp-speedpost-solution",
+        "priceCurrency": "INR",
+        "price": "2499",
+        "availability": "https://schema.org/InStock",
+        "priceValidUntil": "2027-12-31"
+      },
       "aggregateRating": {
         "@type": "AggregateRating",
         "ratingValue": "4.9",

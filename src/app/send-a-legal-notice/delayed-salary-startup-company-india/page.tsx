@@ -2,9 +2,9 @@ import { Metadata } from 'next';
 import DelayedSalaryStartupCompanyIndiaClient from './DelayedSalaryStartupCompanyIndiaClient';
 
 const slug = 'send-a-legal-notice/delayed-salary-startup-company-india';
-const title = 'Legal Notice to Startup for Delayed Salary Payment';
+const title = 'Startup Not Paying Salary? Legal Notice to Founders & NCLT IBC Claim';
 const description =
-  'Startup employer delaying your salary? Send an advocate-drafted legal notice under the Code on Wages to recover pending dues with interest.';
+  'Startup delaying salaries citing funding winter or runway crunch? Serve an Advocate Legal Notice to startup founders/directors & file an NCLT Operational Creditor claim.';
 const url = `https://www.legalrecovery.in/${slug}`;
 const ogImage = `/images/og/delayed-salary-startup-company-india.jpg`;
 

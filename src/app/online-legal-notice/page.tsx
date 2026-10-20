@@ -2,20 +2,27 @@ import { Metadata } from "next";
 import OnlineLegalNoticeClient from "./OnlineLegalNoticeClient";
 
 export const metadata: Metadata = {
-  title: "Online Legal Notice Services in India: Process & Law",
-  description: "Learn about serving an online legal notice via WhatsApp, Email, or SMS in India. Understand Section 63 BSA 2023 admissibility and court rules.",
+  title: "Send Legal Notice Online in India: Advocate Drafting, Speed Post & Tracking",
+  description: "Send an Advocate-drafted Online Legal Notice in India via Registered Speed Post, WhatsApp & Email (Section 63 BSA valid). Check online legal notice validity, tracking & ₹999 fixed fee.",
   keywords: [
     "online legal notice",
-    "send legal notice online India",
+    "send legal notice online",
+    "legal notice online",
+    "online notice",
+    "how to check legal notice online",
+    "online legal notice for recovery of money",
     "WhatsApp legal notice validity",
-    "legal notice via email CPC",
-    "electronic legal notice service rules",
     "Section 63 BSA certificate",
-    "digital legal notice service",
-    "presumption of service online notice"
+    "digital legal notice service"
   ],
   alternates: {
     canonical: 'https://www.legalrecovery.in/online-legal-notice',
+  },
+  openGraph: {
+    title: "Send Legal Notice Online in India: Advocate Drafting, Speed Post & Tracking",
+    description: "Send an Advocate-drafted Online Legal Notice in India via Registered Speed Post, WhatsApp & Email (Section 63 BSA valid).",
+    url: "https://www.legalrecovery.in/online-legal-notice",
+    type: "article",
   },
 };
 

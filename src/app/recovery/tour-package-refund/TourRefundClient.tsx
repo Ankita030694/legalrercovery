@@ -89,6 +89,14 @@ const reviewSchema = {
   "name": "Tour Package Refund Recovery Services",
   "image": "https://www.legalrecovery.in/og-tour-package.png",
   "brand": { "@type": "Brand", "name": "LegalRecovery" },
+  "offers": {
+    "@type": "Offer",
+    "url": "https://www.legalrecovery.in/recovery/tour-package-refund",
+    "priceCurrency": "INR",
+    "price": "999",
+    "availability": "https://schema.org/InStock",
+    "priceValidUntil": "2027-12-31"
+  },
   "aggregateRating": { "@type": "AggregateRating", "ratingValue": "4.9", "reviewCount": "285" },
   "review": [
     {

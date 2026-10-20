@@ -142,6 +142,14 @@ const reviewSchema = {
     "name": "LegalRecovery"
   },
   "description": "Expert legal assistance for calculating, claiming, and recovering B2B delayed payment compound interest under the MSMED Act, 2006.",
+  "offers": {
+    "@type": "Offer",
+    "url": "https://www.legalrecovery.in/recovery/delayed-payment-interest-under-msme",
+    "priceCurrency": "INR",
+    "price": "999",
+    "availability": "https://schema.org/InStock",
+    "priceValidUntil": "2027-12-31"
+  },
   "aggregateRating": {
     "@type": "AggregateRating",
     "ratingValue": "4.9",

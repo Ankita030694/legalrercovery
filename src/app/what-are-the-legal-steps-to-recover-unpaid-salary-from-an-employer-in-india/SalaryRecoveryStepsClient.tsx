@@ -56,6 +56,10 @@ const faqs = [
   {
     question: "What is the role of a Labour Inspector in a salary recovery dispute?",
     answer: "Labour Inspectors are government officers appointed under state-specific Shops and Commercial Establishments Acts. They have broad powers to enter business premises, inspect attendance registers, audit payroll books, and examine witnesses. When you file a formal complaint with the Labour Inspectorate, they can issue notice to the employer, conduct an audit, and direct the company to pay the outstanding wages. While they cannot pass judicial decrees, their intervention and findings carry significant weight and often prompt employers to settle disputes to avoid statutory fines or cancellation of their business licenses."
+  },
+  {
+    question: "What does 'Salary Recovery' mean in a payslip or Full & Final (F&F) statement?",
+    answer: "In Indian payroll terminology, 'Salary Recovery' in a payslip or F&F sheet refers to deductions made by an employer to claw back excess salary advances, unserved notice period shortfall ('notice pay recovery'), or negative leave balances. However, under Section 7 of the Payment of Wages Act, 1936, an employer cannot arbitrarily deduct earned wages under the guise of 'salary recovery' for unverified training bonds, laptop wear-and-tear, or disputed notice periods—and if they do, you can legally recover those wrongfully deducted wages via an Advocate Legal Notice."
   }
 ];
 
@@ -169,6 +173,14 @@ const reviewSchema = {
   "brand": {
     "@type": "Brand",
     "name": "LegalRecovery"
+  },
+  "offers": {
+    "@type": "Offer",
+    "url": "https://www.legalrecovery.in/what-are-the-legal-steps-to-recover-unpaid-salary-from-an-employer-in-india",
+    "priceCurrency": "INR",
+    "price": "999",
+    "availability": "https://schema.org/InStock",
+    "priceValidUntil": "2027-12-31"
   },
   "aggregateRating": {
     "@type": "AggregateRating",

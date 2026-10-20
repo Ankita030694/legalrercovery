@@ -43,6 +43,14 @@ const faqs = [
   {
     question: "Is it necessary to hire a lawyer to file a complaint on e-Daakhil?",
     answer: "No, the Consumer Protection Act, 2019, explicitly allows consumers to file complaints and present their cases in person. While a lawyer can draft and structure your case professionally, the process is designed to be user-friendly. Serving a drafted legal notice beforehand is sufficient to build your legal stance, allowing you to file the case on e-Daakhil independently."
+  },
+  {
+    question: "What should I do if Flipkart is not returning or picking up my defective product?",
+    answer: "If Flipkart repeatedly reschedules or cancels return pickup—or closes your return request citing 'seller verification passed'—escalate immediately to the Flipkart Grievance Officer under Rule 4(4) of the Consumer Protection (E-Commerce) Rules, 2020 (which mandates acknowledgment within 48 hours), register a docket on the National Consumer Helpline (1915 / consumerhelpline.gov.in), and serve a formal Advocate Legal Notice demanding full refund plus 18% interest."
+  },
+  {
+    question: "How do I escalate a unresolved Flipkart return issue beyond customer care?",
+    answer: "Follow the 3-tier statutory escalation hierarchy: (1) Email Flipkart's designated Nodal/Grievance Officer with your Order ID, invoice, and rejection screenshots; (2) File an NCH grievance on 1915 or the INGRAM portal; and (3) Dispatch a Lawyer-Drafted Legal Notice to Flipkart Internet Private Limited (Bengaluru registered office) before filing an online consumer court claim on e-Jagriti / e-Daakhil."
   }
 ];
 
@@ -139,6 +147,14 @@ const reviewSchema = {
   "brand": {
     "@type": "Brand",
     "name": "LegalRecovery"
+  },
+  "offers": {
+    "@type": "Offer",
+    "url": "https://www.legalrecovery.in/flipkart-return-refund-complaint",
+    "priceCurrency": "INR",
+    "price": "999",
+    "availability": "https://schema.org/InStock",
+    "priceValidUntil": "2027-12-31"
   },
   "aggregateRating": {
     "@type": "AggregateRating",

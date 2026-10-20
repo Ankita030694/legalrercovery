@@ -34,11 +34,11 @@ const faqs = [
   },
   {
     question: "Can I file a case in the Consumer Forum against a PG owner?",
-    answer: "Yes. Since PG accommodations provide lodging and food services for a commercial fee, guests are categorized as 'consumers' under the Consumer Protection Act, 2019. If the owner refuses to refund your deposit, you can file a complaint for deficiency of service on the E-Daakhil portal. For ignored notices, check <Link href=\"/what-to-do-if-legal-notice-is-ignored-india\" className=\"text-[#DC2626] hover:underline font-medium\">what to do if legal notice is ignored in India</Link> to plan your court escalation."
+    answer: "Yes. Since PG accommodations provide lodging and food services for a commercial fee, guests are categorized as 'consumers' under the Consumer Protection Act, 2019. If the owner refuses to refund your deposit even after a legal notice, you can file an online complaint for deficiency of service on the e-Jagriti / e-Daakhil portal."
   },
   {
     question: "How much interest can I claim on delayed security deposit refunds?",
-    answer: "You can claim interest ranging from 12% to 18% per annum on the delayed refund amount from the date it became due. Citing this interest in your legal notice warns the owner of mounting financial liabilities if they drag the dispute to court. For details on drafting recovery notices, check <Link href=\"/legal-notice-for-recovery-of-money\" className=\"text-[#DC2626] hover:underline font-medium\">legal notice for recovery of money</Link>."
+    answer: "You can claim interest ranging from 12% to 18% per annum on the delayed refund amount from the date it became due. Citing this statutory interest in your legal notice warns the PG owner of mounting financial liabilities if they drag the dispute to court."
   }
 ];
 
@@ -56,7 +56,7 @@ const reviews = [
   {
     author: "Siddharth Sen (Noida)",
     rating: "5",
-    text: "I was struggling for 3 months to get my PG deposit back. The owner stopped answering my calls. I sent a formal legal notice through an advocate. The owner immediately called me to settle the dispute amicably. If you are facing similar issues, check out how to resolve it without court by reading about <Link href=\"/how-to-recover-money-without-going-to-court-india\" className=\"text-[#DC2626] hover:underline font-medium\">how to recover money without going to court in India</Link>."
+    text: "I was struggling for 3 months to get my PG deposit back. The owner stopped answering my calls. I sent a formal legal notice through an advocate. The owner immediately called me to settle the dispute amicably out of court."
   }
 ];
 
@@ -135,6 +135,14 @@ const reviewSchema = {
   "brand": {
     "@type": "Brand",
     "name": "LegalRecovery"
+  },
+  "offers": {
+    "@type": "Offer",
+    "url": "https://www.legalrecovery.in/legal-notice-to-pg-owner-for-security-deposit-refund",
+    "priceCurrency": "INR",
+    "price": "999",
+    "availability": "https://schema.org/InStock",
+    "priceValidUntil": "2027-12-31"
   },
   "aggregateRating": {
     "@type": "AggregateRating",

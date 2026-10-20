@@ -2,22 +2,25 @@ import { Metadata } from "next";
 import FraudTransactionClient from "./FraudTransactionClient";
 
 export const metadata: Metadata = {
-  title: "Recover Fraud Transaction Amount in India | LegalRecovery",
-  description: "Recover funds from unauthorized online banking or UPI fraud. Learn about RBI zero liability guidelines, 1930 helpline, and legal recovery notices.",
+  title: "Unauthorized Card, SIM Swap or UPI Fraud Transaction? RBI 3-Day Zero Liability Refund",
+  description: "Lost money in an unauthorized credit/debit card, phishing, or SIM-swap transaction? Claim 100% Bank Shadow Credit within 10 days under RBI Zero Liability Circular via Legal Notice.",
   keywords: [
     "recover fraud transaction amount",
     "unauthorized electronic transaction liability rbi",
-    "upi fraud refund legal action",
-    "bank transfer cyber fraud recovery",
-    "national cyber crime helpline 1930",
-    "rbi ombudsman complaint online fraud",
-    "consumer court bank negligence fraud",
-    "zero customer liability banking fraud",
     "credit card skimming refund legal notice",
-    "information technology act section 43a fraud"
+    "sim swap bank fraud recovery india",
+    "zero customer liability banking fraud 3 days",
+    "rbi shadow credit 10 working days rule",
+    "information technology act section 43a bank negligence"
   ],
   alternates: {
     canonical: 'https://www.legalrecovery.in/recovery/fraud-transaction-amount',
+  },
+  openGraph: {
+    title: "Unauthorized Card, SIM Swap or UPI Fraud Transaction? RBI 3-Day Zero Liability Refund",
+    description: "Lost money in an unauthorized credit/debit card or SIM-swap transaction? Claim 100% Bank Shadow Credit under RBI Zero Liability Circular.",
+    url: "https://www.legalrecovery.in/recovery/fraud-transaction-amount",
+    type: "article",
   },
 };
 

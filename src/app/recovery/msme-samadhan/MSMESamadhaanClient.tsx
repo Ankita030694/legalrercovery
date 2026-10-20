@@ -142,6 +142,14 @@ const reviewSchema = {
     "name": "LegalRecovery"
   },
   "description": "Advocate-backed legal assistance for filing, tracking, and representing cases on the MSME Samadhan Portal (samadhaan.msme.gov.in) in India.",
+  "offers": {
+    "@type": "Offer",
+    "url": "https://www.legalrecovery.in/recovery/msme-samadhan",
+    "priceCurrency": "INR",
+    "price": "999",
+    "availability": "https://schema.org/InStock",
+    "priceValidUntil": "2027-12-31"
+  },
   "aggregateRating": {
     "@type": "AggregateRating",
     "ratingValue": "4.9",

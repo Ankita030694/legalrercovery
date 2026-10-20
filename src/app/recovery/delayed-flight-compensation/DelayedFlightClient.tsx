@@ -89,6 +89,14 @@ const reviewSchema = {
   "name": "Delayed Flight Compensation Recovery Services",
   "image": "https://www.legalrecovery.in/og-delayed-flight.png",
   "brand": { "@type": "Brand", "name": "LegalRecovery" },
+  "offers": {
+    "@type": "Offer",
+    "url": "https://www.legalrecovery.in/recovery/delayed-flight-compensation",
+    "priceCurrency": "INR",
+    "price": "999",
+    "availability": "https://schema.org/InStock",
+    "priceValidUntil": "2027-12-31"
+  },
   "aggregateRating": { "@type": "AggregateRating", "ratingValue": "4.9", "reviewCount": "612" },
   "review": [
     {

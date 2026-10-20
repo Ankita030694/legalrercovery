@@ -261,6 +261,14 @@ export default function TravelRecoveryClient() {
           "url": "https://www.legalrecovery.in"
         },
         "areaServed": "IN",
+        "offers": {
+          "@type": "Offer",
+          "url": "https://www.legalrecovery.in/services/airline-and-travel-recoveries",
+          "priceCurrency": "INR",
+          "price": "999",
+          "availability": "https://schema.org/InStock",
+          "priceValidUntil": "2027-12-31"
+        },
         "aggregateRating": {
           "@type": "AggregateRating",
           "ratingValue": "4.9",

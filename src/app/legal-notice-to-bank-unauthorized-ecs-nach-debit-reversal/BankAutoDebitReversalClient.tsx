@@ -34,11 +34,23 @@ const faqs = [
   },
   {
     question: "Can I file a complaint with the Banking Ombudsman immediately?",
-    answer: "You can approach the Banking Ombudsman only after 30 days have passed since you filed a written complaint with the bank, or if the bank rejects your complaint or provides an unsatisfactory resolution. Serving a legal notice during this period is essential to build a strong case. For steps to take, check <Link href=\"/what-to-do-if-legal-notice-is-ignored-india\" className=\"text-[#DC2626] hover:underline font-medium\">what to do if legal notice is ignored in India</Link>."
+    answer: "You can approach the RBI Banking Ombudsman after 30 days have passed since you filed a written complaint with the bank, or immediately if the bank rejects your complaint or provides an unsatisfactory resolution. Serving an advocate-drafted legal notice during this window forces the bank's Nodal Officer to resolve the dispute before Ombudsman penalties apply."
   },
   {
     question: "How can I recover wrongful bounce charges debited by the bank?",
-    answer: "If the bank wrongfully charged you for mandate failures after you submitted a cancellation request, you can demand the full refund of these charges through a legal notice. For detailed guides on recovering money, check out <Link href=\"/legal-notice-for-recovery-of-money\" className=\"text-[#DC2626] hover:underline font-medium\">legal notice for recovery of money</Link>."
+    answer: "If the bank wrongfully charged you mandate failure or bounce fees after you submitted a mandate cancellation request or when the account had sufficient balance, you can demand 100% reversal of the penal charges plus interest through a formal legal notice."
+  },
+  {
+    question: "Must State Bank of India (SBI) or other banks refund funds for unauthorized withdrawals and auto-debits?",
+    answer: "Yes. Under the RBI Circular on Customer Protection – Limiting Liability of Customers in Unauthorised Electronic Banking Transactions (DBR.No.Leg.BC.78/09.07.005/2017-18), a customer has Zero Liability when an unauthorized withdrawal or auto-debit occurs due to contributory negligence/deficiency by the bank or when reported within 3 working days. The bank (including SBI and private banks) must credit the shadow reversal to the customer's account within 10 working days (T+10) from notification."
+  },
+  {
+    question: "If an unauthorized debit is raised by the bank, what should be the first action after verification?",
+    answer: "Once verification confirms an unauthorized debit, the bank must reverse the entry immediately (providing shadow credit value-dated to the date of the unauthorized transaction) and refund any associated service or penal charges. If the branch fails to reverse the entry immediately, serve a formal legal notice to the bank's Principal Nodal Officer and escalate to the RBI Integrated Ombudsman."
+  },
+  {
+    question: "If a bank fails to execute an ECS/NACH direct debit or mandate cancellation instruction on time, what is the customer compensated for?",
+    answer: "Under RBI Harmonisation of Turn Around Time (TAT) rules and NPCI NACH guidelines, if a bank fails to execute a valid ECS/NACH instruction or fails to stop a revoked mandate on time, the customer must be compensated for the actual financial loss incurred plus a mandatory delay penalty of ₹100 per day beyond the stipulated T+1 / T+5 turnaround window, in addition to reversal of all bounce fees."
   }
 ];
 
@@ -56,7 +68,7 @@ const reviews = [
   {
     author: "Manish Joshi (Delhi)",
     rating: "5",
-    text: "I was charged ₹3,500 in mandate failure fees because of an auto-debit that I had cancelled months ago. Citing the RBI charter in a legal notice forced the bank's legal team to refund the entire amount. If you want to settle the dispute out of court, look at <Link href=\"/how-to-recover-money-without-going-to-court-india\" className=\"text-[#DC2626] hover:underline font-medium\">how to recover money without going to court in India</Link>."
+    text: "I was charged ₹3,500 in mandate failure fees because of an auto-debit that I had cancelled months ago. Citing the RBI charter in a legal notice forced the bank's legal team to refund the entire amount within days without going to court."
   }
 ];
 
@@ -135,6 +147,14 @@ const reviewSchema = {
   "brand": {
     "@type": "Brand",
     "name": "LegalRecovery"
+  },
+  "offers": {
+    "@type": "Offer",
+    "url": "https://www.legalrecovery.in/legal-notice-to-bank-unauthorized-ecs-nach-debit-reversal",
+    "priceCurrency": "INR",
+    "price": "999",
+    "availability": "https://schema.org/InStock",
+    "priceValidUntil": "2027-12-31"
   },
   "aggregateRating": {
     "@type": "AggregateRating",

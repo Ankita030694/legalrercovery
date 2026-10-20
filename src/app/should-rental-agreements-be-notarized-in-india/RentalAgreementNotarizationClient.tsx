@@ -43,6 +43,10 @@ const faqs = [
   {
     question: "Can a rent tribunal resolve disputes arising from a notarized agreement?",
     answer: "Under the new Model Tenancy Act and various state rent control laws, rent tribunals are established to resolve disputes between landlords and tenants. However, many state rent tribunals require the tenancy to be registered with the rent authority to accept the case. If the agreement is only notarized and not registered, the rent tribunal may refuse to entertain the petition. In such cases, the parties must approach the regular civil courts to resolve their monetary or eviction disputes, which can be a more time-consuming process."
+  },
+  {
+    question: "Is a rent agreement valid without notary in India?",
+    answer: "Yes. For an 11-month residential lease, notarization is not mandatory under the Registration Act, 1908—an agreement executed on valid state stamp paper and signed by both the landlord and tenant in the presence of two witnesses is a binding contract under the Indian Contract Act, 1872. However, getting it notarized authenticates the signatures and prevents either party from later claiming forgery during a security deposit recovery dispute."
   }
 ];
 
@@ -139,6 +143,14 @@ const reviewSchema = {
   "brand": {
     "@type": "Brand",
     "name": "LegalRecovery"
+  },
+  "offers": {
+    "@type": "Offer",
+    "url": "https://www.legalrecovery.in/should-rental-agreements-be-notarized-in-india",
+    "priceCurrency": "INR",
+    "price": "999",
+    "availability": "https://schema.org/InStock",
+    "priceValidUntil": "2027-12-31"
   },
   "aggregateRating": {
     "@type": "AggregateRating",

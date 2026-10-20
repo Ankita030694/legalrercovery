@@ -89,6 +89,14 @@ const reviewSchema = {
   "name": "Travel Booking Refund Recovery Services",
   "image": "https://www.legalrecovery.in/og-travel-booking.png",
   "brand": { "@type": "Brand", "name": "LegalRecovery" },
+  "offers": {
+    "@type": "Offer",
+    "url": "https://www.legalrecovery.in/recovery/travel-booking-refund",
+    "priceCurrency": "INR",
+    "price": "999",
+    "availability": "https://schema.org/InStock",
+    "priceValidUntil": "2027-12-31"
+  },
   "aggregateRating": { "@type": "AggregateRating", "ratingValue": "4.9", "reviewCount": "415" },
   "review": [
     {

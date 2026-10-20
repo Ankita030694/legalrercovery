@@ -21,29 +21,32 @@ const STATIC_ROUTES: {
   { path: "/services/recovery-of-freelancer-and-client-payments", changeFrequency: "weekly", priority: 0.85 },
   { path: "/services/recovery-of-money-from-a-friend", changeFrequency: "weekly", priority: 0.85 },
   { path: "/how-it-works", changeFrequency: "monthly", priority: 0.8 },
-  { path: "/blog", changeFrequency: "weekly", priority: 0.8 },
+  { path: "/contact", changeFrequency: "monthly", priority: 0.8 },
+  { path: "/authors", changeFrequency: "monthly", priority: 0.7 },
+  { path: "/authors/advocate-aman-chawla", changeFrequency: "monthly", priority: 0.7 },
+  { path: "/authors/advocate-sneha-sharma", changeFrequency: "monthly", priority: 0.7 },
+  { path: "/blog", changeFrequency: "daily", priority: 0.9 },
   { path: "/privacy-policy", changeFrequency: "yearly", priority: 0.3 },
   { path: "/terms-and-conditions", changeFrequency: "yearly", priority: 0.3 },
-  { path: "/payment-success", changeFrequency: "monthly", priority: 0.3 },
-  { path: "/payment-failure", changeFrequency: "monthly", priority: 0.3 },
-  { path: "/payment-cancelled", changeFrequency: "monthly", priority: 0.3 },
   { path: "/legal-recovery-by-city", changeFrequency: "weekly", priority: 0.8 },
   { path: "/legal-notice-services", changeFrequency: "weekly", priority: 0.8 },
   { path: "/legal-notice-for-recovery-of-money", changeFrequency: "weekly", priority: 0.85 },
   { path: "/legal-notice-for-recovery-of-money-sample", changeFrequency: "weekly", priority: 0.85 },
   { path: "/how-to-send-a-legal-notice-for-recovery-of-money-in-india", changeFrequency: "weekly", priority: 0.85 },
   { path: "/how-to-draft-a-legal-notice-for-recovery-of-money", changeFrequency: "weekly", priority: 0.85 },
-  { path: "/online-legal-notice", changeFrequency: "weekly", priority: 0.85 },
-  { path: "/legal-notice-online", changeFrequency: "weekly", priority: 0.85 },
-  { path: "/send-a-legal-notice", changeFrequency: "weekly", priority: 0.85 },
-  { path: "/send-legal-notice", changeFrequency: "weekly", priority: 0.85 },
+  { path: "/online-legal-notice", changeFrequency: "weekly", priority: 0.9 },
+  { path: "/send-a-legal-notice", changeFrequency: "weekly", priority: 0.9 },
   { path: "/vakil-online", changeFrequency: "weekly", priority: 0.85 },
   { path: "/online-lawyer-to-send-legal-notice", changeFrequency: "weekly", priority: 0.85 },
   { path: "/what-is-a-legal-notice-in-india", changeFrequency: "weekly", priority: 0.85 },
   { path: "/email-landing", changeFrequency: "weekly", priority: 0.95 },
 
-  // Recovery routes
+  // B2B & Bulk Recovery routes
   { path: "/bulk-recovery-cases-all-in-one-affordable-solutions", changeFrequency: "weekly", priority: 0.9 },
+  { path: "/bulk-recovery-notice-send-through-email-whatsapp-speedpost-solution", changeFrequency: "weekly", priority: 0.9 },
+  { path: "/recovery-of-unpaid-dues-for-my-business", changeFrequency: "weekly", priority: 0.9 },
+
+  // Recovery routes
   { path: "/recovery", changeFrequency: "weekly", priority: 0.9 },
   { path: "/recovery/accidental-insurance-claim", changeFrequency: "weekly", priority: 0.8 },
   { path: "/recovery/airline-refund-amount", changeFrequency: "weekly", priority: 0.8 },
@@ -51,6 +54,8 @@ const STATIC_ROUTES: {
   { path: "/recovery/builder-booking-amount", changeFrequency: "weekly", priority: 0.8 },
   { path: "/recovery/business-dues", changeFrequency: "weekly", priority: 0.8 },
   { path: "/recovery/cheque-bounce-amount", changeFrequency: "weekly", priority: 0.8 },
+  { path: "/recovery/coaching-institute-fees", changeFrequency: "weekly", priority: 0.85 },
+  { path: "/recovery/college-fee-refund", changeFrequency: "weekly", priority: 0.85 },
   { path: "/recovery/consultancy-fees", changeFrequency: "weekly", priority: 0.8 },
   { path: "/recovery/contractor-payment", changeFrequency: "weekly", priority: 0.8 },
   { path: "/recovery/credit-card-fraud-amount", changeFrequency: "weekly", priority: 0.8 },
@@ -58,17 +63,19 @@ const STATIC_ROUTES: {
   { path: "/recovery/debit-card-fraud-amount", changeFrequency: "weekly", priority: 0.8 },
   { path: "/recovery/delayed-flight-compensation", changeFrequency: "weekly", priority: 0.8 },
   { path: "/recovery/delayed-payment-interest-under-msme", changeFrequency: "weekly", priority: 0.8 },
-  { path: "/recovery/delayed-wages", changeFrequency: "weekly", priority: 0.8 },
+  { path: "/recovery/delayed-wages", changeFrequency: "weekly", priority: 0.85 },
   { path: "/recovery/employment-reimbursement-claims", changeFrequency: "weekly", priority: 0.8 },
+  { path: "/recovery/event-cancellation-refund", changeFrequency: "weekly", priority: 0.8 },
   { path: "/recovery/export-dues", changeFrequency: "weekly", priority: 0.8 },
   { path: "/recovery/flat-booking-cancellation-refund", changeFrequency: "weekly", priority: 0.8 },
   { path: "/recovery/flight-cancellation-refund", changeFrequency: "weekly", priority: 0.8 },
   { path: "/recovery/flight-compensation-claim", changeFrequency: "weekly", priority: 0.8 },
-  { path: "/recovery/fnf-settlement", changeFrequency: "weekly", priority: 0.8 },
-  { path: "/recovery/fraud-transaction-amount", changeFrequency: "weekly", priority: 0.8 },
+  { path: "/recovery/fnf-settlement", changeFrequency: "weekly", priority: 0.85 },
+  { path: "/recovery/fraud-transaction-amount", changeFrequency: "weekly", priority: 0.85 },
   { path: "/recovery/freelancer-payments", changeFrequency: "weekly", priority: 0.8 },
   { path: "/recovery/friendly-loan-amount", changeFrequency: "weekly", priority: 0.8 },
   { path: "/recovery/gratuity-amount", changeFrequency: "weekly", priority: 0.8 },
+  { path: "/recovery/gym-membership-refund", changeFrequency: "weekly", priority: 0.8 },
   { path: "/recovery/hand-loan-amount", changeFrequency: "weekly", priority: 0.8 },
   { path: "/recovery/health-insurance-rejection-claim", changeFrequency: "weekly", priority: 0.8 },
   { path: "/recovery/hotel-booking-refund", changeFrequency: "weekly", priority: 0.8 },
@@ -79,7 +86,7 @@ const STATIC_ROUTES: {
   { path: "/recovery/money-lent-without-agreement", changeFrequency: "weekly", priority: 0.8 },
   { path: "/recovery/msme-dues", changeFrequency: "weekly", priority: 0.8 },
   { path: "/recovery/msme-samadhan", changeFrequency: "weekly", priority: 0.8 },
-  { path: "/recovery/notice-period-salary", changeFrequency: "weekly", priority: 0.8 },
+  { path: "/recovery/notice-period-salary", changeFrequency: "weekly", priority: 0.85 },
   { path: "/recovery/office-security-deposit", changeFrequency: "weekly", priority: 0.8 },
   { path: "/recovery/online-scam-payment", changeFrequency: "weekly", priority: 0.8 },
   { path: "/recovery/outstanding-dues-from-employer", changeFrequency: "weekly", priority: 0.8 },
@@ -90,6 +97,7 @@ const STATIC_ROUTES: {
   { path: "/recovery/post-dated-cheque-amount", changeFrequency: "weekly", priority: 0.8 },
   { path: "/recovery/rental-security-deposit", changeFrequency: "weekly", priority: 0.8 },
   { path: "/recovery/retained-salary", changeFrequency: "weekly", priority: 0.8 },
+  { path: "/recovery/school-fee-refund", changeFrequency: "weekly", priority: 0.8 },
   { path: "/recovery/security-deposit", changeFrequency: "weekly", priority: 0.8 },
   { path: "/recovery/tour-package-refund", changeFrequency: "weekly", priority: 0.8 },
   { path: "/recovery/travel-booking-refund", changeFrequency: "weekly", priority: 0.8 },
@@ -199,6 +207,7 @@ const STATIC_ROUTES: {
   { path: "/send-a-legal-notice/college-security-deposit-refund", changeFrequency: "weekly", priority: 0.85 },
   { path: "/send-a-legal-notice/trading-scam-telegram", changeFrequency: "weekly", priority: 0.85 },
   { path: "/send-a-legal-notice/property-dispute-money-stuck", changeFrequency: "weekly", priority: 0.85 },
+  { path: "/send-a-legal-notice/airline-refund-not-received", changeFrequency: "weekly", priority: 0.85 },
 ];
 
 async function getBlogEntries(): Promise<MetadataRoute.Sitemap> {
@@ -228,7 +237,7 @@ async function getBlogEntries(): Promise<MetadataRoute.Sitemap> {
         url: `${SITE_URL}/blog/${blog.slug}`,
         lastModified,
         changeFrequency: "weekly" as const,
-        priority: 0.7,
+        priority: 0.75,
       };
     });
   } catch (error) {
@@ -250,8 +259,8 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   const cityEntries: MetadataRoute.Sitemap = locationData.map((loc) => ({
     url: `${SITE_URL}/legal-recovery-by-city/${loc.slug}`,
     lastModified: new Date(),
-    changeFrequency: "weekly" as const,
-    priority: 0.6,
+    changeFrequency: "monthly" as const,
+    priority: 0.5,
   }));
 
   return [...staticEntries, ...blogEntries, ...cityEntries];

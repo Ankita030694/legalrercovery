@@ -88,6 +88,16 @@ const nextConfig: NextConfig = {
         destination: "/is-an-email-or-whatsapp-message-considered-a-valid-legal-notice-in-indian-courts",
         permanent: true,
       },
+      {
+        source: "/legal-notice-online",
+        destination: "/online-legal-notice",
+        permanent: true,
+      },
+      {
+        source: "/send-legal-notice",
+        destination: "/online-legal-notice",
+        permanent: true,
+      },
     ];
   },
 };

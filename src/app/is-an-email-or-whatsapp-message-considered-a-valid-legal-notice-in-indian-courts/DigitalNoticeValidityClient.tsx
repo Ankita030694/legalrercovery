@@ -170,6 +170,14 @@ const reviewSchema = {
     "@type": "Brand",
     "name": "LegalRecovery"
   },
+  "offers": {
+    "@type": "Offer",
+    "url": "https://www.legalrecovery.in/is-an-email-or-whatsapp-message-considered-a-valid-legal-notice-in-indian-courts",
+    "priceCurrency": "INR",
+    "price": "999",
+    "availability": "https://schema.org/InStock",
+    "priceValidUntil": "2027-12-31"
+  },
   "aggregateRating": {
     "@type": "AggregateRating",
     "ratingValue": "4.9",

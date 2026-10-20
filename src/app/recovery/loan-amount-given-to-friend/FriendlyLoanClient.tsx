@@ -142,6 +142,14 @@ const reviewSchema = {
     "name": "LegalRecovery"
   },
   "description": "Expert legal assistance for recovering personal loans given to friends, relatives, and acquaintances through legal notices, summary suits, and cheque bounce proceedings in India.",
+  "offers": {
+    "@type": "Offer",
+    "url": "https://www.legalrecovery.in/recovery/loan-amount-given-to-friend",
+    "priceCurrency": "INR",
+    "price": "999",
+    "availability": "https://schema.org/InStock",
+    "priceValidUntil": "2027-12-31"
+  },
   "aggregateRating": {
     "@type": "AggregateRating",
     "ratingValue": "4.9",

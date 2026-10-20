@@ -39,6 +39,10 @@ const faqs = [
   {
     question: "Can I file a case in the Labor Court if I am in a managerial role?",
     answer: "The Industrial Disputes Act defines a 'workman' and generally excludes employees who are employed in managerial, administrative, or supervisory roles drawing salaries above statutory limits. If you are in a managerial role, your primary legal remedy is filing a civil suit under Order 37 of the Code of Civil Procedure (CPC) for recovery of dues based on your employment contract, rather than approaching the labor commissioner."
+  },
+  {
+    question: "What is the best email format before sending a Legal Notice for delay in Full and Final (F&F) settlement?",
+    answer: "Before dispatching a formal Advocate Legal Notice, send a final written escalation email to HR and Finance with the subject line: 'FINAL REMINDER: Overdue Full & Final Settlement – [Your Name, Emp ID] – Last Working Day: [Date]'. State your exact LWD, completed clearance/handover date, itemized pending dues (unpaid salary, leave encashment, gratuity, bonus), and grant a strict 7-day window to credit the amount, explicitly noting that failure to clear dues will result in an Advocate Legal Notice and a Labour Commissioner / Order 37 CPC claim with 18% interest."
   }
 ];
 
@@ -125,6 +129,14 @@ const reviewSchema = {
   "brand": {
     "@type": "Brand",
     "name": "LegalRecovery"
+  },
+  "offers": {
+    "@type": "Offer",
+    "url": "https://www.legalrecovery.in/legal-notice-for-full-and-final-settlement-delay",
+    "priceCurrency": "INR",
+    "price": "999",
+    "availability": "https://schema.org/InStock",
+    "priceValidUntil": "2027-12-31"
   },
   "aggregateRating": {
     "@type": "AggregateRating",

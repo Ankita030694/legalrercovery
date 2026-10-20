@@ -43,6 +43,10 @@ const faqs = [
   {
     question: "Can I claim interest on withheld notice period salary?",
     answer: "Yes. Under Section 15 of the Payment of Wages Act, the authority can direct the employer to pay the delayed wages along with compensation. This compensation or interest can range from 6 percent to 12 percent per annum, depending on the discretion of the Labour Officer and the duration of the delay. The goal is to discourage employers from retaining employee funds for their own cash flow."
+  },
+  {
+    question: "What is the meaning of 'Salary Withheld' or 'Salary on Hold' during the notice period?",
+    answer: "'Salary Withheld' means your employer has processed your attendance in payroll so tax (TDS) and PF may appear calculated, but HR has frozen the actual bank disbursement of your monthly net pay—usually during the last 1 to 3 months of your resignation notice period—claiming it will be released only with Full and Final (F&F) settlement. Under Section 5 of the Payment of Wages Act, 1936, holding back earned monthly wages for future F&F clearance is unlawful, and an Advocate Legal Notice forces immediate disbursement."
   }
 ];
 
@@ -139,6 +143,14 @@ const reviewSchema = {
   "brand": {
     "@type": "Brand",
     "name": "LegalRecovery"
+  },
+  "offers": {
+    "@type": "Offer",
+    "url": "https://www.legalrecovery.in/legal-notice-for-salary-withheld-during-notice-period",
+    "priceCurrency": "INR",
+    "price": "999",
+    "availability": "https://schema.org/InStock",
+    "priceValidUntil": "2027-12-31"
   },
   "aggregateRating": {
     "@type": "AggregateRating",

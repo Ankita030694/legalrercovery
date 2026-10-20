@@ -30,6 +30,14 @@ const faqs = [
   {
     question: "Can the court excuse a delay in filing a money recovery suit?",
     answer: "Generally, Section 5 of the Limitation Act, which allows for the condonation of delay upon showing sufficient cause, does not apply to original civil suits for money recovery. The 3-year rule for original civil suits is strictly mandatory."
+  },
+  {
+    question: "Which Articles of the Limitation Act, 1963 prescribe the 3-year limitation period for money recovery suits?",
+    answer: "Under the Schedule to the Limitation Act, 1963: Article 19 governs money payable for money lent (3 years from when the loan is made); Article 21 governs money lent under an agreement that it shall be payable on demand (3 years from when the loan is made); Article 26 governs money found to be due on accounts stated (3 years); Article 35 governs bills of exchange or promissory notes payable on demand (3 years); Article 55 governs compensation for breach of contract (3 years); and Article 113 acts as the residuary article (3 years from when the right to sue accrues)."
+  },
+  {
+    question: "Money recovery ke liye court me kitna time lagta hai (How long does a money recovery case take in Indian courts)?",
+    answer: "While the statutory limitation to file the case is 3 years, the actual time taken inside court depends on the legal route: (1) An Advocate Legal Notice often resolves 65%+ of recovery claims within 15 days without going to court; (2) A Fast-Track Summary Suit under Order 37 CPC (where the defendant has no automatic right to defend) typically concludes in 3 to 6 months; and (3) An ordinary civil recovery suit takes 12 to 24 months depending on court workload."
   }
 ];
 
@@ -121,6 +129,14 @@ const reviewSchema = {
   "brand": {
     "@type": "Brand",
     "name": "LegalRecovery"
+  },
+  "offers": {
+    "@type": "Offer",
+    "url": "https://www.legalrecovery.in/time-limit-to-file-money-recovery-case-india",
+    "priceCurrency": "INR",
+    "price": "999",
+    "availability": "https://schema.org/InStock",
+    "priceValidUntil": "2027-12-31"
   },
   "aggregateRating": {
     "@type": "AggregateRating",

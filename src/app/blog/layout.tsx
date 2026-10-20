@@ -8,7 +8,7 @@ export const metadata: Metadata = {
   description:
     "Read expert legal tips on recovering money, unpaid salary, refunds, consumer complaints, security deposits, freelancer payments, and legal rights in India.",
   alternates: {
-    canonical: "/blog",
+    canonical: "https://www.legalrecovery.in/blog",
   },
 };
 

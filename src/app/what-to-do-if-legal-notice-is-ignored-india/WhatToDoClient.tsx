@@ -38,6 +38,14 @@ const faqs = [
   {
     question: "How do I prove the notice was delivered if they didn't reply?",
     answer: "Proof of delivery relies on the method used to send the notice. If sent via Registered Post with Acknowledgment Due (RPAD), the postal receipt and the signed return card serve as undeniable proof. For digital notices, email read receipts and WhatsApp blue ticks are legally recognized under the Information Technology Act. Courts accept these tracking records as conclusive evidence that the notice was successfully delivered to the debtor."
+  },
+  {
+    question: "What happens if a legal notice is not received, refused, or returned unclaimed?",
+    answer: "Under Section 27 of the General Clauses Act, 1897 and Section 119 of the Bharatiya Sakshya Adhiniyam, 2023, when a legal notice is dispatched via Registered Speed Post to the recipient's correct last known address and returns with postal remarks such as 'Refused', 'Unclaimed', 'Intimation Delivered', or 'Door Locked', Indian courts treat it as valid 'Deemed Service'. The recipient cannot escape liability by refusing the postman; you can proceed directly to file your civil recovery suit or Section 138 NI Act complaint after the notice period expires."
+  },
+  {
+    question: "What happens when a civil court notice or summons is not received or intentionally avoided?",
+    answer: "If a defendant intentionally avoids receiving a civil court summons, the court invokes Order 5 Rule 20 of the Code of Civil Procedure (CPC) for 'Substituted Service'—delivering the summons by affixing it on the defendant's residence/office door, publishing it in a local newspaper, or serving it electronically via Court-approved WhatsApp and Email. If the defendant still fails to appear on the hearing date, the court proceeds 'Ex-Parte' under Order 9 Rule 6 CPC and passes an enforceable decree against their bank accounts and property."
   }
 ];
 
@@ -129,6 +137,14 @@ const reviewSchema = {
   "brand": {
     "@type": "Brand",
     "name": "LegalRecovery"
+  },
+  "offers": {
+    "@type": "Offer",
+    "url": "https://www.legalrecovery.in/what-to-do-if-legal-notice-is-ignored-india",
+    "priceCurrency": "INR",
+    "price": "999",
+    "availability": "https://schema.org/InStock",
+    "priceValidUntil": "2027-12-31"
   },
   "aggregateRating": {
     "@type": "AggregateRating",

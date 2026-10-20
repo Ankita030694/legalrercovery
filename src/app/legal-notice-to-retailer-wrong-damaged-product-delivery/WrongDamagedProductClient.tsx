@@ -43,6 +43,14 @@ const faqs = [
   {
     question: "Can I claim compensation for mental harassment in my legal notice?",
     answer: "Yes. Under consumer protection laws, you are entitled to claim compensation for the mental agony, harassment, and litigation expenses caused by the retailer's default. Citing this in the legal notice adds financial pressure on the retailer to resolve the issue before a formal consumer case is filed. In many cases, this is the main driver for an out-of-court settlement, as companies want to avoid punitive damages."
+  },
+  {
+    question: "What proof should I collect in India if a cosmetic, moisturizer, or fragile item ordered online arrives leaking or broken?",
+    answer: "Immediately capture timestamped photos and video showing: (1) the shipping label with AWB/Tracking ID and declared package weight on the outer carton, (2) the broken seal, spilled liquid, or shattered container inside the inner packaging, (3) the batch number and MRP label on the item, and (4) the GST tax invoice. Raise a damaged-in-transit return ticket within 24 hours and attach a Section 63 Bharatiya Sakshya Adhiniyam (BSA) electronic evidence declaration if escalating to a legal notice."
+  },
+  {
+    question: "What if customer support completely ignores my formal legal notice regarding a damaged furniture or appliance delivery?",
+    answer: "When first-line customer support ignores a complaint or legal notice for high-value damaged furniture or appliances, ensure the notice is served via Registered Speed Post (with acknowledgment due) and emailed directly to the company's designated Grievance Officer and Directors as listed on the MCA portal. Once the 15-day notice period expires without refund, their silence constitutes 'adverse inference' and allows you to immediately file an online consumer complaint on e-Jagriti / e-Daakhil for 100% refund, 18% interest, and mental harassment damages."
   }
 ];
 
@@ -139,6 +147,14 @@ const reviewSchema = {
   "brand": {
     "@type": "Brand",
     "name": "LegalRecovery"
+  },
+  "offers": {
+    "@type": "Offer",
+    "url": "https://www.legalrecovery.in/legal-notice-to-retailer-wrong-damaged-product-delivery",
+    "priceCurrency": "INR",
+    "price": "999",
+    "availability": "https://schema.org/InStock",
+    "priceValidUntil": "2027-12-31"
   },
   "aggregateRating": {
     "@type": "AggregateRating",

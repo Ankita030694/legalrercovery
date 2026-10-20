@@ -2,22 +2,25 @@ import { Metadata } from "next";
 import CoachingInstituteFeesClient from "./CoachingInstituteFeesClient";
 
 export const metadata: Metadata = {
-  title: "Coaching Institute Not Refunding Fees? Recover Your Tuition | LegalRecovery",
-  description: "Coaching institute or edtech platform refusing to refund your fees? LegalRecovery provides expert legal-tech assistance to recover tuition fees, fight unfair no-refund clauses, and hold coaching centres accountable under CCPA guidelines and consumer law.",
+  title: "Coaching Institute Fee Refund in India: CCPA 2024 Pro-Rata Rule & Legal Notice",
+  description: "IIT-JEE, NEET, UPSC coaching center or EdTech refusing fee refund mid-course? Enforce CCPA 2024 Coaching Guidelines for mandatory pro-rata tuition & hostel refund via Legal Notice.",
   keywords: [
     "coaching institute fee refund India",
+    "CCPA guidelines coaching sector refund 2024",
+    "pro rata coaching fee refund rule",
     "coaching centre refund consumer court",
-    "coaching not refunding fees",
-    "CCPA guidelines coaching sector refund",
-    "IIT JEE coaching refund",
-    "NEET coaching fee recovery",
-    "edtech fee refund India",
-    "Byju's refund consumer complaint",
-    "coaching fee recovery legal notice",
-    "tuition fee refund consumer protection act"
+    "IIT JEE NEET coaching fee recovery",
+    "edtech course cancellation refund India",
+    "coaching fee recovery legal notice"
   ],
   alternates: {
     canonical: 'https://www.legalrecovery.in/recovery/coaching-institute-fees',
+  },
+  openGraph: {
+    title: "Coaching Institute Fee Refund in India: CCPA 2024 Pro-Rata Rule & Legal Notice",
+    description: "IIT-JEE, NEET, UPSC coaching center or EdTech refusing fee refund mid-course? Enforce CCPA 2024 Pro-Rata Refund Guidelines via Legal Notice.",
+    url: "https://www.legalrecovery.in/recovery/coaching-institute-fees",
+    type: "article",
   },
 };
 

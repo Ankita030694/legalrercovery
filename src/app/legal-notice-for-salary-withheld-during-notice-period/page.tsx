@@ -2,16 +2,24 @@ import { Metadata } from "next";
 import NoticePeriodSalaryClient from "./NoticePeriodSalaryClient";
 
 export const metadata: Metadata = {
-  title: "Recover Salary Withheld During Notice Period | Legal Remedy",
-  description: "Recover notice period salary withheld by your employer during exit settlement. Serve an advocate legal notice before your last working day in India.",
+  title: "Salary Withheld During Notice Period? Meaning, Law & Legal Notice to Employer",
+  description: "Can an employer hold your monthly salary while serving notice period? Understand 'Salary Withheld' meaning, Payment of Wages Act rules & serve a Legal Notice to release held salary.",
   keywords: [
+    "salary withheld meaning",
     "employer withheld notice period salary",
-    "legal notice for notice period salary",
     "can employer hold salary during notice period",
+    "legal notice for notice period salary held",
+    "salary on hold during notice period india",
     "notice period salary delay legal remedy"
   ],
   alternates: {
     canonical: "https://www.legalrecovery.in/legal-notice-for-salary-withheld-during-notice-period",
+  },
+  openGraph: {
+    title: "Salary Withheld During Notice Period? Meaning, Law & Legal Notice to Employer",
+    description: "Can an employer hold your monthly salary while serving notice period? Understand 'Salary Withheld' meaning & serve an Advocate Legal Notice.",
+    url: "https://www.legalrecovery.in/legal-notice-for-salary-withheld-during-notice-period",
+    type: "article",
   },
 };
 

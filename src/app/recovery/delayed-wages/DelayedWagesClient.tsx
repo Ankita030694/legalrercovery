@@ -56,6 +56,10 @@ const faqs = [
   {
     question: "Can I claim compensation for mental harassment caused by delayed salary?",
     answer: "Yes. In civil recovery suits and labor court petitions, employees can demand damages for mental agony, financial distress, and harassment caused by prolonged wage delays. You must document the consequences of the delay, such as default notices on bank loans, missed rent payments, credit score drops, or medical emergencies that went untreated due to lack of funds."
+  },
+  {
+    question: "What is the late salary payment law in India if my salary is delayed every month?",
+    answer: "Under Section 5 of the Payment of Wages Act, 1936 and the Code on Wages, 2019, every establishment employing fewer than 1,000 persons must disburse monthly salary before the 7th day of the succeeding month (and before the 10th day for establishments with 1,000+ employees). If your salary is late beyond the 7th–10th without valid statutory cause, the employer violates mandatory labor law and is liable to pay the unpaid salary plus compensation up to 10 times the delayed wage amount under Section 15(3)."
   }
 ];
 
@@ -129,6 +133,14 @@ const reviewSchema = {
   "brand": {
     "@type": "Brand",
     "name": "LegalRecovery"
+  },
+  "offers": {
+    "@type": "Offer",
+    "url": "https://www.legalrecovery.in/recovery/delayed-wages",
+    "priceCurrency": "INR",
+    "price": "999",
+    "availability": "https://schema.org/InStock",
+    "priceValidUntil": "2027-12-31"
   },
   "aggregateRating": {
     "@type": "AggregateRating",

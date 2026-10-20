@@ -43,6 +43,14 @@ const faqs = [
   {
     question: "What damages can I claim in a legal notice to a defaulting interior design studio?",
     answer: "In your legal notice, you can claim several types of damages and recoveries. First, demand the refund of the unutilized advance payment. Second, claim direct financial damages for the cost of rectifying substandard work. Third, claim consequential damages, such as rental expenses incurred if you had to live in rented accommodation due to project delays. Fourth, claim interest on the blocked funds, typically calculated at 12% to 18% per annum from the date of default. Finally, you can demand compensation for mental agony, harassment, and the legal costs associated with drafting and serving the notice."
+  },
+  {
+    question: "Can we file a criminal and consumer case against an interior contractor who collected the entire amount, did not complete the work, and absconded?",
+    answer: "Yes. When an interior designer or contractor collects full or substantial payment, abandons the site unfinished, and absconds (blocks phone numbers or vacates their office), it crosses from civil breach into criminal fraud. You can simultaneously: (1) serve a formal Legal Notice at their registered/permanent address and via WhatsApp/Email (for deemed service), (2) lodge a police FIR under Section 318 (Cheating) and Section 316 (Criminal Breach of Trust) of the Bharatiya Nyaya Sanhita, 2023 (formerly IPC Sections 420 & 406), and (3) file an e-Jagriti / e-Daakhil consumer complaint for full refund with 18% interest."
+  },
+  {
+    question: "What are the main reasons consumer complaints against interior contractors get rejected in India and how do you avoid them?",
+    answer: "Consumer commissions in India reject interior contract complaints primarily for three reasons: (1) Commercial Purpose Objection—if the renovation was for a commercial office, showroom, or rental business rather than personal residential use or self-employment livelihood under Section 2(7) of the Consumer Protection Act, 2019; (2) Lack of Independent Technical Valuation—claiming defective work without photographs and a certified civil engineer/architect inspection report quantifying the incomplete work; and (3) Unverified Cash Payments—failing to attach bank transfer trails, UPI receipts, or Section 63 BSA-certified WhatsApp estimates."
   }
 ];
 
@@ -139,6 +147,14 @@ const reviewSchema = {
   "brand": {
     "@type": "Brand",
     "name": "LegalRecovery"
+  },
+  "offers": {
+    "@type": "Offer",
+    "url": "https://www.legalrecovery.in/legal-notice-to-interior-designer-contractor-refund",
+    "priceCurrency": "INR",
+    "price": "999",
+    "availability": "https://schema.org/InStock",
+    "priceValidUntil": "2027-12-31"
   },
   "aggregateRating": {
     "@type": "AggregateRating",

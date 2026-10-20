@@ -96,6 +96,14 @@ const reviewSchema = {
   "image": "https://www.legalrecovery.in/og-college-fee-refund.png",
   "description": "Expert legal assistance to recover college and university admission fees, fight original certificate withholding, and enforce UGC/AICTE refund norms across India.",
   "brand": { "@type": "Brand", "name": "LegalRecovery" },
+  "offers": {
+    "@type": "Offer",
+    "url": "https://www.legalrecovery.in/recovery/college-fee-refund",
+    "priceCurrency": "INR",
+    "price": "999",
+    "availability": "https://schema.org/InStock",
+    "priceValidUntil": "2027-12-31"
+  },
   "aggregateRating": { "@type": "AggregateRating", "ratingValue": "4.9", "reviewCount": "375" },
   "review": [
     {

@@ -89,6 +89,14 @@ const reviewSchema = {
   "name": "Airline Refund Amount Recovery Services",
   "image": "https://www.legalrecovery.in/og-airline-refund.png",
   "brand": { "@type": "Brand", "name": "LegalRecovery" },
+  "offers": {
+    "@type": "Offer",
+    "url": "https://www.legalrecovery.in/recovery/airline-refund-amount",
+    "priceCurrency": "INR",
+    "price": "999",
+    "availability": "https://schema.org/InStock",
+    "priceValidUntil": "2027-12-31"
+  },
   "aggregateRating": { "@type": "AggregateRating", "ratingValue": "4.8", "reviewCount": "512" },
   "review": [
     {

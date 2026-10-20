@@ -116,6 +116,14 @@ const reviewSchema = {
     "@type": "Brand",
     "name": "LegalRecovery"
   },
+  "offers": {
+    "@type": "Offer",
+    "url": "https://www.legalrecovery.in/freelancer-evidence-checklist-payment-recovery-india",
+    "priceCurrency": "INR",
+    "price": "999",
+    "availability": "https://schema.org/InStock",
+    "priceValidUntil": "2027-12-31"
+  },
   "aggregateRating": {
     "@type": "AggregateRating",
     "ratingValue": "4.9",

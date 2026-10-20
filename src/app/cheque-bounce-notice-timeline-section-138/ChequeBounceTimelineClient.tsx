@@ -31,6 +31,10 @@ const faqs = [
   {
     question: "Is a director of a company automatically liable for a bounced cheque?",
     answer: "Under Section 141 of the Negotiable Instruments Act, a director is liable only if they were in charge of and responsible to the company for the conduct of its business at the time the offense was committed. The complaint must contain specific allegations detailing the active role of the director in the transaction and cheque issuance. Simply being a director on the board is not sufficient to establish liability; they must have had direct control over the company's financial decisions."
+  },
+  {
+    question: "चेक बाउंस होने के कितने दिन बाद नोटिस देना चाहिए (Within how many days after cheque bounce must a legal notice be sent)?",
+    answer: "नेगोशिएबल इंस्ट्रूमेंट्स एक्ट की धारा 138 (Section 138 NI Act) के तहत, बैंक से चेक बाउंस रिटर्न मेमो (Cheque Return Memo) मिलने की तारीख से ठीक 30 दिनों (30 days) के भीतर देनदार को वकील के माध्यम से कानूनी नोटिस (Demand Legal Notice) भेजना अनिवार्य है। नोटिस मिलने के बाद देनदार को भुगतान के लिए 15 दिन का समय दिया जाता है, और यदि 15 दिनों में भुगतान नहीं होता है, तो अगले 30 दिनों के भीतर कोर्ट में आपराधिक मुकदमा दर्ज किया जाता है।"
   }
 ];
 
@@ -127,6 +131,14 @@ const reviewSchema = {
   "brand": {
     "@type": "Brand",
     "name": "LegalRecovery"
+  },
+  "offers": {
+    "@type": "Offer",
+    "url": "https://www.legalrecovery.in/cheque-bounce-notice-timeline-section-138",
+    "priceCurrency": "INR",
+    "price": "999",
+    "availability": "https://schema.org/InStock",
+    "priceValidUntil": "2027-12-31"
   },
   "aggregateRating": {
     "@type": "AggregateRating",

@@ -30,6 +30,10 @@ const navLinks = [
 const legalLinks = [
   { label: "Privacy Policy", href: "/privacy-policy" },
   { label: "Terms & Conditions", href: "/terms-and-conditions" },
+  { label: "Bulk Recovery Solutions", href: "/bulk-recovery-cases-all-in-one-affordable-solutions" },
+  { label: "Bulk Legal Notice Dispatch", href: "/bulk-recovery-notice-send-through-email-whatsapp-speedpost-solution" },
+  { label: "Business Unpaid Dues Recovery", href: "/recovery-of-unpaid-dues-for-my-business" },
+  { label: "Our Legal Authors", href: "/authors" },
 ];
 
 const guideLinks = [
@@ -37,13 +41,11 @@ const guideLinks = [
   { label: "Legal Notice for Recovery of Money Sample & Draft", href: "/legal-notice-for-recovery-of-money-sample" },
   { label: "How to Send a Legal Notice for Money Recovery in India", href: "/how-to-send-a-legal-notice-for-recovery-of-money-in-india" },
   { label: "How to Draft a Legal Notice for Money Recovery", href: "/how-to-draft-a-legal-notice-for-recovery-of-money" },
-  { label: "Online Legal Notice Services & Legality", href: "/online-legal-notice" },
-  { label: "Legal Notice Online Portal & Legality", href: "/legal-notice-online" },
-  { label: "How to Send a Legal Notice in India", href: "/send-a-legal-notice" },
-  { label: "Send Legal Notice Online", href: "/send-legal-notice" },
+  { label: "Send Legal Notice Online in India", href: "/online-legal-notice" },
+  { label: "Legal Notice Categories & Directory in India", href: "/send-a-legal-notice" },
   { label: "Vakil Online Portal & Consultations", href: "/vakil-online" },
   { label: "Online Lawyer to Send Legal Notice", href: "/online-lawyer-to-send-legal-notice" },
-  { label: "How to Send a Legal Notice Online in India", href: "/send-legal-notice-online-india" },
+  { label: "How to Send a Legal Notice to Someone (Kaise Bheje)", href: "/send-legal-notice-online-india" },
   { label: "Freelancer Payment Recovery Options & Legal Actions", href: "/freelancer-payment-recovery-guide" },
   { label: "How to Recover Unpaid Salary from Employer Legally", href: "/how-to-recover-unpaid-salary-legally" },
   { label: "Legal Notice to Recover Loan Amount Given to Friend", href: "/legal-notice-to-recovery-my-loan-from-friend" },
@@ -67,14 +69,14 @@ const guideLinks = [
   { label: "Time Limit to File Money Recovery Case in India", href: "/time-limit-to-file-money-recovery-case-india" },
   { label: "How to Recover Money Without Written Agreement", href: "/how-to-recover-money-without-written-agreement" },
   { label: "Employer Withholding Relieving Letter: Legal Recovery", href: "/employer-withholding-relieving-letter-legal-action" },
-  { label: "What to do if Legal Notice is Ignored in India", href: "/what-to-do-if-legal-notice-is-ignored-india" },
+  { label: "What Happens if Legal Notice is Ignored or Not Received", href: "/what-to-do-if-legal-notice-is-ignored-india" },
   { label: "How to Recover Full and Final Settlement from Employer", href: "/how-to-recover-full-and-final-settlement-from-employer" },
   { label: "Civil Suit for Recovery of Money in India", href: "/civil-suit-for-recovery-of-money-india" },
   { label: "How to Recover Money Without Going to Court in India", href: "/how-to-recover-money-without-going-to-court-india" },
   { label: "Consolidate Multiple Cheque Bounce Cases from Same Transaction", href: "/multiple-cheque-bounce-cases-same-transaction" },
   { label: "Cheque Bounce Notice Timeline & Section 138 Deadlines", href: "/cheque-bounce-notice-timeline-section-138" },
   { label: "Legal Notice to Builder for Delayed Flat Possession", href: "/legal-notice-to-builder-for-delayed-possession-refund" },
-  { label: "Recover Money Stuck in Cyber Fraud", href: "/how-to-recover-money-stuck-in-online-cyber-fraud" },
+  { label: "Recover Money Stuck in 1930 Cyber Fraud Hold", href: "/how-to-recover-money-stuck-in-online-cyber-fraud" },
   { label: "Legal Notice for Withheld Full & Final Settlement", href: "/legal-notice-for-full-and-final-settlement-delay" },
   { label: "MSME Samadhan Portal vs. Legal Notice", href: "/msme-delayed-payment-recovery-samadhan-vs-legal-notice" },
   { label: "Flight Ticket Refund Legal Notice to Airline", href: "/legal-notice-to-airline-travel-agent-refund" },
@@ -86,15 +88,15 @@ const guideLinks = [
   { label: "Notice to Housing Society for Maintenance Disputes", href: "/legal-notice-to-cooperative-housing-society-maintenance-disputes" },
   { label: "Notice to International Client for Unpaid Invoice", href: "/legal-notice-to-international-client-unpaid-invoice-recovery" },
   { label: "Legal Notice for Recovery of Dues from Partner", href: "/legal-notice-to-partner-for-recovery-of-dues" },
-  { label: "Fee Refund Legal Notice to Coaching Institute & Private College", href: "/legal-notice-to-coaching-institute-college-fee-refund" },
-  { label: "Wrongful Termination & Unpaid Notice Salary Recovery", href: "/legal-notice-wrongful-termination-unpaid-notice-period-salary" },
+  { label: "Challenge 'Fees Non-Refundable' Clauses in Education", href: "/legal-notice-to-coaching-institute-college-fee-refund" },
+  { label: "Wrongful Termination & Forced Resignation Legal Notice", href: "/legal-notice-wrongful-termination-unpaid-notice-period-salary" },
   { label: "Legal Notice to E-Commerce Marketplace for Frozen Payouts", href: "/legal-notice-to-ecommerce-marketplace-seller-payment-recovery" },
   { label: "Legal Notice to Event Planner & Wedding Venue for Refund", href: "/legal-notice-to-event-planner-wedding-venue-refund" },
-  { label: "Legal Notice for Notice Period Salary Withheld", href: "/legal-notice-for-salary-withheld-during-notice-period" },
+  { label: "Salary Withheld During Notice Period: Meaning & Law", href: "/legal-notice-for-salary-withheld-during-notice-period" },
   { label: "PG & Hostel Security Deposit Refund Legal Notice", href: "/legal-notice-to-pg-owner-for-security-deposit-refund" },
-  { label: "Legal Notice for Wrong or Damaged Product Delivery", href: "/legal-notice-to-retailer-wrong-damaged-product-delivery" },
-  { label: "Flipkart Return & Refund Dispute Consumer Complaint", href: "/flipkart-return-refund-complaint" },
-  { label: "Legal Notice for Unauthorized ECS & NACH Auto-Debits", href: "/legal-notice-to-bank-unauthorized-ecs-nach-debit-reversal" },
+  { label: "Wrong, Broken or Damaged Product Delivery Refund", href: "/legal-notice-to-retailer-wrong-damaged-product-delivery" },
+  { label: "Flipkart Return Rejected or Refund Delayed Complaint", href: "/flipkart-return-refund-complaint" },
+  { label: "Unauthorized ECS & NACH Auto-Debit Reversal Notice", href: "/legal-notice-to-bank-unauthorized-ecs-nach-debit-reversal" },
   { label: "How to File a Consumer Complaint in India: Online & Offline Guide", href: "/how-to-file-consumer-complaint-india" },
   { label: "What is a Legal Notice in India: Validity, Rules & Recovery", href: "/what-is-a-legal-notice-in-india" },
   { label: "Legal Notice Format in India: PDF Download & Drafting Checklist", href: "/legal-notice-format-india" },
@@ -102,6 +104,41 @@ const guideLinks = [
   { label: "Legal Notice to Insurance Company for Claim Rejection & Recovery", href: "/legal-notice-to-insurance-company-claim-rejection-recovery" },
   { label: "Builder Booking Cancellation Token Money Refund Rules", href: "/builder-booking-cancellation-refund-legal-notice" },
   { label: "Legal Notice to Interior Designer for Incomplete Work", href: "/legal-notice-to-interior-designer-contractor-refund" }
+];
+
+const recoveryCategoryLinks = [
+  { label: "College Fee Refund (UGC 100% Rule)", href: "/recovery/college-fee-refund" },
+  { label: "Coaching Institute Fee Refund (CCPA)", href: "/recovery/coaching-institute-fees" },
+  { label: "School Fee Refund & Withdrawal", href: "/recovery/school-fee-refund" },
+  { label: "Gym Membership Fee Refund", href: "/recovery/gym-membership-refund" },
+  { label: "Event Cancellation Refund", href: "/recovery/event-cancellation-refund" },
+  { label: "Salary Delay Law (7th–10th Rule)", href: "/recovery/delayed-wages" },
+  { label: "Notice Pay Recovery & PILON Dispute", href: "/recovery/notice-period-salary" },
+  { label: "Full & Final (F&F) Settlement Recovery", href: "/recovery/fnf-settlement" },
+  { label: "Unpaid Sales Incentives & Variable Pay", href: "/recovery/unpaid-incentives" },
+  { label: "Unauthorized Bank Charges & Lien Removal", href: "/recovery/unauthorized-bank-deduction" },
+  { label: "Card, SIM Swap & UPI Fraud Refund", href: "/recovery/fraud-transaction-amount" },
+  { label: "Post-Dated Cheque (PDC) Bounce Recovery", href: "/recovery/post-dated-cheque-amount" },
+  { label: "MSME Samadhaan Delayed Payment Interest", href: "/recovery/msme-samadhan" },
+  { label: "Airline Cancelled Ticket Refund", href: "/recovery/airline-refund-amount" },
+  { label: "Delayed Flight DGCA Compensation", href: "/recovery/delayed-flight-compensation" },
+  { label: "Gratuity & PF Dues Recovery", href: "/recovery/gratuity-amount" },
+  { label: "Unpaid Freelancer & Consultant Invoices", href: "/recovery/freelancer-payments" },
+  { label: "Friendly Hand Loan Without Agreement", href: "/recovery/money-lent-without-agreement" },
+  { label: "Flat Booking Cancellation Refund", href: "/recovery/flat-booking-cancellation-refund" },
+  { label: "Health Insurance & Mediclaim Rejection", href: "/recovery/health-insurance-rejection-claim" },
+  { label: "Airline Refund Legal Notice", href: "/send-a-legal-notice/airline-refund-not-received" },
+  { label: "Hospital Medical Negligence Refund Notice", href: "/send-a-legal-notice/hospital-for-medical-negligence-refund" },
+  { label: "School Admission & Caution Deposit Notice", href: "/send-a-legal-notice/school-college-fee-refund-admission-cancellation" },
+  { label: "Startup Delayed Salary & NCLT Notice", href: "/send-a-legal-notice/delayed-salary-startup-company-india" },
+  { label: "Illegal Salary Deduction in Notice Period", href: "/send-a-legal-notice/salary-deducted-during-notice-period-legal-action-india" },
+  { label: "Co-Founder & Startup Equity Dues Notice", href: "/send-a-legal-notice/co-founder-startup-unpaid-dues-equity" },
+  { label: "Creator & Influencer Agency Dues Notice", href: "/send-a-legal-notice/agency-not-paying-the-creator" },
+  { label: "Swiggy Order Refund Legal Notice", href: "/send-a-legal-notice/swiggy-refund-not-recieved" },
+  { label: "Zomato Order Refund Legal Notice", href: "/send-a-legal-notice/zomato-refund-not-recieved" },
+  { label: "Telegram & Trading Scam Recovery Notice", href: "/send-a-legal-notice/trading-scam-telegram" },
+  { label: "Unpaid Tenant Rent Recovery Notice", href: "/send-a-legal-notice/recover-unpaid-rent-from-tenant-india" },
+  { label: "Tenant Property Damage Recovery Notice", href: "/send-a-legal-notice/recover-money-from-tenant-who-damaged-property" },
 ];
 
 export default function Footer() {
@@ -244,9 +281,26 @@ export default function Footer() {
 
         {/* Queries Row */}
         <div className="text-left mb-10">
-          <p className="text-white font-extrabold text-[13px] uppercase tracking-wider mb-6">Queries</p>
+          <p className="text-white font-extrabold text-[13px] uppercase tracking-wider mb-6">Queries & Legal Notice Guides</p>
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-12 lg:gap-16 gap-y-3.5">
             {guideLinks.map((link, idx) => (
+              <div key={idx} className="flex flex-col">
+                <a href={link.href} className="text-[12.5px] font-bold text-gray-400 hover:text-white hover:translate-x-0.5 transition-all inline-block cursor-pointer">
+                  {link.label}
+                </a>
+              </div>
+            ))}
+          </div>
+        </div>
+
+        {/* Divider */}
+        <div className="w-full h-px bg-gray-800/40 my-10" />
+
+        {/* Specialized Recovery & Notice Categories Row */}
+        <div className="text-left mb-10">
+          <p className="text-white font-extrabold text-[13px] uppercase tracking-wider mb-6">Specialized Recovery & Legal Notice Categories</p>
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-12 lg:gap-16 gap-y-3.5">
+            {recoveryCategoryLinks.map((link, idx) => (
               <div key={idx} className="flex flex-col">
                 <a href={link.href} className="text-[12.5px] font-bold text-gray-400 hover:text-white hover:translate-x-0.5 transition-all inline-block cursor-pointer">
                   {link.label}

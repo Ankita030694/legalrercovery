@@ -86,7 +86,10 @@ export async function POST(request: NextRequest) {
       { title: "Property and Builder Disputes", url: "https://www.legalrecovery.in/services/property-and-builder-disputes" },
       { title: "Airline Refund Amount Recovery Guide", url: "https://www.legalrecovery.in/recovery/airline-refund-amount" },
       { title: "Delayed Flight Compensation Claims", url: "https://www.legalrecovery.in/recovery/delayed-flight-compensation" },
-      { title: "Send a Legal Notice Online", url: "https://www.legalrecovery.in/send-legal-notice" },
+      { title: "Send Legal Notice Online in India", url: "https://www.legalrecovery.in/online-legal-notice" },
+      { title: "Bulk Recovery Cases All-in-One Solution", url: "https://www.legalrecovery.in/bulk-recovery-cases-all-in-one-affordable-solutions" },
+      { title: "Bulk Legal Notice Dispatch via Email, WhatsApp & Speed Post", url: "https://www.legalrecovery.in/bulk-recovery-notice-send-through-email-whatsapp-speedpost-solution" },
+      { title: "Recovery of Unpaid Dues for Businesses", url: "https://www.legalrecovery.in/recovery-of-unpaid-dues-for-my-business" },
       { title: "Contact LegalRecovery", url: "https://www.legalrecovery.in/contact" },
     ];
 
@@ -166,12 +169,10 @@ export async function POST(request: NextRequest) {
       { title: "What is a Legal Notice in India: Validity, Rules & Recovery", url: "https://www.legalrecovery.in/what-is-a-legal-notice-in-india" },
       { title: "Legal Notice Format in India: PDF Download & Drafting Checklist", url: "https://www.legalrecovery.in/legal-notice-format-india" },
       { title: "Online Legal Notice Services & Legality", url: "https://www.legalrecovery.in/online-legal-notice" },
-      { title: "Legal Notice Online Portal & Legality", url: "https://www.legalrecovery.in/legal-notice-online" },
-      { title: "How to Send a Legal Notice in India", url: "https://www.legalrecovery.in/send-a-legal-notice" },
-      { title: "Send Legal Notice Online", url: "https://www.legalrecovery.in/send-legal-notice" },
+      { title: "Legal Notice Categories & Statutory Directory in India", url: "https://www.legalrecovery.in/send-a-legal-notice" },
       { title: "Vakil Online Portal & Consultations", url: "https://www.legalrecovery.in/vakil-online" },
       { title: "Online Lawyer to Send Legal Notice", url: "https://www.legalrecovery.in/online-lawyer-to-send-legal-notice" },
-      { title: "How to Send a Legal Notice Online in India", url: "https://www.legalrecovery.in/send-legal-notice-online-india" },
+      { title: "How to Send a Legal Notice to Someone in India", url: "https://www.legalrecovery.in/send-legal-notice-online-india" },
       { title: "How to Send a Legal Notice Without Hiring a Lawyer", url: "https://www.legalrecovery.in/how-can-i-send-a-legal-notice-online-to-someone-in-india-without-hiring-a-lawyer" },
       { title: "Valid Ways to Deliver a Legal Notice Online in India", url: "https://www.legalrecovery.in/what-are-the-legally-valid-ways-to-deliver-a-legal-notice-online-in-india" },
       { title: "Is WhatsApp or Email a Valid Legal Notice in Court?", url: "https://www.legalrecovery.in/is-an-email-or-whatsapp-message-considered-a-valid-legal-notice-in-indian-courts" },
@@ -179,9 +180,31 @@ export async function POST(request: NextRequest) {
       { title: "Which Online Platforms Allow You to Send a Legal Notice?", url: "https://www.legalrecovery.in/which-online-platforms-or-services-allow-you-to-draft-and-send-a-legal-notice-in-india" },
       { title: "Online Dispute Resolution in India: Legal Recovery", url: "https://www.legalrecovery.in/online-dispute-resolution-india" },
       { title: "Time Limit to File Money Recovery Case in India", url: "https://www.legalrecovery.in/time-limit-to-file-money-recovery-case-india" },
-      { title: "What to do if Legal Notice is Ignored in India", url: "https://www.legalrecovery.in/what-to-do-if-legal-notice-is-ignored-india" },
+      { title: "What Happens if Legal Notice is Ignored or Not Received", url: "https://www.legalrecovery.in/what-to-do-if-legal-notice-is-ignored-india" },
       { title: "Civil Suit for Recovery of Money in India", url: "https://www.legalrecovery.in/civil-suit-for-recovery-of-money-india" },
-      { title: "How to Recover Money Without Going to Court in India", url: "https://www.legalrecovery.in/how-to-recover-money-without-going-to-court-india" }
+      { title: "How to Recover Money Without Going to Court in India", url: "https://www.legalrecovery.in/how-to-recover-money-without-going-to-court-india" },
+
+      // Specialized /recovery/* & /send-a-legal-notice/* Silo Pages
+      { title: "College Fee Refund on Admission Cancellation (UGC 100% Rule)", url: "https://www.legalrecovery.in/recovery/college-fee-refund" },
+      { title: "Coaching Institute Fee Refund (CCPA 2024 Pro-Rata Rule)", url: "https://www.legalrecovery.in/recovery/coaching-institute-fees" },
+      { title: "School Fee Refund & Withdrawal", url: "https://www.legalrecovery.in/recovery/school-fee-refund" },
+      { title: "Gym Membership Fee Refund", url: "https://www.legalrecovery.in/recovery/gym-membership-refund" },
+      { title: "Event Cancellation Refund", url: "https://www.legalrecovery.in/recovery/event-cancellation-refund" },
+      { title: "Salary Delay Law in India (7th-10th Day Rule)", url: "https://www.legalrecovery.in/recovery/delayed-wages" },
+      { title: "Notice Pay Recovery & Pay in Lieu of Notice Dispute", url: "https://www.legalrecovery.in/recovery/notice-period-salary" },
+      { title: "Full & Final (F&F) Settlement Recovery", url: "https://www.legalrecovery.in/recovery/fnf-settlement" },
+      { title: "Unpaid Sales Incentives & Variable Pay Recovery", url: "https://www.legalrecovery.in/recovery/unpaid-incentives" },
+      { title: "Unauthorized Bank Charges & Lien Removal", url: "https://www.legalrecovery.in/recovery/unauthorized-bank-deduction" },
+      { title: "Unauthorized Card, SIM Swap & UPI Fraud Refund", url: "https://www.legalrecovery.in/recovery/fraud-transaction-amount" },
+      { title: "Post-Dated Cheque (PDC) Bounce Recovery", url: "https://www.legalrecovery.in/recovery/post-dated-cheque-amount" },
+      { title: "Airline Refund Legal Notice", url: "https://www.legalrecovery.in/send-a-legal-notice/airline-refund-not-received" },
+      { title: "Hospital Medical Negligence Refund Legal Notice", url: "https://www.legalrecovery.in/send-a-legal-notice/hospital-for-medical-negligence-refund" },
+      { title: "School Admission & Caution Deposit Refund Legal Notice", url: "https://www.legalrecovery.in/send-a-legal-notice/school-college-fee-refund-admission-cancellation" },
+      { title: "Startup Delayed Salary & NCLT Claim Legal Notice", url: "https://www.legalrecovery.in/send-a-legal-notice/delayed-salary-startup-company-india" },
+      { title: "Illegal Salary Cut in Notice Period Legal Notice", url: "https://www.legalrecovery.in/send-a-legal-notice/salary-deducted-during-notice-period-legal-action-india" },
+      { title: "Swiggy Order Refund Legal Notice", url: "https://www.legalrecovery.in/send-a-legal-notice/swiggy-refund-not-recieved" },
+      { title: "Zomato Order Refund Legal Notice", url: "https://www.legalrecovery.in/send-a-legal-notice/zomato-refund-not-recieved" },
+      { title: "Telegram & Trading Scam Recovery Legal Notice", url: "https://www.legalrecovery.in/send-a-legal-notice/trading-scam-telegram" }
     ];
 
     // Deduplicate interlinking URLs so the prompt directory is clean and never repeats the same link

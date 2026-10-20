@@ -253,6 +253,14 @@ export default function FriendRecoveryClient() {
           "url": "https://www.legalrecovery.in"
         },
         "areaServed": "IN",
+        "offers": {
+          "@type": "Offer",
+          "url": "https://www.legalrecovery.in/services/recovery-of-money-from-a-friend",
+          "priceCurrency": "INR",
+          "price": "999",
+          "availability": "https://schema.org/InStock",
+          "priceValidUntil": "2027-12-31"
+        },
         "aggregateRating": {
           "@type": "AggregateRating",
           "ratingValue": "4.9",

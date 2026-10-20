@@ -98,6 +98,14 @@ const reviewSchema = {
   "image": "https://www.legalrecovery.in/og-flight-compensation.png",
   "description": "Expert legal services for claiming compensation from airlines in India for flight delays, denied boarding, involuntary downgrading, tarmac delays, lost baggage, and missed connections.",
   "brand": { "@type": "Brand", "name": "LegalRecovery" },
+  "offers": {
+    "@type": "Offer",
+    "url": "https://www.legalrecovery.in/recovery/flight-compensation-claim",
+    "priceCurrency": "INR",
+    "price": "999",
+    "availability": "https://schema.org/InStock",
+    "priceValidUntil": "2027-12-31"
+  },
   "aggregateRating": { "@type": "AggregateRating", "ratingValue": "4.8", "reviewCount": "845" },
   "review": [
     {

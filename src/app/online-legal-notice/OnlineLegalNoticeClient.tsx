@@ -56,6 +56,10 @@ const faqs = [
   {
     question: "What if the debtor ignores the electronic legal notice?",
     answer: "If the debtor ignores the notice and the 15-day compliance window expires, you can initiate formal legal action. Depending on the nature of the transaction, your advocate will file a Summary Suit under Order 37 CPC (for written contracts/invoices), a Cheque Bounce complaint under Section 138 of the NI Act, or file criminal cheating complaints under the BNS."
+  },
+  {
+    question: "How can I check or track a legal notice online in India?",
+    answer: "There are two ways to check a legal notice online in India depending on its stage: (1) For a pre-litigation Advocate Legal Notice, you can track delivery status online using the 13-digit India Post Registered/Speed Post consignment number (e.g., EDxxxxxxxxxIN) or through the LegalRecovery digital dispatch dashboard showing WhatsApp/Email read receipts and Bar Council verification; (2) If it is a formal Court Summons or judicial notice, you can verify its authenticity online on the official e-Courts Services portal (services.ecourts.gov.in) using the CNR Number, Case Number, or Party Name."
   }
 ];
 
@@ -129,6 +133,14 @@ const reviewSchema = {
   "brand": {
     "@type": "Brand",
     "name": "LegalRecovery"
+  },
+  "offers": {
+    "@type": "Offer",
+    "url": "https://www.legalrecovery.in/online-legal-notice",
+    "priceCurrency": "INR",
+    "price": "999",
+    "availability": "https://schema.org/InStock",
+    "priceValidUntil": "2027-12-31"
   },
   "aggregateRating": {
     "@type": "AggregateRating",

@@ -2,9 +2,9 @@ import { Metadata } from 'next';
 import SalaryDeductedDuringNoticePeriodLegalActionIndiaClient from './SalaryDeductedDuringNoticePeriodLegalActionIndiaClient';
 
 const slug = 'send-a-legal-notice/salary-deducted-during-notice-period-legal-action-india';
-const title = 'Legal Notice for Salary Deducted in Notice Period India';
+const title = 'Illegal Salary Cut or Penalty Deducted in Notice Period: Legal Notice';
 const description =
-  'Employer deducted salary during notice period? Send an advocate-vetted legal notice under the Payment of Wages Act for complete recovery.';
+  'Employer made arbitrary salary cuts, training bond deductions, or asset penalties during your notice period? Challenge unlawful wage deductions under Section 7 Payment of Wages Act.';
 const url = `https://www.legalrecovery.in/${slug}`;
 const ogImage = `/images/og/salary-deducted-during-notice-period-legal-action-india.jpg`;
 

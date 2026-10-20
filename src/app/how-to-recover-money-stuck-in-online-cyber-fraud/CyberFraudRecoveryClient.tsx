@@ -22,7 +22,7 @@ const faqs = [
   },
   {
     question: "Can WhatsApp chats be used as evidence to recover money?",
-    answer: "Yes, digital conversations are admissible as secondary evidence in Indian courts under Section 63 of the Bharatiya Sakshya Adhiniyam (previously Section 65B of the Indian Evidence Act). If you have chats showing transaction agreements, you should check how <Link href=\"/can-whatsapp-chat-be-used-as-evidence-in-money-recovery-case\" className=\"text-[#DC2626] hover:underline font-medium\">WhatsApp chats can be used as evidence in a money recovery case</Link> to preserve screenshots and certificates for your legal filing."
+    answer: "Yes, digital conversations are admissible as secondary evidence in Indian courts under Section 63 of the Bharatiya Sakshya Adhiniyam, 2023 (formerly Section 65B of the Indian Evidence Act). Preserve full chat exports, payment screenshots, and a signed Section 63 BSA electronic evidence certificate for your legal filing."
   },
   {
     question: "Should I send a legal notice to the bank if they reject my refund claim?",
@@ -136,6 +136,14 @@ const reviewSchema = {
   "brand": {
     "@type": "Brand",
     "name": "LegalRecovery"
+  },
+  "offers": {
+    "@type": "Offer",
+    "url": "https://www.legalrecovery.in/how-to-recover-money-stuck-in-online-cyber-fraud",
+    "priceCurrency": "INR",
+    "price": "999",
+    "availability": "https://schema.org/InStock",
+    "priceValidUntil": "2027-12-31"
   },
   "aggregateRating": {
     "@type": "AggregateRating",
