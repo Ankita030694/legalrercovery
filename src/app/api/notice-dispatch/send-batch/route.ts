@@ -7,6 +7,7 @@ import nodemailer from "nodemailer";
 import fs from "fs";
 import path from "path";
 import { sendEmailViaZohoAPI } from "@/lib/zoho-mail";
+import { getEligibleDispatchStep } from "@/lib/dispatch-eligibility";
 
 export const dynamic = "force-dynamic";
 export const maxDuration = 60;
@@ -94,14 +95,25 @@ export async function POST(request: NextRequest) {
       query._id = { $in: objectIds };
     }
 
-    const cases = await db
+    const allMatched = await db
       .collection("cases")
       .find(query)
       .sort({ createdAt: -1 })
       .toArray();
 
+    // Only notices already delivered via Email & WhatsApp are eligible for dispatch
+    const cases = allMatched.filter(c => getEligibleDispatchStep(c) !== null);
+    const skippedCount = allMatched.length - cases.length;
+
     if (cases.length === 0) {
-      return NextResponse.json({ error: "No matching debtor cases found for dispatch." }, { status: 404 });
+      return NextResponse.json(
+        {
+          error: allMatched.length > 0
+            ? "None of the selected cases are eligible. Only notices already sent via Email & WhatsApp can be dispatched."
+            : "No matching debtor cases found for dispatch."
+        },
+        { status: allMatched.length > 0 ? 400 : 404 }
+      );
     }
 
     // 2. Generate secure token & batch record
@@ -160,19 +172,7 @@ export async function POST(request: NextRequest) {
       dispatcherEmail: dispatcherEmail.trim().toLowerCase(),
       notes: notes || "",
       cases: cases.map(c => {
-        const completedTimelineSteps = (c.timeline || [])
-          .filter((t: any) => t.status === "completed")
-          .map((t: any) => Number(t.step))
-          .filter((n: number) => !isNaN(n) && n > 0);
-
-        let effectiveStep = 1;
-        if (typeof targetStep === "number") {
-          effectiveStep = targetStep;
-        } else if (completedTimelineSteps.length > 0) {
-          effectiveStep = Math.max(...completedTimelineSteps);
-        } else if (c.currentStep && typeof c.currentStep === "number" && c.currentStep > 0) {
-          effectiveStep = c.currentStep;
-        }
+        const effectiveStep = getEligibleDispatchStep(c) ?? 1;
 
         return {
           id: c._id.toString(),
@@ -202,29 +202,10 @@ export async function POST(request: NextRequest) {
     // 5. Build Human-Friendly Email HTML Body
     const tableRowsHtml = cases
       .map((c, index) => {
-        const completedTimelineSteps = (c.timeline || [])
-          .filter((t: any) => t.status === "completed")
-          .map((t: any) => Number(t.step))
-          .filter((n: number) => !isNaN(n) && n > 0);
+        const effectiveStep = getEligibleDispatchStep(c) ?? 1;
 
-        let effectiveStep = 1;
-        if (typeof targetStep === "number") {
-          effectiveStep = targetStep;
-        } else if (completedTimelineSteps.length > 0) {
-          effectiveStep = Math.max(...completedTimelineSteps);
-        } else if (c.currentStep && typeof c.currentStep === "number" && c.currentStep > 0) {
-          effectiveStep = c.currentStep;
-        }
+        const stepLabel = `Notice ${effectiveStep}`;
 
-        const isLoan = c.category === "loan-recovery";
-        const stepLabel =
-          isLoan
-            ? effectiveStep === 2
-              ? "Police Complaint"
-              : `Notice ${effectiveStep}`
-            : effectiveStep === 4
-            ? "Police Complaint"
-            : `Notice ${effectiveStep}`;
 
         const categoryBadge =
           c.category === "loan-recovery"
@@ -385,10 +366,11 @@ export async function POST(request: NextRequest) {
       token,
       downloadUrl,
       totalCases: cases.length,
+      skippedCount,
       dispatcherEmail,
       emailSent,
       message: emailSent
-        ? `Successfully created batch ${batchId} and sent dispatch package email to ${dispatcherEmail}.`
+        ? `Successfully created batch ${batchId} and sent dispatch package email to ${dispatcherEmail}.${skippedCount > 0 ? ` ${skippedCount} ineligible case(s) skipped.` : ""}`
         : `Batch ${batchId} created, but email delivery encountered an issue. Dispatcher can use the direct download link.`,
     });
   } catch (error: any) {

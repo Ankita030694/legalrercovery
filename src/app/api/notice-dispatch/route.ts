@@ -3,6 +3,7 @@ import { getServerSession } from "next-auth/next";
 import { authOptions } from "@/lib/auth";
 import { getDbAndBucket } from "@/lib/mongodb";
 import { ObjectId } from "mongodb";
+import { getEligibleDispatchStep } from "@/lib/dispatch-eligibility";
 
 export const dynamic = 'force-dynamic';
 
@@ -173,6 +174,8 @@ export async function GET(req: NextRequest) {
         status: c.status || "active",
         category: c.category || "general-recovery",
         currentStep: c.currentStep || 1,
+        // Latest notice delivered via Email & WhatsApp (null = not eligible for dispatch)
+        dispatchStep: getEligibleDispatchStep(c),
         clientName: repName || "Direct Advocate Case",
         representeeId: c.representeeId ? c.representeeId.toString() : null,
         policeStationName: c.policeStationName || "",

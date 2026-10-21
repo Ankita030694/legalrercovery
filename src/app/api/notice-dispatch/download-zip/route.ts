@@ -4,6 +4,7 @@ import { ObjectId } from "mongodb";
 import JSZip from "jszip";
 import { generateLoanNoticePDFBuffer } from "@/lib/loan-pdf-generator";
 import { generateNoticePDFBuffer } from "@/lib/pdf-generator";
+import { getEligibleDispatchStep } from "@/lib/dispatch-eligibility";
 
 export const dynamic = "force-dynamic";
 export const maxDuration = 300; // Allow up to 5 minutes for generating large PDF batches
@@ -138,24 +139,16 @@ export async function GET(request: NextRequest) {
       const stepIndex = i + 1;
       const indexPadded = String(stepIndex).padStart(2, "0");
 
-      // Intelligent step resolution:
-      // 1. If batch explicitly specified a targetStep, use it.
-      // 2. Otherwise find the latest completed notice step that was sent to the accused.
+      // Step resolution:
+      // 1. Legacy batches that explicitly stored a targetStep keep using it.
+      // 2. Otherwise use the latest notice delivered via Email & WhatsApp
+      //    (Police Complaint steps are never dispatched from here).
       // 3. Fallback to 1.
-      const completedTimelineSteps = (c.timeline || [])
-        .filter((t: any) => t.status === "completed")
-        .map((t: any) => Number(t.step))
-        .filter((n: number) => !isNaN(n) && n > 0);
-
       let effectiveStep = 1;
       if (batch.targetStep && typeof batch.targetStep === "number") {
         effectiveStep = batch.targetStep;
-      } else if (completedTimelineSteps.length > 0) {
-        effectiveStep = Math.max(...completedTimelineSteps);
-      } else if (c.currentStep && typeof c.currentStep === "number" && c.currentStep > 0) {
-        effectiveStep = c.currentStep;
       } else {
-        effectiveStep = 1;
+        effectiveStep = getEligibleDispatchStep(c) ?? 1;
       }
 
       const isLoanRecovery = c.category === "loan-recovery";

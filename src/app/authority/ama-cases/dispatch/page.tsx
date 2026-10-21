@@ -47,6 +47,9 @@ interface CaseItem {
   createdAt: string;
 }
 
+const DEFAULT_DISPATCHER_EMAIL = "jatinder991425@gmail.com";
+const DISPATCHER_EMAIL_STORAGE_KEY = "ama_dispatcher_email";
+
 export default function GlobalAmaDispatchPage() {
   const [representees, setRepresentees] = useState<any[]>([]);
   const [cases, setCases] = useState<CaseItem[]>([]);
@@ -60,7 +63,24 @@ export default function GlobalAmaDispatchPage() {
 
   // Selection & Dispatch states
   const [selectedCaseIds, setSelectedCaseIds] = useState<string[]>([]);
-  const [dispatcherEmail, setDispatcherEmail] = useState("notice@amalegalsolutions.com");
+  const [dispatcherEmail, setDispatcherEmail] = useState(DEFAULT_DISPATCHER_EMAIL);
+
+  // Restore the last dispatcher email the user entered (if any)
+  useEffect(() => {
+    try {
+      const saved = localStorage.getItem(DISPATCHER_EMAIL_STORAGE_KEY);
+      if (saved && saved.includes("@")) setDispatcherEmail(saved);
+    } catch {}
+  }, []);
+
+  const saveDispatcherEmail = (value: string) => {
+    const trimmed = value.trim();
+    try {
+      if (/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(trimmed)) {
+        localStorage.setItem(DISPATCHER_EMAIL_STORAGE_KEY, trimmed);
+      }
+    } catch {}
+  };
   const [dispatchNotes, setDispatchNotes] = useState("");
   const [isDispatchModalOpen, setIsDispatchModalOpen] = useState(false);
   const [isDispatching, setIsDispatching] = useState(false);
@@ -138,6 +158,7 @@ export default function GlobalAmaDispatchPage() {
   // Trigger Zoho Batch Dispatch
   const handleSendBatch = async () => {
     if (!dispatcherEmail || selectedCaseIds.length === 0) return;
+    saveDispatcherEmail(dispatcherEmail);
     setIsDispatching(true);
     setDispatchResult(null);
 
@@ -484,14 +505,18 @@ export default function GlobalAmaDispatchPage() {
 
             <div>
               <label className="block text-xs font-bold text-slate-700 mb-1">
-                Sender Email (Zoho Outbox)
+                Dispatcher Email (Receives Batch)
               </label>
               <input
                 type="email"
                 value={dispatcherEmail}
                 onChange={(e) => setDispatcherEmail(e.target.value)}
+                onBlur={(e) => saveDispatcherEmail(e.target.value)}
                 className="w-full px-3 py-2 border border-slate-200 rounded-xl text-xs sm:text-sm font-semibold text-slate-900 focus:outline-none focus:ring-2 focus:ring-slate-900"
               />
+              <p className="text-[11px] text-slate-400 mt-1">
+                The batch download link is emailed to this address.
+              </p>
             </div>
 
             <div>
