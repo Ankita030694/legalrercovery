@@ -145,7 +145,12 @@ export async function GET(request: NextRequest) {
       //    (Police Complaint steps are never dispatched from here).
       // 3. Fallback to 1.
       let effectiveStep = 1;
-      if (batch.targetStep && typeof batch.targetStep === "number") {
+      const recordedCaseDispatch = Array.isArray(batch.caseDispatches)
+        ? batch.caseDispatches.find((cd: any) => String(cd.caseId) === c._id.toString())
+        : null;
+      if (recordedCaseDispatch && typeof recordedCaseDispatch.step === "number") {
+        effectiveStep = recordedCaseDispatch.step;
+      } else if (batch.targetStep && typeof batch.targetStep === "number") {
         effectiveStep = batch.targetStep;
       } else {
         effectiveStep = getEligibleDispatchStep(c) ?? 1;

@@ -131,6 +131,89 @@ export async function GET(req: NextRequest) {
 
     const cases = await db.collection("cases").find(query).sort({ createdAt: -1 }).toArray();
 
+    // Fetch all dispatch batches that include any of these cases
+    const caseObjectIds = cases.map((c: any) => c._id);
+    const caseIdStrings = cases.map((c: any) => c._id.toString());
+    const caseByIdMap = new Map<string, any>(cases.map((c: any) => [c._id.toString(), c]));
+
+    const rawBatches = caseObjectIds.length > 0
+      ? await db
+          .collection("dispatch_batches")
+          .find({
+            $or: [
+              { caseIds: { $in: caseObjectIds } },
+              { caseIds: { $in: caseIdStrings } },
+            ],
+          })
+          .sort({ createdAt: 1 })
+          .toArray()
+      : [];
+
+    // Resolve the notice step that was dispatched for a case in a specific batch
+    const resolveCaseStepAtBatch = (c: any, batch: any): number => {
+      if (Array.isArray(batch?.caseDispatches)) {
+        const found = batch.caseDispatches.find(
+          (cd: any) => String(cd?.caseId) === c._id.toString()
+        );
+        if (found && typeof found.step === "number" && found.step > 0) {
+          return found.step;
+        }
+      }
+      if (typeof batch?.targetStep === "number" && batch.targetStep > 0) {
+        return batch.targetStep;
+      }
+      const batchDate = batch?.createdAt ? new Date(batch.createdAt) : null;
+      const policeStep = c?.category === "loan-recovery" ? 2 : 4;
+      let stepAtBatch: number | null = null;
+      const timeline = Array.isArray(c?.timeline) ? c.timeline : [];
+      timeline.forEach((t: any, idx: number) => {
+        if (!t || t.status !== "completed") return;
+        const sNo = Number(t.step) || idx + 1;
+        if (sNo === policeStep) return;
+        const compRaw = t.completedAt || t.lockedAt;
+        const compAt = compRaw ? new Date(compRaw) : null;
+        if (!batchDate || !compAt || isNaN(compAt.getTime()) || compAt <= batchDate) {
+          if (stepAtBatch === null || sNo > stepAtBatch) {
+            stepAtBatch = sNo;
+          }
+        }
+      });
+      return stepAtBatch ?? getEligibleDispatchStep(c) ?? 1;
+    };
+
+    // Map per-case dispatched steps (keyed by step number, keeping the latest successful dispatch for each step)
+    const perCaseDispatchedSteps = new Map<string, Map<number, any>>();
+    cases.forEach((c: any) => {
+      perCaseDispatchedSteps.set(c._id.toString(), new Map<number, any>());
+    });
+
+    rawBatches.forEach((batch: any) => {
+      if (batch.emailSent === false) return;
+      const bCaseIds = Array.isArray(batch.caseIds) ? batch.caseIds : [];
+      bCaseIds.forEach((rawCid: any) => {
+        const cidStr = String(rawCid);
+        const c = caseByIdMap.get(cidStr);
+        if (!c) return;
+        const step = resolveCaseStepAtBatch(c, batch);
+        const stepMap = perCaseDispatchedSteps.get(cidStr);
+        if (!stepMap) return;
+        const prev = stepMap.get(step);
+        stepMap.set(step, {
+          step,
+          label: `Notice ${step}`,
+          batchId: batch.batchId,
+          dispatcherEmail: batch.dispatcherEmail,
+          dispatchedAt: new Date(batch.dispatchedAt || batch.createdAt || Date.now()).toISOString(),
+          downloadCount: batch.downloadCount || 0,
+          lastDownloadedAt: batch.lastDownloadedAt
+            ? new Date(batch.lastDownloadedAt).toISOString()
+            : null,
+          emailSent: batch.emailSent !== false,
+          dispatchCount: (prev?.dispatchCount || 0) + 1,
+        });
+      });
+    });
+
     let totalRecovered = 0;
     let totalDebt = 0;
     let activeCount = 0;
@@ -159,10 +242,18 @@ export async function GET(req: NextRequest) {
         repName = c.clientName;
       }
 
+      const cidStr = c._id.toString();
+      const dispatchStep = getEligibleDispatchStep(c);
+      const stepMap = perCaseDispatchedSteps.get(cidStr) || new Map<number, any>();
+      const dispatchedNotices = Array.from(stepMap.values()).sort((a, b) => a.step - b.step);
+      const dispatchedSteps = dispatchedNotices.map((d: any) => d.step);
+      const isCurrentStepDispatched = dispatchStep !== null && stepMap.has(dispatchStep);
+      const currentStepDispatchInfo = dispatchStep !== null ? stepMap.get(dispatchStep) || null : null;
+
       return {
-        id: c._id.toString(),
-        _id: c._id.toString(),
-        caseId: c.caseId || `LR-${c._id.toString().slice(-4)}`,
+        id: cidStr,
+        _id: cidStr,
+        caseId: c.caseId || `LR-${cidStr.slice(-4)}`,
         defaulterName: c.defaulterName || c.opponentName || "Unspecified Person",
         address: c.address || c.opponentAddress || "Address not provided",
         phone: c.phone || c.opponentPhone || "",
@@ -175,7 +266,12 @@ export async function GET(req: NextRequest) {
         category: c.category || "general-recovery",
         currentStep: c.currentStep || 1,
         // Latest notice delivered via Email & WhatsApp (null = not eligible for dispatch)
-        dispatchStep: getEligibleDispatchStep(c),
+        dispatchStep,
+        // Notices already dispatched to the physical dispatcher via mail
+        dispatchedNotices,
+        dispatchedSteps,
+        isCurrentStepDispatched,
+        currentStepDispatchInfo,
         clientName: repName || "Direct Advocate Case",
         representeeId: c.representeeId ? c.representeeId.toString() : null,
         policeStationName: c.policeStationName || "",
@@ -189,10 +285,58 @@ export async function GET(req: NextRequest) {
       };
     });
 
+    const dispatchBatches = rawBatches
+      .filter((b: any) => b.emailSent !== false)
+      .slice()
+      .reverse()
+      .map((b: any) => {
+        const bCaseIdSet = new Set(
+          (Array.isArray(b.caseIds) ? b.caseIds : []).map((id: any) => String(id))
+        );
+        const matchedCasesInBatch = cases.filter((c: any) => bCaseIdSet.has(c._id.toString()));
+        const notices = matchedCasesInBatch.map((c: any) => {
+          const step = resolveCaseStepAtBatch(c, b);
+          return {
+            caseId: c._id.toString(),
+            caseRef: c.caseId || `LR-${c._id.toString().slice(-4)}`,
+            defaulterName: c.defaulterName || c.opponentName || "Unspecified Person",
+            phone: c.phone || c.opponentPhone || "",
+            email: c.email || c.opponentEmail || "",
+            stuckAmount: Number(c.stuckAmount || c.debtAmount || 0),
+            step,
+            label: `Notice ${step}`,
+            createdAt: c.createdAt || new Date().toISOString(),
+          };
+        });
+        const stepCounts: Record<number, number> = {};
+        notices.forEach((n: any) => {
+          stepCounts[n.step] = (stepCounts[n.step] || 0) + 1;
+        });
+        return {
+          batchId: b.batchId,
+          token: b.token,
+          downloadUrl: `/notice-dispatch/download?token=${b.token}`,
+          dispatcherEmail: b.dispatcherEmail,
+          notes: b.notes || "",
+          createdAt: new Date(b.dispatchedAt || b.createdAt || Date.now()).toISOString(),
+          expiresAt: b.expiresAt ? new Date(b.expiresAt).toISOString() : null,
+          emailSent: b.emailSent !== false,
+          downloadCount: b.downloadCount || 0,
+          lastDownloadedAt: b.lastDownloadedAt ? new Date(b.lastDownloadedAt).toISOString() : null,
+          totalCasesInBatch: b.totalCases || bCaseIdSet.size,
+          matchedCasesCount: notices.length,
+          stepBreakdown: Object.entries(stepCounts)
+            .map(([s, count]) => ({ step: Number(s), label: `Notice ${s}`, count }))
+            .sort((a, b) => a.step - b.step),
+          notices,
+        };
+      });
+
     return NextResponse.json({
       success: true,
       count: formattedCases.length,
       cases: formattedCases,
+      dispatchBatches,
       stats: {
         totalCases: formattedCases.length,
         totalDebt,

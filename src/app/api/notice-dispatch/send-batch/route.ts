@@ -124,10 +124,26 @@ export async function POST(request: NextRequest) {
     const now = new Date();
     const expiresAt = new Date(now.getTime() + 14 * 24 * 60 * 60 * 1000); // 14 days expiration
 
+    const caseDispatches = cases.map(c => {
+      const effectiveStep = (typeof targetStep === "number" ? targetStep : getEligibleDispatchStep(c)) ?? 1;
+      return {
+        caseId: c._id.toString(),
+        caseRef: c.caseId || `LR-${c._id.toString().slice(-4)}`,
+        defaulterName: c.defaulterName || c.opponentName || "Unspecified Person",
+        phone: c.phone || c.opponentPhone || "",
+        email: c.email || c.opponentEmail || "",
+        stuckAmount: Number(c.stuckAmount || c.debtAmount || 0),
+        category: c.category || "general-recovery",
+        step: effectiveStep,
+        label: `Notice ${effectiveStep}`,
+      };
+    });
+
     const batchDoc = {
       batchId,
       token,
       caseIds: cases.map(c => c._id),
+      caseDispatches,
       dispatcherEmail: dispatcherEmail.trim().toLowerCase(),
       notes: notes || "",
       targetStep: typeof targetStep === "number" ? targetStep : undefined,
@@ -136,13 +152,14 @@ export async function POST(request: NextRequest) {
       createdByPhone: user.phone || "",
       totalCases: cases.length,
       status: "active",
+      emailSent: false,
       createdAt: now,
       expiresAt,
       downloadCount: 0,
       downloadLogs: [] as any[],
     };
 
-    await db.collection("dispatch_batches").insertOne(batchDoc);
+    const insertResult = await db.collection("dispatch_batches").insertOne(batchDoc);
 
     // 3. Determine Base URL for 1-Click ZIP Download link (favoring production HTTPS domain for email deliverability)
     const host = request.headers.get("x-forwarded-host") || request.headers.get("host") || "";
@@ -360,6 +377,16 @@ export async function POST(request: NextRequest) {
       }
     }
 
+    await db.collection("dispatch_batches").updateOne(
+      { _id: insertResult.insertedId },
+      {
+        $set: {
+          emailSent,
+          dispatchedAt: new Date(),
+        },
+      }
+    );
+
     return NextResponse.json({
       success: true,
       batchId,
@@ -367,8 +394,10 @@ export async function POST(request: NextRequest) {
       downloadUrl,
       totalCases: cases.length,
       skippedCount,
-      dispatcherEmail,
+      dispatcherEmail: dispatcherEmail.trim().toLowerCase(),
       emailSent,
+      dispatchedAt: now.toISOString(),
+      dispatchedNotices: caseDispatches,
       message: emailSent
         ? `Successfully created batch ${batchId} and sent dispatch package email to ${dispatcherEmail}.${skippedCount > 0 ? ` ${skippedCount} ineligible case(s) skipped.` : ""}`
         : `Batch ${batchId} created, but email delivery encountered an issue. Dispatcher can use the direct download link.`,
