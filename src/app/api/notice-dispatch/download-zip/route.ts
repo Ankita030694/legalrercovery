@@ -4,7 +4,11 @@ import { ObjectId } from "mongodb";
 import JSZip from "jszip";
 import { generateLoanNoticePDFBuffer } from "@/lib/loan-pdf-generator";
 import { generateNoticePDFBuffer } from "@/lib/pdf-generator";
-import { getEligibleDispatchStep } from "@/lib/dispatch-eligibility";
+import {
+  getEligibleDispatchStep,
+  noticeNumberToTimelineStep,
+  timelineStepToNoticeNumber,
+} from "@/lib/dispatch-eligibility";
 
 export const dynamic = "force-dynamic";
 export const maxDuration = 300; // Allow up to 5 minutes for generating large PDF batches
@@ -139,28 +143,41 @@ export async function GET(request: NextRequest) {
       const stepIndex = i + 1;
       const indexPadded = String(stepIndex).padStart(2, "0");
 
-      // Step resolution:
-      // 1. Legacy batches that explicitly stored a targetStep keep using it.
-      // 2. Otherwise use the latest notice delivered via Email & WhatsApp
-      //    (Police Complaint steps are never dispatched from here).
-      // 3. Fallback to 1.
-      let effectiveStep = 1;
+      // Notice Number (1 | 2 | 3) & PDF Timeline Step resolution:
+      // Police Complaints (step 2 for loan-recovery, step 4 for general-recovery)
+      // are never dispatched to the physical dispatcher.
+      const isLoanRecovery = c.category === "loan-recovery";
+      let noticeNumber = 1;
       const recordedCaseDispatch = Array.isArray(batch.caseDispatches)
         ? batch.caseDispatches.find((cd: any) => String(cd.caseId) === c._id.toString())
         : null;
-      if (recordedCaseDispatch && typeof recordedCaseDispatch.step === "number") {
-        effectiveStep = recordedCaseDispatch.step;
+      if (recordedCaseDispatch) {
+        if (
+          typeof recordedCaseDispatch.noticeNumber === "number" &&
+          [1, 2, 3].includes(recordedCaseDispatch.noticeNumber)
+        ) {
+          noticeNumber = recordedCaseDispatch.noticeNumber;
+        } else if (typeof recordedCaseDispatch.step === "number") {
+          noticeNumber =
+            timelineStepToNoticeNumber(recordedCaseDispatch.step, c.category) ??
+            (recordedCaseDispatch.step <= 3 ? recordedCaseDispatch.step : 3);
+        }
+      } else if (typeof batch.targetNotice === "number" && [1, 2, 3].includes(batch.targetNotice)) {
+        noticeNumber = batch.targetNotice;
       } else if (batch.targetStep && typeof batch.targetStep === "number") {
-        effectiveStep = batch.targetStep;
+        noticeNumber =
+          timelineStepToNoticeNumber(batch.targetStep, c.category) ??
+          (batch.targetStep <= 3 ? batch.targetStep : 3);
       } else {
-        effectiveStep = getEligibleDispatchStep(c) ?? 1;
+        noticeNumber = getEligibleDispatchStep(c) ?? 1;
       }
 
-      const isLoanRecovery = c.category === "loan-recovery";
-      const isLoanComplaint = isLoanRecovery && effectiveStep === 2;
-      const isGeneralComplaint = !isLoanRecovery && effectiveStep === 4;
-      const suffix = isLoanComplaint ? "C2" : isGeneralComplaint ? "C4" : `N${effectiveStep}`;
-      const noticeRef = `${c.caseId || "LR"}-${suffix}`;
+      const timelineStep =
+        (recordedCaseDispatch && typeof recordedCaseDispatch.timelineStep === "number"
+          ? recordedCaseDispatch.timelineStep
+          : noticeNumberToTimelineStep(noticeNumber, c.category)) ?? 1;
+
+      const noticeRef = `${c.caseId || "LR"}-N${noticeNumber}`;
 
       const pdfParams: any = {
         defaulterName: sanitizeField(c.defaulterName),
@@ -172,7 +189,7 @@ export async function GET(request: NextRequest) {
         policeStationAddress: sanitizeField(c.policeStationAddress),
         policeStationEmail: sanitizeField(c.policeStationEmail),
         createdAt: c.createdAt || new Date().toISOString(),
-        step: effectiveStep,
+        step: timelineStep,
         category: c.category || "general-recovery",
         clientName: sanitizeField(c.clientName || "AMA Legal Solutions"),
         clientEmail: sanitizeField(c.clientEmail),
@@ -200,18 +217,14 @@ export async function GET(request: NextRequest) {
 
         const cleanDefaulterName = (c.defaulterName || "Debtor").replace(/[^a-zA-Z0-9]/g, "_").slice(0, 30);
         const caseRefSanitized = (c.caseId || "CASE").replace(/[^a-zA-Z0-9_-]/g, "_");
-        const filenameStepSuffix = isLoanComplaint || isGeneralComplaint ? "Police_Complaint" : `Notice_${effectiveStep}`;
+        const filenameStepSuffix = `Notice_${noticeNumber}`;
         const filename = `${indexPadded}_${caseRefSanitized}_${cleanDefaulterName}_${filenameStepSuffix}.pdf`;
 
         zip.file(filename, pdfBuffer);
         generatedCount++;
 
         // Add row to CSV Manifest
-        const stepLabel = isLoanComplaint
-          ? "Police Complaint"
-          : isGeneralComplaint
-          ? "Police Complaint"
-          : `Notice ${effectiveStep}`;
+        const stepLabel = `Notice ${noticeNumber}`;
 
         csvRows.push(
           [

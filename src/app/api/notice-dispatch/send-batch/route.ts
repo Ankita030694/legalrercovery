@@ -7,7 +7,12 @@ import nodemailer from "nodemailer";
 import fs from "fs";
 import path from "path";
 import { sendEmailViaZohoAPI } from "@/lib/zoho-mail";
-import { getEligibleDispatchStep } from "@/lib/dispatch-eligibility";
+import {
+  getEligibleDispatchStep,
+  getCompletedNoticeNumbers,
+  noticeNumberToTimelineStep,
+  type NoticeNumber,
+} from "@/lib/dispatch-eligibility";
 
 export const dynamic = "force-dynamic";
 export const maxDuration = 60;
@@ -67,7 +72,13 @@ export async function POST(request: NextRequest) {
     }
 
     const body = await request.json();
-    const { caseIds, dispatcherEmail, notes, targetStep } = body;
+    const { caseIds, dispatcherEmail, notes, targetStep, targetNotice } = body;
+
+    const rawRequestedNotice = Number(targetNotice ?? targetStep);
+    const requestedNotice: NoticeNumber | null =
+      rawRequestedNotice === 1 || rawRequestedNotice === 2 || rawRequestedNotice === 3
+        ? (rawRequestedNotice as NoticeNumber)
+        : null;
 
     if (!dispatcherEmail || typeof dispatcherEmail !== "string" || !dispatcherEmail.includes("@")) {
       return NextResponse.json(
@@ -102,7 +113,14 @@ export async function POST(request: NextRequest) {
       .toArray();
 
     // Only notices already delivered via Email & WhatsApp are eligible for dispatch
-    const cases = allMatched.filter(c => getEligibleDispatchStep(c) !== null);
+    const cases = allMatched.filter(c => {
+      const completed = getCompletedNoticeNumbers(c);
+      if (completed.length === 0) return false;
+      if (requestedNotice !== null) {
+        return completed.includes(requestedNotice);
+      }
+      return true;
+    });
     const skippedCount = allMatched.length - cases.length;
 
     if (cases.length === 0) {
@@ -124,8 +142,17 @@ export async function POST(request: NextRequest) {
     const now = new Date();
     const expiresAt = new Date(now.getTime() + 14 * 24 * 60 * 60 * 1000); // 14 days expiration
 
+    const resolveCaseNoticeNumber = (c: any): NoticeNumber => {
+      const completed = getCompletedNoticeNumbers(c);
+      if (requestedNotice !== null && completed.includes(requestedNotice)) {
+        return requestedNotice;
+      }
+      return getEligibleDispatchStep(c) ?? 1;
+    };
+
     const caseDispatches = cases.map(c => {
-      const effectiveStep = (typeof targetStep === "number" ? targetStep : getEligibleDispatchStep(c)) ?? 1;
+      const noticeNumber = resolveCaseNoticeNumber(c);
+      const timelineStep = noticeNumberToTimelineStep(noticeNumber, c.category) ?? noticeNumber;
       return {
         caseId: c._id.toString(),
         caseRef: c.caseId || `LR-${c._id.toString().slice(-4)}`,
@@ -134,8 +161,10 @@ export async function POST(request: NextRequest) {
         email: c.email || c.opponentEmail || "",
         stuckAmount: Number(c.stuckAmount || c.debtAmount || 0),
         category: c.category || "general-recovery",
-        step: effectiveStep,
-        label: `Notice ${effectiveStep}`,
+        step: noticeNumber,
+        noticeNumber,
+        timelineStep,
+        label: `Notice ${noticeNumber}`,
       };
     });
 
@@ -146,7 +175,8 @@ export async function POST(request: NextRequest) {
       caseDispatches,
       dispatcherEmail: dispatcherEmail.trim().toLowerCase(),
       notes: notes || "",
-      targetStep: typeof targetStep === "number" ? targetStep : undefined,
+      targetNotice: requestedNotice ?? undefined,
+      targetStep: requestedNotice ?? undefined,
       createdById: userObjId,
       createdByName: user.name || "Special Admin",
       createdByPhone: user.phone || "",
@@ -189,7 +219,8 @@ export async function POST(request: NextRequest) {
       dispatcherEmail: dispatcherEmail.trim().toLowerCase(),
       notes: notes || "",
       cases: cases.map(c => {
-        const effectiveStep = getEligibleDispatchStep(c) ?? 1;
+        const noticeNumber = resolveCaseNoticeNumber(c);
+        const timelineStep = noticeNumberToTimelineStep(noticeNumber, c.category) ?? noticeNumber;
 
         return {
           id: c._id.toString(),
@@ -200,7 +231,9 @@ export async function POST(request: NextRequest) {
           address: c.address || "",
           stuckAmount: c.stuckAmount || 0,
           category: c.category || "general-recovery",
-          step: effectiveStep,
+          step: noticeNumber,
+          noticeNumber,
+          timelineStep,
           policeStationName: c.policeStationName || "",
           policeStationAddress: c.policeStationAddress || "",
           policeStationEmail: c.policeStationEmail || "",
@@ -219,9 +252,9 @@ export async function POST(request: NextRequest) {
     // 5. Build Human-Friendly Email HTML Body
     const tableRowsHtml = cases
       .map((c, index) => {
-        const effectiveStep = getEligibleDispatchStep(c) ?? 1;
+        const noticeNumber = resolveCaseNoticeNumber(c);
 
-        const stepLabel = `Notice ${effectiveStep}`;
+        const stepLabel = `Notice ${noticeNumber}`;
 
 
         const categoryBadge =

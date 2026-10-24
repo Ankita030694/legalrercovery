@@ -751,10 +751,10 @@ export default function ScopedRepresentationCasesPage() {
   // Stage configuration for Escalation Lifecycle (4 Steps)
   // Labels are category-aware: loan-recovery vs general-recovery have different step sequences
   const LOAN_STAGES = [
-    { key: "N1", label: "N1" }, // Day 0  – First Notice
+    { key: "N1", label: "N1" }, // Day 0  – First Notice (Notice 1)
     { key: "PC", label: "PC" }, // Day 3  – Police Complaint (3 days after N1)
-    { key: "N3", label: "N3" }, // Day 7  – Second Notice (7 days after N1)
-    { key: "N4", label: "N4" }  // Day 14 – Third Notice  (7 days after N3)
+    { key: "N2", label: "N2" }, // Day 7  – Second Notice (Notice 2, 7 days after N1)
+    { key: "N3", label: "N3" }  // Day 14 – Third Notice  (Notice 3, 7 days after N2)
   ];
   const GENERAL_STAGES = [
     { key: "N1", label: "N1" }, // Day 0  – First Notice
@@ -1943,14 +1943,42 @@ export default function ScopedRepresentationCasesPage() {
         const totalRecovered = Number(viewingCase.recoveredAmount || 0);
         const outstandingBal = Math.max(0, totalClaimed - totalRecovered);
 
-        const timelineSteps = Array.isArray(viewingCase.timeline) && viewingCase.timeline.length > 0
+        const rawTimeline = Array.isArray(viewingCase.timeline) && viewingCase.timeline.length > 0
           ? viewingCase.timeline
           : [
-              { step: 1, label: "First Notice", description: "Notice drafted & dispatched", status: "completed", date: viewingCase.createdAt },
-              { step: 2, label: isLoan ? "Police Complaint" : "Second Notice", description: isLoan ? "Complaint dispatched to SHO & borrower" : "Dispatched 7 days after first notice", status: currentStep >= 2 ? "completed" : "locked", date: "—" },
-              { step: 3, label: isLoan ? "Second Notice" : "Third Notice", description: "Second demand notice escalation", status: currentStep >= 3 ? "completed" : "locked", date: "—" },
-              { step: 4, label: isLoan ? "Third Notice" : "Police Complaint Draft", description: "Final complaint / demand draft", status: currentStep >= 4 ? "completed" : "locked", date: "—" },
+              { step: 1, status: "completed", date: viewingCase.createdAt },
+              { step: 2, status: currentStep >= 2 ? "completed" : "locked", date: "—" },
+              { step: 3, status: currentStep >= 3 ? "completed" : "locked", date: "—" },
+              { step: 4, status: currentStep >= 4 ? "completed" : "locked", date: "—" },
             ];
+
+        const timelineSteps = rawTimeline.map((st: any, idx: number) => {
+          const sNo = Number(st.step) || idx + 1;
+          if (isLoan) {
+            // Loan Recovery: Step 1 = Notice 1, Step 2 = Police Complaint, Step 3 = Notice 2, Step 4 = Notice 3
+            if (sNo === 1) {
+              return { ...st, step: 1, label: "First Notice (Notice 1)", description: "First demand notice drafted & dispatched" };
+            }
+            if (sNo === 2) {
+              return { ...st, step: 2, label: "Police Complaint", description: `Police complaint dispatched to SHO of ${viewingCase.policeStationName || "Police Station"} — 3 days after Notice 1` };
+            }
+            if (sNo === 3) {
+              return { ...st, step: 3, label: "Second Notice (Notice 2)", description: "Second demand notice dispatched 7 days after Notice 1" };
+            }
+            return { ...st, step: 4, label: "Third Notice (Notice 3)", description: "Final demand notice dispatched 7 days after Notice 2" };
+          }
+          // General Recovery: Step 1 = Notice 1, Step 2 = Notice 2, Step 3 = Notice 3, Step 4 = Police Complaint
+          if (sNo === 1) {
+            return { ...st, step: 1, label: "First Notice (Notice 1)", description: "First demand notice drafted & dispatched" };
+          }
+          if (sNo === 2) {
+            return { ...st, step: 2, label: "Second Notice (Notice 2)", description: "Second demand notice dispatched 7 days after Notice 1" };
+          }
+          if (sNo === 3) {
+            return { ...st, step: 3, label: "Third Notice (Notice 3)", description: "Final demand notice dispatched 7 days after Notice 2" };
+          }
+          return { ...st, step: 4, label: "Police Complaint", description: `Police complaint dispatched to SHO of ${viewingCase.policeStationName || "Police Station"}` };
+        });
 
         return (
           <div className="fixed inset-0 bg-slate-900/60 backdrop-blur-xs flex items-center justify-center p-3 sm:p-6 z-50 animate-fadeIn">

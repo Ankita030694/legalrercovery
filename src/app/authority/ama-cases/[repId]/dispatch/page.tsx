@@ -84,6 +84,7 @@ interface CaseItem {
   category: string;
   currentStep: number;
   dispatchStep?: number | null;
+  completedNotices?: number[];
   dispatchedNotices?: DispatchedNoticeInfo[];
   dispatchedSteps?: number[];
   isCurrentStepDispatched?: boolean;
@@ -96,6 +97,7 @@ interface CaseItem {
 
 const DEFAULT_DISPATCHER_EMAIL = "jatinder991425@gmail.com";
 const DISPATCHER_EMAIL_STORAGE_KEY = "ama_dispatcher_email";
+const NOTICE_NUMBERS: Array<1 | 2 | 3> = [1, 2, 3];
 
 export default function ScopedRepresentationDispatchPage() {
   const params = useParams();
@@ -133,16 +135,37 @@ export default function ScopedRepresentationDispatchPage() {
   const [isDispatching, setIsDispatching] = useState(false);
   const [dispatchResult, setDispatchResult] = useState<any>(null);
 
-  // Filters: Lot (null = not chosen yet) -> Step -> Mail Status -> search
+  // Filters: Lot (null = not chosen yet) -> Notice (1 | 2 | 3) -> search
   const [searchQuery, setSearchQuery] = useState("");
   const [lotFilter, setLotFilter] = useState<string | null>(null);
-  const [stepFilter, setStepFilter] = useState("all");
-  const [mailStatusFilter, setMailStatusFilter] = useState<"all" | "pending" | "dispatched">("all");
+  const [selectedNotice, setSelectedNotice] = useState<1 | 2 | 3>(1);
   const [expandedBatchIds, setExpandedBatchIds] = useState<Record<string, boolean>>({});
   const [showAllBatchesInLog, setShowAllBatchesInLog] = useState(false);
 
   const toggleExpandBatch = (batchId: string) => {
     setExpandedBatchIds(prev => ({ ...prev, [batchId]: !prev[batchId] }));
+  };
+
+  // Whether a case has completed a specific physical Notice Number (1, 2, or 3) via Email & WhatsApp
+  const hasCompletedNotice = (c: CaseItem, n: 1 | 2 | 3): boolean => {
+    if (Array.isArray(c.completedNotices) && c.completedNotices.length > 0) {
+      return c.completedNotices.includes(n);
+    }
+    return (c.dispatchStep || 0) >= n;
+  };
+
+  // Whether a specific physical Notice Number (1, 2, or 3) has been emailed to the dispatcher
+  const isNoticeMailed = (c: CaseItem, n: 1 | 2 | 3): boolean => {
+    return (c.dispatchedSteps || []).includes(n);
+  };
+
+  // Human-readable mapping between category timeline step and Notice Number
+  // Loan Recovery:    Step 1 = Notice 1, Step 2 = Police Complaint (excluded), Step 3 = Notice 2, Step 4 = Notice 3
+  // General Recovery: Step 1 = Notice 1, Step 2 = Notice 2, Step 3 = Notice 3, Step 4 = Police Complaint (excluded)
+  const getNoticeCategorySublabel = (c: CaseItem, n: 1 | 2 | 3): string => {
+    const isLoan = c.category === "loan-recovery";
+    const timelineStep = isLoan ? (n === 1 ? 1 : n === 2 ? 3 : 4) : n;
+    return `${isLoan ? "Loan Recovery" : "General Recovery"} • Step ${timelineStep}`;
   };
 
   // Lots are cases grouped by creation date (same grouping as the Cases page batches)
@@ -207,16 +230,51 @@ export default function ScopedRepresentationDispatchPage() {
   );
   const excludedCount = cases.length - eligibleCases.length;
 
+  // Overall bifurcation of Notice 1, Notice 2, and Notice 3 across all eligible cases
+  const globalNoticeBifurcation = useMemo(() => {
+    return NOTICE_NUMBERS.map(n => {
+      let total = 0;
+      let mailed = 0;
+      eligibleCases.forEach(c => {
+        if (hasCompletedNotice(c, n)) {
+          total++;
+          if (isNoticeMailed(c, n)) mailed++;
+        }
+      });
+      return {
+        notice: n,
+        label: `Notice ${n}`,
+        total,
+        mailed,
+        pending: total - mailed,
+      };
+    });
+  }, [eligibleCases]);
+
   // Overall mail dispatch metrics across eligible cases
   const totalDispatchedNoticesCount = useMemo(
     () => eligibleCases.reduce((sum, c) => sum + (c.dispatchedNotices?.length || 0), 0),
     [eligibleCases]
   );
-  const currentStepDispatchedCount = useMemo(
-    () => eligibleCases.filter(c => c.isCurrentStepDispatched).length,
-    [eligibleCases]
-  );
-  const currentStepPendingCount = eligibleCases.length - currentStepDispatchedCount;
+
+  const computeGroupNoticeBreakdown = (group: CaseItem[]) => {
+    return NOTICE_NUMBERS.map(n => {
+      let total = 0;
+      let mailed = 0;
+      group.forEach(c => {
+        if (hasCompletedNotice(c, n)) {
+          total++;
+          if (isNoticeMailed(c, n)) mailed++;
+        }
+      });
+      return {
+        notice: n,
+        total,
+        mailed,
+        pending: total - mailed,
+      };
+    });
+  };
 
   const lots = useMemo(() => {
     const map = new Map<string, CaseItem[]>();
@@ -233,27 +291,14 @@ export default function ScopedRepresentationDispatchPage() {
     });
     return keys.map((key, i) => {
       const group = map.get(key)!;
-      const stepDispatchedCounts = new Map<number, number>();
-      let currentMailed = 0;
-      group.forEach(c => {
-        if (c.isCurrentStepDispatched) currentMailed++;
-        (c.dispatchedNotices || []).forEach(dn => {
-          stepDispatchedCounts.set(dn.step, (stepDispatchedCounts.get(dn.step) || 0) + 1);
-        });
-      });
-      const dispatchedSummary = Array.from(stepDispatchedCounts.entries())
-        .sort((a, b) => a[0] - b[0])
-        .map(([step, cnt]) => ({ step, count: cnt }));
-
+      const noticeBreakdown = computeGroupNoticeBreakdown(group);
       return {
         key,
         number: i + 1,
         label: formatLotDate(key),
         count: group.length,
         amount: group.reduce((s, c) => s + Number(c.stuckAmount || 0), 0),
-        currentMailed,
-        currentPending: group.length - currentMailed,
-        dispatchedSummary,
+        noticeBreakdown,
       };
     });
   }, [eligibleCases]);
@@ -263,36 +308,38 @@ export default function ScopedRepresentationDispatchPage() {
     return lotFilter === "all" ? eligibleCases : eligibleCases.filter(c => getLotKey(c) === lotFilter);
   }, [eligibleCases, lotFilter]);
 
-  const stepOptions = useMemo(() => {
-    const map = new Map<number, { total: number; mailed: number; pending: number }>();
-    lotCases.forEach(c => {
-      const s = c.dispatchStep || 1;
-      const cur = map.get(s) || { total: 0, mailed: 0, pending: 0 };
-      cur.total++;
-      if (c.isCurrentStepDispatched) cur.mailed++;
-      else cur.pending++;
-      map.set(s, cur);
-    });
-    return Array.from(map.entries()).sort((a, b) => a[0] - b[0]);
+  // Clear 3-way bifurcation of Notice 1, Notice 2, Notice 3 for the selected Lot
+  const lotNoticeOptions = useMemo(() => {
+    return computeGroupNoticeBreakdown(lotCases);
   }, [lotCases]);
 
   const handleSelectLot = (key: string) => {
     setLotFilter(key);
-    setStepFilter("all");
-    setMailStatusFilter("all");
+    const group = key === "all" ? eligibleCases : eligibleCases.filter(c => getLotKey(c) === key);
+    const breakdown = computeGroupNoticeBreakdown(group);
+    // Auto-select the latest Notice (1, 2, or 3) that has pending mail dispatches;
+    // otherwise the latest Notice that has completed cases.
+    const withPending = breakdown.filter(b => b.pending > 0);
+    const withTotal = breakdown.filter(b => b.total > 0);
+    const autoNotice: 1 | 2 | 3 =
+      withPending.length > 0
+        ? withPending[withPending.length - 1].notice
+        : withTotal.length > 0
+        ? withTotal[withTotal.length - 1].notice
+        : 1;
+    setSelectedNotice(autoNotice);
     setSelectedCaseIds([]);
     setSearchQuery("");
   };
 
-  const handleSelectStep = (step: string) => {
-    setStepFilter(step);
+  const handleSelectNotice = (n: 1 | 2 | 3) => {
+    setSelectedNotice(n);
     setSelectedCaseIds([]);
   };
 
   const handleResetLot = () => {
     setLotFilter(null);
-    setStepFilter("all");
-    setMailStatusFilter("all");
+    setSelectedNotice(1);
     setSelectedCaseIds([]);
     setSearchQuery("");
   };
@@ -365,7 +412,7 @@ export default function ScopedRepresentationDispatchPage() {
   };
 
   const handleSelectUndispatched = () => {
-    const undispatched = filteredCases.filter(c => !c.isCurrentStepDispatched);
+    const undispatched = filteredCases.filter(c => !isNoticeMailed(c, selectedNotice));
     setSelectedCaseIds(undispatched.map(c => c.id || c._id));
   };
 
@@ -383,7 +430,8 @@ export default function ScopedRepresentationDispatchPage() {
         body: JSON.stringify({
           caseIds: visibleSelectedIds,
           dispatcherEmail,
-          notes: dispatchNotes
+          notes: dispatchNotes,
+          targetNotice: selectedNotice,
         })
       });
 
@@ -417,25 +465,14 @@ export default function ScopedRepresentationDispatchPage() {
     }
   };
 
-  // Cases matching Lot + Step (before mailStatusFilter)
-  const stepFilteredCases = useMemo(() => {
-    return lotCases.filter(c => {
-      if (stepFilter !== "all" && String(c.dispatchStep || 1) !== stepFilter) return false;
-      return true;
-    });
-  }, [lotCases, stepFilter]);
+  // Cases in the selected Lot that have completed the selected Notice (Notice 1, Notice 2, or Notice 3)
+  const noticeFilteredCases = useMemo(() => {
+    return lotCases.filter(c => hasCompletedNotice(c, selectedNotice));
+  }, [lotCases, selectedNotice]);
 
-  const stepMailedCount = useMemo(
-    () => stepFilteredCases.filter(c => c.isCurrentStepDispatched).length,
-    [stepFilteredCases]
-  );
-  const stepPendingMailCount = stepFilteredCases.length - stepMailedCount;
-
-  // Filtered cases
+  // Filtered cases (Lot + Selected Notice + Search)
   const filteredCases = useMemo(() => {
-    return stepFilteredCases.filter(c => {
-      if (mailStatusFilter === "pending" && c.isCurrentStepDispatched) return false;
-      if (mailStatusFilter === "dispatched" && !c.isCurrentStepDispatched) return false;
+    return noticeFilteredCases.filter(c => {
       if (searchQuery.trim()) {
         const q = searchQuery.toLowerCase();
         return (c.defaulterName || "").toLowerCase().includes(q) ||
@@ -445,9 +482,9 @@ export default function ScopedRepresentationDispatchPage() {
       }
       return true;
     });
-  }, [stepFilteredCases, mailStatusFilter, searchQuery]);
+  }, [noticeFilteredCases, searchQuery]);
 
-  // Only cases currently visible (matching lot/step/search) can be dispatched
+  // Only cases currently visible (matching lot/notice/search) can be dispatched
   const visibleSelectedIds = useMemo(() => {
     const visible = new Set(filteredCases.map(c => c.id || c._id));
     return selectedCaseIds.filter(id => visible.has(id));
@@ -509,11 +546,11 @@ export default function ScopedRepresentationDispatchPage() {
               Notice Dispatch Console • {representee?.name || "Client"}
             </h2>
             <p className="text-xs text-slate-500 font-medium mt-0.5">
-              Only notices already sent via Email &amp; WhatsApp are eligible. Select a lot, then a notice, to dispatch Bar-Stamped PDFs via Zoho Mail
+              Only Legal Notices (Notice 1, Notice 2, Notice 3) already delivered via Email &amp; WhatsApp are dispatched to the physical dispatcher. Police Complaints are never sent to the dispatcher.
             </p>
             {!isLoading && excludedCount > 0 && (
               <p className="text-[11px] text-amber-600 font-semibold mt-1">
-                {excludedCount} case(s) hidden — notice not yet delivered via Email &amp; WhatsApp, or Police Complaint stage.
+                {excludedCount} case(s) hidden — Notice 1 not yet delivered via Email &amp; WhatsApp.
               </p>
             )}
           </div>
@@ -528,7 +565,9 @@ export default function ScopedRepresentationDispatchPage() {
               className="flex items-center gap-2 px-5 py-2.5 bg-[#DC2626] hover:bg-[#B91C1C] text-white text-xs sm:text-sm font-bold rounded-xl transition-all shadow-[0_4px_16px_rgba(220,38,38,0.15)] disabled:opacity-40 cursor-pointer"
             >
               <Send className="w-4 h-4" />
-              <span>Dispatch Selected ({visibleSelectedIds.length})</span>
+              <span>
+                Dispatch Notice {selectedNotice} ({visibleSelectedIds.length})
+              </span>
             </button>
 
             <button
@@ -541,13 +580,13 @@ export default function ScopedRepresentationDispatchPage() {
           </div>
         </div>
 
-        {/* ── MAIL DISPATCH SUMMARY STRIP ── */}
+        {/* ── NOTICE 1 / NOTICE 2 / NOTICE 3 BIFURCATION STRIP ── */}
         {!isLoading && eligibleCases.length > 0 && (
-          <div className="grid grid-cols-1 sm:grid-cols-3 gap-3 pt-2">
+          <div className="grid grid-cols-1 sm:grid-cols-4 gap-3 pt-2">
             <div className="flex items-center justify-between px-4 py-3 rounded-2xl bg-emerald-50/70 border border-emerald-200/80">
               <div>
                 <div className="text-[10px] font-extrabold uppercase tracking-wider text-emerald-700">
-                  Dispatched to Dispatcher (Mail)
+                  Total Mailed to Dispatcher
                 </div>
                 <div className="text-lg font-black text-emerald-900 mt-0.5">
                   {totalDispatchedNoticesCount} Notices{" "}
@@ -556,40 +595,40 @@ export default function ScopedRepresentationDispatchPage() {
                   </span>
                 </div>
               </div>
-              <div className="w-9 h-9 rounded-xl bg-emerald-100 text-emerald-700 flex items-center justify-center">
+              <div className="w-9 h-9 rounded-xl bg-emerald-100 text-emerald-700 flex items-center justify-center shrink-0">
                 <CheckCircle2 className="w-5 h-5" />
               </div>
             </div>
 
-            <div className="flex items-center justify-between px-4 py-3 rounded-2xl bg-slate-50 border border-slate-200/80">
-              <div>
-                <div className="text-[10px] font-extrabold uppercase tracking-wider text-slate-500">
-                  Current Stage Already Mailed
+            {globalNoticeBifurcation.map((nb) => (
+              <div
+                key={nb.notice}
+                className="flex flex-col justify-between px-4 py-3 rounded-2xl bg-slate-50 border border-slate-200/80"
+              >
+                <div className="flex items-center justify-between">
+                  <span className="text-[10px] font-extrabold uppercase tracking-wider text-slate-600">
+                    {nb.label} Bifurcation
+                  </span>
+                  <span className="text-xs font-black text-slate-900">
+                    {nb.total} eligible
+                  </span>
                 </div>
-                <div className="text-lg font-black text-slate-900 mt-0.5">
-                  {currentStepDispatchedCount} / {eligibleCases.length}{" "}
-                  <span className="text-xs font-bold text-slate-500">cases</span>
+                <div className="mt-1.5 flex items-center gap-1.5 flex-wrap">
+                  <span className="px-2 py-0.5 rounded-md bg-emerald-50 text-emerald-700 border border-emerald-200 text-[10px] font-extrabold">
+                    ✓ {nb.mailed} mailed
+                  </span>
+                  <span
+                    className={`px-2 py-0.5 rounded-md text-[10px] font-extrabold ${
+                      nb.pending > 0
+                        ? "bg-amber-50 text-amber-800 border border-amber-200"
+                        : "bg-slate-100 text-slate-400"
+                    }`}
+                  >
+                    {nb.pending} pending
+                  </span>
                 </div>
               </div>
-              <div className="w-9 h-9 rounded-xl bg-slate-200/70 text-slate-700 flex items-center justify-center">
-                <Mail className="w-4 h-4" />
-              </div>
-            </div>
-
-            <div className="flex items-center justify-between px-4 py-3 rounded-2xl bg-amber-50/70 border border-amber-200/80">
-              <div>
-                <div className="text-[10px] font-extrabold uppercase tracking-wider text-amber-700">
-                  Current Stage Pending Mail
-                </div>
-                <div className="text-lg font-black text-amber-900 mt-0.5">
-                  {currentStepPendingCount}{" "}
-                  <span className="text-xs font-bold text-amber-700">cases ready to mail</span>
-                </div>
-              </div>
-              <div className="w-9 h-9 rounded-xl bg-amber-100 text-amber-700 flex items-center justify-center">
-                <Clock className="w-4 h-4" />
-              </div>
-            </div>
+            ))}
           </div>
         )}
 
@@ -627,31 +666,32 @@ export default function ScopedRepresentationDispatchPage() {
                   {eligibleCases.length} cases
                 </div>
                 <div className="mt-1.5 flex flex-wrap items-center gap-1">
-                  <span
-                    className={`px-1.5 py-0.5 rounded text-[10px] font-bold ${
-                      lotFilter === "all"
-                        ? "bg-emerald-500/20 text-emerald-300 border border-emerald-400/30"
-                        : "bg-emerald-50 text-emerald-700 border border-emerald-200"
-                    }`}
-                  >
-                    ✓ {currentStepDispatchedCount} current mailed
-                  </span>
-                  {currentStepPendingCount > 0 && (
-                    <span
-                      className={`px-1.5 py-0.5 rounded text-[10px] font-bold ${
-                        lotFilter === "all"
-                          ? "bg-amber-500/20 text-amber-300 border border-amber-400/30"
-                          : "bg-amber-50 text-amber-700 border border-amber-200"
-                      }`}
-                    >
-                      {currentStepPendingCount} pending
-                    </span>
-                  )}
+                  {globalNoticeBifurcation
+                    .filter(nb => nb.total > 0)
+                    .map(nb => (
+                      <span
+                        key={nb.notice}
+                        className={`inline-flex items-center gap-0.5 px-1.5 py-0.5 rounded text-[10px] font-bold ${
+                          nb.pending > 0
+                            ? lotFilter === "all"
+                              ? "bg-amber-500/20 text-amber-300 border border-amber-400/30"
+                              : "bg-amber-50 text-amber-700 border border-amber-200"
+                            : lotFilter === "all"
+                            ? "bg-emerald-500/20 text-emerald-300 border border-emerald-400/30"
+                            : "bg-emerald-50 text-emerald-700 border border-emerald-200"
+                        }`}
+                      >
+                        {nb.pending > 0
+                          ? `Notice ${nb.notice}: ${nb.pending} pending`
+                          : `✓ Notice ${nb.notice} (${nb.mailed})`}
+                      </span>
+                    ))}
                 </div>
               </button>
             )}
             {lots.map(l => {
               const isSelected = lotFilter === l.key;
+              const activeNotices = l.noticeBreakdown.filter(nb => nb.total > 0);
               return (
                 <button
                   key={l.key}
@@ -668,40 +708,34 @@ export default function ScopedRepresentationDispatchPage() {
                     {l.count} cases · {formatCurrency(l.amount)}
                   </div>
                   <div className="mt-1.5 flex flex-wrap items-center gap-1">
-                    {l.dispatchedSummary.length > 0 ? (
-                      l.dispatchedSummary.map(ds => (
-                        <span
-                          key={ds.step}
-                          className={`inline-flex items-center gap-0.5 px-1.5 py-0.5 rounded text-[10px] font-bold ${
-                            isSelected
-                              ? "bg-emerald-500/20 text-emerald-300 border border-emerald-400/30"
-                              : "bg-emerald-50 text-emerald-700 border border-emerald-200"
-                          }`}
-                          title={`Notice ${ds.step} successfully dispatched to dispatcher via mail for ${ds.count} case(s)`}
-                        >
-                          ✓ Notice {ds.step} ({ds.count})
-                        </span>
-                      ))
-                    ) : (
-                      <span
-                        className={`px-1.5 py-0.5 rounded text-[10px] font-semibold ${
-                          isSelected ? "bg-slate-800 text-slate-400" : "bg-slate-100 text-slate-500"
-                        }`}
-                      >
-                        No mail dispatches yet
-                      </span>
-                    )}
-                    {l.currentPending > 0 && (
-                      <span
-                        className={`px-1.5 py-0.5 rounded text-[10px] font-bold ${
-                          isSelected
-                            ? "bg-amber-500/20 text-amber-300 border border-amber-400/30"
-                            : "bg-amber-50 text-amber-700 border border-amber-200"
-                        }`}
-                      >
-                        {l.currentPending} pending current
-                      </span>
-                    )}
+                    {activeNotices.map(nb => (
+                      <React.Fragment key={nb.notice}>
+                        {nb.mailed > 0 && (
+                          <span
+                            className={`inline-flex items-center gap-0.5 px-1.5 py-0.5 rounded text-[10px] font-bold ${
+                              isSelected
+                                ? "bg-emerald-500/20 text-emerald-300 border border-emerald-400/30"
+                                : "bg-emerald-50 text-emerald-700 border border-emerald-200"
+                            }`}
+                            title={`Notice ${nb.notice} mailed to dispatcher for ${nb.mailed} case(s)`}
+                          >
+                            ✓ Notice {nb.notice} ({nb.mailed})
+                          </span>
+                        )}
+                        {nb.pending > 0 && (
+                          <span
+                            className={`inline-flex items-center gap-0.5 px-1.5 py-0.5 rounded text-[10px] font-bold ${
+                              isSelected
+                                ? "bg-amber-500/20 text-amber-300 border border-amber-400/30"
+                                : "bg-amber-50 text-amber-700 border border-amber-200"
+                            }`}
+                            title={`Notice ${nb.notice} pending mail dispatch for ${nb.pending} case(s)`}
+                          >
+                            Notice {nb.notice}: {nb.pending} pending
+                          </span>
+                        )}
+                      </React.Fragment>
+                    ))}
                   </div>
                 </button>
               );
@@ -712,61 +746,77 @@ export default function ScopedRepresentationDispatchPage() {
           </div>
         </div>
 
-        {/* STEP 2 — choose a Step within the lot */}
+        {/* STEP 2 — Clear Bifurcation of Notice 1, Notice 2, Notice 3 (Never Police Complaints) */}
         {lotFilter !== null && (
           <div className="pt-4 border-t border-slate-100 space-y-3">
-            <div className="flex items-center gap-2 text-xs font-extrabold uppercase tracking-wider text-slate-500">
-              <span className="w-5 h-5 rounded-full bg-slate-900 text-white flex items-center justify-center text-[10px]">2</span>
-              Select Step
+            <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-1">
+              <div className="flex items-center gap-2 text-xs font-extrabold uppercase tracking-wider text-slate-500">
+                <span className="w-5 h-5 rounded-full bg-slate-900 text-white flex items-center justify-center text-[10px]">2</span>
+                Select Notice to Dispatch (Notices Only • No Police Complaints)
+              </div>
+              <span className="text-[11px] font-semibold text-slate-400">
+                Loan Recovery: Step 1 = Notice 1, Step 3 = Notice 2, Step 4 = Notice 3 (Step 2 Police Complaint excluded) • General: Step 1–3 = Notice 1–3 (Step 4 excluded)
+              </span>
             </div>
-            <div className="flex flex-wrap gap-2">
-              <button
-                type="button"
-                onClick={() => handleSelectStep("all")}
-                className={`px-3 py-1.5 rounded-lg border text-xs font-bold transition-all cursor-pointer flex items-center gap-2 ${
-                  stepFilter === "all"
-                    ? "bg-[#DC2626] text-white border-[#DC2626]"
-                    : "bg-white text-slate-700 border-slate-200 hover:border-slate-400"
-                }`}
-              >
-                <span>All Steps ({lotCases.length})</span>
-              </button>
-              {stepOptions.map(([step, stats]) => {
-                const isSelected = stepFilter === String(step);
+            <div className="grid grid-cols-1 sm:grid-cols-3 gap-2.5">
+              {lotNoticeOptions.map((stats) => {
+                const isSelected = selectedNotice === stats.notice;
+                const noticeTitle =
+                  stats.notice === 1
+                    ? "Notice 1 • First Demand Notice"
+                    : stats.notice === 2
+                    ? "Notice 2 • Second Demand Notice"
+                    : "Notice 3 • Final Demand Notice";
                 return (
                   <button
-                    key={step}
+                    key={stats.notice}
                     type="button"
-                    onClick={() => handleSelectStep(String(step))}
-                    className={`px-3 py-1.5 rounded-lg border text-xs font-bold transition-all cursor-pointer flex items-center gap-2 ${
+                    onClick={() => handleSelectNotice(stats.notice)}
+                    className={`p-3 rounded-xl border text-left text-xs transition-all cursor-pointer flex items-center justify-between gap-2 ${
                       isSelected
-                        ? "bg-[#DC2626] text-white border-[#DC2626]"
+                        ? "bg-[#DC2626] text-white border-[#DC2626] shadow-sm"
                         : "bg-white text-slate-700 border-slate-200 hover:border-slate-400"
                     }`}
                   >
-                    <span>Notice {step} ({stats.total})</span>
-                    {stats.mailed > 0 && (
-                      <span
-                        className={`px-1.5 py-0.2 rounded text-[10px] font-extrabold ${
-                          isSelected
-                            ? "bg-white/20 text-white"
-                            : "bg-emerald-50 text-emerald-700 border border-emerald-200"
-                        }`}
-                      >
-                        ✓ {stats.mailed} mailed
-                      </span>
-                    )}
-                    {stats.pending > 0 && (
-                      <span
-                        className={`px-1.5 py-0.2 rounded text-[10px] font-extrabold ${
-                          isSelected
-                            ? "bg-black/20 text-white"
-                            : "bg-amber-50 text-amber-700 border border-amber-200"
-                        }`}
-                      >
-                        {stats.pending} pending
-                      </span>
-                    )}
+                    <div>
+                      <div className="font-extrabold text-sm">{noticeTitle}</div>
+                      <div className={`text-[11px] mt-0.5 ${isSelected ? "text-red-100" : "text-slate-400"}`}>
+                        {stats.total} {stats.total === 1 ? "case" : "cases"} eligible in this lot
+                      </div>
+                    </div>
+                    <div className="flex flex-col items-end gap-1 shrink-0">
+                      {stats.mailed > 0 && (
+                        <span
+                          className={`px-2 py-0.5 rounded text-[10px] font-extrabold ${
+                            isSelected
+                              ? "bg-white/20 text-white"
+                              : "bg-emerald-50 text-emerald-700 border border-emerald-200"
+                          }`}
+                        >
+                          ✓ {stats.mailed} mailed
+                        </span>
+                      )}
+                      {stats.pending > 0 && (
+                        <span
+                          className={`px-2 py-0.5 rounded text-[10px] font-extrabold ${
+                            isSelected
+                              ? "bg-black/25 text-white"
+                              : "bg-amber-50 text-amber-700 border border-amber-200"
+                          }`}
+                        >
+                          {stats.pending} pending
+                        </span>
+                      )}
+                      {stats.total === 0 && (
+                        <span
+                          className={`px-2 py-0.5 rounded text-[10px] font-semibold ${
+                            isSelected ? "bg-white/15 text-red-100" : "bg-slate-100 text-slate-400"
+                          }`}
+                        >
+                          0 reached
+                        </span>
+                      )}
+                    </div>
                   </button>
                 );
               })}
@@ -779,64 +829,27 @@ export default function ScopedRepresentationDispatchPage() {
           <div className="pt-4 border-t border-slate-100 flex flex-wrap items-center gap-2.5 text-xs">
             <span className="flex items-center gap-2 text-xs font-extrabold uppercase tracking-wider text-slate-500 mr-1">
               <span className="w-5 h-5 rounded-full bg-slate-900 text-white flex items-center justify-center text-[10px]">3</span>
-              Select Cases
+              Select Cases for Notice {selectedNotice}
             </span>
             <button
               type="button"
               onClick={handleSelectAll}
               disabled={filteredCases.length === 0}
-              className="px-2.5 py-1 bg-slate-100 hover:bg-slate-200 rounded-lg font-bold text-slate-700 disabled:opacity-40 cursor-pointer"
+              className="px-3 py-1.5 bg-slate-100 hover:bg-slate-200 rounded-lg font-bold text-slate-700 disabled:opacity-40 cursor-pointer"
             >
               {filteredCases.length > 0 && visibleSelectedIds.length === filteredCases.length
                 ? "Deselect All"
-                : `Select All (${filteredCases.length})`}
+                : `Select All Notice ${selectedNotice} (${filteredCases.length})`}
             </button>
-            {filteredCases.some(c => !c.isCurrentStepDispatched) && (
+            {filteredCases.some(c => !isNoticeMailed(c, selectedNotice)) && (
               <button
                 type="button"
                 onClick={handleSelectUndispatched}
-                className="px-2.5 py-1 bg-amber-50 hover:bg-amber-100 border border-amber-200 rounded-lg font-bold text-amber-800 cursor-pointer"
+                className="px-3 py-1.5 bg-amber-50 hover:bg-amber-100 border border-amber-200 rounded-lg font-bold text-amber-800 cursor-pointer"
               >
-                Select Undispatched ({filteredCases.filter(c => !c.isCurrentStepDispatched).length})
+                Select Pending Mail ({filteredCases.filter(c => !isNoticeMailed(c, selectedNotice)).length})
               </button>
             )}
-
-            {/* Mail Dispatch Filter Pills */}
-            <div className="flex items-center gap-1 bg-slate-100 p-1 rounded-lg ml-1">
-              <button
-                type="button"
-                onClick={() => setMailStatusFilter("all")}
-                className={`px-2 py-0.5 rounded-md text-[11px] font-bold transition-colors cursor-pointer ${
-                  mailStatusFilter === "all"
-                    ? "bg-white text-slate-900 shadow-2xs"
-                    : "text-slate-600 hover:text-slate-900"
-                }`}
-              >
-                All ({stepFilteredCases.length})
-              </button>
-              <button
-                type="button"
-                onClick={() => setMailStatusFilter("pending")}
-                className={`px-2 py-0.5 rounded-md text-[11px] font-bold transition-colors cursor-pointer ${
-                  mailStatusFilter === "pending"
-                    ? "bg-white text-amber-800 shadow-2xs"
-                    : "text-slate-600 hover:text-slate-900"
-                }`}
-              >
-                Pending Mail ({stepPendingMailCount})
-              </button>
-              <button
-                type="button"
-                onClick={() => setMailStatusFilter("dispatched")}
-                className={`px-2 py-0.5 rounded-md text-[11px] font-bold transition-colors cursor-pointer ${
-                  mailStatusFilter === "dispatched"
-                    ? "bg-white text-emerald-800 shadow-2xs"
-                    : "text-slate-600 hover:text-slate-900"
-                }`}
-              >
-                ✓ Dispatched via Mail ({stepMailedCount})
-              </button>
-            </div>
 
             <div className="relative ml-auto">
               <Search className="w-3.5 h-3.5 text-slate-400 absolute left-2.5 top-1/2 -translate-y-1/2" />
@@ -865,13 +878,15 @@ export default function ScopedRepresentationDispatchPage() {
           <div className="p-16 text-center">
             <Layers className="w-10 h-10 text-slate-300 mx-auto mb-2" />
             <h4 className="text-sm font-bold text-slate-800">Select a Lot to begin</h4>
-            <p className="text-xs text-slate-400 mt-1">Choose a lot above, then pick a step to see the cases and their dispatcher mail history.</p>
+            <p className="text-xs text-slate-400 mt-1">Choose a lot above, then pick Notice 1, Notice 2, or Notice 3 to view and dispatch notices.</p>
           </div>
         ) : filteredCases.length === 0 ? (
           <div className="p-16 text-center">
             <CheckCircle2 className="w-10 h-10 text-emerald-500 mx-auto mb-2" />
-            <h4 className="text-sm font-bold text-slate-800">No Cases Found</h4>
-            <p className="text-xs text-slate-400 mt-1">No cases match the selected lot, step, and mail status filter.</p>
+            <h4 className="text-sm font-bold text-slate-800">No Cases for Notice {selectedNotice}</h4>
+            <p className="text-xs text-slate-400 mt-1">
+              No cases in this lot have completed Notice {selectedNotice} via Email &amp; WhatsApp yet.
+            </p>
           </div>
         ) : (
           <div className="overflow-x-auto">
@@ -889,7 +904,7 @@ export default function ScopedRepresentationDispatchPage() {
                   <th className="py-3 px-5">Defaulter &amp; Case ID</th>
                   <th className="py-3 px-5">Contact Details</th>
                   <th className="py-3 px-5">Claim Amount</th>
-                  <th className="py-3 px-5">Current Notice Stage</th>
+                  <th className="py-3 px-5">Selected Notice Stage</th>
                   <th className="py-3 px-5">Notices Dispatched to Dispatcher (Mail)</th>
                   <th className="py-3 px-5">Police Authority</th>
                 </tr>
@@ -899,6 +914,7 @@ export default function ScopedRepresentationDispatchPage() {
                   const caseId = c.id || c._id;
                   const isSelected = visibleSelectedIds.includes(caseId);
                   const dispatchedNotices = c.dispatchedNotices || [];
+                  const selectedNoticeMailed = isNoticeMailed(c, selectedNotice);
 
                   return (
                     <tr 
@@ -932,12 +948,15 @@ export default function ScopedRepresentationDispatchPage() {
                       <td className="py-3.5 px-5">
                         <div className="flex flex-col items-start gap-1">
                           <span className="px-2.5 py-1 rounded-full bg-slate-100 text-slate-800 text-[11px] font-extrabold">
-                            Notice {c.dispatchStep || 1}
+                            Notice {selectedNotice}
                           </span>
-                          {c.isCurrentStepDispatched ? (
+                          <span className="text-[10px] text-slate-400 font-semibold">
+                            {getNoticeCategorySublabel(c, selectedNotice)}
+                          </span>
+                          {selectedNoticeMailed ? (
                             <span className="inline-flex items-center gap-1 px-2 py-0.5 rounded-md bg-emerald-50 text-emerald-700 border border-emerald-200 text-[10px] font-bold">
                               <CheckCircle2 className="w-3 h-3 text-emerald-600" />
-                              <span>Dispatched via Mail</span>
+                              <span>Notice {selectedNotice} Mailed</span>
                             </span>
                           ) : (
                             <span className="inline-flex items-center gap-1 px-2 py-0.5 rounded-md bg-amber-50 text-amber-700 border border-amber-200 text-[10px] font-bold">
@@ -1175,7 +1194,9 @@ export default function ScopedRepresentationDispatchPage() {
         <div className="fixed inset-0 bg-slate-900/40 backdrop-blur-xs flex items-center justify-center p-4 z-50">
           <div className="bg-white rounded-3xl max-w-xl w-full p-6 sm:p-8 border border-slate-200 shadow-2xl space-y-5 max-h-[90vh] overflow-y-auto">
             <div className="flex items-center justify-between border-b border-slate-100 pb-3">
-              <h3 className="text-lg font-black text-slate-900">Execute Notice Dispatch Batch</h3>
+              <h3 className="text-lg font-black text-slate-900">
+                Execute Notice {selectedNotice} Dispatch Batch
+              </h3>
               <button onClick={() => setIsDispatchModalOpen(false)} className="text-slate-400 hover:text-slate-700 cursor-pointer">
                 <X className="w-5 h-5" />
               </button>
@@ -1184,7 +1205,7 @@ export default function ScopedRepresentationDispatchPage() {
             {selectedCasesForModal.length > 0 && (
               <div className="space-y-2">
                 <p className="text-xs text-slate-500">
-                  You are dispatching <strong className="text-slate-800">{selectedCasesForModal.length}</strong> notice(s) to the physical dispatcher. Notices will be compiled, stamped with the Advocate Bar Stamp, and sent via Zoho Mail:
+                  You are dispatching <strong className="text-slate-800">{selectedCasesForModal.length} × Notice {selectedNotice}</strong> to the physical dispatcher. Notices will be compiled, stamped with the Advocate Bar Stamp, and sent via Zoho Mail:
                 </p>
                 <div className="max-h-40 overflow-y-auto border border-slate-200 rounded-xl divide-y divide-slate-100 bg-slate-50/50 text-xs">
                   {selectedCasesForModal.map((c, idx) => (
@@ -1196,9 +1217,9 @@ export default function ScopedRepresentationDispatchPage() {
                       </div>
                       <div className="flex items-center gap-1.5 shrink-0">
                         <span className="px-2 py-0.5 rounded-full bg-slate-900 text-white text-[10px] font-extrabold">
-                          Notice {c.dispatchStep || 1}
+                          Notice {selectedNotice}
                         </span>
-                        {c.isCurrentStepDispatched && (
+                        {isNoticeMailed(c, selectedNotice) && (
                           <span className="px-1.5 py-0.5 rounded bg-emerald-50 text-emerald-700 border border-emerald-200 text-[10px] font-bold">
                             Already Mailed
                           </span>

@@ -3,7 +3,11 @@ import { getServerSession } from "next-auth/next";
 import { authOptions } from "@/lib/auth";
 import { getDbAndBucket } from "@/lib/mongodb";
 import { ObjectId } from "mongodb";
-import { getEligibleDispatchStep } from "@/lib/dispatch-eligibility";
+import {
+  getEligibleDispatchStep,
+  getCompletedNoticeNumbers,
+  timelineStepToNoticeNumber,
+} from "@/lib/dispatch-eligibility";
 
 export const dynamic = 'force-dynamic';
 
@@ -149,36 +153,50 @@ export async function GET(req: NextRequest) {
           .toArray()
       : [];
 
-    // Resolve the notice step that was dispatched for a case in a specific batch
+    // Resolve the physical Notice Number (1, 2, or 3) that was dispatched for a case in a specific batch
     const resolveCaseStepAtBatch = (c: any, batch: any): number => {
       if (Array.isArray(batch?.caseDispatches)) {
         const found = batch.caseDispatches.find(
           (cd: any) => String(cd?.caseId) === c._id.toString()
         );
-        if (found && typeof found.step === "number" && found.step > 0) {
-          return found.step;
+        if (found) {
+          if (typeof found.noticeNumber === "number" && [1, 2, 3].includes(found.noticeNumber)) {
+            return found.noticeNumber;
+          }
+          if (typeof found.step === "number" && found.step > 0) {
+            return (
+              timelineStepToNoticeNumber(found.step, c?.category) ??
+              (found.step <= 3 ? found.step : 3)
+            );
+          }
         }
       }
+      if (typeof batch?.targetNotice === "number" && [1, 2, 3].includes(batch.targetNotice)) {
+        return batch.targetNotice;
+      }
       if (typeof batch?.targetStep === "number" && batch.targetStep > 0) {
-        return batch.targetStep;
+        return (
+          timelineStepToNoticeNumber(batch.targetStep, c?.category) ??
+          (batch.targetStep <= 3 ? batch.targetStep : 3)
+        );
       }
       const batchDate = batch?.createdAt ? new Date(batch.createdAt) : null;
-      const policeStep = c?.category === "loan-recovery" ? 2 : 4;
-      let stepAtBatch: number | null = null;
+      let noticeAtBatch: number | null = null;
       const timeline = Array.isArray(c?.timeline) ? c.timeline : [];
       timeline.forEach((t: any, idx: number) => {
         if (!t || t.status !== "completed") return;
         const sNo = Number(t.step) || idx + 1;
-        if (sNo === policeStep) return;
+        const noticeNum = timelineStepToNoticeNumber(sNo, c?.category);
+        if (noticeNum === null) return;
         const compRaw = t.completedAt || t.lockedAt;
         const compAt = compRaw ? new Date(compRaw) : null;
         if (!batchDate || !compAt || isNaN(compAt.getTime()) || compAt <= batchDate) {
-          if (stepAtBatch === null || sNo > stepAtBatch) {
-            stepAtBatch = sNo;
+          if (noticeAtBatch === null || noticeNum > noticeAtBatch) {
+            noticeAtBatch = noticeNum;
           }
         }
       });
-      return stepAtBatch ?? getEligibleDispatchStep(c) ?? 1;
+      return noticeAtBatch ?? getEligibleDispatchStep(c) ?? 1;
     };
 
     // Map per-case dispatched steps (keyed by step number, keeping the latest successful dispatch for each step)
@@ -244,6 +262,7 @@ export async function GET(req: NextRequest) {
 
       const cidStr = c._id.toString();
       const dispatchStep = getEligibleDispatchStep(c);
+      const completedNotices = getCompletedNoticeNumbers(c);
       const stepMap = perCaseDispatchedSteps.get(cidStr) || new Map<number, any>();
       const dispatchedNotices = Array.from(stepMap.values()).sort((a, b) => a.step - b.step);
       const dispatchedSteps = dispatchedNotices.map((d: any) => d.step);
@@ -265,8 +284,10 @@ export async function GET(req: NextRequest) {
         status: c.status || "active",
         category: c.category || "general-recovery",
         currentStep: c.currentStep || 1,
-        // Latest notice delivered via Email & WhatsApp (null = not eligible for dispatch)
+        // Latest notice number (1 | 2 | 3) delivered via Email & WhatsApp (null = not eligible for dispatch)
         dispatchStep,
+        // All notice numbers (1 | 2 | 3) already delivered via Email & WhatsApp for this case
+        completedNotices,
         // Notices already dispatched to the physical dispatcher via mail
         dispatchedNotices,
         dispatchedSteps,

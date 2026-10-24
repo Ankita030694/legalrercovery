@@ -40,6 +40,11 @@ interface CaseItem {
   status: string;
   category: string;
   currentStep: number;
+  dispatchStep?: number | null;
+  completedNotices?: number[];
+  dispatchedNotices?: any[];
+  dispatchedSteps?: number[];
+  isCurrentStepDispatched?: boolean;
   clientName: string;
   representeeId?: string | null;
   policeStationName?: string;
@@ -141,15 +146,22 @@ export default function GlobalAmaDispatchPage() {
     }
   };
 
-  const handleSmartSelect = (type: "all" | "step1" | "loan" | "complaints" | "none") => {
+  const eligibleCases = useMemo(
+    () => cases.filter(c => c.dispatchStep !== null && c.dispatchStep !== undefined),
+    [cases]
+  );
+
+  const handleSmartSelect = (type: "all" | "notice1" | "notice2" | "notice3" | "loan" | "none") => {
     if (type === "all") {
       setSelectedCaseIds(filteredCases.map(c => c.id || c._id));
-    } else if (type === "step1") {
-      setSelectedCaseIds(filteredCases.filter(c => (c.currentStep || 1) === 1).map(c => c.id || c._id));
+    } else if (type === "notice1") {
+      setSelectedCaseIds(filteredCases.filter(c => (c.dispatchStep || 1) === 1).map(c => c.id || c._id));
+    } else if (type === "notice2") {
+      setSelectedCaseIds(filteredCases.filter(c => (c.dispatchStep || 1) === 2).map(c => c.id || c._id));
+    } else if (type === "notice3") {
+      setSelectedCaseIds(filteredCases.filter(c => (c.dispatchStep || 1) === 3).map(c => c.id || c._id));
     } else if (type === "loan") {
       setSelectedCaseIds(filteredCases.filter(c => c.category === "loan-recovery").map(c => c.id || c._id));
-    } else if (type === "complaints") {
-      setSelectedCaseIds(filteredCases.filter(c => (c.currentStep || 1) >= 4 || c.category === "loan-recovery" && (c.currentStep || 1) === 2).map(c => c.id || c._id));
     } else if (type === "none") {
       setSelectedCaseIds([]);
     }
@@ -169,7 +181,8 @@ export default function GlobalAmaDispatchPage() {
         body: JSON.stringify({
           caseIds: selectedCaseIds,
           dispatcherEmail,
-          notes: dispatchNotes
+          notes: dispatchNotes,
+          targetNotice: stepFilter !== "all" ? Number(stepFilter) : undefined,
         })
       });
 
@@ -200,9 +213,9 @@ export default function GlobalAmaDispatchPage() {
     }
   };
 
-  // Filtered cases
+  // Filtered cases (only eligible notices — Police Complaints are excluded)
   const filteredCases = useMemo(() => {
-    return cases.filter(c => {
+    return eligibleCases.filter(c => {
       // Representee filter
       if (selectedRepFilter !== "all") {
         if (selectedRepFilter === "direct") {
@@ -212,8 +225,8 @@ export default function GlobalAmaDispatchPage() {
         }
       }
 
-      // Step filter
-      if (stepFilter !== "all" && String(c.currentStep || 1) !== stepFilter) return false;
+      // Notice filter (Notice 1, Notice 2, Notice 3)
+      if (stepFilter !== "all" && String(c.dispatchStep || 1) !== stepFilter) return false;
 
       // Category filter
       if (categoryFilter !== "all" && c.category !== categoryFilter) return false;
@@ -228,7 +241,7 @@ export default function GlobalAmaDispatchPage() {
       }
       return true;
     });
-  }, [cases, selectedRepFilter, stepFilter, categoryFilter, searchQuery]);
+  }, [eligibleCases, selectedRepFilter, stepFilter, categoryFilter, searchQuery]);
 
   return (
     <div className="space-y-8 select-none text-left">
@@ -255,7 +268,7 @@ export default function GlobalAmaDispatchPage() {
             Notice Dispatch Console
           </h1>
           <p className="text-xs sm:text-sm text-slate-500 font-medium mt-1">
-            Dispatch advocate-stamped legal notices and police complaints via Zoho Mail across all client representations.
+            Dispatch advocate-stamped legal notices (Notice 1, Notice 2, Notice 3) via Zoho Mail across all client representations. Police Complaints are never sent to the physical dispatcher.
           </p>
         </div>
 
@@ -292,7 +305,7 @@ export default function GlobalAmaDispatchPage() {
               onChange={(e) => setSelectedRepFilter(e.target.value)}
               className="w-full px-3 py-2 bg-slate-50 border border-slate-200 rounded-xl text-xs font-bold text-slate-800 focus:outline-none cursor-pointer"
             >
-              <option value="all">All Representations ({cases.length})</option>
+              <option value="all">All Representations ({eligibleCases.length})</option>
               <option value="direct">Direct AMA Claims</option>
               {representees.map((r) => (
                 <option key={r._id || r.id} value={r._id || r.id}>
@@ -302,21 +315,20 @@ export default function GlobalAmaDispatchPage() {
             </select>
           </div>
 
-          {/* Notice Stage Selector */}
+          {/* Notice Stage Selector (Notices Only — No Police Complaints) */}
           <div>
             <label className="block text-[11px] font-bold text-slate-500 uppercase tracking-wider mb-1">
-              Dispatch Stage
+              Notice Bifurcation
             </label>
             <select
               value={stepFilter}
               onChange={(e) => setStepFilter(e.target.value)}
               className="w-full px-3 py-2 bg-slate-50 border border-slate-200 rounded-xl text-xs font-bold text-slate-800 focus:outline-none cursor-pointer"
             >
-              <option value="all">All Stages</option>
-              <option value="1">Step 1: Notice 1</option>
-              <option value="2">Step 2: Notice 2</option>
-              <option value="3">Step 3: Notice 3</option>
-              <option value="4">Step 4: Police Complaint</option>
+              <option value="all">All Notices (Notice 1, 2 &amp; 3)</option>
+              <option value="1">Notice 1 • First Demand Notice</option>
+              <option value="2">Notice 2 • Second Demand Notice</option>
+              <option value="3">Notice 3 • Final Demand Notice</option>
             </select>
           </div>
 
@@ -364,22 +376,28 @@ export default function GlobalAmaDispatchPage() {
             All Matching ({filteredCases.length})
           </button>
           <button
-            onClick={() => handleSmartSelect("step1")}
+            onClick={() => handleSmartSelect("notice1")}
             className="px-2.5 py-1 bg-slate-100 hover:bg-slate-200 rounded-lg font-bold text-slate-700 cursor-pointer"
           >
-            Step 1 Notices
+            Notice 1 Only
+          </button>
+          <button
+            onClick={() => handleSmartSelect("notice2")}
+            className="px-2.5 py-1 bg-slate-100 hover:bg-slate-200 rounded-lg font-bold text-slate-700 cursor-pointer"
+          >
+            Notice 2 Only
+          </button>
+          <button
+            onClick={() => handleSmartSelect("notice3")}
+            className="px-2.5 py-1 bg-slate-100 hover:bg-slate-200 rounded-lg font-bold text-slate-700 cursor-pointer"
+          >
+            Notice 3 Only
           </button>
           <button
             onClick={() => handleSmartSelect("loan")}
             className="px-2.5 py-1 bg-slate-100 hover:bg-slate-200 rounded-lg font-bold text-slate-700 cursor-pointer"
           >
             Loan Recovery
-          </button>
-          <button
-            onClick={() => handleSmartSelect("complaints")}
-            className="px-2.5 py-1 bg-red-50 hover:bg-red-100 text-[#DC2626] border border-red-200 rounded-lg font-bold cursor-pointer"
-          >
-            Police Complaints
           </button>
           <button
             onClick={() => handleSmartSelect("none")}
@@ -418,11 +436,11 @@ export default function GlobalAmaDispatchPage() {
                       className="rounded border-slate-300 text-[#DC2626] focus:ring-[#DC2626] cursor-pointer"
                     />
                   </th>
-                  <th className="py-3 px-5">Defaulter & Case ID</th>
+                  <th className="py-3 px-5">Defaulter &amp; Case ID</th>
                   <th className="py-3 px-5">Client Representation</th>
                   <th className="py-3 px-5">Contact Details</th>
                   <th className="py-3 px-5">Claim Amount</th>
-                  <th className="py-3 px-5">Dispatch Stage</th>
+                  <th className="py-3 px-5">Notice Stage</th>
                   <th className="py-3 px-5">Police Authority</th>
                 </tr>
               </thead>
@@ -470,7 +488,7 @@ export default function GlobalAmaDispatchPage() {
 
                       <td className="py-3.5 px-5">
                         <span className="px-2.5 py-1 rounded-full bg-slate-100 text-slate-700 text-[11px] font-bold">
-                          Step {c.currentStep || 1}
+                          Notice {c.dispatchStep || 1}
                         </span>
                       </td>
 
