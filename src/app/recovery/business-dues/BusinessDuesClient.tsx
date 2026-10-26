@@ -91,9 +91,9 @@ const articleSchema = {
   "description": "Exhaustive legal guide on recovering outstanding business debts, commercial invoices, MSME dues, and contractor payments in India.",
   "image": "https://www.legalrecovery.in/og-business-dues.png",
   "author": {
-    "@type": "Organization",
-    "name": "Team LegalRecovery",
-    "url": "https://www.legalrecovery.in"
+    "@type": "Person",
+    "name": "Anuj Anand Malik",
+    "url": "https://www.linkedin.com/in/iamanujmalik/"
   },
   "publisher": {
     "@type": "Organization",

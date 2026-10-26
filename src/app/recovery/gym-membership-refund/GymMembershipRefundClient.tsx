@@ -119,9 +119,9 @@ const articleSchema = {
   "description": "Comprehensive guide on recovering gym and fitness centre membership refunds in India. Learn about consumer rights, unfair contract clauses, legal notice procedures, and consumer court remedies.",
   "image": "https://www.legalrecovery.in/og-gym-refund.png",
   "author": {
-    "@type": "Organization",
-    "name": "Team LegalRecovery",
-    "url": "https://www.legalrecovery.in"
+    "@type": "Person",
+    "name": "Anuj Anand Malik",
+    "url": "https://www.linkedin.com/in/iamanujmalik/"
   },
   "publisher": {
     "@type": "Organization",

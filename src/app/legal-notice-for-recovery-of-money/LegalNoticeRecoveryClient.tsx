@@ -92,9 +92,9 @@ const articleSchema = {
   "description": "A comprehensive legal guide on how to draft and send a legal notice for the recovery of money under Indian law. Learn about Order 37 CPC, Section 138 NI Act, and electronic evidence.",
   "image": "https://www.legalrecovery.in/og-money-recovery-notice.png",
   "author": {
-    "@type": "Organization",
-    "name": "Team LegalRecovery",
-    "url": "https://www.legalrecovery.in"
+    "@type": "Person",
+    "name": "Anuj Anand Malik",
+    "url": "https://www.linkedin.com/in/iamanujmalik/"
   },
   "publisher": {
     "@type": "Organization",

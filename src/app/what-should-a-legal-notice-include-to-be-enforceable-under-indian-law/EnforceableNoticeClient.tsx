@@ -77,9 +77,9 @@ const articleSchema = {
   "description": "A comprehensive guide outlining the essential statutory components, factual structures, and delivery forensics required to draft a legally binding and enforceable legal notice in India.",
   "image": "https://www.legalrecovery.in/og-enforceable-notice.png",
   "author": {
-    "@type": "Organization",
-    "name": "Team LegalRecovery",
-    "url": "https://www.legalrecovery.in"
+    "@type": "Person",
+    "name": "Anuj Anand Malik",
+    "url": "https://www.linkedin.com/in/iamanujmalik/"
   },
   "publisher": {
     "@type": "Organization",

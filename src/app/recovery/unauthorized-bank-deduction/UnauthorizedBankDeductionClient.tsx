@@ -83,9 +83,9 @@ const articleSchema = {
   "description": "Comprehensive legal and regulatory guide to recovering funds lost to unauthorized bank deductions, failed auto-debit mandates, and hidden charges in India. Learn about the RBI E-Mandate framework, NACH disputes, TAT compensation rules, and RBI Ombudsman cms.rbi.org.in procedures.",
   "image": "https://www.legalrecovery.in/og-bank-deduction-recovery.png",
   "author": {
-    "@type": "Organization",
-    "name": "Team LegalRecovery",
-    "url": "https://www.legalrecovery.in"
+    "@type": "Person",
+    "name": "Anuj Anand Malik",
+    "url": "https://www.linkedin.com/in/iamanujmalik/"
   },
   "publisher": {
     "@type": "Organization",

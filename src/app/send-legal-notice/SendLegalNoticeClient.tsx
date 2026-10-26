@@ -91,9 +91,9 @@ const articleSchema = {
   "description": "Learn how to send a legal notice online in India. Understand statutory notices, response timelines, the doctrine of adverse inference, and ODR integrations.",
   "image": "https://www.legalrecovery.in/og-send-legal-notice-portal.png",
   "author": {
-    "@type": "Organization",
-    "name": "Team LegalRecovery",
-    "url": "https://www.legalrecovery.in"
+    "@type": "Person",
+    "name": "Anuj Anand Malik",
+    "url": "https://www.linkedin.com/in/iamanujmalik/"
   },
   "publisher": {
     "@type": "Organization",

@@ -101,7 +101,7 @@ export async function POST(req: NextRequest) {
       metaTitle: metaTitle || title,
       metaDescription: metaDescription || "",
       publishedAt: publishedAt || new Date().toISOString(),
-      author: author || (session.user?.name || "Admin"),
+      author: "Anuj Anand Malik",
       coverImage: {
         gridFsId: coverImage.gridFsId,
         filename: coverImage.filename || "image.jpg",

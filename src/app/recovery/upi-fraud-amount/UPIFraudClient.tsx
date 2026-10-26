@@ -83,9 +83,9 @@ const articleSchema = {
   "description": "Exhaustive legal blueprint on recovering funds lost to UPI fraud in India. Learn about the NPCI dispute redressal mechanism, RBI customer liability rules, cybercrime cell filings, and court-ordered fund releases.",
   "image": "https://www.legalrecovery.in/og-upi-recovery.png",
   "author": {
-    "@type": "Organization",
-    "name": "Team LegalRecovery",
-    "url": "https://www.legalrecovery.in"
+    "@type": "Person",
+    "name": "Anuj Anand Malik",
+    "url": "https://www.linkedin.com/in/iamanujmalik/"
   },
   "publisher": {
     "@type": "Organization",

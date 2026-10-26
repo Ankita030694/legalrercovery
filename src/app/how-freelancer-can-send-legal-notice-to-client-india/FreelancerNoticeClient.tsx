@@ -77,9 +77,9 @@ const articleSchema = {
   "description": "A comprehensive, step-by-step guide explaining how independent contractors in India can draft, serve, and enforce legal notices to recover unpaid payments from clients.",
   "image": "https://www.legalrecovery.in/og-send-notice-freelancer.png",
   "author": {
-    "@type": "Organization",
-    "name": "Team LegalRecovery",
-    "url": "https://www.legalrecovery.in"
+    "@type": "Person",
+    "name": "Anuj Anand Malik",
+    "url": "https://www.linkedin.com/in/iamanujmalik/"
   },
   "publisher": {
     "@type": "Organization",

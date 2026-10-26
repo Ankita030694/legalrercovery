@@ -103,9 +103,9 @@ const articleSchema = {
   "description": "Comprehensive step-by-step guide on filing B2B payment recovery cases on the MSME Samadhan portal. Learn about Udyam login, document checklist, and MSEFC status workflow.",
   "image": "https://www.legalrecovery.in/og-msme-samadhan.png",
   "author": {
-    "@type": "Organization",
-    "name": "Team LegalRecovery",
-    "url": "https://www.legalrecovery.in"
+    "@type": "Person",
+    "name": "Anuj Anand Malik",
+    "url": "https://www.linkedin.com/in/iamanujmalik/"
   },
   "publisher": {
     "@type": "Organization",

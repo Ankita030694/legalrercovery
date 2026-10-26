@@ -91,9 +91,9 @@ const articleSchema = {
   "description": "Comprehensive legal drafts and templates for money recovery in India. View sample legal notices for friendly loans, B2B invoices, and freelancer fees.",
   "image": "https://www.legalrecovery.in/og-money-recovery-sample.png",
   "author": {
-    "@type": "Organization",
-    "name": "Team LegalRecovery",
-    "url": "https://www.legalrecovery.in"
+    "@type": "Person",
+    "name": "Anuj Anand Malik",
+    "url": "https://www.linkedin.com/in/iamanujmalik/"
   },
   "publisher": {
     "@type": "Organization",

@@ -122,9 +122,9 @@ const articleSchema = {
   "description": "Exhaustive legal guide on recovering booking amounts, ticket costs, convenience fees, and venue advances for cancelled or postponed events in India under consumer and contract laws.",
   "image": "https://www.legalrecovery.in/og-event-refund.png",
   "author": {
-    "@type": "Organization",
-    "name": "Team LegalRecovery",
-    "url": "https://www.legalrecovery.in"
+    "@type": "Person",
+    "name": "Anuj Anand Malik",
+    "url": "https://www.linkedin.com/in/iamanujmalik/"
   },
   "publisher": {
     "@type": "Organization",

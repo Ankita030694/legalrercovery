@@ -12,7 +12,7 @@ export const metadata: Metadata = {
     description: 'Protect your consumer rights. Learn how to legally demand your pending flight refund when an airline or travel agency refuses to process it.',
     url: 'https://legalrecovery.in/send-a-legal-notice/airline-refund-not-received',
     type: 'article',
-    authors: ['Advocate Aman Chawla'],
+    authors: ['Anuj Anand Malik'],
     publishedTime: '2024-03-14T00:00:00Z',
     modifiedTime: new Date().toISOString(),
     images: [

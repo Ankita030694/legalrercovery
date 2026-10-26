@@ -21,8 +21,8 @@ const authorListSchema = {
       "position": 1,
       "item": {
         "@type": "Person",
-        "name": "Advocate Aman Chawla",
-        "url": "https://legalrecovery.in/authors/advocate-aman-chawla"
+        "name": "Anuj Anand Malik",
+        "url": "https://www.linkedin.com/in/iamanujmalik/"
       }
     },
     {
@@ -69,25 +69,27 @@ export default function AuthorsIndexPage() {
 
         <section className="grid grid-cols-1 md:grid-cols-2 gap-8">
           
-          {/* Author 1: Aman Chawla */}
+          {/* Author 1: Anuj Anand Malik */}
           <div className="bg-white rounded-3xl shadow-sm border border-slate-100 overflow-hidden flex flex-col hover:border-slate-300 transition-colors">
             <div className="p-8 pb-0">
-              <div className="w-24 h-24 bg-slate-800 rounded-full flex items-center justify-center mb-6 border-4 border-slate-100 shadow-md">
-                <span className="text-3xl font-black text-slate-500">AC</span>
+              <div className="w-24 h-24 bg-slate-800 rounded-full flex items-center justify-center mb-6 border-4 border-slate-100 shadow-md overflow-hidden">
+                <img src="/anujbhiya.png" alt="Anuj Anand Malik" className="w-full h-full object-cover" />
               </div>
-              <h2 className="text-2xl font-black text-slate-900 mb-1">Advocate Aman Chawla</h2>
-              <p className="text-[#DC2626] font-bold text-xs tracking-widest uppercase mb-4">Senior Consumer Law Expert</p>
+              <h2 className="text-2xl font-black text-slate-900 mb-1">Anuj Anand Malik</h2>
+              <p className="text-[#DC2626] font-bold text-xs tracking-widest uppercase mb-4">Founder, AMA Legal Solutions</p>
               <p className="text-slate-650 leading-relaxed text-sm mb-6">
-                With over 12 years of specialized litigation experience, Advocate Aman Chawla leads the Consumer Protection desk. He has established significant legal precedents in holding e-commerce giants and real estate developers accountable.
+                Anuj Anand Malik, Founder of AMA Legal Solutions, is a trusted advocate, loan settlement expert, legal advisor, and banking lawyer. With over a decade of experience in loan settlement, corporate law, financial disputes, and compliance, he leads a result-driven law firm based in India that helps individuals, startups, and businesses achieve legal and financial stability.
               </p>
             </div>
             <div className="mt-auto p-8 pt-0">
-              <Link 
-                href="/authors/advocate-aman-chawla" 
+              <a 
+                href="https://www.linkedin.com/in/iamanujmalik/"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="inline-block bg-[#111827] text-white font-bold py-3 px-6 rounded-xl hover:bg-slate-800 transition-colors w-full text-center text-sm"
               >
-                View Full Profile & Articles
-              </Link>
+                Connect on LinkedIn
+              </a>
             </div>
           </div>
 

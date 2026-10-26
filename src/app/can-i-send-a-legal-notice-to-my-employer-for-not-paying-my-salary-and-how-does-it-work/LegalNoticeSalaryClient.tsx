@@ -131,9 +131,9 @@ const articleSchema = {
   "description": "Exhaustive legal guide on how to draft, deliver, and enforce a salary recovery legal notice to an employer in India under labor codes and contract laws.",
   "image": "https://www.legalrecovery.in/og-notice-salary.png",
   "author": {
-    "@type": "Organization",
-    "name": "Team LegalRecovery",
-    "url": "https://www.legalrecovery.in"
+    "@type": "Person",
+    "name": "Anuj Anand Malik",
+    "url": "https://www.linkedin.com/in/iamanujmalik/"
   },
   "publisher": {
     "@type": "Organization",

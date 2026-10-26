@@ -131,9 +131,9 @@ const articleSchema = {
   "description": "Comprehensive legal guide on drafting, signing, and serving a legal notice yourself (DIY) online or offline in India without hiring an advocate.",
   "image": "https://www.legalrecovery.in/og-diy-notice.png",
   "author": {
-    "@type": "Organization",
-    "name": "Team LegalRecovery",
-    "url": "https://www.legalrecovery.in"
+    "@type": "Person",
+    "name": "Anuj Anand Malik",
+    "url": "https://www.linkedin.com/in/iamanujmalik/"
   },
   "publisher": {
     "@type": "Organization",

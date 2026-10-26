@@ -91,9 +91,9 @@ const articleSchema = {
   "description": "Exhaustive legal guide on recovering unpaid overtime wages, double rate calculations, and filing labor court claims in India.",
   "image": "https://www.legalrecovery.in/og-pending-overtime-payment.png",
   "author": {
-    "@type": "Organization",
-    "name": "Team LegalRecovery",
-    "url": "https://www.legalrecovery.in"
+    "@type": "Person",
+    "name": "Anuj Anand Malik",
+    "url": "https://www.linkedin.com/in/iamanujmalik/"
   },
   "publisher": {
     "@type": "Organization",

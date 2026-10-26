@@ -131,9 +131,9 @@ const articleSchema = {
   "description": "Exhaustive legal guide on the validity, process, and court guidelines of serving legal notices online in India using WhatsApp, email, and digital platforms under BSA 2023.",
   "image": "https://www.legalrecovery.in/og-online-delivery.png",
   "author": {
-    "@type": "Organization",
-    "name": "Team LegalRecovery",
-    "url": "https://www.legalrecovery.in"
+    "@type": "Person",
+    "name": "Anuj Anand Malik",
+    "url": "https://www.linkedin.com/in/iamanujmalik/"
   },
   "publisher": {
     "@type": "Organization",

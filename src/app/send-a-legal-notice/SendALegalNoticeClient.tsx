@@ -91,9 +91,9 @@ const articleSchema = {
   "description": "Exhaustive guide on sending legal notices under CPC Section 80, NI Act Section 138, and TPA Section 106 in India. Learn about drafting, digital tracking, and ODR.",
   "image": "https://www.legalrecovery.in/og-send-legal-notice.png",
   "author": {
-    "@type": "Organization",
-    "name": "Team LegalRecovery",
-    "url": "https://www.legalrecovery.in"
+    "@type": "Person",
+    "name": "Anuj Anand Malik",
+    "url": "https://www.linkedin.com/in/iamanujmalik/"
   },
   "publisher": {
     "@type": "Organization",

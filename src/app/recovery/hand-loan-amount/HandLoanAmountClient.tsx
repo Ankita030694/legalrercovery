@@ -83,9 +83,9 @@ const articleSchema = {
   "description": "Comprehensive legal guide on recovering hand loans given on trust without written contracts in India. Learn about legal notices, Order 37 summary suits, and cheque bounce cases.",
   "image": "https://www.legalrecovery.in/og-hand-loan-recovery.png",
   "author": {
-    "@type": "Organization",
-    "name": "Team LegalRecovery",
-    "url": "https://www.legalrecovery.in"
+    "@type": "Person",
+    "name": "Anuj Anand Malik",
+    "url": "https://www.linkedin.com/in/iamanujmalik/"
   },
   "publisher": {
     "@type": "Organization",

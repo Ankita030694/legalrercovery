@@ -88,8 +88,9 @@ const articleSchema = {
   "description": "Learn the DGCA flight cancellation refund rules and how to draft a joint legal notice to recover your ticket refund from travel agents and airlines in India.",
   "image": "https://www.legalrecovery.in/og-airline-refund.png",
   "author": {
-    "@type": "Organization",
-    "name": "LegalRecovery"
+    "@type": "Person",
+    "name": "Anuj Anand Malik",
+    "url": "https://www.linkedin.com/in/iamanujmalik/"
   },
   "publisher": {
     "@type": "Organization",

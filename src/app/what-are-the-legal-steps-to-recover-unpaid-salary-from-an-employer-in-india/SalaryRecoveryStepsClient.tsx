@@ -135,9 +135,9 @@ const articleSchema = {
   "description": "Exhaustive legal step-by-step guide to recovering unpaid salary, FNF dues, and delayed wages from employers in India under labor codes, Shops Act, and civil recovery suits.",
   "image": "https://www.legalrecovery.in/og-salary-steps.png",
   "author": {
-    "@type": "Organization",
-    "name": "Team LegalRecovery",
-    "url": "https://www.legalrecovery.in"
+    "@type": "Person",
+    "name": "Anuj Anand Malik",
+    "url": "https://www.linkedin.com/in/iamanujmalik/"
   },
   "publisher": {
     "@type": "Organization",

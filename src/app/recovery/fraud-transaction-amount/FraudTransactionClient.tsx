@@ -83,9 +83,9 @@ const articleSchema = {
   "description": "Comprehensive legal guide on recovering lost money from banking fraud, UPI scams, and unauthorized card transactions. Learn about RBI guidelines, cyber crime cell reporting, and legal notice actions.",
   "image": "https://www.legalrecovery.in/og-fraud-recovery.png",
   "author": {
-    "@type": "Organization",
-    "name": "Team LegalRecovery",
-    "url": "https://www.legalrecovery.in"
+    "@type": "Person",
+    "name": "Anuj Anand Malik",
+    "url": "https://www.linkedin.com/in/iamanujmalik/"
   },
   "publisher": {
     "@type": "Organization",

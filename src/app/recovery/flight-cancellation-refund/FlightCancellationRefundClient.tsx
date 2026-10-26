@@ -91,9 +91,9 @@ const articleSchema = {
   "description": "Comprehensive legal guide on recovering wrongfully denied flight cancellation refunds in India. Covers DGCA CAR Section 3 regulations, the 2026 credit shell ban, AirSewa complaints, OTA disputes, denied boarding compensation, Montreal Convention, and Consumer Forum remedies.",
   "image": "https://www.legalrecovery.in/og-flight-cancellation-refund.png",
   "author": {
-    "@type": "Organization",
-    "name": "Team LegalRecovery",
-    "url": "https://www.legalrecovery.in"
+    "@type": "Person",
+    "name": "Anuj Anand Malik",
+    "url": "https://www.linkedin.com/in/iamanujmalik/"
   },
   "publisher": {
     "@type": "Organization",

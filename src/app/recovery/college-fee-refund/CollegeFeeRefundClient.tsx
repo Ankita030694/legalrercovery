@@ -73,7 +73,11 @@ const articleSchema = {
   "headline": "College or University Not Refunding Fees? Your Legal Rights and UGC-Backed Recovery Options in India",
   "description": "Comprehensive guide on recovering college and university admission fees in India. Covers UGC mandatory refund slabs, AICTE norms, original document withholding, UGC e-Samadhan portal, deemed universities, management quota fees, and consumer court remedies.",
   "image": "https://www.legalrecovery.in/og-college-fee-refund.png",
-  "author": { "@type": "Organization", "name": "Team LegalRecovery", "url": "https://www.legalrecovery.in" },
+  "author": {
+    "@type": "Person",
+    "name": "Anuj Anand Malik",
+    "url": "https://www.linkedin.com/in/iamanujmalik/"
+  },
   "publisher": { "@type": "Organization", "name": "LegalRecovery", "logo": { "@type": "ImageObject", "url": "https://www.legalrecovery.in/logo.png" } },
   "datePublished": "2026-06-09",
   "dateModified": "2026-06-09"

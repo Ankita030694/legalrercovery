@@ -91,9 +91,9 @@ const articleSchema = {
   "description": "Exhaustive legal guide on recovering outstanding retained salaries, withheld retention bonuses, and deferred compensation in India.",
   "image": "https://www.legalrecovery.in/og-retained-salary.png",
   "author": {
-    "@type": "Organization",
-    "name": "Team LegalRecovery",
-    "url": "https://www.legalrecovery.in"
+    "@type": "Person",
+    "name": "Anuj Anand Malik",
+    "url": "https://www.linkedin.com/in/iamanujmalik/"
   },
   "publisher": {
     "@type": "Organization",

@@ -83,9 +83,9 @@ const articleSchema = {
   "description": "Exhaustive legal guide on recovering scammed money from online trading scams, task frauds, and banking phishing. Learn the process of cyber cell reporting and court-ordered fund releases.",
   "image": "https://www.legalrecovery.in/og-cyber-fraud.png",
   "author": {
-    "@type": "Organization",
-    "name": "Team LegalRecovery",
-    "url": "https://www.legalrecovery.in"
+    "@type": "Person",
+    "name": "Anuj Anand Malik",
+    "url": "https://www.linkedin.com/in/iamanujmalik/"
   },
   "publisher": {
     "@type": "Organization",

@@ -83,9 +83,9 @@ const articleSchema = {
   "description": "Comprehensive legal guide on recovering personal or friendly loans given to friends, relatives, and colleagues in India. Explore civil and criminal remedies.",
   "image": "https://www.legalrecovery.in/og-friendly-loan-recovery.png",
   "author": {
-    "@type": "Organization",
-    "name": "Team LegalRecovery",
-    "url": "https://www.legalrecovery.in"
+    "@type": "Person",
+    "name": "Anuj Anand Malik",
+    "url": "https://www.linkedin.com/in/iamanujmalik/"
   },
   "publisher": {
     "@type": "Organization",

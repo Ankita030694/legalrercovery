@@ -105,8 +105,8 @@ const articleSchema = {
   "image": "https://www.legalrecovery.in/og-interior-designer-refund.png",
   "author": {
     "@type": "Person",
-    "name": "Advocate Aman Chawla",
-    "url": "https://www.legalrecovery.in/authors/advocate-aman-chawla"
+    "name": "Anuj Anand Malik",
+    "url": "https://www.linkedin.com/in/iamanujmalik/"
   },
   "reviewedBy": {
     "@type": "Person",
@@ -251,7 +251,7 @@ export default function InteriorDesignerRefundClient() {
             <article className="min-w-0 bg-white p-6 md:p-12 rounded-3xl shadow-sm space-y-12 border border-slate-100">
               {/* Meta details */}
               <div className="flex flex-wrap items-center text-xs sm:text-sm text-slate-500 gap-3 border-b border-slate-100 pb-4">
-                <span>Written by <Link href="/authors/advocate-aman-chawla" className="font-semibold text-[#DC2626] hover:underline">Advocate Aman Chawla</Link></span>
+                <span>Written by <a href="https://www.linkedin.com/in/iamanujmalik/" target="_blank" rel="noopener noreferrer" className="font-semibold text-[#DC2626] hover:underline">Anuj Anand Malik</a></span>
                 <span className="hidden sm:inline">•</span>
                 <span>Reviewed by <Link href="/authors/advocate-sneha-sharma" className="font-semibold text-[#DC2626] hover:underline">Advocate Sneha Sharma</Link></span>
               </div>

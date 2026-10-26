@@ -83,9 +83,9 @@ const articleSchema = {
   "description": "Exhaustive legal guide on recovering unpaid non-salary dues, including vested ESOPs, sales commissions, relocation allowances, maternity benefits, and independent retainer fees.",
   "image": "https://www.legalrecovery.in/og-outstanding-dues.png",
   "author": {
-    "@type": "Organization",
-    "name": "Team LegalRecovery",
-    "url": "https://www.legalrecovery.in"
+    "@type": "Person",
+    "name": "Anuj Anand Malik",
+    "url": "https://www.linkedin.com/in/iamanujmalik/"
   },
   "publisher": {
     "@type": "Organization",

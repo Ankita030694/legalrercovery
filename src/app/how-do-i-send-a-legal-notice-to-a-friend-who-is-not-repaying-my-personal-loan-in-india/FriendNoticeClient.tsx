@@ -77,9 +77,9 @@ const articleSchema = {
   "description": "Learn the legal steps to serve a formal legal notice to a friend for personal loan recovery in India. Understand evidence requirements, limitation rules, and court paths.",
   "image": "https://www.legalrecovery.in/og-friend-loan-notice.png",
   "author": {
-    "@type": "Organization",
-    "name": "Team LegalRecovery",
-    "url": "https://www.legalrecovery.in"
+    "@type": "Person",
+    "name": "Anuj Anand Malik",
+    "url": "https://www.linkedin.com/in/iamanujmalik/"
   },
   "publisher": {
     "@type": "Organization",

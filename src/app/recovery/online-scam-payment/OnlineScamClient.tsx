@@ -83,9 +83,9 @@ const articleSchema = {
   "description": "Exhaustive legal blueprint on recovering scammed payments. Detailed analysis of credit card chargeback rights, RBI customer protection rules, IT Act intermediary liability, and consumer court filings.",
   "image": "https://www.legalrecovery.in/og-scam-recovery.png",
   "author": {
-    "@type": "Organization",
-    "name": "Team LegalRecovery",
-    "url": "https://www.legalrecovery.in"
+    "@type": "Person",
+    "name": "Anuj Anand Malik",
+    "url": "https://www.linkedin.com/in/iamanujmalik/"
   },
   "publisher": {
     "@type": "Organization",

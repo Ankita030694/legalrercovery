@@ -12,7 +12,7 @@ export const metadata: Metadata = {
     description: 'Fight back against deceptive business practices. Complete legal guide to filing an unfair trade practice complaint and demanding compensation under the Consumer Protection Act.',
     url: 'https://www.legalrecovery.in/send-a-legal-notice/unfair-trade-practice-complaint',
     type: 'article',
-    authors: ['Advocate Aman Chawla'],
+    authors: ['Anuj Anand Malik'],
     publishedTime: new Date().toISOString(),
     modifiedTime: new Date().toISOString(),
     images: [

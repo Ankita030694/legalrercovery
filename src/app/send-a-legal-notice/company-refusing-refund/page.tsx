@@ -12,7 +12,7 @@ export const metadata: Metadata = {
     description: 'Protect your consumer rights. Learn how to legally demand a refund when a company refuses to return your money.',
     url: 'https://www.legalrecovery.in/send-a-legal-notice/company-refusing-refund',
     type: 'article',
-    authors: ['Advocate Aman Chawla'],
+    authors: ['Anuj Anand Malik'],
     publishedTime: new Date().toISOString(),
     modifiedTime: new Date().toISOString(),
     images: [

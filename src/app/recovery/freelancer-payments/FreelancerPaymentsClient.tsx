@@ -91,9 +91,9 @@ const articleSchema = {
   "description": "Exhaustive legal guide on recovering outstanding freelance project payments, gig worker fees, and independent contractor dues in India.",
   "image": "https://www.legalrecovery.in/og-freelancer-payments.png",
   "author": {
-    "@type": "Organization",
-    "name": "Team LegalRecovery",
-    "url": "https://www.legalrecovery.in"
+    "@type": "Person",
+    "name": "Anuj Anand Malik",
+    "url": "https://www.linkedin.com/in/iamanujmalik/"
   },
   "publisher": {
     "@type": "Organization",

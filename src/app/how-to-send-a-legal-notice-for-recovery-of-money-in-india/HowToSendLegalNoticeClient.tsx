@@ -91,9 +91,9 @@ const articleSchema = {
   "description": "A comprehensive, step-by-step practical guide on how to draft, service, and follow up on a legal notice for money recovery under Indian law. Learn about evidence collection and tracking.",
   "image": "https://www.legalrecovery.in/og-how-to-send-notice.png",
   "author": {
-    "@type": "Organization",
-    "name": "Team LegalRecovery",
-    "url": "https://www.legalrecovery.in"
+    "@type": "Person",
+    "name": "Anuj Anand Malik",
+    "url": "https://www.linkedin.com/in/iamanujmalik/"
   },
   "publisher": {
     "@type": "Organization",

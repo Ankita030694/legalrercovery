@@ -91,9 +91,9 @@ const articleSchema = {
   "description": "Exhaustive legal guide on recovering outstanding B2B sales commissions, brokerage dues, and channel partner payouts in India.",
   "image": "https://www.legalrecovery.in/og-unpaid-commissions.png",
   "author": {
-    "@type": "Organization",
-    "name": "Team LegalRecovery",
-    "url": "https://www.legalrecovery.in"
+    "@type": "Person",
+    "name": "Anuj Anand Malik",
+    "url": "https://www.linkedin.com/in/iamanujmalik/"
   },
   "publisher": {
     "@type": "Organization",

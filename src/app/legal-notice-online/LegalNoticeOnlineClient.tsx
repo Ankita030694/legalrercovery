@@ -91,9 +91,9 @@ const articleSchema = {
   "description": "Discover how technology-enabled legal notice portals simplify case submission, advocate drafting, e-signing, and ODR integrations under modern Indian laws.",
   "image": "https://www.legalrecovery.in/og-legal-notice-online.png",
   "author": {
-    "@type": "Organization",
-    "name": "Team LegalRecovery",
-    "url": "https://www.legalrecovery.in"
+    "@type": "Person",
+    "name": "Anuj Anand Malik",
+    "url": "https://www.linkedin.com/in/iamanujmalik/"
   },
   "publisher": {
     "@type": "Organization",

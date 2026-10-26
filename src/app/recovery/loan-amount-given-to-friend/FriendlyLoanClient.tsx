@@ -103,9 +103,9 @@ const articleSchema = {
   "description": "Comprehensive legal guide on recovering personal loans given to friends, relatives, or acquaintances in India through legal notices, promissory note enforcement, Order 37 summary suits, cheque bounce cases, and settlement strategies.",
   "image": "https://www.legalrecovery.in/og-friendly-loan.png",
   "author": {
-    "@type": "Organization",
-    "name": "Team LegalRecovery",
-    "url": "https://www.legalrecovery.in"
+    "@type": "Person",
+    "name": "Anuj Anand Malik",
+    "url": "https://www.linkedin.com/in/iamanujmalik/"
   },
   "publisher": {
     "@type": "Organization",

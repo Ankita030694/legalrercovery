@@ -75,7 +75,11 @@ const articleSchema = {
   "headline": "Flight Compensation Claim India: How to Recover Money for Delays, Denied Boarding, Downgrading, Tarmac Delays & Lost Baggage",
   "description": "Comprehensive legal guide on claiming compensation from airlines in India for flight delays, denied boarding due to overbooking, involuntary downgrading, tarmac delays, lost/damaged baggage, and missed connections. Covers DGCA rules, Montreal Convention, Carriage by Air Act, and Consumer Protection Act remedies.",
   "image": "https://www.legalrecovery.in/og-flight-compensation.png",
-  "author": { "@type": "Organization", "name": "Team LegalRecovery", "url": "https://www.legalrecovery.in" },
+  "author": {
+    "@type": "Person",
+    "name": "Anuj Anand Malik",
+    "url": "https://www.linkedin.com/in/iamanujmalik/"
+  },
   "publisher": { "@type": "Organization", "name": "LegalRecovery", "logo": { "@type": "ImageObject", "url": "https://www.legalrecovery.in/logo.png" } },
   "datePublished": "2026-06-08",
   "dateModified": "2026-06-08"

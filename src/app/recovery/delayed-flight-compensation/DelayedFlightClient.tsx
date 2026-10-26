@@ -67,7 +67,11 @@ const articleSchema = {
   "headline": "Delayed Flight Compensation India: Recover Dues & Claim Damages Under DGCA Rules",
   "description": "Comprehensive legal guide on recovering compensation and claiming damages for delayed flights in India. Know your passenger rights under DGCA Civil Aviation Requirements, the Montreal Convention, and Consumer Protection laws.",
   "image": "https://www.legalrecovery.in/og-delayed-flight.png",
-  "author": { "@type": "Organization", "name": "Team LegalRecovery", "url": "https://www.legalrecovery.in" },
+  "author": {
+    "@type": "Person",
+    "name": "Anuj Anand Malik",
+    "url": "https://www.linkedin.com/in/iamanujmalik/"
+  },
   "publisher": { "@type": "Organization", "name": "LegalRecovery", "logo": { "@type": "ImageObject", "url": "https://www.legalrecovery.in/logo.png" } },
   "datePublished": "2026-06-08",
   "dateModified": "2026-06-08"

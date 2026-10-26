@@ -88,8 +88,9 @@ const articleSchema = {
   "description": "Learn how to fight arbitrary maintenance charges, illegal transfer fees, and harassment by RWA management committees. Draft a legal notice to your housing society.",
   "image": "https://www.legalrecovery.in/og-housing-society-notice.png",
   "author": {
-    "@type": "Organization",
-    "name": "LegalRecovery"
+    "@type": "Person",
+    "name": "Anuj Anand Malik",
+    "url": "https://www.linkedin.com/in/iamanujmalik/"
   },
   "publisher": {
     "@type": "Organization",

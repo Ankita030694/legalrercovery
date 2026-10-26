@@ -123,9 +123,9 @@ const articleSchema = {
   "description": "Comprehensive legal guide on recovering withheld FNF settlements, unpaid gratuity, leave encashment, and exit clearance dues under Indian labor codes and acts.",
   "image": "https://www.legalrecovery.in/og-fnf-recovery.png",
   "author": {
-    "@type": "Organization",
-    "name": "Team LegalRecovery",
-    "url": "https://www.legalrecovery.in"
+    "@type": "Person",
+    "name": "Anuj Anand Malik",
+    "url": "https://www.linkedin.com/in/iamanujmalik/"
   },
   "publisher": {
     "@type": "Organization",

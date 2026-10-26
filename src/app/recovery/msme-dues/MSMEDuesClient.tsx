@@ -103,9 +103,9 @@ const articleSchema = {
   "description": "Exhaustive legal guide on MSME payment recovery under MSMED Act 2006, Section 15 & 16 interest penalties, Samadhaan portal filing, and MSEFC arbitration.",
   "image": "https://www.legalrecovery.in/og-msme-dues.png",
   "author": {
-    "@type": "Organization",
-    "name": "Team LegalRecovery",
-    "url": "https://www.legalrecovery.in"
+    "@type": "Person",
+    "name": "Anuj Anand Malik",
+    "url": "https://www.linkedin.com/in/iamanujmalik/"
   },
   "publisher": {
     "@type": "Organization",

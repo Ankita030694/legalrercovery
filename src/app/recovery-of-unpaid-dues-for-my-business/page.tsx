@@ -12,7 +12,7 @@ export const metadata: Metadata = {
     description: 'Statutory remedies and legal notice strategies to recover outstanding commercial dues, B2B unpaid invoices, and vendor defaults under Indian law.',
     url: 'https://legalrecovery.in/recovery-of-unpaid-dues-for-my-business',
     type: 'article',
-    authors: ['Advocate Aman Chawla'],
+    authors: ['Anuj Anand Malik'],
     publishedTime: '2024-03-20T00:00:00Z',
     modifiedTime: new Date().toISOString(),
     images: [

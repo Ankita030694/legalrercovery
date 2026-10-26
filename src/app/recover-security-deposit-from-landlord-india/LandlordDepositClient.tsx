@@ -77,9 +77,9 @@ const articleSchema = {
   "description": "Discover the legal steps, rights, and options for tenants in India to recover unpaid rental security deposits. Learn about Model Tenancy Act rules, Rent Courts, and CPC Order 37.",
   "image": "https://www.legalrecovery.in/og-landlord-deposit.png",
   "author": {
-    "@type": "Organization",
-    "name": "Team LegalRecovery",
-    "url": "https://www.legalrecovery.in"
+    "@type": "Person",
+    "name": "Anuj Anand Malik",
+    "url": "https://www.linkedin.com/in/iamanujmalik/"
   },
   "publisher": {
     "@type": "Organization",

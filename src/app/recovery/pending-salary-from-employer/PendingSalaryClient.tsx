@@ -122,9 +122,9 @@ const articleSchema = {
   "description": "Exhaustive legal guide on recovering pending salaries, delayed monthly wages, unilateral salary cuts, and forced unpaid leaves in India under labor codes and acts.",
   "image": "https://www.legalrecovery.in/og-pending-salary.png",
   "author": {
-    "@type": "Organization",
-    "name": "Team LegalRecovery",
-    "url": "https://www.legalrecovery.in"
+    "@type": "Person",
+    "name": "Anuj Anand Malik",
+    "url": "https://www.linkedin.com/in/iamanujmalik/"
   },
   "publisher": {
     "@type": "Organization",

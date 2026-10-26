@@ -12,7 +12,7 @@ export const metadata: Metadata = {
     description: 'Protect your consumer rights. Learn how to legally demand a refund or replacement when a seller delivers the wrong product.',
     url: 'https://www.legalrecovery.in/send-a-legal-notice/wrong-product-delivered',
     type: 'article',
-    authors: ['Advocate Aman Chawla'],
+    authors: ['Anuj Anand Malik'],
     publishedTime: '2024-03-14T00:00:00Z',
     modifiedTime: new Date().toISOString(),
     images: [

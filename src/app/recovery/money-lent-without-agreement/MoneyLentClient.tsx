@@ -83,9 +83,9 @@ const articleSchema = {
   "description": "A comprehensive guide on recovering friendly or unsecured loans given without a contract in India. Discover your legal options under the Contract Act, CPC Order 37, and NI Act.",
   "image": "https://www.legalrecovery.in/og-money-lent-recovery.png",
   "author": {
-    "@type": "Organization",
-    "name": "Team LegalRecovery",
-    "url": "https://www.legalrecovery.in"
+    "@type": "Person",
+    "name": "Anuj Anand Malik",
+    "url": "https://www.linkedin.com/in/iamanujmalik/"
   },
   "publisher": {
     "@type": "Organization",

@@ -91,9 +91,9 @@ const articleSchema = {
   "description": "Exhaustive legal guide on B2B contractor payment recovery, MSME Samadhaan claims, and summary suits under Order 37 CPC in India.",
   "image": "https://www.legalrecovery.in/og-contractor-payment.png",
   "author": {
-    "@type": "Organization",
-    "name": "Team LegalRecovery",
-    "url": "https://www.legalrecovery.in"
+    "@type": "Person",
+    "name": "Anuj Anand Malik",
+    "url": "https://www.linkedin.com/in/iamanujmalik/"
   },
   "publisher": {
     "@type": "Organization",

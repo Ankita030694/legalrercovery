@@ -88,8 +88,9 @@ const articleSchema = {
   "description": "Learn how to challenge landlord deposit deductions in India. Understand tenant rights regarding security deposit painting charges and draft a legal notice.",
   "image": "https://www.legalrecovery.in/og-landlord-deductions.png",
   "author": {
-    "@type": "Organization",
-    "name": "LegalRecovery"
+    "@type": "Person",
+    "name": "Anuj Anand Malik",
+    "url": "https://www.linkedin.com/in/iamanujmalik/"
   },
   "publisher": {
     "@type": "Organization",

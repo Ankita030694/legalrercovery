@@ -70,8 +70,8 @@ const jsonLd = {
       image: [ogImage],
       author: {
         '@type': 'Person',
-        name: 'Advocate Aman Chawla',
-        url: 'https://legalrecovery.in/authors/advocate-aman-chawla',
+        name: 'Anuj Anand Malik',
+        url: 'https://www.linkedin.com/in/iamanujmalik/',
       },
       reviewedBy: {
         '@type': 'Person',
@@ -379,12 +379,14 @@ export default function SalaryDeductedDuringNoticePeriodLegalActionIndiaClient()
                   <div className="flex flex-wrap items-center text-xs sm:text-sm text-slate-500 gap-3">
                     <span>
                       Written by{' '}
-                      <Link
-                        href="/authors/advocate-aman-chawla"
+                      <a
+                        href="https://www.linkedin.com/in/iamanujmalik/"
+                        target="_blank"
+                        rel="noopener noreferrer"
                         className="font-semibold text-[#DC2626] hover:underline"
                       >
-                        Advocate Aman Chawla
-                      </Link>
+                        Anuj Anand Malik
+                      </a>
                     </span>
                     <span className="hidden sm:inline">•</span>
                     <span>

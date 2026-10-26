@@ -77,9 +77,9 @@ const articleSchema = {
   "description": "Learn the legal steps to serve a formal legal notice to a landlord for not refunding your security deposit. Understand your rights, drafting rules, and escalation paths in India.",
   "image": "https://www.legalrecovery.in/og-landlord-notice.png",
   "author": {
-    "@type": "Organization",
-    "name": "Team LegalRecovery",
-    "url": "https://www.legalrecovery.in"
+    "@type": "Person",
+    "name": "Anuj Anand Malik",
+    "url": "https://www.linkedin.com/in/iamanujmalik/"
   },
   "publisher": {
     "@type": "Organization",

@@ -3,8 +3,8 @@ import Link from 'next/link';
 import Script from 'next/script';
 
 export const metadata: Metadata = {
-  title: 'Advocate Aman Chawla - Senior Consumer Law Expert | Legal Recovery',
-  description: 'Advocate Aman Chawla is a senior consumer protection lawyer specializing in e-commerce disputes, product liability, and consumer rights litigation across India.',
+  title: 'Anuj Anand Malik - Founder, AMA Legal Solutions | Legal Recovery',
+  description: 'Anuj Anand Malik, Founder of AMA Legal Solutions, is a trusted advocate, loan settlement expert, legal advisor, and banking lawyer.',
   alternates: {
     canonical: 'https://legalrecovery.in/authors/advocate-aman-chawla',
   },
@@ -15,16 +15,16 @@ const personSchema = {
   "@type": "ProfilePage",
   "mainEntity": {
     "@type": "Person",
-    "name": "Advocate Aman Chawla",
-    "jobTitle": "Senior Consumer Law Expert",
+    "name": "Anuj Anand Malik",
+    "jobTitle": "Founder, AMA Legal Solutions",
     "worksFor": {
       "@type": "Organization",
-      "name": "Legal Recovery India"
+      "name": "AMA Legal Solutions"
     },
-    "alumniOf": "Faculty of Law, Delhi University",
-    "description": "Advocate Aman Chawla is a seasoned litigation expert practicing at the National Consumer Disputes Redressal Commission (NCDRC) and District Commissions.",
-    "url": "https://legalrecovery.in/authors/advocate-aman-chawla",
-    "knowsAbout": ["Consumer Protection Law", "E-Commerce Dispute Resolution", "Product Liability", "Unfair Trade Practices"]
+    "description": "Anuj Anand Malik, Founder of AMA Legal Solutions, is a trusted advocate, loan settlement expert, legal advisor, and banking lawyer. With over a decade of experience in loan settlement, corporate law, financial disputes, and compliance, he leads a result-driven law firm based in India that helps individuals, startups, and businesses achieve legal and financial stability.",
+    "url": "https://www.linkedin.com/in/iamanujmalik/",
+    "sameAs": ["https://www.linkedin.com/in/iamanujmalik/"],
+    "knowsAbout": ["Loan Settlement", "Corporate Law", "Financial Disputes", "Consumer Protection Law", "E-Commerce Dispute Resolution"]
   }
 };
 
@@ -41,14 +41,22 @@ export default function AdvocateAmanChawlaPage() {
         <div className="max-w-5xl mx-auto px-4 md:px-8">
           <div className="flex flex-col md:flex-row gap-8 items-center md:items-start">
             <div className="w-32 h-32 md:w-48 md:h-48 bg-slate-800 rounded-full shrink-0 flex items-center justify-center overflow-hidden border-4 border-slate-700 shadow-xl">
-              <span className="text-4xl md:text-6xl font-black text-slate-500">AC</span>
+              <img src="/anujbhiya.png" alt="Anuj Anand Malik" className="w-full h-full object-cover" />
             </div>
             <div className="text-center md:text-left">
-              <h1 className="text-4xl md:text-5xl font-black mb-3">Advocate Aman Chawla</h1>
-              <p className="text-[#DC2626] font-bold text-sm md:text-base tracking-widest uppercase mb-4 bg-red-950/30 inline-block px-4 py-1.5 rounded-full border border-[#DC2626]/20">Senior Consumer Law Expert</p>
-              <p className="text-slate-300 max-w-2xl text-lg leading-relaxed">
-                Leading the Consumer Protection litigation desk at Legal Recovery. Over 12 years of specialized experience fighting e-commerce fraud, real estate delays, and corporate service deficiencies.
+              <h1 className="text-4xl md:text-5xl font-black mb-3">Anuj Anand Malik</h1>
+              <p className="text-[#DC2626] font-bold text-sm md:text-base tracking-widest uppercase mb-4 bg-red-950/30 inline-block px-4 py-1.5 rounded-full border border-[#DC2626]/20">Founder, AMA Legal Solutions</p>
+              <p className="text-slate-300 max-w-2xl text-lg leading-relaxed mb-4">
+                Anuj Anand Malik, Founder of AMA Legal Solutions, is a trusted advocate, loan settlement expert, legal advisor, and banking lawyer. With over a decade of experience in loan settlement, corporate law, financial disputes, and compliance, he leads a result-driven law firm based in India that helps individuals, startups, and businesses achieve legal and financial stability.
               </p>
+              <a
+                href="https://www.linkedin.com/in/iamanujmalik/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-block bg-[#0077b5] text-white font-bold py-2.5 px-6 rounded-xl hover:opacity-90 transition-opacity text-sm"
+              >
+                Connect on LinkedIn
+              </a>
             </div>
           </div>
         </div>
@@ -60,10 +68,10 @@ export default function AdvocateAmanChawlaPage() {
             <h2 className="text-2xl font-black text-slate-900 mb-6 border-b-2 border-[#DC2626] pb-2 inline-block">Professional Biography</h2>
             <div className="prose prose-slate max-w-none text-slate-650 leading-relaxed space-y-4">
               <p>
-                Advocate Aman Chawla is a highly respected litigation expert practicing primarily before the National Consumer Disputes Redressal Commission (NCDRC), State Consumer Disputes Redressal Commissions, and various District Commissions across the country. He has dedicated his career to ensuring that the statutory rights granted under the Consumer Protection Act, 2019, are aggressively upheld against negligent corporations.
+                Anuj Anand Malik, Founder of AMA Legal Solutions, is a trusted advocate, loan settlement expert, legal advisor, and banking lawyer. With over a decade of experience in loan settlement, corporate law, financial disputes, and compliance, he leads a result-driven law firm based in India that helps individuals, startups, and businesses achieve legal and financial stability.
               </p>
               <p>
-                At Legal Recovery India, Advocate Chawla architects complex legal strategies to hold giant e-commerce platforms, builders, insurance companies, and service providers accountable. His approach blends aggressive pre-litigation notice drafting with formidable courtroom advocacy. By meticulously documenting evidence—such as unboxing videos, email trails, and digital receipts—he frequently forces corporate legal departments into out-of-court settlements, saving consumers years of litigation stress.
+                At Legal Recovery India, Anuj Anand Malik architects complex legal strategies to hold giant e-commerce platforms, builders, insurance companies, and service providers accountable. His approach blends aggressive pre-litigation notice drafting with formidable courtroom advocacy. By meticulously documenting evidence—such as unboxing videos, email trails, and digital receipts—he frequently forces corporate legal departments into out-of-court settlements, saving consumers years of litigation stress.
               </p>
               <p>
                 He frequently publishes detailed legal guides and procedural manuals aimed at demystifying Indian law for the common citizen. His commentaries on the liability of marketplace intermediaries and Section 138 of the Negotiable Instruments Act are widely cited by legal tech platforms.

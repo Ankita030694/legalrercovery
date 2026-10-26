@@ -91,9 +91,9 @@ const articleSchema = {
   "description": "Comprehensive guide on how to cancel your apartment booking and recover a full refund under RERA rules. Learn about forfeiture limits, consumer court options, and legal notices.",
   "image": "https://www.legalrecovery.in/og-flat-refund.png",
   "author": {
-    "@type": "Organization",
-    "name": "Team LegalRecovery",
-    "url": "https://www.legalrecovery.in"
+    "@type": "Person",
+    "name": "Anuj Anand Malik",
+    "url": "https://www.linkedin.com/in/iamanujmalik/"
   },
   "publisher": {
     "@type": "Organization",

@@ -103,9 +103,9 @@ const articleSchema = {
   "description": "Complete legal guide on recovering rejected, delayed, or underpaid personal accident insurance claims in India. Covers IRDAI rules, Ombudsman complaints, Consumer Forum remedies, and the step-by-step legal escalation process.",
   "image": "https://www.legalrecovery.in/og-accidental-insurance-claim.png",
   "author": {
-    "@type": "Organization",
-    "name": "Team LegalRecovery",
-    "url": "https://www.legalrecovery.in"
+    "@type": "Person",
+    "name": "Anuj Anand Malik",
+    "url": "https://www.linkedin.com/in/iamanujmalik/"
   },
   "publisher": {
     "@type": "Organization",

@@ -12,7 +12,7 @@ export const metadata: Metadata = {
     description: 'Protect your consumer rights. Learn how to legally resolve online shopping disputes and demand a refund from e-commerce platforms.',
     url: 'https://www.legalrecovery.in/send-a-legal-notice/online-shopping-dispute',
     type: 'article',
-    authors: ['Advocate Aman Chawla'],
+    authors: ['Anuj Anand Malik'],
     publishedTime: '2024-04-10T00:00:00Z',
     modifiedTime: new Date().toISOString(),
     images: [

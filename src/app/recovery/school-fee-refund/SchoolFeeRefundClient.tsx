@@ -94,9 +94,9 @@ const articleSchema = {
   "description": "Comprehensive guide on recovering private school fees, caution deposits, capitation charges, and development fees in India. Learn about RTE Act protections, State Fee Regulatory Committees, Transfer Certificate rights, and consumer court remedies.",
   "image": "https://www.legalrecovery.in/og-school-fee-refund.png",
   "author": {
-    "@type": "Organization",
-    "name": "Team LegalRecovery",
-    "url": "https://www.legalrecovery.in"
+    "@type": "Person",
+    "name": "Anuj Anand Malik",
+    "url": "https://www.linkedin.com/in/iamanujmalik/"
   },
   "publisher": {
     "@type": "Organization",

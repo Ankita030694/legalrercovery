@@ -83,9 +83,9 @@ const articleSchema = {
   "description": "Comprehensive legal guide on recovering unpaid statutory bonuses (Payment of Bonus Act, 1965) and contractual performance bonuses. Learn about Section 9 disqualifications, notice period rights, and Section 21 recovery certificates.",
   "image": "https://www.legalrecovery.in/og-unpaid-bonus.png",
   "author": {
-    "@type": "Organization",
-    "name": "Team LegalRecovery",
-    "url": "https://www.legalrecovery.in"
+    "@type": "Person",
+    "name": "Anuj Anand Malik",
+    "url": "https://www.linkedin.com/in/iamanujmalik/"
   },
   "publisher": {
     "@type": "Organization",

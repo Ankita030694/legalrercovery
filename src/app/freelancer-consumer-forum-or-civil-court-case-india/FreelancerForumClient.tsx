@@ -77,9 +77,9 @@ const articleSchema = {
   "description": "Understand the jurisdictional options for freelancers in India seeking payment recovery. Learn why Consumer Courts exclude freelancers and why CPC Order 37 Summary Suits or MSME Samadhaan are the correct remedies.",
   "image": "https://www.legalrecovery.in/og-freelancer-forum.png",
   "author": {
-    "@type": "Organization",
-    "name": "Team LegalRecovery",
-    "url": "https://www.legalrecovery.in"
+    "@type": "Person",
+    "name": "Anuj Anand Malik",
+    "url": "https://www.linkedin.com/in/iamanujmalik/"
   },
   "publisher": {
     "@type": "Organization",

@@ -83,9 +83,9 @@ const articleSchema = {
   "description": "Comprehensive legal and regulatory guide to recovering wrongfully rejected or delayed insurance claims in India. Covers IRDAI 2017 regulations, delayed claim interest penalties, Insurance Ombudsman cms.rbi.org.in escalations, and Consumer Court filings.",
   "image": "https://www.legalrecovery.in/og-insurance-recovery.png",
   "author": {
-    "@type": "Organization",
-    "name": "Team LegalRecovery",
-    "url": "https://www.legalrecovery.in"
+    "@type": "Person",
+    "name": "Anuj Anand Malik",
+    "url": "https://www.linkedin.com/in/iamanujmalik/"
   },
   "publisher": {
     "@type": "Organization",

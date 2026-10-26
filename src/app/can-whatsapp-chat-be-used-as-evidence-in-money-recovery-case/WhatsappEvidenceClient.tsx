@@ -76,9 +76,9 @@ const articleSchema = {
   "image": "https://www.legalrecovery.in/og-whatsapp-evidence.png",
   "author": {
     "@type": "Person",
-    "name": "Vikram Sharma",
-    "url": "https://www.legalrecovery.in/author/vikramsharma",
-    "image": "https://www.legalrecovery.in/blank-profile.svg"
+    "name": "Anuj Anand Malik",
+    "url": "https://www.linkedin.com/in/iamanujmalik/",
+    "image": "https://www.legalrecovery.in/anujbhiya.png"
   },
   "publisher": {
     "@type": "Organization",
@@ -511,18 +511,28 @@ export default function WhatsappEvidenceClient() {
               <div className="bg-white p-6 rounded-3xl shadow-sm border border-slate-100 text-center">
                 <div className="w-24 h-24 mx-auto rounded-full overflow-hidden mb-4 border-4 border-slate-50 shadow-sm relative">
                   <Image 
-                    src="/blank-profile.svg" 
-                    alt="Vikram Sharma Author Image" 
+                    src="/anujbhiya.png" 
+                    alt="Anuj Anand Malik" 
                     fill
                     className="object-cover"
                     sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                   />
                 </div>
-                <h3 className="font-black text-slate-900 text-lg">Vikram Sharma</h3>
-                <p className="text-xs text-[#DC2626] font-bold uppercase tracking-wider mb-3">Legal Strategist</p>
-                <p className="text-xs text-slate-600 leading-relaxed">
-                  Vikram Sharma specializes in digital dispute resolution and modern Indian money recovery strategies. He empowers businesses and professionals to resolve complex financial disputes through statutory procedures.
+                <h3 className="font-black text-slate-900 text-lg">
+                  <a href="https://www.linkedin.com/in/iamanujmalik/" target="_blank" rel="noopener noreferrer" className="hover:underline">Anuj Anand Malik</a>
+                </h3>
+                <p className="text-xs text-[#DC2626] font-bold uppercase tracking-wider mb-3">Founder, AMA Legal Solutions</p>
+                <p className="text-xs text-slate-600 leading-relaxed mb-4">
+                  Anuj Anand Malik, Founder of AMA Legal Solutions, is a trusted advocate, loan settlement expert, legal advisor, and banking lawyer. With over a decade of experience in loan settlement, corporate law, financial disputes, and compliance, he leads a result-driven law firm based in India that helps individuals, startups, and businesses achieve legal and financial stability.
                 </p>
+                <a
+                  href="https://www.linkedin.com/in/iamanujmalik/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="block w-full border border-[#0077b5] text-[#0077b5] text-center py-2.5 rounded-xl text-xs font-bold hover:bg-[#0077b5] hover:text-white transition-colors"
+                >
+                  Connect on LinkedIn
+                </a>
                 <time dateTime="2026-06-29" className="block mt-4 text-[10px] text-slate-400 uppercase tracking-widest font-semibold border-t border-slate-100 pt-3">
                   Updated: June 29, 2026
                 </time>

@@ -122,9 +122,9 @@ const articleSchema = {
   "description": "Exhaustive legal guide on drafting and sending legal notices online in India. Learn about electronic delivery validity under BSA 2023, physical Speed Post tracking, and advocate notice requirements.",
   "image": "https://www.legalrecovery.in/og-send-legal-notice.png",
   "author": {
-    "@type": "Organization",
-    "name": "Team LegalRecovery",
-    "url": "https://www.legalrecovery.in"
+    "@type": "Person",
+    "name": "Anuj Anand Malik",
+    "url": "https://www.linkedin.com/in/iamanujmalik/"
   },
   "publisher": {
     "@type": "Organization",

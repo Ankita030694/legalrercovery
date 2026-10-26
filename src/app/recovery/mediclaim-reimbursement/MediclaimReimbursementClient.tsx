@@ -83,9 +83,9 @@ const articleSchema = {
   "description": "Comprehensive legal and regulatory guide to recovering wrongfully rejected or delayed mediclaim reimbursement in India. Covers IRDAI 2017 regulations, 8-year moratorium rules, TPA dispute processes, and Insurance Ombudsman cms.rbi.org.in escalations.",
   "image": "https://www.legalrecovery.in/og-mediclaim-reimbursement.png",
   "author": {
-    "@type": "Organization",
-    "name": "Team LegalRecovery",
-    "url": "https://www.legalrecovery.in"
+    "@type": "Person",
+    "name": "Anuj Anand Malik",
+    "url": "https://www.linkedin.com/in/iamanujmalik/"
   },
   "publisher": {
     "@type": "Organization",

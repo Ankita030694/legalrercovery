@@ -77,9 +77,9 @@ const articleSchema = {
   "description": "Discover the legal rights and recovery pathways for freelancers in India facing unpaid client payments. Learn about MSME Samadhaan, summary suits, and contract act protections.",
   "image": "https://www.legalrecovery.in/og-freelancer-recovery.png",
   "author": {
-    "@type": "Organization",
-    "name": "Team LegalRecovery",
-    "url": "https://www.legalrecovery.in"
+    "@type": "Person",
+    "name": "Anuj Anand Malik",
+    "url": "https://www.linkedin.com/in/iamanujmalik/"
   },
   "publisher": {
     "@type": "Organization",

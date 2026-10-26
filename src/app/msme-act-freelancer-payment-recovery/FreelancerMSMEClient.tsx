@@ -77,9 +77,9 @@ const articleSchema = {
   "description": "Understand the power of the MSMED Act, 2006 for freelancers in India. Learn about Udyam registration, 45-day payment limits, 3x RBI interest, and the MSME Samadhaan portal.",
   "image": "https://www.legalrecovery.in/og-freelancer-msme.png",
   "author": {
-    "@type": "Organization",
-    "name": "Team LegalRecovery",
-    "url": "https://www.legalrecovery.in"
+    "@type": "Person",
+    "name": "Anuj Anand Malik",
+    "url": "https://www.linkedin.com/in/iamanujmalik/"
   },
   "publisher": {
     "@type": "Organization",

@@ -88,8 +88,9 @@ const articleSchema = {
   "description": "Learn how to hold car dealerships and manufacturers accountable for delayed deliveries and manufacturing defects. Draft a legal notice for vehicle replacement or refund.",
   "image": "https://www.legalrecovery.in/og-car-dealer-notice.png",
   "author": {
-    "@type": "Organization",
-    "name": "LegalRecovery"
+    "@type": "Person",
+    "name": "Anuj Anand Malik",
+    "url": "https://www.linkedin.com/in/iamanujmalik/"
   },
   "publisher": {
     "@type": "Organization",

@@ -77,9 +77,9 @@ const articleSchema = {
   "description": "Compare top Indian online legal notice services, flat-fee portals, and directories. Learn about validity, workflows, tracking, and how to choose the right service.",
   "image": "https://www.legalrecovery.in/og-online-platforms.png",
   "author": {
-    "@type": "Organization",
-    "name": "Team LegalRecovery",
-    "url": "https://www.legalrecovery.in"
+    "@type": "Person",
+    "name": "Anuj Anand Malik",
+    "url": "https://www.linkedin.com/in/iamanujmalik/"
   },
   "publisher": {
     "@type": "Organization",

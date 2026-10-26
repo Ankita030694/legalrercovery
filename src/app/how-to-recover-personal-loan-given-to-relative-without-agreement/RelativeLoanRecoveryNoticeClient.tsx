@@ -88,8 +88,9 @@ const articleSchema = {
   "description": "Learn how to recover a personal loan given to a relative or family member without a written agreement in India. Draft a firm legal notice for an unpaid loan.",
   "image": "https://www.legalrecovery.in/og-relative-loan.png",
   "author": {
-    "@type": "Organization",
-    "name": "LegalRecovery"
+    "@type": "Person",
+    "name": "Anuj Anand Malik",
+    "url": "https://www.linkedin.com/in/iamanujmalik/"
   },
   "publisher": {
     "@type": "Organization",

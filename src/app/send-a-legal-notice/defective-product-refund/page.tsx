@@ -12,7 +12,7 @@ export const metadata: Metadata = {
     description: 'Protect your consumer rights. Learn how to legally demand a refund when you receive a defective or damaged product.',
     url: 'https://www.legalrecovery.in/send-a-legal-notice/defective-product-refund',
     type: 'article',
-    authors: ['Advocate Aman Chawla'],
+    authors: ['Anuj Anand Malik'],
     publishedTime: '2024-03-14T00:00:00Z',
     modifiedTime: new Date().toISOString(),
     images: [

@@ -88,8 +88,9 @@ const articleSchema = {
   "description": "Learn how Indian freelancers and agencies can legally recover unpaid invoices from foreign clients. Draft a cross-border legal notice for breach of contract.",
   "image": "https://www.legalrecovery.in/og-international-client-notice.png",
   "author": {
-    "@type": "Organization",
-    "name": "LegalRecovery"
+    "@type": "Person",
+    "name": "Anuj Anand Malik",
+    "url": "https://www.linkedin.com/in/iamanujmalik/"
   },
   "publisher": {
     "@type": "Organization",

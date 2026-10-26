@@ -12,7 +12,7 @@ export const metadata: Metadata = {
     description: 'Statutory guide and multi-channel bulk recovery notice solution to recover unpaid commercial dues, invoices, and delinquent debts under Indian law.',
     url: 'https://legalrecovery.in/bulk-recovery-notice-send-through-email-whatsapp-speedpost-solution',
     type: 'article',
-    authors: ['Advocate Aman Chawla'],
+    authors: ['Anuj Anand Malik'],
     publishedTime: '2024-04-15T00:00:00Z',
     modifiedTime: new Date().toISOString(),
     images: [

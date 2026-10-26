@@ -83,9 +83,9 @@ const articleSchema = {
   "description": "Comprehensive legal guide on recovering outstanding money after a cheque bounce in India. Follow step-by-step notice timelines, interim compensation claims, and summary suits.",
   "image": "https://www.legalrecovery.in/og-cheque-bounce-recovery.png",
   "author": {
-    "@type": "Organization",
-    "name": "Team LegalRecovery",
-    "url": "https://www.legalrecovery.in"
+    "@type": "Person",
+    "name": "Anuj Anand Malik",
+    "url": "https://www.linkedin.com/in/iamanujmalik/"
   },
   "publisher": {
     "@type": "Organization",

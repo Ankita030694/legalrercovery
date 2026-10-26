@@ -95,9 +95,9 @@ const articleSchema = {
   "description": "Exhaustive legal guide on recovering delayed salaries, claiming interest on late wages, and filing labor court complaints in India.",
   "image": "https://www.legalrecovery.in/og-delayed-wages.png",
   "author": {
-    "@type": "Organization",
-    "name": "Team LegalRecovery",
-    "url": "https://www.legalrecovery.in"
+    "@type": "Person",
+    "name": "Anuj Anand Malik",
+    "url": "https://www.linkedin.com/in/iamanujmalik/"
   },
   "publisher": {
     "@type": "Organization",

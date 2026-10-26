@@ -139,9 +139,9 @@ const articleSchema = {
   "description": "Comprehensive guide on what to do when your employer refuses to pay your salary or FNF after resignation. Learn about legal notices, labor court procedures, and your rights.",
   "image": "https://www.legalrecovery.in/og-salary-recovery.png",
   "author": {
-    "@type": "Organization",
-    "name": "Team LegalRecovery",
-    "url": "https://www.legalrecovery.in"
+    "@type": "Person",
+    "name": "Anuj Anand Malik",
+    "url": "https://www.linkedin.com/in/iamanujmalik/"
   },
   "publisher": {
     "@type": "Organization",

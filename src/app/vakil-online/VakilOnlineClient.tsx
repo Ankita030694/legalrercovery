@@ -91,9 +91,9 @@ const articleSchema = {
   "description": "Comprehensive guide on online advocate consultations, digital Vakalatnama execution, and Bar Council of India ethics in digital legal practice.",
   "image": "https://www.legalrecovery.in/og-vakil-online.png",
   "author": {
-    "@type": "Organization",
-    "name": "Team LegalRecovery",
-    "url": "https://www.legalrecovery.in"
+    "@type": "Person",
+    "name": "Anuj Anand Malik",
+    "url": "https://www.linkedin.com/in/iamanujmalik/"
   },
   "publisher": {
     "@type": "Organization",

@@ -103,9 +103,9 @@ const articleSchema = {
   "description": "Detailed legal guide on B2B MSME compound interest recovery under MSMED Act Section 16, RBI bank rate application, tax non-deductibility, and CARO disclosures.",
   "image": "https://www.legalrecovery.in/og-msme-interest.png",
   "author": {
-    "@type": "Organization",
-    "name": "Team LegalRecovery",
-    "url": "https://www.legalrecovery.in"
+    "@type": "Person",
+    "name": "Anuj Anand Malik",
+    "url": "https://www.linkedin.com/in/iamanujmalik/"
   },
   "publisher": {
     "@type": "Organization",

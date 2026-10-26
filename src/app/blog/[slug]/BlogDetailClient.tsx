@@ -52,11 +52,11 @@ interface BlogDetailProps {
 
 // Define author bios
 const authorBios = {
-  "Team LegalRecovery": {
-    name: "Team LegalRecovery",
-    description: "Team LegalRecovery is a dedicated team of legal and financial professionals specializing in loan settlement, banking disputes, debt relief, and corporate compliance. We are committed to helping clients achieve debt freedom and business stability through expert strategic advisory.",
-    image: "/favicon/favicon.ico",
-    linkedInUrl: "https://www.linkedin.com/"
+  "Anuj Anand Malik": {
+    name: "Anuj Anand Malik",
+    description: "Anuj Anand Malik, Founder of AMA Legal Solutions, is a trusted advocate, loan settlement expert, legal advisor, and banking lawyer. With over a decade of experience in loan settlement, corporate law, financial disputes, and compliance, he leads a result-driven law firm based in India that helps individuals, startups, and businesses achieve legal and financial stability.",
+    image: "/anujbhiya.png",
+    linkedInUrl: "https://www.linkedin.com/in/iamanujmalik/"
   }
 };
 
@@ -242,7 +242,7 @@ const ArticleDetail = memo(function ArticleDetail({ blog, faqs, reviews, related
     { label: blog.title, href: `/blog/${blog.slug}` },
   ];
 
-  const authorBio = authorBios[blog.author as keyof typeof authorBios] || authorBios["Team LegalRecovery"];
+  const authorBio = authorBios[blog.author as keyof typeof authorBios] || authorBios["Anuj Anand Malik"];
 
   return (
     <div className="min-h-screen bg-[#F8F9FB] text-gray-800">
@@ -285,13 +285,13 @@ const ArticleDetail = memo(function ArticleDetail({ blog, faqs, reviews, related
                 <div className="flex items-center gap-2.5 bg-slate-800/90 backdrop-blur-sm px-3.5 py-2 rounded-xl border border-slate-700/70 shadow-xs">
                   <div className="w-8 h-8 rounded-full overflow-hidden bg-red-600/20 border border-red-500/40 flex items-center justify-center flex-shrink-0">
                     <img
-                      src={authorBio?.image || "/favicon/favicon.ico"}
-                      alt={blog.author || "Team LegalRecovery"}
-                      className="w-5 h-5 object-contain"
+                      src={authorBio?.image || "/anujbhiya.png"}
+                      alt={blog.author || "Anuj Anand Malik"}
+                      className="w-8 h-8 object-cover"
                     />
                   </div>
                   <span className="text-xs sm:text-sm font-bold text-white">
-                    {blog.author || "Team LegalRecovery"}
+                    {blog.author || "Anuj Anand Malik"}
                   </span>
                 </div>
 
@@ -783,26 +783,28 @@ const ArticleDetail = memo(function ArticleDetail({ blog, faqs, reviews, related
                 <div className="flex items-center mb-4">
                   <div className="w-12 h-12 rounded-full overflow-hidden mr-3 border border-gray-100 flex-shrink-0 bg-red-50 flex items-center justify-center">
                     <img
-                      src={authorBio?.image || "/favicon/favicon.ico"}
+                      src={authorBio?.image || "/anujbhiya.png"}
                       alt={blog.author}
-                      className="w-8 h-8 object-contain"
+                      className="w-12 h-12 object-cover"
                     />
                   </div>
                   <div>
                     <h4 className="font-extrabold text-gray-900 text-xs sm:text-[13px]">{blog.author}</h4>
-                    <Link
-                      href="/about"
+                    <a
+                      href={authorBio?.linkedInUrl || "https://www.linkedin.com/in/iamanujmalik/"}
+                      target="_blank"
+                      rel="noopener noreferrer"
                       className="text-[10px] text-[#DC2626] font-extrabold hover:underline"
                     >
                       View Profile
-                    </Link>
+                    </a>
                   </div>
                 </div>
                 <p className="text-[11px] text-gray-500 leading-relaxed mb-4">
                   {authorBio?.description}
                 </p>
                 <a
-                  href={authorBio?.linkedInUrl}
+                  href={authorBio?.linkedInUrl || "https://www.linkedin.com/in/iamanujmalik/"}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="block w-full border border-[#0077b5] text-[#0077b5] text-center py-2.5 rounded-xl text-xs font-bold hover:bg-[#0077b5] hover:text-white transition-colors"

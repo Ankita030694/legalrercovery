@@ -99,9 +99,9 @@ const articleSchema = {
   "description": "Comprehensive guide on recovering coaching institute and edtech platform tuition fees in India. Learn about CCPA guidelines, consumer rights, unfair trade practices, legal notice procedures, and consumer court remedies.",
   "image": "https://www.legalrecovery.in/og-coaching-refund.png",
   "author": {
-    "@type": "Organization",
-    "name": "Team LegalRecovery",
-    "url": "https://www.legalrecovery.in"
+    "@type": "Person",
+    "name": "Anuj Anand Malik",
+    "url": "https://www.linkedin.com/in/iamanujmalik/"
   },
   "publisher": {
     "@type": "Organization",

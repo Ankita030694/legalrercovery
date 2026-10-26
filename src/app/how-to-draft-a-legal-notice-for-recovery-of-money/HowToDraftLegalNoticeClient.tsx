@@ -91,9 +91,9 @@ const articleSchema = {
   "description": "Learn the legal syntax, paragraph formatting, essential clauses, statutory references, and formatting rules to draft an enforceable money recovery legal notice in India.",
   "image": "https://www.legalrecovery.in/og-how-to-draft-notice.png",
   "author": {
-    "@type": "Organization",
-    "name": "Team LegalRecovery",
-    "url": "https://www.legalrecovery.in"
+    "@type": "Person",
+    "name": "Anuj Anand Malik",
+    "url": "https://www.linkedin.com/in/iamanujmalik/"
   },
   "publisher": {
     "@type": "Organization",

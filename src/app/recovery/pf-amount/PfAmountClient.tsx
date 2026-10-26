@@ -91,9 +91,9 @@ const articleSchema = {
   "description": "Comprehensive guide on recovering unpaid Provident Fund (PF) contributions from employers in India. Learn about EPFiGMS, Section 7A inquiry, and criminal penalties.",
   "image": "https://www.legalrecovery.in/og-pf-recovery.png",
   "author": {
-    "@type": "Organization",
-    "name": "Team LegalRecovery",
-    "url": "https://www.legalrecovery.in"
+    "@type": "Person",
+    "name": "Anuj Anand Malik",
+    "url": "https://www.linkedin.com/in/iamanujmalik/"
   },
   "publisher": {
     "@type": "Organization",

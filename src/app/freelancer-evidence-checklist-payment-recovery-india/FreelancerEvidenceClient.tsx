@@ -77,9 +77,9 @@ const articleSchema = {
   "description": "Discover the legal evidence checklist freelancers in India must compile to recover outstanding payments. Learn how to archive emails, WhatsApp chats, invoices, and comply with Section 63 BSA.",
   "image": "https://www.legalrecovery.in/og-freelancer-evidence.png",
   "author": {
-    "@type": "Organization",
-    "name": "Team LegalRecovery",
-    "url": "https://www.legalrecovery.in"
+    "@type": "Person",
+    "name": "Anuj Anand Malik",
+    "url": "https://www.linkedin.com/in/iamanujmalik/"
   },
   "publisher": {
     "@type": "Organization",

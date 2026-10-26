@@ -95,9 +95,9 @@ const articleSchema = {
   "description": "A comprehensive guide on the legal validity and processing of online legal notices via WhatsApp, email, and speed post under modern Indian statutes like BSA 2023.",
   "image": "https://www.legalrecovery.in/og-online-notice.png",
   "author": {
-    "@type": "Organization",
-    "name": "Team LegalRecovery",
-    "url": "https://www.legalrecovery.in"
+    "@type": "Person",
+    "name": "Anuj Anand Malik",
+    "url": "https://www.linkedin.com/in/iamanujmalik/"
   },
   "publisher": {
     "@type": "Organization",

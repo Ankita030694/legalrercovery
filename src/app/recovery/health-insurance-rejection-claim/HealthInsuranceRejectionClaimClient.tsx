@@ -103,9 +103,9 @@ const articleSchema = {
   "description": "Comprehensive legal guide on challenging wrongfully rejected health insurance claims in India. Covers IRDAI moratorium period, TPA disputes, cashless vs reimbursement, proportionate deductions, Insurance Ombudsman process, Consumer Forum remedies, and the Contra Proferentem doctrine.",
   "image": "https://www.legalrecovery.in/og-health-insurance-rejection.png",
   "author": {
-    "@type": "Organization",
-    "name": "Team LegalRecovery",
-    "url": "https://www.legalrecovery.in"
+    "@type": "Person",
+    "name": "Anuj Anand Malik",
+    "url": "https://www.linkedin.com/in/iamanujmalik/"
   },
   "publisher": {
     "@type": "Organization",

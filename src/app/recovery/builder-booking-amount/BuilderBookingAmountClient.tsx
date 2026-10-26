@@ -91,9 +91,9 @@ const articleSchema = {
   "description": "Comprehensive guide on recovering booking amount or token money from a builder. Learn about RERA Section 18, Consumer Protection Act, and legal notices to developers.",
   "image": "https://www.legalrecovery.in/og-builder-refund.png",
   "author": {
-    "@type": "Organization",
-    "name": "Team LegalRecovery",
-    "url": "https://www.legalrecovery.in"
+    "@type": "Person",
+    "name": "Anuj Anand Malik",
+    "url": "https://www.linkedin.com/in/iamanujmalik/"
   },
   "publisher": {
     "@type": "Organization",

@@ -67,7 +67,11 @@ const articleSchema = {
   "headline": "Hotel Booking Refund Recovery India: Claim Lodging Dues Under Consumer Laws",
   "description": "Comprehensive legal guide on recovering delayed, withheld, or double-charged hotel booking refunds in India. Understand your consumer rights regarding refundable vs non-refundable bookings, OTA joint liabilities, and legal actions.",
   "image": "https://www.legalrecovery.in/og-hotel-booking.png",
-  "author": { "@type": "Organization", "name": "Team LegalRecovery", "url": "https://www.legalrecovery.in" },
+  "author": {
+    "@type": "Person",
+    "name": "Anuj Anand Malik",
+    "url": "https://www.linkedin.com/in/iamanujmalik/"
+  },
   "publisher": { "@type": "Organization", "name": "LegalRecovery", "logo": { "@type": "ImageObject", "url": "https://www.legalrecovery.in/logo.png" } },
   "datePublished": "2026-06-08",
   "dateModified": "2026-06-08"

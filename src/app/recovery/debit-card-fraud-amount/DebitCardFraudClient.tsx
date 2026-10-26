@@ -83,9 +83,9 @@ const articleSchema = {
   "description": "Comprehensive legal and technical guide to recovering money lost to debit card fraud in India. Covers the RBI Zero Liability circular, chargeback dispute codes for Visa, Mastercard, and RuPay, emergency blocking steps, evidence preservation under Section 63 BSA, and RBI Ombudsman escalations.",
   "image": "https://www.legalrecovery.in/og-debit-card-recovery.png",
   "author": {
-    "@type": "Organization",
-    "name": "Team LegalRecovery",
-    "url": "https://www.legalrecovery.in"
+    "@type": "Person",
+    "name": "Anuj Anand Malik",
+    "url": "https://www.linkedin.com/in/iamanujmalik/"
   },
   "publisher": {
     "@type": "Organization",

@@ -45,7 +45,7 @@ function mapDatabaseBlog(item: any): Blog {
     image: imageUrl,
     infographicImage: infographicUrl,
     slug: item.slug || "",
-    author: "Team LegalRecovery",
+    author: "Anuj Anand Malik",
     created: item.created || (item.createdAt ? new Date(item.createdAt).getTime() : Date.now()),
     metaTitle: item.metaTitle || item.title || "",
     metaDescription: item.metaDescription || item.subtitle || item.subtitleKeywords || "",
@@ -172,9 +172,9 @@ export default async function BlogDetailPage(
     "datePublished": blogDoc.publishedAt || blogDoc.createdAt || new Date().toISOString(),
     "dateModified": blogDoc.updatedAt || blogDoc.publishedAt || blogDoc.createdAt || new Date().toISOString(),
     "author": {
-      "@type": "Organization",
-      "name": blog.author || "Team LegalRecovery",
-      "url": `${SITE_URL}/about`,
+      "@type": "Person",
+      "name": "Anuj Anand Malik",
+      "url": "https://www.linkedin.com/in/iamanujmalik/",
     },
     "publisher": {
       "@type": "Organization",

@@ -12,7 +12,7 @@ export const metadata: Metadata = {
     description: 'Statutory guide and affordable all-in-one solutions for businesses to recover bulk unpaid invoices, commercial debts, and client defaults under Indian law.',
     url: 'https://legalrecovery.in/bulk-recovery-cases-all-in-one-affordable-solutions',
     type: 'article',
-    authors: ['Advocate Aman Chawla'],
+    authors: ['Anuj Anand Malik'],
     publishedTime: '2024-04-10T00:00:00Z',
     modifiedTime: new Date().toISOString(),
     images: [

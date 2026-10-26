@@ -122,9 +122,9 @@ const articleSchema = {
   "description": "Comprehensive legal guide on recovering unpaid salaries, delayed monthly wages, and FNF settlements in India under labor codes, summary suits, and bankruptcy laws.",
   "image": "https://www.legalrecovery.in/og-salary-recovery-guide.png",
   "author": {
-    "@type": "Organization",
-    "name": "Team LegalRecovery",
-    "url": "https://www.legalrecovery.in"
+    "@type": "Person",
+    "name": "Anuj Anand Malik",
+    "url": "https://www.linkedin.com/in/iamanujmalik/"
   },
   "publisher": {
     "@type": "Organization",

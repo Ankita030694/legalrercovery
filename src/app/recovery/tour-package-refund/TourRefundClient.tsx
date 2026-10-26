@@ -67,7 +67,11 @@ const articleSchema = {
   "headline": "Tour Package Refund Recovery India: Recover Holiday Dues Under Consumer Protection Act",
   "description": "Comprehensive legal guide on recovering delayed, withheld, or deficient tour package refunds in India. Learn your rights against tour operators, travel portal joint liabilities, and legal actions under consumer protection laws.",
   "image": "https://www.legalrecovery.in/og-tour-package.png",
-  "author": { "@type": "Organization", "name": "Team LegalRecovery", "url": "https://www.legalrecovery.in" },
+  "author": {
+    "@type": "Person",
+    "name": "Anuj Anand Malik",
+    "url": "https://www.linkedin.com/in/iamanujmalik/"
+  },
   "publisher": { "@type": "Organization", "name": "LegalRecovery", "logo": { "@type": "ImageObject", "url": "https://www.legalrecovery.in/logo.png" } },
   "datePublished": "2026-06-08",
   "dateModified": "2026-06-08"

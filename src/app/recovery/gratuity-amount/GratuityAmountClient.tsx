@@ -91,9 +91,9 @@ const articleSchema = {
   "description": "Comprehensive guide on recovering unpaid gratuity from employers in India. Learn about Form I, Form N, the 240-day rule, interest on delay, and Controlling Authority complaints.",
   "image": "https://www.legalrecovery.in/og-gratuity-recovery.png",
   "author": {
-    "@type": "Organization",
-    "name": "Team LegalRecovery",
-    "url": "https://www.legalrecovery.in"
+    "@type": "Person",
+    "name": "Anuj Anand Malik",
+    "url": "https://www.linkedin.com/in/iamanujmalik/"
   },
   "publisher": {
     "@type": "Organization",

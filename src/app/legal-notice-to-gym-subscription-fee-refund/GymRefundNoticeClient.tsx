@@ -88,8 +88,9 @@ const articleSchema = {
   "description": "Learn how to get a refund for your gym membership or online subscription in India. Draft a legal notice to challenge unfair no-refund policies.",
   "image": "https://www.legalrecovery.in/og-gym-refund.png",
   "author": {
-    "@type": "Organization",
-    "name": "LegalRecovery"
+    "@type": "Person",
+    "name": "Anuj Anand Malik",
+    "url": "https://www.linkedin.com/in/iamanujmalik/"
   },
   "publisher": {
     "@type": "Organization",

@@ -83,9 +83,9 @@ const articleSchema = {
   "description": "Exhaustive legal guide on recovering commercial office lease security deposits from landlords and corporate developers in India. Learn about lock-in disputes, reinstatement clauses, and Section 12A mediation.",
   "image": "https://www.legalrecovery.in/og-office-deposit.png",
   "author": {
-    "@type": "Organization",
-    "name": "Team LegalRecovery",
-    "url": "https://www.legalrecovery.in"
+    "@type": "Person",
+    "name": "Anuj Anand Malik",
+    "url": "https://www.linkedin.com/in/iamanujmalik/"
   },
   "publisher": {
     "@type": "Organization",

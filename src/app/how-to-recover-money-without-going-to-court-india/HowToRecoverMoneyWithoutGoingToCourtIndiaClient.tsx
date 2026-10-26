@@ -83,8 +83,8 @@ const articleSchema = {
   "image": "https://www.legalrecovery.in/og-recover-without-court.png",
   "author": {
     "@type": "Person",
-    "name": "Advocate Aman Chawla",
-    "url": "https://www.legalrecovery.in/authors/advocate-aman-chawla"
+    "name": "Anuj Anand Malik",
+    "url": "https://www.linkedin.com/in/iamanujmalik/"
   },
   "reviewedBy": {
     "@type": "Person",
@@ -222,7 +222,7 @@ export default function HowToRecoverMoneyWithoutGoingToCourtIndiaClient() {
               
               {/* Meta details */}
               <div className="flex flex-wrap items-center text-xs sm:text-sm text-slate-500 gap-3 border-b border-slate-100 pb-4">
-                <span>Written by <Link href="/authors/advocate-aman-chawla" className="font-semibold text-[#DC2626] hover:underline">Advocate Aman Chawla</Link></span>
+                <span>Written by <a href="https://www.linkedin.com/in/iamanujmalik/" target="_blank" rel="noopener noreferrer" className="font-semibold text-[#DC2626] hover:underline">Anuj Anand Malik</a></span>
                 <span className="hidden sm:inline">•</span>
                 <span>Reviewed by <Link href="/authors/advocate-sneha-sharma" className="font-semibold text-[#DC2626] hover:underline">Advocate Sneha Sharma</Link></span>
                 <span className="hidden sm:inline">•</span>
@@ -606,7 +606,7 @@ export default function HowToRecoverMoneyWithoutGoingToCourtIndiaClient() {
               <div className="bg-white p-6 rounded-3xl shadow-sm border border-slate-100 text-left space-y-3">
                 <p className="text-xs text-slate-500">
                   <span className="text-slate-400 block text-[10px] uppercase font-bold tracking-wider mb-1">Written by</span>
-                  <Link href="/authors/advocate-aman-chawla" className="font-bold text-[#DC2626] hover:underline text-sm">Advocate Aman Chawla</Link>
+                  <a href="https://www.linkedin.com/in/iamanujmalik/" target="_blank" rel="noopener noreferrer" className="font-bold text-[#DC2626] hover:underline text-sm">Anuj Anand Malik</a>
                 </p>
                 <div className="border-t border-slate-100 pt-3">
                   <p className="text-xs text-slate-500">

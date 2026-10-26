@@ -136,7 +136,7 @@ async function getPublishedBlogs(): Promise<BlogPost[]> {
           image: imageUrl,
           excerpt: cleanExcerpt,
           slug: item.slug,
-          author: item.author || "Team LegalRecovery",
+          author: "Anuj Anand Malik",
         };
       });
 

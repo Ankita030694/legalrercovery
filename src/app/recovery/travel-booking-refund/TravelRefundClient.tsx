@@ -67,7 +67,11 @@ const articleSchema = {
   "headline": "Travel Booking Refund Recovery India: Recover Dues from OTAs, Hotels, and Tour Operators",
   "description": "Comprehensive legal guide on recovering delayed and withheld refunds for travel bookings, tour packages, hotel bookings, and flights in India. Understand consumer protection laws, OTA liabilities, and escalation channels.",
   "image": "https://www.legalrecovery.in/og-travel-booking.png",
-  "author": { "@type": "Organization", "name": "Team LegalRecovery", "url": "https://www.legalrecovery.in" },
+  "author": {
+    "@type": "Person",
+    "name": "Anuj Anand Malik",
+    "url": "https://www.linkedin.com/in/iamanujmalik/"
+  },
   "publisher": { "@type": "Organization", "name": "LegalRecovery", "logo": { "@type": "ImageObject", "url": "https://www.legalrecovery.in/logo.png" } },
   "datePublished": "2026-06-08",
   "dateModified": "2026-06-08"

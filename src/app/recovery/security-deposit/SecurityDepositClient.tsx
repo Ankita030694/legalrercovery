@@ -83,9 +83,9 @@ const articleSchema = {
   "description": "Exhaustive legal guide on recovering security deposits, salary deductions, and withheld original educational certificates from employers in India.",
   "image": "https://www.legalrecovery.in/og-security-deposit.png",
   "author": {
-    "@type": "Organization",
-    "name": "Team LegalRecovery",
-    "url": "https://www.legalrecovery.in"
+    "@type": "Person",
+    "name": "Anuj Anand Malik",
+    "url": "https://www.linkedin.com/in/iamanujmalik/"
   },
   "publisher": {
     "@type": "Organization",

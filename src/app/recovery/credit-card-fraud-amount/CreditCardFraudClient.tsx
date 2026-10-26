@@ -83,9 +83,9 @@ const articleSchema = {
   "description": "Expert legal and technical guide to recovering money lost to credit card fraud, unauthorized charges, and billing disputes in India. Covers RBI Zero Liability rules, Visa/Mastercard/Amex chargeback codes, temporary credit suspension, and credit bureau (CIBIL) restorations.",
   "image": "https://www.legalrecovery.in/og-credit-card-recovery.png",
   "author": {
-    "@type": "Organization",
-    "name": "Team LegalRecovery",
-    "url": "https://www.legalrecovery.in"
+    "@type": "Person",
+    "name": "Anuj Anand Malik",
+    "url": "https://www.linkedin.com/in/iamanujmalik/"
   },
   "publisher": {
     "@type": "Organization",

@@ -122,9 +122,9 @@ const articleSchema = {
   "description": "Exhaustive legal guide for freelancers and contractors to recover unpaid invoices, deal with contract breaches, invoke MSMED Act protection, and file summary suits in India.",
   "image": "https://www.legalrecovery.in/og-freelancer-recovery.png",
   "author": {
-    "@type": "Organization",
-    "name": "Team LegalRecovery",
-    "url": "https://www.legalrecovery.in"
+    "@type": "Person",
+    "name": "Anuj Anand Malik",
+    "url": "https://www.linkedin.com/in/iamanujmalik/"
   },
   "publisher": {
     "@type": "Organization",

@@ -67,7 +67,11 @@ const articleSchema = {
   "headline": "Airline Refund Amount Recovery India: Recover Ticket Dues Under DGCA CAR Guidelines",
   "description": "Comprehensive legal guide on recovering withheld airline refunds, ticket cancellations, credit shell conversions, and agent dispute resolutions in India. Know your passenger rights under DGCA regulations and consumer protection laws.",
   "image": "https://www.legalrecovery.in/og-airline-refund.png",
-  "author": { "@type": "Organization", "name": "Team LegalRecovery", "url": "https://www.legalrecovery.in" },
+  "author": {
+    "@type": "Person",
+    "name": "Anuj Anand Malik",
+    "url": "https://www.linkedin.com/in/iamanujmalik/"
+  },
   "publisher": { "@type": "Organization", "name": "LegalRecovery", "logo": { "@type": "ImageObject", "url": "https://www.legalrecovery.in/logo.png" } },
   "datePublished": "2026-06-08",
   "dateModified": "2026-06-08"

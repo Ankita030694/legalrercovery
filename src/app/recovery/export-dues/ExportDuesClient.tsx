@@ -103,9 +103,9 @@ const articleSchema = {
   "description": "Exhaustive legal guide on B2B export payment recovery, ECGC insurance claims, FEMA write-offs under RBI guidelines, and commercial arbitration in India.",
   "image": "https://www.legalrecovery.in/og-export-dues.png",
   "author": {
-    "@type": "Organization",
-    "name": "Team LegalRecovery",
-    "url": "https://www.legalrecovery.in"
+    "@type": "Person",
+    "name": "Anuj Anand Malik",
+    "url": "https://www.linkedin.com/in/iamanujmalik/"
   },
   "publisher": {
     "@type": "Organization",

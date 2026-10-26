@@ -91,9 +91,9 @@ const articleSchema = {
   "description": "Learn how to hire an online lawyer to draft and send a legal notice. Understand advocate fees, BCI rules, digital signing, and ODR settlement pipelines.",
   "image": "https://www.legalrecovery.in/og-online-lawyer-notice.png",
   "author": {
-    "@type": "Organization",
-    "name": "Team LegalRecovery",
-    "url": "https://www.legalrecovery.in"
+    "@type": "Person",
+    "name": "Anuj Anand Malik",
+    "url": "https://www.linkedin.com/in/iamanujmalik/"
   },
   "publisher": {
     "@type": "Organization",

@@ -83,9 +83,9 @@ const articleSchema = {
   "description": "Comprehensive legal guide on recovering money lost to unauthorized or fraudulent net banking transfers in India. Covers the RBI Beneficiary Name Look-up facility, MuleHunter.AI, inter-bank recall processes, CFCFRMS freeze mechanisms, legal notices, Consumer Court filings, and Section 43A IT Act claims.",
   "image": "https://www.legalrecovery.in/og-bank-transfer-recovery.png",
   "author": {
-    "@type": "Organization",
-    "name": "Team LegalRecovery",
-    "url": "https://www.legalrecovery.in"
+    "@type": "Person",
+    "name": "Anuj Anand Malik",
+    "url": "https://www.linkedin.com/in/iamanujmalik/"
   },
   "publisher": {
     "@type": "Organization",
