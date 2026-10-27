@@ -8,11 +8,11 @@ export const metadata: Metadata = {
   description:
     "Need help recovering unpaid money, refunds, salary, or consumer claims? Contact Legal Recovery and start your legal claim process online today.",
   alternates: {
-    canonical: "/contact",
+    canonical: "https://www.legalrecovery.in/contact",
   },
   robots: {
-    index: false,
-    follow: false,
+    index: true,
+    follow: true,
   },
 };
 
