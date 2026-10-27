@@ -80,7 +80,7 @@ const articleSchema = {
   },
   "publisher": { "@type": "Organization", "name": "LegalRecovery", "logo": { "@type": "ImageObject", "url": "https://www.legalrecovery.in/logo.png" } },
   "datePublished": "2026-06-09",
-  "dateModified": "2026-06-09"
+  "dateModified": "2026-10-27"
 };
 
 const faqSchema = {
@@ -150,7 +150,7 @@ const reviewSchema = {
 };
 
 export default function CollegeFeeRefundClient() {
-  const [expandedFaqs, setExpandedFaqs] = useState<string[]>([]);
+  const [expandedFaqs, setExpandedFaqs] = useState<string[]>(['faq-0', 'faq-1']);
   const [isPaymentModalOpen, setIsPaymentModalOpen] = useState(false);
 
   const toggleFaq = (index: number) => {
@@ -179,10 +179,10 @@ export default function CollegeFeeRefundClient() {
 
   return (
     <>
-      <Script id="bc-schema"      type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
-      <Script id="art-schema"     type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }} />
-      <Script id="faq-schema"     type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
-      <Script id="review-schema"  type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(reviewSchema) }} />
+      <script id="bc-schema"      type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
+      <script id="art-schema"     type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }} />
+      <script id="faq-schema"     type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
+      <script id="review-schema"  type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(reviewSchema) }} />
 
       <div className="bg-[#F8F9FB] min-h-screen font-sans text-slate-800 text-left">
 

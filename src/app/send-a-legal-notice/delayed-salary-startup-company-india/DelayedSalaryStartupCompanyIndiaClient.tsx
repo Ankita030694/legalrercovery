@@ -223,7 +223,7 @@ const jsonLd = {
 
 /* ─── COMPONENT ─────────────────────────────────────────────────────────── */
 export default function DelayedSalaryStartupCompanyIndiaClient() {
-  const [expandedFaqs, setExpandedFaqs] = useState<string[]>([]);
+  const [expandedFaqs, setExpandedFaqs] = useState<string[]>(['faq-0', 'faq-1']);
   const [isPaymentModalOpen, setIsPaymentModalOpen] = useState(false);
 
   const toggleFaq = (index: number) => {
@@ -264,7 +264,7 @@ export default function DelayedSalaryStartupCompanyIndiaClient() {
 
   return (
     <>
-      <Script
+      <script
         id="page-schema"
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}

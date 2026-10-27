@@ -187,7 +187,7 @@ const jsonLd = {
 };
 
 export default function UnfairTradePracticeClient() {
-  const [expandedFaqs, setExpandedFaqs] = useState<string[]>([]);
+  const [expandedFaqs, setExpandedFaqs] = useState<string[]>(['faq-0', 'faq-1']);
   const [isPaymentModalOpen, setIsPaymentModalOpen] = useState(false);
   const [currentDate, setCurrentDate] = useState('');
 
@@ -223,7 +223,7 @@ export default function UnfairTradePracticeClient() {
 
   return (
     <>
-      <Script
+      <script
         id="page-schema"
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}

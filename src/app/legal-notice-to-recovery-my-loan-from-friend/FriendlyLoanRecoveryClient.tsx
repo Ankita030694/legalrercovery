@@ -233,7 +233,7 @@ const reviewSchema = {
 };
 
 export default function FriendlyLoanRecoveryClient() {
-  const [expandedFaqs, setExpandedFaqs] = useState<string[]>([]);
+  const [expandedFaqs, setExpandedFaqs] = useState<string[]>(['faq-0', 'faq-1']);
   const [isPaymentModalOpen, setIsPaymentModalOpen] = useState(false);
 
   const toggleFaq = (index: number) => {
@@ -259,22 +259,22 @@ export default function FriendlyLoanRecoveryClient() {
 
   return (
     <>
-      <Script
+      <script
         id="breadcrumb-schema"
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
       />
-      <Script
+      <script
         id="article-schema"
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }}
       />
-      <Script
+      <script
         id="faq-schema"
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
       />
-      <Script
+      <script
         id="review-schema"
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(reviewSchema) }}

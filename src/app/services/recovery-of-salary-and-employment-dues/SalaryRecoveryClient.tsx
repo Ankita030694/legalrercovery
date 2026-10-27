@@ -45,7 +45,7 @@ interface Review {
 
 export default function SalaryRecoveryClient() {
   const [currentUrl, setCurrentUrl] = useState('');
-  const [expandedFaqs, setExpandedFaqs] = useState<string[]>([]);
+  const [expandedFaqs, setExpandedFaqs] = useState<string[]>(['faq-0', 'faq-1']);
 
   useEffect(() => {
     setCurrentUrl(window.location.href);

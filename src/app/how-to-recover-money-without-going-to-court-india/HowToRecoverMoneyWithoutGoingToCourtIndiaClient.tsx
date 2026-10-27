@@ -100,7 +100,7 @@ const articleSchema = {
     }
   },
   "datePublished": "2026-06-29",
-  "dateModified": "2026-06-29"
+  "dateModified": "2026-10-27"
 };
 
 const faqSchema = {
@@ -154,7 +154,7 @@ const reviewSchema = {
 };
 
 export default function HowToRecoverMoneyWithoutGoingToCourtIndiaClient() {
-  const [expandedFaqs, setExpandedFaqs] = useState<string[]>([]);
+  const [expandedFaqs, setExpandedFaqs] = useState<string[]>(['faq-0', 'faq-1']);
 
   const toggleFaq = (index: number) => {
     const faqId = `faq-${index}`;
@@ -181,10 +181,10 @@ export default function HowToRecoverMoneyWithoutGoingToCourtIndiaClient() {
 
   return (
     <>
-      <Script id="breadcrumb-schema" type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
-      <Script id="article-schema" type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }} />
-      <Script id="faq-schema" type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
-      <Script id="review-schema" type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(reviewSchema) }} />
+      <script id="breadcrumb-schema" type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
+      <script id="article-schema" type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }} />
+      <script id="faq-schema" type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
+      <script id="review-schema" type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(reviewSchema) }} />
 
       <main className="bg-[#F8F9FB] min-h-screen font-sans text-slate-800 text-left">
         <header className="relative bg-gradient-to-br from-[#111827] via-[#0F172A] to-[#020617] text-white overflow-hidden py-24 md:py-44 border-b border-slate-900">
