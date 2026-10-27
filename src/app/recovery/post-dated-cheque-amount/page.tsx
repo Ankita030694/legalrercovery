@@ -2,8 +2,8 @@ import { Metadata } from "next";
 import PDCAmountClient from "./PDCAmountClient";
 
 export const metadata: Metadata = {
-  title: "Recover Post-Dated Cheque Amount | LegalRecovery",
-  description: "Recover dues from a bounced post-dated cheque (PDC) or security cheque. Learn the legal process under Section 138 NI Act and CPC summary suits.",
+  title: "Bounced Post-Dated Cheque (PDC) or Security Cheque Recovery (Sec 138 NI Act & Order 37)",
+  description: "Did a Post-Dated Cheque (PDC) or security cheque bounce due to insufficient funds or 'Payment Stopped by Drawer'? Serve a 15-day Section 138 NI Act Legal Notice & claim 20% interim compensation.",
   keywords: [
     "recover post dated cheque amount",
     "bounced post-dated cheque legal process",
@@ -18,6 +18,12 @@ export const metadata: Metadata = {
   ],
   alternates: {
     canonical: 'https://www.legalrecovery.in/recovery/post-dated-cheque-amount',
+  },
+  openGraph: {
+    title: "Bounced Post-Dated Cheque (PDC) or Security Cheque Recovery (Sec 138 NI Act & Order 37)",
+    description: "Enforce bounced Post-Dated Cheques (PDCs) and security cheques under Section 138 NI Act and claim up to 2x cheque amount.",
+    url: "https://www.legalrecovery.in/recovery/post-dated-cheque-amount",
+    type: "article",
   },
 };
 

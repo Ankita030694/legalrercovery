@@ -2,8 +2,8 @@ import { Metadata } from "next";
 import SalaryRecoveryGuideClient from "./SalaryRecoveryGuideClient";
 
 export const metadata: Metadata = {
-  title: "How to Recover Unpaid Salary Legally in India: Guide",
-  description: "Legal guide on recovering unpaid salary, FNF settlements, and delayed wages in India. Learn about labour departments, summary suits, and legal notices.",
+  title: "How to Recover Unpaid Salary from Employer Legally in India (Samadhan, Notice & Sec 33C)",
+  description: "Employer not paying salary after resignation or during employment? Step-by-step guide to serving an Advocate Legal Notice, filing on the Samadhan Portal, and Order 37 Summary Suits.",
   keywords: [
     "how to recover unpaid salary legally India",
     "unpaid salary recovery legal notice",
@@ -18,6 +18,12 @@ export const metadata: Metadata = {
   ],
   alternates: {
     canonical: 'https://www.legalrecovery.in/how-to-recover-unpaid-salary-legally',
+  },
+  openGraph: {
+    title: "How to Recover Unpaid Salary from Employer Legally in India (Samadhan, Notice & Sec 33C)",
+    description: "Recover unpaid salary, incentives, and F&F settlement via Advocate Legal Notice, Samadhan Portal, and Labour Court.",
+    url: "https://www.legalrecovery.in/how-to-recover-unpaid-salary-legally",
+    type: "article",
   },
 };
 

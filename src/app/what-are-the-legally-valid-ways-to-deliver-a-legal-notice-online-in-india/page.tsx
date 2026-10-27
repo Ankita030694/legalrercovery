@@ -2,8 +2,8 @@ import { Metadata } from "next";
 import OnlineNoticeDeliveryClient from "./OnlineNoticeDeliveryClient";
 
 export const metadata: Metadata = {
-  title: "Valid Ways to Deliver a Legal Notice Online in India",
-  description: "Exhaustive legal guide on serving legal notices online in India. Learn about the validity of WhatsApp, email, and digital delivery under BSA 2023.",
+  title: "Legally Valid Ways to Deliver a Legal Notice Online in India (WhatsApp, Email & Speed Post)",
+  description: "Can you serve a legal notice via WhatsApp, Email, and Registered Speed Post in India? Supreme Court rules on double blue ticks, Section 27 Deemed Service & Section 63 BSA certification.",
   keywords: [
     "legally valid ways to deliver legal notice online in india",
     "send legal notice online india validity",
@@ -15,6 +15,12 @@ export const metadata: Metadata = {
   ],
   alternates: {
     canonical: 'https://www.legalrecovery.in/what-are-the-legally-valid-ways-to-deliver-a-legal-notice-online-in-india',
+  },
+  openGraph: {
+    title: "Legally Valid Ways to Deliver a Legal Notice Online in India (WhatsApp, Email & Speed Post)",
+    description: "Court-admissible modes of serving a legal notice in India: Registered Speed Post (Sec 27), WhatsApp Blue Ticks, and Email with Sec 63 BSA Certificate.",
+    url: "https://www.legalrecovery.in/what-are-the-legally-valid-ways-to-deliver-a-legal-notice-online-in-india",
+    type: "article",
   },
 };
 

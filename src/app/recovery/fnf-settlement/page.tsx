@@ -2,8 +2,8 @@ import { Metadata } from "next";
 import FnfSettlementClient from "./FnfSettlementClient";
 
 export const metadata: Metadata = {
-  title: "Recover Full & Final (FNF) Settlement | LegalRecovery",
-  description: "Company withholding your FNF settlement or gratuity? Learn about legal notices, the 2-day wage settlement rule, and Labour Court procedures in India.",
+  title: "Recover Full & Final (F&F) Settlement from Employer (48-Hour Rule & Legal Notice)",
+  description: "Employer withholding your F&F settlement, gratuity, or leave encashment after resignation? Enforce the Code on Wages 48-hour settlement rule & serve an Advocate Legal Notice.",
   keywords: [
     "withholding fnf settlement india",
     "full and final settlement rules labour law",
@@ -17,6 +17,12 @@ export const metadata: Metadata = {
   ],
   alternates: {
     canonical: 'https://www.legalrecovery.in/recovery/fnf-settlement',
+  },
+  openGraph: {
+    title: "Recover Full & Final (F&F) Settlement from Employer (48-Hour Rule & Legal Notice)",
+    description: "Company delaying your F&F settlement or gratuity? Enforce your exit dues via Samadhan portal and Advocate Legal Notice.",
+    url: "https://www.legalrecovery.in/recovery/fnf-settlement",
+    type: "article",
   },
 };
 

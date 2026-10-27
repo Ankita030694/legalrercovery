@@ -2,8 +2,8 @@ import { Metadata } from "next";
 import LegalNoticeRecoverySampleClient from "./LegalNoticeRecoverySampleClient";
 
 export const metadata: Metadata = {
-  title: "Legal Notice for Recovery of Money Sample & Format",
-  description: "Download Legal Notice formats for recovery of money in India (loans, invoices, freelancer dues). Learn how to draft and customize templates legally.",
+  title: "Legal Notice for Recovery of Money Format & Sample PDF/Word (Loans, Invoices & Salary)",
+  description: "Free Legal Notice for Recovery of Money format & sample drafts in India for friendly loans, unpaid B2B invoices, salary/F&F dues, and security deposits—or dispatch an Advocate Notice online.",
   keywords: [
     "legal notice for recovery of money sample",
     "money recovery legal notice format",
@@ -17,6 +17,12 @@ export const metadata: Metadata = {
   ],
   alternates: {
     canonical: 'https://www.legalrecovery.in/legal-notice-for-recovery-of-money-sample',
+  },
+  openGraph: {
+    title: "Legal Notice for Recovery of Money Format & Sample PDF/Word (Loans, Invoices & Salary)",
+    description: "Court-ready Legal Notice formats and sample drafts for money recovery in India, or get an Advocate-Drafted Legal Notice dispatched online.",
+    url: "https://www.legalrecovery.in/legal-notice-for-recovery-of-money-sample",
+    type: "article",
   },
 };
 

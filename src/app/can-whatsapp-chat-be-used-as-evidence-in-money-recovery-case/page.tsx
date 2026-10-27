@@ -2,19 +2,24 @@ import { Metadata } from "next";
 import WhatsappEvidenceClient from "./WhatsappEvidenceClient";
 
 export const metadata: Metadata = {
-  title: "WhatsApp Chat Evidence for Money Recovery in India",
-  description: "Learn how a WhatsApp chat with a blue tick serves as legally binding evidence under the Indian Evidence Act to recover your unpaid money efficiently.",
+  title: "Can WhatsApp Chat Be Used as Evidence in a Money Recovery Case in India? (Sec 63 BSA / 65B)",
+  description: "Yes—WhatsApp messages, voice notes, and blue ticks are admissible in Indian courts for money recovery with a Section 63 BSA (formerly Sec 65B) Certificate and restart the 3-year limitation clock.",
   keywords: [
-    "legal recovery",
-    "recover my money",
-    "recovery of money",
-    "WhatsApp evidence",
-    "Indian Evidence Act Section 65B",
-    "blue tick legal proof",
+    "can whatsapp chat be used as evidence in money recovery case",
+    "whatsapp chat evidence in indian court",
+    "Section 63 BSA certificate whatsapp chat",
+    "Indian Evidence Act Section 65B whatsapp",
+    "blue tick legal proof money recovery",
     "digital evidence India"
   ],
   alternates: {
     canonical: 'https://www.legalrecovery.in/can-whatsapp-chat-be-used-as-evidence-in-money-recovery-case',
+  },
+  openGraph: {
+    title: "Can WhatsApp Chat Be Used as Evidence in a Money Recovery Case in India? (Sec 63 BSA / 65B)",
+    description: "How to use WhatsApp chats, voice notes, and UPI screenshots with a Section 63 BSA certificate to win a money recovery claim in India.",
+    url: "https://www.legalrecovery.in/can-whatsapp-chat-be-used-as-evidence-in-money-recovery-case",
+    type: "article",
   },
 };
 

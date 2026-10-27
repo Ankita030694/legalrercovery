@@ -2,8 +2,8 @@ import { Metadata } from "next";
 import LandlordDepositClient from "./LandlordDepositClient";
 
 export const metadata: Metadata = {
-  title: "Recover Rental Security Deposit from Landlord in India",
-  description: "Legal steps to recover your rental security deposit from a landlord in India. Learn about the Model Tenancy Act, Rent Courts, and Order 37 summary suits.",
+  title: "Landlord Not Returning Security Deposit in India? Legal Notice, Rent Court & 18% Interest",
+  description: "Landlord refusing to refund your rental security deposit after vacating the flat? Serve an Advocate Legal Notice, stop illegal painting deductions & recover 100% deposit + 18% interest.",
   keywords: [
     "recover security deposit landlord india",
     "landlord refusing refund security deposit",
@@ -18,6 +18,12 @@ export const metadata: Metadata = {
   ],
   alternates: {
     canonical: 'https://www.legalrecovery.in/recover-security-deposit-from-landlord-india',
+  },
+  openGraph: {
+    title: "Landlord Not Returning Security Deposit in India? Legal Notice, Rent Court & 18% Interest",
+    description: "Recover your rental security deposit from a defaulting landlord in 7–15 days via an Advocate Legal Notice and Rent Authority escalation.",
+    url: "https://www.legalrecovery.in/recover-security-deposit-from-landlord-india",
+    type: "article",
   },
 };
 
