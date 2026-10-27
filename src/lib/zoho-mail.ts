@@ -200,6 +200,120 @@ export async function getZohoAccountId(token: string, baseDomain: string): Promi
   return accountIdPromise;
 }
 
+// ─────────────────────────────────────────────────────────────────────────────
+// Inbound message inspection helpers (read-only).
+// Used by the inbound email router to fetch the authoritative To/Cc, threadId
+// and RFC threading headers (In-Reply-To / References) for a received message.
+// Requires the ZohoMail.messages.READ scope (already granted to NOTICE_* creds).
+// ─────────────────────────────────────────────────────────────────────────────
+
+export interface ZohoMailContext {
+  token: string;
+  domain: string;
+  accountId: string;
+}
+
+export async function getZohoMailContext(): Promise<ZohoMailContext> {
+  const { token, domain } = await getZohoAccessToken();
+  const accountId = await getZohoAccountId(token, domain);
+  return { token, domain, accountId };
+}
+
+async function zohoGetJson(ctx: ZohoMailContext, path: string): Promise<any | null> {
+  try {
+    const res = await fetch(`${ctx.domain}/api/accounts/${ctx.accountId}/${path}`, {
+      method: "GET",
+      headers: {
+        Authorization: `Zoho-oauthtoken ${ctx.token}`,
+        Accept: "application/json",
+      },
+    });
+    if (!res.ok) return null;
+    return await res.json();
+  } catch (err) {
+    console.error(`[Zoho REST API] GET ${path} failed:`, err);
+    return null;
+  }
+}
+
+let cachedFolderIds: { inbox: string | null; sent: string | null } | null = null;
+
+/**
+ * Resolves the Inbox and Sent folder IDs of the notice mailbox.
+ * Env overrides: ZOHO_INBOX_FOLDER_ID / ZOHO_SENT_FOLDER_ID.
+ * (The folders API needs an extra OAuth scope, so we discover IDs via message listing/search.)
+ */
+export async function getZohoFolderIds(ctx?: ZohoMailContext): Promise<{ inbox: string | null; sent: string | null }> {
+  if (cachedFolderIds && cachedFolderIds.inbox && cachedFolderIds.sent) return cachedFolderIds;
+  const envInbox = process.env.ZOHO_INBOX_FOLDER_ID || null;
+  const envSent = process.env.ZOHO_SENT_FOLDER_ID || null;
+  if (envInbox && envSent) {
+    cachedFolderIds = { inbox: envInbox, sent: envSent };
+    return cachedFolderIds;
+  }
+  const c = ctx || (await getZohoMailContext());
+  let inbox = envInbox;
+  let sent = envSent;
+  if (!inbox) {
+    const list = await zohoGetJson(c, `messages/view?limit=1`);
+    inbox = list?.data?.[0]?.folderId ? String(list.data[0].folderId) : null;
+  }
+  if (!sent) {
+    const search = await zohoGetJson(c, `messages/search?searchKey=${encodeURIComponent("in:sent")}&limit=1`);
+    sent = search?.data?.[0]?.folderId ? String(search.data[0].folderId) : null;
+  }
+  cachedFolderIds = { inbox, sent };
+  return cachedFolderIds;
+}
+
+/** Message metadata (fromAddress, toAddress, ccAddress, subject, threadId, receivedTime, ...). */
+export async function fetchZohoMessageDetails(messageId: string, folderId: string, ctx?: ZohoMailContext): Promise<any | null> {
+  const c = ctx || (await getZohoMailContext());
+  const json = await zohoGetJson(c, `folders/${folderId}/messages/${messageId}/details`);
+  return json?.data && json.data.messageId ? json.data : null;
+}
+
+/** Parsed RFC-822 headers, keyed by lower-cased header name (folded lines unfolded). */
+export async function fetchZohoMessageHeaders(messageId: string, folderId: string, ctx?: ZohoMailContext): Promise<Record<string, string> | null> {
+  const c = ctx || (await getZohoMailContext());
+  const json = await zohoGetJson(c, `folders/${folderId}/messages/${messageId}/header`);
+  const raw = json?.data?.headerContent;
+  if (!raw || typeof raw !== "string") return null;
+
+  const headers: Record<string, string> = {};
+  const lines = raw.split(/\r?\n/);
+  let currentKey: string | null = null;
+  for (const line of lines) {
+    if (/^[ \t]/.test(line) && currentKey) {
+      headers[currentKey] += " " + line.trim();
+      continue;
+    }
+    const idx = line.indexOf(":");
+    if (idx <= 0) continue;
+    const key = line.slice(0, idx).trim().toLowerCase();
+    const value = line.slice(idx + 1).trim();
+    currentKey = key;
+    headers[key] = headers[key] ? `${headers[key]} ${value}` : value;
+  }
+  return headers;
+}
+
+/** Full HTML/text content of a message. */
+export async function fetchZohoMessageContent(messageId: string, folderId: string, ctx?: ZohoMailContext): Promise<string | null> {
+  const c = ctx || (await getZohoMailContext());
+  const json = await zohoGetJson(c, `folders/${folderId}/messages/${messageId}/content`);
+  return typeof json?.data?.content === "string" ? json.data.content : null;
+}
+
+/**
+ * Lists messages from the default (Inbox) view. `start` is 1-based. Max limit 200.
+ */
+export async function listZohoInboxMessages(start: number, limit: number, ctx?: ZohoMailContext): Promise<any[]> {
+  const c = ctx || (await getZohoMailContext());
+  const json = await zohoGetJson(c, `messages/view?start=${start}&limit=${limit}`);
+  return Array.isArray(json?.data) ? json.data : [];
+}
+
 /**
  * Sends an email using the Zoho Mail REST HTTP API.
  * Handles in-memory PDF attachment uploading via raw binary stream.

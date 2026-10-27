@@ -3,6 +3,7 @@ import { getDbAndBucket } from "@/lib/mongodb";
 import { getServerSession } from "next-auth/next";
 import { authOptions } from "@/lib/auth";
 import { ObjectId } from "mongodb";
+import { generateCaseId, peekNextCaseId } from "@/lib/case-id";
 
 export const dynamic = 'force-dynamic';
 
@@ -22,13 +23,8 @@ export async function GET(req: NextRequest) {
     // Check if client is requesting the next generated Case ID placeholder
     const nextIdParam = req.nextUrl.searchParams.get("nextId");
     if (nextIdParam === "true") {
-      const count = await db.collection("cases").countDocuments();
-      const nextNum = String(count + 1).padStart(4, '0');
-      const today = new Date();
-      const day = today.getDate();
-      const month = today.getMonth() + 1;
-      const yearSuffix = today.getFullYear().toString().slice(-2);
-      const caseId = `LR-${nextNum}-${day}${month}${yearSuffix}`;
+      // Preview only — the real ID is reserved atomically at creation time.
+      const caseId = await peekNextCaseId(db);
       return NextResponse.json({ success: true, caseId });
     }
 
@@ -360,12 +356,8 @@ export async function POST(req: NextRequest) {
       return d.toLocaleDateString("en-IN", { day: "numeric", month: "short", year: "numeric" });
     };
 
-    const count = await db.collection("cases").countDocuments();
-    const nextNum = String(count + 1).padStart(4, '0');
-    const day = today.getDate();
-    const month = today.getMonth() + 1;
-    const yearSuffix = today.getFullYear().toString().slice(-2);
-    const caseId = `LR-${nextNum}-${day}${month}${yearSuffix}`;
+    // Atomic, monotonic sequence (never reused after deletions, safe under concurrency)
+    const caseId = await generateCaseId(db, today);
 
     // Build category-specific timeline labels and descriptions
     // loan-recovery:    N1(Day 0) → PC(Day 3) → N3(Day 7) → N4(Day 14)

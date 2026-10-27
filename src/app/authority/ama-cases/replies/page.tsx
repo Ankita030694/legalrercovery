@@ -32,6 +32,7 @@ import {
   Layers
 } from "lucide-react";
 import EmailBodyViewer, { getEmailSnippet, parseEmailContent } from "@/components/EmailBodyViewer";
+import InboundTriageBanner from "@/components/InboundTriageBanner";
 
 interface ReplyMetadata {
   messageId?: string;
@@ -301,6 +302,8 @@ export default function GlobalGmailRepliesPage() {
         <span className="text-slate-300">/</span>
         <span className="text-slate-900 font-bold">All Debtor Inbound Replies</span>
       </div>
+
+      <InboundTriageBanner />
 
       {/* ── GMAIL SHELL ── */}
       <div className="bg-[#f6f8fc] border border-slate-200/90 rounded-3xl shadow-xs overflow-hidden flex flex-col min-h-[780px] w-full">

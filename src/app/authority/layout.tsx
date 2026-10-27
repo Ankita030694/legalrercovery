@@ -23,7 +23,8 @@ import {
   Building2,
   Shield,
   Layers,
-  Scale
+  Scale,
+  Inbox
 } from "lucide-react";
 
 // ── Legal Recovery (Retail) Nav Items ──
@@ -39,6 +40,12 @@ const retailNavigationItems = [
     href: "/authority/replies",
     icon: MessageSquare,
     mobileLabel: "Replies"
+  },
+  {
+    label: "Email Triage",
+    href: "/authority/inbound-triage",
+    icon: Inbox,
+    mobileLabel: "Triage"
   },
   {
     label: "Case Inspector",
@@ -419,7 +426,7 @@ export default function AuthorityLayout({
         <div className={`flex-1 py-6 lg:py-8 w-full ${
           ((typeof isScopedRepresentation !== 'undefined' ? isScopedRepresentation : false) || 
           (pathname || '').startsWith('/authority/ama-cases') || 
-          ['/authority/dispatch-logs', '/authority/transactions', '/authority/contact-submissions', '/authority/conversion-funnel', '/authority/replies', '/authority/ama-cases/dispatch', '/authority/ama-cases/replies'].includes(pathname || ''))
+          ['/authority/dispatch-logs', '/authority/transactions', '/authority/contact-submissions', '/authority/conversion-funnel', '/authority/replies', '/authority/inbound-triage', '/authority/ama-cases/dispatch', '/authority/ama-cases/replies'].includes(pathname || ''))
             ? 'px-4 sm:px-6 lg:px-8' 
             : 'px-4 sm:px-6 lg:px-10 max-w-7xl mx-auto'
         }`}>

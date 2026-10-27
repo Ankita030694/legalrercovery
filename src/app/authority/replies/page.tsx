@@ -31,6 +31,7 @@ import {
   Layers
 } from "lucide-react";
 import EmailBodyViewer, { getEmailSnippet, parseEmailContent } from "@/components/EmailBodyViewer";
+import InboundTriageBanner from "@/components/InboundTriageBanner";
 
 interface ReplyItem {
   _id: string;
@@ -264,6 +265,8 @@ export default function AuthorityRepliesPage() {
           </button>
         </div>
       </div>
+
+      <InboundTriageBanner />
 
       {/* ── 2. KPI METRIC CARDS ── */}
       <div className="grid grid-cols-2 lg:grid-cols-4 gap-3 sm:gap-4">

@@ -152,7 +152,7 @@ export async function POST(req: NextRequest) {
     const pdfFilename = `${cleanDefaulterName}_Notice_${formattedDate}.pdf`;
 
     const emailSubject = caseDoc.category === 'loan-recovery' 
-      ? `LEGAL DEMAND NOTICE FOR RECOVERY OF OUTSTANDING LOAN AMOUNT & FILING OF POLICE COMPLAINT.`
+      ? `LEGAL DEMAND NOTICE FOR RECOVERY OF OUTSTANDING LOAN AMOUNT & FILING OF POLICE COMPLAINT (Ref: ${caseDoc.caseId}-N1)`
       : `Legal Demand Notice – Immediate Attention Required (Ref: ${caseDoc.caseId})`;
 
     let emailBody = '';

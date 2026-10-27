@@ -3,6 +3,7 @@ import { getDbAndBucket } from "@/lib/mongodb";
 import { getServerSession } from "next-auth/next";
 import { authOptions } from "@/lib/auth";
 import { ObjectId } from "mongodb";
+import { reserveCaseSequence, formatCaseId } from "@/lib/case-id";
 
 export const dynamic = "force-dynamic";
 
@@ -94,15 +95,11 @@ export async function POST(req: NextRequest) {
       return d.toLocaleDateString("en-IN", { day: "numeric", month: "short", year: "numeric" });
     };
 
-    // Retrieve the current count of cases to generate sequential, unique collision-free caseIds
-    const initialCount = await db.collection("cases").countDocuments();
-    const dayVal = today.getDate();
-    const monthVal = today.getMonth() + 1;
-    const yearSuffix = today.getFullYear().toString().slice(-2);
+    // Atomically reserve a contiguous block of sequence numbers for this batch
+    const firstSeq = await reserveCaseSequence(db, cases.length);
 
     const caseDocs = cases.map((c, index) => {
-      const nextNum = String(initialCount + index + 1).padStart(4, '0');
-      const caseId = `LR-${nextNum}-${dayVal}${monthVal}${yearSuffix}`;
+      const caseId = formatCaseId(firstSeq + index, today);
 
       // Clean phone and email
       const cleanPhone = c.phone ? c.phone.trim().replace(/\D/g, "") : "";

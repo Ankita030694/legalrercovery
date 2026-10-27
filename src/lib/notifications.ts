@@ -1,6 +1,7 @@
 import { Db, ObjectId } from "mongodb";
 import { sendPaymentSuccessEmail, sendClientNotificationEmail } from "./email";
 import { sendWatiPaymentSuccess, sendWatiClientNoticeNotification } from "./wati";
+import { generateCaseId } from "./case-id";
 
 /**
  * Co-ordinates deduplicated dispatches of payment success emails and WATI WhatsApp alerts.
@@ -64,13 +65,8 @@ export async function processPaymentSuccessNotifications(
     // 2. Generate caseId if not already present
     let caseId = user.caseId;
     if (!caseId) {
-      const count = await db.collection("cases").countDocuments();
-      const nextNum = String(count + 1).padStart(4, '0');
-      const d = new Date();
-      const day = d.getDate();
-      const month = d.getMonth() + 1;
-      const yearSuffix = d.getFullYear().toString().slice(-2);
-      caseId = `LR-${nextNum}-${day}${month}${yearSuffix}`;
+      // Same atomic sequence as cases, so this reference can never collide with a case ID
+      caseId = await generateCaseId(db, new Date());
     }
 
     // 3. Persist the caseId and ensure amountPaid is never reduced for returning users
