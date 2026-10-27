@@ -1,12 +1,11 @@
 import { Metadata } from 'next';
 import Link from 'next/link';
-import Script from 'next/script';
 
 export const metadata: Metadata = {
-  title: 'Advocate Sneha Sharma - Civil Litigation & ODR | Legal Recovery',
+  title: 'Advocate Sneha Sharma - Civil Litigation & ODR | Legal Recovery India',
   description: 'Advocate Sneha Sharma is an expert in civil litigation, commercial contracts, and Online Dispute Resolution (ODR) with a strong track record of debt recovery.',
   alternates: {
-    canonical: 'https://legalrecovery.in/authors/advocate-sneha-sharma',
+    canonical: 'https://www.legalrecovery.in/authors/advocate-sneha-sharma',
   },
 };
 
@@ -23,7 +22,7 @@ const personSchema = {
     },
     "alumniOf": "National Law School of India University (NLSIU)",
     "description": "Advocate Sneha Sharma specializes in civil litigation, commercial recovery, and Online Dispute Resolution (ODR).",
-    "url": "https://legalrecovery.in/authors/advocate-sneha-sharma",
+    "url": "https://www.legalrecovery.in/authors/advocate-sneha-sharma",
     "knowsAbout": ["Civil Procedure Code", "Online Dispute Resolution", "Negotiable Instruments Act", "Debt Recovery", "Contract Law"]
   }
 };
@@ -31,8 +30,7 @@ const personSchema = {
 export default function AdvocateSnehaSharmaPage() {
   return (
     <div className="bg-[#F8F9FB] min-h-screen font-sans text-slate-800">
-      <Script
-        id="sneha-sharma-schema"
+      <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(personSchema) }}
       />

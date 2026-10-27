@@ -1,12 +1,11 @@
 import { Metadata } from 'next';
 import Link from 'next/link';
-import Script from 'next/script';
 
 export const metadata: Metadata = {
-  title: 'Our Legal Experts & Panel Advocates | Legal Recovery',
-  description: 'Meet the legal experts behind Legal Recovery. Our panel of senior advocates specializes in consumer protection, debt recovery, and civil litigation.',
+  title: 'Our Legal Experts & Panel Advocates | Legal Recovery India',
+  description: 'Meet the legal experts behind Legal Recovery India. Led by Founder Anuj Anand Malik and our panel of senior advocates specializing in consumer protection, debt recovery, and civil litigation.',
   alternates: {
-    canonical: 'https://legalrecovery.in/authors',
+    canonical: 'https://www.legalrecovery.in/authors',
   },
 };
 
@@ -22,7 +21,8 @@ const authorListSchema = {
       "item": {
         "@type": "Person",
         "name": "Anuj Anand Malik",
-        "url": "https://www.linkedin.com/in/iamanujmalik/"
+        "url": "https://www.legalrecovery.in/authors/anuj-anand-malik",
+        "sameAs": ["https://www.linkedin.com/in/iamanujmalik/"]
       }
     },
     {
@@ -31,7 +31,7 @@ const authorListSchema = {
       "item": {
         "@type": "Person",
         "name": "Advocate Sneha Sharma",
-        "url": "https://legalrecovery.in/authors/advocate-sneha-sharma"
+        "url": "https://www.legalrecovery.in/authors/advocate-sneha-sharma"
       }
     }
   ]
@@ -40,8 +40,7 @@ const authorListSchema = {
 export default function AuthorsIndexPage() {
   return (
     <div className="bg-[#F8F9FB] min-h-screen font-sans text-slate-800">
-      <Script
-        id="author-list-schema"
+      <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(authorListSchema) }}
       />
@@ -81,12 +80,18 @@ export default function AuthorsIndexPage() {
                 Anuj Anand Malik, Founder of AMA Legal Solutions, is a trusted advocate, loan settlement expert, legal advisor, and banking lawyer. With over a decade of experience in loan settlement, corporate law, financial disputes, and compliance, he leads a result-driven law firm based in India that helps individuals, startups, and businesses achieve legal and financial stability.
               </p>
             </div>
-            <div className="mt-auto p-8 pt-0">
+            <div className="mt-auto p-8 pt-0 flex flex-col gap-2.5">
+              <Link 
+                href="/authors/anuj-anand-malik"
+                className="inline-block bg-[#111827] text-white font-bold py-3 px-6 rounded-xl hover:bg-slate-800 transition-colors w-full text-center text-sm"
+              >
+                View Full Profile & Authored Guides
+              </Link>
               <a 
                 href="https://www.linkedin.com/in/iamanujmalik/"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-block bg-[#111827] text-white font-bold py-3 px-6 rounded-xl hover:bg-slate-800 transition-colors w-full text-center text-sm"
+                className="inline-block border border-[#0077b5] text-[#0077b5] font-bold py-2.5 px-6 rounded-xl hover:bg-[#0077b5] hover:text-white transition-colors w-full text-center text-xs"
               >
                 Connect on LinkedIn
               </a>

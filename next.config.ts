@@ -98,6 +98,16 @@ const nextConfig: NextConfig = {
         destination: "/online-legal-notice",
         permanent: true,
       },
+      {
+        source: "/authors/advocate-aman-chawla",
+        destination: "/authors/anuj-anand-malik",
+        permanent: true,
+      },
+      {
+        source: "/how-to-recover-full-final-settlement-from-employer",
+        destination: "/how-to-recover-full-and-final-settlement-from-employer",
+        permanent: true,
+      },
     ];
   },
 };

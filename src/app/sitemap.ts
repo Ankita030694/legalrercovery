@@ -23,7 +23,7 @@ const STATIC_ROUTES: {
   { path: "/how-it-works", changeFrequency: "monthly", priority: 0.8 },
   { path: "/contact", changeFrequency: "monthly", priority: 0.8 },
   { path: "/authors", changeFrequency: "monthly", priority: 0.7 },
-  { path: "/authors/advocate-aman-chawla", changeFrequency: "monthly", priority: 0.7 },
+  { path: "/authors/anuj-anand-malik", changeFrequency: "monthly", priority: 0.75 },
   { path: "/authors/advocate-sneha-sharma", changeFrequency: "monthly", priority: 0.7 },
   { path: "/blog", changeFrequency: "daily", priority: 0.9 },
   { path: "/privacy-policy", changeFrequency: "yearly", priority: 0.3 },
@@ -263,6 +263,13 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     priority: 0.5,
   }));
 
-  return [...staticEntries, ...blogEntries, ...cityEntries];
+  const noticeCityEntries: MetadataRoute.Sitemap = locationData.map((loc) => ({
+    url: `${SITE_URL}/legal-notice-services/${loc.slug}`,
+    lastModified: new Date(),
+    changeFrequency: "monthly" as const,
+    priority: 0.55,
+  }));
+
+  return [...staticEntries, ...blogEntries, ...cityEntries, ...noticeCityEntries];
 }
 
