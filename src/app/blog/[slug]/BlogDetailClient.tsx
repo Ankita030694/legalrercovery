@@ -87,7 +87,8 @@ const processContent = (html: string) => {
   // Fix known legacy routes in blog content to our updated ones
   modifiedContent = modifiedContent
     .replace(/href=["']\/services\/legal-strategy["']/gi, 'href="/services"')
-    .replace(/href=["']\/legal-notice-to-bank-format["']/gi, 'href="/how-can-i-send-legal-notice"')
+    .replace(/href=["']\/legal-notice-to-bank-format["']/gi, 'href="/online-legal-notice"')
+    .replace(/href=["']\/how-can-i-send-legal-notice["']/gi, 'href="/online-legal-notice"')
     .replace(/href=["']\/resources["']/gi, 'href="/blog"');
 
   // Strip nofollow from internal links (links to our own domain or relative paths)
@@ -166,7 +167,9 @@ const splitContentForInfographic = (html: string) => {
 
 const ArticleDetail = memo(function ArticleDetail({ blog, faqs, reviews, relatedBlogs }: BlogDetailProps) {
   const [currentUrl, setCurrentUrl] = useState('');
-  const [expandedFaqs, setExpandedFaqs] = useState<string[]>([]);
+  const [expandedFaqs, setExpandedFaqs] = useState<string[]>(() =>
+    faqs.slice(0, 2).map((f) => f.id)
+  );
 
   // Process content for TOC
   const { content: processedContent, sections: tocSections } = useMemo(() => {
@@ -722,11 +725,15 @@ const ArticleDetail = memo(function ArticleDetail({ blog, faqs, reviews, related
                             <svg className="w-4 h-4 text-gray-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M19 9l-7 7-7-7" /></svg>
                           </span>
                         </button>
-                        {expandedFaqs.includes(faq.id) && (
-                          <div className="px-4 pb-4 pt-0 text-xs text-gray-600 leading-relaxed pl-10 border-t border-gray-50 pt-3">
-                            {faq.answer}
-                          </div>
-                        )}
+                        <div
+                          className={`px-4 text-xs text-gray-600 leading-relaxed pl-10 transition-all duration-200 overflow-hidden ${
+                            expandedFaqs.includes(faq.id)
+                              ? 'pb-4 pt-3 border-t border-gray-50 max-h-96 opacity-100'
+                              : 'max-h-0 opacity-0 py-0'
+                          }`}
+                        >
+                          {faq.answer}
+                        </div>
                       </div>
                     ))}
                   </div>

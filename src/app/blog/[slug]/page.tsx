@@ -145,14 +145,59 @@ export default async function BlogDetailPage(
   const faqs = mapFaqs(blogDoc);
   const reviews = mapReviews(blogDoc);
 
-  // Fetch up to 2 other related blogs (excluding the current one) to display under "Related Articles"
-  const relatedDocs = await db
+  // Fetch candidate blogs and pick the 4 most topically relevant articles
+  const candidateDocs = await db
     .collection("blogs")
-    .find({ slug: { $ne: blogDoc.slug } })
-    .limit(2)
+    .find(
+      { slug: { $ne: blogDoc.slug } },
+      {
+        projection: {
+          title: 1,
+          subtitle: 1,
+          subtitleKeywords: 1,
+          metaDescription: 1,
+          image: 1,
+          coverImage: 1,
+          date: 1,
+          publishedAt: 1,
+          createdAt: 1,
+          slug: 1,
+        },
+      }
+    )
+    .sort({ createdAt: -1, _id: -1 })
+    .limit(60)
     .toArray();
 
-  const relatedBlogs = relatedDocs.map(mapDatabaseBlog);
+  const stopWords = new Set([
+    "the", "and", "for", "with", "from", "how", "what", "when", "where", "why",
+    "can", "you", "your", "india", "indian", "legal", "recovery", "guide", "steps",
+    "complete", "online", "action", "after", "without", "under", "into", "over",
+  ]);
+  const currentTokens = new Set(
+    `${blog.title} ${blog.subtitle} ${blog.metaDescription}`
+      .toLowerCase()
+      .replace(/[^a-z0-9\s]/g, " ")
+      .split(/\s+/)
+      .filter((w) => w.length > 3 && !stopWords.has(w))
+  );
+
+  const scoredDocs = candidateDocs
+    .map((doc, idx) => {
+      const text = `${doc.title || ""} ${doc.subtitle || doc.subtitleKeywords || ""} ${doc.metaDescription || ""}`.toLowerCase();
+      let score = 0;
+      for (const token of currentTokens) {
+        if (text.includes(token)) score += 2;
+      }
+      // Slight boost for newer posts to ensure fresh crawl discovery
+      score += Math.max(0, (30 - idx) * 0.05);
+      return { doc, score };
+    })
+    .sort((a, b) => b.score - a.score)
+    .slice(0, 4)
+    .map((item) => item.doc);
+
+  const relatedBlogs = scoredDocs.map(mapDatabaseBlog);
 
   const postUrl = `${SITE_URL}/blog/${blog.slug}`;
   const absoluteImageUrl = blog.image
