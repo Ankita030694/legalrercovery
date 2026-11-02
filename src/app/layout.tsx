@@ -7,6 +7,7 @@ import RelatedRecoveryGuides from "@/components/RelatedRecoveryGuides";
 import TimedPopupModal from "@/components/TimedPopupModal";
 import { SITE_URL } from "@/lib/site";
 import { Analytics } from "@vercel/analytics/next";
+import MetaPixel from "@/components/MetaPixel";
 
 
 const geistSans = Geist({
@@ -135,6 +136,7 @@ export default function RootLayout({
         <Footer />
         <TimedPopupModal />
         <Analytics />
+        <MetaPixel />
       </body>
     </html>
   );
