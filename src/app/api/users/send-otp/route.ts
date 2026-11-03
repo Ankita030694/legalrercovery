@@ -4,10 +4,12 @@ import { sendOtpEmail } from "@/lib/email";
 import { sendWatiOtp } from "@/lib/wati";
 import { generateResumeToken, normalizePhoneTenDigits } from "@/lib/funnel-config";
 import crypto from "crypto";
+import { normalizeRecoveryType } from "@/lib/recoveryTypes";
 
 export async function POST(req: NextRequest) {
   try {
-    const { name, email, phone, state, oppositionCount } = await req.json();
+    const { name, email, phone, state, oppositionCount, recoveryType: rawRecoveryType } = await req.json();
+    const recoveryType = normalizeRecoveryType(rawRecoveryType);
 
     if (!name || !email || !phone || !state) {
       return NextResponse.json({ error: "All fields are required" }, { status: 400 });
@@ -83,6 +85,8 @@ export async function POST(req: NextRequest) {
       email,
       phone,
       state,
+      // Primary "what do you wish to recover" head (lead-level; each case stores its own)
+      recoveryType: recoveryType || priorSource?.recoveryType || null,
       otp,
       otpExpires: new Date(Date.now() + 10 * 60 * 1000), // 10 minutes validation window
       otpExpired: false,

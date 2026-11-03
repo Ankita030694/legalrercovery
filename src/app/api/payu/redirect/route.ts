@@ -66,6 +66,8 @@ export async function POST(req: NextRequest) {
 
     let targetPath = "/payment-failure";
     let tokenParam = "";
+    // Purchase details forwarded (via the verified HttpOnly cookie) to /payment-success for the Meta Pixel Purchase event
+    let purchaseInfo: { value: number; numItems: number; recoveryType: string | null } | null = null;
 
     // Look up pendingPaymentUser first (useful for both success migration and failure/cancel resume link)
     let pendingPaymentUser: any = null;
@@ -90,6 +92,12 @@ export async function POST(req: NextRequest) {
         targetPath = "/payment-cancelled";
     } else if (status === "success" && isVerified) {
         targetPath = "/payment-success";
+        // Fallback purchase info from the gateway payload (refined below when the pending record is found)
+        purchaseInfo = {
+          value: Math.round(Number(amount)) || 0,
+          numItems: Number(pendingPaymentUser?.oppositionCount) || 1,
+          recoveryType: pendingPaymentUser?.recoveryType || null,
+        };
         
         try {
           try {
@@ -112,6 +120,12 @@ export async function POST(req: NextRequest) {
             const currentWave = Number(pendingPaymentUser.retargeting?.currentWave) || 0;
             const clickCount = Number(pendingPaymentUser.clickCount) || 0;
             const recoveredViaFunnel = currentWave > 0 || clickCount > 0 || discountPercent > 0;
+
+            purchaseInfo = {
+              value: Number(amtPaid) || 0,
+              numItems: oppCount,
+              recoveryType: pendingPaymentUser.recoveryType || null,
+            };
 
             const autoLoginToken = crypto.randomBytes(32).toString('hex');
             tokenParam = `?token=${autoLoginToken}`;
@@ -151,6 +165,9 @@ export async function POST(req: NextRequest) {
                     $set: {
                       amountPaid: priorAmountPaid + amtPaid,
                       oppositionCount: priorSlots + oppCount,
+                      ...(pendingPaymentUser.recoveryType && !existingUser.primaryRecoveryType
+                        ? { primaryRecoveryType: pendingPaymentUser.recoveryType }
+                        : {}),
                       isPaid: true,
                       payuTxnId: txnid,
                       lastPaymentDate: new Date(),
@@ -173,6 +190,7 @@ export async function POST(req: NextRequest) {
                     email: pendingPaymentUser.email,
                     phone: pendingPaymentUser.phone,
                     state: pendingPaymentUser.state,
+                    primaryRecoveryType: pendingPaymentUser.recoveryType || null,
                     oppositionCount: oppCount,
                     amountPaid: amtPaid,
                     originalAmount,
@@ -292,6 +310,7 @@ export async function POST(req: NextRequest) {
       txnid: txnid, 
       verified: isVerified,
       resumeToken: resumeTokenForCookie,
+      ...(targetPath === "/payment-success" && purchaseInfo ? { purchase: purchaseInfo } : {}),
       time: Date.now() 
     });
     

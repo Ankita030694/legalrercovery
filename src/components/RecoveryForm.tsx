@@ -4,8 +4,10 @@ import React, { useState, useMemo, useEffect } from "react";
 import Link from "next/link";
 import { useRouter } from "next/navigation";
 import { signIn } from "next-auth/react";
-import { User, Mail, Phone, MapPin, CheckCircle, AlertCircle, Loader2, Shield, ArrowLeft, ArrowRight, Lock, LogIn, CreditCard } from "lucide-react";
+import { User, Mail, Phone, MapPin, CheckCircle, AlertCircle, Loader2, Shield, ArrowLeft, ArrowRight, Lock, LogIn, CreditCard, Banknote } from "lucide-react";
 import { fetchWithRetry } from "@/lib/fetchWithRetry";
+import { RECOVERY_TYPES } from "@/lib/recoveryTypes";
+import { trackMetaEvent } from "@/lib/metaPixel";
 
 export const RecoveryForm = () => {
   const PRICE_PER_OPPOSITION = 999; // TO CHANGE TO PRODUCTION PRICE: Change 1 to 999
@@ -15,6 +17,7 @@ export const RecoveryForm = () => {
   const [email, setEmail] = useState("");
   const [phone, setPhone] = useState("");
   const [state, setState] = useState("");
+  const [recoveryType, setRecoveryType] = useState("");
   const [otp, setOtp] = useState("");
   const [pendingId, setPendingId] = useState("");
   const [resendCooldown, setResendCooldown] = useState(0);
@@ -121,8 +124,8 @@ export const RecoveryForm = () => {
   }, [phone]);
 
   const isFormValid = useMemo(() => {
-    return name.trim().length > 0 && isEmailValid && isPhoneValid && state !== "";
-  }, [name, isEmailValid, isPhoneValid, state]);
+    return name.trim().length > 0 && isEmailValid && isPhoneValid && state !== "" && recoveryType !== "";
+  }, [name, isEmailValid, isPhoneValid, state, recoveryType]);
 
   const handleSendOtp = async (e: React.FormEvent) => {
     e.preventDefault();
@@ -137,7 +140,7 @@ export const RecoveryForm = () => {
       const res = await fetchWithRetry("/api/users/send-otp", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ name, email, phone, state, oppositionCount }),
+        body: JSON.stringify({ name, email, phone, state, recoveryType, oppositionCount }),
       });
 
       const data = await res.json().catch(() => ({}));
@@ -151,6 +154,21 @@ export const RecoveryForm = () => {
         setPendingId(data.pendingId);
         setStep(2); // Transition to OTP Verification step
         setResendCooldown(60); // 60s cooldown
+
+        // Meta Pixel: AddToCart — fires only once the OTP has actually been sent
+        // (not on invalid clicks, rate-limit errors, or "Resend OTP").
+        trackMetaEvent(
+          "AddToCart",
+          {
+            value: oppositionCount * PRICE_PER_OPPOSITION,
+            currency: "INR",
+            num_items: oppositionCount,
+            content_type: "product",
+            content_name: "Legal Recovery Notice",
+            ...(recoveryType ? { content_category: recoveryType } : {}),
+          },
+          `atc_${data.pendingId}_${Date.now()}`
+        );
       } else {
         setSubmitError("Failed to initiate email verification.");
       }
@@ -331,7 +349,7 @@ export const RecoveryForm = () => {
       const res = await fetchWithRetry("/api/users/send-otp", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ name, email, phone, state, oppositionCount }),
+        body: JSON.stringify({ name, email, phone, state, recoveryType, oppositionCount }),
       });
 
       const data = await res.json().catch(() => ({}));
@@ -518,6 +536,36 @@ export const RecoveryForm = () => {
                 </svg>
               </div>
             </div>
+          </div>
+
+          {/* Recovery Type Dropdown */}
+          <div className="flex flex-col text-left">
+            <label className="text-xs font-black text-[#111827] mb-1.5 flex items-center gap-1.5">
+              <Banknote className="w-3.5 h-3.5 text-[#DC2626]" /> What do you wish to recover? <span className="text-[#DC2626]">*</span>
+            </label>
+            <div className="relative">
+              <select
+                required
+                value={recoveryType}
+                onChange={(e) => setRecoveryType(e.target.value)}
+                className={`w-full bg-[#F9FAFB] border ${formTouched && recoveryType === "" ? "border-[#DC2626] focus:ring-[#DC2626]/20" : "border-[#E5E7EB] focus:ring-[#DC2626]/10"} rounded-xl px-4 py-3 text-sm text-[#111827] focus:outline-none focus:ring-4 transition-all font-semibold appearance-none cursor-pointer`}
+              >
+                <option value="" disabled hidden>Select recovery type</option>
+                {RECOVERY_TYPES.map((t) => (
+                  <option key={t.value} value={t.value}>{t.label}</option>
+                ))}
+              </select>
+              <div className="absolute right-4 top-1/2 -translate-y-1/2 pointer-events-none text-gray-500">
+                <svg className="w-4 h-4" fill="none" stroke="currentColor" strokeWidth="2.5" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" d="M19 9l-7 7-7-7" />
+                </svg>
+              </div>
+            </div>
+            {oppositionCount > 1 && (
+              <p className="text-[11px] text-slate-500 font-semibold mt-1.5">
+                Recovering from multiple parties for different reasons? Pick the main one — you can set a separate type for each party later.
+              </p>
+            )}
           </div>
 
           {/* Opposition Count Dropdown */}

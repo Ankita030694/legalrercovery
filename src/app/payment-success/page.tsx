@@ -47,7 +47,7 @@ export default async function PaymentSuccessPage(props: {
 
       <div className="bg-white rounded-3xl p-8 sm:p-12 w-full max-w-xl text-center shadow-[0_20px_50px_rgba(16,185,129,0.1)] relative z-10 border border-emerald-100">
         
-        {autoLoginToken && <AutoLogin token={autoLoginToken} />}
+        <AutoLogin token={autoLoginToken} txnid={data.txnid} purchase={data.purchase || null} />
         
         <div className="w-20 h-20 bg-emerald-100 text-emerald-600 rounded-full flex items-center justify-center mx-auto mb-6 shadow-inner border-4 border-white">
           <CheckCircle className="w-10 h-10" />

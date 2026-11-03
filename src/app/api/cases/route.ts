@@ -4,6 +4,7 @@ import { getServerSession } from "next-auth/next";
 import { authOptions } from "@/lib/auth";
 import { ObjectId } from "mongodb";
 import { generateCaseId, peekNextCaseId } from "@/lib/case-id";
+import { normalizeRecoveryType } from "@/lib/recoveryTypes";
 
 export const dynamic = 'force-dynamic';
 
@@ -239,6 +240,7 @@ export async function POST(req: NextRequest) {
       policeStationAddress,
       representeeId,
       category,
+      recoveryType,
       asOnDate,
       disbursementDate,
       disbursedAmount
@@ -434,6 +436,8 @@ export async function POST(req: NextRequest) {
       userId, // Strictly link case to the authenticated client ObjectId
       caseId,
       category: category || "general-recovery",
+      // "What are you recovering" head for this specific party (optional for admin/bulk flows)
+      recoveryType: normalizeRecoveryType(recoveryType),
       defaulterName,
       entityType,
       phone,

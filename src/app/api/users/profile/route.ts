@@ -63,6 +63,7 @@ export async function GET(req: NextRequest) {
         sendPoliceComplaints: user.sendPoliceComplaints !== false,
         amountPaid,
         oppositionCount: user.oppositionCount || 1,
+        primaryRecoveryType: user.primaryRecoveryType || null,
         allowedLimit,
         usedCases,
         remainingCases

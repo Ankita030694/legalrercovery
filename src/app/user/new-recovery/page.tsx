@@ -29,6 +29,7 @@ import {
 import Link from "next/link";
 import { BuyCreditsModal } from "@/components/BuyCreditsModal";
 import { fetchWithRetry } from "@/lib/fetchWithRetry";
+import { RECOVERY_TYPES } from "@/lib/recoveryTypes";
 
 const formatDateToDisplay = (dateStr: string) => {
   if (!dateStr) return "-";
@@ -65,6 +66,7 @@ export default function NewRecoveryForm() {
   const [stuckAmount, setStuckAmount] = useState("");
   const [dueDate, setDueDate] = useState("");
   const [category, setCategory] = useState("general-recovery");
+  const [recoveryType, setRecoveryType] = useState("");
 
   // ── FORM STATE: SECTION 2 (POLICE AUTHORITY) ──
   const [policeStationName, setPoliceStationName] = useState("");
@@ -101,6 +103,7 @@ export default function NewRecoveryForm() {
     hasUnlimitedCases?: boolean;
     amountPaid?: number;
     oppositionCount?: number;
+    primaryRecoveryType?: string | null;
     allowedLimit?: number;
     usedCases?: number;
     remainingCases?: number;
@@ -367,6 +370,11 @@ export default function NewRecoveryForm() {
           if (data.success && data.profile) {
             setClientProfile(data.profile);
             setOriginalClientProfile(data.profile);
+            // Pre-select the lead-form recovery type for the first case only;
+            // later cases (other opposing parties) must pick their own type.
+            if (data.profile.primaryRecoveryType && !data.profile.usedCases) {
+              setRecoveryType((prev) => prev || data.profile.primaryRecoveryType);
+            }
             if (data.profile.hasUnlimitedCases) {
               const repRes = await fetch("/api/representees");
               if (repRes.ok) {
@@ -518,6 +526,7 @@ export default function NewRecoveryForm() {
     defaulterPincode.length === 6 &&
     stuckAmount &&
     dueDate &&
+    (originalClientProfile?.hasUnlimitedCases || recoveryType) &&
     (previewTab !== "police" || (policeStationName && policeStationEmail && policeStationAddress))
   );
 
@@ -595,7 +604,8 @@ export default function NewRecoveryForm() {
           policeStationEmail,
           policeStationAddress,
           representeeId: selectedRepresenteeId === "self" ? undefined : selectedRepresenteeId,
-          category
+          category,
+          recoveryType: recoveryType || undefined
         }),
       });
 
@@ -1499,6 +1509,32 @@ export default function NewRecoveryForm() {
               </div>
             )}
             
+            {/* Recovery Type (per opposing party) */}
+            {!originalClientProfile?.hasUnlimitedCases && (
+              <div className="flex flex-col">
+                <label className="text-xs font-bold text-slate-600 mb-1.5 flex items-center gap-1.5">
+                  <FileText className="w-3.5 h-3.5 text-slate-400" /> What are you recovering from this party?
+                </label>
+                <div className="relative">
+                  <select
+                    required
+                    value={recoveryType}
+                    onChange={(e) => setRecoveryType(e.target.value)}
+                    className="w-full bg-slate-50 hover:bg-slate-100/50 border border-[#E5E7EB] focus:border-[#DC2626] rounded-xl px-4 py-3 text-sm font-semibold outline-none transition-colors appearance-none cursor-pointer"
+                  >
+                    <option value="" disabled hidden>Select recovery type</option>
+                    {RECOVERY_TYPES.map((t) => (
+                      <option key={t.value} value={t.value}>{t.label}</option>
+                    ))}
+                  </select>
+                  <ChevronDown className="absolute right-4 top-1/2 -translate-y-1/2 w-4 h-4 text-slate-400 pointer-events-none" />
+                </div>
+                <p className="text-[10px] text-slate-400 font-bold uppercase mt-1 leading-none">
+                  Each credit can be used for a different type of claim.
+                </p>
+              </div>
+            )}
+
             {/* Defaulter Name */}
             <div className="flex flex-col">
               <label className="text-xs font-bold text-slate-600 mb-1.5 flex items-center gap-1.5">
