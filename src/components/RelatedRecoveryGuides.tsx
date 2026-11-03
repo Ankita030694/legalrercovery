@@ -16,6 +16,24 @@ const CLUSTERS: Record<string, { heading: string; items: GuideItem[] }> = {
     heading: "Related Salary, F&F Settlement & Employment Legal Guides",
     items: [
       {
+        title: "Experience Letter Not Given by Employer? Legal Action",
+        href: "/experience-letter-not-given-legal-action",
+        tag: "Legal Guide",
+        desc: "Compel release of withheld experience certificates: legal notice, Model Standing Orders, and High Court precedents.",
+      },
+      {
+        title: "Bonus or Incentive Not Received: Mail to HR (Template)",
+        href: "/templates/bonus-incentive-not-received-mail",
+        tag: "Email Template",
+        desc: "Email templates for unpaid bonus, incentive or commission, including after resignation, with the legal points HR can't ignore.",
+      },
+      {
+        title: "Relieving / Experience Letter Request Email Templates",
+        href: "/templates/relieving-experience-letter-request-email",
+        tag: "Email Template",
+        desc: "Polite, firm, and final pre-litigation email formats to compel HR release of withheld relieving and experience letters.",
+      },
+      {
         title: "How to Recover Full & Final (F&F) Settlement from Employer",
         href: "/how-to-recover-full-and-final-settlement-from-employer",
         tag: "F&F Settlement",

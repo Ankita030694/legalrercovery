@@ -23,7 +23,8 @@ const navLinks = [
   { label: "Legal Notice Services", href: "/legal-notice-services" },
   { label: "How It Works", href: "/how-it-works" },
   { label: "Blog", href: "/blog" },
-  { label: "Contact", href: "/contact" }
+  { label: "Contact", href: "/contact" },
+  { label: "Sitemap", href: "/sitemap" }
 ];
 
 

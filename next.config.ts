@@ -108,6 +108,31 @@ const nextConfig: NextConfig = {
         destination: "/how-to-recover-full-and-final-settlement-from-employer",
         permanent: true,
       },
+      {
+        source: "/blog/money-recovery-blinkit-wrongful-delivery",
+        destination: "/legal-notice-to/blinkit",
+        permanent: true,
+      },
+      {
+        source: "/blog/money-recovery-zepto-wrongful-delivery",
+        destination: "/legal-notice-to/zepto",
+        permanent: true,
+      },
+      {
+        source: "/send-a-legal-notice/zomato-refund-not-recieved",
+        destination: "/legal-notice-to/zomato",
+        permanent: true,
+      },
+      {
+        source: "/send-a-legal-notice/swiggy-refund-not-recieved",
+        destination: "/legal-notice-to/swiggy",
+        permanent: true,
+      },
+      {
+        source: "/blog/money-recovery-instamart-wrongful-product-delivery",
+        destination: "/legal-notice-to/swiggy",
+        permanent: true,
+      },
     ];
   },
 };
