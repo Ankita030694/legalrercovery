@@ -107,6 +107,14 @@ export async function generateMetadata(
     description: metaDescription,
     alternates: {
       canonical: `/blog/${blog.slug}`,
+      ...(blog.slug === "koi-paisa-na-de-to-kya-kare"
+        ? {
+            languages: {
+              "en-IN": `${SITE_URL}/blog/koi-paisa-na-de-to-kya-kare`,
+              "hi-IN": `${SITE_URL}/hi/udhar-paisa-wapas-kaise-le`,
+            },
+          }
+        : {}),
     },
     openGraph: {
       title: `${metaTitle} | LegalRecovery`,

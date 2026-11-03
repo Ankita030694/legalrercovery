@@ -16,6 +16,18 @@ const CLUSTERS: Record<string, { heading: string; items: GuideItem[] }> = {
     heading: "Related Salary, F&F Settlement & Employment Legal Guides",
     items: [
       {
+        title: "Salary Recovery in Payslip: Meaning & When It's Illegal",
+        href: "/salary-recovery-in-payslip-meaning",
+        tag: "Salary Recovery",
+        desc: "Challenge illegal payslip deductions, notice recovery on gross CTC, bond clawbacks, and arbitrary damage debits under Wage Code.",
+      },
+      {
+        title: "EPF Claim Rejected? EPF Scheme 2026 Timelines & Remedies",
+        href: "/law/epf-scheme-2026-claim-rejection-remedies",
+        tag: "EPF Recovery",
+        desc: "Statutory escalation for rejected PF claims, member detail mismatches, missing exit dates, and employer non-deposit via EPFiGMS & notices.",
+      },
+      {
         title: "Experience Letter Not Given by Employer? Legal Action",
         href: "/experience-letter-not-given-legal-action",
         tag: "Legal Guide",
@@ -169,6 +181,30 @@ const CLUSTERS: Record<string, { heading: string; items: GuideItem[] }> = {
     heading: "Related Cheque Bounce, Banking Auto-Debit & Cyber Fraud Guides",
     items: [
       {
+        title: "Cheque Bounced 'Account Closed' or 'Signature Mismatch'",
+        href: "/cheque-bounce-account-closed-signature-mismatch",
+        tag: "Return Reasons",
+        desc: "Section 138 applicability for Account Closed, Signature Differs, Refer to Drawer and CTS return reason codes under Supreme Court rulings.",
+      },
+      {
+        title: "Stop Payment Cheque Bounce: Is Section 138 Attracted?",
+        href: "/stop-payment-cheque-bounce-case",
+        tag: "Stop Payment",
+        desc: "When Section 138 applies to payment stopped by drawer return memos, narrow drawer defences, and statutory deadlines.",
+      },
+            {
+        title: "Cheque Bounce Deadline Calculator (Section 138 NI Act)",
+        href: "/tools/cheque-bounce-deadline-calculator",
+        tag: "Interactive Tool",
+        desc: "Instant statutory countdown: 30-day demand notice, 15-day cure period, and 1-month Section 142 complaint deadline.",
+      },
+{
+        title: "New Cheque Bounce Rules: Supreme Court 2025 Guidelines",
+        href: "/law/cheque-bounce-supreme-court-guidelines-2025",
+        tag: "Supreme Court 2025",
+        desc: "Nationwide directions in Sanjabij Tari: WhatsApp/email e-summons, blank cheque presumptions, cash loans over ₹20,000 & compounding costs.",
+      },
+      {
         title: "Legal Notice to Bank for Unauthorized ECS / NACH Debit Reversal",
         href: "/legal-notice-to-bank-unauthorized-ecs-nach-debit-reversal",
         tag: "ECS / NACH",
@@ -209,6 +245,48 @@ const CLUSTERS: Record<string, { heading: string; items: GuideItem[] }> = {
   general: {
     heading: "Essential Money Recovery Laws, Timelines & Legal Notice Guides",
     items: [
+      {
+        title: "BNS 318 Cheating vs Civil Dispute: When Police Act",
+        href: "/law/bns-318-cheating-vs-civil-dispute",
+        tag: "BNS 318 / Cheating",
+        desc: "Distinguish criminal cheating from civil loan default, dishonest intent from inception, and police complaint vs summary suit.",
+      },
+            {
+        title: "Has Your 3-Year Limit Expired? Acknowledgment & Part-Payment",
+        href: "/limitation-extended-by-acknowledgment-part-payment",
+        tag: "Limitation Act",
+        desc: "How WhatsApp acknowledgments under Section 18 and part-payments under Section 19 restart the 3-year limitation clock.",
+      },
+{
+        title: "Chit Fund or Kitty Party Money Not Returned? Legal Steps",
+        href: "/chit-fund-kitty-party-money-not-returned",
+        tag: "Chit & Kitty Default",
+        desc: "Recover defaulted committee or chit money: BNS 316/318 breach of trust FIRs, BUDS Act property attachment, and Order 37 summary suits.",
+      },
+      {
+        title: "Order XXXVII Summary Suit: The Fast Civil Route to Recover Money",
+        href: "/law/order-37-summary-suit-money-recovery",
+        tag: "Order 37 CPC",
+        desc: "Fast-track money recovery under Order XXXVII CPC for promissory notes, cheques and written debt with 10-day leave to defend rule.",
+      },
+      {
+        title: "Is a UPI Transfer Proof of a Loan? Evidence Explained",
+        href: "/upi-transfer-as-proof-of-loan",
+        tag: "UPI Loan Evidence",
+        desc: "How courts treat Google Pay, PhonePe and bank transfers without an agreement, Section 63 BSA rules and Order 37 summary suits.",
+      },
+      {
+        title: "Borrower Left India? How to Recover a Loan From Someone Abroad",
+        href: "/recover-money-from-friend-living-abroad",
+        tag: "Overseas Loan",
+        desc: "Section 20 CPC Indian jurisdiction, Section 15(5) limitation pause, overseas notice service and Section 44A decree execution.",
+      },
+      {
+        title: "Recover Money From Ex-Boyfriend or Girlfriend Legally",
+        href: "/recover-money-from-ex-boyfriend-girlfriend",
+        tag: "Ex-Partner Loan",
+        desc: "Overturn gift claims, use WhatsApp & UPI proof under BSA 2023, and serve a 15-day statutory demand notice.",
+      },
       {
         title: "Time Limit to File Money Recovery Case in India (3-Year Rule)",
         href: "/time-limit-to-file-money-recovery-case-india",
@@ -268,6 +346,7 @@ function detectCluster(pathname: string): { heading: string; items: GuideItem[] 
     p.includes("gratuity") ||
     p.includes("termination") ||
     p.includes("pf-") ||
+    p.includes("epf") ||
     p.includes("incentive") ||
     p.includes("bonus")
   ) {

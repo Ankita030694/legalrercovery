@@ -1,5 +1,30 @@
 [
   {
+    "id": "LR-062",
+    "url": "/hi/udhar-paisa-wapas-kaise-le",
+    "archetype": "H1",
+    "h2s": [
+      "उधार दिया पैसा वापस नहीं मिल रहा? जानिए अपनी कानूनी स्थिति और अधिकार",
+      "वास्तविक उदाहरण कहानी: बिना एग्रीमेंट के दोस्त से ₹3,50,000 की कानूनी वसूली",
+      "अदालती फैसले और मिसालें: भारतीय न्यायालयों ने उधारी वसूली पर क्या कहा",
+      "कानूनी आधार और मुख्य धाराएँ: जिनके तहत होती है पैसे की वसूली",
+      "वैधानिक वसूली सोपान: सबूत संकलन से लेकर बैंक खाते में रकम वापसी तक",
+      "5-चरणीय वसूली प्लेबुक: कानूनी नोटिस से लेकर कोर्ट डिक्री तक",
+      "कानूनी समय सीमा, कोर्ट फोरम और वसूली मानकों की सारणी",
+      "विभिन्न परिस्थितियों में समाधान: अपनी स्थिति के अनुसार चुनें",
+      "सबूतों की चेकलिस्ट: लीगल नोटिस भेजने से पहले ये 6 दस्तावेज़ तैयार रखें",
+      "अक्सर पूछे जाने वाले सवाल: उधार पैसा वापसी और कानूनी प्रक्रिया (FAQs)",
+      "प्राथमिक कानूनी संदर्भ और आधिकारिक स्रोत (Primary Sources)"
+    ],
+    "components": [
+      "Breadcrumbs",
+      "UdharPaisaTableOfContents",
+      "UdharPaisaNoticeCTA",
+      "UdharPaisaProblemTabs",
+      "RelatedRecoveryGuides"
+    ]
+  },
+  {
     "id": "LR-001",
     "url": "/legal-notice-to/amazon",
     "archetype": "B1",
@@ -2910,5 +2935,175 @@
       "Bharatiya Sakshya Adhiniyam, 2023 (Section 63)"
     ],
     "builtAt": "2026-11-03T16:30:00+05:30"
+  },
+  {
+    "id": "LR-063",
+    "url": "/tools/cheque-bounce-deadline-calculator",
+    "archetype": "T2",
+    "h2s": [
+      "Interactive Section 138 Deadline Calculator: Notice, Cure & Court Timelines",
+      "Statutory Timelines Under NI Act: Section 138 & 142 Action Schedule",
+      "Method & Legal Basis: How the Negotiable Instruments Act Enforces Cheque Honours",
+      "Statutory Escalation Flowchart: From Bank Return Memo to Criminal Trial",
+      "Dishonour Reasons & Edge Cases: Does Section 138 Apply?",
+      "Worked Case Study: Industrial Vendor Recovers ₹18,50,000 Cheque Dishonour in 28 Days",
+      "Evidence Checklist: 6 Critical Documents Before Serving Section 138 Notice",
+      "Frequently Asked Questions About Section 138 Notice Timelines & Deadlines",
+      "Primary Statutes, Supreme Court Precedents & Official References"
+    ],
+    "components": [
+      "Breadcrumbs",
+      "HeroQuickAnswer",
+      "KeyStatCards",
+      "ChequeBounceCalculatorTOC",
+      "ChequeBounceCalculatorClient",
+      "StatutoryMilestonesTable",
+      "MethodLegalBasisCards",
+      "EscalationFlowchartSVG",
+      "EdgeCasesAccordion",
+      "WorkedCaseStudyCard",
+      "EvidenceChecklistGrid",
+      "FAQDetailsAccordion",
+      "SourcesList",
+      "ChequeBounceNoticeCTA",
+      "RelatedRecoveryGuides"
+    ],
+    "faqQuestions": [
+      "What is the cheque bounce notice time limit under Section 138?",
+      "Cheque bounce notice in how many days should be answered by the drawer?",
+      "What is the cheque bounce case time limit for filing a complaint in court?",
+      "Can I send a cheque bounce notice after 30 days of receiving the return memo?",
+      "What is the 138 notice period if the drawer refuses or avoids delivery of the notice?",
+      "Does Section 138 apply if the cheque bounced due to 'Account Closed' or 'Stop Payment'?",
+      "What did the Supreme Court change in cheque bounce guidelines in September 2025?",
+      "Cheque bounce hone ke kitne din baad legal notice bhejna padta hai?"
+    ],
+    "wordCount": 1680,
+    "artefacts": [
+      "Interactive 3-Step Client Island Stepper: Cheque date, presentation date, return memo date, 30-day notice countdown, 15-day cure window, and Section 142 complaint deadline",
+      "Statutory Milestones & Fatal Errors Benchmark Table: Presentation (3m), Notice (30d), Cure (15d), Complaint (1m), Civil suit (3y)",
+      "Hand-authored SVG Diagram: Statutory Escalation Hierarchy from Return Memo to Court Trial & Section 143A interim relief",
+      "Edge Cases Accordion: Account Closed (NEPC Micon), Signature Differs (Laxmi Dyechem), Stop Payment (Goaplast), Security Cheque (Bir Singh), Director Liability (SMS Pharma)",
+      "Worked Case Study: SunTech Fabrication recovers ₹18,50,000 industrial supply debt in 28 days via Section 138 statutory tracking",
+      "Evidence Checklist: 6-point BSA Section 63 compliant evidentiary document checklist"
+    ],
+    "sources": [
+      "Negotiable Instruments Act, 1881 (Section 138, 141, 142 & 143A)",
+      "Supreme Court of India — Sanjabij Tari v. Kishore S. Borcar (September 2025)",
+      "Reserve Bank of India Circular DBOD.AML.BC.No.47/14.01.001/2011-12 (3-Month Cheque Validity)",
+      "Bharatiya Sakshya Adhiniyam, 2023 (Section 63)",
+      "Supreme Court Landmark Precedents: NEPC Micon, Goaplast & Laxmi Dyechem"
+    ],
+    "builtAt": "2026-11-03T18:05:00+05:30"
+  },
+  {
+    "id": "LR-066",
+    "url": "/stop-payment-cheque-bounce-case",
+    "archetype": "G3",
+    "h2s": [
+      "Does 'Payment Stopped by Drawer' Attract Section 138 Criminal Proceedings?",
+      "Landmark Supreme Court Rulings on Stop Payment Liability",
+      "Difference Between Stop Payment and Cheque Bounce: Banking vs Legal Reality",
+      "When Does a Stop Payment Defence Actually Work in Court?",
+      "Statutory Resolution Rail: From Stop Payment Memo to Court Decree",
+      "The 5-Step Escalation Playbook: Converting a Stop Payment Memo into Full Recovery",
+      "Statutory Deadlines & Legal Benchmarks: Section 138 NI Act",
+      "Dispute Scenarios: Handling Specific Stop Payment Defences",
+      "Worked Case Study: Supplier Recovers ₹6,50,000 Cheque Amount Plus 20% Interim Compensation",
+      "Pre-Flight Checklist: 6 Critical Documents for a Stop Payment Section 138 Notice",
+      "Document & Evidence Matrix: What to Present in Court",
+      "Section 138 Legal Notice Format: Stop Payment Dishonour",
+      "Frequently Asked Questions About Stop Payment Cheque Bounce Cases",
+      "Statutes, Supreme Court Judgments & Primary Legal References"
+    ],
+    "components": [
+      "Breadcrumbs",
+      "StopPaymentTableOfContents",
+      "StopPaymentNoticeCTA",
+      "StopPaymentProblemTabs",
+      "StopPaymentChecklistWizard",
+      "RelatedRecoveryGuides"
+    ],
+    "faqQuestions": [
+      "Is 'Payment Stopped by Drawer' considered a cheque bounce under Section 138 of the NI Act?",
+      "What is the difference between a stop payment and a cheque bounce?",
+      "Can a cheque returned as 'Payment Stopped' be presented again to the bank?",
+      "What defences can a drawer raise in a stop payment cheque bounce case?",
+      "What is the timeline to send a legal notice after a stop payment memo?",
+      "Stop payment cheque bounce case in Hindi: क्या स्टॉप पेमेंट करने पर चेक बाउंस का केस दर्ज हो सकता है?",
+      "Can I claim 20% interim compensation in a stop payment cheque bounce case?",
+      "Can I file an Order 37 summary suit along with a Section 138 complaint for stop payment?"
+    ],
+    "wordCount": 2280,
+    "artefacts": [
+      "Hand-authored SVG flowchart (cheque bounce escalation)",
+      "Statutory deadlines & benchmarks table",
+      "Document & Evidence Matrix table (Archetype G3)",
+      "Interactive Checklist Wizard with progress bar",
+      "Section 138 Legal Notice format template",
+      "Worked commercial case study (₹6,50,000 recovery)"
+    ],
+    "sources": [
+      "https://www.indiacode.nic.in/handle/123456789/2189",
+      "https://main.sci.gov.in/judgment/judis/14983.pdf",
+      "https://main.sci.gov.in/judgment/judis/18320.pdf",
+      "https://main.sci.gov.in/judgment/judis/39745.pdf",
+      "https://main.sci.gov.in/supremecourt/2024/29841/29841_2024_1_1501_56412_Judgement_25-Sep-2025.pdf",
+      "https://main.sci.gov.in/judgment/judis/39566.pdf",
+      "https://www.indiacode.nic.in/handle/123456789/21735"
+    ],
+    "builtAt": "2026-11-03T18:15:00+05:30"
+  },
+  {
+    "id": "LR-067",
+    "url": "/cheque-bounce-account-closed-signature-mismatch",
+    "archetype": "G4",
+    "h2s": [
+      "Bank Return Reason vs Section 138 Applicability: The Definitive Comparison Matrix",
+      "Which Legal Strategy Fits Your Dispute? 3 Real-World Scenarios",
+      "Account Closed Cheque Bounce: Why Section 138 Applies Under NEPC Micon Precedent",
+      "Signature Mismatch & 'Signature Differs': The 3-Judge Bench Ruling in Laxmi Dyechem",
+      "'Refer to Drawer' & 'Payment Stopped': Criminal Liability vs Legitimate Defenses",
+      "Non-138 Technical Returns: Stale Cheques, CTS Defects & Alternative Civil Remedies",
+      "Statutory Dishonour Escalation Rail: From Bank Return Memo to Section 138 Filing",
+      "Bank Return Memo Reason Explorer: Scenario-by-Scenario Action Guide",
+      "Landmark Order Digest: 4 Supreme Court Precedents Enforcing Section 138",
+      "Worked Case Study: Creditor Enforces ₹4,50,000 'Account Closed' & 'Signature Mismatch' Cheque",
+      "Dishonoured Cheque Evidence Checklist: 6 Critical Documents for Section 138 Notice",
+      "Frequently Asked Questions: Cheque Bounce Return Reasons & Section 138 NI Act",
+      "Primary Statutory Authorities & Landmark Supreme Court Cheque Bounce Judgments"
+    ],
+    "components": [
+      "Breadcrumbs",
+      "ChequeBounceTableOfContents",
+      "ChequeBounceNoticeCTA",
+      "ChequeReturnTabs",
+      "RelatedRecoveryGuides"
+    ],
+    "faqQuestions": [
+      "Does Section 138 apply if a cheque is bounced because the account is closed?",
+      "Can a drawer escape a cheque bounce case if the bank memo says 'signature differs'?",
+      "What does 'refer to drawer' mean on a cheque return memo?",
+      "Does a 'stop payment' instruction prevent a cheque bounce case under Section 138?",
+      "What should I do if a cheque bounced for a technical defect like a stale date?",
+      "What is the exact time limit to send a legal notice after a cheque bounces?",
+      "Cheque bounce hone par account closed ya signature mismatch aaye toh notice kaise bheje?"
+    ],
+    "wordCount": 2240,
+    "artefacts": [
+      "CTS Return Reason vs Section 138 Applicability Comparison Matrix Table",
+      "Hand-authored SVG Section 138 Dishonour Escalation Flowchart",
+      "Interactive Scenario Tab Explorer (ChequeReturnTabs)",
+      "Commercial ₹4,50,000 Worked Case Study with Section 143A Interim Relief",
+      "4 Landmark Supreme Court Precedent Digests (NEPC Micon, Laxmi Dyechem, Goaplast, Sanjabij Tari 2025)",
+      "6-Point Dishonoured Cheque Evidence Checklist"
+    ],
+    "sources": [
+      "https://www.indiacode.nic.in/handle/123456789/2281",
+      "https://main.sci.gov.in/judgment/judgments.php",
+      "https://www.rbi.org.in/scripts/BS_ViewMasCirculardetails.aspx?id=9865",
+      "https://www.indiacode.nic.in/handle/123456789/21735"
+    ],
+    "builtAt": "2026-11-03T18:15:00+05:30"
   }
 ]
