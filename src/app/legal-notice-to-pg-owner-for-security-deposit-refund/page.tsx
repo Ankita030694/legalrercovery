@@ -2,8 +2,8 @@ import { Metadata } from "next";
 import PgHostelRefundClient from "./PgHostelRefundClient";
 
 export const metadata: Metadata = {
-  title: "PG Owner Not Returning Security Deposit? Legal Notice & Complaint in India",
-  description: "PG or hostel owner refusing to refund your security deposit or making fake notice-period/electricity deductions? Serve an Advocate Legal Notice for 100% deposit refund within 7–15 days.",
+  title: "PG Owner Not Returning Deposit? How to Get It Back",
+  description: "PG or hostel owner keeping your security deposit or making unfair deductions? Lock-in and notice rules, valid deductions and how to demand it back.",
   keywords: [
     "pg security deposit refund legal notice",
     "pg owner not returning security deposit",
@@ -16,8 +16,8 @@ export const metadata: Metadata = {
     canonical: 'https://www.legalrecovery.in/legal-notice-to-pg-owner-for-security-deposit-refund',
   },
   openGraph: {
-    title: "PG Owner Not Returning Security Deposit? Legal Notice & Complaint in India",
-    description: "Recover your PG or hostel security deposit from a defaulting owner via an Advocate Legal Notice and Consumer Protection Act escalation.",
+    title: "PG Owner Not Returning Deposit? How to Get It Back",
+    description: "PG or hostel owner keeping your security deposit or making unfair deductions? Lock-in and notice rules, valid deductions and how to demand it back.",
     url: "https://www.legalrecovery.in/legal-notice-to-pg-owner-for-security-deposit-refund",
     type: "article",
   },

@@ -2,8 +2,8 @@ import { Metadata } from "next";
 import WhatToDoClient from "./WhatToDoClient";
 
 export const metadata: Metadata = {
-  title: "What Happens If a Legal Notice Is Ignored or Not Received in India? (Next Steps)",
-  description: "Debtor ignored, refused, or didn't receive your legal notice or court summons? Learn Section 27 General Clauses Act 'Deemed Service', Order 37 Summary Suit & Ex-Parte Decree rules.",
+  title: "Legal Notice Ignored, Refused or Not Received? What Next",
+  description: "Refusing a legal notice doesn't stop the case: refused or unclaimed post can count as served. What happens next and how a recovery suit proceeds.",
   keywords: [
     "what to do if legal notice is ignored in india",
     "what happens if a legal notice is not received",
@@ -18,8 +18,8 @@ export const metadata: Metadata = {
     canonical: 'https://www.legalrecovery.in/what-to-do-if-legal-notice-is-ignored-india',
   },
   openGraph: {
-    title: "What Happens If a Legal Notice Is Ignored or Not Received in India? (Next Steps)",
-    description: "Debtor ignored, refused, or didn't receive your legal notice or court summons? Learn Section 27 Deemed Service, Order 37 Summary Suit & Ex-Parte Decree steps.",
+    title: "Legal Notice Ignored, Refused or Not Received? What Next",
+    description: "Refusing a legal notice doesn't stop the case: refused or unclaimed post can count as served. What happens next and how a recovery suit proceeds.",
     url: "https://www.legalrecovery.in/what-to-do-if-legal-notice-is-ignored-india",
     type: "article",
   },

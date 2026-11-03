@@ -2,8 +2,8 @@ import { Metadata } from "next";
 import HousingSocietyNoticeClient from "./HousingSocietyNoticeClient";
 
 export const metadata: Metadata = {
-  title: "Legal Notice to Cooperative Housing Society / RWA for Maintenance & Transfer Fee Disputes",
-  description: "Challenging illegal non-occupancy charges, Rs 25,000+ transfer fee demands, NOC refusal, or water disconnection by your Housing Society/RWA? Serve a Registrar & Consumer Court Legal Notice.",
+  title: "Housing Society Maintenance or NOC Dispute? Your Rights",
+  description: "Society charging excess maintenance or transfer fees, or refusing an NOC? Which charges are allowed and how to complain to the registrar.",
   keywords: [
     "housing society maintenance refund dispute",
     "legal notice to cooperative housing society",
@@ -15,8 +15,8 @@ export const metadata: Metadata = {
     canonical: 'https://www.legalrecovery.in/legal-notice-to-cooperative-housing-society-maintenance-disputes',
   },
   openGraph: {
-    title: "Legal Notice to Cooperative Housing Society / RWA for Maintenance & Transfer Fee Disputes",
-    description: "Stop illegal maintenance charges, NOC extortion, and RWA harassment via a Cooperative Registrar & Consumer Act Legal Notice.",
+    title: "Housing Society Maintenance or NOC Dispute? Your Rights",
+    description: "Society charging excess maintenance or transfer fees, or refusing an NOC? Which charges are allowed and how to complain to the registrar.",
     url: "https://www.legalrecovery.in/legal-notice-to-cooperative-housing-society-maintenance-disputes",
     type: "article",
   },

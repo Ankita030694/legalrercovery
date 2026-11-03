@@ -2,8 +2,8 @@ import { Metadata } from "next";
 import SalaryRecoveryStepsClient from "./SalaryRecoveryStepsClient";
 
 export const metadata: Metadata = {
-  title: "How to Recover Unpaid Salary from Employer in India: Legal Notice & Labour Court",
-  description: "Employer not paying salary or FNF settlement? Complete 4-step salary recovery process in India: Advocate Legal Notice, SAMADHAN Portal, Section 33C(2) Labour Court & 18% interest.",
+  title: "Salary Recovery: Meaning & How to Recover Unpaid Salary",
+  description: "'Salary recovery' can mean a payslip deduction or reclaiming unpaid pay. What both mean, and the legal steps to recover salary your employer owes.",
   keywords: [
     "legal steps to recover unpaid salary from employer in india",
     "salary recovery",
@@ -21,8 +21,8 @@ export const metadata: Metadata = {
     canonical: 'https://www.legalrecovery.in/what-are-the-legal-steps-to-recover-unpaid-salary-from-an-employer-in-india',
   },
   openGraph: {
-    title: "How to Recover Unpaid Salary from Employer in India: Legal Notice & Labour Court",
-    description: "Employer not paying salary or FNF settlement? Complete 4-step salary recovery process in India: Advocate Legal Notice, SAMADHAN Portal & Labour Court.",
+    title: "Salary Recovery: Meaning & How to Recover Unpaid Salary",
+    description: "'Salary recovery' can mean a payslip deduction or reclaiming unpaid pay. What both mean, and the legal steps to recover salary your employer owes.",
     url: "https://www.legalrecovery.in/what-are-the-legal-steps-to-recover-unpaid-salary-from-an-employer-in-india",
     type: "article",
   },

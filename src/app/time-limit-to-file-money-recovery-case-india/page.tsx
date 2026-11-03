@@ -2,8 +2,8 @@ import { Metadata } from "next";
 import TimeLimitRecoveryClient from "./TimeLimitRecoveryClient";
 
 export const metadata: Metadata = {
-  title: "Time Limit to File Money Recovery Case in India (3-Year Rule & Court Timeline)",
-  description: "Money recovery ke liye court me kitna time lagta hai? Learn the 3-year Limitation Act filing rule, how UPI/WhatsApp restarts the clock & 15-day Legal Notice vs Order 37 court timelines.",
+  title: "Money Recovery Case Time Limit: 3 Years + Court Timeline",
+  description: "The limit to recover money is 3 years, and a written acknowledgment or part payment can restart it. Plus how long a recovery case takes in court.",
   keywords: [
     "time limit to file money recovery case in india",
     "limitation for recovery of money",
@@ -18,8 +18,8 @@ export const metadata: Metadata = {
     canonical: 'https://www.legalrecovery.in/time-limit-to-file-money-recovery-case-india',
   },
   openGraph: {
-    title: "Time Limit to File Money Recovery Case in India (3-Year Rule & Court Timeline)",
-    description: "Learn the 3-year statutory limitation period for money recovery suits in India, how WhatsApp/UPI restarts the clock, and 15-day Notice vs Order 37 court timelines.",
+    title: "Money Recovery Case Time Limit: 3 Years + Court Timeline",
+    description: "The limit to recover money is 3 years, and a written acknowledgment or part payment can restart it. Plus how long a recovery case takes in court.",
     url: "https://www.legalrecovery.in/time-limit-to-file-money-recovery-case-india",
     type: "article",
   },

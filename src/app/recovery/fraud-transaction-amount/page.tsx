@@ -2,8 +2,8 @@ import { Metadata } from "next";
 import FraudTransactionClient from "./FraudTransactionClient";
 
 export const metadata: Metadata = {
-  title: "Unauthorized Card, SIM Swap or UPI Fraud Transaction? RBI 3-Day Zero Liability Refund",
-  description: "Lost money in an unauthorized credit/debit card, phishing, or SIM-swap transaction? Claim 100% Bank Shadow Credit within 10 days under RBI Zero Liability Circular via Legal Notice.",
+  title: "Fraud Transaction Refund: How Long Does the Bank Take?",
+  description: "Unauthorised card, UPI or SIM-swap debit? RBI's zero-liability rule, shadow credit within 10 working days, and how to make your bank refund you.",
   keywords: [
     "recover fraud transaction amount",
     "unauthorized electronic transaction liability rbi",
@@ -17,8 +17,8 @@ export const metadata: Metadata = {
     canonical: 'https://www.legalrecovery.in/recovery/fraud-transaction-amount',
   },
   openGraph: {
-    title: "Unauthorized Card, SIM Swap or UPI Fraud Transaction? RBI 3-Day Zero Liability Refund",
-    description: "Lost money in an unauthorized credit/debit card or SIM-swap transaction? Claim 100% Bank Shadow Credit under RBI Zero Liability Circular.",
+    title: "Fraud Transaction Refund: How Long Does the Bank Take?",
+    description: "Unauthorised card, UPI or SIM-swap debit? RBI's zero-liability rule, shadow credit within 10 working days, and how to make your bank refund you.",
     url: "https://www.legalrecovery.in/recovery/fraud-transaction-amount",
     type: "article",
   },

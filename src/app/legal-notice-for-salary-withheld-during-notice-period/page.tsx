@@ -2,8 +2,8 @@ import { Metadata } from "next";
 import NoticePeriodSalaryClient from "./NoticePeriodSalaryClient";
 
 export const metadata: Metadata = {
-  title: "Salary Withheld During Notice Period? Meaning, Law & Legal Notice to Employer",
-  description: "Can an employer hold your monthly salary while serving notice period? Understand 'Salary Withheld' meaning, Payment of Wages Act rules & serve a Legal Notice to release held salary.",
+  title: "Salary Withheld Meaning: Can a Company Hold Your Pay?",
+  description: "What 'salary withheld' means, whether an employer can hold your pay during the notice period, and how to get withheld salary released.",
   keywords: [
     "salary withheld meaning",
     "employer withheld notice period salary",
@@ -16,8 +16,8 @@ export const metadata: Metadata = {
     canonical: "https://www.legalrecovery.in/legal-notice-for-salary-withheld-during-notice-period",
   },
   openGraph: {
-    title: "Salary Withheld During Notice Period? Meaning, Law & Legal Notice to Employer",
-    description: "Can an employer hold your monthly salary while serving notice period? Understand 'Salary Withheld' meaning & serve an Advocate Legal Notice.",
+    title: "Salary Withheld Meaning: Can a Company Hold Your Pay?",
+    description: "What 'salary withheld' means, whether an employer can hold your pay during the notice period, and how to get withheld salary released.",
     url: "https://www.legalrecovery.in/legal-notice-for-salary-withheld-during-notice-period",
     type: "article",
   },

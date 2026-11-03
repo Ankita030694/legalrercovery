@@ -2,8 +2,8 @@ import { Metadata } from "next";
 import FlipkartRefundComplaintClient from "./FlipkartRefundComplaintClient";
 
 export const metadata: Metadata = {
-  title: "Flipkart Return Rejected or Refund Delayed? Grievance Officer, NCH & Legal Notice",
-  description: "Flipkart return rejected, item not picked up, or refund stuck after pickup? Escalate to Flipkart Grievance Officer, NCH 1915, e-Jagriti & serve an Advocate Legal Notice for 100% refund.",
+  title: "Flipkart Not Returning Your Product or Refund? What to Do",
+  description: "Return pickup delayed, return rejected or refund stuck? The Flipkart grievance route, NCH 1915 and when a legal notice or consumer case makes sense.",
   keywords: [
     "flipkart return rejected legal remedy",
     "flipkart not returning my product",
@@ -18,8 +18,8 @@ export const metadata: Metadata = {
     canonical: "https://www.legalrecovery.in/flipkart-return-refund-complaint",
   },
   openGraph: {
-    title: "Flipkart Return Rejected or Refund Delayed? Grievance Officer, NCH & Legal Notice",
-    description: "Flipkart return rejected, item not picked up, or refund stuck after pickup? Escalate to Flipkart Grievance Officer, NCH 1915, e-Jagriti & serve an Advocate Legal Notice.",
+    title: "Flipkart Not Returning Your Product or Refund? What to Do",
+    description: "Return pickup delayed, return rejected or refund stuck? The Flipkart grievance route, NCH 1915 and when a legal notice or consumer case makes sense.",
     url: "https://www.legalrecovery.in/flipkart-return-refund-complaint",
     type: "article",
   },

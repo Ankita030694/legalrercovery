@@ -2,8 +2,8 @@ import { Metadata } from "next";
 import UnauthorizedBankDeductionClient from "./UnauthorizedBankDeductionClient";
 
 export const metadata: Metadata = {
-  title: "Bank Deducted Money Without Consent? Recover Unauthorized Bank Charges & Lien",
-  description: "Bank deducted hidden charges, wrongful penal interest, insurance premiums, or set-off funds without consent? Enforce RBI Fair Practices & Banking Ombudsman refund rules via Legal Notice.",
+  title: "Money Deducted From Bank Account Without Permission?",
+  description: "Bank debited charges, penal interest or an insurance premium without consent? Why it happens, what RBI rules say and how to get your money back.",
   keywords: [
     "recover unauthorized bank deduction",
     "unauthorized bank charges refund india",
@@ -19,8 +19,8 @@ export const metadata: Metadata = {
     canonical: 'https://www.legalrecovery.in/recovery/unauthorized-bank-deduction',
   },
   openGraph: {
-    title: "Bank Deducted Money Without Consent? Recover Unauthorized Bank Charges & Lien",
-    description: "Bank deducted hidden charges, wrongful penal interest, or insurance premiums without consent? Enforce RBI refund rules via Legal Notice.",
+    title: "Money Deducted From Bank Account Without Permission?",
+    description: "Bank debited charges, penal interest or an insurance premium without consent? Why it happens, what RBI rules say and how to get your money back.",
     url: "https://www.legalrecovery.in/recovery/unauthorized-bank-deduction",
     type: "article",
   },

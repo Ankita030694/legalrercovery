@@ -2,8 +2,8 @@ import { Metadata } from "next";
 import ChequeBounceTimelineClient from "./ChequeBounceTimelineClient";
 
 export const metadata: Metadata = {
-  title: "Cheque Bounce Notice Timeline (Sec 138 NI Act): 30-Day Notice & 15-Day Payment Rule",
-  description: "Cheque bounce hone ke kitne din baad notice dena chahiye? Exact Section 138 NI Act timeline: 30 days from Bank Return Memo to send Legal Notice + 15 days for payment + 30 days to file court case.",
+  title: "Cheque Bounce Notice Period: 30-Day Rule (कितने दिन में)",
+  description: "चेक बाउंस के बाद नोटिस कितने दिन में? Send the Section 138 notice within 30 days of the bank's return memo; the drawer then gets 15 days to pay.",
   keywords: [
     "cheque bounce notice timeline",
     "चेक बाउंस होने के कितने दिन बाद नोटिस देना चाहिए",
@@ -17,8 +17,8 @@ export const metadata: Metadata = {
     canonical: 'https://www.legalrecovery.in/cheque-bounce-notice-timeline-section-138',
   },
   openGraph: {
-    title: "Cheque Bounce Notice Timeline (Sec 138 NI Act): 30-Day Notice & 15-Day Payment Rule",
-    description: "Exact statutory deadlines under Section 138 NI Act: 30 days to dispatch Legal Notice after return memo, 15 days to pay, and 30 days to file complaint.",
+    title: "Cheque Bounce Notice Period: 30-Day Rule (कितने दिन में)",
+    description: "चेक बाउंस के बाद नोटिस कितने दिन में? Send the Section 138 notice within 30 days of the bank's return memo; the drawer then gets 15 days to pay.",
     url: "https://www.legalrecovery.in/cheque-bounce-notice-timeline-section-138",
     type: "article",
   },

@@ -2,8 +2,8 @@ import { Metadata } from "next";
 import SendLegalNoticeClient from "./SendLegalNoticeClient";
 
 export const metadata: Metadata = {
-  title: "How to Send a Legal Notice to Someone in India (Process, Fees & Kaise Bheje)",
-  description: "Step-by-step guide on how to send a legal notice to someone in India (Online Legal Notice Kaise Bheje): advocate drafting charges, Speed Post RPAD rules & 15-day notice period.",
+  title: "Send a Legal Notice Online in India (Kaise Bheje): Steps",
+  description: "How to send a legal notice online: do you need a lawyer, drafting charges, Speed Post delivery and the 15-day notice period, step by step.",
   keywords: [
     "how to send legal notice to someone",
     "online legal notice kaise bheje",
@@ -18,8 +18,8 @@ export const metadata: Metadata = {
     canonical: 'https://www.legalrecovery.in/send-legal-notice-online-india',
   },
   openGraph: {
-    title: "How to Send a Legal Notice to Someone in India (Process, Fees & Kaise Bheje)",
-    description: "Step-by-step guide on how to send a legal notice to someone in India: advocate drafting charges, Speed Post RPAD rules & 15-day notice period.",
+    title: "Send a Legal Notice Online in India (Kaise Bheje): Steps",
+    description: "How to send a legal notice online: do you need a lawyer, drafting charges, Speed Post delivery and the 15-day notice period, step by step.",
     url: "https://www.legalrecovery.in/send-legal-notice-online-india",
     type: "article",
   },

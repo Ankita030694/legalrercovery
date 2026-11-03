@@ -2,8 +2,8 @@ import { Metadata } from "next";
 import EmployerWithholdingClient from "./EmployerWithholdingClient";
 
 export const metadata: Metadata = {
-  title: "Legal Action Against Employer for Not Giving Relieving Letter & Experience Certificate",
-  description: "Company withholding your relieving letter, experience certificate, or F&F after resignation? Serve an Advocate Legal Notice and file a Labour Commissioner complaint to force release in 7–15 days.",
+  title: "Employer Not Giving Relieving Letter? Legal Action Steps",
+  description: "Company holding back your relieving or experience letter after resignation? When that's unlawful, what to send HR and when to issue a legal notice.",
   keywords: [
     "legal action against employer for not giving relieving letter",
     "withholding relieving letter",
@@ -17,8 +17,8 @@ export const metadata: Metadata = {
     canonical: 'https://www.legalrecovery.in/employer-withholding-relieving-letter-legal-action',
   },
   openGraph: {
-    title: "Legal Action Against Employer for Not Giving Relieving Letter & Experience Certificate",
-    description: "Force your employer to release a withheld relieving letter, experience certificate, and F&F settlement via Advocate Legal Notice.",
+    title: "Employer Not Giving Relieving Letter? Legal Action Steps",
+    description: "Company holding back your relieving or experience letter after resignation? When that's unlawful, what to send HR and when to issue a legal notice.",
     url: "https://www.legalrecovery.in/employer-withholding-relieving-letter-legal-action",
     type: "article",
   },

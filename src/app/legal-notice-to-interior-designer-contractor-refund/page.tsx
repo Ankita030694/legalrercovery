@@ -2,8 +2,8 @@ import { Metadata } from "next";
 import InteriorDesignerRefundClient from "./InteriorDesignerRefundClient";
 
 export const metadata: Metadata = {
-  title: "Legal Notice to Interior Designer or Home Contractor for Refund & Incomplete Work",
-  description: "Interior designer or renovation contractor abandoned work, delayed handover, or used substandard materials? Serve a Consumer Protection Act Legal Notice for advance refund + damages.",
+  title: "Interior Designer Took Money, Work Incomplete? Get Refund",
+  description: "Interior designer or contractor abandoned the work, delayed handover or used poor material? How to recover your advance and claim compensation.",
   keywords: [
     "legal notice to interior designer for incomplete work",
     "consumer complaints interior contracts rejection reasons india",
@@ -15,8 +15,8 @@ export const metadata: Metadata = {
     canonical: "https://www.legalrecovery.in/legal-notice-to-interior-designer-contractor-refund",
   },
   openGraph: {
-    title: "Legal Notice to Interior Designer or Home Contractor for Refund & Incomplete Work",
-    description: "Recover advance payments and claim compensation from defaulting interior designers or contractors via Legal Notice & Consumer Court.",
+    title: "Interior Designer Took Money, Work Incomplete? Get Refund",
+    description: "Interior designer or contractor abandoned the work, delayed handover or used poor material? How to recover your advance and claim compensation.",
     url: "https://www.legalrecovery.in/legal-notice-to-interior-designer-contractor-refund",
     type: "article",
   },

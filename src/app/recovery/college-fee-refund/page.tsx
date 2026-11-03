@@ -2,8 +2,8 @@ import { Metadata } from "next";
 import CollegeFeeRefundClient from "./CollegeFeeRefundClient";
 
 export const metadata: Metadata = {
-  title: "College Fee Refund on Admission Cancellation: UGC 100% Refund Rule & Legal Notice",
-  description: "College or university refusing tuition fee refund or holding original certificates after admission withdrawal? Enforce UGC & AICTE 100% Fee Refund Guidelines via Advocate Legal Notice.",
+  title: "College Fee Refund After Admission Cancellation: UGC Rule",
+  description: "Withdrew your admission and the college won't refund fees or return certificates? What the UGC refund rules say and how to get your money back.",
   keywords: [
     "college fee refund India",
     "university admission cancellation refund",
@@ -21,8 +21,8 @@ export const metadata: Metadata = {
     canonical: 'https://www.legalrecovery.in/recovery/college-fee-refund',
   },
   openGraph: {
-    title: "College Fee Refund on Admission Cancellation: UGC 100% Refund Rule & Legal Notice",
-    description: "College or university refusing tuition fee refund or holding original certificates after admission withdrawal? Enforce UGC & AICTE 100% Fee Refund Guidelines.",
+    title: "College Fee Refund After Admission Cancellation: UGC Rule",
+    description: "Withdrew your admission and the college won't refund fees or return certificates? What the UGC refund rules say and how to get your money back.",
     url: "https://www.legalrecovery.in/recovery/college-fee-refund",
     type: "article",
   },

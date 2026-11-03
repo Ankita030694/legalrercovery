@@ -2,8 +2,8 @@ import { Metadata } from "next";
 import BuilderBookingCancellationRefundClient from "./BuilderBookingCancellationRefundClient";
 
 export const metadata: Metadata = {
-  title: "Flat Booking Cancellation Refund: Legal Notice to Builder (RERA & Token Money)",
-  description: "Builder forfeiting your token money or refusing flat booking cancellation refund? Serve a RERA & Consumer Act Legal Notice to the builder for 100% booking refund + interest.",
+  title: "Flat Booking Cancelled? Get Your Booking Amount Back",
+  description: "Builder forfeiting your booking or token amount after cancellation? How much a builder can legally deduct under RERA and how to demand a refund.",
   keywords: [
     "flat booking cancellation refund rules",
     "legal notice to builder for token money refund",
@@ -15,8 +15,8 @@ export const metadata: Metadata = {
     canonical: "https://www.legalrecovery.in/builder-booking-cancellation-refund-legal-notice",
   },
   openGraph: {
-    title: "Flat Booking Cancellation Refund: Legal Notice to Builder (RERA & Token Money)",
-    description: "Recover token money and booking advances from builders after flat cancellation via RERA and Advocate Legal Notice.",
+    title: "Flat Booking Cancelled? Get Your Booking Amount Back",
+    description: "Builder forfeiting your booking or token amount after cancellation? How much a builder can legally deduct under RERA and how to demand a refund.",
     url: "https://www.legalrecovery.in/builder-booking-cancellation-refund-legal-notice",
     type: "article",
   },

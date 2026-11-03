@@ -2,8 +2,8 @@ import { Metadata } from "next";
 import WrongDamagedProductClient from "./WrongDamagedProductClient";
 
 export const metadata: Metadata = {
-  title: "Wrong, Broken or Damaged Product Delivered? Legal Notice for 100% Refund",
-  description: "Received a wrong, leaking, broken, or defective item and retailer refuses refund? Check the mandatory proof checklist, Consumer Protection Act 2019 rules & send a Legal Notice.",
+  title: "Received a Damaged or Wrong Product? How to Get a Refund",
+  description: "Damaged, wrong or defective item delivered and the seller won't refund? The proof to keep, your rights under consumer law and the steps to take next.",
   keywords: [
     "legal notice to seller for wrong product delivery",
     "damaged item received e commerce refund",
@@ -17,8 +17,8 @@ export const metadata: Metadata = {
     canonical: "https://www.legalrecovery.in/legal-notice-to-retailer-wrong-damaged-product-delivery",
   },
   openGraph: {
-    title: "Wrong, Broken or Damaged Product Delivered? Legal Notice for 100% Refund",
-    description: "Received a wrong, leaking, broken, or defective item and retailer refuses refund? Check the mandatory proof checklist & serve an Advocate Legal Notice.",
+    title: "Received a Damaged or Wrong Product? How to Get a Refund",
+    description: "Damaged, wrong or defective item delivered and the seller won't refund? The proof to keep, your rights under consumer law and the steps to take next.",
     url: "https://www.legalrecovery.in/legal-notice-to-retailer-wrong-damaged-product-delivery",
     type: "article",
   },

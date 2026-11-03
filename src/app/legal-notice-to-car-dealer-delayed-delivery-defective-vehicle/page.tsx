@@ -2,8 +2,8 @@ import { Metadata } from "next";
 import CarDealerNoticeClient from "./CarDealerNoticeClient";
 
 export const metadata: Metadata = {
-  title: "Legal Notice to Car Dealer: Vehicle Not Delivered, PDI Refusal & Booking Refund",
-  description: "Vehicle not delivered on time, defective car found in PDI, or dealer refusing booking cancellation refund? Serve a Legal Notice to the Car Dealer & Manufacturer for 100% refund + compensation.",
+  title: "Vehicle Not Delivered or Defective? Dealer Refund Rights",
+  description: "Car not delivered on time, defects found at PDI, or booking refund refused? When you can refuse delivery, claim compensation and notice the dealer.",
   keywords: [
     "legal notice to car dealer for delayed delivery",
     "vehicle not delivered",
@@ -18,8 +18,8 @@ export const metadata: Metadata = {
     canonical: 'https://www.legalrecovery.in/legal-notice-to-car-dealer-delayed-delivery-defective-vehicle',
   },
   openGraph: {
-    title: "Legal Notice to Car Dealer: Vehicle Not Delivered, PDI Refusal & Booking Refund",
-    description: "Hold car dealers and manufacturers liable for delayed car delivery, PDI defects, or refused booking refunds under the Consumer Protection Act, 2019.",
+    title: "Vehicle Not Delivered or Defective? Dealer Refund Rights",
+    description: "Car not delivered on time, defects found at PDI, or booking refund refused? When you can refuse delivery, claim compensation and notice the dealer.",
     url: "https://www.legalrecovery.in/legal-notice-to-car-dealer-delayed-delivery-defective-vehicle",
     type: "article",
   },

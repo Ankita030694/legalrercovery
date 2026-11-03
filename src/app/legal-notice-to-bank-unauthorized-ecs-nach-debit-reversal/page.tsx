@@ -2,8 +2,8 @@ import { Metadata } from "next";
 import BankAutoDebitReversalClient from "./BankAutoDebitReversalClient";
 
 export const metadata: Metadata = {
-  title: "Unauthorized ECS/NACH Auto-Debit or Bank Withdrawal? RBI Refund & Legal Notice",
-  description: "Bank or NBFC continuing ECS/NACH auto-debits after mandate cancellation or unauthorized withdrawal? Claim 100% reversal, ₹100/day NPCI penalty & RBI Zero Liability refund via Legal Notice.",
+  title: "ECS/NACH Debit Dispute? Get Wrong Debits & Charges Back",
+  description: "Unauthorised ECS or NACH debit, or debits continuing after you cancelled the mandate? How to dispute it, escalate to RBI and recover the money.",
   keywords: [
     "unauthorized nach debit bank compensation",
     "legal notice to bank to stop ecs debit",
@@ -18,8 +18,8 @@ export const metadata: Metadata = {
     canonical: 'https://www.legalrecovery.in/legal-notice-to-bank-unauthorized-ecs-nach-debit-reversal',
   },
   openGraph: {
-    title: "Unauthorized ECS/NACH Auto-Debit or Bank Withdrawal? RBI Refund & Legal Notice",
-    description: "Bank or NBFC continuing ECS/NACH auto-debits after mandate cancellation? Claim 100% reversal, ₹100/day NPCI penalty & RBI Zero Liability refund.",
+    title: "ECS/NACH Debit Dispute? Get Wrong Debits & Charges Back",
+    description: "Unauthorised ECS or NACH debit, or debits continuing after you cancelled the mandate? How to dispute it, escalate to RBI and recover the money.",
     url: "https://www.legalrecovery.in/legal-notice-to-bank-unauthorized-ecs-nach-debit-reversal",
     type: "article",
   },

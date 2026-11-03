@@ -2,8 +2,8 @@ import { Metadata } from "next";
 import FnfSettlementClient from "./FnfSettlementClient";
 
 export const metadata: Metadata = {
-  title: "Recover Full & Final (F&F) Settlement from Employer (48-Hour Rule & Legal Notice)",
-  description: "Employer withholding your F&F settlement, gratuity, or leave encashment after resignation? Enforce the Code on Wages 48-hour settlement rule & serve an Advocate Legal Notice.",
+  title: "FnF Recovery Meaning & the 2-Working-Day Settlement Rule",
+  description: "What FnF recovery means, what an employer can lawfully deduct from your settlement, and the Code on Wages rule to pay exit dues in 2 working days.",
   keywords: [
     "withholding fnf settlement india",
     "full and final settlement rules labour law",
@@ -19,8 +19,8 @@ export const metadata: Metadata = {
     canonical: 'https://www.legalrecovery.in/recovery/fnf-settlement',
   },
   openGraph: {
-    title: "Recover Full & Final (F&F) Settlement from Employer (48-Hour Rule & Legal Notice)",
-    description: "Company delaying your F&F settlement or gratuity? Enforce your exit dues via Samadhan portal and Advocate Legal Notice.",
+    title: "FnF Recovery Meaning & the 2-Working-Day Settlement Rule",
+    description: "What FnF recovery means, what an employer can lawfully deduct from your settlement, and the Code on Wages rule to pay exit dues in 2 working days.",
     url: "https://www.legalrecovery.in/recovery/fnf-settlement",
     type: "article",
   },

@@ -2,8 +2,8 @@ import { Metadata } from "next";
 import GymRefundNoticeClient from "./GymRefundNoticeClient";
 
 export const metadata: Metadata = {
-  title: "Gym or Fitness Club Refusing Membership Refund? Legal Notice & Consumer Complaint",
-  description: "Gym refusing to refund annual membership fees citing a 'No Refund Policy' after injury, relocation, or poor service? Challenge unfair contracts under Consumer Protection Act 2019 via Legal Notice.",
+  title: "Gym Refusing Membership Refund? Cancel & Get Money Back",
+  description: "Can you cancel a 12-month gym contract and get a refund? When a 'no refund' clause is unfair under consumer law and how to claim your fee back.",
   keywords: [
     "gym membership refund legal notice",
     "how to cancel gym contract refund india",
@@ -16,8 +16,8 @@ export const metadata: Metadata = {
     canonical: 'https://www.legalrecovery.in/legal-notice-to-gym-subscription-fee-refund',
   },
   openGraph: {
-    title: "Gym or Fitness Club Refusing Membership Refund? Legal Notice & Consumer Complaint",
-    description: "Gym refusing to refund annual membership fees citing a 'No Refund Policy'? Challenge unfair contracts under Consumer Protection Act 2019 via Legal Notice.",
+    title: "Gym Refusing Membership Refund? Cancel & Get Money Back",
+    description: "Can you cancel a 12-month gym contract and get a refund? When a 'no refund' clause is unfair under consumer law and how to claim your fee back.",
     url: "https://www.legalrecovery.in/legal-notice-to-gym-subscription-fee-refund",
     type: "article",
   },
