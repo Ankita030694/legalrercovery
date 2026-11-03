@@ -1,6 +1,7 @@
 import { notFound } from "next/navigation";
 import { Metadata } from "next";
 import { locationData, getLocationBySlug } from "../locationData";
+import { INDEX_LOCATION_PAGES } from "@/lib/site";
 import CityRecoveryClient from "./CityRecoveryClient";
 
 // Generate all static params at build time for SSG
@@ -34,6 +35,7 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
     alternates: {
       canonical: `https://www.legalrecovery.in/legal-recovery-by-city/${location.slug}`,
     },
+    robots: { index: INDEX_LOCATION_PAGES, follow: true },
     openGraph: {
       title: location.title,
       description: location.description,

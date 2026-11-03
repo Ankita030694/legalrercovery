@@ -669,7 +669,7 @@
     },
     {
       "day": 10,
-      "status": "pending",
+      "status": "published",
       "pillar": "Friendly Loan & Personal Money Recovery from Friends/Relatives",
       "slug": "borrower-blocked-on-whatsapp-changed-address-money-recovery",
       "title": "Borrower Blocked Your Number & Changed Address? How to Serve a Legal Notice & Attach Bank Accounts (Order 5 & Order 38 CPC)",
@@ -717,11 +717,19 @@
       "uniqueAngleAndStructure": "Show why a postal envelope returned as 'Refused' or 'Addressee Moved' is actually a massive legal victory under Section 27 of the General Clauses Act when combined with digital dispatch via Advocate Email & WhatsApp.",
       "coverImagePrompt": "Strategic legal illustration in navy, gold, and white showing a smartphone screen with 'Blocked Contact' bypassed by an official 'Multi-Channel Advocate Notice (RPAD + Email + Order 38 Rule 5 Bank Attachment)', 16:9",
       "infographicPrompt": "16:9 workflow diagram: 'How to Legally Corner an Evasive or Absconding Debtor in 4 Steps (Section 27 Postal Presumption, Electronic Service, Workplace Notice & Order 38 Bank Freeze)'",
-      "scheduledDate": "2026-11-01"
+      "scheduledDate": "2026-11-01",
+      "publishedDate": "2026-11-02",
+      "publishedAt": "2026-11-02T07:36:38.215Z",
+      "mongoId": "6ae83d8691b833ecb6ecda8e",
+      "liveUrl": "https://www.legalrecovery.in/blog/borrower-blocked-on-whatsapp-changed-address-money-recovery",
+      "coverImageUrl": "/api/blog/image/6ae83d8591b833ecb6ecda86",
+      "infographicImageUrl": "/api/blog/image/6ae83d8591b833ecb6ecda8a",
+      "wordCount": 3210,
+      "fleschReadingEase": 66
     },
     {
       "day": 11,
-      "status": "pending",
+      "status": "published",
       "pillar": "Friendly Loan & Personal Money Recovery from Friends/Relatives",
       "slug": "recover-split-rent-deposit-bills-from-ex-flatmate-roommate-india",
       "title": "Ex-Flatmate Left Without Paying Rent Share, Electricity Bills or Keeping Your Security Deposit? Legal Recovery Guide (2026)",
@@ -769,11 +777,19 @@
       "uniqueAngleAndStructure": "Cover both high-frequency urban scenarios: (Scenario A) You paid the landlord/BESCOM/MSEDCL to stop eviction/disconnection and your flatmate owes you reimbursement u/s 69 Contract Act; (Scenario B) The landlord refunded the Rs 1.5L deposit to the lead flatmate's bank account and they are withholding your Rs 50,000 share.",
       "coverImagePrompt": "Modern urban legal illustration in navy, gold, and white showing an apartment key, a 'Splitwise / Rent & Deposit Ledger', and an 'Advocate Legal Recovery Notice under Section 69 & 70 Contract Act', 16:9",
       "infographicPrompt": "16:9 dual-path infographic: 'Flatmate Money Recovery Playbook: Scenario A (Unpaid Rent/Utility Contribution u/s 69) vs Scenario B (Lead Tenant Pocketed Security Deposit Refund u/s 72 & 316 BNS)'",
-      "scheduledDate": "2026-11-02"
+      "scheduledDate": "2026-11-02",
+      "publishedDate": "2026-11-02",
+      "publishedAt": "2026-11-02T12:04:34.680Z",
+      "mongoId": "6ae87c52165f7d79551b6bd9",
+      "liveUrl": "https://www.legalrecovery.in/blog/recover-split-rent-deposit-bills-from-ex-flatmate-roommate-india",
+      "coverImageUrl": "/api/blog/image/6ae87c51165f7d79551b6bd1",
+      "infographicImageUrl": "/api/blog/image/6ae87c52165f7d79551b6bd5",
+      "wordCount": 2879,
+      "fleschReadingEase": 72
     },
     {
       "day": 12,
-      "status": "pending",
+      "status": "published",
       "pillar": "Unpaid Business Invoice, MSME & Vendor Commercial Recovery",
       "slug": "section-43bh-income-tax-msme-45-day-payment-recovery-legal-notice",
       "title": "How to Use Section 43B(h) Income Tax Disallowance & Section 16 MSMED Act to Force Buyers to Clear Invoices in 15–45 Days (2026)",
@@ -821,7 +837,15 @@
       "uniqueAngleAndStructure": "Include a real financial impact table on a Rs 10,00,000 overdue invoice showing how refusing to pay costs the buyer Rs 3,00,000 in immediate Income Tax disallowance u/s 43B(h) plus ~20.25% p.a. compound non-deductible interest u/s 16 MSMED Act.",
       "coverImagePrompt": "Executive corporate legal graphic in deep navy, gold, and white showing an 'Overdue B2B Tax Invoice' backed by 'Section 43B(h) 30% Tax Disallowance + Section 16 MSMED 3x RBI Compound Interest + MCA Form MSME-1 Alert', 16:9",
       "infographicPrompt": "16:9 financial & legal leverage chart: 'Why CFOs Pay Immediately After a Section 43B(h) + Section 16 MSMED Legal Notice (The Triple Financial Penalty on Defaulting Buyers)'",
-      "scheduledDate": "2026-11-03"
+      "scheduledDate": "2026-11-03",
+      "publishedDate": "2026-11-03",
+      "publishedAt": "2026-11-03T07:38:52.742Z",
+      "mongoId": "6ae98f8caaa8179fea4059fb",
+      "liveUrl": "https://www.legalrecovery.in/blog/section-43bh-income-tax-msme-45-day-payment-recovery-legal-notice",
+      "coverImageUrl": "/api/blog/image/6ae98f8baaa8179fea4059f3",
+      "infographicImageUrl": "/api/blog/image/6ae98f8caaa8179fea4059f7",
+      "wordCount": 3298,
+      "fleschReadingEase": 50.9
     },
     {
       "day": 13,

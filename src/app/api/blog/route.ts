@@ -2,6 +2,7 @@ import { NextRequest, NextResponse } from "next/server";
 import { getDbAndBucket } from "@/lib/mongodb";
 import { getServerSession } from "next-auth/next";
 import { authOptions } from "@/lib/auth";
+import { revalidateBlogSurfaces } from "@/lib/revalidate-blog";
 
 // Ensure database indexes are created
 async function ensureIndexes(db: any) {
@@ -125,6 +126,7 @@ export async function POST(req: NextRequest) {
     };
 
     const result = await db.collection("blogs").insertOne(blogDoc);
+    revalidateBlogSurfaces([cleanSlug]);
 
     return NextResponse.json({
       success: true,

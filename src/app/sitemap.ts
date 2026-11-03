@@ -1,5 +1,5 @@
 import type { MetadataRoute } from "next";
-import { SITE_URL } from "@/lib/site";
+import { SITE_URL, INDEX_LOCATION_PAGES } from "@/lib/site";
 import { locationData } from "./legal-recovery-by-city/locationData";
 
 export const revalidate = 3600;
@@ -269,6 +269,10 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     changeFrequency: "monthly" as const,
     priority: 0.55,
   }));
+
+  if (!INDEX_LOCATION_PAGES) {
+    return [...staticEntries, ...blogEntries];
+  }
 
   return [...staticEntries, ...blogEntries, ...cityEntries, ...noticeCityEntries];
 }

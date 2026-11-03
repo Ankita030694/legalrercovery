@@ -3,6 +3,7 @@ import { getDbAndBucket } from "@/lib/mongodb";
 import { ObjectId } from "mongodb";
 import { getServerSession } from "next-auth/next";
 import { authOptions } from "@/lib/auth";
+import { revalidateBlogSurfaces } from "@/lib/revalidate-blog";
 
 // 1. GET /api/blog/[slug] - Publicly fetch a single blog post
 export async function GET(
@@ -146,6 +147,7 @@ export async function PUT(
     );
 
     const updatedBlog = await db.collection("blogs").findOne({ slug: targetSlug });
+    revalidateBlogSurfaces([existing.slug, targetSlug]);
 
     return NextResponse.json({
       success: true,
@@ -192,6 +194,7 @@ export async function DELETE(
 
     // Delete blog document
     await db.collection("blogs").deleteOne({ slug: slug.toLowerCase() });
+    revalidateBlogSurfaces([blog.slug]);
 
     return NextResponse.json({
       success: true,

@@ -571,12 +571,33 @@ async function publishLegalRecoveryBlog() {
       }
     }
 
-    // 6. Warm live URL, /blog hub, and /sitemap.xml & Submit Sitemap to Google Search Console
+    // 6. Revalidate cached pages, wait until the live sitemap lists the new post, then submit to GSC.
+    //    A plain fetch of a stale ISR page returns the old copy, so the sitemap used to be
+    //    submitted before it contained the new URL.
     try {
-      console.log(`🌐 Warming live URL (${liveUrl}), /blog hub, and /sitemap.xml...`);
+      console.log("♻️ Revalidating /sitemap.xml, homepage, /blog and the new post...");
+      const revalidateRes = await fetch("https://www.legalrecovery.in/api/revalidate", {
+        method: "POST",
+        headers: { "Content-Type": "application/json", "x-api-key": process.env.ADMIN_API_KEY || "" },
+        body: JSON.stringify({ slug: cleanSlug }),
+      }).catch((e) => ({ ok: false, status: e.message }));
+      if (!revalidateRes.ok) {
+        console.warn(`⚠️ Revalidation call failed (${revalidateRes.status}); sitemap may lag until the hourly refresh.`);
+      }
+
       await fetch(liveUrl).catch(() => {});
       await fetch("https://www.legalrecovery.in/blog").catch(() => {});
-      await fetch("https://www.legalrecovery.in/sitemap.xml").catch(() => {});
+
+      let sitemapHasPost = false;
+      for (let attempt = 1; attempt <= 6 && !sitemapHasPost; attempt++) {
+        const xml = await fetch(`https://www.legalrecovery.in/sitemap.xml?ts=${Date.now()}`)
+          .then((r) => r.text())
+          .catch(() => "");
+        sitemapHasPost = xml.includes(`/blog/${cleanSlug}<`);
+        if (!sitemapHasPost) await new Promise((r) => setTimeout(r, 10000));
+      }
+      console.log(sitemapHasPost ? "✅ Live sitemap lists the new post." : "⚠️ New post not yet in live sitemap; submitting anyway.");
+
       await submitLegalRecoverySitemaps(liveUrl);
     } catch (gscErr) {
       console.warn(
