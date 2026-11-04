@@ -93,6 +93,18 @@ const CLUSTERS: Record<string, { heading: string; items: GuideItem[] }> = {
     heading: "Related Consumer Refund, E-Commerce & Vendor Recovery Guides",
     items: [
       {
+        title: "Sold the Wrong Policy? Free-Look Cancellation and Mis-Selling Refunds",
+        href: "/insurance-mis-selling-free-look-refund",
+        tag: "Insurance Recovery",
+        desc: "Enforce 30-day free-look rights, overturn mis-sold FD insurance policies, and file IRDAI Bima Bharosa and Ombudsman claims.",
+      },
+      {
+        title: "Health Insurance Claim Rejected? Reasons & How to Fight",
+        href: "/health-insurance-claim-rejection-reasons-counter",
+        tag: "Health Insurance",
+        desc: "Overturn health claim repudiations for PED, daycare or medical necessity under Section 45 Insurance Act and Ombudsman rules.",
+      },
+      {
         title: "Flipkart Return Rejected or Refund Delayed Complaint Guide",
         href: "/flipkart-return-refund-complaint",
         tag: "E-Commerce",
@@ -140,6 +152,90 @@ const CLUSTERS: Record<string, { heading: string; items: GuideItem[] }> = {
     heading: "Related Security Deposit, Landlord, PG & Builder Refund Guides",
     items: [
       {
+        title: "Got a Smaller Flat Than Promised? Proportionate Refund Under RERA",
+        href: "/carpet-area-shortfall-refund",
+        tag: "Carpet Area Refund",
+        desc: "Measure RERA Section 2(k) carpet area, reject illegal balcony/shaft loading, and claim proportionate price + GST + SBI MCLR+2% refund.",
+      },
+      {
+        title: "Builder Stopped Assured Returns: Your Recovery Options",
+        href: "/assured-return-builder-default-legal-notice",
+        tag: "Assured Return Default",
+        desc: "Decision tree for defaulted commercial & residential assured-return schemes: RERA Sec 18 refund, Sec 138/141 PDC bounce & Form 26AS summary suits.",
+      },
+      {
+        title: "Plot Booking Cancelled but No Refund? Recovering Your Money",
+        href: "/plot-booking-refund-legal-notice",
+        tag: "Plot Booking Refund",
+        desc: "Does RERA apply to plots? Permissible earnest money forfeiture limits (10% cap), unapproved layout remedies, and the 15-day notice to send.",
+      },
+      {
+        title: "Flat Booking Cancellation Letter Format (Before Agreement)",
+        href: "/templates/flat-booking-cancellation-letter",
+        tag: "Cancellation Template",
+        desc: "4 flat and plot booking cancellation letter formats (polite, firm RERA anti-forfeiture, final ultimatum & Sec 18 delay) with Word export.",
+      },
+      {
+        title: "RERA Complaint Online: State-Wise Process, Fees & Format",
+        href: "/rera-complaint-online-state-wise",
+        tag: "RERA Online Guide",
+        desc: "Step-by-step RERA complaint filing across major states: portals, ₹1,000–₹5,000 fees, Form M vs Form N formats & SBI MCLR+2% interest.",
+      },
+      {
+        title: "RERA Refund Interest Calculator (SBI MCLR + 2% Section 18)",
+        href: "/tools/rera-refund-interest-calculator",
+        tag: "RERA Calculator",
+        desc: "Compute per-instalment builder refund or delay possession interest at SBI highest MCLR + 2% (or UP RERA MCLR + 1%) with CSV export.",
+      },
+      {
+        title: "Subvention Scheme Gone Wrong: Builder Defaulted on Pre-EMIs",
+        href: "/subvention-scheme-pre-emi-builder-default",
+        tag: "Subvention / Pre-EMI",
+        desc: "Tripartite agreement rights, RBI upfront-disbursal violation shield, CIBIL protection & RERA Section 18 refund when a builder stops paying Pre-EMIs.",
+      },
+      {
+        title: "Won at RERA but the Builder Won't Pay? Enforcing the Order",
+        href: "/rera-refund-order-not-paid-recovery-certificate",
+        tag: "Sec 40 RERA RC",
+        desc: "Enforce unpaid RERA refund orders via Section 40(1) Recovery Certificates, District Collector attachment, Section 63 fines & HC Mandamus.",
+      },
+      {
+        title: "Society Maintenance Recovery Notice Format (Free)",
+        href: "/templates/society-maintenance-recovery-notice",
+        tag: "Society Notice Format",
+        desc: "Annotated 15-day maintenance arrears recovery notice format for CHS, AOA & RWAs with 21% simple interest & Section 101 route.",
+      },
+      {
+        title: "Security Deposit Refund Letter to Landlord (Template)",
+        href: "/templates/security-deposit-refund-letter-to-landlord",
+        tag: "Letter Template",
+        desc: "Live-fill deposit refund request letter and painting/wear-and-tear deduction challenge format (.doc/PDF) before serving a legal notice.",
+      },
+      {
+        title: "PG Lock-In Period & Notice Period Rules: What's Legal",
+        href: "/pg-lock-in-period-notice-period-rules",
+        tag: "PG Lock-In & Notice",
+        desc: "Enforceability of PG lock-in clauses under Sec 74 Contract Act, 30-day notice rules in Pune/Bengaluru, and illegal deposit cuts.",
+      },
+      {
+        title: "Property Deal Fell Through? Token & Bayana Money Refund Rules",
+        href: "/token-money-refund-property-deal",
+        tag: "Token / Bayana",
+        desc: "Enforce Section 74 forfeiture caps, Section 55(6)(b) statutory property charge, and recover token money when a deal fails.",
+      },
+      {
+        title: "Model Tenancy Act: Security Deposit Cap & State Status",
+        href: "/law/model-tenancy-act-security-deposit-rules",
+        tag: "Model Tenancy Act",
+        desc: "2-month residential deposit cap (Sec 11), same-day refund on key handover, Second Schedule wear-and-tear rules & state adoption status.",
+      },
+      {
+        title: "NoBroker Money-Back Plan or Token Refund Stuck? Escalate It",
+        href: "/legal-notice-to/nobroker",
+        tag: "NoBroker Refund",
+        desc: "Recover denied NoBroker Money-Back Plan fees, stuck property token advances, and held NoBroker Pay rent transfers.",
+      },
+      {
         title: "PG or Hostel Owner Not Returning Security Deposit Legal Notice",
         href: "/legal-notice-to-pg-owner-for-security-deposit-refund",
         tag: "PG / Hostel",
@@ -180,6 +276,84 @@ const CLUSTERS: Record<string, { heading: string; items: GuideItem[] }> = {
   banking: {
     heading: "Related Cheque Bounce, Banking Auto-Debit & Cyber Fraud Guides",
     items: [
+      {
+        title: "Gaming App Wallet Balance Stuck After the Ban? Refunds",
+        href: "/online-gaming-wallet-balance-refund",
+        tag: "Gaming Wallet",
+        desc: "Statutory escalation path for real-money gaming wallet balances stuck post-ban: platform duties, unutilised deposit rights, and advocate notices.",
+      },
+      {
+        title: "Dispute With Your Broker? SEBI SCORES and SMART ODR Explained",
+        href: "/sebi-smart-odr-broker-complaint",
+        tag: "SEBI & Broker Dispute",
+        desc: "Escalate unauthorized trades, forced square-offs, and stuck funds through SCORES 2.0 and the SMART ODR binding arbitration portal.",
+      },
+      {
+        title: "Paid a 'Registration Fee' for a Job That Didn't Exist? Recover It",
+        href: "/fake-job-offer-registration-fee-refund",
+        tag: "Job Scam Fee",
+        desc: "Statutory recovery roadmap for fake job offer fees, placement agency registration frauds, 1930 bank freeze, and advocate notices.",
+      },
+      {
+        title: "Telegram Task Scam Money Recovery: Reporting & Legal Options",
+        href: "/task-scam-telegram-money-recovery",
+        tag: "Task Scam",
+        desc: "Statutory escalation for Telegram task and review scams: 1930 NCRP reporting, mule account freeze, Section 503 BNSS, and bank liability.",
+      },
+      {
+        title: "साइबर फ्रॉड का पैसा वापस कैसे मिलेगा? बैंक की जिम्मेदारी",
+        href: "/hi/cyber-fraud-paisa-wapas-kaise-milega",
+        tag: "साइबर फ्रॉड रिफंड",
+        desc: "UPI या कार्ड फ्रॉड के बाद 1930, बैंक शिकायत और RBI के जीरो लायबिलिटी नियम — पैसा वापस पाने की पूरी प्रक्रिया हिंदी में।",
+      },
+      {
+        title: "Wrong Account Money Transfer Refund Application (Format)",
+        href: "/templates/wrong-account-transfer-refund-application",
+        tag: "Bank Reversal Format",
+        desc: "Ready application formats in English and Hindi to request reversal of money sent to a wrong account or UPI ID under Section 72 Contract Act.",
+      },
+      {
+        title: "Stop UPI AutoPay and Recover Unwanted Subscription Debits",
+        href: "/upi-autopay-subscription-refund",
+        tag: "UPI AutoPay Refund",
+        desc: "Cancel mandates in PhonePe/GPay, dispute unnotified debits under RBI 24-hour pre-alert rules, and trigger CCPA dark-pattern refunds.",
+      },
+      {
+        title: "Insurance Premium Auto-Debited Without Consent? Refund",
+        href: "/insurance-premium-auto-debited-without-consent",
+        tag: "Bancassurance Refund",
+        desc: "Recover unauthorized bancassurance debits, PMJJBY deductions, and forced loan insurance bundling with 100% refund under IRDAI and RBI rules.",
+      },
+      {
+        title: "ATM Cash Not Dispensed but Debited? Refund & Penalty Guide",
+        href: "/atm-cash-not-dispensed-compensation",
+        tag: "ATM Failed Cash",
+        desc: "Enforce T+5 calendar days auto-reversal, ₹100 per day statutory delay penalty, and filing Banking Ombudsman complaints.",
+      },
+      {
+        title: "How to Complain to the RBI Ombudsman (Integrated Scheme)",
+        href: "/law/rbi-ombudsman-complaint-guide",
+        tag: "RBI Ombudsman",
+        desc: "Eligibility, the 30-day bank notice rule, CMS portal step-by-step process, ₹20L/₹1L compensation caps, and legal notice format.",
+      },
+      {
+        title: "RBI Zero Liability Rule: Unauthorised Transaction Refunds",
+        href: "/law/rbi-zero-liability-unauthorised-transaction",
+        tag: "RBI Zero Liability",
+        desc: "Report within 3 working days for zero liability, 4–7 day limited liability caps, and mandatory 10-working-day shadow reversal.",
+      },
+      {
+        title: "Money Debited but Transaction Failed? RBI TAT & ₹100/Day Rule",
+        href: "/law/rbi-failed-transaction-tat-compensation",
+        tag: "RBI ₹100/Day Rule",
+        desc: "Enforce T+1 (UPI/IMPS) and T+5 (ATM/PoS/E-Commerce) auto-reversal deadlines plus mandatory ₹100/day delay compensation.",
+      },
+      {
+        title: "RBI's 2027 Fraud Liability Rules: Banks Must Prove Fault",
+        href: "/law/rbi-fraudulent-transaction-framework-2027",
+        tag: "RBI 2027 Rules",
+        desc: "How the 1 Jan 2027 RBI framework shifts the burden of proof to banks and pays 85% (up to ₹25,000) compensation on losses ≤ ₹50,000.",
+      },
       {
         title: "Cheque Bounce Case and Civil Suit Together: Allowed?",
         href: "/cheque-bounce-and-civil-suit-together",
@@ -223,6 +397,12 @@ const CLUSTERS: Record<string, { heading: string; items: GuideItem[] }> = {
         desc: "Reverse unauthorized loan auto-debits, bounce charges & claim Rs 100/day RBI penalty.",
       },
       {
+        title: "चेक बाउंस होने के कितने दिन बाद नोटिस दें? पूरी समय सीमा",
+        href: "/hi/cheque-bounce-notice-kitne-din-mein",
+        tag: "Hindi Guide",
+        desc: "चेक बाउंस के बाद 30 दिन में नोटिस, 15 दिन भुगतान और 1 महीने में केस — धारा 138 की पूरी प्रक्रिया आसान हिंदी में।",
+      },
+      {
         title: "Cheque Bounce Notice Timeline (Sec 138 NI Act): 30 + 15 Day Rule",
         href: "/cheque-bounce-notice-timeline-section-138",
         tag: "Section 138",
@@ -257,6 +437,36 @@ const CLUSTERS: Record<string, { heading: string; items: GuideItem[] }> = {
   general: {
     heading: "Essential Money Recovery Laws, Timelines & Legal Notice Guides",
     items: [
+      {
+        title: "Upwork or Fiverr Client Not Paying? Options From India",
+        href: "/upwork-fiverr-client-not-paying-india",
+        tag: "Freelance & Agency",
+        desc: "Platform escrow dispute rules, off-platform contract recovery, Section 19 copyright leverage, and legal notices for Indian freelancers.",
+      },
+      {
+        title: "Unpaid Freelancer? Use Copyright Law as Leverage (Sec 19)",
+        href: "/copyright-not-transferred-until-paid-freelancer",
+        tag: "Freelancer IP",
+        desc: "Why copyright never transfers to an unpaid client without a signed Section 19 assignment, and how to use takedowns to get paid.",
+      },
+      {
+        title: "Brand or Agency Not Paying for Your Collaboration? Recover It",
+        href: "/influencer-brand-deal-payment-not-received",
+        tag: "Creator & Influencer",
+        desc: "Recover delayed brand deal and influencer agency payouts: joint Brand-Agency notice, Copyright Sec 19 takedown, MSME 45-day rule & TDS proof.",
+      },
+      {
+        title: "MSME Delayed Payment Demand Notice Format (With Interest)",
+        href: "/templates/msme-delayed-payment-demand-notice",
+        tag: "MSME Demand Notice",
+        desc: "Copy-ready Udyam demand notice formats citing Sections 15–16 (3× RBI bank rate) & Sec 43B(h) tax disallowance, plus Sec 18 affidavit.",
+      },
+      {
+        title: "Subcontractor Left Unpaid: Recovering From the Main Contractor",
+        href: "/subcontractor-payment-recovery-india",
+        tag: "Subcontractor Recovery",
+        desc: "Defeat back-to-back / pay-when-paid clauses, recover retention money & RA bills via MSME ODR, Sec 43B(h), and arbitration.",
+      },
       {
         title: "BNS 318 Cheating vs Civil Dispute: When Police Act",
         href: "/law/bns-318-cheating-vs-civil-dispute",
@@ -330,10 +540,40 @@ const CLUSTERS: Record<string, { heading: string; items: GuideItem[] }> = {
         desc: "Draft and serve an Advocate Legal Notice to recover personal loans within 15 days.",
       },
       {
+        title: "MSME ODR Portal Step by Step: From Registration to Award",
+        href: "/msme-odr-portal-delayed-payment-guide",
+        tag: "MSME ODR Guide",
+        desc: "How to file a delayed-payment reference on the MSME ODR portal: eligibility, mediation, arbitration & enforcing the award.",
+      },
+      {
+        title: "Distributor or Dealer Not Paying Dues? Legal Recovery",
+        href: "/distributor-dealer-dues-recovery",
+        tag: "Channel Recovery",
+        desc: "Recover stuck distributor and dealer balances via signed ledger confirmations, security cheques (Sec 138), and MSME 3x interest.",
+      },
+      {
+        title: "Section 80 CPC Notice to Government & PSUs: Rules & Format",
+        href: "/law/section-80-cpc-notice-to-government",
+        tag: "Section 80 CPC",
+        desc: "Mandatory 2-month statutory notice before suing Central/State Government departments, Railways, or public officers for pending bills.",
+      },
+      {
+        title: "MSME Delayed Payment Interest Calculator (3x Bank Rate)",
+        href: "/tools/msme-delayed-payment-interest-calculator",
+        tag: "MSME Tool",
+        desc: "Calculate Section 16 monthly compound interest at 3x RBI Bank Rate with a downloadable CSV claim sheet.",
+      },
+      {
         title: "MSME Samadhaan Portal vs Legal Notice (45-Day Rule & 3x Interest)",
         href: "/msme-delayed-payment-recovery-samadhan-vs-legal-notice",
         tag: "MSME / B2B",
         desc: "Recover unpaid B2B invoices with 3x RBI compound interest under Section 16 MSMED Act.",
+      },
+      {
+        title: "Section 43B(h): The MSME 45-Day Payment Rule for Buyers",
+        href: "/law/section-43bh-msme-payment-rule",
+        tag: "Sec 43B(h) Tax Rule",
+        desc: "How Section 43B(h) disallows unpaid MSE invoices past 15/45 days and how suppliers use it as legal notice leverage.",
       },
       {
         title: "How to Recover Money Without Going to Court in India",
@@ -391,25 +631,40 @@ function detectCluster(pathname: string): { heading: string; items: GuideItem[] 
   if (
     p.includes("landlord") ||
     p.includes("pg-owner") ||
+    p.includes("pg-lock-in") ||
     p.includes("security-deposit") ||
     p.includes("rental") ||
     p.includes("tenant") ||
     p.includes("builder") ||
+    p.includes("carpet-area") ||
+    p.includes("rera") ||
     p.includes("flat-booking") ||
     p.includes("housing-society") ||
+    p.includes("nobroker") ||
     p.includes("property")
   ) {
     return CLUSTERS.property;
   }
   if (
+    p.includes("atm") ||
+    p.includes("insurance-premium-auto-debited") ||
     p.includes("cheque") ||
     p.includes("bank") ||
+    p.includes("rbi") ||
+    p.includes("unauthorised-transaction") ||
     p.includes("ecs") ||
     p.includes("nach") ||
     p.includes("fraud") ||
     p.includes("cyber") ||
     p.includes("scam") ||
+    p.includes("loan") ||
+    p.includes("sebi") ||
+    p.includes("smart-odr") ||
+    p.includes("gaming") ||
+    p.includes("wallet") ||
+    p.includes("broker") ||
     p.includes("upi") ||
+    p.includes("autopay") ||
     p.includes("ni-act")
   ) {
     return CLUSTERS.banking;

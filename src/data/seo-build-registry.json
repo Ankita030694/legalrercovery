@@ -1,5 +1,118 @@
 [
   {
+    "id": "LR-129",
+    "url": "/insurance-mis-selling-free-look-refund",
+    "archetype": "G3",
+    "h2s": [
+      "Insurance Mis-Selling & Free-Look Rights: Breaking Down the Industry Trap",
+      "Pre-Flight Checklist: Verify Your Free-Look Cancellation & Mis-Selling Claim",
+      "Document & Evidentiary Matrix: What Proof Matters and Where to Obtain It",
+      "Myth vs Fact: 6 Critical Misconceptions About Policy Cancellation & Mis-Selling",
+      "Landmark Order Digest: 4 Verifiable Rulings on Insurance Mis-Selling & Free-Look Denials",
+      "Statutory Escalation Rail: From Mis-Selling Discovery to 100% Fund Restitution",
+      "The 5-Step Practical Playbook: How to Reclaim Mis-Sold Insurance Premiums",
+      "Statutory Deadlines & Regulatory Benchmarks: Free-Look, Refund & Ombudsman Limits",
+      "Common Mis-Selling Traps & Immediate Legal Solutions",
+      "Worked Case Study: Senior Citizen Recovers ₹2,50,000 Mis-Sold as a 3-Year Fixed Deposit",
+      "Free-Look Cancellation & Mis-Selling Demand Notice Format",
+      "Frequently Asked Questions: Insurance Mis-Selling & Free-Look Refunds",
+      "Insurance Regulatory Authorities, Primary Statutes & Official References"
+    ],
+    "components": [
+      "Breadcrumbs",
+      "InsuranceMisSellingTableOfContents",
+      "InsuranceMisSellingChecklistWizard",
+      "InsuranceMisSellingProblemTabs",
+      "InsuranceMisSellingNoticeCTA",
+      "RelatedRecoveryGuides"
+    ],
+    "faqQuestions": [
+      "What is the free-look period refund rule under IRDAI regulations?",
+      "Can I get a refund if my insurance policy was mis-sold as a Fixed Deposit (FD)?",
+      "How do I file a policy mis-selling complaint with IRDAI Bima Bharosa?",
+      "What should I do if the insurance company claims my free-look cancellation request was late?",
+      "Can the Insurance Ombudsman award a refund for mis-sold policies?",
+      "How does serving an advocate legal notice help recover money from an insurance company?",
+      "Policy galat bechi gayi ya FD bolkar insurance thop diya, paise wapas kaise lein?"
+    ],
+    "wordCount": 2450,
+    "artefacts": [
+      "Interactive 6-Point Pre-Flight Checklist Wizard",
+      "Document and Evidentiary Matrix Table",
+      "Myth vs Fact 6-Point Comparison Matrix",
+      "Landmark Order Digest: 4 Verified Court and Ombudsman Precedents with Awards",
+      "Statutory Resolution Hierarchy SVG Flowchart",
+      "Statutory Deadlines and Regulatory Benchmarks Table",
+      "Worked Case Study: Senior Citizen Recovers ₹2,50,000 Mis-Sold as 3-Year FD",
+      "Free-Look Cancellation & Mis-Selling Demand Notice Template",
+      "Interactive Mis-Selling Problem Picker Tabs"
+    ],
+    "sources": [
+      "IRDAI Master Circular on Protection of Policyholders' Interests, 2024",
+      "Insurance Regulatory and Development Authority of India (Protection of Policyholders' Interests) Regulations, 2017 & 2024",
+      "Insurance Ombudsman Rules, 2017 (as amended 2023) — Ministry of Finance",
+      "Insurance Act, 1938 — Section 45",
+      "Consumer Protection Act, 2019 — Section 2(47) & Section 2(11)",
+      "Indian Contract Act, 1872 — Section 18, 19 & 238",
+      "Bharatiya Sakshya Adhiniyam, 2023 (BSA Section 63)",
+      "Bima Bharosa Portal — IRDAI Integrated Grievance Management System"
+    ],
+    "builtAt": "2026-11-04T17:40:00+05:30"
+  },
+  {
+    "id": "LR-127",
+    "url": "/motor-insurance-claim-rejected-legal-notice",
+    "archetype": "G1",
+    "h2s": [
+      "How Indian Motor Insurers Weaponise Policy Exclusion Clauses",
+      "Motor Repudiation Decision Tree: Which Legal Route Overturns Your Rejection?",
+      "Delayed Intimation: Overturning Rejection Under the Gurmel Singh Precedent",
+      "Driving Licence Technicalities: The 'Fundamental Breach' Rule",
+      "The 'Drunk Driving' Clause: Why Hospital Casualty Notes Are Not Enough",
+      "Non-Disclosure, Aftermarket CNG Kits, & Pre-Existing Damage Clauses",
+      "IRDAI Master Circular 2024 Timelines vs Ground Reality",
+      "Judicial Precedents Overturning Unlawful Motor Claim Repudiations",
+      "Worked Case Study: Reversing a ₹3,85,000 Creta Accident Claim Repudiation",
+      "Motor Claim Repudiation Evidence Checklist: 8 Documents You Must Secure",
+      "Frequently Asked Questions on Motor Claim Repudiation & Legal Notices",
+      "Authoritative Statutory Statutes, Circulars & Gazette References"
+    ],
+    "components": [
+      "Breadcrumbs",
+      "MotorInsuranceTableOfContents",
+      "MotorInsuranceProblemTabs",
+      "MotorInsuranceNoticeCTA",
+      "RelatedRecoveryGuides"
+    ],
+    "faqQuestions": [
+      "Can car insurance claim be rejected for delay in informing the insurer?",
+      "What if my driving licence expired 15 days before the vehicle accident?",
+      "Can the insurer deny my claim just because the hospital noted 'smell of alcohol'?",
+      "What is the difference between claim repudiation and claim rejection in motor insurance?",
+      "Can I approach the Insurance Ombudsman if my motor claim is rejected?",
+      "What is a 'non-standard settlement' in car insurance disputes?",
+      "Motor insurance claim reject ho gaya hai, legal notice kaise bhejein?"
+    ],
+    "wordCount": 2420,
+    "artefacts": [
+      "Interactive Repudiation Decision Tree SVG Flowchart",
+      "Accessible Text Decision Tree Breakdown",
+      "Interactive Rejection Counter-Strategy Selector Tabs",
+      "IRDAI Master Circular 2024 Timelines & Benchmarks Table",
+      "Worked Example: Reversing a ₹3,85,000 Creta Accident Claim Repudiation",
+      "Evidentiary Checklist: 8 Essential Proofs for Motor Claims"
+    ],
+    "sources": [
+      "IRDAI Master Circular on Protection of Policyholders' Interests, 2024 (Master Circular Ref: IRDAI/NL/GDL/MISC/10/2024)",
+      "Insurance Ombudsman Rules, 2017 (amended up to 2023) — Rule 13 & Rule 17",
+      "Motor Vehicles Act, 1988 — Section 14, Section 157, & Section 185",
+      "Gurmel Singh v. Branch Manager, National Insurance Co. Ltd. (2022) SCC OnLine SC 666",
+      "Lakhmi Chand v. Reliance General Insurance (2016) 3 SCC 100",
+      "Consumer Protection Act, 2019 — Section 2(11) & Section 35",
+      "Bharatiya Sakshya Adhiniyam, 2023 — Section 63"
+    ]
+  },
+  {
     "id": "LR-070",
     "url": "/templates/cheque-bounce-notice-format-hindi",
     "archetype": "P1",

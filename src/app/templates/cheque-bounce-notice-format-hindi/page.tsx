@@ -366,7 +366,7 @@ export default function ChequeBounceNoticeFormatHindiPage() {
         </div>
 
         {/* Main Content Layout with Sticky TOC Sidebar */}
-        <div className="flex flex-col lg:flex-row gap-8 items-start">
+        <div className="flex flex-col lg:flex-row gap-8 xl:gap-12 items-start w-full min-w-0">
           {/* Left Sidebar Table of Contents */}
           <ChequeBounceHindiTOC />
 

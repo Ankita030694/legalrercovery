@@ -150,33 +150,68 @@ export default function ChequeBounceHindiTOC({
       </div>
 
       {/* Desktop Sticky Sidebar Table of Contents */}
-      <aside className="hidden lg:block w-64 shrink-0">
-        <div className="sticky top-28 bg-white border border-slate-200 rounded-2xl p-5 shadow-xs">
-          <div className="flex items-center gap-2 pb-3 mb-3 border-b border-slate-100">
+      <aside
+        aria-label="सामग्री रूपरेखा"
+        className="hidden lg:block w-64 xl:w-72 shrink-0 sticky top-28 self-start bg-white border border-slate-200 rounded-2xl p-5 shadow-xs max-h-[calc(100vh-8.5rem)] overflow-y-auto"
+      >
+        <div className="flex items-center justify-between pb-3 mb-3 border-b border-slate-100">
+          <div className="flex items-center gap-2">
             <span className="flex h-2 w-2 rounded-full bg-red-600" />
             <span className="text-xs font-bold uppercase tracking-wider text-slate-900">
               सामग्री रूपरेखा
             </span>
           </div>
-          <nav className="space-y-1">
-            {sections.map((section) => {
-              const isActive = section.id === activeId;
-              return (
-                <a
-                  key={section.id}
-                  href={`#${section.id}`}
-                  onClick={(e) => scrollToSection(e, section.id)}
-                  className={`block px-3 py-2 rounded-lg text-xs transition-all duration-150 ${
-                    isActive
-                      ? "bg-red-50 text-red-700 font-semibold border-l-2 border-red-600 pl-2.5"
-                      : "text-slate-600 hover:bg-slate-50 hover:text-slate-900"
+          <span className="text-[10px] font-mono font-semibold px-2 py-0.5 rounded-full bg-slate-100 text-slate-600">
+            {sections.length} विषय
+          </span>
+        </div>
+        <nav className="space-y-1">
+          {sections.map((section, idx) => {
+            const isActive = section.id === activeId;
+            return (
+              <a
+                key={section.id}
+                href={`#${section.id}`}
+                onClick={(e) => scrollToSection(e, section.id)}
+                className={`group flex items-center justify-between px-3 py-2 rounded-lg text-xs transition-all duration-150 ${
+                  isActive
+                    ? "bg-red-50 text-red-700 font-bold border-l-2 border-red-600 pl-2.5 shadow-2xs"
+                    : "text-slate-600 hover:bg-slate-50 hover:text-slate-900 font-medium"
+                }`}
+              >
+                <span className="flex items-center gap-2 truncate">
+                  <span
+                    className={`text-[10px] font-mono ${
+                      isActive ? "text-red-500 font-bold" : "text-slate-400 group-hover:text-slate-600"
+                    }`}
+                  >
+                    {idx < 9 ? `0${idx + 1}` : idx + 1}
+                  </span>
+                  <span className="truncate">{section.label}</span>
+                </span>
+                <span
+                  className={`text-[10px] ${
+                    isActive ? "text-red-600" : "text-transparent group-hover:text-slate-400"
                   }`}
                 >
-                  {section.label}
-                </a>
-              );
-            })}
-          </nav>
+                  →
+                </span>
+              </a>
+            );
+          })}
+        </nav>
+        <div className="mt-5 pt-4 border-t border-slate-100">
+          <p className="text-[11px] text-slate-500 leading-relaxed">
+            चेक बाउंस नोटिस या कानूनी परामर्श की आवश्यकता है?
+          </p>
+          <a
+            href="#heading-interactive-template"
+            onClick={(e) => scrollToSection(e, "heading-interactive-template")}
+            className="inline-flex items-center gap-1 text-xs font-bold text-red-600 hover:text-red-700 mt-1.5"
+          >
+            <span>नोटिस ड्राफ्ट करें</span>
+            <span>→</span>
+          </a>
         </div>
       </aside>
     </>

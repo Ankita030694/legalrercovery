@@ -47,6 +47,11 @@ const nextConfig: NextConfig = {
   async redirects() {
     return [
       {
+        source: "/blog/recover-money-from-transaction-mistake",
+        destination: "/recovery/wrong-upi-transfer",
+        permanent: true,
+      },
+      {
         source: "/favicon.ico",
         destination: "/favicon/favicon.ico",
         permanent: true,

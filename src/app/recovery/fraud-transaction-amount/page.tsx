@@ -15,6 +15,11 @@ export const metadata: Metadata = {
   ],
   alternates: {
     canonical: 'https://www.legalrecovery.in/recovery/fraud-transaction-amount',
+    languages: {
+      'en-IN': 'https://www.legalrecovery.in/recovery/fraud-transaction-amount',
+      'hi-IN': 'https://www.legalrecovery.in/hi/cyber-fraud-paisa-wapas-kaise-milega',
+      'x-default': 'https://www.legalrecovery.in/recovery/fraud-transaction-amount',
+    },
   },
   openGraph: {
     title: "Fraud Transaction Refund: How Long Does the Bank Take?",
