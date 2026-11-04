@@ -1,5 +1,31 @@
 [
   {
+    "id": "LR-070",
+    "url": "/templates/cheque-bounce-notice-format-hindi",
+    "archetype": "P1",
+    "h2s": [
+      "चेक बाउंस नोटिस क्या है और इसे भेजना क्यों अनिवार्य है?",
+      "धारा 138 एनआई एक्ट: नोटिस की 4 अनिवार्य कानूनी शर्तें",
+      "चेक बाउंस कानूनी नोटिस फॉर्मेट (हिंदी) — कस्टमाइज़ व डाउनलोड करें",
+      "चेक बाउंस नोटिस के प्रत्येक पैराग्राफ (क्लॉज) का कानूनी महत्व",
+      "चेक बाउंस वैधानिक समय सीमा चार्ट (Section 138 Statutory Timeline)",
+      "चेक बाउंस का कानूनी नोटिस भेजने का सही तरीका (Step-by-Step)",
+      "केस स्टडी / व्यावहारिक उदाहरण (Worked Example)",
+      "सुप्रीम कोर्ट के महत्वपूर्ण कानूनी फैसले (Landmark Precedents)",
+      "चेक बाउंस नोटिस व केस के लिए आवश्यक सबूतों की चेकलिस्ट",
+      "यदि देनदार 15 दिनों में पैसा न दे तो आगे क्या कानूनी कदम उठाएं?",
+      "अक्सर पूछे जाने वाले सवाल (Frequently Asked Questions)",
+      "प्राथमिक कानूनी संदर्भ और आधिकारिक स्रोत (Primary Statutory Sources)"
+    ],
+    "components": [
+      "Breadcrumbs",
+      "ChequeBounceHindiTOC",
+      "ChequeBounceNoticeHindiWorkspace",
+      "ChequeBounceHindiNoticeCTA",
+      "RelatedRecoveryGuides"
+    ]
+  },
+  {
     "id": "LR-062",
     "url": "/hi/udhar-paisa-wapas-kaise-le",
     "archetype": "H1",
@@ -3105,5 +3131,54 @@
       "https://www.indiacode.nic.in/handle/123456789/21735"
     ],
     "builtAt": "2026-11-03T18:15:00+05:30"
+  },
+  {
+    "id": "LR-071",
+    "url": "/hi/cheque-bounce-notice-kitne-din-mein",
+    "archetype": "H2",
+    "h2s": [
+      "चेक बाउंस समय सीमा तालिका: चेक जमा करने से लेकर कोर्ट केस तक (Timeline Table)",
+      "चेक बाउंस नोटिस और केस से जुड़े 8 सबसे महत्वपूर्ण सवाल और उनके कानूनी जवाब",
+      "चेक बाउंस होने के बाद नोटिस भेजने और कोर्ट केस की पूरी प्रक्रिया (Step-by-Step Process)",
+      "चेक बाउंस की समय सीमा पर सुप्रीम कोर्ट के 4 ऐतिहासिक फैसले",
+      "तारीख-दर-तारीख उदाहरण: ₹5,40,000 के चेक बाउंस में हर समय सीमा की सटीक गणना",
+      "यदि 30 दिन निकल गए हों, देनदार नोटिस न ले, या स्टॉप पेमेंट हो तो क्या करें?",
+      "चेक बाउंस नोटिस भेजने और केस जीतने के लिए 6 अनिवार्य दस्तावेज़",
+      "चेक बाउंस नोटिस कितने दिन में भेजें — अक्सर पूछे जाने वाले प्रश्न (FAQs)",
+      "प्रमुख कानूनी स्रोत, अधिनियम और सुप्रीम कोर्ट संदर्भ (Primary Legal Sources)"
+    ],
+    "components": [
+      "Breadcrumbs",
+      "ChequeBounceHindiTOC",
+      "ChequeBounceHindiNoticeCTA",
+      "ChequeBounceHindiTabs",
+      "RelatedRecoveryGuides"
+    ],
+    "faqQuestions": [
+      "चेक बाउंस होने के कितने दिन बाद नोटिस देना चाहिए (Cheque bounce hone ke kitne din baad notice dena chahiye)?",
+      "चेक बाउंस नोटिस मिलने के बाद देनदार को भुगतान के लिए कितने दिन का समय मिलता है?",
+      "15 दिन में पैसा न मिलने पर कोर्ट में चेक बाउंस केस कितने दिन में फाइल करना होता है?",
+      "क्या 15 दिन पूरे होने से पहले कोर्ट में चेक बाउंस केस फाइल किया जा सकता है?",
+      "अगर 30 दिन के अंदर चेक बाउंस नोटिस नहीं भेज पाए तो क्या करें?",
+      "एक चेक को 3 महीने की वैधता में कितनी बार बैंक में बाउंस कराया जा सकता है?",
+      "क्या WhatsApp और ईमेल से भेजा गया चेक बाउंस नोटिस कोर्ट में मान्य है?",
+      "चेक बाउंस केस में अंतरिम मुआवजा (20% Interim Compensation) कब और कैसे मिलता है?"
+    ],
+    "wordCount": 2180,
+    "artefacts": [
+      "Master Statutory Timeline Table in Hindi (Cheque validity 3m, Notice 30d, Cure 15d, Complaint 1m, Interim 143A 60d, Civil Suit 3y)",
+      "8-Question Deep-Dive Hindi Q&A Guide (Saketh India day exclusion, Yogendra Pratap Singh premature rule, MSR Leathers re-presentation, Sanjabij Tari 2025 SC guidelines)",
+      "Hand-authored SVG Flowchart in Hindi (Section 138 Escalation Rail)",
+      "Date-by-Date Worked Example Table (₹5,40,000 Jaipur textile trader cheque dishonour timeline)",
+      "Interactive Scenario Tabs in Hindi (ChequeBounceHindiTabs)",
+      "6-Point BSA Section 63 Evidence Checklist in Hindi"
+    ],
+    "sources": [
+      "https://www.indiacode.nic.in/handle/123456789/2189",
+      "https://main.sci.gov.in/",
+      "https://www.rbi.org.in/",
+      "https://www.indiacode.nic.in/handle/123456789/20063"
+    ],
+    "builtAt": "2026-11-04T10:44:00+05:30"
   }
 ]

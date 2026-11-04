@@ -181,6 +181,18 @@ const CLUSTERS: Record<string, { heading: string; items: GuideItem[] }> = {
     heading: "Related Cheque Bounce, Banking Auto-Debit & Cyber Fraud Guides",
     items: [
       {
+        title: "Cheque Bounce Case and Civil Suit Together: Allowed?",
+        href: "/cheque-bounce-and-civil-suit-together",
+        tag: "Civil & Criminal",
+        desc: "Simultaneous Section 138 NI Act complaint and Order 37 summary suit: Supreme Court parallel remedy rules, interim compensation & set-off.",
+      },
+      {
+        title: "Company Cheque Bounce: When Directors Can Be Prosecuted (s.141)",
+        href: "/cheque-bounce-case-against-company-directors",
+        tag: "Section 141",
+        desc: "When company directors can be prosecuted for cheque bounce: Aneeta Hada rule, mandatory averments, and notice procedure.",
+      },
+      {
         title: "Cheque Bounced 'Account Closed' or 'Signature Mismatch'",
         href: "/cheque-bounce-account-closed-signature-mismatch",
         tag: "Return Reasons",
@@ -405,8 +417,17 @@ function detectCluster(pathname: string): { heading: string; items: GuideItem[] 
   return CLUSTERS.general;
 }
 
-export default function RelatedRecoveryGuides() {
-  const pathname = usePathname();
+interface RelatedRecoveryGuidesProps {
+  currentPath?: string;
+  cluster?: string;
+}
+
+export default function RelatedRecoveryGuides({
+  currentPath,
+  cluster: clusterProp,
+}: RelatedRecoveryGuidesProps = {}) {
+  const routerPathname = usePathname();
+  const pathname = currentPath || routerPathname;
 
   if (
     !pathname ||
@@ -425,7 +446,7 @@ export default function RelatedRecoveryGuides() {
     return null;
   }
 
-  const cluster = detectCluster(pathname);
+  const cluster = (clusterProp && CLUSTERS[clusterProp]) ? CLUSTERS[clusterProp] : detectCluster(pathname);
   const filtered = cluster.items.filter((item) => item.href !== pathname).slice(0, 6);
 
   return (

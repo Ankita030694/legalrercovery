@@ -8,6 +8,34 @@ export interface SitemapItem {
 
 export const ALL_SITEMAP_PAGES: SitemapItem[] = [
   {
+    title: "चेक बाउंस होने के कितने दिन बाद नोटिस दें? पूरी समय सीमा",
+    href: "/hi/cheque-bounce-notice-kitne-din-mein",
+    category: "Guides",
+    date: "4 Nov 2026",
+    timestamp: 1793721800000,
+  },
+  {
+    title: "चेक बाउंस नोटिस फॉर्मेट हिंदी में (Section 138 NI Act)",
+    href: "/templates/cheque-bounce-notice-format-hindi",
+    category: "Guides",
+    date: "4 Nov 2026",
+    timestamp: 1793721700000,
+  },
+  {
+    title: "Cheque Bounce Case and Civil Suit Together: Allowed?",
+    href: "/cheque-bounce-and-civil-suit-together",
+    category: "Guides",
+    date: "4 Nov 2026",
+    timestamp: 1793721600000,
+  },
+  {
+    title: "Company Cheque Bounce: Are Directors Liable (s.141)?",
+    href: "/cheque-bounce-case-against-company-directors",
+    category: "Guides",
+    date: "4 Nov 2026",
+    timestamp: 1793721500000,
+  },
+  {
     title: "Cheque Bounced 'Account Closed' or 'Signature Mismatch'",
     href: "/cheque-bounce-account-closed-signature-mismatch",
     category: "Guides",

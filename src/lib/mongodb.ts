@@ -16,11 +16,7 @@ try {
   // Ignore in environments where setting DNS servers is restricted
 }
 
-if (!process.env.MONGODB_URI) {
-  throw new Error('Invalid/Missing environment variable: "MONGODB_URI"');
-}
-
-const rawUri = process.env.MONGODB_URI;
+const rawUri = process.env.MONGODB_URI || "";
 
 // Options tuned for resilient cloud & serverless operations (Vercel + Atlas M0 Free Tier)
 const options = {
@@ -141,6 +137,9 @@ async function resolveMongoSrvViaDoH(srvUri: string): Promise<string> {
 }
 
 async function connectWithSrvFallback(): Promise<MongoClient> {
+  if (!rawUri) {
+    throw new Error('Invalid/Missing environment variable: "MONGODB_URI"');
+  }
   const initialUri = globalWithMongo._resolvedMongoUri || rawUri;
   const primaryClient = new MongoClient(initialUri, options);
 

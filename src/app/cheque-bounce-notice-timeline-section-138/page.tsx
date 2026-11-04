@@ -14,7 +14,12 @@ export const metadata: Metadata = {
     "cheque bounce grace period"
   ],
   alternates: {
-    canonical: 'https://www.legalrecovery.in/cheque-bounce-notice-timeline-section-138',
+    canonical: "https://www.legalrecovery.in/cheque-bounce-notice-timeline-section-138",
+    languages: {
+      "en-IN": "https://www.legalrecovery.in/cheque-bounce-notice-timeline-section-138",
+      "hi-IN": "https://www.legalrecovery.in/hi/cheque-bounce-notice-kitne-din-mein",
+      "x-default": "https://www.legalrecovery.in/cheque-bounce-notice-timeline-section-138",
+    },
   },
   openGraph: {
     title: "Cheque Bounce Notice Period: 30-Day Rule (कितने दिन में)",
