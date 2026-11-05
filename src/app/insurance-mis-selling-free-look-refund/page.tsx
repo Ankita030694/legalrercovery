@@ -846,7 +846,7 @@ export default function InsuranceMisSellingRefundPage() {
                       </h3>
                       <p className="text-xs sm:text-sm leading-relaxed">
                         If the notice window expires without full restitution, file a complaint before your territorial Insurance Ombudsman. Under the Insurance Ombudsman Rules, 2017 (amended 2023), ombudsmen pass binding awards up to ₹50 Lakhs within 3 months, with no court fees. Alternatively, file an online consumer case on e-Jagriti claiming full refund, statutory interest, and punitive damages for unfair trade practices. For detailed filing guidance, consult our{" "}
-                        <Link href="/law/insurance-ombudsman-bima-bharosa-guide" className="text-blue-700 underline">
+                        <Link href="/legal-notice-to-insurance-company-claim-rejection-recovery" className="text-blue-700 underline">
                           Insurance Ombudsman and Bima Bharosa escalation guide
                         </Link>.
                       </p>
@@ -1066,9 +1066,9 @@ Date: [CURRENT DATE]`}
                   </div>
                 </div>
                 <p className="text-xs text-slate-500 italic">
-                  Looking for the official Ombudsman filing template? Access our{" "}
-                  <Link href="/templates/insurance-ombudsman-complaint-format" className="text-blue-700 underline">
-                    Insurance Ombudsman complaint format template
+                  Escalating to the Ombudsman? Read our{" "}
+                  <Link href="/legal-notice-to-insurance-company-claim-rejection-recovery" className="text-blue-700 underline">
+                    insurance claim escalation guide (IRDAI, Bima Bharosa and Ombudsman)
                   </Link>.
                 </p>
               </section>
@@ -1155,16 +1155,16 @@ Date: [CURRENT DATE]`}
                     Notice to Insurer for Claim Rejection →
                   </Link>
                   <Link
-                    href="/law/insurance-ombudsman-bima-bharosa-guide"
+                    href="/legal-notice-to-insurance-company-claim-rejection-recovery"
                     className="px-3 py-1.5 bg-white border border-slate-200 rounded-lg hover:border-red-500 hover:text-red-600 transition-colors"
                   >
                     Bima Bharosa &amp; Ombudsman Guide →
                   </Link>
                   <Link
-                    href="/templates/insurance-ombudsman-complaint-format"
+                    href="/claim-repudiated-vs-rejected-difference"
                     className="px-3 py-1.5 bg-white border border-slate-200 rounded-lg hover:border-red-500 hover:text-red-600 transition-colors"
                   >
-                    Ombudsman Complaint Format →
+                    Claim Repudiated vs Rejected →
                   </Link>
                   <Link
                     href="/claim-repudiated-vs-rejected-difference"

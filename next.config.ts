@@ -31,6 +31,48 @@ const securityHeaders = [
   },
 ];
 
+// [old path, closest live page]. Old paths were linked from pages or blog posts but never existed.
+const BROKEN_LINK_REDIRECTS: [string, string][] = [
+  // linked from page code
+  ["/law/insurance-ombudsman-bima-bharosa-guide", "/legal-notice-to-insurance-company-claim-rejection-recovery"],
+  ["/templates/insurance-ombudsman-complaint-format", "/legal-notice-to-insurance-company-claim-rejection-recovery"],
+  ["/templates/unauthorised-transaction-complaint-letter-bank", "/law/rbi-zero-liability-unauthorised-transaction"],
+  ["/security-cheque-misuse-section-138", "/stop-payment-cheque-bounce-case"],
+  ["/offer-letter-revoked-compensation-india", "/legal-notice-wrongful-termination-unpaid-notice-period-salary"],
+  ["/franchise-fee-refund-legal-notice", "/legal-notice-to-vendor-for-refund-of-advance-payment"],
+  ["/hi/security-deposit-wapas-kaise-le", "/recover-security-deposit-from-landlord-india"],
+  ["/services/consumer-complaints", "/services/refunds-and-consumer-complaints"],
+  ["/services/cheque-bounce", "/recovery/cheque-bounce-amount"],
+  ["/services/corporate-recovery", "/services/vendor-and-invoice-recoveries"],
+  ["/legal-recovery-by-city/gurugram", "/legal-recovery-by-city/gurgaon"],
+  ["/legal-recovery-by-city/bengaluru", "/legal-recovery-by-city/bangalore"],
+  // linked from blog post content
+  ["/money-recovery-court-case-process-india", "/civil-suit-for-recovery-of-money-india"],
+  ["/services/friendly-loan-recovery", "/services/recovery-of-money-from-a-friend"],
+  ["/how-to-recover-money-lent-to-friend-without-proof", "/how-to-recover-money-without-written-agreement"],
+  ["/legal-notice-for-recovery-of-friendly-loan", "/recovery/friendly-loan-amount"],
+  ["/legal-notice-for-money-recovery", "/legal-notice-for-recovery-of-money"],
+  ["/legal-notice-for-salary-recovery", "/recovery/unpaid-salary"],
+  ["/employer-holding-relieving-letter-and-fnf", "/employer-withholding-relieving-letter-legal-action"],
+  ["/startup-laid-off-without-paying-salary", "/send-a-legal-notice/delayed-salary-startup-company-india"],
+  ["/b2b-vendor-payment-recovery", "/send-a-legal-notice/vendor-not-paying-pending-payment"],
+  ["/msme-samadhaan-portal-delayed-payment-recovery", "/recovery/msme-samadhan"],
+  ["/unpaid-invoice-recovery-legal-notice-format", "/recovery/unpaid-invoices"],
+  ["/how-to-send-legal-notice-to-company-for-non-payment", "/send-a-legal-notice/for-business-to-recover-their-unpaid-dues"],
+  ["/cheque-bounce-legal-notice-format", "/cheque-bounce-notice-timeline-section-138"],
+  ["/unpaid-salary-and-pf-not-deposited-legal-notice", "/send-a-legal-notice/employer-not-paying-pf-provident-fund"],
+  ["/wrongful-termination-and-unpaid-salary-legal-notice", "/legal-notice-wrongful-termination-unpaid-notice-period-salary"],
+  ["/summary-suit-for-money-recovery-india", "/law/order-37-summary-suit-money-recovery"],
+  ["/recovery/friendly-loan", "/recovery/friendly-loan-amount"],
+  ["/company-closed-down-without-paying-salary", "/recovery/pending-salary-from-employer"],
+  ["/debtor-not-responding-to-calls-or-messages", "/what-to-do-if-legal-notice-is-ignored-india"],
+  ["/can-legal-notice-be-sent-on-whatsapp-and-email-india", "/is-an-email-or-whatsapp-message-considered-a-valid-legal-notice-in-indian-courts"],
+  ["/tenant-security-deposit-recovery-legal-notice", "/legal-notice-to-landlord-for-security-deposit-refund-india"],
+  ["/legal-recovery-of-money-from-landlord", "/recover-security-deposit-from-landlord-india"],
+  ["/legal-notice-to-recover-my-loan-from-friend", "/legal-notice-to-recovery-my-loan-from-friend"],
+  ["/how-to-send-a-legal-notice", "/how-to-send-a-legal-notice-for-recovery-of-money-in-india"],
+];
+
 const nextConfig: NextConfig = {
   reactCompiler: true,
   typescript: {
@@ -111,6 +153,8 @@ const nextConfig: NextConfig = {
         destination: "/authors/anuj-anand-malik",
         permanent: true,
       },
+      // Dead internal links (link audit 2026-11-05): each sends visitors to the closest live page.
+      ...BROKEN_LINK_REDIRECTS.map(([source, destination]) => ({ source, destination, permanent: true })),
       {
         source: "/how-to-recover-full-final-settlement-from-employer",
         destination: "/how-to-recover-full-and-final-settlement-from-employer",

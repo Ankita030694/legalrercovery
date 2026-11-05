@@ -959,16 +959,16 @@ export default function MotorInsuranceClaimRejectedPage() {
                     Insurance Repudiation Legal Notice Hub
                   </Link>
                   <Link
-                    href="/law/insurance-ombudsman-bima-bharosa-guide"
+                    href="/legal-notice-to-insurance-company-claim-rejection-recovery"
                     className="bg-white border border-slate-300 px-3 py-1.5 rounded-lg text-slate-800 font-semibold hover:border-red-500 hover:text-red-600 transition-colors"
                   >
                     Bima Bharosa &amp; Ombudsman Escalation Guide
                   </Link>
                   <Link
-                    href="/templates/insurance-ombudsman-complaint-format"
+                    href="/claim-repudiated-vs-rejected-difference"
                     className="bg-white border border-slate-300 px-3 py-1.5 rounded-lg text-slate-800 font-semibold hover:border-red-500 hover:text-red-600 transition-colors"
                   >
-                    Insurance Ombudsman Complaint Format
+                    Claim Repudiated vs Rejected
                   </Link>
                   <Link
                     href="/health-insurance-claim-rejection-reasons-counter"

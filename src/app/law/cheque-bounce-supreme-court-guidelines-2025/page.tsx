@@ -1091,10 +1091,10 @@ export default function ChequeBounceSupremeCourtGuidelinesPage() {
                     Cheque Bounce Deadline Calculator →
                   </Link>
                   <Link
-                    href="/security-cheque-misuse-section-138"
+                    href="/stop-payment-cheque-bounce-case"
                     className="px-3 py-1.5 bg-white border border-slate-200 rounded-lg hover:border-red-500 hover:text-red-600 transition-colors"
                   >
-                    Security Cheque Misuse Defense Guide →
+                    Stop Payment &amp; Security Cheque Cases →
                   </Link>
                   <Link
                     href="/legal-notice-charges"

@@ -31,6 +31,8 @@ const STATIC_ROUTES: {
   { path: "/digital-arrest-scam-money-recovery", changeFrequency: "weekly", priority: 0.9, lastModified: new Date("2026-11-04") },
   { path: "/hi/cyber-fraud-paisa-wapas-kaise-milega", changeFrequency: "weekly", priority: 0.9, lastModified: new Date("2026-11-04") },
   { path: "/scam-money-recovery-what-is-possible", changeFrequency: "weekly", priority: 0.9, lastModified: new Date("2026-11-04") },
+  { path: "/templates", changeFrequency: "weekly", priority: 0.85, lastModified: new Date("2026-11-05") },
+  { path: "/legal-notice-charges", changeFrequency: "weekly", priority: 0.9, lastModified: new Date("2026-11-05") },
   { path: "/templates/wrong-account-transfer-refund-application", changeFrequency: "weekly", priority: 0.9, lastModified: new Date("2026-11-04") },
   { path: "/upi-autopay-subscription-refund", changeFrequency: "weekly", priority: 0.9, lastModified: new Date("2026-11-04") },
   { path: "/insurance-premium-auto-debited-without-consent", changeFrequency: "weekly", priority: 0.9, lastModified: new Date("2026-11-04") },

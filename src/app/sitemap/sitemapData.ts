@@ -2133,7 +2133,7 @@ export const ALL_SITEMAP_PAGES: SitemapItem[] = [
   },
   {
     title: "Legal Recovery in Gurugram (Gurgaon)",
-    href: "/legal-recovery-by-city/gurugram",
+    href: "/legal-recovery-by-city/gurgaon",
     category: "Locations",
     date: "24 Jul 2026",
     timestamp: 1784879900000,
@@ -2154,7 +2154,7 @@ export const ALL_SITEMAP_PAGES: SitemapItem[] = [
   },
   {
     title: "Legal Recovery in Bengaluru (Bangalore)",
-    href: "/legal-recovery-by-city/bengaluru",
+    href: "/legal-recovery-by-city/bangalore",
     category: "Locations",
     date: "22 Jul 2026",
     timestamp: 1784707200000,

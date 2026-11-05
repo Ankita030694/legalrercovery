@@ -1322,10 +1322,10 @@ export default function Section80CpcNoticePage() {
                     Distributor &amp; Dealer Dues Recovery →
                   </Link>
                   <Link
-                    href="/franchise-fee-refund-legal-notice"
+                    href="/legal-notice-to-vendor-for-refund-of-advance-payment"
                     className="px-3 py-1.5 bg-white border border-slate-200 rounded-lg hover:border-red-500 hover:text-red-600 transition-colors"
                   >
-                    Franchise Fee Refund Legal Notice →
+                    Advance Payment Refund Legal Notice →
                   </Link>
                   <Link
                     href="/legal-notice-charges"

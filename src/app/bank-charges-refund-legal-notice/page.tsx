@@ -724,10 +724,10 @@ export default function BankChargesRefundPage() {
             </li>
             <li>
               <Link
-                href="/templates/unauthorised-transaction-complaint-letter-bank"
+                href="/law/rbi-zero-liability-unauthorised-transaction"
                 className="text-red-600 hover:text-red-800 font-semibold underline"
               >
-                Unauthorized Transaction Complaint Letter Template
+                RBI Zero Liability Rule for Unauthorised Transactions
               </Link>
             </li>
             <li>

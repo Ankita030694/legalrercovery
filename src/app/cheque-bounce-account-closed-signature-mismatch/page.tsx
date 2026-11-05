@@ -537,7 +537,7 @@ export default function ChequeBounceReturnReasonsPage() {
                         Dispute Involves a Stale Cheque, Blank Security Cheque, or Technical Defect
                       </h3>
                       <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                        If the cheque was presented after 90 days, Section 138 criminal jurisdiction is barred. However, the civil debt survives for 3 years under the Limitation Act, 1963. You should immediately institute an Order XXXVII CPC Summary Suit in civil court. If a blank security cheque was presented without underlying liability, review our guide on <Link href="/security-cheque-misuse-section-138" className="text-blue-700 underline font-semibold">security cheque misuse</Link>.
+                        If the cheque was presented after 90 days, Section 138 criminal jurisdiction is barred. However, the civil debt survives for 3 years under the Limitation Act, 1963. You should immediately institute an Order XXXVII CPC Summary Suit in civil court. If a blank security cheque was presented without underlying liability, review our guide on <Link href="/stop-payment-cheque-bounce-case" className="text-blue-700 underline font-semibold">security cheque misuse</Link>.
                       </p>
                     </div>
                     <div className="mt-4 pt-3 border-t border-slate-100 text-xs font-semibold text-slate-900">

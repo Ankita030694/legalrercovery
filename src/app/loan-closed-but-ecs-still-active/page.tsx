@@ -859,10 +859,10 @@ export default function LoanClosedEcsStillActivePage() {
                     Fraud Transaction Recovery
                   </Link>
                   <Link
-                    href="/templates/unauthorised-transaction-complaint-letter-bank"
+                    href="/law/rbi-zero-liability-unauthorised-transaction"
                     className="text-xs font-semibold px-3 py-1.5 rounded-lg bg-white border border-slate-200 text-slate-700 hover:bg-slate-100 hover:text-slate-900 transition-colors"
                   >
-                    Unauthorised Bank Transaction Letter
+                    RBI Zero Liability Rule
                   </Link>
                   <Link
                     href="/templates/wrong-account-transfer-refund-application"

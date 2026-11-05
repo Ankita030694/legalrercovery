@@ -294,7 +294,7 @@ export default function HealthInsuranceRejectionTabs() {
           <p className="text-xs text-slate-500">
             Read more on how to file an{" "}
             <Link
-              href="/law/insurance-ombudsman-bima-bharosa-guide"
+              href="/legal-notice-to-insurance-company-claim-rejection-recovery"
               className="text-blue-700 underline font-semibold"
             >
               Insurance Ombudsman &amp; Bima Bharosa Complaint

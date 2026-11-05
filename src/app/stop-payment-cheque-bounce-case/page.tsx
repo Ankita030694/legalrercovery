@@ -1140,10 +1140,10 @@ export default function StopPaymentChequeBouncePage() {
                     Cheque Bounce Notice Format in Hindi →
                   </Link>
                   <Link
-                    href="/security-cheque-misuse-section-138"
+                    href="/cheque-bounce-notice-timeline-section-138"
                     className="px-3 py-1.5 bg-white border border-slate-200 rounded-lg hover:border-red-500 hover:text-red-600 transition-colors"
                   >
-                    Security Cheque Misuse &amp; 138 Defence →
+                    Cheque Bounce Notice Timeline (Sec 138) →
                   </Link>
                   <Link
                     href="/legal-notice-charges"

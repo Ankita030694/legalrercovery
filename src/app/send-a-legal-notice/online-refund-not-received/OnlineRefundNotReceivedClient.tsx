@@ -639,13 +639,13 @@ export default function OnlineRefundNotReceivedClient() {
               <div className="border-t border-slate-100 pt-10">
                 <h3 className="text-2xl font-bold text-slate-900 mb-6">Our Solutions:</h3>
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
-                  <Link href="/services/consumer-complaints" className="py-4 px-4 rounded-xl border-2 border-[#DC2626] text-[#DC2626] font-bold text-sm hover:bg-[#DC2626] hover:text-white transition-colors cursor-pointer bg-white text-center flex items-center justify-center">
+                  <Link href="/services/refunds-and-consumer-complaints" className="py-4 px-4 rounded-xl border-2 border-[#DC2626] text-[#DC2626] font-bold text-sm hover:bg-[#DC2626] hover:text-white transition-colors cursor-pointer bg-white text-center flex items-center justify-center">
                     Consumer Complaints
                   </Link>
-                  <Link href="/services/cheque-bounce" className="py-4 px-4 rounded-xl border-2 border-[#DC2626] text-[#DC2626] font-bold text-sm hover:bg-[#DC2626] hover:text-white transition-colors cursor-pointer bg-white text-center flex items-center justify-center">
+                  <Link href="/recovery/cheque-bounce-amount" className="py-4 px-4 rounded-xl border-2 border-[#DC2626] text-[#DC2626] font-bold text-sm hover:bg-[#DC2626] hover:text-white transition-colors cursor-pointer bg-white text-center flex items-center justify-center">
                     Cheque Bounce Cases
                   </Link>
-                  <Link href="/services/corporate-recovery" className="py-4 px-4 rounded-xl border-2 border-[#DC2626] text-[#DC2626] font-bold text-sm hover:bg-[#DC2626] hover:text-white transition-colors cursor-pointer bg-white text-center flex items-center justify-center">
+                  <Link href="/services/vendor-and-invoice-recoveries" className="py-4 px-4 rounded-xl border-2 border-[#DC2626] text-[#DC2626] font-bold text-sm hover:bg-[#DC2626] hover:text-white transition-colors cursor-pointer bg-white text-center flex items-center justify-center">
                     Corporate Debt Recovery
                   </Link>
                 </div>

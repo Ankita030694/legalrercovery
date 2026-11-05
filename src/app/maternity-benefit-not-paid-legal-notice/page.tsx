@@ -981,10 +981,10 @@ export default function MaternityBenefitLegalNoticePage() {
                     Code on Wages 2 Working Days FnF Rule →
                   </Link>
                   <Link
-                    href="/offer-letter-revoked-compensation-india"
+                    href="/legal-notice-wrongful-termination-unpaid-notice-period-salary"
                     className="px-3 py-1.5 bg-white border border-slate-200 rounded-lg hover:border-red-500 hover:text-red-600 transition-colors"
                   >
-                    Offer Letter Revoked Compensation →
+                    Wrongful Termination Legal Notice →
                   </Link>
                   <Link
                     href="/law/epf-scheme-2026-claim-rejection-remedies"

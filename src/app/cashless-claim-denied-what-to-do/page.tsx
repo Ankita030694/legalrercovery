@@ -745,7 +745,7 @@ export default function CashlessClaimDeniedPage() {
                       </h3>
                       <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
                         Lodge a formal written grievance with the insurer&apos;s Grievance Redressal Officer (GRO) and upload the complaint to IRDAI&apos;s{" "}
-                        <Link href="/law/insurance-ombudsman-bima-bharosa-guide" className="text-blue-700 underline font-semibold">
+                        <Link href="/legal-notice-to-insurance-company-claim-rejection-recovery" className="text-blue-700 underline font-semibold">
                           Bima Bharosa grievance portal
                         </Link>. Under IRDAI regulations, the insurer must acknowledge within 3 days and resolve the grievance within 15 days. Reference the IRDAI 1-hour/3-hour circular and demand refund of any excess room rent billed due to clearance delays.
                       </p>
@@ -761,11 +761,10 @@ export default function CashlessClaimDeniedPage() {
                         Dispatch Advocate Legal Demand Notice &amp; File Before the Insurance Ombudsman
                       </h3>
                       <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                        If the insurer rejects your reimbursement claim or fails to pay within 30 days, engage an advocate to dispatch a formal statutory legal notice via Registered Speed Post and digital channels. If unresolved within 30 days of the notice, file an online complaint using our{" "}
-                        <Link href="/templates/insurance-ombudsman-complaint-format" className="text-blue-700 underline font-semibold">
-                          Insurance Ombudsman complaint format
-                        </Link>{" "}
-                        before your territorial Insurance Ombudsman. The Ombudsman holds jurisdiction up to ₹50 Lakhs and passes binding awards with statutory interest.
+                        If the insurer rejects your reimbursement claim or fails to pay within 30 days, engage an advocate to dispatch a formal statutory legal notice via Registered Speed Post and digital channels. If unresolved within 30 days of the notice, file an online complaint before your territorial Insurance Ombudsman (see our{" "}
+                        <Link href="/legal-notice-to-insurance-company-claim-rejection-recovery" className="text-blue-700 underline font-semibold">
+                          insurance claim escalation guide
+                        </Link>). The Ombudsman holds jurisdiction up to ₹50 Lakhs and passes binding awards with statutory interest.
                       </p>
                     </div>
                   </div>
@@ -1117,16 +1116,16 @@ export default function CashlessClaimDeniedPage() {
                     Legal Notice for Insurance Claim Rejection →
                   </Link>
                   <Link
-                    href="/law/insurance-ombudsman-bima-bharosa-guide"
+                    href="/legal-notice-to-insurance-company-claim-rejection-recovery"
                     className="px-3 py-1.5 rounded-lg bg-white border border-slate-200 font-semibold text-slate-700 hover:text-red-600 hover:border-red-300 transition-colors"
                   >
                     Insurance Ombudsman &amp; Bima Bharosa Guide →
                   </Link>
                   <Link
-                    href="/templates/insurance-ombudsman-complaint-format"
+                    href="/claim-repudiated-vs-rejected-difference"
                     className="px-3 py-1.5 rounded-lg bg-white border border-slate-200 font-semibold text-slate-700 hover:text-red-600 hover:border-red-300 transition-colors"
                   >
-                    Insurance Ombudsman Complaint Format →
+                    Claim Repudiated vs Rejected →
                   </Link>
                   <Link
                     href="/health-insurance-claim-rejection-reasons-counter"

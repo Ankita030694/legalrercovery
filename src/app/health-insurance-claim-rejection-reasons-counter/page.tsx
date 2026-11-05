@@ -961,12 +961,12 @@ export default function HealthInsuranceClaimRejectionPage() {
                         Lodge Petition with Insurance Ombudsman or File on e-Jagriti
                       </h3>
                       <p className="text-xs sm:text-sm leading-relaxed">
-                        For claims up to ₹50 lakh, file an online petition before the regional Insurance Ombudsman using our{" "}
+                        For claims up to ₹50 lakh, file an online petition before the regional Insurance Ombudsman (see our{" "}
                         <Link
-                          href="/templates/insurance-ombudsman-complaint-format"
+                          href="/legal-notice-to-insurance-company-claim-rejection-recovery"
                           className="text-blue-700 underline font-semibold"
                         >
-                          Insurance Ombudsman complaint format
+                          insurance claim escalation guide)
                         </Link>
                         . If the claim exceeds ₹50 lakh or involves severe bad-faith damages, file a consumer petition on e-Jagriti under Section 35 CPA 2019 from your home district.
                       </p>
@@ -1361,16 +1361,16 @@ export default function HealthInsuranceClaimRejectionPage() {
                     Insurance Claim Rejection Legal Notice Hub →
                   </Link>
                   <Link
-                    href="/law/insurance-ombudsman-bima-bharosa-guide"
+                    href="/legal-notice-to-insurance-company-claim-rejection-recovery"
                     className="px-3 py-1.5 bg-white border border-slate-200 rounded-lg hover:border-red-500 hover:text-red-600 transition-colors"
                   >
                     Insurance Ombudsman &amp; Bima Bharosa Guide →
                   </Link>
                   <Link
-                    href="/templates/insurance-ombudsman-complaint-format"
+                    href="/claim-repudiated-vs-rejected-difference"
                     className="px-3 py-1.5 bg-white border border-slate-200 rounded-lg hover:border-red-500 hover:text-red-600 transition-colors"
                   >
-                    Insurance Ombudsman Complaint Format →
+                    Claim Repudiated vs Rejected →
                   </Link>
                   <Link
                     href="/insurance-mis-selling-free-look-refund"

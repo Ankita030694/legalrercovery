@@ -378,7 +378,7 @@ export default function SocietyMaintenanceRecoveryNoticePage() {
                     </Link>{" "}
                     or read in Hindi:{" "}
                     <Link
-                      href="/hi/security-deposit-wapas-kaise-le"
+                      href="/recover-security-deposit-from-landlord-india"
                       className="text-[#DC2626] font-semibold underline hover:text-red-800"
                     >
                       सिक्योरिटी डिपॉजिट वापस कैसे लें
