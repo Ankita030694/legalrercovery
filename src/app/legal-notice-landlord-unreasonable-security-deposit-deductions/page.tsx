@@ -2,7 +2,7 @@ import { Metadata } from "next";
 import LandlordDeductionsNoticeClient from "./LandlordDeductionsNoticeClient";
 
 export const metadata: Metadata = {
-  title: "Landlord Deducting Painting or Repair Charges from Security Deposit? Legal Notice & Rules",
+  title: "Landlord Deducting Security Deposit? Legal Notice",
   description: "Can a landlord deduct 1 month's rent for repainting, deep cleaning, or normal wear and tear in India? Challenge illegal security deposit deductions via an Advocate Legal Notice.",
   keywords: [
     "landlord deducted painting charges from deposit",
@@ -15,7 +15,7 @@ export const metadata: Metadata = {
     canonical: 'https://www.legalrecovery.in/legal-notice-landlord-unreasonable-security-deposit-deductions',
   },
   openGraph: {
-    title: "Landlord Deducting Painting or Repair Charges from Security Deposit? Legal Notice & Rules",
+    title: "Landlord Deducting Security Deposit? Legal Notice",
     description: "Stop illegal painting and wear-and-tear deductions from your rental security deposit with a formal Advocate Legal Notice.",
     url: "https://www.legalrecovery.in/legal-notice-landlord-unreasonable-security-deposit-deductions",
     type: "article",

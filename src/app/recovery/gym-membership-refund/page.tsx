@@ -2,7 +2,7 @@ import { Metadata } from "next";
 import GymMembershipRefundClient from "./GymMembershipRefundClient";
 
 export const metadata: Metadata = {
-  title: "Gym Membership Refund Not Received? Recover Your Money | LegalRecovery",
+  title: "Gym Membership Refund Not Received? Recover Money",
   description: "Gym refusing to refund your membership fee? LegalRecovery provides expert legal-tech assistance to recover pro-rata refunds, fight unfair no-refund clauses, and hold fitness centres accountable under consumer law.",
   keywords: [
     "gym membership refund India",

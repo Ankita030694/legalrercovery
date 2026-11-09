@@ -5,8 +5,23 @@ import { getDbAndBucket } from "@/lib/mongodb";
 import { SITE_URL } from "@/lib/site";
 import BlogDetailClient, { Blog, FAQ, Review } from "./BlogDetailClient";
 
+function cleanBlogContent(raw: string): string {
+  if (!raw) return "";
+  return raw
+    .replace(/href=["']\/services\/legal-strategy["']/gi, 'href="/services"')
+    .replace(/href=["']\/legal-notice-to-bank-format["']/gi, 'href="/online-legal-notice"')
+    .replace(/href=["']\/how-can-i-send-legal-notice["']/gi, 'href="/online-legal-notice"')
+    .replace(/href=["']\/resources["']/gi, 'href="/blog"')
+    .replace(/href=["'](?:https?:\/\/(?:www\.)?legalrecovery\.in)?\/delayed-payment-interest-calculator\/?["']/gi, 'href="/tools/msme-delayed-payment-interest-calculator"')
+    .replace(/href=["'](?:https?:\/\/(?:www\.)?legalrecovery\.in)?\/amazon-refund-not-received-legal-notice\/?["']/gi, 'href="/legal-notice-to/amazon"')
+    .replace(/href=["'](?:https?:\/\/(?:www\.)?legalrecovery\.in)?\/consumer-court-complaint-drafting-services\/?["']/gi, 'href="/services/refunds-and-consumer-complaints"')
+    .replace(/href=["'](?:https?:\/\/(?:www\.)?legalrecovery\.in)?\/unpaid-invoices-recovery-guide-for-indian-businesses\/?["']/gi, 'href="/recovery/unpaid-invoices"')
+    .replace(/href=["'](?:https?:\/\/(?:www\.)?legalrecovery\.in)?\/commercial-court-summary-suit-recovery-delhi-mumbai-bangalore\/?["']/gi, 'href="/law/order-37-summary-suit-money-recovery"')
+    .replace(/href=["'](?:https?:\/\/(?:www\.)?legalrecovery\.in)?\/msme-delayed-payment-interest-recovery-guide\/?["']/gi, 'href="/msme-delayed-payment-recovery-samadhan-vs-legal-notice"');
+}
+
 function mapDatabaseBlog(item: any): Blog {
-  const rawContent = item.description || item.content || "";
+  const rawContent = cleanBlogContent(item.description || item.content || "");
   
   let imageUrl = "/blog_money_recovery.png";
   if (item.image) {
@@ -72,6 +87,29 @@ function mapReviews(item: any): Review[] {
   }));
 }
 
+const BLOG_TITLE_OVERRIDES: Record<string, string> = {
+  "flipkart-amazon-open-box-delivery-otp-defective-refund-denied-recovery":
+    "Flipkart/Amazon Open Box Delivery Refund Denied: Fix",
+  "subcontractor-retention-money-recovery-pay-when-paid-clause-india":
+    "Subcontractor Retention Money Recovery Guide India",
+  "amazon-flipkart-refund-initiated-not-credited-bank-arn-rrn-rbi-compensation":
+    "Refund Initiated (ARN/RRN) Not in Bank? Recovery Steps",
+  "msme-odr-portal-vs-order-37-summary-suit-unpaid-invoice-recovery":
+    "MSME ODR vs Order 37 Summary Suit: Invoice Recovery",
+  "amazon-flipkart-meesho-seller-payment-hold-account-deactivation-recovery":
+    "Amazon & Flipkart Seller Payment Hold Payout Recovery",
+  "section-43bh-income-tax-msme-45-day-payment-recovery-legal-notice":
+    "Section 43B(h) & MSME 45-Day Invoice Recovery Playbook",
+  "recover-split-rent-deposit-bills-from-ex-flatmate-roommate-india":
+    "Recover Rent, Bills & Deposit from Flatmate in India",
+  "client-withholding-final-milestone-invoice-fake-quality-dispute-recovery":
+    "Client Holding Invoice Citing Quality Issues: Recovery",
+  "borrower-blocked-on-whatsapp-changed-address-money-recovery":
+    "Borrower Blocked You or Moved? Legal Notice & Recovery",
+  "recover-unpaid-salary-fnf-insolvent-shutting-down-startup-directors":
+    "Recover Unpaid Startup Salary & FNF: Legal Action",
+};
+
 export async function generateMetadata(
   { params }: { params: Promise<{ slug: string }> }
 ): Promise<Metadata> {
@@ -91,7 +129,20 @@ export async function generateMetadata(
     };
   }
 
-  const metaTitle = blog.metaTitle || blog.title || "Legal Article";
+  const slugKey = (blog.slug || slug || "").toLowerCase();
+  const overrideTitle = BLOG_TITLE_OVERRIDES[slugKey];
+  let pageTitle: string;
+  if (overrideTitle) {
+    pageTitle = overrideTitle;
+  } else {
+    const rawTitle = blog.metaTitle || blog.title || "Legal Article";
+    if (rawTitle.toLowerCase().includes("legalrecovery") || rawTitle.length > 42) {
+      pageTitle = rawTitle;
+    } else {
+      pageTitle = `${rawTitle} | LegalRecovery`;
+    }
+  }
+
   const metaDescription = blog.metaDescription || blog.subtitle || blog.subtitleKeywords || "";
 
   let imageUrl = "/blog_money_recovery.png";
@@ -103,7 +154,7 @@ export async function generateMetadata(
   const absoluteImageUrl = imageUrl.startsWith("http") ? imageUrl : `${SITE_URL}${imageUrl}`;
 
   return {
-    title: `${metaTitle} | LegalRecovery`,
+    title: pageTitle,
     description: metaDescription,
     alternates: {
       canonical: `/blog/${blog.slug}`,
@@ -124,7 +175,7 @@ export async function generateMetadata(
         : {}),
     },
     openGraph: {
-      title: `${metaTitle} | LegalRecovery`,
+      title: pageTitle,
       description: metaDescription,
       type: "article",
       images: [

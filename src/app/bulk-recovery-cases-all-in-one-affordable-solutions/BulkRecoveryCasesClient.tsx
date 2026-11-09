@@ -41,11 +41,11 @@ const jsonLd = {
       "@type": "Article",
       "mainEntityOfPage": {
         "@type": "WebPage",
-        "@id": "https://legalrecovery.in/bulk-recovery-cases-all-in-one-affordable-solutions"
+        "@id": "https://www.legalrecovery.in/bulk-recovery-cases-all-in-one-affordable-solutions"
       },
       "headline": "Bulk Recovery Cases: All-in-One Affordable Solutions for Business Dues",
       "image": [
-        "https://legalrecovery.in/images/og/bulk-recovery-cases-all-in-one-affordable-solutions.jpg"
+        "https://www.legalrecovery.in/images/og/bulk-recovery-cases-all-in-one-affordable-solutions.jpg"
       ],
       "author": {
         "@type": "Person",
@@ -55,14 +55,14 @@ const jsonLd = {
       "reviewedBy": {
         "@type": "Person",
         "name": "Advocate Sneha Sharma",
-        "url": "https://legalrecovery.in/authors/advocate-sneha-sharma"
+        "url": "https://www.legalrecovery.in/authors/advocate-sneha-sharma"
       },
       "publisher": {
         "@type": "Organization",
         "name": "Legal Recovery",
         "logo": {
           "@type": "ImageObject",
-          "url": "https://legalrecovery.in/lrlogo.svg"
+          "url": "https://www.legalrecovery.in/lrlogo.svg"
         }
       },
       "datePublished": "2024-04-10T08:00:00+05:30",
@@ -71,7 +71,7 @@ const jsonLd = {
     {
       "@type": "Organization",
       "name": "Legal Recovery",
-      "url": "https://legalrecovery.in",
+      "url": "https://www.legalrecovery.in",
       "sameAs": [
         "https://www.linkedin.com/company/legal-recovery-india",
         "https://twitter.com/legalrecoveryin"
@@ -79,7 +79,7 @@ const jsonLd = {
     },
     {
       "@type": "WebPage",
-      "@id": "https://legalrecovery.in/bulk-recovery-cases-all-in-one-affordable-solutions",
+      "@id": "https://www.legalrecovery.in/bulk-recovery-cases-all-in-one-affordable-solutions",
       "name": "Bulk Recovery Cases: All-in-One Affordable Solutions for Business Dues",
       "speakable": {
         "@type": "SpeakableSpecification",
@@ -93,19 +93,19 @@ const jsonLd = {
           "@type": "ListItem",
           "position": 1,
           "name": "Home",
-          "item": "https://legalrecovery.in/"
+          "item": "https://www.legalrecovery.in/"
         },
         {
           "@type": "ListItem",
           "position": 2,
           "name": "Send a Legal Notice",
-          "item": "https://legalrecovery.in/send-a-legal-notice"
+          "item": "https://www.legalrecovery.in/send-a-legal-notice"
         },
         {
           "@type": "ListItem",
           "position": 3,
           "name": "Bulk Recovery Cases",
-          "item": "https://legalrecovery.in/bulk-recovery-cases-all-in-one-affordable-solutions"
+          "item": "https://www.legalrecovery.in/bulk-recovery-cases-all-in-one-affordable-solutions"
         }
       ]
     },
@@ -347,7 +347,7 @@ export default function BulkRecoveryCasesClient() {
                   <div className="flex items-center gap-2">
                     <span className="text-xs font-semibold text-slate-400 uppercase tracking-wider mr-2">Share:</span>
                     <a
-                      href="https://twitter.com/intent/tweet?url=https%3A%2F%2Flegalrecovery.in%2Fbulk-recovery-cases-all-in-one-affordable-solutions&text=Complete%20Commercial%20Guide%20to%20Bulk%20Recovery%20of%20Unpaid%20Dues%20for%20Business%20in%20India.%20%23B2BDebtRecovery%20%23CommercialLaw"
+                      href="https://twitter.com/intent/tweet?url=https%3A%2F%2Fwww.legalrecovery.in%2Fbulk-recovery-cases-all-in-one-affordable-solutions&text=Complete%20Commercial%20Guide%20to%20Bulk%20Recovery%20of%20Unpaid%20Dues%20for%20Business%20in%20India.%20%23B2BDebtRecovery%20%23CommercialLaw"
                       target="_blank"
                       rel="noopener noreferrer"
                       className="w-8 h-8 rounded-full bg-black text-white hover:opacity-80 flex items-center justify-center transition-opacity"
@@ -358,7 +358,7 @@ export default function BulkRecoveryCasesClient() {
                       </svg>
                     </a>
                     <a
-                      href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Flegalrecovery.in%2Fbulk-recovery-cases-all-in-one-affordable-solutions"
+                      href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fwww.legalrecovery.in%2Fbulk-recovery-cases-all-in-one-affordable-solutions"
                       target="_blank"
                       rel="noopener noreferrer"
                       className="w-8 h-8 rounded-full bg-[#1877F2] text-white hover:opacity-80 flex items-center justify-center transition-opacity"
@@ -369,7 +369,7 @@ export default function BulkRecoveryCasesClient() {
                       </svg>
                     </a>
                     <a
-                      href="https://www.linkedin.com/shareArticle?mini=true&url=https%3A%2F%2Flegalrecovery.in%2Fbulk-recovery-cases-all-in-one-affordable-solutions&title=Bulk%20Recovery%20Cases%3A%20All-in-One%20Affordable%20Solutions%20for%20Business%20Dues"
+                      href="https://www.linkedin.com/shareArticle?mini=true&url=https%3A%2F%2Fwww.legalrecovery.in%2Fbulk-recovery-cases-all-in-one-affordable-solutions&title=Bulk%20Recovery%20Cases%3A%20All-in-One%20Affordable%20Solutions%20for%20Business%20Dues"
                       target="_blank"
                       rel="noopener noreferrer"
                       className="w-8 h-8 rounded-full bg-[#0A66C2] text-white hover:opacity-80 flex items-center justify-center transition-opacity"

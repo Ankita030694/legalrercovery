@@ -10,14 +10,14 @@ import CommercialLeaseProblemTabs from "./CommercialLeaseProblemTabs";
 export const revalidate = 86400;
 
 export const metadata: Metadata = {
-  title: "Commercial Lease Security Deposit Stuck? Legal Notice & Recovery",
+  title: "Commercial Lease Security Deposit Stuck? Legal Notice",
   description:
     "Commercial landlord refusing to return office or retail deposit? Dilapidation claims, fair wear & tear, arbitration clause tactics and recovery notice.",
   alternates: {
     canonical: `${SITE_URL}/commercial-lease-security-deposit-refund-legal-notice`,
   },
   openGraph: {
-    title: "Commercial Lease Security Deposit Stuck? Legal Notice & Recovery",
+    title: "Commercial Lease Security Deposit Stuck? Legal Notice",
     description:
       "Statutory roadmap for recovering ₹5L–₹50L+ office and retail deposits. Order 37 summary suit vs MSME Samadhaan vs arbitration, dilapidation clause tactics and legal notice.",
     url: `${SITE_URL}/commercial-lease-security-deposit-refund-legal-notice`,

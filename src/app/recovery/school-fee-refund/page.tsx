@@ -2,7 +2,7 @@ import { Metadata } from "next";
 import SchoolFeeRefundClient from "./SchoolFeeRefundClient";
 
 export const metadata: Metadata = {
-  title: "Private School Refusing Fee Refund? Recover Your Money | LegalRecovery",
+  title: "Private School Refusing Fee Refund? Recover Money",
   description: "Private school not refunding admission fees, caution deposit, or development charges? LegalRecovery provides expert legal-tech assistance to recover school fees, fight illegal capitation charges, and hold school management accountable under RTE Act and consumer law.",
   keywords: [
     "school fee refund India",

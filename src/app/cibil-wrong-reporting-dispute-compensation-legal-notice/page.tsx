@@ -10,14 +10,14 @@ import CibilProblemTabs from "./CibilProblemTabs";
 export const revalidate = 86400;
 
 export const metadata: Metadata = {
-  title: "Wrong CIBIL Report? RBI ₹100/Day Delay Penalty & Legal Notice",
+  title: "Wrong CIBIL Report? RBI Delay Penalty & Legal Notice",
   description:
     "Wrong loan or late payment reported to CIBIL / Experian? Claim RBI's ₹100/day delay compensation and send a legal notice to rectify credit records.",
   alternates: {
     canonical: `${SITE_URL}/cibil-wrong-reporting-dispute-compensation-legal-notice`,
   },
   openGraph: {
-    title: "Wrong CIBIL Report? RBI ₹100/Day Delay Penalty & Legal Notice",
+    title: "Wrong CIBIL Report? RBI Delay Penalty & Legal Notice",
     description:
       "Statutory guide on disputing erroneous credit reports under CICRA 2005, enforcing RBI's ₹100/day compensation rule for delayed rectification, and serving an advocate legal notice.",
     url: `${SITE_URL}/cibil-wrong-reporting-dispute-compensation-legal-notice`,

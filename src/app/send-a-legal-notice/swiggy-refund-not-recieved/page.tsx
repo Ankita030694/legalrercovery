@@ -10,7 +10,7 @@ export const metadata: Metadata = {
   title,
   description,
   alternates: {
-    canonical: url,
+    canonical: 'https://www.legalrecovery.in/legal-notice-to/swiggy',
   },
   openGraph: {
     title,

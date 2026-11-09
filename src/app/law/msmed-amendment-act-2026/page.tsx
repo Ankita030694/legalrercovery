@@ -10,7 +10,7 @@ import MsmedScenariosTabs from "./MsmedScenariosTabs";
 export const revalidate = 86400;
 
 export const metadata: Metadata = {
-  title: "MSMED Amendment Act 2026: What Changes for MSME Suppliers",
+  title: "MSMED Amendment Act 2026: Key Changes for Suppliers",
   description:
     "The 2026 MSMED amendment keeps the 45-day rule and tightens mediation, arbitration and enforcement. What suppliers should do now.",
   alternates: {

@@ -89,7 +89,13 @@ const processContent = (html: string) => {
     .replace(/href=["']\/services\/legal-strategy["']/gi, 'href="/services"')
     .replace(/href=["']\/legal-notice-to-bank-format["']/gi, 'href="/online-legal-notice"')
     .replace(/href=["']\/how-can-i-send-legal-notice["']/gi, 'href="/online-legal-notice"')
-    .replace(/href=["']\/resources["']/gi, 'href="/blog"');
+    .replace(/href=["']\/resources["']/gi, 'href="/blog"')
+    .replace(/href=["'](?:https?:\/\/(?:www\.)?legalrecovery\.in)?\/delayed-payment-interest-calculator\/?["']/gi, 'href="/tools/msme-delayed-payment-interest-calculator"')
+    .replace(/href=["'](?:https?:\/\/(?:www\.)?legalrecovery\.in)?\/amazon-refund-not-received-legal-notice\/?["']/gi, 'href="/legal-notice-to/amazon"')
+    .replace(/href=["'](?:https?:\/\/(?:www\.)?legalrecovery\.in)?\/consumer-court-complaint-drafting-services\/?["']/gi, 'href="/services/refunds-and-consumer-complaints"')
+    .replace(/href=["'](?:https?:\/\/(?:www\.)?legalrecovery\.in)?\/unpaid-invoices-recovery-guide-for-indian-businesses\/?["']/gi, 'href="/recovery/unpaid-invoices"')
+    .replace(/href=["'](?:https?:\/\/(?:www\.)?legalrecovery\.in)?\/commercial-court-summary-suit-recovery-delhi-mumbai-bangalore\/?["']/gi, 'href="/law/order-37-summary-suit-money-recovery"')
+    .replace(/href=["'](?:https?:\/\/(?:www\.)?legalrecovery\.in)?\/msme-delayed-payment-interest-recovery-guide\/?["']/gi, 'href="/msme-delayed-payment-recovery-samadhan-vs-legal-notice"');
 
   // Strip nofollow from internal links (links to our own domain or relative paths)
   modifiedContent = modifiedContent.replace(

@@ -12,14 +12,14 @@ import AwardsTrackerNoticeCTA from "./AwardsTrackerNoticeCTA";
 export const revalidate = 86400;
 
 export const metadata: Metadata = {
-  title: "Consumer Court Awards Tracker: Refund & Compensation Orders",
+  title: "Consumer Court Awards Tracker: Refund & Orders",
   description:
     "A monthly roundup of consumer commission orders against e-commerce sites, airlines, banks and builders, with amounts and links.",
   alternates: {
     canonical: `${SITE_URL}/reports/consumer-commission-awards-tracker`,
   },
   openGraph: {
-    title: "Consumer Court Awards Tracker: Refund & Compensation Orders",
+    title: "Consumer Court Awards Tracker: Refund & Orders",
     description:
       "A monthly roundup of consumer commission orders against e-commerce sites, airlines, banks and builders, with amounts and links.",
     url: `${SITE_URL}/reports/consumer-commission-awards-tracker`,

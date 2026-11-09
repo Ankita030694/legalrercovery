@@ -99,7 +99,7 @@ const CLUSTERS: Record<string, { heading: string; items: GuideItem[] }> = {
         desc: "Section 74 Contract Act limits on advance forfeiture, genuine pre-estimate of loss, and advocate recovery notice.",
       },
       {
-        title: "Consumer Court Awards Tracker: Refund & Compensation Orders",
+        title: "Consumer Court Awards Tracker: Refund & Orders",
         href: "/reports/consumer-commission-awards-tracker",
         tag: "Awards Tracker",
         desc: "Monthly roundup of consumer court judgments against e-commerce sites, airlines, banks, and builders with exact refund amounts and links.",
@@ -225,7 +225,7 @@ const CLUSTERS: Record<string, { heading: string; items: GuideItem[] }> = {
         desc: "Recover advance money paid to defaulting suppliers, contractors, or service vendors under Sec 73.",
       },
       {
-        title: "Defective Car Replacement or Full Refund: Indian Lemon Law Guide",
+        title: "Defective Car Replacement or Refund: Lemon Law India",
         href: "/manufacturing-defect-car-replacement-refund-lemon-law",
         tag: "Automotive Lemon Law",
         desc: "Force carmaker vehicle replacement or 100% invoice refund for manufacturing defects under Chapter VI CPA 2019.",
@@ -618,7 +618,7 @@ const CLUSTERS: Record<string, { heading: string; items: GuideItem[] }> = {
         desc: "Transparent breakdown of legal notice costs by dispute type, city, advocate vs platform fees, and postal charges.",
       },
       {
-        title: "Client Not Paying for Web Development? Legal Notice & Recovery",
+        title: "Client Not Paying for Web Development? Legal Notice",
         href: "/web-development-client-not-paying-legal-notice",
         tag: "Web & Software IP",
         desc: "Section 19 Copyright lever, MSME 3× compound interest, host-level DMCA takedowns, and legal notice for unpaid software developers.",
@@ -660,7 +660,7 @@ const CLUSTERS: Record<string, { heading: string; items: GuideItem[] }> = {
         desc: "Distinguish criminal cheating from civil loan default, dishonest intent from inception, and police complaint vs summary suit.",
       },
             {
-        title: "Has Your 3-Year Limit Expired? Acknowledgment & Part-Payment",
+        title: "3-Year Limit Expired? Acknowledgment & Part-Payment",
         href: "/limitation-extended-by-acknowledgment-part-payment",
         tag: "Limitation Act",
         desc: "How WhatsApp acknowledgments under Section 18 and part-payments under Section 19 restart the 3-year limitation clock.",

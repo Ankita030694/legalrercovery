@@ -2,7 +2,7 @@ import { Metadata } from "next";
 import CoachingCollegeRefundClient from "./CoachingCollegeRefundClient";
 
 export const metadata: Metadata = {
-  title: "How to Challenge 'Fees Non-Refundable' Clauses in Education: Legal Notice Format",
+  title: "Legal Notice to Coaching Institute for Fee Refund",
   description: "Told 'fees once paid are non-refundable' on an admission receipt? Learn how Supreme Court & NCDRC precedents void unfair education fee forfeiture clauses via Advocate Legal Notice.",
   keywords: [
     "fees once paid are non refundable illegal india",
@@ -15,7 +15,7 @@ export const metadata: Metadata = {
     canonical: 'https://www.legalrecovery.in/legal-notice-to-coaching-institute-college-fee-refund',
   },
   openGraph: {
-    title: "How to Challenge 'Fees Non-Refundable' Clauses in Education: Legal Notice Format",
+    title: "Legal Notice to Coaching Institute for Fee Refund",
     description: "Told 'fees once paid are non-refundable'? Learn how Supreme Court & NCDRC precedents void unfair education fee forfeiture clauses.",
     url: "https://www.legalrecovery.in/legal-notice-to-coaching-institute-college-fee-refund",
     type: "article",

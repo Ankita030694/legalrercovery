@@ -2,7 +2,7 @@ import { Metadata } from "next";
 import OnlineLegalNoticeClient from "./OnlineLegalNoticeClient";
 
 export const metadata: Metadata = {
-  title: "Send Legal Notice Online in India: Advocate Drafting, Speed Post & Tracking",
+  title: "Send Legal Notice Online in India: Advocate Drafting",
   description: "Send an Advocate-drafted Online Legal Notice in India via Registered Speed Post, WhatsApp & Email (Section 63 BSA valid). Check online legal notice validity, tracking & ₹999 fixed fee.",
   keywords: [
     "online legal notice",
@@ -19,7 +19,7 @@ export const metadata: Metadata = {
     canonical: 'https://www.legalrecovery.in/online-legal-notice',
   },
   openGraph: {
-    title: "Send Legal Notice Online in India: Advocate Drafting, Speed Post & Tracking",
+    title: "Send Legal Notice Online in India: Advocate Drafting",
     description: "Send an Advocate-drafted Online Legal Notice in India via Registered Speed Post, WhatsApp & Email (Section 63 BSA valid).",
     url: "https://www.legalrecovery.in/online-legal-notice",
     type: "article",

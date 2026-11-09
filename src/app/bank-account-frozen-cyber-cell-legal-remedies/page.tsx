@@ -10,7 +10,7 @@ import CyberCellFreezeProblemTabs from "./CyberCellFreezeProblemTabs";
 export const revalidate = 86400;
 
 export const metadata: Metadata = {
-  title: "Bank Account Frozen by Cyber Cell? How to Unfreeze (2026 Guide)",
+  title: "Bank Account Frozen by Cyber Cell? How to Unfreeze",
   description:
     "Account put on debit freeze by cyber police? Layer tracing, Section 91/102 notice remedies, obtaining an NOC, and filing before the magistrate.",
   alternates: {

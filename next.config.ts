@@ -34,8 +34,6 @@ const securityHeaders = [
 // [old path, closest live page]. Old paths were linked from pages or blog posts but never existed.
 const BROKEN_LINK_REDIRECTS: [string, string][] = [
   // linked from page code
-  ["/law/insurance-ombudsman-bima-bharosa-guide", "/legal-notice-to-insurance-company-claim-rejection-recovery"],
-  ["/templates/insurance-ombudsman-complaint-format", "/legal-notice-to-insurance-company-claim-rejection-recovery"],
   ["/templates/unauthorised-transaction-complaint-letter-bank", "/law/rbi-zero-liability-unauthorised-transaction"],
   ["/security-cheque-misuse-section-138", "/stop-payment-cheque-bounce-case"],
   ["/offer-letter-revoked-compensation-india", "/legal-notice-wrongful-termination-unpaid-notice-period-salary"],
@@ -71,6 +69,12 @@ const BROKEN_LINK_REDIRECTS: [string, string][] = [
   ["/legal-recovery-of-money-from-landlord", "/recover-security-deposit-from-landlord-india"],
   ["/legal-notice-to-recover-my-loan-from-friend", "/legal-notice-to-recovery-my-loan-from-friend"],
   ["/how-to-send-a-legal-notice", "/how-to-send-a-legal-notice-for-recovery-of-money-in-india"],
+  ["/delayed-payment-interest-calculator", "/tools/msme-delayed-payment-interest-calculator"],
+  ["/amazon-refund-not-received-legal-notice", "/legal-notice-to/amazon"],
+  ["/consumer-court-complaint-drafting-services", "/services/refunds-and-consumer-complaints"],
+  ["/unpaid-invoices-recovery-guide-for-indian-businesses", "/recovery/unpaid-invoices"],
+  ["/commercial-court-summary-suit-recovery-delhi-mumbai-bangalore", "/law/order-37-summary-suit-money-recovery"],
+  ["/msme-delayed-payment-interest-recovery-guide", "/msme-delayed-payment-recovery-samadhan-vs-legal-notice"],
 ];
 
 const nextConfig: NextConfig = {

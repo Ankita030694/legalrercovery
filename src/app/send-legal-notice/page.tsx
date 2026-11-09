@@ -15,7 +15,7 @@ export const metadata: Metadata = {
     "cpc section 80 notice period"
   ],
   alternates: {
-    canonical: 'https://www.legalrecovery.in/send-legal-notice',
+    canonical: 'https://www.legalrecovery.in/online-legal-notice',
   },
 };
 

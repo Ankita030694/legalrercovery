@@ -10,7 +10,7 @@ import NoBrokerProblemTabs from "./NoBrokerProblemTabs";
 export const revalidate = 86400;
 
 export const metadata: Metadata = {
-  title: "NoBroker Refund Not Received? Money-Back Plan & Legal Notice",
+  title: "NoBroker Refund Not Received? Legal Notice & Recovery",
   description:
     "NoBroker money-back plan or token refund not received? Read the plan terms, escalate in writing and send a legal notice if ignored.",
   alternates: {

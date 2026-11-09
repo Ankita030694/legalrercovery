@@ -2,7 +2,7 @@ import { Metadata } from "next";
 import CoachingInstituteFeesClient from "./CoachingInstituteFeesClient";
 
 export const metadata: Metadata = {
-  title: "Coaching Institute Fee Refund in India: CCPA 2024 Pro-Rata Rule & Legal Notice",
+  title: "Coaching Institute Fee Refund: CCPA Rules & Notice",
   description: "IIT-JEE, NEET, UPSC coaching center or EdTech refusing fee refund mid-course? Enforce CCPA 2024 Coaching Guidelines for mandatory pro-rata tuition & hostel refund via Legal Notice.",
   keywords: [
     "coaching institute fee refund India",
@@ -17,7 +17,7 @@ export const metadata: Metadata = {
     canonical: 'https://www.legalrecovery.in/recovery/coaching-institute-fees',
   },
   openGraph: {
-    title: "Coaching Institute Fee Refund in India: CCPA 2024 Pro-Rata Rule & Legal Notice",
+    title: "Coaching Institute Fee Refund: CCPA Rules & Notice",
     description: "IIT-JEE, NEET, UPSC coaching center or EdTech refusing fee refund mid-course? Enforce CCPA 2024 Pro-Rata Refund Guidelines via Legal Notice.",
     url: "https://www.legalrecovery.in/recovery/coaching-institute-fees",
     type: "article",

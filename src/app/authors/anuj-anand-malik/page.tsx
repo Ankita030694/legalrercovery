@@ -2,7 +2,7 @@ import { Metadata } from 'next';
 import Link from 'next/link';
 
 export const metadata: Metadata = {
-  title: 'Anuj Anand Malik - Founder, AMA Legal Solutions | Legal Recovery India',
+  title: 'Anuj Anand Malik - Founder, AMA Legal Solutions',
   description: 'Anuj Anand Malik, Founder of AMA Legal Solutions, is a trusted advocate, loan settlement expert, legal advisor, and banking & consumer litigation lawyer in India.',
   alternates: {
     canonical: 'https://www.legalrecovery.in/authors/anuj-anand-malik',

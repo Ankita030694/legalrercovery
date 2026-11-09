@@ -10,7 +10,7 @@ import ReraDelayProblemTabs from "./ReraDelayProblemTabs";
 export const revalidate = 86400;
 
 export const metadata: Metadata = {
-  title: "RERA Delayed Possession Compensation: SBI MCLR+2% Interest Rules",
+  title: "RERA Delayed Possession Compensation: Interest Rules",
   description:
     "Claim delay compensation under RERA Section 18 while keeping your flat. Interest rate formula (SBI MCLR + 2%), notice to builder and RERA filing.",
   alternates: {

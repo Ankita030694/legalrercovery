@@ -2,7 +2,7 @@ import { Metadata } from 'next';
 import SchoolCollegeFeeRefundAdmissionCancellationClient from './SchoolCollegeFeeRefundAdmissionCancellationClient';
 
 const slug = 'send-a-legal-notice/school-college-fee-refund-admission-cancellation';
-const title = 'School Admission Withdrawal & Caution Deposit Refund Legal Notice India';
+const title = 'School Admission Withdrawal & Fee Refund Notice';
 const description =
   'Private school or junior college refusing admission fee, caution money, or transfer certificate (TC) on withdrawal? Send an Advocate Legal Notice for immediate refund.';
 const url = `https://www.legalrecovery.in/${slug}`;

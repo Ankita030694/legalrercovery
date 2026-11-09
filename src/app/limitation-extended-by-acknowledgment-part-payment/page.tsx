@@ -10,7 +10,7 @@ import LimitationScenarioTabs from "./LimitationScenarioTabs";
 export const revalidate = 86400;
 
 export const metadata: Metadata = {
-  title: "Has Your 3-Year Limit Expired? Acknowledgment & Part-Payment",
+  title: "3-Year Limit Expired? Acknowledgment & Part-Payment",
   description:
     "A written acknowledgment (even on WhatsApp) or part payment can restart the 3-year limit. See how sections 18 and 19 save old claims.",
   alternates: {

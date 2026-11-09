@@ -2,7 +2,7 @@ import { Metadata } from "next";
 import WhatsappEvidenceClient from "./WhatsappEvidenceClient";
 
 export const metadata: Metadata = {
-  title: "Can WhatsApp Chat Be Used as Evidence in a Money Recovery Case in India? (Sec 63 BSA / 65B)",
+  title: "Can WhatsApp Chat Be Evidence in Money Recovery Cases?",
   description: "Yes—WhatsApp messages, voice notes, and blue ticks are admissible in Indian courts for money recovery with a Section 63 BSA (formerly Sec 65B) Certificate and restart the 3-year limitation clock.",
   keywords: [
     "can whatsapp chat be used as evidence in money recovery case",
@@ -16,7 +16,7 @@ export const metadata: Metadata = {
     canonical: 'https://www.legalrecovery.in/can-whatsapp-chat-be-used-as-evidence-in-money-recovery-case',
   },
   openGraph: {
-    title: "Can WhatsApp Chat Be Used as Evidence in a Money Recovery Case in India? (Sec 63 BSA / 65B)",
+    title: "Can WhatsApp Chat Be Evidence in Money Recovery Cases?",
     description: "How to use WhatsApp chats, voice notes, and UPI screenshots with a Section 63 BSA certificate to win a money recovery claim in India.",
     url: "https://www.legalrecovery.in/can-whatsapp-chat-be-used-as-evidence-in-money-recovery-case",
     type: "article",

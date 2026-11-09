@@ -14,7 +14,7 @@ export const metadata: Metadata = {
     "e-courts notice system India"
   ],
   alternates: {
-    canonical: 'https://www.legalrecovery.in/legal-notice-online',
+    canonical: 'https://www.legalrecovery.in/online-legal-notice',
   },
 };
 

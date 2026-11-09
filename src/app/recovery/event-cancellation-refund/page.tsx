@@ -2,7 +2,7 @@ import { Metadata } from "next";
 import EventRefundClient from "./EventRefundClient";
 
 export const metadata: Metadata = {
-  title: "Cancelled Event Refund: Recover Ticket & Booking Money Legally",
+  title: "Cancelled Event Refund: Recover Ticket & Booking Money",
   description: "Organizer cancelled your event or concert but refusing a refund? Know your rights under Consumer Protection Act & Section 65 of Contract Act. Get expert legal assistance to recover your money.",
   keywords: [
     "event cancellation refund India",

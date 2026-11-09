@@ -11,14 +11,14 @@ import WebDevChecklistIsland from "./WebDevChecklistIsland";
 export const revalidate = 86400;
 
 export const metadata: Metadata = {
-  title: "Client Not Paying for Web Development? Legal Notice & Recovery",
+  title: "Client Not Paying for Web Development? Legal Notice",
   description:
     "Client withholding payment after website delivery or ghosting on milestones? Code ownership, copyright lever under Section 19, and recovery notice.",
   alternates: {
     canonical: `${SITE_URL}/web-development-client-not-paying-legal-notice`,
   },
   openGraph: {
-    title: "Client Not Paying for Web Development? Legal Notice & Recovery",
+    title: "Client Not Paying for Web Development? Legal Notice",
     description:
       "Statutory recovery guide for web & software developers: Section 19 Copyright Act code ownership, MSME 3× compound interest, host takedowns, and legal notice.",
     url: `${SITE_URL}/web-development-client-not-paying-legal-notice`,

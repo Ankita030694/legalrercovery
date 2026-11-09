@@ -2,7 +2,7 @@ import { Metadata } from "next";
 import MultipleChequesClient from "./MultipleChequesClient";
 
 export const metadata: Metadata = {
-  title: "Multiple Cheque Bounce Cases from Same Transaction: Single Legal Notice & Sec 219 CrPC / BNSS",
+  title: "Multiple Cheque Bounce Cases: Single Notice & BNSS 219",
   description: "Did 2 or more cheques from the same loan or invoice bounce? Learn how to send a single consolidated Section 138 NI Act Legal Notice and club up to 3 cases into one joint court trial.",
   keywords: [
     "multiple cheque bounce cases same transaction",

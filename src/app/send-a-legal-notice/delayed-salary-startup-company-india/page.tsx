@@ -2,7 +2,7 @@ import { Metadata } from 'next';
 import DelayedSalaryStartupCompanyIndiaClient from './DelayedSalaryStartupCompanyIndiaClient';
 
 const slug = 'send-a-legal-notice/delayed-salary-startup-company-india';
-const title = 'Startup Not Paying Salary? Legal Notice to Founders & NCLT IBC Claim';
+const title = 'Startup Not Paying Salary? Legal Notice to Founders';
 const description =
   'Startup delaying salaries citing funding winter or runway crunch? Serve an Advocate Legal Notice to startup founders/directors & file an NCLT Operational Creditor claim.';
 const url = `https://www.legalrecovery.in/${slug}`;

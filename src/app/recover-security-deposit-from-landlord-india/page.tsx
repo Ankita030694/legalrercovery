@@ -2,7 +2,7 @@ import { Metadata } from "next";
 import LandlordDepositClient from "./LandlordDepositClient";
 
 export const metadata: Metadata = {
-  title: "Landlord Not Returning Security Deposit in India? Legal Notice, Rent Court & 18% Interest",
+  title: "Landlord Not Returning Security Deposit? Recovery Steps",
   description: "Landlord refusing to refund your rental security deposit after vacating the flat? Serve an Advocate Legal Notice, stop illegal painting deductions & recover 100% deposit + 18% interest.",
   keywords: [
     "recover security deposit landlord india",
@@ -20,7 +20,7 @@ export const metadata: Metadata = {
     canonical: 'https://www.legalrecovery.in/recover-security-deposit-from-landlord-india',
   },
   openGraph: {
-    title: "Landlord Not Returning Security Deposit in India? Legal Notice, Rent Court & 18% Interest",
+    title: "Landlord Not Returning Security Deposit? Recovery Steps",
     description: "Recover your rental security deposit from a defaulting landlord in 7–15 days via an Advocate Legal Notice and Rent Authority escalation.",
     url: "https://www.legalrecovery.in/recover-security-deposit-from-landlord-india",
     type: "article",

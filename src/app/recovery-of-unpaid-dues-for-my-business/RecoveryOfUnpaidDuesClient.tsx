@@ -37,11 +37,11 @@ const jsonLd = {
       "@type": "Article",
       "mainEntityOfPage": {
         "@type": "WebPage",
-        "@id": "https://legalrecovery.in/recovery-of-unpaid-dues-for-my-business"
+        "@id": "https://www.legalrecovery.in/recovery-of-unpaid-dues-for-my-business"
       },
       "headline": "Recovery of Unpaid Dues for My Business: Legal Guide & Notice Framework",
       "image": [
-        "https://legalrecovery.in/images/og/recovery-of-unpaid-dues-for-my-business.jpg"
+        "https://www.legalrecovery.in/images/og/recovery-of-unpaid-dues-for-my-business.jpg"
       ],
       "author": {
         "@type": "Person",
@@ -51,14 +51,14 @@ const jsonLd = {
       "reviewedBy": {
         "@type": "Person",
         "name": "Advocate Sneha Sharma",
-        "url": "https://legalrecovery.in/authors/advocate-sneha-sharma"
+        "url": "https://www.legalrecovery.in/authors/advocate-sneha-sharma"
       },
       "publisher": {
         "@type": "Organization",
         "name": "Legal Recovery",
         "logo": {
           "@type": "ImageObject",
-          "url": "https://legalrecovery.in/icon.png"
+          "url": "https://www.legalrecovery.in/lrlogo.svg"
         }
       },
       "datePublished": "2024-03-20T08:00:00+05:30",
@@ -67,7 +67,7 @@ const jsonLd = {
     {
       "@type": "Organization",
       "name": "Legal Recovery",
-      "url": "https://legalrecovery.in",
+      "url": "https://www.legalrecovery.in",
       "sameAs": [
         "https://www.linkedin.com/company/legal-recovery-india",
         "https://twitter.com/legalrecoveryin"
@@ -75,7 +75,7 @@ const jsonLd = {
     },
     {
       "@type": "WebPage",
-      "@id": "https://legalrecovery.in/recovery-of-unpaid-dues-for-my-business",
+      "@id": "https://www.legalrecovery.in/recovery-of-unpaid-dues-for-my-business",
       "name": "Recovery of Unpaid Dues for My Business",
       "speakable": {
         "@type": "SpeakableSpecification",
@@ -89,19 +89,19 @@ const jsonLd = {
           "@type": "ListItem",
           "position": 1,
           "name": "Home",
-          "item": "https://legalrecovery.in/"
+          "item": "https://www.legalrecovery.in/"
         },
         {
           "@type": "ListItem",
           "position": 2,
           "name": "Send a Legal Notice",
-          "item": "https://legalrecovery.in/send-a-legal-notice"
+          "item": "https://www.legalrecovery.in/send-a-legal-notice"
         },
         {
           "@type": "ListItem",
           "position": 3,
           "name": "Recovery of Unpaid Dues for My Business",
-          "item": "https://legalrecovery.in/recovery-of-unpaid-dues-for-my-business"
+          "item": "https://www.legalrecovery.in/recovery-of-unpaid-dues-for-my-business"
         }
       ]
     },
@@ -329,7 +329,7 @@ export default function RecoveryOfUnpaidDuesClient() {
                   <div className="flex items-center gap-2">
                     <span className="text-xs font-semibold text-slate-400 uppercase tracking-wider mr-2">Share:</span>
                     <a
-                      href="https://twitter.com/intent/tweet?url=https%3A%2F%2Flegalrecovery.in%2Frecovery-of-unpaid-dues-for-my-business&text=Definitive%20legal%20guide%20for%20recovery%20of%20unpaid%20dues%20for%20my%20business%20in%20India%20%23B2BDebtRecovery"
+                      href="https://twitter.com/intent/tweet?url=https%3A%2F%2Fwww.legalrecovery.in%2Frecovery-of-unpaid-dues-for-my-business&text=Definitive%20legal%20guide%20for%20recovery%20of%20unpaid%20dues%20for%20my%20business%20in%20India%20%23B2BDebtRecovery"
                       target="_blank"
                       rel="noopener noreferrer"
                       className="w-8 h-8 rounded-full bg-black text-white hover:opacity-85 flex items-center justify-center transition-opacity"
@@ -338,7 +338,7 @@ export default function RecoveryOfUnpaidDuesClient() {
                       <svg className="w-4 h-4 fill-current" viewBox="0 0 24 24"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
                     </a>
                     <a
-                      href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Flegalrecovery.in%2Frecovery-of-unpaid-dues-for-my-business"
+                      href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fwww.legalrecovery.in%2Frecovery-of-unpaid-dues-for-my-business"
                       target="_blank"
                       rel="noopener noreferrer"
                       className="w-8 h-8 rounded-full bg-[#1877F2] text-white hover:opacity-85 flex items-center justify-center transition-opacity"
@@ -347,7 +347,7 @@ export default function RecoveryOfUnpaidDuesClient() {
                       <svg className="w-4 h-4 fill-current" viewBox="0 0 24 24"><path d="M9.198 21.5h4v-8.01h3.604l.396-3.98h-4V7.5a1 1 0 0 1 1-1h3v-4h-3a5 5 0 0 0-5 5v2.01h-2l-.396 3.98h2.396v8.01z"/></svg>
                     </a>
                     <a
-                      href="https://www.linkedin.com/shareArticle?mini=true&url=https%3A%2F%2Flegalrecovery.in%2Frecovery-of-unpaid-dues-for-my-business&title=Recovery%20of%20Unpaid%20Dues%20for%20My%20Business%20India"
+                      href="https://www.linkedin.com/shareArticle?mini=true&url=https%3A%2F%2Fwww.legalrecovery.in%2Frecovery-of-unpaid-dues-for-my-business&title=Recovery%20of%20Unpaid%20Dues%20for%20My%20Business%20India"
                       target="_blank"
                       rel="noopener noreferrer"
                       className="w-8 h-8 rounded-full bg-[#0A66C2] text-white hover:opacity-85 flex items-center justify-center transition-opacity"

@@ -2,7 +2,7 @@ import { Metadata } from "next";
 import SendALegalNoticeClient from "./SendALegalNoticeClient";
 
 export const metadata: Metadata = {
-  title: "Legal Notice Categories & Statutory Directory in India (CPC, NI Act & Consumer)",
+  title: "Legal Notice Categories & Directory in India (CPC & NI)",
   description: "Browse 40+ specialized legal notice categories in India—salary & FNF recovery, consumer refunds, tenant eviction, banking disputes & B2B dues under Sec 80 CPC & Sec 138 NI Act.",
   keywords: [
     "send a legal notice categories",
@@ -18,7 +18,7 @@ export const metadata: Metadata = {
     canonical: 'https://www.legalrecovery.in/send-a-legal-notice',
   },
   openGraph: {
-    title: "Legal Notice Categories & Statutory Directory in India (CPC, NI Act & Consumer)",
+    title: "Legal Notice Categories & Directory in India (CPC & NI)",
     description: "Browse 40+ specialized legal notice categories in India—salary recovery, consumer refunds, tenant eviction, banking disputes & B2B dues.",
     url: "https://www.legalrecovery.in/send-a-legal-notice",
     type: "website",

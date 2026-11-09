@@ -22,14 +22,14 @@ export const ALL_SITEMAP_PAGES: SitemapItem[] = [
     timestamp: 1794218000000,
   },
   {
-    title: "Gym Refusing Membership Refund? Unfair Contract Rules & Notice",
+    title: "Gym Refusing Membership Refund? Unfair Contract Rules",
     href: "/gym-membership-cancellation-refund-legal-notice",
     category: "Guides",
     date: "9 Nov 2026",
     timestamp: 1794217000000,
   },
   {
-    title: "Defective Car Replacement or Full Refund: Indian Lemon Law Guide",
+    title: "Defective Car Replacement or Refund: Lemon Law India",
     href: "/manufacturing-defect-car-replacement-refund-lemon-law",
     category: "Guides",
     date: "9 Nov 2026",
@@ -43,7 +43,7 @@ export const ALL_SITEMAP_PAGES: SitemapItem[] = [
     timestamp: 1794216000000,
   },
   {
-    title: "Wrong CIBIL Report? RBI ₹100/Day Delay Penalty & Legal Notice",
+    title: "Wrong CIBIL Report? RBI Delay Penalty & Legal Notice",
     href: "/cibil-wrong-reporting-dispute-compensation-legal-notice",
     category: "Guides",
     date: "9 Nov 2026",
@@ -64,7 +64,7 @@ export const ALL_SITEMAP_PAGES: SitemapItem[] = [
     timestamp: 1794213000000,
   },
   {
-    title: "Client Not Paying for Web Development? Legal Notice & Recovery",
+    title: "Client Not Paying for Web Development? Legal Notice",
     href: "/web-development-client-not-paying-legal-notice",
     category: "Guides",
     date: "9 Nov 2026",
@@ -78,7 +78,7 @@ export const ALL_SITEMAP_PAGES: SitemapItem[] = [
     timestamp: 1794212000000,
   },
   {
-    title: "Consumer Court Awards Tracker: Refund & Compensation Orders",
+    title: "Consumer Court Awards Tracker: Refund & Orders",
     href: "/reports/consumer-commission-awards-tracker",
     category: "Guides",
     date: "9 Nov 2026",
@@ -667,7 +667,7 @@ export const ALL_SITEMAP_PAGES: SitemapItem[] = [
     timestamp: 1793722100000,
   },
   {
-    title: "MSMED Amendment Act 2026: What Changes for MSME Suppliers",
+    title: "MSMED Amendment Act 2026: Key Changes for Suppliers",
     href: "/law/msmed-amendment-act-2026",
     category: "Guides",
     date: "4 Nov 2026",
@@ -751,7 +751,7 @@ export const ALL_SITEMAP_PAGES: SitemapItem[] = [
     timestamp: 1793719000000,
   },
   {
-    title: "Has Your 3-Year Limit Expired? Acknowledgment & Part-Payment",
+    title: "3-Year Limit Expired? Acknowledgment & Part-Payment",
     href: "/limitation-extended-by-acknowledgment-part-payment",
     category: "Guides",
     date: "3 Nov 2026",

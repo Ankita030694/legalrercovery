@@ -47,3 +47,8 @@ next-env.d.ts
 /scripts/
 /scratch/
 scratch*
+
+# url exports / lists
+url.txt
+url_core_pages.txt
+url_last_200.txt

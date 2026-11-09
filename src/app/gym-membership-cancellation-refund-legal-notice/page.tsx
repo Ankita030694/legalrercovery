@@ -10,7 +10,7 @@ import GymProblemTabs from "./GymProblemTabs";
 export const revalidate = 86400;
 
 export const metadata: Metadata = {
-  title: "Gym Refusing Membership Refund? Unfair Contract Rules & Notice",
+  title: "Gym Refusing Membership Refund? Unfair Contract Rules",
   description:
     "Gym closed a branch, changed facilities or refusing refund on medical grounds? Section 2(46) unfair contract terms, chargeback and legal notice.",
   alternates: {

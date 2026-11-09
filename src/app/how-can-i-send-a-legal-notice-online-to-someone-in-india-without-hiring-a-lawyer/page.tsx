@@ -2,7 +2,7 @@ import { Metadata } from "next";
 import DiyLegalNoticeClient from "./DiyLegalNoticeClient";
 
 export const metadata: Metadata = {
-  title: "Can You Send a Legal Notice Without a Lawyer in India? (Self-Drafted Validity)",
+  title: "Can You Send a Legal Notice Without a Lawyer in India?",
   description: "Can you draft and send a legal notice yourself without hiring a lawyer in India? Compare self-drafted vs Advocate letterhead legal validity, court admissibility & risks.",
   keywords: [
     "how to send a legal notice without a lawyer",
@@ -18,7 +18,7 @@ export const metadata: Metadata = {
     canonical: 'https://www.legalrecovery.in/how-can-i-send-a-legal-notice-online-to-someone-in-india-without-hiring-a-lawyer',
   },
   openGraph: {
-    title: "Can You Send a Legal Notice Without a Lawyer in India? (Self-Drafted Validity)",
+    title: "Can You Send a Legal Notice Without a Lawyer in India?",
     description: "Can you draft and send a legal notice yourself without hiring a lawyer in India? Compare self-drafted vs Advocate letterhead legal validity.",
     url: "https://www.legalrecovery.in/how-can-i-send-a-legal-notice-online-to-someone-in-india-without-hiring-a-lawyer",
     type: "article",

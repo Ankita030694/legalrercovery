@@ -10,14 +10,14 @@ import DefectiveCarProblemTabs from "./DefectiveCarProblemTabs";
 export const revalidate = 86400;
 
 export const metadata: Metadata = {
-  title: "Defective Car Replacement or Full Refund: Indian Lemon Law Guide",
+  title: "Defective Car Replacement or Refund: Lemon Law India",
   description:
     "Car spending more time in service centre than on road? CPA 2019 product liability, job cards proof, and legal notice to manufacturer and dealer.",
   alternates: {
     canonical: `${SITE_URL}/manufacturing-defect-car-replacement-refund-lemon-law`,
   },
   openGraph: {
-    title: "Defective Car Replacement or Full Refund: Indian Lemon Law Guide",
+    title: "Defective Car Replacement or Refund: Lemon Law India",
     description:
       "Statutory guide on vehicle manufacturing defects under Chapter VI Consumer Protection Act 2019: the 30-day/3-attempt lemon test, Supreme Court & NCDRC replacement precedents, job card audit rules, and legal notice drafting.",
     url: `${SITE_URL}/manufacturing-defect-car-replacement-refund-lemon-law`,
