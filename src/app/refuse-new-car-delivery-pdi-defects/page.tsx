@@ -3,6 +3,7 @@ import Link from "next/link";
 import Breadcrumbs from "@/components/Breadcrumbs";
 import RelatedRecoveryGuides from "@/components/RelatedRecoveryGuides";
 import { SITE_URL } from "@/lib/site";
+import { DEFAULT_FUNNEL_SETTINGS } from "@/lib/funnel-config";
 import PdiDefectsNoticeCTA from "./PdiDefectsNoticeCTA";
 import PdiDefectsTableOfContents from "./PdiDefectsTableOfContents";
 import PdiDefectsProblemTabs from "./PdiDefectsProblemTabs";
