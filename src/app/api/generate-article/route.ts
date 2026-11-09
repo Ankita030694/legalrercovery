@@ -202,9 +202,12 @@ export async function POST(request: NextRequest) {
       { title: "School Admission & Caution Deposit Refund Legal Notice", url: "https://www.legalrecovery.in/send-a-legal-notice/school-college-fee-refund-admission-cancellation" },
       { title: "Startup Delayed Salary & NCLT Claim Legal Notice", url: "https://www.legalrecovery.in/send-a-legal-notice/delayed-salary-startup-company-india" },
       { title: "Illegal Salary Cut in Notice Period Legal Notice", url: "https://www.legalrecovery.in/send-a-legal-notice/salary-deducted-during-notice-period-legal-action-india" },
-      { title: "Swiggy Order Refund Legal Notice", url: "https://www.legalrecovery.in/send-a-legal-notice/swiggy-refund-not-recieved" },
-      { title: "Zomato Order Refund Legal Notice", url: "https://www.legalrecovery.in/send-a-legal-notice/zomato-refund-not-recieved" },
-      { title: "Telegram & Trading Scam Recovery Legal Notice", url: "https://www.legalrecovery.in/send-a-legal-notice/trading-scam-telegram" }
+      { title: "Swiggy Order Refund Legal Notice", url: "https://www.legalrecovery.in/legal-notice-to/swiggy" },
+      { title: "Zomato Order Refund Legal Notice", url: "https://www.legalrecovery.in/legal-notice-to/zomato" },
+      { title: "Telegram & Trading Scam Recovery Legal Notice", url: "https://www.legalrecovery.in/send-a-legal-notice/trading-scam-telegram" },
+      { title: "Wrong UPI Transfer Money Recovery", url: "https://www.legalrecovery.in/recovery/wrong-upi-transfer" },
+      { title: "Failed Transaction Refund & RBI TAT Compensation", url: "https://www.legalrecovery.in/law/rbi-failed-transaction-tat-compensation" },
+      { title: "Online E-Commerce Refund Not Received Legal Notice", url: "https://www.legalrecovery.in/send-a-legal-notice/online-refund-not-received" }
     ];
 
     // Deduplicate interlinking URLs so the prompt directory is clean and never repeats the same link

@@ -42,10 +42,6 @@ const PRIMARY_SOURCES = [
     url: "https://www.indiacode.nic.in/handle/123456789/1999",
   },
   {
-    title: "Consumer Protection Act, 2019 — Section 2(47) Unfair Trade Practice & Section 2(11) Deficiency in Service",
-    url: "https://www.indiacode.nic.in/handle/123456789/15256",
-  },
-  {
     title: "The Emigration Act, 1983 — Sections 10 & 24 (Mandatory Registration for Overseas Recruitment & Penalties)",
     url: "https://www.indiacode.nic.in/handle/123456789/1785",
   },

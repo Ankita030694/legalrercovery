@@ -49,10 +49,6 @@ const PRIMARY_SOURCES = [
     url: "https://www.indiacode.nic.in/handle/123456789/2304",
   },
   {
-    title: "Consumer Protection Act, 2019 (Act No. 35 of 2019) — Section 2(11) Deficiency in Service & e-Jagriti Portal",
-    url: "https://www.indiacode.nic.in/handle/123456789/15256",
-  },
-  {
     title: "Council for Insurance Ombudsmen (CIO) Official Complaint Filing Portal (Online Form VI-A System)",
     url: "https://cioins.co.in/",
   },

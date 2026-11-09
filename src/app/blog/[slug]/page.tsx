@@ -17,7 +17,14 @@ function cleanBlogContent(raw: string): string {
     .replace(/href=["'](?:https?:\/\/(?:www\.)?legalrecovery\.in)?\/consumer-court-complaint-drafting-services\/?["']/gi, 'href="/services/refunds-and-consumer-complaints"')
     .replace(/href=["'](?:https?:\/\/(?:www\.)?legalrecovery\.in)?\/unpaid-invoices-recovery-guide-for-indian-businesses\/?["']/gi, 'href="/recovery/unpaid-invoices"')
     .replace(/href=["'](?:https?:\/\/(?:www\.)?legalrecovery\.in)?\/commercial-court-summary-suit-recovery-delhi-mumbai-bangalore\/?["']/gi, 'href="/law/order-37-summary-suit-money-recovery"')
-    .replace(/href=["'](?:https?:\/\/(?:www\.)?legalrecovery\.in)?\/msme-delayed-payment-interest-recovery-guide\/?["']/gi, 'href="/msme-delayed-payment-recovery-samadhan-vs-legal-notice"');
+    .replace(/href=["'](?:https?:\/\/(?:www\.)?legalrecovery\.in)?\/msme-delayed-payment-interest-recovery-guide\/?["']/gi, 'href="/msme-delayed-payment-recovery-samadhan-vs-legal-notice"')
+    .replace(/href=["'](?:https?:\/\/(?:www\.)?legalrecovery\.in)?\/send-a-legal-notice\/swiggy-refund-not-recieved\/?["']/gi, 'href="/legal-notice-to/swiggy"')
+    .replace(/href=["'](?:https?:\/\/(?:www\.)?legalrecovery\.in)?\/send-a-legal-notice\/zomato-refund-not-recieved\/?["']/gi, 'href="/legal-notice-to/zomato"')
+    .replace(/href=["'](?:https?:\/\/(?:www\.)?legalrecovery\.in)?\/send-legal-notice\/?["']/gi, 'href="/online-legal-notice"')
+    .replace(/href=["'](?:https?:\/\/(?:www\.)?legalrecovery\.in)?\/b2b-vendor-payment-recovery\/?["']/gi, 'href="/send-a-legal-notice/vendor-not-paying-pending-payment"')
+    .replace(/href=["'](?:https?:\/\/(?:www\.)?legalrecovery\.in)?\/failed-upi-transaction-money-stuck-in-bank\/?["']/gi, 'href="/law/rbi-failed-transaction-tat-compensation"')
+    .replace(/href=["'](?:https?:\/\/(?:www\.)?legalrecovery\.in)?\/ecommerce-fraud-refund-legal-notice\/?["']/gi, 'href="/send-a-legal-notice/online-refund-not-received"')
+    .replace(/href=["'](?:https?:\/\/(?:www\.)?legalrecovery\.in)?\/wrong-upi-transfer-money-recovery\/?["']/gi, 'href="/recovery/wrong-upi-transfer"');
 }
 
 function mapDatabaseBlog(item: any): Blog {
@@ -108,6 +115,8 @@ const BLOG_TITLE_OVERRIDES: Record<string, string> = {
     "Borrower Blocked You or Moved? Legal Notice & Recovery",
   "recover-unpaid-salary-fnf-insolvent-shutting-down-startup-directors":
     "Recover Unpaid Startup Salary & FNF: Legal Action",
+  "friendly-loan-cheque-bounce-account-closed-stop-payment-recovery":
+    "Friendly Loan Cheque Bounce Recovery: Section 138 Guide",
 };
 
 export async function generateMetadata(
@@ -183,6 +192,12 @@ export async function generateMetadata(
           url: absoluteImageUrl
         }
       ]
+    },
+    twitter: {
+      card: "summary_large_image",
+      title: pageTitle,
+      description: metaDescription,
+      images: [absoluteImageUrl],
     }
   };
 }

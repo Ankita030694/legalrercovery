@@ -75,10 +75,17 @@ const BROKEN_LINK_REDIRECTS: [string, string][] = [
   ["/unpaid-invoices-recovery-guide-for-indian-businesses", "/recovery/unpaid-invoices"],
   ["/commercial-court-summary-suit-recovery-delhi-mumbai-bangalore", "/law/order-37-summary-suit-money-recovery"],
   ["/msme-delayed-payment-interest-recovery-guide", "/msme-delayed-payment-recovery-samadhan-vs-legal-notice"],
+  ["/failed-upi-transaction-money-stuck-in-bank", "/law/rbi-failed-transaction-tat-compensation"],
+  ["/ecommerce-fraud-refund-legal-notice", "/send-a-legal-notice/online-refund-not-received"],
+  ["/wrong-upi-transfer-money-recovery", "/recovery/wrong-upi-transfer"],
 ];
 
 const nextConfig: NextConfig = {
   reactCompiler: true,
+  images: {
+    formats: ['image/avif', 'image/webp'],
+    deviceSizes: [640, 750, 828, 1080, 1200, 1920],
+  },
   typescript: {
     ignoreBuildErrors: true,
   },

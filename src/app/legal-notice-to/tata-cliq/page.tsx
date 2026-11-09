@@ -53,8 +53,6 @@ const articleJsonLd = {
     "sameAs": "https://en.wikipedia.org/wiki/Tata_CLiQ",
   },
   "citation": [
-    "https://consumeraffairs.nic.in/sites/default/files/E-commerce_Rules.pdf",
-    "https://www.indiacode.nic.in/handle/123456789/15256",
     "https://consumerhelpline.gov.in/",
     "https://e-jagriti.gov.in/",
     "https://www.casemine.com/judgement/in/668e146522c1eb60df049d5a",
@@ -878,25 +876,11 @@ export default function TataCliqRefundNoticePage() {
                 <ol className="list-decimal list-inside space-y-2 text-xs text-slate-600">
                   <li>
                     <strong className="text-slate-800">Consumer Protection Act, 2019 (Act No. 35 of 2019):</strong> Section 2(47) (Unfair Trade Practice), Section 35 (Manner of Filing Complaint), Section 69 (Two-Year Limitation), and Section 86 (Product Liability of E-Commerce Platforms) —{" "}
-                    <a
-                      href="https://www.indiacode.nic.in/handle/123456789/15256"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="text-[#DC2626] hover:underline"
-                    >
-                      India Code Primary Source
-                    </a>
+                    <span className="text-[#DC2626] font-medium">India Code Legislative Database</span>
                   </li>
                   <li>
                     <strong className="text-slate-800">Consumer Protection (E-Commerce) Rules, 2020:</strong> Rule 4(11) (Grievance Officer Appointment), Rule 5(3) (Fallback Liability of Marketplace E-Commerce Entities), and Rule 5(5) (48-Hour Acknowledgment & 30-Day Redressal Mandate) —{" "}
-                    <a
-                      href="https://consumeraffairs.nic.in/sites/default/files/E-commerce_Rules.pdf"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="text-[#DC2626] hover:underline"
-                    >
-                      Ministry of Consumer Affairs Official Gazette
-                    </a>
+                    <span className="text-[#DC2626] font-medium">Official Gazette Notification</span>
                   </li>
                   <li>
                     <strong className="text-slate-800">National Consumer Helpline (NCH / INGRAM):</strong> Integrated Grievance Redressal Monitoring System for E-Commerce Marketplace Entities —{" "}

@@ -6,6 +6,7 @@ import Breadcrumbs from '../../../components/Breadcrumbs';
 import TableOfContents from '../../../components/TableOfContents';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faStar, faUser, faQuoteLeft, faCheckCircle, faShieldAlt, faChartLine, faBolt, faSearch } from '@fortawesome/free-solid-svg-icons';
+import { formatAltText } from '@/lib/site';
 
 // Lazy load heavy components
 const LazyImage = dynamic(() => import('next/image'), {
@@ -95,7 +96,14 @@ const processContent = (html: string) => {
     .replace(/href=["'](?:https?:\/\/(?:www\.)?legalrecovery\.in)?\/consumer-court-complaint-drafting-services\/?["']/gi, 'href="/services/refunds-and-consumer-complaints"')
     .replace(/href=["'](?:https?:\/\/(?:www\.)?legalrecovery\.in)?\/unpaid-invoices-recovery-guide-for-indian-businesses\/?["']/gi, 'href="/recovery/unpaid-invoices"')
     .replace(/href=["'](?:https?:\/\/(?:www\.)?legalrecovery\.in)?\/commercial-court-summary-suit-recovery-delhi-mumbai-bangalore\/?["']/gi, 'href="/law/order-37-summary-suit-money-recovery"')
-    .replace(/href=["'](?:https?:\/\/(?:www\.)?legalrecovery\.in)?\/msme-delayed-payment-interest-recovery-guide\/?["']/gi, 'href="/msme-delayed-payment-recovery-samadhan-vs-legal-notice"');
+    .replace(/href=["'](?:https?:\/\/(?:www\.)?legalrecovery\.in)?\/msme-delayed-payment-interest-recovery-guide\/?["']/gi, 'href="/msme-delayed-payment-recovery-samadhan-vs-legal-notice"')
+    .replace(/href=["'](?:https?:\/\/(?:www\.)?legalrecovery\.in)?\/send-a-legal-notice\/swiggy-refund-not-recieved\/?["']/gi, 'href="/legal-notice-to/swiggy"')
+    .replace(/href=["'](?:https?:\/\/(?:www\.)?legalrecovery\.in)?\/send-a-legal-notice\/zomato-refund-not-recieved\/?["']/gi, 'href="/legal-notice-to/zomato"')
+    .replace(/href=["'](?:https?:\/\/(?:www\.)?legalrecovery\.in)?\/send-legal-notice\/?["']/gi, 'href="/online-legal-notice"')
+    .replace(/href=["'](?:https?:\/\/(?:www\.)?legalrecovery\.in)?\/b2b-vendor-payment-recovery\/?["']/gi, 'href="/send-a-legal-notice/vendor-not-paying-pending-payment"')
+    .replace(/href=["'](?:https?:\/\/(?:www\.)?legalrecovery\.in)?\/failed-upi-transaction-money-stuck-in-bank\/?["']/gi, 'href="/law/rbi-failed-transaction-tat-compensation"')
+    .replace(/href=["'](?:https?:\/\/(?:www\.)?legalrecovery\.in)?\/ecommerce-fraud-refund-legal-notice\/?["']/gi, 'href="/send-a-legal-notice/online-refund-not-received"')
+    .replace(/href=["'](?:https?:\/\/(?:www\.)?legalrecovery\.in)?\/wrong-upi-transfer-money-recovery\/?["']/gi, 'href="/recovery/wrong-upi-transfer"');
 
   // Strip nofollow from internal links (links to our own domain or relative paths)
   modifiedContent = modifiedContent.replace(
@@ -126,6 +134,18 @@ const processContent = (html: string) => {
       return match;
     }
   );
+
+  // Ensure all <img> tags inside blog content have width and height attributes to prevent CLS and SEO issues
+  modifiedContent = modifiedContent.replace(/<img\b([^>]*)>/gi, (match, attrs) => {
+    let newAttrs = attrs;
+    if (!/\bwidth\s*=/i.test(newAttrs)) {
+      newAttrs += ' width="1200"';
+    }
+    if (!/\bheight\s*=/i.test(newAttrs)) {
+      newAttrs += ' height="675"';
+    }
+    return `<img${newAttrs}>`;
+  });
 
   return { content: modifiedContent, sections };
 };
@@ -296,6 +316,8 @@ const ArticleDetail = memo(function ArticleDetail({ blog, faqs, reviews, related
                     <img
                       src={authorBio?.image || "/anujbhiya.png"}
                       alt={blog.author || "Anuj Anand Malik"}
+                      width={32}
+                      height={32}
                       className="w-8 h-8 object-cover"
                     />
                   </div>
@@ -329,7 +351,9 @@ const ArticleDetail = memo(function ArticleDetail({ blog, faqs, reviews, related
               <div className="w-full max-w-[420px] rounded-3xl overflow-hidden shadow-[0_20px_50px_rgba(0,0,0,0.6)] border-4 border-slate-700/90 bg-slate-900 relative group transition-all duration-500 hover:border-red-500/70 hover:shadow-red-950/50">
                 <img
                   src={blog.image || "/blog_money_recovery.png"}
-                  alt={blog.title}
+                  alt={formatAltText(blog.title)}
+                  width={1200}
+                  height={675}
                   className="w-full h-full object-contain group-hover:scale-105 transition-transform duration-700 ease-out"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/15 to-transparent pointer-events-none" />
@@ -404,7 +428,9 @@ const ArticleDetail = memo(function ArticleDetail({ blog, faqs, reviews, related
                     <div className="rounded-2xl overflow-hidden shadow-lg border border-amber-200/80 bg-slate-900 mb-5 relative group/img">
                       <img
                         src={blog.infographicImage}
-                        alt={`Key Insights & Data Infographic - ${blog.title}`}
+                        alt={formatAltText(`Infographic: ${blog.title}`)}
+                        width={1200}
+                        height={800}
                         className="w-full h-auto object-contain max-h-[620px] mx-auto group-hover/img:scale-[1.02] transition-transform duration-500"
                       />
                       <div className="absolute bottom-3 right-3 bg-black/75 backdrop-blur-md px-3 py-1.5 rounded-xl text-[10px] font-bold text-white border border-white/10 flex items-center gap-1.5">
@@ -622,7 +648,7 @@ const ArticleDetail = memo(function ArticleDetail({ blog, faqs, reviews, related
               <div className="mt-12 border-t border-gray-150 pt-10">
                 <div className="bg-white border-2 border-slate-100 rounded-[2rem] p-8 md:p-12 shadow-sm">
                   <div className="mb-8">
-                    <img src="/lrlogo.svg" alt="LegalRecovery" className="h-8 sm:h-10 w-auto object-contain" />
+                    <img src="/lrlogo.svg" alt="LegalRecovery" width={3236} height={601} className="h-8 sm:h-10 w-auto object-contain" />
                   </div>
                   <p className="text-sm md:text-base text-slate-600 leading-relaxed mb-8 max-w-3xl font-medium">
                     Legal Recovery is India&apos;s trusted consumer protection and legal tech platform. We specialize in holding corporations accountable for unfair trade practices, deceptive marketing, and commercial fraud. With over 15,000 customers counselled, our mission is to provide fast, out-of-court resolutions by connecting you with top-tier panel advocates for immediate legal action.
@@ -759,7 +785,9 @@ const ArticleDetail = memo(function ArticleDetail({ blog, faqs, reviews, related
                           <div className="relative h-44 overflow-hidden bg-gray-100">
                             <img
                               src={article.image || '/blog_money_recovery.png'}
-                              alt={article.title}
+                              alt={formatAltText(article.title)}
+                              width={1200}
+                              height={675}
                               className="w-full h-full object-cover group-hover:scale-[1.03] transition-transform duration-500"
                             />
                             <div className="absolute bottom-3 right-3 bg-white/90 backdrop-blur-sm rounded-xl px-2.5 py-1 text-[10px] font-black text-[#111827] shadow-sm">
@@ -798,6 +826,8 @@ const ArticleDetail = memo(function ArticleDetail({ blog, faqs, reviews, related
                     <img
                       src={authorBio?.image || "/anujbhiya.png"}
                       alt={blog.author}
+                      width={48}
+                      height={48}
                       className="w-12 h-12 object-cover"
                     />
                   </div>

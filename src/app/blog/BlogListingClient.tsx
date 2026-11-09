@@ -3,6 +3,7 @@
 import React, { useState } from "react";
 import Link from "next/link";
 import { Search, ArrowRight, BookOpen, Calendar, Clock, X } from "lucide-react";
+import { formatAltText } from "@/lib/site";
 
 export interface BlogPost {
   id: string;
@@ -133,7 +134,9 @@ export default function BlogListingClient({ initialBlogs }: { initialBlogs: Blog
                     <div className="relative w-full h-[180px] sm:h-[200px] overflow-hidden bg-gray-100">
                       <img
                         src={blog.image}
-                        alt={blog.title}
+                        alt={formatAltText(blog.title)}
+                        width={1200}
+                        height={675}
                         loading="lazy"
                         className="w-full h-full object-cover group-hover:scale-[1.04] transition-all duration-500"
                       />

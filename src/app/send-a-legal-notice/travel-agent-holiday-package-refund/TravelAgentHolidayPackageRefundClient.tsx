@@ -464,9 +464,7 @@ export default function TravelAgentHolidayPackageRefundClient() {
 
                 {/* ── IN-ARTICLE INFOGRAPHIC ────────────────────────────── */}
                 <figure className="my-8 rounded-2xl overflow-hidden border border-slate-200 shadow-sm bg-slate-900">
-                  <img
-                    src="/images/og/travel-agent-holiday-package-refund.jpg"
-                    alt="Infographic: Step-by-Step Legal Process to Recover Holiday Package and Tour Booking Refunds from Travel Agents in India"
+                  <img src="/images/og/travel-agent-holiday-package-refund.jpg" alt="Infographic: Legal Process to Recover Holiday Package & Tour Booking Refund" width={850} height={474}
                     className="w-full h-auto object-cover max-h-[500px]"
                     loading="lazy"
                   />
@@ -487,14 +485,7 @@ export default function TravelAgentHolidayPackageRefundClient() {
                     </p>
                     <p className="text-sm md:text-base leading-relaxed">
                       The primary legislative enactment governing holiday package disputes is the{' '}
-                      <a
-                        href="https://consumeraffairs.nic.in/acts-and-rules/consumer-protection"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="text-purple-600 hover:text-purple-800 hover:underline"
-                      >
-                        Consumer Protection Act, 2019 (CPA 2019)
-                      </a>
+                      <span className="font-semibold text-slate-800">Consumer Protection Act, 2019 (CPA 2019)</span>
                       , which establishes rigorous benchmarks for service delivery and penalizes deceptive commercial conduct:
                     </p>
                     <div className="bg-slate-50 p-6 rounded-2xl border border-slate-100 space-y-4">
@@ -1036,7 +1027,7 @@ export default function TravelAgentHolidayPackageRefundClient() {
                 {/* ── COMPANY SECTION ──────────────────────────────────── */}
                 <section className="border border-slate-100 rounded-2xl p-6 md:p-8">
                   <div className="flex items-center gap-4 mb-4">
-                    <img src="/lrlogo.svg" alt="Legal Recovery Logo" className="h-10 w-auto" />
+                    <img src="/lrlogo.svg" alt="Legal Recovery Logo" width={3236} height={601} className="h-10 w-auto" />
                     <div>
                       <h3 className="font-black text-slate-900 text-base">Legal Recovery</h3>
                       <p className="text-xs text-slate-500">India&apos;s Trusted Recovery Platform</p>

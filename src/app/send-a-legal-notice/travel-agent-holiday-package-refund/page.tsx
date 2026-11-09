@@ -2,7 +2,7 @@ import { Metadata } from 'next';
 import TravelAgentHolidayPackageRefundClient from './TravelAgentHolidayPackageRefundClient';
 
 const slug = 'send-a-legal-notice/travel-agent-holiday-package-refund';
-const title = 'Legal Notice to Travel Agent for Holiday Package Refund';
+const title = 'Legal Notice to Travel Agency for Holiday Package Refund';
 const description =
   'Travel agent refusing a holiday refund? Send an advocate-vetted legal notice under the Consumer Protection Act for quick refund recovery.';
 const url = `https://www.legalrecovery.in/${slug}`;

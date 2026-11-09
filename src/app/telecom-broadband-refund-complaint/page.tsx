@@ -37,10 +37,6 @@ const PRIMARY_SOURCES = [
     url: "https://trai.gov.in/sites/default/files/TCPRGR06012012.pdf",
   },
   {
-    title: "Consumer Protection Act, 2019 (Act No. 35 of 2019) — Section 2(11) Deficiency in Service & Section 2(47) Unfair Trade Practice",
-    url: "https://www.indiacode.nic.in/handle/123456789/15256",
-  },
-  {
     title: "Supreme Court Ruling on Consumer Protection Act Applicability to Telecom Disputes (Secretary, Thirumurugan Co-op v. M. Lalitha & Bharti Airtel Ltd. v. Dr. Vidya Sagar)",
     url: "https://main.sci.gov.in/judgment/judis/25732.pdf",
   },

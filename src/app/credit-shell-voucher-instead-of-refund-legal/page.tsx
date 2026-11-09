@@ -49,11 +49,6 @@ const PRIMARY_SOURCES = [
   },
   {
     title:
-      "Consumer Protection Act, 2019 (Act No. 35 of 2019) — Section 2(47) Unfair Trade Practice & Section 2(46) Unfair Contract Terms",
-    url: "https://www.indiacode.nic.in/handle/123456789/15256",
-  },
-  {
-    title:
       "Central Consumer Protection Authority (CCPA) Guidelines for Prevention and Regulation of Dark Patterns, 2023 — Prohibition of 'Forced Action' and Unconsented Wallet Credits",
     url: "https://consumeraffairs.nic.in/sites/default/files/Dark_Patterns_Guidelines_2023.pdf",
   },

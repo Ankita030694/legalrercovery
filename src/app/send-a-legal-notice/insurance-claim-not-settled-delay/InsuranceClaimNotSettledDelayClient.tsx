@@ -459,9 +459,7 @@ export default function InsuranceClaimNotSettledDelayClient() {
 
                 {/* ── IN-ARTICLE INFOGRAPHIC ────────────────────────────── */}
                 <figure className="my-8 rounded-2xl overflow-hidden border border-slate-200 shadow-sm bg-slate-900">
-                  <img
-                    src="/images/og/insurance-claim-not-settled-delay.jpg"
-                    alt="Infographic: Step-by-Step Legal Process for Delayed Insurance Claim Settlement in India"
+                  <img src="/images/og/insurance-claim-not-settled-delay.jpg" alt="Infographic: Step-by-Step Legal Process for Delayed Insurance Claim Settlement in India" width={850} height={474}
                     className="w-full h-auto object-cover max-h-[500px]"
                     loading="lazy"
                   />
@@ -879,14 +877,7 @@ export default function InsuranceClaimNotSettledDelayClient() {
                       </a>
                     </li>
                     <li>
-                      <a
-                        href="https://consumeraffairs.nic.in/acts-and-rules/consumer-protection"
-                        target="_blank"
-                        rel="nofollow noopener noreferrer"
-                        className="text-purple-600 hover:text-purple-800 hover:underline"
-                      >
-                        Consumer Protection Act, 2019 — Section 2(11) Deficiency in Service &amp; Sections 35, 47, 58 Commission Jurisdiction, consumeraffairs.nic.in
-                      </a>
+                      <span className="text-slate-700">Consumer Protection Act, 2019 — Section 2(11) Deficiency in Service &amp; Sections 35, 47, 58 Commission Jurisdiction</span>
                     </li>
                     <li>
                       <span className="text-slate-700">Insurance Ombudsman Rules, 2017 (Amended 2021 &amp; 2023) — Council for Insurance Ombudsmen, cioins.co.in</span>
@@ -968,7 +959,7 @@ export default function InsuranceClaimNotSettledDelayClient() {
                 {/* ── COMPANY SECTION ──────────────────────────────────── */}
                 <section className="border border-slate-100 rounded-2xl p-6 md:p-8">
                   <div className="flex items-center gap-4 mb-4">
-                    <img src="/lrlogo.svg" alt="Legal Recovery Logo" className="h-10 w-auto" />
+                    <img src="/lrlogo.svg" alt="Legal Recovery Logo" width={3236} height={601} className="h-10 w-auto" />
                     <div>
                       <h3 className="font-black text-slate-900 text-base">Legal Recovery</h3>
                       <p className="text-xs text-slate-500">India&apos;s Trusted Recovery Platform</p>

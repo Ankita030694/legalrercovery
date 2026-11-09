@@ -702,9 +702,7 @@ export default function BulkRecoveryCasesClient() {
                     8. Bulk Recovery Lifecycle Infographic
                   </h2>
                   <div className="my-6 rounded-2xl overflow-hidden shadow-sm border border-slate-200">
-                    <img
-                      src="/images/og/bulk-recovery-cases-all-in-one-affordable-solutions.jpg"
-                      alt="Bulk Recovery Cases for Business Dues Infographic"
+                    <img src="/images/og/bulk-recovery-cases-all-in-one-affordable-solutions.jpg" alt="Bulk Recovery Cases for Business Dues Infographic" width={850} height={474}
                       className="w-full h-auto object-cover"
                     />
                   </div>
@@ -1081,7 +1079,7 @@ export default function BulkRecoveryCasesClient() {
           <div className="mt-16 max-w-5xl mx-auto mb-10">
             <div className="bg-white border-2 border-slate-100 rounded-[2rem] p-8 md:p-12 shadow-sm">
               <div className="mb-8">
-                <img src="/lrlogo.svg" alt="LegalRecovery" className="h-8 sm:h-10 w-auto object-contain" />
+                <img src="/lrlogo.svg" alt="LegalRecovery" width={3236} height={601} className="h-8 sm:h-10 w-auto object-contain" />
               </div>
               <p className="text-sm md:text-base text-slate-650 leading-relaxed mb-10 max-w-3xl font-medium">
                 Legal Recovery is India&apos;s trusted commercial recovery and legal tech platform. Founded in 2022 and headquartered in New Delhi, Legal Recovery has counselled 15,000+ businesses and individuals on debt recovery, commercial dispute resolution, and contractual enforcement. Legal Recovery focuses on fast out-of-court settlements and connects you with top panel advocates.

@@ -45,10 +45,6 @@ const PRIMARY_SOURCES = [
     url: "https://www.rbi.org.in/Scripts/BS_ViewMasCirculardetails.aspx?id=9822",
   },
   {
-    title: "Consumer Protection Act, 2019 (Act No. 35 of 2019) — Section 2(47) Unfair Trade Practice & Section 2(11) Deficiency in Service",
-    url: "https://www.indiacode.nic.in/handle/123456789/15256",
-  },
-  {
     title: "Information Technology Act, 2000 — Section 66E (Privacy), Section 67 & 67A (Obscene Material Transmission)",
     url: "https://www.indiacode.nic.in/handle/123456789/1999",
   },

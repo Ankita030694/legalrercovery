@@ -33,10 +33,6 @@ export const metadata: Metadata = {
 
 const PRIMARY_SOURCES = [
   {
-    title: "Consumer Protection Act, 2019 (Act No. 35 of 2019) — Sections 2(11) Deficiency in Service, 2(47) Unfair Trade Practice & 38 Procedure",
-    url: "https://www.indiacode.nic.in/handle/123456789/15256",
-  },
-  {
     title: "National Consumer Helpline (NCH) Portal (INGRAM) — Department of Consumer Affairs, Government of India",
     url: "https://consumerhelpline.gov.in/",
   },

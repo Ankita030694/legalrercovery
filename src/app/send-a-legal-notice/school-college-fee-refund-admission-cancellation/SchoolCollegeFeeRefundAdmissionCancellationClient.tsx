@@ -458,9 +458,7 @@ export default function SchoolCollegeFeeRefundAdmissionCancellationClient() {
 
                 {/* ── IN-ARTICLE INFOGRAPHIC ────────────────────────────── */}
                 <figure className="my-8 rounded-2xl overflow-hidden border border-slate-200 shadow-sm bg-slate-900">
-                  <img
-                    src="/images/og/school-college-fee-refund-admission-cancellation.jpg"
-                    alt="Infographic: Step-by-Step Legal Process to Recover School or College Fees on Admission Cancellation in India"
+                  <img src="/images/og/school-college-fee-refund-admission-cancellation.jpg" alt="Infographic: School and College Fee Refund Legal Recovery Process in India" width={850} height={474}
                     className="w-full h-auto object-cover max-h-[500px]"
                     loading="lazy"
                   />
@@ -498,52 +496,24 @@ export default function SchoolCollegeFeeRefundAdmissionCancellationClient() {
                         </li>
                         <li>
                           <strong>AICTE Approval Process Handbook (APH) Norms:</strong> The{' '}
-                          <a
-                            href="https://www.aicte-india.org"
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            className="text-purple-600 hover:text-purple-800 hover:underline"
-                          >
-                            All India Council for Technical Education (AICTE)
-                          </a>{' '}
+                          <span className="font-semibold text-slate-800">All India Council for Technical Education (AICTE)</span>{' '}
                           stipulates that technical and management institutes must refund complete tuition and security deposits after deducting a maximum processing fee of ₹1,000 if the seat vacated by the student is filled by another candidate before the cutoff date.
                         </li>
                         <li>
                           <strong>Consumer Protection Act, 2019 (CPA):</strong> Under{' '}
-                          <a
-                            href="https://consumeraffairs.nic.in/acts-and-rules/consumer-protection-act-2019"
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            className="text-purple-600 hover:text-purple-800 hover:underline"
-                          >
-                            Section 2(47) and Section 2(11) of the CPA 2019
-                          </a>
+                          <span className="font-semibold text-slate-800">Section 2(47) and Section 2(11) of the CPA 2019</span>
                           , educational institutions providing services for consideration fall squarely within the ambit of consumer law. Refusing refunds for unavailed educational services constitutes both an &quot;unfair trade practice&quot; and &quot;deficiency in service&quot;.
                         </li>
                         <li>
                           <strong>Right to Education Act, 2009 (RTE Sec 13):</strong> Prohibits schools from receiving capitation fees or subjecting children and parents to screening procedures, rendering any non-refundable donation or capitation levy completely illegal under{' '}
-                          <a
-                            href="https://www.indiacode.nic.in/handle/123456789/2086"
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            className="text-purple-600 hover:text-purple-800 hover:underline"
-                          >
-                            Section 13 of the RTE Act, 2009
-                          </a>
+                          <span className="font-semibold text-slate-800">Section 13 of the RTE Act, 2009</span>
                           .
                         </li>
                       </ul>
                     </div>
                     <p className="text-sm md:text-base leading-relaxed">
                       In the landmark Supreme Court ruling in{' '}
-                      <a
-                        href="https://main.sci.gov.in"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="text-purple-600 hover:text-purple-800 hover:underline"
-                      >
-                        Islamic Academy of Education v. State of Karnataka (2003) 6 SCC 697
-                      </a>
+                      <em>Islamic Academy of Education v. State of Karnataka (2003) 6 SCC 697</em>
                       , the apex court ruled that educational institutions cannot charge advance fees for the entire multi-year course duration and cannot retain fees for unavailed semesters if a student leaves mid-way. Retaining fees without delivering academic instruction amounts to unjust enrichment and profiteering under Indian contract and consumer laws.
                     </p>
                   </div>
@@ -986,7 +956,7 @@ export default function SchoolCollegeFeeRefundAdmissionCancellationClient() {
                 {/* ── COMPANY SECTION ──────────────────────────────────── */}
                 <section className="border border-slate-100 rounded-2xl p-6 md:p-8">
                   <div className="flex items-center gap-4 mb-4">
-                    <img src="/lrlogo.svg" alt="Legal Recovery Logo" className="h-10 w-auto" />
+                    <img src="/lrlogo.svg" alt="Legal Recovery Logo" width={3236} height={601} className="h-10 w-auto" />
                     <div>
                       <h3 className="font-black text-slate-900 text-base">Legal Recovery</h3>
                       <p className="text-xs text-slate-500">India&apos;s Trusted Recovery Platform</p>

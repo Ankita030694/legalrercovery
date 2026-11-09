@@ -466,9 +466,7 @@ export default function TradingScamTelegramClient() {
 
                 {/* ── INFOGRAPHIC EMBED ──────────────────────────────────── */}
                 <div className="my-8 rounded-2xl overflow-hidden border border-slate-200 shadow-sm bg-slate-900">
-                  <img
-                    src="/images/og/trading-scam-telegram.jpg"
-                    alt="Infographic: Telegram Trading Scam Legal Notice and Fund Recovery Pipeline in India"
+                  <img src="/images/og/trading-scam-telegram.jpg" alt="Infographic: Telegram Trading Scam Legal Notice and Fund Recovery Pipeline in India" width={850} height={474}
                     className="w-full h-auto object-cover"
                   />
                   <div className="p-3 bg-slate-900 text-center">
@@ -1011,7 +1009,7 @@ export default function TradingScamTelegramClient() {
                 {/* ── COMPANY SECTION ──────────────────────────────────── */}
                 <section className="border border-slate-100 rounded-2xl p-6 md:p-8">
                   <div className="flex items-center gap-4 mb-4">
-                    <img src="/lrlogo.svg" alt="Legal Recovery Logo" className="h-10 w-auto" />
+                    <img src="/lrlogo.svg" alt="Legal Recovery Logo" width={3236} height={601} className="h-10 w-auto" />
                     <div>
                       <h3 className="font-black text-slate-900 text-base">Legal Recovery</h3>
                       <p className="text-xs text-slate-500">India&apos;s Trusted Recovery Platform</p>

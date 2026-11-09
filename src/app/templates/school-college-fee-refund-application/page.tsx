@@ -41,14 +41,6 @@ const PRIMARY_SOURCES = [
     url: "https://www.education.gov.in/",
   },
   {
-    title: "Consumer Protection Act, 2019 (Act No. 35 of 2019) — Section 2(11) Deficiency in Service & Section 2(47) Unfair Trade Practice",
-    url: "https://www.indiacode.nic.in/handle/123456789/15256",
-  },
-  {
-    title: "Supreme Court of India — Islamic Academy of Education v. State of Karnataka, (2003) 6 SCC 697 (Ban on Advance Multi-Year Fees)",
-    url: "https://main.sci.gov.in/",
-  },
-  {
     title: "National Consumer Disputes Redressal Commission (NCDRC) — Sehgal School of Competition v. Dalbir Singh, (2009) CPJ 33 (NC)",
     url: "http://ncdrc.nic.in/",
   },

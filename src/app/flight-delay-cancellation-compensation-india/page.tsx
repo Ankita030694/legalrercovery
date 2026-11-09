@@ -59,7 +59,6 @@ const articleJsonLd = {
     "https://www.dgca.gov.in/digigov-portal/?page=jsp/dgca/inventoryList/airTransport/car/carSeriesM.jsp",
     "https://airsewa.gov.in/",
     "https://www.civilaviation.gov.in/",
-    "https://www.indiacode.nic.in/handle/123456789/15256",
     "https://e-jagriti.gov.in/",
     "https://consumerhelpline.gov.in/",
   ],
@@ -1244,14 +1243,7 @@ export default function FlightDelayCancellationCompensationPage() {
                   <span className="text-red-600 font-bold">•</span>
                   <span>
                     <strong>Consumer Protection Act, 2019 (Act No. 35 of 2019):</strong> Section 2(11) (Deficiency in Service), Section 2(47) (Unfair Trade Practice), Section 35 (Manner in which complaint shall be made).{" "}
-                    <a
-                      href="https://www.indiacode.nic.in/handle/123456789/15256"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="text-red-600 hover:underline"
-                    >
-                      India Code Legislative Database
-                    </a>.
+                    <span className="text-[#DC2626] font-medium">India Code Legislative Database</span>.
                   </span>
                 </li>
                 <li className="flex items-start gap-2">

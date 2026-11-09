@@ -49,10 +49,6 @@ const PRIMARY_SOURCES = [
     url: "https://financialservices.gov.in/beta/en/schemes-programmes/social-security-schemes",
   },
   {
-    title: "Consumer Protection Act, 2019 (Act 35 of 2019) — Section 2(47) Unfair Trade Practice & Section 2(11) Deficiency in Service",
-    url: "https://www.indiacode.nic.in/handle/123456789/15256",
-  },
-  {
     title: "Reserve Bank - Integrated Ombudsman Scheme, 2021 (RB-IOS 2021) — Section 10(2) Non-Adherence to RBI Instructions on Account Debits",
     url: "https://cms.rbi.org.in/",
   },

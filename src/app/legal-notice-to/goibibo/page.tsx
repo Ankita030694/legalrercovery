@@ -40,18 +40,6 @@ const PRIMARY_SOURCES = [
     url: "https://main.sci.gov.in/supremecourt/2020/10966/10966_2020_34_1501_24151_Judgement_01-Oct-2020.pdf",
   },
   {
-    title: "Consumer Protection Act, 2019 (Act No. 35 of 2019) — Section 2(11) Deficiency in Service & Section 2(47) Unfair Trade Practice",
-    url: "https://www.indiacode.nic.in/handle/123456789/15256",
-  },
-  {
-    title: "Consumer Protection (E-Commerce) Rules, 2020 — Rule 5 & Rule 6 (Marketplace Entities, Grievance Officer Timelines & Refund Obligations)",
-    url: "https://consumeraffairs.nic.in/sites/default/files/E-commerce_Rules.pdf",
-  },
-  {
-    title: "Ministry of Consumer Affairs: Guidelines for Prevention and Regulation of Dark Patterns, 2023 (Prohibition of Forced Action & Hidden Wallet Credits)",
-    url: "https://consumeraffairs.nic.in/",
-  },
-  {
     title: "Bharatiya Sakshya Adhiniyam, 2023 (BSA Section 63 — Electronic Records Admissibility for Booking IDs, PNRs & Bank Transcripts)",
     url: "https://www.indiacode.nic.in/handle/123456789/21735",
   },

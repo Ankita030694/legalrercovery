@@ -57,8 +57,6 @@ const articleJsonLd = {
     "sameAs": "https://en.wikipedia.org/wiki/Meesho",
   },
   "citation": [
-    "https://consumeraffairs.nic.in/sites/default/files/E-commerce_Rules.pdf",
-    "https://www.indiacode.nic.in/handle/123456789/15256",
     "https://consumerhelpline.gov.in/",
     "https://e-jagriti.gov.in/",
     "https://www.livelaw.in/consumer-cases/government-amends-e-commerce-rules-to-strengthen-consumer-protection-550184",
@@ -850,25 +848,11 @@ export default function MeeshoRefundLegalNoticePage() {
             <ul className="text-xs text-slate-600 space-y-1.5">
               <li>
                 • <strong>Consumer Protection (E-Commerce) Rules, 2020:</strong> Rules 4(4) (Grievance Officer timelines), 5(3) (Grievance redressal), and 5(6) (Fallback liability of marketplace e-commerce entities).{" "}
-                <a
-                  href="https://consumeraffairs.nic.in/sites/default/files/E-commerce_Rules.pdf"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="text-[#DC2626] hover:underline"
-                >
-                  Ministry of Consumer Affairs Official Notification
-                </a>
+                <span className="text-[#DC2626] font-medium">Official Gazette Notification</span>
               </li>
               <li>
                 • <strong>Consumer Protection Act, 2019:</strong> Section 2(47) (Unfair Trade Practice), Section 35 (Manner of filing complaint), and Section 69 (Two-year limitation period).{" "}
-                <a
-                  href="https://www.indiacode.nic.in/handle/123456789/15256"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="text-[#DC2626] hover:underline"
-                >
-                  India Code Statutory Repository
-                </a>
+                <span className="text-[#DC2626] font-medium">India Code Legislative Database</span>
               </li>
               <li>
                 • <strong>Department of Consumer Affairs:</strong> National Consumer Helpline (NCH 1915) &amp; Integrated Grievance Redress Mechanism (INGRAM).{" "}

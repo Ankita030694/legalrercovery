@@ -53,8 +53,6 @@ const articleJsonLd = {
     "sameAs": "https://en.wikipedia.org/wiki/Amazon_(company)",
   },
   "citation": [
-    "https://consumeraffairs.nic.in/sites/default/files/E-commerce_Rules.pdf",
-    "https://www.indiacode.nic.in/handle/123456789/15256",
     "https://consumerhelpline.gov.in/",
     "https://e-jagriti.gov.in/",
     "https://moneylife.in/article/consumer-court-orders-amazon-seller-to-pay-customer-468-lakh-for-denying-refund-even-after-returning-wrong-product/80842.html",
@@ -534,7 +532,6 @@ export default function AmazonLegalNoticePage() {
           </p>
 
           <blockquote
-            cite="https://consumeraffairs.nic.in/sites/default/files/E-commerce_Rules.pdf"
             className="p-5 sm:p-6 my-6 rounded-xl bg-slate-900 text-slate-100 border-l-4 border-red-500 shadow-md font-serif text-sm sm:text-base leading-relaxed"
           >
             &quot;No marketplace e-commerce entity shall adopt any unfair trade practice, whether in the course of the business on its platform or otherwise... Every marketplace e-commerce entity shall take reasonable efforts to ensure that the goods or services offered on its platform are not misleading and conform to applicable legal standards. A marketplace e-commerce entity shall be subject to fallback liability where a seller registered on its platform fails to deliver the goods or services ordered, or delivers defective goods, causing loss to the consumer.&quot;
@@ -789,25 +786,11 @@ export default function AmazonLegalNoticePage() {
           <ul className="space-y-2 text-xs text-[#4B5563]">
             <li>
               1. <strong>Consumer Protection (E-Commerce) Rules, 2020:</strong> Rule 4(5) (Grievance Redressal Mechanism &amp; 48-Hour SLA) and Rule 5 (Marketplace Entity Liabilities &amp; Fallback Liability) —{" "}
-              <a
-                href="https://consumeraffairs.nic.in/sites/default/files/E-commerce_Rules.pdf"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-[#DC2626] hover:underline"
-              >
-                Ministry of Consumer Affairs Official Gazette
-              </a>
+              <span className="text-[#DC2626] font-medium">Official Gazette Notification</span>
             </li>
             <li>
               2. <strong>Consumer Protection Act, 2019:</strong> Section 2(47) (Unfair Trade Practice), Section 35 (Manner of Complaint), Section 69 (Limitation Period), and Section 86 (Product Service Provider Liability) —{" "}
-              <a
-                href="https://www.indiacode.nic.in/handle/123456789/15256"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-[#DC2626] hover:underline"
-              >
-                India Code Portal
-              </a>
+              <span className="text-[#DC2626] font-medium">India Code Legislative Database</span>
             </li>
             <li>
               3. <strong>E-Commerce (Amendment) Rules 2026:</strong> Notified September 2026, in force 1 January 2027, mandating dark-pattern compliance and transparent refund disclosures —{" "}

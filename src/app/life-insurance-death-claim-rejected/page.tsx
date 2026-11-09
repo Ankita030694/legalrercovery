@@ -60,10 +60,6 @@ const PRIMARY_SOURCES = [
     title: "Supreme Court of India — Manmohan Nanda v. United India Insurance Co. Ltd. (2022) 10 SCC 431",
     url: "https://main.sci.gov.in/supremecourt/2020/7144/7144_2020_35_1502_32269_Judgement_06-Dec-2021.pdf",
   },
-  {
-    title: "Consumer Protection Act, 2019 — Section 2(11) Deficiency in Service & Section 35 District Commission Jurisdiction",
-    url: "https://www.indiacode.nic.in/handle/123456789/15256",
-  },
 ];
 
 const CASE_CITATIONS = [

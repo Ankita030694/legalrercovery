@@ -49,10 +49,6 @@ const PRIMARY_SOURCES = [
     url: "https://irdai.gov.in/master-circulars",
   },
   {
-    title: "Supreme Court of India — Manmohan Nanda v. United India Insurance Co. Ltd., (2022) 4 SCC 582 (Repudiation for Non-Nexus PED Struck Down)",
-    url: "https://main.sci.gov.in/",
-  },
-  {
     title: "Bharatiya Sakshya Adhiniyam, 2023 (BSA Section 63 — Electronic Records Admissibility for Rejection Emails, Policy PDFs & Bank UTRs)",
     url: "https://www.indiacode.nic.in/handle/123456789/21735",
   },

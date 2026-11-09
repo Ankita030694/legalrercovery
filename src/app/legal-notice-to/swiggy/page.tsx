@@ -53,8 +53,6 @@ const articleJsonLd = {
     "sameAs": "https://en.wikipedia.org/wiki/Swiggy",
   },
   "citation": [
-    "https://consumeraffairs.nic.in/sites/default/files/E-commerce_Rules.pdf",
-    "https://www.indiacode.nic.in/handle/123456789/15256",
     "https://consumerhelpline.gov.in/",
     "https://e-jagriti.gov.in/",
     "https://www.livelaw.in/consumer-cases/swiggy-instamart-consumer-commission-liability-253819",
@@ -1017,14 +1015,14 @@ export default function SwiggyRefundNoticePage() {
                     <span className="text-slate-400">•</span>
                     <span>
                       <strong className="text-slate-900">Consumer Protection Act, 2019 (Act No. 35 of 2019):</strong> Section 2(11) (Deficiency in Service), Section 2(47) (Unfair Trade Practice), Section 35 (Filing of Complaints), and Section 86 (Product Liability of E-Commerce Entities).{" "}
-                      <a href="https://www.indiacode.nic.in/handle/123456789/15256" target="_blank" rel="noopener noreferrer" className="text-[#DC2626] hover:underline font-medium">India Code Primary Source</a>.
+                      <span className="text-[#DC2626] font-medium">India Code Primary Source</span>.
                     </span>
                   </li>
                   <li className="flex items-start gap-2">
                     <span className="text-slate-400">•</span>
                     <span>
                       <strong className="text-slate-900">Consumer Protection (E-Commerce) Rules, 2020:</strong> Rule 4(4) &amp; Rule 5(6) (Grievance Officer Designation), Rule 4(5) (48-hour acknowledgement and 30-day resolution), Rule 4(11) (Timely refund mandates), Rule 5(3)(b) (Marketplace fallback liability).{" "}
-                      <a href="https://consumeraffairs.nic.in/sites/default/files/E-commerce_Rules.pdf" target="_blank" rel="noopener noreferrer" className="text-[#DC2626] hover:underline font-medium">Department of Consumer Affairs Source</a>.
+                      <span className="text-[#DC2626] font-medium">Department of Consumer Affairs Source</span>.
                     </span>
                   </li>
                   <li className="flex items-start gap-2">

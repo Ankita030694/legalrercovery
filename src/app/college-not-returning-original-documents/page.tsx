@@ -37,14 +37,6 @@ const PRIMARY_SOURCES = [
     url: "https://www.ugc.gov.in/pdfnews/5437737_UGC-Notice-Reg-Refund-of-Fees.pdf",
   },
   {
-    title: "All India Council for Technical Education (AICTE) Approval Process Handbook (Chapter VIII — Mandatory Return of Original Certificates)",
-    url: "https://www.aicte-india.org/",
-  },
-  {
-    title: "Consumer Protection Act, 2019 (Act No. 35 of 2019) — Section 2(11) Deficiency in Service & Section 2(47) Unfair Trade Practice",
-    url: "https://www.indiacode.nic.in/handle/123456789/15256",
-  },
-  {
     title: "Indian Contract Act, 1872 — Section 171 (General Lien of Bailees Does Not Apply to Educational Documents) & Section 23 (Void Agreements)",
     url: "https://www.indiacode.nic.in/handle/123456789/2187",
   },

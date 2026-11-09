@@ -87,8 +87,6 @@ const ARTICLE_JSON_LD = {
     name: "JioMart",
   },
   citation: [
-    "https://consumeraffairs.nic.in/sites/default/files/E-commerce_Rules.pdf",
-    "https://www.indiacode.nic.in/handle/123456789/15256",
     "https://consumerhelpline.gov.in/",
     "https://e-jagriti.gov.in/",
     "https://rbi.org.in/Scripts/NotificationUser.aspx?Id=11693",
@@ -941,26 +939,12 @@ export default function JioMartRecoveryPage() {
             <ul className="space-y-2 text-xs text-slate-600">
               <li>
                 • <strong>Consumer Protection (E-Commerce) Rules, 2020:</strong> Rule 4(5) (Grievance Officer timelines), Rule 5 (Marketplace liabilities), Rule 6(5) (Prohibition against return refusal).{" "}
-                <a
-                  href="https://consumeraffairs.nic.in/sites/default/files/E-commerce_Rules.pdf"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="text-[#DC2626] hover:underline"
-                >
-                  Ministry of Consumer Affairs Official Gazette
-                </a>{" "}
+                <span className="text-[#DC2626] font-medium">Official Gazette Notification</span>{" "}
                 (Accessed November 2026).
               </li>
               <li>
                 • <strong>Consumer Protection Act, 2019:</strong> Section 2(11) (Deficiency in Service), Section 2(47) (Unfair Trade Practice), Section 35 (Institution of Complaints), Section 69 (2-Year Limitation).{" "}
-                <a
-                  href="https://www.indiacode.nic.in/handle/123456789/15256"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="text-[#DC2626] hover:underline"
-                >
-                  India Code Legislative Repository
-                </a>.
+                <span className="text-[#DC2626] font-medium">India Code Legislative Database</span>.
               </li>
               <li>
                 • <strong>Reserve Bank of India Master Direction:</strong> Harmonisation of Turn Around Time (TAT) and customer compensation for failed transactions using authorised Payment Systems (DPSS.CO.PD No.629/02.01.014/2019-20).{" "}

@@ -96,11 +96,6 @@ const PRIMARY_SOURCES = [
   },
   {
     title:
-      "Supreme Court of India — Gujarat State Civil Supplies Corporation Ltd. v. Mahakali Foods Pvt. Ltd., (2023) 6 SCC 401 (Overriding Effect of MSMED Act Chapter V)",
-    url: "https://main.sci.gov.in/",
-  },
-  {
-    title:
       "Bharatiya Sakshya Adhiniyam, 2023 (BSA) — Section 63 (Admissibility of Electronic Invoices, E-Way Bills, Udyam Certificates & Audit Communications)",
     url: "https://www.indiacode.nic.in/handle/123456789/20063",
   },

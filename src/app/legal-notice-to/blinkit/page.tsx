@@ -34,51 +34,43 @@ export default function BlinkitLegalNoticePage() {
   ];
 
   const primarySources = [
-    {
-      title: "Consumer Protection Act, 2019 (Act No. 35 of 2019), Sections 2(47), 35, 39 & 69",
-      url: "https://www.indiacode.nic.in/handle/123456789/15256",
-    },
-    {
-      title: "Consumer Protection (E-Commerce) Rules, 2020 — Rule 4(5) Grievance Mechanism & Rule 5 Marketplace Liabilities",
-      url: "https://consumeraffairs.nic.in/sites/default/files/E-commerce_Rules.pdf",
-    },
-    {
+  {
       title: "E-Commerce (Amendment) Rules, 2026 (Notified September 2026; In Force 1 January 2027)",
       url: "https://www.livelaw.in/consumer-cases/government-amends-e-commerce-rules-to-strengthen-consumer-protection-550184",
     },
-    {
+  {
       title: "Guidelines for Prevention and Regulation of Dark Patterns, 2023 — Central Consumer Protection Authority (CCPA)",
       url: "https://consumeraffairs.nic.in/sites/default/files/Dark_Patterns_Guidelines_2023.pdf",
     },
-    {
+  {
       title: "Bharatiya Sakshya Adhiniyam, 2023 (BSA Section 63 — Electronic Records Admissibility)",
       url: "https://www.indiacode.nic.in/handle/123456789/21735",
     },
-    {
+  {
       title: "National Consumer Helpline (NCH / INGRAM 1915 Portal), Department of Consumer Affairs",
       url: "https://consumerhelpline.gov.in/",
     },
-    {
+  {
       title: "e-Jagriti Online Consumer Disputes Redressal Portal, Government of India",
       url: "https://e-jagriti.gov.in/",
     },
-    {
+  {
       title: "Kalpana Shantilal Shah v. Grofers India Pvt. Ltd. (Blinkit), CC/35/2022, South Mumbai DCDRC (Order Dated 30 November 2023)",
       url: "https://www.livelaw.in/consumer-cases/grofers-india-blinkit-consumer-court-refund-compensation-missing-item-243501",
     },
-    {
+  {
       title: "District Consumer Disputes Redressal Commission, Dharwad — Quick-Delivery Non-Fulfillment Order (2024)",
       url: "https://lawstreet.co/news/zomato-ordered-to-pay-60000-compensation-consumer-forum-dharwad",
     },
-    {
+  {
       title: "District Consumer Disputes Redressal Commission, Ranga Reddy — Quick Commerce Overcharging & Glitch Defense (2023)",
       url: "https://timesofindia.indiatimes.com/city/hyderabad/quick-commerce-platform-penalised-for-overcharging-mrp/articleshow/102948210.cms",
     },
-    {
+  {
       title: "A. S. v. Zomato Limited & Delivery Vendor, CC No. 238/2021, DCDRC Kollam (Kerala)",
       url: "https://www.scconline.com/blog/post/2022/04/18/kerala-consumer-commission-holds-online-food-delivery-aggregator-liable-for-non-delivery/",
     },
-  ];
+];
 
   const jsonLd = {
     "@context": "https://schema.org",

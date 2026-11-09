@@ -457,9 +457,7 @@ export default function RecoverGratuityFromEmployerLegalNoticeClient() {
 
                 {/* ── INFOGRAPHIC SECTION ─────────────────────────────────── */}
                 <div className="rounded-2xl overflow-hidden border border-slate-100 shadow-sm">
-                  <img
-                    src="/images/og/recover-gratuity-from-employer-legal-notice.jpg"
-                    alt="Legal Notice to Company for Gratuity Not Paid by Employer Infographic Roadmap"
+                  <img src="/images/og/recover-gratuity-from-employer-legal-notice.jpg" alt="Legal Notice to Company for Gratuity Not Paid by Employer Infographic Roadmap" width={850} height={474}
                     className="w-full h-auto object-cover"
                   />
                   <div className="p-3 bg-slate-50 border-t border-slate-100 text-center text-xs text-slate-500 font-medium">
@@ -1065,7 +1063,7 @@ export default function RecoverGratuityFromEmployerLegalNoticeClient() {
                 {/* ── SECTION 11: COMPANY SECTION ────────────────────────── */}
                 <section className="border border-slate-100 rounded-2xl p-6 md:p-8 bg-white">
                   <div className="flex items-center gap-4 mb-4">
-                    <img src="/lrlogo.svg" alt="Legal Recovery Logo" className="h-10 w-auto" />
+                    <img src="/lrlogo.svg" alt="Legal Recovery Logo" width={3236} height={601} className="h-10 w-auto" />
                     <div>
                       <h3 className="font-black text-slate-900 text-base">Legal Recovery</h3>
                       <p className="text-xs text-slate-500">India&apos;s Trusted Online Recovery Platform</p>

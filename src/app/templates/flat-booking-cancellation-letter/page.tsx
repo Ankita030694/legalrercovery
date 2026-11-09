@@ -41,10 +41,6 @@ const PRIMARY_SOURCES = [
     url: "https://www.indiacode.nic.in/handle/123456789/2187",
   },
   {
-    title: "Supreme Court of India — Godrej Projects Development Ltd. v. Anil Karlekar, 2025 SCC OnLine SC 222 (20% Forfeiture Clause Struck Down; Earnest Money Cap)",
-    url: "https://main.sci.gov.in/",
-  },
-  {
     title: "Supreme Court of India — M/s Newtech Promoters and Developers Pvt. Ltd. v. State of UP & Ors., (2021) 18 SCC 1 (Unconditional Right to Refund Under Section 18)",
     url: "https://main.sci.gov.in/supremecourt/2021/16750/16750_2021_34_1501_31312_Judgement_11-Nov-2021.pdf",
   },

@@ -37,10 +37,6 @@ const PRIMARY_SOURCES = [
     url: "https://www.indiacode.nic.in/handle/123456789/1557",
   },
   {
-    title: "Consumer Protection Act, 2019 (Act No. 35 of 2019) — Section 69 (Limitation Period for Consumer Complaints)",
-    url: "https://www.indiacode.nic.in/handle/123456789/15256",
-  },
-  {
     title: "Negotiable Instruments Act, 1881 (Act No. 26 of 1881) — Section 138 & Section 142 (Cognizance of Cheque Dishonour Offence)",
     url: "https://www.indiacode.nic.in/handle/123456789/2189",
   },

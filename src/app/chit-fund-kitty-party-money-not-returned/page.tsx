@@ -57,10 +57,6 @@ const PRIMARY_SOURCES = [
     url: "https://www.indiacode.nic.in/handle/123456789/21735",
   },
   {
-    title: "Consumer Protection Act, 2019 (Act No. 35 of 2019) — Section 2(11) Deficiency in Service & Section 35 Online Consumer Filing on e-Jagriti",
-    url: "https://www.indiacode.nic.in/handle/123456789/15256",
-  },
-  {
     title: "Code of Civil Procedure, 1908 (CPC) — Order XXXVII (Summary Procedure on Negotiable Instruments, Written Contracts & Written Debt Acknowledgment)",
     url: "https://www.indiacode.nic.in/handle/123456789/2191",
   },

@@ -45,10 +45,6 @@ const PRIMARY_SOURCES = [
     url: "https://consumeraffairs.nic.in/sites/default/files/Dark_Patterns_Guidelines_2023.pdf",
   },
   {
-    title: "Consumer Protection Act, 2019 — Section 2(47) (Unfair Trade Practice) & Section 2(46) (Unfair Contract)",
-    url: "https://www.indiacode.nic.in/handle/123456789/15256",
-  },
-  {
     title: "Reserve Bank of India — Customer Protection: Limiting Liability of Customers in Unauthorised Electronic Banking Transactions (DBR.No.Leg.BC.78/09.07.005/2017-18)",
     url: "https://www.rbi.org.in/Scripts/NotificationUser.aspx?Id=11040&Mode=0",
   },

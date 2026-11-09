@@ -906,6 +906,8 @@ export default function TravelRecoveryClient() {
                   <img
                     src="/anujbhiya.png"
                     alt="Anuj Anand Malik"
+                    width={800}
+                    height={800}
                     className="w-full h-full object-cover"
                   />
                 </div>

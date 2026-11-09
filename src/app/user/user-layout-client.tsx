@@ -202,7 +202,7 @@ export default function UserPortalLayoutClient({
       {/* ── MOBILE TOP HEADER ── */}
       <header className="lg:hidden h-16 bg-white border-b border-[#E5E7EB]/60 flex items-center justify-between px-5 fixed top-0 left-0 right-0 z-40">
         <Link href="/" className="flex items-center">
-          <img src="/lrlogo.svg" alt="LegalRecovery" className="h-7 w-auto object-contain" />
+          <img src="/lrlogo.svg" alt="LegalRecovery" width={3236} height={601} className="h-7 w-auto object-contain" />
         </Link>
         <div className="flex items-center gap-3">
           {activeCount > 0 && (
@@ -229,7 +229,7 @@ export default function UserPortalLayoutClient({
           {/* Logo & Close Button */}
           <div className="h-16 flex items-center justify-between px-6 border-b border-gray-800/40">
             <Link href="/" className="flex items-center select-none" onClick={() => setMobileMenuOpen(false)}>
-              <img src="/lrwhite.svg" alt="LegalRecovery" className="h-7 w-auto object-contain" />
+              <img src="/lrwhite.svg" alt="LegalRecovery" width={3236} height={601} className="h-7 w-auto object-contain" />
             </Link>
             <button
               onClick={() => setMobileMenuOpen(false)}
@@ -304,7 +304,7 @@ export default function UserPortalLayoutClient({
           {/* Logo brand container */}
           <div className="h-20 flex items-center px-7 border-b border-gray-800/40">
             <Link href="/" className="flex items-center select-none">
-              <img src="/lrwhite.svg" alt="LegalRecovery" className="h-8 w-auto object-contain" />
+              <img src="/lrwhite.svg" alt="LegalRecovery" width={3236} height={601} className="h-8 w-auto object-contain" />
             </Link>
           </div>
 

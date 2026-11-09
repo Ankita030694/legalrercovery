@@ -50,11 +50,6 @@ const PRIMARY_SOURCES = [
   },
   {
     title:
-      "Pawan Gupta v. Experion Developers Pvt. Ltd., Civil Appeal Nos. 3703–3704 of 2020 (Supreme Court Order Dated 26 Nov 2020 Affirming NCDRC Order in CC No. 285/2018 on Unverified Super Area Demands)",
-    url: "https://main.sci.gov.in/",
-  },
-  {
-    title:
       "Wg. Cdr. Arifur Rahman Khan and Aleya Sultana & Ors. v. DLF Southern Homes Pvt. Ltd., (2020) 16 SCC 512 — Supreme Court Ruling That Execution of Conveyance Deed Does Not Extinguish Buyer Claims",
     url: "https://main.sci.gov.in/supremecourt/2019/18680/18680_2019_33_1501_23550_Judgement_24-Aug-2020.pdf",
   },
@@ -62,11 +57,6 @@ const PRIMARY_SOURCES = [
     title:
       "M/s Newtech Promoters and Developers Pvt. Ltd. v. State of UP & Ors., (2021) 18 SCC 1 — Supreme Court 3-Judge Bench on Allottee Refund & Interest Rights Under RERA",
     url: "https://main.sci.gov.in/supremecourt/2021/16758/16758_2021_33_1501_31312_Judgement_11-Nov-2021.pdf",
-  },
-  {
-    title:
-      "Consumer Protection Act, 2019 (Act No. 35 of 2019) — Section 2(11) (Deficiency in Service), Section 2(46) (Unfair Contract) & Section 2(47) (Unfair Trade Practice for False Area Representation)",
-    url: "https://www.indiacode.nic.in/handle/123456789/15256",
   },
   {
     title:

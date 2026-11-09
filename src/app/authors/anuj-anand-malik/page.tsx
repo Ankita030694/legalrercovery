@@ -48,7 +48,7 @@ export default function AnujAnandMalikPage() {
         <div className="max-w-5xl mx-auto px-4 md:px-8">
           <div className="flex flex-col md:flex-row gap-8 items-center md:items-start">
             <div className="w-32 h-32 md:w-48 md:h-48 bg-slate-800 rounded-full shrink-0 flex items-center justify-center overflow-hidden border-4 border-slate-700 shadow-xl">
-              <img src="/anujbhiya.png" alt="Anuj Anand Malik" className="w-full h-full object-cover" />
+              <img src="/anujbhiya.png" alt="Anuj Anand Malik" width={800} height={800} className="w-full h-full object-cover" />
             </div>
             <div className="text-center md:text-left">
               <h1 className="text-4xl md:text-5xl font-black mb-3">Anuj Anand Malik</h1>

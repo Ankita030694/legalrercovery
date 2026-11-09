@@ -53,10 +53,6 @@ const PRIMARY_SOURCES = [
     url: "https://www.sebi.gov.in/legal/master-circulars/aug-2023/master-circular-for-online-dispute-resolution-in-the-indian-securities-market_75220.html",
   },
   {
-    title: "Consumer Protection Act, 2019 (Act No. 35 of 2019) — Section 2(11) Deficiency in Banking Service & Section 2(47) Unfair Trade Practice",
-    url: "https://www.indiacode.nic.in/handle/123456789/15256",
-  },
-  {
     title: "Bharatiya Sakshya Adhiniyam, 2023 (BSA Section 63 — Admissibility of Electronic Records for UTR Logs, Telegram Chats & Call Records)",
     url: "https://www.indiacode.nic.in/handle/123456789/21735",
   },

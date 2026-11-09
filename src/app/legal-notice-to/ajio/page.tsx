@@ -34,51 +34,43 @@ export default function AjioLegalNoticePage() {
   ];
 
   const primarySources = [
-    {
-      title: "Consumer Protection Act, 2019 (Act No. 35 of 2019), Sections 2(47), 35 & 69",
-      url: "https://www.indiacode.nic.in/handle/123456789/15256",
-    },
-    {
-      title: "Consumer Protection (E-Commerce) Rules, 2020 — Rule 4(5) Grievance Mechanism & Rule 4(11) Refund Duties",
-      url: "https://consumeraffairs.nic.in/sites/default/files/E-commerce_Rules.pdf",
-    },
-    {
+  {
       title: "E-Commerce (Amendment) Rules, 2026 (Notified September 2026; In Force 1 January 2027)",
       url: "https://www.livelaw.in/consumer-cases/government-amends-e-commerce-rules-to-strengthen-consumer-protection-550184",
     },
-    {
+  {
       title: "Guidelines for Prevention and Regulation of Dark Patterns, 2023 — Central Consumer Protection Authority",
       url: "https://consumeraffairs.nic.in/sites/default/files/Dark_Patterns_Guidelines_2023.pdf",
     },
-    {
+  {
       title: "Bharatiya Sakshya Adhiniyam, 2023 (BSA Section 63 — Electronic Records Admissibility)",
       url: "https://www.indiacode.nic.in/handle/123456789/21735",
     },
-    {
+  {
       title: "National Consumer Helpline (NCH / INGRAM 1915 Portal), Department of Consumer Affairs",
       url: "https://consumerhelpline.gov.in/",
     },
-    {
+  {
       title: "e-Jagriti Online Consumer Disputes Redressal Portal, Government of India",
       url: "https://e-jagriti.gov.in/",
     },
-    {
+  {
       title: "Tushar Kalia v. Ajio.com (Reliance Retail Limited), CC/520/2022, DCDRC-II Chandigarh (01 May 2024)",
       url: "https://lawchakra.in",
     },
-    {
+  {
       title: "Deepika Bhardwaj v. Ajio c/o Reliance Retail Limited, CC/698/2022 & Appeal A/43/2024, SCDRC Chandigarh (03 May 2024)",
       url: "https://www.livelaw.in",
     },
-    {
+  {
       title: "Anu Kaushik v. Reliance Retail Limited, Consumer Complaint, DCDRC Karnal (2023)",
       url: "https://consumercourt.net",
     },
-    {
+  {
       title: "Amrit Pal Singh v. Reliance Retail Limited, Consumer Complaint, DCDRC-I Chandigarh (2023)",
       url: "https://indiankanoon.org",
     },
-  ];
+];
 
   const jsonLd = {
     "@context": "https://schema.org",

@@ -33,18 +33,8 @@ const BASE_PRICE = DEFAULT_FUNNEL_SETTINGS.basePricePerOpposition;
 
 const PRIMARY_SOURCES = [
   {
-    title: "Consumer Protection Act, 2019 (Sections 2(46) Unfair Contract, 2(47) Unfair Trade Practice, 18 CCPA Powers & 35 Consumer Complaint)",
-    url: "https://www.indiacode.nic.in/handle/123456789/15256",
-    accessed: "03 November 2026",
-  },
-  {
     title: "Central Consumer Protection Authority (CCPA) Guidelines for Prevention and Regulation of Dark Patterns, 2023",
     url: "https://consumeraffairs.nic.in/sites/default/files/Dark_Patterns_Guidelines_2023.pdf",
-    accessed: "03 November 2026",
-  },
-  {
-    title: "Consumer Protection (E-Commerce) Rules, 2020 (Rule 4 Grievance Officer, Rule 5 & 6 Marketplace Refund Liabilities)",
-    url: "https://consumeraffairs.nic.in/sites/default/files/E-commerce_Rules.pdf",
     accessed: "03 November 2026",
   },
   {

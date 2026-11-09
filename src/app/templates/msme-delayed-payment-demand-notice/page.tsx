@@ -49,10 +49,6 @@ const PRIMARY_SOURCES = [
     url: "https://samadhaan.msme.gov.in/",
   },
   {
-    title: "Supreme Court of India — Gujarat State Civil Supplies Corp. Ltd. v. Mahakali Foods Pvt. Ltd., (2023) 6 SCC 401",
-    url: "https://main.sci.gov.in/",
-  },
-  {
     title: "Bharatiya Sakshya Adhiniyam, 2023 (BSA Section 63 — Electronic Admissibility of GST E-Way Bills, Emails & WhatsApp Demand Notices)",
     url: "https://www.indiacode.nic.in/handle/123456789/20063",
   },

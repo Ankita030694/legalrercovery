@@ -945,11 +945,11 @@ export default function EmailLandingPage() {
             <div className="relative bg-slate-50 border border-slate-100 rounded-3xl p-6 w-full flex flex-col items-center justify-center gap-4 text-center">
               <div className="flex items-center justify-center gap-4">
                 <div className="bg-white rounded-xl p-3 border border-slate-200 shadow-xs flex items-center justify-center w-[130px] h-[70px]">
-                  <img src="/lrlogo.svg" alt="Legal Recovery Logo" className="h-[32px] w-auto object-contain" />
+                  <img src="/lrlogo.svg" alt="Legal Recovery Logo" width={3236} height={601} className="h-[32px] w-auto object-contain" />
                 </div>
                 <span className="text-[9px] font-black text-slate-400 uppercase tracking-widest">POWERED BY</span>
                 <div className="bg-white rounded-xl p-3 border border-slate-200 shadow-xs flex items-center justify-center w-[130px] h-[70px]">
-                  <img src="/ama4.png" alt="AMA Legal Solutions Logo" className="h-[52px] w-auto object-contain" />
+                  <img src="/ama4.png" alt="AMA Legal Solutions Logo" width={4500} height={4500} className="h-[52px] w-auto object-contain" />
                 </div>
               </div>
             </div>

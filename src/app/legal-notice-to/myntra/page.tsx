@@ -92,8 +92,6 @@ const ARTICLE_JSON_LD = {
     name: "Myntra",
   },
   citation: [
-    "https://consumeraffairs.nic.in/sites/default/files/E-commerce_Rules.pdf",
-    "https://www.indiacode.nic.in/handle/123456789/15256",
     "https://consumerhelpline.gov.in/",
     "https://e-jagriti.gov.in/",
     "https://rbi.org.in/Scripts/NotificationUser.aspx?Id=11693",
@@ -1035,25 +1033,11 @@ export default function MyntraDisputePage() {
 
             <ul className="grid grid-cols-1 sm:grid-cols-2 gap-3 text-xs text-slate-600">
               <li className="p-3 bg-white rounded-lg border border-slate-200">
-                <a
-                  href="https://consumeraffairs.nic.in/sites/default/files/E-commerce_Rules.pdf"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="font-semibold text-slate-900 hover:text-[#DC2626] transition-colors"
-                >
-                  Consumer Protection (E-Commerce) Rules, 2020 &rarr;
-                </a>
+                <span className="text-[#DC2626] font-medium">Official Gazette Notification</span>
                 <p className="text-slate-500 mt-0.5">Rules 4(5) &amp; 6(5) (Grievance Officer timelines and mandatory refund obligations)</p>
               </li>
               <li className="p-3 bg-white rounded-lg border border-slate-200">
-                <a
-                  href="https://www.indiacode.nic.in/handle/123456789/15256"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="font-semibold text-slate-900 hover:text-[#DC2626] transition-colors"
-                >
-                  Consumer Protection Act, 2019 (Act No. 35 of 2019) &rarr;
-                </a>
+                <span className="text-[#DC2626] font-medium">India Code Legislative Database</span>
                 <p className="text-slate-500 mt-0.5">Sections 2(11), 2(47), 35, 39 &amp; 69 (Deficiency, Unfair Trade Practices, Limitation)</p>
               </li>
               <li className="p-3 bg-white rounded-lg border border-slate-200">

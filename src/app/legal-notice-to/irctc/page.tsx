@@ -37,10 +37,6 @@ const PRIMARY_SOURCES = [
     url: "https://indianrailways.gov.in/railwayboard/uploads/directorate/traffic_comm/refundrules2015.pdf",
   },
   {
-    title: "Consumer Protection Act, 2019 (Act No. 35 of 2019) — Section 2(11) Deficiency in Service & Section 2(47) Unfair Trade Practice",
-    url: "https://www.indiacode.nic.in/handle/123456789/15256",
-  },
-  {
     title: "Reserve Bank of India (RBI) Circular on Harmonisation of Turn Around Time (TAT) and Customer Compensation for Failed Transactions (DPSS.CO.PD No.629/02.01.014/2019-20)",
     url: "https://www.rbi.org.in/Scripts/NotificationUser.aspx?Id=11693",
   },

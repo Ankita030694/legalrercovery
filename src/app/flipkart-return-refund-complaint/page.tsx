@@ -63,8 +63,6 @@ const articleJsonLd = {
     "sameAs": "https://en.wikipedia.org/wiki/Flipkart",
   },
   "citation": [
-    "https://consumeraffairs.nic.in/sites/default/files/E-commerce_Rules.pdf",
-    "https://www.indiacode.nic.in/handle/123456789/15256",
     "https://consumerhelpline.gov.in/",
     "https://e-jagriti.gov.in/",
     "https://www.livelaw.in/consumer-cases/flipkart-directed-to-refund-compensation-detergent-bars-delivered-instead-of-phone-233481",
@@ -1061,25 +1059,11 @@ export default function FlipkartRefundComplaintPage() {
                 <ul className="space-y-2 text-xs text-slate-650">
                   <li>
                     • <strong>Consumer Protection (E-Commerce) Rules, 2020:</strong> Rule 4(4) (Grievance Officer Timelines), Rule 5(3) (Marketplace Fallback Liability) —{" "}
-                    <a
-                      href="https://consumeraffairs.nic.in/sites/default/files/E-commerce_Rules.pdf"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="text-[#DC2626] hover:underline"
-                    >
-                      Official Gazette Notification (PDF) ↗
-                    </a>
+                    <span className="text-[#DC2626] font-medium">Official Gazette Notification</span>
                   </li>
                   <li>
                     • <strong>Consumer Protection Act, 2019:</strong> Section 2(47) (Unfair Trade Practice), Section 35 (District Commission Complaints), Section 69 (2-Year Limitation Period) —{" "}
-                    <a
-                      href="https://www.indiacode.nic.in/handle/123456789/15256"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="text-[#DC2626] hover:underline"
-                    >
-                      India Code Legislative Database ↗
-                    </a>
+                    <span className="text-[#DC2626] font-medium">India Code Legislative Database</span>
                   </li>
                   <li>
                     • <strong>National Consumer Helpline (NCH):</strong> 1915 Helpline & INGRAM Grievance Portal —{" "}

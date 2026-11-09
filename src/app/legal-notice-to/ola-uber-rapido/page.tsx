@@ -37,16 +37,8 @@ const PRIMARY_SOURCES = [
     url: "https://morth.nic.in/sites/default/files/circulars_document/Aggregator%20Guidelines%202020.pdf",
   },
   {
-    title: "Consumer Protection Act, 2019 (Act No. 35 of 2019) — Section 2(11) Deficiency in Service & Section 2(47) Unfair Trade Practice",
-    url: "https://www.indiacode.nic.in/handle/123456789/15256",
-  },
-  {
     title: "Guidelines for Prevention and Regulation of Dark Patterns, 2023 — Central Consumer Protection Authority (CCPA)",
     url: "https://consumeraffairs.nic.in/sites/default/files/Dark_Patterns_Guidelines_2023.pdf",
-  },
-  {
-    title: "Consumer Protection (E-Commerce) Rules, 2020 — Ministry of Consumer Affairs, Food and Public Distribution",
-    url: "https://consumeraffairs.nic.in/sites/default/files/E-commerce_Rules.pdf",
   },
   {
     title: "Bharatiya Sakshya Adhiniyam, 2023 (BSA Section 63 — Electronic Records Admissibility for In-App Invoices, GPS Maps & UPI Records)",

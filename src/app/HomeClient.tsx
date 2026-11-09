@@ -172,6 +172,8 @@ export default function HomeClient({ latestPosts }: { latestPosts?: React.ReactN
                       >
                         <img
                           src={ai.logo}
+                          width={128}
+                          height={128}
                           style={{ height: ai.h }}
                           className="w-auto"
                           alt={ai.name}
@@ -241,7 +243,7 @@ export default function HomeClient({ latestPosts }: { latestPosts?: React.ReactN
                 <div>
                   {/* Brand Logo */}
                   <div className="mb-8 pt-2 px-1 flex items-center justify-start">
-                    <img src="/lrwhite.svg" alt="LegalRecovery" className="h-6 w-auto object-contain" />
+                    <img src="/lrwhite.svg" alt="LegalRecovery" width={3236} height={601} className="h-6 w-auto object-contain" />
                   </div>
 
                   {/* Navigation list */}
@@ -566,7 +568,7 @@ export default function HomeClient({ latestPosts }: { latestPosts?: React.ReactN
 
                 {/* Left Logo: Legal Recovery */}
                 <div className="relative bg-white rounded-2xl p-4 border border-slate-200/80 shadow-[0_6px_20px_rgba(0,0,0,0.02)] flex items-center justify-center w-[280px] h-[124px] hover:scale-105 transition-all duration-300">
-                  <img src="/lrlogo.svg" alt="Legal Recovery Logo" className="h-[48px] w-auto object-contain" />
+                  <img src="/lrlogo.svg" alt="Legal Recovery Logo" width={3236} height={601} className="h-[48px] w-auto object-contain" />
                 </div>
 
                 {/* Center Connector Badge */}
@@ -576,7 +578,7 @@ export default function HomeClient({ latestPosts }: { latestPosts?: React.ReactN
 
                 {/* Right Logo: AMA Legal Solutions */}
                 <div className="relative bg-white rounded-2xl p-4 border border-slate-200/80 shadow-[0_6px_20px_rgba(0,0,0,0.02)] flex items-center justify-center w-[220px] h-[124px] hover:scale-105 transition-all duration-300">
-                  <img src="/ama4.png" alt="AMA Legal Solutions Logo" className="h-[76px] w-auto object-contain" />
+                  <img src="/ama4.png" alt="AMA Legal Solutions Logo" width={4500} height={4500} className="h-[76px] w-auto object-contain" />
                 </div>
 
               </div>

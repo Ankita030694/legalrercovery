@@ -490,7 +490,7 @@ export default function OnlineShoppingDisputeClient() {
                   
                   {/* Infographic Image */}
                   <div className="my-8 rounded-2xl overflow-hidden shadow-sm border border-slate-200">
-                    <img src="/images/og/online-shopping-dispute.jpg" alt="Online Shopping Dispute Legal Notice Infographic" className="w-full h-auto object-cover" />
+                    <img src="/images/og/online-shopping-dispute.jpg" alt="Online Shopping Dispute Legal Notice Infographic" width={640} height={640} className="w-full h-auto object-cover" />
                   </div>
 
                   <div className="prose prose-base max-w-none text-slate-650 space-y-6">
@@ -562,7 +562,7 @@ export default function OnlineShoppingDisputeClient() {
 
                 <div className="pt-8 border-t border-slate-100">
                   <p className="text-xs text-slate-400 leading-relaxed">
-                    References: [1] <a href="https://consumeraffairs.nic.in" className="font-semibold text-purple-600 hover:text-purple-800 hover:underline">The Consumer Protection (E-Commerce) Rules, 2020</a>. [2] <a href="https://ncdrc.nic.in" className="font-semibold text-purple-600 hover:text-purple-800 hover:underline">NCDRC judgments on joint liability of e-commerce platforms</a>.
+                    References: [1] <span className="font-semibold text-purple-600">The Consumer Protection (E-Commerce) Rules, 2020</span>. [2] <a href="https://ncdrc.nic.in" className="font-semibold text-purple-600 hover:text-purple-800 hover:underline">NCDRC judgments on joint liability of e-commerce platforms</a>.
                   </p>
                 </div>
               </div>
@@ -635,7 +635,7 @@ export default function OnlineShoppingDisputeClient() {
           <div className="mt-16 max-w-5xl mx-auto mb-10">
             <div className="bg-white border-2 border-slate-100 rounded-[2rem] p-8 md:p-12 shadow-sm">
               <div className="mb-8">
-                <img src="/lrlogo.svg" alt="LegalRecovery" className="h-8 sm:h-10 w-auto object-contain" />
+                <img src="/lrlogo.svg" alt="LegalRecovery" width={3236} height={601} className="h-8 sm:h-10 w-auto object-contain" />
               </div>
               <p className="text-sm md:text-base text-slate-600 leading-relaxed mb-10 max-w-3xl font-medium">
                 Legal Recovery is India's trusted consumer protection and legal tech platform. Founded in 2022 and headquartered in New Delhi, Legal Recovery has counselled 15,000+ people on consumer disputes, defective products, and e-commerce frauds. Legal Recovery focuses on fast out-of-court settlements and connects you with top panel advocates.

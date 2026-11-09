@@ -41,10 +41,6 @@ const PRIMARY_SOURCES = [
     url: "https://www.meity.gov.in/writereaddata/files/Information%20Technology%20%28Intermediary%20Guidelines%20and%20Digital%20Media%20Ethics%20Code%29%20Amendment%20Rules%2C%202023.pdf",
   },
   {
-    title: "Consumer Protection Act, 2019 (Act No. 35 of 2019) — Section 2(11) Deficiency in Service, Section 2(47) Unfair Trade Practice & Section 35",
-    url: "https://www.indiacode.nic.in/handle/123456789/15256",
-  },
-  {
     title: "Indian Contract Act, 1872 — Section 65 (Obligation of Person Who Has Received Advantage Under Void Agreement) & Section 148 (Bailment)",
     url: "https://www.indiacode.nic.in/handle/123456789/2187",
   },

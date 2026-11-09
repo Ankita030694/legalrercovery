@@ -45,10 +45,6 @@ const PRIMARY_SOURCES = [
     url: "https://cms.rbi.org.in/",
   },
   {
-    title: "Consumer Protection Act, 2019 (Act No. 35 of 2019) — Section 2(11) Deficiency in Service & Section 2(47) Unfair Trade Practice",
-    url: "https://www.indiacode.nic.in/handle/123456789/15256",
-  },
-  {
     title: "Consumer Protection (E-Commerce) Rules, 2020 — Mandatory Refund Timelines & Redressal Obligations",
     url: "https://consumeraffairs.nic.in/sites/default/files/E%20commerce%20rules.pdf",
   },

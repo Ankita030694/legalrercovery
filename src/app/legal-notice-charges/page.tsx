@@ -50,10 +50,6 @@ const PRIMARY_SOURCES = [
     url: "https://www.indiacode.nic.in/handle/123456789/2290",
   },
   {
-    title: "Consumer Protection Act, 2019 — Section 2(11) Deficiency in Service & Section 38 (Award of Litigation Expenses to Consumers)",
-    url: "https://www.indiacode.nic.in/handle/123456789/15256",
-  },
-  {
     title: "India Post Domestic Speed Post Tariff Schedule — Department of Posts, Ministry of Communications",
     url: "https://www.indiapost.gov.in/MBE/Pages/Content/Speed-Post.aspx",
   },

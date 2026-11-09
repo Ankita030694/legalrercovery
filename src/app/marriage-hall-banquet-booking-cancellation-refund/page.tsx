@@ -41,10 +41,6 @@ const PRIMARY_SOURCES = [
     url: "https://main.sci.gov.in/judgment/judis/42289.pdf",
   },
   {
-    title: "Consumer Protection Act, 2019 (Act No. 35 of 2019) — Section 2(46) Unfair Contract, Section 2(47) Unfair Trade Practice & Section 2(11) Deficiency in Service",
-    url: "https://www.indiacode.nic.in/handle/123456789/15256",
-  },
-  {
     title: "Supreme Court of India — Pioneer Urban Land & Infrastructure Ltd. v. Govindan Raghavan (2019) 5 SCC 725 (One-Sided Standard Form Clauses Void)",
     url: "https://main.sci.gov.in/judgment/judis/45943.pdf",
   },

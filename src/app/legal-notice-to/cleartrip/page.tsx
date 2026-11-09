@@ -40,14 +40,6 @@ const PRIMARY_SOURCES = [
     url: "https://consumeraffairs.nic.in/acts-and-rules/consumer-protection-act-2019/consumer-protection-e-commerce-rules-2020",
   },
   {
-    title: "Consumer Protection Act, 2019 (Act No. 35 of 2019) — Section 2(11) Deficiency in Service & Section 2(47) Unfair Trade Practice",
-    url: "https://www.indiacode.nic.in/handle/123456789/15256",
-  },
-  {
-    title: "Ministry of Consumer Affairs: Guidelines for Prevention and Regulation of Dark Patterns, 2023 (Prohibition of Forced Wallet Credits)",
-    url: "https://consumeraffairs.nic.in/",
-  },
-  {
     title: "AirSewa 2.0 Grievance Redressal Portal — Ministry of Civil Aviation, Government of India",
     url: "https://airsewa.gov.in/",
   },

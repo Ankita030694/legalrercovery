@@ -33,24 +33,8 @@ export const metadata: Metadata = {
 
 const PRIMARY_SOURCES = [
   {
-    title: "Consumer Protection Act, 2019 (Act No. 35 of 2019) — Section 2(10) Defect in Goods, Section 2(11) Deficiency in Service & Section 2(47) Unfair Trade Practice",
-    url: "https://www.indiacode.nic.in/handle/123456789/15256",
-  },
-  {
-    title: "Consumer Protection Act, 2019 — Chapter VI Product Liability (Sections 82 to 87: Liability of Manufacturer, Service Provider & Seller)",
-    url: "https://www.indiacode.nic.in/handle/123456789/15256",
-  },
-  {
-    title: "Consumer Protection Act, 2019 — Section 39: Powers of District Commission to Order Removal of Defect, Replacement, or Full Price Refund",
-    url: "https://www.indiacode.nic.in/handle/123456789/15256",
-  },
-  {
     title: "Right to Repair Portal India — Ministry of Consumer Affairs, Food & Public Distribution, Government of India",
     url: "https://righttorepairindia.gov.in/",
-  },
-  {
-    title: "Consumer Protection (E-Commerce) Rules, 2020 — Rule 4 & Rule 5 (Statutory Warranty Disclosures & Defective Goods Returns)",
-    url: "https://consumeraffairs.nic.in/acts-and-rules/consumer-protection",
   },
   {
     title: "Bharatiya Sakshya Adhiniyam, 2023 (BSA Section 63 — Electronic Records Admissibility for Service Job Sheets, WhatsApp & Audio Logs)",

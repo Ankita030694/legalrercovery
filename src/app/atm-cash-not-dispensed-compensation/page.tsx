@@ -41,10 +41,6 @@ const PRIMARY_SOURCES = [
     url: "https://www.rbi.org.in/Scripts/BS_PressReleaseDisplay.aspx?prid=52554",
   },
   {
-    title: "Consumer Protection Act, 2019 (Act No. 35 of 2019) — Section 2(11) Deficiency in Service & Section 2(47) Unfair Trade Practice",
-    url: "https://www.indiacode.nic.in/handle/123456789/15256",
-  },
-  {
     title: "National Payments Corporation of India (NPCI) — National Financial Switch (NFS) Dispute Management Guidelines & Chargeback Framework",
     url: "https://www.npci.org.in/what-we-do/nfs/dispute-management-system",
   },

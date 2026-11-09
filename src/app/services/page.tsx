@@ -281,12 +281,13 @@ export default function ServicesPage() {
 
           <div className="lg:w-1/2 flex justify-end items-center w-full -mr-4 sm:-mr-6 md:-mr-16 relative h-[300px] sm:h-[380px] lg:h-[485px]">
             <Image
-              src="/hatoda1.png"
+              src="/hatoda1.webp"
               alt="Send a Legal Notice Online"
-              fill
+              width={1000}
+              height={483}
               priority
-              sizes="(max-width: 1024px) 100vw, 50vw"
-              className="object-contain select-none pointer-events-none mix-blend-multiply"
+              sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 600px"
+              className="w-auto h-full max-h-[300px] sm:max-h-[380px] lg:max-h-[485px] object-contain select-none pointer-events-none mix-blend-multiply"
             />
           </div>
         </div>

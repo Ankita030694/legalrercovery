@@ -84,11 +84,6 @@ const PRIMARY_SOURCES = [
   },
   {
     title:
-      "Consumer Protection Act, 2019 (Section 2(11) Deficiency in Service & Section 35 Filing before Consumer Dispute Redressal Commissions)",
-    url: "https://www.indiacode.nic.in/handle/123456789/15256",
-  },
-  {
-    title:
       "Information Technology Act, 2000 (Section 43A — Compensation for Failure to Protect Data & Section 66D Cheating by Personation Using Computer Resource)",
     url: "https://www.indiacode.nic.in/handle/123456789/1999",
   },

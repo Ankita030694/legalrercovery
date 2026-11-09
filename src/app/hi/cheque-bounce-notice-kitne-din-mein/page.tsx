@@ -1125,36 +1125,21 @@ export default function ChequeBounceNoticeKitneDinMeinPage() {
                     — भारत सरकार (India Code विधायी विभाग)।
                   </li>
                   <li>
-                    <a
-                      href="https://main.sci.gov.in/"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="text-slate-800 font-semibold underline hover:text-[#DC2626]"
-                    >
+                    <span className="text-slate-800 font-semibold">
                       सर्वोच्च न्यायालय निर्णय: Sanjabij Tari v. Kishore S. Borcar (2025 INSC 1158, 25 सितंबर 2025)
-                    </a>{" "}
+                    </span>{" "}
                     — धारा 138 मामलों में ई-सम्मन, समयबद्ध ट्रायल और संशोधित समझौता शुल्क दिशा-निर्देश।
                   </li>
                   <li>
-                    <a
-                      href="https://main.sci.gov.in/"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="text-slate-800 font-semibold underline hover:text-[#DC2626]"
-                    >
+                    <span className="text-slate-800 font-semibold">
                       सर्वोच्च न्यायालय निर्णय: Saketh India Ltd. v. India Securities Ltd., (1999) 3 SCC 1 एवं Econ Antri Ltd., (2014) 11 SCC 769
-                    </a>{" "}
+                    </span>{" "}
                     — 30 दिन की नोटिस समय सीमा और 1 महीने की परिवाद अवधि में पहले दिन को छोड़ने का सिद्धांत।
                   </li>
                   <li>
-                    <a
-                      href="https://main.sci.gov.in/"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="text-slate-800 font-semibold underline hover:text-[#DC2626]"
-                    >
+                    <span className="text-slate-800 font-semibold">
                       सर्वोच्च न्यायालय निर्णय: Yogendra Pratap Singh v. Savitri Pandey, (2014) 10 SCC 713 एवं MSR Leathers v. S. Palaniappan, (2013) 1 SCC 177
-                    </a>{" "}
+                    </span>{" "}
                     — 15-दिन की भुगतान अवधि से पूर्व शिकायत की अमान्यता और 3 माह में पुनः प्रस्तुति का अधिकार।
                   </li>
                   <li>

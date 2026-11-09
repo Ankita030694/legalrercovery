@@ -79,7 +79,7 @@ const breadcrumbSchema = {
       "@type": "ListItem",
       "position": 3,
       "name": "Send Legal Notice Portal",
-      "item": "https://www.legalrecovery.in/send-legal-notice"
+      "item": "https://www.legalrecovery.in/online-legal-notice"
     }
   ]
 };
@@ -132,7 +132,7 @@ const reviewSchema = {
   },
   "offers": {
     "@type": "Offer",
-    "url": "https://www.legalrecovery.in/send-legal-notice",
+    "url": "https://www.legalrecovery.in/online-legal-notice",
     "priceCurrency": "INR",
     "price": "999",
     "availability": "https://schema.org/InStock",
@@ -241,7 +241,7 @@ export default function SendLegalNoticeClient() {
 
   const breadcrumbItems = [
     { label: "Recovery", href: "/recovery" },
-    { label: "Send Legal Notice", href: "/send-legal-notice" },
+    { label: "Send Legal Notice", href: "/online-legal-notice" },
   ];
 
   return (

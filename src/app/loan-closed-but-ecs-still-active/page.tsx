@@ -45,10 +45,6 @@ const PRIMARY_SOURCES = [
     url: "https://cms.rbi.org.in/",
   },
   {
-    title: "Consumer Protection Act, 2019 (Act No. 35 of 2019) — Section 2(11) Deficiency in Service & Section 2(47) Unfair Trade Practice",
-    url: "https://www.indiacode.nic.in/handle/123456789/15256",
-  },
-  {
     title: "Indian Contract Act, 1872 — Section 72 (Liability of Person to Whom Money is Paid by Mistake or Under Coercion)",
     url: "https://www.indiacode.nic.in/handle/123456789/2187",
   },

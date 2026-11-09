@@ -33,10 +33,6 @@ export const metadata: Metadata = {
 
 const PRIMARY_SOURCES = [
   {
-    title: "Consumer Protection Act, 2019 (Act No. 35 of 2019) — Chapter VI Product Liability (Sections 82 to 87)",
-    url: "https://www.indiacode.nic.in/handle/123456789/15256",
-  },
-  {
     title: "Motor Vehicles Act, 1988 (as amended) — Section 110A Mandatory Recall of Defective Motor Vehicles",
     url: "https://www.indiacode.nic.in/handle/123456789/1798",
   },

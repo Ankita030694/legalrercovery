@@ -489,7 +489,7 @@ export default function AirlineRefundClient() {
                   
                   {/* Infographic Image */}
                   <div className="my-8 rounded-2xl overflow-hidden shadow-sm border border-slate-200">
-                    <img src="/images/og/airline-refund-not-received.jpg" alt="Airline Refund Not Received Legal Notice Infographic" className="w-full h-auto object-cover" />
+                    <img src="/images/og/airline-refund-not-received.jpg" alt="Airline Refund Not Received Legal Notice Infographic" width={640} height={640} className="w-full h-auto object-cover" />
                   </div>
 
                   <div className="prose prose-base max-w-none text-slate-650 space-y-6">
@@ -520,7 +520,7 @@ export default function AirlineRefundClient() {
                       Once the legal notice is dispatched via registered post, the airline's legal department is given a standard 15-day period to comply with the demands. In cases involving clear regulatory breaches, such as a refusal to refund a carrier-canceled flight, the airline will typically reach out within this window to negotiate a settlement or instantly process the refund to avoid a summons from the District Commission.
                     </p>
                     <p className="text-sm md:text-base leading-relaxed">
-                      If the airline maintains silence or rejects the notice outright after the 15 days, the consumer's advocate will immediately escalate the matter by filing an online consumer complaint via the <a href="https://edaakhil.nic.in/" className="text-purple-600 hover:text-purple-800 hover:underline" target="_blank" rel="noopener noreferrer">e-Daakhil portal</a>. The courts view the unanswered legal notice as proof of the airline's obstinacy, significantly increasing the probability of winning punitive damages alongside the original refund.
+                      If the airline maintains silence or rejects the notice outright after the 15 days, the consumer's advocate will immediately escalate the matter by filing an online consumer complaint via the <span className="font-semibold text-slate-800">e-Daakhil portal</span>. The courts view the unanswered legal notice as proof of the airline's obstinacy, significantly increasing the probability of winning punitive damages alongside the original refund.
                     </p>
                   </div>
                 </section>
@@ -560,7 +560,7 @@ export default function AirlineRefundClient() {
 
                 <div className="pt-8 border-t border-slate-100">
                   <p className="text-xs text-slate-400">
-                    References: [1] <a href="https://www.dgca.gov.in/" className="font-semibold text-purple-600 hover:text-purple-800 hover:underline" target="_blank" rel="noopener noreferrer">DGCA Civil Aviation Requirements, Section 3, Series M</a>. [2] <a href="https://consumeraffairs.nic.in/" className="font-semibold text-purple-600 hover:text-purple-800 hover:underline" target="_blank" rel="noopener noreferrer">The Consumer Protection Act, 2019</a>.
+                    References: [1] <a href="https://www.dgca.gov.in/" className="font-semibold text-purple-600 hover:text-purple-800 hover:underline" target="_blank" rel="noopener noreferrer">DGCA Civil Aviation Requirements, Section 3, Series M</a>. [2] <span className="font-semibold text-slate-700">The Consumer Protection Act, 2019</span>.
                   </p>
                 </div>
               </div>
@@ -629,7 +629,7 @@ export default function AirlineRefundClient() {
           <div className="mt-16 max-w-5xl mx-auto mb-10">
             <div className="bg-white border-2 border-slate-100 rounded-[2rem] p-8 md:p-12 shadow-sm">
               <div className="mb-8">
-                <img src="/lrlogo.svg" alt="LegalRecovery" className="h-8 sm:h-10 w-auto object-contain" />
+                <img src="/lrlogo.svg" alt="LegalRecovery" width={3236} height={601} className="h-8 sm:h-10 w-auto object-contain" />
               </div>
               <p className="text-sm md:text-base text-slate-600 leading-relaxed mb-10 max-w-3xl font-medium">
                 Legal Recovery is India&apos;s trusted consumer protection and legal tech platform. Founded in 2022 and headquartered in New Delhi, Legal Recovery has counselled 15,000+ people on consumer disputes, defective products, and airline refund delays. Legal Recovery focuses on fast out-of-court settlements and connects you with top panel advocates.

@@ -50,10 +50,6 @@ const PRIMARY_SOURCES = [
     url: "https://www.rbi.org.in/Scripts/BS_PressReleaseDisplay.aspx?prid=52554",
   },
   {
-    title: "Consumer Protection Act, 2019 — Section 2(11) (Deficiency in Banking Service) & Section 2(47) (Unfair Trade Practice)",
-    url: "https://www.indiacode.nic.in/handle/123456789/15256",
-  },
-  {
     title: "Bharatiya Nyaya Sanhita, 2023 (BNS Section 314 — Dishonest Misappropriation of Property & Section 316 — Criminal Breach of Trust)",
     url: "https://www.indiacode.nic.in/handle/123456789/21733",
   },

@@ -59,8 +59,6 @@ const articleJsonLd = {
     },
   ],
   citation: [
-    "https://consumeraffairs.nic.in/sites/default/files/E-commerce_Rules.pdf",
-    "https://www.indiacode.nic.in/handle/123456789/15256",
     "https://consumerhelpline.gov.in/",
     "https://e-jagriti.gov.in/",
     "https://www.livelaw.in/consumer-cases/government-amends-e-commerce-rules-to-strengthen-consumer-protection-550184",
@@ -836,10 +834,10 @@ export default function CromaRelianceDigitalPage() {
             </h3>
             <ul className="space-y-1.5 text-xs text-slate-600 font-mono">
               <li>
-                • <a href="https://www.indiacode.nic.in/handle/123456789/15256" target="_blank" rel="noopener noreferrer" className="text-red-700 hover:underline">Consumer Protection Act, 2019 (Act No. 35 of 2019)</a> — Chapter VI (Product Liability, Sections 82–87), Section 2(47) (Unfair Trade Practice), Section 35 (Complaints), Section 69 (Limitation).
+                • <span className="text-red-700 font-medium">Consumer Protection Act, 2019 (Act No. 35 of 2019)</span> — Chapter VI (Product Liability, Sections 82–87), Section 2(47) (Unfair Trade Practice), Section 35 (Complaints), Section 69 (Limitation).
               </li>
               <li>
-                • <a href="https://consumeraffairs.nic.in/sites/default/files/E-commerce_Rules.pdf" target="_blank" rel="noopener noreferrer" className="text-red-700 hover:underline">Consumer Protection (E-Commerce) Rules, 2020</a> — Rule 4(5) (48-hour Grievance Acknowledgement), Rule 5(4) (One-Month Redressal).
+                • <span className="text-red-700 font-medium">Consumer Protection (E-Commerce) Rules, 2020</span> — Rule 4(5) (48-hour Grievance Acknowledgement), Rule 5(4) (One-Month Redressal).
               </li>
               <li>
                 • <a href="https://consumerhelpline.gov.in/" target="_blank" rel="noopener noreferrer" className="text-red-700 hover:underline">National Consumer Helpline (NCH 1915 / INGRAM Portal)</a> — Department of Consumer Affairs, Government of India.

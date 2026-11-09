@@ -37,10 +37,6 @@ const PRIMARY_SOURCES = [
     url: "https://www.rbi.org.in/Scripts/NotificationUser.aspx?Id=12382",
   },
   {
-    title: "Consumer Protection Act, 2019 (Act No. 35 of 2019) — Section 2(11) Deficiency in Service, Section 2(46) Unfair Contract, & Section 2(47) Unfair Trade Practice",
-    url: "https://www.indiacode.nic.in/handle/123456789/15256",
-  },
-  {
     title: "Central Consumer Protection Authority (CCPA) Guidelines on Prevention of Misleading Advertisements and Endorsements, 2022",
     url: "https://consumeraffairs.nic.in/sites/default/files/CCPA_Notification.pdf",
   },

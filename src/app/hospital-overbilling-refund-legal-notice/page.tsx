@@ -33,10 +33,6 @@ export const metadata: Metadata = {
 
 const PRIMARY_SOURCES = [
   {
-    title: "Consumer Protection Act, 2019 (Act No. 35 of 2019) — Section 2(11) Deficiency in Service & Section 2(47) Unfair Trade Practice",
-    url: "https://www.indiacode.nic.in/handle/123456789/15256",
-  },
-  {
     title: "Clinical Establishments (Registration and Regulation) Act, 2010 — Standard Rate Display & Patient Charter",
     url: "https://clinicalestablishments.gov.in/WriteReadData/921.pdf",
   },

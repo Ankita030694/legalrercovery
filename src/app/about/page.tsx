@@ -156,10 +156,11 @@ export default function AboutPage() {
               <Image
                 src="/edited.png"
                 alt="LegalRecovery expert legal team"
-                fill
+                width={3200}
+                height={3200}
                 priority
                 sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
-                className="object-cover"
+                className="w-full h-full object-cover"
                 style={{
                   objectPosition: "center 10%"
                 }}
@@ -199,10 +200,11 @@ export default function AboutPage() {
               <Image
                 src="/edited.png"
                 alt="LegalRecovery expert legal team"
-                fill
+                width={3200}
+                height={3200}
                 priority
                 sizes="(max-width: 1024px) 100vw, 50vw"
-                className="object-cover"
+                className="w-full h-full object-cover"
                 style={{
                   objectPosition: "center 10%"
                 }}

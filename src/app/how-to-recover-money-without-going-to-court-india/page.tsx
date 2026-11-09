@@ -2,7 +2,7 @@ import { Metadata } from "next";
 import HowToRecoverMoneyWithoutGoingToCourtIndiaClient from "./HowToRecoverMoneyWithoutGoingToCourtIndiaClient";
 
 export const metadata: Metadata = {
-  title: "How to Recover Money Without Going to Court in India",
+  title: "How to Recover Money Without Going to Court | Legal Guide",
   description: "Want to recover stuck money without a long civil court case? Use a Lawyer-Drafted Legal Notice, NCH/RBI/Samadhan portals, Pre-Institution Mediation & Online Dispute Resolution (ODR).",
   keywords: [
     "how to recover money without going to court india",
@@ -16,7 +16,7 @@ export const metadata: Metadata = {
     canonical: 'https://www.legalrecovery.in/how-to-recover-money-without-going-to-court-india',
   },
   openGraph: {
-    title: "How to Recover Money Without Going to Court in India",
+    title: "How to Recover Money Without Going to Court | Legal Guide",
     description: "Resolve money recovery disputes in 7–15 days without court via Advocate Legal Notice, Statutory Ombudsmen, and Online Dispute Resolution.",
     url: "https://www.legalrecovery.in/how-to-recover-money-without-going-to-court-india",
     type: "article",

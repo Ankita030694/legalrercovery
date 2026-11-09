@@ -141,6 +141,8 @@ function DownloadBatchContent() {
         <img
           src="/notices/header logo AMA .png"
           alt="AMA Legal Solutions"
+          width={625}
+          height={172}
           className="h-14 sm:h-16 w-auto object-contain mb-4"
         />
         <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-[11px] font-bold tracking-wider uppercase bg-[#FDF7E7] text-[#8C6806] border border-[#F3DB9A]">

@@ -466,14 +466,7 @@ export default function RecoverUnpaidRentFromTenantIndiaClient() {
                     <p className="text-sm md:text-base leading-relaxed">
                       The landlord-tenant relationship in India is governed by an overlapping
                       matrix of central legislation and state-specific Rent Control Acts. The{' '}
-                      <a
-                        href="https://www.indiacode.nic.in/handle/123456789/2238"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="text-purple-600 hover:text-purple-800 hover:underline"
-                      >
-                        Transfer of Property Act, 1882 (TPA)
-                      </a>{' '}
+                      <span className="font-semibold text-slate-800">Transfer of Property Act, 1882 (TPA)</span>{' '}
                       establishes the foundational legal architecture, while{' '}
                       <a
                         href="https://mohua.gov.in/upload/uploadfiles/files/Draft_Model_Tenancy_Act.pdf"
@@ -504,14 +497,7 @@ export default function RecoverUnpaidRentFromTenantIndiaClient() {
                       the Civil Court, wherein the defendant (tenant) is required to obtain leave
                       to defend—a procedural mechanism that dramatically accelerates the pace of
                       commercial rent recovery adjudication. The{' '}
-                      <a
-                        href="https://rera.mp.gov.in/Home/RentControlAct"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="text-purple-600 hover:text-purple-800 hover:underline"
-                      >
-                        state-specific Rent Control Acts
-                      </a>{' '}
+                      <span className="font-semibold text-slate-800">state-specific Rent Control Acts</span>{' '}
                       additionally provide specialized Rent Authority tribunals with summary
                       eviction and rent determination jurisdiction.
                     </p>
@@ -767,9 +753,7 @@ export default function RecoverUnpaidRentFromTenantIndiaClient() {
 
                   {/* Infographic */}
                   <div className="my-8 rounded-2xl overflow-hidden shadow-sm border border-slate-200">
-                    <img
-                      src="/images/og/recover-unpaid-rent-from-tenant-india.jpg"
-                      alt="Legal Notice to Tenant for Not Paying Rent – Infographic Guide by Legal Recovery"
+                    <img src="/images/og/recover-unpaid-rent-from-tenant-india.jpg" alt="Legal Notice to Tenant for Not Paying Rent – Infographic Guide by Legal Recovery" width={850} height={474}
                       className="w-full h-auto object-cover"
                     />
                   </div>
@@ -993,7 +977,7 @@ export default function RecoverUnpaidRentFromTenantIndiaClient() {
                 {/* ── COMPANY SECTION ──────────────────────────────────── */}
                 <section className="border border-slate-100 rounded-2xl p-6 md:p-8">
                   <div className="flex items-center gap-4 mb-4">
-                    <img src="/lrlogo.svg" alt="Legal Recovery Logo" className="h-10 w-auto" />
+                    <img src="/lrlogo.svg" alt="Legal Recovery Logo" width={3236} height={601} className="h-10 w-auto" />
                     <div>
                       <h3 className="font-black text-slate-900 text-base">Legal Recovery</h3>
                       <p className="text-xs text-slate-500">India&apos;s Trusted Recovery Platform</p>

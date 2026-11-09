@@ -37,10 +37,6 @@ const PRIMARY_SOURCES = [
     url: "https://www.indiacode.nic.in/handle/123456789/2264",
   },
   {
-    title: "Code on Social Security, 2020 (Act No. 36 of 2020) — Chapter III & Section 16 (Central Board of Trustees)",
-    url: "https://www.indiacode.nic.in/handle/123456789/15256",
-  },
-  {
     title: "EPFO Citizen Charter 2026 & Service Turn Around Time (TAT) Mandates — Central Board of Trustees",
     url: "https://www.epfindia.gov.in/site_en/Citizen_Charter.php",
   },

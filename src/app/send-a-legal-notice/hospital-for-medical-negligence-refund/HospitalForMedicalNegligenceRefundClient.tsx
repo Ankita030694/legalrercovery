@@ -435,32 +435,16 @@ export default function HospitalForMedicalNegligenceRefundClient() {
                   </h2>
                   <p className="text-sm text-slate-700 font-medium leading-relaxed">
                     An aggrieved patient or legal heir can issue an advocate-drafted statutory legal notice to a hospital, nursing home, or treating doctor under{' '}
-                    <a
-                      href="https://consumeraffairs.nic.in/acts-and-rules/consumer-protection"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="text-purple-600 hover:text-purple-800 hover:underline"
-                    >
-                      Section 2(42) and Section 35 of the Consumer Protection Act, 2019
-                    </a>
+                    <span className="font-semibold text-slate-800">Section 2(42) and Section 35 of the Consumer Protection Act, 2019</span>
                     , demanding full refund of paid medical expenses, corrective treatment reimbursement, and financial compensation for medical negligence within 15 days. Healthcare services provided by commercial hospitals for monetary payment constitute "services" under Indian consumer law as held by the Supreme Court in{' '}
-                    <a
-                      href="https://main.sci.gov.in/judgment/judis/12836.pdf"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="text-purple-600 hover:text-purple-800 hover:underline"
-                    >
-                      Indian Medical Association v. V.P. Shantha
-                    </a>
+                    <em>Indian Medical Association v. V.P. Shantha</em>
                     . Under National Medical Commission regulations, the hospital is statutorily bound to furnish certified inpatient medical records within 72 hours of written request, and failure to settle the demand notice empowers the victim to file a formal complaint before the District, State, or National Consumer Commission (NCDRC) alongside disciplinary proceedings before the State Medical Council.
                   </p>
                 </div>
 
                 {/* ── IN-ARTICLE INFOGRAPHIC ────────────────────────────── */}
                 <figure className="my-8 rounded-2xl overflow-hidden border border-slate-200 shadow-sm bg-slate-900">
-                  <img
-                    src="/images/og/hospital-for-medical-negligence-refund.jpg"
-                    alt="Infographic: Step-by-Step Legal Guide for Medical Negligence and Hospital Refund in India"
+                  <img src="/images/og/hospital-for-medical-negligence-refund.jpg" alt="Infographic: Step-by-Step Legal Guide for Medical Negligence and Hospital Refund in India" width={850} height={474}
                     className="w-full h-auto object-cover max-h-[500px]"
                     loading="lazy"
                   />
@@ -478,26 +462,12 @@ export default function HospitalForMedicalNegligenceRefundClient() {
                   <div className="prose prose-base max-w-none text-slate-650 space-y-6">
                     <p className="text-sm md:text-base leading-relaxed">
                       Medical treatment and hospital care in India operate within an intricate web of consumer protection statutes, clinical establishment regulations, tort principles, and medical council ethics codes. The primary legislative instrument for redressing medical malpractice, diagnostic errors, and commercial hospital overcharging is the{' '}
-                      <a
-                        href="https://consumeraffairs.nic.in/acts-and-rules/consumer-protection"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="text-purple-600 hover:text-purple-800 hover:underline"
-                      >
-                        Consumer Protection Act, 2019 (CPA 2019)
-                      </a>
+                      <span className="font-semibold text-slate-800">Consumer Protection Act, 2019 (CPA 2019)</span>
                       , which repealed and substantially strengthened the earlier 1986 enactment.
                     </p>
                     <p className="text-sm md:text-base leading-relaxed">
                       Under <strong>Section 2(42) of the CPA 2019</strong>, "service" is comprehensively defined to encompass any service made available to potential users, excluding only free services or services rendered under a contract of personal service. Ever since the constitutional bench ruling of the Supreme Court in{' '}
-                      <a
-                        href="https://main.sci.gov.in/judgment/judis/12836.pdf"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="text-purple-600 hover:text-purple-800 hover:underline"
-                      >
-                        Indian Medical Association v. V.P. Shantha (1995) 6 SCC 651
-                      </a>
+                      <em>Indian Medical Association v. V.P. Shantha (1995) 6 SCC 651</em>
                       , it is settled law that medical practitioners, private nursing homes, and corporate hospital networks are accountable under consumer forums whenever treatment is rendered for direct payment, insurance reimbursement, or employer contribution.
                     </p>
                     <p className="text-sm md:text-base leading-relaxed">
@@ -593,28 +563,24 @@ export default function HospitalForMedicalNegligenceRefundClient() {
                           court: 'Supreme Court of India',
                           principle:
                             'Established the absolute vicarious liability of hospitals for negligent acts of their resident doctors, nurses, and staff. The Court ruled that parents/guardians are consumers entitled to compensation for mental agony and suffering caused by pediatric medical negligence.',
-                          link: 'https://main.sci.gov.in/judgment/judis/16142.pdf',
                         },
                         {
                           caseName: 'Savita Garg v. National Heart Institute (2004) 8 SCC 56',
                           court: 'Supreme Court of India',
                           principle:
                             'Hospitals cannot escape liability by claiming that treating doctors were independent visiting consultants. The burden of proof shifts to the hospital to demonstrate absence of negligence once prima facie deficiency is established by the patient.',
-                          link: 'https://main.sci.gov.in/judgment/judis/26458.pdf',
                         },
                         {
                           caseName: 'Jacob Mathew v. State of Punjab (2005) 6 SCC 1',
                           court: 'Supreme Court of India',
                           principle:
                             'Defined the medical standard of reasonable skill and care under the Bolam test. Reaffirmed that while doctors are not liable for bona fide errors of clinical judgment, failure to possess or exercise standard medical competence constitutes actionable civil negligence.',
-                          link: 'https://main.sci.gov.in/judgment/judis/27110.pdf',
                         },
                         {
                           caseName: 'Malay Kumar Ganguly v. Sukumar Mukherjee (2009) 9 SCC 221',
                           court: 'Supreme Court of India (Anuradha Saha Case)',
                           principle:
                             'Awarded a historic landmark compensation of over ₹11 Crores for gross medical negligence, establishing modern multipliers for lost lifetime earnings, emotional trauma, and systemic hospital care deficiencies.',
-                          link: 'https://main.sci.gov.in/judgment/judis/35160.pdf',
                         },
                       ].map((item, i) => (
                         <div key={i} className="bg-slate-50 p-5 rounded-2xl border border-slate-100 flex flex-col justify-between">
@@ -629,16 +595,7 @@ export default function HospitalForMedicalNegligenceRefundClient() {
                               {item.principle}
                             </p>
                           </div>
-                          <div className="mt-3 pt-3 border-t border-slate-200/60">
-                            <a
-                              href={item.link}
-                              target="_blank"
-                              rel="noopener noreferrer"
-                              className="text-xs font-semibold text-purple-600 hover:text-purple-800 hover:underline"
-                            >
-                              Read Judgment at sci.gov.in →
-                            </a>
-                          </div>
+                          <div className="mt-3 pt-3 border-t border-slate-200/60"><span className="text-xs font-semibold text-slate-500">Supreme Court Precedent</span></div>
                         </div>
                       ))}
                     </div>
@@ -879,14 +836,7 @@ export default function HospitalForMedicalNegligenceRefundClient() {
                   </h3>
                   <ol className="list-decimal list-inside space-y-2 text-xs text-slate-600">
                     <li>
-                      <a
-                        href="https://consumeraffairs.nic.in/acts-and-rules/consumer-protection"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="text-purple-600 hover:text-purple-800 hover:underline"
-                      >
-                        Consumer Protection Act, 2019 — Ministry of Consumer Affairs, consumeraffairs.nic.in
-                      </a>
+                      <span className="text-slate-700 font-medium">Consumer Protection Act, 2019 — Ministry of Consumer Affairs</span>
                     </li>
                     <li>
                       <a
@@ -909,14 +859,7 @@ export default function HospitalForMedicalNegligenceRefundClient() {
                       </a>
                     </li>
                     <li>
-                      <a
-                        href="https://main.sci.gov.in/judgment/judis/12836.pdf"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="text-purple-600 hover:text-purple-800 hover:underline"
-                      >
-                        Supreme Court of India — Indian Medical Association v. V.P. Shantha (1995) 6 SCC 651, main.sci.gov.in
-                      </a>
+                      <span className="text-slate-700 font-medium">Supreme Court of India — Indian Medical Association v. V.P. Shantha (1995) 6 SCC 651</span>
                     </li>
                     <li>
                       <a
@@ -929,14 +872,7 @@ export default function HospitalForMedicalNegligenceRefundClient() {
                       </a>
                     </li>
                     <li>
-                      <a
-                        href="https://www.indiacode.nic.in/handle/123456789/20234"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="text-purple-600 hover:text-purple-800 hover:underline"
-                      >
-                        Bharatiya Nyaya Sanhita, 2023 — Section 106(1) &amp; Section 318, indiacode.nic.in
-                      </a>
+                      <span className="text-slate-700 font-medium">Bharatiya Nyaya Sanhita, 2023 — Section 106(1) &amp; Section 318</span>
                     </li>
                   </ol>
                 </section>
@@ -1000,7 +936,7 @@ export default function HospitalForMedicalNegligenceRefundClient() {
                 {/* ── COMPANY SECTION ──────────────────────────────────── */}
                 <section className="border border-slate-100 rounded-2xl p-6 md:p-8">
                   <div className="flex items-center gap-4 mb-4">
-                    <img src="/lrlogo.svg" alt="Legal Recovery Logo" className="h-10 w-auto" />
+                    <img src="/lrlogo.svg" alt="Legal Recovery Logo" width={3236} height={601} className="h-10 w-auto" />
                     <div>
                       <h3 className="font-black text-slate-900 text-base">Legal Recovery</h3>
                       <p className="text-xs text-slate-500">India&apos;s Trusted Recovery Platform</p>

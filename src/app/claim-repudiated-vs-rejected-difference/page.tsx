@@ -45,10 +45,6 @@ const PRIMARY_SOURCES = [
     url: "https://www.cioins.co.in/Rules",
   },
   {
-    title: "Consumer Protection Act, 2019 (Act No. 35 of 2019) — Section 2(11) Deficiency in Service & Section 35",
-    url: "https://www.indiacode.nic.in/handle/123456789/15256",
-  },
-  {
     title: "Bima Bharosa Integrated Grievance Management System (IGMS) — Insurance Regulatory and Development Authority of India",
     url: "https://bimabharosa.irdai.gov.in/",
   },

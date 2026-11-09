@@ -384,7 +384,7 @@ export default function UnfairTradePracticeClient() {
                       These deceptive practices often manifest in ways that manipulate the consumer&apos;s purchasing decision. For instance, a common violation involves e-commerce platforms artificially inflating the &quot;Maximum Retail Price&quot; (MRP) only to offer a fabricated &quot;discount&quot; to lure buyers. Another widespread issue involves educational institutions or gymnasiums embedding one-sided, non-refundable clauses in their contracts, trapping consumers who wish to exit deficient services. Such asymmetric contracts are explicitly classified as unfair.
                     </p>
                     <p className="text-sm md:text-base leading-relaxed">
-                      Bait-and-switch advertising, where a company advertises a high-quality product at a low price but substitutes it with inferior goods post-payment, is a textbook violation. To combat these tactics, the <a href="https://consumeraffairs.nic.in/" target="_blank" rel="noopener noreferrer" className="text-purple-600 hover:text-purple-800 hover:underline">Central Consumer Protection Authority (CCPA)</a> possesses the mandate to penalize entities engaging in misleading advertisements and unfair trade practices on a macroscopic level, while individual consumers can seek personal redressal through a targeted legal notice.
+                      Bait-and-switch advertising, where a company advertises a high-quality product at a low price but substitutes it with inferior goods post-payment, is a textbook violation. To combat these tactics, the <span className="font-semibold text-slate-800">Central Consumer Protection Authority (CCPA)</span> possesses the mandate to penalize entities engaging in misleading advertisements and unfair trade practices on a macroscopic level, while individual consumers can seek personal redressal through a targeted legal notice.
                     </p>
                   </div>
                 </section>
@@ -479,7 +479,7 @@ export default function UnfairTradePracticeClient() {
                   
                   {/* Infographic Image */}
                   <div className="my-8 rounded-2xl overflow-hidden shadow-sm border border-slate-200">
-                    <img src="/images/og/unfair-trade-practice-complaint.jpg" alt="Steps to Send an Unfair Trade Practice Legal Notice" className="w-full h-auto object-cover" />
+                    <img src="/images/og/unfair-trade-practice-complaint.jpg" alt="Steps to Send an Unfair Trade Practice Legal Notice" width={640} height={640} className="w-full h-auto object-cover" />
                   </div>
 
                   <div className="prose prose-base max-w-none text-slate-650 space-y-6">
@@ -621,7 +621,7 @@ export default function UnfairTradePracticeClient() {
           <div className="mt-16 max-w-5xl mx-auto mb-10">
             <div className="bg-white border-2 border-slate-100 rounded-[2rem] p-8 md:p-12 shadow-sm">
               <div className="mb-8">
-                <img src="/lrlogo.svg" alt="LegalRecovery" className="h-8 sm:h-10 w-auto object-contain" />
+                <img src="/lrlogo.svg" alt="LegalRecovery" width={3236} height={601} className="h-8 sm:h-10 w-auto object-contain" />
               </div>
               <p className="text-sm md:text-base text-slate-600 leading-relaxed mb-10 max-w-3xl font-medium">
                 Legal Recovery is India&apos;s trusted consumer protection and legal tech platform. We specialize in holding corporations accountable for unfair trade practices, deceptive marketing, and commercial fraud. With over 15,000 customers counselled, our mission is to provide fast, out-of-court resolutions by connecting you with top-tier panel advocates for immediate legal action.

@@ -51,7 +51,7 @@ export default function AuthorityRootLauncher() {
       <header className="h-20 bg-white border-b border-slate-200/80 px-6 sm:px-12 flex items-center justify-between sticky top-0 z-30 shadow-xs">
         <div className="flex items-center gap-4">
           <Link href="/authority" className="flex items-center gap-3">
-            <img src="/lrlogo.svg" alt="LegalRecovery" className="h-8 w-auto object-contain" />
+            <img src="/lrlogo.svg" alt="LegalRecovery" width={3236} height={601} className="h-8 w-auto object-contain" />
           </Link>
           <div className="h-5 w-px bg-slate-200 hidden sm:block" />
           <div className="hidden sm:flex items-center gap-2 px-2.5 py-1 bg-slate-100 rounded-full text-[11px] font-bold text-slate-600 uppercase tracking-wider">

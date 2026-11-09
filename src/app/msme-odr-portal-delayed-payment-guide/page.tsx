@@ -193,10 +193,6 @@ const PRIMARY_SOURCES = [
     url: "https://incometaxindia.gov.in/",
   },
   {
-    title: "Supreme Court of India: Gujarat State Civil Supplies Corporation Ltd. v. Mahakali Foods Pvt. Ltd. (2023) 6 SCC 401",
-    url: "https://main.sci.gov.in/",
-  },
-  {
     title: "Arbitration and Conciliation Act, 1996 — Section 29B (Fast Track Procedure) & Section 36 (Enforcement of Arbitral Awards as Civil Decrees)",
     url: "https://www.indiacode.nic.in/handle/123456789/1978",
   },

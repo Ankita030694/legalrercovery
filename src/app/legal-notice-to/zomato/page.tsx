@@ -36,47 +36,39 @@ export default function ZomatoLegalNoticePage() {
   ];
 
   const primarySources = [
-    {
-      title: "Consumer Protection Act, 2019 (Act No. 35 of 2019), Sections 2(47), 35, 39 & 69",
-      url: "https://www.indiacode.nic.in/handle/123456789/15256",
-    },
-    {
-      title: "Consumer Protection (E-Commerce) Rules, 2020 — Rule 4(5) Grievance Redressal & Rule 5 Liabilities",
-      url: "https://consumeraffairs.nic.in/sites/default/files/E-commerce_Rules.pdf",
-    },
-    {
+  {
       title: "E-Commerce (Amendment) Rules, 2026 (Notified September 2026; In Force 1 January 2027)",
       url: "https://www.livelaw.in/consumer-cases/government-amends-e-commerce-rules-to-strengthen-consumer-protection-550184",
     },
-    {
+  {
       title: "Guidelines for Prevention and Regulation of Dark Patterns, 2023 — CCPA Notification",
       url: "https://consumeraffairs.nic.in/sites/default/files/Dark_Patterns_Guidelines_2023.pdf",
     },
-    {
+  {
       title: "Bharatiya Sakshya Adhiniyam, 2023 (BSA Section 63 — Electronic Records Admissibility)",
       url: "https://www.indiacode.nic.in/handle/123456789/21735",
     },
-    {
+  {
       title: "National Consumer Helpline (NCH / INGRAM 1915 Portal), Department of Consumer Affairs",
       url: "https://consumerhelpline.gov.in/",
     },
-    {
+  {
       title: "e-Jagriti Online Consumer Disputes Redressal Portal, Government of India",
       url: "https://e-jagriti.gov.in/",
     },
-    {
+  {
       title: "DCDRC Dharwad — Sheethal v. Zomato Limited (CC No. 483/2023, Order Dated 3 July 2024)",
       url: "https://lawstreet.co/news/zomato-ordered-to-pay-60000-compensation-consumer-forum-dharwad",
     },
-    {
+  {
       title: "DCDRC Kollam — Abey S. v. Zomato Limited & Anr. (Non-Delivery & Agony Award, 2022)",
       url: "https://www.livelaw.in/consumer-cases/consumer-disputes-redressal-commission-orders-zomato-to-pay-compensation-to-law-student-for-non-delivery-of-food-197022",
     },
-    {
+  {
       title: "SCDRC Chandigarh — Zomato Limited v. Ajay Sharma (Appeal No. 12/2021, Order on Late Delivery Guarantee)",
       url: "https://www.livelaw.in/consumer-cases/zomatos-failure-to-fulfill-promise-of-on-time-delivery-amounts-to-deficiency-in-service-174829",
     },
-  ];
+];
 
   const legalNoticeTemplate = `LEGAL NOTICE BY REGISTERED POST WITH A.D. & ELECTRONIC TRANSMISSION
 

@@ -38,16 +38,6 @@ const PRIMARY_SOURCES = [
     accessed: "03 November 2026",
   },
   {
-    title: "Consumer Protection Act, 2019 (Section 2(47) Unfair Trade Practice & Section 35 Complaints)",
-    url: "https://www.indiacode.nic.in/handle/123456789/15256",
-    accessed: "03 November 2026",
-  },
-  {
-    title: "Consumer Protection (E-Commerce) Rules, 2020 (Rule 4 Grievance Redressal Mechanism)",
-    url: "https://consumeraffairs.nic.in/sites/default/files/E-commerce_Rules.pdf",
-    accessed: "03 November 2026",
-  },
-  {
     title: "Reserve Bank - Integrated Ombudsman Scheme, 2021 (Clause 15 Deficiency Compensation)",
     url: "https://rbidocs.rbi.org.in/rdocs/content/pdfs/RBIOS2021_12112021.pdf",
     accessed: "03 November 2026",

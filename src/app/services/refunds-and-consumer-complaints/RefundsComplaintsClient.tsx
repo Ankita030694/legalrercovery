@@ -837,9 +837,11 @@ export default function RefundsComplaintsClient() {
               <h3 className="text-xs font-black text-gray-400 uppercase tracking-wider mb-4 border-b border-gray-50 pb-2">About Author</h3>
               <div className="flex items-center mb-4">
                 <div className="w-12 h-12 rounded-full overflow-hidden mr-3 border border-gray-100 flex-shrink-0 bg-red-50 flex items-center justify-center">
-                  <img 
+                  <img
                     src="/anujbhiya.png"
                     alt="Anuj Anand Malik"
+                    width={800}
+                    height={800}
                     className="w-full h-full object-cover"
                   />
                 </div>

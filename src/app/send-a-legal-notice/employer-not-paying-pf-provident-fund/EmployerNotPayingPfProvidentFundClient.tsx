@@ -630,7 +630,7 @@ export default function EmployerNotPayingPfProvidentFundClient() {
                   
                   {/* Infographic Image */}
                   <div className="my-8 rounded-2xl overflow-hidden shadow-sm border border-slate-200">
-                    <img src="/images/og/employer-not-paying-pf-provident-fund.jpg" alt="Legal Notice to Employer for Not Paying PF Provident Fund Infographic Guide" className="w-full h-auto object-cover" />
+                    <img src="/images/og/employer-not-paying-pf-provident-fund.jpg" alt="Legal Notice to Employer for Not Paying PF Provident Fund Infographic Guide" width={850} height={474} className="w-full h-auto object-cover" />
                   </div>
 
                   <div className="prose prose-base max-w-none text-slate-650 space-y-6">
@@ -815,7 +815,7 @@ export default function EmployerNotPayingPfProvidentFundClient() {
           <div className="mt-16 max-w-5xl mx-auto mb-10">
             <div className="bg-white border-2 border-slate-100 rounded-[2rem] p-8 md:p-12 shadow-sm border-[#DC2626]">
               <div className="mb-8">
-                <img src="/lrlogo.svg" alt="LegalRecovery" className="h-8 sm:h-10 w-auto object-contain" />
+                <img src="/lrlogo.svg" alt="LegalRecovery" width={3236} height={601} className="h-8 sm:h-10 w-auto object-contain" />
               </div>
               <p className="text-sm md:text-base text-slate-650 leading-relaxed mb-10 max-w-3xl font-medium">
                 Legal Recovery is India&apos;s trusted consumer protection and commercial debt resolution platform. Founded in 2022 and headquartered in New Delhi, Legal Recovery has counselled 15,000+ businesses, professionals, and employees on employment disputes, statutory social security non-compliance, and delayed salary settlements. Legal Recovery accelerates out-of-court settlements and connects you with top verified panel advocates.

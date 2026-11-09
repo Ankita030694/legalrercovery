@@ -32,14 +32,6 @@ export const metadata: Metadata = {
 
 const PRIMARY_SOURCES = [
   {
-    title: "Consumer Protection (E-Commerce) Rules, 2020 — Rule 4(5) & Rule 5(3)",
-    url: "https://consumeraffairs.nic.in/sites/default/files/E-commerce_Rules.pdf",
-  },
-  {
-    title: "Consumer Protection Act, 2019 — Sections 2(47), 35 & 69",
-    url: "https://www.indiacode.nic.in/handle/123456789/15256",
-  },
-  {
     title: "Guidelines for Prevention and Regulation of Dark Patterns, 2023 (CCPA)",
     url: "https://consumeraffairs.nic.in/sites/default/files/Dark_Patterns_Guidelines_2023.pdf",
   },

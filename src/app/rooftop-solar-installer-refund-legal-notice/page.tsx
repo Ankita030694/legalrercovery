@@ -33,10 +33,6 @@ export const metadata: Metadata = {
 
 const PRIMARY_SOURCES = [
   {
-    title: "Consumer Protection Act, 2019 (Act No. 35 of 2019) — Section 2(11) Deficiency in Service & Section 2(47) Unfair Trade Practice",
-    url: "https://www.indiacode.nic.in/handle/123456789/15256",
-  },
-  {
     title: "Indian Contract Act, 1872 — Section 73 (Compensation for Loss Caused by Breach) & Section 74 (Liquidated Damages)",
     url: "https://www.indiacode.nic.in/handle/123456789/2187",
   },

@@ -37,10 +37,6 @@ const PRIMARY_SOURCES = [
     url: "https://www.indiacode.nic.in/handle/123456789/2056",
   },
   {
-    title: "Consumer Protection Act, 2019 (Act No. 35 of 2019) — Section 2(11) Deficiency in Service & Section 2(47) Unfair Trade Practice",
-    url: "https://www.indiacode.nic.in/handle/123456789/15256",
-  },
-  {
     title: "Nath Bros. Exim International Ltd. v. Best Roadways Ltd. (2000) 4 SCC 553 — Supreme Court of India on Strict Common Carrier Liability",
     url: "https://main.sci.gov.in/judgment/judis/16766.pdf",
   },

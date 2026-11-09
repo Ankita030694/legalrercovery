@@ -33,10 +33,6 @@ export const metadata: Metadata = {
 
 const PRIMARY_SOURCES = [
   {
-    title: "Consumer Protection Act, 2019 (Act No. 35 of 2019) — Section 2(11) Deficiency in Service & Section 2(47) Unfair Trade Practice",
-    url: "https://www.indiacode.nic.in/handle/123456789/15256",
-  },
-  {
     title: "Sale of Goods Act, 1930 — Section 31 (Duties of Seller and Buyer) & Section 61 (Interest on Purchase Money)",
     url: "https://www.indiacode.nic.in/handle/123456789/2390",
   },

@@ -54,11 +54,6 @@ const PRIMARY_SOURCES = [
   },
   {
     title:
-      "Consumer Protection Act, 2019 (Act No. 35 of 2019) — Section 2(11) Deficiency in Service & Section 2(47) Unfair Trade Practice",
-    url: "https://www.indiacode.nic.in/handle/123456789/15256",
-  },
-  {
-    title:
       "Bharatiya Sakshya Adhiniyam, 2023 (BSA Section 63 — Electronic Records Admissibility for CIR Credit Reports, Dispute Tickets, & Digital Notices)",
     url: "https://www.indiacode.nic.in/handle/123456789/21735",
   },

@@ -2276,8 +2276,8 @@ export default function NewRecoveryForm() {
             <div className="mt-auto pt-2 flex flex-col gap-2">
               <div className="text-left px-1">
                 <div style={{ marginBottom: "4px", whiteSpace: "nowrap", width: "fit-content", textAlign: "left" }}>
-                  <img src="/notices/Signature.png" alt="Signature" className="h-[35px] sm:h-[45px] w-auto inline-block" style={{ verticalAlign: "bottom", marginRight: "12px" }} />
-                  <img src={previewTab === "police" ? "/notices/AMA stamp logo.png" : ((clientProfile?.phone?.replace(/\D/g, '').endsWith('8700343611') || clientProfile?.phone?.replace(/\D/g, '').endsWith('8130104447')) ? "/notices/bar_stamp.png" : "/notices/AMA stamp logo.png")} alt="Stamp" className="h-[45px] sm:h-[55px] w-auto object-contain opacity-90 inline-block" style={{ verticalAlign: "bottom" }} />
+                  <img src="/notices/Signature.png" alt="Signature" width={400} height={200} className="h-[35px] sm:h-[45px] w-auto inline-block" style={{ verticalAlign: "bottom", marginRight: "12px" }} />
+                  <img src={previewTab === "police" ? "/notices/AMA stamp logo.png" : ((clientProfile?.phone?.replace(/\D/g, '').endsWith('8700343611') || clientProfile?.phone?.replace(/\D/g, '').endsWith('8130104447')) ? "/notices/bar_stamp.png" : "/notices/AMA stamp logo.png")} alt="Stamp" width={2000} height={2000} className="h-[45px] sm:h-[55px] w-auto object-contain opacity-90 inline-block" style={{ verticalAlign: "bottom" }} />
                 </div>
                 <span className="font-bold text-slate-800 text-[10px] sm:text-[11px] block">For AMA Legal Solutions<sup>®</sup></span>
                 <span className="text-slate-500 text-[9px] block mt-0.5">Through Authorized Signatory</span>
@@ -2288,7 +2288,7 @@ export default function NewRecoveryForm() {
                   GURUGRAM - DELHI - NOIDA - BENGALURU - MUMBAI
                 </div>
                 <div className="w-[30px] flex justify-end">
-                  <img src="/notices/AMA stamp logo.png" alt="Stamp" className="h-[20px] sm:h-[26px] w-auto object-contain opacity-90 block" />
+                  <img src="/notices/AMA stamp logo.png" alt="Stamp" width={2000} height={2000} className="h-[20px] sm:h-[26px] w-auto object-contain opacity-90 block" />
                 </div>
               </div>
             </div>

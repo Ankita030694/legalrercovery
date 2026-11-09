@@ -33,10 +33,6 @@ export const metadata: Metadata = {
 
 const PRIMARY_SOURCES = [
   {
-    title: "Consumer Protection Act, 2019 (Act No. 35 of 2019) — Section 2(11) Deficiency in Service, Section 2(46) Unfair Contract, Section 2(47) Unfair Trade Practice & Section 86 Service Provider Liability",
-    url: "https://www.indiacode.nic.in/handle/123456789/15256",
-  },
-  {
     title: "Consumer Protection (E-Commerce) Rules, 2020 — Ministry of Consumer Affairs, Food and Public Distribution, Government of India",
     url: "https://consumeraffairs.nic.in/sites/default/files/E-commerce_Rules_2020.pdf",
   },

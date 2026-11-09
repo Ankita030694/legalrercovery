@@ -571,9 +571,7 @@ export default function RecoveryOfUnpaidDuesClient() {
                   
                   {/* Embedded Infographic */}
                   <div className="my-6 rounded-2xl overflow-hidden shadow-md border border-slate-200">
-                    <img
-                      src="/images/og/recovery-of-unpaid-dues-for-my-business.jpg"
-                      alt="Recovery of Unpaid Dues for My Business Guide Infographic"
+                    <img src="/images/og/recovery-of-unpaid-dues-for-my-business.jpg" alt="Recovery of Unpaid Dues for My Business Guide Infographic" width={850} height={474}
                       className="w-full h-auto object-cover"
                       loading="lazy"
                     />
@@ -812,7 +810,7 @@ export default function RecoveryOfUnpaidDuesClient() {
           <div className="mt-16 max-w-5xl mx-auto mb-10">
             <div className="bg-white border-2 border-slate-100 rounded-[2rem] p-8 md:p-12 shadow-sm">
               <div className="mb-8">
-                <img src="/lrlogo.svg" alt="Legal Recovery" className="h-8 sm:h-10 w-auto object-contain" />
+                <img src="/lrlogo.svg" alt="Legal Recovery" width={3236} height={601} className="h-8 sm:h-10 w-auto object-contain" />
               </div>
               <p className="text-sm md:text-base text-slate-600 leading-relaxed mb-10 max-w-3xl font-medium">
                 Legal Recovery is India&apos;s trusted commercial debt resolution and legal tech platform. Founded in 2022 and headquartered in New Delhi, Legal Recovery has counselled 15,000+ businesses and entrepreneurs on B2B unpaid dues, delayed vendor invoices, MSME claims, and commercial contract enforcement. Legal Recovery prioritizes rapid pre-litigation settlements and connects enterprises directly with vetted commercial panel advocates.

@@ -459,9 +459,7 @@ export default function CoFounderStartupUnpaidDuesEquityClient() {
 
                 {/* ── IN-ARTICLE INFOGRAPHIC ────────────────────────────── */}
                 <figure className="my-8 rounded-2xl overflow-hidden border border-slate-200 shadow-sm bg-slate-900">
-                  <img
-                    src="/images/og/co-founder-startup-unpaid-dues-equity.jpg"
-                    alt="Infographic: Step-by-Step Legal Process to Recover Unpaid Co-Founder Dues, Salary and Startup Equity in India"
+                  <img src="/images/og/co-founder-startup-unpaid-dues-equity.jpg" alt="Infographic: Legal Process to Recover Unpaid Co-Founder Dues and Equity in India" width={850} height={474}
                     className="w-full h-auto object-cover max-h-[500px]"
                     loading="lazy"
                   />
@@ -673,28 +671,24 @@ export default function CoFounderStartupUnpaidDuesEquityClient() {
                           court: 'Supreme Court of India',
                           principle: 'Quasi-Partnership Principle & Oppression Thresholds',
                           desc: 'The Supreme Court affirmed that closely held companies and startups operating on mutual trust and personal relationships are akin to quasi-partnerships. When controlling shareholders breach underlying founder agreements or exclude key partners from governance in bad faith, NCLT holds broad remedial jurisdiction under Section 242.',
-                          link: 'https://main.sci.gov.in',
                         },
                         {
                           case: 'Dale & Carrington Invt. P. Ltd. v. P.K. Prathapan (2005) 1 SCC 212',
                           court: 'Supreme Court of India',
                           principle: 'Fiduciary Duty of Directors in Equity Allotment',
                           desc: 'The Supreme Court ruled that directors act in a fiduciary capacity on behalf of all shareholders. Issuing additional shares solely to reduce a co-founder into a minority or consolidate personal control is an abuse of fiduciary power, rendering the entire allotment illegal and void ab initio.',
-                          link: 'https://main.sci.gov.in',
                         },
                         {
                           case: 'Needle Industries (India) Ltd. v. Needle Industries Newey (India) Holding Ltd. (1981) 3 SCC 333',
                           court: 'Supreme Court of India',
                           principle: 'Oppression through Unfair Share Issuances',
                           desc: 'Established that an illegal share issue that prejudicially affects a shareholder’s voting rights or financial interest amounts to oppression under corporate law, entitling the aggrieved party to statutory rectification.',
-                          link: 'https://main.sci.gov.in',
                         },
                         {
                           case: 'Sangramsinh P. Gaekwad v. Shantadevi P. Gaekwad (2005) 11 SCC 314',
                           court: 'Supreme Court of India',
                           principle: 'Protection of Pre-Emptive Rights & Legitimate Expectations',
                           desc: 'Held that failure to adhere strictly to statutory provisions regarding share transfers and disregard of pre-emptive rights embedded in corporate constitutional documents constitutes actionable oppression.',
-                          link: 'https://main.sci.gov.in',
                         },
                       ].map((item, idx) => (
                         <div key={idx} className="bg-slate-50 p-5 rounded-2xl border border-slate-200 space-y-2">
@@ -706,16 +700,7 @@ export default function CoFounderStartupUnpaidDuesEquityClient() {
                               {item.principle}
                             </span>
                           </div>
-                          <h4 className="font-extrabold text-slate-900 text-sm sm:text-base">
-                            <a
-                              href={item.link}
-                              target="_blank"
-                              rel="noopener noreferrer"
-                              className="text-purple-600 hover:text-purple-800 hover:underline"
-                            >
-                              {item.case}
-                            </a>
-                          </h4>
+                          <h4 className="font-extrabold text-slate-900 text-sm sm:text-base">{item.case}</h4>
                           <p className="text-xs sm:text-sm text-slate-650 leading-relaxed">
                             {item.desc}
                           </p>
@@ -1040,7 +1025,7 @@ export default function CoFounderStartupUnpaidDuesEquityClient() {
                 {/* ── COMPANY SECTION ──────────────────────────────────── */}
                 <section className="border border-slate-100 rounded-2xl p-6 md:p-8">
                   <div className="flex items-center gap-4 mb-4">
-                    <img src="/lrlogo.svg" alt="Legal Recovery Logo" className="h-10 w-auto" />
+                    <img src="/lrlogo.svg" alt="Legal Recovery Logo" width={3236} height={601} className="h-10 w-auto" />
                     <div>
                       <h3 className="font-black text-slate-900 text-base">Legal Recovery</h3>
                       <p className="text-xs text-slate-500">India&apos;s Trusted Recovery Platform</p>

@@ -461,9 +461,7 @@ export default function RecoverMoneyFromOnlineShoppingScamIndiaClient() {
 
                 {/* ── IN-ARTICLE INFOGRAPHIC ────────────────────────────── */}
                 <figure className="my-8 rounded-2xl overflow-hidden border border-slate-200 shadow-sm bg-slate-900">
-                  <img
-                    src="/images/og/recover-money-from-online-shopping-scam-india.jpg"
-                    alt="Infographic: Step-by-Step Legal Framework to Recover Money from Online Shopping Scams in India"
+                  <img src="/images/og/recover-money-from-online-shopping-scam-india.jpg" alt="Infographic: Step-by-Step Legal Framework to Recover Money from Online Shopping Scams in India" width={850} height={474}
                     className="w-full h-auto object-cover max-h-[500px]"
                     loading="lazy"
                   />
@@ -556,14 +554,7 @@ export default function RecoverMoneyFromOnlineShoppingScamIndiaClient() {
                         </h3>
                         <p className="text-xs sm:text-sm text-slate-650 leading-relaxed mb-3">
                           Under the{' '}
-                          <a
-                            href="https://consumeraffairs.nic.in/acts-and-rules/consumer-protection-act-2019"
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            className="text-purple-600 hover:text-purple-800 hover:underline"
-                          >
-                            Consumer Protection Act, 2019
-                          </a>
+                          <span className="font-semibold text-slate-800">Consumer Protection Act, 2019</span>
                           , every online purchaser qualifies as a &quot;consumer&quot; under Section 2(7). Key protective mandates include:
                         </p>
                         <ul className="space-y-2 text-xs sm:text-sm text-slate-700 list-disc list-inside">
@@ -614,14 +605,7 @@ export default function RecoverMoneyFromOnlineShoppingScamIndiaClient() {
                         </h3>
                         <p className="text-xs sm:text-sm text-slate-650 leading-relaxed mb-3">
                           Replacing the Indian Penal Code, the{' '}
-                          <a
-                            href="https://www.indiacode.nic.in/handle/123456789/20234"
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            className="text-purple-600 hover:text-purple-800 hover:underline"
-                          >
-                            Bharatiya Nyaya Sanhita, 2023 (BNS)
-                          </a>{' '}
+                          <span className="font-semibold text-slate-800">Bharatiya Nyaya Sanhita, 2023 (BNS)</span>{' '}
                           provides potent penal sections for ecommerce fraud:
                         </p>
                         <ul className="space-y-2 text-xs sm:text-sm text-slate-700 list-disc list-inside">
@@ -730,14 +714,7 @@ export default function RecoverMoneyFromOnlineShoppingScamIndiaClient() {
                           </h3>
                           <p className="text-xs sm:text-sm text-slate-650 leading-relaxed mb-2">
                             If the 15-day notice period expires without resolution, file an electronic consumer complaint on the government’s{' '}
-                            <a
-                              href="https://edaakhil.nic.in"
-                              target="_blank"
-                              rel="noopener noreferrer"
-                              className="text-purple-600 hover:text-purple-800 hover:underline"
-                            >
-                              E-Daakhil portal (edaakhil.nic.in)
-                            </a>{' '}
+                            <span className="font-semibold text-slate-800">E-Daakhil portal</span>{' '}
                             before the District Consumer Disputes Redressal Commission. You are entitled to demand 100% principal reimbursement, commercial interest, legal costs, and punitive compensation for mental harassment.
                           </p>
                           <p className="text-xs text-slate-500">
@@ -1048,7 +1025,7 @@ export default function RecoverMoneyFromOnlineShoppingScamIndiaClient() {
                 {/* ── COMPANY SECTION ──────────────────────────────────── */}
                 <section className="border border-slate-100 rounded-2xl p-6 md:p-8">
                   <div className="flex items-center gap-4 mb-4">
-                    <img src="/lrlogo.svg" alt="Legal Recovery Logo" className="h-10 w-auto" />
+                    <img src="/lrlogo.svg" alt="Legal Recovery Logo" width={3236} height={601} className="h-10 w-auto" />
                     <div>
                       <h3 className="font-black text-slate-900 text-base">Legal Recovery</h3>
                       <p className="text-xs text-slate-500">India&apos;s Trusted Recovery Platform</p>

@@ -41,10 +41,6 @@ const PRIMARY_SOURCES = [
     url: "https://www.rbi.org.in/Scripts/Notifications.aspx",
   },
   {
-    title: "Supreme Court of India — State Bank of India v. Pallabh Bhowmick & Ors., 2025 SCC OnLine SC 44 (SLP (C) No. 30677/2024, Order Dated 3 January 2025 — Bank Vigilance & Burden of Proof)",
-    url: "https://main.sci.gov.in/",
-  },
-  {
     title: "Supreme Court of India — DAV Public School v. Senior Manager, Indian Bank, (2019) 20 SCC 31 (Bank Liability for Unauthorised Net-Banking Fund Transfers & Deficiency in Service)",
     url: "https://main.sci.gov.in/supremecourt/2011/31594/31594_2011_3_1501_19129_Judgement_18-Dec-2019.pdf",
   },

@@ -454,9 +454,7 @@ export default function PropertyDisputeMoneyStuckClient() {
                 {/* ── INFOGRAPHIC EMBED ──────────────────────────────────── */}
                 <div className="rounded-2xl overflow-hidden border border-slate-200 shadow-md">
                   {/* eslint-disable-next-line @next/next/no-img-element */}
-                  <img
-                    src="/images/og/property-dispute-money-stuck.jpg"
-                    alt="Legal Notice for Property Dispute Money Stuck Recovery Flowchart in India"
+                  <img src="/images/og/property-dispute-money-stuck.jpg" alt="Legal Notice for Property Dispute Money Stuck Recovery Flowchart in India" width={850} height={474}
                     className="w-full h-auto object-cover"
                   />
                   <div className="bg-slate-900 text-slate-300 text-xs px-4 py-2.5 flex justify-between items-center">
@@ -1094,7 +1092,7 @@ export default function PropertyDisputeMoneyStuckClient() {
                 <section className="bg-slate-50 rounded-2xl p-6 md:p-8 border border-slate-100">
                   <div className="flex items-center gap-3 mb-4">
                     {/* eslint-disable-next-line @next/next/no-img-element */}
-                    <img src="/lrlogo.svg" alt="Legal Recovery Logo" className="h-8 w-auto" />
+                    <img src="/lrlogo.svg" alt="Legal Recovery Logo" width={3236} height={601} className="h-8 w-auto" />
                     <div>
                       <h3 className="font-black text-slate-900 text-base">Legal Recovery</h3>
                       <p className="text-xs text-slate-500">India&apos;s Trusted Recovery Platform</p>

@@ -650,9 +650,7 @@ export default function BulkRecoveryNoticeSendThroughEmailWhatsappSpeedpostSolut
                   
                   {/* Infographic Image */}
                   <div className="my-8 rounded-2xl overflow-hidden shadow-sm border border-slate-200">
-                    <img
-                      src="/images/og/bulk-recovery-notice-send-through-email-whatsapp-speedpost-solution.jpg"
-                      alt="Bulk Recovery Notice Solution: Email, WhatsApp and Speed Post Infographic"
+                    <img src="/images/og/bulk-recovery-notice-send-through-email-whatsapp-speedpost-solution.jpg" alt="Bulk Recovery Notice Solution: Email, WhatsApp and Speed Post Infographic" width={850} height={474}
                       className="w-full h-auto object-cover"
                     />
                   </div>
@@ -741,22 +739,22 @@ export default function BulkRecoveryNoticeSendThroughEmailWhatsappSpeedpostSolut
                   <h3 className="text-xs font-bold text-slate-700 uppercase tracking-wider mb-3">Statutory &amp; Regulatory Authorities:</h3>
                   <div className="text-xs text-slate-500 space-y-1.5 leading-relaxed">
                     <p>
-                      [1] <a href="https://www.indiacode.nic.in/handle/1684/1429" target="_blank" rel="noopener noreferrer" className="text-purple-600 hover:text-purple-800 hover:underline font-semibold">The Code of Civil Procedure, 1908 (Order V Rule 9 &amp; Order 37) - India Code</a>
+                      [1] <span className="font-semibold text-slate-700">The Code of Civil Procedure, 1908 (Order V Rule 9 &amp; Order 37) - India Code</span>
                     </p>
                     <p>
                       [2] <a href="https://msme.gov.in/sites/default/files/MSMED_Act_2006.pdf" target="_blank" rel="noopener noreferrer" className="text-purple-600 hover:text-purple-800 hover:underline font-semibold">The Micro, Small and Medium Enterprises Development Act, 2006 (Sections 15-18) - Ministry of MSME</a>
                     </p>
                     <p>
-                      [3] <a href="https://www.indiacode.nic.in/handle/1684/1881" target="_blank" rel="noopener noreferrer" className="text-purple-600 hover:text-purple-800 hover:underline font-semibold">The Negotiable Instruments Act, 1881 (Section 138 &amp; Section 141) - India Code</a>
+                      [3] <span className="font-semibold text-slate-700">The Negotiable Instruments Act, 1881 (Section 138 &amp; Section 141) - India Code</span>
                     </p>
                     <p>
                       [4] <a href="https://ibbi.gov.in/legal-framework/act" target="_blank" rel="noopener noreferrer" className="text-purple-600 hover:text-purple-800 hover:underline font-semibold">Insolvency and Bankruptcy Code, 2016 (Sections 8 &amp; 9) - IBBI</a>
                     </p>
                     <p>
-                      [5] <a href="https://www.indiacode.nic.in/handle/1684/1672" target="_blank" rel="noopener noreferrer" className="text-purple-600 hover:text-purple-800 hover:underline font-semibold">The Limitation Act, 1963 (Articles 14, 15, and Section 18) - India Code</a>
+                      [5] <span className="font-semibold text-slate-700">The Limitation Act, 1963 (Articles 14, 15, and Section 18) - India Code</span>
                     </p>
                     <p>
-                      [6] <a href="https://main.sci.gov.in/supremecourt/2020/10901/10901_2020_31_1_22914_Order_10-Jul-2020.pdf" target="_blank" rel="noopener noreferrer" className="text-purple-600 hover:text-purple-800 hover:underline font-semibold">Supreme Court of India: In Re: Cognizance for Extension of Limitation (Service through WhatsApp &amp; Email)</a>
+                      [6] <span className="font-semibold text-slate-700">Supreme Court of India: In Re: Cognizance for Extension of Limitation (Service through WhatsApp &amp; Email)</span>
                     </p>
                     <p>
                       [7] <a href="https://www.egazette.gov.in/" target="_blank" rel="noopener noreferrer" className="text-purple-600 hover:text-purple-800 hover:underline font-semibold">The Bharatiya Sakshya Adhiniyam, 2023 (Section 63 Digital Evidence) - Gazette of India</a>
@@ -844,7 +842,7 @@ export default function BulkRecoveryNoticeSendThroughEmailWhatsappSpeedpostSolut
           <div className="mt-16 max-w-5xl mx-auto mb-10">
             <div className="bg-white border-2 border-slate-100 rounded-[2rem] p-8 md:p-12 shadow-sm">
               <div className="mb-8">
-                <img src="/lrlogo.svg" alt="Legal Recovery" className="h-8 sm:h-10 w-auto object-contain" />
+                <img src="/lrlogo.svg" alt="Legal Recovery" width={3236} height={601} className="h-8 sm:h-10 w-auto object-contain" />
               </div>
               <p className="text-sm md:text-base text-slate-600 leading-relaxed mb-10 max-w-3xl font-medium">
                 Legal Recovery is India&apos;s trusted legal-tech platform for commercial debt recovery, consumer dispute resolution, and statutory legal notices. Founded in 2022 and headquartered in New Delhi, Legal Recovery has counselled over 15,000+ businesses and individuals, recovering more than ₹100 Crores in delinquent dues. We combine automated legal workflows with vetted high-court panel advocates to resolve commercial disputes swiftly without expensive, drawn-out litigation.

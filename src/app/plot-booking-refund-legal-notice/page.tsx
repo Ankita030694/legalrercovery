@@ -1381,7 +1381,7 @@ export default function PlotBookingRefundLegalNoticePage() {
                 We believe in complete transparency before you spend{" "}
                 <strong>₹{basePrice.toLocaleString("en-IN")}</strong> on a{" "}
                 <Link
-                  href="/send-legal-notice"
+                  href="/online-legal-notice"
                   className="text-amber-700 hover:text-amber-800 font-semibold underline underline-offset-2"
                 >
                   formal advocate legal notice

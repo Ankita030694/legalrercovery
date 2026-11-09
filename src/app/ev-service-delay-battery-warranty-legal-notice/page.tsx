@@ -34,16 +34,8 @@ export const metadata: Metadata = {
 
 const PRIMARY_SOURCES = [
   {
-    title: "Consumer Protection Act, 2019 (Act No. 35 of 2019) — Section 2(10) Defect, Section 2(11) Deficiency in Service & Chapter VI (Product Liability, Sections 82–87)",
-    url: "https://www.indiacode.nic.in/handle/123456789/15256",
-  },
-  {
     title: "Automotive Industry Standard AIS-156 (Amendment III) — Specific Requirements for L Category Electric Power Train Vehicles Regarding Traction Battery Safety",
     url: "https://morth.nic.in/",
-  },
-  {
-    title: "Central Consumer Protection Authority (CCPA) — Regulatory Directives on Vehicle Repair Delays, Spare Parts Availability & Unfair Warranty Clauses",
-    url: "https://consumeraffairs.nic.in/",
   },
   {
     title: "Bureau of Indian Standards (BIS) IS 17855:2022 — Electrically Propelled Road Vehicles: Test Procedures for Lithium-Ion Traction Battery Packs",

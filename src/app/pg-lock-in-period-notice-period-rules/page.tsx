@@ -37,10 +37,6 @@ const PRIMARY_SOURCES = [
     url: "https://www.indiacode.nic.in/handle/123456789/2187",
   },
   {
-    title: "Consumer Protection Act, 2019 (Act No. 35 of 2019) — Section 2(11) Deficiency in Service, Section 2(46) Unfair Contract & Section 2(47) Unfair Trade Practice",
-    url: "https://www.indiacode.nic.in/handle/123456789/15256",
-  },
-  {
     title: "Indian Easements Act, 1882 — Section 52 (Leave and Licence Defined) & Section 62 (Revocation and Surrender of Licence)",
     url: "https://www.indiacode.nic.in/handle/123456789/2285",
   },

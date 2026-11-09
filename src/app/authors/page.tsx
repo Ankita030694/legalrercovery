@@ -72,7 +72,7 @@ export default function AuthorsIndexPage() {
           <div className="bg-white rounded-3xl shadow-sm border border-slate-100 overflow-hidden flex flex-col hover:border-slate-300 transition-colors">
             <div className="p-8 pb-0">
               <div className="w-24 h-24 bg-slate-800 rounded-full flex items-center justify-center mb-6 border-4 border-slate-100 shadow-md overflow-hidden">
-                <img src="/anujbhiya.png" alt="Anuj Anand Malik" className="w-full h-full object-cover" />
+                <img src="/anujbhiya.png" alt="Anuj Anand Malik" width={800} height={800} className="w-full h-full object-cover" />
               </div>
               <h2 className="text-2xl font-black text-slate-900 mb-1">Anuj Anand Malik</h2>
               <p className="text-[#DC2626] font-bold text-xs tracking-widest uppercase mb-4">Founder, AMA Legal Solutions</p>

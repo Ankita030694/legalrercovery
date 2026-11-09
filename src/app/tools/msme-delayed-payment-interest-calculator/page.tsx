@@ -1116,14 +1116,9 @@ export default function MsmeDelayedPaymentInterestCalculatorPage() {
                   </a>
                 </li>
                 <li>
-                  <a
-                    href="https://main.sci.gov.in/"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="text-[#DC2626] hover:underline font-medium"
-                  >
+                  <span className="text-[#DC2626] font-medium">
                     Supreme Court of India — Gujarat State Civil Supplies Corp. Ltd. v. Mahakali Foods Pvt. Ltd. (2023) 6 SCC 401 &amp; M/s Silpi Industries v. KSRTC (2021) 18 SCC 790
-                  </a>
+                  </span>
                 </li>
               </ol>
             </section>

@@ -45,10 +45,6 @@ const PRIMARY_SOURCES = [
     url: "https://www.ugc.gov.in/pdfnews/3929487_Public-Notice-Non-Retention-Original-Certificates.pdf",
   },
   {
-    title: "Consumer Protection Act, 2019 (Act No. 35 of 2019) — Section 2(11) Deficiency in Service & Section 2(47) Unfair Trade Practice",
-    url: "https://www.indiacode.nic.in/handle/123456789/15256",
-  },
-  {
     title: "Supreme Court of India: Buddhist Mission Dental College & Hospital v. Bhupesh Khurana & Ors. (2009) 4 SCC 473",
     url: "https://main.sci.gov.in/judgment/judis/33718.pdf",
   },

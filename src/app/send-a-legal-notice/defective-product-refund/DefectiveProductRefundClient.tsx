@@ -380,9 +380,7 @@ export default function DefectiveProductRefundClient() {
                     </h3>
                     
                     <div className="rounded-xl overflow-hidden shadow-lg border border-slate-200 bg-white">
-                      <img 
-                        src="/images/og/defective-product-refund.jpg" 
-                        alt="Infographic showing the essential elements of a legal notice for a defective product refund, including statutory citations and demand structure." 
+                      <img src="/images/og/defective-product-refund.jpg" alt="Infographic: Essential Elements of Legal Notice for Defective Product Refund" width={640} height={640} 
                         className="w-full h-auto object-cover hover:scale-[1.01] transition-transform duration-500" 
                       />
                     </div>
@@ -533,7 +531,7 @@ export default function DefectiveProductRefundClient() {
 
                 <div className="pt-8 border-t border-slate-100">
                   <p className="text-xs text-slate-400">
-                    References: [1] <a href="https://ncdrc.nic.in" target="_blank" rel="noopener noreferrer" className="font-semibold text-purple-600 hover:text-purple-800 hover:underline">National Consumer Disputes Redressal Commission (NCDRC)</a>. [2] <a href="https://consumeraffairs.nic.in" target="_blank" rel="noopener noreferrer" className="font-semibold text-purple-600 hover:text-purple-800 hover:underline">Department of Consumer Affairs, Government of India</a>. [3] <a href="https://edaakhil.nic.in/" target="_blank" rel="noopener noreferrer" className="font-semibold text-purple-600 hover:text-purple-800 hover:underline">E-Daakhil Portal</a>.
+                    References: [1] <a href="https://ncdrc.nic.in" target="_blank" rel="noopener noreferrer" className="font-semibold text-purple-600 hover:text-purple-800 hover:underline">National Consumer Disputes Redressal Commission (NCDRC)</a>. [2] <span className="font-semibold text-slate-700">Department of Consumer Affairs, Government of India</span>. [3] <span className="font-semibold text-slate-700">E-Daakhil Portal</span>.
                   </p>
                 </div>
               </div>
@@ -606,7 +604,7 @@ export default function DefectiveProductRefundClient() {
           <div className="mt-16 max-w-5xl mx-auto mb-10">
             <div className="bg-white border-2 border-slate-100 rounded-[2rem] p-8 md:p-12 shadow-sm">
               <div className="mb-8">
-                <img src="/lrlogo.svg" alt="LegalRecovery" className="h-8 sm:h-10 w-auto object-contain" />
+                <img src="/lrlogo.svg" alt="LegalRecovery" width={3236} height={601} className="h-8 sm:h-10 w-auto object-contain" />
               </div>
               <p className="text-sm md:text-base text-slate-600 leading-relaxed mb-10 max-w-3xl font-medium">
                 Legal Recovery is India&apos;s trusted consumer protection and legal tech platform. Founded in 2022 and headquartered in New Delhi, Legal Recovery has counselled 15,000+ people on consumer disputes, defective products, and e-commerce frauds. Legal Recovery focuses on fast out-of-court settlements and connects you with top panel advocates.

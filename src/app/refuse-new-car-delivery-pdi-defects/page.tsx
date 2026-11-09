@@ -38,14 +38,6 @@ const PRIMARY_SOURCES = [
     url: "https://www.indiacode.nic.in/handle/123456789/2390",
   },
   {
-    title: "Consumer Protection Act, 2019 (Act No. 35 of 2019) — Section 2(10) Defect, Section 2(11) Deficiency in Service & Section 2(47) Unfair Trade Practice",
-    url: "https://www.indiacode.nic.in/handle/123456789/15256",
-  },
-  {
-    title: "Consumer Protection Act, 2019 — Chapter VI (Sections 82–87: Product Liability Action Against Manufacturer & Product Seller)",
-    url: "https://www.indiacode.nic.in/handle/123456789/15256",
-  },
-  {
     title: "Motor Vehicles Act, 1988 — Section 110A (Mandatory Recall of Defective Motor Vehicles)",
     url: "https://www.indiacode.nic.in/handle/123456789/1798",
   },

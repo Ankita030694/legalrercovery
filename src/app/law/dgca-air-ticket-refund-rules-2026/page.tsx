@@ -1133,7 +1133,7 @@ export default function DgcaAirTicketRefundRules2026Page() {
                 <strong>3. Supreme Court of India:</strong> <em>Pravasi Legal Cell &amp; Ors. v. Union of India &amp; Ors.</em> (Writ Petition (Civil) No. 12586 of 2020, Decided on 1 October 2020). AIR 2020 SC 4785. Judgments Information System (SC-Judgments).
               </p>
               <p>
-                <strong>4. Consumer Protection Act, 2019 (Act 35 of 2019):</strong> Section 2(11) (Deficiency in service), Section 2(47) (Unfair trade practice), and Section 34 / 35 (Jurisdiction of District Consumer Commission). India Code: <a href="https://www.indiacode.nic.in/handle/123456789/15256" target="_blank" rel="noopener noreferrer" className="text-sky-700 underline font-medium">Act No. 35 of 2019</a>.
+                <strong>4. Consumer Protection Act, 2019 (Act 35 of 2019):</strong> Section 2(11) (Deficiency in service), Section 2(47) (Unfair trade practice), and Section 34 / 35 (Jurisdiction of District Consumer Commission). India Code: <span className="text-sky-700 font-medium">Act No. 35 of 2019</span>.
               </p>
               <p>
                 <strong>5. Ministry of Civil Aviation AirSewa Portal:</strong> Consumer grievance redressal rail established under national civil aviation policy. Portal: <a href="https://airsewa.gov.in" target="_blank" rel="noopener noreferrer" className="text-sky-700 underline font-medium">airsewa.gov.in</a>.

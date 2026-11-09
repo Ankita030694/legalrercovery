@@ -45,20 +45,12 @@ const PRIMARY_SOURCES = [
     url: "https://nhb.org.in/",
   },
   {
-    title: "Himanshu Singh & Ors. v. Union of India & Ors., SLP (C) No. 7649/2023 (Supreme Court Orders 2024–2025) — Restraint on Coercive Bank Recovery, CIBIL Protection & CBI Probe Into Builder-Bank Subvention Nexus",
-    url: "https://main.sci.gov.in/",
-  },
-  {
     title: "Bikram Chatterji & Ors. v. Union of India & Ors., (2019) 19 SCC 161 (Supreme Court Amrapali Judgment) — Bank Liability for Upfront Disbursal Violating RBI Guidelines",
     url: "https://indiankanoon.org/doc/127517806/",
   },
   {
     title: "Newtech Promoters and Developers Pvt. Ltd. v. State of UP & Ors., (2021) 18 SCC 1 (Supreme Court 3-Judge Bench) — Unconditional Statutory Right of Allottee to Refund With Interest Under Section 18 RERA",
     url: "https://main.sci.gov.in/supremecourt/2021/16957/16957_2021_4_1501_31312_Judgement_11-Nov-2021.pdf",
-  },
-  {
-    title: "Consumer Protection Act, 2019 (Act No. 35 of 2019) — Section 2(11) (Deficiency in Service by Builder & Bank) & Section 2(46) (Unfair Contracts)",
-    url: "https://www.indiacode.nic.in/handle/123456789/15256",
   },
   {
     title: "Bharatiya Sakshya Adhiniyam, 2023 (BSA Section 63 — Electronic Admissibility of Tripartite Emails, NACH Logs, CIBIL Reports & RERA Portal Records)",

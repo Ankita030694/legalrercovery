@@ -2,7 +2,7 @@ import { Metadata } from 'next';
 import CoFounderStartupUnpaidDuesEquityClient from './CoFounderStartupUnpaidDuesEquityClient';
 
 const slug = 'send-a-legal-notice/co-founder-startup-unpaid-dues-equity';
-const title = 'Legal Notice to Co-Founder for Unpaid Dues & Equity';
+const title = 'Legal Notice to Co-Founder for Unpaid Startup Dues & Equity';
 const description =
   'Co-founder dispute over unpaid salary or equity shares? Send an advocate-drafted legal notice under the Companies Act to recover dues.';
 const url = `https://www.legalrecovery.in/${slug}`;

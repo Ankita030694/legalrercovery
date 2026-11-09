@@ -421,7 +421,7 @@ export default function SecurityDepositNotRefundedLandlordClient() {
                           <li><strong>Fixed Deposit Caps:</strong> Typically capped at 2 to 3 months of rent in modern metropolitan leases under Model Tenancy guidelines (though Bengaluru/Mumbai historically demanded 6-10 months).</li>
                           <li><strong>Informal Move-out Protocols:</strong> Handover often conducted verbally without joint inspection reports, leaving tenants vulnerable to unproven post-vacation claims.</li>
                           <li><strong>Routine Repainting Deductions:</strong> Landlords routinely attempt automatic 1-month rent deductions for painting and deep cleaning despite zero tenant negligence.</li>
-                          <li><strong>Consumer Protection Access:</strong> Residential tenants qualify as consumers under the <a href="https://consumeraffairs.nic.in/" target="_blank" rel="noopener noreferrer" className="text-purple-600 hover:text-purple-800 hover:underline">Consumer Protection Act, 2019</a> for deficiency in service, whereas commercial enterprises must pursue civil/commercial court remedies.</li>
+                          <li><strong>Consumer Protection Access:</strong> Residential tenants qualify as consumers under the <span className="font-semibold text-slate-800">Consumer Protection Act, 2019</span> for deficiency in service, whereas commercial enterprises must pursue civil/commercial court remedies.</li>
                         </ul>
                       </div>
                     </div>
@@ -443,7 +443,7 @@ export default function SecurityDepositNotRefundedLandlordClient() {
                         <div>
                           <h4 className="font-extrabold text-slate-900 text-sm">Lock-in Period Forfeiture vs. Actual Loss Proof</h4>
                           <p className="text-xs sm:text-sm text-slate-650 leading-relaxed mt-1">
-                            In landmark judgments including <em>Kailash Nath Associates v. Delhi Development Authority (2015) 4 SCC 136</em> and <em>Maula Bux v. Union of India (1969) 2 SCC 554</em>, the <a href="https://main.sci.gov.in/" target="_blank" rel="noopener noreferrer" className="text-purple-600 hover:text-purple-800 hover:underline">Supreme Court of India</a> held that under Section 74 of the Indian Contract Act, damages can only be awarded when actual loss is proved. A landlord cannot automatically forfeit the entire deposit for early exit if the premises were promptly re-let or if the landlord suffered no real financial loss.
+                            In landmark judgments including <em>Kailash Nath Associates v. Delhi Development Authority (2015) 4 SCC 136</em> and <em>Maula Bux v. Union of India (1969) 2 SCC 554</em>, the <span className="font-semibold text-slate-800">Supreme Court of India</span> held that under Section 74 of the Indian Contract Act, damages can only be awarded when actual loss is proved. A landlord cannot automatically forfeit the entire deposit for early exit if the premises were promptly re-let or if the landlord suffered no real financial loss.
                           </p>
                         </div>
                       </div>
@@ -616,7 +616,7 @@ export default function SecurityDepositNotRefundedLandlordClient() {
                   
                   {/* Infographic Image */}
                   <div className="my-8 rounded-2xl overflow-hidden shadow-sm border border-slate-200">
-                    <img src="/images/og/security-deposit-not-refunded-landlord.jpg" alt="Legal Notice to Landlord for Security Deposit Recovery Process Infographic" className="w-full h-auto object-cover" />
+                    <img src="/images/og/security-deposit-not-refunded-landlord.jpg" alt="Legal Notice to Landlord for Security Deposit Recovery Process Infographic" width={850} height={474} className="w-full h-auto object-cover" />
                   </div>
 
                   <div className="prose prose-base max-w-none text-slate-650 space-y-6">
@@ -801,7 +801,7 @@ export default function SecurityDepositNotRefundedLandlordClient() {
           <div className="mt-16 max-w-5xl mx-auto mb-10">
             <div className="bg-white border-2 border-slate-100 rounded-[2rem] p-8 md:p-12 shadow-sm border-[#DC2626]">
               <div className="mb-8">
-                <img src="/lrlogo.svg" alt="LegalRecovery" className="h-8 sm:h-10 w-auto object-contain" />
+                <img src="/lrlogo.svg" alt="LegalRecovery" width={3236} height={601} className="h-8 sm:h-10 w-auto object-contain" />
               </div>
               <p className="text-sm md:text-base text-slate-600 leading-relaxed mb-10 max-w-3xl font-medium">
                 Legal Recovery is India&apos;s trusted consumer protection and commercial debt resolution platform. Founded in 2022 and headquartered in New Delhi, Legal Recovery has counselled 15,000+ businesses, financial institutions, and consumers on debt recovery, commercial contract breaches, and loan defaults. Legal Recovery accelerates out-of-court settlements and connects you with top verified panel advocates.

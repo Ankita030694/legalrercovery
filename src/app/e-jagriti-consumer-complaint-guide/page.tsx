@@ -33,10 +33,6 @@ export const metadata: Metadata = {
 
 const PRIMARY_SOURCES = [
   {
-    title: "Consumer Protection Act, 2019 (Act No. 35 of 2019) — Sections 2(7), 2(11), 34, 35, 38, 47, 58, 71 & 72",
-    url: "https://www.indiacode.nic.in/handle/123456789/15256",
-  },
-  {
     title: "Consumer Protection (Jurisdiction of the District Commission, State Commission and National Commission) Rules, 2021 — Notification G.S.R. 898(E)",
     url: "https://consumeraffairs.nic.in/sites/default/files/Pecuniary_Jurisdiction_Rules_2021.pdf",
   },

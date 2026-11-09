@@ -37,10 +37,6 @@ const PRIMARY_SOURCES = [
     url: "https://www.education.gov.in/sites/upload_files/mhrd/files/Guidlines_Coaching_Centres_en.pdf",
   },
   {
-    title: "Consumer Protection Act, 2019 (Act No. 35 of 2019) — Section 2(47) Unfair Trade Practice & Section 2(46) Unfair Contract",
-    url: "https://www.indiacode.nic.in/handle/123456789/15256",
-  },
-  {
     title: "Central Consumer Protection Authority (CCPA) Guidelines for Prevention of Misleading Advertisements and Endorsements for Misleading Services, 2022",
     url: "https://consumeraffairs.nic.in/sites/default/files/CCPA_Notification.pdf",
   },

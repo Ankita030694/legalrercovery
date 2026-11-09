@@ -37,10 +37,6 @@ const PRIMARY_SOURCES = [
     url: "https://fiuindia.gov.in/files/AML_CFT_Legislations/PMLA_Notification_VDA_07032023.pdf",
   },
   {
-    title: "Consumer Protection Act, 2019 — Section 2(11) (Deficiency in Service), Section 2(47) (Unfair Trade Practice) & Section 100 (Act Not in Derogation of Any Other Law)",
-    url: "https://www.indiacode.nic.in/handle/123456789/15256",
-  },
-  {
     title: "Bharatiya Nagarik Suraksha Sanhita, 2023 (BNSS) — Section 106 (Police Power to Seize Property) & Section 107 (Attachment of Property Derived from Crime)",
     url: "https://www.indiacode.nic.in/handle/123456789/21733",
   },

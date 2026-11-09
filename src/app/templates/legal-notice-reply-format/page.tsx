@@ -45,10 +45,6 @@ const PRIMARY_SOURCES = [
     url: "https://www.indiacode.nic.in/handle/123456789/21735",
   },
   {
-    title: "Consumer Protection Act, 2019 (Act No. 35 of 2019) — Section 35 & Section 38(2) (Procedure on Receipt of Complaint)",
-    url: "https://www.indiacode.nic.in/handle/123456789/15256",
-  },
-  {
     title: "General Clauses Act, 1897 — Section 27 (Meaning of Service by Post & Statutory Presumption of Delivery)",
     url: "https://www.indiacode.nic.in/handle/123456789/2202",
   },

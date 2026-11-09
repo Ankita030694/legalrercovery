@@ -55,8 +55,6 @@ const articleJsonLd = {
   },
   "citation": [
     "https://consumeraffairs.nic.in/sites/default/files/Dark_Patterns_Guidelines_2023.pdf",
-    "https://consumeraffairs.nic.in/sites/default/files/E-commerce_Rules.pdf",
-    "https://www.indiacode.nic.in/handle/123456789/15256",
     "https://consumerhelpline.gov.in/",
     "https://e-jagriti.gov.in/",
     "https://www.livelaw.in/consumer-cases/government-amends-e-commerce-rules-to-strengthen-consumer-protection-550184",
@@ -1290,25 +1288,11 @@ export default function DarkPatternsLawPage() {
                 — Gazette of India, F. No. CCPA-1/1/2023-CCPA, notified 30 November 2023.
               </li>
               <li>
-                <a
-                  href="https://www.indiacode.nic.in/handle/123456789/15256"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="text-red-600 hover:underline font-medium"
-                >
-                  Consumer Protection Act, 2019 (Act No. 35 of 2019)
-                </a>{" "}
+                <span className="text-[#DC2626] font-medium">India Code Legislative Database</span>{" "}
                 — Sections 2(47) (Unfair Trade Practice), 18 (Powers of CCPA), 20 (Directives), 21 (Penalties), 35 (Complaints), and 69 (Limitation).
               </li>
               <li>
-                <a
-                  href="https://consumeraffairs.nic.in/sites/default/files/E-commerce_Rules.pdf"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="text-red-600 hover:underline font-medium"
-                >
-                  Consumer Protection (E-Commerce) Rules, 2020
-                </a>{" "}
+                <span className="text-[#DC2626] font-medium">Official Gazette Notification</span>{" "}
                 — Gazette Notification G.S.R. 462(E), Rule 4(4) (Grievance Officer details) and Rule 4(5) (48-hour acknowledgment, 30-day resolution).
               </li>
               <li>

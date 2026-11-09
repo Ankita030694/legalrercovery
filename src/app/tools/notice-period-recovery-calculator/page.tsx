@@ -37,10 +37,6 @@ const PRIMARY_SOURCES = [
     url: "https://www.indiacode.nic.in/handle/123456789/2187",
   },
   {
-    title: "Code on Wages, 2019 (Act No. 29 of 2019) — Section 17(2) Settlement of Dues on Resignation & Section 18 Deductions",
-    url: "https://www.indiacode.nic.in/handle/123456789/15256",
-  },
-  {
     title: "Payment of Gratuity Act, 1972 — Section 4(6) Protection of Gratuity from Contractual Forfeiture",
     url: "https://www.indiacode.nic.in/handle/123456789/1498",
   },

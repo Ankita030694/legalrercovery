@@ -33,14 +33,6 @@ export const metadata: Metadata = {
 
 const PRIMARY_SOURCES = [
   {
-    title: "Consumer Protection Act, 2019 (Act No. 35 of 2019) — Section 34, Section 47, Section 58 & Section 69",
-    url: "https://www.indiacode.nic.in/handle/123456789/15256",
-  },
-  {
-    title: "Ministry of Consumer Affairs Notification S.O. 5444(E) dated 30 December 2021 — Revision of Pecuniary Jurisdiction",
-    url: "https://consumeraffairs.nic.in/acts-and-rules/consumer-protection",
-  },
-  {
     title: "Consumer Protection (Consumer Commission Procedure) Regulations, 2020 — Schedule of Fees (Regulation 7)",
     url: "http://ncdrc.nic.in/regulations.html",
   },

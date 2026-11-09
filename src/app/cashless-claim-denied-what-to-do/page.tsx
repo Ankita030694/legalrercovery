@@ -49,10 +49,6 @@ const PRIMARY_SOURCES = [
     url: "https://financialservices.gov.in/sites/default/files/Insurance_Ombudsman_Rules_2017.pdf",
   },
   {
-    title: "Consumer Protection Act, 2019 (Act No. 35 of 2019) — Section 2(11) Deficiency in Service & Section 2(47) Unfair Trade Practice",
-    url: "https://www.indiacode.nic.in/handle/123456789/15256",
-  },
-  {
     title: "Bima Bharosa Portal — Integrated Grievance Redressal System of IRDAI",
     url: "https://bimabharosa.irdai.gov.in/",
   },

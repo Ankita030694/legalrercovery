@@ -54,8 +54,6 @@ const articleJsonLd = {
     "sameAs": "https://en.wikipedia.org/wiki/Nykaa",
   },
   "citation": [
-    "https://consumeraffairs.nic.in/sites/default/files/E-commerce_Rules.pdf",
-    "https://www.indiacode.nic.in/handle/123456789/15256",
     "https://cdsco.gov.in/opencms/opencms/en/Drugs/Cosmetics/",
     "https://consumerhelpline.gov.in/",
     "https://e-jagriti.gov.in/",
@@ -574,7 +572,6 @@ export default function NykaaDisputePage() {
             </p>
 
             <blockquote
-              cite="https://consumeraffairs.nic.in/sites/default/files/E-commerce_Rules.pdf"
               className="border-l-4 border-red-600 pl-4 py-2 my-4 bg-red-50/60 rounded-r-lg text-slate-800 italic"
             >
               “No marketplace e-commerce entity shall adopt any unfair trade practice, whether in the course of business on its platform or otherwise... Every marketplace e-commerce entity shall effect all refunds within a reasonable period, or as prescribed under applicable laws, and shall not refuse to take back goods, or discontinue the provision of services, if such goods and services are defective, deficient or spurious, or if the goods or services are not of the characteristics or features as agreed or if such goods or services are delivered late from the stated delivery schedule.”
@@ -976,28 +973,14 @@ export default function NykaaDisputePage() {
                 <span className="text-slate-400">•</span>
                 <span>
                   <strong>Consumer Protection (E-Commerce) Rules, 2020:</strong> Prescribing the 48-hour grievance acknowledgment and 30-day resolution deadline. Official text:{" "}
-                  <Link
-                    href="https://consumeraffairs.nic.in/sites/default/files/E-commerce_Rules.pdf"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="text-red-700 hover:underline"
-                  >
-                    consumeraffairs.nic.in
-                  </Link>.
+                  <span className="text-red-700 font-medium">consumeraffairs.nic.in</span>.
                 </span>
               </li>
               <li className="flex items-start gap-2">
                 <span className="text-slate-400">•</span>
                 <span>
                   <strong>Consumer Protection Act, 2019:</strong> Sections 2(47), 35, and 69. Official gazette:{" "}
-                  <Link
-                    href="https://www.indiacode.nic.in/handle/123456789/15256"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="text-red-700 hover:underline"
-                  >
-                    indiacode.nic.in
-                  </Link>.
+                  <span className="text-red-700 font-medium">indiacode.nic.in</span>.
                 </span>
               </li>
               <li className="flex items-start gap-2">

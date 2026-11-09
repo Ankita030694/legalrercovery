@@ -34,14 +34,6 @@ const BASE_PRICE = DEFAULT_FUNNEL_SETTINGS.basePricePerOpposition;
 
 const primarySources = [
   {
-    title: "Consumer Protection Act, 2019 (Act No. 35 of 2019), Sections 2(47), 35 & 69",
-    url: "https://www.indiacode.nic.in/handle/123456789/15256",
-  },
-  {
-    title: "Consumer Protection (E-Commerce) Rules, 2020 — Rule 4(5) Grievance Redressal & Rule 5 Marketplace Obligations",
-    url: "https://consumeraffairs.nic.in/sites/default/files/E-commerce_Rules.pdf",
-  },
-  {
     title: "E-Commerce (Amendment) Rules, 2026 (Notified September 2026; In Force 1 January 2027)",
     url: "https://www.livelaw.in/consumer-cases/government-amends-e-commerce-rules-to-strengthen-consumer-protection-550184",
   },
@@ -555,7 +547,6 @@ export default function ZeptoLegalNoticePage() {
 
               {/* Quoted E-Commerce Rules & CPA clauses in blockquote cite per Archetype B1 */}
               <blockquote
-                cite="https://consumeraffairs.nic.in/sites/default/files/E-commerce_Rules.pdf"
                 className="my-6 border-l-4 border-purple-600 bg-purple-50/60 p-5 sm:p-6 rounded-r-2xl text-slate-800 text-sm sm:text-base italic leading-relaxed"
               >
                 &ldquo;Every e-commerce entity shall be liable to effect a refund to the consumer where such entity fails to deliver the goods or services agreed upon, or where the goods delivered are defective, deficient, or do not conform to the description agreed upon at the time of purchase. No marketplace e-commerce entity shall disclaim liability by pleading intermediary status under Section 79 of the Information Technology Act where it exerts control over pricing, packaging, warehousing, or delivery fulfillment.&rdquo;

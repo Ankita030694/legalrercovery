@@ -59,11 +59,6 @@ const PRIMARY_SOURCES = [
   },
   {
     title:
-      "Consumer Protection Act, 2019 (Act No. 35 of 2019) — Section 2(11) (Deficiency in Banking Service) & Section 35 (District Commission Complaint via e-Jagriti)",
-    url: "https://www.indiacode.nic.in/handle/123456789/15256",
-  },
-  {
-    title:
       "Bharatiya Sakshya Adhiniyam, 2023 (BSA Section 63 — Admissibility of Electronic Bank Statements, UPI RRN Logs, SMS Alerts & ATM CCTV Footage)",
     url: "https://www.indiacode.nic.in/handle/123456789/21735",
   },

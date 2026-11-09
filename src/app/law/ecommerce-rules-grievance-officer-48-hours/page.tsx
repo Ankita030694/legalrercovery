@@ -53,8 +53,6 @@ const articleJsonLd = {
     "legislationPassedBy": "Ministry of Consumer Affairs, Food and Public Distribution",
   },
   "citation": [
-    "https://consumeraffairs.nic.in/sites/default/files/E-commerce_Rules.pdf",
-    "https://www.indiacode.nic.in/handle/123456789/15256",
     "https://consumerhelpline.gov.in/",
     "https://e-jagriti.gov.in/",
     "https://www.livelaw.in/consumer-cases/flipkart-directed-to-refund-compensation-detergent-bars-delivered-instead-of-phone-233481",
@@ -312,7 +310,6 @@ export default function EcommerceRulesPage() {
               </h3>
 
               <blockquote
-                cite="https://consumeraffairs.nic.in/sites/default/files/E-commerce_Rules.pdf"
                 className="border-l-4 border-slate-700 pl-4 py-2 my-3 bg-slate-50 rounded-r-xl italic text-slate-800 text-sm sm:text-base leading-relaxed"
               >
                 "Every e-commerce entity shall establish an adequate grievance redressal mechanism... and appoint a grievance officer for consumer grievance redressal and display prominently on its platform the name, designation and contact details of such officer. The grievance officer shall acknowledge the receipt of any consumer complaint within forty-eight hours and redress the complaint within one month from the date of receipt of the complaint."
@@ -348,7 +345,6 @@ export default function EcommerceRulesPage() {
               </h3>
 
               <blockquote
-                cite="https://consumeraffairs.nic.in/sites/default/files/E-commerce_Rules.pdf"
                 className="border-l-4 border-slate-700 pl-4 py-2 my-3 bg-slate-50 rounded-r-xl italic text-slate-800 text-sm sm:text-base leading-relaxed"
               >
                 "No e-commerce entity shall impose cancellation charges on consumers cancelling after confirming purchase unless similar charges are also borne by the e-commerce entity if they cancel the purchase order unilaterally for any reason."
@@ -384,7 +380,6 @@ export default function EcommerceRulesPage() {
               </h3>
 
               <blockquote
-                cite="https://consumeraffairs.nic.in/sites/default/files/E-commerce_Rules.pdf"
                 className="border-l-4 border-slate-700 pl-4 py-2 my-3 bg-slate-50 rounded-r-xl italic text-slate-800 text-sm sm:text-base leading-relaxed"
               >
                 "Every e-commerce entity shall effect all refunds within a reasonable period of time, or as prescribed by the Reserve Bank of India or any other competent authority under any law for the time being in force, and in accordance with the prescribed guidelines of such authority."
@@ -420,7 +415,6 @@ export default function EcommerceRulesPage() {
               </h3>
 
               <blockquote
-                cite="https://consumeraffairs.nic.in/sites/default/files/E-commerce_Rules.pdf"
                 className="border-l-4 border-slate-700 pl-4 py-2 my-3 bg-slate-50 rounded-r-xl italic text-slate-800 text-sm sm:text-base leading-relaxed"
               >
                 "Every marketplace e-commerce entity shall... require an undertaking from its sellers ensuring that descriptions, images, and other content... are accurate... and provide a ticket number for each complaint lodged through which the consumer may track the status of their complaint."
@@ -456,7 +450,6 @@ export default function EcommerceRulesPage() {
               </h3>
 
               <blockquote
-                cite="https://consumeraffairs.nic.in/sites/default/files/E-commerce_Rules.pdf"
                 className="border-l-4 border-slate-700 pl-4 py-2 my-3 bg-slate-50 rounded-r-xl italic text-slate-800 text-sm sm:text-base leading-relaxed"
               >
                 "No seller on a marketplace e-commerce entity shall refuse to take back goods, or withdraw or discontinue services purchased... if such goods and services are defective, deficient or spurious, or if the characteristics or features... do not match with the representations."
@@ -1118,25 +1111,11 @@ export default function EcommerceRulesPage() {
 
             <ol className="sources space-y-2 text-xs sm:text-sm text-slate-700 list-decimal pl-5">
               <li>
-                <a
-                  href="https://consumeraffairs.nic.in/sites/default/files/E-commerce_Rules.pdf"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="text-red-600 hover:underline font-medium"
-                >
-                  Consumer Protection (E-Commerce) Rules, 2020 (Gazette Notification G.S.R. 462(E))
-                </a>{" "}
+                <span className="text-[#DC2626] font-medium">Official Gazette Notification</span>{" "}
                 — Department of Consumer Affairs, Ministry of Consumer Affairs, Food and Public Distribution, Government of India.
               </li>
               <li>
-                <a
-                  href="https://www.indiacode.nic.in/handle/123456789/15256"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="text-red-600 hover:underline font-medium"
-                >
-                  The Consumer Protection Act, 2019 (Act No. 35 of 2019)
-                </a>{" "}
+                <span className="text-[#DC2626] font-medium">India Code Legislative Database</span>{" "}
                 — Sections 2(16), 2(47), 35, 69, 86, and 101, India Code Legislative Department.
               </li>
               <li>

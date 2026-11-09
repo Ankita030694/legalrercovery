@@ -1084,6 +1084,8 @@ const BlogsDashboard = () => {
                             <img
                               src={blog.image || "/logo_qa.png"}
                               alt={blog.title}
+                              width={64}
+                              height={40}
                               className="w-16 h-10 object-cover rounded-lg bg-slate-100 border border-slate-200/50 shadow-3xs"
                             />
                           </td>
@@ -1432,6 +1434,8 @@ const BlogsDashboard = () => {
                   <img 
                     src={generatedImageUrl} 
                     alt="Generated Preview" 
+                    width={128}
+                    height={80} 
                     className="w-32 h-20 object-cover rounded-lg border border-slate-200"
                   />
                   <div className="flex-1">
@@ -1456,6 +1460,8 @@ const BlogsDashboard = () => {
                 <img
                   src={imagePreview || newBlog.image}
                   alt="cover preview"
+                  width={384}
+                  height={160}
                   className="w-full max-w-sm h-40 object-cover rounded-xl border border-slate-200 shadow-3xs"
                 />
               </div>
@@ -1554,6 +1560,8 @@ const BlogsDashboard = () => {
                   <img 
                     src={generatedInfographicUrl} 
                     alt="Generated Infographic Preview" 
+                    width={144}
+                    height={96} 
                     className="w-36 h-24 object-cover rounded-lg border border-amber-200"
                   />
                   <div className="flex-1">
@@ -1594,6 +1602,8 @@ const BlogsDashboard = () => {
                   <img
                     src={infographicPreview || newBlog.infographicImage}
                     alt="infographic preview"
+                    width={448}
+                    height={224}
                     className="w-full max-w-md max-h-56 object-contain rounded-lg border border-amber-200 bg-slate-900 shadow-2xs"
                   />
                 </div>

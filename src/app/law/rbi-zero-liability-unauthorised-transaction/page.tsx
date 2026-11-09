@@ -63,11 +63,6 @@ const PRIMARY_SOURCES = [
   },
   {
     title:
-      "Supreme Court of India — State Bank of India v. Pallabh Bhowmick & Ors., SLP (Civil) Diary No. 55621/2024 (Order dated 3 January 2025, upholding Gauhati High Court WA 282/2024)",
-    url: "https://main.sci.gov.in/",
-  },
-  {
-    title:
       "Bombay High Court (Division Bench) — Jaiprakash Kulkarni & Anr. v. The Banking Ombudsman & Bank of Baroda, Writ Petition No. 1150 of 2023 (2024 SCC OnLine Bom 1666)",
     url: "https://bombayhighcourt.nic.in/",
   },

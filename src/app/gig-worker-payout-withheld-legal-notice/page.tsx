@@ -53,10 +53,6 @@ const PRIMARY_SOURCES = [
     url: "https://www.indiacode.nic.in/handle/123456789/21735",
   },
   {
-    title: "Consumer Protection Act, 2019 (Act No. 35 of 2019) — Section 2(47) Unfair Trade Practice & Consumer Protection (E-Commerce) Rules, 2020",
-    url: "https://www.indiacode.nic.in/handle/123456789/15256",
-  },
-  {
     title: "Ministry of Labour and Employment, Government of India — e-Shram National Database for Unorganised Workers",
     url: "https://eshram.gov.in/",
   },

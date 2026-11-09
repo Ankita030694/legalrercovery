@@ -452,9 +452,7 @@ export default function GymYogaClubMembershipFeeRefundClient() {
 
                 {/* ── IN-ARTICLE INFOGRAPHIC ────────────────────────────── */}
                 <figure className="my-8 rounded-2xl overflow-hidden border border-slate-200 shadow-sm bg-slate-900">
-                  <img
-                    src="/images/og/gym-yoga-club-membership-fee-refund.jpg"
-                    alt="Infographic: Step-by-Step Legal Process to Recover Gym and Yoga Club Membership Fee Refunds in India"
+                  <img src="/images/og/gym-yoga-club-membership-fee-refund.jpg" alt="Infographic: Legal Process to Recover Gym & Yoga Membership Fee Refund in India" width={850} height={474}
                     className="w-full h-auto object-cover max-h-[500px]"
                     loading="lazy"
                   />
@@ -659,14 +657,7 @@ export default function GymYogaClubMembershipFeeRefundClient() {
                         </div>
                         <p className="text-xs sm:text-sm text-slate-650 leading-relaxed">
                           If the gym fails to refund the amount within 15 days, a formal consumer complaint can be filed under Section 35 of the CPA 2019 before the District Commission via{' '}
-                          <a
-                            href="https://edaakhil.nic.in"
-                            target="_blank"
-                            rel="nofollow noopener noreferrer"
-                            className="text-purple-600 hover:text-purple-800 hover:underline font-semibold"
-                          >
-                            e-Daakhil Online Filing Portal (edaakhil.nic.in)
-                          </a>
+                          <span className="font-semibold text-slate-800">e-Daakhil Online Filing Portal</span>
                           . The consumer can claim full refund, interest, compensation for mental harassment (ranging from ₹25,000 to ₹1,00,000), and litigation costs.
                         </p>
                       </div>
@@ -868,14 +859,7 @@ export default function GymYogaClubMembershipFeeRefundClient() {
                   </h3>
                   <ol className="list-decimal list-inside space-y-2 text-xs text-slate-600">
                     <li>
-                      <a
-                        href="https://www.indiacode.nic.in/handle/123456789/15256"
-                        target="_blank"
-                        rel="nofollow noopener noreferrer"
-                        className="text-purple-600 hover:text-purple-800 hover:underline"
-                      >
-                        Consumer Protection Act, 2019 — Section 2(11) (Deficiency), Section 2(46) (Unfair Contract) &amp; Section 2(47) (Unfair Trade Practice), indiacode.nic.in
-                      </a>
+                      <span className="text-slate-600">Consumer Protection Act, 2019 — Section 2(11) (Deficiency), Section 2(46) (Unfair Contract) &amp; Section 2(47) (Unfair Trade Practice)</span>
                     </li>
                     <li>
                       Central Consumer Protection Authority (CCPA) — Guidelines on Prevention of Misleading Advertisements &amp; Unfair Contract Terms
@@ -957,7 +941,7 @@ export default function GymYogaClubMembershipFeeRefundClient() {
                 {/* ── COMPANY SECTION ──────────────────────────────────── */}
                 <section className="border border-slate-100 rounded-2xl p-6 md:p-8">
                   <div className="flex items-center gap-4 mb-4">
-                    <img src="/lrlogo.svg" alt="Legal Recovery Logo" className="h-10 w-auto" />
+                    <img src="/lrlogo.svg" alt="Legal Recovery Logo" width={3236} height={601} className="h-10 w-auto" />
                     <div>
                       <h3 className="font-black text-slate-900 text-base">Legal Recovery</h3>
                       <p className="text-xs text-slate-500">India&apos;s Trusted Recovery Platform</p>

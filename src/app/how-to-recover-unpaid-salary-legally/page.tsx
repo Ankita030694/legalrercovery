@@ -2,7 +2,7 @@ import { Metadata } from "next";
 import SalaryRecoveryGuideClient from "./SalaryRecoveryGuideClient";
 
 export const metadata: Metadata = {
-  title: "How to Recover Unpaid Salary Legally in India",
+  title: "How to Recover Unpaid Salary from Employer Legally",
   description: "Employer not paying salary after resignation or during employment? Step-by-step guide to serving an Advocate Legal Notice, filing on the Samadhan Portal, and Order 37 Summary Suits.",
   keywords: [
     "how to recover unpaid salary legally India",
@@ -20,7 +20,7 @@ export const metadata: Metadata = {
     canonical: 'https://www.legalrecovery.in/how-to-recover-unpaid-salary-legally',
   },
   openGraph: {
-    title: "How to Recover Unpaid Salary Legally in India",
+    title: "How to Recover Unpaid Salary from Employer Legally",
     description: "Recover unpaid salary, incentives, and F&F settlement via Advocate Legal Notice, Samadhan Portal, and Labour Court.",
     url: "https://www.legalrecovery.in/how-to-recover-unpaid-salary-legally",
     type: "article",

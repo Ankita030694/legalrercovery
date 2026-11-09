@@ -44,10 +44,6 @@ const PRIMARY_SOURCES = [
     url: "https://cms.nic.in/ncdrcnew/judgments.html",
   },
   {
-    title: "Consumer Protection Act, 2019 (Act No. 35 of 2019) — Sections 2(11) Deficiency in Service & 2(47) Unfair Trade Practice",
-    url: "https://www.indiacode.nic.in/handle/123456789/15256",
-  },
-  {
     title: "AirSewa 2.0 Grievance Redressal Portal — Ministry of Civil Aviation, Government of India",
     url: "https://airsewa.gov.in/",
   },

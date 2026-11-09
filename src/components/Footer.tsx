@@ -135,8 +135,8 @@ const recoveryCategoryLinks = [
   { label: "Illegal Salary Deduction in Notice Period", href: "/send-a-legal-notice/salary-deducted-during-notice-period-legal-action-india" },
   { label: "Co-Founder & Startup Equity Dues Notice", href: "/send-a-legal-notice/co-founder-startup-unpaid-dues-equity" },
   { label: "Creator & Influencer Agency Dues Notice", href: "/send-a-legal-notice/agency-not-paying-the-creator" },
-  { label: "Swiggy Order Refund Legal Notice", href: "/send-a-legal-notice/swiggy-refund-not-recieved" },
-  { label: "Zomato Order Refund Legal Notice", href: "/send-a-legal-notice/zomato-refund-not-recieved" },
+  { label: "Swiggy Order Refund Legal Notice", href: "/legal-notice-to/swiggy" },
+  { label: "Zomato Order Refund Legal Notice", href: "/legal-notice-to/zomato" },
   { label: "Telegram & Trading Scam Recovery Notice", href: "/send-a-legal-notice/trading-scam-telegram" },
   { label: "Unpaid Tenant Rent Recovery Notice", href: "/send-a-legal-notice/recover-unpaid-rent-from-tenant-india" },
   { label: "Tenant Property Damage Recovery Notice", href: "/send-a-legal-notice/recover-money-from-tenant-who-damaged-property" },
@@ -163,7 +163,7 @@ export default function Footer() {
           <div className="flex flex-col items-start">
             {/* Logo */}
             <a href="/" className="flex items-center mb-6 select-none cursor-pointer" aria-label="LegalRecovery Home">
-              <img src="/lrwhite.svg" alt="LegalRecovery" className="h-8 sm:h-9 w-auto object-contain" />
+              <img src="/lrwhite.svg" alt="LegalRecovery" width={3236} height={601} className="h-8 sm:h-9 w-auto object-contain" />
               <span className="sr-only">LegalRecovery Home</span>
             </a>
 
@@ -221,6 +221,8 @@ export default function Footer() {
                         <span className="sr-only">{ai.name}</span>
                         <img
                           src={ai.logo}
+                          width={128}
+                          height={128}
                           style={{ height: ai.h }}
                           className="w-auto brightness-0 invert"
                           alt={ai.name}

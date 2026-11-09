@@ -539,9 +539,10 @@ export default function OnlineDisputeResolutionClient() {
                   <Image 
                     src="/anujbhiya.png" 
                     alt="Anuj Anand Malik" 
-                    fill
-                    className="object-cover"
-                    sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                    width={96}
+                    height={96}
+                    className="w-full h-full object-cover"
+
                   />
                 </div>
                 <h3 className="font-black text-slate-900 text-lg">

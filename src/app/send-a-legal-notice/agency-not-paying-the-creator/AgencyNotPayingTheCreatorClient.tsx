@@ -461,9 +461,7 @@ export default function AgencyNotPayingTheCreatorClient() {
 
                 {/* ── INFOGRAPHIC IMAGE EMBED ───────────────────────────── */}
                 <div className="my-8 rounded-2xl overflow-hidden border border-slate-200 shadow-md bg-white">
-                  <img
-                    src="/images/og/agency-not-paying-the-creator.jpg"
-                    alt="Legal Recovery Workflow Infographic for Content Creators and Influencers in India"
+                  <img src="/images/og/agency-not-paying-the-creator.jpg" alt="Legal Recovery Workflow Infographic for Content Creators and Influencers in India" width={850} height={474}
                     className="w-full h-auto object-cover"
                   />
                   <div className="p-4 bg-slate-50 border-t border-slate-100 text-xs text-slate-500 font-medium text-center">
@@ -1072,7 +1070,7 @@ export default function AgencyNotPayingTheCreatorClient() {
                 {/* ── COMPANY SECTION ──────────────────────────────────── */}
                 <section className="border border-slate-100 rounded-2xl p-6 md:p-8">
                   <div className="flex items-center gap-4 mb-4">
-                    <img src="/lrlogo.svg" alt="Legal Recovery Logo" className="h-10 w-auto" />
+                    <img src="/lrlogo.svg" alt="Legal Recovery Logo" width={3236} height={601} className="h-10 w-auto" />
                     <div>
                       <h3 className="font-black text-slate-900 text-base">Legal Recovery</h3>
                       <p className="text-xs text-slate-500">India&apos;s Trusted Recovery Platform</p>

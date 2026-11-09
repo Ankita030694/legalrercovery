@@ -1716,20 +1716,6 @@ export const ALL_SITEMAP_PAGES: SitemapItem[] = [
 
   // 6. Specialized Legal Notice Categories (/send-a-legal-notice/...)
   {
-    title: "Legal Notice: Swiggy Refund Not Received",
-    href: "/send-a-legal-notice/swiggy-refund-not-recieved",
-    category: "Legal Notices",
-    date: "19 Sep 2026",
-    timestamp: 1789804800000,
-  },
-  {
-    title: "Legal Notice: Zomato Refund Not Received",
-    href: "/send-a-legal-notice/zomato-refund-not-recieved",
-    category: "Legal Notices",
-    date: "19 Sep 2026",
-    timestamp: 1789804700000,
-  },
-  {
     title: "Legal Notice: Unfair Trade Practice Complaint",
     href: "/send-a-legal-notice/unfair-trade-practice-complaint",
     category: "Legal Notices",
@@ -2283,6 +2269,13 @@ export const ALL_SITEMAP_PAGES: SitemapItem[] = [
     category: "Recovery Claims",
     date: "10 Aug 2026",
     timestamp: 1786348700000,
+  },
+  {
+    title: "Wrong UPI Transfer Recovery",
+    href: "/recovery/wrong-upi-transfer",
+    category: "Recovery Claims",
+    date: "09 Aug 2026",
+    timestamp: 1786262450000,
   },
   {
     title: "Recovery of Fraudulent UPI Payment Amount",

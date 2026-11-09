@@ -56,10 +56,6 @@ const PRIMARY_SOURCES = [
     title: "Bharatiya Sakshya Adhiniyam, 2023 (BSA Section 63 — Electronic Records Admissibility for UPI Logs, UTR, & Banking SMS)",
     url: "https://www.indiacode.nic.in/handle/123456789/21735",
   },
-  {
-    title: "Consumer Protection Act, 2019 (Act No. 35 of 2019) — Section 2(11) Deficiency in Service by Banking Institutions",
-    url: "https://www.indiacode.nic.in/handle/123456789/15256",
-  },
 ];
 
 const CASE_CITATIONS = [

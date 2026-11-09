@@ -37,10 +37,6 @@ const PRIMARY_SOURCES = [
     url: "https://www.indiacode.nic.in/handle/123456789/2088",
   },
   {
-    title: "Consumer Protection Act, 2019 (Act No. 35 of 2019) — Section 2(11) Deficiency in Service & Section 2(46) Unfair Contract",
-    url: "https://www.indiacode.nic.in/handle/123456789/15256",
-  },
-  {
     title: "Blue Dart Express Ltd. v. Stephen E. Fernandes & Anr. — National Consumer Disputes Redressal Commission (NCDRC Revision Petition No. 393/1997)",
     url: "https://cms.nic.in/ncdrcnew/judgments.html",
   },

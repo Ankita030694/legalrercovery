@@ -213,7 +213,7 @@ export default function SwiggyRefundNotRecievedClient() {
 
   const breadcrumbItems = [
     { label: "Send a Legal Notice", href: "/send-a-legal-notice" },
-    { label: "Swiggy Refund Not Received", href: "/send-a-legal-notice/swiggy-refund-not-recieved" },
+    { label: "Swiggy Refund Not Received", href: "/legal-notice-to/swiggy" },
   ];
 
   const currentDate = new Date().toLocaleDateString('en-US', {
@@ -679,9 +679,7 @@ export default function SwiggyRefundNotRecievedClient() {
 
                   {/* Embedded Infographic Image */}
                   <div className="my-8 rounded-2xl overflow-hidden shadow-sm border border-slate-200">
-                    <img
-                      src="/images/og/swiggy-refund-not-recieved.jpg"
-                      alt="Legal Notice for Swiggy Refund Not Received Infographic"
+                    <img src="/images/og/swiggy-refund-not-recieved.jpg" alt="Legal Notice for Swiggy Refund Not Received Infographic" width={850} height={474}
                       className="w-full h-auto object-cover"
                     />
                   </div>
@@ -737,7 +735,7 @@ export default function SwiggyRefundNotRecievedClient() {
                       In over 85% of cases handled by Legal Recovery, serving an advocate-backed legal notice results in prompt out-of-court settlement. Food aggregators recognize that defending a consumer court lawsuit costs significantly more in advocate appearance fees and travel costs than the contested order amount.
                     </p>
                     <p className="text-sm md:text-base leading-relaxed">
-                      However, if the 15-day statutory notice period lapses without resolution or if Swiggy issues a frivolous denial, the consumer gains the unassailable right to initiate formal litigation. Through the central government&rsquo;s <a href="https://edaakhil.nic.in" target="_blank" rel="noopener noreferrer" className="text-purple-600 hover:text-purple-800 hover:underline">e-Daakhil portal</a>, a complaint can be filed digitally before the competent District Consumer Disputes Redressal Commission without requiring physical court presence.
+                      However, if the 15-day statutory notice period lapses without resolution or if Swiggy issues a frivolous denial, the consumer gains the unassailable right to initiate formal litigation. Through the central government&rsquo;s <span className="font-semibold text-slate-800">e-Daakhil portal</span>, a complaint can be filed digitally before the competent District Consumer Disputes Redressal Commission without requiring physical court presence.
                     </p>
                     <p className="text-sm md:text-base leading-relaxed">
                       Under Section 34(2) of the Consumer Protection Act, 2019, the consumer possesses the statutory jurisdiction to file the complaint in the District Commission where the consumer resides or personally works for gain, rather than where Swiggy&rsquo;s headquarters are located. When the case is heard, the ignored legal notice and postal delivery acknowledgment serve as prime exhibits proving willful negligence and bad faith by the aggregator.
@@ -845,7 +843,7 @@ export default function SwiggyRefundNotRecievedClient() {
           <div className="mt-16 mb-8 max-w-5xl mx-auto">
             <h2 className="text-2xl font-black text-slate-900 mb-6 text-center md:text-left">More Consumer Protection Guides</h2>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
-              <Link href="/send-a-legal-notice/zomato-refund-not-recieved" className="group block p-6 rounded-2xl bg-white border border-slate-200 hover:border-[#DC2626] hover:shadow-md transition-all">
+              <Link href="/legal-notice-to/zomato" className="group block p-6 rounded-2xl bg-white border border-slate-200 hover:border-[#DC2626] hover:shadow-md transition-all">
                 <h3 className="text-sm font-bold text-slate-900 group-hover:text-[#DC2626] mb-2">Zomato Refund Not Received</h3>
                 <p className="text-xs text-slate-500 line-clamp-2">Advocate guide to issuing a statutory legal notice for uncredited Zomato food and Blinkit grocery refunds.</p>
               </Link>
@@ -880,7 +878,7 @@ export default function SwiggyRefundNotRecievedClient() {
           <div className="mt-16 max-w-5xl mx-auto mb-10">
             <div className="bg-white border-2 border-slate-100 rounded-[2rem] p-8 md:p-12 shadow-sm">
               <div className="mb-8">
-                <img src="/lrlogo.svg" alt="Legal Recovery" className="h-8 sm:h-10 w-auto object-contain" />
+                <img src="/lrlogo.svg" alt="Legal Recovery" width={3236} height={601} className="h-8 sm:h-10 w-auto object-contain" />
               </div>
               <p className="text-sm md:text-base text-slate-600 leading-relaxed mb-10 max-w-3xl font-medium">
                 Legal Recovery is India&rsquo;s trusted tech-legal platform empowering consumers and businesses to resolve disputes, recover pending dues, and send legally vetted notices with speed and authority. Our network of seasoned advocates ensures your voice is heard and your rights are protected across all judicial forums.
