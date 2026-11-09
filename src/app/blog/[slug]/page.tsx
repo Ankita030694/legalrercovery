@@ -114,6 +114,13 @@ export async function generateMetadata(
               "hi-IN": `${SITE_URL}/hi/udhar-paisa-wapas-kaise-le`,
             },
           }
+        : blog.slug === "legal-notice-kaise-bheje-step-by-step-guide"
+        ? {
+            languages: {
+              "en-IN": `${SITE_URL}/blog/legal-notice-kaise-bheje-step-by-step-guide`,
+              "hi-IN": `${SITE_URL}/hi/legal-notice-kaise-bheje`,
+            },
+          }
         : {}),
     },
     openGraph: {

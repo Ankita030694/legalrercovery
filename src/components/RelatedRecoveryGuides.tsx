@@ -93,6 +93,102 @@ const CLUSTERS: Record<string, { heading: string; items: GuideItem[] }> = {
     heading: "Related Consumer Refund, E-Commerce & Vendor Recovery Guides",
     items: [
       {
+        title: "Consumer Court Awards Tracker: Refund & Compensation Orders",
+        href: "/reports/consumer-commission-awards-tracker",
+        tag: "Awards Tracker",
+        desc: "Monthly roundup of consumer court judgments against e-commerce sites, airlines, banks, and builders with exact refund amounts and links.",
+      },
+      {
+        title: "Legal Notice Outcomes Study: Settlement Rates by Dispute Type",
+        href: "/reports/legal-notice-outcomes-study",
+        tag: "Data Study",
+        desc: "Empirical outcomes from 6,740 legal notices across India: 15, 30, and 60-day settlement rates by dispute type.",
+      },
+      {
+        title: "Refund Delay Index India: Days to Refund by Company",
+        href: "/reports/refund-delay-index-india",
+        tag: "Data Study",
+        desc: "Empirical benchmarks across 4,820 consumer refund claims comparing pre-notice delay vs post-legal notice settlement.",
+      },
+      {
+        title: "Consumer Court Fee & Jurisdiction Calculator (2026)",
+        href: "/tools/consumer-commission-fee-jurisdiction-calculator",
+        tag: "Interactive Tool",
+        desc: "Calculate District, State or National Consumer Commission filing fees and determine pecuniary jurisdiction under CPA 2019.",
+      },
+      {
+        title: "National Consumer Helpline (1915) Complaint Guide",
+        href: "/national-consumer-helpline-complaint-guide",
+        tag: "NCH 1915 & INGRAM",
+        desc: "How NCH 1915 and INGRAM complaints work, response times, and why the docket strengthens your legal notice and consumer court case.",
+      },
+      {
+        title: "Wrong Electricity Bill Complaint Application (Format)",
+        href: "/templates/wrong-electricity-bill-complaint-application",
+        tag: "Utility Dispute",
+        desc: "Statutory complaint formats for incorrect readings, jumping meters, and CGRF escalation under Section 42(5) of the Electricity Act, 2003.",
+      },
+      {
+        title: "Appliance Warranty Replacement Refused? Legal Rights & Notice",
+        href: "/appliance-warranty-replacement-refused",
+        tag: "Warranty Law",
+        desc: "Force brand replacement or full refund for defective TV, fridge, AC or washing machine under Consumer Protection Act 2019 and repeated failure rules.",
+      },
+      {
+        title: "Jio, Airtel, Vi or Broadband Refund: Complaint Route",
+        href: "/telecom-broadband-refund-complaint",
+        tag: "Telecom & ISP",
+        desc: "Jio, Airtel, Vi or broadband refund pending? The appellate authority route, TRAI rules and when to send a legal notice.",
+      },
+      {
+        title: "Courier Lost Your Parcel? Compensation Rights in India",
+        href: "/courier-lost-parcel-compensation-india",
+        tag: "Courier & Logistics",
+        desc: "Overturn arbitrary ₹100 liability caps, demand full invoice reimbursement, statutory interest, and court awards from Delhivery, Blue Dart or DTDC.",
+      },
+      {
+        title: "Car Delivery Delay Complaint Letter (Free Format)",
+        href: "/templates/car-delivery-delay-complaint-letter",
+        tag: "Vehicle Template",
+        desc: "Complaint letter to dealership for delayed car or bike delivery, demanding a firm date, cab compensation or 100% advance refund.",
+      },
+      {
+        title: "Bike or EV Scooter Booking Refund Not Received?",
+        href: "/bike-scooter-booking-refund-legal-notice",
+        tag: "Two-Wheeler Refund",
+        desc: "Dealer or EV maker not refunding a bike or scooter booking? Cancellation terms, consumer rights and a demand notice.",
+      },
+                  {
+        title: "School & College Fee Refund Application (Formats)",
+        href: "/templates/school-college-fee-refund-application",
+        tag: "Refund Template",
+        desc: "Ready fee-refund application formats in English and Hindi for school, college and hostel fees, with UGC and MoE rules to cite.",
+      },
+      {
+        title: "College Holding Original Certificates: Getting Them Back",
+        href: "/college-not-returning-original-documents",
+        tag: "Original Documents",
+        desc: "Compel release of withheld Class 10/12 mark sheets, degrees, and migration certificates under UGC Clause 5, AICTE rules, and High Court precedents.",
+      },
+{
+        title: "Study-Abroad Consultant Refund: When They Don't Deliver",
+        href: "/study-abroad-consultant-refund-legal-notice",
+        tag: "Study Abroad Refund",
+        desc: "Overturn 'non-refundable' clauses for failed admissions or rejected study visas under CPA 2019 Sections 2(11) and 47.",
+      },
+      {
+        title: "UGC Fee Refund Policy: Withdrawal Rules for Colleges",
+        href: "/law/ugc-fee-refund-policy",
+        tag: "College Fee Refund",
+        desc: "Statutory UGC 5-tier fee refund slabs, 15-day refund turnaround, ban on certificate retention, and advocate notice process.",
+      },
+      {
+        title: "Insurance Ombudsman Complaint Format (Annexure VI-A)",
+        href: "/templates/insurance-ombudsman-complaint-format",
+        tag: "Ombudsman Template",
+        desc: "Statutory Annexure VI-A complaint form for rejected health, life, and motor claims under Insurance Ombudsman Rules, 2017 with Word export.",
+      },
+      {
         title: "Sold the Wrong Policy? Free-Look Cancellation and Mis-Selling Refunds",
         href: "/insurance-mis-selling-free-look-refund",
         tag: "Insurance Recovery",
@@ -123,10 +219,40 @@ const CLUSTERS: Record<string, { heading: string; items: GuideItem[] }> = {
         desc: "Recover advance money paid to defaulting suppliers, contractors, or service vendors under Sec 73.",
       },
       {
+        title: "Can You Refuse New Car Delivery? PDI Defects & Rights",
+        href: "/refuse-new-car-delivery-pdi-defects",
+        tag: "Auto / PDI",
+        desc: "Refuse scratched, repainted, or high-odometer cars at stockyard PDI under SOGA §41 and recover your full booking deposit.",
+      },
+      {
+        title: "EV Service Delay or Battery Warranty Refused? Legal Steps",
+        href: "/ev-service-delay-battery-warranty-legal-notice",
+        tag: "EV Service / Warranty",
+        desc: "Compel EV OEMs & service centres to return repaired scooters, replace defective battery packs, and pay daily conveyance.",
+      },
+      {
+        title: "Bought a Used Car With Hidden Defects? Getting a Refund",
+        href: "/used-car-platform-refund-dispute",
+        tag: "Used Car Refund",
+        desc: "Overturn 7-day return denials, undisclosed accident or flood damage, and meter tampering on Cars24, Spinny and dealers under CPA 2019.",
+      },
+      {
         title: "Legal Notice to Car Dealer for Delayed Delivery or Defective Vehicle",
         href: "/legal-notice-to-car-dealer-delayed-delivery-defective-vehicle",
         tag: "Auto / PDI",
         desc: "Refuse defective cars at PDI, claim 100% booking refund, or demand replacement for lemon vehicles.",
+      },
+            {
+        title: "Hospital Overbilling? How to Challenge & Get a Refund",
+        href: "/hospital-overbilling-refund-legal-notice",
+        tag: "Hospital Overbilling",
+        desc: "Forensic bill audit steps, clinical establishment pricing rules, and advocate legal notices to recover inflated medical charges.",
+      },
+      {
+        title: "Solar Installer Took Advance but Didn't Install? Refund Rights",
+        href: "/rooftop-solar-installer-refund-legal-notice",
+        tag: "Solar Vendor Refund",
+        desc: "Recover advances for delayed or abandoned rooftop solar installations, PM Surya Ghar vendor defaults, and DISCOM net-metering delays.",
       },
       {
         title: "Legal Notice to Interior Designer or Home Contractor for Refund",
@@ -438,6 +564,18 @@ const CLUSTERS: Record<string, { heading: string; items: GuideItem[] }> = {
     heading: "Essential Money Recovery Laws, Timelines & Legal Notice Guides",
     items: [
       {
+        title: "लीगल नोटिस कैसे भेजें: ऑनलाइन, ईमेल, व्हाट्सऐप और डाक से",
+        href: "/hi/legal-notice-kaise-bheje",
+        tag: "Hindi Guide",
+        desc: "कंपनी, दोस्त या मकान मालिक को कानूनी नोटिस भेजने की पूरी प्रक्रिया, खर्च, वैध धाराएं और समय सीमा।",
+      },
+      {
+        title: "Legal Notice Charges in India (2026): What It Costs",
+        href: "/legal-notice-charges",
+        tag: "Pricing Guide",
+        desc: "Transparent breakdown of legal notice costs by dispute type, city, advocate vs platform fees, and postal charges.",
+      },
+      {
         title: "Upwork or Fiverr Client Not Paying? Options From India",
         href: "/upwork-fiverr-client-not-paying-india",
         tag: "Freelance & Agency",
@@ -609,16 +747,35 @@ function detectCluster(pathname: string): { heading: string; items: GuideItem[] 
     p.includes("myntra") ||
     p.includes("blinkit") ||
     p.includes("swiggy") ||
+    p.includes("consumer-helpline") ||
+    p.includes("national-consumer") ||
     p.includes("zomato") ||
+    p.includes("electricity") ||
+    p.includes("telecom") ||
+    p.includes("broadband") ||
     p.includes("retailer") ||
     p.includes("product") ||
     p.includes("car-dealer") ||
+    p.includes("used-car") ||
+    p.includes("bike") ||
+    p.includes("scooter") ||
+    p.includes("ev-service") ||
+    p.includes("battery") ||
+    p.includes("refuse-new-car") ||
+    p.includes("pdi-defects") ||
+    p.includes("hospital") ||
+    p.includes("overbilling") ||
+    p.includes("solar") ||
     p.includes("interior") ||
     p.includes("event-planner") ||
+    p.includes("study-abroad") ||
     p.includes("gym") ||
     p.includes("coaching") ||
+    p.includes("ugc") ||
     p.includes("college") ||
-    p.includes("school") ||
+        p.includes("courier") ||
+    p.includes("parcel") ||
+p.includes("school") ||
     p.includes("airline") ||
     p.includes("flight") ||
     p.includes("travel") ||

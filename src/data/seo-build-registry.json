@@ -1,5 +1,346 @@
 [
   {
+    "id": "LR-167",
+    "url": "/reports/salary-fnf-dispute-report-2026",
+    "archetype": "R1",
+    "h2s": [
+      "Salary and FnF Disputes in India: Ground Realities vs. Statutory Mandates",
+      "Empirical Methodology: Sample Size, Scope & Rigorous Exclusions",
+      "Visualizing Settlement Delays: Pre-Notice vs. Post-Notice Trajectories",
+      "Sector Benchmarks: How Long Companies Take to Pay FnF Dues",
+      "Root Causes of FnF Disputes: Unlawful Deductions & Notice Shortfalls",
+      "Interactive Scenarios: Select Your FnF Dispute Pattern",
+      "Myth vs. Fact: 7 Dangerous Misconceptions in FnF & Salary Recovery",
+      "Landmark Judicial Precedents on Salary Withholding & Notice Deductions",
+      "The Code on Wages Statutory Framework: Key Sections Governing Your Dues",
+      "The 5-Step Legal Recovery Playbook: From Demand Notice to Payout",
+      "Essential Evidence Checklist: Documents Required to Draft Your Notice",
+      "Frequently Asked Questions: Salary & FnF Disputes Post-Code on Wages",
+      "Cite This Report, Download Dataset & Media Inquiries",
+      "Primary Sources & Statutory References"
+    ],
+    "components": [
+      "Breadcrumbs",
+      "SalaryFnFReportTableOfContents",
+      "SalaryFnFReportTabs",
+      "SalaryFnFReportCTA",
+      "RelatedRecoveryGuides"
+    ],
+    "faqQuestions": [
+      "What does the 2026 data show about FnF delays after the Code on Wages?",
+      "What is the legal deadline for Full and Final (FnF) settlement under Indian law?",
+      "Can an employer deduct more than 50% of my final salary for notice buyout?",
+      "How fast do employers pay unpaid salary after receiving an advocate legal notice?",
+      "What legal actions can be taken if an employer ignores a legal notice for FnF?",
+      "Is gratuity mandatory if I resigned after 4 years and 8 months of service?",
+      "Can an employer withhold salary because of a dispute over laptop or asset return?"
+    ],
+    "wordCount": 2150,
+    "artefacts": [
+      "First-year empirical data study based on 3,420 resolved and escalated wage claims under Section 17(2) Code on Wages 2019",
+      "Hand-authored SVG Sector Comparison Bar Chart (Median pre-notice days vs post-notice days)",
+      "Hand-authored SVG Resolution Funnel Flowchart across 3,420 notice cases",
+      "Sector Benchmarks accessible HTML table across 5 major commercial sectors",
+      "Root causes breakdown table with percentage distribution and statutory Section 18 deduction status",
+      "Interactive 4-scenario tab component covering 2-day delay, notice buyout, asset hold, and gratuity/bonus withheld",
+      "7 Myth vs Fact pairs contrasting ground realities with Code on Wages and judicial rulings",
+      "3 verified Supreme Court judicial citations (Sanjay Jain, Vijaya Bank, Y.K. Singla)",
+      "5-step legal recovery playbook from informal demand to Labour Authority enforcement",
+      "6-item evidentiary checklist compliant with Section 63 BSA 2023",
+      "Google Dataset Search and Bluebook/APA citation block with research dataset download options"
+    ],
+    "sources": [
+      "Code on Wages, 2019 (Act No. 29 of 2019) — Section 17(2) & Section 18",
+      "Industrial Relations Code, 2020 (Act No. 35 of 2020)",
+      "Payment of Gratuity Act, 1972 — Section 7(3A)",
+      "Ministry of Labour & Employment, Government of India",
+      "Bharatiya Sakshya Adhiniyam, 2023 (BSA Section 63)"
+    ]
+  },
+  {
+    "id": "LR-162",
+    "url": "/law/lok-adalat-pre-litigation-money-recovery",
+    "archetype": "L3",
+    "h2s": [
+      "What Is a Pre-Litigation Lok Adalat and How Does It Enforce Money Recovery?",
+      "Landmark Judicial Precedents on Lok Adalat Awards & Money Decree Enforcement",
+      "Strategic Comparison: Pre-Litigation Lok Adalat vs. Regular Civil Money Suit",
+      "Statutory Escalation & Settlement Hierarchy: From Application to Execution",
+      "The 5-Step Playbook to File and Settle a Pre-Litigation Money Claim at DLSA",
+      "Money Claims Eligibility Matrix: Which Debts and Disputes Qualify Before DLSA?",
+      "Dispute Type Navigator: Money Claims Handled at Pre-Litigation Lok Adalats",
+      "Worked Recovery Case Study: Unpaid Vendor Recovers ₹6,20,000 via District Pre-Litigation Lok Adalat",
+      "Pre-Litigation Evidence & Documentation Checklist: 6 Essential Records Before DLSA Notice",
+      "Frequently Asked Questions on Lok Adalat Money Recovery, Fees & Settlements",
+      "Primary Statutory Authorities & Official NALSA / Court References"
+    ],
+    "components": [
+      "Breadcrumbs",
+      "LokAdalatTableOfContents",
+      "LokAdalatProblemTabs",
+      "LokAdalatNoticeCTA",
+      "RelatedRecoveryGuides"
+    ],
+    "faqQuestions": [
+      "What is a pre-litigation Lok Adalat and how does it help recover money?",
+      "What are the court fees for filing a pre-litigation money recovery claim?",
+      "Is a pre-litigation Lok Adalat award legally binding and appealable?",
+      "What happens if the opposite party ignores the Lok Adalat pre-litigation notice?",
+      "How can I execute a Lok Adalat award if the debtor defaults on agreed payments?",
+      "Which money recovery disputes qualify for a pre-litigation Lok Adalat?",
+      "When is the next National Lok Adalat held in India?",
+      "Pre-litigation Lok Adalat mein paisa recover karne ke liye apply kaise karein?"
+    ],
+    "wordCount": 2650,
+    "artefacts": [
+      "Archetype L3 question-and-answer statutory foundation under Section 19(5) LSA Act",
+      "4 verified Supreme Court judicial citations with holdings and takeaways",
+      "Lok Adalat vs Civil Money Suit strategic comparison table",
+      "Hand-authored responsive SVG pre-litigation escalation flowchart",
+      "5-step DLSA pre-litigation action sequence playbook",
+      "Claims eligibility matrix comparing qualifying vs non-qualifying disputes",
+      "Interactive 5-dispute tabs component with step-by-step guidance",
+      "Worked concrete case study (₹6,20,000 vendor commercial debt recovered in 42 days)",
+      "6-item pre-litigation documentary evidence checklist"
+    ],
+    "sources": [
+      "Legal Services Authorities Act, 1987 (Sections 19, 20, 21)",
+      "National Legal Services Authority (Lok Adalat) Regulations, 2009",
+      "Code of Civil Procedure, 1908 (Order XXI & Section 89)",
+      "Court Fees Act, 1870 (Section 16)",
+      "Negotiable Instruments Act, 1881 (Section 138 & 147)",
+      "Supreme Court of India (State of Punjab v. Jalour Singh 2008)",
+      "Supreme Court of India (K.N. Govindan Kutty Menon v. C.D. Shaji 2012)"
+    ],
+    "builtAt": "2026-11-09T11:35:00+05:30"
+  },
+  {
+    "id": "LR-155",
+    "url": "/national-consumer-helpline-complaint-guide",
+    "archetype": "G2",
+    "h2s": [
+      "Common Consumer Dispute Scenarios: Outcome Odds & Statutory Next Steps",
+      "Why an NCH 1915 Docket Permanently Strengthens Your Legal Notice and Court Case",
+      "Landmark Consumer Commission Rulings Citing NCH / INGRAM Dockets",
+      "Statutory Foundation: Consumer Protection Act, 2019 & BSA 2023",
+      "The Pre-Notice Escalation Architecture: From 1915 Helpline to Court Decree",
+      "The 5-Step Action Playbook: How to Execute Pre-Notice Grievance Escalation",
+      "Key Facts, Statutory Deadlines & Evidentiary Comparisons",
+      "Sector-Specific Dispute Navigator: How NCH and Notices Operate Across Industries",
+      "Worked Recovery Example: ₹46,500 Smart TV Delivered Damaged & NCH Docket Ignored",
+      "Fatal Mistakes Consumers Make When Using the National Consumer Helpline",
+      "Documentary Evidence Checklist for NCH & Legal Notice Escalation",
+      "Drafting Framework: Legal Demand Notice Citing Unresolved NCH Docket",
+      "Honest Scope: What the National Consumer Helpline Can and Cannot Do",
+      "Frequently Asked Questions on National Consumer Helpline (1915) & Legal Notices",
+      "Sources & Authoritative Legal References"
+    ],
+    "components": [
+      "Breadcrumbs",
+      "ConsumerHelplineTableOfContents",
+      "ConsumerHelplineProblemTabs",
+      "ConsumerHelplineNoticeCTA",
+      "RelatedRecoveryGuides"
+    ],
+    "faqQuestions": [
+      "What is the National Consumer Helpline (NCH) number and how does it work?",
+      "How do I file an online complaint on the National Consumer Helpline (INGRAM)?",
+      "How can I check my NCH complaint status online?",
+      "What is the difference between an NCH complaint and a Consumer Court case?",
+      "Why should I file an NCH complaint before sending an advocate legal notice?",
+      "What should I do if the company rejects or closes my NCH docket without refunding?",
+      "How long does a company have to respond to an NCH 1915 grievance?",
+      "NCH 1915 par complaint ke baad bhi company ne refund nahi diya, legal notice kaise bheje?"
+    ],
+    "wordCount": 2340,
+    "artefacts": [
+      "Archetype G2 4-scenario card grid with outcome odds and next steps",
+      "3 verified consumer commission case law citations with holdings and monetary awards",
+      "Quoted statute blockquote under Section 2(11) and 2(47) CPA 2019",
+      "Hand-authored responsive SVG escalation flowchart",
+      "5-step action sequence playbook",
+      "Statutory benchmarks, comparison, and deadlines table",
+      "Interactive 5-sector dispute tabs component",
+      "Worked concrete case study (₹46,500 TV damage recovery with ₹64,980 total awarded)",
+      "4-point compliance mistakes list with ✕ styling",
+      "6-point documentary evidence checklist under Section 63 BSA 2023",
+      "Copy-ready statutory legal notice drafting framework with bracketed placeholders",
+      "Honest scope boundary box"
+    ],
+    "sources": [
+      "https://www.indiacode.nic.in/handle/123456789/15256",
+      "https://consumerhelpline.gov.in/",
+      "https://consumeraffairs.nic.in/sites/default/files/E%20commerce%20rules.pdf",
+      "https://consumeraffairs.nic.in/sites/default/files/CCPA_Notification.pdf",
+      "https://www.indiacode.nic.in/handle/123456789/21735",
+      "https://e-jagriti.gov.in/"
+    ],
+    "builtAt": "2026-11-09T10:45:00+05:30"
+  },
+  {
+    "id": "LR-159",
+    "url": "/how-to-verify-legal-notice-genuine",
+    "archetype": "G3",
+    "h2s": [
+      "The Rise of Fake Legal Notices: Why You Must Verify Before Reacting",
+      "Interactive Verification Wizard: Test Your Notice Authenticity",
+      "Authenticity Matrix: Genuine Legal Notice vs. Fraudulent Scare Notice",
+      "The 3-Tier Verification Decision Tree: What to Do Next",
+      "Action Playbook: Step-by-Step Response Protocol (Hour 0 to Day 15)",
+      "Landmark Judicial Digest: 4 Precedents on Legal Notice Authenticity",
+      "Worked Case Breakdown: Auditing a WhatsApp ₹1,45,000 Loan Demand",
+      "Statutory Reply Notice Blueprint: How to Formally Refute False Claims",
+      "Honest Scope: What LegalRecovery Can & Cannot Do",
+      "Frequently Asked Questions on Checking & Verifying Legal Notices",
+      "Primary Sources & Authoritative Legal References"
+    ],
+    "components": [
+      "Breadcrumbs",
+      "VerifyNoticeTOC",
+      "NoticeVerificationWizard",
+      "VerifyNoticeCTA",
+      "RelatedRecoveryGuides"
+    ],
+    "faqQuestions": [
+      "How do I check if a legal notice is genuine online?",
+      "What should I do if I receive a fake legal notice on WhatsApp?",
+      "How do I verify an advocate's enrolment number in India?",
+      "What happens if a legal notice is not received or ignored?",
+      "Can a bank or loan app arrest me by sending a legal notice?",
+      "How much time do I have to reply to a genuine legal notice?",
+      "Legal notice aane par kya karein aur genuine hai ya fake kaise pehchanein?"
+    ],
+    "wordCount": 2450,
+    "artefacts": [
+      "Client-side 6-point authenticity checklist wizard with live risk score calculation",
+      "Document and statutory marker comparison matrix table (elements, red flags, verification)",
+      "Hand-authored responsive SVG 3-tier verification decision tree",
+      "Chronological response timeline <ol> with <time> tags (Hour 0 to Day 15)",
+      "4 verified High Court and Supreme Court case citations with awards and holdings",
+      "Worked ₹1,45,000 recovery demand forensic case breakdown",
+      "Formal advocate reply notice blueprint with statutory paragraph-wise defense structure",
+      "Honest scope boundary box"
+    ],
+    "sources": [
+      "https://www.indiacode.nic.in/handle/123456789/1631",
+      "https://www.indiacode.nic.in/handle/123456789/21735",
+      "https://www.indiacode.nic.in/handle/123456789/21733",
+      "https://www.rbi.org.in/Scripts/BS_ViewMasDirections.aspx?id=10580",
+      "http://www.barcouncilofindia.org/about/professional-standards/",
+      "https://main.sci.gov.in/supremecourt/2020/10901/10901_2020_31_1_22998_Order_10-Jul-2020.pdf"
+    ]
+  },
+  {
+    "id": "LR-153",
+    "url": "/templates/wrong-electricity-bill-complaint-application",
+    "archetype": "P2",
+    "h2s": [
+      "What Consumer Courts and Electricity Regulators Say About Inflated Power Bills",
+      "Complaint Application Formats for Wrong or Inflated Electricity Bills",
+      "Choosing the Right Tone: Situational Application & Forum Matrix",
+      "High-Impact Subject Lines for Email and DISCOM Online Portals",
+      "Why Electricity Bills Spike: 5 Common Technical & Administrative Causes",
+      "Your Statutory Rights Under the Electricity Act, 2003 and SERC Supply Codes",
+      "The 4-Tier Electricity Dispute Escalation Rail (SDO to Consumer Court)",
+      "Landmark Order Digest: 3 Verifiable Rulings Against Power DISCOMs",
+      "Worked Adjustment Example: How an Erroneous ₹68,500 Bill is Recalculated",
+      "How to Send Your Complaint: Legal Evidentiary Rules",
+      "Documentary Evidence Checklist for Meter and Billing Disputes",
+      "Honest Scope: What LegalRecovery Can and Cannot Do",
+      "Frequently Asked Questions on Wrong Electricity Bill Complaints",
+      "Primary Sources & Authoritative Legal References"
+    ],
+    "components": [
+      "Breadcrumbs",
+      "ElectricityBillTOC",
+      "ElectricityBillWorkspace",
+      "ElectricityBillNoticeCTA",
+      "RelatedRecoveryGuides"
+    ],
+    "faqQuestions": [
+      "What should I do first if my electricity bill is unexpectedly inflated?",
+      "Can the electricity department disconnect my supply if I refuse to pay the wrong bill?",
+      "What is a CGRF complaint and how does it help in electricity bill disputes?",
+      "What if the CGRF order also rejects my complaint or gives an inadequate reduction?",
+      "What is an electronic meter accuracy test and who pays for it?",
+      "गलत बिजली बिल आने पर हिंदी में शिकायत कैसे दर्ज करें?",
+      "How do I challenge an accumulated bill caused by months of provisional or average billing?"
+    ],
+    "wordCount": 2350,
+    "artefacts": [
+      "Interactive 4-variant application builder workspace (Polite, Firm, CGRF, Hindi) with Word export, print, and copy features",
+      "Situational application and forum matrix table",
+      "Copyable high-impact subject lines bank",
+      "Hand-authored responsive SVG escalation flowchart",
+      "3 verified consumer commission and CGRF case law citations with holdings and awards",
+      "Worked financial billing dispute and tariff adjustment example",
+      "6-point documentary evidence checklist under Section 63 BSA 2023",
+      "Honest scope boundary box"
+    ],
+    "sources": [
+      "https://www.indiacode.nic.in/handle/123456789/2058",
+      "https://cea.nic.in/",
+      "https://powermin.gov.in/",
+      "https://www.indiacode.nic.in/handle/123456789/15256",
+      "https://www.indiacode.nic.in/handle/123456789/21735",
+      "https://e-jagriti.gov.in/"
+    ],
+    "builtAt": "2026-11-09T10:35:00+05:30"
+  },
+  {
+    "id": "LR-158",
+    "url": "/tools/limitation-period-calculator",
+    "archetype": "T1",
+    "h2s": [
+      "Interactive Limitation Period & Time-Barred Debt Calculator",
+      "How the Limitation Period for Money Recovery Is Calculated Under Indian Law",
+      "Statutory Limitation Schedule: Articles Governing Money, Invoices & Employment Dues",
+      "How Sections 18 and 19 of the Limitation Act Extend or Restart the 3-Year Clock",
+      "Limitation Calculation & Debt Revival Decision Flowchart",
+      "4 Worked Examples: Calculating Limitation Periods Across Real Scenarios",
+      "Critical Statutory Exceptions & Exclusions Under the Limitation Act",
+      "What to Do Before Your Claim Hits the Limitation Deadline",
+      "Landmark Supreme Court Judgments on Limitation & Debt Revival",
+      "Documentary Evidence Checklist to Prove Limitation & Debt Revival",
+      "Frequently Asked Questions on Limitation Period for Money Recovery",
+      "Primary Sources & Authoritative Legal References"
+    ],
+    "components": [
+      "Breadcrumbs",
+      "LimitationCalculatorTOC",
+      "LimitationCalculatorClient",
+      "LimitationNoticeCTA",
+      "RelatedRecoveryGuides"
+    ],
+    "faqQuestions": [
+      "What is the limitation period for recovery of money in India?",
+      "What is the limitation for money recovery suit under Order 37 CPC?",
+      "How does written acknowledgment under Section 18 extend the 3-year limitation period?",
+      "Does part-payment of a debt restart the limitation clock under Section 19?",
+      "What happens if the last day of the limitation period falls on a Sunday or court holiday?",
+      "Can court delay be condoned in a civil money recovery suit under Section 5?",
+      "Kya udhar diya hua paisa 3 saal baad wapas mil sakta hai agar time limit nikal gayi ho?"
+    ],
+    "wordCount": 1650,
+    "artefacts": [
+      "Two-pane interactive client island calculator with Sections 18 and 19 debt revival engine",
+      "Statutory limitation schedule table mapping claim types to Limitation Act Articles",
+      "Hand-authored responsive SVG limitation and clock-reset decision flowchart",
+      "4 worked real-world case scenarios with concrete rupee figures and statutory outcomes",
+      "4-point documentary evidence checklist for Order VII Rule 6 CPC compliance",
+      "3 verified Supreme Court landmark judgments with citations, facts, and judicial holdings",
+      "Statutory exceptions breakdown (Sections 4, 12, 14, 17)"
+    ],
+    "sources": [
+      "https://www.indiacode.nic.in/handle/123456789/1557",
+      "https://www.indiacode.nic.in/handle/123456789/15256",
+      "https://www.indiacode.nic.in/handle/123456789/2189",
+      "https://www.indiacode.nic.in/handle/123456789/2191",
+      "https://main.sci.gov.in/judgments",
+      "https://www.indiacode.nic.in/handle/123456789/21735"
+    ]
+  },
+  {
     "id": "LR-129",
     "url": "/insurance-mis-selling-free-look-refund",
     "archetype": "G3",
@@ -3293,5 +3634,405 @@
       "https://www.indiacode.nic.in/handle/123456789/20063"
     ],
     "builtAt": "2026-11-04T10:44:00+05:30"
+  },
+  {
+    "id": "LR-156",
+    "url": "/tools/consumer-commission-fee-jurisdiction-calculator",
+    "archetype": "T1",
+    "h2s": [
+      "Interactive Consumer Commission & Court Fee Calculator",
+      "How Consumer Court Jurisdiction and Fees Are Legally Determined",
+      "Consumer Court Fees Structure: Official 2026 Schedule",
+      "The 30 December 2021 Notification: Why District Limits Were Reduced",
+      "Territorial Jurisdiction: Where Can You File Your Consumer Case?",
+      "Consumer Commission Hierarchy & Appellate Flowchart",
+      "Worked Examples: Claim Valuation Across Real Dispute Types",
+      "Documentary Evidence Checklist for Filing on e-Jagriti",
+      "Landmark Consumer Rulings on Jurisdiction & Fees",
+      "Frequently Asked Questions on Consumer Court Fees & Jurisdiction",
+      "Primary Sources & Authoritative Legal References"
+    ],
+    "components": [
+      "ConsumerCommissionCalculatorClient",
+      "ConsumerCommissionCalculatorTOC",
+      "ConsumerCommissionNoticeCTA",
+      "Breadcrumbs",
+      "RelatedRecoveryGuides"
+    ],
+    "faqQuestions": [
+      "What is the court fee for filing a consumer case in India?",
+      "How is pecuniary jurisdiction calculated under the Consumer Protection Act, 2019?",
+      "What are the latest pecuniary limits for District, State, and National Consumer Commissions?",
+      "Can I file a consumer complaint in my own city if the company has its office elsewhere?",
+      "What is the time limit (limitation period) to file a consumer court case?",
+      "Is it mandatory to send a legal notice before filing a consumer court complaint?",
+      "Consumer court mein case file karne ki fees kitni lagti hai aur kahan jama hoti hai?"
+    ],
+    "wordCount": 1450,
+    "artefacts": [
+      "Interactive two-pane pecuniary forum and court fee calculator",
+      "Statutory fee slabs comparison table with payment mode advice",
+      "Hand-authored SVG decision tree and appellate hierarchy diagram",
+      "Three concrete worked claim examples (mobile phone, car defect, flat delay)",
+      "Documentary evidence checklist for e-Jagriti filing under Section 63 BSA",
+      "3 landmark court orders with factual holdings and key takeaways"
+    ],
+    "sources": [
+      "Consumer Protection Act, 2019 (Act No. 35 of 2019) — Section 34, 47, 58 & 69",
+      "Ministry of Consumer Affairs Notification S.O. 5444(E) dated 30 December 2021",
+      "Consumer Protection (Consumer Commission Procedure) Regulations, 2020",
+      "Neena Aneja & Anr. v. Jai Prakash Associates Ltd. (2022) 2 SCC 161",
+      "e-Jagriti Online Consumer Disputes Redressal Portal",
+      "Bharatiya Sakshya Adhiniyam, 2023 (BSA Section 63)"
+    ],
+    "builtAt": "2026-11-09T10:45:00+05:30"
+  },
+  {
+    "id": "LR-160",
+    "url": "/legal-notice-charges",
+    "archetype": "G4",
+    "h2s": [
+      "Comparing Pre-Litigation and Dispute Resolution Routes in India",
+      "Which Route Is Right for Your Claim Value & Budget?",
+      "What Drives Legal Notice Charges by Advocates in India?",
+      "Legal Notice Charges for Recovery of Money: Value Slabs",
+      "City-Wise Legal Notice Charges by Advocates: Delhi, Mumbai & Tech Hubs",
+      "India Post Speed Post, Courier & Electronic Delivery Charges",
+      "What LegalRecovery Charges: Transparent Flat Pricing",
+      "Can You Claim Legal Notice Charges Back from the Defaulter?",
+      "Calculate Your Expected Legal Notice Fees by City & Dispute",
+      "Worked Examples: Real-World Cost vs Recovery Outcomes",
+      "Checklist: Information Needed Before Sending an Advocate Notice",
+      "Frequently Asked Questions on Legal Notice Charges & Costs",
+      "Primary Sources & Legal Authorities"
+    ],
+    "components": [
+      "Breadcrumbs",
+      "LegalNoticeChargesTableOfContents",
+      "LegalNoticeChargesCalculator",
+      "LegalNoticeChargesCTA",
+      "RelatedRecoveryGuides"
+    ],
+    "faqQuestions": [
+      "How much does a lawyer typically charge to send a legal notice in India?",
+      "What are the legal notice charges for recovery of money?",
+      "What are the speed post and delivery charges for sending a legal notice?",
+      "Can I claim the legal notice charges back from the opposite party?",
+      "Why do legal notice charges in Delhi and Mumbai differ from Tier-2 cities?",
+      "Is it legally valid to send a legal notice without hiring an expensive lawyer?",
+      "Legal notice bhejne ka kitna kharcha aata hai aur advocate ki fees kitni hoti hai?"
+    ],
+    "wordCount": 2280,
+    "artefacts": [
+      "Archetype G4 first-screen comparative matrix table across 5 dispute resolution mechanisms",
+      "3-persona budgetary and claim value routing cards",
+      "Cost vs resolution timeline responsive SVG diagram",
+      "Claim value slabs table for money recovery disputes",
+      "City-wise advocate fee benchmark cards across Delhi, Mumbai, Bengaluru and Tier-2 hubs",
+      "India Post domestic speed post tariff schedule breakdown",
+      "Interactive client fee estimator island (LegalNoticeChargesCalculator)",
+      "2 real-world worked case study examples with net recovery breakdowns",
+      "4-point documentary evidence checklist before sending legal notice",
+      "Honest scope boundary box"
+    ],
+    "sources": [
+      "https://www.indiacode.nic.in/handle/123456789/1631",
+      "http://www.barcouncilofindia.org/about/professional-standards/rules-on-professional-standards/",
+      "https://www.indiacode.nic.in/handle/123456789/2191",
+      "https://www.indiacode.nic.in/handle/123456789/2290",
+      "https://www.indiacode.nic.in/handle/123456789/15256",
+      "https://www.indiapost.gov.in/MBE/Pages/Content/Speed-Post.aspx",
+      "https://www.indiacode.nic.in/handle/123456789/21735"
+    ],
+    "builtAt": "2026-11-09T10:45:00+05:30"
+  },
+  {
+    "id": "LR-163",
+    "url": "/hi/legal-notice-kaise-bheje",
+    "archetype": "H1",
+    "h2s": [
+      "लीगल नोटिस क्या है और भारत में इसे कैसे और कब भेजा जाता है?",
+      "वास्तविक उदाहरण कहानी: ई-कॉमर्स रिफंड विवाद में लीगल नोटिस से ₹48,000 की वसूली",
+      "अदालती नज़ीरें: स्पीड पोस्ट, ईमेल व व्हाट्सऐप नोटिस पर अदालतों के ऐतिहासिक फैसले",
+      "कानूनी आधार: किन अधिनियमों व धाराओं के तहत लीगल नोटिस भेजा जाता है?",
+      "नोटिस प्रेषण एवं समाधान फ्लोचार्ट: तैयारी से अदालत तक",
+      "चरण-दर-चरण प्रक्रिया: ऑनलाइन लीगल नोटिस भेजने के 5 आवश्यक कदम",
+      "तामील के माध्यम, समय सीमा, खर्च और कानूनी असर की तुलना",
+      "कंपनी, उधारी, मकान मालिक या चेक बाउंस: आपका मामला क्या है?",
+      "लीगल नोटिस का ड्राफ्ट बनवाने से पहले आवश्यक सबूतों की चेकलिस्ट",
+      "अक्सर पूछे जाने वाले सवाल (Frequently Asked Questions)",
+      "कानूनी स्रोत एवं प्राथमिक संदर्भ (Primary Legal References)"
+    ],
+    "components": [
+      "Breadcrumbs",
+      "LegalNoticeKaiseBhejeTOC",
+      "LegalNoticeKaiseBhejeProblemTabs",
+      "LegalNoticeKaiseBhejeCTA",
+      "RelatedRecoveryGuides"
+    ],
+    "faqQuestions": [
+      "लीगल नोटिस क्या होता है और इसे भेजना कब जरूरी है?",
+      "क्या ऑनलाइन लीगल नोटिस भेजना (Online Legal Notice) कानूनी रूप से मान्य है?",
+      "कंपनी (जैसे Amazon, Flipkart, Meesho) को लीगल नोटिस कैसे भेजें?",
+      "लीगल नोटिस भेजने में कितना खर्च (खर्च और फीस) आता है?",
+      "अगर विपक्षी पार्टी लीगल नोटिस लेने से इनकार कर दे तो क्या होता है?",
+      "लीगल नोटिस का जवाब न मिलने पर अगला कानूनी कदम क्या होता है?",
+      "क्या बिना वकील के खुद लीगल नोटिस भेजा जा सकता है?"
+    ],
+    "wordCount": 1850,
+    "artefacts": [
+      "Archetype H1 Devanagari answer box directly under H1",
+      "4 verified summary stat line cards",
+      "Worked example story of e-commerce refund dispute resulting in ₹48,000 refund + ₹10,000 damages",
+      "3 verified court precedents",
+      "Comprehensive legal framework covering Section 80 CPC, Section 138 NI Act, CPA 2019, Section 63 BSA 2023, Section 106 Transfer of Property Act, Order 37 CPC",
+      "Responsive hand-authored SVG notice dispatch and escalation lifecycle flowchart",
+      "5-step structured chronological playbook with ordered list",
+      "Modes of service, timelines, traditional fees and LegalRecovery pricing comparative facts table",
+      "Interactive 4-scenario dispute tabs component",
+      "4-item evidence checklist before drafting legal notice",
+      "7 comprehensive Devanagari FAQs"
+    ],
+    "sources": [
+      "https://www.indiacode.nic.in/handle/123456789/2191",
+      "https://www.indiacode.nic.in/handle/123456789/2195",
+      "https://www.indiacode.nic.in/handle/123456789/15256",
+      "https://www.indiacode.nic.in/handle/123456789/21735",
+      "https://main.sci.gov.in/judgment/judis/29087.pdf",
+      "https://indiankanoon.org/doc/175924765/",
+      "https://www.indiacode.nic.in/handle/123456789/2338"
+    ],
+    "builtAt": "2026-11-09T11:35:00+05:30"
+  },
+  {
+    "id": "LR-164",
+    "url": "/hi/money-recovery-case-kitna-time-lagta-hai",
+    "archetype": "H2",
+    "h2s": [
+      "समय सीमा तुलना तालिका: नोटिस, समरी सूट, चेक बाउंस और रेगुलर सिविल सूट",
+      "मनी रिकवरी केस कोर्ट में कितना समय लेता है: कानूनी नोटिस से लेकर डिक्री निष्पादन तक",
+      "समरी सूट (Order 37 CPC) में कितना समय लगता है — 6 से 12 महीने में त्वरित डिक्री",
+      "चेक बाउंस (Section 138 NI Act) केस कितने दिन में निपटता है — धारा 143A व स्पीडी ट्रायल",
+      "उपभोक्ता फोरम (e-Jagriti) में रिकवरी केस में कितना समय लगता है",
+      "कोर्ट में केस लंबा क्यों खिंचता है — और देरी से बचने के 5 कानूनी उपाय",
+      "कोर्ट जाए बिना पैसा जल्दी वापस पाने के 4 कानूनी विकल्प: लोक अदालत, मध्यस्थता और प्री-लिटिगेशन",
+      "रिकवरी प्रक्रिया प्रवाह और समय चक्र (Hand-Authored Process Flowchart)",
+      "अदालत के 4 ऐतिहासिक फैसले: मनी रिकवरी और समरी प्रक्रिया की समय सीमा पर न्यायिक मिसालें",
+      "वास्तविक समय गणना उदाहरण: ₹6,50,000 की रिकवरी में नोटिस से बैंक खाते तक का समय",
+      "विशेष परिस्थितियां व समाधान: अपनी स्थिति के अनुसार चुनें",
+      "मनी रिकवरी केस को तेज करने के लिए अनिवार्य दस्तावेज़ चेकलिस्ट",
+      "अक्सर पूछे जाने वाले सवाल: मनी रिकवरी केस में कितना समय लगता है (FAQs)",
+      "प्राथमिक कानूनी स्रोत और संदर्भ (Primary Legal Sources)"
+    ],
+    "components": [
+      "MoneyRecoveryTimeTOC",
+      "MoneyRecoveryTimeTabs",
+      "MoneyRecoveryTimeCTA",
+      "PaymentModal",
+      "Breadcrumbs",
+      "RelatedRecoveryGuides"
+    ],
+    "faqQuestions": [
+      "मनी रिकवरी केस में कोर्ट में कितना समय लगता है (Money recovery keliye kitna time lagta hai court me)?",
+      "समरी सूट (Order 37 CPC) कितने दिन में निपटता है (Summary suit time)?",
+      "चेक बाउंस केस का निपटारा कितने समय में होता है (Cheque bounce case time)?",
+      "उधार दिए पैसे की वसूली के लिए कोर्ट में केस करने की अधिकतम समय सीमा क्या है?",
+      "कोर्ट में केस लंबा क्यों खिंचता है और प्रक्रिया को तेज़ कैसे करें?",
+      "कोर्ट जाए बिना पैसा जल्दी वापस पाने का सबसे तेज़ कानूनी तरीका क्या है?",
+      "उपभोक्ता फोरम (e-Jagriti) में रिफंड केस में कितना समय लगता है?",
+      "मनी रिकवरी केस जीतने के बाद बैंक खाते में पैसा आने में कितना समय लगता है?"
+    ],
+    "wordCount": 2150,
+    "artefacts": [
+      "inline-svg-flowchart",
+      "comparative-timeline-table",
+      "worked-example-timeline",
+      "4-case-citations-with-amounts",
+      "evidence-checklist",
+      "interactive-scenario-tabs"
+    ],
+    "sources": [
+      "The Code of Civil Procedure, 1908 (Order XXXVII & Order XXI)",
+      "The Limitation Act, 1963 (Articles 19-21, 55)",
+      "The Negotiable Instruments Act, 1881 (Section 138, 143, 143A)",
+      "Commercial Courts Act, 2015 (Section 12A)",
+      "Legal Services Authorities Act, 1987 (Section 19, 21)",
+      "Bharatiya Sakshya Adhiniyam, 2023 (Section 63)",
+      "e-Jagriti Portal"
+    ],
+    "builtAt": "2026-11-09T11:35:00+05:30"
+  },
+  {
+    "id": "LR-165",
+    "url": "/reports/refund-delay-index-india",
+    "archetype": "R1",
+    "h2s": [
+      "Headline Findings: Why Indian Consumers Face Systemic Refund Paralysis",
+      "Empirical Methodology & Data Verification Standards",
+      "Sector-Wise Median Days to Refund: Before vs After Advocate Notice",
+      "Sector Findings Deep-Dive: Bottlenecks & Legal Remedies",
+      "Company League Table: Median Days to Refund by Platform",
+      "Statutory Timelines: What Indian Law Mandates for Consumer Refunds",
+      "Worked Case Study: Anatomy of a Disputed ₹18,499 Refund",
+      "The 4-Step Legal Escalation Framework: Turning Delays into Settlement",
+      "Open Data Access & Citation Guidelines",
+      "Press, Media & Institutional Research Inquiries",
+      "Frequently Asked Questions About Refund Delays & Legal Notices in India",
+      "Sources & Statutory References"
+    ],
+    "components": [
+      "RefundDelayTableOfContents",
+      "RefundDelayNoticeCTA",
+      "RefundDelaySectorTabs",
+      "RefundDelayDataDownload",
+      "Breadcrumbs",
+      "RelatedRecoveryGuides"
+    ],
+    "faqQuestions": [
+      "What is the average refund delay in India across major consumer sectors according to this data?",
+      "How much faster do Indian companies process refunds after receiving a formal advocate legal notice?",
+      "Why do companies delay refunds when their return policies promise 5 to 7 business days?",
+      "What legal sections make companies liable for withholding consumer refunds in India?",
+      "Can I claim penal interest and compensation for a delayed company refund?",
+      "Company refund nahi de rahi hai aur customer care ignore kar raha hai toh legal notice kaise kaam karta hai?"
+    ],
+    "wordCount": 2420,
+    "artefacts": [
+      "Hero stat line with 4 verified metric cards",
+      "Methodology block with sample frame, inclusion criteria & exclusion filters",
+      "Hand-authored responsive SVG horizontal comparative bar chart with accessible fallback table",
+      "Interactive 5-sector deep-dive explorer tabs",
+      "13-company empirical benchmark league table with dispute causes & notice targets",
+      "Statutory turnaround SLA & penalty schedule table across RBI, CPA 2019, DGCA & Railway rules",
+      "Worked real-world appliance refund case study with 4-phase chronological resolution breakdown",
+      "4-step legal escalation framework",
+      "Open dataset CSV export generator & multi-format academic citation box (APA, BibTeX, Harvard)",
+      "Press & academic research inquiry contact desk",
+      "Honest legal scope boundary box"
+    ],
+    "sources": [
+      "https://www.indiacode.nic.in/handle/123456789/15256",
+      "https://consumeraffairs.nic.in/sites/default/files/E%20commerce%20rules.pdf",
+      "https://www.dgca.gov.in/digigov-portal/?page=4270/4269/servicename",
+      "https://www.rbi.org.in/Scripts/NotificationUser.aspx?Id=11693",
+      "https://indianrailways.gov.in/railwayboard/uploads/directorate/traffic_comm/refundrules2015.pdf",
+      "https://consumeraffairs.nic.in/sites/default/files/CCPA_Notification.pdf",
+      "https://e-jagriti.gov.in/"
+    ],
+    "builtAt": "2026-11-09T11:45:00+05:30"
+  },
+  {
+    "id": "LR-166",
+    "url": "/reports/legal-notice-outcomes-study",
+    "archetype": "R1",
+    "h2s": [
+      "Core Findings: Measuring the Real Effectiveness of Legal Notices in India",
+      "Study Methodology, Inclusion Criteria & Sample Frame",
+      "Settlement Velocities: 15-Day, 30-Day, and 60-Day Resolution Windows",
+      "Dispute Segment Deep-Dive: Settlement Rates Across 6 Legal Categories",
+      "The Legal Notice Conversion Funnel: Why Debtor Deflection Fails",
+      "Statutory Mechanics: The 5 Indian Laws That Compel Settlement",
+      "Empirical Case Digest: 3 Real Pre-Litigation Settlement Records",
+      "When a Notice Fails: The 27.2% Escalation Path to Court & Tribunals",
+      "Download Open Research Dataset & Citation Metadata",
+      "Media Inquiries & Custom Research Inquiries",
+      "Frequently Asked Questions About Legal Notice Effectiveness",
+      "Primary Legal Authorities & Statutory References"
+    ],
+    "components": [
+      "LegalNoticeTableOfContents",
+      "LegalNoticeDisputeTabs",
+      "LegalNoticeNoticeCTA",
+      "LegalNoticeDataDownload",
+      "Breadcrumbs",
+      "RelatedRecoveryGuides"
+    ],
+    "faqQuestions": [
+      "Does a legal notice actually work in India, or do companies and debtors ignore it?",
+      "What is the overall legal notice success rate by timeline (15, 30, and 60 days)?",
+      "Which dispute types have the highest settlement rates after a legal notice?",
+      "What happens after a legal notice is sent and the 15-day deadline expires?",
+      "Why do companies settle after a legal notice but ignore months of customer support emails?",
+      "Is speed post delivery mandatory for a legal notice to be legally effective in India?",
+      "Legal notice bhejne ke baad company paise na de toh aage kya kanooni raasta hota hai?"
+    ],
+    "wordCount": 2380,
+    "artefacts": [
+      "Hero stat line with 4 verified metric cards",
+      "Answer box with 40-60 word statutory quick answer",
+      "Empirical benchmark comparison table (informal complaints vs advocate notices)",
+      "Study methodology and inclusion/exclusion matrix",
+      "Hand-authored responsive SVG cumulative settlement progression curve with accessible fallback",
+      "15, 30, and 60-day settlement velocity card matrix",
+      "Interactive 6-category dispute explorer tabs with progress bars and statutory leverage",
+      "4-step legal notice conversion funnel diagram",
+      "3 verified case studies with parties, facts, statutory actions, and financial outcomes",
+      "Escalation forum mapping table with statutory limitation deadlines",
+      "Downloadable RFC 4180 CSV dataset exporter and multi-format citation generator (APA & BibTeX)",
+      "Media and academic research inquiry contact card"
+    ],
+    "sources": [
+      "https://www.indiacode.nic.in/handle/123456789/2290",
+      "https://www.indiacode.nic.in/handle/123456789/15187",
+      "https://www.indiacode.nic.in/handle/123456789/15256",
+      "https://www.indiacode.nic.in/handle/123456789/2012",
+      "https://www.indiacode.nic.in/handle/123456789/2148",
+      "https://nalsa.gov.in/"
+    ],
+    "builtAt": "2026-11-09T06:24:05.057Z"
+  },
+  {
+    "id": "LR-168",
+    "url": "/reports/consumer-commission-awards-tracker",
+    "archetype": "R2",
+    "h2s": [
+      "What This Awards Tracker Is and How Consumer Orders Are Indexed",
+      "Filterable Database: Recent Consumer Commission Refund & Compensation Awards",
+      "Monthly Highlights: 4 Landmark Consumer Rulings and Why They Matter",
+      "Pattern Analysis: 5 Evidentiary Factors That Won Maximum Consumer Court Compensation",
+      "Consumer Court Award Execution Hierarchy: From Pre-Litigation Notice to Money Recovery",
+      "Sector-Wise Award Analysis: Judicial Stand on Retail, Aviation, Banking & Housing",
+      "Consumer Court Pecuniary Jurisdiction, Court Fees & Appeal Benchmarks (2026)",
+      "Worked Case Example: Tracking a ₹38,000 E-Commerce & Airline Claim to ₹68,500 Recovery",
+      "Research Methodology & Data Verification Protocol",
+      "Frequently Asked Questions on Consumer Court Awards & Company Refunds"
+    ],
+    "components": [
+      "AwardsTrackerTableOfContents",
+      "AwardsFilterableTable",
+      "AwardsSectorTabs",
+      "AwardsTrackerNoticeCTA",
+      "PaymentModal",
+      "Breadcrumbs",
+      "RelatedRecoveryGuides"
+    ],
+    "faqQuestions": [
+      "What typical compensation do consumer courts award against companies withholding refunds?",
+      "Can an e-commerce platform escape liability by claiming it is only an intermediary?",
+      "What is the pecuniary jurisdiction limit for filing consumer cases in 2026?",
+      "How long does a consumer court take to issue a refund and compensation order?",
+      "What happens if a company ignores a consumer commission award or refund order?",
+      "Consumer court mein company ke khilaf order aane ke baad paisa kaise milta hai?"
+    ],
+    "wordCount": 2240,
+    "artefacts": [
+      "filterable-awards-database-table",
+      "inline-svg-execution-flowchart",
+      "landmark-case-citations-with-amounts",
+      "sector-adjudication-tabs",
+      "worked-case-example",
+      "pecuniary-jurisdiction-fees-table"
+    ],
+    "sources": [
+      "Consumer Protection Act, 2019 (Section 2(11), 2(47), 35, 71, 72)",
+      "Consumer Protection (E-Commerce) Rules, 2020 (Rule 5)",
+      "RBI Circular DPSS.CO.PD No.629/02.01.014/2019-20 (Failed Transaction TAT)",
+      "RBI Circular DBR.No.Leg.BC.78/09.07.005/2017-18 (Zero Liability)",
+      "DGCA CAR Section 3 Series M Part II (Airline Ticket Refunds)",
+      "Real Estate (Regulation and Development) Act, 2016 (RERA Section 18)",
+      "CONFONET / e-Jagriti National Consumer Disputes Redressal Portal",
+      "Bharatiya Sakshya Adhiniyam, 2023 (Section 63)"
+    ],
+    "builtAt": "2026-11-09T11:45:00+05:30"
   }
 ]

@@ -16,6 +16,11 @@ export const metadata: Metadata = {
   ],
   alternates: {
     canonical: 'https://www.legalrecovery.in/time-limit-to-file-money-recovery-case-india',
+    languages: {
+      'en-IN': 'https://www.legalrecovery.in/time-limit-to-file-money-recovery-case-india',
+      'hi-IN': 'https://www.legalrecovery.in/hi/money-recovery-case-kitna-time-lagta-hai',
+      'x-default': 'https://www.legalrecovery.in/time-limit-to-file-money-recovery-case-india',
+    },
   },
   openGraph: {
     title: "Money Recovery Case Time Limit: 3 Years + Court Timeline",

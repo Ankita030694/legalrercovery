@@ -185,7 +185,12 @@ const nextConfig: NextConfig = {
         destination: "/legal-notice-to/swiggy",
         permanent: true,
       },
-    ];
+        {
+        source: "/blog/understanding-charges-for-legal-notice",
+        destination: "/legal-notice-charges",
+        permanent: true,
+      },
+  ];
   },
 };
 
