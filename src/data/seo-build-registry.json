@@ -1,5 +1,61 @@
 [
   {
+    "id": "LR-176",
+    "url": "/gym-membership-cancellation-refund-legal-notice",
+    "archetype": "G5",
+    "h2s": [
+      "The Illusion of “No-Refund” Clauses: Why Gym Contracts Collapse Under Section 2(46) CPA",
+      "Myth vs. Fact: 7 Misconceptions About Gym Membership Fee Refunds",
+      "Landmark Consumer Court Precedents on Fitness & Gym Subscription Refunds",
+      "Select Your Gym Dispute Scenario: Causes, Legal Bases & Immediate Remedies",
+      "The 4-Stage Statutory Escalation Rail: From Demand to e-Jagriti Order",
+      "The 5-Step Legal Recovery Playbook: Reclaiming Your Gym Fees",
+      "Statutory Benchmarks: Timelines, Applicable Laws & Forum Fees",
+      "Worked Realistic Example: Reclaiming ₹22,500 from a Relocated Gym",
+      "Essential Evidence Checklist: Building an Unbeatable Gym Refund Claim",
+      "Core Statutory Clauses Used in an Advocate Legal Notice to Gym Management",
+      "Frequently Asked Questions: Gym Membership Cancellations & Legal Remedies",
+      "Primary Sources & Statutory Legal References"
+    ],
+    "components": [
+      "Breadcrumbs",
+      "GymTableOfContents",
+      "GymProblemTabs",
+      "GymNoticeCTA",
+      "RelatedRecoveryGuides"
+    ],
+    "faqQuestions": [
+      "Can a gym refuse to refund my annual membership fee in India?",
+      "Can I get a gym fee refund on medical grounds if my doctor advises against working out?",
+      "What legal action can I take if my gym closes down or shifts to a distant branch?",
+      "How do I dispute an unauthorised recurring gym fee auto-debit on my credit card?",
+      "How is a pro-rata gym refund calculated under consumer law?",
+      "What should be included in a legal notice for gym membership fee refund?",
+      "Can I file a consumer court complaint against gym franchisors like Gold's Gym, Anytime Fitness, or Cult.fit?"
+    ],
+    "wordCount": 2350,
+    "artefacts": [
+      "Section 2(46) CPA 2019 Unfair Contract Terms breakdown for fitness club agreements",
+      "Hand-authored SVG 4-Stage Statutory Escalation Rail",
+      "7 Myth vs Fact pairs contrasting gym sales policies with statutory consumer rights",
+      "4 verified Consumer Court precedents (Talwalkars, Cult.fit, Gold's Gym, Fitness First)",
+      "Statutory benchmarks table covering timelines, refund calculations, and e-Jagriti fee waivers",
+      "Interactive 4-scenario diagnostic tab component (branch closure, medical grounds, defect facility, auto-debits)",
+      "Worked ₹22,500 realistic recovery case study with concrete calculations and dates",
+      "Evidentiary checklist compliant with BSA Section 63",
+      "Advocate legal notice verbatim core draft clauses"
+    ],
+    "sources": [
+      "Consumer Protection Act 2019 Section 2(46), 2(11), 2(47)",
+      "CCPA Guidelines for Prevention and Regulation of Dark Patterns 2023",
+      "Indian Contract Act 1872 Section 23 & 56",
+      "RBI E-Mandate Circular RBI/2020-21/74",
+      "e-Jagriti Online Consumer Disputes Redressal Portal",
+      "Bharatiya Sakshya Adhiniyam 2023 Section 63"
+    ],
+    "builtAt": "2026-11-09T13:22:00+05:30"
+  },
+  {
     "id": "LR-167",
     "url": "/reports/salary-fnf-dispute-report-2026",
     "archetype": "R1",
@@ -4034,5 +4090,184 @@
       "Bharatiya Sakshya Adhiniyam, 2023 (Section 63)"
     ],
     "builtAt": "2026-11-09T11:45:00+05:30"
+  },
+  {
+    "id": "LR-175",
+    "url": "/manufacturing-defect-car-replacement-refund-lemon-law",
+    "archetype": "G6",
+    "h2s": [
+      "The Lemon Car Reality in India: When Your New Dream Vehicle Becomes a Workshop Nightmare",
+      "Chapter VI Consumer Protection Act 2019: The Statutory Shield for Defective Vehicle Buyers",
+      "Landmark Supreme Court & NCDRC Precedents on Defective Car Replacement & Refunds",
+      "Myth vs. Fact: 6 Dangerous Misconceptions About Defective Car Claims in India",
+      "The 30-Day / 3-Attempt Test: How Indian Courts Determine a Vehicle Is a Lemon",
+      "The Statutory Escalation Architecture: From Workshop Rejection to Replacement",
+      "The 5-Step Legal Playbook: How to Compel Car Carmakers to Replace or Refund",
+      "Key Facts & Statutory Benchmarks for Indian Defective Vehicle Recovery",
+      "Interactive Scenarios: Select Your Specific Vehicle Malfunction",
+      "Worked Example: How an Owner Compelled a Full ₹18.5L Buyback on a Defective SUV",
+      "Essential Evidence Checklist: 6 Critical Documents Before Serving Legal Notice",
+      "Frequently Asked Questions: Defective Car Replacement & Lemon Law",
+      "Primary Statutory Sources & Legal References"
+    ],
+    "components": [
+      "Breadcrumbs",
+      "DefectiveCarTableOfContents",
+      "DefectiveCarProblemTabs",
+      "DefectiveCarNoticeCTA",
+      "RelatedRecoveryGuides"
+    ],
+    "faqQuestions": [
+      "Does India have a Lemon Law for defective cars?",
+      "When is a car officially considered a lemon or manufacturing defect vehicle in India?",
+      "Can I get a full refund or a replacement car from the manufacturer under consumer court?",
+      "What evidence is essential to prove a manufacturing defect in consumer court?",
+      "Why must I serve a legal notice to both the car manufacturer and the dealership?",
+      "Can the car dealer force me to accept repeated repairs instead of a replacement?",
+      "What is the procedure and fee to send a legal notice for a defective car via LegalRecovery?"
+    ],
+    "wordCount": 2350,
+    "artefacts": [
+      "Product liability breakdown under Chapter VI Sections 82 to 87 CPA 2019",
+      "Hand-authored SVG 5-Stage Statutory Escalation Architecture diagram",
+      "6 Myth vs Fact pairs contrasting dealership excuses with statutory consumer rights",
+      "4 verified Supreme Court and NCDRC judgments (Hyundai, Maruti Suzuki, C.N. Anantharam, Tata Motors)",
+      "Defect Classification and Replacement Probability Matrix table",
+      "Statutory benchmarks comparison table across governing statutes, benchmarks, and remedies",
+      "Interactive 4-scenario diagnostic tab component (powertrain, EV battery, safety/airbags, electrical/CAN)",
+      "Worked ₹18.5L SUV DCT transmission recovery case study with concrete numbers",
+      "6-item evidentiary checklist compliant with Section 63 BSA 2023",
+      "Advocate statutory notice CTA connected to PaymentModal at ₹999 flat price"
+    ],
+    "sources": [
+      "Consumer Protection Act, 2019 (Act No. 35 of 2019) — Chapter VI Product Liability (Sections 82 to 87)",
+      "Motor Vehicles Act, 1988 (as amended) — Section 110A Mandatory Recall of Defective Motor Vehicles",
+      "Central Motor Vehicles Rules, 1989 (CMVR) — Rule 127C Mandatory Recall of Motor Vehicles",
+      "Sale of Goods Act, 1930 — Section 16 (Implied Conditions as to Quality, Fitness & Merchantability)",
+      "Hyundai Motor India Ltd. v. Shailendra Bhatnagar (2022) SCC OnLine SC 483",
+      "C.N. Anantharam v. Fiat India Ltd. & Ors. (2011) 1 SCC 460",
+      "Bharatiya Sakshya Adhiniyam, 2023 (BSA Section 63)",
+      "e-Jagriti Online Consumer Disputes Redressal Portal"
+    ],
+    "builtAt": "2026-11-09T07:53:13.883Z"
+  },
+  {
+    "id": "LR-178",
+    "url": "/commercial-lease-security-deposit-refund-legal-notice",
+    "archetype": "G4",
+    "h2s": [
+      "Commercial Lease Security Deposit Refund: The ₹5L to ₹50L Liquidity Trap",
+      "Comparison Matrix: 5 Legal Routes to Recover a Commercial Security Deposit",
+      "Which Route is Right for Your Business? 3 Tenancy Personas",
+      "Route 1: The 15-Day Advocate Legal Demand Notice (The First Decisive Strike)",
+      "Route 2: Order XXXVII CPC Summary Suit (Bypassing Multi-Year Regular Civil Trials)",
+      "Route 3: MSME Samadhaan & Section 18 Facilitation Council (For Registered MSMEs)",
+      "Route 4: Section 12A Pre-Institution Commercial Mediation & Neutralizing Arbitration Clauses",
+      "Dilapidations & Section 108(m) TPA: Legitimate vs. Illegitimate Deductions",
+      "Scenario Playbook: 5 Real-World Commercial Withholding Tactics & Remedies",
+      "Landmark Precedents Digest: 4 Key Court Orders on Commercial Deposit Recovery",
+      "Worked Case Example: ₹24,50,000 Tech Park Office Deposit Recovery",
+      "Actionable Handover & Evidence Checklist for Commercial Tenants",
+      "Frequently Asked Questions on Commercial Lease Security Deposit Recovery",
+      "Primary Sources & Governing Legal Authorities"
+    ],
+    "components": [
+      "CommercialLeaseTableOfContents",
+      "CommercialLeaseProblemTabs",
+      "CommercialLeaseNoticeCTA",
+      "Breadcrumbs",
+      "RelatedRecoveryGuides"
+    ],
+    "faqQuestions": [
+      "How long can a commercial landlord legally take to refund an office security deposit in India?",
+      "Can a commercial landlord deduct full repainting and deep-cleaning costs from the deposit?",
+      "What is an Order 37 summary suit, and why is it effective for recovering commercial deposits?",
+      "Can an MSME registered business use MSME Samadhaan to recover a commercial lease deposit?",
+      "What should I do if the commercial lease has an arbitration clause appointing the landlord's lawyer?",
+      "What evidence is essential to prove that an office or retail shop was returned in good condition?",
+      "Commercial landlord office ka security deposit wapas nahi kar raha toh legal notice kaise bheje?"
+    ],
+    "wordCount": 2350,
+    "artefacts": [
+      "5-route-comparative-matrix-table",
+      "3-tenancy-persona-decision-cards",
+      "fair-wear-and-tear-vs-damage-table",
+      "inline-svg-recovery-lifecycle-flowchart",
+      "4-verified-court-case-citations",
+      "worked-case-example-with-inr-breakdown",
+      "actionable-handover-and-evidence-checklist",
+      "5-scenario-interactive-tabs"
+    ],
+    "sources": [
+      "Transfer of Property Act, 1882 — Section 108",
+      "Code of Civil Procedure, 1908 — Order XXXVII",
+      "Commercial Courts Act, 2015 — Section 12A",
+      "Micro, Small and Medium Enterprises Development (MSMED) Act, 2006 — Section 18",
+      "Arbitration and Conciliation Act, 1996 — Section 9 & Section 12(5)",
+      "Indian Contract Act, 1872 — Section 73 & Section 74",
+      "Bharatiya Sakshya Adhiniyam, 2023 — Section 63"
+    ],
+    "builtAt": "2026-11-09T07:55:39.442Z"
+  },
+  {
+    "id": "LR-177",
+    "url": "/marriage-hall-banquet-booking-cancellation-refund",
+    "archetype": "G2",
+    "h2s": [
+      "The Wedding Venue Advance Trap: Why Banquet Halls Cannot Legally Keep 100% of Your Money",
+      "Common Cancellation Scenarios: What Are Your Real Recovery Odds?",
+      "The Legal Architecture: Section 74 Contract Act & Consumer Protection Act, 2019",
+      "Statutory Recovery Benchmarks: Notice Timeline vs Permissible Forfeiture",
+      "Banquet Refund Recovery Rail: From Written Notice to Consumer Award",
+      "Landmark Consumer Commission Rulings on Banquet & Wedding Venue Refunds",
+      "Actionable Legal Protocols by Banquet Cancellation Scenario",
+      "The 4-Step Playbook to Enforce Your Advance Refund",
+      "Worked Example: How a ₹3,00,000 Advance Was Recovered with Interest",
+      "Critical Mistakes That Weaken Your Banquet Refund Claim",
+      "The Banquet Refund Evidence Checklist (BSA 2023 Compliant)",
+      "Statutory Advocate Legal Notice Format for Wedding Venue Advance Refund",
+      "Honest Scope: What LegalRecovery Can and Cannot Do",
+      "Frequently Asked Questions on Marriage Hall & Banquet Refunds",
+      "Sources & Legal References"
+    ],
+    "components": [
+      "Breadcrumbs",
+      "BanquetBookingTableOfContents",
+      "BanquetBookingProblemTabs",
+      "BanquetBookingNoticeCTA",
+      "RelatedRecoveryGuides"
+    ],
+    "faqQuestions": [
+      "Can a marriage hall or banquet legally forfeit 100% of my booking advance if I cancel?",
+      "What does Indian Contract Act Section 74 say about wedding venue advance cancellation?",
+      "What if the banquet receipt has a stamp saying 'Advance is Strictly Non-Refundable'?",
+      "How do I prove that the banquet hall re-booked my wedding date to another customer?",
+      "Can I get a refund if the banquet hall was sealed by municipal authorities (MCD/BMC) or fire department?",
+      "What is the step-by-step procedure to file a consumer court case against a banquet hall?",
+      "Marriage hall booking advance wapas lene ke liye legal notice kaise bheje? (Hinglish)"
+    ],
+    "wordCount": 2450,
+    "artefacts": [
+      "Section 74 Indian Contract Act and Section 2(46) CPA 2019 Unfair Contract analysis",
+      "G2 Archetype 5-scenario card matrix with probability odds and remedies",
+      "Hand-authored SVG Banquet Refund Recovery Rail process flow diagram",
+      "Statutory Recovery Benchmarks comparison table (Notice window vs permissible deduction)",
+      "4 verified consumer court case citations (DCDRC Delhi, SCDRC Haryana, DCDRC Noida, NCDRC)",
+      "Interactive 5-tab dispute resolution component (BanquetBookingProblemTabs)",
+      "Worked ₹3,00,000 wedding booking advance recovery case study with concrete numbers",
+      "Mistakes to avoid list with custom ✕ styling",
+      "Evidence checklist compliant with Section 63 Bharatiya Sakshya Adhiniyam 2023",
+      "Statutory advocate notice format preview and PaymentModal integration at ₹999"
+    ],
+    "sources": [
+      "Indian Contract Act, 1872 — Section 74 & Section 73 (Mitigation)",
+      "Supreme Court of India — Kailash Nath Associates v. Delhi Development Authority (2015) 4 SCC 136",
+      "Consumer Protection Act, 2019 — Section 2(46) Unfair Contract, Section 2(47) Unfair Trade Practice & Section 2(11) Deficiency in Service",
+      "Supreme Court of India — Pioneer Urban Land & Infrastructure Ltd. v. Govindan Raghavan (2019) 5 SCC 725",
+      "National Consumer Disputes Redressal Commission (NCDRC) — Subhash Chander Mahajan v. Parsvnath Developers",
+      "Bharatiya Sakshya Adhiniyam, 2023 (BSA Section 63)",
+      "e-Jagriti Online Consumer Dispute Redressal Portal"
+    ],
+    "builtAt": "2026-11-09T07:56:15.688Z"
   }
 ]

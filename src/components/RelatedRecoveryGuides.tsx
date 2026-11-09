@@ -93,6 +93,12 @@ const CLUSTERS: Record<string, { heading: string; items: GuideItem[] }> = {
     heading: "Related Consumer Refund, E-Commerce & Vendor Recovery Guides",
     items: [
       {
+        title: "Marriage Hall or Banquet Booking Cancelled? Recovering Your Advance Deposit",
+        href: "/marriage-hall-banquet-booking-cancellation-refund",
+        tag: "Banquet Refund",
+        desc: "Section 74 Contract Act limits on advance forfeiture, genuine pre-estimate of loss, and advocate recovery notice.",
+      },
+      {
         title: "Consumer Court Awards Tracker: Refund & Compensation Orders",
         href: "/reports/consumer-commission-awards-tracker",
         tag: "Awards Tracker",
@@ -219,6 +225,12 @@ const CLUSTERS: Record<string, { heading: string; items: GuideItem[] }> = {
         desc: "Recover advance money paid to defaulting suppliers, contractors, or service vendors under Sec 73.",
       },
       {
+        title: "Defective Car Replacement or Full Refund: Indian Lemon Law Guide",
+        href: "/manufacturing-defect-car-replacement-refund-lemon-law",
+        tag: "Automotive Lemon Law",
+        desc: "Force carmaker vehicle replacement or 100% invoice refund for manufacturing defects under Chapter VI CPA 2019.",
+      },
+      {
         title: "Can You Refuse New Car Delivery? PDI Defects & Rights",
         href: "/refuse-new-car-delivery-pdi-defects",
         tag: "Auto / PDI",
@@ -267,6 +279,12 @@ const CLUSTERS: Record<string, { heading: string; items: GuideItem[] }> = {
         desc: "Strike down unfair 'non-refundable' banquet hall clauses under Section 2(46) Consumer Act.",
       },
       {
+        title: "Can a Gym Keep Your Annual Fee? Challenging No-Refund Clauses Legally",
+        href: "/gym-membership-cancellation-refund-legal-notice",
+        tag: "Gym Fee Refund",
+        desc: "Challenge unfair gym contracts under Section 2(46) CPA 2019 for closed branches, medical issues, and auto-debits.",
+      },
+      {
         title: "Legal Notice for Gym, Club or Coaching Fee Refund",
         href: "/legal-notice-to-gym-subscription-fee-refund",
         tag: "Membership Refund",
@@ -277,6 +295,18 @@ const CLUSTERS: Record<string, { heading: string; items: GuideItem[] }> = {
   property: {
     heading: "Related Security Deposit, Landlord, PG & Builder Refund Guides",
     items: [
+      {
+        title: "Commercial Landlord Withholding Office or Shop Deposit? How to Recover It Legally",
+        href: "/commercial-lease-security-deposit-refund-legal-notice",
+        tag: "Commercial Deposit",
+        desc: "Overcome dilapidation deductions, fair wear and tear claims, arbitration clauses, and recover ₹5L–₹50L+ office/retail deposits via legal notice & Order 37.",
+      },
+      {
+        title: "Builder Delayed Possession? Claim Monthly Delay Interest Under RERA",
+        href: "/rera-delayed-possession-compensation-interest",
+        tag: "RERA Delay Interest",
+        desc: "Claim monthly delay interest at SBI MCLR + 2% under RERA Section 18 while retaining your flat, plus notice formats and execution procedure.",
+      },
       {
         title: "Got a Smaller Flat Than Promised? Proportionate Refund Under RERA",
         href: "/carpet-area-shortfall-refund",
@@ -356,6 +386,12 @@ const CLUSTERS: Record<string, { heading: string; items: GuideItem[] }> = {
         desc: "2-month residential deposit cap (Sec 11), same-day refund on key handover, Second Schedule wear-and-tear rules & state adoption status.",
       },
       {
+        title: "Legal Notice to Tenant for Unpaid Rent & Eviction (Guide)",
+        href: "/legal-notice-to-tenant-for-unpaid-rent-eviction",
+        tag: "Tenant Eviction",
+        desc: "Recover rent arrears and issue a 15-day termination notice under Section 106 TPA with mesne profits.",
+      },
+      {
         title: "NoBroker Money-Back Plan or Token Refund Stuck? Escalate It",
         href: "/legal-notice-to/nobroker",
         tag: "NoBroker Refund",
@@ -402,6 +438,12 @@ const CLUSTERS: Record<string, { heading: string; items: GuideItem[] }> = {
   banking: {
     heading: "Related Cheque Bounce, Banking Auto-Debit & Cyber Fraud Guides",
     items: [
+      {
+        title: "Bank Account Frozen Due to Cyber Cell Notice? How to Unfreeze",
+        href: "/bank-account-frozen-cyber-cell-legal-remedies",
+        tag: "Cyber Cell Freeze",
+        desc: "Statutory remedies for cyber cell debit freezes under Section 106 BNSS / 102 CrPC, securing police NOCs, and Magistrate de-freezing.",
+      },
       {
         title: "Gaming App Wallet Balance Stuck After the Ban? Refunds",
         href: "/online-gaming-wallet-balance-refund",
@@ -574,6 +616,12 @@ const CLUSTERS: Record<string, { heading: string; items: GuideItem[] }> = {
         href: "/legal-notice-charges",
         tag: "Pricing Guide",
         desc: "Transparent breakdown of legal notice costs by dispute type, city, advocate vs platform fees, and postal charges.",
+      },
+      {
+        title: "Client Not Paying for Web Development? Legal Notice & Recovery",
+        href: "/web-development-client-not-paying-legal-notice",
+        tag: "Web & Software IP",
+        desc: "Section 19 Copyright lever, MSME 3× compound interest, host-level DMCA takedowns, and legal notice for unpaid software developers.",
       },
       {
         title: "Upwork or Fiverr Client Not Paying? Options From India",
@@ -762,6 +810,8 @@ function detectCluster(pathname: string): { heading: string; items: GuideItem[] 
     p.includes("ev-service") ||
     p.includes("battery") ||
     p.includes("refuse-new-car") ||
+    p.includes("manufacturing-defect") ||
+    p.includes("lemon-law") ||
     p.includes("pdi-defects") ||
     p.includes("hospital") ||
     p.includes("overbilling") ||
@@ -780,6 +830,9 @@ p.includes("school") ||
     p.includes("flight") ||
     p.includes("travel") ||
     p.includes("vendor-for-refund") ||
+    p.includes("banquet") ||
+    p.includes("marriage-hall") ||
+    p.includes("wedding-venue") ||
     p.includes("consumer") ||
     p.includes("insurance")
   ) {
