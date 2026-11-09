@@ -4,10 +4,10 @@ import * as path from "path";
 export interface SectorMetric {
   id: string;
   name: string;
-  sampleCount: number;
-  medianPreNoticeDays: number;
-  medianPostNoticeDays: number;
-  noticeResolutionRate: number;
+  sampleCount?: number;
+  medianPreNoticeDays?: number;
+  medianPostNoticeDays?: number;
+  noticeResolutionRate?: number;
   primaryCause: string;
   regulator: string;
   statutoryLimit: string;
@@ -16,10 +16,10 @@ export interface SectorMetric {
 export interface CompanyBenchmark {
   company: string;
   sector: string;
-  sampleSize: number;
-  medianPreNoticeDays: number;
-  medianPostNoticeDays: number;
-  resolutionRate: number;
+  sampleSize?: number;
+  medianPreNoticeDays?: number;
+  medianPostNoticeDays?: number;
+  resolutionRate?: number;
   primaryDisputeReason: string;
   commonEscalationNoticeTarget: string;
 }
@@ -51,6 +51,8 @@ export interface RefundDelayReportData {
   metaDescription: string;
   lastUpdated: string;
   reportingPeriod: string;
+  status?: "compiling" | "published";
+  hasData?: boolean;
   metrics: {
     totalClaimsAnalyzed: number;
     medianDaysPreNotice: number;
@@ -58,7 +60,7 @@ export interface RefundDelayReportData {
     overallResolutionRate: number;
     averageDisputedAmount: number;
     statutoryPenaltyEntitlementRate: number;
-  };
+  } | null;
   sectors: SectorMetric[];
   companyBenchmarks: CompanyBenchmark[];
   methodology: ReportMethodology;

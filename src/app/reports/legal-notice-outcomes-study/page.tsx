@@ -37,17 +37,17 @@ const FAQS = [
   {
     question: "Does a legal notice actually work in India, or do companies and debtors ignore it?",
     answer:
-      "Our empirical tracking of 6,740 legal notices across India reveals that legal notices work in 72.8% of cases, successfully compelling a pre-litigation settlement without requiring the claimant to enter court. While ordinary customer service emails and phone calls are ignored by Tier-1 support algorithms, a formal statutory advocate legal notice served via India Post Speed Post and tracked email bypasses support desks and lands directly on the desks of corporate legal counsel, Managing Directors, or HR Heads who recognise the financial and reputational liabilities of formal court summons.",
+      "A formal statutory advocate legal notice is the single most effective pre-litigation recovery mechanism under Indian law. While customer support tickets and informal reminders are filtered by automated scripts, an advocate notice served under Section 27 General Clauses Act and Section 63 BSA 2023 lands directly before corporate legal counsel, Managing Directors, or HR Heads. In-house counsels recognize the immediate financial and reputational liabilities of formal court summons, making pre-litigation settlement during the statutory 15-day cure window standard corporate practice.",
   },
   {
-    question: "What is the overall legal notice success rate by timeline (15, 30, and 60 days)?",
+    question: "What is the standard pre-litigation settlement timeline after a legal notice?",
     answer:
-      "Across our dataset, 36.4% of all disputes settle within the initial 15-day statutory cure window as recipients move swiftly to prevent court filings. An additional 23.2% settle within 16 to 30 days during structured follow-ups and draft plaint presentations, while 13.2% settle between 31 and 60 days during pre-litigation conciliation or Lok Adalat referrals. In total, 72.8% of cases resolve within 60 days, leaving only 27.2% requiring formal trial or consumer commission adjudication.",
+      "Statutory pre-litigation recovery follows three recognized phases: (1) Days 1 to 15 (the statutory cure window), where recipients move swiftly to prevent formal court filings; (2) Days 16 to 30, where draft plaint transmission prompts corporate legal desks to negotiate payment schedules; and (3) Days 31 to 60, involving pre-litigation conciliation or Lok Adalat referrals before contested trial listing.",
   },
   {
-    question: "Which dispute types have the highest settlement rates after a legal notice?",
+    question: "Which dispute types have the strongest legal leverage after an advocate notice?",
     answer:
-      "Employment and Full & Final (FnF) salary disputes have the highest success rate at 84.2%, driven by strict penalties under Section 17(2) of the Code on Wages and the risk of Labour Commissioner summons. Consumer e-commerce and retail refund disputes follow closely at 76.5% under the Consumer Protection Act 2019, while tenant security deposit disputes resolve at 74.2%. Cheque bounce notices under Section 138 of the Negotiable Instruments Act achieve a 67.8% settlement rate due to the risk of non-bailable criminal prosecution and mandatory 20% interim deposits.",
+      "Employment and Full & Final (FnF) salary disputes carry immediate criminal/penal leverage under Section 17(2) of the Code on Wages (mandatory 2-day wage settlement). Consumer e-commerce and retail refund disputes carry strict penalties under Section 2(11) of the Consumer Protection Act 2019. Cheque bounce notices under Section 138 of the Negotiable Instruments Act carry non-bailable criminal prosecution exposure and mandatory 20% interim deposits under Section 143A.",
   },
   {
     question: "What happens after a legal notice is sent and the 15-day deadline expires?",
@@ -93,7 +93,7 @@ export default function LegalNoticeOutcomesStudyPage() {
       name: "LegalRecovery Research Bureau",
       url: SITE_URL,
     },
-    temporalCoverage: "2024-04-01/2026-10-31",
+    temporalCoverage: "2026-05-25/2026-11-09",
     spatialCoverage: {
       "@type": "Place",
       name: "India",
@@ -213,9 +213,9 @@ export default function LegalNoticeOutcomesStudyPage() {
         <section className="w-full bg-gradient-to-b from-[#111827] via-[#1F2937] to-[#111827] text-white pt-32 pb-12 sm:pt-36 sm:pb-16 md:pt-40 px-4 sm:px-6 md:px-12 border-b border-slate-800 overflow-hidden">
           <div className="max-w-5xl mx-auto w-full">
             <div className="inline-flex flex-wrap items-center gap-1.5 sm:gap-2 px-3 sm:px-3.5 py-1.5 rounded-full text-[10px] sm:text-xs font-bold uppercase tracking-wider text-red-400 bg-red-950/60 border border-red-800/60 mb-4 sm:mb-5 max-w-full">
-              <span>National Empirical Study</span>
+              <span>National Legal Research</span>
               <span className="text-red-500">•</span>
-              <span>6,740 Tracked Cases</span>
+              <span>Post-May 2026 Cohort</span>
               <span className="text-red-500">•</span>
               <span>2026 Edition</span>
             </div>
@@ -230,10 +230,10 @@ export default function LegalNoticeOutcomesStudyPage() {
               className="bg-slate-800/90 border-l-4 border-[#DC2626] p-4 sm:p-5 rounded-r-xl shadow-lg mb-6 sm:mb-8 text-slate-100 text-xs sm:text-sm md:text-base leading-relaxed font-medium"
             >
               <p className="text-[11px] sm:text-xs uppercase tracking-wider font-extrabold text-red-400 mb-1">
-                Executive Finding: Does a Legal Notice Work in India?
+                Executive Overview: Does a Legal Notice Work in India?
               </p>
               <p>
-                Yes. Empirical data from 6,740 cases proves that formal advocate legal notices achieve an overall pre-litigation settlement rate of 72.8% across India without court filing. 36.4% settle within the statutory 15-day cure window, 23.2% within 30 days, and 13.2% within 60 days. Salary disputes lead at 84.2% settlement, followed by consumer refunds at 76.5% and cheque dishonour at 67.8%.
+                A formal advocate legal notice serves as the primary statutory pre-litigation recovery mechanism in India across consumer, employment, cheque dishonour, and tenancy claims. Operating under Section 27 General Clauses Act and Section 63 BSA 2023, the 15-day statutory cure window forces corporate legal counsel and debtors to evaluate litigation risk and defense retainers, compelling early settlement before court filing.
               </p>
             </div>
 
@@ -241,34 +241,34 @@ export default function LegalNoticeOutcomesStudyPage() {
             <div className="grid grid-cols-2 md:grid-cols-4 gap-3 sm:gap-4 p-4 sm:p-5 rounded-2xl bg-white/5 border border-white/10 backdrop-blur-sm">
               <div>
                 <p className="text-xl sm:text-2xl md:text-3xl font-black text-emerald-400">
-                  {studyData.metrics.overallSettlementRate}%
+                  15 Days
                 </p>
                 <p className="text-[11px] sm:text-xs text-slate-300 mt-0.5 sm:mt-1">
-                  Overall Pre-Litigation Settlement
+                  Statutory Cure Window
                 </p>
               </div>
               <div>
                 <p className="text-xl sm:text-2xl md:text-3xl font-black text-slate-100">
-                  {studyData.metrics.settlementWithin15Days}%
+                  30 Days
                 </p>
                 <p className="text-[11px] sm:text-xs text-slate-300 mt-0.5 sm:mt-1">
-                  Settled Within 15 Days
+                  Statutory Filing Limitation
                 </p>
               </div>
               <div>
                 <p className="text-xl sm:text-2xl md:text-3xl font-black text-amber-400">
-                  {studyData.metrics.medianDaysToSettlement} Days
+                  s.63 BSA
                 </p>
                 <p className="text-[11px] sm:text-xs text-slate-300 mt-0.5 sm:mt-1">
-                  Median Days to Settlement
+                  Electronic Service Presumption
                 </p>
               </div>
               <div>
                 <p className="text-xl sm:text-2xl md:text-3xl font-black text-red-400">
-                  8.4×
+                  May 2026+
                 </p>
                 <p className="text-[11px] sm:text-xs text-slate-300 mt-0.5 sm:mt-1">
-                  Cost Savings vs Court Litigation
+                  Post-Launch Cohort Tracking
                 </p>
               </div>
             </div>
@@ -300,7 +300,7 @@ export default function LegalNoticeOutcomesStudyPage() {
                   Every year, millions of Indian consumers, employees, landlords, and small businesses face unpaid dues, withheld refunds, and defaulted cheques. When victims complain via customer service tickets or informal phone calls, they are routinely met with automated deflection, repeated script loops, or outright silence. The central question for claimants considering legal action is: <strong className="font-bold text-slate-900">does a legal notice actually work, or is it merely an expensive formality?</strong>
                 </p>
                 <p className="text-sm sm:text-base text-slate-700 leading-relaxed">
-                  To provide an empirical, evidence-backed answer, the LegalRecovery Research Bureau evaluated <strong className="font-bold text-slate-900">6,740 anonymised dispute records</strong> dispatched and tracked between April 2024 and October 2026 across 28 Indian States and 8 Union Territories. Our analysis establishes that a formal statutory legal notice is the single most effective pre-litigation recovery mechanism in India, resolving <strong className="font-bold text-slate-900">72.8% of disputes without court proceedings</strong>.
+                  The LegalRecovery Research Bureau tracks pre-litigation legal notice outcomes across 28 Indian States and Union Territories following platform launch on May 25, 2026. A formal statutory notice creates documented legal cause of action, shifting claims from frontline deflection queues directly to corporate legal counsel and directors.
                 </p>
 
                 {/* Benchmark Comparison Table */}
@@ -317,28 +317,22 @@ export default function LegalNoticeOutcomesStudyPage() {
                     </thead>
                     <tbody className="divide-y divide-slate-200 text-slate-700 font-medium">
                       <tr>
-                        <th scope="row" className="p-3 sm:p-4 font-bold text-slate-900">Resolution Rate</th>
-                        <td className="p-3 sm:p-4 text-slate-500">18.4% within 60 days</td>
-                        <td className="p-3 sm:p-4 font-bold text-emerald-600">72.8% within 60 days</td>
-                        <td className="p-3 sm:p-4 text-slate-600">Nearly 4× higher settlement likelihood</td>
-                      </tr>
-                      <tr>
-                        <th scope="row" className="p-3 sm:p-4 font-bold text-slate-900">Median Days to Settlement</th>
-                        <td className="p-3 sm:p-4 text-slate-500">58 calendar days (or abandoned)</td>
-                        <td className="p-3 sm:p-4 font-bold text-slate-900">19 calendar days</td>
-                        <td className="p-3 sm:p-4 text-slate-600">67% reduction in recovery duration</td>
-                      </tr>
-                      <tr>
-                        <th scope="row" className="p-3 sm:p-4 font-bold text-slate-900">Debtor Escalation Desk</th>
+                        <th scope="row" className="p-3 sm:p-4 font-bold text-slate-900">Resolution Desk</th>
                         <td className="p-3 sm:p-4 text-slate-500">Tier-1 Chatbot / Support Call Center</td>
-                        <td className="p-3 sm:p-4 font-bold text-[#DC2626]">In-House Counsel / Legal Director</td>
-                        <td className="p-3 sm:p-4 text-slate-600">Directly bypasses deflection layers</td>
+                        <td className="p-3 sm:p-4 font-bold text-emerald-600">In-House Counsel / Legal Director</td>
+                        <td className="p-3 sm:p-4 text-slate-600">Bypasses scripted customer support deflection</td>
+                      </tr>
+                      <tr>
+                        <th scope="row" className="p-3 sm:p-4 font-bold text-slate-900">Statutory Timeline</th>
+                        <td className="p-3 sm:p-4 text-slate-500">Unspecified / Arbitrary Hold</td>
+                        <td className="p-3 sm:p-4 font-bold text-slate-900">15-Day Statutory Cure Period</td>
+                        <td className="p-3 sm:p-4 text-slate-600">Enforceable deadline under NI Act &amp; Civil Law</td>
                       </tr>
                       <tr>
                         <th scope="row" className="p-3 sm:p-4 font-bold text-slate-900">Legal Evidentiary Value</th>
                         <td className="p-3 sm:p-4 text-slate-500">Informal correspondence only</td>
-                        <td className="p-3 sm:p-4 font-bold text-slate-900">Statutory Notice under s.63 BSA 2023</td>
-                        <td className="p-3 sm:p-4 text-slate-600">Proves cause of action &amp; bad faith in court</td>
+                        <td className="p-3 sm:p-4 font-bold text-[#DC2626]">Statutory Notice under s.63 BSA 2023</td>
+                        <td className="p-3 sm:p-4 text-slate-600">Establishes bad faith &amp; secures litigation costs in court</td>
                       </tr>
                     </tbody>
                   </table>
@@ -408,89 +402,28 @@ export default function LegalNoticeOutcomesStudyPage() {
                 </div>
 
                 <p className="text-sm sm:text-base text-slate-700 leading-relaxed">
-                  A critical insight from our study is that the probability of dispute resolution is heavily front-loaded. Over 50% of all successful settlements occur within the first 15 calendar days—corresponding directly to the statutory cure window stipulated in the advocate legal notice.
+                  Under Indian pre-litigation procedure, statutory dispute resolution operates across three distinct chronological stages following advocate notice delivery: the mandatory 15-day statutory cure window, the draft plaint conciliation period, and pre-litigation Lok Adalat or forum referral.
                 </p>
 
-                {/* Handcrafted SVG Timeline / Conversion Chart */}
-                <div className="bg-white p-5 sm:p-7 rounded-2xl border border-slate-200 shadow-sm space-y-4">
-                  <span className="text-xs font-black uppercase tracking-wider text-slate-500 block">
-                    Cumulative Settlement Velocity Across 6,740 Legal Notices
-                  </span>
-                  
-                  <div className="w-full overflow-hidden">
-                    <svg
-                      viewBox="0 0 760 220"
-                      className="w-full h-auto text-slate-800"
-                      role="img"
-                      aria-label="Settlement rate progression graph showing 36.4% in 15 days, 59.6% in 30 days, 72.8% in 60 days"
-                    >
-                      {/* Grid Lines */}
-                      <line x1="60" y1="30" x2="720" y2="30" stroke="#E2E8F0" strokeWidth="1" strokeDasharray="4 4" />
-                      <line x1="60" y1="80" x2="720" y2="80" stroke="#E2E8F0" strokeWidth="1" strokeDasharray="4 4" />
-                      <line x1="60" y1="130" x2="720" y2="130" stroke="#E2E8F0" strokeWidth="1" strokeDasharray="4 4" />
-                      <line x1="60" y1="180" x2="720" y2="180" stroke="#CBD5E1" strokeWidth="1.5" />
-
-                      {/* Y-Axis Labels */}
-                      <text x="50" y="34" textAnchor="end" fontSize="11" fill="#64748B" fontWeight="600">80%</text>
-                      <text x="50" y="84" textAnchor="end" fontSize="11" fill="#64748B" fontWeight="600">50%</text>
-                      <text x="50" y="134" textAnchor="end" fontSize="11" fill="#64748B" fontWeight="600">25%</text>
-                      <text x="50" y="184" textAnchor="end" fontSize="11" fill="#64748B" fontWeight="600">0%</text>
-
-                      {/* Area Fill */}
-                      <path
-                        d="M 120 180 L 260 115 L 440 73 L 620 48 L 620 180 Z"
-                        fill="#FEE2E2"
-                        opacity="0.7"
-                      />
-
-                      {/* Trend Line */}
-                      <path
-                        d="M 120 180 L 260 115 L 440 73 L 620 48"
-                        fill="none"
-                        stroke="#DC2626"
-                        strokeWidth="3.5"
-                        strokeLinecap="round"
-                      />
-
-                      {/* Nodes */}
-                      <circle cx="120" cy="180" r="5" fill="#1E293B" stroke="#FFF" strokeWidth="2" />
-                      <circle cx="260" cy="115" r="6" fill="#DC2626" stroke="#FFF" strokeWidth="2" />
-                      <circle cx="440" cy="73" r="6" fill="#DC2626" stroke="#FFF" strokeWidth="2" />
-                      <circle cx="620" cy="48" r="6" fill="#059669" stroke="#FFF" strokeWidth="2" />
-
-                      {/* Node Labels */}
-                      <text x="120" y="202" textAnchor="middle" fontSize="11" fill="#475569" fontWeight="700">Notice Served (Day 0)</text>
-                      <text x="260" y="102" textAnchor="middle" fontSize="12" fill="#DC2626" fontWeight="800">36.4% (Day 15)</text>
-                      <text x="440" y="60" textAnchor="middle" fontSize="12" fill="#DC2626" fontWeight="800">59.6% (Day 30)</text>
-                      <text x="620" y="35" textAnchor="middle" fontSize="12" fill="#059669" fontWeight="800">72.8% Total (Day 60)</text>
-                    </svg>
-                  </div>
-
-                  <p className="text-xs text-slate-500 italic text-center">
-                    Figure 1: Cumulative dispute settlement rate over time following advocate legal notice delivery (N=6,740).
-                  </p>
-                </div>
-
-                {/* Granular Time Window Table */}
+                {/* 3-Stage Pre-Litigation Escalation Visual */}
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
-                  {studyData.timeframeComparison.slice(0, 3).map((item, idx) => (
-                    <div key={idx} className="bg-white p-5 rounded-2xl border border-slate-200 shadow-sm flex flex-col justify-between">
+                  {studyData.timeframeComparison.map((item, idx) => (
+                    <div key={idx} className="bg-white p-5 rounded-2xl border border-slate-200 shadow-sm flex flex-col justify-between space-y-3">
                       <div>
-                        <span className="text-[10px] font-black uppercase tracking-wider text-slate-500 block mb-1">
-                          Phase {idx + 1}
+                        <span className="text-[10px] font-black uppercase tracking-wider text-red-600 bg-red-50 px-2 py-0.5 rounded-full inline-block mb-2">
+                          Stage {idx + 1}
                         </span>
-                        <h3 className="text-base font-bold text-slate-900 mb-2">
+                        <h3 className="text-base font-bold text-slate-900 mb-1">
                           {item.window}
                         </h3>
-                        <p className="text-3xl font-black text-[#DC2626] mb-1">
-                          {item.percentage}%
-                        </p>
-                        <span className="text-xs font-semibold text-slate-500 block mb-3">
-                          Cumulative: <strong className="text-slate-800">{item.cumulativePercentage}%</strong>
-                        </span>
-                        <p className="text-xs text-slate-600 leading-relaxed">
+                        <p className="text-xs text-slate-600 leading-relaxed mt-2">
                           {item.driver}
                         </p>
+                      </div>
+                      <div className="pt-2 border-t border-slate-100 text-[11px] font-semibold text-slate-500">
+                        {idx === 0 && "Statutory Notice Cure Window (NI Act / Civil Law)"}
+                        {idx === 1 && "Draft Plaint Transmission to Corporate Counsel"}
+                        {idx === 2 && "Institutional Conciliation & Forum Listing"}
                       </div>
                     </div>
                   ))}
@@ -504,7 +437,7 @@ export default function LegalNoticeOutcomesStudyPage() {
                     id="heading-dispute-breakdown-title"
                     className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight"
                   >
-                    Dispute Segment Deep-Dive: Settlement Rates Across 6 Legal Categories
+                    Dispute Segment Deep-Dive: Procedural Analysis Across 6 Legal Categories
                   </h2>
                   <span className="text-xs font-bold text-slate-500 uppercase tracking-wider">
                     Segmented Analysis
@@ -512,7 +445,7 @@ export default function LegalNoticeOutcomesStudyPage() {
                 </div>
 
                 <p className="text-sm sm:text-base text-slate-700 leading-relaxed">
-                  Recovery velocities diverge sharply based on the substantive statute invoked. While employers facing Labour Commissioner summons under the Code on Wages settle 51.2% of claims within 15 days, real estate developers facing RERA proceedings require extended negotiation windows due to cash-flow constraints. Explore the interactive tabs below to examine sample counts, median days, and primary statutory leverage across all six dispute categories.
+                  Recovery dynamics diverge sharply based on the substantive statute invoked. While employers facing Labour Commissioner summons under the Code on Wages are governed by strict 2-day wage rules, real estate developers facing RERA proceedings require structured conciliation under Section 18. Explore the interactive tabs below to examine statutory leverage, standard debtor response patterns, and designated escalation forums across all six dispute categories.
                 </p>
 
                 {/* Interactive Dispute Segment Tabs Component */}

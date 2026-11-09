@@ -1,31 +1,20 @@
 {
   "reportId": "LR-167",
   "slug": "salary-fnf-dispute-report-2026",
-  "edition": "2026 First-Year Post-Code on Wages Empirical Report",
+  "edition": "2026 Post-Launch Ingestion Edition",
   "title": "Salary & FnF Disputes in India: 2026 Data Report",
   "h1": "Salary and FnF Disputes After the Code on Wages: First-Year Data",
   "metaTitle": "Salary & FnF Disputes in India: 2026 Data Report",
-  "metaDescription": "Data on unpaid salary and FnF disputes after the Code on Wages: delays, amounts, sectors and how fast employers paid after notice.",
+  "metaDescription": "Data report on unpaid salary and FnF disputes under the Code on Wages: statutory turnaround times, dispute causes, and legal notice recovery.",
   "lastUpdated": "2026-11-09",
-  "reportingPeriod": "Trailing 12 Months (Q1 2025 – Q1 2026)",
-  "metrics": {
-    "totalClaimsAnalyzed": 3420,
-    "medianDaysPreNotice": 68,
-    "medianDaysPostNotice": 12,
-    "overallResolutionRate": 81.6,
-    "averageDisputedAmount": 214500,
-    "statutoryTwoDayNonComplianceRate": 94.8,
-    "arbitraryDeductionsPrevalence": 54.2,
-    "recoveryWithoutCourtLitigationRate": 88.4
-  },
+  "reportingPeriod": "May 25, 2026 – Present (Post-Launch Cohort)",
+  "status": "compiling",
+  "hasData": false,
+  "metrics": null,
   "sectors": [
     {
       "id": "it-software",
       "name": "Information Technology & Software Services",
-      "sampleCount": 1240,
-      "medianPreNoticeDays": 72,
-      "medianPostNoticeDays": 11,
-      "noticeResolutionRate": 84.2,
       "primaryCause": "Notice period buyout disputes & arbitrary asset return holds",
       "regulator": "State Labour Commissioner / Code on Wages Authority",
       "statutoryLimit": "2 working days post-resignation under Section 17(2)"
@@ -33,10 +22,6 @@
     {
       "id": "startups",
       "name": "Startups & High-Growth Tech Enterprises",
-      "sampleCount": 780,
-      "medianPreNoticeDays": 86,
-      "medianPostNoticeDays": 10,
-      "noticeResolutionRate": 82.1,
       "primaryCause": "Runway cash constraints, unvested ESOP clawbacks & sudden restructuring",
       "regulator": "Ministry of Labour & Employment / NCLT Section 9",
       "statutoryLimit": "2 working days post-resignation under Section 17(2)"
@@ -44,10 +29,6 @@
     {
       "id": "bfsi-fintech",
       "name": "BFSI & FinTech Entities",
-      "sampleCount": 540,
-      "medianPreNoticeDays": 52,
-      "medianPostNoticeDays": 12,
-      "noticeResolutionRate": 86.5,
       "primaryCause": "Incentive bonus clawbacks, audit reconciliations & delayed gratuity",
       "regulator": "State Labour Commissioner / Payment of Gratuity Authority",
       "statutoryLimit": "Wages: 2 days; Gratuity: 30 days under Gratuity Act"
@@ -55,10 +36,6 @@
     {
       "id": "retail-ecommerce",
       "name": "Retail, E-Commerce & Supply Chain Logistics",
-      "sampleCount": 480,
-      "medianPreNoticeDays": 64,
-      "medianPostNoticeDays": 14,
-      "noticeResolutionRate": 77.4,
       "primaryCause": "Fabricated inventory shortage debits & unreturned uniform/device security",
       "regulator": "State Shops & Commercial Establishments Inspectorate",
       "statutoryLimit": "2 working days post-resignation under Section 17(2)"
@@ -66,10 +43,6 @@
     {
       "id": "healthcare-pharma",
       "name": "Healthcare, Diagnostics & Pharmaceuticals",
-      "sampleCount": 380,
-      "medianPreNoticeDays": 58,
-      "medianPostNoticeDays": 15,
-      "noticeResolutionRate": 75.8,
       "primaryCause": "Training bond forfeiture demands & clinical handover clearance hold",
       "regulator": "Labour Department / Industrial Tribunal",
       "statutoryLimit": "2 working days post-resignation under Section 17(2)"
@@ -78,68 +51,60 @@
   "disputeCauses": [
     {
       "cause": "Notice Period Buyout & Resignation Timing Conflict",
-      "percentage": 34.6,
-      "averageDeduction": 98000,
       "legalStatus": "Employer cannot withhold earned wages for unserved notice unless contractually quantified, and total deductions must not exceed 50% under Section 18(3)."
     },
     {
       "cause": "Arbitrary Asset Return & IT Clearance Delays",
-      "percentage": 27.2,
-      "averageDeduction": 64000,
       "legalStatus": "Holding entire FnF for uninspected laptops is unlawful; deductions require itemized appraisal and employee opportunity to respond."
     },
     {
       "cause": "Withheld Performance Bonuses & Commission Payouts",
-      "percentage": 19.8,
-      "averageDeduction": 142000,
       "legalStatus": "Wages definition under Section 2(y) includes remuneration expressed in terms of money; confirmed target bonuses constitute legally enforceable wages."
     },
     {
       "cause": "Gratuity & Earned Leave (EL) Encashment Denial",
-      "percentage": 18.4,
-      "averageDeduction": 115000,
-      "legalStatus": "Gratuity must be paid within 30 days with mandatory simple interest under Section 7(3A) of the Payment of Gratuity Act; leave encashment is part of terminal dues."
+      "legalStatus": "Section 7(3A) of Gratuity Act mandates simple interest on delayed payment after 30 days; 4 years 240 days fulfills 5-year eligibility."
     }
   ],
   "methodology": {
-    "sampleFrame": "Aggregated intake and post-dispatch resolution case registry of LegalRecovery.in across 3,420 employee claims from 1 January 2025 to 31 January 2026.",
+    "sampleFrame": "Aggregated intake and post-dispatch resolution case registry of LegalRecovery.in across employee claims initiated post-launch on May 25, 2026. Awaiting compilation.",
     "inclusionCriteria": [
-      "White-collar and technical employees in private commercial establishments across India",
-      "Terminal full and final settlement (FnF) or monthly salary arrears exceeding ₹25,000",
-      "Resignation, termination, mutual exit, or layoff formalised in writing",
-      "Statutory legal demand notice issued via advocate through speed post or certified digital channels"
+      "White-collar and blue-collar employment separation disputes with verified offer letters or employment agreements.",
+      "Documented Last Working Day (LWD) and written resignation or termination notices.",
+      "Clear wage default exceeding the Section 17(2) two-working-day statutory threshold.",
+      "Advocate demand notice served with Proof of Delivery to company directors or registered office."
     ],
     "exclusionCriteria": [
-      "Government, defence, and civil service employees subject to Central Administrative Tribunal (CAT)",
-      "Unverified anonymous submissions without pay slips, bank statements, or relieving requests",
-      "Ongoing criminal breach of trust investigations prior to formal employment resignation"
+      "Informal gig economy disputes without proof of master-servant contractual relationship.",
+      "Claims barred by limitation or where an active arbitral tribunal is already seized of the matter.",
+      "Unquantified bonus claims dependent entirely on future subjective promoter discretion."
     ],
     "definitions": {
-      "preNoticeDelay": "Calendar days elapsed between the statutory terminal payout deadline (Day 3 post-resignation/termination) and the date the employee instructed legal counsel.",
-      "postNoticeResolution": "Calendar days elapsed between verified delivery of the advocate legal demand notice and full or negotiated settlement credit in the employee's bank account.",
-      "noticeResolutionRate": "Percentage of escalated disputes resolved financially without requiring a formal conciliation trial or Labour Court recovery petition."
+      "preNoticeDelay": "Calendar days elapsed between employee's Last Working Day and advocate notice service.",
+      "postNoticeResolution": "Business days between notice delivery and receipt of cleared bank remittance.",
+      "noticeResolutionRate": "Percentage of wage claims resolved pre-litigation without requiring Labour Court proceedings."
     },
-    "dataIntegrity": "All claim values, dates, and sector classifications are verified against bank NEFT/RTGS receipts, resignation acceptance emails, and advocate service acknowledgments."
+    "dataIntegrity": "Strict empirical protocol: LegalRecovery commenced operations on May 25, 2026. In accordance with rigorous research standards, no estimated or pre-launch figures are published. The 2026 cohort dataset is under active compilation."
   },
   "sources": [
     {
-      "title": "Code on Wages, 2019 (Act No. 29 of 2019) — Section 17(2) Wages Payment on Resignation/Dismissal & Section 18 Deductions",
+      "title": "Code on Wages, 2019 (Act No. 29 of 2019) — Section 17(2) & Section 18 Deductions",
       "url": "https://www.indiacode.nic.in/handle/123456789/15259"
     },
     {
-      "title": "Industrial Relations Code, 2020 (Act No. 35 of 2020) — Grievance Redressal Mechanism & Dispute Adjudication",
-      "url": "https://www.indiacode.nic.in/handle/123456789/15260"
-    },
-    {
-      "title": "Payment of Gratuity Act, 1972 — Section 7(3A) Mandatory Interest on Delayed Gratuity Settlements",
+      "title": "Payment of Gratuity Act, 1972 — Section 4 & Section 7(3A) Mandatory Interest",
       "url": "https://www.indiacode.nic.in/handle/123456789/1518"
     },
     {
-      "title": "Ministry of Labour & Employment, Government of India — National Career Service Portal & Labour Law Reforms",
+      "title": "Industrial Relations Code, 2020 (Act No. 35 of 2020) — Dispute Redressal Mechanisms",
+      "url": "https://www.indiacode.nic.in/handle/123456789/15260"
+    },
+    {
+      "title": "Ministry of Labour & Employment, Government of India — Wage Code Rules and Guidelines",
       "url": "https://labour.gov.in/"
     },
     {
-      "title": "Bharatiya Sakshya Adhiniyam, 2023 (BSA Section 63 — Electronic Records Admissibility of Email Resignations & Notices)",
+      "title": "Bharatiya Sakshya Adhiniyam, 2023 — Section 63 Electronic Records Admissibility",
       "url": "https://www.indiacode.nic.in/handle/123456789/21735"
     }
   ]

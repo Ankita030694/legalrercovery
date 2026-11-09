@@ -155,7 +155,27 @@ export default function AwardsFilterableTable({ initialAwards }: AwardsFilterabl
               </tr>
             </thead>
             <tbody className="divide-y divide-slate-100">
-              {filteredAwards.length === 0 ? (
+              {initialAwards.length === 0 ? (
+                <tr>
+                  <td colSpan={6} className="py-12 px-6 text-center">
+                    <div className="max-w-md mx-auto space-y-3">
+                      <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-bold bg-amber-50 text-amber-800 border border-amber-200">
+                        <span className="w-2 h-2 rounded-full bg-amber-500 animate-pulse" />
+                        <span>Dataset Ingestion in Progress (Post-May 25, 2026 Cohort)</span>
+                      </div>
+                      <p className="text-sm font-bold text-slate-800">
+                        Consumer Court Awards Registry Awaiting Real Dataset Publication
+                      </p>
+                      <p className="text-xs text-slate-500 leading-relaxed">
+                        Our legal research team is actively compiling verified orders from e-Jagriti and CONFONET databases for the period following our platform launch on May 25, 2026. In strict accordance with institutional verification standards, zero simulated dockets or synthetic awards are published.
+                      </p>
+                      <div className="pt-2 text-xs text-slate-400">
+                        Advocates and litigants with certified orders may submit dockets to research@legalrecovery.in
+                      </div>
+                    </div>
+                  </td>
+                </tr>
+              ) : filteredAwards.length === 0 ? (
                 <tr>
                   <td colSpan={6} className="py-12 text-center text-slate-500">
                     <p className="text-sm font-semibold">No consumer court awards found matching your filter.</p>

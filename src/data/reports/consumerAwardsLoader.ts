@@ -37,8 +37,11 @@ export interface ConsumerAwardsTrackerData {
   metaTitle: string;
   metaDescription: string;
   lastUpdated: string;
+  reportingPeriod?: string;
   cadence: string;
-  metrics: TrackerSummaryMetrics;
+  status?: "compiling" | "published";
+  hasData?: boolean;
+  metrics: TrackerSummaryMetrics | null;
   awards: ConsumerAwardEntry[];
   methodology: {
     dataSources: string[];

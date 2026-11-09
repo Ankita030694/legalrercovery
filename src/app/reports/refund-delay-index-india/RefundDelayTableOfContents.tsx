@@ -191,8 +191,8 @@ export default function RefundDelayTableOfContents({
             <span className="font-mono font-bold text-slate-800">LR-165 (R1)</span>
           </div>
           <div className="flex justify-between">
-            <span className="text-slate-500">Sample Size:</span>
-            <span className="font-bold text-slate-800">4,820 Cases</span>
+            <span className="text-slate-500">Cohort Status:</span>
+            <span className="font-bold text-slate-800">Post-May 2026 (Active)</span>
           </div>
           <div className="flex justify-between">
             <span className="text-slate-500">Reporting Cadence:</span>

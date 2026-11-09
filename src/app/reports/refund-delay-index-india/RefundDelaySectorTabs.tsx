@@ -41,40 +41,28 @@ export default function RefundDelaySectorTabs({ sectors }: RefundDelaySectorTabs
         <div className="flex flex-col md:flex-row md:items-center justify-between gap-4 border-b border-slate-100 pb-5">
           <div>
             <span className="text-[11px] font-black uppercase tracking-wider text-red-600 bg-red-50 px-2.5 py-1 rounded-full">
-              Sample: {currentSector.sampleCount.toLocaleString()} Verified Claims
+              Post-Launch Cohort • In Ingestion
             </span>
             <h3 className="text-xl sm:text-2xl font-black text-slate-900 mt-2">
-              {currentSector.name} Refund Delay Profile
+              {currentSector.name} Refund Benchmark Profile
             </h3>
           </div>
 
           <div className="flex items-center gap-3">
             <div className="bg-slate-100 px-3 py-2 rounded-xl text-center">
-              <p className="text-[10px] text-slate-500 font-bold uppercase">Pre-Notice Median</p>
-              <p className="text-lg font-black text-red-600">{currentSector.medianPreNoticeDays} Days</p>
+              <p className="text-[10px] text-slate-500 font-bold uppercase">Statutory Limit</p>
+              <p className="text-sm font-black text-slate-800">{currentSector.statutoryLimit.split(";")[0]}</p>
             </div>
             <div className="text-slate-300 font-bold text-lg">→</div>
-            <div className="bg-emerald-50 border border-emerald-200 px-3 py-2 rounded-xl text-center">
-              <p className="text-[10px] text-emerald-700 font-bold uppercase">Post-Notice Median</p>
-              <p className="text-lg font-black text-emerald-700">{currentSector.medianPostNoticeDays} Days</p>
+            <div className="bg-red-50 border border-red-200 px-3 py-2 rounded-xl text-center">
+              <p className="text-[10px] text-red-700 font-bold uppercase">Legal Notice Cure</p>
+              <p className="text-sm font-black text-red-700">15 Days Statutory</p>
             </div>
           </div>
         </div>
 
         {/* Detailed Metrics Grid */}
         <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
-          <div className="p-4 rounded-xl bg-slate-50 border border-slate-200/70">
-            <p className="text-xs font-bold text-slate-500 uppercase tracking-wider mb-1">
-              Notice Resolution Rate
-            </p>
-            <p className="text-2xl font-black text-slate-900">
-              {currentSector.noticeResolutionRate}%
-            </p>
-            <p className="text-xs text-slate-600 mt-1">
-              Resolved in pre-litigation stage without contested court filings.
-            </p>
-          </div>
-
           <div className="p-4 rounded-xl bg-slate-50 border border-slate-200/70">
             <p className="text-xs font-bold text-slate-500 uppercase tracking-wider mb-1">
               Governing Regulatory Body
@@ -89,13 +77,25 @@ export default function RefundDelaySectorTabs({ sectors }: RefundDelaySectorTabs
 
           <div className="p-4 rounded-xl bg-slate-50 border border-slate-200/70">
             <p className="text-xs font-bold text-slate-500 uppercase tracking-wider mb-1">
-              Statutory Limit / Mandate
+              Mandatory Statutory TAT
             </p>
             <p className="text-xs font-bold text-slate-800">
               {currentSector.statutoryLimit}
             </p>
             <p className="text-xs text-slate-600 mt-1">
-              Mandatory legal SLA established under government guidelines.
+              Binding turnaround requirement under government guidelines.
+            </p>
+          </div>
+
+          <div className="p-4 rounded-xl bg-slate-50 border border-slate-200/70">
+            <p className="text-xs font-bold text-slate-500 uppercase tracking-wider mb-1">
+              Pre-Litigation Legal Notice Remedy
+            </p>
+            <p className="text-sm font-bold text-slate-800">
+              CPA 2019 Section 2(11) & 2(47)
+            </p>
+            <p className="text-xs text-slate-600 mt-1">
+              Formal demand with interest claim directly served to corporate legal desk.
             </p>
           </div>
         </div>
@@ -103,10 +103,10 @@ export default function RefundDelaySectorTabs({ sectors }: RefundDelaySectorTabs
         {/* Primary Bottleneck & Resolution Hook */}
         <div className="bg-amber-50/70 border-l-4 border-amber-500 p-4 rounded-r-xl">
           <h4 className="text-xs uppercase font-extrabold text-amber-800 tracking-wider mb-1">
-            Primary Operational Bottleneck
+            Primary Operational Friction Point
           </h4>
           <p className="text-xs sm:text-sm text-slate-800 leading-relaxed font-medium">
-            {currentSector.primaryCause}. Without statutory legal pressure, consumer complaints are systematically routed through Tier-1 bot scripts with scripted delays.
+            {currentSector.primaryCause}. When informal customer support channels deflect complaints through automated bots, serving a formal statutory legal notice transfers the matter to corporate legal counsel.
           </p>
         </div>
 

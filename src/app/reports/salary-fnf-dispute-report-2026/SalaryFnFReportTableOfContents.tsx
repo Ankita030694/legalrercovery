@@ -189,7 +189,7 @@ export default function SalaryFnFReportTableOfContents({
                 Data Verification
               </span>
               <p className="text-[11px] text-slate-600 leading-normal">
-                Based on 3,420 legal notice recoveries under Section 17(2) Code on Wages (2025–2026).
+                Based on statutory wage recovery frameworks under Section 17(2) Code on Wages (Post-May 2026 Cohort).
               </p>
             </div>
           </div>

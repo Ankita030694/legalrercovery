@@ -137,9 +137,9 @@ const MYTH_FACT_PAIRS = [
 
 const FAQS = [
   {
-    question: "What does the 2026 data show about FnF delays after the Code on Wages?",
+    question: "What does Indian labour law mandate about FnF timelines under the Code on Wages?",
     answer:
-      "LegalRecovery's analysis of 3,420 employment dispute cases reveals that despite Section 17(2) of the Code on Wages mandating wage settlement within 2 working days, 94.8% of private employers initially violated this rule. The median pre-notice FnF delay was 68 calendar days, with Startups (86 days) and IT/Software firms (72 days) exhibiting the longest wait times. However, upon serving a formal advocate legal demand notice, the median resolution time plummeted to 12 business days with an 81.6% pre-litigation settlement rate.",
+      "Under Section 17(2) of the Code on Wages, 2019, when an employee resigns, is terminated, or is dismissed, all earned wages and separation dues must be disbursed within two working days of the exit date. This statutory mandate overrides all internal company handbooks, offer letter terms, and 45-to-90-day payroll cycles.",
   },
   {
     question: "What is the legal deadline for Full and Final (FnF) settlement under Indian law?",
@@ -154,7 +154,7 @@ const FAQS = [
   {
     question: "How fast do employers pay unpaid salary after receiving an advocate legal notice?",
     answer:
-      "According to LegalRecovery's first-year empirical dataset, 81.6% of employers settled FnF dues within 12 business days of notice delivery. When corporate leadership and directors are served with specific Section 17(2) non-compliance penalties, finance teams prioritize release to avoid Labour Commissioner summons and statutory interest.",
+      "Serving a formal advocate statutory demand notice shifts the dispute from HR support desks directly to company directors and legal counsel. In-house counsels prioritize settling legitimate wage claims during the 15-day statutory window to avoid Section 54 penal sanctions, Labour Commissioner summons, and mandatory interest accrual.",
   },
   {
     question: "What legal actions can be taken if an employer ignores a legal notice for FnF?",
@@ -178,9 +178,9 @@ const DATASET_SCHEMA = {
   "@type": "Dataset",
   name: "India Salary & FnF Disputes Post-Code on Wages Empirical Report 2026",
   description:
-    "Empirical dataset analyzing 3,420 resolved and escalated employment wage and Full and Final (FnF) dispute claims across Indian commercial sectors following the implementation of Section 17(2) of the Code on Wages, 2019.",
+    "Statutory data asset analyzing unpaid salary, notice buyout deductions, and Full and Final (FnF) resolution frameworks under Section 17(2) of the Code on Wages, 2019.",
   url: `${SITE_URL}/reports/salary-fnf-dispute-report-2026`,
-  temporalCoverage: "2025/2026",
+  temporalCoverage: "2026-05-25/2026-11-09",
   spatialCoverage: {
     "@type": "Place",
     name: "India",
@@ -313,9 +313,9 @@ export default function SalaryFnFDisputeReportPage() {
             <div className="inline-flex flex-wrap items-center gap-1.5 sm:gap-2 px-3 sm:px-3.5 py-1.5 rounded-full text-[10px] sm:text-xs font-bold uppercase tracking-wider text-red-400 bg-red-950/60 border border-red-800/60 mb-4 sm:mb-5 max-w-full">
               <span>Section 17(2) Code on Wages</span>
               <span className="text-red-500">•</span>
-              <span>3,420 Claims Analyzed</span>
+              <span>Post-May 2026 Cohort</span>
               <span className="text-red-500">•</span>
-              <span>2026 First-Year Data</span>
+              <span>2026 Edition</span>
             </div>
 
             <h1 className="text-2xl sm:text-3xl md:text-5xl font-black tracking-tight text-white leading-tight mb-4 sm:mb-6 break-words">
@@ -331,27 +331,27 @@ export default function SalaryFnFDisputeReportPage() {
                 Executive Data Summary (Section 17(2) Compliance &amp; Recovery Metrics)
               </p>
               <p>
-                Despite Section 17(2) of the Code on Wages mandating complete salary and FnF payment within <strong>2 working days</strong> of exit, 94.8% of Indian private employers breached this rule, averaging <strong>68 days pre-notice delay</strong>. Serving an advocate statutory demand notice compressed resolution to a median of <strong>12 business days</strong> with an <strong>81.6% pre-litigation settlement rate</strong>.
+                Under Section 17(2) of the Code on Wages, 2019, employers are statutorily required to pay all wages and Full and Final (FnF) separation dues within <strong>two working days</strong> of exit. While corporate internal policies routinely attempt to enforce unilateral 45-to-90-day waiting periods or arbitrary notice buyout clawbacks, serving an advocate statutory demand notice creates direct legal cause of action under Section 17(2) and Section 18, compelling payroll clearance before Labour Authority escalation.
               </p>
             </div>
 
             {/* 4 Verified Summary Stat Line Cards */}
             <div className="grid grid-cols-2 md:grid-cols-4 gap-3 sm:gap-4 p-4 sm:p-5 rounded-2xl bg-white/5 border border-white/10 backdrop-blur-sm">
               <div>
-                <p className="text-xl sm:text-2xl md:text-3xl font-black text-red-400">68 Days</p>
-                <p className="text-[11px] sm:text-xs text-slate-300 mt-0.5 sm:mt-1">Median Pre-Notice Delay</p>
+                <p className="text-xl sm:text-2xl md:text-3xl font-black text-red-400">2 Days</p>
+                <p className="text-[11px] sm:text-xs text-slate-300 mt-0.5 sm:mt-1">Statutory Limit (s.17(2))</p>
               </div>
               <div>
-                <p className="text-xl sm:text-2xl md:text-3xl font-black text-emerald-400">12 Days</p>
-                <p className="text-[11px] sm:text-xs text-slate-300 mt-0.5 sm:mt-1">Median Post-Notice Payout</p>
+                <p className="text-xl sm:text-2xl md:text-3xl font-black text-emerald-400">50% Cap</p>
+                <p className="text-[11px] sm:text-xs text-slate-300 mt-0.5 sm:mt-1">Max Wage Deduction (s.18(3))</p>
               </div>
               <div>
-                <p className="text-xl sm:text-2xl md:text-3xl font-black text-amber-400">81.6%</p>
-                <p className="text-[11px] sm:text-xs text-slate-300 mt-0.5 sm:mt-1">Notice Settlement Rate</p>
+                <p className="text-xl sm:text-2xl md:text-3xl font-black text-amber-400">15 Days</p>
+                <p className="text-[11px] sm:text-xs text-slate-300 mt-0.5 sm:mt-1">Notice Cure Window</p>
               </div>
               <div>
-                <p className="text-xl sm:text-2xl md:text-3xl font-black text-slate-100">₹2.14L</p>
-                <p className="text-[11px] sm:text-xs text-slate-300 mt-0.5 sm:mt-1">Avg Disputed FnF Amount</p>
+                <p className="text-xl sm:text-2xl md:text-3xl font-black text-slate-100">May 2026+</p>
+                <p className="text-[11px] sm:text-xs text-slate-300 mt-0.5 sm:mt-1">Post-Launch Cohort Tracking</p>
               </div>
             </div>
           </div>
@@ -389,7 +389,7 @@ export default function SalaryFnFDisputeReportPage() {
                   In practice, however, Indian corporate human resource departments have maintained entrenched pre-code habits. Internal exit manuals continue to proclaim unilateral <em>&quot;45 to 90 days after the last working day (LWD)&quot;</em> payout cycles, while finance desks routinely hold salary balances hostage against protracted asset inspection tickets, notice buyout contests, or cash-flow constraints.
                 </p>
                 <p className="text-sm sm:text-base text-slate-700 leading-relaxed">
-                  This report documents the first comprehensive empirical study of <strong>3,420 escalated wage and FnF recovery disputes</strong> handled by LegalRecovery.in between January 2025 and January 2026. The findings establish that corporate compliance does not happen spontaneously: without formal statutory assertion under Section 17(2) and Section 18, employees face an average wait of over 2 months. Conversely, serving an advocate legal demand notice triggers a rapid corporate re-evaluation, unlocking settlement in over 8 out of 10 cases within 12 business days.
+                  The LegalRecovery Research Cell monitors wage default trends and FnF dispute resolution across Indian commercial establishments following platform launch on May 25, 2026. Without formal statutory assertion under Section 17(2) and Section 18, exiting employees face unilateral internal HR delays. Serving an advocate legal demand notice triggers rapid corporate re-evaluation, unlocking settlement directly through corporate legal and finance desks.
                 </p>
               </section>
 
@@ -472,111 +472,37 @@ export default function SalaryFnFDisputeReportPage() {
                 </div>
 
                 <p className="text-sm sm:text-base text-slate-700 leading-relaxed">
-                  The chart below compares the median delay experienced by employees waiting on internal corporate HR processes against the turnaround time achieved once an advocate demand notice was delivered. In every industry vertical, legal escalation collapsed settlement timelines by over 75%.
+                  Under the Code on Wages, 2019, wage recovery follows a structured four-stage statutory escalation hierarchy, moving from informal payroll requests to enforceable Labour Commissioner certificates.
                 </p>
 
-                {/* SVG Chart 1: Sector Comparison Bar Chart */}
-                <div className="bg-white rounded-2xl border border-slate-200 p-5 sm:p-7 shadow-xs overflow-x-auto">
-                  <div className="min-w-[550px]">
-                    <div className="flex items-center justify-between mb-4">
-                      <div>
-                        <span className="text-[11px] font-black uppercase tracking-wider text-slate-400 block">
-                          Exhibit 1: Median Settlement Delay (Calendar Days)
-                        </span>
-                        <h3 className="text-sm sm:text-base font-bold text-slate-900">
-                          Pre-Notice Corporate Delay vs. Post-Notice Legal Resolution
-                        </h3>
-                      </div>
-                      <div className="flex items-center gap-4 text-xs">
-                        <span className="flex items-center gap-1.5 font-semibold text-slate-600">
-                          <span className="w-3 h-3 rounded-sm bg-red-600 inline-block" /> Pre-Notice Days
-                        </span>
-                        <span className="flex items-center gap-1.5 font-semibold text-slate-600">
-                          <span className="w-3 h-3 rounded-sm bg-emerald-500 inline-block" /> Post-Notice Days
-                        </span>
-                      </div>
-                    </div>
-
-                    <svg viewBox="0 0 600 260" className="w-full h-auto font-sans" role="img" aria-label="Bar chart comparing pre-notice delay days and post-notice resolution days across sectors">
-                      {/* Grid Lines */}
-                      <line x1="140" y1="20" x2="580" y2="20" stroke="#f1f5f9" strokeWidth="1" />
-                      <line x1="140" y1="65" x2="580" y2="65" stroke="#f1f5f9" strokeWidth="1" />
-                      <line x1="140" y1="110" x2="580" y2="110" stroke="#f1f5f9" strokeWidth="1" />
-                      <line x1="140" y1="155" x2="580" y2="155" stroke="#f1f5f9" strokeWidth="1" />
-                      <line x1="140" y1="200" x2="580" y2="200" stroke="#f1f5f9" strokeWidth="1" />
-                      <line x1="140" y1="225" x2="580" y2="225" stroke="#cbd5e1" strokeWidth="1.5" />
-
-                      {/* IT / Software */}
-                      <text x="130" y="42" textAnchor="end" className="text-[11px] font-bold fill-slate-700">IT &amp; Software</text>
-                      <rect x="140" y="30" width="316" height="12" rx="3" fill="#DC2626" />
-                      <text x="462" y="40" className="text-[10px] font-bold fill-red-700">72d</text>
-                      <rect x="140" y="45" width="48" height="12" rx="3" fill="#10B981" />
-                      <text x="194" y="55" className="text-[10px] font-bold fill-emerald-700">11d</text>
-
-                      {/* Startups */}
-                      <text x="130" y="87" textAnchor="end" className="text-[11px] font-bold fill-slate-700">Startups &amp; Tech</text>
-                      <rect x="140" y="75" width="378" height="12" rx="3" fill="#DC2626" />
-                      <text x="524" y="85" className="text-[10px] font-bold fill-red-700">86d</text>
-                      <rect x="140" y="90" width="44" height="12" rx="3" fill="#10B981" />
-                      <text x="190" y="100" className="text-[10px] font-bold fill-emerald-700">10d</text>
-
-                      {/* BFSI & FinTech */}
-                      <text x="130" y="132" textAnchor="end" className="text-[11px] font-bold fill-slate-700">BFSI &amp; FinTech</text>
-                      <rect x="140" y="120" width="228" height="12" rx="3" fill="#DC2626" />
-                      <text x="374" y="130" className="text-[10px] font-bold fill-red-700">52d</text>
-                      <rect x="140" y="135" width="52" height="12" rx="3" fill="#10B981" />
-                      <text x="198" y="145" className="text-[10px] font-bold fill-emerald-700">12d</text>
-
-                      {/* Retail & Logistics */}
-                      <text x="130" y="177" textAnchor="end" className="text-[11px] font-bold fill-slate-700">Retail / Logistics</text>
-                      <rect x="140" y="165" width="281" height="12" rx="3" fill="#DC2626" />
-                      <text x="427" y="175" className="text-[10px] font-bold fill-red-700">64d</text>
-                      <rect x="140" y="180" width="61" height="12" rx="3" fill="#10B981" />
-                      <text x="207" y="190" className="text-[10px] font-bold fill-emerald-700">14d</text>
-
-                      {/* Axis Scale */}
-                      <text x="140" y="243" textAnchor="middle" className="text-[10px] fill-slate-400 font-semibold">0d</text>
-                      <text x="250" y="243" textAnchor="middle" className="text-[10px] fill-slate-400 font-semibold">25d</text>
-                      <text x="360" y="243" textAnchor="middle" className="text-[10px] fill-slate-400 font-semibold">50d</text>
-                      <text x="470" y="243" textAnchor="middle" className="text-[10px] fill-slate-400 font-semibold">75d</text>
-                      <text x="580" y="243" textAnchor="middle" className="text-[10px] fill-slate-400 font-semibold">100d</text>
-                    </svg>
+                {/* 4-Stage Legal Escalation Progression */}
+                <div className="grid grid-cols-1 sm:grid-cols-4 gap-3">
+                  <div className="p-4 bg-slate-900 text-white rounded-xl text-center">
+                    <span className="text-xs font-black uppercase text-red-400 block mb-1">Stage 1</span>
+                    <span className="text-lg font-black text-white">Day 1–2</span>
+                    <p className="text-xs font-bold text-slate-300 mt-1">Section 17(2) Statutory Limit</p>
+                    <p className="text-[11px] text-slate-400 mt-0.5">Mandatory exit payout deadline</p>
                   </div>
-                </div>
 
-                {/* SVG Chart 2: Resolution Funnel */}
-                <div className="bg-white rounded-2xl border border-slate-200 p-5 sm:p-7 shadow-xs">
-                  <span className="text-[11px] font-black uppercase tracking-wider text-slate-400 block mb-1">
-                    Exhibit 2: Legal Escalation Resolution Funnel
-                  </span>
-                  <h3 className="text-sm sm:text-base font-bold text-slate-900 mb-4">
-                    Attrition &amp; Settlement Progression Across 3,420 Formal Notice Filings
-                  </h3>
+                  <div className="p-4 bg-slate-800 text-white rounded-xl text-center">
+                    <span className="text-xs font-black uppercase text-red-400 block mb-1">Stage 2</span>
+                    <span className="text-lg font-black text-red-300">Day 3–15</span>
+                    <p className="text-xs font-bold text-red-100 mt-1">Advocate Demand Notice</p>
+                    <p className="text-[11px] text-slate-400 mt-0.5">15-day statutory cure window</p>
+                  </div>
 
-                  <div className="grid grid-cols-1 sm:grid-cols-4 gap-3">
-                    <div className="p-4 bg-slate-900 text-white rounded-xl text-center">
-                      <span className="text-2xl font-black text-white">100%</span>
-                      <p className="text-xs font-bold text-slate-300 mt-1">Advocate Notice Served</p>
-                      <p className="text-[11px] text-slate-400 mt-0.5">3,420 Claims</p>
-                    </div>
+                  <div className="p-4 bg-slate-800 text-white rounded-xl text-center">
+                    <span className="text-xs font-black uppercase text-amber-400 block mb-1">Stage 3</span>
+                    <span className="text-lg font-black text-amber-300">Day 16–30</span>
+                    <p className="text-xs font-bold text-amber-100 mt-1">Legal Desk Conciliation</p>
+                    <p className="text-[11px] text-slate-400 mt-0.5">Pre-litigation payroll release</p>
+                  </div>
 
-                    <div className="p-4 bg-red-900/90 text-white rounded-xl text-center">
-                      <span className="text-2xl font-black text-red-300">62.4%</span>
-                      <p className="text-xs font-bold text-red-100 mt-1">Paid on Receipt (1-7 Days)</p>
-                      <p className="text-[11px] text-red-200 mt-0.5">2,134 Claims</p>
-                    </div>
-
-                    <div className="p-4 bg-amber-900/90 text-white rounded-xl text-center">
-                      <span className="text-2xl font-black text-amber-300">19.2%</span>
-                      <p className="text-xs font-bold text-amber-100 mt-1">Settled on Counter-Offer</p>
-                      <p className="text-[11px] text-amber-200 mt-0.5">656 Claims</p>
-                    </div>
-
-                    <div className="p-4 bg-emerald-900/90 text-white rounded-xl text-center">
-                      <span className="text-2xl font-black text-emerald-300">18.4%</span>
-                      <p className="text-xs font-bold text-emerald-100 mt-1">Labour Authority Filings</p>
-                      <p className="text-[11px] text-emerald-200 mt-0.5">630 Claims</p>
-                    </div>
+                  <div className="p-4 bg-slate-800 text-white rounded-xl text-center">
+                    <span className="text-xs font-black uppercase text-emerald-400 block mb-1">Stage 4</span>
+                    <span className="text-lg font-black text-emerald-300">Day 31+</span>
+                    <p className="text-xs font-bold text-emerald-100 mt-1">Section 45 Labour Claim</p>
+                    <p className="text-[11px] text-slate-400 mt-0.5">Statutory revenue recovery</p>
                   </div>
                 </div>
               </section>
@@ -588,10 +514,10 @@ export default function SalaryFnFDisputeReportPage() {
                     id="heading-sector-benchmarks-title"
                     className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight"
                   >
-                    Sector Benchmarks: How Long Companies Take to Pay FnF Dues
+                    Sector Benchmarks: Statutory Turnaround Rules Across Industries
                   </h2>
                   <span className="text-xs font-bold text-slate-500 uppercase tracking-wider">
-                    Full Empirical Matrix
+                    Statutory Framework
                   </span>
                 </div>
 
@@ -601,10 +527,8 @@ export default function SalaryFnFDisputeReportPage() {
                       <thead>
                         <tr className="bg-slate-900 text-white">
                           <th className="py-3.5 px-4 font-bold">Sector / Industry</th>
-                          <th className="py-3.5 px-3 font-bold text-center">Sample</th>
-                          <th className="py-3.5 px-3 font-bold text-center">Pre-Notice Delay</th>
-                          <th className="py-3.5 px-3 font-bold text-center">Post-Notice Delay</th>
-                          <th className="py-3.5 px-3 font-bold text-center">Resolution Rate</th>
+                          <th className="py-3.5 px-3 font-bold">Governing Authority</th>
+                          <th className="py-3.5 px-3 font-bold text-red-400">Statutory Limit SLA</th>
                           <th className="py-3.5 px-4 font-bold">Primary Dispute Trigger</th>
                         </tr>
                       </thead>
@@ -612,10 +536,8 @@ export default function SalaryFnFDisputeReportPage() {
                         {reportData.sectors.map((s, idx) => (
                           <tr key={s.id} className={idx % 2 === 0 ? "bg-white" : "bg-slate-50/70"}>
                             <td className="py-3.5 px-4 font-bold text-slate-900">{s.name}</td>
-                            <td className="py-3.5 px-3 text-center font-medium">{s.sampleCount}</td>
-                            <td className="py-3.5 px-3 text-center font-bold text-red-600">{s.medianPreNoticeDays} days</td>
-                            <td className="py-3.5 px-3 text-center font-bold text-emerald-600">{s.medianPostNoticeDays} days</td>
-                            <td className="py-3.5 px-3 text-center font-black text-slate-900">{s.noticeResolutionRate}%</td>
+                            <td className="py-3.5 px-3 font-semibold text-slate-700">{s.regulator}</td>
+                            <td className="py-3.5 px-3 font-bold text-red-600">{s.statutoryLimit}</td>
                             <td className="py-3.5 px-4 text-xs text-slate-600 leading-relaxed">{s.primaryCause}</td>
                           </tr>
                         ))}
@@ -660,10 +582,10 @@ export default function SalaryFnFDisputeReportPage() {
                       <div>
                         <div className="flex items-center justify-between gap-2 mb-2">
                           <span className="text-xs font-black uppercase tracking-wider px-2 py-0.5 rounded-md bg-red-50 text-red-700 border border-red-200">
-                            {cause.percentage}% of Disputes
+                            {cause.percentage ? `${cause.percentage}% of Disputes` : `Dispute Driver #${i + 1}`}
                           </span>
                           <span className="text-xs font-extrabold text-slate-900">
-                            Avg: ₹{cause.averageDeduction.toLocaleString("en-IN")}
+                            {cause.averageDeduction ? `Avg: ₹${cause.averageDeduction.toLocaleString("en-IN")}` : "Code on Wages s.18"}
                           </span>
                         </div>
                         <h3 className="text-sm sm:text-base font-bold text-slate-900 mb-2">

@@ -87,7 +87,7 @@ const FAQS = [
   {
     question: "How long does a consumer court take to issue a refund and compensation order?",
     answer:
-      "While Section 38(7) of the Consumer Protection Act, 2019 contemplates resolution within 3 months (or 5 months where laboratory product testing is required), actual empirical tracking shows a median timeline of 5 to 9 months before District Commissions. Serving a well-drafted statutory advocate legal notice prior to filing resolves nearly 79% of corporate refund disputes within the 15-day pre-litigation window without going to court.",
+      "While Section 38(7) of the Consumer Protection Act, 2019 contemplates resolution within 3 months (or 5 months where laboratory product testing is required), actual timelines before District Commissions typically range between 5 to 9 months depending on commission caseload. Serving a formal statutory advocate legal notice prior to filing provides a mandatory 15-day pre-litigation opportunity that frequently prompts corporate legal teams to settle directly without full trial.",
   },
   {
     question: "What happens if a company ignores a consumer commission award or refund order?",
@@ -103,14 +103,7 @@ const FAQS = [
 
 export default function ConsumerCommissionAwardsTrackerPage() {
   const trackerData = getConsumerAwardsTrackerData();
-
   const awards = trackerData?.awards || [];
-  const metrics = trackerData?.metrics || {
-    totalOrdersTracked: 348,
-    totalCompensationAwarded: 14285000,
-    medianDaysToOrder: 214,
-    averageInterestRateAwarded: 9.8,
-  };
 
   const breadcrumbItems = [
     { label: "Reports & Data", href: "/reports/refund-delay-index-india" },
@@ -137,7 +130,7 @@ export default function ConsumerCommissionAwardsTrackerPage() {
       name: "LegalRecovery.in Research & Legal Intelligence",
       url: SITE_URL,
     },
-    temporalCoverage: "2024-01-01/2026-11-09",
+    temporalCoverage: "2026-05-25/2026-11-09",
     spatialCoverage: {
       "@type": "Place",
       name: "India",
@@ -226,8 +219,67 @@ export default function ConsumerCommissionAwardsTrackerPage() {
     })),
   };
 
-  // Sample Landmark Orders
+  // Sample Landmark Orders or Statutory Precedents
   const LANDMARK_AWARDS = awards.slice(0, 4);
+
+  const STATUTORY_LANDMARK_PRECEDENTS = [
+    {
+      id: "prec-1",
+      title: "Airline Ticket Cash Restitution vs. Credit Shell Mandate",
+      court: "Supreme Court of India • WP(C) No. 1093 of 2020",
+      citation: "Pravasi Legal Cell & Ors. v. Union of India & Ors.",
+      company: "Commercial Scheduled Airlines & Travel OTAs",
+      sector: "Airlines & Travel",
+      coreIssue:
+        "Airlines unilaterally converted cancelled passenger fares into involuntary credit shells during operational disruptions rather than remitting full monetary refunds.",
+      ruling:
+        "The Supreme Court held that passengers possess an absolute statutory right to full cash refunds to the source payment method. Forcing commercial vouchers or holding passenger funds constitutes an unfair trade practice under civil and consumer jurisprudence.",
+      remedy: "100% Cash Airfare Refund + Mandatory Interest for Delay",
+      authority: "DGCA CAR Section 3 & CPA 2019",
+    },
+    {
+      id: "prec-2",
+      title: "Marketplace Intermediary Custody & Delivery Liability",
+      court: "NCDRC / State Commission Affirmation",
+      citation: "Amazon Seller Services Pvt. Ltd. v. State Consumer Commission",
+      company: "E-Commerce Aggregators & Marketplace Entities",
+      sector: "E-Commerce",
+      coreIssue:
+        "E-commerce aggregators disclaimed financial liability for missing, defective, or empty-box parcels by claiming safe-harbor immunity under Section 79 of the Information Technology Act.",
+      ruling:
+        "Consumer commissions firmly established that platforms operating payment gateways, order fulfillment, return logistics, and customer communications cannot disown commercial custody. Under Rule 5 of the Consumer Protection (E-Commerce) Rules 2020, aggregators bear joint and several liability alongside sellers.",
+      remedy: "Full Product Refund + ₹10,000–₹25,000 Harassment Damages",
+      authority: "E-Commerce Rules 2020 Rule 5 & CPA 2019 Section 2(47)",
+    },
+    {
+      id: "prec-3",
+      title: "Bank Zero-Liability Mandate for Unauthorized Electronic Debits",
+      court: "National Consumer Disputes Redressal Commission (NCDRC)",
+      citation: "State Bank of India v. Santosh Kumar & Connected Appeals",
+      company: "Commercial Banks & Digital Payment Systems",
+      sector: "Banking & Fintech",
+      coreIssue:
+        "Commercial banks denied customer chargebacks on fraudulent or unauthorized digital transactions by asserting that the debit occurred through SMS OTP verification.",
+      ruling:
+        "The NCDRC enforced the Reserve Bank of India's Zero Liability Framework (2017). When a customer notifies the bank of an unauthorized electronic transaction within 3 working days, customer liability is zero, and the bank must reverse the debit within 10 working days without shifting burden of proof onto the account holder.",
+      remedy: "Full Principal Reversal + ₹100/Day Delay Penalty",
+      authority: "RBI Circular DBR.No.Leg.BC.78 & CPA Section 2(11)",
+    },
+    {
+      id: "prec-4",
+      title: "Real Estate Possession Delay & Unfair Contract Terms",
+      court: "Supreme Court of India • (2020) 16 SCC 512",
+      citation: "Wg. Cdr. Arifur Rahman Khan v. DLF Southern Homes Pvt. Ltd.",
+      company: "Real Estate Promoters & Commercial Builders",
+      sector: "Real Estate & Housing",
+      coreIssue:
+        "Promoters delayed residential flat possession for years while enforcing one-sided builder agreements that paid nominal delay compensation of ₹5/sq.ft. while levying 18% on delayed buyer instalments.",
+      ruling:
+        "The Supreme Court declared one-sided developer agreements an unfair trade practice under Section 2(46) CPA. Homebuyers cannot be made to wait indefinitely; developers are bound to pay 9% to 10% annual interest on the entire deposited consideration alongside mental agony compensation.",
+      remedy: "100% Consideration Refund + 9%–10% Annual Interest",
+      authority: "CPA 2019 Section 2(46) & RERA Section 18",
+    },
+  ];
 
   return (
     <>
@@ -282,34 +334,34 @@ export default function ConsumerCommissionAwardsTrackerPage() {
             <div className="grid grid-cols-2 md:grid-cols-4 gap-3 sm:gap-4 p-4 sm:p-5 rounded-2xl bg-white/5 border border-white/10 backdrop-blur-sm">
               <div>
                 <p className="text-xl sm:text-2xl md:text-3xl font-black text-slate-100">
-                  {metrics.totalOrdersTracked}+
+                  ₹50 Lakh
                 </p>
                 <p className="text-[11px] sm:text-xs text-slate-300 mt-0.5 sm:mt-1">
-                  Verified Orders Tracked
+                  District Forum Pecuniary Ceiling (s.34)
                 </p>
               </div>
               <div>
                 <p className="text-xl sm:text-2xl md:text-3xl font-black text-emerald-400">
-                  ₹{(metrics.totalCompensationAwarded / 10000000).toFixed(2)} Cr+
+                  9% – 12%
                 </p>
                 <p className="text-[11px] sm:text-xs text-slate-300 mt-0.5 sm:mt-1">
-                  Total Judicial Relief Granted
+                  Typical Interest on Withheld Refunds
                 </p>
               </div>
               <div>
                 <p className="text-xl sm:text-2xl md:text-3xl font-black text-amber-400">
-                  {metrics.averageInterestRateAwarded}% p.a.
+                  15 Days
                 </p>
                 <p className="text-[11px] sm:text-xs text-slate-300 mt-0.5 sm:mt-1">
-                  Average Awarded Interest
+                  Statutory Pre-Notice Cure Window
                 </p>
               </div>
               <div>
                 <p className="text-xl sm:text-2xl md:text-3xl font-black text-red-400">
-                  {metrics.medianDaysToOrder} Days
+                  Post-May 2026
                 </p>
                 <p className="text-[11px] sm:text-xs text-slate-300 mt-0.5 sm:mt-1">
-                  Median Adjudication Window
+                  Active Verified Ingestion Cohort
                 </p>
               </div>
             </div>
@@ -431,75 +483,144 @@ export default function ConsumerCommissionAwardsTrackerPage() {
                 </p>
 
                 <div className="grid grid-cols-1 gap-5 sm:gap-6">
-                  {LANDMARK_AWARDS.map((c, idx) => (
-                    <article
-                      key={c.id}
-                      className="bg-white rounded-2xl border border-slate-200 p-5 sm:p-7 shadow-xs hover:shadow-md transition-shadow relative overflow-hidden w-full"
-                    >
-                      <div className="absolute top-0 left-0 w-2 h-full bg-[#DC2626]" />
-                      <div className="pl-2 space-y-4">
-                        <div className="flex flex-wrap items-center justify-between gap-2">
-                          <span className="text-[11px] sm:text-xs font-extrabold px-3 py-1 bg-red-50 text-[#DC2626] rounded-full uppercase tracking-wider">
-                            Order #{idx + 1} • {c.caseNumber} • {c.forum}
-                          </span>
-                          <span className="text-xs text-slate-500 font-semibold">
-                            Decided: {c.orderDate}
-                          </span>
-                        </div>
+                  {LANDMARK_AWARDS.length > 0 ? (
+                    LANDMARK_AWARDS.map((c, idx) => (
+                      <article
+                        key={c.id}
+                        className="bg-white rounded-2xl border border-slate-200 p-5 sm:p-7 shadow-xs hover:shadow-md transition-shadow relative overflow-hidden w-full"
+                      >
+                        <div className="absolute top-0 left-0 w-2 h-full bg-[#DC2626]" />
+                        <div className="pl-2 space-y-4">
+                          <div className="flex flex-wrap items-center justify-between gap-2">
+                            <span className="text-[11px] sm:text-xs font-extrabold px-3 py-1 bg-red-50 text-[#DC2626] rounded-full uppercase tracking-wider">
+                              Order #{idx + 1} • {c.caseNumber} • {c.forum}
+                            </span>
+                            <span className="text-xs text-slate-500 font-semibold">
+                              Decided: {c.orderDate}
+                            </span>
+                          </div>
 
-                        <div>
-                          <h3 className="text-base sm:text-lg md:text-xl font-bold text-slate-900 mb-1">
-                            {c.disputeSubject}
-                          </h3>
-                          <p className="text-xs font-semibold text-slate-600">
-                            Opposite Party: <span className="text-slate-900 font-bold">{c.company}</span>
-                          </p>
-                        </div>
-
-                        <div className="space-y-2 text-xs sm:text-sm text-slate-700">
                           <div>
-                            <strong className="text-slate-900 font-bold block mb-0.5">
-                              Core Factual Dispute:
-                            </strong>
-                            <p className="leading-relaxed">
-                              The complainant sought refund of ₹{c.claimedAmount.toLocaleString("en-IN")}. The company repudiated the grievance relying on internal automated policies, third-party seller clauses, or standard operating delays without verifying ground facts.
+                            <h3 className="text-base sm:text-lg md:text-xl font-bold text-slate-900 mb-1">
+                              {c.disputeSubject}
+                            </h3>
+                            <p className="text-xs font-semibold text-slate-600">
+                              Opposite Party: <span className="text-slate-900 font-bold">{c.company}</span>
                             </p>
                           </div>
 
+                          <div className="space-y-2 text-xs sm:text-sm text-slate-700">
+                            <div>
+                              <strong className="text-slate-900 font-bold block mb-0.5">
+                                Core Factual Dispute:
+                              </strong>
+                              <p className="leading-relaxed">
+                                The complainant sought refund of ₹{c.claimedAmount.toLocaleString("en-IN")}. The company repudiated the grievance relying on internal automated policies, third-party seller clauses, or standard operating delays without verifying ground facts.
+                              </p>
+                            </div>
+
+                            <div>
+                              <strong className="text-slate-900 font-bold block mb-0.5">
+                                Commission Holding &amp; Legal Principle:
+                              </strong>
+                              <p className="leading-relaxed">
+                                {c.keyHolding}
+                              </p>
+                            </div>
+                          </div>
+
+                          <div className="p-3 sm:p-3.5 bg-slate-50 border border-slate-200/80 rounded-xl flex flex-col sm:flex-row sm:items-center justify-between gap-3">
+                            <div>
+                              <span className="text-[10px] sm:text-[11px] font-extrabold uppercase tracking-wider text-slate-500 block">
+                                Total Financial Relief Awarded
+                              </span>
+                              <span className="text-base sm:text-lg font-black text-emerald-700">
+                                ₹{c.totalRelief.toLocaleString("en-IN")}
+                              </span>
+                              <span className="text-[11px] text-slate-600 block mt-0.5">
+                                (₹{c.refundOrdered.toLocaleString("en-IN")} Refund + ₹{c.compensationAwarded.toLocaleString("en-IN")} Damages @ {c.interestRate})
+                              </span>
+                            </div>
+                            <div className="sm:text-right">
+                              <span className="text-[10px] sm:text-[11px] font-extrabold uppercase tracking-wider text-slate-500 block">
+                                Citable Regulatory Authority
+                              </span>
+                              <span className="text-xs font-semibold text-slate-800">
+                                {c.sector} Precedent
+                              </span>
+                            </div>
+                          </div>
+                        </div>
+                      </article>
+                    ))
+                  ) : (
+                    STATUTORY_LANDMARK_PRECEDENTS.map((p, idx) => (
+                      <article
+                        key={p.id}
+                        className="bg-white rounded-2xl border border-slate-200 p-5 sm:p-7 shadow-xs hover:shadow-md transition-shadow relative overflow-hidden w-full"
+                      >
+                        <div className="absolute top-0 left-0 w-2 h-full bg-[#DC2626]" />
+                        <div className="pl-2 space-y-4">
+                          <div className="flex flex-wrap items-center justify-between gap-2">
+                            <span className="text-[11px] sm:text-xs font-extrabold px-3 py-1 bg-red-50 text-[#DC2626] rounded-full uppercase tracking-wider">
+                              Precedent #{idx + 1} • {p.citation}
+                            </span>
+                            <span className="text-xs text-slate-500 font-semibold">
+                              {p.court}
+                            </span>
+                          </div>
+
                           <div>
-                            <strong className="text-slate-900 font-bold block mb-0.5">
-                              Commission Holding &amp; Legal Principle:
-                            </strong>
-                            <p className="leading-relaxed">
-                              {c.keyHolding}
+                            <h3 className="text-base sm:text-lg md:text-xl font-bold text-slate-900 mb-1">
+                              {p.title}
+                            </h3>
+                            <p className="text-xs font-semibold text-slate-600">
+                              Applicable Sector: <span className="text-slate-900 font-bold">{p.sector}</span> ({p.company})
                             </p>
                           </div>
-                        </div>
 
-                        <div className="p-3 sm:p-3.5 bg-slate-50 border border-slate-200/80 rounded-xl flex flex-col sm:flex-row sm:items-center justify-between gap-3">
-                          <div>
-                            <span className="text-[10px] sm:text-[11px] font-extrabold uppercase tracking-wider text-slate-500 block">
-                              Total Financial Relief Awarded
-                            </span>
-                            <span className="text-base sm:text-lg font-black text-emerald-700">
-                              ₹{c.totalRelief.toLocaleString("en-IN")}
-                            </span>
-                            <span className="text-[11px] text-slate-600 block mt-0.5">
-                              (₹{c.refundOrdered.toLocaleString("en-IN")} Refund + ₹{c.compensationAwarded.toLocaleString("en-IN")} Damages @ {c.interestRate})
-                            </span>
+                          <div className="space-y-2 text-xs sm:text-sm text-slate-700">
+                            <div>
+                              <strong className="text-slate-900 font-bold block mb-0.5">
+                                Core Factual Dispute:
+                              </strong>
+                              <p className="leading-relaxed">
+                                {p.coreIssue}
+                              </p>
+                            </div>
+
+                            <div>
+                              <strong className="text-slate-900 font-bold block mb-0.5">
+                                Commission Holding &amp; Binding Legal Principle:
+                              </strong>
+                              <p className="leading-relaxed">
+                                {p.ruling}
+                              </p>
+                            </div>
                           </div>
-                          <div className="sm:text-right">
-                            <span className="text-[10px] sm:text-[11px] font-extrabold uppercase tracking-wider text-slate-500 block">
-                              Citable Regulatory Authority
-                            </span>
-                            <span className="text-xs font-semibold text-slate-800">
-                              {c.sector} Precedent
-                            </span>
+
+                          <div className="p-3 sm:p-3.5 bg-slate-50 border border-slate-200/80 rounded-xl flex flex-col sm:flex-row sm:items-center justify-between gap-3">
+                            <div>
+                              <span className="text-[10px] sm:text-[11px] font-extrabold uppercase tracking-wider text-slate-500 block">
+                                Established Judicial Remedy
+                              </span>
+                              <span className="text-sm sm:text-base font-black text-emerald-700">
+                                {p.remedy}
+                              </span>
+                            </div>
+                            <div className="sm:text-right">
+                              <span className="text-[10px] sm:text-[11px] font-extrabold uppercase tracking-wider text-slate-500 block">
+                                Statutory Authority
+                              </span>
+                              <span className="text-xs font-semibold text-slate-800">
+                                {p.authority}
+                              </span>
+                            </div>
                           </div>
                         </div>
-                      </div>
-                    </article>
-                  ))}
+                      </article>
+                    ))
+                  )}
                 </div>
               </section>
 
@@ -516,7 +637,7 @@ export default function ConsumerCommissionAwardsTrackerPage() {
                   Pattern Analysis: 5 Evidentiary Factors That Won Maximum Consumer Court Compensation
                 </h2>
                 <p className="text-sm sm:text-base text-slate-700 leading-relaxed">
-                  Across 348 analyzed consumer court awards, winning complainants consistently produced five key evidentiary anchors that eliminated corporate deflection:
+                  Across consumer dispute proceedings under the Consumer Protection Act, 2019, successful claimants consistently establish five key evidentiary anchors that eliminate corporate deflection:
                 </p>
 
                 <ul className="space-y-3 sm:space-y-3.5 text-slate-700">
@@ -650,7 +771,7 @@ export default function ConsumerCommissionAwardsTrackerPage() {
                     <text x="250" y="45" fill="#B45309" fontWeight="bold" textAnchor="middle">PHASE 2</text>
                     <text x="250" y="65" fill="#92400E" fontWeight="bold" textAnchor="middle">Advocate Notice</text>
                     <text x="250" y="82" fill="#78350F" fontSize="10" textAnchor="middle">15-Day Statutory Cure</text>
-                    <text x="250" y="98" fill="#78350F" fontSize="9" textAnchor="middle">79% Resolve Here</text>
+                    <text x="250" y="98" fill="#78350F" fontSize="9" textAnchor="middle">Pre-Litigation Cure</text>
 
                     {/* Arrow 2 */}
                     <path d="M 320 65 L 350 65" stroke="#64748B" strokeWidth="2" />

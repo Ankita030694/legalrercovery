@@ -182,7 +182,7 @@ export default function LegalNoticeTableOfContents({
             <span className="font-extrabold text-slate-900 block mb-1">
               Empirical Research Index
             </span>
-            Based on 6,740 tracked notices across 28 Indian States &amp; UTs. Peer-reviewed methodology.
+            Empirical research study shell tracking statutory legal notice outcomes across Indian States (Post-May 2026 Cohort).
           </div>
         </div>
       </aside>

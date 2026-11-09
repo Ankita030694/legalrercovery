@@ -93,9 +93,9 @@
     ],
     "wordCount": 2150,
     "artefacts": [
-      "First-year empirical data study based on 3,420 resolved and escalated wage claims under Section 17(2) Code on Wages 2019",
-      "Hand-authored SVG Sector Comparison Bar Chart (Median pre-notice days vs post-notice days)",
-      "Hand-authored SVG Resolution Funnel Flowchart across 3,420 notice cases",
+      "First-year empirical data study shell for post-May 2026 wage claims under Section 17(2) Code on Wages 2019",
+      "Hand-authored SVG Sector Comparison Bar Chart (Statutory TAT vs post-notice resolution)",
+      "Hand-authored SVG Resolution Funnel Flowchart across notice cases",
       "Sector Benchmarks accessible HTML table across 5 major commercial sectors",
       "Root causes breakdown table with percentage distribution and statutory Section 18 deduction status",
       "Interactive 4-scenario tab component covering 2-day delay, notice buyout, asset hold, and gratuity/bonus withheld",

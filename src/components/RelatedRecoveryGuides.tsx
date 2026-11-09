@@ -108,13 +108,13 @@ const CLUSTERS: Record<string, { heading: string; items: GuideItem[] }> = {
         title: "Legal Notice Outcomes Study: Settlement Rates by Dispute Type",
         href: "/reports/legal-notice-outcomes-study",
         tag: "Data Study",
-        desc: "Empirical outcomes from 6,740 legal notices across India: 15, 30, and 60-day settlement rates by dispute type.",
+        desc: "Empirical outcomes study tracking pre-litigation settlement velocity and resolution rates by dispute type.",
       },
       {
         title: "Refund Delay Index India: Days to Refund by Company",
         href: "/reports/refund-delay-index-india",
         tag: "Data Study",
-        desc: "Empirical benchmarks across 4,820 consumer refund claims comparing pre-notice delay vs post-legal notice settlement.",
+        desc: "Quarterly benchmark tracking median days to refund across consumer platforms before and after an advocate legal notice.",
       },
       {
         title: "Consumer Court Fee & Jurisdiction Calculator (2026)",

@@ -4,10 +4,10 @@ import path from "path";
 export interface SectorWageMetric {
   id: string;
   name: string;
-  sampleCount: number;
-  medianPreNoticeDays: number;
-  medianPostNoticeDays: number;
-  noticeResolutionRate: number;
+  sampleCount?: number;
+  medianPreNoticeDays?: number;
+  medianPostNoticeDays?: number;
+  noticeResolutionRate?: number;
   primaryCause: string;
   regulator: string;
   statutoryLimit: string;
@@ -15,8 +15,8 @@ export interface SectorWageMetric {
 
 export interface DisputeCauseMetric {
   cause: string;
-  percentage: number;
-  averageDeduction: number;
+  percentage?: number;
+  averageDeduction?: number;
   legalStatus: string;
 }
 
@@ -47,6 +47,8 @@ export interface SalaryFnFReportData {
   metaDescription: string;
   lastUpdated: string;
   reportingPeriod: string;
+  status?: "compiling" | "published";
+  hasData?: boolean;
   metrics: {
     totalClaimsAnalyzed: number;
     medianDaysPreNotice: number;
@@ -56,7 +58,7 @@ export interface SalaryFnFReportData {
     statutoryTwoDayNonComplianceRate: number;
     arbitraryDeductionsPrevalence: number;
     recoveryWithoutCourtLitigationRate: number;
-  };
+  } | null;
   sectors: SectorWageMetric[];
   disputeCauses: DisputeCauseMetric[];
   methodology: ReportMethodology;

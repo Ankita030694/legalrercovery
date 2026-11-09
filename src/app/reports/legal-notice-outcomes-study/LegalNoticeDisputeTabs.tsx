@@ -88,123 +88,110 @@ export default function LegalNoticeDisputeTabs({ segments }: LegalNoticeDisputeT
               </h3>
             </div>
             <p className="text-xs sm:text-sm text-slate-600 mt-1">
-              Sample: <strong className="text-slate-900 font-bold">{activeSegment.sampleCount.toLocaleString("en-IN")}</strong> verified legal notices dispatched &amp; tracked.
+              Dispute Category: <strong className="text-slate-900 font-bold">{activeSegment.name}</strong> • Post-May 2026 Cohort
             </p>
           </div>
 
           <div className="flex items-center gap-3">
-            <div className="px-4 py-2 bg-emerald-50 border border-emerald-200 rounded-xl text-center">
-              <span className="text-[10px] font-bold text-emerald-800 uppercase block tracking-wider">
-                Total Settlement Rate
+            <div className="px-4 py-2 bg-slate-100 border border-slate-200 rounded-xl text-center">
+              <span className="text-[10px] font-bold text-slate-600 uppercase block tracking-wider">
+                Statutory Cure Period
               </span>
-              <span className="text-xl sm:text-2xl font-black text-emerald-700">
-                {activeSegment.totalSettledRate}%
+              <span className="text-sm font-black text-slate-900">
+                15 Days
               </span>
             </div>
             <div className="px-4 py-2 bg-red-50 border border-red-200 rounded-xl text-center">
               <span className="text-[10px] font-bold text-red-800 uppercase block tracking-wider">
-                Median Days
+                Cohort Status
               </span>
-              <span className="text-xl sm:text-2xl font-black text-[#DC2626]">
-                {activeSegment.medianDays} Days
+              <span className="text-sm font-black text-[#DC2626]">
+                In Compilation
               </span>
             </div>
           </div>
         </div>
 
-        {/* 15, 30, 60 Day Time Window Progress Cards */}
+        {/* 15, 30, 60 Day Time Window Stage Cards */}
         <div className="grid grid-cols-1 sm:grid-cols-3 gap-3 sm:gap-4">
           <div className="p-4 rounded-xl bg-slate-50 border border-slate-200">
             <div className="flex items-center justify-between mb-1">
-              <span className="text-xs font-bold text-slate-500 uppercase tracking-wider">15-Day Cure Window</span>
-              <span className="text-xs font-black text-emerald-600">{activeSegment.settlement15Days}%</span>
+              <span className="text-xs font-bold text-slate-500 uppercase tracking-wider">Stage 1</span>
+              <span className="text-xs font-black text-emerald-600">Days 1–15</span>
             </div>
-            <p className="text-2xl font-black text-slate-900 mb-2">{activeSegment.settlement15Days}%</p>
-            <div className="w-full bg-slate-200 h-2 rounded-full overflow-hidden">
-              <div
-                className="bg-emerald-500 h-full rounded-full transition-all duration-500"
-                style={{ width: `${activeSegment.settlement15Days}%` }}
-              />
-            </div>
-            <span className="text-[10px] text-slate-500 mt-2 block">Settled within statutory notice deadline</span>
-          </div>
-
-          <div className="p-4 rounded-xl bg-slate-50 border border-slate-200">
-            <div className="flex items-center justify-between mb-1">
-              <span className="text-xs font-bold text-slate-500 uppercase tracking-wider">16 to 30 Days</span>
-              <span className="text-xs font-black text-blue-600">{activeSegment.settlement30Days}%</span>
-            </div>
-            <p className="text-2xl font-black text-slate-900 mb-2">{activeSegment.settlement30Days}%</p>
-            <div className="w-full bg-slate-200 h-2 rounded-full overflow-hidden">
-              <div
-                className="bg-blue-500 h-full rounded-full transition-all duration-500"
-                style={{ width: `${activeSegment.settlement30Days}%` }}
-              />
-            </div>
-            <span className="text-[10px] text-slate-500 mt-2 block">Resolved during second escalation/negotiation</span>
-          </div>
-
-          <div className="p-4 rounded-xl bg-slate-50 border border-slate-200">
-            <div className="flex items-center justify-between mb-1">
-              <span className="text-xs font-bold text-slate-500 uppercase tracking-wider">31 to 60 Days</span>
-              <span className="text-xs font-black text-amber-600">{activeSegment.settlement60Days}%</span>
-            </div>
-            <p className="text-2xl font-black text-slate-900 mb-2">{activeSegment.settlement60Days}%</p>
-            <div className="w-full bg-slate-200 h-2 rounded-full overflow-hidden">
-              <div
-                className="bg-amber-500 h-full rounded-full transition-all duration-500"
-                style={{ width: `${activeSegment.settlement60Days}%` }}
-              />
-            </div>
-            <span className="text-[10px] text-slate-500 mt-2 block">Pre-litigation conciliation or Lok Adalat</span>
-          </div>
-        </div>
-
-        {/* Detailed Insights Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-4 text-xs sm:text-sm">
-          <div className="p-4 rounded-xl bg-slate-50 border border-slate-200/80 space-y-2">
-            <span className="text-[10px] font-black uppercase tracking-wider text-[#DC2626] block">
-              Primary Statutory Leverage Cited
-            </span>
-            <p className="text-slate-800 font-semibold leading-relaxed">
-              {activeSegment.primaryLeverage}
+            <p className="text-base font-black text-slate-900 mb-1">Statutory Cure Window</p>
+            <p className="text-xs text-slate-600 leading-relaxed">
+              Recipient reviews liability. Settlement avoids prosecution or formal consumer / civil filing.
             </p>
           </div>
 
-          <div className="p-4 rounded-xl bg-slate-50 border border-slate-200/80 space-y-2">
-            <span className="text-[10px] font-black uppercase tracking-wider text-slate-700 block">
-              Observed Debtor Settlement Behavior
+          <div className="p-4 rounded-xl bg-slate-50 border border-slate-200">
+            <div className="flex items-center justify-between mb-1">
+              <span className="text-xs font-bold text-slate-500 uppercase tracking-wider">Stage 2</span>
+              <span className="text-xs font-black text-blue-600">Days 16–30</span>
+            </div>
+            <p className="text-base font-black text-slate-900 mb-1">Draft Plaint Conciliation</p>
+            <p className="text-xs text-slate-600 leading-relaxed">
+              Advocate serves draft complaint copy to in-house counsel, triggering executive review.
+            </p>
+          </div>
+
+          <div className="p-4 rounded-xl bg-slate-50 border border-slate-200">
+            <div className="flex items-center justify-between mb-1">
+              <span className="text-xs font-bold text-slate-500 uppercase tracking-wider">Stage 3</span>
+              <span className="text-xs font-black text-amber-600">Days 31–60</span>
+            </div>
+            <p className="text-base font-black text-slate-900 mb-1">Pre-Litigation Lok Adalat</p>
+            <p className="text-xs text-slate-600 leading-relaxed">
+              Pre-filing mediation or notice response negotiations prior to contested trial listing.
+            </p>
+          </div>
+        </div>
+
+        {/* Statutory Legal Leverage Box */}
+        <div className="p-4 sm:p-5 rounded-xl bg-red-50/60 border border-red-200/80 space-y-2">
+          <div className="flex items-center gap-2">
+            <svg className="w-4 h-4 text-[#DC2626]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+            </svg>
+            <h4 className="text-xs font-bold uppercase tracking-wider text-red-900">
+              Primary Statutory Legal Leverage
+            </h4>
+          </div>
+          <p className="text-xs sm:text-sm text-slate-800 leading-relaxed font-medium">
+            {activeSegment.primaryLeverage}
+          </p>
+        </div>
+
+        {/* Debtor Reaction & Escalation Forum Grid */}
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+          <div className="p-4 rounded-xl bg-slate-50 border border-slate-200/80 space-y-1.5">
+            <span className="text-[10px] font-bold uppercase tracking-wider text-slate-500 block">
+              Standard Debtor Legal Response Pattern
             </span>
-            <p className="text-slate-800 font-semibold leading-relaxed">
+            <p className="text-xs text-slate-700 leading-relaxed">
               {activeSegment.commonDebtorResponse}
             </p>
           </div>
 
-          <div className="p-4 rounded-xl bg-slate-50 border border-slate-200/80 space-y-1">
-            <span className="text-[10px] font-black uppercase tracking-wider text-slate-600 block">
-              Median Disputed Value in Cohort
+          <div className="p-4 rounded-xl bg-slate-50 border border-slate-200/80 space-y-1.5">
+            <span className="text-[10px] font-bold uppercase tracking-wider text-slate-500 block">
+              Designated Escalation Forum Upon Default
             </span>
-            <p className="text-base sm:text-lg font-black text-slate-900">
-              ₹{activeSegment.medianClaim.toLocaleString("en-IN")}
-            </p>
-            <p className="text-[11px] text-slate-500">Typical claim size tracked in LegalRecovery study database</p>
-          </div>
-
-          <div className="p-4 rounded-xl bg-slate-50 border border-slate-200/80 space-y-1">
-            <span className="text-[10px] font-black uppercase tracking-wider text-slate-600 block">
-              Next Statutory Escalation Forum If Unsettled
-            </span>
-            <p className="text-sm font-bold text-slate-900">
+            <p className="text-xs font-bold text-slate-900 leading-relaxed">
               {activeSegment.escalationForum}
             </p>
-            <p className="text-[11px] text-slate-500">Where 27.2% of non-compliant claims proceed after 60 days</p>
           </div>
         </div>
 
-        <div className="pt-2 flex justify-end">
+        {/* Contextual CTA for this category */}
+        <div className="flex flex-col sm:flex-row items-center justify-between gap-4 pt-2 border-t border-slate-100">
+          <p className="text-xs text-slate-600">
+            Dealing with an active {activeSegment.name.toLowerCase()} dispute?
+          </p>
           <Link
             href={actionLink.href}
-            className="text-xs sm:text-sm font-extrabold text-[#DC2626] hover:text-[#B91C1C] hover:underline inline-flex items-center gap-1.5"
+            className="text-xs font-extrabold text-[#DC2626] hover:text-[#B91C1C] hover:underline transition-colors shrink-0"
           >
             {actionLink.label}
           </Link>

@@ -4,13 +4,13 @@ import path from "path";
 export interface DisputeSegment {
   id: string;
   name: string;
-  sampleCount: number;
-  settlement15Days: number;
-  settlement30Days: number;
-  settlement60Days: number;
-  totalSettledRate: number;
-  medianDays: number;
-  medianClaim: number;
+  sampleCount?: number;
+  settlement15Days?: number;
+  settlement30Days?: number;
+  settlement60Days?: number;
+  totalSettledRate?: number;
+  medianDays?: number;
+  medianClaim?: number;
   primaryLeverage: string;
   commonDebtorResponse: string;
   escalationForum: string;
@@ -18,8 +18,8 @@ export interface DisputeSegment {
 
 export interface TimeframeComparison {
   window: string;
-  percentage: number;
-  cumulativePercentage: number;
+  percentage?: number;
+  cumulativePercentage?: number;
   driver: string;
 }
 
@@ -50,6 +50,8 @@ export interface LegalNoticeOutcomesStudyData {
   metaDescription: string;
   lastUpdated: string;
   reportingPeriod: string;
+  status?: "compiling" | "published";
+  hasData?: boolean;
   metrics: {
     totalNoticesTracked: number;
     overallSettlementRate: number;
@@ -60,7 +62,7 @@ export interface LegalNoticeOutcomesStudyData {
     medianDaysToSettlement: number;
     averageClaimAmount: number;
     preLitigationCostSavingsRatio: number;
-  };
+  } | null;
   disputeSegments: DisputeSegment[];
   timeframeComparison: TimeframeComparison[];
   methodology: StudyMethodology;
