@@ -23,7 +23,7 @@ export default function StickyStartButton({ targetId }: { targetId: string }) {
         onClick={() => document.getElementById(targetId)?.scrollIntoView({ behavior: "smooth" })}
         className="w-full py-3.5 text-sm font-black text-white bg-[#DC2626] active:bg-[#991B1B] rounded-xl touch-manipulation"
       >
-        Start for ₹999
+        Start for <span className="ml-1 px-2 py-0.5 rounded-md bg-amber-300 text-[#111827]">₹999</span>
       </button>
     </div>
   );

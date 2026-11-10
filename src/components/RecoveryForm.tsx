@@ -153,6 +153,14 @@ export const RecoveryForm = ({ variant = "default" }: RecoveryFormProps) => {
 
   const totalDue = oppositionCount * PRICE_PER_OPPOSITION + calculatePhysicalDispatchFee(oppositionCount, physicalDispatch === true);
 
+  // On the ad landing page the price is highlighted inside the red buttons.
+  const renderButtonPrice = (amount: string | number) =>
+    isQuick ? (
+      <span className="px-2 py-0.5 rounded-md bg-amber-300 text-[#111827] text-sm lg:text-xl font-black leading-tight">₹{amount}</span>
+    ) : (
+      `₹${amount}`
+    );
+
   const handleSendOtp = async (e: React.FormEvent) => {
     e.preventDefault();
     setFormTouched(true);
@@ -490,7 +498,7 @@ export const RecoveryForm = ({ variant = "default" }: RecoveryFormProps) => {
               className="w-full py-4 text-sm sm:text-base font-black text-white bg-[#DC2626] active:bg-[#991B1B] hover:bg-[#B91C1C] rounded-xl transition-all duration-200 shadow-lg shadow-red-950/20 flex items-center justify-center gap-2 hover:-translate-y-0.5 active:translate-y-0 cursor-pointer touch-manipulation relative z-20"
             >
               <Lock className="w-4 h-4" />
-              Proceed to Pay ₹{payuSession.fields.amount || totalDue} on PayU
+              Proceed to Pay {renderButtonPrice(payuSession.fields.amount || totalDue)} on PayU
               <ArrowRight className="w-4 h-4" />
             </button>
           </div>
@@ -694,7 +702,7 @@ export const RecoveryForm = ({ variant = "default" }: RecoveryFormProps) => {
               ) : (
                 <>
                   <Shield className="w-4 h-4" />
-                  Verify Email & Pay ₹{totalDue}
+                  Verify Email & Pay {renderButtonPrice(totalDue)}
                 </>
               )}
             </button>
@@ -759,7 +767,7 @@ export const RecoveryForm = ({ variant = "default" }: RecoveryFormProps) => {
               ) : (
                 <>
                   <CheckCircle className="w-4 h-4" />
-                  Verify OTP & Pay ₹{totalDue}
+                  Verify OTP & Pay {renderButtonPrice(totalDue)}
                 </>
               )}
             </button>

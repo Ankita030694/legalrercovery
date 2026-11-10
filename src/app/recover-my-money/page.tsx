@@ -194,7 +194,8 @@ export default function RecoverMyMoneyPage() {
       <div className="max-w-5xl mx-auto px-4 pt-5 lg:pt-12 lg:grid lg:grid-cols-[1fr_440px] lg:gap-12 lg:items-start">
         <div>
           <h1 className="text-[28px] sm:text-4xl lg:text-5xl font-black tracking-tight text-[#111827] leading-[1.1]">
-            Money Stuck? <span className="text-[#DC2626]">Send a Legal Notice for ₹999.</span>
+            Money Stuck? <span className="text-[#DC2626]">Send a Legal Notice for</span>{" "}
+            <span className="inline-block px-2 rounded-lg bg-amber-300 text-[#111827]">₹999</span>
           </h1>
           <p className="text-sm sm:text-base font-semibold text-slate-600 mt-2.5 lg:mt-4">
             Notices on advocate letterhead, sent by WhatsApp and email.
