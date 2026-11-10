@@ -12,6 +12,7 @@
     "@fortawesome/fontawesome-svg-core": "^7.2.0",
     "@fortawesome/free-solid-svg-icons": "^7.2.0",
     "@fortawesome/react-fontawesome": "^3.3.1",
+    "@microsoft/clarity": "^1.0.2",
     "@sparticuz/chromium-min": "^149.0.0",
     "@tiptap/extension-code-block-lowlight": "^3.23.6",
     "@tiptap/extension-color": "^3.23.6",

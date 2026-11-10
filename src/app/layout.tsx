@@ -8,6 +8,7 @@ import TimedPopupModal from "@/components/TimedPopupModal";
 import { SITE_URL } from "@/lib/site";
 import { Analytics } from "@vercel/analytics/next";
 import MetaPixel from "@/components/MetaPixel";
+import MicrosoftClarity from "@/components/MicrosoftClarity";
 import AttributionCapture from "@/components/AttributionCapture";
 import HtmlLangUpdater from "@/components/HtmlLangUpdater";
 
@@ -195,6 +196,7 @@ export default function RootLayout({
         <TimedPopupModal />
         <Analytics />
         <MetaPixel />
+        <MicrosoftClarity />
         <AttributionCapture />
       </body>
     </html>
