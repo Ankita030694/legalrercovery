@@ -9,7 +9,7 @@ export const metadata: Metadata = {
   title: "Payment Confirmation | LegalRecovery",
   description: "Payment confirmation and transaction status for LegalRecovery services.",
   alternates: {
-    canonical: "/payment-success",
+    canonical: "https://www.legalrecovery.in/payment-success",
   },
   openGraph: {
     title: "Payment Confirmation | LegalRecovery",
@@ -36,7 +36,7 @@ export const metadata: Metadata = {
   },
   robots: {
     index: false,
-    follow: false,
+    follow: true,
   },
 };
 
@@ -135,10 +135,10 @@ export default async function PaymentSuccessPage(props: {
         </p>
 
         <div className="bg-slate-50 border border-slate-200 rounded-2xl p-6 text-left mb-8">
-          <h3 className="font-black text-[#111827] mb-3 flex items-center gap-2">
+          <h2 className="text-base font-black text-[#111827] mb-3 flex items-center gap-2">
             <FileText className="w-4 h-4 text-emerald-600" />
             What happens next?
-          </h3>
+          </h2>
           <ul className="flex flex-col gap-3">
             <li className="flex items-start gap-2 text-sm text-[#4B5563]">
               <div className="w-5 h-5 rounded-full bg-emerald-100 text-emerald-700 flex items-center justify-center shrink-0 mt-0.5 text-[10px] font-bold">1</div>

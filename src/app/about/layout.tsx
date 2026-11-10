@@ -20,7 +20,7 @@ export const metadata: Metadata = {
     type: "website",
     images: [
       {
-        url: "https://www.legalrecovery.in/blog_money_recovery.png",
+        url: "https://www.legalrecovery.in/opengraph-image.png",
         width: 1200,
         height: 630,
         alt: "About Legal Recovery | Consumer Claims & Money Recovery",
@@ -34,7 +34,7 @@ export const metadata: Metadata = {
       "Learn how Legal Recovery helps recover stuck money, refunds, salaries, deposits, and unpaid dues through affordable legal escalation and technology.",
     site: "@legalrecoveryin",
     creator: "@legalrecoveryin",
-    images: ["https://www.legalrecovery.in/blog_money_recovery.png"],
+    images: ["https://www.legalrecovery.in/opengraph-image.png"],
   },
   robots: {
     index: true,

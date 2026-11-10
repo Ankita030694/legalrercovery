@@ -70,12 +70,21 @@ export const metadata: Metadata = {
     type: "website",
     images: [
       {
-        url: "/blog_money_recovery.png",
+        url: "/opengraph-image.png",
         width: 1200,
         height: 630,
-        alt: "Legal Recovery India – Recover Your Money Legally Online",
+        alt: "Legal Recovery India Logo – Recover Your Money Legally Online",
       },
     ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Legal Recovery India – Recover Your Money Legally Online",
+    description:
+      "Recover unpaid money, salary, refunds, deposits, invoices, and consumer claims legally through India's trusted legal platform. Start your claim online.",
+    site: "@legalrecoveryin",
+    creator: "@legalrecoveryin",
+    images: ["/opengraph-image.png"],
   },
   icons: {
     icon: [

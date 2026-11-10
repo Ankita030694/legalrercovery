@@ -23,10 +23,10 @@ export const metadata: Metadata = {
     type: "website",
     images: [
       {
-        url: `${SITE_URL}/blog_money_recovery.png`,
+        url: `${SITE_URL}/opengraph-image.png`,
         width: 1200,
         height: 630,
-        alt: "Legal Recovery India – Recover Your Money Legally Online",
+        alt: "Legal Recovery India Logo – Recover Your Money Legally Online",
       },
     ],
   },
@@ -37,7 +37,7 @@ export const metadata: Metadata = {
       "Recover unpaid money, salary, refunds, deposits, invoices, and consumer claims legally through India's trusted legal platform. Start your claim online.",
     site: "@legalrecoveryin",
     creator: "@legalrecoveryin",
-    images: [`${SITE_URL}/blog_money_recovery.png`],
+    images: [`${SITE_URL}/opengraph-image.png`],
   },
 };
 
