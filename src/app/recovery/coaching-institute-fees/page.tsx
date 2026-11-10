@@ -21,6 +21,24 @@ export const metadata: Metadata = {
     description: "IIT-JEE, NEET, UPSC coaching center or EdTech refusing fee refund mid-course? Enforce CCPA 2024 Pro-Rata Refund Guidelines via Legal Notice.",
     url: "https://www.legalrecovery.in/recovery/coaching-institute-fees",
     type: "article",
+    siteName: "LegalRecovery.in",
+    locale: "en_IN",
+    images: [
+      {
+        url: "https://www.legalrecovery.in/blog_money_recovery.png",
+        width: 1200,
+        height: 630,
+        alt: "Coaching Institute Fee Refund: CCPA Rules & Notice",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Coaching Institute Fee Refund: CCPA Rules & Notice",
+    description: "IIT-JEE, NEET, UPSC coaching center or EdTech refusing fee refund mid-course? Enforce CCPA 2024 Pro-Rata Refund Guidelines via Legal Notice.",
+    site: "@legalrecoveryin",
+    creator: "@legalrecoveryin",
+    images: ["https://www.legalrecovery.in/blog_money_recovery.png"],
   },
 };
 

@@ -24,6 +24,23 @@ export const metadata: Metadata = {
     type: "article",
     siteName: "LegalRecovery.in",
     locale: "en_IN",
+    images: [
+      {
+        url: `${SITE_URL}/blog_money_recovery.png`,
+        width: 1200,
+        height: 630,
+        alt: "Pre-Litigation Lok Adalat for Money Recovery: Complete Statutory Guide",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Pre-Litigation Lok Adalat for Money Recovery: Complete Statutory Guide",
+    description:
+      "Comprehensive breakdown of resolving debt and money disputes via pre-litigation Lok Adalat under the Legal Services Authorities Act, 1987. Free filing, civil court decree status, and execution under Order 21 CPC.",
+    site: "@legalrecoveryin",
+    creator: "@legalrecoveryin",
+    images: [`${SITE_URL}/blog_money_recovery.png`],
   },
   robots: {
     index: true,

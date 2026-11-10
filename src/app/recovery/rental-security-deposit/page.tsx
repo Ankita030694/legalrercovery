@@ -19,6 +19,30 @@ export const metadata: Metadata = {
   alternates: {
     canonical: 'https://www.legalrecovery.in/recovery/rental-security-deposit',
   },
+  openGraph: {
+    title: "Recover Rental Deposit from Landlord | LegalRecovery",
+    description: "Landlord refusing to refund your rental security deposit or making arbitrary deductions? Learn how to legally recover your deposit money in India.",
+    url: "https://www.legalrecovery.in/recovery/rental-security-deposit",
+    type: "article",
+    siteName: "LegalRecovery.in",
+    locale: "en_IN",
+    images: [
+      {
+        url: "https://www.legalrecovery.in/blog_money_recovery.png",
+        width: 1200,
+        height: 630,
+        alt: "Recover Rental Deposit from Landlord | LegalRecovery",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Recover Rental Deposit from Landlord | LegalRecovery",
+    description: "Landlord refusing to refund your rental security deposit or making arbitrary deductions? Learn how to legally recover your deposit money in India.",
+    site: "@legalrecoveryin",
+    creator: "@legalrecoveryin",
+    images: ["https://www.legalrecovery.in/blog_money_recovery.png"],
+  },
 };
 
 export default function RentalSecurityDepositPage() {

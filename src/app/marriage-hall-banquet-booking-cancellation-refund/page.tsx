@@ -24,6 +24,23 @@ export const metadata: Metadata = {
     type: "article",
     siteName: "LegalRecovery.in",
     locale: "en_IN",
+    images: [
+      {
+        url: `${SITE_URL}/blog_money_recovery.png`,
+        width: 1200,
+        height: 630,
+        alt: "Banquet Hall Refusing Advance Refund? Legal Rights & Notice",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Banquet Hall Refusing Advance Refund? Legal Rights & Notice",
+    description:
+      "Statutory escalation path for marriage hall advance deposit forfeiture, wedding venue cancellation refunds, Section 74 limits, and consumer court action.",
+    site: "@legalrecoveryin",
+    creator: "@legalrecoveryin",
+    images: [`${SITE_URL}/blog_money_recovery.png`],
   },
   robots: {
     index: true,

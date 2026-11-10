@@ -165,9 +165,9 @@ export default function ExperienceLetterTableOfContents({
         <div className="bg-white rounded-2xl border border-slate-200 p-5 shadow-xs space-y-4">
           <div className="flex items-center gap-2 pb-3 border-b border-slate-100">
             <span className="w-2.5 h-2.5 rounded-full bg-red-600" />
-            <h3 className="text-xs font-black uppercase tracking-wider text-slate-800">
+            <p className="text-xs font-black uppercase tracking-wider text-slate-800">
               Table of Contents
-            </h3>
+            </p>
           </div>
 
           <nav className="space-y-1 max-h-[calc(100vh-180px)] overflow-y-auto pr-1">

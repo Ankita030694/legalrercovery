@@ -142,9 +142,9 @@ export default function PdiDefectsTableOfContents({
       >
         <div className="flex items-center gap-2 pb-3 mb-3 border-b border-slate-100">
           <div className="w-2 h-2 rounded-full bg-red-600 animate-pulse" />
-          <h2 className="text-xs font-black uppercase tracking-wider text-slate-900">
+          <p className="text-xs font-black uppercase tracking-wider text-slate-900">
             Guide Navigation
-          </h2>
+          </p>
         </div>
         <ul className="space-y-1 text-xs">
           {sections.map((section) => {

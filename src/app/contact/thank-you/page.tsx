@@ -9,6 +9,31 @@ export const metadata: Metadata = {
   alternates: {
     canonical: "https://www.legalrecovery.in/contact/thank-you",
   },
+  openGraph: {
+    title: "Thank You | Legal Recovery",
+    description:
+      "Thank you for submitting your case details. Our legal recovery experts will review your details and contact you within 24 hours.",
+    url: "https://www.legalrecovery.in/contact/thank-you",
+    type: "website",
+    siteName: "Legal Recovery India",
+    images: [
+      {
+        url: "https://www.legalrecovery.in/blog_money_recovery.png",
+        width: 1200,
+        height: 630,
+        alt: "Thank You | Legal Recovery",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Thank You | Legal Recovery",
+    description:
+      "Thank you for submitting your case details. Our legal recovery experts will review your details and contact you within 24 hours.",
+    site: "@legalrecoveryin",
+    creator: "@legalrecoveryin",
+    images: ["https://www.legalrecovery.in/blog_money_recovery.png"],
+  },
   robots: {
     index: false,
     follow: false,

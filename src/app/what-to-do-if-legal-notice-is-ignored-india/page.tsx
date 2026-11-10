@@ -22,6 +22,23 @@ export const metadata: Metadata = {
     description: "Refusing a legal notice doesn't stop the case: refused or unclaimed post can count as served. What happens next and how a recovery suit proceeds.",
     url: "https://www.legalrecovery.in/what-to-do-if-legal-notice-is-ignored-india",
     type: "article",
+    images: [
+      {
+        url: "https://www.legalrecovery.in/blog_money_recovery.png",
+        width: 1200,
+        height: 630,
+        alt: "Legal Notice Ignored, Refused or Not Received? What Next",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Legal Notice Ignored, Refused or Not Received? What Next",
+    description:
+      "Refusing a legal notice doesn't stop the case: refused or unclaimed post can count as served. What happens next and how a recovery suit proceeds.",
+    site: "@legalrecoveryin",
+    creator: "@legalrecoveryin",
+    images: ["https://www.legalrecovery.in/blog_money_recovery.png"],
   },
 };
 

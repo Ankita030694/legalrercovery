@@ -24,6 +24,23 @@ export const metadata: Metadata = {
     type: "article",
     siteName: "LegalRecovery.in",
     locale: "en_IN",
+    images: [
+      {
+        url: `${SITE_URL}/blog_money_recovery.png`,
+        width: 1200,
+        height: 630,
+        alt: "Packers and Movers Damaged Goods? Claim & Legal Notice",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Packers and Movers Damaged Goods? Claim & Legal Notice",
+    description:
+      "Packers and movers damaged or lost goods? Carrier liability under Carriage by Road Act 2007, transit insurance claims, and legal notice procedure to recover compensation.",
+    site: "@legalrecoveryin",
+    creator: "@legalrecoveryin",
+    images: [`${SITE_URL}/blog_money_recovery.png`],
   },
   robots: {
     index: true,

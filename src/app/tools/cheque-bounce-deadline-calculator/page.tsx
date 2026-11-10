@@ -24,6 +24,23 @@ export const metadata: Metadata = {
     type: "website",
     siteName: "LegalRecovery.in",
     locale: "en_IN",
+    images: [
+      {
+        url: `${SITE_URL}/blog_money_recovery.png`,
+        width: 1200,
+        height: 630,
+        alt: "Cheque Bounce Deadline Calculator (Section 138 NI Act) | LegalRecovery",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Cheque Bounce Deadline Calculator (Section 138 NI Act) | LegalRecovery",
+    description:
+      "Calculate your 30-day statutory notice time limit, 15-day cure window, and Section 142 complaint filing deadline under the Negotiable Instruments Act.",
+    site: "@legalrecoveryin",
+    creator: "@legalrecoveryin",
+    images: [`${SITE_URL}/blog_money_recovery.png`],
   },
   robots: {
     index: true,

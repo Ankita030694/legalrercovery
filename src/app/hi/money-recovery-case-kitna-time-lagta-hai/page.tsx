@@ -48,12 +48,23 @@ export const metadata: Metadata = {
     siteName: "LegalRecovery.in",
     locale: "hi_IN",
     alternateLocale: ["en_IN"],
+    images: [
+      {
+        url: `${SITE_URL}/blog_money_recovery.png`,
+        width: 1200,
+        height: 630,
+        alt: "मनी रिकवरी केस कोर्ट में कितना समय लेता है — और जल्दी कैसे निपटाएं",
+      },
+    ],
   },
   twitter: {
     card: "summary_large_image",
     title: "पैसे की वसूली के केस में कितना समय लगता है? (2026)",
     description:
       "नोटिस, समरी सूट, चेक बाउंस और उपभोक्ता केस में कितना समय लगता है, और कोर्ट से पहले पैसा वापस पाने के तेज़ तरीके।",
+    site: "@legalrecoveryin",
+    creator: "@legalrecoveryin",
+    images: [`${SITE_URL}/blog_money_recovery.png`],
   },
   robots: {
     index: true,

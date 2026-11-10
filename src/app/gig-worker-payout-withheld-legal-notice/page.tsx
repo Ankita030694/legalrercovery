@@ -24,6 +24,23 @@ export const metadata: Metadata = {
     type: "article",
     siteName: "LegalRecovery.in",
     locale: "en_IN",
+    images: [
+      {
+        url: `${SITE_URL}/blog_money_recovery.png`,
+        width: 1200,
+        height: 630,
+        alt: "Delivery or Ride Partner Payout Withheld? Legal Remedies for Gig Workers",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Delivery or Ride Partner Payout Withheld? Legal Remedies for Gig Workers",
+    description:
+      "Statutory escalation path for delivery and ride partners facing blocked app IDs, withheld weekly payouts, bogus negative wallet balances, and arbitrary penalties.",
+    site: "@legalrecoveryin",
+    creator: "@legalrecoveryin",
+    images: [`${SITE_URL}/blog_money_recovery.png`],
   },
   robots: {
     index: true,

@@ -23,6 +23,23 @@ export const metadata: Metadata = {
     type: "article",
     siteName: "LegalRecovery.in",
     locale: "en_IN",
+    images: [
+      {
+        url: `${SITE_URL}/blog_money_recovery.png`,
+        width: 1200,
+        height: 630,
+        alt: "MakeMyTrip Refund Stuck Between Airline and Agent? Who Must Pay",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "MakeMyTrip Refund Stuck Between Airline and Agent? Who Must Pay",
+    description:
+      "Statutory escalation path for delayed MakeMyTrip flight, hotel and holiday package refunds, MyCash wallet conversions, and agency joint liability under DGCA CAR & CPA 2019.",
+    site: "@legalrecoveryin",
+    creator: "@legalrecoveryin",
+    images: [`${SITE_URL}/blog_money_recovery.png`],
   },
   robots: {
     index: true,

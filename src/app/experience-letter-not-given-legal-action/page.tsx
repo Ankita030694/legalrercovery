@@ -24,6 +24,23 @@ export const metadata: Metadata = {
     type: "article",
     siteName: "LegalRecovery.in",
     locale: "en_IN",
+    images: [
+      {
+        url: `${SITE_URL}/blog_money_recovery.png`,
+        width: 1200,
+        height: 630,
+        alt: "Experience Letter Not Given by Employer? Legal Action & Statutory Remedies",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Experience Letter Not Given by Employer? Legal Action & Statutory Remedies",
+    description:
+      "Statutory escalation path when an employer refuses your experience certificate: legal notice, labour commissioner complaint, and High Court precedents.",
+    site: "@legalrecoveryin",
+    creator: "@legalrecoveryin",
+    images: [`${SITE_URL}/blog_money_recovery.png`],
   },
   robots: {
     index: true,

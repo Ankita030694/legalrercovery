@@ -24,6 +24,23 @@ export const metadata: Metadata = {
     type: "article",
     siteName: "LegalRecovery.in",
     locale: "en_IN",
+    images: [
+      {
+        url: `${SITE_URL}/blog_money_recovery.png`,
+        width: 1200,
+        height: 630,
+        alt: "Insurance Ombudsman Complaint Format (Annexure VI-A) — Free Word & PDF",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Insurance Ombudsman Complaint Format (Annexure VI-A) — Free Word & PDF",
+    description:
+      "Statutory Annexure VI-A complaint form for rejected health, life, and motor insurance claims under Insurance Ombudsman Rules, 2017 with field guidance and enclosure checklist.",
+    site: "@legalrecoveryin",
+    creator: "@legalrecoveryin",
+    images: [`${SITE_URL}/blog_money_recovery.png`],
   },
   robots: {
     index: true,

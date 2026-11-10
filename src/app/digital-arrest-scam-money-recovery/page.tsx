@@ -24,6 +24,23 @@ export const metadata: Metadata = {
     type: "article",
     siteName: "LegalRecovery.in",
     locale: "en_IN",
+    images: [
+      {
+        url: `${SITE_URL}/blog_money_recovery.png`,
+        width: 1200,
+        height: 630,
+        alt: "Digital Arrest Scam: Report It & Try to Recover Money",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Digital Arrest Scam: Report It & Try to Recover Money",
+    description:
+      "Statutory escalation path for digital arrest fraud victims: 1930 CFCFRMS Golden Hour freezing, bank mule account liability, and Section 457 BNSS court refund petitions.",
+    site: "@legalrecoveryin",
+    creator: "@legalrecoveryin",
+    images: [`${SITE_URL}/blog_money_recovery.png`],
   },
   robots: {
     index: true,

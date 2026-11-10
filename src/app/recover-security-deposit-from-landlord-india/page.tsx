@@ -24,6 +24,24 @@ export const metadata: Metadata = {
     description: "Recover your rental security deposit from a defaulting landlord in 7–15 days via an Advocate Legal Notice and Rent Authority escalation.",
     url: "https://www.legalrecovery.in/recover-security-deposit-from-landlord-india",
     type: "article",
+    siteName: "LegalRecovery.in",
+    locale: "en_IN",
+    images: [
+      {
+        url: "https://www.legalrecovery.in/blog_money_recovery.png",
+        width: 1200,
+        height: 630,
+        alt: "Landlord Not Returning Security Deposit? Recovery Steps",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Landlord Not Returning Security Deposit? Recovery Steps",
+    description: "Recover your rental security deposit from a defaulting landlord in 7–15 days via an Advocate Legal Notice and Rent Authority escalation.",
+    site: "@legalrecoveryin",
+    creator: "@legalrecoveryin",
+    images: ["https://www.legalrecovery.in/blog_money_recovery.png"],
   },
 };
 

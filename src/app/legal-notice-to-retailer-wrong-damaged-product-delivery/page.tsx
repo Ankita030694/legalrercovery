@@ -21,6 +21,23 @@ export const metadata: Metadata = {
     description: "Damaged, wrong or defective item delivered and the seller won't refund? The proof to keep, your rights under consumer law and the steps to take next.",
     url: "https://www.legalrecovery.in/legal-notice-to-retailer-wrong-damaged-product-delivery",
     type: "article",
+    images: [
+      {
+        url: "https://www.legalrecovery.in/blog_money_recovery.png",
+        width: 1200,
+        height: 630,
+        alt: "Received a Damaged or Wrong Product? How to Get a Refund",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Received a Damaged or Wrong Product? How to Get a Refund",
+    description:
+      "Damaged, wrong or defective item delivered and the seller won't refund? The proof to keep, your rights under consumer law and the steps to take next.",
+    site: "@legalrecoveryin",
+    creator: "@legalrecoveryin",
+    images: ["https://www.legalrecovery.in/blog_money_recovery.png"],
   },
 };
 

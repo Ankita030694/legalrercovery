@@ -39,12 +39,23 @@ export const metadata: Metadata = {
     type: "article",
     siteName: "LegalRecovery.in",
     locale: "en_IN",
+    images: [
+      {
+        url: `${SITE_URL}/blog_money_recovery.png`,
+        width: 1200,
+        height: 630,
+        alt: "Section 43B(h): The MSME 45-Day Payment Rule for Buyers",
+      },
+    ],
   },
   twitter: {
     card: "summary_large_image",
     title: "Section 43B(h): The MSME 45-Day Payment Rule for Buyers",
     description:
       "Buyers lose the tax deduction if MSE dues stay unpaid past 45 days. How suppliers can use Section 43B(h) as payment leverage.",
+    site: "@legalrecoveryin",
+    creator: "@legalrecoveryin",
+    images: [`${SITE_URL}/blog_money_recovery.png`],
   },
   robots: {
     index: true,

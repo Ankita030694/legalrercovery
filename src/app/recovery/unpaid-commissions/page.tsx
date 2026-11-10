@@ -19,6 +19,30 @@ export const metadata: Metadata = {
   alternates: {
     canonical: 'https://www.legalrecovery.in/recovery/unpaid-commissions',
   },
+  openGraph: {
+    title: "Recover Sales Commissions & Brokerage | LegalRecovery",
+    description: "Recover unpaid sales commissions, referral fees, or brokerage dues in India. Learn legal notice rules, agency contracts, and Order 37 CPC remedies.",
+    url: "https://www.legalrecovery.in/recovery/unpaid-commissions",
+    type: "article",
+    siteName: "LegalRecovery.in",
+    locale: "en_IN",
+    images: [
+      {
+        url: "https://www.legalrecovery.in/blog_money_recovery.png",
+        width: 1200,
+        height: 630,
+        alt: "Recover Sales Commissions & Brokerage | LegalRecovery",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Recover Sales Commissions & Brokerage | LegalRecovery",
+    description: "Recover unpaid sales commissions, referral fees, or brokerage dues in India. Learn legal notice rules, agency contracts, and Order 37 CPC remedies.",
+    site: "@legalrecoveryin",
+    creator: "@legalrecoveryin",
+    images: ["https://www.legalrecovery.in/blog_money_recovery.png"],
+  },
 };
 
 export default function UnpaidCommissionsPage() {

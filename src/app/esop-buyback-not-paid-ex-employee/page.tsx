@@ -24,6 +24,23 @@ export const metadata: Metadata = {
     type: "article",
     siteName: "LegalRecovery.in",
     locale: "en_IN",
+    images: [
+      {
+        url: `${SITE_URL}/blog_money_recovery.png`,
+        width: 1200,
+        height: 630,
+        alt: "ESOP Buyback Not Paid to Ex-Employee? How to Recover Vested Stock Value",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "ESOP Buyback Not Paid to Ex-Employee? How to Recover Vested Stock Value",
+    description:
+      "Statutory escalation path when a company refuses to honour vested ESOPs, delays buyback liquidity payments, or cancels options upon resignation.",
+    site: "@legalrecoveryin",
+    creator: "@legalrecoveryin",
+    images: [`${SITE_URL}/blog_money_recovery.png`],
   },
   robots: {
     index: true,

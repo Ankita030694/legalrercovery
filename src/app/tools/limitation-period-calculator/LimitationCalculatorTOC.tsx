@@ -147,9 +147,9 @@ export default function LimitationCalculatorTOC({
         <div className="flex items-center justify-between pb-3.5 mb-3 border-b border-slate-200">
           <div className="flex items-center gap-2">
             <span className="w-2.5 h-2.5 rounded-full bg-[#DC2626]" />
-            <h3 className="text-xs font-black uppercase tracking-wider text-slate-900">
+            <p className="text-xs font-black uppercase tracking-wider text-slate-900">
               Page Navigation
-            </h3>
+            </p>
           </div>
           <span className="text-[10px] font-bold text-slate-500 uppercase tracking-wider">
             {sections.length} Sections

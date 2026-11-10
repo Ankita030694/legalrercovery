@@ -12,7 +12,31 @@ export const metadata: Metadata = {
     "fee to file consumer case"
   ],
   alternates: {
-    canonical: "https://www.legalrecovery.in/how-to-file-consumer-complaint-india",
+    canonical: 'https://www.legalrecovery.in/how-to-file-consumer-complaint-india',
+  },
+  openGraph: {
+    title: "How to File a Consumer Complaint in India: Online Guide",
+    description: "Learn how to file a consumer complaint in India via e-Daakhil. Understand jurisdiction limits, fee rules, and notice requirements under CPA 2019.",
+    url: "https://www.legalrecovery.in/how-to-file-consumer-complaint-india",
+    type: "article",
+    siteName: "LegalRecovery.in",
+    locale: "en_IN",
+    images: [
+      {
+        url: "https://www.legalrecovery.in/blog_money_recovery.png",
+        width: 1200,
+        height: 630,
+        alt: "How to File a Consumer Complaint in India: Online Guide",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "How to File a Consumer Complaint in India: Online Guide",
+    description: "Learn how to file a consumer complaint in India via e-Daakhil. Understand jurisdiction limits, fee rules, and notice requirements under CPA 2019.",
+    site: "@legalrecoveryin",
+    creator: "@legalrecoveryin",
+    images: ["https://www.legalrecovery.in/blog_money_recovery.png"],
   },
 };
 

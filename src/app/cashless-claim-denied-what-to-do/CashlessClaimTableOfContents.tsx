@@ -138,7 +138,7 @@ export default function CashlessClaimTableOfContents({
         <div className="bg-white border border-slate-200 rounded-2xl p-5 shadow-sm">
           <div className="flex items-center gap-2 pb-3 mb-3 border-b border-slate-100">
             <div className="w-2 h-2 rounded-full bg-red-600 animate-pulse" />
-            <h3 className="text-xs uppercase tracking-widest font-black text-slate-700">Guide Index</h3>
+            <p className="text-xs uppercase tracking-widest font-black text-slate-700">Guide Index</p>
           </div>
           <nav className="space-y-1 max-h-[calc(100vh-220px)] overflow-y-auto pr-1">
             {sections.map((section, idx) => {

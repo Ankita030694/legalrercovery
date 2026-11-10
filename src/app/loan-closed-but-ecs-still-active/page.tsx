@@ -24,6 +24,23 @@ export const metadata: Metadata = {
     type: "article",
     siteName: "LegalRecovery.in",
     locale: "en_IN",
+    images: [
+      {
+        url: `${SITE_URL}/blog_money_recovery.png`,
+        width: 1200,
+        height: 630,
+        alt: "Loan Closed but EMI Still Debited? Stop ECS & Get Refund",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Loan Closed but EMI Still Debited? Stop ECS & Get Refund",
+    description:
+      "Statutory guide to cancelling active ECS/NACH mandates after loan closure, recovering excess debited EMIs with 18% interest, and filing RBI Banking Ombudsman complaints.",
+    site: "@legalrecoveryin",
+    creator: "@legalrecoveryin",
+    images: [`${SITE_URL}/blog_money_recovery.png`],
   },
   robots: {
     index: true,

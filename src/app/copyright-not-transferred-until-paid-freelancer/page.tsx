@@ -24,6 +24,23 @@ export const metadata: Metadata = {
     type: "article",
     siteName: "LegalRecovery.in",
     locale: "en_IN",
+    images: [
+      {
+        url: `${SITE_URL}/blog_money_recovery.png`,
+        width: 1200,
+        height: 630,
+        alt: "Unpaid Freelancer? How Section 17 & 19 Copyright Law Forces Clients to Pay",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Unpaid Freelancer? How Section 17 & 19 Copyright Law Forces Clients to Pay",
+    description:
+      "Statutory guide for Indian freelancers, designers, software developers, and creators on using Section 17 first ownership and Section 19 copyright assignment rules to recover unpaid invoices.",
+    site: "@legalrecoveryin",
+    creator: "@legalrecoveryin",
+    images: [`${SITE_URL}/blog_money_recovery.png`],
   },
   robots: {
     index: true,

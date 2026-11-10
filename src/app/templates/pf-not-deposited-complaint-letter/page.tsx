@@ -24,12 +24,23 @@ export const metadata: Metadata = {
     type: "article",
     siteName: "LegalRecovery.in",
     locale: "en_IN",
+    images: [
+      {
+        url: `${SITE_URL}/blog_money_recovery.png`,
+        width: 1200,
+        height: 630,
+        alt: "Employer Deducting PF but Not Depositing It? Use This Complaint",
+      },
+    ],
   },
   twitter: {
     card: "summary_large_image",
     title: "PF Not Deposited by Employer: Complaint Letter Format",
     description:
       "Complaint letter formats to your employer and EPFO when PF is deducted but not deposited, plus penalties the employer faces.",
+    site: "@legalrecoveryin",
+    creator: "@legalrecoveryin",
+    images: [`${SITE_URL}/blog_money_recovery.png`],
   },
   robots: {
     index: true,

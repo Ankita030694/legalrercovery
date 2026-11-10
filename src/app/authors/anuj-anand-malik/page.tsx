@@ -7,6 +7,30 @@ export const metadata: Metadata = {
   alternates: {
     canonical: 'https://www.legalrecovery.in/authors/anuj-anand-malik',
   },
+  openGraph: {
+    title: 'Anuj Anand Malik - Founder, AMA Legal Solutions',
+    description: 'Anuj Anand Malik, Founder of AMA Legal Solutions, is a seasoned advocate and debt resolution expert specializing in banking and consumer disputes.',
+    url: 'https://www.legalrecovery.in/authors/anuj-anand-malik',
+    type: 'profile',
+    siteName: 'LegalRecovery.in',
+    locale: 'en_IN',
+    images: [
+      {
+        url: 'https://www.legalrecovery.in/anujbhiya.png',
+        width: 800,
+        height: 800,
+        alt: 'Anuj Anand Malik - Founder, AMA Legal Solutions',
+      },
+    ],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Anuj Anand Malik - Founder, AMA Legal Solutions',
+    description: 'Anuj Anand Malik, Founder of AMA Legal Solutions, is a seasoned advocate and debt resolution expert specializing in banking and consumer disputes.',
+    site: '@legalrecoveryin',
+    creator: '@legalrecoveryin',
+    images: ['https://www.legalrecovery.in/anujbhiya.png'],
+  },
 };
 
 const personSchema = {

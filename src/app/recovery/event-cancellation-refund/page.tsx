@@ -19,6 +19,30 @@ export const metadata: Metadata = {
   alternates: {
     canonical: 'https://www.legalrecovery.in/recovery/event-cancellation-refund',
   },
+  openGraph: {
+    title: "Cancelled Event Refund: Recover Ticket & Booking Money",
+    description: "Event or concert cancelled and organizer refusing refund? Know your rights under the Consumer Protection Act and legally recover your money.",
+    url: "https://www.legalrecovery.in/recovery/event-cancellation-refund",
+    type: "article",
+    siteName: "LegalRecovery.in",
+    locale: "en_IN",
+    images: [
+      {
+        url: "https://www.legalrecovery.in/blog_money_recovery.png",
+        width: 1200,
+        height: 630,
+        alt: "Cancelled Event Refund: Recover Ticket & Booking Money",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Cancelled Event Refund: Recover Ticket & Booking Money",
+    description: "Event or concert cancelled and organizer refusing refund? Know your rights under the Consumer Protection Act and legally recover your money.",
+    site: "@legalrecoveryin",
+    creator: "@legalrecoveryin",
+    images: ["https://www.legalrecovery.in/blog_money_recovery.png"],
+  },
 };
 
 export default function EventCancellationRefundPage() {

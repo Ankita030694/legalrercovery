@@ -24,6 +24,23 @@ export const metadata: Metadata = {
     type: "article",
     siteName: "LegalRecovery.in",
     locale: "en_IN",
+    images: [
+      {
+        url: `${SITE_URL}/blog_money_recovery.png`,
+        width: 1200,
+        height: 630,
+        alt: "Visa or Immigration Consultant Didn't Deliver? How to Recover Your Fees",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Visa or Immigration Consultant Didn't Deliver? How to Recover Your Fees",
+    description:
+      "Statutory escalation path for recovering visa agent fees, striking down unconscionable non-refundable clauses, filing e-Jagriti consumer claims, and invoking BNS Section 318 cheating remedies.",
+    site: "@legalrecoveryin",
+    creator: "@legalrecoveryin",
+    images: [`${SITE_URL}/blog_money_recovery.png`],
   },
   robots: {
     index: true,
@@ -93,7 +110,7 @@ const CASE_CITATIONS = [
     facts:
       "The complainant was promised an employment visa for the Czech Republic as a warehouse technician. The agency charged ₹3,50,000 in two installments and issued an 'employment offer letter' on corporate letterhead. When the complainant verified the document with the Czech Embassy in New Delhi, the embassy confirmed the sponsor company was non-existent and the document was forged. The agent then refused to answer calls.",
     holding:
-      "The District Commission observed that delivering counterfeit immigration vouchers or fake job contracts is not merely a civil deficiency but a predatory fraud. The commission directed the consultant and its proprietors to jointly refund ₹3,50,000 with 12% interest from the date of deposit, awarded ₹50,000 compensation for mental agony and professional loss, and ₹10,000 litigation costs, while forwarding a copy of the order to the Senior Superintendent of Police for criminal registration under Section 24 of the Emigration Act.",
+      "The District Commission ruled that delivering fake job contracts is serious fraud. The court ordered the consultant to refund ₹3,50,000 with 12% interest. It also awarded ₹50,000 in damages and forwarded the case to the police for criminal investigation under the Emigration Act.",
     amount: "₹3,50,000 Full Deposit Refund @ 12% Interest + ₹50,000 Compensation + Police Referral",
     takeaway:
       "Fabricated job letters or forged work permits allow consumers to pursue simultaneous consumer court proceedings for instant money recovery and criminal action under Section 318 BNS for cheating.",
@@ -106,7 +123,7 @@ const CASE_CITATIONS = [
     facts:
       "Multiple job-seekers paid sums between ₹1,50,000 and ₹4,00,000 to an immigration agent in Ludhiana for Gulf work permits. The agent had neither obtained a registration certificate from the Protector General of Emigrants (PGE) under Section 10 of the Emigration Act, 1983, nor maintained a license under the Punjab Travel Professionals Regulation Act. After collecting ₹18 Lakhs, the agent shuttered operations.",
     holding:
-      "The High Court affirmed that recruiting citizens for overseas employment or collecting fees without statutory registration under the Emigration Act constitutes an absolute statutory bar. Unregistered consultants cannot enforce any civil agreement against candidates and are criminally liable under Section 24 of the Emigration Act and Section 318 / 316 BNS. The court ordered attachment of the proprietor's bank accounts to secure 100% restitution for victim candidates.",
+      "The High Court held that recruiting citizens without Emigration Act registration is illegal. Unregistered agents cannot enforce agreements and face criminal charges under Section 318 BNS. The court ordered the attachment of the agent bank accounts to refund the victims in full.",
     amount: "Complete Judicial Restitution of ₹18,00,000 via Asset Attachment + Criminal Conviction",
     takeaway:
       "If your visa agent is not registered with the Ministry of External Affairs (MEA), every rupee collected is illegal money. Courts will attach their personal bank accounts and properties to enforce a full refund.",
@@ -117,17 +134,17 @@ const FAQS = [
   {
     question: "Can I get a refund if my visa agent took money but the visa was rejected by the embassy?",
     answer:
-      "Yes. While foreign embassies hold sovereign authority over visa grants, immigration consultants are legally bound under Section 2(11) of the Consumer Protection Act, 2019 to provide competent professional service. If the rejection was caused by the consultant's poor document preparation, mismatched SOP statements, or misrepresentation, or if the agent promised guaranteed approvals, they cannot forfeit your retainer. Unless the consultant can prove legitimate, non-refundable administrative disbursements made to third-party government portals on your behalf, consumer commissions consistently order 100% refund of professional service charges.",
+      "Yes. Foreign embassies decide visas, but consultants must provide proper service under Section 2(11) of the Consumer Protection Act, 2019. If rejection happened due to flawed paperwork or misleading promises, the agent cannot keep your fee. Unless they prove actual government portal disbursements, consumer courts routinely order a full refund of service fees.",
   },
   {
     question: "What should I do if my immigration consultant refuses to refund citing a 'non-refundable' contract clause?",
     answer:
-      "Under Section 2(46) of the Consumer Protection Act, 2019, any boilerplate contract clause that imposes unreasonable costs or creates a one-sided imbalance in favor of the service provider is classified as an 'unfair contract' and is void ab initio. The National Consumer Disputes Redressal Commission (NCDRC) and State Commissions routinely strike down 'non-refundable under any circumstance' clauses in immigration contracts. Serving a formal 15-day advocate legal notice challenging the clause under Section 2(46) and Section 2(47) CPA 2019 establishes the ground to claim full refund, 12% interest, and compensation in consumer court.",
+      "Under Section 2(46) of the Consumer Protection Act, 2019, one-sided terms favoring service providers are unfair contracts and void. Consumer courts routinely strike down non-refundable clauses in visa agreements. Serving a 15-day advocate legal notice challenges this clause and paves the way for a full refund with interest.",
   },
   {
     question: "When does visa agent fraud qualify for a police FIR under Section 318 of Bharatiya Nyaya Sanhita (BNS)?",
     answer:
-      "A police complaint and First Information Report (FIR) under Section 318 (Cheating) and Section 316 (Criminal Breach of Trust) of the Bharatiya Nyaya Sanhita, 2023 applies when the consultant demonstrated dishonest intention from the beginning. Examples include: (1) Providing forged job offer letters or fake LMIA work permits, (2) Operating without mandatory registration from the Protector General of Emigrants (PGE) under Section 10 of the Emigration Act, 1983, (3) Withholding your original passport under Section 3 of the Passports Act, 1967, or (4) Collecting money and shutting down the office or ghosting all calls.",
+      "You can file an FIR under Section 318 (Cheating) and Section 316 (Breach of Trust) of the BNS when the agent acts dishonestly from the start. Examples include giving forged job offers, working without Emigration Act registration, withholding your passport, or vanishing after collecting money.",
   },
   {
     question: "How do I recover study visa processing fees if the college offer letter was never secured?",
@@ -147,7 +164,7 @@ const FAQS = [
   {
     question: "Visa agent ne paise le liye aur visa nahi lagwaya ya phone switch off kar diya toh legal notice kaise bheje?",
     answer:
-      "Agar visa ya immigration agent ne aapse advance fees le li, offer letter ya visa deliver nahi kiya, aur ab paise refund karne se mana kar raha hai ya phone block kar diya hai, toh aap ek formal advocate statutory legal notice bhej sakte hain. LegalRecovery.in par verified advocate Consumer Protection Act 2019 aur Bharatiya Nyaya Sanhita 2023 (Section 318 cheating) ke tehat agent ke registered office aur proprietors par Registered Speed Post aur electronic email se 15-day final legal demand notice bhejte hain, jismein 100% refund, 18% penal interest aur criminal prosecution ki warning di jaati hai.",
+      "Agar agent advance lekar visa na lagwaye aur paise na lautaye, toh advocate dwara legal demand notice bhejein. Notice mein Consumer Protection Act aur Section 318 BNS ke tehat 15 din ka refund demand hota hai. Ye notice Speed Post aur email se agent ke office bheja jata hai.",
   },
 ];
 
@@ -275,7 +292,7 @@ export default function VisaAgentFraudRefundPage() {
                 Statutory Summary (Immigration Consultant Fee Recovery Mandate)
               </p>
               <p>
-                Under Section 2(11) and Section 2(47) of the Consumer Protection Act, 2019, retaining advance professional fees without delivering agreed admission, work permits, or immigration packaging constitutes deficiency of service and unfair trade practice. Unilateral &quot;non-refundable&quot; agreement clauses are void under Section 2(46). Where fraudulent job vouchers or fake permits were issued, criminal remedies under Section 318 BNS apply alongside a formal 15-day statutory advocate legal notice before filing on e-Jagriti.
+                Under Section 2(11) and Section 2(47) of the Consumer Protection Act, 2019, keeping fees without delivering agreed visa services is illegal. One-sided non-refundable clauses are void under Section 2(46). If an agent issues fake work permits, criminal remedies under Section 318 BNS apply. You can send a 15-day legal notice before filing on e-Jagriti.
               </p>
             </div>
 

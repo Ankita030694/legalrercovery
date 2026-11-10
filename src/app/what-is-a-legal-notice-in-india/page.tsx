@@ -14,7 +14,31 @@ export const metadata: Metadata = {
     "Section 80 CPC notice"
   ],
   alternates: {
-    canonical: "https://www.legalrecovery.in/what-is-a-legal-notice-in-india",
+    canonical: 'https://www.legalrecovery.in/what-is-a-legal-notice-in-india',
+  },
+  openGraph: {
+    title: "What is a Legal Notice in India: Validity, Rules & Recovery",
+    description: "Learn what is a legal notice in India, its legal validity, service rules under CPC, how to reply, and the step-by-step recovery process.",
+    url: "https://www.legalrecovery.in/what-is-a-legal-notice-in-india",
+    type: "article",
+    siteName: "LegalRecovery.in",
+    locale: "en_IN",
+    images: [
+      {
+        url: "https://www.legalrecovery.in/blog_money_recovery.png",
+        width: 1200,
+        height: 630,
+        alt: "What is a Legal Notice in India: Validity, Rules & Recovery",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "What is a Legal Notice in India: Validity, Rules & Recovery",
+    description: "Learn what is a legal notice in India, its legal validity, service rules under CPC, how to reply, and the step-by-step recovery process.",
+    site: "@legalrecoveryin",
+    creator: "@legalrecoveryin",
+    images: ["https://www.legalrecovery.in/blog_money_recovery.png"],
   },
 };
 

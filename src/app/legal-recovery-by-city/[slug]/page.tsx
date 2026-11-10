@@ -50,6 +50,14 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
         },
       ],
     },
+    twitter: {
+      card: "summary_large_image",
+      title: location.title,
+      description: location.description,
+      site: "@legalrecoveryin",
+      creator: "@legalrecoveryin",
+      images: ["/services/3.png"],
+    },
   };
 }
 

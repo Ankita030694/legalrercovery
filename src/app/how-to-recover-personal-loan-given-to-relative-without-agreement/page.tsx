@@ -13,6 +13,30 @@ export const metadata: Metadata = {
   alternates: {
     canonical: 'https://www.legalrecovery.in/how-to-recover-personal-loan-given-to-relative-without-agreement',
   },
+  openGraph: {
+    title: "Recover Personal Loan to Relative Without Agreement",
+    description: "Learn how to recover a personal loan given to a relative without a written agreement in India. Draft a firm legal notice to recover your unpaid loan.",
+    url: "https://www.legalrecovery.in/how-to-recover-personal-loan-given-to-relative-without-agreement",
+    type: "article",
+    siteName: "LegalRecovery.in",
+    locale: "en_IN",
+    images: [
+      {
+        url: "https://www.legalrecovery.in/blog_money_recovery.png",
+        width: 1200,
+        height: 630,
+        alt: "Recover Personal Loan to Relative Without Agreement",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Recover Personal Loan to Relative Without Agreement",
+    description: "Learn how to recover a personal loan given to a relative without a written agreement in India. Draft a firm legal notice to recover your unpaid loan.",
+    site: "@legalrecoveryin",
+    creator: "@legalrecoveryin",
+    images: ["https://www.legalrecovery.in/blog_money_recovery.png"],
+  },
 };
 
 export default function RelativeLoanRecoveryPage() {

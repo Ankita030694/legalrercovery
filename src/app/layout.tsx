@@ -76,15 +76,6 @@ export const metadata: Metadata = {
       },
     ],
   },
-  twitter: {
-    card: "summary_large_image",
-    title: "Legal Recovery India – Recover Your Money Legally Online",
-    description:
-      "Recover unpaid money, salary, refunds, deposits, invoices, and consumer claims legally through India's trusted legal platform. Start your claim online.",
-    site: "@legalrecoveryin",
-    creator: "@legalrecoveryin",
-    images: ["/blog_money_recovery.png"],
-  },
   icons: {
     icon: [
       { url: "/favicon/favicon.ico", sizes: "any" },

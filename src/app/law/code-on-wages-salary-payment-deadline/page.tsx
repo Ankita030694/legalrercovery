@@ -24,6 +24,23 @@ export const metadata: Metadata = {
     type: "article",
     siteName: "LegalRecovery.in",
     locale: "en_IN",
+    images: [
+      {
+        url: `${SITE_URL}/blog_money_recovery.png`,
+        width: 1200,
+        height: 630,
+        alt: "Salary Payment Deadline in India: Code on Wages Section 17(1) Explained",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Salary Payment Deadline in India: Code on Wages Section 17(1) Explained",
+    description:
+      "Statutory monthly salary deadline under the Code on Wages 2019. Understand the 7th-of-the-month rule, employer liabilities, and employee recovery remedies.",
+    site: "@legalrecoveryin",
+    creator: "@legalrecoveryin",
+    images: [`${SITE_URL}/blog_money_recovery.png`],
   },
   robots: {
     index: true,

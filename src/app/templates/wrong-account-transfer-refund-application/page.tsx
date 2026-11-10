@@ -25,6 +25,23 @@ export const metadata: Metadata = {
     type: "article",
     siteName: "LegalRecovery.in",
     locale: "en_IN",
+    images: [
+      {
+        url: `${SITE_URL}/blog_money_recovery.png`,
+        width: 1200,
+        height: 630,
+        alt: "Wrong Account Money Transfer Refund Application (Format)",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Wrong Account Money Transfer Refund Application (Format)",
+    description:
+      "Ready application formats in English and Hindi to request reversal of money sent to a wrong account or UPI ID.",
+    site: "@legalrecoveryin",
+    creator: "@legalrecoveryin",
+    images: [`${SITE_URL}/blog_money_recovery.png`],
   },
   robots: {
     index: true,

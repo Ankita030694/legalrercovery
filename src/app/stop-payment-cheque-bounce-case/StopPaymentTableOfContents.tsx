@@ -140,9 +140,9 @@ export default function StopPaymentTableOfContents({
         <div className="bg-white border border-slate-200 rounded-2xl p-5 shadow-sm">
           <div className="flex items-center gap-2 pb-3 mb-3 border-b border-slate-200">
             <span className="w-2.5 h-2.5 rounded-full bg-red-600" />
-            <h3 className="text-xs font-black uppercase tracking-wider text-slate-900">
+            <p className="text-xs font-black uppercase tracking-wider text-slate-900">
               Guide Navigation
-            </h3>
+            </p>
           </div>
 
           <nav aria-label="Table of contents" className="space-y-1">

@@ -24,6 +24,23 @@ export const metadata: Metadata = {
     type: "article",
     siteName: "LegalRecovery.in",
     locale: "en_IN",
+    images: [
+      {
+        url: `${SITE_URL}/blog_money_recovery.png`,
+        width: 1200,
+        height: 630,
+        alt: "Car or Bike Insurance Claim Rejected? Legal Notice & Reversal Strategy",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Car or Bike Insurance Claim Rejected? Legal Notice & Reversal Strategy",
+    description:
+      "Statutory escalation path for repudiated motor insurance claims: Gurmel Singh ruling on delayed intimation, Swaran Singh licence guidelines, and Ombudsman remedies.",
+    site: "@legalrecoveryin",
+    creator: "@legalrecoveryin",
+    images: [`${SITE_URL}/blog_money_recovery.png`],
   },
   robots: {
     index: true,

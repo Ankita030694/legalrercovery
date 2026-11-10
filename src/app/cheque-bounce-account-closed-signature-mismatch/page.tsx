@@ -24,6 +24,23 @@ export const metadata: Metadata = {
     type: "article",
     siteName: "LegalRecovery.in",
     locale: "en_IN",
+    images: [
+      {
+        url: `${SITE_URL}/blog_money_recovery.png`,
+        width: 1200,
+        height: 630,
+        alt: "Cheque Bounced 'Account Closed' or 'Signature Mismatch'? Section 138 Rules",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Cheque Bounced 'Account Closed' or 'Signature Mismatch'? Section 138 Rules",
+    description:
+      "Statutory guide on cheque return reasons under Section 138 NI Act: Supreme Court precedents on Account Closed, Signature Differs, Refer to Drawer, and Stop Payment.",
+    site: "@legalrecoveryin",
+    creator: "@legalrecoveryin",
+    images: [`${SITE_URL}/blog_money_recovery.png`],
   },
   robots: {
     index: true,

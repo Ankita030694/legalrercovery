@@ -22,6 +22,23 @@ export const metadata: Metadata = {
     description: "How to send a legal notice online: do you need a lawyer, drafting charges, Speed Post delivery and the 15-day notice period, step by step.",
     url: "https://www.legalrecovery.in/send-legal-notice-online-india",
     type: "article",
+    images: [
+      {
+        url: "https://www.legalrecovery.in/blog_money_recovery.png",
+        width: 1200,
+        height: 630,
+        alt: "Send a Legal Notice Online in India (Kaise Bheje): Steps",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Send a Legal Notice Online in India (Kaise Bheje): Steps",
+    description:
+      "How to send a legal notice online: do you need a lawyer, drafting charges, Speed Post delivery and the 15-day notice period, step by step.",
+    site: "@legalrecoveryin",
+    creator: "@legalrecoveryin",
+    images: ["https://www.legalrecovery.in/blog_money_recovery.png"],
   },
 };
 

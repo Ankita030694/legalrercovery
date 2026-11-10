@@ -24,6 +24,23 @@ export const metadata: Metadata = {
     type: "article",
     siteName: "LegalRecovery.in",
     locale: "en_IN",
+    images: [
+      {
+        url: `${SITE_URL}/blog_money_recovery.png`,
+        width: 1200,
+        height: 630,
+        alt: "National Consumer Helpline (1915) Complaint Guide",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "National Consumer Helpline (1915) Complaint Guide",
+    description:
+      "Statutory guide on using NCH 1915 and INGRAM portal grievances as an evidentiary pre-notice step before serving an advocate legal notice or filing on e-Jagriti.",
+    site: "@legalrecoveryin",
+    creator: "@legalrecoveryin",
+    images: [`${SITE_URL}/blog_money_recovery.png`],
   },
   robots: {
     index: true,
@@ -92,7 +109,7 @@ const CASE_CITATIONS = [
       "The District Commission observed that the manufacturer produced no laboratory moisture analysis or signed technical report disproving the consumer's affidavit. The prompt registration of the NCH 1915 complaint, followed by an unanswered 15-day statutory legal notice, established that the consumer exhausted pre-litigation remedies while the company acted arbitrarily. The forum ordered replacement with a brand-new television of identical or superior specifications or full refund of ₹64,900, alongside ₹25,000 compensation and ₹8,000 costs.",
     amount: "New Unit Replacement or ₹64,900 Refund + ₹25,000 Damages + ₹8,000 Litigation Costs",
     takeaway:
-      "Appliance manufacturers cannot repudiate warranties with verbal moisture excuses. Pairing an NCH docket with an advocate legal notice creates an airtight record of manufacturing deficiency.",
+      "Makers cannot void warranties with verbal moisture excuses. Pairing an NCH docket with a legal notice creates solid proof of defect.",
   },
 ];
 
@@ -139,12 +156,12 @@ const FAQS = [
   {
     question: "What is the National Consumer Helpline (NCH) number and how does it work?",
     answer:
-      "The National Consumer Helpline operates under toll-free short code 1915 (accessible across all telecom networks in India) and portal consumerhelpline.gov.in (INGRAM). Operated by the Department of Consumer Affairs, it acts as an alternate pre-litigation dispute resolution platform connecting aggrieved consumers directly with registered corporate convergence partners.",
+      "The helpline runs on toll-free number 1915 and the website consumerhelpline.gov.in. Managed by the Department of Consumer Affairs, it helps consumers resolve disputes directly with registered partner companies.",
   },
   {
     question: "How do I file an online complaint on the National Consumer Helpline (INGRAM)?",
     answer:
-      "You can register online by visiting consumerhelpline.gov.in or downloading the NCH Mobile App / Umang App. Create an account using your mobile number, select the dispute sector and brand name, provide your invoice or transaction ID, describe the deficiency in service, and upload supporting receipts or emails. You receive a unique 7-digit NCH Docket Number instantly.",
+      "Register online at consumerhelpline.gov.in or use the Umang app. Sign up with your mobile number, pick your sector, and select the brand. Add your invoice or order number, describe the issue, and upload your bills. You will receive a unique 7-digit docket number right away.",
   },
   {
     question: "How can I check my NCH complaint status online?",
@@ -154,27 +171,27 @@ const FAQS = [
   {
     question: "What is the difference between an NCH complaint and a Consumer Court case?",
     answer:
-      "NCH is an informal, non-judicial conciliation platform with no statutory judicial power to pass binding court decrees or enforce fines. In contrast, Consumer Commissions (District, State, National) operating under the Consumer Protection Act, 2019, possess civil court powers to issue binding orders, attach company bank accounts, and award compensation with punitive interest.",
+      "NCH is an informal conciliation desk. It cannot pass binding court orders or levy fines. In contrast, Consumer Commissions under the Consumer Protection Act, 2019, hold judicial powers. They can freeze company accounts, order refunds, and grant damages with interest.",
   },
   {
     question: "Why should I file an NCH complaint before sending an advocate legal notice?",
     answer:
-      "Filing an NCH docket provides unimpeachable documentary evidence under Section 63 of Bharatiya Sakshya Adhiniyam, 2023. It establishes that you gave the company a formal 45-day statutory pre-litigation opportunity to resolve the issue voluntarily. When a company ignores or summarily dismisses an NCH docket, consumer court judges view it as willful deficiency, routinely awarding higher damages.",
+      "Filing an NCH docket provides official proof under Section 63 of Bharatiya Sakshya Adhiniyam, 2023. It shows you gave the firm 45 days to resolve the matter. When a company ignores an NCH docket, consumer courts view it as clear deficiency and often award higher compensation.",
   },
   {
     question: "What should I do if the company rejects or closes my NCH docket without refunding?",
     answer:
-      "Download the complete PDF grievance history showing the company's dismissive remarks and date stamps. Immediately instruct a verified advocate to draft a formal 15-day statutory legal notice citing the NCH docket number, Section 2(11) (deficiency in service), and Section 2(47) (unfair trade practice) of CPA 2019. If they fail to comply, escalate to the e-Jagriti consumer court portal.",
+      "Download the full PDF grievance history showing company responses and timestamps. Have an advocate send a formal 15-day legal notice citing your NCH docket. Mention Section 2(11) for service deficiency under CPA 2019. If they do not pay, file directly on e-Jagriti.",
   },
   {
     question: "How long does a company have to respond to an NCH 1915 grievance?",
     answer:
-      "Under the Department of Consumer Affairs INGRAM convergence framework, registered partner companies are granted a maximum of 45 days to investigate and resolve the grievance. If the company fails to respond within 45 days or provides unsatisfactory closure, the docket is designated as 'Unresolved', clearing the deck for statutory legal notices.",
+      "Under government rules, registered partner brands get up to 45 days to fix grievances. If a company fails to reply within 45 days, the status changes to Unresolved. This clears the way for sending a formal legal notice.",
   },
   {
     question: "NCH 1915 par complaint ke baad bhi company ne refund nahi diya, legal notice kaise bheje?",
     answer:
-      "Agar NCH docket ke baad bhi company refund na de ya ticket band kar de, toh aap LegalRecovery.in par verified advocate ke dwara ek formal statutory legal notice bhej sakte hain. Notice mein aapka NCH docket number, invoice, transaction proof, aur Consumer Protection Act 2019 ke section 2(11) ke tehat 15 din ka strict refund demand shamil hota hai, jise company ke corporate office par Registered Speed Post aur email se serve kiya jata hai.",
+      "Agar NCH docket ke baad bhi company refund na de, toh advocate dwara formal legal notice bhejein. Notice mein NCH docket number, invoice aur 15 din ka refund demand hota hai. Ye notice company ke head office ko Speed Post aur email se bheja jata hai.",
   },
 ];
 
@@ -295,7 +312,7 @@ export default function NationalConsumerHelplinePage() {
                 Statutory Summary (National Consumer Helpline &amp; Notice Protocol)
               </p>
               <p>
-                The National Consumer Helpline (NCH 1915 / INGRAM) operates under the Department of Consumer Affairs as a 45-day pre-litigation convergence mechanism. When an enterprise fails to resolve an NCH docket, Section 2(11) of the Consumer Protection Act, 2019 treats the grievance log as unimpeachable electronic evidence under Section 63 BSA 2023. Aggrieved consumers can then serve a formal 15-day advocate legal notice before initiating consumer court proceedings on e-Jagriti.
+                The National Consumer Helpline (NCH 1915 / INGRAM) works under the Department of Consumer Affairs. It gives companies 45 days to resolve complaints. If a business ignores the docket, the log serves as solid proof under Section 63 BSA 2023. You can then serve a formal 15-day legal notice before filing on e-Jagriti.
               </p>
             </div>
 

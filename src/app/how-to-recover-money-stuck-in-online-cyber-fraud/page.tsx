@@ -20,6 +20,24 @@ export const metadata: Metadata = {
     description: "Scammed money put on hold via 1930 Cyber Helpline? Step-by-step guide to Magistrate Release Order & Bank Legal Notice.",
     url: "https://www.legalrecovery.in/how-to-recover-money-stuck-in-online-cyber-fraud",
     type: "article",
+    siteName: "LegalRecovery.in",
+    locale: "en_IN",
+    images: [
+      {
+        url: "https://www.legalrecovery.in/blog_money_recovery.png",
+        width: 1200,
+        height: 630,
+        alt: "How to Recover Money Stuck in 1930 Cyber Crime Hold",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "How to Recover Money Stuck in 1930 Cyber Crime Hold",
+    description: "Scammed money put on hold via 1930 Cyber Helpline? Step-by-step guide to Magistrate Release Order & Bank Legal Notice.",
+    site: "@legalrecoveryin",
+    creator: "@legalrecoveryin",
+    images: ["https://www.legalrecovery.in/blog_money_recovery.png"],
   },
 };
 

@@ -24,6 +24,23 @@ export const metadata: Metadata = {
     type: "article",
     siteName: "LegalRecovery.in",
     locale: "en_IN",
+    images: [
+      {
+        url: `${SITE_URL}/blog_money_recovery.png`,
+        width: 1200,
+        height: 630,
+        alt: "Salary Recovery on Your Payslip: What It Means & When It's Illegal",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Salary Recovery on Your Payslip: What It Means & When It's Illegal",
+    description:
+      "Statutory guide to salary recovery line items on payslips, lawful vs unlawful deductions under Section 18 Code on Wages, and legal notice remedies.",
+    site: "@legalrecoveryin",
+    creator: "@legalrecoveryin",
+    images: [`${SITE_URL}/blog_money_recovery.png`],
   },
   robots: {
     index: true,

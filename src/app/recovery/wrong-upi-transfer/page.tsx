@@ -24,6 +24,23 @@ export const metadata: Metadata = {
     type: "article",
     siteName: "LegalRecovery.in",
     locale: "en_IN",
+    images: [
+      {
+        url: `${SITE_URL}/blog_money_recovery.png`,
+        width: 1200,
+        height: 630,
+        alt: "Wrong UPI Transfer? How to Get Your Money Back",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Wrong UPI Transfer? How to Get Your Money Back",
+    description:
+      "Statutory step-by-step guide to recover money sent to an incorrect UPI ID or bank account: NPCI dispute redressal, bank duties, RBI Ombudsman escalation, and Section 72 legal notices.",
+    site: "@legalrecoveryin",
+    creator: "@legalrecoveryin",
+    images: [`${SITE_URL}/blog_money_recovery.png`],
   },
   robots: {
     index: true,

@@ -19,6 +19,23 @@ export const metadata: Metadata = {
       "Statutory guide to the CCPA Dark Patterns Guidelines 2023 and 2026 E-Commerce Amendment Rules. Learn how to recover refunds for drip pricing, basket sneaking, and auto-debits.",
     url: `${SITE_URL}/law/dark-patterns-guidelines-consumer-rights`,
     type: "article",
+    images: [
+      {
+        url: `${SITE_URL}/blog_money_recovery.png`,
+        width: 1200,
+        height: 630,
+        alt: "India Dark Patterns Guidelines: Drip Pricing, Subscription Traps & Refund Law",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "India Dark Patterns Guidelines: Drip Pricing, Subscription Traps & Refund Law",
+    description:
+      "Statutory guide to the CCPA Dark Patterns Guidelines 2023 and 2026 E-Commerce Amendment Rules. Learn how to recover refunds for drip pricing, basket sneaking, and auto-debits.",
+    site: "@legalrecoveryin",
+    creator: "@legalrecoveryin",
+    images: [`${SITE_URL}/blog_money_recovery.png`],
   },
   robots: {
     index: true,
@@ -96,7 +113,7 @@ const faqJsonLd = {
       "name": "What are the 13 dark patterns banned under India's 2023 guidelines?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "The Central Consumer Protection Authority (CCPA) specified 13 prohibited dark patterns in Annexure-1 of the 2023 Guidelines: False Urgency, Basket Sneaking, Confirm Shaming, Forced Action, Subscription Traps, Interface Interference, Bait and Switch, Drip Pricing, Disguised Advertisements, Nagging, Trick Questions, SaaS/Billing Traps, and Rogue Opt-Outs. Engaging in any of these practices constitutes an illegal unfair trade practice under Section 2(47) of the Consumer Protection Act, 2019.",
+        "text": "The CCPA banned 13 dark patterns in 2023. These include False Urgency, Basket Sneaking, Confirm Shaming, Forced Action, and Subscription Traps. They also include Interface Interference, Bait and Switch, Drip Pricing, Disguised Ads, Nagging, Trick Questions, Billing Traps, and Rogue Opt-Outs. Using them is an illegal unfair trade practice under Section 2(47) CPA 2019.",
       },
     },
     {
@@ -104,7 +121,7 @@ const faqJsonLd = {
       "name": "Is drip pricing illegal in India and can I get a refund for hidden convenience fees?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Yes. Drip pricing is banned under Guideline 5 and Annexure 1(8). E-commerce and travel platforms cannot display an attractive base price and add mandatory handling, convenience, or packaging fees on the final payment gateway screen. Any fee added without upfront listing disclosure is legally recoverable, and consumers are entitled to a full refund.",
+        "text": "Yes. Drip pricing is banned under Guideline 5 and Annexure 1(8). Sites cannot show a low base price and add hidden fees at the final payment screen. Any unannounced fee is illegal, and you are entitled to a full refund.",
       },
     },
     {
@@ -112,7 +129,7 @@ const faqJsonLd = {
       "name": "How do I get a refund for a subscription trap or unwanted auto-debit?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Under Annexure 1(5) and the 2026 E-Commerce Amendment Rules, platforms must maintain 'click-to-cancel' parity, making cancellation as simple as signing up. If a platform hides the cancel button, forces endless survey loops, or ignores your cancellation request, subsequent auto-debits are unauthorized deductions subject to full retroactive refund via grievance officers and consumer commissions.",
+        "text": "Under Annexure 1(5) and E-Commerce Rules 2026, cancelling a subscription must be as easy as signing up. If an app hides the cancel button or ignores your request, subsequent debits are unauthorized. You are entitled to a full refund through grievance channels or consumer courts.",
       },
     },
     {
@@ -120,7 +137,7 @@ const faqJsonLd = {
       "name": "What is basket sneaking and how does it violate consumer protection laws?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Basket sneaking occurs when an e-commerce, food delivery, or ticketing app automatically adds ancillary items—such as travel insurance, donations, or express packing—into your digital checkout cart without affirmative opt-in consent. Pre-ticked checkboxes are strictly illegal under Annexure 1(2), entitling consumers to an immediate refund of any sneaked product or service fee.",
+        "text": "Basket sneaking happens when an app adds extra items into your cart without your consent. Examples include travel insurance, donations, or packing fees. Pre-ticked boxes are strictly illegal under Annexure 1(2). You can claim an immediate refund for any sneaked charge.",
       },
     },
     {
@@ -128,7 +145,7 @@ const faqJsonLd = {
       "name": "How do I file a CCPA complaint against an e-commerce platform using dark patterns?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "You can lodge a formal dark-pattern complaint with the National Consumer Helpline (NCH 1915 or the INGRAM portal) or submit a direct petition to the CCPA at ccpa-mca@gov.in. Under Sections 18 and 20 of the Consumer Protection Act 2019, the CCPA possesses statutory powers to investigate deceptive design, impose penalties up to ₹10 lakh (or ₹50 lakh for repeat offences), and order class refunds.",
+        "text": "You can file a complaint with the National Consumer Helpline at 1915 or on the INGRAM portal. You can also email the CCPA directly at ccpa-mca@gov.in. Under Sections 18 and 20 CPA 2019, the CCPA can investigate bad design, impose fines up to ₹10 lakh, and order refunds.",
       },
     },
     {
@@ -136,7 +153,7 @@ const faqJsonLd = {
       "name": "Can an e-commerce marketplace claim it is just an intermediary to avoid dark pattern liability?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "No. While Section 79 of the Information Technology Act provides conditional safe harbour for passive intermediaries, that protection evaporates when the platform designs the user interface, controls checkout workflows, bundles add-ons, or manages payment collections. Consumer Commissions consistently hold marketplaces jointly liable with sellers when deceptive UI design induces unwanted transactions.",
+        "text": "No. Intermediary immunity under Section 79 of the IT Act does not apply when platforms design checkouts and collect payments. Consumer courts hold marketplaces jointly liable when deceptive design tricks customers into paying.",
       },
     },
     {
@@ -196,7 +213,7 @@ export default function DarkPatternsLawPage() {
               Direct Statutory Summary
             </span>
             <p className="text-base sm:text-lg font-medium text-slate-800 leading-relaxed">
-              Under the Central Consumer Protection Authority (CCPA) Guidelines for Prevention and Regulation of Dark Patterns 2023 and the E-Commerce Amendment Rules 2026, practices like drip pricing, subscription traps, and basket sneaking are illegal unfair trade practices under Section 2(47) of the Consumer Protection Act 2019. Consumers are entitled to full refunds, cancellation of unlawful debits, and statutory compensation via grievance officers, NCH 1915, or consumer commissions.
+              Under CCPA Guidelines 2023 and E-Commerce Rules 2026, dark patterns like drip pricing, subscription traps, and basket sneaking are illegal under Section 2(47) CPA 2019. Buyers have a right to full refunds and cancellation of unlawful charges. You can claim refunds through the Grievance Officer, NCH 1915, or consumer courts.
             </p>
           </div>
 

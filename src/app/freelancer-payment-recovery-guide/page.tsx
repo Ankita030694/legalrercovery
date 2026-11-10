@@ -19,6 +19,30 @@ export const metadata: Metadata = {
   alternates: {
     canonical: 'https://www.legalrecovery.in/freelancer-payment-recovery-guide',
   },
+  openGraph: {
+    title: "Freelancer Payment Recovery Guide: Settle Dues Legally",
+    description: "Clients refusing to pay for your freelance work? Know your rights under the Contract Act, MSMED Act, and Order 37 CPC. Recover unpaid dues legally.",
+    url: "https://www.legalrecovery.in/freelancer-payment-recovery-guide",
+    type: "article",
+    siteName: "LegalRecovery.in",
+    locale: "en_IN",
+    images: [
+      {
+        url: "https://www.legalrecovery.in/blog_money_recovery.png",
+        width: 1200,
+        height: 630,
+        alt: "Freelancer Payment Recovery Guide: Settle Dues Legally",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Freelancer Payment Recovery Guide: Settle Dues Legally",
+    description: "Clients refusing to pay for your freelance work? Know your rights under the Contract Act, MSMED Act, and Order 37 CPC. Recover unpaid dues legally.",
+    site: "@legalrecoveryin",
+    creator: "@legalrecoveryin",
+    images: ["https://www.legalrecovery.in/blog_money_recovery.png"],
+  },
 };
 
 export default function FreelancerPaymentPage() {

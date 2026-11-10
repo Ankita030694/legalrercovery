@@ -22,6 +22,24 @@ export const metadata: Metadata = {
     description: "Can you draft and send a legal notice yourself without hiring a lawyer in India? Compare self-drafted vs Advocate letterhead legal validity.",
     url: "https://www.legalrecovery.in/how-can-i-send-a-legal-notice-online-to-someone-in-india-without-hiring-a-lawyer",
     type: "article",
+    siteName: "LegalRecovery.in",
+    locale: "en_IN",
+    images: [
+      {
+        url: "https://www.legalrecovery.in/blog_money_recovery.png",
+        width: 1200,
+        height: 630,
+        alt: "Can You Send a Legal Notice Without a Lawyer in India?",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Can You Send a Legal Notice Without a Lawyer in India?",
+    description: "Can you draft and send a legal notice yourself without hiring a lawyer in India? Compare self-drafted vs Advocate letterhead legal validity.",
+    site: "@legalrecoveryin",
+    creator: "@legalrecoveryin",
+    images: ["https://www.legalrecovery.in/blog_money_recovery.png"],
   },
 };
 

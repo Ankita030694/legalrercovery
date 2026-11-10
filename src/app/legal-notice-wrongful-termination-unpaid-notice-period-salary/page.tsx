@@ -20,6 +20,24 @@ export const metadata: Metadata = {
     description: "Fired suddenly without cause or forced to resign? Serve an Advocate Legal Notice for wrongful termination & severance pay.",
     url: "https://www.legalrecovery.in/legal-notice-wrongful-termination-unpaid-notice-period-salary",
     type: "article",
+    siteName: "LegalRecovery.in",
+    locale: "en_IN",
+    images: [
+      {
+        url: "https://www.legalrecovery.in/blog_money_recovery.png",
+        width: 1200,
+        height: 630,
+        alt: "Wrongful Termination & Unpaid Salary Legal Notice",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Wrongful Termination & Unpaid Salary Legal Notice",
+    description: "Fired suddenly without cause or forced to resign? Serve an Advocate Legal Notice for wrongful termination & severance pay.",
+    site: "@legalrecoveryin",
+    creator: "@legalrecoveryin",
+    images: ["https://www.legalrecovery.in/blog_money_recovery.png"],
   },
 };
 

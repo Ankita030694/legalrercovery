@@ -24,6 +24,23 @@ export const metadata: Metadata = {
     type: "article",
     siteName: "LegalRecovery.in",
     locale: "en_IN",
+    images: [
+      {
+        url: `${SITE_URL}/blog_money_recovery.png`,
+        width: 1200,
+        height: 630,
+        alt: "Suing the Government or a PSU? Mandatory Section 80 CPC Notice Rules & Format",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Suing the Government or a PSU? Mandatory Section 80 CPC Notice Rules & Format",
+    description:
+      "Statutory guide to serving a Section 80 CPC notice before suing a Central or State Government department, Railways, or public officer: 60-day waiting period, designated addressees, Section 80(2) urgent leave, and notice format.",
+    site: "@legalrecoveryin",
+    creator: "@legalrecoveryin",
+    images: [`${SITE_URL}/blog_money_recovery.png`],
   },
   robots: {
     index: true,

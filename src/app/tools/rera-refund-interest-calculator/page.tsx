@@ -32,6 +32,23 @@ export const metadata: Metadata = {
     type: "website",
     siteName: "LegalRecovery.in",
     locale: "en_IN",
+    images: [
+      {
+        url: `${SITE_URL}/blog_money_recovery.png`,
+        width: 1200,
+        height: 630,
+        alt: "RERA Section 18 Refund & Delay Interest Calculator (SBI MCLR + 2%)",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "RERA Section 18 Refund & Delay Interest Calculator (SBI MCLR + 2%)",
+    description:
+      "Multi-instalment RERA Section 18 calculator: compute simple interest at SBI highest MCLR + 2% (or UP RERA MCLR + 1%) on delayed flat or plot handovers.",
+    site: "@legalrecoveryin",
+    creator: "@legalrecoveryin",
+    images: [`${SITE_URL}/blog_money_recovery.png`],
   },
   robots: {
     index: true,

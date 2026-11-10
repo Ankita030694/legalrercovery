@@ -24,6 +24,23 @@ export const metadata: Metadata = {
     type: "article",
     siteName: "LegalRecovery.in",
     locale: "en_IN",
+    images: [
+      {
+        url: `${SITE_URL}/blog_money_recovery.png`,
+        width: 1200,
+        height: 630,
+        alt: "EPF Claim Rejected or Delayed Under the 2026 Scheme: What to Do",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "EPF Claim Rejected or Delayed Under the 2026 Scheme: What to Do",
+    description:
+      "Statutory escalation path for rejected PF withdrawals, member details mismatch, missing Date of Exit, EPFiGMS grievances, and advocate legal notices.",
+    site: "@legalrecoveryin",
+    creator: "@legalrecoveryin",
+    images: [`${SITE_URL}/blog_money_recovery.png`],
   },
   robots: {
     index: true,

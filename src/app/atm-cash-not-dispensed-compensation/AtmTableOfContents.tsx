@@ -141,9 +141,9 @@ export default function AtmTableOfContents({
       <aside className="hidden lg:block w-64 xl:w-72 shrink-0 sticky top-28 self-start">
         <div className="bg-white rounded-2xl border border-slate-200 p-5 shadow-xs">
           <div className="flex items-center justify-between pb-3 mb-3 border-b border-slate-100">
-            <h3 className="text-xs font-black tracking-wider text-slate-900 uppercase">
+            <p className="text-xs font-black tracking-wider text-slate-900 uppercase">
               Page Navigation
-            </h3>
+            </p>
             <span className="text-[10px] font-bold text-slate-600 bg-slate-100 px-2 py-0.5 rounded-full">
               RBI Rules
             </span>

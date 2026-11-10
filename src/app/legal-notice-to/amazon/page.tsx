@@ -19,6 +19,23 @@ export const metadata: Metadata = {
       "Enforce your consumer rights against Amazon Seller Services Pvt Ltd and marketplace sellers. Detailed escalation steps, grievance contacts, and advocate notices.",
     url: `${SITE_URL}/legal-notice-to/amazon`,
     type: "article",
+    images: [
+      {
+        url: `${SITE_URL}/blog_money_recovery.png`,
+        width: 1200,
+        height: 630,
+        alt: "How to Send Amazon India a Legal Notice for Refund or Wrong Item",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "How to Send Amazon India a Legal Notice for Refund or Wrong Item",
+    description:
+      "Enforce your consumer rights against Amazon Seller Services Pvt Ltd and marketplace sellers. Detailed escalation steps, grievance contacts, and advocate notices.",
+    site: "@legalrecoveryin",
+    creator: "@legalrecoveryin",
+    images: [`${SITE_URL}/blog_money_recovery.png`],
   },
   robots: {
     index: true,
@@ -259,9 +276,9 @@ export default function AmazonLegalNoticePage() {
       <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
         {/* Hand-Authored SVG Process Diagram */}
         <section className="mb-14 bg-white p-6 sm:p-8 rounded-2xl border border-gray-200 shadow-xs">
-          <h3 className="text-xl sm:text-2xl font-bold tracking-tight text-[#111827] mb-2">
+          <h2 className="text-xl sm:text-2xl font-bold tracking-tight text-[#111827] mb-2">
             Amazon Dispute Escalation Architecture
-          </h3>
+          </h2>
           <p className="text-sm text-[#4B5563] mb-6">
             The statutory progression from customer escalation to formal advocate legal demand and consumer commission filings under Indian law.
           </p>

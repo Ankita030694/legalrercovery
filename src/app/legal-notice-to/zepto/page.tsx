@@ -23,6 +23,23 @@ export const metadata: Metadata = {
     type: "article",
     siteName: "LegalRecovery.in",
     locale: "en_IN",
+    images: [
+      {
+        url: `${SITE_URL}/blog_money_recovery.png`,
+        width: 1200,
+        height: 630,
+        alt: "What Consumer Courts Have Ordered Zepto to Pay, and How You Can Claim",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "What Consumer Courts Have Ordered Zepto to Pay, and How You Can Claim",
+    description:
+      "Zepto refund missing or wrong delivery? See consumer commission orders against Zepto, the escalation timeline and a ready legal notice path.",
+    site: "@legalrecoveryin",
+    creator: "@legalrecoveryin",
+    images: [`${SITE_URL}/blog_money_recovery.png`],
   },
   robots: {
     index: true,
@@ -71,37 +88,37 @@ const faqs = [
   {
     question: "Why does Zepto customer care claim \"order was packed correctly\" when items are clearly missing?",
     answer:
-      "Zepto dark stores operate under intense 90-second packing cycles where warehouse workers scan pick lists rapidly, leading to frequent omissions that inventory scans fail to catch. Customer service bots rely strictly on these automated warehouse timestamps rather than inspecting real parcel contents. Under Section 63 of the Bharatiya Sakshya Adhiniyam, 2023, your timestamped unboxing photographs, bag barcode tags, and contemporaneous weight records override internal electronic merchant logs before consumer commissions.",
+      "Zepto dark stores pack orders in under 90 seconds. Workers scan pick lists quickly, leading to frequent missing items. Customer support bots rely on these automated warehouse logs rather than checking real parcels. Under the law, your unboxing photos and bag tags carry greater weight before consumer courts than internal logs.",
   },
   {
     question: "How long does a Zepto refund take to reflect in my bank account or UPI after cancellation?",
     answer:
-      "When Zepto cancels an order or accepts a missing item return, UPI refunds typically process within 2 to 24 hours, while debit or credit card transactions settle within 3 to 7 banking days. If the app displays refund successful but your bank statement shows zero credit, Zepto must supply a valid 12-digit Unique Transaction Reference (UTR). Under Rule 5(3)(e) of the Consumer Protection (E-Commerce) Rules, 2020, withholding funds beyond statutory clearing timelines exposes the platform to compensatory interest.",
+      "UPI refunds usually take 2 to 24 hours. Card refunds take 3 to 7 banking days. If the app shows a successful refund but your bank statement shows zero credit, Zepto must give you a valid 12-digit UTR number. Holding funds past banking timelines makes the platform liable for interest.",
   },
   {
     question: "Can Zepto legally force me to accept Zepto Cash instead of refunding to my original payment method?",
     answer:
-      "Zepto cannot compel you to accept wallet credits or platform cash instead of a direct refund to your original payment source. The Central Consumer Protection Authority Guidelines for Prevention of Dark Patterns, 2023 classify forced wallet conversions as a prohibited deceptive practice under Section 2(47) of the Consumer Protection Act, 2019. You maintain an absolute legal right to demand 100% reimbursement to your underlying UPI handle, card, or bank account.",
+      "Zepto cannot force you to take wallet cash instead of a refund to your bank or card. The CCPA Dark Patterns Guidelines ban forced wallet conversions as unfair trade practices. You have the full legal right to demand a 100% refund directly to your original payment method.",
   },
   {
     question: "What should I do if a Zepto delivery partner marked the grocery order as \"delivered\" but never arrived?",
     answer:
-      "Phantom delivery happens when delivery executives trigger GPS completion pings near your building perimeter to avoid internal delivery-delay penalties. Take immediate screenshots of the delivery notification timestamp, check your building entrance security logs or CCTV, and message support within 15 minutes. If customer support refuses immediate redelivery or refund, register a complaint docket on NCH 1915 and issue a formal grievance notice citing Section 2(11) service deficiency.",
+      "Phantom delivery happens when delivery drivers mark orders complete near your building to avoid internal penalties. Take screenshots of the notification, check building entry logs, and message support immediately. If support refuses a refund, call NCH at 1915 and send a legal notice.",
   },
   {
     question: "How do I escalate an unresolved refund complaint to the Zepto Grievance Officer?",
     answer:
-      "Send a detailed written escalation email to grievances@zepto.com addressed to Mr. Zubair Shaikh, Associate Director and Grievance Officer, Zepto Marketplace Private Limited. State your registered phone number, order ID, payment transaction reference, and itemized missing value. Under Rule 4(5) of the Consumer Protection (E-Commerce) Rules, 2020, the Grievance Officer must furnish an official acknowledgment within 48 hours and resolve the grievance within one month.",
+      "Email grievances@zepto.com addressed to the Grievance Officer, Zepto Marketplace Private Limited. State your phone number, order ID, and missing items. Under Rule 4(5) of the E-Commerce Rules, the officer must acknowledge within 48 hours and resolve the issue within one month.",
   },
   {
     question: "What compensation can consumer commissions award if Zepto charges above MRP or denies a valid claim?",
     answer:
-      "District Consumer Commissions award full reimbursement of the disputed grocery amount, statutory interest between 9% and 12% per annum, and monetary compensation for mental agony and harassment. In Advocate C. Sai Kumar v. Zepto, the Ranga Reddy District Consumer Commission penalized the platform ₹57,000 for pricing items above MRP and engaging in deceptive discounting, directing ₹50,000 to the Consumer Legal Aid account alongside consumer damages.",
+      "Consumer commissions award full refunds, 9% to 12% annual interest, and compensation for mental distress. In a recent case, the Ranga Reddy District Commission penalized Zepto ₹57,000 for charging above MRP and misleading discounts, ordering ₹50,000 to the Legal Aid account plus damages.",
   },
   {
     question: "Zepto se refund nahi mila ya galat saman aaya toh legal notice kaise bhejein aur consumer court mein complaint kaise karein?",
     answer:
-      "Agar Zepto customer care aapka refund rok de ya galat grocery deliver kare, toh pehle grievances@zepto.com par 48-ghante ki statutory warning bhejein. Agar 15 dinon me samadhan na ho, toh advocate ke madhyam se Zepto Marketplace Private Limited ko formal legal demand notice bhejein. Iske baad aap e-Jagriti portal par bina vakil ke ghar baithe District Consumer Commission me mukadma darj kar sakte hain, jahan forum pura refund aur compensation dilwata hai.",
+      "Agar Zepto refund na de ya galat saman bheje, toh grievances@zepto.com par 48 ghante ka email bhejein. Samadhan na milne par advocate ke madhyam se 15 din ka legal notice bhejein. Iske baad aap e-Jagriti par ghar baithe bina vakil ke complaint kar sakte hain.",
   },
 ];
 
@@ -258,7 +275,7 @@ export default function ZeptoLegalNoticePage() {
                 Quick Legal Answer: Missing Order, Spoiled Food or Stuck Zepto Refund
               </h2>
               <p className="text-base sm:text-lg font-medium leading-relaxed">
-                Under Section 2(47) of the Consumer Protection Act, 2019 and Rule 5(3) of the E-Commerce Rules, 2020, Zepto is jointly liable for missing or incorrect orders. If in-app support refuses your refund, email the Grievance Officer immediately; they must acknowledge within 48 hours and resolve within 30 days. If stonewalled, escalate through NCH 1915, an advocate legal notice, and e-Jagriti within two years.
+                Under Section 2(47) of the Consumer Protection Act and E-Commerce Rules, Zepto is liable for missing or incorrect orders. If in-app support denies your refund, email their Grievance Officer immediately. If unresolved within 48 hours, escalate through NCH 1915 and serve an advocate legal notice.
               </p>
             </section>
 

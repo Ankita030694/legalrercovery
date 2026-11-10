@@ -19,6 +19,23 @@ export const metadata: Metadata = {
       "Annotated guide to India's E-Commerce Rules 2020 and 2026 amendments. Learn grievance officer duties, 48-hour acknowledgment, marketplace liability, and refund legal steps.",
     url: `${SITE_URL}/law/ecommerce-rules-grievance-officer-48-hours`,
     type: "article",
+    images: [
+      {
+        url: `${SITE_URL}/blog_money_recovery.png`,
+        width: 1200,
+        height: 630,
+        alt: "Consumer Protection E-Commerce Rules: 48-Hour Grievance & Refund Law",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Consumer Protection E-Commerce Rules: 48-Hour Grievance & Refund Law",
+    description:
+      "Annotated guide to India's E-Commerce Rules 2020 and 2026 amendments. Learn grievance officer duties, 48-hour acknowledgment, marketplace liability, and refund legal steps.",
+    site: "@legalrecoveryin",
+    creator: "@legalrecoveryin",
+    images: [`${SITE_URL}/blog_money_recovery.png`],
   },
   robots: {
     index: true,
@@ -94,7 +111,7 @@ const faqJsonLd = {
       "name": "What is the legal deadline for an e-commerce platform to acknowledge my complaint?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Under Rule 4(5) of the Consumer Protection (E-Commerce) Rules 2020, every e-commerce entity must acknowledge a consumer complaint within 48 hours. The platform must also generate a unique tracking ticket number under Rule 5(3)(b).",
+        "text": "Under Rule 4(5) of the E-Commerce Rules, 2020, shopping platforms must acknowledge your complaint within 48 hours. The company must also give you a unique tracking ticket number.",
       },
     },
     {
@@ -102,7 +119,7 @@ const faqJsonLd = {
       "name": "Can an e-commerce marketplace refuse a refund by claiming it is only an intermediary?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "No. While Section 79 of the IT Act grants conditional intermediary immunity, safe harbour is lost if the platform fails to carry out due diligence under Rule 5. Commissions enforce joint and fallback liability when platforms collect payments and control delivery.",
+        "text": "No. Platforms cannot claim intermediary immunity when they collect payments, issue invoices, and manage deliveries. Consumer commissions hold marketplaces jointly liable with sellers for defective goods and refund failures.",
       },
     },
     {
@@ -110,7 +127,7 @@ const faqJsonLd = {
       "name": "Is an e-commerce platform legally permitted to issue store credit or wallet points instead of a bank refund?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "No. Under Rule 4(10), refunds must be remitted to the consumer's original payment method or per RBI directives. Forcing store credits or non-transferable wallet balances without affirmative consent is an unfair trade practice under Section 2(47) of CPA 2019.",
+        "text": "No. Under Rule 4(10), refunds must be sent to your original payment method. Forcing you to take store credits or non-transferable wallet points without consent is an unfair trade practice under the Consumer Protection Act, 2019.",
       },
     },
     {
@@ -118,7 +135,7 @@ const faqJsonLd = {
       "name": "What can I do if the Grievance Officer does not resolve my issue within one month?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "If 30 days elapse without resolution, the platform is in statutory default under Rule 4(5). You can immediately lodge an NCH 1915 docket, serve an advocate legal demand notice, and file on e-Jagriti before the District Commission.",
+        "text": "If 30 days pass without resolution, the company has breached Rule 4(5). You can register a grievance on the National Consumer Helpline (1915), issue an advocate legal notice, and file a case on e-Jagriti.",
       },
     },
     {
@@ -126,7 +143,7 @@ const faqJsonLd = {
       "name": "What changes do the E-Commerce Amendment Rules 2026 introduce for consumer refunds?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "The 2026 Amendment Rules mandate dark-pattern compliance under the 2023 Guidelines, require annual algorithmic self-audits, enforce clear return policy disclosures, and introduce stricter fallback liability for platform delivery failures.",
+        "text": "The 2026 Amendment Rules ban dark patterns, require annual algorithmic audits, mandate transparent return policies, and enforce stricter fallback liability for platform delivery failures.",
       },
     },
     {
@@ -134,7 +151,7 @@ const faqJsonLd = {
       "name": "How do I find the contact details of an e-commerce company's statutory Grievance Officer?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Under Rule 4(4), every e-commerce entity must prominently display the name, designation, email address, physical address, and phone number of its statutory Grievance Officer on its website and mobile app, typically under its terms or grievance page.",
+        "text": "Under Rule 4(4), every e-commerce website and app must clearly show the name, email, phone number, and address of its Grievance Officer on its contact or policy pages.",
       },
     },
     {
@@ -142,7 +159,7 @@ const faqJsonLd = {
       "name": "E-commerce company se refund na aane par legal notice kaise bheje aur consumer court me claim kaise karein?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Agar platform 48 ghante me complaint acknowledge na kare ya 30 din me refund na de, toh advocate legal notice bhejkar 15 din ka samay diya jaata hai. Iske baad e-Jagriti par bina vakeel ke District Commission me case file karke refund aur compensation claim karein.",
+        "text": "Agar platform 48 ghante me complaint acknowledge na kare ya 30 din me refund na de, toh advocate legal notice bhejkar 15 din ka samay dein. Iske baad e-Jagriti portal par District Consumer Commission me mukadma darj karein.",
       },
     },
   ],
@@ -209,7 +226,7 @@ export default function EcommerceRulesPage() {
               Direct Statutory Summary
             </span>
             <p className="text-base sm:text-lg font-medium text-slate-800 leading-relaxed">
-              Under Rule 4(5) of the Consumer Protection (E-Commerce) Rules 2020, every e-commerce platform must acknowledge consumer grievances within 48 hours and resolve them within one month. If a marketplace fails to redress your refund or delivery failure, you can serve a formal legal notice and file before the District Consumer Commission via e-Jagriti within two years.
+              Under Rule 4(5) of the E-Commerce Rules, 2020, shopping platforms must acknowledge consumer complaints within 48 hours and resolve them within one month. If a marketplace fails to resolve your refund or delivery problem, you can send an advocate legal notice and file a consumer complaint on e-Jagriti.
             </p>
           </div>
 
@@ -1032,7 +1049,7 @@ export default function EcommerceRulesPage() {
                   <span className="ml-4 shrink-0 text-slate-400 group-open:rotate-180 transition-transform">▼</span>
                 </summary>
                 <div className="mt-3 text-xs sm:text-sm text-slate-600 leading-relaxed border-t border-slate-200 pt-3">
-                  Under Rule 4(5) of the Consumer Protection (E-Commerce) Rules 2020, every e-commerce entity must acknowledge a consumer complaint within 48 hours. The platform must also generate a unique tracking ticket number under Rule 5(3)(b).
+                  Under Rule 4(5) of the E-Commerce Rules, 2020, shopping platforms must acknowledge your complaint within 48 hours. The company must also give you a unique tracking ticket number.
                 </div>
               </details>
 
@@ -1042,7 +1059,7 @@ export default function EcommerceRulesPage() {
                   <span className="ml-4 shrink-0 text-slate-400 group-open:rotate-180 transition-transform">▼</span>
                 </summary>
                 <div className="mt-3 text-xs sm:text-sm text-slate-600 leading-relaxed border-t border-slate-200 pt-3">
-                  No. While Section 79 of the IT Act grants conditional intermediary immunity, safe harbour is lost if the platform fails to carry out due diligence under Rule 5. Commissions enforce joint and fallback liability when platforms collect payments and control delivery.
+                  No. Platforms cannot claim intermediary immunity when they collect payments, issue invoices, and manage deliveries. Consumer commissions hold marketplaces jointly liable with sellers for defective goods and refund failures.
                 </div>
               </details>
 
@@ -1052,7 +1069,7 @@ export default function EcommerceRulesPage() {
                   <span className="ml-4 shrink-0 text-slate-400 group-open:rotate-180 transition-transform">▼</span>
                 </summary>
                 <div className="mt-3 text-xs sm:text-sm text-slate-600 leading-relaxed border-t border-slate-200 pt-3">
-                  No. Under Rule 4(10), refunds must be remitted to the consumer's original payment method or per RBI directives. Forcing store credits or non-transferable wallet balances without affirmative consent is an unfair trade practice under Section 2(47) of CPA 2019.
+                  No. Under Rule 4(10), refunds must be sent to your original payment method. Forcing you to take store credits or non-transferable wallet points without consent is an unfair trade practice under the Consumer Protection Act, 2019.
                 </div>
               </details>
 
@@ -1062,7 +1079,7 @@ export default function EcommerceRulesPage() {
                   <span className="ml-4 shrink-0 text-slate-400 group-open:rotate-180 transition-transform">▼</span>
                 </summary>
                 <div className="mt-3 text-xs sm:text-sm text-slate-600 leading-relaxed border-t border-slate-200 pt-3">
-                  If 30 days elapse without resolution, the platform is in statutory default under Rule 4(5). You can immediately lodge an NCH 1915 docket, serve an advocate legal demand notice, and file on e-Jagriti before the District Commission.
+                  If 30 days pass without resolution, the company has breached Rule 4(5). You can register a grievance on the National Consumer Helpline (1915), issue an advocate legal notice, and file a case on e-Jagriti.
                 </div>
               </details>
 
@@ -1072,7 +1089,7 @@ export default function EcommerceRulesPage() {
                   <span className="ml-4 shrink-0 text-slate-400 group-open:rotate-180 transition-transform">▼</span>
                 </summary>
                 <div className="mt-3 text-xs sm:text-sm text-slate-600 leading-relaxed border-t border-slate-200 pt-3">
-                  The 2026 Amendment Rules mandate dark-pattern compliance under the 2023 Guidelines, require annual algorithmic self-audits, enforce clear return policy disclosures, and introduce stricter fallback liability for platform delivery failures.
+                  The 2026 Amendment Rules ban dark patterns, require annual algorithmic audits, mandate transparent return policies, and enforce stricter fallback liability for platform delivery failures.
                 </div>
               </details>
 
@@ -1082,7 +1099,7 @@ export default function EcommerceRulesPage() {
                   <span className="ml-4 shrink-0 text-slate-400 group-open:rotate-180 transition-transform">▼</span>
                 </summary>
                 <div className="mt-3 text-xs sm:text-sm text-slate-600 leading-relaxed border-t border-slate-200 pt-3">
-                  Under Rule 4(4), every e-commerce entity must prominently display the name, designation, email address, physical address, and phone number of its statutory Grievance Officer on its website and mobile app, typically under its terms or grievance page.
+                  Under Rule 4(4), every e-commerce website and app must clearly show the name, email, phone number, and address of its Grievance Officer on its contact or policy pages.
                 </div>
               </details>
 
@@ -1092,7 +1109,7 @@ export default function EcommerceRulesPage() {
                   <span className="ml-4 shrink-0 text-slate-400 group-open:rotate-180 transition-transform">▼</span>
                 </summary>
                 <div className="mt-3 text-xs sm:text-sm text-slate-600 leading-relaxed border-t border-slate-200 pt-3">
-                  Agar platform 48 ghante me complaint acknowledge na kare ya 30 din me refund na de, toh advocate legal notice bhejkar 15 din ka samay diya jaata hai. Iske baad e-Jagriti par bina vakeel ke District Commission me case file karke refund aur compensation claim karein.
+                  Agar platform 48 ghante me complaint acknowledge na kare ya 30 din me refund na de, toh advocate legal notice bhejkar 15 din ka samay dein. Iske baad e-Jagriti portal par District Consumer Commission me mukadma darj karein.
                 </div>
               </details>
             </div>

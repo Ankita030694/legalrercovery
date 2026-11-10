@@ -19,6 +19,30 @@ export const metadata: Metadata = {
   alternates: {
     canonical: 'https://www.legalrecovery.in/recovery/cheque-bounce-amount',
   },
+  openGraph: {
+    title: "Recover Bounced Cheque Amount (Sec 138) | LegalRecovery",
+    description: "Faced with a bounced cheque in India? Learn the legal process under Section 138 NI Act, demand notice timelines, and how to recover your money.",
+    url: "https://www.legalrecovery.in/recovery/cheque-bounce-amount",
+    type: "article",
+    siteName: "LegalRecovery.in",
+    locale: "en_IN",
+    images: [
+      {
+        url: "https://www.legalrecovery.in/blog_money_recovery.png",
+        width: 1200,
+        height: 630,
+        alt: "Recover Bounced Cheque Amount (Sec 138) | LegalRecovery",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Recover Bounced Cheque Amount (Sec 138) | LegalRecovery",
+    description: "Faced with a bounced cheque in India? Learn the legal process under Section 138 NI Act, demand notice timelines, and how to recover your money.",
+    site: "@legalrecoveryin",
+    creator: "@legalrecoveryin",
+    images: ["https://www.legalrecovery.in/blog_money_recovery.png"],
+  },
 };
 
 export default function ChequeBounceAmountPage() {

@@ -19,6 +19,30 @@ export const metadata: Metadata = {
   alternates: {
     canonical: 'https://www.legalrecovery.in/recovery/pending-salary-from-employer',
   },
+  openGraph: {
+    title: "Recover Pending Salary from Employer | LegalRecovery",
+    description: "Employer not paying salary during active service or after layoffs? LegalRecovery helps you recover pending wages in India. Start your recovery online.",
+    url: "https://www.legalrecovery.in/recovery/pending-salary-from-employer",
+    type: "article",
+    siteName: "LegalRecovery.in",
+    locale: "en_IN",
+    images: [
+      {
+        url: "https://www.legalrecovery.in/blog_money_recovery.png",
+        width: 1200,
+        height: 630,
+        alt: "Recover Pending Salary from Employer | LegalRecovery",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Recover Pending Salary from Employer | LegalRecovery",
+    description: "Employer not paying salary during active service or after layoffs? LegalRecovery helps you recover pending wages in India. Start your recovery online.",
+    site: "@legalrecoveryin",
+    creator: "@legalrecoveryin",
+    images: ["https://www.legalrecovery.in/blog_money_recovery.png"],
+  },
 };
 
 export default function PendingSalaryPage() {

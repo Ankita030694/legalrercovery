@@ -24,6 +24,23 @@ export const metadata: Metadata = {
     type: "article",
     siteName: "LegalRecovery.in",
     locale: "en_IN",
+    images: [
+      {
+        url: `${SITE_URL}/blog_money_recovery.png`,
+        width: 1200,
+        height: 630,
+        alt: "Salary Delayed Again? A Complaint Letter to HR That Gets Answers",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Salary Delayed Again? A Complaint Letter to HR That Gets Answers",
+    description:
+      "Ready salary-delay complaint letter and email to HR or management, with legal references and a deadline. Free Word/PDF formats.",
+    site: "@legalrecoveryin",
+    creator: "@legalrecoveryin",
+    images: [`${SITE_URL}/blog_money_recovery.png`],
   },
   robots: {
     index: true,

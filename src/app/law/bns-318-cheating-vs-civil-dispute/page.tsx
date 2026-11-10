@@ -24,6 +24,23 @@ export const metadata: Metadata = {
     type: "article",
     siteName: "LegalRecovery.in",
     locale: "en_IN",
+    images: [
+      {
+        url: `${SITE_URL}/blog_money_recovery.png`,
+        width: 1200,
+        height: 630,
+        alt: "Will Police Register Cheating Under BNS 318, or Is It a Civil Dispute?",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Will Police Register Cheating Under BNS 318, or Is It a Civil Dispute?",
+    description:
+      "Statutory analysis of Section 318 Bharatiya Nyaya Sanhita (old IPC 420) vs civil money recovery. Understand criminal dishonest inducement at inception, BNS 316 breach of trust, and Order 37 summary suits.",
+    site: "@legalrecoveryin",
+    creator: "@legalrecoveryin",
+    images: [`${SITE_URL}/blog_money_recovery.png`],
   },
   robots: {
     index: true,

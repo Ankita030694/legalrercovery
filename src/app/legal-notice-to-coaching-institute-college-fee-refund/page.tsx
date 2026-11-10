@@ -19,6 +19,24 @@ export const metadata: Metadata = {
     description: "Told 'fees once paid are non-refundable'? Learn how Supreme Court & NCDRC precedents void unfair education fee forfeiture clauses.",
     url: "https://www.legalrecovery.in/legal-notice-to-coaching-institute-college-fee-refund",
     type: "article",
+    siteName: "LegalRecovery.in",
+    locale: "en_IN",
+    images: [
+      {
+        url: "https://www.legalrecovery.in/blog_money_recovery.png",
+        width: 1200,
+        height: 630,
+        alt: "Legal Notice to Coaching Institute for Fee Refund",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Legal Notice to Coaching Institute for Fee Refund",
+    description: "Told 'fees once paid are non-refundable'? Learn how Supreme Court & NCDRC precedents void unfair education fee forfeiture clauses.",
+    site: "@legalrecoveryin",
+    creator: "@legalrecoveryin",
+    images: ["https://www.legalrecovery.in/blog_money_recovery.png"],
   },
 };
 

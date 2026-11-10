@@ -24,6 +24,23 @@ export const metadata: Metadata = {
     type: "article",
     siteName: "LegalRecovery.in",
     locale: "en_IN",
+    images: [
+      {
+        url: `${SITE_URL}/blog_money_recovery.png`,
+        width: 1200,
+        height: 630,
+        alt: "Maternity Benefit Not Paid by Employer? Legal Notice & Recovery Route",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Maternity Benefit Not Paid by Employer? Legal Notice & Recovery Route",
+    description:
+      "Statutory rights under Maternity Benefit Act 1961 & Code on Social Security 2020. How to recover withheld 26 weeks maternity pay, challenge illegal pregnancy termination, and issue an advocate legal notice.",
+    site: "@legalrecoveryin",
+    creator: "@legalrecoveryin",
+    images: [`${SITE_URL}/blog_money_recovery.png`],
   },
   robots: {
     index: true,

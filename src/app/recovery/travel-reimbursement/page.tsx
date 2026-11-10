@@ -19,6 +19,30 @@ export const metadata: Metadata = {
   alternates: {
     canonical: 'https://www.legalrecovery.in/recovery/travel-reimbursement',
   },
+  openGraph: {
+    title: "Unpaid Travel & Conveyance Recovery | LegalRecovery",
+    description: "Employer refusing to clear your business travel, hotel, flight, or conveyance bills? Find out how to send a legal notice and recover travel reimbursements.",
+    url: "https://www.legalrecovery.in/recovery/travel-reimbursement",
+    type: "article",
+    siteName: "LegalRecovery.in",
+    locale: "en_IN",
+    images: [
+      {
+        url: "https://www.legalrecovery.in/blog_money_recovery.png",
+        width: 1200,
+        height: 630,
+        alt: "Unpaid Travel & Conveyance Recovery | LegalRecovery",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Unpaid Travel & Conveyance Recovery | LegalRecovery",
+    description: "Employer refusing to clear your business travel, hotel, flight, or conveyance bills? Find out how to send a legal notice and recover travel reimbursements.",
+    site: "@legalrecoveryin",
+    creator: "@legalrecoveryin",
+    images: ["https://www.legalrecovery.in/blog_money_recovery.png"],
+  },
 };
 
 export default function TravelReimbursementPage() {

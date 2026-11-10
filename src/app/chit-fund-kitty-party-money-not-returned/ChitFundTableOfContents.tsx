@@ -160,9 +160,9 @@ export default function ChitFundTableOfContents({
         <div className="bg-white rounded-2xl border border-slate-200 p-5 shadow-xs space-y-4">
           <div className="flex items-center gap-2 border-b border-slate-100 pb-3">
             <span className="w-2.5 h-2.5 rounded-full bg-red-600" />
-            <h4 className="text-xs font-black uppercase tracking-wider text-slate-900">
+            <p className="text-xs font-black uppercase tracking-wider text-slate-900">
               Guide Navigation
-            </h4>
+            </p>
           </div>
 
           <nav className="space-y-1">

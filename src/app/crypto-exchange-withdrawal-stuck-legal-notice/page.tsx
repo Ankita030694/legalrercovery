@@ -24,6 +24,23 @@ export const metadata: Metadata = {
     type: "article",
     siteName: "LegalRecovery.in",
     locale: "en_IN",
+    images: [
+      {
+        url: `${SITE_URL}/blog_money_recovery.png`,
+        width: 1200,
+        height: 630,
+        alt: "Crypto Exchange Withdrawal Stuck? Legal Options in India",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Crypto Exchange Withdrawal Stuck? Legal Options in India",
+    description:
+      "Statutory guide on frozen crypto and INR withdrawals in India: Cyber cell P2P liens under BNSS 106, FIU-IND reporting duties, arbitration clause bypass, and legal notice procedure.",
+    site: "@legalrecoveryin",
+    creator: "@legalrecoveryin",
+    images: [`${SITE_URL}/blog_money_recovery.png`],
   },
   robots: {
     index: true,

@@ -169,9 +169,9 @@ export default function BanquetBookingTableOfContents({
         {/* Small Notice Assistance Box */}
         <div className="bg-gradient-to-br from-slate-900 to-slate-800 text-white rounded-2xl p-5 border border-slate-700 shadow-md space-y-3">
           <p className="text-[11px] font-bold text-red-400 uppercase tracking-wider">Fast Notice Service</p>
-          <h4 className="text-sm font-bold leading-snug">
+          <p className="text-sm font-bold leading-snug">
             Marriage Hall Refusing to Return Advance?
-          </h4>
+          </p>
           <p className="text-xs text-slate-300 leading-relaxed">
             Get an advocate-drafted statutory demand notice under Section 74 Contract Act sent via Speed Post in 24 hours.
           </p>

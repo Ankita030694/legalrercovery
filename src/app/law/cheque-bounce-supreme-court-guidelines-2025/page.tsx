@@ -24,6 +24,23 @@ export const metadata: Metadata = {
     type: "article",
     siteName: "LegalRecovery.in",
     locale: "en_IN",
+    images: [
+      {
+        url: `${SITE_URL}/blog_money_recovery.png`,
+        width: 1200,
+        height: 630,
+        alt: "New Cheque Bounce Rules: Supreme Court 2025 Guidelines",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "New Cheque Bounce Rules: Supreme Court 2025 Guidelines",
+    description:
+      "Comprehensive legal breakdown of Supreme Court 2025 directions in Sanjabij Tari: e-summons, blank cheque presumptions, cash loans over ₹20,000, and compounding costs.",
+    site: "@legalrecoveryin",
+    creator: "@legalrecoveryin",
+    images: [`${SITE_URL}/blog_money_recovery.png`],
   },
   robots: {
     index: true,

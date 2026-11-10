@@ -148,9 +148,9 @@ export default function HealthInsuranceTableOfContents({
         <div className="bg-white border border-slate-200 rounded-2xl p-5 shadow-xs">
           <div className="flex items-center gap-2 pb-3 border-b border-slate-100 mb-3">
             <span className="w-2 h-2 rounded-full bg-red-600 animate-pulse" />
-            <h2 className="text-xs font-black uppercase tracking-wider text-slate-700">
+            <p className="text-xs font-black uppercase tracking-wider text-slate-700">
               Guide Navigation
-            </h2>
+            </p>
           </div>
           <nav className="space-y-1">
             {sections.map((section) => {

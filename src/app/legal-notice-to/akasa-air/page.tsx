@@ -22,6 +22,23 @@ export const metadata: Metadata = {
     type: "article",
     siteName: "LegalRecovery.in",
     locale: "en_IN",
+    images: [
+      {
+        url: `${SITE_URL}/blog_money_recovery.png`,
+        width: 1200,
+        height: 630,
+        alt: "Akasa Air Refund Stuck or Uncredited? Statutory Escalation Guide",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Akasa Air Refund Stuck or Uncredited? Statutory Escalation Guide",
+    description:
+      "Statutory escalation path for delayed Akasa Air ticket refunds, OTA buck-passing, cancelled flights, and legal remedies under DGCA CAR regulations.",
+    site: "@legalrecoveryin",
+    creator: "@legalrecoveryin",
+    images: [`${SITE_URL}/blog_money_recovery.png`],
   },
   robots: {
     index: true,
@@ -67,32 +84,32 @@ const COMMISSION_ORDERS = [
     forum: "National Consumer Disputes Redressal Commission (NCDRC)",
     citation: "Consumer Case No. 129/2021",
     dispute: "Aviation Carrier Unilateral Flight Cancellation & Delayed Bank Refund",
-    facts: "The carrier cancelled passenger scheduled operations due to fleet reshuffling. While the airline confirmed cancellation immediately, it withheld ticket fares in excess of ₹38,000 for five months, citing banking gateway reconciliations.",
-    ruling: "The Commission ruled that airline operational reshuffles do not entitle carriers to treat customer fare balances as working capital. Under DGCA CAR rules, refunds paid via electronic gateway must be credited within the statutory 7-day window. Delays attract commercial interest.",
+    facts: "The airline cancelled scheduled flights due to fleet changes. Although it confirmed the cancellation, it held over ₹38,000 in passenger fares for five months, blaming bank settlement delays.",
+    ruling: "The Commission ruled that operational problems do not allow airlines to hold passenger fares as working funds. Under DGCA rules, digital refunds must be credited within seven days. Delays attract interest.",
     award: "₹38,400 Full Refund + 9% p.a. Interest + ₹20,000 Harassment Damages + ₹10,000 Costs",
   },
   {
     forum: "State Consumer Disputes Redressal Commission, UT Chandigarh",
     citation: "First Appeal No. 74/2022",
     dispute: "OTA Intermediary Shift & Airline Non-Payment for Rescheduled Flight",
-    facts: "Complainant booked domestic tickets via MakeMyTrip. The flight was rescheduled by more than 3 hours, prompting the passenger to opt for full statutory cancellation. The airline claimed refund was remitted to the travel agent wallet; the agent denied receipt.",
-    ruling: "Affirming DGCA CAR Series M Part II Clause 3.3, the State Commission held that online travel agents act as recognized statutory collection agents of the carrier. The operating airline carries non-delegable duty to ensure the refund reaches the passenger's source bank account.",
+    facts: "A passenger booked flights through MakeMyTrip. The flight was rescheduled by more than three hours, so the passenger cancelled. The airline claimed it refunded the travel agent wallet, while the agent denied getting the money.",
+    ruling: "The State Commission held that booking websites act as official agents of the airline under DGCA rules. The airline has a direct duty to ensure the refund reaches the passenger's bank account.",
     award: "₹22,150 Complete Ticket Refund + ₹15,000 Mental Agony Compensation + ₹7,500 Legal Expenses",
   },
   {
     forum: "District Consumer Disputes Redressal Commission, Bengaluru Urban",
     citation: "CC No. 418/2023",
     dispute: "Illegal Retention of Airport Taxes (UDF & PSF) on Non-Refundable Fare",
-    facts: "Passenger cancelled non-refundable domestic flight tickets 10 days before departure due to an urgent family bereavement. Carrier forfeited 100% of the ticket price including User Development Fee (UDF) and Passenger Service Fee (PSF).",
-    ruling: "The District Commission held that airport development fees and passenger service fees are collected by airlines exclusively in trust on behalf of airport operators and the government. Forfeiting statutory taxes when passenger did not fly constitutes unfair trade practice under CPA Section 2(47).",
+    facts: "A passenger cancelled domestic flight tickets 10 days before departure due to a family death. The airline kept 100% of the fare, including airport development and service fees.",
+    ruling: "The Commission held that airlines collect airport fees in trust for the government. Keeping these taxes when a passenger never flew is an unfair trade practice under Section 2(47). The forum ordered a full tax refund plus damages.",
     award: "₹9,840 Full Statutory Tax Refund + ₹10,000 Punitive Damages + ₹5,000 Litigation Expenses",
   },
   {
     forum: "District Consumer Disputes Redressal Commission, New Delhi",
     citation: "CC No. 209/2024",
     dispute: "Medical Emergency Cancellation Without Deduction",
-    facts: "Complainant submitted government hospital medical certificates 48 hours prior to scheduled departure demonstrating hospitalization. Airline customer care refused fee waiver and deducted substantial cancellation penalties.",
-    ruling: "Relying on revised aviation passenger charter directives, the Commission held that severe medical emergencies documented with certified hospitalization records entitle passengers to ticket cancellation without arbitrary penalty deductions.",
+    facts: "A passenger submitted hospital records 48 hours before departure showing emergency admission. Akasa customer support refused to waive fees and deducted large cancellation penalties.",
+    ruling: "Under the aviation passenger charter, genuine medical emergencies backed by hospital records entitle passengers to ticket cancellations without penalty deductions.",
     award: "₹16,700 Fare Refund @ 9% Interest + ₹12,000 Deficient Service Damages + ₹6,000 Legal Costs",
   },
 ];
@@ -101,42 +118,42 @@ const FAQS = [
   {
     question: "Why is my Akasa Air refund status showing pending or uncredited after several weeks?",
     answer:
-      "Akasa Air refund delays typically occur because of manual reconciliation bottlenecks between SNV Aviation's finance division and banking payment aggregators, or because tickets booked through travel portals (such as Cleartrip, EaseMyTrip, or MakeMyTrip) get stuck in intermediary corporate ledger accounts. Under DGCA CAR Section 3, Series M, Part II, electronic payments must be credited back to your original source account within 7 working days regardless of internal processing friction.",
+      "Delays occur due to payment gateway reconciliation or tickets booked through travel agents like MakeMyTrip getting stuck in agent ledgers. Under DGCA rules, electronic payments must be refunded within seven working days regardless of internal processing delays.",
   },
   {
     question: "What is the official Akasa Air refund time under DGCA regulations?",
     answer:
-      "According to revised DGCA CAR Section 3, Series M, Part II, if you paid by credit card, debit card, UPI, or net banking, Akasa Air is mandated to complete the refund remittance within 7 working days. If the ticket was booked through a travel agent or online travel portal, the maximum statutory timeline for the refund to reach your account is 14 working days. Cash bookings at airline counters must be refunded immediately.",
+      "Under DGCA rules, payments made by card, UPI, or net banking must be refunded within 7 working days. If booked through a travel agent, the refund must reach your account within 14 working days. Cash bookings must be refunded immediately.",
   },
   {
     question: "Can Akasa Air deduct cancellation charges if my flight was cancelled or rescheduled by more than 2 hours?",
     answer:
-      "No. Under DGCA CAR regulations on flight cancellations and schedule alterations, if Akasa Air cancels your flight or reschedules it by more than 2 hours from the original departure time, you possess the statutory right to either an alternate flight at no extra charge or a 100% full cash refund without any cancellation fee or deduction.",
+      "No. Under DGCA regulations, if Akasa Air cancels your flight or changes the schedule by more than two hours, you have the right to choose an alternate flight or get a 100% full refund without any cancellation fee.",
   },
   {
     question: "Can Akasa Air keep airport fees (UDF and PSF) if I cancelled a non-refundable ticket?",
     answer:
-      "No. Under DGCA CAR Series M Part II Clause 3.5, airlines are strictly barred from forfeiting statutory airport charges, including the User Development Fee (UDF), Passenger Service Fee (PSF), and statutory taxes, even if the ticket base fare was booked under a non-refundable saver category. All airport fees must be returned to your payment method.",
+      "No. Under DGCA rules, airlines cannot keep statutory airport charges, including the User Development Fee (UDF) and Passenger Service Fee (PSF), even on non-refundable tickets. All taxes must be refunded.",
   },
   {
     question: "What should I do if Akasa Air blames my travel booking portal for the pending refund?",
     answer:
-      "Do not accept mutual finger-pointing. DGCA CAR Section 3 Series M Part II Clause 3.3 explicitly establishes that travel agents and booking aggregators are recognized statutory agents of the operating airline. The primary legal liability to ensure your refund reaches your account rests squarely with Akasa Air (SNV Aviation Pvt. Ltd.). If unresolved after 48 hours, escalate via AirSewa and serve a joint legal notice.",
+      "Do not accept excuses. DGCA rules state that travel portals act as agents of the airline. The legal duty to ensure the refund reaches your account rests with Akasa Air (SNV Aviation). Escalate via AirSewa and send a legal notice.",
   },
   {
     question: "How do I file an official Akasa Air complaint on the Ministry of Civil Aviation AirSewa portal?",
     answer:
-      "Visit airsewa.gov.in or use the AirSewa mobile app, register your mobile number, select 'Grievance Redressal', choose 'Airline', select 'Akasa Air (QP)', enter your PNR, upload your ticket and email correspondence, and submit. The airline has a statutory duty to update and address the grievance under DGCA oversight.",
+      "Visit airsewa.gov.in or open the AirSewa app. Select 'Grievance Redressal', choose 'Airline', select 'Akasa Air', enter your PNR, and upload your ticket. The airline must respond and resolve the issue under DGCA rules.",
   },
   {
     question: "When should I serve a formal advocate legal notice to Akasa Air?",
     answer:
-      "If Akasa Air and your travel agent fail to remit your legitimate refund within 14 working days, or if they reject a valid cancellation refund following an airline-initiated delay or cancellation, serving a 15-day statutory advocate legal notice creates formal documentary liability under the Consumer Protection Act, 2019, paving the way for e-Jagriti consumer court claims with interest and compensation.",
+      "If Akasa Air fails to refund your money within 14 working days, send a 15-day advocate legal notice. This creates formal legal liability under consumer law, allowing you to claim refunds, interest, and damages on e-Jagriti.",
   },
   {
     question: "Akasa Air ka refund nahi aaya toh kya kare aur consumer court me claim kaise kare?",
     answer:
-      "Agar Akasa Air ka refund 7 se 14 dino me nahi aaya hai, toh pehle PNR aur cancellation details ke sath AirSewa portal par grievance darj karein. Agar phir bhi refund na mile, toh hamare platform se SNV Aviation Private Limited ko 15-day advocate legal notice bhejkar e-Jagriti portal par 100% refund, byaaj aur harassment compensation claim karein.",
+      "Agar Akasa Air ka refund 7 se 14 din me na aaye, toh PNR ke sath AirSewa par complaint karein. Phir bhi refund na mile, toh advocate legal notice bhejkar e-Jagriti par 100% refund, byaaj aur compensation claim karein.",
   },
 ];
 
@@ -262,7 +279,7 @@ export default function AkasaAirRefundPage() {
                   Immediate Legal Answer: Who Is Liable & Statutory Deadline
                 </p>
                 <p className="text-sm sm:text-base text-slate-800 leading-relaxed font-medium">
-                  Operating carrier SNV Aviation Private Limited (Akasa Air) is directly liable for passenger ticket refunds under DGCA CAR Section 3, Series M, Part II and Section 2(11) of the Consumer Protection Act, 2019. Refunds must be credited within 7 working days for card or digital payments and 14 days for travel agent bookings. First lodge an AirSewa grievance; if uncredited within statutory limits, serve a 15-day advocate legal notice.
+                  Akasa Air (SNV Aviation) is liable for ticket refunds under DGCA rules and Section 2(11) of the Consumer Protection Act. Refunds must credit within 7 working days for digital payments and 14 days for travel agent bookings. First lodge an AirSewa grievance. If delayed, send a 15-day advocate legal notice.
                 </p>
               </div>
 

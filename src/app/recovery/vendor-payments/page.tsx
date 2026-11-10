@@ -19,6 +19,30 @@ export const metadata: Metadata = {
   alternates: {
     canonical: 'https://www.legalrecovery.in/recovery/vendor-payments',
   },
+  openGraph: {
+    title: "Recover Unpaid Vendor Payments & Dues | LegalRecovery",
+    description: "Recover unpaid vendor payments and supplier debts in India. Learn about MSMED Act claims, Order 37 summary suits, and legal notice procedures.",
+    url: "https://www.legalrecovery.in/recovery/vendor-payments",
+    type: "article",
+    siteName: "LegalRecovery.in",
+    locale: "en_IN",
+    images: [
+      {
+        url: "https://www.legalrecovery.in/blog_money_recovery.png",
+        width: 1200,
+        height: 630,
+        alt: "Recover Unpaid Vendor Payments & Dues | LegalRecovery",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Recover Unpaid Vendor Payments & Dues | LegalRecovery",
+    description: "Recover unpaid vendor payments and supplier debts in India. Learn about MSMED Act claims, Order 37 summary suits, and legal notice procedures.",
+    site: "@legalrecoveryin",
+    creator: "@legalrecoveryin",
+    images: ["https://www.legalrecovery.in/blog_money_recovery.png"],
+  },
 };
 
 export default function VendorPaymentsPage() {

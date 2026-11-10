@@ -21,6 +21,23 @@ export const metadata: Metadata = {
     url: `${SITE_URL}/flight-delay-cancellation-compensation-india`,
     type: "article",
     siteName: "LegalRecovery",
+    images: [
+      {
+        url: `${SITE_URL}/blog_money_recovery.png`,
+        width: 1200,
+        height: 630,
+        alt: "Flight Delay & Cancellation Compensation in India: DGCA Slabs & Passenger Rights",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Flight Delay & Cancellation Compensation in India: DGCA Slabs & Passenger Rights",
+    description:
+      "Statutory DGCA compensation slabs for cancelled flights, gate delays, and involuntary denied boarding up to ₹20,000. Learn your legal recovery remedies under CAR Section 3 Series M Part IV.",
+    site: "@legalrecoveryin",
+    creator: "@legalrecoveryin",
+    images: [`${SITE_URL}/blog_money_recovery.png`],
   },
   robots: {
     index: true,

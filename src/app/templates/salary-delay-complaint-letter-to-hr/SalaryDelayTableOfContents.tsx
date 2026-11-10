@@ -145,10 +145,10 @@ export default function SalaryDelayTableOfContents({
       >
         <div className="bg-white rounded-2xl border border-slate-200/90 p-5 shadow-sm">
           <div className="flex items-center justify-between pb-3.5 mb-3 border-b border-slate-100">
-            <h3 className="text-xs font-black uppercase tracking-wider text-slate-800 flex items-center gap-2">
+            <p className="text-xs font-black uppercase tracking-wider text-slate-800 flex items-center gap-2">
               <span className="w-2 h-2 rounded-full bg-[#DC2626]" />
               Navigation Guide
-            </h3>
+            </p>
             <span className="text-[10px] font-bold px-2 py-0.5 rounded-full bg-slate-100 text-slate-600 uppercase">
               12 Sections
             </span>

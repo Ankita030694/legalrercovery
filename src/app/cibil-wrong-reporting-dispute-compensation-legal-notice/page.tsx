@@ -24,6 +24,23 @@ export const metadata: Metadata = {
     type: "article",
     siteName: "LegalRecovery.in",
     locale: "en_IN",
+    images: [
+      {
+        url: `${SITE_URL}/blog_money_recovery.png`,
+        width: 1200,
+        height: 630,
+        alt: "Wrong CIBIL Report? RBI Delay Penalty & Legal Notice",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Wrong CIBIL Report? RBI Delay Penalty & Legal Notice",
+    description:
+      "Statutory guide on disputing erroneous credit reports under CICRA 2005, enforcing RBI's ₹100/day compensation rule for delayed rectification, and serving an advocate legal notice.",
+    site: "@legalrecoveryin",
+    creator: "@legalrecoveryin",
+    images: [`${SITE_URL}/blog_money_recovery.png`],
   },
   robots: {
     index: true,
@@ -319,9 +336,9 @@ export default function CibilDisputeCompensationPage() {
             <div className="flex-1 w-full min-w-0 space-y-10 sm:space-y-14">
               {/* Quick Facts Table (Archetype Essential) */}
               <section className="bg-white rounded-2xl border border-slate-200/90 p-5 sm:p-6 shadow-sm overflow-hidden">
-                <h3 className="text-xs font-black uppercase tracking-wider text-slate-500 mb-4">
+                <p className="text-xs font-black uppercase tracking-wider text-slate-500 mb-4">
                   CIBIL Wrong Reporting: Quick Facts &amp; Legal Framework at a Glance
-                </h3>
+                </p>
                 <div className="overflow-x-auto">
                   <table className="w-full text-left text-xs sm:text-sm border-collapse">
                     <tbody className="divide-y divide-slate-100">

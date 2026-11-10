@@ -15,10 +15,28 @@ export const metadata: Metadata = {
     canonical: 'https://www.legalrecovery.in/multiple-cheque-bounce-cases-same-transaction',
   },
   openGraph: {
-    title: "Multiple Cheque Bounce Cases from Same Transaction: Single Legal Notice & Joint Trial",
+    title: "Multiple Cheque Bounce Cases: Single Notice & BNSS 219",
     description: "Send a single consolidated Section 138 Legal Notice for multiple bounced cheques from the same transaction and save legal costs.",
     url: "https://www.legalrecovery.in/multiple-cheque-bounce-cases-same-transaction",
     type: "article",
+    siteName: "LegalRecovery.in",
+    locale: "en_IN",
+    images: [
+      {
+        url: "https://www.legalrecovery.in/blog_money_recovery.png",
+        width: 1200,
+        height: 630,
+        alt: "Multiple Cheque Bounce Cases: Single Notice & BNSS 219",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Multiple Cheque Bounce Cases: Single Notice & BNSS 219",
+    description: "Send a single consolidated Section 138 Legal Notice for multiple bounced cheques from the same transaction and save legal costs.",
+    site: "@legalrecoveryin",
+    creator: "@legalrecoveryin",
+    images: ["https://www.legalrecovery.in/blog_money_recovery.png"],
   },
 };
 

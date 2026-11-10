@@ -25,6 +25,23 @@ export const metadata: Metadata = {
     type: "article",
     siteName: "LegalRecovery.in",
     locale: "en_IN",
+    images: [
+      {
+        url: `${SITE_URL}/blog_money_recovery.png`,
+        width: 1200,
+        height: 630,
+        alt: "Client Not Paying for Web Development? Legal Notice",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Client Not Paying for Web Development? Legal Notice",
+    description:
+      "Statutory recovery guide for web & software developers: Section 19 Copyright Act code ownership, MSME 3× compound interest, host takedowns, and legal notice.",
+    site: "@legalrecoveryin",
+    creator: "@legalrecoveryin",
+    images: [`${SITE_URL}/blog_money_recovery.png`],
   },
   robots: {
     index: true,

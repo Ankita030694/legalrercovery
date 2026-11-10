@@ -19,6 +19,24 @@ export const metadata: Metadata = {
     description: "Stop illegal painting and wear-and-tear deductions from your rental security deposit with a formal Advocate Legal Notice.",
     url: "https://www.legalrecovery.in/legal-notice-landlord-unreasonable-security-deposit-deductions",
     type: "article",
+    siteName: "LegalRecovery.in",
+    locale: "en_IN",
+    images: [
+      {
+        url: "https://www.legalrecovery.in/blog_money_recovery.png",
+        width: 1200,
+        height: 630,
+        alt: "Landlord Deducting Security Deposit? Legal Notice",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Landlord Deducting Security Deposit? Legal Notice",
+    description: "Stop illegal painting and wear-and-tear deductions from your rental security deposit with a formal Advocate Legal Notice.",
+    site: "@legalrecoveryin",
+    creator: "@legalrecoveryin",
+    images: ["https://www.legalrecovery.in/blog_money_recovery.png"],
   },
 };
 

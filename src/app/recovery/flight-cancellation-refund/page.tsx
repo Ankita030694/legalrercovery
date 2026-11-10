@@ -19,6 +19,30 @@ export const metadata: Metadata = {
   alternates: {
     canonical: 'https://www.legalrecovery.in/recovery/flight-cancellation-refund',
   },
+  openGraph: {
+    title: "Recover Flight Cancellation Refund | LegalRecovery",
+    description: "Airline denied your cancellation refund or forced a credit shell? Learn DGCA CAR rules, AirSewa options, and recover your full ticket amount in India.",
+    url: "https://www.legalrecovery.in/recovery/flight-cancellation-refund",
+    type: "article",
+    siteName: "LegalRecovery.in",
+    locale: "en_IN",
+    images: [
+      {
+        url: "https://www.legalrecovery.in/blog_money_recovery.png",
+        width: 1200,
+        height: 630,
+        alt: "Recover Flight Cancellation Refund | LegalRecovery",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Recover Flight Cancellation Refund | LegalRecovery",
+    description: "Airline denied your cancellation refund or forced a credit shell? Learn DGCA CAR rules, AirSewa options, and recover your full ticket amount in India.",
+    site: "@legalrecoveryin",
+    creator: "@legalrecoveryin",
+    images: ["https://www.legalrecovery.in/blog_money_recovery.png"],
+  },
 };
 
 export default function FlightCancellationRefundPage() {

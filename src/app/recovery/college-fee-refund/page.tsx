@@ -25,6 +25,23 @@ export const metadata: Metadata = {
     description: "Withdrew your admission and the college won't refund fees or return certificates? What the UGC refund rules say and how to get your money back.",
     url: "https://www.legalrecovery.in/recovery/college-fee-refund",
     type: "article",
+    images: [
+      {
+        url: "https://www.legalrecovery.in/blog_money_recovery.png",
+        width: 1200,
+        height: 630,
+        alt: "College Fee Refund After Admission Cancellation: UGC Rule",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "College Fee Refund After Admission Cancellation: UGC Rule",
+    description:
+      "Withdrew your admission and the college won't refund fees or return certificates? What the UGC refund rules say and how to get your money back.",
+    site: "@legalrecoveryin",
+    creator: "@legalrecoveryin",
+    images: ["https://www.legalrecovery.in/blog_money_recovery.png"],
   },
 };
 

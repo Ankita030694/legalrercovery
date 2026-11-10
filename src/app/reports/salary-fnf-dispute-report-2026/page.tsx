@@ -25,6 +25,23 @@ export const metadata: Metadata = {
     type: "article",
     siteName: "LegalRecovery.in",
     locale: "en_IN",
+    images: [
+      {
+        url: `${SITE_URL}/blog_money_recovery.png`,
+        width: 1200,
+        height: 630,
+        alt: "Salary & FnF Disputes in India: 2026 Data Report",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Salary & FnF Disputes in India: 2026 Data Report",
+    description:
+      "First-year empirical findings on unpaid salary and full & final (FnF) disputes under Section 17(2) of the Code on Wages: median delays, sector recovery rates, and pre-litigation notice impact.",
+    site: "@legalrecoveryin",
+    creator: "@legalrecoveryin",
+    images: [`${SITE_URL}/blog_money_recovery.png`],
   },
   robots: {
     index: true,

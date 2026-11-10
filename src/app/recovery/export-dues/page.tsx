@@ -19,6 +19,30 @@ export const metadata: Metadata = {
   alternates: {
     canonical: 'https://www.legalrecovery.in/recovery/export-dues',
   },
+  openGraph: {
+    title: "Recover Unpaid Export Dues in India | LegalRecovery",
+    description: "Struggling to recover unpaid export dues in India? Learn about ECGC claims, FEMA compliance, EDPMS tracking, and international debt recovery notices.",
+    url: "https://www.legalrecovery.in/recovery/export-dues",
+    type: "article",
+    siteName: "LegalRecovery.in",
+    locale: "en_IN",
+    images: [
+      {
+        url: "https://www.legalrecovery.in/blog_money_recovery.png",
+        width: 1200,
+        height: 630,
+        alt: "Recover Unpaid Export Dues in India | LegalRecovery",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Recover Unpaid Export Dues in India | LegalRecovery",
+    description: "Struggling to recover unpaid export dues in India? Learn about ECGC claims, FEMA compliance, EDPMS tracking, and international debt recovery notices.",
+    site: "@legalrecoveryin",
+    creator: "@legalrecoveryin",
+    images: ["https://www.legalrecovery.in/blog_money_recovery.png"],
+  },
 };
 
 export default function ExportDuesPage() {

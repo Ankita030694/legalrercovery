@@ -17,6 +17,30 @@ export const metadata: Metadata = {
   alternates: {
     canonical: 'https://www.legalrecovery.in/online-legal-notice',
   },
+  openGraph: {
+    title: "Send Legal Notice Online in India: Fees & Process",
+    description: "Legal guide to sending a legal notice in India. Learn statutory requirements, response timelines, consequences of silence, and ODR integrations.",
+    url: "https://www.legalrecovery.in/online-legal-notice",
+    type: "article",
+    siteName: "LegalRecovery.in",
+    locale: "en_IN",
+    images: [
+      {
+        url: "https://www.legalrecovery.in/blog_money_recovery.png",
+        width: 1200,
+        height: 630,
+        alt: "Send Legal Notice Online in India: Fees & Process",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Send Legal Notice Online in India: Fees & Process",
+    description: "Legal guide to sending a legal notice in India. Learn statutory requirements, response timelines, consequences of silence, and ODR integrations.",
+    site: "@legalrecoveryin",
+    creator: "@legalrecoveryin",
+    images: ["https://www.legalrecovery.in/blog_money_recovery.png"],
+  },
 };
 
 export default function SendLegalNoticePage() {

@@ -221,15 +221,15 @@ export default function FullAndFinalSettlementClient() {
                 </p>
 
                 <p className="text-sm md:text-base leading-relaxed">
-                  Leaving a job can bring unexpected financial stress when employers delay final payouts. The full and final settlement reconciles all pending earnings for outgoing staff members. This payout covers unpaid salary, leave encashment, gratuity, and contractual performance bonuses. Withholding these earnings breaches your employment contract and violates Indian labour protection statutes. Our guide explains <Link href="/what-are-the-legal-steps-to-recover-unpaid-salary-from-an-employer-in-india" className="text-[#DC2626] hover:underline font-medium">what are the legal steps to recover unpaid salary from an employer in India</Link>.
+                  Leaving a job is stressful when an employer delays your final payout. Full and final (FnF) settlement covers your unpaid salary, leave encashment, gratuity, and bonuses. Withholding these funds breaches your contract and breaks Indian labour laws. Read our guide on <Link href="/what-are-the-legal-steps-to-recover-unpaid-salary-from-an-employer-in-india" className="text-[#DC2626] hover:underline font-medium">what are the legal steps to recover unpaid salary from an employer in India</Link>.
                 </p>
 
                 <p className="text-sm md:text-base leading-relaxed">
-                  Withholding exit dues is not a minor oversight; it is an actionable offense. Many companies assume that former workers lack the patience to pursue formal claims. You can shift the balance by sending legal notices and approaching authorities. Strategic escalation forces corporate management to respect statutory deadlines and release your funds. This guide gives you the practical tools needed to recover your money.
+                  Withholding exit dues is an illegal act. Many firms think former staff will not pursue formal claims. You can change this by sending a legal notice. Clear escalation forces managers to obey legal deadlines and release your dues.
                 </p>
                 
                 <p className="text-sm md:text-base leading-relaxed">
-                  Employment laws protect tech engineers, factory supervisors, and corporate executives across all industries. Clear documentation forms the essential foundation for any successful salary recovery legal action. Save your appointment letters, salary slips, resignation emails, and official exit clearance forms. Indian courts take a firm stance against employers who withhold legitimate employee earnings. We explore every recovery stage, from drafting demand letters to securing court decrees.
+                  Labour laws protect tech engineers, managers, and factory staff alike. Clear proof is vital for salary recovery. Keep your offer letter, salary slips, resignation emails, and exit clearance forms. Indian courts rule firmly against employers who hold back earned pay.
                 </p>
               </div>
 
@@ -341,11 +341,11 @@ export default function FullAndFinalSettlementClient() {
                     Escalating To The Labour Commissioner
                   </h3>
                   <p className="text-sm md:text-base leading-relaxed">
-                    Employees classified as workmen under the Industrial Disputes Act 1947 can approach the Labour Commissioner. This category includes technical, clerical, skilled, manual, and supervisory personnel across various industries. However, professionals holding senior managerial or purely administrative roles fall outside this statutory definition.
+                    Employees classified as workmen under the Industrial Disputes Act 1947 can complain to the Labour Commissioner. This covers technical, clerical, manual, and supervisory staff. However, senior managers fall outside this definition.
                   </p>
                   
                   <p className="text-sm md:text-base leading-relaxed">
-                    File a formal written complaint with the Labour Commissioner holding jurisdiction over your workplace. Attach your employment contract, resignation emails, salary slips, and bank records of withheld payments. The commissioner issues official conciliation summons requiring company representatives to attend settlement hearings. Employers often clear pending dues during conciliation to avoid formal Labour Court proceedings.
+                    File a written complaint with your local Labour Commissioner. Attach your contract, resignation emails, payslips, and bank statements. The commissioner summons company leaders to conciliation hearings. Companies often clear unpaid dues during conciliation to avoid Labour Court.
                   </p>
 
                   <p className="text-sm md:text-base leading-relaxed">
@@ -446,15 +446,15 @@ export default function FullAndFinalSettlementClient() {
                     Invoking The Insolvency And Bankruptcy Code
                   </h3>
                   <p className="text-sm md:text-base leading-relaxed">
-                    The Insolvency and Bankruptcy Code 2016 classifies unpaid employees as operational creditors. This legal status gives you significant recovery leverage against any defaulting corporate debtor. You can file an application before the National Company Law Tribunal with fellow colleagues. This legal action seeks to initiate the Corporate Insolvency Resolution Process against the company.
+                    The Insolvency and Bankruptcy Code (IBC) 2016 treats unpaid employees as operational creditors. This status gives you strong leverage. You can file an application at the National Company Law Tribunal (NCLT) with coworkers to start insolvency proceedings against the firm.
                   </p>
                   
                   <p className="text-sm md:text-base leading-relaxed">
-                    Filing an insolvency petition creates immediate pressure on company founders and board directors. Admitting an insolvency petition suspends company management and appoints an independent resolution professional. Promoters fiercely protect corporate ownership and avoid losing control over unpaid employee dues. Defaulting employers frequently arrange required funds and settle out of court before admission.
+                    An insolvency plea creates instant pressure on founders and directors. If admitted, the NCLT suspends management and appoints an administrator. Promoters usually arrange funds and settle dues quickly to protect control over their business.
                   </p>
 
                   <p className="text-sm md:text-base leading-relaxed">
-                    If a defaulting company undergoes liquidation, the Insolvency Code prioritizes pending employee dues. Unpaid workers receive payment from liquidated company assets before most unsecured commercial lenders. Registering your operational claim promptly guarantees your legal share during corporate asset distribution. Asserting your statutory rights through formal legal forums ensures you recover your hard-earned money.
+                    If the company is liquidated, the IBC prioritizes employee dues. Staff receive payments from asset sales before most commercial lenders. Filing your claim promptly ensures you get your share.
                   </p>
                 </div>
               </section>

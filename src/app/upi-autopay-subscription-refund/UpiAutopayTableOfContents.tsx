@@ -157,9 +157,9 @@ export default function UpiAutopayTableOfContents({
       >
         <div className="flex items-center gap-2 pb-3 mb-3 border-b border-slate-100">
           <span className="w-2 h-2 rounded-full bg-[#DC2626]" />
-          <h2 className="text-xs font-black uppercase tracking-wider text-slate-500">
+          <p className="text-xs font-black uppercase tracking-wider text-slate-500">
             Guide Navigation
-          </h2>
+          </p>
         </div>
 
         <nav className="space-y-1">

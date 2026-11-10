@@ -24,6 +24,23 @@ export const metadata: Metadata = {
     type: "article",
     siteName: "LegalRecovery.in",
     locale: "en_IN",
+    images: [
+      {
+        url: `${SITE_URL}/blog_money_recovery.png`,
+        width: 1200,
+        height: 630,
+        alt: "Model Tenancy Act 2021 Security Deposit Cap (2 Months' Rent) & State Adoption Table",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Model Tenancy Act 2021 Security Deposit Cap (2 Months' Rent) & State Adoption Table",
+    description:
+      "Complete legal analysis of Section 11 of the Model Tenancy Act 2021: 2-month residential deposit cap, same-day refund on key handover, Second Schedule wear-and-tear rules, and state-wise adoption status.",
+    site: "@legalrecoveryin",
+    creator: "@legalrecoveryin",
+    images: [`${SITE_URL}/blog_money_recovery.png`],
   },
   robots: {
     index: true,

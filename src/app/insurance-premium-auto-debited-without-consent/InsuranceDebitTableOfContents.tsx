@@ -52,9 +52,9 @@ export default function InsuranceDebitTableOfContents() {
       <div className="bg-white border border-slate-200/80 rounded-2xl p-5 shadow-sm">
         <div className="flex items-center gap-2 pb-3 mb-3 border-b border-slate-100">
           <div className="w-2 h-2 rounded-full bg-red-600 animate-pulse" />
-          <h3 className="text-xs font-bold uppercase tracking-wider text-slate-900">
+          <p className="text-xs font-bold uppercase tracking-wider text-slate-900">
             Guide Navigation
-          </h3>
+          </p>
         </div>
         <nav>
           <ul className="space-y-1.5 text-xs">
@@ -83,9 +83,9 @@ export default function InsuranceDebitTableOfContents() {
         <span className="inline-block text-[10px] font-bold uppercase tracking-widest text-amber-400 mb-1">
           Bancassurance Alert
         </span>
-        <h4 className="text-sm font-bold text-white mb-2">
+        <p className="text-sm font-bold text-white mb-2">
           Debited Without Written Consent?
-        </h4>
+        </p>
         <p className="text-xs text-slate-300 leading-relaxed mb-4">
           Under IRDAI Master Circular 2024, auto-debiting an insurance premium without signed consent or OTP authorisation is an illegal unfair trade practice.
         </p>

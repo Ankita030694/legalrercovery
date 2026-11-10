@@ -23,6 +23,23 @@ export const metadata: Metadata = {
     description: "What FnF recovery means, what an employer can lawfully deduct from your settlement, and the Code on Wages rule to pay exit dues in 2 working days.",
     url: "https://www.legalrecovery.in/recovery/fnf-settlement",
     type: "article",
+    images: [
+      {
+        url: "https://www.legalrecovery.in/blog_money_recovery.png",
+        width: 1200,
+        height: 630,
+        alt: "FnF Recovery Meaning & the 2-Working-Day Settlement Rule",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "FnF Recovery Meaning & the 2-Working-Day Settlement Rule",
+    description:
+      "What FnF recovery means, what an employer can lawfully deduct from your settlement, and the Code on Wages rule to pay exit dues in 2 working days.",
+    site: "@legalrecoveryin",
+    creator: "@legalrecoveryin",
+    images: ["https://www.legalrecovery.in/blog_money_recovery.png"],
   },
 };
 

@@ -49,12 +49,23 @@ export const metadata: Metadata = {
     publishedTime: "2026-11-04T00:00:00.000Z",
     modifiedTime: "2026-11-04T00:00:00.000Z",
     authors: ["Anuj Anand Malik"],
+    images: [
+      {
+        url: `${SITE_URL}/blog_money_recovery.png`,
+        width: 1200,
+        height: 630,
+        alt: "RERA Complaint Online: State-Wise Process, Fees & Format",
+      },
+    ],
   },
   twitter: {
     card: "summary_large_image",
     title: "RERA Complaint Online: State-Wise Process, Fees & Format",
     description:
       "Step-by-step RERA complaint filing for major states: portals, fees, Form M/N formats, interest rules and typical timelines.",
+    site: "@legalrecoveryin",
+    creator: "@legalrecoveryin",
+    images: [`${SITE_URL}/blog_money_recovery.png`],
   },
 };
 

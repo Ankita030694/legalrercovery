@@ -19,6 +19,30 @@ export const metadata: Metadata = {
   alternates: {
     canonical: 'https://www.legalrecovery.in/recovery/gym-membership-refund',
   },
+  openGraph: {
+    title: "Gym Membership Refund Not Received? Recover Money",
+    description: "Gym refusing to refund your membership fee? Get expert legal assistance to recover pro-rata refunds and fight unfair terms under consumer law.",
+    url: "https://www.legalrecovery.in/recovery/gym-membership-refund",
+    type: "article",
+    siteName: "LegalRecovery.in",
+    locale: "en_IN",
+    images: [
+      {
+        url: "https://www.legalrecovery.in/blog_money_recovery.png",
+        width: 1200,
+        height: 630,
+        alt: "Gym Membership Refund Not Received? Recover Money",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Gym Membership Refund Not Received? Recover Money",
+    description: "Gym refusing to refund your membership fee? Get expert legal assistance to recover pro-rata refunds and fight unfair terms under consumer law.",
+    site: "@legalrecoveryin",
+    creator: "@legalrecoveryin",
+    images: ["https://www.legalrecovery.in/blog_money_recovery.png"],
+  },
 };
 
 export default function GymMembershipRefundPage() {

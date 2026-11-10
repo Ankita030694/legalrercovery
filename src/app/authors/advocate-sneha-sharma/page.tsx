@@ -7,6 +7,30 @@ export const metadata: Metadata = {
   alternates: {
     canonical: 'https://www.legalrecovery.in/authors/advocate-sneha-sharma',
   },
+  openGraph: {
+    title: 'Advocate Sneha Sharma - Civil Litigation & ODR Expert',
+    description: 'Advocate Sneha Sharma is an expert in civil litigation, commercial law, and Online Dispute Resolution with a proven track record in debt recovery.',
+    url: 'https://www.legalrecovery.in/authors/advocate-sneha-sharma',
+    type: 'profile',
+    siteName: 'LegalRecovery.in',
+    locale: 'en_IN',
+    images: [
+      {
+        url: 'https://www.legalrecovery.in/blog_money_recovery.png',
+        width: 1200,
+        height: 630,
+        alt: 'Advocate Sneha Sharma - Civil Litigation & ODR Expert',
+      },
+    ],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Advocate Sneha Sharma - Civil Litigation & ODR Expert',
+    description: 'Advocate Sneha Sharma is an expert in civil litigation, commercial law, and Online Dispute Resolution with a proven track record in debt recovery.',
+    site: '@legalrecoveryin',
+    creator: '@legalrecoveryin',
+    images: ['https://www.legalrecovery.in/blog_money_recovery.png'],
+  },
 };
 
 const personSchema = {

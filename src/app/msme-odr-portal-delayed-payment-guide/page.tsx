@@ -26,6 +26,23 @@ export const metadata: Metadata = {
     url: PAGE_URL,
     type: "article",
     siteName: "LegalRecovery.in",
+    images: [
+      {
+        url: `${SITE_URL}/blog_money_recovery.png`,
+        width: 1200,
+        height: 630,
+        alt: "MSME ODR Portal: File a Delayed Payment Case (Guide)",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "MSME ODR Portal: File a Delayed Payment Case (Guide)",
+    description:
+      "How to file a delayed-payment reference on the MSME ODR portal: eligibility, documents, mediation, arbitration and enforcing the award.",
+    site: "@legalrecoveryin",
+    creator: "@legalrecoveryin",
+    images: [`${SITE_URL}/blog_money_recovery.png`],
   },
   robots: {
     index: true,

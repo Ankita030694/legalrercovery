@@ -24,12 +24,23 @@ export const metadata: Metadata = {
     url: `${SITE_URL}/sitemap`,
     type: "website",
     siteName: "LegalRecovery",
+    images: [
+      {
+        url: `${SITE_URL}/blog_money_recovery.png`,
+        width: 1200,
+        height: 630,
+        alt: "HTML Sitemap & Legal Directory | LegalRecovery India",
+      },
+    ],
   },
   twitter: {
     card: "summary_large_image",
     title: "HTML Sitemap & Legal Directory | LegalRecovery India",
     description:
       "Explore all legal notice filing categories, consumer refund rails, salary recovery options, and regional recovery centers across India.",
+    site: "@legalrecoveryin",
+    creator: "@legalrecoveryin",
+    images: [`${SITE_URL}/blog_money_recovery.png`],
   },
 };
 

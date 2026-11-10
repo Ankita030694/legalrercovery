@@ -24,6 +24,23 @@ export const metadata: Metadata = {
     type: "article",
     siteName: "LegalRecovery.in",
     locale: "en_IN",
+    images: [
+      {
+        url: `${SITE_URL}/blog_money_recovery.png`,
+        width: 1200,
+        height: 630,
+        alt: "Concert or Event Cancelled? Ticket Refund Rights",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Concert or Event Cancelled? Ticket Refund Rights",
+    description:
+      "Statutory guide on ticket refund rights when concerts, music festivals, or events are cancelled in India. Organiser vs platform joint liability under CPA 2019 and E-Commerce Rules.",
+    site: "@legalrecoveryin",
+    creator: "@legalrecoveryin",
+    images: [`${SITE_URL}/blog_money_recovery.png`],
   },
   robots: {
     index: true,

@@ -23,6 +23,24 @@ export const metadata: Metadata = {
     description: "Browse 40+ specialized legal notice categories in India—salary recovery, consumer refunds, tenant eviction, banking disputes & B2B dues.",
     url: "https://www.legalrecovery.in/send-a-legal-notice",
     type: "website",
+    siteName: "LegalRecovery.in",
+    locale: "en_IN",
+    images: [
+      {
+        url: "https://www.legalrecovery.in/blog_money_recovery.png",
+        width: 1200,
+        height: 630,
+        alt: "Legal Notice Categories & Directory in India (CPC & NI)",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Legal Notice Categories & Directory in India (CPC & NI)",
+    description: "Browse 40+ specialized legal notice categories in India—salary recovery, consumer refunds, tenant eviction, banking disputes & B2B dues.",
+    site: "@legalrecoveryin",
+    creator: "@legalrecoveryin",
+    images: ["https://www.legalrecovery.in/blog_money_recovery.png"],
   },
 };
 

@@ -29,6 +29,23 @@ export const metadata: Metadata = {
     type: "article",
     siteName: "LegalRecovery.in",
     locale: "hi_IN",
+    images: [
+      {
+        url: `${SITE_URL}/blog_money_recovery.png`,
+        width: 1200,
+        height: 630,
+        alt: "लीगल नोटिस कैसे भेजें? ऑनलाइन प्रक्रिया, माध्यम और खर्च (2026)",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "लीगल नोटिस कैसे भेजें? ऑनलाइन प्रक्रिया, माध्यम और खर्च (2026)",
+    description:
+      "कंपनी, ई-कॉमर्स (Amazon), दोस्त या मकान मालिक को कानूनी नोटिस भेजने की पूरी प्रक्रिया, स्पीड पोस्ट, ईमेल व व्हाट्सऐप तामील और विधिक समय सीमा।",
+    site: "@legalrecoveryin",
+    creator: "@legalrecoveryin",
+    images: [`${SITE_URL}/blog_money_recovery.png`],
   },
   robots: {
     index: true,

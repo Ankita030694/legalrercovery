@@ -24,6 +24,23 @@ export const metadata: Metadata = {
     type: "website",
     siteName: "LegalRecovery.in",
     locale: "en_IN",
+    images: [
+      {
+        url: `${SITE_URL}/blog_money_recovery.png`,
+        width: 1200,
+        height: 630,
+        alt: "Consumer Court Fee & Jurisdiction Calculator (2026) | LegalRecovery",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Consumer Court Fee & Jurisdiction Calculator (2026) | LegalRecovery",
+    description:
+      "Enter your claim value to determine whether your dispute falls under District, State, or National Consumer Commission and calculate statutory filing fees under CPA 2019.",
+    site: "@legalrecoveryin",
+    creator: "@legalrecoveryin",
+    images: [`${SITE_URL}/blog_money_recovery.png`],
   },
   robots: {
     index: true,

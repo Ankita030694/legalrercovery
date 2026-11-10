@@ -22,6 +22,23 @@ export const metadata: Metadata = {
     description: "Unauthorised ECS or NACH debit, or debits continuing after you cancelled the mandate? How to dispute it, escalate to RBI and recover the money.",
     url: "https://www.legalrecovery.in/legal-notice-to-bank-unauthorized-ecs-nach-debit-reversal",
     type: "article",
+    images: [
+      {
+        url: "https://www.legalrecovery.in/blog_money_recovery.png",
+        width: 1200,
+        height: 630,
+        alt: "ECS/NACH Debit Dispute? Get Wrong Debits & Charges Back",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "ECS/NACH Debit Dispute? Get Wrong Debits & Charges Back",
+    description:
+      "Unauthorised ECS or NACH debit, or debits continuing after you cancelled the mandate? How to dispute it, escalate to RBI and recover the money.",
+    site: "@legalrecoveryin",
+    creator: "@legalrecoveryin",
+    images: ["https://www.legalrecovery.in/blog_money_recovery.png"],
   },
 };
 

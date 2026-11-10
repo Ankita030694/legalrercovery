@@ -24,6 +24,23 @@ export const metadata: Metadata = {
     type: "article",
     siteName: "LegalRecovery.in",
     locale: "en_IN",
+    images: [
+      {
+        url: `${SITE_URL}/blog_money_recovery.png`,
+        width: 1200,
+        height: 630,
+        alt: "Order 37 CPC Summary Suit: Fast Money Recovery Process, Format & Court Fees",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Order 37 CPC Summary Suit: Fast Money Recovery Process, Format & Court Fees",
+    description:
+      "Statutory guide to Order XXXVII CPC summary suits for money recovery: qualifying instruments, 10-day leave to defend rule, summons format, and court fee calculations.",
+    site: "@legalrecoveryin",
+    creator: "@legalrecoveryin",
+    images: [`${SITE_URL}/blog_money_recovery.png`],
   },
   robots: {
     index: true,

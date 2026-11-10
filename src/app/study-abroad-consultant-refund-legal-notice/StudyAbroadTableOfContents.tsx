@@ -146,9 +146,9 @@ export default function StudyAbroadTableOfContents({
         <div className="bg-white rounded-2xl p-5 border border-slate-200 shadow-sm">
           <div className="flex items-center gap-2 pb-3 mb-3 border-b border-slate-100">
             <div className="w-2.5 h-2.5 rounded-full bg-[#DC2626] animate-pulse"></div>
-            <h3 className="text-xs font-extrabold uppercase tracking-wider text-slate-700">
+            <p className="text-xs font-extrabold uppercase tracking-wider text-slate-700">
               Guide Navigation
-            </h3>
+            </p>
           </div>
 
           <nav aria-label="Table of contents" className="space-y-1">

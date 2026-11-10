@@ -23,6 +23,23 @@ export const metadata: Metadata = {
     type: "article",
     siteName: "LegalRecovery.in",
     locale: "en_IN",
+    images: [
+      {
+        url: `${SITE_URL}/blog_money_recovery.png`,
+        width: 1200,
+        height: 630,
+        alt: "redBus Refund Not Received After Bus Cancellation? Legal Action Guide",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "redBus Refund Not Received After Bus Cancellation? Legal Action Guide",
+    description:
+      "Statutory escalation path for delayed redBus refunds, bus operator cancellations, forced wallet credits, and platform joint liability under the Consumer Protection Act, 2019.",
+    site: "@legalrecoveryin",
+    creator: "@legalrecoveryin",
+    images: [`${SITE_URL}/blog_money_recovery.png`],
   },
   robots: {
     index: true,

@@ -24,6 +24,23 @@ export const metadata: Metadata = {
     type: "article",
     siteName: "LegalRecovery.in",
     locale: "en_IN",
+    images: [
+      {
+        url: `${SITE_URL}/blog_money_recovery.png`,
+        width: 1200,
+        height: 630,
+        alt: "ATM Debited You but Gave No Cash: Deadlines and Compensation",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "ATM Debited You but Gave No Cash: Deadlines and Compensation",
+    description:
+      "Statutory guide on failed ATM cash withdrawals: RBI T+5 calendar days auto-reversal deadline, ₹100 per day mandatory compensation, and filing banking ombudsman complaints.",
+    site: "@legalrecoveryin",
+    creator: "@legalrecoveryin",
+    images: [`${SITE_URL}/blog_money_recovery.png`],
   },
   robots: {
     index: true,

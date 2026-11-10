@@ -24,6 +24,23 @@ export const metadata: Metadata = {
     type: "article",
     siteName: "LegalRecovery.in",
     locale: "en_IN",
+    images: [
+      {
+        url: `${SITE_URL}/blog_money_recovery.png`,
+        width: 1200,
+        height: 630,
+        alt: "Reply to Legal Notice Format (Free) + Time Limit",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Reply to Legal Notice Format (Free) + Time Limit",
+    description:
+      "Reply-to-legal-notice format with guidance on admissions, denials and the usual 15–30 day timeline, and when to get a lawyer.",
+    site: "@legalrecoveryin",
+    creator: "@legalrecoveryin",
+    images: [`${SITE_URL}/blog_money_recovery.png`],
   },
   robots: {
     index: true,

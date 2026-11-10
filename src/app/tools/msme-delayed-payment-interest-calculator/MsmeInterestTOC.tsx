@@ -133,9 +133,9 @@ export default function MsmeInterestTOC() {
           <span className="inline-block px-2.5 py-0.5 rounded text-[10px] font-extrabold uppercase bg-[#DC2626] text-white mb-2">
             Section 16 + Sec 43B(h)
           </span>
-          <h4 className="text-sm font-bold text-white mb-1.5">
+          <p className="text-sm font-bold text-white mb-1.5">
             Buyer Stalling Your B2B Invoice?
-          </h4>
+          </p>
           <p className="text-[11px] text-slate-300 leading-relaxed mb-4">
             Attach your month-by-month 3× RBI Bank Rate interest schedule to an advocate legal demand notice warning the buyer of 30% Income Tax disallowance under Section 43B(h).
           </p>

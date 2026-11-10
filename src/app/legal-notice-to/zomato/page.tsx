@@ -22,6 +22,23 @@ export const metadata: Metadata = {
     type: "article",
     siteName: "LegalRecovery.in",
     locale: "en_IN",
+    images: [
+      {
+        url: `${SITE_URL}/blog_money_recovery.png`,
+        width: 1200,
+        height: 630,
+        alt: "Zomato Refund Not Received? How to Escalate to a Legal Notice",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Zomato Refund Not Received? How to Escalate to a Legal Notice",
+    description:
+      "Stuck Zomato refund, undelivered food, or arbitrary cancellation charges? Discover statutory timelines, evidence rules, and how an advocate notice forces compensation.",
+    site: "@legalrecoveryin",
+    creator: "@legalrecoveryin",
+    images: [`${SITE_URL}/blog_money_recovery.png`],
   },
   robots: {
     index: true,
@@ -199,7 +216,7 @@ Phone: [INSERT CONTACT NUMBER]`;
             name: "How long does Zomato legally take to process a refund to my bank account or UPI?",
             acceptedAnswer: {
               "@type": "Answer",
-              text: "Under Rule 4(5) of the Consumer Protection (E-Commerce) Rules, 2020 and RBI transaction settlement guidelines, refunds for failed or canceled food orders must be credited within 3 to 7 working days for banking channels and within 24 to 48 hours for UPI transactions. If funds are deducted but the order fails, RBI TAT circular DPSS.CO.PD No.629/02.01.014/2019-20 mandates auto-reversal within T+1 working days, beyond which a statutory penalty of ₹100 per day accrues.",
+              text: "Under RBI rules and E-Commerce Rules, 2020, refunds for cancelled food orders must arrive within 24 to 48 hours for UPI. For netbanking or cards, refunds take 3 to 7 working days. If payment was debited for a failed order, RBI rules require auto-reversal within T+1 days. If delayed further, you are entitled to compensation of ₹100 per day.",
             },
           },
           {
@@ -207,7 +224,7 @@ Phone: [INSERT CONTACT NUMBER]`;
             name: "Why does Zomato customer care say 'refund processed' when the money hasn't reached my bank?",
             acceptedAnswer: {
               "@type": "Answer",
-              text: "When Zomato triggers a refund, its internal database marks the transaction as 'processed' the instant an API call reaches its payment gateway partner (such as PayU, Razorpay, or Juspay). However, clearing batches may stall between the payment aggregator switch and your issuing bank's Core Banking System. To trace the funds, demand the 12-digit UPI Retrieval Reference Number (RRN) or 23-digit Acquirer Reference Number (ARN) from Zomato's Grievance Officer and submit it to your bank's chargeback desk.",
+              text: "Zomato marks a refund as 'processed' once it sends an instruction to its payment gateway. However, clearing delays can happen between the gateway and your bank. Ask Zomato for the 12-digit UPI reference number (RRN) or card reference number (ARN). You can share this number with your bank to track and claim the stuck funds.",
             },
           },
           {
@@ -215,7 +232,7 @@ Phone: [INSERT CONTACT NUMBER]`;
             name: "Can Zomato legally deduct a 100% cancellation fee if the food delivery is delayed?",
             acceptedAnswer: {
               "@type": "Answer",
-              text: "No. Deducting a 100% cancellation fee when an order is substantially delayed past the promised delivery estimate constitutes an unfair contract term under Section 2(46) of the Consumer Protection Act, 2019 and a prohibited dark pattern under the CCPA Guidelines, 2023. If the delay originates from restaurant preparation or rider transit, the platform has breached its contractual delivery timeline, entitling the consumer to cancel without penalty and receive a full source refund.",
+              text: "No. Deducting a 100% fee when delivery is delayed is an unfair contract term under Section 2(46) of the Consumer Protection Act, 2019. It is also an illegal dark pattern under CCPA guidelines. If Zomato or the restaurant delays your food past the promised time, you can cancel without any penalty and get a full refund.",
             },
           },
           {
@@ -223,7 +240,7 @@ Phone: [INSERT CONTACT NUMBER]`;
             name: "What should I do if Zomato marks an order as 'delivered' but the food never arrived?",
             acceptedAnswer: {
               "@type": "Answer",
-              text: "Immediately take screenshots of the in-app delivery timeline, call records proving the delivery rider never contacted you, and the abrupt termination of the customer support chat. Email grievance@zomato.com challenging the false delivery status and demanding proof of physical handover. If they refuse to refund within 48 hours, file a grievance on the National Consumer Helpline (1915) and dispatch an advocate legal notice citing DCDRC Dharwad's landmark ruling in CC/483/2023.",
+              text: "Take screenshots of the delivery status, chat history, and phone logs proving the rider never called. Email grievance@zomato.com to dispute the false delivery status. Ask for delivery verification. If they refuse to refund within 48 hours, file a complaint on the National Consumer Helpline (1915) and send an advocate legal notice.",
             },
           },
           {
@@ -231,7 +248,7 @@ Phone: [INSERT CONTACT NUMBER]`;
             name: "Who is the statutory Grievance Officer for Zomato and how do I contact them?",
             acceptedAnswer: {
               "@type": "Answer",
-              text: "Pursuant to Rule 4(5) of the Consumer Protection (E-Commerce) Rules, 2020, Zomato Limited has designated a Grievance Redressal Officer reachable at grievance@zomato.com and nodalofficer@zomato.com, with official corporate offices at Ground Floor, 12A, Meghdoot, Nehru Place, New Delhi – 110019 and Pioneer Square, Sector 62, Golf Course Extension Road, Gurugram – 122098. The Grievance Officer is statutorily obligated to acknowledge your complaint within 48 hours and resolve it within 30 days.",
+              text: "Under E-Commerce Rules, 2020, Zomato must have a Grievance Officer. You can email grievance@zomato.com and nodalofficer@zomato.com. By law, the officer must acknowledge your complaint within 48 hours and resolve the dispute within 30 days.",
             },
           },
           {
@@ -239,7 +256,7 @@ Phone: [INSERT CONTACT NUMBER]`;
             name: "Can Zomato claim immunity under Section 79 of the IT Act by blaming the restaurant?",
             acceptedAnswer: {
               "@type": "Answer",
-              text: "No. State and District Consumer Disputes Redressal Commissions across India have repeatedly rejected the intermediary safe-harbor defense for food delivery aggregators. Because Zomato collects payments, levies platform and packaging fees, controls rider dispatch, and negotiates merchant contracts, it exercises active commercial control, establishing joint and several liability under Section 2(47) of the Consumer Protection Act, 2019.",
+              text: "No. Consumer commissions have repeatedly rejected this defense. Zomato collects payment, charges platform fees, and manages delivery riders. Because it controls the transaction, Zomato shares legal liability with the restaurant under the Consumer Protection Act, 2019.",
             },
           },
           {
@@ -247,7 +264,7 @@ Phone: [INSERT CONTACT NUMBER]`;
             name: "Zomato se khana deliver na hone ya refund na aane par legal notice kaise bheje?",
             acceptedAnswer: {
               "@type": "Answer",
-              text: "Zomato se refund na milne par sabse pehle in-app chat aur call logs ka screenshot lein aur grievance@zomato.com par formal email bhein. Agar 48 ghante me refund process na ho, to National Consumer Helpline (1915) par complaint register karein. Iske baad ek advocate dwara drafted statutory legal notice Zomato Limited ke New Delhi registered office aur Gurugram headquarters par Speed Post tatha email dwara bhejein, jisme Section 35 Consumer Protection Act ke antargat 15 dino me refund aur compensation ki maang ki jati hai.",
+              text: "Agar Zomato refund na de, to chat aur call logs ke screenshot lekar grievance@zomato.com par email karein. Agar 48 ghante me samasya hal na ho, to National Consumer Helpline (1915) par complaint karein. Iske baad advocate dwara Zomato ko legal notice bhejein, jisme 15 dino ke andar refund aur harjane ki maang ki ja sakti hai.",
             },
           },
         ],
@@ -292,7 +309,7 @@ Phone: [INSERT CONTACT NUMBER]`;
                 Statutory Summary (Quick Answer)
               </p>
               <p className="text-slate-800 text-sm sm:text-base leading-relaxed font-medium">
-                Under Rule 4(5) of the Consumer Protection (E-Commerce) Rules, 2020 and Section 2(47) of the Consumer Protection Act, 2019, Zomato Limited is strictly liable for undelivered food, uncredited refunds, and arbitrary cancellation fees. Escalate from in-app chat to Zomato's Grievance Officer; if unresolved within 48 hours, dispatch an advocate legal notice before initiating e-Jagriti consumer proceedings.
+                Under the Consumer Protection Act, 2019 and E-Commerce Rules, 2020, Zomato is legally liable for undelivered orders, delayed refunds, and unfair cancellation penalties. First report the issue in the app and email Zomato&apos;s Grievance Officer. If unresolved within 48 hours, send an advocate legal notice before filing on e-Jagriti.
               </p>
             </section>
 
@@ -1052,7 +1069,7 @@ Phone: [INSERT CONTACT NUMBER]`;
                   <span className="text-slate-400 group-open:rotate-180 transition-transform">▼</span>
                 </summary>
                 <div className="mt-3 text-xs sm:text-sm text-slate-650 leading-relaxed pl-2 border-l-2 border-red-500">
-                  Under Rule 4(5) of the Consumer Protection (E-Commerce) Rules, 2020 and RBI transaction settlement guidelines, refunds for failed or canceled food orders must be credited within 3 to 7 working days for banking channels and within 24 to 48 hours for UPI transactions. If funds are deducted but the order fails, RBI TAT circular DPSS.CO.PD No.629/02.01.014/2019-20 mandates auto-reversal within T+1 working days, beyond which a statutory penalty of ₹100 per day accrues.
+                  Under RBI rules and E-Commerce Rules, 2020, refunds for cancelled food orders must arrive within 24 to 48 hours for UPI. For netbanking or cards, refunds take 3 to 7 working days. If payment was debited for a failed order, RBI rules require auto-reversal within T+1 days. If delayed further, you are entitled to compensation of ₹100 per day.
                 </div>
               </details>
 
@@ -1062,7 +1079,7 @@ Phone: [INSERT CONTACT NUMBER]`;
                   <span className="text-slate-400 group-open:rotate-180 transition-transform">▼</span>
                 </summary>
                 <div className="mt-3 text-xs sm:text-sm text-slate-650 leading-relaxed pl-2 border-l-2 border-red-500">
-                  When Zomato triggers a refund, its internal database marks the transaction as &ldquo;processed&rdquo; the instant an API call reaches its payment gateway partner (such as PayU, Razorpay, or Juspay). However, clearing batches may stall between the payment aggregator switch and your issuing bank&apos;s Core Banking System. To trace the funds, demand the 12-digit UPI Retrieval Reference Number (RRN) or 23-digit Acquirer Reference Number (ARN) from Zomato&apos;s Grievance Officer and submit it to your bank&apos;s chargeback desk.
+                  Zomato marks a refund as &ldquo;processed&rdquo; once it sends an instruction to its payment gateway. However, clearing delays can happen between the gateway and your bank. Ask Zomato for the 12-digit UPI reference number (RRN) or card reference number (ARN). You can share this number with your bank to track and claim the stuck funds.
                 </div>
               </details>
 
@@ -1072,7 +1089,7 @@ Phone: [INSERT CONTACT NUMBER]`;
                   <span className="text-slate-400 group-open:rotate-180 transition-transform">▼</span>
                 </summary>
                 <div className="mt-3 text-xs sm:text-sm text-slate-650 leading-relaxed pl-2 border-l-2 border-red-500">
-                  No. Deducting a 100% cancellation fee when an order is substantially delayed past the promised delivery estimate constitutes an unfair contract term under Section 2(46) of the Consumer Protection Act, 2019 and a prohibited dark pattern under the CCPA Guidelines, 2023. If the delay originates from restaurant preparation or rider transit, the platform has breached its contractual delivery timeline, entitling the consumer to cancel without penalty and receive a full source refund.
+                  No. Deducting a 100% fee when delivery is delayed is an unfair contract term under Section 2(46) of the Consumer Protection Act, 2019. It is also an illegal dark pattern under CCPA guidelines. If Zomato or the restaurant delays your food past the promised time, you can cancel without any penalty and get a full refund.
                 </div>
               </details>
 
@@ -1082,7 +1099,7 @@ Phone: [INSERT CONTACT NUMBER]`;
                   <span className="text-slate-400 group-open:rotate-180 transition-transform">▼</span>
                 </summary>
                 <div className="mt-3 text-xs sm:text-sm text-slate-650 leading-relaxed pl-2 border-l-2 border-red-500">
-                  Immediately take screenshots of the in-app delivery timeline, call records proving the delivery rider never contacted you, and the abrupt termination of the customer support chat. Email grievance@zomato.com challenging the false delivery status and demanding proof of physical handover. If they refuse to refund within 48 hours, file a grievance on the National Consumer Helpline (1915) and dispatch an advocate legal notice citing DCDRC Dharwad&apos;s landmark ruling in CC/483/2023.
+                  Take screenshots of the delivery status, chat history, and phone logs proving the rider never called. Email grievance@zomato.com to dispute the false delivery status. Ask for delivery verification. If they refuse to refund within 48 hours, file a complaint on the National Consumer Helpline (1915) and send an advocate legal notice.
                 </div>
               </details>
 
@@ -1092,7 +1109,7 @@ Phone: [INSERT CONTACT NUMBER]`;
                   <span className="text-slate-400 group-open:rotate-180 transition-transform">▼</span>
                 </summary>
                 <div className="mt-3 text-xs sm:text-sm text-slate-650 leading-relaxed pl-2 border-l-2 border-red-500">
-                  Pursuant to Rule 4(5) of the Consumer Protection (E-Commerce) Rules, 2020, Zomato Limited has designated a Grievance Redressal Officer reachable at grievance@zomato.com and nodalofficer@zomato.com, with official corporate offices at Ground Floor, 12A, Meghdoot, Nehru Place, New Delhi – 110019 and Pioneer Square, Sector 62, Golf Course Extension Road, Gurugram – 122098. The Grievance Officer is statutorily obligated to acknowledge your complaint within 48 hours and resolve it within 30 days.
+                  Under E-Commerce Rules, 2020, Zomato must have a Grievance Officer. You can email grievance@zomato.com and nodalofficer@zomato.com. By law, the officer must acknowledge your complaint within 48 hours and resolve the dispute within 30 days.
                 </div>
               </details>
 
@@ -1102,7 +1119,7 @@ Phone: [INSERT CONTACT NUMBER]`;
                   <span className="text-slate-400 group-open:rotate-180 transition-transform">▼</span>
                 </summary>
                 <div className="mt-3 text-xs sm:text-sm text-slate-650 leading-relaxed pl-2 border-l-2 border-red-500">
-                  No. State and District Consumer Disputes Redressal Commissions across India have repeatedly rejected the intermediary safe-harbor defense for food delivery aggregators. Because Zomato collects payments, levies platform and packaging fees, controls rider dispatch, and negotiates merchant contracts, it exercises active commercial control, establishing joint and several liability under Section 2(47) of the Consumer Protection Act, 2019.
+                  No. Consumer commissions have repeatedly rejected this defense. Zomato collects payment, charges platform fees, and manages delivery riders. Because it controls the transaction, Zomato shares legal liability with the restaurant under the Consumer Protection Act, 2019.
                 </div>
               </details>
 
@@ -1112,7 +1129,7 @@ Phone: [INSERT CONTACT NUMBER]`;
                   <span className="text-slate-400 group-open:rotate-180 transition-transform">▼</span>
                 </summary>
                 <div className="mt-3 text-xs sm:text-sm text-slate-650 leading-relaxed pl-2 border-l-2 border-red-500">
-                  Zomato se refund na milne par sabse pehle in-app chat aur call logs ka screenshot lein aur grievance@zomato.com par formal email bhein. Agar 48 ghante me refund process na ho, to National Consumer Helpline (1915) par complaint register karein. Iske baad ek advocate dwara drafted statutory legal notice Zomato Limited ke New Delhi registered office aur Gurugram headquarters par Speed Post tatha email dwara bhejein, jisme Section 35 Consumer Protection Act ke antargat 15 dino me refund aur compensation ki maang ki jati hai.
+                  Agar Zomato refund na de, to chat aur call logs ke screenshot lekar grievance@zomato.com par email karein. Agar 48 ghante me samasya hal na ho, to National Consumer Helpline (1915) par complaint karein. Iske baad advocate dwara Zomato ko legal notice bhejein, jisme 15 dino ke andar refund aur harjane ki maang ki ja sakti hai.
                 </div>
               </details>
             </div>

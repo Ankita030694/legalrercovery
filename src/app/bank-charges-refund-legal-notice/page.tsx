@@ -24,6 +24,23 @@ export const metadata: Metadata = {
     type: "article",
     siteName: "LegalRecovery.in",
     locale: "en_IN",
+    images: [
+      {
+        url: `${SITE_URL}/blog_money_recovery.png`,
+        width: 1200,
+        height: 630,
+        alt: "Bank Charges Refund: Minimum Balance & ECS Bounce Fees",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Bank Charges Refund: Minimum Balance & ECS Bounce Fees",
+    description:
+      "Statutory guide on reversing unlawful bank debits, non-maintenance MAB fines, ECS bounce fees, and issuing an advocate legal notice under RBI circulars.",
+    site: "@legalrecoveryin",
+    creator: "@legalrecoveryin",
+    images: [`${SITE_URL}/blog_money_recovery.png`],
   },
   robots: {
     index: true,

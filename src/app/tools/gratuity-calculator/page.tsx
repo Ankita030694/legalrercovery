@@ -24,6 +24,23 @@ export const metadata: Metadata = {
     type: "article",
     siteName: "LegalRecovery.in",
     locale: "en_IN",
+    images: [
+      {
+        url: `${SITE_URL}/blog_money_recovery.png`,
+        width: 1200,
+        height: 630,
+        alt: "Gratuity Calculator India 2026: 15/26 Formula & Fixed-Term Rule",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Gratuity Calculator India 2026: 15/26 Formula & Fixed-Term Rule",
+    description:
+      "Statutory gratuity calculator for Indian private and public sector employees. Calculate exact gratuity, 1-year fixed-term entitlement, and 10% delayed interest.",
+    site: "@legalrecoveryin",
+    creator: "@legalrecoveryin",
+    images: [`${SITE_URL}/blog_money_recovery.png`],
   },
   robots: {
     index: true,

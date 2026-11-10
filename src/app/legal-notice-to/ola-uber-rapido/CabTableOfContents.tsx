@@ -156,9 +156,9 @@ export default function CabTableOfContents({
         className="hidden lg:block w-64 xl:w-72 shrink-0 sticky top-24 self-start bg-white rounded-2xl border border-slate-200 p-5 shadow-sm max-h-[calc(100vh-7rem)] overflow-y-auto"
       >
         <div className="flex items-center justify-between pb-3 mb-3 border-b border-slate-200">
-          <h2 className="text-xs font-black uppercase tracking-wider text-slate-900">
+          <p className="text-xs font-black uppercase tracking-wider text-slate-900">
             Navigation Index
-          </h2>
+          </p>
           <span className="text-[10px] font-bold text-red-600 bg-red-50 px-2 py-0.5 rounded-full">
             Ola / Uber / Rapido
           </span>

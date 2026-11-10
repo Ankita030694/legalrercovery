@@ -30,12 +30,23 @@ export const metadata: Metadata = {
     siteName: "LegalRecovery.in",
     type: "article",
     locale: "en_IN",
+    images: [
+      {
+        url: "https://www.legalrecovery.in/blog_money_recovery.png",
+        width: 1200,
+        height: 630,
+        alt: "Plot Booking Amount Refund: Developer Not Returning Money",
+      },
+    ],
   },
   twitter: {
     card: "summary_large_image",
     title: "Plot Booking Amount Refund: Developer Not Returning Money",
     description:
       "Developer not refunding a plot booking amount? Forfeiture limits, RERA for plotted projects and the notice to send.",
+    site: "@legalrecoveryin",
+    creator: "@legalrecoveryin",
+    images: ["https://www.legalrecovery.in/blog_money_recovery.png"],
   },
   robots: {
     index: true,

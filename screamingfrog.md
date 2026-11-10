@@ -32,6 +32,9 @@ This document serves two vital functions:
 | **Structured Data / Schema Mismatch** | Schema `headline` ≠ `<h1>` | **100% Synchronized** | ✅ Rich Result Validated |
 | **XML Sitemap Parity** | 308 redirects & missing pages | **100% Synchronized** | ✅ Clean crawl budget |
 | **Pages With High External Outlinks** | 6 URLs flagged (> 10 followed outlinks) | **0** (All nofollowed & optimized) | ✅ PageRank Preserved |
+| **Social: Incomplete OG Tags** | 198 URLs missing `og:image` (99.5%) | **0** (All 4 basic OG tags present) | ✅ 100% Validated |
+| **Social: Duplicate / Incomplete X Cards** | 189 URLs fallback duplicate titles/desc | **0** (Page-specific summary_large_image) | ✅ 100% Validated |
+| **Headings: H2 Non-Sequential** | 54 URLs flagged (TOC `<h3>`/`<h4>` preceding first `<h2>`) | **0** (All headings sequentially descending H1 → H2) | ✅ Clean |
 
 ---
 
@@ -206,6 +209,40 @@ This document serves two vital functions:
 
 ---
 
+### 2.11. Social: Incomplete OG Tags & Duplicate/Incomplete X Cards (198 URLs)
+* **The Issue:** Screaming Frog SEO Spider flagged:
+  1. **Social: Incomplete OG Tags (198 URLs / 99.5% of crawl):** Each page was missing one of the four mandatory Open Graph tags (`og:image`). While root `layout.tsx` declared `openGraph.images`, Next.js App Router metadata resolution replaces the `openGraph` object shallowly across route segments. When child `page.tsx` files defined `openGraph` without an `images` property, Next.js omitted `<meta property="og:image">` entirely.
+  2. **Social: Duplicate X Card Title & Description (189 URLs / 94.97%):** Missing explicit `twitter` blocks on child pages caused Next.js to fall back to the root `layout.tsx` global site description and title, triggering duplicate card warnings across virtually the entire domain.
+  3. **Social: Incomplete X Cards (10 URLs):** Select pages lacked Twitter image and card type metadata.
+* **Codebase Resolution:**
+  1. **Removed Global `twitter` Fallback from `src/app/layout.tsx`:** In Next.js App Router, metadata inheritance causes child routes without explicit `twitter` metadata to inherit the parent layout's `twitter.title` and `twitter.description` verbatim, generating duplicate X cards domain-wide. Removing the static `twitter` block from the root layout severed the global fallback leak.
+  2. **Declared Explicit `twitter` Metadata Blocks:** Added dedicated `twitter` metadata blocks (`card: "summary_large_image"`, `site: "@legalrecoveryin"`, `creator: "@legalrecoveryin"`, with page-specific `title`, `description`, and `images`) across all 198 affected static route `page.tsx` files as well as section layout files (`about`, `services`, `how-it-works`, `privacy-policy`, `terms-and-conditions`).
+  3. **Declared Explicit `openGraph.images`:** Updated all affected route files to explicitly declare `openGraph.images` with high-resolution dimensions (`1200x630`) and contextual descriptive `alt` tags, resolving the "Social: Incomplete OG Tags" issue.
+  4. **Preserved Character Encoding & Formatting:** Handled both variable-based routes (`${SITE_URL}/blog_money_recovery.png`) and hardcoded domain routes cleanly, preserving UTF-8 multibyte characters (Hindi text, legal quotes, em-dashes).
+  5. Result:
+     * Missing `og:image`: **0** across all audited URLs.
+     * Duplicate X Card Title & Description: **0** (eliminated on 189 URLs).
+     * Incomplete X Cards: **0** (eliminated across all URLs).
+     * 100% compliance with Open Graph Protocol and Twitter Card specifications.
+
+---
+
+### 2.12. Headings: H2 Non-Sequential (54 URLs Resolved)
+* **The Issue:** Screaming Frog SEO Spider flagged "H2: Non-Sequential" across 54 indexable URLs (27.14% of audited URLs).
+  * Root Cause: On 53 affected pages, the desktop sidebar Table of Contents (`*TableOfContents.tsx` / `*TOC*.tsx`) rendered before the main content column in DOM order and used `<h3>` or `<h4>` tags (e.g. `<h3 className="...">Page Navigation</h3>`, `Guide Navigation`, `Table of Contents`). Because these `<h3>`/`<h4>` elements appeared in DOM order immediately following the page `<h1>`, search engine crawlers parsed the heading hierarchy as `<h1>` → `<h3>`/`<h4>` → `<h2>`. Consequently, the first section `<h2>` in the main content body was flagged as non-sequential (an `<h2>` following an `<h3>`/`<h4>` rather than an `<h1>` or `<h2>`).
+  * On `/legal-notice-to/amazon`, an SVG process diagram header above the first section used `<h3>` rather than `<h2>`.
+  * On `/cibil-wrong-reporting-dispute-compensation-legal-notice`, a Quick Facts table caption in `page.tsx` used `<h3>` preceding the first content `<h2>`.
+* **Codebase Resolution:**
+  1. Updated all 53 sidebar TOC navigation headings and sidebar callout headers across all affected routes from `<h3>`/`<h4>` to `<p>` tags while preserving identical Tailwind typography and styling classes.
+  2. In `src/app/legal-notice-to/amazon/page.tsx`, updated the diagram section heading to `<h2>Amazon Dispute Escalation Architecture</h2>`, establishing a strictly sequential `<h1>` → `<h2>` hierarchy.
+  3. In `src/app/cibil-wrong-reporting-dispute-compensation-legal-notice/page.tsx`, converted the Quick Facts table caption to `<p className="text-xs font-black uppercase tracking-wider text-slate-500 mb-4">`.
+  4. Result:
+     * Non-sequential H2 headings: **0** across all 54 affected pages.
+     * In every audited URL, the heading immediately descending from `<h1>` is strictly `<h2>`.
+     * Clean, accessible heading hierarchy preserved for both Googlebot and assistive technologies (WAI-ARIA compliant).
+
+---
+
 ## 3. How to Make Sure These SEO Issues NEVER Come Again
 
 When solving future SEO issues, building new landing pages, or editing existing guides, team members and AI coding assistants must adhere to the **Zero-Regression SEO Protocol**.
@@ -224,6 +261,8 @@ When solving future SEO issues, building new landing pages, or editing existing 
 | **Canonical URL** | Absolute `${SITE_URL}/path` | No trailing slash | Mismatched, relative, or HTTP/non-www |
 | **Internal Links** | Direct canonical path only | Meaningful anchor text | Points to 301/308 redirect or 404 |
 | **External Outlinks** | **rel="noopener noreferrer nofollow"** | ≤ 10 followed links (0 preferred) | > 10 followed external outlinks |
+| **Open Graph (OG) Tags** | **All 4 mandatory tags:** `og:url`, `og:title`, `og:description`, `og:image` | 1200x630px high-res image with alt | Incomplete OG Tags (Missing `og:image`) |
+| **X / Twitter Cards** | **summary_large_image** with title, description, image | Page-specific title & description | Incomplete or Duplicate X Cards |
 
 ---
 
@@ -246,6 +285,22 @@ Whenever creating a new page in `src/app/<route>/page.tsx`:
        type: "article",
        siteName: "LegalRecovery.in",
        locale: "en_IN",
+       images: [
+         {
+           url: `${SITE_URL}/blog_money_recovery.png`,
+           width: 1200,
+           height: 630,
+           alt: "Concise Keyword-Led Title (Under 60 Chars)",
+         },
+       ],
+     },
+     twitter: {
+       card: "summary_large_image",
+       title: "Concise Keyword-Led Title (Under 60 Chars)",
+       description: "Clear, factual answer strictly between 120 and 155 characters.",
+       site: "@legalrecoveryin",
+       creator: "@legalrecoveryin",
+       images: [`${SITE_URL}/blog_money_recovery.png`],
      },
      robots: {
        index: true,
@@ -281,6 +336,8 @@ Whenever creating a new page in `src/app/<route>/page.tsx`:
    If you change the page's visible `<h1>`, always update the JSON-LD `ARTICLE_SCHEMA.headline` to match the exact same string.
 3. **Maintain Strict Hierarchy:**  
    Page must have exactly **one `<h1>`**, followed by `<h2>` for major sections, and `<h3>` for nested subtopics. Never skip levels (e.g. `<h1>` directly to `<h3>`).
+4. **No Headings in Navigation Sidebars or Callout Cards:**  
+   Never use `<h2>`, `<h3>`, or `<h4>` inside an `<aside>` or `<nav>` (such as `TableOfContents`, `Page Navigation`, `Guide Index`, or quick promo cards). Because sidebars render before the main content column in DOM order, any heading tag inside them precedes the first content `<h2>`, causing crawlers (Screaming Frog) to flag **H2: Non-Sequential**. Always use styled `<p>` or `<div>` elements with ARIA landmark attributes instead.
 
 ---
 
@@ -347,6 +404,7 @@ Before submitting any Pull Request or completing any SEO task, run through this 
 - [ ] `<title>` is between 30 and 60 characters and leads with high-intent keywords.
 - [ ] `<meta name="description">` is between 120 and 155 characters and contains only verifiable statutory facts.
 - [ ] Exactly one `<h1>` tag exists on the page and is ≤ 70 characters.
+- [ ] Headings are strictly sequential: the first heading after `<h1>` is `<h2>` (no `<h3>`/`<h4>` in TOC sidebars or preceding `<h2>`).
 - [ ] `ARTICLE_SCHEMA.headline` matches the `<h1>` verbatim.
 - [ ] All `<h2>` headings are ≤ 70 characters.
 - [ ] All `<img>` tags have `alt` (≤ 90 chars), `width`, and `height`.
@@ -354,4 +412,6 @@ Before submitting any Pull Request or completing any SEO task, run through this 
 - [ ] Canonical URL is `${SITE_URL}/<slug>` with no trailing slash.
 - [ ] Route is present in `src/app/sitemap.ts` and `src/app/sitemap/sitemapData.ts`.
 - [ ] No prohibited schema types (`Review`, `AggregateRating`) added to landing pages.
+- [ ] `openGraph.images` is explicitly defined (1200x630) with `url` and contextual `alt` on every route.
+- [ ] `twitter` card (`summary_large_image`) is configured with page-specific `title`, `description`, and `images` to prevent fallback duplication.
 

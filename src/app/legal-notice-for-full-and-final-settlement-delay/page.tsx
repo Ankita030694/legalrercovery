@@ -21,6 +21,23 @@ export const metadata: Metadata = {
     description: "A ready full and final settlement delay mail to send HR, and how to escalate with a legal notice to your employer if your FnF still isn't paid.",
     url: "https://www.legalrecovery.in/legal-notice-for-full-and-final-settlement-delay",
     type: "article",
+    images: [
+      {
+        url: "https://www.legalrecovery.in/blog_money_recovery.png",
+        width: 1200,
+        height: 630,
+        alt: "FnF Delay Mail Format & Legal Notice to Employer",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "FnF Delay Mail Format & Legal Notice to Employer",
+    description:
+      "A ready full and final settlement delay mail to send HR, and how to escalate with a legal notice to your employer if your FnF still isn't paid.",
+    site: "@legalrecoveryin",
+    creator: "@legalrecoveryin",
+    images: ["https://www.legalrecovery.in/blog_money_recovery.png"],
   },
 };
 

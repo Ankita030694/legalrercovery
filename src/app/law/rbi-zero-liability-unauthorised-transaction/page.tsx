@@ -37,12 +37,23 @@ export const metadata: Metadata = {
     type: "article",
     siteName: "LegalRecovery.in",
     locale: "en_IN",
+    images: [
+      {
+        url: `${SITE_URL}/blog_money_recovery.png`,
+        width: 1200,
+        height: 630,
+        alt: "Unauthorised Bank Transaction? RBI's Zero & Limited Liability Rulebook",
+      },
+    ],
   },
   twitter: {
     card: "summary_large_image",
     title: "RBI Zero Liability Rule: Unauthorised Transaction Refunds",
     description:
       "Report within 3 working days for zero liability. RBI's customer liability rules, shadow-reversal timelines and how to claim your money back.",
+    site: "@legalrecoveryin",
+    creator: "@legalrecoveryin",
+    images: [`${SITE_URL}/blog_money_recovery.png`],
   },
   robots: {
     index: true,

@@ -24,6 +24,23 @@ export const metadata: Metadata = {
     type: "article",
     siteName: "LegalRecovery.in",
     locale: "en_IN",
+    images: [
+      {
+        url: `${SITE_URL}/blog_money_recovery.png`,
+        width: 1200,
+        height: 630,
+        alt: "Builder Delayed Possession? How to Claim Monthly Delay Interest Under RERA",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Builder Delayed Possession? How to Claim Monthly Delay Interest Under RERA",
+    description:
+      "Statutory guide to claiming monthly delay compensation under RERA Section 18(1) proviso while retaining flat ownership. Learn the SBI MCLR + 2% formula, Supreme Court precedents, notice formats, and execution rules.",
+    site: "@legalrecoveryin",
+    creator: "@legalrecoveryin",
+    images: [`${SITE_URL}/blog_money_recovery.png`],
   },
   robots: {
     index: true,

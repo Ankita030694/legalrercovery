@@ -159,9 +159,9 @@ export default function SpicejetTableOfContents({
         <div className="bg-white rounded-2xl border border-slate-200 p-5 shadow-sm space-y-4">
           <div className="flex items-center gap-2 pb-3 border-b border-slate-100">
             <span className="w-2.5 h-2.5 rounded-full bg-[#DC2626]" />
-            <h3 className="text-xs font-black uppercase tracking-wider text-slate-900">
+            <p className="text-xs font-black uppercase tracking-wider text-slate-900">
               SpiceJet Refund Guide
-            </h3>
+            </p>
           </div>
 
           <nav aria-label="Sections on this page">

@@ -24,6 +24,23 @@ export const metadata: Metadata = {
     type: "article",
     siteName: "LegalRecovery.in",
     locale: "en_IN",
+    images: [
+      {
+        url: `${SITE_URL}/blog_money_recovery.png`,
+        width: 1200,
+        height: 630,
+        alt: "Gaming App Wallet Balance Stuck After the Ban? Refunds & Recovery",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Gaming App Wallet Balance Stuck After the Ban? Refunds & Recovery",
+    description:
+      "Statutory escalation path for frozen gaming app wallet balances, post-ban unutilised deposit refunds, arbitrary KYC blocks, and consumer court action.",
+    site: "@legalrecoveryin",
+    creator: "@legalrecoveryin",
+    images: [`${SITE_URL}/blog_money_recovery.png`],
   },
   robots: {
     index: true,

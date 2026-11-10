@@ -150,9 +150,9 @@ export default function GratuityTableOfContents({
       >
         <div className="flex items-center gap-2 pb-3 mb-3 border-b border-slate-100">
           <span className="w-2.5 h-2.5 rounded-full bg-red-600" />
-          <h2 className="text-xs font-extrabold uppercase tracking-wider text-slate-900">
+          <p className="text-xs font-extrabold uppercase tracking-wider text-slate-900">
             Table of Contents
-          </h2>
+          </p>
         </div>
 
         <nav aria-label="Sections in this calculator and guide" className="space-y-1">

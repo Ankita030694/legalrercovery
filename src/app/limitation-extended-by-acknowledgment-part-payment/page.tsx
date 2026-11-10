@@ -24,6 +24,23 @@ export const metadata: Metadata = {
     type: "article",
     siteName: "LegalRecovery.in",
     locale: "en_IN",
+    images: [
+      {
+        url: `${SITE_URL}/blog_money_recovery.png`,
+        width: 1200,
+        height: 630,
+        alt: "Has Your 3-Year Limit Expired? How Acknowledgment & Part-Payment Restart Limitation",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Has Your 3-Year Limit Expired? How Acknowledgment & Part-Payment Restart Limitation",
+    description:
+      "Statutory provisions under Sections 18 and 19 of the Limitation Act, 1963. Learn how WhatsApp acknowledgments, partial UPI payments, and Section 25(3) revive loan recovery.",
+    site: "@legalrecoveryin",
+    creator: "@legalrecoveryin",
+    images: [`${SITE_URL}/blog_money_recovery.png`],
   },
   robots: {
     index: true,

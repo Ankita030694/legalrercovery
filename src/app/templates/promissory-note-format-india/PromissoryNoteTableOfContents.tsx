@@ -148,9 +148,9 @@ export default function PromissoryNoteTableOfContents({
       >
         <div className="bg-white rounded-2xl p-5 border border-slate-200 shadow-sm">
           <div className="flex items-center justify-between pb-3 mb-3 border-b border-slate-100">
-            <h3 className="text-xs uppercase tracking-wider font-extrabold text-slate-700">
+            <p className="text-xs uppercase tracking-wider font-extrabold text-slate-700">
               Contents &amp; Formats
-            </h3>
+            </p>
             <span className="text-[10px] uppercase font-bold text-red-600 bg-red-50 px-2 py-0.5 rounded-full border border-red-200">
               NI Act §4
             </span>

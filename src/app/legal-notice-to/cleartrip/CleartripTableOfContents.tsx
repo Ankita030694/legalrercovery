@@ -155,9 +155,9 @@ export default function CleartripTableOfContents({
         <div className="bg-white border border-slate-200/90 rounded-2xl p-5 shadow-sm space-y-4">
           <div className="flex items-center gap-2 border-b border-slate-100 pb-3">
             <span className="w-2.5 h-2.5 rounded-full bg-[#DC2626]" />
-            <h3 className="text-xs font-black uppercase tracking-wider text-slate-900">
+            <p className="text-xs font-black uppercase tracking-wider text-slate-900">
               Table of Contents
-            </h3>
+            </p>
           </div>
 
           <nav>

@@ -19,6 +19,30 @@ export const metadata: Metadata = {
   alternates: {
     canonical: 'https://www.legalrecovery.in/recovery/health-insurance-rejection-claim',
   },
+  openGraph: {
+    title: "Recover Rejected Health Insurance Claim | LegalRecovery",
+    description: "Health insurance claim rejected or delayed? Challenge repudiations using IRDAI rules, 5-year moratorium shields, Ombudsman, and Consumer Courts.",
+    url: "https://www.legalrecovery.in/recovery/health-insurance-rejection-claim",
+    type: "article",
+    siteName: "LegalRecovery.in",
+    locale: "en_IN",
+    images: [
+      {
+        url: "https://www.legalrecovery.in/blog_money_recovery.png",
+        width: 1200,
+        height: 630,
+        alt: "Recover Rejected Health Insurance Claim | LegalRecovery",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Recover Rejected Health Insurance Claim | LegalRecovery",
+    description: "Health insurance claim rejected or delayed? Challenge repudiations using IRDAI rules, 5-year moratorium shields, Ombudsman, and Consumer Courts.",
+    site: "@legalrecoveryin",
+    creator: "@legalrecoveryin",
+    images: ["https://www.legalrecovery.in/blog_money_recovery.png"],
+  },
 };
 
 export default function HealthInsuranceRejectionClaimPage() {

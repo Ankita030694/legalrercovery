@@ -24,6 +24,23 @@ export const metadata: Metadata = {
     type: "article",
     siteName: "LegalRecovery.in",
     locale: "en_IN",
+    images: [
+      {
+        url: `${SITE_URL}/blog_money_recovery.png`,
+        width: 1200,
+        height: 630,
+        alt: "MSME Delayed Payment Demand Notice Format (With Section 16 Interest Schedule)",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "MSME Delayed Payment Demand Notice Format (With Section 16 Interest Schedule)",
+    description:
+      "Ready-to-use MSME demand notice formats (Polite, Firm Statutory & Final Pre-ODR) plus Section 18 affidavit citing MSMED Sections 15–16 and Income-tax Section 43B(h).",
+    site: "@legalrecoveryin",
+    creator: "@legalrecoveryin",
+    images: [`${SITE_URL}/blog_money_recovery.png`],
   },
   robots: {
     index: true,

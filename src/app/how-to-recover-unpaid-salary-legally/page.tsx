@@ -24,6 +24,24 @@ export const metadata: Metadata = {
     description: "Recover unpaid salary, incentives, and F&F settlement via Advocate Legal Notice, Samadhan Portal, and Labour Court.",
     url: "https://www.legalrecovery.in/how-to-recover-unpaid-salary-legally",
     type: "article",
+    siteName: "LegalRecovery.in",
+    locale: "en_IN",
+    images: [
+      {
+        url: "https://www.legalrecovery.in/blog_money_recovery.png",
+        width: 1200,
+        height: 630,
+        alt: "How to Recover Unpaid Salary from Employer Legally",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "How to Recover Unpaid Salary from Employer Legally",
+    description: "Recover unpaid salary, incentives, and F&F settlement via Advocate Legal Notice, Samadhan Portal, and Labour Court.",
+    site: "@legalrecoveryin",
+    creator: "@legalrecoveryin",
+    images: ["https://www.legalrecovery.in/blog_money_recovery.png"],
   },
 };
 

@@ -22,6 +22,23 @@ export const metadata: Metadata = {
     description: "Car not delivered on time, defects found at PDI, or booking refund refused? When you can refuse delivery, claim compensation and notice the dealer.",
     url: "https://www.legalrecovery.in/legal-notice-to-car-dealer-delayed-delivery-defective-vehicle",
     type: "article",
+    images: [
+      {
+        url: "https://www.legalrecovery.in/blog_money_recovery.png",
+        width: 1200,
+        height: 630,
+        alt: "Vehicle Not Delivered or Defective? Dealer Refund Rights",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Vehicle Not Delivered or Defective? Dealer Refund Rights",
+    description:
+      "Car not delivered on time, defects found at PDI, or booking refund refused? When you can refuse delivery, claim compensation and notice the dealer.",
+    site: "@legalrecoveryin",
+    creator: "@legalrecoveryin",
+    images: ["https://www.legalrecovery.in/blog_money_recovery.png"],
   },
 };
 

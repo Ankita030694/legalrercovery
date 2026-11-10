@@ -24,6 +24,23 @@ export const metadata: Metadata = {
     type: "article",
     siteName: "LegalRecovery.in",
     locale: "en_IN",
+    images: [
+      {
+        url: `${SITE_URL}/blog_money_recovery.png`,
+        width: 1200,
+        height: 630,
+        alt: "Token Money Refund Rules in India: Recover Bayana When a Property Deal Fails",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Token Money Refund Rules in India: Recover Bayana When a Property Deal Fails",
+    description:
+      "Statutory rules on token money and bayana forfeiture under Sections 73–74 Contract Act and Section 55(6)(b) Transfer of Property Act, Supreme Court precedents, and legal notice recovery.",
+    site: "@legalrecoveryin",
+    creator: "@legalrecoveryin",
+    images: [`${SITE_URL}/blog_money_recovery.png`],
   },
   robots: {
     index: true,

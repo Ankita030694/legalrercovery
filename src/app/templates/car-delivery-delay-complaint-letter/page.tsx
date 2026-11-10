@@ -24,6 +24,23 @@ export const metadata: Metadata = {
     type: "article",
     siteName: "LegalRecovery.in",
     locale: "en_IN",
+    images: [
+      {
+        url: `${SITE_URL}/blog_money_recovery.png`,
+        width: 1200,
+        height: 630,
+        alt: "Car Delivery Delay Complaint Letter (Free Format & Legal Template)",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Car Delivery Delay Complaint Letter (Free Format & Legal Template)",
+    description:
+      "Statutory complaint letter format to automobile dealerships for delayed car, bike or EV delivery. Demand firm delivery, delay compensation, or 100% refund with zero cancellation deduction.",
+    site: "@legalrecoveryin",
+    creator: "@legalrecoveryin",
+    images: [`${SITE_URL}/blog_money_recovery.png`],
   },
   robots: {
     index: true,

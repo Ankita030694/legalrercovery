@@ -24,6 +24,23 @@ export const metadata: Metadata = {
     description: "What notice pay recovery means, when an employer can deduct it from your FnF, basic vs gross pay, and how to challenge an excessive deduction.",
     url: "https://www.legalrecovery.in/recovery/notice-period-salary",
     type: "article",
+    images: [
+      {
+        url: "https://www.legalrecovery.in/blog_money_recovery.png",
+        width: 1200,
+        height: 630,
+        alt: "Notice Pay Recovery: Meaning & What's Legal in India",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Notice Pay Recovery: Meaning & What's Legal in India",
+    description:
+      "What notice pay recovery means, when an employer can deduct it from your FnF, basic vs gross pay, and how to challenge an excessive deduction.",
+    site: "@legalrecoveryin",
+    creator: "@legalrecoveryin",
+    images: ["https://www.legalrecovery.in/blog_money_recovery.png"],
   },
 };
 

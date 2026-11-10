@@ -20,6 +20,23 @@ export const metadata: Metadata = {
       "Enforce your consumer rights against Meesho Limited and registered merchants for stuck refunds and wrong deliveries. Grievance officer contacts and legal notice path.",
     url: `${SITE_URL}/legal-notice-to/meesho`,
     type: "article",
+    images: [
+      {
+        url: `${SITE_URL}/blog_money_recovery.png`,
+        width: 1200,
+        height: 630,
+        alt: "Meesho Refund Not Received? Legal Remedies & Escalation Steps",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Meesho Refund Not Received? Legal Remedies & Escalation Steps",
+    description:
+      "Enforce your consumer rights against Meesho Limited and registered merchants for stuck refunds and wrong deliveries. Grievance officer contacts and legal notice path.",
+    site: "@legalrecoveryin",
+    creator: "@legalrecoveryin",
+    images: [`${SITE_URL}/blog_money_recovery.png`],
   },
   robots: {
     index: true,

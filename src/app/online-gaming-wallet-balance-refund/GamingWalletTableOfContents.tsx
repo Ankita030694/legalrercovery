@@ -164,9 +164,9 @@ export default function GamingWalletTableOfContents({
         <div className="bg-white rounded-2xl border border-slate-200 p-5 shadow-sm">
           <div className="flex items-center gap-2 pb-3 mb-3 border-b border-slate-100">
             <span className="w-2.5 h-2.5 rounded-full bg-[#DC2626]" />
-            <h3 className="text-xs font-black uppercase tracking-wider text-slate-900">
+            <p className="text-xs font-black uppercase tracking-wider text-slate-900">
               Contents Navigation
-            </h3>
+            </p>
           </div>
           <nav className="space-y-1 max-h-[calc(100vh-180px)] overflow-y-auto pr-1 text-xs">
             {sections.map((section, idx) => {
@@ -199,9 +199,9 @@ export default function GamingWalletTableOfContents({
               Advocate Drafting
             </span>
           </div>
-          <h4 className="text-xs font-bold text-white mb-1.5 leading-snug">
+          <p className="text-xs font-bold text-white mb-1.5 leading-snug">
             Wallet Balance Stuck on a Gaming App?
-          </h4>
+          </p>
           <p className="text-[11px] text-slate-300 mb-3 leading-relaxed">
             Issue a formal 15-day statutory demand notice directly to the platform&apos;s registered entity under CPA 2019.
           </p>

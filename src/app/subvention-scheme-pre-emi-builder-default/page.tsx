@@ -24,6 +24,23 @@ export const metadata: Metadata = {
     type: "article",
     siteName: "LegalRecovery.in",
     locale: "en_IN",
+    images: [
+      {
+        url: `${SITE_URL}/blog_money_recovery.png`,
+        width: 1200,
+        height: 630,
+        alt: "Subvention Scheme Gone Wrong: Builder Defaulted on Your Pre-EMIs",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Subvention Scheme Gone Wrong: Builder Defaulted on Your Pre-EMIs",
+    description:
+      "Statutory remedies when a builder defaults on subvented Pre-EMIs: Tripartite Agreement liability, RBI upfront-disbursal circular violations, Supreme Court CIBIL shields, and RERA Section 18 recovery.",
+    site: "@legalrecoveryin",
+    creator: "@legalrecoveryin",
+    images: [`${SITE_URL}/blog_money_recovery.png`],
   },
   robots: {
     index: true,

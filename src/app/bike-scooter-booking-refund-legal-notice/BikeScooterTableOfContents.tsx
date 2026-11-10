@@ -142,9 +142,9 @@ export default function BikeScooterTableOfContents({
         <div className="sticky top-28 bg-white border border-slate-200 rounded-2xl p-5 shadow-sm">
           <div className="flex items-center gap-2 pb-3 mb-3 border-b border-slate-100">
             <span className="w-2 h-2 rounded-full bg-red-600" />
-            <h3 className="text-xs font-black uppercase tracking-wider text-slate-900">
+            <p className="text-xs font-black uppercase tracking-wider text-slate-900">
               Contents Guide
-            </h3>
+            </p>
           </div>
           <nav className="space-y-1 text-xs font-medium">
             {sections.map((section) => {

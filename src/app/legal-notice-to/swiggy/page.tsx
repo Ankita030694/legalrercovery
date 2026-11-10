@@ -19,6 +19,23 @@ export const metadata: Metadata = {
       "Stuck Swiggy refund, ghost delivery, or wrong Instamart order? Learn your consumer rights under CPA 2019, grievance escalation timelines, and legal notice procedures.",
     url: `${SITE_URL}/legal-notice-to/swiggy`,
     type: "article",
+    images: [
+      {
+        url: `${SITE_URL}/blog_money_recovery.png`,
+        width: 1200,
+        height: 630,
+        alt: "Swiggy & Instamart Refund Denied? Legal Recovery Escalation Guide",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Swiggy & Instamart Refund Denied? Legal Recovery Escalation Guide",
+    description:
+      "Stuck Swiggy refund, ghost delivery, or wrong Instamart order? Learn your consumer rights under CPA 2019, grievance escalation timelines, and legal notice procedures.",
+    site: "@legalrecoveryin",
+    creator: "@legalrecoveryin",
+    images: [`${SITE_URL}/blog_money_recovery.png`],
   },
   robots: {
     index: true,
@@ -90,37 +107,37 @@ const faqData = [
     question:
       "What should I do if Swiggy shows refund credited but no money appears in my bank account or UPI?",
     answer:
-      "When Swiggy marks a refund as completed while your bank statement shows zero credit, the transaction has stalled between the payment gateway aggregator and your bank. Request the verified 12-digit Unique Transaction Reference (UTR) from Swiggy finance. Under the Reserve Bank of India Turn Around Time framework, reversals delayed beyond T+5 business days attract statutory compensation of ₹100 per day.",
+      "If Swiggy says refund is credited but no money appears in your account, the transfer is stuck between the gateway and your bank. Ask Swiggy for the 12-digit UTR reference number. Under RBI rules, refund delays beyond T+5 working days entitle you to compensation of ₹100 per day.",
   },
   {
     question:
       "Can Swiggy legally charge a 100% cancellation fee if I cancel an order within minutes of placing it?",
     answer:
-      "No. Complete forfeiture of order funds when food preparation has not commenced is an unfair trade practice under Section 2(47) of the Consumer Protection Act, 2019. In Vaibhav Raj v. Swiggy (Bundl Technologies Pvt. Ltd.), the Chandigarh State Consumer Commission ruled that arbitrary cancellation penalties violate consumer equity, directing a 100% refund of wrongfully deducted sums.",
+      "No. Forfeiting full payment when the restaurant has not started preparing food is an unfair trade practice under Section 2(47) of the Consumer Protection Act, 2019. Consumer commissions have ruled that arbitrary cancellation penalties are illegal. Swiggy must refund wrongfully deducted charges.",
   },
   {
     question:
       "Who is legally responsible if Swiggy Instamart delivers expired groceries, leaking bottles, or missing items?",
     answer:
-      "Swiggy Limited and its dark store fulfillment entities share joint fallback liability under Rule 5(3)(b) of the Consumer Protection (E-Commerce) Rules, 2020. In Raja Vikrant Sharma v. Swiggy Ltd. & Instamart, the District Consumer Commission rejected Swiggy's intermediary defense for grocery weight shortages and held the aggregator directly accountable for deficiency in service.",
+      "Swiggy and its dark store partners share legal liability under E-Commerce Rules, 2020. In Raja Vikrant Sharma v. Swiggy, the District Commission rejected Swiggy's defense for grocery shortages. The court held Swiggy directly accountable for service deficiency and ordered a refund.",
   },
   {
     question:
       "What can I do if a Swiggy delivery executive falsely marks my food or grocery order as 'delivered' (ghost delivery)?",
     answer:
-      "A false 'delivered' status where no physical handover occurred represents clear deficiency in service under Section 2(11) of the Consumer Protection Act, 2019. Retain tracking screenshots and incoming phone logs. In a notable Bengaluru Urban District Commission ruling, the court ordered Swiggy to refund the order amount alongside ₹3,000 compensation and ₹2,000 litigation expenses for an undelivered order falsely marked delivered.",
+      "A false delivery status without handover is service deficiency under Section 2(11) of the Consumer Protection Act, 2019. Save tracking screenshots and call logs proving the rider never arrived. Consumer courts regularly order Swiggy to refund the order amount plus compensation for harassment.",
   },
   {
     question:
       "How long does Swiggy's Grievance Officer legally have to resolve an escalated refund dispute?",
     answer:
-      "Under Rule 4(5) of the Consumer Protection (E-Commerce) Rules, 2020, Swiggy's Grievance Officer must acknowledge receipt of any consumer complaint within 48 hours and provide redressal within one month (30 days). If the officer fails to act, consumers possess direct statutory grounds to serve a 15-day advocate legal notice and file a consumer complaint on e-Jagriti.",
+      "Under E-Commerce Rules, 2020, Swiggy's Grievance Officer must acknowledge your complaint within 48 hours. They must resolve the dispute within 30 days. If they fail to do so, you can send an advocate legal notice and file a complaint on e-Jagriti.",
   },
   {
     question:
       "Can I send an advocate legal notice to Swiggy and Instamart if customer support chatbot closes my ticket?",
     answer:
-      "Yes. Automated chatbot ticket closures do not extinguish your statutory rights. An advocate legal notice drafted under Section 35 of the Consumer Protection Act, 2019 serves formal demand upon Swiggy Limited's Bengaluru corporate headquarters. Most aggregators settle valid claims during the mandatory 15-day cure window to avoid formal litigation before the District Consumer Commission.",
+      "Yes. Automated chatbot ticket closures do not cancel your legal rights. An advocate can send a formal legal notice to Swiggy's corporate office in Bengaluru under Section 35 of the Consumer Protection Act, 2019. Aggregators often settle valid claims within the 15-day window to avoid court.",
   },
 ];
 
@@ -195,7 +212,7 @@ export default function SwiggyRefundNoticePage() {
                   Statutory Summary &amp; Immediate Legal Recourse
                 </p>
                 <p className="text-slate-800 text-sm sm:text-base leading-relaxed font-medium">
-                  Under Rule 5(3)(b) of the Consumer Protection (E-Commerce) Rules, 2020 and Section 2(47) of the Consumer Protection Act, 2019, Swiggy Limited shares direct fallback liability for refund defaults. When customer chat support stonewalls your claim, submit a written complaint to Swiggy’s Grievance Officer, followed by an advocate legal notice allowing 15 days to refund before filing on e-Jagriti.
+                  Under E-Commerce Rules, 2020 and the Consumer Protection Act, 2019, Swiggy shares direct legal liability for refund defaults. When chatbot support denies your claim, email Swiggy's Grievance Officer. If unresolved, send an advocate legal notice giving 15 days to refund before filing on e-Jagriti.
                 </p>
               </section>
 

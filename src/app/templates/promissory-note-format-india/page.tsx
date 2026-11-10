@@ -24,6 +24,23 @@ export const metadata: Metadata = {
     type: "article",
     siteName: "LegalRecovery.in",
     locale: "en_IN",
+    images: [
+      {
+        url: `${SITE_URL}/blog_money_recovery.png`,
+        width: 1200,
+        height: 630,
+        alt: "Promissory Note Format for Personal Loans, With Stamp Duty Notes",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Promissory Note Format for Personal Loans, With Stamp Duty Notes",
+    description:
+      "Statutory promissory note format under Section 4 NI Act, revenue stamp duty rules, Article 35 limitation, and fast-track Order 37 CPC summary suit guide.",
+    site: "@legalrecoveryin",
+    creator: "@legalrecoveryin",
+    images: [`${SITE_URL}/blog_money_recovery.png`],
   },
   robots: {
     index: true,

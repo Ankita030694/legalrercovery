@@ -27,6 +27,23 @@ export const metadata: Metadata = {
     description: "The limit to recover money is 3 years, and a written acknowledgment or part payment can restart it. Plus how long a recovery case takes in court.",
     url: "https://www.legalrecovery.in/time-limit-to-file-money-recovery-case-india",
     type: "article",
+    images: [
+      {
+        url: "https://www.legalrecovery.in/blog_money_recovery.png",
+        width: 1200,
+        height: 630,
+        alt: "Money Recovery Case Time Limit: 3 Years + Court Timeline",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Money Recovery Case Time Limit: 3 Years + Court Timeline",
+    description:
+      "The limit to recover money is 3 years, and a written acknowledgment or part payment can restart it. Plus how long a recovery case takes in court.",
+    site: "@legalrecoveryin",
+    creator: "@legalrecoveryin",
+    images: ["https://www.legalrecovery.in/blog_money_recovery.png"],
   },
 };
 

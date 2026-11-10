@@ -19,6 +19,30 @@ export const metadata: Metadata = {
   alternates: {
     canonical: 'https://www.legalrecovery.in/recovery/cyber-fraud-money',
   },
+  openGraph: {
+    title: "Recover Cyber Fraud Money in India | LegalRecovery",
+    description: "Victim of online trading scams or banking cyber crime? Learn how to freeze mule accounts, use the 1930 helpline, and obtain court fund release orders.",
+    url: "https://www.legalrecovery.in/recovery/cyber-fraud-money",
+    type: "article",
+    siteName: "LegalRecovery.in",
+    locale: "en_IN",
+    images: [
+      {
+        url: "https://www.legalrecovery.in/blog_money_recovery.png",
+        width: 1200,
+        height: 630,
+        alt: "Recover Cyber Fraud Money in India | LegalRecovery",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Recover Cyber Fraud Money in India | LegalRecovery",
+    description: "Victim of online trading scams or banking cyber crime? Learn how to freeze mule accounts, use the 1930 helpline, and obtain court fund release orders.",
+    site: "@legalrecoveryin",
+    creator: "@legalrecoveryin",
+    images: ["https://www.legalrecovery.in/blog_money_recovery.png"],
+  },
 };
 
 export default function CyberPage() {

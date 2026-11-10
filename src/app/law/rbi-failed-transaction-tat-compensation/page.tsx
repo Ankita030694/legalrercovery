@@ -24,6 +24,23 @@ export const metadata: Metadata = {
     type: "article",
     siteName: "LegalRecovery.in",
     locale: "en_IN",
+    images: [
+      {
+        url: `${SITE_URL}/blog_money_recovery.png`,
+        width: 1200,
+        height: 630,
+        alt: "Failed Transaction Refund: RBI T+1 / T+5 Deadlines & ₹100/Day Bank Penalty",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Failed Transaction Refund: RBI T+1 / T+5 Deadlines & ₹100/Day Bank Penalty",
+    description:
+      "Statutory breakdown of RBI Circular DPSS.CO.PD No.629/02.01.014/2019-20: mandatory auto-reversal timelines for failed UPI, IMPS, ATM, PoS, E-Commerce & NACH transactions and how to claim ₹100/day delay compensation.",
+    site: "@legalrecoveryin",
+    creator: "@legalrecoveryin",
+    images: [`${SITE_URL}/blog_money_recovery.png`],
   },
   robots: {
     index: true,

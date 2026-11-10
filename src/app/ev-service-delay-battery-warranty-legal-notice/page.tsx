@@ -25,6 +25,23 @@ export const metadata: Metadata = {
     type: "article",
     siteName: "LegalRecovery.in",
     locale: "en_IN",
+    images: [
+      {
+        url: `${SITE_URL}/blog_money_recovery.png`,
+        width: 1200,
+        height: 630,
+        alt: "EV Service Delay or Battery Warranty Refused? Legal Steps",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "EV Service Delay or Battery Warranty Refused? Legal Steps",
+    description:
+      "Statutory guide on handling EV scooter service delays, spare part backlogs, and battery warranty repudiations under the Consumer Protection Act, 2019.",
+    site: "@legalrecoveryin",
+    creator: "@legalrecoveryin",
+    images: [`${SITE_URL}/blog_money_recovery.png`],
   },
   robots: {
     index: true,
@@ -58,12 +75,12 @@ const CASE_CITATIONS = [
     citation: "Consumer Complaint No. CC/412/2023, DCDRC Bengaluru (Urban)",
     date: "Order Dated 18 November 2023",
     facts:
-      "The complainant purchased an electric scooter for ₹1,38,000 for his daily office commute. Within 10 months of purchase, the vehicle developed severe motor vibrations and battery charging failure. The complainant deposited the vehicle at the authorized workshop. The service centre retained the vehicle for over 75 days, repeatedly citing non-availability of replacement battery packs and controller modules from the factory. No courtesy vehicle or travel reimbursement was provided.",
+      "A consumer bought an electric scooter for ₹1,38,000 for daily commuting. Within 10 months, the vehicle developed motor vibrations and charging failure. The service centre kept the vehicle for 75 days, citing a lack of spare battery packs. No replacement vehicle or travel allowance was given.",
     holding:
-      "The District Consumer Commission held that keeping a consumer's primary commuter vehicle grounded for over two months due to a lack of spare parts constitutes gross deficiency in service under Section 2(11) of the Consumer Protection Act, 2019. The Commission directed the manufacturer and authorized dealer jointly and severally to refund the entire vehicle cost of ₹1,38,000 along with 9% interest from the date of deposit, plus pay ₹25,000 compensation for mental agony and ₹10,000 litigation expenses.",
+      "The District Consumer Commission held that keeping a commuter vehicle grounded for over two months is gross service deficiency under Section 2(11) of the CPA 2019. The court ordered the manufacturer and dealer to refund the full vehicle price of ₹1,38,000 with 9% interest, plus ₹35,000 in damages and costs.",
     amount: "₹1,38,000 Vehicle Refund @ 9% Interest + ₹25,000 Agony Award + ₹10,000 Legal Costs",
     takeaway:
-      "Manufacturers and authorized workshops cannot leave consumers stranded indefinitely citing supply-chain backlogs. If repairs exceed a reasonable Turn Around Time (typically 15 to 21 days) without providing substitute mobility, consumer courts treat the vehicle as commercially unusable and award full refunds.",
+      "Workshops cannot leave vehicles grounded indefinitely. If repairs take longer than 15 to 21 days without a loaner vehicle, consumer courts treat the vehicle as unusable and award full refunds.",
   },
   {
     title: "Arbitrary Rejection of Battery Warranty Claim Without Technical Lab Report Quashed",
@@ -71,12 +88,12 @@ const CASE_CITATIONS = [
     citation: "First Appeal No. A/184/2022, State Consumer Disputes Redressal Commission, Kerala",
     date: "Order Dated 24 August 2023",
     facts:
-      "The consumer purchased a high-speed electric two-wheeler with an express 3-year / 50,000 km battery warranty. Within 14 months (16,200 km), the usable range plummeted from 115 km to under 25 km per charge. The dealer refused warranty replacement, alleging verbally and via email that the battery had suffered 'water ingress and customer mishandling'. However, the dealer produced no diagnostic test report, seal breach photos, or technical evidence under AIS-156 standards.",
+      "A consumer bought an electric scooter with a 3-year battery warranty. Within 14 months, the riding range dropped from 115 km to under 25 km per charge. The dealer refused warranty replacement, alleging 'water ingress' without providing any lab test report or diagnostic data.",
     holding:
-      "The State Commission dismissed the manufacturer's appeal, ruling that a manufacturer cannot repudiate an express battery warranty by merely alleging user negligence or moisture exposure. In the absence of an authenticated diagnostic scan and technical laboratory analysis showing external casing penetration, the failure of the traction battery within the warranty period is presumed to be a manufacturing defect under Section 2(10). The Commission ordered immediate free replacement with a brand-new factory-sealed battery pack carrying a renewed 3-year warranty, alongside ₹20,000 damages.",
+      "The State Commission ruled that manufacturers cannot deny a battery warranty by merely alleging user negligence. Without an authenticated diagnostic test report showing casing damage, battery failure is presumed to be a manufacturing defect. The court ordered a free new battery replacement and ₹20,000 in damages.",
     amount: "Free New Battery Pack Replacement (₹55,000 Value) + ₹20,000 Harassment Damages",
     takeaway:
-      "Dealers frequently raise 'water ingress' or 'overcharging' as automatic defences to deny expensive battery replacements. Unless the OEM proves external mechanical tampering with certified test reports, consumer forums reject such excuses and order free battery replacement or vehicle buyback.",
+      "Dealers often cite 'water ingress' to avoid costly battery replacements. Unless the manufacturer proves external physical damage with certified test reports, consumer courts order free replacements.",
   },
   {
     title: "Sudden Mid-Ride Motor Cutoff Held Strictly Actionable Under Chapter VI Product Liability",
@@ -84,12 +101,12 @@ const CASE_CITATIONS = [
     citation: "Consumer Complaint No. CC/89/2024, DCDRC Pune",
     date: "Order Dated 14 March 2024",
     facts:
-      "The complainant was riding his electric scooter on a city flyover when the vehicle abruptly lost all electrical power, causing the rear wheel to lock up and narrowly escaping a rear-end collision with a heavy commercial truck. The diagnostic inspection revealed a recurring Battery Management System (BMS) thermal communication crash. Despite two firmware updates, the issue recurred twice more.",
+      "A rider was on a flyover when his electric scooter abruptly cut power, nearly causing a collision with a truck behind him. Diagnostic scans showed a recurring Battery Management System (BMS) communication failure. Despite firmware updates, the sudden cutoff recurred twice more.",
     holding:
-      "The District Commission categorized sudden power cutoff as an inherently hazardous manufacturing defect attracting Section 84 of the CPA 2019 (Product Manufacturer Liability). The forum ruled that firmware patches cannot substitute for fundamental electronic design integrity. The manufacturer was ordered to take back the defective scooter and provide a brand-new replacement unit of the latest model year, along with ₹40,000 compensation for placing the consumer's life in jeopardy.",
+      "The District Commission categorized sudden power cutoff as a dangerous defect under Section 84 of the Consumer Protection Act, 2019. The court held that software patches cannot replace basic engineering safety. The manufacturer was ordered to replace the scooter with a brand-new vehicle and pay ₹40,000 in damages.",
     amount: "Brand-New Vehicle Replacement + ₹40,000 Punitive Compensation",
     takeaway:
-      "Safety-critical defects like sudden throttle cutoffs, unprompted reversals, or thermal shutdowns are governed by strict product liability. You are not obligated to accept infinite repair attempts when a defect puts rider safety at risk.",
+      "Dangerous defects like sudden power cutoffs fall under strict product liability. You do not have to accept endless repairs when a vehicle defect threatens your safety.",
   },
 ];
 
@@ -97,37 +114,37 @@ const FAQS = [
   {
     question: "How long can an EV service center legally keep my electric scooter for repairs?",
     answer:
-      "Under consumer court precedents and CCPA guidelines, authorized service centers are expected to resolve routine warranty defects within 7 to 15 working days. If an EV is detained beyond 15–21 days due to spare parts or battery backlogs, the manufacturer must provide a courtesy loaner vehicle or compensate the owner for daily conveyance (typically ₹300 to ₹500 per day). Prolonged retention exceeding 30–45 days qualifies as gross deficiency in service under Section 2(11) of the CPA 2019.",
+      "Service centers are expected to resolve warranty repairs within 7 to 15 working days. If an EV is kept beyond 21 days due to spare part delays, the manufacturer must provide a loaner vehicle or daily travel allowance. Keeping a vehicle past 30 days is service deficiency under the CPA 2019.",
   },
   {
     question: "What should I do if the EV company rejects my battery warranty claiming 'water ingress'?",
     answer:
-      "Do not accept oral or informal WhatsApp rejections. Demand a certified technical inspection report showing the specific IP67 seal breach point and cell corrosion logs. Traction batteries certified under AIS-156 Amendment III are legally required to withstand water immersion and heavy rain. If the dealer refuses in writing, issue a statutory 15-day legal notice demanding free battery replacement under Section 2(10) and Section 84 of the Consumer Protection Act, 2019.",
+      "Do not accept informal rejections. Demand a certified technical report showing the exact seal damage. Modern EV batteries must meet waterproof standards under AIS-156 rules. If the dealer refuses to replace the battery, send a 15-day advocate legal notice under Section 84 of the Consumer Protection Act, 2019.",
   },
   {
     question: "Can I demand a 100% refund or vehicle replacement if the service delay persists?",
     answer:
-      "Yes. If your electric scooter has spent significant time in the workshop (e.g., 30+ cumulative days within the first year of purchase) or if the same defect recurs despite multiple visits, Consumer Commissions treat the vehicle as suffering from an incurable manufacturing defect. Under Section 39(1)(a) & (b) of the Consumer Protection Act, 2019, you can legally demand a full refund of the invoice amount with interest or an unconditional replacement with a new vehicle.",
+      "Yes. If your electric scooter spends over 30 days in the workshop during its first year, consumer courts treat it as having an incurable defect. Under Section 39 of the Consumer Protection Act, 2019, you can legally demand a 100% refund with interest or a brand-new replacement vehicle.",
   },
   {
     question: "Can the workshop charge me diagnostic, labor, or freight fees for warranty battery replacement?",
     answer:
-      "No. Under a standard manufacturer warranty, all costs associated with diagnosing, unmounting, transporting the battery pack to the factory, and reinstalling the replacement unit are the exclusive responsibility of the OEM and dealer. Demanding 'battery shipping charges' or 'labor fees' during the active warranty period constitutes an unfair trade practice under Section 2(47) of the CPA 2019.",
+      "No. Under a manufacturer warranty, all costs for inspection, battery removal, shipping, and replacement must be covered by the company and dealer. Demanding diagnostic fees or courier charges during the warranty period is an illegal unfair trade practice.",
   },
   {
     question: "What evidence is essential to prove an EV service delay in consumer court?",
     answer:
-      "The most vital evidence includes: (1) The original Job Card showing date of intake and recorded complaints, (2) WhatsApp chats, emails, and SMS ticket logs with service advisors, (3) Telematics data or app screenshots showing vehicle idle location and battery SOC, (4) Daily conveyance expense receipts (cabs, fuel, metro), and (5) A formal advocate-drafted statutory legal notice served via Registered Speed Post.",
+      "Essential evidence includes: (1) The original Job Card showing intake date and reported faults; (2) Service messages and emails; (3) App screenshots showing battery percentage and location; (4) Daily travel receipts (cabs, fuel); and (5) A formal advocate legal notice.",
   },
   {
     question: "Does the Central Consumer Protection Authority (CCPA) penalize EV manufacturers for aftersales delays?",
     answer:
-      "Yes. The CCPA has issued extensive show-cause notices and regulatory inquiries against leading electric two-wheeler manufacturers (such as Ola Electric) following thousands of consumer complaints concerning service delays, lack of spare components, unhonored warranties, and misleading performance claims. CCPA directives emphasize that failing to maintain an adequate spare parts inventory violates consumer rights.",
+      "Yes. The CCPA has issued show-cause notices to leading EV makers after receiving thousands of complaints about service delays and battery issues. CCPA directives confirm that failing to stock adequate spare parts violates consumer rights.",
   },
   {
     question: "What is the difference between a consumer complaint and a statutory legal notice?",
     answer:
-      "A statutory legal notice is the mandatory pre-litigation formal demand drafted by an advocate that gives the EV manufacturer and dealer 15 calendar days to resolve the grievance (replace the battery, deliver the vehicle, or pay conveyance). Over 65% of EV service disputes are settled during this notice window because OEMs prefer resolving valid claims rather than facing public consumer court orders, interest penalties, and litigation costs.",
+      "A statutory legal notice is a formal demand prepared by an advocate giving the manufacturer 15 days to resolve your issue. Most EV service disputes are settled during this period because manufacturers prefer resolving claims rather than facing consumer court penalties.",
   },
 ];
 
@@ -257,7 +274,7 @@ export default function EvServiceDelayBatteryWarrantyPage() {
                 Statutory Summary (EV Service Backlog &amp; Warranty Rights)
               </p>
               <p>
-                Under Section 2(11) and Section 84 of the Consumer Protection Act, 2019, EV manufacturers and authorized dealers are legally liable for service delays exceeding 15 days, spare part shortages, and wrongful battery warranty repudiation. When an electric vehicle is grounded without substitute mobility or a warranty claim is falsely denied, serving a statutory 15-day legal notice compels vehicle handover, free battery pack replacement, daily conveyance compensation, or a 100% refund.
+                Under the Consumer Protection Act, 2019, EV makers and dealers are liable for service delays over 15 days, spare part shortages, and wrongful battery warranty denials. When an EV is grounded without a loaner vehicle, an advocate legal notice compels fast repairs, free battery replacement, travel allowances, or a full refund.
               </p>
             </div>
 

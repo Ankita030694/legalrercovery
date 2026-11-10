@@ -24,6 +24,23 @@ export const metadata: Metadata = {
     type: "article",
     siteName: "LegalRecovery.in",
     locale: "en_IN",
+    images: [
+      {
+        url: `${SITE_URL}/blog_money_recovery.png`,
+        width: 1200,
+        height: 630,
+        alt: "Gave Money to a Partner Who Won't Return It? Legal Recovery After a Breakup",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Gave Money to a Partner Who Won't Return It? Legal Recovery After a Breakup",
+    description:
+      "Statutory recovery guide for money lent to an ex-partner in India: loan vs gift defence, WhatsApp & UPI admissibility under BSA 2023, Order 37 summary suit.",
+    site: "@legalrecoveryin",
+    creator: "@legalrecoveryin",
+    images: [`${SITE_URL}/blog_money_recovery.png`],
   },
   robots: {
     index: true,

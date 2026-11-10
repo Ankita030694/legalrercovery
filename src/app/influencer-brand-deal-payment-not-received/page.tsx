@@ -23,6 +23,23 @@ export const metadata: Metadata = {
     type: "article",
     siteName: "LegalRecovery.in",
     locale: "en_IN",
+    images: [
+      {
+        url: `${SITE_URL}/blog_money_recovery.png`,
+        width: 1200,
+        height: 630,
+        alt: "Brand or Agency Not Paying for Your Collaboration? Creator Legal Recovery Guide",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Brand or Agency Not Paying for Your Collaboration? Creator Legal Recovery Guide",
+    description:
+      "Legal decision tree and recovery playbook for Indian influencers, content creators, and YouTubers: joint agency-brand notices, Copyright Act Section 19 takedown leverage, MSME 45-day rule, and Form 26AS TDS proof.",
+    site: "@legalrecoveryin",
+    creator: "@legalrecoveryin",
+    images: [`${SITE_URL}/blog_money_recovery.png`],
   },
   robots: {
     index: true,

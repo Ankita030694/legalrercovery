@@ -24,6 +24,23 @@ export const metadata: Metadata = {
     type: "article",
     siteName: "LegalRecovery.in",
     locale: "en_IN",
+    images: [
+      {
+        url: `${SITE_URL}/blog_money_recovery.png`,
+        width: 1200,
+        height: 630,
+        alt: "Won at RERA but the Builder Won't Pay? Section 40 Recovery Certificate Guide",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Won at RERA but the Builder Won't Pay? Section 40 Recovery Certificate Guide",
+    description:
+      "Step-by-step statutory execution guide when a builder ignores a RERA refund order: Section 40(1) Recovery Certificates, District Collector land revenue attachment, Section 63 penalties, and High Court Mandamus.",
+    site: "@legalrecoveryin",
+    creator: "@legalrecoveryin",
+    images: [`${SITE_URL}/blog_money_recovery.png`],
   },
   robots: {
     index: true,

@@ -20,6 +20,23 @@ export const metadata: Metadata = {
     type: "article",
     siteName: "LegalRecovery.in",
     locale: "en_IN",
+    images: [
+      {
+        url: `${SITE_URL}/blog_money_recovery.png`,
+        width: 1200,
+        height: 630,
+        alt: "Blinkit Refund Not Received or Wrong Item: Legal Steps",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Blinkit Refund Not Received or Wrong Item: Legal Steps",
+    description:
+      "Blinkit refund not received or items missing? Quick-commerce liability, proof to keep and how a legal notice gets Blinkit to pay.",
+    site: "@legalrecoveryin",
+    creator: "@legalrecoveryin",
+    images: [`${SITE_URL}/blog_money_recovery.png`],
   },
   robots: {
     index: true,
@@ -146,7 +163,7 @@ export default function BlinkitLegalNoticePage() {
             name: "Why does Blinkit customer support refuse refunds by claiming 'internal logs confirm item was packed'?",
             acceptedAnswer: {
               "@type": "Answer",
-              text: "Blinkit customer service relies on automated AI support bots programmed to treat internal dark-store barcode scans as conclusive proof of delivery. However, consumer commissions in India, including the landmark ruling in Kalpana Shantilal Shah v. Grofers India (CC/35/2022), have explicitly held that internal warehouse logs are unilateral records that cannot override customer photographic evidence or delivery discrepancies. Quick-commerce platforms remain strictly liable for short-delivery and deficiency of service under Section 2(47) of the Consumer Protection Act, 2019.",
+              text: "Blinkit customer service uses AI bots programmed to treat warehouse barcode scans as proof of delivery. However, consumer courts, including the South Mumbai District Commission in Kalpana Shantilal Shah v. Grofers India, held that internal logs cannot override customer photos. Quick-commerce platforms remain strictly liable for missing items under Section 2(47) of the Consumer Protection Act, 2019.",
             },
           },
           {
@@ -154,7 +171,7 @@ export default function BlinkitLegalNoticePage() {
             name: "How long does Blinkit legally have to process an uncredited refund back to my bank account?",
             acceptedAnswer: {
               "@type": "Answer",
-              text: "Under Rule 4(5) and Rule 4(11) of the Consumer Protection (E-Commerce) Rules, 2020, Blinkit must acknowledge customer grievances within 48 hours and resolve refund disputes within 30 days. For electronic payments via UPI or cards, RBI payment gateway settlement norms require transaction reversal instructions within 24 to 48 hours. If 5 to 7 business days elapse without a verifiable 12-digit Unique Transaction Reference (UTR) number reflecting in your bank account, the delay amounts to an unlawful retention of funds.",
+              text: "Under E-Commerce Rules, 2020, Blinkit must acknowledge grievances within 48 hours and resolve refunds within 30 days. For online payments via UPI or cards, RBI guidelines require refund instructions within 24 to 48 hours. If 5 to 7 days pass without a 12-digit UTR reference number appearing in your account, the delay is an unlawful withholding of funds.",
             },
           },
           {
@@ -162,7 +179,7 @@ export default function BlinkitLegalNoticePage() {
             name: "Can Blinkit force me to accept Blinkit Cash or a wallet coupon instead of a cash bank refund?",
             acceptedAnswer: {
               "@type": "Answer",
-              text: "No. Converting a cash, UPI, or card refund into proprietary in-app credits, Blinkit Cash, or expiring coupon vouchers without your explicit and informed affirmative consent violates the Guidelines for Prevention and Regulation of Dark Patterns (2023) and Section 2(47) of the Consumer Protection Act, 2019. Consumers are legally entitled to receive the full reimbursement into the exact payment instrument used at checkout.",
+              text: "No. Forcing in-app wallet balances, Blinkit Cash, or coupon codes without your clear consent violates CCPA Dark Pattern Guidelines, 2023. Under Section 2(47) of the Consumer Protection Act, 2019, consumers have a legal right to receive a full cash refund into their original payment method.",
             },
           },
           {
@@ -170,7 +187,7 @@ export default function BlinkitLegalNoticePage() {
             name: "What should I do if the delivery agent marked my Blinkit order as 'delivered' but never arrived?",
             acceptedAnswer: {
               "@type": "Answer",
-              text: "First, immediately take a screenshot of the delivery confirmation timestamp in the app and check your building entrance CCTV or call logs to establish that no delivery agent contacted you. File a complaint in the app chat and email the designated Grievance Officer within 24 hours. If automated bots close your request without redelivery or refund, serve a pre-litigation legal notice to Blink Commerce Private Limited demanding reimbursement and compensation for breach of contract.",
+              text: "Take a screenshot of the delivery confirmation in the app and check your call records to prove the rider never called. Report the issue in the app and email the Grievance Officer within 24 hours. If chatbot support closes your ticket without a refund, send an advocate legal notice to Blink Commerce Private Limited.",
             },
           },
           {
@@ -178,7 +195,7 @@ export default function BlinkitLegalNoticePage() {
             name: "Who is the statutory Grievance Officer for Blinkit and how do I escalate an unresolved dispute?",
             acceptedAnswer: {
               "@type": "Answer",
-              text: "Under the Consumer Protection (E-Commerce) Rules, 2020, Blink Commerce Private Limited must publish the name and direct contact details of its Grievance Officer. Written escalations can be dispatched via email to grievance.officer@blinkit.com or posted to Blink Commerce Private Limited, Pioneer Urban Square, Ground Floor, Golf Course Extension Road, Sector 62, Gurugram, Haryana - 122098. The Grievance Officer is statutorily mandated to acknowledge the complaint within 48 hours and provide a redressed resolution within one month.",
+              text: "Under E-Commerce Rules, 2020, Blinkit must publish its Grievance Officer details. You can email grievance.officer@blinkit.com. By law, the Grievance Officer must acknowledge your complaint within 48 hours and resolve it within 30 days.",
             },
           },
           {
@@ -186,7 +203,7 @@ export default function BlinkitLegalNoticePage() {
             name: "Can Blinkit escape liability under Section 79 of the IT Act by blaming the third-party merchant?",
             acceptedAnswer: {
               "@type": "Answer",
-              text: "No. Quick-commerce platforms operate integrated dark stores, collect customer funds directly, set product pricing, and control delivery logistics through dedicated riders. Consequently, consumer forums have ruled that Blinkit is an active e-commerce entity exercising direct commercial control, disqualifying it from passive intermediary safe-harbour immunity under Section 79 of the Information Technology Act. Blink Commerce Private Limited bears fallback liability under the E-Commerce Rules.",
+              text: "No. Quick-commerce platforms run local dark stores, collect customer payments, and manage riders. Consumer courts have ruled that Blinkit is not a neutral intermediary under Section 79 of the IT Act. Blink Commerce Private Limited holds direct legal liability for missing or damaged groceries.",
             },
           },
           {
@@ -194,7 +211,7 @@ export default function BlinkitLegalNoticePage() {
             name: "Blinkit se missing item ya galat order ka refund na mile to legal notice kaise bheje?",
             acceptedAnswer: {
               "@type": "Answer",
-              text: "Agar Blinkit chat support se missing items ya defective groceries ka refund reject ho gaya hai, to aap ek licensed advocate ke madhyam se Blink Commerce Private Limited ko 15-day pre-litigation statutory legal notice bhej sakte hain. Legal notice unke registered office (New Delhi/Gurugram) par Registered Speed Post aur email se serve kiya jata hai. Isme tax invoice, item photos, aur chat logs shamil kiye jaate hain. Notice serve hone ke baad 85% se adhik quick-commerce cases bina court jaaye settle ho jaate hain.",
+              text: "Agar Blinkit customer care missing items ya kharab rashan ka refund na de, toh advocate dwara Blink Commerce Private Limited ko 15 dino ka legal notice bhejein. Notice Speed Post aur email se bheja jata hai. Isme bill, photos, aur chat logs lagaye jaate hain. Notice milne par company aamtaur par court case se bachne ke liye refund kar deti hai.",
             },
           },
         ],
@@ -275,7 +292,7 @@ export default function BlinkitLegalNoticePage() {
                       Immediate Legal Answer
                     </div>
                     <p className="text-sm sm:text-base leading-relaxed text-slate-200">
-                      Blink Commerce Private Limited is strictly liable under Rule 4(5) of the Consumer Protection (E-Commerce) Rules, 2020 and Section 2(47) of the CPA 2019 for missing items, spoiled perishables, and uncredited refunds. When automated chatbot support refuses reimbursement, your mandatory first legal remedy is serving a 15-day statutory demand notice before initiating an e-Jagriti consumer claim.
+                      Blink Commerce Private Limited is strictly liable under E-Commerce Rules, 2020 and the Consumer Protection Act, 2019 for missing items and delayed refunds. When chatbot support refuses to refund, your primary legal remedy is sending an advocate legal notice allowing 15 days before filing on e-Jagriti.
                     </p>
                   </div>
                 </div>
@@ -1257,7 +1274,7 @@ export default function BlinkitLegalNoticePage() {
                   <span className="transition group-open:rotate-180 text-slate-400 font-bold">▼</span>
                 </summary>
                 <div className="mt-3 text-sm text-slate-700 leading-relaxed border-t border-slate-200/60 pt-3">
-                  Blinkit customer service relies on automated AI support bots programmed to treat internal dark-store barcode scans as conclusive proof of delivery. However, consumer commissions in India, including the landmark ruling in <em>Kalpana Shantilal Shah v. Grofers India (CC/35/2022)</em>, have explicitly held that internal warehouse logs are unilateral records that cannot override customer photographic evidence or delivery discrepancies. Quick-commerce platforms remain strictly liable for short-delivery and deficiency of service under Section 2(47) of the Consumer Protection Act, 2019.
+                  Blinkit customer service uses AI bots programmed to treat warehouse barcode scans as proof of delivery. However, consumer courts, including the South Mumbai District Commission in <em>Kalpana Shantilal Shah v. Grofers India (CC/35/2022)</em>, held that internal logs cannot override customer photos. Quick-commerce platforms remain strictly liable for missing items under Section 2(47) of the Consumer Protection Act, 2019.
                 </div>
               </details>
 
@@ -1267,7 +1284,7 @@ export default function BlinkitLegalNoticePage() {
                   <span className="transition group-open:rotate-180 text-slate-400 font-bold">▼</span>
                 </summary>
                 <div className="mt-3 text-sm text-slate-700 leading-relaxed border-t border-slate-200/60 pt-3">
-                  Under Rule 4(5) and Rule 4(11) of the Consumer Protection (E-Commerce) Rules, 2020, Blinkit must acknowledge customer grievances within 48 hours and resolve refund disputes within 30 days. For electronic payments via UPI or cards, RBI payment gateway settlement norms require transaction reversal instructions within 24 to 48 hours. If 5 to 7 business days elapse without a verifiable 12-digit Unique Transaction Reference (UTR) number reflecting in your bank account, the delay amounts to an unlawful retention of funds.
+                  Under E-Commerce Rules, 2020, Blinkit must acknowledge grievances within 48 hours and resolve refunds within 30 days. For online payments via UPI or cards, RBI guidelines require refund instructions within 24 to 48 hours. If 5 to 7 days pass without a 12-digit UTR reference number appearing in your account, the delay is an unlawful withholding of funds.
                 </div>
               </details>
 
@@ -1277,7 +1294,7 @@ export default function BlinkitLegalNoticePage() {
                   <span className="transition group-open:rotate-180 text-slate-400 font-bold">▼</span>
                 </summary>
                 <div className="mt-3 text-sm text-slate-700 leading-relaxed border-t border-slate-200/60 pt-3">
-                  No. Converting a cash, UPI, or card refund into proprietary in-app credits, Blinkit Cash, or expiring coupon vouchers without your explicit and informed affirmative consent violates the Guidelines for Prevention and Regulation of Dark Patterns (2023) and Section 2(47) of the Consumer Protection Act, 2019. Consumers are legally entitled to receive the full reimbursement into the exact payment instrument used at checkout.
+                  No. Forcing in-app wallet balances, Blinkit Cash, or coupon codes without your clear consent violates CCPA Dark Pattern Guidelines, 2023. Under Section 2(47) of the Consumer Protection Act, 2019, consumers have a legal right to receive a full cash refund into their original payment method.
                 </div>
               </details>
 
@@ -1287,7 +1304,7 @@ export default function BlinkitLegalNoticePage() {
                   <span className="transition group-open:rotate-180 text-slate-400 font-bold">▼</span>
                 </summary>
                 <div className="mt-3 text-sm text-slate-700 leading-relaxed border-t border-slate-200/60 pt-3">
-                  First, immediately take a screenshot of the delivery confirmation timestamp in the app and check your building entrance CCTV or call logs to establish that no delivery agent contacted you. File a complaint in the app chat and email the designated Grievance Officer within 24 hours. If automated bots close your request without redelivery or refund, serve a pre-litigation legal notice to Blink Commerce Private Limited demanding reimbursement and compensation for breach of contract.
+                  Take a screenshot of the delivery confirmation in the app and check your call records to prove the rider never called. Report the issue in the app and email the Grievance Officer within 24 hours. If chatbot support closes your ticket without a refund, send an advocate legal notice to Blink Commerce Private Limited.
                 </div>
               </details>
 
@@ -1297,7 +1314,7 @@ export default function BlinkitLegalNoticePage() {
                   <span className="transition group-open:rotate-180 text-slate-400 font-bold">▼</span>
                 </summary>
                 <div className="mt-3 text-sm text-slate-700 leading-relaxed border-t border-slate-200/60 pt-3">
-                  Under the Consumer Protection (E-Commerce) Rules, 2020, Blink Commerce Private Limited must publish the name and direct contact details of its Grievance Officer. Written escalations can be dispatched via email to <code className="text-xs bg-slate-100 px-1 py-0.5 rounded font-mono">grievance.officer@blinkit.com</code> or posted to Blink Commerce Private Limited, Pioneer Urban Square, Ground Floor, Golf Course Extension Road, Sector 62, Gurugram, Haryana - 122098. The Grievance Officer is statutorily mandated to acknowledge the complaint within 48 hours and provide a redressed resolution within one month.
+                  Under E-Commerce Rules, 2020, Blinkit must publish its Grievance Officer details. You can email <code className="text-xs bg-slate-100 px-1 py-0.5 rounded font-mono">grievance.officer@blinkit.com</code>. By law, the Grievance Officer must acknowledge your complaint within 48 hours and resolve it within 30 days.
                 </div>
               </details>
 
@@ -1307,7 +1324,7 @@ export default function BlinkitLegalNoticePage() {
                   <span className="transition group-open:rotate-180 text-slate-400 font-bold">▼</span>
                 </summary>
                 <div className="mt-3 text-sm text-slate-700 leading-relaxed border-t border-slate-200/60 pt-3">
-                  No. Quick-commerce platforms operate integrated dark stores, collect customer funds directly, set product pricing, and control delivery logistics through dedicated riders. Consequently, consumer forums have ruled that Blinkit is an active e-commerce entity exercising direct commercial control, disqualifying it from passive intermediary safe-harbour immunity under Section 79 of the Information Technology Act. Blink Commerce Private Limited bears fallback liability under the E-Commerce Rules.
+                  No. Quick-commerce platforms run local dark stores, collect customer payments, and manage riders. Consumer courts have ruled that Blinkit is not a neutral intermediary under Section 79 of the IT Act. Blink Commerce Private Limited holds direct legal liability for missing or damaged groceries.
                 </div>
               </details>
 
@@ -1317,7 +1334,7 @@ export default function BlinkitLegalNoticePage() {
                   <span className="transition group-open:rotate-180 text-slate-400 font-bold">▼</span>
                 </summary>
                 <div className="mt-3 text-sm text-slate-700 leading-relaxed border-t border-slate-200/60 pt-3">
-                  Agar Blinkit chat support se missing items ya defective groceries ka refund reject ho gaya hai, to aap ek licensed advocate ke madhyam se Blink Commerce Private Limited ko 15-day pre-litigation statutory legal notice bhej sakte hain. Legal notice unke registered office (New Delhi/Gurugram) par Registered Speed Post aur email se serve kiya jata hai. Isme tax invoice, item photos, aur chat logs shamil kiye jaate hain. Notice serve hone ke baad 85% se adhik quick-commerce cases bina court jaaye settle ho jaate hain.
+                  Agar Blinkit customer care missing items ya kharab rashan ka refund na de, toh advocate dwara Blink Commerce Private Limited ko 15 dino ka legal notice bhejein. Notice Speed Post aur email se bheja jata hai. Isme bill, photos, aur chat logs lagaye jaate hain. Notice milne par company aamtaur par court case se bachne ke liye refund kar deti hai.
                 </div>
               </details>
             </div>

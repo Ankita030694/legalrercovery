@@ -24,6 +24,23 @@ export const metadata: Metadata = {
     type: "article",
     siteName: "LegalRecovery.in",
     locale: "en_IN",
+    images: [
+      {
+        url: `${SITE_URL}/blog_money_recovery.png`,
+        width: 1200,
+        height: 630,
+        alt: "The MSMED (Amendment) Act 2026 Explained for Suppliers Chasing Payments",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "The MSMED (Amendment) Act 2026 Explained for Suppliers Chasing Payments",
+    description:
+      "Breakdown of the MSMED (Amendment) Act 2026 and the MSME ODR Portal: 45-day payment cap, 3x RBI compound interest, 90-day mediation, Section 43B(h) tax disallowance, and 75% pre-deposit rules.",
+    site: "@legalrecoveryin",
+    creator: "@legalrecoveryin",
+    images: [`${SITE_URL}/blog_money_recovery.png`],
   },
   robots: {
     index: true,

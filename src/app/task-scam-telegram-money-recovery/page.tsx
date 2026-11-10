@@ -24,6 +24,23 @@ export const metadata: Metadata = {
     type: "article",
     siteName: "LegalRecovery.in",
     locale: "en_IN",
+    images: [
+      {
+        url: `${SITE_URL}/blog_money_recovery.png`,
+        width: 1200,
+        height: 630,
+        alt: "Telegram Task Scam Money Recovery: What Actually Works",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Telegram Task Scam Money Recovery: What Actually Works",
+    description:
+      "Statutory escalation path for Telegram review and task fraud: 1930 NCRP reporting, layer-1 to layer-3 mule account freezing, Section 503 BNSS court unfreeze petitions, and avoiding secondary recovery scams.",
+    site: "@legalrecoveryin",
+    creator: "@legalrecoveryin",
+    images: [`${SITE_URL}/blog_money_recovery.png`],
   },
   robots: {
     index: true,

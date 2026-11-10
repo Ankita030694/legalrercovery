@@ -24,6 +24,23 @@ export const metadata: Metadata = {
     type: "article",
     siteName: "LegalRecovery.in",
     locale: "en_IN",
+    images: [
+      {
+        url: `${SITE_URL}/blog_money_recovery.png`,
+        width: 1200,
+        height: 630,
+        alt: "Cancel a Flat Booking in Writing: Letter Formats for Buyers",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Cancel a Flat Booking in Writing: Letter Formats for Buyers",
+    description:
+      "Ready-to-use flat and plot booking cancellation letter formats (before or after agreement) with RERA forfeiture caps, GST refund claims, and Word (.doc) export.",
+    site: "@legalrecoveryin",
+    creator: "@legalrecoveryin",
+    images: [`${SITE_URL}/blog_money_recovery.png`],
   },
   robots: {
     index: true,

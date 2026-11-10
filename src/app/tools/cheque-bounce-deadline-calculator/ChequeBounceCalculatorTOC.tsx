@@ -132,10 +132,10 @@ export default function ChequeBounceCalculatorTOC({
         aria-label="Table of contents"
       >
         <div className="pb-3 mb-4 border-b border-slate-100 flex items-center justify-between">
-          <h3 className="text-xs font-black uppercase tracking-wider text-slate-900 flex items-center gap-2">
+          <p className="text-xs font-black uppercase tracking-wider text-slate-900 flex items-center gap-2">
             <span className="w-2 h-2 rounded-full bg-red-600" />
             Calculator Outline
-          </h3>
+          </p>
           <span className="text-[10px] font-bold text-slate-500 uppercase">§138 Guide</span>
         </div>
 

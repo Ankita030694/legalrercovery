@@ -25,6 +25,23 @@ export const metadata: Metadata = {
     type: "article",
     siteName: "LegalRecovery.in",
     locale: "en_IN",
+    images: [
+      {
+        url: `${SITE_URL}/blog_money_recovery.png`,
+        width: 1200,
+        height: 630,
+        alt: "Can You Refuse New Car Delivery? PDI Defects & Rights",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Can You Refuse New Car Delivery? PDI Defects & Rights",
+    description:
+      "Statutory guide under Sale of Goods Act & Consumer Protection Act 2019: buyer inspection rights at PDI, pre vs post registration refusal, and booking refund recovery.",
+    site: "@legalrecoveryin",
+    creator: "@legalrecoveryin",
+    images: [`${SITE_URL}/blog_money_recovery.png`],
   },
   robots: {
     index: true,

@@ -24,6 +24,23 @@ export const metadata: Metadata = {
     type: "article",
     siteName: "LegalRecovery.in",
     locale: "hi_IN",
+    images: [
+      {
+        url: `${SITE_URL}/blog_money_recovery.png`,
+        width: 1200,
+        height: 630,
+        alt: "चेक बाउंस नोटिस फॉर्मेट हिंदी में — धारा 138 के अनुसार (Section 138 NI Act)",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "चेक बाउंस नोटिस फॉर्मेट हिंदी में — धारा 138 के अनुसार (Section 138 NI Act)",
+    description:
+      "धारा 138 परक्राम्य लिखत अधिनियम के तहत चेक बाउंस कानूनी नोटिस का प्रमाणित हिंदी प्रारूप। 30 दिन का नोटिस नियम, 15 दिन भुगतान मांग, और स्पीड पोस्ट डिस्पैच गाइड।",
+    site: "@legalrecoveryin",
+    creator: "@legalrecoveryin",
+    images: [`${SITE_URL}/blog_money_recovery.png`],
   },
   robots: {
     index: true,

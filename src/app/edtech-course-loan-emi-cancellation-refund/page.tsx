@@ -24,6 +24,23 @@ export const metadata: Metadata = {
     type: "article",
     siteName: "LegalRecovery.in",
     locale: "en_IN",
+    images: [
+      {
+        url: `${SITE_URL}/blog_money_recovery.png`,
+        width: 1200,
+        height: 630,
+        alt: "Ed-Tech Course Refund & Loan EMI Cancellation: Stop Auto-Debits Legally",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Ed-Tech Course Refund & Loan EMI Cancellation: Stop Auto-Debits Legally",
+    description:
+      "Statutory escalation path to cancel ed-tech courses, terminate NBFC auto-debit loans, revoke NACH mandates, and recover fees under CPA 2019 and RBI Digital Lending Guidelines.",
+    site: "@legalrecoveryin",
+    creator: "@legalrecoveryin",
+    images: [`${SITE_URL}/blog_money_recovery.png`],
   },
   robots: {
     index: true,

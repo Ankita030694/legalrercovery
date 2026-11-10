@@ -7,7 +7,31 @@ export const metadata = {
   description:
     "Send a professional legal notice online from any city in India. Expert advocate-drafted notices for dues, tenancy, employment, and commercial disputes.",
   alternates: {
-    canonical: "https://www.legalrecovery.in/legal-notice-services",
+    canonical: 'https://www.legalrecovery.in/legal-notice-services',
+  },
+  openGraph: {
+    title: "Legal Notice Services Online & by City | Legal Recovery",
+    description: "Send a professional legal notice online from any city in India. Expert advocate-drafted notices for dues, tenancy, employment, and commercial disputes.",
+    url: "https://www.legalrecovery.in/legal-notice-services",
+    type: "article",
+    siteName: "LegalRecovery.in",
+    locale: "en_IN",
+    images: [
+      {
+        url: "https://www.legalrecovery.in/blog_money_recovery.png",
+        width: 1200,
+        height: 630,
+        alt: "Legal Notice Services Online & by City | Legal Recovery",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Legal Notice Services Online & by City | Legal Recovery",
+    description: "Send a professional legal notice online from any city in India. Expert advocate-drafted notices for dues, tenancy, employment, and commercial disputes.",
+    site: "@legalrecoveryin",
+    creator: "@legalrecoveryin",
+    images: ["https://www.legalrecovery.in/blog_money_recovery.png"],
   },
 };
 

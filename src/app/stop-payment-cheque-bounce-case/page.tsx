@@ -25,6 +25,23 @@ export const metadata: Metadata = {
     type: "article",
     siteName: "LegalRecovery.in",
     locale: "en_IN",
+    images: [
+      {
+        url: `${SITE_URL}/blog_money_recovery.png`,
+        width: 1200,
+        height: 630,
+        alt: "Stop Payment Cheque Bounce: Is Section 138 Attracted? (Supreme Court Rulings)",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Stop Payment Cheque Bounce: Is Section 138 Attracted? (Supreme Court Rulings)",
+    description:
+      "Drawer stopped payment? Learn why Section 138 NI Act is fully attracted under Modi Cements & Goaplast, narrow drawer defences, and statutory 30-day notice deadlines.",
+    site: "@legalrecoveryin",
+    creator: "@legalrecoveryin",
+    images: [`${SITE_URL}/blog_money_recovery.png`],
   },
   robots: {
     index: true,

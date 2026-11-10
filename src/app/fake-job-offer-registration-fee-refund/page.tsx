@@ -25,6 +25,23 @@ export const metadata: Metadata = {
     type: "article",
     siteName: "LegalRecovery.in",
     locale: "en_IN",
+    images: [
+      {
+        url: `${SITE_URL}/blog_money_recovery.png`,
+        width: 1200,
+        height: 630,
+        alt: "Fake Job Offer Took a Registration Fee? Refund Steps",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Fake Job Offer Took a Registration Fee? Refund Steps",
+    description:
+      "Statutory recovery roadmap for fake job offer fees, placement agency registration frauds, bank freeze procedures, and advocate legal notices.",
+    site: "@legalrecoveryin",
+    creator: "@legalrecoveryin",
+    images: [`${SITE_URL}/blog_money_recovery.png`],
   },
   robots: {
     index: true,

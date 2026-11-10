@@ -145,9 +145,9 @@ export default function CyberFraudHindiTOC({
         <div className="bg-white rounded-2xl border border-slate-200 p-5 shadow-xs">
           <div className="flex items-center gap-2 pb-3 mb-3 border-b border-slate-100">
             <span className="w-2.5 h-2.5 rounded-full bg-red-600 animate-pulse" />
-            <h4 className="text-xs uppercase tracking-wider font-extrabold text-slate-900">
+            <p className="text-xs uppercase tracking-wider font-extrabold text-slate-900">
               पृष्ठ विषय सूची (Table of Contents)
-            </h4>
+            </p>
           </div>
 
           <nav className="space-y-1" aria-label="साइबर फ्रॉड रिकवरी विषय सूची">

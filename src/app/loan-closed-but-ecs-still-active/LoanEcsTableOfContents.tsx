@@ -133,10 +133,10 @@ export default function LoanEcsTableOfContents({
       <aside className="hidden lg:block w-72 shrink-0">
         <div className="sticky top-28 bg-white border border-slate-200/90 rounded-2xl p-5 shadow-xs">
           <div className="flex items-center justify-between pb-3 mb-3 border-b border-slate-100">
-            <h3 className="text-xs font-bold uppercase tracking-wider text-slate-900 flex items-center gap-2">
+            <p className="text-xs font-bold uppercase tracking-wider text-slate-900 flex items-center gap-2">
               <span className="w-2 h-2 rounded-full bg-red-600"></span>
               On This Page
-            </h3>
+            </p>
             <span className="text-[11px] text-slate-500 font-mono font-medium">{sections.length} Parts</span>
           </div>
           <nav aria-label="Table of contents" className="space-y-1">

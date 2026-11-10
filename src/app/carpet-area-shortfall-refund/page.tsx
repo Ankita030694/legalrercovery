@@ -25,6 +25,23 @@ export const metadata: Metadata = {
     type: "article",
     siteName: "LegalRecovery.in",
     locale: "en_IN",
+    images: [
+      {
+        url: `${SITE_URL}/blog_money_recovery.png`,
+        width: 1200,
+        height: 630,
+        alt: "Got a Smaller Flat Than Promised? Proportionate Refund Under RERA",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Got a Smaller Flat Than Promised? Proportionate Refund Under RERA",
+    description:
+      "How to measure apartment carpet area under RERA Section 2(k), challenge inflated super built-up loading, and claim a proportionate refund with SBI MCLR + 2% interest.",
+    site: "@legalrecoveryin",
+    creator: "@legalrecoveryin",
+    images: [`${SITE_URL}/blog_money_recovery.png`],
   },
   robots: {
     index: true,

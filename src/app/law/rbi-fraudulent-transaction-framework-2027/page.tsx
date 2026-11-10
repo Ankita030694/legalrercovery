@@ -24,6 +24,23 @@ export const metadata: Metadata = {
     type: "article",
     siteName: "LegalRecovery.in",
     locale: "en_IN",
+    images: [
+      {
+        url: `${SITE_URL}/blog_money_recovery.png`,
+        width: 1200,
+        height: 630,
+        alt: "RBI 2027 Fraudulent Banking Transaction Rules: Burden of Proof & ₹25,000 Compensation",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "RBI 2027 Fraudulent Banking Transaction Rules: Burden of Proof & ₹25,000 Compensation",
+    description:
+      "Detailed statutory analysis of the RBI's Revised Framework for Fraudulent Electronic Banking Transactions (effective 1 January 2027): bank burden of proof, 85% / ₹25,000 small-value payout, 10-day shadow reversal, and legal notice steps.",
+    site: "@legalrecoveryin",
+    creator: "@legalrecoveryin",
+    images: [`${SITE_URL}/blog_money_recovery.png`],
   },
   robots: {
     index: true,

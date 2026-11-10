@@ -26,6 +26,23 @@ export const metadata: Metadata = {
     description: "Unauthorised card, UPI or SIM-swap debit? RBI's zero-liability rule, shadow credit within 10 working days, and how to make your bank refund you.",
     url: "https://www.legalrecovery.in/recovery/fraud-transaction-amount",
     type: "article",
+    images: [
+      {
+        url: "https://www.legalrecovery.in/blog_money_recovery.png",
+        width: 1200,
+        height: 630,
+        alt: "Fraud Transaction Refund: How Long Does the Bank Take?",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Fraud Transaction Refund: How Long Does the Bank Take?",
+    description:
+      "Unauthorised card, UPI or SIM-swap debit? RBI's zero-liability rule, shadow credit within 10 working days, and how to make your bank refund you.",
+    site: "@legalrecoveryin",
+    creator: "@legalrecoveryin",
+    images: ["https://www.legalrecovery.in/blog_money_recovery.png"],
   },
 };
 

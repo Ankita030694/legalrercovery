@@ -23,6 +23,23 @@ export const metadata: Metadata = {
     type: "article",
     siteName: "LegalRecovery.in",
     locale: "en_IN",
+    images: [
+      {
+        url: `${SITE_URL}/blog_money_recovery.png`,
+        width: 1200,
+        height: 630,
+        alt: "Goibibo Refund Pending? Escalation Ladder and Legal Route",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Goibibo Refund Pending? Escalation Ladder and Legal Route",
+    description:
+      "Statutory escalation path for delayed Goibibo flight, hotel and bus refunds, goCash wallet lock-ins, and online travel aggregator joint liability under DGCA CAR & CPA 2019.",
+    site: "@legalrecoveryin",
+    creator: "@legalrecoveryin",
+    images: [`${SITE_URL}/blog_money_recovery.png`],
   },
   robots: {
     index: true,

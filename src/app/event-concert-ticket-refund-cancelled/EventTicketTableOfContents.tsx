@@ -145,9 +145,9 @@ export default function EventTicketTableOfContents({
       >
         <div className="flex items-center gap-2 pb-3 mb-3 border-b border-slate-100">
           <span className="w-2 h-2 rounded-full bg-rose-600" />
-          <h2 className="text-xs font-black uppercase tracking-wider text-slate-900">
+          <p className="text-xs font-black uppercase tracking-wider text-slate-900">
             Page Navigation
-          </h2>
+          </p>
         </div>
 
         <ul className="space-y-1">

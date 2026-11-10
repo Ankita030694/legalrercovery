@@ -24,6 +24,23 @@ export const metadata: Metadata = {
     type: "article",
     siteName: "LegalRecovery.in",
     locale: "en_IN",
+    images: [
+      {
+        url: `${SITE_URL}/blog_money_recovery.png`,
+        width: 1200,
+        height: 630,
+        alt: "Email Templates to Get Your Relieving and Experience Letters",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Email Templates to Get Your Relieving and Experience Letters",
+    description:
+      "Polite, firm and final-reminder email templates to request a relieving or experience letter, and the next step if HR ignores you.",
+    site: "@legalrecoveryin",
+    creator: "@legalrecoveryin",
+    images: [`${SITE_URL}/blog_money_recovery.png`],
   },
   robots: {
     index: true,
@@ -62,37 +79,37 @@ const FAQS = [
   {
     question: "When should I send a relieving letter request email to HR?",
     answer:
-      "Under Indian employment norms and Model Standing Orders Rule 16, an employer should hand over your service certificate on your Last Working Day (LWD) or within 2 to 7 working days following the completion of your notice period and asset handover. If you have not received your digitally signed relieving letter or experience certificate by Day 7 post-exit, send the Polite Reminder email. If HR fails to respond within 14 days, send the Firm Statutory Demand email citing Article 21 and Section 27 of the Indian Contract Act.",
+      "Under labour rules, employers should issue your service certificate on your Last Working Day or within 2 to 7 days of asset handover. If you have not received your documents by Day 7, send a polite reminder email. If HR ignores you for 14 days, send a firm demand email citing Article 21 and the Contract Act.",
   },
   {
     question: "Can an employer legally withhold my relieving letter if there is a dispute over FnF or notice pay?",
     answer:
-      "No. It is a well-established principle of Indian labour law that an Experience Certificate is an objective statement of historical fact reflecting your period of service and job title. High Courts across India have repeatedly ruled that employers cannot condition the issuance of exit credentials on disputed financial claims or notice pay deductions. Financial disputes must be resolved separately under wage recovery mechanisms; holding exit papers hostage constitutes an unlawful restraint of trade under Section 27 of the Indian Contract Act, 1872.",
+      "No. High Courts have ruled that an experience certificate is an objective factual record of your employment dates. Employers cannot withhold exit letters due to salary disputes or notice pay claims. Holding exit documents hostage is an unlawful restraint of trade under Section 27 of the Contract Act.",
   },
   {
     question: "What is the difference between an experience letter and a relieving letter?",
     answer:
-      "A Relieving Letter formally confirms that your resignation has been accepted, you have been discharged from your contractual duties, and all company property has been surrendered. An Experience Certificate (or Service Certificate) verifies your employment tenure (start date to end date), designations held, and character of service. Most background verification (BGV) agencies and future employers require both documents to clear your onboarding audit.",
+      "A Relieving Letter confirms your resignation was accepted, duties ended, and assets returned. An Experience Certificate verifies your employment dates, job title, and performance. Background verification teams and future employers usually require both documents for onboarding.",
   },
   {
     question: "What legal action can I take if relieving letter is not given after resignation?",
     answer:
-      "If HR ignores your final reminder email, you have three progressive legal remedies: (1) Serve a 15-day statutory advocate legal notice directly to the Managing Director, HR Head, and Company Directors demanding immediate release, (2) File an online complaint before the jurisdictional Labour Commissioner on the Ministry of Labour's Samadhan portal, and (3) File an injunction petition or civil suit for damages claiming financial compensation for lost employment offers and mental distress.",
+      "If HR ignores your reminder emails, take three steps: (1) Send a 15-day advocate legal notice to the Managing Director and HR Head; (2) File an online complaint on the Ministry of Labour's Samadhan portal; and (3) File a civil claim for compensation due to blocked job opportunities.",
   },
   {
     question: "Can an employer refuse to give an experience certificate for an employee who resigned during probation?",
     answer:
-      "No. Even if an employee separates during probation or serves a short tenure, the employer cannot deny an experience certificate confirming the actual duration worked. Under Model Standing Orders Rule 16 and state Shops and Establishments Acts, every person who rendered service is entitled to a formal service record. While the certificate may note that employment ended during probation, withholding it entirely is illegal.",
+      "No. Even if you resign during probation, the employer cannot deny an experience certificate showing the exact period worked. Under Model Standing Orders and state shop rules, every employee is entitled to a formal service record, even for short tenures.",
   },
   {
     question: "How do I format an experience letter request mail after leaving the company?",
     answer:
-      "A legally robust experience letter request mail must contain: (1) Your full legal name and official Employee ID, (2) Detailed designation, department, and employment dates, (3) Explicit confirmation that all company assets, security tokens, and project knowledge transfer were completed and signed off, (4) Statutory citations to Model Standing Orders Rule 16 and Article 21 of the Constitution, (5) New employer onboarding date to establish potential financial injury, and (6) A definitive 5 to 7-day compliance deadline. You can use our interactive workspace above to generate and export this letter in Word (.doc) format.",
+      "Include: (1) Your full name and employee ID; (2) Job designation and employment dates; (3) Confirmation that company assets and project handovers were completed; (4) Citations to Model Standing Orders Rule 16 and Article 21; and (5) A clear 5 to 7-day deadline to issue the documents.",
   },
   {
     question: "Agar company relieving letter ya experience certificate na de toh legal notice kaise bheje?",
     answer:
-      "Agar resignation aur handover complete hone ke bawajood company aapka relieving letter roke hue hai, toh aap verified labour advocate ke madhyam se 15 din ka statutory legal notice bhej sakte hain. LegalRecovery.in par advocate Article 21 (Right to Livelihood), Section 27 Indian Contract Act aur Model Standing Orders ke tehat company ke Registered Office aur Directors ko Registered Speed Post aur BSA Section 63 electronic mail se notice bhejte hain.",
+      "Agar company resignation ke baad relieving letter na de, toh advocate legal notice bhejein. LegalRecovery.in par advocates Article 21 aur Section 27 ke tahat company ke Registered Office aur Directors ko Speed Post aur email se 15 din ka notice bhejte hain.",
   },
 ];
 
@@ -240,7 +257,7 @@ export default function RelievingLetterTemplatePage() {
                 Statutory Summary (Relieving &amp; Experience Certificate Right)
               </p>
               <p>
-                Under Model Standing Orders Rule 16 and Article 21 of the Constitution of India, an employer cannot hold an employee&apos;s relieving letter or experience certificate hostage after handover. Withholding exit documents constitutes an unlawful restraint of trade under Section 27 of the Contract Act. If HR fails to issue credentials within 7 days, send this structured demand email before serving a 15-day advocate legal notice.
+                Under Model Standing Orders and Article 21 of the Constitution, employers cannot withhold an employee's relieving letter or experience certificate after handover. Withholding exit documents is an unlawful restraint of trade under Section 27 of the Contract Act. If HR delays beyond 7 days, send a demand email followed by a 15-day advocate legal notice.
               </p>
             </div>
 

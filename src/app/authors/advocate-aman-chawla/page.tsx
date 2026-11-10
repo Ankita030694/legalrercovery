@@ -3,10 +3,34 @@ import Link from 'next/link';
 import Script from 'next/script';
 
 export const metadata: Metadata = {
-  title: 'Anuj Anand Malik - Founder, AMA Legal Solutions',
-  description: 'Anuj Anand Malik, Founder of AMA Legal Solutions, is a trusted advocate, loan settlement expert, legal advisor, and banking lawyer.',
+  title: 'Advocate Aman Chawla - Panel Advocate | Legal Recovery',
+  description: 'Advocate Aman Chawla is a panel advocate at Legal Recovery India specializing in debt recovery, consumer disputes, and banking litigation.',
   alternates: {
-    canonical: 'https://www.legalrecovery.in/authors/anuj-anand-malik',
+    canonical: 'https://www.legalrecovery.in/authors/advocate-aman-chawla',
+  },
+  openGraph: {
+    title: 'Advocate Aman Chawla - Panel Advocate | Legal Recovery',
+    description: 'Advocate Aman Chawla is a panel advocate at Legal Recovery India specializing in debt recovery, consumer disputes, and banking litigation.',
+    url: 'https://www.legalrecovery.in/authors/advocate-aman-chawla',
+    type: 'profile',
+    siteName: 'LegalRecovery.in',
+    locale: 'en_IN',
+    images: [
+      {
+        url: 'https://www.legalrecovery.in/blog_money_recovery.png',
+        width: 1200,
+        height: 630,
+        alt: 'Advocate Aman Chawla - Panel Advocate | Legal Recovery',
+      },
+    ],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Advocate Aman Chawla - Panel Advocate | Legal Recovery',
+    description: 'Advocate Aman Chawla is a panel advocate at Legal Recovery India specializing in debt recovery, consumer disputes, and banking litigation.',
+    site: '@legalrecoveryin',
+    creator: '@legalrecoveryin',
+    images: ['https://www.legalrecovery.in/blog_money_recovery.png'],
   },
 };
 

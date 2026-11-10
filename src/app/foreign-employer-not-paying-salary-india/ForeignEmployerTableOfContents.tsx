@@ -154,9 +154,9 @@ export default function ForeignEmployerTableOfContents({
         <div className="flex items-center justify-between pb-3 border-b border-slate-100">
           <div className="flex items-center gap-2">
             <span className="w-2.5 h-2.5 rounded-full bg-[#DC2626]" />
-            <h3 className="text-xs font-black text-slate-900 uppercase tracking-wider">
+            <p className="text-xs font-black text-slate-900 uppercase tracking-wider">
               Navigation Index
-            </h3>
+            </p>
           </div>
           <span className="text-[10px] font-extrabold px-2 py-0.5 bg-slate-100 text-slate-600 rounded">
             11 Sections

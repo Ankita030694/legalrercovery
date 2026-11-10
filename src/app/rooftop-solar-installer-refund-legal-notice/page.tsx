@@ -24,6 +24,23 @@ export const metadata: Metadata = {
     type: "article",
     siteName: "LegalRecovery.in",
     locale: "en_IN",
+    images: [
+      {
+        url: `${SITE_URL}/blog_money_recovery.png`,
+        width: 1200,
+        height: 630,
+        alt: "Solar Installer Took Advance but Didn't Install? Refund & Legal Notice",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Solar Installer Took Advance but Didn't Install? Refund & Legal Notice",
+    description:
+      "Statutory guide to recovering rooftop solar advances from absconded or delaying vendors. PM Surya Ghar grievance steps, CPA 2019 deficiency remedies, and advocate legal notice.",
+    site: "@legalrecoveryin",
+    creator: "@legalrecoveryin",
+    images: [`${SITE_URL}/blog_money_recovery.png`],
   },
   robots: {
     index: true,
@@ -65,12 +82,12 @@ const CASE_CITATIONS = [
     citation: "Consumer Complaint No. 248/2022, DCDRC Bengaluru Urban (Additional Bench)",
     date: "Order Dated 19 July 2023",
     facts:
-      "The complainant contracted with a local solar EPC vendor for a 5 kW on-grid rooftop solar power plant at a total cost of ₹3,10,000 and remitted an advance payment of ₹2,20,000 across two tranches. The vendor dumped mounting structures on the terrace and partially bolted panels, but abandoned wiring, inverter installation, and earthing pits. Despite 18 reminder emails and WhatsApp notices over 9 months, the vendor failed to commission the system or secure DISCOM net-metering synchronization.",
+      "A homeowner hired an installer for a 5 kW rooftop solar plant for ₹3,10,000 and paid an advance of ₹2,20,000. The vendor left mounting structures and panels unbolted on the terrace, but never installed wiring, inverters, or earthing pits. Despite 18 reminders over nine months, the plant was never connected to the grid.",
     holding:
-      "The District Consumer Forum held that dumping uncommissioned electrical hardware on a terrace does not constitute performance of a turnkey solar agreement. Withholding consumer funds without making the plant operational amounts to gross deficiency in service under Section 2(11) and deceptive practice under Section 2(47) CPA 2019. The Commission directed the solar firm to refund the entire ₹2,20,000 with 12% interest per annum from the payment date, pay ₹30,000 compensation for mental harassment, and ₹10,000 toward litigation expenses.",
+      "The District Forum ruled that dumping hardware on a terrace does not complete a turnkey solar agreement. Keeping customer money without making the plant work is a serious service deficiency under Section 2(11). The Commission directed the firm to refund ₹2,20,000 with 12% annual interest, ₹30,000 damages, and ₹10,000 costs.",
     amount: "₹2,20,000 Advance Refund @ 12% Annual Interest + ₹30,000 Harassment Award + ₹10,000 Legal Costs",
     takeaway:
-      "Vendors cannot defend against non-completion by claiming hardware was delivered to the site. If the plant fails to generate power and grid synchronization is not completed as contracted, consumer courts treat the transaction as a complete service failure and award 100% restitution.",
+      "Installers cannot claim hardware delivery as contract completion. If the plant does not generate power or connect to the grid, consumer courts order a 100% refund.",
   },
   {
     title: "State Commission Penalizes Solar Firm for Causing Central Subsidy Forfeiture",
@@ -78,12 +95,12 @@ const CASE_CITATIONS = [
     citation: "First Appeal No. A/19/584, State Consumer Disputes Redressal Commission, Maharashtra (Mumbai)",
     date: "Order Dated 14 October 2022",
     facts:
-      "The complainant engaged an empanelled solar installer under the rooftop subsidy scheme, paying an initial advance of ₹1,80,000. The agreement stipulated that the vendor would submit the grid feasibility report and work completion documentation to the state distribution utility within 45 days. The vendor delayed filing for 7 months, causing the state nodal agency's subsidy registration window to lapse and depriving the consumer of a ₹54,000 central capital subsidy.",
+      "A consumer paid an advance of ₹1,80,000 to an approved solar vendor under a subsidy scheme. The vendor promised to submit grid reports to the electricity board within 45 days. The vendor delayed filing for seven months, causing the state subsidy window to close and costing the consumer a ₹54,000 subsidy.",
     holding:
-      "The State Commission dismissed the vendor's appeal, ruling that empanelled solar contractors who promise turnkey subsidy processing bear strict vicarious liability for administrative delays. The forum affirmed the District Forum order compelling the vendor to pay the equivalent of the lost subsidy (₹54,000), refund ₹75,000 in unjustified cost escalations, and pay ₹25,000 exemplary damages for financial detriment.",
+      "The State Commission ruled that solar contractors who promise turnkey subsidy processing are responsible for delays. The forum ordered the vendor to pay the lost subsidy of ₹54,000, refund ₹75,000 in unfair extra charges, and pay ₹25,000 damages.",
     amount: "₹54,000 Lost Subsidy Restitution + ₹75,000 Overcharge Refund + ₹25,000 Exemplary Damages",
     takeaway:
-      "If a solar vendor's negligence or tardiness causes you to lose your PM Surya Ghar central subsidy or state rebate, consumer courts will force the vendor to pay the lost subsidy out of their own pocket as direct financial damages.",
+      "If a solar vendor's delay causes you to lose your PM Surya Ghar subsidy, consumer courts will force the vendor to pay the lost subsidy amount out of pocket.",
   },
   {
     title: "Ex-Parte Award Against Absconded Solar Contractor for Failure to Supply Bi-Directional Meter",
@@ -91,12 +108,12 @@ const CASE_CITATIONS = [
     citation: "Consumer Complaint No. 119/2023, DCDRC SAS Nagar (Mohali)",
     date: "Order Dated 08 February 2024",
     facts:
-      "The consumer paid ₹2,65,000 in full to an independent installer for a 6 kW rooftop system under the promise of immediate zero-electricity bills. While the panels were mounted, the installer never submitted the Work Completion Report (WCR) or CEIG electrical safety report to PSPCL. The bi-directional net meter was never installed, rendering the system incapable of feeding surplus power back to the grid. The vendor closed its local branch and failed to appear despite registered postal summons.",
+      "A consumer paid ₹2,65,000 in full for a 6 kW rooftop system promising zero bills. Panels were installed, but the vendor never submitted electrical safety reports to the power board. The net meter was never installed. The vendor closed its local office and ignored court summons.",
     holding:
-      "Proceeding ex-parte, the District Commission observed that collecting full project costs while failing to operationalize net-metering synchronization amounts to egregious unfair trade practice. The court ordered the firm to either complete net-metering commissioning within 30 days or refund ₹2,65,000 with 9% interest from the date of complaint, plus ₹40,000 for lost solar generation units and ₹15,000 costs.",
+      "The District Commission held that collecting full fees without completing net-metering is an unfair trade practice. The court ordered the firm to complete the work within 30 days or refund ₹2,65,000 with 9% interest, plus ₹40,000 for lost solar generation and ₹15,000 costs.",
     amount: "₹2,65,000 Principal Recovery @ 9% Interest + ₹40,000 Lost Solar Generation Credits + ₹15,000 Costs",
     takeaway:
-      "When a solar installer disappears or refuses to appear in court, consumer commissions issue ex-parte decrees based on bank statements and quotation documents. You do not need the vendor's consent to obtain an enforceable recovery order.",
+      "When a solar installer disappears, consumer courts issue ex-parte orders based on your bank statements and quotes. You can get an enforceable recovery order.",
   },
   {
     title: "Commission Orders Reversal of Loan EMIs and Advance for Non-DCR Substandard Panels",
@@ -104,12 +121,12 @@ const CASE_CITATIONS = [
     citation: "Complaint No. CC/382/2023, DCDRC Jaipur II",
     date: "Order Dated 28 November 2024",
     facts:
-      "The consumer purchased a 3.3 kW rooftop solar system financed via a solar loan facility. The quotation explicitly promised Tier-1 DCR (Domestic Content Requirement) Mono PERC modules eligible for PM Surya Ghar subsidy. Upon physical inspection by DISCOM engineers, the panels were rejected because the installer had substituted cheap, non-DCR imported modules with tampered barcode labels, preventing both net-metering approval and subsidy release.",
+      "A consumer bought a 3.3 kW solar plant financed by a loan. The quote promised Tier-1 DCR panels eligible for government subsidies. State power engineers rejected the plant because the vendor installed cheap imported modules with altered barcodes, blocking both grid approval and subsidies.",
     holding:
-      "The Forum held the vendor guilty of criminal misrepresentation and product liability breach under Sections 84-86 CPA 2019. The Commission directed the installer to dismantle and cart away the substandard panels from the consumer's roof, refund the complainant's cash advance of ₹45,000, repay the outstanding lender financing directly to close the loan account, and pay ₹50,000 compensation for willful deceit.",
+      "The Forum found the vendor guilty of misrepresentation and product liability violations under Sections 84-86. The Commission ordered the installer to remove the substandard panels, refund the ₹45,000 cash advance, clear the outstanding bank loan, and pay ₹50,000 damages.",
     amount: "Loan Pre-Closure + ₹45,000 Cash Refund + Equipment Removal + ₹50,000 Deceit Damages",
     takeaway:
-      "Installing non-compliant or counterfeit panels is not merely a breach of warranty—it is an actionable product liability offence. Courts can compel the vendor to clear associated bank loans and remove the unwanted hardware at their sole expense.",
+      "Installing counterfeit panels is an actionable product liability offense. Courts can compel the vendor to pay off your bank loan and remove the hardware at their expense.",
   },
 ];
 
@@ -117,42 +134,42 @@ const FAQS = [
   {
     question: "Can I get a full refund if my solar installer took an advance and delayed installation?",
     answer:
-      "Yes. Under Section 2(11) of the Consumer Protection Act, 2019 and Section 73 of the Indian Contract Act, 1872, an installer's failure to complete installation within the promised timeline constitutes a material breach of contract and deficiency in service. If the installer fails to perform after receiving a statutory demand notice giving a 15-day cure period, you are entitled to cancel the agreement, demand a 100% refund of your advance with 9% to 12% annual interest, and claim compensation for mental agony and lost solar savings.",
+      "Yes. Under Section 2(11) of the Consumer Protection Act and Section 73 of the Contract Act, failing to finish installation on time is a breach of contract. If the vendor does not finish after receiving a 15-day legal notice, you can cancel the agreement and demand a full refund with 9% to 12% interest.",
   },
   {
     question: "What should I do if a rooftop solar vendor disappeared or stopped answering calls?",
     answer:
-      "First, secure your financial proof: bank statement debit entries showing the 12-digit UTR, payment receipts, written quotations, and WhatsApp message logs. Second, file a delinquency ticket on the PM Surya Ghar National Portal (pmsuryaghar.gov.in) and National Consumer Helpline (NCH 1915). Third, have an advocate serve a formal statutory legal demand notice to the vendor's registered company address and directors' residences. If they remain untraceable, file an online consumer complaint on e-Jagriti and lodge a police complaint under BNS Section 318 (Cheating).",
+      "Gather your bank statements, payment receipts, written quotes, and chat logs. File a complaint on the PM Surya Ghar portal (pmsuryaghar.gov.in) and call NCH at 1915. Have an advocate send a 15-day statutory legal notice. If they do not respond, file a case on e-Jagriti.",
   },
   {
     question: "Can an installer refuse to refund my advance by citing delays by the electricity DISCOM?",
     answer:
-      "No. While DISCOM net-metering feasibility and bi-directional meter procurement involve administrative steps, consumer forums have consistently ruled that solar EPC contracts are turnkey obligations. The installer cannot shift blame to the DISCOM unless they prove that all requisite technical filings, Work Completion Reports (WCR), and safety inspections were submitted accurately within agreed timelines. If the vendor delayed submitting paperwork, they remain strictly liable for the delay.",
+      "No. Solar contracts are turnkey jobs. Installers cannot blame power companies unless they prove all work completion and safety forms were submitted on time. If the vendor delayed paperwork, they remain strictly liable for the delay.",
   },
   {
     question: "What happens if the vendor delivered solar panels to my terrace but never finished the wiring or inverter?",
     answer:
-      "Under Sections 37 and 41 of the Sale of Goods Act, 1930, dropping uncommissioned hardware on your premises does not amount to legal delivery or contractual performance of a solar EPC project. The buyer has the statutory right to inspect and reject incomplete installations. You can issue a legal notice demanding complete commissioning within 7 to 15 days or total removal of the materials and full refund of all amounts paid.",
+      "Under the Sale of Goods Act, leaving equipment on your roof does not complete the project. You have the right to reject incomplete work. You can send a legal notice demanding commissioning within 15 days or removal of the materials and a complete refund.",
   },
   {
     question: "How do I file a PM Surya Ghar vendor complaint if my subsidy was not credited?",
     answer:
-      "Log into pmsuryaghar.gov.in using the mobile number tied to your electricity consumer account. Navigate to the 'Grievances' section, register a complaint against the empanelled vendor, and upload your invoice and bank proof. In addition, submit a formal written representation to your state's Renewable Energy Development Agency (SNA) and the DISCOM Superintending Engineer. If the vendor used non-DCR panels that caused subsidy forfeiture, serve a legal notice demanding the vendor pay the subsidy amount directly.",
+      "Log into pmsuryaghar.gov.in and register a complaint under the 'Grievances' section with your invoices and payment proofs. Also write to your state renewable energy agency. If the vendor used non-approved panels that caused subsidy loss, send a legal notice demanding reimbursement.",
   },
   {
     question: "Is taking an advance for rooftop solar and abandoning work considered criminal cheating?",
     answer:
-      "If the vendor induced you to part with money by making representations they never had the logistical capacity or intention to fulfill (such as forged DISCOM approvals, false promises of 48-hour installation, or taking booking money right before shutting down operations), the act constitutes Cheating under Section 318 and Criminal Breach of Trust under Section 316 of the Bharatiya Nyaya Sanhita, 2023 (BNS). You can file an FIR alongside civil recovery in consumer court.",
+      "Yes. If the vendor took advance money without intending or having the capacity to install the system, the act amounts to Cheating under Section 318 of the Bharatiya Nyaya Sanhita (BNS). You can file a police complaint alongside your consumer court recovery case.",
   },
   {
     question: "What compensation can I claim against a solar vendor in the Consumer Court?",
     answer:
-      "In the District Consumer Disputes Redressal Commission (DCDRC), you can claim: (1) 100% refund of all advance and milestone payments; (2) Statutory interest between 9% and 12% per annum from the date of payment; (3) Financial compensation for lost electricity generation savings during the delay; (4) Restitution for any lost PM Surya Ghar government subsidy; (5) Damages for roof damage or waterproofing leaks caused by unfinished mounts; and (6) Legal litigation expenses.",
+      "You can claim: (1) 100% refund of all advance payments; (2) Statutory interest between 9% and 12% per year; (3) Compensation for lost electricity savings; (4) Recovery of any lost PM Surya Ghar subsidy; (5) Repair costs for roof damage; and (6) Legal expenses.",
   },
   {
     question: "How does an advocate legal notice accelerate a solar installation advance refund?",
     answer:
-      "A formal advocate statutory legal notice served via Registered Speed Post and digital channels establishes an immutable evidentiary record under Section 63 of the Bharatiya Sakshya Adhiniyam, 2023. It notifies the solar company and its individual directors of imminent prosecution under CPA 2019 and BNS 318, alerts them to potential de-empanelment from the PM Surya Ghar national portal, and provides a strict 15-day cure window, prompting over 60% of commercial vendors to negotiate immediate refunds.",
+      "An advocate legal notice creates official legal proof. It warns the installer and directors of upcoming consumer court cases and potential blacklisting from PM Surya Ghar. With a 15-day deadline, over 60% of vendors settle and refund advances immediately.",
   },
 ];
 
@@ -269,7 +286,7 @@ export default function RooftopSolarInstallerRefundPage() {
                 Statutory Summary &amp; Immediate Remedy
               </span>
               <p className="text-sm sm:text-base text-slate-200 leading-relaxed">
-                If a rooftop solar vendor collected an advance payment and failed to complete installation or synchronization within the contractual timeframe, they are liable for gross deficiency in service under Section 2(11) and unfair trade practice under Section 2(47) of the Consumer Protection Act, 2019. Serving a formal 15-day advocate statutory demand notice is the indispensable first legal step before filing for full principal restitution, 12% interest, and damages in the District Consumer Disputes Redressal Commission (DCDRC).
+                If a rooftop solar vendor collected an advance payment and failed to complete installation or net-metering on time, they are liable under consumer law. Serving a 15-day advocate statutory demand notice is the first legal step to recover your full advance with 12% interest and compensation on e-Jagriti.
               </p>
             </div>
 

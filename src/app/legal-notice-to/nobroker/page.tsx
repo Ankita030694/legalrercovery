@@ -24,6 +24,23 @@ export const metadata: Metadata = {
     type: "article",
     siteName: "LegalRecovery.in",
     locale: "en_IN",
+    images: [
+      {
+        url: `${SITE_URL}/blog_money_recovery.png`,
+        width: 1200,
+        height: 630,
+        alt: "NoBroker Money-Back Plan or Token Refund Stuck? Legal Escalation Guide",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "NoBroker Money-Back Plan or Token Refund Stuck? Legal Escalation Guide",
+    description:
+      "Statutory escalation route for denied NoBroker Money-Back Guarantee plans, stuck token advances, held NoBroker Pay rent transfers, and consumer court recovery.",
+    site: "@legalrecoveryin",
+    creator: "@legalrecoveryin",
+    images: [`${SITE_URL}/blog_money_recovery.png`],
   },
   robots: {
     index: true,

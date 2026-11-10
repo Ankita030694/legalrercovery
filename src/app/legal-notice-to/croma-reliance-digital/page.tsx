@@ -20,6 +20,23 @@ export const metadata: Metadata = {
       "Croma or Reliance Digital refusing replacement for a defective gadget? Warranty vs consumer rights, case law and a legal notice route.",
     url: `${SITE_URL}/legal-notice-to/croma-reliance-digital`,
     type: "article",
+    images: [
+      {
+        url: `${SITE_URL}/blog_money_recovery.png`,
+        width: 1200,
+        height: 630,
+        alt: "Croma / Reliance Digital Refused Refund? Legal Options",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Croma / Reliance Digital Refused Refund? Legal Options",
+    description:
+      "Croma or Reliance Digital refusing replacement for a defective gadget? Warranty vs consumer rights, case law and a legal notice route.",
+    site: "@legalrecoveryin",
+    creator: "@legalrecoveryin",
+    images: [`${SITE_URL}/blog_money_recovery.png`],
   },
   robots: {
     index: true,
@@ -99,7 +116,7 @@ const faqJsonLd = {
       name: "Can Croma or Reliance Digital refuse to replace a defective TV after unboxing?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "No. Under Section 2(47) and Section 86 of the Consumer Protection Act, 2019, a retail seller cannot disclaim liability for delivering an inherently defective product simply because the box has been opened. If you report the defect within the advertised return window or within a reasonable timeframe, the retailer shares joint liability with the brand to provide a prompt replacement or full refund.",
+        text: "No. Under Section 2(47) and Section 86 of the Consumer Protection Act, 2019, a store cannot deny duty for a defective item just because the box was opened. If you report the defect promptly, the retailer shares joint liability with the maker for a full replacement or refund.",
       },
     },
     {
@@ -107,7 +124,7 @@ const faqJsonLd = {
       name: "What should I do if the brand service center refuses to give me a DOA (Dead on Arrival) certificate?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "Demand a written service inspection report or job sheet documenting the exact technical defect observed by the technician. If the service engineer refuses to mark the unit as DOA and insists on panel replacement only, submit that job sheet directly to the store manager and corporate grievance officer alongside an email recording that the defect was present from delivery.",
+        text: "Demand a written inspection job sheet stating the exact fault found by the technician. If the engineer refuses a DOA mark and offers part replacement only, send the job sheet to the store manager and grievance officer. State clearly that the defect existed on delivery.",
       },
     },
     {
@@ -115,7 +132,7 @@ const faqJsonLd = {
       name: "Is an electronics retailer liable if they say 'warranty is only provided by the manufacturer'?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "Yes. Indian consumer commissions have repeatedly rejected the 'dealer immunity' argument. Privity of contract exists between you and the retailer who accepted your payment and issued the tax invoice. Under Section 86 of CPA 2019, the product seller cannot wash its hands of responsibility when a consumer is sold defective electronics.",
+        text: "Yes. Consumer courts consistently reject dealer immunity claims. Your purchase contract is with the store that took your money and issued the invoice. Under Section 86 of CPA 2019, retailers cannot escape liability for defective items.",
       },
     },
     {
@@ -123,7 +140,7 @@ const faqJsonLd = {
       name: "How long do Croma and Reliance Digital have to resolve an escalated complaint under e-commerce rules?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "Under Rule 4(5) of the Consumer Protection (E-Commerce) Rules, 2020, the resident Grievance Officer must acknowledge your grievance within 48 hours. Under Rule 5(4), the corporate entity must provide a complete redressal within one month from the date of receipt of the grievance.",
+        text: "Under Rule 4(5) of the E-Commerce Rules, 2020, the Grievance Officer must acknowledge complaints within 48 hours. Under Rule 5(4), the company must resolve the issue within one month of receiving it.",
       },
     },
     {
@@ -131,7 +148,7 @@ const faqJsonLd = {
       name: "How do extended warranty plans like Croma ZipCare or Reliance resQ legally differ from brand warranties?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "Extended warranty plans like Croma ZipCare and Reliance resQ are standalone service contracts sold directly by the retailer. Denying repair, replacement, or compensation under an extended warranty plan constitutes a direct deficiency in service under Section 2(11) of CPA 2019, making the retailer solely responsible without involving the original manufacturer.",
+        text: "Plans like Croma ZipCare and Reliance resQ are direct service contracts sold by retailers. Denying repair or replacement under these plans is a deficiency in service under Section 2(11) of CPA 2019. The retailer is directly responsible without needing brand approval.",
       },
     },
     {
@@ -139,7 +156,7 @@ const faqJsonLd = {
       name: "Can I send a legal notice to both Croma/Reliance Digital and the device manufacturer together?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "Yes, and this is the recommended legal strategy. Serving a joint statutory demand notice to both the retailer (Infiniti Retail Limited or Reliance Retail Limited) and the manufacturer (e.g., Samsung, HP, LG, Sony) holds them jointly and severally liable and prevents them from deflecting responsibility onto each other before you file on e-Jagriti.",
+        text: "Yes. This is the best approach. Serving a joint legal notice on the store (Croma or Reliance) and the maker (Samsung, LG, Sony) holds both parties liable. It prevents them from blaming each other before you file on e-Jagriti.",
       },
     },
     {
@@ -210,7 +227,7 @@ export default function CromaRelianceDigitalPage() {
                   Immediate Legal Position (Answer Box)
                 </span>
                 <p className="text-slate-800 text-sm sm:text-base leading-relaxed font-normal">
-                  Under Section 86 and Section 2(47) of the Consumer Protection Act, 2019, an electronics retailer shares joint and several liability with the manufacturer for selling defective goods. A store cannot disclaim responsibility by insisting on brand service center visits. Serving a formal 15-day statutory legal notice establishes privity of contract and compels corporate resolution before filing on e-Jagriti.
+                  Under Section 86 and Section 2(47) of the Consumer Protection Act, 2019, retailers share joint liability with manufacturers for defective products. A store cannot refuse help by sending you to brand service centers. Serving a formal 15-day legal notice establishes contractual duty and urges corporate resolution before filing on e-Jagriti.
                 </p>
               </div>
             </div>
@@ -419,10 +436,10 @@ export default function CromaRelianceDigitalPage() {
                 Why Retailers Divert Defective Products to Service Centers
               </h2>
               <p className="text-sm sm:text-base text-slate-700 leading-relaxed mb-3">
-                Electronics retailers direct consumers to brand service centers to exhaust their internal 7-day return windows and transfer the financial burden of replacements to manufacturers. Under Indian contract law and the Consumer Protection Act, 2019, your purchase transaction is with the retailer who issued the tax invoice, making their attempt to evade return obligations an unfair trade practice.
+                Stores often direct buyers to brand service centers. This burns through the store 7-day return window and shifts replacement costs to makers. Under the Consumer Protection Act, 2019, your contract is with the store that billed you. Evading return duties is an unfair trade practice.
               </p>
               <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                When you buy a TV, laptop, or appliance from Croma (Infiniti Retail) or Reliance Digital (Reliance Retail), staff frequently claim that once unboxed, returns require a brand technician DOA slip. In reality, brand technicians often take 7 to 10 days to inspect the unit, pushing you past the store window and offering part repairs rather than a fresh unit replacement.
+                When you buy electronics from Croma or Reliance Digital, staff often demand a technician DOA slip for unboxed units. Yet brand technicians can take 7 to 10 days to visit. This pushes you past the store window and leads to unwanted part repairs instead of a fresh unit.
               </p>
             </section>
 

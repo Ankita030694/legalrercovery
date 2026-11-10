@@ -22,6 +22,23 @@ export const metadata: Metadata = {
       "Learn how to trace uncredited refunds using UTR and ARN codes, resolve bank suspense account hold-ups, and enforce RBI delay compensation rules.",
     url: `${SITE_URL}/refund-shows-successful-but-not-received`,
     type: "article",
+    images: [
+      {
+        url: `${SITE_URL}/blog_money_recovery.png`,
+        width: 1200,
+        height: 630,
+        alt: "Refund Shows 'Successful' but Bank Shows Nothing? Tracing & Legal Action",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Refund Shows 'Successful' but Bank Shows Nothing? Tracing & Legal Action",
+    description:
+      "Learn how to trace uncredited refunds using UTR and ARN codes, resolve bank suspense account hold-ups, and enforce RBI delay compensation rules.",
+    site: "@legalrecoveryin",
+    creator: "@legalrecoveryin",
+    images: [`${SITE_URL}/blog_money_recovery.png`],
   },
   robots: {
     index: true,

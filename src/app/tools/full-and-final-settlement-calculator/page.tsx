@@ -24,6 +24,23 @@ export const metadata: Metadata = {
     type: "website",
     siteName: "LegalRecovery.in",
     locale: "en_IN",
+    images: [
+      {
+        url: `${SITE_URL}/blog_money_recovery.png`,
+        width: 1200,
+        height: 630,
+        alt: "Full & Final Settlement Calculator (India, 2026) | LegalRecovery",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Full & Final Settlement Calculator (India, 2026) | LegalRecovery",
+    description:
+      "Statutory FnF calculator for Indian employees: calculate unpaid salary, leave encashment, gratuity, and notice period recovery under Section 17(2) of Code on Wages.",
+    site: "@legalrecoveryin",
+    creator: "@legalrecoveryin",
+    images: [`${SITE_URL}/blog_money_recovery.png`],
   },
   robots: {
     index: true,

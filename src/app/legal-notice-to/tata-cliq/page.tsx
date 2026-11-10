@@ -19,6 +19,23 @@ export const metadata: Metadata = {
       "Hold Tata UniStore Limited and third-party sellers accountable for stuck refunds, rejected return pickups, and merchant disputes under the Consumer Protection Act.",
     url: `${SITE_URL}/legal-notice-to/tata-cliq`,
     type: "article",
+    images: [
+      {
+        url: `${SITE_URL}/blog_money_recovery.png`,
+        width: 1200,
+        height: 630,
+        alt: "Tata CLiQ Refund Not Received: Statutory Escalation & Advocate Legal Notice",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Tata CLiQ Refund Not Received: Statutory Escalation & Advocate Legal Notice",
+    description:
+      "Hold Tata UniStore Limited and third-party sellers accountable for stuck refunds, rejected return pickups, and merchant disputes under the Consumer Protection Act.",
+    site: "@legalrecoveryin",
+    creator: "@legalrecoveryin",
+    images: [`${SITE_URL}/blog_money_recovery.png`],
   },
   robots: {
     index: true,

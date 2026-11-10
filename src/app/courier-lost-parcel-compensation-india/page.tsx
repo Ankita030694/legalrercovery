@@ -24,6 +24,23 @@ export const metadata: Metadata = {
     type: "article",
     siteName: "LegalRecovery.in",
     locale: "en_IN",
+    images: [
+      {
+        url: `${SITE_URL}/blog_money_recovery.png`,
+        width: 1200,
+        height: 630,
+        alt: "Courier Lost Your Parcel? Compensation Rights in India",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Courier Lost Your Parcel? Compensation Rights in India",
+    description:
+      "Statutory escalation path for lost or damaged parcels: Carriage by Road Act 2007, Consumer Protection Act 2019, striking down ₹100 liability caps, and consumer commission claims.",
+    site: "@legalrecoveryin",
+    creator: "@legalrecoveryin",
+    images: [`${SITE_URL}/blog_money_recovery.png`],
   },
   robots: {
     index: true,

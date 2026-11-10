@@ -24,6 +24,23 @@ export const metadata: Metadata = {
     type: "article",
     siteName: "LegalRecovery.in",
     locale: "en_IN",
+    images: [
+      {
+        url: `${SITE_URL}/blog_money_recovery.png`,
+        width: 1200,
+        height: 630,
+        alt: "How to File a Labour Department Complaint Online for Unpaid Salary",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "How to File a Labour Department Complaint Online for Unpaid Salary",
+    description:
+      "Statutory procedure for filing an online complaint before the Labour Commissioner, SAMADHAN portal, and state labour offices for unpaid salary, delayed FnF, and illegal deductions.",
+    site: "@legalrecoveryin",
+    creator: "@legalrecoveryin",
+    images: [`${SITE_URL}/blog_money_recovery.png`],
   },
   robots: {
     index: true,
@@ -65,12 +82,12 @@ const CASE_CITATIONS = [
     citation: "(2013) 10 SCC 324, Supreme Court of India",
     date: "Order Dated 12 August 2013",
     facts:
-      "The employee was wrongfully suspended and denied earned salaries. The employer argued financial hardship and claimed back-wages should be denied or curtailed during the dispute period.",
+      "An employee was wrongfully suspended and denied earned salary. The employer cited company financial trouble and argued back wages should not be paid during the dispute.",
     holding:
-      "The Supreme Court held that salary and wages are not a bounty or grace given by the employer, but a constitutional right to livelihood under Article 21. When an employee is kept out of wages without legal justification, the Labour Court / Tribunal must award full back wages with statutory interest. Withholding earned compensation amounts to arbitrary deprivation.",
+      "The Supreme Court held that salary is not a bonus or charity from the company, but a constitutional right under Article 21. When an employee is denied wages without legal justification, courts must award full back wages with interest.",
     amount: "100% Arrears of Wages Awarded @ 9% Statutory Annual Interest + Litigation Costs",
     takeaway:
-      "An employer cannot cite internal cash crunch, funding delays, or corporate losses to withhold earned salary. Wages enjoy constitutional priority over unsecured corporate debts.",
+      "Employers cannot cite cash crunches or business losses to withhold salary. Wages enjoy constitutional priority over company debts.",
   },
   {
     title: "High Court Judgment on Unilateral FnF Withholding and Notice-Period Deductions",
@@ -78,12 +95,12 @@ const CASE_CITATIONS = [
     citation: "Writ Petition No. 1892/2021, High Court of Judicature at Bombay",
     date: "Order Dated 18 November 2021",
     facts:
-      "Upon resignation, the employer deducted two months' gross salary from the employee's full and final settlement (FnF), alleging inadequate notice handover, and withheld his gratuity and leave encashment without conducting any domestic disciplinary inquiry.",
+      "After a resignation, an employer deducted two months' gross salary from full and final settlement (FnF), claiming poor handover. It also withheld gratuity and leave encashment without an inquiry.",
     holding:
-      "The High Court held that an employer has zero statutory authority to unilaterally forfeit wages, gratuity, or leave encashment without a formal inquiry finding actual quantifiable loss. Section 7 of the Payment of Wages Act and Section 17 of the Code on Wages prohibit unapproved deductions. The court ordered immediate release of all withheld FnF components with penal interest of 12% per annum.",
+      "The High Court ruled that employers have no legal right to withhold wages or gratuity without an inquiry proving actual financial loss. The court ordered immediate release of all withheld FnF amounts with 12% annual interest.",
     amount: "₹4,12,000 Withheld FnF Released @ 12% Penal Interest + ₹50,000 Litigation Costs",
     takeaway:
-      "Employers cannot unilaterally deduct salary under the guise of 'notice-period buyout' or 'handover delay' unless expressly adjudicated. Arbitrary deductions are summarily reversed by Labour Authorities.",
+      "Employers cannot unilaterally deduct salary for notice pay or handover delays. Unapproved deductions are overturned by Labour Authorities.",
   },
   {
     title: "High Court Ruling on Summary Recovery Powers of Labour Claims Authority",
@@ -91,12 +108,12 @@ const CASE_CITATIONS = [
     citation: "LPA No. 412/2019, High Court of Delhi",
     date: "Order Dated 24 March 2022",
     facts:
-      "The management refused to honor a settlement arrived at during conciliation for unpaid salary arrears. The Labour Commissioner issued a direct Revenue Recovery Certificate (RRC) to the District Collector to attach the company's bank accounts.",
+      "A company refused to honor a settlement agreement reached during conciliation for unpaid salary arrears. The Labour Commissioner issued a Revenue Recovery Certificate to attach the company's bank accounts.",
     holding:
-      "The Division Bench affirmed that the Labour Commissioner and Claims Authority possess summary statutory jurisdiction under Section 15 of the Payment of Wages Act (and Section 45 Code on Wages) to issue recovery certificates executable as arrears of land revenue. The court dismissed the company's appeal, ruling that summary recovery is intended precisely to prevent employers from starving workers through protracted litigation.",
+      "The High Court affirmed that the Labour Commissioner has statutory power to issue recovery certificates to attach company bank accounts. Summary recovery prevents employers from starving workers through long court cases.",
     amount: "₹18,60,000 Recovered via Bank Account Attachment by District Collector",
     takeaway:
-      "Orders and Recovery Certificates issued by the Labour Commissioner carry the full force of a civil court decree and allow District Magistrates to attach company bank accounts.",
+      "Recovery certificates issued by the Labour Commissioner carry the full power of a court decree, allowing authorities to freeze company bank accounts.",
   },
   {
     title: "Supreme Court Precedent on Recovery of Unpaid Dues Under Section 33C(2)",
@@ -104,12 +121,12 @@ const CASE_CITATIONS = [
     citation: "(1985) 4 SCC 71 / Clarified in Shankar Chakravarti (2019 SC Precedent)",
     date: "Supreme Court Established Doctrine",
     facts:
-      "Employees claimed statutory entitlements including unpaid overtime, festival bonus, and accumulated leave encashment that the company refused to settle upon exit.",
+      "Employees claimed statutory entitlements including unpaid overtime, bonus, and leave encashment that the company refused to pay after they left.",
     holding:
-      "The Supreme Court affirmed that under Section 33C(2) of the Industrial Disputes Act, any workman or employee entitled to receive money or benefits capable of being computed in terms of money can directly petition the Labour Court. The forum acts as an executing court where the management cannot reopen established contractual salary terms.",
+      "The Supreme Court affirmed that under Section 33C(2) of the Industrial Disputes Act, employees can petition the Labour Court directly for money owed. The court acts as an executing body to recover established salary dues.",
     amount: "Full Encashment Dues + Statutory Bonus with 18% Delay Damages",
     takeaway:
-      "If conciliation before the Labour Commissioner fails to yield an amicable settlement, the dispute is referred to the Labour Court under Section 33C(2) for binding financial recovery.",
+      "If conciliation before the Labour Commissioner does not settle the dispute, the case goes to the Labour Court under Section 33C(2) for binding recovery.",
   },
 ];
 
@@ -117,37 +134,37 @@ const FAQS = [
   {
     question: "How do I file a labour commissioner complaint online for unpaid salary?",
     answer:
-      "To file an online complaint, identify whether your employer falls under Central Sphere (Banks, Railways, PSUs, Multi-State Mines) or State Sphere (Private IT firms, BPOs, startups, retail, shops). For Central Sphere, log into samadhan.labour.gov.in and raise an individual dispute under Section 2A. For State Sphere, register on your state's labour portal (such as e-District in Delhi, Mahakamgar in Maharashtra, or e-Karmika in Karnataka). Upload your offer letter, last 3 salary slips, resignation acknowledgment, bank statements showing non-credit, and the 15-day advocate legal notice. The Conciliation Officer will issue a summons notice to the employer within 15–30 days.",
+      "First check your employer category. Central Sphere covers banks, railways, and PSUs. State Sphere covers private IT firms, BPOs, startups, and shops. For Central Sphere, log into samadhan.labour.gov.in and raise a Section 2A dispute. For State Sphere, register on your state labour portal like e-District Delhi, Mahakamgar, or e-Karmika. Upload your offer letter, 3 salary slips, resignation proof, and 15-day legal notice. The Conciliation Officer then summons the employer within 15 to 30 days.",
   },
   {
     question: "What is the official labour commission complaint number for salary disputes?",
     answer:
-      "For Central Sphere establishments, you can dial the Ministry of Labour & Employment Shram Suvidha toll-free helpline at 1800-180-1551. State-wise helplines include: Delhi Labour Helpline (155214 / 011-23813840), Maharashtra Shramik Sahayata (1800-22-4466), Karnataka Department of Labour (155214 / 080-22271874), Uttar Pradesh Labour Helpline (1800-180-5124), and Haryana Labour Helpline (1800-180-2129). These helplines assist in checking complaint docket status and identifying your local jurisdictional Labour Officer.",
+      "For Central Sphere firms, dial the Ministry of Labour helpline at 1800-180-1551. For Delhi, call 155214 or 011-23813840. For Maharashtra, call 1800-22-4466. For Karnataka, call 155214 or 080-22271874. Uttar Pradesh is 1800-180-5124, and Haryana is 1800-180-2129. These numbers help track docket status and find your local Labour Officer.",
   },
   {
     question: "Can IT employees, software engineers, and managers file a labour court salary complaint?",
     answer:
-      "Yes, but the legal vehicle depends on your designation and daily operational duties. Under established Supreme Court jurisprudence, the test of whether an employee is a 'workman' depends on actual job functions, not job titles. Software engineers, analysts, developers, and team members without hiring/firing or disciplinary powers qualify as workmen under Section 2(s) of the Industrial Disputes Act and can file before the Labour Commissioner. Senior managers, directors, and executives with independent administrative authority recover unpaid dues under the respective State Shops and Establishments Act (e.g., Section 21 Delhi Shops Act or Section 25 Karnataka Shops Act), the Code on Wages Section 45 Claims Authority, or a summary commercial suit under Order 37 of the CPC.",
+      "Yes. The legal route depends on your daily duties rather than job title. Software engineers, developers, and analysts without hiring or disciplinary powers qualify as workmen under Section 2(s) of the Industrial Disputes Act. They can file directly before the Labour Commissioner. Senior managers and directors can recover dues under the State Shops and Establishments Act, Code on Wages Section 45, or a summary suit under Order 37 CPC.",
   },
   {
     question: "What is the SAMADHAN portal labour complaint procedure?",
     answer:
-      "The SAMADHAN portal (samadhan.labour.gov.in) is the Government of India's electronic dispute redressal system under the Ministry of Labour & Employment. Employees register with their mobile and Aadhaar, select 'Raise Industrial Dispute', choose 'Individual Dispute (Section 2A)', enter the employer's registered CIN, name, and email, and upload the claim statement with proof of unpaid dues. The portal automatically assigns a Conciliation Officer who issues virtual or physical appearance summons to both parties to effect an amicable settlement or issue a failure report for Labour Court adjudication.",
+      "The SAMADHAN portal at samadhan.labour.gov.in is the central electronic dispute system. Register with your mobile number and Aadhaar. Select Raise Industrial Dispute and choose Individual Dispute under Section 2A. Enter the company CIN, address, and email. Upload your claim statement and salary proofs. The portal assigns a Conciliation Officer who summons both sides for an amicable settlement.",
   },
   {
     question: "How long can an employer legally delay Full & Final (FnF) settlement?",
     answer:
-      "Under Section 17(2) of the Code on Wages, 2019, where an employee resigns, is terminated, or the establishment closes, all earned wages, accumulated leave encashment, and statutory dues must be paid within two working days of exit. Employer internal policies claiming '45 to 90 days for FnF processing' are void to the extent they contradict statutory law. If payment is delayed past the statutory window, the employer is liable to pay interest and statutory compensation under Section 15 of the Payment of Wages Act and Section 45 of the Code on Wages.",
+      "Under Section 17(2) of the Code on Wages, 2019, an employer must clear all earned wages, leave encashment, and statutory dues within two working days of exit. Company policies claiming 45 to 90 days for FnF are unlawful. If the employer delays past two days, they must pay interest and statutory penalties under Section 15 of the Payment of Wages Act and Section 45 of the Code on Wages.",
   },
   {
     question: "Why should you serve an Advocate Legal Notice before filing an online labour complaint?",
     answer:
-      "Serving a formal 15-day statutory advocate legal notice creates an incontrovertible legal audit trail under Section 63 of the Bharatiya Sakshya Adhiniyam, 2023. It gives company directors, founders, and HR heads personal notice of impending civil and penal action. Over 78% of salary and FnF disputes settle immediately during this 15-day window because employers wish to avoid mandatory appearances before the Labour Commissioner, scrutiny of their PF/ESI accounts, and the risk of bank account attachment under Revenue Recovery Certificates.",
+      "Serving a formal 15-day legal notice creates solid proof under Section 63 of the Bharatiya Sakshya Adhiniyam, 2023. It puts company founders and HR heads on notice of impending legal action. Over 78% of salary disputes settle during this 15-day window. Employers prefer paying immediately over facing labour summons, PF audits, or bank freezes.",
   },
   {
     question: "Company salary nahi de rahi hai toh labour court ya commissioner mein complaint kaise karein?",
     answer:
-      "Agar company aapki salary ya FnF nahi de rahi hai, toh sabse pehle company ke Directors aur HR ko ek 15 din ka formal Advocate Legal Demand Notice bhejein. Agar wo 15 din mein paise transfer nahi karte, toh Central Sphere ke liye samadhan.labour.gov.in par ya apne state ke Labour Department portal (jaise Delhi e-District, Maharashtra Mahakamgar, ya Karnataka e-Karmika) par online complaint darj karein. Conciliation Officer company management ko summon bhejkar settlement karwata hai, aur na manne par District Magistrate dwara company ke bank account attach karne ka Recovery Certificate jari karta hai.",
+      "Agar company salary nahi deti, toh sabse pehle 15 din ka formal Legal Notice bhejein. Agar paise nahi milte, toh samadhan portal ya state labour portal par online complaint darj karein. Labour officer company ko summon bhejkar settlement karwata hai. Baat na banne par court company bank accounts attach kar sakti hai.",
   },
 ];
 
@@ -273,7 +290,7 @@ export default function LabourCommissionerSalaryPage() {
                 Statutory Summary (Labour Commissioner Salary Claim Mandate)
               </p>
               <p>
-                Under Section 17 of the Code on Wages, 2019, and the Industrial Disputes Act, monthly wages must be cleared by the 7th and exit dues within 2 working days. If an employer defaults, employees can serve a 15-day advocate legal notice, file an online dispute on the Central SAMADHAN portal or State Labour Department (Delhi e-District, Maharashtra Mahakamgar, Karnataka e-Karmika), and obtain summary Recovery Certificates to attach company bank accounts.
+                Under Section 17 of the Code on Wages, 2019, wages must be cleared by the 7th. All exit dues must be paid within 2 working days. If an employer defaults, employees can serve a 15-day advocate legal notice. They can also file an online dispute on the central SAMADHAN portal or state labour portal. Authorities can then issue recovery certificates to attach company bank accounts.
               </p>
             </div>
 

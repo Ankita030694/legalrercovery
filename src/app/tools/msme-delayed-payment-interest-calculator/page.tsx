@@ -36,6 +36,23 @@ export const metadata: Metadata = {
     siteName: "LegalRecovery.in",
     type: "website",
     locale: "en_IN",
+    images: [
+      {
+        url: `${SITE_URL}/blog_money_recovery.png`,
+        width: 1200,
+        height: 630,
+        alt: "MSME Delayed Payment Interest Calculator (3x Bank Rate)",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "MSME Delayed Payment Interest Calculator (3x Bank Rate)",
+    description:
+      "Compute compound interest at three times the RBI bank rate on overdue MSME invoices, with a downloadable claim summary.",
+    site: "@legalrecoveryin",
+    creator: "@legalrecoveryin",
+    images: [`${SITE_URL}/blog_money_recovery.png`],
   },
   robots: {
     index: true,

@@ -20,6 +20,23 @@ export const metadata: Metadata = {
     description: "What 'salary withheld' means, whether an employer can hold your pay during the notice period, and how to get withheld salary released.",
     url: "https://www.legalrecovery.in/legal-notice-for-salary-withheld-during-notice-period",
     type: "article",
+    images: [
+      {
+        url: "https://www.legalrecovery.in/blog_money_recovery.png",
+        width: 1200,
+        height: 630,
+        alt: "Salary Withheld Meaning: Can a Company Hold Your Pay?",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Salary Withheld Meaning: Can a Company Hold Your Pay?",
+    description:
+      "What 'salary withheld' means, whether an employer can hold your pay during the notice period, and how to get withheld salary released.",
+    site: "@legalrecoveryin",
+    creator: "@legalrecoveryin",
+    images: ["https://www.legalrecovery.in/blog_money_recovery.png"],
   },
 };
 

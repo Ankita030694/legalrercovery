@@ -65,9 +65,9 @@ export default function FeeRefundTableOfContents() {
       className="hidden lg:block w-72 xl:w-80 shrink-0 sticky top-28 self-start bg-white border border-slate-200/90 rounded-2xl p-5 shadow-sm"
     >
       <div className="flex items-center justify-between pb-3.5 mb-3 border-b border-slate-100">
-        <h3 className="text-xs font-black uppercase tracking-wider text-slate-800">
+        <p className="text-xs font-black uppercase tracking-wider text-slate-800">
           On This Page
-        </h3>
+        </p>
         <span className="text-[10px] font-bold text-red-600 bg-red-50 border border-red-200/60 px-2 py-0.5 rounded-full">
           Formats &amp; Rules
         </span>

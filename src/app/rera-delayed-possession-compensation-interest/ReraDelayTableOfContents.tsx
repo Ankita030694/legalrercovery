@@ -143,10 +143,10 @@ export default function ReraDelayTableOfContents({
       >
         <div className="bg-white rounded-2xl border border-slate-200 shadow-sm p-5">
           <div className="flex items-center justify-between pb-3 mb-4 border-b border-slate-100">
-            <h3 className="text-xs font-extrabold uppercase tracking-wider text-slate-900 flex items-center gap-2">
+            <p className="text-xs font-extrabold uppercase tracking-wider text-slate-900 flex items-center gap-2">
               <span className="w-2 h-2 rounded-full bg-amber-500" />
               <span>Guide Navigation</span>
-            </h3>
+            </p>
             <span className="text-[10px] font-bold px-2 py-0.5 rounded-full bg-slate-100 text-slate-600">
               {sections.length} Topics
             </span>

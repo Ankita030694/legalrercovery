@@ -19,6 +19,30 @@ export const metadata: Metadata = {
   alternates: {
     canonical: 'https://www.legalrecovery.in/recovery/contractor-payment',
   },
+  openGraph: {
+    title: "Recover Contractor Payments & Dues | LegalRecovery",
+    description: "Struggling to recover contractor payments or B2B project dues in India? Learn about MSME Samadhaan, Order 37 CPC summary suits, and legal notices.",
+    url: "https://www.legalrecovery.in/recovery/contractor-payment",
+    type: "article",
+    siteName: "LegalRecovery.in",
+    locale: "en_IN",
+    images: [
+      {
+        url: "https://www.legalrecovery.in/blog_money_recovery.png",
+        width: 1200,
+        height: 630,
+        alt: "Recover Contractor Payments & Dues | LegalRecovery",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Recover Contractor Payments & Dues | LegalRecovery",
+    description: "Struggling to recover contractor payments or B2B project dues in India? Learn about MSME Samadhaan, Order 37 CPC summary suits, and legal notices.",
+    site: "@legalrecoveryin",
+    creator: "@legalrecoveryin",
+    images: ["https://www.legalrecovery.in/blog_money_recovery.png"],
+  },
 };
 
 export default function ContractorPaymentPage() {

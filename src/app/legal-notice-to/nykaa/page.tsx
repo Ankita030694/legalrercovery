@@ -20,6 +20,23 @@ export const metadata: Metadata = {
       "Enforce consumer protection rights against FSN E-Commerce Ventures. Learn grievance escalation timelines, evidence preservation under BSA Section 63, and advocate notice drafting.",
     url: `${SITE_URL}/legal-notice-to/nykaa`,
     type: "article",
+    images: [
+      {
+        url: `${SITE_URL}/blog_money_recovery.png`,
+        width: 1200,
+        height: 630,
+        alt: "How to Send Nykaa a Legal Notice for Stuck Refunds or Counterfeit Cosmetics",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "How to Send Nykaa a Legal Notice for Stuck Refunds or Counterfeit Cosmetics",
+    description:
+      "Enforce consumer protection rights against FSN E-Commerce Ventures. Learn grievance escalation timelines, evidence preservation under BSA Section 63, and advocate notice drafting.",
+    site: "@legalrecoveryin",
+    creator: "@legalrecoveryin",
+    images: [`${SITE_URL}/blog_money_recovery.png`],
   },
   robots: {
     index: true,

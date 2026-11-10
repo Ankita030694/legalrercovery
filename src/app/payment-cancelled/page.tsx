@@ -6,7 +6,33 @@ import Link from "next/link";
 
 export const metadata: Metadata = {
   title: "Payment Cancelled | LegalRecovery",
-  description: "Payment cancelled status page for LegalRecovery services.",
+  description: "Payment cancelled status and checkout resumption for LegalRecovery services.",
+  alternates: {
+    canonical: "/payment-cancelled",
+  },
+  openGraph: {
+    title: "Payment Cancelled | LegalRecovery",
+    description: "Payment cancelled status and checkout resumption for LegalRecovery services.",
+    url: "https://www.legalrecovery.in/payment-cancelled",
+    type: "website",
+    siteName: "LegalRecovery.in",
+    images: [
+      {
+        url: "https://www.legalrecovery.in/blog_money_recovery.png",
+        width: 1200,
+        height: 630,
+        alt: "Payment Cancelled | LegalRecovery",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Payment Cancelled | LegalRecovery",
+    description: "Payment cancelled status and checkout resumption for LegalRecovery services.",
+    site: "@legalrecoveryin",
+    creator: "@legalrecoveryin",
+    images: ["https://www.legalrecovery.in/blog_money_recovery.png"],
+  },
   robots: {
     index: false,
     follow: false,

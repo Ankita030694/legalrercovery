@@ -19,6 +19,30 @@ export const metadata: Metadata = {
   alternates: {
     canonical: 'https://www.legalrecovery.in/recovery/hand-loan-amount',
   },
+  openGraph: {
+    title: "Recover Hand Loan Given on Trust in India | LegalRecovery",
+    description: "Lent a hand loan on trust without an agreement? Learn how to recover your money legally using digital proofs, legal notices, and civil court remedies.",
+    url: "https://www.legalrecovery.in/recovery/hand-loan-amount",
+    type: "article",
+    siteName: "LegalRecovery.in",
+    locale: "en_IN",
+    images: [
+      {
+        url: "https://www.legalrecovery.in/blog_money_recovery.png",
+        width: 1200,
+        height: 630,
+        alt: "Recover Hand Loan Given on Trust in India | LegalRecovery",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Recover Hand Loan Given on Trust in India | LegalRecovery",
+    description: "Lent a hand loan on trust without an agreement? Learn how to recover your money legally using digital proofs, legal notices, and civil court remedies.",
+    site: "@legalrecoveryin",
+    creator: "@legalrecoveryin",
+    images: ["https://www.legalrecovery.in/blog_money_recovery.png"],
+  },
 };
 
 export default function HandLoanAmountPage() {

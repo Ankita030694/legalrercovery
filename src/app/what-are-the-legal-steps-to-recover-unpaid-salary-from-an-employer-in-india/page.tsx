@@ -25,6 +25,23 @@ export const metadata: Metadata = {
     description: "'Salary recovery' can mean a payslip deduction or reclaiming unpaid pay. What both mean, and the legal steps to recover salary your employer owes.",
     url: "https://www.legalrecovery.in/what-are-the-legal-steps-to-recover-unpaid-salary-from-an-employer-in-india",
     type: "article",
+    images: [
+      {
+        url: "https://www.legalrecovery.in/blog_money_recovery.png",
+        width: 1200,
+        height: 630,
+        alt: "Salary Recovery: Meaning & How to Recover Unpaid Salary",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Salary Recovery: Meaning & How to Recover Unpaid Salary",
+    description:
+      "'Salary recovery' can mean a payslip deduction or reclaiming unpaid pay. What both mean, and the legal steps to recover salary your employer owes.",
+    site: "@legalrecoveryin",
+    creator: "@legalrecoveryin",
+    images: ["https://www.legalrecovery.in/blog_money_recovery.png"],
   },
 };
 

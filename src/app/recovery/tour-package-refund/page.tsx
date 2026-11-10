@@ -18,6 +18,30 @@ export const metadata: Metadata = {
   alternates: {
     canonical: 'https://www.legalrecovery.in/recovery/tour-package-refund',
   },
+  openGraph: {
+    title: "Tour Package Refund Recovery in India | LegalRecovery",
+    description: "Struggling to get a tour package refund in India? Learn your rights against arbitrary cancellations and recover your money with expert legal help.",
+    url: "https://www.legalrecovery.in/recovery/tour-package-refund",
+    type: "article",
+    siteName: "LegalRecovery.in",
+    locale: "en_IN",
+    images: [
+      {
+        url: "https://www.legalrecovery.in/blog_money_recovery.png",
+        width: 1200,
+        height: 630,
+        alt: "Tour Package Refund Recovery in India | LegalRecovery",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Tour Package Refund Recovery in India | LegalRecovery",
+    description: "Struggling to get a tour package refund in India? Learn your rights against arbitrary cancellations and recover your money with expert legal help.",
+    site: "@legalrecoveryin",
+    creator: "@legalrecoveryin",
+    images: ["https://www.legalrecovery.in/blog_money_recovery.png"],
+  },
 };
 
 export default function TourRefundPage() {

@@ -161,9 +161,9 @@ export default function RedbusTableOfContents({
       >
         <div className="flex items-center gap-2 mb-4 pb-3 border-b border-slate-100">
           <span className="w-2 h-2 rounded-full bg-[#DC2626]" />
-          <h2 className="text-xs font-black uppercase tracking-wider text-slate-900">
+          <p className="text-xs font-black uppercase tracking-wider text-slate-900">
             Guide Navigation
-          </h2>
+          </p>
         </div>
 
         <nav className="flex flex-col space-y-1">

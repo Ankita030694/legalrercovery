@@ -24,6 +24,23 @@ export const metadata: Metadata = {
     type: "article",
     siteName: "LegalRecovery.in",
     locale: "en_IN",
+    images: [
+      {
+        url: `${SITE_URL}/blog_money_recovery.png`,
+        width: 1200,
+        height: 630,
+        alt: "PG Lock-In, Notice Period and Deposit Deductions: Legal Rules in India",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "PG Lock-In, Notice Period and Deposit Deductions: Legal Rules in India",
+    description:
+      "Statutory guide to PG lock-in enforceability under Section 74 Contract Act, 30-day notice period rules in Pune, Bengaluru & NCR, and illegal deposit deductions.",
+    site: "@legalrecoveryin",
+    creator: "@legalrecoveryin",
+    images: [`${SITE_URL}/blog_money_recovery.png`],
   },
   robots: {
     index: true,

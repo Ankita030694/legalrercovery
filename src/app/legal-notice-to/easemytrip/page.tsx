@@ -23,6 +23,23 @@ export const metadata: Metadata = {
     type: "article",
     siteName: "LegalRecovery.in",
     locale: "en_IN",
+    images: [
+      {
+        url: `${SITE_URL}/blog_money_recovery.png`,
+        width: 1200,
+        height: 630,
+        alt: "EaseMyTrip Refund Issue: From Complaint to Legal Notice",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "EaseMyTrip Refund Issue: From Complaint to Legal Notice",
+    description:
+      "Statutory escalation path for delayed EaseMyTrip flight, hotel and holiday package refunds, EMT wallet traps, and OTA joint liability under DGCA CAR & CPA 2019.",
+    site: "@legalrecoveryin",
+    creator: "@legalrecoveryin",
+    images: [`${SITE_URL}/blog_money_recovery.png`],
   },
   robots: {
     index: true,

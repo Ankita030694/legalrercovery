@@ -23,6 +23,23 @@ export const metadata: Metadata = {
     siteName: "LegalRecovery.in",
     locale: "en_IN",
     type: "article",
+    images: [
+      {
+        url: `${SITE_URL}/blog_money_recovery.png`,
+        width: 1200,
+        height: 630,
+        alt: "BigBasket Refund Missing? Legal Steps to Recover Your Money",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "BigBasket Refund Missing? Legal Steps to Recover Your Money",
+    description:
+      "Missing BigBasket refund or uncredited source bank payment? Enforce 48-hour e-commerce rules, bypass wallet traps, and serve an advocate notice.",
+    site: "@legalrecoveryin",
+    creator: "@legalrecoveryin",
+    images: [`${SITE_URL}/blog_money_recovery.png`],
   },
   robots: {
     index: true,
@@ -55,7 +72,7 @@ const CASE_CITATIONS = [
     citation: "CC/35/2022, South Mumbai District Consumer Disputes Redressal Commission",
     date: "Order Dated 30 November 2023",
     summary:
-      "The District Commission held the quick-commerce entity liable for deficiency in service after it failed to refund an undelivered grocery item. The forum directed full refund of the product amount, plus ₹5,000 as compensation for mental harassment and ₹3,000 towards litigation costs.",
+      "The District Commission found the quick-commerce company guilty of service deficiency after failing to refund an undelivered grocery item. The forum directed a full product refund, plus ₹5,000 compensation for mental distress and ₹3,000 for legal costs.",
     award: "Full Refund + ₹5,000 Harassment Damages + ₹3,000 Costs",
   },
   {
@@ -63,7 +80,7 @@ const CASE_CITATIONS = [
     citation: "CC No. 238/2021, DCDRC Kollam (Kerala)",
     date: "Order Dated 28 February 2022",
     summary:
-      "When an online delivery platform failed to fulfill an order and subsequently withheld the customer refund, the forum held the platform strictly responsible. The commission awarded a full refund with 9% annual interest, alongside ₹5,000 compensation for mental agony and ₹3,000 litigation expenses.",
+      "When an online delivery platform failed to deliver an order and withheld the refund, the forum held the platform strictly responsible. The commission awarded a full refund with 9% annual interest, ₹5,000 compensation, and ₹3,000 legal costs.",
     award: "Full Refund @ 9% Interest + ₹5,000 Compensation + ₹3,000 Costs",
   },
   {
@@ -71,7 +88,7 @@ const CASE_CITATIONS = [
     citation: "Consumer Complaint No. 114/2023, DCDRC Chandigarh",
     date: "Order Dated 14 September 2023",
     summary:
-      "The consumer commission pulled up a quick-commerce delivery operator for short weight on grocery produce and failing to address the grievance through automated support bots. The court established that automated chatbot denials do not extinguish consumer statutory rights under Section 2(47) of CPA 2019.",
+      "The consumer commission penalized a delivery app for underweight grocery produce and useless automated bot replies. The court ruled that chatbot denials cannot extinguish consumer rights under Section 2(47) of the Act.",
     award: "Short-Weight Price Adjustment + ₹10,000 Compensation + ₹5,000 Costs",
   },
 ];
@@ -80,37 +97,37 @@ const FAQS = [
   {
     question: "What should I do if BigBasket shows 'Refund Successful' but the funds never credited to my bank account?",
     answer:
-      "Demand an official 12-digit Acquirer Reference Number (ARN) or Unique Transaction Reference (UTR) from BigBasket customer support. If customer care provides only an internal BigBasket reference or the UTR is not traceable by your bank, write directly to the Grievance Officer giving them 48 hours to confirm the banking clearing log under Rule 4(5) of the E-Commerce Rules, 2020.",
+      "Demand an official 12-digit ARN or UTR number from BigBasket support. If support provides only an internal reference number or your bank cannot trace it, email the Grievance Officer. Under Rule 4(5) of the E-Commerce Rules, they must acknowledge and investigate within 48 hours.",
   },
   {
     question: "Can BigBasket legally refuse to refund my bank account and force store credits into bb wallet?",
     answer:
-      "No. Forcing a consumer to accept closed-loop wallet credits or store points instead of returning funds to the original payment method is an illegal 'Forced Action' under the CCPA Dark Patterns Guidelines, 2023. Under Section 2(47) of the Consumer Protection Act, 2019, you have the right to demand a 100% cash remittance directly to your bank account or payment card.",
+      "No. Forcing you to accept wallet credits or points instead of a bank refund is illegal under CCPA Dark Patterns Guidelines. Under Section 2(47) of the Consumer Protection Act, you have the right to a 100% refund directly to your original bank account or card.",
   },
   {
     question: "How long can BigBasket legally take to credit a refund for cancelled or returned grocery items?",
     answer:
-      "For UPI payments, the credit must reflect within 24 to 48 hours. For credit and debit cards, the standard banking turnaround time is 3 to 5 business days, and for NetBanking, 2 to 4 working days. Under Rule 5(3) of the Consumer Protection (E-Commerce) Rules, 2020, any refund dispute unresolved past 30 days entitles the consumer to initiate proceedings before the District Commission.",
+      "UPI refunds must credit within 24 to 48 hours. Card refunds take 3 to 5 business days, and NetBanking takes 2 to 4 days. Under Rule 5(3) of the E-Commerce Rules, unresolved refund disputes past 30 days entitle you to file a consumer court case on e-Jagriti.",
   },
   {
     question: "What can I do if BigBasket customer support closes my ticket claiming the perishable return window expired?",
     answer:
-      "BigBasket automated bots frequently close tickets for spoiled milk, rotten vegetables, or expired groceries citing a strict 2-hour or 4-hour reporting cutoff. However, the Sale of Goods Act, 1930 and the Consumer Protection Act, 2019 require goods to be of merchantable quality. Preserve timestamped photos of the damaged produce, invoice, and chat logs, then issue a formal grievance to overturn the bot closure.",
+      "Automated bots often close complaints for spoiled milk or rotten vegetables citing a 2-hour cutoff. However, the law requires goods to be of merchantable quality. Save photos of the damaged produce, invoice, and chat logs, then email the Grievance Officer directly.",
   },
   {
     question: "How do I locate and trace my BigBasket refund ARN or UTR reference number with my bank?",
     answer:
-      "Check your BigBasket registered email invoice and the order details tab in the app under 'View Refund Details'. If the 12-digit ARN or UTR is missing, email grievanceofficer@bigbasket.com requesting the banking acquirer settlement slip. Once obtained, submit this number to your bank branch or customer grievance portal to track the inward clearing settlement.",
+      "Check your registered email invoice or the 'View Refund Details' section in the app. If the 12-digit ARN or UTR is missing, email grievanceofficer@bigbasket.com for the bank payment slip. You can then give this number to your bank to trace the credit.",
   },
   {
     question: "Who is the statutory Grievance Officer for BigBasket and how do I escalate an ignored grocery complaint?",
     answer:
-      "The designated Grievance Officer for Innovative Retail Concepts Private Limited (operating BigBasket and BB Now) can be contacted at grievanceofficer@bigbasket.com or by physical mail at Ranka Junction, No. 224, 4th Floor, Vijinapura, Old Madras Road, K R Puram, Bengaluru, Karnataka 560016. By law, the officer must acknowledge your communication within 48 hours.",
+      "You can email the Grievance Officer of Innovative Retail Concepts at grievanceofficer@bigbasket.com. You can also write to their Bengaluru headquarters at Ranka Junction, KR Puram. By law, the officer must acknowledge your complaint within 48 hours.",
   },
   {
     question: "BigBasket se kharab saman ya refund na milne par legal notice kaise bheje aur kitna kharcha lagta hai?",
     answer:
-      "Agar BigBasket support kharab saman ya atke huye refund ka paisa wapas na kare, toh aap advocate ke jariye ek formal statutory legal notice bhej sakte hain. LegalRecovery.in par verified advocate ₹999 ki transparent fee mein notice draft karke Speed Post aur email se Innovative Retail Concepts ko dispatch karte hain, jismein 15 din ka payment time diya jata hai.",
+      "Agar BigBasket kharab saman ya atke refund ka paisa na de, toh aap advocate notice bhej sakte hain. LegalRecovery.in par verified advocates ₹999 mein notice draft karke Speed Post aur email se bhejte hain, jismein 15 din ka payment time diya jata hai.",
   },
 ];
 
@@ -261,10 +278,10 @@ export default function BigBasketRefundLegalNoticePage() {
                       Direct Legal Answer: BigBasket Refund Liability
                     </h2>
                     <p className="text-sm sm:text-base font-semibold text-slate-900 leading-relaxed">
-                      Innovative Retail Concepts Private Limited is legally liable for missing BigBasket refunds under
-                      Section 2(47) of the Consumer Protection Act, 2019 and Rule 4(5) of the E-Commerce Rules, 2020. You
-                      are entitled to a full refund to your source account. First, demand your 12-digit ARN/UTR from
-                      their Grievance Officer within 48 hours; if unresolved, serve a 15-day advocate legal notice.
+                      Innovative Retail Concepts is liable for missing BigBasket refunds under
+                      Section 2(47) of the Consumer Protection Act and E-Commerce Rules. You
+                      are entitled to a full refund to your source account. Demand your 12-digit ARN
+                      from their Grievance Officer; if unresolved, serve a 15-day advocate legal notice.
                     </p>
                   </div>
                 </div>

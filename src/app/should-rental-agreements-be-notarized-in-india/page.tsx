@@ -21,6 +21,23 @@ export const metadata: Metadata = {
     description: "Is a notarized 11-month rent agreement valid in court, and is one without a notary valid? When registration becomes mandatory, explained simply.",
     url: "https://www.legalrecovery.in/should-rental-agreements-be-notarized-in-india",
     type: "article",
+    images: [
+      {
+        url: "https://www.legalrecovery.in/blog_money_recovery.png",
+        width: 1200,
+        height: 630,
+        alt: "Is a Notarized Rent Agreement Valid? India Rules Explained",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Is a Notarized Rent Agreement Valid? India Rules Explained",
+    description:
+      "Is a notarized 11-month rent agreement valid in court, and is one without a notary valid? When registration becomes mandatory, explained simply.",
+    site: "@legalrecoveryin",
+    creator: "@legalrecoveryin",
+    images: ["https://www.legalrecovery.in/blog_money_recovery.png"],
   },
 };
 

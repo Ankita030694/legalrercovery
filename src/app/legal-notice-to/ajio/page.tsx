@@ -20,6 +20,23 @@ export const metadata: Metadata = {
     type: "article",
     siteName: "LegalRecovery.in",
     locale: "en_IN",
+    images: [
+      {
+        url: `${SITE_URL}/blog_money_recovery.png`,
+        width: 1200,
+        height: 630,
+        alt: "Recover Stuck AJIO Refund: Legal Notice & Consumer Court Guide",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Recover Stuck AJIO Refund: Legal Notice & Consumer Court Guide",
+    description:
+      "Step-by-step statutory escalation guide for missing AJIO refunds, return rejections, and legal notices to Reliance Retail under Consumer Protection Rules.",
+    site: "@legalrecoveryin",
+    creator: "@legalrecoveryin",
+    images: [`${SITE_URL}/blog_money_recovery.png`],
   },
   robots: {
     index: true,

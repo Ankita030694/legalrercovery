@@ -22,6 +22,23 @@ export const metadata: Metadata = {
       "Trace your Myntra refund reference number (ARN/UTR), invoke E-Commerce Rules grievance timelines, and serve a formal legal notice to Myntra.",
     url: `${SITE_URL}/legal-notice-to/myntra`,
     type: "article",
+    images: [
+      {
+        url: `${SITE_URL}/blog_money_recovery.png`,
+        width: 1200,
+        height: 630,
+        alt: "Myntra Refund Processed but Not in Bank? Recovery Steps",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Myntra Refund Processed but Not in Bank? Recovery Steps",
+    description:
+      "Trace your Myntra refund reference number (ARN/UTR), invoke E-Commerce Rules grievance timelines, and serve a formal legal notice to Myntra.",
+    site: "@legalrecoveryin",
+    creator: "@legalrecoveryin",
+    images: [`${SITE_URL}/blog_money_recovery.png`],
   },
   robots: {
     index: true,
@@ -35,37 +52,37 @@ const FAQ_ITEMS = [
   {
     question: "Why does Myntra status state 'Refund Processed' when my bank balance has not increased?",
     answer:
-      "Myntra's internal dashboard updates to 'Refund Processed' as soon as its merchant system fires an API credit instruction to its payment gateway (e.g., Razorpay, PayU, or Citrus). If an inter-bank settlement drop occurs across the NPCI UPI switch or card networks, the funds become trapped in an unmapped suspense clearing pool at the issuing bank rather than crediting your ledger balance.",
+      "Myntra shows 'Refund Processed' as soon as its system sends a credit request to its payment gateway. If a bank settlement error occurs across UPI or card networks, the funds get stuck in a clearing account at the bank rather than reaching your balance.",
   },
   {
     question: "What is the statutory time limit for Myntra to credit a returned apparel refund?",
     answer:
-      "Under Rule 4(5) of the Consumer Protection (E-Commerce) Rules, 2020, every grievance must be acknowledged within 48 hours and redressed within 30 days. For electronic reversals, the RBI Master Direction on Harmonisation of Turn Around Time mandates that merchant refund reversals be completed within T+1 working day once accepted, failing which compensation of ₹100 per day applies for bank-attributable delays.",
+      "Under Rule 4(5) of the E-Commerce Rules, complaints must be acknowledged within 48 hours and resolved within 30 days. Under RBI rules, refund transfers must complete within T+1 working days once approved, or daily compensation applies for bank delays.",
   },
   {
     question: "How can I challenge a courier executive who wrongfully rejected my Myntra doorstep return?",
     answer:
-      "Under Section 39 of the Sale of Goods Act, 1930, delivery of the return consignment to the carrier constitutes prima facie return to the seller. If a field courier executive arbitrarily claims 'quality check failed' or 'tags missing' on an unworn garment, insist on a recorded written refusal or video the pristine item with tags attached, and immediately escalate to the Myntra Nodal Officer citing Rule 6(5) unfair trade practice.",
+      "Under Section 39 of the Sale of Goods Act, handing the item to the delivery partner counts as returning it to the seller. If a courier wrongly rejects an unworn garment with tags, record a video of the item and email Myntra's grievance team immediately.",
   },
   {
     question: "Is Myntra legally allowed to issue store credit or M-Credit instead of a cash bank refund?",
     answer:
-      "No. Under the Central Consumer Protection Authority (CCPA) Guidelines for Prevention and Regulation of Dark Patterns, 2023, forcing store credit or wallet vouchers in lieu of the original payment method without explicit, uncoerced consumer consent constitutes a deceptive practice. Consumers have a statutory right to receive refunds back to the primary debit card, credit card, or bank account used at checkout.",
+      "No. Under CCPA Dark Patterns Guidelines, forcing customers to take wallet vouchers instead of a bank refund is an illegal practice. You have the statutory right to receive a full refund directly to your original payment card or bank account.",
   },
   {
     question: "Where can I find the official contact details for the Myntra Grievance Officer in Bengaluru?",
     answer:
-      "Under Rule 4(5) of the E-Commerce Rules, Myntra Designs Private Limited designates its Grievance Officer at Buildings Alyssa, Begonia and Clover, Embassy Tech Village, Outer Ring Road, Devarabeesanahalli, Bengaluru, Karnataka 560103. Escalations can be formally transmitted via email to grievance@myntra.com, requiring mandatory acknowledgement within 48 business hours.",
+      "Under Rule 4(5) of the E-Commerce Rules, Myntra's Grievance Officer is located at Embassy Tech Village, Outer Ring Road, Bengaluru. You can email grievance@myntra.com. By law, they must send a written response within 48 hours.",
   },
   {
     question: "What compensation can consumer commissions award if Myntra withholds a legitimate refund?",
     answer:
-      "District Consumer Disputes Redressal Commissions regularly direct Myntra Designs Pvt Ltd to disburse the full withheld order amount alongside 9% to 18% annual interest from the date of return pickup. Forums also routinely award ₹5,000 to ₹25,000 in punitive compensation for mental agony and deficiency of service, plus reimbursement of litigation costs under Section 39 of the Consumer Protection Act, 2019.",
+      "District Consumer Commissions order Myntra to refund the full order amount with 9% to 18% annual interest. Courts also award ₹5,000 to ₹25,000 in compensation for mental distress and legal costs under Section 39 of the Consumer Protection Act.",
   },
   {
     question: "Myntra refund nahi mila to consumer court me complaint kaise kare?",
     answer:
-      "Agar Myntra customer care refund issue solve nahi karta, toh sabse pehle 12-digit UPI RRN ya 23-digit ARN lekar bank se non-receipt confirmation lein. Uske baad Myntra Grievance Officer ko statutory email bhejein. Agar 15 dino me samadhan nahi hota, toh legal notice serve karein aur e-Jagriti portal par District Consumer Commission me online case darj karein, jisme ₹5 lakh tak ke daawe par court fee shunya hoti hai.",
+      "Agar Myntra refund na de, toh 12-digit UPI RRN ya ARN lekar bank se confirmation lein. Phir Myntra Grievance Officer ko email bhejein. 15 din me hal na hone par advocate notice bhejein aur e-Jagriti par case darj karein.",
   },
 ];
 
@@ -253,7 +270,7 @@ export default function MyntraDisputePage() {
                   Statutory Answer Box (Immediate Legal Position)
                 </div>
                 <p className="text-base sm:text-lg font-medium leading-relaxed text-slate-800">
-                  If Myntra marks your refund as &ldquo;Processed&rdquo; but your bank account shows no credit, liability rests jointly on Myntra Designs Private Limited under Rule 4(5) of the Consumer Protection (E-Commerce) Rules, 2020 and the merchant acquirer. Request your 23-digit Acquirer Reference Number (ARN) or 12-digit UPI RRN, lodge an issuing bank trace, and issue an advocate legal notice if uncredited within 15 days.
+                  If Myntra marks your refund as 'Processed' but your bank shows no credit, Myntra Designs is liable under E-Commerce Rules. Request your 23-digit ARN or 12-digit UPI RRN to trace the payment with your bank. If uncredited within 15 days, serve an advocate legal notice.
                 </p>
               </div>
 

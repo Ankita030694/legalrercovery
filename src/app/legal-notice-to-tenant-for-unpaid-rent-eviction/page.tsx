@@ -24,6 +24,23 @@ export const metadata: Metadata = {
     type: "article",
     siteName: "LegalRecovery.in",
     locale: "en_IN",
+    images: [
+      {
+        url: `${SITE_URL}/blog_money_recovery.png`,
+        width: 1200,
+        height: 630,
+        alt: "Legal Notice to Tenant for Unpaid Rent & Eviction (Guide)",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Legal Notice to Tenant for Unpaid Rent & Eviction (Guide)",
+    description:
+      "Statutory escalation path for recovering rent arrears, serving a 15-day termination notice under Section 106 TPA, claiming mesne profits, and securing lawful eviction.",
+    site: "@legalrecoveryin",
+    creator: "@legalrecoveryin",
+    images: [`${SITE_URL}/blog_money_recovery.png`],
   },
   robots: {
     index: true,

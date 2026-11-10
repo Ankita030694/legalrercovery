@@ -24,6 +24,23 @@ export const metadata: Metadata = {
     type: "article",
     siteName: "LegalRecovery.in",
     locale: "en_IN",
+    images: [
+      {
+        url: `${SITE_URL}/blog_money_recovery.png`,
+        width: 1200,
+        height: 630,
+        alt: "Life Insurance Death Claim Rejected? Section 45 Rights",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Life Insurance Death Claim Rejected? Section 45 Rights",
+    description:
+      "Statutory guide on Section 45 Insurance Act incontestability, overturning death claim repudiations for non-disclosure, Ombudsman rules, and advocate notice.",
+    site: "@legalrecoveryin",
+    creator: "@legalrecoveryin",
+    images: [`${SITE_URL}/blog_money_recovery.png`],
   },
   robots: {
     index: true,

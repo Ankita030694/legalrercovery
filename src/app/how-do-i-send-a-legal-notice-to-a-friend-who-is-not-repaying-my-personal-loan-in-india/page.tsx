@@ -19,6 +19,30 @@ export const metadata: Metadata = {
   alternates: {
     canonical: 'https://www.legalrecovery.in/how-do-i-send-a-legal-notice-to-a-friend-who-is-not-repaying-my-personal-loan-in-india',
   },
+  openGraph: {
+    title: "How to Send a Legal Notice to a Friend for Personal Loan?",
+    description: "Guide on sending a legal notice to a friend in India for an unpaid personal loan. Understand drafting rules, evidence checklists, and legal remedies.",
+    url: "https://www.legalrecovery.in/how-do-i-send-a-legal-notice-to-a-friend-who-is-not-repaying-my-personal-loan-in-india",
+    type: "article",
+    siteName: "LegalRecovery.in",
+    locale: "en_IN",
+    images: [
+      {
+        url: "https://www.legalrecovery.in/blog_money_recovery.png",
+        width: 1200,
+        height: 630,
+        alt: "How to Send a Legal Notice to a Friend for Personal Loan?",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "How to Send a Legal Notice to a Friend for Personal Loan?",
+    description: "Guide on sending a legal notice to a friend in India for an unpaid personal loan. Understand drafting rules, evidence checklists, and legal remedies.",
+    site: "@legalrecoveryin",
+    creator: "@legalrecoveryin",
+    images: ["https://www.legalrecovery.in/blog_money_recovery.png"],
+  },
 };
 
 export default function FriendNoticePage() {

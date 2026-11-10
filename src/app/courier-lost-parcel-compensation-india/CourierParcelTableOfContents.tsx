@@ -145,9 +145,9 @@ export default function CourierParcelTableOfContents({
         <div className="bg-white rounded-2xl border border-slate-200 p-5 shadow-sm">
           <div className="flex items-center gap-2 pb-4 mb-4 border-b border-slate-100">
             <span className="w-2.5 h-2.5 rounded-full bg-[#DC2626]" />
-            <h2 className="text-xs font-extrabold uppercase tracking-wider text-slate-900">
+            <p className="text-xs font-extrabold uppercase tracking-wider text-slate-900">
               Page Navigation
-            </h2>
+            </p>
           </div>
 
           <nav aria-label="Table of contents" className="space-y-1">

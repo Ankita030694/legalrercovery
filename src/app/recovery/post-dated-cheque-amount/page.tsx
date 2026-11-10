@@ -24,6 +24,23 @@ export const metadata: Metadata = {
     description: "What PDC and security cheques mean, and what to do if a post-dated cheque bounces: the Section 138 notice deadlines and your recovery options.",
     url: "https://www.legalrecovery.in/recovery/post-dated-cheque-amount",
     type: "article",
+    images: [
+      {
+        url: "https://www.legalrecovery.in/blog_money_recovery.png",
+        width: 1200,
+        height: 630,
+        alt: "Post-Dated or Security Cheque Bounced? What to Do Next",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Post-Dated or Security Cheque Bounced? What to Do Next",
+    description:
+      "What PDC and security cheques mean, and what to do if a post-dated cheque bounces: the Section 138 notice deadlines and your recovery options.",
+    site: "@legalrecoveryin",
+    creator: "@legalrecoveryin",
+    images: ["https://www.legalrecovery.in/blog_money_recovery.png"],
   },
 };
 

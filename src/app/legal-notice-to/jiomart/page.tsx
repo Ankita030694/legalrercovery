@@ -22,6 +22,23 @@ export const metadata: Metadata = {
       "Statutory rights for wrong items, missing groceries, and delayed refunds from Reliance Retail Limited. Legal notice drafting and consumer court remedies.",
     url: `${SITE_URL}/legal-notice-to/jiomart`,
     type: "article",
+    images: [
+      {
+        url: `${SITE_URL}/blog_money_recovery.png`,
+        width: 1200,
+        height: 630,
+        alt: "Wrong JioMart Delivery or Delayed Refund? Legal Escalation Steps",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Wrong JioMart Delivery or Delayed Refund? Legal Escalation Steps",
+    description:
+      "Statutory rights for wrong items, missing groceries, and delayed refunds from Reliance Retail Limited. Legal notice drafting and consumer court remedies.",
+    site: "@legalrecoveryin",
+    creator: "@legalrecoveryin",
+    images: [`${SITE_URL}/blog_money_recovery.png`],
   },
   robots: {
     index: true,
@@ -35,32 +52,32 @@ const FAQ_ITEMS = [
   {
     question: "How many days does JioMart legally have to issue a refund for returned grocery or canceled orders?",
     answer:
-      "Under Rule 4(5) of the Consumer Protection (E-Commerce) Rules, 2020 and RBI Turn Around Time directives, refund reversals for electronic payments must be completed within T+1 working day post-approval. For cash-on-delivery orders, JioMart must disburse the amount directly to the customer's verified bank account without imposing mandatory wallet balances.",
+      "Under E-Commerce Rules, 2020 and RBI directives, electronic payment refunds must be processed within T+1 working days of approval. For cash-on-delivery orders, JioMart must refund directly to your bank account without forcing you to accept wallet credits.",
   },
   {
     question: "Can JioMart refuse a refund if a delivered grocery or FMCG product is expired or damaged?",
     answer:
-      "No. Section 2(47) of the Consumer Protection Act, 2019 classifies delivering expired or substandard consumable goods as an unfair trade practice. Consumer commissions have repeatedly ruled that buyers are not responsible for checking expiry dates prior to receiving packages, and platforms cannot disclaim liability under non-returnable grocery policies.",
+      "No. Delivering expired or damaged goods is an unfair trade practice under Section 2(47) of the Consumer Protection Act, 2019. Consumer courts hold that platforms cannot hide behind non-returnable policies when delivering damaged groceries.",
   },
   {
     question: "What should I do if JioMart customer care marks my wrong delivery complaint as 'resolved' without picking up the item?",
     answer:
-      "When JioMart automated support closes a wrong delivery ticket without resolution, escalate immediately to JioMart's Grievance Officer at grievanceofficer@jiomart.com quoting your original ticket ID. If no remedy is provided within 48 hours as mandated by Rule 4(5), lodge an NCH 1915 complaint followed by an advocate legal notice.",
+      "If chatbot support closes your ticket without resolving it, email JioMart's Grievance Officer at grievanceofficer@jiomart.com with your order details. Under E-Commerce Rules, they must respond within 48 hours. If unresolved, call the National Consumer Helpline (1915) and send a legal notice.",
   },
   {
     question: "Is Reliance Retail Limited personally liable if a third-party seller on JioMart sends the wrong product?",
     answer:
-      "Yes. Under the Consumer Protection (E-Commerce) Rules, 2020, marketplace platforms bear statutory fallback liability if an onboarded seller fails to deliver ordered goods or refuses lawful refunds. Reliance Retail cannot seek complete intermediary immunity under Section 79 of the IT Act when it controls checkout, invoicing, and logistics fulfillment.",
+      "Yes. Under E-Commerce Rules, 2020, marketplace platforms have fallback liability if a seller fails to deliver goods or refund money. Reliance Retail manages payment, invoicing, and delivery. It cannot escape legal liability for third-party seller defects.",
   },
   {
     question: "Can JioMart force me to accept a JioMart Wallet balance or coupon instead of a bank refund?",
     answer:
-      "Under the CCPA Guidelines for Prevention and Regulation of Dark Patterns, 2023, forcing store credit or wallet vouchers without explicit, uncoerced consumer consent is strictly prohibited. Consumers possess a statutory right to insist on a direct credit to the original payment source (UPI, debit/credit card, or net banking).",
+      "Under CCPA Dark Patterns Guidelines, 2023, forcing store credit or wallet balance without your consent is illegal. Consumers have a statutory right to a direct refund back to the original payment method (UPI, bank account, or card).",
   },
   {
     question: "JioMart par galat saman deliver hone par ya refund na aane par legal notice kaise bhejein?",
     answer:
-      "Agar JioMart helpline 1800 890 1222 ya grievance officer se samadhan na mile, toh delivery invoice, unboxing photos, aur payment proof ke sath Reliance Retail Limited ko formal legal demand notice bhejein. Notice me 15 din ka statutory samay dekar 100% refund aur compensation ki maang karein; yadi company ignore karti hai toh e-Jagriti portal par District Consumer Commission me mukadma darj karein.",
+      "Agar JioMart customer care se madad na mile, toh delivery invoice, photos, aur payment proof ke sath Reliance Retail ko legal demand notice bhejein. Notice me 15 dino ka samay dekar refund aur harjane ki maang karein. Agar company dhyan na de, toh e-Jagriti portal par mukadma darj karein.",
   },
 ];
 
@@ -241,7 +258,7 @@ export default function JioMartRecoveryPage() {
                 <span>Direct Statutory Answer</span>
               </div>
               <p className="text-base sm:text-lg text-slate-900 font-medium leading-relaxed">
-                If JioMart or Reliance Retail delivers wrong items or withholds your refund, the platform bears joint and fallback liability under Rule 4(5) of the Consumer Protection (E-Commerce) Rules, 2020 and Section 2(47) of the Consumer Protection Act, 2019. Escalate first to grievanceofficer@jiomart.com (48-hour response limit); if unresolved within 15 days, serve an advocate legal notice before filing on e-Jagriti.
+                If JioMart delivers wrong items or withholds refunds, it bears legal liability under E-Commerce Rules, 2020 and the Consumer Protection Act, 2019. First email grievanceofficer@jiomart.com, who must respond within 48 hours. If unresolved, send an advocate legal notice giving 15 days before filing on e-Jagriti.
               </p>
             </section>
           </header>

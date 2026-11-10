@@ -20,6 +20,23 @@ export const metadata: Metadata = {
     description: "Supplier or contractor kept your advance after cancelling or not delivering? Your rights under the Contract Act, a notice format and recovery steps.",
     url: "https://www.legalrecovery.in/legal-notice-to-vendor-for-refund-of-advance-payment",
     type: "article",
+    images: [
+      {
+        url: "https://www.legalrecovery.in/blog_money_recovery.png",
+        width: 1200,
+        height: 630,
+        alt: "Vendor Not Returning Advance Payment? How to Recover It",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Vendor Not Returning Advance Payment? How to Recover It",
+    description:
+      "Supplier or contractor kept your advance after cancelling or not delivering? Your rights under the Contract Act, a notice format and recovery steps.",
+    site: "@legalrecoveryin",
+    creator: "@legalrecoveryin",
+    images: ["https://www.legalrecovery.in/blog_money_recovery.png"],
   },
 };
 

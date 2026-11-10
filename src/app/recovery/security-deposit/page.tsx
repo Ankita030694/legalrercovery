@@ -19,6 +19,30 @@ export const metadata: Metadata = {
   alternates: {
     canonical: 'https://www.legalrecovery.in/recovery/security-deposit',
   },
+  openGraph: {
+    title: "Recover Employee Security Deposit Dues | LegalRecovery",
+    description: "Did your employer deduct a security deposit or hold certificates for an employment bond? Learn how to legally recover your money and documents.",
+    url: "https://www.legalrecovery.in/recovery/security-deposit",
+    type: "article",
+    siteName: "LegalRecovery.in",
+    locale: "en_IN",
+    images: [
+      {
+        url: "https://www.legalrecovery.in/blog_money_recovery.png",
+        width: 1200,
+        height: 630,
+        alt: "Recover Employee Security Deposit Dues | LegalRecovery",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Recover Employee Security Deposit Dues | LegalRecovery",
+    description: "Did your employer deduct a security deposit or hold certificates for an employment bond? Learn how to legally recover your money and documents.",
+    site: "@legalrecoveryin",
+    creator: "@legalrecoveryin",
+    images: ["https://www.legalrecovery.in/blog_money_recovery.png"],
+  },
 };
 
 export default function SecurityDepositPage() {

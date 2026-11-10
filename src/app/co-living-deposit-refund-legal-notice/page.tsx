@@ -25,6 +25,23 @@ export const metadata: Metadata = {
     type: "article",
     siteName: "LegalRecovery.in",
     locale: "en_IN",
+    images: [
+      {
+        url: `${SITE_URL}/blog_money_recovery.png`,
+        width: 1200,
+        height: 630,
+        alt: "Co-Living Operator Holding Your Deposit: Legal Notice & Consumer Remedies",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Co-Living Operator Holding Your Deposit: Legal Notice & Consumer Remedies",
+    description:
+      "Complete legal framework to recover withheld security deposits and challenge unfair exit or lock-in deductions from Stanza Living, Zolo, Colive, Housr and managed PGs.",
+    site: "@legalrecoveryin",
+    creator: "@legalrecoveryin",
+    images: [`${SITE_URL}/blog_money_recovery.png`],
   },
   robots: {
     index: true,
@@ -80,7 +97,7 @@ const CASE_CITATIONS = [
       "The District Consumer Commission held that a commercial co-living operator providing app-managed accommodation, housekeeping, Wi-Fi, and security services is a service provider under Section 2(42) of the Consumer Protection Act, 2019. Retaining a resident's security deposit beyond the promised refund window and levying unverified exit fees constitutes gross deficiency in service under Section 2(11) and unfair trade practice under Section 2(47).",
     amount: "100% Security Deposit Refund + Interest + Mental Agony & Litigation Costs",
     takeaway:
-      "Unlike private landlord disputes that often require civil court suits, branded co-living operators can be dragged directly before the District Consumer Commission via e-Jagriti at zero court fee for claims up to ₹5 lakh.",
+      "Unlike individual landlords, branded co-living operators fall under Consumer Commissions. You can file directly on e-Jagriti with zero court fee for claims up to ₹5 lakh.",
   },
   {
     title: "Early Exit Due to Unhygienic Conditions & Amenity Failure Overrides Lock-In Clause",
@@ -177,27 +194,27 @@ const FAQS = [
   {
     question: "How long can a co-living operator legally take to refund my security deposit?",
     answer:
-      "Under standard tenancy norms and the Model Tenancy Act, 2021, a security deposit should be refunded immediately upon handing over vacant possession, or within the explicit contractual window agreed during onboarding (typically 7 to 30 working days, and up to 45 working days in certain Stanza Living or Zolostays agreements). Once that contractual window expires, retaining your deposit even for a single extra week without a valid UTR constitutes Deficiency in Service under Section 2(11) of the Consumer Protection Act, 2019, entitling you to demand 18% per annum interest.",
+      "Under the Model Tenancy Act, 2021, deposits should be refunded upon key handover, or within the agreed 7 to 45 working days. Retaining your money after that deadline without a valid bank UTR is a service deficiency under Section 2(11) of CPA 2019. You are entitled to demand 18% annual interest.",
   },
   {
     question: "Why is my Stanza Living or Zolo deposit refund stuck on 'Refund Initiated / Processing'?",
     answer:
-      "Co-living apps frequently update the resident dashboard to 'Refund Approved' or 'Sent to Finance' merely as an internal ticket status, without actually executing a bank NEFT/IMPS payout. Under Reserve Bank of India payment settlement rules, any genuine bank transfer generates a 12-digit Unique Transaction Reference (UTR) within hours. If the operator cannot share a valid UTR number that your bank can trace, the refund has not been released, and you should immediately serve a formal legal notice.",
+      "Co-living apps often show 'Refund Approved' or 'Sent to Finance' as an internal status without sending funds. Under RBI rules, a genuine transfer creates a 12-digit UTR number within hours. If the operator cannot share a valid UTR, the refund is stalled. You should immediately send a formal legal notice.",
   },
   {
     question: "Can a co-living company deduct mandatory painting, deep cleaning, or exit charges from my deposit?",
     answer:
-      "No, unless an exact, reasonable exit fee was transparently disclosed and signed before booking. Even where buried in fine print, deducting ₹3,000 to ₹8,000 for routine repainting or normal wear and tear after a short stay can be challenged as an 'Unfair Contract' under Section 2(46) and 'Unfair Trade Practice' under Section 2(47) of the Consumer Protection Act, 2019, read with Section 108(m) of the Transfer of Property Act, 1882.",
+      "No, unless an exact fee was clearly agreed before booking. Deducting ₹3,000 to ₹8,000 for routine painting or normal wear and tear is an unfair trade practice under Section 2(47) of CPA 2019. It also violates Section 108(m) of the Transfer of Property Act.",
   },
   {
     question: "What if the co-living operator forfeits my entire deposit because I vacated during the lock-in period?",
     answer:
-      "First, if you vacated during the lock-in period because the operator failed to provide promised services—such as hygienic meals, functional AC, clean water, Wi-Fi, or security—the lock-in clause becomes unenforceable due to the operator's fundamental breach. Second, even in a voluntary early exit, Section 74 of the Indian Contract Act, 1872 prohibits punitive forfeiture; the operator can only deduct proven actual vacancy loss, not forfeit 100% of your deposit as an automatic penalty.",
+      "If you left early because of bad food, broken AC, or poor hygiene, the operator breached the contract first. The lock-in clause becomes unenforceable. Even for early exits, Section 74 of the Contract Act bans punitive forfeiture. The operator can only deduct proven actual rent loss.",
   },
   {
     question: "Can I file a Consumer Court case on e-Jagriti against a co-living operator or PG company?",
     answer:
-      "Yes. Unlike traditional bare-shell flat landlords, co-living operators and managed PGs provide commercial hospitality and accommodation services (housekeeping, utilities, Wi-Fi, app support, security). Therefore, residents are protected consumers under Section 2(7) of the Consumer Protection Act, 2019. You can file an online complaint on the government's e-Jagriti portal in the District Commission where you currently reside or work, with zero court fee for claims up to ₹5 lakh.",
+      "Yes. Co-living operators provide commercial accommodation services like Wi-Fi, cleaning, and security. Residents qualify as consumers under Section 2(7) of CPA 2019. You can file an online complaint on the e-Jagriti portal with zero court fees for claims up to ₹5 lakh.",
   },
   {
     question: "Who is liable to refund my deposit if the co-living company shuts down the building or fights with the landlord?",
@@ -207,7 +224,7 @@ const FAQS = [
   {
     question: "Co-living ya PG operator security deposit wapas nahi kar raha toh legal notice kaise bheje?",
     answer:
-      "Agar Stanza Living, Zolo, Colive, Housr ya koi bhi co-living/PG operator move-out ke baad aapka security deposit rok raha hai ya galat deductions kar raha hai, toh apne onboarding agreement, payment receipt aur move-out screenshot ke saath ek formal Advocate Legal Notice bhejein. LegalRecovery.in par verified advocate Consumer Protection Act 2019 aur Section 74 Contract Act ke tehat operator ke corporate office par Registered Speed Post, email aur WhatsApp se 15-din ka demand notice serve karte hain.",
+      "Agar co-living ya PG operator deposit na lautaye, toh onboarding agreement aur payment proof ke saath formal legal notice bhejein. Advocate CPA 2019 aur Contract Act Section 74 ke tehat 15 din ka legal demand notice bhejte hain. Isse operator par turant refund ka dabav banta hai.",
   },
 ];
 
@@ -327,7 +344,7 @@ export default function CoLivingDepositRefundLegalNoticePage() {
                 Statutory Quick Answer (Co-Living Deposit Recovery Mandate)
               </p>
               <p>
-                Co-living operators (such as Stanza Living, Zolostays, Colive, and Housr) provide commercial accommodation services and are strictly liable under Sections 2(11) and 2(47) of the Consumer Protection Act, 2019, and Section 74 of the Indian Contract Act, 1872. If your deposit is delayed beyond the 7–45 day contractual window or subjected to arbitrary painting/lock-in cuts, export your move-out proof, escalate to the Grievance Officer, and serve a 15-day statutory advocate legal notice before filing on e-Jagriti.
+                Co-living operators like Stanza Living, Zolostays, and Colive provide accommodation services. They are liable under the Consumer Protection Act, 2019, and Section 74 of the Contract Act. If your deposit is delayed beyond 7 to 45 days, gather your checkout proofs. Then serve a 15-day advocate legal notice before filing on e-Jagriti.
               </p>
             </div>
 

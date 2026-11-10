@@ -21,6 +21,24 @@ export const metadata: Metadata = {
     description: "Court-admissible modes of serving a legal notice in India: Registered Speed Post (Sec 27), WhatsApp Blue Ticks, and Email with Sec 63 BSA Certificate.",
     url: "https://www.legalrecovery.in/what-are-the-legally-valid-ways-to-deliver-a-legal-notice-online-in-india",
     type: "article",
+    siteName: "LegalRecovery.in",
+    locale: "en_IN",
+    images: [
+      {
+        url: "https://www.legalrecovery.in/blog_money_recovery.png",
+        width: 1200,
+        height: 630,
+        alt: "Valid Ways to Deliver a Legal Notice Online in India",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Valid Ways to Deliver a Legal Notice Online in India",
+    description: "Court-admissible modes of serving a legal notice in India: Registered Speed Post (Sec 27), WhatsApp Blue Ticks, and Email with Sec 63 BSA Certificate.",
+    site: "@legalrecoveryin",
+    creator: "@legalrecoveryin",
+    images: ["https://www.legalrecovery.in/blog_money_recovery.png"],
   },
 };
 

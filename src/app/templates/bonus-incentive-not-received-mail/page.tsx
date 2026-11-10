@@ -24,6 +24,23 @@ export const metadata: Metadata = {
     type: "article",
     siteName: "LegalRecovery.in",
     locale: "en_IN",
+    images: [
+      {
+        url: `${SITE_URL}/blog_money_recovery.png`,
+        width: 1200,
+        height: 630,
+        alt: "Bonus or Incentive Not Received: Mail to HR (Template)",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Bonus or Incentive Not Received: Mail to HR (Template)",
+    description:
+      "Email templates for unpaid bonus, incentive or commission, including after resignation, with the legal points HR can't ignore.",
+    site: "@legalrecoveryin",
+    creator: "@legalrecoveryin",
+    images: [`${SITE_URL}/blog_money_recovery.png`],
   },
   robots: {
     index: true,

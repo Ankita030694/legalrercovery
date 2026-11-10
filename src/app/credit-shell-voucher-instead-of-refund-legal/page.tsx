@@ -24,6 +24,23 @@ export const metadata: Metadata = {
     type: "article",
     siteName: "LegalRecovery.in",
     locale: "en_IN",
+    images: [
+      {
+        url: `${SITE_URL}/blog_money_recovery.png`,
+        width: 1200,
+        height: 630,
+        alt: "Credit Shell or Voucher Instead of Refund: Can You Refuse?",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Credit Shell or Voucher Instead of Refund: Can You Refuse?",
+    description:
+      "Airlines cannot force credit shells or non-withdrawable travel vouchers without passenger consent. Know when you can legally refuse and demand immediate cash.",
+    site: "@legalrecoveryin",
+    creator: "@legalrecoveryin",
+    images: [`${SITE_URL}/blog_money_recovery.png`],
   },
   robots: {
     index: true,

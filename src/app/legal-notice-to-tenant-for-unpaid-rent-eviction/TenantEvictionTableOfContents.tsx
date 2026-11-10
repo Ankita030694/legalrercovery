@@ -135,9 +135,9 @@ export default function TenantEvictionTableOfContents({
         <div className="bg-white border border-slate-200 rounded-2xl p-5 shadow-xs">
           <div className="flex items-center gap-2 mb-4 pb-3 border-b border-slate-100">
             <span className="w-2 h-2 rounded-full bg-red-600" />
-            <h3 className="text-xs font-extrabold uppercase tracking-wider text-slate-900">
+            <p className="text-xs font-extrabold uppercase tracking-wider text-slate-900">
               Table of Contents
-            </h3>
+            </p>
           </div>
           <nav aria-label="Table of contents" className="space-y-1">
             {sections.map((s) => (

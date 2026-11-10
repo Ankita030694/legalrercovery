@@ -24,6 +24,23 @@ export const metadata: Metadata = {
     type: "article",
     siteName: "LegalRecovery.in",
     locale: "en_IN",
+    images: [
+      {
+        url: `${SITE_URL}/blog_money_recovery.png`,
+        width: 1200,
+        height: 630,
+        alt: "Can You Get Money Back After a Scam? An Honest Guide",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Can You Get Money Back After a Scam? An Honest Guide",
+    description:
+      "Statutory recovery matrix across Indian cyber scams: bank zero liability rules, 1930 portal lien freezes, Section 503 BNSS magistrate refunds, and realistic recovery odds.",
+    site: "@legalrecoveryin",
+    creator: "@legalrecoveryin",
+    images: [`${SITE_URL}/blog_money_recovery.png`],
   },
   robots: {
     index: true,

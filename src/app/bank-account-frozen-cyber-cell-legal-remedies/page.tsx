@@ -24,6 +24,23 @@ export const metadata: Metadata = {
     type: "article",
     siteName: "LegalRecovery.in",
     locale: "en_IN",
+    images: [
+      {
+        url: `${SITE_URL}/blog_money_recovery.png`,
+        width: 1200,
+        height: 630,
+        alt: "Bank Account Frozen Due to a Cyber Cell Notice: Step-by-Step Legal Remedies to Unfreeze",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Bank Account Frozen Due to a Cyber Cell Notice: Step-by-Step Legal Remedies to Unfreeze",
+    description:
+      "Statutory guide on unfreezing bank accounts on cyber crime debit freeze. Learn layer tracing, BNSS 106 / CrPC 102 requisitions, obtaining police NOC, converting to lien-only freeze, and Magistrate petitions.",
+    site: "@legalrecoveryin",
+    creator: "@legalrecoveryin",
+    images: [`${SITE_URL}/blog_money_recovery.png`],
   },
   robots: {
     index: true,

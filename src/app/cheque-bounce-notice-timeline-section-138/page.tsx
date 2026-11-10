@@ -26,6 +26,23 @@ export const metadata: Metadata = {
     description: "चेक बाउंस के बाद नोटिस कितने दिन में? Send the Section 138 notice within 30 days of the bank's return memo; the drawer then gets 15 days to pay.",
     url: "https://www.legalrecovery.in/cheque-bounce-notice-timeline-section-138",
     type: "article",
+    images: [
+      {
+        url: "https://www.legalrecovery.in/blog_money_recovery.png",
+        width: 1200,
+        height: 630,
+        alt: "Cheque Bounce Notice Period: 30-Day Rule (कितने दिन में)",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Cheque Bounce Notice Period: 30-Day Rule (कितने दिन में)",
+    description:
+      "चेक बाउंस के बाद नोटिस कितने दिन में? Send the Section 138 notice within 30 days of the bank's return memo; the drawer then gets 15 days to pay.",
+    site: "@legalrecoveryin",
+    creator: "@legalrecoveryin",
+    images: ["https://www.legalrecovery.in/blog_money_recovery.png"],
   },
 };
 

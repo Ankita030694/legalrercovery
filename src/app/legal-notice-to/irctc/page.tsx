@@ -24,6 +24,23 @@ export const metadata: Metadata = {
     type: "article",
     siteName: "LegalRecovery.in",
     locale: "en_IN",
+    images: [
+      {
+        url: `${SITE_URL}/blog_money_recovery.png`,
+        width: 1200,
+        height: 630,
+        alt: "IRCTC TDR Rejected or Refund Not Received? Legal Remedies & Commission Orders",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "IRCTC TDR Rejected or Refund Not Received? Legal Remedies & Commission Orders",
+    description:
+      "Statutory escalation path for delayed IRCTC train ticket refunds, rejected TDR claims, failed payment gateway debits, and consumer court action.",
+    site: "@legalrecoveryin",
+    creator: "@legalrecoveryin",
+    images: [`${SITE_URL}/blog_money_recovery.png`],
   },
   robots: {
     index: true,

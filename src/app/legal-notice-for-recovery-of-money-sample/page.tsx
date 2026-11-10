@@ -23,6 +23,24 @@ export const metadata: Metadata = {
     description: "Court-ready Legal Notice formats and sample drafts for money recovery in India, or get an Advocate-Drafted Legal Notice dispatched online.",
     url: "https://www.legalrecovery.in/legal-notice-for-recovery-of-money-sample",
     type: "article",
+    siteName: "LegalRecovery.in",
+    locale: "en_IN",
+    images: [
+      {
+        url: "https://www.legalrecovery.in/blog_money_recovery.png",
+        width: 1200,
+        height: 630,
+        alt: "Legal Notice for Recovery of Money Format & Sample PDF",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Legal Notice for Recovery of Money Format & Sample PDF",
+    description: "Court-ready Legal Notice formats and sample drafts for money recovery in India, or get an Advocate-Drafted Legal Notice dispatched online.",
+    site: "@legalrecoveryin",
+    creator: "@legalrecoveryin",
+    images: ["https://www.legalrecovery.in/blog_money_recovery.png"],
   },
 };
 

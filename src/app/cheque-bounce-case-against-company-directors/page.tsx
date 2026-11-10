@@ -24,6 +24,23 @@ export const metadata: Metadata = {
     type: "article",
     siteName: "LegalRecovery.in",
     locale: "en_IN",
+    images: [
+      {
+        url: `${SITE_URL}/blog_money_recovery.png`,
+        width: 1200,
+        height: 630,
+        alt: "Company Cheque Bounce: Are Directors Liable (s.141)?",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Company Cheque Bounce: Are Directors Liable (s.141)?",
+    description:
+      "Statutory guide on Section 141 NI Act vicarious liability: Aneeta Hada company arraignment mandate, Managing Director vs sleeping director liabilities, and notice procedure.",
+    site: "@legalrecoveryin",
+    creator: "@legalrecoveryin",
+    images: [`${SITE_URL}/blog_money_recovery.png`],
   },
   robots: {
     index: true,

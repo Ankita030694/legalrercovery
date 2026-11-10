@@ -24,6 +24,23 @@ export const metadata: Metadata = {
     type: "article",
     siteName: "LegalRecovery.in",
     locale: "en_IN",
+    images: [
+      {
+        url: `${SITE_URL}/blog_money_recovery.png`,
+        width: 1200,
+        height: 630,
+        alt: "Chit Fund or Kitty Party Money Not Returned? Legal Remedies & Recovery Guide",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Chit Fund or Kitty Party Money Not Returned? Legal Remedies & Recovery Guide",
+    description:
+      "Statutory escalation path for defaulted kitty party committees, absconding organisers, unregistered BC fraud, and registered chit fund recovery.",
+    site: "@legalrecoveryin",
+    creator: "@legalrecoveryin",
+    images: [`${SITE_URL}/blog_money_recovery.png`],
   },
   robots: {
     index: true,

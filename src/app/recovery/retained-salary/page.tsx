@@ -19,6 +19,30 @@ export const metadata: Metadata = {
   alternates: {
     canonical: 'https://www.legalrecovery.in/recovery/retained-salary',
   },
+  openGraph: {
+    title: "Recover Retained Salary & Deferred Pay | LegalRecovery",
+    description: "Recover retained salary, deferred compensation, and withheld bonuses in India. Learn about the Payment of Wages Act, Order 37 summary suits, and notices.",
+    url: "https://www.legalrecovery.in/recovery/retained-salary",
+    type: "article",
+    siteName: "LegalRecovery.in",
+    locale: "en_IN",
+    images: [
+      {
+        url: "https://www.legalrecovery.in/blog_money_recovery.png",
+        width: 1200,
+        height: 630,
+        alt: "Recover Retained Salary & Deferred Pay | LegalRecovery",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Recover Retained Salary & Deferred Pay | LegalRecovery",
+    description: "Recover retained salary, deferred compensation, and withheld bonuses in India. Learn about the Payment of Wages Act, Order 37 summary suits, and notices.",
+    site: "@legalrecoveryin",
+    creator: "@legalrecoveryin",
+    images: ["https://www.legalrecovery.in/blog_money_recovery.png"],
+  },
 };
 
 export default function RetainedSalaryPage() {

@@ -19,6 +19,23 @@ export const metadata: Metadata = {
       "Statutory guide to the revised DGCA CAR Section 3 Series M Part II (effective 26 March 2026). Learn 48-hour look-in rights, 7-day payment deadlines, and joint airline-agent liability.",
     url: `${SITE_URL}/law/dgca-air-ticket-refund-rules-2026`,
     type: "article",
+    images: [
+      {
+        url: `${SITE_URL}/blog_money_recovery.png`,
+        width: 1200,
+        height: 630,
+        alt: "DGCA Air Ticket Refund Rules 2026: 48-Hour Cancellation, Deadlines & Agent Liability",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "DGCA Air Ticket Refund Rules 2026: 48-Hour Cancellation, Deadlines & Agent Liability",
+    description:
+      "Statutory guide to the revised DGCA CAR Section 3 Series M Part II (effective 26 March 2026). Learn 48-hour look-in rights, 7-day payment deadlines, and joint airline-agent liability.",
+    site: "@legalrecoveryin",
+    creator: "@legalrecoveryin",
+    images: [`${SITE_URL}/blog_money_recovery.png`],
   },
   robots: {
     index: true,

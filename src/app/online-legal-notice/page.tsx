@@ -23,6 +23,24 @@ export const metadata: Metadata = {
     description: "Send an Advocate-drafted Online Legal Notice in India via Registered Speed Post, WhatsApp & Email (Section 63 BSA valid).",
     url: "https://www.legalrecovery.in/online-legal-notice",
     type: "article",
+    siteName: "LegalRecovery.in",
+    locale: "en_IN",
+    images: [
+      {
+        url: "https://www.legalrecovery.in/blog_money_recovery.png",
+        width: 1200,
+        height: 630,
+        alt: "Send Legal Notice Online in India: Advocate Drafting",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Send Legal Notice Online in India: Advocate Drafting",
+    description: "Send an Advocate-drafted Online Legal Notice in India via Registered Speed Post, WhatsApp & Email (Section 63 BSA valid).",
+    site: "@legalrecoveryin",
+    creator: "@legalrecoveryin",
+    images: ["https://www.legalrecovery.in/blog_money_recovery.png"],
   },
 };
 

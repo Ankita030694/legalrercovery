@@ -140,9 +140,9 @@ export default function ApplianceWarrantyTableOfContents({
         <div className="sticky top-24 bg-white rounded-2xl border border-slate-200 p-5 shadow-sm">
           <div className="flex items-center gap-2 pb-3 mb-3 border-b border-slate-100">
             <span className="w-2.5 h-2.5 rounded-full bg-[#DC2626]" />
-            <h4 className="text-xs font-black tracking-widest text-slate-900 uppercase">
+            <p className="text-xs font-black tracking-widest text-slate-900 uppercase">
               Table of Contents
-            </h4>
+            </p>
           </div>
           <nav className="space-y-1" aria-label="Table of contents">
             {sections.map((section) => {

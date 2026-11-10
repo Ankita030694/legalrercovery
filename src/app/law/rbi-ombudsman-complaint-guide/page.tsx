@@ -24,6 +24,23 @@ export const metadata: Metadata = {
     type: "article",
     siteName: "LegalRecovery.in",
     locale: "en_IN",
+    images: [
+      {
+        url: `${SITE_URL}/blog_money_recovery.png`,
+        width: 1200,
+        height: 630,
+        alt: "How to Complain to the RBI Ombudsman: Integrated Scheme Guide",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "How to Complain to the RBI Ombudsman: Integrated Scheme Guide",
+    description:
+      "Statutory escalation path under the Reserve Bank - Integrated Ombudsman Scheme, 2021: 30-day rule, CMS portal filing, compensation limits, and legal notice format.",
+    site: "@legalrecoveryin",
+    creator: "@legalrecoveryin",
+    images: [`${SITE_URL}/blog_money_recovery.png`],
   },
   robots: {
     index: true,

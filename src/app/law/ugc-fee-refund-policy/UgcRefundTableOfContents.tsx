@@ -146,9 +146,9 @@ export default function UgcRefundTableOfContents({
         <div className="bg-white rounded-2xl border border-slate-200 p-5 shadow-xs">
           <div className="flex items-center gap-2 pb-3 mb-3 border-b border-slate-100">
             <span className="w-2 h-2 rounded-full bg-red-600" />
-            <h3 className="text-xs font-extrabold uppercase tracking-wider text-slate-500">
+            <p className="text-xs font-extrabold uppercase tracking-wider text-slate-500">
               Contents on this page
-            </h3>
+            </p>
           </div>
           <nav className="space-y-1">
             {sections.map((sec) => (

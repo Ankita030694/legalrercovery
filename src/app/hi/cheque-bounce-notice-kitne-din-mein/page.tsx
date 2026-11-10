@@ -48,12 +48,23 @@ export const metadata: Metadata = {
     siteName: "LegalRecovery.in",
     publishedTime: PUBLISHED_DATE,
     modifiedTime: MODIFIED_DATE,
+    images: [
+      {
+        url: `${SITE_URL}/blog_money_recovery.png`,
+        width: 1200,
+        height: 630,
+        alt: "चेक बाउंस होने के कितने दिन बाद नोटिस दें? पूरी समय सीमा",
+      },
+    ],
   },
   twitter: {
     card: "summary_large_image",
     title: "चेक बाउंस होने के कितने दिन बाद नोटिस दें? पूरी समय सीमा",
     description:
       "चेक बाउंस के बाद 30 दिन में नोटिस, 15 दिन भुगतान और 1 महीने में केस — धारा 138 की पूरी प्रक्रिया आसान हिंदी में।",
+    site: "@legalrecoveryin",
+    creator: "@legalrecoveryin",
+    images: [`${SITE_URL}/blog_money_recovery.png`],
   },
 };
 

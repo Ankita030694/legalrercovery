@@ -19,6 +19,30 @@ export const metadata: Metadata = {
   alternates: {
     canonical: 'https://www.legalrecovery.in/recovery/unpaid-invoices',
   },
+  openGraph: {
+    title: "Recover Unpaid Invoices & B2B Dues | LegalRecovery",
+    description: "Recover unpaid commercial invoices and B2B debts in India. Learn about MSME Samadhaan, Order 37 summary suits, Section 138, and legal notices.",
+    url: "https://www.legalrecovery.in/recovery/unpaid-invoices",
+    type: "article",
+    siteName: "LegalRecovery.in",
+    locale: "en_IN",
+    images: [
+      {
+        url: "https://www.legalrecovery.in/blog_money_recovery.png",
+        width: 1200,
+        height: 630,
+        alt: "Recover Unpaid Invoices & B2B Dues | LegalRecovery",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Recover Unpaid Invoices & B2B Dues | LegalRecovery",
+    description: "Recover unpaid commercial invoices and B2B debts in India. Learn about MSME Samadhaan, Order 37 summary suits, Section 138, and legal notices.",
+    site: "@legalrecoveryin",
+    creator: "@legalrecoveryin",
+    images: ["https://www.legalrecovery.in/blog_money_recovery.png"],
+  },
 };
 
 export default function UnpaidInvoicesPage() {

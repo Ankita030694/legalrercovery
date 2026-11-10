@@ -24,6 +24,23 @@ export const metadata: Metadata = {
     type: "article",
     siteName: "LegalRecovery.in",
     locale: "en_IN",
+    images: [
+      {
+        url: `${SITE_URL}/blog_money_recovery.png`,
+        width: 1200,
+        height: 630,
+        alt: "OYO Refund Not Received or Room Denied: Legal Notice & Consumer Court Remedies",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "OYO Refund Not Received or Room Denied: Legal Notice & Consumer Court Remedies",
+    description:
+      "Statutory escalation path for delayed OYO hotel refunds, denied room check-in, forced OYO Rupee wallet credits, and consumer court action.",
+    site: "@legalrecoveryin",
+    creator: "@legalrecoveryin",
+    images: [`${SITE_URL}/blog_money_recovery.png`],
   },
   robots: {
     index: true,

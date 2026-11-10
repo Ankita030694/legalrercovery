@@ -8,7 +8,31 @@ export const metadata: Metadata = {
   description:
     "Find the best advocate panel for legal recovery and debt collection across various cities in India. Get expert legal assistance with Legal Recovery.",
   alternates: {
-    canonical: "https://www.legalrecovery.in/legal-recovery-by-city",
+    canonical: 'https://www.legalrecovery.in/legal-recovery-by-city',
+  },
+  openGraph: {
+    title: "Legal Recovery Services by City | Legal Recovery",
+    description: "Find the best advocate panel for legal recovery and debt collection across various cities in India. Get expert legal assistance with Legal Recovery.",
+    url: "https://www.legalrecovery.in/legal-recovery-by-city",
+    type: "article",
+    siteName: "LegalRecovery.in",
+    locale: "en_IN",
+    images: [
+      {
+        url: "https://www.legalrecovery.in/blog_money_recovery.png",
+        width: 1200,
+        height: 630,
+        alt: "Legal Recovery Services by City | Legal Recovery",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Legal Recovery Services by City | Legal Recovery",
+    description: "Find the best advocate panel for legal recovery and debt collection across various cities in India. Get expert legal assistance with Legal Recovery.",
+    site: "@legalrecoveryin",
+    creator: "@legalrecoveryin",
+    images: ["https://www.legalrecovery.in/blog_money_recovery.png"],
   },
 };
 

@@ -20,6 +20,23 @@ export const metadata: Metadata = {
     description: "No written agreement? UPI or bank transfers and WhatsApp chats can still prove a loan. How to use them as evidence and recover your money legally.",
     url: "https://www.legalrecovery.in/how-to-recover-money-without-written-agreement",
     type: "article",
+    images: [
+      {
+        url: "https://www.legalrecovery.in/blog_money_recovery.png",
+        width: 1200,
+        height: 630,
+        alt: "Lent Money Without Agreement? How to Recover It Legally",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Lent Money Without Agreement? How to Recover It Legally",
+    description:
+      "No written agreement? UPI or bank transfers and WhatsApp chats can still prove a loan. How to use them as evidence and recover your money legally.",
+    site: "@legalrecoveryin",
+    creator: "@legalrecoveryin",
+    images: ["https://www.legalrecovery.in/blog_money_recovery.png"],
   },
 };
 

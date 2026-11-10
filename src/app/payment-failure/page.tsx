@@ -6,7 +6,33 @@ import Link from "next/link";
 
 export const metadata: Metadata = {
   title: "Payment Failed | LegalRecovery",
-  description: "Payment status page for LegalRecovery services.",
+  description: "Payment processing status and assistance for your LegalRecovery transaction.",
+  alternates: {
+    canonical: "/payment-failure",
+  },
+  openGraph: {
+    title: "Payment Failed | LegalRecovery",
+    description: "Payment processing status and assistance for your LegalRecovery transaction.",
+    url: "https://www.legalrecovery.in/payment-failure",
+    type: "website",
+    siteName: "LegalRecovery.in",
+    images: [
+      {
+        url: "https://www.legalrecovery.in/blog_money_recovery.png",
+        width: 1200,
+        height: 630,
+        alt: "Payment Failed | LegalRecovery",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Payment Failed | LegalRecovery",
+    description: "Payment processing status and assistance for your LegalRecovery transaction.",
+    site: "@legalrecoveryin",
+    creator: "@legalrecoveryin",
+    images: ["https://www.legalrecovery.in/blog_money_recovery.png"],
+  },
   robots: {
     index: false,
     follow: false,

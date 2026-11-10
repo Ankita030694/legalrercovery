@@ -24,6 +24,23 @@ export const metadata: Metadata = {
     type: "article",
     siteName: "LegalRecovery.in",
     locale: "en_IN",
+    images: [
+      {
+        url: `${SITE_URL}/blog_money_recovery.png`,
+        width: 1200,
+        height: 630,
+        alt: "School & College Fee Refund Application Formats (English & Hindi)",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "School & College Fee Refund Application Formats (English & Hindi)",
+    description:
+      "Statutory fee refund application formats for college admission cancellation, school TC withdrawal, and hostel caution deposit with UGC, MoE and Consumer Protection Act rules.",
+    site: "@legalrecoveryin",
+    creator: "@legalrecoveryin",
+    images: [`${SITE_URL}/blog_money_recovery.png`],
   },
   robots: {
     index: true,
@@ -63,7 +80,7 @@ const CASE_CITATIONS = [
     facts:
       "Private professional medical and engineering colleges in Karnataka demanded full course fees for the entire duration of 4–5 years at the threshold of admission. When students withdrew after obtaining seats in government institutions, the colleges forfeited the entire advance sum and withheld original academic certificates.",
     holding:
-      "The Constitution Bench of the Supreme Court held that educational institutions cannot demand or collect advance tuition fees for more than one academic year or semester. The court declared that an institution can only charge reasonable fees for actual service rendered. Retaining fees for unserved semesters when a student leaves midway constitutes commercialization and extortion.",
+      "The Supreme Court ruled that colleges cannot collect advance tuition fees for more than one academic year. Institutes can charge fees only for actual education provided. Keeping fees for unserved semesters when a student leaves early is illegal commercialization.",
     amount: "Bar on Multi-Year Fee Collection + 100% Refund of Unserved Semesters Upheld",
     takeaway:
       "If a college or private university forces you to deposit fees for multiple semesters or refuses refund for unserved terms, cite Islamic Academy (2003). Any clause declaring advance tuition 'strictly non-refundable' is unconstitutional and void ab initio.",
@@ -76,7 +93,7 @@ const CASE_CITATIONS = [
     facts:
       "A student enrolled in a two-year medical entrance coaching program and deposited the total composite fee upfront. After attending classes for six months, the student found the teaching sub-standard and sought admission withdrawal. The coaching institute refused any refund, citing a signed clause in the admission prospectus stating 'fees once paid are strictly non-refundable under any circumstances'.",
     holding:
-      "The National Commission ruled that coaching centers cannot act as commercial monopolies. Retaining fees for the remaining 18 months during which no coaching was imparted constitutes an Unfair Trade Practice under the Consumer Protection Act. The NCDRC held that no institution can retain fees for a service not rendered. The institute was ordered to refund the pro-rata balance fee along with interest and litigation costs.",
+      "The National Commission ruled that coaching centers cannot keep fees for months when no coaching was provided. Retaining fees for unserved months is an unfair trade practice under consumer law. The institute was ordered to refund the balance fee with interest and court costs.",
     amount: "₹18,734 Pro-Rata Refund + ₹3,000 Litigation Costs",
     takeaway:
       "Signed 'No Refund' disclaimers on coaching institute enrollment forms have zero legal validity. The NCDRC held that institutions can only retain administrative costs for the exact period attended.",
@@ -89,7 +106,7 @@ const CASE_CITATIONS = [
     facts:
       "The complainant secured provisional admission in B.Tech Computer Science and deposited ₹1,25,000 towards first-semester tuition and caution deposit on 12 August. On 28 August (18 days before the officially notified university admission cut-off), the student cancelled his admission upon clearing state JEE centralized counseling. The college withheld ₹85,000 citing seat vacancy and prospectus rules.",
     holding:
-      "The Consumer Commission held that under the statutory UGC Fee Refund Policy, any student cancelling admission 15 days or more before the cut-off date is entitled to a 100% refund subject to a maximum ₹1,000 processing deduction. The college's refusal to honor UGC directives was deemed gross deficiency in service. The forum directed the college to refund ₹1,24,000 with 9% per annum interest, plus ₹35,000 compensation for harassment and ₹15,000 litigation costs.",
+      "The Consumer Commission held that students cancelling admission 15 days before the cut-off date get a 100% refund, minus a maximum ₹1,000 processing charge. The court ordered the college to refund ₹1,24,000 with 9% interest, plus ₹35,000 for harassment and ₹15,000 in costs.",
     amount: "₹1,24,000 Refund @ 9% Interest + ₹35,000 Harassment Damages + ₹15,000 Costs",
     takeaway:
       "UGC fee refund guidelines are legally binding on all recognized universities and affiliated private colleges. When cancellation is submitted before cut-off, consumer courts award 100% refund with interest.",
@@ -113,37 +130,37 @@ const FAQS = [
   {
     question: "What is the UGC fee refund policy rule for college admission cancellation?",
     answer:
-      "Under the University Grants Commission (UGC) Fee Refund Policy, higher educational institutions (HEIs) must refund 100% of deposited fees (subject to a maximum processing deduction of ₹1,000) if an admission cancellation application is formally submitted 15 days or more before the notified last date of admission. If submitted less than 15 days before the cut-off, the refund is 90%; within 15 days after the cut-off, 80%; between 16 and 30 days after the cut-off, 50%; and after 30 days, nil. The refund must be credited to the student's bank account within 15 calendar days.",
+      "Under UGC rules, colleges must refund 100% of fees (minus at most ₹1,000) if cancelled 15 days or more before the cut-off date. If cancelled less than 15 days before cut-off, the refund is 90%. Within 15 days after cut-off, it is 80%. Between 16 and 30 days after, it is 50%. After 30 days, nil. The refund must reach your bank account within 15 calendar days.",
   },
   {
     question: "Can a school or college legally enforce a 'Fee Once Paid Is Non-Refundable' clause?",
     answer:
-      "No. The Supreme Court of India in Islamic Academy of Education (2003) 6 SCC 697 and the National Consumer Disputes Redressal Commission (NCDRC) in Sehgal School of Competition have conclusively held that unilateral 'No Refund' clauses printed on prospectuses or admission forms are unconscionable, arbitrary, and legally void. Under Section 2(46) and 2(47) of the Consumer Protection Act, 2019, forfeiting fees for unserved academic terms constitutes an unfair trade practice and an unfair contract.",
+      "No. The Supreme Court and consumer commissions have ruled that unilateral 'No Refund' clauses on admission forms are void. Under Section 2(46) and 2(47) of the Consumer Protection Act, 2019, keeping fees for unserved semesters is an unfair trade practice.",
   },
   {
     question: "How long does a school or college have to refund fees after receiving an application?",
     answer:
-      "Under statutory UGC guidelines and Ministry of Education (MoE) 2024 directives, universities and colleges are mandated to process and credit admissible refunds within 15 calendar days of receiving the formal admission withdrawal application. For private coaching institutes, the MoE Coaching Centre Guidelines 2024 mandate pro-rata fee refunds within 10 days. If the institution fails to refund within this window, they become liable for penal interest at 9% to 18% per annum under consumer forum precedents.",
+      "Under UGC and Education Ministry directives, colleges must credit refunds within 15 calendar days of receiving the withdrawal application. Coaching centers must refund pro-rata fees within 10 days. Institutions that delay beyond this window face 9% to 18% annual interest under consumer court orders.",
   },
   {
     question: "Can an educational institution withhold my original Class 10/12 marks cards or Transfer Certificate?",
     answer:
-      "Strictly no. UGC Notification Paragraph 4 and AICTE regulations expressly prohibit institutions from withholding or impounding original academic certificates, migration certificates, or mark sheets under any pretext. For schools, CBSE Affiliation Bye-Laws and state education acts prohibit holding back a Transfer Certificate (TC) over fee disputes. Withholding original documents violates fundamental educational rights and constitutes actionable deficiency in service.",
+      "No. UGC and AICTE regulations expressly forbid colleges from keeping original academic certificates or mark sheets under any pretext. For schools, CBSE rules ban withholding a Transfer Certificate over fee disputes. Withholding documents is an illegal service deficiency.",
   },
   {
     question: "What should I do if the college accounts department ignores my fee refund application?",
     answer:
-      "If the institution fails to release your refund within 15 days, immediately serve a formal 15-day statutory advocate legal notice to the Principal, Registrar, and Management Trust via Registered Speed Post. If they fail to comply, lodge an online complaint on the UGC SAMARTH grievance portal (samarth.edu.in) and file an e-daakhil consumer complaint on e-jagriti.gov.in under Section 35 of the Consumer Protection Act, 2019 for 100% refund, interest, and harassment damages.",
+      "If the college delays beyond 15 days, send a formal 15-day advocate legal notice to the Principal and management via Speed Post. If they do not pay, file a complaint on the UGC SAMARTH portal and initiate a consumer complaint on e-jagriti.gov.in for full refund plus damages.",
   },
   {
     question: "Are hostel caution deposit and mess advance fees refundable upon seat cancellation?",
     answer:
-      "Yes. Hostel caution money and security deposits are purely custodial funds that must be refunded 100% upon student room vacation, subject only to verified physical inventory damage deductions. Advance mess fees are operational prepayments for food supplies; under MoE regulations and consumer law, unconsumed mess charges for future months cannot be forfeited and must be refunded pro-rata.",
+      "Yes. Hostel caution money and deposits are custodial funds. They must be refunded in full upon room checkout, minus only proven property damage. Advance mess fees for future months cannot be kept and must be refunded pro-rata.",
   },
   {
     question: "कॉलेज या स्कूल की फीस वापसी के लिए हिंदी में आवेदन पत्र कैसे लिखें और नियम क्या हैं?",
     answer:
-      "कॉलेज या स्कूल में प्रवेश निरस्त कराने के लिए आप इस पृष्ठ पर दिए गए 'हिंदी आवेदन प्रारूप' का उपयोग कर सकते हैं। आवेदन में छात्र का नाम, रोल नंबर, जमा शुल्क की रसीद संख्या, और बैंक खाता विवरण (NEFT/RTGS हेतु) स्पष्ट रूप से दर्ज करें। आवेदन में UGC Fee Refund Policy और उपभोक्ता संरक्षण अधिनियम 2019 का संदर्भ दें। UGC नियमों के तहत अंतिम प्रवेश तिथि से 15 दिन पूर्व आवेदन करने पर केवल ₹1,000 काटकर 100% फीस 15 दिनों में वापस करना वैधानिक रूप से अनिवार्य है।",
+      "कॉलेज में प्रवेश रद्द कराने के लिए आप इस पेज पर दिए हिंदी प्रारूप का उपयोग करें। आवेदन में नाम, रसीद नंबर और बैंक खाता विवरण लिखें। UGC नियमों के अनुसार कट-ऑफ से 15 दिन पूर्व आवेदन करने पर केवल ₹1,000 काटकर पूरी फीस 15 दिन में वापस करना अनिवार्य है।",
   },
 ];
 
@@ -293,7 +310,7 @@ export default function SchoolCollegeFeeRefundApplicationPage() {
                 Statutory Summary (Institutional Fee Refund Mandate)
               </p>
               <p>
-                Under UGC Fee Refund Regulations and Section 2(11) of the Consumer Protection Act, 2019, higher education institutions must refund 100% of deposited fees (minus a maximum ₹1,000 processing fee) if admission is withdrawn 15 days before the cut-off date. Coaching centers must refund pro-rata within 10 days under Ministry of Education 2024 guidelines. Unilateral &quot;No Refund&quot; prospectus stamps are void, and original certificates cannot be withheld.
+                Under UGC Fee Refund rules and the Consumer Protection Act, 2019, colleges must refund 100% of fees (minus at most ₹1,000) if withdrawn 15 days before the cut-off date. Coaching centers must refund pro-rata within 10 days under Education Ministry guidelines. One-sided No Refund stamps are void, and institutes cannot withhold original certificates.
               </p>
             </div>
 

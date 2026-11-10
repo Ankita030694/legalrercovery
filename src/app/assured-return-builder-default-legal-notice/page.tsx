@@ -65,12 +65,23 @@ export const metadata: Metadata = {
     locale: "en_IN",
     publishedTime: LAST_UPDATED_ISO,
     modifiedTime: LAST_UPDATED_ISO,
+    images: [
+      {
+        url: `${SITE_URL}/blog_money_recovery.png`,
+        width: 1200,
+        height: 630,
+        alt: "Assured Return Not Paid by Builder? Legal Notice",
+      },
+    ],
   },
   twitter: {
     card: "summary_large_image",
     title: "Assured Return Not Paid by Builder? Legal Notice",
     description:
       "Builder defaulting on assured-return commitments? Contract and RERA angles, evidence and how to issue a demand notice.",
+    site: "@legalrecoveryin",
+    creator: "@legalrecoveryin",
+    images: [`${SITE_URL}/blog_money_recovery.png`],
   },
   robots: {
     index: true,

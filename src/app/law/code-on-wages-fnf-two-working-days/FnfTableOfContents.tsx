@@ -136,9 +136,9 @@ export default function FnfTableOfContents({
         <div className="bg-white rounded-2xl border border-slate-200 p-5 shadow-xs">
           <div className="flex items-center gap-2 pb-3 border-b border-slate-100 mb-3">
             <span className="w-2.5 h-2.5 rounded-full bg-[#DC2626]" />
-            <h3 className="text-xs font-extrabold uppercase tracking-wider text-slate-900">
+            <p className="text-xs font-extrabold uppercase tracking-wider text-slate-900">
               Statutory Roadmap
-            </h3>
+            </p>
           </div>
 
           <nav className="space-y-1">

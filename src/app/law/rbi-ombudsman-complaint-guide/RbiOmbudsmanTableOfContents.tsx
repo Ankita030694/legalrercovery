@@ -155,9 +155,9 @@ export default function RbiOmbudsmanTableOfContents({
       <div className="hidden lg:block bg-white border border-slate-200 rounded-2xl p-5 shadow-sm">
         <div className="flex items-center gap-2 pb-3 mb-3 border-b border-slate-100">
           <div className="w-2 h-2 rounded-full bg-red-600" />
-          <h2 className="text-[11px] font-extrabold uppercase tracking-wider text-slate-800">
+          <p className="text-[11px] font-extrabold uppercase tracking-wider text-slate-800">
             Guide Sections
-          </h2>
+          </p>
         </div>
 
         <ul className="space-y-1 text-xs">

@@ -29,6 +29,23 @@ export const metadata: Metadata = {
       "Return pickup delayed, return rejected or refund stuck? The Flipkart grievance route, NCH 1915 and when a legal notice or consumer case makes sense.",
     url: `${SITE_URL}/flipkart-return-refund-complaint`,
     type: "article",
+    images: [
+      {
+        url: `${SITE_URL}/blog_money_recovery.png`,
+        width: 1200,
+        height: 630,
+        alt: "Flipkart Not Returning Your Product or Refund? What to Do",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Flipkart Not Returning Your Product or Refund? What to Do",
+    description:
+      "Return pickup delayed, return rejected or refund stuck? The Flipkart grievance route, NCH 1915 and when a legal notice or consumer case makes sense.",
+    site: "@legalrecoveryin",
+    creator: "@legalrecoveryin",
+    images: [`${SITE_URL}/blog_money_recovery.png`],
   },
   robots: {
     index: true,
@@ -99,37 +116,37 @@ const faqData = [
   {
     question: "What should I do if Flipkart shows refund successful but money is not in my bank account?",
     answer:
-      "Request the 12-digit UTR from Flipkart customer care and take it to your bank branch. If the bank confirms no incoming credit was received and Flipkart fails to re-credit your funds within 7 days, issue an advocate demand notice for wrongful withholding under Section 2(47) of the Consumer Protection Act, 2019.",
+      "Ask Flipkart for the 12-digit UTR transaction number and check with your bank. If your bank confirms no funds arrived and Flipkart does not fix it within 7 days, send an advocate legal notice for withholding funds under the Consumer Protection Act, 2019.",
   },
   {
     question: "Can I sue Flipkart for late delivery or indefinite return pickup delays?",
     answer:
-      "Yes. Rescheduling return pickups repeatedly while holding customer funds constitutes an unfair trade practice under CPA Section 2(47) and Dark Patterns Guidelines 2023. If Flipkart logistics stalls pickup slots, you can serve an advocate notice giving 15 days to comply, followed by an online e-Jagriti consumer complaint.",
+      "Yes. Repeatedly delaying return pickups while keeping customer money is an unfair trade practice under Section 2(47) of the Consumer Protection Act, 2019. If Flipkart cancels pickup slots, you can send an advocate legal notice giving 15 days to refund before filing on e-Jagriti.",
   },
   {
     question: "What happens if Flipkart rejects my return citing 'item mismatch' or wrong serial number?",
     answer:
-      "Once an Ekart agent inspects and collects the parcel, Flipkart bears legal custody as a bailee under Section 151 of the Indian Contract Act. Under Rule 5(3) fallback liability of the E-Commerce Rules, 2020, Flipkart cannot disclaim liability for warehouse transit discrepancies when you hold the courier pickup acknowledgement slip.",
+      "Once the Ekart delivery agent collects your package, Flipkart holds legal custody. Under E-Commerce Rules, 2020, Flipkart has fallback liability. It cannot blame warehouse transit issues if you have the courier pickup confirmation slip.",
   },
   {
     question: "Can Flipkart refuse a refund because I did not record an unboxing video?",
     answer:
-      "No statute mandates an unboxing video to claim a refund for wrong deliveries. Consumer commissions accept courier dispatch manifests, gross weight differences, outer packaging photos, and prompt ticket logs as valid digital proof under Section 63 of the Bharatiya Sakshya Adhiniyam, 2023.",
+      "No law requires an unboxing video to claim a refund. Consumer courts accept package photos, weight discrepancies on courier labels, and immediate complaint screenshots as valid evidence under Section 63 of BSA 2023.",
   },
   {
     question: "How do I escalate my complaint if the Flipkart Grievance Officer ignores my email?",
     answer:
-      "Under Rule 4(4) of the Consumer Protection (E-Commerce) Rules, 2020, Flipkart’s Grievance Officer must acknowledge grievances within 48 hours. If they fail to redress your issue within one month, generate an INGRAM ticket on NCH 1915 and serve an Advocate Legal Notice directly to Flipkart’s Bengaluru headquarters.",
+      "Under E-Commerce Rules, 2020, Flipkart's Grievance Officer must acknowledge your grievance within 48 hours. If they fail to resolve it within one month, register a complaint on the National Consumer Helpline (1915) and send an advocate legal notice to Flipkart.",
   },
   {
     question: "Flipkart ko legal notice kaise bheje aur iska kitna kharcha aata hai?",
     answer:
-      "Flipkart ko legal notice bhejne ke liye Flipkart Internet Private Limited ke Bengaluru registered office aur third-party seller dono ko party banaya jata hai. Isme Order ID, invoice, aur 15 din ka statutory payment demand shamil hota hai. LegalRecovery par advocate-drafted statutory notice flat ₹999 me Speed Post aur email dwara dispatch hota hai.",
+      "Flipkart ko legal notice bhejne ke liye Flipkart aur seller dono ko party banaya jata hai. Isme Order ID, invoice, aur 15 dino ka payment demand shamil hota hai. Notice Speed Post aur email se bheja jata hai, jisse mamla tezi se hal hota hai.",
   },
   {
     question: "What is fallback liability and does Flipkart have to pay if the third-party seller refuses?",
     answer:
-      "Fallback liability under Rule 5(3) of the E-Commerce Rules, 2020 holds the marketplace platform directly accountable if a registered seller fails to deliver promised goods or refuses a refund. Even if Flipkart claims to be an intermediary, consumer commissions hold Flipkart jointly and severally liable.",
+      "Fallback liability under E-Commerce Rules, 2020 holds marketplace platforms directly accountable if a seller fails to deliver goods or refund money. Even if Flipkart claims to be an intermediary, consumer courts hold it jointly liable.",
   },
 ];
 
@@ -225,7 +242,7 @@ export default function FlipkartRefundComplaintPage() {
                   Statutory Answer Box
                 </span>
                 <p className="text-slate-900 font-semibold text-base sm:text-lg leading-relaxed">
-                  Flipkart Internet Private Limited holds fallback liability alongside its third-party seller under Rule 5(3) of the Consumer Protection (E-Commerce) Rules, 2020 for undelivered, pilfered, or defective items. If customer care closes your refund ticket, serve a formal grievance notice under Rule 4(4) within 48 hours, followed by an advocate demand notice. Under Section 69 of the Consumer Protection Act, 2019, you have two full years to claim your refund plus compensation in the District Consumer Commission.
+                  Flipkart holds fallback liability alongside the seller under E-Commerce Rules, 2020 for wrong or missing items. If customer care closes your ticket, email Flipkart's Grievance Officer, who must respond within 48 hours. If unresolved, send an advocate legal notice before filing on e-Jagriti to recover your refund with compensation.
                 </p>
               </section>
 

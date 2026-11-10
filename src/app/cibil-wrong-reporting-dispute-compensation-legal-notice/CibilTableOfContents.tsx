@@ -164,9 +164,9 @@ export default function CibilTableOfContents({
         <div className="bg-white rounded-2xl border border-slate-200/80 p-5 shadow-sm">
           <div className="flex items-center gap-2 pb-3 mb-3 border-b border-slate-100">
             <span className="w-2 h-2 rounded-full bg-red-600" />
-            <h4 className="text-[11px] font-black uppercase tracking-wider text-slate-400">
+            <p className="text-[11px] font-black uppercase tracking-wider text-slate-400">
               TABLE OF CONTENTS
-            </h4>
+            </p>
           </div>
 
           <nav className="space-y-1">

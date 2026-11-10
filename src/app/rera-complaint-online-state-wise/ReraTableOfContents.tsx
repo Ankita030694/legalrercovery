@@ -109,9 +109,9 @@ export default function ReraTableOfContents({ items }: ReraTableOfContentsProps)
       >
         <div className="flex items-center gap-2 pb-3 mb-3 border-b border-gray-100">
           <span className="w-2 h-2 rounded-full bg-[#DC2626]"></span>
-          <h2 className="text-xs font-extrabold uppercase tracking-wider text-gray-900">
+          <p className="text-xs font-extrabold uppercase tracking-wider text-gray-900">
             On This Page
-          </h2>
+          </p>
         </div>
 
         <nav className="space-y-1 max-h-[calc(100vh-200px)] overflow-y-auto pr-1">

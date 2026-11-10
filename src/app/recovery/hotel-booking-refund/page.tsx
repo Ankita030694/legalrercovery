@@ -19,6 +19,30 @@ export const metadata: Metadata = {
   alternates: {
     canonical: 'https://www.legalrecovery.in/recovery/hotel-booking-refund',
   },
+  openGraph: {
+    title: "Hotel Booking Refund Recovery in India | LegalRecovery",
+    description: "Struggling to get a hotel booking refund in India? Know your consumer rights against cancellations and get expert legal assistance to recover dues.",
+    url: "https://www.legalrecovery.in/recovery/hotel-booking-refund",
+    type: "article",
+    siteName: "LegalRecovery.in",
+    locale: "en_IN",
+    images: [
+      {
+        url: "https://www.legalrecovery.in/blog_money_recovery.png",
+        width: 1200,
+        height: 630,
+        alt: "Hotel Booking Refund Recovery in India | LegalRecovery",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Hotel Booking Refund Recovery in India | LegalRecovery",
+    description: "Struggling to get a hotel booking refund in India? Know your consumer rights against cancellations and get expert legal assistance to recover dues.",
+    site: "@legalrecoveryin",
+    creator: "@legalrecoveryin",
+    images: ["https://www.legalrecovery.in/blog_money_recovery.png"],
+  },
 };
 
 export default function HotelRefundPage() {

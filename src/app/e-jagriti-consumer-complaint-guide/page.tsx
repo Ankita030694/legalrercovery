@@ -24,6 +24,23 @@ export const metadata: Metadata = {
     type: "article",
     siteName: "LegalRecovery.in",
     locale: "en_IN",
+    images: [
+      {
+        url: `${SITE_URL}/blog_money_recovery.png`,
+        width: 1200,
+        height: 630,
+        alt: "How to File a Consumer Complaint on e-Jagriti (Replaced e-Daakhil)",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "How to File a Consumer Complaint on e-Jagriti (Replaced e-Daakhil)",
+    description:
+      "Comprehensive statutory guide to filing online consumer complaints on e-Jagriti: revised ₹50 Lakh district commission jurisdiction, fee exemptions, document matrix, and pre-litigation notice rules.",
+    site: "@legalrecoveryin",
+    creator: "@legalrecoveryin",
+    images: [`${SITE_URL}/blog_money_recovery.png`],
   },
   robots: {
     index: true,
@@ -61,12 +78,12 @@ const CASE_CITATIONS = [
     citation: "Civil Appeal Nos. 3766-3767 of 2020, (2022) 2 SCC 161",
     date: "Supreme Court Judgment Dated 16 March 2021",
     facts:
-      "Homebuyers who purchased residential apartments under the Consumer Protection Act, 1986 sought to maintain complaints where the total claim value (including interest and damages) exceeded previous pecuniary ceilings. Following the notification of the Consumer Protection Act, 2019, the builder argued that pending complaints stood transferred, while other consumers were confused as to whether claimed damages could artificially elevate a complaint from the District Commission to the State or National Commission.",
+      "Homebuyers bought flats under the 1986 Act. They claimed refunds along with interest and damages. The builder argued that higher damage claims changed the court jurisdiction. Buyers were unsure whether interest claims moved cases to higher commissions.",
     holding:
-      "A two-judge bench of the Supreme Court clarified that under Section 34(1), Section 47(1)(a), and Section 58(1)(a) of CPA 2019, the legislative phrase 'value of the goods or services paid as consideration' governs pecuniary jurisdiction. The commission does not assess the quantum of damages or interest demanded to determine jurisdiction. Instead, jurisdiction is determined strictly by the actual purchase price or service consideration paid by the consumer. Furthermore, pending complaints filed prior to July 20, 2020 remain in their original forums.",
+      "The Supreme Court clarified Sections 34, 47, and 58 of the 2019 Act. Court tier depends only on the money actually paid for goods or services. Requested damages and interest do not decide the court tier. Existing cases filed before July 20, 2020 also remain in their original forums.",
     amount: "Statutory Principle: Consideration-Based Filing Rule",
     takeaway:
-      "When filing on e-Jagriti, never add your requested compensation amount to determine your commission tier. If you purchased a car or product worth ₹38,00,000 and claim ₹25,00,000 as mental harassment damages, the consideration paid is ₹38 Lakh, placing your case strictly before the District Commission (ceiling ₹50 Lakh), not the State Commission.",
+      "When filing on e-Jagriti, never add your requested damages to choose your court tier. If you paid ₹38 Lakh for a product and claim ₹25 Lakh damages, your case stays in the District Commission (limit ₹50 Lakh).",
   },
   {
     title: "Consumer Forum Has Power to Direct Restitution, Full Refund, and Just Compensation Despite Agreement Clauses",
@@ -74,12 +91,12 @@ const CASE_CITATIONS = [
     citation: "Civil Appeal No. 6044 of 2019, 2022 SCC OnLine SC 478",
     date: "Supreme Court Judgment Dated 7 April 2022",
     facts:
-      "The consumer booked an apartment with an agreed completion timeline. When the developer delayed handover by several years, the consumer filed a consumer complaint seeking full refund with interest. The developer argued that the buyer agreement provided for mere nominal compensation of ₹7.50 per square foot per month and that the consumer could not demand a full refund outside the one-sided contract terms.",
+      "A buyer booked an apartment, but the builder delayed possession by years. The buyer filed a case seeking a full refund with interest. The builder argued that the contract limited compensation to just ₹7.50 per square foot per month.",
     holding:
-      "The Supreme Court held that one-sided developer agreements constitute an unfair trade practice under Section 2(47) of the Act. The Consumer Commission possesses comprehensive statutory authority to order full refund along with reasonable interest (awarded at 9% per annum from each deposit date). A consumer cannot be compelled to wait indefinitely or accept terms that penalize the consumer for delayed payments while offering negligible compensation for corporate default.",
+      "The Supreme Court held that one-sided agreements are unfair trade practices under Section 2(47). Consumer commissions have full power to order complete refunds with fair interest. The Court granted a full refund with 9% annual interest. It ruled that buyers cannot be forced to accept unfair delay clauses.",
     amount: "Full Consideration Refund + 9% Annual Interest + Litigation Costs",
     takeaway:
-      "Standard-form corporate contracts, terms-of-service disclaimers, or 'non-refundable' clauses do not bind consumer courts. If a company fails to provide promised goods or services, e-Jagriti commissions can void oppressive contract terms and grant full refunds with statutory interest.",
+      "One-sided agreements and 'non-refundable' clauses do not bind consumer commissions. If a company fails to deliver its promised service, e-Jagriti courts can cancel oppressive terms and order full refunds.",
   },
   {
     title: "Technical Breaches Cannot Justify Total Repudiation of Legitimate Consumer Claims",
@@ -87,12 +104,12 @@ const CASE_CITATIONS = [
     citation: "(2008) 11 SCC 259",
     date: "Supreme Court Landmark Precedent",
     facts:
-      "The consumer insured his vehicle for personal use. The vehicle was snatched away by unknown miscreants by hiring the vehicle. The insurance company rejected the theft claim entirely, contending that using a private vehicle as a taxi breached the policy warranty and excluded insurer liability.",
+      "A vehicle owner bought insurance for personal use. Unknown persons later hired and stole the vehicle. The insurance company rejected the theft claim completely. It argued that using a private car as a taxi breached policy terms.",
     holding:
-      "The Supreme Court affirmed that in cases of theft or total loss, the breach of policy condition (such as carrying unauthorized passengers or using a private vehicle on hire) is not germane to the cause of loss. The insurer cannot mechanically repudiate the entire claim. The Court directed settlement of the claim on a non-standard basis (up to 75% of the insured sum), penalizing the insurer for arbitrary rejection.",
+      "The Supreme Court ruled that minor rule breaches do not justify total claim rejection during a theft. The breach was not the direct cause of the loss. The Court directed the insurer to settle the claim on a non-standard basis up to 75% of the insured sum.",
     amount: "75% Non-Standard Claim Settlement + Statutory Interest",
     takeaway:
-      "Insurance companies, e-commerce giants, and travel platforms frequently repudiate consumer claims citing minor technicalities. Consumer forums consistently strike down arbitrary repudiations that violate substantive fairness.",
+      "Insurers often reject consumer claims over minor technicalities. Consumer courts regularly overturn these arbitrary denials and grant fair compensation.",
   },
   {
     title: "Charging for Carry Bags Bearing Brand Name Constitutes Unfair Trade Practice",
@@ -100,12 +117,12 @@ const CASE_CITATIONS = [
     citation: "First Appeal No. 235 of 2019, State Consumer Commission, UT Chandigarh",
     date: "Order Dated 18 March 2020",
     facts:
-      "A retail shopper purchased garments at a retail chain. The cashier compelled the customer to pay ₹18 for a carry bag bearing the retail company's logo. The consumer filed a complaint alleging deficiency of service and unfair trade practice.",
+      "A shopper bought clothes at a retail store. The cashier forced the customer to pay ₹18 for a carry bag printed with the store logo. The shopper filed a consumer case for unfair trade practice.",
     holding:
-      "The Consumer Commission held that compelling consumers to purchase carry bags printed with the retailer's commercial logo amounts to using the consumer as a free advertising agent while unfairly extracting money. The Commission directed a refund of ₹18, awarded ₹1,500 compensation to the consumer, and imposed ₹10,000 punitive damages deposited into the Consumer Legal Aid Account.",
+      "The State Commission ruled that forcing shoppers to pay for branded carry bags is illegal. It turns shoppers into free advertising agents. The Commission ordered a refund of ₹18, awarded ₹1,500 compensation, and imposed ₹10,000 punitive costs.",
     amount: "₹18 Refund + ₹1,500 Compensation + ₹10,000 Punitive Costs",
     takeaway:
-      "Even micro-disputes involving small sums are strictly enforceable on e-Jagriti. The platform eliminates physical court filing hurdles, allowing consumers to fight hidden charges, carry bag levies, or unauthorized platform fees without hiring expensive advocates.",
+      "Consumers can file cases for even small sums on e-Jagriti. The portal removes physical court hassles. You can challenge hidden charges and carry bag fees online with ease.",
   },
 ];
 
@@ -113,42 +130,42 @@ const FAQS = [
   {
     question: "What is e-Jagriti and how does it replace e-Daakhil for consumer complaints?",
     answer:
-      "e-Jagriti (e-jagriti.gov.in) is the unified, next-generation digital dispute portal launched by the Department of Consumer Affairs, Government of India. It integrates and replaces the legacy e-Daakhil software, consolidating all 680+ District Consumer Commissions, 36 State Commissions, and the National Commission (NCDRC) onto a single cloud-based platform. e-Jagriti introduces Aadhaar/DigiLocker single sign-on, AI-assisted case scrutiny, automated summons delivery via SMS and WhatsApp, online court fee collection via Bharatkosh, and integrated video-conferencing for virtual court hearings.",
+      "e-Jagriti (e-jagriti.gov.in) is the unified consumer dispute portal run by the Government of India. It replaces the old e-Daakhil system across all 680+ District Commissions, 36 State Commissions, and the National Commission (NCDRC). The platform supports Aadhaar login, online fee payments via Bharatkosh, automated summons delivery, and virtual video hearings.",
   },
   {
     question: "What is the revised pecuniary jurisdiction for District Consumer Commissions in 2026?",
     answer:
-      "Under the Consumer Protection (Jurisdiction of the District Commission, State Commission and National Commission) Rules, 2021 (G.S.R. 898(E)), the District Commission has jurisdiction over complaints where the value of goods or services paid as consideration does not exceed ₹50,00,000 (Fifty Lakh Rupees). The State Commission handles matters between ₹50 Lakh and ₹2 Crore, while the National Commission (NCDRC) hears complaints exceeding ₹2 Crore. Jurisdiction is determined strictly by the consideration paid, not the compensation claimed.",
+      "Under the 2021 jurisdictional rules, District Commissions hear cases where the money paid does not exceed ₹50 Lakh. The State Commission handles matters between ₹50 Lakh and ₹2 Crore. The National Commission (NCDRC) hears matters above ₹2 Crore. The tier depends entirely on the purchase price paid, not on the damages claimed.",
   },
   {
     question: "How much are the consumer court fees on e-Jagriti in 2026?",
     answer:
-      "Consumer court fees are among the lowest in the Indian judicial system and are entirely waived for small consumers. Under the statutory fee schedule: claims with consideration up to ₹5,00,000 have NIL court fee (₹0); claims from ₹5,00,001 to ₹10,00,000 cost ₹200; from ₹10,00,001 to ₹20,00,000 cost ₹400; and from ₹20,00,001 to ₹50,00,000 cost ₹1,000. For State Commission matters (₹50L to ₹1Cr), the fee is ₹2,000, and up to ₹2Cr is ₹4,000. National Commission fees are capped at ₹7,500.",
+      "Consumer court fees are very low and free for small disputes. Claims up to ₹5 Lakh pay ₹0 court fee. Claims between ₹5 Lakh and ₹10 Lakh cost ₹200. Claims between ₹10 Lakh and ₹20 Lakh cost ₹400. Claims between ₹20 Lakh and ₹50 Lakh cost ₹1,000. State Commission fees range from ₹2,000 to ₹4,000, while National Commission fees are capped at ₹7,500.",
   },
   {
     question: "Is sending a legal notice compulsory before filing on e-Jagriti?",
     answer:
-      "While the Consumer Protection Act, 2019 does not make a pre-litigation legal notice an absolute statutory bar, Section 35 practice and judicial precedents make serving a 15-day advocate notice essential. The legal notice establishes undeniable proof of the company's knowledge of default, fixes the cause of action, and provides evidence that the consumer offered a reasonable cure period. Over 78% of corporate service disputes resolve upon receipt of an advocate notice, avoiding the need for a full commission trial.",
+      "Sending a 15-day advocate legal notice before filing is best practice. It creates clear written proof of your grievance and gives the company time to resolve the issue. In fact, over 78% of corporate consumer disputes get resolved right after receiving an advocate notice.",
   },
   {
     question: "What is the limitation period to file a consumer complaint on e-Jagriti?",
     answer:
-      "Under Section 69 of the Consumer Protection Act, 2019, the limitation period to file a consumer complaint is exactly 2 years from the date on which the cause of action arose (e.g., date of transaction, delivery of defective goods, rejection of refund, or wrongful repudiation of an insurance claim). A complaint filed after 2 years can only be entertained if the consumer files an application for condonation of delay under Section 69(2) establishing sufficient cause for the delay.",
+      "Under Section 69 of the Consumer Protection Act, you must file within two years from the dispute date. This date starts when the company refused your refund or caused the loss. If two years have passed, you can file a delay condonation application showing a valid reason.",
   },
   {
     question: "Can I file an e-Jagriti consumer complaint without hiring a lawyer?",
     answer:
-      "Yes. The Consumer Protection Act is designed specifically for citizen self-representation. Section 35 permits any consumer, registered voluntary consumer association, or legal heir to file and argue their case in person without an advocate. e-Jagriti allows citizens to register as an 'Individual Consumer', upload verified petitions and PDF annexures, pay fees online, and attend arguments via virtual video conference directly from their home.",
+      "Yes, you can file without a lawyer. Section 35 of the Act allows consumers to represent themselves. You can register as an 'Individual Consumer' on e-Jagriti, upload your petition and proof, pay fees online, and join video hearings from home.",
   },
   {
     question: "How long does a consumer commission take to admit a complaint on e-Jagriti?",
     answer:
-      "Under Section 36(2) of the Consumer Protection Act, 2019, the admissibility of a consumer complaint must be decided within 21 days from the date on which the complaint was submitted. If the Commission does not decide the admissibility within 21 days, the complaint is deemed by law to have been admitted, and summons are automatically issued to the opposite party.",
+      "Under Section 36(2) of the Act, the Commission must decide complaint admission within 21 days. If the Commission does not decide within 21 days, the case is automatically deemed admitted, and formal summons are issued to the opposite party.",
   },
   {
     question: "What happens if a company ignores the consumer court order issued through e-Jagriti?",
     answer:
-      "If the opposite party fails to comply with a final order, the consumer can file an execution application under Section 71 (enforcing the order like a civil court decree through asset attachment) and Section 72 of CPA 2019 (criminal penalty). Under Section 72, non-compliance carries imprisonment for a term of not less than 1 month up to 3 years, or a fine from ₹25,000 to ₹1,00,000, or both. Consumer courts routinely issue bailable and non-bailable warrants against corporate directors for non-compliance.",
+      "If a company ignores an order, you can file an execution case under Section 71 and Section 72. Under Section 72, non-compliance carries a prison term between one month and three years, or a fine up to ₹1,00,000, or both. Courts can also issue arrest warrants against company directors.",
   },
 ];
 
@@ -268,7 +285,7 @@ export default function EJagritiConsumerComplaintGuidePage() {
                 Statutory Summary (e-Jagriti Consumer Filing Protocol)
               </p>
               <p>
-                To file a consumer complaint online, register on the Department of Consumer Affairs portal at e-jagriti.gov.in (which replaced legacy e-Daakhil). The District Commission hears disputes up to ₹50 Lakh consideration with zero court fees under ₹5 Lakh. Before digital submission, serve a formal 15-day advocate legal notice; if ignored, upload your verified petition, evidence matrix, and proof of payment within 2 years under Section 69.
+                To file a consumer complaint online, register at e-jagriti.gov.in. This portal replaces the older e-Daakhil system. The District Commission hears cases where payment was up to ₹50 Lakh. Filing is free for claims under ₹5 Lakh. First, send a 15-day legal notice through a lawyer. If the company fails to pay, submit your verified petition and payment proofs online within two years.
               </p>
             </div>
 
@@ -316,7 +333,7 @@ export default function EJagritiConsumerComplaintGuidePage() {
                   Key Facts: Online Consumer Court Dispute Filing at a Glance
                 </h2>
                 <p className="text-sm sm:text-base text-slate-700 leading-relaxed">
-                  The consumer dispute adjudication landscape in India underwent a monumental modernisation with the retirement of the legacy e-Daakhil system and the full operationalisation of the <strong className="text-slate-900 font-semibold">e-Jagriti Portal (e-jagriti.gov.in)</strong> by the Ministry of Consumer Affairs, Food &amp; Public Distribution. Whether you are dealing with an e-commerce seller withholding refunds, an airline cancelling flights without compensation, a hospital overcharging medical items, or a builder defaulting on possession, e-Jagriti provides a completely paperless, end-to-end judicial remedy.
+                  Consumer court filing in India is now faster and easier. The government replaced the old e-Daakhil system with the modern <strong className="text-slate-900 font-semibold">e-Jagriti Portal (e-jagriti.gov.in)</strong>. You can file complaints online without visiting a court. The portal covers e-commerce refund delays, flight cancellations, hospital overbilling, and builder defaults. It gives consumers a simple and paperless legal remedy.
                 </p>
 
                 {/* Key Facts Table */}

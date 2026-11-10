@@ -29,6 +29,23 @@ export const metadata: Metadata = {
     type: "article",
     siteName: "LegalRecovery.in",
     locale: "hi_IN",
+    images: [
+      {
+        url: `${SITE_URL}/blog_money_recovery.png`,
+        width: 1200,
+        height: 630,
+        alt: "उधार दिया पैसा वापस कैसे लें: कानूनी तरीका (2026)",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "उधार दिया पैसा वापस कैसे लें: कानूनी तरीका (2026)",
+    description:
+      "दोस्त या रिश्तेदार उधार नहीं लौटा रहा? सबूत, कानूनी नोटिस, समय सीमा और कोर्ट का रास्ता — आसान हिंदी में पूरी जानकारी।",
+    site: "@legalrecoveryin",
+    creator: "@legalrecoveryin",
+    images: [`${SITE_URL}/blog_money_recovery.png`],
   },
   robots: {
     index: true,

@@ -24,6 +24,23 @@ export const metadata: Metadata = {
     type: "article",
     siteName: "LegalRecovery.in",
     locale: "en_IN",
+    images: [
+      {
+        url: `${SITE_URL}/blog_money_recovery.png`,
+        width: 1200,
+        height: 630,
+        alt: "Commercial Lease Security Deposit Stuck? Legal Notice",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Commercial Lease Security Deposit Stuck? Legal Notice",
+    description:
+      "Statutory roadmap for recovering ₹5L–₹50L+ office and retail deposits. Order 37 summary suit vs MSME Samadhaan vs arbitration, dilapidation clause tactics and legal notice.",
+    site: "@legalrecoveryin",
+    creator: "@legalrecoveryin",
+    images: [`${SITE_URL}/blog_money_recovery.png`],
   },
   robots: {
     index: true,
@@ -84,7 +101,7 @@ const CASE_CITATIONS = [
     facts:
       "The commercial tenant occupied office premises in a prime business district for over 6 years. Upon determination of the lease, the landlord deducted ₹14,50,000 from the security deposit on the grounds of repainting the entire premises, replacing weathered vinyl floorings, and repairing minor hairline cracks around window frames. The tenant contested these deductions as normal operational usage.",
     holding:
-      "The High Court examined Section 108(m) of the Transfer of Property Act, 1882, which explicitly excludes 'reasonable wear and tear' from the lessee's obligation to restore the property. The Court ruled that prolonged commercial occupation naturally causes fading of wall paint, floor scuffing, and minor superficial wear. The landlord cannot exploit end-of-lease handover to get their property renovated and modernized at the outgoing tenant's expense. The entire deduction was set aside, and the landlord was ordered to refund the sum with interest.",
+      "The High Court held that Section 108(m) excludes normal wear and tear from tenant duties. Wall paint fading and floor scuffing occur naturally over time. Landlords cannot force outgoing tenants to pay for property renovations. The court cancelled the deductions and ordered a full refund with interest.",
     amount: "₹14,50,000 Deductions Disallowed @ 9% Interest + ₹50,000 Costs",
     takeaway:
       "Section 108(m) of the Transfer of Property Act protects tenants from routine repainting and aging costs. Repainting, polishing, and natural weathering are standard landlord capital depreciation costs, not tenant dilapidations.",
@@ -97,7 +114,7 @@ const CASE_CITATIONS = [
     facts:
       "A commercial tenancy agreement contained a broad arbitration clause. When the lessor defaulted on refunding the multi-lakh security deposit post-handover, the lessor argued that the tenant had no remedy before civil courts or statutory facilitation councils and had to bear the exorbitant expenses of a private arbitral tribunal.",
     holding:
-      "The Supreme Court affirmed that landlord-tenant disputes governed by the Transfer of Property Act are arbitrable, but clarified that arbitration clauses cannot be used as an oppressive instrument to delay liquidated debt recovery. Unilateral appointment of a sole arbitrator by the lessor is void under Section 12(5) of the Arbitration Act. Furthermore, tenants are free to pursue pre-institution mediation under Section 12A of the Commercial Courts Act or summary recovery before initiating tribunal proceedings.",
+      "The Supreme Court ruled that landlords cannot use arbitration clauses to delay deposit refunds. Unilateral appointment of a sole arbitrator by a landlord is void under Section 12(5) of the Arbitration Act. Tenants can pursue low-cost commercial mediation or summary court suits to recover their funds.",
     amount: "Doctrine of Arbitrable Balance & Unilateral Appointment Invalidation",
     takeaway:
       "If your commercial lease contains an arbitration clause naming the landlord's nominee as sole arbitrator, that appointment is legally dead under Section 12(5). You can use pre-institution mediation or an Order 37 notice to resolve the dispute at minimal cost.",
@@ -121,17 +138,17 @@ const FAQS = [
   {
     question: "How long can a commercial landlord legally take to refund an office security deposit in India?",
     answer:
-      "Under standard commercial lease agreements and Indian contract law, a landlord must refund the security deposit within 7 to 30 days of the tenant handing over vacant, peaceful possession and clearing all undisputed utility and common area maintenance (CAM) dues. If the lease deed is silent, Section 108 of the Transfer of Property Act requires the refund to be made simultaneously with the surrender of keys. Withholding the deposit beyond 30 days without providing an itemized statement of legitimate dilapidations triggers statutory interest liability (typically 9% to 18% per annum) under Court precedents.",
+      "Under Indian contract law, landlords must return security deposits within 7 to 30 days of key handover. If the lease is silent, Section 108 requires immediate refund upon surrender of the property. Holding the deposit beyond 30 days without proof of damages attracts 9% to 18% annual interest under court precedents.",
   },
   {
     question: "Can a commercial landlord deduct full repainting and deep-cleaning costs from the deposit?",
     answer:
-      "No. Section 108(m) of the Transfer of Property Act, 1882 explicitly excludes 'reasonable wear and tear' from the tenant's restoration obligations. Normal paint fading, minor furniture scuffs, carpet weathering, and hairline plaster cracks after years of commercial operation constitute fair wear and tear. Unless the lease deed specifically contains a clear, agreed-upon reinstatement clause with verified market quotations, the landlord cannot unilaterally deduct general painting, deep cleaning, or modernization costs from your deposit.",
+      "No. Section 108(m) of the Transfer of Property Act excludes fair wear and tear from tenant obligations. Faded paint, carpet wear, and minor marks are natural aging costs. Landlords cannot deduct routine painting, deep cleaning, or property upgrades from your deposit.",
   },
   {
     question: "What is an Order 37 summary suit, and why is it effective for recovering commercial deposits?",
     answer:
-      "An Order XXXVII (Order 37) suit under the Code of Civil Procedure, 1908 is a fast-track judicial mechanism for recovering liquidated debts arising out of written contracts, such as a registered lease deed. Unlike regular civil suits that take years, under Order 37 the defendant landlord does not possess an automatic right to defend. The landlord must apply to the court for 'Leave to Defend' within 10 days of receiving summons, demonstrating a substantial, bona fide defence. If the landlord fails to show real triable issues, the court immediately passes a summary decree for the full deposit amount plus interest.",
+      "Order 37 of the CPC is a fast court route to recover written debts. Unlike standard lawsuits, the landlord has no automatic right to defend. They must apply for Leave to Defend within 10 days of getting court summons. If they fail to show a genuine defense, the judge immediately orders a full refund with interest.",
   },
   {
     question: "Can an MSME registered business use MSME Samadhaan to recover a commercial lease deposit?",
@@ -151,7 +168,7 @@ const FAQS = [
   {
     question: "Commercial landlord office ka security deposit wapas nahi kar raha toh legal notice kaise bheje?",
     answer:
-      "Agar commercial landlord vacant possession lene ke baad painting ya arbitrary damage ke naam par deposit rok raha hai, toh pehla aur sabse prabhavi kadam ek formal advocate legal notice bhejna hota hai. LegalRecovery.in par verified advocates Transfer of Property Act Section 108, Order 37 CPC, aur Commercial Courts Act ke antargat 15 din ka statutory demand notice bhejte hain. Is notice mein landlord ko 18% annual interest, court litigation kharche, aur dilapidation claims ki itemized GST receipts pesh karne ki statutory chetavani di jati hai.",
+      "Agar landlord painting ya bina wajah deposit roke, toh pehla kadam formal legal notice bhejna hai. Advocate Section 108 aur Order 37 CPC ke tehat 15 din ka legal notice bhejte hain. Isme landlord ko interest aur court kharche ki chetavani di jati hai.",
   },
 ];
 
@@ -271,7 +288,7 @@ export default function CommercialLeaseDepositRecoveryPage() {
                 Statutory Summary (Commercial Deposit Withholding &amp; Fair Wear &amp; Tear Law)
               </p>
               <p>
-                Under Section 108(m) of the Transfer of Property Act, 1882, commercial tenants are not liable for reasonable wear and tear. Once vacant possession is handed over, an unpaid security deposit becomes an admitted liquidated debt. Tenants can issue a 15-day advocate demand notice and initiate recovery via Order 37 summary suit, MSME Samadhaan, or Section 12A commercial mediation before taking adversarial litigation steps.
+                Under Section 108(m) of the Transfer of Property Act, 1882, tenants are not liable for fair wear and tear. Once you return the keys, the unpaid deposit becomes a clear debt. Tenants can issue a 15-day legal notice. You can then recover funds through an Order 37 summary suit, MSME Samadhaan, or commercial mediation.
               </p>
             </div>
 

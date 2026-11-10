@@ -19,6 +19,30 @@ export const metadata: Metadata = {
   alternates: {
     canonical: 'https://www.legalrecovery.in/recovery/insurance-claim-amount',
   },
+  openGraph: {
+    title: "Recover Insurance Claim Amount in India | LegalRecovery",
+    description: "Insurance claim rejected or delayed? Learn about IRDAI settlement rules, penal interest on delays, and how to file an Insurance Ombudsman complaint.",
+    url: "https://www.legalrecovery.in/recovery/insurance-claim-amount",
+    type: "article",
+    siteName: "LegalRecovery.in",
+    locale: "en_IN",
+    images: [
+      {
+        url: "https://www.legalrecovery.in/blog_money_recovery.png",
+        width: 1200,
+        height: 630,
+        alt: "Recover Insurance Claim Amount in India | LegalRecovery",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Recover Insurance Claim Amount in India | LegalRecovery",
+    description: "Insurance claim rejected or delayed? Learn about IRDAI settlement rules, penal interest on delays, and how to file an Insurance Ombudsman complaint.",
+    site: "@legalrecoveryin",
+    creator: "@legalrecoveryin",
+    images: ["https://www.legalrecovery.in/blog_money_recovery.png"],
+  },
 };
 
 export default function InsuranceClaimAmountPage() {

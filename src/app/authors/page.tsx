@@ -7,6 +7,30 @@ export const metadata: Metadata = {
   alternates: {
     canonical: 'https://www.legalrecovery.in/authors',
   },
+  openGraph: {
+    title: 'Our Legal Experts & Panel Advocates | Legal Recovery India',
+    description: 'Meet our legal experts and panel advocates led by Founder Anuj Anand Malik, specializing in debt recovery, consumer law, and civil litigation.',
+    url: 'https://www.legalrecovery.in/authors',
+    type: 'website',
+    siteName: 'LegalRecovery.in',
+    locale: 'en_IN',
+    images: [
+      {
+        url: 'https://www.legalrecovery.in/blog_money_recovery.png',
+        width: 1200,
+        height: 630,
+        alt: 'Our Legal Experts & Panel Advocates | Legal Recovery India',
+      },
+    ],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Our Legal Experts & Panel Advocates | Legal Recovery India',
+    description: 'Meet our legal experts and panel advocates led by Founder Anuj Anand Malik, specializing in debt recovery, consumer law, and civil litigation.',
+    site: '@legalrecoveryin',
+    creator: '@legalrecoveryin',
+    images: ['https://www.legalrecovery.in/blog_money_recovery.png'],
+  },
 };
 
 const authorListSchema = {

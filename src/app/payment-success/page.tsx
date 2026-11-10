@@ -8,6 +8,32 @@ import AutoLogin from "./AutoLogin";
 export const metadata: Metadata = {
   title: "Payment Confirmation | LegalRecovery",
   description: "Payment confirmation and transaction status for LegalRecovery services.",
+  alternates: {
+    canonical: "/payment-success",
+  },
+  openGraph: {
+    title: "Payment Confirmation | LegalRecovery",
+    description: "Payment confirmation and transaction status for LegalRecovery services.",
+    url: "https://www.legalrecovery.in/payment-success",
+    type: "website",
+    siteName: "LegalRecovery.in",
+    images: [
+      {
+        url: "https://www.legalrecovery.in/blog_money_recovery.png",
+        width: 1200,
+        height: 630,
+        alt: "Payment Confirmation | LegalRecovery",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Payment Confirmation | LegalRecovery",
+    description: "Payment confirmation and transaction status for LegalRecovery services.",
+    site: "@legalrecoveryin",
+    creator: "@legalrecoveryin",
+    images: ["https://www.legalrecovery.in/blog_money_recovery.png"],
+  },
   robots: {
     index: false,
     follow: false,

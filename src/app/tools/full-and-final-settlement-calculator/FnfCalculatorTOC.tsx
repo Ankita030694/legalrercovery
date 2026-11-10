@@ -94,9 +94,9 @@ export default function FnfCalculatorTOC() {
         <span className="inline-block px-2 py-0.5 rounded text-[10px] font-extrabold uppercase bg-red-600 text-white mb-2">
           Section 17(2) Mandate
         </span>
-        <h4 className="text-xs font-bold text-white mb-1">
+        <p className="text-xs font-bold text-white mb-1">
           Settlement Due in 2 Working Days
-        </h4>
+        </p>
         <p className="text-[11px] text-slate-300 leading-relaxed mb-3">
           If your company has delayed your FnF beyond 2 days or imposed arbitrary deductions, a statutory advocate legal notice can enforce payment with 18% penal interest.
         </p>

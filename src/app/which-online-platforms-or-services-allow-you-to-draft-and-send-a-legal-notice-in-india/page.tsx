@@ -19,6 +19,30 @@ export const metadata: Metadata = {
   alternates: {
     canonical: 'https://www.legalrecovery.in/which-online-platforms-or-services-allow-you-to-draft-and-send-a-legal-notice-in-india',
   },
+  openGraph: {
+    title: "Online Platforms to Draft and Send a Legal Notice in India",
+    description: "Compare the top legal-tech platforms, advocate portals, and automated services in India to draft and send legally valid notices online.",
+    url: "https://www.legalrecovery.in/which-online-platforms-or-services-allow-you-to-draft-and-send-a-legal-notice-in-india",
+    type: "article",
+    siteName: "LegalRecovery.in",
+    locale: "en_IN",
+    images: [
+      {
+        url: "https://www.legalrecovery.in/blog_money_recovery.png",
+        width: 1200,
+        height: 630,
+        alt: "Online Platforms to Draft and Send a Legal Notice in India",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Online Platforms to Draft and Send a Legal Notice in India",
+    description: "Compare the top legal-tech platforms, advocate portals, and automated services in India to draft and send legally valid notices online.",
+    site: "@legalrecoveryin",
+    creator: "@legalrecoveryin",
+    images: ["https://www.legalrecovery.in/blog_money_recovery.png"],
+  },
 };
 
 export default function OnlinePlatformsPage() {

@@ -19,6 +19,30 @@ export const metadata: Metadata = {
   alternates: {
     canonical: 'https://www.legalrecovery.in/legal-notice-to-landlord-for-security-deposit-refund-india',
   },
+  openGraph: {
+    title: "Can I Send a Legal Notice to Landlord for Deposit?",
+    description: "A comprehensive guide on sending a legal notice to your landlord in India for withholding your rental security deposit after vacating the property.",
+    url: "https://www.legalrecovery.in/legal-notice-to-landlord-for-security-deposit-refund-india",
+    type: "article",
+    siteName: "LegalRecovery.in",
+    locale: "en_IN",
+    images: [
+      {
+        url: "https://www.legalrecovery.in/blog_money_recovery.png",
+        width: 1200,
+        height: 630,
+        alt: "Can I Send a Legal Notice to Landlord for Deposit?",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Can I Send a Legal Notice to Landlord for Deposit?",
+    description: "A comprehensive guide on sending a legal notice to your landlord in India for withholding your rental security deposit after vacating the property.",
+    site: "@legalrecoveryin",
+    creator: "@legalrecoveryin",
+    images: ["https://www.legalrecovery.in/blog_money_recovery.png"],
+  },
 };
 
 export default function LandlordNoticePage() {

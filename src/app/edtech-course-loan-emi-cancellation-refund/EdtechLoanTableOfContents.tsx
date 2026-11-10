@@ -140,10 +140,10 @@ export default function EdtechLoanTableOfContents({
       >
         <div className="bg-white rounded-2xl border border-slate-200 p-5 shadow-sm space-y-4">
           <div className="flex items-center justify-between border-b border-slate-100 pb-3">
-            <h2 className="text-xs font-black uppercase tracking-wider text-slate-900 flex items-center gap-2">
+            <p className="text-xs font-black uppercase tracking-wider text-slate-900 flex items-center gap-2">
               <span className="w-2 h-2 rounded-full bg-[#DC2626]" />
               Table of Contents
-            </h2>
+            </p>
             <span className="text-[10px] font-bold text-slate-400 uppercase tracking-wider">
               {sections.length} Parts
             </span>

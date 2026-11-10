@@ -24,6 +24,23 @@ export const metadata: Metadata = {
     type: "article",
     siteName: "LegalRecovery.in",
     locale: "en_IN",
+    images: [
+      {
+        url: `${SITE_URL}/blog_money_recovery.png`,
+        width: 1200,
+        height: 630,
+        alt: "Wrong Electricity Bill Complaint Application (Format) — Free Word & PDF",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Wrong Electricity Bill Complaint Application (Format) — Free Word & PDF",
+    description:
+      "Wrong reading or inflated electricity bill? Download official complaint application formats in English and Hindi with CGRF statutory escalation rules.",
+    site: "@legalrecoveryin",
+    creator: "@legalrecoveryin",
+    images: [`${SITE_URL}/blog_money_recovery.png`],
   },
   robots: {
     index: true,

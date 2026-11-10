@@ -159,9 +159,9 @@ export default function EJagritiTableOfContents({
         <div className="bg-white rounded-2xl border border-slate-200 p-5 shadow-sm">
           <div className="flex items-center gap-2 pb-3 mb-3 border-b border-slate-100">
             <span className="w-2.5 h-2.5 rounded-full bg-[#DC2626]" />
-            <h3 className="text-xs font-extrabold uppercase tracking-wider text-slate-800">
+            <p className="text-xs font-extrabold uppercase tracking-wider text-slate-800">
               Guide Navigation
-            </h3>
+            </p>
           </div>
 
           <nav className="space-y-1">

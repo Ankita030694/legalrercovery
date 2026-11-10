@@ -24,6 +24,23 @@ export const metadata: Metadata = {
     type: "article",
     siteName: "LegalRecovery.in",
     locale: "en_IN",
+    images: [
+      {
+        url: `${SITE_URL}/blog_money_recovery.png`,
+        width: 1200,
+        height: 630,
+        alt: "Ola, Uber & Rapido Overcharge or Wrongful Fee? Statutory Legal Remedies",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Ola, Uber & Rapido Overcharge or Wrongful Fee? Statutory Legal Remedies",
+    description:
+      "Statutory escalation path for wrongful cab cancellation fees, trip fare overcharges, driver AC refusal, stuck wallet refunds, and consumer court action.",
+    site: "@legalrecoveryin",
+    creator: "@legalrecoveryin",
+    images: [`${SITE_URL}/blog_money_recovery.png`],
   },
   robots: {
     index: true,

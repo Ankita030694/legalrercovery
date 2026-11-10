@@ -24,6 +24,23 @@ export const metadata: Metadata = {
     type: "article",
     siteName: "LegalRecovery.in",
     locale: "en_IN",
+    images: [
+      {
+        url: `${SITE_URL}/blog_money_recovery.png`,
+        width: 1200,
+        height: 630,
+        alt: "Used-Car Platform Refund Dispute? Your Legal Options",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Used-Car Platform Refund Dispute? Your Legal Options",
+    description:
+      "Statutory rights against used-car platforms & dealers: 7-day money-back enforcement, hidden defect & meter tampering liability, and legal notices.",
+    site: "@legalrecoveryin",
+    creator: "@legalrecoveryin",
+    images: [`${SITE_URL}/blog_money_recovery.png`],
   },
   robots: {
     index: true,

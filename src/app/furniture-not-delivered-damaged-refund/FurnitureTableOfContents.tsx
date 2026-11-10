@@ -151,9 +151,9 @@ export default function FurnitureTableOfContents({
         <div className="bg-white rounded-2xl border border-slate-200 shadow-sm p-5">
           <div className="flex items-center gap-2 mb-4 pb-3 border-b border-slate-100">
             <span className="w-2 h-2 rounded-full bg-red-600" />
-            <h3 className="text-xs font-black uppercase tracking-wider text-slate-800">
+            <p className="text-xs font-black uppercase tracking-wider text-slate-800">
               Guide Navigation
-            </h3>
+            </p>
           </div>
 
           <nav className="space-y-1" aria-label="Sections list">

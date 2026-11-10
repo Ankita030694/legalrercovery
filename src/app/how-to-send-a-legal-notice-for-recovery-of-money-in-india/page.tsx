@@ -18,6 +18,30 @@ export const metadata: Metadata = {
   alternates: {
     canonical: 'https://www.legalrecovery.in/how-to-send-a-legal-notice-for-recovery-of-money-in-india',
   },
+  openGraph: {
+    title: "How to Send a Legal Notice for Money Recovery in India",
+    description: "Step-by-step guide to drafting and sending a legal notice for money recovery (loans, dues, freelancer fees) online via Speed Post in India.",
+    url: "https://www.legalrecovery.in/how-to-send-a-legal-notice-for-recovery-of-money-in-india",
+    type: "article",
+    siteName: "LegalRecovery.in",
+    locale: "en_IN",
+    images: [
+      {
+        url: "https://www.legalrecovery.in/blog_money_recovery.png",
+        width: 1200,
+        height: 630,
+        alt: "How to Send a Legal Notice for Money Recovery in India",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "How to Send a Legal Notice for Money Recovery in India",
+    description: "Step-by-step guide to drafting and sending a legal notice for money recovery (loans, dues, freelancer fees) online via Speed Post in India.",
+    site: "@legalrecoveryin",
+    creator: "@legalrecoveryin",
+    images: ["https://www.legalrecovery.in/blog_money_recovery.png"],
+  },
 };
 
 export default function HowToSendLegalNoticePage() {

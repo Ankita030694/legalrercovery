@@ -20,6 +20,24 @@ export const metadata: Metadata = {
     description: "Resolve money recovery disputes in 7–15 days without court via Advocate Legal Notice, Statutory Ombudsmen, and Online Dispute Resolution.",
     url: "https://www.legalrecovery.in/how-to-recover-money-without-going-to-court-india",
     type: "article",
+    siteName: "LegalRecovery.in",
+    locale: "en_IN",
+    images: [
+      {
+        url: "https://www.legalrecovery.in/blog_money_recovery.png",
+        width: 1200,
+        height: 630,
+        alt: "How to Recover Money Without Going to Court | Legal Guide",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "How to Recover Money Without Going to Court | Legal Guide",
+    description: "Resolve money recovery disputes in 7–15 days without court via Advocate Legal Notice, Statutory Ombudsmen, and Online Dispute Resolution.",
+    site: "@legalrecoveryin",
+    creator: "@legalrecoveryin",
+    images: ["https://www.legalrecovery.in/blog_money_recovery.png"],
   },
 };
 

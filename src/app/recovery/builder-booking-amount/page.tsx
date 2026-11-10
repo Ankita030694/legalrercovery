@@ -19,6 +19,30 @@ export const metadata: Metadata = {
   alternates: {
     canonical: 'https://www.legalrecovery.in/recovery/builder-booking-amount',
   },
+  openGraph: {
+    title: "Recover Builder Booking Amount Refund | LegalRecovery",
+    description: "Builder refusing to refund booking token money? LegalRecovery provides expert legal-tech assistance to recover your property dues under RERA rules.",
+    url: "https://www.legalrecovery.in/recovery/builder-booking-amount",
+    type: "article",
+    siteName: "LegalRecovery.in",
+    locale: "en_IN",
+    images: [
+      {
+        url: "https://www.legalrecovery.in/blog_money_recovery.png",
+        width: 1200,
+        height: 630,
+        alt: "Recover Builder Booking Amount Refund | LegalRecovery",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Recover Builder Booking Amount Refund | LegalRecovery",
+    description: "Builder refusing to refund booking token money? LegalRecovery provides expert legal-tech assistance to recover your property dues under RERA rules.",
+    site: "@legalrecoveryin",
+    creator: "@legalrecoveryin",
+    images: ["https://www.legalrecovery.in/blog_money_recovery.png"],
+  },
 };
 
 export default function BuilderBookingAmountPage() {

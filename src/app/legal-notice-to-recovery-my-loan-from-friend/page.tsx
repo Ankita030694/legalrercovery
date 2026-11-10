@@ -19,6 +19,24 @@ export const metadata: Metadata = {
     description: "Recover personal loans given to a friend or relative using UPI receipts, WhatsApp chats, and an Advocate Legal Notice.",
     url: "https://www.legalrecovery.in/legal-notice-to-recovery-my-loan-from-friend",
     type: "article",
+    siteName: "LegalRecovery.in",
+    locale: "en_IN",
+    images: [
+      {
+        url: "https://www.legalrecovery.in/blog_money_recovery.png",
+        width: 1200,
+        height: 630,
+        alt: "Legal Notice to Recover Money from Friend in India",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Legal Notice to Recover Money from Friend in India",
+    description: "Recover personal loans given to a friend or relative using UPI receipts, WhatsApp chats, and an Advocate Legal Notice.",
+    site: "@legalrecoveryin",
+    creator: "@legalrecoveryin",
+    images: ["https://www.legalrecovery.in/blog_money_recovery.png"],
   },
 };
 

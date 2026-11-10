@@ -24,6 +24,23 @@ export const metadata: Metadata = {
     type: "article",
     siteName: "LegalRecovery.in",
     locale: "en_IN",
+    images: [
+      {
+        url: `${SITE_URL}/blog_money_recovery.png`,
+        width: 1200,
+        height: 630,
+        alt: "Platform Client Stopped Paying: Disputes, Off-Platform Deals and Recovery",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Platform Client Stopped Paying: Disputes, Off-Platform Deals and Recovery",
+    description:
+      "Actionable playbook for Indian freelancers and agencies when an Upwork, Fiverr or off-platform client refuses payment: escrow rules, Section 19 copyright leverage, and legal notices.",
+    site: "@legalrecoveryin",
+    creator: "@legalrecoveryin",
+    images: [`${SITE_URL}/blog_money_recovery.png`],
   },
   robots: {
     index: true,

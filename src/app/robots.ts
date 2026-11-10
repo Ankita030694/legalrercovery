@@ -12,9 +12,6 @@ export default function robots(): MetadataRoute.Robots {
           "/nullify/",
           "/user/",
           "/payu/",
-          "/payment-success",
-          "/payment-failure",
-          "/payment-cancelled",
         ],
       },
       {
@@ -34,9 +31,6 @@ export default function robots(): MetadataRoute.Robots {
           "/nullify/",
           "/user/",
           "/payu/",
-          "/payment-success",
-          "/payment-failure",
-          "/payment-cancelled",
         ],
       }
     ],

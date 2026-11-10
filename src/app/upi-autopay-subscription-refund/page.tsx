@@ -24,6 +24,23 @@ export const metadata: Metadata = {
     type: "article",
     siteName: "LegalRecovery.in",
     locale: "en_IN",
+    images: [
+      {
+        url: `${SITE_URL}/blog_money_recovery.png`,
+        width: 1200,
+        height: 630,
+        alt: "UPI AutoPay Subscription Refund: Cancel & Get Money Back",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "UPI AutoPay Subscription Refund: Cancel & Get Money Back",
+    description:
+      "Statutory recovery guide for unwanted UPI AutoPay and e-mandate debits. Learn how to cancel mandates on PhonePe/GPay, dispute unnotified debits under RBI rules, and trigger dark-pattern refunds.",
+    site: "@legalrecoveryin",
+    creator: "@legalrecoveryin",
+    images: [`${SITE_URL}/blog_money_recovery.png`],
   },
   robots: {
     index: true,

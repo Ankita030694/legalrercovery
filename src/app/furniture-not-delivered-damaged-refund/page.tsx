@@ -24,6 +24,23 @@ export const metadata: Metadata = {
     type: "article",
     siteName: "LegalRecovery.in",
     locale: "en_IN",
+    images: [
+      {
+        url: `${SITE_URL}/blog_money_recovery.png`,
+        width: 1200,
+        height: 630,
+        alt: "Furniture Not Delivered or Damaged? Refund & Legal Notice",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Furniture Not Delivered or Damaged? Refund & Legal Notice",
+    description:
+      "Statutory escalation path for delayed furniture deliveries, damaged or cracked transit goods, abandoned modular kitchen contracts, and consumer court refund claims.",
+    site: "@legalrecoveryin",
+    creator: "@legalrecoveryin",
+    images: [`${SITE_URL}/blog_money_recovery.png`],
   },
   robots: {
     index: true,

@@ -25,6 +25,23 @@ export const metadata: Metadata = {
     description: "Salary late again? Under the Code on Wages, monthly wages are due by the 7th of the next month. What counts as a delay and how to claim your pay.",
     url: "https://www.legalrecovery.in/recovery/delayed-wages",
     type: "article",
+    images: [
+      {
+        url: "https://www.legalrecovery.in/blog_money_recovery.png",
+        width: 1200,
+        height: 630,
+        alt: "Salary Delayed This Month? Late Salary Law in India",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Salary Delayed This Month? Late Salary Law in India",
+    description:
+      "Salary late again? Under the Code on Wages, monthly wages are due by the 7th of the next month. What counts as a delay and how to claim your pay.",
+    site: "@legalrecoveryin",
+    creator: "@legalrecoveryin",
+    images: ["https://www.legalrecovery.in/blog_money_recovery.png"],
   },
 };
 

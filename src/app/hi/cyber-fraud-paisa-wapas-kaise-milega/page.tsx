@@ -48,12 +48,23 @@ export const metadata: Metadata = {
     siteName: "LegalRecovery.in",
     publishedTime: PUBLISHED_DATE,
     modifiedTime: MODIFIED_DATE,
+    images: [
+      {
+        url: `${SITE_URL}/blog_money_recovery.png`,
+        width: 1200,
+        height: 630,
+        alt: "साइबर फ्रॉड का पैसा वापस कैसे मिलेगा? बैंक की जिम्मेदारी",
+      },
+    ],
   },
   twitter: {
     card: "summary_large_image",
     title: "साइबर फ्रॉड का पैसा वापस कैसे मिलेगा? बैंक की जिम्मेदारी",
     description:
       "UPI या कार्ड फ्रॉड के बाद 1930, बैंक शिकायत और RBI के जीरो लायबिलिटी नियम — पैसा वापस पाने की पूरी प्रक्रिया हिंदी में।",
+    site: "@legalrecoveryin",
+    creator: "@legalrecoveryin",
+    images: [`${SITE_URL}/blog_money_recovery.png`],
   },
   robots: {
     index: true,

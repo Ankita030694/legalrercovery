@@ -24,6 +24,23 @@ export const metadata: Metadata = {
     type: "article",
     siteName: "LegalRecovery.in",
     locale: "en_IN",
+    images: [
+      {
+        url: `${SITE_URL}/blog_money_recovery.png`,
+        width: 1200,
+        height: 630,
+        alt: "Borrower Left India? How to Recover a Loan From Someone Abroad",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Borrower Left India? How to Recover a Loan From Someone Abroad",
+    description:
+      "Statutory cross-border guide: Section 20 CPC Indian jurisdiction, Section 15(5) limitation exclusion, international notice service, and decree enforcement.",
+    site: "@legalrecoveryin",
+    creator: "@legalrecoveryin",
+    images: [`${SITE_URL}/blog_money_recovery.png`],
   },
   robots: {
     index: true,
