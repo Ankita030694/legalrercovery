@@ -86,3 +86,55 @@ export function getEligibleDispatchStep(c: any): NoticeNumber | null {
   if (completed.length === 0) return null;
   return completed[completed.length - 1];
 }
+
+/** Resolves the physical Notice Number (1, 2, or 3) that a batch dispatched for a case. */
+export function resolveBatchNoticeNumber(c: any, batch: any): number {
+  if (Array.isArray(batch?.caseDispatches)) {
+    const found = batch.caseDispatches.find(
+      (cd: any) => String(cd?.caseId) === c._id.toString()
+    );
+    if (found) {
+      if (typeof found.noticeNumber === "number" && [1, 2, 3].includes(found.noticeNumber)) {
+        return found.noticeNumber;
+      }
+      if (typeof found.step === "number" && found.step > 0) {
+        return (
+          timelineStepToNoticeNumber(found.step, c?.category) ??
+          (found.step <= 3 ? found.step : 3)
+        );
+      }
+    }
+  }
+  if (typeof batch?.targetNotice === "number" && [1, 2, 3].includes(batch.targetNotice)) {
+    return batch.targetNotice;
+  }
+  if (typeof batch?.targetStep === "number" && batch.targetStep > 0) {
+    return (
+      timelineStepToNoticeNumber(batch.targetStep, c?.category) ??
+      (batch.targetStep <= 3 ? batch.targetStep : 3)
+    );
+  }
+  const batchDate = batch?.createdAt ? new Date(batch.createdAt) : null;
+  let noticeAtBatch: number | null = null;
+  const timeline = Array.isArray(c?.timeline) ? c.timeline : [];
+  timeline.forEach((t: any, idx: number) => {
+    if (!t || t.status !== "completed") return;
+    const sNo = Number(t.step) || idx + 1;
+    const noticeNum = timelineStepToNoticeNumber(sNo, c?.category);
+    if (noticeNum === null) return;
+    const compRaw = t.completedAt || t.lockedAt;
+    const compAt = compRaw ? new Date(compRaw) : null;
+    if (!batchDate || !compAt || isNaN(compAt.getTime()) || compAt <= batchDate) {
+      if (noticeAtBatch === null || noticeNum > noticeAtBatch) {
+        noticeAtBatch = noticeNum;
+      }
+    }
+  });
+  return noticeAtBatch ?? getEligibleDispatchStep(c) ?? 1;
+}
+
+/** A case only counts as mailed when the batch email went out and its PDF didn't fail to generate. */
+export function batchCountsAsMailed(batch: any, caseId: string): boolean {
+  if (batch?.emailSent === false) return false;
+  return !(Array.isArray(batch?.failedCases) && batch.failedCases.some((f: any) => String(f?.caseId) === caseId));
+}

@@ -2,6 +2,8 @@
 
 import React, { useState, useEffect } from "react";
 import { X, Shield, Check, Loader2, CreditCard, Sparkles } from "lucide-react";
+import { PhysicalDispatchChoice } from "@/components/PhysicalDispatchChoice";
+import { calculatePhysicalDispatchFee } from "@/lib/physical-dispatch";
 
 interface BuyCreditsModalProps {
   isOpen: boolean;
@@ -20,6 +22,8 @@ export const BuyCreditsModal: React.FC<BuyCreditsModalProps> = ({
 }) => {
   const PRICE_PER_CASE = 999;
   const [selectedCount, setSelectedCount] = useState<number>(1);
+  const [physicalDispatch, setPhysicalDispatch] = useState<boolean | null>(null);
+  const [showPhysicalDispatchError, setShowPhysicalDispatchError] = useState(false);
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [error, setError] = useState<string | null>(null);
 
@@ -37,9 +41,15 @@ export const BuyCreditsModal: React.FC<BuyCreditsModalProps> = ({
 
   if (!isOpen) return null;
 
-  const totalAmount = selectedCount * PRICE_PER_CASE;
+  const totalAmount =
+    selectedCount * PRICE_PER_CASE + calculatePhysicalDispatchFee(selectedCount, physicalDispatch === true);
 
   const handlePurchase = async () => {
+    if (physicalDispatch === null) {
+      setShowPhysicalDispatchError(true);
+      return;
+    }
+
     setIsSubmitting(true);
     setError(null);
 
@@ -47,7 +57,7 @@ export const BuyCreditsModal: React.FC<BuyCreditsModalProps> = ({
       const res = await fetch("/api/payu/buy-credits", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ oppositionCount: selectedCount }),
+        body: JSON.stringify({ oppositionCount: selectedCount, physicalDispatch }),
       });
 
       const data = await res.json().catch(() => ({}));
@@ -178,6 +188,18 @@ export const BuyCreditsModal: React.FC<BuyCreditsModalProps> = ({
                 );
               })}
             </div>
+          </div>
+
+          <div className="mb-6">
+            <PhysicalDispatchChoice
+              value={physicalDispatch}
+              onChange={(choice) => {
+                setPhysicalDispatch(choice);
+                setShowPhysicalDispatchError(false);
+              }}
+              oppositionCount={selectedCount}
+              showError={showPhysicalDispatchError}
+            />
           </div>
 
           {/* What's Included Card */}

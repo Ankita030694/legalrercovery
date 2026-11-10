@@ -9,6 +9,7 @@ import {
   normalizePhoneTenDigits,
   resolveEffectiveDiscount,
 } from "@/lib/funnel-config";
+import { parsePhysicalDispatchChoice } from "@/lib/physical-dispatch";
 import crypto from "crypto";
 
 export const dynamic = "force-dynamic";
@@ -64,6 +65,7 @@ export async function GET(
         phone: verificationDoc.phone,
         state: verificationDoc.state,
         oppositionCount: Number(verificationDoc.oppositionCount) || 1,
+        physicalDispatch: verificationDoc.physicalDispatch === true,
         verified: true,
         verifiedVia: "magic_link",
         verifiedAt: now,
@@ -206,7 +208,8 @@ export async function GET(
     const pricing = calculateFunnelPricing(
       paymentDoc.oppositionCount || 1,
       effectiveDiscountPercent,
-      funnelSettings.basePricePerOpposition
+      funnelSettings.basePricePerOpposition,
+      paymentDoc.physicalDispatch === true
     );
 
     // Check if another user is currently logged into this browser
@@ -234,6 +237,7 @@ export async function GET(
         phone: paymentDoc.phone || "",
         state: paymentDoc.state || "",
         oppositionCount: Number(paymentDoc.oppositionCount) || 1,
+        physicalDispatch: parsePhysicalDispatchChoice(paymentDoc.physicalDispatch),
         verifiedVia: paymentDoc.verifiedVia || "otp",
       },
       pricing,
@@ -274,7 +278,8 @@ export async function POST(
     const { token } = await context.params;
     const cleanToken = (token || "").trim();
     const body = await req.json();
-    const { oppositionCount, name, state, action } = body;
+    const { oppositionCount, name, state, action, physicalDispatch } = body;
+    const physicalDispatchChoice = parsePhysicalDispatchChoice(physicalDispatch);
 
     const { db } = await getDbAndBucket("fs");
     const funnelSettings = await getFunnelSettings(db);
@@ -330,6 +335,7 @@ export async function POST(
         oppositionCount: oppCount,
         discountPercent: effectiveDiscountPercent,
         basePricePerOpposition: funnelSettings.basePricePerOpposition,
+        physicalDispatch: physicalDispatchChoice === true,
         origin,
       });
 
@@ -341,6 +347,8 @@ export async function POST(
             expectedAmount: session.totalAmount,
             originalAmount: session.originalAmount,
             discountPercent: session.discountPercent,
+            physicalDispatch: physicalDispatchChoice === true,
+            physicalDispatchFee: session.physicalDispatchFee,
             updatedAt: now,
           },
         }
@@ -353,7 +361,8 @@ export async function POST(
         pricing: calculateFunnelPricing(
           oppCount,
           effectiveDiscountPercent,
-          funnelSettings.basePricePerOpposition
+          funnelSettings.basePricePerOpposition,
+          physicalDispatchChoice === true
         ),
       });
 
@@ -404,11 +413,14 @@ export async function POST(
     const updatedName = (name || paymentDoc.name || "Client").trim();
     const updatedState = (state || paymentDoc.state || "Delhi").trim();
 
+    const updatedPhysicalDispatch = physicalDispatchChoice ?? paymentDoc.physicalDispatch === true;
+
     const { effectiveDiscountPercent } = resolveEffectiveDiscount(paymentDoc, funnelSettings);
     const pricing = calculateFunnelPricing(
       updatedOppCount,
       effectiveDiscountPercent,
-      funnelSettings.basePricePerOpposition
+      funnelSettings.basePricePerOpposition,
+      updatedPhysicalDispatch
     );
 
     const session = createPayUPaymentSession({
@@ -419,6 +431,7 @@ export async function POST(
       oppositionCount: updatedOppCount,
       discountPercent: effectiveDiscountPercent,
       basePricePerOpposition: funnelSettings.basePricePerOpposition,
+      physicalDispatch: updatedPhysicalDispatch,
       origin,
     });
 
@@ -433,6 +446,8 @@ export async function POST(
           expectedAmount: session.totalAmount,
           originalAmount: session.originalAmount,
           discountPercent: session.discountPercent,
+          physicalDispatch: updatedPhysicalDispatch,
+          physicalDispatchFee: session.physicalDispatchFee,
           updatedAt: new Date(),
         },
       }

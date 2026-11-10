@@ -8,11 +8,14 @@ import fs from "fs";
 import path from "path";
 import { sendEmailViaZohoAPI } from "@/lib/zoho-mail";
 import {
+  batchCountsAsMailed,
   getEligibleDispatchStep,
   getCompletedNoticeNumbers,
   noticeNumberToTimelineStep,
+  resolveBatchNoticeNumber,
   type NoticeNumber,
 } from "@/lib/dispatch-eligibility";
+import { getDispatchPool } from "@/lib/dispatch-batch";
 
 export const dynamic = "force-dynamic";
 export const maxDuration = 60;
@@ -72,7 +75,7 @@ export async function POST(request: NextRequest) {
     }
 
     const body = await request.json();
-    const { caseIds, dispatcherEmail, notes, targetStep, targetNotice } = body;
+    const { caseIds, dispatcherEmail, notes, targetStep, targetNotice, allowResend } = body;
 
     const rawRequestedNotice = Number(targetNotice ?? targetStep);
     const requestedNotice: NoticeNumber | null =
@@ -87,24 +90,27 @@ export async function POST(request: NextRequest) {
       );
     }
 
-    // 1. Fetch matching cases
-    let query: any = {};
-    if (Array.isArray(caseIds) && caseIds.length > 0) {
-      const objectIds = caseIds
-        .map(id => {
-          try {
-            return new ObjectId(id);
-          } catch {
-            return null;
-          }
-        })
-        .filter(Boolean) as ObjectId[];
-
-      if (objectIds.length === 0) {
-        return NextResponse.json({ error: "No valid case IDs provided." }, { status: 400 });
-      }
-      query._id = { $in: objectIds };
+    // 1. Fetch the selected cases, limited to AMA cases and retail cases that paid for Speed Post
+    if (!Array.isArray(caseIds) || caseIds.length === 0) {
+      return NextResponse.json({ error: "Please select at least one case." }, { status: 400 });
     }
+
+    const objectIds = caseIds
+      .map(id => {
+        try {
+          return new ObjectId(id);
+        } catch {
+          return null;
+        }
+      })
+      .filter(Boolean) as ObjectId[];
+
+    if (objectIds.length === 0) {
+      return NextResponse.json({ error: "No valid case IDs provided." }, { status: 400 });
+    }
+
+    const { conditions: poolConditions } = await getDispatchPool(db);
+    const query = { _id: { $in: objectIds }, $or: [...poolConditions, { physicalDispatch: true }] };
 
     const allMatched = await db
       .collection("cases")
@@ -113,7 +119,7 @@ export async function POST(request: NextRequest) {
       .toArray();
 
     // Only notices already delivered via Email & WhatsApp are eligible for dispatch
-    const cases = allMatched.filter(c => {
+    const eligibleCases = allMatched.filter(c => {
       const completed = getCompletedNoticeNumbers(c);
       if (completed.length === 0) return false;
       if (requestedNotice !== null) {
@@ -121,9 +127,9 @@ export async function POST(request: NextRequest) {
       }
       return true;
     });
-    const skippedCount = allMatched.length - cases.length;
+    const skippedCount = allMatched.length - eligibleCases.length;
 
-    if (cases.length === 0) {
+    if (eligibleCases.length === 0) {
       return NextResponse.json(
         {
           error: allMatched.length > 0
@@ -149,6 +155,32 @@ export async function POST(request: NextRequest) {
       }
       return getEligibleDispatchStep(c) ?? 1;
     };
+
+    // A notice already with the dispatcher is only sent again when the admin confirms it
+    const priorBatches = await db
+      .collection("dispatch_batches")
+      .find({ $or: [{ caseIds: { $in: objectIds } }, { caseIds: { $in: objectIds.map(id => id.toString()) } }] })
+      .toArray();
+    const isAlreadyMailed = (c: any) =>
+      priorBatches.some(
+        b =>
+          (b.caseIds || []).some((id: any) => String(id) === c._id.toString()) &&
+          batchCountsAsMailed(b, c._id.toString()) &&
+          resolveBatchNoticeNumber(c, b) === resolveCaseNoticeNumber(c)
+      );
+
+    const cases = allowResend === true ? eligibleCases : eligibleCases.filter(c => !isAlreadyMailed(c));
+    const alreadyMailedCount = eligibleCases.length - cases.length;
+
+    if (cases.length === 0) {
+      return NextResponse.json(
+        {
+          requiresResendConfirmation: true,
+          error: `The selected notice${alreadyMailedCount === 1 ? " has" : "s have"} already been sent to the dispatcher.`,
+        },
+        { status: 409 }
+      );
+    }
 
     const caseDispatches = cases.map(c => {
       const noticeNumber = resolveCaseNoticeNumber(c);
@@ -420,6 +452,26 @@ export async function POST(request: NextRequest) {
       }
     );
 
+    if (!emailSent) {
+      return NextResponse.json(
+        {
+          success: false,
+          emailFailed: true,
+          batchId,
+          downloadUrl,
+          totalCases: cases.length,
+          emailSent,
+          error: `The email to ${dispatcherEmail} could not be sent, so batch ${batchId} was not delivered. These notices remain pending. You can send them again, or share the download link directly.`,
+        },
+        { status: 502 }
+      );
+    }
+
+    const skippedNotes = [
+      skippedCount > 0 ? `${skippedCount} ineligible case(s) skipped.` : "",
+      alreadyMailedCount > 0 ? `${alreadyMailedCount} already sent to the dispatcher, skipped.` : "",
+    ].filter(Boolean).join(" ");
+
     return NextResponse.json({
       success: true,
       batchId,
@@ -427,13 +479,12 @@ export async function POST(request: NextRequest) {
       downloadUrl,
       totalCases: cases.length,
       skippedCount,
+      alreadyMailedCount,
       dispatcherEmail: dispatcherEmail.trim().toLowerCase(),
       emailSent,
       dispatchedAt: now.toISOString(),
       dispatchedNotices: caseDispatches,
-      message: emailSent
-        ? `Successfully created batch ${batchId} and sent dispatch package email to ${dispatcherEmail}.${skippedCount > 0 ? ` ${skippedCount} ineligible case(s) skipped.` : ""}`
-        : `Batch ${batchId} created, but email delivery encountered an issue. Dispatcher can use the direct download link.`,
+      message: `Successfully created batch ${batchId} and sent dispatch package email to ${dispatcherEmail}.${skippedNotes ? ` ${skippedNotes}` : ""}`,
     });
   } catch (error: any) {
     console.error("[Send Batch] Error creating dispatch batch:", error);

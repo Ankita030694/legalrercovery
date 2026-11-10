@@ -14,7 +14,8 @@ export async function processPaymentSuccessNotifications(
   email: string,
   name: string,
   amountPaid: number,
-  txnid?: string
+  txnid?: string,
+  amountCharged?: number
 ): Promise<void> {
   // Debug log entry
   try {
@@ -105,12 +106,14 @@ export async function processPaymentSuccessNotifications(
     const whatsappEnabled = user.whatsappNotificationsEnabled !== false;
 
     // 4. Dispatch both notifications in parallel
+    // The receipt shows the full charge, including any Speed Post fee kept out of amountPaid
+    const receiptAmount = amountCharged ?? amountPaid;
     const [emailSent, whatsappSent] = await Promise.all([
       emailEnabled
-        ? sendPaymentSuccessEmail(email, name, amountPaid, caseId, phone)
+        ? sendPaymentSuccessEmail(email, name, receiptAmount, caseId, phone)
         : Promise.resolve(false),
       whatsappEnabled
-        ? sendWatiPaymentSuccess(phone, name, amountPaid, caseId)
+        ? sendWatiPaymentSuccess(phone, name, receiptAmount, caseId)
         : Promise.resolve(false)
     ]);
 

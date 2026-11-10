@@ -4,6 +4,7 @@ import { getServerSession } from "next-auth/next";
 import { authOptions } from "@/lib/auth";
 import { ObjectId } from "mongodb";
 import crypto from "crypto";
+import { calculatePhysicalDispatchFee } from "@/lib/physical-dispatch";
 
 /**
  * POST /api/payu/buy-credits
@@ -19,8 +20,10 @@ export async function POST(req: NextRequest) {
       return NextResponse.json({ error: "Unauthorized. Please log in first." }, { status: 401 });
     }
 
-    const { oppositionCount } = await req.json();
+    const { oppositionCount, physicalDispatch } = await req.json();
     const oppCount = Math.min(Math.max(parseInt(oppositionCount) || 1, 1), 5); // Clamp 1-5
+    const optedForPhysicalDispatch = physicalDispatch === true;
+    const physicalDispatchFee = calculatePhysicalDispatchFee(oppCount, optedForPhysicalDispatch);
 
     const { db } = await getDbAndBucket("fs");
 
@@ -39,6 +42,8 @@ export async function POST(req: NextRequest) {
       phone: user.phone,
       state: user.state || "Unknown",
       oppositionCount: oppCount,
+      physicalDispatch: optedForPhysicalDispatch,
+      physicalDispatchFee,
       isReturningUser: true,
       existingUserId: userId,
       verified: true,
@@ -66,7 +71,7 @@ export async function POST(req: NextRequest) {
     );
 
     const PRICE_PER_OPPOSITION = 999; // TO CHANGE TO PRODUCTION PRICE: Change 1 to 999
-    const totalAmount = oppCount * PRICE_PER_OPPOSITION;
+    const totalAmount = oppCount * PRICE_PER_OPPOSITION + physicalDispatchFee;
     const amount = `${totalAmount}.00`;
 
     const productinfo = "Paid With ButtonId 111293057";

@@ -4,65 +4,15 @@ import { authOptions } from "@/lib/auth";
 import { getDbAndBucket } from "@/lib/mongodb";
 import { ObjectId } from "mongodb";
 import {
+  batchCountsAsMailed,
   getEligibleDispatchStep,
   getCompletedNoticeNumbers,
-  timelineStepToNoticeNumber,
+  resolveBatchNoticeNumber,
 } from "@/lib/dispatch-eligibility";
+import { authorizeSpecialUser } from "@/lib/dispatch-auth";
+import { getDispatchPool } from "@/lib/dispatch-batch";
 
 export const dynamic = 'force-dynamic';
-
-/**
- * Checks if the session user is one of the designated special administrators:
- * '8700343611' or '8130104447'
- */
-async function authorizeSpecialUser(session: any, db: any) {
-  if (!session || !session.user || !(session.user as any).id) {
-    return { authorized: false, errorResponse: NextResponse.json({ error: "Unauthorized access. Please log in." }, { status: 401 }) };
-  }
-
-  const userId = (session.user as any).id;
-  const userRole = (session.user as any).role;
-  const userEmail = (session.user as any).email;
-
-  // Direct admin bypass
-  if (userId === "admin-env-root" || userRole === "admin" || userEmail === "admin@legalrecovery.in") {
-    return {
-      authorized: true,
-      user: {
-        _id: "admin-env-root",
-        phone: "8700343611",
-        name: "Super Administrator",
-        email: "admin@legalrecovery.in"
-      },
-      cleanPhone: "8700343611"
-    };
-  }
-
-  let user: any;
-  try {
-    user = await db.collection("users").findOne({ _id: new ObjectId(userId) });
-  } catch (e) {
-    user = await db.collection("users").findOne({ _id: userId });
-  }
-
-  if (!user) {
-    return { authorized: false, errorResponse: NextResponse.json({ error: "User profile not found." }, { status: 404 }) };
-  }
-
-  const cleanPhone = (user.phone || "").replace(/\D/g, "");
-  const isSpecial = cleanPhone.endsWith("8700343611") || cleanPhone.endsWith("8130104447") || user.role === "admin";
-
-  if (!isSpecial) {
-    return { 
-      authorized: false, 
-      errorResponse: NextResponse.json({ 
-        error: "Access Denied. The Notice Dispatch console is restricted exclusively to authorized administrator accounts." 
-      }, { status: 403 }) 
-    };
-  }
-
-  return { authorized: true, user, cleanPhone };
-}
 
 /**
  * GET /api/notice-dispatch
@@ -88,12 +38,8 @@ export async function GET(req: NextRequest) {
 
     const representeeIdParam = req.nextUrl.searchParams.get("representeeId");
 
-    // Find all admin accounts matching the special phone numbers
-    const admins = await db.collection("users").find({
-      phone: { $regex: /(8700343611|8130104447)$/ }
-    }).toArray();
-    const adminIds = admins.map(a => a._id);
-    const adminIdStrings = admins.map(a => a._id.toString());
+    // Find all admin accounts matching the special phone numbers, and the cases they manage
+    const { adminIds, adminIdStrings, conditions: queryConditions } = await getDispatchPool(db);
 
     // Fetch all representees to map client/organization names
     const representees = await db.collection("representees").find({
@@ -105,15 +51,12 @@ export async function GET(req: NextRequest) {
     const representeeMap = new Map(representees.map(r => [r._id.toString(), r]));
 
     // Query all cases belonging to these admin IDs or client phones
-    const queryConditions: any[] = [
-      { userId: { $in: adminIds } },
-      { userId: { $in: adminIdStrings } },
-      { clientPhone: { $regex: /(8700343611|8130104447)$/ } }
-    ];
-
     let query: any = { $or: queryConditions };
 
-    if (representeeIdParam) {
+    if (req.nextUrl.searchParams.get("scope") === "physical") {
+      // Retail cases whose owner paid for Speed Post (outside the special admin pool)
+      query = { physicalDispatch: true };
+    } else if (representeeIdParam) {
       if (representeeIdParam === "self" || representeeIdParam === "direct") {
         query = {
           $and: [
@@ -153,52 +96,6 @@ export async function GET(req: NextRequest) {
           .toArray()
       : [];
 
-    // Resolve the physical Notice Number (1, 2, or 3) that was dispatched for a case in a specific batch
-    const resolveCaseStepAtBatch = (c: any, batch: any): number => {
-      if (Array.isArray(batch?.caseDispatches)) {
-        const found = batch.caseDispatches.find(
-          (cd: any) => String(cd?.caseId) === c._id.toString()
-        );
-        if (found) {
-          if (typeof found.noticeNumber === "number" && [1, 2, 3].includes(found.noticeNumber)) {
-            return found.noticeNumber;
-          }
-          if (typeof found.step === "number" && found.step > 0) {
-            return (
-              timelineStepToNoticeNumber(found.step, c?.category) ??
-              (found.step <= 3 ? found.step : 3)
-            );
-          }
-        }
-      }
-      if (typeof batch?.targetNotice === "number" && [1, 2, 3].includes(batch.targetNotice)) {
-        return batch.targetNotice;
-      }
-      if (typeof batch?.targetStep === "number" && batch.targetStep > 0) {
-        return (
-          timelineStepToNoticeNumber(batch.targetStep, c?.category) ??
-          (batch.targetStep <= 3 ? batch.targetStep : 3)
-        );
-      }
-      const batchDate = batch?.createdAt ? new Date(batch.createdAt) : null;
-      let noticeAtBatch: number | null = null;
-      const timeline = Array.isArray(c?.timeline) ? c.timeline : [];
-      timeline.forEach((t: any, idx: number) => {
-        if (!t || t.status !== "completed") return;
-        const sNo = Number(t.step) || idx + 1;
-        const noticeNum = timelineStepToNoticeNumber(sNo, c?.category);
-        if (noticeNum === null) return;
-        const compRaw = t.completedAt || t.lockedAt;
-        const compAt = compRaw ? new Date(compRaw) : null;
-        if (!batchDate || !compAt || isNaN(compAt.getTime()) || compAt <= batchDate) {
-          if (noticeAtBatch === null || noticeNum > noticeAtBatch) {
-            noticeAtBatch = noticeNum;
-          }
-        }
-      });
-      return noticeAtBatch ?? getEligibleDispatchStep(c) ?? 1;
-    };
-
     // Map per-case dispatched steps (keyed by step number, keeping the latest successful dispatch for each step)
     const perCaseDispatchedSteps = new Map<string, Map<number, any>>();
     cases.forEach((c: any) => {
@@ -206,13 +103,12 @@ export async function GET(req: NextRequest) {
     });
 
     rawBatches.forEach((batch: any) => {
-      if (batch.emailSent === false) return;
       const bCaseIds = Array.isArray(batch.caseIds) ? batch.caseIds : [];
       bCaseIds.forEach((rawCid: any) => {
         const cidStr = String(rawCid);
         const c = caseByIdMap.get(cidStr);
-        if (!c) return;
-        const step = resolveCaseStepAtBatch(c, batch);
+        if (!c || !batchCountsAsMailed(batch, cidStr)) return;
+        const step = resolveBatchNoticeNumber(c, batch);
         const stepMap = perCaseDispatchedSteps.get(cidStr);
         if (!stepMap) return;
         const prev = stepMap.get(step);
@@ -307,7 +203,6 @@ export async function GET(req: NextRequest) {
     });
 
     const dispatchBatches = rawBatches
-      .filter((b: any) => b.emailSent !== false)
       .slice()
       .reverse()
       .map((b: any) => {
@@ -316,7 +211,7 @@ export async function GET(req: NextRequest) {
         );
         const matchedCasesInBatch = cases.filter((c: any) => bCaseIdSet.has(c._id.toString()));
         const notices = matchedCasesInBatch.map((c: any) => {
-          const step = resolveCaseStepAtBatch(c, b);
+          const step = resolveBatchNoticeNumber(c, b);
           return {
             caseId: c._id.toString(),
             caseRef: c.caseId || `LR-${c._id.toString().slice(-4)}`,
@@ -336,7 +231,12 @@ export async function GET(req: NextRequest) {
         return {
           batchId: b.batchId,
           token: b.token,
-          downloadUrl: `/notice-dispatch/download?token=${b.token}`,
+          source: b.source || "manual",
+          failedNotices: Array.isArray(b.failedCases) ? b.failedCases : [],
+          downloadUrl:
+            b.source === "auto"
+              ? `/api/notice-dispatch/download-pdf?token=${b.token}`
+              : `/notice-dispatch/download?token=${b.token}`,
           dispatcherEmail: b.dispatcherEmail,
           notes: b.notes || "",
           createdAt: new Date(b.dispatchedAt || b.createdAt || Date.now()).toISOString(),

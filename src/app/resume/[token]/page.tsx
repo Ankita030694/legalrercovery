@@ -19,6 +19,8 @@ import {
   LogIn,
   PlusCircle,
 } from "lucide-react";
+import { PhysicalDispatchChoice } from "@/components/PhysicalDispatchChoice";
+import { calculatePhysicalDispatchFee } from "@/lib/physical-dispatch";
 
 interface ResumePayload {
   success: boolean;
@@ -31,6 +33,7 @@ interface ResumePayload {
     phone: string;
     state: string;
     oppositionCount: number;
+    physicalDispatch?: boolean | null;
     verifiedVia: string;
   };
   user?: {
@@ -76,6 +79,8 @@ export default function ExpressResumeCheckoutPage() {
   const [data, setData] = useState<ResumePayload | null>(null);
 
   const [oppositionCount, setOppositionCount] = useState<number>(1);
+  const [physicalDispatch, setPhysicalDispatch] = useState<boolean | null>(null);
+  const [showPhysicalDispatchError, setShowPhysicalDispatchError] = useState(false);
   const [name, setName] = useState<string>("");
   const [stateRegion, setStateRegion] = useState<string>("");
   const [submitting, setSubmitting] = useState(false);
@@ -103,6 +108,7 @@ export default function ExpressResumeCheckoutPage() {
           setData(json);
           if (json.lead) {
             setOppositionCount(Number(json.lead.oppositionCount) || 1);
+            setPhysicalDispatch(typeof json.lead.physicalDispatch === "boolean" ? json.lead.physicalDispatch : null);
             setName(json.lead.name || "");
             setStateRegion(json.lead.state || "");
           } else {
@@ -157,18 +163,27 @@ export default function ExpressResumeCheckoutPage() {
     const discountedUnit =
       discountPct > 0 ? Math.round(baseUnit * (1 - discountPct / 100)) : baseUnit;
     const totalOriginal = oppositionCount * baseUnit;
-    const totalPayable = oppositionCount * discountedUnit;
-    const totalSavings = Math.max(0, totalOriginal - totalPayable);
+    const servicePayable = oppositionCount * discountedUnit;
+    const totalSavings = Math.max(0, totalOriginal - servicePayable);
+    // Speed Post is charged at cost, after the discount
+    const physicalDispatchFee = calculatePhysicalDispatchFee(oppositionCount, physicalDispatch === true);
+    const totalPayable = servicePayable + physicalDispatchFee;
 
     return {
       baseUnit,
       discountedUnit,
       discountPct,
       totalOriginal,
+      physicalDispatchFee,
       totalPayable,
       totalSavings,
     };
-  }, [data, oppositionCount]);
+  }, [data, oppositionCount, physicalDispatch]);
+
+  const handlePhysicalDispatchChange = (choice: boolean) => {
+    setPhysicalDispatch(choice);
+    setShowPhysicalDispatchError(false);
+  };
 
   const submitPayUForm = (actionUrl: string, fields: Record<string, string>) => {
     const form = document.createElement("form");
@@ -186,6 +201,11 @@ export default function ExpressResumeCheckoutPage() {
   };
 
   const handleProceedToPayment = async (isBuyMoreSlots = false) => {
+    if (physicalDispatch === null) {
+      setShowPhysicalDispatchError(true);
+      return;
+    }
+
     setSubmitting(true);
     setError(null);
     try {
@@ -194,6 +214,7 @@ export default function ExpressResumeCheckoutPage() {
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({
           oppositionCount,
+          physicalDispatch,
           name,
           state: stateRegion,
           action: isBuyMoreSlots ? "buy_more_slots" : "checkout",
@@ -367,6 +388,13 @@ export default function ExpressResumeCheckoutPage() {
                     ))}
                   </select>
                 </div>
+
+                <PhysicalDispatchChoice
+                  value={physicalDispatch}
+                  onChange={handlePhysicalDispatchChange}
+                  oppositionCount={oppositionCount}
+                  showError={showPhysicalDispatchError}
+                />
 
                 <button
                   onClick={() => handleProceedToPayment(true)}
@@ -569,6 +597,15 @@ export default function ExpressResumeCheckoutPage() {
               </div>
             </div>
 
+            <div className="bg-white border-2 border-slate-200 rounded-2xl p-4 sm:p-5">
+              <PhysicalDispatchChoice
+                value={physicalDispatch}
+                onChange={handlePhysicalDispatchChange}
+                oppositionCount={oppositionCount}
+                showError={showPhysicalDispatchError}
+              />
+            </div>
+
             {/* Price Breakdown Card */}
             <div className="bg-slate-900 text-white rounded-2xl p-5 sm:p-6 space-y-3">
               <div className="flex items-center justify-between text-xs text-slate-300 font-semibold">
@@ -589,6 +626,15 @@ export default function ExpressResumeCheckoutPage() {
                 </div>
               )}
 
+              {livePricing.physicalDispatchFee > 0 && (
+                <div className="flex items-center justify-between text-xs text-slate-300 font-semibold">
+                  <span>Speed Post (at cost, no discount)</span>
+                  <span className="font-bold text-white">
+                    + ₹{livePricing.physicalDispatchFee.toLocaleString("en-IN")}
+                  </span>
+                </div>
+              )}
+
               <div className="pt-3 border-t border-white/15 flex items-baseline justify-between">
                 <div>
                   <span className="text-sm font-black uppercase tracking-wider text-white block">
@@ -601,7 +647,7 @@ export default function ExpressResumeCheckoutPage() {
                 <div className="text-right">
                   {hasDiscount && (
                     <span className="text-xs text-slate-400 line-through mr-2 font-bold">
-                      ₹{livePricing.totalOriginal.toLocaleString("en-IN")}
+                      ₹{(livePricing.totalOriginal + livePricing.physicalDispatchFee).toLocaleString("en-IN")}
                     </span>
                   )}
                   <span className="text-2xl sm:text-3xl font-black text-emerald-400">

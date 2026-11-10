@@ -212,6 +212,7 @@ export async function POST(req: NextRequest) {
           state: record.state,
           recoveryType: record.recoveryType || null,
           oppositionCount: record.oppositionCount || 1,
+          physicalDispatch: record.physicalDispatch === true,
           isReturningUser: true,
           reSubmittedFromPublicForm: true,
           verified: true,
@@ -250,6 +251,7 @@ export async function POST(req: NextRequest) {
               oppositionCount: record.oppositionCount || 1,
               discountPercent: effectiveDiscountPercent,
               basePricePerOpposition: funnelSettings.basePricePerOpposition,
+              physicalDispatch: record.physicalDispatch === true,
               origin: baseOrigin,
             });
 
@@ -260,6 +262,7 @@ export async function POST(req: NextRequest) {
                   txnid: paymentSession.txnid,
                   expectedAmount: paymentSession.totalAmount,
                   originalAmount: paymentSession.originalAmount,
+                  physicalDispatchFee: paymentSession.physicalDispatchFee,
                   updatedAt: new Date(),
                 },
               }
@@ -315,6 +318,7 @@ export async function POST(req: NextRequest) {
       state: record.state,
       recoveryType: record.recoveryType || null,
       oppositionCount: record.oppositionCount || 1,
+      physicalDispatch: record.physicalDispatch === true,
       verified: true,
       verifiedVia: "otp",
       verifiedAt: new Date(),
@@ -356,6 +360,7 @@ export async function POST(req: NextRequest) {
         oppositionCount: record.oppositionCount || 1,
         discountPercent: effectiveDiscountPercent,
         basePricePerOpposition: funnelSettings.basePricePerOpposition,
+        physicalDispatch: record.physicalDispatch === true,
         origin: baseOrigin,
       });
 
@@ -367,6 +372,7 @@ export async function POST(req: NextRequest) {
             txnid: paymentSession.txnid,
             expectedAmount: paymentSession.totalAmount,
             originalAmount: paymentSession.originalAmount,
+            physicalDispatchFee: paymentSession.physicalDispatchFee,
             updatedAt: new Date(),
           },
         }

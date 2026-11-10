@@ -8,7 +8,7 @@ import { normalizeRecoveryType } from "@/lib/recoveryTypes";
 
 export async function POST(req: NextRequest) {
   try {
-    const { name, email, phone, state, oppositionCount, recoveryType: rawRecoveryType } = await req.json();
+    const { name, email, phone, state, oppositionCount, recoveryType: rawRecoveryType, physicalDispatch } = await req.json();
     const recoveryType = normalizeRecoveryType(rawRecoveryType);
 
     if (!name || !email || !phone || !state) {
@@ -93,6 +93,7 @@ export async function POST(req: NextRequest) {
       otpLocked: false,
       failedAttempts: 0,
       oppositionCount: oppositionCount ? Number(oppositionCount) : 1,
+      physicalDispatch: physicalDispatch === true,
       verified: false,
       resumeToken,
       funnelStartedAt,

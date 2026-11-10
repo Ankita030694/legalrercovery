@@ -56,7 +56,7 @@ export default function HomeClient({ latestPosts }: { latestPosts?: React.ReactN
     },
     {
       question: "How much does it cost to recover money through LegalRecovery?",
-      answer: "We offer transparent, flat-fee pricing with no hidden charges. Our recovery plans start from just ₹1,499 and include attorney-drafted legal notices, dispatch via registered post, delivery tracking, and multi-stage escalation. There are no retainer fees or hourly billing."
+      answer: "We offer transparent, flat-fee pricing with no hidden charges. Our recovery plan is ₹999 per opposing party and includes attorney-drafted legal notices sent by Email and WhatsApp, delivery tracking, and multi-stage escalation. Speed Post for all 3 notices is optional at ₹450 per party, charged at cost. There are no retainer fees or hourly billing."
     },
     {
       question: "How long does the legal recovery process take?",

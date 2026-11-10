@@ -84,6 +84,7 @@ export interface PayUPaymentSession {
   amount: string;
   totalAmount: number;
   originalAmount: number;
+  physicalDispatchFee: number;
   discountPercent: number;
   unitPrice: number;
   action: string;
@@ -98,6 +99,7 @@ export function createPayUPaymentSession({
   oppositionCount = 1,
   discountPercent = 0,
   basePricePerOpposition = 999,
+  physicalDispatch = false,
   origin = "https://legalrecovery.in",
 }: {
   name: string;
@@ -107,6 +109,7 @@ export function createPayUPaymentSession({
   oppositionCount?: number;
   discountPercent?: number;
   basePricePerOpposition?: number;
+  physicalDispatch?: boolean;
   origin?: string;
 }): PayUPaymentSession {
   const key = process.env.PAYU_API_KEY?.trim();
@@ -117,7 +120,7 @@ export function createPayUPaymentSession({
   }
 
   const txnid = `TXN${Date.now()}${Math.floor(1000 + Math.random() * 9000)}`;
-  const pricing = calculateFunnelPricing(oppositionCount || 1, discountPercent || 0, basePricePerOpposition);
+  const pricing = calculateFunnelPricing(oppositionCount || 1, discountPercent || 0, basePricePerOpposition, physicalDispatch);
   const totalAmount = pricing.totalPayable;
   const amount = `${totalAmount}.00`;
 
@@ -166,6 +169,7 @@ export function createPayUPaymentSession({
     amount,
     totalAmount,
     originalAmount: pricing.totalOriginal,
+    physicalDispatchFee: pricing.physicalDispatchFee,
     discountPercent: pricing.discountPercent,
     unitPrice: pricing.unitDiscountedPrice,
     action: actionUrl,

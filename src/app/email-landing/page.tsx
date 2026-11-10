@@ -148,7 +148,7 @@ export default function EmailLandingPage() {
       description: "The defaulter settles directly into your bank account. You can stop future notices anytime with one click upon receiving payment.",
       icon: <IndianRupee className="w-6 h-6 text-[#DC2626]" />,
       points: [
-        "Flat ₹999 fee only — no hidden charges or retainers",
+        "Flat ₹999 fee, optional Speed Post ₹450 — no hidden charges or retainers",
         "Keep 100% of the money recovered (0% commission)",
         "One-click 'Stop Notices' button as soon as you receive payment"
       ]
@@ -423,7 +423,7 @@ export default function EmailLandingPage() {
     },
     {
       question: "Why is the price only ₹999? Are there any hidden charges or commission?",
-      answer: "No hidden charges or commissions. LegalRecovery is built to eliminate expensive traditional law firm retainers. For a flat ₹999 per opposing party, you get the complete 4-stage escalation process (3 legal notices + 1 police complaint draft), and you keep 100% of your recovered money."
+      answer: "No hidden charges or commissions. LegalRecovery is built to eliminate expensive traditional law firm retainers. For a flat ₹999 per opposing party, you get the complete 4-stage escalation process (3 legal notices + 1 police complaint draft) by Email and WhatsApp, and you keep 100% of your recovered money. Speed Post for the 3 notices is optional at ₹450 per party, charged at cost."
     },
     {
       question: "What documents or details do I need to submit my case?",

@@ -184,7 +184,7 @@ export default function HowItWorksPage() {
     },
     {
       question: "What happens after the legal notice is sent?",
-      answer: "Once the legal notice is dispatched via registered post, we track its delivery and wait for the respondent's reply. If the respondent does not respond or comply within the stipulated period (usually 15–30 days), we escalate with follow-up notices and, if necessary, guide you on filing a formal legal complaint."
+      answer: "Once the legal notice is dispatched by Email and WhatsApp (and by Speed Post, if you opted for it), we track its delivery and wait for the respondent's reply. If the respondent does not respond or comply within the stipulated period (usually 15–30 days), we escalate with follow-up notices and, if necessary, guide you on filing a formal legal complaint."
     },
     {
       question: "How many legal notices are sent in the recovery process?",

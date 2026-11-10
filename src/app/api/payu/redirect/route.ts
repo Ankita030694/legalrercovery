@@ -112,9 +112,13 @@ export async function POST(req: NextRequest) {
             const PRICE_PER_OPPOSITION = 999;
             const oppCount = pendingPaymentUser.oppositionCount || 1;
             const parsedGatewayAmount = amount ? Math.round(Number(amount)) : 0;
-            const amtPaid =
+            const physicalDispatchFee = Number(pendingPaymentUser.physicalDispatchFee) || 0;
+            const physicalDispatchSlots = physicalDispatchFee > 0 ? oppCount : 0;
+            const amtCharged =
               pendingPaymentUser.expectedAmount ||
-              (parsedGatewayAmount > 0 ? parsedGatewayAmount : oppCount * PRICE_PER_OPPOSITION);
+              (parsedGatewayAmount > 0 ? parsedGatewayAmount : oppCount * PRICE_PER_OPPOSITION + physicalDispatchFee);
+            // amountPaid stays service-only: case credits are derived from amountPaid ÷ ₹999, and postage must not earn slots
+            const amtPaid = Math.max(0, amtCharged - physicalDispatchFee);
             const originalAmount = pendingPaymentUser.originalAmount || oppCount * PRICE_PER_OPPOSITION;
             const discountPercent = Number(pendingPaymentUser.discountPercent) || 0;
             const currentWave = Number(pendingPaymentUser.retargeting?.currentWave) || 0;
@@ -165,6 +169,12 @@ export async function POST(req: NextRequest) {
                     $set: {
                       amountPaid: priorAmountPaid + amtPaid,
                       oppositionCount: priorSlots + oppCount,
+                      ...(physicalDispatchSlots > 0
+                        ? {
+                            physicalDispatchSlots: (Number(existingUser.physicalDispatchSlots) || 0) + physicalDispatchSlots,
+                            physicalDispatchFeePaid: (Number(existingUser.physicalDispatchFeePaid) || 0) + physicalDispatchFee,
+                          }
+                        : {}),
                       ...(pendingPaymentUser.recoveryType && !existingUser.primaryRecoveryType
                         ? { primaryRecoveryType: pendingPaymentUser.recoveryType }
                         : {}),
@@ -193,6 +203,8 @@ export async function POST(req: NextRequest) {
                     primaryRecoveryType: pendingPaymentUser.recoveryType || null,
                     oppositionCount: oppCount,
                     amountPaid: amtPaid,
+                    physicalDispatchSlots,
+                    physicalDispatchFeePaid: physicalDispatchFee,
                     originalAmount,
                     discountPercent,
                     recoveredViaFunnel,
@@ -234,7 +246,8 @@ export async function POST(req: NextRequest) {
                 phone: migratedUser.phone,
                 email: migratedUser.email,
                 payuTxnId: txnid,
-                amount: amtPaid,
+                amount: amtCharged,
+                physicalDispatchFee,
                 originalAmount,
                 discountPercent,
                 recoveredViaFunnel,
@@ -262,7 +275,8 @@ export async function POST(req: NextRequest) {
                 pendingPaymentUser.email,
                 pendingPaymentUser.name,
                 amtPaid,
-                txnid
+                txnid,
+                amtCharged
               );
             } catch (notiErr) {
               console.error("Error triggering success notifications in redirect route:", notiErr);

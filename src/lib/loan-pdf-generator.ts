@@ -43,7 +43,38 @@ function formatCurrencyIndian(amount: any): string {
   return otherNumbers.replace(/\B(?=(\d{2})+(?!\d))/g, ',') + lastThree;
 }
 
-export async function generateLoanNoticePDFBuffer(params: PDFGeneratorParams): Promise<Buffer> {
+/** Starts a headless browser. Pass it to generateLoanNoticePDFBuffer to reuse it across a batch. */
+export async function launchLoanPdfBrowser(): Promise<any> {
+  const localChrome = findLocalChrome();
+
+  if (localChrome) {
+    return puppeteer.launch({
+      executablePath: localChrome,
+      headless: true,
+      args: ['--no-sandbox', '--disable-setuid-sandbox', '--disable-gpu'],
+    });
+  }
+
+  const chromium = (await import('@sparticuz/chromium-min')).default as any;
+  return puppeteer.launch({
+    args: [
+      ...chromium.args,
+      '--no-sandbox',
+      '--disable-setuid-sandbox',
+      '--disable-dev-shm-usage',
+      '--disable-gpu',
+      '--no-zygote',
+      '--single-process',
+    ],
+    defaultViewport: (chromium as any).defaultViewport || { width: 800, height: 600 },
+    executablePath: await chromium.executablePath(
+      'https://github.com/Sparticuz/chromium/releases/download/v131.0.1/chromium-v131.0.1-pack.tar'
+    ),
+    headless: true,
+  } as any);
+}
+
+export async function generateLoanNoticePDFBuffer(params: PDFGeneratorParams, sharedBrowser?: any): Promise<Buffer> {
   const {
     defaulterName,
     phone,
@@ -98,7 +129,7 @@ export async function generateLoanNoticePDFBuffer(params: PDFGeneratorParams): P
     console.warn('[PDF-Generator] Could not read logo PNGs:', e);
   }
 
-  const noticeDate = formatDate(new Date().toISOString());
+  const noticeDate = formatDate(params.noticeDateIso || new Date().toISOString());
   const noticeRef = params.noticeRef || `LR-0000-0000-${step === 4 ? 'C4' : 'N' + step}`;
 
   const isSpecialUser = params.isSpecialUser || params.clientPhone?.replace(/\D/g, '').endsWith('8700343611') || params.clientPhone?.replace(/\D/g, '').endsWith('8130104447');
@@ -155,34 +186,7 @@ export async function generateLoanNoticePDFBuffer(params: PDFGeneratorParams): P
     html = fillLoanRecoveryNoticeWeek1Template(templateArgs as any);
   }
 
-  let browser;
-  const localChrome = findLocalChrome();
-
-  if (localChrome) {
-    browser = await puppeteer.launch({
-      executablePath: localChrome,
-      headless: true,
-      args: ['--no-sandbox', '--disable-setuid-sandbox', '--disable-gpu'],
-    });
-  } else {
-    const chromium = (await import('@sparticuz/chromium-min')).default as any;
-    browser = await puppeteer.launch({
-      args: [
-        ...chromium.args,
-        '--no-sandbox',
-        '--disable-setuid-sandbox',
-        '--disable-dev-shm-usage',
-        '--disable-gpu',
-        '--no-zygote',
-        '--single-process',
-      ],
-      defaultViewport: (chromium as any).defaultViewport || { width: 800, height: 600 },
-      executablePath: await chromium.executablePath(
-        'https://github.com/Sparticuz/chromium/releases/download/v131.0.1/chromium-v131.0.1-pack.tar'
-      ),
-      headless: true,
-    } as any);
-  }
+  const browser = sharedBrowser ?? (await launchLoanPdfBrowser());
 
   const page = await browser.newPage();
   await page.setContent(html, { waitUntil: 'domcontentloaded', timeout: 15000 });
@@ -240,6 +244,10 @@ export async function generateLoanNoticePDFBuffer(params: PDFGeneratorParams): P
     footerTemplate,
   });
 
-  await browser.close();
+  if (sharedBrowser) {
+    await page.close();
+  } else {
+    await browser.close();
+  }
   return Buffer.from(pdfArray);
 }

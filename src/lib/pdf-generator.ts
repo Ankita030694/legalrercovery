@@ -55,6 +55,9 @@ export interface PDFGeneratorParams {
   clientAuthRepPhone?: string;
   noticeRef?: string;
   isSpecialUser?: boolean;
+  // Speed Post copies: heading override, and the date the notice was originally emailed
+  dispatchModeLabel?: string;
+  noticeDateIso?: string;
   // Invoice Details
   invoiceNo?: string;
   invoiceDate?: string;
@@ -230,6 +233,11 @@ class NoticePDFWriter {
     drawFooter(this.currentPage, this.fontBold, this.stampImage);
   }
 
+  // pdf-lib measures text with kerning but draws it without, so add up single-glyph widths
+  private drawnWidth(text: string, font: PDFFont, size: number): number {
+    return Array.from(text).reduce((sum, ch) => sum + font.widthOfTextAtSize(ch, size), 0);
+  }
+
   // Draw text paragraph with automatic wrapping and inline bold support (**text**)
   writeParagraph(text: string, size: number = 10.5, defaultBold: boolean = false, textIndent: number = 0) {
     // Sanitize Rupee symbol and newline characters to prevent WinAnsi encoding crashes
@@ -283,7 +291,7 @@ class NoticePDFWriter {
 
     for (const word of words) {
       const font = word.isBold ? this.fontBold : this.fontRegular;
-      const wordWidth = font.widthOfTextAtSize(word.text, size);
+      const wordWidth = this.drawnWidth(word.text, font, size);
       const spaceWidth = word.isBold ? spaceWidthBold : spaceWidthRegular;
       const addedWidth = wordWidth + (word.hasTrailingSpace ? spaceWidth : 0);
       const indent = (lines.length === 0) ? textIndent : 0;
@@ -322,7 +330,7 @@ class NoticePDFWriter {
         for (let j = 0; j < line.length; j++) {
           const word = line[j];
           const font = word.isBold ? this.fontBold : this.fontRegular;
-          totalWordsWidth += font.widthOfTextAtSize(word.text, size);
+          totalWordsWidth += this.drawnWidth(word.text, font, size);
           if (j < line.length - 1) {
             gapCount++;
           }
@@ -343,7 +351,7 @@ class NoticePDFWriter {
               size,
               font,
             });
-            currentX += font.widthOfTextAtSize(word.text, size);
+            currentX += this.drawnWidth(word.text, font, size);
           }
           if (j < line.length - 1) {
             currentX += spaceWidth;
@@ -361,7 +369,7 @@ class NoticePDFWriter {
               size,
               font,
             });
-            currentX += font.widthOfTextAtSize(word.text, size);
+            currentX += this.drawnWidth(word.text, font, size);
           }
           
           if (word.hasTrailingSpace) {
@@ -801,7 +809,7 @@ export async function generateNoticePDFBuffer(params: PDFGeneratorParams): Promi
     console.warn('[PDF-Generator] Warning: Could not load PNG asset:', e);
   }
 
-  const noticeDate = formatDate(new Date().toISOString());
+  const noticeDate = formatDate(params.noticeDateIso || new Date().toISOString());
   const noticeRef = params.noticeRef || `LR-0000-0000-${step === 4 ? 'C4' : 'N' + step}`;
 
   const isSpecialUser = params.isSpecialUser || params.clientPhone?.replace(/\D/g, '').endsWith('8700343611') || params.clientPhone?.replace(/\D/g, '').endsWith('8130104447');
@@ -823,7 +831,7 @@ export async function generateNoticePDFBuffer(params: PDFGeneratorParams): Promi
 
     if (step === 1) {
     writer.writeTitle("LEGAL DEMAND NOTICE");
-    writer.writeDispatchMode("THROUGH EMAIL/WHATSAPP");
+    writer.writeDispatchMode(params.dispatchModeLabel || "THROUGH EMAIL/WHATSAPP");
 
     // Addressee Block
     writer.writeParagraph("To,", 10.5, true);
@@ -866,7 +874,7 @@ export async function generateNoticePDFBuffer(params: PDFGeneratorParams): Promi
 
   } else if (step === 2) {
     writer.writeTitle("SECOND LEGAL DEMAND NOTICE");
-    writer.writeDispatchMode("THROUGH EMAIL/WHATSAPP");
+    writer.writeDispatchMode(params.dispatchModeLabel || "THROUGH EMAIL/WHATSAPP");
 
     // Addressee Block
     writer.writeParagraph("To,", 10.5, true);
@@ -915,7 +923,7 @@ export async function generateNoticePDFBuffer(params: PDFGeneratorParams): Promi
 
   } else if (step === 3) {
     writer.writeTitle("FINAL LEGAL DEMAND NOTICE");
-    writer.writeDispatchMode("THROUGH EMAIL & WHATSAPP");
+    writer.writeDispatchMode(params.dispatchModeLabel || "THROUGH EMAIL & WHATSAPP");
 
     // Addressee Block
     writer.writeParagraph("To,", 10.5, true);

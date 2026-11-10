@@ -10,6 +10,7 @@ import { generateLoanNoticePDFBuffer } from "@/lib/loan-pdf-generator";
 import { sendNoticeEmail } from "@/lib/email";
 import { sendNoticeWati } from "@/lib/wati";
 import { sendAndLogClientNotification } from "@/lib/notifications";
+import { notifyDispatcherOfNotice } from "@/lib/dispatch-batch";
 
 export const maxDuration = 60;
 export const dynamic = 'force-dynamic';
@@ -312,6 +313,8 @@ export async function POST(req: NextRequest) {
         { _id: new ObjectId(id) },
         { $set: updateDoc }
       );
+
+      await notifyDispatcherOfNotice(db, caseDoc, 1, clientUser.phone);
 
       return NextResponse.json({
         success: true,

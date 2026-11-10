@@ -2,6 +2,8 @@
 
 import React, { useState, useEffect, useMemo } from "react";
 import { useRouter } from "next/navigation";
+import { DispatcherEmailSetting } from "@/components/DispatcherEmailSetting";
+import { postDispatchBatch } from "@/lib/dispatch-client";
 import {
   Send,
   User,
@@ -162,7 +164,7 @@ export default function NoticeDispatchPage() {
   // Selection state for physical dispatching
   const [selectedCaseIds, setSelectedCaseIds] = useState<string[]>([]);
   const [isDispatchModalOpen, setIsDispatchModalOpen] = useState(false);
-  const [dispatcherEmail, setDispatcherEmail] = useState("notice@amalegalsolutions.com");
+  const [dispatcherEmail, setDispatcherEmail] = useState("");
   const [dispatchNotes, setDispatchNotes] = useState("");
   const [modalSearchQuery, setModalSearchQuery] = useState("");
   const [isDispatching, setIsDispatching] = useState(false);
@@ -253,21 +255,17 @@ export default function NoticeDispatchPage() {
     setDispatchResult(null);
 
     try {
-      const res = await fetch("/api/notice-dispatch/send-batch", {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({
-          caseIds: selectedCaseIds,
-          dispatcherEmail,
-          notes: dispatchNotes,
-        }),
+      const { ok, data } = await postDispatchBatch({
+        caseIds: selectedCaseIds,
+        dispatcherEmail,
+        notes: dispatchNotes,
       });
 
-      const data = await res.json();
-      if (!res.ok) {
+      if (!ok) {
         setDispatchResult({
           success: false,
           message: data?.error || "Failed to create and dispatch notice batch.",
+          downloadUrl: data?.downloadUrl,
         });
       } else {
         setDispatchResult({
@@ -632,6 +630,8 @@ export default function NoticeDispatchPage() {
           </button>
         </div>
       </div>
+
+      <DispatcherEmailSetting onChange={setDispatcherEmail} />
 
       {/* ── TOOLBAR: SEARCH & FILTERS ── */}
       <div className="bg-white rounded-2xl border border-slate-200/80 p-3.5 sm:p-4 shadow-sm space-y-3.5">

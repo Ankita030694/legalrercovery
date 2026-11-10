@@ -10,6 +10,7 @@ import { sendNoticeWati, sendPoliceComplaintWati } from "@/lib/wati";
 import { sendAndLogClientNotification, logPoliceComplaintClientNotification } from "@/lib/notifications";
 import { getServerSession } from "next-auth/next";
 import { authOptions } from "@/lib/auth";
+import { notifyDispatcherOfNotice } from "@/lib/dispatch-batch";
 
 export const maxDuration = 300; // Vercel max timeout
 export const dynamic = 'force-dynamic';
@@ -728,6 +729,8 @@ async function handleDispatch(req: NextRequest) {
 
           await db.collection("cases").updateOne({ _id: caseDoc._id }, { $set: updateDoc });
           console.log(`[Queue Processor] Case ${caseDoc.caseId} Notice ${caseDoc.currentStep} successfully completed. Next scheduled: ${nextScheduledTime}`);
+
+          await notifyDispatcherOfNotice(db, caseDoc, caseDoc.currentStep, clientUser?.phone);
         } else {
           // --- PRIMARY EMAIL FAILED ---
           // Skip client notifications, update step retry counters, schedule retry

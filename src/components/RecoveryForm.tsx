@@ -8,6 +8,8 @@ import { User, Mail, Phone, MapPin, CheckCircle, AlertCircle, Loader2, Shield, A
 import { fetchWithRetry } from "@/lib/fetchWithRetry";
 import { RECOVERY_TYPES } from "@/lib/recoveryTypes";
 import { trackMetaEvent } from "@/lib/metaPixel";
+import { PhysicalDispatchChoice } from "@/components/PhysicalDispatchChoice";
+import { calculatePhysicalDispatchFee } from "@/lib/physical-dispatch";
 
 export const RecoveryForm = () => {
   const PRICE_PER_OPPOSITION = 999; // TO CHANGE TO PRODUCTION PRICE: Change 1 to 999
@@ -22,6 +24,7 @@ export const RecoveryForm = () => {
   const [pendingId, setPendingId] = useState("");
   const [resendCooldown, setResendCooldown] = useState(0);
   const [oppositionCount, setOppositionCount] = useState<number>(1);
+  const [physicalDispatch, setPhysicalDispatch] = useState<boolean | null>(null);
   
   const [formTouched, setFormTouched] = useState(false);
   const [isSubmitting, setIsSubmitting] = useState(false);
@@ -124,8 +127,10 @@ export const RecoveryForm = () => {
   }, [phone]);
 
   const isFormValid = useMemo(() => {
-    return name.trim().length > 0 && isEmailValid && isPhoneValid && state !== "" && recoveryType !== "";
-  }, [name, isEmailValid, isPhoneValid, state, recoveryType]);
+    return name.trim().length > 0 && isEmailValid && isPhoneValid && state !== "" && recoveryType !== "" && physicalDispatch !== null;
+  }, [name, isEmailValid, isPhoneValid, state, recoveryType, physicalDispatch]);
+
+  const totalDue = oppositionCount * PRICE_PER_OPPOSITION + calculatePhysicalDispatchFee(oppositionCount, physicalDispatch === true);
 
   const handleSendOtp = async (e: React.FormEvent) => {
     e.preventDefault();
@@ -140,7 +145,7 @@ export const RecoveryForm = () => {
       const res = await fetchWithRetry("/api/users/send-otp", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ name, email, phone, state, recoveryType, oppositionCount }),
+        body: JSON.stringify({ name, email, phone, state, recoveryType, oppositionCount, physicalDispatch }),
       });
 
       const data = await res.json().catch(() => ({}));
@@ -217,7 +222,8 @@ export const RecoveryForm = () => {
             phone, 
             state, 
             paymentPendingId: existingUserData.paymentPendingId,
-            oppositionCount
+            oppositionCount,
+            physicalDispatch
           }),
         });
 
@@ -312,7 +318,8 @@ export const RecoveryForm = () => {
             phone, 
             state, 
             paymentPendingId: data.paymentPendingId,
-            oppositionCount
+            oppositionCount,
+            physicalDispatch
           }),
         });
 
@@ -349,7 +356,7 @@ export const RecoveryForm = () => {
       const res = await fetchWithRetry("/api/users/send-otp", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ name, email, phone, state, recoveryType, oppositionCount }),
+        body: JSON.stringify({ name, email, phone, state, recoveryType, oppositionCount, physicalDispatch }),
       });
 
       const data = await res.json().catch(() => ({}));
@@ -420,7 +427,7 @@ export const RecoveryForm = () => {
             <div className="flex items-center justify-between text-xs font-semibold text-slate-500 pb-2 border-b border-slate-200/60">
               <span>Amount Payable</span>
               <span className="text-sm font-extrabold text-[#111827]">
-                ₹{payuSession.fields.amount || (oppositionCount * PRICE_PER_OPPOSITION)}
+                ₹{payuSession.fields.amount || totalDue}
               </span>
             </div>
             <div className="flex items-center justify-between text-xs font-semibold text-slate-500 pt-2">
@@ -437,7 +444,7 @@ export const RecoveryForm = () => {
               className="w-full py-4 text-sm sm:text-base font-black text-white bg-[#DC2626] active:bg-[#991B1B] hover:bg-[#B91C1C] rounded-xl transition-all duration-200 shadow-lg shadow-red-950/20 flex items-center justify-center gap-2 hover:-translate-y-0.5 active:translate-y-0 cursor-pointer touch-manipulation relative z-20"
             >
               <Lock className="w-4 h-4" />
-              Proceed to Pay ₹{payuSession.fields.amount || (oppositionCount * PRICE_PER_OPPOSITION)} on PayU
+              Proceed to Pay ₹{payuSession.fields.amount || totalDue} on PayU
               <ArrowRight className="w-4 h-4" />
             </button>
           </div>
@@ -594,6 +601,13 @@ export const RecoveryForm = () => {
             </div>
           </div>
 
+          <PhysicalDispatchChoice
+            value={physicalDispatch}
+            onChange={setPhysicalDispatch}
+            oppositionCount={oppositionCount}
+            showError={formTouched && physicalDispatch === null}
+          />
+
           <div className="mt-2">
             <button
               type="submit"
@@ -608,7 +622,7 @@ export const RecoveryForm = () => {
               ) : (
                 <>
                   <Shield className="w-4 h-4" />
-                  Verify Email & Pay ₹{oppositionCount * PRICE_PER_OPPOSITION}
+                  Verify Email & Pay ₹{totalDue}
                 </>
               )}
             </button>
@@ -660,7 +674,7 @@ export const RecoveryForm = () => {
               ) : (
                 <>
                   <CheckCircle className="w-4 h-4" />
-                  Verify OTP & Pay ₹{oppositionCount * PRICE_PER_OPPOSITION}
+                  Verify OTP & Pay ₹{totalDue}
                 </>
               )}
             </button>
@@ -779,7 +793,7 @@ export const RecoveryForm = () => {
                   ) : (
                     <>
                       <CreditCard className="w-4 h-4" />
-                      Add New Case (₹{oppositionCount * PRICE_PER_OPPOSITION})
+                      Add New Case (₹{totalDue})
                     </>
                   )}
                 </button>

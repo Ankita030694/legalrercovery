@@ -1,5 +1,6 @@
 import crypto from "crypto";
 import { Db } from "mongodb";
+import { calculatePhysicalDispatchFee } from "./physical-dispatch";
 
 export interface FunnelWaveConfig {
   wave: 1 | 2 | 3;
@@ -56,6 +57,8 @@ export interface FunnelPricingBreakdown {
   unitOriginalPrice: number;
   unitDiscountedPrice: number;
   totalOriginal: number;
+  servicePayable: number;
+  physicalDispatchFee: number;
   totalPayable: number;
   totalSavings: number;
 }
@@ -66,11 +69,14 @@ export interface FunnelPricingBreakdown {
  * - 1 party: ₹999 -> ₹849 (Save ₹150)
  * - 2 parties: ₹1,998 -> ₹1,698 (Save ₹300)
  * - 3 parties: ₹2,997 -> ₹2,547 (Save ₹450)
+ * Optional Speed Post is added after the discount, at cost:
+ * - 1 party: ₹849 + ₹450 = ₹1,299
  */
 export function calculateFunnelPricing(
   oppositionCount: number = 1,
   discountPercent: number = 0,
-  basePrice: number = 999
+  basePrice: number = 999,
+  physicalDispatch: boolean = false
 ): FunnelPricingBreakdown {
   const oppCount = Math.max(1, Math.min(10, Math.floor(Number(oppositionCount) || 1)));
   const pct = Math.max(0, Math.min(90, Number(discountPercent) || 0));
@@ -79,8 +85,10 @@ export function calculateFunnelPricing(
     pct > 0 ? Math.round(unitOriginalPrice * (1 - pct / 100)) : unitOriginalPrice;
 
   const totalOriginal = oppCount * unitOriginalPrice;
-  const totalPayable = oppCount * unitDiscountedPrice;
-  const totalSavings = Math.max(0, totalOriginal - totalPayable);
+  const servicePayable = oppCount * unitDiscountedPrice;
+  const physicalDispatchFee = calculatePhysicalDispatchFee(oppCount, physicalDispatch);
+  const totalPayable = servicePayable + physicalDispatchFee;
+  const totalSavings = Math.max(0, totalOriginal - servicePayable);
 
   return {
     oppositionCount: oppCount,
@@ -88,6 +96,8 @@ export function calculateFunnelPricing(
     unitOriginalPrice,
     unitDiscountedPrice,
     totalOriginal,
+    servicePayable,
+    physicalDispatchFee,
     totalPayable,
     totalSavings,
   };

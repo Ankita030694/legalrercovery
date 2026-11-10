@@ -2,33 +2,19 @@ import { NextRequest, NextResponse } from "next/server";
 import { getDbAndBucket } from "@/lib/mongodb";
 import { ObjectId } from "mongodb";
 import JSZip from "jszip";
-import { generateLoanNoticePDFBuffer } from "@/lib/loan-pdf-generator";
-import { generateNoticePDFBuffer } from "@/lib/pdf-generator";
-import {
-  getEligibleDispatchStep,
-  noticeNumberToTimelineStep,
-  timelineStepToNoticeNumber,
-} from "@/lib/dispatch-eligibility";
+import { launchLoanPdfBrowser } from "@/lib/loan-pdf-generator";
+import { generateDispatchPdf, getDispatchNotice, getDispatchPdfFilename } from "@/lib/dispatch-pdf";
 
 export const dynamic = "force-dynamic";
 export const maxDuration = 300; // Allow up to 5 minutes for generating large PDF batches
 
-function sanitizeField(val: any): string {
-  if (val === null || val === undefined) return "";
-  return String(val).trim();
-}
+// Stop starting new PDFs in time to still deliver the ZIP before the 5-minute limit
+const PDF_GENERATION_TIME_LIMIT_MS = 270_000;
 
 function escapeCsv(val: any): string {
   if (val === null || val === undefined) return '""';
   const str = String(val).replace(/"/g, '""');
   return `"${str}"`;
-}
-
-function formatDateString(dateVal: any): string {
-  if (!dateVal) return "";
-  const d = new Date(dateVal);
-  if (isNaN(d.getTime())) return String(dateVal);
-  return `${String(d.getDate()).padStart(2, "0")}-${String(d.getMonth() + 1).padStart(2, "0")}-${d.getFullYear()}`;
 }
 
 export async function GET(request: NextRequest) {
@@ -136,101 +122,67 @@ export async function GET(request: NextRequest) {
       ].map(escapeCsv).join(",")
     ];
 
-    // 4. Generate identical PDFs for each case
+    // 4. Generate PDFs one at a time, sharing one browser across loan notices
+    const startedAt = Date.now();
+    const failedCases: any[] = [];
     let generatedCount = 0;
-    for (let i = 0; i < cases.length; i++) {
-      const c = cases[i];
-      const stepIndex = i + 1;
-      const indexPadded = String(stepIndex).padStart(2, "0");
+    let loanBrowser: any = null;
 
-      // Notice Number (1 | 2 | 3) & PDF Timeline Step resolution:
-      // Police Complaints (step 2 for loan-recovery, step 4 for general-recovery)
-      // are never dispatched to the physical dispatcher.
-      const isLoanRecovery = c.category === "loan-recovery";
-      let noticeNumber = 1;
-      const recordedCaseDispatch = Array.isArray(batch.caseDispatches)
-        ? batch.caseDispatches.find((cd: any) => String(cd.caseId) === c._id.toString())
-        : null;
-      if (recordedCaseDispatch) {
-        if (
-          typeof recordedCaseDispatch.noticeNumber === "number" &&
-          [1, 2, 3].includes(recordedCaseDispatch.noticeNumber)
-        ) {
-          noticeNumber = recordedCaseDispatch.noticeNumber;
-        } else if (typeof recordedCaseDispatch.step === "number") {
-          noticeNumber =
-            timelineStepToNoticeNumber(recordedCaseDispatch.step, c.category) ??
-            (recordedCaseDispatch.step <= 3 ? recordedCaseDispatch.step : 3);
-        }
-      } else if (typeof batch.targetNotice === "number" && [1, 2, 3].includes(batch.targetNotice)) {
-        noticeNumber = batch.targetNotice;
-      } else if (batch.targetStep && typeof batch.targetStep === "number") {
-        noticeNumber =
-          timelineStepToNoticeNumber(batch.targetStep, c.category) ??
-          (batch.targetStep <= 3 ? batch.targetStep : 3);
-      } else {
-        noticeNumber = getEligibleDispatchStep(c) ?? 1;
-      }
+    const closeLoanBrowser = async () => {
+      if (!loanBrowser) return;
+      const browser = loanBrowser;
+      loanBrowser = null;
+      await browser.close().catch(() => {});
+    };
 
-      const timelineStep =
-        (recordedCaseDispatch && typeof recordedCaseDispatch.timelineStep === "number"
-          ? recordedCaseDispatch.timelineStep
-          : noticeNumberToTimelineStep(noticeNumber, c.category)) ?? 1;
+    try {
+      for (let i = 0; i < cases.length; i++) {
+        const c = cases[i];
+        const indexPadded = String(i + 1).padStart(2, "0");
+        const { noticeNumber } = getDispatchNotice(c, batch);
+        const isLoanRecovery = c.category === "loan-recovery";
 
-      const noticeRef = `${c.caseId || "LR"}-N${noticeNumber}`;
+        const recordFailure = (reason: string) =>
+          failedCases.push({
+            caseId: c._id.toString(),
+            caseRef: c.caseId || "N/A",
+            defaulterName: c.defaulterName || "",
+            noticeNumber,
+            reason,
+          });
 
-      const pdfParams: any = {
-        defaulterName: sanitizeField(c.defaulterName),
-        phone: sanitizeField(c.phone),
-        email: sanitizeField(c.email),
-        address: sanitizeField(c.address),
-        stuckAmount: c.stuckAmount || 0,
-        policeStationName: sanitizeField(c.policeStationName),
-        policeStationAddress: sanitizeField(c.policeStationAddress),
-        policeStationEmail: sanitizeField(c.policeStationEmail),
-        createdAt: c.createdAt || new Date().toISOString(),
-        step: timelineStep,
-        category: c.category || "general-recovery",
-        clientName: sanitizeField(c.clientName || "AMA Legal Solutions"),
-        clientEmail: sanitizeField(c.clientEmail),
-        clientPhone: sanitizeField(c.clientPhone),
-        clientAddress: sanitizeField(c.clientAddress),
-        clientAuthRepName: sanitizeField(c.clientAuthRepName),
-        clientAuthRepPhone: sanitizeField(c.clientAuthRepPhone),
-        invoiceNo: sanitizeField(c.invoiceNo || (c.invoices && c.invoices[0]?.invoiceNo)),
-        invoiceDate: sanitizeField(c.invoiceDate),
-        asOnDate: sanitizeField(c.asOnDate),
-        disbursementDate: sanitizeField(c.disbursementDate),
-        disbursedAmount: c.disbursedAmount,
-        invoices: c.invoices,
-        noticeRef,
-        isSpecialUser: true,
-      };
-
-      try {
-        let pdfBuffer: Buffer;
-        if (isLoanRecovery) {
-          pdfBuffer = await generateLoanNoticePDFBuffer(pdfParams);
-        } else {
-          pdfBuffer = await generateNoticePDFBuffer(pdfParams);
+        if (Date.now() - startedAt > PDF_GENERATION_TIME_LIMIT_MS) {
+          recordFailure("Ran out of time while building this package");
+          continue;
         }
 
-        const cleanDefaulterName = (c.defaulterName || "Debtor").replace(/[^a-zA-Z0-9]/g, "_").slice(0, 30);
-        const caseRefSanitized = (c.caseId || "CASE").replace(/[^a-zA-Z0-9_-]/g, "_");
-        const filenameStepSuffix = `Notice_${noticeNumber}`;
-        const filename = `${indexPadded}_${caseRefSanitized}_${cleanDefaulterName}_${filenameStepSuffix}.pdf`;
+        let pdfBuffer: Buffer | null = null;
+        let lastError = "";
+        for (let attempt = 1; attempt <= 2 && !pdfBuffer; attempt++) {
+          try {
+            if (isLoanRecovery && !loanBrowser) loanBrowser = await launchLoanPdfBrowser();
+            pdfBuffer = await generateDispatchPdf(c, batch, isLoanRecovery ? loanBrowser : undefined);
+          } catch (genErr: any) {
+            lastError = genErr?.message || "PDF generation failed";
+            console.error(`[ZIP Dispatch Engine] Attempt ${attempt} failed for case ${c.caseId}:`, genErr);
+            await closeLoanBrowser();
+          }
+        }
 
-        zip.file(filename, pdfBuffer);
+        if (!pdfBuffer) {
+          recordFailure(lastError);
+          continue;
+        }
+
+        zip.file(`${indexPadded}_${getDispatchPdfFilename(c, noticeNumber)}`, pdfBuffer);
         generatedCount++;
 
         // Add row to CSV Manifest
-        const stepLabel = `Notice ${noticeNumber}`;
-
         csvRows.push(
           [
-            stepIndex,
+            i + 1,
             c.caseId || "N/A",
-            stepLabel,
+            `Notice ${noticeNumber}`,
             isLoanRecovery ? "Loan Recovery" : "Commercial",
             c.defaulterName || "",
             c.address || "Address not provided",
@@ -242,14 +194,41 @@ export async function GET(request: NextRequest) {
             "" // Placeholder for physical barcode / Speed post tracking number
           ].map(escapeCsv).join(",")
         );
-      } catch (genErr) {
-        console.error(`[ZIP Dispatch Engine] Error generating PDF for case ${c.caseId}:`, genErr);
       }
+    } finally {
+      await closeLoanBrowser();
+    }
+
+    if (generatedCount === 0) {
+      await db.collection("dispatch_batches").updateOne({ _id: batch._id }, { $set: { failedCases } });
+      return new NextResponse(
+        `<!DOCTYPE html>
+        <html>
+        <head><title>Generation Error</title></head>
+        <body style="font-family:sans-serif;padding:40px;text-align:center;background:#f8fafc;color:#1e293b;">
+          <h2 style="color:#dc2626;">Failed to Generate Notice Package</h2>
+          <p>None of the notices in this batch could be generated. Please try again or contact the administrator.</p>
+        </body>
+        </html>`,
+        { status: 500, headers: { "Content-Type": "text/html; charset=utf-8" } }
+      );
     }
 
     // 5. Add Address Manifest CSV to the Zip Root
-    const manifestCsvContent = "\uFEFF" + csvRows.join("\r\n"); // UTF-8 BOM for Excel compatibility
+    const manifestCsvContent = "﻿" + csvRows.join("\r\n"); // UTF-8 BOM for Excel compatibility
     zip.file("00_ENVELOPE_ADDRESS_MANIFEST.csv", manifestCsvContent);
+
+    if (failedCases.length > 0) {
+      zip.file(
+        "00_MISSING_NOTICES_READ_FIRST.txt",
+        [
+          `${failedCases.length} notice(s) could not be generated and are NOT in this package.`,
+          "Please tell the administrator so they can be sent again:",
+          "",
+          ...failedCases.map(f => `${f.caseRef} - ${f.defaulterName} - Notice ${f.noticeNumber}`),
+        ].join("\r\n")
+      );
+    }
 
     // 6. Generate in-memory ZIP buffer
     const zipBuffer = await zip.generateAsync({
@@ -266,7 +245,7 @@ export async function GET(request: NextRequest) {
       { _id: batch._id },
       {
         $inc: { downloadCount: 1 },
-        $set: { lastDownloadedAt: now },
+        $set: { lastDownloadedAt: now, failedCases },
         $push: {
           downloadLogs: {
             downloadedAt: now,
@@ -287,6 +266,7 @@ export async function GET(request: NextRequest) {
         "Content-Disposition": `attachment; filename="${downloadFilename}"`,
         "Content-Length": zipBuffer.length.toString(),
         "Cache-Control": "no-store, no-cache, must-revalidate",
+        "X-Missing-Notices": String(failedCases.length),
       },
     });
   } catch (error: any) {

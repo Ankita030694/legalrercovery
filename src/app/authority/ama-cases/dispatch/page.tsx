@@ -26,6 +26,8 @@ import {
   IndianRupee,
   Scale
 } from "lucide-react";
+import { DispatcherEmailSetting } from "@/components/DispatcherEmailSetting";
+import { postDispatchBatch } from "@/lib/dispatch-client";
 
 interface CaseItem {
   id: string;
@@ -52,9 +54,6 @@ interface CaseItem {
   createdAt: string;
 }
 
-const DEFAULT_DISPATCHER_EMAIL = "jatinder991425@gmail.com";
-const DISPATCHER_EMAIL_STORAGE_KEY = "ama_dispatcher_email";
-
 export default function GlobalAmaDispatchPage() {
   const [representees, setRepresentees] = useState<any[]>([]);
   const [cases, setCases] = useState<CaseItem[]>([]);
@@ -68,24 +67,7 @@ export default function GlobalAmaDispatchPage() {
 
   // Selection & Dispatch states
   const [selectedCaseIds, setSelectedCaseIds] = useState<string[]>([]);
-  const [dispatcherEmail, setDispatcherEmail] = useState(DEFAULT_DISPATCHER_EMAIL);
-
-  // Restore the last dispatcher email the user entered (if any)
-  useEffect(() => {
-    try {
-      const saved = localStorage.getItem(DISPATCHER_EMAIL_STORAGE_KEY);
-      if (saved && saved.includes("@")) setDispatcherEmail(saved);
-    } catch {}
-  }, []);
-
-  const saveDispatcherEmail = (value: string) => {
-    const trimmed = value.trim();
-    try {
-      if (/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(trimmed)) {
-        localStorage.setItem(DISPATCHER_EMAIL_STORAGE_KEY, trimmed);
-      }
-    } catch {}
-  };
+  const [dispatcherEmail, setDispatcherEmail] = useState("");
   const [dispatchNotes, setDispatchNotes] = useState("");
   const [isDispatchModalOpen, setIsDispatchModalOpen] = useState(false);
   const [isDispatching, setIsDispatching] = useState(false);
@@ -170,27 +152,22 @@ export default function GlobalAmaDispatchPage() {
   // Trigger Zoho Batch Dispatch
   const handleSendBatch = async () => {
     if (!dispatcherEmail || selectedCaseIds.length === 0) return;
-    saveDispatcherEmail(dispatcherEmail);
     setIsDispatching(true);
     setDispatchResult(null);
 
     try {
-      const res = await fetch("/api/notice-dispatch/send-batch", {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({
-          caseIds: selectedCaseIds,
-          dispatcherEmail,
-          notes: dispatchNotes,
-          targetNotice: stepFilter !== "all" ? Number(stepFilter) : undefined,
-        })
+      const { ok, data } = await postDispatchBatch({
+        caseIds: selectedCaseIds,
+        dispatcherEmail,
+        notes: dispatchNotes,
+        targetNotice: stepFilter !== "all" ? Number(stepFilter) : undefined,
       });
 
-      const data = await res.json();
-      if (!res.ok) {
+      if (!ok) {
         setDispatchResult({
           success: false,
-          message: data?.error || "Failed to dispatch batch."
+          message: data?.error || "Failed to dispatch batch.",
+          downloadUrl: data?.downloadUrl
         });
       } else {
         setDispatchResult({
@@ -291,6 +268,8 @@ export default function GlobalAmaDispatchPage() {
           </button>
         </div>
       </div>
+
+      <DispatcherEmailSetting onChange={setDispatcherEmail} />
 
       {/* ── FILTERS & SMART SELECTION BAR ── */}
       <div className="bg-white rounded-2xl p-4 sm:p-6 border border-slate-200/80 shadow-xs space-y-4">
@@ -529,7 +508,6 @@ export default function GlobalAmaDispatchPage() {
                 type="email"
                 value={dispatcherEmail}
                 onChange={(e) => setDispatcherEmail(e.target.value)}
-                onBlur={(e) => saveDispatcherEmail(e.target.value)}
                 className="w-full px-3 py-2 border border-slate-200 rounded-xl text-xs sm:text-sm font-semibold text-slate-900 focus:outline-none focus:ring-2 focus:ring-slate-900"
               />
               <p className="text-[11px] text-slate-400 mt-1">

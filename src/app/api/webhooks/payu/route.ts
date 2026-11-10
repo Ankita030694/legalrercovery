@@ -131,9 +131,13 @@ export async function POST(req: NextRequest) {
           const PRICE_PER_OPPOSITION = 999;
           const oppCount = pendingUser.oppositionCount || 1;
           const parsedGatewayAmount = amount ? Math.round(Number(amount)) : 0;
-          const amtPaid =
+          const physicalDispatchFee = Number(pendingUser.physicalDispatchFee) || 0;
+          const physicalDispatchSlots = physicalDispatchFee > 0 ? oppCount : 0;
+          const amtCharged =
             pendingUser.expectedAmount ||
-            (parsedGatewayAmount > 0 ? parsedGatewayAmount : oppCount * PRICE_PER_OPPOSITION);
+            (parsedGatewayAmount > 0 ? parsedGatewayAmount : oppCount * PRICE_PER_OPPOSITION + physicalDispatchFee);
+          // amountPaid stays service-only: case credits are derived from amountPaid ÷ ₹999, and postage must not earn slots
+          const amtPaid = Math.max(0, amtCharged - physicalDispatchFee);
           const originalAmount = pendingUser.originalAmount || oppCount * PRICE_PER_OPPOSITION;
           const discountPercent = Number(pendingUser.discountPercent) || 0;
           const currentWave = Number(pendingUser.retargeting?.currentWave) || 0;
@@ -163,6 +167,12 @@ export async function POST(req: NextRequest) {
                   $set: {
                     amountPaid: priorAmountPaid + amtPaid,
                     oppositionCount: priorSlots + oppCount,
+                    ...(physicalDispatchSlots > 0
+                      ? {
+                          physicalDispatchSlots: (Number(existingUser.physicalDispatchSlots) || 0) + physicalDispatchSlots,
+                          physicalDispatchFeePaid: (Number(existingUser.physicalDispatchFeePaid) || 0) + physicalDispatchFee,
+                        }
+                      : {}),
                     isPaid: true,
                     payuTxnId: txnid,
                     lastPaymentDate: new Date(),
@@ -185,6 +195,8 @@ export async function POST(req: NextRequest) {
                   state: pendingUser.state,
                   oppositionCount: oppCount,
                   amountPaid: amtPaid,
+                  physicalDispatchSlots,
+                  physicalDispatchFeePaid: physicalDispatchFee,
                   originalAmount,
                   discountPercent,
                   recoveredViaFunnel,
@@ -225,7 +237,8 @@ export async function POST(req: NextRequest) {
                 phone: migratedUser.phone,
                 email: migratedUser.email,
                 payuTxnId: txnid,
-                amount: amtPaid,
+                amount: amtCharged,
+                physicalDispatchFee,
                 originalAmount,
                 discountPercent,
                 recoveredViaFunnel,
@@ -253,7 +266,8 @@ export async function POST(req: NextRequest) {
             pendingUser.email,
             pendingUser.name,
             amtPaid,
-            txnid
+            txnid,
+            amtCharged
           );
           
         } else {

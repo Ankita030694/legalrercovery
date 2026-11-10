@@ -23,6 +23,7 @@ function DownloadBatchContent() {
   const [errorMessage, setErrorMessage] = useState<string>("");
   const [downloadBlobUrl, setDownloadBlobUrl] = useState<string | null>(null);
   const [downloadFilename, setDownloadFilename] = useState<string>("Notice_Dispatch_Batch.zip");
+  const [missingNotices, setMissingNotices] = useState<number>(0);
   const [elapsedSeconds, setElapsedSeconds] = useState<number>(0);
   const [progressStep, setProgressStep] = useState<number>(1);
 
@@ -101,6 +102,7 @@ function DownloadBatchContent() {
 
         setDownloadBlobUrl(blobUrl);
         setDownloadFilename(filename);
+        setMissingNotices(Number(res.headers.get("x-missing-notices")) || 0);
 
         // Automatically trigger browser download
         const a = document.createElement("a");
@@ -245,6 +247,15 @@ function DownloadBatchContent() {
             <p className="text-sm sm:text-base font-medium text-[#2A2421] mb-6 max-w-md">
               The physical notice archive <span className="font-bold text-[#D29E0D]">({downloadFilename})</span> containing individual PDFs and the envelope address manifest has been saved to your device.
             </p>
+
+            {missingNotices > 0 && (
+              <div className="w-full flex items-start gap-2 bg-red-50 border-2 border-red-200 rounded-xl p-4 text-left mb-4 text-sm font-semibold text-red-800">
+                <AlertCircle className="w-5 h-5 shrink-0 mt-0.5" />
+                <span>
+                  {missingNotices} notice(s) could not be generated and are not in this package. See 00_MISSING_NOTICES_READ_FIRST.txt and tell the administrator.
+                </span>
+              </div>
+            )}
 
             <div className="w-full bg-[#FFFDF7] border-2 border-[#F3DB9A] rounded-xl p-4 sm:p-5 text-left mb-6 space-y-2">
               <div className="text-xs font-bold text-[#8C6806] uppercase tracking-wider">Package Contents:</div>

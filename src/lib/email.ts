@@ -19,6 +19,27 @@ const transporter = nodemailer.createTransport({
   },
 });
 
+/** Sends an HTML email from the Legal Recovery address, trying both Zoho SMTP regions. */
+export async function sendLegalRecoveryEmail(toEmail: string, subject: string, html: string): Promise<boolean> {
+  const mailOptions = { from: `"Legal Recovery" <${emailUser}>`, to: toEmail, subject, html };
+
+  try {
+    await transporter.sendMail(mailOptions);
+    return true;
+  } catch (err: any) {
+    console.warn("[Legal Recovery Email] smtp.zoho.in failed, trying smtp.zoho.com:", err?.message);
+    try {
+      await nodemailer
+        .createTransport({ host: "smtp.zoho.com", port: 465, secure: true, auth: { user: emailUser, pass: emailPassword } })
+        .sendMail(mailOptions);
+      return true;
+    } catch (fallbackErr: any) {
+      console.error("[Legal Recovery Email] Both SMTP regions failed:", fallbackErr?.message);
+      return false;
+    }
+  }
+}
+
 export async function sendOtpEmail(toEmail: string, otp: string, userName: string, oppositionCount: number = 1): Promise<boolean> {
   const totalAmount = oppositionCount * 999;
   const mailOptions = {

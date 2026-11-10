@@ -8,10 +8,11 @@ import {
   normalizePhoneTenDigits,
   resolveEffectiveDiscount,
 } from "@/lib/funnel-config";
+import { parsePhysicalDispatchChoice } from "@/lib/physical-dispatch";
 
 export async function POST(req: NextRequest) {
   try {
-    const { name, email, phone, state, paymentPendingId, oppositionCount } = await req.json();
+    const { name, email, phone, state, paymentPendingId, oppositionCount, physicalDispatch } = await req.json();
 
     if (!name || !email || !phone || !state || !paymentPendingId) {
       return NextResponse.json({ error: "All registration fields are required" }, { status: 400 });
@@ -62,6 +63,8 @@ export async function POST(req: NextRequest) {
     }
 
     const resolvedOppositionCount = Number(oppositionCount) || pendingPaymentRecord.oppositionCount || 1;
+    const resolvedPhysicalDispatch =
+      parsePhysicalDispatchChoice(physicalDispatch) ?? pendingPaymentRecord.physicalDispatch === true;
     const funnelSettings = await getFunnelSettings(db);
     const { effectiveDiscountPercent } = resolveEffectiveDiscount(pendingPaymentRecord, funnelSettings);
 
@@ -78,6 +81,7 @@ export async function POST(req: NextRequest) {
       oppositionCount: resolvedOppositionCount,
       discountPercent: effectiveDiscountPercent,
       basePricePerOpposition: funnelSettings.basePricePerOpposition,
+      physicalDispatch: resolvedPhysicalDispatch,
       origin,
     });
 
@@ -94,6 +98,8 @@ export async function POST(req: NextRequest) {
           expectedAmount: session.totalAmount,
           originalAmount: session.originalAmount,
           discountPercent: session.discountPercent,
+          physicalDispatch: resolvedPhysicalDispatch,
+          physicalDispatchFee: session.physicalDispatchFee,
           updatedAt: new Date(),
         },
       }
@@ -110,6 +116,7 @@ export async function POST(req: NextRequest) {
       amount: session.totalAmount,
       originalAmount: session.originalAmount,
       discountPercent: session.discountPercent,
+      physicalDispatchFee: session.physicalDispatchFee,
     }, { status: 200 });
 
   } catch (error: any) {

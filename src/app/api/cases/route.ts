@@ -344,6 +344,24 @@ export async function POST(req: NextRequest) {
       );
     }
 
+    // Claim one prepaid Speed Post slot, if the user has any left, for this case
+    let physicalDispatch = false;
+    if (!hasUnlimitedCases && !representee) {
+      const slotClaim = await db.collection("users").updateOne(
+        {
+          _id: userId,
+          $expr: {
+            $lt: [
+              { $ifNull: ["$physicalDispatchSlotsUsed", 0] },
+              { $ifNull: ["$physicalDispatchSlots", 0] },
+            ],
+          },
+        },
+        { $inc: { physicalDispatchSlotsUsed: 1 } }
+      );
+      physicalDispatch = slotClaim.modifiedCount === 1;
+    }
+
     // Generate timeline dates based on category-specific intervals
     const today = new Date();
     const isLoanRecovery = (category || "general-recovery") === "loan-recovery";
@@ -460,6 +478,7 @@ export async function POST(req: NextRequest) {
       clientAuthRepName: representee ? (representee.authRepName || "") : "",
       clientAuthRepPhone: representee ? (representee.authRepPhone || "") : "",
       ...(representee ? { representeeId: representee._id } : {}),
+      ...(physicalDispatch ? { physicalDispatch: true } : {}),
       status: "active",
       currentStep: 1,
       createdAt: today.toISOString(),

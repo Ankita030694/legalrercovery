@@ -60,6 +60,12 @@ const retailNavigationItems = [
     mobileLabel: "Dispatches"
   },
   {
+    label: "Speed Post Dispatch",
+    href: "/authority/speed-post-dispatch",
+    icon: Send,
+    mobileLabel: "Post"
+  },
+  {
     label: "Transactions",
     href: "/authority/transactions",
     icon: CreditCard,
