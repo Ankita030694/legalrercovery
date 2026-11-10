@@ -51,8 +51,8 @@ const WHAT_YOU_GET: InfoCard[] = [
   },
   {
     icon: Scale,
-    title: "1 police complaint draft",
-    detail: "Shared on Day 22 if the dues are still unpaid. Filing it with the police is not included.",
+    title: "1 police complaint",
+    detail: "Emailed to the police on Day 22 if the dues are still unpaid, unless you switch it off.",
   },
   {
     icon: Mail,
@@ -78,8 +78,9 @@ const NOTICE_TIMELINE = [
   { day: "Day 15", title: "Final notice", detail: "The last warning, giving 48 hours to pay." },
   {
     day: "Day 22",
-    title: "Police complaint draft",
-    detail: "Shared with you and the other party if the dues are still unpaid.",
+    title: "Police complaint",
+    detail:
+      "Emailed to the police and the other party, with a copy to you, if the dues are still unpaid. You can switch this off on your dashboard. What the police do next is up to them.",
   },
 ];
 
@@ -141,7 +142,7 @@ const FAQS = [
   {
     question: "What exactly do I pay?",
     answer:
-      "₹999 per opposing party. That covers 3 legal notices and 1 police complaint draft, sent by email and WhatsApp. Speed Post is optional and costs extra. There is no commission.",
+      "₹999 per opposing party. That covers 3 legal notices and 1 police complaint, sent by email and WhatsApp. Speed Post is optional and costs extra. There is no commission.",
   },
   {
     question: "What details do I need?",

@@ -582,37 +582,37 @@ export default function UserDashboard() {
             </div>
           )}
 
+          {/* Toggle Switch */}
+          <div className="flex items-center justify-between sm:justify-start gap-3 bg-white border border-[#E5E7EB]/80 px-4 py-2.5 rounded-xl shadow-sm hover:shadow-md hover:shadow-slate-100 transition-all duration-200 shrink-0">
+            <div className="flex flex-col text-left">
+              <span className="text-[10px] font-bold text-slate-400 uppercase tracking-wider leading-none">POLICE COMPLAINTS</span>
+              <span className="text-xs font-black text-slate-700 mt-1">
+                {userProfile?.sendPoliceComplaints !== false ? "Enabled" : "Disabled"}
+              </span>
+            </div>
+            <div className="flex items-center gap-2">
+              {isUpdatingToggle && <Loader2 className="w-3.5 h-3.5 animate-spin text-[#DC2626]" />}
+              <button
+                type="button"
+                role="switch"
+                aria-checked={userProfile?.sendPoliceComplaints !== false}
+                disabled={isUpdatingToggle}
+                onClick={() => handleTogglePoliceComplaints(userProfile?.sendPoliceComplaints === false)}
+                className={`relative inline-flex h-6 w-11 shrink-0 cursor-pointer rounded-full border-2 border-transparent transition-colors duration-250 ease-in-out focus:outline-none ${
+                  userProfile?.sendPoliceComplaints !== false ? 'bg-[#DC2626]' : 'bg-slate-300'
+                } ${isUpdatingToggle ? 'opacity-50 cursor-not-allowed' : ''}`}
+              >
+                <span
+                  className={`pointer-events-none inline-block h-5 w-5 transform rounded-full bg-white shadow-md ring-0 transition-transform duration-250 ease-in-out ${
+                    userProfile?.sendPoliceComplaints !== false ? 'translate-x-5' : 'translate-x-0'
+                  }`}
+                />
+              </button>
+            </div>
+          </div>
+
           {isSpecialUser && (
             <>
-              {/* Toggle Switch */}
-              <div className="flex items-center justify-between sm:justify-start gap-3 bg-white border border-[#E5E7EB]/80 px-4 py-2.5 rounded-xl shadow-sm hover:shadow-md hover:shadow-slate-100 transition-all duration-200 shrink-0">
-                <div className="flex flex-col text-left">
-                  <span className="text-[10px] font-bold text-slate-400 uppercase tracking-wider leading-none">POLICE COMPLAINTS</span>
-                  <span className="text-xs font-black text-slate-700 mt-1">
-                    {userProfile?.sendPoliceComplaints !== false ? "Enabled" : "Disabled"}
-                  </span>
-                </div>
-                <div className="flex items-center gap-2">
-                  {isUpdatingToggle && <Loader2 className="w-3.5 h-3.5 animate-spin text-[#DC2626]" />}
-                  <button
-                    type="button"
-                    role="switch"
-                    aria-checked={userProfile?.sendPoliceComplaints !== false}
-                    disabled={isUpdatingToggle}
-                    onClick={() => handleTogglePoliceComplaints(userProfile?.sendPoliceComplaints === false)}
-                    className={`relative inline-flex h-6 w-11 shrink-0 cursor-pointer rounded-full border-2 border-transparent transition-colors duration-250 ease-in-out focus:outline-none ${
-                      userProfile?.sendPoliceComplaints !== false ? 'bg-[#DC2626]' : 'bg-slate-300'
-                    } ${isUpdatingToggle ? 'opacity-50 cursor-not-allowed' : ''}`}
-                  >
-                    <span
-                      className={`pointer-events-none inline-block h-5 w-5 transform rounded-full bg-white shadow-md ring-0 transition-transform duration-250 ease-in-out ${
-                        userProfile?.sendPoliceComplaints !== false ? 'translate-x-5' : 'translate-x-0'
-                      }`}
-                    />
-                  </button>
-                </div>
-              </div>
-
               <button
                 onClick={handleTriggerSpecialDispatch}
                 disabled={isDispatchingBatch}

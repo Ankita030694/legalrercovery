@@ -38,7 +38,8 @@ async function sendAccusedDispatch(
   isEmailPending: boolean,
   noticeRef: string,
   ccEmails: string,
-  complainantAddress: string
+  complainantAddress: string,
+  isSpecialUser?: boolean
 ): Promise<{ emailSent: boolean; whatsappSent: boolean }> {
   let emailSubject = "";
   let emailBody = "";
@@ -256,9 +257,10 @@ AMA Legal Solutions`;
 
   const isLoanRecovery = caseDoc.category === 'loan-recovery';
   // loan-recovery: step 2 (PC) is a police complaint to SHO
-  // general-recovery: ALL 4 steps are notice dispatches to the accused (no dedicated police complaint step)
+  // general-recovery: step 4 is a police complaint to SHO for normal users; AMA (special) accounts send it to the accused only
   const isLoanStep2Complaint = isLoanRecovery && step === 2;
-  const isComplaintStep = isLoanStep2Complaint;
+  const isGeneralStep4Complaint = !isLoanRecovery && step === 4 && !isSpecialUser;
+  const isComplaintStep = isLoanStep2Complaint || isGeneralStep4Complaint;
 
   // 1. Email Channel
   if (isEmailPending) {
@@ -766,7 +768,7 @@ async function handleDispatch(req: NextRequest) {
         const sendComplaints = clientUser?.sendPoliceComplaints !== false;
         const shouldSkipPolice = typeof caseDoc.skipPoliceComplaint === "boolean"
           ? caseDoc.skipPoliceComplaint === true
-          : (isSpecialUser && !sendComplaints);
+          : !sendComplaints;
 
         if (shouldSkipPolice) {
           console.log(`[Queue Processor] Police complaint toggle is OFF for case ${caseDoc.caseId} (perCase=${caseDoc.skipPoliceComplaint}, userPreference=${sendComplaints}). Skipping dispatch.`);
@@ -886,7 +888,8 @@ async function handleDispatch(req: NextRequest) {
             true,
             noticeRef,
             combinedCcEmails,
-            sanitizeField(complainantAddress)
+            sanitizeField(complainantAddress),
+            isSpecialUser
           );
           emailSent = dispatchRes.emailSent;
           whatsappSent = dispatchRes.whatsappSent;

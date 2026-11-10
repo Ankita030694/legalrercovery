@@ -31,7 +31,7 @@ We cannot issue refunds once advocate review begins. No refunds are given for in
 
 LegalRecovery helps with straightforward civil disputes. These include unpaid salaries, stuck rent deposits, consumer refunds, and invoice defaults.
 
-Our service does not include court appearances or ongoing litigation. It does not include filing criminal complaints or managing negotiations.
+Our service does not include court appearances or ongoing litigation. It includes emailing one police complaint unless you turn this off, but does not include following up with the police or managing negotiations.
 
 You can request additional legal services separately.
 
