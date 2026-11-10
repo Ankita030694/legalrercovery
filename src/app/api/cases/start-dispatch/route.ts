@@ -334,6 +334,7 @@ export async function POST(req: NextRequest) {
           $set: {
             status: isPartial ? "active" : "active", // Keep case active for retries
             "timeline.0.status": finalStatus,
+            "timeline.0.delivery": { email: emailSent, whatsapp: whatsappSent },
             "timeline.0.scheduledAt": isPartial ? retryTime.toISOString() : null,
             "timeline.0.error": `Email: ${emailSent ? 'Delivered' : 'Failed'}, WhatsApp: ${whatsappSent ? 'Delivered' : 'Failed'}`,
             updatedAt: today.toISOString()

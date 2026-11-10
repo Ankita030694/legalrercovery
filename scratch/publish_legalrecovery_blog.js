@@ -646,11 +646,18 @@ async function publishLegalRecoveryBlog() {
             "a"
           );
 
+          const agentApiBin = fs.existsSync(
+            "/Users/amalegalsolutions/.gemini/antigravity/bin/agentapi"
+          )
+            ? "/Users/amalegalsolutions/.gemini/antigravity/bin/agentapi"
+            : "agentapi";
+
           const child = spawn(
-            "/Users/amalegalsolutions/.antigravity/antigravity/bin/agentapi",
+            agentApiBin,
             ["new-conversation", "--model=pro", "--", promptText],
             {
               cwd: "/Users/amalegalsolutions/Desktop/AMAWORK/legalrecovery/lr",
+              env: process.env,
               detached: true,
               stdio: ["ignore", outFd, errFd],
             }

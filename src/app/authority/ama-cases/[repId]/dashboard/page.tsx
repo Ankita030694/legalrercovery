@@ -118,7 +118,8 @@ export default function ScopedRepresentationDashboard() {
       t.status === "pending" || 
       t.status === "active" || 
       t.status === "partially_delivered" || 
-      t.status === "failed"
+      t.status === "failed" ||
+      t.status === "failed_permanent"
     ) || c.timeline[(c.currentStep || 1) - 1] || c.timeline[c.timeline.length - 1];
 
     let timestamp = 0;
@@ -191,7 +192,7 @@ export default function ScopedRepresentationDashboard() {
       });
       const data = await res.json();
       if (res.ok && data.success) {
-        alert(`Dispatched ${data.processed} due notices for ${representee?.name || "this client"}!`);
+        alert(data.deferred ? data.message : `Dispatched ${data.processed} due notices for ${representee?.name || "this client"}!`);
         fetchData();
       } else {
         alert(`Dispatch failed: ${data.error || "Unknown error"}`);

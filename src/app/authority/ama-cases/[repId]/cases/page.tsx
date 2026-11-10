@@ -381,6 +381,7 @@ export default function ScopedRepresentationCasesPage() {
     try {
       const chunkSize = 5;
       let processedTotal = 0;
+      let stoppedEarly = false;
 
       for (let i = 0; i < ids.length; i += chunkSize) {
         const chunk = ids.slice(i, i + chunkSize);
@@ -394,13 +395,19 @@ export default function ScopedRepresentationCasesPage() {
 
         if (res.ok) {
           const data = await res.json();
-          processedTotal += (data.processed || chunk.length);
+          processedTotal += (data.processed ?? chunk.length);
+          if (data.deferred) {
+            stoppedEarly = true;
+            break;
+          }
         } else {
           console.error("Batch dispatch chunk error:", await res.text());
         }
       }
 
-      alert(`Batch dispatch complete! Successfully triggered 1st notice dispatch for ${processedTotal} cases.`);
+      alert(stoppedEarly
+        ? `Sending stopped early to stay within email limits. ${processedTotal} of ${count} cases were dispatched. Run this batch again in about an hour for the rest.`
+        : `Batch dispatch complete! Successfully triggered 1st notice dispatch for ${processedTotal} cases.`);
       await fetchData();
     } catch (err: any) {
       alert(`Network error during batch dispatch: ${err.message || err}`);

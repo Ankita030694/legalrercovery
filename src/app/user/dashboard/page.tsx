@@ -160,7 +160,7 @@ export default function UserDashboard() {
       });
       const data = await res.json();
       if (res.ok && data.success) {
-        alert(`Batch dispatch completed! Processed ${data.processed} notices.`);
+        alert(data.deferred ? data.message : `Batch dispatch completed! Processed ${data.processed} notices.`);
         fetchCases(); // Refresh cases on the dashboard
       } else {
         alert(`Error triggering dispatch: ${data.error || "Unknown error"}`);
@@ -1012,7 +1012,7 @@ export default function UserDashboard() {
                     const isCancelled = t.status === "cancelled";
                     const isPending = t.status === "pending";
                     const isPartiallyDelivered = t.status === "partially_delivered";
-                    const isFailed = t.status === "failed";
+                    const isFailed = t.status === "failed" || t.status === "failed_permanent";
                     
                     // Real-time timeline calculations based on scheduledAt
                     let displayDate = t.date === "Today, Grace Active" || t.date === "Awaiting dispatch" || t.date?.includes("Grace") ? "Today" : (t.date || "Scheduled");

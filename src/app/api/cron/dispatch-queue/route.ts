@@ -11,6 +11,18 @@ import { sendAndLogClientNotification, logPoliceComplaintClientNotification } fr
 import { getServerSession } from "next-auth/next";
 import { authOptions } from "@/lib/auth";
 import { notifyDispatcherOfNotice } from "@/lib/dispatch-batch";
+import {
+  EMAIL_BREAKER_THRESHOLD,
+  MIN_SEND_GAP_MS,
+  RUN_TIME_BUDGET_MS,
+  alertDispatchFailures,
+  getHourlySendBudget,
+  isEmailBreakerOpen,
+  openEmailBreaker,
+  recordFailedDispatchAttempt,
+  recoverInterruptedDispatches,
+  type DispatchFailure,
+} from "@/lib/dispatch-guard";
 
 export const maxDuration = 300; // Vercel max timeout
 export const dynamic = 'force-dynamic';
@@ -36,6 +48,7 @@ async function sendAccusedDispatch(
   clientDisplayName: string,
   complainantEmail: string,
   isEmailPending: boolean,
+  isWhatsappPending: boolean,
   noticeRef: string,
   ccEmails: string,
   complainantAddress: string,
@@ -283,7 +296,9 @@ AMA Legal Solutions`;
   }
 
   // 2. WhatsApp Channel
-  if (!isComplaintStep) {
+  if (!isWhatsappPending) {
+    promises.push(Promise.resolve(true));
+  } else if (!isComplaintStep) {
     const watiSends = [
       sendNoticeWati(caseDoc.phone, caseDoc.defaulterName, caseDoc.stuckAmount, clientDisplayName)
     ];
@@ -328,7 +343,7 @@ AMA Legal Solutions`;
   const results = await Promise.allSettled(promises);
   
   const emailSent = results[0].status === "fulfilled" ? results[0].value : !isEmailPending;
-  const whatsappSent = results[1].status === "fulfilled" ? results[1].value : false;
+  const whatsappSent = results[1].status === "fulfilled" ? results[1].value : !isWhatsappPending;
 
   return { emailSent, whatsappSent };
 }
@@ -406,6 +421,26 @@ async function handleDispatch(req: NextRequest) {
   const now = new Date();
 
   try {
+    await alertDispatchFailures(await recoverInterruptedDispatches(db, now));
+
+    // One case forced by an admin is exempt from the volume guards
+    const enforceSendLimits = !forceCaseId;
+    let sendBudget = Infinity;
+    if (enforceSendLimits) {
+      const pausedMessage = (await isEmailBreakerOpen(db, now))
+        ? "Notice sending is paused for up to 1 hour after repeated email failures."
+        : null;
+      if (!pausedMessage) sendBudget = await getHourlySendBudget(db, now);
+      if (pausedMessage || sendBudget === 0) {
+        return NextResponse.json({
+          success: true,
+          processed: 0,
+          deferred: true,
+          message: pausedMessage || "The hourly sending limit has been reached. Due notices will go out automatically.",
+        });
+      }
+    }
+
     // 1. Fetch cases that have a timeline step due or needing retry
     const query: any = {
       status: "active",
@@ -424,7 +459,7 @@ async function handleDispatch(req: NextRequest) {
       query._id = new ObjectId(forceCaseId);
       query.timeline = {
         $elemMatch: {
-          status: { $in: ["pending", "scheduled", "partially_delivered", "failed"] }
+          status: { $in: ["pending", "scheduled", "partially_delivered", "failed", "failed_permanent"] }
         }
       };
     } else if (forceCaseIds.length > 0) {
@@ -434,7 +469,7 @@ async function handleDispatch(req: NextRequest) {
       query._id = { $in: objIds };
       query.timeline = {
         $elemMatch: {
-          status: { $in: ["pending", "scheduled", "partially_delivered", "failed"] }
+          status: { $in: ["pending", "scheduled", "partially_delivered", "failed", "failed_permanent"] }
         }
       };
     } else if (userIdFilter) {
@@ -461,8 +496,40 @@ async function handleDispatch(req: NextRequest) {
     console.log(`[Queue Processor] Found ${casesToProcess.length} cases due for dispatch.`);
 
     let processedCount = 0;
+    let dispatchesStarted = 0;
+    let lastDispatchAt = 0;
+    let consecutiveEmailFailures = 0;
+    let breakerOpened = false;
+    let deferred = false;
+    const permanentFailures: DispatchFailure[] = [];
+
+    const paceNextDispatch = async () => {
+      const waitMs = lastDispatchAt + MIN_SEND_GAP_MS - Date.now();
+      if (lastDispatchAt > 0 && waitMs > 0) {
+        await new Promise(resolve => setTimeout(resolve, waitMs));
+      }
+      lastDispatchAt = Date.now();
+      dispatchesStarted++;
+    };
+
+    const trackEmailOutcome = (emailSent: boolean) => {
+      consecutiveEmailFailures = emailSent ? 0 : consecutiveEmailFailures + 1;
+    };
 
     for (const caseDoc of casesToProcess) {
+      if (dispatchesStarted >= sendBudget || Date.now() - now.getTime() > RUN_TIME_BUDGET_MS) {
+        deferred = true;
+        break;
+      }
+
+      if (enforceSendLimits && consecutiveEmailFailures >= EMAIL_BREAKER_THRESHOLD) {
+        await openEmailBreaker(db, now);
+        breakerOpened = true;
+        deferred = true;
+        console.error(`[Queue Processor] ${consecutiveEmailFailures} emails failed in a row. Pausing notice sending.`);
+        break;
+      }
+
       const stepIndex = (caseDoc.currentStep || 1) - 1;
       if (stepIndex < 0 || stepIndex > 3 || !caseDoc.timeline) {
         console.warn(`[Queue Processor] Case ${caseDoc.caseId} has an invalid step configuration.`);
@@ -582,10 +649,8 @@ async function handleDispatch(req: NextRequest) {
           console.error(`[Queue Processor] PDF Generation error for Case ${caseDoc.caseId}:`, pdfErr);
           
           // Revert step status back to allow future retries
-          await db.collection("cases").updateOne(
-            { _id: caseDoc._id },
-            { $set: { [`timeline.${stepIndex}.status`]: "failed", [`timeline.${stepIndex}.error`]: pdfErr.message } }
-          );
+          const failure = await recordFailedDispatchAttempt(db, caseDoc, stepIndex, "failed", `PDF generation failed: ${pdfErr.message}.`, now);
+          if (failure) permanentFailures.push(failure);
           continue;
         }
 
@@ -593,16 +658,18 @@ async function handleDispatch(req: NextRequest) {
         const pdfFilename = `${cleanDefaulterName}_Notice_${formatDateString(now)}.pdf`;
 
         // Determine if we need to dispatch to both or just retry failed channels
-        const isEmailPending = activeStep.status !== "partially_delivered" || (caseDoc.lastLedger && caseDoc.lastLedger.channels.email.status !== "success");
+        const isEmailPending = !activeStep.delivery?.email;
+        const isWhatsappPending = !activeStep.delivery?.whatsapp;
 
         let emailSent = !isEmailPending;
-        let whatsappSent = false;
+        let whatsappSent = !isWhatsappPending;
 
         let combinedCcEmails = complainantEmail || "";
         if (caseDoc.ccEmails) {
           combinedCcEmails = combinedCcEmails ? `${combinedCcEmails},${caseDoc.ccEmails}` : caseDoc.ccEmails;
         }
 
+        await paceNextDispatch();
         try {
           const dispatchRes = await sendAccusedDispatch(
             caseDoc,
@@ -612,6 +679,7 @@ async function handleDispatch(req: NextRequest) {
             clientDisplayName,
             complainantEmail,
             isEmailPending,
+            isWhatsappPending,
             noticeRef,
             combinedCcEmails,
             sanitizeField(complainantAddress)
@@ -621,6 +689,12 @@ async function handleDispatch(req: NextRequest) {
         } catch (dispatchErr) {
           console.error(`[Queue Processor] Dispatch error for Case ${caseDoc.caseId}:`, dispatchErr);
         }
+        trackEmailOutcome(emailSent);
+
+        await db.collection("cases").updateOne(
+          { _id: caseDoc._id },
+          { $set: { [`timeline.${stepIndex}.delivery`]: { email: emailSent, whatsapp: whatsappSent } } }
+        );
 
         // Auditing Ledger
         const ledgerEntry = {
@@ -736,29 +810,17 @@ async function handleDispatch(req: NextRequest) {
         } else {
           // --- PRIMARY EMAIL FAILED ---
           // Skip client notifications, update step retry counters, schedule retry
-          const attemptCount = (activeStep.retryCount || 0) + 1;
-          const isPermanentFailure = attemptCount >= 3;
-          
-          const finalStatus = isPermanentFailure 
-            ? "failed_permanent" 
-            : (whatsappSent ? "partially_delivered" : "failed");
-
-          const retryTime = new Date(now.getTime() + 15 * 60 * 1000); // retry in 15 minutes
-
-          await db.collection("cases").updateOne(
-            { _id: caseDoc._id },
-            {
-              $set: {
-                [`timeline.${stepIndex}.status`]: finalStatus,
-                [`timeline.${stepIndex}.retryCount`]: attemptCount,
-                [`timeline.${stepIndex}.scheduledAt`]: isPermanentFailure ? null : retryTime.toISOString(),
-                [`timeline.${stepIndex}.error`]: `Primary Email Failed. WhatsApp Sent: ${whatsappSent}. Attempt: ${attemptCount}`,
-                updatedAt: now.toISOString()
-              }
-            }
+          const failure = await recordFailedDispatchAttempt(
+            db,
+            caseDoc,
+            stepIndex,
+            whatsappSent ? "partially_delivered" : "failed",
+            `Primary Email Failed. WhatsApp Sent: ${whatsappSent}.`,
+            now
           );
+          if (failure) permanentFailures.push(failure);
 
-          console.warn(`[Queue Processor] Primary email failed for Case ${caseDoc.caseId}. Skipped client notifications. Retry scheduled for: ${retryTime}`);
+          console.warn(`[Queue Processor] Primary email failed for Case ${caseDoc.caseId}. Skipped client notifications.`);
         }
 
       } else if (caseDoc.currentStep === 4) {
@@ -815,10 +877,8 @@ async function handleDispatch(req: NextRequest) {
         // Step 4: SHO Criminal Police Complaint (Direct Email to SHO & Accused, CC Client)
         if (!clientEmail) {
           console.error(`[Queue Processor] Client email missing for Case ${caseDoc.caseId}`);
-          await db.collection("cases").updateOne(
-            { _id: caseDoc._id },
-            { $set: { "timeline.3.status": "failed", "timeline.3.error": "Client email not found" } }
-          );
+          const failure = await recordFailedDispatchAttempt(db, caseDoc, 3, "failed", "Client email not found.", now);
+          if (failure) permanentFailures.push(failure);
           continue;
         }
 
@@ -860,10 +920,8 @@ async function handleDispatch(req: NextRequest) {
           }
         } catch (pdfErr: any) {
           console.error(`[Queue Processor] Step 4 PDF Generation failed for Case ${caseDoc.caseId}:`, pdfErr);
-          await db.collection("cases").updateOne(
-            { _id: caseDoc._id },
-            { $set: { "timeline.3.status": "failed", "timeline.3.error": pdfErr.message } }
-          );
+          const failure = await recordFailedDispatchAttempt(db, caseDoc, 3, "failed", `PDF generation failed: ${pdfErr.message}.`, now);
+          if (failure) permanentFailures.push(failure);
           continue;
         }
 
@@ -875,8 +933,12 @@ async function handleDispatch(req: NextRequest) {
           combinedCcEmails = combinedCcEmails ? `${combinedCcEmails},${caseDoc.ccEmails}` : caseDoc.ccEmails;
         }
 
-        let emailSent = false;
-        let whatsappSent = false;
+        const isEmailPending = !activeStep.delivery?.email;
+        const isWhatsappPending = !activeStep.delivery?.whatsapp;
+
+        let emailSent = !isEmailPending;
+        let whatsappSent = !isWhatsappPending;
+        await paceNextDispatch();
         try {
           const dispatchRes = await sendAccusedDispatch(
             caseDoc,
@@ -885,7 +947,8 @@ async function handleDispatch(req: NextRequest) {
             pdfFilename,
             clientDisplayName,
             clientEmail,
-            true,
+            isEmailPending,
+            isWhatsappPending,
             noticeRef,
             combinedCcEmails,
             sanitizeField(complainantAddress),
@@ -896,6 +959,12 @@ async function handleDispatch(req: NextRequest) {
         } catch (dispatchErr) {
           console.error(`[Queue Processor] Step 4 Dispatch error for Case ${caseDoc.caseId}:`, dispatchErr);
         }
+        trackEmailOutcome(emailSent);
+
+        await db.collection("cases").updateOne(
+          { _id: caseDoc._id },
+          { $set: { "timeline.3.delivery": { email: emailSent, whatsapp: whatsappSent } } }
+        );
 
         const toEmails = [];
         if (caseDoc.policeStationEmail) toEmails.push(caseDoc.policeStationEmail);
@@ -952,66 +1021,29 @@ async function handleDispatch(req: NextRequest) {
           );
           console.log(`[Queue Processor] Step 4 Completed. Case ${caseDoc.caseId} fully completed!`);
         } else {
-          const attemptCount = (activeStep.retryCount || 0) + 1;
-          const isPermanentFailure = attemptCount >= 3;
-          const retryTime = new Date(now.getTime() + 15 * 60 * 1000);
-
-          await db.collection("cases").updateOne(
-            { _id: caseDoc._id },
-            {
-              $set: {
-                "timeline.3.status": isPermanentFailure ? "failed_permanent" : (whatsappSent ? "partially_delivered" : "failed"),
-                "timeline.3.retryCount": attemptCount,
-                "timeline.3.scheduledAt": isPermanentFailure ? null : retryTime.toISOString(),
-                "timeline.3.error": `SHO/Accused dispatch failed. Email Sent: ${emailSent}, WhatsApp Sent: ${whatsappSent}. Attempt: ${attemptCount}`,
-                updatedAt: now.toISOString()
-              }
-            }
+          const failure = await recordFailedDispatchAttempt(
+            db,
+            caseDoc,
+            3,
+            emailSent || whatsappSent ? "partially_delivered" : "failed",
+            `SHO/Accused dispatch failed. Email Sent: ${emailSent}, WhatsApp Sent: ${whatsappSent}.`,
+            now
           );
+          if (failure) permanentFailures.push(failure);
           console.warn(`[Queue Processor] Step 4 dispatch failed for Case ${caseDoc.caseId}`);
         }
       }
     }
 
-    // 2. Check for dynamic chaining (self-continuation batching)
-    if (processedCount === limit) {
-      const remainingQuery: any = {
-        status: "active",
-      };
-      if (userIdFilter) {
-        remainingQuery.userId = new ObjectId(userIdFilter);
-        remainingQuery.timeline = {
-          $elemMatch: {
-            status: { $in: ["scheduled", "partially_delivered", "failed"] }
-          }
-        };
-      } else {
-        remainingQuery.timeline = {
-          $elemMatch: {
-            status: { $in: ["scheduled", "partially_delivered", "failed"] },
-            scheduledAt: { $lte: now.toISOString() }
-          }
-        };
-      }
-      const remainingCount = await db.collection("cases").countDocuments(remainingQuery);
-
-      if (remainingCount > 0) {
-        const selfUrl = req.url;
-        console.log(`[Queue Processor] Dynamic batch limit reached. Chaining next batch asynchronously. Remaining due: ${remainingCount}`);
-        
-        const nextAuthHeader = req.headers.get("Authorization") || "";
-        
-        fetch(selfUrl, {
-          method: "POST",
-          headers: { "Authorization": nextAuthHeader }
-        }).catch(chainErr => console.error("[Queue Processor] Failed to chain next async batch:", chainErr));
-      }
-    }
+    await alertDispatchFailures(permanentFailures, breakerOpened);
 
     return NextResponse.json({
       success: true,
       processed: processedCount,
-      message: `Successfully processed ${processedCount} notices.`
+      deferred,
+      message: deferred
+        ? `Processed ${processedCount} notices. The rest were held back to stay within sending limits and can be sent later.`
+        : `Successfully processed ${processedCount} notices.`
     });
 
   } catch (error: any) {
