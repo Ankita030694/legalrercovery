@@ -5,10 +5,11 @@ import { sendWatiOtp } from "@/lib/wati";
 import { generateResumeToken, normalizePhoneTenDigits } from "@/lib/funnel-config";
 import crypto from "crypto";
 import { normalizeRecoveryType } from "@/lib/recoveryTypes";
+import { preferAttribution, sanitizeAttribution } from "@/lib/attribution";
 
 export async function POST(req: NextRequest) {
   try {
-    const { name, email, phone, state, oppositionCount, recoveryType: rawRecoveryType, physicalDispatch } = await req.json();
+    const { name, email, phone, state, oppositionCount, recoveryType: rawRecoveryType, physicalDispatch, attribution: rawAttribution } = await req.json();
     const recoveryType = normalizeRecoveryType(rawRecoveryType);
 
     if (!name || !email || !phone || !state) {
@@ -87,6 +88,7 @@ export async function POST(req: NextRequest) {
       state,
       // Primary "what do you wish to recover" head (lead-level; each case stores its own)
       recoveryType: recoveryType || priorSource?.recoveryType || null,
+      attribution: preferAttribution(priorSource?.attribution, sanitizeAttribution(rawAttribution)),
       otp,
       otpExpires: new Date(Date.now() + 10 * 60 * 1000), // 10 minutes validation window
       otpExpired: false,

@@ -178,6 +178,9 @@ export async function POST(req: NextRequest) {
                       ...(pendingPaymentUser.recoveryType && !existingUser.primaryRecoveryType
                         ? { primaryRecoveryType: pendingPaymentUser.recoveryType }
                         : {}),
+                      ...(pendingPaymentUser.attribution && !existingUser.attribution
+                        ? { attribution: pendingPaymentUser.attribution }
+                        : {}),
                       isPaid: true,
                       payuTxnId: txnid,
                       lastPaymentDate: new Date(),
@@ -201,6 +204,7 @@ export async function POST(req: NextRequest) {
                     phone: pendingPaymentUser.phone,
                     state: pendingPaymentUser.state,
                     primaryRecoveryType: pendingPaymentUser.recoveryType || null,
+                    attribution: pendingPaymentUser.attribution || null,
                     oppositionCount: oppCount,
                     amountPaid: amtPaid,
                     physicalDispatchSlots,
@@ -252,6 +256,7 @@ export async function POST(req: NextRequest) {
                 discountPercent,
                 recoveredViaFunnel,
                 recoveredAtWave: currentWave,
+                attribution: pendingPaymentUser.attribution || null,
                 status: "success",
                 oppositionCount: oppCount,
                 paymentDate: new Date(),

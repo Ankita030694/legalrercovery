@@ -8,6 +8,7 @@ import TimedPopupModal from "@/components/TimedPopupModal";
 import { SITE_URL } from "@/lib/site";
 import { Analytics } from "@vercel/analytics/next";
 import MetaPixel from "@/components/MetaPixel";
+import AttributionCapture from "@/components/AttributionCapture";
 import HtmlLangUpdater from "@/components/HtmlLangUpdater";
 
 declare const __non_webpack_require__: typeof require | undefined;
@@ -185,6 +186,7 @@ export default function RootLayout({
         <TimedPopupModal />
         <Analytics />
         <MetaPixel />
+        <AttributionCapture />
       </body>
     </html>
   );

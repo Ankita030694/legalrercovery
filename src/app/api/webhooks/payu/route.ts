@@ -173,6 +173,9 @@ export async function POST(req: NextRequest) {
                           physicalDispatchFeePaid: (Number(existingUser.physicalDispatchFeePaid) || 0) + physicalDispatchFee,
                         }
                       : {}),
+                    ...(pendingUser.attribution && !existingUser.attribution
+                      ? { attribution: pendingUser.attribution }
+                      : {}),
                     isPaid: true,
                     payuTxnId: txnid,
                     lastPaymentDate: new Date(),
@@ -193,6 +196,7 @@ export async function POST(req: NextRequest) {
                   email: pendingUser.email,
                   phone: pendingUser.phone,
                   state: pendingUser.state,
+                  attribution: pendingUser.attribution || null,
                   oppositionCount: oppCount,
                   amountPaid: amtPaid,
                   physicalDispatchSlots,
@@ -243,6 +247,7 @@ export async function POST(req: NextRequest) {
                 discountPercent,
                 recoveredViaFunnel,
                 recoveredAtWave: currentWave,
+                attribution: pendingUser.attribution || null,
                 status: "success",
                 oppositionCount: oppCount,
                 paymentDate: new Date(),

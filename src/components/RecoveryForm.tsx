@@ -8,10 +8,17 @@ import { User, Mail, Phone, MapPin, CheckCircle, AlertCircle, Loader2, Shield, A
 import { fetchWithRetry } from "@/lib/fetchWithRetry";
 import { RECOVERY_TYPES } from "@/lib/recoveryTypes";
 import { trackMetaEvent } from "@/lib/metaPixel";
+import { getStoredAttribution } from "@/lib/attribution";
 import { PhysicalDispatchChoice } from "@/components/PhysicalDispatchChoice";
 import { calculatePhysicalDispatchFee } from "@/lib/physical-dispatch";
 
-export const RecoveryForm = () => {
+interface RecoveryFormProps {
+  /** "quick" splits the details into two short steps and assumes 1 party with no Speed Post (for ad landing pages). */
+  variant?: "default" | "quick";
+}
+
+export const RecoveryForm = ({ variant = "default" }: RecoveryFormProps) => {
+  const isQuick = variant === "quick";
   const PRICE_PER_OPPOSITION = 999; // TO CHANGE TO PRODUCTION PRICE: Change 1 to 999
   const router = useRouter();
   const [step, setStep] = useState(1); // 1 = Details, 2 = OTP Verification, 3 = Existing User Decision
@@ -24,7 +31,10 @@ export const RecoveryForm = () => {
   const [pendingId, setPendingId] = useState("");
   const [resendCooldown, setResendCooldown] = useState(0);
   const [oppositionCount, setOppositionCount] = useState<number>(1);
-  const [physicalDispatch, setPhysicalDispatch] = useState<boolean | null>(null);
+  const [physicalDispatch, setPhysicalDispatch] = useState<boolean | null>(isQuick ? false : null);
+  const [quickStep, setQuickStep] = useState<1 | 2>(1);
+  const showBasicsStep = !isQuick || quickStep === 1;
+  const showContactStep = !isQuick || quickStep === 2;
   
   const [formTouched, setFormTouched] = useState(false);
   const [isSubmitting, setIsSubmitting] = useState(false);
@@ -137,6 +147,14 @@ export const RecoveryForm = () => {
     setFormTouched(true);
     setSubmitError(null);
 
+    if (isQuick && quickStep === 1) {
+      if (name.trim().length > 0 && isPhoneValid && recoveryType !== "") {
+        setFormTouched(false);
+        setQuickStep(2);
+      }
+      return;
+    }
+
     if (!isFormValid) return;
 
     setIsSubmitting(true);
@@ -145,7 +163,7 @@ export const RecoveryForm = () => {
       const res = await fetchWithRetry("/api/users/send-otp", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ name, email, phone, state, recoveryType, oppositionCount, physicalDispatch }),
+        body: JSON.stringify({ name, email, phone, state, recoveryType, oppositionCount, physicalDispatch, attribution: getStoredAttribution() }),
       });
 
       const data = await res.json().catch(() => ({}));
@@ -356,7 +374,7 @@ export const RecoveryForm = () => {
       const res = await fetchWithRetry("/api/users/send-otp", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ name, email, phone, state, recoveryType, oppositionCount, physicalDispatch }),
+        body: JSON.stringify({ name, email, phone, state, recoveryType, oppositionCount, physicalDispatch, attribution: getStoredAttribution() }),
       });
 
       const data = await res.json().catch(() => ({}));
@@ -386,13 +404,17 @@ export const RecoveryForm = () => {
     <>
       <div className="text-center mb-6">
         <p className="text-xl sm:text-2xl font-black text-[#111827] mb-2 tracking-tight">
-          {payuSession ? "Secure Payment" : step === 1 ? "Complete Details" : step === 2 ? "Verify Identity" : "Welcome Back!"}
+          {payuSession ? "Secure Payment" : step === 1 ? (!isQuick ? "Complete Details" : quickStep === 1 ? "Start Your Recovery" : "Almost Done") : step === 2 ? "Verify Identity" : "Welcome Back!"}
         </p>
         <p className="text-xs sm:text-sm text-slate-500 font-semibold">
           {payuSession
             ? "Your identity has been verified. Redirecting you to PayU..."
             : step === 1 
-            ? "Enter your details to initiate secure legal recovery setup." 
+            ? (!isQuick
+              ? "Enter your details to initiate secure legal recovery setup."
+              : quickStep === 1
+              ? "Step 1 of 2. Takes about a minute."
+              : "Step 2 of 2. We'll send your OTP to WhatsApp and email.")
             : step === 2
             ? "Enter the OTP sent to your WhatsApp and email to verify your identity."
             : existingUserData?.hasRemainingQuota
@@ -469,144 +491,164 @@ export const RecoveryForm = () => {
         </div>
       ) : step === 1 ? (
         <form onSubmit={handleSendOtp} className="flex flex-col gap-4 sm:gap-5">
-          {/* Name Field */}
-          <div className="flex flex-col text-left">
-            <label className="text-xs font-black text-[#111827] mb-1.5 flex items-center gap-1.5">
-              <User className="w-3.5 h-3.5 text-[#DC2626]" /> Full Name <span className="text-[#DC2626]">*</span>
-            </label>
-            <div className="relative">
-              <input
-                type="text"
-                required
-                value={name}
-                onChange={handleNameChange}
-                placeholder="Enter your name"
-                className={`w-full bg-[#F9FAFB] border ${formTouched && name.trim().length === 0 ? "border-[#DC2626] focus:ring-[#DC2626]/20" : "border-[#E5E7EB] focus:ring-[#DC2626]/10"} rounded-xl px-4 py-3 text-sm text-[#111827] focus:outline-none focus:ring-4 transition-all font-semibold`}
-              />
-            </div>
-          </div>
-
-          {/* Phone Field */}
-          <div className="flex flex-col text-left">
-            <label className="text-xs font-black text-[#111827] mb-1.5 flex items-center gap-1.5">
-              <Phone className="w-3.5 h-3.5 text-[#DC2626]" /> Phone Number <span className="text-[#DC2626]">*</span>
-            </label>
-            <div className="relative">
-              <input
-                type="tel"
-                required
-                value={phone}
-                onChange={handlePhoneChange}
-                placeholder={phone.startsWith("0") ? "11-digit mobile number (e.g. 098...)" : "10-digit mobile number"}
-                className={`w-full bg-[#F9FAFB] border ${formTouched && !isPhoneValid ? "border-[#DC2626] focus:ring-[#DC2626]/20" : "border-[#E5E7EB] focus:ring-[#DC2626]/10"} rounded-xl px-4 py-3 text-sm text-[#111827] focus:outline-none focus:ring-4 transition-all font-semibold`}
-              />
-            </div>
-          </div>
-
-          {/* Email Field */}
-          <div className="flex flex-col text-left">
-            <label className="text-xs font-black text-[#111827] mb-1.5 flex items-center gap-1.5">
-              <Mail className="w-3.5 h-3.5 text-[#DC2626]" /> Email Address <span className="text-[#DC2626]">*</span>
-            </label>
-            <div className="relative">
-              <input
-                type="email"
-                required
-                value={email}
-                onChange={(e) => setEmail(e.target.value)}
-                placeholder="name@example.com"
-                className={`w-full bg-[#F9FAFB] border ${formTouched && !isEmailValid ? "border-[#DC2626] focus:ring-[#DC2626]/20" : "border-[#E5E7EB] focus:ring-[#DC2626]/10"} rounded-xl px-4 py-3 text-sm text-[#111827] focus:outline-none focus:ring-4 transition-all font-semibold`}
-              />
-            </div>
-          </div>
-
-          {/* State Dropdown */}
-          <div className="flex flex-col text-left">
-            <label className="text-xs font-black text-[#111827] mb-1.5 flex items-center gap-1.5">
-              <MapPin className="w-3.5 h-3.5 text-[#DC2626]" /> State / Union Territory <span className="text-[#DC2626]">*</span>
-            </label>
-            <div className="relative">
-              <select
-                required
-                value={state}
-                onChange={(e) => setState(e.target.value)}
-                className={`w-full bg-[#F9FAFB] border ${formTouched && state === "" ? "border-[#DC2626] focus:ring-[#DC2626]/20" : "border-[#E5E7EB] focus:ring-[#DC2626]/10"} rounded-xl px-4 py-3 text-sm text-[#111827] focus:outline-none focus:ring-4 transition-all font-semibold appearance-none cursor-pointer`}
-              >
-                <option value="" disabled hidden>Select your state</option>
-                {indianStates.map((st, idx) => (
-                  <option key={idx} value={st}>{st}</option>
-                ))}
-              </select>
-              <div className="absolute right-4 top-1/2 -translate-y-1/2 pointer-events-none text-gray-500">
-                <svg className="w-4 h-4" fill="none" stroke="currentColor" strokeWidth="2.5" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" d="M19 9l-7 7-7-7" />
-                </svg>
+          {showBasicsStep && (
+            <>
+              {/* Name Field */}
+              <div className="flex flex-col text-left">
+                <label className="text-xs font-black text-[#111827] mb-1.5 flex items-center gap-1.5">
+                  <User className="w-3.5 h-3.5 text-[#DC2626]" /> Full Name <span className="text-[#DC2626]">*</span>
+                </label>
+                <div className="relative">
+                  <input
+                    type="text"
+                    required
+                    value={name}
+                    onChange={handleNameChange}
+                    placeholder="Enter your name"
+                    className={`w-full bg-[#F9FAFB] border ${formTouched && name.trim().length === 0 ? "border-[#DC2626] focus:ring-[#DC2626]/20" : "border-[#E5E7EB] focus:ring-[#DC2626]/10"} rounded-xl px-4 py-3 text-sm text-[#111827] focus:outline-none focus:ring-4 transition-all font-semibold`}
+                  />
+                </div>
               </div>
-            </div>
-          </div>
 
-          {/* Recovery Type Dropdown */}
-          <div className="flex flex-col text-left">
-            <label className="text-xs font-black text-[#111827] mb-1.5 flex items-center gap-1.5">
-              <Banknote className="w-3.5 h-3.5 text-[#DC2626]" /> What do you wish to recover? <span className="text-[#DC2626]">*</span>
-            </label>
-            <div className="relative">
-              <select
-                required
-                value={recoveryType}
-                onChange={(e) => setRecoveryType(e.target.value)}
-                className={`w-full bg-[#F9FAFB] border ${formTouched && recoveryType === "" ? "border-[#DC2626] focus:ring-[#DC2626]/20" : "border-[#E5E7EB] focus:ring-[#DC2626]/10"} rounded-xl px-4 py-3 text-sm text-[#111827] focus:outline-none focus:ring-4 transition-all font-semibold appearance-none cursor-pointer`}
-              >
-                <option value="" disabled hidden>Select recovery type</option>
-                {RECOVERY_TYPES.map((t) => (
-                  <option key={t.value} value={t.value}>{t.label}</option>
-                ))}
-              </select>
-              <div className="absolute right-4 top-1/2 -translate-y-1/2 pointer-events-none text-gray-500">
-                <svg className="w-4 h-4" fill="none" stroke="currentColor" strokeWidth="2.5" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" d="M19 9l-7 7-7-7" />
-                </svg>
+              {/* Phone Field */}
+              <div className="flex flex-col text-left">
+                <label className="text-xs font-black text-[#111827] mb-1.5 flex items-center gap-1.5">
+                  <Phone className="w-3.5 h-3.5 text-[#DC2626]" /> Phone Number <span className="text-[#DC2626]">*</span>
+                </label>
+                <div className="relative">
+                  <input
+                    type="tel"
+                    required
+                    value={phone}
+                    onChange={handlePhoneChange}
+                    placeholder={phone.startsWith("0") ? "11-digit mobile number (e.g. 098...)" : "10-digit mobile number"}
+                    className={`w-full bg-[#F9FAFB] border ${formTouched && !isPhoneValid ? "border-[#DC2626] focus:ring-[#DC2626]/20" : "border-[#E5E7EB] focus:ring-[#DC2626]/10"} rounded-xl px-4 py-3 text-sm text-[#111827] focus:outline-none focus:ring-4 transition-all font-semibold`}
+                  />
+                </div>
               </div>
-            </div>
-            {oppositionCount > 1 && (
-              <p className="text-[11px] text-slate-500 font-semibold mt-1.5">
-                Recovering from multiple parties for different reasons? Pick the main one — you can set a separate type for each party later.
-              </p>
-            )}
-          </div>
+            </>
+          )}
 
-          {/* Opposition Count Dropdown */}
-          <div className="flex flex-col text-left">
-            <label className="text-xs font-black text-[#111827] mb-1.5 flex items-center gap-1.5">
-              <Shield className="w-3.5 h-3.5 text-[#DC2626]" /> Number of Opposing Parties <span className="text-[#DC2626]">*</span>
-            </label>
-            <div className="relative">
-              <select
-                required
-                value={oppositionCount}
-                onChange={(e) => setOppositionCount(Number(e.target.value))}
-                className="w-full bg-[#F9FAFB] border border-[#E5E7EB] focus:ring-[#DC2626]/10 rounded-xl px-4 py-3 text-sm text-[#111827] focus:outline-none focus:ring-4 transition-all font-semibold appearance-none cursor-pointer"
-              >
-                <option value={1}>1 Party (₹{1 * PRICE_PER_OPPOSITION})</option>
-                <option value={2}>2 Parties (₹{2 * PRICE_PER_OPPOSITION})</option>
-                <option value={3}>3 Parties (₹{3 * PRICE_PER_OPPOSITION})</option>
-                <option value={4}>4 Parties (₹{4 * PRICE_PER_OPPOSITION})</option>
-                <option value={5}>5 Parties (₹{5 * PRICE_PER_OPPOSITION})</option>
-              </select>
-              <div className="absolute right-4 top-1/2 -translate-y-1/2 pointer-events-none text-gray-500">
-                <svg className="w-4 h-4" fill="none" stroke="currentColor" strokeWidth="2.5" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" d="M19 9l-7 7-7-7" />
-                </svg>
+          {showContactStep && (
+            <>
+              {/* Email Field */}
+              <div className="flex flex-col text-left">
+                <label className="text-xs font-black text-[#111827] mb-1.5 flex items-center gap-1.5">
+                  <Mail className="w-3.5 h-3.5 text-[#DC2626]" /> Email Address <span className="text-[#DC2626]">*</span>
+                </label>
+                <div className="relative">
+                  <input
+                    type="email"
+                    required
+                    value={email}
+                    onChange={(e) => setEmail(e.target.value)}
+                    placeholder="name@example.com"
+                    className={`w-full bg-[#F9FAFB] border ${formTouched && !isEmailValid ? "border-[#DC2626] focus:ring-[#DC2626]/20" : "border-[#E5E7EB] focus:ring-[#DC2626]/10"} rounded-xl px-4 py-3 text-sm text-[#111827] focus:outline-none focus:ring-4 transition-all font-semibold`}
+                  />
+                </div>
               </div>
-            </div>
-          </div>
 
-          <PhysicalDispatchChoice
-            value={physicalDispatch}
-            onChange={setPhysicalDispatch}
-            oppositionCount={oppositionCount}
-            showError={formTouched && physicalDispatch === null}
-          />
+              {/* State Dropdown */}
+              <div className="flex flex-col text-left">
+                <label className="text-xs font-black text-[#111827] mb-1.5 flex items-center gap-1.5">
+                  <MapPin className="w-3.5 h-3.5 text-[#DC2626]" /> State / Union Territory <span className="text-[#DC2626]">*</span>
+                </label>
+                <div className="relative">
+                  <select
+                    required
+                    value={state}
+                    onChange={(e) => setState(e.target.value)}
+                    className={`w-full bg-[#F9FAFB] border ${formTouched && state === "" ? "border-[#DC2626] focus:ring-[#DC2626]/20" : "border-[#E5E7EB] focus:ring-[#DC2626]/10"} rounded-xl px-4 py-3 text-sm text-[#111827] focus:outline-none focus:ring-4 transition-all font-semibold appearance-none cursor-pointer`}
+                  >
+                    <option value="" disabled hidden>Select your state</option>
+                    {indianStates.map((st, idx) => (
+                      <option key={idx} value={st}>{st}</option>
+                    ))}
+                  </select>
+                  <div className="absolute right-4 top-1/2 -translate-y-1/2 pointer-events-none text-gray-500">
+                    <svg className="w-4 h-4" fill="none" stroke="currentColor" strokeWidth="2.5" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" d="M19 9l-7 7-7-7" />
+                    </svg>
+                  </div>
+                </div>
+              </div>
+            </>
+          )}
+
+          {showBasicsStep && (
+            <>
+              {/* Recovery Type Dropdown */}
+              <div className="flex flex-col text-left">
+                <label className="text-xs font-black text-[#111827] mb-1.5 flex items-center gap-1.5">
+                  <Banknote className="w-3.5 h-3.5 text-[#DC2626]" /> What do you wish to recover? <span className="text-[#DC2626]">*</span>
+                </label>
+                <div className="relative">
+                  <select
+                    required
+                    value={recoveryType}
+                    onChange={(e) => setRecoveryType(e.target.value)}
+                    className={`w-full bg-[#F9FAFB] border ${formTouched && recoveryType === "" ? "border-[#DC2626] focus:ring-[#DC2626]/20" : "border-[#E5E7EB] focus:ring-[#DC2626]/10"} rounded-xl px-4 py-3 text-sm text-[#111827] focus:outline-none focus:ring-4 transition-all font-semibold appearance-none cursor-pointer`}
+                  >
+                    <option value="" disabled hidden>Select recovery type</option>
+                    {RECOVERY_TYPES.map((t) => (
+                      <option key={t.value} value={t.value}>{t.label}</option>
+                    ))}
+                  </select>
+                  <div className="absolute right-4 top-1/2 -translate-y-1/2 pointer-events-none text-gray-500">
+                    <svg className="w-4 h-4" fill="none" stroke="currentColor" strokeWidth="2.5" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" d="M19 9l-7 7-7-7" />
+                    </svg>
+                  </div>
+                </div>
+                {oppositionCount > 1 && (
+                  <p className="text-[11px] text-slate-500 font-semibold mt-1.5">
+                    Recovering from multiple parties for different reasons? Pick the main one — you can set a separate type for each party later.
+                  </p>
+                )}
+              </div>
+            </>
+          )}
+
+          {!isQuick && (
+            <>
+              {/* Opposition Count Dropdown */}
+              <div className="flex flex-col text-left">
+                <label className="text-xs font-black text-[#111827] mb-1.5 flex items-center gap-1.5">
+                  <Shield className="w-3.5 h-3.5 text-[#DC2626]" /> Number of Opposing Parties <span className="text-[#DC2626]">*</span>
+                </label>
+                <div className="relative">
+                  <select
+                    required
+                    value={oppositionCount}
+                    onChange={(e) => setOppositionCount(Number(e.target.value))}
+                    className="w-full bg-[#F9FAFB] border border-[#E5E7EB] focus:ring-[#DC2626]/10 rounded-xl px-4 py-3 text-sm text-[#111827] focus:outline-none focus:ring-4 transition-all font-semibold appearance-none cursor-pointer"
+                  >
+                    <option value={1}>1 Party (₹{1 * PRICE_PER_OPPOSITION})</option>
+                    <option value={2}>2 Parties (₹{2 * PRICE_PER_OPPOSITION})</option>
+                    <option value={3}>3 Parties (₹{3 * PRICE_PER_OPPOSITION})</option>
+                    <option value={4}>4 Parties (₹{4 * PRICE_PER_OPPOSITION})</option>
+                    <option value={5}>5 Parties (₹{5 * PRICE_PER_OPPOSITION})</option>
+                  </select>
+                  <div className="absolute right-4 top-1/2 -translate-y-1/2 pointer-events-none text-gray-500">
+                    <svg className="w-4 h-4" fill="none" stroke="currentColor" strokeWidth="2.5" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" d="M19 9l-7 7-7-7" />
+                    </svg>
+                  </div>
+                </div>
+              </div>
+            </>
+          )}
+
+          {showContactStep && (
+            <>
+              <PhysicalDispatchChoice
+                value={physicalDispatch}
+                onChange={setPhysicalDispatch}
+                oppositionCount={oppositionCount}
+                showError={formTouched && physicalDispatch === null}
+              />
+            </>
+          )}
 
           <div className="mt-2">
             <button
@@ -619,6 +661,11 @@ export const RecoveryForm = () => {
                   <Loader2 className="w-4 h-4 animate-spin" />
                   Sending OTP...
                 </>
+              ) : isQuick && quickStep === 1 ? (
+                <>
+                  Continue
+                  <ArrowRight className="w-4 h-4" />
+                </>
               ) : (
                 <>
                   <Shield className="w-4 h-4" />
@@ -626,6 +673,18 @@ export const RecoveryForm = () => {
                 </>
               )}
             </button>
+            {isQuick && quickStep === 2 && (
+              <button
+                type="button"
+                onClick={() => {
+                  setFormTouched(false);
+                  setQuickStep(1);
+                }}
+                className="w-full text-xs font-bold text-slate-500 hover:text-[#DC2626] flex items-center justify-center gap-1.5 transition-colors mt-3"
+              >
+                <ArrowLeft className="w-3.5 h-3.5" /> Back
+              </button>
+            )}
           </div>
           
           <p className="text-[10px] sm:text-[11px] text-center text-slate-500 font-semibold mt-2 px-1 leading-relaxed">

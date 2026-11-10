@@ -64,6 +64,7 @@ export async function GET(
         email: verificationDoc.email,
         phone: verificationDoc.phone,
         state: verificationDoc.state,
+        attribution: verificationDoc.attribution || existingPaymentByPhone?.attribution || null,
         oppositionCount: Number(verificationDoc.oppositionCount) || 1,
         physicalDispatch: verificationDoc.physicalDispatch === true,
         verified: true,

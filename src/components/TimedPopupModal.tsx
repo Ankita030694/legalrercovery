@@ -29,7 +29,8 @@ export default function TimedPopupModal() {
       pathname.startsWith("/payment-cancelled") ||
       pathname.startsWith("/payment-failure") ||
       pathname.startsWith("/login") ||
-      pathname.startsWith("/email-landing");
+      pathname.startsWith("/email-landing") ||
+      pathname.startsWith("/recover-my-money");
 
     if (isExcluded) {
       return;
@@ -86,7 +87,8 @@ export default function TimedPopupModal() {
     pathname.startsWith("/payment-cancelled") ||
     pathname.startsWith("/payment-failure") ||
     pathname.startsWith("/login") ||
-    pathname.startsWith("/email-landing");
+    pathname.startsWith("/email-landing") ||
+    pathname.startsWith("/recover-my-money");
 
   if (isExcluded) return null;
 

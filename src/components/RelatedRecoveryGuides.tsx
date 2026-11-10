@@ -906,7 +906,8 @@ export default function RelatedRecoveryGuides({
     pathname.startsWith("/authority") ||
     pathname.startsWith("/notice-dispatch") ||
     pathname.startsWith("/payment") ||
-    pathname.startsWith("/resume")
+    pathname.startsWith("/resume") ||
+    pathname.startsWith("/recover-my-money")
   ) {
     return null;
   }

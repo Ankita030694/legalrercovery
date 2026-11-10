@@ -31,7 +31,7 @@ export default function Navbar() {
     });
   }, []);
 
-  if (pathname?.startsWith("/user") || pathname?.startsWith("/authority") || pathname?.startsWith("/notice-dispatch")) {
+  if (pathname?.startsWith("/user") || pathname?.startsWith("/authority") || pathname?.startsWith("/notice-dispatch") || pathname?.startsWith("/recover-my-money")) {
     return null;
   }
 

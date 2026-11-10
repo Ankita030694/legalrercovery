@@ -18,6 +18,7 @@ import {
   runAutomatedFunnelQueue,
   startWave1ForAllUnpaidLeads,
 } from "@/lib/funnel-dispatcher";
+import { ATTRIBUTION_CHANNELS } from "@/lib/attribution";
 
 export const dynamic = "force-dynamic";
 
@@ -43,6 +44,13 @@ function buildSearchFilter(search: string): Record<string, unknown> {
   });
 
   return perWord.length === 1 ? perWord[0] : { $and: perWord };
+}
+
+function buildSourceFilter(source: string): Record<string, unknown> {
+  if (source === "paid") return { "attribution.channel": { $regex: "^paid_" } };
+  if (source === "unknown") return { "attribution.channel": { $exists: false } };
+  if (ATTRIBUTION_CHANNELS.some((c) => c.value === source)) return { "attribution.channel": source };
+  return {};
 }
 
 function mergeFilters(...parts: Record<string, unknown>[]): Record<string, unknown> {
@@ -214,6 +222,7 @@ function mapDoc(doc: any, status: string, settings: FunnelSettings) {
     clickCount,
     linkClickedAt,
     verifiedVia: doc.verifiedVia || (status === "pending_verification" ? null : "otp"),
+    attribution: doc.attribution || null,
     currentWave,
     waves: {
       "1": w1,
@@ -304,6 +313,7 @@ export async function GET(req: NextRequest) {
     );
     const status = url.searchParams.get("status") || "all";
     const search = (url.searchParams.get("search") || "").trim();
+    const sourceFilter = buildSourceFilter(url.searchParams.get("source") || "all");
 
     // Automatically remove paid users' stale pending entries & deduplicate unpaid leads on initial page load
     if (page === 1 && !search) {
@@ -413,7 +423,7 @@ export async function GET(req: NextRequest) {
     ) {
       queries.push({
         name: "pending_verification",
-        filter: mergeFilters(retargetedExtraFilter, searchFilter),
+        filter: mergeFilters(retargetedExtraFilter, searchFilter, sourceFilter),
         statusLabel: "pending_verification",
       });
     }
@@ -425,7 +435,7 @@ export async function GET(req: NextRequest) {
     ) {
       queries.push({
         name: "pending_payment",
-        filter: mergeFilters(retargetedExtraFilter, searchFilter),
+        filter: mergeFilters(retargetedExtraFilter, searchFilter, sourceFilter),
         statusLabel: "pending_payment",
       });
     }
@@ -440,7 +450,8 @@ export async function GET(req: NextRequest) {
         filter: mergeFilters(
           { isPaid: true },
           retargetedExtraFilter,
-          searchFilter
+          searchFilter,
+          sourceFilter
         ),
         statusLabel: "completed",
       });
