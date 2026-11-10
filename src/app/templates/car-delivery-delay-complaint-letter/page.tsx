@@ -516,7 +516,7 @@ export default function CarDeliveryDelayComplaintLetterPage() {
                   id="heading-price-hike-protection-title"
                   className="text-xl sm:text-2xl font-bold text-slate-900 tracking-tight mb-4"
                 >
-                  Price Hike Immunity: Can the Dealer Force You to Pay Post-Booking Escalations?
+                  Price Hike Immunity: Can Dealers Demand Post-Booking Escalations?
                 </h2>
                 <div className="bg-white border border-slate-200 rounded-xl p-6 shadow-xs text-sm text-slate-700 leading-relaxed space-y-4">
                   <p>
@@ -606,7 +606,7 @@ export default function CarDeliveryDelayComplaintLetterPage() {
                   id="heading-worked-example-title"
                   className="text-xl sm:text-2xl font-bold text-slate-900 tracking-tight mb-4"
                 >
-                  Worked Case Example: ₹16.5L SUV Booking Delay &amp; Full Financial Recovery
+                  Worked Case Example: ₹16.5L SUV Booking Delay and Full Recovery
                 </h2>
                 <div className="bg-white border border-slate-200 rounded-xl p-5 sm:p-6 shadow-xs text-sm text-slate-700 leading-relaxed space-y-4">
                   <div className="bg-slate-50 border-l-4 border-slate-700 p-4 rounded-r-lg">
@@ -737,7 +737,7 @@ export default function CarDeliveryDelayComplaintLetterPage() {
                   id="heading-case-citations-title"
                   className="text-xl sm:text-2xl font-bold text-slate-900 tracking-tight mb-4"
                 >
-                  Consumer Court Precedents: Judicial Rulings on Delayed Vehicle Delivery
+                  Consumer Court Precedents on Delayed Vehicle Delivery
                 </h2>
                 <div className="space-y-6">
                   {CASE_CITATIONS.map((cit, idx) => (

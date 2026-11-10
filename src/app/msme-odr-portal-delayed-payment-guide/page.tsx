@@ -647,7 +647,7 @@ export default function MsmeOdrPortalGuidePage() {
                   id="heading-workflow-diagram-title"
                   className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight"
                 >
-                  Visual Workflow: How an Unpaid Invoice Moves Through the MSME ODR Portal to Final Award
+                  Visual Workflow: Moving Through MSME ODR Portal to Award
                 </h2>
                 <p className="text-xs sm:text-sm md:text-base text-slate-700 leading-relaxed">
                   The diagram below illustrates the complete statutory escalation architecture from the day goods or services are delivered to final bank attachment or 75% pre-deposit lock under the MSMED Act, 2006:
@@ -801,7 +801,7 @@ export default function MsmeOdrPortalGuidePage() {
                   id="heading-step-by-step-process-title"
                   className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight"
                 >
-                  Step-by-Step MSME ODR Portal Process: From Registration to Arbitral Award
+                  Step-by-Step MSME ODR Process: Registration to Arbitral Award
                 </h2>
                 <p className="text-xs sm:text-sm md:text-base text-slate-700 leading-relaxed">
                   Follow this 6-stage operational sequence to register, file your delayed payment complaint, navigate online mediation and arbitration, and execute your final award:
@@ -918,7 +918,7 @@ export default function MsmeOdrPortalGuidePage() {
                   id="heading-case-status-login-title"
                   className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight"
                 >
-                  How to Check MSME ODR Portal Case Status, Advocate Login &amp; Official Helpline
+                  Checking MSME ODR Case Status, Advocate Login and Helpline
                 </h2>
                 <p className="text-xs sm:text-sm md:text-base text-slate-700 leading-relaxed">
                   Suppliers and authorized legal counsel frequently need to monitor docket movement, check whether notices have been served on the respondent buyer, or contact the Ministry helpdesk for technical OTP errors:
@@ -1002,7 +1002,7 @@ export default function MsmeOdrPortalGuidePage() {
                   id="heading-interest-43bh-leverage-title"
                   className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight"
                 >
-                  Section 16 Compound Interest &amp; Section 43B(h) Tax Disallowance: Your Double Financial Leverage
+                  Section 16 Interest &amp; Section 43B(h): Double Financial Leverage
                 </h2>
                 <p className="text-xs sm:text-sm md:text-base text-slate-700 leading-relaxed">
                   Indian law gives Micro and Small Enterprises two extraordinary statutory weapons that ordinary civil creditors do not possess. Understanding how these two provisions interact is critical to drafting both your pre-litigation legal notice and your MSME ODR statement of claim:
@@ -1074,7 +1074,7 @@ export default function MsmeOdrPortalGuidePage() {
                   id="heading-supreme-court-rulings-title"
                   className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight"
                 >
-                  Landmark Supreme Court Judgments on MSME Delayed Payment &amp; ODR Jurisdiction
+                  Supreme Court Judgments on MSME Delayed Payment and ODR
                 </h2>
                 <p className="text-xs sm:text-sm md:text-base text-slate-700 leading-relaxed">
                   Cite these four binding Supreme Court of India precedents in your legal demand notice and MSME ODR Statement of Claim to pre-empt jurisdictional objections from corporate buyers:
@@ -1120,7 +1120,7 @@ export default function MsmeOdrPortalGuidePage() {
                   id="heading-worked-case-study-title"
                   className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight"
                 >
-                  Worked Case Study: Pune Auto-Component Small Enterprise Recovers ₹18,22,600 (Principal + Section 16 Interest)
+                  Case Study: Small Enterprise Recovers ₹18.2L via MSME ODR
                 </h2>
                 <div className="bg-slate-900 text-white rounded-2xl p-5 sm:p-8 shadow-xl space-y-4 sm:space-y-5 w-full overflow-hidden">
                   <div className="flex flex-wrap items-center justify-between gap-2 border-b border-slate-800 pb-3">
@@ -1169,7 +1169,7 @@ export default function MsmeOdrPortalGuidePage() {
                   id="heading-documents-checklist-title"
                   className="text-xl sm:text-2xl font-bold text-slate-900 tracking-tight"
                 >
-                  Mandatory Documents, Affidavit Format &amp; BSA Section 63 Evidence Checklist for MSME ODR Filing
+                  Documents, Affidavit &amp; Evidence Checklist for MSME ODR
                 </h2>
                 <p className="text-xs sm:text-sm text-slate-700 leading-relaxed">
                   Under Section 63 of the Bharatiya Sakshya Adhiniyam, 2023 (BSA), electronic tax records, GST portal filings, and digital delivery proofs are admissible in ODR arbitration. Assemble these 6 mandatory PDF bundles before initiating your MSME ODR reference or{" "}
@@ -1298,7 +1298,7 @@ export default function MsmeOdrPortalGuidePage() {
                     id="heading-faqs-title"
                     className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight"
                   >
-                    Frequently Asked Questions About the MSME ODR Portal &amp; Delayed Payment Complaints
+                    FAQs on the MSME ODR Portal and Delayed Payment Claims
                   </h2>
                   <p className="text-xs font-semibold text-slate-500 mt-1">
                     Authoritative Answers Grounded in MSMED Act Chapter V, Section 43B(h) &amp; Supreme Court Rulings
@@ -1335,7 +1335,7 @@ export default function MsmeOdrPortalGuidePage() {
                   id="heading-sources-title"
                   className="text-lg sm:text-xl font-bold text-slate-900 tracking-tight"
                 >
-                  Primary Statutory Authorities, MSMED Act Citations &amp; Official Portal References
+                  Statutory Authorities, MSMED Act Citations and References
                 </h2>
                 <ol className="sources list-decimal list-inside space-y-2 text-xs sm:text-sm text-slate-600">
                   {PRIMARY_SOURCES.map((source, idx) => (

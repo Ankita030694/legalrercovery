@@ -388,7 +388,7 @@ export default function InsuranceDebitPage() {
                   id="heading-statutory-framework-title"
                   className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight"
                 >
-                  Binding RBI &amp; IRDAI Statutory Rules Governing Insurance Auto-Debits
+                  RBI and IRDAI Statutory Rules Governing Insurance Auto-Debits
                 </h2>
                 <p className="text-xs sm:text-sm md:text-base text-slate-700 leading-relaxed">
                   Indian financial jurisprudence strictly demarcates the fiduciary boundary between a banking institution and third-party insurance companies. When an insurance premium auto-debited without consent appears on your account statement, the debit violates multiple statutory codes:

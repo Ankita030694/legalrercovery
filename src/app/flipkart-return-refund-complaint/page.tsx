@@ -350,7 +350,7 @@ export default function FlipkartRefundComplaintPage() {
                   id="heading-comparison-table"
                   className="text-2xl sm:text-3xl font-black text-slate-900 tracking-tight"
                 >
-                  Who Is Legally Liable for Flipkart Refund Failures: Platform, Seller, or Bank?
+                  Who Is Liable for Flipkart Refund Failures: Platform or Seller?
                 </h2>
                 <p className="text-slate-700 text-sm sm:text-base leading-relaxed">
                   Under the Consumer Protection (E-Commerce) Rules, 2020, marketplace platforms share joint liability with merchants when logistics, payment processing, or fulfillment are managed through the platform:
@@ -467,7 +467,7 @@ export default function FlipkartRefundComplaintPage() {
                   id="heading-flow-diagram"
                   className="text-2xl sm:text-3xl font-black text-slate-900 tracking-tight"
                 >
-                  Where Does Your Money Get Stuck? The Flipkart Refund Reconciliation Flow
+                  Where Money Gets Stuck: Flipkart Refund Reconciliation Flow
                 </h2>
                 <p className="text-slate-700 text-sm sm:text-base leading-relaxed">
                   Understanding how consumer payments move through nodal escrow accounts reveals why support chats stall and how advocate notices force resolution:
@@ -719,7 +719,7 @@ export default function FlipkartRefundComplaintPage() {
                   id="heading-commission-orders"
                   className="text-2xl sm:text-3xl font-black text-slate-900 tracking-tight"
                 >
-                  What Have Consumer Courts Awarded Against Flipkart in Return and Refund Disputes?
+                  Consumer Court Orders Against Flipkart in Return Disputes
                 </h2>
                 <p className="text-slate-700 text-sm sm:text-base leading-relaxed">
                   Consumer commissions consistently reject Flipkart’s intermediary safe harbour claims under Section 79 of the IT Act, awarding full refunds and substantial compensation:
@@ -849,7 +849,7 @@ export default function FlipkartRefundComplaintPage() {
                   id="heading-worked-example"
                   className="text-2xl sm:text-3xl font-black text-slate-900 tracking-tight"
                 >
-                  How Did a Consumer Recover ₹54,999 from Flipkart? An Illustrative Worked Example
+                  Worked Example: How a Consumer Recovered ₹54,999 from Flipkart
                 </h2>
                 <p className="text-slate-700 text-sm sm:text-base leading-relaxed">
                   This case study demonstrates how statutory pre-litigation notices resolve deadlocked delivery disputes without protracted courtroom trials:
@@ -905,7 +905,7 @@ export default function FlipkartRefundComplaintPage() {
                   id="heading-evidence-checklist"
                   className="text-2xl sm:text-3xl font-black text-slate-900 tracking-tight"
                 >
-                  What Evidence Do You Need to Overcome Flipkart&apos;s &apos;Package Verified&apos; Defence?
+                  Evidence Needed to Overcome Flipkart Package Verified Defense
                 </h2>
                 <p className="text-slate-700 text-sm sm:text-base leading-relaxed">
                   Flipkart typically argues that orders leave merchant facilities in tamper-evident packaging. Compile this 6-point evidence file compliant with Section 63 of the Bharatiya Sakshya Adhiniyam, 2023:
@@ -977,7 +977,7 @@ export default function FlipkartRefundComplaintPage() {
                   id="heading-honest-scope"
                   className="text-2xl sm:text-3xl font-black text-slate-900 tracking-tight"
                 >
-                  What Are the Honest Boundaries of LegalRecovery&apos;s Services for Flipkart Disputes?
+                  Scope of Legal Remedies for Flipkart Disputes in India
                 </h2>
                 <p className="text-slate-700 text-sm sm:text-base leading-relaxed">
                   Clear expectations are essential in consumer advocacy. Understand what the legal notice service covers:
@@ -1022,7 +1022,7 @@ export default function FlipkartRefundComplaintPage() {
                   id="heading-faqs"
                   className="text-2xl sm:text-3xl font-black text-slate-900 tracking-tight"
                 >
-                  Frequently Asked Questions About Flipkart Returns, Refunds, and Legal Recourse
+                  FAQs on Flipkart Returns, Refunds and Legal Notice Options
                 </h2>
                 <p className="text-slate-700 text-sm sm:text-base leading-relaxed">
                   Statutory answers to frequent questions regarding refund delays and return rejections on Flipkart:
@@ -1051,7 +1051,7 @@ export default function FlipkartRefundComplaintPage() {
                   id="heading-sources"
                   className="text-xl sm:text-2xl font-bold text-slate-900 tracking-tight"
                 >
-                  Statutory References and Primary Legal Authorities for E-Commerce Claims
+                  Statutory References for E-Commerce Consumer Claims
                 </h2>
                 <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
                   Every legal position and statutory deadline stated in this guide is verified against primary legislative sources and court judgments:

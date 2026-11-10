@@ -341,7 +341,7 @@ export default function NationalConsumerHelplinePage() {
                     id="heading-scenarios-title"
                     className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight"
                   >
-                    Common Consumer Dispute Scenarios: Outcome Odds &amp; Statutory Next Steps
+                    Consumer Dispute Scenarios: Outcome Odds and Statutory Next Steps
                   </h2>
                   <span className="text-xs font-bold text-slate-500 uppercase tracking-wider">
                     Archetype G2 Scenario Matrix
@@ -399,7 +399,7 @@ export default function NationalConsumerHelplinePage() {
                   id="heading-orders-overview-title"
                   className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight"
                 >
-                  Why an NCH 1915 Docket Permanently Strengthens Your Legal Notice and Court Case
+                  Why an NCH 1915 Docket Strengthens Your Legal Notice and Claim
                 </h2>
                 <p className="text-sm sm:text-base text-slate-700 leading-relaxed">
                   Every day, aggrieved consumers across India face unanswered refund requests, defective consumer goods, and arbitrary service denials from corporate brands, telecom operators, and online marketplaces. When you lodge a grievance on the National Consumer Helpline (via dialing 1915 or registering on the INGRAM portal at consumerhelpline.gov.in), you obtain a certified 7-digit government tracking docket number.
@@ -533,7 +533,7 @@ export default function NationalConsumerHelplinePage() {
                     id="heading-escalation-flow-title"
                     className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight"
                   >
-                    The Pre-Notice Escalation Architecture: From 1915 Helpline to Court Decree
+                    Pre-Notice Escalation Rail: From 1915 Helpline to Court Decree
                   </h2>
                   <span className="text-xs font-bold text-slate-500 uppercase tracking-wider">
                     Statutory Roadmap
@@ -623,7 +623,7 @@ export default function NationalConsumerHelplinePage() {
                   id="heading-playbook-title"
                   className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight"
                 >
-                  The 5-Step Action Playbook: How to Execute Pre-Notice Grievance Escalation
+                  5-Step Playbook: Executing Pre-Notice Grievance Escalation
                 </h2>
                 <p className="text-sm sm:text-base text-slate-700 leading-relaxed">
                   Follow these exact procedural steps to ensure your consumer claim remains legally bulletproof from day one:
@@ -776,7 +776,7 @@ export default function NationalConsumerHelplinePage() {
                     id="heading-problem-picker-title"
                     className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight"
                   >
-                    Sector-Specific Dispute Navigator: How NCH and Notices Operate Across Industries
+                    Dispute Navigator: How NCH and Legal Notices Work Across Sectors
                   </h2>
                   <span className="text-xs font-bold text-slate-500 uppercase tracking-wider">
                     Interactive Sector Tabs
@@ -796,7 +796,7 @@ export default function NationalConsumerHelplinePage() {
                     id="heading-worked-example-title"
                     className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight"
                   >
-                    Worked Recovery Example: ₹46,500 Smart TV Delivered Damaged &amp; NCH Docket Ignored
+                    Worked Example: Damaged Smart TV Delivered and Docket Ignored
                   </h2>
                   <span className="text-xs font-bold text-slate-500 uppercase tracking-wider">
                     Concrete Case Study
@@ -866,7 +866,7 @@ export default function NationalConsumerHelplinePage() {
                     id="heading-mistakes-title"
                     className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight"
                   >
-                    Fatal Mistakes Consumers Make When Using the National Consumer Helpline
+                    Fatal Mistakes When Using the National Consumer Helpline (1915)
                   </h2>
                   <span className="text-xs font-bold text-slate-500 uppercase tracking-wider">
                     Compliance Pitfalls
@@ -1067,7 +1067,7 @@ export default function NationalConsumerHelplinePage() {
                     id="heading-faqs-title"
                     className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight"
                   >
-                    Frequently Asked Questions on National Consumer Helpline (1915) &amp; Legal Notices
+                    FAQs on National Consumer Helpline (1915) and Legal Notices
                   </h2>
                   <span className="text-xs font-bold text-slate-500 uppercase tracking-wider">
                     Statutory FAQ

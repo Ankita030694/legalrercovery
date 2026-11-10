@@ -153,7 +153,7 @@ export default function Section43bhMsmePaymentRulePage() {
     "@context": "https://schema.org",
     "@type": "Article",
     "@id": `${PAGE_URL}#article`,
-    headline: "How Section 43B(h) Turns Late MSME Payments Into a Tax Problem for Buyers",
+    headline: "How Section 43B(h) Turns Late MSME Payments Into a Tax Problem",
     description:
       "Buyers lose the tax deduction if MSE dues stay unpaid past 45 days. How suppliers can use Section 43B(h) as payment leverage.",
     url: PAGE_URL,
@@ -246,7 +246,7 @@ export default function Section43bhMsmePaymentRulePage() {
             </div>
 
             <h1 className="text-2xl sm:text-4xl md:text-5xl font-extrabold tracking-tight text-white leading-[1.15] max-w-4xl">
-              How Section 43B(h) Turns Late MSME Payments Into a Tax Problem for Buyers
+              How Section 43B(h) Turns Late MSME Payments Into a Tax Problem
             </h1>
 
             {/* 40-60 Word Statutory Quick Answer Box */}
@@ -356,7 +356,7 @@ export default function Section43bhMsmePaymentRulePage() {
                   id="heading-what-is-43bh-title"
                   className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight"
                 >
-                  1. What Does Section 43B(h) of the Income-tax Act State About Unpaid MSME Dues?
+                  1. What Does Section 43B(h) State About Unpaid MSME Dues?
                 </h2>
 
                 <div className="p-4 rounded-xl bg-white border-l-4 border-[#C92A2A] border border-slate-200 shadow-xs">
@@ -388,7 +388,7 @@ export default function Section43bhMsmePaymentRulePage() {
                   id="heading-15-vs-45-days-title"
                   className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight"
                 >
-                  2. When Is the Payment Deadline 15 Days vs 45 Days Under Section 15 of the MSMED Act?
+                  2. Payment Deadlines: 15 vs 45 Days Under Section 15 MSMED
                 </h2>
 
                 <div className="p-4 rounded-xl bg-white border-l-4 border-[#C92A2A] border border-slate-200 shadow-xs">
@@ -450,7 +450,7 @@ export default function Section43bhMsmePaymentRulePage() {
                   id="heading-march-31-trap-title"
                   className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight"
                 >
-                  3. What Happens If an Unpaid Micro or Small Enterprise Invoice Crosses March 31?
+                  3. What Happens If an Unpaid MSE Invoice Crosses March 31?
                 </h2>
 
                 <div className="p-4 rounded-xl bg-white border-l-4 border-[#C92A2A] border border-slate-200 shadow-xs">
@@ -487,7 +487,7 @@ export default function Section43bhMsmePaymentRulePage() {
                   id="heading-proviso-139-exclusion-title"
                   className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight"
                 >
-                  4. Why Does the Section 139(1) Return-Filing Grace Period Not Save Buyers Under Clause (h)?
+                  4. Why Section 139(1) Grace Period Fails Under Clause (h)
                 </h2>
 
                 <div className="p-4 rounded-xl bg-white border-l-4 border-[#C92A2A] border border-slate-200 shadow-xs">
@@ -519,7 +519,7 @@ export default function Section43bhMsmePaymentRulePage() {
                   id="heading-eligible-suppliers-title"
                   className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight"
                 >
-                  5. Which Suppliers Qualify Under Section 43B(h): Micro, Small, Medium Enterprises, or Traders?
+                  5. Who Qualifies Under 43B(h): MSE vs Medium and Traders
                 </h2>
 
                 <div className="p-4 rounded-xl bg-white border-l-4 border-[#C92A2A] border border-slate-200 shadow-xs">
@@ -589,7 +589,7 @@ export default function Section43bhMsmePaymentRulePage() {
                   id="heading-capex-gst-presumptive-title"
                   className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight"
                 >
-                  6. Does Section 43B(h) Disallow Capital Expenditure, GST Components, or Presumptive Tax Buyers?
+                  6. Does 43B(h) Disallow Capex, GST or Presumptive Buyers?
                 </h2>
 
                 <div className="p-4 rounded-xl bg-white border-l-4 border-[#C92A2A] border border-slate-200 shadow-xs">
@@ -643,7 +643,7 @@ export default function Section43bhMsmePaymentRulePage() {
                   id="heading-section-16-23-interest-title"
                   className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight"
                 >
-                  7. Can a Buyer Deduct MSMED Section 16 Compound Interest Under Section 23?
+                  7. Can a Buyer Deduct Section 16 Compound Interest?
                 </h2>
 
                 <div className="p-4 rounded-xl bg-white border-l-4 border-[#C92A2A] border border-slate-200 shadow-xs">
@@ -677,7 +677,7 @@ export default function Section43bhMsmePaymentRulePage() {
                   id="heading-form-3cd-clause-22-title"
                   className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight"
                 >
-                  8. How Do Statutory Tax Auditors Report Section 43B(h) Defaults in Form 3CD Clause 22?
+                  8. Tax Audit Reporting: Form 3CD Clause 22 Defaults
                 </h2>
 
                 <div className="p-4 rounded-xl bg-white border-l-4 border-[#C92A2A] border border-slate-200 shadow-xs">
@@ -712,7 +712,7 @@ export default function Section43bhMsmePaymentRulePage() {
                   id="heading-supplier-leverage-title"
                   className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight"
                 >
-                  9. How Can MSME Suppliers Use Section 43B(h) Tax Disallowance as Pre-Audit Legal Notice Leverage?
+                  9. Using Section 43B(h) Disallowance as Legal Notice Leverage
                 </h2>
 
                 <div className="p-4 rounded-xl bg-white border-l-4 border-[#C92A2A] border border-slate-200 shadow-xs">
@@ -766,7 +766,7 @@ export default function Section43bhMsmePaymentRulePage() {
                   id="heading-2026-amendment-odr-title"
                   className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight"
                 >
-                  10. How Do the MSMED (Amendment) Act 2026 and MSME ODR Portal Reinforce the 45-Day Rule?
+                  10. How 2026 MSMED Amendment and ODR Reinforce 45-Day Rule
                 </h2>
 
                 <div className="p-4 rounded-xl bg-white border-l-4 border-[#C92A2A] border border-slate-200 shadow-xs">
@@ -807,7 +807,7 @@ export default function Section43bhMsmePaymentRulePage() {
                   id="heading-eligibility-checker-title"
                   className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight"
                 >
-                  11. Section 43B(h) Eligibility Checker &amp; Buyer Disallowance Scenarios
+                  11. 43B(h) Eligibility Checker &amp; Disallowance Scenarios
                 </h2>
                 <p className="text-xs sm:text-sm text-slate-700 leading-relaxed">
                   Use the interactive diagnostic below or verify the 5-point statutory Yes/No checklist to confirm whether your unpaid invoice triggers Section 43B(h) tax disallowance for your buyer:
@@ -876,7 +876,7 @@ export default function Section43bhMsmePaymentRulePage() {
                   id="heading-statutory-matrix-title"
                   className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight"
                 >
-                  12. Statutory Reference Matrix: Section 43B(h) Deadlines, Tax Impact &amp; MSMED Provisions
+                  12. Statutory Matrix: 43B(h) Deadlines and Tax Impact
                 </h2>
                 <p className="text-xs sm:text-sm text-slate-700 leading-relaxed">
                   The table below consolidates the exact interplay between the Income-tax Act, 1961 and the MSMED Act, 2006 across every payment scenario:
@@ -950,7 +950,7 @@ export default function Section43bhMsmePaymentRulePage() {
                   id="heading-process-flowchart-title"
                   className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight"
                 >
-                  13. Process Flowchart: How a Late MSME Invoice Triggers Tax Disallowance &amp; Legal Recovery
+                  13. Flowchart: Late MSME Invoice to Tax Disallowance
                 </h2>
                 <p className="text-xs sm:text-sm text-slate-700 leading-relaxed">
                   Follow the 5-stage statutory progression from invoice delivery to Section 43B(h) tax disallowance and MSE supplier recovery:
@@ -1147,7 +1147,7 @@ export default function Section43bhMsmePaymentRulePage() {
                   id="heading-worked-calculation-title"
                   className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight"
                 >
-                  14. Worked Calculation: How an Unpaid ₹25,00,000 MSE Invoice Costs a Corporate Buyer ₹7,80,000 in Cash Tax + 3× RBI Interest
+                  14. Calculation: Tax Cost &amp; Interest on Unpaid ₹25L Invoice
                 </h2>
 
                 <div className="bg-slate-900 text-white rounded-2xl p-5 sm:p-8 shadow-xl space-y-4 sm:space-y-5 w-full overflow-hidden">
@@ -1225,7 +1225,7 @@ export default function Section43bhMsmePaymentRulePage() {
                   id="heading-judicial-precedents-title"
                   className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight"
                 >
-                  15. Judicial Precedents Governing MSMED Section 15–23 Overriding Effect and Tax Disallowance
+                  15. Court Precedents: MSMED Overriding Effect and Tax Rules
                 </h2>
                 <p className="text-xs sm:text-sm text-slate-700 leading-relaxed">
                   Indian courts have consistently upheld the mandatory nature of the 15/45-day payment rule, the overriding effect of Sections 15 to 23 of the MSMED Act, and the constitutional validity of linking tax deductions to actual payment under Section 43B:
@@ -1289,7 +1289,7 @@ export default function Section43bhMsmePaymentRulePage() {
                   id="heading-evidence-checklist-title"
                   className="text-xl sm:text-2xl font-bold text-slate-900 tracking-tight"
                 >
-                  16. Supplier Evidence &amp; Compliance Checklist Before Serving a Section 43B(h) Demand Notice
+                  16. Supplier Checklist Before Serving a 43B(h) Demand Notice
                 </h2>
                 <p className="text-xs sm:text-sm text-slate-700 leading-relaxed">
                   Under Section 63 of the Bharatiya Sakshya Adhiniyam, 2023 (BSA), electronic invoices, e-Way bills, and email/WhatsApp acknowledgments are admissible evidence. Assemble these 6 documents before serving your notice:
@@ -1392,7 +1392,7 @@ export default function Section43bhMsmePaymentRulePage() {
                   id="heading-honest-scope-title"
                   className="text-xl sm:text-2xl font-bold text-slate-900 tracking-tight"
                 >
-                  17. Honest Scope: When Section 43B(h) Leverage Works vs When Full Litigation Is Required
+                  17. Honest Scope: Notice Leverage vs Full Civil Litigation
                 </h2>
 
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
@@ -1435,7 +1435,7 @@ export default function Section43bhMsmePaymentRulePage() {
                     id="heading-faqs-title"
                     className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight"
                   >
-                    18. Frequently Asked Questions on Section 43B(h) MSME 45-Day Payment Rule
+                    18. FAQs on Section 43B(h) MSME 45-Day Payment Rule
                   </h2>
                   <p className="text-xs font-semibold text-slate-500 mt-1">
                     Direct Rulebook Answers Grounded in Section 43B(h) Income-tax Act, 1961 &amp; Sections 15–23 MSMED Act, 2006
@@ -1472,7 +1472,7 @@ export default function Section43bhMsmePaymentRulePage() {
                   id="heading-sources-title"
                   className="text-lg sm:text-xl font-bold text-slate-900 tracking-tight"
                 >
-                  19. Primary Statutory Sources, Income-tax Act Citations &amp; MSMED Notifications
+                  19. Primary Statutory Sources and MSMED Notifications
                 </h2>
                 <ol className="sources list-decimal list-inside space-y-2 text-xs sm:text-sm text-slate-600">
                   {PRIMARY_SOURCES.map((source, idx) => (

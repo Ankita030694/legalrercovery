@@ -498,7 +498,7 @@ export default function OnlineGamingWalletBalanceRefundPage() {
                   id="heading-route-notice-title"
                   className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight"
                 >
-                  Route 1 Deep Dive: Statutory Advocate Demand Notice to Gaming Platforms
+                  Route 1: Statutory Advocate Legal Notice to Gaming Platforms
                 </h2>
                 <p className="text-sm sm:text-base text-slate-700 leading-relaxed">
                   Most online gaming companies operate with automated customer support bots that copy-paste pre-written excuses: &quot;Withdrawals are subject to 100% wagering&quot; or &quot;Our team is reviewing your activity.&quot; They do this because customer service agents have no legal authority to override algorithmic wallet restrictions.
@@ -567,7 +567,7 @@ export default function OnlineGamingWalletBalanceRefundPage() {
                   id="heading-route-cyber-title"
                   className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight"
                 >
-                  Route 3 Deep Dive: National Cyber Crime Portal &amp; MeitY GAC Escalation
+                  Route 3: Cyber Crime Portal and MeitY GAC Escalation
                 </h2>
                 <p className="text-sm sm:text-base text-slate-700 leading-relaxed">
                   For unregulated, offshore, or suspicious gaming websites (such as illegal betting applications masquerading as skill games), normal consumer notices may be ignored if the company operates through shell entities. In such circumstances, the dispute enters the realm of cyber financial fraud:
@@ -588,7 +588,7 @@ export default function OnlineGamingWalletBalanceRefundPage() {
                   id="heading-route-civil-title"
                   className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight"
                 >
-                  Route 4 Deep Dive: Summary Civil Suit (Order XXXVII CPC) &amp; Section 316 BNS
+                  Route 4: Summary Suit (Order 37 CPC) and Section 316 BNS
                 </h2>
                 <p className="text-sm sm:text-base text-slate-700 leading-relaxed">
                   For substantial commercial balances (e.g., esports teams, high-stakes tournament winners, or gaming wallet deposits exceeding ₹5 Lakh to ₹20 Lakh), high-velocity civil remedies exist alongside criminal remedies:
@@ -609,7 +609,7 @@ export default function OnlineGamingWalletBalanceRefundPage() {
                   id="heading-legal-framework-title"
                   className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight"
                 >
-                  The Legal Framework: 2025 Online Gaming Act† &amp; Intermediary Obligations
+                  Legal Framework: Online Gaming Rules and Platform Obligations
                 </h2>
                 <p className="text-sm sm:text-base text-slate-700 leading-relaxed">
                   The Indian online gaming ecosystem underwent substantial statutory transformation with the enactment of the Promotion &amp; Regulation of Online Gaming Act 2025† alongside the amended Information Technology (Intermediary Guidelines and Digital Media Ethics Code) Rules. The legal framework establishes three core principles governing player money:
@@ -705,7 +705,7 @@ export default function OnlineGamingWalletBalanceRefundPage() {
                     id="heading-case-digest-title"
                     className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight"
                   >
-                    Landmark Legal Precedents: 4 Verifiable Orders on Gaming Wallet Refunds
+                    Landmark Orders: Judicial Precedents on Gaming Wallet Refunds
                   </h2>
                   <span className="text-xs font-bold text-slate-500 uppercase tracking-wider">
                     Verifiable Judicial Records
@@ -935,7 +935,7 @@ export default function OnlineGamingWalletBalanceRefundPage() {
                   id="heading-evidence-checklist-title"
                   className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight"
                 >
-                  Evidentiary Checklist: What Documents You Need Before Demanding a Refund
+                  Evidence Checklist: Documents Needed for Gaming Wallet Refunds
                 </h2>
                 <p className="text-sm sm:text-base text-slate-700 leading-relaxed">
                   To ensure your statutory demand notice or consumer forum complaint is unassailable, assemble the following evidentiary documentation compliant with Section 63 of the Bharatiya Sakshya Adhiniyam, 2023:

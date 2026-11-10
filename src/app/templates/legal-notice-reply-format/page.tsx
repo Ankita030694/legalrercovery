@@ -727,7 +727,7 @@ export default function LegalNoticeReplyPage() {
                     id="heading-precedents-digest-title"
                     className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight"
                   >
-                    Landmark Precedents Digest: What Indian Courts Have Ruled on Notice Replies
+                    Landmark Precedents Digest: Court Rulings on Legal Notice Replies
                   </h2>
                   <span className="text-xs font-bold text-slate-500 uppercase tracking-wider">
                     Verifiable Court Records
@@ -804,7 +804,7 @@ export default function LegalNoticeReplyPage() {
                   id="heading-worked-example-title"
                   className="text-xl sm:text-2xl font-bold text-slate-900 tracking-tight"
                 >
-                  Worked Case Study: How a Paragraph-by-Paragraph Reply Defeated a Baseless ₹7,50,000 Claim
+                  Worked Example: Rebutting a Baseless ₹7,50,000 Notice Claim
                 </h2>
                 <div className="bg-slate-900 text-white rounded-2xl p-5 sm:p-8 shadow-xl space-y-4 sm:space-y-5 w-full overflow-hidden">
                   <div className="flex flex-wrap items-center justify-between gap-2 border-b border-slate-800 pb-3">

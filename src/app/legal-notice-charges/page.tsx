@@ -688,7 +688,7 @@ export default function LegalNoticeChargesPage() {
                   id="heading-city-charges-title"
                   className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight"
                 >
-                  City-Wise Legal Notice Charges by Advocates: Delhi, Mumbai &amp; Tech Hubs
+                  City-Wise Legal Notice Charges by Advocates Across Major Cities
                 </h2>
                 <p className="text-sm sm:text-base text-slate-700 leading-relaxed">
                   Advocate notice fees fluctuate significantly between metropolitan jurisdictions and regional district bar associations. Here is the verified benchmark for independent chamber drafting across major Indian business centers:

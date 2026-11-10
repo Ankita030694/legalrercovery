@@ -344,7 +344,7 @@ export default function MotorInsuranceClaimRejectedPage() {
                   <span>Part 2: Archetype G1 Decision Matrix</span>
                 </div>
                 <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
-                  Motor Repudiation Decision Tree: Which Legal Route Overturns Your Rejection?
+                  Motor Repudiation Decision Tree: Choosing Your Legal Route
                 </h2>
                 <p className="text-xs sm:text-sm md:text-base text-slate-700 leading-relaxed">
                   Navigate this decision tree based on your written rejection notice. Follow the questions to identify your strongest legal ground, required statutory forum, and exact recovery timeline:
@@ -480,7 +480,7 @@ export default function MotorInsuranceClaimRejectedPage() {
                   <span>Route 1 Breakdown</span>
                 </div>
                 <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
-                  Delayed Intimation: Overturning Rejection Under the Gurmel Singh Precedent
+                  Delayed Intimation: Overturning Rejection Under Gurmel Singh
                 </h2>
                 <div className="prose prose-slate max-w-none text-xs sm:text-sm md:text-base leading-relaxed text-slate-700 space-y-3">
                   <p>
@@ -519,7 +519,7 @@ export default function MotorInsuranceClaimRejectedPage() {
                   <span>Route 2 Breakdown</span>
                 </div>
                 <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
-                  Driving Licence Technicalities: The &apos;Fundamental Breach&apos; Rule
+                  Driving Licence Technicalities: The Fundamental Breach Rule
                 </h2>
                 <div className="prose prose-slate max-w-none text-xs sm:text-sm md:text-base leading-relaxed text-slate-700 space-y-3">
                   <p>
@@ -556,7 +556,7 @@ export default function MotorInsuranceClaimRejectedPage() {
                   <span>Route 3 Breakdown</span>
                 </div>
                 <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
-                  The &apos;Drunk Driving&apos; Clause: Why Hospital Casualty Notes Are Not Enough
+                  Drunk Driving Clause: Why Casualty Notes Are Not Conclusive
                 </h2>
                 <div className="prose prose-slate max-w-none text-xs sm:text-sm md:text-base leading-relaxed text-slate-700 space-y-3">
                   <p>
@@ -591,7 +591,7 @@ export default function MotorInsuranceClaimRejectedPage() {
                   <span>Route 4 Breakdown</span>
                 </div>
                 <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
-                  Non-Disclosure, Aftermarket CNG Kits, &amp; Pre-Existing Damage Clauses
+                  Non-Disclosure, CNG Kits and Pre-Existing Damage Clauses
                 </h2>
                 <div className="prose prose-slate max-w-none text-xs sm:text-sm md:text-base leading-relaxed text-slate-700 space-y-3">
                   <p>
@@ -723,7 +723,7 @@ export default function MotorInsuranceClaimRejectedPage() {
                   <span>Part 6: Concrete Worked Example</span>
                 </div>
                 <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
-                  Worked Case Study: Reversing a ₹3,85,000 Creta Accident Claim Repudiation
+                  Case Study: Reversing a ₹3.85L Creta Accident Repudiation
                 </h2>
                 <div className="bg-white border border-slate-200 rounded-2xl p-5 sm:p-7 shadow-xs space-y-5 text-xs sm:text-sm leading-relaxed text-slate-700">
                   <div className="bg-slate-50 border border-slate-200 rounded-xl p-4">
@@ -789,7 +789,7 @@ export default function MotorInsuranceClaimRejectedPage() {
                   <span>Part 7: Evidentiary Audit</span>
                 </div>
                 <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
-                  Motor Claim Repudiation Evidence Checklist: 8 Documents You Must Secure
+                  Evidence Checklist: 8 Documents to Reverse Motor Repudiation
                 </h2>
                 <p className="text-xs sm:text-sm md:text-base text-slate-700 leading-relaxed">
                   Before serving an advocate legal notice or filing before the Insurance Ombudsman under Rule 13, assemble these 8 essential pieces of documentary and electronic evidence:
@@ -889,7 +889,7 @@ export default function MotorInsuranceClaimRejectedPage() {
                   <span>Part 8: Common Queries</span>
                 </div>
                 <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight">
-                  Frequently Asked Questions on Motor Claim Repudiation &amp; Legal Notices
+                  FAQs on Motor Claim Repudiation and Advocate Legal Notices
                 </h2>
 
                 <div className="space-y-3">

@@ -8,6 +8,34 @@ import TimedPopupModal from "@/components/TimedPopupModal";
 import { SITE_URL } from "@/lib/site";
 import { Analytics } from "@vercel/analytics/next";
 import MetaPixel from "@/components/MetaPixel";
+import HtmlLangUpdater from "@/components/HtmlLangUpdater";
+
+declare const __non_webpack_require__: typeof require | undefined;
+
+function getInitialHtmlLang(): string {
+  try {
+    // eslint-disable-next-line @typescript-eslint/no-explicit-any
+    const req: any =
+      typeof __non_webpack_require__ !== "undefined"
+        ? __non_webpack_require__
+        : require;
+    const { workAsyncStorage } = req(
+      "next/dist/server/app-render/work-async-storage.external"
+    );
+    const store = workAsyncStorage?.getStore?.();
+    const route = store?.route || "";
+    if (
+      route === "/hi" ||
+      route.startsWith("/hi/") ||
+      route === "/templates/cheque-bounce-notice-format-hindi"
+    ) {
+      return "hi-IN";
+    }
+  } catch {
+    // Graceful fallback to default
+  }
+  return "en";
+}
 
 
 const geistSans = Geist({
@@ -30,6 +58,32 @@ export const metadata: Metadata = {
     "Recover unpaid money, salary, refunds, deposits, invoices, and consumer claims legally through India's trusted legal platform. Start your claim online.",
   alternates: {
     canonical: "/",
+  },
+  openGraph: {
+    title: "Legal Recovery India – Recover Your Money Legally Online",
+    description:
+      "Recover unpaid money, salary, refunds, deposits, invoices, and consumer claims legally through India's trusted legal platform. Start your claim online.",
+    url: SITE_URL,
+    siteName: "Legal Recovery India",
+    locale: "en_IN",
+    type: "website",
+    images: [
+      {
+        url: "/blog_money_recovery.png",
+        width: 1200,
+        height: 630,
+        alt: "Legal Recovery India – Recover Your Money Legally Online",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Legal Recovery India – Recover Your Money Legally Online",
+    description:
+      "Recover unpaid money, salary, refunds, deposits, invoices, and consumer claims legally through India's trusted legal platform. Start your claim online.",
+    site: "@legalrecoveryin",
+    creator: "@legalrecoveryin",
+    images: ["/blog_money_recovery.png"],
   },
   icons: {
     icon: [
@@ -121,9 +175,12 @@ export default function RootLayout({
     ],
   };
 
+  const initialLang = getInitialHtmlLang();
+
   return (
-    <html lang="en" className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}>
+    <html lang={initialLang} className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}>
       <body className="min-h-full flex flex-col bg-[#F8F9FB] text-[#111827] overflow-x-hidden">
+        <HtmlLangUpdater />
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(rootKnowledgeGraphSchema) }}

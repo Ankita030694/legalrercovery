@@ -453,7 +453,7 @@ export default function ScamMoneyRecoveryPage() {
                     Archetype G4 Comparison Matrix
                   </span>
                   <h2 className="text-xl sm:text-2xl font-extrabold text-slate-900 mt-1">
-                    Scam Recoverability Matrix: Real Odds, Timelines &amp; Liable Parties by Fraud Type
+                    Scam Recoverability Matrix: Recovery Odds and Timelines by Fraud
                   </h2>
                 </div>
                 <p className="text-sm sm:text-base text-slate-700 leading-relaxed">
@@ -616,7 +616,7 @@ export default function ScamMoneyRecoveryPage() {
                     Statutory Framework
                   </span>
                   <h2 className="text-xl sm:text-2xl font-extrabold text-slate-900 mt-1">
-                    Route 1: Bank Zero-Liability Reversal for Unauthorised Electronic Debits
+                    Route 1: RBI Zero-Liability Reversal for Unauthorised Debits
                   </h2>
                 </div>
                 <p className="text-sm sm:text-base text-slate-700 leading-relaxed">
@@ -737,7 +737,7 @@ export default function ScamMoneyRecoveryPage() {
                     Emergency Response
                   </span>
                   <h2 className="text-xl sm:text-2xl font-extrabold text-slate-900 mt-1">
-                    Route 2: National Cyber Crime Portal (1930) &amp; CFCFRMS Layered Account Freezing
+                    Route 2: Cyber Crime Portal (1930) and Account Layer Freezing
                   </h2>
                 </div>
                 <p className="text-sm sm:text-base text-slate-700 leading-relaxed">
@@ -784,7 +784,7 @@ export default function ScamMoneyRecoveryPage() {
                     Judicial Restitution
                   </span>
                   <h2 className="text-xl sm:text-2xl font-extrabold text-slate-900 mt-1">
-                    Route 3: Court De-freezing &amp; Restitution Order Under Section 503 BNSS
+                    Route 3: Court Restitution Order Under Section 503 BNSS
                   </h2>
                 </div>
                 <p className="text-sm sm:text-base text-slate-700 leading-relaxed">
@@ -825,7 +825,7 @@ export default function ScamMoneyRecoveryPage() {
                     Securities Disputes
                   </span>
                   <h2 className="text-xl sm:text-2xl font-extrabold text-slate-900 mt-1">
-                    Route 4: SEBI SMART ODR &amp; SCORES for Regulated Broker &amp; Investment Frauds
+                    Route 4: SEBI SMART ODR and SCORES for Broker Frauds
                   </h2>
                 </div>
                 <p className="text-sm sm:text-base text-slate-700 leading-relaxed">
@@ -862,7 +862,7 @@ export default function ScamMoneyRecoveryPage() {
                     Deficiency in Service
                   </span>
                   <h2 className="text-xl sm:text-2xl font-extrabold text-slate-900 mt-1">
-                    Route 5: Consumer Commission (e-Jagriti) for Gross Bank or Gateway Deficiency
+                    Route 5: Consumer Commission for Bank or Gateway Deficiency
                   </h2>
                 </div>
                 <p className="text-sm sm:text-base text-slate-700 leading-relaxed">
@@ -896,7 +896,7 @@ export default function ScamMoneyRecoveryPage() {
                     Diagnostic Tool
                   </span>
                   <h2 className="text-xl sm:text-2xl font-extrabold text-slate-900 mt-1">
-                    Interactive Diagnostic: Select Your Scam Type to Check Legal Recovery Options
+                    Diagnostic: Select Your Scam Type to Check Legal Recovery Options
                   </h2>
                 </div>
                 <p className="text-sm sm:text-base text-slate-700 leading-relaxed">
@@ -913,7 +913,7 @@ export default function ScamMoneyRecoveryPage() {
                     Judicial Authority
                   </span>
                   <h2 className="text-xl sm:text-2xl font-extrabold text-slate-900 mt-1">
-                    Precedent Digest: Landmark Judicial Rulings on Cyber Fraud &amp; Bank Compensation
+                    Judicial Rulings on Cyber Fraud and Bank Compensation Orders
                   </h2>
                 </div>
                 <p className="text-sm sm:text-base text-slate-700 leading-relaxed">
@@ -968,7 +968,7 @@ export default function ScamMoneyRecoveryPage() {
                     Illustrative Blueprint
                   </span>
                   <h2 className="text-xl sm:text-2xl font-extrabold text-slate-900 mt-1">
-                    Worked Case Example: Recovering ₹1,65,000 from a Telegram Trading Mule Account
+                    Worked Example: Recovering ₹1,65,000 from a Mule Bank Account
                   </h2>
                 </div>
                 <div className="bg-white rounded-2xl border border-slate-200 p-5 sm:p-7 shadow-xs space-y-4">
@@ -1012,7 +1012,7 @@ export default function ScamMoneyRecoveryPage() {
                     Statutory Compliance
                   </span>
                   <h2 className="text-xl sm:text-2xl font-extrabold text-slate-900 mt-1">
-                    Mandatory Evidentiary Checklist for Cyber Fraud Restitution (Section 63 BSA 2023)
+                    Evidence Checklist for Cyber Fraud Restitution (Section 63 BSA)
                   </h2>
                 </div>
                 <p className="text-sm sm:text-base text-slate-700 leading-relaxed">
@@ -1242,7 +1242,7 @@ export default function ScamMoneyRecoveryPage() {
                     Statutory Citations
                   </span>
                   <h2 className="text-xl sm:text-2xl font-extrabold text-slate-900 mt-1">
-                    Statutory Provisions, Regulatory Circulars &amp; Primary Legal References
+                    Statutory Provisions, RBI Circulars and Primary References
                   </h2>
                 </div>
                 <div className="bg-white rounded-2xl border border-slate-200 p-5 sm:p-6 shadow-xs space-y-3">

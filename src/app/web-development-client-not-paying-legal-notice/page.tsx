@@ -493,7 +493,7 @@ export default function WebDevelopmentClientNotPayingPage() {
                   id="heading-copyright-lever-title"
                   className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight"
                 >
-                  The Section 19 Copyright Lever: Why Unpaid Code Never Belongs to the Client
+                  Section 19 Copyright Lever: Why Unpaid Code Belongs to You
                 </h2>
                 <p className="text-sm sm:text-base text-slate-700 leading-relaxed">
                   The most devastating misconception in the freelance and agency industry is that &ldquo;because the client paid an advance or gave the project requirements, they own the website.&rdquo; Under Indian intellectual property law, this assumption is completely false.
@@ -768,7 +768,7 @@ export default function WebDevelopmentClientNotPayingPage() {
                   id="heading-court-precedents-title"
                   className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight"
                 >
-                  Judicial Precedents: Software Copyright &amp; Independent Contractor Rights
+                  Judicial Precedents: Software Copyright and Contractor Rights
                 </h2>
                 <p className="text-sm sm:text-base text-slate-700 leading-relaxed">
                   High Courts and the Supreme Court of India have established definitive principles protecting independent software creators from corporate exploitation:

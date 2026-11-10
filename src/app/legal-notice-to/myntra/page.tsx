@@ -414,7 +414,7 @@ export default function MyntraDisputePage() {
                 id="section-gateway-tracing"
                 className="text-2xl sm:text-3xl font-bold text-slate-900 tracking-tight mt-1 mb-2"
               >
-                Why Myntra Shows &ldquo;Refund Processed&rdquo; While Your Bank Shows Nothing
+                Why Myntra Shows Refund Processed While Your Bank Shows Nothing
               </h2>
               <p className="text-sm sm:text-base text-slate-600 leading-relaxed">
                 When you initiate an apparel return on Myntra, an automated system updates your status to &ldquo;Refund Successful&rdquo; or &ldquo;Refund Processed&rdquo; within minutes of pickup. Yet days later, your bank statement reflects zero incoming credit. This disconnect occurs because e-commerce platforms and banking switches operate on distinct reconciliation layers.

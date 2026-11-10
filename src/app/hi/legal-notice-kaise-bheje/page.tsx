@@ -18,6 +18,7 @@ export const metadata: Metadata = {
     languages: {
       "hi-IN": `${SITE_URL}/hi/legal-notice-kaise-bheje`,
       "en-IN": `${SITE_URL}/blog/legal-notice-kaise-bheje-step-by-step-guide`,
+      "x-default": `${SITE_URL}/blog/legal-notice-kaise-bheje-step-by-step-guide`,
     },
   },
   openGraph: {
@@ -332,7 +333,7 @@ export default function LegalNoticeKaiseBhejePage() {
                   id="heading-case-story-title"
                   className="text-xl sm:text-2xl font-bold text-slate-900 tracking-tight"
                 >
-                  वास्तविक उदाहरण कहानी: ई-कॉमर्स रिफंड विवाद में लीगल नोटिस से ₹48,000 की वसूली
+                  वास्तविक उदाहरण: रिफंड विवाद में नोटिस से ₹48,000 की वसूली
                 </h2>
                 <div className="bg-slate-900 text-white rounded-2xl p-5 sm:p-8 shadow-xl space-y-4 sm:space-y-5 w-full overflow-hidden">
                   <div className="flex flex-wrap items-center justify-between gap-2 border-b border-slate-800 pb-3">
@@ -371,7 +372,7 @@ export default function LegalNoticeKaiseBhejePage() {
                   id="heading-court-rulings-title"
                   className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight"
                 >
-                  अदालती नज़ीरें: स्पीड पोस्ट, ईमेल व व्हाट्सऐप नोटिस पर अदालतों के ऐतिहासिक फैसले
+                  अदालती नज़ीरें: स्पीड पोस्ट, ईमेल व व्हाट्सऐप नोटिस के फैसले
                 </h2>
                 <p className="text-sm sm:text-base text-slate-700 leading-relaxed">
                   भारतीय न्यायालयों ने समय-समय पर लीगल नोटिस की तामील (Service of Notice) को लेकर कई महत्वपूर्ण सिद्धांत स्थापित किए हैं ताकि डिफॉल्टर या लापरवाह कंपनियां कानूनी प्रक्रिया से बच न सकें:

@@ -1,24 +1,31 @@
 import React from "react";
+import type { Metadata } from "next";
 import { cookies } from "next/headers";
-import { redirect } from "next/navigation";
 import { AlertTriangle, ArrowLeft, RefreshCw } from "lucide-react";
 import Link from "next/link";
+
+export const metadata: Metadata = {
+  title: "Payment Cancelled | LegalRecovery",
+  description: "Payment cancelled status page for LegalRecovery services.",
+  robots: {
+    index: false,
+    follow: false,
+  },
+};
 
 export default async function PaymentCancelledPage() {
   const cookieStore = await cookies();
   const token = cookieStore.get("payu_auth_token")?.value;
 
-  if (!token) {
-    redirect("/");
-  }
-
   let resumeToken: string | null = null;
-  try {
-    const decoded = Buffer.from(token, "base64").toString("utf-8");
-    const data = JSON.parse(decoded);
-    resumeToken = data?.resumeToken || null;
-  } catch {
-    // Ignore parse error
+  if (token) {
+    try {
+      const decoded = Buffer.from(token, "base64").toString("utf-8");
+      const data = JSON.parse(decoded);
+      resumeToken = data?.resumeToken || null;
+    } catch {
+      // Ignore parse error
+    }
   }
 
   const retryHref = resumeToken ? `/resume/${resumeToken}` : "/";

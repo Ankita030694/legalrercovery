@@ -518,7 +518,7 @@ export default function ReraDelayedPossessionCompensationPage() {
               <section id="heading-sec18-rules" className="space-y-4">
                 <div className="border-b border-slate-200 pb-2">
                   <h2 className="text-xl sm:text-2xl font-black text-slate-900">
-                    RERA Section 18(1) Proviso: Claiming Monthly Interest While Retaining Ownership
+                    RERA Section 18(1): Claiming Monthly Delay Interest
                   </h2>
                 </div>
 

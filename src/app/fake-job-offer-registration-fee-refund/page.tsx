@@ -383,10 +383,10 @@ export default function FakeJobOfferRefundPage() {
                           Primary Legal Forum
                         </th>
                         <td className="p-3 sm:p-4 font-semibold text-slate-900">
-                          Advocate Legal Notice → District Consumer Commission (<Link href="https://e-jagriti.gov.in" target="_blank" rel="noopener noreferrer" className="underline text-red-600 hover:text-red-700">e-Jagriti</Link>) under Section 35 CPA 2019.
+                          Advocate Legal Notice → District Consumer Commission (<a href="https://e-jagriti.gov.in" target="_blank" rel="noopener noreferrer nofollow" className="underline text-red-600 hover:text-red-700">e-Jagriti</a>) under Section 35 CPA 2019.
                         </td>
                         <td className="p-3 sm:p-4 font-semibold text-slate-900">
-                          1930 Helpline → National Cyber Crime Portal (<Link href="https://cybercrime.gov.in" target="_blank" rel="noopener noreferrer" className="underline text-red-600 hover:text-red-700">cybercrime.gov.in</Link>) → Section 503 BNSS Magisterial Release.
+                          1930 Helpline → National Cyber Crime Portal (<a href="https://cybercrime.gov.in" target="_blank" rel="noopener noreferrer nofollow" className="underline text-red-600 hover:text-red-700">cybercrime.gov.in</a>) → Section 503 BNSS Magisterial Release.
                         </td>
                       </tr>
                       <tr>
@@ -527,7 +527,7 @@ export default function FakeJobOfferRefundPage() {
                           Identifies the registered corporate entity, CIN, director DINs, and registered office address for legal service.
                         </td>
                         <td className="p-3 sm:p-4">
-                          Search company name on Ministry of Corporate Affairs portal (<Link href="https://mca.gov.in" target="_blank" rel="noopener noreferrer" className="underline text-red-600 hover:text-red-700">mca.gov.in</Link>) or GST portal.
+                          Search company name on Ministry of Corporate Affairs portal (<a href="https://mca.gov.in" target="_blank" rel="noopener noreferrer nofollow" className="underline text-red-600 hover:text-red-700">mca.gov.in</a>) or GST portal.
                         </td>
                       </tr>
                       <tr>
@@ -538,7 +538,7 @@ export default function FakeJobOfferRefundPage() {
                           Indispensable for moving a Section 503 BNSS petition before the Magistrate to release frozen mule account funds.
                         </td>
                         <td className="p-3 sm:p-4">
-                          Generated automatically upon registering a cyber crime complaint at <Link href="https://cybercrime.gov.in" target="_blank" rel="noopener noreferrer" className="underline text-red-600 hover:text-red-700">cybercrime.gov.in</Link>.
+                          Generated automatically upon registering a cyber crime complaint at <a href="https://cybercrime.gov.in" target="_blank" rel="noopener noreferrer nofollow" className="underline text-red-600 hover:text-red-700">cybercrime.gov.in</a>.
                         </td>
                       </tr>
                     </tbody>
@@ -702,7 +702,7 @@ export default function FakeJobOfferRefundPage() {
                         </time>
                       </div>
                       <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                        Log in to <Link href="https://cybercrime.gov.in" target="_blank" rel="noopener noreferrer" className="underline text-red-600 hover:text-red-700">cybercrime.gov.in</Link> and complete the full Financial Fraud Incident report. Upload your bank statement, WhatsApp chat exports, and fraudulent offer letter. Download the formal Cyber Crime Acknowledgment slip with the 14-digit Complaint Reference Number. Simultaneously, submit this acknowledgment to your home bank branch demanding a formal chargeback / dispute recall under RBI guidelines.
+                        Log in to <a href="https://cybercrime.gov.in" target="_blank" rel="noopener noreferrer nofollow" className="underline text-red-600 hover:text-red-700">cybercrime.gov.in</a> and complete the full Financial Fraud Incident report. Upload your bank statement, WhatsApp chat exports, and fraudulent offer letter. Download the formal Cyber Crime Acknowledgment slip with the 14-digit Complaint Reference Number. Simultaneously, submit this acknowledgment to your home bank branch demanding a formal chargeback / dispute recall under RBI guidelines.
                       </p>
                     </div>
                   </li>
@@ -764,7 +764,7 @@ export default function FakeJobOfferRefundPage() {
                       <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
                         If the 15-day notice period lapses without settlement:
                         <br />
-                        • <strong>For Traceable Agencies:</strong> File an online petition on the <Link href="https://e-jagriti.gov.in" target="_blank" rel="noopener noreferrer" className="underline text-red-600 hover:text-red-700">e-Jagriti portal</Link> before the District Consumer Commission claiming full refund, 12% interest, and damages for harassment.
+                        • <strong>For Traceable Agencies:</strong> File an online petition on the <a href="https://e-jagriti.gov.in" target="_blank" rel="noopener noreferrer nofollow" className="underline text-red-600 hover:text-red-700">e-Jagriti portal</a> before the District Consumer Commission claiming full refund, 12% interest, and damages for harassment.
                         <br />
                         • <strong>For Frozen Cyber Accounts:</strong> File a miscellaneous application under Section 503 BNSS before the jurisdictional Chief Judicial Magistrate to secure an order directing the recipient bank to release the frozen funds directly back to your account.
                       </p>
@@ -938,14 +938,14 @@ export default function FakeJobOfferRefundPage() {
                     <li key={idx} className="flex items-start gap-2.5 p-3 bg-white rounded-xl border border-slate-200 shadow-xs">
                       <span className="text-[#DC2626] font-bold shrink-0 mt-0.5">•</span>
                       <div>
-                        <Link
+                        <a
                           href={source.url}
                           target="_blank"
-                          rel="noopener noreferrer"
+                          rel="noopener noreferrer nofollow"
                           className="font-bold text-slate-900 hover:text-red-600 underline transition-colors"
                         >
                           {source.title}
-                        </Link>
+                        </a>
                         <p className="text-[11px] text-slate-500 mt-0.5 truncate max-w-2xl">{source.url}</p>
                       </div>
                     </li>

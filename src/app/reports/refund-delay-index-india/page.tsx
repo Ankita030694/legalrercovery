@@ -896,7 +896,7 @@ export default function RefundDelayIndexReportPage() {
                     id="heading-faqs-title"
                     className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight"
                   >
-                    Frequently Asked Questions About Refund Delays &amp; Legal Notices in India
+                    FAQs About E-Commerce Refund Delays and Legal Notices in India
                   </h2>
                   <p className="text-xs font-bold text-slate-500 uppercase tracking-wider mt-1">
                     Empirical &amp; Statutory Answers to Common Consumer Queries

@@ -782,7 +782,7 @@ export default function RefuseNewCarDeliveryPdiPage() {
                   </span>
                 </div>
                 <h2 className="text-xl sm:text-2xl font-black text-slate-900 tracking-tight mb-3">
-                  PDI Defect Severity Matrix: When to Refuse vs. When to Allow Rectification
+                  PDI Defect Matrix: When to Refuse Delivery vs Rectify Defects
                 </h2>
                 <p className="text-xs sm:text-sm text-slate-600 mb-5 leading-relaxed">
                   Not all defects justify the same response. Indian consumer law draws a clear distinction between minor surface blemishes that can be polished and fundamental product non-conformities that warrant outright vehicle rejection.
@@ -861,7 +861,7 @@ export default function RefuseNewCarDeliveryPdiPage() {
                   </span>
                 </div>
                 <h2 className="text-xl sm:text-2xl font-black text-slate-900 tracking-tight mb-2">
-                  The 4-Stage Legal Escalation Rail: From Stockyard Refusal to Court Restitution
+                  4-Stage Escalation: From Stockyard Refusal to Court Remedy
                 </h2>
                 <p className="text-xs sm:text-sm text-slate-600 mb-6">
                   If the dealership resists your refusal or attempts to withhold your deposit, follow this 4-stage statutory enforcement rail:
@@ -1112,7 +1112,7 @@ export default function RefuseNewCarDeliveryPdiPage() {
                   </span>
                 </div>
                 <h2 className="text-xl sm:text-2xl font-black text-slate-900 tracking-tight mb-2">
-                  Worked Example: How a Buyer Successfully Refused an ₹18.5 Lakh SUV with Repainted Fender
+                  Worked Example: Refusing an ₹18.5L SUV with Repainted Panels
                 </h2>
                 <p className="text-xs sm:text-sm text-slate-600 mb-6">
                   Review this concrete, real-world case scenario illustrating how the Sale of Goods Act and an advocate notice resolved a hostile stockyard refusal:

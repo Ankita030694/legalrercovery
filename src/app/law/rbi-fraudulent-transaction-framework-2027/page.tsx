@@ -939,7 +939,7 @@ export default function RbiFraudulentTransactionFramework2027Page() {
                         Execute Dual Reporting Within 24 Hours (And Never Later Than 3 Working / 5 Calendar Days†)
                       </h3>
                       <p className="text-xs sm:text-sm leading-relaxed">
-                        The moment you spot an unauthorized UPI, IMPS, NEFT, RTGS, or card debit, immediately call the Ministry of Home Affairs Cyber Helpline at <strong>1930</strong> and register a formal complaint on <a href="https://cybercrime.gov.in/" target="_blank" rel="noopener noreferrer" className="text-blue-700 underline font-semibold">cybercrime.gov.in</a>. This triggers an automated hold/lien on the recipient bank account via the CFCFRMS network. Simultaneously, report the unauthorized debit to your bank&apos;s 24x7 fraud channel, block the compromised card/UPI ID, and obtain a time-stamped <strong>Service Request (SR) / Complaint Ticket Number</strong>. Under the 2027 framework†, dual reporting to both your bank and 1930 within <strong>5 calendar days</strong> is mandatory to unlock the small-value compensation payout.
+                        The moment you spot an unauthorized UPI, IMPS, NEFT, RTGS, or card debit, immediately call the Ministry of Home Affairs Cyber Helpline at <strong>1930</strong> and register a formal complaint on <a href="https://cybercrime.gov.in/" target="_blank" rel="noopener noreferrer nofollow" className="text-blue-700 underline font-semibold">cybercrime.gov.in</a>. This triggers an automated hold/lien on the recipient bank account via the CFCFRMS network. Simultaneously, report the unauthorized debit to your bank&apos;s 24x7 fraud channel, block the compromised card/UPI ID, and obtain a time-stamped <strong>Service Request (SR) / Complaint Ticket Number</strong>. Under the 2027 framework†, dual reporting to both your bank and 1930 within <strong>5 calendar days</strong> is mandatory to unlock the small-value compensation payout.
                       </p>
                     </div>
                   </li>
@@ -995,7 +995,7 @@ export default function RbiFraudulentTransactionFramework2027Page() {
                         Escalate to the RBI Integrated Ombudsman (cms.rbi.org.in) or Consumer Commission (e-Jagriti)
                       </h3>
                       <p className="text-xs sm:text-sm leading-relaxed">
-                        Once 30 days elapse from your initial complaint (or immediately upon receiving a final rejection from the bank), file an online complaint under the <strong>Reserve Bank - Integrated Ombudsman Scheme, 2021</strong> at <a href="https://cms.rbi.org.in/" target="_blank" rel="noopener noreferrer" className="text-blue-700 underline font-semibold">cms.rbi.org.in</a> attaching your served Advocate Legal Notice, 1930 acknowledgement, and telecom/bank records. For claims exceeding ₹20 lakh or requiring detailed evidentiary cross-examination and punitive damages, file a parallel consumer complaint on <strong>e-Jagriti</strong> under Section 35 of the Consumer Protection Act, 2019.
+                        Once 30 days elapse from your initial complaint (or immediately upon receiving a final rejection from the bank), file an online complaint under the <strong>Reserve Bank - Integrated Ombudsman Scheme, 2021</strong> at <a href="https://cms.rbi.org.in/" target="_blank" rel="noopener noreferrer nofollow" className="text-blue-700 underline font-semibold">cms.rbi.org.in</a> attaching your served Advocate Legal Notice, 1930 acknowledgement, and telecom/bank records. For claims exceeding ₹20 lakh or requiring detailed evidentiary cross-examination and punitive damages, file a parallel consumer complaint on <strong>e-Jagriti</strong> under Section 35 of the Consumer Protection Act, 2019.
                       </p>
                     </div>
                   </li>
@@ -1197,7 +1197,7 @@ export default function RbiFraudulentTransactionFramework2027Page() {
                       <a
                         href={source.url}
                         target="_blank"
-                        rel="noopener noreferrer"
+                        rel="noopener noreferrer nofollow"
                         className="text-blue-700 hover:text-blue-900 underline font-medium"
                       >
                         {source.title}

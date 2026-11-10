@@ -1,32 +1,30 @@
 import React from "react";
+import type { Metadata } from "next";
 import { cookies } from "next/headers";
-import { redirect } from "next/navigation";
 import { XCircle, ArrowLeft, RefreshCw } from "lucide-react";
 import Link from "next/link";
+
+export const metadata: Metadata = {
+  title: "Payment Failed | LegalRecovery",
+  description: "Payment status page for LegalRecovery services.",
+  robots: {
+    index: false,
+    follow: false,
+  },
+};
 
 export default async function PaymentFailurePage() {
   const cookieStore = await cookies();
   const token = cookieStore.get("payu_auth_token")?.value;
 
-  // We are a bit more lenient on failure pages. 
-  // If they somehow got here without a token, we could redirect them away,
-  // but showing a generic failure is safer than a confusing redirect.
-  // However, as per requirements, we'll secure it tightly.
-  if (!token) {
-    redirect("/");
-  }
-
   let data = null;
-  try {
-    const decoded = Buffer.from(token, 'base64').toString('utf-8');
-    data = JSON.parse(decoded);
-    
-    // If it was actually a success, they shouldn't be here
-    if (data.status === "success" && data.verified) {
-      redirect("/payment-success");
+  if (token) {
+    try {
+      const decoded = Buffer.from(token, "base64").toString("utf-8");
+      data = JSON.parse(decoded);
+    } catch {
+      // If we can't parse the token, just show the failure UI anyway
     }
-  } catch (e) {
-    // If we can't parse the token, just show the failure UI anyway
   }
 
   return (
@@ -46,7 +44,7 @@ export default async function PaymentFailurePage() {
         </h1>
         
         <p className="text-[#4B5563] font-medium mb-8">
-          We couldn't process your payment. {data?.txnid ? `(Txn: #${data.txnid})` : ""} No amount was deducted from your account. 
+          We couldn&apos;t process your payment. {data?.txnid ? `(Txn: #${data.txnid})` : ""} No amount was deducted from your account. 
         </p>
 
         <div className="bg-slate-50 border border-slate-200 rounded-2xl p-6 text-left mb-8">

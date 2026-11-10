@@ -314,7 +314,7 @@ export default function CryptoExchangeWithdrawalStuckPage() {
                   id="heading-quick-answer-title"
                   className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight"
                 >
-                  Why Crypto Exchanges Lock Withdrawals &amp; What Indian Law Guarantees You
+                  Why Crypto Exchanges Lock Withdrawals and Your Legal Rights
                 </h2>
                 <p className="text-sm sm:text-base text-slate-700 leading-relaxed">
                   Thousands of Indian cryptocurrency traders and retail investors wake up to find their accounts restricted with cryptic error messages: <em>&quot;Withdrawals temporarily suspended&quot;</em>, <em>&quot;Account under enhanced risk review&quot;</em>, or <em>&quot;In compliance with law enforcement directives&quot;</em>. Whether you trade on domestic platforms such as CoinDCX, CoinSwitch Kuber, WazirX (Zanmai Labs), ZebPay, Mudrex, or international exchanges like Binance and KuCoin that have obtained registration with the Financial Intelligence Unit - India (FIU-IND), experiencing a frozen withdrawal is intensely distressing.
@@ -508,7 +508,7 @@ export default function CryptoExchangeWithdrawalStuckPage() {
                   id="heading-route-cyber-lien-title"
                   className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight"
                 >
-                  Route 1: How to Lift P2P Cyber Cell Liens on Crypto Wallets &amp; Linked Bank Accounts
+                  Route 1: Lifting P2P Cyber Cell Liens on Wallets and Accounts
                 </h2>
                 <p className="text-sm sm:text-base text-slate-700 leading-relaxed">
                   The most pervasive cause of frozen crypto withdrawals in India originates from Peer-to-Peer (P2P) trading. When you sell USDT or Bitcoin, you accept an IMPS or UPI transfer from an external buyer. If that buyer acquired their money through cyber fraud—such as a <Link href="/digital-arrest-scam-money-recovery" className="text-[#DC2626] font-bold hover:underline">digital arrest scam</Link> or a fake trading app—the victim reports the fraud to the 1930 Cyber Helpline.
@@ -546,7 +546,7 @@ export default function CryptoExchangeWithdrawalStuckPage() {
                   id="heading-route-aml-arbitrary-title"
                   className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight"
                 >
-                  Route 2: Overcoming Arbitrary AML &amp; KYC Holds With No Police Requisition
+                  Route 2: Overcoming Arbitrary AML and KYC Holds on Exchanges
                 </h2>
                 <p className="text-sm sm:text-base text-slate-700 leading-relaxed">
                   In many instances, the exchange disables withdrawals without any police complaint. When you submit a ticket, support representatives send boiler-plate emails stating your account is <em>&quot;under compliance inspection&quot;</em> or <em>&quot;AML review&quot;</em>. Weeks pass without resolution, while the exchange retains your capital.
@@ -579,7 +579,7 @@ export default function CryptoExchangeWithdrawalStuckPage() {
                   id="heading-route-fiat-stuck"
                   className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight"
                 >
-                  Route 3: Resolving INR Withdrawal Debits That Never Reach Your Bank Account
+                  Route 3: Resolving Stuck INR Withdrawals Debited from Exchanges
                 </h2>
                 <p className="text-sm sm:text-base text-slate-700 leading-relaxed">
                   Another common dispute arises when a user liquidates crypto tokens into INR and clicks withdraw. The exchange shows <em>&quot;Success&quot;</em> and reduces the platform wallet balance, yet zero inward funds reflect in the user&apos;s bank account after 5 to 10 days.
@@ -598,7 +598,7 @@ export default function CryptoExchangeWithdrawalStuckPage() {
                   id="heading-route-exchange-moratorium"
                   className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight"
                 >
-                  Route 4: Handling Hacks, Insolvency Moratoria &amp; WazirX-Style Restructuring Schemes
+                  Route 4: Handling Hacks, Moratoria and Restructuring Schemes
                 </h2>
                 <p className="text-sm sm:text-base text-slate-700 leading-relaxed">
                   In catastrophic events where an exchange suffers an exploit or wallet compromise (such as the July 2024 WazirX cyberattack where $230M+ in ERC-20 tokens were drained), the management often suspends all INR and crypto withdrawals. Subsequently, the platform may seek a moratorium under foreign insolvency laws (such as Section 210 of the Singapore Companies Act) to force retail users into accepting fractional payouts (&quot;haircuts&quot;).
@@ -915,7 +915,7 @@ export default function CryptoExchangeWithdrawalStuckPage() {
                   id="heading-arbitration-clause-title"
                   className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight"
                 >
-                  Why User Agreement Arbitration Clauses (e.g. Singapore SIAC) Cannot Block You
+                  Why Foreign Arbitration Clauses Cannot Bar Indian Remedies
                 </h2>
                 <p className="text-sm sm:text-base text-slate-700 leading-relaxed">
                   When users complain about locked withdrawals, exchanges routinely cite clause 18 or 24 of their Terms of Use: <em>&quot;Any dispute shall be referred to and finally resolved by arbitration administered by the Singapore International Arbitration Centre (SIAC)&quot;</em>. This tactic is deliberately designed to intimidate retail consumers, as filing a commercial arbitration case in Singapore costs upwards of ₹5,00,000 in administrative fees alone.
@@ -1014,7 +1014,7 @@ export default function CryptoExchangeWithdrawalStuckPage() {
                   id="heading-scope-matrix-title"
                   className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight"
                 >
-                  Honest Scope: What LegalRecovery Can &amp; Cannot Do for Crypto Disputes
+                  Honest Scope: Remedies for Crypto Exchange Disputes in India
                 </h2>
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                   <div className="bg-emerald-50/70 border border-emerald-200 p-5 rounded-2xl space-y-2">

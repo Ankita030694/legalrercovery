@@ -496,7 +496,7 @@ export default function BigBasketRefundLegalNoticePage() {
                 </span>
               </div>
               <h2 id="q1-heading" className="text-xl sm:text-2xl font-black text-slate-900 tracking-tight mb-4">
-                Why Is Your BigBasket Refund Showing Successful While Your Bank Account Shows Nothing?
+                Why BigBasket Shows Refund Successful While Your Bank Shows Nothing
               </h2>
               <div className="text-sm sm:text-base text-slate-700 leading-relaxed space-y-4">
                 <p className="font-semibold text-slate-900 bg-slate-50 p-4 rounded-xl border-l-4 border-[#DC2626]">
@@ -541,7 +541,7 @@ export default function BigBasketRefundLegalNoticePage() {
                 </span>
               </div>
               <h2 id="q2-heading" className="text-xl sm:text-2xl font-black text-slate-900 tracking-tight mb-4">
-                Can BigBasket Legally Force Your Refund Into BB Wallet Instead of Your Source Account?
+                Can BigBasket Legally Force Refunds Into BB Wallet Instead of Cash?
               </h2>
               <div className="text-sm sm:text-base text-slate-700 leading-relaxed space-y-4">
                 <p className="font-semibold text-slate-900 bg-slate-50 p-4 rounded-xl border-l-4 border-[#DC2626]">
@@ -582,7 +582,7 @@ export default function BigBasketRefundLegalNoticePage() {
                 </span>
               </div>
               <h2 id="q3-heading" className="text-xl sm:text-2xl font-black text-slate-900 tracking-tight mb-4">
-                What Is the Statutory BigBasket Refund Time Across UPI, NetBanking, Cards, and COD?
+                Statutory BigBasket Refund Times: UPI, NetBanking and Cards
               </h2>
               <div className="text-sm sm:text-base text-slate-700 leading-relaxed space-y-4">
                 <p className="font-semibold text-slate-900 bg-slate-50 p-4 rounded-xl border-l-4 border-[#DC2626]">
@@ -624,7 +624,7 @@ export default function BigBasketRefundLegalNoticePage() {
                 </span>
               </div>
               <h2 id="q4-heading" className="text-xl sm:text-2xl font-black text-slate-900 tracking-tight mb-4">
-                What Should You Do If BigBasket Delivered Spoiled Perishables or Wrong Grocery Items?
+                What to Do If BigBasket Delivered Spoiled Goods or Wrong Items
               </h2>
               <div className="text-sm sm:text-base text-slate-700 leading-relaxed space-y-4">
                 <p className="font-semibold text-slate-900 bg-slate-50 p-4 rounded-xl border-l-4 border-[#DC2626]">
@@ -668,7 +668,7 @@ export default function BigBasketRefundLegalNoticePage() {
                 </span>
               </div>
               <h2 id="q5-heading" className="text-xl sm:text-2xl font-black text-slate-900 tracking-tight mb-4">
-                How Do You File an Official BigBasket Refund Complaint With the Grievance Officer?
+                Filing an Official BigBasket Complaint With the Grievance Officer
               </h2>
               <div className="text-sm sm:text-base text-slate-700 leading-relaxed space-y-4">
                 <p className="font-semibold text-slate-900 bg-slate-50 p-4 rounded-xl border-l-4 border-[#DC2626]">
@@ -713,7 +713,7 @@ export default function BigBasketRefundLegalNoticePage() {
                 </span>
               </div>
               <h2 id="q6-heading" className="text-xl sm:text-2xl font-black text-slate-900 tracking-tight mb-4">
-                When Should You Lodge a Docket on the National Consumer Helpline (NCH 1915)?
+                When to Lodge a Docket on the National Consumer Helpline (1915)
               </h2>
               <div className="text-sm sm:text-base text-slate-700 leading-relaxed space-y-4">
                 <p className="font-semibold text-slate-900 bg-slate-50 p-4 rounded-xl border-l-4 border-[#DC2626]">
@@ -752,7 +752,7 @@ export default function BigBasketRefundLegalNoticePage() {
                 </span>
               </div>
               <h2 id="q7-heading" className="text-xl sm:text-2xl font-black text-slate-900 tracking-tight mb-4">
-                How Do You Serve an Advocate Legal Notice to Innovative Retail Concepts and Supermarket Grocery Supplies?
+                Serving an Advocate Legal Notice to BigBasket Corporate Entities
               </h2>
               <div className="text-sm sm:text-base text-slate-700 leading-relaxed space-y-4">
                 <p className="font-semibold text-slate-900 bg-slate-50 p-4 rounded-xl border-l-4 border-[#DC2626]">
@@ -798,7 +798,7 @@ export default function BigBasketRefundLegalNoticePage() {
                 </span>
               </div>
               <h2 id="q8-heading" className="text-xl sm:text-2xl font-black text-slate-900 tracking-tight mb-4">
-                What Compensation Have Consumer Courts Awarded for Grocery Non-Delivery and Denied Refunds?
+                Consumer Court Orders Against BigBasket for Non-Delivery and Refunds
               </h2>
               <div className="text-sm sm:text-base text-slate-700 leading-relaxed space-y-4">
                 <p className="font-semibold text-slate-900 bg-slate-50 p-4 rounded-xl border-l-4 border-[#DC2626]">
@@ -851,7 +851,7 @@ export default function BigBasketRefundLegalNoticePage() {
                 </span>
               </div>
               <h2 id="q9-heading" className="text-xl sm:text-2xl font-black text-slate-900 tracking-tight mb-4">
-                Illustrative Scenario: Tracing a ₹3,420 BigBasket Perishable Refund Trapped in Closed Wallet Credit
+                Illustrative Case: Tracing a BigBasket Wallet Refund Stuck in Limbo
               </h2>
               <div className="text-sm sm:text-base text-slate-700 leading-relaxed space-y-4">
                 <p className="font-semibold text-slate-900 bg-slate-50 p-4 rounded-xl border-l-4 border-[#DC2626]">
@@ -917,7 +917,7 @@ export default function BigBasketRefundLegalNoticePage() {
                 </span>
               </div>
               <h2 id="q10-heading" className="text-xl sm:text-2xl font-black text-slate-900 tracking-tight mb-4">
-                What Digital Evidence Must You Collect Under Section 63 BSA Before Demanding a BigBasket Refund?
+                Evidence to Collect Under Section 63 BSA for BigBasket Refunds
               </h2>
               <div className="text-sm sm:text-base text-slate-700 leading-relaxed space-y-4">
                 <p className="font-semibold text-slate-900 bg-slate-50 p-4 rounded-xl border-l-4 border-[#DC2626]">
@@ -994,7 +994,7 @@ export default function BigBasketRefundLegalNoticePage() {
                 </span>
               </div>
               <h2 id="q11-heading" className="text-xl sm:text-2xl font-black text-slate-900 tracking-tight mb-4">
-                What Are the Honest Boundaries of LegalRecovery Services for BigBasket Disputes?
+                Scope of LegalRecovery Services for BigBasket Grocery Disputes
               </h2>
               <div className="text-sm sm:text-base text-slate-700 leading-relaxed space-y-4">
                 <p className="font-semibold text-slate-900 bg-slate-50 p-4 rounded-xl border-l-4 border-[#DC2626]">
@@ -1046,7 +1046,7 @@ export default function BigBasketRefundLegalNoticePage() {
                 </span>
               </div>
               <h2 id="q12-heading" className="text-xl sm:text-2xl font-black text-slate-900 tracking-tight mb-4">
-                Primary Legal Sources and Statutory Authorities Governing BigBasket Grocery Disputes
+                Statutory Authorities Governing BigBasket Quick-Commerce Disputes
               </h2>
               <div className="text-sm sm:text-base text-slate-700 leading-relaxed space-y-4">
                 <p>

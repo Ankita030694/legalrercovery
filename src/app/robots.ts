@@ -7,7 +7,15 @@ export default function robots(): MetadataRoute.Robots {
       {
         userAgent: "*",
         allow: "/",
-        disallow: ["/authority/", "/nullify/", "/user/", "/payu/"],
+        disallow: [
+          "/authority/",
+          "/nullify/",
+          "/user/",
+          "/payu/",
+          "/payment-success",
+          "/payment-failure",
+          "/payment-cancelled",
+        ],
       },
       {
         userAgent: [
@@ -21,7 +29,15 @@ export default function robots(): MetadataRoute.Robots {
           "Applebot-Extended",
         ],
         allow: "/",
-        disallow: ["/authority/", "/nullify/", "/user/", "/payu/"],
+        disallow: [
+          "/authority/",
+          "/nullify/",
+          "/user/",
+          "/payu/",
+          "/payment-success",
+          "/payment-failure",
+          "/payment-cancelled",
+        ],
       }
     ],
     sitemap: `${SITE_URL}/sitemap.xml`,

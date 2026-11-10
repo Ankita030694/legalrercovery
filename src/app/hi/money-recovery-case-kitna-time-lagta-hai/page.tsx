@@ -453,7 +453,7 @@ export default function MoneyRecoveryTimePage() {
                   id="heading-stage-breakdown-title"
                   className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight"
                 >
-                  मनी रिकवरी केस कोर्ट में कितना समय लेता है: कानूनी नोटिस से लेकर डिक्री निष्पादन तक
+                  कोर्ट में मनी रिकवरी केस: नोटिस से डिक्री तक कितना समय
                 </h2>
                 <p className="text-sm sm:text-base text-slate-700 leading-relaxed">
                   जब कोई व्यक्ति किसी दीवानी अदालत (Civil Court) में पैसे की वसूली का मुकदमा दायर करता है, तो कानूनी प्रक्रिया विभिन्न चरणों से गुजरती है। अक्सर लोग सोचते हैं कि केस फाइल करते ही अगले महीने फैसला आ जाएगा, लेकिन सिविल प्रक्रिया संहिता (CPC, 1908) के तहत हर चरण की एक निर्धारित समय सीमा होती है। आइए जानें कि कोर्ट में प्रत्येक चरण कितना समय लेता है:
@@ -562,7 +562,7 @@ export default function MoneyRecoveryTimePage() {
                   id="heading-summary-suit-title"
                   className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight"
                 >
-                  समरी सूट (Order 37 CPC) में कितना समय लगता है — 6 से 12 महीने में त्वरित डिक्री
+                  समरी सूट (Order 37 CPC): 6 से 12 महीने में त्वरित डिक्री
                 </h2>
                 <p className="text-sm sm:text-base text-slate-700 leading-relaxed">
                   यदि आपके पास देनदार का चेक, प्रॉमिसरी नोट, हुंडी, टैक्स इनवॉइस, या कोई लिखित अनुबंध है जिसमें एक निश्चित राशि (Liquidated Demand in Money) का उल्लेख है, तो आप सामान्य दीवानी मुकदमे की जगह <strong>सीपीसी के आदेश 37 (Order XXXVII CPC)</strong> के तहत समरी सूट फाइल कर सकते हैं। यह सिविल कानून में पैसे वसूलने का सबसे तेज़ और अचूक हथियार है।
@@ -611,7 +611,7 @@ export default function MoneyRecoveryTimePage() {
                   id="heading-cheque-bounce-title"
                   className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight"
                 >
-                  चेक बाउंस (Section 138 NI Act) केस कितने दिन में निपटता है — धारा 143A व स्पीडी ट्रायल
+                  चेक बाउंस (Section 138): 143A व स्पीडी ट्रायल की समय सीमा
                 </h2>
                 <p className="text-sm sm:text-base text-slate-700 leading-relaxed">
                   यदि देनदार ने आपको चेक दिया था और वह खाते में अपर्याप्त राशि (Funds Insufficient) या किसी अन्य कारण से बाउंस हो गया, तो आप परक्राम्य लिखत अधिनियम, 1881 की धारा 138 के तहत आपराधिक मुकदमा चला सकते हैं।
@@ -803,7 +803,7 @@ export default function MoneyRecoveryTimePage() {
                   id="heading-pre-litigation-title"
                   className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight"
                 >
-                  कोर्ट जाए बिना पैसा जल्दी वापस पाने के 4 कानूनी विकल्प: लोक अदालत, मध्यस्थता और प्री-लिटिगेशन
+                  बिना कोर्ट जाए पैसा पाने के 4 विकल्प: लोक अदालत व मध्यस्थता
                 </h2>
                 <p className="text-sm sm:text-base text-slate-700 leading-relaxed">
                   यदि आप कोर्ट के चक्करों और वकीलों की लंबी फीस से बचना चाहते हैं, तो भारतीय कानून में कई ऐसे प्रभावी वैधानिक तंत्र हैं जो अदालत में मुकदमा लड़े बिना आपका पैसा कुछ ही हफ्तों में वापस दिला सकते हैं:
@@ -953,7 +953,7 @@ export default function MoneyRecoveryTimePage() {
                     id="heading-case-citations-title"
                     className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight"
                   >
-                    अदालत के 4 ऐतिहासिक फैसले: मनी रिकवरी और समरी प्रक्रिया की समय सीमा पर न्यायिक मिसालें
+                    अदालती फैसले: मनी रिकवरी व समरी प्रक्रिया की समय सीमा
                   </h2>
                   <span className="text-xs font-bold text-slate-500 uppercase tracking-wider">
                     सुप्रीम कोर्ट के सत्यापित निर्णय
@@ -1031,7 +1031,7 @@ export default function MoneyRecoveryTimePage() {
                     id="heading-worked-example-title"
                     className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight"
                   >
-                    वास्तविक समय गणना उदाहरण: ₹6,50,000 की रिकवरी में नोटिस से बैंक खाते तक का समय
+                    उदाहरण: ₹6,50,000 की रिकवरी में नोटिस से खाते तक का समय
                   </h2>
                   <span className="text-xs font-bold text-slate-500 uppercase tracking-wider">
                     तारीख-दर-तारीख केस स्टडी

@@ -257,8 +257,7 @@ export default function AboutPage() {
               <span className="text-[10px] font-black text-[#DC2626] uppercase tracking-[0.15em]">Why We Started</span>
             </div>
             <h2 className="text-[28px] sm:text-[38px] lg:text-[46px] font-black text-[#111827] leading-[1.15] tracking-tight">
-              Democratizing Financial Justice: <br className="hidden sm:inline" />
-              <span className="text-[#DC2626]">Why Legal Recovery Was Born</span>
+              Democratizing Financial Justice: <span className="text-[#DC2626]">Our Mission</span>
             </h2>
             <p className="mt-4 text-[13px] sm:text-[15px] text-[#4B5563] max-w-[720px] mx-auto leading-relaxed">
               Thousands of honest citizens face financial distress when debtors default on payments. As a leading recovery company, we provide professional assistance and legal recovery support. Here is why we built India&apos;s premier technology driven dispute resolution platform.

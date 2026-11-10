@@ -374,7 +374,7 @@ export default function SebiSmartOdrBrokerComplaintPage() {
                     id="heading-redressal-ladder-title"
                     className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight"
                   >
-                    The 4-Tier Redressal Ladder: From Broker Grievance Cell to Binding Arbitration
+                    4-Tier Redressal Ladder: Grievance Cell to Binding Arbitration
                   </h2>
                   <span className="text-xs font-bold text-slate-500 uppercase tracking-wider">
                     Statutory Escalation Rail

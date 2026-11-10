@@ -934,7 +934,7 @@ export default function SalaryDelayComplaintLetterPage() {
                     id="heading-faqs-title"
                     className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight"
                   >
-                    Frequently Asked Questions About Delayed Salary &amp; HR Complaint Letters
+                    FAQs on Delayed Salary Complaints and HR Letters in India
                   </h2>
                   <span className="text-xs font-bold text-slate-500 uppercase tracking-wider">
                     Practical Legal Guidance

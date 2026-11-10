@@ -533,7 +533,7 @@ export default function EJagritiConsumerComplaintGuidePage() {
                   id="heading-evidence-matrix-title"
                   className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight"
                 >
-                  e-Jagriti Evidence Matrix: What to Upload, Why It Matters, &amp; Sources
+                  e-Jagriti Evidence Matrix: Documents to Upload and Sources
                 </h2>
                 <p className="text-sm sm:text-base text-slate-700 leading-relaxed">
                   Under the Bharatiya Sakshya Adhiniyam, 2023 (BSA Section 63), electronic printouts, digital payment slips, WhatsApp communications, and email records are fully admissible in consumer commissions provided they are accompanied by a basic verification statement. Organize your digital files into these distinct PDF annexures before beginning the upload sequence:
@@ -992,7 +992,7 @@ export default function EJagritiConsumerComplaintGuidePage() {
                   id="heading-worked-example-title"
                   className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight"
                 >
-                  Worked Case Example: ₹1,35,000 Defective Laptop &amp; Warranty Refusal Dispute
+                  Worked Example: ₹1.35L Defective Laptop Warranty Dispute
                 </h2>
                 <p className="text-sm sm:text-base text-slate-700 leading-relaxed">
                   To illustrate how e-Jagriti functions in practice, review this concrete breakdown of a common consumer dispute involving defective hardware and warranty repudiation:

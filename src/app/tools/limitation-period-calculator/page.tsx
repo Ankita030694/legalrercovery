@@ -318,7 +318,7 @@ export default function LimitationPeriodCalculatorPage() {
                     id="heading-legal-basis-title"
                     className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight"
                   >
-                    How the Limitation Period for Money Recovery Is Calculated Under Indian Law
+                    Calculating the Limitation Period for Money Recovery in India
                   </h2>
                   <span className="text-xs font-bold text-slate-500 uppercase tracking-wider">
                     Limitation Act 1963
@@ -355,7 +355,7 @@ export default function LimitationPeriodCalculatorPage() {
                     id="heading-statutory-schedule-title"
                     className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight"
                   >
-                    Statutory Limitation Schedule: Articles Governing Money, Invoices &amp; Employment Dues
+                    Limitation Schedule: Articles Governing Debts and Unpaid Dues
                   </h2>
                   <span className="text-xs font-bold text-slate-500 uppercase tracking-wider">
                     Statutory Reference Matrix
@@ -436,7 +436,7 @@ export default function LimitationPeriodCalculatorPage() {
                     id="heading-revival-rules-title"
                     className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight"
                   >
-                    How Sections 18 and 19 of the Limitation Act Extend or Restart the 3-Year Clock
+                    How Sections 18 and 19 Extend or Restart the 3-Year Clock
                   </h2>
                   <span className="text-xs font-bold text-slate-500 uppercase tracking-wider">
                     Statutory Clock Resets
@@ -665,7 +665,7 @@ export default function LimitationPeriodCalculatorPage() {
                     id="heading-worked-examples-title"
                     className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight"
                   >
-                    4 Worked Examples: Calculating Limitation Periods Across Real Scenarios
+                    4 Worked Examples: Calculating Debt Limitation Periods
                   </h2>
                   <span className="text-xs font-bold text-slate-500 uppercase tracking-wider">
                     Illustrative Case Studies
@@ -769,7 +769,7 @@ export default function LimitationPeriodCalculatorPage() {
                     id="heading-statutory-exceptions-title"
                     className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight"
                   >
-                    Critical Statutory Exceptions &amp; Exclusions Under the Limitation Act
+                    Statutory Exceptions and Exclusions Under the Limitation Act
                   </h2>
                   <span className="text-xs font-bold text-slate-500 uppercase tracking-wider">
                     Statutory Exclusions

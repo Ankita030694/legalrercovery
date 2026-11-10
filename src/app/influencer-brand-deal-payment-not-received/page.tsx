@@ -317,7 +317,7 @@ export default function InfluencerBrandDealPaymentRecoveryPage() {
                   id="heading-decision-tree-title"
                   className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight"
                 >
-                  Creator &amp; Influencer Payment Recovery Decision Tree: Which Legal Route Fits Your Unpaid Brand Collaboration?
+                  Creator Payment Recovery Decision Tree: Unpaid Brand Collaborations
                 </h2>
                 <p className="text-sm sm:text-base text-slate-700 leading-relaxed">
                   In India&apos;s creator economy, brand deal payments routinely get trapped between influencer marketing agencies, talent managers, and corporate brand procurement teams for 90 to 180 days. Selecting the fastest legal escalation depends on three facts: (1) whether the brand is actively using or boosting your video in paid ads, (2) whether you hold Udyam MSME registration, and (3) whether your deal was documented via a formal Release Order or WhatsApp/Instagram DMs. Use this decision tree to map your exact route:
@@ -543,7 +543,7 @@ export default function InfluencerBrandDealPaymentRecoveryPage() {
                   id="heading-routes-comparison-title"
                   className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight"
                 >
-                  Comparing Influencer &amp; Creator Recovery Routes: Deadlines, Costs, Forums &amp; Statutory Leverage
+                  Comparing Creator Recovery Routes: Deadlines, Costs and Forums
                 </h2>
                 <p className="text-sm sm:text-base text-slate-700 leading-relaxed">
                   Unlike generic freelancer disputes, influencer collaborations carry unique commercial pressure points—brand reputation, paid media ad accounts, and tax deductions. Compare all five legal mechanisms below:
@@ -618,7 +618,7 @@ export default function InfluencerBrandDealPaymentRecoveryPage() {
                   id="heading-agency-vs-brand-title"
                   className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight"
                 >
-                  Who Must Pay You—The Influencer Marketing Agency or the Brand? Defeating the &quot;Brand Hasn&apos;t Paid Us&quot; Excuse
+                  Who Must Pay You: Marketing Agency or Brand? Joint Liability Rules
                 </h2>
                 <p className="text-sm sm:text-base text-slate-700 leading-relaxed">
                   Both the contracting influencer marketing agency (as primary debtor under Sections 70 and 73 of the Indian Contract Act, 1872) and the sponsoring brand (as principal beneficiary under Section 226 of the Contract Act) should be arrayed together in your statutory demand notice. In Indian influencer disputes, the #1 stalling tactic used by middlemen agencies is claiming: <em>&quot;Our contract is back-to-back; we will release your payout as soon as the brand clears our master campaign invoice.&quot;</em>
@@ -660,7 +660,7 @@ export default function InfluencerBrandDealPaymentRecoveryPage() {
                   id="heading-route-copyright-title"
                   className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight"
                 >
-                  Route 1: Copyright Act Section 19 &amp; Digital Takedown Leverage When a Brand Uses Your Reel or Video Without Paying
+                  Route 1: Copyright Act Section 19 and Digital Takedowns for Reels
                 </h2>
                 <p className="text-sm sm:text-base text-slate-700 leading-relaxed">
                   Under <strong>Section 17 and Section 19(1) of the Copyright Act, 1957</strong>, the creator who conceptualizes, shoots, and edits a video or photograph is the first statutory owner of the copyright in the cinematograph film, sound recording, and underlying literary script—as well as Performers&apos; Rights under <strong>Section 38</strong>. No assignment of copyright is valid unless it is in writing, signed by the creator, and specifies the exact royalty/consideration payable (Section 19(1)–(3)).
@@ -702,7 +702,7 @@ export default function InfluencerBrandDealPaymentRecoveryPage() {
                   id="heading-route-msme-43bh-title"
                   className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight"
                 >
-                  Route 2: MSME ODR Portal, Section 16 Interest (3× RBI Rate) &amp; Section 43B(h) Tax Disallowance for Udyam-Registered Creators
+                  Route 2: MSME ODR Portal, Section 16 Interest &amp; Section 43B(h)
                 </h2>
                 <p className="text-sm sm:text-base text-slate-700 leading-relaxed">
                   If you operate as a solo creator, proprietorship, or production studio and hold a free <strong>Udyam Registration Certificate</strong> as a Micro or Small Enterprise (under NIC 73100 Advertising / Influencer Marketing or NIC 59111 Video Production), the <Link href="/msme-act-freelancer-payment-recovery" className="text-blue-700 underline font-semibold">MSMED Act, 2006 (as amended in 2026)</Link> overrides predatory 60-day or 90-day agency payment clauses:
@@ -753,7 +753,7 @@ export default function InfluencerBrandDealPaymentRecoveryPage() {
                   id="heading-route-civil-whatsapp-title"
                   className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight"
                 >
-                  Route 3: Summary Suits (Order XXXVII CPC), Section 70 Quantum Meruit &amp; Section 194J TDS Proof for WhatsApp Briefs
+                  Route 3: Order 37 Summary Suits, Quantum Meruit and TDS Proof
                 </h2>
                 <p className="text-sm sm:text-base text-slate-700 leading-relaxed">
                   What if you are not registered under MSME and never signed a formal PDF contract? You still have a rock-solid recovery path under civil law. Indian courts recognize that digital media campaigns move rapidly over <Link href="/can-whatsapp-chat-be-used-as-evidence-in-money-recovery-case" className="text-blue-700 underline font-semibold">WhatsApp chats and email threads</Link>:
@@ -789,7 +789,7 @@ export default function InfluencerBrandDealPaymentRecoveryPage() {
                     id="heading-court-rulings-title"
                     className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight"
                   >
-                    Landmark Judicial Precedents on Unpaid Creative Work, Agency-Brand Liability &amp; Copyright Protection
+                    Court Precedents on Unpaid Creative Work and Copyright Protection
                   </h2>
                   <span className="text-xs font-bold text-slate-500 uppercase tracking-wider">
                     Verified Court Records
@@ -867,7 +867,7 @@ export default function InfluencerBrandDealPaymentRecoveryPage() {
                     id="heading-scenario-picker-title"
                     className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight"
                   >
-                    Creator &amp; Influencer Dispute Scenarios: Root Causes, Contract Traps &amp; 3-Step Legal Fixes
+                    Creator Dispute Scenarios: Contract Traps and 3-Step Legal Fixes
                   </h2>
                   <p className="text-xs font-semibold text-slate-500 mt-1">
                     Select Your Specific Brand or Agency Payment Bottleneck to View the Legal Basis and Immediate Action Plan
@@ -883,7 +883,7 @@ export default function InfluencerBrandDealPaymentRecoveryPage() {
                   id="heading-playbook-title"
                   className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight"
                 >
-                  The 5-Step Escalation Playbook to Recover Delayed Brand Deal &amp; Agency Payments
+                  5-Step Escalation Playbook to Recover Delayed Brand Deal Payments
                 </h2>
                 <p className="text-sm sm:text-base text-slate-700 leading-relaxed">
                   Stop sending polite WhatsApp reminders to junior agency coordinators who have no authority to sign bank payouts. Execute this structured 5-step legal escalation:
@@ -971,7 +971,7 @@ export default function InfluencerBrandDealPaymentRecoveryPage() {
                   id="heading-worked-example-title"
                   className="text-xl sm:text-2xl font-bold text-slate-900 tracking-tight"
                 >
-                  Worked Case Study: Lifestyle Creator Recovers ₹3,85,000 Unpaid 3-Reel Campaign Fee + ₹24,500 Interest After Joint Brand-Agency Notice
+                  Case Study: Creator Recovers ₹3.85L Unpaid Fee via Joint Notice
                 </h2>
                 <div className="bg-slate-900 text-white rounded-2xl p-5 sm:p-8 shadow-xl space-y-4 sm:space-y-5 w-full overflow-hidden">
                   <div className="flex flex-wrap items-center justify-between gap-2 border-b border-slate-800 pb-3">
@@ -1005,7 +1005,7 @@ export default function InfluencerBrandDealPaymentRecoveryPage() {
                   id="heading-evidence-checklist-title"
                   className="text-xl sm:text-2xl font-bold text-slate-900 tracking-tight"
                 >
-                  Influencer &amp; Creator Evidence Checklist: 6 Digital Records Needed Under Section 63 BSA
+                  Evidence Checklist: 6 Digital Records Under BSA Section 63
                 </h2>
                 <p className="text-xs sm:text-sm text-slate-700 leading-relaxed">
                   Under Section 63 of the Bharatiya Sakshya Adhiniyam, 2023 (BSA), digital chats, campaign emails, and social media analytics are primary admissible evidence. Keep these 6 records ready (see our full <Link href="/freelancer-evidence-checklist-payment-recovery-india" className="text-blue-700 underline font-semibold">freelancer &amp; creator evidence guide</Link>):
@@ -1068,7 +1068,7 @@ export default function InfluencerBrandDealPaymentRecoveryPage() {
                   id="heading-honest-scope-title"
                   className="text-xl sm:text-2xl font-bold text-slate-900 tracking-tight"
                 >
-                  Honest Scope: What LegalRecovery Can and Cannot Do for Unpaid Creators &amp; Influencers
+                  Scope: What LegalRecovery Can Do for Unpaid Creators
                 </h2>
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                   <div className="p-5 bg-emerald-50/70 border border-emerald-200 rounded-2xl space-y-2">
@@ -1103,7 +1103,7 @@ export default function InfluencerBrandDealPaymentRecoveryPage() {
                     id="heading-faqs-title"
                     className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight"
                   >
-                    Frequently Asked Questions: Influencer Brand Deal Payment Delays, Agency Defaults &amp; Legal Notices
+                    FAQs on Influencer Brand Deal Payments and Agency Defaults
                   </h2>
                   <p className="text-xs font-semibold text-slate-500 mt-1">
                     Direct Statutory Answers Grounded in the Indian Contract Act, Copyright Act Section 19 &amp; MSMED Rules
@@ -1136,7 +1136,7 @@ export default function InfluencerBrandDealPaymentRecoveryPage() {
                   id="heading-sources-title"
                   className="text-lg sm:text-xl font-bold text-slate-900 tracking-tight"
                 >
-                  Primary Legal Statutes, Copyright Provisions, ASCI Rules &amp; Official References
+                  Statutory Provisions, Copyright Rules and Official References
                 </h2>
                 <ol className="sources list-decimal list-inside space-y-2 text-xs sm:text-sm text-slate-600">
                   {PRIMARY_SOURCES.map((source, idx) => (

@@ -18,6 +18,7 @@ export const metadata: Metadata = {
     languages: {
       "hi-IN": `${SITE_URL}/hi/udhar-paisa-wapas-kaise-le`,
       "en-IN": `${SITE_URL}/blog/koi-paisa-na-de-to-kya-kare`,
+      "x-default": `${SITE_URL}/blog/koi-paisa-na-de-to-kya-kare`,
     },
   },
   openGraph: {

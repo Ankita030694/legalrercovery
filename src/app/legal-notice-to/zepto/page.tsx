@@ -408,7 +408,7 @@ export default function ZeptoLegalNoticePage() {
                 id="facts-heading"
                 className="text-2xl sm:text-3xl font-bold tracking-tight text-slate-900 mb-4"
               >
-                What Are the Legal Deadlines and Key Statutory Facts for Zepto Refund Disputes?
+                Legal Deadlines and Statutory Facts for Zepto Refund Disputes
               </h2>
               <p className="text-slate-700 leading-relaxed mb-6">
                 Quick-commerce transactions are governed by strict consumer safety laws, packaging rules, and e-commerce regulations. E-commerce platforms operate under mandatory statutory time limits that cannot be overridden by unilateral app terms and conditions.
@@ -478,7 +478,7 @@ export default function ZeptoLegalNoticePage() {
                 id="grievance-heading"
                 className="text-2xl sm:text-3xl font-bold tracking-tight text-slate-900 mb-4"
               >
-                Who Is the Zepto Grievance Officer and How Do You Contact Them Under the E-Commerce Rules?
+                Contacting the Zepto Grievance Officer Under E-Commerce Rules
               </h2>
               <p className="text-slate-700 leading-relaxed mb-6">
                 Rule 4(4) and Rule 4(5) of the Consumer Protection (E-Commerce) Rules, 2020 mandate that every e-commerce entity appoint a designated Grievance Officer resident in India. When automated app support runs into a dead end, serving notice directly to this statutory office establishes the official legal complaint.
@@ -539,7 +539,7 @@ export default function ZeptoLegalNoticePage() {
                 id="liability-heading"
                 className="text-2xl sm:text-3xl font-bold tracking-tight text-slate-900 mb-4"
               >
-                Why Is Zepto Legally Liable for Dark Store Packing Failures and Broken Deliveries?
+                Why Zepto Is Liable for Dark Store Packing and Delivery Failures
               </h2>
               <p className="text-slate-700 leading-relaxed mb-4">
                 Quick-commerce apps frequently disclaim responsibility by arguing that they operate solely as technology intermediaries connecting users with local dark stores. This argument has been systematically struck down by consumer commissions and high courts across India.
@@ -566,7 +566,7 @@ export default function ZeptoLegalNoticePage() {
                 id="caselaw-heading"
                 className="text-2xl sm:text-3xl font-bold tracking-tight text-slate-900 mb-4"
               >
-                What Compensation Have Consumer Courts Ordered Zepto and Quick-Commerce Apps to Pay?
+                Consumer Court Orders Against Zepto and Quick-Commerce Apps
               </h2>
               <p className="text-slate-700 leading-relaxed mb-6">
                 Consumer commissions repeatedly reject the defense that quick-commerce packing errors are "unavoidable technical glitches." When platforms fail to inspect customer grievances fairly, courts impose punitive damages alongside legal costs.
@@ -599,7 +599,7 @@ export default function ZeptoLegalNoticePage() {
                     <a
                       href="https://timesofindia.indiatimes.com/city/hyderabad/quick-commerce-platform-penalised-for-overcharging-mrp/articleshow/102948210.cms"
                       target="_blank"
-                      rel="noopener noreferrer"
+                      rel="noopener noreferrer nofollow"
                       className="text-xs font-bold text-purple-700 hover:underline"
                     >
                       Read Case Report (Times of India) &rarr;
@@ -627,7 +627,7 @@ export default function ZeptoLegalNoticePage() {
                     <a
                       href="https://www.livelaw.in/consumer-cases/grofers-india-blinkit-consumer-court-refund-compensation-missing-item-243501"
                       target="_blank"
-                      rel="noopener noreferrer"
+                      rel="noopener noreferrer nofollow"
                       className="text-xs font-bold text-purple-700 hover:underline"
                     >
                       Read Judgment Summary (LiveLaw) &rarr;
@@ -655,7 +655,7 @@ export default function ZeptoLegalNoticePage() {
                     <a
                       href="https://lawstreet.co/news/zomato-ordered-to-pay-60000-compensation-consumer-forum-dharwad"
                       target="_blank"
-                      rel="noopener noreferrer"
+                      rel="noopener noreferrer nofollow"
                       className="text-xs font-bold text-purple-700 hover:underline"
                     >
                       Read Commission Order Analysis &rarr;
@@ -671,7 +671,7 @@ export default function ZeptoLegalNoticePage() {
                 id="flow-heading"
                 className="text-2xl sm:text-3xl font-bold tracking-tight text-slate-900 mb-4"
               >
-                Where Does Customer Money Get Stuck? The Zepto Delivery &amp; Refund Flow
+                Where Customer Money Gets Stuck: Zepto Delivery and Refund Flow
               </h2>
               <p className="text-slate-700 leading-relaxed mb-4">
                 Understanding how your payment flows from the checkout gateway to the dark store reveals why automated customer care gets trapped in loop denials, and why a formal advocate legal demand notice breaks the deadlock.
@@ -685,7 +685,7 @@ export default function ZeptoLegalNoticePage() {
                 id="evidence-heading"
                 className="text-2xl sm:text-3xl font-bold tracking-tight text-slate-900 mb-4"
               >
-                Which Order Photos, Delivery Bags, and In-App Chats Form Admissible Evidence for Zepto Disputes?
+                Order Photos and Chats: Admissible Evidence for Zepto Claims
               </h2>
               <p className="text-slate-700 leading-relaxed mb-6">
                 Under Section 63 of the Bharatiya Sakshya Adhiniyam, 2023 (BSA), electronic records including mobile app screenshots, digital tax invoices, and chat logs are fully admissible before Consumer Commissions when preserved with original timestamps.
@@ -752,7 +752,7 @@ export default function ZeptoLegalNoticePage() {
                 id="example-heading"
                 className="text-2xl sm:text-3xl font-bold tracking-tight text-slate-900 mb-4"
               >
-                Illustrative Resolution: How a ₹2,840 Zepto Missing Item Dispute Succeeded via Legal Notice
+                Resolution Example: ₹2,840 Zepto Missing Item Legal Recovery
               </h2>
               <p className="text-slate-700 leading-relaxed mb-6">
                 The following worked scenario illustrates how quick-commerce legal escalation functions in practice when automated customer support arbitrarily rejects a consumer claim.
@@ -792,7 +792,7 @@ export default function ZeptoLegalNoticePage() {
                 id="template-heading"
                 className="text-2xl sm:text-3xl font-bold tracking-tight text-slate-900 mb-4"
               >
-                Statutory Grievance Format: Formal Refund &amp; Compensation Notice to Zepto Marketplace
+                Formal Refund and Compensation Notice to Zepto Marketplace
               </h2>
               <p className="text-slate-700 leading-relaxed mb-4">
                 You can adapt the following advocate-approved pre-litigation demand format to serve a formal written claim against Zepto. Fill in the bracketed placeholders with your specific order details before sending.
@@ -822,7 +822,7 @@ export default function ZeptoLegalNoticePage() {
                 id="scope-heading"
                 className="text-2xl sm:text-3xl font-bold tracking-tight text-slate-900 mb-4"
               >
-                What Can and Cannot LegalRecovery Deliver When Escalating a Zepto Quick-Commerce Claim?
+                Scope of Legal Remedies When Escalating a Zepto Refund Claim
               </h2>
               <p className="text-slate-700 leading-relaxed mb-6">
                 We believe in complete transparency regarding consumer legal procedures. While statutory legal notices resolve the vast majority of e-commerce delivery disputes, it is vital to know our exact operational boundaries.
@@ -892,7 +892,7 @@ export default function ZeptoLegalNoticePage() {
                 id="faq-heading"
                 className="text-2xl sm:text-3xl font-bold tracking-tight text-slate-900 mb-4"
               >
-                Frequently Asked Questions About Zepto Refunds, Wrong Products &amp; Legal Notices
+                FAQs on Zepto Refunds, Wrong Deliveries and Legal Notices
               </h2>
               <p className="text-slate-700 leading-relaxed mb-6">
                 Clear legal answers to the most common queries consumers face when handling stuck refunds, missing grocery orders, and dark store disputes with Zepto.
@@ -925,7 +925,7 @@ export default function ZeptoLegalNoticePage() {
                 id="sources-heading"
                 className="text-xl sm:text-2xl font-bold tracking-tight text-slate-900 mb-3"
               >
-                Legal Acts, Central Rules, and Official Portals Regulating Zepto Marketplace Orders
+                Central Rules and Official Portals Regulating Zepto Orders
               </h2>
               <p className="text-xs sm:text-sm text-slate-600 leading-relaxed mb-4">
                 Every assertion, statutory timeline, and case award referenced on this page is derived directly from official government gazettes, central consumer protection rules, and consumer commission orders:
@@ -937,7 +937,7 @@ export default function ZeptoLegalNoticePage() {
                     <a
                       href={source.url}
                       target="_blank"
-                      rel="noopener noreferrer"
+                      rel="noopener noreferrer nofollow"
                       className="text-purple-700 hover:underline font-medium"
                     >
                       {source.title}

@@ -305,7 +305,7 @@ export default function BankChargesRefundPage() {
               Dispute Anatomy
             </span>
             <h2 className="text-xl sm:text-2xl font-bold text-slate-900">
-              Common Unlawful Bank Charges &amp; How Financial Institutions Exploit Borrowers
+              Common Unlawful Bank Charges and Borrower Rights in India
             </h2>
           </div>
           <p className="text-slate-600 text-xs sm:text-sm md:text-base leading-relaxed mb-6">
@@ -322,7 +322,7 @@ export default function BankChargesRefundPage() {
               Statutory Architecture
             </span>
             <h2 className="text-xl sm:text-2xl font-bold text-slate-900">
-              Binding RBI Circulars &amp; Consumer Protection Act Sections Governing Bank Charges
+              RBI Circulars and Consumer Protection Rules on Bank Charges
             </h2>
           </div>
 
@@ -390,7 +390,7 @@ export default function BankChargesRefundPage() {
               Case Demonstration
             </span>
             <h2 className="text-xl sm:text-2xl font-bold text-slate-900">
-              Worked Financial Audit: Cascading NACH Bounce Fee &amp; Negative Balance Trap
+              Worked Audit: Cascading NACH Bounce Fees and Balance Traps
             </h2>
           </div>
           <p className="text-slate-600 text-xs sm:text-sm md:text-base leading-relaxed mb-6">

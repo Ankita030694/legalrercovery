@@ -405,7 +405,7 @@ export default function RecoverMoneyFromExPartnerPage() {
                     id="heading-scenario-cards-title"
                     className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight"
                   >
-                    6 Breakup Money Dispute Scenarios: Evidentiary Weight &amp; Outcome Odds
+                    Breakup Money Disputes: Evidentiary Weight and Recovery Odds
                   </h2>
                   <span className="text-xs font-bold text-slate-500 uppercase tracking-wider">
                     Archetype G2 Analysis
@@ -644,7 +644,7 @@ export default function RecoverMoneyFromExPartnerPage() {
                   id="heading-limitation-table-title"
                   className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight"
                 >
-                  Statutory Deadlines &amp; Legal Benchmarks: Money Recovery from Partners
+                  Statutory Deadlines: Recovering Personal Loans from Ex-Partners
                 </h2>
                 <p className="text-sm sm:text-base text-slate-700 leading-relaxed">
                   The table below outlines the exact statutory provisions, limitation periods, admissible evidence, and expected legal outcomes under current Indian law:
@@ -708,7 +708,7 @@ export default function RecoverMoneyFromExPartnerPage() {
                   id="heading-resolution-flow-title"
                   className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight"
                 >
-                  Statutory Resolution Rail: From Breakup Default to Bank Account Recovery
+                  Resolution Rail: From Loan Default to Bank Account Recovery
                 </h2>
                 <p className="text-sm sm:text-base text-slate-700 leading-relaxed">
                   The visual workflow below traces the progressive escalation stages from informal default to formal court decree and asset attachment:
@@ -780,7 +780,7 @@ export default function RecoverMoneyFromExPartnerPage() {
                   id="heading-worked-example-title"
                   className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight"
                 >
-                  Worked Case Study: Software Engineer Recovers ₹4,80,000 Lent to Ex-Partner
+                  Case Study: Recovering ₹4.80L Personal Loan Lent to Ex-Partner
                 </h2>
                 <p className="text-sm sm:text-base text-slate-700 leading-relaxed">
                   The following real-world illustrative case demonstrates how evidence compilation and an advocate demand notice resolved an acrimonious debt dispute without a drawn-out civil trial:
@@ -834,7 +834,7 @@ export default function RecoverMoneyFromExPartnerPage() {
                   id="heading-evidence-checklist-title"
                   className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight"
                 >
-                  Ex-Partner Recovery Evidence Checklist: 6 Critical Records Under BSA 2023
+                  Evidence Checklist: 6 Records to Recover Money from Ex-Partner
                 </h2>
                 <p className="text-sm sm:text-base text-slate-700 leading-relaxed">
                   Before serving a legal demand notice or filing a court claim, assemble these six indispensable evidentiary components to ensure unassailable legal standing:

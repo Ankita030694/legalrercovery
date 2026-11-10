@@ -342,7 +342,7 @@ export default function InsuranceOmbudsmanTemplatePage() {
               {/* Section 2: Field-by-Field Breakdown */}
               <section id="heading-field-breakdown" aria-labelledby="h2-field-breakdown" className="space-y-4">
                 <h2 id="h2-field-breakdown" className="text-xl sm:text-2xl font-bold text-slate-900 tracking-tight">
-                  Field-by-Field Breakdown of Annexure VI-A: What to Write in Each Column
+                  Field-by-Field Breakdown of Annexure VI-A Complaint Columns
                 </h2>
                 <p className="text-sm text-slate-700 leading-relaxed">
                   Secretariats of the Insurance Ombudsman routinely return or delay complaints due to minor procedural defects, such as missing policy inception dates or omission of the mandatory Rule 14 declaration. The table below provides authoritative guidance for each section of Form VI-A:
@@ -401,7 +401,7 @@ export default function InsuranceOmbudsmanTemplatePage() {
               {/* Section 3: Dispute Grounds Matrix */}
               <section id="heading-complaint-grounds" aria-labelledby="h2-complaint-grounds" className="space-y-4">
                 <h2 id="h2-complaint-grounds" className="text-xl sm:text-2xl font-bold text-slate-900 tracking-tight">
-                  Choosing the Right Complaint Grounds: Health, Life, Motor, and Delay Scenarios
+                  Choosing Complaint Grounds: Health, Life and Motor Scenarios
                 </h2>
                 <p className="text-sm text-slate-700 leading-relaxed">
                   Insurers rely on standardized repudiation clauses to decline claims. When drafting Paragraph 5 of your Annexure VI-A, pair the insurer&apos;s pretext with its statutory counter-doctrine to ensure the Ombudsman finds in your favor:
@@ -584,7 +584,7 @@ export default function InsuranceOmbudsmanTemplatePage() {
               {/* Section 6: Enclosure Checklist */}
               <section id="heading-documents-checklist" aria-labelledby="h2-documents-checklist" className="space-y-4">
                 <h2 id="h2-documents-checklist" className="text-xl sm:text-2xl font-bold text-slate-900 tracking-tight">
-                  Complete Document Enclosure Checklist: Papers That Must Accompany Annexure VI-A
+                  Enclosure Checklist: Documents That Must Accompany Annexure VI-A
                 </h2>
                 <p className="text-sm text-slate-700 leading-relaxed">
                   Every complaint filed under Form VI-A must be accompanied by supporting proof indexed systematically as Annexures. Prepare three sets (original plus two copies for physical filing, or a consolidated searchable PDF for email submission):
@@ -643,7 +643,7 @@ export default function InsuranceOmbudsmanTemplatePage() {
               {/* Section 7: Worked Example */}
               <section id="heading-worked-sample" aria-labelledby="h2-worked-sample" className="space-y-4">
                 <h2 id="h2-worked-sample" className="text-xl sm:text-2xl font-bold text-slate-900 tracking-tight">
-                  Worked Real-World Filing Sample: How an Arbitrary Claim Deduction Was Challenged
+                  Worked Filing Sample: Challenging Arbitrary Claim Deductions
                 </h2>
                 <p className="text-sm text-slate-700 leading-relaxed">
                   The following illustrative case study demonstrates how an arbitrary ₹3,40,000 hospital deduction was challenged and overturned using Annexure VI-A:
@@ -690,7 +690,7 @@ export default function InsuranceOmbudsmanTemplatePage() {
               <section id="heading-ombudsman-awards" aria-labelledby="h2-ombudsman-awards" className="space-y-6">
                 <div>
                   <h2 id="h2-ombudsman-awards" className="text-xl sm:text-2xl font-bold text-slate-900 tracking-tight">
-                    Groundbreaking Ombudsman Awards &amp; High Court Orders Upholding Policyholder Relief
+                    Ombudsman Awards and Court Orders Upholding Policyholder Relief
                   </h2>
                   <p className="text-sm text-slate-700 mt-1 leading-relaxed">
                     When drafting your complaint, citing authoritative Ombudsman awards and Supreme Court rulings creates immense persuasive pressure on the Ombudsman Secretariat and the insurer&apos;s claims committee:
@@ -728,7 +728,7 @@ export default function InsuranceOmbudsmanTemplatePage() {
               {/* Section 9: Honest Scope */}
               <section id="heading-honest-scope" aria-labelledby="h2-honest-scope" className="space-y-4">
                 <h2 id="h2-honest-scope" className="text-xl sm:text-2xl font-bold text-slate-900 tracking-tight">
-                  Honest Scope: What LegalRecovery Does and When You Must Appear Personally
+                  Scope: What LegalRecovery Does and When Personal Appearance Applies
                 </h2>
                 <div className="p-5 sm:p-6 rounded-2xl bg-slate-100 border border-slate-200 text-xs sm:text-sm text-slate-800 leading-relaxed space-y-3">
                   <p>
@@ -743,7 +743,7 @@ export default function InsuranceOmbudsmanTemplatePage() {
               {/* Section 10: FAQs */}
               <section id="heading-faqs" aria-labelledby="h2-faqs" className="space-y-4">
                 <h2 id="h2-faqs" className="text-xl sm:text-2xl font-bold text-slate-900 tracking-tight">
-                  Frequently Asked Questions About Insurance Ombudsman Complaint Format (Annexure VI-A)
+                  FAQs on Insurance Ombudsman Complaint Format (Annexure VI-A)
                 </h2>
 
                 <div className="space-y-3">

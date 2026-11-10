@@ -390,7 +390,7 @@ export default function RbiOmbudsmanComplaintGuidePage() {
                   id="heading-cms-process-title"
                   className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight"
                 >
-                  Step-by-Step Guide to Filing an Online RBI Ombudsman Complaint (CMS Portal)
+                  Step-by-Step Guide to Filing an Online RBI Ombudsman Complaint
                 </h2>
                 <div className="prose prose-slate max-w-none text-xs sm:text-sm md:text-base leading-relaxed text-slate-700 space-y-4">
                   <p>

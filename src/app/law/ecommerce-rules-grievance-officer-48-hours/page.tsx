@@ -7,7 +7,7 @@ import { DEFAULT_FUNNEL_SETTINGS } from "@/lib/funnel-config";
 import EcommerceNoticeCTA from "./EcommerceNoticeCTA";
 
 export const metadata: Metadata = {
-  title: "E-Commerce Rules 2020 & 2026 Amendment: Your Refund Rights",
+  title: "E-Commerce Rules 2020 & 2026 Amendment: Refund Rights",
   description:
     "The E-Commerce Rules make platforms acknowledge complaints in 48 hours and resolve them in a month. Here's what the 2026 amendment adds.",
   alternates: {

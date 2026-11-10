@@ -95,6 +95,15 @@ const nextConfig: NextConfig = {
         source: "/(.*)",
         headers: securityHeaders,
       },
+      {
+        source: "/hi/:path*",
+        headers: [
+          {
+            key: "Content-Language",
+            value: "hi-IN",
+          },
+        ],
+      },
     ];
   },
   async redirects() {

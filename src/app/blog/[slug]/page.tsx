@@ -97,6 +97,8 @@ function mapReviews(item: any): Review[] {
 }
 
 const BLOG_TITLE_OVERRIDES: Record<string, string> = {
+  "best-money-recovery-platform-india-2027":
+    "Best Money Recovery Platform in India: 2027 Guide",
   "flipkart-amazon-open-box-delivery-otp-defective-refund-denied-recovery":
     "Flipkart/Amazon Open Box Delivery Refund Denied: Fix",
   "subcontractor-retention-money-recovery-pay-when-paid-clause-india":
@@ -199,6 +201,7 @@ export async function generateMetadata(
             languages: {
               "en-IN": `${SITE_URL}/blog/koi-paisa-na-de-to-kya-kare`,
               "hi-IN": `${SITE_URL}/hi/udhar-paisa-wapas-kaise-le`,
+              "x-default": `${SITE_URL}/blog/koi-paisa-na-de-to-kya-kare`,
             },
           }
         : blog.slug === "legal-notice-kaise-bheje-step-by-step-guide"
@@ -206,6 +209,7 @@ export async function generateMetadata(
             languages: {
               "en-IN": `${SITE_URL}/blog/legal-notice-kaise-bheje-step-by-step-guide`,
               "hi-IN": `${SITE_URL}/hi/legal-notice-kaise-bheje`,
+              "x-default": `${SITE_URL}/blog/legal-notice-kaise-bheje-step-by-step-guide`,
             },
           }
         : {}),

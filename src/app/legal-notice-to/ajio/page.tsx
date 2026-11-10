@@ -650,7 +650,7 @@ export default function AjioLegalNoticePage() {
                   File an Official Docket with the National Consumer Helpline (NCH 1915)
                 </h3>
                 <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                  Register a formal complaint on the government&apos;s INGRAM portal (<a href="https://consumerhelpline.gov.in" target="_blank" rel="noopener noreferrer" className="text-[#DC2626] underline font-medium">consumerhelpline.gov.in</a>) or call 1915. Name <strong>Reliance Retail Limited (AJIO)</strong> as the respondent entity. The NCH assigns a central tracking docket that Reliance Retail&apos;s compliance desk must respond to within government SLAs.
+                  Register a formal complaint on the government&apos;s INGRAM portal (<a href="https://consumerhelpline.gov.in" target="_blank" rel="noopener noreferrer nofollow" className="text-[#DC2626] underline font-medium">consumerhelpline.gov.in</a>) or call 1915. Name <strong>Reliance Retail Limited (AJIO)</strong> as the respondent entity. The NCH assigns a central tracking docket that Reliance Retail&apos;s compliance desk must respond to within government SLAs.
                 </p>
               </div>
             </li>
@@ -691,7 +691,7 @@ export default function AjioLegalNoticePage() {
                   File a Formal Consumer Case on the e-Jagriti Portal
                 </h3>
                 <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-                  If Reliance Retail fails to resolve the matter within the 15-day legal notice window, file a formal complaint under Section 35 of the Consumer Protection Act, 2019 via the <a href="https://e-jagriti.gov.in" target="_blank" rel="noopener noreferrer" className="text-[#DC2626] underline font-medium">e-Jagriti portal</a>. For claims up to ₹50 lakh, the District Commission holds jurisdiction. You can represent yourself without hiring a court-appearing advocate.
+                  If Reliance Retail fails to resolve the matter within the 15-day legal notice window, file a formal complaint under Section 35 of the Consumer Protection Act, 2019 via the <a href="https://e-jagriti.gov.in" target="_blank" rel="noopener noreferrer nofollow" className="text-[#DC2626] underline font-medium">e-Jagriti portal</a>. For claims up to ₹50 lakh, the District Commission holds jurisdiction. You can represent yourself without hiring a court-appearing advocate.
                 </p>
               </div>
             </li>
@@ -1316,7 +1316,7 @@ export default function AjioLegalNoticePage() {
                   <a
                     href={source.url}
                     target="_blank"
-                    rel="noopener noreferrer"
+                    rel="noopener noreferrer nofollow"
                     className="text-[#DC2626] hover:underline font-medium"
                   >
                     {source.title}

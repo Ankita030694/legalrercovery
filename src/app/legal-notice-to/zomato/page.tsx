@@ -705,7 +705,7 @@ Phone: [INSERT CONTACT NUMBER]`;
                   <a
                     href="https://lawstreet.co/news/zomato-ordered-to-pay-60000-compensation-consumer-forum-dharwad"
                     target="_blank"
-                    rel="noopener noreferrer"
+                    rel="noopener noreferrer nofollow"
                     className="block text-red-600 font-semibold hover:underline mt-1"
                   >
                     View Case Summary &amp; Order Details →
@@ -732,7 +732,7 @@ Phone: [INSERT CONTACT NUMBER]`;
                   <a
                     href="https://www.livelaw.in/consumer-cases/consumer-disputes-redressal-commission-orders-zomato-to-pay-compensation-to-law-student-for-non-delivery-of-food-197022"
                     target="_blank"
-                    rel="noopener noreferrer"
+                    rel="noopener noreferrer nofollow"
                     className="block text-red-600 font-semibold hover:underline mt-1"
                   >
                     Read LiveLaw Judgment Report →
@@ -759,7 +759,7 @@ Phone: [INSERT CONTACT NUMBER]`;
                   <a
                     href="https://www.livelaw.in/consumer-cases/zomatos-failure-to-fulfill-promise-of-on-time-delivery-amounts-to-deficiency-in-service-174829"
                     target="_blank"
-                    rel="noopener noreferrer"
+                    rel="noopener noreferrer nofollow"
                     className="block text-red-600 font-semibold hover:underline mt-1"
                   >
                     Read LiveLaw Appellate Ruling →
@@ -786,7 +786,7 @@ Phone: [INSERT CONTACT NUMBER]`;
                   <a
                     href="https://www.livelaw.in/consumer-cases/consumer-commission-jodhpur-zomato-wrong-food-delivery-100000-penalty-188732"
                     target="_blank"
-                    rel="noopener noreferrer"
+                    rel="noopener noreferrer nofollow"
                     className="block text-red-600 font-semibold hover:underline mt-1"
                   >
                     View Case Summary &amp; Penalty Details →
@@ -1139,7 +1139,7 @@ Phone: [INSERT CONTACT NUMBER]`;
                   <a
                     href={source.url}
                     target="_blank"
-                    rel="noopener noreferrer"
+                    rel="noopener noreferrer nofollow"
                     className="text-red-700 hover:text-red-800 hover:underline font-medium"
                   >
                     {source.title}

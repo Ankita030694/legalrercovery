@@ -682,7 +682,7 @@ export default function BlinkitLegalNoticePage() {
                   </span>
                 </div>
                 <p className="text-sm text-slate-600 leading-relaxed mb-2">
-                  Dial <strong>1915</strong> or log onto <a href="https://consumerhelpline.gov.in" target="_blank" rel="noopener noreferrer" className="text-[#DC2626] font-semibold hover:underline">consumerhelpline.gov.in</a> to register an official NCH docket against Blink Commerce Private Limited.
+                  Dial <strong>1915</strong> or log onto <a href="https://consumerhelpline.gov.in" target="_blank" rel="noopener noreferrer nofollow" className="text-[#DC2626] font-semibold hover:underline">consumerhelpline.gov.in</a> to register an official NCH docket against Blink Commerce Private Limited.
                 </p>
                 <p className="text-xs text-slate-600">
                   NCH serves as an official pre-litigation government portal. Creating an INGRAM docket creates an indelible administrative trail demonstrating that you attempted institutional conciliation before initiating formal legal proceedings.
@@ -724,7 +724,7 @@ export default function BlinkitLegalNoticePage() {
                   </span>
                 </div>
                 <p className="text-sm text-slate-600 leading-relaxed mb-2">
-                  If the 15-day notice period lapses without full refund and compensation, file a formal complaint online via the government&apos;s unified <a href="https://e-jagriti.gov.in" target="_blank" rel="noopener noreferrer" className="text-[#DC2626] font-semibold hover:underline">e-Jagriti portal</a> (which replaced e-Daakhil). Under Section 34 of the CPA 2019, you can file directly in the District Commission having jurisdiction over your place of residence.
+                  If the 15-day notice period lapses without full refund and compensation, file a formal complaint online via the government&apos;s unified <a href="https://e-jagriti.gov.in" target="_blank" rel="noopener noreferrer nofollow" className="text-[#DC2626] font-semibold hover:underline">e-Jagriti portal</a> (which replaced e-Daakhil). Under Section 34 of the CPA 2019, you can file directly in the District Commission having jurisdiction over your place of residence.
                 </p>
                 <p className="text-xs text-slate-600">
                   Complaints with claim values up to ₹50 Lakh require nominal court fees (₹0 fee for claims up to ₹5 Lakh under 2021 rules). You do not need to hire an expensive advocate for routine hearings—your legal notice and evidence dossier form the primary pleadings.
@@ -1352,7 +1352,7 @@ export default function BlinkitLegalNoticePage() {
                   <a
                     href={source.url}
                     target="_blank"
-                    rel="noopener noreferrer"
+                    rel="noopener noreferrer nofollow"
                     className="text-slate-700 hover:text-[#DC2626] hover:underline"
                     title={source.title}
                   >

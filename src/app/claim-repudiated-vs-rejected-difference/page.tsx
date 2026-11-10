@@ -340,7 +340,7 @@ export default function ClaimRepudiatedVsRejectedPage() {
               {/* Section 1: Overview */}
               <section id="heading-overview" className="scroll-mt-28 mb-12">
                 <h2 className="text-xl sm:text-2xl md:text-3xl font-black text-slate-900 tracking-tight mb-4">
-                  Why the Exact Term on Your Insurance Letter Dictates Your Legal Strategy
+                  Why Your Insurance Denial Letter Dictates Your Legal Strategy
                 </h2>
                 <div className="prose prose-slate max-w-none text-slate-700 text-sm sm:text-base leading-relaxed space-y-4">
                   <p>

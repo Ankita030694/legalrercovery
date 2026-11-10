@@ -587,7 +587,7 @@ export default function WrongUpiTransferPage() {
                     id="heading-route-legal-notice-title"
                     className="text-lg sm:text-xl md:text-2xl font-bold text-slate-900 dark:text-white"
                   >
-                    Route 2: Statutory Legal Demand Notice Under Section 72 Indian Contract Act
+                    Route 2: Demand Notice Under Section 72 Indian Contract Act
                   </h2>
                 </div>
                 <p className="text-sm sm:text-base text-slate-700 dark:text-slate-300 leading-relaxed">
@@ -672,7 +672,7 @@ export default function WrongUpiTransferPage() {
                     id="heading-route-police-court-title"
                     className="text-lg sm:text-xl md:text-2xl font-bold text-slate-900 dark:text-white"
                   >
-                    Route 4: Police Cyber Cell Complaint and Civil Summary Suit (Order 37 CPC)
+                    Route 4: Cyber Cell Complaint and Order 37 CPC Summary Suit
                   </h2>
                 </div>
                 <p className="text-sm sm:text-base text-slate-700 dark:text-slate-300 leading-relaxed">
@@ -757,7 +757,7 @@ export default function WrongUpiTransferPage() {
                     id="heading-case-digest-title"
                     className="text-lg sm:text-xl md:text-2xl font-bold text-slate-900 dark:text-white"
                   >
-                    Landmark Judicial Precedents on Mistaken Transfers &amp; Bank Liability
+                    Judicial Precedents on Mistaken Transfers and Bank Liability
                   </h2>
                 </div>
                 <div className="space-y-4">

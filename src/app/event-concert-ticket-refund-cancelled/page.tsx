@@ -412,7 +412,7 @@ export default function EventConcertTicketRefundPage() {
                   </span>
                 </div>
                 <h2 className="text-xl sm:text-2xl font-black text-slate-900 mb-3">
-                  Myth vs Fact: 7 Deceptive Claims by Ticketing Platforms &amp; Promoters
+                  Myth vs Fact: 7 Deceptive Claims by Ticketing Platforms
                 </h2>
                 <p className="text-slate-600 text-sm leading-relaxed mb-6">
                   Online ticketing portals and event managers rely on standard disclaimers in microscopic font to dissuade consumers from asserting their refund rights. Here is how Indian consumer law and judicial precedents demolish each deceptive claim.
@@ -972,7 +972,7 @@ export default function EventConcertTicketRefundPage() {
                   </span>
                 </div>
                 <h2 className="text-xl sm:text-2xl font-black text-slate-900 mb-4">
-                  Frequently Asked Questions on Cancelled Event &amp; Concert Ticket Refunds
+                  FAQs on Cancelled Event and Concert Ticket Refunds
                 </h2>
                 <div className="divide-y divide-slate-200">
                   {FAQS.map((faq, idx) => (
