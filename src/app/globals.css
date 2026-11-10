@@ -169,3 +169,29 @@ body {
   -ms-overflow-style: none;  /* IE and Edge */
   scrollbar-width: none;  /* Firefox */
 }
+
+/* Step change in the two-step RecoveryForm */
+@keyframes quick-step-forward {
+  from {
+    opacity: 0;
+    transform: translateX(36px);
+  }
+}
+@keyframes quick-step-back {
+  from {
+    opacity: 0;
+    transform: translateX(-36px);
+  }
+}
+.quick-step-forward {
+  animation: quick-step-forward 0.45s cubic-bezier(0.22, 1, 0.36, 1);
+}
+.quick-step-back {
+  animation: quick-step-back 0.45s cubic-bezier(0.22, 1, 0.36, 1);
+}
+@media (prefers-reduced-motion: reduce) {
+  .quick-step-forward,
+  .quick-step-back {
+    animation: none;
+  }
+}

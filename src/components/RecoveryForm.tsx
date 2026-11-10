@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useState, useMemo, useEffect } from "react";
+import React, { useState, useMemo, useEffect, useRef } from "react";
 import Link from "next/link";
 import { useRouter } from "next/navigation";
 import { signIn } from "next-auth/react";
@@ -35,6 +35,10 @@ export const RecoveryForm = ({ variant = "default" }: RecoveryFormProps) => {
   const [quickStep, setQuickStep] = useState<1 | 2>(1);
   const showBasicsStep = !isQuick || quickStep === 1;
   const showContactStep = !isQuick || quickStep === 2;
+  const [quickStepMotion, setQuickStepMotion] = useState<"forward" | "back" | null>(null);
+  const quickStepAnimation = quickStepMotion ? `quick-step-${quickStepMotion}` : "";
+  const quickTopRef = useRef<HTMLDivElement>(null);
+  const quickEmailRef = useRef<HTMLInputElement>(null);
   
   const [formTouched, setFormTouched] = useState(false);
   const [isSubmitting, setIsSubmitting] = useState(false);
@@ -94,6 +98,13 @@ export const RecoveryForm = ({ variant = "default" }: RecoveryFormProps) => {
     }
   };
 
+  // Keep the quick form's step change in view and put the cursor on the first new field.
+  useEffect(() => {
+    if (!quickStepMotion) return;
+    quickTopRef.current?.scrollIntoView({ behavior: "smooth", block: "start" });
+    if (quickStepMotion === "forward") quickEmailRef.current?.focus({ preventScroll: true });
+  }, [quickStep, quickStepMotion]);
+
   useEffect(() => {
     if (resendCooldown <= 0) return;
     const timer = setTimeout(() => {
@@ -150,6 +161,7 @@ export const RecoveryForm = ({ variant = "default" }: RecoveryFormProps) => {
     if (isQuick && quickStep === 1) {
       if (name.trim().length > 0 && isPhoneValid && recoveryType !== "") {
         setFormTouched(false);
+        setQuickStepMotion("forward");
         setQuickStep(2);
       }
       return;
@@ -402,11 +414,11 @@ export const RecoveryForm = ({ variant = "default" }: RecoveryFormProps) => {
 
   return (
     <>
-      <div className="text-center mb-6">
-        <p className="text-xl sm:text-2xl font-black text-[#111827] mb-2 tracking-tight">
-          {payuSession ? "Secure Payment" : step === 1 ? (!isQuick ? "Complete Details" : quickStep === 1 ? "Start Your Recovery" : "Almost Done") : step === 2 ? "Verify Identity" : "Welcome Back!"}
+      <div ref={quickTopRef} className="text-center mb-6 scroll-mt-4">
+        <p key={quickStep} className={`text-xl sm:text-2xl font-black text-[#111827] mb-2 tracking-tight ${quickStepAnimation}`}>
+          {payuSession ? "Secure Payment" : step === 1 ? (!isQuick ? "Complete Details" : quickStep === 1 ? "Start Your Recovery" : "Just 2 More Details") : step === 2 ? "Verify Identity" : "Welcome Back!"}
         </p>
-        <p className="text-xs sm:text-sm text-slate-500 font-semibold">
+        <p key={`subtitle-${quickStep}`} className={`text-xs sm:text-sm text-slate-500 font-semibold ${quickStepAnimation}`}>
           {payuSession
             ? "Your identity has been verified. Redirecting you to PayU..."
             : step === 1 
@@ -422,6 +434,18 @@ export const RecoveryForm = ({ variant = "default" }: RecoveryFormProps) => {
             : "You've used all your current case slots."
           }
         </p>
+        {isQuick && step === 1 && !payuSession && (
+          <div className="flex gap-1.5 mt-3" aria-hidden="true">
+            <span className="h-1.5 flex-1 rounded-full bg-[#DC2626]" />
+            <span className="h-1.5 flex-1 rounded-full bg-slate-200 overflow-hidden">
+              <span
+                className={`block h-full rounded-full bg-[#DC2626] transition-all duration-500 ease-out ${
+                  quickStep === 2 ? "w-full" : "w-0"
+                }`}
+              />
+            </span>
+          </div>
+        )}
       </div>
 
       {submitError && (
@@ -490,7 +514,7 @@ export const RecoveryForm = ({ variant = "default" }: RecoveryFormProps) => {
           </button>
         </div>
       ) : step === 1 ? (
-        <form onSubmit={handleSendOtp} className="flex flex-col gap-4 sm:gap-5">
+        <form key={quickStep} onSubmit={handleSendOtp} className={`flex flex-col gap-4 sm:gap-5 ${quickStepAnimation}`}>
           {showBasicsStep && (
             <>
               {/* Name Field */}
@@ -538,6 +562,7 @@ export const RecoveryForm = ({ variant = "default" }: RecoveryFormProps) => {
                 </label>
                 <div className="relative">
                   <input
+                    ref={quickEmailRef}
                     type="email"
                     required
                     value={email}
@@ -678,6 +703,7 @@ export const RecoveryForm = ({ variant = "default" }: RecoveryFormProps) => {
                 type="button"
                 onClick={() => {
                   setFormTouched(false);
+                  setQuickStepMotion("back");
                   setQuickStep(1);
                 }}
                 className="w-full text-xs font-bold text-slate-500 hover:text-[#DC2626] flex items-center justify-center gap-1.5 transition-colors mt-3"
