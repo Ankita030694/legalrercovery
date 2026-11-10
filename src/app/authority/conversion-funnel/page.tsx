@@ -80,6 +80,7 @@ interface FunnelItem {
     unitOriginalPrice: number;
     unitDiscountedPrice: number;
     totalOriginal: number;
+    physicalDispatchFee: number;
     totalPayable: number;
     totalSavings: number;
   };
@@ -1239,13 +1240,18 @@ export default function ConversionFunnel() {
                                       {item.discountPercent}% OFF: ₹
                                       {item.pricing.totalPayable.toLocaleString("en-IN")}
                                       <span className="line-through text-slate-400 font-semibold ml-0.5">
-                                        ₹{item.pricing.totalOriginal.toLocaleString("en-IN")}
+                                        ₹{(item.pricing.totalOriginal + item.pricing.physicalDispatchFee).toLocaleString("en-IN")}
                                       </span>
                                     </span>
                                   ) : (
                                     <span className="inline-flex items-center text-[10px] font-bold px-2 py-0.5 rounded-md bg-slate-100 text-slate-600">
                                       Standard: ₹
-                                      {item.pricing.totalOriginal.toLocaleString("en-IN")}
+                                      {item.pricing.totalPayable.toLocaleString("en-IN")}
+                                    </span>
+                                  )}
+                                  {item.pricing.physicalDispatchFee > 0 && (
+                                    <span className="inline-flex items-center text-[10px] font-bold px-2 py-0.5 rounded-md bg-blue-50 text-blue-700 border border-blue-200">
+                                      Incl. ₹{item.pricing.physicalDispatchFee.toLocaleString("en-IN")} Speed Post
                                     </span>
                                   )}
                                 </div>
@@ -1402,7 +1408,7 @@ export default function ConversionFunnel() {
                                           {item.oppositionCount === 1
                                             ? "Opposing Party"
                                             : "Opposing Parties"}{" "}
-                                          (₹{item.pricing.totalOriginal.toLocaleString("en-IN")})
+                                          (₹{(item.pricing.totalOriginal + item.pricing.physicalDispatchFee).toLocaleString("en-IN")})
                                         </p>
                                       </div>
 

@@ -169,11 +169,22 @@ function sanitizeWaveRecord(w: any) {
 function mapDoc(doc: any, status: string, settings: FunnelSettings) {
   const oppCount = Number(doc.oppositionCount) || 1;
   const discountPercent = Number(doc.discountPercent) || 0;
-  const pricing = calculateFunnelPricing(
+  const calculatedPricing = calculateFunnelPricing(
     oppCount,
     discountPercent,
-    settings.basePricePerOpposition
+    settings.basePricePerOpposition,
+    doc.physicalDispatch === true
   );
+  // Paid users: show the Speed Post fee actually charged, since top-ups may not all include it.
+  const physicalDispatchFeePaid = Number(doc.physicalDispatchFeePaid) || 0;
+  const pricing =
+    physicalDispatchFeePaid > 0
+      ? {
+          ...calculatedPricing,
+          physicalDispatchFee: physicalDispatchFeePaid,
+          totalPayable: calculatedPricing.servicePayable + physicalDispatchFeePaid,
+        }
+      : calculatedPricing;
 
   const resumeToken = doc.resumeToken || doc.lastResumeToken || null;
   const magicLink = resumeToken ? buildMagicResumeUrl(resumeToken) : null;
@@ -266,7 +277,7 @@ function mapDoc(doc: any, status: string, settings: FunnelSettings) {
   return {
     ...base,
     details: {
-      amountPaid: doc.amountPaid || 0,
+      amountPaid: (doc.amountPaid || 0) + physicalDispatchFeePaid,
       originalAmount: doc.originalAmount || oppCount * 999,
       payuTxnId: doc.payuTxnId || null,
       paymentDate: doc.paymentDate
@@ -631,7 +642,8 @@ export async function POST(req: NextRequest) {
       const pricing = calculateFunnelPricing(
         lead.oppositionCount || 1,
         pct,
-        settings.basePricePerOpposition
+        settings.basePricePerOpposition,
+        lead.physicalDispatch === true
       );
       const expiresAt = new Date(
         now.getTime() + settings.discountExpiryHours * 60 * 60 * 1000
