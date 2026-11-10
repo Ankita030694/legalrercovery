@@ -340,7 +340,7 @@ export default function PromissoryNoteFormatPage() {
                   id="heading-overview-title"
                   className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight"
                 >
-                  Overview: Why a Promissory Note Is India’s Most Potent Hand Loan Recovery Tool
+                  Why a Promissory Note Is a Potent Loan Recovery Tool
                 </h2>
                 <div className="prose prose-slate max-w-none text-xs sm:text-sm md:text-base leading-relaxed space-y-4 text-slate-700">
                   <p>
@@ -650,7 +650,7 @@ export default function PromissoryNoteFormatPage() {
                   id="heading-stamp-duty-rules-title"
                   className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight"
                 >
-                  Stamp Duty Nuances: Revenue Stamp vs. Non-Judicial Stamp Paper &amp; The Section 35 Trap
+                  Stamp Duty Nuances: Revenue Stamp vs Non-Judicial Paper
                 </h2>
                 <div className="prose prose-slate max-w-none text-xs sm:text-sm md:text-base leading-relaxed space-y-4 text-slate-700">
                   <p>
@@ -760,7 +760,7 @@ export default function PromissoryNoteFormatPage() {
                   id="heading-summary-suit-cpc-title"
                   className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight"
                 >
-                  The Recovery Pathway: Pre-Litigation Legal Notice to Order XXXVII CPC Summary Suit
+                  Recovery Pathway: Legal Notice to Order 37 Summary Suit
                 </h2>
                 <div className="prose prose-slate max-w-none text-xs sm:text-sm md:text-base leading-relaxed space-y-4 text-slate-700">
                   <p>
@@ -835,7 +835,7 @@ export default function PromissoryNoteFormatPage() {
                   id="heading-worked-example-title"
                   className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight"
                 >
-                  Worked Case Study: Lender Recovers ₹5,00,000 Defaulted Hand Loan via Summary Suit
+                  Case Study: Recovers ₹5,00,000 Hand Loan via Summary Suit
                 </h2>
 
                 <div className="bg-white rounded-2xl border border-slate-200 p-5 sm:p-7 shadow-sm space-y-5">
@@ -903,7 +903,7 @@ export default function PromissoryNoteFormatPage() {
                   id="heading-court-precedents-title"
                   className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight"
                 >
-                  Judicial Digest: 4 Landmark Precedents on Promissory Notes &amp; Summary Recovery
+                  4 Landmark Precedents on Promissory Notes &amp; Suits
                 </h2>
                 <p className="text-xs sm:text-sm text-slate-700 leading-relaxed">
                   Every proposition stated on this page is anchored in established High Court and Supreme Court case law. Examine the verified digest below before drafting or litigating a promissory note:
@@ -939,7 +939,7 @@ export default function PromissoryNoteFormatPage() {
                   id="heading-evidence-checklist-title"
                   className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight"
                 >
-                  Evidence Assembly Checklist: 6 Critical Documents for Notice &amp; Summary Suit
+                  Evidence Checklist: 6 Documents for Summary Suit
                 </h2>
                 <p className="text-xs sm:text-sm text-slate-700 leading-relaxed">
                   Before serving a 15-day statutory demand notice or instructing an advocate to lodge an Order 37 summary suit, assemble these mandatory evidentiary records:
@@ -1017,7 +1017,7 @@ export default function PromissoryNoteFormatPage() {
                   id="heading-faqs-title"
                   className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight"
                 >
-                  Frequently Asked Questions About Promissory Note Formats, Stamp Duty &amp; Legal Recovery
+                  FAQs: Promissory Note Formats, Stamp Duty &amp; Recovery
                 </h2>
                 <div className="space-y-3">
                   {FAQS.map((faq, i) => (

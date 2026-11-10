@@ -329,7 +329,7 @@ Phone: [INSERT CONTACT NUMBER]`;
               id="heading-chatbot-denials"
               className="text-2xl sm:text-3xl font-bold text-slate-900 tracking-tight mb-4"
             >
-              Why Does Zomato Chat Support Refuse Food Refunds, and What Does the Law Mandate?
+              Why Zomato Chat Support Denies Food Refunds Under Law
             </h2>
             <p className="text-slate-700 text-sm sm:text-base leading-relaxed mb-4">
               Zomato customer support relies heavily on automated algorithmic decision trees designed to protect operational margins rather than evaluate consumer facts. When a delivery fails, food arrives damaged, or preparation exceeds the estimated time of arrival (ETA) by over an hour, customer care bots terminate chats with generic claims that &ldquo;internal records indicate delivery was successful&rdquo; or &ldquo;restaurant policies prevent cancellations.&rdquo;
@@ -375,7 +375,7 @@ Phone: [INSERT CONTACT NUMBER]`;
               id="heading-problem-picker"
               className="text-2xl sm:text-3xl font-bold text-slate-900 tracking-tight mb-2"
             >
-              Statutory Dispute Breakdown: Select Your Zomato Delivery or Refund Issue
+              Dispute Breakdown: Select Your Zomato Delivery or Refund Issue
             </h2>
             <p className="text-slate-600 text-sm sm:text-base leading-relaxed mb-6">
               Select your specific dispute scenario below to examine the governing legal sections, statutory resolution timelines, and actionable 3-step remedies:
@@ -394,7 +394,7 @@ Phone: [INSERT CONTACT NUMBER]`;
               id="heading-liability-flow"
               className="text-2xl sm:text-3xl font-bold text-slate-900 tracking-tight mb-4"
             >
-              Food Delivery Dispute Money & Liability Flow: Customer, Restaurant, Gateway, and Aggregator
+              Food Delivery Dispute Money &amp; Liability Flow Across Parties
             </h2>
             <p className="text-slate-700 text-sm sm:text-base leading-relaxed mb-6">
               When an online food order fails, consumers frequently find themselves caught in a blame game between the platform, the restaurant kitchen, and the payment gateway. The diagram below illustrates how capital flows during a Zomato transaction, where funds typically become trapped, and how a statutory advocate notice cuts through intermediary disclaimers:
@@ -491,7 +491,7 @@ Phone: [INSERT CONTACT NUMBER]`;
               id="heading-key-facts"
               className="text-2xl sm:text-3xl font-bold text-slate-900 tracking-tight mb-4"
             >
-              What Are Zomato's Mandatory Statutory Timelines and Refund Rules Under Law?
+              Zomato Mandatory Refund Timelines &amp; Statutory Rules Under Law
             </h2>
             <p className="text-slate-700 text-sm sm:text-base leading-relaxed mb-6">
               When escalating a food delivery dispute, consumers must track both platform turnaround times and official statutory thresholds under the Consumer Protection Act and Reserve Bank of India directions:
@@ -573,7 +573,7 @@ Phone: [INSERT CONTACT NUMBER]`;
               id="heading-escalation-rail"
               className="text-2xl sm:text-3xl font-bold text-slate-900 tracking-tight mb-4"
             >
-              If Nothing Works in 30 Days: The 4-Stage Legal Escalation Rail Against Zomato
+              4-Stage Legal Escalation Rail Against Zomato for Stuck Refunds
             </h2>
             <p className="text-slate-700 text-sm sm:text-base leading-relaxed mb-6">
               When in-app chat fails, follow this dated 4-stage escalation ladder to build an enforceable evidentiary trail from day zero through court adjudication:
@@ -679,7 +679,7 @@ Phone: [INSERT CONTACT NUMBER]`;
               id="heading-case-law"
               className="text-2xl sm:text-3xl font-bold text-slate-900 tracking-tight mb-4"
             >
-              Verified Consumer Commission Orders Against Zomato: Precedents and Compensation Awards
+              Consumer Commission Orders &amp; Compensation Awards Against Zomato
             </h2>
             <p className="text-slate-700 text-sm sm:text-base leading-relaxed mb-6">
               District and State Consumer Commissions have consistently penalized food aggregators for delivery failures, wrongful cancellation fees, and dismissing valid claims via automated chat bots. Review these verified judicial orders:
@@ -805,7 +805,7 @@ Phone: [INSERT CONTACT NUMBER]`;
               id="heading-evidence-checklist"
               className="text-2xl sm:text-3xl font-bold text-slate-900 tracking-tight mb-4"
             >
-              What Electronic Evidence Must You Preserve Under Section 63 of Bharatiya Sakshya Adhiniyam, 2023?
+              Electronic Evidence to Preserve Under Section 63 BSA, 2023
             </h2>
             <p className="text-slate-700 text-sm sm:text-base leading-relaxed mb-6">
               Under Section 63 of Bharatiya Sakshya Adhiniyam, 2023 (which replaced Section 65B of the Indian Evidence Act), electronic records require strict verification of custody and timestamp integrity. Secure these 6 items immediately:
@@ -907,7 +907,7 @@ Phone: [INSERT CONTACT NUMBER]`;
               id="heading-worked-example"
               className="text-2xl sm:text-3xl font-bold text-slate-900 tracking-tight mb-4"
             >
-              Illustrative Worked Example: Recovering ₹1,850 for an Unfulfilled Dinner Order and Unfair Cancellation Charge
+              Worked Example: Recovering ₹1,850 for an Unfulfilled Dinner Order
             </h2>
             <p className="text-slate-700 text-sm sm:text-base leading-relaxed mb-6">
               Review this concrete case study demonstrating how an uncredited refund and arbitrary cancellation fee were successfully recovered through formal pre-litigation notice:
@@ -954,7 +954,7 @@ Phone: [INSERT CONTACT NUMBER]`;
                   id="heading-notice-template"
                   className="text-2xl sm:text-3xl font-bold text-slate-900 tracking-tight"
                 >
-                  Statutory Legal Notice Format for Zomato Food Non-Delivery and Stuck Refunds
+                  Legal Notice Format for Zomato Non-Delivery and Stuck Refunds
                 </h2>
                 <p className="text-xs sm:text-sm text-slate-500 mt-1">
                   Drafted pursuant to CPA 2019 Section 35 and E-Commerce Rules, 2020 Rule 4(5).
@@ -990,7 +990,7 @@ Phone: [INSERT CONTACT NUMBER]`;
               id="heading-scope"
               className="text-2xl sm:text-3xl font-bold text-slate-900 tracking-tight mb-4"
             >
-              Honest Scope and Boundaries: What LegalRecovery Can and Cannot Do for Your Zomato Dispute
+              Scope &amp; Boundaries: What LegalRecovery Can and Cannot Do
             </h2>
             <p className="text-slate-700 text-sm sm:text-base leading-relaxed mb-6">
               Maintaining strict transparency regarding legal boundaries is critical for consumer claimants. Here is an honest appraisal of our recovery scope:
@@ -1039,7 +1039,7 @@ Phone: [INSERT CONTACT NUMBER]`;
               id="heading-faqs"
               className="text-2xl sm:text-3xl font-bold text-slate-900 tracking-tight mb-2"
             >
-              Frequently Asked Questions About Zomato Refunds, Cancellation Charges &amp; Legal Action
+              FAQs About Zomato Refunds, Cancellation Charges &amp; Legal Action
             </h2>
             <p className="text-slate-600 text-sm sm:text-base leading-relaxed mb-6">
               Clear, statute-backed answers to the most common questions regarding food delivery refund failures:

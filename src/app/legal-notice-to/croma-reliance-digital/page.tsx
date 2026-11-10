@@ -223,7 +223,7 @@ export default function CromaRelianceDigitalPage() {
                 Visual Process Diagnostic
               </span>
               <h2 className="text-lg sm:text-xl font-bold text-slate-900 mt-1">
-                The Electronics Retailer DOA Ping-Pong Trap vs The Statutory Escalation Rail
+                Retailer DOA Ping-Pong Trap vs Statutory Escalation
               </h2>
               <p className="text-xs text-slate-500 mt-1">
                 How stores deflect defect liability to brand service centers, and how Section 86 CPA short-circuits the delay.
@@ -416,7 +416,7 @@ export default function CromaRelianceDigitalPage() {
                 id="heading-service-center-ping-pong"
                 className="text-lg sm:text-xl font-bold text-slate-900 mb-3"
               >
-                Why Is Croma or Reliance Digital Forcing You to Visit the Brand Service Center for a Defective Product?
+                Why Retailers Divert Defective Products to Service Centers
               </h2>
               <p className="text-sm sm:text-base text-slate-700 leading-relaxed mb-3">
                 Electronics retailers direct consumers to brand service centers to exhaust their internal 7-day return windows and transfer the financial burden of replacements to manufacturers. Under Indian contract law and the Consumer Protection Act, 2019, your purchase transaction is with the retailer who issued the tax invoice, making their attempt to evade return obligations an unfair trade practice.
@@ -436,7 +436,7 @@ export default function CromaRelianceDigitalPage() {
                 id="heading-seven-day-return-window"
                 className="text-lg sm:text-xl font-bold text-slate-900 mb-3"
               >
-                Can an Electronics Retailer Legally Refuse Replacement by Citing a 7-Day Store Return Window?
+                Can Retailers Refuse Replacement Using 7-Day Store Windows?
               </h2>
               <p className="text-sm sm:text-base text-slate-700 leading-relaxed mb-3">
                 No, an electronics retailer cannot extinguish statutory consumer rights by enforcing a restrictive 7-day store exchange window. Under Section 2(47) of the Consumer Protection Act, 2019, refusing to replace or refund inherently defective goods constitutes an unfair trade practice, and consumer commissions routinely hold retailers liable regardless of internal store timelines.
@@ -456,7 +456,7 @@ export default function CromaRelianceDigitalPage() {
                 id="heading-doa-liability"
                 className="text-lg sm:text-xl font-bold text-slate-900 mb-3"
               >
-                Who Is Legally Liable for a Dead-on-Arrival (DOA) Gadget: Retailer or Manufacturer?
+                Who Is Liable for a Dead-on-Arrival Gadget?
               </h2>
               <p className="text-sm sm:text-base text-slate-700 leading-relaxed mb-3">
                 Both the retailer and the manufacturer are jointly and severally liable for a Dead-on-Arrival product under Chapter VI of the Consumer Protection Act, 2019. The retailer is accountable under privity of contract as the product seller under Section 86, while the manufacturer is liable under Section 84 for manufacturing defects.
@@ -476,7 +476,7 @@ export default function CromaRelianceDigitalPage() {
                 id="heading-refuses-doa-slip"
                 className="text-lg sm:text-xl font-bold text-slate-900 mb-3"
               >
-                What Should You Do When the Service Center Refuses to Issue a DOA Certificate?
+                What to Do When the Service Center Refuses a DOA Certificate
               </h2>
               <p className="text-sm sm:text-base text-slate-700 leading-relaxed mb-3">
                 If an authorized brand technician refuses to grant a DOA certificate and insists on opening the device for part replacement, you must immediately secure a copy of the official service job sheet documenting the observed fault. Then, send an urgent written escalation to the retailer's store manager and corporate grievance officer rejecting repairs on a brand-new device.
@@ -496,7 +496,7 @@ export default function CromaRelianceDigitalPage() {
                 id="heading-zipcare-resq"
                 className="text-lg sm:text-xl font-bold text-slate-900 mb-3"
               >
-                How Do Extended Warranties (Croma ZipCare vs Reliance resQ) Operate Under Consumer Protection Law?
+                Extended Warranties Under Consumer Protection Law
               </h2>
               <p className="text-sm sm:text-base text-slate-700 leading-relaxed mb-3">
                 Extended warranties like Croma ZipCare and Reliance resQ Care Plans are direct, fee-based service contracts executed between the consumer and the retailer. Denying coverage or dragging out repairs beyond advertised timelines constitutes an actionable deficiency in service under Section 2(11) of the Consumer Protection Act, 2019, holding the retailer solely liable for replacement or compensation.
@@ -522,7 +522,7 @@ export default function CromaRelianceDigitalPage() {
                 id="heading-commission-orders"
                 className="text-lg sm:text-xl font-bold text-slate-900 mb-3"
               >
-                What Have Consumer Commissions Ordered Croma (Infiniti Retail) and Reliance Digital to Pay?
+                Consumer Commission Orders Against Croma &amp; Reliance
               </h2>
               <p className="text-sm sm:text-base text-slate-700 leading-relaxed mb-4">
                 Consumer Disputes Redressal Commissions across India consistently penalize Infiniti Retail Limited and Reliance Retail Limited for selling defective electronics and failing to provide timely replacements or refunds. Courts routinely dismiss dealer immunity defenses and award full invoice refunds with 9% interest and litigation costs.
@@ -592,7 +592,7 @@ export default function CromaRelianceDigitalPage() {
                 id="heading-grievance-officer"
                 className="text-lg sm:text-xl font-bold text-slate-900 mb-3"
               >
-                How Do You Escalate to the Grievance Officers of Infiniti Retail and Reliance Retail?
+                Escalating to Grievance Officers of Croma &amp; Reliance
               </h2>
               <p className="text-sm sm:text-base text-slate-700 leading-relaxed mb-4">
                 Under Rule 4(5) of the Consumer Protection (E-Commerce) Rules, 2020, both Infiniti Retail Limited and Reliance Retail Limited are legally required to appoint a designated Resident Grievance Officer in India who must acknowledge complaints within 48 hours and provide redressal within one month.
@@ -621,7 +621,7 @@ export default function CromaRelianceDigitalPage() {
                 id="heading-serve-legal-notice"
                 className="text-lg sm:text-xl font-bold text-slate-900 mb-3"
               >
-                When and How Should You Serve an Advocate Legal Notice to the Electronics Retailer?
+                Serving an Advocate Legal Notice to Electronics Retailers
               </h2>
               <p className="text-sm sm:text-base text-slate-700 leading-relaxed mb-3">
                 You should serve an Advocate Legal Notice as soon as the store manager or customer support refuses a replacement in writing, or when 7 days elapse without a concrete resolution from the brand service center. The notice should be served jointly on the retailer's registered corporate office and the brand's legal desk, giving them 15 statutory days to rectify the deficiency.
@@ -641,7 +641,7 @@ export default function CromaRelianceDigitalPage() {
                 id="heading-file-e-jagriti"
                 className="text-lg sm:text-xl font-bold text-slate-900 mb-3"
               >
-                How Can You File a Case Against Croma or Reliance Digital on e-Jagriti Without a Lawyer?
+                Filing Against Croma or Reliance Digital on e-Jagriti
               </h2>
               <p className="text-sm sm:text-base text-slate-700 leading-relaxed mb-3">
                 If the retailer ignores your 15-day legal notice, you can file a consumer complaint digitally on the Government of India's e-Jagriti portal (e-jagriti.gov.in). The portal replaced the older e-Daakhil system across all District, State, and National Consumer Commissions, offering seamless online filing with zero court fees for claims up to ₹5 Lakh.
@@ -661,7 +661,7 @@ export default function CromaRelianceDigitalPage() {
                 id="heading-recovery-scope"
                 className="text-lg sm:text-xl font-bold text-slate-900 mb-3"
               >
-                What Can LegalRecovery Do (and Not Do) in Electronics Replacement and Refund Disputes?
+                Scope &amp; Limits: What LegalRecovery Can and Cannot Do
               </h2>
               <p className="text-sm sm:text-base text-slate-700 leading-relaxed mb-4">
                 We believe in complete transparency regarding our legal services. Our platform drafts and delivers enforceable statutory notices under Indian consumer law, but there are clear boundaries to what pre-litigation notices can achieve.
@@ -759,7 +759,7 @@ export default function CromaRelianceDigitalPage() {
           {/* Block 9: Conversational FAQs (H2 11 - plain conversational cards, no accordion per B5 DOM) */}
           <div className="bg-white rounded-2xl p-6 border border-slate-200 shadow-sm mb-10">
             <h2 className="text-lg sm:text-xl font-bold text-slate-900 mb-5">
-              Croma aur Reliance Digital Defective Product Replace Na Kare Toh Kya Kare: FAQs
+              Croma &amp; Reliance Digital Replacement FAQs
             </h2>
             <dl className="space-y-5 text-xs sm:text-sm">
               <div className="border-b border-slate-100 pb-4">

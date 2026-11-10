@@ -203,7 +203,7 @@ const FAQS = [
 const ARTICLE_SCHEMA = {
   "@context": "https://schema.org",
   "@type": "Article",
-  headline: "Airline Gave You a Credit Shell Instead of Cash? Know When You Can Refuse",
+  headline: "Airline Credit Shell Instead of Cash? Know When You Can Refuse",
   description:
     "Airline or OTA pushing a credit shell or voucher? When you're entitled to a cash refund and how to demand it in writing.",
   datePublished: "2026-11-03T15:00:00+05:30",
@@ -313,7 +313,7 @@ export default function CreditShellVoucherLegalPage() {
             </div>
 
             <h1 className="text-2xl sm:text-3xl md:text-5xl font-black tracking-tight text-white leading-tight mb-4 sm:mb-6 break-words">
-              Airline Gave You a Credit Shell Instead of Cash? Know When You Can Refuse
+              Airline Credit Shell Instead of Cash? Know When You Can Refuse
             </h1>
 
             {/* Answer Box First: 40-60 Words Directly Under H1 */}
@@ -374,7 +374,7 @@ export default function CreditShellVoucherLegalPage() {
                   id="heading-statutory-reality-title"
                   className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight"
                 >
-                  Can Airlines &amp; Travel Aggregators Legally Force a Credit Shell Instead of Cash?
+                  Can Airlines Legally Force a Credit Shell Instead of Cash?
                 </h2>
                 <p className="text-sm sm:text-base text-slate-700 leading-relaxed">
                   When a flight is grounded, cancelled, or substantially rescheduled, airlines and online travel agencies (OTAs) face immense liquidity pressure. To prevent capital outflow, commercial carriers like <Link href="/legal-notice-to/indigo" className="text-blue-700 underline font-semibold">IndiGo</Link>, <Link href="/legal-notice-to/air-india" className="text-blue-700 underline font-semibold">Air India</Link>, and <Link href="/legal-notice-to/spicejet" className="text-blue-700 underline font-semibold">SpiceJet</Link>, alongside booking engines like <Link href="/legal-notice-to/makemytrip" className="text-blue-700 underline font-semibold">MakeMyTrip</Link> and <Link href="/legal-notice-to/cleartrip" className="text-blue-700 underline font-semibold">Cleartrip</Link>, routinely configure their automated systems to generate an airline &quot;credit shell&quot; or non-withdrawable travel voucher by default.
@@ -455,7 +455,7 @@ export default function CreditShellVoucherLegalPage() {
                     id="heading-order-digest-title"
                     className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight"
                   >
-                    Landmark Order Digest: 4 Verifiable Aviation Precedents on Forced Credit Shells
+                    Judicial Digest: Landmark Orders on Forced Airline Credit Shells
                   </h2>
                   <span className="text-xs font-bold text-slate-500 uppercase tracking-wider">
                     Verifiable Court Records
@@ -665,7 +665,7 @@ export default function CreditShellVoucherLegalPage() {
                   id="heading-playbook-title"
                   className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight"
                 >
-                  The 5-Step Escalation Playbook: How to Reject a Voucher &amp; Force a Cash Refund
+                  5-Step Playbook: Rejecting a Voucher to Force a Cash Refund
                 </h2>
                 <p className="text-sm sm:text-base text-slate-700 leading-relaxed">
                   Airlines bank on passenger fatigue to keep unspent funds in their corporate balances. By executing this structured 5-step escalation protocol, you establish an ironclad legal paper trail that compels airlines and OTAs to liquidate the credit shell into cash:
@@ -757,7 +757,7 @@ export default function CreditShellVoucherLegalPage() {
                   id="heading-statutory-table-title"
                   className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight"
                 >
-                  Statutory Refund Timelines &amp; Consumer Rights Matrix Under Aviation Law
+                  Aviation Refund Timelines and Passenger Rights Under DGCA
                 </h2>
                 <p className="text-sm sm:text-base text-slate-700 leading-relaxed">
                   Indian civil aviation directives and consumer protection statutes mandate strict, binding turnaround times for passenger refunds. Airlines cannot enforce internal terms that violate these statutory benchmarks:
@@ -857,7 +857,7 @@ export default function CreditShellVoucherLegalPage() {
                     id="heading-problem-picker-title"
                     className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight"
                   >
-                    Credit Shell &amp; Travel Voucher Bottlenecks: Root Causes &amp; Direct Legal Fixes
+                    Credit Shell and Voucher Bottlenecks: Root Causes and Legal Fixes
                   </h2>
                   <p className="text-xs font-semibold text-slate-500 mt-1">
                     Select Your Specific Dispute Scenario to Unlock the Governing Statutory Rule and Immediate Escalation Action
@@ -877,7 +877,7 @@ export default function CreditShellVoucherLegalPage() {
                   id="heading-worked-example-title"
                   className="text-xl sm:text-2xl font-bold text-slate-900 tracking-tight"
                 >
-                  Worked Case Study: Passenger Recovers ₹38,400 Cash + ₹20,000 Damages After 9-Month Voucher Deadlock
+                  Case Study: Passenger Recovers Cash Refund After Voucher Deadlock
                 </h2>
                 <div className="bg-slate-900 text-white rounded-2xl p-5 sm:p-8 shadow-xl space-y-4 sm:space-y-5 w-full overflow-hidden">
                   <div className="flex flex-wrap items-center justify-between gap-2 border-b border-slate-800 pb-3">
@@ -915,7 +915,7 @@ export default function CreditShellVoucherLegalPage() {
                   id="heading-evidence-checklist-title"
                   className="text-xl sm:text-2xl font-bold text-slate-900 tracking-tight"
                 >
-                  Passenger Evidence Checklist: 6 Critical Documents Before Serving an Airline Legal Notice
+                  Passenger Evidence Checklist: 6 Records Before Serving Notice
                 </h2>
                 <p className="text-xs sm:text-sm text-slate-700 leading-relaxed">
                   Under Section 63 of the Bharatiya Sakshya Adhiniyam, 2023 (BSA), electronic communications and digital transaction records are fully admissible in consumer commissions. Assemble these 6 documents before initiating legal escalation:
@@ -983,7 +983,7 @@ export default function CreditShellVoucherLegalPage() {
                     id="heading-faqs-title"
                     className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight"
                   >
-                    Frequently Asked Questions About Airline Credit Shells &amp; Legal Notices
+                    FAQs on Airline Credit Shells, Vouchers and Legal Notices
                   </h2>
                   <p className="text-xs font-semibold text-slate-500 mt-1">
                     Authoritative Legal Answers Grounded in Supreme Court Rulings, DGCA CAR and Consumer Protection Directives

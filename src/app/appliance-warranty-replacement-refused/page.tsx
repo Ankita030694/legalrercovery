@@ -315,7 +315,7 @@ export default function ApplianceWarrantyReplacementRefusedPage() {
                   Section 1 • Statutory Framework
                 </div>
                 <h2 className="text-xl sm:text-2xl lg:text-3xl font-black text-slate-900 tracking-tight">
-                  Statutory Rights: When an Appliance Brand Must Replace or Refund Under Indian Law
+                  Statutory Rights: When Brands Must Replace or Refund Appliances
                 </h2>
                 <p className="text-sm sm:text-base text-slate-700 leading-relaxed">
                   When you purchase a major home appliance—whether a Smart LED/OLED TV, frost-free refrigerator, inverter air conditioner, front-load washing machine, or microwave—you are legally protected by express statutory covenants that no corporate terms or service franchise policy can override. Under Indian jurisprudence, warranties are not gratuitous corporate favors; they represent binding statutory commitments governed by the <strong className="font-semibold text-slate-900">Consumer Protection Act, 2019</strong> and the Ministry of Consumer Affairs’ national <strong className="font-semibold text-slate-900">Right to Repair framework</strong>.
@@ -356,7 +356,7 @@ export default function ApplianceWarrantyReplacementRefusedPage() {
                   Section 2 • Statutory Benchmarks
                 </div>
                 <h2 className="text-xl sm:text-2xl lg:text-3xl font-black text-slate-900 tracking-tight">
-                  Key Facts &amp; Statutory Benchmarks: Appliance Warranty Replacement &amp; Repair Rules
+                  Statutory Benchmarks: Appliance Warranty and Replacement Rules
                 </h2>
                 <p className="text-sm text-slate-700 leading-relaxed">
                   The table below outlines statutory benchmarks, repair timelines, and replacement thresholds established across Indian consumer forums and regulatory frameworks:
@@ -422,7 +422,7 @@ export default function ApplianceWarrantyReplacementRefusedPage() {
                   Section 3 • Unfair Trade Practices
                 </div>
                 <h2 className="text-xl sm:text-2xl lg:text-3xl font-black text-slate-900 tracking-tight">
-                  The Brand Playbook: How Companies Illegally Reject Valid Appliance Warranty Claims
+                  Unlawful Rejections: How Brands Deny Valid Warranty Claims
                 </h2>
                 <p className="text-sm text-slate-700 leading-relaxed">
                   Appliance manufacturers and third-party franchised service centres deploy well-documented playbook tactics designed to frustrate consumers, force out-of-pocket repair payments, or push warranty expiration. Knowing these tactics enables you to defeat them legally:
@@ -490,7 +490,7 @@ export default function ApplianceWarrantyReplacementRefusedPage() {
                   Section 5 • Process Architecture
                 </div>
                 <h2 className="text-xl sm:text-2xl lg:text-3xl font-black text-slate-900 tracking-tight">
-                  The Warranty Enforcement Pipeline: From Denied Claim to Commission Order
+                  Warranty Enforcement Pipeline: From Denied Claim to Relief Order
                 </h2>
                 <p className="text-sm text-slate-700 leading-relaxed">
                   The following end-to-end statutory escalation pipeline illustrates how a denied appliance warranty claim is converted into a court-enforceable replacement or 100% price refund:
@@ -592,7 +592,7 @@ export default function ApplianceWarrantyReplacementRefusedPage() {
                   Section 6 • Strategic Execution
                 </div>
                 <h2 className="text-xl sm:text-2xl lg:text-3xl font-black text-slate-900 tracking-tight">
-                  The 5-Step Escalation Framework: Forcing Brands to Replace Defective Appliances
+                  5-Step Escalation Framework to Enforce Appliance Replacement
                 </h2>
                 <p className="text-sm text-slate-700 leading-relaxed">
                   Do not waste months arguing with junior customer support call-centre agents. Execute this structured 5-step legal escalation framework to assert your statutory rights:
@@ -678,7 +678,7 @@ export default function ApplianceWarrantyReplacementRefusedPage() {
                   Section 7 • Binding Case Law
                 </div>
                 <h2 className="text-xl sm:text-2xl lg:text-3xl font-black text-slate-900 tracking-tight">
-                  Landmark Consumer Court Precedents on Defective Appliances &amp; Replacement Orders
+                  Consumer Court Precedents on Defective Appliance Replacements
                 </h2>
                 <p className="text-sm text-slate-700 leading-relaxed">
                   Indian consumer forums consistently protect consumers against corporate warranty repudiation. Review these authoritative judgments demonstrating actual relief awarded:
@@ -727,7 +727,7 @@ export default function ApplianceWarrantyReplacementRefusedPage() {
                   Section 8 • Concrete Worked Example
                 </div>
                 <h2 className="text-xl sm:text-2xl lg:text-3xl font-black text-slate-900 tracking-tight">
-                  Worked Recovery Example: ₹68,500 4K OLED TV Display Line Defect &amp; Replacement Dispute
+                  Worked Example: TV Display Defect Replacement Dispute
                 </h2>
                 <p className="text-sm text-slate-700 leading-relaxed">
                   The following case study illustrates how a consumer successfully countered a brand&apos;s warranty repudiation using statutory documentation and an advocate legal demand notice:
@@ -783,7 +783,7 @@ export default function ApplianceWarrantyReplacementRefusedPage() {
                   Section 9 • Pre-Litigation Evidence
                 </div>
                 <h2 className="text-xl sm:text-2xl lg:text-3xl font-black text-slate-900 tracking-tight">
-                  Essential Evidence Checklist: Building an Unshakeable Defective Product Claim
+                  Evidence Checklist for Defective Appliance Replacement Claims
                 </h2>
                 <p className="text-sm text-slate-700 leading-relaxed">
                   Before serving a legal notice or filing before the District Consumer Commission, ensure you have gathered the following six critical evidentiary documents:
@@ -938,7 +938,7 @@ export default function ApplianceWarrantyReplacementRefusedPage() {
                   Section 11 • Frequently Asked Questions
                 </div>
                 <h2 className="text-xl sm:text-2xl lg:text-3xl font-black text-slate-900 tracking-tight">
-                  Frequently Asked Questions About Appliance Warranty Replacement &amp; Consumer Rights
+                  FAQs on Appliance Warranty Replacement and Consumer Rights
                 </h2>
 
                 <div className="space-y-3 pt-2">

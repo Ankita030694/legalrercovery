@@ -1043,8 +1043,7 @@ export default function AssuredReturnBuilderDefaultPage() {
               </div>
 
               <h2 className="text-2xl sm:text-3xl font-extrabold text-slate-900 mb-4">
-                2. Route 1: RERA Complaint Under Sections 12, 18 &amp; 31 (Full
-                Refund + Interest vs. Assured Return Arrears)
+                2. Route 1: RERA Complaint Under Sections 12, 18 &amp; 31
               </h2>
 
               <p className="text-slate-700 leading-relaxed mb-4">
@@ -1180,8 +1179,7 @@ export default function AssuredReturnBuilderDefaultPage() {
               </div>
 
               <h2 className="text-2xl sm:text-3xl font-extrabold text-slate-900 mb-4">
-                3. Route 2: Criminal Prosecution Under Sections 138 &amp; 141 NI
-                Act for Dishonoured Assured-Return Cheques
+                3. Route 2: Criminal Action for Dishonoured Cheques
               </h2>
 
               <p className="text-slate-700 leading-relaxed mb-4">
@@ -1295,8 +1293,7 @@ export default function AssuredReturnBuilderDefaultPage() {
               </div>
 
               <h2 className="text-2xl sm:text-3xl font-extrabold text-slate-900 mb-4">
-                4. Route 3: Order XXXVII CPC Summary Suit &amp; Arbitration (When
-                Possession Is Taken or TDS Is Deducted in Form 26AS)
+                4. Route 3: Order 37 CPC Summary Suit &amp; Arbitration
               </h2>
 
               <p className="text-slate-700 leading-relaxed mb-4">
@@ -1404,8 +1401,7 @@ export default function AssuredReturnBuilderDefaultPage() {
               </div>
 
               <h2 className="text-2xl sm:text-3xl font-extrabold text-slate-900 mb-4">
-                5. Route 4: Consumer Court (Self-Employment Test), NCLT Insolvency
-                &amp; BUDS Act 2019
+                5. Route 4: Consumer Court &amp; NCLT Insolvency Remedies
               </h2>
 
               <p className="text-slate-700 leading-relaxed mb-4">
@@ -1651,8 +1647,7 @@ export default function AssuredReturnBuilderDefaultPage() {
                 <span>Binding Judicial Precedents</span>
               </div>
               <h2 className="text-2xl sm:text-3xl font-extrabold text-slate-900 mb-4">
-                7. Landmark Supreme Court, NCLAT &amp; RERA Rulings on Assured
-                Return Defaults
+                7. Supreme Court &amp; RERA Rulings on Assured Returns
               </h2>
               <p className="text-slate-700 leading-relaxed mb-6">
                 Citing binding Supreme Court and appellate tribunal judgments
@@ -1764,8 +1759,7 @@ export default function AssuredReturnBuilderDefaultPage() {
                 <span>Real-World Calculation &amp; Recovery Strategy</span>
               </div>
               <h2 className="text-2xl sm:text-3xl font-extrabold text-slate-900 mb-4">
-                9. Worked Case Study: Recovering ₹55 Lakh + Interest in a
-                Gurugram Commercial Assured-Return Default
+                9. Case Study: Recovers ₹55L in Gurugram Builder Default
               </h2>
               <p className="text-slate-700 leading-relaxed mb-5">
                 To see how a multi-statutory legal notice works in practice,

@@ -326,7 +326,7 @@ export default function CollegeNotReturningOriginalDocumentsPage() {
                   id="heading-ugc-prohibition-title"
                   className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight"
                 >
-                  Why Colleges Holding Original Certificates Violates UGC and AICTE Regulations
+                  Why Withholding Student Certificates Violates UGC Rules
                 </h2>
                 <p className="text-sm sm:text-base text-slate-700 leading-relaxed">
                   Every admission season, thousands of students across India discover that their private college, deemed university, or professional engineering/medical institute refuses to return their original Class 10 and 12 mark sheets, school leaving certificates, or undergraduate degree certificates. This tactic is most frequently weaponized when a student cancels their admission to join another counseling seat or decides to withdraw midway through an academic program. College administrative offices routinely tell students: &quot;Pay the full tuition fees for all four remaining years, or we will not release your original documents.&quot;
@@ -353,7 +353,7 @@ export default function CollegeNotReturningOriginalDocumentsPage() {
                     id="heading-court-orders-title"
                     className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight"
                   >
-                    Judicial Rulings and High Court Precedents on Withholding Student Documents
+                    High Court Rulings on Withheld Student Documents
                   </h2>
                   <span className="text-xs font-bold text-slate-500 uppercase tracking-wider">
                     Verifiable Court Records
@@ -437,7 +437,7 @@ export default function CollegeNotReturningOriginalDocumentsPage() {
                   id="heading-statutory-table-title"
                   className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight"
                 >
-                  Statutory Deadlines, Forum Jurisdiction and Penal Sanctions Against Errant Colleges
+                  Statutory Deadlines &amp; Penalties Against Errant Colleges
                 </h2>
                 <p className="text-sm sm:text-base text-slate-700 leading-relaxed">
                   Both central regulators and consumer forums enforce strict timelines and penalties when educational institutions unlawfully hold student credentials. Use this statutory breakdown to choose the correct legal forum and understand the legal leverage available against the institution:
@@ -514,7 +514,7 @@ export default function CollegeNotReturningOriginalDocumentsPage() {
                     id="heading-problem-picker-title"
                     className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight"
                   >
-                    Institutional Document Retention Disputes: Root Causes &amp; Direct Legal Remedies
+                    Certificate Retention Disputes: Causes &amp; Remedies
                   </h2>
                   <p className="text-xs font-semibold text-slate-500 mt-1">
                     Select Your Specific Dispute Scenario to Unlock the Governing Section and Immediate Escalation Action
@@ -534,7 +534,7 @@ export default function CollegeNotReturningOriginalDocumentsPage() {
                   id="heading-escalation-protocol-title"
                   className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight"
                 >
-                  The 5-Step Escalation Protocol to Force Unconditional Certificate Release
+                  5-Step Protocol to Force Certificate Release
                 </h2>
                 <p className="text-sm sm:text-base text-slate-700 leading-relaxed">
                   Colleges rely on student panic and approaching counseling deadlines to extort fees. To break institutional resistance, follow this disciplined legal escalation hierarchy:
@@ -713,7 +713,7 @@ export default function CollegeNotReturningOriginalDocumentsPage() {
                   id="heading-worked-example-title"
                   className="text-xl sm:text-2xl font-bold text-slate-900 tracking-tight"
                 >
-                  Worked Case Scenario: Engineering Student Recovers Class 10/12 Mark Sheets &amp; Migration Certificate
+                  Case Study: Student Recovers Mark Sheets &amp; Migration
                 </h2>
                 <div className="bg-slate-900 text-white rounded-2xl p-5 sm:p-8 shadow-xl space-y-4 sm:space-y-5 w-full overflow-hidden">
                   <div className="flex flex-wrap items-center justify-between gap-2 border-b border-slate-800 pb-3">
@@ -751,7 +751,7 @@ export default function CollegeNotReturningOriginalDocumentsPage() {
                   id="heading-evidence-checklist-title"
                   className="text-xl sm:text-2xl font-bold text-slate-900 tracking-tight"
                 >
-                  Critical Evidence Dossier: What to Gather Before Issuing a Statutory Demand Notice
+                  Evidence Dossier Before Issuing Statutory Notice
                 </h2>
                 <p className="text-xs sm:text-sm text-slate-700 leading-relaxed">
                   Under Section 63 of the Bharatiya Sakshya Adhiniyam, 2023 (BSA), electronic communication and digital documents are fully admissible before consumer forums and High Courts. Assemble these 6 essential records:
@@ -854,7 +854,7 @@ export default function CollegeNotReturningOriginalDocumentsPage() {
                     id="heading-faqs-title"
                     className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight"
                   >
-                    Frequently Asked Questions About Colleges Withholding Original Documents
+                    FAQs: Colleges Withholding Original Documents
                   </h2>
                   <p className="text-xs font-semibold text-slate-500 mt-1">
                     Authoritative Answers Grounded in UGC Notifications, AICTE Directives and High Court Precedents
@@ -891,7 +891,7 @@ export default function CollegeNotReturningOriginalDocumentsPage() {
                   id="heading-sources-title"
                   className="text-lg sm:text-xl font-bold text-slate-900 tracking-tight"
                 >
-                  Statutory Mandates, Gazette Notifications &amp; Official Regulatory Sources
+                  Statutory Mandates &amp; Official Regulatory Sources
                 </h2>
                 <ol className="sources list-decimal list-inside space-y-2 text-xs sm:text-sm text-slate-600">
                   {PRIMARY_SOURCES.map((source, idx) => (

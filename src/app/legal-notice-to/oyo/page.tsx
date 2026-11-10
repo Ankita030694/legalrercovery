@@ -331,7 +331,7 @@ export default function OyoLegalNoticePage() {
                     id="heading-order-digest-title"
                     className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight"
                   >
-                    Landmark Order Digest: 4 Verifiable Consumer Rulings Against Oravel Stays Ltd (OYO)
+                    4 Landmark Consumer Rulings Against OYO (Oravel Stays)
                   </h2>
                   <span className="text-xs font-bold text-slate-500 uppercase tracking-wider">
                     Verifiable Court Records
@@ -408,7 +408,7 @@ export default function OyoLegalNoticePage() {
                   id="heading-pattern-analysis-title"
                   className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight"
                 >
-                  Pattern Analysis: What Won Hotel Room Denial and Stuck OYO Refund Disputes
+                  What Won Room Denial and Stuck OYO Refund Disputes
                 </h2>
                 <p className="text-sm sm:text-base text-slate-700 leading-relaxed">
                   A careful legal review of successful consumer commission verdicts against Oravel Stays Ltd reveals specific evidentiary strategies that dismantle OYO&apos;s standard defenses:
@@ -608,7 +608,7 @@ export default function OyoLegalNoticePage() {
                   id="heading-playbook-title"
                   className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight"
                 >
-                  The 5-Step Escalation Playbook Against OYO: From Property Denial to Legal Notice
+                  5-Step Escalation Playbook Against OYO: Denial to Notice
                 </h2>
                 <p className="text-sm sm:text-base text-slate-700 leading-relaxed">
                   Derived directly from winning consumer commission verdicts, this 5-step playbook breaks through automated support evasion and secures your rightful refund:
@@ -696,7 +696,7 @@ export default function OyoLegalNoticePage() {
                   id="heading-deadlines-table-title"
                   className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight"
                 >
-                  Statutory Deadlines Under E-Commerce Rules &amp; RBI: OYO Cancellations, Room Denials &amp; Failed Debits
+                  OYO Refund Deadlines Under E-Commerce Rules &amp; RBI
                 </h2>
                 <p className="text-sm sm:text-base text-slate-700 leading-relaxed">
                   The Consumer Protection (E-Commerce) Rules, 2020 and Reserve Bank of India circulars impose binding timelines on hospitality aggregators. OYO cannot rely on internal app policies that violate these statutory benchmarks:
@@ -777,7 +777,7 @@ export default function OyoLegalNoticePage() {
                     id="heading-problem-picker-title"
                     className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight"
                   >
-                    OYO Hotel &amp; Refund Bottlenecks: Root Causes &amp; Direct Legal Fixes
+                    OYO Hotel &amp; Refund Issues: Causes &amp; Legal Fixes
                   </h2>
                   <p className="text-xs font-semibold text-slate-500 mt-1">
                     Select Your Specific Dispute Scenario to Unlock the Statutory Section and Direct Escalation Action
@@ -793,7 +793,7 @@ export default function OyoLegalNoticePage() {
                   id="heading-worked-example-title"
                   className="text-xl sm:text-2xl font-bold text-slate-900 tracking-tight"
                 >
-                  Worked Case Study: Guest Denied Check-in at Midnight Recovers ₹6,800 Booking + ₹11,200 Hotel Difference
+                  Case Study: Guest Recovers ₹6,800 Booking + Hotel Difference
                 </h2>
                 <div className="bg-slate-900 text-white rounded-2xl p-5 sm:p-8 shadow-xl space-y-4 sm:space-y-5 w-full overflow-hidden">
                   <div className="flex flex-wrap items-center justify-between gap-2 border-b border-slate-800 pb-3">
@@ -827,7 +827,7 @@ export default function OyoLegalNoticePage() {
                   id="heading-evidence-checklist-title"
                   className="text-xl sm:text-2xl font-bold text-slate-900 tracking-tight"
                 >
-                  OYO Evidence Checklist: 6 Critical Documents Before Serving an Advocate Legal Notice
+                  OYO Evidence Checklist: 6 Documents for Legal Notice
                 </h2>
                 <p className="text-xs sm:text-sm text-slate-700 leading-relaxed">
                   Under Section 63 of the Bharatiya Sakshya Adhiniyam, 2023 (BSA), electronic communications and digital banking records are fully admissible in consumer commissions. Assemble these 6 critical documents:
@@ -891,7 +891,7 @@ export default function OyoLegalNoticePage() {
                     id="heading-faqs-title"
                     className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight"
                   >
-                    Frequently Asked Questions About OYO Refunds, Denied Check-in &amp; Legal Notices
+                    FAQs: OYO Refunds, Denied Check-in &amp; Legal Notices
                   </h2>
                   <p className="text-xs font-semibold text-slate-500 mt-1">
                     Authoritative Answers Grounded in the Consumer Protection Act, E-Commerce Rules, and Landmark Rulings
@@ -924,7 +924,7 @@ export default function OyoLegalNoticePage() {
                   id="heading-sources-title"
                   className="text-lg sm:text-xl font-bold text-slate-900 tracking-tight"
                 >
-                  Hospitality Authorities, Primary Statutes &amp; Official OYO References
+                  Primary Hospitality Statutes &amp; Official References
                 </h2>
                 <ol className="sources list-decimal list-inside space-y-2 text-xs sm:text-sm text-slate-600">
                   {PRIMARY_SOURCES.map((source, idx) => (

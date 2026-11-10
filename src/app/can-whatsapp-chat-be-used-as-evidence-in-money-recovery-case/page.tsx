@@ -3,7 +3,7 @@ import WhatsappEvidenceClient from "./WhatsappEvidenceClient";
 
 export const metadata: Metadata = {
   title: "Can WhatsApp Chat Be Evidence in Money Recovery Cases?",
-  description: "Yes—WhatsApp messages, voice notes, and blue ticks are admissible in Indian courts for money recovery with a Section 63 BSA (formerly Sec 65B) Certificate and restart the 3-year limitation clock.",
+  description: "WhatsApp chats and blue ticks are admissible in Indian courts for debt recovery with a Section 63 BSA certificate and can reset limitation periods.",
   keywords: [
     "can whatsapp chat be used as evidence in money recovery case",
     "whatsapp chat evidence in indian court",

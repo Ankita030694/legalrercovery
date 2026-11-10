@@ -158,7 +158,7 @@ const FAQS = [
 const ARTICLE_SCHEMA = {
   "@context": "https://schema.org",
   "@type": "Article",
-  headline: "Commercial Landlord Withholding Office or Shop Deposit? How to Recover It Legally",
+  headline: "Commercial Landlord Withholding Deposit? How to Recover It Legally",
   description:
     "Commercial landlord refusing to return office or retail deposit? Dilapidation claims, fair wear & tear, arbitration clause tactics and recovery notice.",
   datePublished: "2026-11-09T12:00:00+05:30",
@@ -259,7 +259,7 @@ export default function CommercialLeaseDepositRecoveryPage() {
             </div>
 
             <h1 className="text-2xl sm:text-3xl md:text-5xl font-black tracking-tight text-white leading-tight mb-4 sm:mb-6 break-words">
-              Commercial Landlord Withholding Office or Shop Deposit? How to Recover It Legally
+              Commercial Landlord Withholding Deposit? How to Recover It Legally
             </h1>
 
             {/* Answer Box First: 40-60 Words Directly Under H1 */}
@@ -316,7 +316,7 @@ export default function CommercialLeaseDepositRecoveryPage() {
                   id="heading-overview-title"
                   className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight"
                 >
-                  Commercial Lease Security Deposit Refund: The ₹5L to ₹50L Liquidity Trap
+                  Commercial Lease Security Deposit: ₹5L-₹50L Refund Trap
                 </h2>
                 <p className="text-sm sm:text-base text-slate-700 leading-relaxed">
                   In commercial real estate across India, security deposits for office spaces, retail outlets, restaurants, and industrial warehouses represent substantial corporate capital—ranging anywhere from ₹5,00,000 for boutique retail units to ₹50,00,000 or more for multi-floor tech park leases. Typically structured as three to ten months of gross monthly rent, these interest-free deposits are legally handed over to the landlord under an explicit fiduciary covenant: full reimbursement upon lease expiration or early lawful determination, subject only to adjustment against unpaid utility charges or legitimate structural damage.
@@ -336,7 +336,7 @@ export default function CommercialLeaseDepositRecoveryPage() {
                     id="heading-comparison-matrix-title"
                     className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight"
                   >
-                    Comparison Matrix: 5 Legal Routes to Recover a Commercial Security Deposit
+                    5 Legal Routes to Recover Commercial Security Deposits
                   </h2>
                   <span className="text-xs font-bold text-slate-500 uppercase tracking-wider">
                     Archetype G4 Comparative Matrix
@@ -562,7 +562,7 @@ export default function CommercialLeaseDepositRecoveryPage() {
                   id="heading-route-notice-title"
                   className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight"
                 >
-                  Route 1: The 15-Day Advocate Legal Demand Notice (The First Decisive Strike)
+                  Route 1: The 15-Day Advocate Demand Notice
                 </h2>
                 <p className="text-sm sm:text-base text-slate-700 leading-relaxed">
                   Over 65% of commercial security deposit disputes are resolved at the legal notice stage, provided the notice is not a generic template. When business founders or operations managers send informal emails, landlords usually assign low priority to them or reply with vague counter-allegations. A formal advocate legal notice dispatched on advocate letterhead fundamentally alters the legal dynamic.
@@ -618,7 +618,7 @@ export default function CommercialLeaseDepositRecoveryPage() {
                   id="heading-route-order37-title"
                   className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight"
                 >
-                  Route 2: Order XXXVII CPC Summary Suit (Bypassing Multi-Year Regular Civil Trials)
+                  Route 2: Order 37 CPC Summary Suit for Deposits
                 </h2>
                 <p className="text-sm sm:text-base text-slate-700 leading-relaxed">
                   If the landlord ignores the 15-day notice, the most lethal judicial remedy for commercial lease deposits is an <Link href="/law/order-37-summary-suit-money-recovery" className="text-red-700 hover:text-red-800 font-bold underline">Order 37 Summary Suit under the Code of Civil Procedure, 1908</Link>. While a regular money suit in India can take three to seven years through full oral trials, Order 37 is designed exclusively for liquidated financial debts arising out of written contracts.
@@ -666,7 +666,7 @@ export default function CommercialLeaseDepositRecoveryPage() {
                   id="heading-route-msme"
                   className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight"
                 >
-                  Route 3: MSME Samadhaan &amp; Section 18 Facilitation Council (For Registered MSMEs)
+                  Route 3: MSME Samadhaan &amp; Section 18 Council
                 </h2>
                 <p className="text-sm sm:text-base text-slate-700 leading-relaxed">
                   If your operating company is registered as a Micro or Small Enterprise under the MSMED Act, 2006, you hold a potent statutory advantage. Under Section 15 through Section 18 of the MSMED Act, any buyer or service recipient who delays payment beyond 45 days is subject to statutory conciliation and arbitration through the Micro and Small Enterprises Facilitation Council (MSEFC).
@@ -692,7 +692,7 @@ export default function CommercialLeaseDepositRecoveryPage() {
                   id="heading-route-commercial-suit"
                   className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight"
                 >
-                  Route 4: Section 12A Pre-Institution Commercial Mediation &amp; Neutralizing Arbitration Clauses
+                  Route 4: Section 12A Commercial Mediation
                 </h2>
                 <p className="text-sm sm:text-base text-slate-700 leading-relaxed">
                   Under the Commercial Courts Act, 2015, any commercial dispute exceeding the specified value (currently ₹3,00,000) mandates Pre-Institution Mediation through the District Legal Services Authority (DLSA) under <Link href="/pre-institution-mediation-section-12a" className="text-red-700 hover:text-red-800 font-bold underline">Section 12A of the Commercial Courts Act</Link> prior to filing a suit, unless urgent interim relief is claimed.
@@ -726,7 +726,7 @@ export default function CommercialLeaseDepositRecoveryPage() {
                     id="heading-dilapidation-rules-title"
                     className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight"
                   >
-                    Dilapidations &amp; Section 108(m) TPA: Legitimate vs. Illegitimate Deductions
+                    Section 108(m) TPA: Legitimate vs Illegal Deductions
                   </h2>
                   <span className="text-xs font-bold text-slate-500 uppercase tracking-wider">
                     Statutory Boundary Guide
@@ -796,7 +796,7 @@ export default function CommercialLeaseDepositRecoveryPage() {
                     id="heading-problem-picker-title"
                     className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight"
                   >
-                    Scenario Playbook: 5 Real-World Commercial Withholding Tactics &amp; Remedies
+                    5 Commercial Withholding Tactics &amp; Legal Remedies
                   </h2>
                   <span className="text-xs font-bold text-slate-500 uppercase tracking-wider">
                     Interactive Troubleshooting
@@ -879,7 +879,7 @@ export default function CommercialLeaseDepositRecoveryPage() {
                     id="heading-case-digest-title"
                     className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight"
                   >
-                    Landmark Precedents Digest: 4 Key Court Orders on Commercial Deposit Recovery
+                    4 Landmark Orders on Commercial Deposit Recovery
                   </h2>
                   <span className="text-xs font-bold text-slate-500 uppercase tracking-wider">
                     Verifiable Judicial Records
@@ -1147,7 +1147,7 @@ export default function CommercialLeaseDepositRecoveryPage() {
                     id="heading-faqs-title"
                     className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight"
                   >
-                    Frequently Asked Questions on Commercial Lease Security Deposit Recovery
+                    FAQs: Commercial Lease Security Deposit Recovery
                   </h2>
                   <span className="text-xs font-bold text-slate-500 uppercase tracking-wider">
                     Statutory Answers

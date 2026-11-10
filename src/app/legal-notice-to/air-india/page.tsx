@@ -152,7 +152,7 @@ const FAQS = [
 const ARTICLE_SCHEMA = {
   "@context": "https://schema.org",
   "@type": "Article",
-  headline: "Air India Refund Still Pending: Deadlines, Escalation and Legal Remedies",
+  headline: "Air India Refund Pending: Deadlines, Escalation and Legal Remedies",
   description:
     "Air India refund delayed for weeks? Check DGCA deadlines, AirSewa and consumer-court options, and send a legal notice if ignored.",
   datePublished: "2026-11-03T12:00:00+05:30",
@@ -258,7 +258,7 @@ export default function AirIndiaLegalNoticePage() {
             </div>
 
             <h1 className="text-3xl sm:text-4xl md:text-5xl font-extrabold tracking-tight text-white mb-6 leading-tight">
-              Air India Refund Still Pending: Deadlines, Escalation and Legal Remedies
+              Air India Refund Pending: Deadlines, Escalation and Legal Remedies
             </h1>
 
             {/* Answer Box directly under H1 (40–60 words) */}
@@ -309,7 +309,7 @@ export default function AirIndiaLegalNoticePage() {
               id="why-delayed-heading"
               className="text-2xl sm:text-3xl font-bold text-slate-900 tracking-tight mb-4"
             >
-              Why Is Your Air India Refund Not Received or Delayed Beyond DGCA Deadlines?
+              Why Air India Refunds Get Delayed Beyond DGCA Deadlines
             </h2>
             <p className="text-slate-700 leading-relaxed text-base sm:text-lg mb-4">
               When an Air India flight is cancelled, rescheduled, or voluntarily cancelled within permissible fare conditions, passenger ticket monies frequently enter an operational limbo. Despite automated confirmation SMS messages or email receipts indicating that a cancellation was logged, thousands of air passengers find their funds missing weeks or months later. Understanding where your money is held is the essential first step toward legal recovery.
@@ -373,7 +373,7 @@ export default function AirIndiaLegalNoticePage() {
               id="escalation-rail-heading"
               className="text-2xl sm:text-3xl font-bold text-slate-900 tracking-tight mb-4"
             >
-              How Does the 4-Stage Aviation Escalation Rail Work for Unresolved Air India Refunds?
+              4-Stage Escalation Rail for Air India Refunds
             </h2>
             <p className="text-slate-700 leading-relaxed text-base sm:text-lg mb-6">
               When automated chat assistance and customer care hotlines stall with scripted apologies, follow this chronological 4-stage statutory escalation hierarchy to enforce legal accountability:
@@ -493,7 +493,7 @@ export default function AirIndiaLegalNoticePage() {
               id="nodal-officer-heading"
               className="text-2xl sm:text-3xl font-bold text-slate-900 tracking-tight mb-4"
             >
-              Who Is the Air India Nodal Officer &amp; Appellate Authority Under DGCA CAR Regulations?
+              Air India Nodal Officer Under DGCA CAR Regulations
             </h2>
             <p className="text-slate-700 leading-relaxed text-sm sm:text-base mb-6">
               In accordance with DGCA passenger charter directives and civil aviation consumer mandates, Air India Limited maintains a multi-tiered statutory grievance apparatus. Serving formal correspondence to official corporate officers establishes legal service under the Code of Civil Procedure and the Bharatiya Sakshya Adhiniyam, 2023:
@@ -558,7 +558,7 @@ export default function AirIndiaLegalNoticePage() {
               id="why-liable-heading"
               className="text-2xl sm:text-3xl font-bold text-slate-900 tracking-tight mb-4"
             >
-              Why Is Air India Legally Liable to Refund Ticket Fares Under DGCA CAR and Supreme Court Mandates?
+              Air India Refund Liability Under DGCA &amp; Supreme Court
             </h2>
             <p className="text-slate-700 leading-relaxed text-base sm:text-lg mb-4">
               Airlines frequently attempt to escape liability by citing third-party travel portal terms, non-refundable fare rules, or airline operational difficulties. Under Indian civil aviation regulations and consumer protection jurisprudence, these defenses fail as a matter of law.
@@ -589,7 +589,7 @@ export default function AirIndiaLegalNoticePage() {
               id="key-facts-heading"
               className="text-2xl sm:text-3xl font-bold text-slate-900 tracking-tight mb-4"
             >
-              Key Facts Summary: Air India Statutory Refund Timelines, Cancellation Compensation &amp; Jurisdiction
+              Summary: Air India Refund Timelines &amp; Compensation
             </h2>
             <p className="text-slate-700 leading-relaxed text-base sm:text-lg mb-6">
               The following reference table outlines the binding statutory timelines, mandatory passenger compensation slabs, and procedural forums applicable to Air India flight disputes:
@@ -746,7 +746,7 @@ export default function AirIndiaLegalNoticePage() {
               id="case-law-heading"
               className="text-2xl sm:text-3xl font-bold text-slate-900 tracking-tight mb-4"
             >
-              What Have Indian Consumer Commissions and Courts Ordered Air India to Pay for Refund Delays?
+              Consumer Commission Orders Against Air India
             </h2>
             <p className="text-slate-700 leading-relaxed text-base sm:text-lg mb-6">
               Judicial precedent establishes that airlines cannot unlawfully retain customer funds, hide behind operational difficulties, or shift liability to travel portals. Review verified court judgments:
@@ -793,7 +793,7 @@ export default function AirIndiaLegalNoticePage() {
               id="evidence-checklist-heading"
               className="text-2xl sm:text-3xl font-bold text-slate-900 tracking-tight mb-4"
             >
-              What Documents and Digital Records Form Admissible Aviation Evidence Under BSA Section 63?
+              Aviation Evidence Under Section 63 BSA, 2023
             </h2>
             <p className="text-slate-700 leading-relaxed text-sm sm:text-base mb-6">
               Under Section 63 of the Bharatiya Sakshya Adhiniyam, 2023 (BSA), electronic communication records, booking invoices, and bank transaction statements constitute admissible legal evidence before consumer courts. Assemble this 6-point evidence dossier before serving your notice:
@@ -880,7 +880,7 @@ export default function AirIndiaLegalNoticePage() {
               id="worked-scenario-heading"
               className="text-2xl sm:text-3xl font-bold text-white tracking-tight mb-4"
             >
-              Worked Example: Overcoming a ₹64,200 International Air India Refund Deadlock via Advocate Legal Notice
+              Case Study: Resolving ₹64,200 Air India Deadlock
             </h2>
             <p className="text-slate-300 leading-relaxed text-sm sm:text-base mb-6">
               The following factual scenario illustrates how an international flight refund trapped between an online travel portal and Air India was resolved using statutory legal escalation:
@@ -934,7 +934,7 @@ export default function AirIndiaLegalNoticePage() {
               id="scope-heading"
               className="text-2xl sm:text-3xl font-bold text-slate-900 tracking-tight mb-4"
             >
-              Our Scope: What LegalRecovery Can and Cannot Do for Your Air India Refund Dispute
+              Scope &amp; Boundaries: What LegalRecovery Can and Cannot Do
             </h2>
             <p className="text-slate-700 leading-relaxed text-base sm:text-lg mb-6">
               Transparency is fundamental to our legal services. Here is an honest appraisal of what our platform and advocates deliver, and where legal boundaries lie:
@@ -1003,7 +1003,7 @@ export default function AirIndiaLegalNoticePage() {
               id="faq-heading"
               className="text-2xl sm:text-3xl font-bold text-slate-900 tracking-tight mb-4"
             >
-              Frequently Asked Questions About Air India Refund Status, Delays &amp; Legal Notices
+              FAQs About Air India Refund Status, Delays &amp; Notices
             </h2>
             <p className="text-slate-700 leading-relaxed text-base sm:text-lg mb-6">
               Clear answers to the most common legal and procedural questions regarding delayed Air India ticket refunds:

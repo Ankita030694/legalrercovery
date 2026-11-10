@@ -3,7 +3,7 @@ import CoachingCollegeRefundClient from "./CoachingCollegeRefundClient";
 
 export const metadata: Metadata = {
   title: "Legal Notice to Coaching Institute for Fee Refund",
-  description: "Told 'fees once paid are non-refundable' on an admission receipt? Learn how Supreme Court & NCDRC precedents void unfair education fee forfeiture clauses via Advocate Legal Notice.",
+  description: "Told fees are non-refundable? Learn how Supreme Court and NCDRC rulings void unfair education fee forfeiture clauses via an advocate legal notice.",
   keywords: [
     "fees once paid are non refundable illegal india",
     "unfair contract clause education fee refund",

@@ -319,7 +319,7 @@ export default function EpfSchemeClaimRejectionPage() {
                   id="heading-overview-title"
                   className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight"
                 >
-                  Why Millions of EPF Claims Are Repudiated and How the Law Protects Your Savings
+                  Why EPF Claims Are Repudiated &amp; How the Law Protects You
                 </h2>
                 <p className="text-sm sm:text-base text-slate-700 leading-relaxed">
                   Provident fund contributions represent an employee&apos;s hard-earned lifetime security. Under Indian labour law, both the employee and employer contribute 12% of basic wages and dearness allowance every month to the Employees&apos; Provident Fund Organisation (EPFO). However, according to parliamentary disclosures and official grievance reports, over 30% of final withdrawal claims (Form 19), pension withdrawal benefits (Form 10C), and partial advances (Form 31) are repudiated every year by EPFO field offices.
@@ -339,7 +339,7 @@ export default function EpfSchemeClaimRejectionPage() {
                     id="heading-court-orders-title"
                     className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight"
                   >
-                    Landmark Judicial Digest: 4 Verifiable Rulings on EPF Rejection, Delay &amp; Employer Default
+                    4 Landmark Rulings on EPF Rejection &amp; Employer Default
                   </h2>
                   <span className="text-xs font-bold text-slate-500 uppercase tracking-wider">
                     Binding Judicial Precedents
@@ -416,7 +416,7 @@ export default function EpfSchemeClaimRejectionPage() {
                   id="heading-pattern-analysis-title"
                   className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight"
                 >
-                  Pattern Analysis: What Successfully Overturned EPF Claim Rejections and Released Funds
+                  What Successfully Overturned EPF Claim Rejections
                 </h2>
                 <p className="text-sm sm:text-base text-slate-700 leading-relaxed">
                   A comprehensive review of over 100 successful recovery cases, consumer court rulings, and EPFiGMS escalations reveals distinct evidentiary patterns. When employees furnish concrete digital documentation, EPFO regional offices and defaulting employers are legally compelled to surrender bureaucratic defenses:
@@ -616,7 +616,7 @@ export default function EpfSchemeClaimRejectionPage() {
                   id="heading-playbook-title"
                   className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight"
                 >
-                  The 5-Step Escalation Playbook for Rejected EPF Claims: From Portal Fix to Legal Notice
+                  5-Step Playbook for Rejected EPF Claims: Portal to Notice
                 </h2>
                 <p className="text-sm sm:text-base text-slate-700 leading-relaxed">
                   Grounded in administrative law and EPFO operational directives, this 5-step playbook bypasses frontline bureaucratic resistance and forces prompt disbursement of your retirement corpus:
@@ -704,7 +704,7 @@ export default function EpfSchemeClaimRejectionPage() {
                   id="heading-comparison-deadlines-title"
                   className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight"
                 >
-                  Statutory Turnaround Timelines: EPF Scheme 2026 vs Historical 1952 Benchmarks
+                  EPF Scheme 2026 Turnaround Timelines vs Historical Rules
                 </h2>
                 <p className="text-sm sm:text-base text-slate-700 leading-relaxed">
                   The statutory framework governing provident fund claims has evolved significantly. Field offices cannot impose arbitrary holding periods that contradict binding Citizen Charter standards:
@@ -801,7 +801,7 @@ export default function EpfSchemeClaimRejectionPage() {
                   id="heading-worked-example-title"
                   className="text-xl sm:text-2xl font-bold text-slate-900 tracking-tight"
                 >
-                  Worked Case Study: Tech Architect Recovers ₹5,40,000 PF Corpus After 3 Arbitrary Rejections
+                  Case Study: Recovers ₹5,40,000 PF Corpus After Rejections
                 </h2>
                 <div className="bg-slate-900 text-white rounded-2xl p-5 sm:p-8 shadow-xl space-y-4 sm:space-y-5 w-full overflow-hidden">
                   <div className="flex flex-wrap items-center justify-between gap-2 border-b border-slate-800 pb-3">
@@ -835,7 +835,7 @@ export default function EpfSchemeClaimRejectionPage() {
                   id="heading-evidence-checklist-title"
                   className="text-xl sm:text-2xl font-bold text-slate-900 tracking-tight"
                 >
-                  EPF Evidence Checklist: 6 Critical Documents Before Serving an Advocate Legal Notice
+                  Evidence Checklist: 6 Documents for EPF Notice
                 </h2>
                 <p className="text-xs sm:text-sm text-slate-700 leading-relaxed">
                   Under Section 63 of the Bharatiya Sakshya Adhiniyam, 2023 (BSA), electronic portal extracts and bank records are fully admissible in consumer courts and labour tribunals. Assemble these 6 documents:
@@ -899,7 +899,7 @@ export default function EpfSchemeClaimRejectionPage() {
                     id="heading-faqs-title"
                     className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight"
                   >
-                    Frequently Asked Questions About Rejected EPF Claims, Timelines &amp; Legal Remedies
+                    FAQs: Rejected EPF Claims, Timelines &amp; Remedies
                   </h2>
                   <p className="text-xs font-semibold text-slate-500 mt-1">
                     Authoritative Answers Grounded in EPF Schemes, Code on Social Security 2020 and Supreme Court Precedents

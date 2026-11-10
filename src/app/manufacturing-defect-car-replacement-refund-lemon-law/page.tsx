@@ -224,7 +224,7 @@ const FAQS = [
 const ARTICLE_SCHEMA = {
   "@context": "https://schema.org",
   "@type": "Article",
-  headline: "Manufacturing Defect in Your New Vehicle? How to Force Replacement or a Full Refund",
+  headline: "Vehicle Manufacturing Defect: How to Force Replacement or Refund",
   description:
     "Car spending more time in service centre than on road? CPA 2019 product liability, job cards proof, and legal notice to manufacturer and dealer.",
   datePublished: "2026-11-09T10:00:00+05:30",
@@ -327,7 +327,7 @@ export default function DefectiveCarReplacementPage() {
             </div>
 
             <h1 className="text-2xl sm:text-3xl md:text-5xl font-black tracking-tight text-white leading-tight mb-4 sm:mb-6 break-words">
-              Manufacturing Defect in Your New Vehicle? How to Force Replacement or a Full Refund
+              Vehicle Manufacturing Defect: How to Force Replacement or Refund
             </h1>
 
             {/* Answer Box First: 40-60 Words Directly Under H1 */}
@@ -384,7 +384,7 @@ export default function DefectiveCarReplacementPage() {
                   id="heading-overview-title"
                   className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight"
                 >
-                  The Lemon Car Reality in India: When Your New Dream Vehicle Becomes a Workshop Nightmare
+                  Lemon Car Reality in India: When Vehicles Turn Defective
                 </h2>
                 <p className="text-sm sm:text-base text-slate-700 leading-relaxed">
                   Buying a brand new car, SUV, or electric vehicle in India is one of the largest financial commitments an individual or family undertakes. Buyers pay substantial sums—often exceeding ₹12 lakh to ₹35 lakh—inclusive of high GST and road taxes, expecting mechanical perfection, reliability, and passenger safety.
@@ -404,7 +404,7 @@ export default function DefectiveCarReplacementPage() {
                     id="heading-cpa-liability-title"
                     className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight"
                   >
-                    Chapter VI Consumer Protection Act 2019: The Statutory Shield for Defective Vehicle Buyers
+                    Consumer Protection Act Shield for Defective Cars
                   </h2>
                   <span className="text-xs font-bold text-slate-500 uppercase tracking-wider">
                     Statutory Product Liability
@@ -458,7 +458,7 @@ export default function DefectiveCarReplacementPage() {
                     id="heading-precedents-title"
                     className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight"
                   >
-                    Landmark Supreme Court &amp; NCDRC Precedents on Defective Car Replacement &amp; Refunds
+                    Precedents on Defective Car Replacement &amp; Refunds
                   </h2>
                   <span className="text-xs font-bold text-slate-500 uppercase tracking-wider">
                     Verifiable Judicial Records
@@ -520,7 +520,7 @@ export default function DefectiveCarReplacementPage() {
                     id="heading-myth-vs-fact-title"
                     className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight"
                   >
-                    Myth vs. Fact: 6 Dangerous Misconceptions About Defective Car Claims in India
+                    Myth vs Fact: 6 Misconceptions in Defective Car Claims
                   </h2>
                   <span className="text-xs font-bold text-slate-500 uppercase tracking-wider">
                     Legal Reality vs Dealership Myths
@@ -577,7 +577,7 @@ export default function DefectiveCarReplacementPage() {
                     id="heading-lemon-criteria-title"
                     className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight"
                   >
-                    The 30-Day / 3-Attempt Test: How Indian Courts Determine a Vehicle Is a Lemon
+                    The 3-Attempt Test: How Courts Determine a Lemon Car
                   </h2>
                   <span className="text-xs font-bold text-slate-500 uppercase tracking-wider">
                     Evidentiary Benchmarks
@@ -683,7 +683,7 @@ export default function DefectiveCarReplacementPage() {
                     id="heading-resolution-flow-title"
                     className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight"
                   >
-                    The Statutory Escalation Architecture: From Workshop Rejection to Replacement
+                    Escalation Architecture: Workshop Denial to Replacement
                   </h2>
                   <span className="text-xs font-bold text-slate-500 uppercase tracking-wider">
                     Decision Tree &amp; Process Flow
@@ -789,7 +789,7 @@ export default function DefectiveCarReplacementPage() {
                     id="heading-step-by-step-title"
                     className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight"
                   >
-                    The 5-Step Legal Playbook: How to Compel Car Carmakers to Replace or Refund
+                    5-Step Playbook to Compel Carmakers to Replace or Refund
                   </h2>
                   <span className="text-xs font-bold text-slate-500 uppercase tracking-wider">
                     Litigation Strategy
@@ -881,7 +881,7 @@ export default function DefectiveCarReplacementPage() {
                     id="heading-key-facts-title"
                     className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight"
                   >
-                    Key Facts &amp; Statutory Benchmarks for Indian Defective Vehicle Recovery
+                    Statutory Benchmarks for Defective Vehicle Recovery
                   </h2>
                   <span className="text-xs font-bold text-slate-500 uppercase tracking-wider">
                     Statutory Summary Matrix
@@ -941,7 +941,7 @@ export default function DefectiveCarReplacementPage() {
                     id="heading-worked-example-title"
                     className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight"
                   >
-                    Worked Example: How an Owner Compelled a Full ₹18.5L Buyback on a Defective SUV
+                    Case Study: Compelling ₹18.5L Buyback on Defective SUV
                   </h2>
                   <span className="text-xs font-bold text-slate-500 uppercase tracking-wider">
                     Illustrative Case Study
@@ -1004,7 +1004,7 @@ export default function DefectiveCarReplacementPage() {
                     id="heading-evidence-checklist-title"
                     className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight"
                   >
-                    Essential Evidence Checklist: 6 Critical Documents Before Serving Legal Notice
+                    Evidence Checklist: 6 Documents Before Legal Notice
                   </h2>
                   <span className="text-xs font-bold text-slate-500 uppercase tracking-wider">
                     Section 63 BSA 2023 Admissibility

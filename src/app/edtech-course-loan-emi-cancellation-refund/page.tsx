@@ -321,7 +321,7 @@ export default function EdtechLoanCancellationRefundPage() {
                     id="heading-comparison-matrix-title"
                     className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight"
                   >
-                    Comparing Legal Remedies: Notice vs Consumer Court vs RBI Ombudsman vs Police Complaint
+                    Comparing Legal Remedies: Notice, Consumer Court and Ombudsman
                   </h2>
                   <p className="text-xs sm:text-sm text-slate-600 mt-1">
                     Evaluate cost, statutory turnaround time, evidentiary burden, and actual recovery success rates across all available Indian legal forums:
@@ -487,7 +487,7 @@ export default function EdtechLoanCancellationRefundPage() {
                   id="heading-orders-overview-title"
                   className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight"
                 >
-                  What Consumer Courts and the RBI Have Ordered Ed-Tech Firms and Lending NBFCs to Pay
+                  Consumer Court and RBI Orders Against Ed-Tech and NBFC Lenders
                 </h2>
                 <p className="text-sm sm:text-base text-slate-700 leading-relaxed">
                   During India&apos;s ed-tech boom, millions of parents and young professionals were induced into signing up for costly upskilling, coding, and K-12 courses. Sales representatives aggressively converted tuition fees into third-party personal loans with partner Non-Banking Financial Companies (NBFCs) like Avanse, LiquiLoans, ShopSe, Propelld, and Fibe. When students discovered sub-standard video modules or submitted timely cancellation requests, ed-tech companies routinely ghosted them while leaving the automated loan mandates active.
@@ -504,7 +504,7 @@ export default function EdtechLoanCancellationRefundPage() {
                     id="heading-order-digest-title"
                     className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight"
                   >
-                    Landmark Order Digest: 4 Verifiable Rulings Against Ed-Tech Platforms &amp; NBFC Partners
+                    Landmark Orders: Rulings Against Ed-Tech Platforms and NBFCs
                   </h2>
                   <span className="text-xs font-bold text-slate-500 uppercase tracking-wider">
                     Verifiable Court Records
@@ -581,7 +581,7 @@ export default function EdtechLoanCancellationRefundPage() {
                   id="heading-pattern-analysis-title"
                   className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight"
                 >
-                  Pattern Analysis: What Consistently Won Ed-Tech and Loan Cancellation Disputes
+                  Pattern Analysis: Winning Ed-Tech and Loan Cancellation Disputes
                 </h2>
                 <p className="text-sm sm:text-base text-slate-700 leading-relaxed">
                   Analysis of successful judgments before Consumer Commissions and orders by the RBI Ombudsman reveals clear strategic and evidentiary patterns that compel lenders and ed-tech firms to yield:
@@ -644,7 +644,7 @@ export default function EdtechLoanCancellationRefundPage() {
                   id="heading-escalation-flow-title"
                   className="text-xl sm:text-2xl font-bold text-slate-900 tracking-tight"
                 >
-                  Statutory Escalation Pipeline: From Course Cancellation to Loan Discharge &amp; CIBIL Repair
+                  Escalation Pipeline: Course Cancellation to Loan Discharge
                 </h2>
                 <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
                   Follow this 5-stage statutory recovery pathway designed to terminate unauthorized auto-debits and secure your credit standing:
@@ -857,7 +857,7 @@ export default function EdtechLoanCancellationRefundPage() {
                   id="heading-deadlines-table-title"
                   className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight"
                 >
-                  Statutory Deadlines &amp; Regulatory Benchmarks in Ed-Tech &amp; Education Loan Disputes
+                  Statutory Deadlines in Ed-Tech and Education Loan Disputes
                 </h2>
                 <p className="text-sm sm:text-base text-slate-700 leading-relaxed">
                   Both the Consumer Protection Act and Reserve Bank of India regulations enforce strict turnaround times and compliance benchmarks. Ed-tech firms and loan partners cannot override these statutory limits through internal terms of service:
@@ -946,7 +946,7 @@ export default function EdtechLoanCancellationRefundPage() {
                   id="heading-worked-example-title"
                   className="text-xl sm:text-2xl font-bold text-slate-900 tracking-tight"
                 >
-                  Worked Case Study: Student Cancels ₹96,000 Coding Course, Halts NBFC EMIs &amp; Recovers ₹30,000 in Damages
+                  Case Study: Student Cancels Course and Halts NBFC EMIs
                 </h2>
                 <div className="bg-slate-900 text-white rounded-2xl p-5 sm:p-8 shadow-xl space-y-4 sm:space-y-5 w-full overflow-hidden">
                   <div className="flex flex-wrap items-center justify-between gap-2 border-b border-slate-800 pb-3">
@@ -980,7 +980,7 @@ export default function EdtechLoanCancellationRefundPage() {
                   id="heading-evidence-checklist-title"
                   className="text-xl sm:text-2xl font-bold text-slate-900 tracking-tight"
                 >
-                  Evidence Checklist: 6 Critical Documents Before Serving an Ed-Tech Legal Notice
+                  Evidence Checklist: 6 Records Before Serving Ed-Tech Notice
                 </h2>
                 <p className="text-xs sm:text-sm text-slate-700 leading-relaxed">
                   Under Section 63 of the Bharatiya Sakshya Adhiniyam, 2023 (BSA), electronic communications and digital banking records are fully admissible in consumer courts. Assemble these 6 documents:
@@ -1044,7 +1044,7 @@ export default function EdtechLoanCancellationRefundPage() {
                     id="heading-faqs-title"
                     className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight"
                   >
-                    Frequently Asked Questions on Ed-Tech Course Refunds &amp; Loan Cancellations
+                    FAQs on Ed-Tech Course Refunds and Loan EMI Cancellations
                   </h2>
                   <p className="text-xs font-semibold text-slate-500 mt-1">
                     Authoritative Answers Grounded in Consumer Court Precedents, RBI Directives, and the Consumer Protection Act, 2019

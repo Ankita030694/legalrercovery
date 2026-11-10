@@ -317,7 +317,7 @@ export default function Order37SummarySuitPage() {
                   id="heading-overview-title"
                   className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight"
                 >
-                  What Is an Order 37 Summary Suit and Why Is It the Fastest Civil Route to Recover Money?
+                  What Is an Order 37 Summary Suit &amp; How It Works
                 </h2>
                 <p className="text-sm sm:text-base text-slate-700 leading-relaxed">
                   In India, recovering unpaid loans, dishonoured cheques, or contractual dues through an ordinary civil suit often feels like a punishment for the creditor. Traditional civil litigation allows the defendant to file generic written statements, raise frivolous preliminary objections, demand endless cross-examinations, and deliberately drag the dispute for five to ten years.
@@ -337,7 +337,7 @@ export default function Order37SummarySuitPage() {
                     id="heading-case-citations-title"
                     className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight"
                   >
-                    Landmark Judicial Digest: 4 Supreme Court Precedents on Order XXXVII CPC &amp; Leave to Defend
+                    4 Supreme Court Precedents on Order 37 CPC
                   </h2>
                   <span className="text-xs font-bold text-slate-500 uppercase tracking-wider">
                     Verifiable Supreme Court Orders
@@ -414,7 +414,7 @@ export default function Order37SummarySuitPage() {
                   id="heading-pattern-analysis-title"
                   className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight"
                 >
-                  Pattern Analysis: What Wins an Order 37 Summary Suit &amp; Defeats Illusory Defenses
+                  What Wins an Order 37 Summary Suit in Court
                 </h2>
                 <p className="text-sm sm:text-base text-slate-700 leading-relaxed">
                   Judicial analysis of hundreds of summary suits decreed by Indian High Courts (such as Delhi, Bombay, and Madras High Courts) reveals clear patterns in how creditors secure swift decrees and defeat common debtor stalling tactics:
@@ -489,7 +489,7 @@ export default function Order37SummarySuitPage() {
                   id="heading-procedure-flow-title"
                   className="text-xl sm:text-2xl font-bold text-slate-900 tracking-tight"
                 >
-                  Statutory Escalation Hierarchy: Order XXXVII CPC Step-by-Step Procedure
+                  Order 37 CPC Step-by-Step Procedure &amp; Hierarchy
                 </h2>
                 <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
                   The summary procedure moves through five tightly regulated statutory stages, each governed by strict limitation clocks under the Code of Civil Procedure:
@@ -614,7 +614,7 @@ export default function Order37SummarySuitPage() {
                   id="heading-playbook-title"
                   className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight"
                 >
-                  The 5-Step Escalation Playbook: From Pre-Suit Legal Notice to Decree Execution
+                  5-Step Playbook: Legal Notice to Decree Execution
                 </h2>
                 <p className="text-sm sm:text-base text-slate-700 leading-relaxed">
                   Executing an Order 37 recovery requires precision at every step. One procedural mistake can allow the debtor to demand a full regular trial. Follow this battle-tested playbook:
@@ -775,7 +775,7 @@ export default function Order37SummarySuitPage() {
                     id="heading-qualifying-docs-title"
                     className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight"
                   >
-                    Qualifying Debt Instruments Under Order XXXVII: Promissory Notes, Cheques &amp; Liquidated Contracts
+                    Qualifying Debts Under Order 37: Notes &amp; Cheques
                   </h2>
                   <p className="text-xs font-semibold text-slate-500 mt-1">
                     Select Your Instrument to Reveal Legal Requirements, Evidentiary Presumptions &amp; Enclosures
@@ -791,7 +791,7 @@ export default function Order37SummarySuitPage() {
                   id="heading-worked-example-title"
                   className="text-xl sm:text-2xl font-bold text-slate-900 tracking-tight"
                 >
-                  Worked Case Study: Creditor Recovers ₹15,00,000 Friendly Loan with 9% Interest via Order 37 CPC
+                  Case Study: Recovers ₹15L Loan with 9% Interest via Order 37
                 </h2>
                 <div className="bg-slate-900 text-white rounded-2xl p-5 sm:p-8 shadow-xl space-y-4 sm:space-y-5 w-full overflow-hidden">
                   <div className="flex flex-wrap items-center justify-between gap-2 border-b border-slate-800 pb-3">
@@ -828,7 +828,7 @@ export default function Order37SummarySuitPage() {
                   id="heading-evidence-checklist-title"
                   className="text-xl sm:text-2xl font-bold text-slate-900 tracking-tight"
                 >
-                  Order 37 Evidence Checklist: 6 Critical Documents Before Filing a Summary Plaint
+                  Evidence Checklist: 6 Documents for Order 37 Plaint
                 </h2>
                 <p className="text-xs sm:text-sm text-slate-700 leading-relaxed">
                   Under the Bharatiya Sakshya Adhiniyam, 2023 (BSA) and the Code of Civil Procedure, an Order 37 plaint must stand on airtight documentary proof. Assemble these 6 essential documents:
@@ -891,7 +891,7 @@ export default function Order37SummarySuitPage() {
                   id="heading-plaint-format-title"
                   className="text-xl sm:text-2xl font-bold text-slate-900 tracking-tight"
                 >
-                  Order 37 Summary Plaint Format &amp; Appendix B Summons Drafting Blueprint
+                  Order 37 Plaint Format &amp; Summons Drafting Blueprint
                 </h2>
                 <p className="text-xs sm:text-sm text-slate-700 leading-relaxed">
                   Every summary plaint must comply strictly with the pleading rules in Order XXXVII Rule 2 CPC. A flaw in the statutory endorsement can cause the plaint to be rejected or transferred to the ordinary civil track:
@@ -936,7 +936,7 @@ export default function Order37SummarySuitPage() {
                     id="heading-faqs-title"
                     className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight"
                   >
-                    Frequently Asked Questions About Order 37 Summary Suits, Court Fees &amp; Procedures
+                    FAQs: Order 37 Summary Suits, Fees &amp; Procedures
                   </h2>
                   <p className="text-xs font-semibold text-slate-500 mt-1">
                     Authoritative Answers Grounded in the Code of Civil Procedure, Limitation Act and Supreme Court Precedents

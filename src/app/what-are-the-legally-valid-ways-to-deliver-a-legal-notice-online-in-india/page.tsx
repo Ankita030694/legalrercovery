@@ -3,7 +3,7 @@ import OnlineNoticeDeliveryClient from "./OnlineNoticeDeliveryClient";
 
 export const metadata: Metadata = {
   title: "Valid Ways to Deliver a Legal Notice Online in India",
-  description: "Can you serve a legal notice via WhatsApp, Email, and Registered Speed Post in India? Supreme Court rules on double blue ticks, Section 27 Deemed Service & Section 63 BSA certification.",
+  description: "Learn valid ways to serve a legal notice via WhatsApp, email, and Speed Post in India under Supreme Court rules, Section 27 and Section 63 BSA.",
   keywords: [
     "legally valid ways to deliver legal notice online in india",
     "send legal notice online india validity",

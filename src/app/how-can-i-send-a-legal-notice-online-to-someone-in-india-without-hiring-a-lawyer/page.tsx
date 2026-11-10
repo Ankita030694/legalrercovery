@@ -3,7 +3,7 @@ import DiyLegalNoticeClient from "./DiyLegalNoticeClient";
 
 export const metadata: Metadata = {
   title: "Can You Send a Legal Notice Without a Lawyer in India?",
-  description: "Can you draft and send a legal notice yourself without hiring a lawyer in India? Compare self-drafted vs Advocate letterhead legal validity, court admissibility & risks.",
+  description: "Can you send a legal notice yourself in India? Compare self-drafted vs advocate letterhead notices for legal validity, admissibility, and risks.",
   keywords: [
     "how to send a legal notice without a lawyer",
     "can we send legal notice without lawyer",

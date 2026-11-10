@@ -316,7 +316,7 @@ export default function CourierLostParcelPage() {
                   id="heading-carrier-law-title"
                   className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight"
                 >
-                  The Legal Reality: Courier Liability Caps vs Indian Consumer Protection Law
+                  Legal Reality: Courier Liability Caps vs Consumer Law
                 </h2>
                 <p className="text-sm sm:text-base text-slate-700 leading-relaxed">
                   Every day in India, valuable consignments containing smartphones, laptops, urgent university transcripts, legal deeds, and commercial inventory disappear inside logistics sorting hubs or arrive damaged. When senders or recipients lodge grievances with logistics majors such as Delhivery, Blue Dart Express, DTDC, or Shadowfax, customer support desks almost universally offer the same canned reply: <em>&quot;As per our standard consignment terms, carrier liability for an uninsured parcel is capped at ₹100.&quot;</em> In other instances, logistics tracking portals abruptly flag an undelivered parcel as &quot;Delivered&quot; without recipient OTP verification, closing the ticket automatically.
@@ -344,7 +344,7 @@ export default function CourierLostParcelPage() {
                     id="heading-order-digest-title"
                     className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight"
                   >
-                    Landmark Order Digest: 4 Rulings Striking Down Courier Liability Disclaimers
+                    4 Landmark Orders Striking Down Courier Disclaimers
                   </h2>
                   <span className="text-xs font-bold text-slate-500 uppercase tracking-wider">
                     Verifiable Court Precedents
@@ -465,7 +465,7 @@ export default function CourierLostParcelPage() {
                   id="heading-escalation-rail-title"
                   className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight"
                 >
-                  Statutory Parcel Recovery Escalation Rail: From Misplacement to Court Decree
+                  Parcel Recovery Rail: Misplacement to Court Decree
                 </h2>
                 <p className="text-sm sm:text-base text-slate-700 leading-relaxed">
                   Recovering full compensation requires following a strict statutory timeline. Skipping statutory notices under the Carriage by Road Act can give couriers a procedural defense. The flowchart below outlines the exact chronological escalation steps:
@@ -553,7 +553,7 @@ export default function CourierLostParcelPage() {
                   id="heading-playbook-title"
                   className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight"
                 >
-                  The 5-Step Action Playbook: How to Recover Full Lost Parcel Compensation
+                  5-Step Playbook: Recover Full Lost Parcel Compensation
                 </h2>
 
                 <div className="space-y-4">
@@ -702,7 +702,7 @@ export default function CourierLostParcelPage() {
                   id="heading-problem-picker-title"
                   className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight"
                 >
-                  Carrier Dispute Navigator: Specific Remedies by Provider &amp; Scenario
+                  Carrier Dispute Navigator: Remedies by Provider
                 </h2>
                 <CourierParcelProblemTabs />
               </section>

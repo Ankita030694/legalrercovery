@@ -3,7 +3,7 @@ import MsmeSamadhanVsNoticeClient from "./MsmeSamadhanVsNoticeClient";
 
 export const metadata: Metadata = {
   title: "MSME Samadhaan vs Legal Notice: 45-Day Payment Rule",
-  description: "MSME Samadhaan complaint resolution time vs Legal Notice: How Udyam-registered businesses recover unpaid B2B invoices with 3x RBI compound interest under Section 16 of the MSMED Act.",
+  description: "MSME Samadhaan vs legal notice: How businesses recover unpaid B2B invoices with 3x RBI compound interest under Section 16 of the MSMED Act in India.",
   keywords: [
     "samadhan portal complaint resolution time",
     "msme samadhan portal recovery process",

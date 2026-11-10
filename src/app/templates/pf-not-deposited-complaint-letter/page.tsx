@@ -341,7 +341,7 @@ export default function PfNotDepositedComplaintPage() {
                   id="heading-overview-title"
                   className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight"
                 >
-                  The &quot;Deducted But Not Deposited&quot; PF Trap: What Indian Labour Law Mandates
+                  Deducted But Not Deposited PF: What Labour Law Mandates
                 </h2>
                 <p className="text-sm sm:text-base text-slate-700 leading-relaxed">
                   Tens of thousands of employees across Indian IT corporations, startups, logistics firms, and MSMEs discover a startling reality when logging into the EPFO Member Passbook: while their monthly salary slips show ₹2,000 to ₹10,000 deducted under &quot;Provident Fund&quot;, the EPFO portal shows zero inward remittances for 6, 12, or even 24 months. Employers divert these entrusted employee deductions to finance daily operations, vendor invoices, or executive bonuses.
@@ -367,7 +367,7 @@ export default function PfNotDepositedComplaintPage() {
                     id="heading-complaint-workspace-title"
                     className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight"
                   >
-                    Interactive PF Complaint Generator: Employer Demand, RPFC Petition &amp; EPFiGMS Text
+                    PF Complaint Generator: Demand Letter &amp; RPFC Petition
                   </h2>
                   <span className="text-xs font-bold text-slate-500 uppercase tracking-wider">
                     3-in-1 Legal Workspace
@@ -389,7 +389,7 @@ export default function PfNotDepositedComplaintPage() {
                     id="heading-annotated-sample-title"
                     className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight"
                   >
-                    Side-by-Side Annotated Sample: Statutory Demand Letter with Numbered Margin Notes
+                    Annotated Sample: Statutory PF Demand Letter
                   </h2>
                   <p className="text-xs font-semibold text-slate-500 mt-1">
                     Archetype P3 Two-Column Architecture: Full Verbatim Legal Sample (Left) Paired with Judicial Analysis (Right)
@@ -516,7 +516,7 @@ export default function PfNotDepositedComplaintPage() {
                     id="heading-elements-table-title"
                     className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight"
                   >
-                    Mandatory vs. Optional Elements: What Must Be Included in a PF Complaint
+                    Mandatory vs Optional Elements in a PF Complaint
                   </h2>
                   <p className="text-xs font-semibold text-slate-500 mt-1">
                     An Incomplete Notice Allows Defaulting Employers to Delay on Technicalities. Ensure Every Mandatory Field Is Included.
@@ -659,7 +659,7 @@ export default function PfNotDepositedComplaintPage() {
                   id="heading-employer-penalties-title"
                   className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight"
                 >
-                  Statutory Penalties &amp; Criminal Liabilities Defaulting Employers Face
+                  Penalties &amp; Criminal Liability for Defaulting Employers
                 </h2>
                 <p className="text-sm sm:text-base text-slate-700 leading-relaxed">
                   Indian law provides draconian penalties against establishments and corporate executives who misappropriate employee provident fund deductions. The statutory framework ensures that delaying deposits costs far more than timely compliance:
@@ -946,7 +946,7 @@ export default function PfNotDepositedComplaintPage() {
                   id="heading-worked-example-title"
                   className="text-xl sm:text-2xl font-bold text-slate-900 tracking-tight"
                 >
-                  Worked Financial Case Study: Tech Lead Recovers ₹86,400 Withheld PF + ₹10,368 Interest
+                  Case Study: Recovers ₹86,400 Withheld PF + Interest
                 </h2>
                 <div className="bg-slate-900 text-white rounded-2xl p-5 sm:p-8 shadow-xl space-y-4 sm:space-y-5 w-full overflow-hidden">
                   <div className="flex flex-wrap items-center justify-between gap-2 border-b border-slate-800 pb-3">
@@ -983,7 +983,7 @@ export default function PfNotDepositedComplaintPage() {
                   id="heading-evidence-checklist-title"
                   className="text-xl sm:text-2xl font-bold text-slate-900 tracking-tight"
                 >
-                  Evidence Checklist: 6 Essential Documents for an Incontestable PF Complaint
+                  Evidence Checklist: 6 Documents for a PF Complaint
                 </h2>
                 <p className="text-xs sm:text-sm text-slate-700 leading-relaxed">
                   Under Section 63 of the Bharatiya Sakshya Adhiniyam, 2023 (BSA), electronic documents and digital bank records are fully admissible before labour courts and police authorities. Assemble these 6 documents:

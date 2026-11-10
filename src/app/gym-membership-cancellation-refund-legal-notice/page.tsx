@@ -352,7 +352,7 @@ export default function GymMembershipRefundLegalNoticePage() {
                   id="heading-overview-title"
                   className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight"
                 >
-                  The Illusion of &ldquo;No-Refund&rdquo; Clauses: Why Gym Contracts Collapse Under Section 2(46) CPA
+                  Why Gym "No-Refund" Clauses Collapse Under CPA
                 </h2>
                 <p className="text-sm sm:text-base text-slate-700 leading-relaxed">
                   Across Indian tier-1 and metro hubs—from Bengaluru and Delhi-NCR to Mumbai, Hyderabad, and Pune—millions of health-conscious citizens enroll in commercial gym chains, CrossFit boxes, and boutique fitness studios. To lock in cash flows, fitness operators aggressively push 12-month, 24-month, or multi-year memberships with hefty upfront price tags ranging from ₹18,000 to over ₹60,000.
@@ -433,7 +433,7 @@ export default function GymMembershipRefundLegalNoticePage() {
                     id="heading-case-digest-title"
                     className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight"
                   >
-                    Landmark Consumer Court Precedents on Fitness &amp; Gym Subscription Refunds
+                    Consumer Court Precedents on Gym Fee Refunds
                   </h2>
                   <span className="text-xs font-bold text-slate-500 uppercase tracking-wider">
                     Verifiable Judicial Records
@@ -499,7 +499,7 @@ export default function GymMembershipRefundLegalNoticePage() {
                     id="heading-problem-picker-title"
                     className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight"
                   >
-                    Select Your Gym Dispute Scenario: Causes, Legal Bases &amp; Immediate Remedies
+                    Gym Dispute Scenarios: Causes &amp; Legal Remedies
                   </h2>
                   <span className="text-xs font-bold text-slate-500 uppercase tracking-wider">
                     Interactive Diagnostic
@@ -882,7 +882,7 @@ export default function GymMembershipRefundLegalNoticePage() {
                     id="heading-notice-clauses-title"
                     className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight"
                   >
-                    Core Statutory Clauses Used in an Advocate Legal Notice to Gym Management
+                    Statutory Clauses for Legal Notice to Gym Management
                   </h2>
                   <span className="text-xs font-bold text-slate-500 uppercase tracking-wider">
                     Pre-Litigation Draft Architecture
@@ -920,7 +920,7 @@ export default function GymMembershipRefundLegalNoticePage() {
                     id="heading-faqs-title"
                     className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight"
                   >
-                    Frequently Asked Questions: Gym Membership Cancellations &amp; Legal Remedies
+                    FAQs: Gym Membership Cancellations &amp; Remedies
                   </h2>
                   <span className="text-xs font-bold text-slate-500 uppercase tracking-wider">
                     Common Inquiries

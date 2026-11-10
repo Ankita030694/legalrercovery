@@ -162,7 +162,7 @@ const FAQS = [
 const ARTICLE_SCHEMA = {
   "@context": "https://schema.org",
   "@type": "Article",
-  headline: "RBI's New Framework for Fraudulent Banking Transactions (From January 2027)",
+  headline: "RBI's New Framework for Fraudulent Banking Transactions (2027)",
   description:
     "RBI's revised framework shifts the burden of proof to banks and adds compensation. What changes from 1 January 2027 and how to claim.",
   datePublished: "2026-11-04T13:05:00+05:30",
@@ -263,7 +263,7 @@ export default function RbiFraudulentTransactionFramework2027Page() {
             </div>
 
             <h1 className="text-2xl sm:text-3xl md:text-5xl font-black tracking-tight text-white leading-tight mb-4 sm:mb-6 break-words">
-              RBI&apos;s New Framework for Fraudulent Banking Transactions (From January 2027)
+              RBI&apos;s New Framework for Fraudulent Banking Transactions (2027)
             </h1>
 
             {/* Answer Box First: 40-60 Words Directly Under H1 */}
@@ -324,7 +324,7 @@ export default function RbiFraudulentTransactionFramework2027Page() {
                   id="heading-summary-title"
                   className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight"
                 >
-                  What Changes Under RBI&apos;s 2027 Fraudulent Electronic Banking Framework (Effective 1 January 2027†)
+                  Changes Under RBI 2027 Fraud Banking Framework (†)
                 </h2>
                 <p className="text-sm sm:text-base text-slate-700 leading-relaxed">
                   From <strong>1 January 2027</strong>†, the Reserve Bank of India&apos;s revised framework on customer liability and compensation in fraudulent electronic banking transactions overhauls how Indian banks must handle UPI, IMPS, NEFT, RTGS, mobile banking, and card fraud complaints. For nearly a decade under the earlier <strong>6 July 2017 Limited Liability Circular</strong> (<code>DBR.No.Leg.BC.78/09.07.005/2017-18</code>), bank branches and nodal cells routinely defeated consumer protection rules by sending a single boilerplate email: <em>&quot;Since the transaction was authenticated via OTP/PIN, it occurred due to customer negligence and the bank has zero liability.&quot;</em>
@@ -341,7 +341,7 @@ export default function RbiFraudulentTransactionFramework2027Page() {
                     id="heading-before-after-table-title"
                     className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight"
                   >
-                    Before vs After: RBI 2017 Limited Liability Circular vs 2027 Revised Fraud Framework
+                    Before vs After: 2017 Circular vs 2027 Framework
                   </h2>
                   <span className="text-xs font-bold text-slate-500 uppercase tracking-wider">
                     Archetype L2 Statutory Comparison
@@ -461,7 +461,7 @@ export default function RbiFraudulentTransactionFramework2027Page() {
                   id="heading-compensation-matrix-title"
                   className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight"
                 >
-                  How the ₹25,000 Small-Value Digital Fraud Compensation &amp; Liability Matrix Works
+                  ₹25,000 Digital Fraud Compensation &amp; Matrix
                 </h2>
                 <p className="text-sm sm:text-base text-slate-700 leading-relaxed">
                   One of the most frequent questions bank customers ask is whether the new ₹25,000 ceiling limits their claim when ₹2,00,000 or ₹10,00,000 is siphoned from their account. The answer is an emphatic <strong>no</strong>. The RBI operates a <strong>two-track restitution system</strong>: Track 1 (100% Zero-Liability Reversal for unauthorized bank/third-party breaches of any amount) and Track 2 (the new 85% / ₹25,000 Small-Value Safety Net for losses ≤ ₹50,000†). Use the statutory matrix below to calculate your exact entitlement:
@@ -566,7 +566,7 @@ export default function RbiFraudulentTransactionFramework2027Page() {
                   id="heading-timeline-change-title"
                   className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight"
                 >
-                  Regulatory Evolution Timeline: From the 2017 Zero-Liability Circular to 1 January 2027 Enforcement
+                  Regulatory Timeline: 2017 Circular to 2027 Rules
                 </h2>
                 <p className="text-sm sm:text-base text-slate-700 leading-relaxed">
                   Tracing the regulatory milestones from the original 2017 Master Direction to the 2027 framework helps you cite the exact legal authority in your bank demand notice and Ombudsman petition:
@@ -646,7 +646,7 @@ export default function RbiFraudulentTransactionFramework2027Page() {
                   id="heading-grey-areas-title"
                   className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight"
                 >
-                  Open Questions, Exclusions &amp; Transitional Grey Areas Under the 2027 RBI Rules (†)
+                  Open Questions &amp; Grey Areas Under 2027 Rules (†)
                 </h2>
                 <p className="text-sm sm:text-base text-slate-700 leading-relaxed">
                   While the 2027 framework represents the largest pro-consumer banking shift in a decade, fraud victims must understand four critical boundaries and transitional rules (†) so they do not forfeit their claim:
@@ -718,7 +718,7 @@ export default function RbiFraudulentTransactionFramework2027Page() {
                     id="heading-landmark-orders-title"
                     className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight"
                   >
-                    Landmark Supreme Court, High Court &amp; NCDRC Rulings Holding Banks Liable for Online Fraud
+                    Landmark Rulings Holding Banks Liable for Fraud
                   </h2>
                   <span className="text-xs font-bold text-slate-500 uppercase tracking-wider">
                     4 Verifiable Judicial Precedents
@@ -798,7 +798,7 @@ export default function RbiFraudulentTransactionFramework2027Page() {
                   id="heading-escalation-flow-title"
                   className="text-xl sm:text-2xl font-bold text-slate-900 tracking-tight"
                 >
-                  Statutory Escalation Architecture: From 1930 Cyber Reporting to Bank Refund &amp; RBI Ombudsman
+                  Escalation Architecture: Cyber Reporting to Ombudsman
                 </h2>
                 <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
                   Follow this five-stage statutory timeline to lock in your Zero-Liability / 2027 compensation rights, force a 10-working-day shadow reversal, and escalate bank refusals:
@@ -923,7 +923,7 @@ export default function RbiFraudulentTransactionFramework2027Page() {
                   id="heading-playbook-title"
                   className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight"
                 >
-                  How to Claim a Fraud Refund From Your Bank Today: The 5-Step Statutory Playbook
+                  5-Step Playbook to Claim a Fraud Refund From Bank
                 </h2>
                 <p className="text-sm sm:text-base text-slate-700 leading-relaxed">
                   Most bank fraud victims lose their money twice—first to the cyber criminal, and second to their own bank&apos;s compliance department because they only made an informal phone call instead of building a statutory paper trail. Follow these five exact steps:
@@ -1009,7 +1009,7 @@ export default function RbiFraudulentTransactionFramework2027Page() {
                     id="heading-scenario-tabs-title"
                     className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight"
                   >
-                    Common Bank Rejection Excuses in Online Fraud Cases &amp; How the 2027 Rules Defeat Them
+                    Bank Rejection Excuses in Fraud Cases &amp; Remedies
                   </h2>
                   <p className="text-xs font-semibold text-slate-500 mt-1">
                     Select the Specific Excuse Your Bank Used to Reject Your Claim to View the Statutory Rebuttal
@@ -1025,7 +1025,7 @@ export default function RbiFraudulentTransactionFramework2027Page() {
                   id="heading-worked-example-title"
                   className="text-xl sm:text-2xl font-bold text-slate-900 tracking-tight"
                 >
-                  Worked Case Study: Account Holder Recovers ₹1,85,000 Unauthorized RTGS/UPI Debit After Bank Blamed &apos;OTP Sharing&apos;
+                  Case Study: Recovers ₹1.85L Unauthorized Debit
                 </h2>
                 <div className="bg-slate-900 text-white rounded-2xl p-5 sm:p-8 shadow-xl space-y-4 sm:space-y-5 w-full overflow-hidden">
                   <div className="flex flex-wrap items-center justify-between gap-2 border-b border-slate-800 pb-3">
@@ -1070,7 +1070,7 @@ export default function RbiFraudulentTransactionFramework2027Page() {
                     id="heading-evidence-checklist-title"
                     className="text-xl sm:text-2xl font-bold text-slate-900 tracking-tight"
                   >
-                    Digital Fraud Evidence Dossier: 6 Mandatory Records Under Section 63 BSA Before Serving a Bank Legal Notice
+                    Evidence Dossier: 6 Records Under Section 63 BSA
                   </h2>
                   <p className="text-xs sm:text-sm text-slate-700 leading-relaxed">
                     Under Section 63 of the Bharatiya Sakshya Adhiniyam, 2023 (BSA), preserve these six electronic and documentary records to prove timely reporting and defeat bank negligence allegations:
@@ -1156,7 +1156,7 @@ export default function RbiFraudulentTransactionFramework2027Page() {
                     id="heading-faqs-title"
                     className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight"
                   >
-                    Frequently Asked Questions: RBI 2027 Fraud Transaction Rules, Bank Liability &amp; Refund Claims
+                    FAQs: RBI 2027 Fraud Rules &amp; Refund Claims
                   </h2>
                   <p className="text-xs font-semibold text-slate-500 mt-1">
                     Direct Answers Grounded in RBI Master Directions, the 2027 Revised Framework† &amp; Supreme Court Precedents
@@ -1189,7 +1189,7 @@ export default function RbiFraudulentTransactionFramework2027Page() {
                   id="heading-sources-title"
                   className="text-lg sm:text-xl font-bold text-slate-900 tracking-tight"
                 >
-                  Primary RBI Circulars, Supreme Court Judgments &amp; Official Cyber Reporting Portals
+                  Primary RBI Circulars &amp; Official Cyber Portals
                 </h2>
                 <ol className="sources list-decimal list-inside space-y-2 text-xs sm:text-sm text-slate-600">
                   {PRIMARY_SOURCES.map((source, idx) => (

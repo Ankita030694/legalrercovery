@@ -3,7 +3,7 @@ import RecoveryOfUnpaidDuesClient from './RecoveryOfUnpaidDuesClient';
 
 export const metadata: Metadata = {
   title: 'Recovery of Unpaid Dues for Business: Legal Guide',
-  description: 'Learn the legal process for recovery of unpaid dues for my business in India. Enforce payments under MSMED Act, Order 37 CPC summary suits, and advocate legal notice.',
+  description: 'Legal guide to recovering unpaid business dues in India. Enforce payments under the MSMED Act, Order 37 summary suits, and advocate legal notices.',
   alternates: {
     canonical: 'https://www.legalrecovery.in/recovery-of-unpaid-dues-for-my-business',
   },

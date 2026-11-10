@@ -333,7 +333,7 @@ export default function AtmCashNotDispensedCompensationPage() {
                   id="heading-overview-title"
                   className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight"
                 >
-                  ATM Debited but Cash Not Dispensed: Your Legal Rights Under RBI Directives
+                  ATM Cash Not Dispensed: Legal Rights Under RBI Rules
                 </h2>
                 <p className="text-sm sm:text-base text-slate-700 leading-relaxed">
                   Every day across India, thousands of consumers stand before an automated teller machine, insert their debit or credit card, enter their PIN, request a cash withdrawal, and listen to the mechanical count of banknotes—only for the shutter to remain firmly shut while their phone buzzes with an immediate SMS debit alert. This malfunction, known in banking terminology as a <em>failed cash withdrawal</em> or <em>cash non-dispensation</em>, leaves citizens temporarily deprived of their hard-earned money.
@@ -404,7 +404,7 @@ export default function AtmCashNotDispensedCompensationPage() {
                     id="heading-case-digest-title"
                     className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight"
                   >
-                    Consumer Court Precedents: Judicial Rulings Holding Banks Accountable for ATM Failures
+                    Court Rulings Holding Banks Liable for ATM Failures
                   </h2>
                   <p className="text-xs sm:text-sm text-slate-600 mt-1">
                     Binding judgments from the NCDRC, State Commissions, and District Consumer Forums establishing cardholder protection standards
@@ -601,7 +601,7 @@ export default function AtmCashNotDispensedCompensationPage() {
                     id="heading-playbook-title"
                     className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight"
                   >
-                    The 4-Step Statutory Recovery Playbook: From ATM Failure to Account Credit
+                    4-Step Recovery Playbook: ATM Failure to Account Credit
                   </h2>
                   <p className="text-xs sm:text-sm text-slate-600 mt-1">
                     Exact procedural roadmap to compel debit reversal and recover every single rupee of accrued delay compensation
@@ -740,7 +740,7 @@ export default function AtmCashNotDispensedCompensationPage() {
                     id="heading-problem-picker-title"
                     className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight"
                   >
-                    Scenario Playbook: Diagnose Your Specific ATM Dispute &amp; Apply the Legal Fix
+                    ATM Dispute Scenarios &amp; Immediate Legal Remedies
                   </h2>
                   <p className="text-xs sm:text-sm text-slate-600 mt-1">
                     Select your exact ATM failure circumstance to see the underlying technical fault and verified 3-step recovery action
@@ -756,7 +756,7 @@ export default function AtmCashNotDispensedCompensationPage() {
                   id="heading-worked-example-title"
                   className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight"
                 >
-                  Worked Financial Audit: Calculating Your Exact Principal and Daily Penalty Claim
+                  Calculating Principal &amp; Daily ATM Penalty Claims
                 </h2>
                 <p className="text-sm sm:text-base text-slate-700 leading-relaxed">
                   To illustrate how statutory compensation accumulates under RBI directives, consider the following real-world scenario (details illustrative of standard dispute mechanics):
@@ -814,7 +814,7 @@ export default function AtmCashNotDispensedCompensationPage() {
                   id="heading-evidence-checklist-title"
                   className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight"
                 >
-                  Evidence Checklist: 6 Vital Documents for ATM Cash Non-Dispensation Claims
+                  Evidence Checklist: 6 Documents for ATM Cash Claims
                 </h2>
                 <p className="text-sm sm:text-base text-slate-700 leading-relaxed">
                   Before issuing a legal notice or escalating to the RBI Ombudsman, assemble these six documentary proofs to establish an unassailable evidentiary record under Section 63 of Bharatiya Sakshya Adhiniyam, 2023:

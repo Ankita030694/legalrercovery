@@ -3,7 +3,7 @@ import LegalNoticeRecoverySampleClient from "./LegalNoticeRecoverySampleClient";
 
 export const metadata: Metadata = {
   title: "Legal Notice for Recovery of Money Format & Sample PDF",
-  description: "Free Legal Notice for Recovery of Money format & sample drafts in India for friendly loans, unpaid B2B invoices, salary/F&F dues, and security deposits—or dispatch an Advocate Notice online.",
+  description: "Free legal notice for recovery of money format and samples in India for loans, unpaid invoices, and salary dues. Send an advocate notice online.",
   keywords: [
     "legal notice for recovery of money sample",
     "money recovery legal notice format",

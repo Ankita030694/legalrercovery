@@ -1,8 +1,13 @@
 "use client";
 
 import React, { useState } from "react";
-import { PaymentModal } from "@/components/PaymentModal";
+import dynamic from "next/dynamic";
 import { DEFAULT_FUNNEL_SETTINGS } from "@/lib/funnel-config";
+
+const PaymentModal = dynamic(
+  () => import("@/components/PaymentModal").then((mod) => mod.PaymentModal),
+  { ssr: false }
+);
 
 interface InfluencerNoticeCTAProps {
   buttonText?: string;
@@ -62,7 +67,9 @@ export default function InfluencerNoticeCTA({
         )}
       </div>
 
-      <PaymentModal isOpen={isModalOpen} onClose={() => setIsModalOpen(false)} />
+      {isModalOpen && (
+        <PaymentModal isOpen={isModalOpen} onClose={() => setIsModalOpen(false)} />
+      )}
     </>
   );
 }

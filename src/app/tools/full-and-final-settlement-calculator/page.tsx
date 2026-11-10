@@ -239,7 +239,7 @@ export default function FnfCalculatorPage() {
             </div>
 
             <h1 className="text-2xl sm:text-3xl md:text-5xl font-black tracking-tight text-white leading-tight mb-4 sm:mb-6 break-words">
-              Calculate Your Full &amp; Final Settlement: Salary, Leave, Gratuity, Notice Pay
+              Calculate Your Full &amp; Final Settlement: Salary, Leave and Gratuity
             </h1>
 
             {/* Answer Box First: 40-60 Words Directly Under H1 */}

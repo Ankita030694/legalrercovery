@@ -3,7 +3,7 @@ import Link from 'next/link';
 
 export const metadata: Metadata = {
   title: 'Our Legal Experts & Panel Advocates | Legal Recovery India',
-  description: 'Meet the legal experts behind Legal Recovery India. Led by Founder Anuj Anand Malik and our panel of senior advocates specializing in consumer protection, debt recovery, and civil litigation.',
+  description: 'Meet our legal experts and panel advocates led by Founder Anuj Anand Malik, specializing in debt recovery, consumer law, and civil litigation.',
   alternates: {
     canonical: 'https://www.legalrecovery.in/authors',
   },

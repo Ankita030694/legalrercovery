@@ -331,7 +331,7 @@ export default function IrctcLegalNoticePage() {
                     id="heading-order-digest-title"
                     className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight"
                   >
-                    Landmark Order Digest: 4 Verifiable Railway Rulings Against IRCTC &amp; Indian Railways
+                    4 Landmark Consumer Rulings Against IRCTC &amp; Railways
                   </h2>
                   <span className="text-xs font-bold text-slate-500 uppercase tracking-wider">
                     Verifiable Court Records
@@ -408,7 +408,7 @@ export default function IrctcLegalNoticePage() {
                   id="heading-pattern-analysis-title"
                   className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight"
                 >
-                  Pattern Analysis: What Won Railway Ticket Refund and Rejected TDR Disputes
+                  What Won Railway Ticket Refund and Rejected TDR Disputes
                 </h2>
                 <p className="text-sm sm:text-base text-slate-700 leading-relaxed">
                   A comprehensive examination of consumer commission verdicts against IRCTC and Indian Railways reveals unmistakable evidentiary patterns. When passengers maintain clean digital audit trails, consumer commissions summarily discard generic railway defenses:
@@ -608,7 +608,7 @@ export default function IrctcLegalNoticePage() {
                   id="heading-playbook-title"
                   className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight"
                 >
-                  The 5-Step Escalation Playbook Against IRCTC: From TDR Filing to Legal Notice
+                  5-Step Escalation Playbook Against IRCTC: TDR to Notice
                 </h2>
                 <p className="text-sm sm:text-base text-slate-700 leading-relaxed">
                   Derived directly from winning consumer commission verdicts, this 5-step playbook cuts through automated support deflection and enforces your passenger rights under Indian railway regulations:
@@ -696,7 +696,7 @@ export default function IrctcLegalNoticePage() {
                   id="heading-deadlines-table-title"
                   className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight"
                 >
-                  Statutory Deadlines Under Railway Passengers Refund Rules: TDR, Tatkal &amp; Failed Transactions
+                  Railway Refund Rules: TDR, Tatkal &amp; Transaction Timelines
                 </h2>
                 <p className="text-sm sm:text-base text-slate-700 leading-relaxed">
                   Indian Railways and the Reserve Bank of India enforce binding turnaround times for ticket refunds and failed digital payments. IRCTC cannot enforce internal policies that contradict these statutory benchmarks:
@@ -777,7 +777,7 @@ export default function IrctcLegalNoticePage() {
                     id="heading-problem-picker-title"
                     className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight"
                   >
-                    TDR Rejection and Refund Bottlenecks: Root Causes &amp; Immediate Fixes
+                    TDR Rejection &amp; Refund Bottlenecks: Practical Fixes
                   </h2>
                   <p className="text-xs font-semibold text-slate-500 mt-1">
                     Select Your Specific Dispute Scenario to Unlock the Statutory Section and Direct Escalation Action
@@ -793,7 +793,7 @@ export default function IrctcLegalNoticePage() {
                   id="heading-worked-example-title"
                   className="text-xl sm:text-2xl font-bold text-slate-900 tracking-tight"
                 >
-                  Worked Case Study: Passenger Recovers ₹8,460 Ticket Fare + ₹15,000 Harassment Damages From IRCTC
+                  Case Study: Passenger Recovers ₹8,460 Fare + Damages From IRCTC
                 </h2>
                 <div className="bg-slate-900 text-white rounded-2xl p-5 sm:p-8 shadow-xl space-y-4 sm:space-y-5 w-full overflow-hidden">
                   <div className="flex flex-wrap items-center justify-between gap-2 border-b border-slate-800 pb-3">
@@ -827,7 +827,7 @@ export default function IrctcLegalNoticePage() {
                   id="heading-evidence-checklist-title"
                   className="text-xl sm:text-2xl font-bold text-slate-900 tracking-tight"
                 >
-                  Railway Evidence Checklist: 6 Critical Documents Before Serving an IRCTC Legal Notice
+                  Railway Evidence Checklist: 6 Documents for IRCTC Notice
                 </h2>
                 <p className="text-xs sm:text-sm text-slate-700 leading-relaxed">
                   Under Section 63 of the Bharatiya Sakshya Adhiniyam, 2023 (BSA), electronic communications and digital banking records are fully admissible in consumer courts. Assemble these 6 documents:
@@ -891,7 +891,7 @@ export default function IrctcLegalNoticePage() {
                     id="heading-faqs-title"
                     className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight"
                   >
-                    Frequently Asked Questions About IRCTC Refunds, Rejected TDR &amp; Legal Notices
+                    FAQs About IRCTC Refunds, Rejected TDR &amp; Legal Notices
                   </h2>
                   <p className="text-xs font-semibold text-slate-500 mt-1">
                     Authoritative Answers Grounded in Railway Refund Rules, RBI Directives and Consumer Court Orders

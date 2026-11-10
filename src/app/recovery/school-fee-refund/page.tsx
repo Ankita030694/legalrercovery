@@ -3,7 +3,7 @@ import SchoolFeeRefundClient from "./SchoolFeeRefundClient";
 
 export const metadata: Metadata = {
   title: "Private School Refusing Fee Refund? Recover Money",
-  description: "Private school not refunding admission fees, caution deposit, or development charges? LegalRecovery provides expert legal-tech assistance to recover school fees, fight illegal capitation charges, and hold school management accountable under RTE Act and consumer law.",
+  description: "Private school not refunding admission fees or caution deposit? Get expert legal assistance to recover school fees under RTE Act and consumer law.",
   keywords: [
     "school fee refund India",
     "private school admission cancellation refund",

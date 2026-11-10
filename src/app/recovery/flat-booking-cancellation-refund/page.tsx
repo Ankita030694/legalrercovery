@@ -3,7 +3,7 @@ import FlatBookingCancellationRefundClient from "./FlatBookingCancellationRefund
 
 export const metadata: Metadata = {
   title: "Flat Booking Cancellation Refund | LegalRecovery",
-  description: "Need a refund after canceling your flat booking? LegalRecovery helps recover your apartment booking dues and installments under RERA and consumer law.",
+  description: "Need a refund after canceling a flat booking? Recover your apartment booking advance and installments under RERA and consumer protection law.",
   keywords: [
     "flat booking cancellation refund",
     "cancel apartment booking refund rera",

@@ -16,20 +16,27 @@ export default function Section43bhTableOfContents({ items }: Section43bhTableOf
   const [isMobileOpen, setIsMobileOpen] = useState(false);
 
   useEffect(() => {
+    let ticking = false;
     const handleScroll = () => {
-      const scrollPosition = window.scrollY + 160;
-      let current = items[0]?.id || '';
+      if (!ticking) {
+        window.requestAnimationFrame(() => {
+          const scrollPosition = window.scrollY + 160;
+          let current = items[0]?.id || '';
 
-      for (const item of items) {
-        const element = document.getElementById(item.id);
-        if (element) {
-          const top = element.offsetTop;
-          if (scrollPosition >= top) {
-            current = item.id;
+          for (const item of items) {
+            const element = document.getElementById(item.id);
+            if (element) {
+              const top = element.offsetTop;
+              if (scrollPosition >= top) {
+                current = item.id;
+              }
+            }
           }
-        }
+          setActiveId(current);
+          ticking = false;
+        });
+        ticking = true;
       }
-      setActiveId(current);
     };
 
     window.addEventListener('scroll', handleScroll, { passive: true });

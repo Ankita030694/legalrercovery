@@ -340,7 +340,7 @@ export default function WrongAccountTransferRefundApplicationPage() {
                     id="heading-order-digest-title"
                     className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight"
                   >
-                    Landmark Order Digest: 4 Verifiable Judicial Rulings on Mistaken Account Credits &amp; Bank Liability
+                    4 Landmark Judicial Rulings on Mistaken Account Credits
                   </h2>
                   <span className="text-xs font-bold text-slate-500 uppercase tracking-wider">
                     Verifiable Court Records
@@ -417,7 +417,7 @@ export default function WrongAccountTransferRefundApplicationPage() {
                   id="heading-pattern-analysis-title"
                   className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight"
                 >
-                  Pattern Analysis: What Won Wrong Account Money Transfer &amp; Reversal Claims
+                  What Won Wrong Account Transfer &amp; Reversal Claims
                 </h2>
                 <p className="text-sm sm:text-base text-slate-700 leading-relaxed">
                   A comprehensive examination of consumer commission verdicts and banking ombudsman orders reveals clear evidentiary patterns. When customers follow a strict procedural roadmap, banks and recipients are compelled to reverse the funds:
@@ -605,7 +605,7 @@ export default function WrongAccountTransferRefundApplicationPage() {
                   id="heading-playbook-title"
                   className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight"
                 >
-                  The 5-Step Escalation Playbook: From Home Branch Application to Legal Notice
+                  5-Step Playbook: Branch Application to Legal Notice
                 </h2>
                 <p className="text-sm sm:text-base text-slate-700 leading-relaxed">
                   Derived directly from winning court orders and RBI ombudsman settlements, this 5-step playbook enforces your restitution rights and prevents your money from being lost permanently:
@@ -693,7 +693,7 @@ export default function WrongAccountTransferRefundApplicationPage() {
                   id="heading-deadlines-table-title"
                   className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight"
                 >
-                  Statutory Deadlines &amp; Regulatory Benchmarks: NEFT, RTGS, IMPS &amp; UPI Reversals
+                  Statutory Deadlines: NEFT, RTGS, IMPS &amp; UPI Reversals
                 </h2>
                 <p className="text-sm sm:text-base text-slate-700 leading-relaxed">
                   Indian contract law and Reserve Bank of India directives enforce clear timelines for bank communication and mistaken payment dispute handling:
@@ -763,7 +763,7 @@ export default function WrongAccountTransferRefundApplicationPage() {
                     id="heading-problem-picker-title"
                     className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight"
                   >
-                    Wrong Transfer Scenarios: Root Causes &amp; Immediate 3-Step Legal Fixes
+                    Wrong Transfer Scenarios &amp; 3-Step Legal Remedies
                   </h2>
                   <p className="text-xs font-semibold text-slate-500 mt-1">
                     Select Your Specific Dispute Scenario to Unlock the Statutory Section and Direct Escalation Action
@@ -847,7 +847,7 @@ export default function WrongAccountTransferRefundApplicationPage() {
                   id="heading-worked-example-title"
                   className="text-xl sm:text-2xl font-bold text-slate-900 tracking-tight"
                 >
-                  Worked Case Study: Remitter Recovers ₹48,500 Accidental Typo via Administrative Lien &amp; Legal Notice
+                  Case Study: Recovers ₹48,500 Typo via Lien &amp; Notice
                 </h2>
                 <div className="bg-slate-900 text-white rounded-2xl p-5 sm:p-8 shadow-xl space-y-4 sm:space-y-5 w-full overflow-hidden">
                   <div className="flex flex-wrap items-center justify-between gap-2 border-b border-slate-800 pb-3">
@@ -881,7 +881,7 @@ export default function WrongAccountTransferRefundApplicationPage() {
                   id="heading-evidence-checklist-title"
                   className="text-xl sm:text-2xl font-bold text-slate-900 tracking-tight"
                 >
-                  Evidence Checklist: 6 Critical Documents Before Serving a Bank or Recipient Notice
+                  Evidence Checklist: 6 Documents for Bank Notice
                 </h2>
                 <p className="text-xs sm:text-sm text-slate-700 leading-relaxed">
                   Under Section 63 of the Bharatiya Sakshya Adhiniyam, 2023 (BSA), electronic banking records and digital proofs are fully admissible in court. Assemble these 6 documents:
@@ -945,7 +945,7 @@ export default function WrongAccountTransferRefundApplicationPage() {
                     id="heading-faqs-title"
                     className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight"
                   >
-                    Frequently Asked Questions About Wrong Account Money Transfers &amp; UPI Reversals
+                    FAQs: Wrong Account Money Transfers &amp; UPI Reversals
                   </h2>
                   <p className="text-xs font-semibold text-slate-500 mt-1">
                     Authoritative Answers Grounded in Section 72 Indian Contract Act, RBI Master Directions and Court Orders

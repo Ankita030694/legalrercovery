@@ -377,7 +377,7 @@ export default function CoLivingDepositRefundLegalNoticePage() {
                     id="heading-pre-flight-checklist-title"
                     className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight"
                   >
-                    Pre-Flight Readiness Checklist: 6 Steps Before Serving a Co-Living Deposit Legal Notice
+                    6 Steps Before Serving a Co-Living Deposit Notice
                   </h2>
                   <span className="text-xs font-bold text-slate-500 uppercase tracking-wider">
                     Interactive Readiness Audit
@@ -400,7 +400,7 @@ export default function CoLivingDepositRefundLegalNoticePage() {
                   id="heading-legal-status-title"
                   className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight"
                 >
-                  Why Co-Living Operators (Stanza Living, Zolo, Colive, Housr) Fall Under the Consumer Protection Act, 2019
+                  Why Co-Living Operators Fall Under Consumer Law
                 </h2>
                 <p className="text-sm sm:text-base text-slate-700 leading-relaxed">
                   When a traditional flat owner refuses to return a rental security deposit, tenants often face a procedural hurdle: bare-shell residential leases are governed by the Transfer of Property Act, 1882 and state Rent Control laws, requiring civil recovery suits (see our hub guide on{" "}
@@ -475,7 +475,7 @@ export default function CoLivingDepositRefundLegalNoticePage() {
                   id="heading-deductions-table-title"
                   className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight"
                 >
-                  Legitimate vs. Illegitimate Co-Living Deposit Deductions: What Operators Can and Cannot Cut
+                  Legitimate vs Illegal Co-Living Deposit Deductions
                 </h2>
                 <p className="text-sm sm:text-base text-slate-700 leading-relaxed">
                   A major flashpoint in co-living move-outs is the Final Settlement (FnF) statement, where a ₹25,000 or ₹40,000 security deposit is whittled down to a few thousand rupees through opaque line items. Compare your operator&apos;s deduction sheet against Indian statutory benchmarks (and see our dedicated guide on{" "}
@@ -544,7 +544,7 @@ export default function CoLivingDepositRefundLegalNoticePage() {
                   id="heading-document-matrix-title"
                   className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight"
                 >
-                  Document &amp; Evidence Matrix: 7 Records That Win Co-Living Deposit Claims
+                  Evidence Matrix: 7 Records for Co-Living Deposits
                 </h2>
                 <p className="text-sm sm:text-base text-slate-700 leading-relaxed">
                   Because co-living relationships are managed entirely through mobile apps rather than stamped physical leases, electronic records form the backbone of your recovery claim. Under Section 63 of the Bharatiya Sakshya Adhiniyam, 2023 (BSA), digital records are fully admissible when preserved correctly (also see how{" "}
@@ -594,7 +594,7 @@ export default function CoLivingDepositRefundLegalNoticePage() {
                     id="heading-case-digest-title"
                     className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight"
                   >
-                    Consumer Commission Orders &amp; Legal Precedents on PG and Co-Living Deposit Refunds
+                    Consumer Court Precedents on Co-Living Deposits
                   </h2>
                   <span className="text-xs font-bold text-slate-500 uppercase tracking-wider">
                     Judicial &amp; Forum Rulings
@@ -675,7 +675,7 @@ export default function CoLivingDepositRefundLegalNoticePage() {
                   id="heading-escalation-timeline-title"
                   className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight"
                 >
-                  Step-by-Step Escalation Timeline: From Move-Out Ticket to e-Jagriti Recovery
+                  Escalation Timeline: Move-Out to e-Jagriti Order
                 </h2>
                 <p className="text-sm sm:text-base text-slate-700 leading-relaxed">
                   Do not let customer support stall you with endless &quot;7 more working days&quot; promises. Follow this chronological statutory timeline to compel payment from a co-living operator (or if your accommodation is an independent paying guest house, see our guide on{" "}
@@ -884,7 +884,7 @@ export default function CoLivingDepositRefundLegalNoticePage() {
                     id="heading-operator-scenarios-title"
                     className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight"
                   >
-                    Operator Dispute Scenarios: Stanza Living, Zolostays, Colive &amp; App-Based PG Issues
+                    Co-Living Dispute Scenarios &amp; Legal Remedies
                   </h2>
                   <p className="text-xs font-semibold text-slate-500 mt-1">
                     Select Your Specific Co-Living Deposit Bottleneck to View the Statutory Rule and Immediate Legal Remedy
@@ -904,7 +904,7 @@ export default function CoLivingDepositRefundLegalNoticePage() {
                   id="heading-worked-example-title"
                   className="text-xl sm:text-2xl font-bold text-slate-900 tracking-tight"
                 >
-                  Worked Recovery Example: How a Bengaluru Resident Recovered ₹36,000 Deposit + ₹8,000 Compensation
+                  Case Study: Resident Recovers ₹36,000 Deposit
                 </h2>
                 <div className="bg-slate-900 text-white rounded-2xl p-5 sm:p-8 shadow-xl space-y-4 sm:space-y-5 w-full overflow-hidden">
                   <div className="flex flex-wrap items-center justify-between gap-2 border-b border-slate-800 pb-3">
@@ -943,7 +943,7 @@ export default function CoLivingDepositRefundLegalNoticePage() {
                     id="heading-notice-template-title"
                     className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight"
                   >
-                    Co-Living Security Deposit Refund Legal Notice &amp; Final Escalation Format
+                    Co-Living Deposit Refund Notice &amp; Escalation Format
                   </h2>
                   <span className="text-xs font-bold text-slate-500 uppercase tracking-wider">
                     Statutory Pre-Litigation Format
@@ -1014,7 +1014,7 @@ export default function CoLivingDepositRefundLegalNoticePage() {
                     id="heading-faqs-title"
                     className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight"
                   >
-                    Frequently Asked Questions on Co-Living Deposit Refunds &amp; Legal Notices
+                    FAQs: Co-Living Deposit Refunds &amp; Legal Notices
                   </h2>
                   <p className="text-xs font-semibold text-slate-500 mt-1">
                     Verified Answers Grounded in the Consumer Protection Act 2019, Section 74 Contract Act &amp; Model Tenancy Act

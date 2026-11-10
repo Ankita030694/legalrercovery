@@ -191,7 +191,7 @@ const FAQS = [
 const ARTICLE_SCHEMA = {
   "@context": "https://schema.org",
   "@type": "Article",
-  headline: "Builder Delayed Possession? How to Claim Monthly Interest Compensation Under RERA",
+  headline: "Builder Delayed Possession? Claim Monthly Compensation Under RERA",
   description:
     "Claim delay compensation under RERA Section 18 while keeping your flat. Interest rate formula (SBI MCLR + 2%), notice to builder and RERA filing.",
   datePublished: "2026-11-09T12:00:00+05:30",
@@ -292,7 +292,7 @@ export default function ReraDelayedPossessionCompensationPage() {
             </div>
 
             <h1 className="text-2xl sm:text-3xl md:text-5xl font-black tracking-tight text-white leading-tight mb-4 sm:mb-6 break-words">
-              Builder Delayed Possession? How to Claim Monthly Interest Compensation Under RERA
+              Builder Delayed Possession? Claim Monthly Compensation Under RERA
             </h1>
 
             {/* Answer Box First: 40-60 Words Directly Under H1 */}

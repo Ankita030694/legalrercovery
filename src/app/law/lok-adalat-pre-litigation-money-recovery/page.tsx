@@ -325,7 +325,7 @@ export default function LokAdalatMoneyRecoveryPage() {
                   id="heading-overview-title"
                   className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight"
                 >
-                  What Is a Pre-Litigation Lok Adalat and How Does It Enforce Money Recovery?
+                  What Is a Pre-Litigation Lok Adalat &amp; Enforcement
                 </h2>
                 <p className="text-sm sm:text-base text-slate-700 leading-relaxed">
                   In India, pursuing an unpaid commercial debt, returned cheque, or loan recovery through conventional civil courts can be a costly, exhausting ordeal. Plaintiffs must pay ad-valorem state court fees—often ranging between 5% and 10% of the principal claim upfront—before waiting anywhere from three to seven years for a contested trial to conclude. For many small businesses, professionals, and individual lenders, the court fee burden alone discourages pursuing legitimate claims.
@@ -345,7 +345,7 @@ export default function LokAdalatMoneyRecoveryPage() {
                     id="heading-case-citations-title"
                     className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight"
                   >
-                    Landmark Judicial Precedents on Lok Adalat Awards &amp; Money Decree Enforcement
+                    Judicial Precedents on Lok Adalat Money Awards
                   </h2>
                   <span className="text-xs font-bold text-slate-500 uppercase tracking-wider">
                     Authoritative Supreme Court Case Law
@@ -422,7 +422,7 @@ export default function LokAdalatMoneyRecoveryPage() {
                   id="heading-lok-vs-suit-title"
                   className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight"
                 >
-                  Strategic Comparison: Pre-Litigation Lok Adalat vs. Regular Civil Money Suit
+                  Lok Adalat vs Regular Civil Money Suit Compared
                 </h2>
                 <p className="text-sm sm:text-base text-slate-700 leading-relaxed">
                   Choosing the right legal recovery channel determines whether you recover funds within weeks or spend years entangled in court corridors. The following comparative matrix outlines the statutory and operational differences between initiating a pre-litigation Lok Adalat dispute and filing a traditional civil money suit:
@@ -526,7 +526,7 @@ export default function LokAdalatMoneyRecoveryPage() {
                   id="heading-resolution-flow-title"
                   className="text-xl sm:text-2xl font-bold text-slate-900 tracking-tight"
                 >
-                  Statutory Escalation &amp; Settlement Hierarchy: From Application to Execution
+                  Escalation &amp; Settlement: Application to Award
                 </h2>
                 <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
                   The pre-litigation Lok Adalat follows an exact statutory conciliation procedure regulated by NALSA. Follow this structured roadmap to navigate your dispute from notice dispatch to decree execution:
@@ -651,7 +651,7 @@ export default function LokAdalatMoneyRecoveryPage() {
                   id="heading-playbook-title"
                   className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight"
                 >
-                  The 5-Step Playbook to File and Settle a Pre-Litigation Money Claim at DLSA
+                  5-Step Playbook to File Claims at DLSA Lok Adalat
                 </h2>
                 <p className="text-sm sm:text-base text-slate-700 leading-relaxed">
                   Following the correct statutory protocol ensures your dispute is swiftly listed and successfully transformed into an executable civil decree:
@@ -742,7 +742,7 @@ export default function LokAdalatMoneyRecoveryPage() {
                   id="heading-eligibility-title"
                   className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight"
                 >
-                  Money Claims Eligibility Matrix: Which Debts and Disputes Qualify Before DLSA?
+                  Which Debts Qualify for Pre-Litigation Lok Adalat?
                 </h2>
                 <p className="text-sm sm:text-base text-slate-700 leading-relaxed">
                   While Lok Adalats have wide jurisdiction over civil and compoundable disputes, the statute draws a firm boundary around non-compoundable offences. The following matrix outlines what can and cannot be resolved through a pre-litigation Lok Adalat:
@@ -820,7 +820,7 @@ export default function LokAdalatMoneyRecoveryPage() {
                     id="heading-dispute-types-title"
                     className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight"
                   >
-                    Dispute Type Navigator: Money Claims Handled at Pre-Litigation Lok Adalats
+                    Money Claims Handled at Pre-Litigation Lok Adalats
                   </h2>
                   <p className="text-xs font-semibold text-slate-500 mt-1">
                     Select Your Specific Claim Category to Unlock the Governing Statutory Rule and Action Hierarchy
@@ -836,7 +836,7 @@ export default function LokAdalatMoneyRecoveryPage() {
                   id="heading-worked-example-title"
                   className="text-xl sm:text-2xl font-bold text-slate-900 tracking-tight"
                 >
-                  Worked Recovery Case Study: Unpaid Vendor Recovers ₹6,20,000 via District Pre-Litigation Lok Adalat
+                  Case Study: Vendor Recovers ₹6.2L via Lok Adalat
                 </h2>
                 <div className="bg-slate-900 text-white rounded-2xl p-5 sm:p-8 shadow-xl space-y-4 sm:space-y-5 w-full overflow-hidden">
                   <div className="flex flex-wrap items-center justify-between gap-2 border-b border-slate-800 pb-3">
@@ -870,7 +870,7 @@ export default function LokAdalatMoneyRecoveryPage() {
                   id="heading-evidence-checklist-title"
                   className="text-xl sm:text-2xl font-bold text-slate-900 tracking-tight"
                 >
-                  Pre-Litigation Evidence &amp; Documentation Checklist: 6 Essential Records Before DLSA Notice
+                  Evidence Checklist: 6 Records for DLSA Notice
                 </h2>
                 <p className="text-xs sm:text-sm text-slate-700 leading-relaxed">
                   To ensure the Lok Adalat conciliator panel can quickly verify your monetary claim and establish the debtor&apos;s liability, assemble these 6 essential documents:
@@ -934,7 +934,7 @@ export default function LokAdalatMoneyRecoveryPage() {
                     id="heading-faqs-title"
                     className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight"
                   >
-                    Frequently Asked Questions on Lok Adalat Money Recovery, Fees &amp; Settlements
+                    FAQs: Lok Adalat Money Recovery &amp; Settlements
                   </h2>
                   <p className="text-xs font-semibold text-slate-500 mt-1">
                     Authoritative Answers Grounded in the Legal Services Authorities Act, CPC, and Supreme Court Precedents

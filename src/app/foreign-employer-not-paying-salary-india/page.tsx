@@ -326,7 +326,7 @@ export default function ForeignEmployerUnpaidSalaryPage() {
                   id="heading-jurisdiction-overview-title"
                   className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight"
                 >
-                  The Cross-Border Remote Reality: Why Overseas Employers Think They Can Default
+                  Why Overseas Employers Think They Can Default
                 </h2>
                 <p className="text-sm sm:text-base text-slate-700 leading-relaxed">
                   Over the past five years, tens of thousands of Indian software engineers, product managers, UI/UX designers, data scientists, and growth consultants have transitioned to high-paying remote roles with startups and multinational corporations across the United States, United Kingdom, European Union, Singapore, Canada, and the United Arab Emirates. Compensation is typically structured via monthly invoices in USD, EUR, or GBP, or handled through third-party Employer of Record (EOR) platforms such as Deel, Remote, Multiplier, or Oyster HR.
@@ -346,7 +346,7 @@ export default function ForeignEmployerUnpaidSalaryPage() {
                     id="heading-cross-border-rulings-title"
                     className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight"
                   >
-                    Landmark Cross-Border Precedents: Enforcing Remote Dues Against Overseas Entities
+                    Cross-Border Precedents: Enforcing Remote Work Dues
                   </h2>
                   <span className="text-xs font-bold text-slate-500 uppercase tracking-wider">
                     Verifiable Judicial Precedents
@@ -729,7 +729,7 @@ export default function ForeignEmployerUnpaidSalaryPage() {
                     id="heading-problem-picker-title"
                     className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight"
                   >
-                    Interactive Scenario Solver: Identify Your Legal Remedy by Dispute Type
+                    Scenario Solver: Identify Your Cross-Border Remedy
                   </h2>
                   <span className="text-xs font-bold text-slate-500 uppercase tracking-wider">
                     Client Island
@@ -749,7 +749,7 @@ export default function ForeignEmployerUnpaidSalaryPage() {
                   id="heading-worked-example-title"
                   className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight"
                 >
-                  Worked Case Study: Lead AI Engineer Recovers $19,500 (₹16,38,000) from San Francisco Startup
+                  Case Study: Recovers $19,500 from Overseas Startup
                 </h2>
                 <p className="text-sm sm:text-base text-slate-700 leading-relaxed">
                   The following illustrative case study demonstrates how a structured cross-border legal demand notice resolved a total default without filing an overseas lawsuit:
@@ -809,7 +809,7 @@ export default function ForeignEmployerUnpaidSalaryPage() {
                   id="heading-evidence-checklist-title"
                   className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight"
                 >
-                  Cross-Border Evidence Checklist: 6 Documents You Must Secure Immediately
+                  Cross-Border Evidence: 6 Documents to Secure
                 </h2>
                 <p className="text-sm sm:text-base text-slate-700 leading-relaxed">
                   Before serving a formal cross-border legal notice, ensure you have compiled the following evidentiary dossier in a secure personal drive:

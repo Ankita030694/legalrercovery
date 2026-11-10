@@ -223,7 +223,7 @@ const FAQS = [
 const ARTICLE_SCHEMA = {
   "@context": "https://schema.org",
   "@type": "Article",
-  headline: "Gave Money to a Partner Who Won't Return It? Legal Recovery After a Breakup",
+  headline: "Gave Money to a Partner Who Won't Repay? Recovery After a Breakup",
   description:
     "Lent money to a partner who won't repay after the breakup? Loan vs gift, the proof that works, and how a legal notice and suit proceed.",
   datePublished: "2026-11-03T16:50:00+05:30",
@@ -331,7 +331,7 @@ export default function RecoverMoneyFromExPartnerPage() {
             </div>
 
             <h1 className="text-2xl sm:text-3xl md:text-5xl font-black tracking-tight text-white leading-tight mb-4 sm:mb-6 break-words">
-              Gave Money to a Partner Who Won&apos;t Return It? Legal Recovery After a Breakup
+              Gave Money to a Partner Who Won&apos;t Repay? Recovery After a Breakup
             </h1>
 
             {/* Answer Box First: 40-60 Words Directly Under H1 */}

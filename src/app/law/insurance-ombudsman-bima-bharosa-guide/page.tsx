@@ -319,7 +319,7 @@ export default function InsuranceOmbudsmanBimaBharosaGuidePage() {
                   Regulatory Architecture &amp; Key Distinctions
                 </span>
                 <h2 className="text-2xl sm:text-3xl font-extrabold text-slate-900 mt-1">
-                  What is the Fundamental Difference Between Bima Bharosa and the Insurance Ombudsman?
+                  Bima Bharosa vs Insurance Ombudsman: Key Differences
                 </h2>
               </div>
 
@@ -403,7 +403,7 @@ export default function InsuranceOmbudsmanBimaBharosaGuidePage() {
                   Monetary Jurisdiction &amp; Financial Scope
                 </span>
                 <h2 className="text-2xl sm:text-3xl font-extrabold text-slate-900 mt-1">
-                  What Are the Monetary Jurisdiction Limits for an Insurance Ombudsman Complaint?
+                  Monetary Jurisdiction for Insurance Ombudsman Complaints
                 </h2>
               </div>
 
@@ -457,7 +457,7 @@ export default function InsuranceOmbudsmanBimaBharosaGuidePage() {
                   Pre-Requisite &amp; Maintainability Threshold
                 </span>
                 <h2 className="text-2xl sm:text-3xl font-extrabold text-slate-900 mt-1">
-                  What is the Mandatory Pre-Condition Before Approaching the Ombudsman (The 30-Day Rule)?
+                  Mandatory Pre-Condition: The 30-Day Grievance Rule
                 </h2>
               </div>
 
@@ -512,7 +512,7 @@ export default function InsuranceOmbudsmanBimaBharosaGuidePage() {
                   Regulatory Reform &amp; Ex-Parte Powers
                 </span>
                 <h2 className="text-2xl sm:text-3xl font-extrabold text-slate-900 mt-1">
-                  What is the New IRDAI 7-Day Rule and How Does It Prevent Insurer Delay Tactics?
+                  New IRDAI 7-Day Rule Against Insurer Delay Tactics
                 </h2>
               </div>
 
@@ -559,7 +559,7 @@ export default function InsuranceOmbudsmanBimaBharosaGuidePage() {
                   Subject-Matter Jurisdiction
                 </span>
                 <h2 className="text-2xl sm:text-3xl font-extrabold text-slate-900 mt-1">
-                  What Types of Insurance Disputes Can the Insurance Ombudsman Adjudicate Under Rule 13?
+                  Insurance Disputes Adjudicated Under Rule 13
                 </h2>
               </div>
 
@@ -649,7 +649,7 @@ export default function InsuranceOmbudsmanBimaBharosaGuidePage() {
                   IRDAI Grievance Gateway Workflow
                 </span>
                 <h2 className="text-2xl sm:text-3xl font-extrabold text-slate-900 mt-1">
-                  How Does Bima Bharosa Work and When Should a Policyholder File on It First?
+                  How Bima Bharosa Works &amp; When to File on It First
                 </h2>
               </div>
 
@@ -688,7 +688,7 @@ export default function InsuranceOmbudsmanBimaBharosaGuidePage() {
                   Council for Insurance Ombudsmen (CIO) Procedure
                 </span>
                 <h2 className="text-2xl sm:text-3xl font-extrabold text-slate-900 mt-1">
-                  What is the Step-by-Step Process to File an Insurance Ombudsman Complaint Online?
+                  Step-by-Step Process to File Ombudsman Complaint Online
                 </h2>
               </div>
 
@@ -794,7 +794,7 @@ export default function InsuranceOmbudsmanBimaBharosaGuidePage() {
                   Visual Escalation Blueprint
                 </span>
                 <h2 className="text-2xl sm:text-3xl font-extrabold text-slate-900 mt-1">
-                  Statutory Escalation Pipeline: From Claim Repudiation to Enforceable Award
+                  Escalation Pipeline: Repudiation to Enforceable Award
                 </h2>
               </div>
 
@@ -1007,7 +1007,7 @@ export default function InsuranceOmbudsmanBimaBharosaGuidePage() {
                   Enforcement &amp; Compliance Rules
                 </span>
                 <h2 className="text-2xl sm:text-3xl font-extrabold text-slate-900 mt-1">
-                  Is an Insurance Ombudsman Award Legally Binding on the Insurance Company?
+                  Are Insurance Ombudsman Awards Binding on Insurers?
                 </h2>
               </div>
 
@@ -1052,7 +1052,7 @@ export default function InsuranceOmbudsmanBimaBharosaGuidePage() {
                   Case Study &amp; Practical Application
                 </span>
                 <h2 className="text-2xl sm:text-3xl font-extrabold text-slate-900 mt-1">
-                  Worked Example: How a ₹8,40,000 Health Repudiation Was Overturned via Ombudsman
+                  Case Study: Recovers ₹8.4L Repudiation via Ombudsman
                 </h2>
               </div>
 
@@ -1126,7 +1126,7 @@ export default function InsuranceOmbudsmanBimaBharosaGuidePage() {
                   Binding Judicial Precedents
                 </span>
                 <h2 className="text-2xl sm:text-3xl font-extrabold text-slate-900 mt-1">
-                  Authoritative Supreme Court and Ombudsman Rulings Protecting Policyholders
+                  Supreme Court Rulings Protecting Policyholders
                 </h2>
               </div>
 
@@ -1249,7 +1249,7 @@ export default function InsuranceOmbudsmanBimaBharosaGuidePage() {
                   Statutory Draft &amp; Petition Structure
                 </span>
                 <h2 className="text-2xl sm:text-3xl font-extrabold text-slate-900 mt-1">
-                  Format for Statutory Legal Notice to Insurer GRO and Ombudsman Petition
+                  Notice Format for Insurer GRO &amp; Ombudsman Petition
                 </h2>
               </div>
 

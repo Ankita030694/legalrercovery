@@ -352,7 +352,7 @@ export default function BonusIncentiveNotReceivedMailPage() {
                   id="heading-orders-overview-title"
                   className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight"
                 >
-                  Why Companies Withhold Bonus and Incentives—And Why the Law Prohibits It
+                  Why Withholding Bonus &amp; Incentives Is Prohibited Under Law
                 </h2>
                 <p className="text-sm sm:text-base text-slate-700 leading-relaxed">
                   Every year, thousands of employees in corporate India discover that their annual statutory bonus, quarterly sales commissions, performance-linked variable pay (PLI), or retention incentives have been withheld by HR. The most common pretext offered is that the employee tendered their resignation before the annual disbursement date, was serving a notice period, or that variable compensation is &quot;strictly discretionary at the sole option of the management.&quot;
@@ -373,7 +373,7 @@ export default function BonusIncentiveNotReceivedMailPage() {
                     id="heading-order-digest-title"
                     className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight"
                   >
-                    Judicial Order Digest: 4 Landmark Precedents Protecting Employee Bonus &amp; Incentives
+                    4 Landmark Precedents Protecting Employee Bonus &amp; Dues
                   </h2>
                   <span className="text-xs font-bold text-slate-500 uppercase tracking-wider">
                     Verifiable Court Records
@@ -529,7 +529,7 @@ export default function BonusIncentiveNotReceivedMailPage() {
                   id="heading-escalation-flow-title"
                   className="text-xl sm:text-2xl font-bold text-slate-900 tracking-tight"
                 >
-                  Statutory Escalation Hierarchy: From Target Milestone to Inward Bank Credit
+                  Escalation Hierarchy: Milestone to Bank Credit
                 </h2>
                 <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
                   Follow this structured statutory escalation path to enforce your right to earned bonus and sales commission, bypass HR silence, and secure direct bank credit:
@@ -686,7 +686,7 @@ export default function BonusIncentiveNotReceivedMailPage() {
                   id="heading-playbook-title"
                   className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight"
                 >
-                  The 5-Step Escalation Playbook: Recovering Unpaid Bonus &amp; Commission
+                  5-Step Playbook: Recovering Unpaid Bonus &amp; Commission
                 </h2>
                 <p className="text-sm sm:text-base text-slate-700 leading-relaxed">
                   Derived directly from winning Labour Court verdicts and conciliation settlements, this playbook outlines exactly how to dismantle employer excuses and compel disbursement:
@@ -793,7 +793,7 @@ export default function BonusIncentiveNotReceivedMailPage() {
                   id="heading-deadlines-table-title"
                   className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight"
                 >
-                  Statutory Benchmarks: Bonus Formulas, Payment Timelines &amp; Forfeiture Rules
+                  Statutory Benchmarks: Bonus Formulas &amp; Timelines
                 </h2>
                 <p className="text-sm sm:text-base text-slate-700 leading-relaxed">
                   Indian employment statutes enforce mandatory deadlines and percentage ranges for statutory bonuses and contractual variable pay:
@@ -899,7 +899,7 @@ export default function BonusIncentiveNotReceivedMailPage() {
                   id="heading-worked-example-title"
                   className="text-xl sm:text-2xl font-bold text-slate-900 tracking-tight"
                 >
-                  Worked Case Study: Sales Leader Recovers ₹3,20,000 Unpaid Incentive Post-Exit
+                  Case Study: Recovers ₹3,20,000 Unpaid Incentive Post-Exit
                 </h2>
                 <div className="bg-slate-900 text-white rounded-2xl p-5 sm:p-8 shadow-xl space-y-4 sm:space-y-5 w-full overflow-hidden">
                   <div className="flex flex-wrap items-center justify-between gap-2 border-b border-slate-800 pb-3">
@@ -937,7 +937,7 @@ export default function BonusIncentiveNotReceivedMailPage() {
                   id="heading-evidence-checklist-title"
                   className="text-xl sm:text-2xl font-bold text-slate-900 tracking-tight"
                 >
-                  Evidence Checklist: 6 Critical Documents Before Serving an Advocate Legal Notice
+                  Evidence Checklist: 6 Documents Before Legal Notice
                 </h2>
                 <p className="text-xs sm:text-sm text-slate-700 leading-relaxed">
                   Under Section 63 of the Bharatiya Sakshya Adhiniyam, 2023 (BSA), electronic communications and digital records are fully admissible in court. Assemble these 6 documents before legal notice issuance:
@@ -1041,7 +1041,7 @@ export default function BonusIncentiveNotReceivedMailPage() {
                     id="heading-faqs-title"
                     className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight"
                   >
-                    Frequently Asked Questions About Unpaid Bonus, Sales Incentives &amp; HR Demands
+                    FAQs: Unpaid Bonus, Sales Incentives &amp; HR Demands
                   </h2>
                   <p className="text-xs font-semibold text-slate-500 mt-1">
                     Answers Grounded in the Payment of Bonus Act, Code on Wages 2019, and Indian High Court Orders

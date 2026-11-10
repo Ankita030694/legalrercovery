@@ -248,7 +248,7 @@ export default function MsmeDelayedPaymentInterestCalculatorPage() {
                 <span>Sections 2(b), 15 &amp; 16 MSMED Act, 2006</span>
               </div>
               <h2 className="text-xl sm:text-2xl font-extrabold text-slate-900">
-                How MSME Delayed Payment Interest Is Calculated Under Section 16 (and in Excel)
+                Calculating MSME Delayed Payment Interest Under Section 16
               </h2>
               <p className="text-sm sm:text-base text-slate-700 leading-relaxed">
                 Unlike regular commercial contracts where interest is calculated on a simple annual basis, <strong>Section 16 of the Micro, Small and Medium Enterprises Development (MSMED) Act, 2006</strong> mandates <strong>compound interest with monthly rests</strong> at three times the Bank Rate notified by the Reserve Bank of India. Every month that an invoice remains unpaid after the statutory credit period, the accrued monthly interest is added to the unpaid invoice balance, and the next month&apos;s interest is computed on that higher compounded principal.
@@ -302,7 +302,7 @@ export default function MsmeDelayedPaymentInterestCalculatorPage() {
                 <span>MSMED Act 2006 &amp; Income-tax Act 1961</span>
               </div>
               <h2 className="text-xl sm:text-2xl font-extrabold text-slate-900">
-                Statutory Deadlines, Interest Rules &amp; Buyer Tax Penalties at a Glance
+                Statutory Deadlines, Interest Rules &amp; Tax Penalties
               </h2>
               <p className="text-sm text-slate-600 leading-relaxed">
                 When drafting a demand notice or filing a claim on the MSME ODR / Samadhaan portal, cite these six interrelated statutory provisions together. Combining Section 16 compound interest with Section 43B(h) corporate tax disallowance creates immediate financial pressure on the buyer&apos;s CFO and statutory auditors.
@@ -797,7 +797,7 @@ export default function MsmeDelayedPaymentInterestCalculatorPage() {
                 <span>Chapter V MSMED Act</span>
               </div>
               <h2 className="text-xl sm:text-2xl font-extrabold text-slate-900">
-                Assumptions, Statutory Eligibility &amp; Legal Limits of This Calculator
+                Assumptions, Eligibility &amp; Limits of This Calculator
               </h2>
               <p className="text-sm text-slate-700 leading-relaxed">
                 Before serving a formal demand notice or filing a reference before the Micro and Small Enterprises Facilitation Council (MSEFC), verify that your invoice meets these five statutory conditions:
@@ -871,7 +871,7 @@ export default function MsmeDelayedPaymentInterestCalculatorPage() {
                 <span>Supreme Court of India</span>
               </div>
               <h2 className="text-xl sm:text-2xl font-extrabold text-slate-900">
-                Supreme Court Precedents on Section 16 Compound Interest &amp; MSEFC Jurisdiction
+                Supreme Court Rulings on Section 16 Compound Interest
               </h2>
               <p className="text-sm text-slate-600 leading-relaxed">
                 Corporate buyers frequently argue that a private arbitration clause in their Purchase Order bars the supplier from approaching the MSEFC, or that contractual interest overrides Section 16. The Supreme Court of India has settled both questions in favour of MSME suppliers:

@@ -323,7 +323,7 @@ export default function MaternityBenefitLegalNoticePage() {
                   id="heading-statutory-overview-title"
                   className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight"
                 >
-                  Statutory Rights: What the Law Guarantees Every Pregnant Employee in India
+                  Statutory Rights: Maternity Benefits Guaranteed by Indian Law
                 </h2>
                 <p className="text-sm sm:text-base text-slate-700 leading-relaxed">
                   In India, maternity benefit is not an employer bonus, a corporate courtesy, or discretionary HR assistance. It is a fundamental statutory entitlement enacted under the Maternity Benefit Act, 1961 (as amended in 2017) and reinforced under Chapter VI of the Code on Social Security, 2020. Grounded in Articles 14, 15, and 42 of the Constitution of India, the law guarantees that no female employee should be penalized financially or professionally for pregnancy or childbearing.
@@ -340,7 +340,7 @@ export default function MaternityBenefitLegalNoticePage() {
                     id="heading-order-digest-title"
                     className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight"
                   >
-                    Landmark Judicial Digest: 4 Supreme Court &amp; High Court Rulings Protecting Maternity Pay
+                    Judicial Digest: Landmark Court Rulings Protecting Maternity Pay
                   </h2>
                   <span className="text-xs font-bold text-slate-500 uppercase tracking-wider">
                     Verifiable Court Precedents
@@ -417,7 +417,7 @@ export default function MaternityBenefitLegalNoticePage() {
                   id="heading-pattern-analysis-title"
                   className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight"
                 >
-                  Pattern Analysis: What Overturned Employers&apos; Unlawful Defenses in Court
+                  Pattern Analysis: Overturning Unlawful Employer Defenses in Court
                 </h2>
                 <p className="text-sm sm:text-base text-slate-700 leading-relaxed">
                   Judicial records from the Supreme Court, High Courts, and Labour Commissioners demonstrate that employers consistently rely on 4 predictable excuses when withholding maternity pay. Here is the evidentiary pattern that consistently invalidates those defenses:
@@ -617,7 +617,7 @@ export default function MaternityBenefitLegalNoticePage() {
                   id="heading-playbook-title"
                   className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight"
                 >
-                  The 5-Step Escalation Playbook: From Formal HR Demand to Legal Recovery
+                  5-Step Escalation Playbook: From HR Demand to Legal Recovery
                 </h2>
                 <p className="text-sm sm:text-base text-slate-700 leading-relaxed">
                   Follow this structured statutory escalation path to enforce your maternity rights, defeat internal company stalling, and recover your full salary:
@@ -705,7 +705,7 @@ export default function MaternityBenefitLegalNoticePage() {
                   id="heading-deadlines-table-title"
                   className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight"
                 >
-                  Statutory Deadlines &amp; Thresholds: Maternity Benefit Act &amp; Social Security Code
+                  Statutory Deadlines: Maternity Benefit Act and Social Security
                 </h2>
                 <p className="text-sm sm:text-base text-slate-700 leading-relaxed">
                   Indian labour laws establish strict quantitative benchmarks that company policies cannot waive or dilute:
@@ -786,7 +786,7 @@ export default function MaternityBenefitLegalNoticePage() {
                     id="heading-problem-picker-title"
                     className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight"
                   >
-                    Maternity Dispute Bottlenecks: Root Causes &amp; Direct Statutory Fixes
+                    Maternity Dispute Bottlenecks: Root Causes and Legal Remedies
                   </h2>
                   <p className="text-xs font-semibold text-slate-500 mt-1">
                     Select Your Specific Dispute Scenario to Unlock Applicable Statutes and Immediate Escalation Steps
@@ -802,7 +802,7 @@ export default function MaternityBenefitLegalNoticePage() {
                   id="heading-worked-example-title"
                   className="text-xl sm:text-2xl font-bold text-slate-900 tracking-tight"
                 >
-                  Worked Case Study: Senior QA Engineer Recovers ₹6,63,500 Withheld Maternity Pay from Gurugram Tech Firm
+                  Case Study: Recovering ₹6,63,500 Withheld Maternity Pay
                 </h2>
                 <div className="bg-slate-900 text-white rounded-2xl p-5 sm:p-8 shadow-xl space-y-4 sm:space-y-5 w-full overflow-hidden">
                   <div className="flex flex-wrap items-center justify-between gap-2 border-b border-slate-800 pb-3">
@@ -836,7 +836,7 @@ export default function MaternityBenefitLegalNoticePage() {
                   id="heading-evidence-checklist-title"
                   className="text-xl sm:text-2xl font-bold text-slate-900 tracking-tight"
                 >
-                  Maternity Evidence Checklist: 6 Critical Documents Before Serving an Advocate Legal Notice
+                  Evidence Checklist: 6 Records Before Serving Maternity Notice
                 </h2>
                 <p className="text-xs sm:text-sm text-slate-700 leading-relaxed">
                   Under Section 63 of the Bharatiya Sakshya Adhiniyam, 2023 (BSA), electronic emails, PDF medical certificates, and digital bank records are fully admissible in court. Assemble these 6 documents before issuing a formal notice:
@@ -900,7 +900,7 @@ export default function MaternityBenefitLegalNoticePage() {
                     id="heading-faqs-title"
                     className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight"
                   >
-                    Frequently Asked Questions About Maternity Benefit Dues &amp; Legal Notices
+                    FAQs on Maternity Benefit Dues and Legal Notice Procedures
                   </h2>
                   <p className="text-xs font-semibold text-slate-500 mt-1">
                     Authoritative Legal Answers Grounded in the Maternity Benefit Act, Social Security Code, and Supreme Court Precedents

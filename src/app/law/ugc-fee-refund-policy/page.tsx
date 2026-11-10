@@ -333,7 +333,7 @@ export default function UgcFeeRefundPolicyPage() {
                   id="heading-overview-title"
                   className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight"
                 >
-                  The UGC Fee Refund Mandate: How the Law Protects Students Who Withdraw Admission
+                  UGC Fee Refund Mandate: Protecting Student Admissions
                 </h2>
                 <p className="text-sm sm:text-base text-slate-700 leading-relaxed">
                   Every academic admission cycle across India, hundreds of thousands of students pay hefty seat-booking, tuition, and development fees to secure admission in private universities, deemed colleges, and professional institutions. When entrance exam results like JEE, NEET, CUET, CLAT, or state counselling rounds are announced weeks later, students naturally migrate to higher-preference institutions and seek admission withdrawal.
@@ -352,7 +352,7 @@ export default function UgcFeeRefundPolicyPage() {
                   id="heading-ugc-slabs-title"
                   className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight"
                 >
-                  The UGC 5-Tier Refund Slab: Allowable Deductions &amp; Statutory Deadlines
+                  UGC 5-Tier Refund Slab: Deductions &amp; Timelines
                 </h2>
                 <p className="text-sm sm:text-base text-slate-700 leading-relaxed">
                   The UGC Fee Refund Policy prescribes a formulaic percentage matrix based on when the formal admission withdrawal notice is submitted relative to the institution&apos;s officially notified last date of admission:
@@ -454,7 +454,7 @@ export default function UgcFeeRefundPolicyPage() {
                     id="heading-case-digest-title"
                     className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight"
                   >
-                    Landmark Order Digest: 4 Verifiable Rulings on College Fee Refunds &amp; Prospectus Clauses
+                    4 Landmark Orders on College Fee Refunds &amp; Clauses
                   </h2>
                   <span className="text-xs font-bold text-slate-500 uppercase tracking-wider">
                     Binding Judicial Precedents
@@ -531,7 +531,7 @@ export default function UgcFeeRefundPolicyPage() {
                   id="heading-evidentiary-patterns-title"
                   className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight"
                 >
-                  Pattern Analysis: What Won College Fee Refund &amp; Admission Cancellation Disputes
+                  What Won College Fee Refund &amp; Cancellation Claims
                 </h2>
                 <p className="text-sm sm:text-base text-slate-700 leading-relaxed">
                   An examination of consumer commission decisions across District Forums and State Commissions demonstrates that when students and parents preserve clear evidentiary records, institutions cannot sustain administrative defenses:
@@ -602,7 +602,7 @@ export default function UgcFeeRefundPolicyPage() {
                   id="heading-escalation-flow-title"
                   className="text-xl sm:text-2xl font-bold text-slate-900 tracking-tight"
                 >
-                  Statutory Escalation Hierarchy: From Admission Withdrawal to Bank Refund
+                  Resolution Hierarchy: Admission Withdrawal to Refund
                 </h2>
                 <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
                   Follow this structured statutory escalation path to enforce your fee refund rights and compel the return of academic certificates:
@@ -727,7 +727,7 @@ export default function UgcFeeRefundPolicyPage() {
                   id="heading-playbook-title"
                   className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight"
                 >
-                  The 5-Step Escalation Playbook: How to Recover College Fees Step-by-Step
+                  5-Step Playbook: How to Recover College Fees
                 </h2>
                 <p className="text-sm sm:text-base text-slate-700 leading-relaxed">
                   Derived from established consumer jurisprudence and UGC enforcement directives, this 5-step playbook equips parents and students to overcome administrative deflection and recover their money:
@@ -830,7 +830,7 @@ export default function UgcFeeRefundPolicyPage() {
                   id="heading-worked-example-title"
                   className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight"
                 >
-                  Worked Example: Calculating Fee Refund for a ₹2,50,000 B.Tech / MBA Admission
+                  Worked Example: Calculating Fee Refund for ₹2.5L Dues
                 </h2>
                 <p className="text-sm sm:text-base text-slate-700 leading-relaxed">
                   To understand how the UGC refund formula operates in practice, consider an illustrative worked example for an engineering or management student:
@@ -977,7 +977,7 @@ export default function UgcFeeRefundPolicyPage() {
                     id="heading-faqs-title"
                     className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight"
                   >
-                    Frequently Asked Questions on College Fee Refunds &amp; UGC Regulations
+                    FAQs: College Fee Refunds &amp; UGC Regulations
                   </h2>
                   <p className="text-xs sm:text-sm text-slate-500 mt-1">
                     Clear, statutory answers to common questions regarding admission withdrawal and private college fee recovery.

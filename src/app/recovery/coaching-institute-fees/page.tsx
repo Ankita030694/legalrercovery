@@ -3,7 +3,7 @@ import CoachingInstituteFeesClient from "./CoachingInstituteFeesClient";
 
 export const metadata: Metadata = {
   title: "Coaching Institute Fee Refund: CCPA Rules & Notice",
-  description: "IIT-JEE, NEET, UPSC coaching center or EdTech refusing fee refund mid-course? Enforce CCPA 2024 Coaching Guidelines for mandatory pro-rata tuition & hostel refund via Legal Notice.",
+  description: "Coaching institute or EdTech refusing fee refund? Enforce CCPA guidelines for mandatory pro-rata tuition and hostel refunds via a legal notice.",
   keywords: [
     "coaching institute fee refund India",
     "CCPA guidelines coaching sector refund 2024",

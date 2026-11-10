@@ -5,7 +5,7 @@ import SitemapClient from "./SitemapClient";
 export const metadata: Metadata = {
   title: "HTML Sitemap & Legal Directory | LegalRecovery India",
   description:
-    "Complete directory of all legal money recovery services, statutory legal notice guides, pre-litigation filing categories, and e-commerce dispute resolution rails in India.",
+    "Directory of legal money recovery services, statutory notice guides, pre-litigation filing categories, and e-commerce dispute rails in India.",
   keywords: [
     "legal recovery sitemap",
     "send legal notice directory",

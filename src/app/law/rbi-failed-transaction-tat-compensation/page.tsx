@@ -287,7 +287,7 @@ const FAQS = [
 const ARTICLE_SCHEMA = {
   "@context": "https://schema.org",
   "@type": "Article",
-  headline: "Money Debited but Transaction Failed? RBI's Deadlines and Daily Compensation",
+  headline: "Money Debited but Transaction Failed? RBI Deadlines & Compensation",
   description:
     "RBI's TAT rules for failed UPI, card, ATM and IMPS transactions, plus the ₹100-per-day compensation banks owe for delay.",
   datePublished: "2026-11-04T13:05:00+05:30",
@@ -396,7 +396,7 @@ export default function RbiFailedTransactionTatCompensationPage() {
             </div>
 
             <h1 className="text-2xl sm:text-3xl md:text-5xl font-black tracking-tight text-white leading-tight mb-4 sm:mb-6 break-words">
-              Money Debited but Transaction Failed? RBI&apos;s Deadlines and Daily Compensation
+              Money Debited but Transaction Failed? RBI Deadlines &amp; Compensation
             </h1>
 
             {/* Answer Box First: 40-60 Words Directly Under H1 */}
@@ -461,7 +461,7 @@ export default function RbiFailedTransactionTatCompensationPage() {
                   id="heading-overview-title"
                   className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight"
                 >
-                  Why &quot;Wait 7 to 10 Working Days&quot; Is an Unlawful Bank Excuse Under RBI&apos;s Failed Transaction TAT Rules
+                  Why 'Wait 7-10 Days' Is an Unlawful Bank Excuse Under RBI
                 </h2>
                 <p className="text-sm sm:text-base text-slate-700 leading-relaxed">
                   Every day across India, millions of account holders watch their savings or credit balances drop even though the underlying payment failed: a Google Pay or PhonePe transfer gets stuck on &quot;Processing&quot;, an IMPS remittance times out, an ATM whirs without dispensing currency notes, or an e-commerce checkout crashes right after OTP verification. When customers call bank customer care at SBI, HDFC Bank, ICICI Bank, Axis Bank, PNB, or Bank of Baroda, frontline agents almost universally recite a scripted line: <em>&quot;Please wait 7 to 15 working days for automatic reconciliation.&quot;</em>
@@ -513,7 +513,7 @@ export default function RbiFailedTransactionTatCompensationPage() {
                     id="heading-clause-annotation-title"
                     className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight"
                   >
-                    Clause-by-Clause Legal Annotation: What RBI Circular DPSS.CO.PD No.629 Actually Mandates
+                    Clause-by-Clause Annotation: RBI Circular No.629
                   </h2>
                   <p className="text-xs sm:text-sm text-slate-600 mt-1">
                     Below are the four operative pillars of RBI Notification RBI/2019-20/67 quoted from the official gazetted circular, paired with their legal meaning and real-world banking examples:
@@ -618,7 +618,7 @@ export default function RbiFailedTransactionTatCompensationPage() {
                     id="heading-tat-compensation-table-title"
                     className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight"
                   >
-                    Master RBI Failed Transaction TAT &amp; ₹100/Day Compensation Table (All 8 Payment Rails)
+                    Master RBI Failed Transaction TAT &amp; Compensation Table
                   </h2>
                   <span className="text-xs font-bold text-slate-500 uppercase tracking-wider">
                     Official Annexure Schedule
@@ -680,7 +680,7 @@ export default function RbiFailedTransactionTatCompensationPage() {
                   id="heading-coverage-matrix-title"
                   className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight"
                 >
-                  What Is Covered vs Exempt Under the RBI Failed Transaction TAT Circular?
+                  What Is Covered vs Exempt Under RBI TAT Circular?
                 </h2>
                 <p className="text-sm sm:text-base text-slate-700 leading-relaxed">
                   Citing the wrong RBI circular in your complaint or legal notice gives the bank&apos;s legal cell an easy pretext to reject your claim. Before escalating, verify whether your dispute falls under the <strong>2019 Failed Transaction TAT Circular</strong>, the <strong>2017/2027† Unauthorised Electronic Fraud Framework</strong>, or <strong>Section 72 of the Indian Contract Act</strong>:
@@ -747,7 +747,7 @@ export default function RbiFailedTransactionTatCompensationPage() {
                     id="heading-case-digest-title"
                     className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight"
                   >
-                    Landmark Consumer Court &amp; Banking Rulings on Failed Transactions and Daily Compensation
+                    Consumer Court Orders on Failed Transactions &amp; Penalties
                   </h2>
                   <span className="text-xs font-bold text-slate-500 uppercase tracking-wider">
                     Verifiable Judicial &amp; Regulatory Records
@@ -824,7 +824,7 @@ export default function RbiFailedTransactionTatCompensationPage() {
                   id="heading-pattern-analysis-title"
                   className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight"
                 >
-                  Pattern Analysis: 5 Evidentiary Pillars That Win Failed Transaction &amp; ₹100/Day Penalty Claims
+                  5 Pillars That Win Failed Transaction &amp; Penalty Claims
                 </h2>
                 <p className="text-sm sm:text-base text-slate-700 leading-relaxed">
                   Reviewing awards passed by RBI Banking Ombudsmen and Consumer Dispute Redressal Commissions reveals why well-documented statutory notices compel banks to settle both the stuck principal and the daily penalty without contested hearings:
@@ -909,7 +909,7 @@ export default function RbiFailedTransactionTatCompensationPage() {
                   id="heading-escalation-flow-title"
                   className="text-xl sm:text-2xl font-bold text-slate-900 tracking-tight"
                 >
-                  Statutory Resolution Rail: From Failed Transaction Debit to Principal + ₹100/Day Recovery
+                  Resolution Rail: Failed Debit to Penalty Recovery
                 </h2>
                 <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
                   Follow this five-stage statutory escalation pathway when your bank fails to auto-reverse a debited transaction or withholds the daily delay penalty:
@@ -1044,7 +1044,7 @@ export default function RbiFailedTransactionTatCompensationPage() {
                   id="heading-playbook-title"
                   className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight"
                 >
-                  How to Enforce the RBI TAT Rule: 5-Step Playbook to Recover Your Refund + ₹100/Day Penalty
+                  5-Step Playbook to Enforce RBI TAT &amp; Penalties
                 </h2>
                 <p className="text-sm sm:text-base text-slate-700 leading-relaxed">
                   Whether your account is held with State Bank of India (SBI), HDFC Bank, ICICI Bank, Axis Bank, Punjab National Bank, Kotak Mahindra Bank, or a cooperative bank, execute these five steps in exact sequence:
@@ -1130,7 +1130,7 @@ export default function RbiFailedTransactionTatCompensationPage() {
                     id="heading-scenario-picker-title"
                     className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight"
                   >
-                    Tactical Remedies by Failure Type: UPI, ATM No-Cash, Card PoS &amp; Revoked NACH
+                    Remedies by Failure: UPI, ATM, PoS &amp; NACH
                   </h2>
                   <p className="text-xs font-semibold text-slate-500 mt-1">
                     Select Your Specific Payment Failure Scenario to View the Binding RBI Rule and 3-Step Recovery Plan
@@ -1146,7 +1146,7 @@ export default function RbiFailedTransactionTatCompensationPage() {
                   id="heading-worked-example-title"
                   className="text-xl sm:text-2xl font-bold text-slate-900 tracking-tight"
                 >
-                  Worked Calculation &amp; Case Study: How a ₹45,000 Failed IMPS Transfer Yielded ₹48,700 + Damages
+                  Case Study: ₹45,000 Failed IMPS Transfer Yielded Damages
                 </h2>
                 <div className="bg-slate-900 text-white rounded-2xl p-5 sm:p-8 shadow-xl space-y-4 sm:space-y-5 w-full overflow-hidden">
                   <div className="flex flex-wrap items-center justify-between gap-2 border-b border-slate-800 pb-3">
@@ -1194,7 +1194,7 @@ export default function RbiFailedTransactionTatCompensationPage() {
                   id="heading-evidence-checklist-title"
                   className="text-xl sm:text-2xl font-bold text-slate-900 tracking-tight"
                 >
-                  Evidence Checklist: 6 Documents You Need Before Serving a Bank TAT Notice
+                  Evidence Checklist: 6 Documents for Bank TAT Notice
                 </h2>
                 <p className="text-xs sm:text-sm text-slate-700 leading-relaxed">
                   Under Section 63 of the Bharatiya Sakshya Adhiniyam, 2023 (BSA), preserve these six electronic and documentary records to make your claim undeniable before the Bank Nodal Officer, RBI Ombudsman, and Consumer Commission:
@@ -1293,7 +1293,7 @@ export default function RbiFailedTransactionTatCompensationPage() {
                   id="heading-scope-title"
                   className="text-xl sm:text-2xl font-bold text-slate-900 tracking-tight"
                 >
-                  What LegalRecovery.in Can and Cannot Do for Your Banking or UPI Dispute
+                  Scope &amp; Boundaries: What LegalRecovery Can and Cannot Do
                 </h2>
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                   <div className="bg-emerald-50/70 border border-emerald-200 rounded-2xl p-5 space-y-2.5">
@@ -1342,7 +1342,7 @@ export default function RbiFailedTransactionTatCompensationPage() {
                     id="heading-faqs-title"
                     className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight"
                   >
-                    Frequently Asked Questions: RBI Failed Transaction Refund Time &amp; ₹100/Day Penalty
+                    FAQs: RBI Failed Transaction TAT &amp; Penalties
                   </h2>
                   <p className="text-xs font-semibold text-slate-500 mt-1">
                     Verified Answers Grounded in RBI Circular DPSS.CO.PD No.629/02.01.014/2019-20 and Consumer Case Law
@@ -1399,7 +1399,7 @@ export default function RbiFailedTransactionTatCompensationPage() {
               {/* Primary CTA */}
               <section id="heading-cta-block" aria-labelledby="heading-cta-block-title" className="w-full">
                 <h2 id="heading-cta-block-title" className="sr-only">
-                  Serve an RBI TAT Legal Notice to Your Bank for Failed Transaction Refund and ₹100/Day Compensation
+                  Serve an RBI TAT Legal Notice to Your Bank for Refunds
                 </h2>
                 <RbiTatNoticeCTA variant="primary" />
               </section>

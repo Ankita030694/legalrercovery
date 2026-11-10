@@ -154,7 +154,7 @@ const FAQS = [
 const ARTICLE_SCHEMA = {
   "@context": "https://schema.org",
   "@type": "Article",
-  headline: "Leaving College or Hostel Early? Recovering Unused Hostel, Mess and Caution Fees",
+  headline: "Leaving College Early? Recovering Hostel, Mess and Caution Fees",
   description:
     "College refusing to refund hostel fees or mess advance after admission cancellation? UGC guidelines, consumer court precedent, and demand notice steps.",
   datePublished: "2026-11-09T10:00:00+05:30",
@@ -262,7 +262,7 @@ export default function HostelAndMessFeeRefundPage() {
             </div>
 
             <h1 className="text-2xl sm:text-3xl md:text-5xl font-black tracking-tight text-white leading-tight mb-4 sm:mb-6 break-words">
-              Leaving College or Hostel Early? Recovering Unused Hostel, Mess and Caution Fees
+              Leaving College Early? Recovering Hostel, Mess and Caution Fees
             </h1>
 
             {/* Answer Box First: 40-60 Words Directly Under H1 */}
@@ -319,7 +319,7 @@ export default function HostelAndMessFeeRefundPage() {
                   id="heading-overview-title"
                   className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight"
                 >
-                  Hostel &amp; Mess Fee Forfeitures: What UGC Mandates and Consumer Courts Order
+                  Hostel &amp; Mess Fee Forfeiture: UGC Mandates &amp; Law
                 </h2>
                 <p className="text-sm sm:text-base text-slate-700 leading-relaxed">
                   Every academic admission cycle across India, hundreds of thousands of students pay hefty composite fees covering tuition, hostel accommodation, and compulsory mess advances. Soon after, seat allotments shuffle across NEET, JEE, CUET, and state counseling rounds. When a student surrenders admission to join an institution of higher merit, or chooses to vacate a university hostel midway to shift into private accommodation, colleges routinely issue automated refusals: &quot;Hostel fees once paid will not be refunded under any circumstances.&quot;
@@ -336,7 +336,7 @@ export default function HostelAndMessFeeRefundPage() {
                     id="heading-court-rulings-title"
                     className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight"
                   >
-                    Landmark Order Digest: 4 Verifiable Consumer Court Rulings on Hostel &amp; Mess Forfeiture
+                    4 Landmark Orders on Hostel &amp; Mess Forfeiture
                   </h2>
                   <span className="text-xs font-bold text-slate-500 uppercase tracking-wider">
                     Verifiable Judicial Records
@@ -413,7 +413,7 @@ export default function HostelAndMessFeeRefundPage() {
                   id="heading-pattern-analysis-title"
                   className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight"
                 >
-                  Pattern Analysis: What Won Hostel &amp; Mess Refund Disputes in Consumer Commissions
+                  What Won Hostel &amp; Mess Refund Cases in Court
                 </h2>
                 <p className="text-sm sm:text-base text-slate-700 leading-relaxed">
                   A comprehensive audit of consumer court verdicts across India demonstrates clear evidentiary factors that demolish institutional defenses. When students assemble unambiguous paper trails, consumer commissions discard generic university regulations:
@@ -488,7 +488,7 @@ export default function HostelAndMessFeeRefundPage() {
                   id="heading-resolution-rail-title"
                   className="text-xl sm:text-2xl font-bold text-slate-900 tracking-tight"
                 >
-                  Statutory Escalation Hierarchy: From Hostel Vacation to Bank Account Credit
+                  Escalation Hierarchy: Hostel Vacation to Refund
                 </h2>
                 <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
                   Follow this verified statutory path to counter administrative stonewalling and recover unutilized hostel fees, mess advances, and caution money:
@@ -613,7 +613,7 @@ export default function HostelAndMessFeeRefundPage() {
                   id="heading-playbook-title"
                   className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight"
                 >
-                  The 5-Step Legal Playbook Against Colleges: From Room Handover to Legal Notice
+                  5-Step Playbook: Room Handover to Legal Notice
                 </h2>
                 <p className="text-sm sm:text-base text-slate-700 leading-relaxed">
                   Synthesized directly from winning consumer commission verdicts, this 5-step playbook dismantles institutional stalling tactics and forces college management to disburse your funds:
@@ -698,7 +698,7 @@ export default function HostelAndMessFeeRefundPage() {
                   id="heading-deadlines-matrix-title"
                   className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight"
                 >
-                  Statutory Deadlines &amp; Refund Entitlements: Hostel, Mess &amp; Caution Deposits
+                  Deadlines &amp; Entitlements: Hostel &amp; Mess Fees
                 </h2>
                 <p className="text-sm sm:text-base text-slate-700 leading-relaxed">
                   Higher education institutions cannot rely on contradictory internal bylaws. Under UGC circulars and binding consumer commission judgments, the following refund benchmarks apply across all private and government institutions:
@@ -781,7 +781,7 @@ export default function HostelAndMessFeeRefundPage() {
                     id="heading-dispute-scenarios-title"
                     className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight"
                   >
-                    Hostel &amp; Mess Refund Bottlenecks: Root Causes &amp; Direct Legal Fixes
+                    Hostel &amp; Mess Refund Bottlenecks: Legal Fixes
                   </h2>
                   <p className="text-xs font-semibold text-slate-500 mt-1">
                     Select Your Specific College Scenario to Unlock the Statutory Precedent and Recommended Action
@@ -797,7 +797,7 @@ export default function HostelAndMessFeeRefundPage() {
                   id="heading-case-study-title"
                   className="text-xl sm:text-2xl font-bold text-slate-900 tracking-tight"
                 >
-                  Worked Case Study: Engineering Student Recovers ₹1,45,000 Hostel &amp; Mess Dues from Private University
+                  Case Study: Student Recovers ₹1,45,000 Hostel Dues
                 </h2>
                 <div className="bg-slate-900 text-white rounded-2xl p-5 sm:p-8 shadow-xl space-y-4 sm:space-y-5 w-full overflow-hidden">
                   <div className="flex flex-wrap items-center justify-between gap-2 border-b border-slate-800 pb-3">
@@ -831,7 +831,7 @@ export default function HostelAndMessFeeRefundPage() {
                   id="heading-evidence-checklist-title"
                   className="text-xl sm:text-2xl font-bold text-slate-900 tracking-tight"
                 >
-                  Documentary Evidence Checklist: 6 Critical Records Before Serving an Advocate Legal Notice
+                  Evidence Checklist: 6 Records for Hostel Notice
                 </h2>
                 <p className="text-xs sm:text-sm text-slate-700 leading-relaxed">
                   Under Section 63 of the Bharatiya Sakshya Adhiniyam, 2023 (BSA), electronic admission receipts, email cancellation intimations, and digital bank records are fully admissible in consumer courts. Gather these 6 records:

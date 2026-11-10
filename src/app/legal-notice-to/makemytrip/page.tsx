@@ -317,7 +317,7 @@ export default function MakeMyTripLegalNoticePage() {
                   id="heading-orders-overview-title"
                   className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight"
                 >
-                  Who Is Legally Liable When a MakeMyTrip Refund Is Stuck: Airline vs OTA Intermediary
+                  Liability for Stuck MakeMyTrip Refunds: Airline vs OTA
                 </h2>
                 <p className="text-sm sm:text-base text-slate-700 leading-relaxed">
                   When a flight, hotel booking, or holiday package is disrupted or cancelled, thousands of travellers face the classic Online Travel Agent (OTA) blame loop. MakeMyTrip automated chat support informs the customer: <em>&quot;We have requested your refund from the airline/hotel partner; once they release the credit, our finance team will disburse your refund within 7–14 days.&quot;</em> Simultaneously, when passengers contact carriers like <Link href="/legal-notice-to/indigo" className="text-blue-700 underline font-semibold">IndiGo</Link>, <Link href="/legal-notice-to/air-india" className="text-blue-700 underline font-semibold">Air India</Link>, or Akasa Air, the airline insists: <em>&quot;The refund was credited to your travel agent&apos;s corporate agency wallet; please contact MakeMyTrip.&quot;</em>
@@ -411,7 +411,7 @@ export default function MakeMyTripLegalNoticePage() {
                   id="heading-intermediary-liability-title"
                   className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight"
                 >
-                  Why MakeMyTrip Cannot Claim Mere &apos;Technology Intermediary&apos; Immunity Under Section 79
+                  Why MakeMyTrip Cannot Claim Section 79 Immunity
                 </h2>
                 <p className="text-sm sm:text-base text-slate-700 leading-relaxed">
                   When consumers send informal complaint emails or demand refund settlements, MakeMyTrip legal representatives frequently cite Section 79 of the Information Technology Act, 2000, arguing that MakeMyTrip is merely an electronic marketplace that facilitates bookings between consumers and third-party airlines or hotels. They claim that liability for non-refund, cancellation, or rescheduling rests solely on the independent service vendor.
@@ -477,7 +477,7 @@ export default function MakeMyTripLegalNoticePage() {
                   id="heading-escalation-flow-title"
                   className="text-xl sm:text-2xl font-bold text-slate-900 tracking-tight"
                 >
-                  The MakeMyTrip Resolution Pathway: From Booking ID to Bank Account Remittance
+                  Resolution Pathway: From Booking ID to Bank Remittance
                 </h2>
                 <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
                   Follow this verified statutory escalation roadmap to cut through automated bot deflections and recover your funds from MakeMyTrip and partner carriers:
@@ -598,7 +598,7 @@ export default function MakeMyTripLegalNoticePage() {
                   id="heading-playbook-title"
                   className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight"
                 >
-                  The 5-Step Escalation Protocol for MakeMyTrip Flight, Hotel &amp; Package Refunds
+                  5-Step Escalation Protocol for MakeMyTrip Refunds
                 </h2>
                 <p className="text-sm sm:text-base text-slate-700 leading-relaxed">
                   Synthesized from successful consumer commission judgments against Online Travel Agencies, this 5-step playbook dismantles chatbot deflections and establishes ironclad documentary proof for swift monetary recovery:
@@ -686,7 +686,7 @@ export default function MakeMyTripLegalNoticePage() {
                   id="heading-deadlines-table-title"
                   className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight"
                 >
-                  Statutory Refund Deadlines for MakeMyTrip Bookings: DGCA CAR, RBI &amp; E-Commerce Benchmarks
+                  Statutory Deadlines: DGCA CAR, RBI &amp; E-Commerce
                 </h2>
                 <p className="text-sm sm:text-base text-slate-700 leading-relaxed">
                   Turnaround times for travel aggregators are governed by binding regulatory mandates. MakeMyTrip cannot enforce internal platform terms that contradict statutory ceilings:
@@ -766,7 +766,7 @@ export default function MakeMyTripLegalNoticePage() {
                   id="heading-wallet-trap-title"
                   className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight"
                 >
-                  The MakeMyTrip MyCash &amp; Wallet Trap: Why Retaining Cash as Expiring Credits Violates Law
+                  MyCash &amp; Wallet Trap: Why Expiring Credits Violate Law
                 </h2>
                 <div className="bg-amber-50/80 border border-amber-200 rounded-2xl p-4 sm:p-7 space-y-3 sm:space-y-4 w-full overflow-hidden">
                   <h3 className="text-base sm:text-lg font-bold text-amber-950">
@@ -792,7 +792,7 @@ export default function MakeMyTripLegalNoticePage() {
                   id="heading-worked-example-title"
                   className="text-xl sm:text-2xl font-bold text-slate-900 tracking-tight"
                 >
-                  Worked Case Study: Recovering ₹58,400 for a Disrupted Family Flight &amp; Hotel Booking via Advocate Legal Notice
+                  Case Study: Recovers ₹58,400 Booking via Advocate Notice
                 </h2>
                 <div className="bg-slate-900 text-white rounded-2xl p-5 sm:p-8 shadow-xl space-y-4 sm:space-y-5 w-full overflow-hidden">
                   <div className="flex flex-wrap items-center justify-between gap-2 border-b border-slate-800 pb-3">
@@ -826,7 +826,7 @@ export default function MakeMyTripLegalNoticePage() {
                   id="heading-evidence-checklist-title"
                   className="text-xl sm:text-2xl font-bold text-slate-900 tracking-tight"
                 >
-                  Evidence Checklist: 6 Critical Electronic Records Before Sending MakeMyTrip a Legal Notice
+                  Evidence Checklist: 6 Electronic Records for MMT Notice
                 </h2>
                 <p className="text-xs sm:text-sm text-slate-700 leading-relaxed">
                   Under Section 63 of the Bharatiya Sakshya Adhiniyam, 2023 (BSA), electronic communications and digital payment vouchers are admissible in consumer dispute forums. Assemble these 6 essential documents:
@@ -890,7 +890,7 @@ export default function MakeMyTripLegalNoticePage() {
                     id="heading-faqs-title"
                     className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight"
                   >
-                    Frequently Asked Questions About MakeMyTrip Refund Issues, Status &amp; Legal Remedies
+                    FAQs: MakeMyTrip Refund Issues, Status &amp; Remedies
                   </h2>
                   <p className="text-xs font-semibold text-slate-500 mt-1">
                     Authoritative Legal Guidance Based on DGCA Guidelines, Consumer Court Rulings &amp; CPA 2019
@@ -923,7 +923,7 @@ export default function MakeMyTripLegalNoticePage() {
                   id="heading-sources-title"
                   className="text-lg sm:text-xl font-bold text-slate-900 tracking-tight"
                 >
-                  Primary Statutory Provisions, DGCA Aviation Directives &amp; Consumer Law References
+                  Primary Statutory Provisions &amp; Aviation Directives
                 </h2>
                 <ol className="sources list-decimal list-inside space-y-2 text-xs sm:text-sm text-slate-600">
                   {PRIMARY_SOURCES.map((source, idx) => (

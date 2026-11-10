@@ -201,7 +201,7 @@ const FAQS = [
 const ARTICLE_SCHEMA = {
   "@context": "https://schema.org",
   "@type": "Article",
-  headline: "Tenant Not Paying Rent? How to Send a Legal Notice for Rent Arrears and Eviction",
+  headline: "Tenant Not Paying Rent? Legal Notice for Rent Arrears & Eviction",
   description:
     "Tenant defaulting on rent or refusing to vacate? Notice periods under Transfer of Property Act Section 106, rent recovery and eviction steps.",
   datePublished: "2026-11-09T10:00:00+05:30",
@@ -309,7 +309,7 @@ export default function TenantUnpaidRentEvictionPage() {
             </div>
 
             <h1 className="text-2xl sm:text-3xl md:text-5xl font-black tracking-tight text-white leading-tight mb-4 sm:mb-6 break-words">
-              Tenant Not Paying Rent? How to Send a Legal Notice for Rent Arrears and Eviction
+              Tenant Not Paying Rent? Legal Notice for Rent Arrears &amp; Eviction
             </h1>
 
             {/* Answer Box First: 40-60 Words Directly Under H1 */}
@@ -366,7 +366,7 @@ export default function TenantUnpaidRentEvictionPage() {
                   id="heading-overview-title"
                   className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight"
                 >
-                  When a Tenant Stops Paying Rent: Landlord Rights &amp; Legal Remedies Under Indian Law
+                  Tenant Unpaid Rent: Landlord Rights &amp; Legal Remedies
                 </h2>
                 <p className="text-sm sm:text-base text-slate-700 leading-relaxed">
                   Managing an unresponsive or recalcitrant tenant who defaults on monthly rent, refuses to answer communications, or brazenly declines to vacate creates severe financial and emotional distress for property owners. Many landlords rely on rental yields to service home loans, pay property taxes, and cover society maintenance charges. When rent stops coming in, informal negotiations frequently turn hostile, leading landlords to consider extreme measures such as cutting off water or breaking locks.
@@ -383,7 +383,7 @@ export default function TenantUnpaidRentEvictionPage() {
                     id="heading-myth-vs-fact-title"
                     className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight"
                   >
-                    Myth vs. Fact: 7 Costly Misconceptions in Tenant Eviction &amp; Rent Recovery
+                    Myth vs Fact: 7 Misconceptions in Tenant Eviction
                   </h2>
                   <span className="text-xs font-bold text-slate-500 uppercase tracking-wider">
                     Statutory Reality vs Online Advice
@@ -444,7 +444,7 @@ export default function TenantUnpaidRentEvictionPage() {
                     id="heading-case-digest-title"
                     className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight"
                   >
-                    Landmark Supreme Court Precedents on Rent Default, Notice to Quit &amp; Mesne Profits
+                    Supreme Court Rulings on Rent Default &amp; Eviction
                   </h2>
                   <span className="text-xs font-bold text-slate-500 uppercase tracking-wider">
                     Verifiable Court Records
@@ -522,7 +522,7 @@ export default function TenantUnpaidRentEvictionPage() {
                   id="heading-legal-framework-title"
                   className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight"
                 >
-                  The Legal Framework: Transfer of Property Act, Model Tenancy Act &amp; CPC Order 37
+                  Legal Framework: Transfer of Property Act &amp; Order 37
                 </h2>
                 <p className="text-sm sm:text-base text-slate-700 leading-relaxed">
                   The recovery of rent arrears and the eviction of defaulting tenants in India is governed by an interconnected web of federal and state laws. Understanding which statutory avenue applies to your property ensures you avoid frivolous jurisdictional delays:
@@ -588,7 +588,7 @@ export default function TenantUnpaidRentEvictionPage() {
                     id="heading-eviction-flow-title"
                     className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight"
                   >
-                    The 5-Stage Eviction &amp; Rent Recovery Decision Tree (Notice to Physical Possession)
+                    5-Stage Rent Recovery &amp; Eviction Decision Tree
                   </h2>
                   <span className="text-xs font-bold text-slate-500 uppercase tracking-wider">
                     Statutory Roadmap
@@ -673,7 +673,7 @@ export default function TenantUnpaidRentEvictionPage() {
                     id="heading-playbook-title"
                     className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight"
                   >
-                    The 5-Step Landlord Action Playbook: How to Lawfully Evict &amp; Recover Every Rupee
+                    5-Step Landlord Playbook: Lawful Eviction &amp; Rent
                   </h2>
                   <span className="text-xs font-bold text-slate-500 uppercase tracking-wider">
                     Execution Framework
@@ -764,7 +764,7 @@ export default function TenantUnpaidRentEvictionPage() {
                     id="heading-deadlines-table-title"
                     className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight"
                   >
-                    Statutory Benchmarks: Deadlines, Forums &amp; Legal Thresholds for Landlords
+                    Statutory Benchmarks &amp; Legal Deadlines for Landlords
                   </h2>
                   <span className="text-xs font-bold text-slate-500 uppercase tracking-wider">
                     Statutory Matrix
@@ -852,7 +852,7 @@ export default function TenantUnpaidRentEvictionPage() {
                     id="heading-worked-example-title"
                     className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight"
                   >
-                    Worked Financial Recovery Example: Unpaid Rent, Interest &amp; Mesne Profits
+                    Financial Recovery Example: Unpaid Rent &amp; Profits
                   </h2>
                   <span className="text-xs font-bold text-slate-500 uppercase tracking-wider">
                     Illustrative Breakdown
@@ -943,7 +943,7 @@ export default function TenantUnpaidRentEvictionPage() {
                     id="heading-evidence-checklist-title"
                     className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight"
                   >
-                    Essential Evidence Checklist: Documents Required to Draft an Unassailable Notice
+                    Evidence Checklist: Documents for Tenant Legal Notice
                   </h2>
                   <span className="text-xs font-bold text-slate-500 uppercase tracking-wider">
                     BSA Section 63 Ready
@@ -1013,7 +1013,7 @@ export default function TenantUnpaidRentEvictionPage() {
                     id="heading-faqs-title"
                     className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight"
                   >
-                    Frequently Asked Questions: Legal Notice to Tenant for Unpaid Rent &amp; Eviction
+                    FAQs: Legal Notice for Unpaid Rent &amp; Eviction
                   </h2>
                   <span className="text-xs font-bold text-slate-500 uppercase tracking-wider">
                     Statutory Answers

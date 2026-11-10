@@ -196,7 +196,7 @@ const FAQS = [
 const ARTICLE_SCHEMA = {
   "@context": "https://schema.org",
   "@type": "Article",
-  headline: "An Old Debt Isn't Always Time-Barred: Sections 18 and 19 of the Limitation Act",
+  headline: "Is an Old Debt Time-Barred? Limitation Act Sections 18 and 19",
   description:
     "A written acknowledgment (even on WhatsApp) or part payment can restart the 3-year limit. See how sections 18 and 19 save old claims.",
   datePublished: "2026-11-03T16:00:00+05:30",
@@ -296,7 +296,7 @@ export default function LimitationExtendedPage() {
             </div>
 
             <h1 className="text-2xl sm:text-3xl md:text-5xl font-black tracking-tight text-white leading-tight mb-4 sm:mb-6 break-words">
-              An Old Debt Isn&apos;t Always Time-Barred: Sections 18 and 19 of the Limitation Act
+              Is an Old Debt Time-Barred? Limitation Act Sections 18 and 19
             </h1>
 
             {/* Answer Box First: 40-60 Words Directly Under H1 */}
@@ -353,7 +353,7 @@ export default function LimitationExtendedPage() {
                   id="heading-overview-title"
                   className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight"
                 >
-                  Why Old Debts Do Not Automatically Expire: The Mechanics of Sections 18 and 19
+                  How Debt Limitation Extends: Mechanics of Sections 18 and 19
                 </h2>
                 <p className="text-sm sm:text-base text-slate-700 leading-relaxed">
                   Every year, lakhs of lenders—from individuals who lent money to close friends and relatives to small business proprietors extending trade credit—abandon valid financial claims because someone told them: <em>&quot;3 years have passed, your money is time-barred by law.&quot;</em> This widespread legal misconception originates from a superficial reading of Articles 19 and 21 of the Schedule to the Limitation Act, 1963.
@@ -370,7 +370,7 @@ export default function LimitationExtendedPage() {
                     id="heading-myths-facts-title"
                     className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight"
                   >
-                    Myth vs. Fact: 7 Misconceptions About the 3-Year Limitation Period Debunked
+                    Myth vs. Fact: 3-Year Limitation Period and Debt Renewal
                   </h2>
                   <span className="text-xs font-bold text-slate-500 uppercase tracking-wider">
                     Statutory Analysis
@@ -507,7 +507,7 @@ export default function LimitationExtendedPage() {
                   id="heading-resolution-flow-title"
                   className="text-xl sm:text-2xl font-bold text-slate-900 tracking-tight"
                 >
-                  Statutory Resolution Hierarchy: How an Acknowledgment Restarts the 3-Year Clock
+                  Resolution Hierarchy: How Written Acknowledgment Restarts Clock
                 </h2>
                 <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
                   Follow the exact legal lifecycle of an extended loan from original default to legal demand notice and summary suit:
@@ -632,7 +632,7 @@ export default function LimitationExtendedPage() {
                   id="heading-playbook-title"
                   className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight"
                 >
-                  The 5-Step Escalation Playbook: Enforcing a Loan Extended by Acknowledgment
+                  5-Step Escalation Playbook: Enforcing an Acknowledged Debt
                 </h2>
                 <p className="text-sm sm:text-base text-slate-700 leading-relaxed">
                   When dealing with an overdue personal or business loan, follow this battle-tested 5-step legal strategy to convert informal chats and partial credits into an enforceable court decree:
@@ -848,7 +848,7 @@ export default function LimitationExtendedPage() {
                   id="heading-evidence-checklist-title"
                   className="text-xl sm:text-2xl font-bold text-slate-900 tracking-tight"
                 >
-                  Limitation Evidence Checklist: 6 Critical Documents Under BSA Section 63
+                  Limitation Evidence Checklist: 6 Critical Records Under BSA
                 </h2>
                 <p className="text-xs sm:text-sm text-slate-700 leading-relaxed">
                   Under Section 63 of the Bharatiya Sakshya Adhiniyam, 2023 (BSA), electronic communications and digital banking records are fully admissible in Indian courts. Assemble these 6 documents before serving a legal notice:
@@ -912,7 +912,7 @@ export default function LimitationExtendedPage() {
                     id="heading-faqs-title"
                     className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight"
                   >
-                    Frequently Asked Questions About Limitation, Acknowledgment &amp; Part-Payment
+                    FAQs on Limitation Period, Debt Acknowledgment and Payment
                   </h2>
                   <p className="text-xs font-semibold text-slate-500 mt-1">
                     Authoritative Answers Grounded in the Limitation Act, 1963 and High Court &amp; Supreme Court Judgments

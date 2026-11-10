@@ -50,22 +50,31 @@ export default function InfluencerTableOfContents({
   }, [isOpen]);
 
   useEffect(() => {
+    let ticking = false;
+
     const handleScroll = () => {
-      const scrollPosition = window.scrollY + 140;
+      if (!ticking) {
+        window.requestAnimationFrame(() => {
+          const scrollPosition = window.scrollY + 140;
 
-      for (let i = sections.length - 1; i >= 0; i--) {
-        const el = document.getElementById(sections[i].id);
-        if (el) {
-          const top = el.getBoundingClientRect().top + window.scrollY;
-          if (scrollPosition >= top) {
-            setActiveId(sections[i].id);
-            return;
+          for (let i = sections.length - 1; i >= 0; i--) {
+            const el = document.getElementById(sections[i].id);
+            if (el) {
+              const top = el.getBoundingClientRect().top + window.scrollY;
+              if (scrollPosition >= top) {
+                setActiveId(sections[i].id);
+                ticking = false;
+                return;
+              }
+            }
           }
-        }
-      }
 
-      if (sections[0]) {
-        setActiveId(sections[0].id);
+          if (sections[0]) {
+            setActiveId(sections[0].id);
+          }
+          ticking = false;
+        });
+        ticking = true;
       }
     };
 

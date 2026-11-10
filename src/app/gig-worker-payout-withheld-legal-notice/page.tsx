@@ -314,7 +314,7 @@ export default function GigWorkerPayoutWithheldPage() {
                   id="heading-rights-overview-title"
                   className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight"
                 >
-                  Arbitrary Platform Deactivation and Withheld Gig Payouts: The Legal Reality
+                  Arbitrary Platform Deactivation &amp; Withheld Payouts
                 </h2>
                 <p className="text-sm sm:text-base text-slate-700 leading-relaxed">
                   Every week, tens of thousands of delivery riders and ride-hailing drivers across India wake up to find their partner applications abruptly deactivated without notice. Platforms such as Zomato, Swiggy, Uber, Ola, Zepto, Blinkit, Shadowfax, and Porter routinely lock partner accounts citing opaque algorithmic flags, unverified customer complaints, or alleged GPS deviations. Worse, aggregators systematically freeze in-app wallets, withholding completed trip fares, surge pay, delivery incentives, and customer tips earned over preceding pay periods.
@@ -331,7 +331,7 @@ export default function GigWorkerPayoutWithheldPage() {
                     id="heading-scenario-cards-title"
                     className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight"
                   >
-                    4 Real-World Dispute Scenarios: Platform Tactics, Violations &amp; Recovery Odds
+                    4 Real-World Dispute Scenarios &amp; Recovery Odds
                   </h2>
                   <span className="text-xs font-bold text-slate-500 uppercase tracking-wider">
                     Statutory Scenario Grid
@@ -584,7 +584,7 @@ export default function GigWorkerPayoutWithheldPage() {
                   id="heading-playbook-title"
                   className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight"
                 >
-                  The 5-Step Escalation Playbook for Gig Workers: Recovering Held Payouts
+                  5-Step Playbook for Gig Workers to Recover Payouts
                 </h2>
                 <p className="text-sm sm:text-base text-slate-700 leading-relaxed">
                   Derived from successful legal interventions across major delivery fleets and cab networks, this 5-step playbook enforces your rights and compels settlement:
@@ -669,7 +669,7 @@ export default function GigWorkerPayoutWithheldPage() {
                   id="heading-deductions-table-title"
                   className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight"
                 >
-                  Statutory Deadlines &amp; Payout Rules: Aggregator Obligations vs Partner Remedies
+                  Statutory Deadlines &amp; Rules for Gig Payouts
                 </h2>
                 <p className="text-sm sm:text-base text-slate-700 leading-relaxed">
                   Platform companies cannot enforce arbitrary settlement schedules or unending retention of partner money. Compare statutory benchmarks below:
@@ -851,7 +851,7 @@ export default function GigWorkerPayoutWithheldPage() {
                   id="heading-worked-example-title"
                   className="text-xl sm:text-2xl font-bold text-slate-900 tracking-tight"
                 >
-                  Worked Case Study: Delivery Partner Recovers ₹28,450 Withheld Earnings + ₹15,000 Compensation
+                  Case Study: Delivery Partner Recovers ₹28,450 Payout
                 </h2>
                 <div className="bg-slate-900 text-white rounded-2xl p-5 sm:p-8 shadow-xl space-y-4 sm:space-y-5 w-full overflow-hidden">
                   <div className="flex flex-wrap items-center justify-between gap-2 border-b border-slate-800 pb-3">
@@ -885,7 +885,7 @@ export default function GigWorkerPayoutWithheldPage() {
                   id="heading-evidence-checklist-title"
                   className="text-xl sm:text-2xl font-bold text-slate-900 tracking-tight"
                 >
-                  Evidence Checklist: 6 Critical Documents Before Serving an Advocate Legal Notice
+                  Evidence Checklist: 6 Documents Before Legal Notice
                 </h2>
                 <p className="text-xs sm:text-sm text-slate-700 leading-relaxed">
                   Under Section 63 of the Bharatiya Sakshya Adhiniyam, 2023 (BSA), electronic records, mobile app screenshots, and digital bank statements are fully admissible in dispute forums. Gather these 6 records:
@@ -949,7 +949,7 @@ export default function GigWorkerPayoutWithheldPage() {
                     id="heading-faqs-title"
                     className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight"
                   >
-                    Frequently Asked Questions About Withheld Gig Payouts &amp; Legal Notices
+                    FAQs: Withheld Gig Payouts &amp; Legal Notices
                   </h2>
                   <p className="text-xs font-semibold text-slate-500 mt-1">
                     Clear Answers Grounded in Contract Law, Social Security Code, and Consumer Protection Regulations

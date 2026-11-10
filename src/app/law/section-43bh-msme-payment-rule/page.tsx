@@ -2,7 +2,6 @@ import React from "react";
 import { Metadata } from "next";
 import Link from "next/link";
 import Breadcrumbs from "@/components/Breadcrumbs";
-import RelatedRecoveryGuides from "@/components/RelatedRecoveryGuides";
 import { SITE_URL } from "@/lib/site";
 import { DEFAULT_FUNNEL_SETTINGS } from "@/lib/funnel-config";
 import Section43bhTableOfContents, { TocItem } from "./Section43bhTableOfContents";
@@ -10,6 +9,8 @@ import Section43bhNoticeCTA from "./Section43bhNoticeCTA";
 import Section43bhEligibilityChecker from "./Section43bhEligibilityChecker";
 
 // TODO(reviewer): populate from src/data/reviewers.ts when human legal reviewer registry is created
+
+export const revalidate = 86400;
 
 const PAGE_URL = `${SITE_URL}/law/section-43bh-msme-payment-rule`;
 
@@ -1548,8 +1549,7 @@ export default function Section43bhMsmePaymentRulePage() {
           </div>
         </div>
 
-        {/* Global Contextual Recovery Guides */}
-        <RelatedRecoveryGuides />
+
       </div>
     </>
   );

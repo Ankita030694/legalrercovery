@@ -382,7 +382,7 @@ export default function UpiAutopaySubscriptionRefundPage() {
                   id="heading-overview-title"
                   className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight"
                 >
-                  Unwanted UPI AutoPay Debits: Understanding Your Statutory Rights Under RBI &amp; Consumer Law
+                  Unwanted UPI AutoPay Debits: Statutory Rights Under RBI
                 </h2>
                 <p className="text-sm sm:text-base text-slate-700 leading-relaxed">
                   Every month, millions of Indian digital banking users discover unexpected debits ranging from ₹499 to ₹14,999 on their bank statements. These debits stem from <strong>UPI AutoPay</strong> and digital e-mandates configured on popular platforms including PhonePe, Google Pay, Paytm, BHIM, and net-banking portals. Often, consumers sign up for a nominal &quot;₹1 free trial&quot; on an OTT entertainment portal, dating app, ed-tech coaching site, or cloud SaaS provider, only to discover later that the merchant quietly registered a persistent recurring mandate that silently drains their bank account upon trial expiry.
@@ -402,7 +402,7 @@ export default function UpiAutopaySubscriptionRefundPage() {
                     id="heading-order-digest-title"
                     className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight"
                   >
-                    Landmark Order Digest: Verifiable Consumer Commission Rulings on Unwanted AutoPay Debits
+                    Consumer Court Rulings on Unwanted AutoPay Debits
                   </h2>
                   <span className="text-xs font-bold text-slate-500 uppercase tracking-wider">
                     Verifiable Court Records
@@ -620,7 +620,7 @@ export default function UpiAutopaySubscriptionRefundPage() {
                   id="heading-route-app-cancel-title"
                   className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight"
                 >
-                  Route 1: How to Cancel UPI AutoPay Mandates in PhonePe, Google Pay, Paytm &amp; BHIM
+                  Route 1: Cancel AutoPay in PhonePe, GPay &amp; Paytm
                 </h2>
                 <p className="text-sm sm:text-base text-slate-700 leading-relaxed">
                   Before pursuing any financial refund, your urgent first step is to terminate the active mandate. Many consumers make the mistake of simply uninstalling the merchant app; this does <strong>not</strong> stop auto-debits because the mandate resides in NPCI&apos;s centralized UPI Mandate Management System (MMS) linked to your bank account.
@@ -694,7 +694,7 @@ export default function UpiAutopaySubscriptionRefundPage() {
                   id="heading-route-bank-dispute-title"
                   className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight"
                 >
-                  Route 2: Bank Chargeback &amp; The RBI 24-Hour Pre-Debit Notification Mandate
+                  Route 2: Bank Chargeback &amp; 24-Hour Pre-Debit Rule
                 </h2>
                 <p className="text-sm sm:text-base text-slate-700 leading-relaxed">
                   When you set up an e-mandate on your debit card, credit card, or UPI VPA, the issuing bank does not have carte blanche permission to debit your account in secrecy. Under <strong>RBI Circular DPSS.CO.PD.No.1324/02.14.003/2020-21 (Clause 2)</strong>, the central bank created a mandatory dual-safeguard mechanism:
@@ -787,7 +787,7 @@ export default function UpiAutopaySubscriptionRefundPage() {
                   id="heading-route-dark-patterns-title"
                   className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight"
                 >
-                  Route 3: The CCPA Dark Patterns Trap &amp; Consumer Court Remedies (Section 2(47) CPA 2019)
+                  Route 3: Dark Patterns &amp; Consumer Court Remedies
                 </h2>
                 <p className="text-sm sm:text-base text-slate-700 leading-relaxed">
                   Many digital businesses operate deceptive user interfaces engineered to trap consumers into continuous payments. On November 30, 2023, the Ministry of Consumer Affairs notified the <strong>Guidelines for Prevention and Regulation of Dark Patterns, 2023</strong> under Section 18 of the Consumer Protection Act, 2019.
@@ -851,7 +851,7 @@ export default function UpiAutopaySubscriptionRefundPage() {
                     id="heading-benchmarks-table-title"
                     className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight"
                   >
-                    Statutory Timelines &amp; Compensation Benchmarks (RBI &amp; NPCI Standards)
+                    Statutory Timelines &amp; Compensation (RBI Standards)
                   </h2>
                   <span className="text-xs font-bold text-slate-500 uppercase tracking-wider">
                     Regulatory Turnaround Benchmarks
@@ -898,7 +898,7 @@ export default function UpiAutopaySubscriptionRefundPage() {
                     id="heading-playbook-title"
                     className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight"
                   >
-                    The 5-Step Practical Playbook: From Debit Alert to Refund in Your Account
+                    5-Step Playbook: Debit Alert to Refund in Account
                   </h2>
                   <span className="text-xs font-bold text-slate-500 uppercase tracking-wider">
                     Proven Dispute Protocol
@@ -985,7 +985,7 @@ export default function UpiAutopaySubscriptionRefundPage() {
                     id="heading-worked-example-title"
                     className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight"
                   >
-                    Worked Example: Recovering ₹8,999 Trapped in an Annual SaaS AutoPay Debit
+                    Case Study: Recovers ₹8,999 SaaS AutoPay Debit
                   </h2>
                   <span className="text-xs font-bold text-slate-500 uppercase tracking-wider">
                     Illustrative Case Study
@@ -1030,7 +1030,7 @@ export default function UpiAutopaySubscriptionRefundPage() {
                     id="heading-evidence-checklist-title"
                     className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight"
                   >
-                    Evidence Checklist: 7 Indispensable Proofs for Your AutoPay Refund Claim
+                    Evidence Checklist: 7 Proofs for AutoPay Claims
                   </h2>
                   <span className="text-xs font-bold text-slate-500 uppercase tracking-wider">
                     Dispute Documentation
@@ -1117,7 +1117,7 @@ export default function UpiAutopaySubscriptionRefundPage() {
                     id="heading-scenarios-tabs-title"
                     className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight"
                   >
-                    Common AutoPay &amp; E-Mandate Trap Scenarios (Interactive Problem Picker)
+                    Common AutoPay &amp; E-Mandate Trap Scenarios
                   </h2>
                   <span className="text-xs font-bold text-slate-500 uppercase tracking-wider">
                     Interactive Troubleshooting

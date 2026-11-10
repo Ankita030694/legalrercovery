@@ -155,7 +155,7 @@ const FAQS = [
 const ARTICLE_SCHEMA = {
   "@context": "https://schema.org",
   "@type": "Article",
-  headline: "Bank Ruined Your CIBIL Score With Wrong Data? How to Dispute and Demand Compensation",
+  headline: "Wrong CIBIL Reporting? How to Dispute and Demand Compensation",
   description:
     "Wrong loan or late payment reported to CIBIL / Experian? Claim RBI's ₹100/day delay compensation and send a legal notice to rectify credit records.",
   datePublished: "2026-11-09T10:00:00+05:30",
@@ -258,7 +258,7 @@ export default function CibilDisputeCompensationPage() {
             </div>
 
             <h1 className="text-2xl sm:text-3xl md:text-5xl font-black tracking-tight text-white leading-tight mb-4 sm:mb-6 break-words">
-              Bank Ruined Your CIBIL Score With Wrong Data? How to Dispute and Demand Compensation
+              Wrong CIBIL Reporting? How to Dispute and Demand Compensation
             </h1>
 
             {/* Answer Box First: 40-60 Words Directly Under H1 */}
@@ -372,7 +372,7 @@ export default function CibilDisputeCompensationPage() {
                   id="heading-overview-title"
                   className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight"
                 >
-                  How Bank Clerical Errors Ruin CIBIL Scores — And Your Statutory Right to Redress
+                  How Bank Clerical Errors Ruin CIBIL Scores &amp; Redress
                 </h2>
                 <p className="text-sm sm:text-base text-slate-700 leading-relaxed">
                   In modern Indian banking, your Credit Information Report (CIR) maintained by credit bureaus like TransUnion CIBIL, Experian, Equifax, and CRIF High Mark is your definitive financial passport. Every home loan, business overdraft, vehicle financing, and credit card approval depends directly on a healthy 750+ credit score. Yet thousands of disciplined borrowers wake up to discover their credit scores plummeting overnight by 100 to 200 points due to gross errors committed by bank back-offices and automated software batches.
@@ -392,7 +392,7 @@ export default function CibilDisputeCompensationPage() {
                     id="heading-scenarios-title"
                     className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight"
                   >
-                    5 Common CIBIL Reporting Disputes: Root Cause &amp; Resolution Protocols
+                    5 Common CIBIL Disputes: Root Causes &amp; Protocols
                   </h2>
                   <span className="text-xs font-bold text-slate-500 uppercase tracking-wider">
                     Interactive Dispute Playbooks
@@ -718,7 +718,7 @@ export default function CibilDisputeCompensationPage() {
                     id="heading-case-citations-title"
                     className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight"
                   >
-                    Verified Case Law Digest: Consumer Forums Punishing Erroneous CIBIL Reporting
+                    Case Law Digest: Forums Punishing Wrong CIBIL Reporting
                   </h2>
                   <span className="text-xs font-bold text-slate-500 uppercase tracking-wider">
                     Judicial Precedents

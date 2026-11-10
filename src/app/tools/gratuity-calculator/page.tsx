@@ -255,7 +255,7 @@ export default function GratuityCalculatorPage() {
                     id="heading-calculator-title"
                     className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight"
                   >
-                    Gratuity Calculator Wizard: Calculate Your Statutory Dues &amp; Delayed Interest
+                    Calculate Statutory Gratuity Dues &amp; Delayed Interest
                   </h2>
                   <p className="text-xs sm:text-sm text-slate-600 mt-1">
                     Calculate your lawful gratuity entitlement, verify fixed-term contract pro-rata dues, and track statutory simple interest owed by non-paying employers.
@@ -272,7 +272,7 @@ export default function GratuityCalculatorPage() {
                   id="heading-interpretation-title"
                   className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight"
                 >
-                  Gratuity Calculation Output Guide: Result Range, Taxability &amp; Enforcement
+                  Gratuity Output Guide: Taxability &amp; Enforcement
                 </h2>
                 <p className="text-sm sm:text-base text-slate-700 leading-relaxed">
                   Depending on your completed tenure and monthly basic earnings, your gratuity output triggers distinct statutory rights and tax provisions under Indian labor and tax codes:
@@ -408,7 +408,7 @@ export default function GratuityCalculatorPage() {
                     id="heading-fixed-term-title"
                     className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight"
                   >
-                    Fixed-Term Employee Gratuity Rule: Why You No Longer Need 5 Years of Service †
+                    Fixed-Term Gratuity Rule: 5 Years No Longer Required †
                   </h2>
                   <p className="text-xs font-semibold text-slate-500 mt-1">
                     Statutory Differentiator: Section 53(2) of the Code on Social Security, 2020
@@ -447,7 +447,7 @@ export default function GratuityCalculatorPage() {
                   id="heading-escalation-flow-title"
                   className="text-xl sm:text-2xl font-bold text-slate-900 tracking-tight"
                 >
-                  Statutory Gratuity Recovery Rail: From Separation to Controlling Authority Recovery
+                  Gratuity Recovery Rail: Separation to Controlling Authority
                 </h2>
                 <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
                   When an employer refuses to credit gratuity into your full &amp; final settlement, follow this strict legal recovery rail under the Payment of Gratuity Rules:
@@ -543,7 +543,7 @@ export default function GratuityCalculatorPage() {
                   id="heading-playbook-title"
                   className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight"
                 >
-                  The 5-Step Escalation Playbook: How to Recover Withheld Gratuity From Your Employer
+                  5-Step Playbook: How to Recover Withheld Gratuity
                 </h2>
                 <p className="text-sm sm:text-base text-slate-700 leading-relaxed">
                   If your employer has withheld your gratuity, deducted it unlawfully against notice period recovery, or stopped responding to emails, execute these 5 sequential legal steps:
@@ -725,7 +725,7 @@ export default function GratuityCalculatorPage() {
                   id="heading-case-studies-title"
                   className="text-xl sm:text-2xl font-bold text-slate-900 tracking-tight"
                 >
-                  Worked Illustrative Case Studies: Gratuity Recovered with Penal Interest
+                  Case Studies: Gratuity Recovered with Penal Interest
                 </h2>
                 <div className="space-y-4">
                   {/* Case 1 */}
@@ -790,7 +790,7 @@ export default function GratuityCalculatorPage() {
                   id="heading-evidence-checklist-title"
                   className="text-xl sm:text-2xl font-bold text-slate-900 tracking-tight"
                 >
-                  Gratuity Recovery Evidence Checklist: 6 Essential Documents Before Serving Notice
+                  Evidence Checklist: 6 Documents for Gratuity Notice
                 </h2>
                 <p className="text-xs sm:text-sm text-slate-700 leading-relaxed">
                   Under Section 63 of the Bharatiya Sakshya Adhiniyam, 2023 (BSA), assemble these 6 essential documents to substantiate your claim before the Controlling Authority:
@@ -854,7 +854,7 @@ export default function GratuityCalculatorPage() {
                     id="heading-faqs-title"
                     className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight"
                   >
-                    Frequently Asked Questions About Gratuity Calculation, Eligibility &amp; Withholding
+                    FAQs: Gratuity Calculation, Eligibility &amp; Withholding
                   </h2>
                   <p className="text-xs font-semibold text-slate-500 mt-1">
                     Answers Grounded in Payment of Gratuity Act 1972, Code on Social Security 2020 &amp; Supreme Court Judgments

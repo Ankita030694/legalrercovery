@@ -313,7 +313,7 @@ export default function SubventionSchemeBuilderDefaultPage() {
                   id="heading-how-subvention-traps-title"
                   className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight"
                 >
-                  How Subvention Schemes (&quot;No EMI Till Possession&quot;) Trap Homebuyers Under Tripartite Agreements
+                  How Subvention Schemes Trap Homebuyers Under Agreements
                 </h2>
                 <p className="text-sm sm:text-base text-slate-700 leading-relaxed">
                   Under a real-estate subvention scheme—commonly marketed across Noida, Greater Noida, Gurugram, Mumbai MMR, Pune, and Bengaluru as <strong>&quot;10:80:10&quot;</strong>, <strong>&quot;20:80&quot;</strong>, or <strong>&quot;Pay 10% Now, Nothing Till Possession&quot;</strong>—three parties execute a <strong>Tripartite Agreement</strong> alongside the Builder-Buyer Agreement (BBA): (1) the Homebuyer (Allottee), (2) the Promoter (Builder/Developer), and (3) the Lending Bank or Housing Finance Company (HFC). Under this contractual arrangement, the homebuyer pays an initial 10% to 20% booking margin, the bank sanctions a home loan for 75% to 80% of the flat&apos;s value in the buyer&apos;s name, and the builder contractually undertakes to pay the monthly <strong>Pre-EMI interest</strong> directly to the bank during the construction period until possession is offered.
@@ -368,7 +368,7 @@ export default function SubventionSchemeBuilderDefaultPage() {
                     id="heading-liability-matrix-title"
                     className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight"
                   >
-                    Who Is Liable When the Builder Stops Paying Pre-EMIs? Tripartite Agreement &amp; RBI Liability Matrix
+                    Who Is Liable When Builder Stops Paying Pre-EMIs?
                   </h2>
                   <span className="text-xs font-bold text-slate-500 uppercase tracking-wider">
                     Statutory &amp; Judicial Allocation
@@ -472,7 +472,7 @@ export default function SubventionSchemeBuilderDefaultPage() {
                   id="heading-money-flow-svg-title"
                   className="text-xl sm:text-2xl font-bold text-slate-900 tracking-tight"
                 >
-                  Where the Money Flows—and Where It Breaks: Subvention Loan Disbursal &amp; Escalation Architecture
+                  Subvention Loan Disbursal &amp; Escalation Architecture
                 </h2>
                 <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
                   This diagram illustrates how the three-cornered subvention arrangement breaks down when a bank releases funds upfront, and the 5-stage legal counter-offensive that shifts liability back onto the builder and lender:
@@ -603,7 +603,7 @@ export default function SubventionSchemeBuilderDefaultPage() {
                     id="heading-court-precedents-title"
                     className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight"
                   >
-                    Landmark Supreme Court &amp; High Court Rulings on Subvention Scheme Defaults and Bank Collusion
+                    Supreme Court Rulings on Subvention Scheme Defaults
                   </h2>
                   <span className="text-xs font-bold text-slate-500 uppercase tracking-wider">
                     Verifiable Judicial Precedents
@@ -684,7 +684,7 @@ export default function SubventionSchemeBuilderDefaultPage() {
                   id="heading-bank-cibil-shield-title"
                   className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight"
                 >
-                  Can the Bank Ruin Your CIBIL Score or File Section 138 / SARFAESI Cases for Builder Default?
+                  Can Banks Ruin CIBIL or File SARFAESI for Defaults?
                 </h2>
                 <p className="text-sm sm:text-base text-slate-700 leading-relaxed">
                   The most painful weapon banks deploy against trapped subvention homebuyers is not a civil recovery suit—it is automated <strong>CIBIL credit score destruction</strong> combined with criminal intimidation under <strong>Section 138 of the Negotiable Instruments Act, 1881</strong> (for security cheques taken at loan sanction) or <strong>Section 25 of the Payment and Settlement Systems Act, 2007</strong> (for dishonoured NACH/ECS mandates).
@@ -732,7 +732,7 @@ export default function SubventionSchemeBuilderDefaultPage() {
                   id="heading-playbook-title"
                   className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight"
                 >
-                  The 5-Step Legal Playbook: How to Stop Bank Harassment and Recover Money From the Builder
+                  5-Step Playbook: Stop Bank Harassment &amp; Recover Money
                 </h2>
                 <p className="text-sm sm:text-base text-slate-700 leading-relaxed">
                   Do not wait until the bank declares your account a Non-Performing Asset (NPA) or the builder slips into NCLT insolvency. Follow this 5-step statutory sequence immediately when the first Pre-EMI default occurs:
@@ -831,7 +831,7 @@ export default function SubventionSchemeBuilderDefaultPage() {
                   id="heading-forum-comparison-title"
                   className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight"
                 >
-                  Forum Comparison: RERA (Section 18 &amp; 40) vs. Consumer Court (e-Jagriti) vs. Banking Ombudsman
+                  Forum Comparison: RERA vs Consumer Court vs Ombudsman
                 </h2>
                 <p className="text-sm sm:text-base text-slate-700 leading-relaxed">
                   Under the Supreme Court&apos;s rulings in <em>Imperia Structures Ltd. v. Anil Patni</em> (2020) 10 SCC 783 and <em>Pioneer Urban Land</em> (2019), a homebuyer trapped in a subvention default has concurrent statutory remedies. Use this comparison table to choose the right forum (or combination of forums) after your 15-day advocate legal notice expires:
@@ -931,7 +931,7 @@ export default function SubventionSchemeBuilderDefaultPage() {
                     id="heading-scenario-picker-title"
                     className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight"
                   >
-                    Select Your Subvention Dispute Scenario: Legal Basis &amp; 3-Step Tactical Fix
+                    Subvention Dispute Scenarios &amp; 3-Step Remedies
                   </h2>
                   <p className="text-xs font-semibold text-slate-500 mt-1">
                     Choose Your Exact Builder-Bank Subvention Predicament Below to See the Statutory Remedy
@@ -947,7 +947,7 @@ export default function SubventionSchemeBuilderDefaultPage() {
                   id="heading-worked-example-title"
                   className="text-xl sm:text-2xl font-bold text-slate-900 tracking-tight"
                 >
-                  Worked Case Study: Greater Noida Homebuyer Stops ₹48,500/Month Bank Demand &amp; Recovers ₹14.2 Lakh Down Payment
+                  Case Study: Homebuyer Recovers ₹14.2L Down Payment
                 </h2>
                 <div className="bg-slate-900 text-white rounded-2xl p-5 sm:p-8 shadow-xl space-y-4 sm:space-y-5 w-full overflow-hidden">
                   <div className="flex flex-wrap items-center justify-between gap-2 border-b border-slate-800 pb-3">
@@ -982,7 +982,7 @@ export default function SubventionSchemeBuilderDefaultPage() {
                     id="heading-evidence-takeaways-title"
                     className="text-xl sm:text-2xl font-bold text-slate-900 tracking-tight"
                   >
-                    Evidence Checklist &amp; Key Takeaways for Trapped Subvention Homebuyers
+                    Evidence Checklist for Trapped Subvention Homebuyers
                   </h2>
                   <p className="text-xs sm:text-sm text-slate-700 leading-relaxed">
                     Under Section 63 of the Bharatiya Sakshya Adhiniyam, 2023 (BSA), compile these 6 essential records before serving your joint legal notice to the builder and the bank:
@@ -1076,7 +1076,7 @@ export default function SubventionSchemeBuilderDefaultPage() {
                     id="heading-faqs-title"
                     className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight"
                   >
-                    Frequently Asked Questions: Subvention Scheme Builder Default, Pre-EMIs &amp; Tripartite Rights
+                    FAQs: Subvention Scheme Builder Defaults &amp; Rights
                   </h2>
                   <p className="text-xs font-semibold text-slate-500 mt-1">
                     Verified Legal Answers Based on RERA 2016, RBI Housing Finance Circulars &amp; Supreme Court Rulings

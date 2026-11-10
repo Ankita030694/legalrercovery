@@ -326,7 +326,7 @@ export default function ChequeBounceReturnReasonsPage() {
                     id="heading-matrix-title"
                     className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight"
                   >
-                    Bank Return Reason vs Section 138 Applicability: The Definitive Comparison Matrix
+                    Bank Return Reason vs Section 138: Statutory Comparison Matrix
                   </h2>
                 </div>
                 <p className="text-sm sm:text-base text-slate-700 leading-relaxed">
@@ -553,7 +553,7 @@ export default function ChequeBounceReturnReasonsPage() {
                   id="heading-account-closed-title"
                   className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight"
                 >
-                  Account Closed Cheque Bounce: Why Section 138 Applies Under NEPC Micon Precedent
+                  Account Closed Cheque: Why Section 138 Applies Under NEPC Micon
                 </h2>
                 <div className="space-y-3 text-sm sm:text-base text-slate-700 leading-relaxed">
                   <p>
@@ -580,7 +580,7 @@ export default function ChequeBounceReturnReasonsPage() {
                   id="heading-signature-mismatch-title"
                   className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight"
                 >
-                  Signature Mismatch &amp; &apos;Signature Differs&apos;: The 3-Judge Bench Ruling in Laxmi Dyechem
+                  Signature Mismatch Cheque Bounce: Laxmi Dyechem Precedent
                 </h2>
                 <div className="space-y-3 text-sm sm:text-base text-slate-700 leading-relaxed">
                   <p>
@@ -607,7 +607,7 @@ export default function ChequeBounceReturnReasonsPage() {
                   id="heading-refer-stop-title"
                   className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight"
                 >
-                  &apos;Refer to Drawer&apos; &amp; &apos;Payment Stopped&apos;: Criminal Liability vs Legitimate Defenses
+                  Refer to Drawer and Payment Stopped: Section 138 Liability
                 </h2>
                 <div className="space-y-3 text-sm sm:text-base text-slate-700 leading-relaxed">
                   <p>
@@ -633,7 +633,7 @@ export default function ChequeBounceReturnReasonsPage() {
                   id="heading-non-138-title"
                   className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight"
                 >
-                  Non-138 Technical Returns: Stale Cheques, CTS Defects &amp; Alternative Civil Remedies
+                  Non-138 Technical Returns: Stale Cheques and Civil Remedies
                 </h2>
                 <div className="space-y-3 text-sm sm:text-base text-slate-700 leading-relaxed">
                   <p>
@@ -673,7 +673,7 @@ export default function ChequeBounceReturnReasonsPage() {
                     id="heading-escalation-flow-title"
                     className="text-xl sm:text-2xl font-bold text-slate-900 tracking-tight"
                   >
-                    Statutory Dishonour Escalation Rail: From Bank Return Memo to Section 138 Filing
+                    Dishonour Escalation Rail: Bank Return Memo to Court Filing
                   </h2>
                 </div>
                 <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
@@ -820,7 +820,7 @@ export default function ChequeBounceReturnReasonsPage() {
                     id="heading-order-digest-title"
                     className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight"
                   >
-                    Landmark Order Digest: 4 Supreme Court Precedents Enforcing Section 138
+                    Landmark Order Digest: Supreme Court Section 138 Precedents
                   </h2>
                   <span className="text-xs font-bold text-slate-500 uppercase tracking-wider">
                     Authoritative Case Law
@@ -897,7 +897,7 @@ export default function ChequeBounceReturnReasonsPage() {
                   id="heading-worked-example-title"
                   className="text-xl sm:text-2xl font-bold text-slate-900 tracking-tight"
                 >
-                  Worked Case Study: Creditor Enforces ₹4,50,000 &apos;Account Closed&apos; &amp; &apos;Signature Mismatch&apos; Cheque
+                  Case Study: Enforcing Dishonoured Cheque for Account Closed
                 </h2>
                 <div className="bg-slate-900 text-white rounded-2xl p-5 sm:p-8 shadow-xl space-y-4 sm:space-y-5 w-full overflow-hidden">
                   <div className="flex flex-wrap items-center justify-between gap-2 border-b border-slate-800 pb-3">
@@ -931,7 +931,7 @@ export default function ChequeBounceReturnReasonsPage() {
                   id="heading-evidence-checklist-title"
                   className="text-xl sm:text-2xl font-bold text-slate-900 tracking-tight"
                 >
-                  Dishonoured Cheque Evidence Checklist: 6 Critical Documents for Section 138 Notice
+                  Evidence Checklist: 6 Critical Records for Section 138 Notice
                 </h2>
                 <p className="text-xs sm:text-sm text-slate-700 leading-relaxed">
                   Under the Negotiable Instruments Act and Section 63 of the Bharatiya Sakshya Adhiniyam, 2023 (BSA), maintaining clean documentary evidence guarantees early settlement and eliminates frivolous defenses:
@@ -995,7 +995,7 @@ export default function ChequeBounceReturnReasonsPage() {
                     id="heading-faqs-title"
                     className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight"
                   >
-                    Frequently Asked Questions: Cheque Bounce Return Reasons &amp; Section 138 NI Act
+                    FAQs on Cheque Bounce Return Reasons and Section 138 NI Act
                   </h2>
                   <p className="text-xs font-semibold text-slate-500 mt-1">
                     Authoritative Legal Clarifications Grounded in Supreme Court Precedents and the Negotiable Instruments Act
@@ -1028,7 +1028,7 @@ export default function ChequeBounceReturnReasonsPage() {
                   id="heading-sources-title"
                   className="text-lg sm:text-xl font-bold text-slate-900 tracking-tight"
                 >
-                  Primary Statutory Authorities &amp; Landmark Supreme Court Cheque Bounce Judgments
+                  Statutory Provisions and Landmark Supreme Court Cheque Rulings
                 </h2>
                 <ol className="sources list-decimal list-inside space-y-2 text-xs sm:text-sm text-slate-600">
                   {PRIMARY_SOURCES.map((source, idx) => (

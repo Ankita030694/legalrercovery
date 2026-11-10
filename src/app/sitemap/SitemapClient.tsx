@@ -53,6 +53,7 @@ export default function SitemapClient() {
           <h1 className="text-2xl sm:text-3xl lg:text-4xl font-extrabold tracking-tight text-[#0F172A] mb-3">
             All LegalRecovery Pages, Notice Portals &amp; State Guides
           </h1>
+          <h2 className="sr-only">Directory Index of Recovery Guides and Notices</h2>
           <p className="text-gray-500 text-sm sm:text-base max-w-4xl leading-relaxed">
             Each card links straight to a statutory legal notice, debt recovery portal, city directory, or guide. Click any card to open the page.
           </p>
@@ -133,9 +134,9 @@ export default function SitemapClient() {
                   </div>
 
                   {/* Middle: Page Title */}
-                  <h2 className="font-bold text-gray-900 group-hover:text-[#DC2626] transition-colors text-[14.5px] sm:text-[15px] leading-snug my-3 line-clamp-3">
+                  <p className="font-bold text-gray-900 group-hover:text-[#DC2626] transition-colors text-[14.5px] sm:text-[15px] leading-snug my-3 line-clamp-3">
                     {item.title}
-                  </h2>
+                  </p>
                 </div>
 
                 {/* Bottom Row: Read Page on left, Date on right */}

@@ -154,7 +154,7 @@ const FAQS = [
 const ARTICLE_SCHEMA = {
   "@context": "https://schema.org",
   "@type": "Article",
-  headline: "Visa or Immigration Consultant Didn't Deliver? How to Recover Your Fees",
+  headline: "Visa or Immigration Consultant Didn't Deliver? Recover Your Fees",
   description:
     "Visa agent took fees but delivered nothing? Civil recovery, consumer complaint and when a police complaint under the BNS applies.",
   datePublished: "2026-11-03T15:00:00+05:30",
@@ -263,7 +263,7 @@ export default function VisaAgentFraudRefundPage() {
             </div>
 
             <h1 className="text-2xl sm:text-3xl md:text-5xl font-black tracking-tight text-white leading-tight mb-4 sm:mb-6 break-words">
-              Visa or Immigration Consultant Didn&apos;t Deliver? How to Recover Your Fees
+              Visa or Immigration Consultant Didn&apos;t Deliver? Recover Your Fees
             </h1>
 
             {/* Answer Box First: 40-60 Words Directly Under H1 */}
@@ -320,7 +320,7 @@ export default function VisaAgentFraudRefundPage() {
                   id="heading-legal-basis-title"
                   className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight"
                 >
-                  When Can You Legally Demand a 100% Refund From a Visa or Immigration Agent?
+                  When Can You Demand a Full Visa Agent Fee Refund?
                 </h2>
                 <p className="text-sm sm:text-base text-slate-700 leading-relaxed">
                   Every year, tens of thousands of Indian students, working professionals, and families pay substantial sums—ranging from ₹50,000 for study visa packaging to upwards of ₹10,00,000 for permanent residency or overseas work permits—to private immigration consultancies. When the promised visa never materialises, the college admission falls through, or the foreign consulate rejects the file, agents routinely shut down communication or wave a fine-print clause declaring all fees strictly &quot;non-refundable&quot;.
@@ -340,7 +340,7 @@ export default function VisaAgentFraudRefundPage() {
                     id="heading-order-digest-title"
                     className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight"
                   >
-                    Verifiable Case Digest: 4 Landmark Judicial Orders Against Immigration Agents
+                    4 Landmark Judicial Orders Against Visa Agents
                   </h2>
                   <span className="text-xs font-bold text-slate-500 uppercase tracking-wider">
                     Binding Judicial Precedents
@@ -417,7 +417,7 @@ export default function VisaAgentFraudRefundPage() {
                   id="heading-pattern-analysis-title"
                   className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight"
                 >
-                  Pattern Analysis: What Wins Visa Fee Recovery Disputes Before Consumer Commissions
+                  What Wins Visa Fee Recovery Disputes in Court
                 </h2>
                 <p className="text-sm sm:text-base text-slate-700 leading-relaxed">
                   A forensic analysis of over 50 consumer commission verdicts and High Court criminal petitions against defaulting immigration agents reveals distinct patterns. When complainants maintain a meticulous documentary audit trail, consumer courts summarily dismiss the consultant&apos;s boilerplate contractual defenses:
@@ -492,7 +492,7 @@ export default function VisaAgentFraudRefundPage() {
                   id="heading-dual-track-title"
                   className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight"
                 >
-                  The Dual Legal Track: When to File an e-Jagriti Consumer Case vs a BNS 318 Police FIR
+                  Dual Track: e-Jagriti Consumer Case vs Police FIR
                 </h2>
                 <p className="text-sm sm:text-base text-slate-700 leading-relaxed">
                   Disputes with visa consultants fall into two distinct legal categories: civil service deficiency and criminal fraud. Understanding this boundary dictates the fastest strategy to recover your money:
@@ -547,7 +547,7 @@ export default function VisaAgentFraudRefundPage() {
                   id="heading-escalation-flow-title"
                   className="text-xl sm:text-2xl font-bold text-slate-900 tracking-tight"
                 >
-                  Visa Dispute Escalation Architecture: From WhatsApp Audit Trail to Asset Recovery
+                  Visa Dispute Escalation: Audit Trail to Recovery
                 </h2>
                 <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
                   Follow this structured statutory escalation path to enforce your consumer rights, bypass consultant delay tactics, and secure complete fee restitution:
@@ -672,7 +672,7 @@ export default function VisaAgentFraudRefundPage() {
                   id="heading-playbook-title"
                   className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight"
                 >
-                  The 5-Stage Visa Fee Recovery Playbook: Notice, e-Migrate Escalation, and Attachment
+                  5-Stage Visa Fee Recovery Playbook: Notice to Action
                 </h2>
                 <p className="text-sm sm:text-base text-slate-700 leading-relaxed">
                   Derived from established consumer litigation strategies and High Court criminal precedents, this 5-stage playbook neutralises consultant deflection and enforces your financial rights:
@@ -760,7 +760,7 @@ export default function VisaAgentFraudRefundPage() {
                   id="heading-deadlines-table-title"
                   className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight"
                 >
-                  Statutory Refund &amp; Limitation Matrix: Study Permits, Work Visas, and PR Retainers
+                  Refund &amp; Limitation Matrix for Visa Retainers
                 </h2>
                 <p className="text-sm sm:text-base text-slate-700 leading-relaxed">
                   Indian consumer protection jurisprudence and criminal laws establish concrete statutory thresholds for refund eligibility across different visa categories:
@@ -844,7 +844,7 @@ export default function VisaAgentFraudRefundPage() {
                     id="heading-problem-picker-title"
                     className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight"
                   >
-                    Visa Dispute Diagnostic Tool: Root Causes &amp; Strategic Legal Antidotes
+                    Visa Dispute Diagnostic: Root Causes &amp; Remedies
                   </h2>
                   <p className="text-xs font-semibold text-slate-500 mt-1">
                     Select Your Specific Dispute Scenario to Unlock the Statutory Framework and Step-by-Step Enforcement Strategy
@@ -860,7 +860,7 @@ export default function VisaAgentFraudRefundPage() {
                   id="heading-worked-example-title"
                   className="text-xl sm:text-2xl font-bold text-slate-900 tracking-tight"
                 >
-                  Worked Recovery Study: How a Candidate Recovered ₹3,85,000 for a Bogus Canada Work Permit
+                  Case Study: Recovers ₹3,85,000 for Bogus Work Permit
                 </h2>
                 <div className="bg-slate-900 text-white rounded-2xl p-5 sm:p-8 shadow-xl space-y-4 sm:space-y-5 w-full overflow-hidden">
                   <div className="flex flex-wrap items-center justify-between gap-2 border-b border-slate-800 pb-3">
@@ -894,7 +894,7 @@ export default function VisaAgentFraudRefundPage() {
                   id="heading-evidence-checklist-title"
                   className="text-xl sm:text-2xl font-bold text-slate-900 tracking-tight"
                 >
-                  Document &amp; Evidence Matrix: 7 Crucial Records Required Under Section 63 BSA
+                  Evidence Matrix: 7 Records Under Section 63 BSA
                 </h2>
                 <p className="text-xs sm:text-sm text-slate-700 leading-relaxed">
                   Under Section 63 of the Bharatiya Sakshya Adhiniyam, 2023 (BSA), electronic communications and digital banking records are fully admissible in consumer courts. Assemble these 7 critical evidentiary records before serving your legal notice:
@@ -987,7 +987,7 @@ export default function VisaAgentFraudRefundPage() {
                     id="heading-faqs-title"
                     className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight"
                   >
-                    Frequently Asked Questions About Visa Consultant Fraud &amp; Fee Recovery
+                    FAQs: Visa Consultant Fraud &amp; Fee Recovery
                   </h2>
                   <p className="text-xs font-semibold text-slate-500 mt-1">
                     Authoritative Legal Answers Grounded in the Consumer Protection Act, BNS 2023, and Binding Judicial Rulings
@@ -1020,7 +1020,7 @@ export default function VisaAgentFraudRefundPage() {
                   id="heading-sources-title"
                   className="text-lg sm:text-xl font-bold text-slate-900 tracking-tight"
                 >
-                  Primary Statutes, Regulatory Gazette Notifications &amp; Government Portals
+                  Primary Statutes &amp; Government Regulatory Portals
                 </h2>
                 <ol className="sources list-decimal list-inside space-y-2 text-xs sm:text-sm text-slate-600">
                   {PRIMARY_SOURCES.map((source, idx) => (

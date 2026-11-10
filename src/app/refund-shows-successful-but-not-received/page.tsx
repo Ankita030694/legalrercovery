@@ -300,7 +300,7 @@ export default function RefundShowsSuccessfulPage() {
           {/* Decision Tree Section (Archetype G1 Centerpiece) */}
           <section aria-labelledby="decision-tree-heading" className="my-10">
             <h2 id="decision-tree-heading" className="text-2xl font-bold tracking-tight text-slate-900 sm:text-3xl">
-              The Refund Tracing Decision Tree: Which Route Should You Take Based on Reference Status?
+              Refund Tracing Decision Tree: Selecting Your Resolution Route
             </h2>
             <p className="mt-2 text-base text-slate-600">
               When a merchant asserts a refund has processed while your account statement registers zero credit, you face three distinct structural failure points. Use this flowchart and decision tree to pinpoint the exact failure point between the merchant platform, the payment aggregator switch, and your bank&apos;s core banking ledger:
@@ -446,7 +446,7 @@ export default function RefundShowsSuccessfulPage() {
           {/* Section: Why does this happen */}
           <section aria-labelledby="why-stuck-heading" className="my-10">
             <h2 id="why-stuck-heading" className="text-2xl font-bold tracking-tight text-slate-900 sm:text-3xl">
-              Why Does the App Show &apos;Refund Successful&apos; While Your Bank Account Shows Nothing?
+              Why Does the App Show Refund Successful When No Money Arrived?
             </h2>
             <p className="mt-3 text-base leading-relaxed text-slate-700">
               When an e-commerce platform displays a green checkmark indicating a refund is completed, it reflects the internal execution of an automated API callback, not the physical delivery of money into your bank ledger. Between the merchant&apos;s database and your personal savings account lies a four-tier settlement pipe comprising the acquiring bank, payment gateway switch, clearing network, and issuer Core Banking System (CBS).
@@ -543,7 +543,7 @@ export default function RefundShowsSuccessfulPage() {
               </div>
 
               <h2 id="route-1-heading" className="mt-3 text-2xl font-bold tracking-tight text-slate-900 sm:text-3xl">
-                Route 1: When the App Provides a Valid UTR or ARN but Your Bank Has Not Credited Your Ledger
+                Route 1: App Shows Valid UTR or ARN but Bank Account Not Credited
               </h2>
 
               <p className="mt-3 text-base leading-relaxed text-slate-700">
@@ -600,7 +600,7 @@ export default function RefundShowsSuccessfulPage() {
               </div>
 
               <h2 id="route-2-heading" className="mt-3 text-2xl font-bold tracking-tight text-slate-900 sm:text-3xl">
-                Route 2: When the Merchant Gives an Invalid, Unsearchable, or Blank Reference ID
+                Route 2: Merchant Gives Invalid or Blank Refund Reference ID
               </h2>
 
               <p className="mt-3 text-base leading-relaxed text-slate-700">
@@ -638,7 +638,7 @@ export default function RefundShowsSuccessfulPage() {
               </div>
 
               <h2 id="route-3-heading" className="mt-3 text-2xl font-bold tracking-tight text-slate-900 sm:text-3xl">
-                Route 3: When the Payment Gateway Holds Funds in an Unreconciled Escrow or Nodal Account
+                Route 3: Payment Gateway Holds Funds in Unreconciled Escrow
               </h2>
 
               <p className="mt-3 text-base leading-relaxed text-slate-700">
@@ -679,7 +679,7 @@ export default function RefundShowsSuccessfulPage() {
           {/* Illustrative Worked Example */}
           <section aria-labelledby="worked-example-heading" className="my-10">
             <h2 id="worked-example-heading" className="text-2xl font-bold tracking-tight text-slate-900 sm:text-3xl">
-              Illustrative Tracing Scenario: Resolving a ₹14,999 UPI Refund Stuck in Bank Suspense
+              Tracing Scenario: Resolving a UPI Refund Stuck in Bank Suspense
             </h2>
             <p className="mt-2 text-base text-slate-600">
               The following case study illustrates the operational timeline, banking ledger bottlenecks, and legal resolution mechanics for an uncredited e-commerce refund:
@@ -729,7 +729,7 @@ export default function RefundShowsSuccessfulPage() {
           {/* Section: Evidence Preservation under Section 63 BSA */}
           <section aria-labelledby="evidence-heading" className="my-10">
             <h2 id="evidence-heading" className="text-2xl font-bold tracking-tight text-slate-900 sm:text-3xl">
-              What Digital Evidence Must You Preserve Under Section 63 BSA to Prove Non-Receipt?
+              Digital Evidence to Preserve Under Section 63 BSA for Non-Receipt
             </h2>
             <p className="mt-3 text-base leading-relaxed text-slate-700">
               Under Section 63 of the Bharatiya Sakshya Adhiniyam, 2023 (BSA, which superseded Section 65B of the Indian Evidence Act), electronic records are admissible in judicial proceedings provided you maintain digital chain of custody. When escalating an uncredited refund dispute before a Grievance Officer, the Banking Ombudsman, or a Consumer Commission, you must preserve the following six verifiable evidentiary assets:
@@ -801,7 +801,7 @@ export default function RefundShowsSuccessfulPage() {
           {/* Section: Verified Consumer Court Precedents */}
           <section aria-labelledby="case-law-heading" className="my-10">
             <h2 id="case-law-heading" className="text-2xl font-bold tracking-tight text-slate-900 sm:text-3xl">
-              What Have Consumer Commissions Ordered Banks & Marketplaces to Pay for Stuck Refunds?
+              Consumer Orders Against Banks and Marketplaces for Stuck Refunds
             </h2>
             <p className="mt-3 text-base leading-relaxed text-slate-700">
               Consumer commissions routinely reject corporate attempts to deflect blame between gateways, merchants, and issuing banks. When a customer proves that a refund was debited or promised but never credited to their account, tribunals award full refunds alongside statutory interest and compensation for mental agony:
@@ -920,7 +920,7 @@ export default function RefundShowsSuccessfulPage() {
           {/* FAQ Accordion Section */}
           <section id="faq" aria-labelledby="faq-heading" className="my-12">
             <h2 id="faq-heading" className="text-2xl font-bold tracking-tight text-slate-900 sm:text-3xl">
-              Frequently Asked Questions About Stuck Refunds, UTR/ARN Tracing & Escalation
+              FAQs on Stuck Refunds, UTR or ARN Tracing and Escalation
             </h2>
             <p className="mt-2 text-base text-slate-600">
               Clear, legally verified answers to the most common questions regarding missing online transaction credits:
@@ -947,7 +947,7 @@ export default function RefundShowsSuccessfulPage() {
           <section aria-labelledby="sources-heading" className="my-10">
             <div className="rounded-xl border border-slate-200 bg-white p-5 shadow-sm">
               <h2 id="sources-heading" className="text-base font-bold text-slate-900">
-                Statutory Framework & Primary Legal Authorities Governing Payment Reversals
+                Statutory Framework Governing Failed Payment Reversals
               </h2>
               <p className="mt-1 text-xs text-slate-500">
                 All legal provisions, deadlines, and rights outlined on this page are grounded in primary gazetted statutes and official circulars:

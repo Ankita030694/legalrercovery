@@ -313,7 +313,7 @@ export default function CoachingRefundGuidelinesPage() {
                   id="heading-overview-title"
                   className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight"
                 >
-                  Statutory Overview: The Ministry of Education&apos;s Landmark 2024 Coaching Guidelines
+                  Overview: Ministry of Education 2024 Coaching Guidelines
                 </h2>
                 <p className="text-sm sm:text-base text-slate-700 leading-relaxed">
                   For decades, private coaching centres preparing students for engineering (JEE), medical (NEET), civil services (UPSC), and secondary board examinations operated in an unregulated grey market across Indian cities like Kota, Delhi, Sikar, Hyderabad, and Bengaluru. Institutes routinely extracted non-refundable multi-year course fees—often ranging between ₹1,50,000 and ₹4,00,000—before a student had even attended a single lecture. When students encountered burnout, substandard instruction, or severe mental stress, institutes summarily pointed to boilerplate &quot;fees once paid are strictly non-refundable&quot; clauses.
@@ -333,7 +333,7 @@ export default function CoachingRefundGuidelinesPage() {
                     id="heading-before-after-title"
                     className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight"
                   >
-                    Before vs. After Comparison: How the 2024 Guidelines Rewrote Coaching Refund Rights
+                    Before vs After: 2024 Coaching Refund Guidelines
                   </h2>
                   <span className="text-xs font-bold text-slate-500 uppercase tracking-wider">
                     Statutory Contrast Analysis
@@ -395,7 +395,7 @@ export default function CoachingRefundGuidelinesPage() {
                   id="heading-timeline-title"
                   className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight"
                 >
-                  Chronological Evolution: How India&apos;s Coaching Refund Protections Became Law
+                  Evolution of Coaching Centre Refund Protections in India
                 </h2>
                 <p className="text-sm sm:text-base text-slate-700 leading-relaxed">
                   The transformation from unchecked institutional dominance to enforceable student consumer rights occurred through a progressive chain of judicial rulings, consumer authority interventions, and parliamentary notifications:
@@ -592,7 +592,7 @@ export default function CoachingRefundGuidelinesPage() {
                     id="heading-problem-picker-title"
                     className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight"
                   >
-                    Scenario Drilldown: How Coaching Centres Attempt to Withhold Refunds &amp; How to Counter Them
+                    How Coaching Centres Withhold Refunds &amp; How to Counter
                   </h2>
                   <span className="text-xs font-bold text-slate-500 uppercase tracking-wider">
                     Interactive Dispute Navigator
@@ -613,7 +613,7 @@ export default function CoachingRefundGuidelinesPage() {
                     id="heading-grey-areas-title"
                     className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight"
                   >
-                    Regulatory Grey Areas and Open Legal Questions in Coaching Guidelines Enforcement
+                    Regulatory Grey Areas in Coaching Guidelines Enforcement
                   </h2>
                   <span className="text-xs font-bold text-amber-600 uppercase tracking-wider">
                     Statutory Analysis &amp; † Flags
@@ -748,7 +748,7 @@ export default function CoachingRefundGuidelinesPage() {
                     id="heading-worked-example-title"
                     className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight"
                   >
-                    Illustrative Worked Scenario: Recovering ₹1,75,000 for a Mid-Course JEE Withdrawal in Kota
+                    Case Study: Recovers ₹1,75,000 for JEE Course Withdrawal
                   </h2>
                   <span className="text-xs font-bold text-slate-500 uppercase tracking-wider">
                     Concrete Financial Illustration
@@ -837,7 +837,7 @@ export default function CoachingRefundGuidelinesPage() {
                     id="heading-court-orders-title"
                     className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight"
                   >
-                    Judicial Precedents: Landmark Court and Commission Orders on Coaching Fee Refunds
+                    Judicial Precedents: Orders on Coaching Fee Refunds
                   </h2>
                   <span className="text-xs font-bold text-slate-500 uppercase tracking-wider">
                     Verified Case Digest
@@ -890,7 +890,7 @@ export default function CoachingRefundGuidelinesPage() {
                     id="heading-evidence-checklist-title"
                     className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight"
                   >
-                    Evidence Checklist: Crucial Documents for Your Coaching Fee Recovery Dossier
+                    Evidence Checklist for Coaching Fee Recovery Dossier
                   </h2>
                   <span className="text-xs font-bold text-slate-500 uppercase tracking-wider">
                     BSA Section 63 Admissibility
@@ -1052,7 +1052,7 @@ export default function CoachingRefundGuidelinesPage() {
                     id="heading-sources-title"
                     className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight"
                   >
-                    Primary Legal Sources, Gazette Notifications, and Regulatory References
+                    Primary Legal Sources &amp; Coaching Gazette Notifications
                   </h2>
                   <span className="text-xs font-bold text-slate-500 uppercase tracking-wider">
                     Official Citations

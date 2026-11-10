@@ -326,7 +326,7 @@ export default function LabourCommissionerSalaryPage() {
                   id="heading-overview-title"
                   className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight"
                 >
-                  Statutory Rights &amp; Regulatory Jurisdiction: Why Employers Cannot Withhold Your Wages
+                  Statutory Rights: Why Employers Cannot Withhold Wages
                 </h2>
                 <p className="text-sm sm:text-base text-slate-700 leading-relaxed">
                   Every year, thousands of employees in India find their monthly salaries delayed, incentives forfeited, or Full and Final (FnF) settlements withheld for months under the pretext of &quot;internal audits&quot;, &quot;client payment delays&quot;, or &quot;mandatory 45-day exit clearances&quot;. When professionals protest, HR departments frequently threaten adverse background verification (BGV) remarks, withholding relieving letters, or demanding arbitrary notice-period buyouts.
@@ -346,7 +346,7 @@ export default function LabourCommissionerSalaryPage() {
                     id="heading-order-digest-title"
                     className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight"
                   >
-                    Landmark Judicial Precedents: 4 Authoritative Rulings on Unpaid Salary &amp; FnF Recovery
+                    4 Landmark Precedents on Salary &amp; FnF Recovery
                   </h2>
                   <span className="text-xs font-bold text-slate-500 uppercase tracking-wider">
                     Verifiable Court Precedents
@@ -423,7 +423,7 @@ export default function LabourCommissionerSalaryPage() {
                   id="heading-pattern-analysis-title"
                   className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight"
                 >
-                  Pattern Analysis: 5 Evidentiary Pillars That Win Salary Claims Before the Labour Commissioner
+                  5 Pillars That Win Salary Claims Before Labour Dept
                 </h2>
                 <p className="text-sm sm:text-base text-slate-700 leading-relaxed">
                   An in-depth analysis of conciliation proceedings and Labour Court recovery orders reveals distinct procedural patterns. Claimants who systematically preserve an objective paper trail consistently defeat corporate evasion:
@@ -498,7 +498,7 @@ export default function LabourCommissionerSalaryPage() {
                   id="heading-escalation-flow-title"
                   className="text-xl sm:text-2xl font-bold text-slate-900 tracking-tight"
                 >
-                  Statutory Escalation Pathway: From Salary Default to Bank Account Recovery
+                  Escalation Pathway: Salary Default to Bank Recovery
                 </h2>
                 <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
                   Follow this verified statutory escalation sequence to overcome HR stalling, trigger regulatory conciliation, and enforce financial recovery:
@@ -623,7 +623,7 @@ export default function LabourCommissionerSalaryPage() {
                   id="heading-playbook-title"
                   className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight"
                 >
-                  The 5-Step Escalation Playbook: How to File and Enforce a Labour Department Salary Complaint
+                  5-Step Playbook: Labour Department Salary Complaint
                 </h2>
                 <p className="text-sm sm:text-base text-slate-700 leading-relaxed">
                   Engineered from hundreds of successful wage recovery proceedings, this 5-step playbook bypasses HR automated stalling and forces company management to disburse your funds:
@@ -708,7 +708,7 @@ export default function LabourCommissionerSalaryPage() {
                   id="heading-deadlines-table-title"
                   className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight"
                 >
-                  Statutory Deadlines, Governing Statutes &amp; State Labour Helpline Directory
+                  Statutory Deadlines &amp; Labour Helpline Directory
                 </h2>
                 <p className="text-sm sm:text-base text-slate-700 leading-relaxed">
                   Turnaround times and recovery benchmarks established under Indian labour laws. Employers cannot impose arbitrary exit policies that infringe upon these statutory timeframes:
@@ -789,7 +789,7 @@ export default function LabourCommissionerSalaryPage() {
                     id="heading-state-portals-title"
                     className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight"
                   >
-                    State-Wise Labour Portal Selector: Who Can File, Exact URLs &amp; Local Jurisdiction
+                    State-Wise Labour Portals, URLs &amp; Jurisdiction
                   </h2>
                   <p className="text-xs font-semibold text-slate-500 mt-1">
                     Select Your Work State to Unlock the Official Grievance Portal, Local Authority Powers, and Submission Steps
@@ -805,7 +805,7 @@ export default function LabourCommissionerSalaryPage() {
                   id="heading-worked-example-title"
                   className="text-xl sm:text-2xl font-bold text-slate-900 tracking-tight"
                 >
-                  Worked Case Study: Software Engineer Recovers ₹3,40,000 FnF Dues via Labour Commissioner
+                  Case Study: Recovers ₹3,40,000 FnF via Labour Dept
                 </h2>
                 <div className="bg-slate-900 text-white rounded-2xl p-5 sm:p-8 shadow-xl space-y-4 sm:space-y-5 w-full overflow-hidden">
                   <div className="flex flex-wrap items-center justify-between gap-2 border-b border-slate-800 pb-3">
@@ -839,7 +839,7 @@ export default function LabourCommissionerSalaryPage() {
                   id="heading-evidence-checklist-title"
                   className="text-xl sm:text-2xl font-bold text-slate-900 tracking-tight"
                 >
-                  Document Checklist: 6 Critical Evidentiary Records for Your Labour Department Docket
+                  Evidence Checklist: 6 Records for Labour Docket
                 </h2>
                 <p className="text-xs sm:text-sm text-slate-700 leading-relaxed">
                   Under Section 63 of the Bharatiya Sakshya Adhiniyam, 2023, electronic communications and digital records are fully admissible in conciliation proceedings and Labour Courts. Assemble these 6 documents before filing:
@@ -903,7 +903,7 @@ export default function LabourCommissionerSalaryPage() {
                     id="heading-faqs-title"
                     className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight"
                   >
-                    Frequently Asked Questions About Online Labour Commissioner Salary Complaints
+                    FAQs: Online Labour Department Salary Complaints
                   </h2>
                   <p className="text-xs font-semibold text-slate-500 mt-1">
                     Direct, Authoritative Legal Answers Grounded in the Code on Wages 2019 and Judicial Precedents
@@ -936,7 +936,7 @@ export default function LabourCommissionerSalaryPage() {
                   id="heading-sources-title"
                   className="text-lg sm:text-xl font-bold text-slate-900 tracking-tight"
                 >
-                  Statutory Authorities, Primary Labour Enactments &amp; Official Portals
+                  Primary Labour Statutes &amp; Official Portals
                 </h2>
                 <ol className="sources list-decimal list-inside space-y-2 text-xs sm:text-sm text-slate-600">
                   {PRIMARY_SOURCES.map((source, idx) => (

@@ -322,7 +322,7 @@ export default function RooftopSolarInstallerRefundPage() {
                   id="overview-title"
                   className="text-xl sm:text-2xl md:text-3xl font-black text-slate-900 tracking-tight mb-4"
                 >
-                  Solar Installer Not Installing: Why Property Owners Have Absolute Refund Rights
+                  Solar Installer Defaults: Absolute Refund Rights
                 </h2>
                 <p className="text-sm sm:text-base text-slate-700 mb-4">
                   The rapid expansion of residential and commercial rooftop solar installations in India—propelled by the central government’s <strong>PM Surya Ghar: Muft Bijli Yojana</strong> and attractive state net-metering tariffs—has led to a surge of fly-by-night solar contractors, aggressive sales intermediaries, and undercapitalized EPC entities. A frequent pattern has emerged across Tier-1 and Tier-2 Indian cities: sales agents collect 30% to 80% upfront advances under the promise of <em>&quot;100% free electricity within 15 days&quot;</em>, only to disappear, withhold hardware, or stall the technical net-metering approvals required by state power distribution companies (DISCOMs).
@@ -773,7 +773,7 @@ export default function RooftopSolarInstallerRefundPage() {
                   id="worked-example-title"
                   className="text-xl sm:text-2xl md:text-3xl font-black text-slate-900 tracking-tight mb-4"
                 >
-                  Worked Case Example: ₹1,40,000 Advance Recovery on a 5 kW Solar Project
+                  Case Study: ₹1,40,000 Advance Recovery on Solar Project
                 </h2>
                 <p className="text-sm sm:text-base text-slate-700 mb-4">
                   To illustrate how statutory interest, lost solar generation damages, and compensation are calculated before the Consumer Court, consider this representative case study:
@@ -961,7 +961,7 @@ export default function RooftopSolarInstallerRefundPage() {
                   id="faqs-title"
                   className="text-xl sm:text-2xl md:text-3xl font-black text-slate-900 tracking-tight mb-4"
                 >
-                  Frequently Asked Questions About Solar Installer Defaults &amp; Advance Refunds
+                  FAQs: Solar Installer Defaults &amp; Advance Refunds
                 </h2>
                 <p className="text-sm sm:text-base text-slate-700 mb-6">
                   Clear, authoritative answers citing applicable Indian consumer, energy, and contract laws:

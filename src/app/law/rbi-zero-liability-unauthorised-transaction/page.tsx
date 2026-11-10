@@ -348,7 +348,7 @@ export default function RbiZeroLiabilityUnauthorisedTransactionPage() {
                   id="heading-zero-liability-rule-title"
                   className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight"
                 >
-                  1. When Does a Bank Customer Have 100% Zero Liability for an Unauthorised Transaction?
+                  1. Zero Liability for Unauthorised Bank Transactions
                 </h2>
                 <div className="p-4 rounded-xl bg-white border-l-4 border-[#DC2626] border border-slate-200 shadow-xs">
                   <p className="text-xs sm:text-sm md:text-base text-slate-800 font-semibold leading-relaxed">
@@ -369,7 +369,7 @@ export default function RbiZeroLiabilityUnauthorisedTransactionPage() {
                   id="heading-limited-liability-window-title"
                   className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight"
                 >
-                  2. What Is Your Limited Liability If You Report Between 4 and 7 Working Days?
+                  2. Limited Liability If Reported Between 4 to 7 Days
                 </h2>
                 <div className="p-4 rounded-xl bg-white border-l-4 border-[#DC2626] border border-slate-200 shadow-xs">
                   <p className="text-xs sm:text-sm md:text-base text-slate-800 font-semibold leading-relaxed">
@@ -390,7 +390,7 @@ export default function RbiZeroLiabilityUnauthorisedTransactionPage() {
                   id="heading-shadow-reversal-10-days-title"
                   className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight"
                 >
-                  3. Within How Many Working Days Should Shadow Reversal Be Credited by the Bank?
+                  3. Shadow Reversal Timelines for Unauthorised Debits
                 </h2>
                 <div className="p-4 rounded-xl bg-white border-l-4 border-[#DC2626] border border-slate-200 shadow-xs">
                   <p className="text-xs sm:text-sm md:text-base text-slate-800 font-semibold leading-relaxed">
@@ -422,7 +422,7 @@ export default function RbiZeroLiabilityUnauthorisedTransactionPage() {
                   id="heading-burden-of-proof-title"
                   className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight"
                 >
-                  4. Who Bears the Burden of Proof in an Unauthorised Electronic Transaction Dispute?
+                  4. Burden of Proof in Electronic Transaction Disputes
                 </h2>
                 <div className="p-4 rounded-xl bg-white border-l-4 border-[#DC2626] border border-slate-200 shadow-xs">
                   <p className="text-xs sm:text-sm md:text-base text-slate-800 font-semibold leading-relaxed">
@@ -446,7 +446,7 @@ export default function RbiZeroLiabilityUnauthorisedTransactionPage() {
                   id="heading-customer-negligence-cutoff-title"
                   className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight"
                 >
-                  5. What If You Were Tricked Into Sharing an OTP—Who Bears Losses After You Notify the Bank?
+                  5. Tricked Into Sharing OTP: Liability After Notice
                 </h2>
                 <div className="p-4 rounded-xl bg-white border-l-4 border-[#DC2626] border border-slate-200 shadow-xs">
                   <p className="text-xs sm:text-sm md:text-base text-slate-800 font-semibold leading-relaxed">
@@ -467,7 +467,7 @@ export default function RbiZeroLiabilityUnauthorisedTransactionPage() {
                   id="heading-90-day-resolution-rule-title"
                   className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight"
                 >
-                  6. What Happens If the Bank Fails to Resolve Your Complaint Within 90 Days?
+                  6. What Happens If Bank Fails to Resolve in 90 Days?
                 </h2>
                 <div className="p-4 rounded-xl bg-white border-l-4 border-[#DC2626] border border-slate-200 shadow-xs">
                   <p className="text-xs sm:text-sm md:text-base text-slate-800 font-semibold leading-relaxed">
@@ -485,7 +485,7 @@ export default function RbiZeroLiabilityUnauthorisedTransactionPage() {
                   id="heading-upi-credit-card-wallets-title"
                   className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight"
                 >
-                  7. Does the RBI Zero Liability Circular Cover UPI, Credit Cards, and Prepaid Wallets (PPIs)?
+                  7. Coverage for UPI, Credit Cards &amp; Prepaid Wallets
                 </h2>
                 <div className="p-4 rounded-xl bg-white border-l-4 border-[#DC2626] border border-slate-200 shadow-xs">
                   <p className="text-xs sm:text-sm md:text-base text-slate-800 font-semibold leading-relaxed">
@@ -503,7 +503,7 @@ export default function RbiZeroLiabilityUnauthorisedTransactionPage() {
                   id="heading-sbi-supreme-court-ruling-title"
                   className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight"
                 >
-                  8. Why Did the Supreme Court Rule That State Bank of India Must Refund Unauthorized Withdrawals?
+                  8. Supreme Court Rulings on Unauthorized Withdrawals
                 </h2>
                 <div className="p-4 rounded-xl bg-white border-l-4 border-[#DC2626] border border-slate-200 shadow-xs">
                   <p className="text-xs sm:text-sm md:text-base text-slate-800 font-semibold leading-relaxed">
@@ -521,7 +521,7 @@ export default function RbiZeroLiabilityUnauthorisedTransactionPage() {
                   id="heading-sms-alerts-reporting-title"
                   className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight"
                 >
-                  9. What Duties Does Paragraph 5 Impose on Banks Regarding SMS Alerts and Loss Reporting?
+                  9. Bank Duties Regarding SMS Alerts &amp; Loss Reporting
                 </h2>
                 <div className="p-4 rounded-xl bg-white border-l-4 border-[#DC2626] border border-slate-200 shadow-xs">
                   <p className="text-xs sm:text-sm md:text-base text-slate-800 font-semibold leading-relaxed">
@@ -539,7 +539,7 @@ export default function RbiZeroLiabilityUnauthorisedTransactionPage() {
                   id="heading-2027-revised-framework-title"
                   className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight"
                 >
-                  10. How Does the 1 January 2027 RBI Revised Framework Change Fraud Compensation? (†)
+                  10. RBI 2027 Revised Fraud Framework &amp; Rules (†)
                 </h2>
                 <div className="p-4 rounded-xl bg-white border-l-4 border-[#DC2626] border border-slate-200 shadow-xs">
                   <p className="text-xs sm:text-sm md:text-base text-slate-800 font-semibold leading-relaxed">
@@ -557,7 +557,7 @@ export default function RbiZeroLiabilityUnauthorisedTransactionPage() {
                   id="heading-eligibility-checker-title"
                   className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight"
                 >
-                  11. RBI Zero &amp; Limited Liability Eligibility Checker (Static Yes/No + Interactive Calculator)
+                  11. RBI Zero &amp; Limited Liability Eligibility Checker
                 </h2>
                 <p className="text-xs sm:text-sm text-slate-700 leading-relaxed">
                   Verify the 5-point statutory Yes/No rulebook checklist below or use the interactive calculator to determine your exact refund entitlement under RBI Circular DBR.No.Leg.BC.78/09.07.005/2017-18:
@@ -622,7 +622,7 @@ export default function RbiZeroLiabilityUnauthorisedTransactionPage() {
                   id="heading-liability-tables-title"
                   className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight"
                 >
-                  12. Official RBI Customer Liability Tables (Table 1, Table 2 &amp; 2017 vs. 2027 Framework)
+                  12. Official RBI Customer Liability Tables
                 </h2>
                 <p className="text-sm sm:text-base text-slate-700 leading-relaxed">
                   Below are the exact statutory liability slabs reproduced from Paragraph 7 of RBI Circular <strong>DBR.No.Leg.BC.78/09.07.005/2017-18</strong> alongside a side-by-side comparison with the upcoming <strong>1 January 2027 Revised Framework†</strong>:
@@ -719,7 +719,7 @@ export default function RbiZeroLiabilityUnauthorisedTransactionPage() {
                   id="heading-escalation-flow-title"
                   className="text-xl sm:text-2xl font-bold text-slate-900 tracking-tight"
                 >
-                  13. Statutory Escalation Flowchart: From Unauthorised Debit to 10-Day Shadow Credit &amp; Ombudsman Award
+                  13. Escalation Flowchart: Unauthorised Debit to Credit
                 </h2>
                 <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
                   Follow this 5-stage statutory escalation rail to lock in your 3-working-day Zero Liability timestamp and force your bank to release your refund:
@@ -842,7 +842,7 @@ export default function RbiZeroLiabilityUnauthorisedTransactionPage() {
                     id="heading-case-digest-title"
                     className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight"
                   >
-                    14. Landmark Supreme Court, High Court &amp; NCDRC Precedents Enforcing RBI Zero Liability
+                    14. Landmark Precedents Enforcing RBI Zero Liability
                   </h2>
                   <span className="text-xs font-bold text-slate-500 uppercase tracking-wider">
                     Verifiable Judicial Rulings
@@ -919,7 +919,7 @@ export default function RbiZeroLiabilityUnauthorisedTransactionPage() {
                   id="heading-worked-example-title"
                   className="text-xl sm:text-2xl font-bold text-slate-900 tracking-tight"
                 >
-                  15. Worked Case Study: Account Holder Recovers ₹1,42,000 Unauthorised IMPS/UPI Debits After Bank Refused 10-Day Shadow Credit
+                  15. Case Study: Recovers ₹1.42L Unauthorised Debits
                 </h2>
                 <div className="bg-slate-900 text-white rounded-2xl p-5 sm:p-8 shadow-xl space-y-4 sm:space-y-5 w-full overflow-hidden">
                   <div className="flex flex-wrap items-center justify-between gap-2 border-b border-slate-800 pb-3">
@@ -956,7 +956,7 @@ export default function RbiZeroLiabilityUnauthorisedTransactionPage() {
                   id="heading-evidence-checklist-title"
                   className="text-xl sm:text-2xl font-bold text-slate-900 tracking-tight"
                 >
-                  16. Banking Evidence Checklist: 6 Essential Records Before Serving a Zero-Liability Legal Notice
+                  16. Banking Evidence Checklist: 6 Essential Records
                 </h2>
                 <p className="text-xs sm:text-sm text-slate-700 leading-relaxed">
                   Under Section 63 of the Bharatiya Sakshya Adhiniyam, 2023 (BSA), electronic banking logs, SMS timestamps, and NCRP dockets are primary evidence before the RBI Ombudsman and Consumer Commissions. Assemble these 6 records:
@@ -1019,7 +1019,7 @@ export default function RbiZeroLiabilityUnauthorisedTransactionPage() {
                   id="heading-honest-scope-title"
                   className="text-xl sm:text-2xl font-bold text-slate-900 tracking-tight"
                 >
-                  17. Honest Recovery Scope: What LegalRecovery Can and Cannot Do in Banking Fraud Disputes
+                  17. Recovery Scope: What LegalRecovery Can and Cannot Do
                 </h2>
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                   <div className="p-4 sm:p-5 rounded-2xl bg-emerald-50/80 border border-emerald-200 space-y-2">
@@ -1049,7 +1049,7 @@ export default function RbiZeroLiabilityUnauthorisedTransactionPage() {
                     id="heading-faqs-title"
                     className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight"
                   >
-                    18. Frequently Asked Questions: RBI Zero Liability, Shadow Reversal &amp; Bank Refunds
+                    18. FAQs: RBI Zero Liability &amp; Bank Refunds
                   </h2>
                   <p className="text-xs font-semibold text-slate-500 mt-1">
                     Authoritative Answers Grounded in RBI Circular DBR.No.Leg.BC.78/09.07.005/2017-18, Supreme Court Rulings &amp; the 2027 Framework
@@ -1082,7 +1082,7 @@ export default function RbiZeroLiabilityUnauthorisedTransactionPage() {
                   id="heading-sources-title"
                   className="text-lg sm:text-xl font-bold text-slate-900 tracking-tight"
                 >
-                  19. Primary RBI Circulars, Supreme Court Judgments &amp; Official Regulatory References
+                  19. Primary RBI Circulars &amp; Legal References
                 </h2>
                 <ol className="sources list-decimal list-inside space-y-2 text-xs sm:text-sm text-slate-600">
                   {PRIMARY_SOURCES.map((source, idx) => (

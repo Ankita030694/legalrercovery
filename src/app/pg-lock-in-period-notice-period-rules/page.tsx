@@ -374,7 +374,7 @@ export default function PgLockInNoticePeriodRulesPage() {
                     id="heading-myth-vs-fact-title"
                     className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight"
                   >
-                    Myth vs. Fact: 7 Common PG Lock-In, Notice Period &amp; Security Deposit Misconceptions
+                    Myth vs. Fact: PG Lock-In and Deposit Misconceptions
                   </h2>
                   <span className="text-xs font-bold text-slate-500 uppercase tracking-wider">
                     Warden Threats vs Statutory Law
@@ -434,7 +434,7 @@ export default function PgLockInNoticePeriodRulesPage() {
                   id="heading-deductions-matrix-title"
                   className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight"
                 >
-                  What PG Owners Can vs. Cannot Deduct From Your Security Deposit (Legality Matrix)
+                  What PG Owners Can Deduct From Security Deposits: Legality Matrix
                 </h2>
                 <p className="text-sm sm:text-base text-slate-700 leading-relaxed">
                   Under <strong>Section 72 and Section 74 of the Indian Contract Act, 1872</strong>, a security deposit is held in trust specifically to cover unpaid dues or verifiable damage beyond ordinary wear and tear. Use this matrix to audit every rupee your PG or hostel tries to deduct at checkout:
@@ -518,7 +518,7 @@ export default function PgLockInNoticePeriodRulesPage() {
                   id="heading-city-rules-title"
                   className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight"
                 >
-                  PG Notice Period, Deposit Caps &amp; Lock-In Norms Across Major Indian Cities (Pune, Bengaluru, Gurugram &amp; More)
+                  PG Notice Period, Deposit Caps and Lock-In Rules Across Cities
                 </h2>
                 <p className="text-sm sm:text-base text-slate-700 leading-relaxed">
                   One of the most searched questions by students and young professionals is: <strong>&quot;What is the notice period for vacating a PG in Pune?&quot;</strong> or whether a PG can demand 3 to 6 months&apos; deposit in Bengaluru or Mumbai. Because urban housing and hostels are regulated at the state and municipal level alongside central contract law, here is how rules apply across India&apos;s major PG hubs:
@@ -614,7 +614,7 @@ export default function PgLockInNoticePeriodRulesPage() {
                     id="heading-case-digest-title"
                     className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight"
                   >
-                    Landmark Court &amp; Consumer Commission Precedents on Lock-In Forfeiture and PG Deposit Refunds
+                    Court Precedents on Lock-In Forfeiture and PG Deposit Refunds
                   </h2>
                   <span className="text-xs font-bold text-slate-500 uppercase tracking-wider">
                     Verifiable Judicial Rulings
@@ -691,7 +691,7 @@ export default function PgLockInNoticePeriodRulesPage() {
                   id="heading-escalation-flow-title"
                   className="text-xl sm:text-2xl font-bold text-slate-900 tracking-tight"
                 >
-                  Statutory Escalation Flow: From PG Exit Notice to 100% Deposit Recovery
+                  Escalation Flow: From PG Exit Notice to 100% Deposit Recovery
                 </h2>
                 <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
                   Follow this five-stage legal pathway to lock in your exit evidence, defeat arbitrary lock-in or notice-period excuses, and compel your PG owner or co-living operator to release your deposit:
@@ -816,7 +816,7 @@ export default function PgLockInNoticePeriodRulesPage() {
                   id="heading-playbook-title"
                   className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight"
                 >
-                  What Actually Works: The 5-Step Action Playbook When a PG Owner Refuses to Return Your Deposit
+                  5-Step Playbook When a PG Owner Refuses to Return Deposit
                 </h2>
                 <p className="text-sm sm:text-base text-slate-700 leading-relaxed">
                   Whether your PG is an independent building in Pune or Bengaluru or a corporate co-living property, verbal arguments with the warden rarely work. Follow these 5 concrete steps to force a settlement:
@@ -918,7 +918,7 @@ export default function PgLockInNoticePeriodRulesPage() {
                     id="heading-problem-picker-title"
                     className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight"
                   >
-                    Select Your PG or Co-Living Dispute Scenario: Legal Basis &amp; Tactical Fix
+                    Select Your PG Dispute Scenario: Legal Basis and Tactical Fix
                   </h2>
                   <p className="text-xs font-semibold text-slate-500 mt-1">
                     Click Your Specific Situation Below for the Exact Statutory Provision and 3-Step Remedy
@@ -934,7 +934,7 @@ export default function PgLockInNoticePeriodRulesPage() {
                   id="heading-worked-example-title"
                   className="text-xl sm:text-2xl font-bold text-slate-900 tracking-tight"
                 >
-                  Worked Case Study: Pune IT Professional Recovers ₹36,000 PG Deposit After Owner Cited a 6-Month Lock-In Clause
+                  Case Study: Recovering PG Deposit Disputed Under Lock-In Clause
                 </h2>
                 <div className="bg-slate-900 text-white rounded-2xl p-5 sm:p-8 shadow-xl space-y-4 sm:space-y-5 w-full overflow-hidden">
                   <div className="flex flex-wrap items-center justify-between gap-2 border-b border-slate-800 pb-3">
@@ -968,7 +968,7 @@ export default function PgLockInNoticePeriodRulesPage() {
                   id="heading-evidence-checklist-title"
                   className="text-xl sm:text-2xl font-bold text-slate-900 tracking-tight"
                 >
-                  Evidence Checklist: 6 Essential Records to Preserve Before Vacating a PG or Hostel
+                  Evidence Checklist: 6 Essential Records Before Vacating a PG
                 </h2>
                 <p className="text-xs sm:text-sm text-slate-700 leading-relaxed">
                   Under <strong>Section 63 of the Bharatiya Sakshya Adhiniyam, 2023 (BSA)</strong>, digital records—including WhatsApp chats, UPI receipts, and smartphone videos—are primary admissible evidence when accompanied by a statutory certificate:
@@ -1031,7 +1031,7 @@ export default function PgLockInNoticePeriodRulesPage() {
                   id="heading-honest-scope-title"
                   className="text-xl sm:text-2xl font-bold text-slate-900 tracking-tight"
                 >
-                  Honest Scope: What LegalRecovery Can and Cannot Do in PG &amp; Hostel Disputes
+                  Scope: Legal Remedies for PG and Hostel Deposit Disputes
                 </h2>
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                   <div className="p-5 bg-emerald-50/70 border border-emerald-200 rounded-2xl space-y-2">
@@ -1066,7 +1066,7 @@ export default function PgLockInNoticePeriodRulesPage() {
                     id="heading-faqs-title"
                     className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight"
                   >
-                    Frequently Asked Questions: PG Lock-In Period, Notice Period Rules &amp; Deposit Recovery
+                    FAQs on PG Lock-In Period, Notice Rules and Deposit Refunds
                   </h2>
                   <p className="text-xs font-semibold text-slate-500 mt-1">
                     Direct Statutory Answers Grounded in the Indian Contract Act, Consumer Protection Act &amp; Model Tenancy Act
@@ -1099,7 +1099,7 @@ export default function PgLockInNoticePeriodRulesPage() {
                   id="heading-sources-title"
                   className="text-lg sm:text-xl font-bold text-slate-900 tracking-tight"
                 >
-                  Primary Statutes, Supreme Court Judgments &amp; Official Consumer References
+                  Key Statutes, Court Judgments and Official Consumer References
                 </h2>
                 <ol className="sources list-decimal list-inside space-y-2 text-xs sm:text-sm text-slate-600">
                   {PRIMARY_SOURCES.map((source, idx) => (

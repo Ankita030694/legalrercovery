@@ -359,7 +359,7 @@ export default function SocietyMaintenanceRecoveryNoticePage() {
                   id="heading-overview-title"
                   className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight"
                 >
-                  Why a Formal Society Maintenance Recovery Notice Is Legally Mandatory Before Registrar Action
+                  Why a Maintenance Recovery Notice Is Legally Mandatory
                 </h2>
                 <div className="prose prose-slate max-w-none text-xs sm:text-sm md:text-base leading-relaxed space-y-4 text-slate-700">
                   <p>
@@ -457,7 +457,7 @@ export default function SocietyMaintenanceRecoveryNoticePage() {
                     id="heading-annotated-sample-title"
                     className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight"
                   >
-                    Side-by-Side Annotated Sample: Society Maintenance Arrears Recovery Notice
+                    Annotated Sample: Maintenance Arrears Recovery Notice
                   </h2>
                   <span className="text-xs uppercase font-bold text-red-600 bg-red-50 px-2.5 py-1 rounded-full border border-red-200 shrink-0">
                     Archetype P3 Annotated Specimen
@@ -666,7 +666,7 @@ export default function SocietyMaintenanceRecoveryNoticePage() {
                   id="heading-interactive-workspace-title"
                   className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight"
                 >
-                  Interactive Society Maintenance Recovery Notice Template (English &amp; Hindi)
+                  Society Maintenance Recovery Notice Template
                 </h2>
                 <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
                   Customize the placeholders below for your Cooperative Housing Society, Apartment Owners Association, or RWA. Switch between the <strong>1st Committee Demand Letter</strong>, the <strong>Final Section 101 / Registrar Pre-Recovery Notice</strong>, and the <strong>Hindi (हिंदी) Format</strong>, then copy the text or download a formatted Microsoft Word (<code>.doc</code>) file.
@@ -685,7 +685,7 @@ export default function SocietyMaintenanceRecoveryNoticePage() {
                   id="heading-mandatory-elements-title"
                   className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight"
                 >
-                  Mandatory vs. Optional Elements in a Society Maintenance Recovery Letter
+                  Mandatory vs Optional Elements in Maintenance Notice
                 </h2>
                 <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
                   Before printing your demand letter on the society letterhead or escalating to an{" "}
@@ -812,7 +812,7 @@ export default function SocietyMaintenanceRecoveryNoticePage() {
                   id="heading-state-recovery-laws-title"
                   className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight"
                 >
-                  State-Law Recovery Route: Society Maintenance Recovery Section, Interest Cap &amp; Forum by State
+                  State-Wise Maintenance Recovery Laws &amp; Forums
                 </h2>
                 <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
                   Cooperative societies and apartment associations are governed by state-specific enactments under Entry 32 of List II (State List) of the Seventh Schedule to the Constitution. Make sure your maintenance recovery notice cites the exact statutory section applicable to your state:
@@ -928,7 +928,7 @@ export default function SocietyMaintenanceRecoveryNoticePage() {
                   id="heading-common-mistakes-title"
                   className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight"
                 >
-                  6 Fatal Mistakes That Weaken or Invalidate a Society Maintenance Recovery Notice
+                  6 Mistakes That Weaken a Maintenance Recovery Notice
                 </h2>
                 <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
                   Managing Committees frequently commit procedural errors that give a defaulting flat owner ammunition to drag the case before the Cooperative Court, Consumer Commission, or High Court. Avoid these six mistakes when issuing your demand notice:
@@ -1194,7 +1194,7 @@ export default function SocietyMaintenanceRecoveryNoticePage() {
                   id="heading-court-precedents-title"
                   className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight"
                 >
-                  Landmark Supreme Court &amp; High Court Rulings on Society Maintenance Recovery
+                  Supreme Court &amp; High Court Rulings on Maintenance
                 </h2>
                 <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
                   These four judicial precedents govern how housing societies must calculate interest, cap non-occupancy charges, and serve demand notices prior to Section 101 or Registrar proceedings:
@@ -1247,7 +1247,7 @@ export default function SocietyMaintenanceRecoveryNoticePage() {
                   id="heading-worked-example-title"
                   className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight"
                 >
-                  Worked Case Study: How a Navi Mumbai CHS Recovered ₹1,19,320 in 19-Month Arrears Without Prolonged Litigation
+                  Case Study: CHS Recovers ₹1,19,320 in Maintenance Arrears
                 </h2>
 
                 <div className="bg-white rounded-2xl p-5 sm:p-7 border border-slate-200 shadow-sm space-y-4 text-xs sm:text-sm text-slate-700 leading-relaxed">
@@ -1296,7 +1296,7 @@ export default function SocietyMaintenanceRecoveryNoticePage() {
                   id="heading-evidence-checklist-title"
                   className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight"
                 >
-                  6-Point Managing Committee Evidence Checklist Before Filing Under Section 101 / Registrar
+                  Evidence Checklist Before Filing Under Section 101
                 </h2>
                 <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
                   Keep these six documents ready in your society office dossier so your advocate can immediately file for a Recovery Certificate if the 15-day notice expires unpaid (see our{" "}
@@ -1368,7 +1368,7 @@ export default function SocietyMaintenanceRecoveryNoticePage() {
                   id="heading-faqs-title"
                   className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight"
                 >
-                  Frequently Asked Questions: Society Maintenance Arrears Notice &amp; Recovery Rules
+                  FAQs: Society Maintenance Notice &amp; Recovery Rules
                 </h2>
 
                 <div className="space-y-3">

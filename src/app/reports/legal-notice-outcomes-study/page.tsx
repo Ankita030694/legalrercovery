@@ -294,7 +294,7 @@ export default function LegalNoticeOutcomesStudyPage() {
                   id="heading-key-findings-title"
                   className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight"
                 >
-                  Core Findings: Measuring the Real Effectiveness of Legal Notices in India
+                  Core Findings: Effectiveness of Legal Notices in India
                 </h2>
                 <p className="text-sm sm:text-base text-slate-700 leading-relaxed">
                   Every year, millions of Indian consumers, employees, landlords, and small businesses face unpaid dues, withheld refunds, and defaulted cheques. When victims complain via customer service tickets or informal phone calls, they are routinely met with automated deflection, repeated script loops, or outright silence. The central question for claimants considering legal action is: <strong className="font-bold text-slate-900">does a legal notice actually work, or is it merely an expensive formality?</strong>
@@ -437,7 +437,7 @@ export default function LegalNoticeOutcomesStudyPage() {
                     id="heading-dispute-breakdown-title"
                     className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight"
                   >
-                    Dispute Segment Deep-Dive: Procedural Analysis Across 6 Legal Categories
+                    Dispute Deep-Dive: Analysis Across 6 Legal Categories
                   </h2>
                   <span className="text-xs font-bold text-slate-500 uppercase tracking-wider">
                     Segmented Analysis
@@ -648,7 +648,7 @@ export default function LegalNoticeOutcomesStudyPage() {
                   id="heading-next-steps-litigation-title"
                   className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight"
                 >
-                  When a Notice Fails: The 27.2% Escalation Path to Court &amp; Tribunals
+                  When a Notice Fails: Escalation Path to Court
                 </h2>
                 <p className="text-sm sm:text-base text-slate-700 leading-relaxed">
                   While 72.8% of cases settle peacefully, 27.2% of debtors remain non-compliant due to severe insolvency, willful fraud, or disputed facts. What happens next? Serving a legal notice is the necessary bridge that establishes immediate cause of action:

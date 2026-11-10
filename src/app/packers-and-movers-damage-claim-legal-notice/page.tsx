@@ -325,7 +325,7 @@ export default function PackersMoversDamageClaimPage() {
                   id="heading-carrier-liability-title"
                   className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight"
                 >
-                  Carrier Liability Law: Why Packers &amp; Movers Cannot Escape Accountability
+                  Carrier Liability Law: Why Packers and Movers Are Accountable
                 </h2>
                 <p className="text-sm sm:text-base text-slate-700 leading-relaxed">
                   Every year, thousands of Indian families relocating across cities encounter broken television screens, fractured teakwood beds, soaked mattresses, or missing cartons. When consumers contact customer care or the moving supervisor, they are routinely brushed off with boilerplate excuses: <em>&quot;Goods travel at owner&apos;s risk&quot;</em>, <em>&quot;You did not take all-risk insurance&quot;</em>, or <em>&quot;Our maximum liability on the lorry receipt is capped at ₹500&quot;</em>.
@@ -345,7 +345,7 @@ export default function PackersMoversDamageClaimPage() {
                     id="heading-court-orders-title"
                     className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight"
                   >
-                    Landmark Judicial Precedents: 4 Binding Rulings Against Packers, Movers &amp; Road Carriers
+                    Judicial Precedents: Rulings Against Packers and Road Carriers
                   </h2>
                   <span className="text-xs font-bold text-slate-500 uppercase tracking-wider">
                     Verifiable Court Records
@@ -422,7 +422,7 @@ export default function PackersMoversDamageClaimPage() {
                   id="heading-pattern-analysis-title"
                   className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight"
                 >
-                  Pattern Analysis: What Wins Packers &amp; Movers Damage Claims in Consumer Court
+                  Pattern Analysis: Winning Packers and Movers Claims in Court
                 </h2>
                 <p className="text-sm sm:text-base text-slate-700 leading-relaxed">
                   An empirical analysis of successful compensation judgments against major logistics firms (Agarwal Packers, VRL Logistics, Gati, Porter, and local movers) shows clear evidentiary factors that compel consumer commissions to grant 100% relief:
@@ -497,7 +497,7 @@ export default function PackersMoversDamageClaimPage() {
                   id="heading-escalation-flow-title"
                   className="text-xl sm:text-2xl font-bold text-slate-900 tracking-tight"
                 >
-                  Statutory Escalation Architecture: From Delivery Damage to Full Compensation
+                  Escalation Architecture: From Transit Damage to Compensation
                 </h2>
                 <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
                   Follow this structured statutory escalation path to dismantle mover deflection, enforce carrier liability, and recover your funds:
@@ -710,7 +710,7 @@ export default function PackersMoversDamageClaimPage() {
                   id="heading-deadlines-table-title"
                   className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight"
                 >
-                  Carriers Law vs. Consumer Reality: Comparative Liability &amp; Limitation Benchmarks
+                  Carriers Law vs Consumer Reality: Liability and Timelines
                 </h2>
                 <p className="text-sm sm:text-base text-slate-700 leading-relaxed">
                   Rogue packers and movers capitalize on consumer unfamiliarity with road transport statutes. Here is how statutory benchmarks overturn mover fine-print:
@@ -791,7 +791,7 @@ export default function PackersMoversDamageClaimPage() {
                     id="heading-problem-picker-title"
                     className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight"
                   >
-                    Common Packers &amp; Movers Disputes: Legal Grounds &amp; Strategic Solutions
+                    Packers and Movers Disputes: Legal Grounds and Solutions
                   </h2>
                   <p className="text-xs font-semibold text-slate-500 mt-1">
                     Select Your Specific Dispute Scenario to Unlock Applicable Statutes and the Precise Recovery Roadmap
@@ -807,7 +807,7 @@ export default function PackersMoversDamageClaimPage() {
                   id="heading-worked-example-title"
                   className="text-xl sm:text-2xl font-bold text-slate-900 tracking-tight"
                 >
-                  Worked Case Study: Homeowner Recovers ₹1,85,000 for Damaged OLED TV &amp; Teakwood Furniture
+                  Case Study: Recovering ₹1,85,000 for Transit Damaged Goods
                 </h2>
                 <div className="bg-slate-900 text-white rounded-2xl p-5 sm:p-8 shadow-xl space-y-4 sm:space-y-5 w-full overflow-hidden">
                   <div className="flex flex-wrap items-center justify-between gap-2 border-b border-slate-800 pb-3">
@@ -841,7 +841,7 @@ export default function PackersMoversDamageClaimPage() {
                   id="heading-evidence-checklist-title"
                   className="text-xl sm:text-2xl font-bold text-slate-900 tracking-tight"
                 >
-                  Evidence Checklist: 6 Critical Documents &amp; Records to Build Your Claim
+                  Evidence Checklist: 6 Critical Records to Build Your Claim
                 </h2>
                 <p className="text-xs sm:text-sm text-slate-700 leading-relaxed">
                   Under Section 63 of the Bharatiya Sakshya Adhiniyam, 2023 (BSA), electronic communications and digital media are fully admissible in court. Assemble these 6 critical evidentiary items:

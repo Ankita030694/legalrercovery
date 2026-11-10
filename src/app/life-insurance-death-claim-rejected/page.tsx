@@ -360,7 +360,7 @@ export default function LifeInsuranceDeathClaimRejectedPage() {
                   id="heading-overview-title"
                   className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight"
                 >
-                  Life Insurance Claim Rejected: Why Insurers Repudiate and How the Law Protects Beneficiaries
+                  Why Insurers Reject Claims &amp; How the Law Protects You
                 </h2>
                 <p className="text-sm sm:text-base text-slate-700 leading-relaxed">
                   Losing an earning family member is devastating. When the life insurance company subsequently issues a formal <strong>claim repudiation letter</strong> forfeiting the policy sum assured, the nominee faces immediate financial uncertainty. In India, insurance companies repudiate thousands of death claims annually, frequently citing &quot;suppression of material medical facts,&quot; &quot;pre-existing disease non-disclosure,&quot; &quot;policy lapse during grace period,&quot; or &quot;accidental rider exclusion.&quot;
@@ -458,7 +458,7 @@ export default function LifeInsuranceDeathClaimRejectedPage() {
                     id="heading-timelines-table-title"
                     className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight"
                   >
-                    Statutory Timelines, Interest Penalties &amp; Forum Rules (IRDAI 2024–2026)
+                    Statutory Timelines &amp; Interest Penalties (IRDAI)
                   </h2>
                   <span className="text-xs font-bold text-slate-500 uppercase tracking-wider">
                     Binding Regulatory Deadlines
@@ -918,7 +918,7 @@ export default function LifeInsuranceDeathClaimRejectedPage() {
                     id="heading-forum-comparison-title"
                     className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight"
                   >
-                    Forum Comparison: Insurance Ombudsman vs. Consumer Court vs. Advocate Legal Notice
+                    Ombudsman vs Consumer Court vs Legal Notice
                   </h2>
                   <span className="text-xs font-bold text-slate-500 uppercase tracking-wider">
                     Strategic Forum Selection
@@ -1023,7 +1023,7 @@ export default function LifeInsuranceDeathClaimRejectedPage() {
                     id="heading-faqs-title"
                     className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight"
                   >
-                    Frequently Asked Questions: Challenging Life Insurance Claim Rejections
+                    FAQs: Challenging Life Insurance Claim Rejections
                   </h2>
                   <span className="text-xs font-bold text-slate-500 uppercase tracking-wider">
                     Nominee Query Bank

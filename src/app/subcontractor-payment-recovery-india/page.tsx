@@ -329,7 +329,7 @@ export default function SubcontractorPaymentRecoveryPage() {
                   id="heading-decision-tree-title"
                   className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight"
                 >
-                  Subcontractor Recovery Decision Tree: Which Legal Route Fits Your Unpaid RA Bill?
+                  Subcontractor Recovery Decision Tree for RA Bills
                 </h2>
                 <p className="text-sm sm:text-base text-slate-700 leading-relaxed">
                   Choosing the right legal forum depends on three threshold facts: (1) whether you hold Udyam MSME registration for goods/services versus a composite civil works contract, (2) whether your Work Order contains an arbitration clause, and (3) the total principal amount defaulted by the main contractor. Use this statutory decision tree to pinpoint your fastest recovery route:
@@ -552,7 +552,7 @@ export default function SubcontractorPaymentRecoveryPage() {
                   id="heading-routes-comparison-title"
                   className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight"
                 >
-                  Comparing Subcontractor Recovery Routes: Deadlines, Costs, Forums &amp; Legal Leverage
+                  Comparing Subcontractor Recovery Routes &amp; Forums
                 </h2>
                 <p className="text-sm sm:text-base text-slate-700 leading-relaxed">
                   Before escalating a construction or engineering payment dispute, compare the statutory timelines, interest entitlements, and enforcement powers across all five Indian legal mechanisms available to unpaid subcontractors:
@@ -627,7 +627,7 @@ export default function SubcontractorPaymentRecoveryPage() {
                   id="heading-back-to-back-clauses-title"
                   className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight"
                 >
-                  Are &quot;Pay-When-Paid&quot; and &quot;Back-to-Back&quot; Payment Clauses Enforceable in India?
+                  Are "Pay-When-Paid" Clauses Enforceable in India?
                 </h2>
                 <p className="text-sm sm:text-base text-slate-700 leading-relaxed">
                   No—under Indian contract law, a general &quot;back-to-back&quot; or &quot;pay-when-paid&quot; clause cannot be used by a main contractor to indefinitely deny payment to a subcontractor who has completed the assigned work. In <em>Zonal General Manager, Ircon International Ltd. v. Vinay Heavy Equipments</em>, (2015) 13 SCC 680, the Supreme Court of India established that privity of contract exists strictly between the main contractor and the subcontractor, meaning the main contractor remains the primary debtor.
@@ -670,7 +670,7 @@ export default function SubcontractorPaymentRecoveryPage() {
                     id="heading-court-rulings-title"
                     className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight"
                   >
-                    Landmark Judgments on Subcontractor Dues, Back-to-Back Clauses &amp; Retention Money
+                    Judgments on Subcontractor Dues &amp; Retention
                   </h2>
                   <span className="text-xs font-bold text-slate-500 uppercase tracking-wider">
                     Verified Supreme Court &amp; High Court Precedents
@@ -747,7 +747,7 @@ export default function SubcontractorPaymentRecoveryPage() {
                   id="heading-route-msme-odr-title"
                   className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight"
                 >
-                  Route 1: MSME ODR Portal, Section 16 Interest &amp; Section 43B(h) Tax Leverage for Subcontractors
+                  Route 1: MSME ODR, Interest &amp; Tax Leverage
                 </h2>
                 <p className="text-sm sm:text-base text-slate-700 leading-relaxed">
                   If your business is registered under Udyam as a Micro or Small Enterprise (MSE), Chapter V of the MSMED Act, 2006 (as strengthened by the <Link href="/law/msmed-amendment-act-2026" className="text-blue-700 underline font-semibold">MSMED (Amendment) Act, 2026</Link>) gives you two extraordinary weapons that override contradictory clauses in a Main Contractor&apos;s Work Order:
@@ -781,7 +781,7 @@ export default function SubcontractorPaymentRecoveryPage() {
                   id="heading-route-arbitration-civil-title"
                   className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight"
                 >
-                  Route 2: Pre-Arbitration Legal Notice, Section 9 Interim Attachment &amp; Commercial Suits
+                  Route 2: Arbitration Notice &amp; Commercial Suits
                 </h2>
                 <p className="text-sm sm:text-base text-slate-700 leading-relaxed">
                   For large civil construction, infrastructure, highway, and MEP subcontracts governed by standard FIDIC or EPC Work Orders, your fastest leverage lies in combining a statutory demand notice with urgent interim relief:
@@ -832,7 +832,7 @@ export default function SubcontractorPaymentRecoveryPage() {
                   id="heading-route-retention-ra-bills-title"
                   className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight"
                 >
-                  Route 3: Recovering Withheld Retention Money, Uncertified RA Bills &amp; Bank Guarantees
+                  Route 3: Recovering Retention Money &amp; RA Bills
                 </h2>
                 <p className="text-sm sm:text-base text-slate-700 leading-relaxed">
                   Even when running bills are partially cleared, main contractors routinely hold back 5% to 10% as Retention Money or threaten to encash Performance Bank Guarantees (PBGs) when a subcontractor demands final settlement. Here is how Indian law protects your final account:
@@ -849,7 +849,7 @@ export default function SubcontractorPaymentRecoveryPage() {
                     id="heading-scenario-picker-title"
                     className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight"
                   >
-                    Select Your Subcontractor Dispute Scenario: Root Causes &amp; 3-Step Legal Remedies
+                    Subcontractor Dispute Scenarios &amp; Remedies
                   </h2>
                   <p className="text-xs font-semibold text-slate-500 mt-1">
                     Click Your Specific Construction or Subcontract Bottleneck Below to View the Statutory Rebuttal and Action Plan
@@ -865,7 +865,7 @@ export default function SubcontractorPaymentRecoveryPage() {
                   id="heading-escalation-playbook-title"
                   className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight"
                 >
-                  The 5-Step Escalation Playbook Against a Defaulting EPC or Main Contractor
+                  5-Step Playbook Against Defaulting EPC Contractor
                 </h2>
                 <p className="text-sm sm:text-base text-slate-700 leading-relaxed">
                   Follow this structured 5-step pre-litigation and litigation sequence to lock in your site evidence, defeat fake snag defences, and compel payment from the main contractor:
@@ -950,7 +950,7 @@ export default function SubcontractorPaymentRecoveryPage() {
                   id="heading-worked-example-title"
                   className="text-xl sm:text-2xl font-bold text-slate-900 tracking-tight"
                 >
-                  Worked Case Study: MEP Subcontractor Recovers ₹28,50,000 Pending RA Bills + Retention From Main EPC Contractor
+                  Case Study: Subcontractor Recovers ₹28.5L RA Bills
                 </h2>
                 <div className="bg-slate-900 text-white rounded-2xl p-5 sm:p-8 shadow-xl space-y-4 sm:space-y-5 w-full overflow-hidden">
                   <div className="flex flex-wrap items-center justify-between gap-2 border-b border-slate-800 pb-3">
@@ -984,7 +984,7 @@ export default function SubcontractorPaymentRecoveryPage() {
                   id="heading-evidence-checklist-title"
                   className="text-xl sm:text-2xl font-bold text-slate-900 tracking-tight"
                 >
-                  Subcontractor Evidence Checklist: 6 Site &amp; Billing Records Required Before Serving a Legal Notice
+                  Evidence Checklist: 6 Records for Legal Notice
                 </h2>
                 <p className="text-xs sm:text-sm text-slate-700 leading-relaxed">
                   In construction and B2B subcontract disputes, the party with contemporaneous site documentation wins. Assemble these 6 records (admissible under Section 63 of the Bharatiya Sakshya Adhiniyam, 2023) before we draft your notice:
@@ -1047,7 +1047,7 @@ export default function SubcontractorPaymentRecoveryPage() {
                   id="heading-honest-scope-title"
                   className="text-xl sm:text-2xl font-bold text-slate-900 tracking-tight"
                 >
-                  Honest Scope: What LegalRecovery Can and Cannot Do for Unpaid Subcontractors
+                  Scope &amp; Boundaries: What LegalRecovery Can and Cannot Do
                 </h2>
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                   <div className="p-5 bg-emerald-50/70 border border-emerald-200 rounded-2xl space-y-2">
@@ -1082,7 +1082,7 @@ export default function SubcontractorPaymentRecoveryPage() {
                     id="heading-faqs-title"
                     className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight"
                   >
-                    Frequently Asked Questions on Subcontractor Payment Disputes &amp; Legal Recovery in India
+                    FAQs: Subcontractor Payment Disputes &amp; Recovery
                   </h2>
                   <p className="text-xs font-semibold text-slate-500 mt-1">
                     Direct Statutory Answers Grounded in the Indian Contract Act, MSMED Act 2026 &amp; Supreme Court Construction Law
@@ -1115,7 +1115,7 @@ export default function SubcontractorPaymentRecoveryPage() {
                   id="heading-sources-title"
                   className="text-lg sm:text-xl font-bold text-slate-900 tracking-tight"
                 >
-                  Primary Statutes, Supreme Court Authorities &amp; Official Construction Recovery References
+                  Primary Construction Statutes &amp; Legal References
                 </h2>
                 <ol className="sources list-decimal list-inside space-y-2 text-xs sm:text-sm text-slate-600">
                   {PRIMARY_SOURCES.map((source, idx) => (

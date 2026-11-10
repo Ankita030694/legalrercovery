@@ -165,7 +165,7 @@ const FAQS = [
 const ARTICLE_SCHEMA = {
   "@context": "https://schema.org",
   "@type": "Article",
-  headline: "Model Tenancy Act 2021: Deposit Limits and Which States Have Adopted It",
+  headline: "Model Tenancy Act 2021: Deposit Limits and State Adoption",
   description:
     "The Model Tenancy Act caps residential deposits at two months' rent. See which states adopted it and what applies elsewhere.",
   datePublished: "2026-11-04T11:55:00+05:30",
@@ -272,7 +272,7 @@ export default function ModelTenancyActDepositRulesPage() {
             </div>
 
             <h1 className="text-2xl sm:text-3xl md:text-5xl font-black tracking-tight text-white leading-tight mb-4 sm:mb-6 break-words">
-              Model Tenancy Act 2021: Deposit Limits and Which States Have Adopted It
+              Model Tenancy Act 2021: Deposit Limits and State Adoption
             </h1>
 
             {/* Answer Box First: 40-60 Words Directly Under H1 */}
@@ -329,7 +329,7 @@ export default function ModelTenancyActDepositRulesPage() {
                   id="heading-summary-title"
                   className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight"
                 >
-                  What Does Section 11 of the Model Tenancy Act 2021 Say About Security Deposits—and Why Doesn&apos;t It Apply Everywhere?
+                  Section 11 Model Tenancy Act: Rules on Security Deposits
                 </h2>
                 <p className="text-sm sm:text-base text-slate-700 leading-relaxed">
                   Under <strong>Section 11(1) of the Model Tenancy Act, 2021</strong>—approved by the Union Cabinet on <time dateTime="2021-06-02">2 June 2021</time> and circulated by the Ministry of Housing and Urban Affairs (MoHUA)—a landlord is prohibited from demanding or receiving a security deposit exceeding <strong>two months&apos; rent for residential premises</strong> and <strong>six months&apos; rent for non-residential (commercial) premises</strong>. Equally important for outgoing tenants, <strong>Section 11(2)</strong> mandates that the security deposit <em>&quot;shall be refunded to the tenant on the date of taking over vacant possession of the premises from the tenant, after making due deduction of any liability of the tenant.&quot;</em>
@@ -346,7 +346,7 @@ export default function ModelTenancyActDepositRulesPage() {
                     id="heading-before-after-title"
                     className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight"
                   >
-                    Before vs After: Legacy Rent Control &amp; Contract Regime vs Model Tenancy Act 2021 Rules
+                    Before vs After: Legacy Rent Control vs Model Tenancy Act
                   </h2>
                   <span className="text-xs font-bold text-slate-500 uppercase tracking-wider">
                     Archetype L2 Statutory Comparison
@@ -480,7 +480,7 @@ export default function ModelTenancyActDepositRulesPage() {
                     id="heading-state-adoption-title"
                     className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight"
                   >
-                    Which Indian States Have Adopted the Model Tenancy Act? State-Wise Deposit Cap &amp; Forum Table (2026 Status †)
+                    State-Wise Deposit Caps &amp; Model Tenancy Act Status (†)
                   </h2>
                   <span className="text-xs font-bold text-red-600 uppercase tracking-wider">
                     Verified State-by-State Matrix †
@@ -702,7 +702,7 @@ export default function ModelTenancyActDepositRulesPage() {
                   id="heading-timeline-title"
                   className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight"
                 >
-                  Legislative Timeline: From the 2019 Draft Bill to 2026 State Rent Authority Enforcement
+                  Legislative Timeline: Model Tenancy Act to Enforcement
                 </h2>
                 <p className="text-sm sm:text-base text-slate-700 leading-relaxed">
                   Tracking how the Model Tenancy Act evolved from a central policy draft into state-level enactments explains why older tenancy agreements and newer post-2021 agreements are treated differently:
@@ -782,7 +782,7 @@ export default function ModelTenancyActDepositRulesPage() {
                   id="heading-grey-areas-title"
                   className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight"
                 >
-                  Open Questions, Constitutional Traps &amp; Practical Grey Areas Under the Model Tenancy Act (2026 †)
+                  Practical Grey Areas Under the Model Tenancy Act (2026 †)
                 </h2>
                 <p className="text-sm sm:text-base text-slate-700 leading-relaxed">
                   Before sending a deposit demand letter or refusing a landlord&apos;s deduction, tenants and property owners must understand four critical grey areas where online blogs frequently give wrong advice:
@@ -853,7 +853,7 @@ export default function ModelTenancyActDepositRulesPage() {
                   id="heading-deductions-table-title"
                   className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight"
                 >
-                  What Can a Landlord Legally Deduct From Your Security Deposit? (Section 11(2) &amp; Second Schedule Matrix)
+                  What Can Landlords Deduct From Deposits Under Law?
                 </h2>
                 <p className="text-sm sm:text-base text-slate-700 leading-relaxed">
                   <strong>Section 15 of the Model Tenancy Act, 2021</strong> read with the <strong>Second Schedule</strong> divides property maintenance into <strong>Part A (Responsibilities of the Landlord)</strong> and <strong>Part B (Responsibilities of the Tenant)</strong>, while explicitly exempting the tenant from <em>&quot;normal wear and tear&quot;</em> (mirroring Section 108(m) of the Transfer of Property Act, 1882). Use this statutory matrix to audit every rupee your landlord tries to deduct:
@@ -969,7 +969,7 @@ export default function ModelTenancyActDepositRulesPage() {
                     id="heading-case-law-title"
                     className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight"
                   >
-                    Landmark Judicial Precedents &amp; Statutory Mandates on Security Deposit Refunds
+                    Judicial Precedents on Security Deposit Refunds
                   </h2>
                   <span className="text-xs font-bold text-slate-500 uppercase tracking-wider">
                     Verified High Court, Supreme Court &amp; State Records
@@ -1046,7 +1046,7 @@ export default function ModelTenancyActDepositRulesPage() {
                   id="heading-escalation-flow-title"
                   className="text-xl sm:text-2xl font-bold text-slate-900 tracking-tight"
                 >
-                  Security Deposit Recovery Architecture: From Vacant Key Handover to Bank Credit
+                  Deposit Recovery Architecture: Handover to Bank Credit
                 </h2>
                 <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
                   Whether your rented flat is in an MTA-adopted state (UP, Tamil Nadu, Assam, AP) or a non-adopted metro (Bengaluru, Mumbai, Pune, Delhi, Gurugram), follow this five-stage escalation path:
@@ -1171,7 +1171,7 @@ export default function ModelTenancyActDepositRulesPage() {
                   id="heading-playbook-title"
                   className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight"
                 >
-                  How to Use the Model Tenancy Act &amp; Deposit Recovery Rules Today: 5-Step Tenant Playbook
+                  5-Step Tenant Playbook to Recover Security Deposits
                 </h2>
                 <p className="text-sm sm:text-base text-slate-700 leading-relaxed">
                   Whether your landlord is holding back ₹40,000 in Noida or ₹2,50,000 in Bengaluru, follow this exact five-step evidentiary sequence to compel a full refund:
@@ -1260,7 +1260,7 @@ export default function ModelTenancyActDepositRulesPage() {
                     id="heading-scenario-tabs-title"
                     className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight"
                   >
-                    Tenant Security Deposit &amp; Deduction Scenarios: Root Causes &amp; Statutory Fixes
+                    Deposit Deduction Scenarios &amp; Statutory Remedies
                   </h2>
                   <p className="text-xs font-semibold text-slate-500 mt-1">
                     Select Your Specific Rental or PG Dispute Below to View the Applicable Section and 3-Step Action Plan
@@ -1276,7 +1276,7 @@ export default function ModelTenancyActDepositRulesPage() {
                   id="heading-worked-example-title"
                   className="text-xl sm:text-2xl font-bold text-slate-900 tracking-tight"
                 >
-                  Worked Case Study: Noida Tenant Recovers ₹64,000 Security Deposit + Illegal Painting Cut Under Section 11 &amp; 15 in 11 Days
+                  Case Study: Tenant Recovers ₹64,000 Deposit in 11 Days
                 </h2>
                 <div className="bg-slate-900 text-white rounded-2xl p-5 sm:p-8 shadow-xl space-y-4 sm:space-y-5 w-full overflow-hidden">
                   <div className="flex flex-wrap items-center justify-between gap-2 border-b border-slate-800 pb-3">
@@ -1315,7 +1315,7 @@ export default function ModelTenancyActDepositRulesPage() {
                   id="heading-evidence-checklist-title"
                   className="text-xl sm:text-2xl font-bold text-slate-900 tracking-tight"
                 >
-                  Tenant Evidence Checklist: 6 Documents Needed Before Serving a Deposit Legal Notice
+                  Evidence Checklist: 6 Documents for Deposit Notice
                 </h2>
                 <p className="text-xs sm:text-sm text-slate-700 leading-relaxed">
                   Under Section 63 of the Bharatiya Sakshya Adhiniyam, 2023 (BSA), digital bank statements, WhatsApp chats, and timestamped smartphone videos are primary evidence before both the Rent Authority and Civil Courts. Keep these 6 records ready:
@@ -1387,7 +1387,7 @@ export default function ModelTenancyActDepositRulesPage() {
                     id="heading-faqs-title"
                     className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight"
                   >
-                    Frequently Asked Questions: Model Tenancy Act Security Deposit Rules &amp; State Status
+                    FAQs: Model Tenancy Act &amp; Security Deposit Rules
                   </h2>
                   <p className="text-xs font-semibold text-slate-500 mt-1">
                     Direct Legal Answers Citing Section 11 &amp; 15 Model Tenancy Act, Second Schedule, and High Court Precedents
@@ -1420,7 +1420,7 @@ export default function ModelTenancyActDepositRulesPage() {
                   id="heading-sources-title"
                   className="text-lg sm:text-xl font-bold text-slate-900 tracking-tight"
                 >
-                  Primary Legal Sources, MoHUA Model Tenancy Act Text &amp; State Enactments
+                  Primary Legal Sources &amp; Model Tenancy Act Text
                 </h2>
                 <ol className="sources list-decimal list-inside space-y-2 text-xs sm:text-sm text-slate-600">
                   {PRIMARY_SOURCES.map((source, idx) => (

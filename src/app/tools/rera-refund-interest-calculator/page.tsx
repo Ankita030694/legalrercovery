@@ -321,7 +321,7 @@ export default function ReraRefundInterestCalculatorPage() {
                     id="heading-interpretation-table-title"
                     className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight"
                   >
-                    How to Interpret Your Result &amp; State-Wise RERA Interest Rules (MCLR + 2% vs +1%)
+                    How to Interpret Results &amp; State RERA Interest Rules
                   </h2>
                   <p className="text-xs sm:text-sm text-slate-600 mt-1">
                     Your legal remedy, interest start date, and filing forum depend on whether you want to exit the stalled project completely or retain the apartment with monthly delay compensation:
@@ -452,7 +452,7 @@ export default function ReraRefundInterestCalculatorPage() {
                   id="heading-method-legal-basis-title"
                   className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight"
                 >
-                  Method &amp; Legal Basis: How Section 18 RERA Interest Is Computed Per Instalment
+                  How Section 18 RERA Interest Is Computed Per Instalment
                 </h2>
                 <p className="text-sm sm:text-base text-slate-700 leading-relaxed">
                   Under <strong>Section 18(1) of RERA 2016</strong>, if a promoter fails to give possession of an apartment, plot, or building in accordance with the terms of the Agreement for Sale by the specified date, the allottee&apos;s right to claim a refund with interest is absolute. Unlike MSME invoices where interest compounds monthly, State RERA rules mandate <strong>simple interest calculated separately on each payment tranche</strong> from the date the builder received that tranche:
@@ -523,7 +523,7 @@ export default function ReraRefundInterestCalculatorPage() {
                   id="heading-escalation-flow-title"
                   className="text-xl sm:text-2xl font-bold text-slate-900 tracking-tight"
                 >
-                  Statutory Recovery Flowchart: From Possession Default to Section 40 Attachment
+                  Recovery Flowchart: Possession Default to Attachment
                 </h2>
                 <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
                   Follow this 5-stage legal escalation hierarchy to convert your calculated Section 18 interest schedule into an enforceable bank credit:
@@ -706,7 +706,7 @@ export default function ReraRefundInterestCalculatorPage() {
                   id="heading-worked-example-title"
                   className="text-xl sm:text-2xl font-bold text-slate-900 tracking-tight"
                 >
-                  Worked Case Study: Homebuyer Computes &amp; Recovers ₹45,00,000 Principal + ₹19,14,144 RERA Interest
+                  Case Study: Recovers ₹45L Principal + ₹19.1L RERA Interest
                 </h2>
                 <div className="bg-slate-900 text-white rounded-2xl p-5 sm:p-8 shadow-xl space-y-4 w-full overflow-hidden">
                   <div className="flex flex-wrap items-center justify-between gap-2 border-b border-slate-800 pb-3">
@@ -751,7 +751,7 @@ export default function ReraRefundInterestCalculatorPage() {
                   id="heading-evidence-checklist-title"
                   className="text-xl sm:text-2xl font-bold text-slate-900 tracking-tight"
                 >
-                  Homebuyer Evidence Checklist: 6 Documents Needed for a Section 18 Claim
+                  Evidence Checklist: 6 Documents for Section 18 Claim
                 </h2>
                 <p className="text-xs sm:text-sm text-slate-700 leading-relaxed">
                   Keep these six primary records ready under Section 63 of the Bharatiya Sakshya Adhiniyam, 2023 before serving a{" "}
@@ -866,7 +866,7 @@ export default function ReraRefundInterestCalculatorPage() {
                     id="heading-faqs-title"
                     className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight"
                   >
-                    Frequently Asked Questions: RERA Refund Interest Calculator &amp; Section 18
+                    FAQs: RERA Refund Interest Calculator &amp; Section 18
                   </h2>
                   <p className="text-xs font-semibold text-slate-500 mt-1">
                     Direct Answers Grounded in RERA 2016, State MCLR Rules, and Supreme Court Judgments

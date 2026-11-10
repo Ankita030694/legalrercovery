@@ -3,7 +3,7 @@ import AirlineRefundClient from './AirlineRefundClient';
 
 export const metadata: Metadata = {
   title: 'Legal Notice for Airline Refund Not Received in India',
-  description: 'Learn the exact legal steps and how to send a legal notice for airline refund not received. Get your refund from airlines or travel portals under the Consumer Protection Act.',
+  description: 'Learn how to send a legal notice for an airline refund not received. Recover money from airlines or travel portals under the Consumer Protection Act.',
   alternates: {
     canonical: 'https://www.legalrecovery.in/send-a-legal-notice/airline-refund-not-received',
   },

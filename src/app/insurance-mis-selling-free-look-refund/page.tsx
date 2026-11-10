@@ -350,7 +350,7 @@ export default function InsuranceMisSellingRefundPage() {
                   id="heading-overview-title"
                   className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight"
                 >
-                  Insurance Mis-Selling &amp; Free-Look Rights: Breaking Down the Industry Trap
+                  Insurance Mis-Selling &amp; Free-Look Rights Explained
                 </h2>
                 <p className="text-sm sm:text-base text-slate-700 leading-relaxed">
                   Every year, thousands of Indian consumers walk into commercial bank branches looking to renew fixed deposits or invest retirement savings, only to be lured into multi-year recurring life insurance or high-risk Unit-Linked Insurance Plans (ULIPs). Bank relationship managers and tele-callers routinely disguise these policies as &quot;guaranteed 10%–12% bank schemes&quot;, &quot;single-premium wealth plans&quot;, or &quot;pre-approved tax-free growth funds&quot;.
@@ -376,7 +376,7 @@ export default function InsuranceMisSellingRefundPage() {
                     id="heading-checklist-wizard-title"
                     className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight"
                   >
-                    Pre-Flight Checklist: Verify Your Free-Look Cancellation &amp; Mis-Selling Claim
+                    Pre-Flight Checklist: Free-Look Cancellation Claims
                   </h2>
                   <p className="text-xs font-semibold text-slate-500 mt-1">
                     Complete this 6-point verification audit before submitting your cancellation demand to ensure unassailable evidentiary standing.
@@ -392,7 +392,7 @@ export default function InsuranceMisSellingRefundPage() {
                   id="heading-evidence-matrix-title"
                   className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight"
                 >
-                  Document &amp; Evidentiary Matrix: What Proof Matters and Where to Obtain It
+                  Evidence Matrix: What Proof Matters for Free-Look
                 </h2>
                 <p className="text-sm sm:text-base text-slate-700 leading-relaxed">
                   To succeed before the Insurance Ombudsman or Consumer Commission, your case must rest on concrete documentation rather than oral allegations. Under Section 63 of the Bharatiya Sakshya Adhiniyam, 2023 (BSA), electronic communications and official bank logs carry full evidentiary weight:
@@ -512,7 +512,7 @@ export default function InsuranceMisSellingRefundPage() {
                     id="heading-myth-vs-fact-title"
                     className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight"
                   >
-                    Myth vs Fact: 6 Critical Misconceptions About Policy Cancellation &amp; Mis-Selling
+                    Myth vs Fact: 6 Misconceptions in Policy Mis-Selling
                   </h2>
                   <p className="text-xs font-semibold text-slate-500 mt-1">
                     Insurance agents rely on customer ignorance to enforce unfair lock-ins. Here is what the statutory law actually says.
@@ -564,7 +564,7 @@ export default function InsuranceMisSellingRefundPage() {
                     id="heading-case-digest-title"
                     className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight"
                   >
-                    Landmark Order Digest: 4 Verifiable Rulings on Insurance Mis-Selling &amp; Free-Look Denials
+                    4 Landmark Rulings on Insurance Mis-Selling
                   </h2>
                   <span className="text-xs font-bold text-slate-500 uppercase tracking-wider">
                     Verifiable Court Precedents
@@ -641,7 +641,7 @@ export default function InsuranceMisSellingRefundPage() {
                   id="heading-escalation-flow-title"
                   className="text-xl sm:text-2xl font-bold text-slate-900 tracking-tight"
                 >
-                  Statutory Escalation Rail: From Mis-Selling Discovery to 100% Fund Restitution
+                  Escalation Rail: Mis-Selling to 100% Restitution
                 </h2>
                 <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
                   Follow this structured statutory escalation path to bypass automated call center deflection and enforce your rights under IRDAI and consumer protection laws:
@@ -766,7 +766,7 @@ export default function InsuranceMisSellingRefundPage() {
                   id="heading-playbook-title"
                   className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight"
                 >
-                  The 5-Step Practical Playbook: How to Reclaim Mis-Sold Insurance Premiums
+                  5-Step Playbook: Reclaim Mis-Sold Insurance Premiums
                 </h2>
                 <p className="text-sm sm:text-base text-slate-700 leading-relaxed">
                   Extracted from hundreds of successful Insurance Ombudsman awards and consumer commission decrees, this tactical 5-step playbook overcomes corporate stonewalling:
@@ -857,7 +857,7 @@ export default function InsuranceMisSellingRefundPage() {
                   id="heading-deadlines-table-title"
                   className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight"
                 >
-                  Statutory Deadlines &amp; Regulatory Benchmarks: Free-Look, Refund &amp; Ombudsman Limits
+                  Statutory Deadlines: Free-Look &amp; Ombudsman Limits
                 </h2>
                 <p className="text-sm sm:text-base text-slate-700 leading-relaxed">
                   Insurers are bound by strict turnaround times under IRDAI regulations and Ministry of Finance rules. They cannot invent arbitrary delays:
@@ -957,7 +957,7 @@ export default function InsuranceMisSellingRefundPage() {
                   id="heading-worked-example-title"
                   className="text-xl sm:text-2xl font-bold text-slate-900 tracking-tight"
                 >
-                  Worked Case Study: Senior Citizen Recovers ₹2,50,000 Mis-Sold as a 3-Year Fixed Deposit
+                  Case Study: Citizen Recovers ₹2,50,000 Mis-Sold Policy
                 </h2>
                 <div className="bg-slate-900 text-white rounded-2xl p-5 sm:p-8 shadow-xl space-y-4 sm:space-y-5 w-full overflow-hidden">
                   <div className="flex flex-wrap items-center justify-between gap-2 border-b border-slate-800 pb-3">
@@ -1076,7 +1076,7 @@ Date: [CURRENT DATE]`}
                     id="heading-faqs-title"
                     className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight"
                   >
-                    Frequently Asked Questions: Insurance Mis-Selling &amp; Free-Look Refunds
+                    FAQs: Insurance Mis-Selling &amp; Free-Look Refunds
                   </h2>
                   <p className="text-xs font-semibold text-slate-500 mt-1">
                     Grounded in IRDAI Master Circular Directives, Ombudsman Orders, and Consumer Court Jurisprudence
@@ -1109,7 +1109,7 @@ Date: [CURRENT DATE]`}
                   id="heading-sources-title"
                   className="text-lg sm:text-xl font-bold text-slate-900 tracking-tight"
                 >
-                  Insurance Regulatory Authorities, Primary Statutes &amp; Official References
+                  Insurance Statutes &amp; Primary Official References
                 </h2>
                 <ol className="sources list-decimal list-inside space-y-2 text-xs sm:text-sm text-slate-600">
                   {PRIMARY_SOURCES.map((source, idx) => (

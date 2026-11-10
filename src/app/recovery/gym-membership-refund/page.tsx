@@ -3,7 +3,7 @@ import GymMembershipRefundClient from "./GymMembershipRefundClient";
 
 export const metadata: Metadata = {
   title: "Gym Membership Refund Not Received? Recover Money",
-  description: "Gym refusing to refund your membership fee? LegalRecovery provides expert legal-tech assistance to recover pro-rata refunds, fight unfair no-refund clauses, and hold fitness centres accountable under consumer law.",
+  description: "Gym refusing to refund your membership fee? Get expert legal assistance to recover pro-rata refunds and fight unfair terms under consumer law.",
   keywords: [
     "gym membership refund India",
     "fitness centre refund consumer court",

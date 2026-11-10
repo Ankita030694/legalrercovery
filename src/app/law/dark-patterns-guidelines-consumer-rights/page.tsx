@@ -32,7 +32,7 @@ const articleJsonLd = {
   "@context": "https://schema.org",
   "@type": "Article",
   "headline":
-    "Drip Pricing, Subscription Traps and Fake Urgency: Your Rights Under the Dark Patterns Guidelines",
+    "Dark Patterns Guidelines: Consumer Rights & Refund Remedies",
   "description":
     "India banned 13 dark patterns in 2023 and the 2026 rules enforce them. Learn which tricks are illegal and how to claim a refund.",
   "inLanguage": "en-IN",
@@ -184,7 +184,7 @@ export default function DarkPatternsLawPage() {
             id="hero-heading"
             className="w-full text-2xl sm:text-4xl md:text-5xl font-black text-slate-900 tracking-tight leading-snug sm:leading-tight mb-4 sm:mb-6"
           >
-            Drip Pricing, Subscription Traps and Fake Urgency: Your Rights Under the Dark Patterns Guidelines
+            Dark Patterns Guidelines: Consumer Rights &amp; Refund Remedies
           </h1>
 
           {/* Quick Answer Box directly under H1 (40-60 words) */}
@@ -235,7 +235,7 @@ export default function DarkPatternsLawPage() {
               id="key-facts-heading"
               className="w-full text-xl sm:text-2xl md:text-3xl font-black text-slate-900 tracking-tight leading-snug mb-2 sm:mb-3"
             >
-              Statutory Summary: Legal Basis, Key Deadlines, and Enforcement Authority at a Glance
+              Summary: Legal Basis, Deadlines &amp; Enforcement
             </h2>
             <p className="text-slate-600 text-sm sm:text-base mb-6">
               The Indian legal framework against deceptive web design binds all e-commerce entities, online travel agencies (OTAs), quick-commerce platforms, and digital service providers operating in India.
@@ -308,7 +308,7 @@ export default function DarkPatternsLawPage() {
               id="before-after-heading"
               className="w-full text-xl sm:text-2xl md:text-3xl font-black text-slate-900 tracking-tight leading-snug mb-2 sm:mb-3"
             >
-              Before vs. After: How India&apos;s Dark Patterns Framework Rewrote Consumer Refund Rights
+              Before vs After: India's Dark Patterns Framework
             </h2>
             <p className="text-slate-600 text-sm sm:text-base mb-6">
               Before the 2023 CCPA Guidelines and 2026 E-Commerce Amendment Rules, digital platforms treated deceptive design as harmless marketing. Here is how statutory consumer rights and refund entitlements changed.
@@ -437,7 +437,7 @@ export default function DarkPatternsLawPage() {
               id="timeline-heading"
               className="w-full text-xl sm:text-2xl md:text-3xl font-black text-slate-900 tracking-tight leading-snug mb-2 sm:mb-3"
             >
-              Statutory Evolution Timeline: From Consumer Protection Act 2019 to 2026 E-Commerce Enactments
+              Statutory Timeline: CPA 2019 to 2026 Regulations
             </h2>
             <p className="text-slate-600 text-sm sm:text-base mb-8">
               The regulation of dark patterns in India evolved through statutory acts, inter-ministerial task forces, regulatory notifications, and the 2026 marketplace amendment rules.
@@ -547,7 +547,7 @@ export default function DarkPatternsLawPage() {
               id="dark-patterns-anatomy"
               className="w-full text-xl sm:text-2xl md:text-3xl font-black text-slate-900 tracking-tight leading-snug mb-2 sm:mb-3"
             >
-              The Anatomy of Deceptive Design: 13 Prohibited Dark Patterns and Their Refund Implications
+              13 Prohibited Dark Patterns &amp; Refund Rights
             </h2>
             <p className="text-slate-600 text-sm sm:text-base mb-6">
               Annexure-1 of the 2023 Guidelines explicitly enumerates 13 prohibited dark patterns. Understanding the technical implementations of the six most damaging patterns is critical for proving your claim before consumer commissions.
@@ -693,7 +693,7 @@ export default function DarkPatternsLawPage() {
               id="flowchart-heading"
               className="w-full text-xl sm:text-2xl md:text-3xl font-black text-slate-900 tracking-tight leading-snug mb-2 sm:mb-3"
             >
-              Hand-Authored Process: Deceptive Design Detection and Statutory Escalation Flow
+              Deceptive Design Detection &amp; Statutory Escalation
             </h2>
             <p className="text-slate-600 text-sm sm:text-base mb-6">
               This sequential flowchart details the legal and evidentiary journey from detecting a prohibited dark pattern to securing an enforceable refund or consumer court compensation.
@@ -784,7 +784,7 @@ export default function DarkPatternsLawPage() {
               id="grey-areas-heading"
               className="w-full text-xl sm:text-2xl md:text-3xl font-black text-slate-900 tracking-tight leading-snug mb-2 sm:mb-3"
             >
-              Regulatory Grey Areas and Open Legal Questions in Dark Pattern Enforcement
+              Regulatory Grey Areas in Dark Pattern Enforcement
             </h2>
             <p className="text-slate-600 text-sm sm:text-base mb-6">
               While the 2023 Guidelines and 2026 Amendment Rules establish clear prohibitions, several technical and judicial grey areas remain contested. Items marked with † reflect developing commentary or transitional rules.
@@ -961,7 +961,7 @@ export default function DarkPatternsLawPage() {
               id="worked-scenario-heading"
               className="w-full text-xl sm:text-2xl md:text-3xl font-black text-slate-900 tracking-tight leading-snug mb-2 sm:mb-3"
             >
-              Illustrative Worked Scenario: Recovering ₹5,498 in Drip Charges, Sneaked Add-Ons, and Trapped Subscriptions
+              Case Study: Recovers ₹5,498 in Drip Charges &amp; Add-Ons
             </h2>
             <p className="text-slate-600 text-sm sm:text-base mb-6">
               This case study illustrates how deceptive checkout practices compound across a single digital transaction and how statutory notice escalation secures total restitution.
@@ -1018,7 +1018,7 @@ export default function DarkPatternsLawPage() {
               id="caselaw-heading"
               className="w-full text-xl sm:text-2xl md:text-3xl font-black text-slate-900 tracking-tight leading-snug mb-2 sm:mb-3"
             >
-              Judicial Precedents and CCPA Enforcement Actions Against Deceptive Digital Practices
+              CCPA Enforcement Actions &amp; Judicial Precedents
             </h2>
             <p className="text-slate-600 text-sm sm:text-base mb-6">
               Indian consumer commissions and the CCPA have firmly penalized e-commerce platforms, travel aggregators, and quick-commerce operators for deceptive UI design. Below are three verified judicial precedents establishing consumer refund rights.
@@ -1107,7 +1107,7 @@ export default function DarkPatternsLawPage() {
               id="evidence-checklist-heading"
               className="w-full text-xl sm:text-2xl md:text-3xl font-black text-slate-900 tracking-tight leading-snug mb-2 sm:mb-3"
             >
-              Digital Evidence Preservation Checklist: Admissibility Under Section 63 BSA
+              Digital Evidence Checklist Under Section 63 BSA
             </h2>
             <p className="text-slate-600 text-sm sm:text-base mb-6">
               Under Section 63 of the <strong>Bharatiya Sakshya Adhiniyam, 2023</strong> (replacing Section 65B of the Indian Evidence Act), electronic records are admissible when accompanied by a compliant certificate. Collect these items before notifying the platform.
@@ -1187,7 +1187,7 @@ export default function DarkPatternsLawPage() {
               id="scope-heading"
               className="w-full text-xl sm:text-2xl md:text-3xl font-black text-slate-900 tracking-tight leading-snug mb-2 sm:mb-3"
             >
-              Platform Scope and Legal Action Boundaries: What LegalRecovery Does and Does Not Do
+              Scope &amp; Boundaries: What LegalRecovery Does &amp; Does Not Do
             </h2>
             <p className="text-slate-600 text-sm sm:text-base mb-6">
               To ensure transparency and realistic consumer expectations, here is an explicit statement of our legal platform&apos;s capabilities and boundaries.
@@ -1232,7 +1232,7 @@ export default function DarkPatternsLawPage() {
               id="faq-heading"
               className="w-full text-xl sm:text-2xl md:text-3xl font-black text-slate-900 tracking-tight leading-snug mb-2 sm:mb-3"
             >
-              Frequently Asked Questions About Dark Patterns Guidelines and Refund Claims in India
+              FAQs: Dark Patterns Guidelines &amp; Refund Claims
             </h2>
             <p className="text-slate-600 text-sm sm:text-base mb-6">
               Answers to the most frequent queries regarding deceptive web design, unconsented billing, CCPA complaints, and consumer refund rights under Indian law.
@@ -1269,7 +1269,7 @@ export default function DarkPatternsLawPage() {
               id="sources-heading"
               className="text-xl sm:text-2xl font-black text-slate-900 tracking-tight mb-4"
             >
-              Primary Legal Sources, Gazette Notifications, and Regulatory References
+              Primary Legal Sources &amp; CCPA Gazette Notifications
             </h2>
             <p className="text-slate-600 text-xs sm:text-sm mb-4">
               All statutory sections, deadlines, and precedents cited on this page are verified against official gazette notifications and primary statutory repositories:

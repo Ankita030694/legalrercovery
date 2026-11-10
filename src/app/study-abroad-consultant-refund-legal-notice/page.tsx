@@ -352,7 +352,7 @@ export default function StudyAbroadConsultantRefundPage() {
                   id="heading-overview-title"
                   className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight"
                 >
-                  The Reality of Overseas Education Contracts: Why Consultants Forfeit Fees Unlawfully
+                  Why Study Abroad Consultants Forfeit Fees Illegally
                 </h2>
                 <p className="text-sm sm:text-base text-slate-700 leading-relaxed">
                   Every year, hundreds of thousands of Indian students aspire to pursue higher education abroad in destinations like Canada, the United Kingdom, the United States, Australia, and Germany. To navigate complex university admissions, standardized test requirements, and student visa regulations, families engage private study-abroad consultants and overseas education immigration agents, paying retainers ranging from ₹50,000 to over ₹4,00,000.
@@ -482,7 +482,7 @@ export default function StudyAbroadConsultantRefundPage() {
                     id="heading-precedents-title"
                     className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight"
                   >
-                    Binding Court Precedents: Judicial Orders Against Overseas Study Agents
+                    Court Precedents Against Overseas Study Agents
                   </h2>
                   <p className="text-xs sm:text-sm text-slate-500 mt-1">
                     Verified judgments from the National Consumer Commission (NCDRC) and State Commissions establishing consultant liability

@@ -320,7 +320,7 @@ export default function CopyrightNotTransferredFreelancerPage() {
                   id="heading-section17-19-title"
                   className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight"
                 >
-                  Why Your Client Does Not Own Your Work Until They Pay: Section 17 &amp; Section 19 Explained
+                  Why Clients Do Not Own Your Work Until They Pay
                 </h2>
                 <p className="text-sm sm:text-base text-slate-700 leading-relaxed">
                   Yes—under Indian law, delivering final design files, source code, copywriting, or video renders to a client does <strong>not</strong> transfer copyright ownership unless the statutory requirements of Sections 17, 18, and 19 of the Copyright Act, 1957 are satisfied. When a client ghosts on your final milestone invoice and deploys your work on their website, app, or social media ads, they are not merely delaying a commercial bill—they are committing actionable copyright infringement under Section 51 of the Copyright Act.
@@ -379,7 +379,7 @@ export default function CopyrightNotTransferredFreelancerPage() {
                   id="heading-discipline-matrix-title"
                   className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight"
                 >
-                  Copyright Ownership &amp; Statutory Leverage Matrix by Creative Discipline
+                  Copyright Ownership Matrix by Creative Discipline
                 </h2>
                 <p className="text-sm sm:text-base text-slate-700 leading-relaxed">
                   Under the Copyright Act, 1957, different freelance deliverables fall into distinct statutory classifications (`literary`, `artistic`, `musical`, `dramatic`, or `cinematograph` works). Use this table to identify your exact statutory hook and takedown target before sending a legal notice:
@@ -448,7 +448,7 @@ export default function CopyrightNotTransferredFreelancerPage() {
                   id="heading-escalation-flow-title"
                   className="text-xl sm:text-2xl font-bold text-slate-900 tracking-tight"
                 >
-                  How Copyright Leverage Forces Unpaid Invoice Settlement: The 5-Stage Escalation Flow
+                  5-Stage Escalation Flow for Unpaid Invoices
                 </h2>
                 <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
                   Unlike a passive payment reminder that a shameless client can ignore for months, a copyright-backed escalation threatens the client&apos;s live revenue channels at every step:
@@ -579,7 +579,7 @@ export default function CopyrightNotTransferredFreelancerPage() {
                     id="heading-case-digest-title"
                     className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight"
                   >
-                    Landmark High Court Judgments on Commissioned Work, Section 19 &amp; Creator Rights
+                    High Court Judgments on Section 19 &amp; Creator Rights
                   </h2>
                   <span className="text-xs font-bold text-slate-500 uppercase tracking-wider">
                     Verifiable Judicial Records
@@ -656,7 +656,7 @@ export default function CopyrightNotTransferredFreelancerPage() {
                   id="heading-playbook-title"
                   className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight"
                 >
-                  How to Use Copyright Takedowns and Cease-and-Desist Notices Legally: 5-Step Playbook
+                  5-Step Playbook for Copyright Takedowns &amp; Notices
                 </h2>
                 <p className="text-sm sm:text-base text-slate-700 leading-relaxed">
                   Never resort to illegal self-help such as defacing a client&apos;s live website or planting malicious code (which could expose you to liability under Section 43/66 of the IT Act). Instead, execute this clean, high-impact statutory escalation protocol that puts the legal risk squarely on the defaulting client:
@@ -831,7 +831,7 @@ export default function CopyrightNotTransferredFreelancerPage() {
                   id="heading-worked-example-title"
                   className="text-xl sm:text-2xl font-bold text-slate-900 tracking-tight"
                 >
-                  Worked Case Study: UI/UX Designer Recovers ₹3,40,000 After Serving a Section 19 Cease-and-Desist Notice
+                  Case Study: Designer Recovers ₹3,40,000 via Notice
                 </h2>
                 <div className="bg-slate-900 text-white rounded-2xl p-5 sm:p-8 shadow-xl space-y-4 sm:space-y-5 w-full overflow-hidden">
                   <div className="flex flex-wrap items-center justify-between gap-2 border-b border-slate-800 pb-3">
@@ -985,7 +985,7 @@ export default function CopyrightNotTransferredFreelancerPage() {
                     id="heading-faqs-title"
                     className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight"
                   >
-                    Frequently Asked Questions: Freelancer Copyright, Section 19 &amp; Unpaid Client Work
+                    FAQs: Freelancer Copyright &amp; Section 19 Work
                   </h2>
                   <p className="text-xs font-semibold text-slate-500 mt-1">
                     Direct Statutory Answers Grounded in the Indian Copyright Act, 1957 and High Court Precedents
@@ -1042,7 +1042,7 @@ export default function CopyrightNotTransferredFreelancerPage() {
               {/* Primary CTA */}
               <section id="heading-cta-block" aria-labelledby="heading-cta-block-title" className="w-full">
                 <h2 id="heading-cta-block-title" className="sr-only">
-                  Send a Copyright Cease-and-Desist and Payment Demand Notice to Your Unpaid Client
+                  Send a Copyright Cease-and-Desist Demand Notice
                 </h2>
                 <CopyrightFreelancerNoticeCTA variant="primary" />
               </section>

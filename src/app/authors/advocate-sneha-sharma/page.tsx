@@ -3,7 +3,7 @@ import Link from 'next/link';
 
 export const metadata: Metadata = {
   title: 'Advocate Sneha Sharma - Civil Litigation & ODR Expert',
-  description: 'Advocate Sneha Sharma is an expert in civil litigation, commercial contracts, and Online Dispute Resolution (ODR) with a strong track record of debt recovery.',
+  description: 'Advocate Sneha Sharma is an expert in civil litigation, commercial law, and Online Dispute Resolution with a proven track record in debt recovery.',
   alternates: {
     canonical: 'https://www.legalrecovery.in/authors/advocate-sneha-sharma',
   },

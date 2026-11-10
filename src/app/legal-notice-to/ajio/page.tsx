@@ -296,7 +296,7 @@ export default function AjioLegalNoticePage() {
               id="heading-orders-digest"
               className="text-2xl sm:text-3xl font-black text-slate-900 tracking-tight"
             >
-              What Have Consumer Courts Ordered AJIO and Reliance Retail to Pay for Stuck Refunds?
+              Consumer Court Orders Against AJIO &amp; Reliance Retail
             </h2>
             <p className="text-sm sm:text-base text-slate-600 mt-2 leading-relaxed">
               District and State Consumer Disputes Redressal Commissions across India consistently hold Reliance Retail Limited strictly accountable for undelivered parcels, arbitrary return rejections, and unpaid refunds. When informal chat bots and customer care telephone queues stall your refund, these four verified orders establish the exact compensation consumer forums award.
@@ -584,7 +584,7 @@ export default function AjioLegalNoticePage() {
               id="heading-recovery-playbook"
               className="text-2xl sm:text-3xl font-black text-slate-900 tracking-tight"
             >
-              What Is the 5-Step Legal Playbook to Recover Your Money When an AJIO Refund Is Stuck?
+              5-Step Legal Playbook to Recover Stuck AJIO Refunds
             </h2>
             <p className="text-sm sm:text-base text-slate-600 mt-2 leading-relaxed">
               Based on judicial outcomes across consumer commissions, here is the proven 5-step escalation ladder that compels Reliance Retail Limited to disburse withheld refunds, interest, and costs without unnecessary litigation delays.
@@ -711,7 +711,7 @@ export default function AjioLegalNoticePage() {
               id="heading-deadlines-table"
               className="text-2xl sm:text-3xl font-black text-slate-900 tracking-tight mb-4"
             >
-              How Long Does an AJIO Refund Take and What Are Reliance Retail&apos;s Statutory Deadlines?
+              AJIO Refund Timeline &amp; Reliance Statutory Deadlines
             </h2>
             <p className="text-sm sm:text-base text-slate-600 leading-relaxed mb-6">
               The table below outlines the exact statutory and banking deadlines governing AJIO orders, based on the Consumer Protection (E-Commerce) Rules 2020, RBI digital payment directions, and consumer court precedents.
@@ -839,7 +839,7 @@ export default function AjioLegalNoticePage() {
               id="heading-process-flowchart"
               className="text-2xl sm:text-3xl font-black text-slate-900 tracking-tight"
             >
-              How Does an AJIO Refund Dispute Flow From Quality Check Rejection to Legal Settlement?
+              AJIO Refund Dispute Flow: QC Rejection to Settlement
             </h2>
             <p className="text-sm sm:text-base text-slate-600 mt-2 leading-relaxed">
               When an item is returned, AJIO&apos;s automated pipeline often breaks during reverse warehouse quality audits or payment gateway settlement. Understanding the physical and legal flow reveals exactly where funds become stranded and when legal intervention forces resolution.
@@ -947,7 +947,7 @@ export default function AjioLegalNoticePage() {
               id="heading-evidence-checklist"
               className="text-2xl sm:text-3xl font-black text-slate-900 tracking-tight mb-4"
             >
-              What Evidence Must You Preserve Before Sending a Legal Notice to Reliance Retail?
+              Evidence Checklist Before Serving AJIO Legal Notice
             </h2>
             <p className="text-sm sm:text-base text-slate-600 leading-relaxed mb-6">
               Under Section 63 of the Bharatiya Sakshya Adhiniyam, 2023 (BSA), electronic records including transactional emails, courier SMS alerts, and app screenshots are directly admissible as primary evidence in consumer court when preserved correctly.
@@ -1042,7 +1042,7 @@ export default function AjioLegalNoticePage() {
               id="heading-worked-example"
               className="text-2xl sm:text-3xl font-black text-slate-900 tracking-tight"
             >
-              Illustrative Resolution: How a ₹14,890 AJIO Return Rejection Was Resolved Through Legal Escalation
+              Case Study: Resolving a ₹14,890 AJIO Return Rejection
             </h2>
             <p className="text-sm sm:text-base text-slate-600 mt-2 leading-relaxed">
               The following illustrative case study demonstrates how an advocate legal notice overcomes an automated &quot;return rejected due to quality check failure&quot; cycle.
@@ -1180,7 +1180,7 @@ export default function AjioLegalNoticePage() {
               id="heading-faqs"
               className="text-2xl sm:text-3xl font-black text-slate-900 tracking-tight"
             >
-              Frequently Asked Questions About AJIO Refunds, Return Rejections &amp; Legal Recourse
+              FAQs: AJIO Refunds, Return Rejections &amp; Legal Remedies
             </h2>
             <p className="text-sm sm:text-base text-slate-600 mt-2 leading-relaxed">
               Clear, statute-backed answers to the most common queries raised by consumers facing stuck AJIO refunds and return discrepancies.
@@ -1305,7 +1305,7 @@ export default function AjioLegalNoticePage() {
               id="heading-sources"
               className="text-lg sm:text-xl font-bold text-slate-900 mb-3"
             >
-              Statutory References and Primary Legal Authorities Governing AJIO Disputes
+              Primary Legal Authorities Governing AJIO Disputes
             </h2>
             <p className="text-xs sm:text-sm text-slate-600 mb-4">
               All statutory timelines, platform duties, and consumer court precedents referenced on this page are verified against official gazettes, government portals, and judicial orders:

@@ -471,7 +471,7 @@ export default function CarpetAreaShortfallRefundPage() {
                   id="heading-legal-basis-title"
                   className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight"
                 >
-                  What RERA Sections Govern Carpet Area Measurement and Proportionate Refunds?
+                  What RERA Sections Govern Carpet Area Refunds?
                 </h2>
                 <p className="text-sm sm:text-base text-slate-700 leading-relaxed">
                   Before the enactment of the Real Estate (Regulation and Development) Act, 2016 (RERA), builders across India routinely sold apartments on nebulous &ldquo;Super Built-Up Area&rdquo; or &ldquo;Saleable Area&rdquo;, inflating flat sizes by 30% to 48% through invisible common-area loading. Parliament abolished this practice by enacting a mandatory, nationwide definition of <strong>Carpet Area under Section 2(k)</strong> and making proportionate refunds compulsory under the statutory Model Agreement for Sale:
@@ -629,7 +629,7 @@ export default function CarpetAreaShortfallRefundPage() {
                   id="heading-step-playbook-title"
                   className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight"
                 >
-                  How to Measure Your Flat and Claim a Proportionate Refund: 6-Step Playbook
+                  6-Step Playbook: Flat Measurement &amp; Refund Claim
                 </h2>
                 <p className="text-sm sm:text-base text-slate-700 leading-relaxed">
                   Builders routinely dismiss verbal complaints or smartphone tape-measure photos by claiming &ldquo;your measurement method is wrong&rdquo;. To make your carpet-area shortfall legally unassailable in RERA or Consumer Court, execute these six steps in sequence:
@@ -728,7 +728,7 @@ export default function CarpetAreaShortfallRefundPage() {
                   id="heading-mistakes-avoid-title"
                   className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight"
                 >
-                  5 Costly Mistakes Homebuyers Make When Challenging Flat Size Shortfalls
+                  5 Costly Mistakes When Challenging Size Shortfalls
                 </h2>
                 <p className="text-sm sm:text-base text-slate-700 leading-relaxed">
                   Builder legal teams rely on predictable buyer measurement errors and procedural missteps to get carpet-area complaints dismissed or reduced. Avoid these five mistakes:
@@ -814,7 +814,7 @@ export default function CarpetAreaShortfallRefundPage() {
                     id="heading-case-digest-title"
                     className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight"
                   >
-                    Landmark Supreme Court &amp; NCDRC Rulings on Carpet Area Shortfalls and Super Area Inflation
+                    Supreme Court &amp; NCDRC Rulings on Area Shortfall
                   </h2>
                   <span className="text-xs font-bold text-slate-500 uppercase tracking-wider">
                     Verifiable Judicial Precedents
@@ -891,7 +891,7 @@ export default function CarpetAreaShortfallRefundPage() {
                   id="heading-escalation-flow-title"
                   className="text-xl sm:text-2xl font-bold text-slate-900 tracking-tight"
                 >
-                  Statutory Resolution Flow: From Laser Measurement at PDI to Proportionate Bank Refund
+                  Resolution Flow: Laser Measurement to Bank Refund
                 </h2>
                 <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
                   How homebuyers convert an architect&apos;s carpet-area measurement report into a direct possession-demand credit or an enforceable RERA refund order:
@@ -1029,7 +1029,7 @@ export default function CarpetAreaShortfallRefundPage() {
                     id="heading-builder-defences-title"
                     className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight"
                   >
-                    Super Area vs. Carpet Area Disputes: Builder Excuses &amp; Statutory Counter-Moves
+                    Super vs Carpet Area: Builder Excuses &amp; Legal Fixes
                   </h2>
                   <p className="text-xs font-semibold text-slate-500 mt-1">
                     Select Any Common Builder Defence Below to See Why It Fails Under RERA Section 2(k) and Supreme Court Law
@@ -1045,7 +1045,7 @@ export default function CarpetAreaShortfallRefundPage() {
                   id="heading-worked-example-title"
                   className="text-xl sm:text-2xl font-bold text-slate-900 tracking-tight"
                 >
-                  Worked Calculation &amp; Case Study: Homebuyer Recovers ₹9,36,000 Principal + ₹3,84,120 Interest for 78 Sq. Ft. Carpet Area Shortfall
+                  Case Study: Recovers ₹9.36L for Carpet Area Shortfall
                 </h2>
                 <div className="bg-slate-900 text-white rounded-2xl p-5 sm:p-8 shadow-xl space-y-4 sm:space-y-5 w-full overflow-hidden">
                   <div className="flex flex-wrap items-center justify-between gap-2 border-b border-slate-800 pb-3">
@@ -1126,7 +1126,7 @@ export default function CarpetAreaShortfallRefundPage() {
                   id="heading-evidence-checklist-title"
                   className="text-xl sm:text-2xl font-bold text-slate-900 tracking-tight"
                 >
-                  Evidence Checklist: 6 Documents Required to Prove a Carpet Area Shortfall in RERA or Consumer Court
+                  Evidence Checklist: 6 Documents for Area Shortfall
                 </h2>
                 <p className="text-xs sm:text-sm text-slate-700 leading-relaxed">
                   Under Section 63 of the Bharatiya Sakshya Adhiniyam, 2023 (BSA), digital brochures, CAD measurement files, and email logs are fully admissible. Assemble these 6 records before dispatching your legal notice:
@@ -1189,7 +1189,7 @@ export default function CarpetAreaShortfallRefundPage() {
                   id="heading-honest-scope-title"
                   className="text-xl sm:text-2xl font-bold text-slate-900 tracking-tight"
                 >
-                  Honest Scope: What LegalRecovery Can and Cannot Do for Your Carpet Area Dispute
+                  Scope &amp; Boundaries: What LegalRecovery Can and Cannot Do
                 </h2>
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                   <div className="bg-white rounded-2xl border border-emerald-200 p-5 shadow-xs space-y-2.5">
@@ -1223,7 +1223,7 @@ export default function CarpetAreaShortfallRefundPage() {
                     id="heading-faqs-title"
                     className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight"
                   >
-                    Frequently Asked Questions: Carpet Area Less Than Promised, RERA Rules &amp; Refund Calculation
+                    FAQs: Carpet Area Shortfall, RERA Rules &amp; Refunds
                   </h2>
                   <p className="text-xs font-semibold text-slate-500 mt-1">
                     Direct Answers Anchored in RERA Section 2(k), Model Agreement Clause 1.7 &amp; Supreme Court Judgments
@@ -1256,7 +1256,7 @@ export default function CarpetAreaShortfallRefundPage() {
                   id="heading-sources-title"
                   className="text-lg sm:text-xl font-bold text-slate-900 tracking-tight"
                 >
-                  Primary Statutes, RERA Rules, BIS Measurement Standards &amp; Supreme Court References
+                  Primary RERA Rules, BIS Standards &amp; Court References
                 </h2>
                 <ol className="sources list-decimal list-inside space-y-2 text-xs sm:text-sm text-slate-600">
                   {PRIMARY_SOURCES.map((source, idx) => (

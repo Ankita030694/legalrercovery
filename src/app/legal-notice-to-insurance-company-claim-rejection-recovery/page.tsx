@@ -3,7 +3,7 @@ import InsuranceClaimRecoveryClient from "./InsuranceClaimRecoveryClient";
 
 export const metadata: Metadata = {
   title: "Legal Notice to Insurance Company for Rejected Claim",
-  description: "Health, mediclaim, or motor insurance claim rejected on false pre-existing disease or technical grounds? Serve an Advocate Legal Notice to the insurer & escalate to Insurance Ombudsman.",
+  description: "Insurance claim rejected on unfair or technical grounds? Send an advocate legal notice to the insurer and escalate to the Insurance Ombudsman.",
   keywords: [
     "legal notice to insurance company for rejecting claim",
     "legal notice to insurance company for claim rejection",

@@ -5,7 +5,8 @@ import Link from "next/link";
 import Script from "next/script";
 import TableOfContents from "@/components/TableOfContents";
 import Breadcrumbs from "@/components/Breadcrumbs";
-import { PaymentModal } from "@/components/PaymentModal";
+import dynamic from "next/dynamic";
+const PaymentModal = dynamic(() => import("@/components/PaymentModal").then(mod => mod.PaymentModal), { ssr: false });
 
 // FAQ data for rendering and Schema
 const faqs = [

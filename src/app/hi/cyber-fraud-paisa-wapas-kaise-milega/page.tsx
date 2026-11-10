@@ -453,7 +453,7 @@ export default function CyberFraudHindiPage() {
                   आरबीआई वैधानिक देयता मैट्रिक्स • RBI Circular 2017 &amp; TAT Rules
                 </div>
                 <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 mb-4">
-                  साइबर फ्रॉड में बैंक की जिम्मेदारी व ग्राहक देनदारी तालिका (RBI Liability Matrix)
+                  साइबर फ्रॉड में बैंक व ग्राहक देनदारी तालिका (RBI Matrix)
                 </h2>
                 <p className="text-sm sm:text-base text-slate-700 leading-relaxed mb-6">
                   <strong>भारतीय रिज़र्व बैंक (Reserve Bank of India) के सर्कुलर DBR.No.Leg.BC.78/09.07.005/2017-18 के तहत अनधिकृत इलेक्ट्रॉनिक बैंकिंग धोखाधड़ी में ग्राहक की देनदारी केवल इस बात पर तय होती है कि उसने बैंक को कितने दिनों के भीतर सूचित किया है।</strong> नीचे दी गई तालिका में रिपोर्टिंग समय, ग्राहक की अधिकतम देयता, बैंक का रिफंड दायित्व और वैधानिक नियम स्पष्ट दिए गए हैं:
@@ -575,7 +575,7 @@ export default function CyberFraudHindiPage() {
                   सच्चाई बनाम भ्रम • कानूनी अधिकार जानें
                 </div>
                 <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 mb-4">
-                  साइबर फ्रॉड और बैंक रिफंड: 5 आम गलतफहमियां बनाम कानूनी सच्चाई (Myth vs Fact)
+                  साइबर फ्रॉड व बैंक रिफंड: 5 भ्रांतियां बनाम सच (Myth vs Fact)
                 </h2>
                 <p className="text-sm sm:text-base text-slate-700 leading-relaxed mb-6">
                   अक्सर बैंक कर्मचारी या सोशल मीडिया की आधी-अधूरी जानकारी के कारण लोग अपना डूबा पैसा वापस पाने की उम्मीद छोड़ देते हैं। कानून इस बारे में क्या कहता है, यह समझना बेहद जरूरी है:
@@ -617,7 +617,7 @@ export default function CyberFraudHindiPage() {
                   न्यायिक नजीरें • High Court, NCDRC &amp; Banking Ombudsman Awards
                 </div>
                 <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 mb-4">
-                  कोर्ट व बैंकिंग लोकपाल के ऐतिहासिक फैसले: पीड़ितों को कैसे मिला पूरा पैसा?
+                  कोर्ट व बैंकिंग लोकपाल के फैसले: पीड़ितों को कैसे मिला पैसा?
                 </h2>
                 <p className="text-sm sm:text-base text-slate-700 leading-relaxed mb-6">
                   भारतीय अदालतों और बैंकिंग लोकपाल ने बार-बार स्पष्ट किया है कि बैंक आधुनिक डिजिटल भुगतान प्रणालियों के संरक्षक (Trustee of Public Funds) हैं। यदि सुरक्षा में चूक होती है या बैंक बिना फॉरेंसिक जांच के दावा खारिज करता है, तो बैंकों को शत-प्रतिशत हर्जाना भुगतना पड़ेगा:
@@ -775,7 +775,7 @@ export default function CyberFraudHindiPage() {
                   विस्तृत कार्ययोजना • Step-by-Step Recovery Playbook
                 </div>
                 <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 mb-4">
-                  फ्रॉड के बाद पैसा वापस पाने की 5-चरणीय कानूनी प्रक्रिया (Step-by-Step Guide)
+                  फ्रॉड के बाद पैसा वापसी की 5-चरणीय कानूनी प्रक्रिया
                 </h2>
                 <p className="text-sm sm:text-base text-slate-700 leading-relaxed mb-6">
                   यदि आपके खाते से पैसे कट गए हैं, तो घबराने की बजाय तुरंत इन 5 कानूनी कदमों का क्रमबद्ध पालन करें:
@@ -925,7 +925,7 @@ export default function CyberFraudHindiPage() {
                   वास्तविक केस स्टडी • Illustrative Worked Case Study
                 </div>
                 <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 mb-4">
-                  केस स्टडी: श्री राहुल का फर्जी UPI ट्रांसफर से कटा ₹85,000 कैसे 100% वापस मिला?
+                  केस स्टडी: फर्जी UPI ट्रांसफर से कटा ₹85,000 कैसे वापस मिला?
                 </h2>
                 <p className="text-sm sm:text-base text-slate-700 leading-relaxed mb-6">
                   नीचे दी गई वास्तविक समय सारिणी दर्शाती है कि सही समय पर सटीक कानूनी प्रक्रिया अपनाने से कैसे डूबा हुआ पैसा वापस आता है:
@@ -986,7 +986,7 @@ export default function CyberFraudHindiPage() {
                   दस्तावेज चेकलिस्ट • Evidentiary Checklist
                 </div>
                 <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 mb-4">
-                  साइबर फ्रॉड क्लेम के लिए जरूरी दस्तावेज व साक्ष्य (Mandatory Evidence Checklist)
+                  साइबर फ्रॉड क्लेम के लिए जरूरी दस्तावेज व साक्ष्य Checklist
                 </h2>
                 <p className="text-sm sm:text-base text-slate-700 leading-relaxed mb-6">
                   भारतीय साक्ष्य अधिनियम, 2023 की धारा 63 (Section 63 BSA 2023) के तहत डिजिटल साक्ष्यों को अदालत में मान्यता प्राप्त है। बैंक या लोकपाल में शिकायत करते समय इन 6 दस्तावेजों को तैयार रखें:

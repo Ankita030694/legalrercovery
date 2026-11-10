@@ -343,7 +343,7 @@ export default function TelegramTaskScamRecoveryPage() {
                   id="heading-overview-title"
                   className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight"
                 >
-                  The Anatomy of a Telegram Task Scam: How the 4-Stage Fraud Traps Victims
+                  Anatomy of a Telegram Task Scam: 4-Stage Fraud Trap
                 </h2>
                 <p className="text-sm sm:text-base text-slate-700 leading-relaxed">
                   Telegram task and review scams represent one of India&apos;s fastest-growing cyber financial syndicates, siphoning thousands of crores annually through organised mule banking channels. Unlike standard phishing where credentials are stolen, task scams rely on sophisticated psychological manipulation, initial bait payouts, and social proof to coerce victims into voluntarily sending their own money.
@@ -789,7 +789,7 @@ export default function TelegramTaskScamRecoveryPage() {
                       />
                     </svg>
                     <h2 id="heading-secondary-scams-title" className="text-base sm:text-lg font-black tracking-tight text-red-900">
-                      Beware the Double-Scam: How to Spot Fake &apos;Cyber Recovery Agents&apos;
+                      Beware Double-Scams: Spot Fake Cyber Recovery Agents
                     </h2>
                   </div>
 

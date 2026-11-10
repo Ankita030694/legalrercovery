@@ -312,7 +312,7 @@ export default function BlinkitLegalNoticePage() {
                 id="case-law-digest-heading"
                 className="text-2xl sm:text-3xl font-extrabold text-slate-950 tracking-tight"
               >
-                What Have Consumer Commissions Ordered Blinkit (Blink Commerce) to Pay for Missing Items &amp; Denied Refunds?
+                Consumer Commission Orders Against Blinkit for Denied Refunds
               </h2>
               <p className="text-slate-600 text-sm sm:text-base mt-2">
                 Quick-commerce aggregators frequently attempt to dismiss consumer complaints by citing internal automated packing checks or terms of service disclaimers. Below are verified consumer forum orders where District Commissions rejected these defenses, ordering full refunds alongside substantial financial penalties.
@@ -537,7 +537,7 @@ export default function BlinkitLegalNoticePage() {
                 id="pattern-analysis-heading"
                 className="text-2xl sm:text-3xl font-extrabold text-slate-950 tracking-tight"
               >
-                Why Quick-Commerce Automated Chatbot Denials Fail in Consumer Courts: Key Judicial Findings
+                Why Automated Chatbot Denials Fail in Consumer Courts
               </h2>
               <p className="text-slate-600 text-sm sm:text-base mt-2">
                 Examining orders passed against Blinkit and quick-commerce operators reveals clear recurring judicial principles. Knowing these patterns ensures your legal notice and dispute filings bypass algorithmic dismissals.
@@ -618,7 +618,7 @@ export default function BlinkitLegalNoticePage() {
                 id="playbook-heading"
                 className="text-2xl sm:text-3xl font-extrabold text-slate-950 tracking-tight"
               >
-                The 5-Step Quick-Commerce Legal Playbook: From Chat Escalation to District Commission Order
+                5-Step Legal Playbook: Chat Escalation to Commission Order
               </h2>
               <p className="text-slate-600 text-sm sm:text-base mt-2">
                 Derived directly from successful consumer commission judgments, this sequential escalation model breaks through Blinkit&apos;s automated support barricades and compels monetary recovery.
@@ -748,7 +748,7 @@ export default function BlinkitLegalNoticePage() {
                 id="deadlines-fact-table-heading"
                 className="text-2xl sm:text-3xl font-extrabold text-slate-950 tracking-tight"
               >
-                What Are Blinkit&apos;s Statutory Deadlines for Refunds Under the E-Commerce Rules?
+                Blinkit Statutory Refund Timelines Under E-Commerce Rules
               </h2>
               <p className="text-slate-600 text-sm sm:text-base mt-2">
                 The rights, deadlines, and corporate escalation details governing grocery refund disputes with Blink Commerce Private Limited are codified under Central Consumer Protection rules.
@@ -893,7 +893,7 @@ export default function BlinkitLegalNoticePage() {
                 id="flowchart-heading"
                 className="text-2xl sm:text-3xl font-extrabold text-slate-950 tracking-tight"
               >
-                How a Quick-Commerce Delivery Dispute Escalates to Legal Settlement: Money &amp; Liability Flow
+                Quick-Commerce Dispute Escalation &amp; Liability Flow
               </h2>
               <p className="text-slate-600 text-sm sm:text-base mt-2">
                 This diagram illustrates the lifecycle of a failed Blinkit grocery delivery—from dark-store picking failure through automated chatbot barriers to pre-litigation advocate notice settlement.
@@ -1015,7 +1015,7 @@ export default function BlinkitLegalNoticePage() {
                 id="evidence-checklist-heading"
                 className="text-2xl sm:text-3xl font-extrabold text-slate-950 tracking-tight"
               >
-                What Digital Evidence Must You Preserve Under Section 63 BSA for a Blinkit Order?
+                Digital Evidence to Preserve Under Section 63 BSA for Blinkit
               </h2>
               <p className="text-slate-600 text-sm sm:text-base mt-2">
                 Under Section 63 of the Bharatiya Sakshya Adhiniyam, 2023 (BSA), electronic records are admissible as primary evidence in consumer forums when backed by verifiable device metadata and unaltered timestamps. Preserve these 6 specific items before serving your notice.
@@ -1100,7 +1100,7 @@ export default function BlinkitLegalNoticePage() {
                 id="worked-example-heading"
                 className="text-2xl sm:text-3xl font-extrabold text-slate-950 tracking-tight"
               >
-                Illustrative Quick-Commerce Case Study: Recovering ₹2,450 for Tampered Grocery Delivery
+                Case Study: Recovering ₹2,450 for Tampered Grocery Orders
               </h2>
               <p className="text-slate-600 text-sm sm:text-base mt-2">
                 This representative worked example illustrates how a typical quick-commerce dispute unfolds and how an advocate legal notice forces a prompt corporate settlement.
@@ -1170,7 +1170,7 @@ export default function BlinkitLegalNoticePage() {
                 id="scope-heading"
                 className="text-2xl sm:text-3xl font-extrabold text-slate-950 tracking-tight"
               >
-                Scope and Limitations: What LegalRecovery Can and Cannot Do for Your Blinkit Claim
+                Scope &amp; Limitations: What LegalRecovery Can and Cannot Do
               </h2>
               <p className="text-slate-600 text-sm sm:text-base mt-2">
                 We operate with absolute transparency regarding our legal capabilities. Quick-commerce disputes require precise statutory framing; here is where our service applies and where alternative legal remedies are necessary.
@@ -1243,7 +1243,7 @@ export default function BlinkitLegalNoticePage() {
                 id="faq-heading"
                 className="text-2xl sm:text-3xl font-extrabold text-slate-950 tracking-tight"
               >
-                Frequently Asked Questions About Blinkit Refunds, Missing Items &amp; Legal Notices
+                FAQs About Blinkit Refunds, Missing Items &amp; Legal Notices
               </h2>
               <p className="text-slate-600 text-sm sm:text-base mt-2">
                 Authoritative legal answers to the most common queries regarding stuck Blinkit refunds, delivery failures, and consumer court escalation.
@@ -1344,7 +1344,7 @@ export default function BlinkitLegalNoticePage() {
         >
           <div className="max-w-6xl mx-auto px-4 sm:px-6">
             <h2 id="sources-heading" className="text-sm font-bold uppercase tracking-wider text-slate-900 mb-4">
-              Statutory Framework &amp; Primary Legal Sources Governing Blinkit Disputes
+              Statutory Framework &amp; Legal Sources for Blinkit Disputes
             </h2>
             <ol className="sources grid grid-cols-1 md:grid-cols-2 gap-3 list-decimal list-inside leading-relaxed">
               {primarySources.map((source, idx) => (

@@ -298,7 +298,7 @@ export default function FnfEmailTemplatePage() {
                   id="heading-overview-title"
                   className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight"
                 >
-                  When to Send This FnF Demand Email to HR (The 30-Day Delay Trap vs Statutory Law)
+                  When to Send FnF Demand Email: 30-Day Delay vs Law
                 </h2>
                 <p className="text-sm sm:text-base text-slate-700 leading-relaxed">
                   Across Indian corporations, IT services companies, startups, and manufacturing enterprises, Human Resources departments routinely tell exiting employees that Full and Final (FnF) settlements take &quot;45 to 60 business days&quot; or &quot;two payroll cycles&quot; due to multi-tier departmental approvals. Months pass, yet employees receive neither their earned pay, accrued leave encashment, statutory gratuity, nor formal relieving letters.
@@ -621,7 +621,7 @@ export default function FnfEmailTemplatePage() {
                   id="heading-deadlines-table-title"
                   className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight"
                 >
-                  FnF Component Breakdown: Statutory Settlement Timelines &amp; Permissible Deductions
+                  FnF Breakdown: Statutory Timelines &amp; Deductions
                 </h2>
                 <p className="text-sm sm:text-base text-slate-700 leading-relaxed">
                   Every rupee in your settlement statement is governed by statutory standards. Employers are strictly barred under Section 18 of the Code on Wages from making unilateral, arbitrary deductions:
@@ -701,7 +701,7 @@ export default function FnfEmailTemplatePage() {
                   id="heading-worked-example-title"
                   className="text-xl sm:text-2xl font-bold text-slate-900 tracking-tight"
                 >
-                  Worked Case Study: IT Professional Recovers ₹2,45,000 Withheld FnF Within 9 Days
+                  Case Study: Recovers ₹2,45,000 Withheld FnF in 9 Days
                 </h2>
                 <div className="bg-slate-900 text-white rounded-2xl p-5 sm:p-8 shadow-xl space-y-4 sm:space-y-5 w-full overflow-hidden">
                   <div className="flex flex-wrap items-center justify-between gap-2 border-b border-slate-800 pb-3">

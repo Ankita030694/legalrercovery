@@ -3,7 +3,7 @@ import HowToRecoverMoneyWithoutGoingToCourtIndiaClient from "./HowToRecoverMoney
 
 export const metadata: Metadata = {
   title: "How to Recover Money Without Going to Court | Legal Guide",
-  description: "Want to recover stuck money without a long civil court case? Use a Lawyer-Drafted Legal Notice, NCH/RBI/Samadhan portals, Pre-Institution Mediation & Online Dispute Resolution (ODR).",
+  description: "Recover money without court in India using advocate legal notices, government portals, pre-institution mediation, and online dispute resolution.",
   keywords: [
     "how to recover money without going to court india",
     "recover money without court case india",

@@ -1,7 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import Breadcrumbs from "@/components/Breadcrumbs";
-import RelatedRecoveryGuides from "@/components/RelatedRecoveryGuides";
 import { SITE_URL } from "@/lib/site";
 import InfluencerNoticeCTA from "./InfluencerNoticeCTA";
 import InfluencerTableOfContents from "./InfluencerTableOfContents";
@@ -1226,8 +1225,7 @@ export default function InfluencerBrandDealPaymentRecoveryPage() {
           </div>
         </div>
 
-        {/* Global Contextual Recovery Guides */}
-        <RelatedRecoveryGuides />
+
       </div>
     </>
   );

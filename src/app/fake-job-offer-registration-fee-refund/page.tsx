@@ -313,7 +313,7 @@ export default function FakeJobOfferRefundPage() {
                   id="heading-overview-title"
                   className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight"
                 >
-                  The Anatomy of Job Offer Fee Scams: Why Upfront Recruitment Charges Are Unlawful
+                  Why Upfront Recruitment Charges Are Unlawful
                 </h2>
                 <p className="text-sm sm:text-base text-slate-700 leading-relaxed">
                   Across India, educated graduates and working professionals seeking career transitions are increasingly targeted by fraudulent recruitment operations. Whether through sponsored advertisements on social media platforms, direct unsolicited WhatsApp or Telegram messages, or fake recruitment profiles on portal databases, the hook is virtually identical: an alluring salary package with minimal barriers to entry.
@@ -333,7 +333,7 @@ export default function FakeJobOfferRefundPage() {
                     id="heading-two-tracks-title"
                     className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight"
                   >
-                    The Honest Recoverability Matrix: Traceable Placement Agencies vs. Cyber Scammers
+                    Recoverability Matrix: Traceable Agencies vs Scammers
                   </h2>
                   <span className="text-xs font-bold text-slate-500 uppercase tracking-wider">
                     Realistic Assessment
@@ -553,7 +553,7 @@ export default function FakeJobOfferRefundPage() {
                     id="heading-case-digest-title"
                     className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight"
                   >
-                    Landmark Precedents: How Courts and Consumer Forums Enforce Job Scam Refunds
+                    Precedents: Enforcing Job Offer Scam Refunds
                   </h2>
                   <span className="text-xs font-bold text-slate-500 uppercase tracking-wider">
                     Verifiable Court Precedents
@@ -655,7 +655,7 @@ export default function FakeJobOfferRefundPage() {
                     id="heading-process-timeline-title"
                     className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight"
                   >
-                    Step-by-Step Escalation Hierarchy: From Fraud Discovery to Fund Recovery
+                    Escalation Hierarchy: Fraud Discovery to Recovery
                   </h2>
                   <span className="text-xs font-bold text-slate-500 uppercase tracking-wider">
                     Process Timeline
@@ -780,7 +780,7 @@ export default function FakeJobOfferRefundPage() {
                     id="heading-worked-example-title"
                     className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight"
                   >
-                    Worked Case Example: Recovering ₹28,500 from a Bogus Recruitment Agency
+                    Case Study: Recovers ₹28,500 from Bogus Agency
                   </h2>
                   <span className="text-xs font-bold text-slate-500 uppercase tracking-wider">
                     Illustrative Scenario

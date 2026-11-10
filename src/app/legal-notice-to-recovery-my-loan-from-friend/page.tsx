@@ -3,7 +3,7 @@ import FriendlyLoanRecoveryClient from "./FriendlyLoanRecoveryClient";
 
 export const metadata: Metadata = {
   title: "Legal Notice to Recover Money from Friend in India",
-  description: "Friend or relative not returning money lent via UPI, bank transfer, or cash? Serve an Advocate-Drafted Legal Notice for Friendly Loan Recovery to settle within 15 days without court.",
+  description: "Friend or relative not returning money lent via UPI or cash? Send an advocate legal notice for friendly loan recovery and settle within 15 days.",
   keywords: [
     "legal notice for recovery of money from friend",
     "how to recover money lent to a friend in india",

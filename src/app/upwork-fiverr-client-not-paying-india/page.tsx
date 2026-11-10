@@ -240,7 +240,7 @@ const FAQS = [
 const ARTICLE_SCHEMA = {
   "@context": "https://schema.org",
   "@type": "Article",
-  headline: "Platform Client Stopped Paying: Disputes, Off-Platform Deals and Recovery",
+  headline: "Platform Client Stopped Paying: Disputes & Recovery in India",
   description:
     "Upwork or Fiverr client refusing to pay? Platform dispute steps, off-platform contract risks and legal recovery routes for Indian freelancers.",
   datePublished: "2026-11-04T11:30:00+05:30",
@@ -353,7 +353,7 @@ export default function UpworkFiverrClientNotPayingIndiaPage() {
             </div>
 
             <h1 className="text-2xl sm:text-3xl md:text-5xl font-black tracking-tight text-white leading-tight mb-4 sm:mb-6 break-words">
-              Platform Client Stopped Paying: Disputes, Off-Platform Deals and Recovery
+              Platform Client Stopped Paying: Disputes &amp; Recovery in India
             </h1>
 
             {/* Answer Box First: 40-60 Words Directly Under H1 */}
@@ -414,7 +414,7 @@ export default function UpworkFiverrClientNotPayingIndiaPage() {
                     id="heading-scenario-cards-title"
                     className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight"
                   >
-                    Which Upwork, Fiverr or Off-Platform Non-Payment Scenario Fits Your Case?
+                    Which Freelance Non-Payment Scenario Fits Your Case?
                   </h2>
                 </div>
                 <p className="text-sm sm:text-base text-slate-700 leading-relaxed">
@@ -473,7 +473,7 @@ export default function UpworkFiverrClientNotPayingIndiaPage() {
                   id="heading-legal-basis-title"
                   className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight"
                 >
-                  Platform Dispute Rules vs Indian Law: Escrow, Copyright (Section 19) &amp; Contract Rights
+                  Platform Dispute Rules vs Indian Law &amp; Copyright Rights
                 </h2>
                 <p className="text-sm sm:text-base text-slate-700 leading-relaxed">
                   Most online forum threads tell Indian freelancers that once an Upwork or Fiverr dispute closes—or once a client moves off-platform and blocks you—your money is gone forever. That is legally false. Platform dispute specialists only control funds sitting inside their escrow account; they do not extinguish the client&apos;s underlying commercial debt or grant the client ownership over your unpaid work. Three statutory levers protect Indian freelancers and agencies:
@@ -582,7 +582,7 @@ export default function UpworkFiverrClientNotPayingIndiaPage() {
                   id="heading-step-playbook-title"
                   className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight"
                 >
-                  How to Recover Unpaid Freelance Dues: 6-Step Escalation From Platform Dispute to Legal Notice
+                  6-Step Escalation: Platform Dispute to Legal Notice
                 </h2>
                 <p className="text-sm sm:text-base text-slate-700 leading-relaxed">
                   Whether your client stopped responding after receiving the final build on Upwork, filed a bad-faith Fiverr cancellation, or defaulted on a direct off-platform invoice, follow this exact 6-step escalation sequence to protect both your payout and your intellectual property:
@@ -681,7 +681,7 @@ export default function UpworkFiverrClientNotPayingIndiaPage() {
                   id="heading-mistakes-avoid-title"
                   className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight"
                 >
-                  5 Fatal Mistakes Indian Freelancers Make When an Upwork or Fiverr Client Stops Paying
+                  5 Fatal Mistakes When a Freelance Client Stops Paying
                 </h2>
                 <p className="text-sm sm:text-base text-slate-700 leading-relaxed">
                   A single wrong click on Upwork or Fiverr—or a rash reaction in a client&apos;s production environment—can destroy your payout claim or get your freelancer profile banned. Avoid these five costly mistakes:
@@ -766,7 +766,7 @@ export default function UpworkFiverrClientNotPayingIndiaPage() {
                   id="heading-escalation-flow-title"
                   className="text-xl sm:text-2xl font-bold text-slate-900 tracking-tight"
                 >
-                  Freelance Payment Recovery Architecture: Escrow Mediation, IP Revocation &amp; Legal Action
+                  Payment Recovery: Escrow, IP Revocation &amp; Notice
                 </h2>
                 <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
                   Follow this structured escalation rail to convert a stalled Upwork/Fiverr milestone or unpaid off-platform invoice into full bank settlement:
@@ -890,7 +890,7 @@ export default function UpworkFiverrClientNotPayingIndiaPage() {
                     id="heading-problem-picker-title"
                     className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight"
                   >
-                    Platform &amp; Off-Platform Dispute Solver: Select Your Exact Client Issue
+                    Freelance Dispute Solver: Select Your Exact Issue
                   </h2>
                   <p className="text-xs font-semibold text-slate-500 mt-1">
                     Interactive Guide: Switch Between Upwork Escrow, Hourly Declines, Fiverr Chargebacks, Off-Platform Ghosting &amp; IP Theft
@@ -907,7 +907,7 @@ export default function UpworkFiverrClientNotPayingIndiaPage() {
                     id="heading-order-digest-title"
                     className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight"
                   >
-                    Landmark Judicial Precedents: How Indian Courts Enforce Digital Contracts, Quantum Meruit &amp; Copyright
+                    Judicial Precedents on Digital Contracts &amp; Copyright
                   </h2>
                   <span className="text-xs font-bold text-slate-500 uppercase tracking-wider">
                     Supreme Court &amp; High Court Records
@@ -984,7 +984,7 @@ export default function UpworkFiverrClientNotPayingIndiaPage() {
                   id="heading-worked-example-title"
                   className="text-xl sm:text-2xl font-bold text-slate-900 tracking-tight"
                 >
-                  Worked Case Study: Bengaluru Developer Recovers ₹4,15,000 ($4,950) After Off-Platform Client Ghosts on Final Milestone
+                  Case Study: Developer Recovers ₹4,15,000 From Client
                 </h2>
                 <div className="bg-slate-900 text-white rounded-2xl p-5 sm:p-8 shadow-xl space-y-4 sm:space-y-5 w-full overflow-hidden">
                   <div className="flex flex-wrap items-center justify-between gap-2 border-b border-slate-800 pb-3">
@@ -1018,7 +1018,7 @@ export default function UpworkFiverrClientNotPayingIndiaPage() {
                   id="heading-evidence-checklist-title"
                   className="text-xl sm:text-2xl font-bold text-slate-900 tracking-tight"
                 >
-                  Digital Evidence Checklist for Freelancers: 6 Records Required Under Section 63 BSA
+                  Evidence Checklist: 6 Records Under Section 63 BSA
                 </h2>
                 <p className="text-xs sm:text-sm text-slate-700 leading-relaxed">
                   Under Section 63 of the Bharatiya Sakshya Adhiniyam, 2023 (formerly Section 65B of the Evidence Act), digital records are fully admissible in Indian courts and MSME ODR proceedings. Before serving a legal notice, secure these 6 records (see our complete <Link href="/freelancer-evidence-checklist-payment-recovery-india" className="text-blue-700 underline font-semibold">freelancer payment recovery evidence checklist</Link>):
@@ -1081,7 +1081,7 @@ export default function UpworkFiverrClientNotPayingIndiaPage() {
                   id="heading-honest-scope-title"
                   className="text-xl sm:text-2xl font-bold text-slate-900 tracking-tight"
                 >
-                  Honest Scope: When LegalRecovery Can Recover Your Freelance Payout (and When It Cannot)
+                  Scope &amp; Boundaries: What LegalRecovery Can and Cannot Do
                 </h2>
                 <p className="text-xs sm:text-sm text-slate-700 leading-relaxed">
                   Cross-border and platform freelance disputes require realistic legal triage. Before you spend money on a legal notice, review what our advocates can and cannot do:
@@ -1119,7 +1119,7 @@ export default function UpworkFiverrClientNotPayingIndiaPage() {
                     id="heading-faqs-title"
                     className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight"
                   >
-                    Frequently Asked Questions: Upwork &amp; Fiverr Disputes, Off-Platform Clients &amp; Recovery From India
+                    FAQs: Upwork &amp; Fiverr Disputes &amp; Legal Recovery
                   </h2>
                   <p className="text-xs font-semibold text-slate-500 mt-1">
                     Direct Answers Grounded in Upwork/Fiverr Escrow Rules, Section 19 Copyright Act &amp; Indian Contract Law
@@ -1152,7 +1152,7 @@ export default function UpworkFiverrClientNotPayingIndiaPage() {
                   id="heading-sources-title"
                   className="text-lg sm:text-xl font-bold text-slate-900 tracking-tight"
                 >
-                  Primary Legal Statutes, Platform Dispute Rules &amp; Official References
+                  Primary Legal Statutes &amp; Platform Dispute Rules
                 </h2>
                 <ol className="sources list-decimal list-inside space-y-2 text-xs sm:text-sm text-slate-600">
                   {PRIMARY_SOURCES.map((source, idx) => (

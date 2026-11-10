@@ -380,7 +380,7 @@ export default function UsedCarPlatformRefundPage() {
                     id="heading-court-orders-title"
                     className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight"
                   >
-                    Landmark Rulings: 4 Verifiable Court Orders Against Used-Car Platforms &amp; Dealers
+                    Landmark Orders: Rulings Against Used-Car Platforms &amp; Dealers
                   </h2>
                   <span className="text-xs font-bold text-slate-500 uppercase tracking-wider">
                     Official Judicial Records
@@ -697,7 +697,7 @@ export default function UsedCarPlatformRefundPage() {
                     id="heading-warranty-matrix-title"
                     className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight"
                   >
-                    Comparison Matrix: Platform Contract Fine Print vs. Statutory Indian Consumer Law
+                    Platform Contract Fine Print vs Statutory Consumer Rights
                   </h2>
                   <p className="text-xs sm:text-sm text-slate-600 mt-1">
                     Understand why the platform&apos;s one-sided warranty agreements fail under judicial scrutiny.
@@ -775,7 +775,7 @@ export default function UsedCarPlatformRefundPage() {
                     id="heading-worked-example-title"
                     className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight"
                   >
-                    Worked Case Study: Buyer Recovers ₹7.25 Lakh for Misrepresented Creta With Structural Damage
+                    Case Study: Buyer Recovers ₹7.25 Lakh for Misrepresented Car
                   </h2>
                   <span className="text-xs font-bold text-slate-500 uppercase tracking-wider">
                     Illustrative Real-World Representation
@@ -830,7 +830,7 @@ export default function UsedCarPlatformRefundPage() {
                     id="heading-evidence-checklist-title"
                     className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight"
                   >
-                    Evidence Checklist: 6 Critical Documents Required Under Section 63 BSA 2023
+                    Evidence Checklist: 6 Critical Records Under BSA 2023
                   </h2>
                   <p className="text-xs sm:text-sm text-slate-600 mt-1">
                     Gather these documents before issuing your advocate legal notice to make your claim legally irrefutable.

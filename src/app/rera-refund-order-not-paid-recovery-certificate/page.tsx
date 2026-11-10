@@ -354,7 +354,7 @@ export default function ReraRefundOrderNotPaidPage() {
                   id="heading-overview-title"
                   className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight"
                 >
-                  Why Winning a RERA Refund Order Is Only Half the Battle—and How Section 40 Enforces It
+                  Why Winning RERA Orders Needs Section 40 Enforcement
                 </h2>
                 <p className="text-sm sm:text-base text-slate-700 leading-relaxed">
                   Across Uttar Pradesh (UP RERA), Maharashtra (MahaRERA), Haryana (HRERA), Karnataka (K-RERA), and other states, thousands of homebuyers spend 12 to 24 months litigating under Section 18 and Section 31 of the Real Estate (Regulation and Development) Act, 2016 to obtain a final refund order with interest (typically State Bank of India Highest Marginal Cost of Funds Based Lending Rate plus 2%, i.e., around 10.75% to 11.10% p.a.). Yet once the final order is uploaded on the RERA portal, a frustrating reality sets in: <strong>RERA refund orders are not self-enforcing</strong>, and defaulting builders routinely ignore the 45-day payment deadline.
@@ -374,7 +374,7 @@ export default function ReraRefundOrderNotPaidPage() {
                     id="heading-myth-vs-fact-title"
                     className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight"
                   >
-                    Myth vs. Fact: 7 Costly Misconceptions About RERA Order Execution &amp; Recovery Certificates
+                    Myth vs Fact: 7 Misconceptions on RERA Execution
                   </h2>
                   <span className="text-xs font-bold text-slate-500 uppercase tracking-wider">
                     Statutory Reality vs Builder Bluffs
@@ -435,7 +435,7 @@ export default function ReraRefundOrderNotPaidPage() {
                     id="heading-case-digest-title"
                     className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight"
                   >
-                    Landmark Supreme Court &amp; High Court Precedents on RERA Recovery Certificates
+                    High Court &amp; Supreme Court Precedents on RERA Orders
                   </h2>
                   <span className="text-xs font-bold text-slate-500 uppercase tracking-wider">
                     Verifiable Judicial Records
@@ -512,7 +512,7 @@ export default function ReraRefundOrderNotPaidPage() {
                   id="heading-state-matrix-title"
                   className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight"
                 >
-                  State-Wise RERA Execution Rules: UP RERA, MahaRERA, HRERA, K-RERA &amp; Delhi
+                  State-Wise RERA Execution Rules: UP, Maha &amp; Delhi
                 </h2>
                 <p className="text-sm sm:text-base text-slate-700 leading-relaxed">
                   While Section 40 of the central RERA Act, 2016 applies nationwide, the online portal workflow, statutory interest formula, and land-revenue recovery statute depend on the state where your real estate project is registered:
@@ -581,7 +581,7 @@ export default function ReraRefundOrderNotPaidPage() {
                   id="heading-escalation-flow-title"
                   className="text-xl sm:text-2xl font-bold text-slate-900 tracking-tight"
                 >
-                  Statutory Execution Architecture: From Unpaid RERA Order to Bank Account Realization
+                  Statutory Execution: RERA Order to Bank Realization
                 </h2>
                 <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
                   Follow this structured 5-stage enforcement pathway to turn a defaulted RERA refund order into coercive asset attachment and bank credit:
@@ -706,7 +706,7 @@ export default function ReraRefundOrderNotPaidPage() {
                   id="heading-playbook-title"
                   className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight"
                 >
-                  What Actually Works: The 5-Step Action Playbook to Enforce an Unpaid RERA Refund Order
+                  5-Step Playbook to Enforce Unpaid RERA Refund Orders
                 </h2>
                 <p className="text-sm sm:text-base text-slate-700 leading-relaxed">
                   Do not wait passively after the 45-day deadline expires. Follow this exact 5-step statutory sequence to convert your RERA refund order into realized funds:
@@ -794,7 +794,7 @@ export default function ReraRefundOrderNotPaidPage() {
                   id="heading-deadlines-table-title"
                   className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight"
                 >
-                  Coercive Enforcement Arsenal: Every Statutory Provision Available Against a Defaulting Builder
+                  Enforcement Provisions Against Defaulting Builders
                 </h2>
                 <p className="text-sm sm:text-base text-slate-700 leading-relaxed">
                   When a builder ignores a RERA refund order, Indian law provides five distinct statutory levers that can be triggered simultaneously or sequentially:
@@ -890,7 +890,7 @@ export default function ReraRefundOrderNotPaidPage() {
                   id="heading-worked-example-title"
                   className="text-xl sm:text-2xl font-bold text-slate-900 tracking-tight"
                 >
-                  Worked Case Study: Allottee Recovers ₹68,40,000 (Principal + MCLR Interest) via Section 40 RC &amp; Bank Attachment
+                  Case Study: Recovers ₹68.4L via Section 40 RC
                 </h2>
                 <div className="bg-slate-900 text-white rounded-2xl p-5 sm:p-8 shadow-xl space-y-4 sm:space-y-5 w-full overflow-hidden">
                   <div className="flex flex-wrap items-center justify-between gap-2 border-b border-slate-800 pb-3">
@@ -924,7 +924,7 @@ export default function ReraRefundOrderNotPaidPage() {
                   id="heading-evidence-checklist-title"
                   className="text-xl sm:text-2xl font-bold text-slate-900 tracking-tight"
                 >
-                  Execution Dossier Checklist: 6 Essential Records Needed for Section 40 Recovery
+                  Dossier Checklist: 6 Records for Section 40 Recovery
                 </h2>
                 <p className="text-xs sm:text-sm text-slate-700 leading-relaxed">
                   Keep these 6 documents ready before filing your Section 40 execution petition and Collectorate representation (admissible electronically under Section 63 of the Bharatiya Sakshya Adhiniyam, 2023):
@@ -987,7 +987,7 @@ export default function ReraRefundOrderNotPaidPage() {
                   id="heading-honest-scope-title"
                   className="text-xl sm:text-2xl font-bold text-slate-900 tracking-tight"
                 >
-                  Honest Scope: What LegalRecovery Can and Cannot Do for Unpaid RERA Orders
+                  Scope &amp; Boundaries: What LegalRecovery Can and Cannot Do
                 </h2>
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                   <div className="p-5 bg-emerald-50/70 border border-emerald-200 rounded-2xl space-y-2.5">
@@ -1022,7 +1022,7 @@ export default function ReraRefundOrderNotPaidPage() {
                     id="heading-faqs-title"
                     className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight"
                   >
-                    Frequently Asked Questions About RERA Order Execution &amp; Recovery Certificates
+                    FAQs: RERA Order Execution &amp; Recovery Certificates
                   </h2>
                   <p className="text-xs font-semibold text-slate-500 mt-1">
                     Authoritative Legal Guidance Grounded in Section 40 RERA Act and Supreme Court Precedents
@@ -1079,7 +1079,7 @@ export default function ReraRefundOrderNotPaidPage() {
               {/* Primary CTA */}
               <section id="heading-cta-block" aria-labelledby="heading-cta-block-title" className="w-full">
                 <h2 id="heading-cta-block-title" className="sr-only">
-                  Serve a Pre-Execution Legal Notice to the Defaulting Builder &amp; Promoters
+                  Serve a Pre-Execution Notice to Defaulting Builder
                 </h2>
                 <ReraRecoveryNoticeCTA variant="primary" />
               </section>

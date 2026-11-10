@@ -3,7 +3,7 @@ import BulkRecoveryNoticeSendThroughEmailWhatsappSpeedpostSolutionClient from '.
 
 export const metadata: Metadata = {
   title: 'Bulk Recovery Notice via Email, WhatsApp & Speed Post',
-  description: 'Execute rapid recovery of unpaid dues for business using advocate-drafted bulk legal notices delivered simultaneously across Email, WhatsApp, and India Post Speed Post.',
+  description: 'Recover unpaid business dues quickly using advocate-drafted bulk legal notices sent simultaneously via email, WhatsApp, and India Post Speed Post.',
   alternates: {
     canonical: 'https://www.legalrecovery.in/bulk-recovery-notice-send-through-email-whatsapp-speedpost-solution',
   },

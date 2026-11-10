@@ -314,7 +314,7 @@ export default function UrbanCompanyLegalNoticePage() {
                   id="heading-orders-overview-title"
                   className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight"
                 >
-                  What Consumer Courts and Dispute Commissions Have Ordered Urban Company to Pay
+                  Consumer Court Orders &amp; Compensation Against Urban Company
                 </h2>
                 <p className="text-sm sm:text-base text-slate-700 leading-relaxed">
                   Every month, Indian urban households encounter severe service failures from on-demand home service aggregators like Urban Company (formerly UrbanClap). Issues range from air-conditioner compressors exploding after unqualified gas refills and plumbing blowouts ruining imported hardwood floors, to severe chemical face burns from counterfeit salon-at-home bleaching products. When aggrieved homeowners seek reimbursement, Urban Company customer support routinely directs them into automated bot dead-ends, offers insulting ₹200 wallet credits, or claims that it operates solely as a software matching platform with zero responsibility for third-party gig workers.
@@ -331,7 +331,7 @@ export default function UrbanCompanyLegalNoticePage() {
                     id="heading-order-digest-title"
                     className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight"
                   >
-                    Landmark Order Digest: 4 Verifiable Home Service Rulings Against Urban Company / UrbanClap
+                    4 Landmark Consumer Orders Against Urban Company / UrbanClap
                   </h2>
                   <span className="text-xs font-bold text-slate-500 uppercase tracking-wider">
                     Verifiable Judicial Records
@@ -608,7 +608,7 @@ export default function UrbanCompanyLegalNoticePage() {
                   id="heading-playbook-title"
                   className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight"
                 >
-                  The 5-Step Escalation Playbook Against Urban Company: From App Dispute to Consumer Court
+                  5-Step Escalation Playbook Against Urban Company
                 </h2>
                 <p className="text-sm sm:text-base text-slate-700 leading-relaxed">
                   Derived directly from winning consumer commission verdicts, this 5-step playbook cuts through automated support deflection and enforces your rights against aggregator negligence:
@@ -696,7 +696,7 @@ export default function UrbanCompanyLegalNoticePage() {
                   id="heading-deadlines-table-title"
                   className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight"
                 >
-                  Statutory Liability Benchmarks: CPA 2019, Aggregator Duties &amp; Damage Cover Limits
+                  Liability Benchmarks: CPA 2019 &amp; Damage Cover Limits
                 </h2>
                 <p className="text-sm sm:text-base text-slate-700 leading-relaxed">
                   Indian e-commerce and consumer protection regulations establish binding statutory duties for home service platforms. Urban Company cannot enforce internal terms that contradict these benchmarks:
@@ -777,7 +777,7 @@ export default function UrbanCompanyLegalNoticePage() {
                     id="heading-problem-picker-title"
                     className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight"
                   >
-                    Service Bottlenecks &amp; Damage Disputes: Root Causes &amp; Immediate Fixes
+                    Service Damage Disputes: Root Causes &amp; Legal Fixes
                   </h2>
                   <p className="text-xs font-semibold text-slate-500 mt-1">
                     Select Your Specific Dispute Scenario to Unlock Applicable Sections, Platform Accountability, and Direct Action Steps
@@ -793,7 +793,7 @@ export default function UrbanCompanyLegalNoticePage() {
                   id="heading-worked-example-title"
                   className="text-xl sm:text-2xl font-bold text-slate-900 tracking-tight"
                 >
-                  Worked Case Study: Homeowner Recovers ₹38,500 for Botched AC Servicing &amp; Water Damage
+                  Case Study: Recovers ₹38,500 for Botched AC Servicing Damage
                 </h2>
                 <div className="bg-slate-900 text-white rounded-2xl p-5 sm:p-8 shadow-xl space-y-4 sm:space-y-5 w-full overflow-hidden">
                   <div className="flex flex-wrap items-center justify-between gap-2 border-b border-slate-800 pb-3">
@@ -827,7 +827,7 @@ export default function UrbanCompanyLegalNoticePage() {
                   id="heading-evidence-checklist-title"
                   className="text-xl sm:text-2xl font-bold text-slate-900 tracking-tight"
                 >
-                  Service Evidence Checklist: 6 Critical Documents Before Serving an Urban Company Legal Notice
+                  Evidence Checklist: 6 Documents for Urban Company Notice
                 </h2>
                 <p className="text-xs sm:text-sm text-slate-700 leading-relaxed">
                   Under Section 63 of the Bharatiya Sakshya Adhiniyam, 2023 (BSA), electronic in-app records and digital invoices are fully admissible in consumer courts. Assemble these 6 documents:
@@ -891,7 +891,7 @@ export default function UrbanCompanyLegalNoticePage() {
                     id="heading-faqs-title"
                     className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight"
                   >
-                    Frequently Asked Questions About Urban Company Complaints, Damage Claims &amp; Legal Notices
+                    FAQs: Urban Company Complaints, Damage Claims &amp; Notices
                   </h2>
                   <p className="text-xs font-semibold text-slate-500 mt-1">
                     Authoritative Answers Grounded in the Consumer Protection Act, 2019, E-Commerce Rules and Consumer Forum Orders
@@ -924,7 +924,7 @@ export default function UrbanCompanyLegalNoticePage() {
                   id="heading-sources-title"
                   className="text-lg sm:text-xl font-bold text-slate-900 tracking-tight"
                 >
-                  Consumer Protection Acts, Primary Statutes &amp; Official Reference Links
+                  Primary Consumer Statutes &amp; Official Reference Links
                 </h2>
                 <ol className="sources list-decimal list-inside space-y-2 text-xs sm:text-sm text-slate-600">
                   {PRIMARY_SOURCES.map((source, idx) => (

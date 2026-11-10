@@ -342,7 +342,7 @@ export default function RecoverMoneyFromFriendAbroadPage() {
                     id="heading-case-precedents-title"
                     className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight"
                   >
-                    Judicial Authority: 4 Verified Court Rulings on Overseas Debtors &amp; Summons
+                    Court Rulings on Overseas Debtors, Summons and Asset Recovery
                   </h2>
                   <span className="text-xs font-bold text-slate-500 uppercase tracking-wider">
                     Binding Legal Precedents
@@ -419,7 +419,7 @@ export default function RecoverMoneyFromFriendAbroadPage() {
                   id="heading-limitation-section15-title"
                   className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight"
                 >
-                  Has Your 3-Year Deadline Expired? Why Section 15(5) Protects Overseas Claims
+                  Has Limitation Expired? Section 15(5) Tolls Overseas Claims
                 </h2>
                 <p className="text-sm sm:text-base text-slate-700 leading-relaxed">
                   In ordinary domestic loan disputes, the Limitation Act, 1963 imposes a strict 3-year deadline under Articles 19 and 21 from the date the money was lent or the agreed repayment date arrived. Lenders who waited while their friend established themselves abroad frequently believe that their legal remedy is completely lost. However, cross-border claims benefit from two powerful statutory rules that extend or pause this limitation period:
@@ -462,7 +462,7 @@ export default function RecoverMoneyFromFriendAbroadPage() {
                   id="heading-cross-border-flow-title"
                   className="text-xl sm:text-2xl font-bold text-slate-900 tracking-tight"
                 >
-                  Cross-Border Recovery Framework: From Foreign Legal Notice to Asset Attachment
+                  Cross-Border Recovery: Foreign Legal Notice to Asset Attachment
                 </h2>
                 <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
                   Follow this verified statutory pipeline to enforce your claims against an overseas debtor without leaving India:
@@ -587,7 +587,7 @@ export default function RecoverMoneyFromFriendAbroadPage() {
                   id="heading-step-playbook-title"
                   className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight"
                 >
-                  The 5-Step Escalation Playbook: Recovering Funds From an Overseas Friend
+                  5-Step Playbook: Recovering Money From a Friend Overseas
                 </h2>
                 <p className="text-sm sm:text-base text-slate-700 leading-relaxed">
                   Recovering money from an NRI or friend living abroad requires strategic procedural discipline. Follow these 5 proven steps to establish legal pressure and enforce your rights:
@@ -675,7 +675,7 @@ export default function RecoverMoneyFromFriendAbroadPage() {
                   id="heading-legal-framework-table-title"
                   className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight"
                 >
-                  Statutory Comparison: Legal Provisions for Recovering Money from Overseas Borrowers
+                  Statutory Comparison: Legal Provisions for Overseas Borrowers
                 </h2>
                 <p className="text-sm sm:text-base text-slate-700 leading-relaxed">
                   Indian statutes provide specific provisions that govern cross-border money claims. These benchmarks cannot be circumvented by an overseas borrower:
@@ -756,7 +756,7 @@ export default function RecoverMoneyFromFriendAbroadPage() {
                     id="heading-problem-scenarios-title"
                     className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight"
                   >
-                    Common Overseas Debtor Defenses: Root Causes &amp; Direct Counter-Remedies
+                    Overseas Debtor Defenses: Root Causes and Legal Countermeasures
                   </h2>
                   <p className="text-xs font-semibold text-slate-500 mt-1">
                     Select Your Specific Overseas Dispute Scenario to Unlock the Statutory Section and Immediate Escalation Action
@@ -772,7 +772,7 @@ export default function RecoverMoneyFromFriendAbroadPage() {
                   id="heading-worked-example-title"
                   className="text-xl sm:text-2xl font-bold text-slate-900 tracking-tight"
                 >
-                  Worked Case Study: Bengaluru Lender Recovers ₹14,50,000 Lent to Friend Relocated to the UK
+                  Case Study: Recovering ₹14.5L Lent to a Friend in the UK
                 </h2>
                 <div className="bg-slate-900 text-white rounded-2xl p-5 sm:p-8 shadow-xl space-y-4 sm:space-y-5 w-full overflow-hidden">
                   <div className="flex flex-wrap items-center justify-between gap-2 border-b border-slate-800 pb-3">
@@ -806,7 +806,7 @@ export default function RecoverMoneyFromFriendAbroadPage() {
                   id="heading-evidence-checklist-title"
                   className="text-xl sm:text-2xl font-bold text-slate-900 tracking-tight"
                 >
-                  Cross-Border Evidence Checklist: 6 Critical Documents Before Serving Notice
+                  Cross-Border Evidence Checklist: 6 Records Before Serving Notice
                 </h2>
                 <p className="text-xs sm:text-sm text-slate-700 leading-relaxed">
                   Under Section 63 of the Bharatiya Sakshya Adhiniyam, 2023 (BSA), electronic evidence is admissible when backed by an electronic record certificate. Assemble these 6 documents:

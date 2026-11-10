@@ -326,7 +326,7 @@ export default function SpicejetLegalNoticePage() {
                   id="heading-orders-overview-title"
                   className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight"
                 >
-                  What Consumer Courts and Regulatory Forums Have Ordered SpiceJet to Pay
+                  Consumer Court &amp; Forum Orders Against SpiceJet
                 </h2>
                 <p className="text-sm sm:text-base text-slate-700 leading-relaxed">
                   Amid operational restructuring, aircraft groundings, and ongoing fleet disputes, SpiceJet has historically registered some of the highest complaint volumes in Indian domestic civil aviation. When scheduled flights are abruptly cancelled or delayed for several hours, passengers are frequently subjected to endless automated deflections by the Pepper chatbot or offered unrequested travel vouchers instead of their rightful cash refunds.
@@ -343,7 +343,7 @@ export default function SpicejetLegalNoticePage() {
                     id="heading-order-digest-title"
                     className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight"
                   >
-                    Landmark Order Digest: 4 Verifiable Aviation Rulings Against SpiceJet Limited
+                    4 Landmark Consumer Rulings Against SpiceJet Limited
                   </h2>
                   <span className="text-xs font-bold text-slate-500 uppercase tracking-wider">
                     Verifiable Court Records
@@ -420,7 +420,7 @@ export default function SpicejetLegalNoticePage() {
                   id="heading-pattern-analysis-title"
                   className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight"
                 >
-                  Pattern Analysis: What Won Aviation Refund and Cancellation Disputes Against SpiceJet
+                  What Won Refund &amp; Cancellation Disputes Against SpiceJet
                 </h2>
                 <p className="text-sm sm:text-base text-slate-700 leading-relaxed">
                   A comprehensive examination of consumer commission orders against SpiceJet Limited highlights clear evidentiary patterns. Passengers who secure decisive rulings and compensation consistently maintain clean documentary paper trails:
@@ -495,7 +495,7 @@ export default function SpicejetLegalNoticePage() {
                   id="heading-escalation-flow-title"
                   className="text-xl sm:text-2xl font-bold text-slate-900 tracking-tight"
                 >
-                  Statutory Resolution Hierarchy: From Disrupted SpiceJet PNR to Full Refund
+                  Resolution Hierarchy: From Disrupted PNR to Full Refund
                 </h2>
                 <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
                   Follow this verified statutory escalation sequence to break through SpiceJet support loops and secure your funds:
@@ -616,7 +616,7 @@ export default function SpicejetLegalNoticePage() {
                   id="heading-playbook-title"
                   className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight"
                 >
-                  The 5-Step Escalation Playbook Against SpiceJet: From PNR Tracking to Legal Notice
+                  5-Step Escalation Playbook Against SpiceJet
                 </h2>
                 <p className="text-sm sm:text-base text-slate-700 leading-relaxed">
                   Derived directly from winning consumer commission verdicts, this 5-step playbook cuts through automated support deflection and enforces your passenger rights under Indian civil aviation law:
@@ -704,7 +704,7 @@ export default function SpicejetLegalNoticePage() {
                   id="heading-deadlines-table-title"
                   className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight"
                 >
-                  Statutory Deadlines Under DGCA CAR Series M Part II: Cash vs Card vs Travel Agent
+                  DGCA CAR Refund Deadlines: Cash vs Card vs Agent
                 </h2>
                 <p className="text-sm sm:text-base text-slate-700 leading-relaxed">
                   The Directorate General of Civil Aviation enforces binding turnaround times for airline ticket refunds. SpiceJet cannot cite internal cash flow issues to delay refunds beyond these statutory deadlines:
@@ -784,7 +784,7 @@ export default function SpicejetLegalNoticePage() {
                   id="heading-delay-tactics-title"
                   className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight"
                 >
-                  The SpiceJet Delay Trap: Cash-Flow Excuses, Pepper Bot Loops & Unlawful Credit Shells
+                  SpiceJet Delay Trap: Bot Loops &amp; Unlawful Credit Shells
                 </h2>
                 <div className="bg-amber-50/80 border border-amber-200 rounded-2xl p-4 sm:p-7 space-y-3 sm:space-y-4 w-full overflow-hidden">
                   <h3 className="text-base sm:text-lg font-bold text-amber-950">
@@ -813,7 +813,7 @@ export default function SpicejetLegalNoticePage() {
                   id="heading-worked-example-title"
                   className="text-xl sm:text-2xl font-bold text-slate-900 tracking-tight"
                 >
-                  Worked Case Study: Mumbai Passenger Recovers ₹26,400 Cancelled SpiceJet Fares
+                  Case Study: Recovers ₹26,400 Cancelled SpiceJet Fares
                 </h2>
                 <div className="bg-slate-900 text-white rounded-2xl p-5 sm:p-8 shadow-xl space-y-4 sm:space-y-5 w-full overflow-hidden">
                   <div className="flex flex-wrap items-center justify-between gap-2 border-b border-slate-800 pb-3">
@@ -847,7 +847,7 @@ export default function SpicejetLegalNoticePage() {
                   id="heading-evidence-checklist-title"
                   className="text-xl sm:text-2xl font-bold text-slate-900 tracking-tight"
                 >
-                  Aviation Evidence Checklist: What You Need Before Serving a SpiceJet Legal Notice
+                  Evidence Checklist Before Serving a SpiceJet Notice
                 </h2>
                 <p className="text-xs sm:text-sm text-slate-700 leading-relaxed">
                   Under Section 63 of the Bharatiya Sakshya Adhiniyam, 2023 (BSA), digital communications and electronic bank statements are fully admissible in consumer courts. Gather these 6 key documents:
@@ -911,7 +911,7 @@ export default function SpicejetLegalNoticePage() {
                     id="heading-faqs-title"
                     className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight"
                   >
-                    Frequently Asked Questions About SpiceJet Flight Refunds, Delays & Legal Notice
+                    FAQs: SpiceJet Flight Refunds, Delays &amp; Legal Notice
                   </h2>
                   <p className="text-xs font-semibold text-slate-500 mt-1">
                     Authoritative Answers Grounded in DGCA Regulations and Supreme Court Orders

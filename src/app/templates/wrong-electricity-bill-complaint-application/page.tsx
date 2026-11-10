@@ -316,7 +316,7 @@ export default function WrongElectricityBillComplaintPage() {
                   id="heading-overview-title"
                   className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight"
                 >
-                  What Consumer Courts and Electricity Regulators Say About Inflated Power Bills
+                  What Consumer Courts Say About Inflated Power Bills
                 </h2>
                 <p className="text-sm sm:text-base text-slate-700 leading-relaxed">
                   Every month, millions of residential, commercial, and rural consumers in India receive shock electricity bills showing sudden, multifold surges in consumption. In many instances, the discrepancy is caused by human negligence—such as a meter reader punching fictitious numbers, software multiplying factor (MF) miscalculations, or months of unrecorded &quot;provisional&quot; billing suddenly lumped into a single billing cycle at high progressive tariff slabs. In other situations, defective electronic meters jump numbers without corresponding power draw.
@@ -478,7 +478,7 @@ export default function WrongElectricityBillComplaintPage() {
                   id="heading-causes-title"
                   className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight"
                 >
-                  Why Electricity Bills Spike: 5 Common Technical &amp; Administrative Causes
+                  Why Electricity Bills Spike: 5 Common Causes
                 </h2>
                 <p className="text-sm sm:text-base text-slate-700 leading-relaxed">
                   Identifying the root cause of an exorbitant power bill is essential for selecting the appropriate legal remedy under the Electricity Supply Code:
@@ -543,7 +543,7 @@ export default function WrongElectricityBillComplaintPage() {
                   id="heading-legal-rights-title"
                   className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight"
                 >
-                  Your Statutory Rights Under the Electricity Act, 2003 and SERC Supply Codes
+                  Statutory Rights Under Electricity Act &amp; SERC Codes
                 </h2>
                 <p className="text-sm sm:text-base text-slate-700 leading-relaxed">
                   Consumers frequently believe that power utilities hold unchallengeable authority to disconnect services or demand arbitrary sums. In reality, the legal framework provides five binding statutory protections:
@@ -754,7 +754,7 @@ export default function WrongElectricityBillComplaintPage() {
                   id="heading-worked-example-title"
                   className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight"
                 >
-                  Worked Adjustment Example: How an Erroneous ₹68,500 Bill is Recalculated
+                  Worked Example: Recalculating an Erroneous ₹68,500 Bill
                 </h2>
                 <p className="text-sm sm:text-base text-slate-700 leading-relaxed">
                   To understand the quantitative financial impact of challenging an inflated electricity bill, examine this verified consumer resolution model based on standard residential LT tariff parameters:

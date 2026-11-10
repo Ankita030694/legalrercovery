@@ -325,7 +325,7 @@ export default function EsopBuybackNotPaidPage() {
                   id="heading-esop-overview-title"
                   className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight"
                 >
-                  Why Companies Cannot Lawfully Cancel Vested ESOPs or Withhold Accepted Buyback Payouts
+                  Why Companies Cannot Cancel Vested ESOP Buybacks
                 </h2>
                 <p className="text-sm sm:text-base text-slate-700 leading-relaxed">
                   In India&apos;s startup and technology ecosystem, Employee Stock Option Plans (ESOPs) are universally marketed as a core component of overall executive and engineering compensation. Employees frequently accept lower cash salaries, forgone market bonuses, and grueling work schedules in exchange for the promise of equity appreciation. However, when an employee resigns or a company undergoes a liquidity buyback event, founders and HR leadership often attempt to treat those equity promises as voluntary gratuities that can be unilaterally stripped away.
@@ -345,7 +345,7 @@ export default function EsopBuybackNotPaidPage() {
                     id="heading-judicial-rulings-title"
                     className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight"
                   >
-                    Landmark Precedents: 4 Authoritative Court &amp; Arbitral Rulings on ESOP Recovery
+                    4 Landmark Rulings on ESOP Buyback Recovery
                   </h2>
                   <span className="text-xs font-bold text-slate-500 uppercase tracking-wider">
                     Binding Judicial Precedents
@@ -422,7 +422,7 @@ export default function EsopBuybackNotPaidPage() {
                   id="heading-pattern-analysis-title"
                   className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight"
                 >
-                  Pattern Analysis: What Clinched Victory in Ex-Employee ESOP &amp; Buyback Disputes
+                  What Won Victory in Ex-Employee ESOP Disputes
                 </h2>
                 <p className="text-sm sm:text-base text-slate-700 leading-relaxed">
                   Analysis of commercial suits, arbitral awards, and corporate settlement negotiations reveals consistent evidentiary hallmarks that force venture-backed companies and boards to capitulate and honour employee option payouts:
@@ -622,7 +622,7 @@ export default function EsopBuybackNotPaidPage() {
                   id="heading-playbook-title"
                   className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight"
                 >
-                  The 5-Step Escalation Playbook: How Ex-Employees Recover Withheld ESOP Buyback Funds
+                  5-Step Playbook: Recovering Withheld ESOP Funds
                 </h2>
                 <p className="text-sm sm:text-base text-slate-700 leading-relaxed">
                   Extracted directly from corporate litigation and commercial arbitral recoveries against high-growth tech companies, this structured playbook eliminates founder gaslighting and secures your earned equity payout:
@@ -710,7 +710,7 @@ export default function EsopBuybackNotPaidPage() {
                   id="heading-deadlines-table-title"
                   className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight"
                 >
-                  Statutory Deadlines &amp; Legal Benchmarks: ESOP Buyback, Vesting &amp; Recovery
+                  Deadlines &amp; Benchmarks: ESOP Vesting &amp; Recovery
                 </h2>
                 <p className="text-sm sm:text-base text-slate-700 leading-relaxed">
                   Indian corporate statutes, labour codes, and contractual regulations enforce strict time limits and procedural standards for employee stock option operations. Companies cannot enforce internal HR handbooks that undermine these statutory benchmarks:
@@ -807,7 +807,7 @@ export default function EsopBuybackNotPaidPage() {
                   id="heading-worked-example-title"
                   className="text-xl sm:text-2xl font-bold text-slate-900 tracking-tight"
                 >
-                  Worked Case Study: Engineering Director Recovers ₹38,50,000 Withheld ESOP Buyback Funds + Interest
+                  Case Study: Recovers ₹38.5L Withheld ESOP Funds
                 </h2>
                 <div className="bg-slate-900 text-white rounded-2xl p-5 sm:p-8 shadow-xl space-y-4 sm:space-y-5 w-full overflow-hidden">
                   <div className="flex flex-wrap items-center justify-between gap-2 border-b border-slate-800 pb-3">
@@ -841,7 +841,7 @@ export default function EsopBuybackNotPaidPage() {
                   id="heading-evidence-checklist-title"
                   className="text-xl sm:text-2xl font-bold text-slate-900 tracking-tight"
                 >
-                  ESOP Recovery Evidence Checklist: 6 Critical Records Before Serving Legal Notice
+                  Evidence Checklist: 6 Records for ESOP Notice
                 </h2>
                 <p className="text-xs sm:text-sm text-slate-700 leading-relaxed">
                   Under Section 63 of Bharatiya Sakshya Adhiniyam, 2023 (BSA), electronic communications and digital portal records are fully admissible in Indian commercial courts. Assemble these 6 documents:
@@ -933,7 +933,7 @@ export default function EsopBuybackNotPaidPage() {
                     id="heading-faqs-title"
                     className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight"
                   >
-                    Frequently Asked Questions About ESOP Buyback Defaults &amp; Employee Rights
+                    FAQs: ESOP Buyback Defaults &amp; Employee Rights
                   </h2>
                   <p className="text-xs font-semibold text-slate-500 mt-1">
                     Authoritative Answers Grounded in the Companies Act 2013, Indian Contract Act 1872 &amp; High Court Judgments

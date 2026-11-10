@@ -321,7 +321,7 @@ export default function ChequeBounceSupremeCourtGuidelinesPage() {
                   id="heading-summary-title"
                   className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight"
                 >
-                  Why the 2025 Supreme Court Guidelines Mark a Turning Point in Cheque Bounce Litigation
+                  2025 Supreme Court Guidelines on Cheque Bounce Cases
                 </h2>
                 <p className="text-sm sm:text-base text-slate-700 leading-relaxed">
                   For over three decades, Section 138 of the Negotiable Instruments Act, 1881 has stood as the primary criminal-cum-civil mechanism to penalize dishonoured cheques and enforce commercial integrity in India. However, trial reality diverged drastically from statutory intent. Over 35 lakh cheque bounce cases clog Magistrate dockets across the country, representing more than 10% of India&apos;s total pending criminal litigation. Cases meant to conclude within six months as summary inquiries regularly dragged on for five to eight years.
@@ -338,7 +338,7 @@ export default function ChequeBounceSupremeCourtGuidelinesPage() {
                     id="heading-comparison-table-title"
                     className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight"
                   >
-                    Before vs After: What Changed in Cheque Bounce Law Under 2025 Supreme Court Directives
+                    Before vs After: 2025 Supreme Court Cheque Directives
                   </h2>
                   <span className="text-xs font-bold text-slate-500 uppercase tracking-wider">
                     Statutory Rule Shift
@@ -445,7 +445,7 @@ export default function ChequeBounceSupremeCourtGuidelinesPage() {
                     id="heading-landmark-orders-title"
                     className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight"
                   >
-                    Landmark Order Digest: 4 Supreme Court Rulings Governing Cheque Bounce Today
+                    4 Supreme Court Rulings Governing Cheque Bounce
                   </h2>
                   <span className="text-xs font-bold text-slate-500 uppercase tracking-wider">
                     Verifiable Precedents
@@ -522,7 +522,7 @@ export default function ChequeBounceSupremeCourtGuidelinesPage() {
                   id="heading-timeline-change-title"
                   className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight"
                 >
-                  Timeline of Cheque Bounce Reforms: From 35-Lakh Case Crisis to 2025 Mandate
+                  Timeline of Cheque Bounce Reforms to 2025 Mandate
                 </h2>
                 <p className="text-sm sm:text-base text-slate-700 leading-relaxed">
                   The transformation of Section 138 proceedings represents years of judicial intervention designed to rescue commercial credibility:
@@ -798,7 +798,7 @@ export default function ChequeBounceSupremeCourtGuidelinesPage() {
                   id="heading-playbook-title"
                   className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight"
                 >
-                  The 5-Step Action Guide: How to Apply the 2025 Rules to Recover Your Money
+                  5-Step Guide: Applying 2025 Rules to Recover Money
                 </h2>
                 <p className="text-sm sm:text-base text-slate-700 leading-relaxed">
                   To benefit from the 2025 Supreme Court precedents and ensure your cheque bounce complaint is airtight from day one, follow these five steps:
@@ -906,7 +906,7 @@ export default function ChequeBounceSupremeCourtGuidelinesPage() {
                   id="heading-worked-example-title"
                   className="text-xl sm:text-2xl font-bold text-slate-900 tracking-tight"
                 >
-                  Worked Case Study: Supplier Recovers ₹6,50,000 Without Trial Fatigue Using 2025 Notice Strategy
+                  Case Study: Recovers ₹6,50,000 Using 2025 Notice Strategy
                 </h2>
                 <div className="bg-slate-900 text-white rounded-2xl p-5 sm:p-8 shadow-xl space-y-4 sm:space-y-5 w-full overflow-hidden">
                   <div className="flex flex-wrap items-center justify-between gap-2 border-b border-slate-800 pb-3">
@@ -940,7 +940,7 @@ export default function ChequeBounceSupremeCourtGuidelinesPage() {
                   id="heading-evidence-checklist-title"
                   className="text-xl sm:text-2xl font-bold text-slate-900 tracking-tight"
                 >
-                  Cheque Bounce Evidence Checklist: 6 Essential Documents for Section 138 Filing
+                  Evidence Checklist: 6 Documents for Section 138 Filing
                 </h2>
                 <p className="text-xs sm:text-sm text-slate-700 leading-relaxed">
                   Under the Negotiable Instruments Act and Section 63 of Bharatiya Sakshya Adhiniyam, 2023, maintain these six items to secure immediate cognizance and bailable summons:
@@ -1004,7 +1004,7 @@ export default function ChequeBounceSupremeCourtGuidelinesPage() {
                     id="heading-faqs-title"
                     className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight"
                   >
-                    Frequently Asked Questions: New Cheque Bounce Rules &amp; Supreme Court Guidelines
+                    FAQs: Cheque Bounce Rules &amp; Supreme Court Guidelines
                   </h2>
                   <p className="text-xs font-semibold text-slate-500 mt-1">
                     Authoritative Answers Grounded in the Negotiable Instruments Act, Sanjabij Tari (2025), and Criminal Procedure Rules

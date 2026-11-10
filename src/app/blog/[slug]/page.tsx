@@ -24,7 +24,9 @@ function cleanBlogContent(raw: string): string {
     .replace(/href=["'](?:https?:\/\/(?:www\.)?legalrecovery\.in)?\/b2b-vendor-payment-recovery\/?["']/gi, 'href="/send-a-legal-notice/vendor-not-paying-pending-payment"')
     .replace(/href=["'](?:https?:\/\/(?:www\.)?legalrecovery\.in)?\/failed-upi-transaction-money-stuck-in-bank\/?["']/gi, 'href="/law/rbi-failed-transaction-tat-compensation"')
     .replace(/href=["'](?:https?:\/\/(?:www\.)?legalrecovery\.in)?\/ecommerce-fraud-refund-legal-notice\/?["']/gi, 'href="/send-a-legal-notice/online-refund-not-received"')
-    .replace(/href=["'](?:https?:\/\/(?:www\.)?legalrecovery\.in)?\/wrong-upi-transfer-money-recovery\/?["']/gi, 'href="/recovery/wrong-upi-transfer"');
+    .replace(/href=["'](?:https?:\/\/(?:www\.)?legalrecovery\.in)?\/wrong-upi-transfer-money-recovery\/?["']/gi, 'href="/recovery/wrong-upi-transfer"')
+    .replace(/The Fake Quality Dispute Trap: Why Clients Invent Post-Delivery Defects/gi, 'The Fake Quality Dispute Trap: Why Clients Invent Defects')
+    .replace(/Section 42 Sale of Goods Act: How Deemed Acceptance Kills Bogus Excuses/gi, 'Section 42 Sale of Goods Act: How Deemed Acceptance Works');
 }
 
 function mapDatabaseBlog(item: any): Blog {
@@ -119,6 +121,25 @@ const BLOG_TITLE_OVERRIDES: Record<string, string> = {
     "Friendly Loan Cheque Bounce Recovery: Section 138 Guide",
 };
 
+const BLOG_DESCRIPTION_OVERRIDES: Record<string, string> = {
+  "flipkart-amazon-open-box-delivery-otp-defective-refund-denied-recovery":
+    "Flipkart or Amazon rejected your return claiming Open Box Delivery OTP was shared? Learn the legal steps to recover your refund with compensation.",
+  "amazon-flipkart-refund-initiated-not-credited-bank-arn-rrn-rbi-compensation":
+    "Amazon or Flipkart refund initiated but not credited to your bank account? Learn how to recover your money plus ₹100/day RBI delay compensation.",
+  "msme-odr-portal-vs-order-37-summary-suit-unpaid-invoice-recovery":
+    "MSME Samadhaan, Order 37 summary suit, or Commercial Court? Compare recovery timelines, costs, and execution for overdue business invoices.",
+  "section-43bh-income-tax-msme-45-day-payment-recovery-legal-notice":
+    "Buyer delaying MSME invoice past 45 days? Use Section 43B(h) tax disallowance and 3x RBI interest in your legal notice to recover dues quickly.",
+  "borrower-blocked-on-whatsapp-changed-address-money-recovery":
+    "Debtor blocked you on WhatsApp or changed address? Learn how Supreme Court e-service rules and Order 38 Rule 5 CPC can help freeze their assets.",
+  "recover-split-rent-deposit-bills-from-ex-flatmate-roommate-india":
+    "Flatmate moved out leaving unpaid rent or took your deposit refund? Learn legal remedies to recover your shared dues and Splitwise bills in India.",
+  "best-money-recovery-platform-india-2027":
+    "Compare top money recovery routes in India for salary, refunds, rent, and invoices in 2027. Find the right legal forum and next steps for your claim.",
+  "client-withholding-final-milestone-invoice-fake-quality-dispute-recovery":
+    "Client withholding final invoice payment citing false quality issues? Learn how to legally recover 100% of your business dues under Indian law.",
+};
+
 export async function generateMetadata(
   { params }: { params: Promise<{ slug: string }> }
 ): Promise<Metadata> {
@@ -152,7 +173,13 @@ export async function generateMetadata(
     }
   }
 
-  const metaDescription = blog.metaDescription || blog.subtitle || blog.subtitleKeywords || "";
+  const overrideDesc = BLOG_DESCRIPTION_OVERRIDES[slugKey];
+  const rawMetaDescription =
+    overrideDesc || blog.metaDescription || blog.subtitle || blog.subtitleKeywords || "";
+  const metaDescription =
+    rawMetaDescription.length > 155
+      ? rawMetaDescription.slice(0, 152).trim() + "..."
+      : rawMetaDescription;
 
   let imageUrl = "/blog_money_recovery.png";
   if (blog.image) {
@@ -223,6 +250,13 @@ export default async function BlogDetailPage(
   }
 
   const blog = mapDatabaseBlog(blogDoc);
+  const slugKey = (blogDoc.slug || slug || "").toLowerCase();
+  const overrideDesc = BLOG_DESCRIPTION_OVERRIDES[slugKey];
+  if (overrideDesc) {
+    blog.metaDescription = overrideDesc;
+  } else if (blog.metaDescription && blog.metaDescription.length > 155) {
+    blog.metaDescription = blog.metaDescription.slice(0, 152).trim() + "...";
+  }
   const faqs = mapFaqs(blogDoc);
   const reviews = mapReviews(blogDoc);
 

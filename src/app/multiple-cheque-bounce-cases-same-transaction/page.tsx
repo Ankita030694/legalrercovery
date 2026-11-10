@@ -3,7 +3,7 @@ import MultipleChequesClient from "./MultipleChequesClient";
 
 export const metadata: Metadata = {
   title: "Multiple Cheque Bounce Cases: Single Notice & BNSS 219",
-  description: "Did 2 or more cheques from the same loan or invoice bounce? Learn how to send a single consolidated Section 138 NI Act Legal Notice and club up to 3 cases into one joint court trial.",
+  description: "Multiple cheques bounced from one loan or invoice? Learn how to send a single Section 138 legal notice and club cases into a joint court trial.",
   keywords: [
     "multiple cheque bounce cases same transaction",
     "can one legal notice be sent for multiple cheque bounce",

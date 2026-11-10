@@ -320,7 +320,7 @@ export default function ChequeBounceNoticeKitneDinMeinPage() {
                   वैधानिक समय सारिणी • Section 138 &amp; Section 142 NI Act
                 </div>
                 <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 mb-4">
-                  चेक बाउंस समय सीमा तालिका: चेक जमा करने से लेकर कोर्ट केस तक (Timeline Table)
+                  चेक बाउंस समय सीमा तालिका: चेक जमा से कोर्ट केस तक
                 </h2>
                 <p className="text-sm sm:text-base text-slate-700 leading-relaxed mb-6">
                   <strong>परक्राम्य लिखत अधिनियम, 1881 की धारा 138 और धारा 142 (Sections 138 &amp; 142 of the Negotiable Instruments Act, 1881) में चेक बाउंस का मुकदमा चलाने के लिए 4 क्रमिक समय सीमाएं निर्धारित हैं।</strong> यदि इनमें से किसी भी एक चरण में देरी होती है, तो आपकी आपराधिक शिकायत खारिज हो सकती है। नीचे दी गई तालिका में हर चरण की सटीक समय सीमा, उसकी गणना का नियम और लागू कानूनी धारा स्पष्ट रूप से दी गई है:
@@ -485,7 +485,7 @@ export default function ChequeBounceNoticeKitneDinMeinPage() {
                     सवाल-जवाब गाइड • धारा 138 के हर नियम का स्पष्ट उत्तर
                   </div>
                   <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900">
-                    चेक बाउंस नोटिस और केस से जुड़े 8 सबसे महत्वपूर्ण सवाल और उनके कानूनी जवाब
+                    चेक बाउंस नोटिस और केस से जुड़े 8 मुख्य सवाल व जवाब
                   </h2>
                 </div>
 
@@ -639,7 +639,7 @@ export default function ChequeBounceNoticeKitneDinMeinPage() {
                   नोटिस व मुकदमे का रोडमैप • Section 138 Escalation Rail
                 </div>
                 <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 mb-4">
-                  चेक बाउंस होने के बाद नोटिस भेजने और कोर्ट केस की पूरी प्रक्रिया (Step-by-Step Process)
+                  चेक बाउंस नोटिस भेजने व कोर्ट केस की पूरी प्रक्रिया
                 </h2>
                 <p className="text-sm sm:text-base text-slate-700 leading-relaxed mb-6">
                   <strong>चेक बाउंस मामले में आपकी सफलता इस बात पर निर्भर करती है कि आपने समय सीमा के हर कदम पर सही दस्तावेज़ी सबूत तैयार किए हैं या नहीं।</strong> नीचे दिए गए फ्लोचार्ट में चेक जमा करने से लेकर धारा 143A के तहत 20% अंतरिम मुआवजे और अंतिम वसूली तक का पूरा कानूनी क्रम दर्शाया गया है:
@@ -899,7 +899,7 @@ export default function ChequeBounceNoticeKitneDinMeinPage() {
                   व्यावहारिक उदाहरण • Date-by-Date Statutory Calculation
                 </div>
                 <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 mb-4">
-                  तारीख-दर-तारीख उदाहरण: ₹5,40,000 के चेक बाउंस में हर समय सीमा की सटीक गणना
+                  तारीख-दर-तारीख उदाहरण: ₹5.4 लाख चेक बाउंस की सटीक गणना
                 </h2>
                 <p className="text-sm sm:text-base text-slate-700 leading-relaxed mb-6">
                   <strong>आइए एक वास्तविक व्यापारिक उदाहरण से समझें कि तारीखों की गिनती कैसे काम करती है:</strong> मान लीजिए जयपुर के कपड़ा व्यापारी <strong>राजेश वर्मा</strong> को उनके खरीदार ने ₹5,40,000 का चेक दिया जिसकी तारीख <strong>1 अगस्त 2026</strong> है। नीचे देखें कि हर कानूनी समय सीमा किस तारीख को शुरू और समाप्त होती है:
@@ -969,7 +969,7 @@ export default function ChequeBounceNoticeKitneDinMeinPage() {
                     विशेष परिस्थितियां • Interactive Scenario Solver
                   </div>
                   <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 mb-3">
-                    यदि 30 दिन निकल गए हों, देनदार नोटिस न ले, या स्टॉप पेमेंट हो तो क्या करें?
+                    यदि 30 दिन निकल जाएं या स्टॉप पेमेंट हो तो क्या करें?
                   </h2>
                   <p className="text-sm sm:text-base text-slate-700 leading-relaxed mb-6">
                     <strong>अपनी वर्तमान स्थिति के अनुसार नीचे दिए गए टैब पर क्लिक करें और जानें कि आपके पास कौन सा कानूनी विकल्प उपलब्ध है:</strong>
@@ -1081,7 +1081,7 @@ export default function ChequeBounceNoticeKitneDinMeinPage() {
                   अक्सर पूछे जाने वाले सवाल • Section 138 FAQs in Hindi
                 </div>
                 <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 mb-6">
-                  चेक बाउंस नोटिस कितने दिन में भेजें — अक्सर पूछे जाने वाले प्रश्न (FAQs)
+                  चेक बाउंस नोटिस समय सीमा: अक्सर पूछे जाने वाले प्रश्न
                 </h2>
 
                 <div className="space-y-3">
@@ -1110,7 +1110,7 @@ export default function ChequeBounceNoticeKitneDinMeinPage() {
                 className="bg-white rounded-2xl border border-slate-200 p-5 sm:p-8 shadow-xs scroll-mt-28"
               >
                 <h2 className="text-lg sm:text-xl font-extrabold text-slate-900 mb-4">
-                  प्रमुख कानूनी स्रोत, अधिनियम और सुप्रीम कोर्ट संदर्भ (Primary Legal Sources)
+                  प्रमुख कानूनी स्रोत, अधिनियम व सुप्रीम कोर्ट संदर्भ
                 </h2>
                 <ol className="sources list-decimal pl-5 space-y-2 text-xs sm:text-sm text-slate-600">
                   <li>

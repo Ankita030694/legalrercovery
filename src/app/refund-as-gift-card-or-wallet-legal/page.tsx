@@ -377,7 +377,7 @@ export default function ForcedWalletRefundPage() {
               id="myth-fact-heading"
               className="mt-2 text-2xl font-black text-[#0F172A] sm:text-3xl tracking-tight"
             >
-              The Myth vs. Fact Breakdown: 7 Legal Realities of Store Credit and Gift Cards
+              Myth vs. Fact: Legal Realities of Store Credit and Gift Cards
             </h2>
             <p className="mt-2 text-sm text-slate-600 leading-relaxed">
               E-commerce customer service scripts rely on widespread consumer misunderstandings. Below is the definitive comparison between common merchant claims and the statutory reality under Indian law.
@@ -655,7 +655,7 @@ export default function ForcedWalletRefundPage() {
               id="what-works-heading"
               className="mt-2 text-2xl font-black text-[#0F172A] sm:text-3xl tracking-tight"
             >
-              How to Demand a Refund to Your Original Payment Source: 4 Actionable Steps
+              How to Demand a Refund to Original Payment Source: 4 Steps
             </h2>
             <p className="mt-2 text-sm text-slate-600 leading-relaxed">
               If an e-commerce platform credited your refund as store wallet units or an expiring gift voucher, follow this disciplined legal procedure to force a transfer into your savings account or credit card.
@@ -732,7 +732,7 @@ export default function ForcedWalletRefundPage() {
               id="decision-tree-heading"
               className="text-2xl font-black text-[#0F172A] sm:text-3xl tracking-tight"
             >
-              Decision Tree: How to Escalate When a Platform Traps Your Money in a Wallet
+              Decision Tree: Escalating When Funds Are Trapped in a Wallet
             </h2>
             <p className="mt-2 text-sm text-slate-600 leading-relaxed">
               This process workflow outlines the legal decision logic from the moment an unauthorized store credit is detected to full bank recovery.
@@ -865,7 +865,7 @@ export default function ForcedWalletRefundPage() {
               id="worked-example-heading"
               className="mt-2 text-2xl font-black text-[#0F172A] sm:text-3xl tracking-tight"
             >
-              Illustrative Case Study: Converting ₹6,499 Trapped Store Credit into Bank Remittance
+              Case Study: Converting ₹6,499 Store Credit to Bank Account
             </h2>
             <p className="mt-2 text-sm text-slate-600 leading-relaxed">
               This real-world illustrative worked example illustrates how a Bangalore-based software engineer used statutory provisions to break out of a proprietary shopping voucher trap.
@@ -937,7 +937,7 @@ export default function ForcedWalletRefundPage() {
               id="case-law-heading"
               className="mt-2 text-2xl font-black text-[#0F172A] sm:text-3xl tracking-tight"
             >
-              Consumer Commission Precedents on Forced Store Credits and Expiring Vouchers
+              Consumer Court Precedents on Forced Store Credit and Vouchers
             </h2>
             <p className="mt-2 text-sm text-slate-600 leading-relaxed">
               Consumer Disputes Redressal Commissions across India consistently rule against platforms that attempt to retain consumer money inside closed wallets or non-transferable coupons.
@@ -1028,7 +1028,7 @@ export default function ForcedWalletRefundPage() {
               id="evidence-checklist-heading"
               className="mt-2 text-2xl font-black text-[#0F172A] sm:text-3xl tracking-tight"
             >
-              Evidence Checklist: What You Need to Prove an Unlawful Forced Credit Dispute
+              Evidence Checklist: Proving an Unlawful Forced Credit Dispute
             </h2>
             <p className="mt-2 text-sm text-slate-600 leading-relaxed">
               To substantiate a claim before the Grievance Officer, National Consumer Helpline, or an e-Jagriti consumer bench, assemble these six documentary proofs:
@@ -1156,7 +1156,7 @@ export default function ForcedWalletRefundPage() {
               id="faq-heading"
               className="mt-2 text-2xl font-black text-[#0F172A] sm:text-3xl tracking-tight"
             >
-              Frequently Asked Questions: Gift Card &amp; Wallet Refund Laws in India
+              FAQs on Gift Card and Wallet Refund Laws in India
             </h2>
             <p className="mt-2 text-sm text-slate-600 leading-relaxed">
               Clear, cited answers to the most common queries regarding forced wallet credits, source reversals, and consumer court remedies.

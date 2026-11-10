@@ -380,7 +380,7 @@ export default function SalaryFnFDisputeReportPage() {
                   id="heading-overview-title"
                   className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight"
                 >
-                  Salary and FnF Disputes in India: Ground Realities vs. Statutory Mandates
+                  Salary and FnF Disputes: Ground Realities vs Law
                 </h2>
                 <p className="text-sm sm:text-base text-slate-700 leading-relaxed">
                   The enactment of the <strong>Code on Wages, 2019</strong> was intended to radically restructure employer-employee relations in India by subsuming legacy enactments—specifically the Payment of Wages Act, 1936 and the Minimum Wages Act, 1948. Among its most revolutionary provisions was <strong>Section 17(2)</strong>, which enacted a rigid statutory timeline: whenever an employee resigns, is removed, or is retrenched, the employer must clear all earned wages and terminal benefits within <strong>two working days</strong>.
@@ -566,7 +566,7 @@ export default function SalaryFnFDisputeReportPage() {
                     id="heading-dispute-causes-title"
                     className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight"
                   >
-                    Root Causes of FnF Disputes: Unlawful Deductions &amp; Notice Shortfalls
+                    Causes of FnF Disputes: Deductions &amp; Notice Shortfall
                   </h2>
                   <span className="text-xs font-bold text-slate-500 uppercase tracking-wider">
                     Breakdown of Withheld Dues
@@ -677,7 +677,7 @@ export default function SalaryFnFDisputeReportPage() {
                     id="heading-case-digest-title"
                     className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight"
                   >
-                    Landmark Judicial Precedents on Salary Withholding &amp; Notice Deductions
+                    Precedents on Salary Withholding &amp; Notice Deductions
                   </h2>
                   <span className="text-xs font-bold text-slate-500 uppercase tracking-wider">
                     Authoritative Citations
@@ -732,7 +732,7 @@ export default function SalaryFnFDisputeReportPage() {
                     id="heading-statutory-rules-title"
                     className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight"
                   >
-                    The Code on Wages Statutory Framework: Key Sections Governing Your Dues
+                    Code on Wages Framework: Key Sections Governing Dues
                   </h2>
                   <span className="text-xs font-bold text-slate-500 uppercase tracking-wider">
                     Act No. 29 of 2019
@@ -875,7 +875,7 @@ export default function SalaryFnFDisputeReportPage() {
                     id="heading-faqs-title"
                     className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight"
                   >
-                    Frequently Asked Questions: Salary &amp; FnF Disputes Post-Code on Wages
+                    FAQs: Salary &amp; FnF Disputes Under Code on Wages
                   </h2>
                   <span className="text-xs font-bold text-slate-500 uppercase tracking-wider">
                     Authoritative Answers

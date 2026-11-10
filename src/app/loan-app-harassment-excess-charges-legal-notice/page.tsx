@@ -356,7 +356,7 @@ export default function LoanAppHarassmentLegalNoticePage() {
                   id="heading-overview-title"
                   className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight"
                 >
-                  Understanding Your Rights Under RBI Digital Lending Rules &amp; Criminal Law
+                  Your Rights Under RBI Digital Lending Guidelines and Criminal Law
                 </h2>
                 <p className="text-sm sm:text-base text-slate-700 leading-relaxed">
                   In recent years, the rapid proliferation of instant digital loan apps across India has created a surge in predatory lending practices. Borrowers who apply for short-term personal loans frequently find themselves ensnared in a web of astronomical deductions, usurious compound interest, and brutal collection intimidation. When borrowers experience financial strain or question exorbitant hidden fees, aggressive collection agencies resort to unlawful strong-arm tactics—calling family members, creating defamatory WhatsApp groups with stolen contact lists, morphing personal photographs, and threatening social humiliation.
@@ -388,7 +388,7 @@ export default function LoanAppHarassmentLegalNoticePage() {
                     id="heading-myth-vs-fact-title"
                     className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight"
                   >
-                    Myth vs Fact: 6 Common Misconceptions About Loan Apps &amp; Recovery Agents
+                    Myth vs Fact: Loan Apps and Recovery Agent Harassment
                   </h2>
                   <span className="text-xs font-bold text-slate-500 uppercase tracking-wider">
                     Statutory Reality Check
@@ -578,7 +578,7 @@ export default function LoanAppHarassmentLegalNoticePage() {
                   id="heading-escalation-flow-title"
                   className="text-xl sm:text-2xl font-bold text-slate-900 tracking-tight"
                 >
-                  Digital Escalation Hierarchy: From Threat Call to Advocate Notice &amp; RBI Ombudsman
+                  Escalation Hierarchy: Threat Call to Advocate Notice &amp; RBI
                 </h2>
                 <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
                   Follow this verified statutory escalation roadmap to systematically neutralize recovery threats, halt abusive calls, and demand accountability from lenders:
@@ -717,7 +717,7 @@ export default function LoanAppHarassmentLegalNoticePage() {
                   id="heading-playbook-title"
                   className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight"
                 >
-                  The 5-Step Practical Playbook: How to Halt Harassment &amp; Reclaim Excess Charges
+                  5-Step Playbook: Halting Harassment and Reclaiming Charges
                 </h2>
                 <p className="text-sm sm:text-base text-slate-700 leading-relaxed">
                   When dealing with predatory recovery tactics, do not panic or capitulate to illegal demands. Execute these 5 sequential legal steps to stop the harassment and force regulatory compliance:
@@ -881,7 +881,7 @@ export default function LoanAppHarassmentLegalNoticePage() {
                     id="heading-worked-example-title"
                     className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight"
                   >
-                    Worked Example: Halting ₹42,000 in Harassment Demands on a ₹15,000 Micro-Loan
+                    Worked Example: Halting ₹42,000 Demands on a ₹15,000 Loan
                   </h2>
                   <span className="text-xs font-bold text-slate-500 uppercase tracking-wider">
                     Illustrative Case Study
@@ -956,7 +956,7 @@ export default function LoanAppHarassmentLegalNoticePage() {
                     id="heading-evidence-checklist-title"
                     className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight"
                   >
-                    Evidentiary Checklist: 7 Essential Proofs for Cyber Complaints &amp; Legal Notices
+                    Evidentiary Checklist: Proofs for Cyber Cell and Legal Notices
                   </h2>
                   <span className="text-xs font-bold text-slate-500 uppercase tracking-wider">
                     Preparation Checklist
@@ -1062,7 +1062,7 @@ export default function LoanAppHarassmentLegalNoticePage() {
                     id="heading-faqs-title"
                     className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight"
                   >
-                    Frequently Asked Questions (FAQs): Loan App Harassment &amp; Excess Charges
+                    FAQs on Loan App Harassment and Unlawful Excess Charges
                   </h2>
                   <span className="text-xs font-bold text-slate-500 uppercase tracking-wider">
                     Common Queries

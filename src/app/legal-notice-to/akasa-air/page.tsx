@@ -293,7 +293,7 @@ export default function AkasaAirRefundPage() {
               {/* Section 1: Problem Articles (What Usually Goes Wrong With Akasa Air) */}
               <section aria-labelledby="failure-points-heading" className="space-y-6">
                 <h2 id="failure-points-heading" className="text-2xl sm:text-3xl font-bold text-slate-900 tracking-tight">
-                  Why Is Your Akasa Air Refund Pending or Uncredited? (Common Failure Points)
+                  Why Akasa Air Refunds Remain Pending or Uncredited
                 </h2>
                 <p className="text-slate-600 leading-relaxed">
                   Passengers flying with Akasa Air (carrier code QP) encounter four primary breakdown patterns when seeking ticket fare reversals. Under Indian civil aviation regulations, operational disruptions or merchant processing snags never strip passengers of their statutory entitlement to prompt monetary restitution.
@@ -377,7 +377,7 @@ export default function AkasaAirRefundPage() {
               {/* Section 2: Comparison Table (Problem Type x Liable Entity x Deadline x First Action) */}
               <section aria-labelledby="liability-table-heading" className="space-y-4">
                 <h2 id="liability-table-heading" className="text-2xl sm:text-3xl font-bold text-slate-900 tracking-tight">
-                  Who Is Liable for an Unreturned Akasa Air Ticket Fare? (Comparison Table)
+                  Who Is Liable for Unreturned Akasa Air Ticket Fares?
                 </h2>
                 <p className="text-slate-600 leading-relaxed">
                   Pinpointing the exact legal entity accountable for your pending funds prevents misdirected notices and expedites resolution. The table below delineates statutory liability across common flight refund disputes.
@@ -641,7 +641,7 @@ export default function AkasaAirRefundPage() {
               {/* Section 4: Commission Orders Table (Consumer Court Case Law) */}
               <section aria-labelledby="case-law-table-heading" className="space-y-4">
                 <h2 id="case-law-table-heading" className="text-2xl sm:text-3xl font-bold text-slate-900 tracking-tight">
-                  What Have Consumer Commissions Ordered Airlines in Pending Refund Disputes?
+                  Consumer Commission Orders in Airline Refund Disputes
                 </h2>
                 <p className="text-slate-600 leading-relaxed">
                   Consumer commissions throughout India strictly hold domestic carriers accountable when ticket fares are withheld beyond regulatory deadlines. Below are verifiable consumer court orders establishing binding legal precedent against delayed flight refunds and unauthorized tax retention.
@@ -687,7 +687,7 @@ export default function AkasaAirRefundPage() {
               {/* Section 5: Key Facts and DGCA Timelines */}
               <section aria-labelledby="facts-deadlines-heading" className="space-y-4">
                 <h2 id="facts-deadlines-heading" className="text-2xl sm:text-3xl font-bold text-slate-900 tracking-tight">
-                  How Do DGCA CAR Timelines and Akasa Air Refund Policy Apply to Your Ticket?
+                  DGCA CAR Timelines &amp; Akasa Air Refund Rules
                 </h2>
                 <p className="text-slate-600 leading-relaxed">
                   The Directorate General of Civil Aviation enacted landmark revisions to CAR Section 3, Series M, Part II, significantly strengthening consumer rights for air travelers in India. Under these statutory guidelines, airline internal policies cannot override sovereign civil aviation directives.
@@ -732,7 +732,7 @@ export default function AkasaAirRefundPage() {
               {/* Section 6: Worked Illustrative Scenario */}
               <section aria-labelledby="worked-example-heading" className="space-y-4">
                 <h2 id="worked-example-heading" className="text-2xl sm:text-3xl font-bold text-slate-900 tracking-tight">
-                  Worked Scenario: Recovering ₹21,400 for a Cancelled Bengaluru–Mumbai Akasa Flight
+                  Case Study: Recovers ₹21,400 for Cancelled Akasa Flight
                 </h2>
                 <p className="text-slate-600 leading-relaxed">
                   The following illustrative scenario shows how an airline refund dispute unfolds in practice and how legal escalation achieves complete reimbursement.
@@ -781,7 +781,7 @@ export default function AkasaAirRefundPage() {
               {/* Section 7: Evidence Checklist */}
               <section aria-labelledby="evidence-checklist-heading" className="space-y-4">
                 <h2 id="evidence-checklist-heading" className="text-2xl sm:text-3xl font-bold text-slate-900 tracking-tight">
-                  What Evidence Must You Assemble Before Escalating an Akasa Air Complaint?
+                  Evidence to Assemble Before Escalating Akasa Complaint
                 </h2>
                 <p className="text-slate-600 leading-relaxed">
                   Under Section 63 of the Bharatiya Sakshya Adhiniyam, 2023 (BSA), electronic communications and digital financial proofs possess full evidentiary admissibility before consumer commissions. Gather the following documentation prior to issuing a legal notice:
@@ -915,7 +915,7 @@ export default function AkasaAirRefundPage() {
               {/* Section 10: FAQs as Plain Q&A (Archetype B2 requirement: plain h3/p, NO accordion) */}
               <section aria-labelledby="faqs-heading" className="space-y-6">
                 <h2 id="faqs-heading" className="text-2xl sm:text-3xl font-bold text-slate-900 tracking-tight">
-                  Frequently Asked Questions About Akasa Air Refunds, Timelines and Complaints
+                  FAQs About Akasa Air Refunds, Timelines &amp; Complaints
                 </h2>
                 <div className="space-y-6">
                   {FAQS.map((faq, idx) => (

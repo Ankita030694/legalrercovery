@@ -365,7 +365,7 @@ export default function NoticePeriodRecoveryCalculatorPage() {
                   id="heading-overview-title"
                   className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight"
                 >
-                  The Legal Reality: Basic Pay vs. Gross Pay Notice Shortfall Recovery in India
+                  Legal Reality: Basic Pay vs Gross Pay Notice Shortfall
                 </h2>
                 <p className="text-sm sm:text-base text-slate-700 leading-relaxed">
                   When an employee resigns and is unable to serve their full contractual notice period—whether due to an immediate joining requirement at a new employer, personal distress, or medical emergencies—human resource departments frequently calculate notice period recovery on <strong>Gross Cost to Company (CTC)</strong>. This aggressive accounting practice routinely wipes out earned wages, leave encashment, and bonuses, sometimes leaving the exiting professional with a negative Full and Final (FnF) settlement balance.
@@ -502,7 +502,7 @@ export default function NoticePeriodRecoveryCalculatorPage() {
                     id="heading-contract-matrix-title"
                     className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight"
                   >
-                    Contractual Clauses vs. Statutory Reality: What Your Employer Can and Cannot Deduct
+                    What Your Employer Can and Cannot Legally Deduct
                   </h2>
                   <p className="text-xs sm:text-sm text-slate-600 mt-1">
                     Analyse how standard appointment letter clauses hold up against Indian labour legislation and judicial scrutiny.
@@ -588,7 +588,7 @@ export default function NoticePeriodRecoveryCalculatorPage() {
                     id="heading-court-rulings-title"
                     className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight"
                   >
-                    Landmark Judicial Rulings: Section 74 Indian Contract Act &amp; Notice Deductions
+                    Judicial Rulings: Contract Act &amp; Notice Deductions
                   </h2>
                   <span className="text-xs font-bold text-slate-500 uppercase tracking-wider">
                     Verified Precedents
@@ -669,7 +669,7 @@ export default function NoticePeriodRecoveryCalculatorPage() {
                   id="heading-worked-example-title"
                   className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight"
                 >
-                  Worked Case Study: Software Engineer Saves ₹67,500 in Illegal Notice Pay Deductions
+                  Case Study: Saves ₹67,500 in Illegal Notice Deductions
                 </h2>
                 <div className="bg-slate-900 text-white rounded-2xl p-5 sm:p-8 shadow-xl space-y-4 sm:space-y-5 w-full overflow-hidden">
                   <div className="flex flex-wrap items-center justify-between gap-2 border-b border-slate-800 pb-3">
@@ -948,7 +948,7 @@ export default function NoticePeriodRecoveryCalculatorPage() {
                     id="heading-faqs-title"
                     className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight"
                   >
-                    Frequently Asked Questions About Notice Period Shortfall &amp; Recovery
+                    FAQs About Notice Period Shortfall &amp; Recovery
                   </h2>
                   <p className="text-xs font-semibold text-slate-500 mt-1">
                     Authoritative Answers Grounded in the Indian Contract Act, Code on Wages, and High Court Rulings

@@ -332,7 +332,7 @@ export default function ExperienceLetterNotGivenPage() {
                     id="heading-comparison-matrix-title"
                     className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight mt-1"
                   >
-                    Comparing Your Legal Routes When an Employer Refuses an Experience Letter
+                    Comparing Legal Routes for Refused Experience Letters
                   </h2>
                 </div>
                 <p className="text-sm sm:text-base text-slate-700 leading-relaxed">
@@ -541,7 +541,7 @@ export default function ExperienceLetterNotGivenPage() {
                     id="heading-distinction-title"
                     className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight"
                   >
-                    Experience Certificate vs. Relieving Letter: Why Employers Cannot Conflate Them
+                    Experience vs Relieving Letter: Legal Differences
                   </h2>
                   <p className="text-xs font-semibold text-slate-500 mt-1">
                     The crucial legal divide that stops HR from holding your employment history hostage
@@ -599,7 +599,7 @@ export default function ExperienceLetterNotGivenPage() {
                   id="heading-escalation-flow-title"
                   className="text-xl sm:text-2xl font-bold text-slate-900 tracking-tight"
                 >
-                  Statutory Escalation Hierarchy: From HR Refusal to Experience Certificate Release
+                  Escalation Hierarchy: HR Refusal to Letter Release
                 </h2>
                 <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
                   Follow this chronological legal playbook to enforce your service documentation rights without unnecessary delays:
@@ -732,7 +732,7 @@ export default function ExperienceLetterNotGivenPage() {
                     id="heading-route-notice-title"
                     className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight mt-1"
                   >
-                    Route 1: Advocate Statutory Legal Notice to Employer &amp; Board of Directors
+                    Route 1: Advocate Statutory Notice to Employer
                   </h2>
                 </div>
                 <p className="text-sm sm:text-base text-slate-700 leading-relaxed">
@@ -779,7 +779,7 @@ export default function ExperienceLetterNotGivenPage() {
                     id="heading-route-labour-title"
                     className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight mt-1"
                   >
-                    Route 2: Labour Commissioner Conciliation &amp; State Shops Act Complaints
+                    Route 2: Labour Commissioner Conciliation &amp; Complaints
                   </h2>
                 </div>
                 <p className="text-sm sm:text-base text-slate-700 leading-relaxed">
@@ -819,7 +819,7 @@ export default function ExperienceLetterNotGivenPage() {
                     id="heading-route-court-title"
                     className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight mt-1"
                   >
-                    Route 3: High Court Writ Petition (Article 226) &amp; Civil Court Mandatory Injunction
+                    Route 3: High Court Writ &amp; Mandatory Injunction
                   </h2>
                 </div>
                 <p className="text-sm sm:text-base text-slate-700 leading-relaxed">
@@ -859,7 +859,7 @@ export default function ExperienceLetterNotGivenPage() {
                     id="heading-route-criminal-title"
                     className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight mt-1"
                   >
-                    Route 4: Criminal Complaint for Extortion &amp; Coercion (BNS 308 &amp; 316)
+                    Route 4: Criminal Complaint Under BNS 308 &amp; 316
                   </h2>
                 </div>
                 <p className="text-sm sm:text-base text-slate-700 leading-relaxed">
@@ -898,7 +898,7 @@ export default function ExperienceLetterNotGivenPage() {
                     id="heading-statutory-table-title"
                     className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight"
                   >
-                    Statutory Provisions &amp; Legal Benchmarks for Service Certificates in India
+                    Statutory Benchmarks for Service Certificates
                   </h2>
                   <p className="text-xs font-semibold text-slate-500 mt-1">
                     Binding statutory rules governing experience certificates across central and state jurisdictions
@@ -1038,7 +1038,7 @@ export default function ExperienceLetterNotGivenPage() {
                     id="heading-court-digest-title"
                     className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight"
                   >
-                    Landmark Judicial Precedents: Court Rulings on Withheld Experience Letters
+                    Landmark Precedents on Withheld Experience Letters
                   </h2>
                   <span className="text-xs font-bold text-slate-500 uppercase tracking-wider">
                     Verifiable Court Records
@@ -1119,7 +1119,7 @@ export default function ExperienceLetterNotGivenPage() {
                   id="heading-worked-example-title"
                   className="text-xl sm:text-2xl font-bold text-slate-900 tracking-tight"
                 >
-                  Worked Case Study: Engineer Recovers Experience Certificate &amp; ₹1,80,000 Unpaid Salary
+                  Case Study: Recovers Certificate &amp; ₹1,80,000 Dues
                 </h2>
                 <div className="bg-slate-900 text-white rounded-2xl p-5 sm:p-8 shadow-xl space-y-4 sm:space-y-5 w-full overflow-hidden">
                   <div className="flex flex-wrap items-center justify-between gap-2 border-b border-slate-800 pb-3">
@@ -1157,7 +1157,7 @@ export default function ExperienceLetterNotGivenPage() {
                   id="heading-evidence-checklist-title"
                   className="text-xl sm:text-2xl font-bold text-slate-900 tracking-tight"
                 >
-                  Evidence Checklist: 6 Critical Documents to Secure Before Serving Legal Notice
+                  Evidence Checklist: 6 Documents Before Legal Notice
                 </h2>
                 <p className="text-xs sm:text-sm text-slate-700 leading-relaxed">
                   Under Section 63 of the Bharatiya Sakshya Adhiniyam, 2023 (BSA), electronic records and digital communications carry full primary evidentiary weight. Preserve these 6 assets before initiating formal action:
@@ -1225,7 +1225,7 @@ export default function ExperienceLetterNotGivenPage() {
                     id="heading-faqs-title"
                     className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight"
                   >
-                    Frequently Asked Questions About Experience Letters &amp; Legal Remedies
+                    FAQs About Experience Letters &amp; Legal Remedies
                   </h2>
                   <p className="text-xs font-semibold text-slate-500 mt-1">
                     Direct legal answers grounded in Model Standing Orders, Indian Contract Act and High Court verdicts

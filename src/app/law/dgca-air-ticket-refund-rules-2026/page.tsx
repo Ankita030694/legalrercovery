@@ -32,7 +32,7 @@ const articleJsonLd = {
   "@context": "https://schema.org",
   "@type": "Article",
   "headline":
-    "DGCA's 2026 Refund Rules: Free 48-Hour Cancellation, Deadlines and Agent Liability",
+    "DGCA 2026 Refund Rules: 48-Hour Cancellation and Agent Liability",
   "description":
     "New DGCA refund CAR (effective 26 March 2026): free 48-hour changes, refund deadlines by payment mode and why airlines answer for agents.",
   "inLanguage": "en-IN",
@@ -200,7 +200,7 @@ export default function DgcaAirTicketRefundRules2026Page() {
 
           {/* H1 Title */}
           <h1 className="text-3xl sm:text-4xl lg:text-5xl font-black text-slate-900 tracking-tight leading-tight mb-6">
-            DGCA&apos;s 2026 Refund Rules: Free 48-Hour Cancellation, Deadlines and Agent Liability
+            DGCA 2026 Refund Rules: 48-Hour Cancellation and Agent Liability
           </h1>
 
           {/* Mandatory Answer Box */}
@@ -238,7 +238,7 @@ export default function DgcaAirTicketRefundRules2026Page() {
               id="statutory-summary-heading"
               className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight mb-4"
             >
-              Executive Summary: DGCA 2026 CAR Revision, Statutory Mandates, and Core Passenger Rights
+              Executive Summary: DGCA 2026 CAR &amp; Passenger Rights
             </h2>
             <p className="text-slate-700 text-base sm:text-lg leading-relaxed mb-6">
               For years, air passengers across India faced severe friction when attempting to recover cancelled airfares: arbitrary cancellation penalties exceeding the base fare, unconsented credit shells, and an exhausting blame game between commercial airlines (such as IndiGo, Air India, SpiceJet, and Akasa Air) and online travel agencies (such as MakeMyTrip, EaseMyTrip, and Cleartrip). On 24 February 2026, the Directorate General of Civil Aviation (DGCA) notified comprehensive amendments to <strong>Civil Aviation Requirements (CAR), Section 3 - Air Transport, Series M, Part II</strong>, titled <em>&ldquo;Refund of Airline Tickets to Passengers of Consumer of Air Transport Services&rdquo;</em>, coming into full statutory force on <strong>26 March 2026</strong>.
@@ -310,7 +310,7 @@ export default function DgcaAirTicketRefundRules2026Page() {
               id="before-after-heading"
               className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight mb-4"
             >
-              Before vs. After Comparison: How the 2026 DGCA Refund Rules Overhauled Passenger Protections
+              Before vs After: 2026 DGCA Air Refund Rules
             </h2>
             <p className="text-slate-700 text-base sm:text-lg leading-relaxed mb-6">
               Prior to the 2026 amendments, air passengers in India operated under CAR revisions that left significant regulatory ambiguities. Airlines exploited loopholes by levying exorbitant administrative handling charges for typographical name errors, stalling refunds indefinitely behind opaque travel agent ledgers, and unilaterally locking passenger money into illiquid credit shells. The table below illustrates the precise legal transition from the old aviation framework to the binding 2026 rules.
@@ -404,7 +404,7 @@ export default function DgcaAirTicketRefundRules2026Page() {
               id="timeline-heading"
               className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight mb-4"
             >
-              Chronological Evolution: Statutory Timeline of India&apos;s Aviation Passenger Protection Reforms
+              Timeline of India's Aviation Passenger Reforms
             </h2>
             <p className="text-slate-700 text-base sm:text-lg leading-relaxed mb-6">
               The 2026 DGCA CAR refund rules represent the culmination of multi-year judicial interventions, consumer commission rulings, and public stakeholder consultations. Follow the statutory trajectory of aviation refund governance below:
@@ -479,7 +479,7 @@ export default function DgcaAirTicketRefundRules2026Page() {
               id="free-window-heading"
               className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight mb-4"
             >
-              The 48-Hour Zero-Penalty Window: Free Cancellation, Name Corrections, and Passenger Eligibility
+              48-Hour Zero-Penalty Window &amp; Cancellation Rules
             </h2>
             <p className="text-slate-700 text-base sm:text-lg leading-relaxed mb-4">
               The centerpiece of the 2026 DGCA CAR revision is the codification of the <strong>&ldquo;Look-In Option&rdquo;</strong> under Clause 3.1. Modeled after consumer cooling-off protections in advanced aviation jurisdictions, this clause provides passengers with a statutory safety net when accidental bookings, sudden schedule clashes, or typographical errors occur.
@@ -522,7 +522,7 @@ export default function DgcaAirTicketRefundRules2026Page() {
               id="refund-deadlines-heading"
               className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight mb-4"
             >
-              Strict Refund Timelines by Payment Mode: Credit Cards, UPI, Net Banking, and Cash Transactions
+              Strict Refund Timelines by Payment Mode
             </h2>
             <p className="text-slate-700 text-base sm:text-lg leading-relaxed mb-6">
               Clause 3.3 of DGCA CAR Section 3 Series M Part II removes all ambiguity regarding refund processing deadlines. Airlines can no longer cite internal audit delays or banking pipeline congestion to justify withholding passenger money. The statutory clock begins ticking the moment cancellation is confirmed.
@@ -577,7 +577,7 @@ export default function DgcaAirTicketRefundRules2026Page() {
               id="agent-liability-heading"
               className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight mb-4"
             >
-              Airlines vs. Travel Portals: Why Airlines Are Statutorily Answerable for Agent Refund Defaults
+              Airlines vs Portals: Liability for Agent Defaults
             </h2>
             <p className="text-slate-700 text-base sm:text-lg leading-relaxed mb-4">
               When a passenger books a flight through online intermediaries like <Link href="/legal-notice-to/makemytrip" className="text-[#DC2626] font-semibold hover:underline">MakeMyTrip</Link>, EaseMyTrip, Cleartrip, or offline travel agencies, airlines frequently attempt to wash their hands of refund delays by claiming: <em>&ldquo;Your transaction was with the agent; we have already processed the refund in the agent&apos;s GDS portal ledger.&rdquo;</em>
@@ -608,7 +608,7 @@ export default function DgcaAirTicketRefundRules2026Page() {
               id="svg-workflow-heading"
               className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight mb-4"
             >
-              Visual Workflow: Step-by-Step Ticket Cancellation, Airline Responsibility, and Escalation Architecture
+              Workflow: Ticket Cancellation &amp; Escalation
             </h2>
             <p className="text-slate-700 text-base sm:text-lg leading-relaxed mb-6">
               The statutory process flow below diagrams how passenger cancellation requests navigate the 2026 CAR timeline, highlighting where statutory obligations bind both the carrier and the booking intermediary:
@@ -703,7 +703,7 @@ export default function DgcaAirTicketRefundRules2026Page() {
               id="grey-areas-heading"
               className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight mb-4"
             >
-              Regulatory Grey Areas &amp; Unresolved Questions Under the 2026 CAR Revision
+              Regulatory Grey Areas Under 2026 CAR Revision
             </h2>
             <p className="text-slate-700 text-base sm:text-lg leading-relaxed mb-6">
               While the 2026 revision drastically strengthens consumer standing, certain statutory grey areas remain subject to regulatory interpretation and pending litigation before judicial forums:
@@ -745,7 +745,7 @@ export default function DgcaAirTicketRefundRules2026Page() {
               id="steps-heading"
               className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight mb-4"
             >
-              Step-by-Step Escalation Protocol: Enforcing Your Flight Refund Under DGCA Rules
+              Escalation Protocol Under DGCA Refund Rules
             </h2>
             <p className="text-slate-700 text-base sm:text-lg leading-relaxed mb-6">
               If an airline or travel portal is stalling your refund or attempting to force an expiring travel voucher upon you, follow this structured escalation protocol to secure your money:
@@ -830,7 +830,7 @@ export default function DgcaAirTicketRefundRules2026Page() {
               id="worked-scenario-heading"
               className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight mb-4"
             >
-              Illustrative Worked Scenario: Recovering ₹24,800 for an Abruptly Rescheduled Flight &amp; OTA Blame Loop
+              Case Study: Recovers ₹24,800 for Rescheduled Flight
             </h2>
             <div className="bg-slate-50 border border-slate-200 rounded-2xl p-6 sm:p-8">
               <span className="text-xs font-black uppercase tracking-wider text-slate-500 block mb-2">
@@ -884,7 +884,7 @@ export default function DgcaAirTicketRefundRules2026Page() {
               id="case-law-heading"
               className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight mb-4"
             >
-              Judicial Precedents: Consumer Court Rulings on Forced Flight Vouchers and Agent Liability
+              Consumer Court Rulings on Forced Flight Vouchers
             </h2>
             <p className="text-slate-700 text-base sm:text-lg leading-relaxed mb-6">
               Consumer Commissions across India have repeatedly penalized airlines and travel portals for unfair trade practices regarding withheld refunds and unconsented credit shells:
@@ -929,7 +929,7 @@ export default function DgcaAirTicketRefundRules2026Page() {
               id="evidence-dossier-heading"
               className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight mb-4"
             >
-              Aviation Dispute Evidence Dossier: What You Need for AirSewa and Consumer Commission Filing
+              Evidence Dossier for AirSewa &amp; Consumer Filing
             </h2>
             <p className="text-slate-700 text-base sm:text-lg leading-relaxed mb-6">
               Under <strong>Section 63 of the Bharatiya Sakshya Adhiniyam, 2023 (BSA)</strong>, electronic records must be systematically preserved to establish an irrefutable chain of evidence in consumer forums:
@@ -967,7 +967,7 @@ export default function DgcaAirTicketRefundRules2026Page() {
               id="scope-heading"
               className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight mb-4"
             >
-              Our Scope: How LegalRecovery Assists Flight Passengers and Where Our Services End
+              Scope &amp; Boundaries: What LegalRecovery Can Do
             </h2>
             <p className="text-slate-700 text-base sm:text-lg leading-relaxed mb-6">
               Transparency is fundamental to our legal services. Here is an honest appraisal of what LegalRecovery provides and what falls outside our scope:
@@ -1120,7 +1120,7 @@ export default function DgcaAirTicketRefundRules2026Page() {
               id="sources-heading"
               className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight mb-4"
             >
-              Statutory Citations, Civil Aviation Requirements, and Official Gazette References
+              Statutory Citations &amp; DGCA CAR References
             </h2>
             <div className="bg-slate-50 border border-slate-200 rounded-xl p-5 text-xs sm:text-sm text-slate-700 space-y-2.5">
               <p>

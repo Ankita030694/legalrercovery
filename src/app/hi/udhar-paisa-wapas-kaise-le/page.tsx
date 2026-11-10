@@ -337,7 +337,7 @@ export default function UdharPaisaWapasKaiseLePage() {
                   id="heading-case-story-title"
                   className="text-xl sm:text-2xl font-bold text-slate-900 tracking-tight"
                 >
-                  वास्तविक उदाहरण कहानी: बिना एग्रीमेंट के दोस्त से ₹3,50,000 की कानूनी वसूली
+                  उदाहरण: बिना एग्रीमेंट दोस्त से ₹3,50,000 की कानूनी वसूली
                 </h2>
                 <div className="bg-slate-900 text-white rounded-2xl p-5 sm:p-8 shadow-xl space-y-4 sm:space-y-5 w-full overflow-hidden">
                   <div className="flex flex-wrap items-center justify-between gap-2 border-b border-slate-800 pb-3">

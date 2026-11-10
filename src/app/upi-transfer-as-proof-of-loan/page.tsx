@@ -325,7 +325,7 @@ export default function UpiTransferProofOfLoanPage() {
                   id="heading-overview-title"
                   className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight"
                 >
-                  Is a UPI Transfer Alone Legally Sufficient as Proof of a Loan in Indian Courts?
+                  Is a UPI Transfer Sufficient Proof of Loan in Court?
                 </h2>
                 <p className="text-sm sm:text-base text-slate-700 leading-relaxed">
                   With over 14 billion digital transactions processed monthly across Unified Payments Interface (UPI) rails in India via Google Pay, PhonePe, Paytm, and mobile banking apps, informal loans between friends, colleagues, relatives, and romantic partners are executed in seconds with a single biometric tap. In the vast majority of personal loan situations, no formal loan agreement, stamp-paper promissory note, or registered contract is ever executed.
@@ -345,7 +345,7 @@ export default function UpiTransferProofOfLoanPage() {
                     id="heading-case-digest-title"
                     className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight"
                   >
-                    Judicial Case Digest: 4 Landmark Precedents on Bank Transfers &amp; Informal Loans
+                    4 Landmark Precedents on Bank Transfers &amp; Loans
                   </h2>
                   <span className="text-xs font-bold text-slate-500 uppercase tracking-wider">
                     Verifiable Court Precedents
@@ -422,7 +422,7 @@ export default function UpiTransferProofOfLoanPage() {
                   id="heading-three-pillars-title"
                   className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight"
                 >
-                  The 3 Evidentiary Pillars: Transforming a UPI Transaction Into an Enforceable Debt
+                  3 Pillars: Making UPI Transfers Enforceable Debts
                 </h2>
                 <p className="text-sm sm:text-base text-slate-700 leading-relaxed">
                   In the absence of a registered loan agreement, civil courts in India require a composite chain of evidence. To successfully recover money lent through Google Pay, PhonePe, Paytm, or IMPS, your claim must rest upon three interlocking evidentiary pillars:
@@ -474,7 +474,7 @@ export default function UpiTransferProofOfLoanPage() {
                     id="heading-decision-tree-title"
                     className="text-xl sm:text-2xl font-bold text-slate-900 tracking-tight"
                   >
-                    Decision Tree Flowchart: Choosing Your Recovery Route Based on Available Proof
+                    Decision Tree: Recovery Routes for UPI Transfers
                   </h2>
                   <p className="text-xs sm:text-sm text-slate-600 mt-1">
                     Follow this statutory decision tree to determine the optimal legal procedure, applicable court forum, and expected recovery timeline based on the evidence you hold:
@@ -611,7 +611,7 @@ export default function UpiTransferProofOfLoanPage() {
                   id="heading-route-1-title"
                   className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight"
                 >
-                  Route 1: Strong Electronic Evidence (UPI + WhatsApp / Email) → Summary Suit Under Order 37 CPC
+                  Route 1: Electronic Proof &amp; Order 37 CPC Suit
                 </h2>
                 <div className="bg-white rounded-2xl border border-slate-200 p-5 sm:p-6 shadow-xs space-y-3 text-xs sm:text-sm text-slate-700 leading-relaxed">
                   <p>
@@ -644,7 +644,7 @@ export default function UpiTransferProofOfLoanPage() {
                   id="heading-route-2-title"
                   className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight"
                 >
-                  Route 2: Oral Understanding With Part-Repayment → Ordinary Money Recovery Suit &amp; Section 19 Extension
+                  Route 2: Part-Repayment &amp; Money Recovery Suit
                 </h2>
                 <div className="bg-white rounded-2xl border border-slate-200 p-5 sm:p-6 shadow-xs space-y-3 text-xs sm:text-sm text-slate-700 leading-relaxed">
                   <p>
@@ -677,7 +677,7 @@ export default function UpiTransferProofOfLoanPage() {
                   id="heading-route-3-title"
                   className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight"
                 >
-                  Route 3: Debtor Claims &apos;Gift&apos; or &apos;Past Debt&apos; → Shifting the Evidentiary Burden Under Section 106 BSA
+                  Route 3: Shifting Evidentiary Burden Under BSA
                 </h2>
                 <div className="bg-white rounded-2xl border border-slate-200 p-5 sm:p-6 shadow-xs space-y-3 text-xs sm:text-sm text-slate-700 leading-relaxed">
                   <p>
@@ -723,7 +723,7 @@ export default function UpiTransferProofOfLoanPage() {
                   id="heading-route-4-title"
                   className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight"
                 >
-                  Route 4: Fraudulent Inducement From Inception → Police Complaint Under Section 318 BNS (When Permissible)
+                  Route 4: Police Complaint Under Section 318 BNS
                 </h2>
                 <div className="bg-white rounded-2xl border border-slate-200 p-5 sm:p-6 shadow-xs space-y-3 text-xs sm:text-sm text-slate-700 leading-relaxed">
                   <p>
@@ -756,7 +756,7 @@ export default function UpiTransferProofOfLoanPage() {
                   id="heading-statutory-table-title"
                   className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight"
                 >
-                  Statutory Benchmarks: Limitation Periods, Electronic Admissibility &amp; Evidentiary Burdens
+                  Statutory Benchmarks &amp; Limitation Periods for Loans
                 </h2>
                 <p className="text-sm sm:text-base text-slate-700 leading-relaxed">
                   Before serving a legal demand notice or stepping into court, evaluate your dispute against these statutory benchmarks governing digital loan recovery in India:
@@ -837,7 +837,7 @@ export default function UpiTransferProofOfLoanPage() {
                     id="heading-evidence-tabs-title"
                     className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight"
                   >
-                    Interactive Evidence Analyzer: What Proof Do You Have to Back Your UPI Payment?
+                    Evidence Analyzer: Backing Your UPI Loan Claim
                   </h2>
                   <p className="text-xs font-semibold text-slate-500 mt-1">
                     Select Your Specific Dispute Scenario to Unlock the Statutory Section and Direct Escalation Action
@@ -853,7 +853,7 @@ export default function UpiTransferProofOfLoanPage() {
                   id="heading-case-study-title"
                   className="text-xl sm:text-2xl font-bold text-slate-900 tracking-tight"
                 >
-                  Worked Case Study: Recovering ₹2,80,000 Lent on Google Pay Without a Promissory Note
+                  Case Study: Recovers ₹2,80,000 Lent on Google Pay
                 </h2>
                 <div className="bg-slate-900 text-white rounded-2xl p-5 sm:p-8 shadow-xl space-y-4 sm:space-y-5 w-full overflow-hidden">
                   <div className="flex flex-wrap items-center justify-between gap-2 border-b border-slate-800 pb-3">
@@ -887,7 +887,7 @@ export default function UpiTransferProofOfLoanPage() {
                   id="heading-checklist-title"
                   className="text-xl sm:text-2xl font-bold text-slate-900 tracking-tight"
                 >
-                  Evidentiary Checklist: 6 Documents Required Under Section 63 BSA Before Serving Legal Notice
+                  Evidence Checklist: 6 Records Under Section 63 BSA
                 </h2>
                 <p className="text-xs sm:text-sm text-slate-700 leading-relaxed">
                   Under Section 63 of Bharatiya Sakshya Adhiniyam, 2023, electronic banking and chat records must be preserved systematically. Assemble these 6 documents before issuing a formal legal notice:
@@ -951,7 +951,7 @@ export default function UpiTransferProofOfLoanPage() {
                     id="heading-faqs-title"
                     className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight"
                   >
-                    Frequently Asked Questions About UPI Transfers, Hand Loans &amp; Legal Notice Recovery
+                    FAQs: UPI Transfers, Hand Loans &amp; Legal Notices
                   </h2>
                   <p className="text-xs font-semibold text-slate-500 mt-1">
                     Authoritative Answers Grounded in the Limitation Act, 1963, Bharatiya Sakshya Adhiniyam, 2023 and High Court Precedents

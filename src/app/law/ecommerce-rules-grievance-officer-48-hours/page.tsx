@@ -31,7 +31,7 @@ const BASE_PRICE = DEFAULT_FUNNEL_SETTINGS.basePricePerOpposition;
 const articleJsonLd = {
   "@context": "https://schema.org",
   "@type": "Article",
-  "headline": "Consumer Protection (E-Commerce) Rules Explained: 48-Hour and One-Month Duties",
+  "headline": "E-Commerce Rules Explained: 48-Hour Grievance and Refund Duties",
   "description":
     "The E-Commerce Rules make platforms acknowledge complaints in 48 hours and resolve them in a month. Here's what the 2026 amendment adds.",
   "inLanguage": "en-IN",
@@ -197,7 +197,7 @@ export default function EcommerceRulesPage() {
             id="hero-heading"
             className="text-3xl sm:text-4xl md:text-5xl font-black text-slate-900 tracking-tight leading-tight mb-6"
           >
-            Consumer Protection (E-Commerce) Rules Explained: 48-Hour and One-Month Duties
+            E-Commerce Rules Explained: 48-Hour Grievance and Refund Duties
           </h1>
 
           {/* Quick Answer Box directly under H1 (40-60 words) */}
@@ -224,7 +224,7 @@ export default function EcommerceRulesPage() {
         <section aria-labelledby="key-facts-heading" className="max-w-6xl mx-auto px-4 sm:px-6 py-6">
           <div className="bg-white rounded-2xl border border-slate-200/90 shadow-sm p-6 sm:p-8">
             <h2 id="key-facts-heading" className="text-2xl sm:text-3xl font-bold text-slate-900 tracking-tight mb-3">
-              Key Statutory Thresholds: Timelines, Portals, and Legal Limits at a Glance
+              Statutory Thresholds, Timelines &amp; Legal Limits
             </h2>
             <p className="text-sm sm:text-base text-slate-600 mb-6 leading-relaxed">
               Every online shopping dispute in India is governed by specific statutory clocks, administrative authorities, and monetary limits under consumer protection law.
@@ -293,7 +293,7 @@ export default function EcommerceRulesPage() {
         {/* Section 3: Clause-by-Clause Legal Annotation */}
         <section aria-labelledby="annotations-heading" className="max-w-6xl mx-auto px-4 sm:px-6 py-6">
           <h2 id="annotations-heading" className="text-2xl sm:text-3xl font-bold text-slate-900 tracking-tight mb-3">
-            Clause-by-Clause Legal Annotation: What Do the E-Commerce Rules Mandate?
+            Clause-by-Clause Annotation: E-Commerce Rules
           </h2>
           <p className="text-base text-slate-600 mb-8 leading-relaxed">
             The Consumer Protection (E-Commerce) Rules 2020 impose concrete statutory requirements on platforms. Below is an authoritative breakdown of operative clauses with verbatim text, legal interpretations, and practical examples.
@@ -583,7 +583,7 @@ export default function EcommerceRulesPage() {
         <section aria-labelledby="deadlines-penalties-heading" className="max-w-6xl mx-auto px-4 sm:px-6 py-6">
           <div className="bg-white rounded-2xl border border-slate-200/90 shadow-sm p-6 sm:p-8">
             <h2 id="deadlines-penalties-heading" className="text-2xl sm:text-3xl font-bold text-slate-900 tracking-tight mb-3">
-              What Are the Statutory Deadlines and Penalties for Non-Compliant Platforms?
+              Statutory Deadlines &amp; Penalties for Platforms
             </h2>
             <p className="text-base text-slate-600 mb-6 leading-relaxed">
               When an online merchant or platform ignores statutory duties, consumer commissions possess authority to award compensatory damages, litigation costs, and punitive penalties.
@@ -641,7 +641,7 @@ export default function EcommerceRulesPage() {
         <section aria-labelledby="enforce-heading" className="max-w-6xl mx-auto px-4 sm:px-6 py-6">
           <div className="bg-white rounded-2xl border border-slate-200/90 shadow-sm p-6 sm:p-8">
             <h2 id="enforce-heading" className="text-2xl sm:text-3xl font-bold text-slate-900 tracking-tight mb-3">
-              How to Legally Enforce the 48-Hour and One-Month Rules Against a Defaulting Platform
+              Enforcing the 48-Hour &amp; 30-Day Rules Against Platforms
             </h2>
             <p className="text-base text-slate-600 mb-6 leading-relaxed">
               When standard customer support stalls, you must switch from customer complaints to legal enforcement. Follow this sequential, 4-step statutory escalation pathway.
@@ -786,7 +786,7 @@ export default function EcommerceRulesPage() {
               Case Study Simulation
             </span>
             <h2 id="worked-example-heading" className="text-2xl sm:text-3xl font-bold text-slate-900 tracking-tight mb-4">
-              How Does an E-Commerce Dispute Resolve in Practice? An Illustrative Worked Scenario
+              Worked Scenario: How an E-Commerce Dispute Resolves
             </h2>
             <p className="text-base text-slate-600 mb-6 leading-relaxed">
               The following scenario illustrates how a consumer enforced Rule 4(5) and Rule 5 after facing a rejected return for a high-value electronics order.
@@ -822,7 +822,7 @@ export default function EcommerceRulesPage() {
         <section aria-labelledby="caselaw-heading" className="max-w-6xl mx-auto px-4 sm:px-6 py-6">
           <div className="bg-white rounded-2xl border border-slate-200/90 shadow-sm p-6 sm:p-8">
             <h2 id="caselaw-heading" className="text-2xl sm:text-3xl font-bold text-slate-900 tracking-tight mb-3">
-              What Consumer Court Judgments Have Established Marketplace Liability Under the Rules?
+              Consumer Court Judgments on Marketplace Liability
             </h2>
             <p className="text-base text-slate-600 mb-6 leading-relaxed">
               Consumer Commissions regularly reject intermediary safe-harbour arguments when marketplaces manage customer payments and order logistics. Below are three verified rulings:
@@ -881,7 +881,7 @@ export default function EcommerceRulesPage() {
         <section aria-labelledby="evidence-heading" className="max-w-6xl mx-auto px-4 sm:px-6 py-6">
           <div className="bg-white rounded-2xl border border-slate-200/90 shadow-sm p-6 sm:p-8">
             <h2 id="evidence-heading" className="text-2xl sm:text-3xl font-bold text-slate-900 tracking-tight mb-3">
-              What Electronic Evidence Do You Need to Overcome Platform Denials Under BSA Section 63?
+              Evidence Needed Under Section 63 BSA for Disputes
             </h2>
             <p className="text-base text-slate-600 mb-6 leading-relaxed">
               Under Section 63 of the <strong>Bharatiya Sakshya Adhiniyam, 2023 (BSA)</strong>, which replaced Section 65B of the Indian Evidence Act, digital records are fully admissible provided metadata integrity is preserved. Retain these 6 records:
@@ -1019,7 +1019,7 @@ export default function EcommerceRulesPage() {
         <section aria-labelledby="faq-heading" className="max-w-6xl mx-auto px-4 sm:px-6 py-6">
           <div className="bg-white rounded-2xl border border-slate-200/90 shadow-sm p-6 sm:p-8">
             <h2 id="faq-heading" className="text-2xl sm:text-3xl font-bold text-slate-900 tracking-tight mb-3">
-              Frequently Asked Questions About E-Commerce Rules & Grievance Officer Escalation
+              FAQs: E-Commerce Rules &amp; Grievance Officers
             </h2>
             <p className="text-base text-slate-600 mb-6 leading-relaxed">
               Find clear answers to recurring questions regarding online shopping rights, statutory timelines, and legal recourse under Indian consumer law.

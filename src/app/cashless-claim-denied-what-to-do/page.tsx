@@ -319,7 +319,7 @@ export default function CashlessClaimDeniedPage() {
                   id="heading-overview-title"
                   className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight"
                 >
-                  Cashless Pre-Authorisation Denied vs. Discharge Authorization Stalled: Immediate Rights Under IRDAI
+                  Cashless Pre-Authorisation Denied: Rights Under IRDAI
                 </h2>
                 <p className="text-sm sm:text-base text-slate-700 leading-relaxed">
                   Experiencing a cashless health insurance denial at a hospital billing counter is one of the most distressing ordeals an Indian family can endure. Whether occurring at 2:00 AM in the emergency triage unit or at 4:00 PM when an anxious patient is waiting to be discharged, policyholders are routinely told by hospital Third Party Administrator (TPA) desks that their cashless request has been rejected or that approval is pending indefinitely.
@@ -338,7 +338,7 @@ export default function CashlessClaimDeniedPage() {
                   id="heading-timelines-mandate"
                   className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight"
                 >
-                  The Mandatory 1-Hour &amp; 3-Hour Norms: What IRDAI Master Circular 2024 Dictates
+                  1-Hour &amp; 3-Hour Norms Under IRDAI Master Circular 2024
                 </h2>
                 <p className="text-sm sm:text-base text-slate-700 leading-relaxed">
                   To permanently curb predatory delays where patients were forced to wait 8 to 12 hours in hospital rooms solely for billing clearances, IRDAI notified the landmark <strong>Master Circular on Operations and Allied Matters of Insurers, 2024</strong> (Ref: IRDAI/HLT/REG/CIR/094/05/2024). This circular instituted mandatory statutory turn-around-times (TAT) that govern every health insurance company and TPA operating in India:
@@ -382,7 +382,7 @@ export default function CashlessClaimDeniedPage() {
                   id="heading-denial-vs-repudiation"
                   className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight"
                 >
-                  Cashless Denial Is Never Claim Repudiation: Your Unconditional Reimbursement Rights
+                  Cashless Denial Rights &amp; Unconditional Reimbursement
                 </h2>
                 <p className="text-sm sm:text-base text-slate-700 leading-relaxed">
                   When a TPA desk hands over a paper stamped &quot;Cashless Facility Denied&quot;, hospital receptionists frequently say: <em>&quot;Aapka claim reject ho gaya hai, ab aapko pura payment khud karna padega.&quot;</em> This statement conflates two entirely separate legal concepts in Indian insurance law:
@@ -421,7 +421,7 @@ export default function CashlessClaimDeniedPage() {
                     id="heading-statutory-table-title"
                     className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight"
                   >
-                    Statutory Benchmarks: IRDAI Processing Timelines, Insurer Penalties &amp; Common TPA Pretexts
+                    IRDAI Processing Timelines, Penalties &amp; TPA Tactics
                   </h2>
                   <span className="text-xs font-bold text-slate-500 uppercase tracking-wider">
                     Master Circular 2024
@@ -662,7 +662,7 @@ export default function CashlessClaimDeniedPage() {
                     id="heading-problem-picker-title"
                     className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight"
                   >
-                    Interactive Diagnostic: Common Cashless Denial Pretexts &amp; How to Counter Each
+                    Cashless Denial Pretexts &amp; How to Counter Each
                   </h2>
                   <span className="text-xs font-bold text-slate-500 uppercase tracking-wider">
                     Diagnostic Tool
@@ -681,7 +681,7 @@ export default function CashlessClaimDeniedPage() {
                     id="heading-playbook-title"
                     className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight"
                   >
-                    5-Step Escalation Playbook: How to Challenge a Cashless Denial and Recover Every Rupee
+                    5-Step Playbook: Challenging Cashless Denials
                   </h2>
                   <span className="text-xs font-bold text-slate-500 uppercase tracking-wider">
                     Tactical Playbook
@@ -774,7 +774,7 @@ export default function CashlessClaimDeniedPage() {
                     id="heading-worked-example-title"
                     className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight"
                   >
-                    Worked Case Example: Overturning an Emergency ₹3,60,000 Cashless Denial &amp; Penalty Recovery
+                    Case Study: Overturning ₹3.6L Emergency Cashless Denial
                   </h2>
                   <span className="text-xs font-bold text-slate-500 uppercase tracking-wider">
                     Illustrative Case Study
@@ -853,7 +853,7 @@ export default function CashlessClaimDeniedPage() {
                     id="heading-case-digest-title"
                     className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight"
                   >
-                    Landmark Legal Precedents: Consumer Commissions on TPA Delays and Hostage Discharge Tactics
+                    Precedents on TPA Delays &amp; Hostage Discharge Tactics
                   </h2>
                   <span className="text-xs font-bold text-slate-500 uppercase tracking-wider">
                     Judicial Digest
@@ -908,7 +908,7 @@ export default function CashlessClaimDeniedPage() {
                     id="heading-evidence-checklist-title"
                     className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight"
                   >
-                    Critical Evidence Checklist: 8 Documents to Collect Before Discharging From Hospital
+                    Evidence Checklist: 8 Documents Before Hospital Exit
                   </h2>
                   <span className="text-xs font-bold text-slate-500 uppercase tracking-wider">
                     Documentation
@@ -992,7 +992,7 @@ export default function CashlessClaimDeniedPage() {
                     id="heading-scope-title"
                     className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight"
                   >
-                    Our Honest Platform Scope: How LegalRecovery Helps vs What Requires Direct Action
+                    Scope &amp; Boundaries: What LegalRecovery Can and Cannot Do
                   </h2>
                   <span className="text-xs font-bold text-slate-500 uppercase tracking-wider">
                     Transparent Boundaries
@@ -1042,7 +1042,7 @@ export default function CashlessClaimDeniedPage() {
                     id="heading-faqs-title"
                     className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight"
                   >
-                    Frequently Asked Questions: Cashless Claim Denials, Approval Delays &amp; IRDAI Rules
+                    FAQs: Cashless Claim Denials, Delays &amp; IRDAI Rules
                   </h2>
                   <span className="text-xs font-bold text-slate-500 uppercase tracking-wider">
                     Statutory Answers
@@ -1069,7 +1069,7 @@ export default function CashlessClaimDeniedPage() {
                     id="heading-sources-title"
                     className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight"
                   >
-                    Statutory Provisions, Regulatory Circulars &amp; Primary Judicial References
+                    Primary Regulatory Circulars &amp; Judicial References
                   </h2>
                   <span className="text-xs font-bold text-slate-500 uppercase tracking-wider">
                     Verified Citations

@@ -149,7 +149,7 @@ export default function ConsumerCommissionAwardsTrackerPage() {
   const ARTICLE_SCHEMA = {
     "@context": "https://schema.org",
     "@type": "Article",
-    headline: "Monthly Tracker of Consumer Commission Orders on Refunds and Compensation",
+    headline: "Consumer Commission Awards Tracker: Refunds & Compensation",
     description:
       "A monthly roundup of consumer commission orders against e-commerce sites, airlines, banks and builders, with amounts and links.",
     datePublished: "2026-11-09T10:00:00+05:30",
@@ -310,7 +310,7 @@ export default function ConsumerCommissionAwardsTrackerPage() {
             </div>
 
             <h1 className="text-2xl sm:text-3xl md:text-5xl font-black tracking-tight text-white leading-tight mb-4 sm:mb-6 break-words">
-              Monthly Tracker of Consumer Commission Orders on Refunds and Compensation
+              Consumer Commission Awards Tracker: Refunds &amp; Compensation
             </h1>
 
             {/* Answer Box First: 40-60 Words Directly Under H1 */}
@@ -441,7 +441,7 @@ export default function ConsumerCommissionAwardsTrackerPage() {
                     id="heading-awards-table-title"
                     className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight"
                   >
-                    Filterable Database: Recent Consumer Commission Refund &amp; Compensation Awards
+                    Recent Consumer Commission Refund &amp; Compensation Awards
                   </h2>
                   <span className="text-xs font-bold text-slate-500 uppercase tracking-wider">
                     Interactive Data Engine
@@ -630,7 +630,7 @@ export default function ConsumerCommissionAwardsTrackerPage() {
                   id="heading-pattern-analysis-title"
                   className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight"
                 >
-                  Pattern Analysis: 5 Evidentiary Factors That Won Maximum Consumer Court Compensation
+                  5 Evidentiary Factors Winning Maximum Consumer Compensation
                 </h2>
                 <p className="text-sm sm:text-base text-slate-700 leading-relaxed">
                   Across consumer dispute proceedings under the Consumer Protection Act, 2019, successful claimants consistently establish five key evidentiary anchors that eliminate corporate deflection:
@@ -719,7 +719,7 @@ export default function ConsumerCommissionAwardsTrackerPage() {
                   id="heading-enforcement-flow-title"
                   className="text-xl sm:text-2xl font-bold text-slate-900 tracking-tight"
                 >
-                  Consumer Court Award Execution Hierarchy: From Pre-Litigation Notice to Money Recovery
+                  Award Execution Hierarchy: Legal Notice to Money Recovery
                 </h2>
                 <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
                   How consumer claims progress through statutory escalation to binding financial restitution:
@@ -820,7 +820,7 @@ export default function ConsumerCommissionAwardsTrackerPage() {
                     id="heading-sector-analysis-title"
                     className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight"
                   >
-                    Sector-Wise Award Analysis: Judicial Stand on Retail, Aviation, Banking &amp; Housing
+                    Sector Award Analysis: Retail, Aviation &amp; Housing
                   </h2>
                   <span className="text-xs font-bold text-slate-500 uppercase tracking-wider">
                     Sector Profiles
@@ -844,7 +844,7 @@ export default function ConsumerCommissionAwardsTrackerPage() {
                   id="heading-jurisdiction-table-title"
                   className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight"
                 >
-                  Consumer Court Pecuniary Jurisdiction, Court Fees &amp; Appeal Benchmarks (2026)
+                  Consumer Court Jurisdiction, Court Fees &amp; Benchmarks
                 </h2>
                 <p className="text-sm sm:text-base text-slate-700 leading-relaxed">
                   Under the Consumer Protection Rules, pecuniary jurisdiction is calculated strictly on the total consideration paid rather than the inflated compensation claimed:
@@ -909,7 +909,7 @@ export default function ConsumerCommissionAwardsTrackerPage() {
                   id="heading-worked-example-title"
                   className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight"
                 >
-                  Worked Case Example: Tracking a ₹38,000 E-Commerce &amp; Airline Claim to ₹68,500 Recovery
+                  Case Study: Tracking a ₹38,000 Claim to ₹68,500 Recovery
                 </h2>
                 <p className="text-sm sm:text-base text-slate-700 leading-relaxed">
                   To illustrate how consumer court damages compound beyond the base withheld purchase, review this verified case progression:
@@ -1059,7 +1059,7 @@ export default function ConsumerCommissionAwardsTrackerPage() {
                     id="heading-faqs-title"
                     className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight"
                   >
-                    Frequently Asked Questions on Consumer Court Awards &amp; Company Refunds
+                    FAQs on Consumer Court Awards &amp; Company Refunds
                   </h2>
                 </div>
 

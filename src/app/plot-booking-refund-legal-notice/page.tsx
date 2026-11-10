@@ -300,7 +300,7 @@ export default function PlotBookingRefundLegalNoticePage() {
                 <span>Statutory Framework for Plotted Developments</span>
               </div>
               <h2 className="text-2xl sm:text-3xl font-extrabold text-slate-900 mb-4">
-                Does RERA Apply to Plots? Statutory Rules for Plot Booking Amount Refunds
+                Does RERA Apply to Plots? Statutory Refund Rules
               </h2>
 
               <p className="text-slate-700 leading-relaxed mb-4">
@@ -424,7 +424,7 @@ export default function PlotBookingRefundLegalNoticePage() {
                 <span>Archetype G3 Readiness Diagnostic</span>
               </div>
               <h2 className="text-2xl sm:text-3xl font-extrabold text-slate-900 mb-3">
-                Pre-Flight Readiness Wizard: 6 Steps Before Demanding a Plot Booking Refund
+                6 Steps Before Demanding a Plot Booking Refund
               </h2>
               <p className="text-slate-700 leading-relaxed mb-4">
                 Before sending a cancellation email or signing a developer&apos;s one-sided &ldquo;surrendercum-indemnity bond&rdquo; (which often hides a 25%–50% forfeiture waiver), run through this 6-point statutory checklist to lock in your evidentiary position:
@@ -444,7 +444,7 @@ export default function PlotBookingRefundLegalNoticePage() {
                 <span>Forfeiture Limits &amp; Deduction Rules</span>
               </div>
               <h2 className="text-2xl sm:text-3xl font-extrabold text-slate-900 mb-4">
-                How Much Can a Plot Developer Deduct? Earnest Money &amp; Forfeiture Cap Matrix
+                How Much Can a Plot Developer Legally Deduct?
               </h2>
 
               <p className="text-slate-700 leading-relaxed mb-4">
@@ -573,7 +573,7 @@ export default function PlotBookingRefundLegalNoticePage() {
                 <span>Archetype G3 Mandatory Evidence Matrix</span>
               </div>
               <h2 className="text-2xl sm:text-3xl font-extrabold text-slate-900 mb-4">
-                Document &amp; Evidence Matrix: 7 Records Required to Recover Your Plot Advance
+                Evidence Matrix: 7 Records to Recover Plot Advance
               </h2>
 
               <p className="text-slate-700 leading-relaxed mb-5">
@@ -687,7 +687,7 @@ export default function PlotBookingRefundLegalNoticePage() {
                 <span>Verifiable Judicial &amp; RERA Precedents</span>
               </div>
               <h2 className="text-2xl sm:text-3xl font-extrabold text-slate-900 mb-4">
-                Landmark Supreme Court &amp; RERA Rulings on Plotted Developments and Booking Refunds
+                Supreme Court &amp; RERA Rulings on Plot Refunds
               </h2>
 
               <p className="text-slate-700 leading-relaxed mb-6">
@@ -1112,7 +1112,7 @@ export default function PlotBookingRefundLegalNoticePage() {
                 <span>Archetype G3 Dated Action Schedule</span>
               </div>
               <h2 className="text-2xl sm:text-3xl font-extrabold text-slate-900 mb-4">
-                Dated Recovery Timeline: From Plot Cancellation Letter to RERA or Consumer Execution
+                Recovery Timeline: Cancellation Letter to Execution
               </h2>
 
               <p className="text-slate-700 leading-relaxed mb-6">
@@ -1242,7 +1242,7 @@ export default function PlotBookingRefundLegalNoticePage() {
                 <span>Scenario-Specific Legal Remedies</span>
               </div>
               <h2 className="text-2xl sm:text-3xl font-extrabold text-slate-900 mb-3">
-                Plot Developer Dispute Scenarios: Unapproved Layouts, Loan Rejection &amp; Forfeiture Traps
+                Plot Dispute Scenarios: Unapproved Layouts &amp; Traps
               </h2>
               <p className="text-slate-700 leading-relaxed mb-4">
                 Select your exact plot booking dispute below to view the controlling statutory rule, maximum permissible deduction, and 3-step recovery strategy. (If your plot was booked under a tripartite bank loan scheme where the developer stopped paying pre-EMIs, see our guide on{" "}
@@ -1269,7 +1269,7 @@ export default function PlotBookingRefundLegalNoticePage() {
                 <span>Downloadable Pre-Notice Demand Template</span>
               </div>
               <h2 className="text-2xl sm:text-3xl font-extrabold text-slate-900 mb-3">
-                Plot Booking Cancellation Letter Format (Pre-Notice Written Demand Template)
+                Plot Booking Cancellation Letter Format Template
               </h2>
 
               <p className="text-slate-700 leading-relaxed mb-4">
@@ -1298,7 +1298,7 @@ export default function PlotBookingRefundLegalNoticePage() {
                 <span>Illustrative Worked Recovery Example</span>
               </div>
               <h2 className="text-2xl sm:text-3xl font-extrabold text-slate-900 mb-4">
-                Worked Case Study: Buyer Recovers ₹9,50,000 Plot Advance + ₹1,18,400 Interest From Colonizer
+                Case Study: Recovers ₹9.5L Plot Advance + Interest
               </h2>
 
               <div className="bg-slate-50 border border-slate-200 rounded-2xl p-5 sm:p-6 space-y-5">
@@ -1374,7 +1374,7 @@ export default function PlotBookingRefundLegalNoticePage() {
                 <span>Transparency &amp; Scope Disclosure</span>
               </div>
               <h2 className="text-2xl sm:text-3xl font-extrabold text-slate-900 mb-4">
-                Honest Scope: When an Advocate Notice Works vs. When You Need RERA or Civil Court
+                Scope &amp; Boundaries: What LegalRecovery Can and Cannot Do
               </h2>
 
               <p className="text-slate-700 leading-relaxed mb-5">
@@ -1457,7 +1457,7 @@ export default function PlotBookingRefundLegalNoticePage() {
                 <span>Verified Legal Q&amp;A</span>
               </div>
               <h2 className="text-2xl sm:text-3xl font-extrabold text-slate-900 mb-6">
-                Frequently Asked Questions: Plot Booking Refund Under RERA &amp; Cancellation Rules
+                FAQs: Plot Booking Refund Under RERA &amp; Rules
               </h2>
 
               <div className="space-y-3">
@@ -1491,7 +1491,7 @@ export default function PlotBookingRefundLegalNoticePage() {
                 <span>Authoritative Citations</span>
               </div>
               <h2 className="text-xl sm:text-2xl font-extrabold text-slate-900 mb-4">
-                Primary Statutes, Supreme Court Judgments &amp; Official Real Estate References
+                Primary Real Estate Statutes &amp; Court Rulings
               </h2>
 
               <ol className="sources list-decimal pl-5 space-y-2.5 text-xs sm:text-sm text-slate-700">

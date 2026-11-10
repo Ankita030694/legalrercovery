@@ -354,7 +354,7 @@ export default function CompanyDirectorsChequeBouncePage() {
                   id="heading-overview-title"
                   className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight"
                 >
-                  Section 141 NI Act Explained: How Corporate Cheque Bounces Trigger Criminal Liability
+                  Section 141 NI Act: Corporate Cheque Bounce Liability
                 </h2>
                 <p className="text-sm sm:text-base text-slate-700 leading-relaxed">
                   In commercial commerce across India, corporate entities regularly issue cheques to settle vendor supplies, contractual retainers, service invoices, or credit facilities. When a company cheque bounces due to insufficient funds, stopped payment, or frozen accounts, creditors encounter a distinct legal challenge: a company is an artificial legal person that cannot be physically arrested or imprisoned.
@@ -374,7 +374,7 @@ export default function CompanyDirectorsChequeBouncePage() {
                     id="heading-myth-vs-fact-title"
                     className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight"
                   >
-                    Myth vs. Fact: 7 Fatal Misconceptions in Company Cheque Bounce Litigation
+                    Myth vs Fact: 7 Misconceptions in Company Cheque Cases
                   </h2>
                   <span className="text-xs font-bold text-slate-500 uppercase tracking-wider">
                     Statutory Reality vs SERP Myths
@@ -816,7 +816,7 @@ export default function CompanyDirectorsChequeBouncePage() {
                   id="heading-deadlines-table-title"
                   className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight"
                 >
-                  Statutory Benchmarks &amp; Procedural Deadlines in Company Cheque Prosecutions
+                  Deadlines in Company Cheque Bounce Prosecutions
                 </h2>
                 <p className="text-sm sm:text-base text-slate-700 leading-relaxed">
                   Every stage of Section 138 and 141 proceedings operates under non-negotiable statutory timelines. Courts will dismiss delayed actions unless exceptional condonation is proved under Section 142(1)(b):
@@ -908,7 +908,7 @@ export default function CompanyDirectorsChequeBouncePage() {
                   id="heading-worked-example-title"
                   className="text-xl sm:text-2xl font-bold text-slate-900 tracking-tight"
                 >
-                  Worked Case Study: Vendor Recovers ₹24,50,000 from Bounced Company Cheque
+                  Case Study: Recovers ₹24.5L from Bounced Company Cheque
                 </h2>
                 <div className="bg-slate-900 text-white rounded-2xl p-5 sm:p-8 shadow-xl space-y-4 sm:space-y-5 w-full overflow-hidden">
                   <div className="flex flex-wrap items-center justify-between gap-2 border-b border-slate-800 pb-3">
@@ -945,7 +945,7 @@ export default function CompanyDirectorsChequeBouncePage() {
                   id="heading-evidence-checklist-title"
                   className="text-xl sm:text-2xl font-bold text-slate-900 tracking-tight"
                 >
-                  Evidence Checklist: 6 Essential Documents to Prosecute Company Directors
+                  Evidence Checklist: 6 Documents to Prosecute Directors
                 </h2>
                 <p className="text-xs sm:text-sm text-slate-700 leading-relaxed">
                   Under Section 63 of the Bharatiya Sakshya Adhiniyam, 2023 (BSA), electronic and physical documentation must be rigorously maintained to withstand quashing petitions:
@@ -1009,7 +1009,7 @@ export default function CompanyDirectorsChequeBouncePage() {
                     id="heading-faqs-title"
                     className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight"
                   >
-                    Frequently Asked Questions About Section 141 Director Liability &amp; Cheque Bounces
+                    FAQs: Section 141 Director Liability &amp; Cheques
                   </h2>
                   <p className="text-xs font-semibold text-slate-500 mt-1">
                     Authoritative Legal Guidance Grounded in Supreme Court Rulings and the Negotiable Instruments Act

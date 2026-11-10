@@ -4,7 +4,7 @@ import SalaryDeductedDuringNoticePeriodLegalActionIndiaClient from './SalaryDedu
 const slug = 'send-a-legal-notice/salary-deducted-during-notice-period-legal-action-india';
 const title = 'Illegal Salary Cut in Notice Period? Legal Notice India';
 const description =
-  'Employer made arbitrary salary cuts, training bond deductions, or asset penalties during your notice period? Challenge unlawful wage deductions under Section 7 Payment of Wages Act.';
+  'Salary cut during notice period for bond or training? Challenge unlawful wage deductions under Section 7 of Payment of Wages Act via legal notice.';
 const url = `https://www.legalrecovery.in/${slug}`;
 const ogImage = `/images/og/salary-deducted-during-notice-period-legal-action-india.jpg`;
 

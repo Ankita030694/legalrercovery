@@ -362,7 +362,7 @@ export default function FurnitureRefundPage() {
                   id="heading-overview-title"
                   className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight"
                 >
-                  Furniture &amp; Modular Kitchen Refund Rights: Why Buyers Are Protected in India
+                  Furniture &amp; Kitchen Refund Rights in India
                 </h2>
                 <p className="text-sm sm:text-base text-slate-700 leading-relaxed">
                   Purchasing furniture, living room upholstery, solid wood dining tables, or custom modular kitchens represents one of the largest discretionary household expenditures for Indian consumers. Yet, retail furniture stores, digital marketplaces (such as Pepperfry, Urban Ladder, Amazon, and Flipkart), and interior fit-out contractors routinely cause severe distress by missing committed delivery dates, delivering broken transit goods, or abandoning modular carpentry work mid-installation.
@@ -500,7 +500,7 @@ export default function FurnitureRefundPage() {
                     id="heading-legal-basis-title"
                     className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight"
                   >
-                    Statutory Grounds: What Indian Laws Say About Defective &amp; Delayed Deliveries
+                    Statutory Grounds for Defective &amp; Late Deliveries
                   </h2>
                   <span className="text-xs font-bold text-slate-500 uppercase tracking-wider">
                     Statutory Blockquotes
@@ -797,7 +797,7 @@ export default function FurnitureRefundPage() {
                     id="heading-worked-example-title"
                     className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight"
                   >
-                    Worked Case Example: ₹1,85,000 Modular Kitchen Delay &amp; Cracked Quartz Recovery
+                    Case Study: Recovers ₹1,85,000 for Kitchen Delay
                   </h2>
                   <span className="text-xs font-bold text-slate-500 uppercase tracking-wider">
                     Illustrative Case Study

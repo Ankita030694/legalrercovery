@@ -167,7 +167,7 @@ const FAQS = [
 const ARTICLE_SCHEMA = {
   "@context": "https://schema.org",
   "@type": "Article",
-  headline: "The MSMED (Amendment) Act 2026 Explained for Suppliers Chasing Payments",
+  headline: "MSMED Amendment Act 2026 Explained for Suppliers Chasing Payments",
   description:
     "The 2026 MSMED amendment keeps the 45-day rule and tightens mediation, arbitration and enforcement. What suppliers should do now.",
   datePublished: "2026-11-04T10:45:00+05:30",
@@ -274,7 +274,7 @@ export default function MsmedAmendmentAct2026Page() {
             </div>
 
             <h1 className="text-2xl sm:text-3xl md:text-5xl font-black tracking-tight text-white leading-tight mb-4 sm:mb-6 break-words">
-              The MSMED (Amendment) Act 2026 Explained for Suppliers Chasing Payments
+              MSMED Amendment Act 2026 Explained for Suppliers Chasing Payments
             </h1>
 
             {/* Answer Box First: 40-60 Words Directly Under H1 */}
@@ -331,7 +331,7 @@ export default function MsmedAmendmentAct2026Page() {
                   id="heading-summary-title"
                   className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight"
                 >
-                  Why the MSMED (Amendment) Act 2026 Reshapes B2B Invoice Recovery in India
+                  Why MSMED Amendment Act 2026 Reshapes B2B Recovery
                 </h2>
                 <p className="text-sm sm:text-base text-slate-700 leading-relaxed">
                   For nearly two decades, Chapter V of the Micro, Small and Medium Enterprises Development (MSMED) Act, 2006 promised small suppliers a powerful statutory shield: a strict 45-day payment ceiling under Section 15 and penal compound interest at three times the Reserve Bank of India (RBI) Bank Rate under Section 16. Yet on the ground, recovery through physical State Micro and Small Enterprises Facilitation Councils (MSEFCs) via the legacy MSME Samadhaan portal suffered from severe procedural bottlenecks. Applications waited 12 to 24 months just to convert from failed conciliation into formal arbitration, while corporate buyers exploited jurisdictional objections and delayed physical hearings.
@@ -348,7 +348,7 @@ export default function MsmedAmendmentAct2026Page() {
                     id="heading-comparison-table-title"
                     className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight"
                   >
-                    Before vs After: Legacy MSME Samadhaan Regime vs 2026 MSMED Amendment &amp; ODR Rules
+                    Before vs After: Legacy Regime vs 2026 ODR Rules
                   </h2>
                   <span className="text-xs font-bold text-slate-500 uppercase tracking-wider">
                     Statutory Rule Comparison
@@ -468,7 +468,7 @@ export default function MsmedAmendmentAct2026Page() {
                   id="heading-timeline-change-title"
                   className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight"
                 >
-                  Legislative &amp; Operational Timeline: From the 2006 Act to the 2026 Amendment
+                  Legislative Timeline: 2006 Act to 2026 Amendment
                 </h2>
                 <p className="text-sm sm:text-base text-slate-700 leading-relaxed">
                   Understanding the exact sequence of statutory amendments, Finance Act tax hooks, and Ministry of MSME portal notifications is critical because the applicable procedure depends on when your supply occurred and when your claim was filed:
@@ -620,7 +620,7 @@ export default function MsmedAmendmentAct2026Page() {
                     id="heading-landmark-orders-title"
                     className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight"
                   >
-                    Landmark Order Digest: 4 Supreme Court Judgments Governing MSME Payment Recovery
+                    4 Supreme Court Judgments on MSME Payment Recovery
                   </h2>
                   <span className="text-xs font-bold text-slate-500 uppercase tracking-wider">
                     Verified Apex Court Precedents
@@ -697,7 +697,7 @@ export default function MsmedAmendmentAct2026Page() {
                   id="heading-escalation-flow-title"
                   className="text-xl sm:text-2xl font-bold text-slate-900 tracking-tight"
                 >
-                  Statutory Escalation Rail: From Day 46 Default to ODR Award &amp; Bank Attachment
+                  Escalation Rail: Day 46 Default to ODR Award
                 </h2>
                 <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
                   Follow this five-stage enforcement architecture combining an Advocate Statutory Demand Notice with the 2026 MSME ODR Portal workflow:
@@ -822,7 +822,7 @@ export default function MsmedAmendmentAct2026Page() {
                   id="heading-playbook-title"
                   className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight"
                 >
-                  How Suppliers Should Use the 2026 Rules Today: 5-Step Recovery Playbook
+                  5-Step Playbook: Using 2026 Rules for Recovery
                 </h2>
                 <p className="text-sm sm:text-base text-slate-700 leading-relaxed">
                   Do not jump straight into a multi-month arbitration queue without first deploying your statutory tax and audit leverage. Follow this five-step sequence to force settlement in days rather than months:
@@ -914,7 +914,7 @@ export default function MsmedAmendmentAct2026Page() {
                     id="heading-scenarios-tabs-title"
                     className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight"
                   >
-                    Common Buyer Excuses to Delay MSME Payments &amp; How the Law Dismantles Them
+                    Common Buyer Excuses &amp; How Law Dismantles Them
                   </h2>
                   <p className="text-xs font-semibold text-slate-500 mt-1">
                     Select a Buyer Delay Tactic to See the Exact MSMED Act Section, Supreme Court Ruling, and Counter-Strategy
@@ -930,7 +930,7 @@ export default function MsmedAmendmentAct2026Page() {
                   id="heading-worked-example-title"
                   className="text-xl sm:text-2xl font-bold text-slate-900 tracking-tight"
                 >
-                  Worked Case Study: Auto-Component MSE Recovers ₹14,20,000 + ₹1,86,400 Interest in 14 Days
+                  Case Study: MSE Recovers ₹14.2L + Interest in 14 Days
                 </h2>
                 <div className="bg-slate-900 text-white rounded-2xl p-5 sm:p-8 shadow-xl space-y-4 sm:space-y-5 w-full overflow-hidden">
                   <div className="flex flex-wrap items-center justify-between gap-2 border-b border-slate-800 pb-3">
@@ -969,7 +969,7 @@ export default function MsmedAmendmentAct2026Page() {
                   id="heading-evidence-checklist-title"
                   className="text-xl sm:text-2xl font-bold text-slate-900 tracking-tight"
                 >
-                  MSME Supplier Evidence Checklist: 6 Documents Required for Legal Notice &amp; ODR Filing
+                  Evidence Checklist: 6 Documents for MSME Notice
                 </h2>
                 <p className="text-xs sm:text-sm text-slate-700 leading-relaxed">
                   To ensure seamless auto-verification on the MSME ODR Portal and an unassailable evidentiary record under Section 63 of the Bharatiya Sakshya Adhiniyam, 2023 (BSA), keep these 6 documents ready:
@@ -1041,7 +1041,7 @@ export default function MsmedAmendmentAct2026Page() {
                     id="heading-faqs-title"
                     className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight"
                   >
-                    Frequently Asked Questions: MSMED Amendment Act 2026, 45-Day Rule &amp; ODR Portal
+                    FAQs: MSMED Amendment Act 2026 &amp; ODR Portal
                   </h2>
                   <p className="text-xs font-semibold text-slate-500 mt-1">
                     Direct Statutory Answers Grounded in Chapter V of the MSMED Act, Section 43B(h), and Supreme Court Rulings
@@ -1074,7 +1074,7 @@ export default function MsmedAmendmentAct2026Page() {
                   id="heading-sources-title"
                   className="text-lg sm:text-xl font-bold text-slate-900 tracking-tight"
                 >
-                  Statutory References, Supreme Court Precedents &amp; Official MSME Portals
+                  Statutory References &amp; Official MSME Portals
                 </h2>
                 <ol className="sources list-decimal list-inside space-y-2 text-xs sm:text-sm text-slate-600">
                   {PRIMARY_SOURCES.map((source, idx) => (

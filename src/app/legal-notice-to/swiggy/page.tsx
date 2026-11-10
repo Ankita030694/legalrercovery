@@ -226,7 +226,7 @@ export default function SwiggyRefundNoticePage() {
                   id="reconciliation-flow-heading"
                   className="text-2xl sm:text-3xl font-black text-slate-900 tracking-tight mb-4"
                 >
-                  Why Is Your Swiggy or Instamart Refund Not Credited? The Payment Reconciliation Flow
+                  Why Swiggy or Instamart Refunds Get Delayed in Payment Flow
                 </h2>
                 <p className="text-slate-600 text-sm sm:text-base leading-relaxed mb-6">
                   When you place an order on Swiggy or Swiggy Instamart, your payment traverses a regulated four-party pipeline. Funds do not move straight to the restaurant or neighborhood dark store. They flow from your bank account through an authorized payment gateway aggregator (such as Razorpay, PayU, or Juspay) into Swiggy Limited&apos;s nodal escrow pool, before eventual merchant settlement. When an order fails, refund delays arise because platform cancellation records frequently fail to sync with interbank settlement files.
@@ -417,7 +417,7 @@ export default function SwiggyRefundNoticePage() {
                   id="swiggy-problems-heading"
                   className="text-2xl sm:text-3xl font-black text-slate-900 tracking-tight mb-4"
                 >
-                  What Usually Goes Wrong With Swiggy Orders: 5 Frequent Failure Scenarios
+                  What Goes Wrong With Swiggy Orders: 5 Frequent Failure Scenarios
                 </h2>
                 <p className="text-slate-600 text-sm sm:text-base leading-relaxed mb-6">
                   Customer grievances with Swiggy and Instamart follow repeatable operational failures where automated algorithms reject valid complaints. Below are the five most frequent breakdown points and their statutory remedies:
@@ -781,7 +781,7 @@ export default function SwiggyRefundNoticePage() {
                   id="worked-example-heading"
                   className="text-2xl sm:text-3xl font-black text-slate-900 tracking-tight mb-4"
                 >
-                  How a Consumer Recovered ₹3,490 for a Denied Instamart Delivery: Illustrative Worked Example
+                  Worked Example: Recovering ₹3,490 for Denied Instamart Orders
                 </h2>
                 <p className="text-slate-600 text-sm sm:text-base leading-relaxed mb-6">
                   Review this representative scenario demonstrating how statutory escalation resolves quick-commerce refund denials:
@@ -840,7 +840,7 @@ export default function SwiggyRefundNoticePage() {
                   id="evidence-checklist-heading"
                   className="text-2xl sm:text-3xl font-black text-slate-900 tracking-tight mb-4"
                 >
-                  What Evidence Must You Preserve Under Section 63 BSA for Swiggy Disputes?
+                  Evidence Checklist Under Section 63 BSA for Swiggy Disputes
                 </h2>
                 <p className="text-slate-600 text-sm sm:text-base leading-relaxed mb-6">
                   Under Section 63 of the Bharatiya Sakshya Adhiniyam, 2023 (BSA), electronic records including app screenshots and digital transaction logs are admissible evidence before consumer courts. Compile this checklist:
@@ -909,7 +909,7 @@ export default function SwiggyRefundNoticePage() {
                   id="honest-scope-heading"
                   className="text-2xl sm:text-3xl font-black text-slate-900 tracking-tight mb-4"
                 >
-                  Honest Scope: What LegalRecovery Can and Cannot Do for Your Swiggy Dispute
+                  Scope &amp; Boundaries: What LegalRecovery Can and Cannot Do
                 </h2>
                 <p className="text-slate-600 text-sm sm:text-base leading-relaxed mb-6">
                   We believe in complete transparency regarding the legal capabilities and limits of our service:
@@ -978,7 +978,7 @@ export default function SwiggyRefundNoticePage() {
                   id="faqs-heading"
                   className="text-2xl sm:text-3xl font-black text-slate-900 tracking-tight mb-6"
                 >
-                  Frequently Asked Questions About Swiggy &amp; Instamart Refunds and Legal Recourse
+                  FAQs About Swiggy &amp; Instamart Refunds and Legal Recourse
                 </h2>
 
                 <div className="space-y-6">
@@ -1004,7 +1004,7 @@ export default function SwiggyRefundNoticePage() {
                   id="sources-heading"
                   className="text-xl sm:text-2xl font-black text-slate-900 tracking-tight mb-4"
                 >
-                  Primary Legal Sources and Statutory Authorities Governing Swiggy Disputes
+                  Primary Legal Sources &amp; Authorities for Swiggy Disputes
                 </h2>
                 <p className="text-slate-600 text-xs sm:text-sm leading-relaxed mb-4">
                   Every legal premise, timeline, and precedent on this page is grounded in primary Indian statutes, regulatory notifications, and reported consumer commission judgments:

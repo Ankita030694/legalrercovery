@@ -341,7 +341,7 @@ export default function NoBrokerLegalNoticePage() {
                     id="heading-problem-dossiers-title"
                     className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight"
                   >
-                    What Usually Goes Wrong With NoBroker: 4 Money-Back Plan, Token &amp; Service Failure Points
+                    What Goes Wrong With NoBroker: 4 Failure Points
                   </h2>
                   <p className="text-xs sm:text-sm text-slate-600 mt-1 leading-relaxed">
                     Whether you bought a Tenant Freedom/Relax Plan, transferred a property booking token, or used NoBroker Pay for rent and relocation, most refund disputes fall into four specific operational traps:
@@ -384,7 +384,7 @@ export default function NoBrokerLegalNoticePage() {
                   id="heading-liability-table-title"
                   className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight"
                 >
-                  Who Is Liable for Your Stuck NoBroker Refund? Platform vs. Landlord vs. Payment Gateway Matrix
+                  Who Is Liable for Stuck NoBroker Refunds?
                 </h2>
                 <p className="text-sm sm:text-base text-slate-700 leading-relaxed">
                   NoBroker routinely deflects refund claims by arguing that it is an intermediary directory or that a third-party landlord or mover holds your money. Use this statutory matrix to identify the legally liable party, governing deadline, and immediate escalation step:
@@ -508,7 +508,7 @@ export default function NoBrokerLegalNoticePage() {
                   id="heading-money-flow-title"
                   className="text-xl sm:text-2xl font-bold text-slate-900 tracking-tight"
                 >
-                  Where Does Your Money Get Stuck? NoBroker Money-Back Plan &amp; Token Refund Flow
+                  Where Money Gets Stuck: NoBroker Refund Flow
                 </h2>
                 <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
                   Understanding how funds move between your bank, the payment gateway, NoBroker&apos;s nodal escrow account, and the property owner exposes exactly where your refund is stalled:
@@ -646,7 +646,7 @@ export default function NoBrokerLegalNoticePage() {
                     id="heading-commission-orders-title"
                     className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight"
                   >
-                    What Consumer Commissions Have Ordered NoBroker (NoBroker Technologies Solutions Pvt. Ltd.) to Pay
+                    Consumer Commission Orders Against NoBroker
                   </h2>
                   <span className="text-xs font-bold text-slate-500 uppercase tracking-wider">
                     Verified Consumer Court Rulings
@@ -793,7 +793,7 @@ export default function NoBrokerLegalNoticePage() {
                   id="heading-pattern-analysis-title"
                   className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight"
                 >
-                  Pattern Analysis: Why Consumers Win Money-Back Plan, Token &amp; Service Disputes Against NoBroker
+                  Why Consumers Win Refund Disputes Against NoBroker
                 </h2>
                 <p className="text-sm sm:text-base text-slate-700 leading-relaxed">
                   Reviewing successful pre-litigation settlements and consumer commission orders against NoBroker reveals five decisive evidentiary factors that dismantle platform denials:
@@ -868,7 +868,7 @@ export default function NoBrokerLegalNoticePage() {
                   id="heading-playbook-title"
                   className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight"
                 >
-                  The 5-Step Escalation Playbook: From NoBroker Plan Claim to Grievance Officer &amp; Legal Notice
+                  5-Step Escalation Playbook Against NoBroker
                 </h2>
                 <p className="text-sm sm:text-base text-slate-700 leading-relaxed">
                   Follow this dated statutory sequence to build an airtight paper trail and force release of your stuck Money-Back Plan fee, token advance, or NoBroker Pay transfer:
@@ -961,7 +961,7 @@ export default function NoBrokerLegalNoticePage() {
                     id="heading-clause-solver-title"
                     className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight"
                   >
-                    Fine-Print Traps in NoBroker Money-Back Plans &amp; Token Agreements: Interactive Clause Solver
+                    Fine-Print Traps in NoBroker Plans &amp; Agreements
                   </h2>
                   <p className="text-xs font-semibold text-slate-500 mt-1">
                     Select Your Exact Dispute Type to View the Statutory Counter-Argument and 3-Step Fix
@@ -981,7 +981,7 @@ export default function NoBrokerLegalNoticePage() {
                   id="heading-worked-example-title"
                   className="text-xl sm:text-2xl font-bold text-slate-900 tracking-tight"
                 >
-                  Worked Case Study: Tenant Recovers ₹18,000 Token Advance + ₹5,899 Money-Back Plan Fee in 11 Days
+                  Case Study: Tenant Recovers ₹18,000 Token Advance + Plan Fee
                 </h2>
                 <div className="bg-slate-900 text-white rounded-2xl p-5 sm:p-8 shadow-xl space-y-4 sm:space-y-5 w-full overflow-hidden">
                   <div className="flex flex-wrap items-center justify-between gap-2 border-b border-slate-800 pb-3">
@@ -1019,7 +1019,7 @@ export default function NoBrokerLegalNoticePage() {
                   id="heading-evidence-checklist-title"
                   className="text-xl sm:text-2xl font-bold text-slate-900 tracking-tight"
                 >
-                  Evidence Checklist: 6 Digital Records Needed Under Section 63 BSA Before Serving Notice to NoBroker
+                  Evidence Checklist: 6 Records for NoBroker Notice
                 </h2>
                 <p className="text-xs sm:text-sm text-slate-700 leading-relaxed">
                   Under Section 63 of the Bharatiya Sakshya Adhiniyam, 2023 (BSA), in-app screenshots, WhatsApp chats, and bank statements are admissible electronic records. Assemble these 6 items:
@@ -1086,7 +1086,7 @@ export default function NoBrokerLegalNoticePage() {
                   id="heading-honest-scope-title"
                   className="text-xl sm:text-2xl font-bold text-slate-900 tracking-tight"
                 >
-                  Honest Scope: What LegalRecovery Can and Cannot Do for Your NoBroker Dispute
+                  Scope &amp; Boundaries: What LegalRecovery Can and Cannot Do
                 </h2>
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                   <div className="p-5 bg-white rounded-2xl border border-emerald-200 shadow-xs space-y-2.5">
@@ -1125,7 +1125,7 @@ export default function NoBrokerLegalNoticePage() {
                     id="heading-faqs-title"
                     className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight"
                   >
-                    Frequently Asked Questions About NoBroker Refunds, Money-Back Plans &amp; Legal Notices
+                    FAQs: NoBroker Refunds, Plans &amp; Legal Notices
                   </h2>
                   <p className="text-xs font-semibold text-slate-500 mt-1">
                     Direct Statutory Answers Grounded in the Consumer Protection Act 2019, Contract Act &amp; Commission Orders

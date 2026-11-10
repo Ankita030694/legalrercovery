@@ -158,7 +158,7 @@ const FAQS = [
 const ARTICLE_SCHEMA = {
   "@context": "https://schema.org",
   "@type": "Article",
-  headline: "Bank Account Frozen Due to a Cyber Cell Notice: Step-by-Step Legal Remedies to Unfreeze",
+  headline: "Bank Account Frozen by Cyber Cell: Legal Remedies to Unfreeze",
   description:
     "Account put on debit freeze by cyber police? Layer tracing, Section 91/102 notice remedies, obtaining an NOC, and filing before the magistrate.",
   datePublished: "2026-11-09T10:00:00+05:30",
@@ -259,7 +259,7 @@ export default function BankAccountFrozenCyberCellPage() {
             </div>
 
             <h1 className="text-2xl sm:text-3xl md:text-5xl font-black tracking-tight text-white leading-tight mb-4 sm:mb-6 break-words">
-              Bank Account Frozen Due to a Cyber Cell Notice: Step-by-Step Legal Remedies to Unfreeze
+              Bank Account Frozen by Cyber Cell: Legal Remedies to Unfreeze
             </h1>
 
             {/* Answer Box First: 40-60 Words Directly Under H1 */}
@@ -316,7 +316,7 @@ export default function BankAccountFrozenCyberCellPage() {
                   id="heading-overview-title"
                   className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight"
                 >
-                  Why Cyber Cells Freeze Bank Accounts: Layer Tracing &amp; Innocent Downstream Victims
+                  Why Cyber Cells Freeze Bank Accounts: Layer Tracing
                 </h2>
                 <p className="text-sm sm:text-base text-slate-700 leading-relaxed">
                   Every day in India, hundreds of business owners, freelance professionals, and peer-to-peer (P2P) cryptocurrency traders suddenly wake up to discover that their bank accounts have been placed on an indefinite &quot;Total Debit Freeze&quot;. Debit cards stop working, UPI transactions fail with errors like &quot;account restricted&quot; or &quot;contact branch&quot;, and recurring EMI standing instructions bounce, incurring unwarranted penalties.
@@ -627,7 +627,7 @@ export default function BankAccountFrozenCyberCellPage() {
                     id="heading-route-io-noc-title"
                     className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight"
                   >
-                    Route A: Representation to Cyber Cell IO &amp; Securing a De-Freeze NOC
+                    Route A: Representation to IO &amp; De-Freeze NOC
                   </h2>
                 </div>
 
@@ -771,7 +771,7 @@ export default function BankAccountFrozenCyberCellPage() {
                     id="heading-route-high-court-title"
                     className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight"
                   >
-                    Route D: High Court Writ Petition Under Article 226 of the Constitution
+                    Route D: High Court Writ Under Article 226
                   </h2>
                 </div>
 
@@ -797,7 +797,7 @@ export default function BankAccountFrozenCyberCellPage() {
                     id="heading-court-precedents-title"
                     className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight"
                   >
-                    Landmark Judicial Digest: 4 High Court Orders Protecting Account Holders
+                    4 Landmark High Court Orders on Frozen Accounts
                   </h2>
                   <span className="text-xs font-bold text-slate-500 uppercase tracking-wider">
                     Verifiable Case Precedents
@@ -896,7 +896,7 @@ export default function BankAccountFrozenCyberCellPage() {
                     id="heading-worked-example-title"
                     className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight"
                   >
-                    Worked Case Example: Unfreezing ₹5,40,000 Over an Alleged ₹42,500 P2P Dispute
+                    Case Study: Unfreezing ₹5.4L Over Alleged Dispute
                   </h2>
                   <span className="text-xs font-bold text-red-600 uppercase tracking-wider">
                     Illustrative Case Study
@@ -1038,7 +1038,7 @@ export default function BankAccountFrozenCyberCellPage() {
                     id="heading-faqs-title"
                     className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight"
                   >
-                    Frequently Asked Questions on Cyber Cell Bank Account Freezes &amp; De-Freezing
+                    FAQs: Cyber Cell Bank Account Freezes &amp; Remedies
                   </h2>
                   <span className="text-xs font-bold text-slate-500 uppercase tracking-wider">
                     Statutory FAQ

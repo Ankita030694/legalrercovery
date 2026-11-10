@@ -216,7 +216,7 @@ export default function NykaaDisputePage() {
               id="problem-analysis-heading"
               className="text-2xl sm:text-3xl font-bold text-slate-900 tracking-tight mb-4"
             >
-              Why Is Your Nykaa Refund Stuck or Counterfeit Cosmetic Return Rejected?
+              Why Nykaa Refunds Get Stuck or Cosmetic Returns Rejected
             </h2>
             <div className="prose prose-slate max-w-none text-slate-700 leading-relaxed space-y-4">
               <p>
@@ -365,7 +365,7 @@ export default function NykaaDisputePage() {
               id="grievance-officer-heading"
               className="text-2xl sm:text-3xl font-bold text-slate-900 tracking-tight mb-4"
             >
-              Who Is the Nykaa Grievance Officer and How Do You Serve a Formal Complaint?
+              Nykaa Grievance Officer Details &amp; Formal Complaint
             </h2>
             <p className="text-slate-700 text-sm sm:text-base leading-relaxed mb-6">
               Under Rule 4(4) and Rule 5 of the Consumer Protection (E-Commerce) Rules, 2020, marketplace platforms must publish the contact credentials of their Grievance Redressal Officer. Legal notices must be served on the parent corporate entity.
@@ -565,7 +565,7 @@ export default function NykaaDisputePage() {
               id="platform-liability-heading"
               className="text-2xl sm:text-3xl font-bold text-slate-900 tracking-tight"
             >
-              Can Nykaa Refuse Returns for Fake or Damaged Cosmetics Under Non-Returnable Clauses?
+              Can Nykaa Refuse Returns for Fake or Damaged Cosmetics?
             </h2>
             <p>
               When a dispute arises over cosmetics or fragrances, Nykaa often cites its policy stating personal care goods cannot be returned once opened. Under Indian consumer law, internal platform policies cannot supersede rights guaranteed by Parliament.
@@ -615,7 +615,7 @@ export default function NykaaDisputePage() {
               id="case-law-heading"
               className="text-2xl sm:text-3xl font-bold text-slate-900 tracking-tight"
             >
-              What Have Consumer Commissions Ordered Nykaa and FSN E-Commerce to Pay?
+              Consumer Commission Orders Against Nykaa &amp; FSN
             </h2>
             <p className="text-slate-600 leading-relaxed">
               Consumer Commissions consistently hold e-commerce platforms liable for delivery failures, delayed refunds, and defective goods.
@@ -717,7 +717,7 @@ export default function NykaaDisputePage() {
               id="evidence-heading"
               className="text-2xl sm:text-3xl font-bold text-slate-900 tracking-tight mb-4"
             >
-              What Electronic Evidence Proves a Nykaa Counterfeit or Missing Refund Under Section 63 BSA?
+              Evidence of Counterfeit Goods Under Section 63 BSA
             </h2>
             <p className="text-slate-600 leading-relaxed mb-6">
               Under Section 63 of the Bharatiya Sakshya Adhiniyam, 2023, digital records are admissible in consumer court when their integrity and origin are documented. Retain these six items before issuing a legal notice.
@@ -804,7 +804,7 @@ export default function NykaaDisputePage() {
               id="worked-example-heading"
               className="text-2xl sm:text-3xl font-bold text-slate-900 tracking-tight mb-4"
             >
-              Illustrative Case Study: Recovering ₹7,499 for Counterfeit Perfume After Nykaa Return Denial
+              Case Study: Recovers ₹7,499 for Counterfeit Perfume
             </h2>
             <p className="text-slate-600 leading-relaxed mb-6">
               Review this illustrative scenario based on recurring consumer dispute patterns.
@@ -927,7 +927,7 @@ export default function NykaaDisputePage() {
               id="faq-heading"
               className="text-2xl sm:text-3xl font-bold text-slate-900 tracking-tight"
             >
-              Frequently Asked Questions About Nykaa Refunds, Fake Products & Consumer Notices
+              FAQs About Nykaa Refunds, Fake Products &amp; Notices
             </h2>
             <p className="text-slate-600 leading-relaxed">
               Common questions regarding Nykaa refund timelines, counterfeit cosmetic verifications, and consumer court escalations.
@@ -963,7 +963,7 @@ export default function NykaaDisputePage() {
               id="sources-heading"
               className="text-lg font-bold text-slate-900 mb-4"
             >
-              Statutory Authorities & Primary Legal Sources Governing Nykaa Cosmetics Disputes
+              Primary Legal Authorities for Nykaa Cosmetic Disputes
             </h2>
             <p className="text-xs text-slate-500 mb-4 leading-relaxed">
               Statutory provisions, regulatory deadlines, and jurisdictional thresholds referenced on this page are verified against official gazettes, legislation, and judicial reporting:

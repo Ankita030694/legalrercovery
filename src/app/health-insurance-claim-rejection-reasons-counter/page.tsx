@@ -331,7 +331,7 @@ export default function HealthInsuranceClaimRejectionPage() {
                     id="heading-rejection-matrix-title"
                     className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight"
                   >
-                    The Master Counter-Argument Matrix: Rejection Ground vs. Statutory Defense
+                    Counter-Argument Matrix: Rejection Ground vs Defense
                   </h2>
                   <p className="text-xs sm:text-sm text-slate-600 mt-1">
                     Every common health insurance repudiation pretext, the decisive legal counter-argument, mandatory evidence, and the statutory forum to enforce your claim:
@@ -506,7 +506,7 @@ export default function HealthInsuranceClaimRejectionPage() {
                   id="heading-rejection-breakdown-title"
                   className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight"
                 >
-                  Deep-Dive: How to Dismantle the 4 Most Frequent Health Claim Rejection Pretexts
+                  Dismantling 4 Frequent Health Claim Rejection Pretexts
                 </h2>
                 <p className="text-sm sm:text-base text-slate-700 leading-relaxed">
                   In India, private and public health insurers frequently rely on standard template letters drafted by Third Party Administrators (TPAs) to reject legitimate reimbursement claims. Understanding the exact statutory boundary of each defense allows you to reverse the repudiation:
@@ -878,7 +878,7 @@ export default function HealthInsuranceClaimRejectionPage() {
                   id="heading-playbook-title"
                   className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight"
                 >
-                  The 5-Step Escalation Playbook: How to Contest and Overturn a Rejected Health Claim
+                  5-Step Playbook: Contesting Rejected Health Claims
                 </h2>
                 <p className="text-sm sm:text-base text-slate-700 leading-relaxed">
                   Derived from winning Insurance Ombudsman awards and consumer commission orders, this 5-step playbook cuts through bureaucratic deflection:
@@ -982,7 +982,7 @@ export default function HealthInsuranceClaimRejectionPage() {
                     id="heading-forum-comparison-title"
                     className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight"
                   >
-                    Forum Comparison: Insurance Ombudsman vs. Consumer Court vs. Advocate Notice
+                    Ombudsman vs Consumer Court vs Legal Notice
                   </h2>
                   <p className="text-xs sm:text-sm text-slate-600 mt-1">
                     Evaluate cost, turnaround time, financial limits, and enforcement teeth across dispute resolution routes:
@@ -1128,7 +1128,7 @@ export default function HealthInsuranceClaimRejectionPage() {
                   id="heading-worked-example-title"
                   className="text-xl sm:text-2xl font-bold text-slate-900 tracking-tight"
                 >
-                  Worked Case Study: Policyholder Overturns ₹4,85,000 Cardiac Claim Rejection
+                  Case Study: Overturning ₹4,85,000 Cardiac Claim Rejection
                 </h2>
                 <div className="bg-slate-900 text-white rounded-2xl p-5 sm:p-8 shadow-xl space-y-4 sm:space-y-5 w-full overflow-hidden">
                   <div className="flex flex-wrap items-center justify-between gap-2 border-b border-slate-800 pb-3">
@@ -1174,7 +1174,7 @@ export default function HealthInsuranceClaimRejectionPage() {
                   id="heading-evidence-checklist-title"
                   className="text-xl sm:text-2xl font-bold text-slate-900 tracking-tight"
                 >
-                  Evidence Checklist: 6 Documents You Must Secure Before Contesting a Rejection
+                  Evidence Checklist: 6 Documents Before Contesting
                 </h2>
                 <p className="text-xs sm:text-sm text-slate-700 leading-relaxed">
                   Under Section 63 of the Bharatiya Sakshya Adhiniyam, 2023 (BSA), electronic medical communications, diagnostic telemetry, and digital billing records are fully admissible. Assemble these 6 documents:

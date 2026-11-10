@@ -324,7 +324,7 @@ export default function OlaUberRapidoLegalNoticePage() {
                   id="heading-overview-title"
                   className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight"
                 >
-                  What Consumer Courts and Transport Regulators Have Ordered Ola, Uber &amp; Rapido to Pay
+                  Consumer Court Orders Against Ola, Uber &amp; Rapido
                 </h2>
                 <p className="text-sm sm:text-base text-slate-700 leading-relaxed">
                   Every day across Indian metropolitan hubs, millions of daily commuters experience arbitrary deductions on cab aggregator apps. Drivers accept bookings only to demand offline cash payments, inquire about destination coordinates and unilaterally abort the trip, or refuse to operate vehicle air conditioners in soaring heat. When passengers cancel to salvage their schedules, platforms like Ola (ANI Technologies), Uber (Uber India Systems), and Rapido (Roppen Transportation) algorithmically debit automated cancellation charges ranging from ₹50 to ₹150 directly from digital payment methods.
@@ -344,7 +344,7 @@ export default function OlaUberRapidoLegalNoticePage() {
                     id="heading-order-digest-title"
                     className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight"
                   >
-                    Landmark Cab Aggregator Case Digest: 4 Verifiable Orders Against Ola, Uber &amp; Rapido
+                    4 Landmark Consumer Orders Against Ola, Uber &amp; Rapido
                   </h2>
                   <span className="text-xs font-bold text-slate-500 uppercase tracking-wider">
                     Verifiable Court Records
@@ -421,7 +421,7 @@ export default function OlaUberRapidoLegalNoticePage() {
                   id="heading-why-liable-title"
                   className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight"
                 >
-                  Why Ola, Uber and Rapido Cannot Claim &quot;Third-Party Driver&quot; Intermediary Immunity
+                  Why Cab Aggregators Cannot Claim Intermediary Immunity
                 </h2>
                 <p className="text-sm sm:text-base text-slate-700 leading-relaxed">
                   When riders serve complaints, aggregator legal departments frequently argue that they operate merely as digital matching intermediaries under Section 79 of the Information Technology Act, 2000, claiming zero liability for driver behavior, route choices, or vehicle air conditioning. This argument has been rejected by Indian courts and regulatory statutory directives:
@@ -448,7 +448,7 @@ export default function OlaUberRapidoLegalNoticePage() {
                   id="heading-pattern-analysis-title"
                   className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight"
                 >
-                  Pattern Analysis: What Won Cab Ride Refund and Overcharge Disputes in Consumer Courts
+                  What Won Cab Refund &amp; Overcharge Cases in Consumer Courts
                 </h2>
                 <p className="text-sm sm:text-base text-slate-700 leading-relaxed">
                   A careful legal review of victorious consumer verdicts against ANI Technologies, Uber India Systems, and Roppen Transportation indicates five decisive evidentiary factors that consistently overcome aggregator defense claims:
@@ -523,7 +523,7 @@ export default function OlaUberRapidoLegalNoticePage() {
                   id="heading-escalation-flow-title"
                   className="text-xl sm:text-2xl font-bold text-slate-900 tracking-tight"
                 >
-                  Statutory Cab Dispute Resolution Hierarchy: From In-App Ticket to Consumer Court
+                  Cab Dispute Resolution Hierarchy: App Ticket to Court
                 </h2>
                 <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
                   Follow this verified statutory escalation rail to bypass automated bot deflection and secure full restitution:
@@ -648,7 +648,7 @@ export default function OlaUberRapidoLegalNoticePage() {
                   id="heading-playbook-title"
                   className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight"
                 >
-                  The 5-Step Escalation Playbook Against Ola, Uber &amp; Rapido: From Trip Dispute to Legal Notice
+                  5-Step Escalation Playbook Against Cab Aggregators
                 </h2>
                 <p className="text-sm sm:text-base text-slate-700 leading-relaxed">
                   Synthesized directly from winning consumer commission verdicts, this 5-step playbook enforces your commuter rights and overcomes automated ticket closure:
@@ -736,7 +736,7 @@ export default function OlaUberRapidoLegalNoticePage() {
                   id="heading-fact-sheet-title"
                   className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight"
                 >
-                  Statutory Cab Aggregator Fact Sheet: Grievance Officers &amp; Legal Notice Addresses
+                  Cab Aggregator Grievance Officers &amp; Notice Addresses
                 </h2>
                 <p className="text-sm sm:text-base text-slate-700 leading-relaxed">
                   Under Rule 4(4) of the Consumer Protection (E-Commerce) Rules, 2020, every cab aggregator must publish the name and contact details of its resident Grievance Officer. Legal notices served to these registered entities carry binding evidentiary force in consumer commissions:
@@ -829,7 +829,7 @@ export default function OlaUberRapidoLegalNoticePage() {
                   id="heading-deadlines-table-title"
                   className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight"
                 >
-                  Statutory Deadlines Under MoRTH Aggregator Guidelines &amp; E-Commerce Rules
+                  Statutory Deadlines Under MoRTH &amp; E-Commerce Rules
                 </h2>
                 <p className="text-sm sm:text-base text-slate-700 leading-relaxed">
                   The Ministry of Road Transport and Highways (MoRTH) and the Consumer Protection regulatory framework establish binding rules for cab aggregators. Internal app cancellation rules cannot override these national standards:
@@ -910,7 +910,7 @@ export default function OlaUberRapidoLegalNoticePage() {
                     id="heading-problem-picker-title"
                     className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight"
                   >
-                    Cab Aggregator Dispute Resolver: Overcharges, Cancellation Fees &amp; Wallet Lock-In
+                    Cab Dispute Resolver: Overcharges &amp; Cancellation Fees
                   </h2>
                   <p className="text-xs font-semibold text-slate-500 mt-1">
                     Select Your Specific Dispute Scenario to Unlock the Statutory Clause and Immediate Resolution Action
@@ -926,7 +926,7 @@ export default function OlaUberRapidoLegalNoticePage() {
                   id="heading-worked-example-title"
                   className="text-xl sm:text-2xl font-bold text-slate-900 tracking-tight"
                 >
-                  Worked Case Study: Tech Executive Recovers ₹680 Cancellation Fee + ₹15,000 Compensation from Cab Aggregator
+                  Case Study: Recovers ₹680 Fee + ₹15,000 Compensation
                 </h2>
                 <div className="bg-slate-900 text-white rounded-2xl p-5 sm:p-8 shadow-xl space-y-4 sm:space-y-5 w-full overflow-hidden">
                   <div className="flex flex-wrap items-center justify-between gap-2 border-b border-slate-800 pb-3">
@@ -960,7 +960,7 @@ export default function OlaUberRapidoLegalNoticePage() {
                   id="heading-evidence-checklist-title"
                   className="text-xl sm:text-2xl font-bold text-slate-900 tracking-tight"
                 >
-                  Cab Ride Evidence Checklist: 6 Digital Records Required Before Serving a Legal Notice
+                  Cab Evidence Checklist: 6 Records for Legal Notice
                 </h2>
                 <p className="text-xs sm:text-sm text-slate-700 leading-relaxed">
                   Under Section 63 of the Bharatiya Sakshya Adhiniyam, 2023 (BSA), electronic communications and digital banking records are fully admissible in consumer commissions. Assemble these 6 documents:
@@ -1024,7 +1024,7 @@ export default function OlaUberRapidoLegalNoticePage() {
                     id="heading-faqs-title"
                     className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight"
                   >
-                    Frequently Asked Questions About Ola, Uber &amp; Rapido Refunds, Overcharges &amp; Legal Notices
+                    FAQs: Ola, Uber &amp; Rapido Refunds &amp; Legal Notices
                   </h2>
                   <p className="text-xs font-semibold text-slate-500 mt-1">
                     Authoritative Answers Grounded in MoRTH Aggregator Guidelines, CCPA Regulations, and Consumer Court Orders
@@ -1057,7 +1057,7 @@ export default function OlaUberRapidoLegalNoticePage() {
                   id="heading-sources-title"
                   className="text-lg sm:text-xl font-bold text-slate-900 tracking-tight"
                 >
-                  Cab Aggregator Regulations, Primary Statutes &amp; Official Government Portals
+                  Cab Aggregator Statutes &amp; Official Portals
                 </h2>
                 <ol className="sources list-decimal list-inside space-y-2 text-xs sm:text-sm text-slate-600">
                   {PRIMARY_SOURCES.map((source, idx) => (

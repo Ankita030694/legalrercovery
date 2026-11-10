@@ -319,7 +319,7 @@ export default function TelecomBroadbandRefundPage() {
                     id="heading-routes-comparison-title"
                     className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight"
                   >
-                    Comparing Telecom &amp; Broadband Dispute Routes: Notice vs TRAI Appellate vs Consumer Court vs TDSAT
+                    Comparing Telecom Dispute Routes: Notice to TDSAT
                   </h2>
                 </div>
 
@@ -463,7 +463,7 @@ export default function TelecomBroadbandRefundPage() {
                   id="heading-appellate-deepdive-title"
                   className="text-xl sm:text-2xl font-extrabold text-slate-900 tracking-tight"
                 >
-                  Route 1 Deep Dive: The TRAI 2-Tier Grievance &amp; Appellate Authority Framework
+                  Route 1: TRAI 2-Tier Grievance &amp; Appeals
                 </h2>
                 <p className="text-sm sm:text-base text-slate-700 leading-relaxed">
                   Under the Telecom Consumers Protection and Redressal of Grievances Regulations, 2012, every telecom access service provider and internet service provider (ISP) in India is statutorily mandated to maintain a two-tier internal dispute resolution system:
@@ -496,7 +496,7 @@ export default function TelecomBroadbandRefundPage() {
                   id="heading-legal-notice-deepdive-title"
                   className="text-xl sm:text-2xl font-extrabold text-slate-900 tracking-tight"
                 >
-                  Route 2 Deep Dive: The Advocate Legal Demand Notice (The Pre-Litigation Ultimatum)
+                  Route 2: Advocate Legal Demand Notice
                 </h2>
                 <p className="text-sm sm:text-base text-slate-700 leading-relaxed">
                   While TRAI&apos;s internal grievance machinery is legally mandated, corporate customer service teams often treat appellate filings as administrative formality. When customer care representatives deflect claims with canned responses, serving a formal statutory advocate legal notice fundamentally shifts the power dynamic:
@@ -526,7 +526,7 @@ export default function TelecomBroadbandRefundPage() {
                   id="heading-consumer-court-deepdive-title"
                   className="text-xl sm:text-2xl font-extrabold text-slate-900 tracking-tight"
                 >
-                  Route 3 Deep Dive: District Consumer Commission (e-Jagriti) Under CPA 2019
+                  Route 3: District Consumer Commission e-Jagriti
                 </h2>
                 <p className="text-sm sm:text-base text-slate-700 leading-relaxed">
                   If the service provider fails to comply with your advocate legal notice within the stipulated 15-day demand window, you can immediately initiate consumer court proceedings under Section 35 of the Consumer Protection Act, 2019:
@@ -591,7 +591,7 @@ export default function TelecomBroadbandRefundPage() {
                       id="heading-court-orders-title"
                       className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight"
                     >
-                      Landmark Order Digest: 4 Verifiable Telecom Rulings Against Jio, Airtel, Vi &amp; ACT Fibernet
+                      4 Landmark Orders Against Jio, Airtel, Vi &amp; ACT
                     </h2>
                   </div>
                   <span className="text-xs font-bold text-slate-500 uppercase tracking-wider">
@@ -669,7 +669,7 @@ export default function TelecomBroadbandRefundPage() {
                   id="heading-pattern-analysis-title"
                   className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight"
                 >
-                  Pattern Analysis: What Consistently Won Telecom &amp; Broadband Refund Claims
+                  What Won Telecom &amp; Broadband Refund Claims
                 </h2>
                 <p className="text-sm sm:text-base text-slate-700 leading-relaxed">
                   An in-depth empirical review of consumer court judgments across Indian state and district commissions demonstrates clear evidentiary patterns. When consumers follow these documented evidentiary steps, telecom defense claims are swiftly dismissed:
@@ -808,7 +808,7 @@ export default function TelecomBroadbandRefundPage() {
                     id="heading-worked-example-title"
                     className="text-xl sm:text-2xl font-extrabold text-slate-900 tracking-tight"
                   >
-                    Worked Case Study: Recovering a ₹2,500 Withheld Fiber Deposit &amp; ₹15,000 Harassment Damages
+                    Case Study: Recovers ₹2,500 Deposit + Damages
                   </h2>
                   <span className="text-xs font-bold text-slate-500 uppercase tracking-wider">
                     Illustrative Matter
@@ -935,7 +935,7 @@ export default function TelecomBroadbandRefundPage() {
                     id="heading-faqs-title"
                     className="text-xl sm:text-2xl font-extrabold text-slate-900 tracking-tight"
                   >
-                    Frequently Asked Questions on Telecom, Broadband &amp; Recharge Refunds
+                    FAQs: Telecom, Broadband &amp; Recharge Refunds
                   </h2>
                   <span className="text-xs font-bold text-slate-500 uppercase tracking-wider">
                     Statutory FAQ Guide

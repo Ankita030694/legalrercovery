@@ -252,7 +252,7 @@ export default function BulkRecoveryNoticeSendThroughEmailWhatsappSpeedpostSolut
               COMMERCIAL DEBT RECOVERY
             </span>
             <h1 className="text-3xl md:text-6xl font-black mb-6 leading-tight tracking-tight max-w-5xl mx-auto">
-              Bulk Recovery Notice via Email, WhatsApp &amp; Speed Post: <span className="text-[#DC2626]">Recovery of Unpaid Dues for Business</span>
+              Bulk Recovery Notice via Email, WhatsApp &amp; Speed Post <span className="text-[#DC2626]">for Business</span>
             </h1>
             <p className="text-sm md:text-xl mb-8 md:mb-12 max-w-3xl mx-auto text-slate-300 leading-relaxed font-medium">
               Overcome debtor evasion and recover overdue commercial receivables fast. Deploy advocate-drafted statutory demand notices simultaneously across Email, WhatsApp, and India Post Speed Post.

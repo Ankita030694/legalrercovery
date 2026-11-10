@@ -339,7 +339,7 @@ export default function ChitFundRecoveryPage() {
                   id="heading-legal-differences-title"
                   className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight"
                 >
-                  Registered Chit Funds vs. Unregistered Kitty Committees: Key Legal Differences
+                  Registered Chit Funds vs Kitty Committees: Differences
                 </h2>
                 <p className="text-sm sm:text-base text-slate-700 leading-relaxed">
                   Before choosing an escalation route, you must determine whether your dispute involves a registered chit fund corporation or an informal private bachat committee. The applicable statutory forums and legal thresholds differ fundamentally:
@@ -391,7 +391,7 @@ export default function ChitFundRecoveryPage() {
                     id="heading-order-digest-title"
                     className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight"
                   >
-                    Landmark Order Digest: 4 Verifiable Judicial Rulings on Chit &amp; Kitty Defaults
+                    4 Landmark Judicial Rulings on Chit &amp; Kitty Defaults
                   </h2>
                   <span className="text-xs font-bold text-slate-500 uppercase tracking-wider">
                     Verifiable Court Records
@@ -468,7 +468,7 @@ export default function ChitFundRecoveryPage() {
                   id="heading-pattern-analysis-title"
                   className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight"
                 >
-                  Pattern Analysis: What Successfully Recovers Defaulted Kitty &amp; Chit Fund Capital
+                  What Successfully Recovers Defaulted Kitty &amp; Chit Funds
                 </h2>
                 <p className="text-sm sm:text-base text-slate-700 leading-relaxed">
                   An analysis of successful money recovery claims against absconding committee heads and defaulting members highlights clear strategic commonalities. When victims structure their evidence methodically, courts and police authorities act decisively:
@@ -825,7 +825,7 @@ export default function ChitFundRecoveryPage() {
                     id="heading-problem-picker-title"
                     className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight"
                   >
-                    Common Kitty &amp; Chit Dispute Scenarios: Root Causes &amp; Direct Fixes
+                    Kitty &amp; Chit Dispute Scenarios: Causes &amp; Fixes
                   </h2>
                   <p className="text-xs font-semibold text-slate-500 mt-1">
                     Select Your Specific Dispute Pattern Below to Reveal Governing Statutes and Immediate Escalation Steps
@@ -841,7 +841,7 @@ export default function ChitFundRecoveryPage() {
                   id="heading-worked-example-title"
                   className="text-xl sm:text-2xl font-bold text-slate-900 tracking-tight"
                 >
-                  Worked Case Study: 8 Kitty Members Recover ₹14,50,000 from Defaulting Organiser
+                  Case Study: 8 Members Recover ₹14.5L from Organiser
                 </h2>
                 <div className="bg-slate-900 text-white rounded-2xl p-5 sm:p-8 shadow-xl space-y-4 sm:space-y-5 w-full overflow-hidden">
                   <div className="flex flex-wrap items-center justify-between gap-2 border-b border-slate-800 pb-3">
@@ -875,7 +875,7 @@ export default function ChitFundRecoveryPage() {
                   id="heading-evidence-checklist-title"
                   className="text-xl sm:text-2xl font-bold text-slate-900 tracking-tight"
                 >
-                  Evidence Checklist: 6 Critical Documents Under BSA Section 63 Before Serving Notice
+                  Evidence Checklist: 6 Documents Under Section 63 BSA
                 </h2>
                 <p className="text-xs sm:text-sm text-slate-700 leading-relaxed">
                   Under Section 63 of the Bharatiya Sakshya Adhiniyam, 2023 (BSA), electronic documents, WhatsApp chats, and digital banking logs are fully admissible in court. Assemble these 6 documents:

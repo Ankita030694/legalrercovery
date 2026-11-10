@@ -279,7 +279,7 @@ export default function ChequeBounceCalculatorPage() {
                     id="heading-calculator-title"
                     className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight"
                   >
-                    Interactive Section 138 Deadline Calculator: Notice, Cure &amp; Court Timelines
+                    Section 138 Deadline Calculator: Notice &amp; Court Timelines
                   </h2>
                   <p className="text-xs sm:text-sm text-slate-600 mt-1">
                     Enter the date on your cheque and the date you received the bank return memo to compute your legally binding notice, cure, and court filing countdowns.
@@ -301,7 +301,7 @@ export default function ChequeBounceCalculatorPage() {
                     id="heading-statutory-table-title"
                     className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight"
                   >
-                    Statutory Timelines Under NI Act: Section 138 &amp; 142 Action Schedule
+                    NI Act Timelines: Section 138 &amp; 142 Action Schedule
                   </h2>
                   <p className="text-xs sm:text-sm text-slate-600 mt-1">
                     Every stage of a cheque dishonour dispute operates under rigid statutory deadlines. Missing even one procedural step can invalidate the entire criminal proceeding:
@@ -447,7 +447,7 @@ export default function ChequeBounceCalculatorPage() {
                   id="heading-legal-basis-title"
                   className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight"
                 >
-                  Method &amp; Legal Basis: How the Negotiable Instruments Act Enforces Cheque Honours
+                  Legal Basis: How NI Act Enforces Cheque Honours
                 </h2>
                 <p className="text-sm sm:text-base text-slate-700 leading-relaxed">
                   Section 138 was inserted into the Negotiable Instruments Act to infuse credibility into commercial transactions by creating criminal liability for the dishonour of negotiable paper. However, because criminal sanctions (up to two years imprisonment and double the cheque amount as fine) are severe, Indian courts hold complainants to the strictest procedural standards:
@@ -522,7 +522,7 @@ export default function ChequeBounceCalculatorPage() {
                     id="heading-flowchart-title"
                     className="text-xl sm:text-2xl font-bold text-slate-900 tracking-tight"
                   >
-                    Statutory Escalation Flowchart: From Bank Return Memo to Criminal Trial
+                    Escalation Flowchart: Return Memo to Criminal Trial
                   </h2>
                   <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
                     Follow the statutory sequence from receipt of the dishonour memo to securing recovery or filing a complaint before the Magistrate:
@@ -848,7 +848,7 @@ export default function ChequeBounceCalculatorPage() {
                     id="heading-case-study-title"
                     className="text-xl sm:text-2xl font-bold text-slate-900 tracking-tight"
                   >
-                    Worked Case Study: Industrial Vendor Recovers ₹18,50,000 Cheque Dishonour in 28 Days
+                    Case Study: Recovers ₹18.5L Cheque Dishonour in 28 Days
                   </h2>
                   <p className="text-xs sm:text-sm text-slate-600 mt-1">
                     An illustrative breakdown demonstrating how rigorous statutory timeline tracking converted a bounced corporate cheque into full recovery:
@@ -904,7 +904,7 @@ export default function ChequeBounceCalculatorPage() {
                     id="heading-evidence-title"
                     className="text-xl sm:text-2xl font-bold text-slate-900 tracking-tight"
                   >
-                    Evidence Checklist: 6 Critical Documents Before Serving Section 138 Notice
+                    Evidence Checklist: 6 Documents for Section 138 Notice
                   </h2>
                   <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
                     Under Section 63 of the Bharatiya Sakshya Adhiniyam, 2023 (BSA), assembling clean documentary proof prevents preliminary challenges before the Magistrate:
@@ -1009,7 +1009,7 @@ export default function ChequeBounceCalculatorPage() {
                     id="heading-faqs-title"
                     className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight"
                   >
-                    Frequently Asked Questions About Section 138 Notice Timelines &amp; Deadlines
+                    FAQs: Section 138 Notice Timelines &amp; Deadlines
                   </h2>
                   <p className="text-xs font-semibold text-slate-500 mt-1">
                     Authoritative Answers Grounded in the Negotiable Instruments Act and Supreme Court Precedents

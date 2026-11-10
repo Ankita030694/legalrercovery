@@ -311,7 +311,7 @@ export default function CleartripLegalNoticePage() {
                   id="heading-overview-title"
                   className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight"
                 >
-                  Cleartrip Refund Delayed: Airline vs OTA Intermediary Liability Under Indian Law
+                  Cleartrip Refund Delayed: Airline vs Intermediary Liability
                 </h2>
                 <p className="text-sm sm:text-base text-slate-700 leading-relaxed">
                   When a domestic flight is grounded, rescheduled by more than two hours, or when a hotel booking is cancelled within free cancellation windows, thousands of travelers face an endless blame game. Cleartrip customer support chatbots repeatedly assert: <em>&quot;We have requested the refund from the airline/hotel; once they release the commercial funds, we will credit your account.&quot;</em> Concurrently, air carriers like <Link href="/legal-notice-to/indigo" className="text-blue-700 font-semibold underline hover:text-blue-900">IndiGo</Link>, Air India, or SpiceJet inform passengers that the refund has already been remitted in bulk to Cleartrip&apos;s master corporate account.
@@ -517,7 +517,7 @@ export default function CleartripLegalNoticePage() {
                     id="heading-escalation-rail-title"
                     className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight"
                   >
-                    Vertical Escalation Rail: 4 Dated Steps to Recover Your Cleartrip Funds
+                    4-Stage Escalation Rail to Recover Cleartrip Ticket Funds
                   </h2>
                   <p className="text-xs font-semibold text-slate-500 mt-1">
                     Chronological Legal Pathway with Specific Statutory Contact Points and Portals
@@ -717,7 +717,7 @@ export default function CleartripLegalNoticePage() {
                   id="heading-deadlines-table-title"
                   className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight"
                 >
-                  Statutory Refund Deadlines for Cleartrip Bookings: Flights, Hotels & Packages
+                  Statutory Refund Deadlines for Cleartrip Bookings
                 </h2>
                 <p className="text-sm sm:text-base text-slate-700 leading-relaxed">
                   Turnaround times for airline, hotel, and holiday cancellations made on Cleartrip are defined by aviation directives and consumer protection rules. Cleartrip cannot rely on boilerplate terms of use to override these binding statutory deadlines:
@@ -797,7 +797,7 @@ export default function CleartripLegalNoticePage() {
                   id="heading-wallet-convenience-trap-title"
                   className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight"
                 >
-                  The Clearcash Wallet & Convenience Fee Trap: Why Forced Store Credits Violate the Law
+                  Clearcash Wallet Trap: Why Forced Store Credit Is Unlawful
                 </h2>
                 <div className="bg-amber-50/80 border border-amber-200 rounded-2xl p-4 sm:p-7 space-y-3 sm:space-y-4 w-full overflow-hidden">
                   <h3 className="text-base sm:text-lg font-bold text-amber-950">
@@ -823,7 +823,7 @@ export default function CleartripLegalNoticePage() {
                   id="heading-worked-example-title"
                   className="text-xl sm:text-2xl font-bold text-slate-900 tracking-tight"
                 >
-                  Worked Case Study: Bengaluru Professional Recovers ₹42,600 Cancelled Booking from Cleartrip
+                  Case Study: Recovers ₹42,600 Cancelled Booking from Cleartrip
                 </h2>
                 <div className="bg-slate-900 text-white rounded-2xl p-5 sm:p-8 shadow-xl space-y-4 sm:space-y-5 w-full overflow-hidden">
                   <div className="flex flex-wrap items-center justify-between gap-2 border-b border-slate-800 pb-3">
@@ -857,7 +857,7 @@ export default function CleartripLegalNoticePage() {
                   id="heading-evidence-checklist-title"
                   className="text-xl sm:text-2xl font-bold text-slate-900 tracking-tight"
                 >
-                  Electronic Evidence Checklist: What You Need Before Serving Cleartrip a Legal Notice
+                  Evidence Checklist Before Serving a Cleartrip Legal Notice
                 </h2>
                 <p className="text-xs sm:text-sm text-slate-700 leading-relaxed">
                   Under Section 63 of the Bharatiya Sakshya Adhiniyam, 2023 (BSA), electronic records, app receipts, and financial statements are fully admissible in consumer courts. Assemble these 6 critical documents before initiating legal escalation:
@@ -921,7 +921,7 @@ export default function CleartripLegalNoticePage() {
                     id="heading-faqs-title"
                     className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight"
                   >
-                    Frequently Asked Questions About Cleartrip Refund Delays & Legal Notice
+                    FAQs About Cleartrip Refund Delays &amp; Legal Notice
                   </h2>
                   <p className="text-xs font-semibold text-slate-500 mt-1">
                     Authoritative Answers Grounded in DGCA Regulations, E-Commerce Rules & Consumer Court Precedents

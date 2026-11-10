@@ -387,7 +387,7 @@ export default function ReraComplaintOnlineStateWisePage() {
                     id="heading-state-matrix-title"
                     className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight mt-1"
                   >
-                    State-Wise RERA Complaint Online Matrix: Portals, Filing Fees, Forms &amp; Interest Rules
+                    State-Wise RERA Complaint Matrix: Portals &amp; Fees
                   </h2>
                 </div>
 
@@ -640,7 +640,7 @@ export default function ReraComplaintOnlineStateWisePage() {
                     id="heading-route-comparison-title"
                     className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight mt-1"
                   >
-                    RERA Complaint vs Consumer Court vs NCLT: 5 Builder Recovery Routes Compared
+                    RERA vs Consumer Court vs NCLT: 5 Routes Compared
                   </h2>
                 </div>
 
@@ -878,7 +878,7 @@ export default function ReraComplaintOnlineStateWisePage() {
                     id="heading-form-m-vs-n-title"
                     className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight mt-1"
                   >
-                    Form M vs Form N: The Supreme Court Jurisdiction Split &amp; RERA Complaint Format
+                    Form M vs Form N: Supreme Court Jurisdiction Split
                   </h2>
                 </div>
 
@@ -1006,7 +1006,7 @@ COMPLAINT NO. __________ OF 2026 (UNDER SECTION 31 READ WITH SECTION 18 OF RERA 
                     id="heading-landmark-rulings-title"
                     className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight mt-1"
                   >
-                    Landmark Supreme Court Judgments Governing Online RERA Complaints &amp; Builder Refunds
+                    Supreme Court Rulings on Online RERA Complaints
                   </h2>
                 </div>
 
@@ -1099,7 +1099,7 @@ COMPLAINT NO. __________ OF 2026 (UNDER SECTION 31 READ WITH SECTION 18 OF RERA 
                     id="heading-flowchart-title"
                     className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight mt-1"
                   >
-                    Statutory Resolution Flow: From Builder Possession Default to Section 40 Recovery Certificate
+                    Resolution Flow: Possession Default to Section 40 RC
                   </h2>
                 </div>
 
@@ -1288,7 +1288,7 @@ COMPLAINT NO. __________ OF 2026 (UNDER SECTION 31 READ WITH SECTION 18 OF RERA 
                     id="heading-playbook-title"
                     className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight mt-1"
                   >
-                    How to File a RERA Complaint Online: 5-Step State Portal Playbook (Login to Execution)
+                    5-Step Playbook: How to File RERA Complaint Online
                   </h2>
                 </div>
 
@@ -1407,7 +1407,7 @@ COMPLAINT NO. __________ OF 2026 (UNDER SECTION 31 READ WITH SECTION 18 OF RERA 
                   id="heading-worked-example-title"
                   className="text-xl sm:text-2xl font-bold text-slate-900 tracking-tight"
                 >
-                  Worked Case Study: Pune Homebuyer Recovers ₹82,50,000 Principal + ₹29,45,250 Interest via MahaCRITI Online Filing
+                  Case Study: Homebuyer Recovers ₹82.5L Principal
                 </h2>
 
                 <div className="bg-slate-900 text-white rounded-2xl p-5 sm:p-8 shadow-xl space-y-4 sm:space-y-5 w-full overflow-hidden">
@@ -1453,7 +1453,7 @@ COMPLAINT NO. __________ OF 2026 (UNDER SECTION 31 READ WITH SECTION 18 OF RERA 
                   id="heading-evidence-checklist-title"
                   className="text-xl sm:text-2xl font-bold text-slate-900 tracking-tight"
                 >
-                  Evidence Checklist: 6 Essential Documents for Online RERA Complaint Filing (BSA Section 63)
+                  Evidence Checklist: 6 Documents for Online RERA
                 </h2>
                 <p className="text-xs sm:text-sm text-slate-700 leading-relaxed">
                   Under <strong>Section 63 of the Bharatiya Sakshya Adhiniyam, 2023 (BSA)</strong>, electronic records, email trails, portal screenshots, and digital bank statements are admissible in quasi-judicial RERA and Consumer proceedings when accompanied by a Section 63 certificate. Scan and index these 6 documents in clear PDF format (under 10 MB per file) before logging into your state RERA portal:
@@ -1556,7 +1556,7 @@ COMPLAINT NO. __________ OF 2026 (UNDER SECTION 31 READ WITH SECTION 18 OF RERA 
                   id="heading-honest-scope-title"
                   className="text-xl sm:text-2xl font-bold text-slate-900 tracking-tight"
                 >
-                  Honest Scope: What LegalRecovery Can and Cannot Do for Your RERA Dispute
+                  Scope &amp; Boundaries: What LegalRecovery Can and Cannot Do
                 </h2>
 
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
@@ -1607,7 +1607,7 @@ COMPLAINT NO. __________ OF 2026 (UNDER SECTION 31 READ WITH SECTION 18 OF RERA 
                     id="heading-faqs-title"
                     className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight"
                   >
-                    Frequently Asked Questions About Filing a RERA Complaint Online, Fees, Format &amp; Status
+                    FAQs: Online RERA Complaints, Fees &amp; Formats
                   </h2>
                   <p className="text-xs font-semibold text-slate-500 mt-1">
                     Authoritative Answers Grounded in the RERA Act 2016, Supreme Court Precedents &amp; State RERA Rules
@@ -1644,7 +1644,7 @@ COMPLAINT NO. __________ OF 2026 (UNDER SECTION 31 READ WITH SECTION 18 OF RERA 
                   id="heading-sources-title"
                   className="text-lg sm:text-xl font-bold text-slate-900 tracking-tight"
                 >
-                  Real Estate Authorities, Primary Statutes &amp; Official State RERA References
+                  Real Estate Statutes &amp; Official RERA References
                 </h2>
                 <ol className="sources list-decimal list-inside space-y-2 text-xs sm:text-sm text-slate-600">
                   {PRIMARY_SOURCES.map((source, idx) => (
@@ -1668,7 +1668,7 @@ COMPLAINT NO. __________ OF 2026 (UNDER SECTION 31 READ WITH SECTION 18 OF RERA 
               {/* Primary CTA */}
               <section id="heading-cta-block" aria-labelledby="heading-cta-block-title" className="w-full">
                 <h2 id="heading-cta-block-title" className="sr-only">
-                  Serve a Statutory Legal Demand Notice to Your Builder Before RERA Filing
+                  Serve a Legal Demand Notice Before RERA Filing
                 </h2>
                 <ReraNoticeCTA variant="primary" />
               </section>

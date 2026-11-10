@@ -352,7 +352,7 @@ export default function DigitalArrestScamRecoveryPage() {
                   id="heading-overview-title"
                   className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight"
                 >
-                  What Is a &quot;Digital Arrest&quot; Scam? How Fake Police and CBI Extortion Works
+                  What Is a "Digital Arrest" Scam &amp; How It Works
                 </h2>
                 <p className="text-sm sm:text-base text-slate-700 leading-relaxed">
                   The &quot;Digital Arrest&quot; scam has rapidly metastasized into one of India&apos;s most psychologically devastating cyber fraud trends. Operating as highly organized trans-national syndicates often rooted across Southeast Asian border compounds and domestic call hubs, fraudsters prey on respectable citizens, senior citizens, retirees, and corporate professionals by weaponizing institutional terror.
@@ -375,7 +375,7 @@ export default function DigitalArrestScamRecoveryPage() {
                     id="heading-myth-vs-fact-title"
                     className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight"
                   >
-                    Myth vs. Fact: 7 Dangerous Misconceptions About Digital Arrests in India
+                    Myth vs Fact: 7 Misconceptions About Digital Arrests
                   </h2>
                   <span className="text-xs font-bold text-slate-500 uppercase tracking-wider">
                     Statutory Reality vs Fraudulent Coercion
@@ -435,7 +435,7 @@ export default function DigitalArrestScamRecoveryPage() {
                   id="heading-first-24-hours-title"
                   className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight"
                 >
-                  The First 24 Hours: The Golden Window to Freeze Stolen Funds via 1930 &amp; I4C
+                  First 24 Hours: Freezing Stolen Funds via 1930 &amp; I4C
                 </h2>
                 <p className="text-sm sm:text-base text-slate-700 leading-relaxed">
                   In cyber financial fraud, time is your only currency. Cybercrime syndicates operate automated &quot;mule farms&quot;—intricate networks of rented current and savings accounts across commercial banks. Once your funds hit Layer-1 (the primary recipient account), automated bot-scripts or syndicate operators split the sum within minutes into Layer-2 and Layer-3 mule accounts, and finally convert the capital into USDT cryptocurrency via P2P exchanges or cash withdrawals at remote ATMs.
@@ -486,7 +486,7 @@ export default function DigitalArrestScamRecoveryPage() {
                     id="heading-case-digest-title"
                     className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight"
                   >
-                    Landmark Judicial Orders &amp; High Court Precedents on Cyber Fraud Fund Recovery
+                    High Court Precedents on Cyber Fraud Fund Recovery
                   </h2>
                   <span className="text-xs font-bold text-slate-500 uppercase tracking-wider">
                     Verifiable Judicial Records
@@ -567,7 +567,7 @@ export default function DigitalArrestScamRecoveryPage() {
                   id="heading-problem-picker-title"
                   className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight"
                 >
-                  Interactive Problem Solver: Common Digital Arrest Traps &amp; Immediate Countermeasures
+                  Digital Arrest Traps &amp; Immediate Countermeasures
                 </h2>
                 <p className="text-sm sm:text-base text-slate-700 leading-relaxed">
                   Review the exact extortion format you encountered to identify immediate statutory remedies, from disconnecting fraudulent video links to enforcing bank liability and magistrate petitions:
@@ -582,7 +582,7 @@ export default function DigitalArrestScamRecoveryPage() {
                   id="heading-recovery-pipeline-title"
                   className="text-xl sm:text-2xl font-bold text-slate-900 tracking-tight"
                 >
-                  Statutory Recovery Pipeline: From 1930 Freeze to Magistrate Court Refund Order
+                  Recovery Pipeline: 1930 Freeze to Refund Order
                 </h2>
                 <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
                   Recovering scammed funds requires progressing through three synchronized phases: emergency banking freeze, criminal cyber cell investigation, and judicial fund repatriation:
@@ -730,7 +730,7 @@ export default function DigitalArrestScamRecoveryPage() {
                   id="heading-bank-liability-title"
                   className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight"
                 >
-                  Bank Negligence &amp; Liability: When Can You Hold Banks Liable for Mule Transfers?
+                  Bank Liability: Holding Banks Liable for Mule Transfers
                 </h2>
                 <p className="text-sm sm:text-base text-slate-700 leading-relaxed">
                   Many victims are dismissed by bank branch managers with the standard excuse: <em>&quot;You authorized the transfer via OTP/password, so the bank has no responsibility.&quot;</em> While this is true for simple authorized commercial payments, it collapses when examined under the Reserve Bank of India&apos;s strict anti-money laundering and customer protection mandates.
@@ -795,7 +795,7 @@ export default function DigitalArrestScamRecoveryPage() {
                   id="heading-bnss-457-title"
                   className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight"
                 >
-                  Section 457 BNSS Petition: How to Get Frozen Mule Account Money Released to Your Account
+                  Section 457 BNSS Petition: Releasing Frozen Money
                 </h2>
                 <p className="text-sm sm:text-base text-slate-700 leading-relaxed">
                   When funds are placed on debit freeze pursuant to a 1930 complaint, they are legally considered &quot;property seized under Section 106 BNSS (formerly Section 102 CrPC)&quot;. Under Indian law, a bank cannot voluntarily reverse the money to you without a magisterial order, because the account belongs to a third party (the mule).
@@ -831,7 +831,7 @@ export default function DigitalArrestScamRecoveryPage() {
                   id="heading-worked-example-title"
                   className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight"
                 >
-                  Worked Recovery Example: Tracing and Reclaiming ₹14.5 Lakhs from Layered Mule Accounts
+                  Case Study: Reclaiming ₹14.5L from Mule Accounts
                 </h2>
                 <p className="text-sm sm:text-base text-slate-700 leading-relaxed">
                   To understand how recovery operates in practice, consider this realistic illustrative case study based on actual cyber litigation timelines in Indian courts:
@@ -890,7 +890,7 @@ export default function DigitalArrestScamRecoveryPage() {
                   id="heading-evidence-checklist-title"
                   className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight"
                 >
-                  Essential Evidentiary Checklist for Cyber Cell FIR and Bank Recovery Notices
+                  Evidence Checklist for Cyber Cell FIR &amp; Notices
                 </h2>
                 <p className="text-sm sm:text-base text-slate-700 leading-relaxed">
                   Before lodging your cyber FIR or serving a bank liability legal notice, assemble a comprehensive evidentiary dossier complying with the <em>Bharatiya Sakshya Adhiniyam, 2023 (BSA)</em>:

@@ -326,7 +326,7 @@ export default function ChequeBounceAndCivilSuitTogetherPage() {
                   id="heading-doctrine-overview-title"
                   className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight"
                 >
-                  Can You File a 138 Cheque Bounce Case and a Civil Suit for Recovery of the Same Amount?
+                  Can You File Cheque Bounce Case and Civil Suit Simultaneously?
                 </h2>
                 <p className="text-sm sm:text-base text-slate-700 leading-relaxed">
                   When a commercial cheque bounces for insufficient funds, account closure, or stop-payment instructions, creditors frequently confront a tactical dilemma: should you file a quasi-criminal complaint under Section 138 of the Negotiable Instruments Act, 1881, or should you file an Order XXXVII summary suit in the civil court?
@@ -346,7 +346,7 @@ export default function ChequeBounceAndCivilSuitTogetherPage() {
                     id="heading-comparison-matrix-title"
                     className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight"
                   >
-                    Section 138 NI Act vs Order 37 vs Civil Suit: Complete Comparison Matrix
+                    Section 138 vs Order 37 vs Civil Suit: Comparison Matrix
                   </h2>
                   <p className="text-xs font-semibold text-slate-500 mt-1">
                     Side-by-Side Analysis of Adjudicating Forums, Statutory Limitations, Interim Reliefs, and Enforcement Powers
@@ -509,7 +509,7 @@ export default function ChequeBounceAndCivilSuitTogetherPage() {
                   id="heading-section-138-deepdive-title"
                   className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight"
                 >
-                  Deep-Dive: Section 138 NI Act Quasi-Criminal Prosecution and Section 143A Interim Relief
+                  Section 138 NI Act: Criminal Prosecution and Interim Relief
                 </h2>
                 <p className="text-sm sm:text-base text-slate-700 leading-relaxed">
                   Section 138 was enacted to enhance the credibility of negotiable instruments in Indian commercial commerce. Unlike ordinary civil litigation where a defendant can ignore court notices for months with few immediate consequences, Section 138 triggers the criminal justice apparatus:
@@ -545,7 +545,7 @@ export default function ChequeBounceAndCivilSuitTogetherPage() {
                   id="heading-order-37-deepdive-title"
                   className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight"
                 >
-                  Deep-Dive: Order XXXVII CPC Summary Suit and Property Attachment Before Judgment
+                  Order 37 CPC Summary Suit and Attachment Before Judgment
                 </h2>
                 <p className="text-sm sm:text-base text-slate-700 leading-relaxed">
                   Many creditors falsely assume that all civil suits drag on for a decade. Under Order XXXVII of the Code of Civil Procedure, 1908, Indian law provides a high-velocity recovery channel specifically designed for written debts and negotiable instruments:
@@ -581,7 +581,7 @@ export default function ChequeBounceAndCivilSuitTogetherPage() {
                   id="heading-double-recovery-title"
                   className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight"
                 >
-                  The Double Recovery Doctrine: Supreme Court Rules on Adjusting Civil Decrees Against 138 Fines
+                  Double Recovery Doctrine: Adjusting Decrees and 138 Fines
                 </h2>
                 <p className="text-sm sm:text-base text-slate-700 leading-relaxed">
                   A common point of confusion among litigants is whether pursuing both remedies allows a creditor to collect double the debt. The Supreme Court in <em>D. Purushotama Reddy v. K. Sateesh (2008) 8 SCC 505</em> established clear safeguards against unjust enrichment:
@@ -606,7 +606,7 @@ export default function ChequeBounceAndCivilSuitTogetherPage() {
                   id="heading-simultaneous-flow-title"
                   className="text-xl sm:text-2xl font-bold text-slate-900 tracking-tight"
                 >
-                  Simultaneous Proceedings Flowchart: Running Criminal &amp; Civil Remedies in Parallel
+                  Flowchart: Running Criminal and Civil Suits in Parallel
                 </h2>
                 <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
                   Visualising the dual-track litigation strategy from initial cheque dishonour memo to simultaneous enforcement and cross-adjustment:
@@ -728,7 +728,7 @@ export default function ChequeBounceAndCivilSuitTogetherPage() {
                     id="heading-route-explorer-title"
                     className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight"
                   >
-                    Interactive Route Explorer: Compare Legal Options by Claim Type and Debtor Solvency
+                    Route Explorer: Compare Remedies by Debt and Solvency
                   </h2>
                   <p className="text-xs font-semibold text-slate-500 mt-1">
                     Select a Legal Route to Review Adjudicating Court, Limitation Benchmarks, Court Fees, and Pros &amp; Cons
@@ -745,7 +745,7 @@ export default function ChequeBounceAndCivilSuitTogetherPage() {
                     id="heading-order-digest-title"
                     className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight"
                   >
-                    Landmark Precedent Digest: 4 Supreme Court Rulings on Parallel 138 and Civil Suits
+                    Supreme Court Precedents on Parallel 138 and Civil Suits
                   </h2>
                   <span className="text-xs font-bold text-slate-500 uppercase tracking-wider">
                     Authoritative Supreme Court Law
@@ -822,7 +822,7 @@ export default function ChequeBounceAndCivilSuitTogetherPage() {
                   id="heading-worked-example-title"
                   className="text-xl sm:text-2xl font-bold text-slate-900 tracking-tight"
                 >
-                  Worked Case Study: Creditor Recovers ₹18 Lakhs by Filing Section 138 and Order 37 Concurrently
+                  Case Study: Recovering ₹18 Lakhs via Section 138 and Order 37
                 </h2>
                 <div className="bg-slate-900 text-white rounded-2xl p-5 sm:p-8 shadow-xl space-y-4 sm:space-y-5 w-full overflow-hidden">
                   <div className="flex flex-wrap items-center justify-between gap-2 border-b border-slate-800 pb-3">
@@ -864,7 +864,7 @@ export default function ChequeBounceAndCivilSuitTogetherPage() {
                   id="heading-evidence-checklist-title"
                   className="text-xl sm:text-2xl font-bold text-slate-900 tracking-tight"
                 >
-                  Procedural &amp; Evidentiary Checklist: 6 Precautions When Filing Parallel Suits
+                  Checklist: 6 Critical Precautions for Parallel Legal Actions
                 </h2>
                 <p className="text-xs sm:text-sm text-slate-700 leading-relaxed">
                   Under Section 63 of the Bharatiya Sakshya Adhiniyam, 2023 (BSA) and the Code of Civil Procedure, running simultaneous cases requires strict evidentiary discipline to prevent contradictory findings:
@@ -928,7 +928,7 @@ export default function ChequeBounceAndCivilSuitTogetherPage() {
                     id="heading-faqs-title"
                     className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight"
                   >
-                    Frequently Asked Questions: Cheque Bounce Cases and Parallel Civil Recovery
+                    FAQs on Cheque Bounce Cases and Parallel Civil Recovery
                   </h2>
                   <p className="text-xs font-semibold text-slate-500 mt-1">
                     Authoritative Answers Grounded in the Negotiable Instruments Act, Code of Civil Procedure, and Supreme Court Decisions
@@ -961,7 +961,7 @@ export default function ChequeBounceAndCivilSuitTogetherPage() {
                   id="heading-sources-title"
                   className="text-lg sm:text-xl font-bold text-slate-900 tracking-tight"
                 >
-                  Primary Statutory Authorities &amp; Landmark Supreme Court Jurisprudence
+                  Statutory Provisions and Landmark Supreme Court Jurisprudence
                 </h2>
                 <ol className="sources list-decimal list-inside space-y-2 text-xs sm:text-sm text-slate-600">
                   {PRIMARY_SOURCES.map((source, idx) => (

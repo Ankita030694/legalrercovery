@@ -3,7 +3,7 @@ import SalaryRecoveryGuideClient from "./SalaryRecoveryGuideClient";
 
 export const metadata: Metadata = {
   title: "How to Recover Unpaid Salary from Employer Legally",
-  description: "Employer not paying salary after resignation or during employment? Step-by-step guide to serving an Advocate Legal Notice, filing on the Samadhan Portal, and Order 37 Summary Suits.",
+  description: "Employer not paying salary? Step-by-step guide to sending an advocate legal notice, filing on Samadhan Portal, and pursuing Order 37 summary suits.",
   keywords: [
     "how to recover unpaid salary legally India",
     "unpaid salary recovery legal notice",

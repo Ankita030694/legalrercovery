@@ -224,7 +224,7 @@ export default function TataCliqRefundNoticePage() {
                   id="dispute-breakdown-heading"
                   className="text-2xl sm:text-3xl font-black text-slate-900 tracking-tight mb-4"
                 >
-                  What Usually Goes Wrong With Tata CLiQ: 4 Primary Dispute Breakdown Points
+                  What Goes Wrong With Tata CLiQ: 4 Primary Failure Points
                 </h2>
                 <p className="text-slate-600 text-sm sm:text-base leading-relaxed mb-6">
                   Tata CLiQ and Tata CLiQ Luxury operate under Tata UniStore Limited. While orders are billed and fulfilled under Tata’s brand umbrella, inventory often ships from third-party merchants and brand dealers. When an order goes wrong, customer redressal routinely stalls across four common choke points.
@@ -379,7 +379,7 @@ export default function TataCliqRefundNoticePage() {
                   id="refund-money-flow-heading"
                   className="text-2xl sm:text-3xl font-black text-slate-900 tracking-tight mb-4"
                 >
-                  Where Does Customer Money Get Stuck? Tata CLiQ Refund Reconciliation Flow
+                  Where Customer Money Gets Stuck: Tata CLiQ Refund Flow
                 </h2>
                 <p className="text-slate-600 text-sm sm:text-base leading-relaxed mb-6">
                   Understanding platform architecture clarifies why support reps provide contradictory answers. The chart below tracks funds from initial checkout to reverse logistics, marking where settlements commonly freeze.
@@ -506,7 +506,7 @@ export default function TataCliqRefundNoticePage() {
                   id="commission-orders-heading"
                   className="text-2xl sm:text-3xl font-black text-slate-900 tracking-tight mb-4"
                 >
-                  Consumer Court Judgments & Compensation Orders Against Tata UniStore Limited
+                  Consumer Court Orders Against Tata UniStore Limited
                 </h2>
                 <p className="text-slate-600 text-sm sm:text-base leading-relaxed mb-6">
                   Consumer Commissions hold Tata UniStore Limited accountable when online orders lead to wrongful refund rejections, missing items, or seller stalling. Verified rulings confirm compensation entitlements.
@@ -595,7 +595,7 @@ export default function TataCliqRefundNoticePage() {
                   id="worked-example-heading"
                   className="text-2xl sm:text-3xl font-black text-slate-900 tracking-tight mb-4"
                 >
-                  Illustrative Worked Scenario: Overcoming a ₹16,495 Wristwatch Return Rejection
+                  Worked Scenario: Overcoming a ₹16,495 Return Rejection
                 </h2>
                 <p className="text-slate-600 text-sm sm:text-base leading-relaxed mb-6">
                   To illustrate statutory notice enforcement against Tata UniStore Limited, review this scenario reflecting typical e-commerce dispute patterns in India.
@@ -641,7 +641,7 @@ export default function TataCliqRefundNoticePage() {
                   id="escalation-ladder-heading"
                   className="text-2xl sm:text-3xl font-black text-slate-900 tracking-tight mb-4"
                 >
-                  Statutory 4-Stage Escalation: Tata CLiQ Grievance Officer to Consumer Commission
+                  4-Stage Escalation: Grievance Officer to Commission
                 </h2>
                 <p className="text-slate-600 text-sm sm:text-base leading-relaxed mb-6">
                   Skip scripted chat loops. Follow this four-stage legal escalation sequence mandated under Indian consumer regulations.
@@ -712,7 +712,7 @@ export default function TataCliqRefundNoticePage() {
                   id="evidence-checklist-heading"
                   className="text-2xl sm:text-3xl font-black text-slate-900 tracking-tight mb-4"
                 >
-                  Evidence Preservation Checklist Under Section 63 BSA for Tata CLiQ Disputes
+                  Evidence Checklist Under Section 63 BSA for Tata CLiQ
                 </h2>
                 <p className="text-slate-600 text-sm sm:text-base leading-relaxed mb-6">
                   Electronic evidence must meet Section 63 requirements under the Bharatiya Sakshya Adhiniyam, 2023. Preserve these six items before dispatching a demand notice:
@@ -799,7 +799,7 @@ export default function TataCliqRefundNoticePage() {
                   id="honest-scope-heading"
                   className="text-2xl sm:text-3xl font-black text-slate-900 tracking-tight mb-4"
                 >
-                  Honest Scope: What LegalRecovery Can and Cannot Do for Your Tata CLiQ Claim
+                  Scope &amp; Boundaries: What LegalRecovery Can and Cannot Do
                 </h2>
                 <p className="text-slate-600 text-sm sm:text-base leading-relaxed mb-6">
                   We maintain complete legal honesty. We enforce statutory consumer rights, but make no misleading guarantees about court litigation.
@@ -838,7 +838,7 @@ export default function TataCliqRefundNoticePage() {
                   id="faq-heading"
                   className="text-2xl sm:text-3xl font-black text-slate-900 tracking-tight mb-4"
                 >
-                  Frequently Asked Questions About Stuck Tata CLiQ Refunds & Legal Notices
+                  FAQs About Stuck Tata CLiQ Refunds &amp; Legal Notices
                 </h2>
                 <p className="text-slate-600 text-sm sm:text-base leading-relaxed mb-6">
                   Practical legal answers regarding refund delays, courier pickup defaults, and consumer commission procedures.
@@ -867,7 +867,7 @@ export default function TataCliqRefundNoticePage() {
                   id="sources-heading"
                   className="text-xl sm:text-2xl font-black text-slate-900 tracking-tight mb-4"
                 >
-                  Primary Legal Authorities & Official References Governing Tata CLiQ Disputes
+                  Primary Legal Authorities for Tata CLiQ Disputes
                 </h2>
                 <p className="text-slate-600 text-xs sm:text-sm leading-relaxed mb-4">
                   Every legal rule and procedural timeline cited on this dossier is grounded in primary statutes, central notifications, and judicial rulings:

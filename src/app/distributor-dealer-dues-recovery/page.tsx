@@ -480,7 +480,7 @@ export default function DistributorDealerDuesRecoveryPage() {
                   id="heading-legal-basis-title"
                   className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight"
                 >
-                  What Legal Provisions Govern Distributor and Dealer Dues Recovery in India?
+                  Legal Provisions Governing Dealer Dues Recovery
                 </h2>
                 <p className="text-sm sm:text-base text-slate-700 leading-relaxed">
                   Unlike retail consumer disputes, manufacturer-to-distributor transactions are commercial Principal-to-Principal sales governed by a powerful combination of mercantile statutes. When a dealer withholds payment for delivered stock, Indian law equips the supplier with both civil attachment remedies and quasi-criminal cheque prosecution:
@@ -589,7 +589,7 @@ export default function DistributorDealerDuesRecoveryPage() {
                   id="heading-step-playbook-title"
                   className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight"
                 >
-                  The 6-Step Legal Playbook to Recover Overdue Balances From a Defaulting Dealer
+                  6-Step Playbook to Recover Overdue Dealer Balances
                 </h2>
                 <p className="text-sm sm:text-base text-slate-700 leading-relaxed">
                   When a distributor or dealer crosses your credit limit and begins dodging your finance team, informal phone follow-ups by sales executives often weaken your position. Follow this disciplined 6-step legal escalation sequence:
@@ -773,7 +773,7 @@ export default function DistributorDealerDuesRecoveryPage() {
                   id="heading-escalation-flow-title"
                   className="text-xl sm:text-2xl font-bold text-slate-900 tracking-tight"
                 >
-                  B2B Channel Recovery Architecture: From Overdue Dealer Ledger to Bank Realization
+                  Channel Recovery Architecture: Ledger to Realization
                 </h2>
                 <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
                   How manufacturers and super-stockists convert an overdue distributor ledger into an enforceable multi-track recovery action:
@@ -897,7 +897,7 @@ export default function DistributorDealerDuesRecoveryPage() {
                     id="heading-dealer-defences-title"
                     className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight"
                   >
-                    Dismantling Common Distributor &amp; Dealer Excuses: Statutory Counter-Strategies
+                    Dismantling Dealer Excuses: Statutory Counter-Moves
                   </h2>
                   <p className="text-xs font-semibold text-slate-500 mt-1">
                     Interactive Guide: Select the Specific Excuse Raised by Your Dealer to View the Legal Rebuttal
@@ -914,7 +914,7 @@ export default function DistributorDealerDuesRecoveryPage() {
                     id="heading-order-digest-title"
                     className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight"
                   >
-                    Landmark Judicial Precedents: 4 Verifiable Court Rulings on Dealer &amp; Distributor Recovery
+                    4 Landmark Rulings on Dealer &amp; Distributor Dues
                   </h2>
                   <span className="text-xs font-bold text-slate-500 uppercase tracking-wider">
                     Supreme Court &amp; High Court Records
@@ -991,7 +991,7 @@ export default function DistributorDealerDuesRecoveryPage() {
                   id="heading-worked-example-title"
                   className="text-xl sm:text-2xl font-bold text-slate-900 tracking-tight"
                 >
-                  Worked Case Study: Switchgear Manufacturer Recovers ₹16,40,000 + ₹2,18,000 Interest From Defaulting Stockist in 19 Days
+                  Case Study: Recovers ₹16.4L + Interest in 19 Days
                 </h2>
                 <div className="bg-slate-900 text-white rounded-2xl p-5 sm:p-8 shadow-xl space-y-4 sm:space-y-5 w-full overflow-hidden">
                   <div className="flex flex-wrap items-center justify-between gap-2 border-b border-slate-800 pb-3">
@@ -1025,7 +1025,7 @@ export default function DistributorDealerDuesRecoveryPage() {
                   id="heading-evidence-checklist-title"
                   className="text-xl sm:text-2xl font-bold text-slate-900 tracking-tight"
                 >
-                  Manufacturer &amp; Wholesaler Evidence Checklist: 6 Documents to Assemble Before Sending Notice
+                  Evidence Checklist: 6 Documents for Dealer Notice
                 </h2>
                 <p className="text-xs sm:text-sm text-slate-700 leading-relaxed">
                   Under Section 28 (entries in books of account regularly kept in the course of business) and Section 63 (admissibility of electronic records) of the Bharatiya Sakshya Adhiniyam, 2023, a clean documentary trail prevents the dealer from manufacturing a dispute:
@@ -1088,7 +1088,7 @@ export default function DistributorDealerDuesRecoveryPage() {
                   id="heading-honest-scope-title"
                   className="text-xl sm:text-2xl font-bold text-slate-900 tracking-tight"
                 >
-                  Honest Scope: What LegalRecovery Can and Cannot Do in Dealer &amp; Distributor Disputes
+                  Scope &amp; Boundaries: What LegalRecovery Can and Cannot Do
                 </h2>
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                   <div className="bg-emerald-50/70 border border-emerald-200 rounded-2xl p-5 space-y-2.5">
@@ -1123,7 +1123,7 @@ export default function DistributorDealerDuesRecoveryPage() {
                     id="heading-faqs-title"
                     className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight"
                   >
-                    Frequently Asked Questions: Distributor &amp; Dealer Outstanding Dues Recovery
+                    FAQs: Distributor &amp; Dealer Dues Recovery
                   </h2>
                   <p className="text-xs font-semibold text-slate-500 mt-1">
                     Practical Legal Answers on Security Cheques, Running Ledgers, MSME Interest &amp; Demand Notices
@@ -1180,7 +1180,7 @@ export default function DistributorDealerDuesRecoveryPage() {
               {/* Primary CTA */}
               <section id="heading-cta-block" aria-labelledby="heading-cta-block-title" className="w-full">
                 <h2 id="heading-cta-block-title" className="sr-only">
-                  Serve a Statutory B2B Demand Notice to Your Defaulting Distributor or Dealer
+                  Serve a B2B Demand Notice to a Defaulting Dealer
                 </h2>
                 <DistributorNoticeCTA variant="primary" />
               </section>

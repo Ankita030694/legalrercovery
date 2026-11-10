@@ -154,7 +154,7 @@ const FAQS = [
 const ARTICLE_SCHEMA = {
   "@context": "https://schema.org",
   "@type": "Article",
-  headline: "Marriage Hall or Banquet Booking Cancelled? Recovering Your Advance Deposit",
+  headline: "Marriage Hall or Banquet Cancelled? Recover Your Advance Deposit",
   description:
     "Banquet hall forfeiting 100% booking advance? Indian Contract Act Section 74, consumer court rulings on reasonable forfeiture, and recovery notice.",
   datePublished: "2026-11-09T12:00:00+05:30",
@@ -255,7 +255,7 @@ export default function MarriageHallBanquetRefundPage() {
             </div>
 
             <h1 className="text-2xl sm:text-3xl md:text-5xl font-black tracking-tight text-white leading-tight mb-4 sm:mb-6 break-words">
-              Marriage Hall or Banquet Booking Cancelled? Recovering Your Advance Deposit
+              Marriage Hall or Banquet Cancelled? Recover Your Advance Deposit
             </h1>
 
             {/* Answer Box First: 40-60 Words Directly Under H1 */}
@@ -312,7 +312,7 @@ export default function MarriageHallBanquetRefundPage() {
                   id="heading-overview-title"
                   className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight"
                 >
-                  The Wedding Venue Advance Trap: Why Banquet Halls Cannot Legally Keep 100% of Your Money
+                  Why Banquet Halls Cannot Legally Keep 100% Advance
                 </h2>
                 <p className="text-sm sm:text-base text-slate-700 leading-relaxed">
                   In India, wedding planning routinely begins six to twelve months in advance. Families deposit substantial sums—frequently ranging from ₹1,50,000 to over ₹10,00,000—as booking advance or token money for marriage halls, banquet lawns, luxury farmhouses, and five-star event spaces. However, unexpected life events, sudden family bereavements, medical crises, inter-family postponements, or unilateral price escalations by decorators often force cancellations months ahead of the auspicious mahurat.
@@ -489,7 +489,7 @@ export default function MarriageHallBanquetRefundPage() {
                     id="heading-legal-basis-title"
                     className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight"
                   >
-                    The Legal Architecture: Section 74 Contract Act &amp; Consumer Protection Act, 2019
+                    Legal Framework: Section 74 Contract Act &amp; CPA
                   </h2>
                   <p className="text-xs sm:text-sm text-slate-500 mt-1">
                     Statutory provisions curbing arbitrary venue deposit forfeiture
@@ -548,7 +548,7 @@ export default function MarriageHallBanquetRefundPage() {
                     id="heading-facts-table-title"
                     className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight"
                   >
-                    Statutory Recovery Benchmarks: Notice Timeline vs Permissible Forfeiture
+                    Recovery Benchmarks: Notice vs Permissible Forfeiture
                   </h2>
                   <p className="text-xs sm:text-sm text-slate-500 mt-1">
                     Based on Consumer Commission precedents and Indian Contract Act principles
@@ -690,7 +690,7 @@ export default function MarriageHallBanquetRefundPage() {
                     id="heading-case-digest-title"
                     className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight"
                   >
-                    Landmark Consumer Commission Rulings on Banquet &amp; Wedding Venue Refunds
+                    Consumer Court Rulings on Wedding Venue Refunds
                   </h2>
                   <span className="text-xs font-bold text-slate-500 uppercase tracking-wider">
                     Verifiable Court Orders
@@ -1033,7 +1033,7 @@ export default function MarriageHallBanquetRefundPage() {
                     id="heading-notice-template-title"
                     className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight"
                   >
-                    Statutory Advocate Legal Notice Format for Wedding Venue Advance Refund
+                    Legal Notice Format for Wedding Venue Advance Refund
                   </h2>
                   <p className="text-xs sm:text-sm text-slate-500 mt-1">
                     An advocate notice dispatched under registered speed post creates statutory liability

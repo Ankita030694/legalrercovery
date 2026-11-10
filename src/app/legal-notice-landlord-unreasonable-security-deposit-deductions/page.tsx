@@ -3,7 +3,7 @@ import LandlordDeductionsNoticeClient from "./LandlordDeductionsNoticeClient";
 
 export const metadata: Metadata = {
   title: "Landlord Deducting Security Deposit? Legal Notice",
-  description: "Can a landlord deduct 1 month's rent for repainting, deep cleaning, or normal wear and tear in India? Challenge illegal security deposit deductions via an Advocate Legal Notice.",
+  description: "Landlord deducting rent for painting or normal wear and tear? Challenge illegal security deposit deductions with an advocate legal notice in India.",
   keywords: [
     "landlord deducted painting charges from deposit",
     "deductions from security deposit rules india",

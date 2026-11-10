@@ -154,7 +154,7 @@ const FAQS = [
 const ARTICLE_SCHEMA = {
   "@context": "https://schema.org",
   "@type": "Article",
-  headline: "Suing the Government or a PSU? The Section 80 CPC Notice You Must Send First",
+  headline: "Suing the Government or a PSU? Mandatory Section 80 CPC Notice",
   description:
     "Claims against a government department need a Section 80 CPC notice first. Contents, the 2-month wait, exceptions and a format.",
   datePublished: "2026-11-04T10:55:00+05:30",
@@ -257,7 +257,7 @@ export default function Section80CpcNoticePage() {
             </div>
 
             <h1 className="text-2xl sm:text-3xl md:text-5xl font-black tracking-tight text-white leading-tight mb-4 sm:mb-6 break-words">
-              Suing the Government or a PSU? The Section 80 CPC Notice You Must Send First
+              Suing the Government or a PSU? Mandatory Section 80 CPC Notice
             </h1>
 
             {/* Answer Box First: 40-60 Words Directly Under H1 */}
@@ -322,7 +322,7 @@ export default function Section80CpcNoticePage() {
                   id="heading-statute-overview-title"
                   className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight"
                 >
-                  Why You Cannot Directly Sue a Government Department Without a Section 80 CPC Notice
+                  Why a Section 80 CPC Notice Is Mandatory to Sue Government
                 </h2>
                 <p className="text-sm sm:text-base text-slate-700 leading-relaxed">
                   In private commercial disputes, a creditor or supplier can technically institute a civil recovery suit the very next day after an invoice defaults, though serving a 15-day demand notice is standard legal practice. When your debtor is the <strong>Union of India</strong>, a <strong>State Government department</strong> (such as CPWD, State PWD, Irrigation, Public Health Engineering, Medical Directorate, or Municipal Administration), <strong>Indian Railways</strong>, or a public officer acting in an official capacity, the law erects a mandatory statutory barrier under <strong>Section 80 of the Code of Civil Procedure, 1908 (CPC)</strong>.
@@ -342,7 +342,7 @@ export default function Section80CpcNoticePage() {
                     id="heading-clause-annotation-title"
                     className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight"
                   >
-                    Clause-by-Clause Statutory Annotation: Section 80(1), Section 80(2) &amp; Section 80(3) CPC Explained
+                    Statutory Annotation: Section 80(1), (2) &amp; (3) CPC
                   </h2>
                   <p className="text-xs sm:text-sm text-slate-600 mt-1">
                     Every sub-section of Section 80 CPC governs a distinct procedural requirement. Below is the exact statutory text paired with its practical meaning and real-world illustration:
@@ -442,7 +442,7 @@ export default function Section80CpcNoticePage() {
                   id="heading-designated-officers-title"
                   className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight"
                 >
-                  Who Must Receive Your Section 80 CPC Notice? Designated Officers vs PSU Rules
+                  Who Must Receive Section 80 Notice? Officers vs PSUs
                 </h2>
                 <p className="text-sm sm:text-base text-slate-700 leading-relaxed">
                   Addressing your notice to the wrong official—or confusing an autonomous corporate PSU with a sovereign Government Ministry—is the single most common procedural mistake in government recovery litigation. Under <strong>Section 79 and Section 80(1) CPC</strong>, here is who is covered, who is exempt, and the exact statutory addressee for each entity type:
@@ -544,7 +544,7 @@ export default function Section80CpcNoticePage() {
                   id="heading-deadlines-limitation-title"
                   className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight"
                 >
-                  The 2-Month Waiting Period, Limitation Exclusion (Section 15(2)) &amp; Statutory Benchmarks
+                  2-Month Notice Period &amp; Limitation Exclusion Rules
                 </h2>
                 <p className="text-sm sm:text-base text-slate-700 leading-relaxed">
                   Contractors and businesses frequently worry that waiting 60 days for the Section 80 notice period to expire will cause their 3-year limitation period to run out. <strong>Section 15(2) of the Limitation Act, 1963</strong> specifically protects claimants by excluding the statutory notice period from the limitation calculation:
@@ -627,7 +627,7 @@ export default function Section80CpcNoticePage() {
                     id="heading-landmark-orders-title"
                     className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight"
                   >
-                    Landmark Supreme Court Rulings on Section 80 CPC Notices, Waiver &amp; Urgent Leave
+                    Supreme Court Rulings on Section 80 CPC Notices
                   </h2>
                   <span className="text-xs font-bold text-slate-500 uppercase tracking-wider">
                     Verifiable Supreme Court Precedents
@@ -704,7 +704,7 @@ export default function Section80CpcNoticePage() {
                   id="heading-pattern-analysis-title"
                   className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight"
                 >
-                  Pattern Analysis: 5 Legal Strategies That Force Government Departments to Clear Pending Bills
+                  5 Strategies That Force Government to Clear Bills
                 </h2>
                 <p className="text-sm sm:text-base text-slate-700 leading-relaxed">
                   Unlike bare format dumps on generic legal portals, our analysis of successful government contractor recoveries and High Court decrees shows five tactical elements that turn a Section 80 CPC notice from a routine formality into an immediate payment trigger:
@@ -787,7 +787,7 @@ export default function Section80CpcNoticePage() {
                   id="heading-escalation-flow-title"
                   className="text-xl sm:text-2xl font-bold text-slate-900 tracking-tight"
                 >
-                  Statutory Escalation Hierarchy: From Unpaid Government Work Order to Civil Decree
+                  Escalation Hierarchy: Unpaid Work Order to Decree
                 </h2>
                 <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
                   Follow this five-stage statutory timeline to preserve limitation under Section 15(2), comply with Section 80(1) CPC, and compel departmental disbursement:
@@ -914,7 +914,7 @@ export default function Section80CpcNoticePage() {
                   id="heading-playbook-title"
                   className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight"
                 >
-                  How to Enforce a Claim Against the Government: The 5-Step Escalation Playbook
+                  5-Step Playbook to Enforce Claims Against Government
                 </h2>
                 <p className="text-sm sm:text-base text-slate-700 leading-relaxed">
                   Follow these five sequential steps to ensure your Section 80 CPC notice is immune to technical objections by State Standing Counsel and maximizes out-of-court bill clearance:
@@ -1011,7 +1011,7 @@ export default function Section80CpcNoticePage() {
                     id="heading-scenario-tabs-title"
                     className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight"
                   >
-                    Government &amp; PSU Dispute Scenarios: Pending Contractor Bills, EMD Forfeiture &amp; Urgent Injunctions
+                    Government Dispute Scenarios: Bills &amp; EMD Refunds
                   </h2>
                   <p className="text-xs font-semibold text-slate-500 mt-1">
                     Select Your Dispute Type Below to See the Exact Legal Position and 3-Step Recovery Plan
@@ -1028,7 +1028,7 @@ export default function Section80CpcNoticePage() {
                     id="heading-notice-format-title"
                     className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight"
                   >
-                    Drafting Template: Mandatory Section 80 CPC Legal Notice Format to Government Department
+                    Section 80 CPC Notice Format to Government
                   </h2>
                   <p className="text-xs sm:text-sm text-slate-600 mt-1">
                     Below is a courtroom-tested statutory notice skeleton incorporating every mandatory element required under Section 80(1) and Section 80(3) of the Code of Civil Procedure, 1908:
@@ -1097,7 +1097,7 @@ export default function Section80CpcNoticePage() {
                   id="heading-worked-example-title"
                   className="text-xl sm:text-2xl font-bold text-slate-900 tracking-tight"
                 >
-                  Worked Case Study: Civil Contractor Recovers ₹18,40,000 Pending PWD Bill + ₹2,10,000 Security Deposit After Section 80 Notice
+                  Case Study: Contractor Recovers ₹18.4L PWD Bill
                 </h2>
                 <div className="bg-slate-900 text-white rounded-2xl p-5 sm:p-8 shadow-xl space-y-4 sm:space-y-5 w-full overflow-hidden">
                   <div className="flex flex-wrap items-center justify-between gap-2 border-b border-slate-800 pb-3">
@@ -1131,7 +1131,7 @@ export default function Section80CpcNoticePage() {
                   id="heading-evidence-checklist-title"
                   className="text-xl sm:text-2xl font-bold text-slate-900 tracking-tight"
                 >
-                  Government Claim Evidence Checklist: 6 Critical Documents Before Serving a Section 80 Notice
+                  Evidence Checklist: 6 Documents for Section 80 Notice
                 </h2>
                 <p className="text-xs sm:text-sm text-slate-700 leading-relaxed">
                   Under Order VII Rule 14 CPC and Section 63 of the Bharatiya Sakshya Adhiniyam, 2023 (BSA), assemble these six evidentiary records before your advocate dispatches a Section 80 CPC notice:
@@ -1229,7 +1229,7 @@ export default function Section80CpcNoticePage() {
                     id="heading-faqs-title"
                     className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight"
                   >
-                    Frequently Asked Questions About Section 80 CPC Notices, Waiting Periods &amp; Suits Against Government
+                    FAQs: Section 80 CPC Notices &amp; Government Suits
                   </h2>
                   <p className="text-xs font-semibold text-slate-500 mt-1">
                     Authoritative Answers Grounded in the Code of Civil Procedure, 1908, Limitation Act, 1963 &amp; Supreme Court Rulings
@@ -1262,7 +1262,7 @@ export default function Section80CpcNoticePage() {
                   id="heading-sources-title"
                   className="text-lg sm:text-xl font-bold text-slate-900 tracking-tight"
                 >
-                  Primary Legal Sources, Code of Civil Procedure Citations &amp; Supreme Court References
+                  Primary Legal Sources: CPC &amp; Supreme Court Rulings
                 </h2>
                 <ol className="sources list-decimal list-inside space-y-2 text-xs sm:text-sm text-slate-600">
                   {PRIMARY_SOURCES.map((source, idx) => (
@@ -1286,7 +1286,7 @@ export default function Section80CpcNoticePage() {
               {/* Primary CTA */}
               <section id="heading-cta-block" aria-labelledby="heading-cta-block-title" className="w-full">
                 <h2 id="heading-cta-block-title" className="sr-only">
-                  Serve a Statutory Section 80 CPC Legal Notice to a Government Department or PSU
+                  Serve a Section 80 CPC Legal Notice to Government
                 </h2>
                 <Section80NoticeCTA variant="primary" />
               </section>

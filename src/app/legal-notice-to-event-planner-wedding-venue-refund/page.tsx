@@ -3,7 +3,7 @@ import EventPlannerRefundClient from "./EventPlannerRefundClient";
 
 export const metadata: Metadata = {
   title: "Legal Notice to Wedding Venue & Planner for Refund",
-  description: "Banquet hall, resort, or wedding planner refusing to refund your advance booking money citing a 'non-refundable' clause? Serve a Consumer Act Legal Notice to recover your advance + interest.",
+  description: "Wedding venue or event planner refusing advance refund citing non-refundable clause? Send a Consumer Protection Act legal notice to recover dues.",
   keywords: [
     "wedding venue booking refund law india",
     "legal notice to event planner refund",

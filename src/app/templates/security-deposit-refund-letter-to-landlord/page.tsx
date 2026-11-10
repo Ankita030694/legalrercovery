@@ -344,7 +344,7 @@ export default function SecurityDepositRefundLetterPage() {
                   id="heading-when-to-use-title"
                   className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight"
                 >
-                  When Should a Tenant Send a Written Security Deposit Refund Request Letter?
+                  When to Send a Written Security Deposit Refund Letter
                 </h2>
                 <p className="text-sm sm:text-base text-slate-700 leading-relaxed">
                   Most Indian tenants lose weeks—and tens of thousands of rupees—because they rely on casual WhatsApp messages or phone calls after handing over the flat keys. Once the landlord has physical possession of the apartment and a new tenant moves in, your bargaining power drops unless you immediately establish a formal paper trail. Sending a structured, dated <strong>security deposit refund letter</strong> converts an informal disagreement into a documented pre-litigation record specifying the exact date of key handover, final electricity/water meter readings, and your rejection of arbitrary deductions.
@@ -442,7 +442,7 @@ export default function SecurityDepositRefundLetterPage() {
                     id="heading-letter-workspace-title"
                     className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight"
                   >
-                    Interactive Security Deposit Refund Letter Generator &amp; Word (.doc) Template
+                    Interactive Deposit Refund Letter Generator &amp; Template
                   </h2>
                   <p className="text-xs sm:text-sm text-slate-600 mt-1 leading-relaxed">
                     Choose from three tenant scenarios—<strong>Variant 1 (Standard Move-Out Refund Request)</strong>, <strong>Variant 2 (Deduction Challenge for Painting &amp; Wear-and-Tear)</strong>, or <strong>Variant 3 (Final 7-Day Pre-Legal Ultimatum)</strong>. Fill your details on the left to update the letter live, then copy, print, or download as a Microsoft Word (`.doc`) file.
@@ -462,7 +462,7 @@ export default function SecurityDepositRefundLetterPage() {
                   id="heading-clause-notes-title"
                   className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight"
                 >
-                  Clause-by-Clause Breakdown: Why Each Paragraph Protects Your Deposit in Court
+                  Clause-by-Clause Breakdown: Protecting Your Deposit
                 </h2>
                 <p className="text-sm sm:text-base text-slate-700 leading-relaxed">
                   Every paragraph in the template above is engineered to close a specific loophole that landlords and their lawyers exploit when defending deposit recovery suits:
@@ -560,7 +560,7 @@ export default function SecurityDepositRefundLetterPage() {
                   id="heading-deduction-challenge-title"
                   className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight"
                 >
-                  How to Challenge Unfair Landlord Deductions for Painting, Wear-and-Tear &amp; Lock-In
+                  Challenging Unfair Deductions for Painting &amp; Wear
                 </h2>
                 <p className="text-sm sm:text-base text-slate-700 leading-relaxed">
                   If your landlord replies to your move-out message with an inflated list of cuts, use this statutory counter-matrix to fill the <strong>Disputed Deduction</strong> field in Variant 2 of the generator above (and see our detailed guide on{" "}
@@ -672,7 +672,7 @@ export default function SecurityDepositRefundLetterPage() {
                   id="heading-escalation-ladder-title"
                   className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight"
                 >
-                  What If Your Landlord Ignores the Refund Letter? The 4-Step Escalation Ladder
+                  If Landlord Ignores Letter: 4-Step Escalation Ladder
                 </h2>
                 <p className="text-sm sm:text-base text-slate-700 leading-relaxed">
                   A self-sent refund request letter resolves roughly 40%–50% of deposit delays where the landlord was merely procrastinating or testing whether you would accept an arbitrary painting cut. When a landlord ignores your 7-day written deadline, follow this exact statutory escalation ladder:
@@ -915,7 +915,7 @@ export default function SecurityDepositRefundLetterPage() {
                   id="heading-worked-example-title"
                   className="text-xl sm:text-2xl font-bold text-slate-900 tracking-tight"
                 >
-                  Illustrative Case: How a Written Deduction Challenge Recovered ₹1,14,500 of a ₹1,20,000 Flat Deposit
+                  Case Study: Recovers ₹1,14,500 of Flat Deposit
                 </h2>
                 <div className="bg-slate-900 text-white rounded-2xl p-5 sm:p-8 shadow-xl space-y-4 sm:space-y-5 w-full overflow-hidden">
                   <div className="flex flex-wrap items-center justify-between gap-2 border-b border-slate-800 pb-3">
@@ -953,7 +953,7 @@ export default function SecurityDepositRefundLetterPage() {
                   id="heading-evidence-checklist-title"
                   className="text-xl sm:text-2xl font-bold text-slate-900 tracking-tight"
                 >
-                  Move-Out Evidence Checklist: 6 Records to Attach With Your Deposit Refund Letter
+                  Move-Out Evidence: 6 Records for Deposit Refund Letter
                 </h2>
                 <p className="text-xs sm:text-sm text-slate-700 leading-relaxed">
                   Under Section 63 of the Bharatiya Sakshya Adhiniyam, 2023 (BSA), electronic records, banking UTRs, and timestamped smartphone videos are primary admissible evidence. Attach or reference these 6 items when sending your letter:
@@ -1056,7 +1056,7 @@ export default function SecurityDepositRefundLetterPage() {
                   id="heading-honest-scope-title"
                   className="text-xl sm:text-2xl font-bold text-slate-900 tracking-tight"
                 >
-                  Honest Scope: When a Self-Sent Letter Works vs When You Need an Advocate Notice
+                  Scope: Self-Sent Letter vs Advocate Legal Notice
                 </h2>
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                   <div className="bg-emerald-50/70 border border-emerald-200 rounded-2xl p-5 space-y-2.5">
@@ -1147,7 +1147,7 @@ export default function SecurityDepositRefundLetterPage() {
                   id="heading-sources-title"
                   className="text-lg sm:text-xl font-bold text-slate-900 tracking-tight"
                 >
-                  Primary Statutes, High Court Judgments &amp; Official Tenancy References
+                  Primary Tenancy Statutes &amp; Official References
                 </h2>
                 <ol className="sources list-decimal list-inside space-y-2 text-xs sm:text-sm text-slate-600">
                   {PRIMARY_SOURCES.map((source, idx) => (

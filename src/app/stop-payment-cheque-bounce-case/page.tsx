@@ -322,7 +322,7 @@ export default function StopPaymentChequeBouncePage() {
                   id="heading-138-applicability-title"
                   className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight"
                 >
-                  Does &apos;Payment Stopped by Drawer&apos; Attract Section 138 Criminal Proceedings?
+                  Does Stop Payment Cheque Attract Section 138 Proceedings?
                 </h2>
                 <p className="text-sm sm:text-base text-slate-700 leading-relaxed">
                   When a creditor or payee deposits a commercial cheque and receives a bank return memo endorsed with &quot;Payment stopped by drawer&quot;, a pervasive misconception leads both drawers and payees to believe that criminal liability is bypassed. Many drawers mistakenly assume that by proactively instructing their branch to countermand the cheque before clearance, they transform a criminal offence into a protracted civil dispute.
@@ -419,7 +419,7 @@ export default function StopPaymentChequeBouncePage() {
                   id="heading-stop-payment-vs-bounce-title"
                   className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight"
                 >
-                  Difference Between Stop Payment and Cheque Bounce: Banking vs Legal Reality
+                  Stop Payment vs Cheque Bounce: Banking and Legal Distinctions
                 </h2>
                 <p className="text-sm sm:text-base text-slate-700 leading-relaxed">
                   While commercial trade often distinguishes between a cheque that bounces for lack of funds and a cheque where payment is deliberately stopped, the Negotiable Instruments Act treats them as identical triggers for criminal culpability:
@@ -677,7 +677,7 @@ export default function StopPaymentChequeBouncePage() {
                   id="heading-5step-playbook-title"
                   className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight"
                 >
-                  The 5-Step Escalation Playbook: Converting a Stop Payment Memo into Full Recovery
+                  5-Step Escalation Playbook for Stop Payment Cheque Recovery
                 </h2>
                 <p className="text-sm sm:text-base text-slate-700 leading-relaxed">
                   Derived directly from winning Supreme Court precedents and commercial recovery practices, follow this chronological 5-step playbook:
@@ -859,7 +859,7 @@ export default function StopPaymentChequeBouncePage() {
                   id="heading-worked-example-title"
                   className="text-xl sm:text-2xl font-bold text-slate-900 tracking-tight"
                 >
-                  Worked Case Study: Supplier Recovers ₹6,50,000 Cheque Amount Plus 20% Interim Compensation
+                  Case Study: Stop Payment Cheque Recovery With Interim Relief
                 </h2>
                 <div className="bg-slate-900 text-white rounded-2xl p-5 sm:p-8 shadow-xl space-y-4 sm:space-y-5 w-full overflow-hidden">
                   <div className="flex flex-wrap items-center justify-between gap-2 border-b border-slate-800 pb-3">
@@ -893,7 +893,7 @@ export default function StopPaymentChequeBouncePage() {
                   id="heading-evidence-checklist-title"
                   className="text-xl sm:text-2xl font-bold text-slate-900 tracking-tight"
                 >
-                  Pre-Flight Checklist: 6 Critical Documents for a Stop Payment Section 138 Notice
+                  Checklist: 6 Critical Documents for a Stop Payment Legal Notice
                 </h2>
                 <p className="text-xs sm:text-sm text-slate-700 leading-relaxed">
                   Verify your documentation before serving a statutory demand notice. Under Section 63 of the Bharatiya Sakshya Adhiniyam, 2023, electronic delivery proof and postal tracking carry full presumption of service:

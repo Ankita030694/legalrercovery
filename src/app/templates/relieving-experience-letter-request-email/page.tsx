@@ -285,7 +285,7 @@ export default function RelievingLetterTemplatePage() {
                   id="heading-overview-title"
                   className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight"
                 >
-                  When and Why Employers Withhold Relieving Letters &amp; What Indian Law Says
+                  Why Employers Withhold Relieving Letters &amp; What Law Says
                 </h2>
                 <p className="text-sm sm:text-base text-slate-700 leading-relaxed">
                   In Indian corporate and industrial sectors, few administrative practices cause more immediate career distress than an employer refusing to issue a Relieving Letter and Experience Certificate. Departing professionals routinely find their exit credentials withheld as a coercive lever: HR teams cite pending Full and Final (FnF) financial reconciliations, unilateral notice period shortfall calculations, disputed non-compete covenants, or unapproved project knowledge transfer handovers.
@@ -322,7 +322,7 @@ export default function RelievingLetterTemplatePage() {
                     id="heading-clause-breakdown-title"
                     className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight"
                   >
-                    Clause-by-Clause Legal Notes: Why Each Paragraph of the Demand Email Matters
+                    Clause-by-Clause Legal Notes on the Demand Email
                   </h2>
                   <p className="text-xs font-semibold text-slate-500 mt-1">
                     Strategic legal drafting ensures your email doubles as documentary evidence under Section 63 of Bharatiya Sakshya Adhiniyam, 2023 (BSA).
@@ -388,7 +388,7 @@ export default function RelievingLetterTemplatePage() {
                   id="heading-resolution-flow-title"
                   className="text-xl sm:text-2xl font-bold text-slate-900 tracking-tight"
                 >
-                  Statutory Resolution Hierarchy: From Resignation Handover to Document Recovery
+                  Resolution Hierarchy: Resignation to Document Recovery
                 </h2>
                 <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
                   Follow this calibrated statutory progression to break through HR silence, enforce your employment rights, and compel release of your service certificates:
@@ -513,7 +513,7 @@ export default function RelievingLetterTemplatePage() {
                   id="heading-escalation-ladder-title"
                   className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight"
                 >
-                  The 5-Step Escalation Playbook Against an Employer Withholding Exit Letters
+                  5-Step Playbook When Employers Withhold Exit Letters
                 </h2>
                 <p className="text-sm sm:text-base text-slate-700 leading-relaxed">
                   If HR remains uncooperative, do not engage in chaotic telephone arguments. Follow this rigorous 5-step playbook designed to create an unassailable evidentiary record:
@@ -598,7 +598,7 @@ export default function RelievingLetterTemplatePage() {
                   id="heading-deadlines-table-title"
                   className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight"
                 >
-                  Statutory Deadlines &amp; Exit Document Benchmarks Under Indian Labour Laws
+                  Statutory Deadlines for Exit Documents Under Labour Laws
                 </h2>
                 <p className="text-sm sm:text-base text-slate-700 leading-relaxed">
                   Employers frequently plead internal bureaucratic policies to justify weeks of delay. Indian statutory frameworks and judicial precedents mandate clear benchmark turnaround times:
@@ -667,7 +667,7 @@ export default function RelievingLetterTemplatePage() {
                   id="heading-worked-example-title"
                   className="text-xl sm:text-2xl font-bold text-slate-900 tracking-tight"
                 >
-                  Worked Case Study: Engineer Recovers Withheld Relieving Letter After 15-Day Advocate Notice
+                  Case Study: Recovers Relieving Letter After Advocate Notice
                 </h2>
                 <div className="bg-slate-900 text-white rounded-2xl p-5 sm:p-8 shadow-xl space-y-4 sm:space-y-5 w-full overflow-hidden">
                   <div className="flex flex-wrap items-center justify-between gap-2 border-b border-slate-800 pb-3">
@@ -701,7 +701,7 @@ export default function RelievingLetterTemplatePage() {
                   id="heading-evidence-checklist-title"
                   className="text-xl sm:text-2xl font-bold text-slate-900 tracking-tight"
                 >
-                  Exit Evidence Checklist: 6 Critical Documents Before Serving a Legal Notice
+                  Evidence Checklist: 6 Documents for Legal Notice
                 </h2>
                 <p className="text-xs sm:text-sm text-slate-700 leading-relaxed">
                   Under Section 63 of Bharatiya Sakshya Adhiniyam, 2023 (BSA), digital records and email communications are fully admissible before the Labour Commissioner and civil courts. Secure these 6 items:
@@ -765,7 +765,7 @@ export default function RelievingLetterTemplatePage() {
                     id="heading-faqs-title"
                     className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight"
                   >
-                    Frequently Asked Questions About Relieving Letters, Experience Certificates &amp; Legal Remedies
+                    FAQs: Relieving Letters, Experience Letters &amp; Remedies
                   </h2>
                   <p className="text-xs font-semibold text-slate-500 mt-1">
                     Authoritative Answers Grounded in Model Standing Orders, Article 21 and Indian High Court Precedents

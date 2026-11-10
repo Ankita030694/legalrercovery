@@ -150,7 +150,7 @@ const FAQS = [
 const ARTICLE_SCHEMA = {
   "@context": "https://schema.org",
   "@type": "Article",
-  headline: "Demand Notice Format for MSME Suppliers, With the Section 16 Interest Clause",
+  headline: "MSME Demand Notice Format With Section 16 Interest Clause",
   description:
     "A demand-notice format for Udyam-registered suppliers citing Sections 15–16 and 43B(h), with an interest schedule.",
   datePublished: "2026-11-04T11:30:00+05:30",
@@ -279,7 +279,7 @@ export default function MsmeDelayedPaymentDemandNoticePage() {
             </div>
 
             <h1 className="text-2xl sm:text-3xl md:text-5xl font-black tracking-tight text-white leading-tight mb-4 sm:mb-6 break-words">
-              Demand Notice Format for MSME Suppliers, With the Section 16 Interest Clause
+              MSME Demand Notice Format With Section 16 Interest Clause
             </h1>
 
             {/* Answer Box First: 40-60 Words Directly Under H1 */}
@@ -341,7 +341,7 @@ export default function MsmeDelayedPaymentDemandNoticePage() {
                     id="heading-tone-variants-title"
                     className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight"
                   >
-                    3 Ready-to-Use MSME Demand Notice Formats (Plus Section 18 ODR Affidavit)
+                    3 MSME Demand Notice Formats &amp; Section 18 Affidavit
                   </h2>
                   <p className="text-xs sm:text-sm text-slate-600 mt-1 leading-relaxed">
                     Every overdue B2B invoice requires calibrated legal pressure. Below are three complete, original MSME demand notice formats—ranging from a relationship-preserving Section 43B(h) tax reminder to a final pre-litigation notice—plus the sworn affidavit format for the{" "}
@@ -368,7 +368,7 @@ export default function MsmeDelayedPaymentDemandNoticePage() {
                   id="heading-tone-matrix-title"
                   className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight"
                 >
-                  Choosing the Right Notice Tone: Buyer Scenario Matrix &amp; Subject-Line Bank
+                  Notice Tone Guide: Buyer Scenario Matrix &amp; Subject Lines
                 </h2>
                 <p className="text-sm sm:text-base text-slate-700 leading-relaxed">
                   Selecting the wrong tone can either alienate a long-term OEM buyer over a routine accounting delay or signal weakness to a habitual defaulter. Match your invoice age and buyer behavior to the right statutory template:
@@ -485,7 +485,7 @@ export default function MsmeDelayedPaymentDemandNoticePage() {
                   id="heading-interest-clause-title"
                   className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight"
                 >
-                  How to Draft the Section 16 Compound Interest Schedule &amp; Section 43B(h) Tax Clause
+                  Drafting Section 16 Interest Schedule &amp; Tax Clause
                 </h2>
                 <p className="text-sm sm:text-base text-slate-700 leading-relaxed">
                   Most generic legal notices fail because they vaguely demand &quot;18% commercial interest&quot; without computing the statutory Appointed Day or monthly rests. Under{" "}
@@ -593,7 +593,7 @@ export default function MsmeDelayedPaymentDemandNoticePage() {
                   id="heading-sending-validity-title"
                   className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight"
                 >
-                  Service &amp; Delivery Rules: Sending Your MSME Notice by RPAD, Email and WhatsApp
+                  Service Rules: Sending MSME Notice by RPAD &amp; Email
                 </h2>
                 <p className="text-sm sm:text-base text-slate-700 leading-relaxed">
                   How you dispatch your demand notice determines whether it stands up as proof of pre-institution demand before the Micro and Small Enterprises Facilitation Council (MSEFC) or{" "}
@@ -655,7 +655,7 @@ export default function MsmeDelayedPaymentDemandNoticePage() {
                   id="heading-escalation-flow-title"
                   className="text-xl sm:text-2xl font-bold text-slate-900 tracking-tight"
                 >
-                  Visual Escalation Path: From Day 46 Invoice Default to MSME ODR Execution
+                  Visual Escalation: Day 46 Default to MSME ODR Execution
                 </h2>
                 <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
                   How your MSME demand notice fits into the statutory recovery pipeline under Chapter V of the MSMED Act:
@@ -809,7 +809,7 @@ export default function MsmeDelayedPaymentDemandNoticePage() {
                     id="heading-case-digest-title"
                     className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight"
                   >
-                    Supreme Court Precedents Backing Your MSME Demand Notice &amp; 3× Interest Claim
+                    Supreme Court Rulings Backing MSME 3× Interest Claims
                   </h2>
                   <span className="text-xs font-bold text-slate-500 uppercase tracking-wider">
                     Verifiable Court Rulings
@@ -890,7 +890,7 @@ export default function MsmeDelayedPaymentDemandNoticePage() {
                   id="heading-worked-example-title"
                   className="text-xl sm:text-2xl font-bold text-slate-900 tracking-tight"
                 >
-                  Worked Example: How a ₹11,40,000 Overdue Invoice Was Recovered in 12 Days After Notice
+                  Case Study: Recovers ₹11,40,000 Overdue Invoice in 12 Days
                 </h2>
                 <div className="bg-slate-900 text-white rounded-2xl p-5 sm:p-8 shadow-xl space-y-4 sm:space-y-5 w-full overflow-hidden">
                   <div className="flex flex-wrap items-center justify-between gap-2 border-b border-slate-800 pb-3">
@@ -934,7 +934,7 @@ export default function MsmeDelayedPaymentDemandNoticePage() {
                   id="heading-evidence-checklist-title"
                   className="text-xl sm:text-2xl font-bold text-slate-900 tracking-tight"
                 >
-                  Mandatory Annexures Checklist: 6 Documents to Attach With Your MSME Legal Notice
+                  Annexures Checklist: 6 Documents for MSME Notice
                 </h2>
                 <p className="text-xs sm:text-sm text-slate-700 leading-relaxed">
                   Never send a bare text letter alone. Attaching these 6 numbered annexures turns your demand notice into a trial-ready Section 18 MSME ODR dossier and prevents the buyer from disputing basic facts:
@@ -1101,7 +1101,7 @@ export default function MsmeDelayedPaymentDemandNoticePage() {
                     id="heading-faqs-title"
                     className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight"
                   >
-                    Frequently Asked Questions About MSME Demand Notice &amp; Affidavit Formats
+                    FAQs: MSME Demand Notice &amp; Affidavit Formats
                   </h2>
                   <p className="text-xs font-semibold text-slate-500 mt-1">
                     Direct Statutory Answers Based on Chapter V of the MSMED Act, 2006 &amp; Section 43B(h) Income-tax Rules
@@ -1138,7 +1138,7 @@ export default function MsmeDelayedPaymentDemandNoticePage() {
                   id="heading-sources-title"
                   className="text-lg sm:text-xl font-bold text-slate-900 tracking-tight"
                 >
-                  Primary Statutory Authorities, MSMED Act Provisions &amp; Official References
+                  MSMED Act Provisions &amp; Primary Legal References
                 </h2>
                 <ol className="sources list-decimal list-inside space-y-2 text-xs sm:text-sm text-slate-600">
                   {PRIMARY_SOURCES.map((source, idx) => (

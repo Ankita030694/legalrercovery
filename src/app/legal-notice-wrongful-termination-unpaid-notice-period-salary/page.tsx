@@ -3,7 +3,7 @@ import WrongfulTerminationClient from "./WrongfulTerminationClient";
 
 export const metadata: Metadata = {
   title: "Wrongful Termination & Unpaid Salary Legal Notice",
-  description: "Fired suddenly without cause, put on fake PIP, or forced to resign? Serve an Advocate Legal Notice for wrongful termination, illegal layoff compensation & full severance pay.",
+  description: "Fired without cause, put on fake PIP, or forced to resign? Send an advocate legal notice for wrongful termination and claim full severance pay.",
   keywords: [
     "legal notice for wrongful termination india",
     "forced resignation legal action india",

@@ -257,7 +257,7 @@ export default function JioMartRecoveryPage() {
                   id="problem-picker-heading"
                   className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight"
                 >
-                  Select Your JioMart Issue: Wrong Delivery, Stuck Refund, or Rejected Return
+                  Select Your JioMart Issue: Delivery or Refund Failure
                 </h2>
               </div>
               <p className="text-xs sm:text-sm text-slate-500 max-w-md">
@@ -455,7 +455,7 @@ export default function JioMartRecoveryPage() {
               id="escalation-ladder-heading"
               className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight mb-4"
             >
-              What If Nothing Works in 30 Days? The Escalation Path from Grievance Officer to e-Jagriti
+              30-Day Escalation: Grievance Officer to e-Jagriti
             </h2>
             <p className="text-sm sm:text-base text-slate-600 leading-relaxed mb-6">
               When customer support bots loop endlessly and ticket resolutions are falsely recorded, follow this structured, dated escalation ladder. Each tier progressively increases institutional pressure on Reliance Retail Limited to resolve the dispute.
@@ -743,7 +743,7 @@ export default function JioMartRecoveryPage() {
               id="worked-example-heading"
               className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight mb-4"
             >
-              Illustrative Dispute: Resolving a ₹9,450 JioMart Wrong Grocery & Appliance Delivery
+              Worked Dispute: Resolving a ₹9,450 JioMart Wrong Delivery
             </h2>
             <p className="text-sm sm:text-base text-slate-600 leading-relaxed mb-6">
               The following scenario illustrates how an unresolved JioMart delivery discrepancy was escalated and successfully settled through legal intervention without attending court hearings:
@@ -832,7 +832,7 @@ export default function JioMartRecoveryPage() {
               id="scope-heading"
               className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight mb-4"
             >
-              Honest Scope: What LegalRecovery Can and Cannot Do for Your JioMart Order
+              Scope &amp; Boundaries: What LegalRecovery Can and Cannot Do
             </h2>
             <p className="text-sm sm:text-base text-slate-600 leading-relaxed mb-6">
               LegalRecovery provides statutory demand notice drafting and consumer advocacy. In accordance with Bar Council guidelines and honest consumer practice, we maintain transparent boundaries regarding our services:
@@ -908,7 +908,7 @@ export default function JioMartRecoveryPage() {
               id="faq-heading"
               className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight mb-6"
             >
-              Frequently Asked Questions About JioMart Refunds, Wrong Orders & Legal Action
+              FAQs: JioMart Refunds, Wrong Orders &amp; Legal Action
             </h2>
 
             <div className="space-y-4">

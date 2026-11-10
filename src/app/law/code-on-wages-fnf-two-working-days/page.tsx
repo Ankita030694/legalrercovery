@@ -159,7 +159,7 @@ const FAQS = [
 const ARTICLE_SCHEMA = {
   "@context": "https://schema.org",
   "@type": "Article",
-  headline: "Section 17(2), Code on Wages: Your Full & Final Settlement Is Due in Two Working Days",
+  headline: "Section 17(2), Code on Wages: Full & Final Settlement in 2 Days",
   description:
     "Under the Code on Wages, exit dues are payable within 2 working days. What it covers, what it doesn't, and how employees enforce it.",
   datePublished: "2026-11-03T15:00:00+05:30",
@@ -268,7 +268,7 @@ export default function CodeOnWagesFnfPage() {
             </div>
 
             <h1 className="text-2xl sm:text-3xl md:text-5xl font-black tracking-tight text-white leading-tight mb-4 sm:mb-6 break-words">
-              Section 17(2), Code on Wages: Your Full &amp; Final Settlement Is Due in Two Working Days
+              Section 17(2), Code on Wages: Full &amp; Final Settlement in 2 Days
             </h1>
 
             {/* Answer Box First: 40-60 Words Directly Under H1 */}
@@ -331,7 +331,7 @@ export default function CodeOnWagesFnfPage() {
                   id="heading-statute-overview-title"
                   className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight"
                 >
-                  The Section 17(2) Revolution: Why the Traditional 45-Day FnF Cycle Is Now Legally Dead
+                  Section 17(2) Revolution: Why 45-Day FnF Cycle Is Dead
                 </h2>
                 <p className="text-sm sm:text-base text-slate-700 leading-relaxed">
                   For decades, Indian corporate employers across information technology, banking, retail, and manufacturing enforced an arbitrary, employer-centric convention: full and final (FnF) exit settlements were deferred for 30, 45, or even 90 days following an employee&apos;s last working day. Resigning professionals were routinely told that &quot;finance processes exit batches only once a month&quot; or that &quot;cross-departmental clearance audits require several weeks&quot;.
@@ -351,7 +351,7 @@ export default function CodeOnWagesFnfPage() {
                     id="heading-clause-annotation-title"
                     className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight"
                   >
-                    Clause-by-Clause Statutory Annotation: What Section 17(2) Actually Mandates
+                    Statutory Annotation: What Section 17(2) Mandates
                   </h2>
                   <p className="text-xs sm:text-sm text-slate-600 mt-1">
                     Every phrase in Section 17(2) carries strict legal obligations. Here is the authoritative judicial interpretation:
@@ -541,7 +541,7 @@ export default function CodeOnWagesFnfPage() {
                   id="heading-deadlines-penalties-title"
                   className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight"
                 >
-                  Statutory Deductions, the 50% Ceiling &amp; Penal Fines Under Code on Wages
+                  Statutory Deductions &amp; the 50% Ceiling on Wages
                 </h2>
                 <p className="text-sm sm:text-base text-slate-700 leading-relaxed">
                   Companies frequently invent deduction heads—such as notice shortfall penalties, training bond costs, or unreturned asset deductions—to wipe out an employee&apos;s final payout. The Code on Wages strictly restricts employer deductions under Section 18:
@@ -619,7 +619,7 @@ export default function CodeOnWagesFnfPage() {
                     id="heading-order-digest-title"
                     className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight"
                   >
-                    Landmark Judicial Digest: 4 Enforceable Precedents on Unpaid Wages &amp; Exit Dues
+                    4 Landmark Precedents on Unpaid Wages &amp; Exit Dues
                   </h2>
                   <span className="text-xs font-bold text-slate-500 uppercase tracking-wider">
                     Authoritative Case Law
@@ -696,7 +696,7 @@ export default function CodeOnWagesFnfPage() {
                   id="heading-pattern-analysis-title"
                   className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight"
                 >
-                  Pattern Analysis: 5 Evidentiary Pillars That Force Employers to Settle FnF Immediately
+                  5 Evidentiary Pillars That Force Prompt FnF Settlement
                 </h2>
                 <p className="text-sm sm:text-base text-slate-700 leading-relaxed">
                   Analysis of hundreds of wage dispute settlements and Labour Court orders reveals that employers quickly abandon the &quot;45-day cycle&quot; defense when employees construct an unassailable digital paper trail:
@@ -1001,7 +1001,7 @@ export default function CodeOnWagesFnfPage() {
                   id="heading-worked-example-title"
                   className="text-xl sm:text-2xl font-bold text-slate-900 tracking-tight"
                 >
-                  Worked Case Study: Employee Recovers ₹1,85,000 Unpaid Salary + ₹35,000 Interest &amp; Damages
+                  Case Study: Recovers ₹1,85,000 Salary + Damages
                 </h2>
                 <div className="bg-slate-900 text-white rounded-2xl p-5 sm:p-8 shadow-xl space-y-4 sm:space-y-5 w-full overflow-hidden">
                   <div className="flex flex-wrap items-center justify-between gap-2 border-b border-slate-800 pb-3">
@@ -1035,7 +1035,7 @@ export default function CodeOnWagesFnfPage() {
                   id="heading-evidence-checklist-title"
                   className="text-xl sm:text-2xl font-bold text-slate-900 tracking-tight"
                 >
-                  Employee Evidence Checklist: 6 Critical Documents Before Serving Notice
+                  Employee Evidence Checklist: 6 Critical Documents
                 </h2>
                 <p className="text-xs sm:text-sm text-slate-700 leading-relaxed">
                   Under Section 63 of the Bharatiya Sakshya Adhiniyam, 2023 (BSA), digital records are fully admissible before the Labour Commissioner and civil courts. Gather these 6 items:
@@ -1134,7 +1134,7 @@ export default function CodeOnWagesFnfPage() {
                     id="heading-faqs-title"
                     className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight"
                   >
-                    Frequently Asked Questions: Section 17(2) Code on Wages &amp; FnF Timelines
+                    FAQs: Section 17(2) Code on Wages &amp; FnF Timelines
                   </h2>
                   <p className="text-xs font-semibold text-slate-500 mt-1">
                     Authoritative Answers Grounded in Central Labor Codes, High Court Precedents, and Statutory Enforcement Rules

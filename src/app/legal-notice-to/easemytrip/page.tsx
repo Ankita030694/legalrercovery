@@ -317,7 +317,7 @@ export default function EaseMyTripLegalNoticePage() {
                     id="heading-problem-breakdown-title"
                     className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight"
                   >
-                    What Usually Goes Wrong With EaseMyTrip Refunds: 4 Recurring Failure Points
+                    What Goes Wrong With EaseMyTrip Refunds: 4 Failure Points
                   </h2>
                   <p className="text-xs font-semibold text-slate-500 mt-1">
                     Analysis of Recurring Consumer Disputes Involving Easy Trip Planners Limited
@@ -413,7 +413,7 @@ export default function EaseMyTripLegalNoticePage() {
                   id="heading-liability-comparison-title"
                   className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight"
                 >
-                  EaseMyTrip Dispute Matrix: Who Is Liable, Statutory Timelines & First Action
+                  EaseMyTrip Dispute Matrix: Liability &amp; Timelines
                 </h2>
                 <p className="text-sm sm:text-base text-slate-700 leading-relaxed">
                   Pinpoint exact legal responsibility across typical booking failures to ensure your dispute targets the correct corporate entity:
@@ -531,7 +531,7 @@ export default function EaseMyTripLegalNoticePage() {
                     id="heading-order-digest-title"
                     className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight"
                   >
-                    Landmark Consumer Commission Verdicts Involving EaseMyTrip & Travel Aggregators
+                    Landmark Consumer Verdicts Involving EaseMyTrip
                   </h2>
                   <span className="text-xs font-bold text-slate-500 uppercase tracking-wider">
                     Verifiable Judicial Records
@@ -816,7 +816,7 @@ export default function EaseMyTripLegalNoticePage() {
                   id="heading-playbook-title"
                   className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight"
                 >
-                  The 5-Step Escalation Playbook Against EaseMyTrip: From Booking ID to Legal Notice
+                  5-Step Escalation Playbook Against EaseMyTrip
                 </h2>
                 <p className="text-sm sm:text-base text-slate-700 leading-relaxed">
                   Engineered from successful consumer recovery proceedings, this 5-stage procedure bypasses standard chatbot scripts and enforces strict statutory compliance:
@@ -1014,7 +1014,7 @@ export default function EaseMyTripLegalNoticePage() {
                   id="heading-worked-example-title"
                   className="text-xl sm:text-2xl font-bold text-slate-900 tracking-tight"
                 >
-                  Worked Case Study: Noida Passenger Recovers ₹28,600 Cancelled Booking from EaseMyTrip
+                  Case Study: Recovers ₹28,600 Cancelled EMT Booking
                 </h2>
                 <div className="bg-slate-900 text-white rounded-2xl p-5 sm:p-8 shadow-xl space-y-4 sm:space-y-5 w-full overflow-hidden">
                   <div className="flex flex-wrap items-center justify-between gap-2 border-b border-slate-800 pb-3">
@@ -1052,7 +1052,7 @@ export default function EaseMyTripLegalNoticePage() {
                   id="heading-evidence-checklist-title"
                   className="text-xl sm:text-2xl font-bold text-slate-900 tracking-tight"
                 >
-                  Evidence Checklist: What You Need Before Serving an EaseMyTrip Legal Notice
+                  Evidence Checklist Before Serving EaseMyTrip Notice
                 </h2>
                 <p className="text-xs sm:text-sm text-slate-700 leading-relaxed">
                   Under Section 63 of the Bharatiya Sakshya Adhiniyam, 2023 (BSA), electronic documents and digital financial records are fully admissible in consumer commissions. Assemble these 6 critical records:
@@ -1120,7 +1120,7 @@ export default function EaseMyTripLegalNoticePage() {
                     id="heading-faqs-title"
                     className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight"
                   >
-                    Frequently Asked Questions About EaseMyTrip Refunds, EMT Wallet & Legal Notice
+                    FAQs About EaseMyTrip Refunds, EMT Wallet &amp; Notice
                   </h2>
                   <p className="text-xs font-semibold text-slate-500 mt-1">
                     Authoritative Answers Grounded in DGCA Regulations, CPA 2019 and Supreme Court Precedents

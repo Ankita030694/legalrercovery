@@ -329,7 +329,7 @@ export default function BnsCheatingVsCivilPage() {
                     id="heading-clauses-annotation-title"
                     className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight"
                   >
-                    Statutory Clause-by-Clause Annotation: Section 318 Bharatiya Nyaya Sanhita
+                    Statutory Annotation: Section 318 BNS Explained
                   </h2>
                   <p className="text-xs font-semibold text-slate-500 mt-1">
                     Exhaustive Legal Breakdown of BNS Section 318 Subsections (1) to (4) with Practical Interpretations
@@ -464,7 +464,7 @@ export default function BnsCheatingVsCivilPage() {
                   id="heading-bns-vs-civil-title"
                   className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight"
                 >
-                  Cheating (BNS 318) vs Criminal Breach of Trust (BNS 316) vs Civil Loan Default
+                  Cheating (BNS 318) vs Breach of Trust vs Default
                 </h2>
                 <p className="text-sm sm:text-base text-slate-700 leading-relaxed">
                   Understanding where your money recovery dispute fits is essential to avoiding police refusal and preserving your civil limitation. The following comparative matrix outlines who is covered, who is excluded, and the legal mechanism governing each route:
@@ -649,7 +649,7 @@ export default function BnsCheatingVsCivilPage() {
                   id="heading-police-pattern-title"
                   className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight"
                 >
-                  Evidentiary Pattern Analysis: What Convinces Police to Register an FIR Under BNS 318
+                  What Convinces Police to Register FIR Under BNS 318
                 </h2>
                 <p className="text-sm sm:text-base text-slate-700 leading-relaxed">
                   Police officers are legally conditioned to reject private loan complaints because Section 173 BNSS mandates preliminary enquiry for offences punishable between 3 and 7 years. When complainants produce verifiable digital evidence proving dishonest inducement, police are legally compelled to take action:
@@ -724,7 +724,7 @@ export default function BnsCheatingVsCivilPage() {
                   id="heading-decision-flow-title"
                   className="text-xl sm:text-2xl font-bold text-slate-900 tracking-tight"
                 >
-                  Statutory Decision Tree: Police Complaint (BNS 318) vs Civil Summary Suit
+                  Decision Tree: BNS 318 Police FIR vs Summary Suit
                 </h2>
                 <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
                   Follow this structured legal flowchart to determine whether your dispute warrants a police FIR or an immediate civil recovery suit before statutory limitation expires:
@@ -856,7 +856,7 @@ export default function BnsCheatingVsCivilPage() {
                   id="heading-playbook-title"
                   className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight"
                 >
-                  The 5-Step Enforcement Playbook: From Evidence Assembly to Debt Recovery
+                  5-Step Playbook: Evidence Assembly to Debt Recovery
                 </h2>
                 <p className="text-sm sm:text-base text-slate-700 leading-relaxed">
                   Whether pursuing a criminal complaint under BNS Section 318 or a civil summary recovery suit, follow this battle-tested 5-step legal playbook:
@@ -941,7 +941,7 @@ export default function BnsCheatingVsCivilPage() {
                   id="heading-deadlines-table-title"
                   className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight"
                 >
-                  Statutory Deadlines, Limitation Limits &amp; Penal Sanctions: BNS vs Civil Recovery
+                  Deadlines &amp; Penal Sanctions: BNS vs Civil Recovery
                 </h2>
                 <p className="text-sm sm:text-base text-slate-700 leading-relaxed">
                   Both criminal complaints and civil suits are bound by strict statutory limitation periods and penal thresholds that determine the viability of recovery:
@@ -1022,7 +1022,7 @@ export default function BnsCheatingVsCivilPage() {
                     id="heading-scenario-tabs-title"
                     className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight"
                   >
-                    Dispute Scenarios: Identify Your Legal Route &amp; Police Action Feasibility
+                    Dispute Scenarios: Legal Route &amp; Police Action
                   </h2>
                   <p className="text-xs font-semibold text-slate-500 mt-1">
                     Select Your Specific Scenario to Reveal Likely Police Response, Applicable Law, and the Right Enforcement Strategy
@@ -1038,7 +1038,7 @@ export default function BnsCheatingVsCivilPage() {
                   id="heading-worked-example-title"
                   className="text-xl sm:text-2xl font-bold text-slate-900 tracking-tight"
                 >
-                  Worked Case Study: Lender Recovers ₹6,50,000 Loan After Debtor Falsely Claimed Medical Crisis
+                  Case Study: Lender Recovers ₹6,50,000 Loan via FIR
                 </h2>
                 <div className="bg-slate-900 text-white rounded-2xl p-5 sm:p-8 shadow-xl space-y-4 sm:space-y-5 w-full overflow-hidden">
                   <div className="flex flex-wrap items-center justify-between gap-2 border-b border-slate-800 pb-3">
@@ -1072,7 +1072,7 @@ export default function BnsCheatingVsCivilPage() {
                   id="heading-evidence-checklist-title"
                   className="text-xl sm:text-2xl font-bold text-slate-900 tracking-tight"
                 >
-                  Evidence Checklist: 6 Critical Documents Before Serving Notice or Approaching Police
+                  Evidence Checklist: 6 Documents for Police FIR
                 </h2>
                 <p className="text-xs sm:text-sm text-slate-700 leading-relaxed">
                   Under Section 63 of the Bharatiya Sakshya Adhiniyam, 2023 (BSA), electronic communications and digital banking records are fully admissible in court. Assemble these 6 documents:
@@ -1136,7 +1136,7 @@ export default function BnsCheatingVsCivilPage() {
                     id="heading-faqs-title"
                     className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight"
                   >
-                    Frequently Asked Questions About BNS 318, Cheating FIRs &amp; Civil Money Recovery
+                    FAQs: Section 318 BNS &amp; Civil Money Recovery
                   </h2>
                   <p className="text-xs font-semibold text-slate-500 mt-1">
                     Authoritative Answers Grounded in Bharatiya Nyaya Sanhita, Limitation Act, and Supreme Court Jurisprudence

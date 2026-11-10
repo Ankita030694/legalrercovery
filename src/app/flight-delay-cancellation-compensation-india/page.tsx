@@ -34,7 +34,7 @@ const articleJsonLd = {
   "@context": "https://schema.org",
   "@type": "Article",
   headline:
-    "How Much Compensation You Get for Flight Delays, Cancellations and Denied Boarding",
+    "Flight Delays, Cancellations and Denied Boarding Compensation",
   description:
     "DGCA compensation slabs for cancelled flights, long delays and denied boarding, plus how to claim when the airline refuses.",
   inLanguage: "en-IN",
@@ -201,7 +201,7 @@ export default function FlightDelayCancellationCompensationPage() {
             </div>
 
             <h1 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-[#0F172A] tracking-tight leading-tight mb-4">
-              How Much Compensation You Get for Flight Delays, Cancellations and Denied Boarding
+              Flight Delays, Cancellations and Denied Boarding Compensation
             </h1>
 
             <p className="text-lg text-slate-600 leading-relaxed">
@@ -231,7 +231,7 @@ export default function FlightDelayCancellationCompensationPage() {
               id="facts-table-heading"
               className="text-2xl sm:text-3xl font-bold text-slate-900 tracking-tight mb-4"
             >
-              Official DGCA Compensation Slabs: Flight Delay, Cancellation &amp; Denied Boarding Matrix
+              DGCA Compensation Slabs: Delay, Cancellation and Denied Boarding
             </h2>
             <p className="text-sm sm:text-base text-slate-600 leading-relaxed mb-6">
               The Directorate General of Civil Aviation (DGCA) establishes statutory liability rules under CAR Section 3, Series M, Part IV. These financial slabs apply automatically to all scheduled domestic passenger flights operating within Indian airspace, as well as departing international flights operated by Indian registered carriers.
@@ -560,7 +560,7 @@ export default function FlightDelayCancellationCompensationPage() {
                 id="legal-basis-heading"
                 className="text-2xl sm:text-3xl font-bold text-slate-900 tracking-tight mb-4"
               >
-                Legal Basis: DGCA CAR Section 3 Series M Part IV and Consumer Protection Act, 2019
+                Legal Basis: DGCA CAR Series M and Consumer Protection Act
               </h2>
               <p className="text-sm sm:text-base text-slate-600 leading-relaxed mb-6">
                 Passenger compensation rights in India do not depend on airline goodwill or individual ticket terms and conditions. They are established by statutory circulars issued under Rule 133A of the Aircraft Rules, 1937, enforceable under the Consumer Protection Act, 2019.
@@ -611,7 +611,7 @@ export default function FlightDelayCancellationCompensationPage() {
                 id="escalation-diagram-heading"
                 className="text-2xl sm:text-3xl font-bold text-slate-900 tracking-tight mb-4"
               >
-                Interactive Escalation Map: From Ground Refusal to AirSewa and Legal Notice
+                Escalation Map: From Airport Refusal to AirSewa and Notice
               </h2>
               <p className="text-sm sm:text-base text-slate-600 leading-relaxed mb-6">
                 When ground personnel dismiss your compensation claim, following a disciplined, evidence-backed escalation ladder ensures the airline cannot run down the clock:
@@ -705,7 +705,7 @@ export default function FlightDelayCancellationCompensationPage() {
                 id="steps-heading"
                 className="text-2xl sm:text-3xl font-bold text-slate-900 tracking-tight mb-4"
               >
-                Step-by-Step Escalation: How to Request Compensation from an Airline When They Refuse
+                Step-by-Step Escalation: Claiming Flight Delay Compensation
               </h2>
               <p className="text-sm sm:text-base text-slate-600 leading-relaxed mb-6">
                 When you face a flight cancellation, long delay, or denied boarding, timing and documentary evidence dictate your success. Follow this sequence:
@@ -795,7 +795,7 @@ export default function FlightDelayCancellationCompensationPage() {
                 id="worked-example-heading"
                 className="text-2xl sm:text-3xl font-bold text-slate-900 tracking-tight mb-4"
               >
-                Illustrative Worked Example: Recovering ₹20,000 Denied Boarding &amp; Hotel Expenses from a Carrier
+                Worked Example: Recovering Denied Boarding and Hotel Expenses
               </h2>
               <p className="text-sm sm:text-base text-slate-600 leading-relaxed mb-6">
                 To understand how statutory slabs and incidental damages compound during an airline dispute, examine this representative scenario based on real consumer forum filings:
@@ -867,7 +867,7 @@ export default function FlightDelayCancellationCompensationPage() {
                 id="case-law-heading"
                 className="text-2xl sm:text-3xl font-bold text-slate-900 tracking-tight mb-4"
               >
-                Recent Consumer Court Judgments on Flight Delays &amp; Cancelled Flight Claims
+                Consumer Court Judgments on Flight Delay and Cancellation Claims
               </h2>
               <p className="text-sm sm:text-base text-slate-600 leading-relaxed mb-6">
                 Consumer Commissions in India have consistently penalized commercial airlines for flouting DGCA compensation directives and hiding behind generic operational excuses:
@@ -941,7 +941,7 @@ export default function FlightDelayCancellationCompensationPage() {
                 id="checklist-heading"
                 className="text-2xl sm:text-3xl font-bold text-slate-900 tracking-tight mb-4"
               >
-                Evidence Checklist: What You Need to Prove Flight Delay or Cancellation Deficiency
+                Evidence Checklist: Proving Flight Delay or Service Deficiency
               </h2>
               <p className="text-sm sm:text-base text-slate-600 leading-relaxed mb-6">
                 When drafting an advocate legal notice or filing before the Consumer Commission, compile the following documentary evidence to build an ironclad case:
@@ -1175,7 +1175,7 @@ export default function FlightDelayCancellationCompensationPage() {
                 id="faq-heading"
                 className="text-2xl sm:text-3xl font-bold text-slate-900 tracking-tight mb-4"
               >
-                Frequently Asked Questions About Flight Delay and Cancellation Compensation in India
+                FAQs on Flight Delay and Cancellation Compensation in India
               </h2>
               <p className="text-sm sm:text-base text-slate-600 leading-relaxed mb-6">
                 Clear answers to common questions regarding airline passenger compensation, DGCA slabs, and recovery options:

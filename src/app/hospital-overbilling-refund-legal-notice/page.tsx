@@ -355,7 +355,7 @@ export default function HospitalOverbillingRefundPage() {
                   id="heading-overview-title"
                   className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight"
                 >
-                  The Anatomy of Hospital Overbilling in India: How Inpatient Invoices Get Inflated
+                  Hospital Overbilling Anatomy: How Inpatient Invoices Get Inflated
                 </h2>
                 <p className="text-sm sm:text-base text-slate-700 leading-relaxed">
                   Navigating a serious medical emergency is one of the most emotionally exhausting experiences an Indian family can endure. Yet, during this acute vulnerability, private corporate hospitals across India frequently deploy aggressive financial billing tactics. What was initially quoted as an affordable ₹1,50,000 surgical procedure often snowballs into a bewildering ₹4,50,000 discharge bill cluttered with opaque medical jargon, multi-thousand-rupee consumable surcharges, and undocumented physician visits.
@@ -375,7 +375,7 @@ export default function HospitalOverbillingRefundPage() {
                     id="heading-myth-vs-fact-title"
                     className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight"
                   >
-                    Myth vs. Fact: 7 Misconceptions About Hospital Billing &amp; Consumer Rights
+                    Myth vs. Fact: Hospital Billing and Patient Consumer Rights
                   </h2>
                   <span className="text-xs font-bold text-slate-500 uppercase tracking-wider">
                     Legal Reality vs Billing Myths
@@ -425,7 +425,7 @@ export default function HospitalOverbillingRefundPage() {
                     id="heading-preflight-audit-title"
                     className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight"
                   >
-                    Forensic Pre-Flight Bill Audit Checklist: What to Scrutinize Before Payment
+                    Forensic Bill Audit Checklist: What to Scrutinize Before Payment
                   </h2>
                   <span className="text-xs font-bold text-red-600 uppercase tracking-wider">
                     Archetype G3 Checklist Wizard
@@ -526,7 +526,7 @@ export default function HospitalOverbillingRefundPage() {
                     id="heading-evidence-matrix-title"
                     className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight"
                   >
-                    Hospital Overcharge Evidence Matrix: What to Collect, Why It Matters, &amp; Source
+                    Hospital Overcharge Evidence Matrix: Records and Proof to Gather
                   </h2>
                   <p className="text-xs sm:text-sm text-slate-600 mt-1">
                     Winning a refund before a consumer commission requires unassailable documentary proof. Collect these vital records:
@@ -622,7 +622,7 @@ export default function HospitalOverbillingRefundPage() {
                     id="heading-case-digest-title"
                     className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight"
                   >
-                    Judicial Precedents: How Indian Consumer Courts Punish Hospital Overbilling
+                    Judicial Precedents: Consumer Court Rulings on Hospital Overbilling
                   </h2>
                   <p className="text-xs sm:text-sm text-slate-600 mt-1">
                     Review four benchmark orders where consumer forums ordered private healthcare institutions to refund overcharges with exemplary interest and damages:
@@ -772,7 +772,7 @@ export default function HospitalOverbillingRefundPage() {
                     id="heading-legal-framework-title"
                     className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight"
                   >
-                    The Indian Legal Framework Governing Medical Pricing &amp; Patient Rights
+                    Legal Framework Governing Medical Pricing and Patient Rights
                   </h2>
                   <p className="text-xs sm:text-sm text-slate-600 mt-1">
                     When challenging inflated hospital invoices, your legal notice and consumer complaints rest upon concrete statutory pillars:
@@ -825,7 +825,7 @@ export default function HospitalOverbillingRefundPage() {
                     id="heading-playbook-title"
                     className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight"
                   >
-                    The 5-Step Hospital Overcharge Recovery Playbook: From Discharge to Refund
+                    5-Step Hospital Overcharge Playbook: From Discharge to Refund
                   </h2>
                   <p className="text-xs sm:text-sm text-slate-600 mt-1">
                     Follow this statutory timeline to challenge overcharges systematically without compromising patient care or release:
@@ -1032,7 +1032,7 @@ export default function HospitalOverbillingRefundPage() {
                     id="heading-notice-template-title"
                     className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight"
                   >
-                    Statutory Legal Notice Format for Hospital Overbilling &amp; Unfair Trade Practice
+                    Legal Notice Format for Hospital Overbilling and Unfair Practice
                   </h2>
                   <p className="text-xs sm:text-sm text-slate-600 mt-1">
                     Below is the structured draft format used by advocates to demand immediate refund of inflated medical invoices:
@@ -1095,7 +1095,7 @@ export default function HospitalOverbillingRefundPage() {
                     id="heading-faqs-title"
                     className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight"
                   >
-                    Frequently Asked Questions About Hospital Overbilling &amp; Refund Recovery
+                    FAQs on Hospital Overbilling Disputes and Refund Recovery
                   </h2>
                   <p className="text-xs sm:text-sm text-slate-600 mt-1">
                     Direct statutory answers to common questions about medical bill disputes, consumable markups, and consumer rights in India:

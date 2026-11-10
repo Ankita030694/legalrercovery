@@ -317,7 +317,7 @@ export default function SalaryRecoveryInPayslipPage() {
                 id="heading-meaning-overview-title"
                 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight"
               >
-                What &apos;Salary Recovery&apos; or &apos;Recovery&apos; on Your Payslip Actually Means
+                What 'Salary Recovery' on Your Payslip Actually Means
               </h2>
               <p className="text-sm sm:text-base text-slate-700 leading-relaxed">
                 When you inspect your monthly salary slip or Full &amp; Final (FnF) statement and notice a line item labelled <strong>&quot;Salary Recovery&quot;</strong>, <strong>&quot;Recovery&quot;</strong>, or <strong>&quot;Adjustment / Deduction&quot;</strong>, it indicates that your employer&apos;s payroll department has reduced your gross earnings by a specific sum before crediting your bank account. In corporate human resources management software like Keka, Darwinbox, Zoho Payroll, Greytrix, and SAP SuccessFactors, &quot;recovery&quot; is configured as a negative earning or a non-statutory debit code.
@@ -337,7 +337,7 @@ export default function SalaryRecoveryInPayslipPage() {
                   id="heading-comparison-matrix-title"
                   className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight"
                 >
-                  Lawful Deductions vs Unlawful Salary Recovery: Statutory Comparison Matrix
+                  Lawful Deductions vs Unlawful Salary Recovery Matrix
                 </h2>
                 <p className="text-xs sm:text-sm text-slate-600 mt-1">
                   Comprehensive audit comparison of common payslip line items, governing statutory sections, permissible limits, and points of illegality:
@@ -499,7 +499,7 @@ export default function SalaryRecoveryInPayslipPage() {
                 id="heading-unlawful-recovery-title"
                 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight"
               >
-                When Does Salary Recovery Become Strictly Illegal Under Indian Labour Law?
+                When Salary Recovery Is Illegal Under Labour Law
               </h2>
               <p className="text-sm sm:text-base text-slate-700 leading-relaxed">
                 Under the Indian legal framework, wages are recognized as a protected property right under Article 300A of the Constitution of India and specialized labour enactments. Section 18(1) of the Code on Wages, 2019 codifies an unambiguous mandate: <em>&quot;Notwithstanding anything contained in any other law for the time being in force, there shall be no deduction from the wages of an employee, except those authorized by or under this Code.&quot;</em>
@@ -553,7 +553,7 @@ export default function SalaryRecoveryInPayslipPage() {
                 id="heading-notice-pay-rule-title"
                 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight"
               >
-                The Gross vs Basic Notice Shortfall Rule: Why Deducting CTC Is Unlawful
+                Gross vs Basic Notice Shortfall: Why Deducting CTC Fails
               </h2>
               <p className="text-sm sm:text-base text-slate-700 leading-relaxed">
                 The single most frequent cause of disputed salary recovery in the Indian corporate sector is the calculation of notice period buyout on <strong>Gross Salary / Cost to Company (CTC)</strong> rather than <strong>Basic Salary</strong>.
@@ -598,7 +598,7 @@ export default function SalaryRecoveryInPayslipPage() {
                 id="heading-training-bond-rule-title"
                 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight"
               >
-                Training Bonds &amp; Retention Clawbacks: Section 74 Contract Act Enforceability
+                Training Bonds &amp; Clawbacks Under Section 74
               </h2>
               <p className="text-sm sm:text-base text-slate-700 leading-relaxed">
                 Many employers insert clauses requiring employees to serve a minimum duration (e.g., 18 to 36 months) or forfeit a fixed sum such as ₹1,50,000 to ₹3,00,000 under a &quot;Training Bond&quot; or &quot;Retention Agreement&quot;. When the employee exits early, payroll automatically deducts this sum as &quot;Bond Recovery&quot; from their salary.
@@ -623,7 +623,7 @@ export default function SalaryRecoveryInPayslipPage() {
                   id="heading-order-digest-title"
                   className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight"
                 >
-                  Landmark Judicial Digest: 4 Verifiable Court Precedents Against Unlawful Salary Deductions
+                  4 Precedents Against Unlawful Salary Deductions
                 </h2>
                 <span className="text-xs font-bold text-slate-500 uppercase tracking-wider">
                   Verified Court Records
@@ -914,7 +914,7 @@ export default function SalaryRecoveryInPayslipPage() {
                   id="heading-problem-picker-title"
                   className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight"
                 >
-                  Common Payslip Recovery Scenarios: Legal Grounds &amp; Immediate Countermeasures
+                  Common Recovery Scenarios: Grounds &amp; Remedies
                 </h2>
                 <p className="text-xs font-semibold text-slate-500 mt-1">
                   Select Your Specific Recovery Deduction to Review Governing Statutes and Immediate Action Steps
@@ -930,7 +930,7 @@ export default function SalaryRecoveryInPayslipPage() {
                 id="heading-worked-example-title"
                 className="text-xl sm:text-2xl font-bold text-slate-900 tracking-tight"
               >
-                Worked Case Study: Senior Software Engineer Recovers ₹1,42,000 Unlawful Notice Deduction From Tech Employer
+                Case Study: Recovers ₹1.42L Unlawful Notice Cut
               </h2>
               <div className="bg-slate-900 text-white rounded-2xl p-5 sm:p-8 shadow-xl space-y-4 sm:space-y-5 w-full overflow-hidden">
                 <div className="flex flex-wrap items-center justify-between gap-2 border-b border-slate-800 pb-3">
@@ -964,7 +964,7 @@ export default function SalaryRecoveryInPayslipPage() {
                 id="heading-evidence-checklist-title"
                 className="text-xl sm:text-2xl font-bold text-slate-900 tracking-tight"
               >
-                Salary Recovery Evidence Checklist: 6 Critical Documents Before Serving a Legal Notice
+                Evidence Checklist: 6 Documents for Salary Notice
               </h2>
               <p className="text-xs sm:text-sm text-slate-700 leading-relaxed">
                 Under Section 63 of the Bharatiya Sakshya Adhiniyam, 2023 (BSA), electronic communications and digital payroll records are fully admissible in labour proceedings. Assemble these 6 documents:
@@ -1028,7 +1028,7 @@ export default function SalaryRecoveryInPayslipPage() {
                   id="heading-faqs-title"
                   className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight"
                 >
-                  Frequently Asked Questions About Salary Recovery, Withheld Pay &amp; Legal Remedies
+                  FAQs: Salary Recovery, Withheld Pay &amp; Remedies
                 </h2>
                 <p className="text-xs font-semibold text-slate-500 mt-1">
                   Authoritative Legal Answers Grounded in the Code on Wages 2019, Indian Contract Act and High Court Jurisprudence

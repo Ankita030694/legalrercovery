@@ -317,7 +317,7 @@ export default function TokenMoneyRefundPropertyDealPage() {
                     id="heading-comparison-matrix-title"
                     className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight"
                   >
-                    Token &amp; Bayana Recovery Routes Compared: Notice vs Civil Suit vs RERA vs Police
+                    Token &amp; Bayana Recovery Routes: Notice, Civil Suit and RERA
                   </h2>
                   <span className="text-xs font-bold text-slate-500 uppercase tracking-wider">
                     Archetype G4 Forum Matrix
@@ -506,7 +506,7 @@ export default function TokenMoneyRefundPropertyDealPage() {
                   id="heading-token-vs-bayana-title"
                   className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight"
                 >
-                  Is Token Amount Refundable or Not? Token vs. Bayana (Earnest Money) vs. Part-Payment
+                  Is Token Money Refundable? Token vs Bayana vs Part-Payment
                 </h2>
                 <p className="text-sm sm:text-base text-slate-700 leading-relaxed">
                   Sellers and local property dealers deliberately blur the line between <strong>token money (sai / preliminary holding deposit)</strong>, <strong>earnest money (bayana)</strong>, and <strong>advance part-payment</strong> so they can threaten 100% forfeiture. However, the Supreme Court of India—across <em>Fateh Chand (1963)</em>, <em>Satish Batra (2013)</em>, and <em>Kailash Nath (2015)</em>—draws a strict three-tier legal distinction:
@@ -688,7 +688,7 @@ export default function TokenMoneyRefundPropertyDealPage() {
                     id="heading-case-digest-title"
                     className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight"
                   >
-                    Landmark Supreme Court Judgments on Token &amp; Earnest Money Forfeiture
+                    Supreme Court Judgments on Token and Earnest Money Forfeiture
                   </h2>
                   <span className="text-xs font-bold text-slate-500 uppercase tracking-wider">
                     Verifiable Judicial Records
@@ -765,7 +765,7 @@ export default function TokenMoneyRefundPropertyDealPage() {
                   id="heading-escalation-flow-title"
                   className="text-xl sm:text-2xl font-bold text-slate-900 tracking-tight"
                 >
-                  Statutory Resolution Flow: From Deal Collapse to Token Money Realization
+                  Resolution Flow: From Deal Collapse to Token Money Realization
                 </h2>
                 <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
                   Follow this structured pre-litigation and litigation escalation rail so the seller cannot falsely accuse you of defaulting on the agreement deadline:
@@ -982,7 +982,7 @@ export default function TokenMoneyRefundPropertyDealPage() {
                     id="heading-problem-picker-title"
                     className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight"
                   >
-                    Select Your Failed Property Deal Scenario: Legal Basis &amp; Tactical Fix
+                    Failed Property Deal Scenario: Legal Basis and Tactical Fix
                   </h2>
                   <p className="text-xs font-semibold text-slate-500 mt-1">
                     Click Your Specific Token or Bayana Dispute Below to See the Governing Supreme Court Rule and 3-Step Solution
@@ -1043,7 +1043,7 @@ export default function TokenMoneyRefundPropertyDealPage() {
                   id="heading-worked-example-title"
                   className="text-xl sm:text-2xl font-bold text-slate-900 tracking-tight"
                 >
-                  Worked Case Study: Buyer Recovers ₹5,00,000 Bayana After Home Loan Rejection &amp; Title Defect
+                  Case Study: Recovering ₹5 Lakh Bayana After Loan Rejection
                 </h2>
                 <div className="bg-slate-900 text-white rounded-2xl p-5 sm:p-8 shadow-xl space-y-4 sm:space-y-5 w-full overflow-hidden">
                   <div className="flex flex-wrap items-center justify-between gap-2 border-b border-slate-800 pb-3">
@@ -1078,7 +1078,7 @@ export default function TokenMoneyRefundPropertyDealPage() {
                     id="heading-evidence-checklist-title"
                     className="text-xl sm:text-2xl font-bold text-slate-900 tracking-tight"
                   >
-                    Evidence Checklist: 6 Documents Required to Recover Token or Bayana Money
+                    Evidence Checklist: Documents to Recover Token or Bayana
                   </h2>
                   <p className="text-xs sm:text-sm text-slate-700 leading-relaxed">
                     Under Section 63 of the Bharatiya Sakshya Adhiniyam, 2023 (BSA), keep these 6 records ready before serving your statutory legal notice:
@@ -1163,7 +1163,7 @@ export default function TokenMoneyRefundPropertyDealPage() {
                     id="heading-faqs-title"
                     className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight"
                   >
-                    Frequently Asked Questions: Token Money &amp; Bayana Refund Rules in India
+                    FAQs on Token Money and Bayana Refund Rules in India
                   </h2>
                   <p className="text-xs font-semibold text-slate-500 mt-1">
                     Direct Answers Grounded in the Indian Contract Act, Transfer of Property Act &amp; Supreme Court Precedents

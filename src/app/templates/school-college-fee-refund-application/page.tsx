@@ -350,7 +350,7 @@ export default function SchoolCollegeFeeRefundApplicationPage() {
                   id="heading-statutory-basis-title"
                   className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight"
                 >
-                  Statutory Right to Fee Refund: UGC, Ministry of Education &amp; Consumer Protection Act
+                  Statutory Fee Refund Rights: UGC &amp; Consumer Law
                 </h2>
                 <p className="text-sm sm:text-base text-slate-700 leading-relaxed">
                   Every academic admission cycle across India, hundreds of thousands of students and parents face hostile resistance when seeking fee refunds after cancelling admissions. Whether a student leaves an engineering college upon clearing a government seat, withdraws from a private boarding school, leaves a coaching centre midway, or vacates a hostel, administrative desks routinely recite internal rules declaring that &quot;fees once deposited shall not be refunded under any circumstances.&quot;
@@ -964,7 +964,7 @@ export default function SchoolCollegeFeeRefundApplicationPage() {
                     id="heading-case-citations-title"
                     className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight"
                   >
-                    Landmark Case Law Digest: Supreme Court &amp; Consumer Forum Precedents
+                    Case Law Digest: Supreme Court &amp; Consumer Precedents
                   </h2>
                   <span className="text-xs font-bold text-slate-500 uppercase tracking-wider">
                     Verifiable Court Records

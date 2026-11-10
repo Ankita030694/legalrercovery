@@ -302,7 +302,7 @@ export default function EvServiceDelayBatteryWarrantyPage() {
                   id="heading-overview-title"
                   className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight"
                 >
-                  The Indian EV Aftersales Crisis: Legal Recourse When Your Scooter Is Held Hostage
+                  EV Aftersales Crisis: Legal Recourse for Held Scooters
                 </h2>
                 <p className="text-sm sm:text-base text-slate-700 leading-relaxed">
                   The rapid adoption of electric two-wheelers in India has outpaced aftersales infrastructure. Major EV manufacturers and authorized dealerships across cities from Bengaluru to Delhi have generated severe customer backlogs, leaving thousands of daily commuters without their primary mode of transportation for weeks or months.
@@ -527,7 +527,7 @@ export default function EvServiceDelayBatteryWarrantyPage() {
                     id="heading-evidence-matrix-title"
                     className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight"
                   >
-                    Document Matrix: What to Collect, Where to Obtain It &amp; Evidentiary Value
+                    Document Matrix: Evidence to Collect for EV Claims
                   </h2>
                   <span className="text-xs font-bold text-slate-500 uppercase tracking-wider">
                     Statutory Evidence Table

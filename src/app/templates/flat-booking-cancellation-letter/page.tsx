@@ -353,7 +353,7 @@ export default function FlatBookingCancellationLetterPage() {
                     id="heading-letter-formats-title"
                     className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight"
                   >
-                    3 Ready-to-Use Flat &amp; Plot Booking Cancellation Letter Formats (Plus Section 18 Delay Format)
+                    3 Flat Booking Cancellation Formats &amp; Delay Notice
                   </h2>
                   <p className="text-xs sm:text-sm text-slate-600 mt-1 leading-relaxed">
                     Never cancel a property booking through a verbal phone call to the site sales manager. Builders routinely exploit oral requests by issuing backdated demand notices to manufacture a &quot;buyer default&quot;. Below are three complete, original <strong>flat booking cancellation letter</strong> formats—calibrated from a polite pre-agreement withdrawal to a final pre-litigation notice—plus a fourth format for builder possession delay. For full legal remedies if the builder refuses to pay, read our pillar guide on{" "}
@@ -380,7 +380,7 @@ export default function FlatBookingCancellationLetterPage() {
                   id="heading-tone-matrix-title"
                   className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight"
                 >
-                  Choosing the Right Cancellation Letter Variant: Buyer Scenario &amp; Tone Matrix
+                  Choosing the Right Cancellation Variant &amp; Tone
                 </h2>
                 <p className="text-sm sm:text-base text-slate-700 leading-relaxed">
                   The wording of your first written cancellation notice determines how much money the builder can legally deduct. Match your booking stage and reason for exit to the exact template variant below:
@@ -499,7 +499,7 @@ export default function FlatBookingCancellationLetterPage() {
                   id="heading-rera-charges-title"
                   className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight"
                 >
-                  Flat Booking Cancellation Charges as per RERA: Before vs. After Agreement
+                  Cancellation Charges as per RERA: Before vs After Deed
                 </h2>
                 <p className="text-sm sm:text-base text-slate-700 leading-relaxed">
                   When homebuyers search for <strong>flat booking cancellation charges as per RERA</strong>, they often encounter builders quoting 10% to 20% of the total apartment value—which can wipe out 100% of a buyer&apos;s initial booking advance. In law, what a builder can deduct depends strictly on whether a registered Agreement for Sale exists, which state the project is in, and who caused the cancellation:
@@ -628,7 +628,7 @@ export default function FlatBookingCancellationLetterPage() {
                   id="heading-sending-rules-title"
                   className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight"
                 >
-                  How to Serve Your Booking Cancellation Letter to the Builder (RPAD, Email &amp; Section 63 BSA)
+                  Serving Cancellation Letter via RPAD &amp; Section 63 BSA
                 </h2>
                 <p className="text-sm sm:text-base text-slate-700 leading-relaxed">
                   Why do so many homebuyers lose 1% to 10% in extra forfeiture? Because they hand an unacknowledged paper letter to a site relationship manager, and the builder later claims in RERA that the buyer never cancelled—while issuing backdated stage-payment demand notices with 18% delay interest. Protect your cancellation date using this 3-part service rule:
@@ -683,7 +683,7 @@ export default function FlatBookingCancellationLetterPage() {
                   id="heading-refund-flow-title"
                   className="text-xl sm:text-2xl font-bold text-slate-900 tracking-tight"
                 >
-                  Visual Refund Path: From Booking Cancellation Letter to RERA Section 18 / 31 Recovery
+                  Visual Refund Path: Cancellation Letter to RERA Order
                 </h2>
                 <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
                   How your written cancellation letter initiates the 45-day statutory countdown and escalates to RERA or Consumer Court if the builder defaults:
@@ -837,7 +837,7 @@ export default function FlatBookingCancellationLetterPage() {
                     id="heading-case-precedents-title"
                     className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight"
                   >
-                    Supreme Court &amp; RERA Precedents Limiting Builder Forfeiture on Flat Cancellations
+                    Supreme Court &amp; RERA Rulings Limiting Forfeiture
                   </h2>
                   <span className="text-xs font-bold text-slate-500 uppercase tracking-wider">
                     Verifiable Court Rulings
@@ -918,7 +918,7 @@ export default function FlatBookingCancellationLetterPage() {
                   id="heading-worked-example-title"
                   className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight"
                 >
-                  Worked Example: How a Homebuyer Recovered ₹4,85,000 Pre-Agreement Booking Money Using Variant 2
+                  Case Study: Recovers ₹4,85,000 Booking Money via Variant 2
                 </h2>
                 <div className="bg-white rounded-2xl border border-slate-200 p-5 sm:p-7 shadow-xs space-y-4 text-xs sm:text-sm text-slate-700 leading-relaxed">
                   <div className="flex flex-wrap items-center justify-between gap-2 border-b border-slate-100 pb-3">
@@ -959,7 +959,7 @@ export default function FlatBookingCancellationLetterPage() {
                   id="heading-enclosure-checklist-title"
                   className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight"
                 >
-                  Enclosure Checklist: 6 Documents to Attach With Your Flat Cancellation Request
+                  Enclosures: 6 Documents for Flat Cancellation Letter
                 </h2>
                 <p className="text-sm sm:text-base text-slate-700 leading-relaxed">
                   Attach self-attested copies (never originals) of these six records when dispatching your cancellation letter by RPAD and email so your dossier is immediately ready for{" "}
@@ -1057,7 +1057,7 @@ export default function FlatBookingCancellationLetterPage() {
                   id="heading-honest-scope-title"
                   className="text-xl sm:text-2xl font-bold text-slate-900 tracking-tight"
                 >
-                  Honest Scope: What LegalRecovery Can and Cannot Do for Your Flat Booking Refund
+                  Scope &amp; Boundaries: What LegalRecovery Can and Cannot Do
                 </h2>
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                   <div className="bg-emerald-50/70 border border-emerald-200 rounded-2xl p-5 space-y-2">
@@ -1110,7 +1110,7 @@ export default function FlatBookingCancellationLetterPage() {
                   id="heading-faqs-title"
                   className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight"
                 >
-                  Frequently Asked Questions: Flat Booking Cancellation Letter &amp; RERA Refund Rules
+                  FAQs: Flat Booking Cancellation &amp; RERA Refund Rules
                 </h2>
 
                 <div className="space-y-3.5">

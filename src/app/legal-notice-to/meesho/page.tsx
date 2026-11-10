@@ -386,7 +386,7 @@ export default function MeeshoRefundLegalNoticePage() {
               id="h2-why-refund-stuck"
               className="text-lg sm:text-xl font-black text-slate-900 tracking-tight leading-snug mb-2.5"
             >
-              Why Does Meesho Show &apos;Refund Successful&apos; but No Money Reached My Bank Account?
+              Why Meesho Shows 'Refund Successful' but Bank Is Empty
             </h2>
             <p className="text-slate-800 text-sm leading-relaxed font-semibold mb-2 text-justify">
               Meesho updates its internal interface to &quot;Refund Successful&quot; as soon as its payment gateway transmits an automated clearing instruction, well before funds actually credit your bank account. If the resulting 12-digit Unique Transaction Reference (UTR) is missing or unrecognized by your bank&apos;s Core Banking System, the money remains trapped in an intermediary nodal escrow pool.
@@ -434,7 +434,7 @@ export default function MeeshoRefundLegalNoticePage() {
               id="h2-wrong-product-empty-box"
               className="text-lg sm:text-xl font-black text-slate-900 tracking-tight leading-snug mb-2.5"
             >
-              What Should You Do If Meesho Delivered the Wrong Product or an Empty Box?
+              What to Do If Meesho Delivered Wrong Product or Empty Box
             </h2>
             <p className="text-slate-800 text-sm leading-relaxed font-semibold mb-2 text-justify">
               When Meesho delivers an incorrect item, counterfeit apparel, or an empty parcel, capture timestamped unboxing photographs immediately and raise a return within 7 days. Delivering goods that differ materially from catalog representations constitutes an Unfair Trade Practice under Section 2(47) of the Consumer Protection Act, 2019.
@@ -458,7 +458,7 @@ export default function MeeshoRefundLegalNoticePage() {
               id="h2-seller-vs-meesho-liability"
               className="text-lg sm:text-xl font-black text-slate-900 tracking-tight leading-snug mb-2.5"
             >
-              Can Meesho Legally Refuse Your Refund by Blaming the Third-Party Seller?
+              Can Meesho Refuse Your Refund by Blaming the Seller?
             </h2>
             <p className="text-slate-800 text-sm leading-relaxed font-semibold mb-2 text-justify">
               No, Meesho cannot escape liability by claiming intermediary immunity under Section 79 of the Information Technology Act, 2000. Under Rule 5(6) of the Consumer Protection (E-Commerce) Rules, 2020, marketplace platforms bear statutory fallback liability if an onboarded merchant fails to deliver promised goods or refund the buyer.
@@ -482,7 +482,7 @@ export default function MeeshoRefundLegalNoticePage() {
               id="h2-grievance-officer-escalation"
               className="text-lg sm:text-xl font-black text-slate-900 tracking-tight leading-snug mb-2.5"
             >
-              Who Is the Meesho Grievance Officer and How Do You Escalate Unresolved Complaints?
+              Meesho Grievance Officer Details &amp; Escalation
             </h2>
             <p className="text-slate-800 text-sm leading-relaxed font-semibold mb-2 text-justify">
               The designated Resident Grievance Officer for Meesho is Mr. Murthy S.N., reachable by email at <code className="bg-red-50 text-[#DC2626] font-bold px-1.5 py-0.5 rounded">legalsupport@meesho.com</code> or at Meesho Limited&apos;s Bengaluru headquarters. Under Rule 4(4) of the E-Commerce Rules, 2020, the officer must acknowledge complaints within 48 hours and resolve them within one month.
@@ -506,7 +506,7 @@ export default function MeeshoRefundLegalNoticePage() {
               id="h2-nch-1915-complaint"
               className="text-lg sm:text-xl font-black text-slate-900 tracking-tight leading-snug mb-2.5"
             >
-              How Do You Lodge an Official Complaint on the National Consumer Helpline (NCH 1915)?
+              Filing a Complaint on National Consumer Helpline 1915
             </h2>
             <p className="text-slate-800 text-sm leading-relaxed font-semibold mb-2 text-justify">
               To escalate outside the app without court costs, register a consumer grievance on the Department of Consumer Affairs&apos; National Consumer Helpline (NCH) by dialing toll-free <span className="font-bold text-[#DC2626]">1915</span>, sending a WhatsApp message to <span className="font-bold text-[#DC2626]">8800001915</span>, or logging into <code className="bg-slate-100 text-slate-900 px-1 py-0.5 rounded font-bold">consumerhelpline.gov.in</code>.
@@ -530,7 +530,7 @@ export default function MeeshoRefundLegalNoticePage() {
               id="h2-advocate-legal-notice"
               className="text-lg sm:text-xl font-black text-slate-900 tracking-tight leading-snug mb-2.5"
             >
-              When Should You Serve a Formal Legal Notice to Meesho and the Reseller?
+              When to Serve a Formal Legal Notice to Meesho
             </h2>
             <p className="text-slate-800 text-sm leading-relaxed font-semibold mb-2 text-justify">
               Serve an Advocate Legal Notice when 15 days elapse without a refund, your return is rejected arbitrarily, or support closes tickets without payment. A formal notice gives Meesho and the merchant a mandatory 15-day statutory window to remedy the default.
@@ -554,7 +554,7 @@ export default function MeeshoRefundLegalNoticePage() {
               id="h2-consumer-court-awards"
               className="text-lg sm:text-xl font-black text-slate-900 tracking-tight leading-snug mb-2.5"
             >
-              What Have Consumer Courts Ordered Meesho (Fashnear Technologies) to Pay?
+              Consumer Court Orders Against Meesho (Fashnear)
             </h2>
             <p className="text-slate-800 text-sm leading-relaxed font-semibold mb-2 text-justify">
               District Consumer Disputes Redressal Commissions regularly penalize Meesho (Fashnear Technologies / Meesho Limited) for refund withholding, ordering the platform to refund the purchase amount and pay compensation between ₹3,000 and ₹25,000 for mental agony and litigation expenses.

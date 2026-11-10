@@ -312,13 +312,13 @@ export default function SalaryPaymentDeadlinePage() {
 
             {/* Main Content Body */}
             <div className="flex-1 w-full min-w-0 space-y-10 sm:space-y-14">
-              {/* Section 1: H2 - What Is the Exact Salary Payment Deadline in India Under Section 17(1)? */}
+              {/* Section 1: H2 - Exact Salary Payment Deadline Under Section 17(1) */}
               <section id="heading-statutory-deadline" aria-labelledby="heading-statutory-deadline-title" className="scroll-mt-28 space-y-4">
                 <h2
                   id="heading-statutory-deadline-title"
                   className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight"
                 >
-                  What Is the Exact Salary Payment Deadline in India Under Section 17(1)?
+                  Exact Salary Payment Deadline Under Section 17(1)
                 </h2>
                 <p className="text-sm sm:text-base text-slate-700 leading-relaxed">
                   Every month, millions of salaried professionals in India face the anxiety of delayed payroll. Whether it is a seed-stage startup claiming pending funding tranches, a mid-sized IT vendor pointing fingers at unpaid foreign client invoices, or an established enterprise shifting payroll dates for administrative convenience, delayed salary disrupts rent, loan EMIs, school fees, and daily household subsistence.
@@ -351,7 +351,7 @@ export default function SalaryPaymentDeadlinePage() {
                     id="heading-court-precedents-title"
                     className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight"
                   >
-                    Judicial Precedents on Delayed Salary: What High Courts and Labour Authorities Have Ruled
+                    Judicial Precedents on Delayed Salary Payment
                   </h2>
                   <span className="text-xs font-bold text-slate-500 uppercase tracking-wider">
                     Verifiable Judicial Records
@@ -432,7 +432,7 @@ export default function SalaryPaymentDeadlinePage() {
                   id="heading-delay-excuses-title"
                   className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight"
                 >
-                  Common Employer Excuses for Late Salary: Why None of Them Hold Up in Law
+                  Employer Late Salary Excuses &amp; Statutory Reality
                 </h2>
                 <p className="text-sm sm:text-base text-slate-700 leading-relaxed">
                   When salaries fail to credit by the 7th, HR departments and founders frequently deploy generic verbal deflections. Understanding why each excuse collapses under statutory scrutiny empowers employees to challenge illegal defaults with confidence:
@@ -495,7 +495,7 @@ export default function SalaryPaymentDeadlinePage() {
                   id="heading-resolution-rail-title"
                   className="text-xl sm:text-2xl font-bold text-slate-900 tracking-tight"
                 >
-                  Statutory Escalation Rail: From Late Salary Day 8 to Labour Authority Recovery
+                  Salary Escalation Rail: Day 8 to Labour Authority
                 </h2>
                 <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
                   Follow this structured statutory escalation pathway to establish an ironclad legal audit trail and enforce wage payment:
@@ -620,7 +620,7 @@ export default function SalaryPaymentDeadlinePage() {
                   id="heading-escalation-playbook-title"
                   className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight"
                 >
-                  The 5-Step Escalation Playbook: How to Recover Delayed Salary with Interest
+                  5-Step Playbook: Recovering Delayed Salary with Interest
                 </h2>
                 <p className="text-sm sm:text-base text-slate-700 leading-relaxed">
                   Navigating late salary requires systematic legal escalation rather than emotional arguments. Follow this 5-step playbook designed by labour advocates to maximize recovery and compel immediate payout:
@@ -708,7 +708,7 @@ export default function SalaryPaymentDeadlinePage() {
                   id="heading-facts-table-title"
                   className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight"
                 >
-                  Statutory Deadlines, Penalties and Wage Period Benchmarks Under Code on Wages
+                  Deadlines, Penalties &amp; Benchmarks Under Wage Code
                 </h2>
                 <p className="text-sm sm:text-base text-slate-700 leading-relaxed">
                   The Code on Wages, 2019 categorizes wage payment cycles into strict statutory timeframes. The following benchmarks represent non-negotiable statutory baselines across India:
@@ -821,7 +821,7 @@ export default function SalaryPaymentDeadlinePage() {
                   id="heading-worked-example-title"
                   className="text-xl sm:text-2xl font-bold text-slate-900 tracking-tight"
                 >
-                  Worked Case Study: Software Engineer Recovers ₹2,40,000 Delayed Salary + 18% Interest
+                  Case Study: Recovers ₹2,40,000 Salary + 18% Interest
                 </h2>
                 <div className="bg-slate-900 text-white rounded-2xl p-5 sm:p-8 shadow-xl space-y-4 sm:space-y-5 w-full overflow-hidden">
                   <div className="flex flex-wrap items-center justify-between gap-2 border-b border-slate-800 pb-3">
@@ -855,7 +855,7 @@ export default function SalaryPaymentDeadlinePage() {
                   id="heading-evidence-checklist-title"
                   className="text-xl sm:text-2xl font-bold text-slate-900 tracking-tight"
                 >
-                  Evidence Checklist: 6 Critical Documents to Secure Before Sending a Legal Notice
+                  Evidence Checklist: 6 Documents Before Legal Notice
                 </h2>
                 <p className="text-xs sm:text-sm text-slate-700 leading-relaxed">
                   Under Section 63 of the Bharatiya Sakshya Adhiniyam, 2023 (BSA), electronic communications and digital records are fully admissible in recovery proceedings. Assemble these 6 documents before issuing a formal legal notice:
@@ -919,7 +919,7 @@ export default function SalaryPaymentDeadlinePage() {
                     id="heading-faqs-title"
                     className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight"
                   >
-                    Frequently Asked Questions About Salary Payment Deadlines and Late Salary Remedies
+                    FAQs: Salary Payment Deadlines &amp; Legal Remedies
                   </h2>
                   <p className="text-xs font-semibold text-slate-500 mt-1">
                     Authoritative Answers Grounded in the Code on Wages 2019, Supreme Court Judgments and Labour Law

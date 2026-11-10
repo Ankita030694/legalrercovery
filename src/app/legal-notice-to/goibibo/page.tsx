@@ -317,7 +317,7 @@ export default function GoibiboLegalNoticePage() {
                   id="heading-orders-overview-title"
                   className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight"
                 >
-                  What Consumer Courts and Regulatory Forums Have Ordered Goibibo (Ibibo Group) to Pay
+                  Consumer Court Orders Against Goibibo (Ibibo Group)
                 </h2>
                 <p className="text-sm sm:text-base text-slate-700 leading-relaxed">
                   When travel plans are disrupted by airline cancellations, overbooked hotels, or broken-down buses, Goibibo&apos;s automated customer assistant (&apos;Gia&apos;) frequently deflects consumer queries into endless verification loops or dumps the refund into closed-loop &apos;goCash&apos; wallets. Behind these automated deflections, consumers find themselves caught between Goibibo claiming &apos;airline approval pending&apos; and airlines asserting that funds were settled to the booking portal months ago.
@@ -334,7 +334,7 @@ export default function GoibiboLegalNoticePage() {
                     id="heading-order-digest-title"
                     className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight"
                   >
-                    Landmark Order Digest: 4 Verifiable Consumer Rulings Against Goibibo (Ibibo Group Pvt. Ltd.)
+                    4 Landmark Consumer Rulings Against Goibibo
                   </h2>
                   <span className="text-xs font-bold text-slate-500 uppercase tracking-wider">
                     Verifiable Court Records
@@ -411,7 +411,7 @@ export default function GoibiboLegalNoticePage() {
                   id="heading-pattern-analysis-title"
                   className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight"
                 >
-                  Pattern Analysis: What Won Travel Refund and Wallet Disputes Against Goibibo
+                  What Won Travel Refund &amp; Wallet Disputes Against Goibibo
                 </h2>
                 <p className="text-sm sm:text-base text-slate-700 leading-relaxed">
                   Analyzing contested consumer commission disputes against Ibibo Group Private Limited reveals consistent strategic patterns that secure favorable awards. When travelers present concrete, unchallengeable electronic proof, consumer courts dismiss Goibibo&apos;s boilerplate intermediary defenses:
@@ -486,7 +486,7 @@ export default function GoibiboLegalNoticePage() {
                   id="heading-escalation-flow-title"
                   className="text-xl sm:text-2xl font-bold text-slate-900 tracking-tight"
                 >
-                  Statutory Resolution Hierarchy: From Goibibo Booking ID to Bank Account Remittance
+                  Resolution Hierarchy: From Booking ID to Refund
                 </h2>
                 <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
                   Follow this structured statutory escalation path to reject goCash vouchers, resolve agency buck-passing, and recover your funds through official regulatory mechanisms:
@@ -607,7 +607,7 @@ export default function GoibiboLegalNoticePage() {
                   id="heading-playbook-title"
                   className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight"
                 >
-                  The 5-Step Escalation Playbook Against Goibibo: From Refund Status to Legal Notice
+                  5-Step Escalation Playbook Against Goibibo
                 </h2>
                 <p className="text-sm sm:text-base text-slate-700 leading-relaxed">
                   Synthesized directly from winning consumer commission verdicts, this 5-step playbook cuts through automated support deflection and enforces your statutory consumer rights under Indian travel and consumer law:
@@ -698,7 +698,7 @@ export default function GoibiboLegalNoticePage() {
                   id="heading-deadlines-table-title"
                   className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight"
                 >
-                  Statutory Refund Deadlines for Goibibo Bookings: Flight, Hotel, Bus & Train Portals
+                  Statutory Refund Deadlines for Goibibo Bookings
                 </h2>
                 <p className="text-sm sm:text-base text-slate-700 leading-relaxed">
                   Indian consumer protection laws and sector-specific regulators prescribe mandatory turnaround times for digital booking refunds. Goibibo cannot override these statutory limits through internal commercial terms of service:
@@ -778,7 +778,7 @@ export default function GoibiboLegalNoticePage() {
                   id="heading-gocash-trap-title"
                   className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight"
                 >
-                  The goCash and Wallet Trap: Why Retaining Consumer Funds as Expiring Credits Violates Law
+                  goCash &amp; Wallet Trap: Why Retaining Funds Violates Law
                 </h2>
                 <div className="bg-amber-50/80 border border-amber-200 rounded-2xl p-4 sm:p-7 space-y-3 sm:space-y-4 w-full overflow-hidden">
                   <h3 className="text-base sm:text-lg font-bold text-amber-950">
@@ -804,7 +804,7 @@ export default function GoibiboLegalNoticePage() {
                   id="heading-worked-example-title"
                   className="text-xl sm:text-2xl font-bold text-slate-900 tracking-tight"
                 >
-                  Worked Case Study: Pune Family Recovers ₹28,600 Cancelled Flight and Hotel Booking from Goibibo
+                  Case Study: Recovers ₹28,600 Cancelled Booking from Goibibo
                 </h2>
                 <div className="bg-slate-900 text-white rounded-2xl p-5 sm:p-8 shadow-xl space-y-4 sm:space-y-5 w-full overflow-hidden">
                   <div className="flex flex-wrap items-center justify-between gap-2 border-b border-slate-800 pb-3">
@@ -838,7 +838,7 @@ export default function GoibiboLegalNoticePage() {
                   id="heading-evidence-checklist-title"
                   className="text-xl sm:text-2xl font-bold text-slate-900 tracking-tight"
                 >
-                  Travel Evidence Checklist: 6 Critical Electronic Records Before Serving a Goibibo Legal Notice
+                  Evidence Checklist: 6 Records for Goibibo Notice
                 </h2>
                 <p className="text-xs sm:text-sm text-slate-700 leading-relaxed">
                   Under Section 63 of the Bharatiya Sakshya Adhiniyam, 2023 (BSA), electronic communications and digital payment transcripts are fully admissible as primary evidence in consumer commissions. Assemble these 6 essential documents:
@@ -902,7 +902,7 @@ export default function GoibiboLegalNoticePage() {
                     id="heading-faqs-title"
                     className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight"
                   >
-                    Frequently Asked Questions About Goibibo Refunds, goCash Status & Legal Notice
+                    FAQs About Goibibo Refunds, goCash &amp; Legal Notice
                   </h2>
                   <p className="text-xs font-semibold text-slate-500 mt-1">
                     Authoritative Answers Grounded in DGCA Regulations, E-Commerce Rules and Consumer Court Precedents
@@ -935,7 +935,7 @@ export default function GoibiboLegalNoticePage() {
                   id="heading-sources-title"
                   className="text-lg sm:text-xl font-bold text-slate-900 tracking-tight"
                 >
-                  Travel Authorities, Primary Statutes & Official Consumer Regulatory References
+                  Travel Authorities &amp; Official Regulatory References
                 </h2>
                 <ol className="sources list-decimal list-inside space-y-2 text-xs sm:text-sm text-slate-600">
                   {PRIMARY_SOURCES.map((source, idx) => (

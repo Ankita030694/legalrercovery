@@ -134,7 +134,7 @@ const FAQS = [
 const ARTICLE_SCHEMA = {
   "@context": "https://schema.org",
   "@type": "Article",
-  headline: "Web or App Client Refusing Final Payment: Legal Steps and Recovery Notice",
+  headline: "Web or App Client Refusing Payment: Legal Steps & Recovery Notice",
   description:
     "Client withholding payment after website delivery or ghosting on milestones? Code ownership, copyright lever under Section 19, and recovery notice.",
   datePublished: "2026-11-09T10:00:00+05:30",
@@ -237,7 +237,7 @@ export default function WebDevelopmentClientNotPayingPage() {
             </div>
 
             <h1 className="text-2xl sm:text-3xl md:text-5xl font-black tracking-tight text-white leading-tight mb-4 sm:mb-6 break-words">
-              Web or App Client Refusing Final Payment: Legal Steps and Recovery Notice
+              Web or App Client Refusing Payment: Legal Steps &amp; Recovery Notice
             </h1>
 
             {/* Answer Box First: 40-60 Words Directly Under H1 */}

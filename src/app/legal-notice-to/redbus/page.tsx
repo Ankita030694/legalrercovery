@@ -317,7 +317,7 @@ export default function RedbusLegalNoticePage() {
                   id="heading-orders-overview-title"
                   className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight"
                 >
-                  What Consumer Courts Have Ordered redBus (Ibibo Group) to Pay for Cancelled Trips
+                  Consumer Court Orders Against redBus for Cancelled Trips
                 </h2>
                 <p className="text-sm sm:text-base text-slate-700 leading-relaxed">
                   When a private bus operator cancels an intercity journey or fails to arrive at the boarding pickup point, redBus automated support chats routinely deflect the consumer with messages like <em>&quot;Please contact the bus operator directly&quot;</em> or <em>&quot;Your refund is under verification with the operator.&quot;</em> In thousands of cases, weeks turn into months without any refund reaching the passenger&apos;s bank account.
@@ -334,7 +334,7 @@ export default function RedbusLegalNoticePage() {
                     id="heading-order-digest-title"
                     className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight"
                   >
-                    Landmark Order Digest: 4 Verifiable Consumer Rulings Against redBus (Ibibo Group)
+                    4 Landmark Consumer Rulings Against redBus
                   </h2>
                   <span className="text-xs font-bold text-slate-500 uppercase tracking-wider">
                     Verifiable Court Records
@@ -607,7 +607,7 @@ export default function RedbusLegalNoticePage() {
                   id="heading-playbook-title"
                   className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight"
                 >
-                  The 5-Step Escalation Playbook Against redBus: From Ticket Disruption to Advocate Notice
+                  5-Step Escalation Playbook Against redBus
                 </h2>
                 <p className="text-sm sm:text-base text-slate-700 leading-relaxed">
                   Derived directly from winning consumer commission verdicts, this 5-step playbook cuts through automated support deflection and enforces your statutory consumer rights against Ibibo Group Private Limited:
@@ -775,7 +775,7 @@ export default function RedbusLegalNoticePage() {
                   id="heading-operator-liability-trap-title"
                   className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight"
                 >
-                  The Intermediary Defense Trap: Why redBus Cannot Legally Wash Its Hands of Operator Cancellations
+                  Why redBus Cannot Avoid Liability for Cancellations
                 </h2>
                 <div className="bg-amber-50/80 border border-amber-200 rounded-2xl p-4 sm:p-7 space-y-3 sm:space-y-4 w-full overflow-hidden">
                   <h3 className="text-base sm:text-lg font-bold text-amber-950">
@@ -801,7 +801,7 @@ export default function RedbusLegalNoticePage() {
                   id="heading-worked-example-title"
                   className="text-xl sm:text-2xl font-bold text-slate-900 tracking-tight"
                 >
-                  Worked Case Study: Hyderabad IT Engineer Recovers ₹4,200 for Cancelled Sleeper Bus
+                  Case Study: Recovers ₹4,200 for Cancelled Bus
                 </h2>
                 <div className="bg-slate-900 text-white rounded-2xl p-5 sm:p-8 shadow-xl space-y-4 sm:space-y-5 w-full overflow-hidden">
                   <div className="flex flex-wrap items-center justify-between gap-2 border-b border-slate-800 pb-3">
@@ -835,7 +835,7 @@ export default function RedbusLegalNoticePage() {
                   id="heading-evidence-checklist-title"
                   className="text-xl sm:text-2xl font-bold text-slate-900 tracking-tight"
                 >
-                  Bus Disruption Evidence Checklist: What You Need Before Serving a redBus Legal Notice
+                  Evidence Checklist Before Serving redBus Legal Notice
                 </h2>
                 <p className="text-xs sm:text-sm text-slate-700 leading-relaxed">
                   Under Section 63 of the Bharatiya Sakshya Adhiniyam, 2023 (BSA), digital records and electronic communications are fully admissible in consumer courts. Gather these 6 essential documents:
@@ -899,7 +899,7 @@ export default function RedbusLegalNoticePage() {
                     id="heading-faqs-title"
                     className="text-xl sm:text-2xl md:text-3xl font-extrabold text-slate-900 tracking-tight"
                   >
-                    Frequently Asked Questions About redBus Bus Cancellation Refunds & Legal Notices
+                    FAQs About redBus Cancellation Refunds &amp; Notices
                   </h2>
                   <p className="text-xs font-semibold text-slate-500 mt-1">
                     Authoritative Answers Grounded in the Consumer Protection Act, 2019 and E-Commerce Rules
@@ -932,7 +932,7 @@ export default function RedbusLegalNoticePage() {
                   id="heading-sources-title"
                   className="text-lg sm:text-xl font-bold text-slate-900 tracking-tight"
                 >
-                  Statutory Authorities, Consumer Protection Rules & Official Legal References
+                  Consumer Protection Rules &amp; Official References
                 </h2>
                 <ol className="sources list-decimal list-inside space-y-2 text-xs sm:text-sm text-slate-600">
                   {PRIMARY_SOURCES.map((source, idx) => (
