@@ -29,12 +29,15 @@ export async function GET(req: NextRequest) {
     const skip = (page - 1) * limit;
 
     if (type === "metrics") {
+      // Internal team accounts' transactions are listed but kept out of the totals
+      const excludeTeam = { isTeamAccount: { $ne: true } };
+
       // 1. Total Successful Transactions
-      const totalTxns = await db.collection("transactions").countDocuments({ status: "success" });
+      const totalTxns = await db.collection("transactions").countDocuments({ status: "success", ...excludeTeam });
 
       // 2. Total Successful Revenue
       const revenueResult = await db.collection("transactions").aggregate([
-        { $match: { status: "success" } },
+        { $match: { status: "success", ...excludeTeam } },
         { $group: { _id: null, total: { $sum: "$amount" } } }
       ]).toArray();
       const totalRevenue = revenueResult.length > 0 ? revenueResult[0].total : 0;
@@ -43,12 +46,14 @@ export async function GET(req: NextRequest) {
       const startOfToday = new Date();
       startOfToday.setHours(0, 0, 0, 0);
       const txnsToday = await db.collection("transactions").countDocuments({
-        createdAt: { $gte: startOfToday }
+        createdAt: { $gte: startOfToday },
+        ...excludeTeam
       });
 
       // 4. Failed Transactions count
       const totalFailed = await db.collection("transactions").countDocuments({
-        status: { $ne: "success" }
+        status: { $ne: "success" },
+        ...excludeTeam
       });
 
       return NextResponse.json({

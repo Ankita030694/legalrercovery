@@ -30,8 +30,8 @@ export async function GET() {
       claimedResult,
       recoveredResult,
     ] = await Promise.all([
-      // Total paid/active users (excluding admin/unlimited accounts)
-      db.collection("users").countDocuments({ isPaid: true, hasUnlimitedCases: { $ne: true } }),
+      // Total paid/active users (excluding admin/unlimited and internal team accounts)
+      db.collection("users").countDocuments({ isPaid: true, hasUnlimitedCases: { $ne: true }, isTeamAccount: { $ne: true } }),
 
       // Leads stuck at OTP
       db.collection("pending_verification").countDocuments({}),
@@ -39,11 +39,11 @@ export async function GET() {
       // Leads stuck at payment
       db.collection("pending_payment").countDocuments({}),
 
-      // Sum of all amountPaid across paid users (excluding admin/unlimited accounts)
+      // Sum of all amountPaid across paid users (excluding admin/unlimited and internal team accounts)
       db
         .collection("users")
         .aggregate([
-          { $match: { isPaid: true, hasUnlimitedCases: { $ne: true } } },
+          { $match: { isPaid: true, hasUnlimitedCases: { $ne: true }, isTeamAccount: { $ne: true } } },
           { $group: { _id: null, total: { $sum: "$amountPaid" } } },
         ])
         .toArray(),
