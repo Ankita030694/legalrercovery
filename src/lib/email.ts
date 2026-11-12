@@ -40,8 +40,7 @@ export async function sendLegalRecoveryEmail(toEmail: string, subject: string, h
   }
 }
 
-export async function sendOtpEmail(toEmail: string, otp: string, userName: string, oppositionCount: number = 1): Promise<boolean> {
-  const totalAmount = oppositionCount * 999;
+export async function sendOtpEmail(toEmail: string, otp: string, userName: string, totalAmount: number): Promise<boolean> {
   const mailOptions = {
     from: `"Legal Recovery" <${emailUser}>`,
     to: toEmail,
@@ -54,7 +53,7 @@ export async function sendOtpEmail(toEmail: string, otp: string, userName: strin
         </div>
         <div style="color: #374151; font-size: 16px; line-height: 1.6;">
           <p>Hello <strong>${userName}</strong>,</p>
-          <p>Thank you for initiating your Legal Recovery case setup. To verify your email address and proceed with the secure flat-fee payment of <strong>₹${totalAmount}</strong>, please use the following one-time password (OTP):</p>
+          <p>Thank you for initiating your Legal Recovery case setup. To verify your email address and proceed with the secure flat-fee payment of <strong>₹${totalAmount.toLocaleString("en-IN")}</strong>, please use the following one-time password (OTP):</p>
           <div style="text-align: center; margin: 30px 0;">
             <span style="font-size: 32px; font-weight: 800; letter-spacing: 6px; color: #dc2626; background-color: #fff5f5; padding: 12px 30px; border-radius: 8px; border: 1px dashed #fca5a5; display: inline-block;">${otp}</span>
           </div>

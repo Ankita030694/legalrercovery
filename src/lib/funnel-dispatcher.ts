@@ -290,8 +290,11 @@ export async function dispatchWaveToLead({
   const pricing = calculateFunnelPricing(
     oppositionCount,
     effectiveDiscountPercent,
-    activeSettings.basePricePerOpposition
+    activeSettings.basePricePerOpposition,
+    lead.physicalDispatch === true
   );
+  // Speed Post is never discounted, so it goes on both sides of the "regular vs unlocked" price
+  const regularAmount = pricing.totalOriginal + pricing.physicalDispatchFee;
 
   const priorWaveState = lead.retargeting?.waves?.[String(waveNumber)] || {};
   const priorWhatsappSent = forceAllChannels ? false : Boolean(priorWaveState.whatsappSent);
@@ -310,7 +313,7 @@ export async function dispatchWaveToLead({
       templateName: waveConfig.watiTemplate,
       userName: lead.name || "there",
       discountPercent: effectiveDiscountPercent || 15,
-      originalAmount: pricing.totalOriginal,
+      originalAmount: regularAmount,
       discountedAmount: pricing.totalPayable,
       resumeToken,
       magicUrl,
@@ -328,7 +331,7 @@ export async function dispatchWaveToLead({
       userName: lead.name || "there",
       wave: waveNumber,
       discountPercent: effectiveDiscountPercent || 15,
-      originalAmount: pricing.totalOriginal,
+      originalAmount: regularAmount,
       discountedAmount: pricing.totalPayable,
       oppositionCount,
       magicUrl,
@@ -381,8 +384,8 @@ export async function dispatchWaveToLead({
         discountPercent: effectiveDiscountPercent,
         discountUnlockedAt,
         discountExpiresAt,
-        expectedAmount: pricing.totalPayable,
-        originalAmount: pricing.totalOriginal,
+        // expectedAmount/originalAmount are left to the PayU session: the payment webhook reads them
+        // for an already-open checkout, so a wave must not overwrite them with a different price
         "retargeting.currentWave": currentWave,
         "retargeting.lastDispatchedAt": now.toISOString(),
         [`retargeting.waves.${waveNumber}`]: updatedWaveRecord,
@@ -401,7 +404,7 @@ export async function dispatchWaveToLead({
       name: lead.name,
       wave: waveNumber,
       discountPercent: effectiveDiscountPercent,
-      originalAmount: pricing.totalOriginal,
+      originalAmount: regularAmount,
       discountedAmount: pricing.totalPayable,
       whatsappSent,
       emailSent,

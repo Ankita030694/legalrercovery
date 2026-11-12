@@ -705,7 +705,9 @@ export default function UserDashboard() {
               </div>
               <p className="text-xs sm:text-sm font-semibold text-slate-200 mt-1">
                 <span className="text-white font-extrabold">{userProfile.usedCases ?? 0}</span> of <span className="text-white font-extrabold">{userProfile.allowedLimit ?? 1}</span> case slots used
-                {userProfile.amountPaid ? ` (₹${userProfile.amountPaid.toLocaleString("en-IN")} total paid)` : ""}
+                {userProfile.amountPaid
+                  ? ` (₹${(userProfile.amountPaid + (userProfile.physicalDispatchFeePaid || 0)).toLocaleString("en-IN")} total paid)`
+                  : ""}
               </p>
             </div>
           </div>

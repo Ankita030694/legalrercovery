@@ -62,6 +62,7 @@ export async function GET(req: NextRequest) {
         isPaid: user.isPaid || false,
         sendPoliceComplaints: user.sendPoliceComplaints !== false,
         amountPaid,
+        physicalDispatchFeePaid: Number(user.physicalDispatchFeePaid) || 0,
         oppositionCount: user.oppositionCount || 1,
         primaryRecoveryType: user.primaryRecoveryType || null,
         allowedLimit,

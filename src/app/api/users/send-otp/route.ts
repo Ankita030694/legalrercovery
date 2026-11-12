@@ -2,7 +2,13 @@ import { NextRequest, NextResponse } from "next/server";
 import { getDbAndBucket } from "@/lib/mongodb";
 import { sendOtpEmail } from "@/lib/email";
 import { sendWatiOtp } from "@/lib/wati";
-import { generateResumeToken, normalizePhoneTenDigits } from "@/lib/funnel-config";
+import {
+  calculateFunnelPricing,
+  generateResumeToken,
+  getFunnelSettings,
+  normalizePhoneTenDigits,
+  resolveEffectiveDiscount,
+} from "@/lib/funnel-config";
 import crypto from "crypto";
 import { normalizeRecoveryType } from "@/lib/recoveryTypes";
 import { preferAttribution, sanitizeAttribution } from "@/lib/attribution";
@@ -125,9 +131,19 @@ export async function POST(req: NextRequest) {
 
     const pendingId = record._id.toString();
 
+    // Quote the amount checkout will charge: unlocked discount plus any Speed Post fee
+    const funnelSettings = await getFunnelSettings(db);
+    const { effectiveDiscountPercent } = resolveEffectiveDiscount(record, funnelSettings);
+    const { totalPayable } = calculateFunnelPricing(
+      record.oppositionCount,
+      effectiveDiscountPercent,
+      funnelSettings.basePricePerOpposition,
+      record.physicalDispatch === true
+    );
+
     // Send the OTP via Zoho Mail and WATI WhatsApp in parallel
     const [emailSent, watiSent] = await Promise.all([
-      sendOtpEmail(email, otp, name, oppositionCount ? Number(oppositionCount) : 1),
+      sendOtpEmail(email, otp, name, totalPayable),
       sendWatiOtp(phone, otp)
     ]);
 

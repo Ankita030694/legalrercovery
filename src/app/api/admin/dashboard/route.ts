@@ -39,12 +39,21 @@ export async function GET() {
       // Leads stuck at payment
       db.collection("pending_payment").countDocuments({}),
 
-      // Sum of all amountPaid across paid users (excluding admin/unlimited and internal team accounts)
+      // Sum of all amountPaid plus Speed Post fees across paid users (excluding admin/unlimited and internal team accounts)
       db
         .collection("users")
         .aggregate([
           { $match: { isPaid: true, hasUnlimitedCases: { $ne: true }, isTeamAccount: { $ne: true } } },
-          { $group: { _id: null, total: { $sum: "$amountPaid" } } },
+          {
+            $group: {
+              _id: null,
+              total: {
+                $sum: {
+                  $add: [{ $ifNull: ["$amountPaid", 0] }, { $ifNull: ["$physicalDispatchFeePaid", 0] }],
+                },
+              },
+            },
+          },
         ])
         .toArray(),
 

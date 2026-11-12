@@ -657,8 +657,6 @@ export async function POST(req: NextRequest) {
             discountPercent: pct,
             discountUnlockedAt: now,
             discountExpiresAt: expiresAt,
-            expectedAmount: pricing.totalPayable,
-            originalAmount: pricing.totalOriginal,
             updatedAt: now,
           },
         }
