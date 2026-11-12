@@ -155,24 +155,36 @@ export async function POST(req: NextRequest) {
       );
     }
 
-    // Meta Conversions API: server-side copy of the browser pixel's Lead (same event_id, so Meta counts it once)
-    const metaContext = getMetaRequestContext(req, pendingUser.attribution);
-    after(() =>
-      sendMetaServerEvent({
-        eventName: "Lead",
-        eventId: `lead_${pendingId}`,
-        context: metaContext,
-        user: { email, phone, firstName: name },
-        customData: {
-          value: record.oppositionCount * funnelSettings.basePricePerOpposition,
-          currency: "INR",
-          content_name: "Legal Recovery Notice",
-          ...(pendingUser.recoveryType ? { content_category: pendingUser.recoveryType } : {}),
-        },
-      })
+    // Meta Lead fires once per phone number. Meta only merges a browser + server pair with the same
+    // event_id; repeats (Resend OTP, re-submitting the form, a recreated OTP record) would count again.
+    // Anyone already in pending_payment verified an OTP before and was counted then.
+    const leadMark = await db.collection("meta_lead_events").updateOne(
+      { phone: cleanPhone },
+      { $setOnInsert: { phone: cleanPhone, eventId: `lead_${pendingId}`, createdAt: now } },
+      { upsert: true }
     );
+    const trackLead = leadMark.upsertedCount === 1 && !existingPayment;
 
-    return NextResponse.json({ pendingId, message: "OTP sent successfully" }, { status: 200 });
+    if (trackLead) {
+      // Meta Conversions API: server-side copy of the browser pixel's Lead (same event_id, so Meta counts it once)
+      const metaContext = getMetaRequestContext(req, pendingUser.attribution);
+      after(() =>
+        sendMetaServerEvent({
+          eventName: "Lead",
+          eventId: `lead_${pendingId}`,
+          context: metaContext,
+          user: { email, phone, firstName: name },
+          customData: {
+            value: record.oppositionCount * funnelSettings.basePricePerOpposition,
+            currency: "INR",
+            content_name: "Legal Recovery Notice",
+            ...(pendingUser.recoveryType ? { content_category: pendingUser.recoveryType } : {}),
+          },
+        })
+      );
+    }
+
+    return NextResponse.json({ pendingId, trackLead, message: "OTP sent successfully" }, { status: 200 });
 
   } catch (error) {
     console.error("Send OTP Error:", error);

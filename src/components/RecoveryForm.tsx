@@ -198,18 +198,20 @@ export const RecoveryForm = ({ variant = "default" }: RecoveryFormProps) => {
         setStep(2); // Transition to OTP Verification step
         setResendCooldown(60); // 60s cooldown
 
-        // Meta Pixel: Lead — fires only once the OTP has actually been sent
-        // (not on invalid clicks, rate-limit errors, or "Resend OTP").
-        trackMetaEvent(
-          "Lead",
-          {
-            value: oppositionCount * PRICE_PER_OPPOSITION,
-            currency: "INR",
-            content_name: "Legal Recovery Notice",
-            ...(recoveryType ? { content_category: recoveryType } : {}),
-          },
-          `lead_${data.pendingId}`
-        );
+        // Meta Pixel: Lead — fires only once the OTP has actually been sent, and only for the
+        // first submission from this phone (the server decides; it sends the matching server event).
+        if (data.trackLead) {
+          trackMetaEvent(
+            "Lead",
+            {
+              value: oppositionCount * PRICE_PER_OPPOSITION,
+              currency: "INR",
+              content_name: "Legal Recovery Notice",
+              ...(recoveryType ? { content_category: recoveryType } : {}),
+            },
+            `lead_${data.pendingId}`
+          );
+        }
       } else {
         setSubmitError("Failed to initiate email verification.");
       }
