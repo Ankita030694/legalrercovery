@@ -1,4 +1,4 @@
-import { NextRequest, NextResponse } from "next/server";
+import { NextRequest, NextResponse, after } from "next/server";
 import { getDbAndBucket } from "@/lib/mongodb";
 import { sendOtpEmail } from "@/lib/email";
 import { sendWatiOtp } from "@/lib/wati";
@@ -12,6 +12,7 @@ import {
 import crypto from "crypto";
 import { normalizeRecoveryType } from "@/lib/recoveryTypes";
 import { preferAttribution, sanitizeAttribution } from "@/lib/attribution";
+import { getMetaRequestContext, sendMetaServerEvent } from "@/lib/metaCapi";
 
 export async function POST(req: NextRequest) {
   try {
@@ -153,6 +154,23 @@ export async function POST(req: NextRequest) {
         { status: 500 }
       );
     }
+
+    // Meta Conversions API: server-side copy of the browser pixel's Lead (same event_id, so Meta counts it once)
+    const metaContext = getMetaRequestContext(req, pendingUser.attribution);
+    after(() =>
+      sendMetaServerEvent({
+        eventName: "Lead",
+        eventId: `lead_${pendingId}`,
+        context: metaContext,
+        user: { email, phone, firstName: name },
+        customData: {
+          value: record.oppositionCount * funnelSettings.basePricePerOpposition,
+          currency: "INR",
+          content_name: "Legal Recovery Notice",
+          ...(pendingUser.recoveryType ? { content_category: pendingUser.recoveryType } : {}),
+        },
+      })
+    );
 
     return NextResponse.json({ pendingId, message: "OTP sent successfully" }, { status: 200 });
 

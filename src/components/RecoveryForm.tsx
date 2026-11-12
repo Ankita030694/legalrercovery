@@ -198,19 +198,17 @@ export const RecoveryForm = ({ variant = "default" }: RecoveryFormProps) => {
         setStep(2); // Transition to OTP Verification step
         setResendCooldown(60); // 60s cooldown
 
-        // Meta Pixel: AddToCart — fires only once the OTP has actually been sent
+        // Meta Pixel: Lead — fires only once the OTP has actually been sent
         // (not on invalid clicks, rate-limit errors, or "Resend OTP").
         trackMetaEvent(
-          "AddToCart",
+          "Lead",
           {
             value: oppositionCount * PRICE_PER_OPPOSITION,
             currency: "INR",
-            num_items: oppositionCount,
-            content_type: "product",
             content_name: "Legal Recovery Notice",
             ...(recoveryType ? { content_category: recoveryType } : {}),
           },
-          `atc_${data.pendingId}_${Date.now()}`
+          `lead_${data.pendingId}`
         );
       } else {
         setSubmitError("Failed to initiate email verification.");

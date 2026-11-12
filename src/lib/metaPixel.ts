@@ -3,6 +3,8 @@
  * The base pixel (init + PageView) is loaded globally by <MetaPixel /> in the root layout.
  */
 
+export const META_PIXEL_ID = "1145334704620534";
+
 type FbqFn = ((...args: unknown[]) => void) & { callMethod?: unknown };
 
 function getFbq(): FbqFn | undefined {
