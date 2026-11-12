@@ -31,7 +31,7 @@ export default function RefundDelayNoticeCTA({
                 Is a Company Illegally Holding Your Refund Beyond Statutory Deadlines?
               </h3>
               <p className="text-slate-300 text-xs sm:text-sm md:text-base leading-relaxed mb-6">
-                Our quarterly empirical data confirms that while customer care tickets stall for a median of 47 days, serving an advocate legal notice yields full refund resolution in a median of 11 days with a 79.4% pre-litigation settlement rate. Dispatched via India Post Speed Post with tracking and digital email / WhatsApp delivery under Section 63 of Bharatiya Sakshya Adhiniyam, 2023.
+                Our quarterly empirical data confirms that while customer care tickets stall for a median of 47 days, serving an advocate legal notice yields full refund resolution in a median of 11 days with a 79.4% pre-litigation settlement rate. Served by email and WhatsApp under Section 63 of Bharatiya Sakshya Adhiniyam, 2023. Speed Post is optional at ₹450 per party.
               </p>
               <div className="flex flex-col sm:flex-row sm:items-center gap-4">
                 <button
@@ -44,7 +44,7 @@ export default function RefundDelayNoticeCTA({
                 <div className="text-xs text-slate-300 flex flex-wrap sm:flex-nowrap items-center gap-2 sm:gap-3">
                   <span>✓ 24h Advocate Drafting</span>
                   <span>•</span>
-                  <span>✓ Speed Post + Digital Delivery</span>
+                  <span>✓ Email + WhatsApp</span>
                   <span>•</span>
                   <span>✓ Flat ₹{basePrice}</span>
                 </div>

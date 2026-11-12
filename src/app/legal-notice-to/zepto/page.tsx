@@ -381,7 +381,7 @@ export default function ZeptoLegalNoticePage() {
                       Have an advocate serve an enforceable legal demand notice to the registered corporate headquarters of Zepto Marketplace Private Limited in Bengaluru and Kiranakart Technologies Private Limited in Mumbai. Delivered via Registered Speed Post with postal tracking plus electronic delivery under Section 63 BSA, demanding immediate source refund plus damages for unfair trade practices.
                     </p>
                     <div className="text-xs text-slate-600 font-mono bg-red-50/50 p-2.5 rounded border border-red-100">
-                      Mode: Speed Post AD + Registered Email &bull; Notice Period: 15 Days &bull; Cost: Flat ₹{BASE_PRICE}
+                      Mode: Email + WhatsApp (Speed Post optional) &bull; Notice Period: 15 Days &bull; Cost: Flat ₹{BASE_PRICE}
                     </div>
                   </div>
                 </li>
@@ -481,7 +481,7 @@ export default function ZeptoLegalNoticePage() {
                     </tr>
                     <tr>
                       <th scope="row" className="p-3.5 font-semibold text-slate-900">Legal Notice Turnaround &amp; Fee</th>
-                      <td className="p-3.5">Drafted in 24 hours, Speed Post dispatch, flat ₹{BASE_PRICE}</td>
+                      <td className="p-3.5">Drafted in 24 hours, email + WhatsApp dispatch, flat ₹{BASE_PRICE}</td>
                       <td className="p-3.5 text-xs text-slate-600 font-mono">LegalRecovery.in Direct Funnel</td>
                     </tr>
                   </tbody>

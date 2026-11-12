@@ -83,7 +83,7 @@ export default function Section43bhNoticeCTA({ variant = 'primary' }: Section43b
             <div className="p-3.5 rounded-xl bg-white/5 border border-white/10">
               <div className="text-xs font-extrabold text-emerald-400 uppercase">Step 2: Multi-Channel Service</div>
               <p className="text-xs text-slate-300 mt-1">
-                Dispatched on advocate letterhead via Registered Speed Post, official email, and WhatsApp to the Buyer&apos;s MD, CFO &amp; Compliance Officer.
+                Sent on advocate letterhead by email and WhatsApp to the Buyer&apos;s MD, CFO &amp; Compliance Officer. Speed Post is optional at ₹450 per party.
               </p>
             </div>
             <div className="p-3.5 rounded-xl bg-white/5 border border-white/10">
@@ -107,7 +107,7 @@ export default function Section43bhNoticeCTA({ variant = 'primary' }: Section43b
                 ✓ Advocate Review &amp; Approval Before Dispatch
               </div>
               <div>
-                ✓ Includes Speed Post Tracking, Email &amp; WhatsApp Service Proof
+                ✓ Email &amp; WhatsApp Service Proof
               </div>
             </div>
           </div>

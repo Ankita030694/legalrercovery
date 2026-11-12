@@ -31,7 +31,7 @@ export default function FnfCalculatorCTA({
                 Employer Withholding or Underpaying Your FnF Settlement?
               </h3>
               <p className="text-slate-300 text-xs sm:text-sm md:text-base leading-relaxed mb-6">
-                Have a verified advocate draft and serve an official statutory legal demand notice directly to your employer, Managing Director, and HR Department. Dispatched via Registered Speed Post with postal barcode tracking and served electronically under Section 63 of the Bharatiya Sakshya Adhiniyam, 2023. Invokes Section 17(2), Section 18, and Section 54 of the Code on Wages, 2019, demanding immediate settlement of pending salary, leave encashment, gratuity, and bonus with 18% penal interest.
+                Have a verified advocate draft and serve an official statutory legal demand notice directly to your employer, Managing Director, and HR Department. Served by email and WhatsApp under Section 63 of the Bharatiya Sakshya Adhiniyam, 2023. Speed Post is optional at ₹450 per party. Invokes Section 17(2), Section 18, and Section 54 of the Code on Wages, 2019, demanding immediate settlement of pending salary, leave encashment, gratuity, and bonus with 18% penal interest.
               </p>
               <div className="flex flex-col sm:flex-row sm:items-center gap-4">
                 <button
@@ -44,7 +44,7 @@ export default function FnfCalculatorCTA({
                 <div className="text-xs text-slate-300 flex flex-wrap sm:flex-nowrap items-center gap-2 sm:gap-3">
                   <span>✓ 24h Advocate Drafting</span>
                   <span>•</span>
-                  <span>✓ Registered Speed Post + BSA Email</span>
+                  <span>✓ Email + WhatsApp</span>
                   <span>•</span>
                   <span>✓ Fixed Flat Fee ₹{basePrice}</span>
                 </div>

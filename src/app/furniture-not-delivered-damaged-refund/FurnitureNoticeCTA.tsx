@@ -31,7 +31,7 @@ export default function FurnitureNoticeCTA({
                 Furniture Damaged, Defective, or Never Delivered? Force an Immediate 100% Refund
               </h3>
               <p className="text-slate-300 text-xs sm:text-sm md:text-base leading-relaxed mb-6">
-                Have a verified advocate draft and serve an unassailable statutory legal demand notice on the furniture retailer, e-commerce marketplace, or modular kitchen contractor. Dispatched via India Post Registered Speed Post with barcoded tracking and served digitally via email and WhatsApp under Section 63 of the Bharatiya Sakshya Adhiniyam, 2023.
+                Have a verified advocate draft and serve an unassailable statutory legal demand notice on the furniture retailer, e-commerce marketplace, or modular kitchen contractor. Served by email and WhatsApp under Section 63 of the Bharatiya Sakshya Adhiniyam, 2023. Speed Post is optional at ₹450 per party.
               </p>
               <div className="flex flex-col sm:flex-row sm:items-center gap-4">
                 <button
@@ -44,7 +44,7 @@ export default function FurnitureNoticeCTA({
                 <div className="text-xs text-slate-300 flex flex-wrap sm:flex-nowrap items-center gap-2 sm:gap-3">
                   <span>✓ 24h Advocate Drafting</span>
                   <span>•</span>
-                  <span>✓ Speed Post + Digital Delivery Proof</span>
+                  <span>✓ Email + WhatsApp</span>
                   <span>•</span>
                   <span>✓ Flat ₹{basePrice}</span>
                 </div>

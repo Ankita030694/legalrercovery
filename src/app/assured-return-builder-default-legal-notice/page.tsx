@@ -329,7 +329,7 @@ export default function AssuredReturnBuilderDefaultPage() {
                   {NOTICE_PRICE_FORMATTED}
                 </div>
                 <div className="text-xs text-slate-300 font-medium leading-snug">
-                  All-inclusive advocate legal notice fee with Speed Post RPAD
+                  Flat advocate legal notice fee with email + WhatsApp service (Speed Post optional, ₹450)
                   dispatch to builder &amp; directors
                 </div>
               </div>

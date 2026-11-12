@@ -31,7 +31,7 @@ export default function LegalNoticeReplyCTA({
                 Received an Unjust or Intimidating Legal Notice? Respond Legally Before the Deadline Expires
               </h3>
               <p className="text-slate-300 text-xs sm:text-sm md:text-base leading-relaxed mb-6">
-                Never ignore a legal notice or submit an evasive reply that invites adverse inference in court. Have an experienced litigation advocate examine the notice, frame paragraph-by-paragraph denials, reserve your counter-claims, and issue a formal reply via Registered Speed Post and BSA Section 63 compliant electronic mail.
+                Never ignore a legal notice or submit an evasive reply that invites adverse inference in court. Have an experienced litigation advocate examine the notice, frame paragraph-by-paragraph denials, reserve your counter-claims, and issue a formal reply by email and WhatsApp under BSA Section 63. Speed Post is optional at ₹450 per party.
               </p>
               <div className="flex flex-col sm:flex-row sm:items-center gap-4">
                 <button
@@ -46,7 +46,7 @@ export default function LegalNoticeReplyCTA({
                   <span>•</span>
                   <span>✓ Specific Denials Drafted</span>
                   <span>•</span>
-                  <span>✓ Speed Post + Email Dispatch</span>
+                  <span>✓ Email + WhatsApp</span>
                 </div>
               </div>
             </div>

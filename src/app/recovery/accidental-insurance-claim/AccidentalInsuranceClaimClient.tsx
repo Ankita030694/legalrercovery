@@ -556,7 +556,7 @@ export default function AccidentalInsuranceClaimClient() {
                       <div>
                         <h3 className="text-base md:text-lg font-black text-slate-900 mb-2">Level 4: Formal Legal Notice</h3>
                         <p className="text-sm text-slate-650 leading-relaxed">
-                          Serve a formal legal notice through an advocate if grievances fail. We send notices by registered post and email to company directors and heads of legal. The notice demands full payment with interest within 15 days. Most insurers settle legitimate claims at this point to avoid court cases.
+                          Serve a formal legal notice through an advocate if grievances fail. We send notices by email and WhatsApp, with optional Speed Post, to company directors and heads of legal. The notice demands full payment with interest within 15 days. Most insurers settle legitimate claims at this point to avoid court cases.
                         </p>
                       </div>
                     </div>

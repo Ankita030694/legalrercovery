@@ -31,7 +31,7 @@ export default function MoneyRecoveryTimeCTA({
                 कोर्ट में साल भर का इंतज़ार न करें — 15 दिन के लीगल नोटिस से वसूली तेज़ करें
               </h3>
               <p className="text-slate-300 text-xs sm:text-sm md:text-base leading-relaxed mb-6">
-                सिविल कोर्ट में रेगुलर मनी सूट में 2 से 4 साल लग सकते हैं, जबकि 80% से अधिक मामलों में अनुभवी एडवोकेट का ड्राफ्ट किया हुआ वैधानिक लीगल नोटिस मिलते ही देनदार 15 दिनों के भीतर समझौता या भुगतान कर देता है। हमारे अधिवक्ता आपके मामले के सबूतों की जांच कर कानूनी नोटिस तैयार करते हैं और इसे स्पीड पोस्ट व डिजिटल ट्रैकिंग से भेजते हैं।
+                सिविल कोर्ट में रेगुलर मनी सूट में 2 से 4 साल लग सकते हैं, जबकि 80% से अधिक मामलों में अनुभवी एडवोकेट का ड्राफ्ट किया हुआ वैधानिक लीगल नोटिस मिलते ही देनदार 15 दिनों के भीतर समझौता या भुगतान कर देता है। हमारे अधिवक्ता आपके मामले के सबूतों की जांच कर कानूनी नोटिस तैयार करते हैं और इसे ईमेल व WhatsApp से डिजिटल ट्रैकिंग के साथ भेजते हैं। स्पीड पोस्ट वैकल्पिक है (₹450 प्रति पार्टी)।
               </p>
               <div className="flex flex-col sm:flex-row sm:items-center gap-4">
                 <button
@@ -44,7 +44,7 @@ export default function MoneyRecoveryTimeCTA({
                 <div className="text-xs text-slate-300 flex flex-wrap sm:flex-nowrap items-center gap-2 sm:gap-3">
                   <span>✓ 24 घंटे में एडवोकेट ड्राफ्टिंग</span>
                   <span>•</span>
-                  <span>✓ रजिस्टर्ड स्पीड पोस्ट + WhatsApp/Email</span>
+                  <span>✓ WhatsApp/Email तामील</span>
                   <span>•</span>
                   <span>✓ पारदर्शी शुल्क ₹{basePrice}</span>
                 </div>

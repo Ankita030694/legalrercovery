@@ -147,7 +147,7 @@ const faqJsonLd = {
       "name": "Can I send a legal notice to Meesho without hiring an expensive local lawyer?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Yes. LegalRecovery drafts advocate legal demand notices with statutory 15-day compliance terms for a flat fee of ₹999, served via Registered Speed Post and certified email to Meesho Limited in Bengaluru.",
+        "text": "Yes. LegalRecovery drafts advocate legal demand notices with statutory 15-day compliance terms for a flat fee of ₹999, served by email and WhatsApp to Meesho Limited in Bengaluru. Speed Post is optional at ₹450 per party.",
       },
     },
     {
@@ -280,7 +280,7 @@ export default function MeeshoRefundLegalNoticePage() {
                 <tr>
                   <td className="p-2.5 sm:p-3 font-semibold text-slate-900">Advocate Notice Fee</td>
                   <td className="p-2.5 sm:p-3 text-[#DC2626] font-bold">₹{BASE_PRICE} Flat Price</td>
-                  <td className="p-2.5 sm:p-3">Drafting + Speed Post + Digital Dispatch</td>
+                  <td className="p-2.5 sm:p-3">Drafting + Email &amp; WhatsApp Dispatch</td>
                 </tr>
               </tbody>
             </table>
@@ -639,7 +639,7 @@ export default function MeeshoRefundLegalNoticePage() {
               What Can and Cannot LegalRecovery Do for Your Meesho Dispute?
             </h2>
             <p className="text-slate-800 text-sm leading-relaxed font-semibold mb-2 text-justify">
-              LegalRecovery drafts advocate statutory notices served on Meesho Limited and merchants, with speed post tracking and delivery certificates. We enforce genuine consumer claims, but do not operate as debt collectors or cyber-fraud investigators.
+              LegalRecovery drafts advocate statutory notices served on Meesho Limited and merchants by email and WhatsApp, with delivery certificates and optional speed post. We enforce genuine consumer claims, but do not operate as debt collectors or cyber-fraud investigators.
             </p>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-3 my-3 text-xs sm:text-sm">
               <div className="border border-green-200 bg-green-50/50 rounded-xl p-3.5">
@@ -649,7 +649,7 @@ export default function MeeshoRefundLegalNoticePage() {
                 <ul className="text-green-950 space-y-1 list-disc pl-4 text-xs">
                   <li>Drafts 15-day demand notices on advocate letterhead under CPA 2019.</li>
                   <li>Verifies corporate registered office coordinates for Meesho Limited.</li>
-                  <li>Dispatches notices via Registered Speed Post with tracking and email.</li>
+                  <li>Dispatches notices by email and WhatsApp, with optional Speed Post (₹450 per party).</li>
                   <li>Provides Section 63 BSA electronic evidence delivery certificates.</li>
                   <li>Maintains flat ₹{BASE_PRICE} pricing with zero hidden legal fees.</li>
                 </ul>
@@ -731,7 +731,7 @@ export default function MeeshoRefundLegalNoticePage() {
                   Can I send a legal notice to Meesho without hiring an expensive local lawyer?
                 </h3>
                 <p className="text-slate-700 leading-relaxed text-justify">
-                  Yes. LegalRecovery drafts advocate legal demand notices with statutory 15-day compliance terms for a flat fee of ₹{BASE_PRICE}, served via Registered Speed Post and certified email to Meesho Limited in Bengaluru.
+                  Yes. LegalRecovery drafts advocate legal demand notices with statutory 15-day compliance terms for a flat fee of ₹{BASE_PRICE}, served by email and WhatsApp to Meesho Limited in Bengaluru. Speed Post is optional at ₹450 per party.
                 </p>
               </div>
 

@@ -238,7 +238,7 @@ export default function NoBrokerTableOfContents({
                 Advocate Notice Fee
               </dt>
               <dd className="text-amber-400 font-extrabold mt-0.5">
-                Flat ₹{basePrice} (Speed Post + Email)
+                Flat ₹{basePrice} (Email + WhatsApp)
               </dd>
             </div>
           </dl>

@@ -998,7 +998,7 @@ export default function DgcaAirTicketRefundRules2026Page() {
                 <ul className="text-xs sm:text-sm text-emerald-900 space-y-2">
                   <li>• Drafts and serves comprehensive Advocate Statutory Demand Notices under DGCA CAR and CPA 2019.</li>
                   <li>• Issues formal joint demand to both the airline and the ticketing OTA simultaneously.</li>
-                  <li>• Dispatches notices via registered Speed Post with digital tracking and statutory email delivery.</li>
+                  <li>• Dispatches notices by email and WhatsApp with digital tracking (Speed Post optional at ₹450 per party).</li>
                   <li>• Provides pre-litigation documentation ready for immediate escalation to e-Jagriti consumer courts.</li>
                   <li>• Enforces flat transparent pricing at ₹{BASE_PRICE} per opposition notice.</li>
                 </ul>

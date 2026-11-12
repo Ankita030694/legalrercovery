@@ -386,7 +386,7 @@ export default function EventConcertTicketRefundPage() {
                       <tr className="hover:bg-slate-50">
                         <td className="p-3 font-semibold text-slate-900">Legal Notice Pricing</td>
                         <td className="p-3 text-rose-700 font-medium">Transparent Flat Fee Model</td>
-                        <td className="p-3">₹999 flat advocate drafting, legal verification, Speed Post tracking, and digital service.</td>
+                        <td className="p-3">₹999 flat advocate drafting, legal verification, and email and WhatsApp service. Speed Post optional at ₹450.</td>
                       </tr>
                     </tbody>
                   </table>

@@ -499,7 +499,7 @@ export default function SalaryRecoveryClient() {
                       <h4 className="font-extrabold text-[#111827] text-sm">Stage 1: Advocate Demand Notice</h4>
                     </div>
                     <p className="text-xs text-[#4B5563] leading-relaxed">
-                      We issue a formal legal notice on an advocate letterhead. We serve it via email, WhatsApp, and registered speed post with a 15-day deadline.
+                      We issue a formal legal notice on an advocate letterhead. We serve it via email and WhatsApp, with optional speed post, with a 15-day deadline.
                     </p>
                   </div>
 

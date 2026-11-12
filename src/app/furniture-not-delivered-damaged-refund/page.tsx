@@ -943,7 +943,7 @@ export default function FurnitureRefundPage() {
                 </div>
 
                 <div className="p-4 bg-slate-100 rounded-xl text-xs text-slate-600 leading-relaxed">
-                  <strong>Platform Scope &amp; Honest Limitations: </strong>LegalRecovery provides advocate drafting, postal dispatch, digital BSA 63 transmission, and consumer forum documentation. We do not provide physical carpenter repairs or pursue unverified cash-only transactions devoid of tax receipts. For disputes involving property utility damage during fit-out, review our{" "}
+                  <strong>Platform Scope &amp; Honest Limitations: </strong>LegalRecovery provides advocate drafting, digital BSA 63 transmission by email and WhatsApp, optional Speed Post, and consumer forum documentation. We do not provide physical carpenter repairs or pursue unverified cash-only transactions devoid of tax receipts. For disputes involving property utility damage during fit-out, review our{" "}
                   <Link
                     href="/templates/wrong-electricity-bill-complaint-application"
                     className="font-bold text-red-600 hover:underline"

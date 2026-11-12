@@ -44,7 +44,7 @@ export default function CommercialLeaseNoticeCTA({
                 <div className="text-xs text-slate-300 flex flex-wrap sm:flex-nowrap items-center gap-2 sm:gap-3">
                   <span>✓ 24h Senior Advocate Drafting</span>
                   <span>•</span>
-                  <span>✓ Registered Speed Post + Digital Service</span>
+                  <span>✓ Email + WhatsApp</span>
                   <span>•</span>
                   <span>✓ Flat ₹{basePrice}</span>
                 </div>

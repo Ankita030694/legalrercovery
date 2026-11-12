@@ -31,7 +31,7 @@ export default function MsmeDemandNoticeCTA({
                 Buyer Ignoring Your Payment Reminders? Serve an Official Advocate MSME Legal Notice
               </h3>
               <p className="text-slate-300 text-xs sm:text-sm md:text-base leading-relaxed mb-6">
-                Have a verified commercial recovery advocate compute your exact Section 16 monthly compound interest schedule (3× RBI Bank Rate), cite Section 43B(h) Income-tax disallowance, and serve a formal 15-day statutory demand notice on the buyer&apos;s Managing Director and CFO via Registered Speed Post (RPAD) and Section 63 BSA electronic mail.
+                Have a verified commercial recovery advocate compute your exact Section 16 monthly compound interest schedule (3× RBI Bank Rate), cite Section 43B(h) Income-tax disallowance, and serve a formal 15-day statutory demand notice on the buyer&apos;s Managing Director and CFO by email and WhatsApp under Section 63 BSA. Speed Post is optional at ₹450 per party.
               </p>
               <div className="flex flex-col sm:flex-row sm:items-center gap-4">
                 <button
@@ -44,7 +44,7 @@ export default function MsmeDemandNoticeCTA({
                 <div className="text-xs text-slate-300 flex flex-wrap sm:flex-nowrap items-center gap-2 sm:gap-3">
                   <span>✓ Section 16 Interest Sheet</span>
                   <span>•</span>
-                  <span>✓ Speed Post + Email</span>
+                  <span>✓ Email + WhatsApp</span>
                   <span>•</span>
                   <span>✓ Flat ₹{basePrice}</span>
                 </div>

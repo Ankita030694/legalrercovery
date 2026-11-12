@@ -31,7 +31,7 @@ export default function SalaryFnFReportCTA({
                 Recover Unpaid Salary, FnF Settlement &amp; Gratuity From Your Employer
               </h3>
               <p className="text-slate-300 text-xs sm:text-sm md:text-base leading-relaxed mb-6">
-                Have an advocate draft and serve a formal statutory demand notice to your employer&apos;s managing director and HR leadership. Invokes Section 17(2) of the Code on Wages (mandatory 2-day settlement rule), Section 18 deductions ceiling, and Section 7(3A) of the Gratuity Act with penal interest. Dispatched via Registered Speed Post with tracking and digitally served with electronic delivery audit.
+                Have an advocate draft and serve a formal statutory demand notice to your employer&apos;s managing director and HR leadership. Invokes Section 17(2) of the Code on Wages (mandatory 2-day settlement rule), Section 18 deductions ceiling, and Section 7(3A) of the Gratuity Act with penal interest. Served by email and WhatsApp with an electronic delivery audit. Speed Post is optional at ₹450 per party.
               </p>
               <div className="flex flex-col sm:flex-row sm:items-center gap-4">
                 <button
@@ -44,7 +44,7 @@ export default function SalaryFnFReportCTA({
                 <div className="text-xs text-slate-300 flex flex-wrap sm:flex-nowrap items-center gap-2 sm:gap-3">
                   <span>✓ 24h Advocate Drafting</span>
                   <span>•</span>
-                  <span>✓ Speed Post + Email / WhatsApp</span>
+                  <span>✓ Email + WhatsApp</span>
                   <span>•</span>
                   <span>✓ Flat ₹{basePrice}</span>
                 </div>

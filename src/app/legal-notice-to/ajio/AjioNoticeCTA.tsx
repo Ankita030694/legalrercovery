@@ -31,7 +31,7 @@ export default function AjioNoticeCTA({
                 Recover Your Stuck AJIO Refund or Settle Return Rejection Legally
               </h3>
               <p className="text-slate-300 text-sm sm:text-base leading-relaxed mb-6">
-                Have an advocate draft and serve a formal statutory legal demand notice directly to Reliance Retail Limited (operating AJIO) and the registered merchant. Delivered with postal tracking via Registered Speed Post and digitally delivered with Section 63 BSA electronic evidence compliance.
+                Have an advocate draft and serve a formal statutory legal demand notice directly to Reliance Retail Limited (operating AJIO) and the registered merchant. Served by email and WhatsApp under Section 63 BSA. Speed Post is optional at ₹450 per party.
               </p>
               <div className="flex flex-col sm:flex-row sm:items-center gap-4">
                 <button
@@ -44,7 +44,7 @@ export default function AjioNoticeCTA({
                 <div className="text-xs text-slate-400 flex flex-col sm:flex-row sm:items-center gap-1 sm:gap-3">
                   <span>✓ 24-Hour Advocate Drafting</span>
                   <span className="hidden sm:inline">•</span>
-                  <span>✓ Speed Post + Email Dispatch</span>
+                  <span>✓ Email + WhatsApp</span>
                   <span className="hidden sm:inline">•</span>
                   <span>✓ Flat ₹{basePrice} Transparent Fee</span>
                 </div>

@@ -564,7 +564,7 @@ export default function NykaaDisputePage() {
                       LegalRecovery Advocate Drafting & Service
                     </td>
                     <td className="px-5 py-3.5 font-bold text-red-700">
-                      Flat ₹{BASE_PRICE} (includes Speed Post + digital service)
+                      Flat ₹{BASE_PRICE} (email + WhatsApp service; Speed Post optional)
                     </td>
                   </tr>
                 </tbody>

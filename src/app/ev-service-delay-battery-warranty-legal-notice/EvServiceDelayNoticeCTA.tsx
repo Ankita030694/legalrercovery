@@ -31,7 +31,7 @@ export default function EvServiceDelayNoticeCTA({
                 EV Scooter Stuck at Service Centre or Battery Warranty Denied?
               </h3>
               <p className="text-slate-300 text-xs sm:text-sm md:text-base leading-relaxed mb-6">
-                Have a consumer advocate draft and serve an unassailable statutory legal notice directly to the EV manufacturer (OEM) and authorized service centre under Sections 2(10), 2(11), and Chapter VI Product Liability of the Consumer Protection Act, 2019. Sent via Registered Speed Post with tracking and digital service under Section 63 BSA 2023.
+                Have a consumer advocate draft and serve an unassailable statutory legal notice directly to the EV manufacturer (OEM) and authorized service centre under Sections 2(10), 2(11), and Chapter VI Product Liability of the Consumer Protection Act, 2019. Served by email and WhatsApp under Section 63 BSA 2023. Speed Post is optional at ₹450 per party.
               </p>
               <div className="flex flex-col sm:flex-row sm:items-center gap-4">
                 <button
@@ -44,7 +44,7 @@ export default function EvServiceDelayNoticeCTA({
                 <div className="text-xs text-slate-300 flex flex-wrap sm:flex-nowrap items-center gap-2 sm:gap-3">
                   <span>✓ 24h Advocate Drafting</span>
                   <span>•</span>
-                  <span>✓ Speed Post + Email / WhatsApp</span>
+                  <span>✓ Email + WhatsApp</span>
                   <span>•</span>
                   <span>✓ Flat ₹{basePrice}</span>
                 </div>

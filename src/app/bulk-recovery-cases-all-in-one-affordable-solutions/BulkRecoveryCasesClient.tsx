@@ -965,7 +965,7 @@ export default function BulkRecoveryCasesClient() {
                 </span>
                 <h3 className="text-sm font-black mb-2 text-white">Start Bulk Notice Intake</h3>
                 <p className="text-gray-400 mb-5 text-[11px] leading-relaxed">
-                  Upload your delinquent debtor ledger. Our panel advocates handle batch legal notice drafting, postal dispatch via India Post RPAD, and tracking.
+                  Upload your delinquent debtor ledger. Our panel advocates handle batch legal notice drafting, email and WhatsApp dispatch (India Post Speed Post optional), and tracking.
                 </p>
                 <button
                   onClick={() => setIsPaymentModalOpen(true)}
@@ -1058,7 +1058,7 @@ export default function BulkRecoveryCasesClient() {
                   Send a Legal Notice Online
                 </h3>
                 <p className="text-xs text-slate-500 line-clamp-2">
-                  Explore our full suite of advocate-drafted legal notice services, physical speed post dispatch, and digital tracking for businesses.
+                  Explore our full suite of advocate-drafted legal notice services, optional speed post dispatch, and digital tracking for businesses.
                 </p>
               </Link>
               <Link

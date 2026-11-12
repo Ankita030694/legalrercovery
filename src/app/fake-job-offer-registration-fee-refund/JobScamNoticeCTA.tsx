@@ -31,7 +31,7 @@ export default function JobScamNoticeCTA({
                 Recover Registration Fees Paid to a Fake Placement Agency or Bogus Recruiter
               </h3>
               <p className="text-slate-300 text-xs sm:text-sm md:text-base leading-relaxed mb-6">
-                If you paid a registration fee, interview security deposit, or verification charge to a traceable placement consultancy or business entity that promised employment and vanished, have an advocate issue a formal 15-day statutory demand notice. Served via Registered Speed Post with tracking and digital delivery under Section 63 of Bharatiya Sakshya Adhiniyam, 2023.
+                If you paid a registration fee, interview security deposit, or verification charge to a traceable placement consultancy or business entity that promised employment and vanished, have an advocate issue a formal 15-day statutory demand notice. Served by email and WhatsApp under Section 63 of Bharatiya Sakshya Adhiniyam, 2023. Speed Post is optional at ₹450 per party.
               </p>
               <div className="flex flex-col sm:flex-row sm:items-center gap-4">
                 <button
@@ -44,7 +44,7 @@ export default function JobScamNoticeCTA({
                 <div className="text-xs text-slate-300 flex flex-wrap sm:flex-nowrap items-center gap-2 sm:gap-3">
                   <span>✓ 24h Advocate Drafting</span>
                   <span>•</span>
-                  <span>✓ Speed Post + Email / WhatsApp</span>
+                  <span>✓ Email + WhatsApp</span>
                   <span>•</span>
                   <span>✓ Flat ₹{basePrice}</span>
                 </div>

@@ -135,7 +135,7 @@ const FAQS = [
   {
     question: "What are the legal notice reply charges if drafted by an advocate?",
     answer:
-      "Standard legal notice reply charges in India generally range from ₹3,000 to ₹15,000 depending on the complexity of the dispute, advocate seniority, and required annexures. On LegalRecovery.in, verified litigation advocates review the notice, draft paragraph-by-paragraph specific denials under Order VIII Rule 5 CPC, and dispatch the response via Registered Speed Post and BSA Section 63 compliant electronic transmission for a transparent, flat fee of ₹999.",
+      "Standard legal notice reply charges in India generally range from ₹3,000 to ₹15,000 depending on the complexity of the dispute, advocate seniority, and required annexures. On LegalRecovery.in, verified litigation advocates review the notice, draft paragraph-by-paragraph specific denials under Order VIII Rule 5 CPC, and dispatch the response by email and WhatsApp under BSA Section 63 for a transparent, flat fee of ₹999. Speed Post is optional at ₹450 per party.",
   },
   {
     question: "What happens if I ignore a legal notice and do not send a reply?",

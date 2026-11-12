@@ -799,7 +799,7 @@ export default function ZomatoRefundNotRecievedClient() {
                 <div className="absolute top-0 right-0 w-24 h-24 bg-red-600/10 rounded-full blur-xl pointer-events-none" />
                 <h3 className="text-sm font-black mb-3">Recover Your Zomato Refund</h3>
                 <p className="text-gray-400 mb-5 text-[11px] leading-relaxed">
-                  We assign a specialized consumer panel advocate to custom draft your legal notice, dispatch it via India Post RPAD to Zomato&rsquo;s corporate headquarters, and track delivery in real time.
+                  We assign a specialized consumer panel advocate to custom draft your legal notice, dispatch it by email and WhatsApp to Zomato&rsquo;s corporate headquarters (India Post Speed Post optional), and track delivery in real time.
                 </p>
                 <button
                   onClick={() => setIsPaymentModalOpen(true)}

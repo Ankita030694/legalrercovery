@@ -140,7 +140,7 @@ const reviewSchema = {
         "@type": "Person",
         "name": "Karan Johar"
       },
-      "reviewBody": "Using this online platform to recover my unpaid salary was incredibly smooth. The flat-fee pricing of ₹999 was transparent, and the draft was ready in 24 hours. The employer paid within a week of getting the speed post notice."
+      "reviewBody": "Using this online platform to recover my unpaid salary was incredibly smooth. The flat-fee pricing of ₹999 was transparent, and the draft was ready in 24 hours. The employer paid within a week of getting the notice."
     },
     {
       "@type": "Review",
@@ -619,10 +619,10 @@ export default function FreelancerNoticeClient() {
                         <strong>Corporate Due Diligence:</strong> For corporate clients, we search the ROC database to locate the active registered office and identify active directors. We dispatch separate physical notices to the registered office and the directors&apos; personal residences to prevent them from hiding behind the corporate entity.
                       </li>
                       <li>
-                        <strong>Airtight Dual Service:</strong> We dispatch notices physically via Registered Speed Post and digitally via email/WhatsApp. We provide verified SMTP delivery logs and prepare the required Section 63 BSA certificate for court admissibility.
+                        <strong>Airtight Dual Service:</strong> We dispatch notices digitally via email/WhatsApp, with optional Registered Speed Post at ₹450 per party. We provide verified SMTP delivery logs and prepare the required Section 63 BSA certificate for court admissibility.
                       </li>
                       <li>
-                        <strong>Live Tracking Dashboard:</strong> Track the drafting progress, post dispatch receipts, and postal delivery status in real-time from your secure client dashboard.
+                        <strong>Live Tracking Dashboard:</strong> Track the drafting progress, dispatch receipts, and delivery status in real-time from your secure client dashboard.
                       </li>
                       <li>
                         <strong>Transparent Flat Pricing:</strong> No retention fees, no hourly consultation charges. You pay a single flat fee of ₹999 per opposing party for the entire notice drafting and dispatch pipeline.
@@ -642,7 +642,7 @@ export default function FreelancerNoticeClient() {
                   <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                     <div className="p-6 bg-slate-50 rounded-2xl border border-slate-100">
                       <p className="text-sm text-slate-700 italic mb-4">
-                        &quot;Using this online platform to recover my unpaid salary was incredibly smooth. The flat-fee pricing of ₹999 was transparent, and the draft was ready in 24 hours. The employer paid within a week of getting the speed post notice.&quot;
+                        &quot;Using this online platform to recover my unpaid salary was incredibly smooth. The flat-fee pricing of ₹999 was transparent, and the draft was ready in 24 hours. The employer paid within a week of getting the notice.&quot;
                       </p>
                       <h4 className="font-extrabold text-xs text-slate-900">— Karan Johar (Gurugram)</h4>
                     </div>

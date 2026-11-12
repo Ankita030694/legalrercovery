@@ -31,7 +31,7 @@ export default function SwiggyNoticeCTA({
             </span>
           </div>
           <p className="text-[11px] text-slate-300 leading-relaxed mb-4">
-            Dispatched in 24 hours. Includes drafting by an enrolled advocate, formal service to Swiggy Limited via Registered Speed Post with postal tracking, and digital escalation.
+            Dispatched in 24 hours. Includes drafting by an enrolled advocate, formal service to Swiggy Limited by email and WhatsApp with tracking, and digital escalation. Speed Post is optional at ₹450 per party.
           </p>
           <button
             type="button"
@@ -79,7 +79,7 @@ export default function SwiggyNoticeCTA({
               </button>
               <div className="text-xs text-slate-400 font-medium sm:pl-2">
                 <span className="block text-slate-200 font-bold">Flat ₹{basePrice} • No Hidden Commissions</span>
-                <span>Dispatched within 24 hours via Speed Post & Email</span>
+                <span>Dispatched within 24 hours via Email & WhatsApp</span>
               </div>
             </div>
           </div>

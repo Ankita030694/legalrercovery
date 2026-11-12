@@ -31,7 +31,7 @@ export default function BikeScooterNoticeCTA({
                 Recover Your Cancelled Bike or EV Scooter Advance with Statutory Interest
               </h3>
               <p className="text-slate-300 text-xs sm:text-sm md:text-base leading-relaxed mb-6">
-                Have a verified advocate draft and serve an unassailable statutory legal notice directly to the dealership principal and automotive OEM (Royal Enfield, Ola Electric, Ather, Honda, TVS, etc.). Sent via Registered Speed Post with tracking and served digitally under Section 63 of the Bharatiya Sakshya Adhiniyam, 2023.
+                Have a verified advocate draft and serve an unassailable statutory legal notice directly to the dealership principal and automotive OEM (Royal Enfield, Ola Electric, Ather, Honda, TVS, etc.). Served by email and WhatsApp under Section 63 of the Bharatiya Sakshya Adhiniyam, 2023. Speed Post is optional at ₹450 per party.
               </p>
               <div className="flex flex-col sm:flex-row sm:items-center gap-4">
                 <button
@@ -44,7 +44,7 @@ export default function BikeScooterNoticeCTA({
                 <div className="text-xs text-slate-300 flex flex-wrap sm:flex-nowrap items-center gap-2 sm:gap-3">
                   <span>✓ 24h Advocate Drafting</span>
                   <span>•</span>
-                  <span>✓ Speed Post + Email / WhatsApp</span>
+                  <span>✓ Email + WhatsApp</span>
                   <span>•</span>
                   <span>✓ Flat ₹{basePrice}</span>
                 </div>

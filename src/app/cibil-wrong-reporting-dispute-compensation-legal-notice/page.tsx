@@ -375,7 +375,7 @@ export default function CibilDisputeCompensationPage() {
                       <tr>
                         <th className="py-2.5 pr-4 font-bold text-slate-700">Legal Notice Drafting Cost</th>
                         <td className="py-2.5 text-slate-800 font-semibold text-red-600">
-                          Flat ₹999 all-inclusive (Advocate drafted, served via Registered Speed Post + Email)
+                          Flat ₹999 (Advocate drafted, served by Email + WhatsApp; Speed Post optional at ₹450)
                         </td>
                       </tr>
                     </tbody>

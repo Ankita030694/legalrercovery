@@ -44,7 +44,7 @@ export default function EcommerceNoticeCTA({
                 <div className="text-xs text-slate-400 flex flex-col sm:flex-row sm:items-center gap-1 sm:gap-3">
                   <span>✓ Advocate-Drafted Notice</span>
                   <span className="hidden sm:inline">•</span>
-                  <span>✓ Speed Post & Email Dispatch</span>
+                  <span>✓ Email + WhatsApp</span>
                   <span className="hidden sm:inline">•</span>
                   <span>✓ Flat ₹{basePrice} Transparent Fee</span>
                 </div>

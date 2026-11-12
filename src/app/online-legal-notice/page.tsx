@@ -3,7 +3,7 @@ import OnlineLegalNoticeClient from "./OnlineLegalNoticeClient";
 
 export const metadata: Metadata = {
   title: "Send Legal Notice Online in India: Advocate Drafting",
-  description: "Send an advocate-drafted online legal notice in India via Speed Post, WhatsApp, and email under Section 63 BSA. Fast dispatch with fixed ₹999 fee.",
+  description: "Send an advocate-drafted online legal notice in India via WhatsApp and email under Section 63 BSA, with optional Speed Post. Fixed ₹999 fee.",
   keywords: [
     "online legal notice",
     "send legal notice online",

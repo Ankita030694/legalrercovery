@@ -758,7 +758,7 @@ export default function SecurityDepositClient() {
                     </p>
                     <ul className="list-disc pl-6 space-y-3 text-sm text-slate-650">
                       <li><strong>Experienced Panel Advocates:</strong> Senior employment lawyers draft every notice with precise statutory citations.</li>
-                      <li><strong>Multi-Channel Dispatch:</strong> We send speed post notices to company headquarters and directors&apos; residential addresses.</li>
+                      <li><strong>Multi-Channel Dispatch:</strong> We send notices by email and WhatsApp to company headquarters and directors, with optional Speed Post (₹450 per party) to their office and residential addresses.</li>
                       <li><strong>Live Tracking:</strong> Monitor drafting progress and post office tracking directly on your client dashboard.</li>
                       <li><strong>Transparent Flat Fees:</strong> Clear flat fees with no hidden costs or surprising hourly bills.</li>
                     </ul>

@@ -127,7 +127,7 @@ const FAQS = [
   {
     question: "BigBasket se kharab saman ya refund na milne par legal notice kaise bheje aur kitna kharcha lagta hai?",
     answer:
-      "Agar BigBasket kharab saman ya atke refund ka paisa na de, toh aap advocate notice bhej sakte hain. LegalRecovery.in par verified advocates ₹999 mein notice draft karke Speed Post aur email se bhejte hain, jismein 15 din ka payment time diya jata hai.",
+      "Agar BigBasket kharab saman ya atke refund ka paisa na de, toh aap advocate notice bhej sakte hain. LegalRecovery.in par verified advocates ₹999 mein notice draft karke email aur WhatsApp se bhejte hain (Speed Post optional, ₹450 per party), jismein 15 din ka payment time diya jata hai.",
   },
 ];
 
@@ -352,7 +352,7 @@ export default function BigBasketRefundLegalNoticePage() {
                   </tr>
                   <tr className="hover:bg-slate-50/60">
                     <td className="p-3 sm:p-4 font-bold text-slate-900">LegalRecovery Notice Service</td>
-                    <td className="p-3 sm:p-4 font-bold text-[#DC2626]">₹999 (Flat fixed fee, Speed Post + Email)</td>
+                    <td className="p-3 sm:p-4 font-bold text-[#DC2626]">₹999 (Flat fixed fee, Email + WhatsApp; Speed Post optional)</td>
                     <td className="p-3 sm:p-4">Dispatched within 24 hours by verified consumer advocates</td>
                   </tr>
                 </tbody>

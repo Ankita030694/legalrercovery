@@ -31,7 +31,7 @@ export default function AmazonNoticeCTA({
                 Recover Your Stuck Amazon Refund or Settle Wrong Item Delivery
               </h3>
               <p className="text-slate-300 text-sm sm:text-base leading-relaxed mb-6">
-                Have an advocate draft and serve an official legal demand notice directly to Amazon Seller Services Private Limited and the registered merchant. Dispatched via Registered Speed Post with tracking and Email with Section 63 BSA digital evidence compliance.
+                Have an advocate draft and serve an official legal demand notice directly to Amazon Seller Services Private Limited and the registered merchant. Served by email and WhatsApp under Section 63 BSA. Speed Post is optional at ₹450 per party.
               </p>
               <div className="flex flex-col sm:flex-row sm:items-center gap-4">
                 <button
@@ -44,7 +44,7 @@ export default function AmazonNoticeCTA({
                 <div className="text-xs text-slate-400 flex flex-col sm:flex-row sm:items-center gap-1 sm:gap-3">
                   <span>✓ 24-Hour Advocate Drafting</span>
                   <span className="hidden sm:inline">•</span>
-                  <span>✓ Speed Post + Email Dispatch</span>
+                  <span>✓ Email + WhatsApp</span>
                   <span className="hidden sm:inline">•</span>
                   <span>✓ Flat ₹{basePrice} Transparent Pricing</span>
                 </div>

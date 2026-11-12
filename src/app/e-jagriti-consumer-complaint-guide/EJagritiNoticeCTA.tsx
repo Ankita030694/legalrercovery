@@ -31,7 +31,7 @@ export default function EJagritiNoticeCTA({
                 Serve a 15-Day Advocate Legal Notice Before Approaching the Consumer Commission
               </h3>
               <p className="text-slate-300 text-xs sm:text-sm md:text-base leading-relaxed mb-6">
-                Under Section 2(11) and Section 35 of the Consumer Protection Act, 2019, consumer forums heavily weigh whether the opposite party was served a clear demand letter before court intervention. Over 78% of commercial and service disputes settle during this statutory 15-day window without needing commission hearings. Have an advocate draft and dispatch your formal legal demand on letterhead via Speed Post and electronic mail.
+                Under Section 2(11) and Section 35 of the Consumer Protection Act, 2019, consumer forums heavily weigh whether the opposite party was served a clear demand letter before court intervention. Over 78% of commercial and service disputes settle during this statutory 15-day window without needing commission hearings. Have an advocate draft and dispatch your formal legal demand on letterhead by email and WhatsApp. Speed Post is optional at ₹450 per party.
               </p>
               <div className="flex flex-col sm:flex-row sm:items-center gap-4">
                 <button
@@ -44,7 +44,7 @@ export default function EJagritiNoticeCTA({
                 <div className="text-xs text-slate-300 flex flex-wrap sm:flex-nowrap items-center gap-2 sm:gap-3">
                   <span>✓ Advocate-Drafted within 24h</span>
                   <span>•</span>
-                  <span>✓ Speed Post + Section 63 BSA Electronic Delivery</span>
+                  <span>✓ Email + WhatsApp</span>
                   <span>•</span>
                   <span>✓ Flat ₹{basePrice}</span>
                 </div>

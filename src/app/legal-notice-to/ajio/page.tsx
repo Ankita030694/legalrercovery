@@ -834,7 +834,7 @@ export default function AjioLegalNoticePage() {
                       Dispatched within 24 hours
                     </td>
                     <td className="p-3.5 sm:p-4 text-xs font-semibold text-[#DC2626]">
-                      Flat ₹999 inclusive of advocate drafting &amp; Speed Post
+                      Flat ₹999 incl. advocate drafting, email &amp; WhatsApp (Speed Post optional, ₹450)
                     </td>
                   </tr>
                 </tbody>

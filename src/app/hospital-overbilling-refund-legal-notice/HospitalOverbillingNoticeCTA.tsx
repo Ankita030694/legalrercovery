@@ -31,7 +31,7 @@ export default function HospitalOverbillingNoticeCTA({
                 Overcharged on Hospital Inpatient Bills, Consumables, or Package Rates?
               </h3>
               <p className="text-slate-300 text-xs sm:text-sm md:text-base leading-relaxed mb-6">
-                Have a verified advocate draft and serve an unassailable legal notice for refund of inflated hospital charges, unbundled consumables, unauthorized ICU markups, or dual-MRP billing under Section 2(11) and 2(47) of the Consumer Protection Act, 2019. Dispatched via Registered Speed Post and tracked with digital audit trails.
+                Have a verified advocate draft and serve an unassailable legal notice for refund of inflated hospital charges, unbundled consumables, unauthorized ICU markups, or dual-MRP billing under Section 2(11) and 2(47) of the Consumer Protection Act, 2019. Served by email and WhatsApp and tracked with digital audit trails. Speed Post is optional at ₹450 per party.
               </p>
               <div className="flex flex-col sm:flex-row sm:items-center gap-4">
                 <button
@@ -44,7 +44,7 @@ export default function HospitalOverbillingNoticeCTA({
                 <div className="text-xs text-slate-300 flex flex-wrap sm:flex-nowrap items-center gap-2 sm:gap-3">
                   <span>✓ 24h Advocate Drafting</span>
                   <span>•</span>
-                  <span>✓ Speed Post + Email Copy</span>
+                  <span>✓ Email + WhatsApp</span>
                   <span>•</span>
                   <span>✓ Flat ₹{basePrice}</span>
                 </div>

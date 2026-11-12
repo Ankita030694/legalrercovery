@@ -31,7 +31,7 @@ export default function StudyAbroadNoticeCTA({
                 Recover Stuck Fees from Overseas Education Agents &amp; Study Visa Consultants
               </h3>
               <p className="text-slate-300 text-xs sm:text-sm md:text-base leading-relaxed mb-6">
-                Have an advocate draft and serve a formal demand notice citing Consumer Protection Act Section 2(11) (deficiency in service), Section 2(47) (unfair trade practices), and Section 47 (unfair contracts). Dispatched via Registered Speed Post with postal tracking and electronically served via email and WhatsApp under Section 63 of Bharatiya Sakshya Adhiniyam, 2023.
+                Have an advocate draft and serve a formal demand notice citing Consumer Protection Act Section 2(11) (deficiency in service), Section 2(47) (unfair trade practices), and Section 47 (unfair contracts). Served by email and WhatsApp under Section 63 of Bharatiya Sakshya Adhiniyam, 2023. Speed Post is optional at ₹450 per party.
               </p>
               <div className="flex flex-col sm:flex-row sm:items-center gap-4">
                 <button
@@ -44,7 +44,7 @@ export default function StudyAbroadNoticeCTA({
                 <div className="text-xs text-slate-300 flex flex-wrap sm:flex-nowrap items-center gap-2 sm:gap-3">
                   <span>✓ 24h Advocate Drafting</span>
                   <span>•</span>
-                  <span>✓ Speed Post + Email / WhatsApp</span>
+                  <span>✓ Email + WhatsApp</span>
                   <span>•</span>
                   <span>✓ Flat ₹{basePrice}</span>
                 </div>

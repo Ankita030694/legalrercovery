@@ -31,7 +31,7 @@ export default function ModelTenancyNoticeCTA({
                 Landlord Withholding Your Security Deposit or Making Illegal Painting Deductions?
               </h3>
               <p className="text-slate-300 text-xs sm:text-sm md:text-base leading-relaxed mb-6">
-                Have a verified advocate draft and dispatch a formal 15-day statutory demand notice to your landlord, property manager, or PG/co-living operator. We cite the exact applicable law for your city—whether Section 11 of the State Tenancy Act (in adopted states like UP, Tamil Nadu, AP &amp; Assam) or Section 108 of the Transfer of Property Act and Section 73/74 of the Indian Contract Act (in Bengaluru, Mumbai, Pune, Delhi &amp; Gurugram)—served via Registered Speed Post and Section 63 BSA electronic delivery.
+                Have a verified advocate draft and dispatch a formal 15-day statutory demand notice to your landlord, property manager, or PG/co-living operator. We cite the exact applicable law for your city—whether Section 11 of the State Tenancy Act (in adopted states like UP, Tamil Nadu, AP &amp; Assam) or Section 108 of the Transfer of Property Act and Section 73/74 of the Indian Contract Act (in Bengaluru, Mumbai, Pune, Delhi &amp; Gurugram)—served by email and WhatsApp under Section 63 BSA. Speed Post is optional at ₹450 per party.
               </p>
               <div className="flex flex-col sm:flex-row sm:items-center gap-4">
                 <button
@@ -44,7 +44,7 @@ export default function ModelTenancyNoticeCTA({
                 <div className="text-xs text-slate-300 flex flex-wrap sm:flex-nowrap items-center gap-2 sm:gap-3">
                   <span>✓ 24h Advocate Drafting</span>
                   <span>•</span>
-                  <span>✓ Speed Post + Email/WhatsApp</span>
+                  <span>✓ Email + WhatsApp</span>
                   <span>•</span>
                   <span>✓ Flat ₹{basePrice}</span>
                 </div>

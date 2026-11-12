@@ -31,7 +31,7 @@ export default function LimitationNoticeCTA({
                 Serve a Formal Legal Demand Notice Before Your Claim Becomes Time-Barred
               </h3>
               <p className="text-slate-300 text-xs sm:text-sm md:text-base leading-relaxed mb-6">
-                Under Section 3 of the Limitation Act, 1963, courts are mandated to dismiss time-barred claims even if the debtor never raises the objection. Serving a verified advocate legal notice puts the borrower or vendor on formal statutory notice, often triggers a written reply acknowledging debt under Section 18, and creates an official paper trail for court or Lok Adalat. Sent via Registered Speed Post and tracked digital delivery under Section 63 of the Bharatiya Sakshya Adhiniyam, 2023.
+                Under Section 3 of the Limitation Act, 1963, courts are mandated to dismiss time-barred claims even if the debtor never raises the objection. Serving a verified advocate legal notice puts the borrower or vendor on formal statutory notice, often triggers a written reply acknowledging debt under Section 18, and creates an official paper trail for court or Lok Adalat. Served by email and WhatsApp under Section 63 of the Bharatiya Sakshya Adhiniyam, 2023. Speed Post is optional at ₹450 per party.
               </p>
               <div className="flex flex-col sm:flex-row sm:items-center gap-4">
                 <button
@@ -44,7 +44,7 @@ export default function LimitationNoticeCTA({
                 <div className="text-xs text-slate-300 flex flex-wrap sm:flex-nowrap items-center gap-2 sm:gap-3">
                   <span>✓ 24h Advocate Drafting</span>
                   <span>•</span>
-                  <span>✓ Speed Post + BSA Email</span>
+                  <span>✓ Email + WhatsApp</span>
                   <span>•</span>
                   <span>✓ Flat ₹{basePrice}</span>
                 </div>

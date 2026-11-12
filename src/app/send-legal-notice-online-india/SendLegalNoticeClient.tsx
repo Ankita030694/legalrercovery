@@ -404,7 +404,7 @@ export default function SendLegalNoticeClient() {
                       <li><strong>Acknowledgment Due (AD) Cards:</strong> For Registered Post, a pink AD card is attached to the envelope. Upon delivery, the recipient must sign this card, which is then mailed back to the sender. This physical signature is absolute proof of direct receipt.</li>
                     </ul>
                     <p className="text-sm md:text-base leading-relaxed">
-                      Our automated dispatch system handles this entire process. Once the notice is signed by the advocate, it is physically printed, packaged, and sent via Speed Post. The tracking consignment number is instantly uploaded to your client dashboard, and our system polls the India Post portal to provide you with real-time delivery status updates.
+                      If you choose the optional Speed Post (₹450 per party), our automated dispatch system handles this entire process. Once the notice is signed by the advocate, it is physically printed, packaged, and sent via Speed Post. The tracking consignment number is instantly uploaded to your client dashboard, and our system polls the India Post portal to provide you with real-time delivery status updates.
                     </p>
                   </div>
                 </section>

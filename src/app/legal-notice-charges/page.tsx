@@ -20,7 +20,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Legal Notice Charges in India (2026): What It Costs",
     description:
-      "Comprehensive breakdown of legal notice costs in India by dispute type, city advocate rates, India Post delivery fees, and our transparent ₹999 flat pricing.",
+      "Comprehensive breakdown of legal notice costs in India by dispute type, city advocate rates, India Post delivery fees, and our transparent ₹999 flat pricing with optional Speed Post.",
     url: `${SITE_URL}/legal-notice-charges`,
     type: "article",
     siteName: "LegalRecovery.in",
@@ -38,7 +38,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Legal Notice Charges in India (2026): What It Costs",
     description:
-      "Comprehensive breakdown of legal notice costs in India by dispute type, city advocate rates, India Post delivery fees, and our transparent ₹999 flat pricing.",
+      "Comprehensive breakdown of legal notice costs in India by dispute type, city advocate rates, India Post delivery fees, and our transparent ₹999 flat pricing with optional Speed Post.",
     site: "@legalrecoveryin",
     creator: "@legalrecoveryin",
     images: [`${SITE_URL}/blog_money_recovery.png`],
@@ -80,7 +80,7 @@ const FAQS = [
   {
     question: "How much does a lawyer typically charge to send a legal notice in India?",
     answer:
-      "In India, private advocate charges for drafting and issuing a legal notice range widely from ₹3,500 to ₹15,000 for standard disputes (such as salary delay, security deposit refund, or consumer defects) and can exceed ₹25,000 to ₹50,000 in high-stakes commercial or property disputes. Legal fees depend on the advocate's years of practice, city tier (Delhi and Mumbai command higher rates than Tier-2 cities), complexity of factual annexures, and chamber overheads. On LegalRecovery.in, verified high court advocates draft and dispatch notices for a transparent flat fee of ₹999 all-inclusive.",
+      "In India, private advocate charges for drafting and issuing a legal notice range widely from ₹3,500 to ₹15,000 for standard disputes (such as salary delay, security deposit refund, or consumer defects) and can exceed ₹25,000 to ₹50,000 in high-stakes commercial or property disputes. Legal fees depend on the advocate's years of practice, city tier (Delhi and Mumbai command higher rates than Tier-2 cities), complexity of factual annexures, and chamber overheads. On LegalRecovery.in, verified high court advocates draft and dispatch notices by email and WhatsApp for a transparent flat fee of ₹999. Speed Post is optional at ₹450 per party.",
   },
   {
     question: "What are the legal notice charges for recovery of money?",
@@ -90,7 +90,7 @@ const FAQS = [
   {
     question: "What are the speed post and delivery charges for sending a legal notice?",
     answer:
-      "An official legal notice must be sent via Registered Post with Acknowledgment Due (RPAD) or Speed Post through India Post. Speed Post tariffs range from ₹41 to ₹90 for consignments up to 50 grams depending on whether the destination is local or inter-state, plus postal stationery. While independent law chambers often bill clients ₹500 to ₹1,500 under miscellaneous clerkage and dispatch expenses, the actual India Post fee is under ₹100, which is fully covered in LegalRecovery's flat ₹999 fee.",
+      "An official legal notice must be sent via Registered Post with Acknowledgment Due (RPAD) or Speed Post through India Post. Speed Post tariffs range from ₹41 to ₹90 for consignments up to 50 grams depending on whether the destination is local or inter-state, plus postal stationery. While independent law chambers often bill clients ₹500 to ₹1,500 under miscellaneous clerkage and dispatch expenses, the actual India Post fee is under ₹100. LegalRecovery's flat ₹999 fee covers delivery by email and WhatsApp; Speed Post for the 3 notices is optional at ₹450 per party, charged at cost.",
   },
   {
     question: "Can I claim the legal notice charges back from the opposite party?",
@@ -110,7 +110,7 @@ const FAQS = [
   {
     question: "Legal notice bhejne ka kitna kharcha aata hai aur advocate ki fees kitni hoti hai?",
     answer:
-      "Bharat mein aam taur par district court ya high court ke private vakil legal notice draft karne aur bhejne ke liye ₹3,000 se ₹15,000 tak fees lete hain, jismein typing aur speed post ka kharcha alag se joda jata hai. Cheque bounce ya commercial money recovery ke mamlon mein fees aur zyada ho sakti hai. LegalRecovery.in par verified advocate dwara complete legal notice drafting, Speed Post dispatch aur tracking report sirf flat ₹999 mein uplabdh karwaya jata hai.",
+      "Bharat mein aam taur par district court ya high court ke private vakil legal notice draft karne aur bhejne ke liye ₹3,000 se ₹15,000 tak fees lete hain, jismein typing aur speed post ka kharcha alag se joda jata hai. Cheque bounce ya commercial money recovery ke mamlon mein fees aur zyada ho sakti hai. LegalRecovery.in par verified advocate dwara complete legal notice drafting, Email aur WhatsApp dispatch aur tracking report sirf flat ₹999 mein uplabdh karwaya jata hai. Speed Post optional hai, ₹450 per party.",
   },
 ];
 
@@ -229,7 +229,7 @@ export default function LegalNoticeChargesPage() {
                 Statutory Summary (Legal Notice Cost &amp; Fee Standard)
               </p>
               <p>
-                In India, hiring an independent advocate to draft and serve a legal notice typically costs between ₹3,500 and ₹15,000, depending on the dispute type, claim value, and city chambers. India Post Speed Post dispatch adds ₹45 to ₹90. On LegalRecovery.in, verified high court advocates draft, review, and dispatch formal notices via Registered Speed Post for a transparent flat fee of ₹{basePrice}, with zero hidden clerkage or consultation costs.
+                In India, hiring an independent advocate to draft and serve a legal notice typically costs between ₹3,500 and ₹15,000, depending on the dispute type, claim value, and city chambers. India Post Speed Post dispatch adds ₹45 to ₹90. On LegalRecovery.in, verified high court advocates draft, review, and dispatch formal notices by email and WhatsApp for a transparent flat fee of ₹{basePrice}, with zero hidden clerkage or consultation costs. Speed Post is optional at ₹450 per party.
               </p>
             </div>
 
@@ -311,7 +311,7 @@ export default function LegalNoticeChargesPage() {
                           LegalRecovery Advocate Notice
                         </th>
                         <td className="p-3 sm:p-4 font-bold text-[#DC2626]">
-                          Flat ₹{basePrice} (All-Inclusive)
+                          Flat ₹{basePrice} (Speed Post optional, ₹450)
                         </td>
                         <td className="p-3 sm:p-4">24–48 hours drafting; 15-day demand</td>
                         <td className="p-3 sm:p-4">Invoices, bank statements, chat logs, contract</td>
@@ -852,7 +852,7 @@ export default function LegalNoticeChargesPage() {
                     <div className="bg-slate-50 p-3 rounded-xl border border-slate-100 text-xs text-slate-700 space-y-1">
                       <p className="font-bold text-slate-900">Dual-Mode Dispatch Standard:</p>
                       <p>
-                        Every notice on LegalRecovery is simultaneously delivered via physical India Post Speed Post and tracked electronic mail to corporate registered office inboxes, giving zero room for the defaulter to claim non-receipt.
+                        Every notice on LegalRecovery is delivered by tracked email and WhatsApp to the opposite party, including corporate registered office inboxes. You can add India Post Speed Post for ₹450 per party, giving zero room for the defaulter to claim non-receipt.
                       </p>
                     </div>
                   </div>
@@ -885,7 +885,7 @@ export default function LegalNoticeChargesPage() {
                       <li>• Case evaluation &amp; evidentiary review by verified advocates</li>
                       <li>• Formal statutory drafting on official High Court advocate letterhead</li>
                       <li>• Specific legal provisions cited (CPA 2019, NI Act, Contract Act, BSA 2023)</li>
-                      <li>• India Post Registered Speed Post dispatch with postal consignment number</li>
+                      <li>• Delivery by email and WhatsApp (Speed Post optional at ₹450 per party)</li>
                       <li>• Real-time digital tracking dashboard until confirmed delivery</li>
                       <li>• Electronic notice delivery to company grievance &amp; director emails</li>
                       <li>• Certified delivery report ready for submission to e-Jagriti or Civil Court</li>
@@ -972,7 +972,7 @@ export default function LegalNoticeChargesPage() {
                     Calculate Your Expected Legal Notice Fees by City &amp; Dispute
                   </h2>
                   <p className="text-xs sm:text-sm text-slate-600 mt-1">
-                    Use this live tool to evaluate expected chamber fees versus our all-inclusive flat pricing.
+                    Use this live tool to evaluate expected chamber fees versus our flat pricing.
                   </p>
                 </div>
 
@@ -1021,7 +1021,7 @@ export default function LegalNoticeChargesPage() {
                         </div>
                         <div className="bg-slate-50 p-2.5 rounded-lg border border-slate-100">
                           <span className="text-slate-500 block text-[10px]">Delivery Time</span>
-                          <span className="font-bold text-slate-900">Speed Post in 48h</span>
+                          <span className="font-bold text-slate-900">Email + WhatsApp in 48h</span>
                         </div>
                         <div className="bg-slate-50 p-2.5 rounded-lg border border-slate-100">
                           <span className="text-slate-500 block text-[10px]">Settlement Time</span>

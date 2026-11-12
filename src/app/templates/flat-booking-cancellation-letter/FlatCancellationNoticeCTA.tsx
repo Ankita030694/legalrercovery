@@ -31,7 +31,7 @@ export default function FlatCancellationNoticeCTA({
                 Builder Threatening 100% Forfeiture or Ignoring Your Cancellation Letter?
               </h3>
               <p className="text-slate-300 text-xs sm:text-sm md:text-base leading-relaxed mb-6">
-                Engage a verified real-estate recovery advocate to draft and dispatch a formal 15-day statutory legal notice to the builder&apos;s Managing Director and RERA-registered office via Registered Speed Post (RPAD) and Section 63 BSA electronic mail—challenging illegal forfeiture under Section 13(1) RERA, Section 74 of the Indian Contract Act, and Supreme Court earnest-money caps.
+                Engage a verified real-estate recovery advocate to draft and dispatch a formal 15-day statutory legal notice to the builder&apos;s Managing Director and RERA-registered office by email and WhatsApp under Section 63 BSA—challenging illegal forfeiture under Section 13(1) RERA, Section 74 of the Indian Contract Act, and Supreme Court earnest-money caps. Speed Post is optional at ₹450 per party.
               </p>
               <div className="flex flex-col sm:flex-row sm:items-center gap-4">
                 <button
@@ -44,7 +44,7 @@ export default function FlatCancellationNoticeCTA({
                 <div className="text-xs text-slate-300 flex flex-wrap sm:flex-nowrap items-center gap-2 sm:gap-3">
                   <span>✓ RERA Sec 13 &amp; 18 Draft</span>
                   <span>•</span>
-                  <span>✓ Speed Post + Email</span>
+                  <span>✓ Email + WhatsApp</span>
                   <span>•</span>
                   <span>✓ Flat ₹{basePrice}</span>
                 </div>

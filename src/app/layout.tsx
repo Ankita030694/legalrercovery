@@ -117,7 +117,7 @@ export default function RootLayout({
           url: `${SITE_URL}/favicon/favicon-96x96.png`,
         },
         description:
-          "India's legal-tech money recovery and online legal notice platform. Advocate-drafted legal notices dispatched via Registered Speed Post, WhatsApp, and Email with Section 63 BSA evidentiary certification.",
+          "India's legal-tech money recovery and online legal notice platform. Advocate-drafted legal notices dispatched via Email and WhatsApp, with optional Speed Post, and Section 63 BSA evidentiary certification.",
         priceRange: "₹999 - ₹4,999",
         areaServed: {
           "@type": "Country",

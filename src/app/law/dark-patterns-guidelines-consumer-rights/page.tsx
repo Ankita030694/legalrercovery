@@ -307,7 +307,7 @@ export default function DarkPatternsLawPage() {
                   <tr className="hover:bg-slate-50/80 transition-colors">
                     <td className="py-2.5 px-4 font-semibold text-slate-900">Legal Demand Notice</td>
                     <td className="py-2.5 px-4">Pre-Litigation Advocate Rail via LegalRecovery</td>
-                    <td className="py-2.5 px-4">Drafted by panel advocates and served via Speed Post and registered email for a transparent flat fee of ₹{BASE_PRICE}.</td>
+                    <td className="py-2.5 px-4">Drafted by panel advocates and served by email and WhatsApp for a transparent flat fee of ₹{BASE_PRICE}. Speed Post is optional at ₹450 per party.</td>
                   </tr>
                 </tbody>
               </table>
@@ -1219,7 +1219,7 @@ export default function DarkPatternsLawPage() {
                   <li>• We draft and dispatch formal Advocate Legal Demand Notices directly to registered e-commerce entities, online travel portals, and subscription providers.</li>
                   <li>• We cite specific statutory violations under the CCPA Dark Patterns Guidelines 2023, E-Commerce Rules 2020/2026, and Section 2(47) of CPA 2019.</li>
                   <li>• We calculate statutory interest and demand compensation for mental harassment and loss of consumer time.</li>
-                  <li>• We serve notices via Registered Indian Speed Post with official tracking and registered corporate email to board directors.</li>
+                  <li>• We serve notices by registered corporate email and WhatsApp to board directors, with optional Speed Post (₹450 per party).</li>
                   <li>• We prepare e-Jagriti filing dossiers ready for submission before the District Consumer Commission if the platform fails to comply.</li>
                 </ul>
               </div>

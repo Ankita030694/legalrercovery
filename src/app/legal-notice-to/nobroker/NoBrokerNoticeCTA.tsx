@@ -31,7 +31,7 @@ export default function NoBrokerNoticeCTA({
                 Recover Your Stuck NoBroker Money-Back Plan Fee, Token Advance, or Service Refund
               </h3>
               <p className="text-slate-300 text-xs sm:text-sm md:text-base leading-relaxed mb-6">
-                Have a verified advocate draft and serve an official statutory legal demand notice directly to NoBroker Technologies Solutions Private Limited at its Bengaluru corporate headquarters (and the defaulting property owner, where applicable). Dispatched via Registered Speed Post with tracking and served electronically under Section 63 of the Bharatiya Sakshya Adhiniyam, 2023.
+                Have a verified advocate draft and serve an official statutory legal demand notice directly to NoBroker Technologies Solutions Private Limited at its Bengaluru corporate headquarters (and the defaulting property owner, where applicable). Served by email and WhatsApp under Section 63 of the Bharatiya Sakshya Adhiniyam, 2023. Speed Post is optional at ₹450 per party.
               </p>
               <div className="flex flex-col sm:flex-row sm:items-center gap-4">
                 <button
@@ -44,7 +44,7 @@ export default function NoBrokerNoticeCTA({
                 <div className="text-xs text-slate-300 flex flex-wrap sm:flex-nowrap items-center gap-2 sm:gap-3">
                   <span>✓ 24h Advocate Drafting</span>
                   <span>•</span>
-                  <span>✓ Speed Post + Email</span>
+                  <span>✓ Email + WhatsApp</span>
                   <span>•</span>
                   <span>✓ Flat ₹{basePrice}</span>
                 </div>

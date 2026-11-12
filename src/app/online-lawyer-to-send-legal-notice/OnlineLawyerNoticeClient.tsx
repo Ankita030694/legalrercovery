@@ -15,7 +15,7 @@ const faqs = [
   },
   {
     question: "What are the typical fees charged by an online lawyer to send a legal notice in India?",
-    answer: "Advocate fees for legal notices in India are not regulated and can vary from ₹1,500 to ₹10,000+ based on the lawyer's experience and the complexity of the matter. Traditional offline law firms often charge separate counseling fees and typing charges. On LegalRecovery, we provide a transparent, flat-fee pricing model starting at ₹999 per opposing party. This all-inclusive rate covers advocate vetting, custom drafting on letterhead, client dashboard modifications, and email/WhatsApp dispatches with tracking."
+    answer: "Advocate fees for legal notices in India are not regulated and can vary from ₹1,500 to ₹10,000+ based on the lawyer's experience and the complexity of the matter. Traditional offline law firms often charge separate counseling fees and typing charges. On LegalRecovery, we provide a transparent, flat-fee pricing model starting at ₹999 per opposing party. This rate covers advocate vetting, custom drafting on letterhead, client dashboard modifications, and email/WhatsApp dispatches with tracking. Speed Post is optional at ₹450 per party."
   },
   {
     question: "How does the advocate matching and onboarding process work online?",
@@ -178,7 +178,7 @@ const reviewSchema = {
         "@type": "Person",
         "name": "Venkat Raman"
       },
-      "reviewBody": "Highly transparent pricing. The ₹999 flat rate covered everything, including the advocate's drafting fee and mailing charges. I tracked the delivery status directly on my dashboard and received instant updates when the post was delivered."
+      "reviewBody": "Highly transparent pricing. The ₹999 flat rate covered the advocate's drafting fee and email and WhatsApp delivery. I tracked the delivery status directly on my dashboard and received instant updates when the notice was delivered."
     },
     {
       "@type": "Review",
@@ -395,7 +395,7 @@ export default function OnlineLawyerNoticeClient() {
                       One of the primary advantages of hiring an online advocate is financial transparency. Traditional offline advocates often use variable billing rates, charging separate fees for consultations, draft preparations, clerical typing, and postal dispatch costs. This lack of standardization can make it difficult for clients to budget their recovery expenses.
                     </p>
                     <p className="text-sm md:text-base leading-relaxed">
-                      Online platforms replace these challenges with a standardized, flat-fee pricing model. On LegalRecovery, services start at a transparent rate of ₹999 per opposing party. This flat fee is all-inclusive, covering:
+                      Online platforms replace these challenges with a standardized, flat-fee pricing model. On LegalRecovery, services start at a transparent rate of ₹999 per opposing party. This flat fee covers the following (Speed Post is optional at ₹450 per party):
                     </p>
                     
                     <ul className="list-disc list-inside text-sm text-slate-650 space-y-2">

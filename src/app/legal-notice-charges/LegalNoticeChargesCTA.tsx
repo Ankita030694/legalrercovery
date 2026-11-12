@@ -31,7 +31,7 @@ export default function LegalNoticeChargesCTA({
                 Send a Legally Enforceable Advocate Notice for Flat ₹{basePrice}
               </h3>
               <p className="text-slate-300 text-xs sm:text-sm md:text-base leading-relaxed mb-6">
-                Avoid paying ₹5,000 to ₹15,000 to traditional city chambers for standard pre-litigation demands. Have a verified high court advocate draft, stamp, and serve your statutory legal notice via Registered Speed Post with postal tracking and Section 63 BSA electronic dispatch.
+                Avoid paying ₹5,000 to ₹15,000 to traditional city chambers for standard pre-litigation demands. Have a verified high court advocate draft, stamp, and serve your statutory legal notice by email and WhatsApp under Section 63 BSA. Speed Post is optional at ₹450 per party.
               </p>
               <div className="flex flex-col sm:flex-row sm:items-center gap-4">
                 <button
@@ -44,7 +44,7 @@ export default function LegalNoticeChargesCTA({
                 <div className="text-xs text-slate-300 flex flex-wrap sm:flex-nowrap items-center gap-2 sm:gap-3">
                   <span>✓ 24–48h Advocate Drafting</span>
                   <span>•</span>
-                  <span>✓ Speed Post + Tracking Included</span>
+                  <span>✓ Email + WhatsApp</span>
                   <span>•</span>
                   <span>✓ Zero Hourly Fees</span>
                 </div>

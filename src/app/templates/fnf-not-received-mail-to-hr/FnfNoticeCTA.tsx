@@ -31,7 +31,7 @@ export default function FnfNoticeCTA({
                 Has HR Ignored Your FnF Email or Withheld Your Settlement Dues?
               </h3>
               <p className="text-slate-300 text-xs sm:text-sm md:text-base leading-relaxed mb-6">
-                When reminder emails and follow-ups fail, take statutory legal action. Have a verified labour advocate draft and serve a formal 15-day statutory demand notice directly to your employer, Managing Director, and HR Head via Registered Speed Post and legal email with Section 63 BSA tracking.
+                When reminder emails and follow-ups fail, take statutory legal action. Have a verified labour advocate draft and serve a formal 15-day statutory demand notice directly to your employer, Managing Director, and HR Head by email and WhatsApp with Section 63 BSA tracking. Speed Post is optional at ₹450 per party.
               </p>
               <div className="flex flex-col sm:flex-row sm:items-center gap-4">
                 <button
@@ -44,7 +44,7 @@ export default function FnfNoticeCTA({
                 <div className="text-xs text-slate-300 flex flex-wrap sm:flex-nowrap items-center gap-2 sm:gap-3">
                   <span>✓ 24h Advocate Drafting</span>
                   <span>•</span>
-                  <span>✓ Speed Post + Section 63 Email</span>
+                  <span>✓ Email + WhatsApp</span>
                   <span>•</span>
                   <span>✓ Flat ₹{basePrice}</span>
                 </div>

@@ -44,7 +44,7 @@ export default function CyberFraudHindiNoticeCTA({
                 <div className="text-xs text-slate-300 flex flex-wrap sm:flex-nowrap items-center gap-2 sm:gap-3">
                   <span>✓ 24 घंटे में एडवोकेट ड्राफ्टिंग</span>
                   <span>•</span>
-                  <span>✓ स्पीड पोस्ट + डिजिटल तामील</span>
+                  <span>✓ ईमेल + WhatsApp तामील</span>
                   <span>•</span>
                   <span>✓ कुल शुल्क ₹{basePrice} (स्पष्ट कीमत)</span>
                 </div>

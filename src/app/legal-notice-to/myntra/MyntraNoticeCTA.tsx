@@ -31,7 +31,7 @@ export default function MyntraNoticeCTA({
                 Recover Your Withheld Myntra Refund or Challenge Return Rejection
               </h3>
               <p className="text-slate-300 text-sm sm:text-base leading-relaxed mb-6">
-                Serve an advocate-drafted legal notice directly to Myntra Designs Private Limited and the registered merchant. Dispatched via Registered Speed Post with postal tracking plus digital service under Section 63 of Bharatiya Sakshya Adhiniyam, 2023.
+                Serve an advocate-drafted legal notice directly to Myntra Designs Private Limited and the registered merchant. Served by email and WhatsApp under Section 63 of Bharatiya Sakshya Adhiniyam, 2023. Speed Post is optional at ₹450 per party.
               </p>
               <div className="flex flex-col sm:flex-row sm:items-center gap-4">
                 <button
@@ -44,7 +44,7 @@ export default function MyntraNoticeCTA({
                 <div className="text-xs text-slate-400 flex flex-col sm:flex-row sm:items-center gap-1 sm:gap-3">
                   <span>✓ Bar-Enrolled Advocate Drafting</span>
                   <span className="hidden sm:inline">•</span>
-                  <span>✓ 24-Hour Dispatch via Speed Post</span>
+                  <span>✓ 24-Hour Dispatch by Email + WhatsApp</span>
                   <span className="hidden sm:inline">•</span>
                   <span>✓ Flat ₹{basePrice} Transparent Fee</span>
                 </div>

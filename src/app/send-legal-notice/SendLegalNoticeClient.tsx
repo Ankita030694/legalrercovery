@@ -47,7 +47,7 @@ const faqs = [
   },
   {
     question: "What is the flat fee structure for sending a notice on LegalRecovery?",
-    answer: "LegalRecovery offers all-inclusive, flat-fee pricing starting at ₹999 per opposing party. This transparent rate covers advocate consultation, customized drafting on the advocate's official letterhead, client dashboard review, and electronic delivery via verified email and WhatsApp. There are no hourly consultation fees."
+    answer: "LegalRecovery offers flat-fee pricing starting at ₹999 per opposing party. This transparent rate covers advocate consultation, customized drafting on the advocate's official letterhead, client dashboard review, and electronic delivery via verified email and WhatsApp. Speed Post is optional at ₹450 per party. There are no hourly consultation fees."
   },
   {
     question: "What should I do if the recipient replies to my notice with false counterclaims?",
@@ -178,7 +178,7 @@ const reviewSchema = {
         "@type": "Person",
         "name": "Swati Deshpande"
       },
-      "reviewBody": "I sent a legal notice for the refund of my security deposit. The landlord ignored my emails, but once the formal notice on the advocate's letterhead was delivered via Speed Post, he returned the deposit. The flat pricing of ₹999 is highly transparent and competitive."
+      "reviewBody": "I sent a legal notice for the refund of my security deposit. The landlord ignored my emails, but once the formal notice on the advocate's letterhead was delivered, he returned the deposit. The flat pricing of ₹999 is highly transparent and competitive."
     },
     {
       "@type": "Review",

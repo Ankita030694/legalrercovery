@@ -390,8 +390,8 @@ export default function MoneyRecoveryTimePage() {
                         <td className="p-3 sm:p-4">धारा 80 CPC / अनुबंध नियम</td>
                         <td className="p-3 sm:p-4">डिफ़ॉल्ट से 3 वर्ष के भीतर</td>
                         <td className="p-3 sm:p-4 font-bold text-emerald-700">15 से 30 दिन (कोर्ट से पहले)</td>
-                        <td className="p-3 sm:p-4">₹{DEFAULT_FUNNEL_SETTINGS.basePricePerOpposition} (फिक्स ड्राफ्टिंग व पोस्ट)</td>
-                        <td className="p-3 sm:p-4">स्पीड पोस्ट + WhatsApp डिजिटल तामील</td>
+                        <td className="p-3 sm:p-4">₹{DEFAULT_FUNNEL_SETTINGS.basePricePerOpposition} (फिक्स ड्राफ्टिंग; स्पीड पोस्ट वैकल्पिक)</td>
+                        <td className="p-3 sm:p-4">ईमेल + WhatsApp डिजिटल तामील</td>
                       </tr>
                       <tr className="hover:bg-slate-50 transition-colors bg-red-50/30">
                         <td className="p-3 sm:p-4 font-bold text-slate-900">

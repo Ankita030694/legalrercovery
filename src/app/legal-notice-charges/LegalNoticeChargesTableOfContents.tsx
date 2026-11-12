@@ -179,7 +179,7 @@ export default function LegalNoticeChargesTableOfContents({
             <div className="rounded-xl bg-slate-50 p-3 border border-slate-100">
               <p className="text-[11px] font-bold text-slate-800">Need quick legal advice?</p>
               <p className="text-[10px] text-slate-500 mt-0.5 leading-relaxed">
-                Flat ₹999 notice service with advocate drafting and speed post delivery.
+                Flat ₹999 notice service with advocate drafting and email + WhatsApp delivery. Speed Post optional.
               </p>
             </div>
           </div>

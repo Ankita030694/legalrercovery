@@ -454,9 +454,9 @@ export default function JioMartRecoveryPage() {
                     <th scope="row" className="px-5 py-4 font-semibold text-slate-900">
                       Advocate Legal Notice Fee
                     </th>
-                    <td className="px-5 py-4 font-bold text-slate-900">₹{BASE_PRICE} (Flat all-inclusive)</td>
+                    <td className="px-5 py-4 font-bold text-slate-900">₹{BASE_PRICE} (Flat fee)</td>
                     <td className="px-5 py-4 font-mono text-xs text-slate-600">LegalRecovery.in Direct Service</td>
-                    <td className="px-5 py-4 text-emerald-800 font-medium">Speed Post + Electronic BSA Sec 63 Dispatch</td>
+                    <td className="px-5 py-4 text-emerald-800 font-medium">Email + WhatsApp BSA Sec 63 Dispatch (Speed Post optional)</td>
                   </tr>
                 </tbody>
               </table>

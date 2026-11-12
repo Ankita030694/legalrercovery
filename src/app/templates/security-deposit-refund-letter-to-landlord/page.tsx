@@ -1085,7 +1085,7 @@ export default function SecurityDepositRefundLetterPage() {
                         • <strong>Create Admissible Pre-Suit Proof:</strong> Establishes your exact vacating date, bank details, and written protest against illegal painting/wear-and-tear cuts.
                       </li>
                       <li>
-                        • <strong>Escalate via Verified Advocate Notice:</strong> When the landlord ignores your 7-day letter, our advocates draft and serve a 15-day statutory legal notice via India Post RPAD, Email, and WhatsApp.
+                        • <strong>Escalate via Verified Advocate Notice:</strong> When the landlord ignores your 7-day letter, our advocates draft and serve a 15-day statutory legal notice via Email and WhatsApp, with optional India Post Speed Post.
                       </li>
                       <li>
                         • <strong>Cover Flat Owners, PGs, Co-Living &amp; Portals:</strong> We serve notices to individual landlords, corporate lessors, PG owners, co-living operators, and property portals like{" "}

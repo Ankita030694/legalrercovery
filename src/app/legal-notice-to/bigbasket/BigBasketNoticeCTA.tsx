@@ -32,9 +32,8 @@ export default function BigBasketNoticeCTA({
               </h3>
               <p className="text-slate-300 text-sm sm:text-base leading-relaxed mb-6">
                 Have an advocate draft and serve a formal 15-day statutory demand notice directly to Innovative Retail
-                Concepts Private Limited and Supermarket Grocery Supplies Private Limited. Dispatched via Registered
-                Speed Post with official postal tracking and certified legal email under Section 63 of the Bharatiya
-                Sakshya Adhiniyam, 2023.
+                Concepts Private Limited and Supermarket Grocery Supplies Private Limited. Served by email and WhatsApp
+                under Section 63 of the Bharatiya Sakshya Adhiniyam, 2023. Speed Post is optional at ₹450 per party.
               </p>
               <div className="flex flex-col sm:flex-row sm:items-center gap-4">
                 <button
@@ -47,7 +46,7 @@ export default function BigBasketNoticeCTA({
                 <div className="text-xs text-slate-400 flex flex-col sm:flex-row sm:items-center gap-1 sm:gap-3">
                   <span>✓ 24-Hour Advocate Turnaround</span>
                   <span className="hidden sm:inline">•</span>
-                  <span>✓ Speed Post + Email Dispatch</span>
+                  <span>✓ Email + WhatsApp</span>
                   <span className="hidden sm:inline">•</span>
                   <span>✓ Flat ₹{basePrice} Transparent Fee</span>
                 </div>

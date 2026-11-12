@@ -31,7 +31,7 @@ export default function BanquetBookingNoticeCTA({
                 Recover Your Withheld Marriage Hall or Banquet Advance Deposit
               </h3>
               <p className="text-slate-300 text-xs sm:text-sm md:text-base leading-relaxed mb-6">
-                Have a verified advocate draft and serve an unassailable statutory demand notice directly to the marriage hall management, resort proprietor, or banquet directors. Challenge illegal 100% advance forfeiture clauses under Indian Contract Act Section 74 and Consumer Protection Act 2019. Dispatched via Registered Speed Post with postal tracking and digitally served via email and WhatsApp under Section 63 of Bharatiya Sakshya Adhiniyam, 2023.
+                Have a verified advocate draft and serve an unassailable statutory demand notice directly to the marriage hall management, resort proprietor, or banquet directors. Challenge illegal 100% advance forfeiture clauses under Indian Contract Act Section 74 and Consumer Protection Act 2019. Served by email and WhatsApp under Section 63 of Bharatiya Sakshya Adhiniyam, 2023. Speed Post is optional at ₹450 per party.
               </p>
               <div className="flex flex-col sm:flex-row sm:items-center gap-4">
                 <button
@@ -44,7 +44,7 @@ export default function BanquetBookingNoticeCTA({
                 <div className="text-xs text-slate-300 flex flex-wrap sm:flex-nowrap items-center gap-2 sm:gap-3">
                   <span>✓ 24h Advocate Drafting</span>
                   <span>•</span>
-                  <span>✓ Registered Speed Post + Tracking</span>
+                  <span>✓ Email + WhatsApp</span>
                   <span>•</span>
                   <span>✓ Flat ₹{basePrice}</span>
                 </div>

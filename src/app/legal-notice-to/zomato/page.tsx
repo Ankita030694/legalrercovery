@@ -573,8 +573,8 @@ Phone: [INSERT CONTACT NUMBER]`;
                       Our Flat Notice Fee
                     </th>
                     <td className="p-3.5 sm:p-4">LegalRecovery.in Fixed-Fee Standard</td>
-                    <td className="p-3.5 sm:p-4 font-bold text-red-700">₹999 (All-Inclusive)</td>
-                    <td className="p-3.5 sm:p-4">Advocate drafting, postal dispatch &amp; tracking slip included.</td>
+                    <td className="p-3.5 sm:p-4 font-bold text-red-700">₹999 flat</td>
+                    <td className="p-3.5 sm:p-4">Advocate drafting, email &amp; WhatsApp dispatch included. Speed Post optional (₹450).</td>
                   </tr>
                 </tbody>
               </table>

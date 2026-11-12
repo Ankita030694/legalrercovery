@@ -31,7 +31,7 @@ export default function InsuranceMisSellingNoticeCTA({
                 Recover 100% Premium From Mis-Sold Policies &amp; Enforce Free-Look Cancellation
               </h3>
               <p className="text-slate-300 text-xs sm:text-sm md:text-base leading-relaxed mb-6">
-                Have a verified advocate draft and serve an unassailable statutory demand notice to the insurance company&apos;s Principal Officer and Grievance Head. Invoking IRDAI regulations on unfair business practices, Section 2(47) CPA 2019, and Insurance Ombudsman escalation. Dispatched via Registered Speed Post with postal tracking and digitally served under Section 63 of BSA 2023.
+                Have a verified advocate draft and serve an unassailable statutory demand notice to the insurance company&apos;s Principal Officer and Grievance Head. Invoking IRDAI regulations on unfair business practices, Section 2(47) CPA 2019, and Insurance Ombudsman escalation. Served by email and WhatsApp under Section 63 of BSA 2023. Speed Post is optional at ₹450 per party.
               </p>
               <div className="flex flex-col sm:flex-row sm:items-center gap-4">
                 <button
@@ -44,7 +44,7 @@ export default function InsuranceMisSellingNoticeCTA({
                 <div className="text-xs text-slate-300 flex flex-wrap sm:flex-nowrap items-center gap-2 sm:gap-3">
                   <span>✓ 24h Advocate Drafting</span>
                   <span>•</span>
-                  <span>✓ Speed Post + Email Copy</span>
+                  <span>✓ Email + WhatsApp</span>
                   <span>•</span>
                   <span>✓ Flat ₹{basePrice}</span>
                 </div>

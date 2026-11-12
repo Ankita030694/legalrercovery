@@ -31,7 +31,7 @@ export default function RelievingLetterNoticeCTA({
                 Is HR Withholding Your Relieving Letter or Experience Certificate?
               </h3>
               <p className="text-slate-300 text-xs sm:text-sm md:text-base leading-relaxed mb-6">
-                When follow-up emails and reminders are ignored, take formal statutory legal action. An experienced labour advocate will draft and serve a 15-day statutory demand notice directly to your employer&apos;s HR Head, Managing Director, and Board of Directors via Registered Speed Post and BSA Section 63 compliant electronic mail.
+                When follow-up emails and reminders are ignored, take formal statutory legal action. An experienced labour advocate will draft and serve a 15-day statutory demand notice directly to your employer&apos;s HR Head, Managing Director, and Board of Directors by email and WhatsApp under BSA Section 63. Speed Post is optional at ₹450 per party.
               </p>
               <div className="flex flex-col sm:flex-row sm:items-center gap-4">
                 <button
@@ -44,7 +44,7 @@ export default function RelievingLetterNoticeCTA({
                 <div className="text-xs text-slate-300 flex flex-wrap sm:flex-nowrap items-center gap-2 sm:gap-3">
                   <span>✓ 24h Advocate Drafting</span>
                   <span>•</span>
-                  <span>✓ Speed Post + BSA Section 63 Notice</span>
+                  <span>✓ Email + WhatsApp</span>
                   <span>•</span>
                   <span>✓ Flat ₹{basePrice}</span>
                 </div>

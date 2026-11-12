@@ -882,7 +882,7 @@ export default function RecoverMoneyFromTenantWhoDamagedPropertyClient() {
                         High-Impact Digital Service with Electronic Tracking under BSA 2023
                       </h4>
                       <p className="text-xs sm:text-sm text-slate-700 leading-relaxed">
-                        To eliminate common tenant evasions such as refusing physical postal deliveries, Legal Recovery serves every statutory notice via a dual-channel framework: India Post Registered Post AD / Speed Post combined with digitally signed email and WhatsApp delivery. Under{' '}
+                        To eliminate common tenant evasions such as refusing physical postal deliveries, Legal Recovery serves every statutory notice by digitally signed email and WhatsApp, and you can add India Post Speed Post for ₹450 per party. Under{' '}
                         <a
                           href="https://www.indiacode.nic.in/handle/123456789/20235"
                           target="_blank"

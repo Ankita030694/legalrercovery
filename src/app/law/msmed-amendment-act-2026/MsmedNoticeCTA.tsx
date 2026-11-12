@@ -31,7 +31,7 @@ export default function MsmedNoticeCTA({
                 Recover Unpaid B2B Invoices With 3x RBI Compound Interest &amp; Tax Disallowance Leverage
               </h3>
               <p className="text-slate-300 text-xs sm:text-sm md:text-base leading-relaxed mb-6">
-                Have a verified commercial recovery advocate draft and serve a formal statutory demand notice on your defaulting buyer&apos;s Managing Director, CFO, and Statutory Auditor. We compute exact monthly-compounded interest at 3× the RBI Bank Rate under Section 16 of the MSMED Act, invoke Section 43B(h) Income Tax disallowance, and establish your pre-filing record for the MSME ODR Portal. Dispatched via Registered Speed Post and Section 63 BSA electronic delivery.
+                Have a verified commercial recovery advocate draft and serve a formal statutory demand notice on your defaulting buyer&apos;s Managing Director, CFO, and Statutory Auditor. We compute exact monthly-compounded interest at 3× the RBI Bank Rate under Section 16 of the MSMED Act, invoke Section 43B(h) Income Tax disallowance, and establish your pre-filing record for the MSME ODR Portal. Served by email and WhatsApp under Section 63 BSA. Speed Post is optional at ₹450 per party.
               </p>
               <div className="flex flex-col sm:flex-row sm:items-center gap-4">
                 <button
@@ -44,7 +44,7 @@ export default function MsmedNoticeCTA({
                 <div className="text-xs text-slate-300 flex flex-wrap sm:flex-nowrap items-center gap-2 sm:gap-3">
                   <span>✓ 24h Advocate Drafting</span>
                   <span>•</span>
-                  <span>✓ Speed Post + Email</span>
+                  <span>✓ Email + WhatsApp</span>
                   <span>•</span>
                   <span>✓ Flat ₹{basePrice}</span>
                 </div>

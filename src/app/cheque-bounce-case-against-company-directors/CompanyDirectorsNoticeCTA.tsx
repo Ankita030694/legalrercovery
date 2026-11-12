@@ -31,7 +31,7 @@ export default function CompanyDirectorsNoticeCTA({
                 Recover Funds from a Bounced Company Cheque &amp; Fast-Track Director Liability
               </h3>
               <p className="text-slate-300 text-xs sm:text-sm md:text-base leading-relaxed mb-6">
-                Have a verified advocate draft and serve an unassailable Section 138 / Section 141 demand notice directly to the corporate drawer and its key officers in charge (Managing Director, Signatories, and Whole-Time Directors). Dispatched via Registered Speed Post with tracking and digitally served under Section 63 of the Bharatiya Sakshya Adhiniyam, 2023.
+                Have a verified advocate draft and serve an unassailable Section 138 / Section 141 demand notice directly to the corporate drawer and its key officers in charge (Managing Director, Signatories, and Whole-Time Directors). Served by email and WhatsApp under Section 63 of the Bharatiya Sakshya Adhiniyam, 2023. Speed Post is optional at ₹450 per party.
               </p>
               <div className="flex flex-col sm:flex-row sm:items-center gap-4">
                 <button
@@ -44,7 +44,7 @@ export default function CompanyDirectorsNoticeCTA({
                 <div className="text-xs text-slate-300 flex flex-wrap sm:flex-nowrap items-center gap-2 sm:gap-3">
                   <span>✓ 24h Advocate Drafting</span>
                   <span>•</span>
-                  <span>✓ Speed Post + Email / WhatsApp</span>
+                  <span>✓ Email + WhatsApp</span>
                   <span>•</span>
                   <span>✓ Flat ₹{basePrice}</span>
                 </div>

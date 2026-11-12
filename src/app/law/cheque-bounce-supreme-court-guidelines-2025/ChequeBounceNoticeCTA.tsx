@@ -31,7 +31,7 @@ export default function ChequeBounceNoticeCTA({
                 Cheque Bounced? Serve a Formal 15-Day Statutory Legal Demand Notice
               </h3>
               <p className="text-slate-300 text-xs sm:text-sm md:text-base leading-relaxed mb-6">
-                Under Section 138(b) of the Negotiable Instruments Act, you must serve a written demand notice within 30 days of receiving the bank dishonour memo. Have a verified advocate draft and dispatch your statutory notice via Registered Speed Post with tracking and electronic delivery under Section 63 BSA, giving the drawer 15 days to pay before criminal prosecution commences.
+                Under Section 138(b) of the Negotiable Instruments Act, you must serve a written demand notice within 30 days of receiving the bank dishonour memo. Have a verified advocate draft and dispatch your statutory notice by email and WhatsApp under Section 63 BSA, giving the drawer 15 days to pay before criminal prosecution commences. Speed Post is optional at ₹450 per party.
               </p>
               <div className="flex flex-col sm:flex-row sm:items-center gap-4">
                 <button
@@ -44,7 +44,7 @@ export default function ChequeBounceNoticeCTA({
                 <div className="text-xs text-slate-300 flex flex-wrap sm:flex-nowrap items-center gap-2 sm:gap-3">
                   <span>✓ 24h Advocate Drafting</span>
                   <span>•</span>
-                  <span>✓ Speed Post + E-Delivery</span>
+                  <span>✓ Email + WhatsApp</span>
                   <span>•</span>
                   <span>✓ Flat ₹{basePrice}</span>
                 </div>

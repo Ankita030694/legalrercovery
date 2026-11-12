@@ -31,7 +31,7 @@ export default function FlipkartNoticeCTA({
             </span>
           </div>
           <p className="text-[11px] text-slate-300 leading-relaxed mb-4">
-            Delivered in 24 hours. Includes drafting, Speed Post dispatch with tracking, and Section 63 BSA digital evidence bundle.
+            Delivered in 24 hours. Includes drafting, email and WhatsApp dispatch with tracking, and Section 63 BSA digital evidence bundle. Speed Post is optional at ₹450 per party.
           </p>
           <button
             type="button"
@@ -79,7 +79,7 @@ export default function FlipkartNoticeCTA({
             <div className="text-xs text-slate-400 flex flex-col sm:flex-row sm:items-center gap-1 sm:gap-3">
               <span>✓ 24-Hour Delivery</span>
               <span className="hidden sm:inline">•</span>
-              <span>✓ Registered Post & Email</span>
+              <span>✓ Email & WhatsApp</span>
               <span className="hidden sm:inline">•</span>
               <span>✓ Flat ₹{basePrice} Transparent Fee</span>
             </div>

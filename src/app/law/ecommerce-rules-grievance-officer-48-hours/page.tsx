@@ -299,7 +299,7 @@ export default function EcommerceRulesPage() {
                     <th scope="row" className="p-3.5 font-semibold text-slate-900">Legal Notice Platform Fee</th>
                     <td className="p-3.5 font-medium text-emerald-700">₹{BASE_PRICE} Flat</td>
                     <td className="p-3.5 text-slate-600">LegalRecovery transparent fee</td>
-                    <td className="p-3.5 text-slate-600">Advocate drafting, formal email service, and Speed Post tracking</td>
+                    <td className="p-3.5 text-slate-600">Advocate drafting and formal email and WhatsApp service (Speed Post optional, ₹450)</td>
                   </tr>
                 </tbody>
               </table>
@@ -716,7 +716,7 @@ export default function EcommerceRulesPage() {
                       <text x="95" y="19" textAnchor="middle" fontSize="11" fontWeight="bold" fill="#FFFFFF">STAGE 3: DAY 15</text>
                       <text x="95" y="55" textAnchor="middle" fontSize="13" fontWeight="bold" fill="#FFFFFF">Advocate Legal Notice</text>
                       <text x="95" y="75" textAnchor="middle" fontSize="11" fill="#E2E8F0">Joint Liability Demand</text>
-                      <text x="95" y="93" textAnchor="middle" fontSize="11" fill="#E2E8F0">Speed Post + Email Copy</text>
+                      <text x="95" y="93" textAnchor="middle" fontSize="11" fill="#E2E8F0">Email + WhatsApp Service</text>
                       <text x="95" y="115" textAnchor="middle" fontSize="10" fontStyle="italic" fill="#FCA5A5">₹{BASE_PRICE} Transparent Fee</text>
                     </g>
                     <line x1="645" y1="85" x2="675" y2="85" stroke="#64748B" strokeWidth="2" markerEnd="url(#arrow)" />

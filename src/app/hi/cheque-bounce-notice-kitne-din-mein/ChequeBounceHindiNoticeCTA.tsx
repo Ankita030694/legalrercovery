@@ -31,7 +31,7 @@ export default function ChequeBounceHindiNoticeCTA({
                 चेक बाउंस की 30-दिन की समय सीमा निकलने न दें — आज ही वकील से नोटिस भिजवाएं
               </h3>
               <p className="text-slate-300 text-xs sm:text-sm md:text-base leading-relaxed mb-6">
-                परक्राम्य लिखत अधिनियम, 1881 की धारा 138(b) के तहत बैंक रिटर्न मेमो मिलने के 30 दिनों के भीतर डिमांड नोटिस भेजना अनिवार्य है। हमारे अनुभवी एडवोकेट आपके चेक और रिटर्न मेमो की जांच करके वैधानिक नोटिस तैयार करते हैं और इसे रजिस्टर्ड स्पीड पोस्ट तथा WhatsApp/ईमेल (Section 63 BSA 2023 एवं सुप्रीम कोर्ट 2025 दिशानिर्देश) से देनदार को तामील कराते हैं।
+                परक्राम्य लिखत अधिनियम, 1881 की धारा 138(b) के तहत बैंक रिटर्न मेमो मिलने के 30 दिनों के भीतर डिमांड नोटिस भेजना अनिवार्य है। हमारे अनुभवी एडवोकेट आपके चेक और रिटर्न मेमो की जांच करके वैधानिक नोटिस तैयार करते हैं और इसे WhatsApp/ईमेल (Section 63 BSA 2023 एवं सुप्रीम कोर्ट 2025 दिशानिर्देश) से देनदार को तामील कराते हैं। स्पीड पोस्ट वैकल्पिक है (₹450 प्रति पार्टी)।
               </p>
               <div className="flex flex-col sm:flex-row sm:items-center gap-4">
                 <button
@@ -44,7 +44,7 @@ export default function ChequeBounceHindiNoticeCTA({
                 <div className="text-xs text-slate-300 flex flex-wrap sm:flex-nowrap items-center gap-2 sm:gap-3">
                   <span>✓ 24 घंटे में एडवोकेट ड्राफ्टिंग</span>
                   <span>•</span>
-                  <span>✓ स्पीड पोस्ट + डिजिटल तामील</span>
+                  <span>✓ ईमेल + WhatsApp तामील</span>
                   <span>•</span>
                   <span>✓ कुल शुल्क ₹{basePrice} (स्पष्ट कीमत)</span>
                 </div>

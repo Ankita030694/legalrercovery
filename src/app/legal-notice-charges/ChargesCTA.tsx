@@ -22,7 +22,7 @@ export default function ChargesCTA({
             One flat fee: ₹{basePrice} per opposite party
           </h3>
           <p className="text-slate-300 text-xs sm:text-sm md:text-base leading-relaxed mb-6">
-            An advocate drafts your notice and it is sent by Registered Speed Post, email and WhatsApp, with tracking. No consultation, typing or postage charges on top.
+            An advocate drafts your notice and it is sent by email and WhatsApp, with tracking. No consultation or typing charges on top. Speed Post is optional at ₹450 per party, charged at cost.
           </p>
           <div className="flex flex-col sm:flex-row sm:items-center gap-4">
             <button
@@ -35,7 +35,7 @@ export default function ChargesCTA({
             <div className="text-xs text-slate-300 flex flex-wrap items-center gap-2">
               <span>✓ Advocate drafting</span>
               <span>•</span>
-              <span>✓ Speed Post + digital delivery</span>
+              <span>✓ Email + WhatsApp</span>
               <span>•</span>
               <span>✓ Tracking</span>
             </div>

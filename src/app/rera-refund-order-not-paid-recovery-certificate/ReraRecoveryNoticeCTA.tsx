@@ -31,7 +31,7 @@ export default function ReraRecoveryNoticeCTA({
                 Builder Ignoring Your RERA Refund Order? Trigger Section 40 Recovery &amp; Section 63 Penalties
               </h3>
               <p className="text-slate-300 text-xs sm:text-sm md:text-base leading-relaxed mb-6">
-                Have a verified advocate draft and serve a formal pre-execution statutory compliance notice to the defaulting promoter, its directors, and project escrow bank, putting them on notice of immediate Section 40(1) Recovery Certificate attachment as arrears of land revenue and daily penal fines up to 5% of project cost under Section 63. Dispatched via Registered Speed Post and digitally served under Section 63 of the Bharatiya Sakshya Adhiniyam, 2023.
+                Have a verified advocate draft and serve a formal pre-execution statutory compliance notice to the defaulting promoter, its directors, and project escrow bank, putting them on notice of immediate Section 40(1) Recovery Certificate attachment as arrears of land revenue and daily penal fines up to 5% of project cost under Section 63. Served by email and WhatsApp under Section 63 of the Bharatiya Sakshya Adhiniyam, 2023. Speed Post is optional at ₹450 per party.
               </p>
               <div className="flex flex-col sm:flex-row sm:items-center gap-4">
                 <button
@@ -44,7 +44,7 @@ export default function ReraRecoveryNoticeCTA({
                 <div className="text-xs text-slate-300 flex flex-wrap sm:flex-nowrap items-center gap-2 sm:gap-3">
                   <span>✓ 24h Advocate Drafting</span>
                   <span>•</span>
-                  <span>✓ Speed Post + Email / WhatsApp</span>
+                  <span>✓ Email + WhatsApp</span>
                   <span>•</span>
                   <span>✓ Flat ₹{basePrice}</span>
                 </div>

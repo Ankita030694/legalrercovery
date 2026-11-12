@@ -27,11 +27,11 @@ const faqs = [
   },
   {
     question: "What is the cost of sending a legal notice through your platform?",
-    answer: "Our legal notice service starts at a flat fee of ₹999. This covers advocate review, professional drafting with relevant legal sections, dispatch via Registered Post, digital delivery (email/WhatsApp), and a soft copy of the notice for your records. There are zero hidden fees or additional charges."
+    answer: "Our legal notice service starts at a flat fee of ₹999. This covers advocate review, professional drafting with relevant legal sections, delivery by email and WhatsApp, and a soft copy of the notice for your records. Speed Post is optional at ₹450 per party, charged at cost. There are no other fees."
   },
   {
     question: "How long does it take for the recipient to receive the legal notice?",
-    answer: "The advocate-drafted notice is dispatched within 48 hours of your submission. Registered Post delivery typically takes 5-7 business days depending on the destination city. Digital copies via email and WhatsApp are sent simultaneously for immediate awareness. You receive delivery tracking details and postal acknowledgment."
+    answer: "The advocate-drafted notice is dispatched within 48 hours of your submission. It is delivered by email and WhatsApp for immediate awareness, and you receive delivery tracking details. If you add the optional Speed Post (₹450 per party), postal delivery typically takes 5-7 business days depending on the destination city."
   },
   {
     question: "What documents do I need to provide for drafting a legal notice?",
@@ -47,7 +47,7 @@ const faqs = [
   },
   {
     question: "Is the entire legal notice process handled online?",
-    answer: "Yes, the entire process is 100% digital and paperless from your end. You submit details and documents online, our advocates review and draft the notice, we handle dispatch via Registered Post, and you can track delivery status from your dashboard. No office visits or in-person meetings are required."
+    answer: "Yes, the entire process is 100% digital and paperless from your end. You submit details and documents online, our advocates review and draft the notice, we handle dispatch by email and WhatsApp (Speed Post optional), and you can track delivery status from your dashboard. No office visits or in-person meetings are required."
   }
 ];
 
@@ -227,7 +227,7 @@ export default function LegalNoticeClient({ location }: LegalNoticeClientProps) 
                     <strong>Legal Recovery</strong> offers professional legal notice drafting and dispatch services in <strong>{locationName}</strong>. Our experienced advocate panel drafts notices that are legally precise, cite the relevant statutory provisions, and create maximum pressure on the defaulting party to comply — all for a flat fee of just ₹999.
                   </p>
                   <p className="text-sm md:text-lg leading-relaxed text-gray-700">
-                    Unlike traditional methods that require multiple advocate consultations and office visits, our platform is entirely digital. Submit your dispute details online, and our team handles everything from drafting to registered post dispatch, ensuring your legal notice reaches the recipient promptly and with full postal acknowledgment.
+                    Unlike traditional methods that require multiple advocate consultations and office visits, our platform is entirely digital. Submit your dispute details online, and our team handles everything from drafting to email and WhatsApp dispatch, ensuring your legal notice reaches the recipient promptly. Speed Post with postal acknowledgment is optional.
                   </p>
                 </section>
 
@@ -407,7 +407,7 @@ export default function LegalNoticeClient({ location }: LegalNoticeClientProps) 
                       <div>
                         <h3 className="text-lg md:text-2xl font-bold text-gray-900 mb-2 md:mb-3">Track Delivery & Follow Up</h3>
                         <p className="text-gray-700 leading-relaxed text-sm md:text-base">
-                          Track the postal delivery status from your dashboard. Once the notice period expires, if the recipient has not complied, our team advises you on the next steps — whether it is filing a consumer complaint, a police report, or proceeding to court.
+                          Track the delivery status from your dashboard. Once the notice period expires, if the recipient has not complied, our team advises you on the next steps — whether it is filing a consumer complaint, a police report, or proceeding to court.
                         </p>
                       </div>
                     </div>
@@ -452,7 +452,7 @@ export default function LegalNoticeClient({ location }: LegalNoticeClientProps) 
                     <div className="p-4 md:p-6 rounded-xl bg-gray-50 hover:bg-[#fff9e6] transition-colors">
                       <div className="text-3xl md:text-4xl mb-3 md:mb-4">💵</div>
                       <h3 className="font-bold text-lg md:text-xl mb-2">Flat ₹999 Fee</h3>
-                      <p className="text-gray-600 text-sm">No hourly billing, no retainers, no hidden charges. One transparent flat fee covers everything — advocate drafting, registered post dispatch, and digital delivery.</p>
+                      <p className="text-gray-600 text-sm">No hourly billing, no retainers, no hidden charges. One transparent flat fee covers advocate drafting and delivery by email and WhatsApp. Speed Post is optional at ₹450 per party.</p>
                     </div>
                   </div>
                 </section>
@@ -524,7 +524,7 @@ export default function LegalNoticeClient({ location }: LegalNoticeClientProps) 
                       </button>
                     </div>
                     <p className="mt-4 md:mt-8 text-xs md:text-sm opacity-70">
-                      Advocate Drafted • Registered Post • 48-Hour Dispatch
+                      Advocate Drafted • Email + WhatsApp • 48-Hour Dispatch
                     </p>
                   </div>
                 </section>

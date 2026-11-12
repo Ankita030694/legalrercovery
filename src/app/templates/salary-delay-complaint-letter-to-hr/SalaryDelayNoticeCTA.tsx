@@ -31,7 +31,7 @@ export default function SalaryDelayNoticeCTA({
                 Still Awaiting Delayed Salary? Issue a Formal Advocate Legal Notice
               </h3>
               <p className="text-slate-300 text-xs sm:text-sm md:text-base leading-relaxed mb-6">
-                When HR emails and reminders yield empty promises, escalate to a verified advocate demand notice served to your employer, Managing Director, and Board of Directors. Dispatched via Registered Speed Post with tracking and digital notice under Section 63 of Bharatiya Sakshya Adhiniyam, 2023, demanding 18% compound interest and immediate bank credit.
+                When HR emails and reminders yield empty promises, escalate to a verified advocate demand notice served to your employer, Managing Director, and Board of Directors. Served by email and WhatsApp under Section 63 of Bharatiya Sakshya Adhiniyam, 2023, demanding 18% compound interest and immediate bank credit. Speed Post is optional at ₹450 per party.
               </p>
               <div className="flex flex-col sm:flex-row sm:items-center gap-4">
                 <button
@@ -44,7 +44,7 @@ export default function SalaryDelayNoticeCTA({
                 <div className="text-xs text-slate-300 flex flex-wrap sm:flex-nowrap items-center gap-2 sm:gap-3">
                   <span>✓ 24h Advocate Drafting</span>
                   <span>•</span>
-                  <span>✓ Speed Post + Email Notice</span>
+                  <span>✓ Email + WhatsApp</span>
                   <span>•</span>
                   <span>✓ Flat ₹{basePrice}</span>
                 </div>

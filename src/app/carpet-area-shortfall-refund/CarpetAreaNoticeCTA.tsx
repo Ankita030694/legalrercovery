@@ -31,7 +31,7 @@ export default function CarpetAreaNoticeCTA({
                 Delivered a Smaller Flat Than Promised? Demand Your Proportionate Refund &amp; Interest
               </h3>
               <p className="text-slate-300 text-xs sm:text-sm md:text-base leading-relaxed mb-6">
-                Have a verified real-estate advocate draft and serve a formal 15-day statutory demand notice to the builder and its directors invoking Section 2(k), Section 12, and Section 14 of RERA, 2016, Model Agreement for Sale Clause 1.7, and Section 2(47) of the Consumer Protection Act, 2019. Dispatched via Registered Speed Post with tracking and Section 63 BSA electronic delivery.
+                Have a verified real-estate advocate draft and serve a formal 15-day statutory demand notice to the builder and its directors invoking Section 2(k), Section 12, and Section 14 of RERA, 2016, Model Agreement for Sale Clause 1.7, and Section 2(47) of the Consumer Protection Act, 2019. Served by email and WhatsApp under Section 63 BSA. Speed Post is optional at ₹450 per party.
               </p>
               <div className="flex flex-col sm:flex-row sm:items-center gap-4">
                 <button
@@ -44,7 +44,7 @@ export default function CarpetAreaNoticeCTA({
                 <div className="text-xs text-slate-300 flex flex-wrap sm:flex-nowrap items-center gap-2 sm:gap-3">
                   <span>✓ 24h Advocate Drafting</span>
                   <span>•</span>
-                  <span>✓ Speed Post + Email/WhatsApp</span>
+                  <span>✓ Email + WhatsApp</span>
                   <span>•</span>
                   <span>✓ Flat ₹{basePrice}</span>
                 </div>

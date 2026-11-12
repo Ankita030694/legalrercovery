@@ -31,7 +31,7 @@ export default function ScamRecoveryNoticeCTA({
                 Hold Liable Banks &amp; Intermediaries Accountable for Cyber Fraud Losses
               </h3>
               <p className="text-slate-300 text-xs sm:text-sm md:text-base leading-relaxed mb-6">
-                If your bank failed to block flagged mule accounts, delayed processing your 1930 cyber acknowledgement, or refused zero-liability reversal for unauthorised debits, have a verified advocate serve a formal legal notice. Enforceable under RBI Circular DBR.No.Leg.BC.78/09.07.005/2017-18 and Section 2(11) of the Consumer Protection Act, 2019. Dispatched via Speed Post with digital proof under Section 63 Bharatiya Sakshya Adhiniyam, 2023.
+                If your bank failed to block flagged mule accounts, delayed processing your 1930 cyber acknowledgement, or refused zero-liability reversal for unauthorised debits, have a verified advocate serve a formal legal notice. Enforceable under RBI Circular DBR.No.Leg.BC.78/09.07.005/2017-18 and Section 2(11) of the Consumer Protection Act, 2019. Served by email and WhatsApp under Section 63 Bharatiya Sakshya Adhiniyam, 2023. Speed Post is optional at ₹450 per party.
               </p>
               <div className="flex flex-col sm:flex-row sm:items-center gap-4">
                 <button
@@ -44,7 +44,7 @@ export default function ScamRecoveryNoticeCTA({
                 <div className="text-xs text-slate-300 flex flex-wrap sm:flex-nowrap items-center gap-2 sm:gap-3">
                   <span>✓ 24h Advocate Drafting</span>
                   <span>•</span>
-                  <span>✓ Speed Post + Email / WhatsApp</span>
+                  <span>✓ Email + WhatsApp</span>
                   <span>•</span>
                   <span>✓ Flat ₹{basePrice}</span>
                 </div>

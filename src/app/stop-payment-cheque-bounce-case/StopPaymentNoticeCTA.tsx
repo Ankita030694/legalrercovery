@@ -31,7 +31,7 @@ export default function StopPaymentNoticeCTA({
                 Drawer Stopped Payment? Serve a 15-Day Statutory Notice Before the 30-Day Deadline Expires
               </h3>
               <p className="text-slate-300 text-xs sm:text-sm md:text-base leading-relaxed mb-6">
-                Have an experienced NI Act advocate draft and dispatch an unassailable Section 138 statutory demand notice directly to the drawer. Dispatched via Registered Speed Post with barcoded tracking and served electronically with Section 63 BSA compliance to prevent evasive defences.
+                Have an experienced NI Act advocate draft and dispatch an unassailable Section 138 statutory demand notice directly to the drawer. Served by email and WhatsApp under Section 63 BSA to prevent evasive defences. Speed Post is optional at ₹450 per party.
               </p>
               <div className="flex flex-col sm:flex-row sm:items-center gap-4">
                 <button
@@ -44,7 +44,7 @@ export default function StopPaymentNoticeCTA({
                 <div className="text-xs text-slate-300 flex flex-wrap sm:flex-nowrap items-center gap-2 sm:gap-3">
                   <span>✓ 24h Advocate Drafting</span>
                   <span>•</span>
-                  <span>✓ Speed Post + Email Service</span>
+                  <span>✓ Email + WhatsApp</span>
                   <span>•</span>
                   <span>✓ Flat ₹{basePrice}</span>
                 </div>

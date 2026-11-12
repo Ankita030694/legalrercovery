@@ -31,7 +31,7 @@ export default function SecurityDepositLetterNoticeCTA({
                 Landlord Ignored Your Refund Letter or Cut 1 Month&apos;s Rent for Painting?
               </h3>
               <p className="text-slate-300 text-xs sm:text-sm md:text-base leading-relaxed mb-6">
-                When a self-sent refund request letter goes unanswered past your 7-day deadline, escalate immediately. Have a verified advocate draft and dispatch a formal 15-day statutory legal notice to your landlord, PG owner, or co-living operator via Registered Speed Post (RPAD) and Section 63 BSA electronic delivery—demanding 100% principal refund plus 18% annual interest.
+                When a self-sent refund request letter goes unanswered past your 7-day deadline, escalate immediately. Have a verified advocate draft and dispatch a formal 15-day statutory legal notice to your landlord, PG owner, or co-living operator by email and WhatsApp under Section 63 BSA—demanding 100% principal refund plus 18% annual interest. Speed Post is optional at ₹450 per party.
               </p>
               <div className="flex flex-col sm:flex-row sm:items-center gap-4">
                 <button
@@ -44,7 +44,7 @@ export default function SecurityDepositLetterNoticeCTA({
                 <div className="text-xs text-slate-300 flex flex-wrap sm:flex-nowrap items-center gap-2 sm:gap-3">
                   <span>✓ 24h Advocate Drafting</span>
                   <span>•</span>
-                  <span>✓ Speed Post + Email + WhatsApp</span>
+                  <span>✓ Email + WhatsApp</span>
                   <span>•</span>
                   <span>✓ Flat ₹{basePrice}</span>
                 </div>

@@ -31,7 +31,7 @@ export default function DistributorNoticeCTA({
                 Recover Stuck Ledger Balances From Defaulting Distributors, Stockists &amp; Dealers
               </h3>
               <p className="text-slate-300 text-xs sm:text-sm md:text-base leading-relaxed mb-6">
-                Have a commercial recovery advocate draft and serve a formal statutory demand notice on your defaulting dealer, proprietor, or dealership partners. We combine ledger balance reconciliation, Section 16 MSME compound interest (3× RBI bank rate), Section 43B(h) income-tax disallowance warnings, and Section 138 cheque dishonour notices—dispatched via Registered Speed Post and Section 63 BSA electronic delivery.
+                Have a commercial recovery advocate draft and serve a formal statutory demand notice on your defaulting dealer, proprietor, or dealership partners. We combine ledger balance reconciliation, Section 16 MSME compound interest (3× RBI bank rate), Section 43B(h) income-tax disallowance warnings, and Section 138 cheque dishonour notices—served by email and WhatsApp under Section 63 BSA. Speed Post is optional at ₹450 per party.
               </p>
               <div className="flex flex-col sm:flex-row sm:items-center gap-4">
                 <button
@@ -44,7 +44,7 @@ export default function DistributorNoticeCTA({
                 <div className="text-xs text-slate-300 flex flex-wrap sm:flex-nowrap items-center gap-2 sm:gap-3">
                   <span>✓ 24h Advocate Drafting</span>
                   <span>•</span>
-                  <span>✓ Speed Post + Email/WhatsApp</span>
+                  <span>✓ Email + WhatsApp</span>
                   <span>•</span>
                   <span>✓ Flat ₹{basePrice}</span>
                 </div>

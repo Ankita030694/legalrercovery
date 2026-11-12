@@ -31,7 +31,7 @@ export default function TelecomNoticeCTA({
                 Recover Your Withheld Security Deposit, Failed Recharge or Disputed Telecom Bill
               </h3>
               <p className="text-slate-300 text-xs sm:text-sm md:text-base leading-relaxed mb-6">
-                Have a verified advocate draft and serve an official statutory legal demand notice directly to Reliance Jio, Bharti Airtel, Vodafone Idea, ACT Fibernet, or BSNL. Formally dispatched via Registered Speed Post with tracking and served electronically under Section 63 of the Bharatiya Sakshya Adhiniyam, 2023.
+                Have a verified advocate draft and serve an official statutory legal demand notice directly to Reliance Jio, Bharti Airtel, Vodafone Idea, ACT Fibernet, or BSNL. Served by email and WhatsApp under Section 63 of the Bharatiya Sakshya Adhiniyam, 2023. Speed Post is optional at ₹450 per party.
               </p>
               <div className="flex flex-col sm:flex-row sm:items-center gap-4">
                 <button
@@ -44,7 +44,7 @@ export default function TelecomNoticeCTA({
                 <div className="text-xs text-slate-300 flex flex-wrap sm:flex-nowrap items-center gap-2 sm:gap-3">
                   <span>✓ 24h Advocate Drafting</span>
                   <span>•</span>
-                  <span>✓ Speed Post + Email Dispatch</span>
+                  <span>✓ Email + WhatsApp</span>
                   <span>•</span>
                   <span>✓ Flat ₹{basePrice}</span>
                 </div>

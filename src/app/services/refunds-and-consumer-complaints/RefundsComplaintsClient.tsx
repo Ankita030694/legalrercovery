@@ -502,7 +502,7 @@ export default function RefundsComplaintsClient() {
                       <h4 className="font-extrabold text-[#111827] text-sm">Stage 1: Advocate Demand Notice</h4>
                     </div>
                     <p className="text-xs text-[#4B5563] leading-relaxed">
-                      We serve a formal legal notice on an advocate&apos;s letterhead via tracked email and registered post, giving the seller 15 days to settle.
+                      We serve a formal legal notice on an advocate&apos;s letterhead via tracked email and WhatsApp (Speed Post optional), giving the seller 15 days to settle.
                     </p>
                   </div>
 

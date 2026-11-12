@@ -31,7 +31,7 @@ export default function ConsumerCommissionNoticeCTA({
                 Serve a Formal Legal Demand Notice Before Filing in Consumer Court
               </h3>
               <p className="text-slate-300 text-xs sm:text-sm md:text-base leading-relaxed mb-6">
-                Consumer commissions mandate establishing deficiency in service under Section 2(11) or unfair trade practice under Section 2(47). Serving a verified advocate legal notice gives the seller or service provider 15 days to refund your money or replace the defective product, avoiding lengthy litigation. Dispatched via Registered Speed Post with tracking and electronic delivery under Section 63 of Bharatiya Sakshya Adhiniyam, 2023.
+                Consumer commissions mandate establishing deficiency in service under Section 2(11) or unfair trade practice under Section 2(47). Serving a verified advocate legal notice gives the seller or service provider 15 days to refund your money or replace the defective product, avoiding lengthy litigation. Served by email and WhatsApp under Section 63 of Bharatiya Sakshya Adhiniyam, 2023. Speed Post is optional at ₹450 per party.
               </p>
               <div className="flex flex-col sm:flex-row sm:items-center gap-4">
                 <button
@@ -44,7 +44,7 @@ export default function ConsumerCommissionNoticeCTA({
                 <div className="text-xs text-slate-300 flex flex-wrap sm:flex-nowrap items-center gap-2 sm:gap-3">
                   <span>✓ 24h Advocate Drafting</span>
                   <span>•</span>
-                  <span>✓ Speed Post + BSA Email</span>
+                  <span>✓ Email + WhatsApp</span>
                   <span>•</span>
                   <span>✓ Flat ₹{basePrice}</span>
                 </div>

@@ -31,7 +31,7 @@ export default function CibilNoticeCTA({
                 Rectify Erroneous CIBIL Records &amp; Claim RBI ₹100/Day Delay Compensation
               </h3>
               <p className="text-slate-300 text-xs sm:text-sm md:text-base leading-relaxed mb-6">
-                Have an advocate draft and serve a formal statutory legal demand notice on your lending bank, NBFC, and TransUnion CIBIL / Experian. Demands immediate credit score restoration within 15 days, expunging of wrongful overdue/DPD tags, and statutory delay compensation under RBI circular DoR.FIN.REC.48/20.16.003/2023-24. Dispatched via Registered Speed Post with tracking and served electronically under Section 63 BSA 2023.
+                Have an advocate draft and serve a formal statutory legal demand notice on your lending bank, NBFC, and TransUnion CIBIL / Experian. Demands immediate credit score restoration within 15 days, expunging of wrongful overdue/DPD tags, and statutory delay compensation under RBI circular DoR.FIN.REC.48/20.16.003/2023-24. Served by email and WhatsApp under Section 63 BSA 2023. Speed Post is optional at ₹450 per party.
               </p>
               <div className="flex flex-col sm:flex-row sm:items-center gap-4">
                 <button
@@ -44,7 +44,7 @@ export default function CibilNoticeCTA({
                 <div className="text-xs text-slate-300 flex flex-wrap sm:flex-nowrap items-center gap-2 sm:gap-3">
                   <span>✓ 24h Advocate Drafting</span>
                   <span>•</span>
-                  <span>✓ Speed Post + Email Service</span>
+                  <span>✓ Email + WhatsApp</span>
                   <span>•</span>
                   <span>✓ Flat ₹{basePrice}</span>
                 </div>

@@ -31,7 +31,7 @@ export default function PfComplaintCTA({
                 Has Your Employer Deducted PF from Salary but Failed to Deposit It?
               </h3>
               <p className="text-slate-300 text-xs sm:text-sm md:text-base leading-relaxed mb-6">
-                Deducting PF from your monthly wages without depositing it to the EPFO is a cognizable criminal offense under Section 316 of the Bharatiya Nyaya Sanhita, 2023 (Criminal Breach of Trust) and punishable with up to 3 years imprisonment under Section 14 of the EPF Act. Have an experienced labour advocate issue a formal 15-day statutory demand notice directly to your employer, Managing Director, and Board of Directors via Registered Speed Post and BSA Section 63 compliant electronic mail.
+                Deducting PF from your monthly wages without depositing it to the EPFO is a cognizable criminal offense under Section 316 of the Bharatiya Nyaya Sanhita, 2023 (Criminal Breach of Trust) and punishable with up to 3 years imprisonment under Section 14 of the EPF Act. Have an experienced labour advocate issue a formal 15-day statutory demand notice directly to your employer, Managing Director, and Board of Directors by email and WhatsApp under BSA Section 63. Speed Post is optional at ₹450 per party.
               </p>
               <div className="flex flex-col sm:flex-row sm:items-center gap-4">
                 <button
@@ -44,7 +44,7 @@ export default function PfComplaintCTA({
                 <div className="text-xs text-slate-300 flex flex-wrap sm:flex-nowrap items-center gap-2 sm:gap-3">
                   <span>✓ 24h Advocate Drafting</span>
                   <span>•</span>
-                  <span>✓ Speed Post + Section 63 Email</span>
+                  <span>✓ Email + WhatsApp</span>
                   <span>•</span>
                   <span>✓ Flat ₹{basePrice}</span>
                 </div>

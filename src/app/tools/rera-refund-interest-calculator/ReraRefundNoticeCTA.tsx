@@ -31,7 +31,7 @@ export default function ReraRefundNoticeCTA({
                 Builder Delaying Handover or Forfeiting Booking Money? Demand Full Refund + SBI MCLR Interest
               </h3>
               <p className="text-slate-300 text-xs sm:text-sm md:text-base leading-relaxed mb-6">
-                Attach your itemised Section 18 interest schedule to a formal advocate legal notice served on the promoter&apos;s directors and registered office. Our real-estate recovery advocates cite <em>Newtech Promoters (SC 2021)</em>, state MCLR + 2% rules, and Section 40 land-revenue attachment provisions—dispatched via Registered Speed Post and Section 63 BSA electronic mail.
+                Attach your itemised Section 18 interest schedule to a formal advocate legal notice served on the promoter&apos;s directors and registered office. Our real-estate recovery advocates cite <em>Newtech Promoters (SC 2021)</em>, state MCLR + 2% rules, and Section 40 land-revenue attachment provisions—served by email and WhatsApp under Section 63 BSA. Speed Post is optional at ₹450 per party.
               </p>
               <div className="flex flex-col sm:flex-row sm:items-center gap-4">
                 <button
@@ -44,7 +44,7 @@ export default function ReraRefundNoticeCTA({
                 <div className="text-xs text-slate-300 flex flex-wrap sm:flex-nowrap items-center gap-2 sm:gap-3">
                   <span>✓ 24h Advocate Drafting</span>
                   <span>•</span>
-                  <span>✓ Speed Post + BSA Email</span>
+                  <span>✓ Email + WhatsApp</span>
                   <span>•</span>
                   <span>✓ Flat ₹{basePrice}</span>
                 </div>

@@ -211,7 +211,7 @@ export default function BlinkitLegalNoticePage() {
             name: "Blinkit se missing item ya galat order ka refund na mile to legal notice kaise bheje?",
             acceptedAnswer: {
               "@type": "Answer",
-              text: "Agar Blinkit customer care missing items ya kharab rashan ka refund na de, toh advocate dwara Blink Commerce Private Limited ko 15 dino ka legal notice bhejein. Notice Speed Post aur email se bheja jata hai. Isme bill, photos, aur chat logs lagaye jaate hain. Notice milne par company aamtaur par court case se bachne ke liye refund kar deti hai.",
+              text: "Agar Blinkit customer care missing items ya kharab rashan ka refund na de, toh advocate dwara Blink Commerce Private Limited ko 15 dino ka legal notice bhejein. Notice email aur WhatsApp se bheja jata hai (Speed Post optional, ₹450 per party). Isme bill, photos, aur chat logs lagaye jaate hain. Notice milne par company aamtaur par court case se bachne ke liye refund kar deti hai.",
             },
           },
         ],
@@ -720,7 +720,7 @@ export default function BlinkitLegalNoticePage() {
                   </span>
                 </div>
                 <p className="text-sm text-slate-600 leading-relaxed mb-3">
-                  When informal customer care and grievance emails fail to deliver a refund, having an advocate issue a formal legal notice changes the equation entirely. The notice is served via Registered Speed Post to Blink Commerce Private Limited&apos;s registered corporate headquarters in Gurugram and New Delhi, as well as digitally transmitted to their legal escalation desk.
+                  When informal customer care and grievance emails fail to deliver a refund, having an advocate issue a formal legal notice changes the equation entirely. The notice is digitally transmitted by email and WhatsApp to Blink Commerce Private Limited&apos;s legal escalation desk, with optional Registered Speed Post (₹450 per party) to its registered corporate headquarters in Gurugram and New Delhi.
                 </p>
                 <div className="p-3 bg-red-50/70 border border-red-200/80 rounded-xl text-xs text-red-950">
                   <strong>Notice Mandate:</strong> The notice specifies a 15-day cure period under Section 35 of the CPA 2019, quantifying your claim for the refund amount, statutory interest at 9% to 18%, mental agony compensation (₹5,000 to ₹25,000), and advocate costs. Over 85% of quick-commerce disputes settle at this stage.
@@ -887,7 +887,7 @@ export default function BlinkitLegalNoticePage() {
                       Standardized Pre-Litigation Protocol
                     </td>
                     <td className="px-5 py-4 text-xs text-slate-600">
-                      Includes 24h advocate drafting, Speed Post tracking, and digital delivery.
+                      Includes 24h advocate drafting and email + WhatsApp delivery. Speed Post optional (₹450).
                     </td>
                   </tr>
                 </tbody>
@@ -979,7 +979,7 @@ export default function BlinkitLegalNoticePage() {
                   <text x="16" y="30" fontSize="13" fontWeight="bold" fill="#F8FAFC">4. Statutory Advocate Notice</text>
                   <text x="16" y="50" fontSize="11" fill="#FCA5A5">Served on Blink Commerce Pvt Ltd</text>
                   <text x="16" y="70" fontSize="11" fill="#CBD5E1">• Grievance Officer &amp; Legal Desk</text>
-                  <text x="16" y="88" fontSize="11" fill="#CBD5E1">• Registered Speed Post + Email</text>
+                  <text x="16" y="88" fontSize="11" fill="#CBD5E1">• Email + WhatsApp Service</text>
                   <text x="16" y="106" fontSize="11" fill="#CBD5E1">• CPA 2019 Sec 2(47) &amp; Rule 4(5)</text>
                   <text x="16" y="124" fontSize="11" fill="#CBD5E1">• Demands 100% Refund + Interest</text>
                   <text x="16" y="142" fontSize="11" fill="#FDE047" fontWeight="bold">15-Day Cure Window</text>
@@ -1206,7 +1206,7 @@ export default function BlinkitLegalNoticePage() {
                   </li>
                   <li className="flex items-start gap-2">
                     <span className="text-green-600 font-bold">✓</span>
-                    <span>Draft and serve a formal, advocate-signed pre-litigation legal demand notice delivered via Registered Speed Post and digital transmission.</span>
+                    <span>Draft and serve a formal, advocate-signed pre-litigation legal demand notice delivered by email and WhatsApp, with optional Speed Post.</span>
                   </li>
                   <li className="flex items-start gap-2">
                     <span className="text-green-600 font-bold">✓</span>
@@ -1334,7 +1334,7 @@ export default function BlinkitLegalNoticePage() {
                   <span className="transition group-open:rotate-180 text-slate-400 font-bold">▼</span>
                 </summary>
                 <div className="mt-3 text-sm text-slate-700 leading-relaxed border-t border-slate-200/60 pt-3">
-                  Agar Blinkit customer care missing items ya kharab rashan ka refund na de, toh advocate dwara Blink Commerce Private Limited ko 15 dino ka legal notice bhejein. Notice Speed Post aur email se bheja jata hai. Isme bill, photos, aur chat logs lagaye jaate hain. Notice milne par company aamtaur par court case se bachne ke liye refund kar deti hai.
+                  Agar Blinkit customer care missing items ya kharab rashan ka refund na de, toh advocate dwara Blink Commerce Private Limited ko 15 dino ka legal notice bhejein. Notice email aur WhatsApp se bheja jata hai (Speed Post optional, ₹450 per party). Isme bill, photos, aur chat logs lagaye jaate hain. Notice milne par company aamtaur par court case se bachne ke liye refund kar deti hai.
                 </div>
               </details>
             </div>

@@ -44,7 +44,7 @@ export default function ServicesPage() {
     },
     {
       question: "What are the legal notice drafting charges in India?",
-      answer: "The cost of legal notice drafting starts at a flat fee of ₹999 on our platform. Our transparent legal notice drafting charges cover advocate review, professional drafting, high-quality printing, speed post dispatch, and digital tracking, with zero hidden commissions or extra retainer fees."
+      answer: "The cost of legal notice drafting starts at a flat fee of ₹999 on our platform. Our transparent legal notice drafting charges cover advocate review, professional drafting, dispatch by email and WhatsApp, and digital tracking, with zero hidden commissions or extra retainer fees. Speed Post is optional at ₹450 per party."
     },
     {
       question: "Can I send legal notice online for unpaid money?",
@@ -431,7 +431,7 @@ export default function ServicesPage() {
               <span className="text-3xl font-black text-[#DC2626] mb-4">03</span>
               <h3 className="text-[16px] font-bold text-[#111827] mb-2">Registered Dispatch</h3>
               <p className="text-[12.5px] sm:text-[13.5px] text-[#4B5563] leading-relaxed font-semibold">
-                We print the document and send a legal notice via Registered Post AD or Speed Post, providing you with instant digital tracking information.
+                We send the legal notice by email and WhatsApp, providing you with instant digital tracking information. Speed Post is optional at ₹450 per party.
               </p>
             </div>
 

@@ -1156,7 +1156,7 @@ export default function FlightDelayCancellationCompensationPage() {
                   <ul className="space-y-2 text-emerald-950">
                     <li>• Computes exact DGCA CAR Series M Part IV statutory slabs based on your flight block time and fare breakdown.</li>
                     <li>• Assigns a licensed Bar Council advocate to draft a customized, legally binding statutory demand notice.</li>
-                    <li>• Dispatches the notice via registered Indian Speed Post with tracking plus official email to carrier nodal desks.</li>
+                    <li>• Dispatches the notice by official email and WhatsApp to carrier nodal desks, with optional Speed Post (₹450 per party).</li>
                     <li>• Prepares an ironclad dispute dossier formatted for subsequent e-Jagriti consumer commission filing if the airline defaults.</li>
                     <li>• Enforces transparency under CPA 2019 Section 2(11) deficiency in service provisions for a flat fee of ₹{BASE_PRICE}.</li>
                   </ul>

@@ -35,7 +35,7 @@ const faqs = [
   },
   {
     question: "Are there any hidden costs beyond the ₹999 flat rate?",
-    answer: "No, there are zero hidden fees. The ₹999 flat fee covers the complete 3-stage notice escalation flow, advocate review, digital copies (WhatsApp/email), and police complaint drafts."
+    answer: "No, there are zero hidden fees. The ₹999 flat fee covers the complete 3-stage notice escalation flow, advocate review, digital copies (WhatsApp/email), and police complaint drafts. Speed Post for the 3 notices is optional at ₹450 per party, charged at cost."
   },
   {
     question: "Can I recover my rental security deposit using the platform?",

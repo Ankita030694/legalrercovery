@@ -31,7 +31,7 @@ export default function FnfNoticeCTA({
                 Recover Your Withheld Full &amp; Final Settlement Dues &amp; Unpaid Salary
               </h3>
               <p className="text-slate-300 text-xs sm:text-sm md:text-base leading-relaxed mb-6">
-                Have a verified advocate draft and serve an official statutory legal demand notice directly to your employer, Managing Director, and HR Head. Dispatched via Registered Speed Post with barcoded delivery tracking and served electronically under Section 63 of the Bharatiya Sakshya Adhiniyam, 2023. Invokes Section 17(2), Section 18, and Section 54 of the Code on Wages, 2019, demanding immediate release of dues with 18% penal interest.
+                Have a verified advocate draft and serve an official statutory legal demand notice directly to your employer, Managing Director, and HR Head. Served by email and WhatsApp under Section 63 of the Bharatiya Sakshya Adhiniyam, 2023. Speed Post is optional at ₹450 per party. Invokes Section 17(2), Section 18, and Section 54 of the Code on Wages, 2019, demanding immediate release of dues with 18% penal interest.
               </p>
               <div className="flex flex-col sm:flex-row sm:items-center gap-4">
                 <button
@@ -44,7 +44,7 @@ export default function FnfNoticeCTA({
                 <div className="text-xs text-slate-300 flex flex-wrap sm:flex-nowrap items-center gap-2 sm:gap-3">
                   <span>✓ 24h Advocate Drafting</span>
                   <span>•</span>
-                  <span>✓ Speed Post + Section 63 BSA Email</span>
+                  <span>✓ Email + WhatsApp</span>
                   <span>•</span>
                   <span>✓ Flat ₹{basePrice}</span>
                 </div>

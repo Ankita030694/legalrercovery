@@ -43,7 +43,7 @@ const faqs = [
   },
   {
     question: "Is there a flat fee structure for online advocate services on LegalRecovery?",
-    answer: "Yes, LegalRecovery uses a flat-fee pricing model starting at ₹999 per opposing party. This all-inclusive rate covers advocate consultation, custom drafting on the advocate's official letterhead, client dashboard review, and electronic service via verified email and WhatsApp. There are no hidden charges or hourly fees."
+    answer: "Yes, LegalRecovery uses a flat-fee pricing model starting at ₹999 per opposing party. This rate covers advocate consultation, custom drafting on the advocate's official letterhead, client dashboard review, and electronic service via verified email and WhatsApp. Speed Post is optional at ₹450 per party. There are no hidden charges or hourly fees."
   },
   {
     question: "What is the role of database queries (MCA and GSTIN) in online drafting?",

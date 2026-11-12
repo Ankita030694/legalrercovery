@@ -31,7 +31,7 @@ export default function GymNoticeCTA({
                 Gym Refusing to Refund Your Annual or Semi-Annual Membership Fees?
               </h3>
               <p className="text-slate-300 text-xs sm:text-sm md:text-base leading-relaxed mb-6">
-                Have a verified advocate draft and serve a high-impact pre-litigation legal demand notice directly to the gym management, brand franchisor, and registered corporate directors. We strike down boilerplate &ldquo;non-refundable&rdquo; clauses under Section 2(46) of the Consumer Protection Act, 2019, demand interest and compensation for mental agony, and initiate e-Jagriti consumer commission proceedings. Dispatched via Registered Speed Post with tracking and digital tracking.
+                Have a verified advocate draft and serve a high-impact pre-litigation legal demand notice directly to the gym management, brand franchisor, and registered corporate directors. We strike down boilerplate &ldquo;non-refundable&rdquo; clauses under Section 2(46) of the Consumer Protection Act, 2019, demand interest and compensation for mental agony, and initiate e-Jagriti consumer commission proceedings. Served by email and WhatsApp with delivery tracking. Speed Post is optional at ₹450 per party.
               </p>
               <div className="flex flex-col sm:flex-row sm:items-center gap-4">
                 <button
@@ -44,7 +44,7 @@ export default function GymNoticeCTA({
                 <div className="text-xs text-slate-300 flex flex-wrap sm:flex-nowrap items-center gap-2 sm:gap-3">
                   <span>✓ 24h Advocate Drafting</span>
                   <span>•</span>
-                  <span>✓ Speed Post + Email Tracking</span>
+                  <span>✓ Email + WhatsApp</span>
                   <span>•</span>
                   <span>✓ Flat ₹{basePrice}</span>
                 </div>

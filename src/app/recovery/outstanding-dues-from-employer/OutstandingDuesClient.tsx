@@ -775,8 +775,8 @@ export default function OutstandingDuesClient() {
                     </p>
                     <ul className="list-disc pl-6 space-y-3 text-sm text-slate-650">
                       <li><strong>Senior Panel Advocates:</strong> Experienced labor and commercial lawyers draft notices with precise statutory citations.</li>
-                      <li><strong>Multi-Channel Escalations:</strong> We deliver registered post notices to company offices and directors&apos; homes for maximum impact.</li>
-                      <li><strong>Live Tracking:</strong> Monitor notice drafting progress and postal delivery directly on your client dashboard.</li>
+                      <li><strong>Multi-Channel Escalations:</strong> We deliver notices by email and WhatsApp to company officers and directors, with optional Speed Post (₹450 per party) to offices and homes for maximum impact.</li>
+                      <li><strong>Live Tracking:</strong> Monitor notice drafting progress and delivery status directly on your client dashboard.</li>
                       <li><strong>Transparent Pricing:</strong> Transparent flat fees with zero hidden charges or unexpected hourly bills.</li>
                     </ul>
                   </div>

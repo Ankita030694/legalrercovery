@@ -31,7 +31,7 @@ export default function ZomatoNoticeCTA({
                 Recover Your Withheld Zomato Refund or Dispute False Delivery
               </h3>
               <p className="text-slate-300 text-sm sm:text-base leading-relaxed mb-6">
-                Serve a formal advocate-drafted legal notice directly to Zomato Limited and the partner restaurant merchant. Dispatched via Registered Speed Post with postal tracking plus digital service under Section 63 of Bharatiya Sakshya Adhiniyam, 2023.
+                Serve a formal advocate-drafted legal notice directly to Zomato Limited and the partner restaurant merchant. Served by email and WhatsApp under Section 63 of Bharatiya Sakshya Adhiniyam, 2023. Speed Post is optional at ₹450 per party.
               </p>
               <div className="flex flex-col sm:flex-row sm:items-center gap-4">
                 <button
@@ -44,7 +44,7 @@ export default function ZomatoNoticeCTA({
                 <div className="text-xs text-slate-400 flex flex-col sm:flex-row sm:items-center gap-1 sm:gap-3">
                   <span>✓ Bar-Enrolled Advocate Drafting</span>
                   <span className="hidden sm:inline">•</span>
-                  <span>✓ 24-Hour Dispatch via Speed Post</span>
+                  <span>✓ 24-Hour Dispatch by Email + WhatsApp</span>
                   <span className="hidden sm:inline">•</span>
                   <span>✓ Flat ₹{basePrice} Transparent Fee</span>
                 </div>

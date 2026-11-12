@@ -178,7 +178,7 @@ const reviewSchema = {
         "@type": "Person",
         "name": "Ranjeet Deshmukh"
       },
-      "reviewBody": "Highly transparent pricing. The ₹999 flat rate covered everything, from lawyer review to postal dispatch. I tracked the delivery status directly on my dashboard. When the debtor signed the online settlement deed, the payment was resolved out of court."
+      "reviewBody": "Highly transparent pricing. The ₹999 flat rate covered lawyer review through to email and WhatsApp dispatch. I tracked the delivery status directly on my dashboard. When the debtor signed the online settlement deed, the payment was resolved out of court."
     },
     {
       "@type": "Review",
@@ -354,7 +354,7 @@ export default function LegalNoticeOnlineClient() {
                       <div className="bg-slate-50 p-6 rounded-2xl border border-slate-100">
                         <h4 className="font-extrabold text-sm sm:text-base text-slate-900 mb-2">A. Flat-Fee Pricing and Financial Transparency</h4>
                         <p className="text-xs sm:text-sm text-slate-650 leading-relaxed">
-                          Unlike traditional advocate chambers that charge hourly consultation rates or variable fees for typing and postage, online portals operate on a flat-fee pricing model. On LegalRecovery, services start at a transparent rate of ₹999 per opposing party. This rate is all-inclusive, covering advocate review, customized drafting, and digital delivery.
+                          Unlike traditional advocate chambers that charge hourly consultation rates or variable fees for typing and postage, online portals operate on a flat-fee pricing model. On LegalRecovery, services start at a transparent rate of ₹999 per opposing party. This rate covers advocate review, customized drafting, and delivery by email and WhatsApp. Speed Post is optional at ₹450 per party.
                         </p>
                       </div>
 

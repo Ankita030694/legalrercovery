@@ -31,7 +31,7 @@ export default function CivilSuitChequeCTA({
                 Recover Your Debt Fast: File Section 138 &amp; Civil Recovery Concurrently
               </h3>
               <p className="text-slate-300 text-xs sm:text-sm md:text-base leading-relaxed mb-6">
-                Have an experienced recovery advocate draft and dispatch a rigorous statutory demand notice that lays the foundation for both criminal prosecution under Section 138 NI Act and a civil summary suit under Order XXXVII CPC. Served via Registered Speed Post and electronic tracking within the strict 30-day statutory window.
+                Have an experienced recovery advocate draft and dispatch a rigorous statutory demand notice that lays the foundation for both criminal prosecution under Section 138 NI Act and a civil summary suit under Order XXXVII CPC. Served by email and WhatsApp with delivery tracking within the strict 30-day statutory window. Speed Post is optional at ₹450 per party.
               </p>
               <div className="flex flex-col sm:flex-row sm:items-center gap-4">
                 <button
@@ -44,7 +44,7 @@ export default function CivilSuitChequeCTA({
                 <div className="text-xs text-slate-300 flex flex-wrap sm:flex-nowrap items-center gap-2 sm:gap-3">
                   <span>✓ 24h Advocate Drafting</span>
                   <span>•</span>
-                  <span>✓ Speed Post + Section 63 BSA Email</span>
+                  <span>✓ Email + WhatsApp</span>
                   <span>•</span>
                   <span>✓ Flat ₹{basePrice}</span>
                 </div>

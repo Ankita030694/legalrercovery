@@ -31,7 +31,7 @@ export default function ReraDelayNoticeCTA({
                 Stop Waiting in Silence: Compel Your Builder to Pay Monthly Delay Compensation
               </h3>
               <p className="text-slate-300 text-xs sm:text-sm md:text-base leading-relaxed mb-6">
-                Have a verified real estate advocate draft and serve an unassailable statutory demand notice under Section 18(1) proviso of RERA directly to the promoter and directors. Demand accrued monthly delay interest at SBI MCLR + 2% without surrendering your flat, dispatched via Registered Speed Post with postal tracking and digital email service under Section 63 of Bharatiya Sakshya Adhiniyam, 2023.
+                Have a verified real estate advocate draft and serve an unassailable statutory demand notice under Section 18(1) proviso of RERA directly to the promoter and directors. Demand accrued monthly delay interest at SBI MCLR + 2% without surrendering your flat, served by email and WhatsApp under Section 63 of Bharatiya Sakshya Adhiniyam, 2023. Speed Post is optional at ₹450 per party.
               </p>
               <div className="flex flex-col sm:flex-row sm:items-center gap-4">
                 <button
@@ -44,7 +44,7 @@ export default function ReraDelayNoticeCTA({
                 <div className="text-xs text-slate-300 flex flex-wrap sm:flex-nowrap items-center gap-2 sm:gap-3">
                   <span>✓ 24h Advocate Drafting</span>
                   <span>•</span>
-                  <span>✓ Speed Post + Email / WhatsApp</span>
+                  <span>✓ Email + WhatsApp</span>
                   <span>•</span>
                   <span>✓ Flat ₹{basePrice}</span>
                 </div>

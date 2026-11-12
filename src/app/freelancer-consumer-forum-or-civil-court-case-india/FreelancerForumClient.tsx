@@ -140,7 +140,7 @@ const reviewSchema = {
         "@type": "Person",
         "name": "Karan Johar"
       },
-      "reviewBody": "Using this online platform to recover my unpaid salary was incredibly smooth. The flat-fee pricing of ₹999 was transparent, and the draft was ready in 24 hours. The employer paid within a week of getting the speed post notice."
+      "reviewBody": "Using this online platform to recover my unpaid salary was incredibly smooth. The flat-fee pricing of ₹999 was transparent, and the draft was ready in 24 hours. The employer paid within a week of getting the notice."
     },
     {
       "@type": "Review",
@@ -670,7 +670,7 @@ export default function FreelancerForumClient() {
                   <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                     <div className="p-6 bg-slate-50 rounded-2xl border border-slate-100">
                       <p className="text-sm text-slate-700 italic mb-4">
-                        &quot;Using this online platform to recover my unpaid salary was incredibly smooth. The flat-fee pricing of ₹999 was transparent, and the draft was ready in 24 hours. The employer paid within a week of getting the speed post notice.&quot;
+                        &quot;Using this online platform to recover my unpaid salary was incredibly smooth. The flat-fee pricing of ₹999 was transparent, and the draft was ready in 24 hours. The employer paid within a week of getting the notice.&quot;
                       </p>
                       <h4 className="font-extrabold text-xs text-slate-900">— Karan Johar (Gurugram)</h4>
                     </div>

@@ -31,7 +31,7 @@ export default function ApplianceWarrantyNoticeCTA({
                 Force Brand to Replace Defective Appliance or Refund 100% Price
               </h3>
               <p className="text-slate-300 text-xs sm:text-sm md:text-base leading-relaxed mb-6">
-                Have an experienced consumer lawyer draft and serve a formal statutory advocate legal demand notice to the appliance manufacturer (Samsung, LG, Whirlpool, Sony, Haier, IFB, Voltas, Daikin) and authorized dealer. Delivered via Registered Speed Post with tracking proof and served electronically under Section 63 of Bharatiya Sakshya Adhiniyam, 2023.
+                Have an experienced consumer lawyer draft and serve a formal statutory advocate legal demand notice to the appliance manufacturer (Samsung, LG, Whirlpool, Sony, Haier, IFB, Voltas, Daikin) and authorized dealer. Served by email and WhatsApp under Section 63 of Bharatiya Sakshya Adhiniyam, 2023. Speed Post is optional at ₹450 per party.
               </p>
               <div className="flex flex-col sm:flex-row sm:items-center gap-4">
                 <button
@@ -44,7 +44,7 @@ export default function ApplianceWarrantyNoticeCTA({
                 <div className="text-xs text-slate-300 flex flex-wrap sm:flex-nowrap items-center gap-2 sm:gap-3">
                   <span>✓ 24h Advocate Drafting</span>
                   <span>•</span>
-                  <span>✓ Speed Post + Official Email</span>
+                  <span>✓ Email + WhatsApp</span>
                   <span>•</span>
                   <span>✓ Flat ₹{basePrice}</span>
                 </div>

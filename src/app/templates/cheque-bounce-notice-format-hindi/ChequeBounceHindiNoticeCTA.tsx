@@ -31,7 +31,7 @@ export default function ChequeBounceHindiNoticeCTA({
                 चेक बाउंस होने पर कानूनी नोटिस भेजने में देरी न करें
               </h3>
               <p className="text-slate-300 text-xs sm:text-sm md:text-base leading-relaxed mb-6">
-                बैंक मेमो मिलने के 30 दिनों के भीतर कानूनी नोटिस भेजना अनिवार्य है। LegalRecovery के विशेषज्ञ अधिवक्ताओं द्वारा 24 घंटे में वैधानिक मांग नोटिस तैयार करवाएं, स्पीड पोस्ट द्वारा ट्रैकिंग पावती (AD) सहित भेजें और ईमेल/व्हाट्सएप पर धारा 63 बीएसए (BSA 2023) के तहत इलेक्ट्रॉनिक प्रमाण दर्ज करें।
+                बैंक मेमो मिलने के 30 दिनों के भीतर कानूनी नोटिस भेजना अनिवार्य है। LegalRecovery के विशेषज्ञ अधिवक्ताओं द्वारा 24 घंटे में वैधानिक मांग नोटिस तैयार करवाएं, ईमेल/व्हाट्सएप से भेजें और धारा 63 बीएसए (BSA 2023) के तहत इलेक्ट्रॉनिक प्रमाण दर्ज करें। स्पीड पोस्ट (AD सहित) वैकल्पिक है, ₹450 प्रति पार्टी।
               </p>
               <div className="flex flex-col sm:flex-row sm:items-center gap-4">
                 <button
@@ -44,7 +44,7 @@ export default function ChequeBounceHindiNoticeCTA({
                 <div className="text-xs text-slate-300 flex flex-wrap sm:flex-nowrap items-center gap-2 sm:gap-3">
                   <span>✓ 24 घंटे में ड्राफ्ट</span>
                   <span>•</span>
-                  <span>✓ स्पीड पोस्ट + ट्रैकिंग</span>
+                  <span>✓ ईमेल + WhatsApp ट्रैकिंग</span>
                   <span>•</span>
                   <span>✓ केवल ₹{basePrice}</span>
                 </div>

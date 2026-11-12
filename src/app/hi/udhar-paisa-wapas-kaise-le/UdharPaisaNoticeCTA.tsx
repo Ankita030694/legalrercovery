@@ -31,7 +31,7 @@ export default function UdharPaisaNoticeCTA({
                 दोस्त या रिश्तेदार से अटका हुआ उधार पैसा कानूनी तरीके से वापस पाएं
               </h3>
               <p className="text-slate-300 text-xs sm:text-sm md:text-base leading-relaxed mb-6">
-                अनुभवी एडवोकेट द्वारा तैयार किया गया वैधानिक डिमांड नोटिस (Statutory Demand Notice) देनदार के पते पर रजिस्टर्ड स्पीड पोस्ट और इलेक्ट्रॉनिक माध्यम (Section 63 BSA 2023) से भेजा जाता है। इसमें 15 दिन के भीतर भुगतान की अंतिम मोहलत दी जाती है, जिससे बिना कोर्ट कचहरी के 80% से अधिक मामलों में समझौते का रास्ता साफ हो जाता है।
+                अनुभवी एडवोकेट द्वारा तैयार किया गया वैधानिक डिमांड नोटिस (Statutory Demand Notice) देनदार को ईमेल और WhatsApp (Section 63 BSA 2023) से भेजा जाता है। स्पीड पोस्ट वैकल्पिक है (₹450 प्रति पार्टी)। इसमें 15 दिन के भीतर भुगतान की अंतिम मोहलत दी जाती है, जिससे बिना कोर्ट कचहरी के 80% से अधिक मामलों में समझौते का रास्ता साफ हो जाता है।
               </p>
               <div className="flex flex-col sm:flex-row sm:items-center gap-4">
                 <button
@@ -44,7 +44,7 @@ export default function UdharPaisaNoticeCTA({
                 <div className="text-xs text-slate-300 flex flex-wrap sm:flex-nowrap items-center gap-2 sm:gap-3">
                   <span>✓ 24 घंटे में एडवोकेट ड्राफ्टिंग</span>
                   <span>•</span>
-                  <span>✓ स्पीड पोस्ट ट्रैकिंग + डिजिटल प्रति</span>
+                  <span>✓ ईमेल + WhatsApp डिजिटल प्रति</span>
                   <span>•</span>
                   <span>✓ केवल ₹{basePrice} (कोई छिपा खर्च नहीं)</span>
                 </div>

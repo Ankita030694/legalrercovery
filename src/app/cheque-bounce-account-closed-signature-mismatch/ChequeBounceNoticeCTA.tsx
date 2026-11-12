@@ -31,7 +31,7 @@ export default function ChequeBounceNoticeCTA({
                 Cheque Bounced for &apos;Account Closed&apos; or &apos;Signature Mismatch&apos;? Enforce Criminal Liability Now
               </h3>
               <p className="text-slate-300 text-xs sm:text-sm md:text-base leading-relaxed mb-6">
-                Have an experienced recovery advocate draft and dispatch a statutory 15-day Section 138 demand notice to the drawer. Invoking Supreme Court precedents in <em>NEPC Micon</em> and <em>Laxmi Dyechem</em>, served via Registered Speed Post with electronic tracking under Section 63 BSA 2023 to preserve your 30-day statutory limitation window.
+                Have an experienced recovery advocate draft and dispatch a statutory 15-day Section 138 demand notice to the drawer. Invoking Supreme Court precedents in <em>NEPC Micon</em> and <em>Laxmi Dyechem</em>, served by email and WhatsApp under Section 63 BSA 2023 to preserve your 30-day statutory limitation window. Speed Post is optional at ₹450 per party.
               </p>
               <div className="flex flex-col sm:flex-row sm:items-center gap-4">
                 <button
@@ -44,7 +44,7 @@ export default function ChequeBounceNoticeCTA({
                 <div className="text-xs text-slate-300 flex flex-wrap sm:flex-nowrap items-center gap-2 sm:gap-3">
                   <span>✓ 24h Advocate Drafting</span>
                   <span>•</span>
-                  <span>✓ Speed Post + Section 63 BSA Email</span>
+                  <span>✓ Email + WhatsApp</span>
                   <span>•</span>
                   <span>✓ Flat ₹{basePrice}</span>
                 </div>

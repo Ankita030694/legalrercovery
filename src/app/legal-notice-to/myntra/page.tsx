@@ -389,7 +389,7 @@ export default function MyntraDisputePage() {
                       Legal Notice Price
                     </th>
                     <td className="py-3 px-4">
-                      ₹{BASE_PRICE} flat fee (Advocate drafted, Speed Post with tracking + Section 63 BSA email)
+                      ₹{BASE_PRICE} flat fee (Advocate drafted, Section 63 BSA email + WhatsApp; Speed Post optional at ₹450)
                     </td>
                     <td className="py-3 px-4 text-xs font-semibold text-slate-900">
                       24-hour drafting &amp; dispatch by bar-enrolled advocate

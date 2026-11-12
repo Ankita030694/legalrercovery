@@ -35,7 +35,7 @@ const faqs = [
   },
   {
     question: "What are the fees for sending an online legal notice in India?",
-    answer: "Manual notice dispatch through traditional law chambers can cost between ₹3,000 to ₹10,000, including consulting and postage charges. On LegalRecovery, we offer automated drafting assistance and advocate-verified dispatch services starting at a transparent flat fee of ₹999 per opposing party. This fee includes advocate review and electronic service."
+    answer: "Manual notice dispatch through traditional law chambers can cost between ₹3,000 to ₹10,000, including consulting and postage charges. On LegalRecovery, we offer automated drafting assistance and advocate-verified dispatch services starting at a transparent flat fee of ₹999 per opposing party. This fee includes advocate review and electronic service by email and WhatsApp. Speed Post is optional at ₹450 per party."
   },
   {
     question: "Is my personal data safe when submitting a case online?",
@@ -182,7 +182,7 @@ const reviewSchema = {
         "@type": "Person",
         "name": "Vikram Jeet Singh"
       },
-      "reviewBody": "Highly professional automated workflow. The dashboard updates are real-time, showing exactly when the speed post is booked and when it gets delivered. The price of ₹999 is highly transparent compared to traditional advocate chambers."
+      "reviewBody": "Highly professional automated workflow. The dashboard updates are real-time, showing exactly when the notice is sent and when it gets delivered. The price of ₹999 is highly transparent compared to traditional advocate chambers."
     },
     {
       "@type": "Review",
@@ -477,7 +477,7 @@ export default function OnlineLegalNoticeClient() {
                         <tbody className="divide-y divide-slate-100 text-slate-650">
                           <tr>
                             <td className="p-3 font-bold text-slate-900">Cost &amp; Fee Transparency</td>
-                            <td className="p-3 text-emerald-600 font-semibold">Flat rate starting at ₹999. No hidden typing or postage charges.</td>
+                            <td className="p-3 text-emerald-600 font-semibold">Flat rate starting at ₹999. No hidden typing charges; Speed Post optional at ₹450.</td>
                             <td className="p-3">Varies between ₹3,000 to ₹10,000. Often involves hourly consultation and typing fees.</td>
                           </tr>
                           <tr>

@@ -606,7 +606,7 @@ export default function CoachingInstituteFeesClient() {
                       <li><strong>Dual-Track Strategy:</strong> We do not just send a notice to the coaching centre. Where applicable, we file a parallel CCPA complaint for misleading advertising, creating regulatory pressure that goes beyond the individual refund dispute and threatens the institute&apos;s operating licence.</li>
                       <li><strong>BNPL Loan Intervention:</strong> For students trapped in edtech loan arrangements, we name both the platform and the lending NBFC as opposite parties, ensuring the loan obligation is cancelled alongside the refund—not left hanging for the student to deal with separately.</li>
                       <li><strong>Joint Complaint Coordination:</strong> When multiple students from the same institute approach us, we coordinate joint complaints that reduce individual costs and amplify the collective claim—making it far more expensive for the institute to resist than to settle.</li>
-                      <li><strong>Transparent Flat Pricing:</strong> No hourly bills, no retainer surprises. You pay a single transparent flat fee that covers everything from drafting and dispatch of the legal notice to follow-up negotiations with the institute&apos;s legal team.</li>
+                      <li><strong>Transparent Flat Pricing:</strong> No hourly bills, no retainer surprises. You pay a single transparent flat fee that covers drafting and email and WhatsApp dispatch of the legal notice through to follow-up negotiations with the institute&apos;s legal team. Speed Post is optional at ₹450 per party.</li>
                     </ul>
                   </div>
                 </section>

@@ -573,7 +573,7 @@ export default function GymMembershipRefundClient() {
                       <li><strong>Consumer Law Specialists:</strong> Our legal panel includes advocates who have handled hundreds of consumer commission cases specifically involving gym memberships, fitness chains, and subscription-based service providers. They know the precedents, the arguments, and the exact statutory provisions that move the needle.</li>
                       <li><strong>Multi-Party Notice Strategy:</strong> We do not just serve notice on the gym branch. We target the franchise operator, the brand parent company, and all active directors simultaneously—maximising pressure and closing off escape routes.</li>
                       <li><strong>E-Daakhil Filing Assistance:</strong> If your case needs to go to the consumer commission, we handle the entire e-filing process—drafting the complaint in the prescribed format, uploading documents, and managing the court fee payment—so you do not have to navigate the portal yourself.</li>
-                      <li><strong>Transparent Flat Pricing:</strong> No hourly bills, no retainer surprises. You pay a single transparent flat fee that covers everything from drafting and dispatch of the legal notice to follow-up negotiations with the gym&apos;s legal team.</li>
+                      <li><strong>Transparent Flat Pricing:</strong> No hourly bills, no retainer surprises. You pay a single transparent flat fee that covers drafting and email and WhatsApp dispatch of the legal notice through to follow-up negotiations with the gym&apos;s legal team. Speed Post is optional at ₹450 per party.</li>
                     </ul>
                   </div>
                 </section>

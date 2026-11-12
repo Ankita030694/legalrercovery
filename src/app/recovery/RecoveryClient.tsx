@@ -363,7 +363,7 @@ export default function RecoveryClient() {
               </div>
               <h4 className="text-[13.5px] font-extrabold text-[#111827] mb-1.5">Dispatch & Track</h4>
               <p className="text-[11.5px] text-slate-500 leading-relaxed">
-                Advocates review and issue your notice on official legal letterhead. We dispatch notices via registered post and track real-time delivery confirmations.
+                Advocates review and issue your notice on official legal letterhead. We dispatch notices by email and WhatsApp (Speed Post optional) and track real-time delivery confirmations.
               </p>
             </div>
 

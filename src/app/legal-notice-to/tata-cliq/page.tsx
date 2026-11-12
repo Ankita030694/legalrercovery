@@ -135,7 +135,7 @@ const faqData = [
   {
     question: "How do I send an advocate legal notice to Tata CLiQ and how much does it cost?",
     answer:
-      "An advocate legal notice is drafted on an enrolled advocate's letterhead and served via Speed Post (RPAD) and email to Tata UniStore Limited's Mumbai corporate office. It sets out the order history, CPA violations, and gives a mandatory 15-day cure window. LegalRecovery handles drafting and dispatch for a transparent flat fee of ₹999 with zero percentage cuts.",
+      "An advocate legal notice is drafted on an enrolled advocate's letterhead and served by email and WhatsApp (with optional Speed Post) to Tata UniStore Limited's Mumbai corporate office. It sets out the order history, CPA violations, and gives a mandatory 15-day cure window. LegalRecovery handles drafting and email and WhatsApp dispatch for a transparent flat fee of ₹999 with zero percentage cuts. Speed Post is optional at ₹450 per party.",
   },
 ];
 
@@ -829,7 +829,7 @@ export default function TataCliqRefundNoticePage() {
                     </h3>
                     <ul className="text-xs sm:text-sm text-slate-700 space-y-2 leading-relaxed">
                       <li>• Statutory legal notice drafted by an enrolled advocate under the Consumer Protection Act.</li>
-                      <li>• Formal delivery via Speed Post with tracking docket to Tata UniStore&apos;s registered office and email service.</li>
+                      <li>• Formal delivery by email and WhatsApp to Tata UniStore, with optional Speed Post (₹450 per party) to its registered office.</li>
                       <li>• Complete digital evidence compilation compliant with Section 63 BSA standards.</li>
                       <li>• Flat transparent fee of ₹{BASE_PRICE} with zero percentage deductions from recovered funds.</li>
                     </ul>

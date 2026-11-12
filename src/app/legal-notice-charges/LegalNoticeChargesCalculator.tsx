@@ -173,7 +173,7 @@ export default function LegalNoticeChargesCalculator() {
               </p>
               <ul className="text-xs text-slate-700 mt-3 space-y-1.5 font-medium">
                 <li>✓ High Court Advocate verified drafting</li>
-                <li>✓ Speed post delivery with postal tracking slip</li>
+                <li>✓ Email + WhatsApp delivery (Speed Post optional, ₹450)</li>
                 <li>✓ Electronic dispatch under Section 63 BSA 2023</li>
                 <li>✓ Fast 24–48 hour drafting turnaround</li>
               </ul>

@@ -314,7 +314,7 @@ export default function AboutPage() {
                     Legal Recovery was launched as a technology driven nationwide debt recovery initiative. Our legal recovery experts combined proven courtroom strategies with fast online dispute resolution. By providing digital legal services India, we eliminated expensive retainers and prolonged delays.
                   </p>
                   <p>
-                    Our platform allows claimants to dispatch a legally binding notice within minutes. We handle notice drafting, postal dispatch, and digital tracking from a single dashboard. Clients secure a strong legal presence without having to leave their homes.
+                    Our platform allows claimants to dispatch a legally binding notice within minutes. We handle notice drafting, email and WhatsApp dispatch, optional Speed Post, and digital tracking from a single dashboard. Clients secure a strong legal presence without having to leave their homes.
                   </p>
                 </div>
               </div>

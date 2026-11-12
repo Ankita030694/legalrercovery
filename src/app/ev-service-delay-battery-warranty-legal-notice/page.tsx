@@ -604,7 +604,7 @@ export default function EvServiceDelayBatteryWarrantyPage() {
                       </tr>
                       <tr>
                         <td className="p-3 sm:p-4 font-semibold text-slate-900">Advocate Legal Demand Notice</td>
-                        <td className="p-3 sm:p-4">Drafted by LegalRecovery &amp; Dispatched via Speed Post</td>
+                        <td className="p-3 sm:p-4">Drafted by LegalRecovery &amp; Dispatched via Email + WhatsApp</td>
                         <td className="p-3 sm:p-4">Fulfills statutory pre-suit requirement; creates binding 15-day rectification window.</td>
                         <td className="p-3 sm:p-4 font-semibold text-emerald-700">Indispensable prerequisite for consumer court filing.</td>
                       </tr>
@@ -980,7 +980,7 @@ export default function EvServiceDelayBatteryWarrantyPage() {
                   <div className="text-xs text-slate-700">
                     <strong>Need this statutory notice professionally drafted and served on advocate letterhead?</strong>
                     <p className="text-slate-500 mt-0.5">
-                      Our consumer recovery advocates handle complete legal drafting, Speed Post dispatch, and digital service.
+                      Our consumer recovery advocates handle complete legal drafting and digital service by email and WhatsApp. Speed Post is optional at ₹450 per party.
                     </p>
                   </div>
                   <EvServiceDelayNoticeCTA variant="secondary" buttonText="Draft Custom Legal Notice" />

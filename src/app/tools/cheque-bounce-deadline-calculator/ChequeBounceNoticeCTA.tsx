@@ -31,7 +31,7 @@ export default function ChequeBounceNoticeCTA({
                 Serve a Flawless Section 138 Demand Notice Before Your 30-Day Window Expires
               </h3>
               <p className="text-slate-300 text-xs sm:text-sm md:text-base leading-relaxed mb-6">
-                Missing the 30-day notice deadline forfeits your criminal remedy under Section 138. Have an experienced recovery advocate draft and dispatch an ironclad statutory legal notice to the drawer and signatory directors. Sent via Registered Speed Post with tracking and electronic delivery under Section 63 of the Bharatiya Sakshya Adhiniyam, 2023.
+                Missing the 30-day notice deadline forfeits your criminal remedy under Section 138. Have an experienced recovery advocate draft and dispatch an ironclad statutory legal notice to the drawer and signatory directors. Served by email and WhatsApp under Section 63 of the Bharatiya Sakshya Adhiniyam, 2023. Speed Post is optional at ₹450 per party.
               </p>
               <div className="flex flex-col sm:flex-row sm:items-center gap-4">
                 <button
@@ -44,7 +44,7 @@ export default function ChequeBounceNoticeCTA({
                 <div className="text-xs text-slate-300 flex flex-wrap sm:flex-nowrap items-center gap-2 sm:gap-3">
                   <span>✓ 24h Advocate Drafting</span>
                   <span>•</span>
-                  <span>✓ Speed Post + BSA Email</span>
+                  <span>✓ Email + WhatsApp</span>
                   <span>•</span>
                   <span>✓ Flat ₹{basePrice}</span>
                 </div>

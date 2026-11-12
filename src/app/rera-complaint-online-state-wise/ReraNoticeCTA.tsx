@@ -83,7 +83,7 @@ export default function ReraNoticeCTA({ variant = "primary" }: ReraNoticeCTAProp
               Send Builder Legal Notice Now (₹{noticePrice.toLocaleString("en-IN")})
             </button>
             <span className="text-xs text-gray-400 text-center sm:text-left">
-              Advocate review &amp; Speed Post tracking included • No hidden percentage cut
+              Advocate review &amp; email + WhatsApp delivery included • Speed Post optional • No percentage cut
             </span>
           </div>
         </div>

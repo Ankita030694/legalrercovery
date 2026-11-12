@@ -31,7 +31,7 @@ export default function BnsNoticeCTA({
                 Recover Money Lent to a Friend, Partner, or Debtor Before Civil Limitation Expires
               </h3>
               <p className="text-slate-300 text-xs sm:text-sm md:text-base leading-relaxed mb-6">
-                Have a verified advocate draft and dispatch a formal 15-day legal demand notice under the Indian Contract Act, Limitation Act 1963, and Bharatiya Sakshya Adhiniyam 2023. If the debtor engaged in deliberate misrepresentation from the inception, our notice establishes a paper trail of dishonest inducement required under Section 318 of the Bharatiya Nyaya Sanhita (BNS). Dispatched via Registered Speed Post with electronic tracking and email.
+                Have a verified advocate draft and dispatch a formal 15-day legal demand notice under the Indian Contract Act, Limitation Act 1963, and Bharatiya Sakshya Adhiniyam 2023. If the debtor engaged in deliberate misrepresentation from the inception, our notice establishes a paper trail of dishonest inducement required under Section 318 of the Bharatiya Nyaya Sanhita (BNS). Served by email and WhatsApp with delivery tracking. Speed Post is optional at ₹450 per party.
               </p>
               <div className="flex flex-col sm:flex-row sm:items-center gap-4">
                 <button
@@ -44,7 +44,7 @@ export default function BnsNoticeCTA({
                 <div className="text-xs text-slate-300 flex flex-wrap sm:flex-nowrap items-center gap-2 sm:gap-3">
                   <span>✓ 24h Advocate Drafting</span>
                   <span>•</span>
-                  <span>✓ Speed Post + Email Dispatch</span>
+                  <span>✓ Email + WhatsApp</span>
                   <span>•</span>
                   <span>✓ Flat ₹{basePrice}</span>
                 </div>

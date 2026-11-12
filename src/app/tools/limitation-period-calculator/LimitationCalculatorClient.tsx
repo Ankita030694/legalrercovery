@@ -674,7 +674,7 @@ export default function LimitationCalculatorClient() {
                 Send Advocate Legal Demand Notice — ₹{basePrice}
               </button>
               <p className="text-[10px] text-slate-400 text-center mt-2">
-                Statutory legal notice dispatched within 24h via Speed Post + BSA Section 63 Email.
+                Statutory legal notice dispatched within 24h via BSA Section 63 Email + WhatsApp. Speed Post optional.
               </p>
             </div>
           </output>

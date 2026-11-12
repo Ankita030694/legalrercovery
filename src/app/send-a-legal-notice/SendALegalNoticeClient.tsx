@@ -48,7 +48,7 @@ const faqs = [
   },
   {
     question: "What is the flat fee pricing structure for sending a notice through LegalRecovery?",
-    answer: "LegalRecovery operates on a transparent, flat-fee pricing model starting at ₹999 per opposing party. This flat rate is all-inclusive and covers: 1) Client intake and case file assembly. 2) Document verification and vetting by a panel advocate. 3) Professional drafting on the advocate's official letterhead. 4) Digital review and modifications via the user dashboard. 5) Digital signing under the IT Act. 6) Electronic dispatch via verified email and WhatsApp. 7) Real-time tracking dashboard updates. There are no hidden charges or hourly fees."
+    answer: "LegalRecovery operates on a transparent, flat-fee pricing model starting at ₹999 per opposing party. This flat rate covers: 1) Client intake and case file assembly. 2) Document verification and vetting by a panel advocate. 3) Professional drafting on the advocate's official letterhead. 4) Digital review and modifications via the user dashboard. 5) Digital signing under the IT Act. 6) Electronic dispatch via verified email and WhatsApp. 7) Real-time tracking dashboard updates. Speed Post is optional at ₹450 per party. There are no hidden charges or hourly fees."
   },
   {
     question: "What legal actions can I take if the recipient ignores my legal notice?",

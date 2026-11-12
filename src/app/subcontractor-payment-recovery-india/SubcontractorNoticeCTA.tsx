@@ -31,7 +31,7 @@ export default function SubcontractorNoticeCTA({
                 Recover Unpaid RA Bills, Final Dues &amp; Retention Money From the Main Contractor
               </h3>
               <p className="text-slate-300 text-xs sm:text-sm md:text-base leading-relaxed mb-6">
-                Engage a verified commercial recovery advocate to draft and serve a formal statutory demand notice on the Main / EPC Contractor&apos;s Directors (with a strategic copy to the Principal Employer / Project Owner where permitted). We invoke Section 70 &amp; 73 of the Indian Contract Act, Section 16 &amp; 18 of the MSMED Act, Section 43B(h) tax disallowance, and Section 21 arbitration triggers via Registered Speed Post and Section 63 BSA electronic delivery.
+                Engage a verified commercial recovery advocate to draft and serve a formal statutory demand notice on the Main / EPC Contractor&apos;s Directors (with a strategic copy to the Principal Employer / Project Owner where permitted). We invoke Section 70 &amp; 73 of the Indian Contract Act, Section 16 &amp; 18 of the MSMED Act, Section 43B(h) tax disallowance, and Section 21 arbitration triggers in a notice served by email and WhatsApp under Section 63 BSA. Speed Post is optional at ₹450 per party.
               </p>
               <div className="flex flex-col sm:flex-row sm:items-center gap-4">
                 <button
@@ -44,7 +44,7 @@ export default function SubcontractorNoticeCTA({
                 <div className="text-xs text-slate-300 flex flex-wrap sm:flex-nowrap items-center gap-2 sm:gap-3">
                   <span>✓ 24h Commercial Advocate Drafting</span>
                   <span>•</span>
-                  <span>✓ Speed Post + Email + WhatsApp</span>
+                  <span>✓ Email + WhatsApp</span>
                   <span>•</span>
                   <span>✓ Flat ₹{basePrice}</span>
                 </div>

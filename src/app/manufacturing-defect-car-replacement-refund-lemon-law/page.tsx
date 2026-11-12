@@ -234,7 +234,7 @@ const FAQS = [
   {
     question: "What is the procedure and fee to send a legal notice for a defective car via LegalRecovery?",
     answer:
-      "At LegalRecovery.in, an automotive advocate drafts a formal legal notice citing consumer law and landmark replacement rulings. The notice is served via Speed Post and email to the carmaker and dealership for a transparent flat fee of ₹999.",
+      "At LegalRecovery.in, an automotive advocate drafts a formal legal notice citing consumer law and landmark replacement rulings. The notice is served by email and WhatsApp to the carmaker and dealership for a transparent flat fee of ₹999. Speed Post is optional at ₹450 per party.",
   },
 ];
 

@@ -53,11 +53,11 @@ const contactFaqs: ContactFAQ[] = [
   },
   {
     question: "How do I track the delivery status of my notice?",
-    answer: "Every legal notice dispatched by Legal Recovery is assigned an India Post Speed Post / Registered AD consignment tracking barcode and an electronic transmission tracking ID. You are provided real-time tracking access through your secure client dashboard, where you can monitor postal transit, delivery confirmation at the recipient's doorstep, and read receipts across digital channels.",
+    answer: "Every legal notice dispatched by Legal Recovery is assigned an electronic transmission tracking ID for its email and WhatsApp delivery. If you add the optional Speed Post (₹450 per party), the notice also gets an India Post consignment tracking barcode. You are provided real-time tracking access through your secure client dashboard, where you can monitor delivery confirmation, read receipts across digital channels, and postal transit where applicable.",
   },
   {
     question: "What is the fee structure for sending a legal notice through Legal Recovery?",
-    answer: "We operate on a transparent, flat-fee pricing model starting at ₹999 with zero hidden charges, commission cuts, or open-ended hourly retainers. This includes dispute merit analysis, professional drafting by an experienced advocate, revision support, dual-channel dispatch via Speed Post and digital channels, and delivery tracking. We believe accessible legal recourse should be affordable for every Indian citizen.",
+    answer: "We operate on a transparent, flat-fee pricing model starting at ₹999 with zero hidden charges, commission cuts, or open-ended hourly retainers. This includes dispute merit analysis, professional drafting by an experienced advocate, revision support, dispatch by Email and WhatsApp, and delivery tracking. Speed Post is optional at ₹450 per party. We believe accessible legal recourse should be affordable for every Indian citizen.",
   },
   {
     question: "Can I send a legal notice to an employer who has withheld my salary or FnF settlement?",

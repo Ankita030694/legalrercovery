@@ -31,7 +31,7 @@ export default function LegalNoticeKaiseBhejeCTA({
                 कंपनी, देनदार या मकान मालिक को बिना कोर्ट चक्कर काटे लीगल नोटिस भेजें
               </h3>
               <p className="text-slate-300 text-xs sm:text-sm md:text-base leading-relaxed mb-6">
-                अनुभवी अधिवक्ताओं (Advocates) द्वारा तैयार किया गया वैधानिक कानूनी नोटिस (Statutory Legal Notice) विपक्षी पार्टी के पंजीकृत पते पर रजिस्टर्ड स्पीड पोस्ट और इलेक्ट्रॉनिक माध्यम (BSA 2023 धारा 63) से भेजा जाता है। 15 दिन की मोहलत में 85% से अधिक मामलों में बिना अदालत गए समाधान हो जाता है।
+                अनुभवी अधिवक्ताओं (Advocates) द्वारा तैयार किया गया वैधानिक कानूनी नोटिस (Statutory Legal Notice) विपक्षी पार्टी को ईमेल और WhatsApp (BSA 2023 धारा 63) से भेजा जाता है। स्पीड पोस्ट वैकल्पिक है (₹450 प्रति पार्टी)। 15 दिन की मोहलत में 85% से अधिक मामलों में बिना अदालत गए समाधान हो जाता है।
               </p>
               <div className="flex flex-col sm:flex-row sm:items-center gap-4">
                 <button
@@ -44,7 +44,7 @@ export default function LegalNoticeKaiseBhejeCTA({
                 <div className="text-xs text-slate-300 flex flex-wrap sm:flex-nowrap items-center gap-2 sm:gap-3">
                   <span>✓ 24 घंटे में ड्राफ्ट तैयार</span>
                   <span>•</span>
-                  <span>✓ स्पीड पोस्ट ट्रैकिंग रसीद</span>
+                  <span>✓ ईमेल + WhatsApp डिलीवरी रिपोर्ट</span>
                   <span>•</span>
                   <span>✓ मात्र ₹{basePrice} (पारदर्शी शुल्क)</span>
                 </div>

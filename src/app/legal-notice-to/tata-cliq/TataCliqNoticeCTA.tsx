@@ -31,7 +31,7 @@ export default function TataCliqNoticeCTA({
             </span>
           </div>
           <p className="text-[11px] text-slate-300 leading-relaxed mb-4">
-            Delivered in 24 hours. Includes drafting by an enrolled advocate, Speed Post dispatch with postal tracking, and digital evidence compilation.
+            Delivered in 24 hours. Includes drafting by an enrolled advocate, email and WhatsApp dispatch with tracking, and digital evidence compilation. Speed Post is optional at ₹450 per party.
           </p>
           <button
             type="button"
@@ -79,7 +79,7 @@ export default function TataCliqNoticeCTA({
             <div className="text-xs text-slate-400 flex flex-col sm:flex-row sm:items-center gap-1 sm:gap-3">
               <span>✓ 24-Hour Dispatch</span>
               <span className="hidden sm:inline">•</span>
-              <span>✓ Speed Post & Email</span>
+              <span>✓ Email + WhatsApp</span>
               <span className="hidden sm:inline">•</span>
               <span>✓ Flat ₹{basePrice} Transparent Fee</span>
             </div>

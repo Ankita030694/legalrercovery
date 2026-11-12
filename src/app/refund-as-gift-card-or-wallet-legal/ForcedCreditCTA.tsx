@@ -39,7 +39,7 @@ export default function ForcedCreditCTA({
                   ₹{basePrice}
                 </span>
                 <span className="text-xs text-slate-400">
-                  all-inclusive fixed fee · advocate drafted · delivered via speed post &amp; digital dispatch
+                  fixed fee · advocate drafted · delivered via email &amp; WhatsApp · speed post optional
                 </span>
               </div>
 

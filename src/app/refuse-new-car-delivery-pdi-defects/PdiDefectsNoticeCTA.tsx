@@ -31,7 +31,7 @@ export default function PdiDefectsNoticeCTA({
                 Rejected a Defective Car at PDI? Force Replacement or 100% Booking Refund
               </h3>
               <p className="text-slate-300 text-xs sm:text-sm md:text-base leading-relaxed mb-6">
-                Have an advocate draft and serve a statutory demand notice directly to the dealership principal and automobile manufacturer (OEM). Compel cancellation of defective chassis allocation, release of unlawfully withheld booking deposits, or fresh VIN allocation without forfeiture. Dispatched via Registered Speed Post with tracking and digital notice served under Section 63 BSA 2023.
+                Have an advocate draft and serve a statutory demand notice directly to the dealership principal and automobile manufacturer (OEM). Compel cancellation of defective chassis allocation, release of unlawfully withheld booking deposits, or fresh VIN allocation without forfeiture. Served by email and WhatsApp under Section 63 BSA 2023. Speed Post is optional at ₹450 per party.
               </p>
               <div className="flex flex-col sm:flex-row sm:items-center gap-4">
                 <button
@@ -44,7 +44,7 @@ export default function PdiDefectsNoticeCTA({
                 <div className="text-xs text-slate-300 flex flex-wrap sm:flex-nowrap items-center gap-2 sm:gap-3">
                   <span>✓ 24h Advocate Drafting</span>
                   <span>•</span>
-                  <span>✓ Speed Post + Email / WhatsApp</span>
+                  <span>✓ Email + WhatsApp</span>
                   <span>•</span>
                   <span>✓ Flat ₹{basePrice}</span>
                 </div>

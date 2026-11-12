@@ -31,7 +31,7 @@ export default function EsopNoticeCTA({
                 Recover Your Withheld ESOP Buyback Funds or Enforce Vested Stock Rights
               </h3>
               <p className="text-slate-300 text-xs sm:text-sm md:text-base leading-relaxed mb-6">
-                Have a specialized commercial corporate advocate draft and serve an official statutory demand notice directly to the startup&apos;s Board of Directors, Compensation / Nomination Committee, and Registered Office. Served via Registered Speed Post with tracking and legally compliant electronic service under Section 63 of Bharatiya Sakshya Adhiniyam, 2023.
+                Have a specialized commercial corporate advocate draft and serve an official statutory demand notice directly to the startup&apos;s Board of Directors, Compensation / Nomination Committee, and Registered Office. Served by email and WhatsApp under Section 63 of Bharatiya Sakshya Adhiniyam, 2023. Speed Post is optional at ₹450 per party.
               </p>
               <div className="flex flex-col sm:flex-row sm:items-center gap-4">
                 <button
@@ -44,7 +44,7 @@ export default function EsopNoticeCTA({
                 <div className="text-xs text-slate-300 flex flex-wrap sm:flex-nowrap items-center gap-2 sm:gap-3">
                   <span>✓ 24h Advocate Drafting</span>
                   <span>•</span>
-                  <span>✓ Speed Post + Email to Directors</span>
+                  <span>✓ Email + WhatsApp</span>
                   <span>•</span>
                   <span>✓ Flat ₹{basePrice}</span>
                 </div>

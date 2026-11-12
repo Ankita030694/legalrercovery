@@ -1069,7 +1069,7 @@ Date: [CURRENT DATE]`}
                   </pre>
 
                   <div className="flex flex-wrap items-center justify-between gap-3 pt-2 text-xs text-slate-400">
-                    <span>Need our advocates to customize, verify, and dispatch this notice via Speed Post?</span>
+                    <span>Need our advocates to customize, verify, and dispatch this notice by email and WhatsApp?</span>
                     <a
                       href="#heading-cta-block"
                       className="text-red-400 hover:text-red-300 font-bold underline"

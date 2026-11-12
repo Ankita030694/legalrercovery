@@ -31,7 +31,7 @@ export default function MsmeInterestCTA({
                 Turn Your Compound Interest Schedule Into an Enforceable Advocate Demand Notice
               </h3>
               <p className="text-slate-300 text-xs sm:text-sm md:text-base leading-relaxed mb-6">
-                Corporate buyers and CFOs rarely release held-up invoice payments on informal reminders alone. Have a verified commercial recovery advocate serve a formal statutory notice on the buyer&apos;s Directors and Company Secretary via Registered Speed Post and Section 63 BSA electronic delivery—putting them on notice of mandatory <strong>20.25% monthly-compounded interest under Section 16</strong>, non-deductibility of interest under <strong>Section 23</strong>, and full invoice disallowance under <strong>Section 43B(h) of the Income-tax Act</strong> prior to MSEFC / MSME ODR filing.
+                Corporate buyers and CFOs rarely release held-up invoice payments on informal reminders alone. Have a verified commercial recovery advocate serve a formal statutory notice on the buyer&apos;s Directors and Company Secretary by email and WhatsApp under Section 63 BSA (Speed Post optional at ₹450 per party)—putting them on notice of mandatory <strong>20.25% monthly-compounded interest under Section 16</strong>, non-deductibility of interest under <strong>Section 23</strong>, and full invoice disallowance under <strong>Section 43B(h) of the Income-tax Act</strong> prior to MSEFC / MSME ODR filing.
               </p>
               <div className="flex flex-col sm:flex-row sm:items-center gap-4">
                 <button
@@ -44,7 +44,7 @@ export default function MsmeInterestCTA({
                 <div className="text-xs text-slate-300 flex flex-wrap sm:flex-nowrap items-center gap-2 sm:gap-3">
                   <span>✓ Includes Sec 16 Compound Schedule</span>
                   <span>•</span>
-                  <span>✓ Speed Post + BSA Email</span>
+                  <span>✓ Email + WhatsApp</span>
                   <span>•</span>
                   <span>✓ Flat Fee ₹{basePrice}</span>
                 </div>

@@ -633,7 +633,7 @@ export default function CarpetAreaShortfallRefundPage() {
                           Pre-Litigation Advocate Notice Fee
                         </th>
                         <td className="py-3 px-3.5 sm:py-3.5 sm:px-4 text-xs font-mono">LegalRecovery.in Statutory Dispatch</td>
-                        <td className="py-3 px-3.5 sm:py-3.5 sm:px-4 text-xs">Flat <strong>₹{basePrice}</strong> for Advocate drafting + Registered Speed Post + Email/WhatsApp service with 15-day demand window.</td>
+                        <td className="py-3 px-3.5 sm:py-3.5 sm:px-4 text-xs">Flat <strong>₹{basePrice}</strong> for Advocate drafting + Email/WhatsApp service with 15-day demand window. Speed Post optional at ₹450 per party.</td>
                       </tr>
                     </tbody>
                   </table>
@@ -1216,7 +1216,7 @@ export default function CarpetAreaShortfallRefundPage() {
                     <ul className="space-y-2 text-xs sm:text-sm text-slate-700 leading-relaxed list-disc list-inside">
                       <li>Verify your Builder-Buyer Agreement (BBA) and architect survey against RERA Section 2(k) and Clause 1.7 rules.</li>
                       <li>Compute your exact proportionate principal refund, GST/Stamp Duty excess, and SBI MCLR + 2% interest schedule.</li>
-                      <li>Draft and dispatch a formal 15-day Advocate Legal Demand Notice to the promoter and active directors via Registered Speed Post + Email/WhatsApp for a flat <strong>₹{basePrice}</strong>.</li>
+                      <li>Draft and dispatch a formal 15-day Advocate Legal Demand Notice to the promoter and active directors via Email/WhatsApp for a flat <strong>₹{basePrice}</strong> (Speed Post optional at ₹450 per party).</li>
                       <li>Prepare complaint pleadings for State RERA (Form M / Form N) or e-Jagriti Consumer Commission if the builder fails to settle within 15 days.</li>
                     </ul>
                   </div>

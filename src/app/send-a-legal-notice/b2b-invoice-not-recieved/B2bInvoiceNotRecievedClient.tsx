@@ -706,7 +706,7 @@ export default function B2bInvoiceNotRecievedClient() {
                 <div className="absolute top-0 right-0 w-24 h-24 bg-red-600/10 rounded-full blur-xl pointer-events-none" />
                 <h3 className="text-sm font-black mb-3">Recover B2B Invoices</h3>
                 <p className="text-gray-400 mb-5 text-[11px] leading-relaxed">
-                  Connect with specialized commercial debt recovery advocates. We draft customized statutory demand notices, calculate MSME 3x compound interest, and execute verified postal dispatch.
+                  Connect with specialized commercial debt recovery advocates. We draft customized statutory demand notices, calculate MSME 3x compound interest, and execute verified email and WhatsApp dispatch, with optional Speed Post.
                 </p>
                 <button
                   onClick={() => setIsPaymentModalOpen(true)}

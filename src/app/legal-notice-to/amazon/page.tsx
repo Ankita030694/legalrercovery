@@ -131,7 +131,7 @@ const faqData = [
   {
     question: "Amazon ko legal notice kaise bheje aur iska kitna kharcha aata hai?",
     answer:
-      "Amazon ko legal notice bhejne ke liye Amazon Seller Services Private Limited ke Bengaluru registered office aur Delhi grievance desk par advocate-drafted demand notice bheja jata hai. Isme order details, return receipts aur 15-day deadline shamil hoti hai, jise Speed Post aur email dono zariye dispatch kiya jata hai. LegalRecovery platform par advocate drafting, Speed Post dispatch aur digital tracking ki transparent fee flat ₹999 per party hai.",
+      "Amazon ko legal notice bhejne ke liye Amazon Seller Services Private Limited ke Bengaluru registered office aur Delhi grievance desk par advocate-drafted demand notice bheja jata hai. Isme order details, return receipts aur 15-day deadline shamil hoti hai, jise Speed Post aur email dono zariye dispatch kiya jata hai. LegalRecovery platform par advocate drafting, email aur WhatsApp dispatch aur digital tracking ki transparent fee flat ₹999 per party hai. Speed Post optional hai, ₹450 per party.",
   },
 ];
 

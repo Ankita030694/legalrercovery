@@ -44,7 +44,7 @@ export default function WrongTransferNoticeCTA({
                 <div className="text-xs text-slate-300 flex flex-wrap sm:flex-nowrap items-center gap-2 sm:gap-3">
                   <span>✓ Sec 72 Restitution Notice</span>
                   <span>•</span>
-                  <span>✓ Speed Post + Email Copy</span>
+                  <span>✓ Email + WhatsApp</span>
                   <span>•</span>
                   <span>✓ Fixed ₹{basePrice} Fee</span>
                 </div>
