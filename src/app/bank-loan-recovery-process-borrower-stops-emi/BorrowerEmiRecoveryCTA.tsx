@@ -1,0 +1,68 @@
+"use client";
+
+import React, { useState } from "react";
+import { PaymentModal } from "@/components/PaymentModal";
+import { DEFAULT_FUNNEL_SETTINGS } from "@/lib/funnel-config";
+
+interface BorrowerEmiRecoveryCTAProps {
+  buttonText?: string;
+  className?: string;
+  variant?: "primary" | "secondary";
+}
+
+export default function BorrowerEmiRecoveryCTA({
+  buttonText = "Issue Statutory Loan Recall & Cure Notice",
+  className = "",
+  variant = "primary",
+}: BorrowerEmiRecoveryCTAProps) {
+  const [isModalOpen, setIsModalOpen] = useState(false);
+  const basePrice = DEFAULT_FUNNEL_SETTINGS.basePricePerOpposition;
+
+  return (
+    <>
+      <div className={`w-full max-w-full overflow-hidden ${className}`}>
+        {variant === "primary" ? (
+          <div className="bg-gradient-to-br from-[#111827] via-[#1F2937] to-[#111827] text-white rounded-2xl p-5 sm:p-8 md:p-10 border border-slate-800 shadow-2xl w-full">
+            <div className="max-w-3xl">
+              <span className="inline-block px-3 py-1 rounded-full text-[11px] sm:text-xs font-semibold tracking-wide uppercase bg-slate-800 text-red-400 border border-slate-700 mb-3 sm:mb-4">
+                Early-Bucket Delinquency Prevention • Section 25 PSS Act &amp; Loan Recall Panel
+              </span>
+              <h3 className="text-xl sm:text-2xl md:text-3xl font-bold tracking-tight text-white mb-3">
+                Arrest NPA Slippage When Borrowers Stop Paying EMIs
+              </h3>
+              <p className="text-slate-300 text-xs sm:text-sm md:text-base leading-relaxed mb-6">
+                Equip your remedial management unit with advocate-drafted statutory cure notices under Section 25 of the Payment and Settlement Systems Act, 2007 and immediate contractual loan acceleration. We serve institutional demand notices to defaulting borrowers, co-borrowers, and personal guarantors via Registered Speed Post with tracking and Section 63 BSA-compliant digital dispatch before the 90-day NPA threshold.
+              </p>
+              <div className="flex flex-col sm:flex-row sm:items-center gap-4">
+                <button
+                  type="button"
+                  onClick={() => setIsModalOpen(true)}
+                  className="w-full sm:w-auto inline-flex items-center justify-center px-6 py-3.5 rounded-xl font-semibold text-white bg-[#DC2626] hover:bg-[#B91C1C] transition-all duration-200 shadow-lg shadow-red-900/30 hover:shadow-red-900/50 text-sm sm:text-base cursor-pointer text-center"
+                >
+                  {buttonText} — From ₹{basePrice}
+                </button>
+                <div className="text-xs text-slate-300 flex flex-wrap sm:flex-nowrap items-center gap-2 sm:gap-3">
+                  <span>✓ 30-Day DPD Fast Action</span>
+                  <span>•</span>
+                  <span>✓ Speed Post + Email Dispatch</span>
+                  <span>•</span>
+                  <span>✓ Flat ₹{basePrice}</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        ) : (
+          <button
+            type="button"
+            onClick={() => setIsModalOpen(true)}
+            className="w-full sm:w-auto inline-flex items-center justify-center px-5 py-2.5 rounded-lg text-sm font-semibold text-white bg-[#DC2626] hover:bg-[#B91C1C] transition-colors cursor-pointer text-center"
+          >
+            {buttonText} (₹{basePrice})
+          </button>
+        )}
+      </div>
+
+      <PaymentModal isOpen={isModalOpen} onClose={() => setIsModalOpen(false)} />
+    </>
+  );
+}

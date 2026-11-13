@@ -1,5 +1,56 @@
 [
   {
+    "id": "LR-A10",
+    "url": "/how-banks-recover-long-pending-outstanding-loan-amounts",
+    "archetype": "B3",
+    "h2s": [
+      "Overcoming Statutory Limitation in Aged & Written-Off Bank Portfolios",
+      "4 Landmark Judicial Rulings on Bank Debt Revival & Limitation",
+      "What Won Recoveries in Aged & Stressed Loan Portfolios",
+      "Statutory Escalation Hierarchy: From Aged Default to Complete Recovery",
+      "5-Step Bank Recovery Playbook: From Aged NPA to Execution",
+      "Statutory Limitation & Bank Recovery Benchmarks in India",
+      "Stressed Asset Resolution Tabs: Practical Legal Mechanisms",
+      "Case Study: Bank Recovers ₹48 Lakh Aged MSME Loan via Section 18 & Lok Adalat",
+      "Bank Evidence Checklist: 6 Essential Loan Documents to Revive Debt",
+      "Frequently Asked Questions on Long-Pending Bank Loan Recovery",
+      "Statutory References, Banking Regulations & Authoritative Authorities"
+    ],
+    "components": [
+      "Breadcrumbs",
+      "LongPendingLoanRecoveryTableOfContents",
+      "LongPendingLoanRecoveryTabs",
+      "LongPendingLoanRecoveryCTA",
+      "RelatedRecoveryGuides"
+    ],
+    "faqQuestions": [
+      "What is the statutory limitation period for banks to recover outstanding loans in India?",
+      "How can banks revive a time-barred or long-pending loan account under Section 18 of the Limitation Act?",
+      "Does a small partial payment reset the limitation clock for bank loan recovery?",
+      "What happens if a borrower defaults on a sanctioned One-Time Settlement (OTS) agreement?",
+      "How can banks use National Lok Adalats to recover aged and chronic retail loan balances?",
+      "Can banks sell and assign aged, written-off loan portfolios to Asset Reconstruction Companies (ARCs)?",
+      "Purane NPA loan account se bank legal recovery kaise kar sakti hai agar 3 saal beet chuke hon?"
+    ],
+    "wordCount": 2850,
+    "artefacts": [
+      "Comparative limitation benchmarks table (Articles 14/15/55/62, Sec 18 & 19, LSA Sec 21, SARFAESI Sec 5)",
+      "Hand-authored SVG aged debt resolution flowchart",
+      "4 landmark judicial rulings with verified holdings (Laxmi Pat Surana, Dena Bank, SBI v. BS Agriculture, ARCIL v. Bishal Homes)",
+      "Interactive 5-problem stressed asset tabs component",
+      "Worked case study of ₹48 Lakh recovery from written-off MSME credit via Sec 18 & Lok Adalat",
+      "Bank evidence checklist of 6 essential loan documents under BSA Section 63"
+    ],
+    "sources": [
+      "Limitation Act 1963 Sections 18, 19, Articles 14, 15, 62",
+      "RBI Master Directions on IRACP Advances",
+      "RBI Framework for Compromise Settlements 2023",
+      "SARFAESI Act 2002 Sections 5 & 13",
+      "Legal Services Authorities Act 1987 Section 21",
+      "Bharatiya Sakshya Adhiniyam 2023 Section 63"
+    ]
+  },
+  {
     "id": "LR-176",
     "url": "/gym-membership-cancellation-refund-legal-notice",
     "archetype": "G5",
