@@ -439,6 +439,42 @@ const CLUSTERS: Record<string, { heading: string; items: GuideItem[] }> = {
     heading: "Related Cheque Bounce, Banking Auto-Debit & Cyber Fraud Guides",
     items: [
       {
+        title: "How Banks Can Reduce Recovery Costs Through Legal Outsourcing",
+        href: "/how-banks-reduce-recovery-costs-through-legal-outsourcing",
+        tag: "Legal Operations & Cost Optimization",
+        desc: "Unit-economics B2B blueprint demonstrating how banks cut debt recovery costs by up to 70% via flat-rate legal outsourcing and tech pipelines.",
+      },
+      {
+        title: "Legal Recovery Partners for Banks: Managing Defaulted Loan Portfolios",
+        href: "/legal-recovery-partners-banks-managing-defaulted-loan-portfolios",
+        tag: "NPA Portfolio Management",
+        desc: "Institutional balance-sheet partnership for banks. Data-driven loan segmentation across SARFAESI, Section 25 PSSA, Lok Adalat, and Commercial Suits.",
+      },
+      {
+        title: "Recovery of Multiple Defaulted Loan Accounts Through Legal Proceedings",
+        href: "/recovery-multiple-defaulted-loan-accounts-legal-proceedings",
+        tag: "Portfolio Loan Recovery",
+        desc: "Batch Pre-Litigation Lok Adalat filings, Section 25 PSS Act complaints, and centralized master retainership agreements for banks & NBFCs.",
+      },
+      {
+        title: "How Banks Can Recover Small-Ticket Personal Loans Legally",
+        href: "/recover-small-ticket-personal-loans-legally-banks",
+        tag: "Small-Ticket Loan Recovery",
+        desc: "Cost-effective legal solutions for banks and FinTechs to recover loans under ₹2 Lakhs via low-cost notices and Pre-Litigation Lok Adalat.",
+      },
+      {
+        title: "Bulk Legal Notice Services for Credit Card Recovery",
+        href: "/bulk-legal-notice-services-credit-card-recovery",
+        tag: "Bulk Card Recovery",
+        desc: "Industrial-scale legal notice dispatch via Speed Post API, WhatsApp, and Email with Section 63 BSA certificates.",
+      },
+      {
+        title: "Recovery of Long-Pending Credit Card Dues: Legal Process for Banks",
+        href: "/recovery-long-pending-credit-card-dues-legal-process",
+        tag: "Card Dues Recovery",
+        desc: "Legal solutions for banks recovering aged credit card dues beyond 180+ DPD. Limitation extensions, acknowledgment of debt, and Lok Adalat OTS.",
+      },
+      {
         title: "Bank Account Frozen Due to Cyber Cell Notice? How to Unfreeze",
         href: "/bank-account-frozen-cyber-cell-legal-remedies",
         tag: "Cyber Cell Freeze",
@@ -875,6 +911,8 @@ p.includes("school") ||
     p.includes("broker") ||
     p.includes("upi") ||
     p.includes("autopay") ||
+    p.includes("credit") ||
+    p.includes("card") ||
     p.includes("ni-act")
   ) {
     return CLUSTERS.banking;

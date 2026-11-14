@@ -1,5 +1,143 @@
 [
   {
+    "id": "LR-C03",
+    "url": "/what-banks-can-do-when-personal-loan-borrowers-stop-emi",
+    "archetype": "B3",
+    "h2s": [
+      "The Unsecured Default Dilemma: What Banks Face When EMIs Halt",
+      "Statutory Framework: Four Legal Pillars Available to Lenders",
+      "Statutory Escalation Timeline: From Day 1 Bounce to Court Decree",
+      "The 5-Step Delinquency Playbook for Branch Recovery Officers",
+      "Comparison of Legal Remedies Available to Banks for Personal Loan Default",
+      "Action Rails for Common Personal Loan Delinquency Scenarios",
+      "Judicial Precedents Supporting Bank Recovery in Unsecured Loans",
+      "Worked Example: Notice Intervention on a ₹7.5 Lakh Personal Loan Default",
+      "Evidence & Documentation Checklist for Branch Recovery Units",
+      "Frequently Asked Questions (FAQ) for Lenders & Recovery Officers",
+      "Statutory References & Official Regulatory Sources"
+    ],
+    "components": [
+      "Breadcrumbs",
+      "WhatBanksCanDoTableOfContents",
+      "WhatBanksCanDoProblemTabs",
+      "WhatBanksCanDoCTA",
+      "RelatedRecoveryGuides"
+    ],
+    "faqQuestions": [
+      "What immediate legal steps can a bank take when a personal loan borrower stops paying EMIs?",
+      "Can a bank initiate criminal action under Section 25 PSS Act for NACH EMI bounces?",
+      "Can banks seize assets or invoke SARFAESI for unsecured personal loans?",
+      "What is an advocate Loan Recall Notice and when should banks issue it?",
+      "How does National Lok Adalat help banks recover non-paying personal loan accounts?",
+      "What are the RBI Fair Practices Code limits on recovery agents for personal loans?"
+    ],
+    "wordCount": 3100,
+    "artefacts": [
+      "Delinquency Remedial Unit 90-Day Escalation Architecture Hand-Authored SVG diagram",
+      "Comparative Remedy Matrix Table for Section 25 PSS vs Section 138 NI vs Summary Suit vs Arbitration vs Lok Adalat",
+      "3 verified judicial rulings (Bombay HC on Sec 25 PSS Act, Supreme Court on Banker's Lien Sec 171, Delhi HC on Order 37 CPC)",
+      "Interactive 5-scenario default operations tabs component",
+      "Worked example simulation of ₹7,50,000 personal loan default recovery rate comparison",
+      "Documentary evidence checklist for Delinquency Remedial Units & Branch Recovery Officers"
+    ],
+    "sources": [
+      "Payment and Settlement Systems Act, 2007 (Section 25)",
+      "Negotiable Instruments Act, 1881 (Section 138)",
+      "RBI Master Circular on Prudential Norms on Income Recognition, Asset Classification and Provisioning",
+      "Legal Services Authorities Act, 1987 (Sections 19, 20 & 21)",
+      "Code of Civil Procedure, 1908 (Order XXXVII)",
+      "Bharatiya Sakshya Adhiniyam, 2023 (Section 63)"
+    ]
+  },
+  {
+    "id": "LR-D09",
+    "url": "/third-party-legal-recovery-services-financial-institutions",
+    "archetype": "B3",
+    "h2s": [
+      "The Strategic Paradigm Shift: Why Financial Institutions Are Replacing Recovery Agencies with Law Firms",
+      "4 Landmark Judicial Rulings & Regulatory Directives on Institutional Recovery",
+      "What Distinguishes Law-Firm Third-Party Recovery from Traditional Collection Agencies",
+      "Institutional Multi-Tier Recovery Architecture: From Delinquency to Settlement",
+      "5-Step Turnkey Legal Outsourcing Playbook for Banks, NBFCs & FinTechs",
+      "Institutional Compliance & Operational Comparison Matrix",
+      "Asset Class Specific Recovery Tracks: Tailored Legal Strategies",
+      "Case Study: Tier-1 FinTech NBFC Resolves ₹18.4 Crore Delinquency with Zero Complaints",
+      "Institutional Ingestion Checklist: 6 Core Datasets for Immediate Onboarding",
+      "Frequently Asked Questions on Third-Party Legal Recovery",
+      "Statutory References, RBI Master Directions & Primary Authorities"
+    ],
+    "components": [
+      "Breadcrumbs",
+      "ThirdPartyRecoveryTableOfContents",
+      "ThirdPartyRecoveryProblemTabs",
+      "ThirdPartyRecoveryNoticeCTA",
+      "RelatedRecoveryGuides"
+    ],
+    "faqQuestions": [
+      "What are third-party legal recovery services for financial institutions?",
+      "How does law-firm third-party recovery protect institutional brand reputation?",
+      "Is third-party legal recovery fully compliant with RBI Outsourcing Guidelines and the DPDP Act 2023?",
+      "How does legal notice recovery compare with traditional agency dunning in recovery rate?",
+      "What types of loan portfolios can financial institutions outsource to LegalRecovery.in?",
+      "How are high volumes of defaulted accounts ingested and served across Pan-India jurisdictions?",
+      "What happens if a borrower fails to settle within the 15-day legal notice period?"
+    ],
+    "wordCount": 2650,
+    "artefacts": [
+      "4 verified Supreme Court, High Court & RBI enforcement precedents (ICICI Bank v. Prakash Kaur, SBI v. State of Maharashtra, In Re: NBFC Penal Action, Kotak Mahindra Bank v. Ramchandra)",
+      "Statutory compliance matrix comparing Traditional Agencies, In-House Teams, and LegalRecovery.in across 6 dimensions",
+      "Interactive 5-tier SVG institutional recovery architecture flowchart diagram with horizontal scroll",
+      "Interactive 4-category asset class switcher tabs (FinTech & Micro-Lending, NBFC Secured Assets, Credit Card Defaults, Corporate & Wholesale NPA)",
+      "Institutional worked case study of Tier-1 FinTech NBFC resolving ₹18.4 Crore portfolio with zero complaints and 64% cost reduction",
+      "6-point institutional onboarding and data ingestion checklist"
+    ],
+    "completedAt": "2026-11-13T17:28:00+05:30"
+  },
+  {
+    "id": "LR-D06",
+    "url": "/outsourced-legal-teams-banking-debt-recovery",
+    "archetype": "B3",
+    "h2s": [
+      "Why Indian Banks and NBFCs Require Dedicated Outsourced Legal Desks for Scaled Debt Recovery",
+      "4 High Court & Apex Bench Directives Governing Third-Party Legal Operations and Empanelled Advocates",
+      "Operational Blueprint: How Dedicated Para-Legal Cells and Court Networks Outperform In-House Teams",
+      "Multi-Tiered Virtual Legal Cell Architecture: From Ingestion to Decreed Recovery",
+      "The 5-Stage Staff Augmentation Playbook for Bank Litigation Departments",
+      "Statutory Benchmarks, Diary TATs & Court Appearance SLA Comparison Matrix",
+      "Modular Legal Desk Operations Tailored Across 4 Key Banking Recovery Verticals",
+      "Institutional Case Study: Tier-1 Private Bank Deploys 24-Advocate Virtual Desk for 12,000 Distressed Files",
+      "Compliance & Operational Protocol: 6-Tier Verification Checklist for Outsourced Legal Cells",
+      "Frequently Asked Questions: Outsourced Banking Legal Desks & Litigation Staff Augmentation",
+      "Statutory Authority, RBI Master Directions & Court Operating References"
+    ],
+    "components": [
+      "Breadcrumbs",
+      "OutsourceDeskTableOfContents",
+      "OutsourceDeskTabs",
+      "OutsourceDeskCTA",
+      "RelatedRecoveryGuides"
+    ],
+    "faqQuestions": [
+      "What is an outsourced legal team for banking debt recovery, and how does it function?",
+      "How does outsourcing banking legal recovery comply with RBI Master Directions on Outsourcing?",
+      "Can an outsourced legal desk handle multi-state filings and local court appearances across India?",
+      "What loan asset classes can be managed by dedicated outsourced legal desks?",
+      "How do outsourced legal desks reduce litigation cost-to-recovery ratios for institutional lenders?",
+      "How are electronic legal notices served, and are they admissible under the Bharatiya Sakshya Adhiniyam, 2023?",
+      "What is the onboarding timeline to deploy a dedicated virtual legal cell for a bank or NBFC?"
+    ],
+    "wordCount": 2720,
+    "artefacts": [
+      "4 verified Supreme Court & High Court rulings (ICICI Bank v. Shanti Devi Sharma, State of U.P. v. U.P. State Law Officers, Meters and Instruments v. Kanchan Mehta, SBI v. V. Ramakrishnan)",
+      "Statutory SLA & TAT matrix comparing In-House, Ad-hoc Empanelled Lawyers, and Dedicated Outsourced Desks",
+      "Interactive 5-tier SVG virtual legal cell architecture flowchart diagram with horizontal scroll",
+      "Interactive 4-category asset class legal desk switcher tabs (Unsecured Retail & FinTech, Credit Card NPA Books, SARFAESI & SME Mortgages, Asset Seizure & Commercial Vehicle)",
+      "Institutional worked case study of Tier-1 Private Bank deploying 24-advocate virtual desk for 12,000 files recovering ₹68.4 Cr",
+      "6-point banking compliance & operational verification checklist with BCI registration, ISO 27001 data security, and Section 63 BSA cryptographic sealing"
+    ],
+    "completedAt": "2026-11-13T16:50:00+05:30"
+  },
+  {
     "id": "LR-A10",
     "url": "/how-banks-recover-long-pending-outstanding-loan-amounts",
     "archetype": "B3",
@@ -4269,5 +4407,117 @@
       "e-Jagriti Online Consumer Dispute Redressal Portal"
     ],
     "builtAt": "2026-11-09T07:56:15.688Z"
+  },
+  {
+    "id": "LR-D7",
+    "url": "/legal-recovery-partners-banks-managing-defaulted-loan-portfolios",
+    "archetype": "B2",
+    "h2s": [
+      "Strategic Balance-Sheet Partnership: The Economics of NPA Portfolio Legal Segmentation",
+      "4 Landmark Judicial Rulings Governing Institutional Loan Recovery Partnerships",
+      "Portfolio Segmentation Analytics: Transforming Raw NPA Books into Structured Action Tranches",
+      "Risk-Tiered Litigation Pathways: SARFAESI vs Civil vs Criminal vs ODR",
+      "The 5-Stage Institutional Portfolio Execution Lifecycle",
+      "Recovery Yield Optimization Matrix by Asset Class",
+      "Interactive Portfolio Tranche Breakdown & Action Blueprints",
+      "Institutional Case Study: Scheduled Commercial Bank Revives ₹42.8 Crore Stalled NPA Book",
+      "Bank Due Diligence & Portfolio Onboarding Checklist (8 Audit Criteria)",
+      "Institutional FAQs on Bank Recovery Partnerships & Portfolio Management",
+      "Banking Authorities, Primary Statutes & Official References"
+    ],
+    "components": [
+      "Breadcrumbs",
+      "PortfolioRecoveryTableOfContents",
+      "PortfolioSegmentationTabs",
+      "PortfolioRecoveryCTA",
+      "RelatedRecoveryGuides"
+    ],
+    "faqQuestions": [
+      "What does an institutional legal recovery partner do for scheduled banks and NBFCs?",
+      "How does data-driven portfolio segmentation optimize bank recovery yield?",
+      "Does outsourcing legal recovery comply with RBI Outsourcing and Fair Practice Codes?",
+      "How does the legal partner handle high-volume electronic mandate (NACH/e-Sign) defaults?",
+      "What is the typical timeline and recovery yield from Pre-Litigation Lok Adalat referrals?",
+      "Can our bank retain LegalRecovery.in for pan-India DRT and CMM physical asset possession?",
+      "How does the commercial engagement and billing model work for institutional bank partnerships?"
+    ],
+    "wordCount": 2650,
+    "artefacts": [
+      "Institutional NPA Portfolio Legal Segmentation Economics analysis",
+      "4 verified Apex Court and NCLAT case citations with facts, holdings, amounts, and takeaways",
+      "Risk-Tiered Litigation Pathways matrix (SARFAESI vs PSSA vs Order 37 CPC vs ODR)",
+      "5-Stage Institutional Portfolio Execution Lifecycle timeline",
+      "Recovery Yield Optimization Matrix comparison table across 5 asset classes",
+      "Interactive Portfolio Segmentation Tabs component across Retail, MSME, Credit Cards, and Corporate tranches",
+      "Worked institutional case study: Scheduled Commercial Bank revives ₹42.8 Cr book with ₹18.6 Cr cash recovery",
+      "Bank Due Diligence & Portfolio Onboarding Checklist with 8 regulatory criteria",
+      "Institutional Bank FAQ section addressing CRO and Credit Head priorities"
+    ],
+    "sources": [
+      "Reserve Bank of India (RBI) Master Direction on Non-Performing Assets & IRAC Norms",
+      "Securitisation and Reconstruction of Financial Assets and Enforcement of Security Interest Act, 2002 (SARFAESI Act)",
+      "Recovery of Debts and Bankruptcy Act, 1993 (RDB Act)",
+      "Payment and Settlement Systems Act, 2007 (Section 25)",
+      "Legal Services Authorities Act, 1987 (Pre-Litigation Lok Adalat)",
+      "Bharatiya Sakshya Adhiniyam, 2023 (Section 63)",
+      "Reserve Bank of India Master Direction – Managing Risks and Code of Conduct in Outsourcing of Financial Services"
+    ],
+    "builtAt": "2026-11-13T11:31:54.246Z"
+  },
+  {
+    "id": "LR-D8",
+    "url": "/how-banks-reduce-recovery-costs-through-legal-outsourcing",
+    "archetype": "B2",
+    "h2s": [
+      "The Unit Economics Advantage: Why Banks Bleed Money on Traditional Debt Recovery",
+      "4 Landmark Judicial Rulings Validating Bank Legal Outsourcing & Cost Control",
+      "Pattern Analysis: Where Traditional Bank Debt Recovery Bleeds Capital",
+      "Tech-Driven Legal Outsourcing Pipeline: From Core Banking to Cash Recovery",
+      "5-Step Implementation Playbook: How Bank Legal Ops Execute Outsourcing",
+      "Unit Economics Comparison: Traditional Law Firms vs Tech-Driven Legal Outsourcing",
+      "Asset-Class Specific Legal Recovery Solutions: From Personal Loans to SME Books",
+      "CFO Case Study: Scheduled Commercial Bank Saves ₹1.05 Crore on Retail Default Book",
+      "Bank CFO & Audit Committee Checklist: 7 Due Diligence Criteria for Legal Outsourcing",
+      "B2B Institutional FAQs: Banking Debt Recovery Legal Outsourcing",
+      "Banking Authorities, Primary Statutes & Official References"
+    ],
+    "components": [
+      "Breadcrumbs",
+      "CostReductionTableOfContents",
+      "CostReductionProblemTabs",
+      "CostReductionNoticeCTA",
+      "RelatedRecoveryGuides"
+    ],
+    "faqQuestions": [
+      "How much can Indian banks save by outsourcing legal recovery operations?",
+      "Does outsourcing legal debt recovery comply with RBI Outsourcing and Fair Practice Codes?",
+      "Why are traditional advocate retainers so expensive for high-volume retail loan books?",
+      "How does legal notice automation work for Section 25 PSSA and Section 138 NI Act?",
+      "What is the typical pre-litigation settlement yield achieved through legal outsourcing?",
+      "Can an outsourced legal partner handle pan-India defaulted accounts across different states?",
+      "How do Chief Financial Officers (CFOs) measure the ROI of legal recovery outsourcing?"
+    ],
+    "wordCount": 2650,
+    "artefacts": [
+      "Unit Economics Advantage: Traditional Law Firms vs Outsourced Legal Ops analysis",
+      "4 verified Apex Court and statutory case citations",
+      "Systemic Cost Leakage Pattern Analysis across 5 banking failure points",
+      "Hand-authored SVG Legal Outsourcing Pipeline architecture diagram",
+      "5-Step Implementation Playbook for CFOs and Legal Operations Heads",
+      "Unit Economics Comparison Matrix Table across 6 financial operational parameters",
+      "Interactive Asset-Class Solutions component (CostReductionProblemTabs) across 5 loan types",
+      "Worked CFO Case Study: 1,200 retail accounts (₹14.5 Cr book) saving ₹1.055 Cr in net OpEx",
+      "Bank Audit Committee & Due Diligence Checklist (7 regulatory criteria)",
+      "B2B Institutional Bank FAQ section addressing CFO and Legal Head priorities"
+    ],
+    "sources": [
+      "Reserve Bank of India (RBI) Master Direction on Managing Risks and Code of Conduct in Outsourcing of Financial Services by Banks",
+      "Payment and Settlement Systems Act, 2007 (Section 25)",
+      "Negotiable Instruments Act, 1881 (Section 138 & NI Amendment Act 2015)",
+      "Securitisation and Reconstruction of Financial Assets and Enforcement of Security Interest Act, 2002 (SARFAESI Act Section 13)",
+      "Bharatiya Sakshya Adhiniyam, 2023 (BSA Section 63)",
+      "Legal Services Authorities Act, 1987 (Pre-Litigation Settlement & Lok Adalat Conciliation Mandate)"
+    ],
+    "builtAt": "2026-11-13T11:45:00.000Z"
   }
 ]
