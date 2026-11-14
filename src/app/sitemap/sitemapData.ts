@@ -7,6 +7,249 @@ export interface SitemapItem {
 }
 
 export const ALL_SITEMAP_PAGES: SitemapItem[] = [
+
+  {
+    title: "India Hospital Receivables, TPA Deductions & CGHS DSO Report",
+    href: "/reports/healthcare-tpa-settlement-delay-hospital-receivables-india",
+    category: "B2B & Institutional Recovery",
+    date: "14 Nov 2026",
+    timestamp: 1794675000000,
+  },
+
+  {
+    title: "Hospital Pending-Bill Discharge Undertaking & Legal Notice Pack",
+    href: "/templates/hospital-discharge-pending-bill-undertaking-and-legal-notice",
+    category: "B2B & Institutional Recovery",
+    date: "14 Nov 2026",
+    timestamp: 1794674500000,
+  },
+
+  {
+    title: "Medical Equipment, Reagent & Hospital AMC/CMC Recovery",
+    href: "/medical-equipment-hospital-supply-amc-cmc-payment-default-recovery",
+    category: "B2B & Institutional Recovery",
+    date: "14 Nov 2026",
+    timestamp: 1794674000000,
+  },
+
+  {
+    title: "Cardiac Stent & Ortho Implant Consignment Dues Recovery",
+    href: "/cardiac-stent-orthopedic-implant-hospital-consignment-dues-recovery",
+    category: "B2B & Institutional Recovery",
+    date: "14 Nov 2026",
+    timestamp: 1794673500000,
+  },
+
+  {
+    title: "Pharma, Medical Device & Surgical Distributor Debt Recovery",
+    href: "/industries/pharma-medical-devices-recovery",
+    category: "B2B & Institutional Recovery",
+    date: "14 Nov 2026",
+    timestamp: 1794673000000,
+  },
+
+  {
+    title: "Hospital TPA Delayed Claim Penal Interest Calculator (IRDAI)",
+    href: "/tools/hospital-tpa-delayed-claim-interest-calculator",
+    category: "B2B & Institutional Recovery",
+    date: "14 Nov 2026",
+    timestamp: 1794672000000,
+  },
+
+  {
+    title: "Home Healthcare & ICU Eldercare Unpaid Bill Recovery",
+    href: "/home-healthcare-icu-at-home-eldercare-unpaid-billing-recovery",
+    category: "Guides",
+    date: "14 Nov 2026",
+    timestamp: 1794671000000,
+  },
+
+
+  {
+    title: "PPP Dialysis & Daycare Center NHM Dues Recovery",
+    href: "/dialysis-oncology-daycare-center-ppp-government-bill-recovery",
+    category: "Recovery Claims",
+    date: "14 Nov 2026",
+    timestamp: 1794670000000,
+  },
+
+  {
+    title: "Air Ambulance & Emergency Medical Fleet Unpaid Bill Recovery",
+    href: "/ambulance-air-ambulance-medical-evacuation-unpaid-bill-recovery",
+    category: "Guides",
+    date: "14 Nov 2026",
+    timestamp: 1794669500000,
+  },
+
+  {
+    title: "Abandoned Long-Stay Patient & Unpaid ICU Bill: Hospital Protocol",
+    href: "/hospital-long-stay-patient-abandonment-unpaid-bill-legal-protocol",
+    category: "Guides",
+    date: "14 Nov 2026",
+    timestamp: 1794669000000,
+  },
+
+  {
+    title: "Home Healthcare & ICU Eldercare Unpaid Bill Recovery",
+    href: "/home-healthcare-icu-at-home-eldercare-unpaid-billing-recovery",
+    category: "Guides",
+    date: "14 Nov 2026",
+    timestamp: 1794668500000,
+  },
+  {
+    title: "Patient & Relative Cheque Bounce at Hospital Discharge (Section 138)",
+    href: "/patient-cheque-bounce-stop-payment-at-hospital-discharge-section-138",
+    category: "B2B & Institutional Recovery",
+    date: "14 Nov 2026",
+    timestamp: 1794668000000,
+  },
+
+  {
+    title: "IVF, Dental & Cosmetic Clinic Package Default & Fee Recovery",
+    href: "/ivf-dental-cosmetic-clinic-treatment-package-emi-default-recovery",
+    category: "B2B & Institutional Recovery",
+    date: "14 Nov 2026",
+    timestamp: 1794667500000,
+  },
+
+  {
+    title: "Diagnostic Lab & Pathology Franchise B2B Dues Recovery",
+    href: "/diagnostic-lab-pathology-collection-center-b2b-dues-recovery",
+    category: "B2B & Institutional Recovery",
+    date: "14 Nov 2026",
+    timestamp: 1794667000000,
+  },
+  {
+    title: "Diagnostic Lab & Pathology Franchise B2B Dues Recovery",
+    href: "/diagnostic-lab-pathology-collection-center-b2b-dues-recovery",
+    category: "Guides",
+    date: "14 Nov 2026",
+    timestamp: 1794667000000,
+  },
+
+  {
+    title: "Hospital Corporate Credit Tie-Up & PSU Medical Bill Recovery",
+    href: "/hospital-corporate-credit-tie-up-psu-medical-bill-recovery",
+    category: "Guides",
+    date: "14 Nov 2026",
+    timestamp: 1794666500000,
+  },
+
+  {
+    title: "Visiting Doctor & Surgeon Unpaid Hospital Fee Recovery Guide",
+    href: "/visiting-consultant-doctor-unpaid-professional-fee-from-hospital",
+    category: "Guides",
+    date: "14 Nov 2026",
+    timestamp: 1794666000000,
+  },
+
+  {
+    title: "Hospital vs TPA/Insurer: Recover Delayed & Short-Settled Claims",
+    href: "/hospital-tpa-insurance-delayed-short-settled-claim-recovery",
+    category: "Guides",
+    date: "14 Nov 2026",
+    timestamp: 1794665500000,
+  },
+
+  {
+    title: "CGHS, ECHS, ESIC & PM-JAY Empanelled Hospital Arrears Recovery",
+    href: "/cghs-echs-ayushman-bharat-esic-empanelled-hospital-dues-recovery",
+    category: "Guides",
+    date: "14 Nov 2026",
+    timestamp: 1794665000000,
+  },
+
+  {
+    title: "Post-Discharge Hospital Bill Recovery Without Detaining Patients",
+    href: "/hospital-unpaid-patient-bill-recovery-without-detaining-patient",
+    category: "Guides",
+    date: "14 Nov 2026",
+    timestamp: 1794664500000,
+  },
+  {
+    title: "India NBFC & Digital Lending Recovery Benchmarks (2026)",
+    href: "/reports/nbfc-digital-lending-legal-recovery-benchmarks-india",
+    category: "B2B & Institutional Recovery",
+    date: "14 Nov 2026",
+    timestamp: 1794664500000,
+  },
+  {
+    title: "Section 25 PSS Act (e-NACH / ECS Bounce) Notice Format",
+    href: "/templates/section-25-pss-act-nach-bounce-legal-notice-format",
+    category: "B2B & Institutional Recovery",
+    date: "14 Nov 2026",
+    timestamp: 1794663500000,
+  },
+  {
+    title: "RBI Credit Bureau (CIC/CIBIL) Pre-Reporting Default Notice Compliance for Lenders",
+    href: "/cibil-cic-pre-reporting-default-notice-compliance-lenders",
+    category: "B2B & Institutional Recovery",
+    date: "14 Nov 2026",
+    timestamp: 1794664000000,
+  },
+  {
+    title: "Section 25 e-NACH Bounce Notice & Filing Deadline Calculator",
+    href: "/tools/section-25-nach-bounce-limitation-calculator",
+    category: "B2B & Institutional Recovery",
+    date: "14 Nov 2026",
+    timestamp: 1794664000000,
+  },
+  {
+    title: "Neutral ODR & Online Arbitration Clause Drafting for NBFCs (Post-CORE)",
+    href: "/neutral-odr-online-arbitration-clause-drafting-fintech-nbfc",
+    category: "B2B & Institutional Recovery",
+    date: "14 Nov 2026",
+    timestamp: 1794663500000,
+  },
+  {
+    title: "HFC Affordable Home Loan & Subvention NPA Recovery Playbook",
+    href: "/housing-finance-company-hfc-affordable-home-loan-npa-recovery",
+    category: "B2B & Institutional Recovery",
+    date: "14 Nov 2026",
+    timestamp: 1794662500000,
+  },
+  {
+    title: "Debt Collection SaaS vs Pay-Per-Notice Legal Desk for NBFCs",
+    href: "/credgenics-spocto-alternative-mid-market-nbfc-legal-notice-platform",
+    category: "B2B & Institutional Recovery",
+    date: "14 Nov 2026",
+    timestamp: 1794663000000,
+  },
+  {
+    title: "NBFC-MFI & JLG Microfinance Delinquency Recovery (RBI & MFIN Safe)",
+    href: "/microfinance-mfi-jlg-group-loan-default-compliant-recovery",
+    category: "B2B & Institutional Recovery",
+    date: "14 Nov 2026",
+    timestamp: 1794662500000,
+  },
+  {
+    title: "Co-Lending & 5% DLG (FLDG) Default Recovery Legal Workflow",
+    href: "/co-lending-fldg-dlg-default-recovery-workflow-bank-nbfc",
+    category: "B2B & Institutional Recovery",
+    date: "14 Nov 2026",
+    timestamp: 1794662000000,
+  },
+  {
+    title: "NBFC SARFAESI Eligibility: ₹100 Cr Asset & ₹20L Loan Rule",
+    href: "/nbfc-sarfaesi-eligibility-100-crore-asset-20-lakh-loan-rule",
+    category: "B2B & Institutional Recovery",
+    date: "14 Nov 2026",
+    timestamp: 1794661500000,
+  },
+  {
+    title: "Recovering Defaulted Supply-Chain Finance (SCF), Dealer Financing & Factoring Receivables in India",
+    href: "/supply-chain-finance-channel-invoice-discounting-default-recovery",
+    category: "B2B & Institutional Recovery",
+    date: "14 Nov 2026",
+    timestamp: 1794661500000,
+  },
+  {
+    title: "Commercial Vehicle & Construction Equipment Finance Recovery for NBFCs",
+    href: "/commercial-vehicle-construction-equipment-finance-recovery-nbfc",
+    category: "B2B & Institutional Recovery",
+    date: "14 Nov 2026",
+    timestamp: 1794661000000,
+  },
   {
     title: "Gold Loan Default & Auction Notice Compliance for NBFCs (RBI)",
     href: "/gold-loan-default-auction-statutory-notice-rbi-compliance-nbfc",
@@ -69,13 +312,6 @@ export const ALL_SITEMAP_PAGES: SitemapItem[] = [
     category: "B2B & Institutional Recovery",
     date: "14 Nov 2026",
     timestamp: 1794657000000,
-  },
-  {
-    title: "Pharma, Medical Device & Surgical Distributor Debt Recovery",
-    href: "/industries/pharma-medical-devices-recovery",
-    category: "B2B & Institutional Recovery",
-    date: "14 Nov 2026",
-    timestamp: 1794656000000,
   },
   {
     title: "Logistics, 3PL, Transporter & Freight Debt Recovery",

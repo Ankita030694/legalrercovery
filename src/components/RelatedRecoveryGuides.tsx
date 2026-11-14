@@ -439,10 +439,28 @@ const CLUSTERS: Record<string, { heading: string; items: GuideItem[] }> = {
     heading: "Related Cheque Bounce, Banking Auto-Debit & Cyber Fraud Guides",
     items: [
       {
+        title: "Section 25 PSS Act (e-NACH / ECS Bounce) Notice Format",
+        href: "/templates/section-25-pss-act-nach-bounce-legal-notice-format",
+        tag: "IND-02 Template",
+        desc: "Court-tested s.25 PSS Act notice with UMRN, NPCI return memo & Suman Sethi dual-demand safeguard.",
+      },
+      {
+        title: "Enterprise Collection SaaS vs Advocate-Backed Bulk Legal Desk (NBFCs)",
+        href: "/credgenics-spocto-alternative-mid-market-nbfc-legal-notice-platform",
+        tag: "IND-02 CFO Guide",
+        desc: "Compare Credgenics/Spocto annual SaaS lock-in vs zero-lock-in Advocate Notice + Email/WATI WhatsApp/Speed Post RPAD + Reply Triage.",
+      },
+      {
         title: "Gold Loan Default & Auction Notice Compliance for NBFCs (RBI)",
         href: "/gold-loan-default-auction-statutory-notice-rbi-compliance-nbfc",
         tag: "Gold Loan s.176",
         desc: "Audit-proof Contract Act s.176 pre-auction notice, 75% LTV margin call, 14-day vernacular newspaper, taluka auction & deficit recovery.",
+      },
+      {
+        title: "NBFC-MFI & Microfinance Delinquency Recovery (RBI Safe)",
+        href: "/microfinance-mfi-jlg-group-loan-default-compliant-recovery",
+        tag: "NBFC-MFI & JLG",
+        desc: "RBI & MFIN-safe escalation for ₹75K–₹3L graduated MSME loans & ring-leader defaults via vernacular Speed Post RPAD & Lok Adalat.",
       },
       {
         title: "RBI Recovery Agent Directions & Digital Lending Compliance for NBFCs",
@@ -455,6 +473,12 @@ const CLUSTERS: Record<string, { heading: string; items: GuideItem[] }> = {
         href: "/small-ticket-digital-personal-loan-bnpl-recovery-economics",
         tag: "Fintech & BNPL",
         desc: "Unit-positive 3-wave playbook combining BSA s.63 digital advocate notices, 30-day CICRA pre-adverse alerts, selective RPAD & s.29B batch ODR.",
+      },
+      {
+        title: "Supply-Chain Finance, Dealer Financing & Factoring Recovery",
+        href: "/supply-chain-finance-channel-invoice-discounting-default-recovery",
+        tag: "SCF & Factoring",
+        desc: "Enforce Factoring Act s.8 assignment notices, s.19 CERSAI priority, anchor stop-supply covenants, Order 37 CPC & BNS s.318 dual-pledge fraud.",
       },
       {
         title: "Bank Loan Recall cum Guarantee Invocation Notice Format (RBI Compliant)",
@@ -475,10 +499,52 @@ const CLUSTERS: Record<string, { heading: string; items: GuideItem[] }> = {
         desc: "Multi-vertical hub covering PSS Act s.25 e-NACH bounces, Gold s.176, CV Form 36, NBFC ₹100Cr/₹20L & HFC ₹1L SARFAESI, Co-Lending DLG & bulk CSV notices.",
       },
       {
+        title: "India NBFC & Digital Lending Legal Recovery Benchmarks (2026)",
+        href: "/reports/nbfc-digital-lending-legal-recovery-benchmarks-india",
+        tag: "IND-02 Benchmark",
+        desc: "Empirical B2B benchmark study mapping SMA-0 to NPA DPD-bucket cure windows, Email vs. WhatsApp vs. RPAD service validity, and ₹999–₹1,449 ROI.",
+      },
+      {
+        title: "Section 25 (PSS Act) e-NACH & AutoPay Bounce Deadline Calculator",
+        href: "/tools/section-25-nach-bounce-limitation-calculator",
+        tag: "IND-02 Calculator",
+        desc: "Calculate exact 30-day notice cut-offs, electronic vs RPAD deemed-service dates, 15-day cure expiry & batch CSV Magistrate filing deadlines.",
+      },
+      {
+        title: "Co-Lending & 5% DLG (FLDG) Default Recovery Legal Workflow",
+        href: "/co-lending-fldg-dlg-default-recovery-workflow-bank-nbfc",
+        tag: "IND-02 Co-Lending",
+        desc: "Solve locus standi, Servicing POA, s.25 e-NACH payee mismatch & 5% DLG non-extinguishment traps in 80:20 Bank–NBFC co-lending.",
+      },
+      {
+        title: "Unsecured SME Business Loan & Merchant Cash Advance (EDI) Recovery",
+        href: "/unsecured-business-loan-sme-working-capital-default-nbfc",
+        tag: "IND-02 SME & EDI",
+        desc: "Dual PSS Act s.25 criminal notices + Commercial Court Order XXXVIII Rule 5 bank & GST-debtor attachment for ₹5L–₹75L SME defaults.",
+      },
+      {
         title: "NBFC SARFAESI Eligibility: ₹100 Cr Asset & ₹20 Lakh Debt Rule",
         href: "/nbfc-sarfaesi-eligibility-100-crore-asset-20-lakh-loan-rule",
         tag: "IND-02 NBFC Law",
         desc: "MoF S.O. 856(E)/652(E) dual-gate threshold analysis plus Arbitration s.21/s.9 & Order 34/37 alternatives for Base-Layer and sub-₹20L LAP lenders.",
+      },
+      {
+        title: "Neutral ODR & Online Arbitration Clause Drafting (Post-CORE)",
+        href: "/neutral-odr-online-arbitration-clause-drafting-fintech-nbfc",
+        tag: "IND-02 NBFC Law",
+        desc: "Drafting Section 12(5) & 5-Judge CORE-compliant institutional ODR clauses, Seat vs. Virtual Venue rules, and BSA s.63 notice proof for NBFCs.",
+      },
+      {
+        title: "HFC Affordable Home Loan & Subvention NPA Recovery Playbook",
+        href: "/housing-finance-company-hfc-affordable-home-loan-npa-recovery",
+        tag: "IND-02 HFC SARFAESI",
+        desc: "₹1 Lakh SARFAESI floor for RBI-registered HFCs, CERSAI s.26D perfection, stalled-builder tripartite defaults & Tier-2/3 informal-income cures.",
+      },
+      {
+        title: "RBI Credit Bureau (CIC/CIBIL) Pre-Reporting Default Notice Compliance",
+        href: "/cibil-cic-pre-reporting-default-notice-compliance-lenders",
+        tag: "IND-02 CIC Nodal",
+        desc: "Embed mandatory RBI pre-reporting alerts and Commercial CMR rank disclosures into Day-30 notices while staying insulated from ₹100/day Ombudsman penalties.",
       },
       {
         title: "Commercial Vehicle & Construction Equipment Finance Recovery for NBFCs",
@@ -922,6 +988,42 @@ const CLUSTERS: Record<string, { heading: string; items: GuideItem[] }> = {
     heading: "Related Healthcare RCM, Statutory Notice & Institutional Recovery Guides",
     items: [
       {
+        title: "The 2026–2027 Indian Hospital Receivables & TPA/CGHS Delay Index: DSO Benchmarks Across Private Healthcare",
+        href: "/reports/healthcare-tpa-settlement-delay-hospital-receivables-india",
+        tag: "Healthcare DSO Report",
+        desc: "Empirical benchmark study of DSO, arbitrary TPA deductions (14.8%), CGHS arrears (218d), and IRDAI Bank Rate + 2% penal interest.",
+      },
+      {
+        title: "Abandoned Long-Stay Patient & Unpaid ICU Bill: Hospital Protocol",
+        href: "/hospital-long-stay-patient-abandonment-unpaid-bill-legal-protocol",
+        tag: "Patient Abandonment",
+        desc: "Police/DM intimation protocol, safe Govt hospital transfer, Section 24 Senior Citizens Act arrest levers, and Order XXXVII summary recovery.",
+      },
+      {
+        title: "Home Healthcare, Home-ICU & Eldercare Unpaid Bill Recovery",
+        href: "/home-healthcare-icu-at-home-eldercare-unpaid-billing-recovery",
+        tag: "Home Healthcare",
+        desc: "Recover 24x7 ICU shift arrears, unreturned ventilators under BNS s.316, and enforce child support on overseas NRI sponsors.",
+      },
+      {
+        title: "Prosecuting Discharge Cheque Bounce & Stop Payment (s.138)",
+        href: "/patient-cheque-bounce-stop-payment-at-hospital-discharge-section-138",
+        tag: "Discharge Cheque",
+        desc: "Prosecute patient and third-party relative dishonoured cheques under s.138, defeat coercion defenses, and secure 20% s.143A interim deposit.",
+      },
+      {
+        title: "Visiting Consultant Doctor Unpaid Fee & Retainer Recovery",
+        href: "/visiting-consultant-doctor-unpaid-professional-fee-from-hospital",
+        tag: "Doctor Fee Recovery",
+        desc: "Recover withheld surgical shares & retainers using Form 26AS Section 194J TDS admissions and CPC Order 37.",
+      },
+      {
+        title: "Diagnostic Lab & Pathology Franchise B2B Dues Recovery",
+        href: "/diagnostic-lab-pathology-collection-center-b2b-dues-recovery",
+        tag: "Diagnostic Lab Recovery",
+        desc: "Recover overdue B2B lab dues from defaulting PCC collection centers and nursing homes under Commercial Courts & NI Act.",
+      },
+      {
         title: "Ethical, Article-21 Compliant Debt & Claim Recovery for Hospitals, Doctors, Clinics & Diagnostic Chains",
         href: "/industries/hospitals-doctors-healthcare-recovery",
         tag: "IND-03 Healthcare Hub",
@@ -1133,6 +1235,18 @@ const CLUSTERS: Record<string, { heading: string; items: GuideItem[] }> = {
     heading: "Related Pharma, Medical Device & B2B Creditor Recovery Guides",
     items: [
       {
+        title: "Medical Equipment, Reagent & Hospital AMC/CMC Recovery",
+        href: "/medical-equipment-hospital-supply-amc-cmc-payment-default-recovery",
+        tag: "MedTech & AMC",
+        desc: "Enforce Retention of Title (Sale of Goods Act s.25), PCPNDT ultrasound safe seizure rules & reagent-rental shortfall recovery.",
+      },
+      {
+        title: "Cardiac Stent & Ortho Implant Consignment Dues Recovery",
+        href: "/cardiac-stent-orthopedic-implant-hospital-consignment-dues-recovery",
+        tag: "Hospital Consignment",
+        desc: "Enforce Sale of Goods Act s.24 for unbilled stent & joint consumption in OT, OT barcode stickers & BNS s.316.",
+      },
+      {
         title: "Pharma, Medical Device & Surgical Distributor Debt Recovery",
         href: "/industries/pharma-medical-devices-recovery",
         tag: "IND-04 Pillar Hub",
@@ -1262,6 +1376,16 @@ const CLUSTERS: Record<string, { heading: string; items: GuideItem[] }> = {
 
 function detectCluster(pathname: string): { heading: string; items: GuideItem[] } {
   const p = pathname.toLowerCase();
+  if (
+    p.includes("cardiac-stent") ||
+    p.includes("orthopedic-implant") ||
+    p.includes("consignment-dues") ||
+    p.includes("pharma") ||
+    p.includes("medical-devices") ||
+    p.includes("distributor-dealer")
+  ) {
+    return CLUSTERS.commercialB2B;
+  }
   if (
     p.includes("hotels-banquets-corporate-travel") ||
     p.includes("hotel-btc-bill-to-company") ||
@@ -1451,6 +1575,7 @@ p.includes("school") ||
     p.includes("card") ||
     p.includes("ni-act") ||
     p.includes("nbfc") ||
+    p.includes("section-25-nach") ||
     p.includes("fintech") ||
     p.includes("hfc") ||
     p.includes("mfi")
@@ -1475,6 +1600,7 @@ p.includes("school") ||
   if (
     p.includes("pharma") ||
     p.includes("medical-devices") ||
+    p.includes("medical-equipment") ||
     p.includes("distributor-dealer")
   ) {
     return CLUSTERS.commercialB2B;

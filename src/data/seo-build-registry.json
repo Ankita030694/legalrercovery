@@ -5320,5 +5320,1405 @@
       "Bharatiya Nyaya Sanhita (BNS), 2023 (Sections 316 & 318)"
     ],
     "builtAt": "2026-11-14T13:18:00+05:30"
+  },
+  {
+    "id": "B2B-024",
+    "url": "/commercial-vehicle-construction-equipment-finance-recovery-nbfc",
+    "archetype": "G1",
+    "h2s": [
+      "Why Retail Car Recovery Fails for Commercial Vehicles & Earthmovers",
+      "CV & CE Recovery Decision Tree: From 30 DPD to Deficit Execution",
+      "Statutory Recovery Matrix for CV & CE NBFC Portfolios",
+      "Section 9 Ex-Parte Court Receivers & Interstate Seizure SOP",
+      "Vahan Blacklist & MV Act Section 51(5) Form 36 Workflow",
+      "4 Commercial Failure Modes & NBFC Legal Playbooks",
+      "Landmark Judicial Precedents Governing CV & CE Recovery",
+      "Worked Loss-on-Sale Ledger: ₹48L Heavy Tipper Deficit Suit",
+      "BSA 2023 Section 63 Evidence & Litigation Readiness Checklist",
+      "Frequently Asked Questions for CV & CE NBFC Legal Teams",
+      "Statutory References & Official Regulatory Sources"
+    ],
+    "components": [
+      "Breadcrumbs",
+      "CommercialVehicleTableOfContents",
+      "CommercialVehicleScenarioTabs",
+      "CommercialVehicleCTA",
+      "RelatedRecoveryGuides"
+    ],
+    "faqQuestions": [
+      "Can an NBFC obtain an ex-parte Section 9 Court Receiver order to seize a commercial truck across state borders?",
+      "What is Vahan Form 36 and when should a CV NBFC file it under Section 51(5) of the Motor Vehicles Act?",
+      "How does an NBFC prevent a defaulting fleet operator from cannibalising tyres and engines before seizure?",
+      "How can an NBFC recover the shortfall if the auction proceeds are lower than the loan outstanding (Loss-on-Sale)?",
+      "Does SARFAESI apply to commercial vehicle and construction equipment loans?",
+      "How do NBFCs repossess non-RTO off-highway construction equipment like excavators or batching plants?",
+      "How do RBI's 2023 Penal Charges guidelines affect Loss-on-Sale deficit calculations?"
+    ],
+    "wordCount": 2250,
+    "artefacts": [
+      "CV & CE NBFC Recovery Decision Tree SVG & mobile stacked cards",
+      "Statutory Recovery Matrix Table (Sec 9, Sec 17, MV Act s.51(5), Order 37, PSS Act s.25)",
+      "Interactive 4-scenario CommercialVehicleScenarioTabs component",
+      "Worked ₹48L Heavy Tipper Loss-on-Sale Deficit Ledger",
+      "BSA 2023 Section 63 Evidence & Litigation Readiness Checklist",
+      "Dual-Track CommercialVehicleCTA (₹999 Test + Bulk CSV Institutional Desk)"
+    ],
+    "sources": [
+      "Arbitration and Conciliation Act, 1996 (ss.9, 17, 21, 36)",
+      "Motor Vehicles Act, 1988 (s.51(5) Form 36)",
+      "Commercial Courts Act, 2015",
+      "RBI Fair Lending Practice: Penal Charges in Loan Accounts (2023)",
+      "Bharatiya Sakshya Adhiniyam, 2023 (s.63)"
+    ],
+    "builtAt": "2026-11-14T13:19:00+05:30"
+  },
+  {
+    "id": "B2B-027",
+    "url": "/supply-chain-finance-channel-invoice-discounting-default-recovery",
+    "archetype": "G1",
+    "h2s": [
+      "Tripartite SCF Default Architecture & Statutory Overview",
+      "Decision Tree: Dealer vs. Vendor vs. Anchor Default Tracks",
+      "Statutory Matrix: Factoring Act, TReDS, Order 37 & BNS s.318",
+      "Operational Failure Modes in Channel & Invoice Finance",
+      "Worked Ledger: ₹42L Channel Default & Dual-Pledge Recovery",
+      "BSA 2023 s.63, CERSAI & TReDS Evidence Checklist",
+      "Deploy SCF Recovery: Single ₹999 Test or Bulk CSV Desk",
+      "FAQs: Supply-Chain Finance & Factoring Default Recovery",
+      "Statutory Authorities, TReDS & CERSAI Portals"
+    ],
+    "components": [
+      "Breadcrumbs",
+      "ScfRecoveryTableOfContents",
+      "ScfRecoveryScenarioTabs",
+      "ScfRecoveryCTA",
+      "RelatedRecoveryGuides"
+    ],
+    "faqQuestions": [
+      "How does Section 8 of the Factoring Regulation Act, 2011 protect an SCF NBFC when a buyer pays the vendor directly?",
+      "Why is Section 19 CERSAI registration critical in invoice discounting and double-financing disputes?",
+      "What legal leverage does an NBFC have when a dealer diverts sales proceeds under anchor-led channel financing?",
+      "What is the legal difference between with-recourse and without-recourse invoice discounting recovery?",
+      "How can an SCF lender prosecute a vendor for double-pledging or discounting fake invoices?",
+      "Can a corporate buyer stall an Order XXXVII CPC Summary Suit by raising vague quality disputes months after TReDS acceptance?",
+      "Can our SCF or Factoring desk test LegalRecovery.in on one defaulted account before uploading a bulk portfolio?"
+    ],
+    "wordCount": 2200,
+    "artefacts": [
+      "Hand-authored Tripartite SCF Default Decision Tree SVG (840x260) with mobile stacked cards",
+      "5-track Statutory Matrix Table (Factoring Act s.8/s.19, Anchor Stop-Supply, TReDS, Order 37 CPC, BNS s.318/s.25 PSS)",
+      "Interactive 4-tab Operational Failure Modes Explorer (ScfRecoveryScenarioTabs)",
+      "Worked ₹42L Channel Default & Dual-Pledge Recovery Ledger",
+      "6-point BSA 2023 s.63, CERSAI & TReDS Evidence Checklist",
+      "Dual-Track B2B Conversion CTA (ScfRecoveryCTA) with ₹999 live test & Bulk CSV / Representees desk"
+    ],
+    "sources": [
+      "Factoring Regulation Act, 2011 (Sections 8, 9, 19 & 2021 Amendment)",
+      "RBI Trade Receivables Discounting System (TReDS) Guidelines",
+      "CERSAI Assignment Registration Framework",
+      "Code of Civil Procedure, 1908 (Order XXXVII & Order XXXVIII Rule 5)",
+      "Bharatiya Nyaya Sanhita, 2023 (Sections 318 & 336) & Bharatiya Sakshya Adhiniyam, 2023 (Section 63)"
+    ],
+    "builtAt": "2026-11-14T14:35:00+05:30"
+  },
+  {
+    "id": "B2B-025",
+    "url": "/nbfc-sarfaesi-eligibility-100-crore-asset-20-lakh-loan-rule",
+    "archetype": "L1",
+    "h2s": [
+      "MoF S.O. 856(E) & 652(E): The Dual-Gate NBFC SARFAESI Test",
+      "HFC ₹1 Lakh Floor vs NBFC ₹20 Lakh Bar & ARC Assignment",
+      "Landmark Supreme Court & High Court Rulings on NBFC Enforcement",
+      "Dual-Track Mortgage Enforcement: Notified vs Non-SARFAESI NBFCs",
+      "Order 34 CPC vs Arbitration s.9/s.36 vs ARC Assignment Matrix",
+      "4 NBFC LAP Default Scenarios & Statutory Forum Routing",
+      "Pre-Empting Borrower Defenses in Non-SARFAESI Mortgage Suits",
+      "Worked LAP Recovery Math: ₹14.5L Mortgage vs ₹26.2L SARFAESI",
+      "FAQs: NBFC SARFAESI Thresholds, HFCs & LAP Mortgage Recovery",
+      "Statutory Notifications, Bare Acts & Regulatory Portals"
+    ],
+    "components": [
+      "Breadcrumbs",
+      "NbfcSarfaesiTableOfContents",
+      "NbfcSarfaesiScenarioTabs",
+      "NbfcSarfaesiCTA",
+      "RelatedRecoveryGuides"
+    ],
+    "faqQuestions": [
+      "What is the minimum asset size and loan amount for an NBFC to invoke SARFAESI in India?",
+      "Can a Base-Layer NBFC with ₹40 Crore AUM use SARFAESI for a ₹50 Lakh LAP default?",
+      "Why do Housing Finance Companies (HFCs) have a lower SARFAESI threshold than NBFCs?",
+      "How can a non-SARFAESI NBFC enforce a mortgage without waiting 8–10 years in an Order 34 CPC suit?",
+      "Does assigning a sub-₹20 Lakh NBFC NPA to an Asset Reconstruction Company (ARC) unlock SARFAESI?",
+      "Can an NBFC add compounded penal interest to cross the ₹20 Lakh SARFAESI threshold?"
+    ],
+    "wordCount": 2250,
+    "artefacts": [
+      "Hand-authored SVG Dual-Track NBFC SARFAESI vs Non-SARFAESI Decision Tree + Mobile Stacked Cards",
+      "bg-slate-900 Order 34 CPC vs Arbitration s.9/s.36 vs ARC Assignment Matrix Table",
+      "4 verified Supreme Court rulings (Booz Allen, Vidya Drolia, Mardia Chemicals, Phoenix ARC)",
+      "Interactive 4-tab NbfcSarfaesiScenarioTabs client component",
+      "Debtor Defense Pre-Emption Table & Worked ₹14.5L vs ₹26.2L LAP Recovery Ledger"
+    ],
+    "sources": [
+      "SARFAESI Act, 2002 (Sections 2(1)(m)(iv), 5, 13, 14, 17, 26D & 31)",
+      "Ministry of Finance Notifications S.O. 856(E) & S.O. 652(E)",
+      "Arbitration and Conciliation Act, 1996 (Sections 9, 12(5), 21, 29B & 36)",
+      "Code of Civil Procedure, 1908 (Order XXI & Order XXXIV)",
+      "RBI Scale Based Regulation Master Directions & Penal Charges Circular"
+    ],
+    "builtAt": "2026-11-14T09:07:17.119Z"
+  },
+  {
+    "id": "B2B-026",
+    "url": "/co-lending-fldg-dlg-default-recovery-workflow-bank-nbfc",
+    "archetype": "G2",
+    "h2s": [
+      "Why Co-Lending & DLG Notices Fail in Court: The Locus Standi Trap",
+      "Comparison Matrix: CLM-1 vs. CLM-2 vs. 5% DLG (FLDG) Recovery Rights",
+      "Escrow Waterfall, NPA Tagging & Borrower Notice Architecture",
+      "Interactive Scenario Selector: Solve 4 Co-Lending & DLG Traps",
+      "RBI 5% DLG Guidelines, Subrogation & Multi-Channel Notice Rules",
+      "Worked Financial Illustration: ₹18 Lakh 80:20 Co-Lending Loan",
+      "Servicing POA & BSA 2023 s.63 Litigation Readiness Checklist",
+      "FAQs: Co-Lending Locus Standi, 5% DLG & Recovery Notices",
+      "Official RBI Master Directions & Statutory Authorities"
+    ],
+    "components": [
+      "CoLendingTableOfContents",
+      "CoLendingScenarioTabs",
+      "CoLendingCTA"
+    ],
+    "faqQuestions": [
+      "Whose name should appear on a legal notice in an 80:20 Bank–NBFC co-lending loan?",
+      "Does a 5% DLG (FLDG) payout by the Fintech/NBFC extinguish the borrower's debt?",
+      "Can an LSP or Fintech file a Section 25 PSS Act complaint for e-NACH bounce after DLG invocation?",
+      "How does a mid-size NBFC below ₹100 Crore asset size enforce SARFAESI in a co-lending LAP loan?",
+      "How should NPA tagging and the 120-day DLG invocation clock be aligned with legal notices?",
+      "What subrogation rights arise if the DLG provider pays the Bank and wants to recover from the borrower?",
+      "What digital records are mandatory under BSA 2023 s.63 for co-lending default litigation?"
+    ],
+    "wordCount": 2200,
+    "artefacts": [
+      "bg-slate-900 CLM-1 vs CLM-2 vs 5% DLG (FLDG) Comparison Matrix Table",
+      "Hand-authored SVG 80:20 Co-Lending & 5% DLG Escrow/Notice Architecture + Mobile Cards",
+      "Interactive 4-tab CoLendingScenarioTabs client component",
+      "Worked ₹18 Lakh 80:20 Co-Lending Loan & 5% DLG Waterfall Ledger",
+      "Servicing POA & BSA 2023 s.63 Litigation Readiness Checklist"
+    ],
+    "sources": [
+      "RBI Guidelines on Default Loss Guarantee (DLG) in Digital Lending (5% Cap & 120-Day Invocation)",
+      "RBI Master Circular / Directions on Co-Lending by Banks and NBFCs (CLM-1 & CLM-2)",
+      "Payment and Settlement Systems Act, 2007 (Section 25)",
+      "SARFAESI Act, 2002 (Sections 2(1)(m), 13(2), 13(9))",
+      "Indian Contract Act, 1872 (Sections 41, 140, 141, 182–202)",
+      "Bharatiya Sakshya Adhiniyam, 2023 (Section 63)"
+    ],
+    "builtAt": "2026-11-14T15:00:00.000Z"
+  },
+  {
+    "id": "B2B-028",
+    "url": "/microfinance-mfi-jlg-group-loan-default-compliant-recovery",
+    "archetype": "G1",
+    "h2s": [
+      "Why MFI PAR-90 Spikes Demand Selective Legal Escalation",
+      "MFI Escalation Tree: JLG vs. Graduated MSME vs. Ring-Leaders",
+      "Statutory & MFIN Compliance Matrix by MFI Loan Segment",
+      "Interactive Playbook: 4 MFI Default & Compliance Scenarios",
+      "5-Step SOP: Vernacular Speed Post RPAD & Lok Adalat Escalation",
+      "Worked Cohort Ledger: 500 PAR-90 MFI Accounts",
+      "RBI Microfinance Audit & BSA 2023 s.63 Evidence Checklist",
+      "FAQs: MFI, JLG & Graduated Loan Legal Recovery",
+      "Official RBI Directions, Statutes & Primary Authorities"
+    ],
+    "components": [
+      "Breadcrumbs",
+      "MfiTableOfContents",
+      "MfiScenarioTabs",
+      "MfiRecoveryCTA",
+      "RelatedRecoveryGuides"
+    ],
+    "faqQuestions": [
+      "Can an NBFC-MFI use aggressive centre-meeting pressure to recover ₹20,000 JLG group loans?",
+      "Why are vernacular Speed Post RPAD legal notices effective for ₹75,000–₹3,00,000 graduated MFI loans?",
+      "How should an MFI legally handle a ring-leader who instigates a mass village or centre default?",
+      "Are JLG co-borrower guarantees legally enforceable in court against other rural women members?",
+      "How does National Lok Adalat help NBFC-MFIs resolve PAR-90 micro-enterprise defaults at scale?",
+      "What RBI household income and FOIR audit records must an MFI verify before issuing a legal notice?",
+      "Can an NBFC-MFI send bulk legal notices for 500+ graduated MSME accounts without violating DPDP Act 2023?"
+    ],
+    "wordCount": 2250,
+    "artefacts": [
+      "MFI Escalation Decision Tree SVG (820x310) + Mobile Stacked Cards",
+      "Statutory & MFIN Compliance Matrix Table across 4 MFI segments",
+      "Interactive 4-Scenario MfiScenarioTabs component (Ring-Leader, Graduated ₹75K-₹3L, JLG Moral vs Legal, FOIR Audit)",
+      "Worked 500-Account PAR-90 Cohort Recovery Ledger",
+      "6-Point RBI Microfinance Audit & BSA 2023 s.63 Evidence Checklist"
+    ],
+    "sources": [
+      "RBI Master Direction — Regulatory Framework for Microfinance Loans Directions, 2022",
+      "Legal Services Authorities Act, 1987 (Sections 19, 20 & 21)",
+      "Payment and Settlement Systems Act, 2007 (Section 25)",
+      "Bharatiya Sakshya Adhiniyam, 2023 (Section 63)",
+      "National Legal Services Authority (NALSA) — National Lok Adalat Guidelines"
+    ],
+    "builtAt": "2026-11-14T09:35:29.466Z"
+  },
+  {
+    "id": "B2B-029",
+    "url": "/housing-finance-company-hfc-affordable-home-loan-npa-recovery",
+    "archetype": "G1",
+    "h2s": [
+      "HFC ₹1 Lakh SARFAESI Floor vs. Regular NBFC ₹20 Lakh Bar",
+      "HFC NPA Escalation Decision Tree: 30 DPD to s.14 Possession",
+      "Statutory Matrix: SARFAESI, NHB/RBI, RERA & Tripartite Law",
+      "4 Affordable Housing & Subvention Default Failure Modes",
+      "Tripartite Builder-Buyer Defaults & Under-Construction Flats",
+      "Curing Informal-Income & Tier-2/3 Equitable Mortgage Defects",
+      "Worked ₹8.4L Affordable Housing SARFAESI Recovery Ledger",
+      "BSA 2023 s.63, CERSAI & Section 14 DM/CMM Dossier Checklist",
+      "Deploy HFC Recovery: Single ₹999 Test or Bulk CSV Desk",
+      "FAQs: HFC SARFAESI ₹1 Lakh Floor & Tripartite Recovery",
+      "RBI, NHB, CERSAI & Statutory Housing Finance Portals"
+    ],
+    "components": [
+      "HfcTableOfContents",
+      "HfcScenarioTabs",
+      "HfcRecoveryCTA"
+    ],
+    "faqQuestions": 7,
+    "wordCount": 2350,
+    "artefacts": [
+      "Decision Tree SVG",
+      "bg-slate-900 Statutory Matrix",
+      "HfcScenarioTabs (4 modes)",
+      "Worked ₹8.4L SARFAESI Ledger",
+      "BSA s.63 & CERSAI Checklist",
+      "Dual-Track CTA"
+    ],
+    "sources": [
+      "rbi.org.in",
+      "nhb.org.in",
+      "cersai.org.in",
+      "indiacode.nic.in"
+    ],
+    "builtAt": "2026-11-14T15:06:00+05:30"
+  },
+  {
+    "id": "B2B-031",
+    "url": "/credgenics-spocto-alternative-mid-market-nbfc-legal-notice-platform",
+    "archetype": "G2",
+    "h2s": [
+      "The Advocates Act 1961 Gap in Pure Collection SaaS",
+      "Vendor Matrix: Enterprise SaaS vs Advocate-Backed Legal Desk",
+      "Architecture: SaaS Fragmentation vs Bundled Legal Desk",
+      "Scenario Selector: Mid-Market NBFC & Fintech Vendor Fit",
+      "Total Cost of Ownership: ₹250 Cr AUM NBFC Ledger",
+      "Tri-Channel Dispatch, Reply Triage & BSA s.63 Readiness",
+      "CFO Vendor Evaluation Checklist Before Signing Annual SaaS",
+      "FAQs: Credgenics & Spocto Alternatives for Mid-Market NBFCs",
+      "Statutory Authorities & Official Regulatory Portals"
+    ],
+    "components": [
+      "NbfcSaasTableOfContents.tsx",
+      "NbfcVendorScenarioTabs.tsx",
+      "NbfcVendorComparisonCTA.tsx"
+    ],
+    "faqQuestions": [
+      "Can pure debt collection SaaS platforms issue formal Legal Notices under Indian law?",
+      "Why do mid-market NBFCs (₹50 Cr–₹2,000 Cr AUM) struggle with enterprise collection SaaS contracts?",
+      "How does LegalRecovery.in differ from Credgenics or Spocto for legal notice automation?",
+      "Does LegalRecovery.in handle borrower replies and dispute claims after bulk dispatch?",
+      "How are Email and WhatsApp legal notices made admissible in Indian courts?",
+      "Can an NBFC test the platform on one overdue loan before signing a bulk arrangement?",
+      "Is the bundled Advocate Legal Desk compliant with RBI Fair Practices Code and Digital Lending Guidelines?"
+    ],
+    "wordCount": 2150,
+    "artefacts": [
+      "bg-slate-900 Vendor Comparison Matrix",
+      "Architecture SVG (820x310) + Mobile Stacked Cards",
+      "NbfcVendorScenarioTabs 4-Scenario Selector",
+      "₹250 Cr AUM NBFC Year-1 TCO Comparison Ledger",
+      "6-Point CFO Procurement Checklist"
+    ],
+    "sources": [
+      "https://www.indiacode.nic.in/handle/123456789/1631",
+      "https://www.indiacode.nic.in/handle/123456789/21735",
+      "https://www.indiacode.nic.in/handle/123456789/2067",
+      "https://www.rbi.org.in/Scripts/NotificationUser.aspx?Id=12382",
+      "https://www.indiapost.gov.in/"
+    ],
+    "builtAt": "2026-11-14T15:07:00+05:30"
+  },
+  {
+    "id": "B2B-030",
+    "url": "/unsecured-business-loan-sme-working-capital-default-nbfc",
+    "archetype": "G1",
+    "h2s": [
+      "Why Unsecured SME & EDI Loans Fail When Borrowers Switch QR Codes",
+      "Dual-Track Decision Tree: Criminal s.25 + Commercial Attachment",
+      "Statutory Matrix: PSS s.25, Order 37, Order 38 Rule 5 & s.12A",
+      "Interactive Playbook: 4 SME & Merchant Cash Advance Failure Modes",
+      "Garnishee & Bank Attachment on Active GSTIN & Diverted POS Sweeps",
+      "Worked Recovery Ledger: ₹28.5L Diverted-EDI SME Default",
+      "BSA 2023 s.63 Evidence & Pre-Attachment Dossier Checklist",
+      "Deploy Dual-Track SME Recovery: Single ₹999 Test or Bulk CSV Desk",
+      "FAQs: Unsecured SME Business Loan & EDI Recovery for NBFCs",
+      "Statutory Authorities, Commercial Courts & NPCI Reference Portals"
+    ],
+    "components": [
+      "Breadcrumbs",
+      "SmeBusinessLoanTableOfContents",
+      "SmeBusinessLoanScenarioTabs",
+      "SmeBusinessLoanCTA",
+      "RelatedRecoveryGuides"
+    ],
+    "faqQuestions": [
+      "What can an NBFC do when an EDI merchant switches POS or UPI QR codes to another bank?",
+      "Can an NBFC attach a borrowers new bank account or B2B receivables before final judgment?",
+      "How do we bypass mandatory Section 12A pre-institution mediation in Commercial Courts?",
+      "Are directors personally liable for an unsecured Pvt Ltd SME loan default?",
+      "How does active GSTIN status help an NBFC win faster recovery in ₹10L–₹50L SME defaults?",
+      "Should an NBFC choose Order XXXVII Summary Suit or Arbitration for ₹5L–₹75L unsecured SME loans?",
+      "Can LegalRecovery.in handle bulk Section 25 and Loan Recall notices for SME loan portfolios?"
+    ],
+    "wordCount": 2250,
+    "artefacts": [
+      "Dual-Track EDI & SME Escalation Decision Tree SVG + Mobile Cards",
+      "5-Row Dark-Header Statutory Matrix (PSS s.25, NI s.138, Order 37, Order 38 Rule 5, Arbitration s.9/s.29B)",
+      "Interactive 4-Scenario SME & EDI Failure Modes Switcher",
+      "Worked ₹28.5L Diverted-EDI Recovery Economics Ledger",
+      "6-Point BSA 2023 s.63 Pre-Attachment Evidence Checklist"
+    ],
+    "sources": [
+      "Payment and Settlement Systems Act, 2007 (Section 25)",
+      "Commercial Courts Act, 2015 (Section 12A)",
+      "Code of Civil Procedure, 1908 (Order XXXVII, Order XXXVIII Rule 5 & Order XXI Rule 46)",
+      "Negotiable Instruments Act, 1881 (Sections 138, 141 & 143A)",
+      "Bharatiya Sakshya Adhiniyam, 2023 (Section 63)"
+    ],
+    "builtAt": "2026-11-14T09:39:22.145Z"
+  },
+  {
+    "id": "B2B-032",
+    "url": "/cibil-cic-pre-reporting-default-notice-compliance-lenders",
+    "archetype": "G1",
+    "h2s": [
+      "The ₹100/Day RBI Penalty Trap vs. Ethical CIC Notice Leverage",
+      "CIC Pre-Reporting Decision Tree: Day 15 Alert to Wilful Default",
+      "Statutory Matrix: CICRA 2005, RBI 2025–26 Norms & CMR Rules",
+      "4 Bureau Reporting Failure Modes & Nodal Officer Cures",
+      "Commercial CMR Rank (CMR-1 to CMR-10) Leverage in SME Notices",
+      "Wilful Defaulter Show-Cause Procedure & ₹100/Day TAT Shield",
+      "Worked Portfolio Math: ₹12.5L SME Cure vs. ₹100/Day Penalty Drain",
+      "BSA 2023 s.63 & Nodal Officer Audit Dossier Checklist",
+      "Deploy CIC-Compliant Notices: Single ₹999 Test or Bulk CSV Desk",
+      "FAQs: RBI CIC Pre-Reporting Alerts, CMR Rank & ₹100/Day Shield",
+      "RBI Master Directions, CICRA 2005 & Credit Bureau Portals"
+    ],
+    "components": [
+      "Breadcrumbs",
+      "CicPreReportingTableOfContents",
+      "CicPreReportingScenarioTabs",
+      "CicPreReportingCTA",
+      "RelatedRecoveryGuides"
+    ],
+    "faqQuestions": [
+      "Is a lender legally required to send a prior alert before reporting a default to CIBIL or other CICs?",
+      "How does the ₹100/day RBI compensation penalty work for credit bureau reporting disputes?",
+      "Can an NBFC mention CIBIL score or Commercial CMR deterioration inside a legal notice without violating RBI Fair Practices?",
+      "What is Commercial CIBIL Rank (CMR) and why is it effective leverage for SME loan recovery?",
+      "Can a lender report a disputed e-NACH bounce or contested foreclosure charge as a default to CICs?",
+      "What is the RBI procedure for declaring a borrower a Wilful Defaulter?",
+      "How can an NBFC test compliant CIC pre-reporting notices before rolling out across its portfolio?"
+    ],
+    "wordCount": 2250,
+    "artefacts": [
+      "CIC Pre-Reporting Decision Tree SVG + mobile cards",
+      "Statutory Matrix table for CICRA 2005, RBI Pre-Reporting Alert, ₹100/day Compensation, CMR & Wilful Defaulter",
+      "Interactive 4-scenario CicPreReportingScenarioTabs",
+      "Worked ₹12.5L SME Cure vs ₹100/day Penalty Drain ledger",
+      "BSA 2023 s.63 & Nodal Officer 6-point Audit Checklist"
+    ],
+    "sources": [
+      "RBI Master Direction on Credit Information Reporting",
+      "CICRA 2005",
+      "RBI Master Direction on Treatment of Wilful Defaulters",
+      "BSA 2023 s.63",
+      "TransUnion CIBIL CMR",
+      "RBI Integrated Ombudsman"
+    ],
+    "builtAt": "2026-11-14T10:14:46.659Z"
+  },
+  {
+    "id": "B2B-033",
+    "url": "/neutral-odr-online-arbitration-clause-drafting-fintech-nbfc",
+    "archetype": "L1",
+    "h2s": [
+      "Why Legacy NBFC Arbitration Clauses Fail After CORE (2024)",
+      "Statutory Timelines: Section 21 Notice to Section 36 Execution",
+      "Supreme Court Precedents Governing Neutral ODR Clauses",
+      "6-Part Model Institutional ODR Clause for NBFC Sanction Letters",
+      "Interactive Playbook: 4 NBFC ODR & Clause Failure Scenarios",
+      "Pre-Empting Borrower Defenses Under Sections 16, 34 & 36",
+      "Migrating Live NBFC Loan Templates & Legacy NPA Books",
+      "Deploy Post-CORE Compliant ODR & Recovery Notices",
+      "FAQs: Post-CORE ODR Clause Drafting for NBFCs & Fintechs",
+      "Primary Statutes, Supreme Court Rulings & Official Portals"
+    ],
+    "components": [
+      "OdrClauseTableOfContents",
+      "OdrClauseScenarioTabs",
+      "OdrClauseCTA"
+    ],
+    "faqQuestions": [
+      "Are unilateral arbitrator appointment clauses in existing NBFC loan agreements void after the Nov 2024 Supreme Court ruling?",
+      "Can an NBFC still use a 3-arbitrator curated panel if the borrower chooses one name from the NBFC list?",
+      "How can an NBFC enforce an NPA loan whose legacy agreement contains a defective unilateral clause?",
+      "What is the difference between Seat and Venue in an online arbitration (ODR) clause for digital lending?",
+      "Are click-wrap and Aadhaar e-Sign arbitration clauses valid under Section 7 of the Arbitration Act?",
+      "What evidence must a fintech or NBFC attach to prove electronic service of Section 21 and ODR notices?"
+    ],
+    "wordCount": 2350,
+    "artefacts": [
+      "Bare-Act Statutory Timeline Table",
+      "5 Supreme Court Precedent Cards (CORE, Perkins, TRF, Interplay, BGS SGS Soma)",
+      "6-Part Institutional ODR Clause SVG + Blueprint",
+      "4-Tab Interactive ODR Scenario Playbook",
+      "Section 16/34/36 Defense Pre-Emption Table"
+    ],
+    "sources": [
+      "https://www.indiacode.nic.in/handle/123456789/1978",
+      "https://www.indiacode.nic.in/handle/123456789/21735",
+      "https://www.indiacode.nic.in/handle/123456789/1999",
+      "https://www.sci.gov.in/",
+      "https://www.rbi.org.in/"
+    ],
+    "builtAt": "2026-11-14T15:43:00+05:30"
+  },
+  {
+    "id": "B2B-034",
+    "url": "/tools/section-25-nach-bounce-limitation-calculator",
+    "archetype": "T1",
+    "h2s": [
+      "Section 25 e-NACH & AutoPay Statutory Deadline Calculator",
+      "PSS Act Section 25 & 28 Statutory Timeline Architecture",
+      "Saketh India & Econ Antri Day-Exclusion Computation Rules",
+      "Electronic Service vs RPAD Deemed Delivery for NBFCs",
+      "Worked NBFC e-NACH Bounce Timeline Calculations",
+      "Condonation of Delay, Jurisdiction & Co-Lending Rules",
+      "Deploy Single ₹999 Test or Bulk e-NACH CSV Notice Desk",
+      "Related NBFC Recovery & Section 25 Legal Resources",
+      "FAQs: Section 25 e-NACH Bounce Limitation & Notice Dates",
+      "Primary Statutes, NPCI Circulars & Court Authorities"
+    ],
+    "components": [
+      "Section25NachCalculatorClient",
+      "Section25NachCalculatorTOC",
+      "Section25NachCalculatorCTA"
+    ],
+    "wordCount": 1550,
+    "artefacts": [
+      "Single Mandate & Batch CSV Interactive Calculator",
+      "PSS s.25 & s.28 Statutory Matrix Table",
+      "Electronic vs RPAD Deemed-Service Comparison Table",
+      "3 Worked NBFC e-NACH Timeline Cases"
+    ],
+    "sources": [
+      "https://www.indiacode.nic.in/handle/123456789/2049",
+      "https://www.indiacode.nic.in/handle/123456789/2189",
+      "https://www.npci.org.in/what-we-do/nach/product-overview",
+      "https://www.rbi.org.in/",
+      "https://www.indiacode.nic.in/"
+    ],
+    "builtAt": "2026-11-14T15:47:00+05:30"
+  },
+  {
+    "id": "B2B-035",
+    "url": "/templates/section-25-pss-act-nach-bounce-legal-notice-format",
+    "archetype": "P1",
+    "h2s": [
+      "Why Demanding Total Loan Balance Quashes Section 25 Notices",
+      "Interactive Section 25 PSS Act Notice Workspace",
+      "Defective Generic Drafts vs Court-Tested Section 25 Notice",
+      "The 30-15-30 Day Section 25 PSS Act Prosecution Rail",
+      "Mandatory UMRN & NPCI Clauses in a Section 25 Notice",
+      "Tri-Channel Dispatch & BSA s.63 Evidence Checklist",
+      "Supreme Court Precedents Governing Section 25 Notices",
+      "Worked Example: ₹18,450 Bounced EMI vs ₹4.20L Recall",
+      "Institutional Dispatch: Test 1 Notice or Upload Bounce CSV",
+      "FAQs: Section 25 PSS Act e-NACH & ECS Bounce Notices",
+      "Primary Statutes, NPCI Circulars & RBI Portals"
+    ],
+    "components": [
+      "Breadcrumbs",
+      "PssActNoticeTOC",
+      "PssActNoticeWorkspace",
+      "PssActNoticeCTA",
+      "RelatedRecoveryGuides"
+    ],
+    "faqQuestions": [
+      "Why do Magistrates quash Section 25 PSS Act notices that demand the entire loan balance?",
+      "Can an NBFC mention the total recalled loan balance in a Section 25 notice?",
+      "What is the exact timeline for sending a Section 25 PSS Act legal notice?",
+      "Does Section 25 of the PSS Act apply to UPI AutoPay and e-NACH mandate bounces?",
+      "Which court has jurisdiction to try a Section 25 PSS Act e-NACH bounce complaint?",
+      "What NPCI details are mandatory inside a court-tested Section 25 demand notice?"
+    ],
+    "wordCount": 1850,
+    "artefacts": [
+      "Interactive Section 25 PSS Act Notice Workspace with Word (.doc), Print, Copy & Suman Sethi Dual-Demand Toggle",
+      "6-Row Dark-Header Defective vs Court-Tested Audit Matrix",
+      "30-15-30 Day Prosecution Rail SVG (920x200) + Mobile Cards",
+      "6-Point BSA 2023 s.63 & NPCI Return Evidence Checklist",
+      "3 Supreme Court & Statutory Precedent Cards (Suman Sethi, Dashrath Rupsingh, PSS Act s.25(5))",
+      "Worked ₹18,450 Bounced EMI vs ₹4.20L Recall Dual-Demand Table"
+    ],
+    "sources": [
+      "https://www.indiacode.nic.in/handle/123456789/2067",
+      "https://www.indiacode.nic.in/handle/123456789/2189",
+      "https://www.npci.org.in/",
+      "https://www.rbi.org.in/",
+      "https://www.indiacode.nic.in/handle/123456789/20063"
+    ],
+    "builtAt": "2026-11-14T15:46:00+05:30"
+  },
+  {
+    "id": "B2B-036",
+    "url": "/reports/nbfc-digital-lending-legal-recovery-benchmarks-india",
+    "archetype": "R1",
+    "h2s": [
+      "Why CROs Lack Pre-Litigation Legal-Notice Cure Benchmarks",
+      "Bucket-Wise Statutory Escalation Matrix (SMA-0 to NPA 90+)",
+      "4-Step Pre-Litigation Wave Architecture Across Channels",
+      "Email vs. WhatsApp vs. Speed Post RPAD: Channel Benchmarks",
+      "Interactive DPD & Wave Playbook Explorer",
+      "Cost-Per-Rupee Recovered: Pre-Litigation vs. Court Economics",
+      "BSA 2023 s.63, RBI Guidelines & Post-CORE ODR Compliance",
+      "Methodology, Sample Scope & Data Integrity Guardrails",
+      "Download Open Benchmark Schema & Press Citation",
+      "Deploy Pre-Litigation Waves: Single ₹999 Test or Bulk CSV",
+      "FAQs: NBFC & Fintech Pre-Litigation Recovery Benchmarks",
+      "Primary Regulatory Portals & Statutory Authorities"
+    ],
+    "components": [
+      "NbfcBenchmarksTableOfContents",
+      "NbfcBenchmarksScenarioTabs",
+      "NbfcBenchmarksDataDownload",
+      "NbfcBenchmarksCTA"
+    ],
+    "builtAt": "2026-11-14T16:11:00+05:30"
+  },
+  {
+    "id": "B2B-038",
+    "url": "/hospital-unpaid-patient-bill-recovery-without-detaining-patient",
+    "archetype": "G1",
+    "h2s": [
+      "Why Detaining Patients or Bodies Backfires Criminally & Civilly",
+      "Post-Discharge Recovery Decision Tree: Emergency to Order XXXVII",
+      "Statutory Matrix: Article 21, BNS, Contract Act & Order XXXVII",
+      "4 Hospital Discharge & ICU Billing Failure Modes",
+      "The 4-Document Discharge Desk Pack (Admission to Promissory Note)",
+      "Worked Recovery Ledger: ₹4.85L Unpaid ICU Bill Post-Discharge",
+      "BSA 2023 s.63 Digital Billing & Discharge Dossier Checklist",
+      "Deploy Article-21 Safe Hospital Recovery: ₹999 Test or Bulk CSV",
+      "FAQs: Post-Discharge Hospital Bill Recovery Without Detention",
+      "Statutory Authorities, Bare Acts & Healthcare Portals"
+    ],
+    "components": [
+      "HospitalDischargeTableOfContents",
+      "HospitalDischargeScenarioTabs",
+      "HospitalDischargeCTA"
+    ],
+    "faqQuestions": [
+      "Can a private hospital legally detain a patient or dead body for unpaid ICU bills in India?",
+      "How can a hospital actually recover unpaid bills after releasing the patient?",
+      "Is the patient's attendant or relative legally liable to pay if they signed the admission form?",
+      "What if the family takes LAMA (Left Against Medical Advice) and refuses to sign any undertaking?",
+      "What if a relative gives a cheque at discharge and then instructs the bank to 'Stop Payment'?",
+      "How long does a hospital have to file a civil recovery suit for unpaid medical bills?"
+    ],
+    "wordCount": 2250,
+    "artefacts": [
+      "DecisionTreeSVG",
+      "StatutoryMatrixTable",
+      "ScenarioTabs",
+      "DischargePackGrid",
+      "WorkedRecoveryLedger",
+      "BSAS63Checklist",
+      "DualTrackCTA"
+    ],
+    "sources": [
+      "IndiaCode Contract Act",
+      "IndiaCode CPC Order 37",
+      "IndiaCode NI Act",
+      "IndiaCode BSA 2023",
+      "MoHFW Clinical Establishments"
+    ],
+    "builtAt": "2026-11-14T10:46:51.579Z"
+  },
+  {
+    "id": "B2B-040",
+    "url": "/cghs-echs-ayushman-bharat-esic-empanelled-hospital-dues-recovery",
+    "archetype": "G1",
+    "h2s": [
+      "Why Do Government Schemes Freeze Private Hospital Bills for 6–24 Months?",
+      "Legal Escalation Decision Tree: From Portal Ticket to Article 226 Writ",
+      "Statutory Recovery Matrix: Section 80 CPC vs Article 226 Mandamus",
+      "Operational Failure Modes: UTIITSL Deductions, SHA Freezes & ECHS Dues",
+      "Drafting a Section 80 CPC Notice for Government Hospital Bills",
+      "Article 226 High Court Writ Strategy for Admitted Scheme Arrears",
+      "Pre-Litigation Scheme Reconciliation & Interest Ledger Worked Example",
+      "BSA 2023 Section 63 Electronic Evidence Checklist for Scheme Portals",
+      "Frequently Asked Questions on Empanelled Hospital Bill Recovery",
+      "Statutory Authorities, Portal Guidelines & Landmark Case Laws"
+    ],
+    "components": [
+      "HospitalEmpanelledTableOfContents",
+      "HospitalEmpanelledScenarioTabs",
+      "HospitalEmpanelledCTA"
+    ],
+    "faqQuestions": [
+      "Why do private hospitals face 6 to 24 month payment freezes on CGHS, ECHS, and PM-JAY bills?",
+      "What is a Section 80 CPC Notice and why is it mandatory before suing government schemes?",
+      "Can a private hospital file an Article 226 Writ Petition in the High Court for unpaid scheme bills?",
+      "What ad-interim relief can the High Court grant to an empanelled hospital in a Writ of Mandamus?",
+      "How does the UTIITSL Bill Processing Agency (BPA) SLA affect empanelled hospital claims?",
+      "Can hospitals claim commercial interest on delayed Ayushman Bharat (PM-JAY) and ECHS payments?",
+      "What digital evidence is required under Section 63 of Bharatiya Sakshya Adhiniyam, 2023 (BSA)?"
+    ],
+    "wordCount": 2388,
+    "artefacts": [
+      "DecisionTreeSVG",
+      "StatutoryMatrixTable",
+      "ScenarioTabs",
+      "ReconciliationLedger",
+      "BSAS63Checklist",
+      "DualTrackCTA"
+    ],
+    "sources": [
+      "IndiaCode CPC Section 80",
+      "Constitution of India Article 226",
+      "NHA PM-JAY Operational Guidelines",
+      "MoHFW CGHS Empanelment Guidelines",
+      "DoESW ECHS Referral Guidelines",
+      "ESIC Act 1948",
+      "BSA 2023 Section 63"
+    ],
+    "builtAt": "2026-11-14T11:08:50.267Z"
+  },
+  {
+    "id": "B2B-039",
+    "url": "/hospital-tpa-insurance-delayed-short-settled-claim-recovery",
+    "archetype": "G1",
+    "h2s": [
+      "Why TPAs Arbitrarily Slash Cashless Hospital Claims & Package Rates",
+      "Hospital TPA Recovery Decision Tree: 4-Stage Legal Escalation Rail",
+      "Statutory Framework: IRDAI Regulations & Commercial Courts Remedies",
+      "Judicial Precedents & IRDAI Directives on Hospital Network MOUs",
+      "4 Cashless Disallowance Scenarios & Immediate RCM Action Rails",
+      "Worked Financial Ledger: ₹38.5 Lakh Batch TPA Claim & Penal Interest",
+      "BSA 2023 Section 63 Evidence & Pre-Auth Audit Trail Checklist",
+      "Deploy Hospital TPA Legal Recovery Desk: Self-Serve & Bulk CSV",
+      "Frequently Asked Questions for Hospital TPA Desks & RCM Directors",
+      "Statutory References & Official Insurance Regulatory Sources"
+    ],
+    "components": [
+      "HospitalTpaTableOfContents",
+      "HospitalTpaScenarioTabs",
+      "HospitalTpaRecoveryCTA"
+    ],
+    "faqQuestions": [
+      "Why do TPAs slash 15% to 35% off approved cashless hospital bills?",
+      "Can an insurer legally repudiate a cashless claim after issuing pre-authorization?",
+      "What is the statutory interest rate for delayed health insurance claim settlement?",
+      "Does a hospital have direct legal standing to sue an insurer or TPA without the patient?",
+      "How do hospital RCM teams counter serial piecemeal queries raised by TPAs?",
+      "What happens if our hospital empanelment MOU contains an arbitration clause?",
+      "Can TPAs legally deduct tariffs if the patient stays in a higher room category?"
+    ],
+    "wordCount": 2420,
+    "artefacts": [
+      "DecisionTreeSVG",
+      "StatutoryMatrixTable",
+      "ScenarioTabs",
+      "WorkedRecoveryLedger",
+      "BSAS63Checklist",
+      "DualTrackCTA"
+    ],
+    "sources": [
+      "IRDAI Master Circular on Health Insurance Business",
+      "Commercial Courts Act 2015 s.2(1)(c)(xx)",
+      "Indian Contract Act 1872 s.73 and s.182",
+      "Bharatiya Sakshya Adhiniyam 2023 s.63",
+      "IRDAI TPA Regulations 2016"
+    ],
+    "builtAt": "2026-11-14T11:12:00.000Z"
+  },
+  {
+    "id": "B2B-044",
+    "url": "/visiting-consultant-doctor-unpaid-professional-fee-from-hospital",
+    "archetype": "G1",
+    "h2s": [
+      "Why Unpaid Doctor Consultancy Fees Cannot Be Filed in Labour Courts",
+      "Doctor Fee Recovery Decision Tree: 4-Stage Legal Escalation Rail",
+      "Statutory Matrix: Order 37 CPC vs Arbitration vs Commercial Suit",
+      "4 Doctor Fee Dispute Scenarios: From TPA Shifts to 194J Freezes",
+      "Form 26AS & AIS: How TDS Entries Legally Acknowledge Hospital Debt",
+      "Worked Case Study: Recovering ₹28.5 Lakh in Unpaid Surgical Shares",
+      "BSA 2023 Section 63 Evidence Checklist for Visiting Consultants",
+      "Step-by-Step SOP: Serving an Advocate Notice on Hospital Finance",
+      "Frequently Asked Questions for Visiting Consultants & Surgeons",
+      "Statutory Authorities, Judicial Precedents & Legal Source Codes"
+    ],
+    "components": [
+      "VisitingDoctorTableOfContents",
+      "VisitingDoctorScenarioTabs",
+      "VisitingDoctorNoticeCTA"
+    ],
+    "faqQuestions": [
+      "Why do Labour Courts and Commissioners reject unpaid fee claims filed by visiting consultant doctors?",
+      "How does Form 26AS and AIS Section 194J TDS entry legally prove the hospital owes me money?",
+      "Can a hospital refuse to pay my surgical share because the TPA or insurance company delayed or discounted the claim?",
+      "What should an on-call emergency surgeon do if there is no formal signed written contract?",
+      "What is an Order XXXVII CPC Summary Suit and why is it preferred over a regular civil suit?",
+      "How do teleradiology and tele-ICU doctors recover unpaid per-scan or per-hour monthly invoices?",
+      "What digital evidence is mandatory under Section 63 of Bharatiya Sakshya Adhiniyam, 2023 (BSA)?"
+    ],
+    "wordCount": 2480,
+    "artefacts": [
+      "DecisionTreeSVG",
+      "StatutoryMatrixTable",
+      "ScenarioTabs",
+      "FinancialReconciliationLedger",
+      "BSAS63Checklist",
+      "DualTrackCTA"
+    ],
+    "sources": [
+      "Income Tax Act 1961 s.194J",
+      "Code of Civil Procedure 1908 Order XXXVII",
+      "Arbitration and Conciliation Act 1996 s.21 and s.11",
+      "Commercial Courts Act 2015 s.2(1)(c)",
+      "Indian Contract Act 1872 s.70 and s.73",
+      "Limitation Act 1963 s.18",
+      "Bharatiya Sakshya Adhiniyam 2023 s.63"
+    ],
+    "builtAt": "2026-11-14T11:25:00.000Z"
+  },
+  {
+    "id": "B2B-041",
+    "url": "/hospital-corporate-credit-tie-up-psu-medical-bill-recovery",
+    "archetype": "G1",
+    "h2s": [
+      "The Corporate & PSU Medical Credit Bottleneck: Why Bills Age 180+ Days",
+      "5-Stage Recovery Decision Tree: From Credit Alert to Summary Decree",
+      "Statutory Matrix: Order 37 CPC, Section 80 & Commercial Court Remedies",
+      "Resolving 4 Core Failure Modes in Corporate & PSU Medical Recovery",
+      "Order XXXVII Summary Suits: Enforcing Corporate Credit Letters in Court",
+      "Section 80 CPC Notices: Recovering BHEL, ONGC & Railway Medical Dues",
+      "Financial Worked Example: Reconciling ₹48.5L in Corporate Arrears",
+      "BSA 2023 Section 63 Evidence Checklist for Corporate Hospital Claims",
+      "Institutional Debt Recovery Rails for Multi-Specialty Hospitals",
+      "Frequently Asked Questions: Corporate Credit & PSU Hospital Dues",
+      "Authoritative Legal Framework & Statutory Precedents"
+    ],
+    "components": [
+      "HospitalCorporateTableOfContents",
+      "HospitalCorporateScenarioTabs",
+      "HospitalCorporateCTA"
+    ],
+    "faqQuestions": [
+      "Can a corporate employer refuse to pay an inpatient hospital bill if the employee resigns before the invoice is cleared?",
+      "What is an Order XXXVII CPC Summary Suit and why is it effective for corporate hospital bill recovery?",
+      "Why do PSUs like BHEL, ONGC, Coal India, and Indian Railways delay empanelled hospital bill payments for 6 to 12+ months?",
+      "Is a Section 80 CPC Notice mandatory before suing a PSU or government department for medical dues?",
+      "How can hospitals recover unpaid monthly retainers for on-site factory Occupational Health Centers (OHCs)?",
+      "Can hospitals claim statutory interest on delayed corporate credit bills and PSU medical invoices?",
+      "What electronic evidence is required under Section 63 of Bharatiya Sakshya Adhiniyam, 2023 (BSA)?"
+    ],
+    "wordCount": 2650,
+    "artefacts": [
+      "DecisionTreeSVG",
+      "StatutoryMatrixTable",
+      "ScenarioTabs",
+      "FinancialReconciliationLedger",
+      "BSAS63Checklist",
+      "DualTrackCTA"
+    ],
+    "sources": [
+      "Code of Civil Procedure 1908 Order XXXVII",
+      "Code of Civil Procedure 1908 Section 80",
+      "Commercial Courts Act 2015 s.2(1)(c)",
+      "Indian Contract Act 1872 s.126 s.128 and s.70",
+      "Factories Act 1948 s.41-C",
+      "MSMED Act 2006 s.15 to s.18",
+      "Interest Act 1978 s.3 and s.4",
+      "Bharatiya Sakshya Adhiniyam 2023 s.63"
+    ],
+    "builtAt": "2026-11-14T11:26:00.000Z"
+  },
+  {
+    "id": "B2B-042",
+    "url": "/diagnostic-lab-pathology-collection-center-b2b-dues-recovery",
+    "archetype": "G1",
+    "h2s": [
+      "Why Diagnostic Chains Face Crippling PCC & Outsource Bad Debts",
+      "PCC Default & Brand Misuse Recovery Escalation Decision Tree",
+      "Statutory Recovery Matrix: Commercial Courts, NI Act & IP Rights",
+      "4 Pathology & Radiology B2B Default Scenarios & Solutions",
+      "Preventing Trademark Infringement & Rogue Signboard Misuse",
+      "Worked Recovery Ledger: ₹14.6 Lakh PCC Wallet Default & Interest",
+      "LIMS Chain-of-Custody & BSA 2023 s.63 Digital Evidence Checklist",
+      "Deploy B2B Diagnostic Lab Recovery: ₹999 Test or Multi-Center CSV",
+      "Frequently Asked Questions on Diagnostic Lab B2B Dues Recovery",
+      "Statutory Authorities, Diagnostic Accreditations & Case Precedents"
+    ],
+    "components": [
+      "DiagnosticLabTableOfContents",
+      "DiagnosticLabScenarioTabs",
+      "DiagnosticLabRecoveryCTA"
+    ],
+    "faqQuestions": [
+      "How can a diagnostic chain recover unpaid dues when a PCC collection center defaults on wallet bills?",
+      "Can we legally stop a defaulting franchisee from using our lab brand signboard and logo?",
+      "What if a nursing home disputes outsourced test charges citing delayed report turnaround time (TAT)?",
+      "Can a pathology lab enforce security cheques under Section 138 if the cheque was signed at franchise inception?",
+      "Does the Commercial Courts Act apply to diagnostic lab and nursing home outsourcing disputes?",
+      "Can an MSME-registered diagnostic laboratory claim compound interest from defaulting corporate wellness clients?",
+      "What criminal steps can be taken if a PCC operator collects cash from patients and switches samples to a cheap unaccredited lab?"
+    ],
+    "wordCount": 2420,
+    "artefacts": [
+      "DecisionTreeSVG",
+      "StatutoryMatrixTable",
+      "ScenarioTabs",
+      "WorkedRecoveryLedger",
+      "BSAS63Checklist",
+      "DualTrackCTA"
+    ],
+    "sources": [
+      "Commercial Courts Act 2015 s.2(1)(c)(ix)",
+      "Negotiable Instruments Act 1881 s.138",
+      "Trade Marks Act 1999 s.29 and s.135",
+      "Bharatiya Sakshya Adhiniyam 2023 s.63",
+      "MSMED Act 2006 ss.15 and 16",
+      "NABL Criteria for Medical Laboratories"
+    ],
+    "builtAt": "2026-11-14T11:28:39.284Z"
+  },
+  {
+    "id": "B2B-045",
+    "url": "/patient-cheque-bounce-stop-payment-at-hospital-discharge-section-138",
+    "archetype": "G1",
+    "h2s": [
+      "Why Hospital Discharge Cheques Bounce: The 9 PM Discharge Trap",
+      "5-Stage Recovery Decision Tree: Dishonour to Interim Deposit",
+      "Statutory Matrix: NI Act s.138 vs Order 37 vs BNS Fraud",
+      "Third-Party Cheques: Why Relatives Cannot Escape s.138",
+      "Neutralizing the 'Duress & Detention' Defense at Discharge",
+      "Hospital Discharge Cheque Default Scenarios & Action SOPs",
+      "Worked Recovery Ledger: ₹6.5 Lakh ICU Discharge Cheque Bounce",
+      "BSA Section 63 Digital Evidence Checklist for Hospital RCM",
+      "Institutional Debt Recovery Rails for Multi-Specialty Hospitals",
+      "Frequently Asked Questions: Hospital Discharge Cheque Recovery",
+      "Statutory Authorities, Judicial Precedents & Court Records"
+    ],
+    "components": [
+      "PatientChequeBounceTableOfContents",
+      "PatientChequeBounceScenarioTabs",
+      "PatientChequeBounceCTA"
+    ],
+    "faqQuestions": [
+      "Can a hospital prosecute a patient's relative under Section 138 if the relative was not the patient?",
+      "What if the drawer instructs their bank to issue a 'Stop Payment' immediately after discharge?",
+      "How do hospitals dismantle the debtor's defense that the cheque was given under 'duress or illegal detention'?",
+      "What is Section 143A of the Negotiable Instruments Act and how does it help hospitals?",
+      "What is the exact 30-day statutory timeline for serving a Section 138 Legal Notice?",
+      "Can a hospital file an Order 37 CPC summary suit alongside a Section 138 criminal complaint?",
+      "Can private hospitals legally detain a patient or withhold mortal remains for unpaid medical bills?"
+    ],
+    "wordCount": 2480,
+    "artefacts": [
+      "DecisionTreeSVG",
+      "StatutoryMatrixTable",
+      "ScenarioTabs",
+      "WorkedRecoveryLedger",
+      "BSAS63Checklist",
+      "DualTrackCTA"
+    ],
+    "sources": [
+      "Negotiable Instruments Act 1881 ss.138, 139, 141, 142 & 143A",
+      "Supreme Court in ICDS Ltd. v. Beena Shabeer (2002) 6 SCC 426",
+      "Supreme Court in Goaplast (P) Ltd. v. Chico Ursula D'Souza (2003) 3 SCC 232",
+      "Supreme Court in Bir Singh v. Mukesh Kumar (2019) 4 SCC 197",
+      "Code of Civil Procedure 1908 Order XXXVII",
+      "Bharatiya Sakshya Adhiniyam 2023 s.63",
+      "Bharatiya Nyaya Sanhita 2023 ss.316 & 318"
+    ],
+    "builtAt": "2026-11-14T11:44:00.000Z"
+  },
+  {
+    "id": "B2B-048",
+    "url": "/hospital-long-stay-patient-abandonment-unpaid-bill-legal-protocol",
+    "archetype": "G1",
+    "h2s": [
+      "Why Abandoned Long-Stay Patients Paralyze Hospital ICUs & Finances",
+      "Protocol: Police, CMO & DM Intimation for Abandoned Patients",
+      "Safe Medico-Legal Transfer Protocol to State Facilities",
+      "Hospital Abandoned Patient & Debt Recovery Decision Tree",
+      "Statutory Recovery Matrix: Contract, Senior Citizens & BNS Laws",
+      "4 Clinical & Kin Abandonment Failure Modes & Recovery Actions",
+      "Senior Citizens Act Section 24 & Civil Guarantor Enforcement",
+      "Worked Bed-Loss & Recovery Ledger: ₹18.45 Lakh Long-Stay Case",
+      "BSA 2023 s.63 Clinical Logs & Medico-Legal Audit Checklist",
+      "Deploy Hospital Abandonment Protocol: ₹999 Test or Multi-Bed CSV",
+      "Frequently Asked Questions on Patient Abandonment & Unpaid Bills",
+      "Statutory Authorities, Clinical Acts & Medico-Legal Precedents"
+    ],
+    "components": [
+      "AbandonedPatientTableOfContents",
+      "AbandonedPatientScenarioTabs",
+      "AbandonedPatientCTA"
+    ],
+    "faqQuestions": [
+      "Can a private hospital physically discharge an abandoned elderly patient onto the street or into an auto-rickshaw?",
+      "How can a hospital unblock an ICU bed when relatives switch off their phones and refuse to collect the patient?",
+      "Can the hospital legally recover the unpaid ₹15–25 Lakh bill from the relatives who abandoned the patient?",
+      "Does the hospital have to keep providing free ICU care while waiting for the District Magistrate or Police to act?",
+      "What criminal action can be initiated against adult children who abandon their elderly parents in a hospital?",
+      "How does the hospital protect its doctors from false medical negligence counter-allegations during transfer?",
+      "What if the abandoned patient was admitted as an unidentified emergency or accident victim with false KYC?"
+    ],
+    "wordCount": 2480,
+    "artefacts": [
+      "DecisionTreeSVG",
+      "StatutoryMatrixTable",
+      "ScenarioTabs",
+      "WorkedRecoveryLedger",
+      "BSAS63Checklist",
+      "DualTrackCTA"
+    ],
+    "sources": [
+      "Maintenance and Welfare of Parents and Senior Citizens Act 2007 ss.4 and 24",
+      "Indian Contract Act 1872 ss.70 and 128",
+      "Clinical Establishments Registration and Regulation Act 2010",
+      "Code of Civil Procedure 1908 Order XXXVII and Order XXXVIII",
+      "Bharatiya Sakshya Adhiniyam 2023 s.63",
+      "Bharatiya Nyaya Sanhita 2023 ss.105, 106, 127"
+    ],
+    "builtAt": "2026-11-14T11:46:01.685Z"
+  },
+  {
+    "id": "B2B-046",
+    "url": "/home-healthcare-icu-at-home-eldercare-unpaid-billing-recovery",
+    "archetype": "G1",
+    "h2s": [
+      "Operational Reality: Why Home-ICU, Eldercare & Nursing Agencies Face 35% Bad-Debt Exposure",
+      "5-Stage Legal Escalation Protocol for Home Healthcare & Assisted Living Defaults",
+      "Statutory Matrix: Contract Act s.73, BNS s.316 & Electronic Service on Overseas Sponsors",
+      "Resolving 4 Chronic Failure Modes: NRI Ghosting, Equipment Seizure & Nurse Poaching",
+      "Asset Recovery Protocol: Recovering Unreturned Ventilators, BiPAPs & Bedside Monitors",
+      "Cross-Border Enforcement: Serving Statutory Notices on Defaulting NRI Children Abroad",
+      "Worked Recovery Ledger: ₹4.85 Lakh Home-ICU Shift Arrears & Asset Conversion",
+      "BSA 2023 Section 63 Digital Evidence & Chain-of-Custody Checklist",
+      "Deploy Institutional Recovery: Test 1 Default Notice or Onboard Batch Receivables",
+      "Frequently Asked Questions: Home-Healthcare, Nursing Bureau & Eldercare Dues",
+      "Statutory Authorities, Healthcare Regulations & Landmark Precedents"
+    ],
+    "components": [
+      "HomeHealthcareTableOfContents",
+      "HomeHealthcareScenarioTabs",
+      "HomeHealthcareCTA"
+    ],
+    "faqQuestions": [
+      "Can an overseas NRI child be sued in India for unpaid home-ICU or eldercare bills?",
+      "What criminal and civil steps can an agency take if a family refuses to return a rented ventilator or BiPAP?",
+      "Are non-solicitation / anti-poaching clauses in home healthcare contracts enforceable against families?",
+      "Can an assisted living home or rehab center discharge an elderly patient if the family stops paying monthly fees?",
+      "What electronic evidence is required to prove home nursing shifts under Section 63 of Bharatiya Sakshya Adhiniyam, 2023?",
+      "Can an MSME-registered home healthcare startup claim compound interest from defaulting families?",
+      "How does the Senior Citizens Act assist agencies when adult children refuse to maintain parents?"
+    ],
+    "wordCount": 2540,
+    "artefacts": [
+      "DecisionTreeSVG",
+      "StatutoryMatrixTable",
+      "ScenarioTabs",
+      "WorkedRecoveryLedger",
+      "BSAS63Checklist",
+      "DualTrackCTA"
+    ],
+    "sources": [
+      "Indian Contract Act 1872 ss.70, 73 & 74",
+      "Bharatiya Nyaya Sanhita 2023 ss.316 & 318",
+      "Maintenance and Welfare of Parents and Senior Citizens Act 2007 ss.4 & 5",
+      "Code of Civil Procedure 1908 Order V Rule 25 & Order XL Rule 1",
+      "Bharatiya Sakshya Adhiniyam 2023 s.63",
+      "Commercial Courts Act 2015 s.2(1)(c)",
+      "Niranjan Shankar Golikari v. Century Spinning & Mfg. Co. (AIR 1967 SC 1098)"
+    ],
+    "builtAt": "2026-11-14T11:46:04.053Z"
+  },
+  {
+    "id": "B2B-049",
+    "url": "/ambulance-air-ambulance-medical-evacuation-unpaid-bill-recovery",
+    "archetype": "G1",
+    "h2s": [
+      "Why Air Ambulance Operators & ALS Fleets Face Crippling Bad Debts",
+      "Emergency Medevac & ALS Fleet Recovery Decision Tree",
+      "Statutory Recovery Matrix for Air Ambulance & Fleet Operators",
+      "4 Medevac & Fleet Default Modes: Tactical Action Rails",
+      "Enforcing WhatsApp & Email Dispatch Approvals Under BSA s.63",
+      "Worked Recovery Ledger: ₹18.5L ECMO Charter Default",
+      "Medevac Flight Dispatch, ATC Logs & Handover Evidence Checklist",
+      "Deploy Medevac Recovery: Single Flight Test or Enterprise Fleet Desk",
+      "Frequently Asked Questions on Air Ambulance & Medevac Bill Recovery",
+      "Statutory Authorities, Civil Aviation Rules & Case Precedents"
+    ],
+    "components": [
+      "AmbulanceTableOfContents",
+      "AmbulanceScenarioTabs",
+      "AmbulanceRecoveryCTA"
+    ],
+    "faqQuestions": [
+      "Can an air-ambulance operator legally enforce emergency charter approvals made solely over WhatsApp or email?",
+      "How can charter operators recover unpaid bills when an insurer or TPA repudiates an air-ambulance claim after issuing pre-authorization?",
+      "What legal recourse exists if an international travel assistance company delays payment citing foreign underwriter non-settlement?",
+      "Can patient relatives avoid paying for an air-ambulance by claiming they signed authorizations under duress during an emergency?",
+      "How do ALS ambulance fleet owners recover 90+ day rolling arrears from private hospital chains?",
+      "What steps should be taken if a patient family issues a cheque or promissory note that subsequently bounces?",
+      "Can an air-ambulance charter operator secure an interim asset freeze against a defaulting corporate debtor?"
+    ],
+    "wordCount": 2480,
+    "artefacts": [
+      "DecisionTreeSVG",
+      "StatutoryMatrixTable",
+      "ScenarioTabs",
+      "WorkedRecoveryLedger",
+      "BSAS63Checklist",
+      "DualTrackCTA"
+    ],
+    "sources": [
+      "Code of Civil Procedure 1908 Order XXXVII and Order XXXVIII Rule 5",
+      "Bharatiya Sakshya Adhiniyam 2023 s.63",
+      "Information Technology Act 2000 s.10A",
+      "IRDAI Master Circular on Health Insurance Business 2024",
+      "DGCA Civil Aviation Requirements CAR Section 3 Series C",
+      "MSMED Act 2006 ss.15 16 18 and 19",
+      "Negotiable Instruments Act 1881 s.138"
+    ],
+    "builtAt": "2026-11-14T11:46:09.770Z"
+  },
+  {
+    "id": "B2B-047",
+    "url": "/dialysis-oncology-daycare-center-ppp-government-bill-recovery",
+    "archetype": "G1",
+    "h2s": [
+      "Why Healthcare PPP Concessionaires Face Catastrophic Cash Freezes",
+      "Healthcare PPP Concessionaire Recovery Escalation Decision Tree",
+      "Statutory Remedies & Legal Forum Matrix for Healthcare PPP Arrears",
+      "4 Healthcare PPP Default Scenarios & Tailored Recovery SOPs",
+      "MSMED Act Applicability to PPP Dialysis & Diagnostic Operators",
+      "Concession Arbitration, PBG Protection & Defeating Unilateral Appointments",
+      "Serving a Mandatory Section 80 CPC Notice to State Health Leadership",
+      "High Court Article 226 Writ of Mandamus: The Fast-Track Payout Route",
+      "Worked Recovery Ledger: ₹4.87 Crore NHM Arrears & Statutory Penal Interest",
+      "BSA 2023 Section 63 Audit & Electronic Evidence Checklist",
+      "Deploy Healthcare PPP Legal Recovery: Single Notice or Multi-District CSV",
+      "Frequently Asked Questions on Healthcare PPP Tender Dues Recovery",
+      "Statutory Authorities, Concession Guidelines & Judicial Precedents"
+    ],
+    "components": [
+      "PPPDialysisTableOfContents",
+      "PPPDialysisScenarioTabs",
+      "PPPDialysisRecoveryCTA"
+    ],
+    "faqQuestions": [
+      "Why do District Health Societies and NHM delay PPP dialysis and oncology center payments by 12+ months?",
+      "Does the MSMED Act, 2006 apply to healthcare PPP operators running centers inside District Hospitals?",
+      "What is a Section 80 CPC notice and why is it mandatory before suing a District Health Society or NHM?",
+      "Can an operator file an Article 226 Writ Petition in the High Court for admitted healthcare PPP dues?",
+      "How can a dialysis or radiology concessionaire prevent the government from encashing its Performance Bank Guarantee (PBG)?",
+      "Can the State Health Society appoint a departmental officer as the Sole Arbitrator under the Concession Agreement?",
+      "What electronic evidence is mandatory under Section 63 of Bharatiya Sakshya Adhiniyam, 2023 (BSA)?"
+    ],
+    "wordCount": 2540,
+    "artefacts": [
+      "DecisionTreeSVG",
+      "StatutoryMatrixTable",
+      "ScenarioTabs",
+      "WorkedRecoveryLedger",
+      "BSAS63Checklist",
+      "DualTrackCTA"
+    ],
+    "sources": [
+      "Code of Civil Procedure 1908 s.80",
+      "Constitution of India Art. 226",
+      "MSMED Act 2006 ss.15-18",
+      "Arbitration & Conciliation Act 1996 ss.9, 11, 12(5)",
+      "Pradhan Mantri National Dialysis Programme Guidelines",
+      "Bharatiya Sakshya Adhiniyam 2023 s.63"
+    ],
+    "builtAt": "2026-11-14T11:48:04.053Z"
+  },
+  {
+    "id": "B2B-050",
+    "url": "/tools/hospital-tpa-delayed-claim-interest-calculator",
+    "archetype": "T1",
+    "h2s": [
+      "Hospital TPA Delayed Claim Penal Interest Engine",
+      "IRDAI Health Insurance Master Circular & Statutory Settlement TAT",
+      "The Bank Rate + 2% Penal Interest Formula & Statutory Accounting",
+      "Challenging Arbitrary TPA Deductions: Consumables & Tariff Package Mismatches",
+      "Worked Recovery Ledger: ₹48.5 Lakh Aged Hospital Portfolio",
+      "Multi-Tier Legal Escalation: CCO Notice, Ombudsman & Commercial Courts",
+      "Section 63 BSA 2023 Electronic Evidence Audit Checklist for Hospital RCM",
+      "Institutional Healthcare Legal Recovery Network & Related Playbooks",
+      "Deploy Healthcare RCM Legal Recovery: Single Notice or Batch CSV",
+      "Frequently Asked Questions on Hospital TPA Delayed Claims & Penal Interest",
+      "Statutory Authorities, IRDAI Circulars & Legal Citations"
+    ],
+    "components": [
+      "HospitalTpaCalculatorClient",
+      "HospitalTpaCalculatorTOC",
+      "HospitalTpaCalculatorCTA"
+    ],
+    "wordCount": 1720,
+    "artefacts": [
+      "Single Claim & Batch RCM CSV Interactive Calculator",
+      "IRDAI Statutory Settlement TAT Matrix",
+      "Arbitrary TPA Disallowances Breakdown Grid",
+      "Worked Healthcare RCM Aging Portfolio Ledger",
+      "BSA Section 63 Electronic Evidence Checklist"
+    ],
+    "sources": [
+      "https://irdai.gov.in/",
+      "https://www.indiacode.nic.in/handle/123456789/2146",
+      "https://www.rbi.org.in/",
+      "https://www.indiacode.nic.in/",
+      "https://www.indiacode.nic.in/handle/123456789/1566"
+    ],
+    "builtAt": "2026-11-14T12:07:55.568Z"
+  },
+  {
+    "id": "B2B-052",
+    "url": "/reports/healthcare-tpa-settlement-delay-hospital-receivables-india",
+    "archetype": "R1",
+    "h2s": [
+      "Executive Summary: The Indian Hospital Cash-Flow Crisis",
+      "Macro DSO Benchmarks Across 5 Healthcare Payer Channels",
+      "Impact by Bed Capacity: Small Nursing Homes vs Corporate Hubs",
+      "The Anatomy of TPA Short-Settlements & Unlawful Deductions",
+      "CGHS, ECHS & Ayushman Bharat Payment Stalemate Analysis",
+      "Post-Discharge Patient Balances & Article 21 Detention Bar",
+      "Interactive Hospital RCM Recovery Escalation Playbook",
+      "Worked Ledger: ₹1.45 Cr Delayed TPA Claims & IRDAI Interest",
+      "The 4-Tier Legal Escalation Framework for Hospital Receivables",
+      "Empirical Research Methodology, Sample Frame & Data Scope",
+      "Download Healthcare Receivables Dataset & Academic Citation",
+      "Deploy Hospital RCM Legal Desk: Test Single Case or Batch CSV",
+      "Frequently Asked Questions by Healthcare CFOs & Medical Leaders",
+      "Regulatory Framework, IRDAI Circulars & Judicial Precedents"
+    ],
+    "components": [
+      "HealthcareTpaTableOfContents",
+      "HealthcareTpaScenarioTabs",
+      "HealthcareTpaDataDownload",
+      "HealthcareTpaRecoveryCTA"
+    ],
+    "faqQuestions": [
+      "What is the average Days Sales Outstanding (DSO) for Indian private hospitals across payer categories?",
+      "Are health insurance companies and TPAs legally mandated to pay penal interest on delayed cashless claims?",
+      "Can an empanelled hospital file an Article 226 Writ Petition in the High Court for unpaid CGHS or ECHS arrears?",
+      "How do small nursing homes (10–49 beds) suffer higher working capital stress compared to corporate tertiary chains?",
+      "Can a private hospital detain a non-paying patient or withhold mortal remains until bills are cleared?",
+      "What legal instrument should hospitals execute at discharge when a patient family cannot pay the balance immediately?",
+      "What evidence is mandatory under Section 63 of Bharatiya Sakshya Adhiniyam, 2023 (BSA) to prosecute TPA and insurer claim disputes?",
+      "Can corporate healthcare CFOs, medical associations, and journalists cite and download this benchmark dataset?"
+    ],
+    "wordCount": 3650,
+    "artefacts": [
+      "5PayerBenchmarkTable",
+      "BedCapacityImpactCards",
+      "TpaDeductionBreakdownCards",
+      "InteractiveScenarioTabs",
+      "StatutoryPenalInterestLedger",
+      "4TierLegalWaterfall",
+      "DownloadableJsonDataset",
+      "DualTrackCTA"
+    ],
+    "sources": [
+      "IRDAI Master Circular on Health Insurance Business (Bank Rate + 2%)",
+      "Code of Civil Procedure 1908 s.80 & Order XXXVII",
+      "Supreme Court: ABL International Ltd. v. ECGC (2004) 3 SCC 553",
+      "Constitution of India Art. 21 & BNS 2023 s.127",
+      "Indian Contract Act 1872 ss.73, 126",
+      "Negotiable Instruments Act 1881 ss.4, 138, 143A",
+      "Commercial Courts Act 2015 s.2(1)(c)(xx) & s.12A",
+      "Bharatiya Sakshya Adhiniyam 2023 s.63"
+    ],
+    "builtAt": "2026-11-14T12:09:02.947Z"
+  },
+  {
+    "id": "B2B-051",
+    "url": "/templates/hospital-discharge-pending-bill-undertaking-and-legal-notice",
+    "archetype": "P1",
+    "h2s": [
+      "The Article 21 Discharge Dilemma: Why Hospitals Cannot Detain Patients at Discharge",
+      "Generate Your Hospital Discharge Undertaking & 15-Day Legal Notice",
+      "Defective Gate-Pass Slips vs. Advocate-Vetted Discharge Undertakings",
+      "The 4-Stage Post-Discharge Patient Receivables Escalation Rail",
+      "6 Mandatory Clauses Every Hospital Undertaking & Legal Notice Must Contain",
+      "The 6-Document Medico-Legal Dossier Checklist for Civil Recovery",
+      "High Court & Supreme Court Precedents on Hospital Discharge Recovery",
+      "Financial Illustration: Recovering an Unpaid ₹1,65,000 Discharge Balance",
+      "Issue 1 Advocate Notice or Onboard Your Hospital Billing Portfolio",
+      "Hospital Billing & Medico-Legal Cell FAQs",
+      "Primary Statutory Sources & Clinical Regulatory Framework"
+    ],
+    "faqQuestions": [
+      "Can a hospital legally detain a patient or withhold discharge papers if bills are unpaid?",
+      "Why is a Discharge Promissory Note and Undertaking essential at the time of patient release?",
+      "Can the hospital sue the patient's attendant or relative if the patient fails to pay?",
+      "What if the patient's insurance company or TPA rejected the cashless claim at the time of discharge?",
+      "Does the hospital discharge undertaking need to be on stamp paper?",
+      "How long does a hospital have to send a legal notice for unpaid patient bills?",
+      "Can a hospital recover penal interest on unpaid patient dues?"
+    ],
+    "components": [
+      "Breadcrumbs",
+      "HospitalNoticeTOC",
+      "HospitalNoticeWorkspace",
+      "HospitalNoticeCTA",
+      "RelatedRecoveryGuides"
+    ],
+    "wordCount": 2180,
+    "artefacts": [
+      "2-in-1 RCM Interactive Undertaking & Advocate Notice Generator",
+      "Defective Slip vs Court-Tested Undertaking Comparison Table",
+      "4-Stage Post-Discharge SOP SVG Escalation Flowchart",
+      "6-Clause Statutory Contract & Promissory Note Blueprint",
+      "Medico-Legal Civil Evidence Checklist",
+      "Worked ₹1,65,000 Discharge Case Study"
+    ],
+    "sources": [
+      "Indian Contract Act 1872 ss.70, 73, 126",
+      "Negotiable Instruments Act 1881 s.4",
+      "Code of Civil Procedure 1908 Order XXXVII",
+      "Interest Act 1978 s.3",
+      "Constitution of India Art. 21",
+      "Bharatiya Sakshya Adhiniyam 2023 s.63"
+    ],
+    "builtAt": "2026-11-14T12:10:50.972Z"
+  },
+  {
+    "id": "B2B-054",
+    "url": "/cardiac-stent-orthopedic-implant-hospital-consignment-dues-recovery",
+    "archetype": "G1",
+    "h2s": [
+      "Overview: Why Implant Distributors Face Unbilled Hospital Consignments",
+      "5-Stage Recovery Decision Tree for Unbilled Hospital Consignments",
+      "Statutory Framework: Sale of Goods Act s.24, MSMED Act & BNS s.316",
+      "4 Hospital Consignment Default Scenarios & Operational Action Rails",
+      "Cath-Lab & OT Consumption Stickers: Establishing Proof Under BSA s.63",
+      "Recovering Unreturned Spine Kits, Demo Trays & Missing Loaner Sets",
+      "Overcoming Hospital Excuses: NPPA Price Caps & TPA Insurance Delays",
+      "Worked Recovery Ledger: ₹38.4 Lakh Ortho & Stent Consignment Arrears",
+      "BSA 2023 Section 63 Digital Evidence & Hospital OT Audit Checklist",
+      "Deploy Consignment Recovery: Single Hospital Notice or Batch CSV Desk",
+      "Frequently Asked Questions: Hospital Implant & Consignment Dues",
+      "Statutory Authorities, Medical Device Rules & Landmark Precedents"
+    ],
+    "faqQuestions": [
+      "Can a hospital refuse payment for consumed stents or implants because no Purchase Order (PO) was generated?",
+      "How do OT and Cath-Lab consumption barcode stickers serve as legal proof of debt under Indian law?",
+      "What legal action can an implant distributor take if a hospital refuses to return unconsumed consignment stock or loaner sets?",
+      "Can a hospital delay paying the implant distributor until the patient's insurance TPA or government scheme (CGHS/PM-JAY) settles the claim?",
+      "How does Section 43B(h) of the Income Tax Act compel hospitals to clear MSME implant distributor dues within 45 days?",
+      "Can private hospitals deduct arbitrary trade margins from historic ledgers citing NPPA ceiling price revisions?",
+      "What is the limitation period for recovering hospital consignment dues and unbilled implant arrears in India?"
+    ],
+    "components": [
+      "Breadcrumbs",
+      "CardiacStentTableOfContents",
+      "CardiacStentScenarioTabs",
+      "CardiacStentRecoveryCTA",
+      "RelatedRecoveryGuides"
+    ],
+    "wordCount": 2460,
+    "artefacts": [
+      "5-Stage Recovery Decision Tree SVG Flowchart",
+      "Statutory Matrix Table",
+      "Interactive Scenario Tabs Component",
+      "Worked Recovery Ledger (₹38.4 Lakh Stent & Ortho Arrears)",
+      "BSA 2023 Section 63 Evidence & OT Audit Checklist",
+      "Dual-Track B2B CTA Component"
+    ],
+    "sources": [
+      "Sale of Goods Act 1930 s.24",
+      "Bharatiya Nyaya Sanhita 2023 ss.316 & 318",
+      "MSMED Act 2006 ss.15, 16 & 18",
+      "Commercial Courts Act 2015 s.2(1)(c)(xviii)",
+      "Drugs (Prices Control) Order 2013 Para 19 (NPPA)",
+      "Bharatiya Sakshya Adhiniyam 2023 s.63",
+      "Code of Civil Procedure 1908 Order XXXVII & Order XXXVIII Rule 5"
+    ],
+    "builtAt": "2026-11-14T12:17:44.892Z"
+  },
+  {
+    "id": "B2B-055",
+    "url": "/medical-equipment-hospital-supply-amc-cmc-payment-default-recovery",
+    "archetype": "G1",
+    "h2s": [
+      "Medical Equipment Receivables: The Capital & Reagent Liquidity Trap",
+      "5-Stage Operational Recovery Rail for Unpaid MedTech Assets",
+      "Statutory Recovery Matrix: Sale of Goods, MSMED & Commercial Courts",
+      "4 Commercial Default Modes: Reagents, Ultrasound, MRI & Hospital AMC",
+      "The Reagent-Rental Trap: Minimum Purchase Shortfalls & Pirated Kits",
+      "PCPNDT Ultrasound Machine Repossession: Avoiding Criminal FIRs",
+      "Radiology Milestone Defaults: Overcoming Withheld FAT Sign-Offs",
+      "Hospital Biomedical AMC/CMC Invoices & Spare Parts Recovery SOP",
+      "Worked Financial Ledger: Recovering an Unpaid ₹48,50,000 MedTech Asset",
+      "Bharatiya Sakshya Adhiniyam (BSA) Section 63 Evidence Dossier",
+      "Deploy Dedicated MedTech Legal Recovery: Single Case or Bulk CSV",
+      "Frequently Asked Questions on Medical Equipment Debt Recovery",
+      "Primary Statutory Citations & MedTech Regulatory Precedents"
+    ],
+    "faqQuestions": [
+      "Can a medical equipment supplier physically repossess an unpaid machine from a hospital?",
+      "What are the strict PCPNDT Act rules for seizing a defaulted ultrasound machine in India?",
+      "How do OEMs recover losses when a diagnostic lab breaches a Reagent-Rental contract?",
+      "What legal remedy exists when a hospital withholds the final 10%–20% FAT milestone for years?",
+      "Can a biomedical AMC/CMC firm withdraw maintenance support if hospital bills remain unpaid?",
+      "Does Section 43B(h) of the Income Tax Act apply to hospital equipment and reagent suppliers?",
+      "What electronic evidence is required under Section 63 of Bharatiya Sakshya Adhiniyam (BSA 2023)?"
+    ],
+    "components": [
+      "Breadcrumbs",
+      "MedicalEquipmentTableOfContents",
+      "MedicalEquipmentScenarioTabs",
+      "MedicalEquipmentRecoveryCTA",
+      "RelatedRecoveryGuides"
+    ],
+    "wordCount": 2879,
+    "artefacts": [
+      "5-Stage Operational Recovery Rail SVG Flowchart",
+      "Statutory Recovery Matrix Table (Sale of Goods, PCPNDT, MSMED)",
+      "4 Interactive Commercial Failure Mode Tabs (Reagent, Ultrasound, MRI, AMC)",
+      "PCPNDT Ultrasound Safe Seizure 4-Step Protocol Box",
+      "Worked Financial Ledger for ₹48,50,000 MedTech Default Case",
+      "BSA 2023 Section 63 Electronic Evidence Dossier Checklist"
+    ],
+    "sources": [
+      "Sale of Goods Act 1930 ss.25, 41, 42",
+      "Pre-Conception and Pre-Natal Diagnostic Techniques Act 1994 ss.18, 23, 30",
+      "PCPNDT Rules 1996 Rules 3A, 13",
+      "Micro, Small and Medium Enterprises Development Act 2006 ss.15, 16, 18",
+      "Indian Contract Act 1872 ss.39, 73, 74, 148, 153",
+      "Code of Civil Procedure 1908 Order XL Rule 1, Order XXXVII, Order XXXIX",
+      "Commercial Courts Act 2015",
+      "Bharatiya Sakshya Adhiniyam 2023 s.63"
+    ],
+    "builtAt": "2026-11-14T12:20:45.999Z"
   }
 ]
