@@ -42,6 +42,7 @@ import {
   FileCheck
 } from "lucide-react";
 import FAQSection, { FAQItem } from "@/components/FAQSection";
+import { IntroVideo } from "@/components/IntroVideo";
 
 export default function HowItWorksPage() {
 
@@ -219,6 +220,11 @@ export default function HowItWorksPage() {
           <p className="text-sm sm:text-base md:text-lg text-[#6B7280] font-semibold leading-relaxed max-w-2xl select-text">
             Reclaim your stuck funds systematically with our streamlined, attorney-verified legal recovery engine.
           </p>
+        </div>
+
+        {/* ================= PRODUCT VIDEO ================= */}
+        <div className="w-full max-w-5xl mb-16 md:mb-24">
+          <IntroVideo />
         </div>
 
         {/* ================= 5 STEPS CIRCLES GRID ================= */}

@@ -28,6 +28,7 @@ import {
 import Link from "next/link";
 import { useRouter } from "next/navigation";
 import { BuyCreditsModal } from "@/components/BuyCreditsModal";
+import { IntroVideoCard } from "@/components/IntroVideo";
 
 // Pre-populated high-fidelity demo cases for first-time visits
 const initialCases = [
@@ -722,6 +723,9 @@ export default function UserDashboard() {
           </button>
         </div>
       )}
+
+      {/* ── Product walkthrough video ── */}
+      <IntroVideoCard />
 
       {/* ── Quick Metrics Grid ── */}
       <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">

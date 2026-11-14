@@ -3,6 +3,7 @@
 import React, { useState } from "react";
 import Link from "next/link";
 import { PaymentModal } from "@/components/PaymentModal";
+import { IntroVideo } from "@/components/IntroVideo";
 import FAQSection, { FAQItem } from "@/components/FAQSection";
 import {
   Wallet,
@@ -504,6 +505,19 @@ export default function HomeClient({ latestPosts }: { latestPosts?: React.ReactN
 
         {/* ================= WHY CHOOSE US SECTION ================= */}
         <WhyChooseUsSection />
+
+        {/* ================= PRODUCT VIDEO ================= */}
+        <section className="mt-12 md:mt-24 max-w-5xl mx-auto px-4 md:px-0">
+          <div className="text-center mb-6 sm:mb-10">
+            <h2 className="text-2xl sm:text-3xl md:text-[34px] font-black text-[#111827] leading-tight tracking-tight mb-3">
+              See How It Works in <span className="text-[#DC2626]">60 Seconds</span>
+            </h2>
+            <p className="text-xs sm:text-sm md:text-base text-[#6B7280] font-semibold max-w-2xl mx-auto">
+              From filing your claim to getting paid: the whole recovery process, start to finish.
+            </p>
+          </div>
+          <IntroVideo />
+        </section>
 
         {/* ================= HOW IT WORKS SECTION ================= */}
         <HowItWorksSection />

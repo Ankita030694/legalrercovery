@@ -1,0 +1,22 @@
+{
+  "name": "legalrecovery-intro-video",
+  "version": "1.0.0",
+  "private": true,
+  "description": "LegalRecovery intro video with motion graphics, built with Remotion",
+  "scripts": {
+    "studio": "remotion studio",
+    "music": "node scripts/make-music.mjs && ffmpeg -v error -y -i public/music.wav -codec:a libmp3lame -b:a 192k public/music.mp3",
+    "render": "remotion render LegalRecoveryIntro out/legalrecovery-intro.mp4"
+  },
+  "dependencies": {
+    "@remotion/cli": "4.0.543",
+    "@remotion/google-fonts": "4.0.543",
+    "react": "19.2.8",
+    "react-dom": "19.2.8",
+    "remotion": "4.0.543"
+  },
+  "devDependencies": {
+    "@types/react": "19.2.7",
+    "typescript": "5.9.3"
+  }
+}

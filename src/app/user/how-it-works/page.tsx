@@ -19,6 +19,7 @@ import {
   Phone,
 } from "lucide-react";
 import Link from "next/link";
+import { IntroVideoCard } from "@/components/IntroVideo";
 
 const steps = [
   {
@@ -237,6 +238,9 @@ export default function HowItWorksPage() {
           Our legally-backed system works in 3 simple steps to recover your money.
         </p>
       </div>
+
+      {/* ── Product walkthrough video ── */}
+      <IntroVideoCard className="mb-3 sm:mb-4 shrink-0" />
 
       {/* ── STEP SELECTOR (Horizontal Stepper) ── */}
       <div className="flex items-center gap-0 shrink-0 mb-3 sm:mb-4">
