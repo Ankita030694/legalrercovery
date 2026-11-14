@@ -439,6 +439,60 @@ const CLUSTERS: Record<string, { heading: string; items: GuideItem[] }> = {
     heading: "Related Cheque Bounce, Banking Auto-Debit & Cyber Fraud Guides",
     items: [
       {
+        title: "Gold Loan Default & Auction Notice Compliance for NBFCs (RBI)",
+        href: "/gold-loan-default-auction-statutory-notice-rbi-compliance-nbfc",
+        tag: "Gold Loan s.176",
+        desc: "Audit-proof Contract Act s.176 pre-auction notice, 75% LTV margin call, 14-day vernacular newspaper, taluka auction & deficit recovery.",
+      },
+      {
+        title: "RBI Recovery Agent Directions & Digital Lending Compliance for NBFCs",
+        href: "/rbi-recovery-agent-guidelines-compliant-legal-escalation-nbfc",
+        tag: "RBI Compliance Guide",
+        desc: "Replace 8 AM–7 PM telecalling liability and rogue agent risk with audit-safe tri-channel Advocate Legal Notices (Email + WhatsApp + RPAD).",
+      },
+      {
+        title: "Small-Ticket Digital Loan & BNPL Recovery Economics (₹5K–₹1L)",
+        href: "/small-ticket-digital-personal-loan-bnpl-recovery-economics",
+        tag: "Fintech & BNPL",
+        desc: "Unit-positive 3-wave playbook combining BSA s.63 digital advocate notices, 30-day CICRA pre-adverse alerts, selective RPAD & s.29B batch ODR.",
+      },
+      {
+        title: "Bank Loan Recall cum Guarantee Invocation Notice Format (RBI Compliant)",
+        href: "/templates/bank-loan-recall-cum-guarantee-invocation-notice",
+        tag: "Bank Notice Template",
+        desc: "Advocate-vetted loan recall and Contract Act s.126/128 guarantee invocation draft with uncompounded RBI Penal Charges Schedule A and Word (.doc) export.",
+      },
+      {
+        title: "SARFAESI, DRT Fee & Bank Recovery Forum Calculator India",
+        href: "/tools/sarfaesi-drt-bank-recovery-forum-calculator",
+        tag: "B2B Bank Calculator",
+        desc: "Check SARFAESI s.31(h)/(i)/(j) & NBFC ₹20L rules, compute exact RDB Act Rule 7 DRT fees (₹1.5L cap), and plot the 60+15+30 day calendar.",
+      },
+      {
+        title: "High-Velocity, RBI-Compliant Legal Recovery & Bulk Notice Automation for NBFCs, Fintechs, HFCs & MFIs",
+        href: "/industries/nbfc-fintech-loan-recovery",
+        tag: "IND-02 NBFC Hub",
+        desc: "Multi-vertical hub covering PSS Act s.25 e-NACH bounces, Gold s.176, CV Form 36, NBFC ₹100Cr/₹20L & HFC ₹1L SARFAESI, Co-Lending DLG & bulk CSV notices.",
+      },
+      {
+        title: "NBFC SARFAESI Eligibility: ₹100 Cr Asset & ₹20 Lakh Debt Rule",
+        href: "/nbfc-sarfaesi-eligibility-100-crore-asset-20-lakh-loan-rule",
+        tag: "IND-02 NBFC Law",
+        desc: "MoF S.O. 856(E)/652(E) dual-gate threshold analysis plus Arbitration s.21/s.9 & Order 34/37 alternatives for Base-Layer and sub-₹20L LAP lenders.",
+      },
+      {
+        title: "Commercial Vehicle & Construction Equipment Finance Recovery for NBFCs",
+        href: "/commercial-vehicle-construction-equipment-finance-recovery-nbfc",
+        tag: "CV & CE Recovery",
+        desc: "Pre-seizure recall, Section 9 ex-parte Court Receiver orders, MV Act s.51(5) Vahan Form 36 & post-auction Loss-on-Sale guarantor suits.",
+      },
+      {
+        title: "Pre-Litigation Loan Recall & NPA Legal Recovery Infrastructure for Indian Banks",
+        href: "/industries/banks-loan-recovery",
+        tag: "IND-01 Bank Hub",
+        desc: "Multi-track banking recovery hub covering SARFAESI s.13(2)/14, sub-₹20L DRT alternatives, Pre-Litigation Lok Adalat, PSS s.25 & bulk CSV notices.",
+      },
+      {
         title: "How Banks Can Reduce Recovery Costs Through Legal Outsourcing",
         href: "/how-banks-reduce-recovery-costs-through-legal-outsourcing",
         tag: "Legal Operations & Cost Optimization",
@@ -638,6 +692,53 @@ const CLUSTERS: Record<string, { heading: string; items: GuideItem[] }> = {
       },
     ],
   },
+  itSaas: {
+    heading: "Related IT Services, SaaS, IP Copyright & Export Recovery Guides",
+    items: [
+      {
+        title: "Enterprise Receivables & Contract Recovery for IT Services, B2B SaaS, ERP Implementers & Cloud Resellers",
+        href: "/industries/it-saas-software-recovery",
+        tag: "IND-05 Tech Hub",
+        desc: "B2B creditor hub covering Copyright s.17/19 IP liens, Commercial Courts s.12A, Microsoft NCE cloud defaults, UAT stalls & STPI SOFTEX closure.",
+      },
+      {
+        title: "Legal Notice to International Client: Unpaid Invoices",
+        href: "/legal-notice-to-international-client-unpaid-invoice-recovery",
+        tag: "Cross-Border",
+        desc: "Recover unpaid USD/GBP/EUR invoices from foreign tech buyers via cross-border legal demand notices and jurisdiction mapping.",
+      },
+      {
+        title: "Unpaid Freelancer? Use Copyright Law as Leverage (Sec 19)",
+        href: "/copyright-not-transferred-until-paid-freelancer",
+        tag: "Copyright s.17/19",
+        desc: "How Section 17 first ownership and Pine Labs Section 19 rules keep software copyright with the developer until full payment.",
+      },
+      {
+        title: "Client Not Paying for Web Development? Legal Notice",
+        href: "/web-development-client-not-paying-legal-notice",
+        tag: "Software & Web",
+        desc: "Section 19 Copyright lever, MSME 3x compound interest, host-level takedowns, and advocate demand notice for agencies.",
+      },
+      {
+        title: "Section 43B(h): The MSME 45-Day Payment Rule for Buyers",
+        href: "/law/section-43bh-msme-payment-rule",
+        tag: "Sec 43B(h) Tax Rule",
+        desc: "Enforce 15/45-day payment limits and March 31 buyer expense disallowance leverage for Udyam Micro & Small IT suppliers.",
+      },
+      {
+        title: "Order XXXVII Summary Suit: The Fast Civil Route to Recover Money",
+        href: "/law/order-37-summary-suit-money-recovery",
+        tag: "Order 37 CPC",
+        desc: "Fast-track money recovery on signed MSAs, written contracts, accepted invoices, and dishonoured cheques.",
+      },
+      {
+        title: "Recover Unpaid Consultancy Fees & Retainers",
+        href: "/recovery/consultancy-fees",
+        tag: "Retainers & SOW",
+        desc: "Enforce written consulting retainers, Section 70 quantum meruit claims, and advocate legal notices.",
+      },
+    ],
+  },
   general: {
     heading: "Essential Money Recovery Laws, Timelines & Legal Notice Guides",
     items: [
@@ -798,6 +899,18 @@ const CLUSTERS: Record<string, { heading: string; items: GuideItem[] }> = {
         desc: "How Section 43B(h) disallows unpaid MSE invoices past 15/45 days and how suppliers use it as legal notice leverage.",
       },
       {
+        title: "Pharma, Medical Device & Surgical Distributor Debt Recovery",
+        href: "/industries/pharma-medical-devices-recovery",
+        tag: "B2B Pharma Hub",
+        desc: "Institutional recovery for pharma super-stockists, cath-lab/ortho implant consignments, medical equipment EMIs & CDMO units.",
+      },
+      {
+        title: "Logistics, 3PL, Transporter & Freight Debt Recovery",
+        href: "/industries/logistics-freight-3pl-recovery",
+        tag: "IND-09 Logistics Hub",
+        desc: "Recover unpaid FTL/PTL freight ledgers, GPS-proven truck halting, CHA ICEGATE duty advances & 3PL storage arrears under s.170/222.",
+      },
+      {
         title: "How to Recover Money Without Going to Court in India",
         href: "/how-to-recover-money-without-going-to-court-india",
         tag: "Out-of-Court",
@@ -805,10 +918,433 @@ const CLUSTERS: Record<string, { heading: string; items: GuideItem[] }> = {
       },
     ],
   },
+  healthcareB2B: {
+    heading: "Related Healthcare RCM, Statutory Notice & Institutional Recovery Guides",
+    items: [
+      {
+        title: "Ethical, Article-21 Compliant Debt & Claim Recovery for Hospitals, Doctors, Clinics & Diagnostic Chains",
+        href: "/industries/hospitals-doctors-healthcare-recovery",
+        tag: "IND-03 Healthcare Hub",
+        desc: "Article-21 safe post-discharge undertakings, IRDAI Bank Rate + 2% TPA claims, CGHS s.80 notices, and B2B lab recovery.",
+      },
+      {
+        title: "Promissory Note Format India (Advocate-Drafted Template)",
+        href: "/templates/promissory-note-format-india",
+        tag: "Promissory Note",
+        desc: "Enforceable Section 4 NI Act promissory note structure adaptable for attendant co-guarantors and commercial credit.",
+      },
+      {
+        title: "Section 80 CPC Notice to Government & PSUs: Rules & Format",
+        href: "/law/section-80-cpc-notice-to-government",
+        tag: "Section 80 CPC",
+        desc: "Mandatory 60-day statutory notice before suing Central/State Ministries, CGHS, ECHS, or NHM agencies.",
+      },
+      {
+        title: "Cheque Bounce Notice Timeline (Sec 138 NI Act): 30 + 15 Day Rule",
+        href: "/cheque-bounce-notice-timeline-section-138",
+        tag: "Section 138",
+        desc: "Strict 30+15+30 day prosecution clock for dishonoured discharge cheques and diagnostic franchisee PDCs.",
+      },
+      {
+        title: "Order XXXVII Summary Suit: The Fast Civil Route to Recover Money",
+        href: "/law/order-37-summary-suit-money-recovery",
+        tag: "Order 37 CPC",
+        desc: "Fast-track civil recovery on written discharge undertakings, corporate credit letters, and Form 26AS 194J fees.",
+      },
+      {
+        title: "Bulk Recovery Cases All-in-One Affordable Solutions",
+        href: "/bulk-recovery-cases-all-in-one-affordable-solutions",
+        tag: "CSV Batch Desk",
+        desc: "Onboard 10 to 10,000+ aged TPA, corporate OHC, and patient receivables via tri-channel advocate dispatch.",
+      },
+    ],
+  },
+  construction: {
+    heading: "Related Construction, EPC, Subcontractor & Government Recovery Guides",
+    items: [
+      {
+        title: "Construction, EPC & MEP Contractor Bill & Retention Recovery",
+        href: "/industries/construction-epc-contractor-recovery",
+        tag: "IND-07 EPC Hub",
+        desc: "Recover uncertified RA bills, post-DLP retention money, extra-item claims & PSU dues with Section 9 PBG protection.",
+      },
+      {
+        title: "Subcontractor Left Unpaid: Recovering From the Main Contractor",
+        href: "/subcontractor-payment-recovery-india",
+        tag: "Subcontractor Recovery",
+        desc: "Defeat back-to-back / pay-when-paid clauses, recover retention money & RA bills via MSME ODR, Sec 43B(h), and arbitration.",
+      },
+      {
+        title: "Recover Contractor Payments & Project Dues in India",
+        href: "/recovery/contractor-payment",
+        tag: "Contractor Recovery",
+        desc: "Actionable options across Order 37 CPC summary suits, MSME Samadhaan, Section 138 cheques, and NCLT Section 9.",
+      },
+      {
+        title: "Section 80 CPC Notice to Government & PSUs: Rules & Format",
+        href: "/law/section-80-cpc-notice-to-government",
+        tag: "Section 80 CPC",
+        desc: "Mandatory 60-day statutory notice before suing Central/State Government departments, Railways, or public officers for pending bills.",
+      },
+      {
+        title: "Order XXXVII Summary Suit: The Fast Civil Route to Recover Money",
+        href: "/law/order-37-summary-suit-money-recovery",
+        tag: "Order 37 CPC",
+        desc: "Fast-track money recovery under Order XXXVII CPC for certified bills, cheques, and written contracts with 10-day leave to defend.",
+      },
+      {
+        title: "Bulk Recovery Cases: All-in-One Institutional Solutions",
+        href: "/bulk-recovery-cases-all-in-one-affordable-solutions",
+        tag: "Multi-Site CSV Desk",
+        desc: "Batch notice onboarding and centralized reply triage for EPC SPVs, suppliers, and commercial recovery teams.",
+      },
+    ],
+  },
+  manufacturingB2B: {
+    heading: "Related Manufacturing, OEM, MSME & Industrial Recovery Guides",
+    items: [
+      {
+        title: "Manufacturing, Machinery & OEM Supplier Debt Recovery India",
+        href: "/industries/manufacturing-machinery-oem-recovery",
+        tag: "IND-06 OEM Hub",
+        desc: "Recover withheld commissioning balances, arbitrary OEM debit notes, cancelled tooling costs & CNC job-work dues.",
+      },
+      {
+        title: "MSME Delayed Payment Interest Calculator (3x Bank Rate)",
+        href: "/tools/msme-delayed-payment-interest-calculator",
+        tag: "MSME Sec 16 Tool",
+        desc: "Calculate Section 16 monthly compound interest at 3x RBI Bank Rate with a downloadable CSV claim sheet.",
+      },
+      {
+        title: "Section 43B(h): The MSME 45-Day Payment Rule for Buyers",
+        href: "/law/section-43bh-msme-payment-rule",
+        tag: "Sec 43B(h) Tax Rule",
+        desc: "How Section 43B(h) disallows unpaid MSE invoices past 15/45 days and creates year-end tax audit leverage.",
+      },
+      {
+        title: "MSME Samadhaan Portal vs Legal Notice (45-Day Rule & 3x Interest)",
+        href: "/msme-delayed-payment-recovery-samadhan-vs-legal-notice",
+        tag: "MSME / ODR",
+        desc: "Compare MSEFC statutory conciliation vs advocate legal notices for OEM and industrial invoice recovery.",
+      },
+      {
+        title: "Order XXXVII Summary Suit: The Fast Civil Route to Recover Money",
+        href: "/law/order-37-summary-suit-money-recovery",
+        tag: "Order 37 CPC",
+        desc: "Fast-track civil recovery for Medium enterprises, e-Way bills, signed LR proofs, and confirmed buyer ledgers.",
+      },
+      {
+        title: "Bulk Recovery Cases: All-in-One Institutional Solutions",
+        href: "/bulk-recovery-cases-all-in-one-affordable-solutions",
+        tag: "Multi-Buyer CSV Desk",
+        desc: "Dispatch 10 to 10,000+ tri-channel advocate notices for industrial dealers, job-work buyers & OEM ledgers.",
+      },
+    ],
+  },
+  commercialProperty: {
+    heading: "Related Real Estate Promoter, Commercial Lease & Bulk Recovery Guides",
+    items: [
+      {
+        title: "Builders, Landlords & Co-Working Debt Recovery India",
+        href: "/industries/builders-commercial-landlords-coworking-recovery",
+        tag: "IND-08 Property Hub",
+        desc: "Multi-track creditor hub covering RERA s.19(6)–(10) allottee dues, commercial lock-in breaches, CAM/HVAC arrears, 194-I TDS, and co-working licenses.",
+      },
+      {
+        title: "Legal Notice to Tenant for Unpaid Rent & Eviction (Guide)",
+        href: "/legal-notice-to-tenant-for-unpaid-rent-eviction",
+        tag: "TPA s.106 Eviction",
+        desc: "Recover commercial/residential rent arrears and serve a 15-day Section 106 termination notice with mesne profits.",
+      },
+      {
+        title: "Society Maintenance Recovery Notice Format (Free)",
+        href: "/templates/society-maintenance-recovery-notice",
+        tag: "Maintenance Notice",
+        desc: "Annotated 15-day maintenance arrears recovery notice format for condominium boards, societies, and RWAs.",
+      },
+      {
+        title: "Recover Money from Tenant Who Damaged Property",
+        href: "/send-a-legal-notice/recover-money-from-tenant-who-damaged-property",
+        tag: "Dilapidation Claim",
+        desc: "Enforce restoration liability, security deposit set-offs, and damage recovery against defaulting occupiers.",
+      },
+      {
+        title: "Bulk Recovery Cases All-in-One Affordable Solutions",
+        href: "/bulk-recovery-cases-all-in-one-affordable-solutions",
+        tag: "Bulk CSV Desk",
+        desc: "Dispatch 10 to 10,000+ RERA cure notices, CAM arrears demands, or co-working default notices via Email, WhatsApp & RPAD.",
+      },
+      {
+        title: "Online Dispute Resolution (ODR) India Platform",
+        href: "/online-dispute-resolution-india",
+        tag: "Institutional ODR",
+        desc: "Fast-track neutral commercial arbitration and digital settlement for post-Vidya Drolia property and lease disputes.",
+      },
+    ],
+  },
+  logistics: {
+    heading: "Related Logistics, Commercial Invoice & MSME Recovery Guides",
+    items: [
+      {
+        title: "Logistics, 3PL, Transporter & Freight Debt Recovery",
+        href: "/industries/logistics-freight-3pl-recovery",
+        tag: "IND-09 Logistics Hub",
+        desc: "Pillar hub for transporters, 3PL warehouses, CHAs & freight forwarders covering Carrier Lien, halting & ICEGATE advances.",
+      },
+      {
+        title: "Unpaid Business Invoices Legal Recovery Guide",
+        href: "/recovery/unpaid-invoices",
+        tag: "B2B Invoices",
+        desc: "Recover overdue GST freight bills, signed Bilties, and commercial purchase-order balances across India.",
+      },
+      {
+        title: "Order XXXVII Summary Suit: Fast Civil Recovery",
+        href: "/law/order-37-summary-suit-money-recovery",
+        tag: "Order 37 CPC",
+        desc: "Convert written transport contracts, signed PODs, and confirmed ledgers into expedited court decrees.",
+      },
+      {
+        title: "Bulk Recovery Cases: All-in-One Institutional Solutions",
+        href: "/bulk-recovery-cases-all-in-one-affordable-solutions",
+        tag: "CSV Batch Desk",
+        desc: "Onboard 10 to 10,000+ defaulting shippers, consignors, or negative courier seller wallets in bulk.",
+      },
+      {
+        title: "MSME Delayed Payment Interest Calculator (3x Bank Rate)",
+        href: "/tools/msme-delayed-payment-interest-calculator",
+        tag: "Interactive Tool",
+        desc: "Compute Section 16 monthly compound interest at 3x RBI Bank Rate and Section 43B(h) tax disallowance.",
+      },
+      {
+        title: "Section 43B(h): The MSME 45-Day Payment Rule for Buyers",
+        href: "/law/section-43bh-msme-payment-rule",
+        tag: "Sec 43B(h) Tax Rule",
+        desc: "Leverage March 31 Income-tax disallowance and Form 3CD audit reporting to unlock overdue freight payments.",
+      },
+      {
+        title: "MSME Samadhaan Portal vs Legal Notice (45-Day Rule)",
+        href: "/msme-delayed-payment-recovery-samadhan-vs-legal-notice",
+        tag: "MSME / B2B",
+        desc: "Compare MSEFC conciliation timelines against immediate advocate notices and Section 138 cheque remedies.",
+      },
+    ],
+  },
+  commercialB2B: {
+    heading: "Related Pharma, Medical Device & B2B Creditor Recovery Guides",
+    items: [
+      {
+        title: "Pharma, Medical Device & Surgical Distributor Debt Recovery",
+        href: "/industries/pharma-medical-devices-recovery",
+        tag: "IND-04 Pillar Hub",
+        desc: "End-to-end commercial debt recovery for pharma companies, super-stockists, implant consignors, equipment lessors & CDMO units.",
+      },
+      {
+        title: "Pharmacy & Chemist Overdue Invoice Legal Notice",
+        href: "/send-a-legal-notice/pharmacy-invoice-not-cleared",
+        tag: "Chemist Ledger",
+        desc: "Draft statutory demand notices for unpaid pharma wholesale bills, post-dated cheque dishonour & credit-note disputes.",
+      },
+      {
+        title: "Distributor & Dealer Dues Recovery Desk",
+        href: "/distributor-dealer-dues-recovery",
+        tag: "Channel Recovery",
+        desc: "Recover unpaid stockist and C&F agency balances via ledger reconciliation, Sec 138 NI Act, and Commercial Courts.",
+      },
+      {
+        title: "Section 43B(h): The MSME 45-Day Payment Rule for Buyers",
+        href: "/law/section-43bh-msme-payment-rule",
+        tag: "Tax & MSEFC",
+        desc: "Invoke Income Tax Act s.43B(h) disallowance and MSMED Act s.16 3x RBI compound interest against non-MSME buyers.",
+      },
+      {
+        title: "MSME Delayed Payment Compound Interest Calculator",
+        href: "/tools/msme-delayed-payment-interest-calculator",
+        tag: "3x RBI Tool",
+        desc: "Compute statutory 3x RBI bank rate compound interest under MSMED Act Section 16 for delayed pharma & MedTech invoices.",
+      },
+      {
+        title: "Order 37 Summary Suit for Liquidated Invoice Recovery",
+        href: "/law/order-37-summary-suit-money-recovery",
+        tag: "Order 37 CPC",
+        desc: "Fast-track admitted GST invoices, signed delivery challans, and hospital POs without a full-length civil trial.",
+      },
+      {
+        title: "Bulk Recovery Cases All-in-One Affordable Solutions",
+        href: "/bulk-recovery-cases-all-in-one-affordable-solutions",
+        tag: "CSV Batch Desk",
+        desc: "Upload multi-state chemist, hospital, and PCD franchise default ledgers for simultaneous advocate dispatch.",
+      },
+    ],
+  },
+  agencyMedia: {
+    heading: "Related Agency, Media Buying, Copyright & Event Recovery Guides",
+    items: [
+      {
+        title: "Advertising, Marketing, PR, Media & Event Debt Recovery",
+        href: "/industries/advertising-marketing-media-event-recovery",
+        tag: "IND-12 Pillar Hub",
+        desc: "Dual-weapon monetary + 7-day Copyright Takedown recovery for agencies, media buyers, film houses & event organizers.",
+      },
+      {
+        title: "Copyright Not Transferred Until Paid (Creative & IP Law)",
+        href: "/copyright-not-transferred-until-paid-freelancer",
+        tag: "Copyright s.19/51",
+        desc: "Block defaulting clients from running unpaid creatives, reels, code, or brand assets across digital platforms.",
+      },
+      {
+        title: "Pending Project Payment Legal Recovery Guide",
+        href: "/recovery/pending-project-payment",
+        tag: "Milestone Recovery",
+        desc: "Recover stalled agency retainers, scope-creep deliverables, and post-launch client invoice defaults.",
+      },
+      {
+        title: "Send Legal Notice for Business to Recover Unpaid Dues",
+        href: "/send-a-legal-notice/for-business-to-recover-their-unpaid-dues",
+        tag: "B2B Notice Portal",
+        desc: "Dispatch advocate-vetted corporate demand notices to brand CMOs, CFOs, and defaulting corporate debtors.",
+      },
+      {
+        title: "Section 43B(h): The MSME 45-Day Payment Rule for Buyers",
+        href: "/law/section-43bh-msme-payment-rule",
+        tag: "MSMED s.43B(h)",
+        desc: "Leverage March 31 income-tax expense disallowance and 3x RBI interest for Udyam-registered agencies and studios.",
+      },
+      {
+        title: "Bulk Recovery Cases: All-in-One Institutional Solutions",
+        href: "/bulk-recovery-cases-all-in-one-affordable-solutions",
+        tag: "CSV Batch Desk",
+        desc: "Upload 10 to 10,000+ defaulting advertisers, sponsors, or retainer accounts via CSV for tri-channel dispatch.",
+      },
+    ],
+  },
+  hospitalityB2B: {
+    heading: "Related Hotel BTC, Banquet, Corporate Travel & B2B Recovery Guides",
+    items: [
+      {
+        title: "Hotels, Banquets & Corporate Travel (TMC) Debt Recovery",
+        href: "/industries/hotels-banquets-corporate-travel-recovery",
+        tag: "IND-16 Pillar Hub",
+        desc: "Recover aged City-Ledger BTC accounts, IATA BSP flown-PNR ticket defaults, stopped wedding cheques & MICE attrition dues.",
+      },
+      {
+        title: "Section 138 Cheque Bounce Notice Timeline (30 + 15 Day Rule)",
+        href: "/cheque-bounce-notice-timeline-section-138",
+        tag: "NI Act s.138",
+        desc: "Mandatory statutory demand and prosecution windows for stopped banquet checkout cheques and corporate security PDCs.",
+      },
+      {
+        title: "Stop-Payment Cheque Bounce Legal Action Guide",
+        href: "/stop-payment-cheque-bounce-case",
+        tag: "Stop-Payment Law",
+        desc: "Enforce criminal liability and 20% Section 143A interim compensation when wedding hosts or corporates block payment.",
+      },
+      {
+        title: "Business Dues & Commercial Ledger Recovery Guide",
+        href: "/recovery/business-dues",
+        tag: "B2B Ledgers",
+        desc: "Convert overdue corporate invoices, running accounts, and confirmed City Ledgers into rapid settlements.",
+      },
+      {
+        title: "Order XXXVII Summary Suit: Fast Civil Recovery",
+        href: "/law/order-37-summary-suit-money-recovery",
+        tag: "Order 37 CPC",
+        desc: "Fast-track liquidated BTC emails, PMS Guest Registration Cards, and GDS flown-ticket schedules without long trials.",
+      },
+      {
+        title: "Bulk Recovery Cases: All-in-One Institutional Solutions",
+        href: "/bulk-recovery-cases-all-in-one-affordable-solutions",
+        tag: "CSV Batch Desk",
+        desc: "Dispatch 10 to 10,000+ overdue hotel folios, TMC corporate balances, or mess contractor bills in one unified portal.",
+      },
+    ],
+  },
 };
 
 function detectCluster(pathname: string): { heading: string; items: GuideItem[] } {
   const p = pathname.toLowerCase();
+  if (
+    p.includes("hotels-banquets-corporate-travel") ||
+    p.includes("hotel-btc-bill-to-company") ||
+    p.includes("iata-corporate-travel-agent") ||
+    p.includes("banquet-hall-destination-wedding-post-event") ||
+    p.includes("ota-b2b-bedbank") ||
+    p.includes("mice-corporate-offsite") ||
+    p.includes("industrial-canteen-corporate-cafeteria") ||
+    p.includes("b2b-dmc-destination-management") ||
+    p.includes("charter-flight-luxury-coach") ||
+    p.includes("hotel-btc-and-iata-travel-agent")
+  ) {
+    return CLUSTERS.hospitalityB2B;
+  }
+  if (
+    p.includes("logistics") ||
+    p.includes("freight") ||
+    p.includes("3pl") ||
+    p.includes("transporter") ||
+    p.includes("bilty") ||
+    p.includes("reefer") ||
+    p.includes("halting")
+  ) {
+    return CLUSTERS.logistics;
+  }
+  if (
+    p.includes("builders-commercial-landlords-coworking") ||
+    p.includes("rera-section-19-builder") ||
+    p.includes("commercial-lease-lock-in") ||
+    p.includes("coworking-managed-office") ||
+    p.includes("commercial-it-park-mall-cam") ||
+    p.includes("industrial-warehouse-3pl-shed") ||
+    p.includes("deducted-tds-194i") ||
+    p.includes("commercial-property-section-106") ||
+    p.includes("builder-society-handover-ifms") ||
+    p.includes("joint-development-agreement-jda") ||
+    p.includes("retail-mall-revenue-share-minimum-guarantee")
+  ) {
+    return CLUSTERS.commercialProperty;
+  }
+  if (
+    p.includes("manufacturing-machinery-oem") ||
+    p.includes("oem-deduction") ||
+    p.includes("tooling-dies") ||
+    p.includes("cnc-job-work") ||
+    p.includes("machine-commissioning") ||
+    p.includes("industrial-raw-material") ||
+    p.includes("export-machinery")
+  ) {
+    return CLUSTERS.manufacturingB2B;
+  }
+  if (
+    p.includes("construction-epc") ||
+    p.includes("subcontractor-payment") ||
+    p.includes("contractor-payment") ||
+    p.includes("section-80-cpc") ||
+    p.includes("ra-bill") ||
+    p.includes("retention-money") ||
+    p.includes("works-contract") ||
+    p.includes("liquidated-damages")
+  ) {
+    return CLUSTERS.construction;
+  }
+  if (
+    p.includes("hospitals-doctors-healthcare-recovery") ||
+    p.includes("hospital-unpaid-patient-bill") ||
+    p.includes("hospital-tpa-insurance") ||
+    p.includes("cghs-echs") ||
+    p.includes("hospital-corporate-credit") ||
+    p.includes("diagnostic-lab-pathology") ||
+    p.includes("ivf-dental-cosmetic") ||
+    p.includes("visiting-consultant-doctor") ||
+    p.includes("patient-cheque-bounce") ||
+    p.includes("home-healthcare-icu") ||
+    p.includes("dialysis-oncology") ||
+    p.includes("hospital-long-stay") ||
+    p.includes("ambulance-air-ambulance") ||
+    p.includes("hospital-tpa-delayed-claim") ||
+    p.includes("hospital-discharge-pending-bill") ||
+    p.includes("healthcare-tpa-settlement-delay")
+  ) {
+    return CLUSTERS.healthcareB2B;
+  }
   if (
     p.includes("salary") ||
     p.includes("wages") ||
@@ -913,9 +1449,49 @@ p.includes("school") ||
     p.includes("autopay") ||
     p.includes("credit") ||
     p.includes("card") ||
-    p.includes("ni-act")
+    p.includes("ni-act") ||
+    p.includes("nbfc") ||
+    p.includes("fintech") ||
+    p.includes("hfc") ||
+    p.includes("mfi")
   ) {
     return CLUSTERS.banking;
+  }
+  if (
+    p.includes("advertising-marketing-media-event") ||
+    p.includes("low-roas") ||
+    p.includes("media-buying-agency") ||
+    p.includes("exhibition-stall-fabricator") ||
+    p.includes("ad-film-ott-video-production") ||
+    p.includes("outdoor-hoarding-ooh") ||
+    p.includes("pr-public-relations-agency") ||
+    p.includes("influencer-talent-management-agency") ||
+    p.includes("creative-pitch-theft") ||
+    p.includes("sponsorship-fee-default") ||
+    p.includes("marketing-ad-agency-retainer-copyright")
+  ) {
+    return CLUSTERS.agencyMedia;
+  }
+  if (
+    p.includes("pharma") ||
+    p.includes("medical-devices") ||
+    p.includes("distributor-dealer")
+  ) {
+    return CLUSTERS.commercialB2B;
+  }
+  if (
+    p.includes("it-saas") ||
+    p.includes("saas") ||
+    p.includes("software") ||
+    p.includes("uat-") ||
+    p.includes("softex") ||
+    p.includes("cloud-reseller") ||
+    p.includes("staff-augmentation") ||
+    p.includes("erp-sap") ||
+    p.includes("white-label") ||
+    p.includes("source-code-escrow")
+  ) {
+    return CLUSTERS.itSaas;
   }
   return CLUSTERS.general;
 }

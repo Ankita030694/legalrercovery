@@ -1,12 +1,138 @@
 export interface SitemapItem {
   title: string;
   href: string;
-  category: "Dispute Notices" | "Services" | "Recovery Claims" | "Legal Notices" | "Guides" | "Locations" | "Company";
+  category: "Dispute Notices" | "Services" | "Recovery Claims" | "Legal Notices" | "Guides" | "Locations" | "Company" | "B2B & Institutional Recovery";
   date: string;
   timestamp: number;
 }
 
 export const ALL_SITEMAP_PAGES: SitemapItem[] = [
+  {
+    title: "Gold Loan Default & Auction Notice Compliance for NBFCs (RBI)",
+    href: "/gold-loan-default-auction-statutory-notice-rbi-compliance-nbfc",
+    category: "B2B & Institutional Recovery",
+    date: "14 Nov 2026",
+    timestamp: 1794661000000,
+  },
+  {
+    title: "Small-Ticket Digital Loan & BNPL Recovery Economics (₹5K–₹1L)",
+    href: "/small-ticket-digital-personal-loan-bnpl-recovery-economics",
+    category: "B2B & Institutional Recovery",
+    date: "14 Nov 2026",
+    timestamp: 1794661500000,
+  },
+  {
+    title: "RBI Recovery Agent Directions & Digital Lending Compliance for NBFCs",
+    href: "/rbi-recovery-agent-guidelines-compliant-legal-escalation-nbfc",
+    category: "B2B & Institutional Recovery",
+    date: "14 Nov 2026",
+    timestamp: 1794661000000,
+  },
+  {
+    title: "FMCG, Consumer Durables, D2C & Super-Stockist Debt Recovery",
+    href: "/industries/fmcg-distributors-super-stockist-recovery",
+    category: "B2B & Institutional Recovery",
+    date: "14 Nov 2026",
+    timestamp: 1794660500000,
+  },
+  {
+    title: "Bank Loan Recall cum Guarantee Invocation Notice Format",
+    href: "/templates/bank-loan-recall-cum-guarantee-invocation-notice",
+    category: "B2B & Institutional Recovery",
+    date: "14 Nov 2026",
+    timestamp: 1794659500000,
+  },
+  {
+    title: "Free Legal Letter & Notice Templates (India)",
+    href: "/templates",
+    category: "Legal Notices",
+    date: "14 Nov 2026",
+    timestamp: 1794659200000,
+  },
+  {
+    title: "SARFAESI, DRT Fee & Bank Recovery Forum Calculator India",
+    href: "/tools/sarfaesi-drt-bank-recovery-forum-calculator",
+    category: "B2B & Institutional Recovery",
+    date: "14 Nov 2026",
+    timestamp: 1794659000000,
+  },
+  {
+    title: "Hotels, Banquets & Corporate Travel (TMC) Debt Recovery",
+    href: "/industries/hotels-banquets-corporate-travel-recovery",
+    category: "B2B & Institutional Recovery",
+    date: "14 Nov 2026",
+    timestamp: 1794658000000,
+  },
+  {
+    title: "Advertising, Marketing, PR, Media & Event Debt Recovery",
+    href: "/industries/advertising-marketing-media-event-recovery",
+    category: "B2B & Institutional Recovery",
+    date: "14 Nov 2026",
+    timestamp: 1794657000000,
+  },
+  {
+    title: "Pharma, Medical Device & Surgical Distributor Debt Recovery",
+    href: "/industries/pharma-medical-devices-recovery",
+    category: "B2B & Institutional Recovery",
+    date: "14 Nov 2026",
+    timestamp: 1794656000000,
+  },
+  {
+    title: "Logistics, 3PL, Transporter & Freight Debt Recovery",
+    href: "/industries/logistics-freight-3pl-recovery",
+    category: "B2B & Institutional Recovery",
+    date: "14 Nov 2026",
+    timestamp: 1794652000000,
+  },
+  {
+    title: "Builders, Landlords & Co-Working Debt Recovery India",
+    href: "/industries/builders-commercial-landlords-coworking-recovery",
+    category: "B2B & Institutional Recovery",
+    date: "14 Nov 2026",
+    timestamp: 1794656000000,
+  },
+  {
+    title: "Manufacturing, Machinery & OEM Supplier Debt Recovery India",
+    href: "/industries/manufacturing-machinery-oem-recovery",
+    category: "B2B & Institutional Recovery",
+    date: "14 Nov 2026",
+    timestamp: 1794655000000,
+  },
+  {
+    title: "Construction, EPC & MEP Contractor Bill & Retention Recovery",
+    href: "/industries/construction-epc-contractor-recovery",
+    category: "B2B & Institutional Recovery",
+    date: "14 Nov 2026",
+    timestamp: 1794654000000,
+  },
+  {
+    title: "Hospital, Doctor & Healthcare RCM Legal Recovery Desk India",
+    href: "/industries/hospitals-doctors-healthcare-recovery",
+    category: "B2B & Institutional Recovery",
+    date: "14 Nov 2026",
+    timestamp: 1794653000000,
+  },
+  {
+    title: "IT Services, B2B SaaS & Cloud Vendor Debt Recovery India",
+    href: "/industries/it-saas-software-recovery",
+    category: "B2B & Institutional Recovery",
+    date: "14 Nov 2026",
+    timestamp: 1794652000000,
+  },
+  {
+    title: "NBFC, Fintech, HFC & MFI Bulk Legal Recovery Platform India",
+    href: "/industries/nbfc-fintech-loan-recovery",
+    category: "B2B & Institutional Recovery",
+    date: "14 Nov 2026",
+    timestamp: 1794660000000,
+  },
+  {
+    title: "Bank Loan & NPA Legal Recovery Platform India | Bulk Notices",
+    href: "/industries/banks-loan-recovery",
+    category: "B2B & Institutional Recovery",
+    date: "14 Nov 2026",
+    timestamp: 1794650000000,
+  },
   {
     title: "Third-Party Legal Recovery Services for Financial Institutions",
     href: "/third-party-legal-recovery-services-financial-institutions",

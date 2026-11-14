@@ -7,6 +7,7 @@ import { ArrowUpRight, Calendar, Search, X, Target } from 'lucide-react';
 
 const CATEGORIES = [
   'All',
+  'B2B & Institutional Recovery',
   'Dispute Notices',
   'Services',
   'Recovery Claims',

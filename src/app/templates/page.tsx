@@ -72,6 +72,7 @@ const GROUPS: { heading: string; items: Template[] }[] = [
   {
     heading: "Business and banking",
     items: [
+      { slug: "bank-loan-recall-cum-guarantee-invocation-notice", title: "Bank Loan Recall cum Guarantee Invocation Notice", desc: "Advocate-vetted bank loan recall and Section 128 personal/corporate guarantee invocation draft with an RBI-compliant uncapitalized penal charges schedule." },
       { slug: "msme-delayed-payment-demand-notice", title: "MSME Delayed Payment Demand Notice", desc: "A demand notice for Udyam-registered suppliers citing Sections 15–16 and 43B(h), with an interest schedule." },
       { slug: "wrong-account-transfer-refund-application", title: "Wrong Account Transfer Refund Application", desc: "Application formats in English and Hindi to reverse money sent to a wrong account or UPI ID." },
     ],

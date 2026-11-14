@@ -4519,5 +4519,806 @@
       "Legal Services Authorities Act, 1987 (Pre-Litigation Settlement & Lok Adalat Conciliation Mandate)"
     ],
     "builtAt": "2026-11-13T11:45:00.000Z"
+  },
+  {
+    "id": "B2B-001",
+    "url": "/industries/banks-loan-recovery",
+    "archetype": "IH1",
+    "h2s": [
+      "Why Indian Banks Need Multi-Track Pre-Litigation Legal Infrastructure",
+      "Multi-Track Bank Escalation Matrix by Ticket, Aging & Collateral",
+      "Pan-India Bank Recovery Architecture: SMA-1 to Decree Execution",
+      "Interactive Bank Recovery Playbooks by Portfolio Segment",
+      "How LegalRecovery Powers Zonal & Branch Bulk Notice Operations",
+      "Landmark Supreme Court Mandates Governing Bank Legal Recovery",
+      "Sub-₹20 Lakh DRT Gap & Provisioning Economics: Worked Bank Example",
+      "Complete Banking Recovery Directory: 17 Specialized Spokes & Tools",
+      "Live Institutional Banking Guides & Bulk Solutions on LegalRecovery",
+      "FAQs: Institutional Bank Loan & NPA Legal Recovery in India",
+      "Statutory Authorities, RBI Directions & Official Portals"
+    ],
+    "components": [
+      "Breadcrumbs",
+      "BanksHubTableOfContents",
+      "BanksHubScenarioTabs",
+      "BanksHubCTA",
+      "RelatedRecoveryGuides"
+    ],
+    "faqQuestions": [
+      "How can banks recover loans below the ₹20 Lakh DRT limit?",
+      "What causes SARFAESI Section 13(2) demand notices to fail in DRT?",
+      "Why send advocate cure notices during SMA-2 (61–90 DPD)?",
+      "Can Cooperative Banks and RRBs use SARFAESI and bulk notices?",
+      "How does LegalRecovery satisfy RBI, DPDP 2023, and BSA 2023 norms?",
+      "Why shouldn't banks merely mark guarantors as 'CC' on recall letters?",
+      "Can a bank test LegalRecovery with one overdue loan first?"
+    ],
+    "wordCount": 3219,
+    "artefacts": [
+      "Multi-Track Bank Escalation Matrix table by ticket tier, SMA/DPD bucket, collateral status, and statutory forum",
+      "Hand-authored SVG 5-stage Pan-India Bank Recovery Architecture diagram with mobile stacked cards fallback",
+      "Interactive 4-vertical Portfolio Scenario Explorer (BanksHubScenarioTabs)",
+      "Dual-Track B2B Conversion CTA (BanksHubCTA) pairing ₹999 single-case test with CSV bulk Representees desk",
+      "4 verified Supreme Court & Constitution Bench precedents (Pandurang Ganpati Chaugule, Perkins Eastman/CORE, SBI v. Arvindra Electronics, Syndicate Bank v. Channaveerappa Beleri)",
+      "Illustrative sub-₹20L & SMA-2 provisioning worked economics comparison",
+      "Complete 17-spoke downward Hub-and-Spoke directory (B2B-002 to B2B-018) + live B2B seed cross-links"
+    ],
+    "sources": [
+      "SARFAESI Act, 2002 (Sections 13(2), 13(3), 13(3A), 13(4), 14 & 31(i))",
+      "Recovery of Debts and Bankruptcy Act, 1993 (Sections 1(4) & 19)",
+      "Payment and Settlement Systems Act, 2007 (Section 25)",
+      "Negotiable Instruments Act, 1881 (Sections 138, 141 & 143A)",
+      "Legal Services Authorities Act, 1987 (Sections 19, 20(2) & 21)",
+      "Multi-State Co-operative Societies Act, 2002 (Section 84)",
+      "Insolvency and Bankruptcy Code, 2016 (Section 95 & Rule 7(1) Form B)",
+      "Bharatiya Sakshya Adhiniyam, 2023 (Section 63)",
+      "RBI Master Directions on IRACP, Penal Charges & Outsourcing"
+    ],
+    "builtAt": "2026-11-14T10:45:00+05:30"
+  },
+  {
+    "id": "B2B-019",
+    "url": "/industries/nbfc-fintech-loan-recovery",
+    "archetype": "IH1",
+    "h2s": [
+      "Why Mid-Market NBFCs & Fintechs Replace Collection Calls With Law",
+      "NBFC, Fintech, HFC & MFI Escalation Matrix Across Loan Books",
+      "Digital e-NACH & SARFAESI Recovery Pipeline for Non-Bank Lenders",
+      "Interactive NBFC & Fintech Recovery Tracks by Lending Vertical",
+      "Inside the Loan-Recovery CSV Engine & Tri-Channel Dispatch Desk",
+      "Binding Supreme Court & RBI Mandates Shaping Non-Bank Recovery",
+      "Unit-Economics Math: ₹18,000 BNPL Default vs ₹12 Lakh LAP Loan",
+      "Explore All 17 IND-02 NBFC, Fintech, HFC & MFI Spokes & Tools",
+      "Existing NBFC & Bulk Dispatch Guides on LegalRecovery.in",
+      "FAQs: NBFC, Digital Lending, HFC & MFI Legal Recovery in India",
+      "Statutory Authorities, RBI Directions & NPCI/CERSAI Portals"
+    ],
+    "components": [
+      "Breadcrumbs",
+      "NbfcHubTableOfContents",
+      "NbfcHubScenarioTabs",
+      "NbfcHubCTA",
+      "RelatedRecoveryGuides"
+    ],
+    "faqQuestions": [
+      "Can every NBFC issue a SARFAESI Section 13(2) demand notice to recover secured LAP defaults?",
+      "Why does a Housing Finance Company (HFC) enjoy a lower SARFAESI threshold than an NBFC?",
+      "What makes Section 25 of the Payment and Settlement Systems Act, 2007 vital for Fintech & NBFC e-NACH bounces?",
+      "How does an advocate-backed bulk notice desk reduce RBI Ombudsman & SRO compliance risk compared to telecalling agencies?",
+      "How should co-lending partners (80:20) and LSPs manage FLDG / DLG 120-day legal recovery clocks?",
+      "Are click-wrap OTP digital loan agreements and unilateral fintech arbitration clauses enforceable in 2026?",
+      "How can an NBFC validate LegalRecovery.in before uploading 5,000 CSV borrower rows?"
+    ],
+    "wordCount": 2850,
+    "artefacts": [
+      "8-vertical NBFC, Fintech, HFC & MFI Escalation Matrix table with MoF SARFAESI ₹100Cr/₹20L vs HFC ₹1L thresholds",
+      "Hand-authored SVG 4-stage Digital e-NACH & SARFAESI Recovery Pipeline diagram with mobile stacked cards",
+      "Interactive 4-tab Vertical Explorer (NbfcHubScenarioTabs) covering Digital/BNPL, Gold/CV/Non-SARFAESI LAP, Co-Lending/DLG/SCF/SME & HFC/MFI",
+      "Dual-Track B2B Conversion CTA (NbfcHubCTA) pairing ₹999 live single-loan test with CSV batch & Representees vault",
+      "4 verified Apex & Statutory Precedents (CORE 2024 & Perkins Eastman, Suman Sethi & Sripati Singh, Stamp Act 7-Judge Bench & IT Act s.10A, Prakash Kaur & Contract Act s.176)",
+      "Illustrative unit-economics math comparing ₹18,000 BNPL default vs ₹12 Lakh non-notified NBFC LAP account",
+      "Complete 17-spoke IND-02 directory (B2B-020 to B2B-036) plus 10 existing live NBFC/B2B cross-links"
+    ],
+    "sources": [
+      "Payment and Settlement Systems Act, 2007 (Section 25 & Section 28)",
+      "SARFAESI Act, 2002 & MoF NBFC Notifications S.O. 856(E) / S.O. 652(E) (₹100 Cr Asset / ₹20L Debt vs HFC ₹1L Threshold)",
+      "Indian Contract Act, 1872 (Section 176 Gold Pledge Sale Notice)",
+      "Motor Vehicles Act, 1988 (Section 51(5) Form 36 Hypothecation)",
+      "Factoring Regulation Act, 2011 (Sections 8 & 19) & CERSAI",
+      "Arbitration and Conciliation Act, 1996 (Sections 9, 12(5) & 17)",
+      "Bharatiya Sakshya Adhiniyam, 2023 (Section 63) & Information Technology Act, 2000 (Section 10A)",
+      "RBI Master Directions on Digital Lending, Default Loss Guarantee (5% / 120d), Fair Practices Code, Microfinance & CICRA Alerts"
+    ],
+    "builtAt": "2026-11-14T11:00:00+05:30"
+  },
+  {
+    "id": "B2B-037",
+    "url": "/industries/hospitals-doctors-healthcare-recovery",
+    "archetype": "IH1",
+    "h2s": [
+      "Why Healthcare Providers Cannot Rely on Informal Billing Follow-Ups",
+      "Healthcare RCM Escalation Matrix Across 8 Receivable Categories",
+      "Article-21 & NMC-Compliant Recovery Pipeline: Admission to Realization",
+      "Interactive Recovery Playbooks Across 4 Healthcare Segments",
+      "Advocate-Led Discharge Desk, TPA Batch & Representee Vault",
+      "Binding Constitutional, IRDAI & Statutory Precedents for Hospitals",
+      "Hospital RCM Unit Economics: ICU Undertaking vs Aged TPA Claims",
+      "Complete IND-03 Directory: All 15 Healthcare Spokes, Tools & Templates",
+      "Foundational Statutory Guides & Bulk Recovery Pages on LegalRecovery",
+      "FAQs: Hospital, Doctor, TPA & Healthcare Debt Recovery in India",
+      "Statutory Authorities, IRDAI, CGHS & Court Reference Portals"
+    ],
+    "components": [
+      "Breadcrumbs",
+      "HospitalsHubTableOfContents",
+      "HospitalsHubScenarioTabs",
+      "HospitalsHubCTA",
+      "RelatedRecoveryGuides"
+    ],
+    "faqQuestions": [
+      "Can a private hospital legally hold a patient or mortal remains until unpaid ICU bills are cleared?",
+      "What if a relative issues a cheque at discharge to take the patient home and stops payment the next morning?",
+      "How can network hospitals recover arbitrary TPA deductions and delayed cashless payouts?",
+      "How do empanelled hospitals recover crores stuck in CGHS, ECHS, ESIC, or Ayushman Bharat (PM-JAY) arrears?",
+      "Can visiting consultant doctors and surgeons recover unpaid hospital payouts through the Labour Commissioner?",
+      "How can IVF, dental, or cosmetic clinics respond when defaulting patients threaten defamatory viral videos?",
+      "Can a hospital or diagnostic chain test LegalRecovery.in on one unpaid case before onboarding CSV batches?"
+    ],
+    "wordCount": 2850,
+    "artefacts": [
+      "8-category Healthcare RCM Escalation Matrix table covering post-discharge ICU, relative s.138 cheques, TPA short-settlements, CGHS/ECHS/PM-JAY, corporate OHC, PCC franchises, IVF/dental & 194J/fleet",
+      "Hand-authored SVG 4-stage Article-21 & NMC-Compliant Recovery Pipeline diagram with mobile stacked cards",
+      "Interactive 4-tab Healthcare Segment Explorer (HospitalsHubScenarioTabs)",
+      "Dual-Track B2B Conversion CTA (HospitalsHubCTA) pairing ₹999 single-case pilot with CSV batch & Representees vault",
+      "4 verified Constitutional, IRDAI & Statutory Precedents (Article 21 non-detention directives, ICDS Ltd. v. Beena Shabeer, IRDAI Bank Rate + 2% Master Circular, ABL International & CPC s.80)",
+      "Illustrative Hospital RCM unit-economics model comparing ₹3.8L ICU post-discharge balance vs ₹48L aged TPA cashless ledger",
+      "Complete 15-spoke IND-03 downward directory (B2B-038 to B2B-052) plus 10 existing live statutory & bulk cross-links"
+    ],
+    "sources": [
+      "Constitution of India (Article 21 & Article 226 Writ Mandamus)",
+      "Indian Contract Act, 1872 (Sections 73 & 126)",
+      "Negotiable Instruments Act, 1881 (Sections 4, 138 & ICDS Ltd. v. Beena Shabeer)",
+      "IRDAI Master Circular on Health Insurance Business (Bank Rate + 2% Penal Interest)",
+      "Code of Civil Procedure, 1908 (Section 80 & Order XXXVII)",
+      "Commercial Courts Act, 2015 (Sections 2(1)(c)(ix), 2(1)(c)(xx) & 12A)",
+      "Income Tax Act, 1961 (Section 194J / Form 26AS) & Bharatiya Sakshya Adhiniyam, 2023 (Section 63)",
+      "Bharatiya Nyaya Sanhita (Wrongful Confinement, s.316 & Defamation/Extortion) & Trade Marks Act, 1999 (Section 29)"
+    ],
+    "builtAt": "2026-11-14T11:11:00+05:30"
+  },
+  {
+    "id": "B2B-089",
+    "url": "/industries/construction-epc-contractor-recovery",
+    "archetype": "IH1",
+    "h2s": [
+      "Why Construction & EPC Dues Stall Beyond Standard Invoices",
+      "Construction Claim Escalation Matrix by Contract & Ticket",
+      "EPC Recovery Rail: From Joint MB & Notice to s.36 Decree",
+      "Interactive Playbooks Across 4 Infrastructure Claim Tracks",
+      "Pre-Arbitration Claim Crystallization & Multi-Site CSV Desk",
+      "Apex Court Precedents Protecting Construction Contractors",
+      "Worked EPC Claim Math: ₹2.40 Cr Final Bill, Retention & LD",
+      "IND-07 Directory: All 11 Construction Spokes, Tools & Packs",
+      "Live Contractor, Subcontractor & Govt Notice Guides",
+      "FAQs: Construction, EPC & MEP Contractor Debt Recovery",
+      "Statutory Authorities, Acts & Official Construction Portals"
+    ],
+    "components": [
+      "Breadcrumbs",
+      "ConstructionHubTableOfContents",
+      "ConstructionHubScenarioTabs",
+      "ConstructionHubCTA",
+      "RelatedRecoveryGuides"
+    ],
+    "faqQuestions": [
+      "Can a contractor recover an unpaid RA bill if the developer or PMC refuses to sign the Measurement Book?",
+      "If we signed a 'No-Claim Certificate' under pressure to get 60% of our Final Bill, are our remaining claims dead?",
+      "Why do High Courts quash MSME Samadhaan awards on EPC and construction 'Works Contracts'?",
+      "How do we recover 5%–10% retention money if the builder says Occupancy Certificate (OC) is still pending?",
+      "How can a contractor protect Performance Bank Guarantees (PBGs) before demanding overdue payments?",
+      "When must an EPC contractor serve a Section 80 CPC notice vs an Article 226 Writ against NHAI, CPWD, or PWD?",
+      "Can an EPC firm test LegalRecovery.in on one stuck bill before onboarding multiple project sites?"
+    ],
+    "wordCount": 2750,
+    "artefacts": [
+      "7-track Construction Claim Escalation Matrix table by ticket, statutory lever, pre-tier window, and forum",
+      "Hand-authored SVG 5-stage EPC Recovery Rail diagram (Site Audit to s.36 Execution) with mobile stacked cards fallback",
+      "Interactive 4-tab Infrastructure Claim Explorer (ConstructionHubScenarioTabs) covering RA Bills/MB/NDC, NHAI/CPWD/PWD/JJM, Works-Contract MSME/Subcontractors, and DLP/LD/PBG Shield",
+      "Dual-Track B2B Conversion CTA (ConstructionHubCTA) pairing ₹999 live single-claim pilot with multi-site CSV & Representees desk",
+      "4 verified Supreme Court precedents (R.L. Kalathia & Ambica Construction, Surya Constructions, Kailash Nath v. DDA, BSNL v. Nortel & Ircon v. Vinay Heavy Equipments)",
+      "Worked ₹2.40 Cr Final Bill + ₹90L Retention + ₹24L LD claim crystallization math",
+      "Complete 11-spoke IND-07 directory (B2B-090 to B2B-100) + 8 live cross-linked contractor/CPC/MSME guides"
+    ],
+    "sources": [
+      "Arbitration and Conciliation Act, 1996 (Sections 9, 11, 21, 29A & 36)",
+      "Commercial Courts Act, 2015 (Section 2(1)(c)(vi), Section 12A & Order XIII-A)",
+      "Indian Contract Act, 1872 (Sections 23, 46, 55, 70, 73 & 74)",
+      "Code of Civil Procedure, 1908 (Section 80 & Order XXXVII)",
+      "Micro, Small and Medium Enterprises Development (MSMED) Act, 2006 (Sections 15–19)",
+      "Bharatiya Sakshya Adhiniyam, 2023 (Section 63)",
+      "Supreme Court of India Judgments (R.L. Kalathia, Surya Constructions, Kailash Nath, Nortel, Ircon)"
+    ],
+    "builtAt": "2026-11-14T11:12:00+05:30"
+  },
+  {
+    "id": "B2B-113",
+    "url": "/industries/logistics-freight-3pl-recovery",
+    "archetype": "IH1",
+    "h2s": [
+      "Why Logistics, 3PL & CHA Creditors Lose Capital to Freight Stalls",
+      "Freight, Detention & 3PL Recovery Matrix by Ticket & Track",
+      "48-Hour Carrier Lien & POD-to-Decree Recovery Architecture",
+      "Interactive Logistics Recovery Playbooks by Operator Segment",
+      "Bulk Bilty Ledger CSV Engine & Tri-Channel Dispatch Workflow",
+      "Binding Statutory & Supreme Court Rules for Carrier Recovery",
+      "Worked Freight Math: ₹8.4L Halting vs ₹22L CHA Duty Advance",
+      "Complete IND-09 Logistics & 3PL Recovery Spoke Directory",
+      "Live Commercial Invoice, Order 37 & Bulk Dispatch Guides",
+      "FAQs: Transporter, 3PL, CHA & Reefer Debt Recovery in India",
+      "Statutory Authorities, Maritime & Road Transport Portals"
+    ],
+    "components": [
+      "Breadcrumbs",
+      "LogisticsHubTableOfContents",
+      "LogisticsHubScenarioTabs",
+      "LogisticsHubCTA",
+      "RelatedRecoveryGuides"
+    ],
+    "faqQuestions": [
+      "Can an Indian transporter legally hold cargo in transit for unpaid past freight bills?",
+      "How can fleet owners prove truck halting or detention when factory security refuses to stamp the POD?",
+      "What legal remedy protects CHAs and freight forwarders who advanced ICEGATE customs duty or CFS charges?",
+      "Can a corporate shipper deduct unverified 'transit shortage' or 'spoilage' from admitted running freight bills?",
+      "How can a 3PL warehouse dispose of dead stock abandoned by a defaulting D2C brand?",
+      "Do Udyam-registered transporters, 3PLs, and fleet owners qualify for MSME Section 43B(h) and 3x interest?",
+      "Can a transport company or courier aggregator test LegalRecovery with one overdue Bilty before bulk CSV upload?"
+    ],
+    "wordCount": 2850,
+    "artefacts": [
+      "7-segment Logistics, Detention & 3PL Escalation Matrix table covering FTL/PTL, Carrier Lien, Halting, CHA ICEGATE, 3PL Auction, Debit Notes & Courier Negative Wallets",
+      "Hand-authored SVG 5-stage 48-Hour Carrier Lien & POD-to-Decree Recovery Architecture diagram with mobile stacked cards",
+      "Interactive 4-tab Operator Explorer (LogisticsHubScenarioTabs) across FTL/PTL Carrier Lien, Halting/Reefers, CHAs/3PLs & Dedicated/Courier Aggregators",
+      "Dual-Track B2B Conversion CTA (LogisticsHubCTA) pairing ₹999 live consignment test with CSV bulk Representees desk",
+      "4 verified statutory & Supreme Court mandates (Contract Act s.170-171 Particular vs General Lien, Union of India v. Raman Iron Foundry, Contract Act s.222 CHA Indemnity, BSA 2023 s.63 Telemetry)",
+      "Worked financial comparison: ₹8.4L FTL trailer detention + shortage debit vs ₹22L CHA ICEGATE duty advance",
+      "Complete 10-spoke IND-09 downward Hub-and-Spoke directory (B2B-114 to B2B-123) + 8 live B2B/invoice/MSME seed cross-links"
+    ],
+    "sources": [
+      "Carriage by Road Act, 2007 (Sections 10, 12 & 16)",
+      "Indian Contract Act, 1872 (Sections 73, 74, 170, 171 & 222)",
+      "Union of India v. Raman Iron Foundry (Supreme Court of India, 1974)",
+      "Commercial Courts Act, 2015 (Section 2(1)(c)(v) & Section 12A) & Order XXXVII CPC",
+      "Bharatiya Sakshya Adhiniyam, 2023 (Section 63 Electronic Evidence)",
+      "MSMED Act, 2006 (Sections 15–16) & Income-tax Act Section 43B(h)",
+      "Information Technology Act, 2000 (Section 10A Clickwrap Terms)"
+    ],
+    "builtAt": "2026-11-14T11:25:00+05:30"
+  },
+  {
+    "id": "B2B-053",
+    "url": "/industries/pharma-medical-devices-recovery",
+    "archetype": "IH1",
+    "h2s": [
+      "Why Pharma & MedTech Creditors Lose Margin to Unbilled Credit",
+      "Life-Sciences Escalation Matrix: Chemist Ledgers to CDMO Claims",
+      "Batch-to-Bank Workflow: 5-Stage Pharma & Implant Recovery Rail",
+      "Interactive Sector Playbooks: Consignments, CDMO, Stockists & Tenders",
+      "Multi-Invoice Ledger Engine: Recover Before Drugs Cross Expiry",
+      "Apex Rulings & Statutory Directives Powering Pharma Recovery",
+      "Worked Economics: Consignment Stents vs Section 43B(h) MSME Claims",
+      "Complete IND-04 Directory: 11 Pharma & MedTech Spokes & Template",
+      "Live Commercial, MSME & Cheque-Bounce Guides for Life Sciences",
+      "FAQs: Pharma Stockist, Implant & Medical Device Debt Recovery",
+      "Statutory Authorities, Drug Laws & Regulatory Portals Cited"
+    ],
+    "components": [
+      "Breadcrumbs",
+      "PharmaHubTableOfContents",
+      "PharmaHubScenarioTabs",
+      "PharmaHubCTA",
+      "RelatedRecoveryGuides"
+    ],
+    "faqQuestions": [
+      "How can an implant distributor recover payment if a hospital used consignment stents or ortho kits in OT without issuing a PO?",
+      "Can a defaulting pharma stockist deduct arbitrary 'expired and breakage' credit notes from overdue invoices?",
+      "How do Chandigarh, Panchkula, Ambala, or Gujarat PCD pharma companies recover dues from outstation district franchisees without traveling to remote courts?",
+      "What legal precaution is mandatory before repossessing an unpaid Ultrasound machine from a defaulting diagnostic center?",
+      "How does Section 43B(h) help surgical disposable and CDMO manufacturers recover money from profitable corporate hospital chains?",
+      "What can a third-party CDMO manufacturer do when a PCD marketing company refuses to pay the 70% balance or lift custom-printed batches?",
+      "Can pure pharma wholesalers or traders use MSME Samadhaan and Section 43B(h), or only manufacturers?"
+    ],
+    "wordCount": 2950,
+    "artefacts": [
+      "7-track Life-Sciences Escalation Matrix table covering Chemist Ledgers, Consignment Implants, PCD Franchise PDCs, Capital Equipment, Reagent Rentals, CDMO Batches & Govt Tenders",
+      "Hand-authored SVG 5-stage Batch-to-Bank Recovery Rail (DC/UDI Audit to Sec 138 / Order 37 / MSEFC Execution) with mobile stacked cards",
+      "Interactive 4-tab Sector Playbooks explorer (PharmaHubScenarioTabs) covering Cath-Lab Consignments, Stockist Expiry/PCD, Medical Equipment/Reagent-Rental, and CDMO/API/Govt Tenders",
+      "Dual-Track B2B Conversion CTA (PharmaHubCTA) pairing ₹999 single-invoice test with multi-invoice CSV bulk ledger dispatch",
+      "4 verified Supreme Court mandates (Sripati Singh, Silpi Industries, Patil Automation, Mobilox + Aneeta Hada) & Sale of Goods s.24/s.44 rules",
+      "Worked financial comparison: ₹18.40L Unbilled Cath-Lab Consignment Stents vs ₹24.00L MSME s.43B(h) & 3x RBI Compound Interest Claim",
+      "Complete 11-spoke IND-04 directory (B2B-054 to B2B-064) plus 8 live B2B/MSME/Cheque/Bulk cross-links"
+    ],
+    "sources": [
+      "Sale of Goods Act, 1930 (Sections 24, 25, 42, 44 & 55)",
+      "MSMED Act, 2006 (Sections 15–19) & Income-tax Act Section 43B(h)",
+      "Negotiable Instruments Act, 1881 (Sections 20, 138, 141, 142(2) & 143A)",
+      "CGST Act Section 34 & CBIC Circular No. 72/46/2018-GST",
+      "Code of Civil Procedure, 1908 (Order XXXVII & Order XXXVIII Rule 5) & Commercial Courts Act, 2015 (Section 12A)",
+      "Bharatiya Sakshya Adhiniyam, 2023 (Section 63) & CDSCO / Drugs and Cosmetics Rules (Form 20B/21B)"
+    ],
+    "builtAt": "2026-11-14T11:37:00+05:30"
+  },
+  {
+    "id": "B2B-101",
+    "url": "/industries/builders-commercial-landlords-coworking-recovery",
+    "archetype": "IH1",
+    "h2s": [
+      "Why Builders, Commercial Lessors & Co-Working Teams Lose Recovery",
+      "Commercial Asset & Promoter Escalation Matrix Across 6 Formats",
+      "4-Stage Property, Lease & License Enforcement Pipeline",
+      "Explore Real Estate, Mall, Warehouse & Flex-Space Playbooks",
+      "RERA Cure Notices, Commercial Court s.2(1)(c)(vii) & Bulk CSV",
+      "Key Supreme Court, High Court & CBDT Rules for Property Creditors",
+      "Worked Recovery Math: ₹45L Lock-In Breach vs ₹18L RERA Milestone",
+      "Complete IND-08 Directory: All 11 Spokes & Notice Template",
+      "Live Tenant, Maintenance & Bulk Recovery Links on LegalRecovery",
+      "FAQs: RERA Builder Claims, Commercial Lock-In & Flex Defaults",
+      "RERA Authorities, Tax Codes & Commercial Court References"
+    ],
+    "components": [
+      "Breadcrumbs",
+      "BuildersHubTableOfContents",
+      "BuildersHubScenarioTabs",
+      "BuildersHubCTA",
+      "RelatedRecoveryGuides"
+    ],
+    "faqQuestions": [
+      "Can a real estate builder cancel an allotment if an investor-allottee stops paying construction-linked RERA milestones?",
+      "Can a commercial landlord recover the full unexpired 3-year lock-in rent if a corporate tenant vacates early?",
+      "How can co-working and managed-office operators evict a defaulting startup without a multi-year rent suit?",
+      "What can a landlord do if a commercial tenant deducts 10% TDS under Section 194-I but fails to deposit it in Form 26AS?",
+      "Can mall or IT-park facility managers recover CAM charges when an investor keeps a commercial shop or office locked and vacant?",
+      "Are commercial landlord-tenant disputes arbitrable in India after the Supreme Court ruling in Vidya Drolia?",
+      "How does Order XV-A CPC help warehouse and commercial landlords against tenants who stop paying rent during court proceedings?"
+    ],
+    "wordCount": 2950,
+    "artefacts": [
+      "6-Format Commercial Asset & Promoter Escalation Matrix table (RERA Allottee, Grade-A Office, Co-Working, Mall/Food Court, Warehouse/Shed, JDA)",
+      "Hand-authored SVG 4-stage Property, Lease & License Enforcement Pipeline diagram with mobile stacked cards fallback",
+      "Interactive 4-tab Sector Playbook Explorer (BuildersHubScenarioTabs)",
+      "Dual-Track B2B Conversion CTA (BuildersHubCTA) pairing ₹999 live single-case pilot with bulk CSV & Multi-SPV Representee Vault",
+      "4 verified Apex Court, High Court & Statutory Mandates (Vidya Drolia, Contract s.74 Tower Vision/Deepak Chopra, Income Tax s.194-I/205/276B Yashpal Sahni, RERA s.11(5) & s.19(6)-(10))",
+      "Worked Recovery Math comparing ₹45L commercial lock-in + ₹36L CapEx breach vs ₹18L RERA construction milestone default",
+      "Complete 11-spoke IND-08 downward directory (B2B-102 to B2B-112) + 8 live tenant, maintenance, calculator & bulk recovery links"
+    ],
+    "sources": [
+      "Real Estate (Regulation and Development) Act, 2016 (Sections 4(2)(l)(D), 11(5), 19(6), 19(7) & 19(10))",
+      "Transfer of Property Act, 1882 (Sections 106 & 108(m))",
+      "Commercial Courts Act, 2015 (Sections 2(1)(c)(vii), 2(1)(c)(xi) & 12A)",
+      "Indian Contract Act, 1872 (Section 74) & Indian Easements Act, 1882 (Sections 52–64)",
+      "Code of Civil Procedure, 1908 (Order XV-A, Order XX Rule 12 & Order XXXVII)",
+      "Income Tax Act, 1961 (Sections 194-I, 205, 271C & 276B)",
+      "Bharatiya Sakshya Adhiniyam, 2023 (Section 63)",
+      "Supreme Court in Vidya Drolia v. Durga Trading Corporation (2021)"
+    ],
+    "builtAt": "2026-11-14T11:25:00+05:30"
+  },
+  {
+    "id": "B2B-077",
+    "url": "/industries/manufacturing-machinery-oem-recovery",
+    "archetype": "IH1",
+    "h2s": [
+      "Why Indian Manufacturers Lose Margin to Retention & Debit Notes",
+      "Industrial & OEM Recovery Matrix by Claim Type & Forum",
+      "Factory Invoice to Decree: 5-Stage B2B Recovery Workflow",
+      "Interactive Recovery Playbooks Across 4 Factory Verticals",
+      "Multi-Invoice Ledger Engine & Representee Group Billing Desk",
+      "Key Statutory Rules & Judicial Precedents for Suppliers",
+      "Worked Math: 10% Retention & Section 43B(h) Tax Leverage",
+      "All 11 Manufacturing, Machinery & OEM Spokes & Templates",
+      "Live MSME, Order 37 & Commercial Recovery Guides",
+      "FAQs: Manufacturing, Machinery & OEM Debt Recovery",
+      "Statutes, Tax Circulars & Official Filing Portals"
+    ],
+    "components": [
+      "Breadcrumbs",
+      "ManufacturingHubTableOfContents",
+      "ManufacturingHubScenarioTabs",
+      "ManufacturingHubCTA",
+      "RelatedRecoveryGuides"
+    ],
+    "faqQuestions": [
+      "How can a machinery maker recover the last 10–20% balance when the buyer already runs the machine?",
+      "Can a Medium Enterprise on Udyam file a delayed-payment claim on MSME Samadhaan?",
+      "What happens if an auto-ancillary supplier exercises a lien on buyer-owned dies or job-work goods?",
+      "How does Section 43B(h) of the Income Tax Act help Micro and Small factories collect before March 31?",
+      "Can a manufacturer prove delivery in an Order 37 summary suit if the signed GRN challan was lost?",
+      "What if an EPC or industrial buyer cancels a bespoke machinery Purchase Order mid-fabrication?",
+      "Can our factory test LegalRecovery.in on one stuck invoice before uploading an entire dealer ledger?"
+    ],
+    "wordCount": 3100,
+    "artefacts": [
+      "8-category Manufacturing, Machinery & OEM Recovery Matrix table across commissioning retention, OEM debit notes, cancelled tooling, CNC job-work, dealer ledgers, Medium Enterprises, export machinery & PSU EMD",
+      "Hand-authored SVG 5-stage Factory Invoice to Decree pipeline diagram with mobile stacked cards",
+      "Interactive 4-tab Factory Vertical Explorer (ManufacturingHubScenarioTabs) covering Capital Goods & SPM, Auto-Ancillary & Tooling, Medium Units & Dealers, and Job-Work & Cancelled POs",
+      "Dual-Track B2B Conversion CTA (ManufacturingHubCTA) pairing ₹999 single-invoice test with CSV batch & Representees group-entity desk",
+      "4 verified Statutory & Judicial Precedents (Sale of Goods Act s.42 deemed acceptance, Silpi Industries & Gujarat State Civil Supplies MSMED Act supremacy, Section 43B(h) IT Act tax disallowance, Contract Act s.170/171 tooling lien vs wrongful detention)",
+      "Worked Financial Ledger comparing ₹18L withheld 10% commissioning retention + Section 43B(h) tax impact + Section 16 3x RBI monthly compound interest",
+      "Complete 11-spoke IND-06 downward directory (B2B-078 to B2B-088) plus 10 existing live MSME, Order 37 & commercial cross-links"
+    ],
+    "sources": [
+      "MSMED Act, 2006 (Sections 15, 16, 17, 18 & 24) & Silpi Industries / Gujarat State Civil Supplies",
+      "Income Tax Act, 1961 (Section 43B(h) Micro & Small Enterprise Payment Disallowance)",
+      "Sale of Goods Act, 1930 (Sections 32, 42, 46, 55 & 61)",
+      "Indian Contract Act, 1872 (Sections 73, 170 Bailee Lien & 171 General Lien)",
+      "Code of Civil Procedure, 1908 (Order XXXVII Summary Suits & Section 80 Notice)",
+      "Commercial Courts Act, 2015 (Sections 2(1)(c)(i), 2(1)(c)(xviii) & Section 12A Pre-Institution Mediation)",
+      "CGST Act, 2017 (Sections 16(2), 34 Credit/Debit Notes & Rule 138 e-Way Bill)",
+      "Bharatiya Sakshya Adhiniyam, 2023 (Section 63) & Negotiable Instruments Act, 1881 (Section 138)"
+    ],
+    "builtAt": "2026-11-14T11:55:00+05:30"
+  },
+  {
+    "id": "B2B-146",
+    "url": "/industries/advertising-marketing-media-event-recovery",
+    "archetype": "IH1",
+    "h2s": [
+      "Why Creative, Media & Event Firms Lose Margin to Brand Defaults",
+      "7-Track Agency, Media Buying & Event Recovery Escalation Matrix",
+      "7-Day Copyright Takedown & RO Enforcement Workflow Architecture",
+      "Interactive Sector Playbooks: Digital, Media, Events & Film",
+      "Multi-Client Retainer, RO & Representee Dispatch Infrastructure",
+      "Binding Copyright, Contract & INS Rules for Agency Creditors",
+      "Worked Claim Math: ₹18L Media-Spend RO vs ₹6L Retainer & IP",
+      "Complete IND-12 Directory: All 10 Spokes & Takedown Notice",
+      "Live Copyright, Freelancer & Commercial Invoice Recovery Guides",
+      "FAQs: Ad Agency, Media Buying, PR, Film & Event Dues Recovery",
+      "Copyright Act, INS Rules, MSMED & Commercial Court References"
+    ],
+    "components": [
+      "Breadcrumbs",
+      "AgencyMediaHubTableOfContents",
+      "AgencyMediaHubScenarioTabs",
+      "AgencyMediaHubCTA",
+      "RelatedRecoveryGuides"
+    ],
+    "faqQuestions": [
+      "Can a brand refuse to pay our digital marketing or SEO agency retainer citing 'low ROAS' or 'fewer sales leads'?",
+      "Our media buying agency paid ₹40 Lakh to Meta, Google, or TV networks on our agency credit line against a signed RO—how do we recover fast?",
+      "Can an agency take down live Meta ads, YouTube videos, or website creatives if a client defaults on invoices?",
+      "How do exhibition stall fabricators and event agencies prove last-minute WhatsApp additions made during a live expo?",
+      "A brand rejected our RFP pitch deck and then launched our exact campaign through an in-house team—what legal remedy exists?",
+      "Do digital marketing agencies, PR firms, production houses, and event companies qualify for MSME Section 43B(h) and 3x interest?",
+      "Can our agency or media network test LegalRecovery.in on one unpaid client before uploading multiple overdue accounts?"
+    ],
+    "wordCount": 2900,
+    "artefacts": [
+      "7-Track Agency, Media Buying & Event Recovery Escalation Matrix table covering digital retainers, media buying ROs, events/exhibition stalls, ad-film/OTT, OOH hoardings, PR/talent whitelisting & sponsorships/pitch theft",
+      "Hand-authored SVG 5-stage 7-Day Copyright Takedown & RO Enforcement workflow diagram with mobile stacked cards",
+      "Interactive 4-tab Sector Playbook Explorer (AgencyMediaHubScenarioTabs) covering Retainers & 'Low ROAS' Excuse, Media Buying & OOH Advances, Events/Stalls/Sponsorships, and Ad-Film/Talent IP/Pitch Theft",
+      "Dual-Track B2B Conversion CTA (AgencyMediaHubCTA) pairing ₹999 live single-case pilot with bulk CSV & multi-entity Representees desk",
+      "4 verified Statutory & Judicial Precedents (Copyright Act s.17/19/30A/51, Copyright Act s.2(uu)/17/38/38A, Zee Telefilms v. Sundial Communications & R.G. Anand v. Delux Films, Contract Act s.222 + Order XXXVII CPC + MSMED s.15-18/s.43B(h))",
+      "Worked Claim Math comparing ₹18L Media-Spend RO + 6% Commission (Contract s.222 + Order 37) vs ₹6L Udyam Retainer (MSMED s.16 + s.43B(h) + 7-Day Copyright Takedown)",
+      "Complete 10-spoke IND-12 downward directory (B2B-147 to B2B-156) plus 8 live Copyright, Project Payment, MSME & Bulk Recovery seed cross-links"
+    ],
+    "sources": [
+      "Copyright Act, 1957 (Sections 2(uu), 17, 19, 30A, 38A, 51 & 55)",
+      "Indian Contract Act, 1872 (Sections 55, 73, 74 & 222 Agent Indemnity)",
+      "MSMED Act, 2006 (Sections 15–18) & Income-tax Act Section 43B(h)",
+      "Code of Civil Procedure, 1908 (Order XXXVII & Order XXXVIII Rule 5)",
+      "Commercial Courts Act, 2015 (Section 2(1)(c)(xvii) & Section 12A)",
+      "Bharatiya Sakshya Adhiniyam, 2023 (Section 63 Electronic Evidence)",
+      "Information Technology (Intermediary Guidelines & Digital Media Ethics Code) Rules",
+      "Supreme Court in R.G. Anand v. Delux Films (1978) & Bombay High Court in Zee Telefilms v. Sundial Communications (2003)"
+    ],
+    "builtAt": "2026-11-14T12:15:00+05:30"
+  },
+  {
+    "id": "B2B-190",
+    "url": "/industries/hotels-banquets-corporate-travel-recovery",
+    "archetype": "IH1",
+    "h2s": [
+      "Why Hotels, Banquets & IATA Agents Bleed Corporate Credit",
+      "8-Track Hospitality, TMC, Banquet & Catering Recovery Matrix",
+      "7-Day IATA BSP & Guest-Folio to Decree Enforcement Pipeline",
+      "Interactive Playbooks: BTC Hotels, TMCs, Banquets & Caterers",
+      "City-Ledger Folio, Flown-PNR & Multi-Property Dispatch Desk",
+      "Binding Statutory & Judicial Rules for Hospitality Creditors",
+      "Worked Ledger Math: ₹35L Flown Air Tickets vs ₹14L MICE Block",
+      "Complete IND-16 Directory: All 9 Hospitality & Travel Spokes",
+      "Live Cheque-Bounce, Order 37, MSME & Bulk Recovery Resources",
+      "FAQs: Hotel BTC, IATA Travel Credit, Banquet & MICE Recovery",
+      "Hospitality Statutes, Aviation Logs & Official Filing Portals"
+    ],
+    "components": [
+      "Breadcrumbs",
+      "HotelsTravelHubTableOfContents",
+      "HotelsTravelHubScenarioTabs",
+      "HotelsTravelHubCTA",
+      "RelatedRecoveryGuides"
+    ],
+    "faqQuestions": [
+      "How can a business hotel recover an aged 120+ day 'Bill-to-Company' (BTC) invoice if the corporate says the employee left or F&B was unauthorized?",
+      "Our IATA travel agency (TMC) faces weekly BSP auto-debits while a corporate client defaulted on ₹35 Lakh of flown tickets—what is the fastest legal action?",
+      "What can a wedding venue or resort do if the host hands over an extra-pax balance cheque at 3 AM checkout and issues 'Stop Payment' the next morning?",
+      "How do convention hotels enforce MICE room-block attrition or last-minute offsite cancellation penalties under Section 74 of the Contract Act?",
+      "Can independent Udyam-registered hotels, travel agencies, and industrial caterers use MSME Samadhaan and Section 43B(h) against corporate buyers or OTAs?",
+      "A retail travel agent sent an edited NEFT/SWIFT UTR PDF on arrival morning and never paid our DMC land package—does criminal law apply?",
+      "Can our hotel chain, banquet group, or travel agency test LegalRecovery.in on one overdue corporate account before uploading our City Ledger CSV?"
+    ],
+    "wordCount": 2950,
+    "artefacts": [
+      "8-Track Hospitality, TMC, Banquet & Catering Escalation Matrix table covering Hotel BTC City Ledgers, IATA TMC Airfares, Banquet Checkout Cheques, OTA Extranet/VCC Holds, MICE Attrition, Industrial Canteens, B2B DMC Fake-UTRs & NSOP Air-Charter/Luxury Coaches",
+      "Hand-authored SVG 5-stage 7-Day IATA BSP & Guest-Folio to Decree Enforcement Pipeline diagram with mobile stacked cards",
+      "Interactive 4-tab Sector Playbook Explorer (HotelsTravelHubScenarioTabs) covering Hotel BTC & OTA Payouts, IATA TMC & Charter Credit, Banquets/Weddings & MICE, and Industrial Canteens & DMCs",
+      "Dual-Track B2B Conversion CTA (HotelsTravelHubCTA) pairing ₹999 live single-case pilot with bulk CSV & multi-hotel Representees desk",
+      "4 verified Statutory & Judicial Precedents (Order XXXVII/Order XXXVIII R.5 + GSTR-2B estoppel + Raman Tech; NI s.138/139/143A M.M.T.C. & Sripati Singh; Contract s.74 Kailash Nath perishable room-nights; MSMED s.15-19/s.43B(h) & BNS s.318/336/340 electronic forgery)",
+      "Worked Ledger Math comparing ₹35L Flown Corporate Airfare Credit (48 PNRs, MSMED 3x + s.43B(h) + Order 38 R.5) vs ₹14.4L MICE Offsite Cancelled 6 Days Prior (₹9L net liquidated damages after 40 resold nights & ₹3L advance)",
+      "Complete 9-spoke IND-16 downward directory (B2B-191 to B2B-199) plus 8 live Cheque-Bounce, Order 37, MSME & Bulk Recovery seed cross-links"
+    ],
+    "sources": [
+      "Code of Civil Procedure, 1908 (Order XXXVII & Order XXXVIII Rule 5)",
+      "Negotiable Instruments Act, 1881 (Sections 138, 139, 141 & 143A)",
+      "Indian Contract Act, 1872 (Sections 73 & 74)",
+      "MSMED Act, 2006 (Sections 15–19) & Income-tax Act Section 43B(h)",
+      "Bharatiya Nyaya Sanhita (BNS), 2023 (Sections 318, 336 & 340)",
+      "Bharatiya Sakshya Adhiniyam (BSA), 2023 (Section 63 Electronic Evidence)",
+      "Directorate General of Civil Aviation (DGCA) NSOP Journey Log & Charter Rules",
+      "Supreme Court in M.M.T.C. v. Medchl Chemicals, Sripati Singh, Kailash Nath Associates v. DDA & Raman Tech"
+    ],
+    "builtAt": "2026-11-14T12:30:00+05:30"
+  },
+  {
+    "id": "B2B-017",
+    "url": "/tools/sarfaesi-drt-bank-recovery-forum-calculator",
+    "archetype": "T1",
+    "h2s": [
+      "SARFAESI, DRT Rule 7 Fee & Recovery Forum Selector",
+      "RDB Act Rule 7 DRT OA Fee Formula & Slab Table",
+      "Commercial Court vs DRT Court-Fee Cost Comparison",
+      "SARFAESI Section 31 Bars & NBFC ₹20L Notification Rules",
+      "60 + 15 + 30 Day SARFAESI & DRT Statutory Workflow",
+      "Worked Bank NPA Calculations: ₹68.5L Secured vs ₹14.2L Loan",
+      "RBI Penal-Charge Hygiene, CERSAI s.26D & Forum Guardrails",
+      "Dispatch Pre-SARFAESI, Recall or Bulk Lok Adalat Notices",
+      "Related Banking Playbooks, Bulk Solutions & Calculators",
+      "FAQs: SARFAESI Eligibility, DRT Rule 7 Fees & Bank Forums",
+      "Official Acts, MoF Notifications & Tribunal Portals"
+    ],
+    "components": [
+      "Breadcrumbs",
+      "SarfaesiDrtCalculatorTOC",
+      "SarfaesiDrtCalculatorClient",
+      "SarfaesiDrtCalculatorCTA",
+      "RelatedRecoveryGuides"
+    ],
+    "faqQuestions": [
+      "How is the DRT Section 19 Original Application (OA) fee calculated under Rule 7?",
+      "What does the SARFAESI Section 31(j) 20% principal and interest exclusion mean?",
+      "Can NBFCs and Housing Finance Companies invoke SARFAESI below ₹20 Lakh?",
+      "Are Cooperative Banks eligible to issue SARFAESI Section 13(2) demand notices?",
+      "What happens if a bank fails to reply to borrower objections within 15 days under Section 13(3A)?",
+      "Can banks file DRT OAs for overdue loans below ₹20 Lakh by combining penal interest?",
+      "Why is DRT generally cheaper than Commercial Courts for high-value bank claims?"
+    ],
+    "wordCount": 1650,
+    "artefacts": [
+      "Interactive React Calculator (SarfaesiDrtCalculatorClient) with 4 NPA test presets, RDB Act Rule 7(2) exact fee calculation capped at ₹1,50,000, commercial court ad-valorem fee savings comparison, SARFAESI s.31(h)/(i)/(j) & NBFC ₹100Cr/₹20L & CERSAI s.26D audit matrix, 6-forum verdict cards, computed 60+15+30 day statutory dates, clipboard Sanction Memo & CSV audit export",
+      "RDB Act Rule 7 DRT OA statutory fee formula box and slab table from sub-₹20L through ₹1.48Cr+ ceiling",
+      "SARFAESI Section 31 exclusions & NBFC/HFC/Co-op Bank matrix table",
+      "Hand-authored inline 5-stage SARFAESI & DRT statutory timeline SVG diagram with mobile stacked cards",
+      "Worked bank NPA examples comparing ₹68.50 Lakh MSME LAP (₹71,000 DRT fee) vs ₹14.20 Lakh sub-DRT unsecured loan",
+      "Dual-Track B2B Conversion CTA (SarfaesiDrtCalculatorCTA) pairing ₹999 live single-case pilot with bulk CSV & Representees desk"
+    ],
+    "sources": [
+      "SARFAESI Act, 2002 (Sections 2, 13, 14, 26D & 31)",
+      "Recovery of Debts and Bankruptcy (RDB) Act, 1993 & DRT Procedure Rules, 1993 (Rule 7)",
+      "Insolvency and Bankruptcy Code (IBC), 2016 (Sections 4, 7 & 95)",
+      "Commercial Courts Act, 2015 (Section 2(1)(c) & Section 12A)",
+      "Ministry of Finance Notifications S.O. 856(E) & S.O. 652(E) (NBFC ₹100Cr / ₹20L)",
+      "Supreme Court in Pandurang Ganpati Chaugule (2020), ITC Blue Coast Hotels, Patil Automation, Yamini Manohar & Channaveerappa Beleri"
+    ],
+    "builtAt": "2026-11-14T12:50:00+05:30"
+  },
+  {
+    "id": "B2B-018",
+    "url": "/templates/bank-loan-recall-cum-guarantee-invocation-notice",
+    "archetype": "P1",
+    "h2s": [
+      "Why Compounded Penal Interest Invalidates Bank Recall Notices",
+      "Interactive Loan Recall & Guarantee Invocation Draft Workspace",
+      "RBI Penal Charges Schedule vs Legacy Compounded Interest",
+      "Clause-by-Clause Legal Architecture: Recall, s.128 & DRT",
+      "Recall-to-DRT & Guarantee Invocation Workflow for Banks",
+      "Tri-Channel Dispatch & Bankers' Books Evidence Checklist",
+      "Supreme Court Precedents on Loan Recall & Guarantee Demands",
+      "Worked Ledger: ₹42.50 Lakh SME Cash-Credit Recall Schedule",
+      "Institutional Dispatch: Test 1 Notice or Upload NPA CSV",
+      "FAQs: Bank Loan Recall & Guarantee Invocation Notice Format",
+      "Primary Banking Statutes, RBI Circulars & DRT Portals"
+    ],
+    "components": [
+      "Breadcrumbs",
+      "LoanRecallNoticeTOC",
+      "LoanRecallNoticeWorkspace",
+      "LoanRecallNoticeCTA",
+      "RelatedRecoveryGuides"
+    ],
+    "faqQuestions": [
+      "Why do outdated loan recall templates from Scribd or LawRato fail in DRT?",
+      "Why is marking Personal or Corporate Guarantors as 'CC / Copy To' legally defective?",
+      "How must Schedule A bifurcate overdue amounts under RBI Penal Charges rules?",
+      "What cure period should banks grant in a pre-DRT loan recall cum guarantee invocation notice?",
+      "Can this notice be used for loans below the ₹20 Lakh DRT pecuniary limit?",
+      "How should banks dispatch recall notices to prevent borrower denial of service?"
+    ],
+    "wordCount": 1950,
+    "artefacts": [
+      "Interactive Bank Loan Recall & Guarantee Invocation Workspace (LoanRecallNoticeWorkspace) with 3 presets, Panel Advocate / Bank Officer toggle, uncapitalized RBI Schedule A calculator, clipboard copy, Word (.doc) export & print/PDF",
+      "High-contrast RBI Penal Charges Schedule vs Legacy Compounded Interest audit matrix",
+      "6-clause statutory recall & Contract Act s.126/128 architecture breakdown",
+      "Hand-authored 5-stage Recall-to-DRT SVG workflow diagram with mobile stacked cards",
+      "6-point Bankers' Books Evidence Act s.2A/4 & BSA 2023 s.63 pre-dispatch checklist",
+      "4 verified Supreme Court rulings (Syndicate Bank v. Channaveerappa Beleri, IIBI v. Biswanath Jhunjhunwala, Lalit Kumar Jain v. UOI, Central Bank of India v. Ravindra read with RBI Penal Charges Circular)",
+      "Worked ₹42.50 Lakh SME Cash-Credit Schedule A bifurcation ledger",
+      "Dual-Track B2B Conversion CTA (LoanRecallNoticeCTA) pairing ₹999 single-case dispatch with bulk CSV & Representees desk"
+    ],
+    "sources": [
+      "RBI Fair Lending Practice Directions on Penal Charges in Loan Accounts (RBI/2023-24/53 DoR.MCS.REC.28/01.01.001/2023-24)",
+      "Indian Contract Act, 1872 (Sections 126, 127, 128 & 129)",
+      "Recovery of Debts and Bankruptcy (RDB) Act, 1993 (Section 19)",
+      "Insolvency and Bankruptcy Code, 2016 (Section 95 Rule 7(1) Form B & Section 7)",
+      "Bharatiya Sakshya Adhiniyam, 2023 (Section 63) & Bankers' Books Evidence Act, 1891 (Sections 2A & 4)"
+    ],
+    "builtAt": "2026-11-14T12:56:00+05:30"
+  },
+  {
+    "id": "B2B-021",
+    "url": "/rbi-recovery-agent-guidelines-compliant-legal-escalation-nbfc",
+    "archetype": "G1",
+    "h2s": [
+      "Why RBI Supervisory Crackdowns Force NBFCs Out of Telecalling",
+      "30–90 DPD Compliance Decision Tree: Telecalling vs. Legal Escalation",
+      "RBI Recovery Agent Directions & Statutory Compliance Matrix",
+      "4 NBFC Compliance Failure Modes & Legal Substitution Protocols",
+      "5-Step SOP to Replace Aggressive Calling with Advocate Notices",
+      "Unit-Economics Ledger: 40-Call Agency Cost vs. Tri-Channel Notice",
+      "RBI Audit Trail & BSA 2023 s.63 Evidence Checklist",
+      "FAQs: RBI Recovery Guidelines & NBFC Legal Escalation",
+      "Official RBI Directions, Statutes & Primary References"
+    ],
+    "components": [
+      "Breadcrumbs",
+      "RbiComplianceTableOfContents",
+      "RbiComplianceScenarioTabs",
+      "RbiComplianceCTA",
+      "RelatedRecoveryGuides"
+    ],
+    "faqQuestions": [
+      "What are the mandatory RBI calling hours for NBFC recovery agents in 2026?",
+      "Is IIBF DRA certification mandatory for outsourced NBFC collection agents?",
+      "Does the 8 AM–7 PM telecalling restriction apply to Advocate Legal Notices?",
+      "How do RBI Digital Lending Guidelines restrict LSPs during loan recovery?",
+      "When should an NBFC shift a 30–90 DPD account from telecalling to a Legal Notice?",
+      "How does BSA 2023 Section 63 protect an NBFC during RBI audits and court filings?",
+      "Can an NBFC test compliant legal escalation on one loan before bulk CSV onboarding?"
+    ],
+    "wordCount": 2150,
+    "artefacts": [
+      "30–90 DPD Compliance Decision Tree SVG flowchart with mobile stacked cards",
+      "RBI Recovery Agent Directions & Statutory Compliance Matrix table (bg-slate-900 header)",
+      "Interactive 4-tab Failure Modes & Legal Substitution explorer (RbiComplianceScenarioTabs)",
+      "Unit-Economics Ledger comparing 40-call agency cost vs tri-channel Advocate Legal Notice",
+      "6-point RBI Audit Trail & BSA 2023 s.63 Evidence Checklist",
+      "Dual-Track B2B Conversion CTA (RbiComplianceCTA) pairing ₹999 pilot with CSV batch & Representees vault"
+    ],
+    "sources": [
+      "RBI Master Direction on Outsourcing of Financial Services & Recovery Agents Code of Conduct",
+      "RBI Master Direction on Regulatory Framework for Digital Lending",
+      "Payment and Settlement Systems Act, 2007 (Section 25)",
+      "Bharatiya Sakshya Adhiniyam, 2023 (Section 63)",
+      "The Advocates Act, 1961"
+    ],
+    "builtAt": "2026-11-14T13:18:00+05:30"
+  },
+  {
+    "id": "B2B-022",
+    "url": "/small-ticket-digital-personal-loan-bnpl-recovery-economics",
+    "archetype": "G2",
+    "h2s": [
+      "Why Traditional Litigation Fails Under ₹1,00,000",
+      "Small-Ticket Forum & Remedy Comparison Matrix",
+      "3-Wave Funnel Architecture: Notice to Batch ODR",
+      "Interactive Ticket-Tier & Cohort Escalation Matrix",
+      "CICRA 2005 Pre-Adverse Alerts & BSA s.63 Proof",
+      "Cost & Time-to-Recovery Ledger: ₹18K vs ₹75K",
+      "Portfolio Deployment: Single Test vs 10,000-Row CSV",
+      "FAQs: Fintech & BNPL Small-Ticket Recovery",
+      "Statutory Authorities & Official Portals"
+    ],
+    "components": [
+      "Breadcrumbs",
+      "BnplEconomicsTableOfContents",
+      "BnplEconomicsScenarioTabs",
+      "BnplEconomicsCTA",
+      "RelatedRecoveryGuides"
+    ],
+    "faqQuestions": [
+      "Why do traditional law firms fail on ₹5,000 to ₹50,000 BNPL and digital personal loan defaults?",
+      "How does a 30-day CICRA pre-adverse reporting notice increase small-ticket recovery?",
+      "Are WhatsApp blue-tick and email advocate notices legally admissible under Indian evidence law?",
+      "When should an NBFC or fintech escalate from Wave-1 Digital Notice to Wave-2 Speed Post RPAD?",
+      "Can click-wrap OTP loan agreements be enforced in Institutional Batch ODR under Section 29B?",
+      "How does an NBFC avoid Perkins Eastman invalidation in high-volume ODR arbitration?",
+      "Can our fintech test LegalRecovery.in on one overdue BNPL account before uploading a 5,000-row CSV?"
+    ],
+    "wordCount": 2150,
+    "artefacts": [
+      "6-forum Small-Ticket Forum & Remedy Comparison Matrix table (Civil/Order 37, Physical Law Firm, Wave-1 Digital + CICRA, Wave-2 RPAD, Batch ODR s.29B, Lok Adalat)",
+      "Hand-authored inline 3-Wave Funnel Architecture SVG diagram (840x240) with mobile stacked cards",
+      "Interactive 4-tab Ticket-Tier & Cohort Escalation Matrix (BnplEconomicsScenarioTabs)",
+      "Cost & Time-to-Recovery Numerical Ledger comparing ₹18,000 BNPL default vs ₹75,000 Digital Personal Loan",
+      "Dual-Track B2B Conversion CTA (BnplEconomicsCTA) pairing ₹999 live single-case test with 10–10,000+ CSV batch & Representees desk"
+    ],
+    "sources": [
+      "Credit Information Companies (Regulation) Act, 2005 (CICRA)",
+      "Bharatiya Sakshya Adhiniyam, 2023 (Section 63)",
+      "Arbitration and Conciliation Act, 1996 (Sections 7, 12(5), 21, 25(b), 29B & 36)",
+      "Payment and Settlement Systems Act, 2007 (Section 25)",
+      "Information Technology Act, 2000 (Section 10A) & RBI Digital Lending / Fair Practices Directions"
+    ],
+    "builtAt": "2026-11-14T13:18:00+05:30"
+  },
+  {
+    "id": "B2B-023",
+    "url": "/gold-loan-default-auction-statutory-notice-rbi-compliance-nbfc",
+    "archetype": "G1",
+    "h2s": [
+      "Why RBI Crackdowns Target Gold Loan NBFC Auction Notices",
+      "Gold Loan Auction Statutory & RBI Compliance Matrix",
+      "5-Stage Audit-Proof Gold Loan Auction Escalation Rail",
+      "Interactive Playbook: 4 Gold Loan Auction Failure Modes",
+      "75% LTV Breach & Margin Call Notice Protocol",
+      "Section 176 Notice & Vernacular Newspaper Publication Rules",
+      "Taluka-Level Auction Venue, Reserve Price & Related-Party Ban",
+      "Worked Auction Ledger: Surplus Refund vs. Deficit Recovery",
+      "Binding Supreme Court & RBI Precedents on Gold Auctions",
+      "BSA 2023 Section 63 & Pre-Auction Audit Dossier Checklist",
+      "FAQs: Gold Loan Default & Auction Compliance for NBFCs",
+      "Primary Statutes, RBI Master Directions & Related Tools"
+    ],
+    "components": [
+      "Breadcrumbs",
+      "GoldLoanTableOfContents",
+      "GoldLoanScenarioTabs",
+      "GoldLoanAuctionCTA",
+      "RelatedRecoveryGuides"
+    ],
+    "faqQuestions": [
+      "Can an NBFC waive Section 176 pre-auction notice in the gold loan agreement?",
+      "How many days notice is considered reasonable under Section 176 before auction?",
+      "Can a Gold Loan NBFC conduct a centralized online or metro-city auction for rural branch loans?",
+      "What if the borrower refuses to accept the Speed Post or has changed their address?",
+      "How must an NBFC handle auction surplus vs. post-auction deficit shortfall?",
+      "What legal steps should an NBFC take if pledged gold turns out to be fake or stolen?",
+      "Can our NBFC test LegalRecovery.in on a single overdue gold loan before bulk onboarding?"
+    ],
+    "wordCount": 2250,
+    "artefacts": [
+      "6-row Gold Loan Auction Statutory & RBI Compliance Matrix table",
+      "Hand-authored 5-stage Gold Loan Auction Escalation Rail SVG diagram with mobile stacked cards",
+      "Interactive 4-tab Failure Mode Explorer (GoldLoanScenarioTabs) covering 75% LTV Breach, Refused/Unclaimed Notice, Surplus vs Deficit Math, and Spurious/Stolen Gold",
+      "Worked Auction Settlement Ledger comparing Outcome A (Surplus Refund ₹17,220) vs Outcome B (Deficit Shortfall ₹53,500)",
+      "6-point BSA 2023 s.63 & Pre-Auction Audit Dossier Checklist",
+      "4 verified Supreme Court & Statutory Precedents (Lallan Prasad, Prabhat Bank v. Babu Ram, RBI Master Direction, BSA 2023 s.63)",
+      "Dual-Track B2B Conversion CTA (GoldLoanAuctionCTA) pairing ₹999 single-case pilot with bulk CSV & Representees desk"
+    ],
+    "sources": [
+      "Indian Contract Act, 1872 (Sections 172-176)",
+      "RBI Master Direction (NBFC Scale Based Regulation) Directions, 2023",
+      "RBI Fair Lending Practice - Penal Charges Circular (2023-24)",
+      "Bharatiya Sakshya Adhiniyam (BSA), 2023 (Section 63)",
+      "Bharatiya Nyaya Sanhita (BNS), 2023 (Sections 316 & 318)"
+    ],
+    "builtAt": "2026-11-14T13:18:00+05:30"
   }
 ]
