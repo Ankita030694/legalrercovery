@@ -1107,6 +1107,60 @@ const CLUSTERS: Record<string, { heading: string; items: GuideItem[] }> = {
     heading: "Related Construction, EPC, Subcontractor & Government Recovery Guides",
     items: [
       {
+        title: "Construction Retention Money & DLP Interest Calculator",
+        href: "/tools/construction-retention-dlp-escalation-claim-calculator",
+        tag: "Interactive Tool",
+        desc: "Compute split 3-year limitation clocks under Arts. 18 & 113, 18% statutory interest, and Commercial Courts Specified Value for retention releases.",
+      },
+      {
+        title: "Enforcing Unpaid Arbitral Awards (s.36): 100% Deposit & IBC Leverage",
+        href: "/executing-arbitral-award-section-36-against-developer-psu-india",
+        tag: "Section 36 Execution",
+        desc: "Section 34 filing gives no automatic stay. Enforce Section 36 execution, compel 100% court deposit, invoke NITI Aayog 75% PSU payout rules, or trigger IBC.",
+      },
+      {
+        title: "Construction Prolongation, Idle Plant & Extra-Item Claims Guide",
+        href: "/construction-price-escalation-extra-items-prolongation-claim-recovery",
+        tag: "Prolongation Claims",
+        desc: "Overcome 'No-Damages-for-Delay' clauses, enforce Section 55 ICA reservation notices, and quantify Hudson/Eichleay overheads & extra items.",
+      },
+      {
+        title: "Section 21 Arbitration Notice: EPC & Commercial Invocation Checklist",
+        href: "/section-21-arbitration-invocation-notice-construction-epc-guide",
+        tag: "Arbitration Act s.21",
+        desc: "Draft & serve a defect-free Section 21 notice under BSNL v. Nortel Networks 3-year limitation rules, bypass stalled pre-arbitral tiers & defeat captive PSU panels.",
+      },
+      {
+        title: "Defeating 'Pay-When-Paid' & Back-to-Back Clauses in Subcontracts",
+        href: "/pay-when-paid-back-to-back-clause-subcontractor-recovery-india",
+        tag: "Subcontractor Law",
+        desc: "Defeat abusive back-to-back payment terms under Indian Contract Act s.23/46, enforce the Prevention Doctrine & attach employer dues via garnishee orders.",
+      },
+      {
+        title: "Countering Arbitrary 10% LD Deductions & Risk-and-Cost Terminations",
+        href: "/wrongful-liquidated-damages-ld-termination-works-contract-remedy",
+        tag: "LD & Termination Remedy",
+        desc: "Reverse arbitrary 10% LD set-offs under Supreme Court Kailash Nath actual-loss rules, rebut illegal risk-and-cost terminations & protect bank guarantees.",
+      },
+      {
+        title: "Post-DLP Retention Money Withheld? Contractor Legal Recovery Guide",
+        href: "/retention-money-recovery-after-defect-liability-period-dlp-expiry",
+        tag: "Retention Recovery",
+        desc: "Recover 5%–10% retention money post-DLP expiry. Enforce Virtual Completion, counter fake snag lists under Contract Act s.73/74 & claim 18% interest.",
+      },
+      {
+        title: "Why MSEFC Rejects Works Contracts & How Contractors Win",
+        href: "/works-contract-excluded-from-msme-samadhaan-contractor-alternatives",
+        tag: "Works Contract Law",
+        desc: "Overcome MSEFC jurisdiction bars under Shree Gee & Sterling and Wilson via split supply POs, Commercial Courts & arbitration.",
+      },
+      {
+        title: "Employer Refusing to Certify RA Bills? Contractor Recovery Guide",
+        href: "/unpaid-ra-bills-uncertified-measurement-book-contractor-recovery",
+        tag: "Uncertified RA Bills",
+        desc: "Overcome PMC measurement stalling, invoke deemed certification, and repudiate coerced No-Claim Certificates under Supreme Court Kalathia rules.",
+      },
+      {
         title: "Construction, EPC & MEP Contractor Bill & Retention Recovery",
         href: "/industries/construction-epc-contractor-recovery",
         tag: "IND-07 EPC Hub",
@@ -1147,6 +1201,36 @@ const CLUSTERS: Record<string, { heading: string; items: GuideItem[] }> = {
   manufacturingB2B: {
     heading: "Related Manufacturing, OEM, MSME & Industrial Recovery Guides",
     items: [
+      {
+        title: "फैक्ट्री व MSME व्यापारिक पेमेंट (GST बिल) रिकवरी गाइड",
+        href: "/hi/factory-msme-b2b-udhar-bill-recovery-legal-notice",
+        tag: "MSME B2B Bill Recovery",
+        desc: "फैक्ट्री और कारखाने का फंसा हुआ GST बिल कानूनन कैसे वसूलें? 45-दिन नियम, धारा 43B(h) और ₹999 एडवोकेट लीगल नोटिस।",
+      },
+      {
+        title: "Channel Credit Recovery for Industrial OEMs: Dealer Default & BG Enforcement",
+        href: "/industrial-dealer-oem-authorized-distributor-credit-default-recovery",
+        tag: "Dealer Credit Recovery",
+        desc: "Enforce bank guarantees, contractual deposit set-off, Section 138 NI Act notices, and dealership terminations for industrial equipment OEMs.",
+      },
+      {
+        title: "Buyer Cancelled Custom PO Mid-Manufacturing? Recover WIP & Profit",
+        href: "/purchase-order-cancelled-mid-production-bespoke-goods-recovery",
+        tag: "Bespoke PO Cancelled",
+        desc: "Recover 100% of raw material plates and WIP plus 15% loss-of-profit under Section 39 & 73 ICA (*A.T. Brij Paul Singh* SC rule).",
+      },
+      {
+        title: "Wrongful Performance Bank Guarantee (PBG) Invocation: Section 9 Injunction & Restitution",
+        href: "/wrongful-performance-bank-guarantee-pbg-invocation-stay-recovery",
+        tag: "PBG Injunction & Stay",
+        desc: "Stay abusive PBG encashment under Section 9 egregious fraud/special equities and enforce Section 144 CPC restitution with 18% penal interest.",
+      },
+      {
+        title: "Medium Enterprises Excluded from MSME Samadhaan: 4 Faster Legal Routes",
+        href: "/medium-enterprise-udyam-excluded-from-msme-samadhaan-recovery-options",
+        tag: "Medium Udyam Debt",
+        desc: "Overcome Section 2(n) and 43B(h) exclusions for ₹50–250 Cr units via Order 37, Commercial Courts s.12A & IBC.",
+      },
       {
         title: "Manufacturing, Machinery & OEM Supplier Debt Recovery India",
         href: "/industries/manufacturing-machinery-oem-recovery",
@@ -1189,10 +1273,52 @@ const CLUSTERS: Record<string, { heading: string; items: GuideItem[] }> = {
     heading: "Related Real Estate Promoter, Commercial Lease & Bulk Recovery Guides",
     items: [
       {
+        title: "JDA Revenue-Share Default Recovery & Escrow Enforcement",
+        href: "/joint-development-agreement-jda-revenue-share-default-recovery",
+        tag: "JDA Revenue Recovery",
+        desc: "Enforce RERA Section 4(2)(l)(D) 70% project escrow audits and freeze unsold developer units under Section 9 arbitration.",
+      },
+      {
+        title: "Mall & IT Park CAM, Chiller & DG Power Arrears Recovery",
+        href: "/commercial-it-park-mall-cam-common-area-maintenance-arrears-recovery",
+        tag: "CAM & HVAC Recovery",
+        desc: "Enforce State Apartment Ownership Acts non-waiver covenants, lawful utility cutoffs, and Order XXXVII CPC recovery.",
+      },
+      {
+        title: "Tenant Deducted 10% Rent TDS (194-I) & Didn't Deposit? Fix",
+        href: "/commercial-tenant-deducted-tds-194i-not-deposited-form-26as-recovery",
+        tag: "194-I TDS Recovery",
+        desc: "Section 205 landlord immunity shield and Section 276B criminal prosecution legal notice against corporate tenants pocketing rent TDS.",
+      },
+      {
+        title: "Post-OC Allottee Refusing Possession & CAM: RERA s.19(10)",
+        href: "/builder-society-handover-ifms-corpus-maintenance-arrears-allottee-recovery",
+        tag: "Post-OC Possession",
+        desc: "Enforce RERA Section 19(10) 2-month possession deadline, holding charges, CAM arrears, IFMS corpus and pre-RWA handover deficits.",
+      },
+      {
+        title: "RERA Section 19(6)–(7): Recovering Allottee Milestone Dues",
+        href: "/rera-section-19-builder-recovery-from-defaulting-homebuyer-allottee",
+        tag: "RERA Builder Rights",
+        desc: "Promoter statutory rights under RERA s.19(6), 19(7), and 11(5) to recover slab defaults and execute lawful cancellations.",
+      },
+      {
+        title: "Industrial Warehouse, 3PL Shed & Factory Lease Recovery",
+        href: "/industrial-warehouse-3pl-shed-lease-rent-dilapidation-recovery",
+        tag: "Warehouse Dilapidations",
+        desc: "Recover Grade-A warehouse rent, FM2/VDF floor restoration, DISCOM HT power arrears, and toxic waste cleanup costs.",
+      },
+      {
         title: "Builders, Landlords & Co-Working Debt Recovery India",
         href: "/industries/builders-commercial-landlords-coworking-recovery",
         tag: "IND-08 Property Hub",
         desc: "Multi-track creditor hub covering RERA s.19(6)–(10) allottee dues, commercial lock-in breaches, CAM/HVAC arrears, 194-I TDS, and co-working licenses.",
+      },
+      {
+        title: "Commercial Lease Section 106 Termination & Lock-In Notice (Format)",
+        href: "/templates/commercial-lease-lock-in-breach-section-106-termination-notice",
+        tag: "TPA §106 Notice Format",
+        desc: "Interactive commercial notice workspace for unpaid rent, 18% GST, CAM, uncredited 194-I TDS, lock-in CapEx clawback & double mesne profits.",
       },
       {
         title: "Legal Notice to Tenant for Unpaid Rent & Eviction (Guide)",
@@ -1219,6 +1345,12 @@ const CLUSTERS: Record<string, { heading: string; items: GuideItem[] }> = {
         desc: "Dispatch 10 to 10,000+ RERA cure notices, CAM arrears demands, or co-working default notices via Email, WhatsApp & RPAD.",
       },
       {
+        title: "Commercial Lease Lock-In Breach: Recover Rent & Fit-Out Cost",
+        href: "/commercial-lease-lock-in-period-breach-unexpired-rent-recovery",
+        tag: "Lock-In Breach SOP",
+        desc: "Recover actual vacancy loss, custom fit-out CapEx amortization, brokerage & rent-free clawbacks under Contract Act s.74.",
+      },
+      {
         title: "Online Dispute Resolution (ODR) India Platform",
         href: "/online-dispute-resolution-india",
         tag: "Institutional ODR",
@@ -1230,10 +1362,46 @@ const CLUSTERS: Record<string, { heading: string; items: GuideItem[] }> = {
     heading: "Related Logistics, Commercial Invoice & MSME Recovery Guides",
     items: [
       {
+        title: "Transporter Freight, Halting & Carrier-Lien Legal Notice Format",
+        href: "/templates/transporter-freight-detention-carrier-lien-legal-notice",
+        tag: "P1 Template Pack",
+        desc: "Advocate-vetted legal notice templates for overdue bilty freight, GPS halting claims, and Section 171 carrier lien intimation.",
+      },
+      {
+        title: "ट्रांसपोर्ट भाड़ा व हॉल्टिंग वसूली लीगल गाइड (POD Bilty Recovery)",
+        href: "/hi/transport-bilty-truck-bhada-recovery-legal-notice",
+        tag: "Hindi Vyapari Guide",
+        desc: "कैरिज बाय रोड एक्ट 2007, क्लीन POD, जीपीएस हॉल्टिंग व ₹999 एडवोकेट लीगल नोटिस से ट्रांसपोर्ट भाड़ा वसूली की संपूर्ण गाइड।",
+      },
+      {
         title: "Logistics, 3PL, Transporter & Freight Debt Recovery",
         href: "/industries/logistics-freight-3pl-recovery",
         tag: "IND-09 Logistics Hub",
         desc: "Pillar hub for transporters, 3PL warehouses, CHAs & freight forwarders covering Carrier Lien, halting & ICEGATE advances.",
+      },
+      {
+        title: "Dedicated Fleet Minimum-Km Shortfall & Early Termination Recovery",
+        href: "/dedicated-fleet-contract-minimum-km-guarantee-shortfall-recovery",
+        tag: "Dedicated Fleet Lock-In",
+        desc: "Enforce Section 73/74 fixed standing hire, minimum-km guarantees, and unamortized vehicle loan CapEx against defaulting shippers.",
+      },
+      {
+        title: "Transit Damage & Shortage Debit Note Defense Guide",
+        href: "/shipper-fake-transit-damage-shortage-debit-note-defense-transporter",
+        tag: "Debit Note Defense",
+        desc: "Defeat illegal damage deductions using Clean POD estoppel, Raman Iron set-off law, and Marine Insurance double-recovery bar.",
+      },
+      {
+        title: "3PL Warehouse Storage Bills & Dead-Stock Lien Auction Guide",
+        href: "/3pl-warehouse-storage-fulfillment-unpaid-bill-lien-auction-guide",
+        tag: "3PL Warehouse Lien",
+        desc: "Execute Section 170 bailee lien, statutory valuation, 15-day auction notice, and CPC Order 37 deficit recovery for abandoned dead stock.",
+      },
+      {
+        title: "Reefer Cold-Chain Freight Recovery & Spoilage Defense",
+        href: "/cold-chain-reefer-transport-unpaid-freight-spoilage-counterclaim",
+        tag: "Reefer Freight Recovery",
+        desc: "Defeat bogus spoilage debit notes and warm-loading claims using Carriage by Road Act s.10/12 exceptions and BSA s.63 telematics logs.",
       },
       {
         title: "Unpaid Business Invoices Legal Recovery Guide",
@@ -1380,6 +1548,53 @@ const CLUSTERS: Record<string, { heading: string; items: GuideItem[] }> = {
       },
     ],
   },
+  fmcgConsumer: {
+    heading: "Related FMCG, Modern-Trade, C&F & Distributor Legal Guides",
+    items: [
+      {
+        title: "Channel Credit & Recovery for FMCG, Consumer Durables & D2C Brands",
+        href: "/industries/fmcg-distributors-super-stockist-recovery",
+        tag: "IND-10 Pillar Hub",
+        desc: "Recover overdue distributor ledgers, dispute arbitrary dark-store deductions, and enforce s.20/s.138 security cheques across India.",
+      },
+      {
+        title: "Distributor or Dealer Not Paying Dues? Legal Recovery",
+        href: "/distributor-dealer-dues-recovery",
+        tag: "IND-10 Seed Guide",
+        desc: "Signed ledger confirmations, security cheques, MSME 3x interest, and Order 37 summary suits.",
+      },
+      {
+        title: "Filling & Prosecuting Blank Signed Dealer Security Cheques (s.20 & s.138)",
+        href: "/blank-signed-security-cheque-section-20-138-ni-act-distributor-recovery",
+        tag: "L1 Statute Deep-Dive",
+        desc: "Authoritative SOP for quantifying running dealer ledgers and serving 7-day pre-deposit notices before presenting blank security cheques.",
+      },
+      {
+        title: "Fighting Arbitrary Dark-Store GRN Shortages & Fill-Rate Penalties",
+        href: "/quick-commerce-modern-trade-arbitrary-deductions-vendor-payment-recovery",
+        tag: "G1 Operational Playbook",
+        desc: "Challenge Quick-Commerce and Modern-Trade chargebacks using MSMED Act Section 2(b) 15-day deemed acceptance and Section 43B(h).",
+      },
+      {
+        title: "Electronics, Mobile & Appliance Dealer Floor-Credit Default Recovery",
+        href: "/consumer-durables-electronics-mobile-dealer-floor-credit-recovery",
+        tag: "G1 Operational Playbook",
+        desc: "Track unpaid IMEI/serial inventory, rebut oral price-drop support excuses, and obtain emergency stock attachment before liquidation.",
+      },
+      {
+        title: "C&F Agent & Super-Stockist Security Deposit & F&F Settlement Recovery",
+        href: "/cnf-agent-super-stockist-security-deposit-fnf-recovery-from-brand",
+        tag: "G1 Operational Playbook",
+        desc: "Enforce Contract Act Section 222 indemnity and recover withheld C&F security deposits and secondary trade scheme claims.",
+      },
+      {
+        title: "Bulk Recovery Cases: All-in-One Institutional Solutions",
+        href: "/bulk-recovery-cases-all-in-one-affordable-solutions",
+        tag: "CSV Batch Desk",
+        desc: "Upload 10 to 10,000+ overdue dealer and retailer accounts for simultaneous advocate dispatch.",
+      },
+    ],
+  },
   agencyMedia: {
     heading: "Related Agency, Media Buying, Copyright & Event Recovery Guides",
     items: [
@@ -1521,13 +1736,30 @@ function detectCluster(pathname: string): { heading: string; items: GuideItem[] 
     p.includes("commercial-property-section-106") ||
     p.includes("builder-society-handover-ifms") ||
     p.includes("joint-development-agreement-jda") ||
-    p.includes("retail-mall-revenue-share-minimum-guarantee")
+    p.includes("retail-mall-revenue-share-minimum-guarantee") ||
+    p.includes("rera-section-19") ||
+    p.includes("defaulting-homebuyer-allottee") ||
+    p.includes("commercial-it-park-mall-cam")
   ) {
     return CLUSTERS.commercialProperty;
   }
   if (
+    p.includes("industrial-dealer") ||
+    p.includes("section-43bh") ||
+    p.includes("authorized-distributor") ||
+    p.includes("purchase-order-cancelled") ||
+    p.includes("bespoke-goods") ||
+    p.includes("tax-invoice-eway-bill") ||
+    p.includes("eway-bill-grn") ||
+    p.includes("wrongful-performance-bank-guarantee") ||
+    p.includes("bank-guarantee-pbg") ||
+    p.includes("cnc-machining") ||
+    p.includes("medium-enterprise-udyam") ||
+    p.includes("job-work-challan") ||
+    p.includes("auto-ancillary") ||
     p.includes("custom-industrial-machinery") ||
     p.includes("manufacturing-machinery-oem") ||
+    p.includes("factory-msme-b2b") ||
     p.includes("oem-deduction") ||
     p.includes("tooling-dies") ||
     p.includes("cnc-job-work") ||
@@ -1538,14 +1770,22 @@ function detectCluster(pathname: string): { heading: string; items: GuideItem[] 
     return CLUSTERS.manufacturingB2B;
   }
   if (
+    p.includes("executing-arbitral-award") ||
+    p.includes("construction-retention-dlp") ||
+    p.includes("section-21-arbitration") ||
     p.includes("construction-epc") ||
     p.includes("subcontractor-payment") ||
+    p.includes("pay-when-paid") ||
     p.includes("contractor-payment") ||
     p.includes("section-80-cpc") ||
+    p.includes("prolongation") ||
+    p.includes("construction-price-escalation") ||
     p.includes("ra-bill") ||
     p.includes("retention-money") ||
     p.includes("works-contract") ||
-    p.includes("liquidated-damages")
+    p.includes("liquidated-damages") ||
+    p.includes("tender-payment-recovery-contractors") ||
+    p.includes("nhai-cpwd-pwd")
   ) {
     return CLUSTERS.construction;
   }
@@ -1696,6 +1936,15 @@ p.includes("school") ||
     p.includes("marketing-ad-agency-retainer-copyright")
   ) {
     return CLUSTERS.agencyMedia;
+  }
+  if (
+    p.includes("fmcg") ||
+    p.includes("super-stockist") ||
+    p.includes("consumer-durables") ||
+    p.includes("quick-commerce") ||
+    p.includes("cnf-agent")
+  ) {
+    return CLUSTERS.fmcgConsumer;
   }
   if (
     p.includes("pharma") ||

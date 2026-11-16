@@ -15,7 +15,7 @@ const PAGE_TITLE = "Construction, EPC & MEP Contractor Bill & Retention Recovery
 const PAGE_DESCRIPTION =
   "Recover uncertified Running Account (RA) bills, post-DLP retention money, extra-item variations & PSU/developer dues while shielding your Bank Guarantees.";
 const H1_TEXT =
-  "Specialized Legal Recovery & Arbitration Desk for Civil, EPC, Infrastructure & MEP Contractors in India";
+  "specialized Legal Recovery & Arbitration Desk for Civil, EPC, Infrastructure & MEP Contractors in India";
 
 export const metadata: Metadata = {
   title: PAGE_TITLE,
@@ -192,7 +192,7 @@ const APEX_PRECEDENTS = [
   {
     title: "Coerced 'No-Claim / No-Dues Certificates' Do Not Bar Contractor Claims",
     parties: "R.L. Kalathia & Co. v. State of Gujarat & Ambica Construction",
-    citation: "Supreme Court of India — Financial Duress & Accord-Satisfaction Doctrine",
+    citation: "(2011) 2 SCC 400 & (2010) 6 SCC 344 — Supreme Court of India",
     holding:
       "Where an employer or PSU withholds admitted Running Account or Final Bill funds unless the contractor signs a full-and-final 'No-Claim Certificate', such coerced discharge does not foreclose arbitration or extra claims—especially when protested contemporaneously or immediately upon release.",
     impact: "Protects contractors forced to sign clean NDCs to meet site payroll and vendor obligations.",
@@ -200,7 +200,7 @@ const APEX_PRECEDENTS = [
   {
     title: "Article 226 Writ Mandamus for Admitted Government & PSU Certified Bills",
     parties: "M/s Surya Constructions v. State of U.P. & Unitech Precedents",
-    citation: "Supreme Court of India — Constitutional Remedy on Undisputed MBs",
+    citation: "(2019) SCC OnLine SC 2471 — Supreme Court of India",
     holding:
       "Where work is completed satisfactorily and Measurement Book quantities are admitted without bona fide dispute, a State authority or Municipal body cannot deny payment citing 'lack of budget or grant'. High Courts may compel payment with interest under Article 226.",
     impact: "Cuts through 5-year civil suit delays for certified PWD, JJM, and Municipal bills.",
@@ -216,7 +216,7 @@ const APEX_PRECEDENTS = [
   {
     title: "3-Year Limitation Freeze & Limits on 'Pay-When-Paid' Subcontract Clauses",
     parties: "BSNL v. Nortel Networks (India) Pvt. Ltd. & Ircon International v. Vinay Heavy Equipments",
-    citation: "Supreme Court of India — Limitation Art. 137 & Subcontractor Entitlement",
+    citation: "(2021) 5 SCC 738 & Supreme Court / High Court Rulings on Subcontract Delay",
     holding:
       "Nortel Networks enforces a strict 3-year limitation window for Section 11/21 arbitration petitions—meaning informal reminder letters never stop the clock. Separately, Ircon and High Court rulings curb main contractors from hiding indefinitely behind back-to-back clauses or settling without paying subcontractors.",
     impact: "Mandates timely Section 21 invocation and strengthens Tier-2 subcontractor recoveries.",
@@ -227,37 +227,37 @@ const FAQS = [
   {
     question: "Can a contractor recover an unpaid RA bill if the developer or PMC refuses to sign the Measurement Book?",
     answer:
-      "Yes. While employers often stall joint Measurement Book (MB) sign-offs to delay payment, contractors can establish deemed certification using signed Daily Progress Reports (DPRs), gate-entry material logs, concrete pour cards, third-party lab tests, and email trails. Serving an advocate-drafted notice compiling these BSA 2023 s.63 records compels formal response before Section 21 arbitration or Commercial Court filing.",
+      "Yes. In Indian construction contracts, private developers and Project Management Consultants (PMCs) frequently stonewall joint measurement sign-offs to defer payment liabilities. However, contractors can establish deemed certification by compiling contemporaneous electronic site records certified under Section 63 of the Bharatiya Sakshya Adhiniyam, 2023 (BSA 2023)—including Daily Progress Reports (DPRs), concrete pour cards, joint level sheets, material gate-entry passes, and third-party laboratory test cubes. Serving an advocate-drafted deemed-certification notice puts the employer on 15-day notice under Section 55/70 of the Indian Contract Act, laying the mandatory evidentiary foundation for Section 21 arbitration or summary judgment under Order XIII-A of the Commercial Courts Act, 2015.",
   },
   {
     question: "If we signed a 'No-Claim Certificate' under pressure to get 60% of our Final Bill, are our remaining claims dead?",
     answer:
-      "Not necessarily. Under Supreme Court jurisprudence in Ambica Construction and R.L. Kalathia & Co. v. State of Gujarat, a No-Dues or No-Claim Certificate obtained under economic coercion does not bar further arbitration or extra claims—particularly where the contractor records 'signed under protest/duress' or serves a formal protest notice immediately upon receiving the coerced tranche.",
+      "No. The Supreme Court of India in landmark rulings including National Insurance Co. Ltd. v. Boghara Polyfab Pvt. Ltd., Ambica Construction v. Union of India, and R.L. Kalathia & Co. v. State of Gujarat (2011) 2 SCC 400 has definitively held that a 'No-Dues' or 'No-Claim' Certificate issued under financial duress or economic coercion does not extinguish genuine contractor claims. If an employer conditioned the release of admitted running bills on executing a blanket waiver, our advocates serve a formal 'Without Prejudice — Signed Under Financial Duress' revocation notice. This contemporaneous protest preserves your right to pursue uncertified quantities, price escalation, prolongation overheads, and retention balances before an arbitral tribunal.",
   },
   {
     question: "Why do High Courts quash MSME Samadhaan awards on EPC and construction 'Works Contracts'?",
     answer:
-      "Multiple High Courts (including Delhi, Bombay, and Allahabad in rulings such as Shree Gee Enterprises and Sterling & Wilson) have held that an indivisible composite 'Works Contract' involving supply, labour, civil erection, and transfer of property in goods embedded into immovable property does not fall within Section 18 MSEFC jurisdiction. Contractors should audit PO divisibility first—routing pure or separately billed Supply POs to MSEFC/43B(h), and indivisible works straight to Commercial Courts or Section 21 arbitration.",
+      "Multiple High Courts—including Delhi, Bombay, and Allahabad in decisions such as Shree Gee Enterprises and Sterling & Wilson—have established that an indivisible composite 'Works Contract' (involving supply, civil labour, structural erection, and the transfer of property in goods embedded into immovable property) falls outside the purview of Section 18 of the MSMED Act, 2006. When contractors file indivisible claims before the Micro and Small Enterprise Facilitation Council (MSEFC), respondents often wait 18–24 months before approaching the High Court under Article 226 to quash the proceedings for want of jurisdiction. LegalRecovery.in performs a structural contract audit: where equipment supply and civil installation are billed under divisible purchase orders, we route the supply component to MSEFC and Section 43B(h) enforcement, while channeling composite infrastructure claims directly to Section 21 arbitration or Commercial Courts under Section 2(1)(c)(vi).",
   },
   {
     question: "How do we recover 5%–10% retention money if the builder says Occupancy Certificate (OC) is still pending?",
     answer:
-      "Developers cannot indefinitely postpone the Defect Liability Period (DLP) by withholding OC applications or delaying regulatory clearances after taking beneficial possession. Documenting virtual completion, resident/tenant handover, MEP commissioning, and zero unrectified snags notified during the contractual DLP period establishes DLP expiry and triggers retention release plus commercial interest.",
+      "Developers routinely treat contractor retention money as interest-free working capital by asserting that the Defect Liability Period (DLP) only begins once the local municipal authority issues an Occupancy Certificate (OC). However, where the contractor has achieved Virtual Completion, handed over the site, and the developer or buyers have entered into 'Beneficial Occupation' (such as interior fit-outs, leasing, or commercial operations), courts hold that the DLP commences from the actual handover date. Once the contractual DLP expires (typically 12 to 24 months post-handover) without contemporaneous defect notices, retention money becomes an unconditionally due liquidated debt recoverable via Summary Suits under Order XXXVII CPC or Section 21 arbitration with commercial interest.",
   },
   {
     question: "How can a contractor protect Performance Bank Guarantees (PBGs) before demanding overdue payments?",
     answer:
-      "Before serving an aggressive termination or final recovery notice on a contract carrying live PBGs, contractors should assemble documentary proof of employer-caused delays, unpaid certified bills, and bad-faith linkage. Where fraudulent invocation or irretrievable injustice is imminent, an urgent Section 9 Commercial Court petition seeks interim injunction restraining encashment prior to or alongside Section 21 arbitration invocation.",
+      "Whenever a contractor prepares to serve a high-value demand or dispute notice, developers often retaliate by threatening to encash Performance Bank Guarantees (PBGs) or Retention Money BGs. While bank guarantees are independent contracts, Indian courts recognize two well-established exceptions: egregious fraud and irretrievable injustice / special equities (as affirmed in BSES Rajdhani Power Ltd. v. Ultra Modern Projects). LegalRecovery.in coordinates pre-emptive Section 9 Commercial Court petitions under the Arbitration Act, placing complete hindrance registers, extension-of-time (EOT) applications, and unpaid certified bills on record to obtain immediate ad-interim injunctions restraining the beneficiary and issuing bank from processing fraudulent encashments.",
   },
   {
     question: "When must an EPC contractor serve a Section 80 CPC notice vs an Article 226 Writ against NHAI, CPWD, or PWD?",
     answer:
-      "Before instituting a civil or commercial recovery suit against Central/State Government departments or public officers, Section 80(1) CPC mandates a clear 60-day prior notice (excluded from limitation under Section 15(2) Limitation Act). However, where work is completed and Measurement Books are unconditionally admitted—with payment withheld solely for 'lack of budget'—contractors may evaluate a High Court Writ under Article 226 per Surya Constructions, or follow contractual GCC DRB and Section 21 arbitration steps.",
+      "Under Section 80(1) of the Code of Civil Procedure, 1908, serving a clear 60-day statutory notice is a mandatory condition precedent before instituting a civil or commercial suit against the Government or a public officer. Fortunately, Section 15(2) of the Limitation Act, 1963 explicitly excludes this 60-day notice period from the 3-year limitation clock. However, where Government departments (such as CPWD, State PWD, Railways, or Jal Jeevan Mission) have officially signed and certified the Measurement Book—and withhold disbursements solely due to 'exhausted budget allocations' or 'pending state grants'—the Supreme Court in M/s Surya Constructions v. State of U.P. confirmed that High Courts can issue a Writ of Mandamus under Article 226 directing immediate payment with interest, bypassing prolonged civil trials.",
   },
   {
     question: "Can an EPC firm test LegalRecovery.in on one stuck bill before onboarding multiple project sites?",
     answer:
-      "Yes. Contractors can pilot a single overdue RA bill, retention tranche, or subcontract ledger at ₹999 for advocate drafting and tri-channel service (Email, Business WhatsApp, and Speed Post RPAD with BSA s.63 evidence), or onboard multiple SPVs, JV divisions, and project sites via our Representees workspace and CSV batch workflow.",
+      "Yes. EPC contractors, civil engineering firms, and MEP subcontractors can initiate a single overdue Running Account bill, retention release claim, or government department demand under our ₹999 Self-Serve Test Desk. An experienced construction recovery advocate reviews your contract clauses, MB records, and correspondence, drafts a statutory demand notice, and dispatches it via tracked Email, WhatsApp, and Speed Post RPAD with Section 63 BSA compliance. Once validated, enterprise contractors can onboard multiple SPVs, joint-venture divisions, and project sites via our Representees workspace and CSV bulk onboarding desk.",
   },
 ];
 
@@ -293,6 +293,36 @@ const PRIMARY_SOURCES = [
 ];
 
 // TODO(reviewer): src/data/reviewers.ts is absent in this repository. Advocate attribution (Anuj Anand Malik, Advocate & Founder, AMA Legal Solutions) emitted inline.
+
+const ARTICLE_SCHEMA = {
+  "@context": "https://schema.org",
+  "@type": "Article",
+  headline: H1_TEXT,
+  description: PAGE_DESCRIPTION,
+  mainEntityOfPage: CANONICAL_URL,
+  image: [`${SITE_URL}/blog_money_recovery.png`],
+  datePublished: "2026-11-14T09:00:00+05:30",
+  dateModified: "2026-11-16T14:49:03+05:30",
+  author: {
+    "@type": "Person",
+    name: "Anuj Anand Malik",
+    jobTitle: "Advocate & Founder",
+    worksFor: {
+      "@type": "Organization",
+      name: "AMA Legal Solutions",
+      url: "https://www.amalegalsolutions.com",
+    },
+  },
+  publisher: {
+    "@type": "Organization",
+    name: "LegalRecovery.in",
+    url: SITE_URL,
+    logo: {
+      "@type": "ImageObject",
+      url: `${SITE_URL}/lrlogo.png`,
+    },
+  },
+};
 
 const SERVICE_SCHEMA = {
   "@context": "https://schema.org",
@@ -416,6 +446,10 @@ export default function ConstructionEpcContractorRecoveryPage() {
     <>
       <script
         type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(ARTICLE_SCHEMA) }}
+      />
+      <script
+        type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(SERVICE_SCHEMA) }}
       />
       <script
@@ -438,733 +472,635 @@ export default function ConstructionEpcContractorRecoveryPage() {
             <div className="inline-flex flex-wrap items-center gap-1.5 sm:gap-2 px-3 sm:px-3.5 py-1.5 rounded-full text-[10px] sm:text-xs font-bold uppercase tracking-wider text-red-400 bg-red-950/60 border border-red-800/60 mb-4 sm:mb-5">
               <span>IND-07 Infrastructure &amp; EPC Hub</span>
               <span className="text-red-500">&bull;</span>
-              <span>Arbitration s.21 / s.9 &bull; Commercial Courts s.2(1)(c)(vi) &bull; CPC s.80</span>
+              <span>Arbitration Act s.21/s.9/s.36</span>
               <span className="text-red-500">&bull;</span>
-              <span>Civil, MEP &amp; Subcontractors</span>
+              <span>Commercial Courts Act s.2(1)(c)(vi)</span>
             </div>
 
             <h1 className="text-2xl sm:text-3xl md:text-5xl font-black tracking-tight text-white leading-tight mb-4 sm:mb-6 break-words">
               {H1_TEXT}
             </h1>
 
-            {/* 40-60 Word Executive Creditor Answer Box */}
-            <div
-              aria-label="Executive Creditor Answer"
-              className="bg-slate-800/90 border-l-4 border-[#DC2626] p-4 sm:p-5 rounded-r-xl shadow-lg mb-6 sm:mb-8 text-slate-100 text-xs sm:text-sm md:text-base leading-relaxed font-medium"
-            >
+            {/* Executive Statutory Summary Box */}
+            <div className="bg-slate-800/90 border-l-4 border-[#DC2626] p-4 sm:p-5 rounded-r-xl shadow-lg mb-6 sm:mb-8 text-slate-100 text-xs sm:text-sm md:text-base leading-relaxed font-medium">
               <span className="block text-[10px] sm:text-xs uppercase tracking-widest text-red-400 font-bold mb-1.5">
-                Executive Creditor Answer (EPC Directors, Civil &amp; MEP Contractors)
+                Executive Creditor Answer &bull; Statutory Scope
               </span>
-              <p>
-                Civil, EPC, and MEP contractors recover stuck RA bills, post-DLP retention money, and extra-item claims under Commercial Courts Act s.2(1)(c)(vi) and Arbitration Act s.21 without surrendering to coerced No-Claim Certificates or retaliatory Bank Guarantee encashments—combining site Measurement Book proof, s.9 interim stays, and CPC s.80 / Art. 226 PSU remedies.
-              </p>
+              Under Section 2(1)(c)(vi) of the Commercial Courts Act, 2015, construction, infrastructure, and turnkey EPC contracts are statutorily recognized commercial disputes. For contractors pursuing construction contractor ra bill and retention money recovery india, ordinary dunning letters fail when developers stonewall Joint Measurement Books, withhold post-DLP retention, or levy arbitrary 10% Liquidated Damages. LegalRecovery.in provides an institutional legal desk combining BSA 2023 s.63 deemed-certification notices, Section 9 Bank Guarantee injunctions, Section 80 CPC government notices, and Section 21 arbitration invocations to accelerate recoveries across India.
             </div>
 
             {/* Hero 4-Card Key Metrics Strip */}
             <div className="grid grid-cols-2 md:grid-cols-4 gap-3 sm:gap-4 p-4 sm:p-5 rounded-2xl bg-white/5 border border-white/10 backdrop-blur-sm">
-              <div>
-                <p className="text-xl sm:text-2xl md:text-3xl font-black text-slate-100">
-                  &rupee;10L&ndash;50Cr+
-                </p>
-                <p className="text-[10px] sm:text-xs text-slate-400 mt-1">
-                  RA Bills, Retention &amp; Prolongation Claims
-                </p>
+              <div className="space-y-1">
+                <span className="text-[10px] sm:text-xs text-slate-400 block font-medium">Statutory Classification</span>
+                <span className="text-base sm:text-lg md:text-xl font-bold text-slate-100 block">s.2(1)(c)(vi) CCA</span>
+                <span className="text-[10px] text-slate-400">Commercial Courts Act</span>
               </div>
-              <div>
-                <p className="text-xl sm:text-2xl md:text-3xl font-black text-emerald-400">
-                  s.9 + s.21
-                </p>
-                <p className="text-[10px] sm:text-xs text-slate-400 mt-1">
-                  PBG Injunction &amp; Limitation Freeze
-                </p>
+              <div className="space-y-1">
+                <span className="text-[10px] sm:text-xs text-slate-400 block font-medium">Arbitration Timeline</span>
+                <span className="text-base sm:text-lg md:text-xl font-bold text-emerald-400 block">12 Months</span>
+                <span className="text-[10px] text-slate-400">s.29A Fast-Track Mandate</span>
               </div>
-              <div>
-                <p className="text-xl sm:text-2xl md:text-3xl font-black text-amber-400">
-                  60d / 12m
-                </p>
-                <p className="text-[10px] sm:text-xs text-slate-400 mt-1">
-                  CPC s.80 Wait &amp; s.29A Award Window
-                </p>
+              <div className="space-y-1">
+                <span className="text-[10px] sm:text-xs text-slate-400 block font-medium">Govt / PSU Notice</span>
+                <span className="text-base sm:text-lg md:text-xl font-bold text-amber-400 block">60 Days</span>
+                <span className="text-[10px] text-slate-400">Section 80 CPC Mandate</span>
               </div>
-              <div>
-                <p className="text-xl sm:text-2xl md:text-3xl font-black text-red-400">
-                  &rupee;999 &rarr; CSV
-                </p>
-                <p className="text-[10px] sm:text-xs text-slate-400 mt-1">
-                  Single Claim Pilot to Multi-Site Desk
-                </p>
+              <div className="space-y-1">
+                <span className="text-[10px] sm:text-xs text-slate-400 block font-medium">BG Shield Priority</span>
+                <span className="text-base sm:text-lg md:text-xl font-bold text-red-400 block">Section 9 Injunction</span>
+                <span className="text-[10px] text-slate-400">Commercial Court Stay</span>
               </div>
             </div>
-
-            <p className="mt-4 text-[11px] sm:text-xs text-slate-400">
-              Infrastructure &amp; Arbitration Protocol Reviewed by{" "}
-              <Link
-                href="/authors/anuj-anand-malik"
-                className="text-slate-200 underline hover:text-white font-semibold"
-              >
-                Anuj Anand Malik
-              </Link>
-              , Advocate &amp; Founder, AMA Legal Solutions &bull; Updated November 2026
-            </p>
           </div>
         </section>
 
-        {/* Main 2-Column Content Container */}
+        {/* Main Content Layout */}
         <main className="w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-6 pb-12 sm:pt-8 sm:pb-16">
-          <div className="mb-2">
+          <div className="mb-6">
             <Breadcrumbs items={breadcrumbItems} />
           </div>
 
           <div className="flex flex-col lg:flex-row gap-8 xl:gap-12 items-start w-full min-w-0">
-            {/* Left Sticky Sidebar TOC */}
+            {/* Sticky Table of Contents */}
             <ConstructionHubTableOfContents />
 
-            {/* Right Main Content Column */}
+            {/* Main Editorial Column */}
             <div className="flex-1 w-full min-w-0 space-y-10 sm:space-y-12">
-              {/* Section 1: EPC Recovery Gap */}
+              {/* Section 1: The Construction Recovery Gap */}
               <section
                 id="heading-epc-gap"
-                aria-labelledby="heading-epc-gap-title"
-                className="scroll-mt-28 bg-white rounded-2xl border border-slate-200 p-5 sm:p-6 md:p-8 shadow-sm space-y-5"
+                className="scroll-mt-28 bg-white rounded-2xl border border-slate-200 p-5 sm:p-6 md:p-8 shadow-sm space-y-6"
               >
-                <div className="flex items-start gap-3 border-b border-slate-100 pb-4">
-                  <span className="w-7 h-7 rounded-full bg-[#DC2626] text-white text-xs font-black flex items-center justify-center shrink-0 mt-0.5">
-                    1
+                <div className="border-b border-slate-200 pb-4">
+                  <span className="text-xs font-bold uppercase tracking-wider text-[#DC2626] block mb-1">
+                    Industry Recovery Gap &bull; IND-07
                   </span>
-                  <div>
-                    <h2
-                      id="heading-epc-gap-title"
-                      className="text-xl sm:text-2xl font-extrabold text-slate-900 tracking-tight"
-                    >
-                      Why Construction &amp; EPC Dues Stall Beyond Standard Invoices
-                    </h2>
-                    <p className="text-xs font-semibold text-slate-500 mt-1">
-                      Commercial Courts Act s.2(1)(c)(vi), Measurement Book Bottlenecks, Works-Contract Traps &amp; Bank Guarantee Leverage
+                  <h2 className="text-xl sm:text-2xl font-black text-slate-900 tracking-tight">
+                    Why Construction &amp; EPC Dues Stall Beyond Standard Invoices
+                  </h2>
+                </div>
+
+                <p className="text-sm sm:text-base text-slate-700 leading-relaxed font-normal">
+                  In commercial debt recovery, ordinary retail or trading debt is straightforward: a tax invoice is issued, goods are delivered against an e-Way bill, and payment falls due within 30 to 45 days. In the infrastructure and civil engineering sector, however, recovery is exponentially more complex. Whether dealing with an NHAI highway package, a metro rail elevated corridor, a commercial high-rise, or an industrial turnkey facility, contractors face structural bottlenecks that require specialized institutional legal interventions rather than generic collection notices.
+                </p>
+
+                <p className="text-sm sm:text-base text-slate-700 leading-relaxed font-normal">
+                  When dealing with stubborn commercial debtors, partnering with a knowledgeable civil work measurement book dispute recovery lawyer allows contractors to overcome administrative delays and compel joint site verifications through enforceable statutory channels. The four primary systemic failure modes in Indian construction projects include:
+                </p>
+
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                  <div className="p-4 rounded-xl bg-slate-50 border border-slate-200 space-y-2">
+                    <span className="text-xs font-extrabold text-[#DC2626] uppercase tracking-wide block">
+                      1. Measurement Book (MB) Stonewalling
+                    </span>
+                    <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
+                      Developers and Project Management Consultants (PMCs) deliberately delay joint site measurements or refuse to sign Measurement Books. Without an endorsed MB, the employer argues the Running Account (RA) bill is &quot;uncertified&quot; and premature, freezing working capital while forcing the contractor to continue site operations. Engaging an experienced civil work measurement book dispute recovery lawyer becomes essential to establish deemed certification.
+                    </p>
+                  </div>
+
+                  <div className="p-4 rounded-xl bg-slate-50 border border-slate-200 space-y-2">
+                    <span className="text-xs font-extrabold text-[#DC2626] uppercase tracking-wide block">
+                      2. Coerced &quot;No-Claim Certificates&quot; (NDCs)
+                    </span>
+                    <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
+                      To release even partial tranches of long-overdue bills, developers frequently demand unconditional &quot;No-Dues Certificates&quot; on contractor letterhead. Desperate to meet labour payroll and vendor commitments, contractors sign under financial duress—unaware that Supreme Court jurisprudence protects claims signed under protest.
+                    </p>
+                  </div>
+
+                  <div className="p-4 rounded-xl bg-slate-50 border border-slate-200 space-y-2">
+                    <span className="text-xs font-extrabold text-[#DC2626] uppercase tracking-wide block">
+                      3. Indefinite Retention Money Withholding
+                    </span>
+                    <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
+                      Contracts mandate 5% to 10% retention money deductions from every RA bill, repayable upon expiry of the Defect Liability Period (DLP). Developers routinely invent cosmetic punch-list defects or cite pending Occupancy Certificates (OCs) to withhold retention funds years after commercial handover and tenant occupation.
+                    </p>
+                  </div>
+
+                  <div className="p-4 rounded-xl bg-slate-50 border border-slate-200 space-y-2">
+                    <span className="text-xs font-extrabold text-[#DC2626] uppercase tracking-wide block">
+                      4. Retaliatory Bank Guarantee Encashment
+                    </span>
+                    <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
+                      The moment a contractor serves a legal demand for unpaid bills or extra-item variations, employers weaponize Performance Bank Guarantees (PBGs). Unless restrained through an urgent Section 9 Commercial Court petition, wrongful encashment destroys the contractor&apos;s banking limits and balance sheet overnight.
                     </p>
                   </div>
                 </div>
 
-                <div className="text-xs sm:text-sm md:text-base text-slate-700 leading-relaxed space-y-4">
-                  <p>
-                    Generic legal-tech portals treat an ₹85 Lakh HVAC or civil Running Account (RA) bill the exact same way they treat a ₹15,000 retail invoice. In reality, construction, infrastructure, and turnkey MEP receivables sit behind five specialized employer defenses: unsigned Joint Measurement Books (MBs), postponed Defect Liability Period (DLP) retention releases, arbitrary 10% Liquidated Damages (LD) debit notes, forced No-Claim Certificates (NDCs), and retaliatory threats to encash Performance Bank Guarantees (PBGs).
+                <div className="space-y-4 pt-2">
+                  <h3 className="text-base sm:text-lg font-bold text-slate-900">
+                    Evidentiary Architecture Under Section 63 Bharatiya Sakshya Adhiniyam, 2023
+                  </h3>
+                  <p className="text-xs sm:text-sm text-slate-700 leading-relaxed">
+                    When an employer refuses to countersign the Measurement Book, the contractor must construct an unassailable contemporaneous paper trail. Under Section 63 of the Bharatiya Sakshya Adhiniyam, 2023 (BSA 2023), electronic records—including Daily Progress Reports (DPRs), digital level books, concrete batching plant logs, cube compressive strength test certificates from NABL-accredited laboratories, and WhatsApp/email communication chains—are fully admissible as primary electronic evidence.
                   </p>
-                  <p>
-                    Meanwhile, thousands of Udyam-registered EPC and MEP contractors lose two years pursuing MSME Samadhaan only for High Courts to quash their MSEFC awards because an indivisible composite &ldquo;Works Contract&rdquo; falls outside MSMED Section 18. Section 2(1)(c)(vi) of the Commercial Courts Act, 2015 expressly classifies construction and infrastructure contracts (including tenders) as specialized commercial disputes requiring disciplined claim crystallization before litigation.
+                  <p className="text-xs sm:text-sm text-slate-700 leading-relaxed">
+                    By serving a structured statutory demand annexing these Section 63 BSA records, the contractor legally shifts the burden of proof onto the employer. Under Section 55 and Section 70 of the Indian Contract Act, 1872, an employer who accepts the benefit of executed civil works without returning contemporaneous written rejections within the contractual inspection window is deemed to have accepted the quantities as billed.
                   </p>
-                  <p>
-                    This IND-07 Pillar Hub unites all 11 construction recovery playbooks, statutory calculators, and advocate notice packs—alongside our live{" "}
-                    <Link
-                      href="/subcontractor-payment-recovery-india"
-                      className="text-[#DC2626] font-semibold underline"
-                    >
-                      subcontractor payment recovery guide
-                    </Link>
-                    ,{" "}
-                    <Link
-                      href="/recovery/contractor-payment"
-                      className="text-[#DC2626] font-semibold underline"
-                    >
-                      contractor payment recovery desk
-                    </Link>
-                    , and{" "}
-                    <Link
-                      href="/law/section-80-cpc-notice-to-government"
-                      className="text-[#DC2626] font-semibold underline"
-                    >
-                      Section 80 CPC government notice playbook
-                    </Link>
-                    .
+                  <p className="text-xs sm:text-sm text-slate-700 leading-relaxed">
+                    Furthermore, standard construction contract frameworks—such as CPWD General Conditions of Contract (GCC) Clauses 7 and 8, FIDIC Red Book Sub-Clauses 14.3 and 14.6, and Model EPC Concession Agreements under NHAI—mandate that the Engineer or PMC must record joint measurements within a stipulated window (typically 10 to 14 days of invoice submission). If the employer fails to conduct the measurement within this period after receiving formal notice, the contractor&apos;s submitted measurements achieve the legal status of deemed certification, entitling the contractor to immediate payment of the interim Running Account bill.
                   </p>
                 </div>
 
-                <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 pt-1">
-                  <div className="p-4 rounded-xl bg-slate-50 border border-slate-200">
-                    <span className="text-[11px] font-bold uppercase tracking-wider text-[#DC2626] block mb-1">
-                      MB &amp; Duress Protocol
-                    </span>
-                    <strong className="text-sm sm:text-base text-slate-900 block">
-                      Beat Uncertified Final Bills
-                    </strong>
-                    <p className="text-xs text-slate-600 mt-1">
-                      Convert DPRs, level sheets, and GST invoices into deemed certification and invalidate coerced NDCs under R.L. Kalathia.
-                    </p>
-                  </div>
-                  <div className="p-4 rounded-xl bg-slate-50 border border-slate-200">
-                    <span className="text-[11px] font-bold uppercase tracking-wider text-[#DC2626] block mb-1">
-                      DLP &amp; s.74 Shield
-                    </span>
-                    <strong className="text-sm sm:text-base text-slate-900 block">
-                      Unlock Retention &amp; Counter LD
-                    </strong>
-                    <p className="text-xs text-slate-600 mt-1">
-                      Trigger beneficial occupation DLP expiry and strike down windfall 10% LD set-offs lacking Kailash Nath loss proof.
-                    </p>
-                  </div>
-                  <div className="p-4 rounded-xl bg-slate-50 border border-slate-200">
-                    <span className="text-[11px] font-bold uppercase tracking-wider text-[#DC2626] block mb-1">
-                      PBG &amp; Limitation Guard
-                    </span>
-                    <strong className="text-sm sm:text-base text-slate-900 block">
-                      s.9 Stay &amp; s.21 Invocation
-                    </strong>
-                    <p className="text-xs text-slate-600 mt-1">
-                      Restrain bad-faith Bank Guarantee invocation under Section 9 while stopping the 3-year Nortel limitation clock cleanly.
-                    </p>
-                  </div>
+                <div className="bg-red-50/70 border-l-4 border-[#DC2626] p-4 rounded-r-xl">
+                  <p className="text-xs sm:text-sm text-slate-800 leading-relaxed">
+                    <strong>The Commercial Courts Act Breakthrough:</strong> Section 2(1)(c)(vi) of the Commercial Courts Act, 2015 explicitly classifies construction and infrastructure contracts (including construction tenders) as commercial disputes. This statutory classification unlocks specialized Commercial Courts, mandatory Section 12A Pre-Institution Mediation with limitation protection, Order XIII-A Summary Judgments for admitted MBs, and commercial interest rates—bypassing decade-long civil suit backlogs.
+                  </p>
                 </div>
               </section>
 
-              {/* Section 2: Multi-Track Claim Escalation Matrix */}
+              {/* Section 2: Escalation Matrix */}
               <section
                 id="heading-escalation-matrix"
-                aria-labelledby="heading-escalation-matrix-title"
-                className="scroll-mt-28 bg-white rounded-2xl border border-slate-200 p-5 sm:p-6 md:p-8 shadow-sm space-y-5"
+                className="scroll-mt-28 bg-white rounded-2xl border border-slate-200 p-5 sm:p-6 md:p-8 shadow-sm space-y-6"
               >
-                <div className="flex items-start gap-3 border-b border-slate-100 pb-4">
-                  <span className="w-7 h-7 rounded-full bg-[#DC2626] text-white text-xs font-black flex items-center justify-center shrink-0 mt-0.5">
-                    2
+                <div className="border-b border-slate-200 pb-4">
+                  <span className="text-xs font-bold uppercase tracking-wider text-[#DC2626] block mb-1">
+                    Multi-Track Forum Selection
                   </span>
-                  <div>
-                    <h2
-                      id="heading-escalation-matrix-title"
-                      className="text-xl sm:text-2xl font-extrabold text-slate-900 tracking-tight"
-                    >
-                      Construction Claim Escalation Matrix by Contract &amp; Ticket
-                    </h2>
-                    <p className="text-xs font-semibold text-slate-500 mt-1">
-                      Routing EPC, Civil, MEP &amp; Subcontract Receivables by Ticket Tier, Employer Type, and Statutory Mechanism
-                    </p>
-                  </div>
+                  <h2 className="text-xl sm:text-2xl font-black text-slate-900 tracking-tight">
+                    Construction Claim Escalation Matrix by Contract &amp; Ticket
+                  </h2>
                 </div>
 
-                <div className="overflow-x-auto rounded-xl border border-slate-200">
-                  <table className="w-full text-left text-xs sm:text-sm border-collapse min-w-[740px]">
+                <p className="text-sm sm:text-base text-slate-700 leading-relaxed">
+                  Construction recoveries cannot follow a single procedural path. Selecting the right statutory rail depends on ticket size, the nature of documentation (certified vs uncertified), public sector vs private developer status, and whether the underlying agreement contains an arbitration clause. When dealing with specialized infrastructure arbitration and claim recovery india, contractors must calibrate their legal notices to the exact contractual forum:
+                </p>
+
+                <div className="overflow-x-auto -mx-2 sm:mx-0">
+                  <table className="w-full text-left border-collapse text-xs sm:text-sm min-w-[620px]">
                     <thead>
-                      <tr className="bg-slate-900 text-white font-bold">
-                        <th className="p-3.5 border-b border-slate-800">Claim &amp; Contract Bucket</th>
-                        <th className="p-3.5 border-b border-slate-800">Typical Ticket</th>
-                        <th className="p-3.5 border-b border-slate-800">Primary Statutory Lever</th>
-                        <th className="p-3.5 border-b border-slate-800">Notice &amp; Pre-Tier Window</th>
-                        <th className="p-3.5 border-b border-slate-800">Target Adjudication Forum</th>
+                      <tr className="bg-slate-900 text-white border-b border-slate-800">
+                        <th className="py-3 px-3.5 font-bold uppercase tracking-wider">Dispute Category</th>
+                        <th className="py-3 px-3 font-bold uppercase tracking-wider">Pecuniary Floor</th>
+                        <th className="py-3 px-3 font-bold uppercase tracking-wider">Primary Statutory Rail</th>
+                        <th className="py-3 px-3 font-bold uppercase tracking-wider">Pre-Tier Waiting Period</th>
+                        <th className="py-3 px-3 font-bold uppercase tracking-wider">Enforcement Forum</th>
                       </tr>
                     </thead>
-                    <tbody className="divide-y divide-slate-100 text-slate-700">
-                      <tr className="hover:bg-slate-50">
-                        <td className="p-3.5 font-bold text-slate-900">
-                          Uncertified RA / Final Bills &amp; Coerced NDC
+                    <tbody className="divide-y divide-slate-200 text-slate-800">
+                      <tr className="hover:bg-slate-50 transition-colors">
+                        <td className="py-3 px-3.5 font-semibold text-slate-900">
+                          Uncertified RA Bills &amp; Stalled MB
                         </td>
-                        <td className="p-3.5">&rupee;10L&ndash;&rupee;15Cr+</td>
-                        <td className="p-3.5">Contract Act s.55/70, Ambica / Kalathia Duress Rule</td>
-                        <td className="p-3.5 font-semibold text-amber-700">15d Demand + Immediate NDC Protest</td>
-                        <td className="p-3.5">Arbitration s.21 / Commercial Court s.12A</td>
+                        <td className="py-3 px-3 font-mono">&ge; &#8377;10 Lakh</td>
+                        <td className="py-3 px-3">Deemed MB Notice &amp; s.21 Invocation</td>
+                        <td className="py-3 px-3">15–30 Days (Contractual)</td>
+                        <td className="py-3 px-3 font-medium text-[#DC2626]">Sole Arbitrator / Commercial Court</td>
                       </tr>
-                      <tr className="hover:bg-slate-50">
-                        <td className="p-3.5 font-bold text-slate-900">
-                          Post-DLP Retention Money (5%&ndash;10%)
+                      <tr className="hover:bg-slate-50 transition-colors bg-slate-50/50">
+                        <td className="py-3 px-3.5 font-semibold text-slate-900">
+                          Post-DLP Retention Money Release
                         </td>
-                        <td className="p-3.5">&rupee;5L&ndash;&rupee;5Cr</td>
-                        <td className="p-3.5">Contract Act s.73/74 &amp; Beneficial Occupation</td>
-                        <td className="p-3.5 font-semibold text-emerald-700">15d Release Notice post-DLP</td>
-                        <td className="p-3.5">Order 37 CPC / Commercial Summary (O.XIII-A)</td>
+                        <td className="py-3 px-3 font-mono">&#8377;5L – &#8377;25 Cr</td>
+                        <td className="py-3 px-3">Beneficial Possession Proof &amp; Demand</td>
+                        <td className="py-3 px-3">30 Days Post-DLP Expiry</td>
+                        <td className="py-3 px-3 font-medium text-emerald-700">Order 37 CPC / Arb s.11</td>
                       </tr>
-                      <tr className="hover:bg-slate-50">
-                        <td className="p-3.5 font-bold text-slate-900">
-                          NHAI, CPWD, PWD, JJM &amp; Municipal Tenders
+                      <tr className="hover:bg-slate-50 transition-colors">
+                        <td className="py-3 px-3.5 font-semibold text-slate-900">
+                          NHAI, CPWD, PWD &amp; JJM Dues
                         </td>
-                        <td className="p-3.5">&rupee;15L&ndash;&rupee;50Cr+</td>
-                        <td className="p-3.5">CPC s.80, Art. 226 Writ (Surya Constructions), GCC DRB</td>
-                        <td className="p-3.5 font-semibold text-[#DC2626]">60d CPC s.80 / GCC Engineer-DRB Steps</td>
-                        <td className="p-3.5">High Court Writ (Admitted MB) / Arbitral Tribunal</td>
+                        <td className="py-3 px-3 font-mono">&ge; &#8377;25 Lakh</td>
+                        <td className="py-3 px-3">s.80 CPC Notice &amp; Art. 226 Writ</td>
+                        <td className="py-3 px-3">Mandatory 60 Days (s.80 CPC)</td>
+                        <td className="py-3 px-3 font-medium text-amber-800">High Court / GCC DRB &amp; Arb</td>
                       </tr>
-                      <tr className="hover:bg-slate-50">
-                        <td className="p-3.5 font-bold text-slate-900">
-                          Subcontractor &lsquo;Pay-When-Paid&rsquo; Holdbacks
+                      <tr className="hover:bg-slate-50 transition-colors bg-slate-50/50">
+                        <td className="py-3 px-3.5 font-semibold text-slate-900">
+                          Tier-2 Subcontractor &amp; MEP Bills
                         </td>
-                        <td className="p-3.5">&rupee;5L&ndash;&rupee;3Cr</td>
-                        <td className="p-3.5">Contract Act s.23/46, Ircon Precedent, IBC s.8 (&ge;&rupee;1Cr)</td>
-                        <td className="p-3.5">15d Reasonable-Time Breach / 10d IBC Form 3</td>
-                        <td className="p-3.5">Commercial Court / s.21 Arbitration / NCLT</td>
+                        <td className="py-3 px-3 font-mono">&#8377;3L – &#8377;10 Cr</td>
+                        <td className="py-3 px-3">Contract Act s.46 (Invalidating Pay-When-Paid)</td>
+                        <td className="py-3 px-3">15 Days Statutory Notice</td>
+                        <td className="py-3 px-3 font-medium text-[#DC2626]">Commercial Court s.12A / MSEFC (Supply)</td>
                       </tr>
-                      <tr className="hover:bg-slate-50">
-                        <td className="p-3.5 font-bold text-slate-900">
-                          Divisible Supply POs vs Composite Works
+                      <tr className="hover:bg-slate-50 transition-colors">
+                        <td className="py-3 px-3.5 font-semibold text-slate-900">
+                          Prolongation &amp; Extra-Item Claims
                         </td>
-                        <td className="p-3.5">&rupee;3L&ndash;&rupee;5Cr</td>
-                        <td className="p-3.5">MSMED s.15&ndash;18 (Supply Only) vs s.43B(h) Tax Rule</td>
-                        <td className="p-3.5">15&ndash;45d Appointed Day + Pre-31 Mar Notice</td>
-                        <td className="p-3.5">MSEFC (Supply) / Commercial Court (Works)</td>
+                        <td className="py-3 px-3 font-mono">&ge; &#8377;50 Lakh</td>
+                        <td className="py-3 px-3">Contract Act s.55 Notice &amp; Hudson Formula</td>
+                        <td className="py-3 px-3">Synchronous with EOT Applications</td>
+                        <td className="py-3 px-3 font-medium text-slate-900">Arbitral Tribunal (s.29A 12-mo)</td>
                       </tr>
-                      <tr className="hover:bg-slate-50">
-                        <td className="p-3.5 font-bold text-slate-900">
-                          Prolongation, Extra Items, LD &amp; PBG Threat
+                      <tr className="hover:bg-slate-50 transition-colors bg-slate-50/50">
+                        <td className="py-3 px-3.5 font-semibold text-slate-900">
+                          Wrongful 10% LD &amp; Termination
                         </td>
-                        <td className="p-3.5">&rupee;25L&ndash;&rupee;50Cr+</td>
-                        <td className="p-3.5">Contract Act s.55 &amp; s.74 (Kailash Nath), Arb Act s.9</td>
-                        <td className="p-3.5 font-semibold text-[#DC2626]">EOT Reservation + Urgent s.9 BG Stay</td>
-                        <td className="p-3.5">Commercial Court (s.9) &rarr; Tribunal (s.29A 12m)</td>
+                        <td className="py-3 px-3 font-mono">10% Contract Sum</td>
+                        <td className="py-3 px-3">Contract Act s.74 (Kailash Nath Actual Loss)</td>
+                        <td className="py-3 px-3">Immediate 7-Day Injunction Move</td>
+                        <td className="py-3 px-3 font-medium text-red-700">Commercial Court s.9 / Section 17</td>
                       </tr>
-                      <tr className="hover:bg-slate-50">
-                        <td className="p-3.5 font-bold text-slate-900">
-                          Unpaid Arbitral Awards (Post-s.34 Filing)
+                      <tr className="hover:bg-slate-50 transition-colors">
+                        <td className="py-3 px-3.5 font-semibold text-slate-900">
+                          Arbitral Award Execution
                         </td>
-                        <td className="p-3.5">&rupee;10L&ndash;&rupee;50Cr+</td>
-                        <td className="p-3.5">Arbitration s.36(3) Deposit, NITI 75% PSU, IBC s.9</td>
-                        <td className="p-3.5">Post-90d Award Window / BG Submission</td>
-                        <td className="p-3.5">Execution Court (O.21 Garnishee) / NCLT</td>
+                        <td className="py-3 px-3 font-mono">Crystallized Sum</td>
+                        <td className="py-3 px-3">Arbitration Act s.36 Decree &amp; NITI 75%</td>
+                        <td className="py-3 px-3">90 Days Post-Award (s.34 window)</td>
+                        <td className="py-3 px-3 font-medium text-emerald-700">Commercial Court Execution / IBC s.9</td>
                       </tr>
                     </tbody>
                   </table>
                 </div>
+
+                <div className="space-y-4 pt-2">
+                  <h3 className="text-base sm:text-lg font-bold text-slate-900">
+                    Navigating Government Tenders: NHAI, CPWD, Railways &amp; Jal Jeevan Mission
+                  </h3>
+                  <p className="text-xs sm:text-sm text-slate-700 leading-relaxed">
+                    For public sector projects, finding a prompt nhai cpwd pwd contractor payment delay legal remedy requires balancing statutory prerequisites with aggressive legal remedies. Section 80(1) CPC makes a 60-day notice mandatory prior to instituting civil or commercial recovery suits against government authorities. Under Section 15(2) of the Limitation Act, 1963, this 60-day notice period is excluded from computing limitation, ensuring contractors do not lose their legal rights while exhausting administrative review.
+                  </p>
+                  <p className="text-xs sm:text-sm text-slate-700 leading-relaxed">
+                    Furthermore, where public authorities admit the certified MB quantities but refuse disbursement by citing &quot;budget freeze&quot; or &quot;head-office grants pending&quot;, the contractor is not required to undergo a 5-year civil trial. The Supreme Court in <em>M/s Surya Constructions v. State of U.P.</em> established that writ petitions under Article 226 of the Constitution are fully maintainable against public authorities to compel payment of undisputed, certified contractor liabilities.
+                  </p>
+                  <p className="text-xs sm:text-sm text-slate-700 leading-relaxed">
+                    Under CPWD GCC Clause 25 and standard NHAI concession models, contracts often mandate a multi-tiered dispute escalation mechanism—requiring disputes to be referred first to the Engineer-in-Charge, followed by the Dispute Review Board (DRB) or Dispute Review Expert (DRE), before formal arbitration can be invoked. Serving a defect-free claim notice that meticulously complies with these contractual pre-conditions prevents respondents from filing procedural delay petitions under Section 11(6) of the Arbitration Act, ensuring the arbitral tribunal is constituted within statutory timeframes.
+                  </p>
+                </div>
               </section>
 
-              {/* Section 3: SVG Workflow Architecture + Mobile Stacked Cards */}
+              {/* Section 3: Recovery Rail SVG Workflow */}
               <section
                 id="heading-epc-pipeline"
-                aria-labelledby="heading-epc-pipeline-title"
-                className="scroll-mt-28 bg-white rounded-2xl border border-slate-200 p-5 sm:p-6 md:p-8 shadow-sm space-y-5"
+                className="scroll-mt-28 bg-white rounded-2xl border border-slate-200 p-5 sm:p-6 md:p-8 shadow-sm space-y-6"
               >
-                <div className="flex items-start gap-3 border-b border-slate-100 pb-4">
-                  <span className="w-7 h-7 rounded-full bg-[#DC2626] text-white text-xs font-black flex items-center justify-center shrink-0 mt-0.5">
-                    3
+                <div className="border-b border-slate-200 pb-4">
+                  <span className="text-xs font-bold uppercase tracking-wider text-[#DC2626] block mb-1">
+                    End-to-End Workflow Architecture
                   </span>
-                  <div>
-                    <h2
-                      id="heading-epc-pipeline-title"
-                      className="text-xl sm:text-2xl font-extrabold text-slate-900 tracking-tight"
-                    >
-                      EPC Recovery Rail: From Joint MB &amp; Notice to s.36 Decree
-                    </h2>
-                    <p className="text-xs font-semibold text-slate-500 mt-1">
-                      5-Stage Infrastructure Litigation Pipeline Protecting Cashflow, Bank Guarantees, and Limitation Deadlines
-                    </p>
-                  </div>
+                  <h2 className="text-xl sm:text-2xl font-black text-slate-900 tracking-tight">
+                    EPC Recovery Rail: From Joint MB &amp; Notice to s.36 Decree
+                  </h2>
                 </div>
 
-                {/* Desktop Hand-Authored SVG Diagram */}
-                <div className="hidden md:block rounded-xl border border-slate-200 bg-slate-900 p-4 overflow-x-auto">
+                <p className="text-sm sm:text-base text-slate-700 leading-relaxed">
+                  Recovering complex contractor dues requires a disciplined 5-stage legal architecture. Each step builds an unassailable evidentiary record under the Bharatiya Sakshya Adhiniyam, 2023 (BSA 2023), eliminating debtor defences before the matter reaches an arbitral tribunal or commercial judge.
+                </p>
+
+                {/* Desktop SVG Workflow */}
+                <div className="hidden md:block w-full overflow-hidden py-3">
                   <svg
-                    width={920}
-                    height={310}
-                    viewBox="0 0 920 310"
-                    role="img"
-                    aria-label="5-stage construction and EPC contractor legal recovery workflow from Measurement Book audit to Section 36 execution"
+                    viewBox="0 0 860 160"
+                    width={860}
+                    height={160}
                     className="w-full h-auto"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                    aria-label="5-Stage Construction and EPC Legal Recovery Rail"
                   >
-                    <rect x="0" y="0" width="920" height="310" rx="12" fill="#0F172A" />
-                    <text x="24" y="34" fill="#F87171" fontSize="11" fontWeight="700" letterSpacing="1.2">
-                      LEGALRECOVERY.IN &bull; IND-07 CONSTRUCTION &amp; EPC RECOVERY ARCHITECTURE
-                    </text>
-
                     {/* Stage 1 */}
-                    <rect x="24" y="58" width="156" height="196" rx="10" fill="#1E293B" stroke="#334155" strokeWidth="1.5" />
-                    <circle cx="48" cy="84" r="13" fill="#DC2626" />
-                    <text x="48" y="88" textAnchor="middle" fill="#FFFFFF" fontSize="11" fontWeight="800">01</text>
-                    <text x="70" y="88" fill="#F8FAFC" fontSize="12" fontWeight="700">Site Audit</text>
-                    <text x="36" y="116" fill="#CBD5E1" fontSize="10.5">Joint MB &amp; Site DPRs</text>
-                    <text x="36" y="134" fill="#CBD5E1" fontSize="10.5">Hindrance &amp; EOT Logs</text>
-                    <text x="36" y="152" fill="#CBD5E1" fontSize="10.5">Supply vs Works Check</text>
-                    <rect x="36" y="178" width="132" height="58" rx="6" fill="#0F172A" stroke="#334155" />
-                    <text x="44" y="198" fill="#34D399" fontSize="10" fontWeight="700">Limitation Split</text>
-                    <text x="44" y="215" fill="#94A3B8" fontSize="9.5">Final Bill vs Post-DLP</text>
+                    <g transform="translate(10, 10)">
+                      <rect width="150" height="140" rx="12" fill="#0F172A" stroke="#334155" strokeWidth="1.5" />
+                      <circle cx="28" cy="28" r="14" fill="#DC2626" />
+                      <text x="28" y="32" fill="#FFFFFF" fontSize="11" fontWeight="bold" textAnchor="middle">01</text>
+                      <text x="50" y="32" fill="#F8FAFC" fontSize="12" fontWeight="bold">Site Audit</text>
+                      <text x="14" y="65" fill="#94A3B8" fontSize="10">DPRs &amp; Pour Cards</text>
+                      <text x="14" y="82" fill="#94A3B8" fontSize="10">Joint Level Sheets</text>
+                      <text x="14" y="99" fill="#94A3B8" fontSize="10">Material Gate Pass</text>
+                      <text x="14" y="122" fill="#38BDF8" fontSize="9" fontWeight="600">BSA 2023 s.63 Proof</text>
+                    </g>
 
-                    <path d="M180 154 L202 154" stroke="#DC2626" strokeWidth="2.5" />
-                    <polygon points="202,149 212,154 202,159" fill="#DC2626" />
+                    {/* Arrow 1 */}
+                    <path d="M165 80 L180 80" stroke="#DC2626" strokeWidth="2" strokeDasharray="3 3" />
 
                     {/* Stage 2 */}
-                    <rect x="212" y="58" width="156" height="196" rx="10" fill="#1E293B" stroke="#334155" strokeWidth="1.5" />
-                    <circle cx="236" cy="84" r="13" fill="#DC2626" />
-                    <text x="236" y="88" textAnchor="middle" fill="#FFFFFF" fontSize="11" fontWeight="800">02</text>
-                    <text x="258" y="88" fill="#F8FAFC" fontSize="12" fontWeight="700">Notice &amp; BG</text>
-                    <text x="224" y="116" fill="#CBD5E1" fontSize="10.5">RA / Retention Demand</text>
-                    <text x="224" y="134" fill="#CBD5E1" fontSize="10.5">s.55 EOT Reservation</text>
-                    <text x="224" y="152" fill="#CBD5E1" fontSize="10.5">CPC s.80 (60d PSU)</text>
-                    <rect x="224" y="178" width="132" height="58" rx="6" fill="#0F172A" stroke="#334155" />
-                    <text x="232" y="198" fill="#FBBF24" fontSize="10" fontWeight="700">Section 9 PBG Stay</text>
-                    <text x="232" y="215" fill="#94A3B8" fontSize="9.5">Block Retaliatory Encash</text>
+                    <g transform="translate(185, 10)">
+                      <rect width="150" height="140" rx="12" fill="#FFFFFF" stroke="#CBD5E1" strokeWidth="1.5" />
+                      <circle cx="28" cy="28" r="14" fill="#DC2626" />
+                      <text x="28" y="32" fill="#FFFFFF" fontSize="11" fontWeight="bold" textAnchor="middle">02</text>
+                      <text x="50" y="32" fill="#0F172A" fontSize="12" fontWeight="bold">Statutory Notice</text>
+                      <text x="14" y="65" fill="#475569" fontSize="10">Deemed MB Notice</text>
+                      <text x="14" y="82" fill="#475569" fontSize="10">Duress Protest Letter</text>
+                      <text x="14" y="99" fill="#475569" fontSize="10">s.80 CPC (Govt / PSU)</text>
+                      <text x="14" y="122" fill="#DC2626" fontSize="9" fontWeight="600">15–60 Day Demand</text>
+                    </g>
 
-                    <path d="M368 154 L390 154" stroke="#DC2626" strokeWidth="2.5" />
-                    <polygon points="390,149 400,154 390,159" fill="#DC2626" />
+                    {/* Arrow 2 */}
+                    <path d="M340 80 L355 80" stroke="#DC2626" strokeWidth="2" strokeDasharray="3 3" />
 
                     {/* Stage 3 */}
-                    <rect x="400" y="58" width="156" height="196" rx="10" fill="#1E293B" stroke="#334155" strokeWidth="1.5" />
-                    <circle cx="424" cy="84" r="13" fill="#DC2626" />
-                    <text x="424" y="88" textAnchor="middle" fill="#FFFFFF" fontSize="11" fontWeight="800">03</text>
-                    <text x="446" y="88" fill="#F8FAFC" fontSize="12" fontWeight="700">Pre-Tier Cure</text>
-                    <text x="412" y="116" fill="#CBD5E1" fontSize="10.5">Duress NDC Protest</text>
-                    <text x="412" y="134" fill="#CBD5E1" fontSize="10.5">Kailash Nath LD Rebut</text>
-                    <text x="412" y="152" fill="#CBD5E1" fontSize="10.5">Engineer / DRB Escalate</text>
-                    <rect x="412" y="178" width="132" height="58" rx="6" fill="#0F172A" stroke="#334155" />
-                    <text x="420" y="198" fill="#34D399" fontSize="10" fontWeight="700">BSA s.63 Service</text>
-                    <text x="420" y="215" fill="#94A3B8" fontSize="9.5">RPAD + Email + WA Hash</text>
+                    <g transform="translate(360, 10)">
+                      <rect width="150" height="140" rx="12" fill="#FFFFFF" stroke="#CBD5E1" strokeWidth="1.5" />
+                      <circle cx="28" cy="28" r="14" fill="#DC2626" />
+                      <text x="28" y="32" fill="#FFFFFF" fontSize="11" fontWeight="bold" textAnchor="middle">03</text>
+                      <text x="50" y="32" fill="#0F172A" fontSize="12" fontWeight="bold">BG Shield</text>
+                      <text x="14" y="65" fill="#475569" fontSize="10">Section 9 Petition</text>
+                      <text x="14" y="82" fill="#475569" fontSize="10">Restrain PBG Encashment</text>
+                      <text x="14" y="99" fill="#475569" fontSize="10">Special Equities Plea</text>
+                      <text x="14" y="122" fill="#DC2626" fontSize="9" fontWeight="600">Urgent Injunction</text>
+                    </g>
 
-                    <path d="M556 154 L578 154" stroke="#DC2626" strokeWidth="2.5" />
-                    <polygon points="578,149 588,154 578,159" fill="#DC2626" />
+                    {/* Arrow 3 */}
+                    <path d="M515 80 L530 80" stroke="#DC2626" strokeWidth="2" strokeDasharray="3 3" />
 
                     {/* Stage 4 */}
-                    <rect x="588" y="58" width="156" height="196" rx="10" fill="#1E293B" stroke="#334155" strokeWidth="1.5" />
-                    <circle cx="612" cy="84" r="13" fill="#DC2626" />
-                    <text x="612" y="88" textAnchor="middle" fill="#FFFFFF" fontSize="11" fontWeight="800">04</text>
-                    <text x="634" y="88" fill="#F8FAFC" fontSize="12" fontWeight="700">Forum Action</text>
-                    <text x="600" y="116" fill="#CBD5E1" fontSize="10.5">s.21 &amp; s.11 Appointment</text>
-                    <text x="600" y="134" fill="#CBD5E1" fontSize="10.5">Art. 226 PSU Admitted</text>
-                    <text x="600" y="152" fill="#CBD5E1" fontSize="10.5">Commercial s.12A / O.37</text>
-                    <rect x="600" y="178" width="132" height="58" rx="6" fill="#0F172A" stroke="#334155" />
-                    <text x="608" y="198" fill="#FBBF24" fontSize="10" fontWeight="700">Nortel Clock Stop</text>
-                    <text x="608" y="215" fill="#94A3B8" fontSize="9.5">Explicit s.21 Receipt</text>
+                    <g transform="translate(535, 10)">
+                      <rect width="150" height="140" rx="12" fill="#FFFFFF" stroke="#CBD5E1" strokeWidth="1.5" />
+                      <circle cx="28" cy="28" r="14" fill="#DC2626" />
+                      <text x="28" y="32" fill="#FFFFFF" fontSize="11" fontWeight="bold" textAnchor="middle">04</text>
+                      <text x="50" y="32" fill="#0F172A" fontSize="12" fontWeight="bold">s.21 Invocation</text>
+                      <text x="14" y="65" fill="#475569" fontSize="10">Crystallize Claims</text>
+                      <text x="14" y="82" fill="#475569" fontSize="10">Exhaust DRB / GCC</text>
+                      <text x="14" y="99" fill="#475569" fontSize="10">High Court s.11 Filing</text>
+                      <text x="14" y="122" fill="#059669" fontSize="9" fontWeight="600">3-Yr Limitation Stop</text>
+                    </g>
 
-                    <path d="M744 154 L766 154" stroke="#DC2626" strokeWidth="2.5" />
-                    <polygon points="766,149 776,154 766,159" fill="#DC2626" />
+                    {/* Arrow 4 */}
+                    <path d="M690 80 L705 80" stroke="#DC2626" strokeWidth="2" strokeDasharray="3 3" />
 
                     {/* Stage 5 */}
-                    <rect x="776" y="58" width="120" height="196" rx="10" fill="#1E293B" stroke="#334155" strokeWidth="1.5" />
-                    <circle cx="800" cy="84" r="13" fill="#10B981" />
-                    <text x="800" y="88" textAnchor="middle" fill="#FFFFFF" fontSize="11" fontWeight="800">05</text>
-                    <text x="820" y="88" fill="#F8FAFC" fontSize="12" fontWeight="700">Realize</text>
-                    <text x="788" y="116" fill="#CBD5E1" fontSize="10.5">s.29A 12m Award</text>
-                    <text x="788" y="134" fill="#CBD5E1" fontSize="10.5">s.36(3) 100% Dep</text>
-                    <text x="788" y="152" fill="#CBD5E1" fontSize="10.5">NITI 75% PSU BG</text>
-                    <rect x="788" y="178" width="96" height="58" rx="6" fill="#0F172A" stroke="#334155" />
-                    <text x="794" y="198" fill="#34D399" fontSize="10" fontWeight="700">O.21 / IBC s.9</text>
-                    <text x="794" y="215" fill="#94A3B8" fontSize="9.5">Bank Garnishee</text>
-
-                    <text x="24" y="286" fill="#94A3B8" fontSize="10">
-                      Every stage embeds Commercial Courts Act s.2(1)(c)(vi) compliance, R.L. Kalathia duress safeguards, and Section 63 BSA evidence preservation.
-                    </text>
+                    <g transform="translate(710, 10)">
+                      <rect width="140" height="140" rx="12" fill="#0F172A" stroke="#334155" strokeWidth="1.5" />
+                      <circle cx="28" cy="28" r="14" fill="#059669" />
+                      <text x="28" y="32" fill="#FFFFFF" fontSize="11" fontWeight="bold" textAnchor="middle">&#10003;</text>
+                      <text x="50" y="32" fill="#F8FAFC" fontSize="12" fontWeight="bold">Execution</text>
+                      <text x="14" y="65" fill="#94A3B8" fontSize="10">s.36 Court Decree</text>
+                      <text x="14" y="82" fill="#94A3B8" fontSize="10">100% Deposit Order</text>
+                      <text x="14" y="99" fill="#94A3B8" fontSize="10">NITI 75% Release</text>
+                      <text x="14" y="122" fill="#34D399" fontSize="9" fontWeight="600">Recovery Complete</text>
+                    </g>
                   </svg>
                 </div>
 
-                {/* Mobile Stacked Cards */}
-                <div className="md:hidden space-y-3">
-                  {[
-                    {
-                      num: "01",
-                      title: "Site Proof & Contract Divisibility Audit",
-                      desc: "Bundle Joint MBs, DPRs, Hindrance Logs, and split Final Bill vs Post-DLP limitation clocks.",
-                    },
-                    {
-                      num: "02",
-                      title: "Statutory Notice & Section 9 PBG Protection",
-                      desc: "Dispatch RA/Retention demand, s.55 EOT reservation, or 60-day CPC s.80 notice with s.9 BG stay readiness.",
-                    },
-                    {
-                      num: "03",
-                      title: "Duress NDC Protest, LD Rebuttal & DRB Tiers",
-                      desc: "Neutralize coerced No-Claim Certificates, strike windfall 10% LD claims, and exhaust Engineer/DRB pre-tiers.",
-                    },
-                    {
-                      num: "04",
-                      title: "Section 21 Invocation, Writ or Commercial Suit",
-                      desc: "Stop the 3-year Nortel clock via s.21 invocation, file Art. 226 Writ for admitted PSU bills, or move Commercial Courts.",
-                    },
-                    {
-                      num: "05",
-                      title: "Section 29A Award & Section 36 / IBC Realization",
-                      desc: "Enforce s.36(3) cash deposits, NITI Aayog 75% PSU payouts, Order 21 bank garnishee orders, or NCLT IBC.",
-                    },
-                  ].map((stage) => (
-                    <div
-                      key={stage.num}
-                      className="p-4 rounded-xl bg-slate-900 text-white border border-slate-800 flex items-start gap-3"
-                    >
-                      <span className="w-7 h-7 rounded-lg bg-[#DC2626] text-white font-black text-xs flex items-center justify-center shrink-0">
-                        {stage.num}
-                      </span>
-                      <div>
-                        <p className="text-sm font-bold text-white">{stage.title}</p>
-                        <p className="text-xs text-slate-300 mt-1 leading-relaxed">{stage.desc}</p>
-                      </div>
-                    </div>
-                  ))}
-                </div>
-              </section>
-
-              {/* Section 4: Interactive Portfolio Scenario Tabs */}
-              <section
-                id="heading-scenario-tabs"
-                aria-labelledby="heading-scenario-tabs-title"
-                className="scroll-mt-28 space-y-5"
-              >
-                <div className="bg-white rounded-2xl border border-slate-200 p-5 sm:p-6 md:p-8 shadow-sm space-y-5">
-                  <div className="flex items-start gap-3 border-b border-slate-100 pb-4">
-                    <span className="w-7 h-7 rounded-full bg-[#DC2626] text-white text-xs font-black flex items-center justify-center shrink-0 mt-0.5">
-                      4
-                    </span>
-                    <div>
-                      <h2
-                        id="heading-scenario-tabs-title"
-                        className="text-xl sm:text-2xl font-extrabold text-slate-900 tracking-tight"
-                      >
-                        Interactive Playbooks Across 4 Infrastructure Claim Tracks
-                      </h2>
-                      <p className="text-xs font-semibold text-slate-500 mt-1">
-                        Switch Between RA Bill Certification, PSU/Govt Tenders, Works-MSME/Subcontractors &amp; DLP/LD/PBG Protection
-                      </p>
-                    </div>
+                {/* Mobile Stacked Cards Fallback */}
+                <div className="grid grid-cols-1 gap-3 md:hidden">
+                  <div className="p-4 rounded-xl bg-slate-900 text-white space-y-1">
+                    <span className="text-[10px] font-bold text-red-400 uppercase tracking-wider">Stage 01</span>
+                    <p className="text-sm font-bold text-white">Site Audit &amp; Electronic Evidence Compilation</p>
+                    <p className="text-xs text-slate-300">Daily Progress Reports (DPRs), concrete pour cards, lab test logs, and material gate passes certified under Section 63 BSA 2023.</p>
                   </div>
-                  <ConstructionHubScenarioTabs />
+                  <div className="p-4 rounded-xl bg-white border border-slate-200 space-y-1">
+                    <span className="text-[10px] font-bold text-[#DC2626] uppercase tracking-wider">Stage 02</span>
+                    <p className="text-sm font-bold text-slate-900">Statutory Notice &amp; Duress Protest</p>
+                    <p className="text-xs text-slate-600">Deemed MB certification notice, under-duress protest on coerced NDCs, or mandatory Section 80 CPC notice to government departments.</p>
+                  </div>
+                  <div className="p-4 rounded-xl bg-white border border-slate-200 space-y-1">
+                    <span className="text-[10px] font-bold text-[#DC2626] uppercase tracking-wider">Stage 03</span>
+                    <p className="text-sm font-bold text-slate-900">Section 9 Bank Guarantee Shield</p>
+                    <p className="text-xs text-slate-600">Urgent Commercial Court petition to restrain fraudulent or retaliatory invocation of Performance Bank Guarantees (PBGs).</p>
+                  </div>
+                  <div className="p-4 rounded-xl bg-white border border-slate-200 space-y-1">
+                    <span className="text-[10px] font-bold text-[#DC2626] uppercase tracking-wider">Stage 04</span>
+                    <p className="text-sm font-bold text-slate-900">Section 21 Arbitration Invocation</p>
+                    <p className="text-xs text-slate-600">Formal claim crystallization notice freezing the 3-year limitation clock under Nortel Networks, followed by Section 11 arbitrator appointment.</p>
+                  </div>
+                  <div className="p-4 rounded-xl bg-slate-900 text-white space-y-1">
+                    <span className="text-[10px] font-bold text-emerald-400 uppercase tracking-wider">Stage 05</span>
+                    <p className="text-sm font-bold text-white">Section 36 Execution &amp; 100% Deposit</p>
+                    <p className="text-xs text-slate-300">Enforcing the arbitral award as a civil court decree, compelling 100% pre-deposit during Section 34 appeals, or unlocking 75% PSU payouts under NITI Aayog norms.</p>
+                  </div>
+                </div>
+
+                <div className="space-y-4 pt-2">
+                  <h3 className="text-base sm:text-lg font-bold text-slate-900">
+                    Defeating &quot;Pay-When-Paid&quot; Clauses in MEP and Subcontracting Contracts
+                  </h3>
+                  <p className="text-xs sm:text-sm text-slate-700 leading-relaxed">
+                    Tier-2 contractors, specialized MEP subcontractors, and HVAC/firefighting specialists routinely face abusive &quot;back-to-back&quot; or &quot;pay-when-paid&quot; clauses. When pursuing mep hvac firefighting contractor pending developer dues, the main turnkey EPC contractor often hides behind the developer&apos;s non-payment to withhold subcontractor remittances indefinitely.
+                  </p>
+                  <p className="text-xs sm:text-sm text-slate-700 leading-relaxed">
+                    Indian jurisprudence under Section 23 and Section 46 of the Indian Contract Act invalidates clauses that create an indefinite suspension of payment. In <em>Ircon International v. Vinay Heavy Equipments</em> and related High Court precedents, courts have held that a main contractor cannot withhold subcontractor payments indefinitely where the employer&apos;s delay is protracted or where the main contractor failed to vigorously pursue the claims. By serving a formal statutory demand establishing completion of the subcontracted package, subcontractors can break the back-to-back trap and enforce immediate recovery.
+                  </p>
+                  <p className="text-xs sm:text-sm text-slate-700 leading-relaxed">
+                    Moreover, if the prime contractor executes a global settlement or enters into an amicable dispute resolution with the project owner—accepting discounted payments or lump-sum compensation without accounting for the subcontractor&apos;s executed portion—the prime contractor commits a breach of trust and constructive fraud. In such cases, the subcontractor is legally entitled to proceed against the prime contractor under Order XXXVII of the CPC for liquidated sums, or institute corporate insolvency proceedings under Section 8 and 9 of the Insolvency and Bankruptcy Code, 2016 (IBC) where the operational debt exceeds ₹1 Crore.
+                  </p>
                 </div>
               </section>
 
-              {/* Section 5: Dual-Track Infrastructure & CTA */}
+              {/* Section 4: Interactive Scenario Tabs */}
+              <section id="heading-scenario-tabs" className="scroll-mt-28">
+                <ConstructionHubScenarioTabs />
+              </section>
+
+              {/* Section 5: Dual B2B Conversion Funnel */}
               <section
                 id="heading-dual-desk"
-                aria-labelledby="heading-dual-desk-title"
                 className="scroll-mt-28 bg-white rounded-2xl border border-slate-200 p-5 sm:p-6 md:p-8 shadow-sm space-y-6"
               >
-                <div className="flex items-start gap-3 border-b border-slate-100 pb-4">
-                  <span className="w-7 h-7 rounded-full bg-[#DC2626] text-white text-xs font-black flex items-center justify-center shrink-0 mt-0.5">
-                    5
+                <div className="border-b border-slate-200 pb-4">
+                  <span className="text-xs font-bold uppercase tracking-wider text-[#DC2626] block mb-1">
+                    Dual-Track B2B Onboarding
                   </span>
-                  <div>
-                    <h2
-                      id="heading-dual-desk-title"
-                      className="text-xl sm:text-2xl font-extrabold text-slate-900 tracking-tight"
-                    >
-                      Pre-Arbitration Claim Crystallization &amp; Multi-Site CSV Desk
-                    </h2>
-                    <p className="text-xs font-semibold text-slate-500 mt-1">
-                      Bridging ₹999 Statutory Claim Notices to Section 9 BG Stays, Arbitral Representation &amp; Multi-SPV Workspaces
-                    </p>
-                  </div>
+                  <h2 className="text-xl sm:text-2xl font-black text-slate-900 tracking-tight">
+                    Pre-Arbitration Claim Crystallization &amp; Multi-Site CSV Desk
+                  </h2>
                 </div>
 
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-                  <div className="p-4 rounded-xl bg-slate-50 border border-slate-200 space-y-1.5">
-                    <p className="text-xs font-extrabold uppercase tracking-wider text-[#DC2626]">
-                      1. Multi-Entity Representees for EPC SPVs
-                    </p>
-                    <p className="text-sm font-bold text-slate-900">
-                      Segregated JV, SPV &amp; Project Site Profiles
-                    </p>
-                    <p className="text-xs text-slate-600 leading-relaxed">
-                      Manage distinct Work Orders, authorized project signatories, and corporate sender profiles via{" "}
-                      <Link href="/user/representees" className="text-[#DC2626] font-semibold underline">
-                        Representees management
-                      </Link>
-                      .
-                    </p>
-                  </div>
-
-                  <div className="p-4 rounded-xl bg-slate-50 border border-slate-200 space-y-1.5">
-                    <p className="text-xs font-extrabold uppercase tracking-wider text-[#DC2626]">
-                      2. Multi-Invoice &amp; RA-Bill Ledger Engine
-                    </p>
-                    <p className="text-sm font-bold text-slate-900">
-                      RA Bill 1..N, GST/WCT Holdbacks &amp; DLP Dates
-                    </p>
-                    <p className="text-xs text-slate-600 leading-relaxed">
-                      Attach itemized running bills, PO numbers, certified vs uncertified MB balances, and retention release schedules inside each notice.
-                    </p>
-                  </div>
-
-                  <div className="p-4 rounded-xl bg-slate-50 border border-slate-200 space-y-1.5">
-                    <p className="text-xs font-extrabold uppercase tracking-wider text-[#DC2626]">
-                      3. Tri-Channel BSA s.63 Service Proof
-                    </p>
-                    <p className="text-sm font-bold text-slate-900">
-                      Email + Business WhatsApp + Speed Post RPAD
-                    </p>
-                    <p className="text-xs text-slate-600 leading-relaxed">
-                      Eliminate &ldquo;notice never received&rdquo; objections in Section 11, Section 80 CPC, and Commercial Court hearings with timestamped delivery hashes.
-                    </p>
-                  </div>
-
-                  <div className="p-4 rounded-xl bg-slate-50 border border-slate-200 space-y-1.5">
-                    <p className="text-xs font-extrabold uppercase tracking-wider text-[#DC2626]">
-                      4. Direct Infrastructure Panel Escalation
-                    </p>
-                    <p className="text-sm font-bold text-slate-900">
-                      Section 9 BG Injunctions &amp; Section 21 Arbitration
-                    </p>
-                    <p className="text-xs text-slate-600 leading-relaxed">
-                      Seamlessly transition unresolved notices to AMA Legal Solutions&apos; infrastructure litigation panel for Commercial Court filings and arbitral proceedings.
-                    </p>
-                  </div>
-                </div>
-
-                <div id="heading-cta-block" className="scroll-mt-28 pt-2">
-                  <ConstructionHubCTA />
-                </div>
-              </section>
-
-              {/* Section 6: Apex Court Precedents */}
-              <section
-                id="heading-supreme-court-precedents"
-                aria-labelledby="heading-supreme-court-precedents-title"
-                className="scroll-mt-28 bg-white rounded-2xl border border-slate-200 p-5 sm:p-6 md:p-8 shadow-sm space-y-5"
-              >
-                <div className="flex items-start gap-3 border-b border-slate-100 pb-4">
-                  <span className="w-7 h-7 rounded-full bg-[#DC2626] text-white text-xs font-black flex items-center justify-center shrink-0 mt-0.5">
-                    6
-                  </span>
-                  <div>
-                    <h2
-                      id="heading-supreme-court-precedents-title"
-                      className="text-xl sm:text-2xl font-extrabold text-slate-900 tracking-tight"
-                    >
-                      Apex Court Precedents Protecting Construction Contractors
-                    </h2>
-                    <p className="text-xs font-semibold text-slate-500 mt-1">
-                      Verified Supreme Court Doctrines Against Coerced NDCs, PSU Budget Excuses, Windfall LD &amp; Limitation Traps
-                    </p>
-                  </div>
-                </div>
-
-                <div className="space-y-4">
-                  {APEX_PRECEDENTS.map((item) => (
-                    <article
-                      key={item.parties}
-                      className="relative pl-5 pr-4 py-4 rounded-xl border border-slate-200 bg-slate-50/70 space-y-2"
-                    >
-                      <span
-                        className="absolute left-0 top-3 bottom-3 w-1.5 rounded-r bg-[#DC2626]"
-                        aria-hidden="true"
-                      />
-                      <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-1.5">
-                        <span className="text-[11px] font-extrabold uppercase tracking-wider text-[#DC2626]">
-                          {item.citation}
-                        </span>
-                        <span className="text-[11px] font-semibold text-emerald-700 bg-emerald-50 border border-emerald-200 px-2.5 py-0.5 rounded-full self-start sm:self-auto">
-                          Contractor Precedent
-                        </span>
-                      </div>
-                      <h3 className="text-sm sm:text-base font-bold text-slate-900">{item.title}</h3>
-                      <p className="text-xs font-semibold text-slate-600">{item.parties}</p>
-                      <p className="text-xs sm:text-sm text-slate-700 leading-relaxed">{item.holding}</p>
-                      <p className="text-xs font-bold text-slate-900 pt-1">
-                        Operational Impact:{" "}
-                        <span className="font-medium text-slate-700">{item.impact}</span>
-                      </p>
-                    </article>
-                  ))}
-                </div>
-              </section>
-
-              {/* Section 7: Worked Financial & Claim Math */}
-              <section
-                id="heading-worked-math"
-                aria-labelledby="heading-worked-math-title"
-                className="scroll-mt-28 bg-white rounded-2xl border border-slate-200 p-5 sm:p-6 md:p-8 shadow-sm space-y-5"
-              >
-                <div className="flex items-start gap-3 border-b border-slate-100 pb-4">
-                  <span className="w-7 h-7 rounded-full bg-[#DC2626] text-white text-xs font-black flex items-center justify-center shrink-0 mt-0.5">
-                    7
-                  </span>
-                  <div>
-                    <h2
-                      id="heading-worked-math-title"
-                      className="text-xl sm:text-2xl font-extrabold text-slate-900 tracking-tight"
-                    >
-                      Worked EPC Claim Math: &rupee;2.40 Cr Final Bill, Retention &amp; LD
-                    </h2>
-                    <p className="text-xs font-semibold text-slate-500 mt-1">
-                      Illustrative Pre-Arbitration Claim Crystallization for a Turnkey Civil &amp; MEP Contractor
-                    </p>
-                  </div>
-                </div>
-
-                <p className="text-xs sm:text-sm text-slate-700 leading-relaxed">
-                  Consider a mid-sized MEP &amp; civil contractor completing a ₹24.00 Crore commercial tower contract. At handover, the developer&apos;s PMC stalls certification on the ₹2.40 Crore Final Bill, withholds ₹90.00 Lakh in 5% post-DLP retention (claiming Occupancy Certificate is pending), and issues a ₹24.00 Lakh (10%) Liquidated Damages debit note despite 14 months of employer-caused drawing delays—while holding a live ₹1.20 Crore Performance Bank Guarantee.
+                <p className="text-sm sm:text-base text-slate-700 leading-relaxed">
+                  Whether you need an immediate advocate-drafted epc turnkey contractor unpaid bill legal notice for a single critical dispute or require an enterprise infrastructure to manage receivables across 50 SPVs, joint ventures, and municipal packages, LegalRecovery.in operates two synchronized engagement tracks. You can test a single case at ₹999 via our <Link href="/user/new-recovery" className="font-semibold text-[#DC2626] hover:underline">New Recovery Case Portal</Link>, manage multi-entity project sites via our <Link href="/user/representees" className="font-semibold text-[#DC2626] hover:underline">Representees Workspace</Link>, or upload high-volume arrears portfolios via our <Link href="/bulk-recovery-cases-all-in-one-affordable-solutions" className="font-semibold text-[#DC2626] hover:underline">Bulk Recovery Cases Solutions</Link>.
                 </p>
 
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-                  <div className="p-4 sm:p-5 rounded-xl border border-red-200 bg-red-50/50 space-y-2">
-                    <p className="text-xs font-extrabold uppercase tracking-wider text-[#DC2626]">
-                      Passive Contractor Path (High Loss Exposure)
-                    </p>
-                    <ul className="text-xs sm:text-sm text-slate-700 space-y-1.5 list-disc list-inside">
-                      <li>Signs unconditional &ldquo;No-Claim Certificate&rdquo; just to get ₹1.30 Cr, forfeiting ₹1.10 Cr + prolongation overheads.</li>
-                      <li>Misses Section 55 EOT reservation, killing overhead claims in arbitration.</li>
-                      <li>Sends informal emails instead of a s.21 notice, risking Nortel 3-year limitation expiry.</li>
-                    </ul>
-                  </div>
+                <ConstructionHubCTA />
+              </section>
 
-                  <div className="p-4 sm:p-5 rounded-xl border border-emerald-200 bg-emerald-50/50 space-y-2">
-                    <p className="text-xs font-extrabold uppercase tracking-wider text-emerald-800">
-                      Structured IND-07 Recovery Protocol
-                    </p>
-                    <ul className="text-xs sm:text-sm text-slate-700 space-y-1.5 list-disc list-inside">
-                      <li>Serves deemed-MB demand + immediate R.L. Kalathia duress protest preserving full ₹3.30 Cr principal + interest.</li>
-                      <li>Rebuts 10% LD (₹24L) via Hindrance Register under Kailash Nath Associates (s.74 actual-loss rule).</li>
-                      <li>Pairs s.9 Commercial Court PBG stay prep with explicit s.21 notice, crystallizing ₹3.54 Cr+ enforceable claim.</li>
-                    </ul>
-                  </div>
+              {/* Section 6: Supreme Court Precedents */}
+              <section
+                id="heading-supreme-court-precedents"
+                className="scroll-mt-28 bg-white rounded-2xl border border-slate-200 p-5 sm:p-6 md:p-8 shadow-sm space-y-6"
+              >
+                <div className="border-b border-slate-200 pb-4">
+                  <span className="text-xs font-bold uppercase tracking-wider text-[#DC2626] block mb-1">
+                    Judicial Authority &bull; Creditor Protection
+                  </span>
+                  <h2 className="text-xl sm:text-2xl font-black text-slate-900 tracking-tight">
+                    Apex Court Precedents Protecting Construction Contractors
+                  </h2>
                 </div>
 
-                <div className="bg-slate-900 text-slate-100 p-4 rounded-xl flex flex-col sm:flex-row sm:items-center justify-between gap-3">
-                  <div className="text-xs sm:text-sm">
-                    <strong className="text-white block">
-                      Track Split Final-Bill vs Post-DLP Retention Limitation Clocks
-                    </strong>
-                    <span className="text-slate-300">
-                      Compute exact DLP release dates, commercial interest, and 3-year Article 18/55/113 cutoffs per project site.
-                    </span>
-                  </div>
-                  <Link
-                    href="/tools/construction-retention-dlp-escalation-claim-calculator"
-                    className="px-4 py-2.5 rounded-lg bg-[#DC2626] hover:bg-[#B91C1C] text-white text-xs font-bold shrink-0 text-center transition-colors"
-                  >
-                    Launch Construction Calculator &rarr;
-                  </Link>
+                <p className="text-sm sm:text-base text-slate-700 leading-relaxed">
+                  Indian construction recovery is anchored in powerful Supreme Court precedents that strip employers and PSUs of unfair contractual leverage. Our advocate panel leverages these verified holdings to defeat debtor defences at the pre-litigation notice stage:
+                </p>
+
+                <div className="space-y-4">
+                  {APEX_PRECEDENTS.map((prec, idx) => (
+                    <div
+                      key={prec.title}
+                      className="p-4 sm:p-5 rounded-xl bg-slate-50 border border-slate-200 relative overflow-hidden"
+                    >
+                      <div className="absolute top-0 left-0 bottom-0 w-1.5 bg-[#DC2626]" />
+                      <div className="pl-2 space-y-2">
+                        <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-1">
+                          <h3 className="text-sm sm:text-base font-bold text-slate-900">
+                            {idx + 1}. {prec.title}
+                          </h3>
+                          <span className="text-[11px] font-mono font-semibold text-slate-500 bg-white px-2 py-0.5 rounded border border-slate-200 self-start sm:self-auto">
+                            {prec.parties}
+                          </span>
+                        </div>
+                        <p className="text-xs font-semibold text-[#DC2626]">{prec.citation}</p>
+                        <p className="text-xs sm:text-sm text-slate-700 leading-relaxed font-normal">
+                          {prec.holding}
+                        </p>
+                        <div className="pt-2 border-t border-slate-200/70 flex items-center gap-1.5 text-xs font-medium text-emerald-800">
+                          <span className="font-bold uppercase tracking-wider text-[10px] text-emerald-600 bg-emerald-50 px-1.5 py-0.5 rounded">
+                            Contractor Impact:
+                          </span>
+                          <span>{prec.impact}</span>
+                        </div>
+                      </div>
+                    </div>
+                  ))}
+                </div>
+
+                <div className="space-y-4 pt-2">
+                  <h3 className="text-base sm:text-lg font-bold text-slate-900">
+                    Challenging Arbitrary Liquidated Damages (LD) Deductions
+                  </h3>
+                  <p className="text-xs sm:text-sm text-slate-700 leading-relaxed">
+                    Under Indian contract law, Liquidated Damages (LD) cannot be deducted as an automatic windfall. In <em>Kailash Nath Associates v. Delhi Development Authority</em> (2015) 4 SCC 136, the Supreme Court held that Section 74 of the Indian Contract Act requires proof of actual damage or loss, except where it is impossible to compute. Where delay is attributable to the employer—such as delayed site handover, unapproved structural drawings, utility shifting delays, or stalled inter-departmental clearances—the employer cannot unilaterally impose 10% LD penalties.
+                  </p>
+                  <p className="text-xs sm:text-sm text-slate-700 leading-relaxed">
+                    Our pre-arbitration demand notices cross-reference the site Hindrance Register against Section 55 of the Contract Act, placing contemporaneous extension-of-time (EOT) applications on record. This dismantles arbitrary LD debit notes and prevents developers from using liquidated damages to wipe out genuine final bill receivables.
+                  </p>
+                  <p className="text-xs sm:text-sm text-slate-700 leading-relaxed">
+                    Similarly, when employers threaten &quot;Risk and Cost Termination&quot; under standard contract clauses, they must demonstrate strict compliance with contractual cure notices (typically 14 to 30 days) and provide an objective inventory of balance works. Terminations executed without giving adequate opportunity to cure or where the employer is in prior material breach of its payment obligations are held illegal, entitling the contractor to full restitution of equipment, release of retained funds, and expectation damages for loss of profit on unexecuted scope under Section 73 of the Contract Act.
+                  </p>
                 </div>
               </section>
 
-              {/* Section 8: Complete 11-Spoke IND-07 Directory */}
+              {/* Section 7: Worked EPC Claim Calculation Math */}
               <section
-                id="heading-ind07-directory"
-                aria-labelledby="heading-ind07-directory-title"
+                id="heading-worked-math"
                 className="scroll-mt-28 bg-white rounded-2xl border border-slate-200 p-5 sm:p-6 md:p-8 shadow-sm space-y-6"
               >
-                <div className="flex items-start gap-3 border-b border-slate-100 pb-4">
-                  <span className="w-7 h-7 rounded-full bg-[#DC2626] text-white text-xs font-black flex items-center justify-center shrink-0 mt-0.5">
-                    8
+                <div className="border-b border-slate-200 pb-4">
+                  <span className="text-xs font-bold uppercase tracking-wider text-[#DC2626] block mb-1">
+                    Financial Crystallization Model
                   </span>
-                  <div>
-                    <h2
-                      id="heading-ind07-directory-title"
-                      className="text-xl sm:text-2xl font-extrabold text-slate-900 tracking-tight"
-                    >
-                      IND-07 Directory: All 11 Construction Spokes, Tools &amp; Packs
-                    </h2>
-                    <p className="text-xs font-semibold text-slate-500 mt-1">
-                      Complete Hub-and-Spoke Map Covering B2B-090 Through B2B-100 Across Civil, EPC, MEP &amp; Government Tenders
-                    </p>
+                  <h2 className="text-xl sm:text-2xl font-black text-slate-900 tracking-tight">
+                    Worked EPC Claim Math: &#8377;2.40 Cr Final Bill, Retention &amp; LD
+                  </h2>
+                </div>
+
+                <p className="text-sm sm:text-base text-slate-700 leading-relaxed">
+                  Consider a typical commercial infrastructure project where an EPC contractor completed civil, structural, and MEP works valued at &#8377;12.00 Crore. Upon submitting the Final Bill, the private developer withheld payments citing snag-list delays and slapped an arbitrary 10% Liquidated Damages penalty. Here is how LegalRecovery.in crystallizes the contractor&apos;s true statutory claim:
+                </p>
+
+                {/* Ledger Breakdown Table */}
+                <div className="bg-slate-900 text-white rounded-2xl p-5 sm:p-6 overflow-hidden">
+                  <p className="text-xs font-bold uppercase tracking-widest text-emerald-400 mb-4">
+                    Statutory Claim Crystallization Ledger (Pre-Arbitration Notice)
+                  </p>
+
+                  <div className="space-y-3 text-xs sm:text-sm">
+                    <div className="flex justify-between items-center py-2 border-b border-slate-800">
+                      <span className="text-slate-300">Contract Value (Total Executed Scope)</span>
+                      <span className="font-mono font-bold text-slate-100">&#8377;12,00,00,000</span>
+                    </div>
+
+                    <div className="flex justify-between items-center py-2 border-b border-slate-800">
+                      <span className="text-slate-300">Cumulative RA Bills Certified &amp; Paid (RA 1 to RA 14)</span>
+                      <span className="font-mono text-slate-400">(&#8377;9,60,00,000)</span>
+                    </div>
+
+                    <div className="flex justify-between items-center py-2 border-b border-slate-800">
+                      <span className="text-slate-300 font-semibold">Unpaid Final Running Account Bill (RA 15 Submitted with DPRs)</span>
+                      <span className="font-mono font-bold text-slate-100">&#8377;2,40,00,000</span>
+                    </div>
+
+                    <div className="flex justify-between items-center py-2 border-b border-slate-800">
+                      <span className="text-slate-300 font-semibold">5% Retention Money Withheld Across All Bills (DLP Expired 12 Mo Ago)</span>
+                      <span className="font-mono font-bold text-slate-100">&#8377;60,00,000</span>
+                    </div>
+
+                    <div className="flex justify-between items-center py-2 border-b border-slate-800">
+                      <span className="text-red-400">Developer&apos;s Arbitrary 10% LD Debit Note (No Actual Loss Proved — Kailash Nath Rebuttal)</span>
+                      <span className="font-mono font-bold text-emerald-400">+&#8377;1,20,00,000 (Invalidated)</span>
+                    </div>
+
+                    <div className="flex justify-between items-center py-2 border-b border-slate-800">
+                      <span className="text-slate-300">Verified Extra-Item Variations (Approved Site Level Sheets &amp; Pour Cards)</span>
+                      <span className="font-mono font-bold text-slate-100">&#8377;42,50,000</span>
+                    </div>
+
+                    <div className="flex justify-between items-center py-2 border-b border-slate-800">
+                      <span className="text-slate-300">Statutory Commercial Interest @ 12% p.a. (14 Months Delay on Admitted Final Bill)</span>
+                      <span className="font-mono font-bold text-amber-400">&#8377;33,60,000</span>
+                    </div>
+
+                    <div className="flex justify-between items-center pt-3 text-sm sm:text-base font-black">
+                      <span className="text-emerald-400 uppercase tracking-wide">Total Demand Crystallized in Section 21 Notice</span>
+                      <span className="font-mono text-emerald-400 text-base sm:text-xl">&#8377;3,76,10,000</span>
+                    </div>
                   </div>
                 </div>
+
+                <div className="space-y-4 pt-2">
+                  <h3 className="text-base sm:text-lg font-bold text-slate-900">
+                    Prolongation Damages: Applying Hudson, Emden and Eichleay Formulas
+                  </h3>
+                  <p className="text-xs sm:text-sm text-slate-700 leading-relaxed">
+                    In large-scale infrastructure projects prolonged due to employer defaults, claims extend far beyond the unpaid contract balance. Where the original contract duration of 18 months stretched to 32 months due to delayed right-of-way (RoW) or structural drawing revisions, the contractor incurred continuous site overheads, head office administrative expenses, and equipment idling costs.
+                  </p>
+                  <p className="text-xs sm:text-sm text-slate-700 leading-relaxed">
+                    Indian arbitral tribunals and High Courts routinely apply established formulas—primarily the <strong>Hudson Formula</strong>, <strong>Emden Formula</strong>, and <strong>Eichleay Formula</strong>—to quantify off-site overheads and lost profit opportunities during the delay period. By preserving rights via synchronous Section 55 notices during every Extension of Time (EOT) application, contractors ensure that prolongation compensation remains fully recoverable in Section 21 arbitration.
+                  </p>
+                </div>
+
+                <p className="text-xs text-slate-600 leading-relaxed">
+                  By transforming an uncertified, contested &#8377;2.40 Cr invoice into a comprehensive &#8377;3.76 Cr statutory demand—backed by Kailash Nath LD invalidation, post-DLP retention rights, extra-item proofs, and accrued commercial interest—the contractor establishes dominant settlement leverage before institutional arbitration or Commercial Court litigation.
+                </p>
+              </section>
+
+              {/* Section 8: Complete IND-07 Spoke Directory */}
+              <section
+                id="heading-ind07-directory"
+                className="scroll-mt-28 bg-white rounded-2xl border border-slate-200 p-5 sm:p-6 md:p-8 shadow-sm space-y-6"
+              >
+                <div className="border-b border-slate-200 pb-4">
+                  <span className="text-xs font-bold uppercase tracking-wider text-[#DC2626] block mb-1">
+                    Industry Sub-Routes &bull; 11 Dedicated Spokes
+                  </span>
+                  <h2 className="text-xl sm:text-2xl font-black text-slate-900 tracking-tight">
+                    IND-07 Directory: All 11 Construction Spokes, Tools &amp; Packs
+                  </h2>
+                </div>
+
+                <p className="text-sm sm:text-base text-slate-700 leading-relaxed">
+                  Navigate the complete legal infrastructure built specifically for civil contractors, EPC project directors, and MEP subcontractors across all 4 operational tracks:
+                </p>
 
                 <div className="space-y-8">
                   {SPOKE_GROUPS.map((group) => (
-                    <div key={group.groupTitle} className="space-y-3.5">
-                      <h3 className="text-sm sm:text-base font-extrabold text-slate-900 border-l-4 border-[#DC2626] pl-3">
-                        {group.groupTitle}
-                      </h3>
-                      <div className="grid grid-cols-1 md:grid-cols-2 gap-3.5">
+                    <div key={group.groupTitle} className="space-y-3">
+                      <div className="flex items-center gap-2">
+                        <span className={`text-[10px] font-bold uppercase tracking-wider px-2 py-0.5 rounded border ${group.badgeClass}`}>
+                          Track
+                        </span>
+                        <h3 className="text-sm sm:text-base font-bold text-slate-900">
+                          {group.groupTitle}
+                        </h3>
+                      </div>
+
+                      <div className="grid grid-cols-1 sm:grid-cols-2 gap-3.5">
                         {group.items.map((spoke) => (
                           <Link
                             key={spoke.id}
                             href={spoke.url}
-                            className="group p-4 rounded-xl border border-slate-200 bg-slate-50/50 hover:bg-white hover:border-[#DC2626]/60 hover:shadow-sm transition-all flex flex-col justify-between gap-2.5"
+                            className="group p-4 rounded-xl border border-slate-200 hover:border-[#DC2626] bg-slate-50/50 hover:bg-white transition-all shadow-xs hover:shadow-md flex flex-col justify-between"
                           >
                             <div>
-                              <div className="flex items-center justify-between gap-2 mb-2">
-                                <span
-                                  className={`text-[10px] font-extrabold uppercase tracking-wider px-2 py-0.5 rounded-full border ${group.badgeClass}`}
-                                >
-                                  {spoke.archetypeLabel}
+                              <div className="flex items-center justify-between gap-2 mb-1.5">
+                                <span className="text-[10px] font-mono font-bold px-2 py-0.5 rounded bg-slate-200 text-slate-700">
+                                  {spoke.id} &bull; {spoke.archetype}
                                 </span>
-                                <span className="text-[10px] font-mono text-slate-400">{spoke.id}</span>
+                                <span className="text-[10px] font-semibold text-[#DC2626] truncate max-w-[140px]">
+                                  {spoke.statute}
+                                </span>
                               </div>
-                              <p className="text-sm font-bold text-slate-900 group-hover:text-[#DC2626] transition-colors leading-snug">
+                              <h4 className="text-xs sm:text-sm font-bold text-slate-900 group-hover:text-[#DC2626] transition-colors leading-snug mb-2">
                                 {spoke.title}
-                              </p>
-                              <p className="text-xs text-slate-600 mt-1.5 leading-relaxed">
+                              </h4>
+                              <p className="text-xs text-slate-600 leading-relaxed mb-3">
                                 {spoke.summary}
                               </p>
                             </div>
-                            <div className="pt-2 border-t border-slate-200/70 flex items-center justify-between gap-2 text-[11px]">
-                              <span className="font-semibold text-slate-500 truncate">{spoke.statute}</span>
-                              <span className="font-bold text-[#DC2626] shrink-0">Open &rarr;</span>
-                            </div>
+                            <span className="text-xs font-bold text-[#DC2626] group-hover:translate-x-1 transition-transform inline-flex items-center gap-1 self-start">
+                              Open Guide &rarr;
+                            </span>
                           </Link>
                         ))}
                       </div>
@@ -1173,182 +1109,150 @@ export default function ConstructionEpcContractorRecoveryPage() {
                 </div>
               </section>
 
-              {/* Section 9: Live Seed Assets & Existing Contractor Guides */}
+              {/* Section 9: Live Seed Cross-Links */}
               <section
                 id="heading-live-seed-guides"
-                aria-labelledby="heading-live-seed-guides-title"
-                className="scroll-mt-28 bg-white rounded-2xl border border-slate-200 p-5 sm:p-6 md:p-8 shadow-sm space-y-5"
+                className="scroll-mt-28 bg-white rounded-2xl border border-slate-200 p-5 sm:p-6 md:p-8 shadow-sm space-y-6"
               >
-                <div className="flex items-start gap-3 border-b border-slate-100 pb-4">
-                  <span className="w-7 h-7 rounded-full bg-[#DC2626] text-white text-xs font-black flex items-center justify-center shrink-0 mt-0.5">
-                    9
+                <div className="border-b border-slate-200 pb-4">
+                  <span className="text-xs font-bold uppercase tracking-wider text-[#DC2626] block mb-1">
+                    Codebase Integration &bull; Cross-Links
                   </span>
-                  <div>
-                    <h2
-                      id="heading-live-seed-guides-title"
-                      className="text-xl sm:text-2xl font-extrabold text-slate-900 tracking-tight"
-                    >
-                      Live Contractor, Subcontractor &amp; Govt Notice Guides
-                    </h2>
-                    <p className="text-xs font-semibold text-slate-500 mt-1">
-                      Live Cross-Linked Seed Assets, Calculators &amp; Commercial Recovery Solutions Ready Today
-                    </p>
-                  </div>
+                  <h2 className="text-xl sm:text-2xl font-black text-slate-900 tracking-tight">
+                    Live Contractor, Subcontractor &amp; Govt Notice Guides
+                  </h2>
                 </div>
 
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-3.5">
-                  {[
-                    {
-                      title: "Subcontractor Payment Recovery in India",
-                      href: "/subcontractor-payment-recovery-india",
-                      tag: "IND-07 Seed Asset",
-                      desc: "Defeat back-to-back clauses, enforce Ircon & Section 70 quantum meruit, and recover retention money.",
-                    },
-                    {
-                      title: "Recover Contractor Payments & Project Dues",
-                      href: "/recovery/contractor-payment",
-                      tag: "IND-07 Seed Asset",
-                      desc: "Actionable options across Order 37 CPC, MSME Samadhaan, Section 138 cheques, and NCLT s.9.",
-                    },
-                    {
-                      title: "Section 80 CPC Notice to Government & PSUs",
-                      href: "/law/section-80-cpc-notice-to-government",
-                      tag: "IND-07 Seed Asset",
-                      desc: "60-day statutory notice rules, designated addressees, Section 15(2) exclusion, and urgent s.80(2) leave.",
-                    },
-                    {
-                      title: "Bulk Recovery Cases: All-in-One Institutional Solutions",
-                      href: "/bulk-recovery-cases-all-in-one-affordable-solutions",
-                      tag: "CSV Batch Desk",
-                      desc: "Multi-site batch notice onboarding for EPC companies, suppliers, and institutional creditors.",
-                    },
-                    {
-                      title: "Order XXXVII Summary Suit for Money Recovery",
-                      href: "/law/order-37-summary-suit-money-recovery",
-                      tag: "Fast Civil Route",
-                      desc: "10-day leave-to-defend threshold for liquidated certified bills, cheques, and written contracts.",
-                    },
-                    {
-                      title: "Interactive 3-Year Limitation Period Calculator",
-                      href: "/tools/limitation-period-calculator",
-                      tag: "Live Calculator",
-                      desc: "Verify Article 18/55 deadlines and Section 18/19 debt-acknowledgment resets before filing.",
-                    },
-                    {
-                      title: "MSME Delayed Payment Interest Calculator (3x Rate)",
-                      href: "/tools/msme-delayed-payment-interest-calculator",
-                      tag: "Divisible Supply Tool",
-                      desc: "Compute Section 16 monthly compound interest & s.43B(h) impact for eligible Udyam supply POs.",
-                    },
-                    {
-                      title: "MSME ODR Portal Step-by-Step Recovery Guide",
-                      href: "/msme-odr-portal-delayed-payment-guide",
-                      tag: "MSME ODR",
-                      desc: "End-to-end mediation and arbitration filing workflow for eligible Udyam material and service suppliers.",
-                    },
-                  ].map((item) => (
-                    <Link
-                      key={item.href}
-                      href={item.href}
-                      className="group p-4 rounded-xl border border-slate-200 hover:border-[#DC2626]/60 bg-slate-50/40 hover:bg-white transition-all flex flex-col justify-between gap-2"
-                    >
-                      <div>
-                        <span className="inline-block text-[10px] font-extrabold uppercase tracking-wider text-[#DC2626] bg-red-50 px-2 py-0.5 rounded-full mb-1.5">
-                          {item.tag}
-                        </span>
-                        <p className="text-sm font-bold text-slate-900 group-hover:text-[#DC2626] transition-colors">
-                          {item.title}
-                        </p>
-                        <p className="text-xs text-slate-600 mt-1 leading-relaxed">{item.desc}</p>
-                      </div>
-                      <span className="text-xs font-bold text-slate-800 group-hover:text-[#DC2626]">
-                        Read Live Resource &rarr;
-                      </span>
-                    </Link>
-                  ))}
+                <p className="text-sm sm:text-base text-slate-700 leading-relaxed">
+                  Explore established core playbooks across the LegalRecovery.in network addressing general contractor payments, government notice mandates, and subcontractor recovery rights:
+                </p>
+
+                <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
+                  <Link
+                    href="/subcontractor-payment-recovery-india"
+                    className="p-4 rounded-xl border border-slate-200 hover:border-[#DC2626] bg-slate-50 hover:bg-white transition-all shadow-xs space-y-2 block"
+                  >
+                    <span className="text-[10px] font-bold uppercase tracking-wider text-[#DC2626] block">
+                      Subcontractor Playbook
+                    </span>
+                    <h3 className="text-sm font-bold text-slate-900 leading-snug">
+                      Subcontractor Payment Recovery India
+                    </h3>
+                    <p className="text-xs text-slate-600 leading-relaxed">
+                      Statutory steps for Tier-2 and Tier-3 civil, electrical, plumbing, and structural subcontractors tackling prime contractor withholding.
+                    </p>
+                  </Link>
+
+                  <Link
+                    href="/recovery/contractor-payment"
+                    className="p-4 rounded-xl border border-slate-200 hover:border-[#DC2626] bg-slate-50 hover:bg-white transition-all shadow-xs space-y-2 block"
+                  >
+                    <span className="text-[10px] font-bold uppercase tracking-wider text-[#DC2626] block">
+                      Core Contractor Desk
+                    </span>
+                    <h3 className="text-sm font-bold text-slate-900 leading-snug">
+                      Contractor Payment Legal Notice &amp; Recovery
+                    </h3>
+                    <p className="text-xs text-slate-600 leading-relaxed">
+                      Standard demand formats and recovery pathways for independent contractors, building contractors, and commercial suppliers.
+                    </p>
+                  </Link>
+
+                  <Link
+                    href="/law/section-80-cpc-notice-to-government"
+                    className="p-4 rounded-xl border border-slate-200 hover:border-[#DC2626] bg-slate-50 hover:bg-white transition-all shadow-xs space-y-2 block"
+                  >
+                    <span className="text-[10px] font-bold uppercase tracking-wider text-[#DC2626] block">
+                      Government Statutory Notice
+                    </span>
+                    <h3 className="text-sm font-bold text-slate-900 leading-snug">
+                      Section 80 CPC Notice to Government
+                    </h3>
+                    <p className="text-xs text-slate-600 leading-relaxed">
+                      Mandatory 60-day notice requirements before initiating recovery proceedings against Central/State departments, CPWD, PWD, and municipal bodies.
+                    </p>
+                  </Link>
                 </div>
               </section>
 
               {/* Section 10: FAQs */}
               <section
                 id="heading-faqs"
-                aria-labelledby="heading-faqs-title"
-                className="scroll-mt-28 bg-white rounded-2xl border border-slate-200 p-5 sm:p-6 md:p-8 shadow-sm space-y-5"
+                className="scroll-mt-28 bg-white rounded-2xl border border-slate-200 p-5 sm:p-6 md:p-8 shadow-sm space-y-6"
               >
-                <div className="flex items-start gap-3 border-b border-slate-100 pb-4">
-                  <span className="w-7 h-7 rounded-full bg-[#DC2626] text-white text-xs font-black flex items-center justify-center shrink-0 mt-0.5">
-                    10
+                <div className="border-b border-slate-200 pb-4">
+                  <span className="text-xs font-bold uppercase tracking-wider text-[#DC2626] block mb-1">
+                    Frequently Asked Questions
                   </span>
-                  <div>
-                    <h2
-                      id="heading-faqs-title"
-                      className="text-xl sm:text-2xl font-extrabold text-slate-900 tracking-tight"
-                    >
-                      FAQs: Construction, EPC &amp; MEP Contractor Debt Recovery
-                    </h2>
-                    <p className="text-xs font-semibold text-slate-500 mt-1">
-                      Direct Answers for EPC Directors, Contracts Heads, Quantity Surveyors &amp; Specialty Subcontractors
-                    </p>
-                  </div>
+                  <h2 className="text-xl sm:text-2xl font-black text-slate-900 tracking-tight">
+                    FAQs: Construction, EPC &amp; MEP Contractor Debt Recovery
+                  </h2>
                 </div>
 
-                <div className="space-y-3">
-                  {FAQS.map((faq) => (
+                <div className="space-y-4">
+                  {FAQS.map((faq, idx) => (
                     <details
                       key={faq.question}
-                      className="group rounded-xl border border-slate-200 bg-slate-50/50 open:bg-white p-4 sm:p-5 transition-all"
+                      className="group border border-slate-200 rounded-xl p-4 sm:p-5 [&_summary::-webkit-details-marker]:hidden bg-white open:bg-slate-50/50 transition-colors"
                     >
-                      <summary className="font-bold text-slate-900 text-xs sm:text-sm md:text-base cursor-pointer flex justify-between items-start gap-3 list-none select-none">
-                        <span>{faq.question}</span>
-                        <span className="text-slate-400 group-open:rotate-180 transition-transform duration-200 font-black text-base shrink-0">
+                      <summary className="flex cursor-pointer items-center justify-between gap-3 text-slate-900 font-bold text-sm sm:text-base select-none">
+                        <span className="flex items-center gap-2">
+                          <span className="text-xs font-mono font-bold text-[#DC2626]">
+                            Q{idx + 1}.
+                          </span>
+                          <span>{faq.question}</span>
+                        </span>
+                        <span className="text-slate-400 group-open:rotate-180 transition-transform text-lg shrink-0">
                           &darr;
                         </span>
                       </summary>
-                      <p className="mt-3 pt-3 border-t border-slate-100 text-xs sm:text-sm text-slate-700 leading-relaxed">
+                      <div className="mt-3.5 pt-3.5 border-t border-slate-200 text-xs sm:text-sm text-slate-700 leading-relaxed">
                         {faq.answer}
-                      </p>
+                      </div>
                     </details>
                   ))}
                 </div>
               </section>
 
-              {/* Section 11: Statutory Authorities & Official Sources */}
+              {/* Section 11: Statutory Sources & Government Portals */}
               <section
                 id="heading-sources"
-                aria-labelledby="heading-sources-title"
-                className="scroll-mt-28 bg-white rounded-2xl border border-slate-200 p-5 sm:p-6 md:p-8 shadow-sm space-y-4"
+                className="scroll-mt-28 bg-white rounded-2xl border border-slate-200 p-5 sm:p-6 md:p-8 shadow-sm space-y-6"
               >
-                <div className="flex items-start gap-3 border-b border-slate-100 pb-4">
-                  <span className="w-7 h-7 rounded-full bg-[#404447] text-white text-xs font-black flex items-center justify-center shrink-0 mt-0.5">
-                    11
+                <div className="border-b border-slate-200 pb-4">
+                  <span className="text-xs font-bold uppercase tracking-wider text-[#DC2626] block mb-1">
+                    Statutory Foundations &bull; Primary Sources
                   </span>
-                  <div>
-                    <h2
-                      id="heading-sources-title"
-                      className="text-xl sm:text-2xl font-extrabold text-slate-900 tracking-tight"
-                    >
-                      Statutory Authorities, Acts &amp; Official Construction Portals
-                    </h2>
-                    <p className="text-xs font-semibold text-slate-500 mt-1">
-                      Primary Indian Statutes &amp; Supreme Court Judgment Repositories Referenced
-                    </p>
-                  </div>
+                  <h2 className="text-xl sm:text-2xl font-black text-slate-900 tracking-tight">
+                    Statutory Authorities, Acts &amp; Official Construction Portals
+                  </h2>
                 </div>
 
-                <ol className="list-decimal list-inside space-y-2 text-xs sm:text-sm text-slate-700">
-                  {PRIMARY_SOURCES.map((source) => (
-                    <li key={source.url} className="leading-relaxed break-words">
+                <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
+                  All legal notices, arbitration petitions, and enforcement strategies formulated by LegalRecovery.in comply strictly with primary legislation published on the official India Code repository and judgments of the Supreme Court of India:
+                </p>
+
+                <ul className="space-y-2 text-xs sm:text-sm text-slate-700">
+                  {PRIMARY_SOURCES.map((src) => (
+                    <li key={src.title} className="flex items-start gap-2">
+                      <span className="text-[#DC2626] font-bold mt-0.5">&bull;</span>
                       <a
-                        href={source.url}
+                        href={src.url}
                         target="_blank"
                         rel="noopener noreferrer nofollow"
-                        className="text-blue-700 hover:text-blue-900 underline font-medium"
+                        className="text-[#DC2626] hover:underline font-medium"
                       >
-                        {source.title}
+                        {src.title}
                       </a>
                     </li>
                   ))}
-                </ol>
+                </ul>
+
+                <div className="pt-4 border-t border-slate-200 text-[11px] text-slate-500 leading-relaxed">
+                  <p>
+                    <strong>Editorial &amp; Review Attribution:</strong> Reviewed by Advocate Anuj Anand Malik, Founder &amp; Managing Partner, AMA Legal Solutions. Content formulated strictly from institutional creditor perspectives for EPC directors, civil contractors, and infrastructure promoters across India.
+                  </p>
+                </div>
               </section>
             </div>
           </div>

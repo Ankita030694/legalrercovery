@@ -11,9 +11,9 @@ export const revalidate = 86400;
 
 const PAGE_URL = "/industries/builders-commercial-landlords-coworking-recovery";
 const CANONICAL_URL = `${SITE_URL}${PAGE_URL}`;
-const PAGE_TITLE = "Builders, Landlords & Co-Working Debt Recovery India";
+const PAGE_TITLE = "Developers, Commercial Landlords & Co-Working Debt Recovery";
 const PAGE_DESCRIPTION =
-  "Recover RERA s.19 allottee defaults, commercial lock-in rent, CAM & HVAC arrears, unpaid 194-I TDS, and co-working seat defaults across India.";
+  "Recover RERA Section 19 allottee defaults, commercial lock-in breaches, CAM/utility arrears, unpaid TDS & co-working seat contracts across India.";
 const H1_TEXT =
   "Institutional Receivables & Lease Recovery for Real Estate Promoters, Grade-A Landlords, Malls, Warehouses & Co-Working Operators";
 

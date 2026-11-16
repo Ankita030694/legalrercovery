@@ -11,7 +11,7 @@ export const revalidate = 86400;
 
 const PAGE_URL = "/industries/logistics-freight-3pl-recovery";
 const CANONICAL_URL = `${SITE_URL}${PAGE_URL}`;
-const PAGE_TITLE = "Logistics, 3PL, Transporter & Freight Debt Recovery";
+const PAGE_TITLE = "Logistics, Transporter, 3PL & Freight Debt Recovery";
 const PAGE_DESCRIPTION =
   "Recover unpaid FTL/PTL freight ledgers, truck halting/detention, container demurrage, CHA customs duty advances & 3PL storage bills across India.";
 const H1_TEXT =
