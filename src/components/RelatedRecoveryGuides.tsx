@@ -762,10 +762,52 @@ const CLUSTERS: Record<string, { heading: string; items: GuideItem[] }> = {
     heading: "Related IT Services, SaaS, IP Copyright & Export Recovery Guides",
     items: [
       {
+        title: "RBI FEMA 9-Month Export & SOFTEX Realization Deadline Calculator",
+        href: "/tools/softex-fema-export-realization-deadline-calculator",
+        tag: "FEMA & SOFTEX Tool",
+        desc: "Calculate 9-month RBI EDPMS realization deadlines, 5% vs 10% AD-Bank self write-off caps, Form ETX extension dates & mandatory legal notice proof.",
+      },
+      {
+        title: "Withholding Source Code vs 'Kill-Switch' Liability (IT Act s.43/66)",
+        href: "/source-code-escrow-ip-withholding-clause-unpaid-it-invoices",
+        tag: "IP Lien & Escrow",
+        desc: "Lawful Git repository retention and staging suspension vs criminal kill-switch and database wiping liabilities under IT Act Sections 43 & 66.",
+      },
+      {
+        title: "Client Poached Deployed Developer? Non-Solicitation Buyout Fee Recovery",
+        href: "/client-poached-deployed-developer-non-solicitation-fee-recovery",
+        tag: "Non-Solicitation Buyout",
+        desc: "Enforce B2B recruitment conversion buyout fees (Contract Act s.74) when clients secretly hire your deployed engineers without triggering Section 27.",
+      },
+      {
+        title: "US, UK & UAE Client Unpaid Software Invoice Recovery & SOFTEX Write-Off",
+        href: "/us-uk-uae-client-unpaid-software-invoice-softex-fema-recovery",
+        tag: "Cross-Border & SOFTEX",
+        desc: "Solve offshore defaults on US LLCs, UK Ltds & UAE firms while serving statutory legal demand notices to clear open STPI SOFTEX bills in RBI EDPMS.",
+      },
+      {
+        title: "ERP & CRM Implementation Milestone Dispute & Stalled Go-Live Recovery",
+        href: "/erp-sap-oracle-salesforce-implementation-milestone-dispute-recovery",
+        tag: "ERP & CRM Recovery",
+        desc: "Overcome client legacy master-data delays, enforce Contract Act s.53/54 reciprocal promises, recover unapproved CR logs & execute Commercial s.12A.",
+      },
+      {
+        title: "Software UAT Sign-Off Stalls, Scope Creep & Milestone Debt Recovery",
+        href: "/software-uat-sign-off-delay-scope-creep-milestone-payment-recovery",
+        tag: "UAT & Milestones",
+        desc: "Enforce Deemed Acceptance via live traffic, Copyright Act s.19 IP liens, Contract Act s.70 scope creep segregation, and Order 37 summary suits.",
+      },
+      {
         title: "Enterprise Receivables & Contract Recovery for IT Services, B2B SaaS, ERP Implementers & Cloud Resellers",
         href: "/industries/it-saas-software-recovery",
         tag: "IND-05 Tech Hub",
         desc: "B2B creditor hub covering Copyright s.17/19 IP liens, Commercial Courts s.12A, Microsoft NCE cloud defaults, UAT stalls & STPI SOFTEX closure.",
+      },
+      {
+        title: "IT Staff Augmentation & C2C Vendor Unpaid Invoice Recovery",
+        href: "/it-staff-augmentation-dedicated-developer-monthly-invoice-recovery",
+        tag: "Staff Aug & C2C",
+        desc: "Overcome Tier-1 'Pay-When-Paid' back-to-back excuses using Jira timesheets, MSMED Act 45-day rules, Section 43B(h), and Order 37 summary suits.",
       },
       {
         title: "Legal Notice to International Client: Unpaid Invoices",
@@ -1235,6 +1277,24 @@ const CLUSTERS: Record<string, { heading: string; items: GuideItem[] }> = {
     heading: "Related Pharma, Medical Device & B2B Creditor Recovery Guides",
     items: [
       {
+        title: "Surgical Consumables, Disposables & Medical Gas Vendor Recovery",
+        href: "/surgical-consumables-ppe-hospital-linen-vendor-payment-recovery",
+        tag: "Surgical & Hospital Supply",
+        desc: "Overcome 180-day hospital store GRN payment stalls using Section 43B(h) corporate tax disallowance notices and MSMED Act 3x compound interest.",
+      },
+      {
+        title: "Pharma & Surgical Stockist Unpaid Ledger Legal Notice Format",
+        href: "/templates/pharma-surgical-stockist-ledger-demand-legal-notice",
+        tag: "Pharma Stockist Template",
+        desc: "Advocate-vetted demand notice for pharma/surgical ledgers: Order XXXVII invoice schedule, Drug License Form 20B/21B lock & s.20 NI Act security cheque notice.",
+      },
+      {
+        title: "Veterinary Pharma, AYUSH & Nutraceutical Distributor Recovery",
+        href: "/veterinary-pharma-nutraceutical-ayurvedic-distributor-recovery",
+        tag: "Vet & AYUSH Pharma",
+        desc: "Recover rural veterinary dealer ledgers, AYUSH stockist arrears & private-label nutraceutical batch dues via MSME ODR and NI Act s.138.",
+      },
+      {
         title: "PCD Pharma Franchise Recovery & Territory Monopoly Revocation Playbook",
         href: "/pcd-pharma-franchise-monopoly-distributor-default-recovery",
         tag: "PCD Pharma Monopoly",
@@ -1408,6 +1468,7 @@ function detectCluster(pathname: string): { heading: string; items: GuideItem[] 
   const p = pathname.toLowerCase();
   if (
     p.includes("cardiac-stent") ||
+    p.includes("surgical-consumables") ||
     p.includes("orthopedic-implant") ||
     p.includes("consignment-dues") ||
     p.includes("cold-chain") ||
@@ -1416,6 +1477,9 @@ function detectCluster(pathname: string): { heading: string; items: GuideItem[] 
     p.includes("api-bulk-drug") ||
     p.includes("bulk-drug") ||
     p.includes("pharma") ||
+    p.includes("veterinary") ||
+    p.includes("nutraceutical") ||
+    p.includes("ayurvedic") ||
     p.includes("medical-devices") ||
     p.includes("distributor-dealer")
   ) {
@@ -1462,6 +1526,7 @@ function detectCluster(pathname: string): { heading: string; items: GuideItem[] 
     return CLUSTERS.commercialProperty;
   }
   if (
+    p.includes("custom-industrial-machinery") ||
     p.includes("manufacturing-machinery-oem") ||
     p.includes("oem-deduction") ||
     p.includes("tooling-dies") ||
@@ -1634,6 +1699,7 @@ p.includes("school") ||
   }
   if (
     p.includes("pharma") ||
+    p.includes("surgical-consumables") ||
     p.includes("cold-chain") ||
     p.includes("vaccine") ||
     p.includes("biologics") ||
@@ -1647,6 +1713,9 @@ p.includes("school") ||
   }
   if (
     p.includes("it-saas") ||
+    p.includes("poached") ||
+    p.includes("non-solicitation") ||
+    p.includes("developer") ||
     p.includes("saas") ||
     p.includes("software") ||
     p.includes("uat-") ||

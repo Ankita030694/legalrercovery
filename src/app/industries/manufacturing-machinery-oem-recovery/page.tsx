@@ -1240,6 +1240,12 @@ export default function ManufacturingMachineryOemRecoveryPage() {
                       tag: "Enterprise Batch",
                       desc: "Launch 10 to 10,000+ tri-channel advocate notices for dealer networks and industrial groups.",
                     },
+                    {
+                      title: "HTML Sitemap & Legal Directory (All Categories & Industry Portals)",
+                      href: "/sitemap",
+                      tag: "All Directories",
+                      desc: "Explore all 300+ statutory recovery guides, industry hubs, calculators, and dispute notice templates across India.",
+                    },
                   ].map((item) => (
                     <Link
                       key={item.href}

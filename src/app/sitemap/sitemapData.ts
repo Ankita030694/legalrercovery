@@ -9,6 +9,142 @@ export interface SitemapItem {
 export const ALL_SITEMAP_PAGES: SitemapItem[] = [
 
   {
+    title: "Custom Industrial Machinery Balance Withheld After Installation Recovery",
+    href: "/custom-industrial-machinery-balance-withheld-after-installation-recovery",
+    category: "B2B & Institutional Recovery",
+    date: "16 Nov 2026",
+    timestamp: 1794800000000,
+  },
+
+  {
+    title: "RBI FEMA 9-Month Export & SOFTEX Realization Deadline Calculator",
+    href: "/tools/softex-fema-export-realization-deadline-calculator",
+    category: "B2B & Institutional Recovery",
+    date: "16 Nov 2026",
+    timestamp: 1794799500000,
+  },
+
+  {
+    title: "IT, Software & SaaS Unpaid Invoice Legal Notice Format",
+    href: "/templates/it-software-saas-msa-payment-default-legal-notice",
+    category: "B2B & Institutional Recovery",
+    date: "16 Nov 2026",
+    timestamp: 1794796000000,
+  },
+
+  {
+    title: "Manufacturing, Machinery & OEM Supplier Debt Recovery India",
+    href: "/industries/manufacturing-machinery-oem-recovery",
+    category: "B2B & Institutional Recovery",
+    date: "16 Nov 2026",
+    timestamp: 1794799000000,
+  },
+
+  {
+    title: "Source Code Escrow & IP Withholding for Unpaid IT Invoices",
+    href: "/source-code-escrow-ip-withholding-clause-unpaid-it-invoices",
+    category: "B2B & Institutional Recovery",
+    date: "16 Nov 2026",
+    timestamp: 1794795000000,
+  },
+
+  {
+    title: "White-Label Subcontracted Agency Unpaid Software Invoice Recovery",
+    href: "/white-label-subcontracted-agency-unpaid-software-invoice-recovery",
+    category: "B2B & Institutional Recovery",
+    date: "16 Nov 2026",
+    timestamp: 1794794000000,
+  },
+
+  {
+    title: "US, UK & UAE Client Software Invoice Recovery & SOFTEX Write-Off",
+    href: "/us-uk-uae-client-unpaid-software-invoice-softex-fema-recovery",
+    category: "B2B & Institutional Recovery",
+    date: "16 Nov 2026",
+    timestamp: 1794793000000,
+  },
+
+  {
+    title: "ERP & CRM Implementation Milestone Dispute Recovery",
+    href: "/erp-sap-oracle-salesforce-implementation-milestone-dispute-recovery",
+    category: "B2B & Institutional Recovery",
+    date: "16 Nov 2026",
+    timestamp: 1794791000000,
+  },
+
+  {
+    title: "Client Poached Deployed Developer Non-Solicitation Fee Recovery",
+    href: "/client-poached-deployed-developer-non-solicitation-fee-recovery",
+    category: "B2B & Institutional Recovery",
+    date: "16 Nov 2026",
+    timestamp: 1794792000000,
+  },
+
+  {
+    title: "AWS, Azure & Microsoft NCE Cloud Reseller Unpaid Bill Recovery",
+    href: "/cloud-reseller-aws-azure-gcp-microsoft-csp-unpaid-consumption-recovery",
+    category: "B2B & Institutional Recovery",
+    date: "16 Nov 2026",
+    timestamp: 1794790000000,
+  },
+
+  {
+    title: "Software UAT Sign-Off Delay & Scope Creep Milestone Payment Recovery",
+    href: "/software-uat-sign-off-delay-scope-creep-milestone-payment-recovery",
+    category: "B2B & Institutional Recovery",
+    date: "16 Nov 2026",
+    timestamp: 1794787200000,
+  },
+
+  {
+    title: "IT Staff Augmentation & C2C Vendor Unpaid Invoice Recovery",
+    href: "/it-staff-augmentation-dedicated-developer-monthly-invoice-recovery",
+    category: "B2B & Institutional Recovery",
+    date: "16 Nov 2026",
+    timestamp: 1794781000000,
+  },
+
+  {
+    title: "IT Services, B2B SaaS, ERP & Cloud Vendor Debt Recovery India",
+    href: "/industries/it-saas-software-recovery",
+    category: "B2B & Institutional Recovery",
+    date: "16 Nov 2026",
+    timestamp: 1794780000000,
+  },
+
+  {
+    title: "B2B SaaS Annual Order Form Early Termination & ACV Recovery",
+    href: "/b2b-saas-annual-subscription-early-cancellation-unpaid-invoice-recovery",
+    category: "B2B & Institutional Recovery",
+    date: "16 Nov 2026",
+    timestamp: 1794775000000,
+  },
+
+  {
+    title: "Surgical Consumables & Hospital Vendor Payment Recovery",
+    href: "/surgical-consumables-ppe-hospital-linen-vendor-payment-recovery",
+    category: "B2B & Institutional Recovery",
+    date: "16 Nov 2026",
+    timestamp: 1794774000000,
+  },
+
+  {
+    title: "Pharma & Surgical Stockist Unpaid Ledger Legal Notice Format",
+    href: "/templates/pharma-surgical-stockist-ledger-demand-legal-notice",
+    category: "B2B & Institutional Recovery",
+    date: "16 Nov 2026",
+    timestamp: 1794773000000,
+  },
+
+  {
+    title: "Veterinary Pharma, AYUSH & Nutraceutical Distributor Recovery",
+    href: "/veterinary-pharma-nutraceutical-ayurvedic-distributor-recovery",
+    category: "B2B & Institutional Recovery",
+    date: "16 Nov 2026",
+    timestamp: 1794772000000,
+  },
+
+  {
     title: "PCD Pharma Franchise Recovery & Territory Monopoly Revocation Playbook",
     href: "/pcd-pharma-franchise-monopoly-distributor-default-recovery",
     category: "B2B & Institutional Recovery",
@@ -368,13 +504,6 @@ export const ALL_SITEMAP_PAGES: SitemapItem[] = [
     timestamp: 1794656000000,
   },
   {
-    title: "Manufacturing, Machinery & OEM Supplier Debt Recovery India",
-    href: "/industries/manufacturing-machinery-oem-recovery",
-    category: "B2B & Institutional Recovery",
-    date: "14 Nov 2026",
-    timestamp: 1794655000000,
-  },
-  {
     title: "Construction, EPC & MEP Contractor Bill & Retention Recovery",
     href: "/industries/construction-epc-contractor-recovery",
     category: "B2B & Institutional Recovery",
@@ -387,13 +516,6 @@ export const ALL_SITEMAP_PAGES: SitemapItem[] = [
     category: "B2B & Institutional Recovery",
     date: "14 Nov 2026",
     timestamp: 1794653000000,
-  },
-  {
-    title: "IT Services, B2B SaaS & Cloud Vendor Debt Recovery India",
-    href: "/industries/it-saas-software-recovery",
-    category: "B2B & Institutional Recovery",
-    date: "14 Nov 2026",
-    timestamp: 1794652000000,
   },
   {
     title: "NBFC, Fintech, HFC & MFI Bulk Legal Recovery Platform India",

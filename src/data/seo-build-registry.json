@@ -4955,7 +4955,7 @@
       "CGST Act, 2017 (Sections 16(2), 34 Credit/Debit Notes & Rule 138 e-Way Bill)",
       "Bharatiya Sakshya Adhiniyam, 2023 (Section 63) & Negotiable Instruments Act, 1881 (Section 138)"
     ],
-    "builtAt": "2026-11-14T11:55:00+05:30"
+    "builtAt": "2026-11-16T13:05:00+05:30"
   },
   {
     "id": "B2B-146",
@@ -7001,5 +7001,882 @@
       "Code of Civil Procedure 1908 Order XXXVII, Order XXXVIII Rule 5"
     ],
     "builtAt": "2026-11-16T04:25:05.398Z"
+  },
+  {
+    "id": "B2B-062",
+    "url": "/veterinary-pharma-nutraceutical-ayurvedic-distributor-recovery",
+    "archetype": "G1",
+    "h2s": [
+      "The Rural & OTC Pharma Credit Trap: Why AIOCD NOC Rules Fall Short",
+      "5-Stage Operational Escalation Rail: From Rural Notice to Court Action",
+      "Statutory Recovery Matrix: MSMED Act, NI Act & Order XXXVII CPC",
+      "4 Critical Sector Failure Modes & Operational Recovery SOPs",
+      "Overcoming Seasonal Agro-Vet & Dairy Cooperative Payment Freezes",
+      "AYUSH Super-Stockist Territory Squatting & Expiry Dump Rebuttals",
+      "Enforcing Contract Liabilities for Private-Label Nutraceutical Batches",
+      "Worked Recovery Ledger: Resolving a ₹36.5 Lakh Veterinary Default",
+      "BSA 2023 Section 63 Evidence Dossier for Rural & Modern Trade Audits",
+      "Deploy Dedicated Recovery Infrastructure: ₹999 Test or Bulk CSV Desk",
+      "Frequently Asked Questions on Veterinary, AYUSH & Nutra Recovery",
+      "Statutory Authorities, Precedents & Regulatory Frameworks"
+    ],
+    "faqQuestions": [
+      "Why do veterinary pharma and AYUSH brands face worse distributor credit delays than allopathic brands?",
+      "Can a rural agro-vet distributor delay payment by blaming milk price crashes or poultry bird flu culls?",
+      "How does Section 43B(h) of the Income-tax Act compel veterinary and AYUSH stockists to pay on time?",
+      "Can an Ayurvedic manufacturing brand revoke a distributor's exclusive territory rights if they default on credit?",
+      "What legal remedy exists if a private-label nutraceutical client refuses to lift a completed custom batch?",
+      "Where does a veterinary pharma company file a Section 138 cheque bounce case against an out-of-state distributor?",
+      "How can nutraceutical brands challenge arbitrary modern trade debit notes for listing fees and markdowns?"
+    ],
+    "components": [
+      "Breadcrumbs",
+      "VeterinaryPharmaTableOfContents",
+      "VeterinaryPharmaScenarioTabs",
+      "VeterinaryPharmaRecoveryCTA",
+      "RelatedRecoveryGuides"
+    ],
+    "wordCount": 2640,
+    "artefacts": [
+      "5-Stage Operational Escalation Rail SVG Flowchart & Mobile Cards",
+      "Statutory Enforcement Grid Table (MSMED Act, IT Act s.43B(h), NI Act s.138, CPC Order XXXVII, Sale of Goods Act)",
+      "4 Interactive Commercial Failure Mode Tabs (Seasonal Agro-Vet Default, AYUSH Territory Squatting, Nutraceutical CDMO Batch Refusal, Modern Trade Deductions)",
+      "Worked Financial Ledger for ₹36.5 Lakh Veterinary Default Case Study",
+      "BSA 2023 Section 63 Electronic Evidence Dossier & Bilties Checklist"
+    ],
+    "sources": [
+      "Micro, Small and Medium Enterprises Development Act 2006 ss.15, 16, 17, 18, 19, 24",
+      "Income-tax Act 1961 s.43B(h)",
+      "Negotiable Instruments Act 1881 ss.138, 141, 142(2)(a), 143A",
+      "Sale of Goods Act 1930 ss.42, 44, 46, 55",
+      "Indian Contract Act 1872 ss.39, 51, 70, 73",
+      "Central Goods and Services Tax Act 2017 s.34",
+      "CBIC Circular No. 72/46/2018-GST",
+      "Competition Act 2002 s.3(3)(b)",
+      "Code of Civil Procedure 1908 Order XXXVII, Order XXXVIII Rule 5",
+      "Bharatiya Sakshya Adhiniyam 2023 s.63"
+    ],
+    "builtAt": "2026-11-16T06:31:25.183Z"
+  },
+  {
+    "id": "B2B-064",
+    "url": "/templates/pharma-surgical-stockist-ledger-demand-legal-notice",
+    "archetype": "P1",
+    "h2s": [
+      "The Pharma Stockist Credit Trap: Ledgers, Returns & Security Cheques",
+      "Interactive Notice & Clause Workspace for Pharma Creditors",
+      "Section 20 NI Act Protocol for Depositing Stockist Security Cheques",
+      "Order XXXVII CPC Schedule: Form 20B/21B Licenses & Delivery Bilties",
+      "Barring Unilateral Expired Drug Debits under CGST Act Section 34",
+      "Multi-Channel Legal Service & BSA 2023 Section 63 Evidence Dossier",
+      "Worked Financial Case Study: Overcoming an ₹18.45 Lakh Stockist Default",
+      "Judicial Precedents & High Court Authorities on Stockist Dues",
+      "Deploy Legal Notice: Self-Serve ₹999 Test or Bulk Stockist CSV",
+      "Frequently Asked Questions for Pharma Credit Controllers & Stockists",
+      "Statutory Authorities, Governing Rules & Primary Legal Sources"
+    ],
+    "faqQuestions": [
+      "Can a pharma company or C&F legally fill and deposit a stockist's blank security cheque?",
+      "How do Drug License numbers (Form 20B/21B) strengthen a pharma debt recovery notice?",
+      "Can a defaulting chemist or stockist deduct money for 'expired medicines' or 'breakage'?",
+      "What is the difference between an ordinary legal notice and an Order XXXVII CPC notice?",
+      "Does Section 43B(h) of the Income Tax Act apply to pharma stockists and chemists?",
+      "What evidence is needed to prove pharmaceutical delivery under BSA 2023 Section 63?",
+      "What are the legal notice charges for recovering unpaid pharma stockist ledgers?"
+    ],
+    "components": [
+      "Breadcrumbs",
+      "PharmaStockistNoticeTOC",
+      "PharmaStockistNoticeWorkspace",
+      "PharmaStockistNoticeCTA",
+      "RelatedRecoveryGuides"
+    ],
+    "wordCount": 1940,
+    "artefacts": [
+      "Interactive Legal Notice & Clause Workspace with Live Draft Preview",
+      "Order XXXVII CPC Liquidated Batch & Drug License Schedule Table",
+      "4-Step Statutory Crystallization Protocol for Blank Security Cheques",
+      "Worked Financial Recovery Model for ₹18.45 Lakh Stockist Default",
+      "Multi-Channel Triple-Redundancy BSA 2023 Section 63 Service Dossier"
+    ],
+    "sources": [
+      "Negotiable Instruments Act 1881 ss.20, 138, 139, 141, 143A",
+      "Code of Civil Procedure 1908 Order XXXVII",
+      "Drugs and Cosmetics Rules 1945 Rules 61-66, Forms 20B/21B",
+      "Micro, Small and Medium Enterprises Development Act 2006 ss.15, 16, 17",
+      "Central Goods and Services Tax Act 2017 s.34",
+      "Sale of Goods Act 1930 ss.41, 42",
+      "Bharatiya Sakshya Adhiniyam 2023 s.63",
+      "Bharatiya Nyaya Sanhita 2023 ss.316, 318"
+    ],
+    "builtAt": "2026-11-16T06:32:22.237Z"
+  },
+  {
+    "id": "B2B-066",
+    "url": "/b2b-saas-annual-subscription-early-cancellation-unpaid-invoice-recovery",
+    "archetype": "G1",
+    "h2s": [
+      "B2B SaaS Annual Order Form Billing Traps: The 'New CTO' Repudiation",
+      "5-Stage Operational Escalation Protocol for SaaS Subscription Defaults",
+      "Statutory Recovery Matrix: Contract Act, Commercial Courts & IBC",
+      "4 Enterprise SaaS Breach Scenarios: Early Cancellation to Auto-Renewal",
+      "ACV Acceleration & Discount Clawback: Enforcing Section 74 Damages",
+      "DPDP-Safe Tenant Suspension: Freezing Access Without Data Liability",
+      "Defeating Spurious SLA & Uptime Disputes at Commercial Courts & NCLT",
+      "Worked Recovery Ledger: Enforcing a ₹42.00 Lakh Annual SaaS Contract Default",
+      "BSA 2023 s.63 SaaS Electronic Evidence & Telemetry Dossier",
+      "Deploy SaaS Legal Recovery: Single Test Case or Bulk RevOps Desk",
+      "Frequently Asked Questions on B2B SaaS Contract Enforcement",
+      "Statutory Precedents, Contract Enactments & Legal Authorities"
+    ],
+    "components": [
+      "Breadcrumbs",
+      "SaasSubscriptionRecoveryTableOfContents",
+      "SaasSubscriptionScenarioTabs",
+      "SaasSubscriptionRecoveryCTA",
+      "RelatedRecoveryGuides"
+    ],
+    "faqQuestions": [
+      "Can an enterprise customer terminate a 'Non-Cancellable' annual SaaS contract mid-term in India?",
+      "How does a SaaS provider accelerate remaining unbilled quarterly invoices under Section 74 of the Contract Act?",
+      "How can a SaaS company suspend a defaulting customer's tenant access without violating the DPDP Act 2023?",
+      "What is the legal remedy if an enterprise client manufactures a spurious SLA downtime excuse to refuse payment?",
+      "Can an Indian SaaS company recover unpaid subscription fees from cross-border US/UK/EU enterprise clients?",
+      "Does Section 43B(h) of the Income Tax Act apply to SaaS subscription billing defaults?",
+      "What evidence must a SaaS provider present under Bharatiya Sakshya Adhiniyam, 2023 (BSA Section 63)?",
+      "What is the procedure to file an Order XXXVII Summary Suit for an unpaid SaaS Order Form?"
+    ],
+    "wordCount": 2450,
+    "artefacts": [
+      "5-Stage Operational Escalation Protocol SVG Flowchart & Mobile Cards",
+      "Statutory Recovery Matrix: Contract Act s.73/74, Commercial Courts, MSMED Act & IBC s.8",
+      "Interactive 4-Scenario Enterprise SaaS Breach & Cancellation Explorer",
+      "DPDP-Safe Tenant Read-Only Suspension & 30-Day Export Protocol",
+      "Worked Financial Recovery Ledger for ₹42.00 Lakh Annual SaaS Contract Default",
+      "7-Pillar BSA 2023 Section 63 SaaS Electronic Telemetry Dossier"
+    ],
+    "sources": [
+      "Indian Contract Act 1872 ss.73, 74",
+      "Commercial Courts Act 2015 s.2(1)(c)(xviii), s.12A",
+      "Digital Personal Data Protection Act 2023",
+      "Information Technology Act 2000 ss.43, 66",
+      "Insolvency and Bankruptcy Code 2016 ss.8, 9",
+      "Micro, Small and Medium Enterprises Development Act 2006 ss.15-18",
+      "Income Tax Act 1961 s.43B(h)",
+      "Code of Civil Procedure 1908 Order XXXVII, Order XXXVIII Rule 5",
+      "Bharatiya Sakshya Adhiniyam 2023 s.63"
+    ],
+    "builtAt": "2026-11-16T06:47:00.000Z"
+  },
+  {
+    "id": "B2B-063",
+    "url": "/surgical-consumables-ppe-hospital-linen-vendor-payment-recovery",
+    "archetype": "G1",
+    "h2s": [
+      "The 180-Day Hospital Credit Trap: Why Private Hospitals Delay Consumables First",
+      "5-Stage Operational Escalation Rail: From Store GRN Audit to Asset Attachment",
+      "Statutory Recovery Matrix: MSMED Act, Section 43B(h), Order XXXVII & IBC",
+      "4 Critical Hospital Failure Modes & Commercial Recovery SOPs",
+      "The Section 43B(h) Corporate Tax Leverage: Why Hospital CFOs Clear Micro/Small Vendors First",
+      "Liquid Medical Oxygen (LMO) & Critical Gases: Neutralizing Hospital ESMA Threats",
+      "Recovering Retained Rate Contract EMDs, PBGs & Security Deposits",
+      "Worked Recovery Ledger: Resolving a ₹28.4 Lakh Hospital Consumables Default",
+      "BSA 2023 Section 63 Evidence Dossier for Hospital Store Invoices",
+      "Deploy Institutional Recovery Infrastructure: ₹999 Test or Multi-Hospital Batch Desk",
+      "Frequently Asked Questions for Surgical Consumable & Hospital Vendors",
+      "Statutory Authorities, Precedents & Governing Regulations"
+    ],
+    "faqQuestions": [
+      "Why do private hospitals routinely delay payments to surgical consumable vendors beyond 180 days?",
+      "How does Section 43B(h) of the Income-tax Act force corporate hospitals to clear surgical vendor dues?",
+      "Can a hospital storekeeper's stamp on a Goods Received Note (GRN) prove delivery in court?",
+      "What legal risks arise if a medical oxygen supplier halts deliveries due to hospital payment default?",
+      "Can a hospital withhold surgical vendor payments by claiming doctors disliked the consumables?",
+      "How can a surgical consumables supplier recover earnest money deposits (EMD) after a rate contract expires?",
+      "What evidence must be gathered under BSA 2023 Section 63 for hospital invoice litigation?",
+      "What happens if a hospital chain is acquired by another healthcare group while vendor bills are unpaid?"
+    ],
+    "components": [
+      "Breadcrumbs",
+      "SurgicalConsumablesTableOfContents",
+      "SurgicalConsumablesScenarioTabs",
+      "SurgicalConsumablesRecoveryCTA",
+      "RelatedRecoveryGuides"
+    ],
+    "wordCount": 2580,
+    "artefacts": [
+      "5-Stage Operational Escalation Rail SVG Flowchart & Mobile Cards",
+      "Statutory Enforcement Grid Table (MSMED Act, IT Act s.43B(h), Sale of Goods Act, CPC Order XXXVII, Contract Act)",
+      "4 Interactive Clinical Failure Mode Tabs (Approved GRN Frozen, Medical Gas Arrears, Rate Contract EMD, Corporate Chain M&A)",
+      "Worked Financial Ledger for ₹28.4 Lakh Hospital Default Case Study",
+      "BSA 2023 Section 63 Electronic Evidence Dossier & GRN Checklist"
+    ],
+    "sources": [
+      "Income-tax Act 1961 s.43B(h)",
+      "Micro, Small and Medium Enterprises Development Act 2006 ss.15, 16, 17, 18, 19",
+      "Sale of Goods Act 1930 ss.41, 42",
+      "Indian Contract Act 1872 ss.73, 74",
+      "Code of Civil Procedure 1908 Order XXXVII, Order XXXVIII Rule 5",
+      "Insolvency and Bankruptcy Code 2016 ss.8, 9",
+      "Bharatiya Sakshya Adhiniyam 2023 s.63",
+      "Mobilox Innovations Pvt. Ltd. v. Kirusa Software Pvt. Ltd. (2018)"
+    ],
+    "builtAt": "2026-11-16T06:48:24.186665+00:00"
+  },
+  {
+    "id": "B2B-068",
+    "url": "/it-staff-augmentation-dedicated-developer-monthly-invoice-recovery",
+    "archetype": "G1",
+    "h2s": [
+      "The C2C IT Staffing Cash-Flow Squeeze: Salary Commitments vs 90-Day Payment Delays",
+      "5-Stage Escalation Protocol for Defaulted Staffing Invoices",
+      "Statutory Recovery Matrix: Legal Forums, Timelines & Remedies",
+      "4 Common Staffing Default Modes & Operational Responses",
+      "Defeating “Pay-When-Paid” Traps: Why Tier-1 SIs Cannot Withhold Vendor Payments",
+      "15-Day Bench Pullback Protocol: Reciprocal Promises & Rebutting SLA Counter-Claims",
+      "Enforcing MSME 45-Day Rules & Section 43B(h) Corporate Tax Leverage",
+      "Worked Financial Ledger: ₹37.5 Lakh Default Escalation Model",
+      "BSA Section 63 Digital Proof Dossier: Jira, Git & Timesheets",
+      "Initiate Recovery: Test 1 Case or Deploy Institutional Bulk Desk",
+      "Frequently Asked Questions: IT Staffing & Developer Invoice Recovery",
+      "Statutory Authorities & Verified Court Precedents"
+    ],
+    "faqQuestions": [
+      "Can a Tier-1 SI legally withhold vendor payments because their end-client has not paid them?",
+      "How do approved Jira and Azure DevOps timesheets serve as legal evidence under BSA 2023?",
+      "Can an IT staffing company pull developers from a client's project if invoices are overdue?",
+      "What is the penalty for enterprise debtors under Section 43B(h) of the Income Tax Act?",
+      "What rate of interest can IT staffing agencies claim on delayed monthly invoices?",
+      "What legal remedy prevents a client from poaching deployed software engineers directly?",
+      "Does the IT staffing company retain software copyright until invoices are settled?",
+      "What is the limitation period for filing an IT staff-augmentation recovery suit in India?"
+    ],
+    "components": [
+      "Breadcrumbs",
+      "ItStaffAugmentationRecoveryTableOfContents",
+      "ItStaffAugmentationScenarioTabs",
+      "ItStaffAugmentationNoticeCTA",
+      "RelatedRecoveryGuides"
+    ],
+    "wordCount": 2420,
+    "artefacts": [
+      "5-Stage Operational Escalation Protocol SVG Flowchart & Mobile Cards",
+      "Statutory Recovery Matrix Table (MSMED Act, Income Tax s.43B(h), CPC Order 37, Commercial Mediation, Contract Act)",
+      "4 Interactive Staffing Default Scenarios (Tier-1 Pay-When-Paid Trap, Approved Jira Ghosting, Bench Pullback SLA Threats, Direct Developer Poaching)",
+      "Worked Financial Ledger for ₹37.5 Lakh Default Escalation Model with 3x RBI Compound Interest",
+      "BSA 2023 Section 63 Digital Proof Dossier (Jira, Git, Slack, Invoices, Certificate)"
+    ],
+    "sources": [
+      "https://www.indiacode.nic.in/handle/123456789/2013",
+      "https://incometaxindia.gov.in/Pages/acts/income-tax-act.aspx",
+      "https://www.indiacode.nic.in/handle/123456789/21735",
+      "https://www.indiacode.nic.in/handle/123456789/2191",
+      "https://www.indiacode.nic.in/handle/123456789/2138",
+      "https://www.indiacode.nic.in/handle/123456789/1367"
+    ],
+    "builtAt": "2026-11-16T12:20:00+05:30"
+  },
+  {
+    "id": "B2B-065",
+    "url": "/industries/it-saas-software-recovery",
+    "archetype": "IH1",
+    "h2s": [
+      "Why Enterprise Tech & SaaS Firms Lose Revenue on Generic Notices",
+      "IT, SaaS, ERP & Cloud Escalation Matrix by Contract Type",
+      "4-Stage IT Creditor Workflow: Telemetry Audit to Enforceable Recovery",
+      "Interactive Recovery Playbooks Across 4 Tech & Cloud Verticals",
+      "Multi-Invoice Tech Ledger, Git/Jira Proof & Batch CSV Dispatch",
+      "High Court & Supreme Court Precedents on Tech Contracts & IP Liens",
+      "BSA Section 63 Electronic Evidence Checklist for Tech Creditors",
+      "Explore Specialized IT, SaaS & Software Recovery Spoke Playbooks",
+      "Related B2B & Freelancer Legal Recovery Seed Guides",
+      "Frequently Asked Questions on IT & SaaS Legal Debt Recovery in India",
+      "Statutory Enactments, Government Portals & Authoritative References"
+    ],
+    "components": [
+      "Breadcrumbs",
+      "ItSaasTableOfContents",
+      "ItSaasScenarioTabs",
+      "ItSaasCTA",
+      "RelatedRecoveryGuides"
+    ],
+    "faqQuestions": [
+      "Can an Indian IT services or SaaS company legally withhold source code or suspend server access for non-payment?",
+      "How do software agencies defeat 'infinite UAT bug-fix loops' when a client already deployed the app to production?",
+      "Are non-cancellable annual B2B SaaS Order Forms enforceable if an enterprise buyer stops paying quarterly installments?",
+      "Can a Tier-2 IT staffing vendor collect unpaid T&M invoices when a Tier-1 System Integrator cites 'back-to-back' client non-payment?",
+      "Is a B2B non-solicitation or developer buyout fee valid under Section 27 of the Indian Contract Act?",
+      "What happens under RBI FEMA and STPI SOFTEX rules if a US, UK, or UAE software client refuses to pay past 9 months?",
+      "Can an IT founder or SaaS CFO test LegalRecovery.in on one unpaid client before onboarding a batch portfolio?"
+    ],
+    "wordCount": 3120,
+    "artefacts": [
+      "Multi-Track Tech Escalation Decision Matrix Table (8 IT Segments & Remedies)",
+      "Interactive 4-Track IT Resolution Navigator (SaaS, Custom Dev, Staffing, Cloud)",
+      "Technical BSA 2023 Section 63 Digital Evidence Standard Checklist",
+      "Full 11-Spoke IND-05 Hub-and-Spoke Directory with Downward Track Cards",
+      "Dual-Track Self-Serve ₹999 vs Enterprise CSV Batch Onboarding Module"
+    ],
+    "sources": [
+      "Commercial Courts Act 2015 s.2(1)(c)(xviii), s.12A",
+      "Copyright Act 1957 ss.17, 19, 51, 55",
+      "Information Technology Act 2000 ss.43, 66",
+      "Indian Contract Act 1872 ss.39, 51-55, 73, 74",
+      "Micro, Small and Medium Enterprises Development Act 2006 ss.15-18",
+      "Bharatiya Sakshya Adhiniyam 2023 s.63",
+      "RBI Master Direction on Export of Goods and Services (EDPMS)",
+      "Code of Civil Procedure 1908 Order XXXVII & Order XXXVIII Rule 5"
+    ],
+    "builtAt": "2026-11-16T12:21:00+05:30"
+  },
+  {
+    "id": "B2B-067",
+    "url": "/software-uat-sign-off-delay-scope-creep-milestone-payment-recovery",
+    "archetype": "G1",
+    "h2s": [
+      "The Infinite UAT Trap: Why Custom Software Agencies Get Stonewalled on Final Milestones",
+      "5-Stage Operational Escalation Protocol: From Stalled UAT to Milestone Recovery",
+      "Statutory Recovery Matrix: Contract Act, Copyright Act & MSMED Act Protections",
+      "4 Critical Agency Failure Modes: Production Deploys to Agile Scope Ambush",
+      "Enforcing Deemed Acceptance: Proving Live Production Traffic Extinguishes UAT Delays",
+      "The Copyright Act Section 19 IP Lien: Why Unpaid Code Cannot Be Transferred",
+      "Segregating Scope Creep: Converting Disguised Bug Lists into Billable Change Requests",
+      "Worked Recovery Ledger: Resolving a ₹32.50 Lakh AI & Full-Stack Milestone Default",
+      "BSA 2023 Section 63 Software Telemetry & Git Commit Evidence Dossier",
+      "Deploy Software Milestone Legal Recovery: Single Case Test or Bulk PMO Desk",
+      "Frequently Asked Questions on Software UAT Sign-Off & Milestone Recovery",
+      "Statutory References, Technology Precedents & Legal Authorities"
+    ],
+    "components": [
+      "Breadcrumbs",
+      "SoftwareUatRecoveryTableOfContents",
+      "SoftwareUatScenarioTabs",
+      "SoftwareUatRecoveryCTA",
+      "RelatedRecoveryGuides"
+    ],
+    "faqQuestions": [
+      "Can a client delay software milestone payments by claiming UAT is 'still ongoing' indefinitely?",
+      "What constitutes 'Deemed Acceptance' when a client uses our software in production without signing UAT?",
+      "Does the client own the software code if they have paid 70% of the milestones but default on the final 30%?",
+      "Can our agency legally withhold the GitHub repository and AWS root credentials for unpaid invoices?",
+      "How do we legally defeat client claims that out-of-scope feature requests are 'UAT bugs'?",
+      "How does Section 43B(h) of the Income Tax Act help dev shops recover delayed UAT milestone dues?",
+      "Can an Indian software agency recover unpaid milestone dues from international US, UK, or EU clients?",
+      "What electronic evidence is required under Section 63 of Bharatiya Sakshya Adhiniyam, 2023 (BSA)?"
+    ],
+    "wordCount": 2520,
+    "artefacts": [
+      "5-Stage Operational Escalation Protocol SVG Flowchart & Mobile Cards",
+      "Statutory Enforcement Grid Table (Sale of Goods Act s.42, Copyright Act ss.17/19, Contract Act ss.39/55/70, MSMED Act ss.15-18, Order XXXVII CPC)",
+      "Interactive 4-Scenario Agency Failure Mode Explorer (Production Deploy, Infinite Cosmetic Bug Loop, GitHub Extortion, Agile Scope Ambush)",
+      "Worked Financial Recovery Ledger for ₹32.50 Lakh AI & Full-Stack Platform Default",
+      "7-Pillar BSA 2023 Section 63 Software Telemetry & Git Commit Evidence Dossier"
+    ],
+    "sources": [
+      "Indian Contract Act 1872 ss.39, 51-54, 55, 70, 73",
+      "Copyright Act 1957 ss.17, 19, 51, 63",
+      "Sale of Goods Act 1930 ss.42, 44, 55",
+      "Micro, Small and Medium Enterprises Development Act 2006 ss.15, 16, 17, 18",
+      "Commercial Courts Act 2015 s.2(1)(c)(xviii), s.12A",
+      "Income Tax Act 1961 s.43B(h)",
+      "Code of Civil Procedure 1908 Order XXXVII, Order XXXVIII Rule 5",
+      "Bharatiya Sakshya Adhiniyam 2023 s.63"
+    ],
+    "builtAt": "2026-11-16T06:53:33.369Z"
+  },
+  {
+    "id": "B2B-070",
+    "url": "/cloud-reseller-aws-azure-gcp-microsoft-csp-unpaid-consumption-recovery",
+    "archetype": "G1",
+    "h2s": [
+      "The Asymmetric CSP Risk Trap: Thin Margins vs. Unconditional Hyperscaler Debt",
+      "5-Stage Operational Escalation Protocol: From Telemetry Anomaly to Garnishee Order",
+      "Statutory & Judicial Enforcement Grid for Cloud Resellers & VARs",
+      "4 Critical Cloud Default Scenarios & Tailored CFO Recovery Strategies",
+      "Lawful IAM Console Lockdown: De-Provisioning Without Cyber-Trespass Liabilities",
+      "Enforcing Personal Director Guarantees on Uncapped Postpaid Cloud Consumption",
+      "Worked Financial Recovery Ledger: ₹54.80 Lakh Enterprise Hyperscaler Default",
+      "BSA 2023 Section 63 Cloud Telemetry, API Logs & Immutable Billing Dossier",
+      "Stop Paying Hyperscalers Out of Pocket: Activate Your Institutional Cloud Recovery Desk",
+      "Frequently Asked Questions: Cloud Reseller Receivables & Partner Defaults",
+      "Statutory Authorities, Binding Precedents & Legal Citations"
+    ],
+    "components": [
+      "Breadcrumbs",
+      "CloudResellerRecoveryTableOfContents",
+      "CloudResellerScenarioTabs",
+      "CloudResellerRecoveryCTA",
+      "RelatedRecoveryGuides"
+    ],
+    "faqQuestions": [
+      "Why must Indian cloud resellers pay hyperscalers if the client defaults or shuts down?",
+      "Can a client cancel an annual Microsoft NCE commitment early if they downsize or fire staff?",
+      "Can a cloud reseller lawfully shut down a defaulting client's AWS or Azure console without risking IT Act criminal charges?",
+      "How can cloud resellers enforce personal liability against startup founders who burn cloud credits?",
+      "Can cloud resellers file Order XXXVII Summary Suits based on cloud billing APIs and telemetry?",
+      "Who is liable when a client's leaked IAM keys cause a ₹30 Lakh crypto-mining AWS bill spike?",
+      "How does Section 43B(h) of the Income Tax Act compel enterprise clients to settle cloud reseller bills?",
+      "What electronic evidence is required to prove cloud consumption under Bharatiya Sakshya Adhiniyam, 2023?"
+    ],
+    "wordCount": 2480,
+    "artefacts": [
+      "5-Stage Operational Escalation Protocol SVG Flowchart & Mobile Cards",
+      "Statutory & Judicial Enforcement Grid Table (Order XXXVII CPC, MSMED Act ss.15-18, Contract Act s.128, Income Tax Act s.43B(h), Order XXXVIII Rule 5)",
+      "Interactive 4-Scenario Cloud Default Explorer (AI GPU Burn, IAM Breach Crypto Spike, Microsoft NCE Annual Lock-In, SaaS VAR Margin Default)",
+      "Worked Financial Recovery Ledger for ₹54.80 Lakh Hyperscaler Default with 3x RBI MSME Compound Interest",
+      "7-Pillar BSA 2023 Section 63 Cloud Telemetry, API Logs & Immutable Billing Dossier"
+    ],
+    "sources": [
+      "Indian Contract Act 1872 ss.39, 70, 73, 126, 128",
+      "Sale of Goods Act 1930 ss.42, 55",
+      "Micro, Small and Medium Enterprises Development Act 2006 ss.15, 16, 17, 18, 19",
+      "Commercial Courts Act 2015 s.2(1)(c)(xviii), s.12A",
+      "Information Technology Act 2000 ss.43, 43A, 66",
+      "Income Tax Act 1961 s.43B(h)",
+      "Code of Civil Procedure 1908 Order XXXVII, Order XXXVIII Rule 5",
+      "Bharatiya Sakshya Adhiniyam 2023 s.63",
+      "State Bank of India v. V. Ramakrishnan (2018) 17 SCC 394",
+      "Patil Automation Pvt. Ltd. v. Rakheja Engineers Pvt. Ltd. (2022) 10 SCC 1",
+      "Silpi Industries v. Kerala State Road Transport Corporation (2021) 18 SCC 790",
+      "Raman Tech & Process Engg. Co. v. Solanki Traders (2008) 2 SCC 302"
+    ],
+    "builtAt": "2026-11-16T07:05:00.000Z"
+  },
+  {
+    "id": "B2B-072",
+    "url": "/us-uk-uae-client-unpaid-software-invoice-softex-fema-recovery",
+    "archetype": "G1",
+    "h2s": [
+      "Why Foreign Client Non-Payment Triggers Serious RBI EDPMS Penalties",
+      "5-Stage Cross-Border Recovery & EDPMS SOFTEX Regularization Protocol",
+      "Cross-Border Legal Enforcement Matrix: US, UK, UAE & Singapore Forums",
+      "4 Cross-Border Default Scenarios: Delaware, UK Ltd, UAE & Direct Escrow",
+      "The STPI SOFTEX Write-Off SOP: Satisfying AD Bank & RBI Criteria",
+      "Enforcing Copyright Liens: Why Foreign Clients Do Not Own Unpaid Code",
+      "Worked Export Recovery Ledger: $65,000 Default & EDPMS Resolution",
+      "BSA 2023 s.63 Cross-Border Evidence & Digital Audit Dossier",
+      "Institutional Cross-Border Software Recovery & EDPMS Desk",
+      "Frequently Asked Questions on Offshore Defaults & SOFTEX Write-Off",
+      "Statutory References, Cross-Border Treaties & Regulatory Circulars"
+    ],
+    "components": [
+      "Breadcrumbs",
+      "ForeignClientSoftexRecoveryTableOfContents",
+      "ForeignClientSoftexScenarioTabs",
+      "ForeignClientSoftexRecoveryCTA",
+      "RelatedRecoveryGuides"
+    ],
+    "faqQuestions": [
+      "Why do Indian software exporters face RBI EDPMS trouble when an overseas client defaults?",
+      "Why does my Authorized Dealer (AD) Bank insist on legal notice proof to permit a SOFTEX write-off?",
+      "Can an Indian software agency legally recover money from a US entity registered in Delaware or California?",
+      "How does Section 44A CPC allow Indian court decrees to be directly executed in the UK and UAE?",
+      "Does a foreign client own the software code if they defaulted on the final milestone payment?",
+      "What should an IT agency do if an Upwork or Toptal client moves off-platform and then stops paying?",
+      "What is the timeline for applying for an RBI EDPMS extension or SOFTEX write-off?",
+      "What electronic evidence is required under Section 63 of Bharatiya Sakshya Adhiniyam, 2023 (BSA)?"
+    ],
+    "wordCount": 2490,
+    "artefacts": [
+      "5-Stage Cross-Border Recovery & STPI SOFTEX Workflow SVG & Mobile Cards",
+      "Comparative Cross-Border Statutory Matrix Table (FEMA, CPC s.44A, US UCC, Copyright s.19, UK CPR)",
+      "Interactive 4-Scenario Offshore Breach Explorer (US Delaware LLC, UK Ltd Distance, UAE Dubai Root Access, Upwork Direct Disintermediation)",
+      "Worked Export Recovery Ledger: $65,000 Milestone Default & EDPMS Write-Off Calculation",
+      "7-Pillar BSA 2023 Section 63 Cross-Border Telemetry & Digital Evidence Dossier"
+    ],
+    "sources": [
+      "Foreign Exchange Management Act 1999 ss.7, 8",
+      "RBI Master Direction No. 16/2015-16 Section C.16 Write-Off",
+      "Code of Civil Procedure 1908 Section 44A",
+      "Ministry of Law Notification S.O. 261(E) (UAE Reciprocating Territory)",
+      "Copyright Act 1957 ss.17, 19, 51, 63",
+      "Berne Convention for the Protection of Literary and Artistic Works Art. 5",
+      "Bharatiya Sakshya Adhiniyam 2023 s.63"
+    ],
+    "builtAt": "2026-11-16T07:15:00.000Z"
+  },
+  {
+    "id": "B2B-071",
+    "url": "/erp-sap-oracle-salesforce-implementation-milestone-dispute-recovery",
+    "archetype": "G1",
+    "h1": "Recovering Stalled Blueprint, Go-Live & Hypercare Invoices for ERP & CRM Implementation Partners",
+    "meta_title": "ERP Milestone Dispute Recovery: SAP, Salesforce & Odoo",
+    "meta_description": "Client delayed ERP Go-Live over legacy master data and withholds milestones? Enforce Contract Act s.53/54 reciprocal promises, CR logs & Section 12A recovery.",
+    "h2s": [
+      "Anatomy of ERP Milestone Stalls: The Manufacturing & Retail Master-Data Trap",
+      "Contract Act Sections 53 & 54: The Reciprocal Promise Legal Key",
+      "5-Stage ERP Milestone Escalation Protocol: From Stalled UAT to Recovery",
+      "ERP Implementation Dispute Statutory Recovery Matrix",
+      "4 Enterprise Implementation Failure Modes & Counter-Measures",
+      "Enforcing Unapproved Change Requests: Quantum Meruit & Digital Approvals",
+      "Hypercare Retainage Holdback: Why Live Production Bars Milestone Withholding",
+      "Worked Financial Calculation: ₹68.50 Lakh ERP Dispute Recovery Ledger",
+      "BSA 2023 Section 63 Electronic Evidence Checklist for ERP Litigations",
+      "Activate Institutional ERP Milestone Recovery Desk",
+      "Frequently Asked Questions: ERP Milestone Disputes",
+      "Statutory Citations & Judicial Precedents"
+    ],
+    "components": [
+      "ErpMilestoneRecoveryTableOfContents",
+      "ErpMilestoneScenarioTabs",
+      "ErpMilestoneRecoveryCTA",
+      "Breadcrumbs",
+      "RelatedRecoveryGuides"
+    ],
+    "faqQuestions": [
+      "Can a client withhold an ERP Go-Live milestone if their internal finance team failed to provide clean master data?",
+      "How do we recover unapproved Change Request (CR) logs when the client CFO claims 'there is no signed physical paper CR'?",
+      "Does putting an ERP into live production constitute 'Deemed Acceptance' of the Go-Live milestone?",
+      "Can an ERP implementation partner retain copyright in custom ABAP code or Salesforce Apex scripts if invoices are unpaid?",
+      "How does Section 43B(h) of the Income Tax Act help an ERP partner recover overdue consulting fees?",
+      "What evidence is required under Section 63 of the Bharatiya Sakshya Adhiniyam, 2023 (BSA) for an ERP milestone dispute?",
+      "What is the statutory timeline to initiate Commercial Court litigation under Section 12A?"
+    ],
+    "wordCount": 2450,
+    "artefacts": [
+      "Desktop SVG 5-Stage Decision Tree + Mobile Cards",
+      "Dark-Header Statutory Matrix Table",
+      "Interactive 4-Scenario Tabs Component",
+      "Worked ₹68.50 Lakh Financial Ledger with MSMED Act 3x Compounding",
+      "BSA 2023 Section 63 Evidence Checklist",
+      "Dual B2B CTAs with Payment Modal Integration",
+      "7 Practitioner FAQ Accordions"
+    ],
+    "sources": [
+      "Indian Contract Act, 1872 (ss. 53, 54, 70, 73 & 74)",
+      "Commercial Courts Act, 2015 (ss. 2(1)(c)(xviii) & 12A)",
+      "MSMED Act, 2006 (ss. 15-18)",
+      "Bharatiya Sakshya Adhiniyam, 2023 (s. 63)",
+      "Copyright Act, 1957 (ss. 17 & 19)"
+    ],
+    "builtAt": "2026-11-16T07:04:47.541Z"
+  },
+  {
+    "id": "B2B-073",
+    "url": "/white-label-subcontracted-agency-unpaid-software-invoice-recovery",
+    "archetype": "G1",
+    "h2s": [
+      "The White-Label Margin Squeeze: Why Prime Agencies Ghost Indian Dev Shops",
+      "5-Stage White-Label Escalation Protocol: From Default to Debt & IP Recovery",
+      "Statutory Enforcement Matrix: Subcontractor Protections Under Indian Law",
+      "4 Subcontractor Failure Scenarios: Deconstruct Agency Defenses",
+      "Copyright Act s.17/19: Why Unpaid Code Voids Prime Agency IP Warranties",
+      "Piercing the NDA Shield Lawfully: Legal Strategy Without Tortious Liability",
+      "Defeating the 'Paid-When-Paid' & Back-to-Back Payment Defense",
+      "Worked Recovery Ledger: Resolving a ₹28.50 Lakh White-Label Platform Default",
+      "BSA 2023 Section 63 Evidence Dossier for Subcontracted Tech Creditors",
+      "Deploy Subcontractor Legal Recovery: Single Case Test or Bulk PMO Desk",
+      "Frequently Asked Questions on White-Label Subcontractor Debt Recovery",
+      "Statutory Enactments, Government Portals & Judicial References"
+    ],
+    "components": [
+      "Breadcrumbs",
+      "WhiteLabelRecoveryTableOfContents",
+      "WhiteLabelScenarioTabs",
+      "WhiteLabelRecoveryCTA",
+      "RelatedRecoveryGuides"
+    ],
+    "faqQuestions": [
+      "Can our dev shop contact the end-client directly if our white-label NDA strictly forbids it?",
+      "Does our dev shop own the software copyright if we signed a white-label 'Work for Hire' contract?",
+      "Is a 'Paid-When-Paid' or 'Back-to-Back' payment clause legally enforceable in India?",
+      "What can we do if a US or European agency hired our Indian dev shop and completely vanished?",
+      "Can we shut down AWS servers or revoke GitHub access to force the prime agency to pay?",
+      "How does Section 43B(h) of the Income Tax Act help recover dues from Indian prime agencies?",
+      "Can we test LegalRecovery.in on a single ₹5 Lakh–₹25 Lakh white-label dispute before onboarding larger ledgers?"
+    ],
+    "wordCount": 2640,
+    "artefacts": [
+      "5-Stage White-Label Escalation Protocol SVG Flowchart & Mobile Cards",
+      "Statutory Enforcement Matrix Grid (Copyright Act ss.17/19, Contract Act ss.39/70/73, MSMED Act ss.15-18, Commercial Courts Act 2015 s.2(1)(c)(xviii), Specific Relief Act s.41(h))",
+      "Interactive 4-Scenario Subcontractor Failure Mode Explorer (WhiteLabelScenarioTabs)",
+      "Worked Financial Recovery Ledger for ₹28.50 Lakh White-Label Platform Default with MSMED compounding interest and IP retention indemnity",
+      "7-Pillar BSA 2023 Section 63 Software Telemetry & Git Commit Evidence Dossier"
+    ],
+    "sources": [
+      "Copyright Act 1957 ss.17, 19, 51, 55",
+      "Indian Contract Act 1872 ss.28, 39, 46, 70, 73",
+      "Micro, Small and Medium Enterprises Development Act 2006 ss.15, 16, 24",
+      "Commercial Courts Act 2015 s.2(1)(c)(xviii), s.12A",
+      "Specific Relief Act 1963 s.41(h)",
+      "Code of Civil Procedure 1908 Order XXXVIII Rule 5, Order XXXVII",
+      "Bharatiya Sakshya Adhiniyam 2023 s.63",
+      "Income Tax Act 1961 s.43B(h)"
+    ],
+    "builtAt": "2026-11-16T12:35:00+05:30"
+  },
+  {
+    "id": "B2B-069",
+    "url": "/client-poached-deployed-developer-non-solicitation-fee-recovery",
+    "archetype": "G1",
+    "h2s": [
+      "The Poaching Trap: Why Clients Secretly Poach Your Deployed Engineers",
+      "5-Stage Operational Escalation Protocol: From Discovery to Buyout Recovery",
+      "Statutory Recovery Matrix: Contract Act, Commercial Courts & MSMED Act",
+      "4 Critical Client Poaching Scenarios: Pretexts, Legal Realities & SOPs",
+      "The Section 27 vs Section 74 Distinction: How Indian High Courts Rule",
+      "Drafting Ironclad B2B Conversion & Resource-Buyout Clauses",
+      "Uncovering Secret Direct Hiring: 5 Digital Audit Vectors",
+      "Worked Financial Ledger: Recovering an ₹18.00 Lakh Developer Buyout Default",
+      "BSA 2023 Section 63 Digital Evidence Checklist for Tech Poaching Claims",
+      "Deploy Developer Buyout Legal Recovery: Single Notice Test or Bulk Staffing Desk",
+      "Frequently Asked Questions on Client Developer Poaching & Buyout Fees",
+      "Statutory Authorities & Verified Precedents"
+    ],
+    "components": [
+      "Breadcrumbs",
+      "DeveloperPoachingRecoveryTableOfContents",
+      "DeveloperPoachingScenarioTabs",
+      "DeveloperPoachingRecoveryCTA",
+      "RelatedRecoveryGuides"
+    ],
+    "faqQuestions": [
+      "Is a B2B employee non-solicitation clause legally valid under Section 27 of the Indian Contract Act?",
+      "What if the client claims the developer applied independently to a public LinkedIn job opening?",
+      "How do Indian courts view '6 to 12 months billing' as a resource buyout fee under Section 74?",
+      "What happens if the client hires our developer through an offshore shell company or third-party payroll agency?",
+      "Does the non-solicitation obligation survive if the Statement of Work (SOW) has already ended?",
+      "Can an IT services agency file an Order XXXVII Summary Suit for a developer buyout fee?",
+      "How can Udyam-registered MSME IT vendors leverage the MSMED Act for poached developer recovery?",
+      "What digital evidence is required under Section 63 of Bharatiya Sakshya Adhiniyam, 2023 (BSA)?"
+    ],
+    "wordCount": 2742,
+    "artefacts": [
+      "5-Stage B2B Resource Poaching Escalation Flowchart SVG & Mobile Stacked Cards",
+      "Statutory Recovery Matrix Table (Contract Act s.74, Order XXXVII CPC, s.27 vs s.74, Tortious Interference, MSMED Act ss.15-18, BSA 2023 s.63)",
+      "Interactive 4-Scenario Client Poaching Explorer (LinkedIn Pretext, Shadow Staffing, Post-SOW Cooling-Off, Unreasonable Penalty Defense)",
+      "Worked Financial Recovery Ledger for ₹18.00 Lakh Buyout Dispute with Statutory Interest (₹23.83 Lakh total claim)",
+      "6-Pillar BSA 2023 Section 63 Digital Evidence Checklist (Git Commits, Slack Logs, UAN Records, RFC 822 Email Headers)"
+    ],
+    "sources": [
+      "Indian Contract Act, 1872 (ss. 27, 73, 74)",
+      "Commercial Courts Act, 2015 (ss. 2(1)(c)(xviii), 12A)",
+      "Code of Civil Procedure, 1908 (Order XXXVII, Order XXXVIII Rule 5)",
+      "MSMED Act, 2006 (ss. 15-18)",
+      "Bharatiya Sakshya Adhiniyam, 2023 (s. 63)",
+      "Limitation Act, 1963 (Art. 55)",
+      "Wipro Limited v. Beckman Coulter International S.A., 2006 (3) ARBLR 118 (Delhi HC)",
+      "Kailash Nath Associates v. DDA, (2015) 4 SCC 136",
+      "FL Smidth Pvt. Ltd. v. M. Secunder & Ors., 2013 (1) CTC 886 (Madras HC)"
+    ],
+    "builtAt": "2026-11-16T07:07:39.632Z"
+  },
+  {
+    "id": "B2B-074",
+    "url": "/source-code-escrow-ip-withholding-clause-unpaid-it-invoices",
+    "archetype": "L1",
+    "h2s": [
+      "Statutory Dilemma: The Thin Line Between Lawful IP Lien and IT Act Crime",
+      "IT Act 2000 Sections 43 & 66: The Criminal Peril of “Kill-Switch” Self-Help",
+      "Contract Act Sections 51–54: The Lawful Doctrine of Reciprocal Promises",
+      "Copyright Act Section 19: Conditional IP Assignment Upon Full Consideration",
+      "Source Code Escrow Architecture: Structuring Tri-Party Release Triggers",
+      "Staging vs Production Infrastructure: Permissible vs Criminal Suspension",
+      "Interactive Scenarios: Navigating Source Code & Infrastructure Withholding",
+      "Statutory Escalation Timeline & Limitation Stops: From Default to Decree",
+      "Judicial Precedents & High Court Holdings on Software IP & Cyber Offenses",
+      "Debtor Defense Pre-Emption Matrix: Countering Cyber FIR Threats & Bluffs",
+      "SOP: Serving an Advocate Cure-Cum-Suspension Notice Without Criminal Exposure",
+      "Frequently Asked Questions on Source Code Withholding & IT Act Liabilities",
+      "Statutory Authorities, Bare Acts & Verified Regulatory Citations"
+    ],
+    "components": [
+      "Breadcrumbs",
+      "SourceCodeWithholdingTableOfContents",
+      "SourceCodeWithholdingScenarioTabs",
+      "SourceCodeWithholdingCTA",
+      "RelatedRecoveryGuides"
+    ],
+    "faqQuestions": [
+      "Can our software company lawfully withhold the Git source code repository if the client refuses to pay the milestone invoice?",
+      "What makes a software 'kill-switch' or remote database wiper illegal under Section 43 and Section 66 of the Information Technology Act?",
+      "Can we shut down the staging server or demo environment if the client has not paid server hosting or development fees?",
+      "How does Section 19 of the Copyright Act, 1957 protect Indian software developers against clients claiming 'Work Made For Hire'?",
+      "What should an IT vendor do if an enterprise client falsely triggers a Source Code Escrow release?",
+      "Can an Indian IT agency initiate MSME Samadhaan recovery and claim 3x RBI compound interest for withheld source code disputes?",
+      "How do we draft a lawful 'Cure-Cum-Suspension Notice' that creates legal pressure without criminal exposure?",
+      "What digital evidence is required under Section 63 of Bharatiya Sakshya Adhiniyam, 2023 (BSA) to prove code ownership and client default?"
+    ],
+    "wordCount": 2420,
+    "artefacts": [
+      "Lawful IP Lien & Suspension vs IT Act s.43/66 Criminal Liability Hand-Authored SVG Flowchart",
+      "Statutory Matrix Table for IT Act s.43/65/66 vs BNS s.308 / IPC s.384",
+      "Interactive 4-Scenario Explorer (Git Repo Withholding, Staging vs Production, Escrow Triggers, Offshore Work-For-Hire)",
+      "4-Phase Statutory Escalation Timeline & Limitation Stops Table (Limitation Act Art. 55)",
+      "Debtor Defense Pre-Emption Matrix (5 commercial pretexts neutralized)",
+      "4 Verified Judicial Precedents (Eastern Book Company, Pine Labs, Dr. Prafulla B. Desai, Nath Seeds)"
+    ],
+    "sources": [
+      "Information Technology Act, 2000 (ss. 43, 65, 66)",
+      "Indian Contract Act, 1872 (ss. 51, 52, 53, 54, 70)",
+      "Copyright Act, 1957 (ss. 17, 19, 51, 55, 63)",
+      "Commercial Courts Act, 2015 (ss. 2(1)(c)(xviii), 12A)",
+      "MSMED Act, 2006 (ss. 15-18)",
+      "Bharatiya Sakshya Adhiniyam, 2023 (s. 63)",
+      "Limitation Act, 1963 (Art. 55)",
+      "Eastern Book Company v. D.B. Modak, (2008) 1 SCC 1",
+      "Pine Labs Pvt. Ltd. v. Gemalto Terminals India Pvt. Ltd., 2011 (48) PTC 248 (Del)",
+      "State of Maharashtra v. Dr. Prafulla B. Desai, (2003) 4 SCC 601",
+      "M/s Nath Seeds Ltd. v. Union of India, 2010 SCC OnLine Del 3424"
+    ],
+    "builtAt": "2026-11-16T07:33:00.000Z"
+  },
+  {
+    "id": "B2B-076",
+    "url": "/templates/it-software-saas-msa-payment-default-legal-notice",
+    "archetype": "P1",
+    "h2s": [
+      "Why Generic Goods Supply Notices Fail in Software & SaaS Debts",
+      "Interactive Tech Notice Workspace & Statutory Clause Engine",
+      "Copyright Act ss.19 & 51: De-Coupling Work-for-Hire from Unpaid Code",
+      "SaaS Tenant Suspension vs. IT Act s.43/66 Criminal Allegations",
+      "Defeating UAT Stonewalling: Estoppel Through Commercial Utilization",
+      "BSA 2023 s.63: Digital Evidence Docket & Git SHA Certification",
+      "Worked Financial Illustration: Milestone Default + 3x RBI Interest",
+      "High Court Authorities & Commercial Case Law Citations",
+      "Frequently Asked Questions on IT & SaaS Legal Notices",
+      "Statutory Authorities & Official References"
+    ],
+    "components": [
+      "Breadcrumbs",
+      "ItSoftwareNoticeTOC",
+      "ItSoftwareNoticeWorkspace",
+      "ItSoftwareNoticeCTA",
+      "RelatedRecoveryGuides"
+    ],
+    "faqQuestions": [
+      "Can an Indian software agency or SaaS company legally suspend servers or revoke API keys for non-payment?",
+      "Why do standard offline goods legal notice formats fail completely in software and SaaS debt recovery?",
+      "How does the Copyright Act Section 19 and 51 clause create immediate settlement leverage?",
+      "What is UAT Stonewalling and how does this notice defeat the infinite bug-fix defense?",
+      "How does Section 63 of the Bharatiya Sakshya Adhiniyam, 2023 apply to software dispute evidence?",
+      "Can an IT agency or SaaS startup claim 3x RBI compound interest under the MSMED Act, 2006?",
+      "What are the costs to have an empanelled technology advocate draft and dispatch this notice?"
+    ],
+    "wordCount": 1950,
+    "artefacts": [
+      "Advocate-Vetted Tech Notice Workspace with Real-Time Generator & Presets",
+      "Copyright Act s.19/51 IP License Revocation & Criminal Exposure Clause",
+      "7-Day SaaS Tenant Suspension Notice with DPDP Act 72hr Data Egress Safe Harbor",
+      "BSA 2023 Section 63 Digital Telemetry & Git Commit Hash Evidence Matrix",
+      "Dual-Track B2B Self-Serve ₹999 vs Enterprise Batch CSV Desk"
+    ],
+    "sources": [
+      "Commercial Courts Act 2015 s.2(1)(c)(xviii)",
+      "Copyright Act 1957 ss.17, 19, 51, 55, 63",
+      "Information Technology Act 2000 ss.43, 66",
+      "Digital Personal Data Protection Act 2023 s.8",
+      "Micro, Small and Medium Enterprises Development Act 2006 ss.15-18",
+      "Bharatiya Sakshya Adhiniyam 2023 s.63",
+      "Sale of Goods Act 1930 s.42",
+      "Indian Contract Act 1872 ss.39, 51-55, 73, 74"
+    ],
+    "builtAt": "2026-11-16T13:05:00+05:30"
+  },
+  {
+    "id": "B2B-075",
+    "url": "/tools/softex-fema-export-realization-deadline-calculator",
+    "archetype": "T1",
+    "h2s": [
+      "RBI FEMA 9-Month SOFTEX & Export Realization Calculator",
+      "How Does the Statutory 9-Month FEMA Repatriation Clock Operate?",
+      "How Does the 5% Normal vs 10% Status Holder Write-Off Cap Work?",
+      "Why Is an Advocate Legal Demand Mandatory for AD-Bank EDPMS Closure?",
+      "How to Secure a 6-Month Realization Extension via Form ETX",
+      "Worked Case Studies: Normal Exporter vs Star Export House",
+      "ECGC Default Notification Timelines & Export Incentive Surrender",
+      "Related Tech, SaaS & Cross-Border Debt Recovery Resources",
+      "Frequently Asked Questions on SOFTEX, FEMA & RBI Write-Off",
+      "Primary Statutory Statutes, Regulations & Regulatory Portals"
+    ],
+    "components": [
+      "SoftexFemaCalculatorClient",
+      "SoftexFemaCalculatorTOC",
+      "SoftexFemaCalculatorCTA",
+      "RelatedRecoveryGuides"
+    ],
+    "faqQuestions": [
+      "What is the statutory realization deadline for software and goods exports under FEMA?",
+      "What is the difference between the 5% Normal and 10% Status Holder self-write-off limit?",
+      "Why do AD Banks insist on an Advocate Legal Demand Notice before approving a write-off?",
+      "What happens when an unrealized export bill remains open in EDPMS past 9 months?",
+      "How can an exporter obtain a 6-month extension using RBI Form ETX?",
+      "Do exporters have to surrender Duty Drawback or RoDTEP if an export bill is written off?",
+      "What is the deadline to notify ECGC if an insured overseas buyer defaults on an invoice?"
+    ],
+    "wordCount": 1780,
+    "artefacts": [
+      "Single Invoice & Batch CSV Interactive FEMA Realization Calculator",
+      "EDPMS 4-Bracket Aging and Banking Consequence Matrix Table",
+      "Worked Case Studies for Normal Exporter ($65k) vs 2-Star Export House (£40k)",
+      "Mandatory AD-Bank EDPMS Closure Documentation Roadmap Checklist",
+      "Dual-Track B2B Self-Serve ₹999 vs Enterprise Batch CSV Desk"
+    ],
+    "sources": [
+      "https://www.rbi.org.in/",
+      "https://www.indiacode.nic.in/handle/123456789/1988",
+      "https://www.stpi.in/",
+      "https://www.dgft.gov.in/",
+      "https://www.ecgc.in/"
+    ],
+    "builtAt": "2026-11-16T13:07:00+05:30"
+  },
+  {
+    "id": "B2B-078",
+    "url": "/custom-industrial-machinery-balance-withheld-after-installation-recovery",
+    "archetype": "G1",
+    "h2s": [
+      "The 10–20% Machinery Commissioning & Trial Run Balance Holdback Trap",
+      "Sale of Goods Act Section 42: Deemed Acceptance in Commercial Use",
+      "5-Stage Escalation SOP: From ECC Standoff to Summary Decree",
+      "Statutory Recovery Matrix: SOGA, MSMED, Order XXXVII & Sec 43B(h)",
+      "Interactive Scenarios: Overcoming Factory Buyer Payment Stalls",
+      "Worked Financial Ledger: ₹15L Balance & 3x RBI Penal Interest",
+      "BSA Section 63 Evidence: Proving Output with SCADA & GST Logs",
+      "Neutralizing Buyer Excuses: Pre-Emption Matrix for Machinery Makers",
+      "SOP: Serving an Advocate Section 42 Legal Demand Notice",
+      "Institutional B2B Machinery Recovery & Portfolio Dispute Desk",
+      "Frequently Asked Questions on Machinery Balance Payment Recovery",
+      "Statutory Authorities, Bare Acts & Verified Judicial Precedents"
+    ],
+    "components": [
+      "Breadcrumbs",
+      "MachineryRecoveryTableOfContents",
+      "MachineryRecoveryScenarioTabs",
+      "MachineryRecoveryCTA",
+      "RelatedRecoveryGuides"
+    ],
+    "faqQuestions": [
+      "What is 'Deemed Acceptance' under Section 42 of the Sale of Goods Act, 1930?",
+      "Can a factory buyer withhold our final 10–20% balance if they refuse to sign the Commissioning Certificate?",
+      "What should an industrial machinery maker do if the buyer raises defect claims after 6 months of use?",
+      "How does Section 43B(h) of the Income Tax Act help machinery manufacturers recover withheld retention money?",
+      "Does the MSMED Act 45-day payment limit override a purchase order clause specifying 12-month retention?",
+      "What electronic evidence is required under Section 63 of Bharatiya Sakshya Adhiniyam (BSA), 2023 to prove commercial use?",
+      "Can Medium Enterprises use MSME Samadhaan for machinery balance recovery?",
+      "How fast can an industrial machinery supplier obtain a court order against a defaulting factory?"
+    ],
+    "wordCount": 2480,
+    "artefacts": [
+      "Sale of Goods Act s.42 Deemed Acceptance & Escalation Hand-Authored SVG Flowchart",
+      "Dark-Header Statutory Recovery Matrix Table (SOGA, MSMED, Order XXXVII, s.43B(h))",
+      "Interactive 4-Scenario Explorer (3-Shift Production, Belated Defect Claims, Retention Holdback, Contributory Negligence)",
+      "Worked Financial Ledger Box (₹75L Line, ₹15L Balance, MSMED s.16 3x RBI Compounding Interest)",
+      "Debtor Defense Pre-Emption Matrix (4 factory pretexts neutralized)",
+      "4 Verified Judicial Precedents (Sha Thilokchand, Silpi Industries, Patil Automation, Mobilox Innovations)"
+    ],
+    "sources": [
+      "Sale of Goods Act, 1930 (ss. 16, 41, 42, 43, 55, 59)",
+      "Micro, Small and Medium Enterprises Development Act, 2006 (ss. 15, 16, 17, 18, 24)",
+      "Code of Civil Procedure, 1908 (Order XXXVII, Order XXXVIII Rule 5)",
+      "Commercial Courts Act, 2015 (ss. 2(1)(c)(i), 12A)",
+      "Income Tax Act, 1961 (s. 43B(h))",
+      "Bharatiya Sakshya Adhiniyam, 2023 (s. 63)",
+      "Sha Thilokchand Poosaji v. Crystal and Co., AIR 1955 Mad 481",
+      "Silpi Industries v. Kerala State Road Transport Corporation, 2021 SCC OnLine SC 439",
+      "Patil Automation Pvt. Ltd. v. Rakheja Engineers Pvt. Ltd., (2022) 10 SCC 1",
+      "Mobilox Innovations Pvt. Ltd. v. Kirusa Software Pvt. Ltd., (2018) 1 SCC 353"
+    ],
+    "builtAt": "2026-11-16T07:38:00.000Z"
   }
 ]

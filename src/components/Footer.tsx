@@ -292,17 +292,12 @@ export default function Footer() {
             className="w-full flex items-center justify-between py-1 text-left group cursor-pointer focus:outline-none select-none"
             aria-expanded={isGuidesOpen}
           >
-            <div className="flex items-center gap-3">
-              <span className="text-white font-extrabold text-[13px] uppercase tracking-wider group-hover:text-red-400 transition-colors">
-                Queries &amp; Legal Notice Guides
-              </span>
-              <span className="text-[10px] font-bold px-2 py-0.5 rounded-full bg-gray-800/80 text-gray-400 border border-gray-700/50">
-                {guideLinks.length}
-              </span>
-            </div>
+            <span className="text-white font-extrabold text-[13px] uppercase tracking-wider group-hover:text-red-400 transition-colors">
+              Queries &amp; Legal Notice Guides
+            </span>
 
             <div className="flex items-center gap-1.5 text-xs text-gray-400 group-hover:text-white transition-colors">
-              <span className="text-[11px] font-semibold hidden sm:inline">
+              <span className="text-[11px] font-semibold">
                 {isGuidesOpen ? "Show Less" : "View All"}
               </span>
               <svg
@@ -320,7 +315,15 @@ export default function Footer() {
             {guideLinks.map((link, idx) => (
               <div
                 key={idx}
-                className={`flex flex-col ${!isGuidesOpen && idx >= 4 ? "hidden" : ""}`}
+                className={`flex-col ${
+                  !isGuidesOpen
+                    ? idx === 0
+                      ? "flex"
+                      : idx < 4
+                      ? "hidden sm:flex"
+                      : "hidden"
+                    : "flex"
+                }`}
               >
                 <a
                   href={link.href}
@@ -330,28 +333,6 @@ export default function Footer() {
                 </a>
               </div>
             ))}
-          </div>
-
-          <div className="mt-4">
-            <button
-              type="button"
-              onClick={() => setIsGuidesOpen((prev) => !prev)}
-              className="inline-flex items-center gap-1.5 text-[12px] font-semibold text-red-400 hover:text-red-300 transition-colors cursor-pointer select-none"
-            >
-              <span>
-                {isGuidesOpen
-                  ? "Show Less"
-                  : `+ View all ${guideLinks.length} queries & legal notice guides`}
-              </span>
-              <svg
-                className={`w-3.5 h-3.5 transform transition-transform duration-200 ${isGuidesOpen ? "rotate-180" : ""}`}
-                fill="none"
-                stroke="currentColor"
-                viewBox="0 0 24 24"
-              >
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2.5" d="M19 9l-7 7-7-7" />
-              </svg>
-            </button>
           </div>
         </div>
 
@@ -366,17 +347,12 @@ export default function Footer() {
             className="w-full flex items-center justify-between py-1 text-left group cursor-pointer focus:outline-none select-none"
             aria-expanded={isCategoriesOpen}
           >
-            <div className="flex items-center gap-3">
-              <span className="text-white font-extrabold text-[13px] uppercase tracking-wider group-hover:text-red-400 transition-colors">
-                Specialized Recovery &amp; Legal Notice Categories
-              </span>
-              <span className="text-[10px] font-bold px-2 py-0.5 rounded-full bg-gray-800/80 text-gray-400 border border-gray-700/50">
-                {recoveryCategoryLinks.length}
-              </span>
-            </div>
+            <span className="text-white font-extrabold text-[13px] uppercase tracking-wider group-hover:text-red-400 transition-colors">
+              Specialized Recovery &amp; Legal Notice Categories
+            </span>
 
             <div className="flex items-center gap-1.5 text-xs text-gray-400 group-hover:text-white transition-colors">
-              <span className="text-[11px] font-semibold hidden sm:inline">
+              <span className="text-[11px] font-semibold">
                 {isCategoriesOpen ? "Show Less" : "View All"}
               </span>
               <svg
@@ -394,7 +370,15 @@ export default function Footer() {
             {recoveryCategoryLinks.map((link, idx) => (
               <div
                 key={idx}
-                className={`flex flex-col ${!isCategoriesOpen && idx >= 4 ? "hidden" : ""}`}
+                className={`flex-col ${
+                  !isCategoriesOpen
+                    ? idx === 0
+                      ? "flex"
+                      : idx < 4
+                      ? "hidden sm:flex"
+                      : "hidden"
+                    : "flex"
+                }`}
               >
                 <a
                   href={link.href}
@@ -404,28 +388,6 @@ export default function Footer() {
                 </a>
               </div>
             ))}
-          </div>
-
-          <div className="mt-4">
-            <button
-              type="button"
-              onClick={() => setIsCategoriesOpen((prev) => !prev)}
-              className="inline-flex items-center gap-1.5 text-[12px] font-semibold text-red-400 hover:text-red-300 transition-colors cursor-pointer select-none"
-            >
-              <span>
-                {isCategoriesOpen
-                  ? "Show Less"
-                  : `+ View all ${recoveryCategoryLinks.length} categories`}
-              </span>
-              <svg
-                className={`w-3.5 h-3.5 transform transition-transform duration-200 ${isCategoriesOpen ? "rotate-180" : ""}`}
-                fill="none"
-                stroke="currentColor"
-                viewBox="0 0 24 24"
-              >
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2.5" d="M19 9l-7 7-7-7" />
-              </svg>
-            </button>
           </div>
         </div>
 
