@@ -6720,5 +6720,286 @@
       "Bharatiya Sakshya Adhiniyam 2023 s.63"
     ],
     "builtAt": "2026-11-14T12:20:45.999Z"
+  },
+  {
+    "id": "B2B-057",
+    "url": "/pharma-expired-goods-breakage-credit-note-dispute-stockist-recovery",
+    "archetype": "G1",
+    "h2s": [
+      "The Pharma Expiry & Breakage Trap: How Stockists Evade Ledger Dues",
+      "5-Stage Operational Protocol for Disputed Expiry Returns & Deductions",
+      "Statutory Defense Matrix: CGST s.34, CBIC Circular 72 & Contract Caps",
+      "4 Stockist Commercial Default Scenarios: Expiry Dumps & Debit Notes",
+      "CBIC Circular 72/46/2018-GST: Destroyed Drugs & Time-Expired Goods",
+      "Enforcing Contractual 1.5%–2% Caps Against AIOCD Trade Practice Norms",
+      "Drugs & Cosmetics Rule 65 & Form 20B/21B Compliance in Stock Returns",
+      "Worked Recovery Ledger: Rebutting an Arbitrary ₹18,40,000 Stockist Debit",
+      "BSA 2023 Section 63 Electronic Evidence Dossier for Pharma Audits",
+      "Deploy Dedicated Pharma Legal Recovery: Single Case or Bulk CSV Desk",
+      "Frequently Asked Questions on Pharma Expiry & Breakage Recovery",
+      "Statutory Authorities, CBIC Circulars & Precedential Framework"
+    ],
+    "faqQuestions": [
+      "Can a pharma stockist unilaterally deduct expired goods from their pending payment ledger?",
+      "What is the statutory GST deadline under Section 34 for issuing credit notes on expired medicines?",
+      "How does CBIC Circular No. 72/46/2018-GST protect pharmaceutical manufacturers?",
+      "Do unwritten AIOCD or regional chemist association trade norms override a written distributor contract?",
+      "What evidence is required under Section 63 of Bharatiya Sakshya Adhiniyam (BSA 2023) to defeat breakage claims?",
+      "Can an MSME pharmaceutical manufacturer claim 3x compound interest on withheld stockist payments?",
+      "How does Section 43B(h) of the Income Tax Act provide recovery leverage against defaulting stockists?",
+      "What legal action can be taken if a terminated stockist refuses to settle an aged ledger balance?"
+    ],
+    "components": [
+      "Breadcrumbs",
+      "PharmaExpiredStockTableOfContents",
+      "PharmaExpiredStockScenarioTabs",
+      "PharmaExpiredStockRecoveryCTA",
+      "RelatedRecoveryGuides"
+    ],
+    "wordCount": 2680,
+    "artefacts": [
+      "5-Stage Operational Recovery Rail SVG Flowchart",
+      "Statutory Recovery Matrix Table (CGST s.34, Contract Act, MSMED)",
+      "4 Interactive Commercial Failure Mode Tabs (Expiry Dump, Breakage, Cut-off, AIOCD)",
+      "CBIC Circular 72 Option A vs Option B Comparison Box",
+      "Worked Financial Ledger for ₹18,40,000 Pharma Stockist Default Case",
+      "BSA 2023 Section 63 Electronic Evidence Dossier Checklist"
+    ],
+    "sources": [
+      "CBIC Circular No. 72/46/2018-GST",
+      "Central Goods and Services Tax Act 2017 ss.34, 17(5)(h)",
+      "Indian Contract Act 1872 ss.73, 74",
+      "Drugs and Cosmetics Rules 1945 Rule 65(17), Form 20B/21B",
+      "Micro, Small and Medium Enterprises Development Act 2006 ss.15, 16, 18",
+      "Income Tax Act 1961 s.43B(h)",
+      "Code of Civil Procedure 1908 Order XXXVII, Order XXXVIII Rule 5",
+      "Competition Act 2002 s.3",
+      "Bharatiya Sakshya Adhiniyam 2023 s.63"
+    ],
+    "builtAt": "2026-11-14T12:34:59.196Z"
+  },
+  {
+    "id": "B2B-059",
+    "url": "/api-bulk-drug-chemical-intermediate-b2b-invoice-recovery",
+    "archetype": "G1",
+    "h2s": [
+      "API & Bulk Drug Recovery Realities: High Stakes & 90-Day Credit Traps",
+      "5-Stage Operational Escalation Protocol for Bulk Drug Invoice Defaults",
+      "Statutory Recovery Matrix: IBC s.8, Sale of Goods Act & Order 37",
+      "4 Bulk Chemical Default Scenarios: Late QC Rejection to LC Defaults",
+      "Defeating Mobilox 'Moonshine' Quality Disputes at NCLT Benches",
+      "Retention Sample Protocols & Sale of Goods Act s.42 Acceptance Rules",
+      "Usance LC & Bill of Exchange Defaults: NI Act s.138 & Commercial Suits",
+      "Worked Recovery Ledger: Rebutting a ₹2.85 Cr Bulk Drug Default",
+      "BSA 2023 s.63 Electronic Audit & Chromatogram Evidence Dossier",
+      "Deploy Bulk Drug Legal Recovery: Single Test Case or Bulk CSV Desk",
+      "Frequently Asked Questions on API & Bulk Drug Debt Recovery",
+      "Statutory Precedents, Pharmacopoeia Standards & Legal Authorities"
+    ],
+    "faqQuestions": [
+      "How can an API manufacturer defeat a buyer's late Pharmacopoeia assay rejection claim?",
+      "Can an API or intermediate creditor file an IBC Section 9 petition if the buyer raises a quality dispute?",
+      "What is the legal importance of Control/Retention Samples in bulk chemical recovery litigation?",
+      "How do Section 15 and 16 of the MSMED Act apply to bulk drug and intermediate suppliers?",
+      "Can an API creditor recover dues if the road tanker solvent was commingled into the buyer's bulk tank?",
+      "What legal remedy applies when a pharma buyer defaults on an accepted Usance Bill of Exchange?",
+      "Which court has territorial jurisdiction when a Telangana/Gujarat API supplier sues a plant in Baddi or Sikkim?",
+      "What electronic documentation is required under BSA Section 63 for pharmaceutical invoice recovery?"
+    ],
+    "components": [
+      "Breadcrumbs",
+      "ApiBulkDrugRecoveryTableOfContents",
+      "ApiBulkDrugScenarioTabs",
+      "ApiBulkDrugRecoveryCTA",
+      "RelatedRecoveryGuides"
+    ],
+    "wordCount": 2740,
+    "artefacts": [
+      "5-Stage Operational Escalation Protocol SVG Flowchart",
+      "Statutory Recovery Matrix Table (IBC s.8, Sale of Goods Act, Order 37)",
+      "4 Interactive Commercial Failure Mode Tabs (Late Assay, Usance LC, Tanker Variance, Jurisdiction)",
+      "Contractual Retention Sample & QC Acceptance Clause Blueprint",
+      "Worked Financial Ledger for ₹2.85 Cr Bulk Drug Default Case",
+      "BSA 2023 Section 63 Electronic Audit & Chromatogram Evidence Dossier Checklist"
+    ],
+    "sources": [
+      "Insolvency and Bankruptcy Code 2016 ss.8, 9",
+      "Sale of Goods Act 1930 ss.41, 42",
+      "Drugs and Cosmetics Rules 1945 Schedule M, Rule 65",
+      "Micro, Small and Medium Enterprises Development Act 2006 ss.15, 16, 18",
+      "Income Tax Act 1961 s.43B(h)",
+      "Code of Civil Procedure 1908 Order XXXVII, Order XXXVIII Rule 5, s.20(c)",
+      "Commercial Courts Act 2015 s.2(1)(c), s.12A",
+      "Negotiable Instruments Act 1881 ss.138, 141, 143A",
+      "Bharatiya Sakshya Adhiniyam 2023 s.63"
+    ],
+    "builtAt": "2026-11-16T04:12:18.586Z"
+  },
+  {
+    "id": "B2B-061",
+    "url": "/cold-chain-vaccine-biologics-temperature-dispute-invoice-recovery",
+    "archetype": "G1",
+    "h2s": [
+      "The Cold-Chain Rejection Ambush: How Hospital Receivers Evade Dues",
+      "5-Stage Verification Protocol: From Box Packing to BSA s.63 Sign-Off",
+      "Statutory Recovery Matrix: BSA 2023 s.63, Sale of Goods & MSMED Act",
+      "4 Critical Biologics Failure Modes: Temperature Spikes to Sabotage",
+      "WHO GDP Protocols vs Sham Excursion Claims: Establishing Proof",
+      "Sale of Goods Act s.41–44: Risk Transfer on Signed Cold-Box Delivery",
+      "Overcoming the 'Named-Patient' Oncology Supply Non-Payment Trap",
+      "Worked Recovery Ledger: Rebutting an Arbitrary ₹42,50,000 Rejection",
+      "BSA 2023 Section 63 Digital Temperature Dossier & Cryptographic Hash",
+      "Deploy Biologics Legal Recovery: Single Case Test or Bulk CSV Desk",
+      "Frequently Asked Questions on Cold-Chain & Biologics Dues Recovery",
+      "Statutory Authorities, WHO GDP Guidelines & Precedential Framework"
+    ],
+    "faqQuestions": [
+      "Can a hospital pharmacy refuse to pay for biologics weeks after delivery alleging cold-chain break?",
+      "How does Section 63 of Bharatiya Sakshya Adhiniyam, 2023 (BSA) prove unbroken cold chain?",
+      "What should a distributor do if the hospital receiving clerk signs the POD but leaves the temperature blank?",
+      "Can a hospital return custom-procured Named-Patient oncology biologics if the patient dies before infusion?",
+      "How does Section 43B(h) of the Income Tax Act help recover overdue vaccine and biologics invoices?",
+      "What statutory interest rate applies to delayed cold-chain pharmaceutical invoices under MSMED Act?",
+      "Can a hospital withhold payment across multiple centers if only one satellite clinic reports an issue?",
+      "What is the limitation period to file legal recovery for unpaid biologics invoices in India?"
+    ],
+    "components": [
+      "Breadcrumbs",
+      "ColdChainRecoveryTableOfContents",
+      "ColdChainScenarioTabs",
+      "ColdChainRecoveryCTA",
+      "RelatedRecoveryGuides"
+    ],
+    "wordCount": 2620,
+    "artefacts": [
+      "5-Stage Cold-Chain Verification Protocol SVG Flowchart",
+      "Statutory Recovery Matrix Table (BSA 2023 s.63, Sale of Goods Act, MSMED Act)",
+      "4 Interactive Commercial Failure Mode Tabs (Post-Facto, Gatekeeper, Named-Patient, Chain Hold)",
+      "NIST USB Data-Logger Calibration & SHA-256 Hash Protocol",
+      "Worked Financial Ledger for ₹42,50,000 Oncology Biologics Rebuttal Case",
+      "BSA 2023 Section 63 Digital Temperature Dossier Checklist"
+    ],
+    "sources": [
+      "Bharatiya Sakshya Adhiniyam 2023 s.63",
+      "Sale of Goods Act 1930 ss.18-26, 41-44",
+      "Indian Contract Act 1872 ss.73, 74",
+      "Drugs and Cosmetics Rules 1945 Schedule M, Rule 64, Rule 65",
+      "Micro, Small and Medium Enterprises Development Act 2006 ss.15, 16, 18",
+      "Income Tax Act 1961 s.43B(h)",
+      "Code of Civil Procedure 1908 Order XXXVII, Order XXXVIII Rule 5",
+      "Competition Act 2002 ss.3, 4",
+      "WHO Technical Report Series No. 961 Annex 5 & Annex 9"
+    ],
+    "builtAt": "2026-11-16T09:44:50.000Z"
+  },
+  {
+    "id": "B2B-058",
+    "url": "/state-medical-services-corporation-hospital-tender-payment-recovery",
+    "archetype": "G1",
+    "h2s": [
+      "The State Procurement Paradox: Bureaucracy vs Statutory Law",
+      "5-Stage Operational Escalation Rail for Government Tender Dues",
+      "Public Procurement Statutory Recovery Matrix",
+      "GeM Portal Auto-CRAC & DDO Payment Rules",
+      "4 Commercial Tender Failure Modes & Operational Playbooks",
+      "Supreme Court Jurisprudence on Public Tenders & Debarment",
+      "Worked Statutory Calculation: Defeating the 'No-Interest' Defense",
+      "BSA 2023 Section 63 Evidence Dossier for Tender Recovery",
+      "Shielding Suppliers from Retaliatory Blacklisting & PBG Encashment",
+      "Deploy Dedicated Tender Legal Recovery: Single Case or Bulk CSV Desk",
+      "Frequently Asked Questions on Medical Tender Recovery",
+      "Statutory Authorities, Procurement Guidelines & Precedents"
+    ],
+    "faqQuestions": [
+      "Can a State Medical Corporation deny interest by citing the tender's 'no-interest' clause?",
+      "What is the statutory deadline for hospital DDOs to clear GeM portal invoices post-CRAC?",
+      "How do pharmaceutical suppliers stop retaliatory blacklisting by government medical corporations?",
+      "What is the legal remedy if a Corporation withholds payments citing an NSKQ lab report months later?",
+      "Does an MSME need to go through the Corporation's internal arbitration panel before MSEFC?",
+      "How does the 75% pre-deposit rule under Section 19 of the MSMED Act protect medical suppliers?",
+      "Can hospital supplies delivered during emergency procurement (like epidemics) be recovered without a formal tender PO?"
+    ],
+    "components": [
+      "Breadcrumbs",
+      "StateMedicalTenderTableOfContents",
+      "StateMedicalTenderScenarioTabs",
+      "StateMedicalTenderCTA",
+      "RelatedRecoveryGuides"
+    ],
+    "wordCount": 2650,
+    "artefacts": [
+      "5-Stage Operational Escalation Rail SVG Flowchart",
+      "Public Procurement Statutory Recovery Matrix Table",
+      "4 Interactive Commercial Failure Mode Tabs (Treasury Freeze, GeM CRAC, NSKQ, Blacklisting)",
+      "Worked Statutory Compound Interest Calculation Box (₹1.48 Cr Default)",
+      "BSA 2023 Section 63 Tender Evidence Dossier Checklist",
+      "UMC Technologies Natural Justice Debarment Protection Box"
+    ],
+    "sources": [
+      "Micro, Small and Medium Enterprises Development Act 2006 ss.15, 16, 17, 18, 19, 24",
+      "Government e-Marketplace (GeM) GTC v4.0 Clause 12",
+      "Ministry of Finance Department of Expenditure OM No. F.6/18/2019-PPD",
+      "Drugs and Cosmetics Act 1940 s.25(3), s.25(4)",
+      "Sale of Goods Act 1930 s.42",
+      "Constitution of India Article 226, Article 14, Article 19(1)(g)",
+      "Indian Contract Act 1872 s.70, s.73",
+      "Bharatiya Sakshya Adhiniyam 2023 s.63"
+    ],
+    "builtAt": "2026-11-16T04:14:51.440Z"
+  },
+  {
+    "id": "B2B-060",
+    "url": "/pcd-pharma-franchise-monopoly-distributor-default-recovery",
+    "archetype": "G1",
+    "h2s": [
+      "The PCD Franchise Credit Paradox: District Monopoly vs Remote Defaults",
+      "5-Stage Escalation Protocol: From Ledger Notice to CJM Summons",
+      "Statutory Matrix: NI Act s.138, Monopoly Revocation & MSMED Act",
+      "4 Critical PCD Franchise Failure Modes & Operational Countermeasures",
+      "The Home-Bank Jurisdiction Shield: Enforcing NI Act Section 142(2)",
+      "Contractual Territory Monopoly Revocation & New Stockist Appointment",
+      "Recovering MR Bags, Doctor Samples & Visual Aid Inputs under BNS s.316",
+      "Worked Recovery Ledger: Overcoming a ₹28.4 Lakh District PCD Default",
+      "BSA 2023 Section 63 Electronic Evidence Dossier & Transport Bilties",
+      "Deploy Dedicated PCD Pharma Recovery: ₹999 Test or Bulk CSV Desk",
+      "Frequently Asked Questions on PCD Franchise Debt & Monopoly Recovery",
+      "Statutory Precedents, Jurisdictional Holdings & Bare Act Authorities"
+    ],
+    "faqQuestions": [
+      "Do Chandigarh or Gujarat PCD pharma companies have to travel to remote district courts to sue defaulting franchisees?",
+      "Can a PCD pharma company revoke district monopoly rights if the franchisee defaults on rolling credit?",
+      "Can a franchisee defend a cheque bounce case by claiming the cheque was given only as an 'undated security cheque'?",
+      "What legal action can be taken if a terminated franchisee refuses to return MR bags, visual aids, and doctor samples?",
+      "How does Section 43B(h) of the Income Tax Act compel PCD distributors to clear overdue pharma invoices within 45 days?",
+      "How do transport bilties (LRs) and e-Way bills serve as conclusive legal proof of drug delivery under BSA 2023 Section 63?",
+      "What should a PCD company do if the local Chemist & Druggist Association threatens a boycott against new stockist appointments?",
+      "What is the limitation period for recovering overdue PCD franchise ledgers in India?"
+    ],
+    "components": [
+      "Breadcrumbs",
+      "PcdPharmaTableOfContents",
+      "PcdPharmaScenarioTabs",
+      "PcdPharmaRecoveryCTA",
+      "RelatedRecoveryGuides"
+    ],
+    "wordCount": 2680,
+    "artefacts": [
+      "5-Stage Escalation Protocol SVG Flowchart & Mobile Cards",
+      "Statutory Recovery Matrix Table (NI Act s.138, Contract Act s.39, MSMED Act)",
+      "4 Interactive Commercial Failure Mode Tabs (Monopoly Squatting, Remote Default, Bounced Security PDC, MR Bag Detention)",
+      "Worked Financial Ledger for ₹28.4 Lakh District PCD Default Case Study",
+      "BSA 2023 Section 63 Electronic Evidence Dossier & Transport Bilties Checklist"
+    ],
+    "sources": [
+      "Negotiable Instruments Act 1881 ss.138, 142(2)(a), 143A",
+      "Indian Contract Act 1872 ss.39, 73, 75, 148",
+      "Bharatiya Nyaya Sanhita 2023 ss.316, 318",
+      "Micro, Small and Medium Enterprises Development Act 2006 ss.15, 16, 18",
+      "Drugs and Cosmetics Act 1940 s.18(a)",
+      "Competition Act 2002 s.3(3)(b)",
+      "Bharatiya Sakshya Adhiniyam 2023 s.63",
+      "Code of Civil Procedure 1908 Order XXXVII, Order XXXVIII Rule 5"
+    ],
+    "builtAt": "2026-11-16T04:25:05.398Z"
   }
 ]

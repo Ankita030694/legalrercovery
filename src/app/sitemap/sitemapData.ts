@@ -9,6 +9,46 @@ export interface SitemapItem {
 export const ALL_SITEMAP_PAGES: SitemapItem[] = [
 
   {
+    title: "PCD Pharma Franchise Recovery & Territory Monopoly Revocation Playbook",
+    href: "/pcd-pharma-franchise-monopoly-distributor-default-recovery",
+    category: "B2B & Institutional Recovery",
+    date: "16 Nov 2026",
+    timestamp: 1794771000000,
+  },
+
+  {
+    title: "Cold-Chain Vaccine & Biologics Temperature Dispute Recovery",
+    href: "/cold-chain-vaccine-biologics-temperature-dispute-invoice-recovery",
+    category: "B2B & Institutional Recovery",
+    date: "16 Nov 2026",
+    timestamp: 1794770000000,
+  },
+
+  {
+    title: "State Medical Corp (UPMSCL/BMSICL/RMSCL) & GeM Tender Recovery",
+    href: "/state-medical-services-corporation-hospital-tender-payment-recovery",
+    category: "B2B & Institutional Recovery",
+    date: "16 Nov 2026",
+    timestamp: 1794676500000,
+  },
+
+  {
+    title: "API, Bulk Drug & Excipient Manufacturer B2B Debt Recovery Guide",
+    href: "/api-bulk-drug-chemical-intermediate-b2b-invoice-recovery",
+    category: "B2B & Institutional Recovery",
+    date: "16 Nov 2026",
+    timestamp: 1794676000000,
+  },
+
+  {
+    title: "Pharma Expiry/Breakage Credit-Note Disputes & Stockist Recovery",
+    href: "/pharma-expired-goods-breakage-credit-note-dispute-stockist-recovery",
+    category: "B2B & Institutional Recovery",
+    date: "14 Nov 2026",
+    timestamp: 1794675500000,
+  },
+
+  {
     title: "India Hospital Receivables, TPA Deductions & CGHS DSO Report",
     href: "/reports/healthcare-tpa-settlement-delay-hospital-receivables-india",
     category: "B2B & Institutional Recovery",

@@ -1235,6 +1235,36 @@ const CLUSTERS: Record<string, { heading: string; items: GuideItem[] }> = {
     heading: "Related Pharma, Medical Device & B2B Creditor Recovery Guides",
     items: [
       {
+        title: "PCD Pharma Franchise Recovery & Territory Monopoly Revocation Playbook",
+        href: "/pcd-pharma-franchise-monopoly-distributor-default-recovery",
+        tag: "PCD Pharma Monopoly",
+        desc: "Revoke district monopoly rights cleanly, enforce NI Act s.142(2) home-bank jurisdiction, and recover overdue credit ledgers & MR bags.",
+      },
+      {
+        title: "Cold-Chain Vaccine & Biologics Temperature Dispute Recovery",
+        href: "/cold-chain-vaccine-biologics-temperature-dispute-invoice-recovery",
+        tag: "Cold-Chain Biologics",
+        desc: "Rebut sham 2–8°C excursion claims using BSA 2023 s.63 calibrated data-logger certificates and Sale of Goods Act risk transfer.",
+      },
+      {
+        title: "API, Bulk Drug & Excipient Manufacturer Debt Recovery",
+        href: "/api-bulk-drug-chemical-intermediate-b2b-invoice-recovery",
+        tag: "API & Bulk Drugs",
+        desc: "Defeat late pharmacopoeia QC rejection pretexts using retention sample protocols, Order 37 suits & IBC Section 8 notices.",
+      },
+      {
+        title: "Pharma Expiry & Breakage Credit-Note Dispute Recovery",
+        href: "/pharma-expired-goods-breakage-credit-note-dispute-stockist-recovery",
+        tag: "Pharma Stockist Recovery",
+        desc: "Defeat arbitrary expired stock dumps and breakage debits under CGST s.34 cut-off, CBIC Circular 72 & contractual caps.",
+      },
+      {
+        title: "State Medical Corp (UPMSCL/BMSICL/RMSCL) & GeM Tender Recovery",
+        href: "/state-medical-services-corporation-hospital-tender-payment-recovery",
+        tag: "State Tender Recovery",
+        desc: "Overrule tender no-interest clauses via MSMED s.16 (Silpi Industries), enforce 10-day GeM CRAC, and secure Article 226 stays against blacklisting.",
+      },
+      {
         title: "Medical Equipment, Reagent & Hospital AMC/CMC Recovery",
         href: "/medical-equipment-hospital-supply-amc-cmc-payment-default-recovery",
         tag: "MedTech & AMC",
@@ -1380,6 +1410,11 @@ function detectCluster(pathname: string): { heading: string; items: GuideItem[] 
     p.includes("cardiac-stent") ||
     p.includes("orthopedic-implant") ||
     p.includes("consignment-dues") ||
+    p.includes("cold-chain") ||
+    p.includes("vaccine") ||
+    p.includes("biologics") ||
+    p.includes("api-bulk-drug") ||
+    p.includes("bulk-drug") ||
     p.includes("pharma") ||
     p.includes("medical-devices") ||
     p.includes("distributor-dealer")
@@ -1599,6 +1634,11 @@ p.includes("school") ||
   }
   if (
     p.includes("pharma") ||
+    p.includes("cold-chain") ||
+    p.includes("vaccine") ||
+    p.includes("biologics") ||
+    p.includes("api-bulk-drug") ||
+    p.includes("bulk-drug") ||
     p.includes("medical-devices") ||
     p.includes("medical-equipment") ||
     p.includes("distributor-dealer")

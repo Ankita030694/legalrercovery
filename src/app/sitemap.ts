@@ -11,6 +11,11 @@ const STATIC_ROUTES: {
   lastModified?: Date | string;
 }[] = [
   { path: "", changeFrequency: "weekly", priority: 1 },
+  { path: "/pcd-pharma-franchise-monopoly-distributor-default-recovery", changeFrequency: "weekly", priority: 0.85, lastModified: new Date("2026-11-16") },
+  { path: "/cold-chain-vaccine-biologics-temperature-dispute-invoice-recovery", changeFrequency: "weekly", priority: 0.85, lastModified: new Date("2026-11-16") },
+  { path: "/state-medical-services-corporation-hospital-tender-payment-recovery", changeFrequency: "weekly", priority: 0.85, lastModified: new Date("2026-11-16") },
+  { path: "/api-bulk-drug-chemical-intermediate-b2b-invoice-recovery", changeFrequency: "weekly", priority: 0.85, lastModified: new Date("2026-11-16") },
+  { path: "/pharma-expired-goods-breakage-credit-note-dispute-stockist-recovery", changeFrequency: "weekly", priority: 0.85, lastModified: new Date("2026-11-14") },
   { path: "/templates/hospital-discharge-pending-bill-undertaking-and-legal-notice", changeFrequency: "weekly", priority: 0.9, lastModified: new Date("2026-11-14") },
   { path: "/medical-equipment-hospital-supply-amc-cmc-payment-default-recovery", changeFrequency: "weekly", priority: 0.85, lastModified: new Date("2026-11-14") },
   { path: "/cardiac-stent-orthopedic-implant-hospital-consignment-dues-recovery", changeFrequency: "weekly", priority: 0.9, lastModified: new Date("2026-11-14") },

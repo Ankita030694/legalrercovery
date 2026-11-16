@@ -1,6 +1,6 @@
 "use client";
 
-import React from "react";
+import React, { useState } from "react";
 import { usePathname } from "next/navigation";
 
 const serviceLinks = [
@@ -144,6 +144,8 @@ const recoveryCategoryLinks = [
 
 export default function Footer() {
   const pathname = usePathname();
+  const [isGuidesOpen, setIsGuidesOpen] = useState(false);
+  const [isCategoriesOpen, setIsCategoriesOpen] = useState(false);
 
   if (pathname?.startsWith("/user") || pathname?.startsWith("/authority") || pathname?.startsWith("/notice-dispatch") || pathname?.startsWith("/recover-my-money")) {
     return null;
@@ -284,15 +286,72 @@ export default function Footer() {
 
         {/* Queries Row */}
         <div className="text-left mb-10">
-          <p className="text-white font-extrabold text-[13px] uppercase tracking-wider mb-6">Queries & Legal Notice Guides</p>
-          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-12 lg:gap-16 gap-y-3.5">
+          <button
+            type="button"
+            onClick={() => setIsGuidesOpen((prev) => !prev)}
+            className="w-full flex items-center justify-between py-1 text-left group cursor-pointer focus:outline-none select-none"
+            aria-expanded={isGuidesOpen}
+          >
+            <div className="flex items-center gap-3">
+              <span className="text-white font-extrabold text-[13px] uppercase tracking-wider group-hover:text-red-400 transition-colors">
+                Queries &amp; Legal Notice Guides
+              </span>
+              <span className="text-[10px] font-bold px-2 py-0.5 rounded-full bg-gray-800/80 text-gray-400 border border-gray-700/50">
+                {guideLinks.length}
+              </span>
+            </div>
+
+            <div className="flex items-center gap-1.5 text-xs text-gray-400 group-hover:text-white transition-colors">
+              <span className="text-[11px] font-semibold hidden sm:inline">
+                {isGuidesOpen ? "Show Less" : "View All"}
+              </span>
+              <svg
+                className={`w-4 h-4 transform transition-transform duration-200 ${isGuidesOpen ? "rotate-180 text-red-400" : "text-gray-400 group-hover:text-white"}`}
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2.5" d="M19 9l-7 7-7-7" />
+              </svg>
+            </div>
+          </button>
+
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-12 lg:gap-16 gap-y-3.5 mt-5">
             {guideLinks.map((link, idx) => (
-              <div key={idx} className="flex flex-col">
-                <a href={link.href} className="text-[12.5px] font-bold text-gray-400 hover:text-white hover:translate-x-0.5 transition-all inline-block cursor-pointer">
+              <div
+                key={idx}
+                className={`flex flex-col ${!isGuidesOpen && idx >= 4 ? "hidden" : ""}`}
+              >
+                <a
+                  href={link.href}
+                  className="text-[12.5px] font-bold text-gray-400 hover:text-white hover:translate-x-0.5 transition-all inline-block cursor-pointer"
+                >
                   {link.label}
                 </a>
               </div>
             ))}
+          </div>
+
+          <div className="mt-4">
+            <button
+              type="button"
+              onClick={() => setIsGuidesOpen((prev) => !prev)}
+              className="inline-flex items-center gap-1.5 text-[12px] font-semibold text-red-400 hover:text-red-300 transition-colors cursor-pointer select-none"
+            >
+              <span>
+                {isGuidesOpen
+                  ? "Show Less"
+                  : `+ View all ${guideLinks.length} queries & legal notice guides`}
+              </span>
+              <svg
+                className={`w-3.5 h-3.5 transform transition-transform duration-200 ${isGuidesOpen ? "rotate-180" : ""}`}
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2.5" d="M19 9l-7 7-7-7" />
+              </svg>
+            </button>
           </div>
         </div>
 
@@ -301,15 +360,72 @@ export default function Footer() {
 
         {/* Specialized Recovery & Notice Categories Row */}
         <div className="text-left mb-10">
-          <p className="text-white font-extrabold text-[13px] uppercase tracking-wider mb-6">Specialized Recovery & Legal Notice Categories</p>
-          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-12 lg:gap-16 gap-y-3.5">
+          <button
+            type="button"
+            onClick={() => setIsCategoriesOpen((prev) => !prev)}
+            className="w-full flex items-center justify-between py-1 text-left group cursor-pointer focus:outline-none select-none"
+            aria-expanded={isCategoriesOpen}
+          >
+            <div className="flex items-center gap-3">
+              <span className="text-white font-extrabold text-[13px] uppercase tracking-wider group-hover:text-red-400 transition-colors">
+                Specialized Recovery &amp; Legal Notice Categories
+              </span>
+              <span className="text-[10px] font-bold px-2 py-0.5 rounded-full bg-gray-800/80 text-gray-400 border border-gray-700/50">
+                {recoveryCategoryLinks.length}
+              </span>
+            </div>
+
+            <div className="flex items-center gap-1.5 text-xs text-gray-400 group-hover:text-white transition-colors">
+              <span className="text-[11px] font-semibold hidden sm:inline">
+                {isCategoriesOpen ? "Show Less" : "View All"}
+              </span>
+              <svg
+                className={`w-4 h-4 transform transition-transform duration-200 ${isCategoriesOpen ? "rotate-180 text-red-400" : "text-gray-400 group-hover:text-white"}`}
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2.5" d="M19 9l-7 7-7-7" />
+              </svg>
+            </div>
+          </button>
+
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-12 lg:gap-16 gap-y-3.5 mt-5">
             {recoveryCategoryLinks.map((link, idx) => (
-              <div key={idx} className="flex flex-col">
-                <a href={link.href} className="text-[12.5px] font-bold text-gray-400 hover:text-white hover:translate-x-0.5 transition-all inline-block cursor-pointer">
+              <div
+                key={idx}
+                className={`flex flex-col ${!isCategoriesOpen && idx >= 4 ? "hidden" : ""}`}
+              >
+                <a
+                  href={link.href}
+                  className="text-[12.5px] font-bold text-gray-400 hover:text-white hover:translate-x-0.5 transition-all inline-block cursor-pointer"
+                >
                   {link.label}
                 </a>
               </div>
             ))}
+          </div>
+
+          <div className="mt-4">
+            <button
+              type="button"
+              onClick={() => setIsCategoriesOpen((prev) => !prev)}
+              className="inline-flex items-center gap-1.5 text-[12px] font-semibold text-red-400 hover:text-red-300 transition-colors cursor-pointer select-none"
+            >
+              <span>
+                {isCategoriesOpen
+                  ? "Show Less"
+                  : `+ View all ${recoveryCategoryLinks.length} categories`}
+              </span>
+              <svg
+                className={`w-3.5 h-3.5 transform transition-transform duration-200 ${isCategoriesOpen ? "rotate-180" : ""}`}
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2.5" d="M19 9l-7 7-7-7" />
+              </svg>
+            </button>
           </div>
         </div>
 
