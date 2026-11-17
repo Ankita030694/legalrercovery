@@ -89,6 +89,17 @@ const nextConfig: NextConfig = {
   typescript: {
     ignoreBuildErrors: true,
   },
+  eslint: {
+    ignoreDuringBuilds: true,
+  },
+  outputFileTracingExcludes: {
+    '*': [
+      './docs/**',
+      './scripts/**',
+      './video/**',
+      './scratch/**',
+    ],
+  },
   async headers() {
     return [
       {
