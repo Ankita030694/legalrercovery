@@ -1,0 +1,179 @@
+{
+  "reportId": "B2B-189",
+  "slug": "indian-exporter-payment-defaults-edpms-trends-report",
+  "edition": "2026–2027 EPC & Trade Media Benchmark Edition",
+  "title": "India Export Payment Defaults & EDPMS Report (2026–27)",
+  "h1": "2026–2027 Indian Export Receivables Risk Report: Default Rates by Trade Corridor, Payment Term (CAD vs DA vs Open Account) & EDPMS Closure",
+  "metaTitle": "India Export Payment Defaults & EDPMS Report (2026–27)",
+  "metaDescription": "Study for FIEO, EEPC, APEDA & AEPC exporters mapping buyer default corridors, BEC wire-fraud, CAD/DA risk & RBI EDPMS write-off recovery benchmarks.",
+  "lastUpdated": "2026-11-17",
+  "reportingPeriod": "May 25, 2026 – Present (Post-Launch Export Cohort Telemetry)",
+  "status": "compiling",
+  "hasData": false,
+  "paymentTerms": [
+    {
+      "id": "open_account",
+      "term": "Open Account (30–120 Days Credit)",
+      "riskTier": "Critical",
+      "primaryVulnerability": "Title & possession transfer before realization; buyer alleges post-landing quality/moisture defects to force 20–40% haircuts.",
+      "statutoryLever": "UN CISG / Governing Contract Law + RBI Master Direction Para C.20/C.24 + CPC s.44A (Reciprocating Territories) / NY Convention Arbitration",
+      "edpmsImpact": "9-month FEMA repatriation clock runs from shipment date; open Shipping Bill blocks e-BRC & triggers AD-Bank Caution-Listing.",
+      "recommendedAction": "Day-15 overdue Advocate Legal Demand Notice citing Shipping Bill, BL/AWB & ECGC credit-registry escalation + Para C.24 audit trail.",
+      "unitCost": "₹999 flat (Email + WhatsApp BSA s.63); +₹450 optional RPAD / international courier dispatch"
+    },
+    {
+      "id": "cad_dp",
+      "term": "CAD / Documents Against Payment (Sight)",
+      "riskTier": "High",
+      "primaryVulnerability": "Foreign buyer refuses to retire shipping documents at destination bank, leaving container stranded with ₹1.5L–₹8L+ port demurrage.",
+      "statutoryLever": "ICC URC 522 + Sale of Goods / Bill of Lading title retention + Customs/Port re-import or distress-resale mitigation.",
+      "edpmsImpact": "Goods cleared or abandoned without remittance leave Shipping Bill unmatched in ICEGATE–EDPMS; triggers Drawback Rule 18 clawback.",
+      "recommendedAction": "72-hour Advocate Notice holding buyer liable for accruing demurrage/detention + parallel CHA distress-resale / re-import clearance.",
+      "unitCost": "₹999 flat advocate demand notice before container abandonment crosses cargo value"
+    },
+    {
+      "id": "usance_da",
+      "term": "Documents Against Acceptance (DA 60–180 Days)",
+      "riskTier": "High",
+      "primaryVulnerability": "Buyer accepts Bill of Exchange to clear cargo, then defaults on maturity due date or enters foreign insolvency.",
+      "statutoryLever": "Accepted Bill of Exchange (Negotiable Instrument) + ECGC Form 203/205 Overdue Reporting + Foreign Summary Judgment / Arbitration.",
+      "edpmsImpact": "Maturity default pushes realization past 9 months; requires formal AD-Bank extension or Para C.23/C.24 write-off dossier.",
+      "recommendedAction": "Immediate Bill of Exchange protest/dishonour notice + ECGC 4-month protracted default compliance + AD-Bank extension filing.",
+      "unitCost": "₹999–₹1,449 pre-litigation demand dossier vs ₹4,00,000+ foreign counsel retainer"
+    },
+    {
+      "id": "letter_of_credit",
+      "term": "Letter of Credit (Sight / Usance LC)",
+      "riskTier": "Moderate-High",
+      "primaryVulnerability": "Issuing bank raises hyper-technical or non-existent UCP 600 'discrepancies' after 5 banking days to delay or refuse payment.",
+      "statutoryLever": "ICC UCP 600 Article 14(b) & Article 16(f) Strict Preclusion Rule (5-banking-day single-notice bar).",
+      "edpmsImpact": "Delayed LC negotiation leaves export bill overdue in AD-Bank EDPMS despite compliant presentation.",
+      "recommendedAction": "Formal UCP 600 Art. 16 Preclusion Notice to Issuing/Confirming Bank & ICC Banking Commission escalation.",
+      "unitCost": "₹999 advocate notice establishing formal preclusion & banking-ombudsman/ICC record"
+    },
+    {
+      "id": "bec_wire_fraud",
+      "term": "BEC / SWIFT Invoice Hijack",
+      "riskTier": "Severe (Time-Critical)",
+      "primaryVulnerability": "Threat actor spoofs exporter domain and sends altered beneficiary bank details; buyer wires funds to mule account.",
+      "statutoryLever": "Common-law debtor discharge doctrine (payment to hacker does not discharge debt) + IT Act s.66D + SWIFT GPI Recall.",
+      "edpmsImpact": "Zero inward remittance in AD-Bank Nostro leaves Shipping Bill open in EDPMS; exporter faces FEMA s.7/8 & Drawback recovery.",
+      "recommendedAction": "Immediate 72-hour SWIFT GPI stop/recall, Cyber Crime FIR/CERT-In filing & Advocate Liability Notice to buyer.",
+      "unitCost": "₹999 urgent advocate demand + cyber-forensic preservation under BSA s.63"
+    }
+  ],
+  "tradeCorridors": [
+    {
+      "corridor": "USA & Canada",
+      "keySectors": "IT/SaaS, Gems & Jewellery (GJEPC), Apparel (AEPC), Engineering (EEPC), Pharma (PHARMEXCIL)",
+      "dominantFailureMode": "Open-account chargebacks, Chapter 11/7 buyer filings, and Delaware/Wyoming shell LLC non-payment.",
+      "enforcementPath": "NOT a CPC s.44A reciprocating territory — rely on New York Convention Arbitration (India seat) or US state commercial demand.",
+      "edpmsRisk": "High volume of small-to-mid open-account invoices ($10k–$75k) where US litigation exceeds invoice value -> Para C.24 disproportionate-cost write-off."
+    },
+    {
+      "corridor": "UAE & GCC (Dubai, Abu Dhabi, Riyadh)",
+      "keySectors": "Basmati Rice & Spices (APEDA), Building Materials, Gold/Jewellery, Engineering Goods",
+      "dominantFailureMode": "Post-dated cheque (PDC) dishonour, trading-house absconding, and port CAD refusal at Jebel Ali.",
+      "enforcementPath": "UAE IS a notified CPC s.44A reciprocating territory (2020 Notification) — Indian Civil/Commercial Court decrees are directly executable in UAE courts.",
+      "edpmsRisk": "High frequency of re-export hub defaults requiring urgent port-demurrage mitigation and AD-Bank extension."
+    },
+    {
+      "corridor": "UK & European Union (Germany, Netherlands, France)",
+      "keySectors": "Textiles (TEXPROCIL), Leather (CLE), Auto Components, Specialty Chemicals (CHEMEXCIL)",
+      "dominantFailureMode": "ESG/REACH compliance holdbacks, unilateral quality deductions, and post-delivery insolvency.",
+      "enforcementPath": "UK IS a CPC s.44A reciprocating territory; EU relies on New York Convention arbitral awards & UN CISG remedies.",
+      "edpmsRisk": "Partial short-payments (5–15% deductions) leave residual Shipping Bill balances open in EDPMS."
+    },
+    {
+      "corridor": "West/East Africa & LatAm",
+      "keySectors": "Generic Pharma (PHARMEXCIL), Agro-Commodities (APEDA), Two-Wheelers & Machinery (EEPC)",
+      "dominantFailureMode": "Central bank FX rationing delays, unconfirmed LC defaults, and CAD container abandonment at Lagos/Mombasa/Santos.",
+      "enforcementPath": "ECGC Policy Claim (Form 203/205 + 4-month protracted default) + RBI Para C.24 write-off via AD Category-I Bank.",
+      "edpmsRisk": "Acute FX-shortage delays push bills past 9 months, risking automatic AD-Bank Caution-Listing without timely extension."
+    },
+    {
+      "corridor": "Singapore & ASEAN",
+      "keySectors": "Electronics, Petrochemicals, Marine Cargo, Commodity Trading Houses",
+      "dominantFailureMode": "Trading-intermediary liquidity squeeze, back-to-back LC mismatch, and demurrage disputes.",
+      "enforcementPath": "Singapore IS a CPC s.44A reciprocating territory + SIAC/New York Convention arbitral award enforcement.",
+      "edpmsRisk": "Multi-leg merchanting trade (MTT) & third-country invoicing documentation mismatches in EDPMS."
+    }
+  ],
+  "epcMatrix": [
+    {
+      "council": "FIEO (Federation of Indian Export Organisations)",
+      "segment": "Multi-Sector & MSME Merchant Exporters",
+      "primaryPainPoint": "EDPMS Caution-Listing blocking e-BRC, RoDTEP scrips, and packing credit renewals across diverse corridors."
+    },
+    {
+      "council": "EEPC India (Engineering Exports)",
+      "segment": "Industrial Machinery, Auto Parts & Castings",
+      "primaryPainPoint": "High-ticket DA/Open Account commissioning holdbacks & US/EU warranty-deduction defaults."
+    },
+    {
+      "council": "APEDA (Agricultural & Processed Food)",
+      "segment": "Basmati Rice, Spices, Frozen Meat & Fresh Produce",
+      "primaryPainPoint": "CAD/DP container abandonment at Jebel Ali/EU ports triggering rapid perishability & demurrage losses."
+    },
+    {
+      "council": "AEPC & TEXPROCIL (Apparel & Textiles)",
+      "segment": "Garments, Home Textiles & Yarn Exporters",
+      "primaryPainPoint": "US/UK retail-buyer Chapter 11 filings, unilateral 'late-shipment' chargebacks & 15–30% short-payments."
+    },
+    {
+      "council": "CHEMEXCIL & PHARMEXCIL",
+      "segment": "Dyes, Specialty Chemicals & Generic Formulations",
+      "primaryPainPoint": "Africa/LatAm FX-rationing defaults, regulatory-rejection excuses & Customs Drawback s.75 clawbacks."
+    },
+    {
+      "council": "GJEPC & CLE (Gems, Jewellery & Leather)",
+      "segment": "Cut/Polished Diamonds, Footwear & Leather Goods",
+      "primaryPainPoint": "Long-credit memorandum/consignment defaults in Antwerp, Dubai, Hong Kong & US corridors."
+    }
+  ],
+  "methodology": {
+    "sampleFrame": "Anonymized cross-border B2B recovery, RBI EDPMS regularization, and ECGC compliance workflows initiated on LegalRecovery.in following the May 25, 2026 platform launch across Indian exporters, merchant exporters, buying houses, and importers.",
+    "inclusionCriteria": [
+      "Cross-border commercial invoices backed by valid ICEGATE Shipping Bills, Bills of Lading / Airway Bills, and AD Category-I Bank IRM/EDPMS records",
+      "Notices drafted and issued by enrolled Indian advocates citing Governing Law / UN CISG, Shipping Bill identifiers, and statutory cure timelines",
+      "Clear classification by Payment Term (Open Account, CAD/DP, DA, LC, BEC) and Destination Trade Corridor"
+    ],
+    "exclusionCriteria": [
+      "Simulated test entries, incomplete Shipping Bill / IEC records, and intra-group transfer-pricing adjustments",
+      "Consumer or retail remittance disputes (excluded to maintain strict B2B institutional exporter polarity)",
+      "Unverified third-party survey claims or fabricated post-May 2026 recovery percentages"
+    ],
+    "definitions": {
+      "edpmsClosureRate": "Percentage of aged (>9 months) open Shipping Bills regularized via full realization, AD-Bank approved extension, or Para C.20/C.24 legal write-off.",
+      "preLitigationCostRatio": "Flat advocate demand notice fee (₹999 digital / ₹1,449 tri-channel) as a percentage of cross-border invoice value compared against foreign litigation retainers.",
+      "futileRecoveryDossier": "Combined Advocate Legal Demand Notice, BSA 2023 s.63 delivery logs, and Disproportionate Foreign Litigation Cost Opinion required by AD Category-I Banks."
+    },
+    "dataIntegrity": "Live post-May 2026 export cohort telemetry is currently in active ingestion. This report publishes verified RBI FEMA Master Direction timelines, ICC UCP 600 / ECGC / Customs Drawback statutory rules, flat-rate unit economics (₹999–₹1,449), and the open EPC benchmark schema without fabricating unverified percentages."
+  },
+  "sources": [
+    {
+      "title": "Reserve Bank of India — Master Direction on Export of Goods and Services (EDPMS & Write-Off Para C.20/C.23/C.24)",
+      "url": "https://www.rbi.org.in/"
+    },
+    {
+      "title": "Foreign Exchange Management Act (FEMA), 1999 & Export Regulations — India Code",
+      "url": "https://www.indiacode.nic.in/"
+    },
+    {
+      "title": "ECGC Limited — Export Credit Insurance Claim & Default Reporting Guidelines",
+      "url": "https://www.ecgc.in/"
+    },
+    {
+      "title": "Directorate General of Foreign Trade (DGFT) — IEC, e-BRC & RoDTEP Guidelines",
+      "url": "https://www.dgft.gov.in/"
+    },
+    {
+      "title": "Central Board of Indirect Taxes & Customs (CBIC) — Customs Act s.75 & Drawback Rules, 2017",
+      "url": "https://www.cbic.gov.in/"
+    },
+    {
+      "title": "Federation of Indian Export Organisations (FIEO) — Exporter Trade & Policy Resources",
+      "url": "https://www.fieo.org/"
+    }
+  ]
+}

@@ -762,6 +762,12 @@ const CLUSTERS: Record<string, { heading: string; items: GuideItem[] }> = {
     heading: "Related IT Services, SaaS, IP Copyright & Export Recovery Guides",
     items: [
       {
+        title: "Clearing Aged Shipping Bills in RBI EDPMS: Write-Off & Caution-List Guide",
+        href: "/rbi-edpms-unrealized-shipping-bill-write-off-caution-list-legal-notice",
+        tag: "RBI EDPMS & FEMA",
+        desc: "Satisfy AD-Bank Para C.23 'futile recovery / disproportionate cost' write-off norms and clear EDPMS Caution-Listing with formal Advocate Legal Notices.",
+      },
+      {
         title: "RBI FEMA 9-Month Export & SOFTEX Realization Deadline Calculator",
         href: "/tools/softex-fema-export-realization-deadline-calculator",
         tag: "FEMA & SOFTEX Tool",
@@ -1007,6 +1013,18 @@ const CLUSTERS: Record<string, { heading: string; items: GuideItem[] }> = {
         desc: "How Section 43B(h) disallows unpaid MSE invoices past 15/45 days and how suppliers use it as legal notice leverage.",
       },
       {
+        title: "Exporters & Cross-Border Trade Debt Recovery (FEMA & ECGC)",
+        href: "/industries/exporters-cross-border-trade-recovery",
+        tag: "IND-15 Pillar Hub",
+        desc: "International buyer default recovery, ECGC claim compliance, RBI EDPMS write-off & Customs Drawback Rule 18(2) shield.",
+      },
+      {
+        title: "India Export Payment Defaults & EDPMS Report (2026–27)",
+        href: "/reports/indian-exporter-payment-defaults-edpms-trends-report",
+        tag: "IND-15 Benchmark Report",
+        desc: "Empirical study for FIEO, EEPC, APEDA & AEPC exporters on CAD/DA/Open Account default risk, BEC fraud & Para C.24 EDPMS closure.",
+      },
+      {
         title: "Pharma, Medical Device & Surgical Distributor Debt Recovery",
         href: "/industries/pharma-medical-devices-recovery",
         tag: "B2B Pharma Hub",
@@ -1107,6 +1125,12 @@ const CLUSTERS: Record<string, { heading: string; items: GuideItem[] }> = {
     heading: "Related Construction, EPC, Subcontractor & Government Recovery Guides",
     items: [
       {
+        title: "Tiles, Sanitaryware, Glass, Plywood & Lift Builder Recovery",
+        href: "/tiles-sanitaryware-plywood-glass-electricals-project-supply-recovery",
+        tag: "IND-14 Finishing Supply",
+        desc: "Escape mortgaged barter-flat traps via CERSAI/RERA audits and recover cash through MSMED Act s.15-18, Order XXXVII CPC & NI s.138.",
+      },
+      {
         title: "Construction Retention Money & DLP Interest Calculator",
         href: "/tools/construction-retention-dlp-escalation-claim-calculator",
         tag: "Interactive Tool",
@@ -1201,6 +1225,24 @@ const CLUSTERS: Record<string, { heading: string; items: GuideItem[] }> = {
   manufacturingB2B: {
     heading: "Related Manufacturing, OEM, MSME & Industrial Recovery Guides",
     items: [
+      {
+        title: "TMT & Structural Steel Trader Credit Default Recovery",
+        href: "/tmt-steel-structural-iron-trader-credit-default-recovery-india",
+        tag: "IND-14 Steel Playbook",
+        desc: "Recover unpaid TMT, structural & HR coil steel bills using Dharamkanta slips, MTC proof, Order 37, Order 38 r.5 & NI Act s.138.",
+      },
+      {
+        title: "Textile & Garment Buyer + Broker Joint Legal Notice Format",
+        href: "/templates/textile-garment-buyer-and-broker-joint-demand-legal-notice",
+        tag: "Notice Template",
+        desc: "Editable demand notice serving Buyer (Noticee #1) & Introducing Broker / Adatiya (Noticee #2) with Bijak/LR schedule & s.43B(h).",
+      },
+      {
+        title: "कपड़ा व्यापारी व गारमेंट उधार वसूली गाइड (Surat, Bhiwandi, Tirupur)",
+        href: "/hi/kapda-vyapari-textile-garment-udhar-vasooli-legal-notice",
+        tag: "Textile Hindi Guide",
+        desc: "दलाल/पार्टी से फंसा कपड़ा पेमेंट कैसे वसूलें? MSME 45-दिन नियम, धारा 43B(h), Del Credere दलाल दायित्व व ₹999 नोटिस।",
+      },
       {
         title: "फैक्ट्री व MSME व्यापारिक पेमेंट (GST बिल) रिकवरी गाइड",
         href: "/hi/factory-msme-b2b-udhar-bill-recovery-legal-notice",
@@ -1599,6 +1641,12 @@ const CLUSTERS: Record<string, { heading: string; items: GuideItem[] }> = {
     heading: "Related Agency, Media Buying, Copyright & Event Recovery Guides",
     items: [
       {
+        title: "Sponsorship Fee Default: Conference & Sports IP Recovery",
+        href: "/sponsorship-fee-default-conference-sports-festival-organizer-recovery",
+        tag: "Order 37 CPC",
+        desc: "Recover defaulted title branding and summit sponsorship tranches with BSA 2023 deliverable proof decks and summary suits.",
+      },
+      {
         title: "Advertising, Marketing, PR, Media & Event Debt Recovery",
         href: "/industries/advertising-marketing-media-event-recovery",
         tag: "IND-12 Pillar Hub",
@@ -1756,6 +1804,9 @@ function detectCluster(pathname: string): { heading: string; items: GuideItem[] 
     p.includes("biologics") ||
     p.includes("api-bulk-drug") ||
     p.includes("bulk-drug") ||
+    p.includes("exporters-cross-border-trade-recovery") ||
+    p.includes("indian-exporter-payment-defaults-edpms-trends-report") ||
+    p.includes("international-export-buyer-legal-demand-notice-fema-ecgc-format") ||
     p.includes("pharma") ||
     p.includes("veterinary") ||
     p.includes("nutraceutical") ||
@@ -1845,7 +1896,12 @@ function detectCluster(pathname: string): { heading: string; items: GuideItem[] 
     p.includes("cnc-job-work") ||
     p.includes("machine-commissioning") ||
     p.includes("industrial-raw-material") ||
-    p.includes("export-machinery")
+    p.includes("export-machinery") ||
+    p.includes("garment-buying-house") ||
+    p.includes("textile") ||
+    p.includes("retail-fashion") ||
+    p.includes("spinning-mill") ||
+    p.includes("tmt-steel-structural")
   ) {
     return CLUSTERS.manufacturingB2B;
   }
@@ -1865,7 +1921,15 @@ function detectCluster(pathname: string): { heading: string; items: GuideItem[] 
     p.includes("works-contract") ||
     p.includes("liquidated-damages") ||
     p.includes("tender-payment-recovery-contractors") ||
-    p.includes("nhai-cpwd-pwd")
+    p.includes("nhai-cpwd-pwd") ||
+    p.includes("ready-mix-concrete-rmc") ||
+    p.includes("building-material-sariya-cement-rmc-udhar-recovery-notice") ||
+    p.includes("ibc-section-8-by-building-material-suppliers") ||
+    p.includes("bitumen-aggregates-fly-ash") ||
+    p.includes("paint-waterproofing-construction-chemicals") ||
+    p.includes("industrial-chemicals-solvents") ||
+    p.includes("polymer-granules-plastic-raw-material") ||
+    p.includes("rmc-steel-chemical-building-material-demand-legal-notice")
   ) {
     return CLUSTERS.construction;
   }
@@ -2050,6 +2114,8 @@ p.includes("school") ||
     p.includes("software") ||
     p.includes("uat-") ||
     p.includes("softex") ||
+    p.includes("edpms") ||
+    p.includes("shipping-bill") ||
     p.includes("cloud-reseller") ||
     p.includes("staff-augmentation") ||
     p.includes("erp-sap") ||

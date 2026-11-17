@@ -1,4 +1,4 @@
-import type { MetadataRoute } from "next";
+﻿import type { MetadataRoute } from "next";
 import { SITE_URL, INDEX_LOCATION_PAGES } from "@/lib/site";
 import { locationData } from "./legal-recovery-by-city/locationData";
 
@@ -6,10 +6,190 @@ export const revalidate = 3600;
 
 const STATIC_ROUTES: {
   path: string;
-  changeFrequency: MetadataRoute.Sitemap[number]["changeFrequency"];
+  changeFrequency: MetadataRoute.Sitemap[
+  {
+    path: "/letter-of-credit-lc-wrongful-discrepancy-dishonour-ucp-600-recovery",
+    changeFrequency: "weekly",
+    priority: 0.9,
+    lastModified: new Date("2026-11-17"),
+  },
+  {
+    path: "/enforcing-indian-court-decree-arbitral-award-uae-uk-usa-singapore",
+    changeFrequency: "weekly",
+    priority: 0.9,
+    lastModified: new Date("2026-11-17"),
+  },number]["changeFrequency"];
   priority: number;
   lastModified?: Date | string;
 }[] = [
+  {
+    path: "/reports/indian-exporter-payment-defaults-edpms-trends-report",
+    changeFrequency: "weekly",
+    priority: 0.85,
+    lastModified: new Date("2026-11-17"),
+  },
+  {
+    path: "/templates/international-export-buyer-legal-demand-notice-fema-ecgc-format",
+    changeFrequency: "weekly",
+    priority: 0.9,
+    lastModified: new Date("2026-11-17"),
+  },
+  {
+    path: "/business-email-compromise-bec-wire-fraud-swift-invoice-hijack-exporter",
+    changeFrequency: "weekly",
+    priority: 0.9,
+    lastModified: new Date("2026-11-17"),
+  },
+  {
+    path: "/indian-importer-advance-paid-foreign-supplier-non-shipment-scrap-fraud",
+    changeFrequency: "weekly",
+    priority: 0.9,
+    lastModified: new Date("2026-11-17"),
+  },
+  {
+    path: "/industries/exporters-cross-border-trade-recovery",
+    changeFrequency: "weekly",
+    priority: 0.9,
+    lastModified: new Date("2026-11-17"),
+  },
+  {
+    path: "/ecgc-export-credit-insurance-claim-legal-notice-default-procedure",
+    changeFrequency: "weekly",
+    priority: 0.9,
+    lastModified: new Date("2026-11-17"),
+  },
+  {
+    path: "/templates/rmc-steel-chemical-building-material-demand-legal-notice",
+    changeFrequency: "weekly",
+    priority: 0.85,
+    lastModified: new Date("2026-11-17"),
+  },
+  {
+    path: "/hi/building-material-sariya-cement-rmc-udhar-recovery-notice",
+    changeFrequency: "weekly",
+    priority: 0.85,
+    lastModified: new Date("2026-11-17"),
+  },
+  {
+    path: "/ibc-section-8-by-building-material-suppliers-against-real-estate-builder",
+    changeFrequency: "weekly",
+    priority: 0.85,
+    lastModified: new Date("2026-11-17"),
+  },
+  {
+    path: "/rbi-edpms-unrealized-shipping-bill-write-off-caution-list-legal-notice",
+    changeFrequency: "weekly",
+    priority: 0.9,
+    lastModified: new Date("2026-11-17"),
+  },
+  {
+    path: "/polymer-granules-plastic-raw-material-pp-hdpe-pvc-trader-recovery",
+    changeFrequency: "weekly",
+    priority: 0.85,
+    lastModified: new Date("2026-11-17"),
+  },
+  {
+    path: "/tmt-steel-structural-iron-trader-credit-default-recovery-india",
+    changeFrequency: "weekly",
+    priority: 0.9,
+    lastModified: new Date("2026-11-17"),
+  },
+  {
+    path: "/industrial-chemicals-solvents-dyes-pigments-invoice-recovery",
+    changeFrequency: "weekly",
+    priority: 0.85,
+    lastModified: new Date("2026-11-17"),
+  },
+  {
+    path: "/tiles-sanitaryware-plywood-glass-electricals-project-supply-recovery",
+    changeFrequency: "weekly",
+    priority: 0.85,
+    lastModified: new Date("2026-11-17"),
+  },
+  {
+    path: "/paint-waterproofing-construction-chemicals-dealer-contractor-recovery",
+    changeFrequency: "weekly",
+    priority: 0.85,
+    lastModified: new Date("2026-11-17"),
+  },
+  {
+    path: "/bitumen-aggregates-fly-ash-road-material-highway-contractor-recovery",
+    changeFrequency: "weekly",
+    priority: 0.85,
+    lastModified: new Date("2026-11-17"),
+  },
+  {
+    path: "/industries/chemicals-steel-rmc-building-materials-recovery",
+    changeFrequency: "weekly",
+    priority: 0.9,
+    lastModified: new Date("2026-11-17"),
+  },
+  {
+    path: "/home-textiles-carpet-handloom-furnishing-b2b-hospitality-recovery",
+    changeFrequency: "weekly",
+    priority: 0.85,
+    lastModified: new Date("2026-11-17"),
+  },
+  {
+    path: "/ready-mix-concrete-rmc-supplier-builder-payment-cube-test-dispute",
+    changeFrequency: "weekly",
+    priority: 0.9,
+    lastModified: new Date("2026-11-17"),
+  },
+  {
+    path: "/spinning-mill-yarn-dealer-credit-default-cotton-contract-recovery",
+    changeFrequency: "weekly",
+    priority: 0.85,
+    lastModified: new Date("2026-11-17"),
+  },
+  {
+    path: "/templates/textile-garment-buyer-and-broker-joint-demand-legal-notice",
+    changeFrequency: "weekly",
+    priority: 0.9,
+    lastModified: new Date("2026-11-17"),
+  },
+  {
+    path: "/hi/kapda-vyapari-textile-garment-udhar-vasooli-legal-notice",
+    changeFrequency: "weekly",
+    priority: 0.85,
+    lastModified: new Date("2026-11-17"),
+  },
+  {
+    path: "/garment-buying-house-export-order-cancelled-after-cutting-recovery",
+    changeFrequency: "weekly",
+    priority: 0.85,
+    lastModified: new Date("2026-11-17"),
+  },
+  {
+    path: "/retail-fashion-brand-sor-sale-or-return-rejection-garment-recovery",
+    changeFrequency: "weekly",
+    priority: 0.9,
+    lastModified: new Date("2026-11-17"),
+  },
+  {
+    path: "/textile-commission-agent-broker-adatiya-buyer-default-liability",
+    changeFrequency: "weekly",
+    priority: 0.9,
+    lastModified: new Date("2026-11-17"),
+  },
+  {
+    path: "/templates/marketing-ad-agency-retainer-copyright-takedown-legal-notice",
+    changeFrequency: "weekly",
+    priority: 0.9,
+    lastModified: new Date("2026-11-17"),
+  },
+  {
+    path: "/sponsorship-fee-default-conference-sports-festival-organizer-recovery",
+    changeFrequency: "weekly",
+    priority: 0.85,
+    lastModified: new Date("2026-11-17"),
+  },
+  {
+    path: "influencer-talent-management-agency-brand-campaign-payout-recovery",
+    changeFrequency: "weekly",
+    priority: 0.8,
+    lastModified: "2026-11-17",
+  },
   { path: "", changeFrequency: "weekly", priority: 1 },
   { path: "/pr-public-relations-agency-retainer-crisis-mandate-fee-recovery", changeFrequency: "weekly", priority: 0.9, lastModified: new Date("2026-11-17") },
   { path: "/outdoor-hoarding-ooh-billboard-transit-media-rental-default-recovery", changeFrequency: "weekly", priority: 0.8 },

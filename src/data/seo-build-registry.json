@@ -1,5 +1,37 @@
 [
   {
+    "id": "B2B-185",
+    "url": "/business-email-compromise-bec-wire-fraud-swift-invoice-hijack-exporter",
+    "archetype": "G1",
+    "h2s": [
+      "Why Paying a Hacker Does Not Discharge the Foreign Buyer's Debt",
+      "BEC Crisis SOP: 72-Hour SWIFT GPI Stop & Multi-Track Action Plan",
+      "Common-Law & Statutory Precedent Matrix: Who Bears the Cyber Loss?",
+      "Cross-Border BEC Scenarios & Strategic Legal Responses",
+      "Forensic Audit & Bharatiya Sakshya Adhiniyam, 2023 (BSA Section 63) SOP",
+      "Worked Treasury Math: Diverted Wire of USD 150,000 (~₹1.26 Crore)",
+      "IND-15 Exporter & Cross-Border Recovery Network (Related Guides)",
+      "Frequently Asked Questions: Business Email Compromise & Export Wire Theft",
+      "Statutory Authorities, Bare Acts & Official Trade Portals"
+    ],
+    "components": [
+      "Breadcrumbs",
+      "BecTableOfContents",
+      "BecScenarioTabs",
+      "BecNoticeCTA",
+      "RelatedRecoveryGuides"
+    ],
+    "faqQuestions": [
+      "If our foreign buyer paid a hacker's updated IBAN, is the buyer legally required to pay us again?",
+      "What is the very first step an exporter must take within the first 24 to 72 hours of discovering BEC fraud?",
+      "What happens to our RBI EDPMS status if the export bill remains unpaid due to wire fraud?",
+      "Can ECGC cover losses arising from a Business Email Compromise or hacker invoice diversion?",
+      "How does Bharatiya Sakshya Adhiniyam, 2023 (BSA Section 63) apply to BEC digital evidence?",
+      "What if our own employee clicked a phishing link and the hacker sent the email from our actual email ID?"
+    ],
+    "date": "2026-11-17"
+  },
+  {
     "id": "LR-C03",
     "url": "/what-banks-can-do-when-personal-loan-borrowers-stop-emi",
     "archetype": "B3",
@@ -11394,5 +11426,102 @@
       "Information Technology Act, 2000 (Section 10A)"
     ],
     "builtAt": "2026-11-17T07:22:06.005Z"
+  },
+  {
+    "id": "B2B-186",
+    "url": "/duty-drawback-rodtep-recovery-show-cause-notice-unrealized-export-defense",
+    "archetype": "L1",
+    "h2s": [
+      "Section 75 & Rule 18 Statutory Framework Explained",
+      "The Double-Jeopardy Dilemma Facing Indian Exporters",
+      "Rule 18(2) Safe Harbors: ECGC & RBI Write-Off Immunity",
+      "RoDTEP Surrender Rules & Electronic Ledger Scrip Clashes",
+      "SCN Limitation, 30-Day Response Clocks & Statutory Stops",
+      "High Court Precedents & Verified Judicial Holdings",
+      "Customs SCN Reply Playbook & BSA Section 63 Evidence Matrix",
+      "Frequently Asked Questions on Drawback & RoDTEP Recovery"
+    ],
+    "components": [
+      "DrawbackTableOfContents",
+      "DrawbackScenarioTabs",
+      "DrawbackNoticeCTA"
+    ],
+    "wordCount": 2450,
+    "builtAt": "2026-11-17T17:19:00+05:30"
+  },
+  {
+    "id": "B2B-188",
+    "url": "/templates/international-export-buyer-legal-demand-notice-fema-ecgc-format",
+    "archetype": "P1",
+    "h2s": [
+      "Interactive Export Demand Notice & Clause Workspace",
+      "Why Domestic Section 138 Drafts Fail Foreign Buyers & AD-Banks",
+      "RBI EDPMS Para C.20 & ECGC Clause C.24 Audit-Trail Architecture",
+      "Shipping Bill, Bill of Lading & Incoterms Annexure Schedule",
+      "Cross-Border Service Protocol & BSA 2023 s.63 Evidence Log",
+      "Related Export Recovery Guides & Calculators",
+      "Frequently Asked Questions: Export Buyer Legal Notices"
+    ],
+    "components": [
+      "ExportDemandNoticeTOC",
+      "ExportDemandNoticeWorkspace",
+      "ExportDemandNoticeCTA"
+    ],
+    "builtAt": "2026-11-17"
+  },
+  {
+    "id": "B2B-189",
+    "url": "/reports/indian-exporter-payment-defaults-edpms-trends-report",
+    "archetype": "R1",
+    "h2s": [
+      "Executive Summary: India's Export Receivables & EDPMS Crisis",
+      "Payment Term Risk Matrix: Open Account vs. CAD vs. DA vs. LC",
+      "Trade Corridor Risk Profiling: US, EU, GCC, Africa & LatAm",
+      "Export Risk-to-EDPMS Closure Architecture (Visual Workflow)",
+      "RBI EDPMS Caution-Listing & Para C.24 Write-Off Bottlenecks",
+      "Interactive Corridor & Payment Term Playbook (B2B-189)",
+      "BEC & SWIFT Invoice Hijack Vectors Facing MSME Exporters",
+      "ECGC Claim Prerequisites & Customs Drawback Rule 18(2) Shield",
+      "Pre-Litigation Unit Economics: ₹999 Demand vs. Foreign Suits",
+      "Methodology, Inclusion Scope & EPC Data Integrity Standards",
+      "Download Open Export Risk Dataset & EPC Press Citation",
+      "Deploy Export Recovery: Single ₹999 Notice or Bulk CSV Desk",
+      "FAQs: Indian Export Defaults, EDPMS & EPC Benchmarks",
+      "Primary Regulatory Portals & Statutory Authorities"
+    ],
+    "components": [
+      "ExporterReportTableOfContents",
+      "ExporterReportScenarioTabs",
+      "ExporterReportDataDownload",
+      "ExporterReportCTA"
+    ],
+    "faqQuestions": [
+      "Why does an unpaid export invoice trigger RBI EDPMS Caution-Listing even when the Indian exporter is the victim?",
+      "How does an Advocate Legal Demand Notice unlock RBI EDPMS Para C.20 / C.24 write-off?",
+      "Which payment term carries the highest recovery risk for Indian MSME exporters: Open Account, CAD/DP, or DA?",
+      "Can an Indian court decree be enforced directly in the UAE, UK, Singapore, or the USA?",
+      "What happens when a foreign buyer pays a hacker due to Business Email Compromise (BEC) invoice hijacking?",
+      "How does ECGC insurance interact with pre-litigation legal notices and Customs Drawback Rule 18(2)?",
+      "What is the cost difference between a LegalRecovery.in international demand notice and foreign commercial litigation?",
+      "Can FIEO, EEPC, APEDA, and other Export Promotion Councils cite and download this dataset?"
+    ],
+    "wordCount": 3450,
+    "artefacts": [
+      "Payment Term Risk Matrix (Open Account vs CAD vs DA vs LC vs BEC)",
+      "Trade Corridor Risk Cards (USA/Canada, UAE/GCC, UK/EU, Africa/LatAm, Singapore/ASEAN)",
+      "4-Stage Export Risk-to-EDPMS Closure SVG & Mobile Stack",
+      "Interactive Payment Term Playbook Tabs",
+      "EPC Risk & EDPMS Pain-Point Matrix",
+      "Downloadable JSON Dataset & APA/BibTeX Citation Widget"
+    ],
+    "sources": [
+      "https://www.rbi.org.in/",
+      "https://www.indiacode.nic.in/",
+      "https://www.ecgc.in/",
+      "https://www.dgft.gov.in/",
+      "https://www.cbic.gov.in/",
+      "https://www.fieo.org/"
+    ],
+    "builtAt": "2026-11-17"
   }
 ]
