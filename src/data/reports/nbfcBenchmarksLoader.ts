@@ -58,7 +58,7 @@ export interface NbfcBenchmarksData {
 
 export function getNbfcBenchmarksData(): NbfcBenchmarksData {
   const filePath = path.join(
-    process.cwd(),
+    /*turbopackIgnore: true*/ process.cwd(),
     "src",
     "data",
     "reports",

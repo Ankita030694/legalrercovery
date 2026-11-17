@@ -141,7 +141,7 @@ function parseLegalText(raw: string): LegalDocument {
 }
 
 function readLegalFile(filename: string): LegalDocument {
-  const filePath = path.join(process.cwd(), "public", filename);
+  const filePath = path.join(/*turbopackIgnore: true*/ process.cwd(), "public", filename);
   const raw = fs.readFileSync(filePath, "utf-8");
   return parseLegalText(raw);
 }

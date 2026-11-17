@@ -242,7 +242,7 @@ class NoticePDFWriter {
   writeParagraph(text: string, size: number = 10.5, defaultBold: boolean = false, textIndent: number = 0) {
     // Sanitize Rupee symbol and newline characters to prevent WinAnsi encoding crashes
     const sanitizedText = text
-      .replace(/₹/g, "Rs.")
+      .replace(/â‚¹/g, "Rs.")
       .replace(/\r\n/g, " ")  // Windows line endings
       .replace(/\n/g, " ")    // Unix line endings
       .replace(/\r/g, " ");   // Old Mac line endings
@@ -387,7 +387,7 @@ class NoticePDFWriter {
 
   // Write title with border
   writeTitle(text: string, size: number = 12.5) {
-    const sanitizedText = text.replace(/₹/g, "Rs.");
+    const sanitizedText = text.replace(/â‚¹/g, "Rs.");
     if (this.currentY < 120) {
       this.addNewPage();
     }
@@ -427,7 +427,7 @@ class NoticePDFWriter {
 
   // Write simple centered dispatch mode text
   writeDispatchMode(text: string, size: number = 10.5) {
-    const sanitizedText = text.replace(/₹/g, "Rs.");
+    const sanitizedText = text.replace(/â‚¹/g, "Rs.");
     if (this.currentY < 80) {
       this.addNewPage();
     }
@@ -512,11 +512,11 @@ class NoticePDFWriter {
 
   // Draw table for complainant and accused details in step 4
   writeDetailsTable(title: string, rows: { label: string; value: string }[], size: number = 10.5) {
-    const sanitizedTitle = title.replace(/₹/g, "Rs.");
+    const sanitizedTitle = title.replace(/â‚¹/g, "Rs.");
     const sanitizedRows = rows.map(r => ({
       label: r.label,
       value: (r.value || "")
-        .replace(/₹/g, "Rs.")
+        .replace(/â‚¹/g, "Rs.")
         .replace(/\r\n/g, " ")  // Windows line endings
         .replace(/\n/g, " ")    // Unix line endings
         .replace(/\r/g, " ")    // Old Mac line endings
@@ -784,7 +784,7 @@ export async function generateNoticePDFBuffer(params: PDFGeneratorParams): Promi
 
   // Load logo, stamp, and signature assets dynamically
   try {
-    const publicPath = path.join(process.cwd(), 'public');
+    const publicPath = path.join(/*turbopackIgnore: true*/ process.cwd(), 'public');
     
     const headerPath = path.join(publicPath, 'notices', 'header logo AMA .png');
     if (fs.existsSync(headerPath)) {
@@ -843,7 +843,7 @@ export async function generateNoticePDFBuffer(params: PDFGeneratorParams): Promi
     writer.currentY -= 10;
 
     // Subject
-    writer.writeParagraph(`Subject: Demand Notice for Immediate Clearance of Outstanding Liability of ₹${formattedAmount} Towards ${params.clientName || 'Tech AMA'}${invoiceSuffix}`, 11, true);
+    writer.writeParagraph(`Subject: Demand Notice for Immediate Clearance of Outstanding Liability of â‚¹${formattedAmount} Towards ${params.clientName || 'Tech AMA'}${invoiceSuffix}`, 11, true);
 
     // Salutation
     writer.writeParagraph("Dear Sir/Madam,", 10.5);
@@ -870,7 +870,7 @@ export async function generateNoticePDFBuffer(params: PDFGeneratorParams): Promi
     if (params.invoices && params.invoices.length > 0) {
       writer.writeInvoiceTable(params.invoices);
     }
-    writer.writeSignatureBlock("For AMA Legal Solutions®", "Through Authorized Signatory", stampImageToUse);
+    writer.writeSignatureBlock("For AMA Legal SolutionsÂ®", "Through Authorized Signatory", stampImageToUse);
 
   } else if (step === 2) {
     writer.writeTitle("SECOND LEGAL DEMAND NOTICE");
@@ -886,7 +886,7 @@ export async function generateNoticePDFBuffer(params: PDFGeneratorParams): Promi
     writer.currentY -= 10;
 
     // Subject
-    writer.writeParagraph(`Subject: Demand Notice for Immediate Clearance of Outstanding Liability of ₹${formattedAmount} Towards ${params.clientName || 'Tech AMA'}${invoiceSuffix}`, 11, true);
+    writer.writeParagraph(`Subject: Demand Notice for Immediate Clearance of Outstanding Liability of â‚¹${formattedAmount} Towards ${params.clientName || 'Tech AMA'}${invoiceSuffix}`, 11, true);
 
     // Salutation
     writer.writeParagraph("Dear Sir/Madam,", 10.5);
@@ -919,7 +919,7 @@ export async function generateNoticePDFBuffer(params: PDFGeneratorParams): Promi
     if (params.invoices && params.invoices.length > 0) {
       writer.writeInvoiceTable(params.invoices);
     }
-    writer.writeSignatureBlock("For AMA Legal Solutions®", "Through Authorized Signatory", stampImageToUse);
+    writer.writeSignatureBlock("For AMA Legal SolutionsÂ®", "Through Authorized Signatory", stampImageToUse);
 
   } else if (step === 3) {
     writer.writeTitle("FINAL LEGAL DEMAND NOTICE");
@@ -935,7 +935,7 @@ export async function generateNoticePDFBuffer(params: PDFGeneratorParams): Promi
     writer.currentY -= 10;
 
     // Subject
-    writer.writeParagraph(`Subject: Final Pre-Litigation and Police Complaint Notice for Recovery of ₹${formattedAmount} Under Applicable Provisions of Bharatiya Nyaya Sanhita (BNS)${invoiceSuffix}`, 11, true);
+    writer.writeParagraph(`Subject: Final Pre-Litigation and Police Complaint Notice for Recovery of â‚¹${formattedAmount} Under Applicable Provisions of Bharatiya Nyaya Sanhita (BNS)${invoiceSuffix}`, 11, true);
 
     // Salutation
     writer.writeParagraph("Dear Sir/Madam,", 10.5);
@@ -954,9 +954,9 @@ export async function generateNoticePDFBuffer(params: PDFGeneratorParams): Promi
     writer.writeBulletPoint("-", "intentional non-compliance despite repeated demands.");
 
     writer.writeParagraph(`Accordingly, your acts may attract penal consequences under the relevant provisions of the Bharatiya Nyaya Sanhita, 2023 including but not limited to:`, 10.5);
-    writer.writeBulletPoint("-", "Section 316 BNS – Criminal Breach of Trust");
-    writer.writeBulletPoint("-", "Section 318 BNS – Cheating");
-    writer.writeBulletPoint("-", "Section 351 BNS – Criminal Intimidation (where applicable)");
+    writer.writeBulletPoint("-", "Section 316 BNS â€“ Criminal Breach of Trust");
+    writer.writeBulletPoint("-", "Section 318 BNS â€“ Cheating");
+    writer.writeBulletPoint("-", "Section 351 BNS â€“ Criminal Intimidation (where applicable)");
     writer.writeBulletPoint("-", "Any other applicable civil and criminal provisions based upon the facts and documents available on record.");
 
     writer.writeParagraph(`You are therefore called upon for the FINAL time to:`, 10.5);
@@ -979,7 +979,7 @@ export async function generateNoticePDFBuffer(params: PDFGeneratorParams): Promi
     if (params.invoices && params.invoices.length > 0) {
       writer.writeInvoiceTable(params.invoices);
     }
-    writer.writeSignatureBlock("For AMA Legal Solutions®", "Through Authorized Signatory", stampImageToUse);
+    writer.writeSignatureBlock("For AMA Legal SolutionsÂ®", "Through Authorized Signatory", stampImageToUse);
 
   } else if (step === 4) {
     // Step 4: SHO Criminal Complaint
@@ -1045,7 +1045,7 @@ export async function generateNoticePDFBuffer(params: PDFGeneratorParams): Promi
     writer.writeParagraph("Thanking You,", 10.5);
     writer.currentY += 10;
 
-    writer.writeSignatureBlock("For AMA Legal Solutions®", "Authorized Legal Representative");
+    writer.writeSignatureBlock("For AMA Legal SolutionsÂ®", "Authorized Legal Representative");
     }
 
   const pdfBytes = await pdfDoc.save();

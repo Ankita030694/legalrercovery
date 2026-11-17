@@ -71,7 +71,7 @@ export interface LegalNoticeOutcomesStudyData {
 
 export function getLegalNoticeOutcomesStudyData(): LegalNoticeOutcomesStudyData {
   const filePath = path.join(
-    process.cwd(),
+    /*turbopackIgnore: true*/ process.cwd(),
     "src",
     "data",
     "reports",

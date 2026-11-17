@@ -69,7 +69,7 @@ export interface RefundDelayReportData {
 
 export function getRefundDelayReportData(): RefundDelayReportData {
   const filePath = path.join(
-    process.cwd(),
+    /*turbopackIgnore: true*/ process.cwd(),
     "src",
     "data",
     "reports",

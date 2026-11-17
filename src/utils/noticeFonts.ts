@@ -17,7 +17,7 @@ export function getNoticeFonts(): CachedFonts {
   let bookmanFontBase64 = '';
 
   try {
-    const publicFontsPath = path.join(process.cwd(), 'public', 'fonts');
+    const publicFontsPath = path.join(/*turbopackIgnore: true*/ process.cwd(), 'public', 'fonts');
 
     // Times New Roman Regular
     const regularWoff2 = path.join(publicFontsPath, 'TimesNewRoman-Regular.woff2');

@@ -109,7 +109,7 @@ export async function generateLoanNoticePDFBuffer(params: PDFGeneratorParams, sh
   let bookmanFontBase64 = loadedBookman;
   
   try {
-    const publicPath = path.join(process.cwd(), 'public');
+    const publicPath = path.join(/*turbopackIgnore: true*/ process.cwd(), 'public');
     
     const headerPath = path.join(publicPath, 'notices', 'header logo AMA .png');
     if (fs.existsSync(headerPath)) headerLogoBase64 = fs.readFileSync(headerPath, 'base64');

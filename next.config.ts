@@ -81,7 +81,9 @@ const BROKEN_LINK_REDIRECTS: [string, string][] = [
 ];
 
 const nextConfig: NextConfig = {
-  reactCompiler: true,
+  // React Compiler roughly doubles compile memory/time; with 3,600+ pages it pushes
+  // the Vercel build container past its memory limit, so it is disabled.
+  reactCompiler: false,
   images: {
     formats: ['image/avif', 'image/webp'],
     deviceSizes: [640, 750, 828, 1080, 1200, 1920],
@@ -89,8 +91,14 @@ const nextConfig: NextConfig = {
   typescript: {
     ignoreBuildErrors: true,
   },
-  eslint: {
-    ignoreDuringBuilds: true,
+  experimental: {
+    // Fewer parallel static-generation workers => lower peak memory on the build machine.
+    cpus: 2,
+  },
+  // PDF routes read logos/fonts from public/ at runtime; include only those folders
+  // (fs paths are marked turbopackIgnore so the whole project is no longer traced).
+  outputFileTracingIncludes: {
+    '/api/**': ['./public/notices/**', './public/fonts/**'],
   },
   outputFileTracingExcludes: {
     '*': [
@@ -98,6 +106,9 @@ const nextConfig: NextConfig = {
       './scripts/**',
       './video/**',
       './scratch/**',
+      './.next/cache/**',
+      './public/video/**',
+      './public/*.mp4',
     ],
   },
   async headers() {

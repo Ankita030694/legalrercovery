@@ -1,4 +1,5 @@
 import { NextRequest, NextResponse } from 'next/server'
+import path from 'path'
 import puppeteer from 'puppeteer-core'
 import fs from 'fs'
 import { fillWeek3NoticeTemplate } from '@/utils/recoveryNoticeWeek3Template'
@@ -87,19 +88,19 @@ export async function POST(request: NextRequest) {
     let barStampLogoBase64 = ''
     let signatureBase64 = ''
     try {
-      const headerPath = process.cwd() + '/public/notices/header logo AMA .png'
+      const headerPath = path.join(/*turbopackIgnore: true*/ process.cwd(), '/public/notices/header logo AMA .png')
       if (fs.existsSync(headerPath)) {
         headerLogoBase64 = fs.readFileSync(headerPath, 'base64')
       }
-      const stampPath = process.cwd() + '/public/notices/AMA stamp logo.png'
+      const stampPath = path.join(/*turbopackIgnore: true*/ process.cwd(), '/public/notices/AMA stamp logo.png')
       if (fs.existsSync(stampPath)) {
         stampLogoBase64 = fs.readFileSync(stampPath, 'base64')
       }
-      const barStampPath = process.cwd() + '/public/notices/bar_stamp.png'
+      const barStampPath = path.join(/*turbopackIgnore: true*/ process.cwd(), '/public/notices/bar_stamp.png')
       if (fs.existsSync(barStampPath)) {
         barStampLogoBase64 = fs.readFileSync(barStampPath, 'base64')
       }
-      const sigPath = process.cwd() + '/public/notices/Signature.png'
+      const sigPath = path.join(/*turbopackIgnore: true*/ process.cwd(), '/public/notices/Signature.png')
       if (fs.existsSync(sigPath)) {
         signatureBase64 = fs.readFileSync(sigPath, 'base64')
       }

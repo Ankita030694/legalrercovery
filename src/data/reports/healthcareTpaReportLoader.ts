@@ -59,7 +59,7 @@ export interface HealthcareTpaReportData {
 
 export function getHealthcareTpaReportData(): HealthcareTpaReportData {
   const filePath = path.join(
-    process.cwd(),
+    /*turbopackIgnore: true*/ process.cwd(),
     "src",
     "data",
     "reports",

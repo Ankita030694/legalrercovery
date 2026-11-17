@@ -54,7 +54,7 @@ export interface ConsumerAwardsTrackerData {
 export function getConsumerAwardsTrackerData(): ConsumerAwardsTrackerData | null {
   try {
     const filePath = path.join(
-      process.cwd(),
+      /*turbopackIgnore: true*/ process.cwd(),
       "src",
       "data",
       "reports",
