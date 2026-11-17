@@ -6,7 +6,10 @@ export const revalidate = 3600;
 
 const STATIC_ROUTES: {
   path: string;
-  changeFrequency: MetadataRoute.Sitemap[
+  changeFrequency: MetadataRoute.Sitemap[number]["changeFrequency"];
+  priority: number;
+  lastModified?: Date | string;
+}[] = [
   {
     path: "/letter-of-credit-lc-wrongful-discrepancy-dishonour-ucp-600-recovery",
     changeFrequency: "weekly",
@@ -18,10 +21,7 @@ const STATIC_ROUTES: {
     changeFrequency: "weekly",
     priority: 0.9,
     lastModified: new Date("2026-11-17"),
-  },number]["changeFrequency"];
-  priority: number;
-  lastModified?: Date | string;
-}[] = [
+  },
   {
     path: "/reports/indian-exporter-payment-defaults-edpms-trends-report",
     changeFrequency: "weekly",
