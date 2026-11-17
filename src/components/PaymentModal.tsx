@@ -7,6 +7,7 @@ import { RecoveryForm } from "./RecoveryForm";
 interface PaymentModalProps {
   isOpen: boolean;
   onClose: () => void;
+  [key: string]: any;
 }
 
 export const PaymentModal = ({ isOpen, onClose }: PaymentModalProps) => {
@@ -63,3 +64,5 @@ export const PaymentModal = ({ isOpen, onClose }: PaymentModalProps) => {
     </div>
   );
 };
+
+export default PaymentModal;

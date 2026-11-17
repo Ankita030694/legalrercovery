@@ -1983,6 +1983,9 @@ p.includes("school") ||
 interface RelatedRecoveryGuidesProps {
   currentPath?: string;
   cluster?: string;
+  currentSlug?: string;
+  heading?: string;
+  [key: string]: any;
 }
 
 export default function RelatedRecoveryGuides({

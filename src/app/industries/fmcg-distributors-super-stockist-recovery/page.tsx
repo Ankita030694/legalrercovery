@@ -1225,6 +1225,12 @@ export default function FmcgSuperStockistRecoveryHubPage() {
                       tag: "Live P1 Template",
                       desc: "Ready Udyam demand notice citing Sections 15–16 and Section 43B(h) tax impact.",
                     },
+                    {
+                      title: "HTML Sitemap & Legal Directory (All Categories & Industry Portals)",
+                      href: "/sitemap",
+                      tag: "All Directories",
+                      desc: "Explore all 300+ statutory recovery guides, industry hubs, calculators, and dispute notice templates across India.",
+                    },
                   ].map((item) => (
                     <Link
                       key={item.href}
@@ -1245,6 +1251,24 @@ export default function FmcgSuperStockistRecoveryHubPage() {
                       </span>
                     </Link>
                   ))}
+                </div>
+
+                {/* HTML Directory Sitemap Cross-Link (all filter) */}
+                <div className="mt-6 pt-4 border-t border-slate-200 flex flex-col sm:flex-row sm:items-center justify-between gap-3 bg-slate-50 p-4 rounded-xl">
+                  <div>
+                    <span className="text-xs font-black uppercase text-[#DC2626] block">
+                      Legal Directory &amp; Sitemap Navigation
+                    </span>
+                    <p className="text-xs text-slate-600 mt-0.5">
+                      Explore all 300+ institutional recovery playbooks, statutory guides, and industry hubs across India.
+                    </p>
+                  </div>
+                  <Link
+                    href="/sitemap"
+                    className="inline-flex items-center justify-center px-4 py-2 bg-slate-900 hover:bg-slate-800 text-white rounded-lg text-xs font-bold transition-colors shrink-0 shadow-sm"
+                  >
+                    All Portals Sitemap (All Filters) &rarr;
+                  </Link>
                 </div>
               </section>
 

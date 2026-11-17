@@ -651,7 +651,7 @@ export default function RetentionMoneyRecoveryPage() {
                 >
                   {/* Step 1 */}
                   <rect x="20" y="20" width="220" height="90" rx="8" fill="#1E293B" stroke="#DC2626" strokeWidth="2" />
-                  <text x="130" y="50" textAnchor="middle" fill="#F87171" fontSize="11" fontWeight="bold" textTransform="uppercase">Stage 1: DLP Expiry Audit</text>
+                  <text x="130" y="50" textAnchor="middle" fill="#F87171" fontSize="11" fontWeight="bold" style={{ textTransform: "uppercase" }}>Stage 1: DLP Expiry Audit</text>
                   <text x="130" y="70" textAnchor="middle" fill="#FFFFFF" fontSize="12" fontWeight="600">365 Days From Beneficial Use</text>
                   <text x="130" y="90" textAnchor="middle" fill="#94A3B8" fontSize="10">Verify signed handover & power logs</text>
 
@@ -660,7 +660,7 @@ export default function RetentionMoneyRecoveryPage() {
 
                   {/* Step 2 */}
                   <rect x="290" y="20" width="220" height="90" rx="8" fill="#1E293B" stroke="#38BDF8" strokeWidth="2" />
-                  <text x="400" y="50" textAnchor="middle" fill="#38BDF8" fontSize="11" fontWeight="bold" textTransform="uppercase">Stage 2: Snag Notice Check</text>
+                  <text x="400" y="50" textAnchor="middle" fill="#38BDF8" fontSize="11" fontWeight="bold" style={{ textTransform: "uppercase" }}>Stage 2: Snag Notice Check</text>
                   <text x="400" y="70" textAnchor="middle" fill="#FFFFFF" fontSize="12" fontWeight="600">Were Defects Notified in DLP?</text>
                   <text x="400" y="90" textAnchor="middle" fill="#94A3B8" fontSize="10">Must be contemporaneous written logs</text>
 
@@ -669,7 +669,7 @@ export default function RetentionMoneyRecoveryPage() {
 
                   {/* Step 3 */}
                   <rect x="560" y="20" width="220" height="90" rx="8" fill="#1E293B" stroke="#10B981" strokeWidth="2" />
-                  <text x="670" y="50" textAnchor="middle" fill="#34D399" fontSize="11" fontWeight="bold" textTransform="uppercase">Stage 3: Demand Issuance</text>
+                  <text x="670" y="50" textAnchor="middle" fill="#34D399" fontSize="11" fontWeight="bold" style={{ textTransform: "uppercase" }}>Stage 3: Demand Issuance</text>
                   <text x="670" y="70" textAnchor="middle" fill="#FFFFFF" fontSize="12" fontWeight="600">Final Retention Bill + 18% Int.</text>
                   <text x="670" y="90" textAnchor="middle" fill="#94A3B8" fontSize="10">Trigger Section 73/74 maturity</text>
 
@@ -678,7 +678,7 @@ export default function RetentionMoneyRecoveryPage() {
 
                   {/* Branch Decision Box */}
                   <rect x="530" y="160" width="280" height="90" rx="8" fill="#0F172A" stroke="#F59E0B" strokeWidth="2" />
-                  <text x="670" y="190" textAnchor="middle" fill="#FBBF24" fontSize="11" fontWeight="bold" textTransform="uppercase">Developer Response Evaluation</text>
+                  <text x="670" y="190" textAnchor="middle" fill="#FBBF24" fontSize="11" fontWeight="bold" style={{ textTransform: "uppercase" }}>Developer Response Evaluation</text>
                   <text x="670" y="210" textAnchor="middle" fill="#FFFFFF" fontSize="11" fontWeight="600">Paid? / Silent? / Post-Facto Snags?</text>
                   <text x="670" y="230" textAnchor="middle" fill="#94A3B8" fontSize="10">15-Day window lapses without clearance</text>
 

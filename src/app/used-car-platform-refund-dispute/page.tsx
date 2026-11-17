@@ -558,7 +558,7 @@ export default function UsedCarPlatformRefundPage() {
                       <circle cx="28" cy="28" r="14" fill="#0F172A" />
                       <text x="28" y="32" fill="#FFFFFF" fontSize="12" fontWeight="bold" textAnchor="middle">1</text>
                       <text x="50" y="32" fill="#0F172A" fontSize="12" fontWeight="bold">Evidence Audit</text>
-                      <text x="16" y="65" fill="#475569" fontSize="10.5" lineHeight="15">
+                      <text x="16" y="65" fill="#475569" fontSize="10.5">
                         <tspan x="16" dy="0">• Dealership service history</tspan>
                         <tspan x="16" dy="16">• OBD diagnostic error log</tspan>
                         <tspan x="16" dy="16">• Paint gauge &amp; apron audit</tspan>

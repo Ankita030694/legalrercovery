@@ -8,6 +8,34 @@ export interface SitemapItem {
 
 export const ALL_SITEMAP_PAGES: SitemapItem[] = [
   {
+    title: "Supplier Collected 18% GST & Didn't File GSTR-3B? Recover ITC",
+    href: "/gst-input-tax-credit-blocked-supplier-non-filing-gstr-3b-recovery",
+    category: "B2B & Institutional Recovery",
+    date: "17 Nov 2026",
+    timestamp: 1794844500000,
+  },
+  {
+    title: "C&F Agent & Super-Stockist Security Deposit & Claim Recovery",
+    href: "/cnf-agent-super-stockist-security-deposit-fnf-recovery-from-brand",
+    category: "B2B & Institutional Recovery",
+    date: "17 Nov 2026",
+    timestamp: 1794844000000,
+  },
+  {
+    title: "Filling Signed Security Cheques for Dealer Dues (SC Bir Singh Law)",
+    href: "/blank-signed-security-cheque-section-20-138-ni-act-distributor-recovery",
+    category: "B2B & Institutional Recovery",
+    date: "17 Nov 2026",
+    timestamp: 1794843500000,
+  },
+  {
+    title: "Quick-Commerce & Modern-Trade Vendor Deductions & GRN Recovery",
+    href: "/quick-commerce-modern-trade-arbitrary-deductions-vendor-payment-recovery",
+    category: "B2B & Institutional Recovery",
+    date: "17 Nov 2026",
+    timestamp: 1794843000000,
+  },
+  {
     title: "FMCG, Consumer Durables, D2C & Super-Stockist Debt Recovery",
     href: "/industries/fmcg-distributors-super-stockist-recovery",
     category: "B2B & Institutional Recovery",

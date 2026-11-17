@@ -8,7 +8,7 @@ interface ScamScenarioTab {
   tabLabel: string;
   title: string;
   fraudModus: string;
-  recoverabilityRating: "High" | "Moderate" | "Low / Rare";
+  recoverabilityRating: "High" | "Moderate" | "Low / Moderate" | "Low / Rare";
   realisticOutcome: string;
   remedySteps: {
     step: string;

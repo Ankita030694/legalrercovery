@@ -13,6 +13,7 @@ interface DiagnosticScenario {
   typicalLanguage: string;
   legalStanding: string;
   recommendedAction: string;
+  recommendedActionLink?: string;
   governingRule: string;
 }
 

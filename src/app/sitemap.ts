@@ -11,6 +11,10 @@ const STATIC_ROUTES: {
   lastModified?: Date | string;
 }[] = [
   { path: "", changeFrequency: "weekly", priority: 1 },
+  { path: "/gst-input-tax-credit-blocked-supplier-non-filing-gstr-3b-recovery", changeFrequency: "weekly", priority: 0.9, lastModified: new Date("2026-11-17") },
+  { path: "/cnf-agent-super-stockist-security-deposit-fnf-recovery-from-brand", changeFrequency: "weekly", priority: 0.85, lastModified: new Date("2026-11-17") },
+  { path: "/blank-signed-security-cheque-section-20-138-ni-act-distributor-recovery", changeFrequency: "weekly", priority: 0.9, lastModified: new Date("2026-11-17") },
+  { path: "/quick-commerce-modern-trade-arbitrary-deductions-vendor-payment-recovery", changeFrequency: "weekly", priority: 0.85, lastModified: new Date("2026-11-17") },
   { path: "/templates/transporter-freight-detention-carrier-lien-legal-notice", changeFrequency: "weekly", priority: 0.9, lastModified: new Date("2026-11-16") },
   { path: "/hi/transport-bilty-truck-bhada-recovery-legal-notice", changeFrequency: "weekly", priority: 0.85, lastModified: new Date("2026-11-16") },
   { path: "/dedicated-fleet-contract-minimum-km-guarantee-shortfall-recovery", changeFrequency: "weekly", priority: 0.85, lastModified: new Date("2026-11-16") },

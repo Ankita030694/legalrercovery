@@ -1,12 +1,8 @@
 'use client';
 
 import React, { useState } from 'react';
-import dynamic from 'next/dynamic';
+import { PaymentModal } from '@/components/PaymentModal';
 import { DEFAULT_FUNNEL_SETTINGS } from '@/lib/funnel-config';
-
-const PaymentModal = dynamic(() => import('@/components/PaymentModal'), {
-  ssr: false,
-});
 
 interface Section43bhNoticeCTAProps {
   variant?: 'primary' | 'inline';
