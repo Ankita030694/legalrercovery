@@ -1636,6 +1636,71 @@ const CLUSTERS: Record<string, { heading: string; items: GuideItem[] }> = {
       },
     ],
   },
+  staffingB2B: {
+    heading: "Related Staffing, Recruitment, Security & Facility Management Recovery Guides",
+    items: [
+      {
+        title: "MEA Recruiting Agent: Foreign Employer Fee Recovery",
+        href: "/overseas-manpower-recruiting-agent-foreign-employer-fee-recovery",
+        tag: "MEA & eMigrate SOP",
+        desc: "Recover unpaid overseas recruitment invoices, trade-test costs & airfare advances from GCC & European employers.",
+      },
+      {
+        title: "Recruitment Backdoor-Hiring & Staffing Invoice Legal Notice Pack",
+        href: "/templates/recruitment-backdoor-hiring-and-staffing-invoice-legal-notice",
+        tag: "Commercial Notice Pack",
+        desc: "Advocate-vetted statutory demand notice formats for candidate circumvention, ATS email proof, and monthly payroll arrears.",
+      },
+      {
+        title: "Recruitment, Staffing, Manpower & FMS Debt Recovery India",
+        href: "/industries/staffing-recruitment-manpower-recovery",
+        tag: "IND-11 Pillar Hub",
+        desc: "Corporate recovery framework for temp-staffing payroll defaults, backdoor hiring fees, and security agency arrears.",
+      },
+      {
+        title: "PSARA Security Guard & Housekeeping Agency Arrears Recovery",
+        href: "/security-guard-housekeeping-facility-management-unpaid-bill-recovery",
+        tag: "PSARA & IFM Playbook",
+        desc: "Counter bogus theft debit notes, overnight vendor replacements, and recover 4+ months of guarding arrears via MSMED Act.",
+      },
+      {
+        title: "Temp Staffing Payroll, PF & GST Invoice Default Recovery",
+        href: "/contract-staffing-temp-payroll-pf-esic-invoice-default-recovery",
+        tag: "Payroll Recovery",
+        desc: "Recover 92% pass-through wages, EPF, ESIC, and 18% GST outlays using CLRA Section 21(4) and IBC Section 8.",
+      },
+      {
+        title: "Client Backdoor Hired Candidate? Placement Fee Recovery",
+        href: "/backdoor-hiring-candidate-circumvention-placement-fee-recovery-india",
+        tag: "Placement Fees",
+        desc: "Enforce recruitment Terms of Business when clients reject CVs and covertly onboard candidates within 12 months.",
+      },
+      {
+        title: "Client Absorbed Temp Staff Without Paying C2H Buyout Fee?",
+        href: "/temp-to-perm-contract-employee-absorption-buyout-fee-recovery",
+        tag: "C2H Buyout SOP",
+        desc: "Recover 15%–25% CTC conversion fees and counter hostile workforce rebadging under Contract Act s.73/74.",
+      },
+      {
+        title: "Client Withholding Placement Fee Citing 90-Day Replacement Guarantee? Recovery Guide",
+        href: "/recruitment-agency-90-day-replacement-clause-abuse-fee-recovery",
+        tag: "Replacement Clause",
+        desc: "Neutralize uncooperative client replacement defenses and recover executive search placement invoices.",
+      },
+      {
+        title: "Client Never Signed Recruitment Terms? Win Placement Fees",
+        href: "/recruitment-terms-of-business-unsigned-email-acceptance-recovery",
+        tag: "Unsigned Terms (s.8)",
+        desc: "Enforce placement fees under Section 8 acceptance by conduct, Section 70 quantum meruit, and IT Act Section 10A.",
+      },
+      {
+        title: "Bulk Recovery Cases: All-in-One Institutional Solutions",
+        href: "/bulk-recovery-cases-all-in-one-affordable-solutions",
+        tag: "CSV Batch Desk",
+        desc: "Upload 10 to 10,000+ defaulting client staffing or facility management accounts for automated dispatch.",
+      },
+    ],
+  },
   hospitalityB2B: {
     heading: "Related Hotel BTC, Banquet, Corporate Travel & B2B Recovery Guides",
     items: [
@@ -1699,6 +1764,21 @@ function detectCluster(pathname: string): { heading: string; items: GuideItem[] 
     p.includes("distributor-dealer")
   ) {
     return CLUSTERS.commercialB2B;
+  }
+  if (
+    p.includes("staffing") ||
+    p.includes("recruitment") ||
+    p.includes("overseas-manpower") ||
+    p.includes("temp-to-perm") ||
+    p.includes("absorption-buyout") ||
+    p.includes("security-guard-housekeeping") ||
+    p.includes("facility-management") ||
+    p.includes("backdoor-hiring") ||
+    p.includes("unsigned-email-acceptance") ||
+    p.includes("replacement-clause") ||
+    p.includes("temp-payroll")
+  ) {
+    return CLUSTERS.staffingB2B;
   }
   if (
     p.includes("hotels-banquets-corporate-travel") ||
@@ -1924,6 +2004,7 @@ p.includes("school") ||
   }
   if (
     p.includes("advertising-marketing-media-event") ||
+    p.includes("digital-marketing") ||
     p.includes("low-roas") ||
     p.includes("media-buying-agency") ||
     p.includes("exhibition-stall-fabricator") ||

@@ -11,9 +11,9 @@ export const revalidate = 86400;
 
 const PAGE_URL = "/industries/advertising-marketing-media-event-recovery";
 const CANONICAL_URL = `${SITE_URL}${PAGE_URL}`;
-const PAGE_TITLE = "Advertising, Marketing, PR, Media & Event Debt Recovery";
+const PAGE_TITLE = "Advertising, Digital Marketing, PR, Media & Event Recovery";
 const PAGE_DESCRIPTION =
-  "Recover unpaid retainers, upfront Meta/Google/OOH ad spend, post-event balances & film dues via Contract, INS RO, MSMED s.43B(h) & Copyright Takedown.";
+  "Recover unpaid SEO/performance retainers, upfront Meta/Google/TV/OOH media outlays, post-event balances & film shoots via Contract + Copyright Takedown law.";
 const H1_TEXT =
   "Retainer, Media-Spend & Production Balance Recovery for Agencies, PR Firms, Film Houses & Event Organizers";
 
