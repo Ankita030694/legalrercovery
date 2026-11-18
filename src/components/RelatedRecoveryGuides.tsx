@@ -1753,11 +1753,107 @@ const CLUSTERS: Record<string, { heading: string; items: GuideItem[] }> = {
     heading: "Related Hotel BTC, Banquet, Corporate Travel & B2B Recovery Guides",
     items: [
       {
+        title: "B2B DMC & Tour Operator Travel Agent Debt Recovery",
+        href: "/b2b-dmc-destination-management-company-tour-operator-default-recovery",
+        tag: "BNS s.336/340",
+        desc: "Stop the Friday 6 PM fake NEFT/SWIFT UTR screenshot scam via BNS s.318/336/340 forgery FIR, NI s.138 & Order 37 CPC.",
+      },
+      {
+        title: "Private Charter (Jet/Heli) & Luxury Coach Fleet Debt Recovery",
+        href: "/charter-flight-luxury-coach-yacht-corporate-hire-payment-recovery",
+        tag: "NSOP & Fleet SOP",
+        desc: "Enforce DGCA NSOP Flight Tech-Logs, empty-leg ferry charges, campaign PDCs & GPS coach telemetry via Order 37 CPC.",
+      },
+      {
+        title: "MICE Offsite Cancellation & Room-Block Attrition Recovery",
+        href: "/mice-corporate-offsite-conference-attrition-last-minute-cancellation-recovery",
+        tag: "Contract Act s.74",
+        desc: "Enforce 75%–100% last-minute MICE cancellation slabs & 80% attrition clauses using PMS unsold occupancy logs.",
+      },
+      {
+        title: "Industrial Canteen, Corporate Cafeteria & Hostel Mess Bill Recovery",
+        href: "/industrial-canteen-corporate-cafeteria-institutional-caterer-bill-recovery",
+        tag: "MSMED s.15–18 & s.43B(h)",
+        desc: "Recover 90–120+ day unpaid factory, hospital & college mess bills and strike down un-sampled hygiene penalties under Contract Act s.74.",
+      },
+      {
+        title: "Hotel 'Bill-to-Company' (BTC) Corporate Credit Default Recovery",
+        href: "/hotel-btc-bill-to-company-corporate-credit-account-default-recovery",
+        tag: "BTC City Ledger",
+        desc: "Convert 90+ day corporate BTC emails, PMS Guest Registration Cards, and GSTR-2B ITC claims into Order 37 Summary Suits.",
+      },
+      {
+        title: "OTA & B2B Bed-Bank Withheld Hotel Payout Recovery",
+        href: "/ota-b2b-bedbank-withheld-hotel-payout-arbitrary-chargeback-recovery",
+        tag: "OTA & Bed-Bank",
+        desc: "Recover frozen OTA extranet settlements, expired Virtual Credit Cards (VCCs) & arbitrary guest-relocation penalties under MSMED Act s.15–18.",
+      },
+      {
+        title: "Banquet & Wedding Balance Cheque Stop-Payment Recovery",
+        href: "/banquet-hall-destination-wedding-post-event-balance-cheque-bounce",
+        tag: "NI Act s.138 & s.143A",
+        desc: "Recover stopped ₹10–25L post-event extra-pax & bar balance cheques with Event Captain slips, CCTV BSA s.63 proof & 20% interim relief.",
+      },
+      {
+        title: "IATA Travel Agent (TMC): Flight Credit Default Recovery",
+        href: "/iata-corporate-travel-agent-tmc-flight-ticket-credit-default-recovery",
+        tag: "IATA BSP & TMC",
+        desc: "Recover corporate flight, LCC wallet, and visa credit defaults via Order XXXVII CPC, Rule 5 bank attachment & MSMED s.16.",
+      },
+      {
+        title: "Hotel BTC & IATA Travel Agent Credit Legal Notice Pack",
+        href: "/templates/hotel-btc-and-iata-travel-agent-corporate-credit-legal-notice",
+        tag: "Notice Template",
+        desc: "Advocate-drafted notice pack with Guest Folio, BTC Voucher, 13-digit Airline Ticket & GDS PNR schedules plus GSTR-2B estoppel.",
+      },
+      {
         title: "Hotels, Banquets & Corporate Travel (TMC) Debt Recovery",
         href: "/industries/hotels-banquets-corporate-travel-recovery",
         tag: "IND-16 Pillar Hub",
         desc: "Recover aged City-Ledger BTC accounts, IATA BSP flown-PNR ticket defaults, stopped wedding cheques & MICE attrition dues.",
       },
+      {
+        title: "Private Schools, Universities & EdTech B2B Fee/Debt Recovery",
+        href: "/industries/schools-universities-edtech-b2b-recovery",
+        tag: "IND-17 Pillar Hub",
+        desc: "RTE s.5(3) & HC-compliant parent fee recovery without withholding TCs, university hostel arrears & School Trust B2B dues.",
+      },
+      {
+        title: "System Integrator & AV/Networking Project Payment Recovery",
+        href: "/system-integrator-it-hardware-networking-campus-project-recovery",
+        tag: "IND-18 Guide",
+        desc: "Break the 45-day Redington/Ingram channel squeeze when client civil delays stall 30% installation milestones via Contract Act s.53/54 & MSMED s.16.",
+      },
+      {
+        title: "MSO & ISP Partner: LCO Set-Top-Box & Arrears Recovery",
+        href: "/cable-tv-mso-broadcaster-set-top-box-lco-arrears-recovery-tdsat",
+        tag: "IND-18 MSO/LCO",
+        desc: "TRAI 21-day Regulation 17 disconnection notices, TDSAT s.14 arrears petitions & BNS s.316 recovery for swapped STBs and ONTs.",
+      },
+      {
+        title: "TDSAT vs Commercial Court: Telecom & ISP Recovery Forum",
+        href: "/tdsat-vs-commercial-court-jurisdiction-telecom-isp-broadcasting-recovery",
+        tag: "IND-18 Law",
+        desc: "TRAI Act s.14 & s.15 jurisdiction map: MSO–LCO & telco interconnect disputes go to TDSAT; enterprise ILL subscriber debt goes to Commercial Court.",
+      },
+      {
+        title: "MSP & IT AMC Unpaid Invoice + Firewall/CPE Recovery",
+        href: "/managed-it-services-msp-annual-amc-sla-unreturned-firewall-recovery",
+        tag: "IND-18 MSP Guide",
+        desc: "IT Act s.43-safe M365/DNS credential handover while prosecuting unpaid AMC/SOC contracts (Order 37) and leased Fortinet/SonicWall CPE (BNS s.316).",
+      },
+      {
+        title: "Telecom, Enterprise ISP, Data Center, CPaaS & MSP Recovery",
+        href: "/industries/telecom-isp-datacenter-msp-recovery",
+        tag: "IND-18 Pillar Hub",
+        desc: "Recover ILL/MPLS lock-in CapEx, rack colocation arrears with DPDP-safe export notices, CPaaS bursts & BNS s.316 CPE hardware.",
+      },      {
+        title: "RTE-Safe School Fee Arrears Legal Notice to Parents",
+        href: "/templates/school-compliant-parent-fee-recovery-legal-notice-format",
+        tag: "IND-17 Template",
+        desc: "Child-safe legal notice format keeping student TC and exam rights untouched while enforcing parent fee undertakings under Order 37 CPC.",
+      },
+
       {
         title: "Section 138 Cheque Bounce Notice Timeline (30 + 15 Day Rule)",
         href: "/cheque-bounce-notice-timeline-section-138",
@@ -1790,10 +1886,135 @@ const CLUSTERS: Record<string, { heading: string; items: GuideItem[] }> = {
       },
     ],
   },
+  educationB2B: {
+    heading: "Related Education, School & EdTech B2B Recovery Guides",
+    items: [
+      {
+        title: "Study-Abroad Aggregator Withholding Sub-Agent Commissions",
+        href: "/study-abroad-master-aggregator-university-sub-agent-commission-dispute",
+        tag: "Overseas EdTech B2B",
+        desc: "Recover withheld university enrollment commissions from master aggregators via Contract Act s.213 accounting & Order XXXVII CPC.",
+      },
+      {
+        title: "Corporate L&D, Upskilling & Assessment Vendor Invoice Recovery",
+        href: "/corporate-training-l-and-d-executive-education-vendor-invoice-recovery",
+        tag: "Corporate L&D B2B",
+        desc: "Break enterprise HR budget freezes & 180-day portal lags via MSMED s.15–18, Income Tax s.43B(h), and attendance estoppel.",
+      },
+      {
+        title: "School Bus Fleet Contractor Unpaid Trust Bill Recovery",
+        href: "/school-bus-transport-fleet-contractor-unpaid-trust-dues-recovery",
+        tag: "School Bus Fleet",
+        desc: "Enforce 12-month standing charges, diesel escalation & fiduciary parent-fee admissions against School Trusts via MSMED s.15–18.",
+      },
+      {
+        title: "Coaching Franchisee Royalty Default & Poaching Recovery",
+        href: "/coaching-institute-franchise-royalty-and-installment-bounce-recovery",
+        tag: "Coaching Franchise",
+        desc: "Commercial Court s.9 injunctions for overnight rebranding, Copyright s.55 test-series seizure, NI s.138 & MoE 2024 pro-rata recovery.",
+      },
+      {
+        title: "B2B EdTech, Smart-Class & School ERP Debt Recovery",
+        href: "/edtech-b2b-smart-class-school-erp-robotics-lab-unpaid-dues-from-schools",
+        tag: "EdTech B2B",
+        desc: "Sue the Registered Society (Section 6) or Public Trust—not just the school name—and run bulk CSV notices across 200+ defaulting schools.",
+      },
+      {
+        title: "How Private Schools Recover Unpaid Fees Without Withholding TC",
+        href: "/how-private-schools-recover-unpaid-fees-without-withholding-tc",
+        tag: "School Fee Recovery",
+        desc: "RTE-compliant advocate civil recovery notices against earning parents without ever withholding Transfer Certificates.",
+      },
+      {
+        title: "IT, Software & SaaS MSA Payment Default Legal Notice",
+        href: "/templates/it-software-saas-msa-payment-default-legal-notice",
+        tag: "SaaS Notice Template",
+        desc: "Advocate-vetted MSA payment default & license suspension notice format with Section 63 BSA electronic log clauses.",
+      },
+      {
+        title: "MSME Delayed Payment Interest Calculator (3x RBI Rate)",
+        href: "/tools/msme-delayed-payment-interest-calculator",
+        tag: "MSMED Calculator",
+        desc: "Compute exact monthly compound interest at 3x RBI bank rate under Section 16 of the MSMED Act, 2006.",
+      },
+      {
+        title: "Bulk Legal Recovery Notices (10 to 10,000+ Defaulters)",
+        href: "/bulk-recovery-cases-all-in-one-affordable-solutions",
+        tag: "Bulk CSV Portal",
+        desc: "Upload a single CSV of delinquent schools or commercial debtors for automated Email, WhatsApp & Speed Post RPAD notices.",
+      },
+    ],
+  },
+  telecomB2B: {
+    heading: "Related Telecom, Enterprise ISP & B2B Recovery Guides",
+    items: [
+      {
+        title: "WhatsApp BSP, Bulk SMS & Cloud Telephony Debt Recovery",
+        href: "/cpaas-bulk-sms-whatsapp-bsp-cloud-telephony-postpaid-default-recovery",
+        tag: "CPaaS & BSP B2B",
+        desc: "Recover Meta conversation & DLT interconnect bursts using BSA 2023 s.63 Webhook/CDR logs & API-key custody clauses.",
+      },
+      {
+        title: "Enterprise ILL / MPLS / SD-WAN Lock-In Breach Recovery",
+        href: "/enterprise-leased-line-ill-mpls-sdwan-lock-in-breach-recovery-isp",
+        tag: "Enterprise ISP B2B",
+        desc: "Recover waived installation OTCs, unamortized last-mile fiber CapEx, bandwidth arrears & MUX CPE via Contract Act s.74.",
+      },
+      {
+        title: "Order XXXVII CPC Summary Suit for Commercial Dues",
+        href: "/law/order-37-summary-suit-money-recovery",
+        tag: "Summary Suit",
+        desc: "Fast-track decree on signed CAFs, Commissioning AT Reports, and acknowledged postpaid invoices without full trial.",
+      },
+      {
+        title: "IT, Software & SaaS MSA Payment Default Legal Notice",
+        href: "/templates/it-software-saas-msa-payment-default-legal-notice",
+        tag: "SaaS / Tech Notice",
+        desc: "Advocate-vetted MSA payment default & suspension notice template with BSA 2023 Section 63 electronic log clauses.",
+      },
+      {
+        title: "MSME Delayed Payment Interest Calculator (3x RBI Rate)",
+        href: "/tools/msme-delayed-payment-interest-calculator",
+        tag: "MSMED Calculator",
+        desc: "Compute statutory compound interest at 3x RBI bank rate under Section 16 of the MSMED Act for Udyam ISPs.",
+      },
+      {
+        title: "B2B Vendor & Commercial Invoice Recovery Desk",
+        href: "/services/vendor-and-invoice-recoveries",
+        tag: "B2B Recovery",
+        desc: "Structured pre-litigation legal notices and Commercial Court escalation for corporate receivables.",
+      },
+      {
+        title: "Bulk Legal Recovery Notices (10 to 10,000+ Defaulters)",
+        href: "/bulk-recovery-cases-all-in-one-affordable-solutions",
+        tag: "Bulk CSV Portal",
+        desc: "Batch-process enterprise & SME postpaid telecom arrears via CSV with Email, WhatsApp & Speed Post RPAD.",
+      },
+    ],
+  },
 };
 
 function detectCluster(pathname: string): { heading: string; items: GuideItem[] } {
   const p = pathname.toLowerCase();
+  if (
+    p.includes("enterprise-leased-line-ill-mpls") ||
+    p.includes("telecom-isp-datacenter") ||
+    p.includes("tdsat-vs-commercial-court") ||
+    p.includes("cpaas-bulk-sms") ||
+    p.includes("data-center-colocation")
+  ) {
+    return CLUSTERS.telecomB2B;
+  }
+  if (
+    p.includes("school-bus-transport-fleet") ||
+    p.includes("coaching-institute-franchise") ||
+    p.includes("edtech-b2b-smart-class") ||
+    p.includes("schools-universities-edtech") ||
+    p.includes("how-private-schools-recover") ||
+    p.includes("corporate-training-l-and-d")
+  ) {
+    return CLUSTERS.educationB2B;
+  }
   if (
     p.includes("cardiac-stent") ||
     p.includes("surgical-consumables") ||
@@ -1841,7 +2062,8 @@ function detectCluster(pathname: string): { heading: string; items: GuideItem[] 
     p.includes("industrial-canteen-corporate-cafeteria") ||
     p.includes("b2b-dmc-destination-management") ||
     p.includes("charter-flight-luxury-coach") ||
-    p.includes("hotel-btc-and-iata-travel-agent")
+    p.includes("hotel-btc-and-iata-travel-agent") ||
+    p.includes("ota-b2b-bedbank")
   ) {
     return CLUSTERS.hospitalityB2B;
   }
@@ -2120,7 +2342,8 @@ p.includes("school") ||
     p.includes("staff-augmentation") ||
     p.includes("erp-sap") ||
     p.includes("white-label") ||
-    p.includes("source-code-escrow")
+    p.includes("source-code-escrow") ||
+    p.includes("data-center-colocation")
   ) {
     return CLUSTERS.itSaas;
   }

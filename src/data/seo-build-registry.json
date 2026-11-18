@@ -1,5 +1,440 @@
 [
   {
+    "id": "B2B-218",
+    "url": "/managed-it-services-msp-annual-amc-sla-unreturned-firewall-recovery",
+    "archetype": "G1",
+    "h2s": [
+      "Why Holding Client DNS or M365 Passwords Backfires Under IT Act s.43",
+      "5-Stage MSP Credential Handover & CPE Recovery Decision Tree",
+      "MSP, MSSP & Firewall-as-a-Service Statutory Recovery Matrix",
+      "4 MSP, SOC & Firewall-as-a-Service Default Scenarios",
+      "Worked Ledger: ₹14.80L MSP AMC, Sunk OEM Licenses & FaaS CPE",
+      "RMM, PSA & BSA 2023 s.63 Evidentiary Proof Checklist",
+      "Strict IT Act Guardrails: What MSPs Must Never Do",
+      "Initiate IT-Act-Safe MSP AMC & Firewall Recovery",
+      "IND-18 Telecom, Data Center & B2B Recovery Network",
+      "Frequently Asked Questions: MSP AMC & Firewall Recovery",
+      "Statutory Bare Acts & Official Portals"
+    ],
+    "components": [
+      "Breadcrumbs",
+      "MspAmcTableOfContents",
+      "MspAmcScenarioTabs",
+      "MspAmcCTA",
+      "RelatedRecoveryGuides"
+    ],
+    "faqQuestions": [
+      "Can an MSP withhold Microsoft 365 Global Admin, Cloudflare DNS, or domain passwords until unpaid AMC invoices are cleared?",
+      "How can an MSP legally repossess leased Fortinet, SonicWall, or Sophos firewalls when a defaulting client blocks site entry?",
+      "What if the defaulting client claims '99.9% SLA uptime failure' or 'SOC missed alerts' only after receiving our AMC demand notice?",
+      "Can an MSP deactivate FortiCloud, Sophos Central, or EDR agents remotely when a client stops paying?",
+      "Can Udyam-registered MSPs and IT AMC firms use Section 43B(h) of the Income Tax Act against corporate defaulters?",
+      "Are annual 24x7 SOC and IT AMC lock-in retainers enforceable if a client exits in Month 5?",
+      "How can an MSP or MSSP recover overdue retainers across 25 to 500+ SMB and multi-branch clients efficiently?"
+    ],
+    "wordCount": 2120,
+    "artefacts": [
+      "5-Stage MSP Credential Handover & CPE Recovery Decision Tree SVG + Mobile Cards",
+      "6-Row IT Act s.43/66, BNS s.316, Contract Act Bailment, Specific Relief s.7-8, Order XXXVII & MSMED Matrix",
+      "Interactive 4-Scenario Explorer (M365/DNS Handover, Unreturned Fortinet/CPE, SOC SLA Excuse, Multi-Site NBFC AMC)",
+      "Worked ₹14.80L MSP AMC, Sunk OEM Licenses & FaaS CPE Ledger",
+      "6-Point RMM, PSA & BSA 2023 s.63 Evidentiary Proof Checklist",
+      "3-Card Strict IT Act s.43/66 Guardrails Strip"
+    ],
+    "sources": [
+      "Information Technology Act, 2000 (s.43, s.66)",
+      "Bharatiya Nyaya Sanhita, 2023 (s.316)",
+      "Indian Contract Act, 1872 (s.70, s.73, s.74, s.148-160)",
+      "Specific Relief Act, 1963 (s.7, s.8)",
+      "Code of Civil Procedure, 1908 (Order XXXVII)",
+      "MSMED Act, 2006 (s.15-18) & Income Tax Act, 1961 (s.43B(h))",
+      "Bharatiya Sakshya Adhiniyam, 2023 (s.63)"
+    ],
+    "builtAt": "2026-11-18T13:25:00+05:30"
+  },
+  {
+    "id": "B2B-215",
+    "url": "/tdsat-vs-commercial-court-jurisdiction-telecom-isp-broadcasting-recovery",
+    "archetype": "L1",
+    "h2s": [
+      "Why Section 14 vs Section 15 TRAI Act Splits Telecom Recovery",
+      "Forum Routing Decision Tree: TDSAT vs Commercial Court",
+      "Side-by-Side Matrix: TDSAT, Commercial Court & Arbitration",
+      "Statutory Timelines: Pre-TDSAT Notices & Limitation Stops",
+      "Binding Supreme Court & TDSAT Jurisdiction Precedents",
+      "4 Telecom, ISP & Broadcasting Forum Scenarios (GC Playbooks)",
+      "Worked Forum & Cost Comparison: ₹42L MSO vs Enterprise ILL",
+      "Pre-Empting Jurisdiction & Section 15 Bar Objections",
+      "TRAI License, CAF & BSA s.63 Admissibility Checklist",
+      "Frequently Asked Questions: TDSAT vs Commercial Court",
+      "Statutory Bare Acts & Official Telecom Portals"
+    ],
+    "components": [
+      "Breadcrumbs",
+      "TdsatJurisdictionTableOfContents",
+      "TdsatJurisdictionScenarioTabs",
+      "TdsatJurisdictionCTA",
+      "RelatedRecoveryGuides"
+    ],
+    "faqQuestions": [
+      "Can an enterprise ISP file a recovery petition in TDSAT against a corporate customer that defaults on ILL or MPLS bills?",
+      "Why does Section 15 of the TRAI Act bar District and Commercial Courts from hearing MSO vs LCO recovery suits?",
+      "How does a cable MSO or broadcaster enforce a money decree passed by TDSAT?",
+      "What happens if an ISP or MSO loses 1–2 years in the wrong forum—is the limitation period automatically saved?",
+      "Where do unlicensed passive infrastructure, OFC trenching, or tower civil contractors file for unpaid bills?",
+      "Does TDSAT or Commercial Court require Section 63 BSA 2023 certificates for billing logs and CDRs?",
+      "How can a telecom operator, ISP, or MSO handle 50 to 5,000+ overdue accounts split across TDSAT and Commercial Courts?"
+    ],
+    "wordCount": 2280,
+    "artefacts": [
+      "Forum Routing Decision Tree SVG + Mobile Cards (Licensed Service Provider vs Enterprise Subscriber)",
+      "7-Row Side-by-Side Forum Matrix (TDSAT vs Commercial Court Order XXXVII vs Arbitration)",
+      "4 Verified Supreme Court Precedent Cards (Tata Teleservices, Patil Automation, Yamini Manohar, Kailash Nath)",
+      "Interactive 4-Scenario GC Playbook Tabs (MSO-LCO, ISP-Enterprise, Broadcaster Carriage, Telco IUC/IP-1)",
+      "Worked ₹42L MSO vs Enterprise ILL Forum & Cost Comparison",
+      "4-Row Jurisdiction & Section 15 Bar Pre-Emption Table"
+    ],
+    "sources": [
+      "TRAI Act, 1997 (s.2(1)(j), s.14(a)(ii), s.15, s.19)",
+      "Commercial Courts Act, 2015 (s.2(1)(c), s.12A)",
+      "Code of Civil Procedure, 1908 (Order VII Rule 11, Order XXI, Order XXXVII)",
+      "Bharatiya Sakshya Adhiniyam, 2023 (s.63)",
+      "Limitation Act, 1963 (Art. 14, Art. 55, s.14, s.18)"
+    ],
+    "builtAt": "2026-11-18T12:56:00+05:30"
+  },
+  {
+    "id": "B2B-206",
+    "url": "/corporate-training-l-and-d-executive-education-vendor-invoice-recovery",
+    "archetype": "G1",
+    "h2s": [
+      "Why Enterprise HR Freezes L&D & Assessment Invoices Over Budget Cuts",
+      "MSMED s.15–18, Section 43B(h) & Estoppel Statutory Matrix",
+      "5-Stage Corporate L&D & LMS Invoice Escalation Decision Tree",
+      "4 Enterprise Training, LMS & Proctoring Default Scenarios",
+      "Worked Ledger: ₹24 Lakh Leadership Program & s.43B(h) Impact",
+      "Attendance, Feedback & LMS Telemetry: BSA s.63 Proof Checklist",
+      "Neutralizing 180-Day Procurement Portal & PSU s.80 Delays",
+      "Frequently Asked Questions: Corporate L&D & LMS Recovery",
+      "Statutory Bare Acts & Official Government Portals"
+    ],
+    "components": [
+      "Breadcrumbs",
+      "CorporateLndTableOfContents",
+      "CorporateLndScenarioTabs",
+      "CorporateLndNoticeCTA",
+      "RelatedRecoveryGuides"
+    ],
+    "faqQuestions": [
+      "Can a corporate client legally freeze our L&D or leadership workshop invoice after delivery citing Q3 budget cuts?",
+      "How does Income Tax Section 43B(h) force enterprises to clear overdue L&D and assessment vendor bills?",
+      "Our enterprise client provisioned 5,000 LMS seats and now wants a 60% pro-rata refund/discount after layoffs. Must we agree?",
+      "How do campus-hiring assessment and AI-proctoring platforms overcome 120–180 day procurement portal lags?",
+      "What if the defaulting buyer is a PSU or State Skill Development Mission (SSDM) holding back our final training tranche?",
+      "Can an L&D firm or EdTech SaaS recover bounced post-dated cheques or NACH mandates from mid-market corporate buyers?",
+      "How can an enterprise upskilling or proctoring vendor chase 30 to 300+ overdue corporate POs without hiring an army of lawyers?"
+    ],
+    "wordCount": 2150,
+    "artefacts": [
+      "5-Stage Corporate L&D & LMS Invoice Escalation Decision Tree SVG + Mobile Cards",
+      "5-Row MSMED s.15-18, s.43B(h), BSA s.121/63, Order XXXVII & NI s.138 Statutory Matrix",
+      "Interactive 4-Scenario Explorer (Q3 Budget Freeze, LMS Seats, Campus Proctoring, PSU/SSDM)",
+      "Worked ₹24 Lakh Leadership Program & s.43B(h) Tax Pain Ledger",
+      "6-Point Attendance, Feedback & LMS Telemetry BSA s.63 Checklist"
+    ],
+    "sources": [
+      "MSMED Act, 2006 (s.2(b), s.15-18)",
+      "Income Tax Act, 1961 (s.43B(h))",
+      "Bharatiya Sakshya Adhiniyam, 2023 (s.63, s.121)",
+      "Code of Civil Procedure, 1908 (Order XXXVII, s.80)",
+      "Commercial Courts Act, 2015 (s.2(1)(c), s.12A)"
+    ],
+    "builtAt": "2026-11-18T11:25:00+05:30"
+  },
+  {
+    "id": "B2B-201",
+    "url": "/how-private-schools-recover-unpaid-fees-without-withholding-tc",
+    "archetype": "G1",
+    "h2s": [
+      "Why Affluent Parents Exploit TC Rules—And What High Courts Actually Allow",
+      "High Court TC Mandates vs. Parent Civil Liability Matrix",
+      "5-Stage RTE-Compliant Parent Fee Recovery Decision Tree",
+      "4 Chronic Parent Fee Default Scenarios & Legal Rebuttals",
+      "Worked Recovery Math: ₹3,96,000 Two-Year Tuition & Transport Arrears",
+      "School Accounts Office & BSA 2023 Section 63 Evidence Checklist",
+      "Strict NCPCR & CBSE Guardrails: What Schools Must Never Do",
+      "IND-17 Education, University & EdTech B2B Recovery Network",
+      "Frequently Asked Questions: School Fee Recovery Without Holding TC",
+      "Primary Statutes & Regulatory Authorities"
+    ],
+    "components": [
+      "Breadcrumbs",
+      "SchoolFeeTableOfContents",
+      "SchoolFeeScenarioTabs",
+      "SchoolFeeNoticeCTA",
+      "RelatedRecoveryGuides"
+    ],
+    "faqQuestions": [
+      "Can a private unaided school legally withhold a Transfer Certificate (TC) or marksheet for unpaid tuition fees?",
+      "If we release the TC immediately, does not the school lose all leverage over the defaulting parent?",
+      "Will sending a legal notice for unpaid school fees trigger an NCPCR or Child Rights complaint against the Principal?",
+      "Can a school file an Order XXXVII CPC Summary Suit based on a parent-signed Admission Form and Fee Undertaking?",
+      "What if the student passed out of Class 10 or Class 12 Board exams and the parents vanished without paying 2 years of fees?",
+      "Can the school prosecute a parent under Section 138 NI Act if their post-dated fee cheque or NACH mandate bounced?",
+      "How can a CBSE/ICSE school trust recover arrears from 50 to 500 defaulting parents without overwhelming its accounts office?"
+    ],
+    "wordCount": 2250,
+    "artefacts": [
+      "5-Stage RTE-Compliant Parent Fee Recovery Decision Tree SVG + Mobile Cards",
+      "5-Row High Court TC Mandates vs. Parent Civil Liability Matrix",
+      "Interactive 4-Scenario Parent Fee Default & Legal Rebuttal Explorer",
+      "Worked ₹3,96,000 Two-Year Tuition & Transport Arrears Ledger",
+      "6-Point School Accounts Office & BSA 2023 s.63 Evidence Checklist"
+    ],
+    "sources": [
+      "RTE Act 2009 s.5(3)",
+      "Code of Civil Procedure 1908 Order XXXVII",
+      "Indian Contract Act 1872 s.10, s.63, s.73",
+      "NI Act 1881 s.138 & PSS Act 2007 s.25",
+      "Bharatiya Sakshya Adhiniyam 2023 s.63",
+      "NCPCR Child Protection Guidelines"
+    ],
+    "builtAt": "2026-11-18T10:42:00+05:30"
+  },
+  {
+    "id": "B2B-195",
+    "url": "/mice-corporate-offsite-conference-attrition-last-minute-cancellation-recovery",
+    "archetype": "G1",
+    "h2s": [
+      "Why Last-Minute MICE Cancellations Trigger Liquidated Damages",
+      "Contract Act Section 74 & Perishable Inventory Legal Matrix",
+      "5-Step Hotel & MICE Attrition Recovery Decision Tree",
+      "4 Corporate Offsite, Dealer-Meet & DMC Default Scenarios",
+      "Worked Math: ₹42.50 Lakh 150-Room Offsite Cancellation Claim",
+      "Proving Unsold Room Nights: PMS & BSA Section 63 Evidence SOP",
+      "Mitigation Duty, Resale Offset & GST Credit Note Rules",
+      "Enforce Your MICE Attrition or Cancellation Invoice Today",
+      "IND-16 Hospitality, MICE & Corporate Travel Recovery Guides",
+      "Frequently Asked Questions: MICE Attrition & Cancellation",
+      "Statutory Bare Acts, Supreme Court Precedents & References"
+    ],
+    "components": [
+      "Breadcrumbs",
+      "MiceTableOfContents",
+      "MiceScenarioTabs",
+      "MiceNoticeCTA",
+      "RelatedRecoveryGuides"
+    ],
+    "faqQuestions": [
+      "Can a hotel enforce a 75% to 100% last-minute MICE cancellation fee under Indian law, or is it struck down as a penalty?",
+      "What if the corporate client says zero guests checked in, so you saved electricity and breakfast costs—you suffered no loss?",
+      "How do we enforce an 80% room-block attrition clause when 65 out of 150 delegates actually checked in?",
+      "If the hotel resold 30 of the 150 cancelled rooms to walk-in or OTA guests at a lower rate, does that destroy our Section 74 claim?",
+      "Can a MICE tour operator or incentive travel agency recover non-refundable airline and foreign resort deposits if the corporate client cancels?",
+      "Is GST payable on MICE cancellation and room-block attrition invoices, and how does CBIC Circular 178/10/2022-GST apply?",
+      "What if the corporate client issued a post-dated advance or balance cheque for the dealer-meet and then instructed Stop Payment?"
+    ],
+    "wordCount": 2280,
+    "artefacts": [
+      "Figure 1: 5-Step Hotel & MICE Attrition Recovery Decision Tree SVG + Mobile Cards",
+      "6-Row Contract Act s.74, Kailash Nath, Order XXXVII CPC, MSMED s.15-18 & NI Act s.138 Legal Matrix",
+      "Interactive 4-Scenario MICE Offsite, Attrition, DMC Pass-Through & Cheque-Stop Explorer",
+      "Worked ₹42.50 Lakh (₹44.99L incl. GST) 150-Room Offsite Cancellation & Resale Mitigation Ledger",
+      "6-Point PMS Night-Audit, Turnaway Log & BSA 2023 s.63 Electronic Evidence Checklist"
+    ],
+    "sources": [
+      "Indian Contract Act, 1872 (Sections 73, 74, 187 & 226)",
+      "Kailash Nath Associates v. DDA (2015) 4 SCC 136",
+      "ONGC Ltd. v. Saw Pipes Ltd. (2003) 5 SCC 705",
+      "Code of Civil Procedure, 1908 (Order XXXVII)",
+      "Commercial Courts Act, 2015 (Section 2(1)(c) & Section 12A)",
+      "Bharatiya Sakshya Adhiniyam, 2023 (Section 63)",
+      "MSMED Act, 2006 (Sections 15-18) & Income Tax Act Section 43B(h)"
+    ],
+    "builtAt": "2026-11-18T10:06:00+05:30"
+  },
+  {
+    "id": "B2B-196",
+    "url": "/industrial-canteen-corporate-cafeteria-institutional-caterer-bill-recovery",
+    "archetype": "G1",
+    "h2s": [
+      "Why Factories & Hostels Freeze 4 Months of Mess Caterer Bills",
+      "MSMED s.15–18, s.43B(h) & Quality-Penalty Rebuttal Matrix",
+      "5-Stage Institutional Canteen & Mess Bill Escalation Flow",
+      "4 High-Frequency Canteen & Mess Payment Default Scenarios",
+      "Worked Mess Ledger: ₹22.50 Lakh 120-Day Canteen Default Math",
+      "Biometric Meal Counts, FSSAI & BSA s.63 Evidence Checklist",
+      "Section 138 Cheques, GSTR-2B Estoppel & Continuity Traps",
+      "Hospitality, Banquet & Institutional Catering Recovery Network",
+      "Frequently Asked Questions: Industrial Canteen Bill Recovery",
+      "Statutory Authorities, Bare Acts & Catering Legal References"
+    ],
+    "components": [
+      "Breadcrumbs",
+      "CanteenTableOfContents",
+      "CanteenScenarioTabs",
+      "CanteenNoticeCTA",
+      "RelatedRecoveryGuides"
+    ],
+    "faqQuestions": [
+      "Can an industrial canteen or hostel mess contractor file an MSME Samadhaan claim against a factory, hospital, or university trust?",
+      "Is a factory or college allowed to deduct a 20% food quality or hygiene penalty 4 months after the meals were served?",
+      "How does Income Tax Section 43B(h) force corporate factories and hospitals to clear canteen bills quickly?",
+      "What if the client withholds 100% of 4 months bills citing an 8% biometric meal-coupon count mismatch?",
+      "Can we stop daily meal service if the factory owes 4 months of bills, or will they forfeit our security deposit?",
+      "How does the factorys GSTR-2B / GSTR-3B Input Tax Credit (ITC) claim help our recovery case?",
+      "What if the hostel or factory issued post-dated cheques for past mess bills that subsequently bounced?"
+    ],
+    "wordCount": 2350,
+    "artefacts": [
+      "5-Stage Institutional Canteen & Mess Bill Escalation SVG Flowchart + Mobile Cards",
+      "6-Row MSMED s.15-18, Section 43B(h), Contract Act s.74, Order 37 CPC, CGST Rule 37 & NI s.138 Matrix",
+      "Interactive 4-Scenario Canteen & Mess Default Explorer (CanteenScenarioTabs)",
+      "Worked Mess Ledger: ₹22.50 Lakh 120-Day Default + 3x RBI Compound Interest & s.43B(h) Tax Hit",
+      "6-Point Biometric Turnstile, FSSAI & BSA 2023 s.63 Evidence Checklist"
+    ],
+    "sources": [
+      "MSMED Act, 2006 (Sections 15-19)",
+      "Income Tax Act, 1961 (Section 43B(h))",
+      "Indian Contract Act, 1872 (Sections 51, 54, 70, 73 & 74)",
+      "Code of Civil Procedure, 1908 (Order XXXVII & Order XII Rule 6)",
+      "Bharatiya Sakshya Adhiniyam, 2023 (Section 63)",
+      "CGST Act, 2017 (Section 16(2)(b) & Rule 37)",
+      "Negotiable Instruments Act, 1881 (Section 138 & 143A)"
+    ],
+    "builtAt": "2026-11-18T10:06:00+05:30"
+  },
+  {
+    "id": "B2B-191",
+    "url": "/hotel-btc-bill-to-company-corporate-credit-account-default-recovery",
+    "archetype": "G1",
+    "h2s": [
+      "Why 90+ Day Hotel BTC City Ledgers Stall After Guest Checkout",
+      "Order XXXVII CPC, GSTR-2B Estoppel & BSA 2023 Statutory Matrix",
+      "5-Stage Hotel Credit Controller & City-Ledger Escalation Flow",
+      "4 High-Frequency Corporate BTC Default & Folio Dispute Scenarios",
+      "Worked City-Ledger Recovery Math: ₹18.40 Lakh 80-Room-Night Default",
+      "PMS Folios, GRC Cards & BSA Section 63 Electronic Audit Checklist",
+      "FHRAI Credit Alerts, Section 43B(h) & Director Liability Levers",
+      "Hospitality, Travel & Banquet Creditor Network (IND-16 Guides)",
+      "Frequently Asked Questions: Hotel BTC & City-Ledger Debt Recovery",
+      "Statutory Authorities, Bare Acts & Hospitality Legal References"
+    ],
+    "components": [
+      "Breadcrumbs",
+      "HotelBtcTableOfContents",
+      "HotelBtcScenarioTabs",
+      "HotelBtcNoticeCTA",
+      "RelatedRecoveryGuides"
+    ],
+    "faqQuestions": [
+      "Can a hotel legally recover a 'Bill-to-Company' (BTC) invoice if the corporate guest checked out early without signing the final folio?",
+      "What if the corporate client refuses to pay our City Ledger claiming 'the employee who stayed at your hotel has left the company'?",
+      "How does the corporate buyer's GSTR-2B / GSTR-3B Input Tax Credit (ITC) claim prove our hotel bill in court?",
+      "What can a hotel do when a company withholds a ₹12 Lakh room-stay ledger over ₹25,000 of disputed laundry, minibar, or F&B charges?",
+      "Are business hotels, resorts, and corporate serviced apartments eligible for MSME Samadhaan (3x RBI interest) and Section 43B(h)?",
+      "How do we handle EPC contractors or IT firms whose long-stay project crews are still occupying rooms while 90+ day bills remain unpaid?",
+      "Can our hotel also use Section 138 of the NI Act if the corporate client or travel desk issued a post-stay cheque that bounced?"
+    ],
+    "wordCount": 2480,
+    "artefacts": [
+      "Figure 1: Hotel City-Ledger (BTC) Pre-Litigation & Statutory Escalation Decision Tree SVG + Mobile Cards",
+      "6-Row Order XXXVII CPC, CGST s.16(2)(b) GSTR-2B Estoppel, Commercial Court s.12A, MSMED s.16 & IBC s.8 Matrix",
+      "Interactive 4-Scenario Hotel BTC Failure Mode Explorer",
+      "Worked City-Ledger Recovery Ledger: ₹18.40 Lakh 80-Room-Night Default + 180-Day GST Rule 37 ITC Reversal & s.43B(h) Tax Hit",
+      "6-Point PMS Folio (Opera/IDS/eZee), GRC & BSA 2023 Section 63 Electronic Audit Checklist"
+    ],
+    "sources": [
+      "Code of Civil Procedure, 1908 (Order XXXVII & Order XXXVIII Rule 5)",
+      "Central Goods and Services Tax Act, 2017 (Section 16(2)(b) & Rule 37)",
+      "Bharatiya Sakshya Adhiniyam, 2023 (Section 63)",
+      "Commercial Courts Act, 2015 (Section 2(1)(c) & Section 12A)",
+      "MSMED Act, 2006 (Sections 15–18) & Income Tax Act Section 43B(h)",
+      "Indian Contract Act, 1872 (Sections 73, 74, 126, 128, 187 & 226)"
+    ],
+    "builtAt": "2026-11-18T09:55:00+05:30"
+  },
+  {
+    "id": "B2B-194",
+    "url": "/ota-b2b-bedbank-withheld-hotel-payout-arbitrary-chargeback-recovery",
+    "archetype": "G1",
+    "h2s": [
+      "Why OTAs & B2B Bed-Banks Freeze Hotel Extranet Settlements",
+      "OTA & Bed-Bank Payout Recovery Decision Tree",
+      "Statutory & Regulatory Matrix for Hotel Extranet Disputes",
+      "4 Commercial Failure Modes & Hotelier Action Playbooks",
+      "Worked Recovery Math: ₹14.50 Lakh Frozen OTA & Bed-Bank Ledger",
+      "Extranet Reconciliation & BSA 2023 s.63 Evidence Checklist",
+      "Hospitality, Banquet & Corporate Travel Recovery Network",
+      "Frequently Asked Questions: OTA & Bed-Bank Payout Recovery",
+      "Statutory Authorities, Bare Acts & Hospitality Regulators"
+    ],
+    "components": [
+      "Breadcrumbs",
+      "OtaHotelTableOfContents",
+      "OtaScenarioTabs",
+      "OtaRecoveryCTA",
+      "RelatedRecoveryGuides"
+    ],
+    "faqQuestions": [
+      "Can an Udyam-registered independent hotel or resort file an MSME Samadhaan claim against an OTA or B2B bed-bank?",
+      "What should a hotel do when an OTA Virtual Credit Card (VCC) declines or expires at guest checkout?",
+      "Are OTAs legally allowed to deduct 'Guest Relocation' or 'Walk-Out' penalties unilaterally from hotel payouts?",
+      "Does this recovery process apply to guest refunds against OYO or MakeMyTrip?",
+      "How does Bharatiya Sakshya Adhiniyam, 2023 (BSA Section 63) protect electronic PMS and extranet evidence?",
+      "Can a hotel invoke Section 138 of the Negotiable Instruments Act against a defaulting B2B tour wholesaler or DMC?"
+    ],
+    "wordCount": 2250,
+    "artefacts": [
+      "4-track OTA & Bed-Bank Payout Recovery Decision Tree SVG diagram + mobile cards",
+      "Statutory & Regulatory Matrix Table (MSMED s.15-18, Contract s.70/73/74, Order XXXVII, NI s.138, CCI, BSA s.63)",
+      "Interactive 4-scenario hospitality failure modes tabs component (OtaScenarioTabs)",
+      "Worked ₹14.50 Lakh MSMED s.16 compound interest & s.74 disallowance calculation box",
+      "8-point Extranet Reconciliation & BSA 2023 s.63 evidence checklist"
+    ],
+    "sources": [
+      "MSMED Act, 2006 (Sections 15-18)",
+      "Indian Contract Act, 1872 (Sections 70, 73 & 74)",
+      "Code of Civil Procedure, 1908 (Order XXXVII)",
+      "Negotiable Instruments Act, 1881 (Section 138)",
+      "Bharatiya Sakshya Adhiniyam, 2023 (Section 63)",
+      "Competition Commission of India (CCI)"
+    ],
+    "builtAt": "2026-11-18"
+  },
+  {
+    "id": "B2B-193",
+    "url": "/banquet-hall-destination-wedding-post-event-balance-cheque-bounce",
+    "archetype": "G1",
+    "h2s": [
+      "Why \"Stop Payment\" After Pheras Is Criminal Dishonour",
+      "72-Hour Venue Recovery Decision Tree & s.138 Escalation",
+      "Statutory & Judicial Precedent Matrix for Wedding Venues",
+      "4 Post-Wedding Dispute Modes & How Venue Proof Wins",
+      "Banquet Evidence & BSA 2023 s.63 Digital Proof SOP",
+      "Worked Recovery Ledger: ₹12 Lakh Stopped Wedding Cheque",
+      "IND-16 Hospitality & Commercial Recovery Network",
+      "Frequently Asked Questions: Wedding Cheque Stop-Payment",
+      "Statutory Authorities & Official Bare Acts"
+    ],
+    "components": [
+      "Breadcrumbs",
+      "BanquetTableOfContents",
+      "BanquetScenarioTabs",
+      "BanquetNoticeCTA",
+      "RelatedRecoveryGuides"
+    ],
+    "faqQuestions": [
+      "Does a 'Stop Payment' instruction by the wedding host escape Section 138 NI Act liability?",
+      "The host alleges 'cold food' or 'bad AC' the morning after the wedding to justify stopping the cheque. Will a court accept this?",
+      "What is the strict statutory deadline to send the Section 138 legal notice after bank dishonour?",
+      "Can a destination wedding resort claim 20% interim compensation immediately while the case is pending?",
+      "What if the host only gave a guarantee cheque before the wedding and our accounts team filled the extra-pax total at checkout?",
+      "Can we recover Minimum Pax Guarantee shortfalls and resort buyout damages alongside the bounced cheque?"
+    ],
+    "date": "2026-11-18"
+  },
+  {
     "id": "B2B-185",
     "url": "/business-email-compromise-bec-wire-fraud-swift-invoice-hijack-exporter",
     "archetype": "G1",
@@ -11505,11 +11940,13 @@
       "What is the cost difference between a LegalRecovery.in international demand notice and foreign commercial litigation?",
       "Can FIEO, EEPC, APEDA, and other Export Promotion Councils cite and download this dataset?"
     ],
-    "wordCount": 3450,
+    "wordCount": 3910,
     "artefacts": [
+      "Press-Citable EPC Summary Cards (270-Day FEMA Realization Cliff, 5%/10% Para C.24 Cap, Customs Rule 18(2) Shield)",
       "Payment Term Risk Matrix (Open Account vs CAD vs DA vs LC vs BEC)",
       "Trade Corridor Risk Cards (USA/Canada, UAE/GCC, UK/EU, Africa/LatAm, Singapore/ASEAN)",
       "4-Stage Export Risk-to-EDPMS Closure SVG & Mobile Stack",
+      "Worked Exporter Treasury Ledger (USD 38,000 / ₹32.30 Lakh Rotterdam Engineering Export & Para C.24 Write-Off)",
       "Interactive Payment Term Playbook Tabs",
       "EPC Risk & EDPMS Pain-Point Matrix",
       "Downloadable JSON Dataset & APA/BibTeX Citation Widget"
@@ -11523,5 +11960,798 @@
       "https://www.fieo.org/"
     ],
     "builtAt": "2026-11-17"
+  },
+  {
+    "id": "B2B-192",
+    "url": "/iata-corporate-travel-agent-tmc-flight-ticket-credit-default-recovery",
+    "archetype": "G1",
+    "h2s": [
+      "Why a Single Corporate Ticket Default Threatens Your IATA License",
+      "Statutory Recovery Matrix for Corporate Travel Credit Defaults",
+      "5-Stage TMC Escalation Rail: Day 0 Freeze to Bank Attachment",
+      "4 Corporate Travel Credit Failure Modes & Tactical Responses",
+      "Worked ₹35 Lakh Flown-Ticket Default & MSMED Interest Ledger",
+      "GDS PNR Flown Manifest & BSA 2023 s.63 Evidence Checklist",
+      "Enforcing Personal Director Guarantees & Security PDCs",
+      "Frequently Asked Questions: IATA TMC Credit Default Recovery",
+      "Primary Statutory Authorities & Official Filing Portals"
+    ],
+    "components": [
+      "IataTmcTableOfContents",
+      "IataTmcScenarioTabs",
+      "IataTmcNoticeCTA"
+    ],
+    "wordCount": 2200,
+    "builtAt": "2026-11-18"
+  },
+  {
+    "id": "B2B-197",
+    "url": "/b2b-dmc-destination-management-company-tour-operator-default-recovery",
+    "archetype": "G1",
+    "h2s": [
+      "The \"Friday 6 PM Edited UTR Screenshot\" Scam Facing DMCs",
+      "Statutory Recovery Matrix for DMC Land Package Defaults",
+      "5-Stage Arrival-Morning Escalation Protocol for DMCs",
+      "4 DMC Default Failure Modes & Tactical Responses",
+      "Worked ₹18.50 Lakh Land Package Default & Interest Ledger",
+      "Fake UTR Forensics & BSA 2023 Section 63 Checklist",
+      "TAFI, TAAI & IATO Trade Complaints vs. Statutory Legal Action",
+      "Frequently Asked Questions: DMC & Tour Operator Recovery",
+      "Primary Statutory Authorities & Official Portals"
+    ],
+    "components": [
+      "DmcTableOfContents",
+      "DmcScenarioTabs",
+      "DmcNoticeCTA"
+    ],
+    "faqQuestions": [
+      "Can a DMC file a criminal FIR if a retail travel agent sends an edited NEFT, RTGS, or SWIFT screenshot?",
+      "What if the retail agent already collected 100% of the tour money from the passengers?",
+      "Should my DMC file a TAFI, TAAI, or IATO trade complaint first, or send a statutory legal notice?",
+      "How does an Indian inbound DMC recover unpaid land invoices from a Foreign Tour Operator (FTO) in the UK, Europe, or UAE?",
+      "What if a post-dated security cheque given by the travel agent bounces after the tour returns?",
+      "Can an MSME-registered DMC claim compound interest on overdue sub-agent or corporate group invoices?",
+      "What digital evidence do we need under BSA 2023 Section 63 to prove a fake UTR or WhatsApp booking?"
+    ],
+    "wordCount": 2250,
+    "artefacts": [
+      "5-Stage Arrival-Morning Escalation SVG Flowchart & Mobile Stack",
+      "bg-slate-900 Statutory Recovery Matrix Table (BNS s.336/340, s.316/318, NI s.138, Order 37 CPC, MSMED)",
+      "Interactive 4-Mode DMC Default Scenario Tabs (DmcScenarioTabs)",
+      "Worked ₹18.50 Lakh Kerala Land Package Default & MSMED s.16 Interest Ledger",
+      "Fake UTR Forensics & BSA 2023 s.63 Evidence Checklist"
+    ],
+    "sources": [
+      "https://www.indiacode.nic.in/handle/123456789/20062",
+      "https://www.indiacode.nic.in/handle/123456789/21735",
+      "https://www.indiacode.nic.in/handle/123456789/2191",
+      "https://www.indiacode.nic.in/handle/123456789/2189",
+      "https://samadhaan.msme.gov.in/"
+    ],
+    "builtAt": "2026-11-18"
+  },
+  {
+    "id": "B2B-198",
+    "url": "/charter-flight-luxury-coach-yacht-corporate-hire-payment-recovery",
+    "archetype": "G1",
+    "h2s": [
+      "Why NSOP Air-Charter & Luxury Coach Invoices Stall Post-Trip",
+      "DGCA Tech-Log, Order 37 CPC & Fleet Recovery Statutory Matrix",
+      "5-Step Aviation Charter & Coach Fleet Escalation Pipeline",
+      "4 High-Ticket Charter & Fleet Default Modes (Interactive)",
+      "Worked Recovery Math: ₹42.50 Lakh Helicopter & Ferry-Leg Default",
+      "DGCA Flight Log, GPS & BSA 2023 s.63 Evidence Checklist",
+      "Election Campaign, Wedding & Corporate Roadshow Enforcement",
+      "Dual-Track Aviation & Luxury Fleet Legal Recovery Desk",
+      "Hospitality, Travel & Charter Creditor Network (IND-16)",
+      "Frequently Asked Questions: Air-Charter & Coach Debt Recovery",
+      "Statutory Authorities, DGCA & Aviation Legal References"
+    ],
+    "components": [
+      "CharterFleetTableOfContents",
+      "CharterFleetScenarioTabs",
+      "CharterFleetCTA"
+    ],
+    "faqQuestions": [
+      "Can a corporate hirer refuse to pay for ATC holding hours, weather diversions, or empty-leg ferry flights?",
+      "How do helicopter charter operators recover unpaid balances from political parties or election campaign agencies?",
+      "What evidence proves a 10-bus luxury Volvo/Mercedes coach fleet completed a wedding or Chardham pilgrimage?",
+      "Are aviation fuel, AAI landing/parking, and ground handling disbursements recoverable in a Summary Suit?",
+      "Can Udyam-registered luxury coach fleets or yacht charterers claim 3x RBI interest under the MSMED Act?",
+      "What if a corporate MICE agency cancels a chartered yacht or private jet 48 hours before departure?"
+    ],
+    "wordCount": 2250,
+    "artefacts": [
+      "SVG Decision Tree",
+      "Statutory Matrix Table",
+      "Interactive Scenario Tabs",
+      "Worked ₹42.5L Ledger",
+      "BSA s.63 Checklist",
+      "6 FAQs"
+    ],
+    "sources": [
+      "dgca.gov.in",
+      "indiacode.nic.in"
+    ],
+    "builtAt": "2026-11-18"
+  },
+  {
+    "id": "B2B-204",
+    "url": "/school-textbook-publisher-uniform-stationery-distributor-recovery",
+    "archetype": "G1",
+    "h2s": [
+      "Why Do March–April Textbook & Uniform Supplies Stall Until November?",
+      "Statutory Matrix: Order 37 CPC, NI s.138 & MSMED Act Remedies",
+      "5-Stage Pre-Session December–January Escalation Flowchart",
+      "4 K-12 Textbook, Uniform & Stationery Default Scenarios",
+      "Worked Recovery Math: ₹25 Lakh March Textbook Supply Default",
+      "Publisher Evidence & BSA 2023 Section 63 Checklist",
+      "Defeating Unsold Book Return Dumps & Govt School Delays",
+      "Related Education B2B & Commercial Recovery Resources",
+      "Frequently Asked Questions: Textbook Publisher & Distributor Recovery",
+      "Statutory Authorities & Official Bare Act References"
+    ],
+    "components": [
+      "PublisherTableOfContents",
+      "PublisherScenarioTabs",
+      "PublisherNoticeCTA"
+    ],
+    "faqQuestions": [
+      "How can a K-12 textbook publisher stop a school or campus bookshop from switching publishers in January without clearing last March's dues?",
+      "Can a school or bookshop dump 40% unsold textbooks back on us in November and demand a credit note?",
+      "Are educational book publishers, notebook manufacturers, and school uniform suppliers eligible for MSME Samadhaan?",
+      "What if the school book vendor gave us Post-Dated Cheques (PDCs) in October that bounced in December?",
+      "How does Order XXXVII CPC Summary Suit work for unpaid textbook, stationery, or lab-equipment supplies?",
+      "What if the defaulting buyer is a Government School, Kendriya Vidyalaya, or State Textbook Board?",
+      "What if the school trust claims the campus bookshop is an 'independent third-party vendor' and denies liability?"
+    ],
+    "wordCount": 2250,
+    "artefacts": [
+      "SVG Decision Tree",
+      "Statutory Matrix Table",
+      "Interactive Scenario Tabs",
+      "Worked ₹25L Ledger",
+      "BSA s.63 Checklist",
+      "7 FAQs"
+    ],
+    "sources": [
+      "indiacode.nic.in",
+      "samadhaan.msme.gov.in"
+    ],
+    "builtAt": "2026-11-18"
+  },
+  {
+    "id": "B2B-199",
+    "url": "/templates/hotel-btc-and-iata-travel-agent-corporate-credit-legal-notice",
+    "archetype": "P1",
+    "h2s": [
+      "Interactive Hotel BTC & IATA PNR Notice Workspace",
+      "Why Generic Notice Drafts Fail for Hotel BTC & IATA Credit",
+      "Mandatory Folio, BTC Voucher & GDS PNR Schedule Fields",
+      "GSTR-2B Acceptance Estoppel, Order XXXVII CPC & MSMED s.16",
+      "Multi-Channel Dispatch & BSA 2023 s.63 Evidence Checklist",
+      "Dispatch Your Hospitality or IATA Credit Legal Notice Today",
+      "Related Hospitality, Banquet & TMC Recovery Guides",
+      "Frequently Asked Questions: Hotel BTC & IATA Credit Notices"
+    ],
+    "components": [
+      "HospitalityNoticeWorkspace.tsx",
+      "HospitalityNoticeTOC.tsx",
+      "HospitalityNoticeCTA.tsx"
+    ],
+    "faqQuestions": [
+      "Why must a hotel BTC legal notice attach Guest Folio numbers and GRC cards?",
+      "Why should an IATA travel agent list the 13-digit ticket number and GDS PNR in the notice?",
+      "How does GSTR-2B Input Tax Credit (ITC) estoppel defeat corporate payment excuses?",
+      "Can registered hotels, TMCs, and industrial caterers claim 3x RBI interest under MSMED s.16?",
+      "What if a wedding host or corporate client issues a stop-payment on a post-event cheque?",
+      "How do I preserve PMS folios, GDS PNR logs, and WhatsApp service proof under BSA 2023 s.63?"
+    ],
+    "wordCount": 1820,
+    "artefacts": [
+      "4-Preset Interactive Hospitality & IATA Notice Generator",
+      "Folio, BTC Voucher & 13-Digit PNR Schedule Matrix Table",
+      "GSTR-2B / MSMED s.16 / Order 37 Statutory Callout Stack",
+      "Tri-Channel Service & BSA 2023 s.63 Checklist"
+    ],
+    "sources": [
+      "https://www.indiacode.nic.in/handle/123456789/2191",
+      "https://samadhaan.msme.gov.in/",
+      "https://www.indiacode.nic.in/handle/123456789/2290",
+      "https://www.gst.gov.in/",
+      "https://www.indiacode.nic.in/handle/123456789/21735"
+    ],
+    "builtAt": "2026-11-18"
+  },
+  {
+    "id": "B2B-200",
+    "url": "/industries/schools-universities-edtech-b2b-recovery",
+    "archetype": "IH1",
+    "h2s": [
+      "Why Schools, Universities & EdTech Vendors Lose 6–12% Revenue",
+      "8-Track Education & EdTech Escalation Decision Matrix",
+      "RTE-Safe Parent & School-Trust Recovery Architecture",
+      "4 Sector-Specific Recovery Playbooks (Interactive Explorer)",
+      "Bulk Parent CSV & Multi-Campus Trust Representee Desk",
+      "Binding Statutory Mandates: RTE s.5(3), Societies Act & PSS s.25",
+      "Worked Economics: 120-Parent Fee Batch vs ₹38L EdTech Trust Claim",
+      "Complete IND-17 Directory: All 10 Playbooks & Notice Template",
+      "Essential Statutory Guides, Calculators & Bulk Tools",
+      "Frequently Asked Questions: School, University & EdTech Recovery",
+      "Primary Statutory Authorities & Education Portals"
+    ],
+    "components": [
+      "SchoolsEdTechHubTableOfContents",
+      "SchoolsEdTechHubScenarioTabs",
+      "SchoolsEdTechHubCTA"
+    ],
+    "faqQuestions": [
+      "Can a private unaided school legally recover unpaid tuition fees if the High Court forbids withholding Transfer Certificates (TCs)?",
+      "What language must be in a school's legal notice to parents so it never triggers DEO or NCPCR complaints?",
+      "How do private universities and medical/engineering colleges recover unpaid semester or hostel fees without violating UGC rules?",
+      "Why do smart-class, ERP, and textbook publisher legal notices fail when addressed only to the 'School Principal'?",
+      "Can a textbook publisher or school bus contractor use MSME Samadhaan and Section 43B(h) against a school Trust?",
+      "Our skill-training institute completed PMKVY / DDU-GKY batch certification, yet the State Skill Mission is holding our 30% placement tranche—what works?",
+      "Can a school Trust, university, or EdTech vendor test LegalRecovery.in on one defaulter before uploading a 200-row CSV?"
+    ],
+    "wordCount": 2850,
+    "artefacts": [
+      "8-Track Escalation Matrix Table",
+      "Dual-Track RTE-Safe & Trust SVG Diagram",
+      "4-Tab Interactive Scenario Explorer",
+      "Dual-Track B2B CTA + PaymentModal",
+      "Worked 120-Parent & ₹38L Trust Ledger",
+      "10-Spoke IND-17 Hub Directory",
+      "7 FAQs"
+    ],
+    "sources": [
+      "indiacode.nic.in",
+      "samadhaan.msme.gov.in",
+      "ugc.gov.in",
+      "ncpcr.gov.in"
+    ],
+    "builtAt": "2026-11-18"
+  },
+  {
+    "id": "B2B-203",
+    "url": "/edtech-b2b-smart-class-school-erp-robotics-lab-unpaid-dues-from-schools",
+    "archetype": "G1",
+    "h2s": [
+      "Why Suing 'XYZ Public School' Fails Under Indian Law",
+      "Entity Mapping Decision Tree: Who Must Be Sued?",
+      "Statutory Recovery Matrix for B2B School & EdTech Vendors",
+      "4 Commercial Failure Modes & Creditor Playbooks",
+      "Worked ₹15 Lakh Smart-Class & STEM Lab Recovery Ledger",
+      "Repossessing IFP Hardware & Suspending ERP Licenses Safely",
+      "School Delivery & BSA 2023 Section 63 Evidence Checklist",
+      "Batch CSV Recovery SOP for 200+ Defaulting Partner Schools",
+      "Frequently Asked Questions: B2B EdTech & School Recovery",
+      "Primary Statutory Authorities & Official Portals"
+    ],
+    "components": [
+      "EdtechVendorTableOfContents",
+      "EdtechVendorScenarioTabs",
+      "EdtechVendorNoticeCTA"
+    ],
+    "wordCount": 2250,
+    "builtAt": "2026-11-18"
+  },
+  {
+    "id": "B2B-205",
+    "url": "/coaching-institute-franchise-royalty-and-installment-bounce-recovery",
+    "archetype": "G1",
+    "h2s": [
+      "Why Rogue Coaching Franchisees Rebrand Overnight After April Admissions",
+      "Franchise Royalty, IP Piracy & NACH Bounce Statutory Matrix",
+      "5-Stage Emergency Injunction & Royalty Recovery Workflow",
+      "4 Coaching Franchise & Student Installment Failure Modes",
+      "MoE 2024 Coaching Guidelines: Pro-Rata Refunds vs Earned Arrears",
+      "Worked ₹3 Cr Coaching Franchise Default & Royalty Ledger",
+      "BSA 2023 s.63 Evidence & Injunction Readiness Checklist",
+      "Frequently Asked Questions on Coaching Franchise Recovery",
+      "Primary Statutory Sources & Official Citations"
+    ],
+    "components": [
+      "CoachingFranchiseTableOfContents.tsx",
+      "CoachingFranchiseScenarioTabs.tsx",
+      "CoachingFranchiseCTA.tsx"
+    ],
+    "faqQuestions": [
+      "What is the fastest legal remedy when a coaching franchisee paints over our signboard overnight?",
+      "Can a franchisor stop a defaulting coaching centre from poaching faculty and using our test series?",
+      "How do the Ministry of Education (MoE) 2024 Coaching Guidelines affect student installment bounce recovery?",
+      "Can we prosecute a franchisee under Section 138 NI Act if their security royalty PDC bounces?",
+      "Should a national coaching chain sue in a regular Civil Court or a Commercial Court?",
+      "What if a defaulting franchisee is a registered society or runs a government-affiliated skill batch?",
+      "How does LegalRecovery.in handle both a ₹60 Lakh franchisee default and 400 bounced student NACH mandates?"
+    ],
+    "artefacts": [
+      "5-Stage Emergency Injunction SVG Flowchart + Mobile Cards",
+      "Franchise Royalty, IP Piracy & NACH Bounce Statutory Matrix Table",
+      "4-Mode Interactive Coaching Franchise Scenario Tabs",
+      "Worked ₹3 Cr Coaching Franchise Default & Royalty Ledger",
+      "BSA 2023 s.63 Evidence & Injunction Readiness Checklist"
+    ],
+    "sources": [
+      "https://www.indiacode.nic.in/handle/123456789/2156",
+      "https://www.indiacode.nic.in/handle/123456789/1978",
+      "https://www.indiacode.nic.in/handle/123456789/1367",
+      "https://www.education.gov.in/sites/upload_files/mhrd/files/Guideliens_Coaching_Centres_en.pdf",
+      "https://www.indiacode.nic.in/handle/123456789/2189",
+      "https://www.indiacode.nic.in/handle/123456789/21735"
+    ],
+    "builtAt": "2026-11-18T11:25:00+05:30"
+  },
+  {
+    "id": "B2B-207",
+    "url": "/pmkvy-ddu-gky-nsdc-csr-skill-training-partner-grant-tranche-recovery",
+    "archetype": "G1",
+    "h2s": [
+      "Why State Skill Missions Freeze Final 30%–50% Grant Tranches",
+      "5-Stage Skill-Mission & CSR Tranche Escalation Decision Tree",
+      "Statutory Matrix: CPC s.80, MOU Arbitration & Art. 226 Writs",
+      "4 Skill-Training & CSR Default Scenarios (Interactive Playbook)",
+      "Worked Ledger: ₹64 Lakh Stuck DDU-GKY & PMKVY Tranche-3",
+      "Preventing Wrongful Bank Guarantee Invocation & Blacklisting",
+      "Skill India, AEBAS & BSA 2023 s.63 Evidence Checklist",
+      "IND-17 Education, Skill-Mission & Commercial Recovery Links",
+      "Frequently Asked Questions: Skill Grant & CSR Tranche Recovery",
+      "Primary Statutory Authorities & Skill-Mission Portals"
+    ],
+    "components": [
+      "Breadcrumbs",
+      "SkillTrancheTableOfContents",
+      "SkillTrancheScenarioTabs",
+      "SkillTrancheNoticeCTA",
+      "RelatedRecoveryGuides"
+    ],
+    "wordCount": 2200,
+    "builtAt": "2026-11-18"
+  },
+  {
+    "id": "B2B-208",
+    "url": "/study-abroad-master-aggregator-university-sub-agent-commission-dispute",
+    "archetype": "G1",
+    "h2s": [
+      "Why Master Aggregators Withhold Regional Sub-Agent Commissions",
+      "Statutory Recovery Matrix for Withheld Overseas Commissions",
+      "5-Stage Sub-Agent Commission Escalation Decision Tree",
+      "4 Overseas Aggregator Failure Modes & Sub-Agent Playbooks",
+      "Worked Commission Ledger: ₹36 Lakh UK/Australia Intake Default",
+      "Defeating Arbitrary Clawbacks, GST Export Traps & TDS Holds",
+      "Portal Evidence & BSA 2023 Section 63 Admissibility Checklist",
+      "Frequently Asked Questions: Study-Abroad Commission Recovery",
+      "Primary Statutory Sources & Official Citations"
+    ],
+    "components": [
+      "StudyAbroadTableOfContents",
+      "StudyAbroadScenarioTabs",
+      "StudyAbroadCommissionCTA"
+    ],
+    "faqQuestions": [
+      "Can a regional study-abroad sub-agent sue a master aggregator if the student is already enrolled in the second semester abroad?",
+      "Is a master aggregator legally allowed to hold a 25%–40% university clawback reserve indefinitely across all intakes?",
+      "What should we do if the aggregator freezes our B2B portal wallet or deactivates our sub-agent login?",
+      "Does a study-abroad sub-agent qualify for MSMED Act 45-day payment protection and 3x RBI bank rate interest?",
+      "How do GST zero-rated export rules and Section 194H TDS affect sub-agent commission recovery?",
+      "What if our sub-agent agreement has an arbitration clause naming the aggregator home city?",
+      "How is this B2B page different from student visa or college fee refund guides?"
+    ],
+    "wordCount": 2200,
+    "artefacts": [
+      "Executive Creditor Answer Box",
+      "4-Card Metrics Strip",
+      "Statutory Matrix Table",
+      "5-Stage SVG Decision Tree",
+      "4-Tab Interactive Scenario Explorer",
+      "Worked ₹36L Ledger",
+      "BSA s.63 Checklist",
+      "7 FAQs"
+    ],
+    "sources": [
+      "Indian Contract Act 1872 s.213/73/74",
+      "CPC 1908 Order XXXVII",
+      "BSA 2023 s.63/119",
+      "MSMED Act 2006 ss.15-18",
+      "IGST Act 2017 ss.2(6)/16"
+    ],
+    "builtAt": "2026-11-18"
+  },
+  {
+    "id": "B2B-210",
+    "url": "/templates/school-compliant-parent-fee-recovery-legal-notice-format",
+    "archetype": "P1",
+    "h2s": [
+      "Interactive RTE-Safe Parent Fee Recovery Notice Builder",
+      "Why Harsh Local Drafts Trigger DEO Show-Cause & Viral Backlash",
+      "The 4 Mandatory Child-Insulated & Contractual Notice Clauses",
+      "Post-TC Arrears, University Hostel Dues & Parent Undertakings",
+      "Multi-Channel Dispatch, BSA s.63 Proof & Mandatory Annexures",
+      "Education & Institutional Recovery Guides (IND-17 Network)",
+      "Frequently Asked Questions: RTE-Safe School Fee Notices"
+    ],
+    "components": [
+      "Breadcrumbs",
+      "SchoolFeeNoticeTOC",
+      "SchoolFeeNoticeWorkspace",
+      "SchoolFeeNoticeCTA",
+      "RelatedRecoveryGuides"
+    ],
+    "faqQuestions": [
+      "Why must a school fee recovery notice include an explicit RTE s.5(3) & NCPCR disclaimer?",
+      "Can a school send this legal notice after already issuing the Transfer Certificate (TC)?",
+      "How does the Admission Enrollment Financial Undertaking make Order XXXVII CPC applicable?",
+      "Can private universities use this format for unpaid semester tuition and hostel fees?",
+      "What if a parent's school-fee cheque or NACH/ECS auto-debit bounces?",
+      "Can a school Trust send 100+ parent fee notices at once without media or DEO backlash?"
+    ],
+    "wordCount": 1850,
+    "artefacts": [
+      "SchoolFeeNoticeWorkspace",
+      "4-Clause Statutory Matrix Table",
+      "Multi-Channel Service Table",
+      "Mandatory Annexure Checklist"
+    ],
+    "sources": [
+      "RTE Act 2009 s.5(3)",
+      "CPC 1908 Order XXXVII",
+      "Indian Contract Act 1872 s.10/63/73",
+      "NI Act 1881 s.138",
+      "PSS Act 2007 s.25",
+      "BSA 2023 s.63",
+      "NCPCR Guidelines"
+    ],
+    "builtAt": "2026-11-18"
+  },
+  {
+    "id": "B2B-209",
+    "url": "/school-bus-transport-fleet-contractor-unpaid-trust-dues-recovery",
+    "archetype": "G1",
+    "h2s": [
+      "Why Schools Withhold Bus Bills After Collecting Parent Fees",
+      "Fleet Contractor Escalation Decision Tree (5-Stage Workflow)",
+      "Statutory Matrix: Fiduciary Admission, MSMED & Trust Suits",
+      "4 Yellow-Bus Fleet Default Scenarios & Recovery Playbooks",
+      "Worked ₹28.8 Lakh Fleet Arrears & 3x RBI Interest Ledger",
+      "Enforcing 12-Month Standing Charges & Diesel Escalation",
+      "GPS, Route Logbook & BSA 2023 s.63 Evidence Checklist",
+      "Multi-Campus University & Fleet Batch Recovery Workflow",
+      "Frequently Asked Questions: School Bus Fleet Recovery",
+      "Primary Statutory Authorities & Transport Portals"
+    ],
+    "components": [
+      "BusFleetTableOfContents.tsx",
+      "BusFleetScenarioTabs.tsx",
+      "BusFleetNoticeCTA.tsx"
+    ],
+    "faqQuestions": [
+      "Can a school trust refuse to pay May and June bus fleet bills citing summer vacations?",
+      "How does the Fiduciary / Escrow Admission Argument help recover unpaid school bus bills?",
+      "Who should be named in a legal notice when XYZ Public School withholds transport dues?",
+      "Can a school bus fleet operator file on MSME Samadhaan against a charitable school trust?",
+      "What if the school trust refuses to pay diesel escalation or extra-kilometre shuttle bills?",
+      "Should we stop sending buses to the campus immediately if 4 months of bills are unpaid?",
+      "What if a post-dated cheque (PDC) or NACH mandate issued by the school trust bounces?"
+    ],
+    "wordCount": 2250,
+    "artefacts": [
+      "SVG 5-Stage Decision Tree",
+      "Statutory Matrix Table",
+      "Interactive 4-Scenario Tabs",
+      "₹28.8L Worked Ledger",
+      "BSA s.63 Checklist"
+    ],
+    "sources": [
+      "Societies Registration Act 1860 s.6",
+      "Indian Trusts Act 1882",
+      "MSMED Act 2006 s.15-18",
+      "NI Act 1881 s.138",
+      "BSA 2023 s.63"
+    ],
+    "builtAt": "2026-11-18"
+  },
+  {
+    "id": "B2B-211",
+    "url": "/industries/telecom-isp-datacenter-msp-recovery",
+    "archetype": "IH1",
+    "h2s": [
+      "Why Telecom, Data Center & CPaaS Creditors Bleed Working Capital",
+      "8-Track Telecom, Cloud & MSP Escalation Decision Matrix",
+      "DPDP-Safe Suspension, Hardware Lien & Forum Routing Pipeline",
+      "4 Sector-Specific Recovery Playbooks (Interactive Explorer)",
+      "Enterprise Postpaid CSV & CPE Hardware Batch Desk",
+      "Binding Statutory Mandates: TRAI s.14, DPDP & BNS s.316",
+      "Worked Economics: ILL Lock-In Batch vs ₹62L Colocation Default",
+      "Complete IND-18 Directory: All 9 Spokes & Notice Template",
+      "Essential Statutory Guides, Calculators & Bulk Tools",
+      "Frequently Asked Questions: ISP, Data Center & MSP Recovery",
+      "Primary Statutory Authorities & Telecom Portals"
+    ],
+    "components": [
+      "Breadcrumbs",
+      "TelecomIspHubTableOfContents",
+      "TelecomIspHubScenarioTabs",
+      "TelecomIspHubCTA",
+      "RelatedRecoveryGuides"
+    ],
+    "faqQuestions": [
+      "Should an Enterprise ISP file recovery against a defaulting corporate client in TDSAT or Commercial Court?",
+      "Can a colocation data center block a defaulting client from removing their physical servers?",
+      "How can an ISP enforce a 24-month ILL or MPLS lock-in if the client shuts its office in Month 4?",
+      "Can a Managed IT Provider (MSP) withhold a client’s M365 or DNS admin password until AMC bills are paid?",
+      "How do WhatsApp BSPs and Bulk SMS aggregators prove postpaid burst usage if a client alleges API key leak?",
+      "What legal remedy do OFC trenching and telecom tower O&M contractors have for 180-day withheld bills?",
+      "Can regional ISPs and MSOs send bulk legal notices to 100+ defaulting enterprise subscribers or LCOs?"
+    ],
+    "wordCount": 2850,
+    "artefacts": [
+      "8-Track Escalation Matrix Table",
+      "SVG 3-Stage DPDP-Safe & Forum Routing Pipeline",
+      "Interactive 4-Scenario Telecom/Cloud/MSP Tabs",
+      "Worked ILL & Colocation Economics Cards",
+      "Complete 9-Spoke IND-18 Directory"
+    ],
+    "sources": [
+      "TRAI Act 1997 s.14 & s.15",
+      "DPDP Act 2023",
+      "IT Act 2000 s.43",
+      "Indian Contract Act 1872 s.53/54/74/170",
+      "BNS 2023 s.316",
+      "BSA 2023 s.63",
+      "Order XXXVII CPC",
+      "MSMED Act 2006 s.15-18"
+    ],
+    "builtAt": "2026-11-18"
+  },
+  {
+    "id": "B2B-212",
+    "url": "/enterprise-leased-line-ill-mpls-sdwan-lock-in-breach-recovery-isp",
+    "archetype": "G1",
+    "h2s": [
+      "Why Pure \"Penalty\" Lock-In Clauses Fail—and CapEx Framing Wins",
+      "5-Stage ISP Lock-In Breach Escalation Decision Tree",
+      "Statutory & Forum Matrix: Lock-In, Bandwidth & MUX CPE Recovery",
+      "4 Enterprise Leased Line Default Scenarios & ISP Playbooks",
+      "Worked Financial Ledger: Month-4 Exit on a 24-Month 1 Gbps ILL Link",
+      "CAF, AT Report & BSA 2023 s.63 Digital Evidence Checklist",
+      "Start Single-Circuit Recovery or Upload Bulk Postpaid Arrears",
+      "Related Telecom, ISP & Commercial Recovery Resources",
+      "Frequently Asked Questions: ILL / MPLS Lock-In Recovery",
+      "Primary Statutory Sources & Official Citations"
+    ],
+    "components": [
+      "IspLockInTableOfContents",
+      "IspLockInScenarioTabs",
+      "IspLockInCTA"
+    ],
+    "faqQuestions": [
+      "Are 12-month or 24-month enterprise ILL / MPLS lock-in clauses enforceable in India if the client shuts down its office in Month 4?",
+      "Why do civil courts reject ISP early-termination demands that only claim 'remaining 20 months of MRC'?",
+      "Should an Enterprise ISP file lock-in recovery against an end-customer before TDSAT or a Commercial / Civil Court?",
+      "What documents make an enterprise leased line lock-in claim eligible for an Order XXXVII CPC Summary Suit?",
+      "How can an ISP recover unreturned Cisco/Juniper CPE, Layer-2 MUX, SFP+ modules, or rooftop RF radios?",
+      "What if the defaulting corporate subscriber claims 'slow speed or packet loss' only after receiving the termination bill?",
+      "Can Class-A/B ISPs send bulk legal notices for 50 to 5,000+ SME broadband and enterprise postpaid defaulters?"
+    ],
+    "wordCount": 2250,
+    "artefacts": [
+      "5-Stage SVG Decision Tree + Mobile Cards",
+      "bg-slate-900 Statutory & Forum Matrix Table",
+      "IspLockInScenarioTabs (4 Default Scenarios)",
+      "Worked Month-4 1 Gbps ILL CapEx Ledger Box",
+      "CAF & BSA 2023 s.63 6-Point Checklist",
+      "Dual-Track ISP CTA"
+    ],
+    "sources": [
+      "Indian Contract Act 1872 s.73, s.74, s.148-160",
+      "CPC 1908 Order XXXVII",
+      "TRAI Act 1997 s.14",
+      "BSA 2023 s.63",
+      "Specific Relief Act 1963 s.7-8",
+      "BNS 2023 s.316"
+    ],
+    "builtAt": "2026-11-18"
+  },
+  {
+    "id": "B2B-213",
+    "url": "/data-center-colocation-bare-metal-hosting-default-suspension-lien-law",
+    "archetype": "L1",
+    "h2s": [
+      "Physical Rack Lien vs Data Hostage-Taking: The Critical Split",
+      "The Dual-Track Hardware Lien & 7-Day Data Export Protocol",
+      "Statutory Matrix: Contractual Lien vs DPDP & IT Act Boundaries",
+      "Statutory Timelines, Export Windows & Limitation Stops",
+      "Supreme Court Precedents Governing Lien, Lock-In & Summary Suits",
+      "4 Colocation & GPU Cloud Default Scenarios (GC Playbooks)",
+      "Worked Case Study: ₹80L Rack Hardware Lien & kWh Recovery Ledger",
+      "Pre-Empting Criminal & Cyber Counterclaims by Defaulting Tenants",
+      "Evidence & BSA 2023 Section 63 Admissibility Checklist",
+      "Frequently Asked Questions: Data Center Lien & DPDP Law",
+      "Primary Statutory Sources & Official Citations"
+    ],
+    "components": [
+      "DataCenterLienTableOfContents",
+      "DataCenterLienScenarioTabs",
+      "DataCenterLienCTA"
+    ],
+    "faqQuestions": [
+      "Can a colocation data center legally refuse a Gate-Pass to remove a defaulting client's physical servers in India?",
+      "What is the biggest legal mistake data centers make when suspending a defaulting hosting client?",
+      "Under the DPDP Act 2023, is a data center or bare-metal GPU host a Data Fiduciary or a Data Processor?",
+      "How can bare-metal GPU cloud providers recover stranded Nvidia H100 cluster commits from AI startups?",
+      "Can a defaulting tenant file a BNS Section 316 (erstwhile IPC 406) criminal complaint over detained servers?",
+      "What electronic evidence must a data center preserve to win an Order XXXVII Summary Suit for kWh and rack arrears?"
+    ],
+    "wordCount": 2250,
+    "artefacts": [
+      "SVG Decision Split",
+      "Statutory Matrix Table",
+      "4-Scenario Tabs",
+      "₹80L Worked Ledger",
+      "Defense Pre-Emption Table"
+    ],
+    "sources": [
+      "Contract Act s.170/171/74",
+      "DPDP Act 2023 s.2/8",
+      "IT Act s.43/66",
+      "Order XXXVII CPC",
+      "BSA 2023 s.63"
+    ],
+    "builtAt": "2026-11-18"
+  },
+  {
+    "id": "B2B-216",
+    "url": "/telecom-tower-ip1-optical-fiber-ofc-trenching-contractor-recovery",
+    "archetype": "G1",
+    "h2s": [
+      "Why IP-1 & EPC Primes Sit on OTDR-Cleared Bills—and How to Break It",
+      "5-Stage OFC & Tower O&M Escalation Decision Tree",
+      "Statutory & Forum Matrix for Telecom Infra Contractors",
+      "4 Telecom Infra Payment Failure Modes & Creditor Playbooks",
+      "Worked MSME Interest Ledger: ₹42L OFC & Tower O&M Arrears",
+      "OTDR Trace, Measurement Book & BSA 2023 s.63 Evidence Checklist",
+      "Start Single-PO Recovery or Upload Multi-Circle OFC Arrears",
+      "Related Telecom, ISP & Commercial Recovery Resources",
+      "Frequently Asked Questions: OFC & Tower O&M Recovery",
+      "Primary Statutory Sources & Official Citations"
+    ],
+    "components": [
+      "Breadcrumbs",
+      "OfcTowerTableOfContents",
+      "OfcTowerScenarioTabs",
+      "OfcTowerCTA",
+      "RelatedRecoveryGuides"
+    ],
+    "faqQuestions": [
+      "Can an IP-1 or EPC prime withhold our OFC trenching RA bills indefinitely by delaying the Acceptance Testing (AT) certificate?",
+      "How can an OFC contractor challenge wrongful municipal or NHAI Right-of-Way (ROW) penalty deductions from RA bills?",
+      "Are back-to-back or pay-when-paid clauses in BharatNet and Smart City subcontracts enforceable against MSME contractors?",
+      "What legal remedy do telecom tower diesel-filling, DG O&M, and security vendors have when TowerCos withhold monthly reimbursements?",
+      "Should a telecom infra subcontractor file before MSEFC Samadhaan, Arbitration, or Commercial Court?",
+      "Does an arbitration clause in the IP-1 / EPC Work Order block an MSME contractor from approaching MSEFC?",
+      "What electronic proof makes OTDR link tests and tower diesel logs admissible in court?"
+    ],
+    "wordCount": 2150,
+    "artefacts": [
+      "5-Stage SVG Decision Tree + Mobile Cards",
+      "bg-slate-900 Statutory & Forum Matrix Table",
+      "OfcTowerScenarioTabs (4 Telecom Infra Scenarios)",
+      "Worked ₹42L MSME 3x RBI Interest Ledger",
+      "OTDR & BSA 2023 s.63 6-Point Checklist",
+      "Dual-Track OFC & Tower CTA"
+    ],
+    "sources": [
+      "MSMED Act 2006 s.2(b), s.15-19 & s.24",
+      "Indian Contract Act 1872 s.8, s.53, s.73 & s.74",
+      "CPC 1908 Order XXXVII",
+      "Arbitration & Conciliation Act 1996 s.21",
+      "IBC 2016 s.8-9",
+      "BSA 2023 s.63"
+    ],
+    "builtAt": "2026-11-18"
+  },
+  {
+    "id": "B2B-214",
+    "url": "/cpaas-bulk-sms-whatsapp-bsp-cloud-telephony-postpaid-default-recovery",
+    "archetype": "G1",
+    "h2s": [
+      "Why Postpaid CPaaS & BSP Defaults Wipe Out 10x Gross Margin",
+      "5-Step CPaaS Postpaid Default Escalation Pipeline",
+      "CPaaS, WhatsApp BSP & Cloud Telephony Statutory Matrix",
+      "4 Enterprise CPaaS Failure Modes & Legal Playbooks",
+      "Worked Financial Ledger: ₹40L Festive WhatsApp Blast Default",
+      "BSA 2023 s.63 Forensic Evidence & API-Key Checklist",
+      "Launch Single-Account Recovery or Bulk Postpaid CSV Desk",
+      "Related Telecom, SaaS & Commercial Recovery Resources",
+      "Frequently Asked Questions: CPaaS & BSP Debt Recovery",
+      "Primary Statutory Sources & Regulatory Citations"
+    ],
+    "components": [
+      "Breadcrumbs",
+      "CpaasTableOfContents",
+      "CpaasScenarioTabs",
+      "CpaasRecoveryCTA",
+      "RelatedRecoveryGuides"
+    ],
+    "faqQuestions": [
+      "How do WhatsApp BSPs and Bulk SMS aggregators defeat the 'our API key was leaked' defense in court?",
+      "Are Meta WhatsApp Webhook delivery logs and telco CDRs admissible without original server seizure?",
+      "Should a CPaaS platform file postpaid enterprise recovery in TDSAT or Commercial Court?",
+      "Can an enterprise withhold payment claiming low WhatsApp or DLT SMS delivery rates?",
+      "What if an enterprise defaults on a ₹40 Lakh festive campaign burst and asks for a credit note?",
+      "Can Udyam-registered CPaaS and cloud-telephony providers claim 3x RBI bank rate interest?",
+      "How should a CPaaS platform handle 100+ small-ticket SME bulk SMS and IVR defaulters?"
+    ],
+    "wordCount": 2150,
+    "artefacts": [
+      "Executive Creditor Answer Box",
+      "5-Step SVG Escalation Pipeline + Mobile Cards",
+      "bg-slate-900 CPaaS Statutory & Forum Matrix Table",
+      "CpaasScenarioTabs (4 Default Scenarios)",
+      "Worked ₹40L Festive WhatsApp Blast Margin Ledger",
+      "BSA 2023 s.63 6-Point Forensic Checklist",
+      "Dual-Track CPaaS CTA"
+    ],
+    "sources": [
+      "BSA 2023 s.63",
+      "IT Act 2000 s.11/43",
+      "CPC Order XXXVII",
+      "TRAI TCCCPR 2018",
+      "MSMED Act 2006 s.15-18",
+      "Commercial Courts Act 2015 s.12A"
+    ],
+    "builtAt": "2026-11-18"
+  },
+  {
+    "id": "B2B-217",
+    "url": "/system-integrator-it-hardware-networking-campus-project-recovery",
+    "archetype": "G1",
+    "h2s": [
+      "The 45-Day Distributor Debit vs. 9-Month Site Delay Trap",
+      "5-Stage Deemed-Commissioning & Holdback Escalation",
+      "Statutory Matrix: Contract Act s.53/54, MSMED & Order 37",
+      "4 System Integrator & Smart-City Default Scenarios",
+      "Worked Recovery Ledger: ₹30L Stalled Campus Holdback",
+      "BoQ, E-Way Bill & BSA 2023 s.63 Evidence Checklist",
+      "Launch Single-Project Notice or Bulk SI CSV Recovery",
+      "Related Telecom, SI & Commercial Recovery Resources",
+      "Frequently Asked Questions: SI & AV Project Recovery",
+      "Primary Statutory Sources & Official Citations"
+    ],
+    "components": [
+      "Breadcrumbs",
+      "SiProjectTableOfContents",
+      "SiProjectScenarioTabs",
+      "SiProjectCTA",
+      "RelatedRecoveryGuides"
+    ],
+    "faqQuestions": [
+      "Can a buyer legally withhold the 20%–30% installation milestone for 9 months because their own civil or interior contractor is behind schedule?",
+      "How do System Integrators handle the cashflow gap when Redington, Ingram Micro, or Savex debit their channel line on Day 45?",
+      "What if the client is already using our Cisco/Aruba Wi-Fi or Hikvision CCTV live, yet refuses to sign the UAT certificate?",
+      "In a Smart-City or PSU turnkey project, can the Master SI withhold our sub-vendor bill claiming the Municipal Corporation hasn't paid them?",
+      "Should an IT System Integrator file recovery in MSEFC Samadhaan, Commercial Court, or Order XXXVII Summary Suit?",
+      "Can we recover warehousing, engineer idling, and OEM SmartNet warranty burn caused by site-readiness delays?",
+      "What if we have 15 to 200+ overdue corporate AMC, structured cabling, or campus hardware holdback accounts across India?"
+    ],
+    "wordCount": 2120,
+    "artefacts": [
+      "Executive Creditor Answer Box",
+      "5-Stage SVG Escalation Flowchart + Mobile Cards",
+      "bg-slate-900 Statutory Matrix Table",
+      "SiProjectScenarioTabs (4 Default Scenarios)",
+      "Worked ₹30L Campus Holdback Ledger",
+      "BoQ & BSA 2023 s.63 6-Point Evidence Checklist",
+      "Dual-Track SI CTA"
+    ],
+    "sources": [
+      "Indian Contract Act 1872 s.53/54",
+      "Sale of Goods Act 1930 s.31/42/44",
+      "MSMED Act 2006 s.15-18",
+      "Income Tax Act 1961 s.43B(h)",
+      "CPC Order XXXVII & Commercial Courts Act s.12A",
+      "BSA 2023 s.63"
+    ],
+    "builtAt": "2026-11-18"
   }
 ]

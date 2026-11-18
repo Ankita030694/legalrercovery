@@ -1,4 +1,4 @@
-﻿import type { MetadataRoute } from "next";
+import type { MetadataRoute } from "next";
 import { SITE_URL, INDEX_LOCATION_PAGES } from "@/lib/site";
 import { locationData } from "./legal-recovery-by-city/locationData";
 
@@ -10,6 +10,180 @@ const STATIC_ROUTES: {
   priority: number;
   lastModified?: Date | string;
 }[] = [
+  {
+    path: "/managed-it-services-msp-annual-amc-sla-unreturned-firewall-recovery",
+    changeFrequency: "weekly",
+    priority: 0.85,
+    lastModified: new Date("2026-11-18"),
+  },
+  {
+    path: "/system-integrator-it-hardware-networking-campus-project-recovery",
+    changeFrequency: "weekly",
+    priority: 0.85,
+    lastModified: new Date("2026-11-18"),
+  },
+  {
+    path: "/cable-tv-mso-broadcaster-set-top-box-lco-arrears-recovery-tdsat",
+    changeFrequency: "weekly",
+    priority: 0.85,
+    lastModified: new Date("2026-11-18"),
+  },
+  {
+    path: "/cpaas-bulk-sms-whatsapp-bsp-cloud-telephony-postpaid-default-recovery",
+    changeFrequency: "weekly",
+    priority: 0.85,
+    lastModified: new Date("2026-11-18"),
+  },
+  {
+    path: "/telecom-tower-ip1-optical-fiber-ofc-trenching-contractor-recovery",
+    changeFrequency: "weekly",
+    priority: 0.85,
+    lastModified: new Date("2026-11-18"),
+  },
+  {
+    path: "/tdsat-vs-commercial-court-jurisdiction-telecom-isp-broadcasting-recovery",
+    changeFrequency: "weekly",
+    priority: 0.85,
+    lastModified: new Date("2026-11-18"),
+  },
+  {
+    path: "/data-center-colocation-bare-metal-hosting-default-suspension-lien-law",
+    changeFrequency: "weekly",
+    priority: 0.9,
+    lastModified: new Date("2026-11-18"),
+  },
+  {
+    path: "/industries/telecom-isp-datacenter-msp-recovery",
+    changeFrequency: "weekly",
+    priority: 0.9,
+    lastModified: new Date("2026-11-18"),
+  },
+  {
+    path: "/enterprise-leased-line-ill-mpls-sdwan-lock-in-breach-recovery-isp",
+    changeFrequency: "weekly",
+    priority: 0.9,
+    lastModified: new Date("2026-11-18"),
+  },
+  {
+    path: "/templates/school-compliant-parent-fee-recovery-legal-notice-format",
+    changeFrequency: "weekly",
+    priority: 0.9,
+    lastModified: new Date("2026-11-18"),
+  },
+  {
+    path: "/school-bus-transport-fleet-contractor-unpaid-trust-dues-recovery",
+    changeFrequency: "weekly",
+    priority: 0.85,
+    lastModified: new Date("2026-11-18"),
+  },
+  {
+    path: "/study-abroad-master-aggregator-university-sub-agent-commission-dispute",
+    changeFrequency: "weekly",
+    priority: 0.85,
+    lastModified: new Date("2026-11-18"),
+  },
+  {
+    path: "/pmkvy-ddu-gky-nsdc-csr-skill-training-partner-grant-tranche-recovery",
+    changeFrequency: "weekly",
+    priority: 0.85,
+    lastModified: new Date("2026-11-18"),
+  },
+  {
+    path: "/coaching-institute-franchise-royalty-and-installment-bounce-recovery",
+    changeFrequency: "weekly",
+    priority: 0.85,
+    lastModified: new Date("2026-11-18"),
+  },
+  {
+    path: "/corporate-training-l-and-d-executive-education-vendor-invoice-recovery",
+    changeFrequency: "weekly",
+    priority: 0.85,
+    lastModified: new Date("2026-11-18"),
+  },
+  {
+    path: "/edtech-b2b-smart-class-school-erp-robotics-lab-unpaid-dues-from-schools",
+    changeFrequency: "weekly",
+    priority: 0.9,
+    lastModified: new Date("2026-11-18"),
+  },
+  {
+    path: "/industries/schools-universities-edtech-b2b-recovery",
+    changeFrequency: "weekly",
+    priority: 0.9,
+    lastModified: new Date("2026-11-18"),
+  },
+  {
+    path: "/templates/hotel-btc-and-iata-travel-agent-corporate-credit-legal-notice",
+    changeFrequency: "weekly",
+    priority: 0.85,
+    lastModified: new Date("2026-11-18"),
+  },
+  {
+    path: "/school-textbook-publisher-uniform-stationery-distributor-recovery",
+    changeFrequency: "weekly",
+    priority: 0.85,
+    lastModified: new Date("2026-11-18"),
+  },
+  {
+    path: "/how-private-schools-recover-unpaid-fees-without-withholding-tc",
+    changeFrequency: "weekly",
+    priority: 0.9,
+    lastModified: new Date("2026-11-18"),
+  },
+  {
+    path: "/industrial-canteen-corporate-cafeteria-institutional-caterer-bill-recovery",
+    changeFrequency: "weekly",
+    priority: 0.85,
+    lastModified: new Date("2026-11-18"),
+  },
+  {
+    path: "/mice-corporate-offsite-conference-attrition-last-minute-cancellation-recovery",
+    changeFrequency: "weekly",
+    priority: 0.85,
+    lastModified: new Date("2026-11-18"),
+  },
+  {
+    path: "/b2b-dmc-destination-management-company-tour-operator-default-recovery",
+    changeFrequency: "weekly",
+    priority: 0.85,
+    lastModified: new Date("2026-11-18"),
+  },
+  {
+    path: "/charter-flight-luxury-coach-yacht-corporate-hire-payment-recovery",
+    changeFrequency: "weekly",
+    priority: 0.85,
+    lastModified: new Date("2026-11-18"),
+  },
+  {
+    path: "/hotel-btc-bill-to-company-corporate-credit-account-default-recovery",
+    changeFrequency: "weekly",
+    priority: 0.9,
+    lastModified: new Date("2026-11-18"),
+  },
+  {
+    path: "/industries/hotels-banquets-corporate-travel-recovery",
+    changeFrequency: "weekly",
+    priority: 0.9,
+    lastModified: new Date("2026-11-18"),
+  },
+  {
+    path: "/ota-b2b-bedbank-withheld-hotel-payout-arbitrary-chargeback-recovery",
+    changeFrequency: "weekly",
+    priority: 0.85,
+    lastModified: new Date("2026-11-18"),
+  },
+  {
+    path: "/banquet-hall-destination-wedding-post-event-balance-cheque-bounce",
+    changeFrequency: "weekly",
+    priority: 0.85,
+    lastModified: new Date("2026-11-18"),
+  },
+  {
+    path: "/iata-corporate-travel-agent-tmc-flight-ticket-credit-default-recovery",
+    changeFrequency: "weekly",
+    priority: 0.9,
+    lastModified: new Date("2026-11-18"),
+  },
   {
     path: "/letter-of-credit-lc-wrongful-discrepancy-dishonour-ucp-600-recovery",
     changeFrequency: "weekly",
@@ -328,7 +502,6 @@ const STATIC_ROUTES: {
   { path: "/industries/it-saas-software-recovery", changeFrequency: "weekly", priority: 0.9, lastModified: new Date("2026-11-16") },
   { path: "/industries/builders-commercial-landlords-coworking-recovery", changeFrequency: "weekly", priority: 0.9, lastModified: new Date("2026-11-16") },
   { path: "/industries/advertising-marketing-media-event-recovery", changeFrequency: "weekly", priority: 0.9, lastModified: new Date("2026-11-17") },
-  { path: "/industries/hotels-banquets-corporate-travel-recovery", changeFrequency: "weekly", priority: 0.9, lastModified: new Date("2026-11-14") },
   { path: "/industries/fmcg-distributors-super-stockist-recovery", changeFrequency: "weekly", priority: 0.9, lastModified: new Date("2026-11-14") },
   { path: "/third-party-legal-recovery-services-financial-institutions", changeFrequency: "weekly", priority: 0.95, lastModified: new Date("2026-11-13") },
   { path: "/how-banks-reduce-recovery-costs-through-legal-outsourcing", changeFrequency: "weekly", priority: 0.95, lastModified: new Date("2026-11-13") },
