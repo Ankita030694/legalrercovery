@@ -1992,16 +1992,216 @@ const CLUSTERS: Record<string, { heading: string; items: GuideItem[] }> = {
       },
     ],
   },
+  solarEnergyB2B: {
+    heading: "Solar EPC, RESCO PPA, EV Charging & Power Recovery Guides",
+    items: [
+      {
+        title: "Solar EPC, RESCO PPA, EV Charging & Power Debt Recovery",
+        href: "/industries/solar-renewable-ev-power-recovery",
+        tag: "IND-19 Pillar Hub",
+        desc: "Enforce OPEX/RESCO PPA buyouts via Arbitration s.9, C&I net-metering Deemed Commissioning & EV CPO fleet/charger recovery.",
+      },
+      {
+        title: "OPEX / RESCO Solar PPA Tariff Default & Termination Buyout",
+        href: "/opex-resco-solar-ppa-tariff-default-termination-buyout-repossession",
+        tag: "IND-19 RESCO",
+        desc: "Arbitration Act s.9 injunctions against free solar power draw, Receiver plant inspection & Termination Buyout enforcement.",
+      },
+      {
+        title: "Solar Module, Inverter & BOS Distributor Credit Recovery",
+        href: "/solar-panel-module-inverter-distributor-installer-credit-recovery",
+        tag: "IND-19 OEM/BOS",
+        desc: "Conditional OEM serial-number warranty hold, NI Act s.138/143A PDC enforcement & Sale of Goods s.56 Watt-Peak crash damages.",
+      },
+      {
+        title: "DISCOM & SNA Solar Payment Delays: LPS Rules & SERC s.86(1)(f)",
+        href: "/discom-kusum-state-nodal-agency-renewable-payment-delay-lps-rules",
+        tag: "IND-19 DISCOM",
+        desc: "Enforce PRAAPTI grid-access curbs under LPS Rules 2022, SERC s.86(1)(f) petitions & MSEFC/s.80 CPC for KUSUM SNA tenders.",
+      },
+      {
+        title: "EV Charging CPO Fleet Billing & Charger Recovery",
+        href: "/ev-charging-station-cpo-fleet-hub-landlord-revenue-share-recovery",
+        tag: "IND-19 EV CPO",
+        desc: "Enforce OCPP 1.6J/2.0.1 kWh logs under BSA s.63, Arbitration s.9 DC fast-charger repossession & BNS s.316 host-site notices.",
+      },
+      {
+        title: "C&I Solar EPC Final Balance & Net-Metering Recovery",
+        href: "/commercial-industrial-rooftop-solar-epc-net-metering-balance-recovery",
+        tag: "IND-19 Solar EPC",
+        desc: "Enforce Deemed Commissioning (Contract Act s.53/54), IEC 61724 soiling-adjusted PR proof & divisible Supply PO MSME leverage.",
+      },
+      {
+        title: "STP, ETP, ZLD & Biogas Plant Payment Recovery",
+        href: "/stp-etp-zld-water-treatment-biogas-turnkey-plant-payment-recovery",
+        tag: "IND-19 Water-Tech",
+        desc: "Defeat post-CTO final 25% retention holds & monthly O&M arrears with NABL lab proof, MSMED s.16 & s.43B(h).",
+      },
+      {
+        title: "HT / LT Substation, Transformer & Panel Bill Recovery",
+        href: "/electrical-ht-lt-substation-transformer-contractor-bill-recovery",
+        tag: "IND-19 Electrical",
+        desc: "Enforce CEIG Charging Approval, Contract Act s.70 energized benefit & Sale of Goods s.55 for custom APFC/PCC panels.",
+      },
+      {
+        title: "Solar & Wind O&M, Module Cleaning Arrears Recovery",
+        href: "/solar-wind-o-and-m-module-cleaning-contractor-arrears-recovery",
+        tag: "IND-19 O&M",
+        desc: "Rebut grid-curtailment SLA deductions with SCADA logs & recover leased cleaning robots via Arbitration s.9.",
+      },
+      {
+        title: "Solar PPA Buyout & EPC Balance Legal Notice Pack",
+        href: "/templates/solar-epc-and-resco-ppa-default-buyout-legal-notice",
+        tag: "IND-19 Notice",
+        desc: "Interactive notice workspace for RESCO PPA buyouts, remote inverter curtailment, CapEx EPC & EV CPO demands.",
+      },
+      {
+        title: "Subcontractor & Turnkey EPC Payment Recovery India",
+        href: "/subcontractor-payment-recovery-india",
+        tag: "EPC Recovery",
+        desc: "Defeat pay-when-paid clauses and wrongful retention holds on solar, HT/LT substation, and utility projects.",
+      },
+      {
+        title: "Section 80 CPC Notice to Government & Nodal Agencies",
+        href: "/law/section-80-cpc-notice-to-government",
+        tag: "Government Claims",
+        desc: "Mandatory 60-day statutory pre-suit notice protocol for delayed PM-KUSUM, State Nodal Agency & PSU solar payments.",
+      },
+      {
+        title: "MSME Delayed Payment 3x RBI Interest Calculator",
+        href: "/tools/msme-delayed-payment-interest-calculator",
+        tag: "Interest Tool",
+        desc: "Compute compound interest under MSMED s.16 for Udyam solar EPCs, BOS distributors, and power contractors.",
+      },
+    ],
+  },
+  agroInputsB2B: {
+    heading: "Related Agri-Inputs, FPO, Dairy & Dealer Recovery Guides",
+    items: [
+      {
+        title: "FPO (Farmer Producer Company) & Dairy B2B Buyer Recovery",
+        href: "/fpo-farmer-producer-company-cooperative-dairy-b2b-buyer-recovery",
+        tag: "FPO & Dairy B2B",
+        desc: "Enforce APMC 24–72 hr mandi payment rules (CC to APMC Secretary), NI s.138 bounced PDCs, and Order XXXVII CPC recovery against corporate offtakers.",
+      },
+      {
+        title: "Agrochemical & Seed Dealer Seasonal Credit Default Recovery",
+        href: "/agrochemical-pesticide-seed-dealer-seasonal-credit-default-recovery",
+        tag: "Agri-Inputs B2B",
+        desc: "Defeat post-harvest oral 'poor germination / pesticide efficacy' excuses using Seeds Act / Insecticides Act sampling rules and NI s.138 PDCs.",
+      },
+      {
+        title: "Distributor & Dealer Dues Recovery in India",
+        href: "/distributor-dealer-dues-recovery",
+        tag: "Channel Credit",
+        desc: "Enforce dealer agreements, reconcile running trade ledgers, and recover overdue stockist balances across India.",
+      },
+      {
+        title: "Section 138 Cheque Bounce Notice Timeline & Rules",
+        href: "/cheque-bounce-notice-timeline-section-138",
+        tag: "NI Act s.138",
+        desc: "30-day statutory notice deadline, 15-day cure window, and criminal prosecution for bounced seasonal security PDCs.",
+      },
+      {
+        title: "MSME Delayed Payment 3x RBI Interest Calculator",
+        href: "/tools/msme-delayed-payment-interest-calculator",
+        tag: "Calculator",
+        desc: "Compute compound interest at 3x RBI bank rate for Udyam-registered seed, bio-stimulant, and agrochemical manufacturers.",
+      },
+      {
+        title: "Baki Paise Vasooli ke Liye Legal Notice Kaise Bheje (Hindi)",
+        href: "/hi/legal-notice-kaise-bheje",
+        tag: "Hindi Guide",
+        desc: "Vyapari aur Krishi Kendra dealers ko baki payment ke liye statutory legal notice bhejne ki step-by-step prakriya.",
+      },
+      {
+        title: "Bulk Recovery Cases: 10 to 10,000+ Dealer Notice Desk",
+        href: "/bulk-recovery-cases-all-in-one-affordable-solutions",
+        tag: "Enterprise Batch",
+        desc: "Upload dealer overdue CSVs for synchronized pre-Kharif and pre-Rabi legal notice drives across districts.",
+      },
+    ],
+  },
+  equipmentRentalB2B: {
+    heading: "Related Equipment Rental, Scaffolding & Contractor Recovery Guides",
+    items: [
+      {
+        title: "Unreturned Rented Scaffolding & Formwork (BNS s.316)",
+        href: "/unreturned-rented-scaffolding-shuttering-formwork-bns-316-recovery",
+        tag: "BNS 316 FIR",
+        desc: "Enforce BNS s.316 Criminal Breach of Trust, running hire meters & replacement value against defaulting contractors.",
+      },
+      {
+        title: "BNS Section 318 Cheating vs. Civil Breach of Contract",
+        href: "/law/bns-318-cheating-vs-civil-dispute",
+        tag: "Criminal Law",
+        desc: "Know when dishonest asset retention, site shifting, or scrap conversion crosses from civil breach into FIR territory.",
+      },
+      {
+        title: "Contractor Payment & Work Order Recovery Guide",
+        href: "/recovery/contractor-payment",
+        tag: "Contractor Dues",
+        desc: "Recover unpaid contractor bills, running hire invoices, and withheld security deposits across civil projects.",
+      },
+      {
+        title: "MSME Delayed Payment 3x RBI Interest Calculator",
+        href: "/tools/msme-delayed-payment-interest-calculator",
+        tag: "Interest Tool",
+        desc: "Compute statutory 3x RBI compound interest for Udyam-registered equipment and scaffolding rental yards.",
+      },
+      {
+        title: "Bulk Legal Notice via Email, WhatsApp & Speed Post",
+        href: "/bulk-recovery-notice-send-through-email-whatsapp-speedpost-solution",
+        tag: "Bulk Dispatch",
+        desc: "Send multi-channel legal notices with Police Station Email CC for overdue rental fleets and site defaults.",
+      },
+      {
+        title: "Legal Notice Reply & Demand Format Workspace",
+        href: "/templates/legal-notice-reply-format",
+        tag: "Notice Template",
+        desc: "Structure enforceable commercial demand clauses and statutory cure periods for B2B defaults.",
+      },
+    ],
+  },
 };
 
 function detectCluster(pathname: string): { heading: string; items: GuideItem[] } {
   const p = pathname.toLowerCase();
   if (
+    p.includes("equipment-rental-machinery") ||
+    p.includes("equipment-rental-arrears-gate-pass") ||
+    p.includes("unreturned-rented-scaffolding") ||
+    p.includes("rented-crane-machinery") ||
+    p.includes("laptop-macbook-workstation-rental") ||
+    p.includes("diesel-generator-dg-set") ||
+    p.includes("forklift-mhe-pallet") ||
+    p.includes("medical-icu-equipment") ||
+    p.includes("audio-visual-led-wall") ||
+    p.includes("rented-machinery-criminal-recovery")
+  ) {
+    return CLUSTERS.equipmentRentalB2B;
+  }
+  if (
+    p.includes("solar-renewable-ev-power") ||
+    p.includes("opex-resco-solar-ppa") ||
+    p.includes("rooftop-solar-epc-net-metering") ||
+    p.includes("solar-panel-module-inverter") ||
+    p.includes("discom-kusum-state-nodal") ||
+    p.includes("ev-charging-station-cpo") ||
+    p.includes("stp-etp-zld-water-treatment") ||
+    p.includes("electrical-ht-lt-substation") ||
+    p.includes("solar-wind-o-and-m") ||
+    p.includes("solar-epc-and-resco-ppa-default")
+  ) {
+    return CLUSTERS.solarEnergyB2B;
+  }
+  if (
     p.includes("enterprise-leased-line-ill-mpls") ||
     p.includes("telecom-isp-datacenter") ||
     p.includes("tdsat-vs-commercial-court") ||
     p.includes("cpaas-bulk-sms") ||
-    p.includes("data-center-colocation")
+    p.includes("data-center-colocation") ||
+    p.includes("isp-datacenter-cpaas-suspension")
   ) {
     return CLUSTERS.telecomB2B;
   }
@@ -2346,6 +2546,27 @@ p.includes("school") ||
     p.includes("data-center-colocation")
   ) {
     return CLUSTERS.itSaas;
+  }
+  if (
+    p.includes("equipment-rental") ||
+    p.includes("rented-crane") ||
+    p.includes("rented-scaffolding") ||
+    p.includes("diesel-generator-dg-set") ||
+    p.includes("forklift-mhe")
+  ) {
+    return CLUSTERS.construction || CLUSTERS.general;
+  }
+  if (p.includes("fpo-farmer-producer")) {
+    return CLUSTERS.agroInputsB2B;
+  }
+  if (
+    p.includes("agri-inputs") ||
+    p.includes("rice-dal-flour") ||
+    p.includes("agrochemical") ||
+    p.includes("cold-storage") ||
+    p.includes("poultry-feed")
+  ) {
+    return CLUSTERS.commercialB2B;
   }
   return CLUSTERS.general;
 }
