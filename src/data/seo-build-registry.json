@@ -1,5 +1,75 @@
 [
   {
+    "id": "B2B-271",
+    "url": "/industries/franchisors-brand-licensors-oem-dealership-recovery",
+    "archetype": "IH1",
+    "h2s": [
+      "Why 4,500+ Indian Franchisor Networks Bleed Uncollected Royalties",
+      "8-Track Franchise, Commissary & OEM Dealership Escalation Matrix",
+      "Statutory Workflow: From POS Audit to Section 9 Trademark Freeze",
+      "4 Critical Brand Protection & Royalty Failure Modes (Interactive)",
+      "Bulk Franchise Ledger & Multi-Location Signboard Enforcement Desk",
+      "Commercial Courts Act s.2(1)(c)(ix), TM Act & Arbitration s.9 Hooks",
+      "Worked Ledger: ₹34.5L QSR Default vs ₹68L EV Dealership Recovery",
+      "Complete IND-24 Directory: All 9 Spokes & Legal Notice Pack",
+      "Essential Brand Protection Guides, ODR & Bulk Debt Portals",
+      "Frequently Asked Questions: Franchisor & Brand Licensor Recovery",
+      "Primary Statutory Authorities & Official Enforcement Portals"
+    ],
+    "components": [
+      "Breadcrumbs",
+      "FranchisorHubTableOfContents",
+      "FranchisorHubScenarioTabs",
+      "FranchisorHubCTA",
+      "RelatedRecoveryGuides"
+    ],
+    "faqQuestions": [
+      "What legal action can a franchisor take if a terminated franchisee refuses to remove the signboard?",
+      "How can a franchisor legally prove POS cash-skimming and personal UPI QR royalty evasion?",
+      "Can an EV or automobile OEM block a defaulting dealer's Vahan portal credentials?",
+      "What should a brand do if a FOCO store property owner padlocks the store with equipment inside?",
+      "Are franchise agreement disputes eligible for fast-track Commercial Courts?",
+      "Can a franchisor send bulk legal notices across 20+ defaulting stores simultaneously?"
+    ],
+    "wordCount": 2743,
+    "builtAt": "2026-11-19T07:33:41.790Z"
+  },
+  {
+    "id": "B2B-268",
+    "url": "/management-consulting-esg-iso-cyber-audit-advisory-milestone-recovery",
+    "archetype": "G1",
+    "h2s": [
+      "Why Clients Suffer \"Amnesia\" Once Govt Subsidies & Audits Clear",
+      "5-Stage Advisory Milestone & Success-Fee Recovery SOP",
+      "Statutory Remedy Matrix: Order 37, MSMED & Public Portals",
+      "4 Commercial Advisory Default Scenarios (Interactive Playbooks)",
+      "Worked Ledger: ₹10 Cr PLI Subsidy & ₹49L Advisory Fee Default",
+      "Mandatory Advisory Evidence & BSA 2023 s.63 Audit Checklist",
+      "Launch Your Advisory Fee Notice or Institutional Portfolio Recovery",
+      "IND-23 Professional Advisory & Consultant Recovery Network",
+      "Frequently Asked Questions: Advisory & Milestone Fee Recovery",
+      "Primary Statutory Authorities, Standards & Official Portals"
+    ],
+    "components": [
+      "Breadcrumbs",
+      "ManagementConsultingTableOfContents",
+      "ManagementConsultingScenarioTabs",
+      "ManagementConsultingCTA",
+      "RelatedRecoveryGuides"
+    ],
+    "faqQuestions": [
+      "Can a client legally withhold an advisory milestone by claiming 'our internal team did the real work' after receiving a government subsidy?",
+      "How do boutique management consulting firms qualify for MSMED Act Section 15–18 and Section 43B(h) protection?",
+      "Can an advisory firm use Copyright Act Section 51 to stop an unpaid client from using audit reports or ESG disclosures?",
+      "What is the fastest legal remedy to recover a 3% to 8% state industrial subsidy (PLI / SGST) success fee?",
+      "What happens if an NBFC or FinTech files a CERT-In cyber-audit sign-off with the RBI but refuses to pay the auditor?",
+      "How does Section 43B(h) of the Income Tax Act force hospitals and corporate clients to clear advisory fees before March 31?",
+      "What electronic evidence is required under Section 63 of the Bharatiya Sakshya Adhiniyam, 2023 for advisory milestone claims?"
+    ],
+    "wordCount": 2580,
+    "builtAt": "2026-11-19T13:00:00+05:30"
+  },
+  {
     "id": "B2B-244",
     "url": "/rice-dal-flour-sugar-edible-oil-mill-wholesale-buyer-recovery",
     "archetype": "G1",

@@ -1114,6 +1114,12 @@ const CLUSTERS: Record<string, { heading: string; items: GuideItem[] }> = {
         desc: "Fast-track civil recovery on written discharge undertakings, corporate credit letters, and Form 26AS 194J fees.",
       },
       {
+        title: "CRO & NABL Testing Lab Debt Recovery: Failed BA/BE & Sample Specs",
+        href: "/clinical-research-cro-testing-laboratory-nabl-unpaid-invoice-recovery",
+        tag: "CRO & Lab Recovery",
+        desc: "Enforce ISO 17025 scientific neutrality, hold final study reports, and recover unpaid trial milestones via Order XXXVII CPC.",
+      },
+      {
         title: "Bulk Recovery Cases All-in-One Affordable Solutions",
         href: "/bulk-recovery-cases-all-in-one-affordable-solutions",
         tag: "CSV Batch Desk",
@@ -1381,6 +1387,12 @@ const CLUSTERS: Record<string, { heading: string; items: GuideItem[] }> = {
         desc: "Enforce restoration liability, security deposit set-offs, and damage recovery against defaulting occupiers.",
       },
       {
+        title: "CRO & NABL Testing Lab Debt Recovery: Failed BA/BE & Sample Specs",
+        href: "/clinical-research-cro-testing-laboratory-nabl-unpaid-invoice-recovery",
+        tag: "CRO & Lab Recovery",
+        desc: "Enforce ISO 17025 scientific neutrality, hold final study reports, and recover unpaid trial milestones via Order XXXVII CPC.",
+      },
+      {
         title: "Bulk Recovery Cases All-in-One Affordable Solutions",
         href: "/bulk-recovery-cases-all-in-one-affordable-solutions",
         tag: "Bulk CSV Desk",
@@ -1581,6 +1593,12 @@ const CLUSTERS: Record<string, { heading: string; items: GuideItem[] }> = {
         href: "/law/order-37-summary-suit-money-recovery",
         tag: "Order 37 CPC",
         desc: "Fast-track admitted GST invoices, signed delivery challans, and hospital POs without a full-length civil trial.",
+      },
+      {
+        title: "CRO & NABL Testing Lab Debt Recovery: Failed BA/BE & Sample Specs",
+        href: "/clinical-research-cro-testing-laboratory-nabl-unpaid-invoice-recovery",
+        tag: "CRO & Lab Recovery",
+        desc: "Enforce ISO 17025 scientific neutrality, hold final study reports, and recover unpaid trial milestones via Order XXXVII CPC.",
       },
       {
         title: "Bulk Recovery Cases All-in-One Affordable Solutions",
@@ -2163,10 +2181,126 @@ const CLUSTERS: Record<string, { heading: string; items: GuideItem[] }> = {
       },
     ],
   },
+  professionalServicesB2B: {
+    heading: "Related CA, Architect, Engineering, Law & Advisory Fee Recovery Guides",
+    items: [
+      {
+        title: "CAs, Architects, Engineers & M&A Advisors Fee Recovery Hub",
+        href: "/industries/ca-architects-consultants-professional-fee-recovery",
+        tag: "IND-23 Pillar Hub",
+        desc: "Council-ethics-safe recovery for CAs, architects, engineers, law firms, PCS, CRO/NABL labs, and debt/M&A deal advisors.",
+      },
+      {
+        title: "Management Consulting, ESG & Cyber Audit Milestone Recovery",
+        href: "/management-consulting-esg-iso-cyber-audit-advisory-milestone-recovery",
+        tag: "Advisory & Audits",
+        desc: "Enforce advisory milestone agreements, Order XXXVII CPC, and Section 43B(h) for withheld cyber audit, NABH, and subsidy fees.",
+      },
+      {
+        title: "CA Unpaid Audit Fee Recovery: ICAI Clause (8) & Civil Law",
+        href: "/chartered-accountant-ca-unpaid-audit-tax-retainer-recovery-icai-noc",
+        tag: "ICAI Clause (8)",
+        desc: "Block incoming auditors under ICAI Chapter VII for Balance-Sheet-provisioned undisputed audit fees without breaching R.D. Saxena rules.",
+      },
+      {
+        title: "PCS, IBBI Registered Valuer & Insolvency RP Fee Recovery",
+        href: "/company-secretary-pcs-registered-valuer-ip-insolvency-fee-recovery",
+        tag: "ICSI & IBBI s.5(13)",
+        desc: "Recover upfront MCA V3 SH-7 stamp duty advances via Contract Act s.69/222 & Order XXXVII CPC, and enforce CoC-ratified CIRP/Valuer fees u/s 5(13)/60(5) IBC.",
+      },
+      {
+        title: "Structural, MEP, PMC & Engineering Consultant Fee Recovery",
+        href: "/structural-mep-pmc-geotechnical-engineering-consultant-bill-recovery",
+        tag: "Engineers & PMC",
+        desc: "Invoke Contract Act ss.51–52 reciprocal promises before OC/EC sign-offs alongside MSMED s.16 (3x RBI), s.43B(h), and Order XXXVII CPC.",
+      },
+      {
+        title: "Law Firm & IP Attorney Fee Recovery (R.D. Saxena Safe)",
+        href: "/law-firm-litigation-counsel-ip-attorney-unpaid-corporate-fee-recovery",
+        tag: "R.D. Saxena & Order 37",
+        desc: "Recover unpaid corporate litigation fee memos and IPO patent disbursements via CPC Order III Rule 4(2) discharge orders and Order XXXVII CPC.",
+      },
+      {
+        title: "Consultancy & Professional Retainer Fee Recovery",
+        href: "/recovery/consultancy-fees",
+        tag: "Consultancy Fees",
+        desc: "Pre-litigation advocate notices and Order XXXVII CPC summary recovery for unpaid B2B advisory and retainer bills.",
+      },
+    ],
+  },
+  franchiseDealershipB2B: {
+    heading: "Related Franchisor, Brand Licensor & OEM Dealership Recovery Guides",
+    items: [
+      {
+        title: "Franchisors, Brand Licensors & EV/Auto OEM Network Recovery",
+        href: "/industries/franchisors-brand-licensors-oem-dealership-recovery",
+        tag: "Franchisor Hub",
+        desc: "Commercial Courts Act s.2(1)(c)(ix) and Trade Marks Act s.135 recovery for QSR, retail & auto networks.",
+      },
+      {
+        title: "The Rogue Holdover Franchisee Playbook: Stopping Signboard Misuse",
+        href: "/terminated-rogue-franchisee-using-brand-signboard-royalty-recovery",
+        tag: "Signboard Injunction",
+        desc: "Compel immediate removal of exterior ACP glow-sign boards, delist rogue outlets from Swiggy and Zomato, and secure ad-interim injunctions.",
+      },
+      {
+        title: "Franchisee POS Cash-Skimming & Sales Under-Reporting Recovery",
+        href: "/franchisee-pos-cash-skimming-sales-underreporting-royalty-audit-recovery",
+        tag: "POS Audit",
+        desc: "Detect counter cash skimming and personal UPI QR evasion; reconstruct true gross sales using packaging consumption ratios.",
+      },
+      {
+        title: "Distributor & Dealer Dues Recovery",
+        href: "/distributor-dealer-dues-recovery",
+        tag: "Dealer Dues",
+        desc: "Fast-track recovery of unpaid dealer, distributor and stockist invoices and bounced cheques.",
+      },
+      {
+        title: "Online Dispute Resolution (ODR) India",
+        href: "/online-dispute-resolution-india",
+        tag: "Fast Arbitration",
+        desc: "Binding digital arbitration and conciliation for outstation franchise and commercial disputes.",
+      },
+      {
+        title: "Bulk Recovery Cases & Institutional Solutions",
+        href: "/bulk-recovery-cases-all-in-one-affordable-solutions",
+        tag: "Bulk CSV",
+        desc: "Batch legal notice dispatch and recovery automation for 10 to 10,000+ defaulting retail outlets.",
+      },
+    ],
+  },
 };
 
 function detectCluster(pathname: string): { heading: string; items: GuideItem[] } {
   const p = pathname.toLowerCase();
+  if (
+    p.includes("franchisors-brand-licensors-oem-dealership-recovery") ||
+    p.includes("terminated-rogue-franchisee-using-brand-signboard") ||
+    p.includes("franchisee-pos-cash-skimming") ||
+    p.includes("fico-foco-franchise-investor") ||
+    p.includes("ev-two-wheeler-three-wheeler-automobile-oem-dealer") ||
+    p.includes("preschool-k12-edtech-franchise-royalty") ||
+    p.includes("brand-licensing-merchandising-minimum-royalty") ||
+    p.includes("central-kitchen-commissary-franchise-supply") ||
+    p.includes("master-franchisee-regional-development") ||
+    p.includes("franchisor-royalty-default-termination-signboard")
+  ) {
+    return CLUSTERS.franchiseDealershipB2B;
+  }
+  if (
+    p.includes("ca-architects-consultants") ||
+    p.includes("chartered-accountant-ca-unpaid") ||
+    p.includes("architect-interior-consultant") ||
+    p.includes("investment-banker-debt-syndication") ||
+    p.includes("company-secretary-pcs") ||
+    p.includes("structural-mep-pmc") ||
+    p.includes("law-firm-litigation-counsel") ||
+    p.includes("clinical-research-cro") ||
+    p.includes("management-consulting-esg-iso-cyber") ||
+    p.includes("ca-architect-advisor-professional-fee")
+  ) {
+    return CLUSTERS.professionalServicesB2B;
+  }
   if (
     p.includes("equipment-rental-machinery") ||
     p.includes("equipment-rental-arrears-gate-pass") ||
@@ -2361,6 +2495,7 @@ function detectCluster(pathname: string): { heading: string; items: GuideItem[] 
     p.includes("hospital-tpa-insurance") ||
     p.includes("cghs-echs") ||
     p.includes("hospital-corporate-credit") ||
+    p.includes("clinical-research-cro-testing-laboratory") ||
     p.includes("diagnostic-lab-pathology") ||
     p.includes("ivf-dental-cosmetic") ||
     p.includes("visiting-consultant-doctor") ||
