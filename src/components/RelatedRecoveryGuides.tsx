@@ -439,6 +439,48 @@ const CLUSTERS: Record<string, { heading: string; items: GuideItem[] }> = {
     heading: "Related Cheque Bounce, Banking Auto-Debit & Cyber Fraud Guides",
     items: [
       {
+        title: "Hypothecated Vehicle & Tractor Loan Repossession Law for Banks",
+        href: "/vehicle-tractor-hypothecation-loan-repossession-notice-banks",
+        tag: "Vehicle & Tractor SOP",
+        desc: "Prakash Kaur & Citicorp compliant 4-notice sequence: pre-seizure recall, pre/post SHO police intimation, RTO Form 36 & deficit recovery.",
+      },
+      {
+        title: "Agriculture & KCC NPA Recovery: s.31(i), RRC & Lok Adalat",
+        href: "/agriculture-kcc-kisan-credit-card-non-wilful-npa-recovery",
+        tag: "Agri & KCC NPA",
+        desc: "Blue Coast Hotels s.31(i) actual-use SARFAESI test for poultry/cold storage units, State Collector RRC Acts, tractor hypothecation, and 0%-fee harvest Lok Adalats.",
+      },
+      {
+        title: "Borrower Defaulted on OTS? Revocation & Debt Revival Guide",
+        href: "/ots-one-time-settlement-default-revocation-legal-notice-bank",
+        tag: "IND-01 OTS Revival",
+        desc: "Draft T+1 OTS Revocation Notices citing SBI v. Arvindra Electronics & Bijnor Urban Co-op to appropriate upfront tokens and restore full dues.",
+      },
+      {
+        title: "SMA-1 & SMA-2 Cure Notice Strategy for Banks (61–90 DPD)",
+        href: "/sma-1-sma-2-early-delinquency-cure-notice-strategy-banks",
+        tag: "SMA-2 Cure",
+        desc: "Arrest Day 61–90 NPA slippage under RBI IRACP daily day-end stamping with automated Day-62 Advocate Cure Notices.",
+      },
+      {
+        title: "Credit Card NPA Recovery for Banks: Legal Notice & ODR Guide",
+        href: "/credit-card-default-bulk-legal-notice-arbitration-banks",
+        tag: "Credit Card ODR",
+        desc: "Post-Perkins & CORE neutral ODR arbitration, RBI Credit Card & Penal Charge compliance, CICRA reporting & bulk omnichannel notices.",
+      },
+      {
+        title: "Bank Loan Recovery Below ₹20 Lakh (Outside DRT): 5 Routes",
+        href: "/bank-loan-recovery-below-20-lakhs-drt-threshold-options",
+        tag: "Sub-₹20L Recovery",
+        desc: "Compare Order 37 Summary Suits, Commercial Court s.12A, PSS Act s.25, Arbitration & Lok Adalat for retail bank NPAs.",
+      },
+      {
+        title: "SARFAESI Section 14 DM/CMM Physical Possession Bank Guide",
+        href: "/sarfaesi-section-14-dm-cmm-physical-possession-workflow",
+        tag: "SARFAESI s.14",
+        desc: "Defect-free 9-point statutory affidavit, CERSAI verification, 30–60 day DM timeline, and High Court Article 226 mandamus.",
+      },
+      {
         title: "Section 25 PSS Act (e-NACH / ECS Bounce) Notice Format",
         href: "/templates/section-25-pss-act-nach-bounce-legal-notice-format",
         tag: "IND-02 Template",
@@ -491,6 +533,12 @@ const CLUSTERS: Record<string, { heading: string; items: GuideItem[] }> = {
         href: "/tools/sarfaesi-drt-bank-recovery-forum-calculator",
         tag: "B2B Bank Calculator",
         desc: "Check SARFAESI s.31(h)/(i)/(j) & NBFC ₹20L rules, compute exact RDB Act Rule 7 DRT fees (₹1.5L cap), and plot the 60+15+30 day calendar.",
+      },
+      {
+        title: "Section 25 PSS Act: Complete Lender Playbook for e-NACH, ECS & UPI AutoPay Dishonour",
+        href: "/law/section-25-payment-and-settlement-systems-act-nach-bounce",
+        tag: "IND-02 Statute",
+        desc: "Master Section 25(1)–(5) PSS Act 30+15+30 day timelines, qualifying NPCI return codes, creditor home-bank s.142(2) jurisdiction & batch criminal prosecution.",
       },
       {
         title: "High-Velocity, RBI-Compliant Legal Recovery & Bulk Notice Automation for NBFCs, Fintechs, HFCs & MFIs",
@@ -553,10 +601,46 @@ const CLUSTERS: Record<string, { heading: string; items: GuideItem[] }> = {
         desc: "Pre-seizure recall, Section 9 ex-parte Court Receiver orders, MV Act s.51(5) Vahan Form 36 & post-auction Loss-on-Sale guarantor suits.",
       },
       {
+        title: "Education Loan NPA Recovery: NRI Student & Co-Borrower",
+        href: "/education-loan-default-borrower-co-applicant-recovery-banks",
+        tag: "IND-01 Education NPA",
+        desc: "Bank SOP for overseas student defaults: Contract Act s.43 parent co-obligor enforcement, CPC Order V Rule 25 electronic notices & CGFSEL 75% claims.",
+      },
+      {
+        title: "Mudra & CGTMSE Unsecured Bank Loan Recovery & Claims",
+        href: "/mudra-cgtmse-collateral-free-msme-loan-recovery-banks",
+        tag: "IND-01 CGTMSE",
+        desc: "How banks satisfy CGTMSE / NCGTC legal-initiation prerequisites, handle 75/25 claim tranches, and recover unsecured Mudra & MSME NPAs via bulk notices & Lok Adalats.",
+      },
+      {
+        title: "Cooperative Bank & Credit Society Loan Recovery: s.84 & SARFAESI",
+        href: "/cooperative-bank-credit-society-arbitration-recovery-section-84",
+        tag: "IND-01 Co-op s.84",
+        desc: "UCB, DCCB & Credit Society playbook: Pandurang Chaugule SARFAESI, MSCS s.84 arbitration, State s.101 certificates & two-surety notices.",
+      },
+      {
+        title: "e-DRT Original Application (Section 19) Bank Filing Playbook",
+        href: "/e-drt-original-application-filing-guide-for-banks",
+        tag: "IND-01 DRT OA",
+        desc: "SAMB manual for Section 19 RDB Act Original Applications (≥ ₹20L): Bankers' Books s.2A & BSA s.63 CBS certificates, Rule 7 fee slabs & s.19(12)-(15) attachment.",
+      },
+      {
+        title: "Bank Pre-Litigation Lok Adalat Bulk NPA Settlement Playbook",
+        href: "/bank-pre-litigation-lok-adalat-bulk-npa-settlement-guide",
+        tag: "IND-01 Lok Adalat",
+        desc: "Turn quarterly National Lok Adalats into high-conversion NPA recovery drives with bulk DLSA CSVs, T-30 WhatsApp+RPAD OTS priming & s.21 decrees.",
+      },
+      {
         title: "Pre-Litigation Loan Recall & NPA Legal Recovery Infrastructure for Indian Banks",
         href: "/industries/banks-loan-recovery",
         tag: "IND-01 Bank Hub",
         desc: "Multi-track banking recovery hub covering SARFAESI s.13(2)/14, sub-₹20L DRT alternatives, Pre-Litigation Lok Adalat, PSS s.25 & bulk CSV notices.",
+      },
+      {
+        title: "SARFAESI Section 13(2) & 13(3A) Bank Compliance Checklist",
+        href: "/law/sarfaesi-section-13-2-demand-notice-bank-guide",
+        tag: "SARFAESI 13(2) Bank Guide",
+        desc: "Prevent DRT SA quashing. Bank checklist for Section 13(2) itemized breakup, NPA date, Rule 3 service & Section 13(3A) 15-day replies.",
       },
       {
         title: "How Banks Can Reduce Recovery Costs Through Legal Outsourcing",
@@ -1232,6 +1316,12 @@ const CLUSTERS: Record<string, { heading: string; items: GuideItem[] }> = {
     heading: "Related Manufacturing, OEM, MSME & Industrial Recovery Guides",
     items: [
       {
+        title: "Corporate, School & Uniform Manufacturer Debt Recovery",
+        href: "/corporate-school-hospital-uniform-bulk-order-payment-recovery",
+        tag: "IND-13 Uniforms",
+        desc: "Defeat belated fitting excuses on ₹0-resale custom-logo uniforms using Size-Set estoppel, Sale of Goods Act s.55 & MSMED s.15–18.",
+      },
+      {
         title: "TMT & Structural Steel Trader Credit Default Recovery",
         href: "/tmt-steel-structural-iron-trader-credit-default-recovery-india",
         tag: "IND-14 Steel Playbook",
@@ -1456,6 +1546,12 @@ const CLUSTERS: Record<string, { heading: string; items: GuideItem[] }> = {
         href: "/cold-chain-reefer-transport-unpaid-freight-spoilage-counterclaim",
         tag: "Reefer Freight Recovery",
         desc: "Defeat bogus spoilage debit notes and warm-loading claims using Carriage by Road Act s.10/12 exceptions and BSA s.63 telematics logs.",
+      },
+      {
+        title: "Courier Aggregator Negative Seller Wallet & RTO Recovery",
+        href: "/courier-aggregator-hyperlocal-logistics-seller-negative-wallet-recovery",
+        tag: "Courier Bulk Recovery",
+        desc: "Enforce IT Act s.10A clickwrap terms & BSA s.63 weight/AWB logs to recover abandoned negative D2C seller wallets in 1,000+ notice batches.",
       },
       {
         title: "Unpaid Business Invoices Legal Recovery Guide",
@@ -1944,6 +2040,12 @@ const CLUSTERS: Record<string, { heading: string; items: GuideItem[] }> = {
         desc: "RTE-compliant advocate civil recovery notices against earning parents without ever withholding Transfer Certificates.",
       },
       {
+        title: "Private University & College Unpaid Semester Fee Recovery",
+        href: "/private-university-medical-engineering-college-semester-fee-recovery",
+        tag: "University & Hostel",
+        desc: "UGC-compliant recovery of unpaid semester tuition, hostel mess, and diverted education-loan arrears via parent co-guarantors.",
+      },
+      {
         title: "IT, Software & SaaS MSA Payment Default Legal Notice",
         href: "/templates/it-software-saas-msa-payment-default-legal-notice",
         tag: "SaaS Notice Template",
@@ -2097,6 +2199,12 @@ const CLUSTERS: Record<string, { heading: string; items: GuideItem[] }> = {
     heading: "Related Agri-Inputs, FPO, Dairy & Dealer Recovery Guides",
     items: [
       {
+        title: "Cold Storage Unpaid Rent: Lawful Stock Auction & Deficit Recovery",
+        href: "/cold-storage-unpaid-rent-commodity-lien-lawful-auction-notice-india",
+        tag: "Cold Storage Law",
+        desc: "Execute 15/7-day Registered Pre-Auction Notices under Contract Act ss.170/176 & State Cold Storage Acts, defeat Consumer Court claims, and sue for deficits.",
+      },
+      {
         title: "FPO (Farmer Producer Company) & Dairy B2B Buyer Recovery",
         href: "/fpo-farmer-producer-company-cooperative-dairy-b2b-buyer-recovery",
         tag: "FPO & Dairy B2B",
@@ -2107,6 +2215,12 @@ const CLUSTERS: Record<string, { heading: string; items: GuideItem[] }> = {
         href: "/agrochemical-pesticide-seed-dealer-seasonal-credit-default-recovery",
         tag: "Agri-Inputs B2B",
         desc: "Defeat post-harvest oral 'poor germination / pesticide efficacy' excuses using Seeds Act / Insecticides Act sampling rules and NI s.138 PDCs.",
+      },
+      {
+        title: "Poultry, Cattle & Aqua Feed Dealer Credit Default Recovery",
+        href: "/poultry-feed-cattle-feed-aqua-shrimp-feed-dealer-integrator-recovery",
+        tag: "Feed & Integrator",
+        desc: "Rebut viral mortality & high FCR feed-blame with Batch Retention Lab COAs, prosecute night bird-lifting under BNS s.316, and enforce NI s.138 PDCs.",
       },
       {
         title: "Distributor & Dealer Dues Recovery in India",
@@ -2143,6 +2257,12 @@ const CLUSTERS: Record<string, { heading: string; items: GuideItem[] }> = {
   equipmentRentalB2B: {
     heading: "Related Equipment Rental, Scaffolding & Contractor Recovery Guides",
     items: [
+      {
+        title: "Corporate Laptop & MacBook Rental Startup Default Recovery",
+        href: "/corporate-it-laptop-macbook-workstation-rental-startup-default-recovery",
+        tag: "DaaS & IT Leasing",
+        desc: "Recover scattered WFH MacBooks & rental arrears using ABM/Autopilot MDM locks, BNS s.316 & buyout notices.",
+      },
       {
         title: "Unreturned Rented Scaffolding & Formwork (BNS s.316)",
         href: "/unreturned-rented-scaffolding-shuttering-formwork-bns-316-recovery",
@@ -2221,6 +2341,12 @@ const CLUSTERS: Record<string, { heading: string; items: GuideItem[] }> = {
         desc: "Recover unpaid corporate litigation fee memos and IPO patent disbursements via CPC Order III Rule 4(2) discharge orders and Order XXXVII CPC.",
       },
       {
+        title: "CA, Architect & Deal-Advisor Fee Recovery Legal Notice Pack",
+        href: "/templates/ca-architect-advisor-professional-fee-recovery-legal-notice",
+        tag: "Notice Templates",
+        desc: "Council-ethics-verified notice formats leveraging UDIN logs, Form 26AS 194J TDS admissions, Balance Sheet provisions, and COA/Copyright protections.",
+      },
+      {
         title: "Consultancy & Professional Retainer Fee Recovery",
         href: "/recovery/consultancy-fees",
         tag: "Consultancy Fees",
@@ -2231,6 +2357,12 @@ const CLUSTERS: Record<string, { heading: string; items: GuideItem[] }> = {
   franchiseDealershipB2B: {
     heading: "Related Franchisor, Brand Licensor & OEM Dealership Recovery Guides",
     items: [
+      {
+        title: "EV 2W/3W OEM Dealership Credit & Spare-Parts Recovery",
+        href: "/ev-two-wheeler-three-wheeler-automobile-oem-dealer-credit-recovery",
+        tag: "EV OEM Credit",
+        desc: "Enforce Sale of Goods s.25 title reservation, Vahan Form 21 holds, BG encashment, and NI s.138 against defaulting EV dealers.",
+      },
       {
         title: "Franchisors, Brand Licensors & EV/Auto OEM Network Recovery",
         href: "/industries/franchisors-brand-licensors-oem-dealership-recovery",
@@ -2345,6 +2477,7 @@ function detectCluster(pathname: string): { heading: string; items: GuideItem[] 
     p.includes("edtech-b2b-smart-class") ||
     p.includes("schools-universities-edtech") ||
     p.includes("how-private-schools-recover") ||
+    p.includes("private-university-medical-engineering-college") ||
     p.includes("corporate-training-l-and-d")
   ) {
     return CLUSTERS.educationB2B;
@@ -2454,7 +2587,7 @@ function detectCluster(pathname: string): { heading: string; items: GuideItem[] 
     p.includes("industrial-raw-material") ||
     p.includes("export-machinery") ||
     p.includes("garment-buying-house") ||
-    p.includes("textile") ||
+    p.includes("textile") || p.includes("uniform-bulk-order") ||
     p.includes("retail-fashion") ||
     p.includes("spinning-mill") ||
     p.includes("tmt-steel-structural")
@@ -2593,6 +2726,7 @@ p.includes("school") ||
     return CLUSTERS.property;
   }
   if (
+    p.includes("sarfaesi") ||
     p.includes("atm") ||
     p.includes("insurance-premium-auto-debited") ||
     p.includes("cheque") ||
@@ -2617,9 +2751,11 @@ p.includes("school") ||
     p.includes("ni-act") ||
     p.includes("nbfc") ||
     p.includes("section-25-nach") ||
+    p.includes("section-25-payment-and-settlement-systems") ||
     p.includes("fintech") ||
     p.includes("hfc") ||
-    p.includes("mfi")
+    p.includes("mfi") ||
+    p.includes("e-drt")
   ) {
     return CLUSTERS.banking;
   }
@@ -2691,7 +2827,7 @@ p.includes("school") ||
   ) {
     return CLUSTERS.construction || CLUSTERS.general;
   }
-  if (p.includes("fpo-farmer-producer")) {
+  if (p.includes("fpo-farmer-producer") || p.includes("cold-storage-unpaid-rent")) {
     return CLUSTERS.agroInputsB2B;
   }
   if (

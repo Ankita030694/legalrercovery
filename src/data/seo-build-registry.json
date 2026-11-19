@@ -1,5 +1,546 @@
 [
   {
+    "id": "B2B-245",
+    "url": "/poultry-feed-cattle-feed-aqua-shrimp-feed-dealer-integrator-recovery",
+    "archetype": "G1",
+    "h2s": [
+      "Why Poultry, Dairy & Aqua-Feed Ledgers Collapse at Harvest",
+      "Batch Retention Mycotoxin Reports & BNS s.316 Bailment Law",
+      "5-Step Feed Dealer & Contract Integrator Recovery Flowchart",
+      "Statutory Enforcement Matrix for Feed Mills & Integrators",
+      "4 Feed Credit Default & Bird-Lifting Playbooks (Interactive)",
+      "Worked Recovery Ledger: ₹28.5 Lakh Aqua & Broiler Credit",
+      "BSA 2023 s.63 Feed Mill, Lab & Farm Evidence Checklist",
+      "Launch Single ₹999 Test Notice or Bulk Feed Dealer CSV",
+      "IND-21 Agri-Feed Calculators, Templates & Sibling Guides",
+      "FAQs: Poultry, Cattle & Shrimp/Aqua-Feed Credit Recovery",
+      "Official Statutory Portals & Bare Act Authorities"
+    ],
+    "components": [
+      "Breadcrumbs",
+      "FeedDealerTableOfContents",
+      "FeedDealerScenarioTabs",
+      "FeedDealerCTA",
+      "RelatedRecoveryGuides"
+    ],
+    "faqQuestions": [
+      "How can a poultry or shrimp feed manufacturer defeat oral \"high FCR\" or \"viral mortality\" blame raised after harvest?",
+      "What legal action can a broiler integrator take when a contract farmer secretly sells live birds at night (\"bird lifting theft\")?",
+      "Are post-dated or undated security cheques taken from aqua-feed dealers in Andhra Pradesh and Odisha enforceable under Section 138?",
+      "Can a cattle or poultry feed mill recover 3x RBI compound interest from defaulting dealers under the MSMED Act, 2006?",
+      "How do we enforce an equitable mortgage or personal guarantee taken from a high-ticket feed distributor?",
+      "What digital records must our credit and QC teams preserve under BSA 2023 Section 63 before issuing a demand notice?",
+      "Can a regional feed manufacturer issue legal notices to 100–500 defaulting dealers or contract farmers in one post-harvest batch?"
+    ],
+    "wordCount": 2250,
+    "artefacts": [
+      "40-60w Executive Creditor Answer Box",
+      "5-Step Feed Dealer & Contract Integrator Recovery Flowchart SVG + Mobile Cards",
+      "Dark-Header 5-Row Statutory Enforcement Matrix Table",
+      "Interactive 4-Scenario Feed Credit Default & Bird-Lifting Playbooks",
+      "Worked ₹28.5 Lakh Aqua & Broiler Recovery Ledger (MSMED 3x RBI Interest)",
+      "8-Point BSA 2023 s.63 Feed Mill, Lab & Farm Evidence Checklist + 7 FAQ Accordions"
+    ],
+    "sources": [
+      "Bharatiya Nyaya Sanhita (BNS), 2023 (ss.316, 318)",
+      "Indian Contract Act, 1872 (ss.128, 148–161)",
+      "The Sale of Goods Act, 1930 (ss.16, 42)",
+      "The Negotiable Instruments Act, 1881 (ss.138, 139, 143A)",
+      "Micro, Small and Medium Enterprises Development Act, 2006 (ss.15–18, 24)",
+      "Bharatiya Sakshya Adhiniyam (BSA), 2023 (s.63)"
+    ],
+    "builtAt": "2026-11-19T17:20:00+05:30"
+  },
+  {
+    "id": "B2B-202",
+    "url": "/private-university-medical-engineering-college-semester-fee-recovery",
+    "archetype": "G1",
+    "h2s": [
+      "Why Universities Lose ₹2–15 Cr Under UGC Certificate Bans",
+      "5-Stage UGC-Compliant Fee Recovery Decision Tree",
+      "Statutory Matrix: UGC Rules, Co-Guarantors & Cheque Bounce",
+      "4 University & Medical College Default Scenarios",
+      "Worked Campus Ledger: ₹1.84 Cr Across 45 Final-Year Arrears",
+      "Registrar & Accounts BSA 2023 s.63 Evidence Checklist",
+      "Recover Single Case (₹999) or Upload Campus Defaulter CSV",
+      "FAQs: University Semester, Hostel & Loan-Diversion Recovery",
+      "Statutory Authorities, Portals & IND-17 Recovery Guides"
+    ],
+    "components": [
+      "Breadcrumbs",
+      "UniversityFeeTableOfContents",
+      "UniversityFeeScenarioTabs",
+      "UniversityFeeNoticeCTA",
+      "RelatedRecoveryGuides"
+    ],
+    "faqQuestions": [
+      "Can a private university or medical college withhold original 10th/12th mark-sheets or degree certificates for unpaid semester fees?",
+      "How can a university recover fees when a bank disburses an education loan into the student's personal account instead of the college account?",
+      "Are parents legally liable as co-guarantors for an adult university student's unpaid tuition and hostel arrears?",
+      "Can a university prosecute a student or parent under Section 138 NI Act or Section 25 PSS Act for bounced semester fee PDCs or NACH mandates?",
+      "Are medical and dental seat-leaving bonds enforceable if a student drops out mid-course?",
+      "How do Indian private universities recover unpaid tuition from foreign or NRI students who return abroad?",
+      "How can a multi-campus university trust recover arrears from 100 to 500+ defaulting students without hiring a large litigation team?"
+    ],
+    "wordCount": 2250,
+    "artefacts": [
+      "40-60w Executive Creditor Answer Box",
+      "5-Stage UGC-Compliant Fee Recovery Decision Tree SVG + Mobile Cards",
+      "Dark-Header 6-Row Statutory Enforcement Matrix Table",
+      "Interactive 4-Scenario University & Medical College Default Explorer",
+      "Worked ₹1.84 Cr Campus Recovery Ledger (45 Accounts)",
+      "8-Point Registrar & Accounts BSA 2023 s.63 Evidence Checklist + 7 FAQ Accordions"
+    ],
+    "sources": [
+      "UGC Notification on Refund of Fees and Non-Retention of Original Certificates",
+      "Indian Contract Act, 1872 (ss. 10, 37, 43, 73, 74, 128)",
+      "Negotiable Instruments Act, 1881 (ss. 138, 142(2), 143A)",
+      "Payment and Settlement Systems Act, 2007 (s. 25)",
+      "Code of Civil Procedure, 1908 (Order XXXVII, Order V Rule 25)",
+      "Bharatiya Sakshya Adhiniyam, 2023 (s. 63)"
+    ],
+    "builtAt": "2026-11-19T17:12:00+05:30"
+  },
+  {
+    "id": "B2B-121",
+    "url": "/courier-aggregator-hyperlocal-logistics-seller-negative-wallet-recovery",
+    "archetype": "G1",
+    "h2s": [
+      "Why D2C Seller Wallets Turn Negative After Early COD Payouts",
+      "Negative Wallet Recovery Decision Tree (₹15K to ₹5L+)",
+      "Statutory Enforcement Matrix: Clickwrap, Weight & Fraud",
+      "4 Courier Aggregator Default Scenarios & Counter-Playbooks",
+      "1,000-Notice Monthly CSV Batch SOP: Email, WhatsApp & RPAD",
+      "Worked Recovery Ledger: 500 Negative Seller Wallets (₹3.4 Cr)",
+      "BSA 2023 s.63 Digital Evidence & Audit-Trail Checklist",
+      "Start Single Test Recovery or Upload Bulk Seller CSV",
+      "FAQs: Courier Aggregator Negative Wallet & RTO Recovery",
+      "Verified Statutes, Sibling Logistics Guides & Portals"
+    ],
+    "components": [
+      "Breadcrumbs",
+      "CourierWalletTableOfContents",
+      "CourierWalletScenarioTabs",
+      "CourierWalletCTA",
+      "RelatedRecoveryGuides"
+    ],
+    "faqQuestions": [
+      "Are clickwrap Merchant Shipping Terms enforceable to recover a negative courier seller wallet in India?",
+      "How can shipping aggregators recover RTO and volumetric weight arrears when COD payouts were remitted early?",
+      "What proof defeats D2C seller objections to volumetric weight discrepancy charges?",
+      "Can a courier company send 500 to 1,000+ legal notices in a single monthly batch via CSV?",
+      "When should an aggregator escalate a negative wallet account to criminal action under BNS s.316/s.318?",
+      "What is the typical ticket threshold for moving from batch legal notices to Order 37 CPC or Arbitration?",
+      "Can an aggregator set off a negative seller wallet against another brand or GSTIN operated by the same promoter?"
+    ],
+    "wordCount": 2250,
+    "artefacts": [
+      "40-60w Executive Creditor Answer Box",
+      "Negative Wallet Recovery Decision Tree SVG + Mobile Stacked Cards",
+      "Dark-Header 6-Statute Enforcement Matrix Table",
+      "Interactive 4-Scenario Courier Aggregator Failure Playbooks",
+      "1,000-Notice Monthly CSV Batch SOP",
+      "Worked 500-Wallet Financial Recovery Ledger (₹3.40 Cr)",
+      "8-Point BSA 2023 s.63 Digital Evidence Checklist + 7 FAQ Accordions"
+    ],
+    "sources": [
+      "Information Technology Act, 2000 (s.10A)",
+      "Indian Contract Act, 1872 (ss.37, 73, 74)",
+      "Bharatiya Sakshya Adhiniyam, 2023 (s.63)",
+      "Code of Civil Procedure, 1908 (Order XXXVII)",
+      "Arbitration and Conciliation Act, 1996 (ss.7(4)(b), 21)",
+      "Bharatiya Nyaya Sanhita, 2023 (ss.316, 318)"
+    ],
+    "builtAt": "2026-11-19T16:39:00+05:30"
+  },
+  {
+    "id": "B2B-020",
+    "url": "/law/section-25-payment-and-settlement-systems-act-nach-bounce",
+    "archetype": "L1",
+    "h2s": [
+      "Why Section 25 PSS Act Replaces Section 138 for Digital Loans",
+      "Section 25(1) & (2) Statutory Clock: 30 + 15 + 30 Days",
+      "NPCI NACH & UPI AutoPay Return Codes: Section 25 Eligibility",
+      "Section 25 PSS Act vs Section 138 NI Act: Lender Matrix",
+      "Territorial Jurisdiction & Verified Supreme Court Precedents",
+      "4 NBFC & Fintech Mandate Dishonour Playbooks",
+      "Borrower Defense Pre-Emption & Batch Filing Checklist",
+      "FAQs: Section 25 PSS Act for NBFCs & Fintechs",
+      "Primary Statutes, NPCI Circulars & Official Portals"
+    ],
+    "components": [
+      "Breadcrumbs",
+      "Section25TableOfContents",
+      "Section25ScenarioTabs",
+      "Section25NoticeCTA",
+      "RelatedRecoveryGuides"
+    ],
+    "faqQuestions": [
+      "Does Section 25 of the Payment and Settlement Systems Act, 2007 apply to UPI AutoPay and e-NACH bounces?",
+      "What are the exact statutory timelines under Section 25 PSS Act (30 + 15 + 30 days)?",
+      "Where can an NBFC or fintech file a Section 25 PSS Act criminal complaint (jurisdiction)?",
+      "Which NPCI NACH return reason codes qualify for Section 25 criminal prosecution?",
+      "What is the key difference between Section 138 NI Act and Section 25 PSS Act?",
+      "Can a lender claim the entire loan recall amount in a Section 25 PSS Act demand notice?",
+      "Can an NBFC run Section 25 PSS Act notices alongside ODR / online arbitration?"
+    ],
+    "wordCount": 2350,
+    "artefacts": [
+      "40-60w Executive Creditor Answer Box",
+      "30+15+30 Day Statutory Clock SVG + Mobile Stacked Cards",
+      "Dark-Header NPCI Return Reason Code Eligibility Matrix",
+      "Dark-Header Section 25 PSS Act vs Section 138 NI Act Comparison Matrix",
+      "4 Supreme Court & Statutory Precedent Cards (Dashrath Rupsingh / s.142(2), Suman Sethi, Meters & Instruments, Sripati Singh)",
+      "Interactive 4-Scenario NBFC & Fintech Mandate Dishonour Playbooks",
+      "5-Point Borrower Defense Pre-Emption Table & 7 FAQ Accordions"
+    ],
+    "sources": [
+      "Payment and Settlement Systems Act, 2007 (Section 25(1)–(5))",
+      "Negotiable Instruments Act, 1881 (Chapter XVII: Sections 138–147, 142(2), 143A, 145)",
+      "NPCI NACH & UPI AutoPay ISO 20022 Return Reason Codes",
+      "Bharatiya Sakshya Adhiniyam, 2023 (Section 63)",
+      "RBI Digital Lending Directions & Fair Practices Code for NBFCs"
+    ],
+    "builtAt": "2026-11-19T16:38:00+05:30"
+  },
+  {
+    "id": "B2B-014",
+    "url": "/vehicle-tractor-hypothecation-loan-repossession-notice-banks",
+    "archetype": "G1",
+    "h2s": [
+      "Why Unlawful Vehicle Seizures Trigger FIRs & ₹10L Damages",
+      "The 4-Notice Statutory Sequence for Lawful Repossession",
+      "Peaceful Seizure vs Section 9 Receiver & SARFAESI Matrix",
+      "Supreme Court Mandates: Prakash Kaur, Citicorp & Magma",
+      "Pre-Seizure & Post-Seizure Police Station Intimation SOP",
+      "RTO Form 36 Fresh RC Transfer & Vahan Blacklist Protocol",
+      "4 Auto, Tractor & Retail CV Repossession Failure Playbooks",
+      "Worked Ledger: Tractor Auction Shortfall & Deficit Recovery",
+      "Panchnama, Valuation & BSA 2023 s.63 Repossession Checklist",
+      "FAQs: Vehicle & Tractor Repossession Notices for Banks",
+      "Primary Statutes, Supreme Court Rulings & Official Portals"
+    ],
+    "components": [
+      "Breadcrumbs",
+      "VehicleRepossessionTableOfContents",
+      "VehicleRepossessionScenarioTabs",
+      "VehicleRepossessionCTA",
+      "RelatedRecoveryGuides"
+    ],
+    "faqQuestions": [
+      "Can an Indian bank legally repossess a hypothecated vehicle or tractor without a court order?",
+      "Why is pre-seizure and post-seizure police station intimation mandatory for banks?",
+      "How many days must a bank wait between repossessing a vehicle and auctioning it?",
+      "How does a bank obtain a Fresh RC via RTO Form 36 under Section 51(5) when the borrower refuses to surrender the original RC?",
+      "Can a bank recover the remaining shortfall (deficit) after auctioning a hypothecated vehicle or tractor?",
+      "When should an Auto or Tractor Collections Head opt for an Arbitration Section 9 Court Receiver instead of field repossession?",
+      "What happens under SARFAESI Act Section 31(i) for agricultural tractors versus commercial vehicles?"
+    ],
+    "wordCount": 3491,
+    "artefacts": [
+      "40-60w Executive Creditor Answer Box",
+      "4-Notice Statutory Sequence Decision Tree SVG + Mobile Stacked Cards",
+      "Dark-Header Statutory Enforcement Matrix (Peaceful Seizure vs s.9 Receiver vs SARFAESI vs Form 36 vs Deficit)",
+      "4 Supreme Court Precedent Cards (Prakash Kaur, Citicorp Maruti, Charanjit Singh Chadha, Magma Fincorp)",
+      "Interactive 4-Scenario Auto, Tractor & Retail CV Repossession Playbooks",
+      "Worked Financial & Deficit Recovery Ledger (₹9.40L Tractor NPA Compliant vs Unlawful Seizure Blowback)",
+      "8-Point Panchnama, Valuation & BSA 2023 s.63 Evidence Checklist + 7 FAQ Accordions"
+    ],
+    "sources": [
+      "ICICI Bank Ltd. v. Prakash Kaur (2007) 2 SCC 711",
+      "Citicorp Maruti Finance Ltd. v. S. Vijayalaxmi (2012) 1 SCC 1",
+      "Charanjit Singh Chadha v. Sudhir Mehra (2001) 7 SCC 417",
+      "Magma Fincorp Ltd. v. Rajesh Kumar Tiwari (2020) 10 SCC 399",
+      "Motor Vehicles Act, 1988 (s.51(5)) & Central Motor Vehicles Rules, 1989 (Rule 61(2) Form 36)",
+      "Arbitration and Conciliation Act, 1996 (s.9, s.17, s.21, s.36)",
+      "SARFAESI Act, 2002 (s.13(2), s.13(4), s.26D, s.31)",
+      "Bharatiya Sakshya Adhiniyam, 2023 (s.63) & Bharatiya Nyaya Sanhita, 2023 (ss.303, 309, 316, 323)"
+    ],
+    "builtAt": "2026-11-19T16:12:00+05:30"
+  },
+  {
+    "id": "B2B-013",
+    "url": "/ots-one-time-settlement-default-revocation-legal-notice-bank",
+    "archetype": "G1",
+    "h2s": [
+      "Why Tactical OTS Defaults Stall Bank SARFAESI Auctions",
+      "OTS Default-to-Revival Decision Tree for NPA Committees",
+      "Arvindra Electronics & Bijnor Co-op: Article 226 Writ Bar",
+      "Statutory Matrix: Time Essence, Deposit Adjustment & Revival",
+      "4 Broken OTS Failure Modes & Bank Counter-Playbooks",
+      "Ironclad OTS Sanction & Revocation Notice Clauses",
+      "Upfront Deposit Forfeiture vs No-Lien Account Appropriation",
+      "Worked Revival Ledger: ₹1.45 Cr NPA vs Failed ₹85L OTS",
+      "Limitation Act s.18/19 Reset & BSA 2023 s.63 Dossier Checklist",
+      "Issue an OTS Revocation Notice or Onboard Zonal NPA Desk",
+      "Related Bank NPA Guides, Forum Calculator & Recall Template",
+      "FAQs: Broken OTS Revocation, Upfront Deposit & Writ Defense",
+      "Verified Statutes, Supreme Court Rulings & RBI Directives"
+    ],
+    "components": [
+      "Breadcrumbs",
+      "OtsRevocationTableOfContents",
+      "OtsRevocationScenarioTabs",
+      "OtsRevocationCTA",
+      "RelatedRecoveryGuides"
+    ],
+    "faqQuestions": [
+      "Can a High Court force a bank to extend an expired One-Time Settlement (OTS) deadline?",
+      "Does a bank have to refund the 10%–25% upfront OTS deposit when the borrower defaults on remaining tranches?",
+      "When an OTS fails, does the bank revive the original NPA principal and contractual interest or only the OTS sum?",
+      "After revoking a broken OTS, must the bank issue a brand-new SARFAESI Section 13(2) 60-day demand notice?",
+      "Does a borrower's failed OTS application help the bank's limitation period for DRT or civil recovery?",
+      "What if the borrower deposits a partial amount after the OTS cutoff date without bank approval?",
+      "How does the RBI June 8, 2023 Compromise Settlement Framework affect repeat OTS proposals after a default?"
+    ],
+    "wordCount": 2450,
+    "artefacts": [
+      "40-60w Executive Creditor Answer Box",
+      "OTS Default-to-Revival SVG Decision Tree + Mobile Cards",
+      "Dark-Header 6-Statute Matrix Table",
+      "Interactive 4-Scenario Broken OTS Counter-Playbook Tabs",
+      "Court-Tested OTS Sanction & T+1 Revocation Model Clauses",
+      "Worked Financial Revival Ledger (₹1.45 Cr NPA vs Failed ₹85L OTS)",
+      "8-Point Limitation Act s.18/19 & BSA 2023 s.63 Dossier Checklist",
+      "4 Supreme Court Precedent Cards & 7 FAQ Accordions"
+    ],
+    "sources": [
+      "State Bank of India v. Arvindra Electronics Pvt. Ltd., (2023) 1 SCC 540",
+      "The Bijnor Urban Cooperative Bank Ltd. v. Meenal Agarwal, (2023) 2 SCC 805",
+      "Dena Bank v. C. Shivakumar Reddy, (2021) 10 SCC 330",
+      "CELIR LLP v. Bafna Motors (Mumbai) Pvt. Ltd., (2024) 2 SCC 1",
+      "RBI Framework for Compromise Settlements and Technical Write-offs (June 8, 2023)",
+      "Indian Contract Act, 1872 (ss. 55, 59-63, 74)",
+      "Limitation Act, 1963 (ss. 18, 19)",
+      "Bharatiya Sakshya Adhiniyam, 2023 (s. 63)"
+    ],
+    "builtAt": "2026-11-19T16:13:00+05:30"
+  },
+  {
+    "id": "B2B-012",
+    "url": "/education-loan-default-borrower-co-applicant-recovery-banks",
+    "archetype": "G1",
+    "h2s": [
+      "Why Overseas Education Loans Hit 6–8%+ Retail NPA in PSU Banks",
+      "Escalation Decision Tree: Collateral Tier & NRI Location Map",
+      "Contract Act s.43: Enforcing Indian Parent Co-Obligor Liability",
+      "CPC Order V Rule 25 & BSA s.63: Serving Overseas NRI Students",
+      "Statutory Matrix: Collateral Tiers, CGFSEL & Recovery Forums",
+      "4 Education Loan NPA Scenarios: Unsecured, NRI & Collateral",
+      "CSIS Subsidy Audit & CGFSEL 75% Guarantee Claim Prerequisites",
+      "Employer Garnishee Attachment & Reciprocating Country Decrees",
+      "Worked Ledger: ₹7.2L CGFSEL Unsecured vs ₹34L Overseas Mortgage",
+      "Overseas Education NPA Dossier & Electronic Service Checklist",
+      "Dispatch a Single Co-Obligor Notice or Bulk Education NPA CSV",
+      "Banking Recovery Hub, Forum Calculator & Recall Notice Pack",
+      "FAQs: Education Loan NPA, NRI Notice Service & Parent Liability",
+      "Verified Bare Acts, SC Precedents & Official Scheme Portals"
+    ],
+    "components": [
+      "Breadcrumbs",
+      "EduLoanTableOfContents",
+      "EduLoanScenarioTabs",
+      "EduLoanCTA",
+      "RelatedRecoveryGuides"
+    ],
+    "faqQuestions": [
+      "Can an Indian bank recover a defaulted education loan directly from the parent co-applicant if the student lives abroad?",
+      "How does a bank serve a court-admissible legal notice on an NRI student borrower who changed their Indian SIM card?",
+      "What is the difference in legal recovery between collateral-free loans up to ₹7.5 Lakh and secured overseas loans above ₹7.5 Lakh?",
+      "Does initiating legal action against the Indian parent co-obligor affect CGFSEL 75% guarantee claim eligibility?",
+      "Can a bank attach the salary of a defaulting parent co-obligor or returned graduate working in India?",
+      "Can an Indian Civil Court or DRT decree be enforced directly against an NRI student's assets in the US, UK, Canada, or UAE?",
+      "How do banks handle borrower disputes over uncredited CSIS interest subsidy or requests for moratorium extension?"
+    ],
+    "wordCount": 2450,
+    "artefacts": [
+      "40-60w Executive Creditor Answer Box",
+      "Collateral Tier & NRI Escalation Decision Tree SVG + Mobile Cards",
+      "Dark-Header IBA Collateral Tier & CGFSEL Statutory Matrix Table",
+      "Interactive 4-Scenario Education Loan NPA Playbook Tabs",
+      "Worked Financial Ledger (₹7.2L CGFSEL Unsecured vs ₹34L Overseas Mortgage)",
+      "8-Point Overseas Education NPA & BSA s.63 Evidence Checklist",
+      "Verified SC Precedent Cards & 7 FAQ Accordions"
+    ],
+    "sources": [
+      "Indian Contract Act, 1872 (ss.43, 128)",
+      "Code of Civil Procedure, 1908 (Order V Rule 25, Order XXI Rules 48 & 46A, s.44A, s.60(1)(i))",
+      "Bharatiya Sakshya Adhiniyam, 2023 (s.63)",
+      "NCGTC CGFSEL Scheme Guidelines",
+      "SARFAESI Act, 2002 (ss.13, 14, 26D)",
+      "State Bank of India v. Indexport Registered (1992) 3 SCC 159",
+      "Industrial Investment Bank of India Ltd. v. Biswanath Jhunjhunwala (2009) 9 SCC 478"
+    ],
+    "builtAt": "2026-11-19T16:12:00+05:30"
+  },
+  {
+    "id": "B2B-011",
+    "url": "/cooperative-bank-credit-society-arbitration-recovery-section-84",
+    "archetype": "G1",
+    "h2s": [
+      "Why 1,400+ Cooperative Banks & 1L+ Credit Societies Stall on NPAs",
+      "Forum Decision Tree: SARFAESI vs MSCS s.84 vs State Registrar",
+      "Pandurang Ganpati Chaugule (5-Judge SC) & SARFAESI Eligibility",
+      "Statutory Matrix: MSCS s.84, State Co-op Acts & SARFAESI",
+      "4 Cooperative Bank & Credit Society Default Playbooks",
+      "Mandatory Borrower + Two-Surety Pre-Arbitration Notice Protocol",
+      "Salary Attachment, Share Lien & Recovery Certificate Execution",
+      "Worked Recovery Ledger: ₹18L UCB Mortgage vs ₹3.6L Surety Loan",
+      "Registrar Arbitration Dossier & BSA 2023 s.63 Evidence Checklist",
+      "Deploy a ₹999 Test Notice or Bulk Cooperative Society CSV Drive",
+      "IND-01 Banking Recovery Hub, Calculators & Notice Templates",
+      "FAQs: Cooperative Bank SARFAESI, MSCS s.84 & Surety Recovery",
+      "Verified Statutes, 5-Judge SC Precedents & Official Portals"
+    ],
+    "components": [
+      "Breadcrumbs",
+      "CoopBankTableOfContents",
+      "CoopBankScenarioTabs",
+      "CoopBankCTA",
+      "RelatedRecoveryGuides"
+    ],
+    "faqQuestions": [
+      "Can Urban Cooperative Banks (UCBs) and DCCBs invoke the SARFAESI Act, 2002?",
+      "Can a non-banking Credit Co-operative Society use SARFAESI to seize mortgaged property?",
+      "Why do Registrar Recovery Certificate and s.84 arbitration petitions get dismissed or delayed?",
+      "How does Section 84 arbitration under the Multi-State Co-operative Societies Act, 2002 work?",
+      "Can a cooperative society attach the salary of a defaulting member or their two sureties?",
+      "Can a cooperative bank file a recovery case in the Debt Recovery Tribunal (DRT)?",
+      "What limitation period applies to Section 84 arbitration and State Registrar recovery?"
+    ],
+    "wordCount": 2580,
+    "artefacts": [
+      "40-60w Executive Creditor Answer Box",
+      "Forum Decision Tree SVG + Mobile Stacked Cards",
+      "Dark-Header Statutory Matrix Table (SARFAESI / MSCS s.84 / State Registrar / Salary / NI s.138)",
+      "Interactive 4-Scenario Cooperative Playbook Tabs",
+      "Worked Recovery Ledger (₹18L UCB Mortgage vs ₹3.6L Two-Surety Loan)",
+      "8-Point Registrar Arbitration & BSA 2023 s.63 Evidence Checklist",
+      "5-Judge SC Precedent Cards & 7 FAQ Accordions"
+    ],
+    "sources": [
+      "Pandurang Ganpati Chaugule v. Vishwasrao Patil Murgud Sahakari Bank Ltd. (2020) 9 SCC 215",
+      "Greater Bombay Co-operative Bank Ltd. v. United Yarn Tex (P) Ltd. (2007) 6 SCC 236",
+      "NKGSB Cooperative Bank Ltd. v. Subir Chakravarty (2022) 10 SCC 286",
+      "Multi-State Co-operative Societies Act, 2002 (ss.59, 60, 84, 85, 94)",
+      "SARFAESI Act, 2002 (s.2(1)(c)(iva), ss.13, 14, 26D, 31)",
+      "Bharatiya Sakshya Adhiniyam, 2023 (s.63)"
+    ],
+    "builtAt": "2026-11-19T15:28:00+05:30"
+  },
+  {
+    "id": "B2B-008",
+    "url": "/cash-credit-overdraft-stock-statement-default-recall-notice",
+    "archetype": "G1",
+    "h2s": [
+      "Why Working-Capital CC & OD Accounts Bleed Before Day 90",
+      "RBI IRACP 'Out of Order' & 180-Day Stock Statement Rules",
+      "CC/OD Recall Decision Tree: Stock Audit to Book-Debt Freeze",
+      "4 Working-Capital Default & Stock Diversion Playbooks",
+      "Book-Debt Garnishee Notices & Non-Consortium Routing Blocks",
+      "Worked Ledger: ₹1.80 Cr CC Drawing-Power Shortfall & Recall",
+      "Hypothecated Stock Inspection, CERSAI & BSA s.63 Checklist",
+      "BNS s.316/s.318 Criminal Action & RBI Fraud Red-Flagging",
+      "Verified Judicial Precedents on Hypothecation & CC Recall",
+      "Issue a CC Recall Notice or Onboard Zonal Credit Monitoring",
+      "IND-01 Bank Recovery Hub, Calculators & Notice Templates",
+      "Frequently Asked Questions: CC/OD Recall & Stock Diversion",
+      "Primary RBI Directions, Bare Acts & Statutory Portals"
+    ],
+    "components": [
+      "Breadcrumbs",
+      "CashCreditTableOfContents",
+      "CashCreditScenarioTabs",
+      "CashCreditCTA",
+      "RelatedRecoveryGuides"
+    ],
+    "faqQuestions": [
+      "When does a Cash Credit (CC) or Overdraft (OD) account become 'Out of Order' and NPA under RBI IRACP rules?",
+      "How does non-submission of monthly stock statements trigger NPA even if interest is paid?",
+      "Can a bank issue a Cash Credit recall notice before the account completes 90 days of NPA?",
+      "How can a bank legally collect hypothecated book debts directly from the borrower's customers?",
+      "What criminal sections apply when an SME borrower siphons or empties hypothecated godown stock?",
+      "Must the bank follow any mandatory procedure before declaring a stock-diversion account as 'Fraud'?",
+      "What happens if the bank's hypothecation charge over stock and book debts is not registered on CERSAI?"
+    ],
+    "wordCount": 2450,
+    "builtAt": "2026-11-19T15:25:00+05:30"
+  },
+  {
+    "id": "B2B-006",
+    "url": "/bank-pre-litigation-lok-adalat-bulk-npa-settlement-guide",
+    "archetype": "G1",
+    "h2s": [
+      "Why Bank National Lok Adalat Turnout Stalls Below 8%",
+      "T-45 to T+30 National Lok Adalat Bulk Recovery Workflow",
+      "Section 19, 20(2) & 21 Legal Services Authorities Matrix",
+      "4 High-Volume Bank NPA Lok Adalat Playbooks (Interactive)",
+      "Pre-Lok-Adalat WhatsApp + RPAD OTS Priming Architecture",
+      "Worked Zone Economics: 2,500 Sub-₹20L NPAs at Zero Court Fee",
+      "DLSA Referral CSV Schema & BSA 2023 s.63 Evidence Checklist",
+      "Supreme Court Precedents on Lok Adalat Award Finality",
+      "Launch a Single OTS Priming Notice or 10,000-Account Drive",
+      "IND-01 Bank Recovery Hub, Calculators & Bulk Portals",
+      "FAQs: Bank Pre-Litigation Lok Adalat & Bulk NPA Drives",
+      "Primary Statutes, NALSA Regulations & Official Portals"
+    ],
+    "components": [
+      "Breadcrumbs",
+      "BankLokAdalatTableOfContents",
+      "BankLokAdalatScenarioTabs",
+      "BankLokAdalatCTA",
+      "RelatedRecoveryGuides"
+    ],
+    "faqQuestions": [
+      "Why do Indian banks see less than 8% borrower turnout at quarterly National Lok Adalats?",
+      "Is there any pecuniary ceiling for banks referring pre-litigation NPAs under Section 20(2) of the Legal Services Authorities Act?",
+      "Can banks enforce a National Lok Adalat Award if the borrower defaults after paying the 10% sitting-day token?",
+      "Can Kisan Credit Card (KCC) and agricultural NPAs barred under SARFAESI Section 31(i) be settled in National Lok Adalats?",
+      "Does settling a pending Civil Suit or Section 138 NI Act case in a National Lok Adalat refund the bank's court fees?",
+      "How does RBI's June 2023 Compromise Settlement Framework affect Bank OTS offers at National Lok Adalats?",
+      "What electronic dispatch evidence under BSA 2023 Section 63 should banks preserve for pre-Lok-Adalat priming notices?"
+    ],
+    "wordCount": 5578,
+    "builtAt": "2026-11-19T14:40:00+05:30"
+  },
+  {
+    "id": "B2B-003",
+    "url": "/sarfaesi-section-14-dm-cmm-physical-possession-workflow",
+    "archetype": "G1",
+    "h2s": [
+      "Statutory Architecture of SARFAESI Section 14 Possession",
+      "The Mandatory 9-Point Section 14 Statutory Affidavit",
+      "Symbolic Possession (Rule 8(1)) vs Physical Possession (Section 14)",
+      "Section 14 Execution Decision Tree & Enforcement Rails",
+      "District Magistrate Ministerial Role & Jurisdictional Limits",
+      "Defeating Bogus Tenancy Claims: The Bajarang Shyamsunder Rule",
+      "Rule 8 Panchnama, Inventory & BSA 2023 Section 63 Evidence Checklist",
+      "Cost-of-Delay Ledger: Financial Impact on a ₹2.5 Crore Secured NPA",
+      "High Court Article 226 Writ of Mandamus for Section 14 Delays",
+      "Frequently Asked Questions: SARFAESI Section 14 Possession",
+      "Statutory Authorities & Landmark Judicial Precedents"
+    ],
+    "components": [
+      "Breadcrumbs",
+      "SarfaesiSection14TableOfContents",
+      "SarfaesiSection14ScenarioTabs",
+      "SarfaesiSection14CTA",
+      "RelatedRecoveryGuides"
+    ],
+    "faqQuestions": [
+      "What is the mandatory 9-point affidavit under SARFAESI Section 14?",
+      "Can the District Magistrate (DM) issue notice to the borrower or conduct a trial under Section 14?",
+      "What is the statutory timeline for the DM/CMM to pass a physical possession order?",
+      "How should banks handle a tenant occupying the mortgaged property during Section 14 execution?",
+      "What is the difference between symbolic possession under Rule 8(1) and physical possession under Section 14?",
+      "Can the DM appoint an Advocate Commissioner instead of an Executive Magistrate or Tehsildar?",
+      "What immediate legal remedy is available if the District Magistrate delays Section 14 orders beyond 60 days?",
+      "Is CERSAI registration mandatory before filing a Section 14 application?"
+    ],
+    "wordCount": 2480,
+    "builtAt": "2026-11-19T09:12:02.695Z"
+  },
+  {
     "id": "B2B-271",
     "url": "/industries/franchisors-brand-licensors-oem-dealership-recovery",
     "archetype": "IH1",
@@ -13686,5 +14227,840 @@
       "BSA 2023 s.63"
     ],
     "builtAt": "2026-11-18T17:38:00+05:30"
+  },
+  {
+    "id": "B2B-002",
+    "url": "/law/sarfaesi-section-13-2-demand-notice-bank-guide",
+    "archetype": "L1",
+    "h2s": [
+      "Section 13(2) & 13(3) Statutory Framework for Banks",
+      "Statutory Timelines: 60-Day Notice & 15-Day Reply Stops",
+      "Landmark Supreme Court & DRAT Precedents for Secured Lenders",
+      "Section 13(3) Itemized Debt vs Lump-Sum Demand Pitfalls",
+      "Security Interest Rule 3: Service, Affixture & Publication",
+      "Section 13(3A) 15-Day Representation & Reasoned Reply SOP",
+      "Interactive Authorized Officer Failure Modes & Rebuttal Playbooks",
+      "Debtor Defense Pre-Emption Table: DRT Section 17 Challenges",
+      "14-Point Authorized Officer Pre-Issuance Audit Checklist",
+      "Frequently Asked Questions: SARFAESI Section 13(2) & 13(3A)",
+      "Primary Statutory Citations & Official Enforcement Rules"
+    ],
+    "components": [
+      "Breadcrumbs",
+      "SarfaesiSection13NoticeTableOfContents",
+      "SarfaesiSection13NoticeScenarioTabs",
+      "SarfaesiSection13NoticeCTA",
+      "RelatedRecoveryGuides"
+    ],
+    "faqQuestions": [
+      "What are the mandatory statutory contents of a SARFAESI Section 13(2) demand notice?",
+      "Why do Debts Recovery Tribunals (DRT) quash Section 13(2) notices for lump-sum demands?",
+      "What is the exact timeline and procedure for replying to a borrower representation under Section 13(3A)?",
+      "Does disposing of a borrower's Section 13(3A) representation reset the 60-day demand notice period?",
+      "How should a bank prove valid service under Rule 3 of the Security Interest (Enforcement) Rules if the debtor evades Speed Post?",
+      "Can an Authorized Officer issue a Section 13(2) notice if an Original Application (OA) is already pending before DRT?",
+      "What is the rank and qualification required for an officer to act as an Authorized Officer under Rule 2(a)?",
+      "How does the Section 13(13) statutory restriction prevent borrowers from alienating mortgaged properties?"
+    ],
+    "wordCount": 2370,
+    "artefacts": [
+      "Executive Creditor Answer Box with Parent Hub Link",
+      "3-Card Bare Act Timeline & Limitation Rail (60-day demand, 15-day 13(3A) disposal, 45-day DRT SA window)",
+      "5 Verified Supreme Court & DRAT Precedent Cards with Crimson Accent Bars (Mardia Chemicals, ITC v. Blue Coast, PNB v. Imperial Motor Co., Transcore, Celir LLP)",
+      "Dark-Header Tabular Statement Structure for Section 13(3) Itemized Breakup",
+      "Security Interest Rule 3(1)-(4) Multi-Tier Service Architecture",
+      "SarfaesiSection13NoticeScenarioTabs Interactive 4-Failure Mode Playbooks",
+      "7-Row Debtor Defense Pre-Emption Table (DRT SA Grounds)",
+      "14-Point Authorized Officer Pre-Issuance Audit Checklist",
+      "Dual-Track B2B Action Desk CTA",
+      "8 FAQ Accordions with JSON-LD FAQPage Schema"
+    ],
+    "sources": [
+      "SARFAESI Act 2002 ss.13(2), 13(3), 13(3A), 13(4), 13(8), 13(9), 14, 17, 31 & 34",
+      "Security Interest (Enforcement) Rules 2002 Rules 2(a), 3, 3A & 8",
+      "RBI Prudential Norms on Income Recognition and Asset Classification (NPA 90-Day Norms)",
+      "RBI Fair Lending Practice Directions on Penal Charges in Loan Accounts",
+      "Bharatiya Sakshya Adhiniyam 2023 s.63",
+      "Recovery of Debts and Bankruptcy Act 1993 s.19"
+    ],
+    "builtAt": "2026-11-19T14:40:00+05:30"
+  },
+  {
+    "id": "B2B-004",
+    "url": "/bank-loan-recovery-below-20-lakhs-drt-threshold-options",
+    "archetype": "G2",
+    "h2s": [
+      "The ₹20 Lakh DRT Barrier: Why Retail NPAs Face a Blind Spot",
+      "Statutory Framework: RDB Act s.1(4) & Commercial Courts s.2(1)(c)",
+      "5 Legal Routes for Bank Loan Recovery Below ₹20 Lakhs",
+      "Forum Selection Matrix: Pecuniary Floor, Costs & Timelines",
+      "Decision Architecture: ₹0–₹3L vs ₹3L–₹20L Recovery Paths",
+      "Scenario Playbooks: 4 Retail & Unsecured Default Scenarios",
+      "Cost-to-Yield Financial Model: ₹8.5 Lakh Personal Loan NPA",
+      "Mandatory Evidence & BSA 2023 Section 63 Digital Audit Trail",
+      "Frequently Asked Questions: Sub-₹20 Lakh Bank Loan Recovery",
+      "Statutory References & Official Indian Legislative Enactments"
+    ],
+    "components": [
+      "Sub20LakhTableOfContents",
+      "Sub20LakhScenarioTabs",
+      "Sub20LakhNoticeCTA",
+      "Breadcrumbs",
+      "RelatedRecoveryGuides"
+    ],
+    "faqQuestions": [
+      "Why can banks not file an Original Application (OA) in DRT for loans under ₹20 Lakhs?",
+      "Can banks invoke SARFAESI for unsecured retail or personal loans below ₹20 Lakhs?",
+      "What is the fastest judicial recovery route for unsecured bank loans between ₹3 Lakh and ₹20 Lakh?",
+      "How does Section 12A Pre-Institution Mediation under the Commercial Courts Act benefit banks?",
+      "Can banks file a Section 25 PSS Act criminal complaint alongside civil recovery proceedings?",
+      "When should a bank choose Pre-Litigation Lok Adalat over a regular civil suit?",
+      "What happens if a loan default is below ₹3 Lakhs? Can the bank approach the Commercial Court?"
+    ],
+    "wordCount": 2350,
+    "artefacts": [
+      "Executive Statutory Summary Box",
+      "Hero 4-Card Metrics Strip",
+      "Side-by-side bg-slate-900 Multi-Criteria Forum Comparison Matrix Table",
+      "Dual-Tier Desktop & Mobile Escalation Flowchart",
+      "Sub20LakhScenarioTabs 4-Scenario Interactive Explorer",
+      "Worked Cost-to-Yield ₹8.5 Lakh Financial Model",
+      "BSA 2023 s.63 Evidence Checklist",
+      "7 FAQ Accordions",
+      "Dual-Track B2B Conversion Funnel CTA"
+    ],
+    "sources": [
+      "RDB Act 1993 s.1(4) & s.19",
+      "Commercial Courts Act 2015 ss.2(1)(c), 2(1)(i) & 12A",
+      "CPC 1908 Order XXXVII & Order XXI",
+      "Arbitration and Conciliation Act 1996 ss.21, 29B & 36",
+      "Legal Services Authorities Act 1987 ss.19-21",
+      "Payment and Settlement Systems Act 2007 s.25",
+      "Bharatiya Sakshya Adhiniyam 2023 s.63"
+    ],
+    "builtAt": "2026-11-19T14:40:00+05:30"
+  },
+  {
+    "id": "B2B-005",
+    "url": "/e-drt-original-application-filing-guide-for-banks",
+    "archetype": "G1",
+    "h2s": [
+      "Why Government e-DRT PDFs Fail Bank SAMB Litigation Teams",
+      "5-Stage e-DRT Original Application Filing Decision Tree",
+      "Section 19 RDB Act Statutory & Court-Fee Slab Matrix",
+      "4 High-Stakes DRT OA Litigation Scenarios & Tactics",
+      "Worked Ledger: ₹1.85 Cr NPA OA Fee & Unsecured Deficit",
+      "Bankers' Books Evidence Act s.2A & BSA s.63 CBS Checklist",
+      "Section 19(12)–(15) Attachment & Recovery Certificate Execution",
+      "Launch Pre-OA Loan Recall or Institutional SAMB Batch Desk",
+      "Banking NPA & DRT Recovery Network (IND-01 Resources)",
+      "Frequently Asked Questions: e-DRT Section 19 OA Filing",
+      "Primary Statutory Authorities, Bare Acts & e-DRT Portals"
+    ],
+    "components": [
+      "EdrtTableOfContents",
+      "EdrtScenarioTabs",
+      "EdrtFilingCTA",
+      "Breadcrumbs",
+      "RelatedRecoveryGuides"
+    ],
+    "faqQuestions": [
+      "What is the minimum debt threshold for banks to file a Section 19 Original Application on e-DRT?",
+      "Can a bank file an e-DRT Original Application and SARFAESI proceedings simultaneously?",
+      "Why do banks need BOTH a Bankers' Books Evidence Act s.2A certificate and a BSA 2023 s.63 certificate?",
+      "How is the DRT Original Application court fee calculated under Rule 7 of the DRT (Procedure) Rules, 1993?",
+      "How can a bank attach a defaulting borrower's unmortgaged personal property during a DRT OA?",
+      "Does capitalizing penal interest into loan principal jeopardize a DRT Original Application?",
+      "What enforcement powers does the DRT Recovery Officer have once the Recovery Certificate (s.19(22)) is issued?"
+    ],
+    "wordCount": 4587,
+    "artefacts": [
+      "Executive Creditor Answer Box",
+      "5-Stage e-DRT OA Filing SVG Decision Tree + Mobile Cards",
+      "Section 19 RDB Act Statutory Matrix & Rule 7 Fee Slab Tables",
+      "EdrtScenarioTabs Interactive 4-Scenario Litigation Explorer",
+      "Worked ₹1.85 Cr SAMB NPA OA Fee & Unsecured Deficit Ledger",
+      "Dual BBEA s.2A + BSA 2023 s.63 CBS Certification Checklist",
+      "7 Practitioner FAQ Accordions"
+    ],
+    "sources": [
+      "RDB Act 1993 ss.1(4), 19, 25-28 & 31B",
+      "DRT (Procedure) Rules 1993 Rule 7",
+      "Bankers' Books Evidence Act 1891 ss.2A & 4",
+      "BSA 2023 s.63 Part-A & Part-B Schedule",
+      "RBI Fair Lending Practice Directions on Penal Charges",
+      "SARFAESI Act 2002 s.13(10) & Transcore v. Union of India (SC)"
+    ],
+    "builtAt": "2026-11-19T14:44:00+05:30"
+  },
+  {
+    "id": "B2B-007",
+    "url": "/credit-card-default-bulk-legal-notice-arbitration-banks",
+    "archetype": "G1",
+    "h2s": [
+      "Why Unilateral Credit Card Arbitral Awards Fail After Perkins & CORE",
+      "4-Stage Compliant Credit Card Recovery Workflow (60 to 180+ DPD)",
+      "Neutral ODR vs Legacy Panels, Lok Adalat & Order 37 Comparison",
+      "Supreme Court Precedents Governing Bank Arbitrator Appointments",
+      "RBI Credit Card Directions, Penal Charges & CICRA Notice Impact",
+      "4 Credit Card Portfolio Failure Modes & Institutional Playbooks",
+      "Worked Portfolio Yield: 500-Account Credit Card NPA Batch Model",
+      "CMS Evidence & BSA 2023 Section 63 Admissibility Checklist",
+      "Frequently Asked Questions: Credit Card Legal Notices & ODR",
+      "Primary Statutory Authorities, RBI Directions & Supreme Court Rulings"
+    ],
+    "components": [
+      "Breadcrumbs",
+      "CreditCardTableOfContents",
+      "CreditCardScenarioTabs",
+      "CreditCardRecoveryCTA",
+      "RelatedRecoveryGuides"
+    ],
+    "faqQuestions": [
+      "Why are Indian courts setting aside thousands of bank credit card arbitral awards?",
+      "How does a bank transition legacy credit card agreements to neutral institutional ODR arbitration?",
+      "What are the mandatory RBI Credit Card Directions that govern default recovery notices?",
+      "How does explaining 'Settled' versus 'Written Off' CICRA status improve credit card notice conversion?",
+      "Can banks invoke SARFAESI or DRT for defaulted unsecured credit card portfolios?",
+      "What electronic records are required under BSA 2023 Section 63 to prove a credit card default?",
+      "When should an unsecured risk head choose Pre-Litigation Lok Adalat instead of ODR Arbitration?"
+    ],
+    "wordCount": 2450,
+    "artefacts": [
+      "Executive Creditor Answer Box with Parent Hub Link",
+      "Hero 4-Card Key Metrics Strip",
+      "Hand-authored SVG 4-Stage 60-180+ DPD Credit Card Escalation Decision Tree + Mobile Stacked Cards",
+      "Dark-Header Neutral ODR vs Legacy Panels, Lok Adalat & Order 37 Comparison Table",
+      "4 Verified Supreme Court Precedent Cards (Perkins Eastman, CORE 5-Judge Bench, TRF Ltd, Bharat Broadband)",
+      "CreditCardScenarioTabs Interactive 4-Scenario Portfolio Failure Explorer",
+      "Worked 500-Account Credit Card NPA Yield & Non-Capitalized Penal Charge Ledger",
+      "6-Point CMS & BSA 2023 Section 63 + Bankers' Books s.2A Checklist",
+      "Dual-Track B2B Conversion Funnel CTA (₹999 Test + Bulk CSV 10-10,000+)",
+      "7 Practitioner FAQ Accordions with JSON-LD FAQPage & HowTo Schemas"
+    ],
+    "sources": [
+      "Arbitration and Conciliation Act 1996 ss.11, 12(5), 18, 21, 29B, 34, 36 & Seventh Schedule",
+      "Perkins Eastman Architects DPC v. HSCC (India) Ltd. (2020) 20 SCC 760",
+      "CORE v. ECI SPIC SMO MCML (JV) (2024, 5-Judge Constitution Bench, SC)",
+      "TRF Ltd. v. Energo Engineering Projects Ltd. (2017) 8 SCC 377",
+      "Bharat Broadband Network Ltd. v. United Telecoms Ltd. (2019) 5 SCC 755",
+      "Indian Contract Act 1872 ss.73 & 74",
+      "RBI Master Direction on Credit Card Issuance & Conduct (2022/2024) & Penal Charges Directions",
+      "Credit Information Companies (Regulation) Act 2005 (CICRA)",
+      "Bharatiya Sakshya Adhiniyam 2023 s.63 & Bankers' Books Evidence Act 1891 s.2A",
+      "Legal Services Authorities Act 1987 ss.19-21"
+    ],
+    "builtAt": "2026-11-19T15:26:00+05:30"
+  },
+  {
+    "id": "B2B-010",
+    "url": "/mudra-cgtmse-collateral-free-msme-loan-recovery-banks",
+    "archetype": "G1",
+    "h2s": [
+      "Why Mudra & CGTMSE Borrowers Misread Collateral-Free Credit",
+      "CGTMSE & CGFMU Legal-Action Prerequisites for Claim Payout",
+      "5-Stage Mudra & CGTMSE Recovery-to-Claim Decision Tree",
+      "Statutory Recovery Matrix: Shishu, Kishore, Tarun & CGTMSE",
+      "4 Unsecured MSME Default Scenarios & Bank Action Playbooks",
+      "Worked Claim Ledger: ₹8.5 Lakh CGTMSE & ₹4.2 Lakh Kishore NPA",
+      "CGTMSE 75/25 Split, Second Installment & Recovery Sharing",
+      "CGTMSE Portal Audit Trail & BSA 2023 s.63 Evidence Checklist",
+      "Test 1 Mudra/CGTMSE Recall Notice or Upload Branch NPA CSV",
+      "Banking MSME Recovery Tools, Templates & Sibling Playbooks",
+      "Practitioner FAQs: Mudra, CGTMSE & CGFMU Claim Compliance",
+      "Primary Statutory Authorities, CGTMSE & NCGTC References"
+    ],
+    "components": [
+      "MudraCgtmseTableOfContents",
+      "MudraCgtmseScenarioTabs",
+      "MudraCgtmseNoticeCTA"
+    ],
+    "faqQuestions": [
+      "Is initiating a civil suit mandatory before lodging a CGTMSE guarantee claim for an NPA under ₹10 Lakh?",
+      "Can banks invoke SARFAESI Section 13(2) to recover Mudra Shishu, Kishore, or pure collateral-free CGTMSE loans?",
+      "Why do Mudra borrowers refuse to pay claiming the loan is a government grant—and how do banks counter it?",
+      "How does the CGTMSE 75% first installment and 25% second installment payout structure work?",
+      "What is the CGTMSE post-claim recovery sharing norm if a borrower pays after the bank receives the 75% claim?",
+      "How should banks handle PMEGP margin-money subsidy TDR and PM SVANidhi defaults economically?",
+      "What electronic and postal proofs are essential to clear CGTMSE / NCGTC claim audits without queries?"
+    ],
+    "wordCount": 5334,
+    "artefacts": [
+      "5-Stage SVG Decision Tree + Mobile Cards",
+      "Dark-Header Scheme & Statute Matrix",
+      "4-Tab Interactive MSME Scenario Explorer",
+      "Worked ₹8.5L CGTMSE & ₹4.2L Mudra Ledger",
+      "8-Point CGTMSE Portal & BSA s.63 Checklist",
+      "Dual-Track Institutional CTA"
+    ],
+    "sources": [
+      "cgtmse.in",
+      "ncgtc.in",
+      "indiacode.nic.in (PSS Act 2007 s.25, LSA Act 1987 ss.19-21, RDB Act s.1(4), BSA 2023 s.63)",
+      "rbi.org.in"
+    ],
+    "builtAt": "2026-11-19T15:30:00+05:30"
+  },
+  {
+    "id": "B2B-016",
+    "url": "/sma-1-sma-2-early-delinquency-cure-notice-strategy-banks",
+    "archetype": "G2",
+    "h2s": [
+      "Why Day 61–85 (SMA-2) Is a Bank's Highest-ROI Cure Window",
+      "RBI IRACP Norms: SMA-0, SMA-1, SMA-2 & Day-End NPA Stamping",
+      "Comparison Matrix: Telecalling vs SMS vs Advocate Cure Notice",
+      "Day-62 Batch Dispatch Architecture: 61–90 DPD Decision Tree",
+      "Scenario Playbooks: 4 Retail & SME SMA-2 Slippage Traps",
+      "SMA-2 Cure Economics: 1,000-Account Provisioning Cost Model",
+      "RBI Fair Practices, Penal Charges & BSA 2023 s.63 Checklist",
+      "Frequently Asked Questions: SMA-1 & SMA-2 Cure Notices",
+      "Primary RBI Circulars & Statutory References"
+    ],
+    "components": [
+      "Breadcrumbs",
+      "SmaCureTableOfContents",
+      "SmaCureScenarioTabs",
+      "SmaCureNoticeCTA",
+      "RelatedRecoveryGuides"
+    ],
+    "faqQuestions": [
+      "Why can a partial EMI payment no longer prevent or upgrade an NPA under RBI IRACP norms?",
+      "Why is Day 61–85 (SMA-2) the highest-ROI intervention window for bank collections?",
+      "How does an Advocate-Signed Soft Legal Cure Notice outperform telecalling in SMA-2?",
+      "Does sending an Advocate Cure Notice during SMA-1 or SMA-2 violate RBI Fair Practices Code?",
+      "Can banks threaten SARFAESI Section 13(2) action inside a Day-62 SMA-2 Cure Notice?",
+      "How do Cash Credit (CC) and Overdraft (OD) accounts slip into SMA-2 and NPA?",
+      "How can banks automate Day-62 Cure Notices across 1,000+ SMA-2 accounts without branch bottlenecks?"
+    ],
+    "wordCount": 2150,
+    "artefacts": [
+      "Executive Creditor Answer Box with Parent Hub Link",
+      "Hero 4-Card Key Metrics Strip",
+      "Dark-Header Telecalling vs SMS vs Field vs Advocate Cure Notice Comparison Matrix",
+      "4-Stage Day 61–90 SMA-2 Escalation Decision Tree SVG + Mobile Stacked Cards",
+      "SmaCureScenarioTabs Interactive 4-Scenario Slippage Explorer",
+      "1,000-Account SMA-2 Provisioning Cost Model Ledger",
+      "6-Point RBI Fair Practices, Penal Charges & BSA 2023 s.63 Checklist",
+      "Dual-Track Institutional CTA (₹999 Test + Bulk CSV)",
+      "7 FAQ Accordions with JSON-LD Article, Table, FAQPage & BreadcrumbList Schemas"
+    ],
+    "sources": [
+      "rbi.org.in (IRACP Master Circular, Nov 12 2021 Daily Day-End NPA Stamping Circular, June 7 2019 Prudential Framework, Aug 18 2023 Penal Charges)",
+      "indiacode.nic.in (PSS Act 2007 s.25, BSA 2023 s.63, Bankers Books Evidence Act 1891 s.2A)"
+    ],
+    "builtAt": "2026-11-19T16:12:00+05:30"
+  },
+  {
+    "id": "B2B-015",
+    "url": "/agriculture-kcc-kisan-credit-card-non-wilful-npa-recovery",
+    "archetype": "G1",
+    "h2s": [
+      "Why Agriculture & KCC NPAs Stall Between Waiver Rumours & s.31(i)",
+      "SARFAESI Section 31(i) & The Blue Coast Actual-Use Test",
+      "Agri-Asset Classification Decision Tree: SARFAESI vs RRC vs Adalat",
+      "Statutory Enforcement Matrix: KCC, Allied Agri & Tractor NPAs",
+      "State Revenue Recovery Certificates (RRC) for Exempt Farmland",
+      "Tractor & Farm Equipment Hypothecation Repossession Protocol",
+      "4 Rural & Agri-Banking Default Scenarios & Recovery Playbooks",
+      "Worked Recovery Ledger: ₹48L Poultry Unit vs ₹6.5L KCC Account",
+      "Geo-Tagged Field Inspection & BSA 2023 s.63 Evidence Dossier",
+      "Deploy Rural Recovery Notices or Bulk RRB Portfolio Desk",
+      "Banking Recovery Tools, Recall Templates & IND-01 Guides",
+      "Frequently Asked Questions: Agriculture, KCC & s.31(i) Recovery",
+      "Primary Statutory Authorities, State RRC Acts & Precedents"
+    ],
+    "components": [
+      "Breadcrumbs",
+      "AgriKccTableOfContents",
+      "AgriKccScenarioTabs",
+      "AgriKccNoticeCTA",
+      "RelatedRecoveryGuides"
+    ],
+    "faqQuestions": [
+      "Does SARFAESI Section 31(i) (often mis-searched as Section 31(g)) bar banks from recovering KCC and agricultural loans completely?",
+      "Can a bank invoke SARFAESI against a poultry farm, dairy unit, cold storage, or commercial farmhouse built on agricultural land?",
+      "When does a Kisan Credit Card (KCC) or crop loan legally turn NPA under RBI IRACP norms?",
+      "How does a State Revenue Recovery Certificate (RRC) work for banks and RRBs when farmland is genuinely exempt under Section 31(i)?",
+      "Can banks repossess a hypothecated tractor or combine harvester despite SARFAESI Section 31(i)?",
+      "How should Regional Rural Banks handle genuine non-wilful KCC defaults stalled by political loan-waiver rumours?",
+      "If an agricultural borrower has a composite loan above ₹20 Lakh secured by both farmland and a town house, can the bank file an e-DRT OA?"
+    ],
+    "wordCount": 2450,
+    "artefacts": [
+      "Executive Creditor Answer Box with Parent Hub Link",
+      "Hero 4-Card Key Metrics Strip",
+      "3 Supreme Court Precedent Cards (Blue Coast, Pappireddiyar, K. Sreedhar)",
+      "4-Track Agri-Asset Decision Tree SVG + Mobile Stacked Cards",
+      "Dark-Header Statutory Enforcement Matrix Table",
+      "5-Step Tractor & Farm Equipment Repossession Protocol",
+      "AgriKccScenarioTabs Interactive 4-Scenario Explorer",
+      "Dual Worked Recovery Ledger (₹48L Poultry Unit vs ₹6.5L KCC)",
+      "6-Point Geo-Tagged Inspection & BSA 2023 s.63 Checklist",
+      "Dual-Track Institutional CTA (₹999 Test + Bulk CSV)",
+      "7 FAQ Accordions with Article + HowTo + FAQPage + BreadcrumbList Schemas"
+    ],
+    "sources": [
+      "indiacode.nic.in (SARFAESI Act 2002 s.31(i), RDB Act 1993 s.19, LSA Act 1987 s.19-21, BSA 2023 s.63, Bankers Books Evidence Act 1891 s.2A)",
+      "rbi.org.in (IRACP Agricultural Advances Master Circular, KCC Master Direction, Penal Charges Fair Lending Direction)",
+      "nalsa.gov.in (National Lok Adalat Bank Pre-Litigation Guidelines)"
+    ],
+    "builtAt": "2026-11-19T16:15:00+05:30"
+  },
+  {
+    "id": "B2B-056",
+    "url": "/pharma-third-party-contract-manufacturing-cdmo-batch-payment-recovery",
+    "archetype": "G1",
+    "h2s": [
+      "Why Pharma CDMOs Get Trapped With Unlifted Branded Batches",
+      "Unlifted Pharma Batch Escalation Decision Tree",
+      "CDMO Statutory Enforcement Matrix",
+      "Defeating Sham Quality Rejections With Approved COA",
+      "4 CDMO Batch Failure Scenarios & Action Protocols",
+      "Worked Recovery Ledger: ₹18L Baddi Formulation Batch",
+      "CDMO Evidence & BSA 2023 Section 63 Checklist",
+      "5-Step CDMO Recovery Playbook & Immediate Notice Dispatch",
+      "Pharma Recovery Tools, Notice Templates & Sibling Guides",
+      "Frequently Asked Questions: Pharma CDMO Batch Recovery",
+      "Primary Statutory Authorities & Official Portals"
+    ],
+    "components": [
+      "CdmoBatchTableOfContents",
+      "CdmoBatchScenarioTabs",
+      "CdmoBatchCTA"
+    ],
+    "faqQuestions": 7,
+    "wordCount": 2150,
+    "artefacts": [
+      "SVG Decision Tree",
+      "Statutory Enforcement Matrix",
+      "Scenario Tabs",
+      "Worked ₹18L Ledger",
+      "BSA s.63 Checklist",
+      "Dual-Track CTA"
+    ],
+    "sources": [
+      "MSMED Act 2006 ss.15-18",
+      "Income Tax Act s.43B(h)",
+      "Sale of Goods Act 1930 ss.41-44 & 55",
+      "Drugs & Cosmetics Act 1940 s.17 & Schedule M",
+      "NI Act 1881 ss.20, 138 & 143A"
+    ],
+    "builtAt": "2026-11-19"
+  },
+  {
+    "id": "B2B-164",
+    "url": "/corporate-school-hospital-uniform-bulk-order-payment-recovery",
+    "archetype": "G1",
+    "h2s": [
+      "Why Institutional Uniform Makers Get Trapped on the 50% Balance",
+      "Supreme Court Precedents Governing Uniform & MSME Recovery",
+      "Operational Decision Tree: Which Legal Track Unlocks Your 50% Balance?",
+      "Institutional Buyer Enforcement Matrix: Corporate, School, Hospital & Security",
+      "Defeating Belated Fitting Pretexts: Size-Set Estoppel & Sale of Goods Act s.55",
+      "4 Real-World Uniform Default Scenarios & Legal Counter-Moves",
+      "Worked Recovery Ledger: ₹18.50L Corporate Uniform Order (180-Day Delay)",
+      "6-Point Uniform Evidence & BSA 2023 s.63 Digital Dossier",
+      "Serve an Advocate Uniform Balance Notice or Upload Bulk Defaulters",
+      "Essential Textile Recovery Templates, Calculators & Hub Links",
+      "Frequently Asked Questions: Uniform Bulk Order Payment Recovery",
+      "Primary Statutory Authorities & Government Portals"
+    ],
+    "components": [
+      "Breadcrumbs",
+      "UniformTableOfContents",
+      "UniformScenarioTabs",
+      "UniformRecoveryCTA",
+      "RelatedRecoveryGuides"
+    ],
+    "faqQuestions": [
+      "Can a corporate, school, or security agency refuse the 50% balance citing 'fitting' or 'size' issues weeks after delivery?",
+      "Why does the '₹0 open-market resale value' of logo-embroidered uniforms strengthen our recovery suit?",
+      "Who should we sue when a private school or college trust withholds uniform balance payments?",
+      "Can we claim 3x RBI compound interest and Section 43B(h) tax leverage on unpaid uniform bills?",
+      "What if the buyer cancelled the second lot of 2,500 uniforms after fabric dyeing and cutting?",
+      "Can an industrial uniform maker retain unshipped packed cartons in its godown until the 50% balance is paid?",
+      "Should we file in the MSME Samadhaan (MSEFC) portal or file an Order XXXVII Summary Suit?"
+    ],
+    "wordCount": 2350,
+    "artefacts": [
+      "Executive Creditor Answer Box with Parent Hub Link",
+      "Hero 4-Card Key Metrics Strip",
+      "3 Supreme Court Precedent Cards (Tirupati Steels, Silpi Industries, Patil Automation)",
+      "3-Track Decision Tree SVG + Mobile Stacked Cards",
+      "Dark-Header Institutional Buyer Enforcement Matrix Table",
+      "Size-Set Estoppel & Sale of Goods Act s.55 Triad Cards",
+      "UniformScenarioTabs Interactive 4-Scenario Explorer",
+      "Worked Recovery Ledger (₹18.50L Order / 180-Day Delay)",
+      "6-Point Uniform Evidence & BSA 2023 s.63 Checklist",
+      "Dual-Track Institutional CTA (₹999 Test + Bulk CSV)",
+      "7 FAQ Accordions with Article + HowTo + FAQPage + BreadcrumbList Schemas"
+    ],
+    "sources": [
+      "indiacode.nic.in (Sale of Goods Act 1930 s.16, 17, 23, 42, 47, 55, 56; MSMED Act 2006 s.15-19; BSA 2023 s.63, 121; Societies Registration Act 1860 s.6; Commercial Courts Act 2015 s.12A)",
+      "samadhaan.msme.gov.in (MSME Samadhaan / ODR Delayed Payment Monitoring Portal)"
+    ],
+    "builtAt": "2026-11-19T16:38:00+05:30"
+  },
+  {
+    "id": "B2B-234",
+    "url": "/corporate-it-laptop-macbook-workstation-rental-startup-default-recovery",
+    "archetype": "G1",
+    "h2s": [
+      "Why Startup Layoffs Scatter Leased MacBooks Across India",
+      "5-Step DaaS Asset Lock, BNS s.316 & Buyout Pipeline",
+      "Legal Matrix: MDM Locks, Bailment, BNS s.316 & Directors",
+      "4 Startup IT Leasing Default Scenarios & Action Plans",
+      "Worked Ledger: 80 MacBooks Arrears & Residual Buyout",
+      "Serial-Tag, ABM Telemetry & BSA 2023 s.63 Proof Pack",
+      "Lawful MDM Locks Without IT Act Section 43 Backfire",
+      "Launch Your Serial-Wise DaaS Notice or Batch CSV",
+      "IT Hardware Leasing, Equipment & B2B Recovery Links",
+      "Frequently Asked Questions: Startup IT Asset Recovery",
+      "Primary Statutory Authorities & Official Portals"
+    ],
+    "components": [
+      "DaasTableOfContents",
+      "DaasScenarioTabs",
+      "DaasCTA"
+    ],
+    "faqQuestions": [
+      "Can a laid-off remote employee legally keep a leased MacBook until the startup pays their pending salary?",
+      "Is it legal to remotely lock unpaid leased MacBooks or ThinkPads using Apple Business Manager (ABM) or Windows Autopilot?",
+      "When does non-return of rented corporate laptops become a BNS Section 316 criminal offence instead of a civil dispute?",
+      "Can DaaS founders hold startup directors personally liable for unreturned laptops and workstations?",
+      "What happens if the defaulting startup enters NCLT CIRP insolvency with 80 leased laptops still unreturned?",
+      "How should an IT rental company calculate Residual Buyout Value alongside overdue monthly rent?",
+      "Should we send legal notices only to the startup’s registered office, or also to individual WFH employees?"
+    ],
+    "wordCount": 2250,
+    "artefacts": [
+      "Decision Tree SVG",
+      "Statutory Matrix Table",
+      "4-Tab Scenario Explorer",
+      "Worked 80-MacBook Buyout Ledger",
+      "BSA s.63 Evidence Checklist"
+    ],
+    "sources": [
+      "BNS 2023 s.316/317",
+      "Contract Act ss.148-161",
+      "IT Act 2000 s.43/66",
+      "Specific Relief Act ss.7-8",
+      "IBC 2016 s.18(1)(f)",
+      "MSMED Act ss.15-18",
+      "BSA 2023 s.63"
+    ],
+    "builtAt": "2026-11-19"
+  },
+  {
+    "id": "B2B-235",
+    "url": "/diesel-generator-dg-set-temporary-chiller-load-bank-rental-recovery",
+    "archetype": "G1",
+    "h2s": [
+      "Why DG Set & Chiller Lessors Face Logbook & Fuel-Damage Disputes",
+      "Bailment & Commercial Recovery Precedents for Rental Fleets",
+      "Operational Decision Tree: Unlocking Arrears & Asset Release",
+      "DG, Chiller & Compressor Enforcement Matrix by Lessee Type",
+      "Enforcing Minimum Monthly Hours & Signed Daily Operator Logbooks",
+      "4 Real-World DG & Chiller Default Scenarios & Counter-Moves",
+      "Worked Recovery Ledger: ₹14.80L 1010 kVA DG Set & Overhaul Claim",
+      "6-Point DG & Chiller Evidence & BSA 2023 s.63 Digital Dossier",
+      "Serve an Advocate DG Rental Notice or Upload Bulk Defaulters",
+      "Equipment Rental Recovery Tools, Templates & Sibling Guides",
+      "Frequently Asked Questions: DG Set & Chiller Rental Recovery",
+      "Primary Statutory Authorities & Official Portals"
+    ],
+    "components": [
+      "Breadcrumbs",
+      "DgRentalTableOfContents",
+      "DgRentalScenarioTabs",
+      "DgRentalRecoveryCTA",
+      "RelatedRecoveryGuides"
+    ],
+    "faqQuestions": 7,
+    "wordCount": 2250,
+    "artefacts": [
+      "Executive Creditor Answer Box",
+      "Hero 4-Card Metrics Strip",
+      "4 Supreme Court Precedent Cards",
+      "SVG Decision Tree + Mobile Cards",
+      "Lessee Enforcement Matrix",
+      "DgRentalScenarioTabs 4-Scenario Explorer",
+      "Worked ₹14.80L Ledger",
+      "6-Point BSA s.63 Checklist",
+      "Dual-Track CTA",
+      "7 FAQ Accordions"
+    ],
+    "sources": [
+      "Indian Contract Act 1872 ss.37,73,151-154",
+      "MSMED Act 2006 ss.15-19",
+      "BSA 2023 ss.63,121",
+      "BNS 2023 ss.316,318",
+      "CPC Order XXXVII",
+      "CPCB IV+"
+    ],
+    "builtAt": "2026-11-19T17:14:00+05:30"
+  },
+  {
+    "id": "B2B-236",
+    "url": "/forklift-mhe-pallet-pooling-warehouse-equipment-leasing-recovery",
+    "archetype": "G1",
+    "h2s": [
+      "Why MHE Lessors and Pallet Pools Lose Millions at Contract Exit",
+      "Supreme Court Precedents Governing MHE and Bailment Recovery",
+      "Operational Decision Tree: Repossession vs Monetary Recovery",
+      "Statutory Enforcement Matrix: MHE and Pallet-Pooling Claims",
+      "Defeating Wear and Tear Excuses Under Contract Act s.152",
+      "4 Real-World MHE and Pallet-Pooling Failure Playbooks",
+      "Worked Recovery Ledger: 3PL Hub Default (₹46.20L Claim)",
+      "6-Point MHE and Pallet Evidence Dossier (BSA 2023 s.63)",
+      "Serve an MHE / Pallet Recovery Notice or Upload Bulk Fleets",
+      "Equipment Leasing Templates, Calculators and Sibling Guides",
+      "Frequently Asked Questions: Forklift, MHE and Pallet Recovery",
+      "Primary Statutory Authorities and Official Portals"
+    ],
+    "components": [
+      "MheTableOfContents",
+      "MheScenarioTabs",
+      "MheRecoveryCTA"
+    ],
+    "faqQuestions": 7,
+    "wordCount": 2250,
+    "artefacts": [
+      "DecisionTreeSVG",
+      "EnforcementMatrixTable",
+      "MheScenarioTabs",
+      "WorkedLedger",
+      "EvidenceChecklist",
+      "MheRecoveryCTA"
+    ],
+    "sources": [
+      "Indian Contract Act s.151-161",
+      "Arbitration Act s.9",
+      "BNS 2023 s.316",
+      "BSA 2023 s.63",
+      "MSMED Act s.15-19"
+    ],
+    "builtAt": "2026-11-19"
+  },
+  {
+    "id": "B2B-243",
+    "url": "/cold-storage-unpaid-rent-commodity-lien-lawful-auction-notice-india",
+    "archetype": "L1",
+    "h2s": [
+      "Statutory Framework: Bailee Lien & State Cold Storage Acts",
+      "Mandatory Notice Timeline: 15-Day, 7-Day & Limitation Stops",
+      "Landmark Judicial Precedents Protecting Cold Storages",
+      "Pre-Empting Trader & Consumer Court Defenses",
+      "4 Cold-Storage Default & Auction Scenarios (Interactive)",
+      "Bank Pledge Loans & Tripartite Lien Priority",
+      "Worked Auction & Deficit-Rent Recovery Ledger",
+      "BSA 2023 s.63 & Auction Panchnama Evidence Checklist",
+      "Serve 15-Day Pre-Auction Notices or Batch Lot Drives",
+      "IND-21 Agri, Cold-Storage & Commercial Recovery Network",
+      "Frequently Asked Questions: Cold Storage Lien & Auction",
+      "Primary Statutory Bare Acts & Official Portals"
+    ],
+    "components": [
+      "ColdStorageTableOfContents",
+      "ColdStorageScenarioTabs",
+      "ColdStorageNoticeCTA"
+    ],
+    "faqQuestions": [
+      "Can a cold storage sell abandoned potato or red chilli bags immediately if the bond receipt allows sale without notice?",
+      "What are the State Cold Storage Regulation Act rules in UP, West Bengal, Bihar, and Gujarat?",
+      "What if the auction value of crashed potato or chilli bags is less than the unpaid cold-storage rent?",
+      "Who has priority when stored stock is pledged to a bank against a Warehouse Receipt (WHR)?",
+      "How do I stop a defaulting mandi trader from suing my cold storage in Consumer Court?",
+      "What should a cold storage do if abandoned bags start rotting and threaten healthy chambers?",
+      "Can a cold storage present a trader's security cheque under NI Act Section 138 for the post-auction deficit?"
+    ],
+    "artefacts": [
+      "5-Stage SVG Auction Escalation Pipeline",
+      "Statutory Matrix Table (Contract Act ss.151-152, 170, 176 & UP/WB Acts)",
+      "4 Judicial Precedent Cards",
+      "Defense Pre-Emption Table",
+      "4-Scenario Interactive Tabs",
+      "Worked 10,000-Bag Deficit Ledger",
+      "BSA 2023 s.63 Evidence Checklist"
+    ],
+    "sources": [
+      "Indian Contract Act 1872 (ss.151, 152, 170, 171, 176)",
+      "UP Regulation of Cold Storages Act 1976",
+      "WB Cold Storage (Licensing and Regulation) Act 1966",
+      "Consumer Protection Act 2019 (s.2(7))",
+      "Bharatiya Sakshya Adhiniyam 2023 (s.63)",
+      "WDRA e-NWR Framework",
+      "NI Act 1881 (ss.138, 141)"
+    ],
+    "builtAt": "2026-11-19"
+  },
+  {
+    "id": "B2B-270",
+    "url": "/templates/ca-architect-advisor-professional-fee-recovery-legal-notice",
+    "archetype": "P1",
+    "h2s": [
+      "The Accounting Checkmate: Section 18 &amp; Form 26AS 194J",
+      "Interactive Commercial Legal Notice Workspace",
+      "Council-Verified Notice vs Generic Web Drafts",
+      "Statutory Clause Architecture: ICAI, COA &amp; Copyright",
+      "Five-Stage Professional Escalation Workflow",
+      "Evidentiary Audit Trail &amp; BSA 2023 s.63 Checklist",
+      "High Court &amp; Supreme Court Precedents",
+      "Worked ₹18.5 Lakhs CA Retainer &amp; Tax Audit Ledger",
+      "Activate Fee Recovery: Single Notice or Firm CSV Batch",
+      "Frequently Asked Questions by Practicing Professionals",
+      "Statutory References, Council Rules &amp; Related Guides"
+    ],
+    "components": [
+      "ProfessionalFeeNoticeTOC",
+      "ProfessionalFeeNoticeWorkspace",
+      "ProfessionalFeeNoticeCTA"
+    ],
+    "builtAt": "2026-11-19"
+  },
+  {
+    "id": "B2B-273",
+    "url": "/franchisee-pos-cash-skimming-sales-underreporting-royalty-audit-recovery",
+    "archetype": "G1",
+    "h2s": [
+      "Why Franchisees Bypass Central POS After 7 PM Using Personal UPI",
+      "Operational Decision Tree: Audit Detection to Penal Recovery",
+      "Statutory Enforcement Matrix for Franchise Royalty Leakage",
+      "How Branded Packaging & Premix Ratios Legally Prove Suppressed Sales",
+      "4 Real-World POS Skimming Scenarios & Enforcement Playbooks",
+      "Worked Recovery Ledger: 6-Month QSR Cup-Variance & Audit Claim",
+      "6-Point Forensic & BSA 2023 s.63 Evidence Dossier",
+      "Serve an Advocate Penal Royalty Notice or Audit Bulk Outlets",
+      "Franchise Recovery Hub, Calculators & Notice Templates",
+      "Frequently Asked Questions: Franchisee POS Skimming & Royalty Audit",
+      "Primary Statutory Authorities & Official Portals"
+    ],
+    "components": [
+      "PosSkimmingTableOfContents.tsx",
+      "PosSkimmingScenarioTabs.tsx",
+      "PosSkimmingCTA.tsx",
+      "page.tsx"
+    ],
+    "faqQuestions": [
+      "Can a franchisor legally prove underreported POS sales using branded cup, box, or premix consumption ratios?",
+      "Is a 2x or 3x penal royalty clause enforceable under Section 74 of the Indian Contract Act, 1872?",
+      "What criminal and civil remedies apply when a franchisee switches off the POS after 7 PM and uses a personal Paytm/PhonePe QR code?",
+      "What if the franchisee also bounces their monthly minimum royalty e-NACH auto-debit?",
+      "How do franchisors catch outlets buying unbranded local cups or premix to mask input-output variance?",
+      "Can a franchisee claim that mandatory central commissary sourcing violates Section 27 of the Contract Act?",
+      "How fast can an institutional franchisor obtain an enforceable award or freeze order against a skimming outlet?"
+    ],
+    "wordCount": 2250,
+    "artefacts": [
+      "5-Gate Audit Decision Tree SVG + Mobile Cards",
+      "bg-slate-900 Statutory Enforcement Matrix Table",
+      "Forensic Imputed-Turnover Formula Box",
+      "PosSkimmingScenarioTabs (4 Scenarios)",
+      "Worked 6-Month QSR Cup-Variance Ledger (Rs 13.75L)",
+      "6-Point BSA 2023 s.63 Evidence Dossier"
+    ],
+    "sources": [
+      "Indian Contract Act, 1872 (ss. 27, 73, 74)",
+      "Payment and Settlement Systems Act, 2007 (s. 25)",
+      "Bharatiya Sakshya Adhiniyam, 2023 (ss. 63, 119)",
+      "Bharatiya Nyaya Sanhita, 2023 (ss. 316, 318)",
+      "Trade Marks Act, 1999 (s. 29)",
+      "Arbitration and Conciliation Act, 1996 (ss. 9, 12(5), 21)"
+    ],
+    "builtAt": "2026-11-19"
+  },
+  {
+    "id": "B2B-275",
+    "url": "/ev-two-wheeler-three-wheeler-automobile-oem-dealer-credit-recovery",
+    "archetype": "G1",
+    "h2s": [
+      "Why EV 2W/3W OEMs Face Cash-Diversion Dealer Defaults",
+      "Decision Tree: Vahan Lock, BG Set-Off or Section 138?",
+      "OEM Dealership Enforcement Matrix: 2W, L3/L5 & Spares",
+      "Sale of Goods s.25 & Lawful Vahan Portal Holds",
+      "4 EV Dealer Default Scenarios & Legal Counter-Moves",
+      "Worked Ledger: 40-Vehicle Cash-Sale & Battery Default",
+      "DMS, Form 21 & BSA 2023 s.63 Evidence Checklist",
+      "Serve an OEM Dealer Demand Notice or Bulk CSV Drive",
+      "OEM Dealership, Franchise & B2B Recovery Resources",
+      "Frequently Asked Questions: EV OEM Dealer Recovery",
+      "Primary Statutory Authorities & Official Portals"
+    ],
+    "components": [
+      "EvDealerTableOfContents",
+      "EvDealerScenarioTabs",
+      "EvDealerCTA",
+      "Breadcrumbs",
+      "RelatedRecoveryGuides"
+    ],
+    "faqQuestions": [
+      "Can an EV OEM legally withhold Form 21 and Vahan dealer-invoice clearance when a dealer defaults?",
+      "How does a Bank Guarantee (BG) encashment work when a defaulting EV dealer threatens a stay order?",
+      "Can an EV OEM prosecute a dealer under Section 138 NI Act using blank signed security cheques?",
+      "What legal action applies when a dealer refuses to return defective warranty lithium battery packs?",
+      "How do EV OEMs recover PM E-DRIVE or FAME-II subsidy clawbacks caused by dealer KYC errors?",
+      "Should an OEM terminate a multi-city EV dealership before or after blocking the Vahan dealer code?"
+    ],
+    "wordCount": 2200,
+    "artefacts": [
+      "Decision Tree SVG + Mobile Cards",
+      "5-Row Statutory Enforcement Matrix",
+      "4-Tab Interactive Scenario Explorer",
+      "Worked 40-Vehicle & Battery Recovery Ledger",
+      "6-Point BSA s.63 Evidence Pack",
+      "Dual-Track B2B CTA"
+    ],
+    "sources": [
+      "Sale of Goods Act 1930 s.25/47/55",
+      "CMVR 1989 Rules 33-47",
+      "NI Act 1881 s.138/141",
+      "PSS Act 2007 s.25",
+      "Contract Act 1872 s.126/148-160",
+      "BNS 2023 s.316(5)",
+      "BSA 2023 s.63"
+    ],
+    "builtAt": "2026-11-19"
+  },
+  {
+    "id": "B2B-274",
+    "url": "/fico-foco-franchise-investor-minimum-guarantee-capex-dispute-recovery",
+    "archetype": "G1",
+    "h2s": [
+      "Why FOCO and FICO Store Lockouts Trap Brand Inventory",
+      "Operational Decision Tree: Police Rescue vs Section 9 Receiver",
+      "Statutory Enforcement Matrix: FOCO Lockouts & CapEx Claims",
+      "Judicial Precedents Protecting Brand Inventory & Urgent Relief",
+      "4 FOCO / FICO Store Failure & CapEx Dispute Playbooks",
+      "Worked Recovery Ledger: Locked Apparel FOCO Store (₹51.80L Net)",
+      "6-Point Lockout Panchnama & BSA 2023 s.63 Evidence Dossier",
+      "Dispatch an Urgent FOCO Rescue Notice or Bulk Network Drive",
+      "Franchisor Calculators, Notice Templates & Sibling Guides",
+      "Frequently Asked Questions: FOCO Lockout & CapEx Recovery",
+      "Primary Statutory Authorities & Official Portals"
+    ],
+    "components": [
+      "FicoFocoTableOfContents",
+      "FicoFocoScenarioTabs",
+      "FicoFocoRecoveryCTA"
+    ],
+    "faqQuestions": 7,
+    "wordCount": 2280,
+    "artefacts": [
+      "DecisionTreeSVG",
+      "StatutoryMatrixTable",
+      "FicoFocoScenarioTabs",
+      "WorkedRecoveryLedger",
+      "EvidenceDossierChecklist",
+      "FicoFocoRecoveryCTA"
+    ],
+    "sources": [
+      "BNS 2023 s.316",
+      "Arbitration Act s.9 & s.29B",
+      "Commercial Courts Act s.2(1)(c)(ix) & s.12A",
+      "Specific Relief Act s.7 & s.8",
+      "Indian Contract Act s.73 & s.74",
+      "BSA 2023 s.63"
+    ],
+    "builtAt": "2026-11-19"
   }
 ]
