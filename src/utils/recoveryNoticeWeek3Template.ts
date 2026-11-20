@@ -1,4 +1,5 @@
 import { getTimesFontFaceCSS } from './noticeFonts'
+import { IMPLANTIUM_DENTAL_COUNCIL_CLAUSE, isImplantiumNotice } from '../lib/implantium'
 
 export interface RecoveryNoticeWeek3Data {
   clientName: string
@@ -17,6 +18,8 @@ export interface RecoveryNoticeWeek3Data {
   noticeRef?: string
   complainantName?: string
   complainantAddress?: string
+  complainantEmail?: string
+  representeeId?: string
   isSpecialUser?: boolean
   invoiceNo?: string
   invoiceDate?: string
@@ -41,12 +44,21 @@ export function fillWeek3NoticeTemplate(data: RecoveryNoticeWeek3Data): string {
     noticeRef,
     complainantName = "Tech AMA",
     complainantAddress = "2493AP, Ground floor, Sector 57, Gurugram-122003 (Haryana)",
+    complainantEmail,
+    representeeId,
     isSpecialUser = false,
     invoiceNo,
     invoiceDate,
     invoices,
     category,
   } = data
+
+  const includeImplantiumClause = isImplantiumNotice({
+    representeeId,
+    isSpecialUser,
+    clientEmail: complainantEmail,
+    clientName: complainantName,
+  })
 
   // Convert amount to words helper
   function amountToWords(amount: string): string {
@@ -409,7 +421,7 @@ export function fillWeek3NoticeTemplate(data: RecoveryNoticeWeek3Data): string {
       - filing of Police Complaint/FIR before the competent Police Authorities;<br/>
       - initiation of criminal proceedings under applicable provisions of BNS;<br/>
       - civil recovery proceedings before appropriate courts/forums;<br/>
-      - recovery of interest, damages, litigation costs, and legal expenses.
+      - recovery of interest, damages, litigation costs, and legal expenses${includeImplantiumClause ? `;<br/>\n      - ${IMPLANTIUM_DENTAL_COUNCIL_CLAUSE}` : '.'}
     </p>
 
     <p>Kindly note that the entire risk as to costs and legal consequences arising therefrom shall solely be attributable to you.</p>

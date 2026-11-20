@@ -49,9 +49,13 @@ export async function POST(request: NextRequest) {
 
   let isSpecialUser = false
   try {
-    const { db } = await getDbAndBucket("fs");
     const userIdStr = (session?.user as any)?.id;
-    if (userIdStr) {
+    const userRole = (session?.user as any)?.role;
+    const userEmail = (session?.user as any)?.email;
+    if (userIdStr === 'admin-env-root' || userRole === 'admin' || userEmail === 'admin@legalrecovery.in') {
+      isSpecialUser = true;
+    } else if (userIdStr && ObjectId.isValid(userIdStr)) {
+      const { db } = await getDbAndBucket("fs");
       const userDoc = await db.collection("users").findOne({ _id: new ObjectId(userIdStr) });
       const userPhone = userDoc?.phone || "";
       isSpecialUser = userPhone.replace(/\D/g, '').endsWith('8700343611') || userPhone.replace(/\D/g, '').endsWith('8130104447');
@@ -73,6 +77,8 @@ export async function POST(request: NextRequest) {
       noticeRef,
       complainantName,
       complainantAddress,
+      complainantEmail,
+      representeeId,
       invoiceNo,
       invoiceDate,
       invoices,
@@ -123,6 +129,8 @@ export async function POST(request: NextRequest) {
       noticeRef,
       complainantName,
       complainantAddress,
+      complainantEmail,
+      representeeId,
       isSpecialUser,
       invoiceNo,
       invoiceDate,

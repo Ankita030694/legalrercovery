@@ -1,6 +1,7 @@
 import { PDFDocument, rgb, StandardFonts, PDFPage, PDFFont, PDFImage } from 'pdf-lib';
 import fs from 'fs';
 import path from 'path';
+import { IMPLANTIUM_DENTAL_COUNCIL_CLAUSE, isImplantiumNotice } from './implantium';
 
 function formatDate(dateStr: string): string {
   const d = new Date(dateStr);
@@ -55,6 +56,7 @@ export interface PDFGeneratorParams {
   clientAuthRepPhone?: string;
   noticeRef?: string;
   isSpecialUser?: boolean;
+  representeeId?: string;
   // Speed Post copies: heading override, and the date the notice was originally emailed
   dispatchModeLabel?: string;
   noticeDateIso?: string;
@@ -294,7 +296,7 @@ class NoticePDFWriter {
       const wordWidth = this.drawnWidth(word.text, font, size);
       const spaceWidth = word.isBold ? spaceWidthBold : spaceWidthRegular;
       const addedWidth = wordWidth + (word.hasTrailingSpace ? spaceWidth : 0);
-      const indent = (lines.length === 0) ? textIndent : 0;
+      const indent = textIndent;
 
       if (currentLineWidth + addedWidth > maxWidth - indent) {
         lines.push(currentLine);
@@ -317,7 +319,7 @@ class NoticePDFWriter {
       }
 
       const line = lines[i];
-      const indent = (i === 0) ? textIndent : 0;
+      const indent = textIndent;
       let currentX = 50 + indent;
 
       const isLastLine = i === lines.length - 1;
@@ -964,11 +966,26 @@ export async function generateNoticePDFBuffer(params: PDFGeneratorParams): Promi
     writer.writeBulletPoint("2.", `Provide written confirmation of settlement; and`);
     writer.writeBulletPoint("3.", `Resolve the matter within 72 HOURS from receipt of this notice.`);
 
+    const includeImplantiumClause = isImplantiumNotice({
+      representeeId: params.representeeId,
+      isSpecialUser: Boolean(isSpecialUser),
+      clientEmail: params.clientEmail,
+      clientName: params.clientName,
+    });
+
     writer.writeParagraph(`Please take notice that in the event of your failure to comply within the aforesaid period, my client shall be constrained to initiate appropriate legal proceedings against you, including but not limited to:`, 10.5);
     writer.writeBulletPoint("-", "filing of Police Complaint/FIR before the competent Police Authorities;");
     writer.writeBulletPoint("-", "initiation of criminal proceedings under applicable provisions of BNS;");
     writer.writeBulletPoint("-", "civil recovery proceedings before appropriate courts/forums;");
-    writer.writeBulletPoint("-", "recovery of interest, damages, litigation costs, and legal expenses.");
+    writer.writeBulletPoint(
+      "-",
+      includeImplantiumClause
+        ? "recovery of interest, damages, litigation costs, and legal expenses;"
+        : "recovery of interest, damages, litigation costs, and legal expenses."
+    );
+    if (includeImplantiumClause) {
+      writer.writeBulletPoint("-", IMPLANTIUM_DENTAL_COUNCIL_CLAUSE);
+    }
 
     writer.writeParagraph(`Kindly note that the entire risk as to costs and legal consequences arising therefrom shall solely be attributable to you.`, 10.5);
 

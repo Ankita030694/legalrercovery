@@ -60,6 +60,7 @@ export async function generateDispatchPdf(c: any, batch: any, loanBrowser?: any)
     noticeRef: `${c.caseId || "LR"}-N${noticeNumber}`,
     noticeDateIso: timelineEntry?.completedAt,
     isSpecialUser: !isRetailSpeedPost,
+    representeeId: c.representeeId ? String(c.representeeId) : undefined,
     ...(isRetailSpeedPost ? { dispatchModeLabel: "THROUGH SPEED POST" } : {}),
   };
 

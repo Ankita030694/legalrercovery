@@ -30,6 +30,7 @@ import Link from "next/link";
 import { BuyCreditsModal } from "@/components/BuyCreditsModal";
 import { fetchWithRetry } from "@/lib/fetchWithRetry";
 import { RECOVERY_TYPES } from "@/lib/recoveryTypes";
+import { IMPLANTIUM_DENTAL_COUNCIL_CLAUSE, isImplantiumNotice } from "@/lib/implantium";
 
 const formatDateToDisplay = (dateStr: string) => {
   if (!dateStr) return "-";
@@ -121,6 +122,12 @@ export default function NewRecoveryForm() {
   const [onboardingTourStep, setOnboardingTourStep] = useState(1);
 
   const isSpecialUser = originalClientProfile?.phone?.replace(/\D/g, '').endsWith('8700343611') || originalClientProfile?.phone?.replace(/\D/g, '').endsWith('8130104447');
+  const isImplantiumPreview = isImplantiumNotice({
+    representeeId: selectedRepresenteeId,
+    isSpecialUser: Boolean(isSpecialUser),
+    clientEmail: clientProfile?.email,
+    clientName: clientProfile?.name,
+  });
 
   const handleRepresentationChange = (repId: string) => {
     setSelectedRepresenteeId(repId);
@@ -2174,7 +2181,10 @@ export default function NewRecoveryForm() {
                         <span>- filing of Police Complaint/FIR before the competent Police Authorities;</span>
                         <span>- initiation of criminal proceedings under applicable provisions of BNS;</span>
                         <span>- civil recovery proceedings before appropriate courts/forums;</span>
-                        <span>- recovery of interest, damages, litigation costs, and legal expenses.</span>
+                        <span>- recovery of interest, damages, litigation costs, and legal expenses{isImplantiumPreview ? ";" : "."}</span>
+                        {isImplantiumPreview && (
+                          <span>- {IMPLANTIUM_DENTAL_COUNCIL_CLAUSE}</span>
+                        )}
                       </div>
                       <p>
                         Kindly note that the entire risk as to costs and legal consequences arising therefrom shall solely be attributable to you.

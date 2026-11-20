@@ -130,6 +130,7 @@ export async function POST(req: NextRequest) {
         invoices: caseDoc.invoices,
         noticeRef: `${caseDoc.caseId}-N1`,
         isSpecialUser: isSpecialUser,
+        representeeId: caseDoc.representeeId ? String(caseDoc.representeeId) : undefined,
         category: caseDoc.category || 'general-recovery',
       };
       
