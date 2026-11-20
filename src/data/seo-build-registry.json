@@ -1,5 +1,316 @@
 [
   {
+    "id": "B2B-294",
+    "url": "/law/bsa-section-63-electronic-evidence-certificate-tally-erp-whatsapp-b2b",
+    "archetype": "L1",
+    "h2s": [
+      "Why Old Section 65B Affidavits Fail in 2026 Commercial Suits",
+      "IEA Section 65B vs. BSA 2023 Section 63: Statutory Matrix",
+      "4-Stage BSA Section 63 Part A + Part B Certification Workflow",
+      "Decoding Part A, Part B & Mandatory SHA-256 Hash Rules",
+      "4 Commercial Evidence Scenarios & BSA s.63 Certification SOPs",
+      "Supreme Court Precedents Governing Electronic Certificates",
+      "Debtor Defense Objections & BSA s.63 Pre-Emption Matrix",
+      "10-Point BSA Section 63 Pre-Filing Audit Checklist",
+      "Frequently Asked Questions: BSA Section 63 Certificates",
+      "Primary Statutory Citations & Supreme Court Authorities"
+    ],
+    "components": [
+      "Breadcrumbs",
+      "BsaSection63TableOfContents",
+      "BsaSection63ScenarioTabs",
+      "BsaSection63CTA",
+      "RelatedRecoveryGuides"
+    ],
+    "faqQuestions": [
+      "Did Section 63 of BSA 2023 completely replace Section 65B of the Indian Evidence Act?",
+      "What is the difference between Part A and Part B of the BSA Section 63 Schedule?",
+      "Is a SHA-256 hash value mandatory in a BSA Section 63 certificate?",
+      "Who should sign Part B if an MSME or mid-sized B2B company has no in-house IT department?",
+      "How do I prove WhatsApp blue-tick legal notices and chats under BSA Section 63?",
+      "Can we cure an old Section 65B IEA affidavit already filed in a 2025 or 2026 commercial suit?",
+      "Do TallyPrime, SAP, and Zoho Books ledgers still need a BSA Section 63 certificate?"
+    ],
+    "wordCount": 2450,
+    "artefacts": [
+      "Executive Statutory Summary Box with Parent Hub Link",
+      "Dark-Header IEA 65B vs BSA 63 Statutory Matrix Table",
+      "4-Stage Part A + Part B Certification SVG Flowchart + Mobile Cards",
+      "SHA-256 PowerShell/Linux Command Box & Schedule Breakdown",
+      "Interactive 4-Source B2B Evidence Playbooks (BsaSection63ScenarioTabs)",
+      "3 Supreme Court Precedent Cards (Arjun Panditrao, Anvar P.V., Shafhi Mohammad)",
+      "Dark-Header 6-Row Defense Objection Pre-Emption Matrix",
+      "10-Point BSA s.63 Pre-Filing Audit Checklist",
+      "Dual-Track B2B CTA (Self-Serve Rs.999 + Bulk CSV Desk)"
+    ],
+    "sources": [
+      "Bharatiya Sakshya Adhiniyam, 2023 (ss.2(1)(d), 57, 61, 62, 63, 170 & The Schedule Part A and Part B)",
+      "Information Technology Act, 2000 (ss.2(1)(t), 4, 5, 13, 79A)",
+      "Commercial Courts Act, 2015 & CPC Order XI Rule 6",
+      "Arjun Panditrao Khotkar v. Kailash Kushanrao Gorantyal, (2020) 7 SCC 1",
+      "Anvar P.V. v. P.K. Basheer, (2014) 10 SCC 473"
+    ],
+    "builtAt": "2026-11-20T11:27:00+05:30"
+  },
+  {
+    "id": "B2B-291",
+    "url": "/b2b-debt-recovery-india",
+    "archetype": "IH1",
+    "h2s": [
+      "Why Traditional B2B Recovery Fails Enterprise CFOs & CROs",
+      "Live Platform Superpowers: Representees, CSV Batch & Tri-Channel Dispatch",
+      "Master B2B Statutory Routing Matrix (9 Core Recovery Tracks)",
+      "5-Stage Institutional Recovery Architecture (Pilot to Enforcement)",
+      "Interactive Playbooks by Enterprise Buyer & Ticket Tier",
+      "Master Directory: All 25 Indian B2B & Institutional Recovery Hubs",
+      "Start 1 Live Pilot Notice (₹999) or Upload Bulk Defaulter CSV",
+      "CFO Unit Economics: Platform Infrastructure vs Panel Law Firms",
+      "Interactive Calculators, Notice Templates & Empirical Studies",
+      "Frequently Asked Questions: Enterprise & B2B Debt Recovery",
+      "Primary Statutory Authorities & Official Portals"
+    ],
+    "components": [
+      "Breadcrumbs",
+      "B2BHubTableOfContents",
+      "B2BHubScenarioTabs",
+      "B2BHubCTA",
+      "RelatedRecoveryGuides"
+    ],
+    "faqQuestions": [
+      "How is LegalRecovery.in different from a traditional collection agency or panel law firm?",
+      "Can enterprises send 1,000 to 50,000 legal notices across multiple GSTINs or NBFC branches?",
+      "Which statutory track applies if my unpaid B2B invoice is ₹3 Lakh, ₹25 Lakh, or above ₹1 Crore?",
+      "Are Email and WhatsApp legal notices legally admissible alongside Speed Post RPAD?",
+      "How do NBFCs and fintechs enforce bounced e-NACH mandates under Section 25 of the PSS Act?",
+      "What happens if a corporate debtor issues a sham quality debit note after using our goods or services?",
+      "Do Medium Enterprises and EPC Works Contractors qualify for MSME Samadhaan?",
+      "Can we test LegalRecovery.in on 1 live overdue case before committing to an enterprise batch?"
+    ],
+    "wordCount": 2850,
+    "artefacts": [
+      "Executive Institutional Summary Box",
+      "Dark-Header 7-Track Statutory Routing Matrix Table",
+      "5-Stage Institutional Recovery Architecture SVG Flowchart + Mobile Cards",
+      "Interactive 4-Persona Enterprise Scenario Tabs (B2BHubScenarioTabs)",
+      "25-Industry Master Directory Grid + ItemList JSON-LD",
+      "CFO Unit Economics Comparison Table & ₹50L MSMED Leverage Box",
+      "Dual-Track CTA (₹999 Pilot + Bulk CSV Representees)",
+      "8 Enterprise FAQ Accordions"
+    ],
+    "sources": [
+      "IBC 2016 (ss.4, 8, 9)",
+      "Commercial Courts Act, 2015 (s.2(1)(c), s.12A)",
+      "MSMED Act, 2006 (ss.15-19) & Income Tax Act s.43B(h)",
+      "NI Act, 1881 (ss.138, 141, 143A) & PSS Act, 2007 (s.25)",
+      "Arbitration & Conciliation Act, 1996 (ss.9, 12(5), 21, 29B, 36)",
+      "BSA 2023 (s.63) & CPC 1908 (Order XXXVII, Order XXXVIII Rule 5)"
+    ],
+    "builtAt": "2026-11-20T11:10:00+05:30"
+  },
+  {
+    "id": "B2B-290",
+    "url": "/templates/coal-scrap-commodity-supply-and-gas-cylinder-recovery-notice",
+    "archetype": "P1",
+    "h2s": [
+      "Why Generic Demand Notices Fail Bulk Commodity & Gas Creditors",
+      "Interactive Commodity & PESO Cylinder Notice Workspace [Word]",
+      "Mandatory Statutory Clauses & Evidence Annexures by Supply Vertical",
+      "Multi-Channel Dispatch Protocol Under BSA 2023 s.63 & General Clauses s.27",
+      "Advocate Review & Bulk Commodity Defaulter Dispatch Desk",
+      "IND-25 Vertical Playbooks & Core Commercial Recovery Guides",
+      "FAQs: Coal, Metal Scrap & PESO Gas-Cylinder Legal Notices",
+      "Official Statutory Portals & Bare Act Authorities"
+    ],
+    "components": [
+      "Breadcrumbs",
+      "CommodityNoticeTOC",
+      "CommodityNoticeWorkspace",
+      "CommodityNoticeCTA",
+      "RelatedRecoveryGuides"
+    ],
+    "faqQuestions": [
+      "Can a coal or scrap buyer deduct money for GCV or slag after consuming the material?",
+      "What makes a PESO gas-cylinder return notice enforceable under BNS Section 316?",
+      "Should I attach Dharamkanta slips and E-Way Bills to the initial legal notice?",
+      "When should a commodity creditor warn of Order XXXVIII Rule 5 attachment before judgment?",
+      "Can I download these coal, scrap, and PESO cylinder notice formats in Word (.doc)?",
+      "How does this notice help if the buyer is an MSME or owes under Section 43B(h)?",
+      "Can LegalRecovery.in dispatch notices for 20+ defaulting mills or cylinder customers at once?"
+    ],
+    "wordCount": 1820,
+    "artefacts": [
+      "40-60w Executive Creditor Summary Box with Parent Hub Link",
+      "3-Pack Interactive Commodity & PESO Cylinder Word (.doc) Customizer (CommodityNoticeWorkspace)",
+      "Clause-by-Clause Statutory Annotations (1-6) per Pack",
+      "Dark-Header 5-Row Mandatory Clause & Evidence Annexure Matrix",
+      "Dark-Header 3-Channel BSA 2023 s.63 Service Protocol Table",
+      "Dual-Track B2B CTA (Self-Serve Rs.999 + Bulk CSV Desk)"
+    ],
+    "sources": [
+      "Sale of Goods Act, 1930 (ss.26, 39, 41, 42)",
+      "Bharatiya Nyaya Sanhita, 2023 (s.316)",
+      "Gas Cylinders Rules, 2016 (PESO)",
+      "Insolvency and Bankruptcy Code, 2016 (ss.8, 9)",
+      "CPC 1908 (Order XXXVII & Order XXXVIII Rule 5)",
+      "Bharatiya Sakshya Adhiniyam, 2023 (s.63)"
+    ],
+    "builtAt": "2026-11-20T11:10:00+05:30"
+  },
+  {
+    "id": "B2B-282",
+    "url": "/imported-coal-petcoke-biomass-supplier-gcv-moisture-deduction-recovery",
+    "archetype": "G1",
+    "h2s": [
+      "Why Mundra, Kandla & Vizag Coal Traders Lose Millions on Day-45 Cuts",
+      "5-Step Operational Decision Tree to Void GCV Debit Notes",
+      "Statutory Matrix: Defeating Unilateral Lab & Moisture Cuts",
+      "4 Coal, Petcoke & Biomass Deduction Playbooks",
+      "Worked Recovery Ledger: ₹18 Lakh GCV Cut on 2,000-MT Lot",
+      "BSA 2023 s.63 Evidence Checklist for Coal & Petcoke Claims",
+      "Start 1 Live Test Notice (₹999) or Upload Bulk Plant CSV",
+      "IND-25 Hub, Calculators & Commercial Recovery Guides",
+      "FAQs: Imported Coal, Petcoke & Biomass GCV Recovery",
+      "Official Statutory Portals & Bare Act Authorities"
+    ],
+    "components": [
+      "Breadcrumbs",
+      "CoalGcvTableOfContents",
+      "CoalGcvScenarioTabs",
+      "CoalGcvCTA",
+      "RelatedRecoveryGuides"
+    ],
+    "faqQuestions": [
+      "Can a boiler plant legally deduct ₹18 Lakh for low GCV or high moisture 45 days after burning my entire coal lot?",
+      "Which prevails in court: my Load-Port SGS / Intertek / IIA Certificate or the buyer in-house factory lab report?",
+      "If coal gains moisture from monsoon rain during truck transit from Mundra or Kandla, who bears the weight and GCV cut?",
+      "Does a belated GCV debit note qualify as a pre-existing dispute that blocks an IBC Section 8 Demand Notice?",
+      "Can imported coal traders club 18%–24% contractual interest with unpaid principal to cross the ₹1 Crore IBC threshold?",
+      "Do biomass briquette and pellet manufacturers qualify for 3x RBI compound interest under the MSMED Act?",
+      "How fast can a coal or petcoke trader serve recovery notices across 20+ defaulting brick kilns or textile mills?"
+    ],
+    "wordCount": 2200,
+    "artefacts": [
+      "40-60w Executive Creditor Answer Box",
+      "5-Step Coal GCV & Moisture Recovery Decision Tree SVG + Mobile Cards",
+      "Dark-Header 6-Row Statutory Enforcement Matrix Table",
+      "Interactive 4-Scenario Coal, Petcoke & Biomass Playbooks (CoalGcvScenarioTabs)",
+      "Worked ₹18 Lakh GCV Cut & 2.5% Margin Impact Ledger",
+      "8-Point BSA 2023 s.63 Evidence Checklist + 7 FAQ Accordions"
+    ],
+    "sources": [
+      "Sale of Goods Act, 1930 (ss.26, 39, 41, 42)",
+      "CPC 1908 (Order XXXVII & Order XXXVIII Rule 5)",
+      "IBC 2016 (ss.4, 8, 9)",
+      "Negotiable Instruments Act, 1881 (ss.138, 141, 143A)",
+      "MSMED Act, 2006 (ss.15-19)",
+      "BSA 2023 (s.63)"
+    ],
+    "builtAt": "2026-11-20T10:15:00+05:30"
+  },
+  {
+    "id": "B2B-283",
+    "url": "/ferrous-non-ferrous-metal-scrap-ingot-rolling-mill-default-recovery",
+    "archetype": "G1",
+    "h2s": [
+      "Why Scrap Traders Lose 1.5% Margins Inside Induction Furnaces",
+      "5-Step Scrap Truckload & Furnace Recovery Decision Tree",
+      "Statutory Matrix: Sale of Goods s.42, Order 38 Rule 5 & s.138",
+      "4 Metal Scrap & Ingot Default Playbooks (Interactive)",
+      "Worked Recovery Ledger: ₹45 Lakh HMS & Copper Scrap Default",
+      "BSA 2023 s.63 Weighbridge, E-Way Bill & Furnace Checklist",
+      "Serve 1 Pilot Notice (₹999) or Upload Mill Defaulter CSV",
+      "IND-25 Hub, Calculators, Templates & Recovery Guides",
+      "FAQs: Ferrous, Non-Ferrous Scrap & Rolling Mill Recovery",
+      "Official Statutory Portals & Bare Act Authorities"
+    ],
+    "components": [
+      "Breadcrumbs",
+      "MetalScrapTableOfContents",
+      "MetalScrapScenarioTabs",
+      "MetalScrapCTA",
+      "RelatedRecoveryGuides"
+    ],
+    "faqQuestions": [
+      "Can an induction furnace deduct money for 'excess slag or burning loss' after melting our scrap?",
+      "What if a copper, brass, or aluminium buyer rejects or cuts rates after an LME/MCX price drop?",
+      "How can we stop a distressed rolling mill from stripping billets before secured banks seize the plant?",
+      "How do genuine scrap suppliers defeat false 'GST fake invoice' or ITC mismatch excuses?",
+      "Are post-dated security cheques taken from rolling mill directors enforceable under Section 138?",
+      "Which industrial clusters see the highest scrap and ingot payment defaults in India?",
+      "Can a scrap importer or yard recover multiple unpaid truckloads across 20+ mills at once?"
+    ],
+    "wordCount": 2150,
+    "artefacts": [
+      "40-60w Executive Creditor Answer Box",
+      "5-Step Scrap Truckload & Furnace Recovery Decision Tree SVG + Mobile Cards",
+      "Dark-Header 5-Row Statutory Enforcement Matrix Table",
+      "Interactive 4-Scenario Metal Scrap & Ingot Default Playbooks",
+      "Worked ₹45 Lakh HMS & Copper Scrap Recovery Ledger",
+      "8-Point BSA 2023 s.63 Weighbridge, E-Way Bill & Furnace Checklist + 7 FAQ Accordions"
+    ],
+    "sources": [
+      "The Sale of Goods Act, 1930 (ss.26, 42, 61)",
+      "The Code of Civil Procedure, 1908 (Order XXXVII, Order XXXVIII Rule 5)",
+      "The Negotiable Instruments Act, 1881 (ss.138, 139, 141, 143A)",
+      "Bharatiya Sakshya Adhiniyam, 2023 (s.63)",
+      "Central Goods and Services Tax Act, 2017 (s.16)",
+      "Insolvency and Bankruptcy Code, 2016 (ss.8, 9)"
+    ],
+    "builtAt": "2026-11-20T10:15:00+05:30"
+  },
+  {
+    "id": "B2B-276",
+    "url": "/preschool-k12-edtech-franchise-royalty-student-kit-fee-recovery",
+    "archetype": "G1",
+    "h2s": [
+      "Why Preschool & Skill Franchisors Lose Revenue on Student Kits",
+      "5-Step Headcount Audit & Kit Recovery Decision Tree",
+      "Statutory Matrix: Copyright Act s.51, Audits & Rebranding",
+      "4 Preschool & EdTech Evasion Scenarios (Interactive Playbooks)",
+      "Worked Recovery Ledger: 60 Unreported Students & Pirated Kits",
+      "BSA 2023 s.63 Physical Audit & Curriculum Evidence Checklist",
+      "Serve 1 Pilot Notice (₹999) or Upload Multi-Center CSV",
+      "IND-24 Franchisor Hub, Calculators, Templates & Sibling Guides",
+      "FAQs: Preschool & EdTech Student-Kit & Royalty Recovery",
+      "Official Statutory Portals & Bare Act Authorities"
+    ],
+    "components": [
+      "Breadcrumbs",
+      "PreschoolKitTableOfContents",
+      "PreschoolKitScenarioTabs",
+      "PreschoolKitCTA",
+      "RelatedRecoveryGuides"
+    ],
+    "faqQuestions": [
+      "How can a preschool franchisor legally prove a center admitted 90 children while declaring only 30 on the ERP?",
+      "What legal remedies apply when a preschool or abacus franchisee photocopies copyrighted student workbooks?",
+      "Can a franchisor stop a defaulting preschool partner from repainting the signboard and reopening as an independent play school?",
+      "How does a multi-center skill or preschool chain recover unpaid Welcome Kit fees from 50+ centers at once?",
+      "Are post-dated cheques or e-NACH mandates collected for annual student-kit dispatches enforceable if bounced?",
+      "Can a defaulting franchisee withhold parent fee records citing student data privacy?",
+      "Is a liquidated per-child penalty clause for unreported admissions enforceable under Section 74 of the Contract Act?"
+    ],
+    "wordCount": 2150,
+    "artefacts": [
+      "40-60w Executive Creditor Answer Box",
+      "5-Step Headcount Audit & Kit Recovery Decision Tree SVG + Mobile Cards",
+      "Dark-Header 5-Row Statutory Enforcement Matrix Table",
+      "Interactive 4-Scenario Preschool & EdTech Evasion Playbooks",
+      "Worked ₹8.72 Lakh Single-Center Audit Variance Ledger (60-Child Suppression)",
+      "8-Point BSA 2023 s.63 Physical Audit & Curriculum Evidence Checklist + 7 FAQ Accordions"
+    ],
+    "sources": [
+      "The Copyright Act, 1957 (ss.51, 55, 63)",
+      "The Trade Marks Act, 1999 (ss.29, 135)",
+      "Indian Contract Act, 1872 (ss.27, 73, 74)",
+      "Bharatiya Sakshya Adhiniyam, 2023 (ss.63, 119)",
+      "Negotiable Instruments Act, 1881 (s.138)",
+      "Payment and Settlement Systems Act, 2007 (s.25)",
+      "Commercial Courts Act, 2015 (ss.2(1)(c)(ix), 12A)"
+    ],
+    "builtAt": "2026-11-19T18:09:00+05:30"
+  },
+  {
     "id": "B2B-245",
     "url": "/poultry-feed-cattle-feed-aqua-shrimp-feed-dealer-integrator-recovery",
     "archetype": "G1",
@@ -15062,5 +15373,810 @@
       "BSA 2023 s.63"
     ],
     "builtAt": "2026-11-19"
+  },
+  {
+    "id": "B2B-277",
+    "url": "/brand-licensing-merchandising-minimum-royalty-guarantee-recovery",
+    "archetype": "G1",
+    "h2s": [
+      "Why Brand Licensors Lose MGR & Control of Expired Stock",
+      "Decision Tree: MGR Debt Suit vs Section 29 Injunction",
+      "Statutory Matrix: MGR Debt & Post-Expiry Infringement",
+      "Key Judicial Precedents for IP & Royalty Enforcement",
+      "4 Brand Licensing Default Scenarios & Counter-Moves",
+      "Worked Ledger: ₹64.20L Apparel MGR & Sell-Off Claim",
+      "6-Point Royalty Audit & BSA 2023 s.63 Evidence Pack",
+      "Serve a Brand Licensing Demand or Bulk Portfolio Drive",
+      "Brand Licensing Hub, Calculators & Sibling Guides",
+      "Frequently Asked Questions: MGR & Sell-Off Enforcement",
+      "Primary Statutory Authorities & Official Portals"
+    ],
+    "components": [
+      "BrandLicensingTableOfContents.tsx",
+      "BrandLicensingScenarioTabs.tsx",
+      "BrandLicensingCTA.tsx",
+      "page.tsx"
+    ],
+    "faqQuestions": 7,
+    "wordCount": 2200,
+    "artefacts": [
+      "5-Gate Enforcement Decision Tree SVG + Mobile Cards",
+      "bg-slate-900 Statutory Matrix Table",
+      "BrandLicensingScenarioTabs (4 Scenarios)",
+      "Worked ₹64.20L Apparel MGR & Sell-Off Ledger",
+      "6-Point Royalty Audit & BSA 2023 s.63 Evidence Pack",
+      "Dual-Track BrandLicensingCTA"
+    ],
+    "sources": [
+      "Trade Marks Act, 1999 (ss. 29, 30(3), 48-50, 135)",
+      "Commercial Courts Act, 2015 (ss. 2(1)(c)(xvii), 12A)",
+      "Indian Contract Act, 1872 (ss. 73, 74)",
+      "Arbitration and Conciliation Act, 1996 (ss. 9, 29B)",
+      "NI Act 1881 s.138 & PSS Act 2007 s.25",
+      "BSA 2023 s.63"
+    ],
+    "builtAt": "2026-11-19"
+  },
+  {
+    "id": "B2B-278",
+    "url": "/central-kitchen-commissary-franchise-supply-invoice-default-recovery",
+    "archetype": "G1",
+    "h2s": [
+      "Why Cash-Before-Delivery Triggers Dangerous Local Sourcing",
+      "Operational Decision Tree: Credit Hold, Cure Notice or Suspension",
+      "Statutory Matrix: FSSAI Quality Control, PSS s.25 & Set-Off",
+      "Lawful Commissary Supply Hold Without Termination Liability",
+      "4 Commissary Arrears & Local Sourcing Failure Scenarios",
+      "Worked Recovery Ledger: ₹18.40L Commissary & Deposit Set-Off",
+      "Cold-Chain POD, FSSAI Audit & BSA 2023 s.63 Evidence Dossier",
+      "Dispatch a Cure-or-Suspension Notice or Bulk Outlet CSV",
+      "Franchisor Hub, Calculators, Templates & Sibling Guides",
+      "FAQs: Central-Kitchen Commissary Defaults & FSSAI Liability",
+      "Primary Statutory Authorities & Official Portals"
+    ],
+    "components": [
+      "CommissaryTableOfContents.tsx",
+      "CommissaryScenarioTabs.tsx",
+      "CommissaryCTA.tsx"
+    ],
+    "faqQuestions": [
+      "If a defaulting QSR franchisee stops buying from our central kitchen after we enforce Cash-Before-Delivery, how do we stop local sourcing?",
+      "Can a franchisee sue the franchisor for wrongful termination if we suspend frozen commissary deliveries over unpaid invoices?",
+      "Does the franchisor face FSSAI liability when an outlet uses unapproved local chicken, oil, or sauces?",
+      "Can we adjust unpaid central-kitchen commissary arrears against the franchisee's refundable security deposit?",
+      "What criminal remedy applies if the franchisee's weekly commissary e-NACH or auto-debit bounces?",
+      "Can a franchisee argue that mandatory central-kitchen purchasing violates Section 27 of the Contract Act or competition law?",
+      "How quickly can a QSR or cloud-kitchen brand freeze aggregator listings and recover commissary arrears?"
+    ],
+    "wordCount": 2250,
+    "artefacts": [
+      "40-60 word Executive Creditor Answer",
+      "5-stage Operational Decision Tree SVG + mobile cards",
+      "bg-slate-900 Statutory Matrix Table",
+      "CommissaryScenarioTabs (4 interactive scenarios)",
+      "Worked ₹18.40L Recovery & Deposit Set-Off Ledger",
+      "6-point Cold-Chain POD & BSA 2023 s.63 Evidence Checklist",
+      "7 FAQ Accordions + FAQPage JSON-LD"
+    ],
+    "sources": [
+      "https://www.indiacode.nic.in/handle/123456789/2042",
+      "https://www.indiacode.nic.in/handle/123456789/2049",
+      "https://www.indiacode.nic.in/handle/123456789/2187",
+      "https://www.indiacode.nic.in/handle/123456789/2390",
+      "https://www.indiacode.nic.in/handle/123456789/1993",
+      "https://www.indiacode.nic.in/handle/123456789/21735"
+    ],
+    "builtAt": "2026-11-20"
+  },
+  {
+    "id": "B2B-279",
+    "url": "/master-franchisee-regional-development-schedule-default-recovery",
+    "archetype": "G1",
+    "h2s": [
+      "Why State Master Franchisees Squat on Exclusivity & Hoard Fees",
+      "Decision Tree: Exclusivity Revocation vs Sub-Franchisee Step-In",
+      "Statutory Matrix: Territory Breach & Fee-Share Recovery",
+      "Key Judicial Precedents for Master Franchise Enforcement",
+      "4 Regional Master Franchise Failure Modes & Counter-Moves",
+      "Worked Recovery Ledger: ₹1.84 Cr State Master Default",
+      "6-Point Regional Development & BSA 2023 s.63 Evidence Pack",
+      "Serve an Exclusivity Revocation & Step-In Notice Today",
+      "Franchisor Hub, Calculators, Templates & Sibling Guides",
+      "Frequently Asked Questions: Master Franchise Recovery",
+      "Primary Statutory Authorities & Official Portals"
+    ],
+    "components": [
+      "MasterFranchiseeTableOfContents.tsx",
+      "MasterFranchiseeScenarioTabs.tsx",
+      "MasterFranchiseeCTA.tsx",
+      "page.tsx"
+    ],
+    "faqQuestions": 7,
+    "wordCount": 2150,
+    "artefacts": [
+      "DecisionTreeSVG + Mobile Cards",
+      "bg-slate-900 Statutory Matrix Table",
+      "MasterFranchiseeScenarioTabs (4 Scenarios)",
+      "Worked ₹1.84 Cr State Master Recovery Ledger",
+      "6-Point BSA 2023 s.63 Evidence Pack",
+      "Dual-Track MasterFranchiseeCTA"
+    ],
+    "sources": [
+      "Commercial Courts Act, 2015 (ss. 2(1)(c)(ix), 12A)",
+      "Arbitration and Conciliation Act, 1996 (ss. 2(2), 9, 21, 44-49)",
+      "Indian Contract Act, 1872 (ss. 40, 55, 62, 74)",
+      "BNS 2023 s.316(5)",
+      "Trade Marks Act, 1999 (ss. 29, 135)",
+      "BSA 2023 s.63"
+    ],
+    "builtAt": "2026-11-20"
+  },
+  {
+    "id": "B2B-280",
+    "url": "/templates/franchisor-royalty-default-termination-signboard-takedown-notice",
+    "archetype": "P1",
+    "h2s": [
+      "Interactive 2-Stage Franchisor Notice Workspace",
+      "Why 2-Stage Franchise Enforcement Beats Generic Demand Letters",
+      "Statutory Framework & Commercial Court Precedents",
+      "Zomato, Swiggy & Google Maps IP Takedown Protocol",
+      "Mandatory Annexures & BSA 2023 s.63 Evidence Checklist",
+      "Tri-Channel Service Protocol (RPAD + Email + WhatsApp)",
+      "Frequently Asked Questions (Franchisor Enforcement)"
+    ],
+    "components": [
+      "FranchisorNoticeTOC",
+      "FranchisorNoticeWorkspace",
+      "FranchisorNoticeCTA"
+    ],
+    "wordCount": 1850,
+    "artefacts": [
+      "2-Stage Interactive Notice Builder",
+      "SVG Escalation Timeline",
+      "Statutory Matrix Table",
+      "Tri-Channel Service Table"
+    ],
+    "sources": [
+      "Commercial Courts Act s.2(1)(c)(ix)/(xvii)",
+      "Trade Marks Act s.29/135",
+      "PSS Act s.25",
+      "IT Rules 2021 Rule 3(1)(d)",
+      "BSA 2023 s.63"
+    ],
+    "builtAt": "2026-11-20"
+  },
+  {
+    "id": "B2B-281",
+    "url": "/industries/mining-minerals-fuel-scrap-commodity-recovery",
+    "archetype": "IH1",
+    "h2s": [
+      "Why 2–4% Commodity Margins Collapse on One Factory Default",
+      "Multi-Track Escalation Matrix by Ticket Size & Collateral",
+      "From Gate Weighment & NABL Sampling to Asset Attachment",
+      "4 Commodity Default Scenarios & Creditor Counter-Moves",
+      "Test 1 Live Commodity Claim (₹999) or Onboard Bulk CSV",
+      "Supreme Court Precedents Governing Commodity Attachment",
+      "Worked Ledger: Margin Wipeout & IBC s.8 Interest Clubbing",
+      "IND-25 Sector Playbooks, Attachment Law & Notice Directory",
+      "Live Statutory Guides, Calculators & Bulk Recovery Tools",
+      "Frequently Asked Questions: Commodity & Scrap Recovery",
+      "Primary Statutory Authorities & Official Portals"
+    ],
+    "components": [
+      "CommodityHubTableOfContents",
+      "CommodityHubScenarioTabs",
+      "CommodityHubCTA"
+    ],
+    "faqQuestions": [
+      "Can a boiler plant deduct ₹15–₹25 Lakh for 'low GCV or high moisture' 45 days after burning my coal?",
+      "How do metal scrap traders defeat 'excess slag or recovery loss' claims after an induction furnace melts the load?",
+      "When can a commodity supplier get Order XXXVIII Rule 5 attachment before judgment?",
+      "What criminal and regulatory remedies exist for unreturned PESO oxygen, nitrogen, or argon cylinders?",
+      "Do mineral grinding plants, quartz processors, and plywood units qualify for MSMED 3x RBI interest?",
+      "Can coal and scrap traders club contractual interest with principal to cross the ₹1 Crore IBC Section 8 threshold?",
+      "How does LegalRecovery handle both a single ₹999 test case and 100+ defaulting factory ledgers?"
+    ],
+    "wordCount": 2750,
+    "artefacts": [
+      "Sticky TOC (CommodityHubTableOfContents)",
+      "Multi-Track Escalation Decision Matrix Table",
+      "4-Stage Commodity Escalation SVG & Mobile Cards",
+      "Interactive 4-Sector Scenario Tabs (CommodityHubScenarioTabs)",
+      "Dual-Track CTA (CommodityHubCTA)",
+      "Worked 2.5% Margin & IBC s.8 Interest Clubbing Ledger",
+      "IND-25 9-Spoke Roadmap Directory"
+    ],
+    "sources": [
+      "Sale of Goods Act, 1930 (ss.41-42)",
+      "CPC 1908 (Order XXXVII & Order XXXVIII Rule 5)",
+      "IBC 2016 (s.8 & Form 3/4)",
+      "Gas Cylinders Rules 2016 (PESO)",
+      "BNS 2023 s.316 & BSA 2023 s.63"
+    ],
+    "builtAt": "2026-11-20T09:56:00+05:30"
+  },
+  {
+    "id": "B2B-284",
+    "url": "/industrial-gas-oxygen-nitrogen-argon-co2-cylinder-retention-recovery",
+    "archetype": "G1",
+    "h2s": [
+      "Why Unreturned Gas Cylinders Cost 10x More Than Gas Bills",
+      "Decision Tree: Cylinder Retrieval vs BNS s.316 & Demurrage",
+      "Statutory Matrix: Gas Cylinders Rules 2016, BNS s.316 & CPC",
+      "4 Cylinder Retention & Rogue Refilling Scenarios",
+      "Worked Ledger: 300-Cylinder Asset, Rent & Demurrage Claim",
+      "PESO Neck-Ring Serial & BSA 2023 s.63 Evidence Checklist",
+      "Serve a PESO & BNS s.316 Cylinder Recovery Notice Today",
+      "Commodity Hub, Calculators, Templates & Recovery Guides",
+      "Frequently Asked Questions: Gas Cylinder & Rent Recovery",
+      "Primary Statutory Authorities & Official Portals"
+    ],
+    "components": [
+      "GasCylinderTableOfContents",
+      "GasCylinderScenarioTabs",
+      "GasCylinderCTA"
+    ],
+    "wordCount": 2200,
+    "artefacts": [
+      "DecisionTreeSVG",
+      "StatutoryMatrixTable",
+      "GasCylinderScenarioTabs",
+      "WorkedRecoveryLedger",
+      "PESOEvidenceChecklist",
+      "DualTrackCTA"
+    ],
+    "sources": [
+      "peso.gov.in",
+      "indiacode.nic.in",
+      "samadhaan.msme.gov.in"
+    ],
+    "builtAt": "2026-11-20"
+  },
+  {
+    "id": "B2B-286",
+    "url": "/industrial-minerals-quartz-feldspar-china-clay-lime-foundry-recovery",
+    "archetype": "G1",
+    "h2s": [
+      "Why Grinding Plants Qualify for MSME 43B(h) & MSEFC Protection",
+      "Operational Decision Tree: Lab Cutbacks vs 43B(h) & Order 37",
+      "Statutory Matrix: MSMED Act, s.43B(h), Sale of Goods & CPC",
+      "4 Mineral Buyer Default & Quality-Cut Scenarios",
+      "Worked Ledger: ₹48L Quartz Powder Claim & 3x RBI Interest",
+      "Royalty, Weighbridge & BSA 2023 s.63 Evidence Checklist",
+      "Initiate a Mineral Receivables Demand Notice or Bulk CSV",
+      "Mining Hub, Interest Calculator, Templates & Sibling Guides",
+      "Frequently Asked Questions: Mineral & Silica Debt Recovery",
+      "Official Statutory Portals & Mineral Recovery Authorities"
+    ],
+    "components": [
+      "IndustrialMineralsTableOfContents",
+      "IndustrialMineralsScenarioTabs",
+      "IndustrialMineralsCTA"
+    ],
+    "faqQuestions": [
+      "Do mineral grinding, pulverizing, and calcining plants qualify as Manufacturing MSMEs under Section 43B(h) and the MSMED Act?",
+      "How do we defeat arbitrary whiteness, mesh, or moisture debit notes raised 45 days after unloading in Morbi?",
+      "Can we recover upfront State Mining Royalty (e-Ravanna) and freight charges alongside the mineral invoice?",
+      "What if our buyer is a trader or large ceramic brand that insists on a 120-day credit period in the Purchase Order?",
+      "Should a quartz or quicklime supplier file before the MSEFC or an Order XXXVII CPC Summary Suit?",
+      "What digital and weighbridge records must be preserved under BSA 2023 Section 63 for mineral recovery?"
+    ],
+    "wordCount": 2250,
+    "artefacts": [
+      "DecisionTreeSVG",
+      "StatutoryMatrixTable",
+      "ScenarioTabs",
+      "WorkedLedgerBox",
+      "BSAChecklist",
+      "DualTrackCTA"
+    ],
+    "sources": [
+      "samadhaan.msme.gov.in",
+      "udyamregistration.gov.in",
+      "indiacode.nic.in",
+      "rbi.org.in"
+    ],
+    "builtAt": "2026-11-20"
+  },
+  {
+    "id": "B2B-287",
+    "url": "/mining-overburden-removal-drilling-blasting-hems-contractor-recovery",
+    "archetype": "G1",
+    "h2s": [
+      "Why ₹20L/Month HEMM EMIs Make Mining OB Defaults Existential",
+      "Decision Tree: Joint Survey Freeze, Idle Fleet & s.9 Repossession",
+      "Statutory Matrix: Arbitration s.9/21, Commercial Courts & IBC s.8",
+      "4 Mining OB, Drilling & HEMM Fleet Dispute Playbooks",
+      "Worked Ledger: ₹3.40 Cr OB Volume Cut, Idle Charges & HSD Recovery",
+      "Joint Survey, Logbook & BSA 2023 s.63 Evidence Checklist",
+      "Serve an Arbitration s.21 & OB Recovery Notice Today",
+      "IND-25 Hub, Calculators, Templates & Recovery Guides",
+      "Frequently Asked Questions: Mining OB & HEMM Recovery",
+      "Primary Statutory Authorities & Official Portals"
+    ],
+    "components": [
+      "MiningHEMMTableOfContents",
+      "MiningHEMMScenarioTabs",
+      "MiningHEMMCTA"
+    ],
+    "faqQuestions": [
+      "Can an MDO or mining leaseholder deduct 15% from our OB bill weeks after blasting and backfilling the bench?",
+      "Are we entitled to idle-fleet charges if the mine shuts down due to the leaseholder's EC or Forest Clearance suspension?",
+      "What can we do if mine security blocks gate passes for our 40-ton dumpers and excavators?",
+      "How do overburden contractors defeat arbitrary free-issue diesel (HSD) and explosive recovery deductions?",
+      "Can a mining subcontractor file an IBC Section 8 demand notice for ₹1 Cr+ in unpaid RA bills?",
+      "Do rock-drilling, blasting, and tipper-hire contractors qualify for MSMED 3x RBI interest?"
+    ],
+    "wordCount": 2250,
+    "artefacts": [
+      "DecisionTreeSVG",
+      "StatutoryMatrixTable",
+      "MiningHEMMScenarioTabs",
+      "WorkedRecoveryLedger",
+      "SurveyBSAEvidenceChecklist",
+      "DualTrackCTA"
+    ],
+    "sources": [
+      "indiacode.nic.in",
+      "dgms.gov.in",
+      "mines.gov.in",
+      "ibbi.gov.in"
+    ],
+    "builtAt": "2026-11-20"
+  },
+  {
+    "id": "B2B-288",
+    "url": "/timber-plywood-veneer-sawmill-importer-wholesaler-credit-recovery",
+    "archetype": "G1",
+    "h2s": [
+      "Why 90-Day USD LCs & 180-Day Credit Break Wood Clusters",
+      "Decision Tree: 43B(h) Tax Lever vs Order 37 CPC vs NI s.138",
+      "Statutory Matrix: MSMED s.15–18, 43B(h), NI s.138 & CPC",
+      "4 Wood-Cluster Default Scenarios & Creditor Counter-Moves",
+      "Worked Ledger: ₹48L Timber & Plywood MSME Interest Claim",
+      "Forest Transit Pass, e-Way Bill & BSA 2023 s.63 Checklist",
+      "Serve a 43B(h) & Order 37 Demand Notice Today",
+      "Commodity Hub, Calculators, Templates & Sibling Guides",
+      "Frequently Asked Questions: Timber & Plywood Recovery",
+      "Primary Statutory Authorities & Official Portals"
+    ],
+    "components": [
+      "TimberPlywoodTableOfContents",
+      "TimberPlywoodScenarioTabs",
+      "TimberPlywoodCTA"
+    ],
+    "wordCount": 2250,
+    "artefacts": [
+      "Decision Tree SVG + Mobile Cards",
+      "Statutory Matrix Table",
+      "4-Scenario Interactive Explorer",
+      "Worked ₹48L MSME Interest Ledger",
+      "Forest TP & BSA s.63 Evidence Checklist",
+      "7 FAQ Accordions"
+    ],
+    "sources": [
+      "docs/seo-plan/b2b-seo-plan-data.json",
+      "docs/seo-plan/ANTIGRAVITY_PAGE_BUILDER_PROMPT.md"
+    ],
+    "builtAt": "2026-11-20"
+  },
+  {
+    "id": "B2B-289",
+    "url": "/order-38-rule-5-attachment-before-judgment-b2b-commodity-recovery",
+    "archetype": "L1",
+    "h2s": [
+      "Why a Paper Decree Fails Without Order XXXVIII Rule 5 CPC",
+      "Bare-Act Timelines, Rule 5 Sub-Clauses & Section 12A Bypass",
+      "Landmark Precedents Governing Rule 5 & Section 12A",
+      "4 Asset-Stripping Scenarios & Concrete Proof Playbooks",
+      "The Rule 5 Evidentiary Dossier & BSA 2023 s.63 Checklist",
+      "Debtor Defense Pre-Emption Matrix (Commercial Court)",
+      "Worked Security Ledger: ₹1.42 Cr Coal & Scrap Attachment",
+      "Lock Your Urgency Timeline Before Filing Attachment",
+      "Commodity Recovery Hub, Calculators & Related Law Guides",
+      "FAQs: Order XXXVIII Rule 5 CPC & Section 12A Urgent Relief",
+      "Primary Statutory Authorities & Official Portals"
+    ],
+    "components": [
+      "AttachmentTableOfContents.tsx",
+      "AttachmentScenarioTabs.tsx",
+      "AttachmentCTA.tsx"
+    ],
+    "faqQuestions": [
+      "What must a B2B creditor prove to win an Order XXXVIII Rule 5 attachment before judgment?",
+      "How does Order XXXVIII Rule 5 bypass mandatory Section 12A pre-institution mediation?",
+      "What concrete evidence proves a factory debtor is stripping assets rather than facing routine cash crunch?",
+      "Can a Commercial Court freeze a debtor's bank account or attach plant and machinery ex-parte?",
+      "What happens if the debtor sells the factory or transfers machinery after an attachment order?",
+      "Does an Order XXXVIII Rule 5 attachment override a bank's existing mortgage or hypothecation?",
+      "Can a creditor file Order XXXVIII Rule 5 inside an Order XXXVII summary suit?"
+    ],
+    "wordCount": 2350,
+    "artefacts": [
+      "40-60 word Executive Creditor Answer Box",
+      "4-Card Bare Act Timeline & Limitation Rail",
+      "5-Stage Commercial Court Attachment SVG Workflow",
+      "5 Verified Precedent Cards (Raman Tech, Yamini Manohar, Patil Automation, Premraj Mundra, Rajendran)",
+      "AttachmentScenarioTabs (4 interactive asset-stripping scenarios)",
+      "6-Point Rule 5 Evidentiary Dossier & BSA 2023 s.63 Checklist",
+      "5-Row Debtor Defense Pre-Emption Table",
+      "Worked ₹1.42 Cr Bank Guarantee & Conditional Freeze Ledger",
+      "Dual-Track AttachmentCTA"
+    ],
+    "sources": [
+      "https://www.indiacode.nic.in/handle/123456789/2191",
+      "https://www.indiacode.nic.in/handle/123456789/2156",
+      "https://www.indiacode.nic.in/handle/123456789/21735",
+      "https://www.mca.gov.in"
+    ],
+    "builtAt": "2026-11-20"
+  },
+  {
+    "id": "B2B-292",
+    "url": "/law/ibc-section-8-demand-notice-form-3-form-4-operational-creditor",
+    "archetype": "L1",
+    "h2s": [
+      "Why IBC Section 8 Is India’s Highest-Leverage B2B Recovery Tool",
+      "Statutory Timelines: 10-Day Window, s.10A & 3-Year Limitation",
+      "Form 3 vs Form 4 Under Rule 5: Which Notice Format Should You Serve?",
+      "Crossing the ₹1 Crore Threshold: Clubbing POs & Contractual Interest",
+      "Surviving Mobilox Scrutiny: Verified Supreme Court & NCLAT Precedents",
+      "Rule 5(2) Service Protocol & Board Resolution Authorization",
+      "4 High-Stakes IBC Section 8 Failure Modes & Pre-Emption SOPs",
+      "Debtor Defense Pre-Emption Matrix (NCLT Section 9 Stage)",
+      "12-Point Operational Creditor Pre-Issuance Audit Checklist",
+      "Frequently Asked Questions: IBC Section 8 Form 3 & Form 4",
+      "Primary Statutory Citations & IBBI Rules"
+    ],
+    "components": [
+      "IbcSection8TableOfContents",
+      "IbcSection8ScenarioTabs",
+      "IbcSection8CTA"
+    ],
+    "faqQuestions": [
+      "Should an Operational Creditor send Form 3 or Form 4 under IBC Section 8?",
+      "Can principal and contractual interest be clubbed to cross the ₹1 Crore IBC threshold?",
+      "Can multiple Purchase Orders or invoices be clubbed in a single Section 8 notice?",
+      "What happens during the 10-day reply window under Section 8(2)?",
+      "How does the Mobilox Innovations test affect my Section 8 notice?",
+      "Can an external Advocate sign and issue an IBC Section 8 Demand Notice?",
+      "What if my undisputed B2B claim is below ₹1 Crore (e.g., ₹25 Lakhs to ₹90 Lakhs)?"
+    ],
+    "wordCount": 2350,
+    "artefacts": [
+      "Hero 4-Card Metrics Strip",
+      "SVG Statutory Escalation Workflow",
+      "Form 3 vs Form 4 Matrix",
+      "Worked ₹1.044 Cr Interest Clubbing Ledger",
+      "Interactive 4-Tab Scenario Explorer",
+      "NCLT Defense Pre-Emption Table",
+      "12-Point Pre-Issuance Audit Checklist"
+    ],
+    "sources": [
+      "IBC 2016 Sections 3(12), 4, 5(20), 5(21), 8, 9, 10A, 238A",
+      "AAA Rules 2016 Rule 5, Form 3, Form 4, Form 5",
+      "MCA Notification S.O. 1205(E)",
+      "Mobilox Innovations (2018) 1 SCC 353",
+      "Macquarie Bank (2018) 2 SCC 674",
+      "Prashat Agarwal 2022 SCC OnLine NCLAT 3781",
+      "B.K. Educational Services (2019) 11 SCC 633"
+    ],
+    "builtAt": "2026-11-20"
+  },
+  {
+    "id": "B2B-293",
+    "url": "/law/section-12a-commercial-courts-act-pre-institution-mediation-guide",
+    "archetype": "L1",
+    "h2s": [
+      "Why Section 12A Is a Mandatory Gate for ₹3 Lakh+ Suits",
+      "Specified Value Under Section 12: Crossing the ₹3 Lakh Floor",
+      "Form-1 Filing at DLSA/SLSA: Step-by-Step PIMS Rules 2018 SOP",
+      "3-Month Clock, +2 Month Extension & Limitation Exclusion",
+      "Patil Automation & Yamini Manohar: Verified SC Precedents",
+      "4 Commercial Mediation & Urgent Relief Scenarios",
+      "Form-3 Non-Starter Report vs Arbitral Award u/s 30(4)",
+      "Debtor Defense Pre-Emption Matrix (Order VII Rule 11)",
+      "10-Point Pre-Filing Section 12A Compliance Checklist",
+      "FAQs: Section 12A Pre-Institution Mediation & Form-1",
+      "Primary Statutory Authorities & Official Portals"
+    ],
+    "components": [
+      "Section12aTableOfContents.tsx",
+      "Section12aScenarioTabs.tsx",
+      "Section12aCTA.tsx"
+    ],
+    "faqQuestions": [
+      "Is Section 12A Pre-Institution Mediation mandatory for all B2B recovery suits?",
+      "How much is the Form-1 filing fee for Section 12A mediation at DLSA?",
+      "What happens if the debtor ignores the DLSA Section 12A mediation notice?",
+      "How is the ₹3 Lakh Specified Value calculated under the Commercial Courts Act?",
+      "When can a creditor bypass Section 12A under the urgent interim relief exception?",
+      "Does Section 12A mediation pause the 3-year Limitation Act clock?",
+      "What legal force does a signed Section 12A settlement agreement have?"
+    ],
+    "wordCount": 2250,
+    "artefacts": [
+      "Executive Creditor Answer & Statutory Summary Box",
+      "Hero 4-Card Key Metrics Strip",
+      "5-Stage Section 12A PIMS Rules SVG Workflow",
+      "Section 12 Specified Value Table + Worked ₹3.20L Ledger",
+      "3 Verified SC Precedent Cards (Patil Automation, Yamini Manohar, Raman Tech)",
+      "Section12aScenarioTabs (4 interactive mediation/urgent-relief scenarios)",
+      "Form-3 Non-Starter vs Form-4 Arbitral Award Comparison Table",
+      "5-Row Order VII Rule 11 Debtor Defense Pre-Emption Matrix",
+      "10-Point Pre-Filing Section 12A Compliance Checklist",
+      "Dual-Track Section12aCTA"
+    ],
+    "sources": [
+      "Commercial Courts Act, 2015 ss.2(1)(c), 2(1)(i), 12, 12A",
+      "PIMS Rules, 2018 (G.S.R. 606(E)) Form-1, Form-2, Form-3, Form-4",
+      "Arbitration & Conciliation Act, 1996 ss.30(4), 36",
+      "Patil Automation (2022) 10 SCC 1",
+      "Yamini Manohar (2024) 5 SCC 815 / 2023 SCC OnLine SC 1382",
+      "Raman Tech (2008) 2 SCC 302"
+    ],
+    "builtAt": "2026-11-20"
+  },
+  {
+    "id": "B2B-295",
+    "url": "/law/mediation-act-2023-online-commercial-settlement-enforcement-india",
+    "archetype": "L1",
+    "h2s": [
+      "Why Informal Debtor Installment MOUs Fail B2B Creditors",
+      "Sections 27 & 30 Explained: Online MSA as a Court Decree",
+      "120-Day Completion Clock (s.18) & Limitation Freeze (s.29)",
+      "Informal MOU vs. 1996 Conciliation vs. Mediation Act 2023 MSA",
+      "4-Step Workflow: From Installment Email to Order XXI Decree",
+      "4 Commercial Recovery Scenarios Under Mediation Act, 2023",
+      "Binding Precedents & Commercial Courts Act Section 12A Synergy",
+      "Pre-Empting Section 28 Debtor Challenges at Execution",
+      "10-Point Section 27 & 30 Online MSA Execution Checklist",
+      "Frequently Asked Questions: Mediation Act 2023 s.27 & s.30",
+      "Primary Statutory Citations & Supreme Court Authorities"
+    ],
+    "components": [
+      "MediationActTableOfContents",
+      "MediationActScenarioTabs",
+      "MediationActCTA"
+    ],
+    "faqQuestions": [
+      "Can an Online Mediated Settlement Agreement (MSA) really be enforced like a Court Decree?",
+      "Why is an informal email or plain-paper MOU dangerous when a debtor asks for 4 installments?",
+      "What is the maximum timeline to complete mediation under the Mediation Act, 2023?",
+      "What happens to my 3-year limitation period if the debtor stalls during mediation?",
+      "On what grounds can a debtor challenge a Section 27 Mediated Settlement Agreement?",
+      "How does the Mediation Act, 2023 differ from Conciliation under the Arbitration Act, 1996?",
+      "Does a Section 27 MSA require registration under Section 20 to be executable?"
+    ],
+    "wordCount": 2450,
+    "artefacts": [
+      "Hero 4-Card Metrics Strip",
+      "MOU vs Conciliation vs Mediation Act 2023 Comparison Matrix",
+      "SVG 4-Step Online ODR to Order XXI Decree Workflow",
+      "Interactive 4-Tab Scenario Explorer",
+      "Precedent Cards (Patil Automation, Yamini Manohar, Sixth Schedule)",
+      "Section 28 Defense Pre-Emption Table",
+      "10-Point Online MSA Execution Checklist"
+    ],
+    "sources": [
+      "Mediation Act, 2023 (Sections 18, 19, 20, 22, 23, 27, 28, 29, 30, 33-42 & Sixth Schedule)",
+      "Commercial Courts Act, 2015 Section 12A",
+      "CPC 1908 Order XXI & Order XXXVII",
+      "Patil Automation (2022) 10 SCC 1",
+      "Yamini Manohar (2024) 5 SCC 815",
+      "IT Act 2000 & BSA 2023 Section 63"
+    ],
+    "builtAt": "2026-11-20"
+  },
+  {
+    "id": "B2B-297",
+    "url": "/tools/commercial-court-specified-value-fee-interest-calculator",
+    "archetype": "T1",
+    "h2s": [
+      "Interactive Specified Value & State Court-Fee Calculator",
+      "How Section 12(1)(a) Calculates Specified Value (₹3L+ Floor)",
+      "State-Wise Ad-Valorem Court Fees: Caps vs Uncapped Slabs",
+      "Worked CFO Example: ₹2.6L Principal Crossing ₹3L via Interest",
+      "Commercial Court Escalation & Fee-Refund Decision Flow",
+      "Pre-Suit vs Pendente Lite Interest & Litigation ROI",
+      "Frequently Asked Questions: Section 12 & Court Fees",
+      "Primary Statutory Sources & Court-Fees Acts"
+    ],
+    "components": [
+      "CommercialCourtCalculatorClient",
+      "CommercialCourtTOC",
+      "CommercialCourtCTA"
+    ],
+    "faqQuestions": [
+      "Does Principal plus accrued pre-suit interest count toward the ₹3 Lakh Commercial Court threshold?",
+      "Why is Mumbai (Maharashtra) Commercial Court fee capped at ₹3,00,000 while Delhi is uncapped?",
+      "Is Section 12A Pre-Institution Mediation mandatory if Specified Value crosses ₹3,00,000?",
+      "Do I get a Court-Fee refund if the debtor settles during Commercial Court proceedings or mediation?",
+      "What interest rate can a B2B creditor claim from the default date to the filing date?",
+      "Should a CFO file a ₹1.2 Crore recovery suit in Commercial Court or NCLT under IBC Section 8?"
+    ],
+    "wordCount": 1550,
+    "artefacts": [
+      "Interactive 6-State Court-Fee & s.12 Specified Value Calculator",
+      "CFO Litigation ROI vs Write-Off Estimator",
+      "6-State Ad-Valorem Comparison Matrix",
+      "SVG Commercial Court Escalation & Fee-Refund Flow",
+      "Worked ₹2.6L -> ₹3L+ Interest Threshold Example"
+    ],
+    "sources": [
+      "Commercial Courts Act, 2015 (Sections 2(1)(i), 12, 12A)",
+      "Court-Fees Act, 1870 (Section 16 Refund)",
+      "Maharashtra Court Fees Act, 1959 (₹3L Cap)",
+      "Gujarat Court-Fees Act, 2004 (₹75K Cap)",
+      "Karnataka Court-Fees Act, 1958",
+      "Tamil Nadu Court-Fees Act, 1955"
+    ],
+    "builtAt": "2026-11-20"
+  },
+  {
+    "id": "B2B-296",
+    "url": "/tools/b2b-debt-recovery-legal-forum-selector",
+    "archetype": "T1",
+    "h2s": [
+      "Configure Your Claim Profile & Screen Fatal Forum Traps",
+      "Indian B2B Debt Recovery Pecuniary & Eligibility Matrix",
+      "Six Fatal Jurisdiction Traps That Trigger Summary Dismissal",
+      "Stacking Section 138 / PSS s.25 Alongside Order 37 or IBC",
+      "Worked Cost & Timeline Comparison (₹25 Lakh vs ₹1.2 Crore)",
+      "Pre-Litigation Notice & BSA 2023 Section 63 Readiness",
+      "Convert Your Selected Track Into an Advocate-Drafted Notice",
+      "Frequently Asked Questions on B2B Forum Selection",
+      "Primary Statutory Sources & Verified Precedents"
+    ],
+    "components": [
+      "B2bForumSelectorClient",
+      "B2bForumSelectorTOC",
+      "B2bForumSelectorCTA"
+    ],
+    "faqQuestions": [
+      "Which court or tribunal should I choose for an unpaid B2B invoice in India?",
+      "Can we file a Section 138 cheque bounce case and an Order 37 summary suit together?",
+      "Why does MSME Samadhaan reject Medium Enterprises and EPC Works Contractors?",
+      "When is a claim barred from DRT and NCLT under pecuniary thresholds?",
+      "Is Section 12A Pre-Institution Mediation mandatory before filing a Commercial Suit?",
+      "What happens if I send an IBC Section 8 Demand Notice when there is a prior email dispute?"
+    ],
+    "wordCount": 1650,
+    "artefacts": [
+      "6-Input Interactive Forum Decision Engine",
+      "7-Trap Jurisdictional Bar Detector",
+      "Pecuniary & Statutory Cutoff Matrix Table",
+      "SVG Decision Tree Flowchart",
+      "Worked Cost & Timeline Comparison"
+    ],
+    "sources": [
+      "MSMED Act 2006 & Silpi Industries",
+      "IBC 2016 s.4/7/8/9 & Mobilox",
+      "Commercial Courts Act s.12A & Patil Automation",
+      "RDB Act 1993, SARFAESI 2002, NI Act s.138, PSS Act s.25"
+    ],
+    "builtAt": "2026-11-20"
+  },
+  {
+    "id": "B2B-298",
+    "url": "/templates/ibc-section-8-form-3-form-4-demand-notice-editable-pack",
+    "archetype": "P1",
+    "h2s": [
+      "Why NCLT Registries Reject Unverified Form 3 & Form 4 Drafts",
+      "Interactive Rule 5 Pack: Form 3, Form 4 & Board Resolution",
+      "Rule 5(1)(a) vs Rule 5(1)(b): Choosing Form 3 or Form 4",
+      "Mandatory Computation-of-Default Working Sheet Annexure",
+      "Board Resolution & Authorized Signatory Execution Rules",
+      "Rule 5(2) Service Matrix: Registered Post, Speed Post & Email",
+      "Worked ₹1.48 Crore Operational Debt Default Schedule",
+      "Dispatch One IBC Notice or Upload Multi-Debtor CSV Batch",
+      "Frequently Asked Questions: IBC Form 3, Form 4 & Rule 5",
+      "Statutory Authorities, IBBI Rules & Related B2B Guides"
+    ],
+    "components": [
+      "IbcNoticeTOC",
+      "IbcNoticeWorkspace",
+      "IbcNoticeCTA"
+    ],
+    "faqQuestions": 7,
+    "wordCount": 1820,
+    "artefacts": [
+      "4-Tab Interactive Rule 5 Workspace (Form 3, Form 4, Computation Sheet, Board Resolution)",
+      "4-Stage Rule 5 Escalation SVG",
+      "Rule 5(1)(a) vs 5(1)(b) Matrix",
+      "Rule 5(2) Service Table",
+      "Worked ₹1.48 Cr Default Schedule"
+    ],
+    "sources": [
+      "IBC 2016 s.4, s.5(20), s.5(21), s.8, s.9, s.10A",
+      "IBBI Adjudicating Authority Rules 2016 Rule 5",
+      "Macquarie Bank Ltd. v. Shilpi Cable Technologies Ltd. (2018) 2 SCC 674",
+      "Mobilox Innovations Pvt. Ltd. v. Kirusa Software Pvt. Ltd. (2018) 1 SCC 353",
+      "Companies Act 2013 s.179",
+      "BSA 2023 s.63"
+    ],
+    "builtAt": "2026-11-20"
+  },
+  {
+    "id": "B2B-299",
+    "url": "/templates/balance-confirmation-debt-acknowledgment-section-18-limitation-letter",
+    "archetype": "P1",
+    "h2s": [
+      "Why Unacknowledged Invoices Die at 36 Months (And How to Save Them)",
+      "Interactive Section 18, Section 19 & Section 25(3) Word Pack",
+      "Limitation Act s.18 vs s.19 vs Contract Act s.25(3): Legal Matrix",
+      "The Section 25(3) Revival Rule: Rescuing Invoices Past 3 Years",
+      "Email, WhatsApp & BSA 2023 s.63 Proof for Electronic Confirmations",
+      "Worked Example: Resetting a ₹22.57 Lakh Ledger Before Expiry",
+      "Mandatory Annexure & Signatory Verification Checklist",
+      "Get Advocate Review on 1 Case or Run Bulk AR Confirmations",
+      "Frequently Asked Questions: Section 18 & Section 25(3)",
+      "Primary Statutory Sources & Related B2B Recovery Guides"
+    ],
+    "components": [
+      "LimitationTemplateTOC",
+      "LimitationTemplateWorkspace",
+      "LimitationTemplateCTA"
+    ],
+    "faqQuestions": 7,
+    "wordCount": 1780,
+    "artefacts": [
+      "4-Tab Interactive Limitation Word Pack",
+      "SVG 3-Year Limitation Triage Flowchart",
+      "s.18 vs s.19 vs s.25(3) Statutory Matrix",
+      "Worked ₹22.57L Timeline Ledger",
+      "Email/WhatsApp/RPAD Evidence Table"
+    ],
+    "sources": [
+      "Limitation Act 1963 s.18 & s.19",
+      "Indian Contract Act 1872 s.25(3)",
+      "BSA 2023 s.63",
+      "IT Act 2000 s.4",
+      "ARCIL v. Bishal Jaiswal (2021) 6 SCC 366"
+    ],
+    "builtAt": "2026-11-20"
+  },
+  {
+    "id": "B2B-300",
+    "url": "/reports/state-of-b2b-delayed-payments-commercial-recovery-india-2026",
+    "archetype": "R1",
+    "h2s": [
+      "Executive Findings: Why Indian B2B Receivables Stall in 2026–27",
+      "Research Methodology, Scope & Empirical Data Boundary",
+      "The 2026–27 25-Industry B2B DSO & Legal Recovery Index",
+      "Section 43B(h) & MSMED Act s.16: The Tax-Disallowance Leverage",
+      "Commercial Court vs MSME ODR vs IBC: Statutory Resolution Data",
+      "Pre-Litigation Legal Notice Cure Mechanics & Multi-Channel Service",
+      "BSA 2023 Section 63 Electronic Evidence Audit Across ERP & GST",
+      "Worked CFO Model: Cost of 120-Day DSO vs Pre-Litigation Recovery",
+      "Download Open-Access Dataset & Press Citations",
+      "Frequently Asked Questions: 2026–27 B2B Recovery Benchmarks",
+      "Primary Statutory Authorities & Government Portals"
+    ],
+    "components": [
+      "B2BReportTableOfContents",
+      "B2BIndustryBenchmarkExplorer",
+      "B2BReportDataDownload",
+      "B2BReportCTA"
+    ],
+    "faqQuestions": 7,
+    "wordCount": 3450,
+    "artefacts": [
+      "Interactive 25-Industry Benchmark Explorer & Filter",
+      "Section 43B(h) Statutory Tax Disallowance Matrix",
+      "6-Forum Statutory Timeline SVG & Comparison Table",
+      "Worked CFO ₹50L & 500-Account Cost Models",
+      "Downloadable CSV/JSON Dataset & APA/BibTeX Citation Generator"
+    ],
+    "sources": [
+      "MSMED Act 2006 s.15-19",
+      "Income Tax Act 1961 s.43B(h)",
+      "IBC 2016 s.4, s.8, s.9",
+      "Commercial Courts Act 2015 s.12, s.12A",
+      "BSA 2023 s.63",
+      "Mediation Act 2023 s.18, s.27, s.30",
+      "RBI Master Directions & Bank Rate 6.75%"
+    ],
+    "builtAt": "2026-11-20"
   }
 ]

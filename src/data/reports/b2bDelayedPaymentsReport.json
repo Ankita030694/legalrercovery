@@ -1,0 +1,369 @@
+{
+  "id": "B2B-300",
+  "title": "State of B2B Delayed Payments & Commercial Recovery in India (2026–27)",
+  "h1": "Flagship Research Study: The 2026–2027 State of B2B Receivables, DSO & Pre-Litigation Legal Recovery Across 25 Indian Industries",
+  "metaDescription": "2026–27 India benchmark report comparing industry DSO, Section 43B(h) impact, and pre-litigation legal notice recovery across 25 B2B sectors.",
+  "lastUpdated": "2026-11-20",
+  "temporalCoverage": "2026-05-25/2027-03-31",
+  "methodology": {
+    "scope": "Cross-industry statutory and operational benchmark mapping 25 Indian B2B creditor verticals against active statutory cure windows, Income Tax Act Section 43B(h) disallowance triggers, MSMED Act Section 16 (3x RBI Bank Rate) compounding, IBC Section 8 (₹1 Cr threshold), Commercial Courts Act Section 12A (₹3L+ mediation), and Bharatiya Sakshya Adhiniyam (BSA) 2023 Section 63 electronic evidence standards.",
+    "dataBoundary": "All statutory timelines, interest multipliers, pecuniary thresholds, and tax disallowance rules are derived from enacted Indian bare acts, RBI Master Directions, IBBI Rules, and Supreme Court/High Court judgments as of November 2026. Operational workflow benchmarks reflect LegalRecovery.in's standardized pre-litigation intake taxonomy initiated post-May 2026 without fabricated survey percentages.",
+    "rbiBankRate": 6.75,
+    "msmeCompoundRate": 20.25
+  },
+  "industries": [
+    {
+      "code": "IND-01",
+      "sector": "Banks (Scheduled, SFBs & Co-op)",
+      "cluster": "BFSI & Lending",
+      "statutoryCreditWindow": "SMA-0 (1–30d), SMA-1 (31–60d), SMA-2 (61–90d), NPA (>90d)",
+      "dsoRiskTier": "High (Regulatory Provisioning)",
+      "primaryStatute": "SARFAESI Act 2002 s.13(2) & RDB Act 1993 (DRT ₹20L+)",
+      "secondaryRemedy": "NI Act s.138 / PSS Act s.25 (NACH/ECS Bounce) + Section 21 Arbitration",
+      "keyEvidence": "Sanction Letter, Statement of Account (Bankers' Books Evidence Act), CERSAI Charge & BSA s.63",
+      "cureTrigger": "60-day SARFAESI demand notice & CIBIL/CRILC reporting pressure"
+    },
+    {
+      "code": "IND-02",
+      "sector": "NBFCs, Digital Lending Fintechs, HFCs & MFIs",
+      "cluster": "BFSI & Lending",
+      "statutoryCreditWindow": "DPD 1–30 / 31–60 / 61–90 / 90+ (RBI Digital Lending Directions)",
+      "dsoRiskTier": "Critical (High-Volume Retail & SME)",
+      "primaryStatute": "PSS Act 2007 s.25 (e-NACH Bounce) & SARFAESI (Notified NBFCs ₹20L+)",
+      "secondaryRemedy": "Mediation Act 2023 Online ODR (s.27/s.30) & Order XXXVII CPC",
+      "keyEvidence": "Clickwrap Loan Agreement, e-Sign Audit Trail, NACH Return Memo & BSA s.63 Hash",
+      "cureTrigger": "Automated Multi-Channel Notice (Email + WhatsApp + RPAD) at DPD 15–30"
+    },
+    {
+      "code": "IND-03",
+      "sector": "Hospitals, Clinics & Diagnostic Chains",
+      "cluster": "Healthcare & Pharma",
+      "statutoryCreditWindow": "15–45 days (TPA / Corporate / CGHS / ECHS Empanelment)",
+      "dsoRiskTier": "High (TPA & PSU Receivables)",
+      "primaryStatute": "MSMED Act s.15–16 (MSE Hospitals) & Commercial Courts Act s.12A (₹3L+)",
+      "secondaryRemedy": "IRDAI Health Insurance Master Circular TPA TAT Escalation + Writ (PSU)",
+      "keyEvidence": "Cashless Pre-Auth Approval, Discharge Summary, Final Itemized Bill & TPA Portal Logs",
+      "cureTrigger": "Statutory Notice to TPA + Insurer Nodal Officer citing IRDAI TAT & 3x MSME Interest"
+    },
+    {
+      "code": "IND-04",
+      "sector": "Pharmaceuticals, Medical Devices & Surgical Distributors",
+      "cluster": "Healthcare & Pharma",
+      "statutoryCreditWindow": "30–60 days (Hospital & Stockist Credit)",
+      "dsoRiskTier": "Elevated (Batch Expiry & Return Disputes)",
+      "primaryStatute": "Section 43B(h) Income Tax Act & MSMED Act s.16 (3x RBI Rate)",
+      "secondaryRemedy": "NI Act s.138 Security Cheques & Sale of Goods Act s.42 (Deemed Acceptance)",
+      "keyEvidence": "GST Tax Invoice, E-Way Bill, Cold-Chain POD & Signed Stockist Ledger Confirmation",
+      "cureTrigger": "43B(h) Fiscal Year-End Disallowance Warning + Sec 138 Demand Notice"
+    },
+    {
+      "code": "IND-05",
+      "sector": "IT Services, SaaS, Cloud & AI Agencies",
+      "cluster": "Tech & Professional",
+      "statutoryCreditWindow": "15–45 days (Milestone / Monthly Retainer)",
+      "dsoRiskTier": "Elevated (Scope-Creep & UAT Pretexts)",
+      "primaryStatute": "Commercial Courts Act s.12A (₹3L+) & Copyright Act s.17/19 (IP Lien)",
+      "secondaryRemedy": "IBC Section 8 (₹1 Cr+ Enterprise) & MSME MSEFC (if Udyam MSE)",
+      "keyEvidence": "MSA, SOW, Git/Jira UAT Sign-off Emails, Slack/Teams Approvals & BSA s.63 Certificate",
+      "cureTrigger": "IP Assignment Suspension Notice (subject to contract) + Pre-s.12A Demand"
+    },
+    {
+      "code": "IND-06",
+      "sector": "Manufacturing, Heavy Engineering & Auto-Ancillary OEMs",
+      "cluster": "Manufacturing & Infra",
+      "statutoryCreditWindow": "45–90 days (Tier-1/Tier-2 OEM Supply)",
+      "dsoRiskTier": "Critical (Working Capital Lockup)",
+      "primaryStatute": "MSMED Act s.15–16 & Income Tax Act s.43B(h) (45-Day Cap)",
+      "secondaryRemedy": "IBC Section 8 Form 3/4 (₹1 Cr+) & Order XXXVII Summary Suit",
+      "keyEvidence": "Purchase Order, Quality Inspection Report (QIR), E-Way Bill & GST GSTR-1/2B",
+      "cureTrigger": "MSME 20.25% Monthly Compound Interest Ledger + 43B(h) Audit Notice"
+    },
+    {
+      "code": "IND-07",
+      "sector": "Infrastructure, Civil Construction & EPC Contractors",
+      "cluster": "Manufacturing & Infra",
+      "statutoryCreditWindow": "60–120+ days (RA Bills & Retention Money)",
+      "dsoRiskTier": "Critical (Longest Statutory & Litigation Cycle)",
+      "primaryStatute": "Arbitration & Conciliation Act s.21 & Commercial Courts Act s.12A",
+      "secondaryRemedy": "Section 80 CPC (2-Month Notice to Govt/PSU) & IBC s.8 (Private Employers)",
+      "keyEvidence": "Certified RA Bills, Measurement Book (MB), Completion Certificate & BG Release Logs",
+      "cureTrigger": "Section 21 Arbitration Invocation Notice / Section 80 CPC Statutory Notice"
+    },
+    {
+      "code": "IND-08",
+      "sector": "Real Estate Developers, Commercial Landlords & REITs",
+      "cluster": "Manufacturing & Infra",
+      "statutoryCreditWindow": "15–30 days (CAM, Lease Rent & Allotment Installments)",
+      "dsoRiskTier": "Moderate-High (Lock-In & Security Deposit Set-Offs)",
+      "primaryStatute": "Transfer of Property Act s.106/111 & Commercial Courts Act s.2(1)(c)(vii)",
+      "secondaryRemedy": "Order XXXVII CPC (Registered Lease Arrears) & RERA s.19(6) (Allottee Dues)",
+      "keyEvidence": "Registered Lease Deed, CAM Audit Ledger, Lock-In Clause & GST Rent Invoices",
+      "cureTrigger": "Section 106 Quit/Cure Notice + Lease Forfeiture & Order 38 Rule 5 Warning"
+    },
+    {
+      "code": "IND-09",
+      "sector": "Logistics, 3PL Warehousing, Freight & CHAs",
+      "cluster": "Trade, Logistics & Services",
+      "statutoryCreditWindow": "30–60 days (Trip Freight & Detention/Demurrage)",
+      "dsoRiskTier": "Elevated (POD & Shortage Deduction Disputes)",
+      "primaryStatute": "Carriage by Road Act 2007 & Contract Act s.170/171 (Bailee Lien)",
+      "secondaryRemedy": "MSMED Act s.16 (MSE Fleet/3PL) & Commercial Courts Act s.12A",
+      "keyEvidence": "Signed Lorry Receipt (LR/Bilty), Clean POD, E-Way Bill & GPS/FASTag Logs",
+      "cureTrigger": "Notice Rebutting Arbitrary Shortage Deductions + MSME 3x Interest Claim"
+    },
+    {
+      "code": "IND-10",
+      "sector": "FMCG, Consumer Durables & Super-Stockists / C&F",
+      "cluster": "Trade, Logistics & Services",
+      "statutoryCreditWindow": "15–45 days (Channel Credit & Trade Schemes)",
+      "dsoRiskTier": "High (Credit Note & Expiry Claim Pretexts)",
+      "primaryStatute": "NI Act s.138 (Distributor Security Cheques) & Order XXXVII CPC",
+      "secondaryRemedy": "MSMED Act s.16 (MSE Manufacturers) & Income Tax s.43B(h)",
+      "keyEvidence": "Distributorship Agreement, Signed Balance Confirmation, E-Way Bills & Cheque Memo",
+      "cureTrigger": "Statutory 15-Day Sec 138 Demand Notice (Criminal Leverage) + Ledger Audit"
+    },
+    {
+      "code": "IND-11",
+      "sector": "Staffing, HR Recruitment & Facility Management (FMS)",
+      "cluster": "Tech & Professional",
+      "statutoryCreditWindow": "30–45 days (Monthly Payroll & Placement Fee)",
+      "dsoRiskTier": "High (Working Capital / Statutory PF-ESI Pressure)",
+      "primaryStatute": "MSMED Act s.15–16 & Indian Contract Act s.74 (Backdoor Hiring Buyout)",
+      "secondaryRemedy": "Commercial Courts Act s.12A (₹3L+) & IBC s.8 (₹1 Cr+)",
+      "keyEvidence": "MSA, Attendance/Muster Rolls, PF/ESIC Challans, Candidate Joining Proof & BSA s.63",
+      "cureTrigger": "Notice Citing Section 43B(h) + Replacement/Buyout Fee Enforcement"
+    },
+    {
+      "code": "IND-12",
+      "sector": "Advertising, PR, Media Buying & Event Production",
+      "cluster": "Tech & Professional",
+      "statutoryCreditWindow": "30–60 days (Campaign Release & Talent Payouts)",
+      "dsoRiskTier": "Elevated (Subjective Creative Dissatisfaction)",
+      "primaryStatute": "Commercial Courts Act s.12A & Copyright Act 1957 (Unpaid Creative Rights)",
+      "secondaryRemedy": "MSMED Act s.16 (MSE Agencies) & Order XXXVII CPC (Approved Release Orders)",
+      "keyEvidence": "Signed Release Order (RO), Broadcast/Ad-Server Logs, Email Approvals & BSA s.63",
+      "cureTrigger": "Copyright Revocation Warning + 43B(h) / Pre-Litigation Demand Notice"
+    },
+    {
+      "code": "IND-13",
+      "sector": "Textiles, Apparel, Dyeing Units & Spinning Mills",
+      "cluster": "Trade, Logistics & Services",
+      "statutoryCreditWindow": "45–90 days (Mandi / Surat / Tiruppur / Ludhiana Trade)",
+      "dsoRiskTier": "Critical (Informal Chalan & Quality Cuttings)",
+      "primaryStatute": "MSMED Act s.15–16 & Income Tax Act s.43B(h) (45-Day Cap)",
+      "secondaryRemedy": "Sale of Goods Act s.42 & NI Act s.138 (Post-Dated Cheques)",
+      "keyEvidence": "Tax Invoice, Transport Bilty, Mill Test Report & Signed Delivery Chalan",
+      "cureTrigger": "43B(h) March-31 Disallowance Notice + MSEFC Conciliation Filing"
+    },
+    {
+      "code": "IND-14",
+      "sector": "Chemicals, Polymers, TMT Steel, Cement & Building Materials",
+      "cluster": "Manufacturing & Infra",
+      "statutoryCreditWindow": "30–60 days (Bulk Dispatch & Dealer Credit)",
+      "dsoRiskTier": "High (High Ticket Values & Price Fluctuation)",
+      "primaryStatute": "IBC Section 8 Form 3/4 (₹1 Cr+) & Order XXXVII CPC (Liquidated Dues)",
+      "secondaryRemedy": "Order 38 Rule 5 CPC (Attachment Before Judgment) & NI Act s.138",
+      "keyEvidence": "Weighbridge Slip (Dharamkanta), Mill TC, E-Way Bill, GST Invoice & Ledger Ack",
+      "cureTrigger": "Pre-IBC Form 3 Demand (10-Day Cure) or Commercial Court Urgent Relief"
+    },
+    {
+      "code": "IND-15",
+      "sector": "Exporters, Merchant Exporters & Buying Houses",
+      "cluster": "Trade, Logistics & Services",
+      "statutoryCreditWindow": "90–270 days (FEMA 9-Month Realization Mandate)",
+      "dsoRiskTier": "Critical (Cross-Border Enforcement & EDPMS Caution)",
+      "primaryStatute": "FEMA 1999 / RBI EDPMS Directions & Sale of Goods Act (FOB/CIF Risk)",
+      "secondaryRemedy": "ECGC Claim Subrogation, LC/UCP 600 Bank Demand & ICC/SIAC Arbitration",
+      "keyEvidence": "Shipping Bill, Bill of Lading (B/L), Commercial Invoice, e-BRC & SWIFT MT700",
+      "cureTrigger": "Cross-Border Legal Demand + ECGC/EDPMS Compliance Documentation"
+    },
+    {
+      "code": "IND-16",
+      "sector": "Hotels, Resorts, Banquet Venues & Corporate TMCs",
+      "cluster": "Trade, Logistics & Services",
+      "statutoryCreditWindow": "15–30 days (BTC Corporate Folios & MICE Blocks)",
+      "dsoRiskTier": "Moderate-High (Post-Event Billing Disputes)",
+      "primaryStatute": "Order XXXVII CPC (Signed BTC/Banquet Contract) & Commercial Courts s.12A",
+      "secondaryRemedy": "Contract Act s.74 (Cancellation/Attrition Liquidated Damages) & MSME s.16",
+      "keyEvidence": "Signed BTC Authorization, Banquet Event Order (BEO), Check-In Folio & GST Bill",
+      "cureTrigger": "Advocate Notice to Corporate Admin/CFO + Cancellation Fee Enforcement"
+    },
+    {
+      "code": "IND-17",
+      "sector": "Private Schools, Universities & B2B EdTech",
+      "cluster": "Tech & Professional",
+      "statutoryCreditWindow": "15–30 days (Institutional Licensing & B2B Tie-ups)",
+      "dsoRiskTier": "Moderate (Academic Cycle & Grant Delays)",
+      "primaryStatute": "Commercial Courts Act s.12A & Arbitration Act s.21 (B2B SaaS/Infra)",
+      "secondaryRemedy": "Contract Act s.73 (Unpaid Institutional Fee) & NI Act s.138",
+      "keyEvidence": "Signed MoU / Institutional License, LMS Usage Logs, GST Invoice & BSA s.63",
+      "cureTrigger": "Formal Notice to Trust/Society Trustees & Authorized Signatories"
+    },
+    {
+      "code": "IND-18",
+      "sector": "Telecom Operators, Enterprise ISPs, Data Centers & MSPs",
+      "cluster": "Tech & Professional",
+      "statutoryCreditWindow": "15–30 days (SLA Monthly Recurring Revenue)",
+      "dsoRiskTier": "Moderate-High (SLA Credit & Lock-In Exit Disputes)",
+      "primaryStatute": "Commercial Courts Act s.12A & Order XXXVII CPC (Fixed MRR Contracts)",
+      "secondaryRemedy": "IBC Section 8 (₹1 Cr+ Enterprise Colocation) & Arbitration s.11",
+      "keyEvidence": "Customer Application Form (CAF), SLA Uptime Logs, Bandwidth Usage & GST Bills",
+      "cureTrigger": "Contractual Service Suspension Warning + Lock-In Damages Demand"
+    },
+    {
+      "code": "IND-19",
+      "sector": "Solar EPC, Renewable IPPs/RESCOs & Power Contractors",
+      "cluster": "Manufacturing & Infra",
+      "statutoryCreditWindow": "45–90 days (PPA Power Invoices & EPC Milestones)",
+      "dsoRiskTier": "Critical (DISCOM / C&I Offtaker Delays)",
+      "primaryStatute": "Electricity Act 2003 s.86(1)(f) (SERC/CERC) & LPS Rules 2022",
+      "secondaryRemedy": "Arbitration Act s.21 (Private C&I EPC) & MSMED Act s.16 (MSE Vendors)",
+      "keyEvidence": "PPA/EPC Agreement, Joint Meter Reading (JMR), Commissioning Cert & LPS Ledger",
+      "cureTrigger": "Notice Invoking Late Payment Surcharge (LPS) Rules & SERC/Arbitration"
+    },
+    {
+      "code": "IND-20",
+      "sector": "Equipment Rental, Heavy Cranes, DG Sets & Asset Leasing",
+      "cluster": "Manufacturing & Infra",
+      "statutoryCreditWindow": "30–45 days (Monthly Hire Charges & Asset Return)",
+      "dsoRiskTier": "High (Asset Detention / Hostage Risk on Site)",
+      "primaryStatute": "Commercial Courts s.12A (Urgent Interim Relief) & BNS s.316 (Criminal Breach)",
+      "secondaryRemedy": "Arbitration Act s.9 (Interim Receiver/Repossession) & Order 38 Rule 5 CPC",
+      "keyEvidence": "Equipment Hire Agreement, Mobilization Challan, Logbooks & GPS/Telematics",
+      "cureTrigger": "Dual Notice: Unpaid Hire Dues + Mandatory 7-Day Asset Return Warning"
+    },
+    {
+      "code": "IND-21",
+      "sector": "Agri-Inputs, Seeds, Fertilizers & Cold Storage",
+      "cluster": "Trade, Logistics & Services",
+      "statutoryCreditWindow": "45–90 days (Kharif/Rabi Seasonal Dealer Credit)",
+      "dsoRiskTier": "High (Seasonal Cashflow & Crop-Failure Pretexts)",
+      "primaryStatute": "NI Act s.138 (Dealer Cheques) & MSMED Act s.16 (MSE Processors)",
+      "secondaryRemedy": "Order XXXVII CPC & Warehousing Act / Bailee Lien (Cold Storage)",
+      "keyEvidence": "Dealer Credit Form, Signed Balance Confirmation, E-Way Bill & Cheque Memo",
+      "cureTrigger": "Post-Harvest Sec 138 Demand Notice + Signed Khata Reconciliation"
+    },
+    {
+      "code": "IND-22",
+      "sector": "Packaging, Corrugated Boxes, Printing & Paper Mills",
+      "cluster": "Manufacturing & Infra",
+      "statutoryCreditWindow": "30–45 days (FMCG/Pharma Packaging Supply)",
+      "dsoRiskTier": "Elevated (High MSME Concentration; 43B(h) Sensitive)",
+      "primaryStatute": "Income Tax Act s.43B(h) & MSMED Act s.15–16 (3x RBI Bank Rate)",
+      "secondaryRemedy": "Sale of Goods Act s.42 & Commercial Courts Act s.12A (₹3L+)",
+      "keyEvidence": "Artwork Approval, PO, Delivery Chalan, GST Tax Invoice & E-Way Bill",
+      "cureTrigger": "Section 43B(h) Tax-Disallowance Alert + MSEFC Compound Interest Notice"
+    },
+    {
+      "code": "IND-23",
+      "sector": "CAs, Law Firms, Architects & Engineering Consultants",
+      "cluster": "Tech & Professional",
+      "statutoryCreditWindow": "15–30 days (Engagement Retainer & Success Fee)",
+      "dsoRiskTier": "Moderate (Fee Haircuts on Deliverable Completion)",
+      "primaryStatute": "Order XXXVII CPC (Signed Engagement Letter) & Commercial Courts s.12A",
+      "secondaryRemedy": "MSMED Act s.16 (Udyam-Registered Consulting MSEs) & Arbitration",
+      "keyEvidence": "Signed Engagement Letter, Deliverable Submission Emails, Timesheets & BSA s.63",
+      "cureTrigger": "Formal Professional Fee Demand + Work-Product Lien Notice (where permitted)"
+    },
+    {
+      "code": "IND-24",
+      "sector": "Franchisors, Brand Licensors, QSR & Auto Dealerships",
+      "cluster": "Trade, Logistics & Services",
+      "statutoryCreditWindow": "15–30 days (Royalty, Inventory & Brand Fee)",
+      "dsoRiskTier": "Elevated (Brand Misuse & Post-Termination Arrears)",
+      "primaryStatute": "Trade Marks Act 1999 s.29/135 & Arbitration Act s.9/s.21",
+      "secondaryRemedy": "Commercial Courts s.12A (IP + Royalty) & NI Act s.138",
+      "keyEvidence": "Franchise Agreement, POS Royalty Reports, Termination Notice & Trademark Reg",
+      "cureTrigger": "Cease-and-Desist Trademark Notice + Royalty & Minimum Guarantee Demand"
+    },
+    {
+      "code": "IND-25",
+      "sector": "Mining, Minerals, Coal, Fuel, Scrap & Bulk Commodities",
+      "cluster": "Manufacturing & Infra",
+      "statutoryCreditWindow": "15–45 days (Bulk Dispatch & Cylinder Deposit)",
+      "dsoRiskTier": "Critical (GCV/Moisture Deductions & Asset Diversion)",
+      "primaryStatute": "IBC Section 8 (₹1 Cr+) & Order 38 Rule 5 CPC (Asset Attachment)",
+      "secondaryRemedy": "Sale of Goods Act s.42 & Gas Cylinders Rules 2016 / BNS s.316",
+      "keyEvidence": "Dharamkanta Weight Slip, NABL Lab GCV Report, E-Way Bill & Cylinder Challan",
+      "cureTrigger": "Pre-IBC Form 3 Demand + Rebuttal of Unilateral GCV/Slag Deductions"
+    }
+  ],
+  "forumBenchmarks": [
+    {
+      "forum": "Advocate Pre-Litigation Notice (Email + WhatsApp + RPAD)",
+      "pecuniaryFloor": "No Floor (₹10,000 to ₹50 Cr+)",
+      "statutoryWindow": "10–15 Days Cure Window",
+      "costProfile": "₹999 (Single) / Bulk Institutional Tiers",
+      "primaryAdvantage": "Triggers s.43B(h), s.138, or s.8 statutory clock without court fees"
+    },
+    {
+      "forum": "MSME Samadhaan / MSEFC (MSMED Act s.18)",
+      "pecuniaryFloor": "No Floor (Micro & Small Enterprises Only)",
+      "statutoryWindow": "90 Days Statutory Target (Conciliation + Arbitration)",
+      "costProfile": "Low Statutory Fee; 75% Pre-Deposit for Buyer Appeal (s.19)",
+      "primaryAdvantage": "3x RBI Bank Rate (20.25% p.a.) monthly compound interest u/s 16"
+    },
+    {
+      "forum": "IBC Section 8 Demand Notice -> NCLT CIRP (s.9)",
+      "pecuniaryFloor": "₹1 Crore+ Default (s.4)",
+      "statutoryWindow": "10 Days Mandatory Cure / Dispute Window",
+      "costProfile": "₹2,000 NCLT Operational Creditor Filing Fee",
+      "primaryAdvantage": "Highest corporate boardroom cure leverage; insolvency threat"
+    },
+    {
+      "forum": "Commercial Courts Act (s.12A Mediation -> Summary Suit)",
+      "pecuniaryFloor": "₹3 Lakh+ Specified Value (Principal + Interest)",
+      "statutoryWindow": "3+2 Months s.12A Mediation (Limitation Excluded)",
+      "costProfile": "₹1,000 Mediation Fee + State Ad-Valorem Court Fee",
+      "primaryAdvantage": "Mandatory s.12A screening (Patil Automation); Order 38 Rule 5 urgent relief"
+    },
+    {
+      "forum": "NI Act s.138 / PSS Act s.25 (Cheque / e-NACH Bounce)",
+      "pecuniaryFloor": "No Floor (Dishonoured Instrument Value)",
+      "statutoryWindow": "15 Days Notice -> 30 Days Complaint Filing",
+      "costProfile": "Nominal Magisterial Court Fee + 20% Interim Compensation (s.143A)",
+      "primaryAdvantage": "Quasi-criminal personal liability on Directors/Authorized Signatories"
+    },
+    {
+      "forum": "Mediation Act 2023 Online ODR (s.27 & s.30)",
+      "pecuniaryFloor": "No Floor (Commercial & Retail Portfolios)",
+      "statutoryWindow": "120 Days Max Statutory Completion (s.18)",
+      "costProfile": "Institutional ODR Fee; Zero Ad-Valorem Court Fee",
+      "primaryAdvantage": "Signed Mediated Settlement Agreement = Executable Court Decree"
+    }
+  ],
+  "sources": [
+    {
+      "title": "Micro, Small and Medium Enterprises Development Act, 2006 (Sections 15–19) — India Code",
+      "url": "https://www.indiacode.nic.in/handle/123456789/2013"
+    },
+    {
+      "title": "Income Tax Act, 1961 — Section 43B(h) (Finance Act 2023 Amendment) — Income Tax India",
+      "url": "https://www.incometaxindia.gov.in/"
+    },
+    {
+      "title": "Insolvency and Bankruptcy Code, 2016 (Sections 4, 8 & 9) — IBBI",
+      "url": "https://ibbi.gov.in/"
+    },
+    {
+      "title": "Commercial Courts Act, 2015 (Sections 2, 12 & 12A) — India Code",
+      "url": "https://www.indiacode.nic.in/handle/123456789/2156"
+    },
+    {
+      "title": "Bharatiya Sakshya Adhiniyam, 2023 (Section 63 Electronic Evidence) — India Code",
+      "url": "https://www.indiacode.nic.in/"
+    },
+    {
+      "title": "The Mediation Act, 2023 (Sections 18, 27, 29 & 30) — Ministry of Law & Justice",
+      "url": "https://lawmin.gov.in/"
+    },
+    {
+      "title": "Reserve Bank of India (RBI) — Bank Rate & Digital Lending / SMA-NPA Master Directions",
+      "url": "https://www.rbi.org.in/"
+    },
+    {
+      "title": "MSME Samadhaan Delayed Payment Monitoring System — Ministry of MSME",
+      "url": "https://samadhaan.msme.gov.in/"
+    }
+  ]
+}

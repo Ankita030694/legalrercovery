@@ -11,6 +11,144 @@ const STATIC_ROUTES: {
   lastModified?: Date | string;
 }[] = [
   {
+    path: "/reports/state-of-b2b-delayed-payments-commercial-recovery-india-2026",
+    changeFrequency: "weekly",
+    priority: 0.9,
+    lastModified: new Date("2026-11-20"),
+  },
+  {
+    path: "/templates/balance-confirmation-debt-acknowledgment-section-18-limitation-letter",
+    changeFrequency: "weekly",
+    priority: 0.9,
+    lastModified: new Date("2026-11-20"),
+  },
+  {
+    path: "/templates/ibc-section-8-form-3-form-4-demand-notice-editable-pack",
+    changeFrequency: "weekly",
+    priority: 0.9,
+    lastModified: new Date("2026-11-20"),
+  },
+  {
+    path: "/tools/commercial-court-specified-value-fee-interest-calculator",
+    changeFrequency: "weekly",
+    priority: 0.9,
+    lastModified: new Date("2026-11-20"),
+  },
+  {
+    path: "/law/bsa-section-63-electronic-evidence-certificate-tally-erp-whatsapp-b2b",
+    changeFrequency: "weekly",
+    priority: 0.9,
+    lastModified: new Date("2026-11-20"),
+  },
+  {
+    path: "/law/section-12a-commercial-courts-act-pre-institution-mediation-guide",
+    changeFrequency: "weekly",
+    priority: 0.9,
+    lastModified: new Date("2026-11-20"),
+  },
+  {
+    path: "/law/mediation-act-2023-online-commercial-settlement-enforcement-india",
+    changeFrequency: "weekly",
+    priority: 0.85,
+    lastModified: new Date("2026-11-20"),
+  },
+  {
+    path: "/b2b-debt-recovery-india",
+    changeFrequency: "weekly",
+    priority: 0.9,
+    lastModified: new Date("2026-11-20"),
+  },
+  {
+    path: "/law/ibc-section-8-demand-notice-form-3-form-4-operational-creditor",
+    changeFrequency: "weekly",
+    priority: 0.9,
+    lastModified: new Date("2026-11-20"),
+  },
+  {
+    path: "/templates/coal-scrap-commodity-supply-and-gas-cylinder-recovery-notice",
+    changeFrequency: "weekly",
+    priority: 0.85,
+    lastModified: new Date("2026-11-20"),
+  },
+  {
+    path: "/timber-plywood-veneer-sawmill-importer-wholesaler-credit-recovery",
+    changeFrequency: "weekly",
+    priority: 0.85,
+    lastModified: new Date("2026-11-20"),
+  },
+  {
+    path: "/industrial-minerals-quartz-feldspar-china-clay-lime-foundry-recovery",
+    changeFrequency: "weekly",
+    priority: 0.85,
+    lastModified: new Date("2026-11-20"),
+  },
+  {
+    path: "/mining-overburden-removal-drilling-blasting-hems-contractor-recovery",
+    changeFrequency: "weekly",
+    priority: 0.85,
+    lastModified: new Date("2026-11-20"),
+  },
+  {
+    path: "/order-38-rule-5-attachment-before-judgment-b2b-commodity-recovery",
+    changeFrequency: "weekly",
+    priority: 0.85,
+    lastModified: new Date("2026-11-20"),
+  },
+  {
+    path: "/imported-coal-petcoke-biomass-supplier-gcv-moisture-deduction-recovery",
+    changeFrequency: "weekly",
+    priority: 0.9,
+    lastModified: new Date("2026-11-20"),
+  },
+  {
+    path: "/ferrous-non-ferrous-metal-scrap-ingot-rolling-mill-default-recovery",
+    changeFrequency: "weekly",
+    priority: 0.9,
+    lastModified: new Date("2026-11-20"),
+  },
+  {
+    path: "/industrial-gas-oxygen-nitrogen-argon-co2-cylinder-retention-recovery",
+    changeFrequency: "weekly",
+    priority: 0.85,
+    lastModified: new Date("2026-11-20"),
+  },
+  {
+    path: "/industries/mining-minerals-fuel-scrap-commodity-recovery",
+    changeFrequency: "weekly",
+    priority: 0.9,
+    lastModified: new Date("2026-11-20"),
+  },
+  {
+    path: '/master-franchisee-regional-development-schedule-default-recovery',
+    changeFrequency: 'weekly',
+    priority: 0.85,
+    lastModified: new Date('2026-11-20'),
+  },
+  {
+    path: "/templates/franchisor-royalty-default-termination-signboard-takedown-notice",
+    changeFrequency: "weekly",
+    priority: 0.85,
+    lastModified: new Date("2026-11-20"),
+  },
+  {
+    path: "/central-kitchen-commissary-franchise-supply-invoice-default-recovery",
+    changeFrequency: "weekly",
+    priority: 0.85,
+    lastModified: new Date("2026-11-20"),
+  },
+  {
+    path: "/preschool-k12-edtech-franchise-royalty-student-kit-fee-recovery",
+    changeFrequency: "weekly",
+    priority: 0.85,
+    lastModified: new Date("2026-11-19"),
+  },
+  {
+    path: "/brand-licensing-merchandising-minimum-royalty-guarantee-recovery",
+    changeFrequency: "weekly",
+    priority: 0.85,
+    lastModified: new Date("2026-11-19"),
+  },
+  {
     path: "/ev-two-wheeler-three-wheeler-automobile-oem-dealer-credit-recovery",
     changeFrequency: "weekly",
     priority: 0.85,
@@ -1332,6 +1470,7 @@ const STATIC_ROUTES: {
   { path: "/rera-complaint-online-state-wise", changeFrequency: "weekly", priority: 0.9, lastModified: new Date("2026-11-04") },
   { path: "/assured-return-builder-default-legal-notice", changeFrequency: "weekly", priority: 0.9, lastModified: new Date("2026-11-04") },
   { path: "/tools/msme-delayed-payment-interest-calculator", changeFrequency: "weekly", priority: 0.9, lastModified: new Date("2026-11-04") },
+  { path: "/tools/b2b-debt-recovery-legal-forum-selector", changeFrequency: "weekly", priority: 0.9, lastModified: new Date("2026-11-20") },
 ];
 
 async function getBlogEntries(): Promise<MetadataRoute.Sitemap> {

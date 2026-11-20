@@ -1079,6 +1079,18 @@ const CLUSTERS: Record<string, { heading: string; items: GuideItem[] }> = {
         desc: "Mandatory 2-month statutory notice before suing Central/State Government departments, Railways, or public officers for pending bills.",
       },
       {
+        title: "State of B2B Delayed Payments & Commercial Recovery in India (2026–27)",
+        href: "/reports/state-of-b2b-delayed-payments-commercial-recovery-india-2026",
+        tag: "CORE-26 Flagship Report",
+        desc: "25-industry benchmark study covering DSO windows, Section 43B(h) tax disallowance, 20.25% MSME interest, and forum resolution timelines.",
+      },
+      {
+        title: "B2B Legal Recovery Forum Selector: MSME vs Order 37 vs IBC & DRT",
+        href: "/tools/b2b-debt-recovery-legal-forum-selector",
+        tag: "CORE-26 Decision Tool",
+        desc: "6-input B2B forum selector screening ₹1L/₹3L/₹20L/₹1Cr cutoffs, fatal MSME/DRT/IBC traps & notice combos.",
+      },
+      {
         title: "MSME Delayed Payment Interest Calculator (3x Bank Rate)",
         href: "/tools/msme-delayed-payment-interest-calculator",
         tag: "MSME Tool",
@@ -1594,6 +1606,42 @@ const CLUSTERS: Record<string, { heading: string; items: GuideItem[] }> = {
   commercialB2B: {
     heading: "Related Pharma, Medical Device & B2B Creditor Recovery Guides",
     items: [
+      {
+        title: "BSA 2023 Section 63 Certificate: Tally/SAP, GST & WhatsApp",
+        href: "/law/bsa-section-63-electronic-evidence-certificate-tally-erp-whatsapp-b2b",
+        tag: "BSA Section 63",
+        desc: "Part A & Part B Schedule compliance and SHA-256 hash verification for ERP ledgers, E-Way Bills, emails & WhatsApp notices.",
+      },
+      {
+        title: "Section 12A Commercial Courts Act: Mediation (₹3L+) Guide",
+        href: "/law/section-12a-commercial-courts-act-pre-institution-mediation-guide",
+        tag: "Section 12A",
+        desc: "Mandatory Form-1 DLSA mediation, ₹1,000 fee, Form-3 Non-Starter Reports, Patil Automation & arbitral-award settlement u/s 30(4).",
+      },
+      {
+        title: "Mediation Act 2023 s.27 & s.30: Online Settlement = Court Decree",
+        href: "/law/mediation-act-2023-online-commercial-settlement-enforcement-india",
+        tag: "Mediation Act 2023",
+        desc: "Convert debtor installment plans into directly executable Court Decrees under Sections 27 & 30 Online Mediation with 120-day caps.",
+      },
+      {
+        title: "IBC Section 8 Demand Notice (Form 3 vs Form 4): ₹1 Cr+ Guide",
+        href: "/law/ibc-section-8-demand-notice-form-3-form-4-operational-creditor",
+        tag: "IBC Section 8",
+        desc: "Operational creditor guide to Form 3 vs Form 4, ₹1 Cr PO/interest clubbing, Mobilox dispute screening & 10-day NCLT escalation.",
+      },
+      {
+        title: "Balance Confirmation & Debt Acknowledgment (s.18 / s.25(3))",
+        href: "/templates/balance-confirmation-debt-acknowledgment-section-18-limitation-letter",
+        tag: "Limitation Template",
+        desc: "Editable Word formats for Section 18 Balance Confirmation, Section 19 Part-Payment Receipt & Contract Act s.25(3) Time-Barred Debt Promise.",
+      },
+      {
+        title: "IBC Section 8 Form 3 & Form 4 Editable Word Pack (Rule 5)",
+        href: "/templates/ibc-section-8-form-3-form-4-demand-notice-editable-pack",
+        tag: "IBC Template Pack",
+        desc: "Editable Form 3, Form 4, Default-Computation Sheet & s.179 Board Resolution Word pack for ₹1 Crore+ operational creditors.",
+      },
       {
         title: "Surgical Consumables, Disposables & Medical Gas Vendor Recovery",
         href: "/surgical-consumables-ppe-hospital-linen-vendor-payment-recovery",
@@ -2358,16 +2406,46 @@ const CLUSTERS: Record<string, { heading: string; items: GuideItem[] }> = {
     heading: "Related Franchisor, Brand Licensor & OEM Dealership Recovery Guides",
     items: [
       {
+        title: "Master Franchisee Territory Breach & Fee Share Recovery",
+        href: "/master-franchisee-regional-development-schedule-default-recovery",
+        tag: "Step-In & Recovery",
+        desc: "Revoke dead-weight state exclusivity, execute Tripartite Step-In Assignment over healthy sub-franchisees, and recover withheld fee shares.",
+      },
+      {
+        title: "Brand Licensing: Minimum Royalty Guarantee (MGR) & Sell-Off Recovery",
+        href: "/brand-licensing-merchandising-minimum-royalty-guarantee-recovery",
+        tag: "Brand Licensing",
+        desc: "Enforce unconditional Minimum Guaranteed Royalties (MGR) and stop post-60-day sell-off inventory dumping under Trade Marks Act s.29.",
+      },
+      {
         title: "EV 2W/3W OEM Dealership Credit & Spare-Parts Recovery",
         href: "/ev-two-wheeler-three-wheeler-automobile-oem-dealer-credit-recovery",
         tag: "EV OEM Credit",
         desc: "Enforce Sale of Goods s.25 title reservation, Vahan Form 21 holds, BG encashment, and NI s.138 against defaulting EV dealers.",
       },
       {
+        title: "Preschool & K-12 Franchise Student-Kit & Royalty Recovery",
+        href: "/preschool-k12-edtech-franchise-royalty-student-kit-fee-recovery",
+        tag: "Kit & IP Piracy",
+        desc: "Recover evaded Welcome Kit fees and stop Copyright Act s.51 workbook piracy via physical headcount audits and bulk legal notices.",
+      },
+      {
+        title: "QSR Central-Kitchen & Commissary Franchise Supply Recovery",
+        href: "/central-kitchen-commissary-franchise-supply-invoice-default-recovery",
+        tag: "Commissary & FSSAI",
+        desc: "Recover unpaid central-kitchen frozen supply invoices, convert defaulters to prepaid wallets under Contract Act s.51, and stop unauthorized local sourcing.",
+      },
+      {
         title: "Franchisors, Brand Licensors & EV/Auto OEM Network Recovery",
         href: "/industries/franchisors-brand-licensors-oem-dealership-recovery",
         tag: "Franchisor Hub",
         desc: "Commercial Courts Act s.2(1)(c)(ix) and Trade Marks Act s.135 recovery for QSR, retail & auto networks.",
+      },
+      {
+        title: "2-Stage Franchisor Royalty Default, Termination & Signboard Takedown Notice",
+        href: "/templates/franchisor-royalty-default-termination-signboard-takedown-notice",
+        tag: "Notice Pack",
+        desc: "15-day Royalty/MMG/Commissary cure notice + Stage 2 termination, 48-hr signboard de-branding & Zomato/Swiggy/Google delisting.",
       },
       {
         title: "The Rogue Holdover Franchisee Playbook: Stopping Signboard Misuse",
@@ -2401,10 +2479,95 @@ const CLUSTERS: Record<string, { heading: string; items: GuideItem[] }> = {
       },
     ],
   },
+  miningCommodityB2B: {
+    heading: "Coal, Petcoke, Metal Scrap, Fuel & Mineral Recovery Resources",
+    items: [
+      {
+        title: "Coal, Metal Scrap, Fuel & Gas-Cylinder Legal Notice [Word]",
+        href: "/templates/coal-scrap-commodity-supply-and-gas-cylinder-recovery-notice",
+        tag: "Word Template",
+        desc: "Advocate-vetted notice formats featuring SGS/NABL COA finality, Dharamkanta/E-Way logs, PESO cylinder serial tables & Pre-IBC / Order 38 warnings.",
+      },
+      {
+        title: "Imported Coal, Petcoke & Biomass GCV Deduction Recovery",
+        href: "/imported-coal-petcoke-biomass-supplier-gcv-moisture-deduction-recovery",
+        tag: "GCV & Moisture",
+        desc: "Void Day-45 unilateral boiler-lab GCV cuts using Sale of Goods s.42 consumption estoppel & SGS/NABL finality.",
+      },
+      {
+        title: "Coal, Petcoke, Metal Scrap, Mineral & Fuel Recovery Hub",
+        href: "/industries/mining-minerals-fuel-scrap-commodity-recovery",
+        tag: "IND-25 Pillar Hub",
+        desc: "Sale of Goods s.42 consumption estoppel, NABL umpire finality, Order 38 Rule 5 attachment, BNS s.316 & IBC Section 8.",
+      },
+      {
+        title: "Order 38 Rule 5 CPC Attachment Before Judgment & s.12A Bypass",
+        href: "/order-38-rule-5-attachment-before-judgment-b2b-commodity-recovery",
+        tag: "Asset Freeze",
+        desc: "Meet the Raman Tech & Yamini Manohar standard to freeze debtor bank accounts, attach factory machinery, and bypass s.12A delay.",
+      },
+      {
+        title: "Mining Overburden (OB), Drilling & HEMM Contractor Recovery",
+        href: "/mining-overburden-removal-drilling-blasting-hems-contractor-recovery",
+        tag: "Mining & HEMM",
+        desc: "Enforce joint Total-Station/Drone survey sheets, EC-suspension idle-fleet claims & Arbitration s.9 gate-pass relief.",
+      },
+      {
+        title: "Metal Scrap (HMS / Copper / Aluminium) & Ingot Recovery",
+        href: "/ferrous-non-ferrous-metal-scrap-ingot-rolling-mill-default-recovery",
+        tag: "Scrap & Mills",
+        desc: "Defeat post-melting slag excuses under Sale of Goods s.42 and win urgent Order 38 Rule 5 attachment before banks seize mills.",
+      },
+      {
+        title: "Order XXXVII CPC Summary Suit for Money Recovery",
+        href: "/law/order-37-summary-suit-money-recovery",
+        tag: "Summary Suit",
+        desc: "Fast-track liquidated commercial invoice, fuel indent, and written supply contract recovery without full trial delay.",
+      },
+      {
+        title: "Cheque Bounce Case Against Company Directors (NI s.138/141)",
+        href: "/cheque-bounce-case-against-company-directors",
+        tag: "Director Liability",
+        desc: "Prosecute defaulting factory directors and claim 20% interim compensation under Section 143A NI Act.",
+      },
+      {
+        title: "Unpaid B2B Invoices & Commercial Ledger Recovery",
+        href: "/recovery/unpaid-invoices",
+        tag: "B2B Invoices",
+        desc: "Advocate-drafted demand notices, GSTR-2B reconciliation, and multi-channel Email, WhatsApp & RPAD dispatch.",
+      },
+      {
+        title: "MSME 3x RBI Delayed Payment Interest Calculator",
+        href: "/tools/msme-delayed-payment-interest-calculator",
+        tag: "MSMED s.16 Tool",
+        desc: "Compute monthly compounded 3x RBI interest for Udyam-registered mineral grinding, calcining, and plywood units.",
+      },
+      {
+        title: "Bulk Recovery Cases & Institutional Solutions",
+        href: "/bulk-recovery-cases-all-in-one-affordable-solutions",
+        tag: "Bulk CSV",
+        desc: "Batch legal notice dispatch and Representee desk automation for 10 to 10,000+ defaulting factory buyers.",
+      },
+    ],
+  },
 };
 
 function detectCluster(pathname: string): { heading: string; items: GuideItem[] } {
   const p = pathname.toLowerCase();
+  if (
+    p.includes("mining-minerals-fuel-scrap-commodity-recovery") ||
+    p.includes("imported-coal-petcoke-biomass") ||
+    p.includes("ferrous-non-ferrous-metal-scrap") ||
+    p.includes("industrial-gas-oxygen-nitrogen-argon") ||
+    p.includes("industrial-lubricants-furnace-oil") ||
+    p.includes("industrial-minerals-quartz-feldspar") ||
+    p.includes("mining-overburden-removal") ||
+    p.includes("timber-plywood-veneer-sawmill") ||
+    p.includes("order-38-rule-5-attachment-before-judgment") ||
+    p.includes("coal-scrap-commodity-supply-and-gas-cylinder")
+  ) {
+    return CLUSTERS.miningCommodityB2B;
+  }
   if (
     p.includes("franchisors-brand-licensors-oem-dealership-recovery") ||
     p.includes("terminated-rogue-franchisee-using-brand-signboard") ||
@@ -2726,6 +2889,10 @@ p.includes("school") ||
     return CLUSTERS.property;
   }
   if (
+    p.includes("bsa-section-63") ||
+    p.includes("section-12a") ||
+    p.includes("mediation-act-2023") ||
+    p.includes("ibc-section-8") ||
     p.includes("sarfaesi") ||
     p.includes("atm") ||
     p.includes("insurance-premium-auto-debited") ||
@@ -2826,6 +2993,9 @@ p.includes("school") ||
     p.includes("forklift-mhe")
   ) {
     return CLUSTERS.construction || CLUSTERS.general;
+  }
+  if (p.includes("b2b-debt-recovery-india") || p.includes("b2b-debt-recovery-legal-forum-selector")) {
+    return CLUSTERS.commercialB2B;
   }
   if (p.includes("fpo-farmer-producer") || p.includes("cold-storage-unpaid-rent")) {
     return CLUSTERS.agroInputsB2B;
