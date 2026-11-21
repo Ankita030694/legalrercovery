@@ -43,7 +43,23 @@ const faqs = [
   },
   {
     question: "How much does it cost to send a legal notice online in India?",
-    answer: "At LegalRecovery, we follow a transparent, flat-pricing model for online legal notices. Unlike traditional law firms that charge hourly consultation rates, our online process includes advocate consultation, drafting of the notice, legal vetting, digital dispatch via email and WhatsApp, and real-time tracking updates, all for a single, upfront flat fee. This makes professional legal notices accessible to individuals, startups, and small businesses alike."
+    answer: "At LegalRecovery, we follow a transparent, flat-pricing model for online legal notices. Unlike traditional law firms that charge hourly consultation rates, our online process includes advocate consultation, drafting of the notice, legal vetting, digital dispatch via email and WhatsApp, and real-time tracking updates, all for a single, upfront flat fee. Speed Post is optional and charged separately per party. The full price breakdown is on our legal notice charges page. This makes professional legal notices accessible to individuals, startups, and small businesses alike."
+  },
+  {
+    question: "How can I check or track a legal notice online in India?",
+    answer: "It depends on what kind of notice it is. For an advocate's legal notice sent before a case, track the physical copy with its 13-digit India Post Speed Post or Registered Post consignment number (for example EDxxxxxxxxxIN) on the India Post website, and check the WhatsApp or email copy for delivery and read receipts. If you have received a court summons or judicial notice, verify it on the official e-Courts Services portal (services.ecourts.gov.in) using the CNR number, case number or party name. If you are unsure whether a notice you received is genuine, check the advocate's enrolment number with the State Bar Council."
+  },
+  {
+    question: "What is a Section 63 BSA certificate and when do I need it for an online notice?",
+    answer: "The Bharatiya Sakshya Adhiniyam, 2023 (BSA) replaced the Indian Evidence Act, 1872 and governs electronic evidence. Section 63 of the BSA (previously Section 65B) requires that an electronic record, such as WhatsApp screenshots, blue ticks or email delivery logs, be filed with a signed certificate confirming that the device was working properly and the records were not altered. You need it when you rely on WhatsApp or email delivery as proof of service in court. Without it, the court can refuse to accept the electronic proof."
+  },
+  {
+    question: "Can a criminal notice under the BNSS be served only on WhatsApp?",
+    answer: "No. The Supreme Court has held that in criminal matters electronic service cannot replace the physical modes of service the statute prescribes. Notices such as those under Section 35 of the Bharatiya Nagarik Suraksha Sanhita, 2023 (which replaced Section 41A CrPC) must be served in person or by post. WhatsApp and email service is useful for civil, pre-litigation legal notices like money recovery demands, ideally alongside Speed Post."
+  },
+  {
+    question: "Can I recover the cost of the legal notice from the other side?",
+    answer: "Often, yes. Your notice can demand that the recipient pay the cost of drafting and sending it along with the principal amount. If the matter goes to court, Section 35 of the Code of Civil Procedure gives the court discretion to award costs to the winning party, which can include the cost of the notice where the other side's default forced you to sue."
   },
   {
     question: "Can a legal notice be sent to a company registered under a foreign jurisdiction?",
@@ -205,10 +221,11 @@ export default function SendLegalNoticeClient() {
     { id: "step-by-step-digital-drafting", title: "3. Step-by-Step Procedure to Draft Online" },
     { id: "physical-dispatch-india-post", title: "4. Physical Dispatch via Speed Post & Tracking" },
     { id: "digital-delivery-whatsapp-email", title: "5. Digital Service: WhatsApp, Email & BSA 2023" },
-    { id: "recipient-response-scenarios", title: "6. Handling Recipient Responses & Refusal" },
-    { id: "notice-types-money-consumer", title: "7. Common Legal Notice Categories in India" },
-    { id: "success-stories-reviews", title: "8. Success Stories & Client Reviews" },
-    { id: "faqs", title: "9. Frequently Asked Questions" }
+    { id: "online-vs-offline-notice", title: "6. Online vs. Offline Lawyer: Fees & Proof of Delivery" },
+    { id: "recipient-response-scenarios", title: "7. Handling Recipient Responses & Refusal" },
+    { id: "notice-types-money-consumer", title: "8. Common Legal Notice Categories in India" },
+    { id: "success-stories-reviews", title: "9. Success Stories & Client Reviews" },
+    { id: "faqs", title: "10. Frequently Asked Questions" }
   ];
 
   const breadcrumbItems = [
@@ -430,9 +447,55 @@ export default function SendLegalNoticeClient() {
                   </div>
                 </section>
 
-                {/* 6. Handling Recipient Responses & Refusal */}
+                {/* 6. Online vs. Offline Lawyer (merged from /online-legal-notice and /online-lawyer-to-send-legal-notice) */}
+                <section id="online-vs-offline-notice" className="scroll-mt-32">
+                  <h2 className="text-xl md:text-3xl font-black text-slate-900 mb-5 border-b-2 border-[#DC2626] pb-2 inline-block">6. Online vs. Offline Lawyer: Fees &amp; Proof of Delivery</h2>
+                  <div className="prose prose-base max-w-none text-slate-650 space-y-6">
+                    <p className="text-sm md:text-base leading-relaxed">
+                      Hiring a lawyer online to send your legal notice gives you the same advocate-signed notice as a visit to a lawyer&apos;s chamber. The difference is in how you pay, how long it takes and what proof of delivery you end up with:
+                    </p>
+                    <div className="overflow-x-auto">
+                      <table className="w-full text-left border-collapse text-xs md:text-sm">
+                        <thead>
+                          <tr className="bg-slate-100 text-slate-900 font-extrabold border-b border-slate-200">
+                            <th className="p-3">What you get</th>
+                            <th className="p-3">Online legal notice (LegalRecovery)</th>
+                            <th className="p-3">Offline lawyer&apos;s chamber</th>
+                          </tr>
+                        </thead>
+                        <tbody className="divide-y divide-slate-100 text-slate-650">
+                          <tr>
+                            <td className="p-3 font-bold text-slate-900">Fees</td>
+                            <td className="p-3">One flat fee for drafting, advocate signature and WhatsApp/email dispatch. Speed Post is optional, charged per party.</td>
+                            <td className="p-3">Often ₹3,000 to ₹10,000, sometimes billed per consultation, with typing and postage on top.</td>
+                          </tr>
+                          <tr>
+                            <td className="p-3 font-bold text-slate-900">Visits</td>
+                            <td className="p-3">None. Share your facts and documents online and approve the draft.</td>
+                            <td className="p-3">Usually one or more visits to brief the lawyer and sign.</td>
+                          </tr>
+                          <tr>
+                            <td className="p-3 font-bold text-slate-900">Proof of delivery</td>
+                            <td className="p-3">Speed Post tracking plus WhatsApp and email delivery records, which can be backed by a Section 63 BSA certificate.</td>
+                            <td className="p-3">Usually Registered Post or Speed Post receipt only.</td>
+                          </tr>
+                          <tr>
+                            <td className="p-3 font-bold text-slate-900">Tracking</td>
+                            <td className="p-3">Consignment number and delivery status shared with you online.</td>
+                            <td className="p-3">You get a postal receipt and track it yourself.</td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                    <p className="text-sm md:text-base leading-relaxed">
+                      For a dispute that is likely to go to trial, you will still need an advocate to appear in court. For the notice itself, which is what most disputes need first, the online route is faster and cheaper. See the full price breakdown on our <Link href="/legal-notice-charges" className="text-[#DC2626] font-semibold hover:underline">legal notice charges</Link> page, or read whether you can <Link href="/how-can-i-send-a-legal-notice-online-to-someone-in-india-without-hiring-a-lawyer" className="text-[#DC2626] font-semibold hover:underline">send a legal notice without a lawyer</Link>.
+                    </p>
+                  </div>
+                </section>
+
+                {/* 7. Handling Recipient Responses & Refusal */}
                 <section id="recipient-response-scenarios" className="scroll-mt-32">
-                  <h2 className="text-xl md:text-3xl font-black text-slate-900 mb-5 border-b-2 border-[#DC2626] pb-2 inline-block">6. Handling Recipient Responses &amp; Refusal</h2>
+                  <h2 className="text-xl md:text-3xl font-black text-slate-900 mb-5 border-b-2 border-[#DC2626] pb-2 inline-block">7. Handling Recipient Responses &amp; Refusal</h2>
                   <div className="prose prose-base max-w-none text-slate-650 space-y-6">
                     <p className="text-sm md:text-base leading-relaxed">
                       Once a legal notice is delivered, the recipient generally responds in one of three ways. Knowing how to handle each scenario is crucial for maintaining your legal advantage:
@@ -460,9 +523,9 @@ export default function SendLegalNoticeClient() {
                   </div>
                 </section>
 
-                {/* 7. Common Legal Notice Categories in India */}
+                {/* 8. Common Legal Notice Categories in India */}
                 <section id="notice-types-money-consumer" className="scroll-mt-32">
-                  <h2 className="text-xl md:text-3xl font-black text-slate-900 mb-5 border-b-2 border-[#DC2626] pb-2 inline-block">7. Common Legal Notice Categories in India</h2>
+                  <h2 className="text-xl md:text-3xl font-black text-slate-900 mb-5 border-b-2 border-[#DC2626] pb-2 inline-block">8. Common Legal Notice Categories in India</h2>
                   <div className="prose prose-base max-w-none text-slate-650 space-y-6">
                     <p className="text-sm md:text-base leading-relaxed">
                       A legal notice must be customized to the specific category of the dispute. Sending a generic notice is ineffective. Below are the most common notice categories we handle online:
@@ -480,7 +543,7 @@ export default function SendLegalNoticeClient() {
 
                 {/* 8. Success Stories & Client Reviews */}
                 <section id="success-stories-reviews" className="scroll-mt-32">
-                  <h2 className="text-xl md:text-3xl font-black text-slate-900 mb-5 border-b-2 border-[#DC2626] pb-2 inline-block">8. Success Stories &amp; Reviews</h2>
+                  <h2 className="text-xl md:text-3xl font-black text-slate-900 mb-5 border-b-2 border-[#DC2626] pb-2 inline-block">9. Success Stories &amp; Reviews</h2>
                   <div className="prose prose-base max-w-none text-slate-650 space-y-6">
                     <p className="text-sm md:text-base leading-relaxed">
                       We have helped hundreds of individuals, startups, and small businesses recover payments and resolve disputes. Below are representative success stories:
@@ -515,7 +578,7 @@ export default function SendLegalNoticeClient() {
 
                 {/* 9. FAQs */}
                 <section id="faqs" className="scroll-mt-32">
-                  <h2 className="text-xl md:text-3xl font-black text-slate-900 mb-5 border-b-2 border-[#DC2626] pb-2 inline-block">9. FAQs</h2>
+                  <h2 className="text-xl md:text-3xl font-black text-slate-900 mb-5 border-b-2 border-[#DC2626] pb-2 inline-block">10. FAQs</h2>
                   <div className="space-y-4">
                     {faqs.map((faq, idx) => {
                       const faqId = `faq-${idx}`;

@@ -935,11 +935,30 @@ const STATIC_ROUTES: {
     lastModified: new Date("2026-11-17"),
   },
   {
-    path: "influencer-talent-management-agency-brand-campaign-payout-recovery",
+    path: "/influencer-talent-management-agency-brand-campaign-payout-recovery",
     changeFrequency: "weekly",
     priority: 0.8,
-    lastModified: "2026-11-17",
+    lastModified: new Date("2026-11-17"),
   },
+  // Live, indexable pages that were missing from the sitemap (added 2026-11-21).
+  { path: "/bank-charges-refund-legal-notice", changeFrequency: "weekly", priority: 0.9, lastModified: new Date("2026-11-04") },
+  { path: "/claim-repudiated-vs-rejected-difference", changeFrequency: "weekly", priority: 0.85, lastModified: new Date("2026-11-04") },
+  { path: "/loan-closed-but-ecs-still-active", changeFrequency: "weekly", priority: 0.85, lastModified: new Date("2026-11-04") },
+  { path: "/hi/money-recovery-case-kitna-time-lagta-hai", changeFrequency: "weekly", priority: 0.85, lastModified: new Date("2026-11-09") },
+  { path: "/hostel-and-mess-fee-refund-college-cancellation", changeFrequency: "weekly", priority: 0.85, lastModified: new Date("2026-11-09") },
+  { path: "/commercial-property-section-106-termination-mesne-profits-suit-guide", changeFrequency: "weekly", priority: 0.8, lastModified: new Date("2026-11-16") },
+  { path: "/ad-film-ott-video-production-house-milestone-post-production-recovery", changeFrequency: "weekly", priority: 0.8, lastModified: new Date("2026-11-17") },
+  { path: "/blue-collar-industrial-labour-contractor-factory-bill-recovery", changeFrequency: "weekly", priority: 0.8, lastModified: new Date("2026-11-17") },
+  { path: "/creative-pitch-theft-unauthorized-use-unpaid-design-recovery", changeFrequency: "weekly", priority: 0.8, lastModified: new Date("2026-11-17") },
+  { path: "/duty-drawback-rodtep-recovery-show-cause-notice-unrealized-export-defense", changeFrequency: "weekly", priority: 0.8, lastModified: new Date("2026-11-17") },
+  { path: "/dyeing-printing-bleaching-embroidery-job-work-fabric-lien-recovery", changeFrequency: "weekly", priority: 0.8, lastModified: new Date("2026-11-17") },
+  { path: "/foreign-buyer-not-retiring-cad-dp-documents-abandoned-container-port", changeFrequency: "weekly", priority: 0.8, lastModified: new Date("2026-11-17") },
+  { path: "/industries/textiles-apparel-garment-recovery", changeFrequency: "weekly", priority: 0.8, lastModified: new Date("2026-11-17") },
+  { path: "/textile-trade-association-mahajan-panch-award-enforcement-court", changeFrequency: "weekly", priority: 0.8, lastModified: new Date("2026-11-17") },
+  { path: "/cash-credit-overdraft-stock-statement-default-recall-notice", changeFrequency: "weekly", priority: 0.8, lastModified: new Date("2026-11-19") },
+  { path: "/personal-guarantor-invocation-notice-bank-loan-recovery", changeFrequency: "weekly", priority: 0.8, lastModified: new Date("2026-11-19") },
+  { path: "/industrial-lubricants-furnace-oil-ldo-bulk-diesel-bowser-credit-recovery", changeFrequency: "weekly", priority: 0.8, lastModified: new Date("2026-11-20") },
+  { path: "/master-franchisee-regional-development-schedule-default-recovery", changeFrequency: "weekly", priority: 0.8, lastModified: new Date("2026-11-20") },
   { path: "", changeFrequency: "weekly", priority: 1 },
   { path: "/pr-public-relations-agency-retainer-crisis-mandate-fee-recovery", changeFrequency: "weekly", priority: 0.9, lastModified: new Date("2026-11-17") },
   { path: "/outdoor-hoarding-ooh-billboard-transit-media-rental-default-recovery", changeFrequency: "weekly", priority: 0.8 },
@@ -1167,7 +1186,6 @@ const STATIC_ROUTES: {
   { path: "/hi/cyber-fraud-paisa-wapas-kaise-milega", changeFrequency: "weekly", priority: 0.9, lastModified: new Date("2026-11-04") },
   { path: "/scam-money-recovery-what-is-possible", changeFrequency: "weekly", priority: 0.9, lastModified: new Date("2026-11-04") },
   { path: "/templates", changeFrequency: "weekly", priority: 0.85, lastModified: new Date("2026-11-05") },
-  { path: "/legal-notice-charges", changeFrequency: "weekly", priority: 0.9, lastModified: new Date("2026-11-05") },
   { path: "/templates/insurance-ombudsman-complaint-format", changeFrequency: "weekly", priority: 0.9, lastModified: new Date("2026-11-06") },
   { path: "/law/coaching-centre-refund-guidelines-2024", changeFrequency: "weekly", priority: 0.9, lastModified: new Date("2026-11-06") },
   { path: "/law/ugc-fee-refund-policy", changeFrequency: "weekly", priority: 0.9, lastModified: new Date("2026-11-06") },
@@ -1291,10 +1309,8 @@ const STATIC_ROUTES: {
   { path: "/legal-notice-for-recovery-of-money-sample", changeFrequency: "weekly", priority: 0.85 },
   { path: "/how-to-send-a-legal-notice-for-recovery-of-money-in-india", changeFrequency: "weekly", priority: 0.85 },
   { path: "/how-to-draft-a-legal-notice-for-recovery-of-money", changeFrequency: "weekly", priority: 0.85 },
-  { path: "/online-legal-notice", changeFrequency: "weekly", priority: 0.9 },
   { path: "/send-a-legal-notice", changeFrequency: "weekly", priority: 0.9 },
   { path: "/vakil-online", changeFrequency: "weekly", priority: 0.85 },
-  { path: "/online-lawyer-to-send-legal-notice", changeFrequency: "weekly", priority: 0.85 },
   { path: "/what-is-a-legal-notice-in-india", changeFrequency: "weekly", priority: 0.85 },
   { path: "/email-landing", changeFrequency: "weekly", priority: 0.95 },
 
@@ -1510,12 +1526,21 @@ async function getBlogEntries(): Promise<MetadataRoute.Sitemap> {
 }
 
 export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
-  const staticEntries: MetadataRoute.Sitemap = STATIC_ROUTES.map((route) => ({
-    url: `${SITE_URL}${route.path}`,
-    lastModified: route.lastModified || new Date(),
-    changeFrequency: route.changeFrequency,
-    priority: route.priority,
-  }));
+  // Normalize paths (a missing leading slash produced an invalid URL that Search Console
+  // flagged as a sitemap error) and keep the first entry when a path is listed twice.
+  const seen = new Set<string>();
+  const staticEntries: MetadataRoute.Sitemap = [];
+  for (const route of STATIC_ROUTES) {
+    const path = route.path && !route.path.startsWith("/") ? `/${route.path}` : route.path;
+    if (seen.has(path)) continue;
+    seen.add(path);
+    staticEntries.push({
+      url: `${SITE_URL}${path}`,
+      lastModified: route.lastModified || new Date(),
+      changeFrequency: route.changeFrequency,
+      priority: route.priority,
+    });
+  }
 
   const blogEntries = await getBlogEntries();
 

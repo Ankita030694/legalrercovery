@@ -377,7 +377,7 @@ export default function HousingSocietyNoticeClient() {
                   </p>
 
                   <p className="text-sm md:text-base leading-relaxed">
-                    The demand section must conclude with severe consequences. It will state that failure to comply will result in a formal complaint to the Deputy Registrar of Cooperative Societies seeking the dissolution of the committee for statutory violations, as well as a petition before the Consumer Court for deficiency of service claiming heavy compensation for mental agony. For ensuring the notice carries the necessary legal weight and statutory citations, using an <Link href="/online-legal-notice" className="text-[#DC2626] hover:underline font-medium">online legal notice</Link> service is highly effective against stubborn committees.
+                    The demand section must conclude with severe consequences. It will state that failure to comply will result in a formal complaint to the Deputy Registrar of Cooperative Societies seeking the dissolution of the committee for statutory violations, as well as a petition before the Consumer Court for deficiency of service claiming heavy compensation for mental agony. For ensuring the notice carries the necessary legal weight and statutory citations, using an <Link href="/send-legal-notice-online-india" className="text-[#DC2626] hover:underline font-medium">online legal notice</Link> service is highly effective against stubborn committees.
                   </p>
                 </div>
               </section>

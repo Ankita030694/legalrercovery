@@ -3598,13 +3598,6 @@ export const ALL_SITEMAP_PAGES: SitemapItem[] = [
     timestamp: 1793001500000,
   },
   {
-    title: "Online Legal Notice Filing Portal India",
-    href: "/online-legal-notice",
-    category: "Guides",
-    date: "25 Oct 2026",
-    timestamp: 1792915200000,
-  },
-  {
     title: "Send Legal Notice Online in India (Statutory Procedure)",
     href: "/send-legal-notice-online-india",
     category: "Guides",
@@ -3617,13 +3610,6 @@ export const ALL_SITEMAP_PAGES: SitemapItem[] = [
     category: "Guides",
     date: "24 Oct 2026",
     timestamp: 1792828800000,
-  },
-  {
-    title: "Online Lawyer to Send Legal Notice in India",
-    href: "/online-lawyer-to-send-legal-notice",
-    category: "Guides",
-    date: "24 Oct 2026",
-    timestamp: 1792828700000,
   },
   {
     title: "What is a Legal Notice in India: Rules, Timelines & Validity",

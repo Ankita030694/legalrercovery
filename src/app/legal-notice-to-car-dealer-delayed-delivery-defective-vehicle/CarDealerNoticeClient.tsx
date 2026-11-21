@@ -377,7 +377,7 @@ export default function CarDealerNoticeClient() {
                   </p>
 
                   <p className="text-sm md:text-base leading-relaxed">
-                    The demand section must be absolute. You must demand either the immediate replacement of the vehicle with a brand new, defect free unit of the exact same specification, or a total refund of the vehicle on road price, including all RTO taxes, insurance premiums, and loan processing fees, along with substantial compensation for mental agony. For executing this effectively against large corporations, utilizing an <Link href="/online-lawyer-to-send-legal-notice" className="text-[#DC2626] hover:underline font-medium">online lawyer to send a legal notice</Link> is highly recommended.
+                    The demand section must be absolute. You must demand either the immediate replacement of the vehicle with a brand new, defect free unit of the exact same specification, or a total refund of the vehicle on road price, including all RTO taxes, insurance premiums, and loan processing fees, along with substantial compensation for mental agony. For executing this effectively against large corporations, utilizing an <Link href="/send-legal-notice-online-india" className="text-[#DC2626] hover:underline font-medium">online lawyer to send a legal notice</Link> is highly recommended.
                   </p>
                 </div>
               </section>

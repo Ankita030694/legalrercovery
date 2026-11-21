@@ -1152,7 +1152,7 @@ export default function FlipkartRefundComplaintPage() {
                 </Link>
                 <span>•</span>
                 <Link
-                  href="/online-legal-notice"
+                  href="/send-legal-notice-online-india"
                   className="text-[#DC2626] hover:underline font-medium"
                 >
                   Serving a lawyer-drafted online legal notice

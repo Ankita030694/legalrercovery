@@ -377,7 +377,7 @@ export default function GymRefundNoticeClient() {
                   </p>
 
                   <p className="text-sm md:text-base leading-relaxed">
-                    The demand section must calculate the precise pro-rata refund amount owed. It will set a strict 15 day deadline for the business to transfer the funds. Furthermore, the notice will state that failure to comply will result in a formal petition before the District Consumer Disputes Redressal Commission, where the consumer will seek not only the refund but also heavy compensation for mental harassment and full coverage of all litigation costs. For rapid deployment against corporate entities, utilizing an <Link href="/online-legal-notice" className="text-[#DC2626] hover:underline font-medium">online legal notice</Link> service ensures the document is formatted correctly and tracked legally.
+                    The demand section must calculate the precise pro-rata refund amount owed. It will set a strict 15 day deadline for the business to transfer the funds. Furthermore, the notice will state that failure to comply will result in a formal petition before the District Consumer Disputes Redressal Commission, where the consumer will seek not only the refund but also heavy compensation for mental harassment and full coverage of all litigation costs. For rapid deployment against corporate entities, utilizing an <Link href="/send-legal-notice-online-india" className="text-[#DC2626] hover:underline font-medium">online legal notice</Link> service ensures the document is formatted correctly and tracked legally.
                   </p>
                 </div>
               </section>

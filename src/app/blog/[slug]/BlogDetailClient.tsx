@@ -88,8 +88,8 @@ const processContent = (html: string) => {
   // Fix known legacy routes in blog content to our updated ones
   modifiedContent = modifiedContent
     .replace(/href=["']\/services\/legal-strategy["']/gi, 'href="/services"')
-    .replace(/href=["']\/legal-notice-to-bank-format["']/gi, 'href="/online-legal-notice"')
-    .replace(/href=["']\/how-can-i-send-legal-notice["']/gi, 'href="/online-legal-notice"')
+    .replace(/href=["']\/legal-notice-to-bank-format["']/gi, 'href="/send-legal-notice-online-india"')
+    .replace(/href=["']\/how-can-i-send-legal-notice["']/gi, 'href="/send-legal-notice-online-india"')
     .replace(/href=["']\/resources["']/gi, 'href="/blog"')
     .replace(/href=["'](?:https?:\/\/(?:www\.)?legalrecovery\.in)?\/delayed-payment-interest-calculator\/?["']/gi, 'href="/tools/msme-delayed-payment-interest-calculator"')
     .replace(/href=["'](?:https?:\/\/(?:www\.)?legalrecovery\.in)?\/amazon-refund-not-received-legal-notice\/?["']/gi, 'href="/legal-notice-to/amazon"')
@@ -99,7 +99,8 @@ const processContent = (html: string) => {
     .replace(/href=["'](?:https?:\/\/(?:www\.)?legalrecovery\.in)?\/msme-delayed-payment-interest-recovery-guide\/?["']/gi, 'href="/msme-delayed-payment-recovery-samadhan-vs-legal-notice"')
     .replace(/href=["'](?:https?:\/\/(?:www\.)?legalrecovery\.in)?\/send-a-legal-notice\/swiggy-refund-not-recieved\/?["']/gi, 'href="/legal-notice-to/swiggy"')
     .replace(/href=["'](?:https?:\/\/(?:www\.)?legalrecovery\.in)?\/send-a-legal-notice\/zomato-refund-not-recieved\/?["']/gi, 'href="/legal-notice-to/zomato"')
-    .replace(/href=["'](?:https?:\/\/(?:www\.)?legalrecovery\.in)?\/send-legal-notice\/?["']/gi, 'href="/online-legal-notice"')
+    .replace(/href=["'](?:https?:\/\/(?:www\.)?legalrecovery\.in)?\/send-legal-notice\/?["']/gi, 'href="/send-legal-notice-online-india"')
+    .replace(/href=["'](?:https?:\/\/(?:www\.)?legalrecovery\.in)?\/(?:online-legal-notice|online-lawyer-to-send-legal-notice|legal-notice-online)\/?["']/gi, 'href="/send-legal-notice-online-india"')
     .replace(/href=["'](?:https?:\/\/(?:www\.)?legalrecovery\.in)?\/b2b-vendor-payment-recovery\/?["']/gi, 'href="/send-a-legal-notice/vendor-not-paying-pending-payment"')
     .replace(/href=["'](?:https?:\/\/(?:www\.)?legalrecovery\.in)?\/failed-upi-transaction-money-stuck-in-bank\/?["']/gi, 'href="/law/rbi-failed-transaction-tat-compensation"')
     .replace(/href=["'](?:https?:\/\/(?:www\.)?legalrecovery\.in)?\/ecommerce-fraud-refund-legal-notice\/?["']/gi, 'href="/send-a-legal-notice/online-refund-not-received"')

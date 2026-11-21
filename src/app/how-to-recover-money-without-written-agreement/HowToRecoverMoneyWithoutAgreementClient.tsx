@@ -375,7 +375,7 @@ export default function HowToRecoverMoneyWithoutAgreementClient() {
                     Sending a Formal Legal Notice
                   </h3>
                   <p className="text-sm md:text-base leading-relaxed">
-                    The first aggressive legal maneuver is having your advocate draft and send a formal legal notice to the defaulter. A legal notice is not a court order, but a stern, formal communication demanding the repayment of the owed amount, usually along with accrued interest, within a stipulated time frame (typically 15 to 30 days). It clearly states that failure to comply will result in the initiation of civil or criminal legal proceedings at the borrower's risk and cost. Using an <Link href="/online-legal-notice" className="text-[#DC2626] hover:underline font-medium">online legal notice</Link> platform can expedite this critical step dramatically.
+                    The first aggressive legal maneuver is having your advocate draft and send a formal legal notice to the defaulter. A legal notice is not a court order, but a stern, formal communication demanding the repayment of the owed amount, usually along with accrued interest, within a stipulated time frame (typically 15 to 30 days). It clearly states that failure to comply will result in the initiation of civil or criminal legal proceedings at the borrower's risk and cost. Using an <Link href="/send-legal-notice-online-india" className="text-[#DC2626] hover:underline font-medium">online legal notice</Link> platform can expedite this critical step dramatically.
                   </p>
 
                   <h3 className="text-lg md:text-xl font-bold text-slate-900 mt-8 mb-3">

@@ -15,7 +15,7 @@ const securityHeaders = [
   },
   {
     key: "Content-Security-Policy",
-    value: "default-src 'self'; script-src 'self' 'unsafe-eval' 'unsafe-inline' https://va.vercel-scripts.com https://connect.facebook.net; style-src 'self' 'unsafe-inline'; img-src 'self' blob: data: https:; font-src 'self' data:; connect-src 'self' https://va.vercel-scripts.com https://connect.facebook.net https://www.facebook.com https://*.facebook.com https://vitals.vercel-insights.com https://secure.payu.in https://*.payu.in; frame-src 'self' https://www.facebook.com; frame-ancestors 'self'; base-uri 'self'; form-action 'self' https://secure.payu.in https://*.payu.in https://www.facebook.com;",
+    value: "default-src 'self'; script-src 'self' 'unsafe-eval' 'unsafe-inline' https://va.vercel-scripts.com https://connect.facebook.net https://www.clarity.ms https://*.clarity.ms; style-src 'self' 'unsafe-inline'; img-src 'self' blob: data: https:; font-src 'self' data:; connect-src 'self' https://*.clarity.ms https://c.bing.com https://va.vercel-scripts.com https://connect.facebook.net https://www.facebook.com https://*.facebook.com https://vitals.vercel-insights.com https://secure.payu.in https://*.payu.in; frame-src 'self' https://www.facebook.com; frame-ancestors 'self'; base-uri 'self'; form-action 'self' https://secure.payu.in https://*.payu.in https://www.facebook.com;",
   },
   {
     key: "X-XSS-Protection",
@@ -180,14 +180,25 @@ const nextConfig: NextConfig = {
         destination: "/is-an-email-or-whatsapp-message-considered-a-valid-legal-notice-in-indian-courts",
         permanent: true,
       },
+      // "Send legal notice online" cluster (consolidated 2026-11-21): one page for the head term.
+      {
+        source: "/online-legal-notice",
+        destination: "/send-legal-notice-online-india",
+        permanent: true,
+      },
+      {
+        source: "/online-lawyer-to-send-legal-notice",
+        destination: "/send-legal-notice-online-india",
+        permanent: true,
+      },
       {
         source: "/legal-notice-online",
-        destination: "/online-legal-notice",
+        destination: "/send-legal-notice-online-india",
         permanent: true,
       },
       {
         source: "/send-legal-notice",
-        destination: "/online-legal-notice",
+        destination: "/send-legal-notice-online-india",
         permanent: true,
       },
       {

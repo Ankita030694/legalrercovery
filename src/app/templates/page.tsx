@@ -116,7 +116,7 @@ export default function TemplatesHubPage() {
             </h1>
             <p className="text-slate-300 text-sm md:text-base leading-relaxed max-w-3xl">
               {ALL.length} ready-to-use formats for the most common money disputes in India. Fill in your details, download as Word or PDF, and send. If the other side still doesn&apos;t pay, escalate with an{" "}
-              <Link href="/online-legal-notice" className="text-red-400 underline font-semibold">advocate-drafted legal notice</Link>.
+              <Link href="/send-legal-notice-online-india" className="text-red-400 underline font-semibold">advocate-drafted legal notice</Link>.
             </p>
           </div>
         </section>
