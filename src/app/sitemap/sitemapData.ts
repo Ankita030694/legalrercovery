@@ -8,6 +8,13 @@ export interface SitemapItem {
 
 export const ALL_SITEMAP_PAGES: SitemapItem[] = [
   {
+    title: "Business Debt Recovery by Industry in India: 25 Sectors",
+    href: "/industries",
+    category: "B2B & Institutional Recovery",
+    date: "2026-11-21",
+    timestamp: 1795219200000,
+  },
+  {
     title: "State of B2B Delayed Payments & Commercial Recovery in India (2026–27)",
     href: "/reports/state-of-b2b-delayed-payments-commercial-recovery-india-2026",
     category: "B2B & Institutional Recovery",

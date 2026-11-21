@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import Breadcrumbs from "@/components/Breadcrumbs";
 import { SITE_URL } from "@/lib/site";
+import { ALL_SITEMAP_PAGES } from "../sitemap/sitemapData";
 
 export const revalidate = 86400;
 
@@ -81,16 +82,23 @@ const GROUPS: { heading: string; items: Template[] }[] = [
 
 const ALL = GROUPS.flatMap((g) => g.items);
 
+// Every other template on the site, so none is left without a link from this hub.
+// Read from the HTML sitemap data, which gains an entry whenever a template is published.
+const LISTED = new Set(ALL.map((t) => `/templates/${t.slug}`));
+const MORE = ALL_SITEMAP_PAGES.filter((p) => {
+  if (!p.href.startsWith("/templates/") || LISTED.has(p.href)) return false;
+  LISTED.add(p.href); // the sitemap data repeats some entries
+  return true;
+}).sort((a, b) => a.title.localeCompare(b.title));
+
 const ITEMLIST_SCHEMA = {
   "@context": "https://schema.org",
   "@type": "ItemList",
   name: TITLE,
-  itemListElement: ALL.map((t, i) => ({
-    "@type": "ListItem",
-    position: i + 1,
-    name: t.title,
-    url: `${SITE_URL}/templates/${t.slug}`,
-  })),
+  itemListElement: [
+    ...ALL.map((t) => ({ name: t.title, url: `${SITE_URL}/templates/${t.slug}` })),
+    ...MORE.map((p) => ({ name: p.title, url: `${SITE_URL}${p.href}` })),
+  ].map((item, i) => ({ "@type": "ListItem", position: i + 1, ...item })),
 };
 
 const BREADCRUMB_SCHEMA = {
@@ -115,7 +123,7 @@ export default function TemplatesHubPage() {
               Free Legal Letter and Notice Templates
             </h1>
             <p className="text-slate-300 text-sm md:text-base leading-relaxed max-w-3xl">
-              {ALL.length} ready-to-use formats for the most common money disputes in India. Fill in your details, download as Word or PDF, and send. If the other side still doesn&apos;t pay, escalate with an{" "}
+              {ALL.length + MORE.length} ready-to-use formats for the most common money disputes in India. Fill in your details, download as Word or PDF, and send. If the other side still doesn&apos;t pay, escalate with an{" "}
               <Link href="/send-legal-notice-online-india" className="text-red-400 underline font-semibold">advocate-drafted legal notice</Link>.
             </p>
           </div>
@@ -141,6 +149,19 @@ export default function TemplatesHubPage() {
               </div>
             </section>
           ))}
+
+          {MORE.length > 0 && (
+            <section className="space-y-3">
+              <h2 className="text-xl sm:text-2xl font-extrabold tracking-tight">More templates</h2>
+              <ul className="grid grid-cols-1 md:grid-cols-2 gap-x-8 gap-y-2 list-disc pl-5 text-sm md:text-base text-slate-700">
+                {MORE.map((p) => (
+                  <li key={p.href}>
+                    <Link href={p.href} className="text-red-600 underline">{p.title}</Link>
+                  </li>
+                ))}
+              </ul>
+            </section>
+          )}
 
           <section className="space-y-3">
             <h2 className="text-xl sm:text-2xl font-extrabold tracking-tight">Legal notice formats and samples</h2>

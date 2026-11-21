@@ -87,6 +87,12 @@ const CLUSTERS: Record<string, { heading: string; items: GuideItem[] }> = {
         tag: "Notice Pay",
         desc: "Challenge arbitrary buyout deductions and recover unpaid notice period wages.",
       },
+      {
+        title: "ESOP Buyback Not Paid to Ex-Employee? Legal Options",
+        href: "/esop-buyback-not-paid-ex-employee",
+        tag: "ESOP",
+        desc: "What to do when a company refuses to honour vested ESOPs or a buyback payment after you leave.",
+      },
     ],
   },
   consumer: {
@@ -289,6 +295,78 @@ const CLUSTERS: Record<string, { heading: string; items: GuideItem[] }> = {
         href: "/legal-notice-to-gym-subscription-fee-refund",
         tag: "Membership Refund",
         desc: "Challenge illegal no-refund policies and recover unused membership or tuition fees.",
+      },
+      {
+        title: "Hostel & Mess Fee Refund After Admission Cancellation",
+        href: "/hostel-and-mess-fee-refund-college-cancellation",
+        tag: "Fee Refund",
+        desc: "What to do when a college refuses to refund hostel fees or a mess advance after you cancel admission.",
+      },
+      {
+        title: "Tata CLiQ Refund Not Received? Escalation & Legal Notice",
+        href: "/legal-notice-to/tata-cliq",
+        tag: "E-Commerce",
+        desc: "Grievance officer timelines and how to escalate a stuck Tata CLiQ refund or replacement with a lawyer notice.",
+      },
+      {
+        title: "OYO Refund Not Received or Room Denied: Legal Steps",
+        href: "/legal-notice-to/oyo",
+        tag: "Travel & Hotels",
+        desc: "Your rights when an OYO refund is pending or check-in is denied, the evidence to collect and how to send a legal notice.",
+      },
+      {
+        title: "Cleartrip Refund Not Received? Status & Legal Options",
+        href: "/legal-notice-to/cleartrip",
+        tag: "Travel Refund",
+        desc: "Cleartrip refund not received after cancellation? Know the deadlines, airline-vs-agent liability and how to escalate with a notice.",
+      },
+      {
+        title: "MakeMyTrip Refund Not Received? Legal Notice & Escalation",
+        href: "/legal-notice-to/makemytrip",
+        tag: "Travel Refund",
+        desc: "MakeMyTrip refund not received? Learn whether the airline or MMT owes you, the 2026 DGCA rule on agents, and how to escalate legally.",
+      },
+      {
+        title: "Goibibo Refund Not Received: Steps & Legal Notice",
+        href: "/legal-notice-to/goibibo",
+        tag: "Travel Refund",
+        desc: "Goibibo refund pending for a flight, bus or hotel? Refund deadlines, who is liable and how to send Goibibo a legal notice.",
+      },
+      {
+        title: "IndiGo Refund Not Received? Credit Shell & Legal Notice",
+        href: "/legal-notice-to/indigo",
+        tag: "Airline Refund",
+        desc: "IndiGo refund pending or forced into credit shell? DGCA refund deadlines, AirSewa escalation and when to send IndiGo a legal notice.",
+      },
+      {
+        title: "redBus Refund Not Received? Bus Cancelled Refund Rights",
+        href: "/legal-notice-to/redbus",
+        tag: "Travel Refund",
+        desc: "redBus refund not received after the bus was cancelled? Operator vs platform liability, timelines and how to escalate legally.",
+      },
+      {
+        title: "Ola, Uber & Rapido Refund or Overcharge: Legal Remedies",
+        href: "/legal-notice-to/ola-uber-rapido",
+        tag: "Cab & Ride",
+        desc: "Cab ride overcharged, cancellation fee wrongly charged or refund pending? How to escalate with Ola, Uber or Rapido, up to a legal notice.",
+      },
+      {
+        title: "BigBasket Refund to Source Not Received? What to Do",
+        href: "/legal-notice-to/bigbasket",
+        tag: "E-Commerce",
+        desc: "BigBasket refund to source account missing? Trace it, use the grievance route and escalate with a legal notice under consumer law.",
+      },
+      {
+        title: "Myntra Refund Processed but Not Received? What to Do",
+        href: "/legal-notice-to/myntra",
+        tag: "E-Commerce",
+        desc: "Myntra refund marked processed but not credited? Trace the ARN, use the grievance officer timeline and escalate with a legal notice if ignored.",
+      },
+      {
+        title: "Nykaa Refund or Fake Product Complaint: Legal Route",
+        href: "/legal-notice-to/nykaa",
+        tag: "E-Commerce",
+        desc: "Nykaa refund delayed or suspect a counterfeit product? Consumer rights, evidence to keep and how to escalate to a legal notice against Nykaa.",
       },
     ],
   },
@@ -840,6 +918,24 @@ const CLUSTERS: Record<string, { heading: string; items: GuideItem[] }> = {
         tag: "PDC Recovery",
         desc: "Enforce dishonoured security cheques and claim 20% interim compensation under Section 143A.",
       },
+      {
+        title: "Personal Loan Borrower Stopped EMI? Legal Options",
+        href: "/what-banks-can-do-when-personal-loan-borrowers-stop-emi",
+        tag: "Personal Loans",
+        desc: "Legal steps banks can take when a personal loan borrower stops paying EMIs, including notice timelines and arbitration.",
+      },
+      {
+        title: "Handling Chronic Credit Card Defaulters: Bank Strategy",
+        href: "/handling-continuous-credit-card-defaulters-legal-strategy",
+        tag: "Credit Cards",
+        desc: "Legal recourse for banks against repeat credit card defaulters: credit bureau reporting, card cancellation and civil action.",
+      },
+      {
+        title: "Recover Defaulted Business Loans: Legal Action for Banks",
+        href: "/recover-defaulted-business-loans-legal-action-india",
+        tag: "Business Loans",
+        desc: "Step-by-step legal action for banks on commercial loan defaults: SARFAESI, DRT petitions and insolvency.",
+      },
     ],
   },
   itSaas: {
@@ -1137,6 +1233,12 @@ const CLUSTERS: Record<string, { heading: string; items: GuideItem[] }> = {
         href: "/how-to-recover-money-without-going-to-court-india",
         tag: "Out-of-Court",
         desc: "Pre-litigation recovery via Advocate Legal Notice, Statutory Ombudsmen & ODR.",
+      },
+      {
+        title: "Recover a Loan Given to a Friend",
+        href: "/recovery/loan-amount-given-to-friend",
+        tag: "Friendly Loan",
+        desc: "Recover money lent to a friend through a legal notice, a summary suit or cheque-bounce action.",
       },
     ],
   },
@@ -2548,6 +2650,24 @@ const CLUSTERS: Record<string, { heading: string; items: GuideItem[] }> = {
         tag: "Bulk CSV",
         desc: "Batch legal notice dispatch and Representee desk automation for 10 to 10,000+ defaulting factory buyers.",
       },
+      {
+        title: "Timber Importers & Plywood Credit Recovery",
+        href: "/timber-plywood-veneer-sawmill-importer-wholesaler-credit-recovery",
+        tag: "Timber & Plywood",
+        desc: "Recover stretched domestic bills from furniture factories and plywood dealers when your own import LCs fall due on time.",
+      },
+      {
+        title: "Industrial Minerals (Quartz, Clay & Silica) Debt Recovery",
+        href: "/industrial-minerals-quartz-feldspar-china-clay-lime-foundry-recovery",
+        tag: "Minerals",
+        desc: "Recover dues from ceramic and steel buyers who stretch credit or cut invoices on whiteness and mesh grounds.",
+      },
+      {
+        title: "Industrial Lubricants, Furnace Oil & Bulk Diesel Recovery",
+        href: "/industrial-lubricants-furnace-oil-ldo-bulk-diesel-bowser-credit-recovery",
+        tag: "Fuel & Lubricants",
+        desc: "Use signed fuel indents and bowser flow-meter slips to recover credit sales through summary suits and cheque-bounce notices.",
+      },
     ],
   },
 };
@@ -3012,6 +3132,28 @@ p.includes("school") ||
   return CLUSTERS.general;
 }
 
+const FIXED_COUNT = 6;
+const ROTATING_COUNT = 3;
+
+// Most clusters hold more guides than the six fixed cards, and anything past the sixth
+// used to get no internal link at all. Each page now also shows a few of those: the same
+// cards every time for one page (server and client agree), different cards from page to
+// page, so every guide in a cluster is linked from somewhere. A page that is itself in the
+// cluster starts from its own position there, which spreads the cards evenly; any other
+// page starts from a hash of its path.
+function pickRotating(rest: GuideItem[], pathname: string, ownIndex: number): GuideItem[] {
+  if (rest.length <= ROTATING_COUNT) return rest;
+  let seed = ownIndex * ROTATING_COUNT;
+  if (ownIndex < 0) {
+    seed = 0;
+    for (let i = 0; i < pathname.length; i++) {
+      seed = (seed * 31 + pathname.charCodeAt(i)) >>> 0;
+    }
+  }
+  const start = seed % rest.length;
+  return Array.from({ length: ROTATING_COUNT }, (_, i) => rest[(start + i) % rest.length]);
+}
+
 interface RelatedRecoveryGuidesProps {
   currentPath?: string;
   cluster?: string;
@@ -3046,7 +3188,17 @@ export default function RelatedRecoveryGuides({
   }
 
   const cluster = (clusterProp && CLUSTERS[clusterProp]) ? CLUSTERS[clusterProp] : detectCluster(pathname);
-  const filtered = cluster.items.filter((item) => item.href !== pathname).slice(0, 6);
+  const seen = new Set<string>([pathname]);
+  const candidates = cluster.items.filter((item) => {
+    if (seen.has(item.href)) return false;
+    seen.add(item.href);
+    return true;
+  });
+  const ownIndex = cluster.items.findIndex((item) => item.href === pathname);
+  const filtered = [
+    ...candidates.slice(0, FIXED_COUNT),
+    ...pickRotating(candidates.slice(FIXED_COUNT), pathname, ownIndex),
+  ];
 
   return (
     <section

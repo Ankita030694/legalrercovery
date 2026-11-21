@@ -19,6 +19,8 @@ const navLinks = [
   { label: "About Us", href: "/about" },
   { label: "Services", href: "/services" },
   { label: "Recovery Directory", href: "/recovery" },
+  { label: "Recovery by Industry", href: "/industries" },
+  { label: "Free Templates", href: "/templates" },
   { label: "Recovery by City", href: "/legal-recovery-by-city" },
   { label: "Legal Notice Services", href: "/legal-notice-services" },
   { label: "How It Works", href: "/how-it-works" },
